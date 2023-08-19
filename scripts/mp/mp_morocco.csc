@@ -1,0 +1,85 @@
+// Atian COD Tools GSC decompiler test
+#include scripts/mp/mp_morocco_scripted.csc;
+#include scripts/mp_common/load.csc;
+#include scripts/core_common/util_shared.csc;
+
+#namespace mp_morocco;
+
+// Namespace mp_morocco/level_init
+// Params 1, eflags: 0x40
+// Checksum 0x90d94b45, Offset: 0x118
+// Size: 0x154
+function event<level_init> main(eventstruct) {
+    level.var_bbb8810e = #"ui_cam_draft_common";
+    level.var_482af62e = #"hash_12263e5d70551bf9";
+    setsaveddvar(#"enable_global_wind", 1);
+    setsaveddvar(#"wind_global_vector", "88 0 0");
+    setsaveddvar(#"wind_global_low_altitude", 0);
+    setsaveddvar(#"wind_global_hi_altitude", 10000);
+    setsaveddvar(#"wind_global_low_strength_percent", 100);
+    load::main();
+    level.domflagbasefxoverride = &dom_flag_base_fx_override;
+    level.domflagcapfxoverride = &dom_flag_cap_fx_override;
+    util::waitforclient(0);
+}
+
+// Namespace mp_morocco/mp_morocco
+// Params 2, eflags: 0x1 linked
+// Checksum 0x4b5abc0a, Offset: 0x278
+// Size: 0xf2
+function dom_flag_base_fx_override(flag, team) {
+    switch (flag.name) {
+    case #"a":
+        if (team == #"neutral") {
+            return "ui/fx_dom_marker_neutral_r120";
+        } else {
+            return "ui/fx_dom_marker_team_r120";
+        }
+        break;
+    case #"b":
+        if (team == #"neutral") {
+            return "ui/fx_dom_marker_neutral_r120";
+        } else {
+            return "ui/fx_dom_marker_team_r120";
+        }
+        break;
+    case #"c":
+        if (team == #"neutral") {
+            return "ui/fx_dom_marker_neutral_r120";
+        } else {
+            return "ui/fx_dom_marker_team_r120";
+        }
+        break;
+    }
+}
+
+// Namespace mp_morocco/mp_morocco
+// Params 2, eflags: 0x1 linked
+// Checksum 0x8970777a, Offset: 0x378
+// Size: 0xf2
+function dom_flag_cap_fx_override(flag, team) {
+    switch (flag.name) {
+    case #"a":
+        if (team == #"neutral") {
+            return "ui/fx_dom_cap_indicator_neutral_r120";
+        } else {
+            return "ui/fx_dom_cap_indicator_team_r120";
+        }
+        break;
+    case #"b":
+        if (team == #"neutral") {
+            return "ui/fx_dom_cap_indicator_neutral_r120";
+        } else {
+            return "ui/fx_dom_cap_indicator_team_r120";
+        }
+        break;
+    case #"c":
+        if (team == #"neutral") {
+            return "ui/fx_dom_cap_indicator_neutral_r120";
+        } else {
+            return "ui/fx_dom_cap_indicator_team_r120";
+        }
+        break;
+    }
+}
+

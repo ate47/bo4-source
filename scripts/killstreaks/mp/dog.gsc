@@ -1,0 +1,34 @@
+// Atian COD Tools GSC decompiler test
+#include scripts/core_common/system_shared.gsc;
+#include scripts/core_common/struct.gsc;
+#include scripts/killstreaks/killstreaks_shared.gsc;
+#include scripts/killstreaks/dog_shared.gsc;
+#include scripts/abilities/ability_power.gsc;
+
+#namespace dog;
+
+// Namespace dog/dog
+// Params 0, eflags: 0x2
+// Checksum 0xc6881507, Offset: 0xc0
+// Size: 0x44
+function autoexec __init__system__() {
+    system::register(#"killstreak_dog", &__init__, undefined, #"killstreaks");
+}
+
+// Namespace dog/dog
+// Params 0, eflags: 0x1 linked
+// Checksum 0xdf48a33a, Offset: 0x110
+// Size: 0x11c
+function __init__() {
+    init_shared();
+    bundle = struct::get_script_bundle("killstreak", #"killstreak_dog");
+    if (isdefined(bundle)) {
+        bundle.var_32f64ba3 = "actor_spawner_boct_mp_dog";
+    }
+    killstreaks::register_bundle(bundle, &spawned);
+    killstreaks::allow_assists(bundle.var_d3413870, 1);
+    level.var_e2174183 = getweapon(#"ability_dog");
+    level.var_da7fa0b = getweapon(#"dog_ai_defaultmelee");
+    ability_power::function_9d78823f(level.var_e2174183, level.var_da7fa0b);
+}
+

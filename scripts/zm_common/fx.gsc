@@ -1,0 +1,137 @@
+// Atian COD Tools GSC decompiler test
+#include scripts/zm_common/util.gsc;
+#include scripts/core_common/sound_shared.gsc;
+#include scripts/core_common/fx_shared.gsc;
+#include scripts/core_common/exploder_shared.gsc;
+#include scripts/core_common/struct.gsc;
+
+#namespace fx;
+
+// Namespace fx/fx
+// Params 4, eflags: 0x0
+// Checksum 0x68f5ac02, Offset: 0x90
+// Size: 0x17c
+function print_org(fxcommand, fxid, fxpos, waittime) {
+    /#
+        if (getdvarint(#"debug", 0)) {
+            println("<unknown string>");
+            println("<unknown string>" + fxpos[0] + "<unknown string>" + fxpos[1] + "<unknown string>" + fxpos[2] + "<unknown string>");
+            println("<unknown string>");
+            println("<unknown string>");
+            println("<unknown string>" + fxcommand + "<unknown string>");
+            println("<unknown string>" + fxid + "<unknown string>");
+            println("<unknown string>" + waittime + "<unknown string>");
+            println("<unknown string>");
+        }
+    #/
+}
+
+// Namespace fx/fx
+// Params 8, eflags: 0x0
+// Checksum 0x7ad557e9, Offset: 0x218
+// Size: 0x74
+function gunfireloopfx(fxid, fxpos, shotsmin, shotsmax, shotdelaymin, shotdelaymax, betweensetsmin, betweensetsmax) {
+    thread gunfireloopfxthread(fxid, fxpos, shotsmin, shotsmax, shotdelaymin, shotdelaymax, betweensetsmin, betweensetsmax);
+}
+
+// Namespace fx/fx
+// Params 8, eflags: 0x0
+// Checksum 0xd4d646f5, Offset: 0x298
+// Size: 0x20a
+function gunfireloopfxthread(fxid, fxpos, shotsmin, shotsmax, shotdelaymin, shotdelaymax, betweensetsmin, betweensetsmax) {
+    level endon(#"hash_d5682445dd3d910");
+    waitframe(1);
+    if (betweensetsmax < betweensetsmin) {
+        temp = betweensetsmax;
+        betweensetsmax = betweensetsmin;
+        betweensetsmin = temp;
+    }
+    betweensetsbase = betweensetsmin;
+    betweensetsrange = betweensetsmax - betweensetsmin;
+    if (shotdelaymax < shotdelaymin) {
+        temp = shotdelaymax;
+        shotdelaymax = shotdelaymin;
+        shotdelaymin = temp;
+    }
+    shotdelaybase = shotdelaymin;
+    shotdelayrange = shotdelaymax - shotdelaymin;
+    if (shotsmax < shotsmin) {
+        temp = shotsmax;
+        shotsmax = shotsmin;
+        shotsmin = temp;
+    }
+    shotsbase = shotsmin;
+    shotsrange = shotsmax - shotsmin;
+    fxent = spawnfx(level._effect[fxid], fxpos);
+    for (;;) {
+        shotnum = shotsbase + randomint(shotsrange);
+        for (i = 0; i < shotnum; i++) {
+            triggerfx(fxent);
+            wait(shotdelaybase + randomfloat(shotdelayrange));
+        }
+        wait(betweensetsbase + randomfloat(betweensetsrange));
+    }
+}
+
+// Namespace fx/fx
+// Params 9, eflags: 0x0
+// Checksum 0x5b777f62, Offset: 0x4b0
+// Size: 0x84
+function gunfireloopfxvec(fxid, fxpos, fxpos2, shotsmin, shotsmax, shotdelaymin, shotdelaymax, betweensetsmin, betweensetsmax) {
+    thread gunfireloopfxvecthread(fxid, fxpos, fxpos2, shotsmin, shotsmax, shotdelaymin, shotdelaymax, betweensetsmin, betweensetsmax);
+}
+
+// Namespace fx/fx
+// Params 9, eflags: 0x0
+// Checksum 0xfd430526, Offset: 0x540
+// Size: 0x29a
+function gunfireloopfxvecthread(fxid, fxpos, fxpos2, shotsmin, shotsmax, shotdelaymin, shotdelaymax, betweensetsmin, betweensetsmax) {
+    level endon(#"hash_d5682445dd3d910");
+    waitframe(1);
+    if (betweensetsmax < betweensetsmin) {
+        temp = betweensetsmax;
+        betweensetsmax = betweensetsmin;
+        betweensetsmin = temp;
+    }
+    betweensetsbase = betweensetsmin;
+    betweensetsrange = betweensetsmax - betweensetsmin;
+    if (shotdelaymax < shotdelaymin) {
+        temp = shotdelaymax;
+        shotdelaymax = shotdelaymin;
+        shotdelaymin = temp;
+    }
+    shotdelaybase = shotdelaymin;
+    shotdelayrange = shotdelaymax - shotdelaymin;
+    if (shotsmax < shotsmin) {
+        temp = shotsmax;
+        shotsmax = shotsmin;
+        shotsmin = temp;
+    }
+    shotsbase = shotsmin;
+    shotsrange = shotsmax - shotsmin;
+    fxpos2 = vectornormalize(fxpos2 - fxpos);
+    fxent = spawnfx(level._effect[fxid], fxpos, fxpos2);
+    for (;;) {
+        shotnum = shotsbase + randomint(shotsrange);
+        for (i = 0; i < int(shotnum / level.fxfireloopmod); i++) {
+            triggerfx(fxent);
+            delay = (shotdelaybase + randomfloat(shotdelayrange)) * level.fxfireloopmod;
+            if (delay < 0.05) {
+                delay = 0.05;
+            }
+            wait(delay);
+        }
+        wait(shotdelaybase + randomfloat(shotdelayrange));
+        wait(betweensetsbase + randomfloat(betweensetsrange));
+    }
+}
+
+// Namespace fx/fx
+// Params 1, eflags: 0x0
+// Checksum 0xa0faaba4, Offset: 0x7e8
+// Size: 0x5c
+function grenadeexplosionfx(pos) {
+    playfx(level._effect[#"hash_38faf2be38a9b539"], pos);
+    earthquake(0.15, 0.5, pos, 250);
+}
+

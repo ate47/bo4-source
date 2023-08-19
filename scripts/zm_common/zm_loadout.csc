@@ -1,0 +1,106 @@
+// Atian COD Tools GSC decompiler test
+#include scripts/core_common/system_shared.csc;
+#include scripts/zm_common/zm_weapons.csc;
+#include scripts/zm_common/zm_utility.csc;
+#include scripts/zm_common/zm_score.csc;
+#include scripts/zm_common/zm_magicbox.csc;
+#include scripts/zm_common/zm_equipment.csc;
+#include scripts/zm_common/zm_bgb.csc;
+#include scripts/zm_common/zm_audio.csc;
+#include scripts/zm_common/util.csc;
+#include scripts/core_common/player/player_stats.csc;
+#include scripts/core_common/util_shared.csc;
+#include scripts/core_common/clientfield_shared.csc;
+#include scripts/core_common/callbacks_shared.csc;
+#include scripts/core_common/aat_shared.csc;
+#include scripts/core_common/struct.csc;
+
+#namespace zm_loadout;
+
+// Namespace zm_loadout/zm_loadout
+// Params 0, eflags: 0x2
+// Checksum 0x311bb2d, Offset: 0x118
+// Size: 0x3c
+function autoexec __init__system__() {
+    system::register(#"zm_loadout", &__init__, undefined, undefined);
+}
+
+// Namespace zm_loadout/zm_loadout
+// Params 0, eflags: 0x1 linked
+// Checksum 0xca82cdee, Offset: 0x160
+// Size: 0x3c
+function __init__() {
+    /#
+        if (!isdemoplaying()) {
+            callback::on_localplayer_spawned(&on_localplayer_spawned);
+        }
+    #/
+}
+
+// Namespace zm_loadout/zm_loadout
+// Params 1, eflags: 0x0
+// Checksum 0x2df0b8d6, Offset: 0x1a8
+// Size: 0x1fe
+function on_localplayer_spawned(localclientnum) {
+    self.var_e54b3c14 = 0;
+    if (isplayer(self)) {
+        self.var_e54b3c14 = function_cc90c352(localclientnum);
+    }
+    self.loadout = [];
+    var_cd6fae8c = self get_loadout_item(localclientnum, "primarygrenade");
+    self.loadout[#"lethal"] = getunlockableiteminfofromindex(var_cd6fae8c, 1);
+    var_9aeb4447 = self get_loadout_item(localclientnum, "primary");
+    self.loadout[#"primary"] = getunlockableiteminfofromindex(var_9aeb4447, 1);
+    self.loadout[#"perks"] = [];
+    for (i = 1; i <= 4; i++) {
+        var_96861ec8 = self get_loadout_item(localclientnum, "specialty" + i);
+        self.loadout[#"perks"][i] = getunlockableiteminfofromindex(var_96861ec8, 3);
+    }
+    self.loadout[#"hero"] = self function_439b009a(localclientnum, "herogadget");
+}
+
+// Namespace zm_loadout/zm_loadout
+// Params 1, eflags: 0x1 linked
+// Checksum 0x1003d3e0, Offset: 0x3b0
+// Size: 0x48
+function function_622d8349(localclientnum) {
+    level endon(#"demo_jump");
+    while (!self registerrabbitshouldreset(localclientnum)) {
+        waitframe(1);
+    }
+}
+
+// Namespace zm_loadout/zm_loadout
+// Params 2, eflags: 0x1 linked
+// Checksum 0xccc93d89, Offset: 0x400
+// Size: 0x92
+function get_loadout_item(localclientnum, slot) {
+    if (!isplayer(self)) {
+        return undefined;
+    }
+    if (!isdefined(self.var_e54b3c14)) {
+        self.var_e54b3c14 = function_cc90c352(localclientnum);
+    }
+    if (!isdefined(self.var_e54b3c14)) {
+        self.var_e54b3c14 = 0;
+    }
+    return self getloadoutitem(localclientnum, self.var_e54b3c14, slot);
+}
+
+// Namespace zm_loadout/zm_loadout
+// Params 2, eflags: 0x1 linked
+// Checksum 0x801f5ce5, Offset: 0x4a0
+// Size: 0x92
+function function_439b009a(localclientnum, slot) {
+    if (!isplayer(self)) {
+        return undefined;
+    }
+    if (!isdefined(self.var_e54b3c14)) {
+        self.var_e54b3c14 = function_cc90c352(localclientnum);
+    }
+    if (!isdefined(self.var_e54b3c14)) {
+        self.var_e54b3c14 = 0;
+    }
+    return self getloadoutweapon(localclientnum, self.var_e54b3c14, slot);
+}
+

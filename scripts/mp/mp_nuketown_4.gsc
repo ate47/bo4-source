@@ -1,0 +1,662 @@
+// Atian COD Tools GSC decompiler test
+#include scripts/core_common/ai_shared.gsc;
+#include script_67c9a990c0db216c;
+#include scripts/core_common/lui_shared.gsc;
+#include scripts/core_common/animation_shared.gsc;
+#include scripts/core_common/exploder_shared.gsc;
+#include scripts/core_common/clientfield_shared.gsc;
+#include scripts/core_common/array_shared.gsc;
+#include scripts/core_common/scene_shared.gsc;
+#include scripts/core_common/callbacks_shared.gsc;
+#include scripts/mp/mp_nuketown_4_sound.gsc;
+#include scripts/mp/mp_nuketown_4_fx.gsc;
+#include scripts/mp_common/util.gsc;
+#include scripts/mp_common/load.gsc;
+#include scripts/core_common/util_shared.gsc;
+#include scripts/core_common/compass.gsc;
+#include scripts/core_common/struct.gsc;
+
+#namespace mp_nuketown_4;
+
+// Namespace mp_nuketown_4/level_init
+// Params 1, eflags: 0x40
+// Checksum 0xac4816fa, Offset: 0x548
+// Size: 0x41e
+function event<level_init> main(eventstruct) {
+    precache();
+    lui::add_luimenu("full_screen_movie", &full_screen_movie::register, "full_screen_movie");
+    level.var_d38af2b = 0;
+    level.var_ecb7b947 = 0;
+    level.destructible_callbacks[#"hash_3f0efa82e1f63c16"] = &function_e0136874;
+    level.var_91de6daf = 0;
+    clientfield::register("world", "nuketown_population", 8000, 7, "int");
+    clientfield::register("world", "nuketown_missile_scene", 8000, 1, "int");
+    mp_nuketown_4_fx::main();
+    mp_nuketown_4_sound::main();
+    load::main();
+    compass::setupminimap("");
+    level.cleandepositpoints = array((-1400, 328, -53), (16, 984, -52), (72, -584, -58), (1616, 392, -53.5), (24, 144, -58));
+    level function_89088577();
+    level spawnkilltrigger();
+    callback::on_game_playing(&on_game_playing);
+    callback::on_connect(&on_connect);
+    level thread function_5089875d();
+    level thread function_d83f6c8c();
+    /#
+        adddebugcommand("sprint" + "<unknown string>");
+    #/
+    level thread function_b3e0f5e0();
+    var_2bf87e44 = getentarray("ee_kill", "targetname");
+    foreach (trigger in var_2bf87e44) {
+        trigger triggerenable(0);
+    }
+    level thread function_2cdcf5c3();
+    if (getdvarint(#"hash_774f95460ca50d49", 1)) {
+        level.end_game_video = hash("mp_nuketown_4_outro");
+        level.var_48ea0e8c = 8;
+    }
+    level.var_94db699a = spawn("trigger_radius", (-940, 553, 0), 0, 300, 400);
+    level.var_3952b286 = spawn("trigger_radius", (1005, 328, 0), 0, 300, 400);
+    level.var_fdf0dff2 = &function_edde176f;
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0xff450eca, Offset: 0x970
+// Size: 0x624
+function function_89088577() {
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-576.84, -242.244, 113.502), (319.552, 159.398, -1.43772e-06));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-621.84, -361.994, 113.502), (319.552, 159.398, -1.43772e-06));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-638.09, -405.744, 113.501), (319.552, 159.398, -1.43772e-06));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-503.803, -270.203, 112.753), (320.286, 339.498, 2.83885e-06));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-548.594, -390.031, 112.753), (320.286, 339.498, 2.83885e-06));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-564.767, -433.809, 112.752), (320.192, 339.469, 0.0456095));
+    spawncollision("collision_clip_32x32x32", "collider", (482.021, 919.989, 43.4492), (345.398, 275.599, 6.4572e-06));
+    spawncollision("collision_clip_32x32x32", "collider", (-474.017, 919.988, 43.4492), (345.398, 264.4, -3.7667e-06));
+    spawncollision("collision_clip_32x32x32", "collider", (-500.707, 917.894, -68), vectorscale((0, 1, 0), 357.499));
+    spawncollision("collision_clip_32x32x32", "collider", (-500.707, 917.894, -36), vectorscale((0, 1, 0), 357.499));
+    spawncollision("collision_clip_32x32x32", "collider", (-500.544, 921.642, -8.96103), (360, 357.499, -15.801));
+    spawncollision("collision_clip_32x32x32", "collider", (508, 917.5, -52), vectorscale((1, 0, 0), 270));
+    spawncollision("collision_clip_32x32x32", "collider", (508, 920.617, -23.7666), (282.599, 89.9969, -89.9988));
+    spawncollision("collision_clip_32x32x128", "collider", (482.364, 916.489, -32), vectorscale((0, 1, 0), 275.599));
+    spawncollision("collision_clip_32x32x128", "collider", (-474.36, 916.489, -32), vectorscale((0, 1, 0), 264.4));
+    spawncollision("collision_clip_32x32x128", "collider", (-572.639, 921.035, -68), (270, 360, -2.4037));
+    spawncollision("collision_clip_32x32x128", "collider", (-572.639, 921.035, -36), (270, 360, -2.4037));
+    spawncollision("collision_clip_32x32x128", "collider", (-572.475, 924.784, -8.961), (285.8, 87.493, -89.995));
+    spawncollision("collision_clip_32x32x128", "collider", (568, 917.5, -52), vectorscale((1, 0, 0), 270));
+    spawncollision("collision_clip_32x32x128", "collider", (568, 920.617, -23.7666), (282.599, 89.9969, -89.9988));
+    spawncollision("collision_clip_cylinder_32x128", "collider", (-568.976, 924.748, -2.94745), (285.501, 269.304, 90.2141));
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0xb55d9d01, Offset: 0xfa0
+// Size: 0x1bc
+function spawnkilltrigger() {
+    trigger = spawn("trigger_radius", (-1144, 1564, 0), 0, 64, 128);
+    trigger thread watchkilltrigger();
+    trigger = spawn("trigger_radius", (-1072, 1628, 0), 0, 64, 128);
+    trigger thread watchkilltrigger();
+    trigger = spawn("trigger_radius", (-1233, 1745.5, 0), 0, 64, 128);
+    trigger thread watchkilltrigger();
+    trigger = spawn("trigger_radius", (-1141, 1821.5, 0), 0, 64, 128);
+    trigger thread watchkilltrigger();
+    trigger = spawn("trigger_radius", (-1069.5, 1881, 0), 0, 64, 128);
+    trigger thread watchkilltrigger();
+    trigger = spawn("trigger_radius", (519, 1309.5, 24), 0, 128, 128);
+    trigger thread watchkilltrigger();
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0xc7a60eec, Offset: 0x1168
+// Size: 0xa8
+function watchkilltrigger() {
+    level endon(#"game_ended");
+    trigger = self;
+    while (1) {
+        waitresult = undefined;
+        waitresult = trigger waittill(#"trigger");
+        waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 1, eflags: 0x1 linked
+// Checksum 0x94b427e0, Offset: 0x1218
+// Size: 0x60
+function function_edde176f(owner) {
+    if (isdefined(owner)) {
+        if (owner istouching(level.var_94db699a) || owner istouching(level.var_3952b286)) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+// Namespace mp_nuketown_4/gametype_start
+// Params 1, eflags: 0x40
+// Checksum 0x157f7367, Offset: 0x1280
+// Size: 0x1a
+function event<gametype_start> codecallback_startgametype(eventstruct) {
+    level.var_1765ad79 = 0;
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x80f724d1, Offset: 0x12a8
+// Size: 0x4
+function function_2cdcf5c3() {
+    
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0xa176d93c, Offset: 0x12b8
+// Size: 0x34
+function on_connect() {
+    if (level.var_d38af2b === 1) {
+        exploder::exploder("fxexp_portal_idle");
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x97651c0c, Offset: 0x12f8
+// Size: 0x96
+function function_b3e0f5e0() {
+    while (level.var_d38af2b === 0) {
+        if (getdvarint(#"hash_519c2711f2f609f", 0) && level.var_d38af2b == 0) {
+            setdvar(#"hash_519c2711f2f609f", 0);
+            level thread function_d38af2b();
+        }
+        waitframe(1);
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 7, eflags: 0x1 linked
+// Checksum 0x15ac0acb, Offset: 0x1398
+// Size: 0xd4
+function function_e0136874(destructible_event, attacker, weapon, piece_index, point, dir, mod) {
+    if (!isdefined(level.var_387f6a62)) {
+        return;
+    }
+    if (gettime() < level.var_387f6a62 + getdvarint(#"hash_5d828d352b1ef6bc", 120) * 1000) {
+        level.var_ecb7b947++;
+        if (level.var_ecb7b947 >= 27 && level.var_d38af2b == 0) {
+            level thread function_d38af2b();
+        }
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x9c1feb8, Offset: 0x1478
+// Size: 0x256
+function function_d83f6c8c() {
+    level endon(#"game_ended");
+    while (1) {
+        var_968526dd = [];
+        mannequins = getentarray("mannequin", "targetname");
+        foreach (player in getplayers()) {
+            if (isalive(player)) {
+                if (!isdefined(var_968526dd)) {
+                    var_968526dd = [];
+                } else if (!isarray(var_968526dd)) {
+                    var_968526dd = array(var_968526dd);
+                }
+                var_968526dd[var_968526dd.size] = player;
+            }
+        }
+        foreach (mannequin in mannequins) {
+            if (isalive(mannequin)) {
+                if (!isdefined(var_968526dd)) {
+                    var_968526dd = [];
+                } else if (!isarray(var_968526dd)) {
+                    var_968526dd = array(var_968526dd);
+                }
+                var_968526dd[var_968526dd.size] = mannequin;
+            }
+        }
+        var_99077acb = var_968526dd.size;
+        if (level.var_91de6daf != var_99077acb) {
+            level.var_91de6daf = var_99077acb;
+            level clientfield::set("nuketown_population", var_99077acb);
+        }
+        waitframe(1);
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x2e4ac83e, Offset: 0x16d8
+// Size: 0x1a6
+function function_5089875d() {
+    scene::add_scene_func(#"hash_71ff151c01131232", &function_25cf04b2, "play");
+    scene::add_scene_func(#"hash_6236c7731f498ada", &function_c2bd6a1f, "play");
+    var_c6970da1 = getent("mannequin_destructible_inside_train", "targetname");
+    mannequins = getentarray("mannequin_destructible", "targetname");
+    array::push(mannequins, var_c6970da1, mannequins.size);
+    array::randomize(mannequins);
+    count = 0;
+    var_45107be = 18;
+    while (count < var_45107be && mannequins.size > 0) {
+        random_index = randomint(mannequins.size);
+        var_beb73b2b = mannequins[random_index];
+        arrayremoveindex(mannequins, random_index);
+        var_beb73b2b delete();
+        count++;
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 1, eflags: 0x1 linked
+// Checksum 0x9d8eeaee, Offset: 0x1888
+// Size: 0x1d0
+function function_25cf04b2(a_ents) {
+    var_fb499420 = getent("blue_train", "targetname");
+    var_897612fd = getent("orange_train", "targetname");
+    if (isdefined(a_ents[#"prop 1"]) && isdefined(var_fb499420)) {
+        var_fc46b964 = a_ents[#"prop 1"];
+        var_fb499420 linkto(var_fc46b964, "tag_link_train_engine", (0, 0, 0));
+    }
+    if (isdefined(a_ents[#"prop 2"]) && isdefined(var_897612fd)) {
+        var_9a689c98 = a_ents[#"prop 2"];
+        var_897612fd linkto(var_9a689c98, "tag_link_train_carriage", (0, 0, 0));
+    }
+    var_e837992 = getentarray("ee_hide", "targetname");
+    if (isdefined(var_e837992)) {
+        foreach (model in var_e837992) {
+            model hide();
+        }
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x3958ba98, Offset: 0x1a60
+// Size: 0xdcc
+function on_game_playing() {
+    level.var_387f6a62 = gettime();
+    array::delete_all(getentarray("sun_block", "targetname"));
+    playsoundatposition("evt_spawn_alarm", (-1000, 401, 164));
+    playsoundatposition("evt_spawn_alarm", (-576, 464, 41));
+    playsoundatposition("evt_spawn_alarm", (744, -45, 163));
+    playsoundatposition("evt_spawn_alarm", (1251, 471, 194));
+    wait(3);
+    var_d362b824 = randomint(2);
+    if (var_d362b824 == 1) {
+        playsoundatposition("vox_pa_generic_spawn_a_01", (1356, 159, 165));
+        playsoundatposition("vox_pa_generic_spawn_a_01", (726, 3, 181));
+        playsoundatposition("vox_pa_generic_spawn_a_01", (353, 962, 284));
+        playsoundatposition("vox_pa_generic_spawn_a_01", (-344, 961, 284));
+        playsoundatposition("vox_pa_generic_spawn_a_01", (-507, 672, 201));
+        playsoundatposition("vox_pa_generic_spawn_a_01", (-1183, 84, 89));
+        playsoundatposition("vox_pa_generic_spawn_a_01", (-1118, 873, 201));
+        playsoundatposition("vox_pa_generic_spawn_a_01", (-461, 1547, -121));
+        playsoundatposition("vox_pa_generic_spawn_a_01", (345, 1540, -134));
+        playsoundatposition("vox_pa_generic_spawn_a_01", (721, 730, 56));
+        wait(2);
+        playsoundatposition("vox_pa_generic_spawn_a_02", (1356, 159, 165));
+        playsoundatposition("vox_pa_generic_spawn_a_02", (726, 3, 181));
+        playsoundatposition("vox_pa_generic_spawn_a_02", (353, 962, 284));
+        playsoundatposition("vox_pa_generic_spawn_a_02", (-344, 961, 284));
+        playsoundatposition("vox_pa_generic_spawn_a_02", (-507, 672, 201));
+        playsoundatposition("vox_pa_generic_spawn_a_02", (-1183, 84, 89));
+        playsoundatposition("vox_pa_generic_spawn_a_02", (-1118, 873, 201));
+        playsoundatposition("vox_pa_generic_spawn_a_02", (-461, 1547, -121));
+        playsoundatposition("vox_pa_generic_spawn_a_02", (345, 1540, -134));
+        playsoundatposition("vox_pa_generic_spawn_a_02", (721, 730, 56));
+        wait(2);
+        playsoundatposition("vox_pa_generic_spawn_a_03", (1356, 159, 165));
+        playsoundatposition("vox_pa_generic_spawn_a_03", (726, 3, 181));
+        playsoundatposition("vox_pa_generic_spawn_a_03", (353, 962, 284));
+        playsoundatposition("vox_pa_generic_spawn_a_03", (-344, 961, 284));
+        playsoundatposition("vox_pa_generic_spawn_a_03", (-507, 672, 201));
+        playsoundatposition("vox_pa_generic_spawn_a_03", (-1183, 84, 89));
+        playsoundatposition("vox_pa_generic_spawn_a_03", (-1118, 873, 201));
+        playsoundatposition("vox_pa_generic_spawn_a_03", (-461, 1547, -121));
+        playsoundatposition("vox_pa_generic_spawn_a_03", (345, 1540, -134));
+        playsoundatposition("vox_pa_generic_spawn_a_03", (721, 730, 56));
+        wait(2);
+        playsoundatposition("vox_pa_generic_spawn_a_04", (1356, 159, 165));
+        playsoundatposition("vox_pa_generic_spawn_a_04", (726, 3, 181));
+        playsoundatposition("vox_pa_generic_spawn_a_04", (353, 962, 284));
+        playsoundatposition("vox_pa_generic_spawn_a_04", (-344, 961, 284));
+        playsoundatposition("vox_pa_generic_spawn_a_04", (-507, 672, 201));
+        playsoundatposition("vox_pa_generic_spawn_a_04", (-1183, 84, 89));
+        playsoundatposition("vox_pa_generic_spawn_a_04", (-1118, 873, 201));
+        playsoundatposition("vox_pa_generic_spawn_a_04", (-461, 1547, -121));
+        playsoundatposition("vox_pa_generic_spawn_a_04", (345, 1540, -134));
+        playsoundatposition("vox_pa_generic_spawn_a_04", (721, 730, 56));
+    } else {
+        playsoundatposition("vox_pa_generic_spawn_b_01", (1356, 159, 165));
+        playsoundatposition("vox_pa_generic_spawn_b_01", (726, 3, 181));
+        playsoundatposition("vox_pa_generic_spawn_b_01", (353, 962, 284));
+        playsoundatposition("vox_pa_generic_spawn_b_01", (-344, 961, 284));
+        playsoundatposition("vox_pa_generic_spawn_b_01", (-507, 672, 201));
+        playsoundatposition("vox_pa_generic_spawn_b_01", (-1183, 84, 89));
+        playsoundatposition("vox_pa_generic_spawn_b_01", (-1118, 873, 201));
+        playsoundatposition("vox_pa_generic_spawn_b_01", (-461, 1547, -121));
+        playsoundatposition("vox_pa_generic_spawn_b_01", (345, 1540, -134));
+        playsoundatposition("vox_pa_generic_spawn_b_01", (721, 730, 56));
+        wait(2);
+        playsoundatposition("vox_pa_generic_spawn_b_02", (1356, 159, 165));
+        playsoundatposition("vox_pa_generic_spawn_b_02", (726, 3, 181));
+        playsoundatposition("vox_pa_generic_spawn_b_02", (353, 962, 284));
+        playsoundatposition("vox_pa_generic_spawn_b_02", (-344, 961, 284));
+        playsoundatposition("vox_pa_generic_spawn_b_02", (-507, 672, 201));
+        playsoundatposition("vox_pa_generic_spawn_b_02", (-1183, 84, 89));
+        playsoundatposition("vox_pa_generic_spawn_b_02", (-1118, 873, 201));
+        playsoundatposition("vox_pa_generic_spawn_b_02", (-461, 1547, -121));
+        playsoundatposition("vox_pa_generic_spawn_b_02", (345, 1540, -134));
+        playsoundatposition("vox_pa_generic_spawn_b_02", (721, 730, 56));
+        wait(2);
+        playsoundatposition("vox_pa_generic_spawn_b_03", (1356, 159, 165));
+        playsoundatposition("vox_pa_generic_spawn_b_03", (726, 3, 181));
+        playsoundatposition("vox_pa_generic_spawn_b_03", (353, 962, 284));
+        playsoundatposition("vox_pa_generic_spawn_b_03", (-344, 961, 284));
+        playsoundatposition("vox_pa_generic_spawn_b_03", (-507, 672, 201));
+        playsoundatposition("vox_pa_generic_spawn_b_03", (-1183, 84, 89));
+        playsoundatposition("vox_pa_generic_spawn_b_03", (-1118, 873, 201));
+        playsoundatposition("vox_pa_generic_spawn_b_03", (-461, 1547, -121));
+        playsoundatposition("vox_pa_generic_spawn_b_03", (345, 1540, -134));
+        playsoundatposition("vox_pa_generic_spawn_b_03", (721, 730, 56));
+        wait(2);
+        playsoundatposition("vox_pa_generic_spawn_b_04", (1356, 159, 165));
+        playsoundatposition("vox_pa_generic_spawn_b_04", (726, 3, 181));
+        playsoundatposition("vox_pa_generic_spawn_b_04", (353, 962, 284));
+        playsoundatposition("vox_pa_generic_spawn_b_04", (-344, 961, 284));
+        playsoundatposition("vox_pa_generic_spawn_b_04", (-507, 672, 201));
+        playsoundatposition("vox_pa_generic_spawn_b_04", (-1183, 84, 89));
+        playsoundatposition("vox_pa_generic_spawn_b_04", (-1118, 873, 201));
+        playsoundatposition("vox_pa_generic_spawn_b_04", (-461, 1547, -121));
+        playsoundatposition("vox_pa_generic_spawn_b_04", (345, 1540, -134));
+        playsoundatposition("vox_pa_generic_spawn_b_04", (721, 730, 56));
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0xa55befc7, Offset: 0x2838
+// Size: 0x86
+function function_c0616fac() {
+    if (!getdvarint(#"hash_2abc0a6ee874fbc7", 1)) {
+        return 0;
+    }
+    if (sessionmodeisonlinegame() && !sessionmodeisprivateonlinegame()) {
+        return 0;
+    }
+    if (util::isprophuntgametype()) {
+        return 0;
+    }
+    return 1;
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x5a271cff, Offset: 0x28c8
+// Size: 0x86
+function function_ff61a79d() {
+    self endon(#"game_ended");
+    while (1) {
+        var_f7f8b739 = getentarray("mannequin", "targetname");
+        if (var_f7f8b739.size < 25) {
+            level thread function_2e86751b();
+            wait(1);
+        }
+        waitframe(1);
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 1, eflags: 0x1 linked
+// Checksum 0x73648438, Offset: 0x2958
+// Size: 0x1ec
+function function_36b1fa1c(index) {
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (1356, 159, 165));
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (726, 3, 181));
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (353, 962, 284));
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (-344, 961, 284));
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (-507, 672, 201));
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (-1183, 84, 89));
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (-1118, 873, 201));
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (-461, 1547, -121));
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (345, 1540, -134));
+    playsoundatposition("vox_pa_ee_countdown_0" + index, (721, 730, 56));
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x81e3192d, Offset: 0x2b50
+// Size: 0x870
+function function_d38af2b() {
+    self notify("69ace06b5e3ad139");
+    self endon("69ace06b5e3ad139");
+    self endon(#"game_ended");
+    var_831ded00 = function_c0616fac();
+    if (!var_831ded00) {
+        return;
+    }
+    if (getdvarint(#"hash_7c2178505e616da3", 0)) {
+        var_c6970da1 = getent("mannequin_destructible_inside_train", "targetname");
+        if (isdefined(var_c6970da1)) {
+            var_c6970da1 delete();
+        }
+        level.var_d38af2b = 1;
+        exploder::exploder("ending_sequence_lights");
+        level clientfield::set("nuketown_missile_scene", 1);
+        if (getdvarint(#"hash_3a730700298b094", 0)) {
+            level thread function_bf48abde();
+        }
+        level thread scene::play(#"hash_71ff151c01131232");
+        wait(4);
+        level scene::play(#"hash_41edbf03d547e5c");
+        level scene::play(#"hash_428edf03d5cf177");
+    } else {
+        playsoundatposition("vox_pa_ee_warning", (1356, 159, 165));
+        playsoundatposition("vox_pa_ee_warning", (726, 3, 181));
+        playsoundatposition("vox_pa_ee_warning", (353, 962, 284));
+        playsoundatposition("vox_pa_ee_warning", (-344, 961, 284));
+        playsoundatposition("vox_pa_ee_warning", (-507, 672, 201));
+        playsoundatposition("vox_pa_ee_warning", (-1183, 84, 89));
+        playsoundatposition("vox_pa_ee_warning", (-1118, 873, 201));
+        playsoundatposition("vox_pa_ee_warning", (-461, 1547, -121));
+        playsoundatposition("vox_pa_ee_warning", (345, 1540, -134));
+        playsoundatposition("vox_pa_ee_warning", (721, 730, 56));
+        wait(17);
+        function_36b1fa1c(0);
+        wait(3);
+        function_36b1fa1c(1);
+        wait(2);
+        function_36b1fa1c(2);
+        wait(3);
+        function_36b1fa1c(3);
+        wait(2);
+        function_36b1fa1c(4);
+        wait(2);
+        function_36b1fa1c(5);
+        wait(2);
+        function_36b1fa1c(6);
+        wait(2);
+        function_36b1fa1c(7);
+        wait(3);
+        function_36b1fa1c(8);
+        wait(2);
+        function_36b1fa1c(9);
+        wait(2);
+        function_36b1fa1c(10);
+        wait(3);
+        function_36b1fa1c(11);
+        var_c6970da1 = getent("mannequin_destructible_inside_train", "targetname");
+        if (isdefined(var_c6970da1)) {
+            var_c6970da1 delete();
+        }
+        level.var_d38af2b = 1;
+        var_2bf87e44 = getentarray("ee_kill", "targetname");
+        foreach (trigger in var_2bf87e44) {
+            trigger triggerenable(1);
+        }
+        var_dfe4b9fe = getentarray("train_clip", "targetname");
+        foreach (ent in var_dfe4b9fe) {
+            ent hide();
+        }
+        exploder::exploder("ending_sequence_lights");
+        level clientfield::set("nuketown_missile_scene", 1);
+        level thread function_f062b7d9(1);
+        level scene::play(#"hash_71ff151c01131232", "shot 1");
+        level clientfield::set("nuketown_missile_scene", 0);
+        level thread function_ff61a79d();
+        level scene::play(#"hash_71ff151c01131232", "shot 2");
+        level thread function_f062b7d9(0);
+        var_1f091880 = getentarray("train_clip", "targetname");
+        foreach (ent in var_1f091880) {
+            ent show();
+        }
+        var_2bf87e44 = getentarray("ee_kill", "targetname");
+        foreach (trigger in var_2bf87e44) {
+            trigger triggerenable(0);
+        }
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 1, eflags: 0x1 linked
+// Checksum 0x30b08100, Offset: 0x33c8
+// Size: 0xd0
+function function_f062b7d9(var_d7c49efd) {
+    var_95b1dd95 = getentarray("bombzone", "script_gameobjectname");
+    foreach (ent in var_95b1dd95) {
+        if (isdefined(ent)) {
+            if (var_d7c49efd) {
+                ent hide();
+            } else {
+                ent show();
+            }
+        }
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 1, eflags: 0x1 linked
+// Checksum 0x46ea945b, Offset: 0x34a0
+// Size: 0x8c
+function function_c2bd6a1f(a_ents) {
+    var_bf26c58c = getent("truck_destructible", "targetname");
+    if (isdefined(a_ents[#"prop 1"]) && isdefined(var_bf26c58c)) {
+        var_bf26c58c linkto(a_ents[#"prop 1"], "tag_link_uaz", (0, 0, 0));
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x9c43976, Offset: 0x3538
+// Size: 0x24
+function function_bf48abde() {
+    level scene::play(#"hash_6236c7731f498ada");
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 1, eflags: 0x1 linked
+// Checksum 0x2074fab, Offset: 0x3568
+// Size: 0xd4
+function function_890902a(var_e5031929) {
+    self endoncallback(&function_6bc3bcb8, #"death");
+    var_e5031929 waittill(#"movedone");
+    self notify(#"landed");
+    self unlink();
+    var_e5031929 delete();
+    animation::play(#"hash_4c2aa742b1aeb780", self.origin, self.angles, 1, 0.4, 0.2, 0, 0, 0, 0);
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 1, eflags: 0x1 linked
+// Checksum 0xbc9860a8, Offset: 0x3648
+// Size: 0x3c
+function function_6bc3bcb8(notifyhash) {
+    if (isdefined(self) && isdefined(self.var_e5031929)) {
+        self.var_e5031929 delete();
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x50db1668, Offset: 0x3690
+// Size: 0x80
+function function_4eca5590() {
+    self endon(#"death", #"landed");
+    while (1) {
+        animation::play(#"hash_1f02283eb11fce2a", self.origin, self.angles, 1, 0.2, 0.2, 0, 0, 0, 0);
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x2be0312f, Offset: 0x3718
+// Size: 0x4ac
+function function_2e86751b() {
+    spawn_point = struct::get("mannequin_spawn_point", "targetname");
+    var_ed5bd910 = struct::get_array("mannequin_spawn_landing_target", "targetname");
+    var_e5031929 = spawn("script_model", spawn_point.origin);
+    var_e5031929 enablelinkto();
+    var_e5031929 setmodel("tag_origin");
+    var_e5031929.angles = (0, 0, 0);
+    random = randomint(2);
+    if (random == 1) {
+        mannequin = spawnactor("spawner_bo3_mannequin_male", spawn_point.origin, spawn_point.angles, "mannequin", 1, 1);
+    } else {
+        mannequin = spawnactor("spawner_bo3_mannequin_female", spawn_point.origin, spawn_point.angles, "mannequin", 1, 1);
+    }
+    mannequin.var_e5031929 = var_e5031929;
+    var_74b33cc3 = var_ed5bd910[randomint(var_ed5bd910.size)];
+    var_2676a937 = 1000;
+    var_a25e6eb7 = distance(var_74b33cc3.origin, spawn_point.origin);
+    var_9d78b877 = var_a25e6eb7 / var_2676a937;
+    mannequin linkto(var_e5031929, "tag_origin", (0, 0, 0), (0, 0, 0));
+    mannequin thread function_4eca5590();
+    var_e5031929 moveto(var_74b33cc3.origin, var_9d78b877, 3);
+    mannequin thread function_890902a(var_e5031929);
+    rand = randomint(100);
+    if (rand <= 35) {
+        mannequin.zombie_move_speed = "walk";
+    } else if (rand <= 70) {
+        mannequin.zombie_move_speed = "run";
+    } else {
+        mannequin.zombie_move_speed = "sprint";
+    }
+    mannequin.variant_type = randomintrange(1, 3);
+    mannequin.team = "free";
+    mannequin.should_turn = 1;
+    mannequin.holdfire = 1;
+    mannequin.overrideactordamage = &function_3de2d8a4;
+    mannequins = getaiarchetypearray("zombie");
+    foreach (mannequin in mannequins) {
+        foreach (var_ca0915d4 in mannequins) {
+            if (var_ca0915d4 != mannequin) {
+                var_ca0915d4 setignoreent(mannequin, 1);
+                mannequin setignoreent(var_ca0915d4, 1);
+            }
+        }
+    }
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 12, eflags: 0x1 linked
+// Checksum 0xf37f2997, Offset: 0x3bd0
+// Size: 0xb2
+function function_3de2d8a4(inflictor, attacker, damage, var_fcf51927, mod, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
+    if (isdefined(inflictor) && isactor(inflictor) && inflictor.archetype == #"zombie") {
+        return 0;
+    }
+    return damage;
+}
+
+// Namespace mp_nuketown_4/mp_nuketown_4
+// Params 0, eflags: 0x1 linked
+// Checksum 0x80f724d1, Offset: 0x3c90
+// Size: 0x4
+function precache() {
+    
+}
+

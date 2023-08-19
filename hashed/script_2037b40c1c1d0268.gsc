@@ -1,0 +1,149 @@
+// Atian COD Tools GSC decompiler test
+#include scripts/core_common/lui_shared.csc;
+
+#namespace ct_progressbar_status;
+
+// Namespace ct_progressbar_status
+// Method(s) 7 Total 13
+class cct_progressbar_status : cluielem {
+
+    // Namespace cct_progressbar_status/ct_progressbar_status
+    // Params 0, eflags: 0x8
+    // Checksum 0x1e2fa6c8, Offset: 0x1e8
+    // Size: 0x14
+    __constructor() {
+        cluielem::__constructor();
+    }
+
+    // Namespace cct_progressbar_status/ct_progressbar_status
+    // Params 0, eflags: 0x90 class_linked
+    // Checksum 0xed15f7f8, Offset: 0x5c8
+    // Size: 0x14
+    __destructor() {
+        cluielem::__destructor();
+    }
+
+    // Namespace cct_progressbar_status/ct_progressbar_status
+    // Params 2, eflags: 0x0
+    // Checksum 0x418b5ad4, Offset: 0x318
+    // Size: 0x2a4
+    function set_state(localclientnum, state_name) {
+        if (#"defaultstate" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 0);
+        } else if (#"download_complete" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 1);
+        } else if (#"downloading" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 2);
+        } else if (#"connection_lost" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 3);
+        } else if (#"downloading1" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 4);
+        } else if (#"hash_42f8a09c2e0a99e3" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 5);
+        } else if (#"awaitingconnection" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 6);
+        } else if (#"hash_7f00f68e42b5b8f6" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 7);
+        } else if (#"sabotagedata" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 8);
+        } else if (#"sabotagedata1" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 9);
+        } else if (#"hash_7185fe2194047325" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 10);
+        } else {
+            /#
+                /#
+                    assertmsg("<unknown string>");
+                #/
+            #/
+        }
+    }
+
+    // Namespace cct_progressbar_status/ct_progressbar_status
+    // Params 1, eflags: 0x0
+    // Checksum 0xc4f2c1e1, Offset: 0x2e0
+    // Size: 0x2c
+    function open(localclientnum) {
+        cluielem::open(localclientnum, #"ct_progressbar_status");
+    }
+
+    // Namespace cct_progressbar_status/ct_progressbar_status
+    // Params 1, eflags: 0x0
+    // Checksum 0xfc38863a, Offset: 0x290
+    // Size: 0x44
+    function function_fa582112(localclientnum) {
+        cluielem::function_fa582112(localclientnum);
+        [[ self ]]->set_state(localclientnum, #"defaultstate");
+    }
+
+    // Namespace cct_progressbar_status/ct_progressbar_status
+    // Params 1, eflags: 0x0
+    // Checksum 0x6a955c2e, Offset: 0x260
+    // Size: 0x24
+    function register_clientside(uid) {
+        cluielem::register_clientside(uid);
+    }
+
+    // Namespace cct_progressbar_status/ct_progressbar_status
+    // Params 1, eflags: 0x0
+    // Checksum 0xdd12400f, Offset: 0x208
+    // Size: 0x4c
+    function setup_clientfields(uid) {
+        cluielem::setup_clientfields(uid);
+        cluielem::add_clientfield("_state", 1, 4, "int");
+    }
+
+}
+
+// Namespace ct_progressbar_status/ct_progressbar_status
+// Params 1, eflags: 0x0
+// Checksum 0x1c734833, Offset: 0xb0
+// Size: 0x40
+function register(uid) {
+    elem = new cct_progressbar_status();
+    [[ elem ]]->setup_clientfields(uid);
+    return elem;
+}
+
+// Namespace ct_progressbar_status/ct_progressbar_status
+// Params 1, eflags: 0x0
+// Checksum 0x32e56f9f, Offset: 0xf8
+// Size: 0x40
+function register_clientside(uid) {
+    elem = new cct_progressbar_status();
+    [[ elem ]]->register_clientside(uid);
+    return elem;
+}
+
+// Namespace ct_progressbar_status/ct_progressbar_status
+// Params 1, eflags: 0x0
+// Checksum 0x8da41ddf, Offset: 0x140
+// Size: 0x1c
+function open(player) {
+    [[ self ]]->open(player);
+}
+
+// Namespace ct_progressbar_status/ct_progressbar_status
+// Params 1, eflags: 0x0
+// Checksum 0x5613bd9e, Offset: 0x168
+// Size: 0x1c
+function close(player) {
+    [[ self ]]->close(player);
+}
+
+// Namespace ct_progressbar_status/ct_progressbar_status
+// Params 1, eflags: 0x0
+// Checksum 0x624474f8, Offset: 0x190
+// Size: 0x1a
+function is_open(localclientnum) {
+    return [[ self ]]->is_open(localclientnum);
+}
+
+// Namespace ct_progressbar_status/ct_progressbar_status
+// Params 2, eflags: 0x0
+// Checksum 0xf2e3859, Offset: 0x1b8
+// Size: 0x28
+function set_state(localclientnum, state_name) {
+    [[ self ]]->set_state(localclientnum, state_name);
+}
+

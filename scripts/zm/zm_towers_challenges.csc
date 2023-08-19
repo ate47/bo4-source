@@ -1,0 +1,48 @@
+// Atian COD Tools GSC decompiler test
+#include script_50dc2248b1a1cde;
+#include scripts/core_common/util_shared.csc;
+#include scripts/core_common/system_shared.csc;
+#include scripts/core_common/clientfield_shared.csc;
+#include scripts/core_common/struct.csc;
+
+#namespace zm_towers_challenges;
+
+// Namespace zm_towers_challenges/zm_towers_challenges
+// Params 0, eflags: 0x2
+// Checksum 0xfbcdf57e, Offset: 0xa8
+// Size: 0x44
+function autoexec __init__system__() {
+    system::register(#"zm_towers_challenges", &__init__, &__main__, undefined);
+}
+
+// Namespace zm_towers_challenges/zm_towers_challenges
+// Params 0, eflags: 0x1 linked
+// Checksum 0x5756de63, Offset: 0xf8
+// Size: 0x5c
+function __init__() {
+    clientfield::register("world", "" + #"hash_2e38cc453c5ecb9c", 16000, 2, "int", &function_a45824f, 0, 0);
+}
+
+// Namespace zm_towers_challenges/zm_towers_challenges
+// Params 0, eflags: 0x1 linked
+// Checksum 0x80f724d1, Offset: 0x160
+// Size: 0x4
+function __main__() {
+    
+}
+
+// Namespace zm_towers_challenges/zm_towers_challenges
+// Params 7, eflags: 0x1 linked
+// Checksum 0x84a7fd41, Offset: 0x170
+// Size: 0xe4
+function function_a45824f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+    if (newval == 1) {
+        forcestreamxmodel(#"wpn_t8_pistol_standard_world");
+    } else if (newval == 2) {
+        forcestreamxmodel(#"hash_31af613fbbe465cf");
+    } else {
+        stopforcestreamingxmodel(#"wpn_t8_pistol_standard_world");
+        stopforcestreamingxmodel(#"hash_31af613fbbe465cf");
+    }
+}
+

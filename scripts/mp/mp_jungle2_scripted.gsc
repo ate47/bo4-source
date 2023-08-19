@@ -1,0 +1,109 @@
+// Atian COD Tools GSC decompiler test
+#include scripts/mp_common/draft.gsc;
+#include scripts/core_common/util_shared.gsc;
+#include scripts/core_common/scene_shared.gsc;
+#include scripts/core_common/system_shared.gsc;
+#include scripts/core_common/clientfield_shared.gsc;
+#include scripts/core_common/callbacks_shared.gsc;
+#include scripts/core_common/array_shared.gsc;
+
+#namespace mp_jungle2_scripted;
+
+// Namespace mp_jungle2_scripted/mp_jungle2_scripted
+// Params 0, eflags: 0x2
+// Checksum 0x3af05c9a, Offset: 0x100
+// Size: 0x44
+function autoexec __init__system__() {
+    system::register(#"mp_jungle2_scripted", &__init__, &__main__, undefined);
+}
+
+// Namespace mp_jungle2_scripted/mp_jungle2_scripted
+// Params 0, eflags: 0x1 linked
+// Checksum 0xf7f71b86, Offset: 0x150
+// Size: 0x54
+function __init__() {
+    clientfield::register("scriptmover", "spawn_flavor_napalm_rumble", 1, 1, "counter");
+    callback::on_game_playing(&on_game_playing);
+}
+
+// Namespace mp_jungle2_scripted/mp_jungle2_scripted
+// Params 0, eflags: 0x1 linked
+// Checksum 0xdb13c2c, Offset: 0x1b0
+// Size: 0x2c
+function __main__() {
+    /#
+        init_devgui();
+    #/
+    function_2cdcf5c3();
+}
+
+// Namespace mp_jungle2_scripted/mp_jungle2_scripted
+// Params 0, eflags: 0x1 linked
+// Checksum 0x25147826, Offset: 0x1e8
+// Size: 0x178
+function on_game_playing() {
+    array::delete_all(getentarray("sun_block", "targetname"));
+    if (!getdvarint(#"hash_14f8907ba73d8e4f", 1)) {
+        return;
+    }
+    wait(getdvarfloat(#"hash_68cf1e8e429452b0", 0));
+    if (util::isfirstround()) {
+        level thread scene::add_scene_func(#"hash_308505e53ef1ea9e", &function_69a9563e, "Shot 2");
+        level thread scene::play(#"hash_308505e53ef1ea9e", "Shot 2");
+        foreach (scene in level.var_38bda94) {
+            level thread scene::play(scene);
+        }
+    }
+}
+
+// Namespace mp_jungle2_scripted/mp_jungle2_scripted
+// Params 0, eflags: 0x1 linked
+// Checksum 0xacb8bb70, Offset: 0x368
+// Size: 0x220
+function function_2cdcf5c3() {
+    if (!getdvarint(#"hash_14f8907ba73d8e4f", 1)) {
+        return;
+    }
+    level.var_38bda94 = array(#"hash_7bef46c85230ea54", #"hash_4a845cb800e3d8fb", #"hash_a172c9dfeacb516", #"hash_5831dcda07449ce9", #"hash_42a207102995a14e", #"hash_25cd507eb9716361");
+    if (util::isfirstround()) {
+        foreach (scene in level.var_38bda94) {
+            level thread scene::init(scene);
+        }
+        while (!draft::function_d255fb3e()) {
+            waitframe(1);
+        }
+        level thread scene::play(#"hash_308505e53ef1ea9e", "Shot 1");
+        return;
+    }
+    level thread scene::skipto_end(#"hash_308505e53ef1ea9e");
+    foreach (scene in level.var_38bda94) {
+        level thread scene::skipto_end(scene);
+    }
+}
+
+// Namespace mp_jungle2_scripted/mp_jungle2_scripted
+// Params 1, eflags: 0x1 linked
+// Checksum 0x549dbe99, Offset: 0x590
+// Size: 0xa8
+function function_69a9563e(a_ents) {
+    while (isdefined(a_ents[#"prop 1"])) {
+        a_ents[#"prop 1"] waittill(#"hash_1fc67e4cbdfee15c", #"death");
+        if (isdefined(a_ents[#"prop 1"])) {
+            a_ents[#"prop 1"] clientfield::increment("spawn_flavor_napalm_rumble");
+        }
+    }
+}
+
+// Namespace mp_jungle2_scripted/mp_jungle2_scripted
+// Params 0, eflags: 0x0
+// Checksum 0x4b049f74, Offset: 0x640
+// Size: 0x9c
+function init_devgui() {
+    /#
+        mapname = util::get_map_name();
+        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+    #/
+}
+
