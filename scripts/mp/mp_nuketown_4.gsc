@@ -27,8 +27,8 @@ function event<level_init> main(eventstruct) {
     lui::add_luimenu("full_screen_movie", &full_screen_movie::register, "full_screen_movie");
     level.var_d38af2b = 0;
     level.var_ecb7b947 = 0;
-    level.destructible_callbacks[#"hash_3f0efa82e1f63c16"] = &function_e0136874;
-    level.var_91de6daf = 0;
+    level.destructible_callbacks[#"headless"] = &function_e0136874;
+    level.nuketown_population = 0;
     clientfield::register("world", "nuketown_population", 8000, 7, "int");
     clientfield::register("world", "nuketown_missile_scene", 8000, 1, "int");
     mp_nuketown_4_fx::main();
@@ -220,8 +220,8 @@ function function_d83f6c8c() {
             }
         }
         var_99077acb = var_968526dd.size;
-        if (level.var_91de6daf != var_99077acb) {
-            level.var_91de6daf = var_99077acb;
+        if (level.nuketown_population != var_99077acb) {
+            level.nuketown_population = var_99077acb;
             level clientfield::set("nuketown_population", var_99077acb);
         }
         waitframe(1);
@@ -233,15 +233,15 @@ function function_d83f6c8c() {
 // Checksum 0x2e4ac83e, Offset: 0x16d8
 // Size: 0x1a6
 function function_5089875d() {
-    scene::add_scene_func(#"hash_71ff151c01131232", &function_25cf04b2, "play");
-    scene::add_scene_func(#"hash_6236c7731f498ada", &function_c2bd6a1f, "play");
+    scene::add_scene_func(#"p8_fxanim_mp_nt4_missile_launch_bundle", &function_25cf04b2, "play");
+    scene::add_scene_func(#"p8_fxanim_mp_nt4_uaz_flip_bundle", &function_c2bd6a1f, "play");
     var_c6970da1 = getent("mannequin_destructible_inside_train", "targetname");
     mannequins = getentarray("mannequin_destructible", "targetname");
     array::push(mannequins, var_c6970da1, mannequins.size);
     array::randomize(mannequins);
     count = 0;
-    var_45107be = 18;
-    while (count < var_45107be && mannequins.size > 0) {
+    dif = 18;
+    while (count < dif && mannequins.size > 0) {
         random_index = randomint(mannequins.size);
         var_beb73b2b = mannequins[random_index];
         arrayremoveindex(mannequins, random_index);
@@ -382,7 +382,7 @@ function on_game_playing() {
 // Checksum 0xa55befc7, Offset: 0x2838
 // Size: 0x86
 function function_c0616fac() {
-    if (!getdvarint(#"hash_2abc0a6ee874fbc7", 1)) {
+    if (!getdvarint(#"nuketown_mannequin", 1)) {
         return 0;
     }
     if (sessionmodeisonlinegame() && !sessionmodeisprivateonlinegame()) {
@@ -403,7 +403,7 @@ function function_ff61a79d() {
     while (1) {
         var_f7f8b739 = getentarray("mannequin", "targetname");
         if (var_f7f8b739.size < 25) {
-            level thread function_2e86751b();
+            level thread spawn_mannequin();
             wait(1);
         }
         waitframe(1);
@@ -450,7 +450,7 @@ function function_d38af2b() {
         if (getdvarint(#"hash_3a730700298b094", 0)) {
             level thread function_bf48abde();
         }
-        level thread scene::play(#"hash_71ff151c01131232");
+        level thread scene::play(#"p8_fxanim_mp_nt4_missile_launch_bundle");
         wait(4);
         level scene::play(#"hash_41edbf03d547e5c");
         level scene::play(#"hash_428edf03d5cf177");
@@ -505,10 +505,10 @@ function function_d38af2b() {
         exploder::exploder("ending_sequence_lights");
         level clientfield::set("nuketown_missile_scene", 1);
         level thread function_f062b7d9(1);
-        level scene::play(#"hash_71ff151c01131232", "shot 1");
+        level scene::play(#"p8_fxanim_mp_nt4_missile_launch_bundle", "shot 1");
         level clientfield::set("nuketown_missile_scene", 0);
         level thread function_ff61a79d();
-        level scene::play(#"hash_71ff151c01131232", "shot 2");
+        level scene::play(#"p8_fxanim_mp_nt4_missile_launch_bundle", "shot 2");
         level thread function_f062b7d9(0);
         var_1f091880 = getentarray("train_clip", "targetname");
         foreach (ent in var_1f091880) {
@@ -554,7 +554,7 @@ function function_c2bd6a1f(a_ents) {
 // Checksum 0x9c43976, Offset: 0x3538
 // Size: 0x24
 function function_bf48abde() {
-    level scene::play(#"hash_6236c7731f498ada");
+    level scene::play(#"p8_fxanim_mp_nt4_uaz_flip_bundle");
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
@@ -595,7 +595,7 @@ function function_4eca5590() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x2be0312f, Offset: 0x3718
 // Size: 0x4ac
-function function_2e86751b() {
+function spawn_mannequin() {
     spawn_point = struct::get("mannequin_spawn_point", "targetname");
     var_ed5bd910 = struct::get_array("mannequin_spawn_landing_target", "targetname");
     var_e5031929 = spawn("script_model", spawn_point.origin);
@@ -629,13 +629,13 @@ function function_2e86751b() {
     mannequin.team = "free";
     mannequin.should_turn = 1;
     mannequin.holdfire = 1;
-    mannequin.overrideactordamage = &function_3de2d8a4;
+    mannequin.overrideactordamage = &mannequindamage;
     mannequins = getaiarchetypearray("zombie");
     foreach (mannequin in mannequins) {
-        foreach (var_ca0915d4 in mannequins) {
-            if (var_ca0915d4 != mannequin) {
-                var_ca0915d4 setignoreent(mannequin, 1);
-                mannequin setignoreent(var_ca0915d4, 1);
+        foreach (othermannequin in mannequins) {
+            if (othermannequin != mannequin) {
+                othermannequin setignoreent(mannequin, 1);
+                mannequin setignoreent(othermannequin, 1);
             }
         }
     }
@@ -645,7 +645,7 @@ function function_2e86751b() {
 // Params 12, eflags: 0x1 linked
 // Checksum 0xf37f2997, Offset: 0x3bd0
 // Size: 0xb2
-function function_3de2d8a4(inflictor, attacker, damage, var_fcf51927, mod, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
+function mannequindamage(inflictor, attacker, damage, var_fcf51927, mod, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     if (isdefined(inflictor) && isactor(inflictor) && inflictor.archetype == #"zombie") {
         return 0;
     }

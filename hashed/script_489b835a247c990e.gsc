@@ -629,15 +629,15 @@ function private tacticalwalkactionstart(behaviortreeentity) {
 // Checksum 0x85737082, Offset: 0x2920
 // Size: 0x134
 function private validjukedirection(entity, var_1a55c5d2, forwardoffset, lateraloffset) {
-    var_f955e598 = 6;
-    var_89559283 = entity.origin + lateraloffset + forwardoffset;
-    var_5f8d721 = entity.origin + lateraloffset - forwardoffset;
-    var_f055ab2e = ispointonnavmesh(var_89559283, entity) && tracepassedonnavmesh(entity.origin, var_89559283);
-    var_957a2a0d = ispointonnavmesh(var_5f8d721, entity) && tracepassedonnavmesh(entity.origin, var_5f8d721);
+    jukenavmeshthreshold = 6;
+    forwardposition = entity.origin + lateraloffset + forwardoffset;
+    backwardposition = entity.origin + lateraloffset - forwardoffset;
+    forwardpositionvalid = ispointonnavmesh(forwardposition, entity) && tracepassedonnavmesh(entity.origin, forwardposition);
+    backwardpositionvalid = ispointonnavmesh(backwardposition, entity) && tracepassedonnavmesh(entity.origin, backwardposition);
     if (!isdefined(entity.ignorebackwardposition)) {
-        return (var_f055ab2e && var_957a2a0d);
+        return (forwardpositionvalid && backwardpositionvalid);
     } else {
-        return var_f055ab2e;
+        return forwardpositionvalid;
     }
     return 0;
 }
@@ -647,41 +647,41 @@ function private validjukedirection(entity, var_1a55c5d2, forwardoffset, lateral
 // Checksum 0x46f5fa11, Offset: 0x2a60
 // Size: 0x2d4
 function calculatejukedirection(entity, entityradius, jukedistance) {
-    var_f955e598 = 30;
-    var_ff66051c = "forward";
+    jukenavmeshthreshold = 30;
+    defaultdirection = "forward";
     if (isdefined(entity.var_35549bb5)) {
-        var_ff66051c = entity.var_35549bb5;
+        defaultdirection = entity.var_35549bb5;
     }
     if (isdefined(entity.enemy)) {
-        navmeshposition = getclosestpointonnavmesh(entity.origin, var_f955e598);
+        navmeshposition = getclosestpointonnavmesh(entity.origin, jukenavmeshthreshold);
         if (!isvec(navmeshposition)) {
-            return var_ff66051c;
+            return defaultdirection;
         }
-        var_77ea76c8 = entity.enemy.origin - entity.origin;
-        var_91fe6d07 = vectortoangles(var_77ea76c8);
-        var_8004d159 = anglestoforward(var_91fe6d07) * entityradius;
-        var_d433323 = anglestoright(var_91fe6d07) * jukedistance;
-        var_a6dcc783 = undefined;
+        vectortoenemy = entity.enemy.origin - entity.origin;
+        vectortoenemyangles = vectortoangles(vectortoenemy);
+        forwarddistance = anglestoforward(vectortoenemyangles) * entityradius;
+        rightjukedistance = anglestoright(vectortoenemyangles) * jukedistance;
+        preferleft = undefined;
         if (entity haspath()) {
-            var_3f9bd3c2 = entity.origin + var_d433323;
-            var_44d90238 = entity.origin - var_d433323;
-            var_a6dcc783 = distancesquared(var_44d90238, entity.pathgoalpos) <= distancesquared(var_3f9bd3c2, entity.pathgoalpos);
+            rightposition = entity.origin + rightjukedistance;
+            leftposition = entity.origin - rightjukedistance;
+            preferleft = distancesquared(leftposition, entity.pathgoalpos) <= distancesquared(rightposition, entity.pathgoalpos);
         } else {
-            var_a6dcc783 = math::cointoss();
+            preferleft = math::cointoss();
         }
-        if (var_a6dcc783) {
-            if (validjukedirection(entity, navmeshposition, var_8004d159, var_d433323 * -1)) {
+        if (preferleft) {
+            if (validjukedirection(entity, navmeshposition, forwarddistance, rightjukedistance * -1)) {
                 return "left";
-            } else if (validjukedirection(entity, navmeshposition, var_8004d159, var_d433323)) {
+            } else if (validjukedirection(entity, navmeshposition, forwarddistance, rightjukedistance)) {
                 return "right";
             }
-        } else if (validjukedirection(entity, navmeshposition, var_8004d159, var_d433323)) {
+        } else if (validjukedirection(entity, navmeshposition, forwarddistance, rightjukedistance)) {
             return "right";
-        } else if (validjukedirection(entity, navmeshposition, var_8004d159, var_d433323 * -1)) {
+        } else if (validjukedirection(entity, navmeshposition, forwarddistance, rightjukedistance * -1)) {
             return "left";
         }
     }
-    return var_ff66051c;
+    return defaultdirection;
 }
 
 // Namespace aiutility/namespace_9e06515
@@ -706,13 +706,13 @@ function private calculatedefaultjukedirection(entity) {
 // Size: 0xbc
 function canjuke(entity) {
     if (isdefined(entity.jukemaxdistance) && isdefined(entity.enemy)) {
-        var_524ac83f = entity.jukemaxdistance * entity.jukemaxdistance;
-        if (distance2dsquared(entity.origin, entity.enemy.origin) > var_524ac83f) {
+        maxdistsquared = entity.jukemaxdistance * entity.jukemaxdistance;
+        if (distance2dsquared(entity.origin, entity.enemy.origin) > maxdistsquared) {
             return 0;
         }
     }
-    var_309c0b7a = calculatedefaultjukedirection(entity);
-    return var_309c0b7a != "forward";
+    jukedirection = calculatedefaultjukedirection(entity);
+    return jukedirection != "forward";
 }
 
 // Namespace aiutility/namespace_9e06515
@@ -720,7 +720,7 @@ function canjuke(entity) {
 // Checksum 0xf354215, Offset: 0x2e98
 // Size: 0x4c
 function choosejukedirection(entity) {
-    var_309c0b7a = calculatedefaultjukedirection(entity);
-    entity setblackboardattribute("_juke_direction", var_309c0b7a);
+    jukedirection = calculatedefaultjukedirection(entity);
+    entity setblackboardattribute("_juke_direction", jukedirection);
 }
 

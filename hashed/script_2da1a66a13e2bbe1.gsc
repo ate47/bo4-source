@@ -579,9 +579,9 @@ function function_82457e35(params) {
         v_origin = self gettagorigin("tag_eye");
         v_angles = self gettagangles("tag_eye");
         var_4095cc33 = anglestoup(v_angles);
-        var_5881cf3c = v_origin + var_4095cc33 * -4;
+        v_down = v_origin + var_4095cc33 * -4;
         mdl_fx = util::spawn_model("tag_origin", v_origin, v_angles);
-        mdl_fx linkto(self, "tag_eye", var_5881cf3c - v_origin, (60, 0, 90));
+        mdl_fx linkto(self, "tag_eye", v_down - v_origin, (60, 0, 90));
         mdl_fx clientfield::set("" + #"hash_7876f33937c8a764", 1);
         while (isdefined(self) && self ai::is_stunned()) {
             waitframe(1);

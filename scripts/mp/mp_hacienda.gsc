@@ -87,7 +87,7 @@ function function_d839264a() {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
         s_button.mdl_gameobject.var_a43a7410 = var_a43a7410;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
-        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+        if (getgametypesetting(#"allowMapScripting")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
             s_button.mdl_gameobject gameobjects::set_onuse_event(&function_45cfd64e);
         } else {
@@ -133,7 +133,7 @@ function function_d99e105f() {
     foreach (s_button in a_s_buttons) {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
-        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+        if (getgametypesetting(#"allowMapScripting")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
             s_button.mdl_gameobject gameobjects::set_onuse_event(&function_393b459a);
         } else {
@@ -175,7 +175,7 @@ function function_f5a4a3eb() {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
         s_button.mdl_gameobject.var_2151fb35 = var_2151fb35;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
-        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+        if (getgametypesetting(#"allowMapScripting")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
             s_button.mdl_gameobject gameobjects::set_onuse_event(&function_886f3928);
         } else {
@@ -184,10 +184,10 @@ function function_f5a4a3eb() {
         }
     }
     foreach (mdl_door in var_2151fb35) {
-        var_681fb784 = struct::get(mdl_door.target);
-        mdl_door.v_forward = var_681fb784.angles;
+        s_open = struct::get(mdl_door.target);
+        mdl_door.v_forward = s_open.angles;
         mdl_door.v_close = mdl_door.origin;
-        mdl_door.var_3acc3ac3 = var_681fb784.origin + vectorscale(anglestoforward(mdl_door.v_forward) * -1, 2);
+        mdl_door.var_3acc3ac3 = s_open.origin + vectorscale(anglestoforward(mdl_door.v_forward) * -1, 2);
         mdl_door.var_2aba91c4 = 1;
         mdl_door disconnectpaths();
         if (1) {

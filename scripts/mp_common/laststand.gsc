@@ -860,11 +860,11 @@ function function_356caede(team) {
             continue;
         }
         finisher increment_finishing();
-        var_c9c35e60 = randomintrange(1, level.var_91c33dcb.finishers.size - 1);
+        bundle_index = randomintrange(1, level.var_91c33dcb.finishers.size - 1);
         /#
-            assert(level.var_91c33dcb.finishers.size >= var_c9c35e60);
+            assert(level.var_91c33dcb.finishers.size >= bundle_index);
         #/
-        var_abdbed5a = level.var_91c33dcb.finishers[var_c9c35e60].("finisherbundle");
+        var_abdbed5a = level.var_91c33dcb.finishers[bundle_index].("finisherbundle");
         var_d1d9820d = getscriptbundle(var_abdbed5a);
         if (isdefined(var_d1d9820d.("attacker_gesture"))) {
             finisher function_c6775cf9(var_d1d9820d.("attacker_gesture"));

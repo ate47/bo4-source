@@ -71,14 +71,14 @@ function function_624de77b() {
 // Size: 0x158
 function function_920f9a6() {
     if (!level.var_69167fa4) {
-        var_1535f02f = getdynentarray(#"hash_78f8887a7ed09542");
+        pianos = getdynentarray(#"hash_78f8887a7ed09542");
         item_world::function_1b11e73c();
-        foreach (var_e767f217 in var_1535f02f) {
-            function_e2a06860(var_e767f217, 3);
+        foreach (piano in pianos) {
+            function_e2a06860(piano, 3);
         }
         item_world::function_4de3ca98();
-        foreach (var_e767f217 in var_1535f02f) {
-            function_e2a06860(var_e767f217, 3);
+        foreach (piano in pianos) {
+            function_e2a06860(piano, 3);
         }
     }
 }
@@ -201,9 +201,9 @@ function function_34f4460b(player) {
     }
     if (var_25d0b13d) {
         if (isdefined(var_e9320407)) {
-            var_1535f02f = getdynentarray(var_e9320407);
-            foreach (var_e767f217 in var_1535f02f) {
-                var_e767f217 function_63f86aa3();
+            pianos = getdynentarray(var_e9320407);
+            foreach (piano in pianos) {
+                piano function_63f86aa3();
             }
         }
         function_a9f512c2();

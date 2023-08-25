@@ -80,7 +80,7 @@ function function_89088577() {
 // Checksum 0x39cab4e0, Offset: 0xca8
 // Size: 0x10c
 function function_34fc666e() {
-    if (util::isfirstround() && draft::is_draft_this_round() && getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (util::isfirstround() && draft::is_draft_this_round() && getgametypesetting(#"allowMapScripting")) {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
@@ -98,7 +98,7 @@ function function_34fc666e() {
 // Size: 0xdc
 function function_c3c859e1() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    if (util::isfirstround() && getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (util::isfirstround() && getgametypesetting(#"allowMapScripting")) {
         exploder::exploder("fxexp_pipe_explosion");
         util::delay(1, undefined, &exploder::exploder, "fxexp_pipe_explosion_fires");
         level thread scene::play(#"hash_4ef02c46a17d4830", "Shot 2");

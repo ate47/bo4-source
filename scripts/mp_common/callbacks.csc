@@ -257,7 +257,7 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         data.exittype = -1;
         data.flyspeed = 2000;
         data.flytime = planehalfdistance * 2 / data.flyspeed;
-        var_70bf9c61 = "airstrike";
+        planetype = "airstrike";
     } else if (type == "n") {
         planehalfdistance = 24000;
         data.planehalfdistance = planehalfdistance;
@@ -270,7 +270,7 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         data.exittype = exittype;
         data.flyspeed = 7000;
         data.flytime = planehalfdistance * 2 / data.flyspeed;
-        var_70bf9c61 = "napalm";
+        planetype = "napalm";
     } else {
         /#
             println("<unknown string>");

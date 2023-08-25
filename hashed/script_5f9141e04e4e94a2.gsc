@@ -240,14 +240,14 @@ function private function_87e09347() {
     /#
         iprintlnbold("<unknown string>" + level.var_23674b8f.var_80284ca5[0].script_noteworthy + "<unknown string>" + level.var_23674b8f.var_80284ca5[1].script_noteworthy);
     #/
-    var_6952e7ef = level.var_23674b8f.var_5dca8c75;
-    level.var_23674b8f.e_wisp = util::spawn_model(#"tag_origin", var_6952e7ef.origin - vectorscale((0, 0, 1), 64), var_6952e7ef.angles);
+    s_canister = level.var_23674b8f.var_5dca8c75;
+    level.var_23674b8f.e_wisp = util::spawn_model(#"tag_origin", s_canister.origin - vectorscale((0, 0, 1), 64), s_canister.angles);
     e_wisp = level.var_23674b8f.e_wisp;
-    e_wisp.e_model = util::spawn_model(#"hash_baa35cbefc71b6c", e_wisp.origin, e_wisp.angles);
+    e_wisp.e_model = util::spawn_model(#"p7_zm_ori_orb_wind", e_wisp.origin, e_wisp.angles);
     e_wisp.e_model linkto(e_wisp);
     e_wisp.e_model ghost();
     e_wisp clientfield::set("" + #"hash_b0298e980bd8da0", 1);
-    e_wisp moveto(var_6952e7ef.origin + vectorscale((0, 0, 1), 64), 0.75);
+    e_wisp moveto(s_canister.origin + vectorscale((0, 0, 1), 64), 0.75);
     e_wisp waittill(#"movedone");
     level thread function_eddc2ed3();
     wait(3);

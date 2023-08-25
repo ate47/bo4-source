@@ -54,7 +54,7 @@ function function_255e9614(command, key) {
     self notify(command + "_" + key);
     self endon(command + "_" + key);
     switch (key) {
-    case #"hash_1230aae6a170b166":
+    case #"+attack":
         function_9024fce3(&attackbuttonpressed, command);
         break;
     case #"hash_1c75e807f4c4e0c3":
@@ -66,10 +66,10 @@ function function_255e9614(command, key) {
     case #"hash_1d811f41761a35d4":
         function_9024fce3(&usebuttonpressed, command);
         break;
-    case #"hash_586e0d5f98cc4b03":
+    case #"+smoke":
         function_9024fce3(&secondaryoffhandbuttonpressed, command);
         break;
-    case #"hash_7f74f0d83b3377a":
+    case #"+frag":
         function_9024fce3(&fragbuttonpressed, command);
         break;
     case #"hash_329305cda840577":
@@ -78,10 +78,10 @@ function function_255e9614(command, key) {
     case #"hash_329315cda84072a":
         function_9024fce3(&actionslottwobuttonpressed, command);
         break;
-    case #"hash_329325cda8408dd":
+    case #"+actionslot 3":
         function_9024fce3(&actionslotthreebuttonpressed, command);
         break;
-    case #"hash_3292b5cda83fcf8":
+    case #"+actionslot 4":
         function_9024fce3(&actionslotfourbuttonpressed, command);
         break;
     case #"hash_6fba413807bd1e19":
@@ -96,13 +96,13 @@ function function_255e9614(command, key) {
     case #"hash_6fba443807bd2332":
         function_21e5a72f(&actionslotfourbuttonpressed, command);
         break;
-    case #"hash_3e9a17e32fa77276":
+    case #"+stance":
         function_21e5a72f(&stancebuttonpressed, command);
         break;
-    case #"hash_20a6ca7f566e6109":
+    case #"+breath_sprint":
         function_21e5a72f(&sprintbuttonpressed, command);
         break;
-    case #"hash_525165619407a822":
+    case #"+melee":
         function_21e5a72f(&meleebuttonpressed, command);
         break;
     }
@@ -348,7 +348,7 @@ function propinputwatch() {
     self.var_960f723f = 1;
     while (1) {
         waitresult = undefined;
-        waitresult = self waittill(#"lock", #"hash_b99a01909551539", #"hash_a2f4b7b87527be0", #"hash_1b8b34b45c703f21", #"hash_33a6eeaf7fb1162e", #"hash_6dd92d4c2f4fafeb", #"hide");
+        waitresult = self waittill(#"lock", #"spin", #"hash_a2f4b7b87527be0", #"hash_1b8b34b45c703f21", #"hash_33a6eeaf7fb1162e", #"hash_6dd92d4c2f4fafeb", #"hide");
         msg = waitresult._notify;
         if (!isdefined(msg)) {
             continue;

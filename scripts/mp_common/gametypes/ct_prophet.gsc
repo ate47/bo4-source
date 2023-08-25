@@ -23,7 +23,7 @@
 // Size: 0x2ec
 function event<gametype_init> main(eventstruct) {
     ct_core::function_46e95cc7();
-    level.select_character = ct_utils::get_roleindex(#"hash_174b22516ff300b9");
+    level.select_character = ct_utils::get_roleindex(#"prt_mp_technomancer");
     level.var_820c5561 = "PROPHET";
     ct_utils::function_be3a76b7(level.var_820c5561);
     level.var_d6d98fbe = 0;

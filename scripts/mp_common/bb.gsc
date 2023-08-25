@@ -66,7 +66,7 @@ function function_95a5b5c2(var_daec1817, label, team, origin, player) {
     if (sessionmodeismultiplayergame()) {
         var_cfad67d4 = ishash(team) ? team : hash(team);
         clientid = isdefined(player) && isdefined(player.clientid) ? player.clientid : -1;
-        function_92d1707f(#"hash_d424efe4db1dff7", {#clientid:clientid, #var_fe770d76:origin[2], #var_82120ca:origin[1], #var_87c3a00d:origin[0], #team:var_cfad67d4, #label:label, #var_e06b6654:var_daec1817, #gametime:function_f8d53445()});
+        function_92d1707f(#"hash_d424efe4db1dff7", {#clientid:clientid, #playerz:origin[2], #playery:origin[1], #playerx:origin[0], #team:var_cfad67d4, #label:label, #var_e06b6654:var_daec1817, #gametime:function_f8d53445()});
     }
 }
 

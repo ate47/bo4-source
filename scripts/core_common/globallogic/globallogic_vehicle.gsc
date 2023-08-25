@@ -131,8 +131,8 @@ function callback_vehicledamage(einflictor, eattacker, idamage, idflags, smeanso
         self.maxhealth = self.healthdefault;
     }
     if (gamestate::is_game_over()) {
-        var_27124b7e = !sessionmodeismultiplayergame() && !sessionmodeiswarzonegame();
-        if (var_27124b7e) {
+        avoid_damage_in_postgame = !sessionmodeismultiplayergame() && !sessionmodeiswarzonegame();
+        if (avoid_damage_in_postgame) {
             return;
         }
     }

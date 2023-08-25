@@ -1188,8 +1188,8 @@ function powerup_grab(powerup_team) {
                                 level thread [[ level.powerup_intro_vox ]](self);
                                 return;
                             } else if (isdefined(level.powerup_vo_available)) {
-                                var_74deefc4 = [[ level.powerup_vo_available ]]();
-                                if (!var_74deefc4) {
+                                can_say_vo = [[ level.powerup_vo_available ]]();
+                                if (!can_say_vo) {
                                     self thread powerup_delete_delayed();
                                     self notify(#"powerup_grabbed", {#e_grabber:player});
                                     return;

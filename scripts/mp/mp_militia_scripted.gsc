@@ -44,7 +44,7 @@ function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
     wait(getdvarfloat(#"hash_68cf1e8e429452b0", 0));
     if (util::isfirstround()) {
-        level thread scene::play(#"hash_49234464e6c43e3d", "Shot 2");
+        level thread scene::play(#"p8_fxanim_mp_militia_air_tanker_bundle", "Shot 2");
     }
 }
 
@@ -57,10 +57,10 @@ function function_2cdcf5c3() {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
-        level thread scene::play(#"hash_49234464e6c43e3d", "Shot 1");
+        level thread scene::play(#"p8_fxanim_mp_militia_air_tanker_bundle", "Shot 1");
         return;
     }
-    level scene::skipto_end(#"hash_49234464e6c43e3d");
+    level scene::skipto_end(#"p8_fxanim_mp_militia_air_tanker_bundle");
     exploder::exploder("fxexp_fires");
 }
 

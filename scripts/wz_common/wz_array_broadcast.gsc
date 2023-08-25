@@ -3,17 +3,17 @@
 #include scripts/mp_common/item_world.gsc;
 #include scripts/core_common/system_shared.gsc;
 
-#namespace namespace_cd937afc;
+#namespace wz_array_broadcast;
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x2
 // Checksum 0xd2b43ddb, Offset: 0xb0
 // Size: 0x3c
 function autoexec __init__system__() {
-    system::register(#"hash_647d89c55443e16e", &__init__, undefined, undefined);
+    system::register(#"wz_array_broadcast", &__init__, undefined, undefined);
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x2
 // Checksum 0x3a44239d, Offset: 0xf8
 // Size: 0xae
@@ -21,7 +21,7 @@ function autoexec __init() {
     level.var_47f205b = (isdefined(getgametypesetting(#"hash_3778ec3bd924f17c")) ? getgametypesetting(#"hash_3778ec3bd924f17c") : 0) && (isdefined(getgametypesetting(#"hash_24e281e778894ac9")) ? getgametypesetting(#"hash_24e281e778894ac9") : 0);
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4406256f, Offset: 0x1b0
 // Size: 0x1c
@@ -29,7 +29,7 @@ function __init__() {
     level thread function_2bbffff9();
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x1 linked
 // Checksum 0x45e79379, Offset: 0x1d8
 // Size: 0x1fa
@@ -54,7 +54,7 @@ function function_2bbffff9() {
     }
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 3, eflags: 0x1 linked
 // Checksum 0x7adae510, Offset: 0x3e0
 // Size: 0x6c
@@ -64,7 +64,7 @@ function function_1e224132(activator, laststate, state) {
     }
 }
 
-// Namespace namespace_cd937afc/event_9673dc9a
+// Namespace wz_array_broadcast/event_9673dc9a
 // Params 1, eflags: 0x40
 // Checksum 0xb8ab1ab3, Offset: 0x458
 // Size: 0xb4

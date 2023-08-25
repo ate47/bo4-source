@@ -398,13 +398,13 @@ function private function_75df771f() {
                 var_1b2a0645 = xoffset;
                 var_d695a79f = var_6854a979 + var_608ee9cd;
                 if (var_f3ac248f != 3) {
-                    allies = function_45857dbe(util::function_517954bb(#"allies"));
+                    allies = function_45857dbe(util::get_bot_players(#"allies"));
                     function_df74a8f3(var_1b2a0645, var_d695a79f, allies, level.alliescommander);
                     var_1b2a0645 = var_1b2a0645 + var_2f7868e6;
                     var_d695a79f = var_6854a979 + var_608ee9cd;
                 }
                 if (var_f3ac248f != 2) {
-                    axis = function_45857dbe(util::function_517954bb(#"axis"));
+                    axis = function_45857dbe(util::get_bot_players(#"axis"));
                     function_df74a8f3(var_1b2a0645, var_d695a79f, axis, level.axiscommander);
                 }
             } else if (debugmode) {

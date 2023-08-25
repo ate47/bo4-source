@@ -14,7 +14,7 @@
 
 #namespace zombie_werewolf_util;
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x2
 // Checksum 0x54860100, Offset: 0x180
 // Size: 0x54
@@ -22,7 +22,7 @@ function autoexec __init__system__() {
     system::register(#"zombie_werewolf_util", &__init__, &__main__, #"zm_ai_werewolf");
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xb63c130d, Offset: 0x1e0
 // Size: 0x1bc
@@ -44,7 +44,7 @@ function __init__() {
     zm_trial_special_enemy::function_95c1dd81(#"werewolf", &function_fb4cbb48);
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5657a7b0, Offset: 0x3a8
 // Size: 0x6c
@@ -52,7 +52,7 @@ function __main__() {
     zm_transform::function_cfca77a7(#"spawner_zm_werewolf", #"werewolf", &function_39212989, 1, undefined, undefined, "aib_vign_zm_mnsn_werewolf_pre_transform", "aib_vign_zm_mnsn_werewolf_post_transform", &function_5c0a0b26);
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x5 linked
 // Checksum 0x5f7684bd, Offset: 0x420
 // Size: 0x1e
@@ -63,7 +63,7 @@ function private function_39212989() {
     return 1;
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 2, eflags: 0x5 linked
 // Checksum 0xe21a923b, Offset: 0x448
 // Size: 0x14
@@ -71,7 +71,7 @@ function private function_5c0a0b26(zombie, var_167b5341) {
     
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xfef87e04, Offset: 0x468
 // Size: 0xbc
@@ -86,7 +86,7 @@ function function_6268b69f() {
     return var_492bcd12;
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xc61e8b74, Offset: 0x530
 // Size: 0xbc
@@ -99,7 +99,7 @@ function function_15d944aa() {
     return 1;
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xb9352ef9, Offset: 0x5f8
 // Size: 0x8a
@@ -120,7 +120,7 @@ function function_1f269f0f() {
     }
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x80f3006e, Offset: 0x690
 // Size: 0xb0
@@ -142,7 +142,7 @@ function function_cd674a85() {
     wait(n_default_wait);
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x5 linked
 // Checksum 0x30a276c6, Offset: 0x748
 // Size: 0x2a
@@ -151,7 +151,7 @@ function private function_fb4cbb48() {
     return isdefined(ai_werewolf);
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 3, eflags: 0x1 linked
 // Checksum 0x4f9dbfef, Offset: 0x780
 // Size: 0xd8
@@ -168,7 +168,7 @@ function function_a7a6a96c(spawner, s_spot, n_round_number) {
     return ai_werewolf;
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x13fbfe00, Offset: 0x860
 // Size: 0x138
@@ -197,7 +197,7 @@ function get_favorite_enemy() {
     }
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x6554f926, Offset: 0x9a0
 // Size: 0x3c
@@ -210,7 +210,7 @@ function round_spawn() {
     return 0;
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 5, eflags: 0x1 linked
 // Checksum 0x3969a656, Offset: 0x9e8
 // Size: 0x2fc
@@ -261,7 +261,7 @@ function function_47a88a0c(n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var_
     return ai;
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 4, eflags: 0x1 linked
 // Checksum 0x7050067e, Offset: 0xcf0
 // Size: 0x184
@@ -282,7 +282,7 @@ function function_774f6e70(s_spawn_loc, var_58a8a3cb = 1, var_cda6f9a7 = undefin
     }
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 0, eflags: 0x0
 // Checksum 0xca271b31, Offset: 0xe80
 // Size: 0x1c
@@ -290,7 +290,7 @@ function function_7c14f53f() {
     zm_ai_utility::stop_patrol(self);
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0x4dd4ced4, Offset: 0xea8
 // Size: 0xe2
@@ -308,7 +308,7 @@ function function_d7a8d5a8(n_round_number) {
     }
 }
 
-// Namespace zombie_werewolf_util/namespace_4b101467
+// Namespace zombie_werewolf_util/ai_werewolf_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe080d718, Offset: 0xf98
 // Size: 0x222

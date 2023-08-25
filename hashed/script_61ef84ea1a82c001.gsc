@@ -360,16 +360,16 @@ function function_adc74a0d(e_grenade, n_grenade_charge_power) {
     if (!isdefined(self)) {
         return 0;
     }
-    var_f95d25dc = struct::get("s_s_t_loc");
-    if (!isdefined(var_f95d25dc)) {
+    s_spork = struct::get("s_s_t_loc");
+    if (!isdefined(s_spork)) {
         return 0;
     }
-    distsq = distancesquared(e_grenade.origin, var_f95d25dc.origin);
+    distsq = distancesquared(e_grenade.origin, s_spork.origin);
     if (distsq < 200 * 200 && !self flag::get(#"hash_79ab766693ef2532") && level flag::get(#"hash_29dc018e9551ecf")) {
         self clientfield::set_to_player("" + #"hash_2058d8d474a6b3e1", 0);
         var_6e6ec518 = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
         var_6e6ec518.n_grenade_charge_power = n_grenade_charge_power;
-        var_7b566fb = util::spawn_model("wpn_t8_zm_spork_world", e_grenade.origin, var_f95d25dc.angles);
+        var_7b566fb = util::spawn_model("wpn_t8_zm_spork_world", e_grenade.origin, s_spork.angles);
         var_7b566fb linkto(var_6e6ec518);
         self thread zm_weap_tomahawk::tomahawk_return_player(var_6e6ec518, undefined, 800);
         self thread function_55a05382(var_6e6ec518, var_7b566fb);

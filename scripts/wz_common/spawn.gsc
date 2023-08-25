@@ -222,9 +222,9 @@ function on_spawn_player(predictedspawn) {
 // Checksum 0x2b163d49, Offset: 0xfd8
 // Size: 0x13c
 function function_ea62f5af() {
-    var_a56604c5 = namespace_eb06e24d::function_4a22ec61().lootid;
+    var_a56604c5 = namespace_eb06e24d::get_parachute_kit().lootid;
     var_c9b1d229 = namespace_eb06e24d::function_4a39b434().lootid;
-    var_42b02106 = namespace_eb06e24d::function_3c54cdb1().lootid;
+    var_42b02106 = namespace_eb06e24d::get_wingsuit_kit().lootid;
     var_f8e6b703 = self match_record::get_player_stat(#"hash_ec4aea1a8bbd82");
     if (isdefined(var_f8e6b703)) {
         self match_record::set_stat(#"lives", var_f8e6b703, #"hash_4f557c87c0538129", var_a56604c5);

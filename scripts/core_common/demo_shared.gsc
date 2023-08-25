@@ -67,7 +67,7 @@ function function_651a5f4(var_81538b15, einflictor) {
 // Params 5, eflags: 0x0
 // Checksum 0xd5cce6ea, Offset: 0x308
 // Size: 0x84
-function function_dfecaa9(var_65e76577, time, var_81538b15, scoreeventpriority, eventdata) {
+function event_bookmark(var_65e76577, time, var_81538b15, scoreeventpriority, eventdata) {
     bookmark = potm::function_5b1e9ed4(game.var_e9714926, var_65e76577, time, var_81538b15, undefined, scoreeventpriority, undefined, undefined, 0, eventdata);
     add_bookmark(bookmark);
 }

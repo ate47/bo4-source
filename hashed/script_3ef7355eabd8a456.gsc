@@ -65,7 +65,7 @@ function init_flags() {
 // Size: 0x69c
 function init_quest() {
     level.var_595db1e1 = struct::get("fix_server", "targetname");
-    level.var_9c56a77 = struct::get("fix_server_spark_fx", "targetname");
+    level.s_fix_server_spark_fx = struct::get("fix_server_spark_fx", "targetname");
     level.var_a73534b7 = struct::get("punch_card_insert", "targetname");
     level.var_af224340 = getent("punch_card_screen", "targetname");
     level.var_af224340 hide();
@@ -125,14 +125,14 @@ function function_afb5905e() {
 function pernell_archive_step1_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         level.var_2cbf5e38 = 0;
-        var_1ba68ef8 = struct::get("server_part_pickup");
-        var_1ba68ef8 zm_unitrigger::create(#"hash_0", 64, &function_8703c1fe);
+        s_server_part_pickup = struct::get("server_part_pickup");
+        s_server_part_pickup zm_unitrigger::create(#"hash_0", 64, &function_8703c1fe);
         level flag::wait_till(#"hash_4c30d0428f1d4060");
-        var_185199a1 = getent(var_1ba68ef8.target, "targetname");
+        var_185199a1 = getent(s_server_part_pickup.target, "targetname");
         var_185199a1 playsound(#"hash_18f957b8000dd0c6");
         var_185199a1 delete();
-        zm_unitrigger::unregister_unitrigger(var_1ba68ef8.s_unitrigger);
-        var_1ba68ef8 struct::delete();
+        zm_unitrigger::unregister_unitrigger(s_server_part_pickup.s_unitrigger);
+        s_server_part_pickup struct::delete();
         level.var_595db1e1 zm_unitrigger::create(#"hash_0", 64, &function_e4fcfb0a);
         level flag::wait_till(#"hash_5516784173c2ee27");
         playsoundatposition(#"hash_359664e44a2bb635", level.var_595db1e1.origin);
@@ -154,9 +154,9 @@ function pernell_archive_step1_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         level flag::set(#"server_fixed");
     }
-    var_1ba68ef8 = struct::get("server_part_pickup");
-    if (isdefined(var_1ba68ef8)) {
-        var_1ba68ef8 struct::delete();
+    s_server_part_pickup = struct::get("server_part_pickup");
+    if (isdefined(s_server_part_pickup)) {
+        s_server_part_pickup struct::delete();
     }
     zm_unitrigger::unregister_unitrigger(level.var_595db1e1.s_unitrigger);
 }
@@ -311,14 +311,14 @@ function function_54db89ef() {
     while (1) {
         self waittill(#"play_audio");
         if (isdefined(level.var_fcbb6a6b)) {
-            var_fda22235 = level.var_fcbb6a6b;
+            s_card = level.var_fcbb6a6b;
             self.in_use = 1;
-            var_fda22235.in_inventory = 0;
+            s_card.in_inventory = 0;
             function_2f5993d6();
             level thread function_9f206255();
             level flag::wait_till("card_inserted");
-            zm_hms_util::function_52c3fe8d(var_fda22235.var_42a7972a, level.var_a73534b7.origin);
-            if (var_fda22235.var_42a7972a[0] == #"hash_217e6ae56b61ad3b") {
+            zm_hms_util::function_52c3fe8d(s_card.var_42a7972a, level.var_a73534b7.origin);
+            if (s_card.var_42a7972a[0] == #"hash_217e6ae56b61ad3b") {
                 level flag::set(#"hash_5df188993c013698");
             }
             var_ab007509++;

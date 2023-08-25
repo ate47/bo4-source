@@ -48,7 +48,7 @@ function private function_6aac1790(var_dbb94a) {
 // Checksum 0x77c0deb1, Offset: 0x3b8
 // Size: 0x64
 function private function_a43054a8() {
-    parachute = self namespace_eb06e24d::function_fc6b6f3b();
+    parachute = self namespace_eb06e24d::get_parachute();
     var_dbb94a = parachute.("parachuteLit");
     if (isdefined(var_dbb94a)) {
         self util::lock_model(var_dbb94a);
@@ -60,7 +60,7 @@ function private function_a43054a8() {
 // Checksum 0x5b9f0711, Offset: 0x428
 // Size: 0x64
 function private function_1c10540b() {
-    parachute = self namespace_eb06e24d::function_fc6b6f3b();
+    parachute = self namespace_eb06e24d::get_parachute();
     var_dbb94a = parachute.("parachuteLit");
     if (isdefined(var_dbb94a)) {
         self util::unlock_model(var_dbb94a);
@@ -89,7 +89,7 @@ function private function_26d46af3(eventstruct) {
     /#
         println(self.name + "<unknown string>" + eventstruct.parachute);
     #/
-    parachute = self namespace_eb06e24d::function_fc6b6f3b();
+    parachute = self namespace_eb06e24d::get_parachute();
     var_dbb94a = parachute.("parachuteLit");
     if (eventstruct.parachute) {
         parachute_weapon = parachute.("parachute");
@@ -539,7 +539,7 @@ function function_fb8d00bf() {
 // Size: 0x134
 function parachute_detach() {
     local_client_num = self.localclientnum;
-    chute = self namespace_eb06e24d::function_fc6b6f3b();
+    chute = self namespace_eb06e24d::get_parachute();
     parachute = util::spawn_model(local_client_num, chute.parachutelit, self.origin, self.angles);
     if (isdefined(parachute)) {
         parachute linkto(self);

@@ -34,7 +34,7 @@ function event<level_init> main(eventstruct) {
 // Size: 0x196
 function function_c3c859e1() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (getgametypesetting(#"allowMapScripting")) {
         level thread function_8dc01472();
         if (util::isfirstround() && draft::is_draft_this_round()) {
             crane = getent("linear_crane_moveable", "targetname");
@@ -124,7 +124,7 @@ function function_4dd23d6e() {
     end_spot = struct::get(crane.target, "targetname");
     crane.endpoint = end_spot.origin;
     crane.location = #"start";
-    if (getgametypesetting(#"hash_5e5bd42399148b51") && draft::is_draft_this_round()) {
+    if (getgametypesetting(#"allowMapScripting") && draft::is_draft_this_round()) {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
@@ -139,7 +139,7 @@ function function_4dd23d6e() {
         crane playsound("evt_gantry_start");
         crane waittill(#"movedone");
     }
-    if (!getdvarint(#"hash_2d698a5ac4538f6d", 1) || !getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (!getdvarint(#"hash_2d698a5ac4538f6d", 1) || !getgametypesetting(#"allowMapScripting")) {
         foreach (button in crane.buttons) {
             button.mdl_gameobject gameobjects::destroy_object(1, 0);
         }

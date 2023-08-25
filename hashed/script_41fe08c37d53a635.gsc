@@ -22,40 +22,40 @@ function autoexec __init__system__() {
 function __init__() {
     clientfield::register("actor", "destructible_character_state", 1, 21, "int");
     destructibles = struct::get_script_bundles("destructiblecharacterdef");
-    var_da3f3104 = [];
+    processedbundles = [];
     foreach (destructible in destructibles) {
-        var_353a193 = spawnstruct();
-        var_353a193.piececount = destructible.piececount;
-        var_353a193.pieces = [];
-        var_353a193.name = destructible.name;
-        for (index = 1; index <= var_353a193.piececount; index++) {
-            var_4b7e0498 = spawnstruct();
-            var_4b7e0498.var_6d43549d = destructible.("piece" + index + "_gibmodel");
-            var_4b7e0498.var_d241141a = destructible.("piece" + index + "_gibtag");
-            var_4b7e0498.var_f1af9a8e = destructible.("piece" + index + "_gibfx");
-            var_4b7e0498.var_d147aa1c = destructible.("piece" + index + "_gibeffecttag");
-            var_4b7e0498.var_d4be909b = destructible.("piece" + index + "_gibdynentfx");
-            var_4b7e0498.var_28882334 = destructible.("piece" + index + "_gibsound");
-            var_4b7e0498.hitlocation = destructible.("piece" + index + "_hitlocation");
-            var_4b7e0498.hidetag = destructible.("piece" + index + "_hidetag");
-            var_4b7e0498.var_677368f4 = destructible.("piece" + index + "_detachmodel");
-            var_4b7e0498.detachtag = destructible.("piece" + index + "_detachtag");
+        destructbundle = spawnstruct();
+        destructbundle.piececount = destructible.piececount;
+        destructbundle.pieces = [];
+        destructbundle.name = destructible.name;
+        for (index = 1; index <= destructbundle.piececount; index++) {
+            piecestruct = spawnstruct();
+            piecestruct.gibmodel = destructible.("piece" + index + "_gibmodel");
+            piecestruct.var_d241141a = destructible.("piece" + index + "_gibtag");
+            piecestruct.var_f1af9a8e = destructible.("piece" + index + "_gibfx");
+            piecestruct.var_d147aa1c = destructible.("piece" + index + "_gibeffecttag");
+            piecestruct.var_d4be909b = destructible.("piece" + index + "_gibdynentfx");
+            piecestruct.var_28882334 = destructible.("piece" + index + "_gibsound");
+            piecestruct.hitlocation = destructible.("piece" + index + "_hitlocation");
+            piecestruct.hidetag = destructible.("piece" + index + "_hidetag");
+            piecestruct.var_677368f4 = destructible.("piece" + index + "_detachmodel");
+            piecestruct.detachtag = destructible.("piece" + index + "_detachtag");
             if (isdefined(destructible.("piece" + index + "_hittags"))) {
-                var_4b7e0498.hittags = [];
+                piecestruct.hittags = [];
                 foreach (var_5440c126 in destructible.("piece" + index + "_hittags")) {
-                    if (!isdefined(var_4b7e0498.hittags)) {
-                        var_4b7e0498.hittags = [];
-                    } else if (!isarray(var_4b7e0498.hittags)) {
-                        var_4b7e0498.hittags = array(var_4b7e0498.hittags);
+                    if (!isdefined(piecestruct.hittags)) {
+                        piecestruct.hittags = [];
+                    } else if (!isarray(piecestruct.hittags)) {
+                        piecestruct.hittags = array(piecestruct.hittags);
                     }
-                    var_4b7e0498.hittags[var_4b7e0498.hittags.size] = var_5440c126.hittag;
+                    piecestruct.hittags[piecestruct.hittags.size] = var_5440c126.hittag;
                 }
             }
-            var_353a193.pieces[var_353a193.pieces.size] = var_4b7e0498;
+            destructbundle.pieces[destructbundle.pieces.size] = piecestruct;
         }
-        var_da3f3104[destructible.name] = var_353a193;
+        processedbundles[destructible.name] = destructbundle;
     }
-    level.var_4f117604 = var_da3f3104;
+    level.var_4f117604 = processedbundles;
 }
 
 // Namespace destructserverutils/destructible_character
@@ -100,10 +100,10 @@ function private _setdestructed(entity, var_e5c530d5) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xb5f16d13, Offset: 0x838
 // Size: 0x64
-function copydestructstate(var_1ce9f6a3, var_db6edef1) {
-    var_db6edef1.var_910f2cb = function_b9568365(var_1ce9f6a3);
-    togglespawngibs(var_db6edef1, 0);
-    reapplydestructedpieces(var_db6edef1);
+function copydestructstate(var_1ce9f6a3, newentity) {
+    newentity.var_910f2cb = function_b9568365(var_1ce9f6a3);
+    togglespawngibs(newentity, 0);
+    reapplydestructedpieces(newentity);
 }
 
 // Namespace destructserverutils/destructible_character
@@ -112,9 +112,9 @@ function copydestructstate(var_1ce9f6a3, var_db6edef1) {
 // Size: 0xd6
 function destructhitlocpieces(entity, hitloc) {
     if (isdefined(entity.destructibledef)) {
-        var_353a193 = _getdestructibledef(entity);
-        for (index = 1; index <= var_353a193.pieces.size; index++) {
-            piece = var_353a193.pieces[index - 1];
+        destructbundle = _getdestructibledef(entity);
+        for (index = 1; index <= destructbundle.pieces.size; index++) {
+            piece = destructbundle.pieces[index - 1];
             if (isdefined(piece.hitlocation) && piece.hitlocation == hitloc) {
                 destructpiece(entity, index);
             }
@@ -128,9 +128,9 @@ function destructhitlocpieces(entity, hitloc) {
 // Size: 0xee
 function function_629a8d54(entity, hittag) {
     if (isdefined(hittag) && isdefined(entity.destructibledef)) {
-        var_353a193 = _getdestructibledef(entity);
-        for (index = 1; index <= var_353a193.pieces.size; index++) {
-            piece = var_353a193.pieces[index - 1];
+        destructbundle = _getdestructibledef(entity);
+        for (index = 1; index <= destructbundle.pieces.size; index++) {
+            piece = destructbundle.pieces[index - 1];
             if (isdefined(piece.hittags) && isinarray(piece.hittags, hittag)) {
                 destructpiece(entity, index);
             }
@@ -162,21 +162,21 @@ function destructleftlegpieces(entity) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xd399f97a, Offset: 0xb70
 // Size: 0x1b4
-function destructpiece(entity, var_eb89b058) {
+function destructpiece(entity, piecenumber) {
     /#
         /#
-            assert(1 <= var_eb89b058 && var_eb89b058 <= 20);
+            assert(1 <= piecenumber && piecenumber <= 20);
         #/
     #/
-    if (isdestructed(entity, var_eb89b058)) {
+    if (isdestructed(entity, piecenumber)) {
         return;
     }
-    _setdestructed(entity, 1 << var_eb89b058);
+    _setdestructed(entity, 1 << piecenumber);
     if (!isdefined(entity.destructibledef)) {
         return;
     }
-    var_353a193 = _getdestructibledef(entity);
-    piece = var_353a193.pieces[var_eb89b058 - 1];
+    destructbundle = _getdestructibledef(entity);
+    piece = destructbundle.pieces[piecenumber - 1];
     if (isdefined(piece.hidetag) && entity haspart(piece.hidetag)) {
         entity hidepart(piece.hidetag);
     }
@@ -193,21 +193,21 @@ function destructpiece(entity, var_eb89b058) {
 // Params 2, eflags: 0x0
 // Checksum 0x2d31abb5, Offset: 0xd30
 // Size: 0x15e
-function destructnumberrandompieces(entity, var_f7ca8453 = 0) {
-    var_d47ef58 = [];
-    var_b826a574 = getpiececount(entity);
-    if (var_f7ca8453 == 0) {
-        var_f7ca8453 = var_b826a574;
+function destructnumberrandompieces(entity, num_pieces_to_destruct = 0) {
+    destructible_pieces_list = [];
+    destructablepieces = getpiececount(entity);
+    if (num_pieces_to_destruct == 0) {
+        num_pieces_to_destruct = destructablepieces;
     }
-    for (i = 0; i < var_b826a574; i++) {
-        var_d47ef58[i] = i + 1;
+    for (i = 0; i < destructablepieces; i++) {
+        destructible_pieces_list[i] = i + 1;
     }
-    var_d47ef58 = array::randomize(var_d47ef58);
-    foreach (piece in var_d47ef58) {
+    destructible_pieces_list = array::randomize(destructible_pieces_list);
+    foreach (piece in destructible_pieces_list) {
         if (!isdestructed(entity, piece)) {
             destructpiece(entity, piece);
-            var_f7ca8453--;
-            if (var_f7ca8453 == 0) {
+            num_pieces_to_destruct--;
+            if (num_pieces_to_destruct == 0) {
                 break;
             }
         }
@@ -219,8 +219,8 @@ function destructnumberrandompieces(entity, var_f7ca8453 = 0) {
 // Checksum 0x5d68415b, Offset: 0xe98
 // Size: 0x86
 function destructrandompieces(entity) {
-    var_2518a3aa = getpiececount(entity);
-    for (index = 0; index < var_2518a3aa; index++) {
+    destructpieces = getpiececount(entity);
+    for (index = 0; index < destructpieces; index++) {
         if (math::cointoss()) {
             destructpiece(entity, index + 1);
         }
@@ -253,9 +253,9 @@ function destructrightlegpieces(entity) {
 // Size: 0x56
 function getpiececount(entity) {
     if (isdefined(entity.destructibledef)) {
-        var_353a193 = _getdestructibledef(entity);
-        if (isdefined(var_353a193)) {
-            return var_353a193.piececount;
+        destructbundle = _getdestructibledef(entity);
+        if (isdefined(destructbundle)) {
+            return destructbundle.piececount;
         }
     }
     return 0;
@@ -306,13 +306,13 @@ function function_9885f550(entity, hitloc, var_a9e3f040) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x517db03, Offset: 0x1278
 // Size: 0x6e
-function isdestructed(entity, var_eb89b058) {
+function isdestructed(entity, piecenumber) {
     /#
         /#
-            assert(1 <= var_eb89b058 && var_eb89b058 <= 20);
+            assert(1 <= piecenumber && piecenumber <= 20);
         #/
     #/
-    return function_b9568365(entity) & 1 << var_eb89b058;
+    return function_b9568365(entity) & 1 << piecenumber;
 }
 
 // Namespace destructserverutils/destructible_character
@@ -323,12 +323,12 @@ function reapplydestructedpieces(entity) {
     if (!isdefined(entity.destructibledef)) {
         return;
     }
-    var_353a193 = _getdestructibledef(entity);
-    for (index = 1; index <= var_353a193.pieces.size; index++) {
+    destructbundle = _getdestructibledef(entity);
+    for (index = 1; index <= destructbundle.pieces.size; index++) {
         if (!isdestructed(entity, index)) {
             continue;
         }
-        piece = var_353a193.pieces[index - 1];
+        piece = destructbundle.pieces[index - 1];
         if (isdefined(piece.hidetag) && entity haspart(piece.hidetag)) {
             entity hidepart(piece.hidetag);
         }
@@ -352,9 +352,9 @@ function showdestructedpieces(entity) {
     if (!isdefined(entity.destructibledef)) {
         return;
     }
-    var_353a193 = _getdestructibledef(entity);
-    for (index = 1; index <= var_353a193.pieces.size; index++) {
-        piece = var_353a193.pieces[index - 1];
+    destructbundle = _getdestructibledef(entity);
+    for (index = 1; index <= destructbundle.pieces.size; index++) {
+        piece = destructbundle.pieces[index - 1];
         if (isdefined(piece.hidetag) && entity haspart(piece.hidetag)) {
             entity showpart(piece.hidetag);
         }
@@ -365,8 +365,8 @@ function showdestructedpieces(entity) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xb2e9ab0b, Offset: 0x1570
 // Size: 0x94
-function togglespawngibs(entity, var_519d22bc) {
-    if (var_519d22bc) {
+function togglespawngibs(entity, shouldspawngibs) {
+    if (shouldspawngibs) {
         entity.var_910f2cb = function_b9568365(entity) | 1;
     } else {
         entity.var_910f2cb = function_b9568365(entity) & -2;

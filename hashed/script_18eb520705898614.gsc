@@ -374,8 +374,8 @@ function cleanup_step_2(var_5ea5c94d, ended_early) {
 // Size: 0x3fc
 function private function_2345b68a() {
     foreach (var_24b5be21 in level.var_d70578ff) {
-        if (isdefined(var_24b5be21.var_6c11e243.s_unitrigger)) {
-            level thread zm_unitrigger::unregister_unitrigger(var_24b5be21.var_6c11e243.s_unitrigger);
+        if (isdefined(var_24b5be21.s_trig.s_unitrigger)) {
+            level thread zm_unitrigger::unregister_unitrigger(var_24b5be21.s_trig.s_unitrigger);
         }
         var_24b5be21.mdl_bd setmodel(var_24b5be21.var_3916fb8b);
     }
@@ -389,28 +389,28 @@ function private function_2345b68a() {
     switch (level.var_ead1145a.str_name) {
     case #"pic_gypsy":
         s_loc = var_6adbf325.s_loc;
-        var_6c11e243 = struct::get(s_loc.target);
+        s_trig = struct::get(s_loc.target);
         var_24b5be21 = var_6adbf325;
         break;
     case #"pic_brigadier":
         s_loc = var_1b2ca394.s_loc;
-        var_6c11e243 = struct::get(s_loc.target);
+        s_trig = struct::get(s_loc.target);
         var_24b5be21 = var_1b2ca394;
         break;
     case #"pic_butler":
         s_loc = var_3c9ce3a9.s_loc;
-        var_6c11e243 = struct::get(s_loc.target);
+        s_trig = struct::get(s_loc.target);
         var_24b5be21 = var_3c9ce3a9;
         break;
     case #"pic_gunslinger":
         s_loc = var_36ebb951.s_loc;
-        var_6c11e243 = struct::get(s_loc.target);
+        s_trig = struct::get(s_loc.target);
         var_24b5be21 = var_36ebb951;
         break;
     }
     level.var_ead1145a.var_d62b4d4 = s_loc;
     var_24b5be21.mdl_bd setmodel(#"p8_zm_headstone_engraving_1912");
-    level.var_76c1632f = var_6c11e243 zm_unitrigger::create(undefined, (64, 64, 100), &function_6ae66179);
+    level.var_76c1632f = s_trig zm_unitrigger::create(undefined, (64, 64, 100), &function_6ae66179);
     level.var_76c1632f.var_d62b4d4 = s_loc;
     /#
         sphere(s_loc.origin + vectorscale((0, 0, 1), 60), 24, (0, 1, 1), 1, 0, 16, 10000);
@@ -628,14 +628,14 @@ function private function_959fcbff(player) {
     self delete();
     level flag::clear(#"stick_drag");
     s_pos = struct::get("wm_ht_pos", "targetname");
-    var_6b82fccb = struct::get(s_pos.target, "targetname");
+    s_end_pos = struct::get(s_pos.target, "targetname");
     if (!isdefined(player.e_linkto)) {
         player.e_linkto = util::spawn_model("tag_origin", player.origin, player.angles);
         player playerlinkto(player.e_linkto, "tag_origin", 0, 0, 0, 0, 0);
     }
     exploder::exploder("exp_lgt_hell_tunnel");
     player thread lui::screen_fade_in(1, (0.8, 0.24, 0.15));
-    player.e_linkto moveto(var_6b82fccb.origin, 3);
+    player.e_linkto moveto(s_end_pos.origin, 3);
     player.e_linkto rotateroll(120, 3);
     player thread function_e84d4271();
     wait(2);
@@ -647,14 +647,14 @@ function private function_959fcbff(player) {
         player.e_linkto = util::spawn_model("tag_origin", player.origin, player.angles);
         player playerlinkto(player.e_linkto, "tag_origin", 0, 0, 0, 0, 0);
     }
-    var_d6cb4906 = struct::get(player.var_d62b4d4.target);
+    s_rise = struct::get(player.var_d62b4d4.target);
     player clientfield::set_to_player("" + #"hash_4be98315796ad666", 0);
     player clientfield::set_to_player("" + #"player_dragged", 1);
     player.var_7ebdb2c9 = 1;
-    player.e_linkto.origin = var_d6cb4906.origin + vectorscale((0, 0, -1), 32);
-    player.e_linkto.angles = var_d6cb4906.angles;
+    player.e_linkto.origin = s_rise.origin + vectorscale((0, 0, -1), 32);
+    player.e_linkto.angles = s_rise.angles;
     player thread lui::screen_fade_in(1.35, (0.8, 0.24, 0.15));
-    player.e_linkto moveto(var_d6cb4906.origin, 1.5);
+    player.e_linkto moveto(s_rise.origin, 1.5);
     player.e_linkto waittilltimeout(1.5, #"movedone");
     player unlink();
     player.e_linkto delete();
@@ -1141,22 +1141,22 @@ function private player_stuck() {
     s_result = undefined;
     s_result = self waittilltimeout(getanimlength(var_cab90298), #"hash_1544918b5f670dae");
     if (s_result._notify === #"hash_1544918b5f670dae") {
-        var_c5367c96 = 0;
+        b_watcher = 0;
     } else {
-        var_c5367c96 = 1;
+        b_watcher = 1;
     }
     level flag::set(#"stick_ready");
-    self thread function_21f38255(var_c5367c96);
+    self thread function_21f38255(b_watcher);
 }
 
 // Namespace namespace_b6ca3ccc/namespace_a4331a6e
 // Params 1, eflags: 0x5 linked
 // Checksum 0x37b92485, Offset: 0x58b8
 // Size: 0x1bc
-function private function_21f38255(var_c5367c96) {
+function private function_21f38255(b_watcher) {
     level endon(#"stick_drag");
     self endon(#"disconnect");
-    if (var_c5367c96) {
+    if (b_watcher) {
         self function_be4a0b7a(10);
     }
     var_3add8e25 = struct::get("s_stick_scene", "targetname");
@@ -1460,19 +1460,19 @@ function wave_1() {
     switch (getplayers().size) {
     case 1:
         n_num = 10;
-        var_d72af167 = 8;
+        n_current = 8;
         break;
     case 2:
         n_num = 16;
-        var_d72af167 = 10;
+        n_current = 10;
         break;
     case 3:
         n_num = 22;
-        var_d72af167 = 14;
+        n_current = 14;
         break;
     case 4:
         n_num = 28;
-        var_d72af167 = 16;
+        n_current = 16;
         break;
     }
     a_s_locs = function_9ca03a70();
@@ -1481,7 +1481,7 @@ function wave_1() {
     level flag::set(#"hash_29b12646045186fa");
     for (i = 0; i < n_num; i++) {
         function_9c6147b1();
-        while (level.var_ba177d48 >= var_d72af167) {
+        while (level.var_ba177d48 >= n_current) {
             waitframe(1);
         }
         ai_bat = bat::function_2e37549f(1, a_s_locs[x], 20);
@@ -1866,9 +1866,9 @@ function function_2c554640() {
         level.var_d70578ff[i].angles = a_s_locs[i].angles;
         level.var_d70578ff[i].s_loc = a_s_locs[i];
         level.var_d70578ff[i] setscale(a_s_locs[i].modelscale);
-        level.var_d70578ff[i].var_6c11e243 = struct::get(a_s_locs[i].target);
-        level.var_d70578ff[i].var_6c11e243.n_character_index = level.var_d70578ff[i].character_index;
-        level.var_d70578ff[i].var_6c11e243 zm_unitrigger::create(undefined, (64, 64, 100), &turn_to_zombie_damage_);
+        level.var_d70578ff[i].s_trig = struct::get(a_s_locs[i].target);
+        level.var_d70578ff[i].s_trig.n_character_index = level.var_d70578ff[i].character_index;
+        level.var_d70578ff[i].s_trig zm_unitrigger::create(undefined, (64, 64, 100), &turn_to_zombie_damage_);
         level.var_d70578ff[i].mdl_bd = util::spawn_model(level.var_d70578ff[i].var_3916fb8b, a_s_locs[i].origin + anglestoup(level.var_d70578ff[i].angles) * -19, a_s_locs[i].angles);
         level.var_d70578ff[i].mdl_bd setscale(0.55);
         var_fbd8294c = util::spawn_model(#"p8_zm_headstone_engraving_died", a_s_locs[i].origin + anglestoup(level.var_d70578ff[i].angles) * -12, a_s_locs[i].angles);

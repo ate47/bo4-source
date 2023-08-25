@@ -57,15 +57,15 @@ function event<gametype_init> main(eventstruct) {
     level.var_c605eb2a = &function_38874bf6;
     clientfield::register("world", "hardpoint", 1, 5, "int");
     clientfield::register("world", "hardpointteam", 1, 5, "int");
-    level.var_33472be6 = getgametypesetting(#"hash_444b81eab0b09aa1");
-    level.var_a346e384 = getgametypesetting(#"hash_6090fb2501533436");
+    level.var_33472be6 = getgametypesetting(#"autoDestroyTime");
+    level.var_a346e384 = getgametypesetting(#"objectiveSpawnTime");
     level.var_b2e3f6c2 = getgametypesetting(#"hash_390e4cbe0520da44");
     level.capturetime = getgametypesetting(#"capturetime");
-    level.var_1f102992 = getgametypesetting(#"hash_2668df77d6e3dae4");
+    level.destroyTime = getgametypesetting(#"destroyTime");
     level.var_1a64cbde = getgametypesetting(#"hash_16efbe2186f760ad");
-    level.var_4b326b68 = getgametypesetting(#"hash_16223f5db756a4bf");
-    level.var_e3595063 = getgametypesetting(#"hash_5d39db2666484b69");
-    level.var_51e6ac2d = getgametypesetting(#"hash_4b491f67e68ad5de");
+    level.var_4b326b68 = getgametypesetting(#"randomObjectiveLocations");
+    level.scorePerPlayer = getgametypesetting(#"scorePerPlayer");
+    level.timePausesWhenInZone = getgametypesetting(#"timePausesWhenInZone");
     level.b_allow_vehicle_proximity_pickup = 1;
     level.var_c85170d1 = 1;
     globallogic_spawn::addsupportedspawnpointtype("koth");
@@ -168,7 +168,7 @@ function onstartgametype() {
 // Checksum 0xca3f2cf3, Offset: 0xe78
 // Size: 0x32
 function pause_time() {
-    if (level.var_51e6ac2d) {
+    if (level.timePausesWhenInZone) {
         globallogic_utils::pausetimer();
         level.timerpaused = 1;
     }
@@ -179,7 +179,7 @@ function pause_time() {
 // Checksum 0x4963dceb, Offset: 0xeb8
 // Size: 0x5a
 function function_8984d8eb() {
-    if (level.var_51e6ac2d) {
+    if (level.timePausesWhenInZone) {
         globallogic_utils::resumetimerdiscardoverride(int(level.var_afccf6fa * 1000));
         level.timerpaused = 0;
     }
@@ -191,7 +191,7 @@ function function_8984d8eb() {
 // Size: 0x56
 function updategametypedvars() {
     level.var_26ee7cf = getgametypesetting(#"hash_3de4aa2f016161ec");
-    level.var_51e6ac2d = getgametypesetting(#"hash_4b491f67e68ad5de");
+    level.timePausesWhenInZone = getgametypesetting(#"timePausesWhenInZone");
 }
 
 // Namespace koth/koth
@@ -547,7 +547,7 @@ function function_74efe656(sentient) {
     level.var_c915a489 = var_4456a2ef;
     self gameobjects::set_owner_team(var_4456a2ef);
     if (!level.var_b2e3f6c2) {
-        self gameobjects::set_use_time(level.var_1f102992);
+        self gameobjects::set_use_time(level.destroyTime);
     }
     foreach (team, _ in level.teams) {
         if (team == var_4456a2ef) {
@@ -744,7 +744,7 @@ function function_d000bb60(team, var_346e7b46) {
         wait(seconds);
         hostmigration::waittillhostmigrationdone();
         if (!level.zone.gameobject.var_db2b5893) {
-            if (level.var_e3595063) {
+            if (level.scorePerPlayer) {
                 score = level.zone.gameobject.numtouching[team];
             }
             globallogic_score::giveteamscoreforobjective(team, score);

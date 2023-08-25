@@ -63,17 +63,17 @@ function event<gametype_init> main(eventstruct) {
     level.var_cdb8ae2c = &function_a8da260c;
     globallogic_spawn::addsupportedspawnpointtype("dom");
     globallogic_audio::set_leader_gametype_dialog("startDomination", "hcStartDomination", "objCapture", "objCapture", "bbStartDomination", "hcbbStartDomination");
-    game.dialog[#"hash_2cce4d27ba1efa47"] = "domFriendlySecuringA";
+    game.dialog[#"securing_a"] = "domFriendlySecuringA";
     game.dialog[#"hash_2cce4e27ba1efbfa"] = "domFriendlySecuringB";
     game.dialog[#"hash_2cce4f27ba1efdad"] = "domFriendlySecuringC";
-    game.dialog[#"hash_617e0e012f96b968"] = "domFriendlySecuredA";
+    game.dialog[#"secured_a"] = "domFriendlySecuredA";
     game.dialog[#"hash_617e11012f96be81"] = "domFriendlySecuredB";
     game.dialog[#"hash_617e10012f96bcce"] = "domFriendlySecuredC";
     game.dialog[#"hash_38611690b739e2e0"] = "domFriendlySecuredAll";
-    game.dialog[#"hash_39b608dc888621ff"] = "domEnemySecuringA";
+    game.dialog[#"losing_a"] = "domEnemySecuringA";
     game.dialog[#"hash_39b609dc888623b2"] = "domEnemySecuringB";
     game.dialog[#"hash_39b60adc88862565"] = "domEnemySecuringC";
-    game.dialog[#"hash_251e6a681a651b97"] = "domEnemySecuredA";
+    game.dialog[#"lost_a"] = "domEnemySecuredA";
     game.dialog[#"hash_251e6b681a651d4a"] = "domEnemySecuredB";
     game.dialog[#"hash_251e6c681a651efd"] = "domEnemySecuredC";
     game.dialog[#"hash_5c20fcde19f7c3b7"] = "domEnemySecuredAll";
@@ -81,10 +81,10 @@ function event<gametype_init> main(eventstruct) {
     game.dialog[#"enemy_b"] = "domEnemyHasB";
     game.dialog[#"hash_7ca0ebd7255f342d"] = "domEnemyHasC";
     game.var_2564b3a = [];
-    game.var_2564b3a[#"hash_2cce4d27ba1efa47"] = 0;
+    game.var_2564b3a[#"securing_a"] = 0;
     game.var_2564b3a[#"hash_2cce4e27ba1efbfa"] = 0;
     game.var_2564b3a[#"hash_2cce4f27ba1efdad"] = 0;
-    game.var_2564b3a[#"hash_39b608dc888621ff"] = 0;
+    game.var_2564b3a[#"losing_a"] = 0;
     game.var_2564b3a[#"hash_39b609dc888623b2"] = 0;
     game.var_2564b3a[#"hash_39b60adc88862565"] = 0;
     level.var_e6979a05 = [];
@@ -255,10 +255,10 @@ function updategametypedvars() {
     level.var_dc04c27d = getgametypesetting(#"hash_314b4f81b8b7dc64");
     level.var_e2719bc9 = getgametypesetting(#"hash_483e8c0148a4e513");
     level.var_9f6b22e7 = getgametypesetting(#"hash_29d84ecb37393f81");
-    level.var_c4979a16 = getgametypesetting(#"hash_27298832add70e8b");
+    level.flagCanBeNeutralized = getgametypesetting(#"flagCanBeNeutralized");
     level.decayprogress = isdefined(getgametypesetting(#"decayprogress")) ? getgametypesetting(#"decayprogress") : 0;
     level.autodecaytime = isdefined(getgametypesetting(#"autodecaytime")) ? getgametypesetting(#"autodecaytime") : undefined;
-    level.var_5479f3ce = isdefined(getgametypesetting(#"hash_57fe8e4f461c236d")) ? getgametypesetting(#"hash_57fe8e4f461c236d") : 0;
+    level.flagCaptureRateIncrease = isdefined(getgametypesetting(#"flagCaptureRateIncrease")) ? getgametypesetting(#"flagCaptureRateIncrease") : 0;
 }
 
 // Namespace dom/dom
@@ -319,7 +319,7 @@ function domflags() {
         visuals[0] = trigger.visual;
         domflag = gameobjects::create_use_object(#"neutral", trigger, visuals, (0, 0, 0), name);
         domflag gameobjects::allow_use(#"enemy");
-        if (level.var_c4979a16) {
+        if (level.flagCanBeNeutralized) {
             domflag gameobjects::set_use_time(level.var_90e3f42e / 2);
         } else {
             domflag gameobjects::set_use_time(level.var_90e3f42e);
@@ -336,14 +336,14 @@ function domflags() {
         domflag.var_df79c725 = &function_df79c725;
         domflag.ondecaycomplete = &ondecaycomplete;
         domflag.var_a334f38f = 0;
-        domflag.var_a0ff5eb8 = !level.var_5479f3ce;
+        domflag.var_a0ff5eb8 = !level.flagCaptureRateIncrease;
         domflag.decayprogress = level.decayprogress;
         domflag.autodecaytime = level.autodecaytime;
         domflag.var_eac9e8ae = 1;
         domflag.var_3c57b17d = &function_8c50d606;
         if (domflag.decayprogress) {
             domflag gameobjects::must_maintain_claim(0);
-            if (level.var_c4979a16) {
+            if (level.flagCanBeNeutralized) {
                 domflag gameobjects::set_decay_time(level.var_90e3f42e / 2);
             } else {
                 domflag gameobjects::set_decay_time(level.var_90e3f42e);
@@ -778,7 +778,7 @@ function function_6dace231(sentient) {
 // Checksum 0x2afaa392, Offset: 0x3f48
 // Size: 0xbc
 function onuse(sentient) {
-    if (level.var_c4979a16) {
+    if (level.flagCanBeNeutralized) {
         self function_99b2902f(sentient);
     } else {
         self function_6dace231(sentient);
@@ -964,9 +964,9 @@ function function_b6355b7f(touchlist, string, var_277c627b, var_dd783761) {
         if (!function_dacbb6ac(var_5498ee18, self)) {
             scoreevents::processscoreevent(#"hash_1a22ac168ba22619", var_5498ee18, undefined, undefined);
             var_5498ee18 recordgameevent("neutralized");
-            if (isdefined(var_5498ee18.pers[#"hash_fa9a7f9eaac554b"])) {
-                var_5498ee18.pers[#"hash_fa9a7f9eaac554b"]++;
-                var_5498ee18.captures = var_5498ee18.pers[#"hash_fa9a7f9eaac554b"];
+            if (isdefined(var_5498ee18.pers[#"neutralizes"])) {
+                var_5498ee18.pers[#"neutralizes"]++;
+                var_5498ee18.captures = var_5498ee18.pers[#"neutralizes"];
             }
             demo::bookmark(#"event", gettime(), var_5498ee18);
             potm::bookmark(#"event", gettime(), var_5498ee18);
@@ -1268,7 +1268,7 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
             if (team != ownerteam) {
                 scoreevents::processscoreevent(#"hash_339b0e87303dbd56", attacker, self, weapon);
                 var_e4b6c276 = 1;
-                if (flag.var_9f5ef882 === 1) {
+                if (flag.contested === 1) {
                     attacker function_fd41fc0f(flag, weapon);
                 }
             }
@@ -1337,14 +1337,14 @@ function function_d3a438fb(entity) {
 function function_fd41fc0f(flag, weapon) {
     self notify(#"hash_7b9f639422df668a");
     self endon(#"hash_7b9f639422df668a", #"disconnect");
-    var_4ab61689 = gettime();
+    killtime = gettime();
     playerteam = self.pers[#"team"];
     if (!isdefined(self.var_80220c95)) {
         self.var_80220c95 = 0;
     }
     self.var_80220c95++;
     flag waittill(#"hash_75ccf11c4b9a9faa");
-    if (playerteam != self.pers[#"team"] || isdefined(self.spawntime) && var_4ab61689 < self.spawntime) {
+    if (playerteam != self.pers[#"team"] || isdefined(self.spawntime) && killtime < self.spawntime) {
         self.var_80220c95 = 0;
         return;
     }
@@ -1352,7 +1352,7 @@ function function_fd41fc0f(flag, weapon) {
         self.var_80220c95 = 0;
         return;
     }
-    if (self.var_80220c95 >= 2 && var_4ab61689 + 200 > gettime()) {
+    if (self.var_80220c95 >= 2 && killtime + 200 > gettime()) {
         scoreevents::processscoreevent(#"hash_5d581b2af1ef6338", self, undefined, undefined);
         self challenges::function_e0f51b6f(weapon);
     }
@@ -1768,7 +1768,7 @@ function function_dacbb6ac(player, flag) {
 // Size: 0xa6
 function function_8c50d606(sentient) {
     if (isplayer(sentient)) {
-        if ((isdefined(self.var_9f5ef882) ? self.var_9f5ef882 : 0) && (isdefined(sentient.var_c8d27c06) ? sentient.var_c8d27c06 : 0) < gettime()) {
+        if ((isdefined(self.contested) ? self.contested : 0) && (isdefined(sentient.var_c8d27c06) ? sentient.var_c8d27c06 : 0) < gettime()) {
             sentient playsoundtoplayer(#"hash_5daa27b37c13bc01", sentient);
             sentient.var_c8d27c06 = gettime() + 5000;
         }
@@ -1780,11 +1780,11 @@ function function_8c50d606(sentient) {
 // Checksum 0x6a58488c, Offset: 0x80c0
 // Size: 0x23a
 function function_df79c725() {
-    if (!isdefined(self.var_9f5ef882)) {
-        self.var_9f5ef882 = 0;
+    if (!isdefined(self.contested)) {
+        self.contested = 0;
     }
     var_7ccef8c6 = self.numtouching[self.claimteam];
-    previousstate = self.var_9f5ef882;
+    previousstate = self.contested;
     ownerteam = self.ownerteam;
     if (var_7ccef8c6 > 0 && isdefined(ownerteam) && ownerteam != #"neutral" && ownerteam != self.claimteam) {
         if (previousstate == 0) {
@@ -1798,12 +1798,12 @@ function function_df79c725() {
                 }
             }
         }
-        self.var_9f5ef882 = 1;
+        self.contested = 1;
     } else {
         if (previousstate == 1) {
             self notify(#"hash_75ccf11c4b9a9faa");
         }
-        self.var_9f5ef882 = 0;
+        self.contested = 0;
     }
 }
 

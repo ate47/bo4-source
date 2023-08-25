@@ -1057,14 +1057,14 @@ function function_a57c21b8(var_bd7589b1) {
     settings = getscriptbundle("killstreak_ac130");
     ac130 endon(#"delete", #"hash_72c1abe12fde572a");
     player thread function_7f2e60();
-    player.var_3754b5bd = 0;
+    player.moves = 0;
     while (1) {
         ac130 waittill(#"goal");
-        if (player.var_3754b5bd > 0) {
+        if (player.moves > 0) {
             waittime = randomintrange(settings.var_efac0f7a, settings.var_18d458d2);
             wait(float(waittime) / 1000);
         }
-        player.var_3754b5bd++;
+        player.moves++;
         node = self function_4a01d817(var_bd7589b1, 1);
         ac130.currentnode = node;
         var_999c9446 = getent(node.target, "targetname");
@@ -1092,10 +1092,10 @@ function function_7f2e60() {
     player endon(#"disconnect", #"hash_31fa26bcde15ad26");
     ac130 = level.ac130;
     ac130 endon(#"delete", #"hash_72c1abe12fde572a");
-    var_9f589009 = self.var_3754b5bd;
+    var_9f589009 = self.moves;
     level.ac130.var_ba0b1611 = 1;
     wait(100);
-    if (var_9f589009 === self.var_3754b5bd && isdefined(level.ac130)) {
+    if (var_9f589009 === self.moves && isdefined(level.ac130)) {
         level.ac130.var_ba0b1611 = 0;
     }
 }
@@ -1105,7 +1105,7 @@ function function_7f2e60() {
 // Checksum 0xdb3cade9, Offset: 0x4c10
 // Size: 0x3fe
 function function_4a01d817(var_4a5733c5, var_465ed415) {
-    var_a55604f0 = [];
+    validenemies = [];
     foreach (node in var_4a5733c5) {
         node.validplayers = [];
         node.var_e86e559 = 0;

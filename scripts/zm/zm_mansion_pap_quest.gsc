@@ -888,7 +888,7 @@ function function_9e7129d2(e_player, s_stone, var_6cf4ded4, str_hint) {
     /#
         s_wormhole thread debug_draw_star();
     #/
-    e_wormhole = util::spawn_model(#"hash_106db0f970e1faec", s_wormhole.origin, s_wormhole.angles);
+    e_wormhole = util::spawn_model(#"p8_fxanim_zm_zod_wormhole_mod", s_wormhole.origin, s_wormhole.angles);
     e_player util::create_streamer_hint(v_cam, s_teleport_room.angles, 1);
     e_player waittill(#"hash_18259ed594f164dc", #"disconnect");
     s_wormhole thread scene::play(#"p8_fxanim_zm_man_wormhole_bundle_vision_stone", e_wormhole);
@@ -1726,7 +1726,7 @@ function function_ff4485b6(a_ents, mdl_key, var_3128fb28) {
     case #"p8_fxanim_zm_man_pap_drawers_mod":
         str_tag = "tag_drawers_tuning_fork_jnt";
         break;
-    case #"hash_62c15aa0668683a":
+    case #"p8_fxanim_zm_man_pap_lantern_mod":
         str_tag = "tag_lantern_tuning_fork_jnt";
         break;
     case #"p8_fxanim_zm_man_pap_wall_mod":

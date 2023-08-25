@@ -446,15 +446,15 @@ function function_3caac9e(localclientnum) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x6d8cb025, Offset: 0x1ea8
 // Size: 0x29e
-function function_95252d1f(localclientnum, var_7e4d34a7, var_b0733087) {
+function function_95252d1f(localclientnum, var_7e4d34a7, script_mover) {
     event = #"hash_5eb05b2054c53425" + var_7e4d34a7;
     /#
-        function_1a7aaaa8(localclientnum, "<unknown string>" + var_b0733087 getentitynumber());
+        function_1a7aaaa8(localclientnum, "<unknown string>" + script_mover getentitynumber());
     #/
     level notify(event);
     level endon(event);
-    var_3880aff8 = var_b0733087 getentitynumber();
-    var_b0733087 waittill(#"death");
+    var_3880aff8 = script_mover getentitynumber();
+    script_mover waittill(#"death");
     function_6a1db576(localclientnum, var_7e4d34a7, var_3880aff8);
     localplayers = getlocalplayers();
     foreach (localplayer in localplayers) {

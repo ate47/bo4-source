@@ -15,7 +15,7 @@ class squad {
     // Checksum 0x9c3729b9, Offset: 0x170
     // Size: 0x26
     __constructor() {
-        self.var_367c2dec = 0;
+        self.squadleader = 0;
         self.var_7c4bdc0a = [];
         self.var_830b81e8 = [];
     }
@@ -33,10 +33,10 @@ class squad {
     // Checksum 0xff993b77, Offset: 0x388
     // Size: 0x86
     function think() {
-        if (isint(self.var_367c2dec) && self.var_367c2dec == 0 || !isdefined(self.var_367c2dec)) {
+        if (isint(self.squadleader) && self.squadleader == 0 || !isdefined(self.squadleader)) {
             if (self.var_7c4bdc0a.size > 0) {
-                self.var_367c2dec = self.var_7c4bdc0a[0];
-                self.var_830b81e8 = self.var_367c2dec.origin;
+                self.squadleader = self.var_7c4bdc0a[0];
+                self.var_830b81e8 = self.squadleader.origin;
             } else {
                 return 0;
             }
@@ -51,8 +51,8 @@ class squad {
     function removeaifromsqaud(ai) {
         if (isinarray(self.var_7c4bdc0a, ai)) {
             arrayremovevalue(self.var_7c4bdc0a, ai, 0);
-            if (self.var_367c2dec === ai) {
-                self.var_367c2dec = undefined;
+            if (self.squadleader === ai) {
+                self.squadleader = undefined;
             }
         }
     }
@@ -83,7 +83,7 @@ class squad {
     // Checksum 0xc47f015, Offset: 0x260
     // Size: 0xa
     function getleader() {
-        return self.var_367c2dec;
+        return self.squadleader;
     }
 
     // Namespace squad/ai_squads
@@ -100,7 +100,7 @@ class squad {
     // Size: 0x9e
     function addsquadbreadcrumbs(ai) {
         /#
-            assert(self.var_367c2dec == ai);
+            assert(self.squadleader == ai);
         #/
         if (distance2dsquared(self.var_830b81e8, ai.origin) >= 9216) {
             /#
@@ -126,8 +126,8 @@ function autoexec __init__system__() {
 // Size: 0x6c
 function __init__() {
     level.var_af268484 = [];
-    var_769097b7 = getactorspawnerteamarray(#"axis");
-    array::run_all(var_769097b7, &spawner::add_spawn_function, &squadmemberthink);
+    actorspawnerarray = getactorspawnerteamarray(#"axis");
+    array::run_all(actorspawnerarray, &spawner::add_spawn_function, &squadmemberthink);
 }
 
 // Namespace aisquads/ai_squads
@@ -197,19 +197,19 @@ function private squadmemberthink() {
     if (isdefined(self.var_7435af0b)) {
         if (!isdefined(level.var_af268484[self.var_7435af0b])) {
             squad = createsquad(self.var_7435af0b);
-            var_7ce79b8e = 1;
+            newsquadcreated = 1;
         } else {
             squad = getsquad(self.var_7435af0b);
         }
         [[ squad ]]->addaitosquad(self);
         self thread squadmemberdeath();
-        if (isdefined(var_7ce79b8e) && var_7ce79b8e) {
+        if (isdefined(newsquadcreated) && newsquadcreated) {
             level thread thinksquad(self.var_7435af0b);
         }
         while (1) {
-            var_367c2dec = [[ level.var_af268484[self.var_7435af0b] ]]->getleader();
-            if (isdefined(var_367c2dec) && !(isint(var_367c2dec) && var_367c2dec == 0)) {
-                if (var_367c2dec == self) {
+            squadleader = [[ level.var_af268484[self.var_7435af0b] ]]->getleader();
+            if (isdefined(squadleader) && !(isint(squadleader) && squadleader == 0)) {
+                if (squadleader == self) {
                     /#
                         recordenttext(self.var_7435af0b + "<unknown string>", self, (0, 1, 0), "<unknown string>");
                     #/
@@ -225,25 +225,25 @@ function private squadmemberthink() {
                     [[ squad ]]->addsquadbreadcrumbs(self);
                 } else {
                     /#
-                        recordline(self.origin, var_367c2dec.origin, (0, 1, 0), "<unknown string>", self);
+                        recordline(self.origin, squadleader.origin, (0, 1, 0), "<unknown string>", self);
                     #/
                     /#
                         recordenttext(self.var_7435af0b + "<unknown string>", self, (0, 1, 0), "<unknown string>");
                     #/
-                    var_4f49e814 = [[ squad ]]->getsquadbreadcrumb();
-                    var_54c7031c = distance2dsquared(self.goalpos, var_4f49e814);
-                    if (isdefined(var_367c2dec.enemy)) {
-                        if (!isdefined(self.enemy) || isdefined(self.enemy) && self.enemy != var_367c2dec.enemy) {
-                            self setentitytarget(var_367c2dec.enemy, 1);
+                    followposition = [[ squad ]]->getsquadbreadcrumb();
+                    followdistsq = distance2dsquared(self.goalpos, followposition);
+                    if (isdefined(squadleader.enemy)) {
+                        if (!isdefined(self.enemy) || isdefined(self.enemy) && self.enemy != squadleader.enemy) {
+                            self setentitytarget(squadleader.enemy, 1);
                         }
                     }
-                    if (isdefined(self.goalpos) && var_54c7031c >= 256) {
-                        if (var_54c7031c >= 22500) {
+                    if (isdefined(self.goalpos) && followdistsq >= 256) {
+                        if (followdistsq >= 22500) {
                             self ai::set_behavior_attribute("sprint", 1);
                         } else {
                             self ai::set_behavior_attribute("sprint", 0);
                         }
-                        self setgoal(var_4f49e814, 1);
+                        self setgoal(followposition, 1);
                     }
                 }
             }
@@ -261,9 +261,9 @@ function isfollowingsquadleader(ai) {
         return 0;
     }
     squadmember = issquadmember(ai);
-    var_f2755ae2 = getsquadleader(ai);
-    var_24d2db24 = isdefined(var_f2755ae2) && var_f2755ae2 == ai;
-    if (squadmember && !var_24d2db24) {
+    currentsquadleader = getsquadleader(ai);
+    isaisquadleader = isdefined(currentsquadleader) && currentsquadleader == ai;
+    if (squadmember && !isaisquadleader) {
         return 1;
     }
     return 0;
@@ -291,8 +291,8 @@ function issquadleader(ai) {
     if (isdefined(ai.var_7435af0b)) {
         squad = getsquad(ai.var_7435af0b);
         if (isdefined(squad)) {
-            var_367c2dec = [[ squad ]]->getleader();
-            return (isdefined(var_367c2dec) && var_367c2dec == ai);
+            squadleader = [[ squad ]]->getleader();
+            return (isdefined(squadleader) && squadleader == ai);
         }
     }
     return 0;

@@ -345,9 +345,9 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
         if (attacker.var_ec2d285c == 3) {
             scoreevents::processscoreevent("infected_infect_3_enemies", attacker, self, weapon);
         }
-        if (isdefined(attacker.pers[#"hash_28734751cb5e5c91"])) {
-            attacker.pers[#"hash_28734751cb5e5c91"] = attacker.pers[#"hash_28734751cb5e5c91"] + 1;
-            attacker.var_6362c8b = attacker.pers[#"hash_28734751cb5e5c91"];
+        if (isdefined(attacker.pers[#"infects"])) {
+            attacker.pers[#"infects"] = attacker.pers[#"infects"] + 1;
+            attacker.infects = attacker.pers[#"infects"];
         }
         [[ level.var_37d62931 ]](attacker, 1);
     }
@@ -1088,7 +1088,7 @@ function function_244af78f(weaponitem) {
 // Checksum 0x4c4a536c, Offset: 0x3e80
 // Size: 0x3e
 function function_1a87243c() {
-    var_c97e80f5 = randomintrange(1, 2);
-    game.musicset = "_zm_0" + var_c97e80f5;
+    n_random_int = randomintrange(1, 2);
+    game.musicset = "_zm_0" + n_random_int;
 }
 

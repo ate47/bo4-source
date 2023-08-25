@@ -1574,8 +1574,8 @@ function in_revive_trigger() {
 // Size: 0x506
 function non_destroyed_bar_board_order(origin, chunks) {
     first_bars = [];
-    var_52549755 = [];
-    var_39386529 = [];
+    first_bars1 = [];
+    first_bars2 = [];
     for (i = 0; i < chunks.size; i++) {
         if (isdefined(chunks[i].script_team) && chunks[i].script_team == "classic_boards") {
             if (isdefined(chunks[i].script_parameters) && chunks[i].script_parameters == "board") {
@@ -1625,7 +1625,7 @@ function non_destroyed_bar_board_order(origin, chunks) {
 // Checksum 0x7fed0252, Offset: 0x5a70
 // Size: 0x532
 function non_destroyed_grate_order(origin, chunks_grate) {
-    var_f8941250 = [];
+    grate_order = [];
     grate_order1 = [];
     grate_order2 = [];
     grate_order3 = [];
@@ -1948,7 +1948,7 @@ function get_destroyed_chunks(barrier_chunks) {
 // Checksum 0xef5b8974, Offset: 0x6dd8
 // Size: 0x55a
 function grate_order_destroyed(chunks_repair_grate) {
-    var_7d70c642 = [];
+    grate_repair_order = [];
     grate_repair_order1 = [];
     grate_repair_order2 = [];
     grate_repair_order3 = [];

@@ -24,7 +24,7 @@ function function_c6f75619() {
         assert(isdefined(self.scriptbundlesettings));
     #/
     self.settings = struct::get_script_bundle("vehiclecustomsettings", self.scriptbundlesettings);
-    if (self.settings.var_7e158cee) {
+    if (self.settings.aim_assist) {
         self enableaimassist();
     }
     if (self.settings.ignorelaststandplayers === 1) {

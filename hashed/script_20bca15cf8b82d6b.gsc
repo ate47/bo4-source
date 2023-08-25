@@ -9,7 +9,7 @@
 
 #namespace zombie_brutus_util;
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x2
 // Checksum 0xc892978, Offset: 0xd8
 // Size: 0x3c
@@ -17,7 +17,7 @@ function autoexec __init__system__() {
     system::register(#"zombie_brutus_util", &__init__, undefined, undefined);
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4305c72, Offset: 0x120
 // Size: 0x4c
@@ -25,7 +25,7 @@ function __init__() {
     clientfield::register("actor", "brutus_lock_down", 1, 1, "int", &function_6f198c81, 0, 0);
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 7, eflags: 0x1 linked
 // Checksum 0xeb380bad, Offset: 0x178
 // Size: 0xbc

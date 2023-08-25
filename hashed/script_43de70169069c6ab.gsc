@@ -39,8 +39,8 @@ function main() {
 // Checksum 0x6887082, Offset: 0x3f8
 // Size: 0x8c
 function function_d38f33fb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    var_7a6fd40 = struct::get("n_c_w_p_01");
-    var_7a6fd40 function_ba8cd0cf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump);
+    s_number = struct::get("n_c_w_p_01");
+    s_number function_ba8cd0cf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump);
 }
 
 // Namespace namespace_9d58c1cd/namespace_9d58c1cd
@@ -48,8 +48,8 @@ function function_d38f33fb(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0xc4149931, Offset: 0x490
 // Size: 0x8c
 function function_c5199710(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    var_7a6fd40 = struct::get("n_c_w_p_02");
-    var_7a6fd40 function_ba8cd0cf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump);
+    s_number = struct::get("n_c_w_p_02");
+    s_number function_ba8cd0cf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump);
 }
 
 // Namespace namespace_9d58c1cd/namespace_9d58c1cd
@@ -57,8 +57,8 @@ function function_c5199710(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0xd5d89043, Offset: 0x528
 // Size: 0x8c
 function function_68a0de20(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    var_7a6fd40 = struct::get("n_c_w_p_03");
-    var_7a6fd40 function_ba8cd0cf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump);
+    s_number = struct::get("n_c_w_p_03");
+    s_number function_ba8cd0cf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump);
 }
 
 // Namespace namespace_9d58c1cd/namespace_9d58c1cd

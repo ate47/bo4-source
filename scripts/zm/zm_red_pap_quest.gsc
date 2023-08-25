@@ -170,7 +170,7 @@ function function_90a833e2() {
 function pap_quest_init() {
     level endon(#"end_game");
     level.var_10e70c82 = 10000;
-    level.var_61456417 = 16;
+    level.n_attacks = 16;
     level.player_out_of_playable_area_override = &function_9af8bfc8;
     level.player_out_of_playable_area_monitor_callback = &player_out_of_playable_area_monitor_callback;
     scene::init(#"hash_4cd11950522f601a");
@@ -1292,7 +1292,7 @@ function function_a965580a(a_ents) {
         }
         wait(0.5);
     }
-    level waittill(#"hash_6d2f88def7c68239");
+    level waittill(#"approach");
     a_players = util::get_active_players();
     player = array::random(a_players);
     if (isdefined(player)) {
@@ -2175,10 +2175,10 @@ function function_a8f9c9c4() {
             self waittill(#"impact");
             self clientfield::increment("" + #"crystal_explosion");
             self playrumbleonentity("zm_red_eagle_impact_rumble");
-            if (level.var_61456417) {
-                level.var_61456417--;
-                level thread function_96442f27(level.var_61456417);
-                if (level.var_61456417 <= 0) {
+            if (level.n_attacks) {
+                level.n_attacks--;
+                level thread function_96442f27(level.n_attacks);
+                if (level.n_attacks <= 0) {
                     level flag::set(#"egg_free");
                 }
                 level thread function_15e37b0a(var_b40c658f);
@@ -2193,8 +2193,8 @@ function function_a8f9c9c4() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x1e935fd9, Offset: 0x9970
 // Size: 0x25a
-function function_96442f27(var_61456417) {
-    switch (var_61456417) {
+function function_96442f27(n_attacks) {
+    switch (n_attacks) {
     case 12:
         level scene::play(#"hash_6c19cacedbc244f", "break01");
         break;

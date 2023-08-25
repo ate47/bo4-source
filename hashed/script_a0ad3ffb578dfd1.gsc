@@ -73,9 +73,9 @@ function function_904b119() {
 // Checksum 0x77efc285, Offset: 0xc18
 // Size: 0x2da
 function function_a425bf07() {
-    var_581db771 = struct::get(#"creepy_friend");
-    s_trigger_loc = struct::get(var_581db771.target);
-    var_39dbb29f = util::spawn_model(#"hash_249386b68e19b345", var_581db771.origin, var_581db771.angles);
+    s_doll = struct::get(#"creepy_friend");
+    s_trigger_loc = struct::get(s_doll.target);
+    var_39dbb29f = util::spawn_model(#"hash_249386b68e19b345", s_doll.origin, s_doll.angles);
     s_unitrigger = s_trigger_loc zm_unitrigger::create(undefined, 32);
     s_trigger_loc waittill(#"trigger_activated");
     var_39dbb29f thread function_e7fd1a33();
@@ -99,30 +99,30 @@ function function_a425bf07() {
 function function_e7fd1a33() {
     self endon(#"death");
     var_f21d9eb3 = int(self.origin[0] - 12);
-    var_2fa2573d = int(self.origin[0] + 12);
+    n_max_x = int(self.origin[0] + 12);
     while (isdefined(self)) {
         wait(randomintrange(15, 30));
         while (1) {
-            var_b2766581 = 1;
+            b_move = 1;
             players = util::get_active_players();
             foreach (player in players) {
                 if (!isdefined(player)) {
                     continue;
                 }
                 if (player util::is_looking_at(self.origin)) {
-                    var_b2766581 = 0;
+                    b_move = 0;
                     break;
                 }
                 waitframe(1);
             }
-            if (var_b2766581) {
+            if (b_move) {
                 break;
             }
             wait(1);
         }
-        var_8328f3e3 = randomintrange(160, 200);
-        n_x_move = randomintrange(var_f21d9eb3, var_2fa2573d);
-        self rotateto((self.angles[0], var_8328f3e3, self.angles[2]), 0.25);
+        n_rotate = randomintrange(160, 200);
+        n_x_move = randomintrange(var_f21d9eb3, n_max_x);
+        self rotateto((self.angles[0], n_rotate, self.angles[2]), 0.25);
         self moveto((n_x_move, self.origin[1], self.origin[2]), 0.25);
     }
 }
@@ -139,12 +139,12 @@ function function_7b89f32a() {
     var_ff4b3a13 val::set(#"painting_cipher", "takedamage", 1);
     var_ff4b3a13 val::set(#"painting_cipher", "allowdeath", 0);
     w_weapon = getweapon(#"bowie_knife");
-    var_61456417 = 0;
-    while (var_61456417 < 9) {
+    n_attacks = 0;
+    while (n_attacks < 9) {
         s_result = undefined;
         s_result = var_ff4b3a13 waittill(#"damage");
         if (s_result.mod === #"mod_melee") {
-            var_61456417++;
+            n_attacks++;
         }
     }
     s_loc = struct::get(#"clottedcreamtea");
@@ -421,9 +421,9 @@ function function_ad05f6f3() {
 // Checksum 0x3891c72e, Offset: 0x2608
 // Size: 0xa94
 function function_558936ed() {
-    var_48c8e2bc = struct::get(#"spin_cycle");
-    var_87e0cf0b = spawn("trigger_damage", var_48c8e2bc.origin - vectorscale((0, 0, 1), 10), 0, 12, 10);
-    var_c75fe44b = util::spawn_model(#"hash_2ce772d39f43cc44" + "a", var_48c8e2bc.origin, var_48c8e2bc.angles);
+    s_flag = struct::get(#"spin_cycle");
+    var_87e0cf0b = spawn("trigger_damage", s_flag.origin - vectorscale((0, 0, 1), 10), 0, 12, 10);
+    var_c75fe44b = util::spawn_model(#"hash_2ce772d39f43cc44" + "a", s_flag.origin, s_flag.angles);
     var_c75fe44b setscale(0.18);
     var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
     var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "c");
@@ -614,91 +614,91 @@ function function_c867ac0a(e_homunculus, var_21bb918c, var_c8279d50) {
     var_c8279d50.var_55e11aa9 = util::spawn_model("tag_origin", var_c8279d50.origin);
     var_21bb918c.var_55e11aa9 linkto(level.e_sway);
     var_c8279d50.var_55e11aa9 linkto(level.e_sway);
-    var_3ddef74 = function_a7ae2066();
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"start");
+    a_angles = function_a7ae2066();
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"start");
     wait(1);
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"y");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"o");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"u");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"h");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"a");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"v");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"e");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"q");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"u");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"e");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"s");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"t");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"i");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"o");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"n");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"s");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"o");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"f");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"y");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"o");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"u");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"r");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"f");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"a");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"m");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"i");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"l");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"y");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"s");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"h");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"i");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"s");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"t");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"o");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"r");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"y");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"y");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"o");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"u");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"m");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"a");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"y");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"n");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"o");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"t");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"l");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"i");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"k");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"e");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"w");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"h");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"e");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"r");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"e");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"t");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"h");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"e");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"a");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"n");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"s");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"w");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"e");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"r");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"s");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"space");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"l");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"e");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"a");
-    function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, #"d");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"y");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"o");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"u");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"h");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"a");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"v");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"e");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"q");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"u");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"e");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"s");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"t");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"i");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"o");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"n");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"s");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"o");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"f");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"y");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"o");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"u");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"r");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"f");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"a");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"m");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"i");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"l");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"y");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"s");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"h");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"i");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"s");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"t");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"o");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"r");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"y");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"y");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"o");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"u");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"m");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"a");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"y");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"n");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"o");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"t");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"l");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"i");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"k");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"e");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"w");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"h");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"e");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"r");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"e");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"t");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"h");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"e");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"a");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"n");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"s");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"w");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"e");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"r");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"s");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"space");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"l");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"e");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"a");
+    function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"d");
     callback::remove_on_connect(&function_e1a452f5);
     level notify(#"hash_6aec924aa525b354");
     var_21bb918c.var_55e11aa9 delete();
@@ -715,11 +715,11 @@ function function_c867ac0a(e_homunculus, var_21bb918c, var_c8279d50) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0x625a2182, Offset: 0x47a8
 // Size: 0x164
-function function_dc92e2d4(var_3ddef74, var_21bb918c, var_c8279d50, str_letter) {
+function function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, str_letter) {
     var_21bb918c unlink();
     var_c8279d50 unlink();
-    var_21bb918c rotateto(var_3ddef74[#"left"][str_letter], 0.5);
-    var_c8279d50 rotateto(var_3ddef74[#"right"][str_letter], 0.5);
+    var_21bb918c rotateto(a_angles[#"left"][str_letter], 0.5);
+    var_c8279d50 rotateto(a_angles[#"right"][str_letter], 0.5);
     var_c8279d50 waittill(#"rotatedone");
     var_21bb918c.origin = var_21bb918c.var_55e11aa9.origin;
     var_c8279d50.origin = var_c8279d50.var_55e11aa9.origin;
@@ -957,7 +957,7 @@ function function_24d85b68() {
     level endon(#"hash_20b6d10f9de5d13a");
     while (1) {
         a_players = util::get_active_players();
-        var_f1ace900 = 0;
+        b_rumble = 0;
         foreach (player in a_players) {
             if (player.origin[2] < 750 && distancesquared(player.origin, self.origin) < 169) {
                 player playrumbleonentity(#"hash_2c759068c6a8567d");
@@ -973,26 +973,26 @@ function function_24d85b68() {
 // Checksum 0x180fd400, Offset: 0x6170
 // Size: 0x476
 function function_7199779e() {
-    var_451b9958 = [];
-    var_451b9958[#"space"] = array(0, 0, 0, 0, 0, 0);
-    var_451b9958[#"r"] = array(1, 0, 1, 1, 1, 0);
-    var_451b9958[#"u"] = array(1, 0, 0, 0, 1, 1);
-    var_451b9958[#"n"] = array(1, 1, 0, 1, 1, 0);
-    var_451b9958[#"i"] = array(0, 1, 1, 0, 0, 0);
-    var_451b9958[#"g"] = array(1, 1, 1, 1, 0, 0);
-    var_451b9958[#"f"] = array(1, 1, 1, 0, 0, 0);
-    var_451b9958[#"o"] = array(1, 0, 0, 1, 1, 0);
-    var_451b9958[#"m"] = array(1, 1, 0, 0, 1, 0);
-    var_451b9958[#"y"] = array(1, 1, 0, 1, 1, 1);
-    var_451b9958[#"e"] = array(1, 0, 0, 1, 0, 0);
-    var_451b9958[#"l"] = array(1, 0, 1, 0, 1, 0);
-    var_451b9958[#"d"] = array(1, 1, 0, 1, 0, 0);
-    var_451b9958[#"s"] = array(0, 1, 1, 0, 1, 0);
-    var_451b9958[#"n"] = array(1, 1, 0, 1, 1, 0);
-    var_451b9958[#"t"] = array(0, 1, 1, 1, 1, 0);
-    var_451b9958[#"a"] = array(1, 0, 0, 0, 0, 0);
-    var_451b9958[#"h"] = array(1, 0, 1, 1, 0, 0);
-    var_451b9958[#"p"] = array(1, 1, 1, 0, 1, 0);
-    return var_451b9958;
+    a_letters = [];
+    a_letters[#"space"] = array(0, 0, 0, 0, 0, 0);
+    a_letters[#"r"] = array(1, 0, 1, 1, 1, 0);
+    a_letters[#"u"] = array(1, 0, 0, 0, 1, 1);
+    a_letters[#"n"] = array(1, 1, 0, 1, 1, 0);
+    a_letters[#"i"] = array(0, 1, 1, 0, 0, 0);
+    a_letters[#"g"] = array(1, 1, 1, 1, 0, 0);
+    a_letters[#"f"] = array(1, 1, 1, 0, 0, 0);
+    a_letters[#"o"] = array(1, 0, 0, 1, 1, 0);
+    a_letters[#"m"] = array(1, 1, 0, 0, 1, 0);
+    a_letters[#"y"] = array(1, 1, 0, 1, 1, 1);
+    a_letters[#"e"] = array(1, 0, 0, 1, 0, 0);
+    a_letters[#"l"] = array(1, 0, 1, 0, 1, 0);
+    a_letters[#"d"] = array(1, 1, 0, 1, 0, 0);
+    a_letters[#"s"] = array(0, 1, 1, 0, 1, 0);
+    a_letters[#"n"] = array(1, 1, 0, 1, 1, 0);
+    a_letters[#"t"] = array(0, 1, 1, 1, 1, 0);
+    a_letters[#"a"] = array(1, 0, 0, 0, 0, 0);
+    a_letters[#"h"] = array(1, 0, 1, 1, 0, 0);
+    a_letters[#"p"] = array(1, 1, 1, 0, 1, 0);
+    return a_letters;
 }
 

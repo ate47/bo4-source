@@ -246,7 +246,7 @@ function defend_areas() {
 // Size: 0x774
 function function_84139b27() {
     zm_utility::function_c492c4d6(#"hash_5611ac0b89e7f8b1", #"hash_82cab1897c803b8", array(#"zone_poop_deck"), array(#"engine_room", #"lounge", #"hash_2b467fe62e7e8ee2", #"hash_492a368d4273a505"), #"hash_419e018f0a0f07fe", #"hash_5f80d9ba2fc090a");
-    zm_utility::function_c492c4d6(#"lounge", #"hash_18944a1360325a74", array(#"hash_7c42c70d1b75af3a"), array(#"engine_room", #"hash_5611ac0b89e7f8b1", #"cargo_hold", #"bridge"), #"hash_40ba277929e49516", #"hash_2bed1c6d7afa4192");
+    zm_utility::function_c492c4d6(#"lounge", #"hash_18944a1360325a74", array(#"zone_lounge"), array(#"engine_room", #"hash_5611ac0b89e7f8b1", #"cargo_hold", #"bridge"), #"hash_40ba277929e49516", #"hash_2bed1c6d7afa4192");
     zm_utility::function_c492c4d6(#"hash_2b467fe62e7e8ee2", #"hash_7ab52512f34acbe3", array(#"hash_793d7ec398cf9674", #"hash_574cb9ab1a4d0993"), array(#"hash_5611ac0b89e7f8b1", #"engine_room", #"cargo_hold", #"forecastle"), #"hash_8a9d3480015e78b", #"hash_6bdaac7090cd4985");
     zm_utility::function_c492c4d6(#"hash_492a368d4273a505", #"hash_3d0f15229df3eca2", array(#"zone_fore_deck"), array(#"bridge", #"engine_room", #"hash_5611ac0b89e7f8b1", #"forecastle"), #"hash_7ed3d98c25f1502a", #"hash_4b2d803f03300036");
     zm_utility::function_c492c4d6(#"forecastle", #"hash_4ceaaaca5eeb762e", array(#"zone_forecastle_lower", #"zone_forecastle_upper"), array(#"cargo_hold", #"bridge", #"hash_492a368d4273a505", #"hash_2b467fe62e7e8ee2"), #"hash_27ad030950415bce", #"hash_fc714290197baba");

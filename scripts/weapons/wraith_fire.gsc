@@ -95,7 +95,7 @@ function function_13f6636b(owner, weapon) {
         if (isdefined(killcament)) {
             killcament unlink();
         }
-        var_bd5f5c6c = !function_f4e48434(waitresult.position);
+        var_bd5f5c6c = !is_under_water(waitresult.position);
         if (var_bd5f5c6c) {
             function_3932cbd9(owner, waitresult.position, waitresult.normal, self.var_59ba00f5, killcament, weapon, team, getscriptbundle(weapon.customsettings));
         }
@@ -115,7 +115,7 @@ function function_3932cbd9(owner, origin, normal, velocity, killcament, weapon, 
 // Params 1, eflags: 0x1 linked
 // Checksum 0xad03ee07, Offset: 0x730
 // Size: 0x66
-function function_f4e48434(position) {
+function is_under_water(position) {
     water_depth = getwaterheight(position) - position[2];
     return !(isdefined(level.var_c62ed297) && level.var_c62ed297) && water_depth >= 24;
 }
@@ -238,7 +238,7 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
             while (z > lowestz) {
                 newpos = (x, y, z);
                 water_depth = get_water_depth(newpos);
-                if (function_a66ba8cc(water_depth) || function_f4e48434(newpos)) {
+                if (function_a66ba8cc(water_depth) || is_under_water(newpos)) {
                     newpos = newpos - (0, 0, water_depth);
                     level thread function_42b9fdbe(var_fc031a6d, newpos, (0, 0, 1), int(customsettings.var_b79d64a9), team);
                     break;
@@ -388,7 +388,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
     } else {
         mdl_anchor delete();
     }
-    if (!function_f4e48434(var_6b23e1c9)) {
+    if (!is_under_water(var_6b23e1c9)) {
         if (isdefined(mdl_anchor)) {
             playfxontag(level._effect[#"hash_6024e139900c449a"], mdl_anchor, "tag_origin", 0);
         } else {
@@ -415,7 +415,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
         if (!isdefined(lockey)) {
             continue;
         }
-        if (function_f4e48434(locations[#"loc"][lockey])) {
+        if (is_under_water(locations[#"loc"][lockey])) {
             continue;
         }
         if (is_round_reset()) {

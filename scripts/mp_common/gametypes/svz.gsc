@@ -376,8 +376,8 @@ function function_bbde018c() {
 // Checksum 0xaf3fc84, Offset: 0x1718
 // Size: 0x3e
 function function_507d58da() {
-    var_c97e80f5 = randomintrange(1, 2);
-    game.musicset = "_zm_0" + var_c97e80f5;
+    n_random_int = randomintrange(1, 2);
+    game.musicset = "_zm_0" + n_random_int;
 }
 
 // Namespace svz/svz

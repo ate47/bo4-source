@@ -77,14 +77,14 @@ function event<gametype_init> main(eventstruct) {
     util::registerroundswitch(0, 9);
     util::registerroundwinlimit(0, 10);
     util::registernumlives(0, 100);
-    level.var_14bef9d0 = getgametypesetting(#"hash_3a64e31d02834194");
-    level.var_3512ee2c = getgametypesetting(#"hash_1d5318dc84fcfef1");
-    level.var_d5a22fd4 = getgametypesetting(#"hash_1e5d29788698deda");
+    level.bootTime = getgametypesetting(#"bootTime");
+    level.rebootTime = getgametypesetting(#"rebootTime");
+    level.rebootPlayers = getgametypesetting(#"rebootPlayers");
     level.var_24b79196 = getgametypesetting(#"hash_7add838fc1bf8a8e");
     level.var_a6ffdf8d = getgametypesetting(#"hash_75aa1b4ab753e35e");
-    level.var_bbac08e3 = "run";
+    level.robotSpeed = "run";
     level.var_cdb8ae2c = &function_a8da260c;
-    switch (getgametypesetting(#"hash_78e80a41589e26aa")) {
+    switch (getgametypesetting(#"shutdownDamage")) {
     case 1:
         level.var_25a81c62 = "escort_robot_low";
         break;
@@ -95,23 +95,23 @@ function event<gametype_init> main(eventstruct) {
         level.var_25a81c62 = "escort_robot_high";
     case 0:
     default:
-        level.var_4bd0d861 = 0;
+        level.shutdownDamage = 0;
         break;
     }
     if (isdefined(level.var_25a81c62)) {
         killstreak_bundles::register_killstreak_bundle(level.var_25a81c62);
-        level.var_4bd0d861 = killstreak_bundles::get_max_health(level.var_25a81c62);
+        level.shutdownDamage = killstreak_bundles::get_max_health(level.var_25a81c62);
     }
-    switch (isdefined(getgametypesetting(#"hash_52378dd81e94f2da")) ? getgametypesetting(#"hash_52378dd81e94f2da") : 0) {
+    switch (isdefined(getgametypesetting(#"robotSpeed")) ? getgametypesetting(#"robotSpeed") : 0) {
     case 1:
     default:
-        level.var_bbac08e3 = "run";
+        level.robotSpeed = "run";
         break;
     case 2:
-        level.var_bbac08e3 = "sprint";
+        level.robotSpeed = "sprint";
         break;
     case 0:
-        level.var_bbac08e3 = "walk";
+        level.robotSpeed = "walk";
         break;
     }
     globallogic_audio::set_leader_gametype_dialog("startSafeguard", "hcStartSafeguard", "sfgStartAttack", "sfgStartDefend", "bbStartSafeguard", "hcbbStartSafeguard");
@@ -352,10 +352,10 @@ function function_b38a0ce0() {
     level.var_171f17cc = function_b3d560f2(level.robot, "escort_robot_move_trig");
     level.var_e1f98cba = function_c2fb1ec0(level.robot, "escort_robot_goal_trig");
     function_9d7e4873(level.robot, "escort_robot_reboot_trig");
-    if (level.var_14bef9d0) {
+    if (level.bootTime) {
         level.var_171f17cc gameobjects::set_flags(1);
         level.robot setblackboardattribute("_stance", "crouch");
-        level.robot ai::set_behavior_attribute("rogue_control_speed", level.var_bbac08e3);
+        level.robot ai::set_behavior_attribute("rogue_control_speed", level.robotSpeed);
         level.robot function_4e5bb046();
     } else {
         objective_setprogress(level.var_171f17cc.objectiveid, 1);
@@ -369,8 +369,8 @@ function function_b38a0ce0() {
     level.robot.onground = 1;
     level.robot.distancetraveled = 0;
     level.robot thread function_ba95878f();
-    if (level.var_14bef9d0) {
-        level.robot thread function_c282aa58(level.var_14bef9d0);
+    if (level.bootTime) {
+        level.robot thread function_c282aa58(level.bootTime);
     } else if (level.var_24b79196 == 0) {
         level.robot function_cd983806();
     }
@@ -547,7 +547,7 @@ function function_fe01da38() {
         globallogic_audio::leader_dialog("sfgRobotDisabledDefender", otherteam, undefined, "robot");
         globallogic_audio::play_2d_on_team("mpl_safeguard_disabled_sting_friend", self.team);
         globallogic_audio::play_2d_on_team("mpl_safeguard_disabled_sting_enemy", otherteam);
-        self thread function_c282aa58(level.var_3512ee2c);
+        self thread function_c282aa58(level.rebootTime);
     }
 }
 
@@ -589,7 +589,7 @@ function function_c282aa58(time) {
     while (shutdowntime < time) {
         rate = 0;
         var_c01d8dbb = level.var_171f17cc.numtouching[level.var_171f17cc.ownerteam];
-        if (!level.var_d5a22fd4) {
+        if (!level.rebootPlayers) {
             rate = float(function_60d95f53()) / 1000;
         } else if (var_c01d8dbb > 0) {
             rate = float(function_60d95f53()) / 1000;
@@ -605,7 +605,7 @@ function function_c282aa58(time) {
         }
         waitframe(1);
     }
-    if (level.var_d5a22fd4 > 0) {
+    if (level.rebootPlayers > 0) {
         foreach (struct in level.var_171f17cc.touchlist[game.attackers]) {
             scoreevents::processscoreevent(#"hash_7ed287a2b6b9112a", struct.player, undefined, undefined);
         }
@@ -621,9 +621,9 @@ function function_6b6768fc() {
     level endon(#"game_ended");
     while (1) {
         self waittill(#"hash_4786d33b29c15c8f");
-        percent = min(1, self.var_4bd0d861 / level.var_4bd0d861);
+        percent = min(1, self.shutdownDamage / level.shutdownDamage);
         objective_setprogress(level.var_171f17cc.objectiveid, 1 - percent);
-        health = level.var_4bd0d861 - self.var_4bd0d861;
+        health = level.shutdownDamage - self.shutdownDamage;
         lowhealth = killstreak_bundles::get_low_health(level.var_25a81c62);
         if (!(isdefined(self.var_36a986e6) && self.var_36a986e6) && health <= lowhealth) {
             globallogic_audio::leader_dialog("sfgRobotUnderFire", self.team, undefined, "robot");
@@ -727,8 +727,8 @@ function function_bf9b418c(position, angles) {
     robot ai::set_behavior_attribute("rogue_allow_pregib", 0);
     robot ai::set_behavior_attribute("rogue_allow_predestruct", 0);
     robot ai::set_behavior_attribute("rogue_control", "forced_level_2");
-    robot ai::set_behavior_attribute("rogue_control_speed", level.var_bbac08e3);
-    robot val::set(#"hash_40c2f18bb880e692", "ignoreall", 1);
+    robot ai::set_behavior_attribute("rogue_control_speed", level.robotSpeed);
+    robot val::set(#"escort_robot", "ignoreall", 1);
     robot.allowdeath = 0;
     robot ai::set_behavior_attribute("can_become_crawler", 0);
     robot ai::set_behavior_attribute("can_be_meleed", 0);
@@ -738,7 +738,7 @@ function function_bf9b418c(position, angles) {
     robot.active = 1;
     robot.var_3b78d9f5 = 1;
     robot.moving = 0;
-    robot.var_4bd0d861 = 0;
+    robot.shutdownDamage = 0;
     robot.propername = "";
     robot.ignoretriggerdamage = 1;
     robot.allowpain = 0;
@@ -755,7 +755,7 @@ function function_bf9b418c(position, angles) {
         aiutility::attachriotshield(robot, getweapon("riotshield"), "wpn_t7_shield_riot_world_lh", "tag_stowed_back");
     }
     robot asmsetanimationrate(1.1);
-    if (isdefined(level.var_4bd0d861) && level.var_4bd0d861) {
+    if (isdefined(level.shutdownDamage) && level.shutdownDamage) {
         target_set(robot, vectorscale((0, 0, 1), 50));
     }
     robot.overrideactordamage = &function_47c9fa3c;
@@ -776,24 +776,24 @@ function function_47c9fa3c(einflictor, eattacker, idamage, idflags, smeansofdeat
     if (!isdefined(eattacker)) {
         return 0;
     }
-    if (level.var_4bd0d861 <= 0 || !self.active || eattacker.team == game.attackers) {
+    if (level.shutdownDamage <= 0 || !self.active || eattacker.team == game.attackers) {
         return 0;
     }
     level.usestartspawns = 0;
-    weapon_damage = killstreak_bundles::get_weapon_damage(level.var_25a81c62, level.var_4bd0d861, eattacker, weapon, smeansofdeath, idamage, idflags, undefined);
+    weapon_damage = killstreak_bundles::get_weapon_damage(level.var_25a81c62, level.shutdownDamage, eattacker, weapon, smeansofdeath, idamage, idflags, undefined);
     if (!isdefined(weapon_damage)) {
         weapon_damage = idamage;
     }
     if (!weapon_damage) {
         return 0;
     }
-    self.var_4bd0d861 = self.var_4bd0d861 + weapon_damage;
+    self.shutdownDamage = self.shutdownDamage + weapon_damage;
     self notify(#"hash_4786d33b29c15c8f");
     if (!isdefined(eattacker.var_d6b81efd)) {
         eattacker.var_d6b81efd = 0;
     }
     eattacker.var_d6b81efd = eattacker.var_d6b81efd + weapon_damage;
-    if (self.var_4bd0d861 >= level.var_4bd0d861) {
+    if (self.shutdownDamage >= level.shutdownDamage) {
         origin = (0, 0, 0);
         if (isplayer(eattacker)) {
             level thread popups::displayteammessagetoall(#"hash_6fd616c1d7988357", eattacker);
@@ -816,7 +816,7 @@ function function_47c9fa3c(einflictor, eattacker, idamage, idflags, smeansofdeat
             if (player == eattacker || player.team == self.team || !isdefined(player.var_d6b81efd)) {
                 continue;
             }
-            damagepercent = player.var_d6b81efd / level.var_4bd0d861;
+            damagepercent = player.var_d6b81efd / level.shutdownDamage;
             if (damagepercent >= 0.5) {
                 scoreevents::processscoreevent(#"hash_48e06d4b02042bfb", player, undefined, undefined);
             } else if (damagepercent >= 0.25) {
@@ -893,10 +893,10 @@ function function_f31ccd44() {
     self endon(#"hash_19b6c6cf9dfb51ca");
     level endon(#"game_ended");
     self.active = 1;
-    self.var_4bd0d861 = 0;
+    self.shutdownDamage = 0;
     self val::reset(#"hash_3de2bce887b7b68d", "ignoreme");
     self notify(#"hash_2b6b3dbde7859981");
-    if (isdefined(level.var_4bd0d861) && level.var_4bd0d861) {
+    if (isdefined(level.shutdownDamage) && level.shutdownDamage) {
         target_set(self, vectorscale((0, 0, 1), 50));
     }
     if (isdefined(self.riotshield)) {
@@ -1068,7 +1068,7 @@ function function_d1a2b84b(goal) {
     while (1) {
         wait(0.1);
         if (isdefined(self.traversestartnode)) {
-            self waittill(#"hash_255dc2e132c1a7e1");
+            self waittill(#"traverse_end");
             continue;
         }
         if (self asmistransdecrunning()) {
@@ -1096,7 +1096,7 @@ function function_1355041() {
     self endon(#"hash_3ea08fca40d25910", #"hash_1e42b7cde9400998");
     level endon(#"game_ended");
     while (isdefined(self.traversestartnode)) {
-        self waittill(#"hash_255dc2e132c1a7e1");
+        self waittill(#"traverse_end");
     }
     self.var_8fb3cca9 = 1;
     startpos = self.origin;
@@ -1148,7 +1148,7 @@ function function_92cafff7() {
 function function_de7b7c31() {
     self notify(#"hash_1791a09042310ba1");
     self endon(#"hash_1791a09042310ba1", #"death");
-    self waittill(#"hash_255dc2e132c1a7e1");
+    self waittill(#"traverse_end");
     var_2cc818f7 = isdefined(level.var_171f17cc.numtouching[level.var_171f17cc.ownerteam]) ? level.var_171f17cc.numtouching[level.var_171f17cc.ownerteam] : 0;
     if (var_2cc818f7 < level.var_24b79196) {
         self function_92cafff7();
@@ -1165,7 +1165,7 @@ function function_f05d667f() {
     self endon(#"death");
     level endon(#"game_ended");
     while (1) {
-        self waittill(#"hash_255dc2e132c1a7e1");
+        self waittill(#"traverse_end");
         if (!self.moving) {
             self setgoal(self.origin, 1);
         }
@@ -1381,7 +1381,7 @@ function function_a16b3a55() {
 // Size: 0x1fe
 function function_b3d560f2(robot, var_b2950fe9) {
     trigger = getent(var_b2950fe9, "targetname");
-    useobj = gameobjects::create_use_object(game.attackers, trigger, [], (0, 0, 0), #"hash_40c2f18bb880e692");
+    useobj = gameobjects::create_use_object(game.attackers, trigger, [], (0, 0, 0), #"escort_robot");
     useobj gameobjects::set_objective_entity(robot);
     useobj gameobjects::allow_use(#"none");
     useobj gameobjects::set_visible_team(#"any");
@@ -1590,7 +1590,7 @@ function function_7f386b7d(robot) {
             }
             level.robot recordgameeventnonplayer("robot_reached_objective");
             setgameendtime(0);
-            robot val::set(#"hash_40c2f18bb880e692", "ignoreme", 1);
+            robot val::set(#"escort_robot", "ignoreme", 1);
             robot thread function_cd24840b(1);
             globallogic_score::giveteamscoreforobjective(attackers, 1);
             round::set_winner(attackers);

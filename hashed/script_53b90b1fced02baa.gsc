@@ -39,12 +39,12 @@ function private function_aa7530df(entity, animation) {
     forwarddir = anglestoforward(entity.angles);
     localdeltavector = getmovedelta(animation, 0, 1, entity);
     endpoint = entity localtoworldcoords(localdeltavector);
-    var_4d6925d3 = endpoint + vectorscale(forwarddir, 100);
+    forwardpoint = endpoint + vectorscale(forwarddir, 100);
     /#
         recordline(entity.origin, endpoint, (0, 0, 1), "<unknown string>", entity);
-        recordline(endpoint, var_4d6925d3, (1, 0.5, 0), "<unknown string>", entity);
+        recordline(endpoint, forwardpoint, (1, 0.5, 0), "<unknown string>", entity);
     #/
-    if (entity maymovefrompointtopoint(endpoint, var_4d6925d3, 1, 1)) {
+    if (entity maymovefrompointtopoint(endpoint, forwardpoint, 1, 1)) {
         pixendevent();
         return 1;
     }
@@ -124,15 +124,15 @@ function private evaluator_checkanimationforovershootinggoal(entity, animation) 
     #/
     localdeltavector = getmovedelta(animation, 0, 1, entity);
     endpoint = entity localtoworldcoords(localdeltavector);
-    var_9896d8af = lengthsquared(localdeltavector);
+    animdistsq = lengthsquared(localdeltavector);
     if (entity haspath()) {
         startpos = entity.origin;
         goalpos = entity.pathgoalpos;
         /#
             assert(isdefined(goalpos));
         #/
-        var_e1d2d0ef = distancesquared(startpos, goalpos);
-        if (var_9896d8af < var_e1d2d0ef * 0.9) {
+        disttogoalsq = distancesquared(startpos, goalpos);
+        if (animdistsq < disttogoalsq * 0.9) {
             pixendevent();
             return 1;
         }
@@ -170,11 +170,11 @@ function private evaluator_checkanimationagainstnavmesh(entity, animation) {
 function private evaluator_checkanimationarrivalposition(entity, animation) {
     localdeltavector = getmovedelta(animation, 0, 1, entity);
     endpoint = entity localtoworldcoords(localdeltavector);
-    var_9896d8af = lengthsquared(localdeltavector);
+    animdistsq = lengthsquared(localdeltavector);
     startpos = entity.origin;
     goalpos = entity.pathgoalpos;
-    var_e1d2d0ef = distancesquared(startpos, goalpos);
-    if (var_e1d2d0ef < var_9896d8af) {
+    disttogoalsq = distancesquared(startpos, goalpos);
+    if (disttogoalsq < animdistsq) {
         if (isdefined(entity.ai.var_a5dabb8b) && entity.ai.var_a5dabb8b) {
             return 1;
         }

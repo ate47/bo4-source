@@ -86,11 +86,11 @@ function growling() {
 // Checksum 0xc47b623a, Offset: 0x5b0
 // Size: 0x3f2
 function registernotetracks() {
-    anim.notetracks[#"hash_4c309a126c1a44ff"] = &notetrackposestand;
-    anim.notetracks[#"hash_eafc4a7d7b6a027"] = &notetrackposecrouch;
-    anim.notetracks[#"hash_ec5e7d2072ae0d5"] = &notetrackmovementstop;
+    anim.notetracks[#"anim_pose = "stand""] = &notetrackposestand;
+    anim.notetracks[#"anim_pose = "crouch""] = &notetrackposecrouch;
+    anim.notetracks[#"anim_movement = "stop""] = &notetrackmovementstop;
     anim.notetracks[#"hash_4170f46935239626"] = &notetrackmovementwalk;
-    anim.notetracks[#"hash_2c94246462ac6748"] = &notetrackmovementrun;
+    anim.notetracks[#"anim_movement = "run""] = &notetrackmovementrun;
     anim.notetracks[#"hash_40fdc55d0cf02732"] = &notetrackalertnesscasual;
     anim.notetracks[#"hash_404f1950633f51b"] = &notetrackalertnessalert;
     anim.notetracks[#"gravity on"] = &notetrackgravity;

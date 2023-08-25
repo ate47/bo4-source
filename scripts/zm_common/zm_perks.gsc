@@ -56,7 +56,7 @@ function init() {
     }
     level.var_76a7ad28 = [];
     perk_vapor_altar_init();
-    var_99e3af28 = [];
+    vending_weapon_upgrade_trigger = [];
     level.machine_assets = [];
     level.perk_machines = [];
     if (!isdefined(level.custom_vending_precaching)) {

@@ -546,8 +546,8 @@ function function_8498110e(e_player) {
     if (isalive(e_player)) {
         e_player zm_audio::create_and_play_dialog(#"hash_26a9f2114c4dc662", #"build");
     }
-    var_38cf61e4 = struct::get(#"hash_6b46b9c1dd7e1bb");
-    s_unitrigger = var_38cf61e4 zm_unitrigger::create(&registerblinkingshouldshowpain, 64, &function_ae6c3cf2, 1);
+    s_table = struct::get(#"hash_6b46b9c1dd7e1bb");
+    s_unitrigger = s_table zm_unitrigger::create(&registerblinkingshouldshowpain, 64, &function_ae6c3cf2, 1);
     zm_unitrigger::unitrigger_force_per_player_triggers(s_unitrigger, 1);
     zm_lockdown_util::function_d67bafb5(s_unitrigger, "lockdown_stub_type_crafting_tables");
     level thread zm_crafting::function_ca244624(#"hash_6f259b259997271a");
@@ -893,15 +893,15 @@ function function_7edbaf3a(v_origin) {
     n_wait = 3;
     while (1) {
         wait(n_wait);
-        var_7892431b = randomfloatrange(0.1, 0.5);
+        n_move_x = randomfloatrange(0.1, 0.5);
         var_a6fa9fe7 = randomfloatrange(0.1, 0.5);
         var_ac28398c = randomintrange(-180, 180);
-        self moveto(self.origin + (var_7892431b, var_a6fa9fe7, 0), 0.15);
+        self moveto(self.origin + (n_move_x, var_a6fa9fe7, 0), 0.15);
         self rotatevelocity((0, var_ac28398c, 0), 0.15);
         self waittill(#"movedone");
         wait(0.25);
         var_ac28398c = randomintrange(-180, 180);
-        self moveto(self.origin - (var_7892431b, var_a6fa9fe7, 0), 0.15);
+        self moveto(self.origin - (n_move_x, var_a6fa9fe7, 0), 0.15);
         self rotatevelocity((0, var_ac28398c, 0), 0.15);
         self waittill(#"movedone");
         n_wait = max(0.25, n_wait - 0.25);

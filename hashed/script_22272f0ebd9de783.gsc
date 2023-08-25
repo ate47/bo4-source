@@ -148,10 +148,10 @@ function function_96f77ea4() {
 // Checksum 0x566d8889, Offset: 0x840
 // Size: 0x1a0
 function function_45a2294f(str_id) {
-    foreach (var_9491a27b in level.var_6024289d) {
-        if (var_9491a27b.script_string === str_id) {
-            var_9491a27b thread activate_trap(self);
-            level.var_a6b89158 = getent(var_9491a27b.target, "targetname");
+    foreach (e_pillar in level.var_6024289d) {
+        if (e_pillar.script_string === str_id) {
+            e_pillar thread activate_trap(self);
+            level.var_a6b89158 = getent(e_pillar.target, "targetname");
             level.var_a6b89158 thread function_6f34f900();
         }
     }
@@ -228,9 +228,9 @@ function damage(e_trap) {
             e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
             e_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
         }
-        var_e772b395 = self.origin - e_trap.origin;
-        var_e772b395 = vectornormalize((var_e772b395[0], var_e772b395[1], 0)) * 64;
-        v_dest = self.origin + var_e772b395;
+        v_away = self.origin - e_trap.origin;
+        v_away = vectornormalize((v_away[0], v_away[1], 0)) * 64;
+        v_dest = self.origin + v_away;
         level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
         self dodamage(self.health + 666, self.origin, e_trap);
         self thread function_373d49f(v_dest, 0.25, 0, 0.125);

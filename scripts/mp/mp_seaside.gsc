@@ -35,10 +35,10 @@ function event<level_init> main(eventstruct) {
     level.cleandepositpoints = array((0, -1016, 711), (1120, 288, 712), (-499, -2437, 776), (-745, -1165, 776), (775, -2820, 725));
     var_8751af93 = struct::get("spawn_flavor_tanks", "targetname");
     if (isdefined(var_8751af93) && isdefined(var_8751af93.scene_ents)) {
-        var_8751af93.scene_ents[#"hash_5c059d1418878ba4"] clientfield::set("hide_tank_rob", 1);
+        var_8751af93.scene_ents[#"vehicle 1"] clientfield::set("hide_tank_rob", 1);
         var_8751af93.scene_ents[#"hash_5c05a014188790bd"] clientfield::set("hide_tank_rob", 1);
         var_8751af93.scene_ents[#"hash_5c059f1418878f0a"] clientfield::set("hide_tank_rob", 1);
-        var_8751af93.scene_ents[#"hash_5c059d1418878ba4"] notsolid();
+        var_8751af93.scene_ents[#"vehicle 1"] notsolid();
         var_8751af93.scene_ents[#"hash_5c05a014188790bd"] notsolid();
         var_8751af93.scene_ents[#"hash_5c059f1418878f0a"] notsolid();
     }
@@ -63,9 +63,9 @@ function on_game_playing() {
         if (!(isdefined(level.var_2a0adaaa) && level.var_2a0adaaa)) {
             level clientfield::set("remove_blood_decals", 1);
         }
-        level thread scene::play(#"hash_572bcdc91f4f9a96");
+        level thread scene::play(#"p8_fxanim_mp_seaside_pigeon_flock_bundle");
         if (getdvarint(#"hash_1ee1f013d124a26a", 1)) {
-            level thread scene::play(#"hash_3d50b9f32e7f67b", "Shot 2");
+            level thread scene::play(#"p8_fxanim_mp_seaside_tanks_bundle", "Shot 2");
         }
     }
 }
@@ -78,18 +78,18 @@ function function_2cdcf5c3() {
     if (util::function_94a3be2()) {
         return;
     } else if (util::isfirstround()) {
-        level scene::init(#"hash_572bcdc91f4f9a96");
+        level scene::init(#"p8_fxanim_mp_seaside_pigeon_flock_bundle");
         if (getdvarint(#"hash_1ee1f013d124a26a", 1)) {
             while (!draft::function_d255fb3e()) {
                 waitframe(1);
             }
-            level thread scene::play(#"hash_3d50b9f32e7f67b", "Shot 1");
+            level thread scene::play(#"p8_fxanim_mp_seaside_tanks_bundle", "Shot 1");
         }
         return;
     }
-    level scene::skipto_end(#"hash_572bcdc91f4f9a96");
+    level scene::skipto_end(#"p8_fxanim_mp_seaside_pigeon_flock_bundle");
     if (getdvarint(#"hash_1ee1f013d124a26a", 1)) {
-        level scene::skipto_end(#"hash_3d50b9f32e7f67b");
+        level scene::skipto_end(#"p8_fxanim_mp_seaside_tanks_bundle");
     }
 }
 

@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/wz_common/wz_nixie_tubes.csc;
-#include script_4814021403721f70;
+#include scripts/wz/wz_escape_alt_ffotd.csc;
 #include scripts/core_common/exploder_shared.csc;
 #include scripts/mp_common/item_world.csc;
 #include scripts/mp_common/load.csc;

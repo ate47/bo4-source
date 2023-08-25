@@ -613,8 +613,8 @@ function function_68fd3863() {
 // Checksum 0x1b4582ee, Offset: 0x3e48
 // Size: 0xbc
 function function_7065027f() {
-    level.var_7cab580 = ct_utils::get_roleindex(#"hash_174b22516ff300b9");
-    level.select_character = ct_utils::get_roleindex(#"hash_174b22516ff300b9");
+    level.var_7cab580 = ct_utils::get_roleindex(#"prt_mp_technomancer");
+    level.select_character = ct_utils::get_roleindex(#"prt_mp_technomancer");
     level.var_72c3ea74 = struct::get_array("s_prophet_enemy_spawn_loc", "targetname");
     level.var_da5432a2 = 0;
     level thread ct_bots::activate_bots(level.var_72c3ea74.size, #"axis");

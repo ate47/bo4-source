@@ -13,17 +13,17 @@
 #include scripts/core_common/animation_shared.csc;
 #include scripts/core_common/array_shared.csc;
 
-#namespace namespace_836a0b98;
+#namespace zm_laboratory;
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 0, eflags: 0x2
 // Checksum 0x64290b4e, Offset: 0x940
 // Size: 0x3c
 function autoexec __init__system__() {
-    system::register(#"hash_39558b5434cde888", &__init__, undefined, undefined);
+    system::register(#"zm_laboratory", &__init__, undefined, undefined);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 0, eflags: 0x1 linked
 // Checksum 0x3db22a0f, Offset: 0x988
 // Size: 0x24
@@ -31,12 +31,12 @@ function __init__() {
     callback::on_localclient_connect(&function_250232f4);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xdb1995e3, Offset: 0x9b8
 // Size: 0x13b4
 function function_250232f4(localclientnum) {
-    lui::createcustomcameramenu(#"hash_1f5ec0c7acde00a0", localclientnum, &function_a856f9dd, 1, &function_ca3a6506, &function_64c9ba5);
+    lui::createcustomcameramenu(#"laboratory", localclientnum, &function_a856f9dd, 1, &function_ca3a6506, &function_64c9ba5);
     level flag::init(#"hash_511b4468376ea105");
     level flag::init(#"hash_789102d70e2d8a44");
     level flag::init(#"hash_71fc63117cc5bf06" + 1);
@@ -45,7 +45,7 @@ function function_250232f4(localclientnum) {
     level flag::init(#"hash_c5112e5b6ad4e15");
     level flag::init(#"hash_4f26b4e33ddb3509");
     level flag::init(#"hash_4bbc47f6a0a31743");
-    animation::add_notetrack_func(#"hash_6a1fbf80efc7c259", &function_5e0db3e7);
+    animation::add_notetrack_func(#"talisman_anim_finished", &function_5e0db3e7);
     level.var_49f26c00 = spawnstruct();
     level.var_49f26c00.var_9eec6f29 = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
     level.var_49f26c00.var_ece3d654 = array("green", "white", "orange", "gold", "purple", "blue");
@@ -76,46 +76,46 @@ function function_250232f4(localclientnum) {
     level._effect[#"hash_78125560468f4188"] = "maps/core_frontend/fx8_frontend_zombie_lab_stl_surface_legend";
     level._effect[#"hash_2be8010ec8776feb"] = "maps/core_frontend/fx8_frontend_zombie_lab_stl_surface_rare";
     level._effect[#"hash_4dd3ac60cbb0f8ab"] = "maps/core_frontend/fx8_frontend_zombie_lab_stl_surface_ultra";
-    scene::add_scene_func(#"hash_22ea6a1438c59b35", &function_de0d6843, "play");
-    scene::add_scene_func(#"hash_22ea6a1438c59b35", &function_7c1ef1e1, "done");
-    scene::add_scene_func(#"hash_22ea6a1438c59b35", &function_7c1ef1e1, "stop");
-    scene::add_scene_func(#"hash_55a34e98cb7ae216", &function_7af39f9a, "enter");
-    scene::add_scene_func(#"hash_55a34e98cb7ae216", &function_31b459eb, "exit");
-    scene::add_scene_func(#"hash_22ea6a1438c59b35", &function_24222bb4, "skip_to_idle");
-    scene::add_scene_func(#"hash_55a34e98cb7ae216", &function_24222bb4, "skip_to_idle");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", &function_de0d6843, "play");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", &function_7c1ef1e1, "done");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", &function_7c1ef1e1, "stop");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", &function_7af39f9a, "enter");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", &function_31b459eb, "exit");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", &function_24222bb4, "skip_to_idle");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", &function_24222bb4, "skip_to_idle");
     /#
-        level.var_49f26c00.var_557a03e6 = array(#"hash_6372fe17fa3bba6c", #"hash_c1f76c75be939f1", #"hash_1cc2696ae6b8d310", #"hash_3b5cca0393b9bcb4", #"hash_1d73219b09e8e177", #"hash_5f0a6c1dc346e7fd", #"hash_1ea89702cdded147", #"hash_1a7c490a566d667", #"hash_102a1ae7761376be", #"hash_71ba777ccf9dd903", #"hash_58b3b4e50c5ad8b5", #"p8_zm_elixir_ctrl_z_ui", #"hash_5e08e862c962617a", #"hash_79482937cce111c", #"hash_7f04f68b256a2498", #"hash_5d495d25abb35085", #"hash_6715d44cddc5a68a", #"hash_2c0869cb861bedb9", #"hash_3e09985d3bc48648", #"p8_zm_elixir_in_plain_sight_ui", #"hash_32eeb096af407546", #"hash_19ccc78f9133d830", #"hash_556e8f2173833ea4", #"hash_1114039b0413c368", #"hash_4444135e6ea2431e", #"hash_2c59118faf8277f2", #"hash_65291a8ef0716ac6", #"hash_3092c9f90c4e3416", #"hash_3066288c45a9156", #"hash_1d27f8961d39e482", #"hash_7b8c2e9a197a1cbb", #"hash_7cc3e08e8f52f11", #"hash_62e535408c5854d9", #"p8_zm_elixir_sword_flay_ui", #"hash_1731fdcd5964d1a0", #"hash_3026bb2139cb6b39", #"hash_55831b9577d4e735", #"hash_740fe623c7cd93d0", #"hash_6697bd69ea12a203");
+        level.var_49f26c00.var_557a03e6 = array(#"p8_zm_elixir_aftertaste_ui", #"p8_zm_elixir_alchemical_antithesis_ui", #"p8_zm_elixir_always_done_swiftly_ui", #"p8_zm_elixir_anti_entrapment_ui", #"p8_zm_elixir_anywhere_but_here_ui", #"p8_zm_elixir_arsenal_accelerator_ui", #"p8_zm_elixir_blood_debt_ui", #"hash_1a7c490a566d667", #"p8_zm_elixir_burned_out_ui", #"p8_zm_elixir_cache_back_ui", #"hash_58b3b4e50c5ad8b5", #"p8_zm_elixir_ctrl_z_ui", #"hash_5e08e862c962617a", #"p8_zm_elixir_dead_of_nuclear_winter_ui", #"p8_zm_elixir_equip_mint_ui", #"p8_zm_elixir_extra_credit_ui", #"p8_zm_elixir_free_fire_ui", #"p8_zm_elixir_head_scan_ui", #"p8_zm_elixir_immolation_liquidation_ui", #"p8_zm_elixir_in_plain_sight_ui", #"p8_zm_elixir_join_the_party_ui", #"p8_zm_elixir_kill_joy_ui", #"p8_zm_elixir_licensed_contractor_ui", #"p8_zm_elixir_newtonian_negation_ui", #"p8_zm_elixir_now_you_see_me_ui", #"p8_zm_elixir_nowhere_but_there_ui", #"hash_65291a8ef0716ac6", #"p8_zm_elixir_point_drops_ui", #"p8_zm_elixir_pop_shocks_ui", #"p8_zm_elixir_power_keg_ui", #"hash_7b8c2e9a197a1cbb", #"p8_zm_elixir_shields_up_ui", #"p8_zm_elixir_stock_option_ui", #"p8_zm_elixir_sword_flay_ui", #"p8_zm_elixir_temporal_gift_ui", #"p8_zm_elixir_undead_man_walking_ui", #"p8_zm_elixir_wall_power_ui", #"p8_zm_elixir_wall_to_wall_savings_ui", #"p8_zm_elixir_whos_keeping_score_ui");
         level.var_49f26c00.var_610634ec = array(#"hash_76617af5fa4ab06d", #"hash_4cb515191c20ef7b", #"hash_199da03ac6e12953", #"hash_4d9db7979eb544bc", #"hash_772aa9812fb6986b", #"hash_20d8a4cdde3d4e8f", #"hash_640384c1b0adbbb3", #"hash_d12c89ade80133", #"hash_46e3613b7c94993", #"hash_583fbe32afaaf5d9", #"hash_34ed01fe06f8413", #"hash_1d7473aa5097f73b", #"hash_6705cc78ae56a6c4", #"hash_27dae06ec588c817", #"hash_27dae16ec588c9ca", #"hash_27dae26ec588cb7d", #"hash_27dadb6ec588bf98", #"hash_45709864c82b32dc", #"hash_45709b64c82b37f5", #"hash_45709a64c82b3642", #"hash_45709564c82b2dc3", #"hash_22e20f33489f2582", #"hash_22e20e33489f23cf", #"hash_22e20d33489f221c", #"hash_22e20c33489f2069", #"hash_154997b9a9ac4a97", #"hash_3fa1d0971d99efe2", #"hash_5f0100ed23e21b", #"hash_1811dbf7dabf351d", #"hash_69a2f6c326096ec9", #"hash_14e3ae5974c15925", #"hash_7e85b36e71794a95", #"hash_101441aadf7dcdaa", #"hash_371d2dc509c3a5eb", #"hash_7108f4ab16e1e8f3");
     #/
-    scene::add_scene_func(#"hash_52f7085562a13541", &function_f8d486f8, "init");
-    scene::add_scene_func(#"hash_52f7085562a13541", &function_d4f9b895, "press_tease");
-    scene::add_scene_func(#"hash_52f7085562a13541", &function_d4f9b895, "press_create");
-    scene::add_scene_func(#"hash_52f7085562a13541", &function_d4f9b895, "press_no_create");
-    scene::add_scene_func(#"hash_52f7085562a13541", &function_d4f9b895, "skip_to_idle");
-    scene::add_scene_func(#"hash_52f7085562a13541", &function_43d0e81a, "done");
-    scene::add_scene_func(#"hash_52f7085562a13541", &function_43d0e81a, "stop");
-    a_str_shots = scene::get_all_shot_names(#"hash_6375624d1a345124");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", &function_f8d486f8, "init");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", &function_d4f9b895, "press_tease");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", &function_d4f9b895, "press_create");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", &function_d4f9b895, "press_no_create");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", &function_d4f9b895, "skip_to_idle");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", &function_43d0e81a, "done");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", &function_43d0e81a, "stop");
+    a_str_shots = scene::get_all_shot_names(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle");
     foreach (str_shot in a_str_shots) {
-        scene::add_scene_func(#"hash_6375624d1a345124", &function_94c307e0, str_shot, str_shot);
-        scene::add_scene_func(#"hash_436f2d7b7e23324b", &function_94c307e0, str_shot, str_shot);
-        scene::add_scene_func(#"hash_4097bdfcaca36d7a", &function_94c307e0, str_shot, str_shot);
+        scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", &function_94c307e0, str_shot, str_shot);
+        scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", &function_94c307e0, str_shot, str_shot);
+        scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", &function_94c307e0, str_shot, str_shot);
     }
-    scene::add_scene_func(#"hash_37ea962ab5a11e0f", &function_cdd906ed, "fill");
-    a_str_shots = scene::get_all_shot_names(#"hash_14692faa25789905");
+    scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_bundle", &function_cdd906ed, "fill");
+    a_str_shots = scene::get_all_shot_names(#"p8_fxanim_core_frontend_zm_lab_flask_globs_01_to_03_bundle");
     foreach (str_shot in a_str_shots) {
-        scene::add_scene_func(#"hash_14692faa25789905", &function_989962b9, str_shot, str_shot);
+        scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_flask_globs_01_to_03_bundle", &function_989962b9, str_shot, str_shot);
     }
-    a_str_shots = scene::get_all_shot_names(#"hash_40190110ab9d579d");
+    a_str_shots = scene::get_all_shot_names(#"p8_fxanim_core_frontend_zm_lab_flask_globs_04_to_06_bundle");
     foreach (str_shot in a_str_shots) {
-        scene::add_scene_func(#"hash_40190110ab9d579d", &function_989962b9, str_shot, str_shot);
+        scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_flask_globs_04_to_06_bundle", &function_989962b9, str_shot, str_shot);
     }
-    a_str_shots = scene::get_all_shot_names(#"hash_2ad4ab513db32909");
+    a_str_shots = scene::get_all_shot_names(#"p8_fxanim_core_frontend_zm_lab_flask_globs_07_to_09_bundle");
     foreach (str_shot in a_str_shots) {
-        scene::add_scene_func(#"hash_2ad4ab513db32909", &function_989962b9, str_shot, str_shot);
+        scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_flask_globs_07_to_09_bundle", &function_989962b9, str_shot, str_shot);
     }
-    a_str_shots = scene::get_all_shot_names(#"hash_53f296f08f3a0ee7");
+    a_str_shots = scene::get_all_shot_names(#"p8_fxanim_core_frontend_zm_lab_flask_globs_10_bundle");
     foreach (str_shot in a_str_shots) {
-        scene::add_scene_func(#"hash_53f296f08f3a0ee7", &function_989962b9, str_shot, str_shot);
+        scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_flask_globs_10_bundle", &function_989962b9, str_shot, str_shot);
     }
     /#
         level.var_1a2c5c75 = &function_b78fb1b0;
@@ -125,7 +125,7 @@ function function_250232f4(localclientnum) {
     #/
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x4
 // Checksum 0xbb2c65ba, Offset: 0x1d78
 // Size: 0x410
@@ -167,7 +167,7 @@ function private function_1a17b820(localclientnum) {
     #/
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x0
 // Checksum 0x80fe9539, Offset: 0x2190
 // Size: 0x1ee
@@ -175,11 +175,11 @@ function function_b78fb1b0(localclientnum) {
     /#
         level notify(#"hash_79bbc4f96a28b094");
         level endoncallback(&function_d160164e, #"hash_7066d01317c5fb45", #"hash_79bbc4f96a28b094");
-        level scene::init(#"hash_21f74a4374cd0d1a");
-        level scene::init(#"hash_52f7085562a13541");
-        level thread scene::play(#"hash_6375624d1a345124", "<unknown string>");
-        level thread scene::play(#"hash_436f2d7b7e23324b", "<unknown string>");
-        level thread scene::play(#"hash_4097bdfcaca36d7a", "<unknown string>");
+        level scene::init(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
+        level scene::init(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle");
+        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "<unknown string>");
+        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "<unknown string>");
+        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "<unknown string>");
         level.var_32f68719 = 1;
         wait(3);
         while (1) {
@@ -193,7 +193,7 @@ function function_b78fb1b0(localclientnum) {
     #/
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 0, eflags: 0x0
 // Checksum 0x486d5c42, Offset: 0x2388
 // Size: 0x6f6
@@ -249,7 +249,7 @@ function function_66051772() {
     #/
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0xd29f0b31, Offset: 0x2a88
 // Size: 0xb4
@@ -266,7 +266,7 @@ function function_a8f6e36c(localclientnum, state) {
     setuimodelvalue(var_5defc90, state);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x8c7f6003, Offset: 0x2b48
 // Size: 0xb4
@@ -283,7 +283,7 @@ function function_8192c9cf(localclientnum, val) {
     setuimodelvalue(var_5defc90, val);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 3, eflags: 0x1 linked
 // Checksum 0x9c71e352, Offset: 0x2c08
 // Size: 0x84
@@ -292,7 +292,7 @@ function function_a856f9dd(localclientnum, menu_name, state) {
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_lab", 0, "", "", camera_ent.origin, camera_ent.angles);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x783b218d, Offset: 0x2c98
 // Size: 0x7c
@@ -303,7 +303,7 @@ function function_ca3a6506(localclientnum, menu_data) {
     level thread function_d940763b(localclientnum);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x3efec371, Offset: 0x2d20
 // Size: 0xd8
@@ -318,21 +318,21 @@ function function_64c9ba5(localclientnum, menu_data) {
     level notify(#"hash_72f1e71666dce90d");
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa49ffc76, Offset: 0x2e00
 // Size: 0x3be
 function function_d940763b(localclientnum) {
     level notify(#"hash_490aea66046d4a50");
     level endon(#"hash_490aea66046d4a50", #"hash_72f1e71666dce90d");
-    level scene::init(#"hash_21f74a4374cd0d1a");
-    level scene::init(#"hash_52f7085562a13541");
-    level thread scene::play(#"hash_6375624d1a345124", "mixer_idle");
-    level thread scene::play(#"hash_436f2d7b7e23324b", "mixer_idle");
-    level thread scene::play(#"hash_4097bdfcaca36d7a", "mixer_idle");
+    level scene::init(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
+    level scene::init(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_idle");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_idle");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_idle");
     while (1) {
         waitresult = undefined;
-        waitresult = level waittill(#"hash_201d829556393f76", #"hash_7e320f49f449ea9f", #"hash_6d47a1e190b93eaf", #"hash_7c3e120025ea0122", #"hash_341a5b4aa52ea814", #"hash_353264cf2656f253", #"hash_161099940d30fd22", #"hash_ea056cea89b1270", #"hash_1d604ddf352ddcca", #"hash_6551ceddc995b613");
+        waitresult = level waittill(#"hash_201d829556393f76", #"hash_7e320f49f449ea9f", #"hash_6d47a1e190b93eaf", #"hash_7c3e120025ea0122", #"hash_341a5b4aa52ea814", #"talisman_show_label", #"bottle1_fill_complete", #"bottle1_leave", #"hash_1d604ddf352ddcca", #"hash_6551ceddc995b613");
         switch (waitresult._notify) {
         case #"hash_201d829556393f76":
             level.var_49f26c00.controller_model = getuimodelforcontroller(waitresult.controller);
@@ -348,17 +348,17 @@ function function_d940763b(localclientnum) {
         case #"hash_7c3e120025ea0122":
             level thread function_365bef4(localclientnum);
             break;
-        case #"hash_161099940d30fd22":
+        case #"bottle1_fill_complete":
             function_ef574f9c(localclientnum);
             break;
-        case #"hash_ea056cea89b1270":
+        case #"bottle1_leave":
             function_f0252f42(localclientnum);
             break;
         case #"hash_341a5b4aa52ea814":
             function_2cb555c6(localclientnum);
             break;
-        case #"hash_353264cf2656f253":
-            function_8be8b809(localclientnum);
+        case #"talisman_show_label":
+            talisman_show_label(localclientnum);
             break;
         case #"hash_1d604ddf352ddcca":
             level thread function_4053acdb(localclientnum);
@@ -369,11 +369,11 @@ function function_d940763b(localclientnum) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0x66cd2a2e, Offset: 0x31c8
 // Size: 0x28a
-function function_8be8b809(localclientnum) {
+function talisman_show_label(localclientnum) {
     if (!isdefined(level.var_49f26c00.controller_model)) {
         return;
     }
@@ -413,7 +413,7 @@ function function_8be8b809(localclientnum) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0x40275cf3, Offset: 0x3460
 // Size: 0xb4
@@ -430,7 +430,7 @@ function function_ef574f9c(localclientnum) {
     setuimodelvalue(var_6b06e86b, 1);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0x4602d065, Offset: 0x3520
 // Size: 0xac
@@ -447,7 +447,7 @@ function function_f0252f42(localclientnum) {
     setuimodelvalue(var_6b06e86b, 0);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 3, eflags: 0x1 linked
 // Checksum 0xa99ef691, Offset: 0x35d8
 // Size: 0xa8
@@ -461,7 +461,7 @@ function function_f47528e7(localclientnum, var_9d5a2308, index) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x1f6cffb7, Offset: 0x3688
 // Size: 0x23c
@@ -498,7 +498,7 @@ function function_18d7cd9b(localclientnum, index) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0xaa7a74e7, Offset: 0x38d0
 // Size: 0x94
@@ -513,7 +513,7 @@ function function_6127ea37(localclientnum, var_116287e0) {
     return var_9d6e5ca0;
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xd8237404, Offset: 0x3970
 // Size: 0xcc
@@ -535,7 +535,7 @@ function function_b3efb400(value) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0x143618af, Offset: 0x3a48
 // Size: 0x24c
@@ -557,7 +557,7 @@ function function_2cb555c6(localclientnum) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xd3ce0c1, Offset: 0x3ca0
 // Size: 0x52c
@@ -581,22 +581,22 @@ function function_c7117688(localclientnum) {
     }
     level.var_49f26c00.var_53ec42bc function_523d7d8b(localclientnum, "mixer_01_bath_fluid_fx_jnt", var_469e104d);
     level.var_49f26c00.var_53ec42bc function_9b8f7969(var_bc9784a7);
-    level thread scene::play(#"hash_6375624d1a345124", "mixer_fill_finish");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_fill_finish");
     exploder::exploder(var_19d0b0e2[0]);
     wait(0.5);
     level.var_49f26c00.var_1266bfca function_523d7d8b(localclientnum, "mixer_02_bath_fluid_fx_jnt", var_7953f5b8);
     level.var_49f26c00.var_1266bfca function_9b8f7969(var_35bcf6f0);
-    level thread scene::play(#"hash_436f2d7b7e23324b", "mixer_fill_finish");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_fill_finish");
     exploder::exploder(var_19d0b0e2[1]);
     wait(0.5);
     level.var_49f26c00.var_ffa61a49 function_523d7d8b(localclientnum, "mixer_03_bath_fluid_fx_jnt", var_6b14d93a);
     level.var_49f26c00.var_ffa61a49 function_9b8f7969(var_237e5273);
-    level thread scene::play(#"hash_4097bdfcaca36d7a", "mixer_fill_finish");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_fill_finish");
     exploder::exploder(var_19d0b0e2[2]);
     wait(0.75);
-    level util::delay(0.25, #"hash_72f1e71666dce90d", &scene::play, #"hash_6375624d1a345124", "mixer_drain");
-    level util::delay(0.5, #"hash_72f1e71666dce90d", &scene::play, #"hash_436f2d7b7e23324b", "mixer_drain");
-    level util::delay(0.75, #"hash_72f1e71666dce90d", &scene::play, #"hash_4097bdfcaca36d7a", "mixer_drain");
+    level util::delay(0.25, #"hash_72f1e71666dce90d", &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_drain");
+    level util::delay(0.5, #"hash_72f1e71666dce90d", &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_drain");
+    level util::delay(0.75, #"hash_72f1e71666dce90d", &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_drain");
     exploder::stop_exploder(var_19d0b0e2[0]);
     exploder::stop_exploder(var_19d0b0e2[1]);
     exploder::stop_exploder(var_19d0b0e2[2]);
@@ -604,7 +604,7 @@ function function_c7117688(localclientnum) {
     level flag::set(#"hash_4f26b4e33ddb3509");
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 3, eflags: 0x1 linked
 // Checksum 0xb5a57a9f, Offset: 0x41d8
 // Size: 0x174
@@ -633,7 +633,7 @@ function function_523d7d8b(localclientnum, str_tag, var_4deff3fa) {
     util::playfxontag(localclientnum, str_fx, self, str_tag);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0x2d45239a, Offset: 0x4358
 // Size: 0x18e
@@ -652,7 +652,7 @@ function function_15ff01e1(localclientnum) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 3, eflags: 0x1 linked
 // Checksum 0x19306537, Offset: 0x44f0
 // Size: 0x736
@@ -793,7 +793,7 @@ function function_c8a51052(var_469e104d, var_7953f5b8, var_6b14d93a) {
     return var_e7c55810;
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 0, eflags: 0x1 linked
 // Checksum 0x99b23f81, Offset: 0x4c30
 // Size: 0x244
@@ -818,7 +818,7 @@ function function_a9d89e09() {
     exploder::kill_exploder(#"hash_6ce89a16ef5204ab");
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf699eb28, Offset: 0x4e80
 // Size: 0x20a
@@ -847,19 +847,19 @@ function function_b760318d(var_74f4f287 = 2) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0x5a1dfffb, Offset: 0x5098
 // Size: 0x1bc
 function function_d160164e(str_notify) {
-    level scene::stop(#"hash_37ea962ab5a11e0f", 1);
-    level scene::stop(#"hash_21f74a4374cd0d1a", 1);
-    level scene::stop(#"hash_6375624d1a345124", 1);
-    level scene::stop(#"hash_436f2d7b7e23324b", 1);
-    level scene::stop(#"hash_4097bdfcaca36d7a", 1);
-    level scene::stop(#"hash_52f7085562a13541", 1);
-    level scene::stop(#"hash_22ea6a1438c59b35", 1);
-    level scene::stop(#"hash_55a34e98cb7ae216", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", 1);
     function_b760318d(0);
     level.var_32f68719 = undefined;
     level.var_ee871019 = undefined;
@@ -868,7 +868,7 @@ function function_d160164e(str_notify) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 4, eflags: 0x1 linked
 // Checksum 0x23271ff4, Offset: 0x5260
 // Size: 0x336
@@ -906,14 +906,14 @@ function function_a1547af3(localclientnum, var_4379f16, var_34c8df6b, var_d5a65f
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 4, eflags: 0x1 linked
 // Checksum 0x78173ba6, Offset: 0x55a0
 // Size: 0x57c
 function function_7ee5e3a2(localclientnum, var_367ac609, var_509eb1e5, var_ff27a24 = 0) {
     self notify("6f8c1467ad43f7b7");
     self endon("6f8c1467ad43f7b7");
-    level scene::stop(#"hash_21f74a4374cd0d1a");
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
     if (isdefined(level.var_49f26c00.var_42c70173)) {
         level scene::stop(level.var_49f26c00.var_42c70173, 1);
         wait(0.1);
@@ -929,57 +929,57 @@ function function_7ee5e3a2(localclientnum, var_367ac609, var_509eb1e5, var_ff27a
     level.var_49f26c00.var_3e14626f = "cent_show_" + var_367ac609;
     switch (var_509eb1e5) {
     case 1:
-        level.var_49f26c00.var_42c70173 = #"hash_14692faa25789905";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_01_to_03_bundle";
         level.var_49f26c00.var_febe408a = "state1";
         break;
     case 2:
-        level.var_49f26c00.var_42c70173 = #"hash_14692faa25789905";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_01_to_03_bundle";
         level.var_49f26c00.var_febe408a = "state2";
         break;
     case 3:
-        level.var_49f26c00.var_42c70173 = #"hash_14692faa25789905";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_01_to_03_bundle";
         level.var_49f26c00.var_febe408a = "state3";
         break;
     case 4:
-        level.var_49f26c00.var_42c70173 = #"hash_40190110ab9d579d";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_04_to_06_bundle";
         level.var_49f26c00.var_febe408a = "state4";
         break;
     case 5:
-        level.var_49f26c00.var_42c70173 = #"hash_40190110ab9d579d";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_04_to_06_bundle";
         level.var_49f26c00.var_febe408a = "state5";
         break;
     case 6:
-        level.var_49f26c00.var_42c70173 = #"hash_40190110ab9d579d";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_04_to_06_bundle";
         level.var_49f26c00.var_febe408a = "state6";
         break;
     case 7:
-        level.var_49f26c00.var_42c70173 = #"hash_2ad4ab513db32909";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_07_to_09_bundle";
         level.var_49f26c00.var_febe408a = "state7";
         break;
     case 8:
-        level.var_49f26c00.var_42c70173 = #"hash_2ad4ab513db32909";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_07_to_09_bundle";
         level.var_49f26c00.var_febe408a = "state8";
         break;
     case 9:
-        level.var_49f26c00.var_42c70173 = #"hash_2ad4ab513db32909";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_07_to_09_bundle";
         level.var_49f26c00.var_febe408a = "state9";
         break;
     case 10:
-        level.var_49f26c00.var_42c70173 = #"hash_53f296f08f3a0ee7";
+        level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_10_bundle";
         level.var_49f26c00.var_febe408a = "state10";
         break;
     }
-    level thread scene::play(#"hash_21f74a4374cd0d1a", level.var_49f26c00.var_3e14626f);
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle", level.var_49f26c00.var_3e14626f);
     level thread scene::play(level.var_49f26c00.var_42c70173, level.var_49f26c00.var_febe408a + "_idle");
     if (math::cointoss()) {
-        level thread scene::play(#"hash_52f7085562a13541", "press_tease");
+        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "press_tease");
     }
     /#
         level thread function_66051772();
     #/
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa0f26f54, Offset: 0x5b28
 // Size: 0x46
@@ -988,7 +988,7 @@ function function_e10fba77(var_6c02358e) {
     return level.var_49f26c00.var_3e14626f;
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0xe61431f8, Offset: 0x5b78
 // Size: 0x2ba
@@ -1032,7 +1032,7 @@ function function_6198ffc(var_a77705eb = 1, b_reverse = 0) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 0, eflags: 0x1 linked
 // Checksum 0x140fe0e1, Offset: 0x5e40
 // Size: 0x46
@@ -1043,18 +1043,18 @@ function function_9dee7481() {
     level.var_49f26c00.var_f6e518bb = undefined;
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x9c5af2cd, Offset: 0x5e90
 // Size: 0x6e4
 function function_49dde74(b_stream = 1, var_dd5c339d = 0) {
     level endon(#"hash_490aea66046d4a50");
     if (b_stream) {
-        forcestreambundle(#"hash_21f74a4374cd0d1a");
-        forcestreambundle(#"hash_6375624d1a345124");
-        forcestreambundle(#"hash_436f2d7b7e23324b");
-        forcestreambundle(#"hash_4097bdfcaca36d7a");
-        forcestreambundle(#"hash_52f7085562a13541");
+        forcestreambundle(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
+        forcestreambundle(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle");
+        forcestreambundle(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle");
+        forcestreambundle(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle");
+        forcestreambundle(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle");
         forcestreamxmodel(#"hash_29a5be73c6bf1f9");
         forcestreamxmodel(#"hash_59a1aeb50fa6ce2c");
         forcestreamxmodel(#"hash_147375b2a9795cd1");
@@ -1079,11 +1079,11 @@ function function_49dde74(b_stream = 1, var_dd5c339d = 0) {
         if (var_dd5c339d) {
         }
     } else {
-        function_66b6e720(#"hash_21f74a4374cd0d1a");
-        function_66b6e720(#"hash_6375624d1a345124");
-        function_66b6e720(#"hash_436f2d7b7e23324b");
-        function_66b6e720(#"hash_4097bdfcaca36d7a");
-        function_66b6e720(#"hash_52f7085562a13541");
+        function_66b6e720(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
+        function_66b6e720(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle");
+        function_66b6e720(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle");
+        function_66b6e720(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle");
+        function_66b6e720(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle");
         stopforcestreamingxmodel(#"hash_29a5be73c6bf1f9");
         stopforcestreamingxmodel(#"hash_59a1aeb50fa6ce2c");
         stopforcestreamingxmodel(#"hash_147375b2a9795cd1");
@@ -1108,7 +1108,7 @@ function function_49dde74(b_stream = 1, var_dd5c339d = 0) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x8844e6b6, Offset: 0x6580
 // Size: 0x1f4
@@ -1130,7 +1130,7 @@ function function_a8188266(var_540e83c = 1, var_6b7f299d = 0.5) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 4, eflags: 0x0
 // Checksum 0x92b41c2d, Offset: 0x6780
 // Size: 0x282
@@ -1166,7 +1166,7 @@ function function_f2b7b9b4(n_index, var_540e83c = 1, var_6b7f299d = 0.5, str_col
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xfad6d460, Offset: 0x6a10
 // Size: 0x16c
@@ -1185,7 +1185,7 @@ function function_9c935526(localclientnum) {
     function_b760318d(2);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0xccdfa64b, Offset: 0x6b88
 // Size: 0xd54
@@ -1200,23 +1200,23 @@ function function_365bef4(localclientnum, var_ff27a24 = 0) {
     wait(0.5);
     function_6198ffc(1, 0);
     level.var_49f26c00.var_b273f2b6 thread function_b05ea28d(undefined, undefined, 0.5);
-    level thread util::delay(0.5, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_4c89424bf0302e43", "fill");
-    level thread util::delay(#"hash_6aaabd4ddf1d0e55", array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_37ea962ab5a11e0f", "fill");
+    level thread util::delay(0.5, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_flask_tube_fluid_bundle", "fill");
+    level thread util::delay(#"flask_fluid_hits_centrifuge", array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_bundle", "fill");
     level util::delay(0.5 + 1, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &function_6198ffc, 1, 1);
     level.var_49f26c00.var_b273f2b6 util::delay(0.5 + 1, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &function_b05ea28d, undefined, 1, 1);
-    level thread util::delay(0.5 + 1 + 1, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_4c89424bf0302e43", "finish");
+    level thread util::delay(0.5 + 1 + 1, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_flask_tube_fluid_bundle", "finish");
     str_shot = function_e10fba77(level.var_49f26c00.var_3e14626f);
-    level thread scene::play(#"hash_21f74a4374cd0d1a", str_shot);
-    level waittill(#"hash_3cd55f5e9e7bdbba");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle", str_shot);
+    level waittill(#"centrifuge_fluid_to_mixer");
     function_a8188266(1, 1);
     var_ceb7615a = max(1 - 0.4, 0);
-    level thread util::delay(var_ceb7615a, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_6375624d1a345124", "mixer_activate");
-    level thread util::delay(var_ceb7615a + 0.2, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_436f2d7b7e23324b", "mixer_activate");
-    level thread util::delay(var_ceb7615a + 0.4, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_4097bdfcaca36d7a", "mixer_activate");
-    level waittill(#"hash_2a2f0ad80e821665");
+    level thread util::delay(var_ceb7615a, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_activate");
+    level thread util::delay(var_ceb7615a + 0.2, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_activate");
+    level thread util::delay(var_ceb7615a + 0.4, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_activate");
+    level waittill(#"centrifuge_fluid_filled");
     wait(1);
-    level thread scene::play(#"hash_37ea962ab5a11e0f", "drain");
-    level waittill(#"hash_478d4735146b9f0c");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_bundle", "drain");
+    level waittill(#"centrifuge_fluid_drained");
     function_a8188266(0, 2);
     var_fc9cafb5 = gettime();
     if (!level flag::get(#"hash_511b4468376ea105") && !var_ff27a24) {
@@ -1247,10 +1247,10 @@ function function_365bef4(localclientnum, var_ff27a24 = 0) {
     if (isdefined(level.var_49f26c00.var_f6e518bb)) {
         function_b760318d(3);
         level flag::clear(#"hash_c5112e5b6ad4e15");
-        level util::delay(2, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_52f7085562a13541", "press_create");
+        level util::delay(2, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "press_create");
     } else {
         function_b760318d(1);
-        level util::delay(2, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_52f7085562a13541", "press_no_create");
+        level util::delay(2, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "press_no_create");
         level flag::set(#"hash_c5112e5b6ad4e15");
     }
     level thread function_c7117688(localclientnum);
@@ -1260,8 +1260,8 @@ function function_365bef4(localclientnum, var_ff27a24 = 0) {
     level thread function_f76d78f5(localclientnum, 0);
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_bottle_dof", 500, "", "", var_f7dcde44.origin, var_f7dcde44.angles);
     function_8192c9cf(localclientnum, 0);
-    level thread scene::play(#"hash_55a34e98cb7ae216", "enter");
-    level thread scene::play(#"hash_22ea6a1438c59b35", "enter");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", "enter");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", "enter");
     level flag::wait_till_all(array(#"hash_71fc63117cc5bf06" + 1, #"hash_71fc63117cc5bf06" + 2, #"hash_71fc63117cc5bf06" + 3, #"hash_c5112e5b6ad4e15"));
     function_a8f6e36c(localclientnum, 3);
     function_a8f6e36c(localclientnum, 4);
@@ -1282,7 +1282,7 @@ function function_365bef4(localclientnum, var_ff27a24 = 0) {
     function_8ab548f5(localclientnum);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0x714f3d3e, Offset: 0x78e8
 // Size: 0x3a6
@@ -1298,20 +1298,20 @@ function function_205528f5(localclientnum) {
         }
     }
     var_f7dcde44 = struct::get(#"hash_3dd33181f00d872f");
-    level scene::stop(#"hash_21f74a4374cd0d1a");
-    level scene::stop(#"hash_37ea962ab5a11e0f", 1);
-    level scene::stop(#"hash_6375624d1a345124", 1);
-    level scene::stop(#"hash_436f2d7b7e23324b", 1);
-    level scene::stop(#"hash_4097bdfcaca36d7a", 1);
-    level scene::stop(#"hash_52f7085562a13541");
-    level scene::stop(#"hash_22ea6a1438c59b35");
-    level scene::stop(#"hash_55a34e98cb7ae216");
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", 1);
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle");
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle");
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle");
     level thread function_3dd68dd9(localclientnum, #"hash_6551ceddc995b613");
     level waittill(#"hash_6551ceddc995b613");
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_lab_out", 0, "", "", var_f7dcde44.origin, var_f7dcde44.angles);
-    level thread scene::play(#"hash_6375624d1a345124", "mixer_idle");
-    level thread scene::play(#"hash_436f2d7b7e23324b", "mixer_idle");
-    level thread scene::play(#"hash_4097bdfcaca36d7a", "mixer_idle");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_idle");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_idle");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_idle");
     function_9dee7481();
     function_a9d89e09();
     function_15ff01e1(localclientnum);
@@ -1320,7 +1320,7 @@ function function_205528f5(localclientnum) {
     level.var_ee871019 = undefined;
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xcd84267f, Offset: 0x7c98
 // Size: 0x6f4
@@ -1332,29 +1332,29 @@ function function_4053acdb(localclientnum) {
     #/
     function_b3efb400(0);
     level notify(#"hash_333aed9939c9fe17");
-    level scene::cancel(#"hash_21f74a4374cd0d1a");
-    level scene::stop(#"hash_37ea962ab5a11e0f", 1);
-    level scene::cancel(#"hash_6375624d1a345124");
-    level scene::cancel(#"hash_436f2d7b7e23324b");
-    level scene::cancel(#"hash_4097bdfcaca36d7a");
-    level scene::cancel(#"hash_52f7085562a13541");
-    level scene::cancel(#"hash_22ea6a1438c59b35");
-    level scene::cancel(#"hash_55a34e98cb7ae216");
+    level scene::cancel(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
+    level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_bundle", 1);
+    level scene::cancel(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle");
+    level scene::cancel(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle");
+    level scene::cancel(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle");
+    level scene::cancel(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle");
+    level scene::cancel(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle");
+    level scene::cancel(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle");
     function_15ff01e1(localclientnum);
     function_a9d89e09();
     function_a8188266(0, 0);
     if (isdefined(level.var_49f26c00.var_f6e518bb)) {
         level thread function_3dd68dd9(localclientnum, 0.5);
         function_b760318d(3);
-        level thread scene::play(#"hash_52f7085562a13541", "press_create");
+        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "press_create");
         wait(1.25);
     } else {
         function_b760318d(1);
         level thread function_3dd68dd9(localclientnum, 0.5);
-        level thread scene::play(#"hash_52f7085562a13541", "press_no_create");
+        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "press_no_create");
     }
-    level thread scene::play(#"hash_22ea6a1438c59b35", "enter");
-    level thread scene::play(#"hash_55a34e98cb7ae216", "enter");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", "enter");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", "enter");
     var_469e104d = function_18d7cd9b(localclientnum, 1);
     var_7953f5b8 = function_18d7cd9b(localclientnum, 2);
     var_6b14d93a = function_18d7cd9b(localclientnum, 3);
@@ -1364,18 +1364,18 @@ function function_4053acdb(localclientnum) {
     level.var_49f26c00.var_53ec42bc function_9b8f7969(var_bc9784a7);
     level.var_49f26c00.var_1266bfca function_9b8f7969(var_35bcf6f0);
     level.var_49f26c00.var_ffa61a49 function_9b8f7969(var_237e5273);
-    level thread scene::play(#"hash_6375624d1a345124", "mixer_drain");
-    level thread scene::play(#"hash_436f2d7b7e23324b", "mixer_drain");
-    level thread scene::play(#"hash_4097bdfcaca36d7a", "mixer_drain");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_drain");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_drain");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_drain");
     level thread function_ce974bbe(localclientnum, 0);
     level thread function_f76d78f5(localclientnum, 0);
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_bottle_dof", 0, "", "", var_f7dcde44.origin, var_f7dcde44.angles);
     function_8192c9cf(localclientnum, 0);
     if (isdefined(level.var_49f26c00.var_f6e518bb)) {
-        level waittill(#"hash_353264cf2656f253");
+        level waittill(#"talisman_show_label");
         wait(1);
     } else {
-        level waittill(#"hash_374b521325cbc5d7");
+        level waittill(#"bottle3_start_fill");
         wait(1);
     }
     function_a8f6e36c(localclientnum, 3);
@@ -1394,7 +1394,7 @@ function function_4053acdb(localclientnum) {
     function_8ab548f5(localclientnum);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x7427ba4a, Offset: 0x8398
 // Size: 0x12c
@@ -1410,7 +1410,7 @@ function function_3dd68dd9(localclientnum, var_8bad1c0 = 1) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf885cd21, Offset: 0x84d0
 // Size: 0x6d4
@@ -1422,10 +1422,10 @@ function function_254a0f6d(localclientnum) {
     #/
     var_f7dcde44 = struct::get(#"hash_3dd33181f00d872f");
     if (isdefined(level.var_49f26c00.var_f6e518bb)) {
-        level util::delay(0.25, #"hash_72f1e71666dce90d", &scene::play, #"hash_52f7085562a13541", "exit");
+        level util::delay(0.25, #"hash_72f1e71666dce90d", &scene::play, #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "exit");
     }
-    level thread scene::play(#"hash_55a34e98cb7ae216", "exit");
-    level scene::play(#"hash_22ea6a1438c59b35", "exit");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", "exit");
+    level scene::play(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", "exit");
     level flag::clear(#"hash_789102d70e2d8a44");
     level thread function_ce974bbe(localclientnum, 1);
     level thread function_f76d78f5(localclientnum, 1);
@@ -1446,10 +1446,10 @@ function function_254a0f6d(localclientnum) {
         function_b3efb400(0);
         function_b760318d(3);
         level flag::clear(#"hash_c5112e5b6ad4e15");
-        level util::delay(0, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_52f7085562a13541", "press_create");
+        level util::delay(0, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "press_create");
     } else {
         function_b760318d(1);
-        level util::delay(0, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"hash_52f7085562a13541", "press_no_create");
+        level util::delay(0, array(#"hash_72f1e71666dce90d", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "press_no_create");
         level flag::set(#"hash_c5112e5b6ad4e15");
     }
     wait(1.5);
@@ -1458,8 +1458,8 @@ function function_254a0f6d(localclientnum) {
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_bottle_dof", 500, "", "", var_f7dcde44.origin, var_f7dcde44.angles);
     function_8192c9cf(localclientnum, 0);
     function_b3efb400(0);
-    level thread scene::play(#"hash_55a34e98cb7ae216", "enter");
-    level thread scene::play(#"hash_22ea6a1438c59b35", "enter");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", "enter");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", "enter");
     level flag::wait_till_all(array(#"hash_71fc63117cc5bf06" + 1, #"hash_71fc63117cc5bf06" + 2, #"hash_71fc63117cc5bf06" + 3, #"hash_c5112e5b6ad4e15"));
     function_a8f6e36c(localclientnum, 3);
     function_a8f6e36c(localclientnum, 4);
@@ -1477,7 +1477,7 @@ function function_254a0f6d(localclientnum) {
     function_8ab548f5(localclientnum);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0x11c50feb, Offset: 0x8bb0
 // Size: 0x274
@@ -1485,25 +1485,25 @@ function function_8ab548f5(localclientnum) {
     level.var_ee871019 = undefined;
     var_f7dcde44 = struct::get(#"hash_3dd33181f00d872f");
     function_a8f6e36c(localclientnum, 6);
-    level thread scene::play(#"hash_55a34e98cb7ae216", "exit");
-    level thread scene::play(#"hash_22ea6a1438c59b35", "exit");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", "exit");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", "exit");
     if (isdefined(level.var_49f26c00.var_f6e518bb)) {
-        level util::delay(0.25, #"hash_72f1e71666dce90d", &scene::play, #"hash_52f7085562a13541", "exit");
+        level util::delay(0.25, #"hash_72f1e71666dce90d", &scene::play, #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "exit");
     }
     function_9dee7481();
     wait(1);
     level thread function_ce974bbe(localclientnum, 1);
     level thread function_f76d78f5(localclientnum, 1);
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_lab_out", 0, "", "", var_f7dcde44.origin, var_f7dcde44.angles);
-    level thread scene::play(#"hash_6375624d1a345124", "mixer_idle");
-    level thread scene::play(#"hash_436f2d7b7e23324b", "mixer_idle");
-    level thread scene::play(#"hash_4097bdfcaca36d7a", "mixer_idle");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_idle");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_idle");
+    level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_idle");
     function_a8f6e36c(localclientnum, 0);
     level flag::clear(#"hash_789102d70e2d8a44");
     function_b760318d(2);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 4, eflags: 0x5 linked
 // Checksum 0x8dadefd7, Offset: 0x8e30
 // Size: 0x186
@@ -1532,7 +1532,7 @@ function private function_ce974bbe(localclientnum, b_reverse = 0, var_74431a2d =
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 4, eflags: 0x5 linked
 // Checksum 0x9c687780, Offset: 0x8fc0
 // Size: 0x186
@@ -1561,7 +1561,7 @@ function private function_f76d78f5(localclientnum, b_reverse = 0, var_74431a2d =
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x96c3e0e5, Offset: 0x9150
 // Size: 0x134
@@ -1574,7 +1574,7 @@ function function_f8d486f8(localclientnum, a_ents) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0xeff3c7a9, Offset: 0x9290
 // Size: 0x724
@@ -1641,7 +1641,7 @@ function function_d4f9b895(localclientnum, a_ents) {
         if (isdefined(a_ents[#"talisman"].var_850f1956)) {
             a_ents[#"talisman"].var_850f1956 setmodel(var_bdf17b70);
         }
-        level waittill(#"hash_599a0e5ac081bf9b");
+        level waittill(#"talisman_stamped");
         if (isdefined(a_ents[#"talisman"].var_850f1956)) {
             a_ents[#"talisman"].var_850f1956 setmodel(var_177f9b93);
         }
@@ -1649,7 +1649,7 @@ function function_d4f9b895(localclientnum, a_ents) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x0
 // Checksum 0x416caec4, Offset: 0x99c0
 // Size: 0x1ee
@@ -1669,7 +1669,7 @@ function function_feeedd3d(var_7194cc97) {
     #/
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x6a7cc60b, Offset: 0x9bb8
 // Size: 0xa4
@@ -1682,45 +1682,45 @@ function function_43d0e81a(localclientnum, a_ents) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x660617d4, Offset: 0x9c68
 // Size: 0x55c
 function function_24222bb4(localclientnum, a_ents) {
-    if (self.scriptbundlename === #"hash_22ea6a1438c59b35") {
+    if (self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_bottles_bundle") {
         level scene::stop(#"hash_4aaa115910b7d3ec");
-        function_4df2b792(localclientnum, a_ents[#"hash_52f54d3244939f48"], a_ents[#"hash_52f550324493a461"], a_ents[#"hash_52f54f324493a2ae"]);
+        function_4df2b792(localclientnum, a_ents[#"bottle1"], a_ents[#"bottle2"], a_ents[#"bottle3"]);
         var_ed6f73d2 = function_6127ea37(localclientnum, 1);
         var_df3fd74f = function_6127ea37(localclientnum, 2);
         var_ed7a73c4 = function_6127ea37(localclientnum, 3);
-        util::playfxontag(localclientnum, var_ed6f73d2, a_ents[#"hash_52f54d3244939f48"].var_aa3e8c5d, isdefined(a_ents[#"hash_52f54d3244939f48"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"hash_52f54d3244939f48"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
-        util::playfxontag(localclientnum, var_df3fd74f, a_ents[#"hash_52f550324493a461"].var_aa3e8c5d, isdefined(a_ents[#"hash_52f550324493a461"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"hash_52f550324493a461"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
-        util::playfxontag(localclientnum, var_ed7a73c4, a_ents[#"hash_52f54f324493a2ae"].var_aa3e8c5d, isdefined(a_ents[#"hash_52f54f324493a2ae"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"hash_52f54f324493a2ae"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
-        a_ents[#"hash_52f54d3244939f48"].var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 1);
-        a_ents[#"hash_52f550324493a461"].var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 2);
-        a_ents[#"hash_52f54f324493a2ae"].var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 3);
-    } else if (self.scriptbundlename === #"hash_55a34e98cb7ae216") {
-        level scene::stop(#"hash_55a34e98cb7ae216");
-        function_8cd01001(localclientnum, a_ents[#"hash_62a287145c35218c"], a_ents[#"hash_62a28a145c3526a5"], a_ents[#"hash_62a289145c3524f2"]);
-        util::playfxontag(localclientnum, level._effect[#"hash_6d42ec7a48079d27"], a_ents[#"hash_62a287145c35218c"], "bottle_fluid_base_jnt");
-        util::playfxontag(localclientnum, level._effect[#"hash_6d42ec7a48079d27"], a_ents[#"hash_62a28a145c3526a5"], "bottle_fluid_base_jnt");
-        util::playfxontag(localclientnum, level._effect[#"hash_6d42ec7a48079d27"], a_ents[#"hash_62a289145c3524f2"], "bottle_fluid_base_jnt");
+        util::playfxontag(localclientnum, var_ed6f73d2, a_ents[#"bottle1"].var_aa3e8c5d, isdefined(a_ents[#"bottle1"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"bottle1"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
+        util::playfxontag(localclientnum, var_df3fd74f, a_ents[#"bottle2"].var_aa3e8c5d, isdefined(a_ents[#"bottle2"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"bottle2"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
+        util::playfxontag(localclientnum, var_ed7a73c4, a_ents[#"bottle3"].var_aa3e8c5d, isdefined(a_ents[#"bottle3"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"bottle3"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
+        a_ents[#"bottle1"].var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 1);
+        a_ents[#"bottle2"].var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 2);
+        a_ents[#"bottle3"].var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 3);
+    } else if (self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle") {
+        level scene::stop(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle");
+        function_8cd01001(localclientnum, a_ents[#"bottle_fluid_01"], a_ents[#"bottle_fluid_02"], a_ents[#"bottle_fluid_03"]);
+        util::playfxontag(localclientnum, level._effect[#"hash_6d42ec7a48079d27"], a_ents[#"bottle_fluid_01"], "bottle_fluid_base_jnt");
+        util::playfxontag(localclientnum, level._effect[#"hash_6d42ec7a48079d27"], a_ents[#"bottle_fluid_02"], "bottle_fluid_base_jnt");
+        util::playfxontag(localclientnum, level._effect[#"hash_6d42ec7a48079d27"], a_ents[#"bottle_fluid_03"], "bottle_fluid_base_jnt");
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x4daf0d1e, Offset: 0xa1d0
 // Size: 0x17c
 function function_de0d6843(localclientnum, a_ents) {
     self endon(#"hash_200ae59dc85ae6f");
-    function_4df2b792(localclientnum, a_ents[#"hash_52f54d3244939f48"], a_ents[#"hash_52f550324493a461"], a_ents[#"hash_52f54f324493a2ae"]);
-    a_ents[#"hash_52f54d3244939f48"] thread function_2c99b5c7(localclientnum, #"hash_74b903d13c2128f5", #"hash_63ce04fa464884b1", 0.5, 1);
-    a_ents[#"hash_52f550324493a461"] thread function_2c99b5c7(localclientnum, #"hash_2aa912bd939a764", #"hash_6c167ea4399081be", 0.6, 2);
-    a_ents[#"hash_52f54f324493a2ae"] thread function_2c99b5c7(localclientnum, #"hash_65feee35fe9ae0ff", #"hash_374b521325cbc5d7", 0.7, 3);
+    function_4df2b792(localclientnum, a_ents[#"bottle1"], a_ents[#"bottle2"], a_ents[#"bottle3"]);
+    a_ents[#"bottle1"] thread function_2c99b5c7(localclientnum, #"bottle1_dropped", #"bottle1_start_fill", 0.5, 1);
+    a_ents[#"bottle2"] thread function_2c99b5c7(localclientnum, #"bottle2_dropped", #"bottle2_start_fill", 0.6, 2);
+    a_ents[#"bottle3"] thread function_2c99b5c7(localclientnum, #"bottle3_dropped", #"bottle3_start_fill", 0.7, 3);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 4, eflags: 0x1 linked
 // Checksum 0xf8504865, Offset: 0xa358
 // Size: 0x60c
@@ -1752,7 +1752,7 @@ function function_4df2b792(localclientnum, var_56448842, var_cf59fa73, var_bb17d
     var_bb17d1ef.mdl_tube setmodel(level.var_49f26c00.var_13123ed2);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 5, eflags: 0x1 linked
 // Checksum 0x77355d51, Offset: 0xa970
 // Size: 0x33c
@@ -1782,7 +1782,7 @@ function function_2c99b5c7(localclientnum, var_1a44a9d9, var_6d1c3912, var_7046a
     level thread function_6605d119(localclientnum, var_d5db956e);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x21 linked
 // Checksum 0x84a3bbe9, Offset: 0xacb8
 // Size: 0xc8
@@ -1794,7 +1794,7 @@ function function_6605d119(localclientnum, vararg...) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xae4355e8, Offset: 0xad88
 // Size: 0x34
@@ -1802,7 +1802,7 @@ function function_bf3a0fbe(param) {
     level flag::set(#"hash_71fc63117cc5bf06" + param);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0xef1ab8f7, Offset: 0xadc8
 // Size: 0x34
@@ -1810,50 +1810,50 @@ function function_5e0db3e7(param1, param2) {
     level flag::set(#"hash_c5112e5b6ad4e15");
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x97390234, Offset: 0xae08
 // Size: 0x2ac
 function function_7c1ef1e1(localclientnum, a_ents) {
     self notify(#"hash_200ae59dc85ae6f");
-    if (isdefined(a_ents[#"hash_52f54d3244939f48"].var_aa3e8c5d)) {
-        a_ents[#"hash_52f54d3244939f48"].var_aa3e8c5d delete();
+    if (isdefined(a_ents[#"bottle1"].var_aa3e8c5d)) {
+        a_ents[#"bottle1"].var_aa3e8c5d delete();
     }
-    if (isdefined(a_ents[#"hash_52f550324493a461"].var_aa3e8c5d)) {
-        a_ents[#"hash_52f550324493a461"].var_aa3e8c5d delete();
+    if (isdefined(a_ents[#"bottle2"].var_aa3e8c5d)) {
+        a_ents[#"bottle2"].var_aa3e8c5d delete();
     }
-    if (isdefined(a_ents[#"hash_52f54f324493a2ae"].var_aa3e8c5d)) {
-        a_ents[#"hash_52f54f324493a2ae"].var_aa3e8c5d delete();
+    if (isdefined(a_ents[#"bottle3"].var_aa3e8c5d)) {
+        a_ents[#"bottle3"].var_aa3e8c5d delete();
     }
-    if (isdefined(a_ents[#"hash_52f54d3244939f48"].mdl_tube)) {
-        a_ents[#"hash_52f54d3244939f48"].mdl_tube delete();
+    if (isdefined(a_ents[#"bottle1"].mdl_tube)) {
+        a_ents[#"bottle1"].mdl_tube delete();
     }
-    if (isdefined(a_ents[#"hash_52f550324493a461"].mdl_tube)) {
-        a_ents[#"hash_52f550324493a461"].mdl_tube delete();
+    if (isdefined(a_ents[#"bottle2"].mdl_tube)) {
+        a_ents[#"bottle2"].mdl_tube delete();
     }
-    if (isdefined(a_ents[#"hash_52f54f324493a2ae"].mdl_tube)) {
-        a_ents[#"hash_52f54f324493a2ae"].mdl_tube delete();
+    if (isdefined(a_ents[#"bottle3"].mdl_tube)) {
+        a_ents[#"bottle3"].mdl_tube delete();
     }
-    if (isdefined(a_ents[#"hash_52f54d3244939f48"].var_7b57e2cc)) {
-        a_ents[#"hash_52f54d3244939f48"].var_7b57e2cc delete();
+    if (isdefined(a_ents[#"bottle1"].var_7b57e2cc)) {
+        a_ents[#"bottle1"].var_7b57e2cc delete();
     }
-    if (isdefined(a_ents[#"hash_52f550324493a461"].var_7b57e2cc)) {
-        a_ents[#"hash_52f550324493a461"].var_7b57e2cc delete();
+    if (isdefined(a_ents[#"bottle2"].var_7b57e2cc)) {
+        a_ents[#"bottle2"].var_7b57e2cc delete();
     }
-    if (isdefined(a_ents[#"hash_52f54f324493a2ae"].var_7b57e2cc)) {
-        a_ents[#"hash_52f54f324493a2ae"].var_7b57e2cc delete();
+    if (isdefined(a_ents[#"bottle3"].var_7b57e2cc)) {
+        a_ents[#"bottle3"].var_7b57e2cc delete();
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x909e3cfb, Offset: 0xb0c0
 // Size: 0x5c
 function function_7af39f9a(localclientnum, a_ents) {
-    function_8cd01001(localclientnum, a_ents[#"hash_62a287145c35218c"], a_ents[#"hash_62a28a145c3526a5"], a_ents[#"hash_62a289145c3524f2"]);
+    function_8cd01001(localclientnum, a_ents[#"bottle_fluid_01"], a_ents[#"bottle_fluid_02"], a_ents[#"bottle_fluid_03"]);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 4, eflags: 0x1 linked
 // Checksum 0x25655c14, Offset: 0xb128
 // Size: 0x194
@@ -1877,7 +1877,7 @@ function function_8cd01001(localclientnum, var_77a22652, var_bd6d31e7, var_db346
     var_db346d75 setmodel(var_ecf558bd);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0xafdd4287, Offset: 0xb2c8
 // Size: 0x14
@@ -1885,7 +1885,7 @@ function function_31b459eb(localclientnum, a_ents) {
     
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 3, eflags: 0x1 linked
 // Checksum 0x5b951ca7, Offset: 0xb2e8
 // Size: 0x1c
@@ -1893,7 +1893,7 @@ function function_989962b9(localclientnum, a_ents, str_current_shot) {
     
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x40886fa2, Offset: 0xb310
 // Size: 0xea
@@ -1901,45 +1901,45 @@ function function_cdd906ed(localclientnum, a_ents) {
     self notify("18138586312830ef");
     self endon("18138586312830ef");
     level endon(#"hash_72f1e71666dce90d");
-    a_ents[#"hash_d5c3ec80e54d60c"] thread function_7492cbc7(0.1, #"hash_277fc24714d9ad5b", 1);
-    level waittill(#"hash_478d4735146b9f0c", #"hash_1d604ddf352ddcca");
-    if (isdefined(a_ents[#"hash_d5c3ec80e54d60c"])) {
-        a_ents[#"hash_d5c3ec80e54d60c"] notify(#"hash_333aed9939c9fe17");
+    a_ents[#"centrifuge_fluid"] thread function_7492cbc7(0.1, #"hash_277fc24714d9ad5b", 1);
+    level waittill(#"centrifuge_fluid_drained", #"hash_1d604ddf352ddcca");
+    if (isdefined(a_ents[#"centrifuge_fluid"])) {
+        a_ents[#"centrifuge_fluid"] notify(#"hash_333aed9939c9fe17");
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 3, eflags: 0x1 linked
 // Checksum 0xd6edb472, Offset: 0xb408
 // Size: 0x360
 function function_94c307e0(localclientnum, a_ents, str_shot) {
-    if (!isdefined(level.var_49f26c00.var_53ec42bc) && self.scriptbundlename === #"hash_6375624d1a345124") {
-        level.var_49f26c00.var_53ec42bc = a_ents[#"hash_7ce5dbcddb242fbd"];
+    if (!isdefined(level.var_49f26c00.var_53ec42bc) && self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle") {
+        level.var_49f26c00.var_53ec42bc = a_ents[#"mixer_fluid"];
     }
-    if (self.scriptbundlename === #"hash_6375624d1a345124" && str_shot == "mixer_activate") {
+    if (self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle" && str_shot == "mixer_activate") {
         level.var_49f26c00.var_53ec42bc.var_9270c414 = util::playfxontag(localclientnum, level._effect[#"hash_43b44402af23c93c"], level.var_49f26c00.var_53ec42bc, "mixer_01_bath_fluid_fx_jnt");
     }
-    if (!isdefined(level.var_49f26c00.var_1266bfca) && self.scriptbundlename === #"hash_436f2d7b7e23324b") {
-        level.var_49f26c00.var_1266bfca = a_ents[#"hash_7ce5dbcddb242fbd"];
+    if (!isdefined(level.var_49f26c00.var_1266bfca) && self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle") {
+        level.var_49f26c00.var_1266bfca = a_ents[#"mixer_fluid"];
     }
-    if (self.scriptbundlename === #"hash_436f2d7b7e23324b" && str_shot == "mixer_activate") {
+    if (self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle" && str_shot == "mixer_activate") {
         level.var_49f26c00.var_1266bfca.var_9270c414 = util::playfxontag(localclientnum, level._effect[#"hash_43b44402af23c93c"], level.var_49f26c00.var_1266bfca, "mixer_02_bath_fluid_fx_jnt");
     }
-    if (!isdefined(level.var_49f26c00.var_ffa61a49) && self.scriptbundlename === #"hash_4097bdfcaca36d7a") {
-        level.var_49f26c00.var_ffa61a49 = a_ents[#"hash_7ce5dbcddb242fbd"];
+    if (!isdefined(level.var_49f26c00.var_ffa61a49) && self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle") {
+        level.var_49f26c00.var_ffa61a49 = a_ents[#"mixer_fluid"];
     }
-    if (self.scriptbundlename === #"hash_4097bdfcaca36d7a" && str_shot == "mixer_activate") {
+    if (self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle" && str_shot == "mixer_activate") {
         level.var_49f26c00.var_ffa61a49.var_9270c414 = util::playfxontag(localclientnum, level._effect[#"hash_43b44402af23c93c"], level.var_49f26c00.var_ffa61a49, "mixer_03_bath_fluid_fx_jnt");
     }
     if (str_shot == "mixer_activate") {
-        if (isdefined(a_ents[#"hash_7ce5dbcddb242fbd"])) {
-            a_ents[#"hash_7ce5dbcddb242fbd"] thread function_7492cbc7(0.1, undefined, 1);
+        if (isdefined(a_ents[#"mixer_fluid"])) {
+            a_ents[#"mixer_fluid"] thread function_7492cbc7(0.1, undefined, 1);
         }
     } else if (str_shot == "mixer_fill_finish") {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa7f683ca, Offset: 0xb770
 // Size: 0x9e
@@ -1963,7 +1963,7 @@ function function_879fc3ee(var_4deff3fa) {
     return -1;
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0x9b2af426, Offset: 0xb818
 // Size: 0xe6
@@ -1994,7 +1994,7 @@ function function_a05c4ea5(str_color) {
     return var_1467a3fb;
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 2, eflags: 0x1 linked
 // Checksum 0xebb4c3e4, Offset: 0xb908
 // Size: 0x1cc
@@ -2022,7 +2022,7 @@ function function_9b8f7969(var_803342ff, var_ee6bcd51 = #"hash_39fc63d10a03dd55"
     self function_78233d29(var_ee6bcd51, "", "Tint", var_1467a3fb);
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 3, eflags: 0x1 linked
 // Checksum 0xb441de79, Offset: 0xbae0
 // Size: 0x398
@@ -2069,7 +2069,7 @@ function function_7492cbc7(var_a82b834c = 0.5, var_ee6bcd51 = #"hash_6f36cd3b183
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe1f24c99, Offset: 0xbe80
 // Size: 0x3c
@@ -2079,7 +2079,7 @@ function function_9330010b(str_notify) {
     }
 }
 
-// Namespace namespace_836a0b98/namespace_6f8011a
+// Namespace zm_laboratory/namespace_6f8011a
 // Params 7, eflags: 0x1 linked
 // Checksum 0xa6da43a1, Offset: 0xbec8
 // Size: 0x3a6

@@ -55,9 +55,9 @@ function init_clientfields() {
 // Checksum 0x95d18667, Offset: 0x438
 // Size: 0xe4
 function function_eae1fc85(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    var_9c56a77 = struct::get("fix_server_spark_fx", "targetname");
+    s_fix_server_spark_fx = struct::get("fix_server_spark_fx", "targetname");
     if (newval == 1) {
-        level.var_6171ce61 = playfx(localclientnum, level._effect[#"server_spark_fx"], var_9c56a77.origin);
+        level.var_6171ce61 = playfx(localclientnum, level._effect[#"server_spark_fx"], s_fix_server_spark_fx.origin);
     } else if (isdefined(level.var_6171ce61)) {
         deletefx(localclientnum, level.var_6171ce61);
     }

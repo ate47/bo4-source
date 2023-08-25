@@ -37,7 +37,7 @@ function __init__() {
 function __main__() {
     scene::add_scene_func(#"hash_19f1cd836fd409da", &function_35fa13e8, "play");
     level.var_f3e25805 = &function_c3c859e1;
-    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (getgametypesetting(#"allowMapScripting")) {
         if (getdvarint(#"hash_7ac069c0a6148b32", 1)) {
             level thread function_304304b4();
         }
@@ -128,7 +128,7 @@ function function_4ee0d67(a_ents) {
 // Checksum 0x27e72f23, Offset: 0xd70
 // Size: 0xd4
 function function_34fc666e() {
-    if (getgametypesetting(#"hash_5e5bd42399148b51") && util::isfirstround() && draft::is_draft_this_round()) {
+    if (getgametypesetting(#"allowMapScripting") && util::isfirstround() && draft::is_draft_this_round()) {
         level endon(#"game_ended");
         while (!draft::function_d255fb3e()) {
             waitframe(1);
@@ -145,7 +145,7 @@ function function_34fc666e() {
 // Size: 0x104
 function function_489bd1e9() {
     buttons = struct::get_array("exhibit_vo_button");
-    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (getgametypesetting(#"allowMapScripting")) {
         foreach (button in buttons) {
             button.mdl_gameobject.var_ee7ff721 = button.var_ee7ff721;
             button.mdl_gameobject gameobjects::set_onuse_event(&function_4967eb5a);

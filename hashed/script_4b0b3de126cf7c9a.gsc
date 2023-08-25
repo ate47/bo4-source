@@ -68,7 +68,7 @@ function function_81eaae89(e_player) {
     e_player endon(#"death", #"bled_out");
     e_player function_ad31c153();
     var_e8145621 = e_player getweaponslistprimaries();
-    var_be74babe = e_player getcurrentweapon();
+    w_current_weapon = e_player getcurrentweapon();
     foreach (weapon in var_e8145621) {
         if (e_player zm_weapons::can_upgrade_weapon(weapon)) {
             var_5198244f = zm_weapons::get_upgrade_weapon(weapon, 1);
@@ -77,7 +77,7 @@ function function_81eaae89(e_player) {
         }
         n_clip = var_5198244f.clipsize;
         n_stock = e_player getweaponammostock(weapon);
-        if (var_be74babe == weapon) {
+        if (w_current_weapon == weapon) {
             var_147bd2 = var_5198244f;
         }
         e_player zm_weapons::weapon_take(weapon);
@@ -102,12 +102,12 @@ function function_40935801() {
     wait(30);
     self function_ad31c153();
     var_e8145621 = self getweaponslistprimaries();
-    var_be74babe = self getcurrentweapon();
+    w_current_weapon = self getcurrentweapon();
     foreach (w_upgraded in var_e8145621) {
         var_2af07147 = self zm_weapons::get_base_weapon(w_upgraded);
         n_clip = self getweaponammoclip(w_upgraded);
         n_stock = self getweaponammostock(w_upgraded);
-        if (var_be74babe == w_upgraded) {
+        if (w_current_weapon == w_upgraded) {
             var_147bd2 = var_2af07147;
         }
         self zm_weapons::weapon_take(w_upgraded);
@@ -131,19 +131,19 @@ function function_35ae342e(e_player) {
             wait(0.1);
         }
     }
-    var_be74babe = e_player getcurrentweapon();
-    e_player.current_weapon = var_be74babe;
-    var_a56ad7fa = var_be74babe;
-    if (e_player zm_weapons::can_upgrade_weapon(var_be74babe)) {
-        var_5198244f = zm_weapons::get_upgrade_weapon(var_be74babe, 1);
+    w_current_weapon = e_player getcurrentweapon();
+    e_player.current_weapon = w_current_weapon;
+    var_a56ad7fa = w_current_weapon;
+    if (e_player zm_weapons::can_upgrade_weapon(w_current_weapon)) {
+        var_5198244f = zm_weapons::get_upgrade_weapon(w_current_weapon, 1);
     }
     if (!isdefined(var_5198244f)) {
-        e_player thread function_d0ea0364(var_be74babe);
+        e_player thread function_d0ea0364(w_current_weapon);
         return;
     }
     n_clip = var_5198244f.clipsize;
-    n_stock = e_player getweaponammostock(var_be74babe);
-    e_player zm_weapons::weapon_take(var_be74babe);
+    n_stock = e_player getweaponammostock(w_current_weapon);
+    e_player zm_weapons::weapon_take(w_current_weapon);
     e_player zm_weapons::weapon_give(var_5198244f, 1, 1);
     e_player shoulddoinitialweaponraise(var_5198244f, 0);
     e_player switchtoweaponimmediate(var_5198244f);

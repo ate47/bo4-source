@@ -102,7 +102,7 @@ function function_de525e63() {
         node = getnode(nodename, "targetname");
         linktraversal(node);
     }
-    if (!getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (!getgametypesetting(#"allowMapScripting")) {
         a_s_gameobjects = struct::get_array("elevator_push_button", "targetname");
         foreach (var_20aecb28 in a_s_gameobjects) {
             var_20aecb28 gameobjects::destroy_object(1, 0);
@@ -204,7 +204,7 @@ function function_1338d0fa(var_60d70418) {
 // Size: 0xa6
 function function_2cdcf5c3() {
     if (util::isfirstround()) {
-        level scene::init(#"hash_39a3597fdeb55dc8");
+        level scene::init(#"p8_fxanim_mp_silo_helicopter_crash_bundle");
         level.var_82ec8690 = getent("radar_globe_damaged", "targetname");
         level.var_82ec8690 hide();
         level.var_491d6ac5 = getent("radar_globe_pristine", "targetname");
@@ -220,24 +220,24 @@ function function_c3c859e1() {
     level flag::wait_till("first_player_spawned");
     wait(getdvarfloat(#"hash_205d729c5c415715", 0));
     exploder::exploder("fxexp_alarm_lights");
-    if (!getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (!getgametypesetting(#"allowMapScripting")) {
         exploder::exploder("fxexp_catwalk_off");
     } else {
         exploder::exploder("fxexp_catwalk_on");
     }
     if (util::isfirstround()) {
         level util::delay(0.4, undefined, &function_fffbeb7f);
-        level util::delay(3, undefined, &scene::play, #"hash_2d53b186cf22771a");
-        level scene::add_scene_func(#"hash_39a3597fdeb55dc8", &function_5c718249, "play");
-        level util::delay(0.2, undefined, &scene::play, #"hash_39a3597fdeb55dc8");
+        level util::delay(3, undefined, &scene::play, #"p8_fxanim_mp_silo_missle_deploy_bundle");
+        level scene::add_scene_func(#"p8_fxanim_mp_silo_helicopter_crash_bundle", &function_5c718249, "play");
+        level util::delay(0.2, undefined, &scene::play, #"p8_fxanim_mp_silo_helicopter_crash_bundle");
         level notify(#"hash_771bf8874446d6f6");
         level notify(#"hash_388057c56b2acf4c");
         return;
     }
     exploder::exploder("fxexp_globe_fire");
     waitframe(4);
-    level scene::skipto_end(#"hash_2d53b186cf22771a", undefined, undefined, 1);
-    level scene::skipto_end(#"hash_39a3597fdeb55dc8", undefined, undefined, 1);
+    level scene::skipto_end(#"p8_fxanim_mp_silo_missle_deploy_bundle", undefined, undefined, 1);
+    level scene::skipto_end(#"p8_fxanim_mp_silo_helicopter_crash_bundle", undefined, undefined, 1);
     level.var_82ec8690 = getent("radar_globe_damaged", "targetname");
     level.var_82ec8690 show();
     wait(1);

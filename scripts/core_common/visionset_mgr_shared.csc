@@ -460,7 +460,7 @@ function demo_jump_monitor() {
     if (!level.isdemoplaying) {
         return;
     }
-    var_23518ad5 = [];
+    oldlerps = [];
     while (1) {
         level waittill(#"demo_jump", #"demo_player_switch", #"visionset_mgr_reset");
         foreach (v in level.vsmgr) {

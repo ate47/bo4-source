@@ -384,11 +384,11 @@ function private function_2cbae477(var_babebdbc = #"weapon/fx8_equip_swat_smk_si
 // Checksum 0xbe27692a, Offset: 0x1800
 // Size: 0xd0
 function function_284b1d4c(origin, model, timeout = undefined, var_babebdbc = undefined, var_76361c1a = undefined) {
-    var_8c655ba0 = spawn("script_model", origin);
-    var_8c655ba0 setmodel(model);
-    var_8c655ba0 function_2cbae477(var_babebdbc, var_76361c1a);
-    var_8c655ba0 thread function_f61c0c1(timeout);
-    return var_8c655ba0;
+    strobe = spawn("script_model", origin);
+    strobe setmodel(model);
+    strobe function_2cbae477(var_babebdbc, var_76361c1a);
+    strobe thread function_f61c0c1(timeout);
+    return strobe;
 }
 
 // Namespace ir_strobe/namespace_f0840611

@@ -264,32 +264,32 @@ function bb_actorgetdamagelocation() {
         }
     #/
     shitloc = self.damagelocation;
-    var_dca3f69c = array();
+    possiblehitlocations = array();
     if (isdefined(shitloc) && shitloc != "none") {
         if (isinarray(array("helmet", "head", "neck"), shitloc)) {
-            var_dca3f69c[var_dca3f69c.size] = "head";
+            possiblehitlocations[possiblehitlocations.size] = "head";
         } else if (isinarray(array("torso_upper", "torso_mid"), shitloc)) {
-            var_dca3f69c[var_dca3f69c.size] = "chest";
+            possiblehitlocations[possiblehitlocations.size] = "chest";
         } else if (isinarray(array("torso_lower", "groin"), shitloc)) {
-            var_dca3f69c[var_dca3f69c.size] = "groin";
+            possiblehitlocations[possiblehitlocations.size] = "groin";
         } else if (isinarray(array("torso_lower", "groin"), shitloc)) {
-            var_dca3f69c[var_dca3f69c.size] = "legs";
+            possiblehitlocations[possiblehitlocations.size] = "legs";
         } else if (isinarray(array("left_arm_upper", "left_arm_lower", "left_hand"), shitloc)) {
-            var_dca3f69c[var_dca3f69c.size] = "left_arm";
+            possiblehitlocations[possiblehitlocations.size] = "left_arm";
         } else if (isinarray(array("right_arm_upper", "right_arm_lower", "right_hand", "gun"), shitloc)) {
-            var_dca3f69c[var_dca3f69c.size] = "right_arm";
+            possiblehitlocations[possiblehitlocations.size] = "right_arm";
         } else if (isinarray(array("right_leg_upper", "left_leg_upper", "right_leg_lower", "left_leg_lower", "right_foot", "left_foot"), shitloc)) {
-            var_dca3f69c[var_dca3f69c.size] = "legs";
+            possiblehitlocations[possiblehitlocations.size] = "legs";
         }
     }
-    if (var_dca3f69c.size == 0) {
-        var_dca3f69c[var_dca3f69c.size] = "chest";
-        var_dca3f69c[var_dca3f69c.size] = "groin";
+    if (possiblehitlocations.size == 0) {
+        possiblehitlocations[possiblehitlocations.size] = "chest";
+        possiblehitlocations[possiblehitlocations.size] = "groin";
     }
     /#
-        assert(var_dca3f69c.size > 0, var_dca3f69c.size);
+        assert(possiblehitlocations.size > 0, possiblehitlocations.size);
     #/
-    damagelocation = var_dca3f69c[randomint(var_dca3f69c.size)];
+    damagelocation = possiblehitlocations[randomint(possiblehitlocations.size)];
     return damagelocation;
 }
 
@@ -352,20 +352,20 @@ function bb_getdamagetaken() {
     #/
     damagetaken = self.damagetaken;
     maxhealth = self.maxhealth;
-    var_20c83a94 = "light";
+    damagetakentype = "light";
     if (isalive(self)) {
         ratio = damagetaken / self.maxhealth;
         if (ratio > 0.7) {
-            var_20c83a94 = "heavy";
+            damagetakentype = "heavy";
         }
         self.lastdamagetime = gettime();
     } else {
         ratio = damagetaken / self.maxhealth;
         if (ratio > 0.7) {
-            var_20c83a94 = "heavy";
+            damagetakentype = "heavy";
         }
     }
-    return var_20c83a94;
+    return damagetakentype;
 }
 
 // Namespace aiutility/namespace_7d3e8f59
@@ -410,8 +410,8 @@ function bb_actorgetfataldamagelocation() {
             return "legs";
         }
     }
-    var_17eff272 = array("chest", "hips");
-    return var_17eff272[randomint(var_17eff272.size)];
+    randomlocs = array("chest", "hips");
+    return randomlocs[randomint(randomlocs.size)];
 }
 
 // Namespace aiutility/namespace_7d3e8f59
@@ -434,12 +434,12 @@ function addaioverridedamagecallback(entity, callback, var_46c8afbb) {
         entity.aioverridedamage = array(entity.aioverridedamage);
     }
     if (isdefined(var_46c8afbb) && var_46c8afbb) {
-        var_e610c184 = [];
-        var_e610c184[var_e610c184.size] = callback;
+        damageoverrides = [];
+        damageoverrides[damageoverrides.size] = callback;
         foreach (override in entity.aioverridedamage) {
-            var_e610c184[var_e610c184.size] = override;
+            damageoverrides[damageoverrides.size] = override;
         }
-        entity.aioverridedamage = var_e610c184;
+        entity.aioverridedamage = damageoverrides;
     } else {
         if (!isdefined(entity.aioverridedamage)) {
             entity.aioverridedamage = [];
@@ -464,9 +464,9 @@ function removeaioverridedamagecallback(entity, callback) {
     /#
         assert(isarray(entity.aioverridedamage));
     #/
-    var_91b39ccf = entity.aioverridedamage;
+    currentdamagecallbacks = entity.aioverridedamage;
     entity.aioverridedamage = [];
-    foreach (value in var_91b39ccf) {
+    foreach (value in currentdamagecallbacks) {
         if (value != callback) {
             entity.aioverridedamage[entity.aioverridedamage.size] = value;
         }

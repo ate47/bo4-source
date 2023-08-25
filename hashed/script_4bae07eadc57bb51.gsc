@@ -38,7 +38,7 @@
 // Size: 0x24
 function init() {
     init_flags();
-    function_ec9e5cf2();
+    init_quests();
 }
 
 // Namespace namespace_a5657ff1/namespace_a5657ff1
@@ -57,7 +57,7 @@ function init_flags() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xfe802127, Offset: 0x420
 // Size: 0x54
-function function_ec9e5cf2() {
+function init_quests() {
     level thread function_b540b576();
     function_46d6aa5a();
     if (zm_utility::is_ee_enabled()) {
@@ -103,9 +103,9 @@ function function_b540b576() {
 // Checksum 0xc2207f42, Offset: 0x920
 // Size: 0xd0
 function function_1792ae3(e_item) {
-    var_3d51efed = level.var_5849269a[level.var_804a56e3];
-    if (isdefined(var_3d51efed)) {
-        var_3d51efed.in_inventory = 1;
+    s_reel = level.var_5849269a[level.var_804a56e3];
+    if (isdefined(s_reel)) {
+        s_reel.in_inventory = 1;
         str_alias = #"hash_3b57b74e2c90aee5" + level.var_804a56e3 + 1 + "_pickup";
         self thread zm_vo::function_a2bd5a0c(str_alias);
         if (isdefined(e_item)) {
@@ -629,15 +629,15 @@ function function_8213feb8() {
 // Size: 0x224
 function function_43d7897e() {
     level endon(#"hash_4a19fd40add44b83");
-    var_c470ac43 = 1;
-    while (var_c470ac43) {
+    b_waiting = 1;
+    while (b_waiting) {
         foreach (e_player in level.activeplayers) {
             if (zm_utility::is_player_valid(e_player, 0, 1) && zm_office_floors::function_35babccd(e_player) != 4) {
-                var_c470ac43 = 0;
+                b_waiting = 0;
                 break;
             }
         }
-        if (var_c470ac43) {
+        if (b_waiting) {
             wait(1);
         }
     }
@@ -834,8 +834,8 @@ function function_8039854f() {
     level flag::clear("spawn_zombies");
     wait(3);
     a_valid = zm_vo::function_347f7d34();
-    var_b0c8eddc = zm_office_floors::function_df2506d3(4);
-    a_players = arrayintersect(a_valid, var_b0c8eddc);
+    a_floor = zm_office_floors::function_df2506d3(4);
+    a_players = arrayintersect(a_valid, a_floor);
     if (a_players.size > 0) {
         e_player = array::random(a_players);
         e_player thread zm_vo::function_a2bd5a0c(#"hash_52de71efb1e8de2b", undefined, 1);

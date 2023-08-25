@@ -106,10 +106,10 @@ function setattribute(blackboard, attribute, value, readonly = 0) {
             }
         }
     #/
-    var_b1d080df = spawnstruct();
-    var_b1d080df.attribute = attribute;
-    var_b1d080df.value = blackboard.values[attribute];
-    blackboard.var_1119bda0[blackboard.var_1119bda0.size] = var_b1d080df;
+    stackvalue = spawnstruct();
+    stackvalue.attribute = attribute;
+    stackvalue.value = blackboard.values[attribute];
+    blackboard.var_1119bda0[blackboard.var_1119bda0.size] = stackvalue;
     blackboard.values[attribute] = value;
 }
 
@@ -147,8 +147,8 @@ function undo(blackboard, var_933e99a5) {
         assert(var_933e99a5 < blackboard.var_1119bda0.size);
     #/
     for (index = blackboard.var_1119bda0.size - 1; index > var_933e99a5; index--) {
-        var_b1d080df = blackboard.var_1119bda0[index];
-        blackboard.values[var_b1d080df.attribute] = var_b1d080df.value;
+        stackvalue = blackboard.var_1119bda0[index];
+        blackboard.values[stackvalue.attribute] = stackvalue.value;
         arrayremoveindex(blackboard.var_1119bda0, index);
     }
 }

@@ -22,9 +22,9 @@ function private _checkvalue(archetype, var_b5da1cda, value) {
         case #"_interface_entity":
             break;
         case #"_interface_match":
-            var_f714a114 = attribute[#"values"];
+            possiblevalues = attribute[#"values"];
             /#
-                assert(!isarray(var_f714a114) || isinarray(var_f714a114, value), "<unknown string>" + value + "<unknown string>" + var_b5da1cda + "<unknown string>");
+                assert(!isarray(possiblevalues) || isinarray(possiblevalues, value), "<unknown string>" + value + "<unknown string>" + var_b5da1cda + "<unknown string>");
             #/
             break;
         case #"_interface_numeric":
@@ -180,11 +180,11 @@ function registerentityinterface(archetype, attribute, defaultvalue, callbackfun
 // Params 5, eflags: 0x1 linked
 // Checksum 0x889e916d, Offset: 0xb68
 // Size: 0x1f4
-function registermatchedinterface(archetype, attribute, defaultvalue, var_f714a114, callbackfunction) {
+function registermatchedinterface(archetype, attribute, defaultvalue, possiblevalues, callbackfunction) {
     /#
         ai_interface::_checkregistrationprerequisites(archetype, attribute, callbackfunction);
         /#
-            assert(!isdefined(var_f714a114) || isarray(var_f714a114), "<unknown string>");
+            assert(!isdefined(possiblevalues) || isarray(possiblevalues), "<unknown string>");
         #/
     #/
     ai_interface::_initializelevelinterface(archetype);
@@ -197,7 +197,7 @@ function registermatchedinterface(archetype, attribute, defaultvalue, var_f714a1
     level.var_bd2a10d0[archetype][attribute][#"callback"] = callbackfunction;
     level.var_bd2a10d0[archetype][attribute][#"default_value"] = defaultvalue;
     level.var_bd2a10d0[archetype][attribute][#"type"] = "_interface_match";
-    level.var_bd2a10d0[archetype][attribute][#"values"] = var_f714a114;
+    level.var_bd2a10d0[archetype][attribute][#"values"] = possiblevalues;
     /#
         ai_interface::_checkvalue(archetype, attribute, defaultvalue);
     #/

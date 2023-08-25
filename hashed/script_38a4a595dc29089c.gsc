@@ -41,7 +41,7 @@ function on_game_playing() {
             elevator.align = elevator;
         }
         var_ff30d7f = struct::get_array(elevator.target);
-        elevator.var_ba2a97bf = getnodearray(elevator.target, "targetname");
+        elevator.traversals = getnodearray(elevator.target, "targetname");
         elevator.gameobjects = [];
         foreach (interact in var_ff30d7f) {
             if (isdefined(interact.mdl_gameobject)) {
@@ -98,7 +98,7 @@ function on_game_playing() {
         waitframe(2);
         array::thread_all(elevator.doors, &open_door, "bottom");
         array::wait_any(elevator.doors, "movedone");
-        foreach (node in elevator.var_ba2a97bf) {
+        foreach (node in elevator.traversals) {
             if (node.script_noteworthy == "bottom") {
                 linktraversal(node);
             }
@@ -128,7 +128,7 @@ function function_65509998(activator) {
     activator gestures::function_56e00fbf("gestable_door_interact", undefined, 0);
     array::thread_all(gameobjects, &gameobjects::disable_object);
     array::thread_all(doors, &function_b1005820, elevator, var_6b437169.script_noteworthy);
-    foreach (node in elevator.var_ba2a97bf) {
+    foreach (node in elevator.traversals) {
         unlinktraversal(node);
     }
     array::wait_any(doors, "movedone");
@@ -143,7 +143,7 @@ function function_65509998(activator) {
     elevator stoploopsound(1);
     array::thread_all(doors, &open_door, var_6b437169.script_noteworthy);
     array::wait_any(doors, "movedone");
-    foreach (node in elevator.var_ba2a97bf) {
+    foreach (node in elevator.traversals) {
         if (node.script_noteworthy == var_6b437169.script_noteworthy) {
             linktraversal(node);
         }

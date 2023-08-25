@@ -262,8 +262,8 @@ function set_death_model(smodel, fdelay) {
 // Size: 0x84
 function aircraft_crash(point, dir) {
     self.crashing = 1;
-    if (isdefined(self.var_e9cd37ec)) {
-        while (isdefined(self.var_e9cd37ec)) {
+    if (isdefined(self.unloading)) {
+        while (isdefined(self.unloading)) {
             waitframe(1);
         }
     }
@@ -281,8 +281,8 @@ function aircraft_crash(point, dir) {
 function helicopter_crash(point, dir) {
     self.crashing = 1;
     self thread play_crashing_loop();
-    if (isdefined(self.var_e9cd37ec)) {
-        while (isdefined(self.var_e9cd37ec)) {
+    if (isdefined(self.unloading)) {
+        while (isdefined(self.unloading)) {
             waitframe(1);
         }
     }
@@ -655,8 +655,8 @@ function helicopter_crash_move(point, dir) {
 // Size: 0x6c
 function boat_crash(point, dir) {
     self.crashing = 1;
-    if (isdefined(self.var_e9cd37ec)) {
-        while (isdefined(self.var_e9cd37ec)) {
+    if (isdefined(self.unloading)) {
+        while (isdefined(self.unloading)) {
             waitframe(1);
         }
     }

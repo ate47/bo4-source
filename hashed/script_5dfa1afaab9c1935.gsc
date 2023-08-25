@@ -61,10 +61,10 @@ function main() {
     self.a.var_2b93b565 = gettime();
     self.a.var_b3a03f9a = 0;
     self.a.var_2c477e18 = 0;
-    self.var_a2386042 = 45;
-    self.var_d58f282c = -45;
-    self.var_e0154d58 = 45;
-    self.var_8552b534 = -45;
+    self.rightaimlimit = 45;
+    self.leftaimlimit = -45;
+    self.upaimlimit = 45;
+    self.downaimlimit = -45;
     self.walk = 0;
     self.sprint = 0;
     self.a.postscriptfunc = undefined;
@@ -127,29 +127,29 @@ function trackvelocity() {
 // Size: 0x400
 function checkapproachangles(var_9089e49a) {
     /#
-        var_fadc48ca[1] = 45;
-        var_fadc48ca[2] = 0;
-        var_fadc48ca[3] = -45;
-        var_fadc48ca[4] = 90;
-        var_fadc48ca[6] = -90;
-        var_fadc48ca[7] = 135;
-        var_fadc48ca[8] = 180;
-        var_fadc48ca[9] = -135;
+        idealtransangles[1] = 45;
+        idealtransangles[2] = 0;
+        idealtransangles[3] = -45;
+        idealtransangles[4] = 90;
+        idealtransangles[6] = -90;
+        idealtransangles[7] = 135;
+        idealtransangles[8] = 180;
+        idealtransangles[9] = -135;
         waitframe(1);
         for (i = 1; i <= 9; i++) {
             for (j = 0; j < var_9089e49a.size; j++) {
                 trans = var_9089e49a[j];
-                var_2647264e = 0;
+                idealadd = 0;
                 if (trans == "<unknown string>" || trans == "<unknown string>") {
-                    var_2647264e = 90;
+                    idealadd = 90;
                 } else if (trans == "<unknown string>" || trans == "<unknown string>") {
-                    var_2647264e = -90;
+                    idealadd = -90;
                 }
                 if (isdefined(anim.var_efe5d7c1[trans][i])) {
-                    var_2d1fd32d = angleclamp180(var_fadc48ca[i] + var_2647264e);
-                    var_ba149c17 = angleclamp180(anim.var_efe5d7c1[trans][i]);
-                    if (absangleclamp180(var_ba149c17 - var_2d1fd32d) > 7) {
-                        println("<unknown string>" + trans + "<unknown string>" + i + "<unknown string>" + var_ba149c17 + "<unknown string>" + var_2d1fd32d + "<unknown string>");
+                    correctangle = angleclamp180(idealtransangles[i] + idealadd);
+                    actualangle = angleclamp180(anim.var_efe5d7c1[trans][i]);
+                    if (absangleclamp180(actualangle - correctangle) > 7) {
+                        println("<unknown string>" + trans + "<unknown string>" + i + "<unknown string>" + actualangle + "<unknown string>" + correctangle + "<unknown string>");
                     }
                 }
             }
@@ -157,17 +157,17 @@ function checkapproachangles(var_9089e49a) {
         for (i = 1; i <= 9; i++) {
             for (j = 0; j < var_9089e49a.size; j++) {
                 trans = var_9089e49a[j];
-                var_2647264e = 0;
+                idealadd = 0;
                 if (trans == "<unknown string>" || trans == "<unknown string>") {
-                    var_2647264e = 90;
+                    idealadd = 90;
                 } else if (trans == "<unknown string>" || trans == "<unknown string>") {
-                    var_2647264e = -90;
+                    idealadd = -90;
                 }
                 if (isdefined(anim.var_1604aa3e[trans][i])) {
-                    var_2d1fd32d = angleclamp180(-1 * (var_fadc48ca[i] + var_2647264e + 180));
-                    var_ba149c17 = angleclamp180(anim.var_1604aa3e[trans][i]);
-                    if (absangleclamp180(var_ba149c17 - var_2d1fd32d) > 7) {
-                        println("<unknown string>" + trans + "<unknown string>" + i + "<unknown string>" + var_ba149c17 + "<unknown string>" + var_2d1fd32d + "<unknown string>");
+                    correctangle = angleclamp180(-1 * (idealtransangles[i] + idealadd + 180));
+                    actualangle = angleclamp180(anim.var_1604aa3e[trans][i]);
+                    if (absangleclamp180(actualangle - correctangle) > 7) {
+                        println("<unknown string>" + trans + "<unknown string>" + i + "<unknown string>" + actualangle + "<unknown string>" + correctangle + "<unknown string>");
                     }
                 }
             }

@@ -2086,7 +2086,7 @@ function tank_death_think(hardpointname) {
     self.dead = 1;
     self laseroff();
     self function_d4c687c9();
-    var_afa078f4 = !isdefined(self.abandoned) || !self.abandoned;
+    not_abandoned = !isdefined(self.abandoned) || !self.abandoned;
     if (isdefined(self.controlled) && self.controlled && isdefined(self.owner)) {
         self.owner sendkillstreakdamageevent(600);
         self.owner remote_weapons::destroyremotehud();
@@ -2104,7 +2104,7 @@ function tank_death_think(hardpointname) {
     if (isdefined(self.owner)) {
         self.owner clientfield::set_player_uimodel("hudItems.tankState", 0);
     }
-    if (var_afa078f4) {
+    if (not_abandoned) {
         util::wait_network_frame();
         if (!isdefined(self)) {
             if (isdefined(killstreak_id)) {
@@ -2135,7 +2135,7 @@ function tank_death_think(hardpointname) {
     if (isdefined(self.owner)) {
         self.owner ability_player::function_f2250880(level.var_66e94ad5, var_4dd90b81);
     }
-    if (var_afa078f4) {
+    if (not_abandoned) {
         self waittilltimeout(2, #"remote_weapon_end", #"death");
         if (!isdefined(self)) {
             if (isdefined(killstreak_id)) {

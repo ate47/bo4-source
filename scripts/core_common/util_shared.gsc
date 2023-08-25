@@ -336,7 +336,7 @@ function plot_points(plotpoints, r, g, b, timer) {
 function draw_arrow_time(start, end, color, timer) {
     /#
         level endon(#"newpath");
-        var_4437f85b = [];
+        pts = [];
         angles = vectortoangles(start - end);
         right = anglestoright(angles);
         forward = anglestoforward(angles);
@@ -366,7 +366,7 @@ function draw_arrow_time(start, end, color, timer) {
 function draw_arrow(start, end, color) {
     /#
         level endon(#"newpath");
-        var_4437f85b = [];
+        pts = [];
         angles = vectortoangles(start - end);
         right = anglestoright(angles);
         forward = anglestoforward(angles);
@@ -3983,15 +3983,15 @@ function function_8e89351(player) {
 // Params 1, eflags: 0x0
 // Checksum 0xb26a013e, Offset: 0xb9d0
 // Size: 0xe0
-function function_517954bb(team = #"any") {
+function get_bot_players(team = #"any") {
     players = get_players(team);
-    var_d913e002 = [];
+    botplayers = [];
     foreach (player in players) {
         if (isbot(player)) {
-            var_d913e002[var_d913e002.size] = player;
+            botplayers[botplayers.size] = player;
         }
     }
-    return var_d913e002;
+    return botplayers;
 }
 
 // Namespace util/util_shared

@@ -433,7 +433,7 @@ function devgui_attachment_cycling_update() {
         currentweapon = self getcurrentweapon();
         rootweapon = currentweapon.rootweapon;
         supportedattachments = currentweapon.supportedattachments;
-        var_a47fd826 = [];
+        textcolors = [];
         attachments = [];
         originalattachments = [];
         for (i = 0; i < 6; i++) {

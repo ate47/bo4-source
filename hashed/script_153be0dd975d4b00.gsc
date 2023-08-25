@@ -168,7 +168,7 @@ function function_ea998c9(var_458e12fe = 0, var_1798e06d = 0) {
         while (!isdefined(self.prompt_and_visibility_func)) {
             waitframe(1);
         }
-        var_9fe17f24 = self.prompt_and_visibility_func;
+        visibility_func = self.prompt_and_visibility_func;
         self.prompt_and_visibility_func = &function_504d501c;
     } else {
         self triggerenable(0);
@@ -181,7 +181,7 @@ function function_ea998c9(var_458e12fe = 0, var_1798e06d = 0) {
         s_switch.scene_ents[#"prop 1"] clientfield::set("trap_switch_green", 1);
     }
     if (var_458e12fe) {
-        self.prompt_and_visibility_func = var_9fe17f24;
+        self.prompt_and_visibility_func = visibility_func;
     } else {
         self triggerenable(1);
     }

@@ -129,19 +129,19 @@ function updatedebuginfo() {
 function updatedebuginfointernal() {
     /#
         if (isdefined(anim.var_43bd01a) && anim.var_43bd01a == self) {
-            var_42f56fcb = 1;
+            doinfo = 1;
         } else {
-            var_42f56fcb = getdvarint(#"ai_debuganimscript", 0) > 0;
-            if (var_42f56fcb) {
-                var_9ac29367 = getdvarint(#"ai_debugentindex", 0);
-                if (var_9ac29367 > -1 && var_9ac29367 != self getentitynumber()) {
-                    var_42f56fcb = 0;
+            doinfo = getdvarint(#"ai_debuganimscript", 0) > 0;
+            if (doinfo) {
+                ai_entnum = getdvarint(#"ai_debugentindex", 0);
+                if (ai_entnum > -1 && ai_entnum != self getentitynumber()) {
+                    doinfo = 0;
                 }
             }
-            if (!self.debuginfo.enabled && var_42f56fcb) {
+            if (!self.debuginfo.enabled && doinfo) {
                 self.debuginfo.var_3d9450a5 = 1;
             }
-            self.debuginfo.enabled = var_42f56fcb;
+            self.debuginfo.enabled = doinfo;
         }
     #/
 }
@@ -160,8 +160,8 @@ function drawdebugenttext(text, ent, color, channel) {
                 ent.var_1594c4f = 0;
                 ent.var_97715acd = gettime();
             }
-            var_dbf79cdd = vectorscale(vectorscale((0, 0, -1), 10), ent.var_1594c4f);
-            print3d(self.origin + vectorscale((0, 0, 1), 70) + var_dbf79cdd, text, color);
+            indentlevel = vectorscale(vectorscale((0, 0, -1), 10), ent.var_1594c4f);
+            print3d(self.origin + vectorscale((0, 0, 1), 70) + indentlevel, text, color);
             ent.var_1594c4f++;
         } else {
             recordenttext(text, ent, color, channel);
@@ -178,8 +178,8 @@ function debugpushstate(statename, var_baab7b74) {
         if (!getdvarint(#"ai_debuganimscript", 0)) {
             return;
         }
-        var_9ac29367 = getdvarint(#"ai_debugentindex", 0);
-        if (var_9ac29367 > -1 && var_9ac29367 != self getentitynumber()) {
+        ai_entnum = getdvarint(#"ai_debugentindex", 0);
+        if (ai_entnum > -1 && ai_entnum != self getentitynumber()) {
             return;
         }
         /#
@@ -210,8 +210,8 @@ function debugaddstateinfo(statename, var_baab7b74) {
         if (!getdvarint(#"ai_debuganimscript", 0)) {
             return;
         }
-        var_9ac29367 = getdvarint(#"ai_debugentindex", 0);
-        if (var_9ac29367 > -1 && var_9ac29367 != self getentitynumber()) {
+        ai_entnum = getdvarint(#"ai_debugentindex", 0);
+        if (ai_entnum > -1 && ai_entnum != self getentitynumber()) {
             return;
         }
         /#
@@ -231,14 +231,14 @@ function debugaddstateinfo(statename, var_baab7b74) {
                 }
             }
         } else if (self.debuginfo.states.size > 0) {
-            var_2061e237 = self.debuginfo.states.size - 1;
+            lastindex = self.debuginfo.states.size - 1;
             /#
-                assert(isdefined(self.debuginfo.states[var_2061e237]));
+                assert(isdefined(self.debuginfo.states[lastindex]));
             #/
-            if (!isdefined(self.debuginfo.states[var_2061e237].var_baab7b74)) {
-                self.debuginfo.states[var_2061e237].var_baab7b74 = "<unknown string>";
+            if (!isdefined(self.debuginfo.states[lastindex].var_baab7b74)) {
+                self.debuginfo.states[lastindex].var_baab7b74 = "<unknown string>";
             }
-            self.debuginfo.states[var_2061e237].var_baab7b74 = self.debuginfo.states[var_2061e237].var_baab7b74 + var_baab7b74 + "<unknown string>";
+            self.debuginfo.states[lastindex].var_baab7b74 = self.debuginfo.states[lastindex].var_baab7b74 + var_baab7b74 + "<unknown string>";
         }
     #/
 }
@@ -252,11 +252,11 @@ function debugpopstate(statename, var_36fb59b3) {
         if (!getdvarint(#"ai_debuganimscript", 0) || self.debuginfo.states.size <= 0) {
             return;
         }
-        var_9ac29367 = getdvarint(#"ai_debugentindex", 0);
+        ai_entnum = getdvarint(#"ai_debugentindex", 0);
         if (!isdefined(self) || !isalive(self)) {
             return;
         }
-        if (var_9ac29367 > -1 && var_9ac29367 != self getentitynumber()) {
+        if (ai_entnum > -1 && ai_entnum != self getentitynumber()) {
             return;
         }
         /#
@@ -348,18 +348,18 @@ function indent(depth) {
 // Size: 0xee
 function debugdrawweightedpoints(entity, points, weights) {
     /#
-        var_1bb42b2b = 0;
-        var_6433ca11 = 0;
+        lowestvalue = 0;
+        highestvalue = 0;
         for (index = 0; index < points.size; index++) {
-            if (weights[index] < var_1bb42b2b) {
-                var_1bb42b2b = weights[index];
+            if (weights[index] < lowestvalue) {
+                lowestvalue = weights[index];
             }
-            if (weights[index] > var_6433ca11) {
-                var_6433ca11 = weights[index];
+            if (weights[index] > highestvalue) {
+                highestvalue = weights[index];
             }
         }
         for (index = 0; index < points.size; index++) {
-            debugdrawweightedpoint(entity, points[index], weights[index], var_1bb42b2b, var_6433ca11);
+            debugdrawweightedpoint(entity, points[index], weights[index], lowestvalue, highestvalue);
         }
     #/
 }
@@ -368,20 +368,20 @@ function debugdrawweightedpoints(entity, points, weights) {
 // Params 5, eflags: 0x0
 // Checksum 0x4010fe2c, Offset: 0x11e8
 // Size: 0x15c
-function debugdrawweightedpoint(entity, point, weight, var_1bb42b2b, var_6433ca11) {
+function debugdrawweightedpoint(entity, point, weight, lowestvalue, highestvalue) {
     /#
-        var_7c9d6d04 = var_6433ca11 - var_1bb42b2b;
-        var_97d344be = var_7c9d6d04 / 2;
-        var_3b910b24 = var_1bb42b2b + var_7c9d6d04 / 2;
-        if (var_97d344be == 0) {
-            var_97d344be = 1;
+        deltavalue = highestvalue - lowestvalue;
+        halfdeltavalue = deltavalue / 2;
+        midvalue = lowestvalue + deltavalue / 2;
+        if (halfdeltavalue == 0) {
+            halfdeltavalue = 1;
         }
-        if (weight <= var_3b910b24) {
-            var_9cac7e8d = 1 - abs((weight - var_1bb42b2b) / var_97d344be);
-            recordcircle(point, 2, (var_9cac7e8d, 0, 0), "<unknown string>", entity);
+        if (weight <= midvalue) {
+            redcolor = 1 - abs((weight - lowestvalue) / halfdeltavalue);
+            recordcircle(point, 2, (redcolor, 0, 0), "<unknown string>", entity);
         } else {
-            var_71af081d = 1 - abs((var_6433ca11 - weight) / var_97d344be);
-            recordcircle(point, 2, (0, var_71af081d, 0), "<unknown string>", entity);
+            greencolor = 1 - abs((highestvalue - weight) / halfdeltavalue);
+            recordcircle(point, 2, (0, greencolor, 0), "<unknown string>", entity);
         }
     #/
 }

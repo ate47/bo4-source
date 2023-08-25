@@ -30,13 +30,13 @@ function preload() {
     callback::on_disconnect(&on_disconnect);
     a_s_cabinets = struct::get_array("cabinet");
     a_s_cabinets = array::randomize(a_s_cabinets);
-    level.var_74170866.var_22355173 = array::pop_front(a_s_cabinets);
-    level.var_74170866.var_22355173.a_e_doors = getentarray(level.var_74170866.var_22355173.target, "targetname");
+    level.var_74170866.s_cabinet = array::pop_front(a_s_cabinets);
+    level.var_74170866.s_cabinet.a_e_doors = getentarray(level.var_74170866.s_cabinet.target, "targetname");
     a_s_fireplaces = struct::get_array("fireplace_canister");
     a_s_fireplaces = array::randomize(a_s_fireplaces);
     level.var_74170866.s_fireplace = array::pop_front(a_s_fireplaces);
-    var_fece56ee = getentarray(level.var_74170866.s_fireplace.target, "targetname");
-    foreach (part in var_fece56ee) {
+    a_parts = getentarray(level.var_74170866.s_fireplace.target, "targetname");
+    foreach (part in a_parts) {
         if (part.classname == "trigger_damage_new") {
             level.var_74170866.s_fireplace.var_7126b6eb = part;
         } else if (part.classname == "info_volume") {
@@ -47,8 +47,8 @@ function preload() {
     level.var_74170866.s_fireplace.var_7944be4a = 0;
     level.var_74170866.s_fireplace.var_7126b6eb triggerenable(0);
     foreach (s_fireplace in a_s_fireplaces) {
-        var_fece56ee = getentarray(s_fireplace.target, "targetname");
-        array::run_all(var_fece56ee, &delete);
+        a_parts = getentarray(s_fireplace.target, "targetname");
+        array::run_all(a_parts, &delete);
     }
     clientfield::register("scriptmover", "" + #"hash_2184dd4e9090521f", 20000, 1, "int");
     namespace_bd74bbd2::register(#"sc_mk2z_1", 20000, "sc_mk2z_1", &function_a66f0de2, &function_17f3e9e2);
@@ -117,12 +117,12 @@ function private function_b60df00d() {
         iprintlnbold("<unknown string>");
     #/
     /#
-        iprintlnbold("<unknown string>" + level.var_74170866.var_22355173.script_string + "<unknown string>");
+        iprintlnbold("<unknown string>" + level.var_74170866.s_cabinet.script_string + "<unknown string>");
     #/
     level.var_74170866.n_step = 1;
-    var_22355173 = level.var_74170866.var_22355173;
-    e_canister = util::spawn_model(var_22355173.model, var_22355173.origin, var_22355173.angles);
-    var_22355173.e_canister = e_canister;
+    s_cabinet = level.var_74170866.s_cabinet;
+    e_canister = util::spawn_model(s_cabinet.model, s_cabinet.origin, s_cabinet.angles);
+    s_cabinet.e_canister = e_canister;
     level thread run_step_1();
 }
 
@@ -132,28 +132,28 @@ function private function_b60df00d() {
 // Size: 0x364
 function private run_step_1() {
     level endon(#"end_game", #"insanity_mode_triggered");
-    if (isdefined(level.var_74170866.var_22355173.a_e_doors[0])) {
-        exploder::exploder("fxexp_mk2_Z_smoke_orange_emit_closet_" + level.var_74170866.var_22355173.script_string);
+    if (isdefined(level.var_74170866.s_cabinet.a_e_doors[0])) {
+        exploder::exploder("fxexp_mk2_Z_smoke_orange_emit_closet_" + level.var_74170866.s_cabinet.script_string);
         pixbeginevent(#"hash_3aea5406d9a5bdcf");
-        foreach (e_door in level.var_74170866.var_22355173.a_e_doors) {
+        foreach (e_door in level.var_74170866.s_cabinet.a_e_doors) {
             e_door setcandamage(1);
             e_door val::set("quest_mk2z", "allowDeath", 0);
             e_door thread function_4b4ede();
         }
-        level.var_74170866.var_22355173 waittill(#"burn_cabinet");
+        level.var_74170866.s_cabinet waittill(#"burn_cabinet");
         pixendevent();
-        exploder::stop_exploder("fxexp_mk2_Z_smoke_orange_emit_closet_" + level.var_74170866.var_22355173.script_string);
-        exploder::exploder("fxexp_mk2_Z_fire_closet_door_" + level.var_74170866.var_22355173.script_string);
+        exploder::stop_exploder("fxexp_mk2_Z_smoke_orange_emit_closet_" + level.var_74170866.s_cabinet.script_string);
+        exploder::exploder("fxexp_mk2_Z_fire_closet_door_" + level.var_74170866.s_cabinet.script_string);
         wait(1);
-        array::run_all(level.var_74170866.var_22355173.a_e_doors, &delete);
+        array::run_all(level.var_74170866.s_cabinet.a_e_doors, &delete);
         wait(0.5);
-        exploder::stop_exploder("fxexp_mk2_Z_fire_closet_door_" + level.var_74170866.var_22355173.script_string);
-        var_22355173 = level.var_74170866.var_22355173;
+        exploder::stop_exploder("fxexp_mk2_Z_fire_closet_door_" + level.var_74170866.s_cabinet.script_string);
+        s_cabinet = level.var_74170866.s_cabinet;
     }
-    s_unitrigger = level.var_74170866.var_22355173.e_canister zm_item_pickup::create_item_pickup(&function_9d66ea6f, &function_f6048ee, &function_5b4f9f76);
+    s_unitrigger = level.var_74170866.s_cabinet.e_canister zm_item_pickup::create_item_pickup(&function_9d66ea6f, &function_f6048ee, &function_5b4f9f76);
     zm_unitrigger::unitrigger_force_per_player_triggers(s_unitrigger);
     waitframe(1);
-    zm_unitrigger::reregister_unitrigger_as_dynamic(level.var_74170866.var_22355173.e_canister.s_unitrigger);
+    zm_unitrigger::reregister_unitrigger_as_dynamic(level.var_74170866.s_cabinet.e_canister.s_unitrigger);
 }
 
 // Namespace namespace_90b0490e/namespace_90b0490e
@@ -166,8 +166,8 @@ function function_4b4ede() {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (s_notify zm_hms_util::function_69320b44("zm_aat_plasmatic_burst")) {
-            level.var_74170866.var_22355173 notify(#"burn_cabinet");
-            foreach (e_door in level.var_74170866.var_22355173.a_e_doors) {
+            level.var_74170866.s_cabinet notify(#"burn_cabinet");
+            foreach (e_door in level.var_74170866.s_cabinet.a_e_doors) {
                 e_door setcandamage(0);
                 e_door notify(#"burn_cabinet");
             }
@@ -505,10 +505,10 @@ function private restart_quest(var_e19b7aed = 1) {
 // Size: 0x114
 function function_cbeb9a33() {
     level waittill(#"insanity_mode_triggered");
-    exploder::stop_exploder("fxexp_mk2_Z_smoke_orange_emit_closet_" + level.var_74170866.var_22355173.script_string);
-    if (isdefined(level.var_74170866.var_22355173.e_canister) && isdefined(level.var_74170866.var_22355173.e_canister.s_unitrigger)) {
-        zm_unitrigger::unregister_unitrigger(level.var_74170866.var_22355173.e_canister.s_unitrigger);
-        level.var_74170866.var_22355173.e_canister delete();
+    exploder::stop_exploder("fxexp_mk2_Z_smoke_orange_emit_closet_" + level.var_74170866.s_cabinet.script_string);
+    if (isdefined(level.var_74170866.s_cabinet.e_canister) && isdefined(level.var_74170866.s_cabinet.e_canister.s_unitrigger)) {
+        zm_unitrigger::unregister_unitrigger(level.var_74170866.s_cabinet.e_canister.s_unitrigger);
+        level.var_74170866.s_cabinet.e_canister delete();
     }
     restart_quest(0);
 }

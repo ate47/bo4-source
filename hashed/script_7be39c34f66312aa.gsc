@@ -22,9 +22,9 @@ function init() {
 // Size: 0xe4
 function get_location_from_chest_index(chest_index) {
     if (isdefined(chest_index) && isdefined(level.chests) && isdefined(level.chests[chest_index]) && isdefined(level.open_chest_location)) {
-        var_4a3ad9d3 = level.chests[chest_index].script_noteworthy;
+        chest_loc = level.chests[chest_index].script_noteworthy;
         for (i = 0; i < level.open_chest_location.size; i++) {
-            if (level.open_chest_location[i] == var_4a3ad9d3) {
+            if (level.open_chest_location[i] == chest_loc) {
                 return i;
             }
         }
@@ -47,16 +47,16 @@ function magic_box_update() {
     if (zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 0) {
         return;
     }
-    var_a7008846 = "no_power";
+    box_mode = "no_power";
     while (1) {
         if ((!level flag::get("power_on") || level flag::get("moving_chest_now")) && level.zombie_vars[#"zombie_powerup_fire_sale_on"] === 0) {
-            var_a7008846 = "no_power";
+            box_mode = "no_power";
         } else if (level.zombie_vars[#"zombie_powerup_fire_sale_on"] === 1) {
-            var_a7008846 = "fire_sale";
+            box_mode = "fire_sale";
         } else {
-            var_a7008846 = "box_available";
+            box_mode = "box_available";
         }
-        switch (var_a7008846) {
+        switch (box_mode) {
         case #"no_power":
             util::setclientsysstate("box_indicator", level.var_ce7f71ea);
             while (!level flag::get("power_on") && level.zombie_vars[#"zombie_powerup_fire_sale_on"] == 0) {

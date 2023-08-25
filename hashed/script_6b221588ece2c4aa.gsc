@@ -121,13 +121,13 @@ function createqrdronewatcher(watcher) {
 // Checksum 0x7eeb86ea, Offset: 0x708
 // Size: 0xb0
 function getspikelauncheractivespikecount(watcher) {
-    var_10deeef2 = 0;
+    currentitemcount = 0;
     foreach (obj in watcher.objectarray) {
         if (isdefined(obj) && obj.item !== watcher.weapon) {
-            var_10deeef2++;
+            currentitemcount++;
         }
     }
-    return var_10deeef2;
+    return currentitemcount;
 }
 
 // Namespace weaponobjects/namespace_4c668920
@@ -136,16 +136,16 @@ function getspikelauncheractivespikecount(watcher) {
 // Size: 0x10e
 function watchspikelauncheritemcountchanged(watcher) {
     self endon(#"death");
-    var_328f5bc4 = undefined;
+    lastitemcount = undefined;
     while (1) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         weapon = waitresult.weapon;
         while (weapon.name == #"spike_launcher") {
-            var_10deeef2 = getspikelauncheractivespikecount(watcher);
-            if (var_10deeef2 !== var_328f5bc4) {
-                self setcontrolleruimodelvalue("spikeLauncherCounter.spikesReady", var_10deeef2);
-                var_328f5bc4 = var_10deeef2;
+            currentitemcount = getspikelauncheractivespikecount(watcher);
+            if (currentitemcount !== lastitemcount) {
+                self setcontrolleruimodelvalue("spikeLauncherCounter.spikesReady", currentitemcount);
+                lastitemcount = currentitemcount;
             }
             wait(0.1);
             weapon = self getcurrentweapon();
@@ -158,8 +158,8 @@ function watchspikelauncheritemcountchanged(watcher) {
 // Checksum 0x2ea3f1be, Offset: 0x8d8
 // Size: 0x84
 function spikesdetonating(watcher) {
-    var_ed2f4efe = getspikelauncheractivespikecount(watcher);
-    if (var_ed2f4efe > 0) {
+    spikecount = getspikelauncheractivespikecount(watcher);
+    if (spikecount > 0) {
         self setcontrolleruimodelvalue("spikeLauncherCounter.blasting", 1);
         wait(2);
         self setcontrolleruimodelvalue("spikeLauncherCounter.blasting", 0);
@@ -298,9 +298,9 @@ function function_e98cee52(player, station) {
 // Size: 0xb8
 function function_61bdb626(weapon) {
     player = self;
-    var_d54bce7 = weapon.clipsize;
+    new_ammo = weapon.clipsize;
     stockammo = player getweaponammostock(weapon);
-    player setweaponammostock(weapon, int(stockammo + var_d54bce7));
+    player setweaponammostock(weapon, int(stockammo + new_ammo));
     newammo = player getweaponammostock(weapon);
     return newammo > stockammo;
 }
@@ -384,13 +384,13 @@ function onspawncrossbowbolt_internal(watcher, player) {
     player endon(#"disconnect");
     self endon(#"death");
     wait(0.25);
-    var_c53b5b70 = self getlinkedent();
-    if (!isdefined(var_c53b5b70) || !isvehicle(var_c53b5b70)) {
+    linkedent = self getlinkedent();
+    if (!isdefined(linkedent) || !isvehicle(linkedent)) {
         self.takedamage = 0;
     } else {
         self.takedamage = 1;
-        if (isvehicle(var_c53b5b70)) {
-            self thread dieonentitydeath(var_c53b5b70, player);
+        if (isvehicle(linkedent)) {
+            self thread dieonentitydeath(linkedent, player);
         }
     }
 }
@@ -428,8 +428,8 @@ function onspawncrossbowboltimpact_internal(s_watcher, e_player) {
 function dieonentitydeath(entity, player) {
     player endon(#"disconnect");
     self endon(#"death");
-    var_9a9f4be2 = entity.dead === 1 || isdefined(entity.health) && entity.health < 0;
-    if (!var_9a9f4be2) {
+    alreadydead = entity.dead === 1 || isdefined(entity.health) && entity.health < 0;
+    if (!alreadydead) {
         entity waittill(#"death");
     }
     self notify(#"death");

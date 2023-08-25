@@ -74,8 +74,8 @@ function function_5d400be9() {
 // Size: 0x7c
 function function_4235c686(player) {
     height = getwaterheight(player.origin);
-    var_f0ae12b7 = player.origin[2];
-    depth = height - var_f0ae12b7;
+    player_z = player.origin[2];
+    depth = height - player_z;
     var_101b13f6 = depth > 50;
     return var_101b13f6;
 }

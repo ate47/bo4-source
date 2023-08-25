@@ -39,40 +39,40 @@ function notfunc(b_value) {
 // Params 2, eflags: 0x0
 // Checksum 0x2b4caad2, Offset: 0x178
 // Size: 0x1e
-function lessthan(var_8b1a2ec6, var_d2073c9f) {
-    return var_8b1a2ec6 < var_d2073c9f;
+function lessthan(var_a, var_b) {
+    return var_a < var_b;
 }
 
 // Namespace flowgraph_logic/flowgraph_shared
 // Params 2, eflags: 0x0
 // Checksum 0x3b1700ee, Offset: 0x1a0
 // Size: 0x1e
-function function_b457969e(var_8b1a2ec6, var_d2073c9f) {
-    return var_8b1a2ec6 <= var_d2073c9f;
+function function_b457969e(var_a, var_b) {
+    return var_a <= var_b;
 }
 
 // Namespace flowgraph_logic/flowgraph_shared
 // Params 2, eflags: 0x0
 // Checksum 0x90703674, Offset: 0x1c8
 // Size: 0x1e
-function greaterthan(var_8b1a2ec6, var_d2073c9f) {
-    return var_8b1a2ec6 > var_d2073c9f;
+function greaterthan(var_a, var_b) {
+    return var_a > var_b;
 }
 
 // Namespace flowgraph_logic/flowgraph_shared
 // Params 2, eflags: 0x0
 // Checksum 0xdb786be8, Offset: 0x1f0
 // Size: 0x1e
-function function_3743e19e(var_8b1a2ec6, var_d2073c9f) {
-    return var_8b1a2ec6 >= var_d2073c9f;
+function function_3743e19e(var_a, var_b) {
+    return var_a >= var_b;
 }
 
 // Namespace flowgraph_logic/flowgraph_shared
 // Params 2, eflags: 0x0
 // Checksum 0xff19725a, Offset: 0x218
 // Size: 0x1e
-function equal(var_8b1a2ec6, var_d2073c9f) {
-    return var_8b1a2ec6 == var_d2073c9f;
+function equal(var_a, var_b) {
+    return var_a == var_b;
 }
 
 // Namespace flowgraph_logic/flowgraph_shared
@@ -379,32 +379,32 @@ function randomunitvector() {
 // Params 2, eflags: 0x0
 // Checksum 0x780e360f, Offset: 0x1970
 // Size: 0x1e
-function multiply(var_d895ca40, var_3029f96f) {
-    return var_d895ca40 * var_d895ca40;
+function multiply(var_1, var_2) {
+    return var_1 * var_1;
 }
 
 // Namespace flowgraph_math/flowgraph_shared
 // Params 2, eflags: 0x0
 // Checksum 0x9a70ee6, Offset: 0x1998
 // Size: 0x1e
-function divide(var_d895ca40, var_3029f96f) {
-    return var_d895ca40 / var_3029f96f;
+function divide(var_1, var_2) {
+    return var_1 / var_2;
 }
 
 // Namespace flowgraph_math/flowgraph_shared
 // Params 2, eflags: 0x0
 // Checksum 0xfa678c11, Offset: 0x19c0
 // Size: 0x1e
-function add(var_d895ca40, var_3029f96f) {
-    return var_d895ca40 + var_3029f96f;
+function add(var_1, var_2) {
+    return var_1 + var_2;
 }
 
 // Namespace flowgraph_math/flowgraph_shared
 // Params 2, eflags: 0x0
 // Checksum 0xdb786a7c, Offset: 0x19e8
 // Size: 0x1e
-function subtract(var_d895ca40, var_3029f96f) {
-    return var_d895ca40 - var_3029f96f;
+function subtract(var_1, var_2) {
+    return var_1 - var_2;
 }
 
 // Namespace flowgraph_math/flowgraph_shared

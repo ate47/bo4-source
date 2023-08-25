@@ -8,7 +8,7 @@
 #include scripts/mp_common/item_inventory.gsc;
 #include scripts/mp_common/load.gsc;
 #include scripts/wz_common/wz_loadouts.gsc;
-#include script_278d5613f19f44e4;
+#include scripts/wz/wz_escape_alt_ffotd.gsc;
 #include scripts/mp_common/item_world.gsc;
 #include script_71e26f08f03b7a7a;
 #include scripts/core_common/flagsys_shared.gsc;

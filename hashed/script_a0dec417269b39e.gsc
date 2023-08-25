@@ -72,7 +72,7 @@ function private function_6bf7d04f(var_c766fbe6) {
     player_count = var_aced072d.size;
     if (level.round_number == 24) {
         /#
-            assert(level.var_d77a6967.name == #"hash_7820bb42c215c64b");
+            assert(level.var_d77a6967.name == #"unhealthy");
         #/
         if (player_count == 1) {
             var_c766fbe6[#"blight_father"] = 2;

@@ -114,20 +114,20 @@ function private _planexpandaction(planner, action) {
     /#
         assert(isarray(planner.plan));
     #/
-    var_76ec5906 = plannerutility::getplanneractionfunctions(action.api);
-    var_a59b2ff9 = spawnstruct();
-    var_a59b2ff9.name = action.api;
-    if (isdefined(var_76ec5906[#"parameterize"])) {
+    actionfuncs = plannerutility::getplanneractionfunctions(action.api);
+    actioninfo = spawnstruct();
+    actioninfo.name = action.api;
+    if (isdefined(actionfuncs[#"parameterize"])) {
         _blackboardsreadwritemode(planner);
-        var_a59b2ff9.params = [[ var_76ec5906[#"parameterize"] ]](planner, action.constants);
+        actioninfo.params = [[ actionfuncs[#"parameterize"] ]](planner, action.constants);
         /#
-            assert(isstruct(var_a59b2ff9.params), "<unknown string>" + action.api + "<unknown string>");
+            assert(isstruct(actioninfo.params), "<unknown string>" + action.api + "<unknown string>");
         #/
         _blackboardsreadmode(planner);
     } else {
-        var_a59b2ff9.params = spawnstruct();
+        actioninfo.params = spawnstruct();
     }
-    planner.plan[planner.plan.size] = var_a59b2ff9;
+    planner.plan[planner.plan.size] = actioninfo;
     planner.api = undefined;
     aiprofile_endentry();
     pixendevent();
@@ -152,8 +152,8 @@ function private _planexpandpostcondition(planner, postcondition) {
         assert(postcondition.type == "<unknown string>");
     #/
     _blackboardsreadwritemode(planner);
-    var_56c45b85 = plannerutility::getplannerapifunction(postcondition.api);
-    [[ var_56c45b85 ]](planner, postcondition.constants);
+    postconditionfunc = plannerutility::getplannerapifunction(postcondition.api);
+    [[ postconditionfunc ]](planner, postcondition.constants);
     _blackboardsreadmode(planner);
     planner.api = undefined;
     aiprofile_endentry();
@@ -179,8 +179,8 @@ function private _planexpandprecondition(planner, precondition) {
         assert(precondition.type == "<unknown string>");
     #/
     _blackboardsreadmode(planner);
-    var_5dfe71df = plannerutility::getplannerapifunction(precondition.api);
-    result = [[ var_5dfe71df ]](planner, precondition.constants);
+    preconditionfunc = plannerutility::getplannerapifunction(precondition.api);
+    result = [[ preconditionfunc ]](planner, precondition.constants);
     planner.api = undefined;
     aiprofile_endentry();
     pixendevent();
@@ -191,11 +191,11 @@ function private _planexpandprecondition(planner, precondition) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xbeeb951f, Offset: 0xad8
 // Size: 0x64
-function private _planfindnextsibling(planner, var_282d21ef, var_472c6140) {
+function private _planfindnextsibling(planner, parentnodeentry, var_472c6140) {
     /#
         assert(isstruct(planner));
     #/
-    return var_282d21ef.node.children[var_472c6140 + 1];
+    return parentnodeentry.node.children[var_472c6140 + 1];
 }
 
 // Namespace planner/planner
@@ -220,8 +220,8 @@ function private _planstackpeeknode(planner) {
     /#
         assert(planner.var_35cec6a8.size > 0);
     #/
-    var_2905a911 = planner.var_35cec6a8[planner.var_35cec6a8.size - 1];
-    return var_2905a911;
+    nodeentry = planner.var_35cec6a8[planner.var_35cec6a8.size - 1];
+    return nodeentry;
 }
 
 // Namespace planner/planner
@@ -235,9 +235,9 @@ function private _planstackpopnode(planner) {
     /#
         assert(planner.var_35cec6a8.size > 0);
     #/
-    var_2905a911 = planner.var_35cec6a8[planner.var_35cec6a8.size - 1];
+    nodeentry = planner.var_35cec6a8[planner.var_35cec6a8.size - 1];
     planner.var_35cec6a8.size - 1 = [];
-    return var_2905a911;
+    return nodeentry;
 }
 
 // Namespace planner/planner
@@ -251,46 +251,46 @@ function private _planstackpushnode(planner, node, childindex = undefined) {
     /#
         assert(isstruct(node));
     #/
-    var_2905a911 = spawnstruct();
-    var_2905a911.childindex = isdefined(childindex) ? childindex : -1;
-    var_2905a911.node = node;
-    var_2905a911.var_8aab7097 = _plancalculateplanindex(planner);
-    var_2905a911.var_ad5606d2 = _blackboardscalculateundostate(planner);
-    planner.var_35cec6a8[planner.var_35cec6a8.size] = var_2905a911;
+    nodeentry = spawnstruct();
+    nodeentry.childindex = isdefined(childindex) ? childindex : -1;
+    nodeentry.node = node;
+    nodeentry.var_8aab7097 = _plancalculateplanindex(planner);
+    nodeentry.var_ad5606d2 = _blackboardscalculateundostate(planner);
+    planner.var_35cec6a8[planner.var_35cec6a8.size] = nodeentry;
 }
 
 // Namespace planner/planner
 // Params 3, eflags: 0x5 linked
 // Checksum 0x56d87ce2, Offset: 0xe18
 // Size: 0x28a
-function private _planpushvalidparent(planner, var_61a6896d, result) {
+function private _planpushvalidparent(planner, childnodeentry, result) {
     while (_planstackhasnodes(planner)) {
-        var_282d21ef = _planstackpeeknode(planner);
+        parentnodeentry = _planstackpeeknode(planner);
         /#
-            assert(isdefined(var_282d21ef));
+            assert(isdefined(parentnodeentry));
         #/
-        switch (var_282d21ef.node.type) {
+        switch (parentnodeentry.node.type) {
         case #"sequence":
             if (result) {
-                var_89a9e74 = _planfindnextsibling(planner, var_282d21ef, var_61a6896d.childindex);
-                if (isdefined(var_89a9e74)) {
-                    _planstackpushnode(planner, var_89a9e74, var_61a6896d.childindex + 1);
+                nextchildnode = _planfindnextsibling(planner, parentnodeentry, childnodeentry.childindex);
+                if (isdefined(nextchildnode)) {
+                    _planstackpushnode(planner, nextchildnode, childnodeentry.childindex + 1);
                     return 1;
                 }
             } else {
-                _undoplan(planner, var_282d21ef.var_8aab7097);
-                _blackboardsapplyundostate(planner, var_282d21ef.var_ad5606d2);
+                _undoplan(planner, parentnodeentry.var_8aab7097);
+                _blackboardsapplyundostate(planner, parentnodeentry.var_ad5606d2);
             }
             _planstackpopnode(planner);
             break;
         case #"selector":
         case #"planner":
             if (!result) {
-                _undoplan(planner, var_282d21ef.var_8aab7097);
-                _blackboardsapplyundostate(planner, var_282d21ef.var_ad5606d2);
-                var_89a9e74 = _planfindnextsibling(planner, var_282d21ef, var_61a6896d.childindex);
-                if (isdefined(var_89a9e74)) {
-                    _planstackpushnode(planner, var_89a9e74, var_61a6896d.childindex + 1);
+                _undoplan(planner, parentnodeentry.var_8aab7097);
+                _blackboardsapplyundostate(planner, parentnodeentry.var_ad5606d2);
+                nextchildnode = _planfindnextsibling(planner, parentnodeentry, childnodeentry.childindex);
+                if (isdefined(nextchildnode)) {
+                    _planstackpushnode(planner, nextchildnode, childnodeentry.childindex + 1);
                     return 1;
                 }
             }
@@ -300,7 +300,7 @@ function private _planpushvalidparent(planner, var_61a6896d, result) {
             _planstackpopnode(planner);
             break;
         }
-        var_61a6896d = var_282d21ef;
+        childnodeentry = parentnodeentry;
     }
     return result;
 }
@@ -314,33 +314,33 @@ function private _planprocessstack(planner) {
         assert(isstruct(planner));
     #/
     result = 1;
-    var_d64ac28a = 0;
+    waitedinthrottle = 0;
 LOC_00000058:
     while (_planstackhasnodes(planner)) {
         planner.planstarttime = getrealtime();
-        var_2905a911 = _planstackpeeknode(planner);
-        switch (var_2905a911.node.type) {
+        nodeentry = _planstackpeeknode(planner);
+        switch (nodeentry.node.type) {
         case #"action":
-            result = _planexpandaction(planner, var_2905a911.node);
+            result = _planexpandaction(planner, nodeentry.node);
             break;
         case #"postcondition":
-            result = _planexpandpostcondition(planner, var_2905a911.node);
+            result = _planexpandpostcondition(planner, nodeentry.node);
             break;
         case #"precondition":
-            result = _planexpandprecondition(planner, var_2905a911.node);
+            result = _planexpandprecondition(planner, nodeentry.node);
             break;
         case #"selector":
         case #"sequence":
         case #"planner":
-            _planstackpushnode(planner, var_2905a911.node.children[0], 0);
+            _planstackpushnode(planner, nodeentry.node.children[0], 0);
             continue;
         default:
             /#
-                assert(0, "<unknown string>" + var_2905a911.node.type + "<unknown string>");
+                assert(0, "<unknown string>" + nodeentry.node.type + "<unknown string>");
             #/
             break;
         }
-        result = _planpushvalidparent(planner, var_2905a911, result);
+        result = _planpushvalidparent(planner, nodeentry, result);
     }
 }
 
@@ -561,11 +561,11 @@ function createsubblackboard(planner) {
     /#
         assert(isarray(planner.var_478b95b9));
     #/
-    var_4f6482fb = planner.var_478b95b9.size;
-    var_b14008cd = [];
-    planner.var_478b95b9[var_4f6482fb] = plannerblackboard::create(var_b14008cd);
-    plannerblackboard::setreadwritemode(planner.var_478b95b9[var_4f6482fb]);
-    return var_4f6482fb;
+    newblackboardindex = planner.var_478b95b9.size;
+    defaultvalues = [];
+    planner.var_478b95b9[newblackboardindex] = plannerblackboard::create(defaultvalues);
+    plannerblackboard::setreadwritemode(planner.var_478b95b9[newblackboardindex]);
+    return newblackboardindex;
 }
 
 // Namespace planner/planner
@@ -670,8 +670,8 @@ function printplanner(planner, filename) {
             assert(isstruct(planner));
         #/
         file = openfile(filename, "<unknown string>");
-        var_e798f9ca = randomint(2147483647);
-        _printplannernode(file, planner, 0, var_e798f9ca);
+        printid = randomint(2147483647);
+        _printplannernode(file, planner, 0, printid);
         _printclearprintid(planner);
         closefile(file);
     #/
@@ -681,13 +681,13 @@ function printplanner(planner, filename) {
 // Params 1, eflags: 0x4
 // Checksum 0x4786a905, Offset: 0x22a8
 // Size: 0x96
-function private _printclearprintid(var_b1b0f655) {
+function private _printclearprintid(plannernode) {
     /#
-        var_b1b0f655.var_e798f9ca = undefined;
-        if (isdefined(var_b1b0f655.children)) {
-            for (index = 0; index < var_b1b0f655.children.size; index++) {
-                if (isdefined(var_b1b0f655.children[index].var_e798f9ca)) {
-                    _printclearprintid(var_b1b0f655.children[index]);
+        plannernode.printid = undefined;
+        if (isdefined(plannernode.children)) {
+            for (index = 0; index < plannernode.children.size; index++) {
+                if (isdefined(plannernode.children[index].printid)) {
+                    _printclearprintid(plannernode.children[index]);
                 }
             }
         }
@@ -737,28 +737,28 @@ function private function_3af5bab0(node) {
 // Params 4, eflags: 0x4
 // Checksum 0x392185ff, Offset: 0x25a8
 // Size: 0x1be
-function private _printplannernode(file, var_b1b0f655, indent, var_e798f9ca) {
+function private _printplannernode(file, plannernode, indent, printid) {
     /#
         /#
-            assert(isstruct(var_b1b0f655));
+            assert(isstruct(plannernode));
         #/
-        var_5a6f2acb = "<unknown string>";
+        indentspace = "<unknown string>";
         for (index = 0; index < indent; index++) {
-            var_5a6f2acb = var_5a6f2acb + "<unknown string>";
+            indentspace = indentspace + "<unknown string>";
         }
         text = "<unknown string>";
-        if (var_b1b0f655.var_e798f9ca === var_e798f9ca) {
+        if (plannernode.printid === printid) {
             text = text + "<unknown string>";
-            text = text + function_3af5bab0(var_b1b0f655);
-            fprintln(file, var_5a6f2acb + text);
+            text = text + function_3af5bab0(plannernode);
+            fprintln(file, indentspace + text);
             return;
         }
-        var_b1b0f655.var_e798f9ca = var_e798f9ca;
-        text = function_3af5bab0(var_b1b0f655);
-        fprintln(file, var_5a6f2acb + text);
-        if (isdefined(var_b1b0f655.children)) {
-            for (index = 0; index < var_b1b0f655.children.size; index++) {
-                _printplannernode(file, var_b1b0f655.children[index], indent + 1, var_e798f9ca);
+        plannernode.printid = printid;
+        text = function_3af5bab0(plannernode);
+        fprintln(file, indentspace + text);
+        if (isdefined(plannernode.children)) {
+            for (index = 0; index < plannernode.children.size; index++) {
+                _printplannernode(file, plannernode.children[index], indent + 1, printid);
             }
         }
     #/
@@ -805,67 +805,67 @@ function subblackboardcount(planner) {
 // Checksum 0x6772921, Offset: 0x2948
 // Size: 0x4aa
 function createplannerfromasset(assetname) {
-    var_499fd284 = gethierarchicaltasknetwork(assetname);
-    if (isdefined(var_499fd284) && var_499fd284.nodes.size > 0) {
-        var_8f7d8e13 = [];
-        if (var_499fd284.nodes.size >= 1) {
-            node = var_499fd284.nodes[0];
-            var_8f7d8e13[0] = planner::createplanner(node.name);
+    htnasset = gethierarchicaltasknetwork(assetname);
+    if (isdefined(htnasset) && htnasset.nodes.size > 0) {
+        plannernodes = [];
+        if (htnasset.nodes.size >= 1) {
+            node = htnasset.nodes[0];
+            plannernodes[0] = planner::createplanner(node.name);
         }
-        for (nodeindex = 1; nodeindex < var_499fd284.nodes.size; nodeindex++) {
-            node = var_499fd284.nodes[nodeindex];
+        for (nodeindex = 1; nodeindex < htnasset.nodes.size; nodeindex++) {
+            node = htnasset.nodes[nodeindex];
             switch (node.type) {
             case #"action":
-                var_8f7d8e13[nodeindex] = planner::createaction(node.name, node.constants);
+                plannernodes[nodeindex] = planner::createaction(node.name, node.constants);
                 continue;
             case #"postcondition":
-                var_8f7d8e13[nodeindex] = planner::createpostcondition(node.name, node.constants);
+                plannernodes[nodeindex] = planner::createpostcondition(node.name, node.constants);
                 continue;
             case #"precondition":
-                var_8f7d8e13[nodeindex] = planner::createprecondition(node.name, node.constants);
+                plannernodes[nodeindex] = planner::createprecondition(node.name, node.constants);
                 continue;
             case #"planner":
-                var_8f7d8e13[nodeindex] = planner::createplanner(node.name);
+                plannernodes[nodeindex] = planner::createplanner(node.name);
                 continue;
             case #"selector":
-                var_8f7d8e13[nodeindex] = planner::createselector();
+                plannernodes[nodeindex] = planner::createselector();
                 continue;
             case #"sequence":
-                var_8f7d8e13[nodeindex] = planner::createsequence();
+                plannernodes[nodeindex] = planner::createsequence();
                 continue;
             case #"goto":
-                var_8f7d8e13[nodeindex] = spawnstruct();
+                plannernodes[nodeindex] = spawnstruct();
                 continue;
             }
         }
-        for (nodeindex = 0; nodeindex < var_499fd284.nodes.size; nodeindex++) {
-            var_d0615c83 = var_8f7d8e13[nodeindex];
-            var_b39c71db = var_499fd284.nodes[nodeindex];
-            if (!isdefined(var_b39c71db.childindexes) || var_b39c71db.type == #"goto") {
+        for (nodeindex = 0; nodeindex < htnasset.nodes.size; nodeindex++) {
+            parentnode = plannernodes[nodeindex];
+            htnnode = htnasset.nodes[nodeindex];
+            if (!isdefined(htnnode.childindexes) || htnnode.type == #"goto") {
                 continue;
             }
-            for (childindex = 0; childindex < var_b39c71db.childindexes.size; childindex++) {
+            for (childindex = 0; childindex < htnnode.childindexes.size; childindex++) {
                 /#
-                    assert(var_b39c71db.childindexes[childindex] < var_8f7d8e13.size);
+                    assert(htnnode.childindexes[childindex] < plannernodes.size);
                 #/
-                var_eb4974e6 = var_b39c71db.childindexes[childindex];
-                var_2198d3d0 = var_8f7d8e13[var_eb4974e6];
-                var_db1a2f59 = var_499fd284.nodes[var_eb4974e6];
-                while (var_db1a2f59.type === #"goto") {
+                childnum = htnnode.childindexes[childindex];
+                childnode = plannernodes[childnum];
+                htnchildnode = htnasset.nodes[childnum];
+                while (htnchildnode.type === #"goto") {
                     /#
-                        assert(isdefined(var_db1a2f59.childindexes));
+                        assert(isdefined(htnchildnode.childindexes));
                     #/
                     /#
-                        assert(var_db1a2f59.childindexes.size == 1);
+                        assert(htnchildnode.childindexes.size == 1);
                     #/
-                    var_eb4974e6 = var_db1a2f59.childindexes[0];
-                    var_2198d3d0 = var_8f7d8e13[var_eb4974e6];
-                    var_db1a2f59 = var_499fd284.nodes[var_eb4974e6];
+                    childnum = htnchildnode.childindexes[0];
+                    childnode = plannernodes[childnum];
+                    htnchildnode = htnasset.nodes[childnum];
                 }
-                planner::addchild(var_d0615c83, var_2198d3d0);
+                planner::addchild(parentnode, childnode);
             }
         }
-        return var_8f7d8e13[0];
+        return plannernodes[0];
     }
 }
 

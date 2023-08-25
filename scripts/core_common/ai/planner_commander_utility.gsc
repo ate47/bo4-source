@@ -361,8 +361,8 @@ function private function_816f4052(planner, doppelbots, bundles) {
     if (doppelbots.size <= 0) {
         return pathablebundles;
     }
-    for (var_22edb3dc = 0; var_22edb3dc < bundles.size; var_22edb3dc++) {
-        bundle = bundles[var_22edb3dc][#"__unsafe__"][#"bundle"];
+    for (bundleindex = 0; bundleindex < bundles.size; bundleindex++) {
+        bundle = bundles[bundleindex][#"__unsafe__"][#"bundle"];
         if (!isdefined(bundle)) {
             continue;
         }
@@ -397,7 +397,7 @@ function private function_816f4052(planner, doppelbots, bundles) {
         if (pathable) {
             path = array();
             path[#"distance"] = longestpath;
-            path[#"bundle"] = bundles[var_22edb3dc];
+            path[#"bundle"] = bundles[bundleindex];
             pathablebundles[pathablebundles.size] = path;
         }
         if (getrealtime() - planner.planstarttime > planner.maxframetime) {
@@ -1274,9 +1274,9 @@ function private function_14c766b3(planner, constant) {
         }
     }
     players = planner::getblackboardattribute(planner, #"players");
-    var_bb89f65e = players.size > 0;
-    var_8769837e = !var_bb89f65e || target[#"strategy"].("doppelbotsinteractions") == #"hash_7fa10febd2862b4a";
-    var_f75536ec = !var_bb89f65e || target[#"strategy"].("companionsinteractions") == #"hash_7fa10febd2862b4a";
+    hasplayers = players.size > 0;
+    var_8769837e = !hasplayers || target[#"strategy"].("doppelbotsinteractions") == #"hash_7fa10febd2862b4a";
+    var_f75536ec = !hasplayers || target[#"strategy"].("companionsinteractions") == #"hash_7fa10febd2862b4a";
     var_f22aefd = strategiccommandutility::function_698a5382(target[#"strategy"]);
     groundvehicles = strategiccommandutility::function_54032f13(target[#"strategy"]);
     var_eda803e5 = groundvehicles;

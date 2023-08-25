@@ -24,17 +24,17 @@ function private _initializeblackboard() {
 // Size: 0x1a4
 function private _updateevents() {
     waittime = 1 * float(function_60d95f53()) / 1000;
-    var_51f27050 = int(waittime * 1000);
+    updatemillis = int(waittime * 1000);
     while (1) {
         foreach (eventname, events in level.var_7e0ff990) {
-            var_190ce6ad = [];
+            liveevents = [];
             foreach (event in events) {
-                event.var_7f7c7c3 = event.var_7f7c7c3 - var_51f27050;
+                event.var_7f7c7c3 = event.var_7f7c7c3 - updatemillis;
                 if (event.var_7f7c7c3 > 0) {
-                    var_190ce6ad[var_190ce6ad.size] = event;
+                    liveevents[liveevents.size] = event;
                 }
             }
-            level.var_7e0ff990[eventname] = var_190ce6ad;
+            level.var_7e0ff990[eventname] = liveevents;
         }
         wait(waittime);
     }

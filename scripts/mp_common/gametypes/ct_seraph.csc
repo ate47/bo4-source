@@ -31,7 +31,7 @@ function function_649c09ac(localclientnum, oldval, newval, bnewent, binitialsnap
         s_loc = struct::get("s_vase_loc", "targetname");
         v_angles = (0, 0, 0);
         v_velocity = (0, 0, 0);
-        dynent = createdynentandlaunch(localclientnum, #"hash_6ecc99dcfe1ebd56", s_loc.origin, v_angles, (0, 0, 0), v_velocity);
+        dynent = createdynentandlaunch(localclientnum, #"p7_vase_clay_egyptian_01", s_loc.origin, v_angles, (0, 0, 0), v_velocity);
     }
 }
 

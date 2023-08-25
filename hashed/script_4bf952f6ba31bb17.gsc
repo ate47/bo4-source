@@ -27,42 +27,42 @@ function event<runanimationmocomp> runanimationmocomp(eventstruct) {
     } else {
         eventstruct.status = "asm_mocomp_terminate";
     }
-    var_d56053d7 = eventstruct.entity [[ level.var_a03bcb07[eventstruct.name][eventstruct.status] ]](eventstruct.entity, eventstruct.delta_anim, eventstruct.blend_out_time, "", eventstruct.duration);
-    return var_d56053d7;
+    animationmocompresult = eventstruct.entity [[ level.var_a03bcb07[eventstruct.name][eventstruct.status] ]](eventstruct.entity, eventstruct.delta_anim, eventstruct.blend_out_time, "", eventstruct.duration);
+    return animationmocompresult;
 }
 
 // Namespace animationstatenetwork/namespace_25ba93c
 // Params 4, eflags: 0x1 linked
 // Checksum 0x989a5922, Offset: 0x270
 // Size: 0x258
-function registeranimationmocomp(var_40f3798b, var_be53f38d, var_2990edef, var_c9501750) {
-    var_40f3798b = tolower(var_40f3798b);
+function registeranimationmocomp(mocompname, var_be53f38d, var_2990edef, var_c9501750) {
+    mocompname = tolower(mocompname);
     /#
-        assert(isstring(var_40f3798b), "<unknown string>");
+        assert(isstring(mocompname), "<unknown string>");
     #/
     /#
-        assert(!isdefined(level.var_a03bcb07[var_40f3798b]), "<unknown string>" + var_40f3798b + "<unknown string>");
+        assert(!isdefined(level.var_a03bcb07[mocompname]), "<unknown string>" + mocompname + "<unknown string>");
     #/
-    level.var_a03bcb07[var_40f3798b] = array();
+    level.var_a03bcb07[mocompname] = array();
     /#
         assert(isdefined(var_be53f38d) && isfunctionptr(var_be53f38d), "<unknown string>");
     #/
-    level.var_a03bcb07[var_40f3798b][#"asm_mocomp_start"] = var_be53f38d;
+    level.var_a03bcb07[mocompname][#"asm_mocomp_start"] = var_be53f38d;
     if (isdefined(var_2990edef)) {
         /#
             assert(isfunctionptr(var_2990edef), "<unknown string>");
         #/
-        level.var_a03bcb07[var_40f3798b][#"asm_mocomp_update"] = var_2990edef;
+        level.var_a03bcb07[mocompname][#"asm_mocomp_update"] = var_2990edef;
     } else {
-        level.var_a03bcb07[var_40f3798b][#"asm_mocomp_update"] = &animationmocompemptyfunc;
+        level.var_a03bcb07[mocompname][#"asm_mocomp_update"] = &animationmocompemptyfunc;
     }
     if (isdefined(var_c9501750)) {
         /#
             assert(isfunctionptr(var_c9501750), "<unknown string>");
         #/
-        level.var_a03bcb07[var_40f3798b][#"asm_mocomp_terminate"] = var_c9501750;
+        level.var_a03bcb07[mocompname][#"asm_mocomp_terminate"] = var_c9501750;
     } else {
-        level.var_a03bcb07[var_40f3798b][#"asm_mocomp_terminate"] = &animationmocompemptyfunc;
+        level.var_a03bcb07[mocompname][#"asm_mocomp_terminate"] = &animationmocompemptyfunc;
     }
 }
 

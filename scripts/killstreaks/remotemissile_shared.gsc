@@ -320,7 +320,7 @@ function remote_missile_game_end_think(rocket, team, killstreak_id) {
 // Checksum 0xd506d155, Offset: 0x1c80
 // Size: 0x3fa
 function getbestspawnpoint(remotemissilespawnpoints) {
-    var_a55604f0 = [];
+    validenemies = [];
     foreach (spawnpoint in remotemissilespawnpoints) {
         spawnpoint.validplayers = [];
         spawnpoint.spawnscore = 0;

@@ -746,11 +746,11 @@ function zombie_boardtear_offset_fx_verticle(chunk, node) {
 // Size: 0x622
 function zombie_bartear_offset_fx_verticle(chunk) {
     if (isdefined(chunk.script_parameters) && chunk.script_parameters == "bar" || chunk.script_noteworthy == "board") {
-        var_e737280f = [];
-        var_e737280f[0] = "Tag_fx_top";
-        var_e737280f[1] = "";
-        var_e737280f[2] = "Tag_fx_top";
-        var_e737280f[3] = "";
+        possible_tag_array_1 = [];
+        possible_tag_array_1[0] = "Tag_fx_top";
+        possible_tag_array_1[1] = "";
+        possible_tag_array_1[2] = "Tag_fx_top";
+        possible_tag_array_1[3] = "";
         possible_tag_array_2 = [];
         possible_tag_array_2[0] = "";
         possible_tag_array_2[1] = "Tag_fx_bottom";

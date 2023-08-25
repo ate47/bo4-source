@@ -712,7 +712,7 @@ function private function_ba0ed9a4(entity) {
     function_f7416c07(entity);
     entity.skipdeath = 0;
     entity.traversal = undefined;
-    entity notify(#"hash_255dc2e132c1a7e1");
+    entity notify(#"traverse_end");
     return 4;
 }
 
@@ -1208,8 +1208,8 @@ function function_fb51b549(entity) {
 // Size: 0x88
 function function_4d1b05c7(entity) {
     if (entity haspath() && aiutility::bb_getlocomotionfaceenemyquadrant() == "locomotion_face_enemy_front") {
-        var_309c0b7a = aiutility::calculatejukedirection(entity, 50, entity.jukedistance);
-        return (var_309c0b7a != "forward");
+        jukedirection = aiutility::calculatejukedirection(entity, 50, entity.jukedistance);
+        return (jukedirection != "forward");
     }
     return 0;
 }
@@ -2905,13 +2905,13 @@ function private findclosestnavmeshpositiontoenemy(enemy) {
 // Params 2, eflags: 0x4
 // Checksum 0x9097584b, Offset: 0xd158
 // Size: 0x9c
-function private function_360c478(entity, var_3d11d1c4) {
+function private function_360c478(entity, stepout) {
     if (!isdefined(entity.node)) {
         return;
     }
     coverdirection = entity getblackboardattribute("_cover_direction");
     entity setblackboardattribute("_previous_cover_direction", coverdirection);
-    entity setblackboardattribute("_cover_direction", aiutility::calculatecoverdirection(entity, var_3d11d1c4));
+    entity setblackboardattribute("_cover_direction", aiutility::calculatecoverdirection(entity, stepout));
 }
 
 // Namespace namespace_8234b281/archetype_robot
@@ -3007,12 +3007,12 @@ function private function_3a6b890c(entity) {
     entity endon(#"death");
     wait(randomfloatrange(7, 10));
     if (isdefined(entity) && isdefined(entity.wasp)) {
-        var_b522f590 = (5, -15, 0);
-        while (!ispointinnavvolume(entity.wasp.origin + var_b522f590, "small volume")) {
+        spawnoffset = (5, -15, 0);
+        while (!ispointinnavvolume(entity.wasp.origin + spawnoffset, "small volume")) {
             wait(1);
         }
         entity.wasp unlink();
-        wasp = spawnvehicle("spawner_bo3_wasp_enemy", entity.wasp.origin + var_b522f590, (0, 0, 0));
+        wasp = spawnvehicle("spawner_bo3_wasp_enemy", entity.wasp.origin + spawnoffset, (0, 0, 0));
         entity.wasp delete();
     }
     entity.wasp = undefined;
@@ -3240,7 +3240,7 @@ function function_790b144e(entity, attribute, oldvalue, value) {
         gibserverutils::togglespawngibs(entity, 1);
         destructserverutils::togglespawngibs(entity, 1);
         break;
-    case #"hash_3136b3a5fd89efd3":
+    case #"remove_legs":
         gibserverutils::togglespawngibs(entity, 0);
         destructserverutils::togglespawngibs(entity, 0);
         break;
@@ -3312,7 +3312,7 @@ function function_94fa0836(entity, attribute, oldvalue, value) {
     case #"normal":
         entity.manualtraversemode = 0;
         break;
-    case #"hash_3d4b552e80b9af02":
+    case #"procedural":
         entity.manualtraversemode = 1;
         break;
     }

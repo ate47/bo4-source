@@ -47,7 +47,7 @@ function function_c621758a() {
     var_90b35a6a = struct::get_array("buoy_stash", "targetname");
     foreach (scene in var_90b35a6a) {
         wait(randomint(4));
-        scene thread scene::play(#"hash_6569493bfb71770b");
+        scene thread scene::play(#"p8_fxanim_wz_floating_buoy_bundle");
     }
     if (!level.var_f45d4bf5) {
         var_3d8e32a8 = getdynent("dock_yard_stash_2");

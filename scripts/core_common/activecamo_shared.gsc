@@ -89,7 +89,7 @@ function on_player_loadout() {
 // Size: 0x7c
 function function_8d3b94ea(weapon, owned, b_has_weapon) {
     weapon = function_94c2605(weapon);
-    activecamoinfo = function_a108c50e(weapon, b_has_weapon);
+    activecamoinfo = weapon_get_activecamo(weapon, b_has_weapon);
     if (isdefined(activecamoinfo)) {
         self init_activecamo(weapon, activecamoinfo, owned);
     }
@@ -234,7 +234,7 @@ function function_3aa81e0e(activecamoinfo) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x23992060, Offset: 0xfb8
 // Size: 0xfa
-function function_a108c50e(weapon, b_has_weapon = 1) {
+function weapon_get_activecamo(weapon, b_has_weapon = 1) {
     activecamoinfo = undefined;
     if (b_has_weapon) {
         weaponoptions = self getweaponoptions(weapon);
@@ -568,7 +568,7 @@ function function_896ac347(oweapon, statname, value) {
         #/
         return;
     }
-    activecamoinfo = function_a108c50e(weapon);
+    activecamoinfo = weapon_get_activecamo(weapon);
     if (isdefined(activecamoinfo)) {
         activecamo = self.pers[#"activecamo"][activecamoinfo.name];
         if (isdefined(activecamo)) {
@@ -670,18 +670,18 @@ function function_896ac347(oweapon, statname, value) {
 function function_94c2605(weapon) {
     if (isdefined(weapon)) {
         if (level.weaponnone != weapon) {
-            var_7c3192e1 = weapon;
-            if (var_7c3192e1.inventorytype == "dwlefthand") {
-                if (isdefined(var_7c3192e1.dualwieldweapon) && level.weaponnone != var_7c3192e1.dualwieldweapon) {
-                    var_7c3192e1 = var_7c3192e1.dualwieldweapon;
+            activecamoweapon = weapon;
+            if (activecamoweapon.inventorytype == "dwlefthand") {
+                if (isdefined(activecamoweapon.dualwieldweapon) && level.weaponnone != activecamoweapon.dualwieldweapon) {
+                    activecamoweapon = activecamoweapon.dualwieldweapon;
                 }
             }
-            if (var_7c3192e1.isaltmode) {
-                if (isdefined(var_7c3192e1.altweapon) && level.weaponnone != var_7c3192e1.altweapon) {
-                    var_7c3192e1 = var_7c3192e1.altweapon;
+            if (activecamoweapon.isaltmode) {
+                if (isdefined(activecamoweapon.altweapon) && level.weaponnone != activecamoweapon.altweapon) {
+                    activecamoweapon = activecamoweapon.altweapon;
                 }
             }
-            return var_7c3192e1;
+            return activecamoweapon;
         }
     }
     return weapon;
@@ -1216,7 +1216,7 @@ function function_779a9561(stagenum) {
     /#
         weapon = self getcurrentweapon();
         weapon = function_94c2605(weapon);
-        activecamoinfo = function_a108c50e(weapon);
+        activecamoinfo = weapon_get_activecamo(weapon);
         if (isdefined(activecamoinfo)) {
             activecamo = self.pers[#"activecamo"][activecamoinfo.name];
             if (isdefined(activecamo) && isdefined(activecamo.stages) && stagenum < activecamo.stages.size) {
@@ -1300,7 +1300,7 @@ function function_633fbf17(weapon, back) {
         if (isdefined(weapon)) {
             self function_8d3b94ea(weapon, 1);
             weapon = function_94c2605(weapon);
-            activecamoinfo = function_a108c50e(weapon);
+            activecamoinfo = weapon_get_activecamo(weapon);
             if (isdefined(activecamoinfo)) {
                 activecamo = self.pers[#"activecamo"][activecamoinfo.name];
                 if (isdefined(activecamo)) {
@@ -1341,7 +1341,7 @@ function function_3d928fb4(weapon) {
         if (isdefined(weapon)) {
             self function_8d3b94ea(weapon, 1);
             weapon = function_94c2605(weapon);
-            activecamoinfo = function_a108c50e(weapon);
+            activecamoinfo = weapon_get_activecamo(weapon);
             if (isdefined(activecamoinfo)) {
                 activecamo = self.pers[#"activecamo"][activecamoinfo.name];
                 if (isdefined(activecamo)) {
@@ -1407,7 +1407,7 @@ function function_14a9eb5b(weapon) {
         if (isdefined(weapon)) {
             self function_8d3b94ea(weapon, 1);
             weapon = function_94c2605(weapon);
-            activecamoinfo = function_a108c50e(weapon);
+            activecamoinfo = weapon_get_activecamo(weapon);
             if (isdefined(activecamoinfo)) {
                 activecamo = self.pers[#"activecamo"][activecamoinfo.name];
                 if (isdefined(activecamo)) {

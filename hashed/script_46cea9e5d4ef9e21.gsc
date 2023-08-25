@@ -199,16 +199,16 @@ function function_ba25a76f(n_max_time, var_62002857 = 0) {
     n_total_time = 0;
     var_cddd0f11 = self.script_int;
     while (n_total_time < n_max_time) {
-        var_2fadea46 = randomint(10);
-        while (var_2fadea46 == var_cddd0f11) {
-            var_2fadea46 = randomint(10);
+        n_part = randomint(10);
+        while (n_part == var_cddd0f11) {
+            n_part = randomint(10);
         }
-        mdl_tube showpart("tag_nixie_" + var_2fadea46);
+        mdl_tube showpart("tag_nixie_" + n_part);
         if (isdefined(var_cddd0f11)) {
             mdl_tube hidepart("tag_nixie_" + var_cddd0f11);
         }
         mdl_tube playsound(#"hash_12da80f02ef99473");
-        var_cddd0f11 = var_2fadea46;
+        var_cddd0f11 = n_part;
         wait(0.1);
         n_current_time = gettime();
         n_total_time = (n_current_time - n_start_time) / 1000;
@@ -427,10 +427,10 @@ function private function_f2f53f97() {
         return;
     }
     level.var_461a9705 = 1;
-    var_86febf77 = struct::get("nixie_tube_zombie_blood_start");
-    var_9c0bf2db = util::spawn_model(var_86febf77.model, var_86febf77.origin, var_86febf77.angles);
+    s_spawn_location = struct::get("nixie_tube_zombie_blood_start");
+    var_9c0bf2db = util::spawn_model(s_spawn_location.model, s_spawn_location.origin, s_spawn_location.angles);
     var_9c0bf2db clientfield::set("" + #"hash_3e57db9b106dff0a", 1);
-    s_target = struct::get(var_86febf77.target);
+    s_target = struct::get(s_spawn_location.target);
     while (isdefined(s_target)) {
         n_time = distance(var_9c0bf2db.origin, s_target.origin) / 300;
         var_9c0bf2db moveto(s_target.origin, n_time);

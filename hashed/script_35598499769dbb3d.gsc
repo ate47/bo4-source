@@ -35,37 +35,37 @@ function private function_3aa023f1(name, entity) {
     if (isdefined(gibdef)) {
         return gibdef;
     }
-    var_59dc51d9 = struct::get_script_bundle("gibcharacterdef", name);
-    if (!isdefined(var_59dc51d9)) {
+    definition = struct::get_script_bundle("gibcharacterdef", name);
+    if (!isdefined(definition)) {
         /#
             assertmsg("<unknown string>" + name);
         #/
         return undefined;
     }
-    var_189ec5c0 = [];
-    var_189ec5c0[2] = "annihilate";
-    var_189ec5c0[8] = "head";
-    var_189ec5c0[16] = "rightarm";
-    var_189ec5c0[32] = "leftarm";
-    var_189ec5c0[128] = "rightleg";
-    var_189ec5c0[256] = "leftleg";
+    gibpiecelookup = [];
+    gibpiecelookup[2] = "annihilate";
+    gibpiecelookup[8] = "head";
+    gibpiecelookup[16] = "rightarm";
+    gibpiecelookup[32] = "leftarm";
+    gibpiecelookup[128] = "rightleg";
+    gibpiecelookup[256] = "leftleg";
     gibpieces = [];
-    foreach (gibflag, var_fee7cbdd in var_189ec5c0) {
-        if (!isdefined(var_fee7cbdd)) {
+    foreach (gibflag, gibpiece in gibpiecelookup) {
+        if (!isdefined(gibpiece)) {
             /#
                 assertmsg("<unknown string>" + gibflag);
             #/
         } else {
-            var_49e98504 = spawnstruct();
-            var_49e98504.var_6d43549d = var_59dc51d9.(var_fee7cbdd + "_gibmodel");
-            var_49e98504.var_d241141a = var_59dc51d9.(var_fee7cbdd + "_gibtag");
-            var_49e98504.var_f1af9a8e = var_59dc51d9.(var_fee7cbdd + "_gibfx");
-            var_49e98504.var_d147aa1c = var_59dc51d9.(var_fee7cbdd + "_gibeffecttag");
-            var_49e98504.var_d4be909b = var_59dc51d9.(var_fee7cbdd + "_gibdynentfx");
-            var_49e98504.var_42c89fa1 = var_59dc51d9.(var_fee7cbdd + "_gibcinematicfx");
-            var_49e98504.var_28882334 = var_59dc51d9.(var_fee7cbdd + "_gibsound");
-            var_49e98504.var_7cfc4f8 = var_59dc51d9.(var_fee7cbdd + "_gibhidetag");
-            gibpieces[gibflag] = var_49e98504;
+            gibstruct = spawnstruct();
+            gibstruct.gibmodel = definition.(gibpiece + "_gibmodel");
+            gibstruct.var_d241141a = definition.(gibpiece + "_gibtag");
+            gibstruct.var_f1af9a8e = definition.(gibpiece + "_gibfx");
+            gibstruct.var_d147aa1c = definition.(gibpiece + "_gibeffecttag");
+            gibstruct.var_d4be909b = definition.(gibpiece + "_gibdynentfx");
+            gibstruct.var_42c89fa1 = definition.(gibpiece + "_gibcinematicfx");
+            gibstruct.var_28882334 = definition.(gibpiece + "_gibsound");
+            gibstruct.var_7cfc4f8 = definition.(gibpiece + "_gibhidetag");
+            gibpieces[gibflag] = gibstruct;
         }
     }
     level.var_ad0f5efa[name] = gibpieces;
@@ -145,9 +145,9 @@ function private _gibextrainternal(entity, gibflag) {
     _setgibbed(entity, gibflag, undefined);
     destructserverutils::showdestructedpieces(entity);
     showhiddengibpieces(entity);
-    var_6d43549d = _getgibextramodel(entity, gibflag);
-    if (isdefined(var_6d43549d) && entity isattached(var_6d43549d)) {
-        entity detach(var_6d43549d, "");
+    gibmodel = _getgibextramodel(entity, gibflag);
+    if (isdefined(gibmodel) && entity isattached(gibmodel)) {
+        entity detach(gibmodel, "");
     }
     destructserverutils::reapplydestructedpieces(entity);
     reapplyhiddengibpieces(entity);
@@ -186,8 +186,8 @@ function private _gibentityinternal(entity, gibflag) {
     destructserverutils::showdestructedpieces(entity);
     showhiddengibpieces(entity);
     if (!(_getgibbedstate(entity) < 16)) {
-        var_5cffb0c6 = _getgibbedlegmodel(entity);
-        entity detach(var_5cffb0c6);
+        legmodel = _getgibbedlegmodel(entity);
+        entity detach(legmodel);
     }
     _setgibbed(entity, gibflag, undefined);
     entity setmodel(_getgibbedtorsomodel(entity));
@@ -201,14 +201,14 @@ function private _gibentityinternal(entity, gibflag) {
 // Checksum 0xc05bf64c, Offset: 0xb80
 // Size: 0x152
 function private _getgibbedlegmodel(entity) {
-    var_8f411bbf = _getgibbedstate(entity);
-    var_ef8da8e1 = var_8f411bbf & 128;
-    var_5a697610 = var_8f411bbf & 256;
-    if (var_ef8da8e1 && var_5a697610) {
+    gibstate = _getgibbedstate(entity);
+    rightleggibbed = gibstate & 128;
+    leftleggibbed = gibstate & 256;
+    if (rightleggibbed && leftleggibbed) {
         return (isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.legdmg4 : entity.legdmg4);
-    } else if (var_ef8da8e1) {
+    } else if (rightleggibbed) {
         return (isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.legdmg2 : entity.legdmg2);
-    } else if (var_5a697610) {
+    } else if (leftleggibbed) {
         return (isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.legdmg3 : entity.legdmg3);
     }
     return isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.legdmg1 : entity.legdmg1;
@@ -230,9 +230,9 @@ function private _getgibbedstate(entity) {
 // Checksum 0xbad6f872, Offset: 0xd18
 // Size: 0x152
 function private _getgibbedtorsomodel(entity) {
-    var_8f411bbf = _getgibbedstate(entity);
-    rightarmgibbed = var_8f411bbf & 16;
-    leftarmgibbed = var_8f411bbf & 32;
+    gibstate = _getgibbedstate(entity);
+    rightarmgibbed = gibstate & 16;
+    leftarmgibbed = gibstate & 32;
     if (rightarmgibbed && leftarmgibbed) {
         return (isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.torsodmg2 : entity.torsodmg2);
     } else if (rightarmgibbed) {
@@ -256,26 +256,26 @@ function private _hasgibdef(entity) {
 // Checksum 0xd1ebdf0, Offset: 0xe98
 // Size: 0xae
 function private _hasgibpieces(entity, gibflag) {
-    var_5195c7d1 = 0;
-    var_8f411bbf = _getgibbedstate(entity);
-    entity.gib_state = var_8f411bbf | gibflag & 512 - 1;
+    hasgibpieces = 0;
+    gibstate = _getgibbedstate(entity);
+    entity.gib_state = gibstate | gibflag & 512 - 1;
     if (isdefined(_getgibbedtorsomodel(entity)) && isdefined(_getgibbedlegmodel(entity))) {
-        var_5195c7d1 = 1;
+        hasgibpieces = 1;
     }
-    entity.gib_state = var_8f411bbf;
-    return var_5195c7d1;
+    entity.gib_state = gibstate;
+    return hasgibpieces;
 }
 
 // Namespace gibserverutils/gib
 // Params 3, eflags: 0x5 linked
 // Checksum 0xd96be9ce, Offset: 0xf50
 // Size: 0x124
-function private _setgibbed(entity, gibflag, var_f7ac0901) {
-    if (isdefined(var_f7ac0901)) {
-        angles = vectortoangles(var_f7ac0901);
+function private _setgibbed(entity, gibflag, gibdir) {
+    if (isdefined(gibdir)) {
+        angles = vectortoangles(gibdir);
         yaw = angles[1];
-        var_ed82c1e6 = getbitsforangle(yaw, 3);
-        entity.gib_state = (_getgibbedstate(entity) | gibflag & 512 - 1) + (var_ed82c1e6 << 9);
+        yaw_bits = getbitsforangle(yaw, 3);
+        entity.gib_state = (_getgibbedstate(entity) | gibflag & 512 - 1) + (yaw_bits << 9);
     } else {
         entity.gib_state = _getgibbedstate(entity) | gibflag & 512 - 1;
     }
@@ -291,9 +291,9 @@ function annihilate(entity) {
     if (!_hasgibdef(entity)) {
         return 0;
     }
-    var_87573695 = function_69db754(entity.gibdef, 2, entity);
-    if (isdefined(var_87573695)) {
-        if (isdefined(var_87573695.var_f1af9a8e)) {
+    gibpiecestruct = function_69db754(entity.gibdef, 2, entity);
+    if (isdefined(gibpiecestruct)) {
+        if (isdefined(gibpiecestruct.var_f1af9a8e)) {
             _setgibbed(entity, 2, undefined);
             entity thread _annihilate(entity);
             return 1;
@@ -306,10 +306,10 @@ function annihilate(entity) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x2a3f61bf, Offset: 0x1138
 // Size: 0x64
-function copygibstate(var_1ce9f6a3, var_db6edef1) {
-    var_db6edef1.gib_state = _getgibbedstate(var_1ce9f6a3);
-    togglespawngibs(var_db6edef1, 0);
-    reapplyhiddengibpieces(var_db6edef1);
+function copygibstate(var_1ce9f6a3, newentity) {
+    newentity.gib_state = _getgibbedstate(var_1ce9f6a3);
+    togglespawngibs(newentity, 0);
+    reapplyhiddengibpieces(newentity);
 }
 
 // Namespace gibserverutils/gib
@@ -565,8 +565,8 @@ function showhiddengibpieces(entity) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x853fd1c6, Offset: 0x1cc0
 // Size: 0x94
-function togglespawngibs(entity, var_519d22bc) {
-    if (!var_519d22bc) {
+function togglespawngibs(entity, shouldspawngibs) {
+    if (!shouldspawngibs) {
         entity.gib_state = _getgibbedstate(entity) | 1;
     } else {
         entity.gib_state = _getgibbedstate(entity) & -2;

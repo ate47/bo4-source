@@ -65,8 +65,8 @@ function private function_5162a3de(cmd) {
             }
             break;
         case #"hash_2e229b658a79d09f":
-            var_6da260a8 = getaiarchetypearray(#"brutus");
-            foreach (brutus in var_6da260a8) {
+            brutuses = getaiarchetypearray(#"brutus");
+            foreach (brutus in brutuses) {
                 if (brutus.var_9fde8624 === #"brutus_special") {
                     brutus kill(undefined, undefined, undefined, undefined, 0, 1);
                 }

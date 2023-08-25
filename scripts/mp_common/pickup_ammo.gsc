@@ -45,8 +45,8 @@ function function_4827d817(weapon) {
     if (!isdefined(slot)) {
         return 0;
     }
-    var_f3e0cb57 = self.pers[#"dynamic_loadout"].clientfields[slot].val - 1;
-    package = struct::get_script_bundle("bountyhunterpackage", level.bountypackagelist[var_f3e0cb57]);
+    weapindex = self.pers[#"dynamic_loadout"].clientfields[slot].val - 1;
+    package = struct::get_script_bundle("bountyhunterpackage", level.bountypackagelist[weapindex]);
     var_e6e3de63 = package.var_ef921c3c;
     maxammo = package.refillammo;
     if (!isdefined(maxammo) || maxammo == 0) {

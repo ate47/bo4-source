@@ -8,7 +8,7 @@
 
 #namespace zombie_dog_util;
 
-// Namespace zombie_dog_util/namespace_e3f7c013
+// Namespace zombie_dog_util/ai_dog_util
 // Params 0, eflags: 0x2
 // Checksum 0xbc038c3d, Offset: 0x148
 // Size: 0x3c
@@ -16,7 +16,7 @@ function autoexec __init__system__() {
     system::register(#"zombie_dog_util", &__init__, undefined, undefined);
 }
 
-// Namespace zombie_dog_util/namespace_e3f7c013
+// Namespace zombie_dog_util/ai_dog_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x6825a180, Offset: 0x190
 // Size: 0xec
@@ -27,7 +27,7 @@ function __init__() {
     clientfield::register("world", "dog_round_fog_bank", 1, 1, "int", &dog_round_fog_bank, 0, 0);
 }
 
-// Namespace zombie_dog_util/namespace_e3f7c013
+// Namespace zombie_dog_util/ai_dog_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x7ed781b4, Offset: 0x288
 // Size: 0x182
@@ -42,7 +42,7 @@ function init_dog_fx() {
     level._effect[#"lightning_dog_spawn"] = #"hash_50a6b2497d454910";
 }
 
-// Namespace zombie_dog_util/namespace_e3f7c013
+// Namespace zombie_dog_util/ai_dog_util
 // Params 7, eflags: 0x1 linked
 // Checksum 0xd79da4f5, Offset: 0x418
 // Size: 0x46c
@@ -82,7 +82,7 @@ function dog_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname
     }
 }
 
-// Namespace zombie_dog_util/namespace_e3f7c013
+// Namespace zombie_dog_util/ai_dog_util
 // Params 7, eflags: 0x1 linked
 // Checksum 0x43f919db, Offset: 0x890
 // Size: 0x74
@@ -90,7 +90,7 @@ function dog_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     util::playfxontag(localclientnum, level._effect[#"lightning_dog_spawn"], self, "j_spine2");
 }
 
-// Namespace zombie_dog_util/namespace_e3f7c013
+// Namespace zombie_dog_util/ai_dog_util
 // Params 7, eflags: 0x1 linked
 // Checksum 0xacaa680, Offset: 0x910
 // Size: 0xd4
@@ -104,7 +104,7 @@ function dog_round_fog_bank(localclientnum, oldval, newval, bnewent, binitialsna
     }
 }
 
-// Namespace zombie_dog_util/namespace_e3f7c013
+// Namespace zombie_dog_util/ai_dog_util
 // Params 4, eflags: 0x5 linked
 // Checksum 0xa2cfae5f, Offset: 0x9f0
 // Size: 0x198

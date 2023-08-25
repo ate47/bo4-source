@@ -456,21 +456,21 @@ function function_2038666b() {
         return;
     }
     var_7e35b184 = array(5, 6, 7);
-    var_77f6daf9 = array::random(var_7e35b184);
-    arrayremovevalue(var_7e35b184, var_77f6daf9);
-    for (i = 0; i < var_77f6daf9; i++) {
+    n_inner = array::random(var_7e35b184);
+    arrayremovevalue(var_7e35b184, n_inner);
+    for (i = 0; i < n_inner; i++) {
         ring_rotate("inner");
         waitframe(1);
     }
-    var_3ce098fa = array::random(var_7e35b184);
-    arrayremovevalue(var_7e35b184, var_3ce098fa);
-    for (i = 0; i < var_3ce098fa; i++) {
+    n_middle = array::random(var_7e35b184);
+    arrayremovevalue(var_7e35b184, n_middle);
+    for (i = 0; i < n_middle; i++) {
         ring_rotate("middle");
         waitframe(1);
     }
-    var_871b88b7 = array::random(var_7e35b184);
-    arrayremovevalue(var_7e35b184, var_871b88b7);
-    for (i = 0; i < var_871b88b7; i++) {
+    n_outer = array::random(var_7e35b184);
+    arrayremovevalue(var_7e35b184, n_outer);
+    for (i = 0; i < n_outer; i++) {
         ring_rotate("outer");
         waitframe(1);
     }
@@ -537,13 +537,13 @@ function ring_rotate(str_pos, var_a352f5ee, var_50cc0d4f = 1) {
         level scene::stop(var_a352f5ee.script_noteworthy + "_control", "targetname");
     }
     if (!isdefined(var_a352f5ee) || self function_39b9ecb(var_a352f5ee)) {
-        var_47d19ee = 30;
+        n_rot = 30;
         var_6c4c2561 = -30;
         if (!var_50cc0d4f) {
             level thread scene::play(var_a352f5ee.script_noteworthy + "_control", "wheel_right");
         }
     } else {
-        var_47d19ee = -30;
+        n_rot = -30;
         var_6c4c2561 = 30;
         if (!var_50cc0d4f) {
             level thread scene::play(var_a352f5ee.script_noteworthy + "_control", "wheel_left");
@@ -552,20 +552,20 @@ function ring_rotate(str_pos, var_a352f5ee, var_50cc0d4f = 1) {
     switch (str_pos) {
     case #"outer":
         level.var_6ce9da5c.e_linkto rotatepitch(var_6c4c2561, n_move_time);
-        level.var_7ff4f03a.e_linkto rotateroll(var_47d19ee, n_move_time);
-        level.var_dd0ec1fe.e_linkto rotatepitch(var_47d19ee, n_move_time);
+        level.var_7ff4f03a.e_linkto rotateroll(n_rot, n_move_time);
+        level.var_dd0ec1fe.e_linkto rotatepitch(n_rot, n_move_time);
         level.var_6ce9da5c playsound(#"hash_1928aff0a0342673");
         level.var_dd0ec1fe.e_linkto waittilltimeout(n_move_time, #"rotatedone");
         break;
     case #"middle":
         level.var_dd0ec1fe.e_linkto rotatepitch(var_6c4c2561, n_move_time);
-        level.var_7ff4f03a.e_linkto rotateroll(var_47d19ee, n_move_time);
+        level.var_7ff4f03a.e_linkto rotateroll(n_rot, n_move_time);
         level.var_6ce9da5c playsound(#"hash_1928aef0a03424c0");
         level.var_7ff4f03a.e_linkto waittilltimeout(n_move_time, #"rotatedone");
         break;
     case #"inner":
         level.var_7ff4f03a.e_linkto rotateroll(var_6c4c2561, n_move_time);
-        level.var_6ce9da5c.e_linkto rotatepitch(var_47d19ee, n_move_time);
+        level.var_6ce9da5c.e_linkto rotatepitch(n_rot, n_move_time);
         level.var_6ce9da5c playsound(#"hash_1928aef0a03424c0");
         level.var_6ce9da5c.e_linkto waittilltimeout(n_move_time, #"rotatedone");
         break;
@@ -622,8 +622,8 @@ function function_71d1b235() {
     playrumbleonposition("zm_mansion_atlas_globe_set_rumble", level.var_dd0ec1fe.origin);
     level.var_bfd6fc7e playsound(#"hash_2647ce5bb2e14502");
     wait(2);
-    var_2754aada = struct::get("s_atl");
-    var_2754aada thread scene::play("melt");
+    s_atlas = struct::get("s_atl");
+    s_atlas thread scene::play("melt");
     e_head = getent("head_collision", "targetname");
     e_head movey(32, 3);
     level.var_3128fb28 clientfield::set("" + #"hash_34c5ab29531f15f0", 1);
@@ -890,8 +890,8 @@ function function_3f64b455() {
                     level.var_779d8f63 = 1;
                 }
             }
-            var_b61daa55 = struct::get(level.var_21d0f5ee[level.var_779d8f63 - 1]);
-            mdl_wheel rotateto(var_b61daa55.angles, 0.35);
+            s_rotate = struct::get(level.var_21d0f5ee[level.var_779d8f63 - 1]);
+            mdl_wheel rotateto(s_rotate.angles, 0.35);
             mdl_wheel playsound(#"hash_bbeb6a0420a769e");
             if (n_shot < 9) {
                 n_shot++;
@@ -1012,12 +1012,12 @@ function function_9513d3a6() {
 // Checksum 0xab4bef59, Offset: 0x5bd8
 // Size: 0x1a6
 function function_8ced5d5b() {
-    var_19a82be = array(7, 9, 11, 13, 15);
+    a_n_numbers = array(7, 9, 11, 13, 15);
     var_679750f5 = [];
     for (i = 0; i < 3; i++) {
-        n_num = array::random(var_19a82be);
+        n_num = array::random(a_n_numbers);
         var_679750f5[var_679750f5.size] = n_num;
-        arrayremovevalue(var_19a82be, n_num);
+        arrayremovevalue(a_n_numbers, n_num);
     }
     var_db303d4f = array::sort_by_value(var_679750f5, 1);
     for (i = 0; i < 3; i++) {
@@ -1507,19 +1507,19 @@ function wave_1() {
     switch (n_players) {
     case 1:
         n_num = 16;
-        var_d72af167 = 9;
+        n_current = 9;
         break;
     case 2:
         n_num = 22;
-        var_d72af167 = 13;
+        n_current = 13;
         break;
     case 3:
         n_num = 27;
-        var_d72af167 = 17;
+        n_current = 17;
         break;
     case 4:
         n_num = 32;
-        var_d72af167 = 20;
+        n_current = 20;
         break;
     }
     level.var_e12e0420 = 0;
@@ -1541,7 +1541,7 @@ function wave_1() {
             if (x == a_s_locs.size) {
                 x = 0;
             }
-            while (level.var_e12e0420 >= var_d72af167 || getaiteamarray(level.zombie_team).size >= 24) {
+            while (level.var_e12e0420 >= n_current || getaiteamarray(level.zombie_team).size >= 24) {
                 waitframe(1);
             }
         }
@@ -1610,20 +1610,20 @@ function wave_2() {
     wait(2);
     switch (getplayers().size) {
     case 1:
-        var_54e56d76 = 20;
+        n_wolves = 20;
         break;
     case 2:
-        var_54e56d76 = 26;
+        n_wolves = 26;
         break;
     case 3:
-        var_54e56d76 = 32;
+        n_wolves = 32;
         break;
     case 4:
-        var_54e56d76 = 40;
+        n_wolves = 40;
         break;
     }
     level.var_20f423f6 = 0;
-    for (i = 0; i < var_54e56d76; i++) {
+    for (i = 0; i < n_wolves; i++) {
         var_69024a6a = zm_mansion_special_rounds::function_988438a7(level.dog_spawners[0], undefined, 20);
         if (isdefined(var_69024a6a)) {
             level.var_20f423f6++;

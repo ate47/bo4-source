@@ -261,8 +261,8 @@ function private _spawn_item(point, row, stashitem = 0) {
             level.item_vehicles[level.item_vehicles.size] = vehicle;
             level.var_8819644a[level.var_8819644a.size] = {#used:0, #vehicle:vehicle, #vehicletype:vehicle.vehicletype, #origin:vehicle.origin};
             if (isairborne(vehicle)) {
-                var_b522f590 = (0, 0, vehicle.height);
-                vehicle.origin = point.origin + var_b522f590;
+                spawnoffset = (0, 0, vehicle.height);
+                vehicle.origin = point.origin + spawnoffset;
             }
             vehicle makeusable();
             if (isdefined(vehicle.isphysicsvehicle) && vehicle.isphysicsvehicle) {
@@ -357,11 +357,11 @@ function private function_f0e5262b(item_name, point, childindex, stashitem = 0, 
         /#
             assert(childindex > 0 && childindex <= 5);
         #/
-        var_c09d4711 = (0, point.angles[1], 0);
+        parentangles = (0, point.angles[1], 0);
         degree = level.var_cc113617[childindex];
         distance = level.var_69dda516[childindex];
         offset = (cos(degree) * distance, sin(degree) * distance, 0);
-        offset = rotatepoint(offset, var_c09d4711);
+        offset = rotatepoint(offset, parentangles);
         origin = origin + offset;
         ground_pos = physicstraceex(origin + vectorscale((0, 0, 1), 24), origin - vectorscale((0, 0, 1), 96), (0, 0, 0), (0, 0, 0), undefined, 32);
         var_f05b52fe = (isdefined(var_a6762160.var_ada071fe) ? var_a6762160.var_ada071fe : 0, isdefined(var_a6762160.var_5ab74bb1) ? var_a6762160.var_5ab74bb1 : 0, isdefined(var_a6762160.var_50773731) ? var_a6762160.var_50773731 : 0);

@@ -39,7 +39,7 @@ function private __init__() {
 // Checksum 0x7ef8bae2, Offset: 0x2b0
 // Size: 0x1ac
 function private function_ea95685(commander) {
-    var_a8c95395 = [];
+    altars = [];
     if (isarray(level.var_76a7ad28)) {
         foreach (altar in level.var_76a7ad28) {
             if (!isdefined(altar)) {
@@ -52,10 +52,10 @@ function private function_ea95685(commander) {
                 var_bc510a14[#"__unsafe__"] = array();
             }
             var_bc510a14[#"__unsafe__"][#"altar"] = altar;
-            var_a8c95395[var_a8c95395.size] = var_bc510a14;
+            altars[altars.size] = var_bc510a14;
         }
     }
-    blackboard::setstructblackboardattribute(commander, #"zm_altars", var_a8c95395);
+    blackboard::setstructblackboardattribute(commander, #"zm_altars", altars);
 }
 
 // Namespace namespace_526571f4/namespace_e4f52212
@@ -161,10 +161,10 @@ function private function_ccdf2c6f(commander) {
 // Checksum 0xdcde691c, Offset: 0xb58
 // Size: 0x1cc
 function private function_48fcded4(commander) {
-    var_4256313b = [];
-    var_38dc0497 = getentarray("use_elec_switch", "targetname");
-    if (isarray(var_38dc0497)) {
-        foreach (switchent in var_38dc0497) {
+    switches = [];
+    switchents = getentarray("use_elec_switch", "targetname");
+    if (isarray(switchents)) {
+        foreach (switchent in switchents) {
             if (!isdefined(switchent)) {
                 continue;
             }
@@ -175,10 +175,10 @@ function private function_48fcded4(commander) {
                 var_b353dc21[#"__unsafe__"] = array();
             }
             var_b353dc21[#"__unsafe__"][#"switch"] = switchent;
-            var_4256313b[var_4256313b.size] = var_b353dc21;
+            switches[switches.size] = var_b353dc21;
         }
     }
-    blackboard::setstructblackboardattribute(commander, #"zm_switches", var_4256313b);
+    blackboard::setstructblackboardattribute(commander, #"zm_switches", switches);
 }
 
 // Namespace namespace_526571f4/namespace_e4f52212

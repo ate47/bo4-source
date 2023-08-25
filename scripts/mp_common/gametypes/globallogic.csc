@@ -30,7 +30,7 @@ function autoexec __init__system__() {
 function __init__() {
     visionset_mgr::register_visionset_info("mpintro", 1, 31, undefined, "mpintro");
     visionset_mgr::register_visionset_info("crithealth", 1, 25, undefined, "critical_health");
-    animation::add_notetrack_func(#"hash_5228e37ecfe19e98", &play_plant_sound);
+    animation::add_notetrack_func(#"globallogic::play_plant_sound", &play_plant_sound);
     clientfield::register("world", "game_ended", 1, 1, "int", &on_end_game, 1, 1);
     clientfield::register("world", "post_game", 1, 1, "int", &post_game, 1, 1);
     registerclientfield("playercorpse", "firefly_effect", 1, 2, "int", &firefly_effect_cb, 0);

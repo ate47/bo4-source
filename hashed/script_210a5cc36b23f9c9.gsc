@@ -22,43 +22,43 @@ function autoexec __init__system__() {
 function __init__() {
     clientfield::register("actor", "destructible_character_state", 1, 21, "int", &_destructhandler, 0, 0);
     destructibles = struct::get_script_bundles("destructiblecharacterdef");
-    var_da3f3104 = [];
+    processedbundles = [];
     foreach (destructible in destructibles) {
-        var_353a193 = spawnstruct();
-        var_353a193.piececount = destructible.piececount;
-        var_353a193.pieces = [];
-        var_353a193.name = destructible.name;
-        for (index = 1; index <= var_353a193.piececount; index++) {
-            var_4b7e0498 = spawnstruct();
-            var_4b7e0498.var_6d43549d = destructible.("piece" + index + "_gibmodel");
-            var_4b7e0498.var_d241141a = destructible.("piece" + index + "_gibtag");
-            var_4b7e0498.var_f1af9a8e = destructible.("piece" + index + "_gibfx");
-            var_4b7e0498.var_d147aa1c = destructible.("piece" + index + "_gibeffecttag");
+        destructbundle = spawnstruct();
+        destructbundle.piececount = destructible.piececount;
+        destructbundle.pieces = [];
+        destructbundle.name = destructible.name;
+        for (index = 1; index <= destructbundle.piececount; index++) {
+            piecestruct = spawnstruct();
+            piecestruct.gibmodel = destructible.("piece" + index + "_gibmodel");
+            piecestruct.var_d241141a = destructible.("piece" + index + "_gibtag");
+            piecestruct.var_f1af9a8e = destructible.("piece" + index + "_gibfx");
+            piecestruct.var_d147aa1c = destructible.("piece" + index + "_gibeffecttag");
             if (isdefined(destructible.("piece" + index + "_gibdirX")) || isdefined(destructible.("piece" + index + "_gibdirY")) || isdefined(destructible.("piece" + index + "_gibdirZ"))) {
-                var_4b7e0498.var_f7ac0901 = (isdefined(destructible.("piece" + index + "_gibdirX")) ? destructible.("piece" + index + "_gibdirX") : 0, isdefined(destructible.("piece" + index + "_gibdirY")) ? destructible.("piece" + index + "_gibdirY") : 0, isdefined(destructible.("piece" + index + "_gibdirZ")) ? destructible.("piece" + index + "_gibdirZ") : 0);
+                piecestruct.gibdir = (isdefined(destructible.("piece" + index + "_gibdirX")) ? destructible.("piece" + index + "_gibdirX") : 0, isdefined(destructible.("piece" + index + "_gibdirY")) ? destructible.("piece" + index + "_gibdirY") : 0, isdefined(destructible.("piece" + index + "_gibdirZ")) ? destructible.("piece" + index + "_gibdirZ") : 0);
             }
-            var_4b7e0498.gibdirscale = destructible.("piece" + index + "_gibdirscale");
-            var_4b7e0498.var_d4be909b = destructible.("piece" + index + "_gibdynentfx");
-            var_4b7e0498.var_28882334 = destructible.("piece" + index + "_gibsound");
-            var_4b7e0498.hitlocation = destructible.("piece" + index + "_hitlocation");
-            var_4b7e0498.hidetag = destructible.("piece" + index + "_hidetag");
-            var_4b7e0498.var_677368f4 = destructible.("piece" + index + "_detachmodel");
+            piecestruct.gibdirscale = destructible.("piece" + index + "_gibdirscale");
+            piecestruct.var_d4be909b = destructible.("piece" + index + "_gibdynentfx");
+            piecestruct.var_28882334 = destructible.("piece" + index + "_gibsound");
+            piecestruct.hitlocation = destructible.("piece" + index + "_hitlocation");
+            piecestruct.hidetag = destructible.("piece" + index + "_hidetag");
+            piecestruct.var_677368f4 = destructible.("piece" + index + "_detachmodel");
             if (isdefined(destructible.("piece" + index + "_hittags"))) {
-                var_4b7e0498.hittags = [];
+                piecestruct.hittags = [];
                 foreach (var_5440c126 in destructible.("piece" + index + "_hittags")) {
-                    if (!isdefined(var_4b7e0498.hittags)) {
-                        var_4b7e0498.hittags = [];
-                    } else if (!isarray(var_4b7e0498.hittags)) {
-                        var_4b7e0498.hittags = array(var_4b7e0498.hittags);
+                    if (!isdefined(piecestruct.hittags)) {
+                        piecestruct.hittags = [];
+                    } else if (!isarray(piecestruct.hittags)) {
+                        piecestruct.hittags = array(piecestruct.hittags);
                     }
-                    var_4b7e0498.hittags[var_4b7e0498.hittags.size] = var_5440c126.hittag;
+                    piecestruct.hittags[piecestruct.hittags.size] = var_5440c126.hittag;
                 }
             }
-            var_353a193.pieces[var_353a193.pieces.size] = var_4b7e0498;
+            destructbundle.pieces[destructbundle.pieces.size] = piecestruct;
         }
-        var_da3f3104[destructible.name] = var_353a193;
+        processedbundles[destructible.name] = destructbundle;
     }
-    level.var_4f117604 = var_da3f3104;
+    level.var_4f117604 = processedbundles;
 }
 
 // Namespace destructclientutils/destructible_character
@@ -78,20 +78,20 @@ function private _destructhandler(localclientnum, oldvalue, newvalue, bnewent, b
         return;
     }
     entity = self;
-    var_27d02d91 = oldvalue ^ newvalue;
-    var_519d22bc = newvalue & 1;
+    destructflags = oldvalue ^ newvalue;
+    shouldspawngibs = newvalue & 1;
     if (bnewent) {
-        var_27d02d91 = 0 ^ newvalue;
+        destructflags = 0 ^ newvalue;
     }
     if (!isdefined(entity.destructibledef)) {
         return;
     }
-    var_76aaf053 = 2;
-    for (var_eb89b058 = 1; var_27d02d91 >= var_76aaf053; var_eb89b058++) {
-        if (var_27d02d91 & var_76aaf053) {
-            _destructpiece(localclientnum, entity, var_eb89b058, var_519d22bc);
+    currentdestructflag = 2;
+    for (piecenumber = 1; destructflags >= currentdestructflag; piecenumber++) {
+        if (destructflags & currentdestructflag) {
+            _destructpiece(localclientnum, entity, piecenumber, shouldspawngibs);
         }
-        var_76aaf053 = var_76aaf053 << 1;
+        currentdestructflag = currentdestructflag << 1;
     }
     entity.var_910f2cb = newvalue;
 }
@@ -100,21 +100,21 @@ function private _destructhandler(localclientnum, oldvalue, newvalue, bnewent, b
 // Params 4, eflags: 0x5 linked
 // Checksum 0xc3560f21, Offset: 0x948
 // Size: 0x1bc
-function private _destructpiece(localclientnum, entity, var_eb89b058, var_519d22bc) {
+function private _destructpiece(localclientnum, entity, piecenumber, shouldspawngibs) {
     if (!isdefined(entity.destructibledef)) {
         return;
     }
-    var_353a193 = _getdestructibledef(entity);
-    piece = var_353a193.pieces[var_eb89b058 - 1];
+    destructbundle = _getdestructibledef(entity);
+    piece = destructbundle.pieces[piecenumber - 1];
     if (isdefined(piece)) {
-        if (var_519d22bc) {
+        if (shouldspawngibs) {
             gibclientutils::_playgibfx(localclientnum, entity, piece.var_f1af9a8e, piece.var_d147aa1c);
-            entity thread gibclientutils::_gibpiece(localclientnum, entity, piece.var_6d43549d, piece.var_d241141a, piece.var_d4be909b, piece.var_f7ac0901, piece.gibdirscale, 1 | 2 | 4);
+            entity thread gibclientutils::_gibpiece(localclientnum, entity, piece.gibmodel, piece.var_d241141a, piece.var_d4be909b, piece.gibdir, piece.gibdirscale, 1 | 2 | 4);
             gibclientutils::_playgibsound(localclientnum, entity, piece.var_28882334);
         } else if (isdefined(piece.var_f1af9a8e) && function_9229eb67(piece.var_f1af9a8e)) {
             gibclientutils::_playgibfx(localclientnum, entity, piece.var_f1af9a8e, piece.var_d147aa1c);
         }
-        _handledestructcallbacks(localclientnum, entity, var_eb89b058);
+        _handledestructcallbacks(localclientnum, entity, piecenumber);
     }
 }
 
@@ -133,11 +133,11 @@ function private _getdestructstate(localclientnum, entity) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x7ea628b8, Offset: 0xb50
 // Size: 0xd8
-function private _handledestructcallbacks(localclientnum, entity, var_eb89b058) {
-    if (isdefined(entity.var_3789a5f0) && isdefined(entity.var_3789a5f0[var_eb89b058])) {
-        foreach (callback in entity.var_3789a5f0[var_eb89b058]) {
+function private _handledestructcallbacks(localclientnum, entity, piecenumber) {
+    if (isdefined(entity.var_3789a5f0) && isdefined(entity.var_3789a5f0[piecenumber])) {
+        foreach (callback in entity.var_3789a5f0[piecenumber]) {
             if (isfunctionptr(callback)) {
-                [[ callback ]](localclientnum, entity, var_eb89b058);
+                [[ callback ]](localclientnum, entity, piecenumber);
             }
         }
     }
@@ -147,26 +147,26 @@ function private _handledestructcallbacks(localclientnum, entity, var_eb89b058) 
 // Params 4, eflags: 0x1 linked
 // Checksum 0x311f091f, Offset: 0xc30
 // Size: 0xde
-function adddestructpiececallback(localclientnum, entity, var_eb89b058, callbackfunction) {
+function adddestructpiececallback(localclientnum, entity, piecenumber, callbackfunction) {
     /#
         assert(isfunctionptr(callbackfunction));
     #/
     if (!isdefined(entity.var_3789a5f0)) {
         entity.var_3789a5f0 = [];
     }
-    if (!isdefined(entity.var_3789a5f0[var_eb89b058])) {
-        entity.var_3789a5f0[var_eb89b058] = [];
+    if (!isdefined(entity.var_3789a5f0[piecenumber])) {
+        entity.var_3789a5f0[piecenumber] = [];
     }
-    var_dbd41965 = entity.var_3789a5f0[var_eb89b058];
-    var_dbd41965[var_dbd41965.size] = callbackfunction;
-    entity.var_3789a5f0[var_eb89b058] = var_dbd41965;
+    destructcallbacks = entity.var_3789a5f0[piecenumber];
+    destructcallbacks[destructcallbacks.size] = callbackfunction;
+    entity.var_3789a5f0[piecenumber] = destructcallbacks;
 }
 
 // Namespace destructclientutils/destructible_character
 // Params 3, eflags: 0x1 linked
 // Checksum 0xa7c142ca, Offset: 0xd18
 // Size: 0x3e
-function ispiecedestructed(localclientnum, entity, var_eb89b058) {
-    return _getdestructstate(localclientnum, entity) & 1 << var_eb89b058;
+function ispiecedestructed(localclientnum, entity, piecenumber) {
+    return _getdestructstate(localclientnum, entity) & 1 << piecenumber;
 }
 

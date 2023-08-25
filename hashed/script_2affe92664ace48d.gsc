@@ -17,7 +17,7 @@
 
 #namespace zombie_tiger_util;
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x2
 // Checksum 0x3f99401f, Offset: 0x140
 // Size: 0x54
@@ -25,7 +25,7 @@ function autoexec __init__system__() {
     system::register(#"zombie_tiger_util", &__init__, &__main__, #"zm_ai_tiger");
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x61f94a66, Offset: 0x1a0
 // Size: 0xb4
@@ -40,7 +40,7 @@ function __init__() {
     zm_round_spawning::register_archetype(#"tiger", &function_235d0eb6, &round_spawn, &spawn_single, 25);
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x8288f6f7, Offset: 0x260
 // Size: 0x7c
@@ -49,7 +49,7 @@ function __main__() {
     spawner::add_archetype_spawn_function(#"tiger", &function_fe4c8547);
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe65fa07, Offset: 0x2e8
 // Size: 0xac
@@ -63,7 +63,7 @@ function function_fe4c8547() {
     self zm_score::function_82732ced();
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 2, eflags: 0x1 linked
 // Checksum 0x1c76925c, Offset: 0x3a0
 // Size: 0x1e8
@@ -96,7 +96,7 @@ function spawn_single(b_force_spawn = 0, var_eb3a8721) {
     return ai;
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x7bec0d6f, Offset: 0x590
 // Size: 0x9a
@@ -109,7 +109,7 @@ function function_66cfd7d() {
     return 1;
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xa22240bc, Offset: 0x638
 // Size: 0xf8
@@ -135,7 +135,7 @@ function function_cbfb0da4() {
     return var_ed61bfaa;
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4779da8c, Offset: 0x738
 // Size: 0xbc
@@ -150,7 +150,7 @@ function function_ba8172ca() {
     return var_6ecc1639;
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xcb62ab7e, Offset: 0x800
 // Size: 0xd0
@@ -173,7 +173,7 @@ function function_ffa01525() {
     wait(n_default_wait);
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4fd8c79d, Offset: 0x8d8
 // Size: 0x54
@@ -184,7 +184,7 @@ function function_94c9b195() {
     }
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa4da1771, Offset: 0x938
 // Size: 0xc2
@@ -197,7 +197,7 @@ function function_235d0eb6(var_dbce0c44) {
     return min(var_8cf00d40, int(level.zombie_total * var_a1737466));
 }
 
-// Namespace zombie_tiger_util/namespace_1b20d7bf
+// Namespace zombie_tiger_util/ai_tiger_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4e3b861d, Offset: 0xa08
 // Size: 0x3c

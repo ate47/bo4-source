@@ -18,8 +18,8 @@ function init_shared() {
     level._effect[#"fx_betty_enemy_light"] = #"hash_330682ff4f12f646";
     level.bettymindist = 20;
     level.bettystuntime = 1;
-    var_8e09ae7c = "o_spider_mine_detonate";
-    var_e32c8941 = "o_spider_mine_deploy";
+    bettyexplodeanim = "o_spider_mine_detonate";
+    bettydeployanim = "o_spider_mine_deploy";
     level.bettyradius = getdvarint(#"betty_detect_radius", 180);
     level.bettyactivationdelay = getdvarfloat(#"betty_activation_delay", 1);
     level.bettygraceperiod = getdvarfloat(#"betty_grace_period", 0);

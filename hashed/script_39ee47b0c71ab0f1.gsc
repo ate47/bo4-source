@@ -28,8 +28,8 @@ class czm_trial_weapon_locked : cluielem {
     // Checksum 0x526a0cd, Offset: 0x320
     // Size: 0x6c
     function function_1e74977(localclientnum) {
-        var_1ed06bbc = [[ self ]]->get_data(localclientnum, "show_icon");
-        new_val = (var_1ed06bbc + 1) % 2;
+        current_val = [[ self ]]->get_data(localclientnum, "show_icon");
+        new_val = (current_val + 1) % 2;
         [[ self ]]->set_data(localclientnum, "show_icon", new_val);
     }
 

@@ -566,9 +566,9 @@ function function_3172cf59(player, newscore, weapon, mpplayerscore) {
         return;
     }
     recordplayerstats(player, "score", newscore);
-    var_30aa1bf5 = !level.disablechallenges;
+    challengesenabled = !level.disablechallenges;
     player stats::function_bb7eedf0(#"score", scorediff);
-    if (var_30aa1bf5) {
+    if (challengesenabled) {
         player stats::function_dad108fa(#"career_score", scorediff);
         scoreevents = function_3cbc4c6c(weapon.var_2e4a8800);
         var_8a4cfbd = weapon.var_76ce72e8 && isdefined(scoreevents) && scoreevents.var_fcd2ff3a === 1;
@@ -580,7 +580,7 @@ function function_3172cf59(player, newscore, weapon, mpplayerscore) {
     }
     if (level.hardcoremode) {
         player stats::function_dad108fa(#"score_hc", scorediff);
-        if (var_30aa1bf5) {
+        if (challengesenabled) {
             player stats::function_dad108fa(#"career_score_hc", scorediff);
         }
     } else if (!level.arenamatch) {
@@ -591,7 +591,7 @@ function function_3172cf59(player, newscore, weapon, mpplayerscore) {
     }
     if (level.multiteam) {
         player stats::function_dad108fa(#"score_multiteam", scorediff);
-        if (var_30aa1bf5) {
+        if (challengesenabled) {
             player stats::function_dad108fa(#"career_score_multiteam", scorediff);
         }
     }

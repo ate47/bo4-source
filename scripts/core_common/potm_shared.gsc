@@ -26,7 +26,7 @@ function autoexec __init__system__() {
 // Size: 0x3e
 function __init__() {
     callback::on_start_gametype(&init);
-    level.var_abb3fd2 = &function_dfecaa9;
+    level.var_abb3fd2 = &event_bookmark;
 }
 
 // Namespace potm/potm_shared
@@ -1672,7 +1672,7 @@ function function_651a5f4(var_81538b15, einflictor = var_81538b15) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0x1c4425bb, Offset: 0x6420
 // Size: 0xc4
-function function_dfecaa9(var_65e76577, time, var_81538b15, scoreeventpriority, eventdata) {
+function event_bookmark(var_65e76577, time, var_81538b15, scoreeventpriority, eventdata) {
     if (!isenabled()) {
         return;
     }
@@ -1701,7 +1701,7 @@ function function_d6b60141(var_25b9e3c2, client, label, score, combatefficiencys
     eventdata.score = score;
     eventdata.combatefficiencyscore = combatefficiencyscore;
     eventdata.eventindex = eventindex;
-    function_dfecaa9(var_25b9e3c2, gettime(), client, 0, eventdata);
+    event_bookmark(var_25b9e3c2, gettime(), client, 0, eventdata);
 }
 
 // Namespace potm/potm_shared

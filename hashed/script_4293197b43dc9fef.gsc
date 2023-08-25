@@ -5,9 +5,9 @@
 
 // Namespace ct_recon_melee_vip
 // Method(s) 6 Total 12
-class class_c27780d9 : cluielem {
+class cct_recon_melee_vip : cluielem {
 
-    // Namespace class_c27780d9/ct_recon_melee_vip
+    // Namespace cct_recon_melee_vip/ct_recon_melee_vip
     // Params 0, eflags: 0x8
     // Checksum 0x704df030, Offset: 0x1a8
     // Size: 0x14
@@ -15,7 +15,7 @@ class class_c27780d9 : cluielem {
         cluielem::__constructor();
     }
 
-    // Namespace class_c27780d9/ct_recon_melee_vip
+    // Namespace cct_recon_melee_vip/ct_recon_melee_vip
     // Params 0, eflags: 0x90 class_linked
     // Checksum 0x7888bdf, Offset: 0x290
     // Size: 0x14
@@ -23,7 +23,7 @@ class class_c27780d9 : cluielem {
         cluielem::__destructor();
     }
 
-    // Namespace namespace_c27780d9/ct_recon_melee_vip
+    // Namespace cct_recon_melee_vip/ct_recon_melee_vip
     // Params 1, eflags: 0x0
     // Checksum 0x5bc4ae03, Offset: 0x258
     // Size: 0x2c
@@ -31,7 +31,7 @@ class class_c27780d9 : cluielem {
         cluielem::open(localclientnum, #"ct_recon_melee_vip");
     }
 
-    // Namespace namespace_c27780d9/ct_recon_melee_vip
+    // Namespace cct_recon_melee_vip/ct_recon_melee_vip
     // Params 1, eflags: 0x0
     // Checksum 0x1c262195, Offset: 0x228
     // Size: 0x24
@@ -39,7 +39,7 @@ class class_c27780d9 : cluielem {
         cluielem::function_fa582112(localclientnum);
     }
 
-    // Namespace namespace_c27780d9/ct_recon_melee_vip
+    // Namespace cct_recon_melee_vip/ct_recon_melee_vip
     // Params 1, eflags: 0x0
     // Checksum 0x8f52469b, Offset: 0x1f8
     // Size: 0x24
@@ -47,7 +47,7 @@ class class_c27780d9 : cluielem {
         cluielem::register_clientside(uid);
     }
 
-    // Namespace namespace_c27780d9/ct_recon_melee_vip
+    // Namespace cct_recon_melee_vip/ct_recon_melee_vip
     // Params 1, eflags: 0x0
     // Checksum 0x45b46734, Offset: 0x1c8
     // Size: 0x24
@@ -62,7 +62,7 @@ class class_c27780d9 : cluielem {
 // Checksum 0x21d34da, Offset: 0xa0
 // Size: 0x40
 function register(uid) {
-    elem = new class_c27780d9();
+    elem = new cct_recon_melee_vip();
     [[ elem ]]->setup_clientfields(uid);
     return elem;
 }
@@ -72,7 +72,7 @@ function register(uid) {
 // Checksum 0xe8a0e93a, Offset: 0xe8
 // Size: 0x40
 function register_clientside(uid) {
-    elem = new class_c27780d9();
+    elem = new cct_recon_melee_vip();
     [[ elem ]]->register_clientside(uid);
     return elem;
 }

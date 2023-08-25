@@ -33,17 +33,17 @@ function private _throwstowedweapon(entity, weapon, weaponmodel) {
 // Params 3, eflags: 0x0
 // Checksum 0x830fd99c, Offset: 0x238
 // Size: 0xd4
-function stowweapon(weapon, var_a975974e, var_913dc4cf) {
+function stowweapon(weapon, positionoffset, orientationoffset) {
     entity = self;
-    if (!isdefined(var_a975974e)) {
-        var_a975974e = (0, 0, 0);
+    if (!isdefined(positionoffset)) {
+        positionoffset = (0, 0, 0);
     }
-    if (!isdefined(var_913dc4cf)) {
-        var_913dc4cf = (0, 0, 0);
+    if (!isdefined(orientationoffset)) {
+        orientationoffset = (0, 0, 0);
     }
     weaponmodel = spawn("script_model", (0, 0, 0));
     weaponmodel setmodel(weapon.worldmodel);
-    weaponmodel linkto(entity, "tag_stowed_back", var_a975974e, var_913dc4cf);
+    weaponmodel linkto(entity, "tag_stowed_back", positionoffset, orientationoffset);
     entity thread _throwstowedweapon(entity, weapon, weaponmodel);
 }
 
@@ -59,9 +59,9 @@ function placeweaponon(weapon, position) {
     if (!isdefined(self.weaponinfo[weapon.name])) {
         self init::initweapon(weapon);
     }
-    var_9d8446b3 = self.weaponinfo[weapon.name].position;
+    curposition = self.weaponinfo[weapon.name].position;
     /#
-        assert(var_9d8446b3 == "<unknown string>" || self.a.var_a5b8e231[var_9d8446b3] == weapon);
+        assert(curposition == "<unknown string>" || self.a.var_a5b8e231[curposition] == weapon);
     #/
     if (!isarray(self.a.var_a5b8e231)) {
         self.a.var_a5b8e231 = [];
@@ -79,7 +79,7 @@ function placeweaponon(weapon, position) {
         return;
     }
     self detachallweaponmodels();
-    if (var_9d8446b3 != "none") {
+    if (curposition != "none") {
         self detachweapon(weapon);
     }
     if (position == "none") {
@@ -186,22 +186,22 @@ function gettagforpos(position) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0xb61943f9, Offset: 0xaa8
 // Size: 0x216
-function throwweapon(weapon, var_5cc0e2b3, scavenger, var_c1a8dca6) {
+function throwweapon(weapon, positiontag, scavenger, var_c1a8dca6) {
     waittime = 0.1;
-    var_a80f93c4 = 2;
-    var_18d5a59d = 10;
-    startposition = self gettagorigin(var_5cc0e2b3);
-    startangles = self gettagangles(var_5cc0e2b3);
+    linearscalar = 2;
+    angularscalar = 10;
+    startposition = self gettagorigin(positiontag);
+    startangles = self gettagangles(positiontag);
     if (!isdefined(startposition) || !isdefined(startangles)) {
         return;
     }
     wait(waittime);
     if (isdefined(self)) {
-        endposition = self gettagorigin(var_5cc0e2b3);
-        var_37f80214 = self gettagangles(var_5cc0e2b3);
-        linearvelocity = (endposition - startposition) * 1 / waittime * var_a80f93c4;
-        angularvelocity = vectornormalize(var_37f80214 - startangles) * var_18d5a59d;
-        throwweapon = self dropweapon(weapon, var_5cc0e2b3, linearvelocity, angularvelocity, scavenger);
+        endposition = self gettagorigin(positiontag);
+        endangles = self gettagangles(positiontag);
+        linearvelocity = (endposition - startposition) * 1 / waittime * linearscalar;
+        angularvelocity = vectornormalize(endangles - startangles) * angularscalar;
+        throwweapon = self dropweapon(weapon, positiontag, linearvelocity, angularvelocity, scavenger);
         if (isdefined(throwweapon)) {
             throwweapon setcontents(throwweapon setcontents(0) & ~(32768 | 67108864 | 8388608 | 33554432));
         }
@@ -235,17 +235,17 @@ function dropaiweapon() {
     }
     [[ level.var_d3f761e0 ]]->waitinqueue(self);
     current_weapon = self.weapon;
-    var_665e1536 = player_weapon_drop(current_weapon);
+    dropweaponname = player_weapon_drop(current_weapon);
     position = self.weaponinfo[current_weapon.name].position;
-    var_89c301b1 = !isdefined(self.dontdropweapon) || self.dontdropweapon === 0;
-    var_140b741c = current_weapon == getweapon("riotshield");
+    shoulddropweapon = !isdefined(self.dontdropweapon) || self.dontdropweapon === 0;
+    shoulddeleteafterdropping = current_weapon == getweapon("riotshield");
     if (current_weapon.isscavengable == 0) {
-        var_89c301b1 = 0;
+        shoulddropweapon = 0;
     }
-    if (var_89c301b1 && self.dropweapon) {
+    if (shoulddropweapon && self.dropweapon) {
         self.dontdropweapon = 1;
-        var_5cc0e2b3 = gettagforpos(position);
-        throwweapon(var_665e1536, var_5cc0e2b3, 0, var_140b741c);
+        positiontag = gettagforpos(position);
+        throwweapon(dropweaponname, positiontag, 0, shoulddeleteafterdropping);
     }
     if (self.weapon != level.weaponnone) {
         placeweaponon(current_weapon, "none");
@@ -275,7 +275,7 @@ function dropallaiweapons() {
     }
     self.a.var_2db594e4 = 1;
     self detachallweaponmodels();
-    var_157ae82a = 0;
+    droppedsidearm = 0;
     if (isdefined(self.var_7f75cf1c)) {
         for (index = 0; index < self.var_7f75cf1c.size; index++) {
             weapon = self.a.var_a5b8e231[self.var_7f75cf1c[index]];
@@ -297,14 +297,14 @@ function dropallaiweapons() {
                     droppedweapon = self dropweapon(weapon, self.var_7f75cf1c[index], speed);
                     if (self.sidearm != level.weaponnone) {
                         if (weapon == self.sidearm) {
-                            var_157ae82a = 1;
+                            droppedsidearm = 1;
                         }
                     }
                 }
             }
         }
     }
-    if (!var_157ae82a && self.sidearm != level.weaponnone) {
+    if (!droppedsidearm && self.sidearm != level.weaponnone) {
         if (randomint(100) <= 10) {
             velocity = self getvelocity();
             speed = length(velocity) * 0.5;
@@ -335,7 +335,7 @@ function handlenotetrack(note, flagname, customfunction, var1) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0xddc41154, Offset: 0x13f8
 // Size: 0xa8
-function donotetracks(flagname, customfunction, var_dd74a5d5, var1) {
+function donotetracks(flagname, customfunction, debugidentifier, var1) {
     for (;;) {
         waitresult = undefined;
         waitresult = self waittill(flagname);
@@ -354,7 +354,7 @@ function donotetracks(flagname, customfunction, var_dd74a5d5, var1) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xd29a6d97, Offset: 0x14a8
 // Size: 0xe0
-function donotetracksintercept(flagname, var_dd8ebebf, var_dd74a5d5) {
+function donotetracksintercept(flagname, var_dd8ebebf, debugidentifier) {
     /#
         assert(isdefined(var_dd8ebebf));
     #/
@@ -365,8 +365,8 @@ function donotetracksintercept(flagname, var_dd8ebebf, var_dd74a5d5) {
         if (!isdefined(note)) {
             note = "undefined";
         }
-        var_ca1a745f = [[ var_dd8ebebf ]](note);
-        if (isdefined(var_ca1a745f) && var_ca1a745f) {
+        intercepted = [[ var_dd8ebebf ]](note);
+        if (isdefined(intercepted) && intercepted) {
             continue;
         }
         val = self handlenotetrack(note, flagname);
@@ -380,9 +380,9 @@ function donotetracksintercept(flagname, var_dd8ebebf, var_dd74a5d5) {
 // Params 2, eflags: 0x0
 // Checksum 0xc4679a55, Offset: 0x1590
 // Size: 0xb6
-function donotetrackspostcallback(flagname, var_cd0d2063) {
+function donotetrackspostcallback(flagname, postfunction) {
     /#
-        assert(isdefined(var_cd0d2063));
+        assert(isdefined(postfunction));
     #/
     for (;;) {
         waitresult = undefined;
@@ -392,7 +392,7 @@ function donotetrackspostcallback(flagname, var_cd0d2063) {
             note = "undefined";
         }
         val = self handlenotetrack(note, flagname);
-        [[ var_cd0d2063 ]](note);
+        [[ postfunction ]](note);
         if (isdefined(val)) {
             return val;
         }
@@ -403,41 +403,41 @@ function donotetrackspostcallback(flagname, var_cd0d2063) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0xb22dfe33, Offset: 0x1650
 // Size: 0x54
-function donotetracksforever(flagname, killstring, customfunction, var_dd74a5d5) {
-    donotetracksforeverproc(&donotetracks, flagname, killstring, customfunction, var_dd74a5d5);
+function donotetracksforever(flagname, killstring, customfunction, debugidentifier) {
+    donotetracksforeverproc(&donotetracks, flagname, killstring, customfunction, debugidentifier);
 }
 
 // Namespace shared/shared
 // Params 4, eflags: 0x1 linked
 // Checksum 0x165d17ab, Offset: 0x16b0
 // Size: 0x54
-function donotetracksforeverintercept(flagname, killstring, var_dd8ebebf, var_dd74a5d5) {
-    donotetracksforeverproc(&donotetracksintercept, flagname, killstring, var_dd8ebebf, var_dd74a5d5);
+function donotetracksforeverintercept(flagname, killstring, var_dd8ebebf, debugidentifier) {
+    donotetracksforeverproc(&donotetracksintercept, flagname, killstring, var_dd8ebebf, debugidentifier);
 }
 
 // Namespace shared/shared
 // Params 5, eflags: 0x1 linked
 // Checksum 0x812df0e6, Offset: 0x1710
 // Size: 0x14e
-function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfunction, var_dd74a5d5) {
+function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfunction, debugidentifier) {
     if (isdefined(killstring)) {
         self endon(killstring);
     }
     self endon(#"killanimscript");
-    if (!isdefined(var_dd74a5d5)) {
-        var_dd74a5d5 = "undefined";
+    if (!isdefined(debugidentifier)) {
+        debugidentifier = "undefined";
     }
     for (;;) {
         time = gettime();
-        returnednote = [[ notetracksfunc ]](flagname, customfunction, var_dd74a5d5);
+        returnednote = [[ notetracksfunc ]](flagname, customfunction, debugidentifier);
         timetaken = gettime() - time;
         if (timetaken < 0.05) {
             time = gettime();
-            returnednote = [[ notetracksfunc ]](flagname, customfunction, var_dd74a5d5);
+            returnednote = [[ notetracksfunc ]](flagname, customfunction, debugidentifier);
             timetaken = gettime() - time;
             if (timetaken < 0.05) {
                 /#
-                    println(gettime() + "<unknown string>" + var_dd74a5d5 + "<unknown string>" + flagname + "<unknown string>" + returnednote + "<unknown string>");
+                    println(gettime() + "<unknown string>" + debugidentifier + "<unknown string>" + flagname + "<unknown string>" + returnednote + "<unknown string>");
                 #/
                 wait(0.05 - timetaken);
             }
@@ -449,29 +449,29 @@ function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfun
 // Params 4, eflags: 0x0
 // Checksum 0x4e04bb9c, Offset: 0x1868
 // Size: 0x84
-function donotetracksfortime(time, flagname, customfunction, var_dd74a5d5) {
+function donotetracksfortime(time, flagname, customfunction, debugidentifier) {
     ent = spawnstruct();
     ent thread donotetracksfortimeendnotify(time);
-    donotetracksfortimeproc(&donotetracksforever, time, flagname, customfunction, var_dd74a5d5, ent);
+    donotetracksfortimeproc(&donotetracksforever, time, flagname, customfunction, debugidentifier, ent);
 }
 
 // Namespace shared/shared
 // Params 4, eflags: 0x0
 // Checksum 0xcdeeb063, Offset: 0x18f8
 // Size: 0x84
-function donotetracksfortimeintercept(time, flagname, var_dd8ebebf, var_dd74a5d5) {
+function donotetracksfortimeintercept(time, flagname, var_dd8ebebf, debugidentifier) {
     ent = spawnstruct();
     ent thread donotetracksfortimeendnotify(time);
-    donotetracksfortimeproc(&donotetracksforeverintercept, time, flagname, var_dd8ebebf, var_dd74a5d5, ent);
+    donotetracksfortimeproc(&donotetracksforeverintercept, time, flagname, var_dd8ebebf, debugidentifier, ent);
 }
 
 // Namespace shared/shared
 // Params 6, eflags: 0x1 linked
 // Checksum 0xff1e620d, Offset: 0x1988
 // Size: 0x62
-function donotetracksfortimeproc(donotetracksforeverfunc, time, flagname, customfunction, var_dd74a5d5, ent) {
+function donotetracksfortimeproc(donotetracksforeverfunc, time, flagname, customfunction, debugidentifier, ent) {
     ent endon(#"stop_notetracks");
-    [[ donotetracksforeverfunc ]](flagname, undefined, customfunction, var_dd74a5d5);
+    [[ donotetracksforeverfunc ]](flagname, undefined, customfunction, debugidentifier);
 }
 
 // Namespace shared/shared

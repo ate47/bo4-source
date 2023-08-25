@@ -13,37 +13,37 @@ function saygenericdialogue(typestring) {
     }
     switch (typestring) {
     case #"attack":
-        var_5e9ce5ea = 0.5;
+        importance = 0.5;
         break;
     case #"swing":
-        var_5e9ce5ea = 0.5;
+        importance = 0.5;
         typestring = "attack";
         break;
     case #"flashbang":
-        var_5e9ce5ea = 0.7;
+        importance = 0.7;
         break;
     case #"pain_small":
-        var_5e9ce5ea = 0.4;
+        importance = 0.4;
         break;
     case #"pain_bullet":
         wait(0.01);
-        var_5e9ce5ea = 0.4;
+        importance = 0.4;
         break;
     default:
         /#
             println("<unknown string>" + typestring);
         #/
-        var_5e9ce5ea = 0.3;
+        importance = 0.3;
         break;
     }
-    saygenericdialoguewithimportance(typestring, var_5e9ce5ea);
+    saygenericdialoguewithimportance(typestring, importance);
 }
 
 // Namespace face/face
 // Params 2, eflags: 0x1 linked
 // Checksum 0xcaef3e10, Offset: 0x258
 // Size: 0xb4
-function saygenericdialoguewithimportance(typestring, var_5e9ce5ea) {
+function saygenericdialoguewithimportance(typestring, importance) {
     soundalias = "dds_";
     if (isdefined(self.var_abab1ada)) {
         soundalias = soundalias + self.var_abab1ada;
@@ -55,7 +55,7 @@ function saygenericdialoguewithimportance(typestring, var_5e9ce5ea) {
     }
     soundalias = soundalias + "_" + typestring;
     if (soundexists(soundalias)) {
-        self thread playfacethread(undefined, soundalias, var_5e9ce5ea);
+        self thread playfacethread(undefined, soundalias, importance);
     }
 }
 
@@ -83,8 +83,8 @@ function setidleface(var_abbb6232) {
 // Params 7, eflags: 0x0
 // Checksum 0xb9a0d28f, Offset: 0x390
 // Size: 0x6c
-function sayspecificdialogue(facialanim, soundalias, var_5e9ce5ea, notifystring, var_484baed, timetowait, var_5249775f) {
-    self thread playfacethread(facialanim, soundalias, var_5e9ce5ea, notifystring, var_484baed, timetowait, var_5249775f);
+function sayspecificdialogue(facialanim, soundalias, importance, notifystring, var_484baed, timetowait, player_or_team) {
+    self thread playfacethread(facialanim, soundalias, importance, notifystring, var_484baed, timetowait, player_or_team);
 }
 
 // Namespace face/face
@@ -99,14 +99,14 @@ function playidleface() {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x9f881ce9, Offset: 0x418
 // Size: 0x6fe
-function playfacethread(facialanim, var_ec28e1e6, var_5e9ce5ea, notifystring, var_484baed, timetowait, var_5249775f) {
+function playfacethread(facialanim, var_ec28e1e6, importance, notifystring, var_484baed, timetowait, player_or_team) {
     self endon(#"death");
     if (!isdefined(var_ec28e1e6)) {
         wait(1);
         self notify(notifystring);
         return;
     }
-    var_bf0d6a74 = var_ec28e1e6;
+    str_notify_alias = var_ec28e1e6;
     if (!isdefined(level.var_51fbd9f0)) {
         level.var_51fbd9f0 = 0;
     }
@@ -127,11 +127,11 @@ function playfacethread(facialanim, var_ec28e1e6, var_5e9ce5ea, notifystring, va
     }
     if (self.istalking) {
         if (isdefined(self.a.var_76aa846e)) {
-            if (var_5e9ce5ea < self.a.var_76aa846e) {
+            if (importance < self.a.var_76aa846e) {
                 wait(1);
                 self notify(notifystring);
                 return;
-            } else if (var_5e9ce5ea == self.a.var_76aa846e) {
+            } else if (importance == self.a.var_76aa846e) {
                 if (self.a.var_1f781c9f == var_ec28e1e6) {
                     return;
                 }
@@ -173,8 +173,8 @@ function playfacethread(facialanim, var_ec28e1e6, var_5e9ce5ea, notifystring, va
     self.a.var_fd4758db = 0;
     self.a.var_610ae4e7 = notifystring;
     self.a.var_1f781c9f = var_ec28e1e6;
-    self.a.var_76aa846e = var_5e9ce5ea;
-    if (var_5e9ce5ea == 1) {
+    self.a.var_76aa846e = importance;
+    if (importance == 1) {
         level.var_51fbd9f0 = level.var_51fbd9f0 + 1;
     }
     /#
@@ -182,34 +182,34 @@ function playfacethread(facialanim, var_ec28e1e6, var_5e9ce5ea, notifystring, va
             println("<unknown string>" + var_ec28e1e6);
         }
     #/
-    var_f2cca3b3 = notifystring + " " + level.var_658dab08;
+    uniquenotify = notifystring + " " + level.var_658dab08;
     level.var_658dab08 = level.var_658dab08 + 1;
     if (isdefined(level.scr_sound) && isdefined(level.scr_sound[#"generic"])) {
-        var_62b02f85 = level.scr_sound[#"generic"][var_ec28e1e6];
+        str_vox_file = level.scr_sound[#"generic"][var_ec28e1e6];
     }
-    if (!isdefined(var_62b02f85) && soundexists(var_ec28e1e6)) {
-        var_62b02f85 = var_ec28e1e6;
+    if (!isdefined(str_vox_file) && soundexists(var_ec28e1e6)) {
+        str_vox_file = var_ec28e1e6;
     }
-    if (isdefined(var_62b02f85)) {
-        if (soundexists(var_62b02f85)) {
-            if (isdefined(var_5249775f)) {
-                self thread _play_sound_to_player_with_notify(var_62b02f85, var_5249775f, var_f2cca3b3);
+    if (isdefined(str_vox_file)) {
+        if (soundexists(str_vox_file)) {
+            if (isdefined(player_or_team)) {
+                self thread _play_sound_to_player_with_notify(str_vox_file, player_or_team, uniquenotify);
             } else if (isdefined(self gettagorigin("J_Head"))) {
-                self playsoundwithnotify(var_62b02f85, var_f2cca3b3, "J_Head");
+                self playsoundwithnotify(str_vox_file, uniquenotify, "J_Head");
             } else {
-                self playsoundwithnotify(var_62b02f85, var_f2cca3b3);
+                self playsoundwithnotify(str_vox_file, uniquenotify);
             }
         } else {
             /#
                 println("<unknown string>" + var_ec28e1e6 + "<unknown string>");
-                self thread _missing_dialog(var_ec28e1e6, var_62b02f85, var_f2cca3b3);
+                self thread _missing_dialog(var_ec28e1e6, str_vox_file, uniquenotify);
             #/
         }
     } else {
-        self thread _temp_dialog(var_ec28e1e6, var_f2cca3b3);
+        self thread _temp_dialog(var_ec28e1e6, uniquenotify);
     }
-    self waittill(#"death", #"cancel speaking", var_f2cca3b3);
-    if (var_5e9ce5ea == 1) {
+    self waittill(#"death", #"cancel speaking", uniquenotify);
+    if (importance == 1) {
         level.var_51fbd9f0 = level.var_51fbd9f0 - 1;
         level.var_5f8ccfc6 = gettime();
     }
@@ -221,7 +221,7 @@ function playfacethread(facialanim, var_ec28e1e6, var_5e9ce5ea, notifystring, va
         self.a.var_76aa846e = undefined;
         self.var_5339141b = gettime();
     }
-    self notify(#"done speaking", {#var_42a7972a:var_bf0d6a74});
+    self notify(#"done speaking", {#var_42a7972a:str_notify_alias});
     self notify(notifystring);
 }
 
@@ -229,28 +229,28 @@ function playfacethread(facialanim, var_ec28e1e6, var_5e9ce5ea, notifystring, va
 // Params 3, eflags: 0x1 linked
 // Checksum 0x8d79f8ba, Offset: 0xb20
 // Size: 0xfc
-function _play_sound_to_player_with_notify(soundalias, var_5249775f, var_f2cca3b3) {
+function _play_sound_to_player_with_notify(soundalias, player_or_team, uniquenotify) {
     self endon(#"death");
-    if (isplayer(var_5249775f)) {
-        var_5249775f endon(#"death");
-        self playsoundtoplayer(soundalias, var_5249775f);
-    } else if (isstring(var_5249775f)) {
-        self playsoundtoteam(soundalias, var_5249775f);
+    if (isplayer(player_or_team)) {
+        player_or_team endon(#"death");
+        self playsoundtoplayer(soundalias, player_or_team);
+    } else if (isstring(player_or_team)) {
+        self playsoundtoteam(soundalias, player_or_team);
     }
-    var_5c3d2c04 = soundgetplaybacktime(soundalias);
-    if (var_5c3d2c04 > 0) {
-        wait(var_5c3d2c04 * 0.001);
+    n_playbacktime = soundgetplaybacktime(soundalias);
+    if (n_playbacktime > 0) {
+        wait(n_playbacktime * 0.001);
     } else {
         wait(1);
     }
-    self notify(var_f2cca3b3);
+    self notify(uniquenotify);
 }
 
 // Namespace face/face
 // Params 3, eflags: 0x5 linked
 // Checksum 0xc3e7d4ed, Offset: 0xc28
 // Size: 0x33c
-function private _temp_dialog(str_line, var_f2cca3b3, var_8f0541b2 = 0) {
+function private _temp_dialog(str_line, uniquenotify, var_8f0541b2 = 0) {
     setdvar(#"bgcache_disablewarninghints", 1);
     if (!var_8f0541b2 && isdefined(self.propername)) {
         str_line = self.propername + ": " + str_line;
@@ -275,15 +275,15 @@ function private _temp_dialog(str_line, var_f2cca3b3, var_8f0541b2 = 0) {
         }
     }
     setdvar(#"bgcache_disablewarninghints", 0);
-    self notify(var_f2cca3b3);
+    self notify(uniquenotify);
 }
 
 // Namespace face/face
 // Params 3, eflags: 0x4
 // Checksum 0xb8554e4c, Offset: 0xf70
 // Size: 0x54
-function private _missing_dialog(var_ec28e1e6, var_62b02f85, var_f2cca3b3) {
-    _temp_dialog("script id: " + var_ec28e1e6 + " sound alias: " + var_62b02f85, var_f2cca3b3, 1);
+function private _missing_dialog(var_ec28e1e6, str_vox_file, uniquenotify) {
+    _temp_dialog("script id: " + var_ec28e1e6 + " sound alias: " + str_vox_file, uniquenotify, 1);
 }
 
 // Namespace face/face

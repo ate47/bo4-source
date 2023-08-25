@@ -104,8 +104,8 @@ function function_eac89317() {
 // Size: 0x52
 function function_63be76e0() {
     self.v_up = self.origin;
-    var_a8f6c586 = struct::get(self.target, "targetname");
-    self.var_5881cf3c = var_a8f6c586.origin;
+    s_down = struct::get(self.target, "targetname");
+    self.v_down = s_down.origin;
 }
 
 // Namespace namespace_3f3f1a00/namespace_3105b649
@@ -113,7 +113,7 @@ function function_63be76e0() {
 // Checksum 0x7aef87f4, Offset: 0x510
 // Size: 0x2c
 function function_8724b9c4() {
-    self moveto(self.var_5881cf3c, 0.5);
+    self moveto(self.v_down, 0.5);
 }
 
 // Namespace namespace_3f3f1a00/namespace_3105b649

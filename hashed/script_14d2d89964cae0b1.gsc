@@ -28,37 +28,37 @@ function private function_3aa023f1(name) {
     if (isdefined(gibdef)) {
         return gibdef;
     }
-    var_59dc51d9 = struct::get_script_bundle("gibcharacterdef", name);
-    if (!isdefined(var_59dc51d9)) {
+    definition = struct::get_script_bundle("gibcharacterdef", name);
+    if (!isdefined(definition)) {
         /#
             assertmsg("<unknown string>" + name);
         #/
         return undefined;
     }
-    var_189ec5c0 = [];
-    var_189ec5c0[2] = "annihilate";
-    var_189ec5c0[8] = "head";
-    var_189ec5c0[16] = "rightarm";
-    var_189ec5c0[32] = "leftarm";
-    var_189ec5c0[128] = "rightleg";
-    var_189ec5c0[256] = "leftleg";
+    gibpiecelookup = [];
+    gibpiecelookup[2] = "annihilate";
+    gibpiecelookup[8] = "head";
+    gibpiecelookup[16] = "rightarm";
+    gibpiecelookup[32] = "leftarm";
+    gibpiecelookup[128] = "rightleg";
+    gibpiecelookup[256] = "leftleg";
     gibpieces = [];
-    foreach (gibflag, var_fee7cbdd in var_189ec5c0) {
-        if (!isdefined(var_fee7cbdd)) {
+    foreach (gibflag, gibpiece in gibpiecelookup) {
+        if (!isdefined(gibpiece)) {
             /#
                 assertmsg("<unknown string>" + gibflag);
             #/
         } else {
-            var_49e98504 = spawnstruct();
-            var_49e98504.var_6d43549d = var_59dc51d9.(var_fee7cbdd + "_gibmodel");
-            var_49e98504.var_d241141a = var_59dc51d9.(var_fee7cbdd + "_gibtag");
-            var_49e98504.var_f1af9a8e = var_59dc51d9.(var_fee7cbdd + "_gibfx");
-            var_49e98504.var_d147aa1c = var_59dc51d9.(var_fee7cbdd + "_gibeffecttag");
-            var_49e98504.var_d4be909b = var_59dc51d9.(var_fee7cbdd + "_gibdynentfx");
-            var_49e98504.var_42c89fa1 = var_59dc51d9.(var_fee7cbdd + "_gibcinematicfx");
-            var_49e98504.var_28882334 = var_59dc51d9.(var_fee7cbdd + "_gibsound");
-            var_49e98504.var_7cfc4f8 = var_59dc51d9.(var_fee7cbdd + "_gibhidetag");
-            gibpieces[gibflag] = var_49e98504;
+            gibstruct = spawnstruct();
+            gibstruct.gibmodel = definition.(gibpiece + "_gibmodel");
+            gibstruct.var_d241141a = definition.(gibpiece + "_gibtag");
+            gibstruct.var_f1af9a8e = definition.(gibpiece + "_gibfx");
+            gibstruct.var_d147aa1c = definition.(gibpiece + "_gibeffecttag");
+            gibstruct.var_d4be909b = definition.(gibpiece + "_gibdynentfx");
+            gibstruct.var_42c89fa1 = definition.(gibpiece + "_gibcinematicfx");
+            gibstruct.var_28882334 = definition.(gibpiece + "_gibsound");
+            gibstruct.var_7cfc4f8 = definition.(gibpiece + "_gibhidetag");
+            gibpieces[gibflag] = gibstruct;
         }
     }
     level.var_ad0f5efa[name] = gibpieces;
@@ -91,31 +91,31 @@ function private function_9fe14ca3(entity, gibflag) {
     if (isdefined(gibdef)) {
         return gibdef;
     }
-    var_59dc51d9 = struct::get_script_bundle("playeroutfitgibdef", name);
-    if (!isdefined(var_59dc51d9)) {
+    definition = struct::get_script_bundle("playeroutfitgibdef", name);
+    if (!isdefined(definition)) {
         /#
             assertmsg("<unknown string>" + name);
         #/
         return undefined;
     }
-    var_189ec5c0 = [];
-    var_189ec5c0[0] = "left";
-    var_189ec5c0[1] = "right";
+    gibpiecelookup = [];
+    gibpiecelookup[0] = "left";
+    gibpiecelookup[1] = "right";
     gibpieces = [];
-    foreach (side, var_fee7cbdd in var_189ec5c0) {
-        if (!isdefined(var_fee7cbdd)) {
+    foreach (side, gibpiece in gibpiecelookup) {
+        if (!isdefined(gibpiece)) {
             continue;
         }
-        var_49e98504 = spawnstruct();
-        var_49e98504.var_6d43549d = var_59dc51d9.(var_fee7cbdd + "_gibmodel");
-        var_49e98504.var_d241141a = var_59dc51d9.(var_fee7cbdd + "_gibtag");
-        var_49e98504.var_f1af9a8e = var_59dc51d9.(var_fee7cbdd + "_gibfx");
-        var_49e98504.var_d147aa1c = var_59dc51d9.(var_fee7cbdd + "_gibeffecttag");
-        var_49e98504.var_d4be909b = var_59dc51d9.(var_fee7cbdd + "_gibdynentfx");
-        var_49e98504.var_42c89fa1 = var_59dc51d9.(var_fee7cbdd + "_gibcinematicfx");
-        var_49e98504.var_28882334 = var_59dc51d9.(var_fee7cbdd + "_gibsound");
-        var_49e98504.var_7cfc4f8 = var_59dc51d9.(var_fee7cbdd + "_gibhidetag");
-        gibpieces[side] = var_49e98504;
+        gibstruct = spawnstruct();
+        gibstruct.gibmodel = definition.(gibpiece + "_gibmodel");
+        gibstruct.var_d241141a = definition.(gibpiece + "_gibtag");
+        gibstruct.var_f1af9a8e = definition.(gibpiece + "_gibfx");
+        gibstruct.var_d147aa1c = definition.(gibpiece + "_gibeffecttag");
+        gibstruct.var_d4be909b = definition.(gibpiece + "_gibdynentfx");
+        gibstruct.var_42c89fa1 = definition.(gibpiece + "_gibcinematicfx");
+        gibstruct.var_28882334 = definition.(gibpiece + "_gibsound");
+        gibstruct.var_7cfc4f8 = definition.(gibpiece + "_gibhidetag");
+        gibpieces[side] = gibstruct;
     }
     level.var_ad0f5efa[name] = gibpieces;
     return gibpieces;
@@ -126,8 +126,8 @@ function private function_9fe14ca3(entity, gibflag) {
 // Checksum 0x4e90d68, Offset: 0x970
 // Size: 0xba
 function function_c0099e86(entity, gibflag) {
-    var_fee7cbdd = function_9fe14ca3(entity, gibflag);
-    if (!isdefined(var_fee7cbdd)) {
+    gibpiece = function_9fe14ca3(entity, gibflag);
+    if (!isdefined(gibpiece)) {
         return undefined;
     }
     if (gibflag == 8) {
@@ -137,7 +137,7 @@ function function_c0099e86(entity, gibflag) {
     } else if (gibflag == 32 || gibflag == 256) {
         side = 0;
     }
-    return var_fee7cbdd[side];
+    return gibpiece[side];
 }
 
 // Namespace gibclientutils/gib
@@ -228,14 +228,14 @@ function private _getgibbedstate(localclientnum, entity) {
 // Checksum 0xf7d34ae0, Offset: 0xfb0
 // Size: 0x15a
 function private _getgibbedlegmodel(localclientnum, entity) {
-    var_8f411bbf = _getgibbedstate(localclientnum, entity);
-    var_ef8da8e1 = var_8f411bbf & 128;
-    var_5a697610 = var_8f411bbf & 256;
-    if (var_ef8da8e1 && var_5a697610) {
+    gibstate = _getgibbedstate(localclientnum, entity);
+    rightleggibbed = gibstate & 128;
+    leftleggibbed = gibstate & 256;
+    if (rightleggibbed && leftleggibbed) {
         return (isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.legdmg4 : entity.legdmg4);
-    } else if (var_ef8da8e1) {
+    } else if (rightleggibbed) {
         return (isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.legdmg2 : entity.legdmg2);
-    } else if (var_5a697610) {
+    } else if (leftleggibbed) {
         return (isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.legdmg3 : entity.legdmg3);
     }
     return isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.legdmg1 : entity.legdmg1;
@@ -262,9 +262,9 @@ function private _getgibextramodel(var_d9ebff1d, entity, gibflag) {
 // Checksum 0x3df54ee8, Offset: 0x11f0
 // Size: 0x15a
 function private _getgibbedtorsomodel(localclientnum, entity) {
-    var_8f411bbf = _getgibbedstate(localclientnum, entity);
-    rightarmgibbed = var_8f411bbf & 16;
-    leftarmgibbed = var_8f411bbf & 32;
+    gibstate = _getgibbedstate(localclientnum, entity);
+    rightarmgibbed = gibstate & 16;
+    leftarmgibbed = gibstate & 32;
     if (rightarmgibbed && leftarmgibbed) {
         return (isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.torsodmg2 : entity.torsodmg2);
     } else if (rightarmgibbed) {
@@ -283,9 +283,9 @@ function private _gibpiecetag(localclientnum, entity, gibflag) {
     if (!_hasgibdef(self)) {
         return;
     }
-    var_fee7cbdd = function_69db754(entity, gibflag);
-    if (isdefined(var_fee7cbdd)) {
-        return var_fee7cbdd.var_d147aa1c;
+    gibpiece = function_69db754(entity, gibflag);
+    if (isdefined(gibpiece)) {
+        return gibpiece.var_d147aa1c;
     }
 }
 
@@ -293,15 +293,15 @@ function private _gibpiecetag(localclientnum, entity, gibflag) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0xc65f4ddd, Offset: 0x13d8
 // Size: 0x72
-function private function_ba120c50(var_6ea41f8a) {
+function private function_ba120c50(gibflags) {
     var_ec7623a6 = 0;
-    if (var_6ea41f8a & 12) {
+    if (gibflags & 12) {
         var_ec7623a6 = var_ec7623a6 | 1;
     }
-    if (var_6ea41f8a & 48) {
+    if (gibflags & 48) {
         var_ec7623a6 = var_ec7623a6 | 2;
     }
-    if (var_6ea41f8a & 384) {
+    if (gibflags & 384) {
         var_ec7623a6 = var_ec7623a6 | 4;
     }
     return var_ec7623a6;
@@ -311,58 +311,58 @@ function private function_ba120c50(var_6ea41f8a) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x33af80c1, Offset: 0x1458
 // Size: 0x42e
-function private _gibentity(localclientnum, var_6ea41f8a, var_519d22bc) {
+function private _gibentity(localclientnum, gibflags, shouldspawngibs) {
     entity = self;
     if (!_hasgibdef(entity)) {
         return;
     }
-    var_8274e52c = 2;
-    var_f7ac0901 = undefined;
+    currentgibflag = 2;
+    gibdir = undefined;
     gibdirscale = undefined;
     if (isplayer(entity) || entity isplayercorpse()) {
-        var_ed82c1e6 = var_6ea41f8a >> 9 & 8 - 1;
-        yaw = getanglefrombits(var_ed82c1e6, 3);
-        var_f7ac0901 = anglestoforward((0, yaw, 0));
+        yaw_bits = gibflags >> 9 & 8 - 1;
+        yaw = getanglefrombits(yaw_bits, 3);
+        gibdir = anglestoforward((0, yaw, 0));
     }
-    while (var_6ea41f8a >= var_8274e52c) {
-        if (var_6ea41f8a & var_8274e52c) {
-            if (var_8274e52c == 2) {
+    while (gibflags >= currentgibflag) {
+        if (gibflags & currentgibflag) {
+            if (currentgibflag == 2) {
                 if (isplayer(entity) || entity isplayercorpse()) {
                     var_c0c9eae3 = entity function_4976d5ee();
                     _playgibfx(localclientnum, entity, var_c0c9eae3[#"fx"], var_c0c9eae3[#"tag"]);
                 } else {
-                    var_fee7cbdd = function_69db754(entity, var_8274e52c);
-                    if (isdefined(var_fee7cbdd)) {
-                        _playgibfx(localclientnum, entity, var_fee7cbdd.var_f1af9a8e, var_fee7cbdd.var_d147aa1c);
-                        if (isdefined(var_fee7cbdd.var_42c89fa1)) {
+                    gibpiece = function_69db754(entity, currentgibflag);
+                    if (isdefined(gibpiece)) {
+                        _playgibfx(localclientnum, entity, gibpiece.var_f1af9a8e, gibpiece.var_d147aa1c);
+                        if (isdefined(gibpiece.var_42c89fa1)) {
                             if (function_92beaa28(localclientnum)) {
-                                _playgibfx(localclientnum, entity, var_fee7cbdd.var_42c89fa1, var_fee7cbdd.var_d147aa1c);
+                                _playgibfx(localclientnum, entity, gibpiece.var_42c89fa1, gibpiece.var_d147aa1c);
                             }
                         }
-                        _playgibsound(localclientnum, entity, var_fee7cbdd.var_28882334);
+                        _playgibsound(localclientnum, entity, gibpiece.var_28882334);
                     }
                 }
                 entity hide();
                 entity.ignoreragdoll = 1;
             } else {
-                var_fee7cbdd = function_69db754(entity, var_8274e52c);
-                if (isdefined(var_fee7cbdd)) {
-                    if (var_519d22bc) {
-                        var_cd61eb7d = function_ba120c50(var_8274e52c);
-                        entity thread _gibpiece(localclientnum, entity, var_fee7cbdd.var_6d43549d, var_fee7cbdd.var_d241141a, var_fee7cbdd.var_d4be909b, var_f7ac0901, gibdirscale, var_cd61eb7d);
+                gibpiece = function_69db754(entity, currentgibflag);
+                if (isdefined(gibpiece)) {
+                    if (shouldspawngibs) {
+                        var_cd61eb7d = function_ba120c50(currentgibflag);
+                        entity thread _gibpiece(localclientnum, entity, gibpiece.gibmodel, gibpiece.var_d241141a, gibpiece.var_d4be909b, gibdir, gibdirscale, var_cd61eb7d);
                     }
-                    _playgibfx(localclientnum, entity, var_fee7cbdd.var_f1af9a8e, var_fee7cbdd.var_d147aa1c);
-                    if (isdefined(var_fee7cbdd.var_42c89fa1)) {
+                    _playgibfx(localclientnum, entity, gibpiece.var_f1af9a8e, gibpiece.var_d147aa1c);
+                    if (isdefined(gibpiece.var_42c89fa1)) {
                         if (function_92beaa28(localclientnum)) {
-                            _playgibfx(localclientnum, entity, var_fee7cbdd.var_42c89fa1, var_fee7cbdd.var_d147aa1c);
+                            _playgibfx(localclientnum, entity, gibpiece.var_42c89fa1, gibpiece.var_d147aa1c);
                         }
                     }
-                    _playgibsound(localclientnum, entity, var_fee7cbdd.var_28882334);
+                    _playgibsound(localclientnum, entity, gibpiece.var_28882334);
                 }
             }
-            _handlegibcallbacks(localclientnum, entity, var_8274e52c);
+            _handlegibcallbacks(localclientnum, entity, currentgibflag);
         }
-        var_8274e52c = var_8274e52c << 1;
+        currentgibflag = currentgibflag << 1;
     }
 }
 
@@ -397,8 +397,8 @@ function private _gibcliententityinternal(localclientnum, entity, gibflag) {
         return;
     }
     if (!(_getgibbedstate(localclientnum, entity) < 16)) {
-        var_5cffb0c6 = _getgibbedlegmodel(localclientnum, entity);
-        entity detach(var_5cffb0c6, "");
+        legmodel = _getgibbedlegmodel(localclientnum, entity);
+        entity detach(legmodel, "");
     }
     _setgibbed(localclientnum, entity, gibflag);
     entity setmodel(_getgibbedtorsomodel(localclientnum, entity));
@@ -423,9 +423,9 @@ function private _gibclientextrainternal(localclientnum, entity, gibflag) {
     if (isgibbed(localclientnum, entity, gibflag)) {
         return;
     }
-    var_6d43549d = _getgibextramodel(localclientnum, entity, gibflag);
-    if (isdefined(var_6d43549d) && entity isattached(var_6d43549d, "")) {
-        entity detach(var_6d43549d, "");
+    gibmodel = _getgibextramodel(localclientnum, entity, gibflag);
+    if (isdefined(gibmodel) && entity isattached(gibmodel, "")) {
+        entity detach(gibmodel, "");
     }
     if (gibflag == 8) {
         if (isdefined(isdefined(entity.var_f203d3cd) ? entity.var_f203d3cd.torsodmg5 : entity.torsodmg5)) {
@@ -454,12 +454,12 @@ function private _gibhandler(localclientnum, oldvalue, newvalue, bnewent, biniti
             return;
         }
     }
-    var_6ea41f8a = oldvalue ^ newvalue;
-    var_519d22bc = !(newvalue & 1);
+    gibflags = oldvalue ^ newvalue;
+    shouldspawngibs = !(newvalue & 1);
     if (bnewent) {
-        var_6ea41f8a = 0 ^ newvalue;
+        gibflags = 0 ^ newvalue;
     }
-    entity _gibentity(localclientnum, var_6ea41f8a, var_519d22bc);
+    entity _gibentity(localclientnum, gibflags, shouldspawngibs);
     entity.gib_state = newvalue;
 }
 
@@ -467,38 +467,38 @@ function private _gibhandler(localclientnum, oldvalue, newvalue, bnewent, biniti
 // Params 8, eflags: 0x1 linked
 // Checksum 0x12173cb7, Offset: 0x1e88
 // Size: 0x34c
-function _gibpiece(localclientnum, entity, var_6d43549d, var_d241141a, var_f1af9a8e, var_f7ac0901, gibdirscale, var_bf41adc0) {
-    if (!isdefined(var_d241141a) || !isdefined(var_6d43549d)) {
+function _gibpiece(localclientnum, entity, gibmodel, var_d241141a, var_f1af9a8e, gibdir, gibdirscale, var_bf41adc0) {
+    if (!isdefined(var_d241141a) || !isdefined(gibmodel)) {
         return;
     }
     startposition = entity gettagorigin(var_d241141a);
     startangles = entity gettagangles(var_d241141a);
     endposition = startposition;
-    var_37f80214 = startangles;
+    endangles = startangles;
     forwardvector = undefined;
     if (!isdefined(startposition) || !isdefined(startangles)) {
         return 0;
     }
-    if (isdefined(var_f7ac0901) && !isdefined(gibdirscale)) {
+    if (isdefined(gibdir) && !isdefined(gibdirscale)) {
         startposition = (0, 0, 0);
-        forwardvector = var_f7ac0901;
+        forwardvector = gibdir;
         forwardvector = forwardvector * randomfloatrange(100, 500);
     } else {
         waitframe(1);
         if (isdefined(entity)) {
             endposition = entity gettagorigin(var_d241141a);
-            var_37f80214 = entity gettagangles(var_d241141a);
+            endangles = entity gettagangles(var_d241141a);
         } else {
             endposition = startposition + anglestoforward(startangles) * 10;
-            var_37f80214 = startangles;
+            endangles = startangles;
         }
-        if (!isdefined(endposition) || !isdefined(var_37f80214)) {
+        if (!isdefined(endposition) || !isdefined(endangles)) {
             return 0;
         }
         scale = randomfloatrange(0.6, 1);
         dir = (randomfloatrange(0, 0.2), randomfloatrange(0, 0.2), randomfloatrange(0.2, 0.7));
-        if (isdefined(var_f7ac0901) && isdefined(gibdirscale) && gibdirscale > 0) {
-            dir = var_f7ac0901 + dir;
+        if (isdefined(gibdir) && isdefined(gibdirscale) && gibdirscale > 0) {
+            dir = gibdir + dir;
             scale = gibdirscale;
         }
         forwardvector = vectornormalize(endposition - startposition);
@@ -506,7 +506,7 @@ function _gibpiece(localclientnum, entity, var_6d43549d, var_d241141a, var_f1af9
         forwardvector = forwardvector + dir;
     }
     if (isdefined(entity)) {
-        gibentity = createdynentandlaunch(localclientnum, var_6d43549d, endposition, var_37f80214, startposition, forwardvector, var_f1af9a8e, 1, !(isdefined(level.var_2f78f66c) && level.var_2f78f66c));
+        gibentity = createdynentandlaunch(localclientnum, gibmodel, endposition, endangles, startposition, forwardvector, var_f1af9a8e, 1, !(isdefined(level.var_2f78f66c) && level.var_2f78f66c));
         if (isdefined(gibentity)) {
             setdynentbodyrenderoptionspacked(gibentity, entity getbodyrenderoptionspacked(), var_bf41adc0);
         }
@@ -642,9 +642,9 @@ function addgibcallback(localclientnum, entity, gibflag, callbackfunction) {
     if (!isdefined(entity.var_79a69f8d[gibflag])) {
         entity.var_79a69f8d[gibflag] = [];
     }
-    var_dab820f = entity.var_79a69f8d[gibflag];
-    var_dab820f[var_dab820f.size] = callbackfunction;
-    entity.var_79a69f8d[gibflag] = var_dab820f;
+    gibcallbacks = entity.var_79a69f8d[gibflag];
+    gibcallbacks[gibcallbacks.size] = callbackfunction;
+    entity.var_79a69f8d[gibflag] = gibcallbacks;
 }
 
 // Namespace gibclientutils/gib
@@ -713,9 +713,9 @@ function createscriptmodelofentity(localclientnum, entity) {
     clone = spawn(localclientnum, entity.origin, "script_model");
     clone.angles = entity.angles;
     _clonegibdata(localclientnum, entity, clone);
-    var_8f411bbf = _getgibbedstate(localclientnum, clone);
+    gibstate = _getgibbedstate(localclientnum, clone);
     if (!util::is_mature() || util::is_gib_restricted_build()) {
-        var_8f411bbf = 0;
+        gibstate = 0;
     }
     if (!(_getgibbedstate(localclientnum, entity) < 16)) {
         clone setmodel(_getgibbedtorsomodel(localclientnum, entity));
@@ -723,7 +723,7 @@ function createscriptmodelofentity(localclientnum, entity) {
     } else {
         clone setmodel(entity.model);
     }
-    if (var_8f411bbf & 8) {
+    if (gibstate & 8) {
         if (isdefined(isdefined(clone.var_f203d3cd) ? clone.var_f203d3cd.torsodmg5 : clone.torsodmg5)) {
             clone attach(isdefined(clone.var_f203d3cd) ? clone.var_f203d3cd.torsodmg5 : clone.torsodmg5, "");
         }
@@ -731,7 +731,7 @@ function createscriptmodelofentity(localclientnum, entity) {
         if (isdefined(isdefined(clone.var_f203d3cd) ? clone.var_f203d3cd.head : clone.head)) {
             clone attach(isdefined(clone.var_f203d3cd) ? clone.var_f203d3cd.head : clone.head, "");
         }
-        if (!(var_8f411bbf & 4) && isdefined(isdefined(clone.var_f203d3cd) ? clone.var_f203d3cd.hatmodel : clone.hatmodel)) {
+        if (!(gibstate & 4) && isdefined(isdefined(clone.var_f203d3cd) ? clone.var_f203d3cd.hatmodel : clone.hatmodel)) {
             clone attach(isdefined(clone.var_f203d3cd) ? clone.var_f203d3cd.hatmodel : clone.hatmodel, "");
         }
     }
@@ -758,9 +758,9 @@ function isundamaged(localclientnum, entity) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x38b8c3a9, Offset: 0x2e70
 // Size: 0x66
-function gibentity(localclientnum, var_6ea41f8a) {
-    self _gibentity(localclientnum, var_6ea41f8a, 1);
-    self.gib_state = _getgibbedstate(localclientnum, self) | var_6ea41f8a & 512 - 1;
+function gibentity(localclientnum, gibflags) {
+    self _gibentity(localclientnum, gibflags, 1);
+    self.gib_state = _getgibbedstate(localclientnum, self) | gibflags & 512 - 1;
 }
 
 // Namespace gibclientutils/gib

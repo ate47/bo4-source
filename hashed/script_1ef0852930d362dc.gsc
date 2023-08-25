@@ -1039,9 +1039,9 @@ function function_9537d6cb(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
     } else {
         wait(12);
     }
-    e_trigger notify(#"hash_2fb84a13acce8f4a");
+    e_trigger notify(#"end_spin_cycle");
     e_trigger delete();
-    var_9a1f1865 notify(#"hash_2fb84a13acce8f4a");
+    var_9a1f1865 notify(#"end_spin_cycle");
     var_9a1f1865 clientfield::set("" + #"hash_12b19992ccb300e7", 0);
     if (level.var_2ec91d6e[var_a257f75d] == 1) {
         if (isdefined(e_attacker)) {
@@ -1061,7 +1061,7 @@ function function_9537d6cb(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
 // Checksum 0x90d5d86e, Offset: 0x47e8
 // Size: 0xc0
 function function_b3d8a8c4(v_origin, e_attacker, var_9a1f1865) {
-    var_9a1f1865 endon(#"hash_2fb84a13acce8f4a");
+    var_9a1f1865 endon(#"end_spin_cycle");
     self thread function_f8679f8d(1, &function_e5e6e403, e_attacker, var_9a1f1865);
     while (1) {
         self waittill(#"touch");
@@ -1179,7 +1179,7 @@ function function_c5eccfa2() {
 function function_6476c708(e_attacker, var_9a1f1865) {
     self endon(#"death");
     s_waitresult = undefined;
-    s_waitresult = var_9a1f1865 waittill(#"hash_2fb84a13acce8f4a", #"death");
+    s_waitresult = var_9a1f1865 waittill(#"end_spin_cycle", #"death");
     if (s_waitresult._notify === "end_spin_cycle") {
         wait(0.5);
     }

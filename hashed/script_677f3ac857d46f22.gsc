@@ -6,9 +6,9 @@
 
 // Namespace ct_shared_button_prompt
 // Method(s) 6 Total 13
-class class_2a852966 : cluielem {
+class cct_shared_button_prompt : cluielem {
 
-    // Namespace class_2a852966/ct_shared_button_prompt
+    // Namespace cct_shared_button_prompt/ct_shared_button_prompt
     // Params 0, eflags: 0x8
     // Checksum 0x5f5d0f30, Offset: 0x1d8
     // Size: 0x14
@@ -16,7 +16,7 @@ class class_2a852966 : cluielem {
         cluielem::__constructor();
     }
 
-    // Namespace class_2a852966/ct_shared_button_prompt
+    // Namespace cct_shared_button_prompt/ct_shared_button_prompt
     // Params 0, eflags: 0x90 class_linked
     // Checksum 0xade6e982, Offset: 0x758
     // Size: 0x14
@@ -24,7 +24,7 @@ class class_2a852966 : cluielem {
         cluielem::__destructor();
     }
 
-    // Namespace namespace_2a852966/ct_shared_button_prompt
+    // Namespace cct_shared_button_prompt/ct_shared_button_prompt
     // Params 2, eflags: 0x0
     // Checksum 0x5d481ad7, Offset: 0x2d0
     // Size: 0x47c
@@ -72,7 +72,7 @@ class class_2a852966 : cluielem {
         }
     }
 
-    // Namespace namespace_2a852966/ct_shared_button_prompt
+    // Namespace cct_shared_button_prompt/ct_shared_button_prompt
     // Params 1, eflags: 0x0
     // Checksum 0x24af591c, Offset: 0x2a0
     // Size: 0x24
@@ -80,7 +80,7 @@ class class_2a852966 : cluielem {
         cluielem::close_luielem(player);
     }
 
-    // Namespace namespace_2a852966/ct_shared_button_prompt
+    // Namespace cct_shared_button_prompt/ct_shared_button_prompt
     // Params 2, eflags: 0x0
     // Checksum 0xb0ad99f0, Offset: 0x250
     // Size: 0x44
@@ -88,7 +88,7 @@ class class_2a852966 : cluielem {
         cluielem::open_luielem(player, "ct_shared_button_prompt", persistent);
     }
 
-    // Namespace namespace_2a852966/ct_shared_button_prompt
+    // Namespace cct_shared_button_prompt/ct_shared_button_prompt
     // Params 1, eflags: 0x0
     // Checksum 0x8a2bc4a5, Offset: 0x1f8
     // Size: 0x4c
@@ -104,7 +104,7 @@ class class_2a852966 : cluielem {
 // Checksum 0x5a33a7fe, Offset: 0xd0
 // Size: 0x40
 function register(uid) {
-    elem = new class_2a852966();
+    elem = new cct_shared_button_prompt();
     [[ elem ]]->setup_clientfields(uid);
     return elem;
 }

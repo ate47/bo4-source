@@ -24,7 +24,7 @@ function event<level_init> main(eventstruct) {
     level.var_482af62e = #"hash_12263e5d70551bf9";
     callback::on_localclient_connect(&on_localclient_connect);
     callback::on_gameplay_started(&on_gameplay_started);
-    level.var_91de6daf = 0;
+    level.nuketown_population = 0;
     clientfield::register("world", "nuketown_population", 8000, 7, "int", &function_379a5c89, 0, 0);
     clientfield::register("world", "nuketown_missile_scene", 8000, 1, "int", &function_2372d00, 0, 0);
     mp_nuketown_4_fx::main();
@@ -76,7 +76,7 @@ function function_2372d00(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Checksum 0x735e05c4, Offset: 0x5b0
 // Size: 0x4a
 function function_379a5c89(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    level.var_91de6daf = newval;
+    level.nuketown_population = newval;
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
@@ -143,7 +143,7 @@ function nuked_population_sign_think(localclientnum) {
             }
         }
         dial = var_c4637e06 + var_c43b65cb * 10;
-        while (level.var_91de6daf < dial) {
+        while (level.nuketown_population < dial) {
             var_c4637e06--;
             if (var_c4637e06 < 0) {
                 var_c4637e06 = 9;
@@ -154,7 +154,7 @@ function nuked_population_sign_think(localclientnum) {
             var_3c0c17f2 waittill(#"rotatedone");
             dial = var_c4637e06 + var_c43b65cb * 10;
         }
-        while (level.var_91de6daf > dial) {
+        while (level.nuketown_population > dial) {
             var_c4637e06++;
             if (var_c4637e06 > 9) {
                 var_c4637e06 = 0;

@@ -46,9 +46,9 @@ function on_game_playing() {
     }
     wait(getdvarfloat(#"hash_68cf1e8e429452b0", 0));
     if (util::isfirstround()) {
-        level thread scene::play(#"hash_46b00cc2214fd457", "Shot 2");
-        level scene::play(#"hash_a464019858eb570", "Shot 2");
-        level thread scene::play(#"hash_a464019858eb570", "Shot 3");
+        level thread scene::play(#"p8_fxanim_mp_icebreaker_ice_shelf_bundle", "Shot 2");
+        level scene::play(#"p8_fxanim_mp_icebreaker_container_drop_bundle", "Shot 2");
+        level thread scene::play(#"p8_fxanim_mp_icebreaker_container_drop_bundle", "Shot 3");
         return;
     }
 }
@@ -66,12 +66,12 @@ function function_2cdcf5c3() {
             waitframe(1);
         }
         wait(getdvarfloat(#"hash_142927c6a6db817c", 0));
-        level thread scene::play(#"hash_a464019858eb570", "Shot 1");
-        level thread scene::play(#"hash_46b00cc2214fd457", "Shot 1");
+        level thread scene::play(#"p8_fxanim_mp_icebreaker_container_drop_bundle", "Shot 1");
+        level thread scene::play(#"p8_fxanim_mp_icebreaker_ice_shelf_bundle", "Shot 1");
         return;
     }
-    level thread scene::skipto_end(#"hash_a464019858eb570");
-    level thread scene::skipto_end(#"hash_46b00cc2214fd457");
+    level thread scene::skipto_end(#"p8_fxanim_mp_icebreaker_container_drop_bundle");
+    level thread scene::skipto_end(#"p8_fxanim_mp_icebreaker_ice_shelf_bundle");
 }
 
 // Namespace mp_icebreaker_scripted/mp_icebreaker_scripted

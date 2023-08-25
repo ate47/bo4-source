@@ -43,7 +43,7 @@ function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
     wait(getdvarfloat(#"hash_68cf1e8e429452b0", 0));
     if (util::isfirstround()) {
-        level thread scene::play(#"hash_70c2676f2089ecb4", "Shot 2");
+        level thread scene::play(#"p8_fxanim_mp_morocco_air_drop_bundle", "Shot 2");
     }
 }
 
@@ -56,10 +56,10 @@ function function_2cdcf5c3() {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
-        level thread scene::play(#"hash_70c2676f2089ecb4", "Shot 1");
+        level thread scene::play(#"p8_fxanim_mp_morocco_air_drop_bundle", "Shot 1");
         return;
     }
-    level scene::skipto_end(#"hash_70c2676f2089ecb4");
+    level scene::skipto_end(#"p8_fxanim_mp_morocco_air_drop_bundle");
 }
 
 // Namespace mp_morocco_scripted/mp_morocco_scripted

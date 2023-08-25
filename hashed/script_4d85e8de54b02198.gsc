@@ -27,14 +27,14 @@ function event<runnotetrackhandler> private runnotetrackhandler(eventstruct) {
 // Checksum 0xc6ddb474, Offset: 0x128
 // Size: 0x8c
 function private handlenotetrack(entity, notetrack) {
-    var_6b80b5f7 = level.var_995d938f[notetrack];
-    if (!isdefined(var_6b80b5f7)) {
+    notetrackhandler = level.var_995d938f[notetrack];
+    if (!isdefined(notetrackhandler)) {
         return;
     }
-    if (isfunctionptr(var_6b80b5f7)) {
-        [[ var_6b80b5f7 ]](entity);
+    if (isfunctionptr(notetrackhandler)) {
+        [[ notetrackhandler ]](entity);
     } else {
-        entity setblackboardattribute(var_6b80b5f7.var_71359b2a, var_6b80b5f7.var_63aa7f39);
+        entity setblackboardattribute(notetrackhandler.var_71359b2a, notetrackhandler.var_63aa7f39);
     }
 }
 
@@ -60,9 +60,9 @@ function registernotetrackhandlerfunction(var_455f12d0, var_f01620bd) {
 // Checksum 0x76200bf7, Offset: 0x298
 // Size: 0x6e
 function registerblackboardnotetrackhandler(var_455f12d0, var_71359b2a, var_63aa7f39) {
-    var_6b80b5f7 = spawnstruct();
-    var_6b80b5f7.var_71359b2a = var_71359b2a;
-    var_6b80b5f7.var_63aa7f39 = var_63aa7f39;
-    level.var_995d938f[var_455f12d0] = var_6b80b5f7;
+    notetrackhandler = spawnstruct();
+    notetrackhandler.var_71359b2a = var_71359b2a;
+    notetrackhandler.var_63aa7f39 = var_63aa7f39;
+    level.var_995d938f[var_455f12d0] = notetrackhandler;
 }
 

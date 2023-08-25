@@ -344,7 +344,7 @@ function function_6941c919() {
 function function_1dc8ad86() {
     self endon(#"death");
     var_1fc5672 = 0;
-    var_e0812068 = 0;
+    b_fail = 0;
     while (1) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_15ccd1fdda38284a", #"rune_bashed");
@@ -435,8 +435,8 @@ function private function_eb6f728f() {
             level flag::wait_till_clear("round_reset");
             wait(7);
         } else if (namespace_11abec5a::is_active(w_stake_knife)) {
-            var_4205d575 = zm_ai_nosferatu::function_853b43e8();
-            if (var_4205d575 < 10) {
+            n_nosferatus = zm_ai_nosferatu::function_853b43e8();
+            if (n_nosferatus < 10) {
                 ai = zm_ai_nosferatu::function_74f25f8a(1);
                 if (isdefined(ai)) {
                     ai zm_score::function_acaab828();

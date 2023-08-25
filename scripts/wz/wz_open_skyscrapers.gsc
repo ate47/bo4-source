@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/wz_common/wz_blackjack_stash.gsc;
-#include script_441967377de24abb;
+#include scripts/wz_common/wz_holiday.gsc;
 #include scripts/wz_common/wz_ee_poster.gsc;
 #include scripts/wz_common/wz_dynents.gsc;
 #include script_34e49e82e2f499e1;
@@ -8,14 +8,14 @@
 #include scripts/wz_common/wz_buoy_stash.gsc;
 #include script_217568d3a92fb9b;
 #include scripts/wz_common/wz_asylum.gsc;
-#include script_541e2d6b7999560a;
+#include scripts/wz_common/wz_array_broadcast.gsc;
 #include scripts/wz_common/wz_firing_range.gsc;
 #include script_3267610dfd12104c;
 #include script_2a355b8e0ddce331;
 #include scripts/wz/wz_open_skyscrapers_ffotd.gsc;
 #include scripts/core_common/flagsys_shared.gsc;
 #include scripts/core_common/gestures.gsc;
-#include script_5365d5a5a0851444;
+#include scripts/wz/wz_open_skyscrapers_sound.gsc;
 #include scripts/wz/wz_open_skyscrapers_fx.gsc;
 #include scripts/wz_common/wz_loadouts.gsc;
 #include scripts/wz_common/spawn.gsc;

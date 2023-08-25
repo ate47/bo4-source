@@ -34,6 +34,6 @@ function function_afffda42() {
     ai::registermatchedinterface(#"robot", #"shutdown", 0, array(1, 0));
     ai::registermatchedinterface(#"robot", #"sprint", 0, array(1, 0), &namespace_8234b281::forcesprintcallback);
     ai::registermatchedinterface(#"robot", #"hash_5f053c075038a0e2", 0, array(1, 0));
-    ai::registermatchedinterface(#"robot", #"hash_5e7e117a56287a6", "normal", array("normal", "procedural"), &namespace_8234b281::function_94fa0836);
+    ai::registermatchedinterface(#"robot", #"traversals", "normal", array("normal", "procedural"), &namespace_8234b281::function_94fa0836);
 }
 

@@ -5,23 +5,23 @@
 // Params 4, eflags: 0x1 linked
 // Checksum 0xc5c6c510, Offset: 0x68
 // Size: 0x134
-function registerblackboardattribute(entity, var_b5da1cda, var_aa9664d3, var_7a756284) {
+function registerblackboardattribute(entity, var_b5da1cda, defaultattributevalue, getterfunction) {
     /#
         assert(isdefined(entity.__blackboard), "<unknown string>");
     #/
     /#
         assert(!isdefined(entity.__blackboard[var_b5da1cda]), "<unknown string>" + var_b5da1cda + "<unknown string>");
     #/
-    if (isdefined(var_7a756284)) {
+    if (isdefined(getterfunction)) {
         /#
-            assert(isfunctionptr(var_7a756284));
+            assert(isfunctionptr(getterfunction));
         #/
-        entity.__blackboard[var_b5da1cda] = var_7a756284;
+        entity.__blackboard[var_b5da1cda] = getterfunction;
     } else {
-        if (!isdefined(var_aa9664d3)) {
-            var_aa9664d3 = undefined;
+        if (!isdefined(defaultattributevalue)) {
+            defaultattributevalue = undefined;
         }
-        entity.__blackboard[var_b5da1cda] = var_aa9664d3;
+        entity.__blackboard[var_b5da1cda] = defaultattributevalue;
     }
     /#
         if (isactor(entity)) {
@@ -39,8 +39,8 @@ function getstructblackboardattribute(struct, var_b5da1cda) {
         assert(isstruct(struct));
     #/
     if (isfunctionptr(struct.__blackboard[var_b5da1cda])) {
-        var_7a756284 = struct.__blackboard[var_b5da1cda];
-        attributevalue = struct [[ var_7a756284 ]]();
+        getterfunction = struct.__blackboard[var_b5da1cda];
+        attributevalue = struct [[ getterfunction ]]();
         return attributevalue;
     } else {
         return struct.__blackboard[var_b5da1cda];

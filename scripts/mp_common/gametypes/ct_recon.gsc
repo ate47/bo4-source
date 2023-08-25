@@ -28,7 +28,7 @@
 // Size: 0x2e4
 function event<gametype_init> main(eventstruct) {
     ct_core::function_46e95cc7();
-    level.select_character = ct_utils::get_roleindex(#"hash_551c3b11efdfec9f");
+    level.select_character = ct_utils::get_roleindex(#"prt_mp_recon");
     level.var_820c5561 = "RECON";
     ct_utils::function_be3a76b7(level.var_820c5561);
     ct_core::function_fa03fc55();

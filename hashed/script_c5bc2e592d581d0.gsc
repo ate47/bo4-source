@@ -286,11 +286,11 @@ function private function_14c67eb3(planner, constants) {
     }
     var_5f1842bf = [];
     distancesq = constants[#"distance"] * constants[#"distance"];
-    var_a8c95395 = planner::getblackboardattribute(planner, #"zm_altars");
-    if (!isdefined(var_a8c95395)) {
-        var_a8c95395 = [];
+    altars = planner::getblackboardattribute(planner, #"zm_altars");
+    if (!isdefined(altars)) {
+        altars = [];
     }
-    foreach (var_509f4558 in var_a8c95395) {
+    foreach (var_509f4558 in altars) {
         if (isdefined(var_509f4558)) {
             altar = var_509f4558[#"__unsafe__"][#"altar"];
             if (altar.var_3468124.var_2977c27 != "on") {
@@ -651,12 +651,12 @@ function private function_4f6a626d(planner, constants) {
     var_ce95e926 = 64;
     foreach (var_656e1ebc in var_a9cd6db9) {
         powerup = var_656e1ebc[#"__unsafe__"][#"powerup"];
-        var_4282ad33 = getclosestpointonnavmesh(powerup.origin, 200, params.bots[0] getpathfindingradius());
-        if (!isdefined(var_4282ad33)) {
+        poweruporigin = getclosestpointonnavmesh(powerup.origin, 200, params.bots[0] getpathfindingradius());
+        if (!isdefined(poweruporigin)) {
             continue;
         }
         pointstruct = spawnstruct();
-        pointstruct.origin = var_4282ad33;
+        pointstruct.origin = poweruporigin;
         pathsegment = strategiccommandutility::calculatepathtopoints(params.bots[0], array(pointstruct));
         if (isdefined(pathsegment) && isdefined(pathsegment.status) && pathsegment.status == #"succeeded") {
             if (pathsegment.pathdistance > constants[#"distance"] * 2) {
@@ -732,14 +732,14 @@ function private function_557051df(planner, constants) {
     }
     var_8498b0f1 = [];
     distancesq = constants[#"distance"] * constants[#"distance"];
-    var_4256313b = planner::getblackboardattribute(planner, #"zm_switches");
-    if (!isdefined(var_4256313b)) {
-        var_4256313b = [];
+    switches = planner::getblackboardattribute(planner, #"zm_switches");
+    if (!isdefined(switches)) {
+        switches = [];
     }
     path = undefined;
     shortestpath = undefined;
     var_a0301374 = undefined;
-    foreach (var_c42f08a2 in var_4256313b) {
+    foreach (var_c42f08a2 in switches) {
         switchent = var_c42f08a2[#"__unsafe__"][#"switch"];
         if (!isdefined(switchent)) {
             continue;

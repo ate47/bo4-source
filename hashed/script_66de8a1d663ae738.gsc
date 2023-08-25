@@ -30,14 +30,14 @@ function getspawnerforai(ai, team, var_da5d083) {
     if (!isdefined(aimappingtable)) {
         return undefined;
     }
-    var_54cddfbc = struct::get_script_bundle("aimappingtable", aimappingtable);
-    if (!isdefined(var_54cddfbc)) {
+    aimappingtablebundle = struct::get_script_bundle("aimappingtable", aimappingtable);
+    if (!isdefined(aimappingtablebundle)) {
         return undefined;
     }
-    aitype = var_54cddfbc.("aitype_" + ai);
+    aitype = aimappingtablebundle.("aitype_" + ai);
     if (isdefined(aitype)) {
         return aitype;
     }
-    return var_54cddfbc.("vehicle_" + ai);
+    return aimappingtablebundle.("vehicle_" + ai);
 }
 

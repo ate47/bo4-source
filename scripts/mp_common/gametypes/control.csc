@@ -148,8 +148,8 @@ function function_6e3affdc() {
 // Checksum 0xc2cb746f, Offset: 0xae8
 // Size: 0x3c4
 function function_383d0a91(local_client_num) {
-    for (var_eaaaa736 = 0; var_eaaaa736 < level.zones.size; var_eaaaa736++) {
-        var_33636eed = level.var_38360a23[local_client_num] >> var_eaaaa736 * 2 & 3;
+    for (zi = 0; zi < level.zones.size; zi++) {
+        var_33636eed = level.var_38360a23[local_client_num] >> zi * 2 & 3;
         effects = [];
         if (shoutcaster::is_shoutcaster(local_client_num)) {
             effects = function_12a1f978(local_client_num);
@@ -157,28 +157,28 @@ function function_383d0a91(local_client_num) {
             effects[#"hash_62dd73d4603d4fb8"] = level._effect[#"hash_62dd73d4603d4fb8"];
             effects[#"hash_685f1cf10641e640"] = level._effect[#"hash_685f1cf10641e640"];
         }
-        if (isdefined(level.var_893697bd[local_client_num][var_eaaaa736])) {
-            foreach (fx in level.var_893697bd[local_client_num][var_eaaaa736]) {
+        if (isdefined(level.var_893697bd[local_client_num][zi])) {
+            foreach (fx in level.var_893697bd[local_client_num][zi]) {
                 stopfx(local_client_num, fx);
             }
         }
-        level.var_893697bd[local_client_num][var_eaaaa736] = [];
-        if (level.var_c66ad71[local_client_num] & 1 << var_eaaaa736) {
-            if (isdefined(level.visuals[var_eaaaa736])) {
+        level.var_893697bd[local_client_num][zi] = [];
+        if (level.var_c66ad71[local_client_num] & 1 << zi) {
+            if (isdefined(level.visuals[zi])) {
                 attackers = function_bcf33c85();
                 var_11cad3ba = function_46b3ecd3(local_client_num, var_33636eed, attackers, shoutcaster::is_shoutcaster(local_client_num));
-                foreach (visual in level.visuals[var_eaaaa736]) {
+                foreach (visual in level.visuals[zi]) {
                     if (!isdefined(visual.script_fxid)) {
                         continue;
                     }
                     fxid = function_95f997c5(visual.script_fxid, var_11cad3ba, effects);
                     if (isarray(fxid)) {
                         var_33636eed = 2;
-                        function_ca8ebccf(local_client_num, visual, fxid[var_33636eed], var_eaaaa736, var_33636eed, attackers);
+                        function_ca8ebccf(local_client_num, visual, fxid[var_33636eed], zi, var_33636eed, attackers);
                         var_33636eed = 1;
-                        function_ca8ebccf(local_client_num, visual, fxid[var_33636eed], var_eaaaa736, var_33636eed, attackers);
+                        function_ca8ebccf(local_client_num, visual, fxid[var_33636eed], zi, var_33636eed, attackers);
                     } else {
-                        function_ca8ebccf(local_client_num, visual, fxid, var_eaaaa736, var_33636eed, attackers);
+                        function_ca8ebccf(local_client_num, visual, fxid, zi, var_33636eed, attackers);
                     }
                 }
             }
@@ -191,14 +191,14 @@ function function_383d0a91(local_client_num) {
 // Params 6, eflags: 0x4
 // Checksum 0x181ccc80, Offset: 0xeb8
 // Size: 0x184
-function private function_ca8ebccf(local_client_num, visual, fxid, var_eaaaa736, var_33636eed, attackers) {
+function private function_ca8ebccf(local_client_num, visual, fxid, zi, var_33636eed, attackers) {
     if (isdefined(visual.angles)) {
         forward = anglestoforward(visual.angles);
     } else {
         forward = (0, 0, 0);
     }
     fxhandle = playfx(local_client_num, fxid, visual.origin, forward);
-    level.var_893697bd[local_client_num][var_eaaaa736][level.var_893697bd[local_client_num][var_eaaaa736].size] = fxhandle;
+    level.var_893697bd[local_client_num][zi][level.var_893697bd[local_client_num][zi].size] = fxhandle;
     if (isdefined(fxhandle)) {
         if (var_33636eed == 2) {
             setfxteam(local_client_num, fxhandle, attackers);
@@ -258,10 +258,10 @@ function function_c9bc70d6() {
         }
         zones = [];
         for (i = 0; i < var_c96c663b.size; i++) {
-            var_9e434550 = var_c96c663b[i].script_index;
-            if (isdefined(var_9e434550)) {
+            ind = var_c96c663b[i].script_index;
+            if (isdefined(ind)) {
                 for (j = 0; j < var_71b9425c.size; j++) {
-                    if (var_71b9425c[j] == var_9e434550) {
+                    if (var_71b9425c[j] == ind) {
                         zones[zones.size] = var_c96c663b[i];
                         continue;
                     }
@@ -299,20 +299,20 @@ function function_c9bc70d6() {
 function warzone(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (level.zones.size == 0) {
         level.zones = function_c9bc70d6();
-        for (var_eaaaa736 = 0; var_eaaaa736 < level.zones.size; var_eaaaa736++) {
-            if (isdefined(level.zones[var_eaaaa736].target)) {
-                level.visuals[var_eaaaa736] = struct::get_array(level.zones[var_eaaaa736].target, "targetname");
+        for (zi = 0; zi < level.zones.size; zi++) {
+            if (isdefined(level.zones[zi].target)) {
+                level.visuals[zi] = struct::get_array(level.zones[zi].target, "targetname");
             }
-            level.zones[var_eaaaa736].objectiveid = serverobjective_getobjective(localclientnum, "control_" + var_eaaaa736);
-            level.zones[var_eaaaa736].var_6d7365a9 = spawn(0, level.zones[var_eaaaa736].origin, "script_origin");
-            level.zones[var_eaaaa736].var_ce6accbd = 0;
+            level.zones[zi].objectiveid = serverobjective_getobjective(localclientnum, "control_" + zi);
+            level.zones[zi].var_6d7365a9 = spawn(0, level.zones[zi].origin, "script_origin");
+            level.zones[zi].var_ce6accbd = 0;
         }
         level notify(#"hash_3f294ebbb7ff9154");
     }
     level.var_c66ad71[localclientnum] = newval;
-    for (var_eaaaa736 = 0; var_eaaaa736 < level.zones.size; var_eaaaa736++) {
-        if ((oldval & 1 << var_eaaaa736) != (newval & 1 << var_eaaaa736)) {
-            level.var_38360a23[localclientnum] = level.var_38360a23[localclientnum] & ~(3 << var_eaaaa736);
+    for (zi = 0; zi < level.zones.size; zi++) {
+        if ((oldval & 1 << zi) != (newval & 1 << zi)) {
+            level.var_38360a23[localclientnum] = level.var_38360a23[localclientnum] & ~(3 << zi);
         }
     }
     function_383d0a91(localclientnum);

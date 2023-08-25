@@ -1154,8 +1154,8 @@ function function_432f35f8(var_8b97dd8f) {
     level endon(#"combattraining_logic_finished");
     level.var_e72728b8 = array(#"ability_dog");
     var_e3df6002 = anglestoup(var_8b97dd8f.angles);
-    var_c470ac43 = 1;
-    while (var_c470ac43) {
+    b_waiting = 1;
+    while (b_waiting) {
         if (isdefined(level.var_204eb642)) {
             var_8167b460 = 0;
             v_dir = anglestoforward(level.var_204eb642.angles);
@@ -1175,7 +1175,7 @@ function function_432f35f8(var_8b97dd8f) {
             if (!var_8167b460 && n_dist < 75) {
                 level.var_204eb642 notsolid();
                 level.var_204eb642 = undefined;
-                var_c470ac43 = 0;
+                b_waiting = 0;
                 break;
             } else {
                 e_player = getplayers()[0];

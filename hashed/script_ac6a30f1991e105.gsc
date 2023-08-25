@@ -10,27 +10,27 @@
 // Checksum 0xd2fae3c5, Offset: 0xd8
 // Size: 0x262
 function autoexec main() {
-    var_281824cf = struct::get_script_bundles("fxcharacterdef");
-    var_a2b21804 = [];
-    foreach (var_ff2bc026 in var_281824cf) {
-        var_deb729a3 = spawnstruct();
-        var_deb729a3.var_225b8a64 = var_ff2bc026.var_225b8a64;
-        var_deb729a3.fx = [];
-        var_deb729a3.name = var_ff2bc026.name;
-        for (index = 1; index <= var_ff2bc026.var_225b8a64; index++) {
-            fx = var_ff2bc026.("effect" + index + "_fx");
+    fxbundles = struct::get_script_bundles("fxcharacterdef");
+    processedfxbundles = [];
+    foreach (fxbundle in fxbundles) {
+        processedfxbundle = spawnstruct();
+        processedfxbundle.var_225b8a64 = fxbundle.var_225b8a64;
+        processedfxbundle.fx = [];
+        processedfxbundle.name = fxbundle.name;
+        for (index = 1; index <= fxbundle.var_225b8a64; index++) {
+            fx = fxbundle.("effect" + index + "_fx");
             if (isdefined(fx)) {
-                var_59df668a = spawnstruct();
-                var_59df668a.attachtag = var_ff2bc026.("effect" + index + "_attachtag");
-                var_59df668a.fx = var_ff2bc026.("effect" + index + "_fx");
-                var_59df668a.var_ffe1aa63 = fxclientutils::_gibpartnametogibflag(var_ff2bc026.("effect" + index + "_stopongib"));
-                var_59df668a.var_a48ef4f2 = var_ff2bc026.("effect" + index + "_stoponpiecedestroyed");
-                var_deb729a3.fx[var_deb729a3.fx.size] = var_59df668a;
+                fxstruct = spawnstruct();
+                fxstruct.attachtag = fxbundle.("effect" + index + "_attachtag");
+                fxstruct.fx = fxbundle.("effect" + index + "_fx");
+                fxstruct.var_ffe1aa63 = fxclientutils::_gibpartnametogibflag(fxbundle.("effect" + index + "_stopongib"));
+                fxstruct.var_a48ef4f2 = fxbundle.("effect" + index + "_stoponpiecedestroyed");
+                processedfxbundle.fx[processedfxbundle.fx.size] = fxstruct;
             }
         }
-        var_a2b21804[var_ff2bc026.name] = var_deb729a3;
+        processedfxbundles[fxbundle.name] = processedfxbundle;
     }
-    level.var_49f00166 = var_a2b21804;
+    level.var_49f00166 = processedfxbundles;
 }
 
 #namespace fxclientutils;
@@ -50,8 +50,8 @@ function private _getfxbundle(name) {
 function private _configentity(localclientnum, entity) {
     if (!isdefined(entity.var_24996eec)) {
         entity.var_24996eec = [];
-        var_ac3b1903 = array(8, 16, 32, 128, 256);
-        foreach (gibflag in var_ac3b1903) {
+        handledgibs = array(8, 16, 32, 128, 256);
+        foreach (gibflag in handledgibs) {
             gibclientutils::addgibcallback(localclientnum, entity, gibflag, &_gibhandler);
         }
         for (index = 1; index <= 20; index++) {
@@ -64,15 +64,15 @@ function private _configentity(localclientnum, entity) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xc1286e00, Offset: 0x4b8
 // Size: 0x13c
-function private _destructhandler(localclientnum, entity, var_eb89b058) {
+function private _destructhandler(localclientnum, entity, piecenumber) {
     if (!isdefined(entity.var_24996eec)) {
         return;
     }
-    foreach (var_9a11879, var_2759fed2 in entity.var_24996eec) {
-        var_ff2bc026 = _getfxbundle(var_9a11879);
-        for (index = 0; index < var_ff2bc026.fx.size; index++) {
-            if (isdefined(var_2759fed2[index]) && var_ff2bc026.fx[index].var_a48ef4f2 === var_eb89b058) {
-                stopfx(localclientnum, var_2759fed2[index]);
+    foreach (var_9a11879, fxbundleinst in entity.var_24996eec) {
+        fxbundle = _getfxbundle(var_9a11879);
+        for (index = 0; index < fxbundle.fx.size; index++) {
+            if (isdefined(fxbundleinst[index]) && fxbundle.fx[index].var_a48ef4f2 === piecenumber) {
+                stopfx(localclientnum, fxbundleinst[index]);
                 index = [];
             }
         }
@@ -87,11 +87,11 @@ function private _gibhandler(localclientnum, entity, gibflag) {
     if (!isdefined(entity.var_24996eec)) {
         return;
     }
-    foreach (var_9a11879, var_2759fed2 in entity.var_24996eec) {
-        var_ff2bc026 = _getfxbundle(var_9a11879);
-        for (index = 0; index < var_ff2bc026.fx.size; index++) {
-            if (isdefined(var_2759fed2[index]) && var_ff2bc026.fx[index].var_ffe1aa63 === gibflag) {
-                stopfx(localclientnum, var_2759fed2[index]);
+    foreach (var_9a11879, fxbundleinst in entity.var_24996eec) {
+        fxbundle = _getfxbundle(var_9a11879);
+        for (index = 0; index < fxbundle.fx.size; index++) {
+            if (isdefined(fxbundleinst[index]) && fxbundle.fx[index].var_ffe1aa63 === gibflag) {
+                stopfx(localclientnum, fxbundleinst[index]);
                 index = [];
             }
         }
@@ -146,11 +146,11 @@ function private _ispiecedestructed(localclientnum, entity, var_a48ef4f2) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xdc423e9c, Offset: 0x888
 // Size: 0x6e
-function private _shouldplayfx(localclientnum, entity, var_59df668a) {
-    if (_isgibbed(localclientnum, entity, var_59df668a.var_ffe1aa63)) {
+function private _shouldplayfx(localclientnum, entity, fxstruct) {
+    if (_isgibbed(localclientnum, entity, fxstruct.var_ffe1aa63)) {
         return 0;
     }
-    if (_ispiecedestructed(localclientnum, entity, var_59df668a.var_a48ef4f2)) {
+    if (_ispiecedestructed(localclientnum, entity, fxstruct.var_a48ef4f2)) {
         return 0;
     }
     return 1;
@@ -165,20 +165,20 @@ function playfxbundle(localclientnum, entity, var_25e6d719) {
         return;
     }
     _configentity(localclientnum, entity);
-    var_ff2bc026 = _getfxbundle(var_25e6d719);
-    if (isdefined(entity.var_24996eec[var_ff2bc026.name])) {
+    fxbundle = _getfxbundle(var_25e6d719);
+    if (isdefined(entity.var_24996eec[fxbundle.name])) {
         return;
     }
-    if (isdefined(var_ff2bc026)) {
-        var_9e29217 = [];
-        for (index = 0; index < var_ff2bc026.fx.size; index++) {
-            var_59df668a = var_ff2bc026.fx[index];
-            if (_shouldplayfx(localclientnum, entity, var_59df668a)) {
-                var_9e29217[index] = gibclientutils::_playgibfx(localclientnum, entity, var_59df668a.fx, var_59df668a.attachtag);
+    if (isdefined(fxbundle)) {
+        playingfx = [];
+        for (index = 0; index < fxbundle.fx.size; index++) {
+            fxstruct = fxbundle.fx[index];
+            if (_shouldplayfx(localclientnum, entity, fxstruct)) {
+                playingfx[index] = gibclientutils::_playgibfx(localclientnum, entity, fxstruct.fx, fxstruct.attachtag);
             }
         }
-        if (var_9e29217.size > 0) {
-            entity.var_24996eec[var_ff2bc026.name] = var_9e29217;
+        if (playingfx.size > 0) {
+            entity.var_24996eec[fxbundle.name] = playingfx;
         }
     }
 }
@@ -189,11 +189,11 @@ function playfxbundle(localclientnum, entity, var_25e6d719) {
 // Size: 0x128
 function stopallfxbundles(localclientnum, entity) {
     _configentity(localclientnum, entity);
-    var_c0f7e0f2 = [];
-    foreach (var_9a11879, var_ff2bc026 in entity.var_24996eec) {
-        var_c0f7e0f2[var_c0f7e0f2.size] = var_9a11879;
+    fxbundlenames = [];
+    foreach (var_9a11879, fxbundle in entity.var_24996eec) {
+        fxbundlenames[fxbundlenames.size] = var_9a11879;
     }
-    foreach (var_9a11879 in var_c0f7e0f2) {
+    foreach (var_9a11879 in fxbundlenames) {
         stopfxbundle(localclientnum, entity, var_9a11879);
     }
 }
@@ -207,14 +207,14 @@ function stopfxbundle(localclientnum, entity, var_25e6d719) {
         return;
     }
     _configentity(localclientnum, entity);
-    var_ff2bc026 = _getfxbundle(var_25e6d719);
-    if (isdefined(entity.var_24996eec[var_ff2bc026.name])) {
-        foreach (fx in entity.var_24996eec[var_ff2bc026.name]) {
+    fxbundle = _getfxbundle(var_25e6d719);
+    if (isdefined(entity.var_24996eec[fxbundle.name])) {
+        foreach (fx in entity.var_24996eec[fxbundle.name]) {
             if (isdefined(fx)) {
                 stopfx(localclientnum, fx);
             }
         }
-        var_ff2bc026.name = [];
+        fxbundle.name = [];
     }
 }
 
@@ -227,14 +227,14 @@ function function_ae92446(localclientnum, entity, var_25e6d719) {
         return;
     }
     _configentity(localclientnum, entity);
-    var_ff2bc026 = _getfxbundle(var_25e6d719);
-    if (isdefined(entity.var_24996eec[var_ff2bc026.name])) {
-        foreach (fx in entity.var_24996eec[var_ff2bc026.name]) {
+    fxbundle = _getfxbundle(var_25e6d719);
+    if (isdefined(entity.var_24996eec[fxbundle.name])) {
+        foreach (fx in entity.var_24996eec[fxbundle.name]) {
             if (isdefined(fx)) {
                 killfx(localclientnum, fx);
             }
         }
-        var_ff2bc026.name = [];
+        fxbundle.name = [];
     }
 }
 

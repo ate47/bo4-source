@@ -30,7 +30,7 @@ function timed_event_monitor(seconds, notify_string, client_notify_string) {
         millisecs_remaining = globallogic_utils::gettimeremaining();
         seconds_remaining = float(millisecs_remaining) / 1000;
         if (seconds_remaining <= seconds) {
-            function_9dea348e(notify_string, client_notify_string);
+            event_notify(notify_string, client_notify_string);
             return;
         }
     }
@@ -92,7 +92,7 @@ function score_team_event_monitor(score, notify_string, client_notify_string) {
     for (;;) {
         wait(0.5);
         if (any_team_reach_score(score)) {
-            function_9dea348e(notify_string, client_notify_string);
+            event_notify(notify_string, client_notify_string);
             return;
         }
     }
@@ -108,7 +108,7 @@ function score_event_monitor(score, notify_string, client_notify_string) {
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (isdefined(players[i].score) && players[i].score >= score) {
-                function_9dea348e(notify_string, client_notify_string);
+                event_notify(notify_string, client_notify_string);
                 return;
             }
         }
@@ -119,7 +119,7 @@ function score_event_monitor(score, notify_string, client_notify_string) {
 // Params 2, eflags: 0x0
 // Checksum 0x972e85c5, Offset: 0x4f8
 // Size: 0x44
-function function_9dea348e(notify_string, client_notify_string) {
+function event_notify(notify_string, client_notify_string) {
     if (isdefined(notify_string)) {
         level notify(notify_string);
     }

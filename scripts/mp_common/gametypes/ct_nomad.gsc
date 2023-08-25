@@ -26,7 +26,7 @@
 // Size: 0x3c4
 function event<gametype_init> main(eventstruct) {
     ct_core::function_46e95cc7();
-    level.select_character = ct_utils::get_roleindex(#"hash_778d35e03a52b01a");
+    level.select_character = ct_utils::get_roleindex(#"prt_mp_trapper");
     level.var_820c5561 = "NOMAD";
     ct_utils::function_be3a76b7(level.var_820c5561);
     level.var_f4bbd9a8[#"fail_timeover"] = #"hash_43308bd441c5527f";
@@ -762,26 +762,26 @@ function function_764aabbc() {
 // Checksum 0xc7fe964e, Offset: 0x2c60
 // Size: 0x294
 function function_a6b6f492() {
-    level thread scene::init(#"hash_16dc1766fc34ff0b");
-    level thread scene::init(#"hash_5438c10f67365687");
-    level thread scene::init(#"hash_afda7c01698afa5");
-    level thread scene::init(#"hash_4e0b457de7a522e2");
-    level thread scene::init(#"hash_7051e29faa930b3");
-    level thread scene::init(#"hash_623d98e8f3bc2913");
-    level thread scene::init(#"hash_6f27f62956c4c8ec");
-    level thread scene::init(#"hash_f73e7a7f9951585");
-    level thread scene::init(#"hash_461d1f80df3fcf9");
+    level thread scene::init(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle");
+    level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_bundle");
+    level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle");
+    level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle");
+    level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle");
+    level thread scene::init(#"p8_fxanim_mp_frenetic_vines_01_bundle");
+    level thread scene::init(#"p8_fxanim_mp_frenetic_vines_02_bundle");
+    level thread scene::init(#"p8_fxanim_mp_frenetic_vines_03_bundle");
+    level thread scene::init(#"p8_fxanim_mp_frenetic_rock_slide_bundle");
     level waittill(#"desc_countdown_start");
-    level scene::add_scene_func(#"hash_16dc1766fc34ff0b", &function_dd64960c, "play");
-    level thread scene::play(#"hash_5438c10f67365687");
-    level thread scene::play(#"hash_afda7c01698afa5");
-    level thread scene::play(#"hash_4e0b457de7a522e2");
-    level thread scene::play(#"hash_7051e29faa930b3");
-    level thread scene::play(#"hash_623d98e8f3bc2913");
-    level thread scene::play(#"hash_6f27f62956c4c8ec");
-    level thread scene::play(#"hash_f73e7a7f9951585");
-    level thread scene::play(#"hash_461d1f80df3fcf9");
-    level thread scene::play(#"hash_16dc1766fc34ff0b");
+    level scene::add_scene_func(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle", &function_dd64960c, "play");
+    level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_bundle");
+    level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle");
+    level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle");
+    level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle");
+    level thread scene::play(#"p8_fxanim_mp_frenetic_vines_01_bundle");
+    level thread scene::play(#"p8_fxanim_mp_frenetic_vines_02_bundle");
+    level thread scene::play(#"p8_fxanim_mp_frenetic_vines_03_bundle");
+    level thread scene::play(#"p8_fxanim_mp_frenetic_rock_slide_bundle");
+    level thread scene::play(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle");
 }
 
 // Namespace ct_nomad/ct_nomad

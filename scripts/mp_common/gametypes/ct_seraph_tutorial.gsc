@@ -1558,7 +1558,7 @@ function function_b1bcea59() {
     e_player hide();
     wait(4);
     e_player = ct_utils::get_player();
-    e_player val::set(#"hash_64388cfddf27fbbf", "ignoreme", 1);
+    e_player val::set(#"gunship", "ignoreme", 1);
     level thread ct_vo::function_5df1a850(level.ac130, array(#"hash_37ecd97827bbf3b"));
     e_player thread ct_utils::function_61c3d59c(#"hash_1aa5c2216481240e", undefined);
     while (1) {
@@ -1645,7 +1645,7 @@ function function_b1bcea59() {
     setmatchflag("bomb_timer_a", 0);
     level.var_e6db911d = 1;
     e_player = ct_utils::get_player();
-    e_player val::reset(#"hash_64388cfddf27fbbf", "ignoreme");
+    e_player val::reset(#"gunship", "ignoreme");
     level.var_43da6545 = undefined;
     level.var_e190d640 = undefined;
     return b_success;

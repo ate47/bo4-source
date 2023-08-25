@@ -52,8 +52,8 @@ function spawn_special_ai() {
     level waittill(#"hash_54391c26dfd50b8a");
     var_f71adb48 = struct::get_array("special_ai", "script_noteworthy");
     var_f71adb48 = array::randomize(var_f71adb48);
-    var_8c7212ce = min(var_f71adb48.size, 5);
-    for (i = 0; i < var_8c7212ce; i++) {
+    num_to_spawn = min(var_f71adb48.size, 5);
+    for (i = 0; i < num_to_spawn; i++) {
         var_eb5de65e = var_f71adb48[i];
         wz_ai_utils::function_ac114e1f(var_eb5de65e, #"hash_618248fca82d83a6", #"cellhouse");
         wait(0.1);

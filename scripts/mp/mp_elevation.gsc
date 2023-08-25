@@ -51,8 +51,8 @@ function function_2cdcf5c3() {
         }
         exploder::exploder("fxexp_mist_gust");
         exploder::exploder("fxexp_snow_gust");
-        level thread scene::play(#"hash_739fe5d9af0be6a2", "shot 1");
-        level thread scene::play(#"hash_22ce72aeb208bd65", "shot 1");
+        level thread scene::play(#"p8_fxanim_mp_ele_tree_gust_01_bundle", "shot 1");
+        level thread scene::play(#"p8_fxanim_mp_ele_tree_gust_02_bundle", "shot 1");
     }
 }
 
@@ -66,9 +66,9 @@ function on_game_playing() {
     wait(getdvarfloat(#"hash_205d729c5c415715", 0));
     level util::delay(1.5, undefined, &function_fb047aa8);
     level util::delay(1.5, undefined, &function_4601a968);
-    level thread scene::play(#"hash_739fe5d9af0be6a2", "shot 2");
-    level thread scene::play(#"hash_22ce72aeb208bd65", "shot 2");
-    level thread scene::play(#"hash_2a3c90889c6388d4");
+    level thread scene::play(#"p8_fxanim_mp_ele_tree_gust_01_bundle", "shot 2");
+    level thread scene::play(#"p8_fxanim_mp_ele_tree_gust_02_bundle", "shot 2");
+    level thread scene::play(#"p8_fxanim_mp_ele_flower_pots_gust_bundle");
 }
 
 // Namespace mp_elevation/mp_elevation

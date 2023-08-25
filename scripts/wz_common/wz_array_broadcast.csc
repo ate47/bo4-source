@@ -7,17 +7,17 @@
 #include scripts/core_common/struct.csc;
 #include scripts/core_common/callbacks_shared.csc;
 
-#namespace namespace_cd937afc;
+#namespace wz_array_broadcast;
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x2
 // Checksum 0xad0aaf72, Offset: 0x130
 // Size: 0x3c
 function autoexec __init__system__() {
-    system::register(#"hash_647d89c55443e16e", &__init__, undefined, undefined);
+    system::register(#"wz_array_broadcast", &__init__, undefined, undefined);
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x2
 // Checksum 0xe28b89f8, Offset: 0x178
 // Size: 0xae
@@ -25,7 +25,7 @@ function autoexec __init() {
     level.var_47f205b = (isdefined(getgametypesetting(#"hash_3778ec3bd924f17c")) ? getgametypesetting(#"hash_3778ec3bd924f17c") : 0) && (isdefined(getgametypesetting(#"hash_24e281e778894ac9")) ? getgametypesetting(#"hash_24e281e778894ac9") : 0);
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x1 linked
 // Checksum 0x49684fed, Offset: 0x230
 // Size: 0x1e
@@ -34,7 +34,7 @@ function __init__() {
     level.var_c055f451 = 0;
 }
 
-// Namespace namespace_cd937afc/event_9673dc9a
+// Namespace wz_array_broadcast/event_9673dc9a
 // Params 1, eflags: 0x40
 // Checksum 0xa08e70f8, Offset: 0x258
 // Size: 0x2d4
@@ -74,7 +74,7 @@ function event<event_9673dc9a> function_3981d015(eventstruct) {
     }
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5cc568e1, Offset: 0x538
 // Size: 0x44
@@ -86,7 +86,7 @@ function function_bf805b3d() {
     level thread function_fb90d490();
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x1 linked
 // Checksum 0x972c6195, Offset: 0x588
 // Size: 0xc8
@@ -98,7 +98,7 @@ function function_fb90d490() {
     }
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x1 linked
 // Checksum 0x7396dbd1, Offset: 0x658
 // Size: 0x1a0
@@ -118,7 +118,7 @@ function function_b7bec782() {
     }
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 1, eflags: 0x1 linked
 // Checksum 0x75794212, Offset: 0x800
 // Size: 0x696
@@ -202,7 +202,7 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
     level.var_c055f451 = 2;
 }
 
-// Namespace namespace_cd937afc/namespace_cd937afc
+// Namespace wz_array_broadcast/wz_array_broadcast
 // Params 0, eflags: 0x1 linked
 // Checksum 0xedf69448, Offset: 0xea0
 // Size: 0x74

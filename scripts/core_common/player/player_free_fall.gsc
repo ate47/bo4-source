@@ -34,7 +34,7 @@ function __init__() {
 // Checksum 0x77085261, Offset: 0x208
 // Size: 0x56
 function function_d2a1520c() {
-    wingsuit = self namespace_eb06e24d::function_c772633d();
+    wingsuit = self namespace_eb06e24d::get_wingsuit();
     if (self util::is_female()) {
         return wingsuit.var_5677bd3d;
     }
@@ -52,7 +52,7 @@ function private function_c9a18304(eventstruct) {
             self attach(model);
         }
         if (!isdefined(eventstruct.var_695a7111) || eventstruct.var_695a7111) {
-            parachute = self namespace_eb06e24d::function_fc6b6f3b();
+            parachute = self namespace_eb06e24d::get_parachute();
             parachute_weapon = parachute.("parachute");
             if (isdefined(parachute_weapon)) {
                 if (!self hasweapon(parachute_weapon)) {
@@ -67,7 +67,7 @@ function private function_c9a18304(eventstruct) {
             self detach(model);
         }
         if (!self function_9a0edd92()) {
-            parachute = self namespace_eb06e24d::function_fc6b6f3b();
+            parachute = self namespace_eb06e24d::get_parachute();
             parachute_weapon = parachute.("parachute");
             if (isdefined(parachute_weapon)) {
                 if (self hasweapon(parachute_weapon)) {
@@ -97,7 +97,7 @@ function private function_b6e83203(delay) {
         self endon(#"death", #"disconnect");
         wait(delay);
     }
-    parachute = self namespace_eb06e24d::function_fc6b6f3b();
+    parachute = self namespace_eb06e24d::get_parachute();
     var_dbb94a = parachute.("parachuteLit");
     function_6aac1790(var_dbb94a);
 }
@@ -110,7 +110,7 @@ function private function_26d46af3(eventstruct) {
     if (eventstruct.parachute) {
         self function_b6e83203();
     } else {
-        parachute = self namespace_eb06e24d::function_fc6b6f3b();
+        parachute = self namespace_eb06e24d::get_parachute();
         parachute_weapon = parachute.("parachute");
         var_dbb94a = parachute.("parachuteLit");
         if (isdefined(parachute_weapon)) {

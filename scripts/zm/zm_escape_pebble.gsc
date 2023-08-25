@@ -47,7 +47,7 @@ function autoexec __init__system__() {
 function __init__() {
     init_clientfield();
     init_flags();
-    function_ec9e5cf2();
+    init_quests();
 }
 
 // Namespace pebble/zm_escape_pebble
@@ -105,7 +105,7 @@ function init_flags() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe7e6def7, Offset: 0xac0
 // Size: 0x594
-function function_ec9e5cf2() {
+function init_quests() {
     zm_sq::register(#"jump_scare", #"1", #"hash_3203b932029a4e0b", &jump_scare, &jump_scare_cleanup);
     zm_sq::register(#"drawings", #"1", #"drawings_quest", &function_cb19e12a, &drawings_cleanup);
     zm_sq::register(#"narrative_room", #"1", #"hash_64d6af5ddc324d26", &function_6f55d670, &function_13c87ace);

@@ -337,28 +337,28 @@ function function_cf8a9f8e() {
                 setdvar(#"dvarconfigenabled", 0);
                 now = getutc();
                 setdvar(#"contracts_start_time", function_2dddc683(now));
-                function_45e1a0cb("<unknown string>");
+                clear_dvar("<unknown string>");
             }
             if (function_aa3fb1a("<unknown string>")) {
                 function_5da9419(-1);
-                function_45e1a0cb("<unknown string>");
+                clear_dvar("<unknown string>");
             }
             if (function_aa3fb1a("<unknown string>")) {
                 function_5da9419(-7);
-                function_45e1a0cb("<unknown string>");
+                clear_dvar("<unknown string>");
             }
             if (function_aa3fb1a("<unknown string>")) {
                 function_5da9419(1);
-                function_45e1a0cb("<unknown string>");
+                clear_dvar("<unknown string>");
             }
             if (function_aa3fb1a("<unknown string>")) {
                 function_5da9419(7);
-                function_45e1a0cb("<unknown string>");
+                clear_dvar("<unknown string>");
             }
             if (var_92f946a9 != getdvarint(#"dvarconfigenabled", 1)) {
                 setdvar(#"dvarconfigenabled", var_92f946a9);
             }
-            function_45e1a0cb("<unknown string>");
+            clear_dvar("<unknown string>");
         }
     #/
 }
@@ -390,7 +390,7 @@ function function_aa3fb1a(var_f4f31e8a) {
 // Params 1, eflags: 0x0
 // Checksum 0x6f9372be, Offset: 0x16a8
 // Size: 0x2c
-function function_45e1a0cb(var_f4f31e8a) {
+function clear_dvar(var_f4f31e8a) {
     /#
         setdvar(var_f4f31e8a, 0);
     #/

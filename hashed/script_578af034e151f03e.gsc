@@ -31,22 +31,22 @@ function function_d531af7d(client_num, state) {
     function_349aed4a(client_num);
     if (state == "n") {
         if (level._power_on == 0) {
-            var_eebe5f38 = level.var_1c9068af;
+            screen_to_display = level.var_1c9068af;
         } else {
-            var_eebe5f38 = level.var_944b0c72;
+            screen_to_display = level.var_944b0c72;
         }
     } else if (state == "f") {
-        var_eebe5f38 = level.var_f6d11e0b;
+        screen_to_display = level.var_f6d11e0b;
     } else {
-        var_ca86854e = int(state);
-        var_eebe5f38 = level.open_chest_location[var_ca86854e];
+        array_number = int(state);
+        screen_to_display = level.open_chest_location[array_number];
     }
     stop_notify = "stop_tv_swap";
     for (i = 0; i < level.var_c1947c95[client_num].size; i++) {
-        var_78f347e4 = level.var_c1947c95[client_num][i];
-        var_78f347e4 notify(stop_notify);
+        tele = level.var_c1947c95[client_num][i];
+        tele notify(stop_notify);
         wait(0.2);
-        var_78f347e4 thread function_ecd6c9b9(var_eebe5f38, "stop_tv_swap");
+        tele thread function_ecd6c9b9(screen_to_display, "stop_tv_swap");
     }
 }
 
@@ -63,8 +63,8 @@ function function_349aed4a(client_num) {
     }
     level.var_c1947c95[client_num] = getentarray(client_num, "model_pentagon_box_screens", "script_noteworthy");
     for (i = 0; i < level.var_c1947c95[client_num].size; i++) {
-        var_78f347e4 = level.var_c1947c95[client_num][i];
-        var_78f347e4 setmodel(level.var_1c9068af[0]);
+        tele = level.var_c1947c95[client_num][i];
+        tele setmodel(level.var_1c9068af[0]);
         wait(0.1);
     }
 }

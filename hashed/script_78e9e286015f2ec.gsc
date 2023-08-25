@@ -265,17 +265,17 @@ function reset_code() {
 // Checksum 0x6b58d8a6, Offset: 0x25b0
 // Size: 0x112
 function function_4696e086(var_5c0c59ca = undefined, var_64d0790a = undefined) {
-    var_c97e80f5 = randomintrange(0, 10000);
-    while (isdefined(level.var_f13364b4.a_n_codes[var_c97e80f5])) {
-        var_c97e80f5 = randomintrange(0, 10000);
+    n_random_int = randomintrange(0, 10000);
+    while (isdefined(level.var_f13364b4.a_n_codes[n_random_int])) {
+        n_random_int = randomintrange(0, 10000);
         /#
-            iprintlnbold("<unknown string>" + var_c97e80f5 + "<unknown string>");
+            iprintlnbold("<unknown string>" + n_random_int + "<unknown string>");
         #/
     }
     if (isdefined(var_5c0c59ca) && isdefined(var_64d0790a)) {
-        level.var_f13364b4.a_n_codes[var_c97e80f5] = {#var_d9d9d617:var_64d0790a, #var_544c05c6:var_5c0c59ca};
+        level.var_f13364b4.a_n_codes[n_random_int] = {#var_d9d9d617:var_64d0790a, #var_544c05c6:var_5c0c59ca};
     }
-    return var_c97e80f5;
+    return n_random_int;
 }
 
 // Namespace namespace_7d8e6ec3/namespace_7d8e6ec3
@@ -798,25 +798,25 @@ function function_5b1c42a6() {
 // Checksum 0x40fd2e0, Offset: 0x3cb0
 // Size: 0x1aa
 function function_52838f02(var_601fee0 = "both", b_show = 1) {
-    var_b58f214e = &show;
+    func_visibility = &show;
     if (!b_show) {
-        var_b58f214e = &hide;
+        func_visibility = &hide;
     }
     switch (var_601fee0) {
     case #"both":
         for (i = 0; i < 4; i++) {
-            level.var_1e220e78[i] [[ var_b58f214e ]]();
-            level.var_17ff2d5e[i] [[ var_b58f214e ]]();
+            level.var_1e220e78[i] [[ func_visibility ]]();
+            level.var_17ff2d5e[i] [[ func_visibility ]]();
         }
         break;
     case #"keypad":
         for (i = 0; i < 4; i++) {
-            level.var_1e220e78[i] [[ var_b58f214e ]]();
+            level.var_1e220e78[i] [[ func_visibility ]]();
         }
         break;
     case #"large":
         for (i = 0; i < 4; i++) {
-            level.var_17ff2d5e[i] [[ var_b58f214e ]]();
+            level.var_17ff2d5e[i] [[ func_visibility ]]();
         }
         break;
     default:
@@ -898,11 +898,11 @@ function function_f0af359() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x9133454c, Offset: 0x4440
 // Size: 0x124
-function function_66365668(var_73cc7cdd) {
-    var_aa2d940c = "tag_code_digit_0_" + int(var_73cc7cdd[0]);
-    var_bfd7bf60 = "tag_code_digit_1_" + int(var_73cc7cdd[1]);
-    var_ce0d5bcb = "tag_code_digit_2_" + int(var_73cc7cdd[2]);
-    var_e38486c9 = "tag_code_digit_3_" + int(var_73cc7cdd[3]);
+function function_66365668(a_code) {
+    var_aa2d940c = "tag_code_digit_0_" + int(a_code[0]);
+    var_bfd7bf60 = "tag_code_digit_1_" + int(a_code[1]);
+    var_ce0d5bcb = "tag_code_digit_2_" + int(a_code[2]);
+    var_e38486c9 = "tag_code_digit_3_" + int(a_code[3]);
     self showpart(var_aa2d940c);
     self showpart(var_bfd7bf60);
     self showpart(var_ce0d5bcb);
@@ -914,14 +914,14 @@ function function_66365668(var_73cc7cdd) {
 // Checksum 0x461af219, Offset: 0x4570
 // Size: 0xb8
 function function_da24090c(n_code) {
-    var_73cc7cdd[0] = floor(n_code / 1000);
+    a_code[0] = floor(n_code / 1000);
     n_code = n_code % 1000;
-    var_73cc7cdd[1] = floor(n_code / 100);
+    a_code[1] = floor(n_code / 100);
     n_code = n_code % 100;
-    var_73cc7cdd[2] = floor(n_code / 10);
+    a_code[2] = floor(n_code / 10);
     n_code = n_code % 10;
-    var_73cc7cdd[3] = n_code;
-    return var_73cc7cdd;
+    a_code[3] = n_code;
+    return a_code;
 }
 
 // Namespace namespace_7d8e6ec3/namespace_7d8e6ec3

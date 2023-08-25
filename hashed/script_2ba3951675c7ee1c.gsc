@@ -630,13 +630,13 @@ function function_95a4deeb() {
         s_result = undefined;
         s_result = self waittill(#"weapon_change", #"player_downed");
         if (s_result._notify === "player_downed") {
-            var_e860f3d1 = 1;
+            b_player_downed = 1;
         } else {
             wait(0.1);
         }
         if (isdefined(self.var_6417e645) && self.var_6417e645) {
             continue;
-        } else if (!(isdefined(var_e860f3d1) && var_e860f3d1) && s_result.last_weapon !== getweapon(#"ww_blundergat_fire_t8_unfinished")) {
+        } else if (!(isdefined(b_player_downed) && b_player_downed) && s_result.last_weapon !== getweapon(#"ww_blundergat_fire_t8_unfinished")) {
             continue;
         } else {
             if (self hasweapon(getweapon(#"ww_blundergat_fire_t8_unfinished"))) {

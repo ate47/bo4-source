@@ -99,17 +99,17 @@ function function_25f1e3c1() {
 // Size: 0x464
 function function_938667bd() {
     bot_action::register_action(#"hash_5397239dd3c8da8d", &bot_action::weapon_rank, &function_c98fad6b, &function_74ab5468);
-    bot_action::register_action(#"hash_6fbd1b1c42e3a0c5", &bot_action::weapon_rank, &function_1c7ea685, &bot_action::function_49161e05);
-    bot_action::register_action(#"activate_localheal", &bot_action::weapon_rank, &function_7fa22be8, &bot_action::function_49161e05);
+    bot_action::register_action(#"hash_6fbd1b1c42e3a0c5", &bot_action::weapon_rank, &function_1c7ea685, &bot_action::deploy_gadget);
+    bot_action::register_action(#"activate_localheal", &bot_action::weapon_rank, &function_7fa22be8, &bot_action::deploy_gadget);
     bot_action::register_action(#"activate_radiation_field", &bot_action::weapon_rank, &function_65b9c7c2, &activate_radiation_field);
     bot_action::register_action(#"use_tripwire", &bot_action::weapon_rank, &function_d18123f8, &use_tripwire);
-    bot_action::register_action(#"activate_dog", &bot_action::weapon_rank, &bot_action::function_38d0d1df, &bot_action::function_49161e05);
+    bot_action::register_action(#"activate_dog", &bot_action::weapon_rank, &bot_action::function_38d0d1df, &bot_action::deploy_gadget);
     bot_action::register_action(#"hash_4600e058d958fc21", &bot_action::weapon_rank, &function_17a8721f, &function_76c8b8e8);
-    bot_action::register_action(#"activate_vision_pulse", &bot_action::weapon_rank, &bot_action::function_38d0d1df, &bot_action::function_49161e05);
+    bot_action::register_action(#"activate_vision_pulse", &bot_action::weapon_rank, &bot_action::function_38d0d1df, &bot_action::deploy_gadget);
     bot_action::register_action(#"activate_noncombat_grapple", &bot_action::weapon_rank, &function_554a6177, &use_grapple);
     bot_action::register_action(#"activate_gravity_slam", &bot_action::weapon_rank, &function_97e7772c, &bot_action::function_94f96101);
-    bot_action::register_action(#"deploy_spawnbeacon", &bot_action::weapon_rank, &function_9a0eb4f0, &bot_action::function_49161e05);
-    bot_action::register_action(#"hash_17f1a25f8c10e1cd", &bot_action::weapon_rank, &function_4a95cdaf, &bot_action::function_49161e05);
+    bot_action::register_action(#"deploy_spawnbeacon", &bot_action::weapon_rank, &function_9a0eb4f0, &bot_action::deploy_gadget);
+    bot_action::register_action(#"hash_17f1a25f8c10e1cd", &bot_action::weapon_rank, &function_4a95cdaf, &bot_action::deploy_gadget);
     bot_action::register_action(#"hash_5d6b13cfb592ee04", &bot_action::weapon_rank, &function_e43892c4, &function_79988b4b);
     bot_action::register_action(#"use_icepick", &bot_action::weapon_rank, &bot_action::function_38d0d1df, &use_icepick);
 }
@@ -689,8 +689,8 @@ function function_554a6177(actionparams) {
         return undefined;
     }
     eye = self geteye();
-    var_2282e55d = vectornormalize(target - eye);
-    traceend = eye + var_2282e55d * 2000;
+    vectotarget = vectornormalize(target - eye);
+    traceend = eye + vectotarget * 2000;
     trace = bullettrace(eye, traceend, 0, self);
     if (trace[#"fraction"] >= 1) {
         /#
@@ -762,8 +762,8 @@ function function_9a0eb4f0(actionparams) {
         #/
         return undefined;
     }
-    var_35e606c8 = gettime() - self.spawntime;
-    if (var_35e606c8 < 10000) {
+    timesincespawn = gettime() - self.spawntime;
+    if (timesincespawn < 10000) {
         /#
             if (!isdefined(actionparams.debug)) {
                 actionparams.debug = [];
@@ -943,8 +943,8 @@ function function_17a8721f(actionparams) {
         #/
         return undefined;
     }
-    var_35e606c8 = gettime() - self.spawntime;
-    if (var_35e606c8 < 5000) {
+    timesincespawn = gettime() - self.spawntime;
+    if (timesincespawn < 5000) {
         /#
             if (!isdefined(actionparams.debug)) {
                 actionparams.debug = [];
@@ -1269,9 +1269,9 @@ function function_9c943ad6(actionparams, var_af50df89) {
     }
     var_87b53013 = actionparams.action.name;
     scorestreakweapon = actionparams.weapon;
-    var_f5d61b4c = self killstreaks::has_killstreak(var_87b53013);
+    haskillstreak = self killstreaks::has_killstreak(var_87b53013);
     var_96648639 = self killstreaks::get_killstreak_quantity(scorestreakweapon) > 0;
-    var_e8992218 = var_f5d61b4c || var_96648639;
+    var_e8992218 = haskillstreak || var_96648639;
     if (!var_e8992218) {
         /#
             if (!isdefined(actionparams.debug)) {
@@ -1412,8 +1412,8 @@ function function_d2107b(actionparams) {
     cylinder = ai::t_cylinder(self.origin, 512, 512);
     var_e50a845c = tacticalquery("stratcom_tacquery_position", cylinder);
     var_6fa334a7 = array::randomize(var_e50a845c);
-    var_5057c879 = anglestoforward(self getplayerangles());
-    var_ff975a6 = vectornormalize(var_5057c879 * (1, 1, 0));
+    botdir = anglestoforward(self getplayerangles());
+    var_ff975a6 = vectornormalize(botdir * (1, 1, 0));
     var_c375900c = undefined;
     foreach (point in var_6fa334a7) {
         if (function_96c81b85(var_7607a546, point.origin)) {
@@ -1541,7 +1541,7 @@ function function_942b5513(actionparams) {
     while (!self function_a39f313c() || self getcurrentweapon() != scorestreakweapon) {
         self waittill(#"hash_347a612b61067eb3");
     }
-    var_66c3c593 = 0;
+    shots_fired = 0;
     enemies = self teams::getenemyplayers();
     var_8f5e3947 = [];
     foreach (enemy in enemies) {
@@ -1554,21 +1554,21 @@ function function_942b5513(actionparams) {
         var_4e2b3e3a[i] = var_8f5e3947[i].origin;
     }
     if (var_4e2b3e3a.size > 0) {
-        while (var_66c3c593 < 3) {
+        while (shots_fired < 3) {
             location = array::random(var_4e2b3e3a) + (randomfloatrange(0, 200), randomfloatrange(0, 200), 0);
             self notify(#"confirm_location", {#yaw:0, #position:location});
-            var_66c3c593++;
-            if (var_66c3c593 == 3) {
+            shots_fired++;
+            if (shots_fired == 3) {
                 break;
             } else {
                 self waittill(#"hash_347a612b61067eb3");
             }
         }
     } else {
-        while (var_66c3c593 < 3) {
+        while (shots_fired < 3) {
             self botpressbutton(16);
             self waittill(#"hash_347a612b61067eb3");
-            var_66c3c593++;
+            shots_fired++;
         }
     }
     while (!self function_a39f313c() || self getcurrentweapon() == level.weaponnone) {
@@ -1621,27 +1621,27 @@ function function_27f291e1(actionparams) {
     }
     wait(1);
     starttime = gettime();
-    var_ba7d23ad = 0;
+    boosted = 0;
     while (isdefined(self.rocket)) {
-        var_7d09ac79 = [];
+        outsidetargets = [];
         foreach (player in level.players) {
             if (isalive(player) && util::function_fbce7263(player.team, self.team)) {
                 closesttacpoint = getclosesttacpoint(player.origin);
                 if (isdefined(closesttacpoint)) {
                     if (closesttacpoint.ceilingheight > 4000) {
-                        if (!isdefined(var_7d09ac79)) {
-                            var_7d09ac79 = [];
-                        } else if (!isarray(var_7d09ac79)) {
-                            var_7d09ac79 = array(var_7d09ac79);
+                        if (!isdefined(outsidetargets)) {
+                            outsidetargets = [];
+                        } else if (!isarray(outsidetargets)) {
+                            outsidetargets = array(outsidetargets);
                         }
-                        var_7d09ac79[var_7d09ac79.size] = player;
+                        outsidetargets[outsidetargets.size] = player;
                     }
                 }
             }
         }
         closesttarget = undefined;
         var_914420bb = -1;
-        foreach (target in var_7d09ac79) {
+        foreach (target in outsidetargets) {
             var_6800dff4 = distance2dsquared(target.origin, self.rocket.origin);
             if (var_914420bb < 0 || var_6800dff4 < var_914420bb) {
                 closesttarget = target;
@@ -1649,11 +1649,11 @@ function function_27f291e1(actionparams) {
             }
         }
         self.rocket missile_settarget(closesttarget);
-        if (!var_ba7d23ad && isdefined(closesttarget)) {
+        if (!boosted && isdefined(closesttarget)) {
             var_3268fa4b = self.rocket.origin[2] - closesttarget.origin[2];
             if (var_3268fa4b < 4000) {
                 self bottapbutton(0);
-                var_ba7d23ad = 1;
+                boosted = 1;
             }
         }
         wait(0.25);

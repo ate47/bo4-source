@@ -26,16 +26,16 @@ function function_c14cb514(weapon) {
     }
     if (isdefined(weapon)) {
         if (level.weaponnone != weapon) {
-            var_7c3192e1 = function_385ef18d(weapon);
-            if (var_7c3192e1.isaltmode) {
-                if (isdefined(var_7c3192e1.altweapon) && level.weaponnone != var_7c3192e1.altweapon) {
-                    var_7c3192e1 = var_7c3192e1.altweapon;
+            activecamoweapon = function_385ef18d(weapon);
+            if (activecamoweapon.isaltmode) {
+                if (isdefined(activecamoweapon.altweapon) && level.weaponnone != activecamoweapon.altweapon) {
+                    activecamoweapon = activecamoweapon.altweapon;
                 }
             }
-            if (isdefined(var_7c3192e1.rootweapon) && level.weaponnone != var_7c3192e1.rootweapon) {
-                return var_7c3192e1.rootweapon;
+            if (isdefined(activecamoweapon.rootweapon) && level.weaponnone != activecamoweapon.rootweapon) {
+                return activecamoweapon.rootweapon;
             }
-            return var_7c3192e1;
+            return activecamoweapon;
         }
     }
     return weapon;

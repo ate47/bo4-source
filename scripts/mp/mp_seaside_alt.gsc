@@ -47,7 +47,7 @@ function on_game_playing() {
     wait(getdvarfloat(#"hash_205d729c5c415715", 0.3));
     if (util::isfirstround()) {
         if (getdvarint(#"hash_1ee1f013d124a26a", 0)) {
-            level thread scene::play(#"hash_3d50b9f32e7f67b");
+            level thread scene::play(#"p8_fxanim_mp_seaside_tanks_bundle");
         }
     }
 }
@@ -59,12 +59,12 @@ function on_game_playing() {
 function function_2cdcf5c3() {
     if (util::isfirstround()) {
         if (getdvarint(#"hash_1ee1f013d124a26a", 0)) {
-            level scene::init(#"hash_3d50b9f32e7f67b");
+            level scene::init(#"p8_fxanim_mp_seaside_tanks_bundle");
         }
         return;
     }
     if (getdvarint(#"hash_1ee1f013d124a26a", 0)) {
-        level scene::skipto_end(#"hash_3d50b9f32e7f67b");
+        level scene::skipto_end(#"p8_fxanim_mp_seaside_tanks_bundle");
     }
 }
 

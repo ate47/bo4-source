@@ -52,8 +52,8 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0x329e8760, Offset: 0x928
     // Size: 0x6c
     function increment_progress(localclientnum) {
-        var_1ed06bbc = [[ self ]]->get_data(localclientnum, "progress");
-        new_val = (var_1ed06bbc + 1) % 2;
+        current_val = [[ self ]]->get_data(localclientnum, "progress");
+        new_val = (current_val + 1) % 2;
         [[ self ]]->set_data(localclientnum, "progress", new_val);
     }
 

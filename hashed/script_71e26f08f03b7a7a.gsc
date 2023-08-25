@@ -128,15 +128,15 @@ function start(supplydrops = 1, minwaittime = 20, var_fe6b2eab = 20) {
             var_64f52ca3[var_a6872bd0] = var_64f52ca3[randindex];
             var_64f52ca3[randindex] = var_521b73a;
         }
-        var_4f95fbc = level.var_2ead97d1[var_3afaa57b];
-        for (var_4d83f68a = 0; var_4d83f68a < var_4f95fbc.size; var_4d83f68a++) {
-            randindex = randomint(var_4f95fbc.size);
-            var_521b73a = var_4f95fbc[var_4d83f68a];
-            var_4f95fbc[var_4d83f68a] = var_4f95fbc[randindex];
-            var_4f95fbc[randindex] = var_521b73a;
+        replacements = level.var_2ead97d1[var_3afaa57b];
+        for (var_4d83f68a = 0; var_4d83f68a < replacements.size; var_4d83f68a++) {
+            randindex = randomint(replacements.size);
+            var_521b73a = replacements[var_4d83f68a];
+            replacements[var_4d83f68a] = replacements[randindex];
+            replacements[randindex] = var_521b73a;
         }
         var_b7d663a9 = 0;
-        foreach (replacement in var_4f95fbc) {
+        foreach (replacement in replacements) {
             while (var_b7d663a9 < var_64f52ca3.size && replacement.count > 0) {
                 var_efecc884 = var_64f52ca3[var_b7d663a9];
                 if (isdefined(var_7003bde7[var_efecc884])) {

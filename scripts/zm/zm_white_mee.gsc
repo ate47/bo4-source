@@ -62,14 +62,14 @@ function init() {
     }
     level.var_22569770 = getent("e_spy", "targetname");
     level.var_22569770 hide();
-    function_ec9e5cf2();
+    init_quests();
 }
 
 // Namespace zm_white_mee/zm_white_mee
 // Params 0, eflags: 0x1 linked
 // Checksum 0x40e7b0f1, Offset: 0xb30
 // Size: 0x3f4
-function function_ec9e5cf2() {
+function init_quests() {
     level flag::init("mee_round");
     level flag::init("mee_projectile_count_reached");
     zm_sq::register(#"mee_projectile", #"step_1", #"mee_projectile_step1", &mee_projectile_step1_setup, &mee_projectile_step1_cleanup);

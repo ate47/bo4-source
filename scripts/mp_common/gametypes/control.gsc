@@ -70,16 +70,16 @@ function event<gametype_init> main(eventstruct) {
     level.takelivesondeath = 1;
     level.b_allow_vehicle_proximity_pickup = 1;
     level.scoreroundwinbased = getgametypesetting(#"cumulativeroundscores") == 0;
-    level.var_a346e384 = getgametypesetting(#"hash_6090fb2501533436");
+    level.var_a346e384 = getgametypesetting(#"objectiveSpawnTime");
     level.capturetime = getgametypesetting(#"capturetime");
-    level.var_1f102992 = getgametypesetting(#"hash_2668df77d6e3dae4");
-    level.var_51e6ac2d = getgametypesetting(#"hash_4b491f67e68ad5de");
-    level.var_8b4ff11a = getgametypesetting(#"hash_16efbe2186f760ad");
-    level.var_e3595063 = getgametypesetting(#"hash_5d39db2666484b69");
-    level.var_66171824 = getgametypesetting(#"hash_c20a87c80edb10e");
-    level.var_fdb59386 = getgametypesetting(#"hash_5e8cc49cfd2a1fd2");
-    level.var_dcddca2b = getgametypesetting(#"hash_4ea8f72af0b6d15b");
-    level.var_25830aa = getgametypesetting(#"hash_63cf0861bfd26240");
+    level.destroyTime = getgametypesetting(#"destroyTime");
+    level.timePausesWhenInZone = getgametypesetting(#"timePausesWhenInZone");
+    level.dela = getgametypesetting(#"hash_16efbe2186f760ad");
+    level.scorePerPlayer = getgametypesetting(#"scorePerPlayer");
+    level.neutralZone = getgametypesetting(#"neutralZone");
+    level.decayCapturedZones = getgametypesetting(#"decayCapturedZones");
+    level.capDecay = getgametypesetting(#"capDecay");
+    level.extraTime = getgametypesetting(#"extraTime");
     level.var_26ee7cf = getgametypesetting(#"hash_3de4aa2f016161ec");
     level.autodecaytime = isdefined(getgametypesetting(#"autodecaytime")) ? getgametypesetting(#"autodecaytime") : undefined;
     level.timerpaused = 0;
@@ -87,8 +87,8 @@ function event<gametype_init> main(eventstruct) {
     level.var_b9d36d8e = [];
     level.var_46ff851e = 0;
     level.var_433c44c5 = 0;
-    level.var_5479f3ce = getgametypesetting(#"hash_57fe8e4f461c236d");
-    level.var_d1614bb1 = isdefined(getgametypesetting(#"hash_3bbb6171dd1867a1")) ? getgametypesetting(#"hash_3bbb6171dd1867a1") : 0;
+    level.flagCaptureRateIncrease = getgametypesetting(#"flagCaptureRateIncrease");
+    level.bonusLivesForCapturingZone = isdefined(getgametypesetting(#"bonusLivesForCapturingZone")) ? getgametypesetting(#"bonusLivesForCapturingZone") : 0;
     globallogic_audio::set_leader_gametype_dialog("startControl", "hcStartControl", "controlOrdersOfs", "controlOrdersDef", "bbStartControl", "hcbbStartControl");
     register_clientfields();
     callback::on_connect(&on_player_connect);
@@ -162,7 +162,7 @@ function function_ee410a60() {
         level thread globallogic::end_round(1);
         return;
     }
-    if (isdefined(level.var_66171824) && level.var_66171824) {
+    if (isdefined(level.neutralZone) && level.neutralZone) {
         round::function_870759fb();
     } else {
         round::set_winner(game.defenders);
@@ -189,7 +189,7 @@ function on_spawn_player(predictedspawn) {
 function gettimelimit() {
     timelimit = globallogic_defaults::default_gettimelimit();
     if (level.var_e321292) {
-        return (timelimit + level.var_25830aa);
+        return (timelimit + level.extraTime);
     }
     return timelimit;
 }
@@ -468,8 +468,8 @@ function function_5274dbe8() {
         level.var_df6215f4 = 1;
         trigs = getentarray("control_zone_trigger", "targetname");
     }
-    for (var_eaaaa736 = 0; var_eaaaa736 < level.var_df6215f4; var_eaaaa736++) {
-        zone = level.zones[var_eaaaa736];
+    for (zi = 0; zi < level.var_df6215f4; zi++) {
+        zone = level.zones[zi];
         var_b2150652 = 0;
         zone.trigger = undefined;
         for (j = 0; j < trigs.size; j++) {
@@ -504,10 +504,10 @@ function function_5274dbe8() {
             }
         }
         ownerteam = game.defenders;
-        if (isdefined(level.var_66171824) && level.var_66171824) {
+        if (isdefined(level.neutralZone) && level.neutralZone) {
             ownerteam = #"neutral";
         }
-        zone.gameobject = gameobjects::create_use_object(ownerteam, zone.trigger, visuals, (0, 0, 0), "control_" + var_eaaaa736);
+        zone.gameobject = gameobjects::create_use_object(ownerteam, zone.trigger, visuals, (0, 0, 0), "control_" + zi);
         zone.gameobject gameobjects::set_objective_entity(zone);
         zone.gameobject gameobjects::disable_object();
         zone.gameobject gameobjects::set_model_visibility(0);
@@ -515,8 +515,8 @@ function function_5274dbe8() {
         zone.trigger.useobj = zone.gameobject;
         zone.gameobject.var_2d4c706 = #"neutral";
         zone.gameobject.var_eac9e8ae = 1;
-        zone.gameobject.var_a0ff5eb8 = !level.var_5479f3ce;
-        zone.zoneindex = var_eaaaa736;
+        zone.gameobject.var_a0ff5eb8 = !level.flagCaptureRateIncrease;
+        zone.zoneindex = zi;
         zone.scores = [];
         foreach (team, _ in level.teams) {
             zone.scores[team] = 0;
@@ -594,10 +594,10 @@ function function_c9bc70d6() {
         }
         zones = [];
         for (i = 0; i < var_c96c663b.size; i++) {
-            var_9e434550 = var_c96c663b[i].script_index;
-            if (isdefined(var_9e434550)) {
+            ind = var_c96c663b[i].script_index;
+            if (isdefined(ind)) {
                 for (j = 0; j < var_71b9425c.size; j++) {
-                    if (var_71b9425c[j] == var_9e434550) {
+                    if (var_71b9425c[j] == ind) {
                         zones[zones.size] = var_c96c663b[i];
                         break;
                     }
@@ -692,7 +692,7 @@ function function_9bb83f0() {
     thread function_c4922ad8();
     wait(1);
     sound::play_on_players("mp_suitcase_pickup");
-    if (level.var_a346e384 && !(isdefined(level.var_66171824) && level.var_66171824)) {
+    if (level.var_a346e384 && !(isdefined(level.neutralZone) && level.neutralZone)) {
         foreach (zone in level.zones) {
             zone.gameobject gameobjects::set_flags(1);
         }
@@ -703,7 +703,7 @@ function function_9bb83f0() {
         }
     }
     waittillframeend();
-    if (isdefined(level.var_66171824) && level.var_66171824) {
+    if (isdefined(level.neutralZone) && level.neutralZone) {
         update_objective_hint_message(#"hash_68ddcee590e87b3d", #"hash_68ddcee590e87b3d");
     } else {
         update_objective_hint_message(#"hash_68ddcee590e87b3d", #"hash_4900ca003706dc1d");
@@ -789,7 +789,7 @@ function function_4fb0ec25(zone) {
     zone.gameobject.decayprogress = 1;
     zone.gameobject gameobjects::set_decay_time(level.capturetime);
     zone.autodecaytime = level.autodecaytime;
-    if (isdefined(level.var_66171824) && level.var_66171824) {
+    if (isdefined(level.neutralZone) && level.neutralZone) {
         zone.gameobject.onuse = &function_ef9ae3d9;
     } else {
         zone.gameobject.onuse = &function_2efe6449;
@@ -801,7 +801,7 @@ function function_4fb0ec25(zone) {
     zone.gameobject.onendtouchuse = &function_27b934b5;
     zone.gameobject.onresumeuse = &function_8c50d606;
     zone.gameobject.stage = 1;
-    if (isdefined(level.var_66171824) && level.var_66171824) {
+    if (isdefined(level.neutralZone) && level.neutralZone) {
         zone.gameobject.onuseupdate = &function_ebb16836;
     } else {
         zone.gameobject.onuseupdate = &function_59ab563c;
@@ -901,7 +901,7 @@ function private function_f777c684(sentient) {
 // Checksum 0x76ba3936, Offset: 0x4128
 // Size: 0x6c
 function private function_edcc7296(sentient) {
-    if (isdefined(level.var_66171824) && level.var_66171824) {
+    if (isdefined(level.neutralZone) && level.neutralZone) {
         self.var_704b8073 = 1;
     } else {
         function_720063db(sentient);
@@ -914,12 +914,12 @@ function private function_edcc7296(sentient) {
 // Checksum 0x2f7e0697, Offset: 0x41a0
 // Size: 0x1b6
 function private function_bcaf6836() {
-    if (!isdefined(self.var_9f5ef882)) {
-        self.var_9f5ef882 = 0;
+    if (!isdefined(self.contested)) {
+        self.contested = 0;
     }
-    var_464f0169 = self.var_9f5ef882;
-    self.var_9f5ef882 = function_73d7b040(self);
-    if (self.var_9f5ef882) {
+    var_464f0169 = self.contested;
+    self.contested = function_73d7b040(self);
+    if (self.contested) {
         if (!var_464f0169) {
             foreach (playerlist in self.touchlist) {
                 foreach (struct in playerlist) {
@@ -1102,8 +1102,8 @@ function private function_2efe6449(sentient) {
     if (level.var_907fd719 == 1 && [[ level.gettimelimit ]]() > 0) {
         level.var_e321292 = 1;
     }
-    if (level.var_907fd719 == 1 && (isdefined(level.var_d1614bb1) ? level.var_d1614bb1 : 0) > 0 && var_4456a2ef == game.attackers) {
-        game.lives[game.attackers] = game.lives[game.attackers] + level.var_d1614bb1;
+    if (level.var_907fd719 == 1 && (isdefined(level.bonusLivesForCapturingZone) ? level.bonusLivesForCapturingZone : 0) > 0 && var_4456a2ef == game.attackers) {
+        game.lives[game.attackers] = game.lives[game.attackers] + level.bonusLivesForCapturingZone;
         teamid = "team" + level.teamindex[game.attackers];
         clientfield::set_world_uimodel("hudItems." + teamid + ".livesCount", game.lives[game.attackers]);
     }
@@ -1138,7 +1138,7 @@ function private function_ef9ae3d9(sentient) {
     }
     level.var_61ae3b1c = var_4456a2ef;
     level.var_bb7f17e5 = 1;
-    if (!(isdefined(level.var_fdb59386) && level.var_fdb59386)) {
+    if (!(isdefined(level.decayCapturedZones) && level.decayCapturedZones)) {
         if (self.ownerteam != var_4456a2ef) {
             self thread function_aeb2df43(var_4456a2ef);
             self gameobjects::set_owner_team(var_4456a2ef);
@@ -1325,7 +1325,7 @@ function function_d033480b(team) {
         wait(seconds);
         hostmigration::waittillhostmigrationdone();
         if (!function_73d7b040(self)) {
-            if (level.var_e3595063) {
+            if (level.scorePerPlayer) {
                 score = self.numtouching[team];
             }
             globallogic_score::giveteamscoreforobjective(team, score);
@@ -1523,27 +1523,27 @@ function private function_4f1fa16a(zone) {
 // Size: 0x284
 function private function_28481667() {
     level.var_d3a30eff = 0;
-    for (var_eaaaa736 = 0; var_eaaaa736 < level.zones.size; var_eaaaa736++) {
-        var_6c384e11 = level.zones[var_eaaaa736].gameobject;
-        ownerteam = var_6c384e11 gameobjects::get_owner_team();
+    for (zi = 0; zi < level.zones.size; zi++) {
+        gameobj = level.zones[zi].gameobject;
+        ownerteam = gameobj gameobjects::get_owner_team();
         state = 0;
         flags = 0;
-        if (isdefined(level.var_66171824) && level.var_66171824) {
-            if (var_6c384e11.claimteam == "none" || !isdefined(level.teamindex[var_6c384e11.claimteam])) {
+        if (isdefined(level.neutralZone) && level.neutralZone) {
+            if (gameobj.claimteam == "none" || !isdefined(level.teamindex[gameobj.claimteam])) {
                 flags = 0;
             } else {
-                flags = level.teamindex[var_6c384e11.claimteam];
+                flags = level.teamindex[gameobj.claimteam];
             }
-        } else if (function_73d7b040(var_6c384e11)) {
+        } else if (function_73d7b040(gameobj)) {
             state = 3;
-        } else if (var_6c384e11.claimteam != "none" && var_6c384e11.numtouching[var_6c384e11.claimteam] > 0) {
-            if (var_6c384e11.claimteam == game.attackers) {
+        } else if (gameobj.claimteam != "none" && gameobj.numtouching[gameobj.claimteam] > 0) {
+            if (gameobj.claimteam == game.attackers) {
                 state = 2;
-                flags = level.teamindex[var_6c384e11.claimteam];
+                flags = level.teamindex[gameobj.claimteam];
             } else {
                 state = 1;
             }
-        } else if (var_6c384e11.numtouching[ownerteam]) {
+        } else if (gameobj.numtouching[ownerteam]) {
             if (ownerteam == game.attackers) {
                 state = 2;
                 flags = 1;
@@ -1551,8 +1551,8 @@ function private function_28481667() {
                 state = 1;
             }
         }
-        level.var_d3a30eff = level.var_d3a30eff | state << var_eaaaa736 * 2;
-        var_6c384e11 gameobjects::set_flags(flags);
+        level.var_d3a30eff = level.var_d3a30eff | state << zi * 2;
+        gameobj gameobjects::set_flags(flags);
     }
     level clientfield::set("warzonestate", level.var_d3a30eff);
     function_4f1fa16a(self);
@@ -1641,7 +1641,7 @@ function function_e99b8010(var_277695bd) {
 // Checksum 0x226ecbd2, Offset: 0x7238
 // Size: 0x74e
 function function_59ab563c(team, progress, change) {
-    if (isdefined(level.var_dcddca2b) && level.var_dcddca2b && !(isdefined(level.var_66171824) && level.var_66171824)) {
+    if (isdefined(level.capDecay) && level.capDecay && !(isdefined(level.neutralZone) && level.neutralZone)) {
         if (progress >= 0.666667) {
             if (self.stage == 2) {
                 self.decayprogressmin = int(0.666667 * self.usetime);
@@ -1658,7 +1658,7 @@ function function_59ab563c(team, progress, change) {
             }
         }
     }
-    if (!(isdefined(level.var_66171824) && level.var_66171824)) {
+    if (!(isdefined(level.neutralZone) && level.neutralZone)) {
         function_9ed0e6e9(self.var_cb205f83.zone_index, change);
     }
     if (change > 0 && self.var_eac9e8ae) {
@@ -1678,7 +1678,7 @@ function function_59ab563c(team, progress, change) {
     }
     if (progress > 0.05) {
         if (change > 0 && isdefined(self.var_b94d5f63) && self.var_b94d5f63) {
-            if (!(isdefined(level.var_66171824) && level.var_66171824)) {
+            if (!(isdefined(level.neutralZone) && level.neutralZone)) {
                 if (level.var_433c44c5 <= 1) {
                     var_35f7ecde = "controlZ" + self.var_cb205f83.zone_index + 1 + "CapturingOfs";
                     var_3d9d108 = "controlZ" + self.var_cb205f83.zone_index + 1 + "LosingDef";
@@ -1754,7 +1754,7 @@ function function_ebb16836(team, progress, change) {
 // Size: 0x84
 function private set_ui_team() {
     wait(0.05);
-    if (game.attackers == #"allies" || isdefined(level.var_66171824) && level.var_66171824) {
+    if (game.attackers == #"allies" || isdefined(level.neutralZone) && level.neutralZone) {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 1);
     } else {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 2);
@@ -1766,7 +1766,7 @@ function private set_ui_team() {
 // Checksum 0x83df5d44, Offset: 0x7ba0
 // Size: 0x52
 function pause_time() {
-    if (level.var_51e6ac2d && !(isdefined(level.timerpaused) && level.timerpaused)) {
+    if (level.timePausesWhenInZone && !(isdefined(level.timerpaused) && level.timerpaused)) {
         globallogic_utils::pausetimer();
         level.timerpaused = 1;
     }
@@ -1777,7 +1777,7 @@ function pause_time() {
 // Checksum 0x2c8729cd, Offset: 0x7c00
 // Size: 0x52
 function function_8984d8eb() {
-    if (level.var_51e6ac2d && isdefined(level.timerpaused) && level.timerpaused) {
+    if (level.timePausesWhenInZone && isdefined(level.timerpaused) && level.timerpaused) {
         globallogic_utils::resumetimer();
         level.timerpaused = 0;
     }
@@ -1793,8 +1793,8 @@ function function_9ed0e6e9(zoneindex, change) {
         pause_time();
     } else {
         level.var_3c4ca038[zoneindex] = 0;
-        for (var_eaaaa736 = 0; var_eaaaa736 < level.zones.size; var_eaaaa736++) {
-            if (isdefined(level.var_3c4ca038[var_eaaaa736]) && level.var_3c4ca038[var_eaaaa736]) {
+        for (zi = 0; zi < level.zones.size; zi++) {
+            if (isdefined(level.var_3c4ca038[zi]) && level.var_3c4ca038[zi]) {
                 return;
             }
         }

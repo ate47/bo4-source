@@ -47,24 +47,24 @@ function private function_d64f1d30() {
 function play_vehicle_anim(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     s_bundle = struct::get_script_bundle("vehicleriders", self.vehicleridersbundle);
     str_pos = "";
-    var_fd67c332 = "";
+    str_action = "";
     if (strendswith(fieldname, "_enter")) {
         str_pos = getsubstr(fieldname, 0, fieldname.size - 6);
-        var_fd67c332 = "enter";
+        str_action = "enter";
     } else if (strendswith(fieldname, "_exit")) {
         str_pos = getsubstr(fieldname, 0, fieldname.size - 5);
-        var_fd67c332 = "exit";
+        str_action = "exit";
     } else if (strendswith(fieldname, "_close")) {
         str_pos = getsubstr(fieldname, 0, fieldname.size - 6);
-        var_fd67c332 = "close";
+        str_action = "close";
     } else if (strendswith(fieldname, "_death")) {
         str_pos = getsubstr(fieldname, 0, fieldname.size - 6);
-        var_fd67c332 = "death";
+        str_action = "death";
     }
     str_vh_anim = undefined;
     foreach (s_rider in s_bundle.objects) {
         if (s_rider.position == str_pos) {
-            switch (var_fd67c332) {
+            switch (str_action) {
             case #"enter":
                 str_vh_anim = s_rider.vehicleenteranim;
                 break;

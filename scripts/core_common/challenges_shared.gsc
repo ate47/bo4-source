@@ -477,7 +477,7 @@ function spawnwatcher() {
     while (1) {
         self waittill(#"spawned_player");
         self.pers[#"longshotsperlife"] = 0;
-        self.var_4bd51c89 = [];
+        self.weaponkills = [];
         self.var_14a6fb59 = [];
         self.retreivedblades = 0;
         self.lastreloadtime = 0;

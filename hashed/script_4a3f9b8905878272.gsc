@@ -254,29 +254,29 @@ function private function_eb148f38(entity) {
         return 0;
     }
     yawtoenemyposition = getaimyawtoenemyfromnode(entity, entity.node, entity.enemy);
-    var_c1158761 = 0;
+    legalaimyaw = 0;
     if (entity.node.type == #"cover left") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover_left_lean");
-        var_c1158761 = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= -10;
+        legalaimyaw = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= -10;
     } else if (entity.node.type == #"cover right") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover_right_lean");
-        var_c1158761 = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= 10;
+        legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= 10;
     } else if (entity.node.type == #"cover pillar") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover");
-        var_e1ce43fa = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024);
-        var_ae0c62b1 = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048);
-        var_57540c97 = 10;
-        if (var_ae0c62b1 && var_e1ce43fa) {
-            var_57540c97 = 0;
+        supportsleft = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024);
+        supportsright = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048);
+        angleleeway = 10;
+        if (supportsright && supportsleft) {
+            angleleeway = 0;
         }
-        if (var_e1ce43fa) {
-            var_c1158761 = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= var_57540c97 * -1;
+        if (supportsleft) {
+            legalaimyaw = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= angleleeway * -1;
         }
-        if (!var_c1158761 && var_ae0c62b1) {
-            var_c1158761 = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= var_57540c97;
+        if (!legalaimyaw && supportsright) {
+            legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= angleleeway;
         }
     }
-    return var_c1158761;
+    return legalaimyaw;
 }
 
 // Namespace aiutility/namespace_c334e59a
@@ -304,29 +304,29 @@ function private function_7353f95b(entity) {
         pos = entity.node.origin + 250 * entity.node.angles;
         yawtoenemyposition = angleclamp180(vectortoangles(pos - entity.node.origin)[1] - entity.node.angles[1]);
     }
-    var_c1158761 = 0;
+    legalaimyaw = 0;
     if (entity.node.type == #"cover left") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover_left_lean");
-        var_c1158761 = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= -10;
+        legalaimyaw = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= -10;
     } else if (entity.node.type == #"cover right") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover_right_lean");
-        var_c1158761 = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= 10;
+        legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= 10;
     } else if (entity.node.type == #"cover pillar") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover");
-        var_e1ce43fa = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024);
-        var_ae0c62b1 = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048);
-        var_57540c97 = 10;
-        if (var_ae0c62b1 && var_e1ce43fa) {
-            var_57540c97 = 0;
+        supportsleft = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024);
+        supportsright = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048);
+        angleleeway = 10;
+        if (supportsright && supportsleft) {
+            angleleeway = 0;
         }
-        if (var_e1ce43fa) {
-            var_c1158761 = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= var_57540c97 * -1;
+        if (supportsleft) {
+            legalaimyaw = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= angleleeway * -1;
         }
-        if (!var_c1158761 && var_ae0c62b1) {
-            var_c1158761 = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= var_57540c97;
+        if (!legalaimyaw && supportsright) {
+            legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= angleleeway;
         }
     }
-    return var_c1158761;
+    return legalaimyaw;
 }
 
 // Namespace aiutility/namespace_c334e59a
@@ -387,29 +387,29 @@ function private shouldleanatcovercondition(entity) {
         return 0;
     }
     yawtoenemyposition = getaimyawtoenemyfromnode(entity, entity.node, entity.enemy);
-    var_c1158761 = 0;
+    legalaimyaw = 0;
     if (entity.node.type == #"cover left") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover_left_lean");
-        var_c1158761 = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= -10;
+        legalaimyaw = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= -10;
     } else if (entity.node.type == #"cover right") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover_right_lean");
-        var_c1158761 = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= 10;
+        legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= 10;
     } else if (entity.node.type == #"cover pillar") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover");
-        var_e1ce43fa = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024);
-        var_ae0c62b1 = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048);
-        var_57540c97 = 10;
-        if (var_ae0c62b1 && var_e1ce43fa) {
-            var_57540c97 = 0;
+        supportsleft = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024);
+        supportsright = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048);
+        angleleeway = 10;
+        if (supportsright && supportsleft) {
+            angleleeway = 0;
         }
-        if (var_e1ce43fa) {
-            var_c1158761 = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= var_57540c97 * -1;
+        if (supportsleft) {
+            legalaimyaw = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= angleleeway * -1;
         }
-        if (!var_c1158761 && var_ae0c62b1) {
-            var_c1158761 = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= var_57540c97;
+        if (!legalaimyaw && supportsright) {
+            legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= angleleeway;
         }
     }
-    return var_c1158761;
+    return legalaimyaw;
 }
 
 // Namespace aiutility/namespace_c334e59a
@@ -437,29 +437,29 @@ function private shouldleanatcoveridlecondition(entity) {
         pos = entity.node.origin + 250 * entity.node.angles;
         yawtoenemyposition = angleclamp180(vectortoangles(pos - entity.node.origin)[1] - entity.node.angles[1]);
     }
-    var_c1158761 = 0;
+    legalaimyaw = 0;
     if (entity.node.type == #"cover left") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover_left_lean");
-        var_c1158761 = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= -10;
+        legalaimyaw = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= -10;
     } else if (entity.node.type == #"cover right") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover_right_lean");
-        var_c1158761 = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= 10;
+        legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= 10;
     } else if (entity.node.type == #"cover pillar") {
         aimlimitsforcover = entity getaimlimitsfromentry("cover");
-        var_e1ce43fa = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024);
-        var_ae0c62b1 = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048);
-        var_57540c97 = 10;
-        if (var_ae0c62b1 && var_e1ce43fa) {
-            var_57540c97 = 0;
+        supportsleft = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024);
+        supportsright = !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048);
+        angleleeway = 10;
+        if (supportsright && supportsleft) {
+            angleleeway = 0;
         }
-        if (var_e1ce43fa) {
-            var_c1158761 = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= var_57540c97 * -1;
+        if (supportsleft) {
+            legalaimyaw = yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10 && yawtoenemyposition >= angleleeway * -1;
         }
-        if (!var_c1158761 && var_ae0c62b1) {
-            var_c1158761 = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= var_57540c97;
+        if (!legalaimyaw && supportsright) {
+            legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= angleleeway;
         }
     }
-    return var_c1158761;
+    return legalaimyaw;
 }
 
 // Namespace aiutility/namespace_c334e59a
@@ -543,13 +543,13 @@ function private shouldoveratcovercondition(entity) {
     aimtable = iscoverconcealed(entity.node) ? "cover_concealed_over" : "cover_over";
     aimlimitsforcover = entity getaimlimitsfromentry(aimtable);
     yawtoenemyposition = getaimyawtoenemyfromnode(entity, entity.node, entity.enemy);
-    var_c1158761 = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10;
-    if (!var_c1158761) {
+    legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10;
+    if (!legalaimyaw) {
         return 0;
     }
     pitchtoenemyposition = getaimpitchtoenemyfromnode(entity, entity.node, entity.enemy);
-    var_14a02de3 = pitchtoenemyposition >= aimlimitsforcover[#"aim_up"] + 10 && pitchtoenemyposition <= aimlimitsforcover[#"aim_down"] + 10;
-    if (!var_14a02de3) {
+    legalaimpitch = pitchtoenemyposition >= aimlimitsforcover[#"aim_up"] + 10 && pitchtoenemyposition <= aimlimitsforcover[#"aim_down"] + 10;
+    if (!legalaimpitch) {
         return 0;
     }
     return 1;
@@ -744,31 +744,31 @@ function resetcoverparameters(entity) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc78f5804, Offset: 0x3478
 // Size: 0x9c
-function choosecoverdirection(entity, var_3d11d1c4) {
+function choosecoverdirection(entity, stepout) {
     if (!isdefined(entity.node)) {
         return;
     }
     coverdirection = entity getblackboardattribute("_cover_direction");
     entity setblackboardattribute("_previous_cover_direction", coverdirection);
-    entity setblackboardattribute("_cover_direction", calculatecoverdirection(entity, var_3d11d1c4));
+    entity setblackboardattribute("_cover_direction", calculatecoverdirection(entity, stepout));
 }
 
 // Namespace aiutility/namespace_c334e59a
 // Params 2, eflags: 0x1 linked
 // Checksum 0x95885ec5, Offset: 0x3520
 // Size: 0x452
-function calculatecoverdirection(entity, var_3d11d1c4) {
+function calculatecoverdirection(entity, stepout) {
     if (isdefined(entity.treatallcoversasgeneric)) {
-        if (!isdefined(var_3d11d1c4)) {
-            var_3d11d1c4 = 0;
+        if (!isdefined(stepout)) {
+            stepout = 0;
         }
         coverdirection = "cover_front_direction";
         if (entity.node.type == #"cover left") {
-            if (isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 4) == 4 || math::cointoss() || var_3d11d1c4) {
+            if (isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 4) == 4 || math::cointoss() || stepout) {
                 coverdirection = "cover_left_direction";
             }
         } else if (entity.node.type == #"cover right") {
-            if (isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 4) == 4 || math::cointoss() || var_3d11d1c4) {
+            if (isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 4) == 4 || math::cointoss() || stepout) {
                 coverdirection = "cover_right_direction";
             }
         } else if (entity.node.type == #"cover pillar") {

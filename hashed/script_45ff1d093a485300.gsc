@@ -61,9 +61,9 @@ function private notetrackanimmovementstop(entity) {
 // Checksum 0xa8ac4f65, Offset: 0x888
 // Size: 0x5c
 function private notetrackstaircasestep1(entity) {
-    var_afa1340c = entity getblackboardattribute("_staircase_num_steps");
-    var_afa1340c++;
-    entity setblackboardattribute("_staircase_num_steps", var_afa1340c);
+    numsteps = entity getblackboardattribute("_staircase_num_steps");
+    numsteps++;
+    entity setblackboardattribute("_staircase_num_steps", numsteps);
 }
 
 // Namespace animationstatenetwork/namespace_467800e2
@@ -71,9 +71,9 @@ function private notetrackstaircasestep1(entity) {
 // Checksum 0x704a9fbc, Offset: 0x8f0
 // Size: 0x64
 function private notetrackstaircasestep2(entity) {
-    var_afa1340c = entity getblackboardattribute("_staircase_num_steps");
-    var_afa1340c = var_afa1340c + 2;
-    entity setblackboardattribute("_staircase_num_steps", var_afa1340c);
+    numsteps = entity getblackboardattribute("_staircase_num_steps");
+    numsteps = numsteps + 2;
+    entity setblackboardattribute("_staircase_num_steps", numsteps);
 }
 
 // Namespace animationstatenetwork/namespace_467800e2

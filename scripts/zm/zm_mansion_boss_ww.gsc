@@ -1430,8 +1430,8 @@ function function_677a2503(var_754a5572 = 1) {
 function function_ae76e58d() {
     for (var_b522b1bc = 1; var_b522b1bc <= 3; var_b522b1bc++) {
         var_8f063b6d = level.var_b5fff38b[var_b522b1bc];
-        var_6c11e243 = struct::get("boss_statue_trig_" + var_b522b1bc, "targetname");
-        var_8f063b6d.unitrigger_stub = var_6c11e243 zm_unitrigger::create(&function_54b6886c, 128, &function_a430c55f, 1);
+        s_trig = struct::get("boss_statue_trig_" + var_b522b1bc, "targetname");
+        var_8f063b6d.unitrigger_stub = s_trig zm_unitrigger::create(&function_54b6886c, 128, &function_a430c55f, 1);
         var_8f063b6d.unitrigger_stub.var_235457fd = 0;
         var_8f063b6d.unitrigger_stub.var_8f063b6d = var_8f063b6d;
     }

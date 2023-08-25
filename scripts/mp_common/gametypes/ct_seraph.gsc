@@ -32,7 +32,7 @@ function event<gametype_init> main(eventstruct) {
     level.var_dab73f4a = 1;
     clientfield::register("world", "spawn_vase", 1, 1, "counter");
     clientfield::register("clientuimodel", "hudItems.spawnSelectHidePrompt", 1, 1, "int");
-    level.select_character = ct_utils::get_roleindex(#"hash_642bc93e975f144c");
+    level.select_character = ct_utils::get_roleindex(#"prt_mp_enforcer");
     level.var_820c5561 = "SERAPH";
     ct_utils::function_be3a76b7(level.var_820c5561);
     level.var_d6d98fbe = 0;

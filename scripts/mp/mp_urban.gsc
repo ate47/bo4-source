@@ -77,7 +77,7 @@ function on_game_playing() {
     }
     wait(getdvarfloat(#"hash_205d729c5c415715", 0.3));
     if (getdvarint(#"hash_1ee1f013d124a26a", 1)) {
-        level thread scene::skipto_end(#"hash_5b6b4cd7e7d4d02b");
+        level thread scene::skipto_end(#"p8_fxanim_mp_urban_building_open_bundle");
         var_968ca543 = struct::get("p8_fxanim_mp_urban_remote_tank_armor_test_bundle", "scriptbundlename");
         if (isdefined(var_968ca543)) {
             var_968ca543 thread function_50dfa3c0();
@@ -87,7 +87,7 @@ function on_game_playing() {
             var_4fea60a3 thread function_c7fff230();
         }
         if (util::isfirstround()) {
-            level thread scene::play(#"hash_9085d3dfdffac35");
+            level thread scene::play(#"p8_fxanim_mp_urban_flyover_bundle");
             level thread scene::play(#"hash_1da98e3e2894904d");
         }
     }
@@ -120,16 +120,16 @@ function on_end_game() {
 // Size: 0x14c
 function function_2cdcf5c3() {
     if (getdvarint(#"hash_1ee1f013d124a26a", 1)) {
-        level util::delay(0.3, undefined, &scene::play, #"hash_1e8db61a17825461", "Shot 1");
+        level util::delay(0.3, undefined, &scene::play, #"p8_fxanim_mp_urban_vehicle_testing_bundle", "Shot 1");
         if (util::isfirstround()) {
-            level thread scene::play(#"hash_5b6b4cd7e7d4d02b");
-            level thread scene::play(#"hash_384a42cc3742d2b6", "start_drop");
-            level thread scene::play(#"hash_7405ebb430af22ba");
+            level thread scene::play(#"p8_fxanim_mp_urban_building_open_bundle");
+            level thread scene::play(#"p8_fxanim_mp_urban_remote_tank_armor_test_bundle", "start_drop");
+            level thread scene::play(#"p8_fxanim_mp_urban_remote_tank_walk_test_bundle");
             return;
         }
-        level thread scene::skipto_end(#"hash_9085d3dfdffac35");
+        level thread scene::skipto_end(#"p8_fxanim_mp_urban_flyover_bundle");
         level thread scene::skipto_end(#"hash_1da98e3e2894904d");
-        level thread scene::play(#"hash_7405ebb430af22ba", "Shot 2");
+        level thread scene::play(#"p8_fxanim_mp_urban_remote_tank_walk_test_bundle", "Shot 2");
     }
 }
 
@@ -169,8 +169,8 @@ function function_d611b306() {
 function function_50dfa3c0() {
     self.var_f04c9969 = 1;
     for (n_shot = array::random(array(2, 4, 6, 8)); self.var_f04c9969; n_shot++) {
-        var_61456417 = randomintrange(1, 3);
-        for (i = 0; i < var_61456417; i++) {
+        n_attacks = randomintrange(1, 3);
+        for (i = 0; i < n_attacks; i++) {
             self scene::play(self.scriptbundlename, "Shot " + n_shot);
         }
         n_shot++;

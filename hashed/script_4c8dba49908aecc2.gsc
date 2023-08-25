@@ -186,8 +186,8 @@ function get_roleindex(name) {
 // Checksum 0x2e2f0c7b, Offset: 0xb40
 // Size: 0x3ee
 function function_8599f7cb() {
-    level notify(#"hash_16a9990470202993");
-    level endon(#"hash_16a9990470202993");
+    level notify(#"interstitial");
+    level endon(#"interstitial");
     var_d4002929 = 0;
     var_743bf28b = 0;
     level.b_movie = 1;
@@ -216,7 +216,7 @@ function function_8599f7cb() {
     if (var_f77362e3 == 9) {
         var_d6602dc0 = fields.var_b51717c3;
     } else {
-        var_d6602dc0 = fields.var_3d800252[var_f77362e3].var_40a74d4a;
+        var_d6602dc0 = fields.var_3d800252[var_f77362e3].movie;
     }
     specialist = player function_76785843();
     if (isdefined(var_d6602dc0) && !var_743bf28b) {

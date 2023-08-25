@@ -148,9 +148,9 @@ function function_1edfdbc1(localclientnum) {
         if (!isdefined(var_38d92d79)) {
             break;
         }
-        var_b9c3856a = renderhealthoverlayhealth(localclientnum);
+        current_health = renderhealthoverlayhealth(localclientnum);
         basehealth = var_38d92d79 getplayerspawnhealth();
-        n_health = var_b9c3856a * basehealth;
+        n_health = current_health * basehealth;
         if (n_health > 125) {
             function_815076cb(var_7beb3a32, 65280);
         } else if (n_health > 100) {
@@ -219,21 +219,21 @@ function function_a78bbf22(localclientnum) {
         function_5e0ffde3(self function_c2a5ba97("+smoke"));
     }
     while (!(isdefined(level.gameended) && level.gameended)) {
-        for (var_9adc5613 = 0; var_9adc5613 < a_keys.size; var_9adc5613++) {
-            gadgetpower = getgadgetpower(localclientnum, var_9adc5613);
+        for (ga = 0; ga < a_keys.size; ga++) {
+            gadgetpower = getgadgetpower(localclientnum, ga);
             if (sessionmodeiszombiesgame()) {
-                if (var_9adc5613 == 0) {
+                if (ga == 0) {
                     continue;
-                } else if (var_9adc5613 == 1) {
-                    gadgetpower = gadgetisready(localclientnum, var_9adc5613);
+                } else if (ga == 1) {
+                    gadgetpower = gadgetisready(localclientnum, ga);
                 }
             }
-            if (isdefined(gadgetpower) && gadgetpower == 1 && isdefined(self.var_9623f1d5[var_9adc5613]) && !self.var_9623f1d5[var_9adc5613]) {
-                self.var_9623f1d5[var_9adc5613] = 1;
-                self thread function_c6bcf243(a_keys[var_9adc5613], var_9adc5613, localclientnum);
+            if (isdefined(gadgetpower) && gadgetpower == 1 && isdefined(self.var_9623f1d5[ga]) && !self.var_9623f1d5[ga]) {
+                self.var_9623f1d5[ga] = 1;
+                self thread function_c6bcf243(a_keys[ga], ga, localclientnum);
             } else if (isdefined(gadgetpower) && gadgetpower != 1) {
-                function_b4c6383f(a_keys[var_9adc5613], 1, 855309);
-                self.var_9623f1d5[var_9adc5613] = 0;
+                function_b4c6383f(a_keys[ga], 1, 855309);
+                self.var_9623f1d5[ga] = 0;
             }
         }
         wait(0.5);
@@ -331,10 +331,10 @@ function function_1d13e2db(localclientnum) {
     var_a5976120 = createuimodel(var_f4ae48e2, "stage");
     previoustime = 0;
     while (!(isdefined(level.gameended) && level.gameended)) {
-        var_e2f47a8e = getuimodelvalue(var_a5976120);
+        _town_mansion_primary_weapons = getuimodelvalue(var_a5976120);
         var_20ef87f3 = getuimodelvalue(var_7f1c5ce2);
-        if (isdefined(var_e2f47a8e) && isdefined(var_20ef87f3)) {
-            if (var_e2f47a8e == 6 && var_20ef87f3 != previoustime) {
+        if (isdefined(_town_mansion_primary_weapons) && isdefined(var_20ef87f3)) {
+            if (_town_mansion_primary_weapons == 6 && var_20ef87f3 != previoustime) {
                 if (!sessionmodeiswarzonegame()) {
                     function_d9a960f2(1, 12, 8698);
                     function_815076cb(var_1953ea4a, 0);
@@ -355,7 +355,7 @@ function function_1d13e2db(localclientnum) {
                     function_d9a960f2(2, 12, 8698, 0, 750);
                 }
                 previoustime = var_20ef87f3;
-            } else if (var_e2f47a8e == 0 && previoustime == 1) {
+            } else if (_town_mansion_primary_weapons == 0 && previoustime == 1) {
                 previoustime = 0;
                 function_13861db4(3);
                 break;

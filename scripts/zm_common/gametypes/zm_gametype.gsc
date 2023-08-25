@@ -401,8 +401,8 @@ function onspawnplayer(predictedspawn = 0) {
         self enableweapons();
     }
     if (isdefined(level.var_ce6bb796)) {
-        var_80e15799 = [[ level.var_ce6bb796 ]]();
-        if (var_80e15799) {
+        spawn_in_spectate = [[ level.var_ce6bb796 ]]();
+        if (spawn_in_spectate) {
             self util::delay(0.05, undefined, &zm_player::spawnspectator);
         }
     }

@@ -91,7 +91,7 @@ function function_8da58e58(slot, weapon) {
 // Checksum 0x208273e0, Offset: 0x1078
 // Size: 0x1c4
 function function_c9ff0dce() {
-    self.var_5b6429e9 = self.health;
+    self.health_start = self.health;
     self.overrideplayerdamage = &callback_player_damage;
     if (self.team == #"allies") {
         if (!isbot(self)) {
@@ -137,13 +137,13 @@ function function_62afa484() {
 // Size: 0x212
 function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str_means_of_death, weapon, v_point, v_dir, str_hit_loc, n_psoffsettime, var_8b69d5cf) {
     if (level.var_ad7c0539 === 1 && self.team == #"allies" && isbot(self)) {
-        if (self.health > int(self.var_5b6429e9 * 0.3)) {
+        if (self.health > int(self.health_start * 0.3)) {
             n_damage = n_damage * 1.5;
         }
     }
     if (level.var_ad7c0539 === 4 && self.team == #"allies") {
         n_damage = n_damage * 0.1;
-    } else if (self.health < int(self.var_5b6429e9 * 0.3) && self.team == #"allies" && isbot(self)) {
+    } else if (self.health < int(self.health_start * 0.3) && self.team == #"allies" && isbot(self)) {
         n_damage = 0;
     } else if (isbot(e_attacker)) {
         n_damage = n_damage * 0.2;
@@ -1589,7 +1589,7 @@ function function_22014724() {
             self val::reset("protect", "takedamage");
             return;
         }
-        if (self.health <= int(self.var_5b6429e9 * 0.3)) {
+        if (self.health <= int(self.health_start * 0.3)) {
             self val::set("protect", "takedamage", 0);
         } else {
             self val::reset("protect", "takedamage");

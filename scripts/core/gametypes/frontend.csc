@@ -239,7 +239,7 @@ function function_523433c1(localclientnum) {
     lui::createcustomcameramenu("BubblegumPackEdit", localclientnum, undefined, undefined, undefined, undefined);
     lui::createcustomcameramenu("BubblegumBuffSelect", localclientnum, undefined, undefined, undefined, undefined);
     lui::createcustomcameramenu("CombatRecordBubblegumBuffs", localclientnum, undefined, undefined, undefined, undefined);
-    lui::createcameramenu("MegaChewFactory", localclientnum, #"hash_3da9fa20b52252f6", #"hash_75cf3ce50ea001e7", "default", undefined, undefined, undefined);
+    lui::createcameramenu("MegaChewFactory", localclientnum, #"zm_gum_position", #"hash_75cf3ce50ea001e7", "default", undefined, undefined, undefined);
     lui::createcustomcameramenu("Pregame_Main", localclientnum, &function_733911f5, 1);
     lui::createcustomcameramenu("CombatRecordWeapons", localclientnum, undefined, 0, undefined, undefined);
     lui::createcustomcameramenu("CombatRecordEquipment", localclientnum, undefined, 0, undefined, undefined);
@@ -300,7 +300,7 @@ function function_523433c1(localclientnum) {
     lui::linktocustomcharacter("PersonalizeDefaultWZCharacter", localclientnum, "specialist_customization");
     lui::createcustomcameramenu("WZPersonalizeCharacterInspect", localclientnum, &function_8ad37038, 1, &function_8e931c3f, &function_2dbfbdb3);
     lui::linktocustomcharacter("WZPersonalizeCharacterInspect", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("WZPersonalizeCharacter", localclientnum, &function_e406ec3, 1, &function_8e931c3f, &function_2dbfbdb3);
+    lui::createcustomcameramenu("WZPersonalizeCharacter", localclientnum, &wz_personalize_character, 1, &function_8e931c3f, &function_2dbfbdb3);
     lui::linktocustomcharacter("WZPersonalizeCharacter", localclientnum, "specialist_customization");
     lui::createcustomcameramenu("WeaponBribeSelection", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&function_2dbfbdb3, &function_7142469f));
     lui::linktocustomcharacter("WeaponBribeSelection", localclientnum, "specialist_customization");
@@ -467,7 +467,7 @@ function function_37304ace(localclientnum, menu_name) {
         waitresult = level waittill(#"hash_6d381d5ecca233c6");
         if (isdefined(waitresult.clear_weapon) && waitresult.clear_weapon) {
             level.var_44011752 hide();
-            level thread scene::stop(#"hash_36b7fe67c1019f50");
+            level thread scene::stop(#"scene_frontend_inspection_weapon");
         } else {
             /#
                 assert(isdefined(waitresult.weapon));
@@ -498,9 +498,9 @@ function function_daa3f7d0(localclientnum, weaponinfo, var_13285754 = 1) {
     var_f020955 = weaponinfo.attachments;
     current_weapon = getweapon(var_47465301, strtok(var_f020955, "+"));
     if (isdefined(current_weapon) && isdefined(level.var_44011752)) {
-        if (level scene::is_playing(#"hash_36b7fe67c1019f50")) {
+        if (level scene::is_playing(#"scene_frontend_inspection_weapon")) {
             level.var_44011752 show();
-            level thread scene::stop(#"hash_36b7fe67c1019f50");
+            level thread scene::stop(#"scene_frontend_inspection_weapon");
         }
         wait(0.1);
         info = function_f2f10929(current_weapon);
@@ -513,7 +513,7 @@ function function_daa3f7d0(localclientnum, weaponinfo, var_13285754 = 1) {
         origin = position.origin + info.offset;
         angles = position.angles + info.angles;
         level.var_44011752 thread animation::play(#"hash_3689442490c2e5dd", origin, angles);
-        level thread scene::play(#"hash_36b7fe67c1019f50", "inspection_weapon_full");
+        level thread scene::play(#"scene_frontend_inspection_weapon", "inspection_weapon_full");
         level.var_44011752 show();
     }
 }
@@ -564,7 +564,7 @@ function function_c9f8c5e9(localclientnum) {
                 }
                 level thread function_a71254a9(localclientnum, 1, var_d53ddee1, 0, undefined, 0, var_f44acc91.scene);
                 var_408e7d77 = var_879980c4;
-                if (level.var_e362b5d9[var_879980c4].scene == #"hash_30422a9497b068fe" && isdefined(level.var_1a2c5c75)) {
+                if (level.var_e362b5d9[var_879980c4].scene == #"scene_frontend_zm_elixir_lab" && isdefined(level.var_1a2c5c75)) {
                     level thread [[ level.var_1a2c5c75 ]](localclientnum);
                 } else {
                     level notify(#"hash_79bbc4f96a28b094");
@@ -663,9 +663,9 @@ function function_23bc6f08(localclientnum, var_d0b01271, itemtype, item_data, mo
             shot_name = "<unknown string>";
             break;
         }
-        scene_name = #"hash_1c5f0ac97c8251e5";
+        scene_name = #"scene_frontend_character_male_render";
         if (#"female" == getherogender(character_index, mode)) {
-            scene_name = #"hash_1fa7dc824aaa38a6";
+            scene_name = #"scene_frontend_character_female_render";
         }
         [[ var_d0b01271 ]]->update({#scene_shot:shot_name, #scene:scene_name, #var_13fb1841:4, #var_5bd51249:8, #var_c76f3e47:1});
         do {
@@ -945,7 +945,7 @@ function function_f2c538de(localclientnum, menu_name, state) {
         weapon_model sethighdetail();
         weapon_model useweaponmodel(weapon);
         weapon_model setscale(function_8d32e28(weapon));
-        level thread scene::play(#"hash_1d802f68d5ec1413");
+        level thread scene::play(#"scene_frontend_weapon_camo_render");
         if (camo != -2) {
             options = function_ea647602("<unknown string>");
             if (camo == -1) {
@@ -984,7 +984,7 @@ function function_f2c538de(localclientnum, menu_name, state) {
                 function_5d6480a0(localclientnum, weapon, weapon_model, weapon_name, {#name:"<unknown string>" + i, #item_index:0}, i);
             }
         }
-        level thread scene::stop(#"hash_1d802f68d5ec1413");
+        level thread scene::stop(#"scene_frontend_weapon_camo_render");
         level notify("<unknown string>" + localclientnum, {#status:"<unknown string>", #menu:"<unknown string>"});
         weapon_model delete();
         setdvar(#"hash_7c6efad1ad1659ad", "WZPersonalizeCharacterInspect");
@@ -1113,9 +1113,9 @@ function function_ea9a5e69(localclientnum) {
         /#
             assert(isdefined(struct::get(#"hash_3cf76492cd93048a")));
         #/
-        var_f51354c7 = namespace_eb06e24d::function_d0ac8d8();
-        foreach (i, var_69627f76 in var_f51354c7) {
-            name = function_9e72a96(var_69627f76);
+        jumpkits = namespace_eb06e24d::get_jumpkits();
+        foreach (i, jumpkit in jumpkits) {
+            name = function_9e72a96(jumpkit);
             var_c23e6a40 = "<unknown string>" + name + "<unknown string>";
             adddebugcommand(localclientnum, "frontend" + var_c23e6a40 + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + i + "<unknown string>" + -1 + "1e968675840551ec");
             foreach (type, name in var_2067e07) {
@@ -1146,19 +1146,19 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
         self notify("<unknown string>");
         self endon("<unknown string>");
         args = strtok(state, "<unknown string>");
-        var_69627f76 = int(args[0]);
+        jumpkit = int(args[0]);
         type = int(args[1]);
         function_25485718();
         var_38b900c2 = getent(localclientnum, "j_neck", "<unknown string>");
         var_51a0f339 = getent(localclientnum, "<unknown string>", "<unknown string>");
         var_38b900c2 show();
         var_51a0f339 hide();
-        if (var_69627f76 == -1) {
+        if (jumpkit == -1) {
             var_d4e4e3a8 = 0;
             var_dcb0ef67 = namespace_eb06e24d::function_3045dd71() - 1;
         } else {
-            var_d4e4e3a8 = var_69627f76;
-            var_dcb0ef67 = var_69627f76;
+            var_d4e4e3a8 = jumpkit;
+            var_dcb0ef67 = jumpkit;
         }
         types = function_671eb8fa();
         if (type != -1) {
@@ -1172,13 +1172,13 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
         foreach (type, var_3aec81f4 in types) {
             switch (type) {
             case 1:
-                level thread scene::play(#"hash_245839d29404b71e");
+                level thread scene::play(#"scene_frontend_fxtrail_render");
                 break;
             default:
                 goto LOC_000005d8;
             }
             for (i = var_d4e4e3a8; i <= var_dcb0ef67; i++) {
-                var_4132246d = namespace_eb06e24d::function_d0ac8d8()[i];
+                var_4132246d = namespace_eb06e24d::get_jumpkits()[i];
                 switch (type) {
                 case 1:
                     trail = namespace_eb06e24d::function_6452f9c5(i);
@@ -1206,7 +1206,7 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
             }
             switch (type) {
             case 1:
-                level thread scene::stop(#"hash_245839d29404b71e");
+                level thread scene::stop(#"scene_frontend_fxtrail_render");
             default:
                 break;
             }
@@ -1377,7 +1377,7 @@ function localclientconnect(localclientnum) {
     [[ var_22f20461 ]]->function_1ec9448d(1);
     [[ var_22f20461 ]]->update();
     level.var_8b6d5e2a = function_f2e7abdc(localclientnum, "updateSpecialistCustomization");
-    level thread scene::play(#"hash_36b7fe67c1019f50", "inspection_weapon_full");
+    level thread scene::play(#"scene_frontend_inspection_weapon", "inspection_weapon_full");
     function_becded4f(localclientnum);
     function_a588eb2e(localclientnum);
     function_523433c1(localclientnum);
@@ -2090,7 +2090,7 @@ function function_b1b8f767(localclientnum, play) {
 // Checksum 0x324b4425, Offset: 0xb180
 // Size: 0x11c
 function function_db9d479f(localclientnum, play) {
-    var_bfe5e572 = struct::get(#"hash_11bdcd86e2e3a4a1");
+    var_bfe5e572 = struct::get(#"arena_align_tag");
     if (isdefined(var_bfe5e572)) {
         if (play) {
             var_bfe5e572.var_e8b5aff5 = 1;
@@ -2546,7 +2546,7 @@ function function_d8402f0c(localclientnum, menu_name, state) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x6b6f4a29, Offset: 0xd240
 // Size: 0xbc
-function function_e406ec3(localclientnum, menu_name, state) {
+function wz_personalize_character(localclientnum, menu_name, state) {
     var_d0b01271 = lui::getcharacterdataformenu(menu_name, localclientnum);
     [[ var_d0b01271 ]]->show_model();
     camera_ent = struct::get(#"hash_434d5a5ec5b33e52");

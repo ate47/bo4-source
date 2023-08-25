@@ -90,7 +90,7 @@ function function_1cdbb1e5(owner, weapon) {
         if (isdefined(killcament)) {
             killcament unlink();
         }
-        var_bd5f5c6c = !function_f4e48434(waitresult.position);
+        var_bd5f5c6c = !is_under_water(waitresult.position);
         if (var_bd5f5c6c) {
             function_462c8632(owner, waitresult.position, waitresult.normal, self.var_59ba00f5, killcament, weapon, team, var_3e7a440);
         }
@@ -110,7 +110,7 @@ function function_462c8632(owner, origin, normal, velocity, killcament, weapon, 
 // Params 1, eflags: 0x1 linked
 // Checksum 0x49e5ee11, Offset: 0x710
 // Size: 0x44
-function function_f4e48434(position) {
+function is_under_water(position) {
     water_depth = getwaterheight(position) - position[2];
     return water_depth >= 24;
 }
@@ -233,7 +233,7 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
             while (z > lowestz) {
                 newpos = (x, y, z);
                 water_depth = get_water_depth(newpos);
-                if (function_a66ba8cc(water_depth) || function_f4e48434(newpos)) {
+                if (function_a66ba8cc(water_depth) || is_under_water(newpos)) {
                     newpos = newpos - (0, 0, water_depth);
                     level thread function_42b9fdbe(var_7bf146f2, newpos, (0, 0, 1), int(customsettings.var_b79d64a9), team);
                     break;
@@ -416,7 +416,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
     if (abs(vectordot(forward, normal)) > 0.999) {
         forward = (0, 0, 1);
     }
-    if (!function_f4e48434(var_6b23e1c9)) {
+    if (!is_under_water(var_6b23e1c9)) {
         playfx(level._effect[#"hash_31b6cc906e6d0ae0"], var_6b23e1c9, forward, normal, 0, team);
         if (!isdefined(var_e76400c0)) {
             spawntimedfx(var_aecaaa11, var_6b23e1c9, normal, int(customsettings.var_b79d64a9), team);
@@ -443,7 +443,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
         if (!isdefined(lockey)) {
             continue;
         }
-        if (function_f4e48434(locations[#"loc"][lockey])) {
+        if (is_under_water(locations[#"loc"][lockey])) {
             continue;
         }
         if (isdefined(locations[#"smallfire"][lockey])) {

@@ -82,7 +82,7 @@ function event<gametype_init> main(eventstruct) {
     level.var_374a483e = getgametypesetting(#"hash_561be47168b4e674");
     level.var_a2b93ad3 = getgametypesetting(#"hash_2270a3136e7cd914");
     level.var_854eeded = getgametypesetting(#"hash_48a1a06a8787b8d5");
-    level.var_6fb8c585 = getgametypesetting(#"hash_279c37ad8e91ce6");
+    level.var_6fb8c585 = getgametypesetting(#"bountyStartMoney");
     level.var_59e1bdd9 = getgametypesetting(#"hash_57fb5c079ad2fb7a");
     level.var_aad1f6f2 = getgametypesetting(#"hash_b5542a4bc9afce9");
     level.var_8ce231e3 = getgametypesetting(#"hash_b3a34a4bc841d67");
@@ -98,20 +98,20 @@ function event<gametype_init> main(eventstruct) {
         assert(level.var_aad1f6f2 <= level.var_8ce231e3);
     #/
     level.var_73a7a457 = max(getgametypesetting(#"hash_381587a813feab3e"), 1);
-    level.var_98f6fe38 = max(getgametypesetting(#"hash_7bc0266904794722"), 1);
+    level.bountyDepositSiteCaptureTime = max(getgametypesetting(#"bountyDepositSiteCaptureTime"), 1);
     level.var_ad9d03e7 = getgametypesetting(#"hash_3ffec9399ef7052f");
     level.var_d4fe7ba9 = getgametypesetting(#"hash_1e3a29a0321c9293");
     level.var_8cfdca96 = getgametypesetting(#"hash_78e49b8491ad6446");
     level.var_16fd9420 = getgametypesetting(#"hash_63f8d60d122e755b");
     level.var_651c849 = getgametypesetting(#"hash_45ff0effd8383bae");
     level.var_714ddf4a = getgametypesetting(#"hash_ef8682282bd2e10");
-    level.var_e025e79e = getgametypesetting(#"hash_563a3c7d1fed2f9c");
-    level.var_18823aed = getgametypesetting(#"hash_31ec8fb02dc9d687");
-    level.var_51e6ac2d = getgametypesetting(#"hash_4b491f67e68ad5de");
+    level.var_e025e79e = getgametypesetting(#"bountyBagOMoneyMoveScale");
+    level.var_18823aed = getgametypesetting(#"bountyDepositExtraTime");
+    level.timePausesWhenInZone = getgametypesetting(#"timePausesWhenInZone");
     level.var_3e14d8dd = getgametypesetting(#"bountybagomoneymoney");
     level.var_b2a8558a = level.var_3e14d8dd;
     level.var_2b8c785f = getgametypesetting(#"hash_4a392638abf35991");
-    level.var_4b1ec774 = getgametypesetting(#"hash_280f85f44f115cac");
+    level.lastStandTimer = getgametypesetting(#"lastStandTimer");
     level.var_aad2ad58 = getgametypesetting(#"hash_4462b9c231538fc9");
     if (level.var_aad2ad58) {
         level.var_2f990fc4 = getgametypesetting(#"hash_74efbd1bd1ee6413");
@@ -276,7 +276,7 @@ function private onstartgametype() {
         [[ level._setteamscore ]](#"allies", game.stat[#"roundswon"][#"allies"]);
         [[ level._setteamscore ]](#"axis", game.stat[#"roundswon"][#"axis"]);
     }
-    laststand_mp::function_414115a0(level.var_4b1ec774, level.var_2b8c785f);
+    laststand_mp::function_414115a0(level.lastStandTimer, level.var_2b8c785f);
     level.var_4cfc17cc = struct::get_script_bundle("killstreak", #"hash_156aacd529965ba1");
     function_fb6f71d5();
     function_9f5ae64d();
@@ -716,9 +716,9 @@ function private function_f7ef4642() {
 // Params 1, eflags: 0x4
 // Checksum 0x3559e589, Offset: 0x3570
 // Size: 0x74
-function private function_1a0c2b72(var_f1209549) {
-    if (isdefined(self) && isalive(self) && isdefined(var_f1209549)) {
-        level thread popups::displayteammessagetoteam(#"hash_17c6b0524e578976", self, self.team, var_f1209549.entnum, undefined);
+function private function_1a0c2b72(revivedplayer) {
+    if (isdefined(self) && isalive(self) && isdefined(revivedplayer)) {
+        level thread popups::displayteammessagetoteam(#"hash_17c6b0524e578976", self, self.team, revivedplayer.entnum, undefined);
     }
 }
 
@@ -1454,7 +1454,7 @@ function function_8debcb6(origin) {
     useobj gameobjects::set_visible_team(#"any");
     useobj gameobjects::allow_use(#"any");
     useobj gameobjects::set_owner_team(#"neutral");
-    useobj gameobjects::set_use_time(level.var_98f6fe38);
+    useobj gameobjects::set_use_time(level.bountyDepositSiteCaptureTime);
     useobj gameobjects::set_key_object(level.var_7e7897b8);
     useobj gameobjects::set_onbeginuse_event(&function_9ef02b1b);
     useobj gameobjects::set_onuse_event(&function_37e1bbbf);
@@ -1742,7 +1742,7 @@ function function_3a77006e(amount, reason) {
 // Checksum 0x15a04c2, Offset: 0x77c0
 // Size: 0x52
 function pause_time() {
-    if (level.var_51e6ac2d && !(isdefined(level.timerpaused) && level.timerpaused)) {
+    if (level.timePausesWhenInZone && !(isdefined(level.timerpaused) && level.timerpaused)) {
         globallogic_utils::pausetimer();
         level.timerpaused = 1;
     }
@@ -1753,7 +1753,7 @@ function pause_time() {
 // Checksum 0x601cdd99, Offset: 0x7820
 // Size: 0x52
 function function_8984d8eb() {
-    if (level.var_51e6ac2d && isdefined(level.timerpaused) && level.timerpaused) {
+    if (level.timePausesWhenInZone && isdefined(level.timerpaused) && level.timerpaused) {
         globallogic_utils::resumetimer();
         level.timerpaused = 0;
     }

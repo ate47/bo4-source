@@ -28,8 +28,8 @@ class cscavenger_icon : cluielem {
     // Checksum 0xe043b1b9, Offset: 0x320
     // Size: 0x6c
     function increment_pulse(localclientnum) {
-        var_1ed06bbc = [[ self ]]->get_data(localclientnum, "pulse");
-        new_val = (var_1ed06bbc + 1) % 2;
+        current_val = [[ self ]]->get_data(localclientnum, "pulse");
+        new_val = (current_val + 1) % 2;
         [[ self ]]->set_data(localclientnum, "pulse", new_val);
     }
 

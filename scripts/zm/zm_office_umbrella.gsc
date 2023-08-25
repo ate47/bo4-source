@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 // Size: 0x34
 function __init__() {
     init_clientfield();
-    function_ec9e5cf2();
+    init_quests();
     init_objects();
 }
 
@@ -51,7 +51,7 @@ function init_clientfield() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x943a7c35, Offset: 0x2d0
 // Size: 0x124
-function function_ec9e5cf2() {
+function init_quests() {
     zm_sq::register(#"jump_scare", #"step_1", #"hash_3203b932029a4e0b", &jump_scare, &jump_scare_cleanup);
     zm_sq::register(#"narrative_room", #"step_1", #"hash_64d6af5ddc324d26", &function_6f55d670, &function_13c87ace);
     zm_sq::register(#"narrative_room", #"step_2", #"hash_3f567f217222e5b2", &narrative_room, &narrative_room_cleanup);

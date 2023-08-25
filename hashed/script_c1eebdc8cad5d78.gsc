@@ -178,25 +178,25 @@ function function_d8cebda3(var_a6762160) {
     /#
         assert(isstruct(var_a6762160));
     #/
-    var_7fdc9b01 = 0;
+    mutators = 0;
     if (isdefined(var_a6762160)) {
         var_b80d223d = array("doubleinventory", "double9mm", "double45cal", "double556mm", "double762mm", "double338cal", "double50cal", "double12gauge", "doublerocket", "doublesmallhealth", "doublemediumhealth", "doublelargehealth", "doublesquadhealth", "doublelethalgrenades", "doubletacticalgrenades", "doubleequipment", "doubleperk");
         for (index = 0; index < var_b80d223d.size; index++) {
             if (isdefined(var_a6762160.(var_b80d223d[index])) && var_a6762160.(var_b80d223d[index])) {
-                var_7fdc9b01 = var_7fdc9b01 | 1 << index;
+                mutators = mutators | 1 << index;
             }
         }
     }
-    return var_7fdc9b01;
+    return mutators;
 }
 
 // Namespace namespace_a0d533d1/namespace_a0d533d1
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc30a39b9, Offset: 0xd70
 // Size: 0x28e
-function function_2879cbe0(var_7fdc9b01, ammoweapon) {
+function function_2879cbe0(mutators, ammoweapon) {
     /#
-        assert(isint(var_7fdc9b01));
+        assert(isint(mutators));
     #/
     /#
         assert(isweapon(ammoweapon));
@@ -221,7 +221,7 @@ function function_2879cbe0(var_7fdc9b01, ammoweapon) {
     }
     maxammo = ammoweapon.maxammo;
     var_6f2df38a = level.var_98c8f260[ammoweapon.ammoindex];
-    if (isdefined(var_6f2df38a) && var_7fdc9b01 & var_6f2df38a) {
+    if (isdefined(var_6f2df38a) && mutators & var_6f2df38a) {
         maxammo = maxammo * 2;
     }
     return maxammo;
@@ -231,14 +231,14 @@ function function_2879cbe0(var_7fdc9b01, ammoweapon) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc7c4f81e, Offset: 0x1008
 // Size: 0x572
-function function_cfa794ca(var_7fdc9b01, var_a6762160) {
+function function_cfa794ca(mutators, var_a6762160) {
     /#
         assert(isdefined(var_a6762160));
     #/
     weapon = item_world_util::function_35e06774(var_a6762160);
     if (isdefined(weapon)) {
         if (weapon.name == #"eq_tripwire") {
-            if (var_7fdc9b01 & 32768) {
+            if (mutators & 32768) {
                 return 8;
             }
             return 4;
@@ -250,7 +250,7 @@ function function_cfa794ca(var_7fdc9b01, var_a6762160) {
                 if (var_a6762160.name != var_9b624be0[index]) {
                     continue;
                 }
-                if (var_7fdc9b01 & var_448bc079[index]) {
+                if (mutators & var_448bc079[index]) {
                     return ((isdefined(var_a6762160.stackcount) ? var_a6762160.stackcount : 1) * 2);
                 }
             }
@@ -258,7 +258,7 @@ function function_cfa794ca(var_7fdc9b01, var_a6762160) {
             var_3e9ef0a1 = array(array(#"frag_grenade_wz_item", #"cluster_semtex_wz_item", #"acid_bomb_wz_item", #"molotov_wz_item", #"wraithfire_wz_item", #"hatchet_wz_item", #"tomahawk_t8_wz_item", #"seeker_mine_wz_item", #"dart_wz_item", #"hawk_wz_item", #"ultimate_turret_wz_item"), array(#"swat_grenade_wz_item", #"concussion_wz_item", #"smoke_grenade_wz_item", #"smoke_grenade_wz_item_spring_holiday", #"emp_grenade_wz_item", #"spectre_grenade_wz_item"), array(#"grapple_wz_item", #"unlimited_grapple_wz_item", #"barricade_wz_item", #"spiked_barrier_wz_item", #"trophy_system_wz_item", #"concertina_wire_wz_item", #"sensor_dart_wz_item", #"supply_pod_wz_item", #"trip_wire_wz_item", #"cymbal_monkey_wz_item", #"homunculus_wz_item", #"vision_pulse_wz_item", #"flare_gun_wz_item", #"flare_gun_veh_wz_item", #"wz_snowball", #"wz_waterballoon"));
             var_24e18bcb = array(8192, 16384, 32768);
             for (var_25c45152 = 0; var_25c45152 < var_3e9ef0a1.size; var_25c45152++) {
-                if (!(var_7fdc9b01 & var_24e18bcb[var_25c45152])) {
+                if (!(mutators & var_24e18bcb[var_25c45152])) {
                     continue;
                 }
                 var_3e45b393 = var_3e9ef0a1[var_25c45152];
@@ -379,14 +379,14 @@ function function_ee669356(item) {
         if (!isdefined(item.attachments) || item.attachments.size <= 0) {
             return 0;
         }
-        var_2ca465d1 = 0;
+        hasattachment = 0;
         foreach (itemattachment in item.attachments) {
             if (function_73593286(itemattachment.var_a6762160, attachmentitem.var_a6762160)) {
-                var_2ca465d1 = 1;
+                hasattachment = 1;
                 break;
             }
         }
-        if (!var_2ca465d1) {
+        if (!hasattachment) {
             return 0;
         }
     }

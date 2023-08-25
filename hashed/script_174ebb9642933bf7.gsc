@@ -74,16 +74,16 @@ function crawler_round_spawn() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xaf86f593, Offset: 0x3b0
 // Size: 0x18e
-function spawn_nova_crawler(var_8b952619 = undefined) {
+function spawn_nova_crawler(override_spawn_location = undefined) {
     var_d8d8ce1b = undefined;
     if (function_4748fb49() < function_59257d57() && !(isdefined(level.var_5e45f817) && level.var_5e45f817) && isdefined(level.zm_loc_types[#"hash_506aba309cfe3f56"]) && level.zm_loc_types[#"hash_506aba309cfe3f56"].size > 0) {
         var_d8d8ce1b = zombie_utility::spawn_zombie(level.nova_crawler_spawner);
         if (isdefined(var_d8d8ce1b)) {
             var_d8d8ce1b.check_point_in_enabled_zone = &zm_utility::check_point_in_playable_area;
             var_d8d8ce1b thread zombie_utility::round_spawn_failsafe();
-            if (isdefined(var_8b952619)) {
-                var_d8d8ce1b function_e2bab5ec(var_8b952619);
-                var_8b952619.var_d51f4e2d = gettime();
+            if (isdefined(override_spawn_location)) {
+                var_d8d8ce1b function_e2bab5ec(override_spawn_location);
+                override_spawn_location.var_d51f4e2d = gettime();
             } else {
                 spawn_location = var_d8d8ce1b function_9216fd1f();
                 if (isdefined(spawn_location)) {
@@ -228,8 +228,8 @@ function private function_9a898f07(e_target) {
 // Checksum 0x8fca663b, Offset: 0xc00
 // Size: 0x42
 function function_87348a88(e_target) {
-    var_8b952619 = function_9a898f07(e_target);
-    return spawn_nova_crawler(var_8b952619);
+    override_spawn_location = function_9a898f07(e_target);
+    return spawn_nova_crawler(override_spawn_location);
 }
 
 // Namespace namespace_df88241c/namespace_a366d2a9
@@ -237,21 +237,21 @@ function function_87348a88(e_target) {
 // Checksum 0xf0125b87, Offset: 0xc50
 // Size: 0xe2
 function private function_9216fd1f() {
-    var_e089015d = [];
+    spawn_locations = [];
     spawn_location = undefined;
     if (isdefined(level.zm_loc_types[#"hash_506aba309cfe3f56"])) {
-        var_e089015d = level.zm_loc_types[#"hash_506aba309cfe3f56"];
+        spawn_locations = level.zm_loc_types[#"hash_506aba309cfe3f56"];
     }
-    if (var_e089015d.size > 0) {
+    if (spawn_locations.size > 0) {
         if (!isdefined(spawn_location)) {
-            spawn_info = zm_spawner::function_dce9f1a6(var_e089015d);
+            spawn_info = zm_spawner::function_dce9f1a6(spawn_locations);
             spawn_location = spawn_info.spot;
         }
         if (!isdefined(spawn_location)) {
-            spawn_location = zm_spawner::function_65439499(var_e089015d);
+            spawn_location = zm_spawner::function_65439499(spawn_locations);
         }
         if (!isdefined(spawn_location)) {
-            spawn_location = array::random(var_e089015d);
+            spawn_location = array::random(spawn_locations);
         }
     }
     return spawn_location;

@@ -1033,7 +1033,7 @@ function function_e3f8ed75() {
 // Size: 0x1ca
 function zapper_light_red() {
     for (i = 0; i < self.var_cd6ebde4.size; i++) {
-        self.var_cd6ebde4[i] setmodel(#"hash_aaeab9b07f785d9");
+        self.var_cd6ebde4[i] setmodel(#"p7_zm_mob_trap_control_base_red");
         self.var_cd6ebde4[i] playsound(#"hash_6c4aadc21a173f8b");
         self.var_cd6ebde4[i] playsound(#"hash_6c4cdf83585f2851");
     }

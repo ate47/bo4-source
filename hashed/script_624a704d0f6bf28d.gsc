@@ -33,8 +33,8 @@ function private soul_capture(localclientnum, oldval, newval, bnewent, binitials
     if (!isdefined(self) || !isdefined(self.origin)) {
         return;
     }
-    var_86d7c3fd = struct::get_array(def.script_noteworthy, "script_noteworthy");
-    capture_point = arraygetclosest(self.origin, var_86d7c3fd);
+    capture_points = struct::get_array(def.script_noteworthy, "script_noteworthy");
+    capture_point = arraygetclosest(self.origin, capture_points);
     e_fx = spawn(localclientnum, self gettagorigin("J_Spine4"), "script_model");
     e_fx setmodel(#"tag_origin");
     e_fx playsound(localclientnum, "zmb_sq_souls_release");

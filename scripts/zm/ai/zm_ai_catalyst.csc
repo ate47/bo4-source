@@ -61,16 +61,16 @@ function private function_213aaacc(localclientnum, oldvalue, newvalue, bnewent, 
     self util::waittill_dobj(localclientnum);
     switch (newvalue) {
     case 1:
-        var_5216dabe = "zmb_ai_catalyst_corrosive_spawn";
+        spawn_sfx = "zmb_ai_catalyst_corrosive_spawn";
         break;
     case 4:
-        var_5216dabe = "zmb_ai_catalyst_water_spawn";
+        spawn_sfx = "zmb_ai_catalyst_water_spawn";
         break;
     case 3:
-        var_5216dabe = "zmb_ai_catalyst_electric_spawn";
+        spawn_sfx = "zmb_ai_catalyst_electric_spawn";
         break;
     case 2:
-        var_5216dabe = "zmb_ai_catalyst_plasma_spawn";
+        spawn_sfx = "zmb_ai_catalyst_plasma_spawn";
         break;
     default:
         fxclientutils::function_ae92446(localclientnum, self, self.fxdef);

@@ -23,7 +23,7 @@ function main() {
     callback::on_spawned(&on_player_spawned);
     callback::on_localclient_connect(&on_localclient_connect);
     buildandvalidatefacialanimationlist(0);
-    animation::add_notetrack_func(#"hash_2316a6cbda163a5b", &deathanimshutdown);
+    animation::add_notetrack_func(#"clientfaceanim::deathanimshutdown", &deathanimshutdown);
 }
 
 // Namespace clientfaceanim/clientfaceanim_shared

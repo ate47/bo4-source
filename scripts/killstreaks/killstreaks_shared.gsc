@@ -239,7 +239,7 @@ function private function_656f23d5(killstreaktype) {
 // Params 6, eflags: 0x5 linked
 // Checksum 0x9e86985d, Offset: 0x1208
 // Size: 0x624
-function private function_e48aca4d(type, bundle, weapon, vehicle, var_c0a31091, isinventoryweapon) {
+function private function_e48aca4d(type, bundle, weapon, vehicle, killstreak_use_function, isinventoryweapon) {
     killstreak_init(type);
     menukey = bundle.var_a99ef6da;
     if (!isdefined(menukey)) {
@@ -250,7 +250,7 @@ function private function_e48aca4d(type, bundle, weapon, vehicle, var_c0a31091, 
     register_ui(type, menukey);
     level.killstreaks[type].usagekey = type;
     level.killstreaks[type].delaystreak = bundle.var_daf6b7af;
-    level.killstreaks[type].usefunction = var_c0a31091;
+    level.killstreaks[type].usefunction = killstreak_use_function;
     level.killstreaks[type].weaponholdallowed = 0;
     register_weapon(type, weapon);
     level.menureferenceforkillstreak[menukey] = type;
@@ -294,10 +294,10 @@ function private function_e48aca4d(type, bundle, weapon, vehicle, var_c0a31091, 
 // Params 2, eflags: 0x1 linked
 // Checksum 0x8cd61ebb, Offset: 0x1838
 // Size: 0xcc
-function register_bundle(bundle, var_c0a31091) {
-    function_e48aca4d(bundle.var_d3413870, bundle, bundle.ksweapon, bundle.ksvehicle, var_c0a31091, 0);
+function register_bundle(bundle, killstreak_use_function) {
+    function_e48aca4d(bundle.var_d3413870, bundle, bundle.ksweapon, bundle.ksvehicle, killstreak_use_function, 0);
     if (isdefined(bundle.var_fc0c8eae) && bundle.var_fc0c8eae.name != #"none") {
-        function_e48aca4d("inventory_" + bundle.var_d3413870, bundle, bundle.var_fc0c8eae, undefined, var_c0a31091, 1);
+        function_e48aca4d("inventory_" + bundle.var_d3413870, bundle, bundle.var_fc0c8eae, undefined, killstreak_use_function, 1);
     }
 }
 

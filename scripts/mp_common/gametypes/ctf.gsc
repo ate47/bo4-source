@@ -75,7 +75,7 @@ function event<gametype_init> main(eventstruct) {
     util::registernumlives(0, 100);
     util::registerscorelimit(0, 5000);
     level.scoreroundwinbased = getgametypesetting(#"cumulativeroundscores") == 0;
-    level.var_cdb4af94 = getgametypesetting(#"hash_45b80b22c4dc71e8");
+    level.flagCaptureCondition = getgametypesetting(#"flagCaptureCondition");
     level.doubleovertime = 1;
     globallogic::registerfriendlyfiredelay(level.gametype, 15, 0, 1440);
     level.overrideteamscore = 1;
@@ -322,9 +322,9 @@ function onspawnplayer(predictedspawn) {
 function updategametypedvars() {
     level.var_90e3f42e = getgametypesetting(#"capturetime");
     level.var_fea712d3 = getgametypesetting(#"defusetime");
-    level.var_4d8f5ed1 = getgametypesetting(#"hash_18d6868839108361");
-    level.var_c1e20882 = getgametypesetting(#"hash_4b900e7272befb4c");
-    level.var_891a40be = getgametypesetting(#"hash_2c5c31373530028d");
+    level.var_4d8f5ed1 = getgametypesetting(#"idleFlagResetTime");
+    level.flagRespawnTime = getgametypesetting(#"flagRespawnTime");
+    level.enemyCarrierVisible = getgametypesetting(#"enemyCarrierVisible");
     level.roundlimit = getgametypesetting(#"roundlimit");
     level.cumulativeroundscores = getgametypesetting(#"cumulativeroundscores");
     level.teamkillpenaltymultiplier = getgametypesetting(#"teamkillpenalty");
@@ -394,7 +394,7 @@ function function_78b91dee(trigger) {
     } else if (var_a319c814 === 2) {
         flag gameobjects::function_98c39cbc(1);
     }
-    if (level.var_891a40be == 2) {
+    if (level.enemyCarrierVisible == 2) {
         flag.objidpingfriendly = 1;
     }
     if (getdvarint(#"hash_3127d4491fda6ae0", 0)) {
@@ -747,7 +747,7 @@ function onpickup(player) {
         }
         globallogic_audio::play_2d_on_team("mpl_flagget_sting_friend", otherteam);
         globallogic_audio::play_2d_on_team("mpl_flagget_sting_enemy", team);
-        if (level.var_891a40be) {
+        if (level.enemyCarrierVisible) {
             self gameobjects::set_visible_team(#"any");
         } else {
             self gameobjects::set_visible_team(#"enemy");
@@ -830,7 +830,7 @@ function function_d1b86895(player) {
     enemyteam = util::getotherteam(team);
     time = gettime();
     var_c21dacee = level.var_da8cca54[team];
-    if (level.var_cdb4af94 == 1 && var_c21dacee gameobjects::is_object_away_from_home()) {
+    if (level.flagCaptureCondition == 1 && var_c21dacee gameobjects::is_object_away_from_home()) {
         return;
     }
     if (overtime::is_overtime_round()) {
@@ -905,7 +905,7 @@ function function_d1b86895(player) {
 // Checksum 0xd2c1a36, Offset: 0x4d08
 // Size: 0x8c
 function function_4ff794a0(player) {
-    scoreevents::processscoreevent(#"hash_2e4b4cefa76857ca", player, undefined, undefined);
+    scoreevents::processscoreevent(#"flag_capture", player, undefined, undefined);
     player recordgameevent("capture");
     util::function_5a68c330(10, player.team, player getentitynumber());
 }

@@ -30,7 +30,7 @@
 
 #namespace zombie_brutus_util;
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x2
 // Checksum 0x64d26825, Offset: 0x2d8
 // Size: 0x54
@@ -38,7 +38,7 @@ function autoexec __init__system__() {
     system::register(#"zombie_brutus_util", &__init__, &__main__, #"zm_ai_brutus");
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x153b769e, Offset: 0x338
 // Size: 0xc4
@@ -57,7 +57,7 @@ function __init__() {
     level flag::init("brutus_setup_complete");
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x47905bbc, Offset: 0x408
 // Size: 0x1c
@@ -65,7 +65,7 @@ function __main__() {
     level thread enable_brutus();
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x8a53ca4d, Offset: 0x430
 // Size: 0x346
@@ -119,7 +119,7 @@ function enable_brutus() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x80f724d1, Offset: 0x780
 // Size: 0x4
@@ -127,7 +127,7 @@ function brutus_prespawn() {
     
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x45ae6285, Offset: 0x790
 // Size: 0x2a0
@@ -162,7 +162,7 @@ function brutus_spawning_logic() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 4, eflags: 0x5 linked
 // Checksum 0x321d4c2c, Offset: 0xa38
 // Size: 0x1f0
@@ -192,7 +192,7 @@ function private function_f332f2b7(n_spawn, str_zone_name, var_dde9ff11, var_68f
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5c9a01ac, Offset: 0xc30
 // Size: 0x5e
@@ -204,7 +204,7 @@ function zombie_setup_attack_properties() {
     self.disableexits = 1;
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 5, eflags: 0x1 linked
 // Checksum 0x8610bdf6, Offset: 0xc98
 // Size: 0x5ce
@@ -296,7 +296,7 @@ function brutus_spawn(starting_health, has_helmet, var_21b0fc34, var_7f2b0069, z
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0x7a8f6248, Offset: 0x1270
 // Size: 0x18e
@@ -320,18 +320,18 @@ function get_best_brutus_spawn_pos(zone_name) {
             newval = get_brutus_spawn_pos_val(level.var_57d61da9[i]);
             if (newval > val) {
                 val = newval;
-                var_b9ed2d9f = i;
+                pos_idx = i;
             }
         }
     }
-    if (isdefined(var_b9ed2d9f)) {
-        return level.var_57d61da9[var_b9ed2d9f];
+    if (isdefined(pos_idx)) {
+        return level.var_57d61da9[pos_idx];
     } else {
         return undefined;
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0xbe50aef8, Offset: 0x1408
 // Size: 0x198
@@ -345,21 +345,21 @@ function get_brutus_spawn_pos_val(var_ed72e56b) {
         return 0;
     }
     a_players_in_zone = zm_zonemgr::get_players_in_zone(zone_name, 1);
-    var_6404f532 = 1;
+    n_score_addition = 1;
     for (i = 0; i < a_players_in_zone.size; i++) {
         if (self findpath(var_ed72e56b.origin, a_players_in_zone[i].origin, 0, 0)) {
             n_dist = distance2d(var_ed72e56b.origin, a_players_in_zone[i].origin);
-            var_6404f532 = var_6404f532 + math::linear_map(n_dist, 128, 4016, 0, level.var_549a1590);
+            n_score_addition = n_score_addition + math::linear_map(n_dist, 128, 4016, 0, level.var_549a1590);
         }
     }
-    if (var_6404f532 > level.var_549a1590) {
-        var_6404f532 = level.var_549a1590;
+    if (n_score_addition > level.var_549a1590) {
+        n_score_addition = level.var_549a1590;
     }
-    n_score = n_score + var_6404f532;
+    n_score = n_score + n_score_addition;
     return n_score;
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0x59cf2594, Offset: 0x15a8
 // Size: 0x3a
@@ -368,7 +368,7 @@ function brutus_spawn_prologue(spawn_pos) {
     wait(3);
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe4c22509, Offset: 0x15f0
 // Size: 0x7e
@@ -381,7 +381,7 @@ function function_6340fe2() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xcd265544, Offset: 0x1678
 // Size: 0x44
@@ -391,14 +391,14 @@ function enable_brutus_rounds() {
     level thread brutus_round_tracker();
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xfb7f8378, Offset: 0x16c8
 // Size: 0x2a2
 function brutus_round_tracker() {
     level.var_33be9958 = level.round_number + randomintrange(level.var_deee7afe, level.var_66ff42da);
-    var_1d4f2f0b = level.round_spawn_func;
-    var_9d2417de = level.round_wait_func;
+    old_spawn_func = level.round_spawn_func;
+    old_wait_func = level.round_wait_func;
     while (1) {
         level waittill(#"between_round_over");
         players = getplayers();
@@ -426,7 +426,7 @@ function brutus_round_tracker() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x5 linked
 // Checksum 0xcf550378, Offset: 0x1978
 // Size: 0x76
@@ -441,7 +441,7 @@ function private function_7265bed3() {
     return level.var_55b6e02f;
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xdd77d90b, Offset: 0x19f8
 // Size: 0x36
@@ -454,7 +454,7 @@ function brutus_round_spawn_failsafe_respawn() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 4, eflags: 0x1 linked
 // Checksum 0x72929065, Offset: 0x1a38
 // Size: 0x13c
@@ -470,7 +470,7 @@ function attempt_brutus_spawn(var_d8206b1d, str_zone_name, var_dde9ff11 = 0, var
     return 1;
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xaf2ad1ee, Offset: 0x1b80
 // Size: 0x20
@@ -479,7 +479,7 @@ function function_5e4d2f31() {
     level notify(#"brutus_spawn_failed");
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xcfc8e1ff, Offset: 0x1ba8
 // Size: 0x806
@@ -533,12 +533,12 @@ function brutus_death() {
     if (isplayer(self.attacker)) {
         event = "death";
         if (level.var_4d04bf1) {
-            var_85fd81ba = level.var_8e570217;
+            team_points = level.var_8e570217;
             player_points = level.var_b0b1d70a;
             a_players = getplayers(self.team);
         } else {
             multiplier = zm_score::get_points_multiplier(self.attacker);
-            var_85fd81ba = multiplier * zm_utility::round_up_score(level.var_8e570217, 5);
+            team_points = multiplier * zm_utility::round_up_score(level.var_8e570217, 5);
             player_points = multiplier * zm_utility::round_up_score(level.var_b0b1d70a, 5);
             a_players = getplayers();
         }
@@ -546,7 +546,7 @@ function brutus_death() {
             if (!zm_utility::is_player_valid(player)) {
                 continue;
             }
-            player zm_score::add_to_player_score(var_85fd81ba);
+            player zm_score::add_to_player_score(team_points);
             if (player == self.attacker) {
                 player zm_score::add_to_player_score(player_points);
                 level notify(#"brutus_killed", {#player:player});
@@ -558,7 +558,7 @@ function brutus_death() {
     self notify(#"brutus_cleanup");
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0x4bfe8379, Offset: 0x23b8
 // Size: 0x16c
@@ -576,7 +576,7 @@ function function_4621cb04(w_component) {
     mdl_key delete();
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0xeeac69b5, Offset: 0x2530
 // Size: 0x168
@@ -593,7 +593,7 @@ function function_f57a7d55(w_item) {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0x7b95c8a7, Offset: 0x26a0
 // Size: 0x114
@@ -621,7 +621,7 @@ function function_69740610(w_item) {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x573003d4, Offset: 0x27c0
 // Size: 0xaa
@@ -640,7 +640,7 @@ function brutus_cleanup() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x784c918f, Offset: 0x2878
 // Size: 0x74
@@ -651,7 +651,7 @@ function brutus_cleanup_at_end_of_grief_round() {
     self delete();
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0xfc080f85, Offset: 0x28f8
 // Size: 0x196
@@ -683,7 +683,7 @@ function wait_on_box_alarm() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0x8c750a8c, Offset: 0x2a98
 // Size: 0xac
@@ -701,7 +701,7 @@ function check_perk_machine_valid(player) {
     return 1;
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0x3d3e54d5, Offset: 0x2b50
 // Size: 0x194
@@ -727,7 +727,7 @@ function check_craftable_table_valid(player) {
     return 1;
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x1bae3b10, Offset: 0x2cf0
 // Size: 0x154
@@ -752,7 +752,7 @@ function brutus_check_zone() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x1 linked
 // Checksum 0x82564694, Offset: 0x2e50
 // Size: 0xb0
@@ -770,7 +770,7 @@ function brutus_watch_enemy() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x5 linked
 // Checksum 0xe198fe0, Offset: 0x2f08
 // Size: 0x11e
@@ -794,7 +794,7 @@ function private function_9a78baba(var_1cc3df76) {
     return least_hunted;
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0xeb6c131c, Offset: 0x3030
 // Size: 0xa4
@@ -812,7 +812,7 @@ function brutus_lockdown_client_effects(delay) {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x5 linked
 // Checksum 0x4106727e, Offset: 0x30e0
 // Size: 0xae
@@ -827,7 +827,7 @@ function private function_61263ebc() {
     return 0;
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x0
 // Checksum 0xb0a05bad, Offset: 0x3198
 // Size: 0xb0
@@ -848,7 +848,7 @@ function function_b02aec83() {
     }
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x1 linked
 // Checksum 0x1dd2fd09, Offset: 0x3250
 // Size: 0x274
@@ -882,7 +882,7 @@ function function_ba497d2d(e_brutus) {
     attempt_brutus_spawn(1, undefined, 0, 1);
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x5 linked
 // Checksum 0x3fb5167f, Offset: 0x34d0
 // Size: 0x6c
@@ -895,7 +895,7 @@ function private function_9398e511() {
     return undefined;
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 0, eflags: 0x0
 // Checksum 0xbd2ed08d, Offset: 0x3548
 // Size: 0x44
@@ -906,7 +906,7 @@ function function_60f8374c() {
     #/
 }
 
-// Namespace zombie_brutus_util/namespace_f623d0ec
+// Namespace zombie_brutus_util/ai_brutus_util
 // Params 1, eflags: 0x0
 // Checksum 0x1d49b56b, Offset: 0x3598
 // Size: 0x72

@@ -54,10 +54,10 @@ function testshock() {
 // Size: 0xd0
 function testhps() {
     self endon(#"death", #"disconnect");
-    var_12301b3c = [];
-    var_12301b3c[var_12301b3c.size] = "radar";
-    var_12301b3c[var_12301b3c.size] = "artillery";
-    var_12301b3c[var_12301b3c.size] = "dogs";
+    hps = [];
+    hps[hps.size] = "radar";
+    hps[hps.size] = "artillery";
+    hps[hps.size] = "dogs";
     for (;;) {
         hp = "radar";
         if (self thread killstreaks::give(hp)) {

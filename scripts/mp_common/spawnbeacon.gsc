@@ -66,11 +66,11 @@ function function_ece8f018(attacker, victim, weapon, attackerweapon, meansofdeat
 // Params 6, eflags: 0x1 linked
 // Checksum 0x55a5e3fd, Offset: 0x4d0
 // Size: 0xe4
-function function_3e8ff788(attacker, victim, var_f5db414c, var_4ab61689, weapon, var_cb08a021) {
-    if (!isdefined(attacker) || !isdefined(var_cb08a021) || !isdefined(var_4ab61689) || !isdefined(attacker.var_7c18e526)) {
+function function_3e8ff788(attacker, victim, var_f5db414c, killtime, weapon, var_cb08a021) {
+    if (!isdefined(attacker) || !isdefined(var_cb08a021) || !isdefined(killtime) || !isdefined(attacker.var_7c18e526)) {
         return;
     }
-    if (attacker != attacker.var_7c18e526 && (isdefined(attacker.var_1a6703cc) ? attacker.var_1a6703cc : 0) + 5000 > var_4ab61689) {
+    if (attacker != attacker.var_7c18e526 && (isdefined(attacker.var_1a6703cc) ? attacker.var_1a6703cc : 0) + 5000 > killtime) {
         scoreevents::processscoreevent(#"hash_62131f4647f7c61a", attacker.var_7c18e526, undefined, var_cb08a021);
     }
 }
@@ -92,11 +92,11 @@ function function_cdeb9089(attacker, victim, var_cb08a021, var_fb972b2b) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0x5504ec48, Offset: 0x698
 // Size: 0xdc
-function function_5bfd1343(attacker, var_f231d134, var_4ab61689, capturedobjective, var_cb08a021) {
-    if (!isdefined(attacker) || !isdefined(var_cb08a021) || !isdefined(var_4ab61689) || !isdefined(attacker.var_7c18e526)) {
+function function_5bfd1343(attacker, var_f231d134, killtime, capturedobjective, var_cb08a021) {
+    if (!isdefined(attacker) || !isdefined(var_cb08a021) || !isdefined(killtime) || !isdefined(attacker.var_7c18e526)) {
         return;
     }
-    if (attacker != attacker.var_7c18e526 && (isdefined(attacker.var_1a6703cc) ? attacker.var_1a6703cc : 0) + 5000 > var_4ab61689) {
+    if (attacker != attacker.var_7c18e526 && (isdefined(attacker.var_1a6703cc) ? attacker.var_1a6703cc : 0) + 5000 > killtime) {
         scoreevents::processscoreevent(#"hash_5ce122c3419f6a58", attacker.var_7c18e526, undefined, var_cb08a021);
     }
 }

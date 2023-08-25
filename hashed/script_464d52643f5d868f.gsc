@@ -45,8 +45,8 @@ function function_4989fd7e() {
     var_40762d8a = getent("t_catwalk_door_open", "targetname");
     var_40762d8a sethintstring(#"hash_71158766520dc432");
     level.var_2ea46461 = getent("mdl_ca_l", "targetname");
-    var_10ef531 = getentarray("door_model_west_side_exterior_to_catwalk", "targetname");
-    foreach (e_door in var_10ef531) {
+    a_e_door = getentarray("door_model_west_side_exterior_to_catwalk", "targetname");
+    foreach (e_door in a_e_door) {
         if (e_door.classname == "script_model") {
             level.var_2ea46461 linkto(e_door);
             break;
@@ -109,8 +109,8 @@ function function_84f1c310() {
         playsoundatposition(#"hash_97aff7905795396", (8223, 10111, 817));
         level.musicsystemoverride = 1;
         music::setmusicstate("escape_catwalk");
-        var_e2cda28c = struct::get("catwalk_door_spark");
-        var_9e431d6d = util::spawn_model("tag_origin", var_e2cda28c.origin, var_e2cda28c.angles);
+        s_sparks = struct::get("catwalk_door_spark");
+        var_9e431d6d = util::spawn_model("tag_origin", s_sparks.origin, s_sparks.angles);
         var_9e431d6d clientfield::set("" + #"hash_144c7c2895ed95c", 1);
         mdl_gate = undefined;
         foreach (mdl_door in t_catwalk_door.doors) {
@@ -225,8 +225,8 @@ function function_fd3fa3a3() {
 // Checksum 0xe7f49f91, Offset: 0x1710
 // Size: 0x84
 function function_40312eda(var_9e431d6d, mdl_gate) {
-    var_9f614d66 = var_9e431d6d.origin + mdl_gate.script_vector;
-    var_9e431d6d moveto(var_9f614d66, 1, 0.25, 0.25);
+    v_new_position = var_9e431d6d.origin + mdl_gate.script_vector;
+    var_9e431d6d moveto(v_new_position, 1, 0.25, 0.25);
     wait(1.25);
     var_9e431d6d delete();
 }
@@ -262,12 +262,12 @@ function function_9d553a8() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x6d623e98, Offset: 0x1928
 // Size: 0x54e
-function function_7b6777c5(var_564f954b) {
-    if (isdefined(var_564f954b.catwalk_spawner)) {
-        level thread function_1b943b6c(var_564f954b.catwalk_spawner);
+function function_7b6777c5(t_spawner) {
+    if (isdefined(t_spawner.catwalk_spawner)) {
+        level thread function_1b943b6c(t_spawner.catwalk_spawner);
     }
-    if (isdefined(var_564f954b.var_945ce5e)) {
-        a_str_sets = strtok(var_564f954b.var_945ce5e, " ");
+    if (isdefined(t_spawner.var_945ce5e)) {
+        a_str_sets = strtok(t_spawner.var_945ce5e, " ");
         foreach (str_set in a_str_sets) {
             a_s_spots = struct::get_array(str_set, "catwalk_spawner");
             foreach (s_spot in a_s_spots) {
@@ -275,9 +275,9 @@ function function_7b6777c5(var_564f954b) {
             }
         }
     }
-    var_564f954b notify(#"enemies_spawned");
+    t_spawner notify(#"enemies_spawned");
     level.var_20cff6f0 = 1;
-    var_d72fffcc = struct::get_array(var_564f954b.target);
+    var_d72fffcc = struct::get_array(t_spawner.target);
     foreach (var_adad907f in var_d72fffcc) {
         if (level.activeplayers.size == 1 && isdefined(var_adad907f.var_e6eb2eff) && var_adad907f.var_e6eb2eff) {
             continue;
@@ -535,8 +535,8 @@ function play_brutus_scene_done(a_ents) {
     level.disable_nuke_delay_spawning = undefined;
     level flag::wait_till_clear(#"hash_21921ed511559aa3");
     level flag::set("spawn_zombies");
-    var_b17275d2 = getaiarchetypearray(#"brutus");
-    level.brutus_count = var_b17275d2.size;
+    a_enemy = getaiarchetypearray(#"brutus");
+    level.brutus_count = a_enemy.size;
     if (isdefined(level.var_43bca751) && level.var_43bca751 && !zm_utility::is_standard()) {
         if (level.zones[#"zone_catwalk_04"].is_active) {
             zombie_brutus_util::attempt_brutus_spawn(1, "zone_catwalk_04");

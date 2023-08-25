@@ -45,10 +45,10 @@ function private function_53d906fd(localclientnum) {
     level endon(#"game_ended");
     while (1) {
         player = function_5c10bd79(localclientnum);
-        var_b5a1e4bf = level clientfield::get("showSpectreSwordBeams");
+        show_fx = level clientfield::get("showSpectreSwordBeams");
         if (isdefined(level.var_5b2a8d88) && isdefined(player)) {
             foreach (i, playfx in level.var_5b2a8d88) {
-                if (var_b5a1e4bf) {
+                if (show_fx) {
                     if (item_world_util::function_2c7fc531(i)) {
                         point = function_b1702735(i);
                         if (isdefined(point) && isdefined(point.var_a6762160) && point.var_a6762160.name === #"sig_blade_wz_item") {

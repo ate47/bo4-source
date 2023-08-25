@@ -69,7 +69,7 @@ function jump_pad_think() {
     fling_this_way = undefined;
     jump_time = undefined;
     world_gravity = getdvarint(#"bg_gravity", 0);
-    var_3ae40887 = -13.3;
+    gravity_pulls = -13.3;
     top_velocity_sq = 810000;
     forward_scaling = 1;
     if (isdefined(self.script_flag_wait)) {
@@ -113,7 +113,7 @@ function jump_pad_start(ent_player, endon_condition) {
     fling_this_way = undefined;
     jump_time = undefined;
     world_gravity = getdvarint(#"bg_gravity", 0);
-    var_3ae40887 = -13.3;
+    gravity_pulls = -13.3;
     top_velocity_sq = 810000;
     forward_scaling = 1;
     start_point = self.start;

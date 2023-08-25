@@ -52,9 +52,9 @@ function devgui_test_chart_think() {
                 if (val == 1) {
                     level.test_chart_model setmodel(#"test_chart_model");
                 } else if (val == 2) {
-                    level.test_chart_model setmodel(#"hash_70a102226734fb49");
+                    level.test_chart_model setmodel(#"test_chart_model_2");
                 } else if (val == 3) {
-                    level.test_chart_model setmodel(#"hash_70a101226734f996");
+                    level.test_chart_model setmodel(#"test_chart_model_3");
                 }
                 direction = player getplayerangles();
                 direction_vec = anglestoforward((0, direction[1], 0));

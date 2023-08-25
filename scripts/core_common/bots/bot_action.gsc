@@ -3337,7 +3337,7 @@ function function_5de4c088(actionparams) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x497c345, Offset: 0xc1f0
 // Size: 0x10e
-function function_49161e05(actionparams, checkgrenade) {
+function deploy_gadget(actionparams, checkgrenade) {
     weapon = actionparams.weapon;
     if (!isdefined(weapon)) {
         /#
@@ -3357,7 +3357,7 @@ function function_49161e05(actionparams, checkgrenade) {
 // Checksum 0xf2427427, Offset: 0xc308
 // Size: 0x2c
 function function_94f96101(actionparams) {
-    self function_49161e05(actionparams, 1);
+    self deploy_gadget(actionparams, 1);
 }
 
 // Namespace bot_action/bot_action

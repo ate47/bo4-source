@@ -144,29 +144,29 @@ function function_3fcb1e5e() {
             var_18b64c03.str_hint_string = #"hash_0";
             var_f6cdf98c = "n_c_w_p_01";
             var_49d93843 = #"hash_30683ab79a855d68";
-            var_eecb43b6 = "p_w_o_num_01";
+            str_clientfield_name = "p_w_o_num_01";
             break;
         case #"nixie_tube_trigger_2":
             var_18b64c03.var_825e7054 = var_8dfff656;
             var_18b64c03.str_hint_string = #"hash_0";
             var_f6cdf98c = "n_c_w_p_02";
             var_49d93843 = #"hash_30683db79a856281";
-            var_eecb43b6 = "p_w_o_num_02";
+            str_clientfield_name = "p_w_o_num_02";
             break;
         case #"nixie_tube_trigger_3":
             var_18b64c03.var_825e7054 = var_44e1e41b;
             var_18b64c03.str_hint_string = #"hash_0";
             var_f6cdf98c = "n_c_w_p_03";
             var_49d93843 = #"hash_30683cb79a8560ce";
-            var_eecb43b6 = "p_w_o_num_03";
+            str_clientfield_name = "p_w_o_num_03";
             break;
         }
-        var_464b9245 = struct::get(var_f6cdf98c);
-        var_464b9245.script_int = var_18b64c03.var_825e7054;
-        if (var_464b9245.script_int == 0) {
-            level clientfield::set(var_eecb43b6, 10);
+        s_paper = struct::get(var_f6cdf98c);
+        s_paper.script_int = var_18b64c03.var_825e7054;
+        if (s_paper.script_int == 0) {
+            level clientfield::set(str_clientfield_name, 10);
         } else {
-            level clientfield::set(var_eecb43b6, var_464b9245.script_int);
+            level clientfield::set(str_clientfield_name, s_paper.script_int);
         }
     }
 }

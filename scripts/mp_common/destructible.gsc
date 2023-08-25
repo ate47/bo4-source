@@ -53,7 +53,7 @@ function physics_explosion_and_rumble(origin, radius, physics_explosion) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0xb89f1948, Offset: 0x450
 // Size: 0x452
-function function_86d87021(destructible_event, attacker, weapon, piece_index, point, dir, mod) {
+function event_callback(destructible_event, attacker, weapon, piece_index, point, dir, mod) {
     explosion_radius = 0;
     if (issubstr(destructible_event, "explode") && destructible_event != "explode") {
         tokens = strtok(destructible_event, "_");
@@ -362,7 +362,7 @@ function car_fire_think(attacker) {
 // Size: 0x11c
 function event<destructible> codecallback_destructibleevent(eventstruct) {
     if (eventstruct.event == "broken") {
-        function_86d87021(eventstruct.notify_type, eventstruct.attacker, eventstruct.weapon, eventstruct.piece, eventstruct.point, eventstruct.dir, eventstruct.mod);
+        event_callback(eventstruct.notify_type, eventstruct.attacker, eventstruct.weapon, eventstruct.piece, eventstruct.point, eventstruct.dir, eventstruct.mod);
         self notify(eventstruct.event, {#attacker:eventstruct.attacker, #type:eventstruct.notify_type});
     } else if (eventstruct.event == "breakafter") {
         self thread breakafter(eventstruct.time, eventstruct.amount, eventstruct.piece);

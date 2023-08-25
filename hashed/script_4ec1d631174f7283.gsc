@@ -95,13 +95,13 @@ function private function_e5ba4473() {
 // Size: 0xfc
 function function_1c989dc4() {
     if (isdefined(level.var_8a8728c6) && level.var_8a8728c6.size >= 2) {
-        var_7e81d1f3 = level.var_8a8728c6[0];
+        samantha = level.var_8a8728c6[0];
         eddie = level.var_8a8728c6[1];
-        var_7e81d1f3.pushable = 0;
+        samantha.pushable = 0;
         eddie.pushable = 0;
-        var_e625df22 = anglestoforward(var_7e81d1f3.angles);
-        var_3af1c728 = vectorcross((0, 0, 1), var_e625df22) * -1;
-        eddie forceteleport(var_7e81d1f3.origin + var_3af1c728 * 25, var_7e81d1f3.angles);
+        var_e625df22 = anglestoforward(samantha.angles);
+        samantha_right = vectorcross((0, 0, 1), var_e625df22) * -1;
+        eddie forceteleport(samantha.origin + samantha_right * 25, samantha.angles);
     }
 }
 
@@ -133,9 +133,9 @@ function private function_b7f08e2d() {
 function private function_dca53f1f(player_index) {
     var_9a149315 = (0, 0, 0);
     if (isdefined(level.var_8a8728c6)) {
-        var_7e81d1f3 = level.var_8a8728c6[0];
+        samantha = level.var_8a8728c6[0];
         var_b8e7e5da = (-100, -12.5, 0) + vectorscale((-1, 0, 0), 5) * player_index;
-        var_9a149315 = var_7e81d1f3.origin + rotatepointaroundaxis(var_b8e7e5da, (0, 0, 1), var_7e81d1f3.angles[1]);
+        var_9a149315 = samantha.origin + rotatepointaroundaxis(var_b8e7e5da, (0, 0, 1), samantha.angles[1]);
     }
     return var_9a149315;
 }
@@ -151,22 +151,22 @@ function function_303ab700() {
         foreach (player in players) {
             if (isdefined(player)) {
                 var_16a2c824 = player function_dca53f1f(player_index);
-                var_7e81d1f3 = level.var_8a8728c6[0];
+                samantha = level.var_8a8728c6[0];
                 /#
                     println("<unknown string>");
                 #/
                 player.var_fa2d1151 = spawn("script_model", var_16a2c824);
-                player.var_fa2d1151.angles = var_7e81d1f3.angles;
+                player.var_fa2d1151.angles = samantha.angles;
                 wait(1);
                 if (isdefined(player) && isdefined(player.var_fa2d1151)) {
                     player dontinterpolate();
                     player setorigin(var_16a2c824);
-                    player setplayerangles(var_7e81d1f3.angles);
+                    player setplayerangles(samantha.angles);
                     waitframe(1);
                     /#
                         println("<unknown string>" + player.name + "<unknown string>");
                     #/
-                    function_8e56bb21(player, player.var_fa2d1151, var_16a2c824, var_7e81d1f3.angles);
+                    function_8e56bb21(player, player.var_fa2d1151, var_16a2c824, samantha.angles);
                     wait(1);
                 }
                 player_index++;

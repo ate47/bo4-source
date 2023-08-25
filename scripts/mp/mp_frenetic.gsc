@@ -77,16 +77,16 @@ function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
     wait(getdvarfloat(#"hash_205d729c5c415715", 0.5));
     if (util::isfirstround()) {
-        level scene::add_scene_func(#"hash_16dc1766fc34ff0b", &function_dd64960c, "play");
-        level thread scene::play(#"hash_5438c10f67365687");
-        level thread scene::play(#"hash_afda7c01698afa5");
-        level thread scene::play(#"hash_4e0b457de7a522e2");
-        level thread scene::play(#"hash_7051e29faa930b3");
-        level thread scene::play(#"hash_623d98e8f3bc2913");
-        level thread scene::play(#"hash_6f27f62956c4c8ec");
-        level thread scene::play(#"hash_f73e7a7f9951585");
-        level thread scene::play(#"hash_461d1f80df3fcf9");
-        level thread scene::play(#"hash_16dc1766fc34ff0b");
+        level scene::add_scene_func(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle", &function_dd64960c, "play");
+        level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_bundle");
+        level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle");
+        level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle");
+        level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle");
+        level thread scene::play(#"p8_fxanim_mp_frenetic_vines_01_bundle");
+        level thread scene::play(#"p8_fxanim_mp_frenetic_vines_02_bundle");
+        level thread scene::play(#"p8_fxanim_mp_frenetic_vines_03_bundle");
+        level thread scene::play(#"p8_fxanim_mp_frenetic_rock_slide_bundle");
+        level thread scene::play(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle");
         return;
     }
     exploder::stop_exploder("fxexp_wind_gust_fast");
@@ -112,22 +112,22 @@ function function_dd64960c(a_ents) {
 // Size: 0x2cc
 function function_2cdcf5c3() {
     if (util::isfirstround()) {
-        level thread scene::init(#"hash_16dc1766fc34ff0b");
-        level thread scene::init(#"hash_5438c10f67365687");
-        level thread scene::init(#"hash_afda7c01698afa5");
-        level thread scene::init(#"hash_4e0b457de7a522e2");
-        level thread scene::init(#"hash_7051e29faa930b3");
-        level thread scene::init(#"hash_623d98e8f3bc2913");
-        level thread scene::init(#"hash_6f27f62956c4c8ec");
-        level thread scene::init(#"hash_f73e7a7f9951585");
+        level thread scene::init(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle");
+        level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_bundle");
+        level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle");
+        level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle");
+        level thread scene::init(#"p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle");
+        level thread scene::init(#"p8_fxanim_mp_frenetic_vines_01_bundle");
+        level thread scene::init(#"p8_fxanim_mp_frenetic_vines_02_bundle");
+        level thread scene::init(#"p8_fxanim_mp_frenetic_vines_03_bundle");
         return;
     }
-    array::thread_all(struct::get_array("p8_fxanim_mp_frenetic_solar_panels_bundle", "scriptbundlename"), &scene::play, #"hash_45b34c2c136a96d6");
-    array::thread_all(struct::get_array("p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle", "scriptbundlename"), &scene::play, #"hash_2666ce13045666f4");
-    array::thread_all(struct::get_array("p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle", "scriptbundlename"), &scene::play, #"hash_6b147234262da2b1");
-    array::thread_all(struct::get_array("p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle", "scriptbundlename"), &scene::play, #"hash_10ba615ce8a42fa");
-    level thread scene::skipto_end(#"hash_623d98e8f3bc2913", undefined, undefined, 1);
-    level thread scene::skipto_end(#"hash_6f27f62956c4c8ec", undefined, undefined, 1);
-    level thread scene::skipto_end(#"hash_f73e7a7f9951585", undefined, undefined, 1);
+    array::thread_all(struct::get_array("p8_fxanim_mp_frenetic_solar_panels_bundle", "scriptbundlename"), &scene::play, #"p8_fxanim_mp_frenetic_solar_panels_idle_bundle");
+    array::thread_all(struct::get_array("p8_fxanim_mp_frenetic_solar_panels_delay_01_bundle", "scriptbundlename"), &scene::play, #"p8_fxanim_mp_frenetic_solar_panels_delay_01_idle_bundle");
+    array::thread_all(struct::get_array("p8_fxanim_mp_frenetic_solar_panels_delay_02_bundle", "scriptbundlename"), &scene::play, #"p8_fxanim_mp_frenetic_solar_panels_delay_02_idle_bundle");
+    array::thread_all(struct::get_array("p8_fxanim_mp_frenetic_solar_panels_delay_03_bundle", "scriptbundlename"), &scene::play, #"p8_fxanim_mp_frenetic_solar_panels_delay_03_idle_bundle");
+    level thread scene::skipto_end(#"p8_fxanim_mp_frenetic_vines_01_bundle", undefined, undefined, 1);
+    level thread scene::skipto_end(#"p8_fxanim_mp_frenetic_vines_02_bundle", undefined, undefined, 1);
+    level thread scene::skipto_end(#"p8_fxanim_mp_frenetic_vines_03_bundle", undefined, undefined, 1);
 }
 

@@ -122,11 +122,11 @@ function private function_b60df00d() {
         level.var_9eccff99.s_start = zm_hms_util::function_4e7f5b2e("mk2v_start");
     }
     level.var_9eccff99.var_fead3ae9 = util::spawn_model("p8_zm_whi_fuse_pickup_fluid_yellow_half", level.var_9eccff99.s_start.origin, level.var_9eccff99.s_start.angles);
-    var_3f752463 = getent(level.var_9eccff99.s_start.target, "targetname");
-    if (isdefined(var_3f752463)) {
-        var_3f752463 setcandamage(1);
-        var_3f752463 val::set("quest_mk2v", "allowDeath", 0);
-        var_3f752463 thread function_1129876d();
+    e_panel = getent(level.var_9eccff99.s_start.target, "targetname");
+    if (isdefined(e_panel)) {
+        e_panel setcandamage(1);
+        e_panel val::set("quest_mk2v", "allowDeath", 0);
+        e_panel thread function_1129876d();
         exploder::exploder("fxexp_quest_raygun_m2_v_stage_1" + level.var_9eccff99.s_start.exploder_id);
     } else {
         s_unitrigger = level.var_9eccff99.var_fead3ae9 zm_item_pickup::create_item_pickup(&function_9d66ea6f, &function_f6048ee, &function_5b4f9f76);
@@ -300,9 +300,9 @@ function cleanup_step_2() {
 // Checksum 0xb4ba0e56, Offset: 0x1368
 // Size: 0xa2
 function private function_b99d76c0() {
-    var_9c6b8e07 = struct::get("mk2v_gen");
-    var_9c6b8e07 zm_unitrigger::create("", 96);
-    var_9c6b8e07 thread function_195e54c();
+    s_gen = struct::get("mk2v_gen");
+    s_gen zm_unitrigger::create("", 96);
+    s_gen thread function_195e54c();
     exploder::exploder("fxexp_quest_raygun_m2_v_stage_5_active");
     exploder::exploder("fxexp_quest_raygun_m2_v_stage_6_active");
     level.var_9eccff99.n_step = 3;
@@ -440,9 +440,9 @@ function cleanup_step_3() {
         namespace_bd74bbd2::end(#"sc_mk2v");
         level.var_9eccff99.var_fead3ae9 delete();
     } else {
-        var_9c6b8e07 = struct::get("mk2v_gen");
-        var_9c6b8e07 notify(#"stop_think");
-        zm_unitrigger::unregister_unitrigger(var_9c6b8e07.s_unitrigger);
+        s_gen = struct::get("mk2v_gen");
+        s_gen notify(#"stop_think");
+        zm_unitrigger::unregister_unitrigger(s_gen.s_unitrigger);
     }
 }
 

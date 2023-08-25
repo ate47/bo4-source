@@ -472,7 +472,7 @@ function function_27028b8e(str_zone) {
 // Checksum 0xc748afd9, Offset: 0x2718
 // Size: 0x23c
 function function_17ac86f7() {
-    self thread zm_audio::function_713192b1(#"hash_187fe3987a160b42", #"hash_6ddcb52b15486b11");
+    self thread zm_audio::function_713192b1(#"hash_187fe3987a160b42", #"market");
     self thread zm_audio::function_713192b1(#"hash_70363674b3e9a47c", #"hash_237b36f7aeb1a896");
     self thread zm_audio::function_713192b1(#"hash_6268d50ff53b29d4", #"hash_4576fb3345db827b");
     self thread zm_audio::function_713192b1(#"hash_27a6b15e094c02f1", #"bathhouse");
@@ -480,7 +480,7 @@ function function_17ac86f7() {
     self thread zm_audio::function_713192b1(#"hash_12a9743a3b9f2236", #"hash_2d65510066aca8d");
     self thread zm_audio::function_713192b1(#"hash_303ce0aa4cf6a23e", #"hash_1b3475683eff03ae");
     self thread function_f7a190a8(undefined, 60, #"hash_106d425e41e8c240", #"hash_3442c6bca6e454f");
-    self thread function_f7a190a8(#"hash_3dba794053dea40e", 60, #"hash_654702bdca18105", #"hash_6afc17c204f4c77e");
+    self thread function_f7a190a8(#"hash_3dba794053dea40e", 60, #"hash_654702bdca18105", #"amphi");
     self thread zm_audio::function_713192b1(#"hash_4f55839413fe0046", #"hash_185c7ca2794dd39");
     self thread function_f7a190a8(#"pap_quest_completed", 30, #"hash_78d4c8eb48aabd66", #"hash_3507a36f2d9d7c97");
 }

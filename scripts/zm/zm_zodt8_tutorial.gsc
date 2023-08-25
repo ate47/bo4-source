@@ -669,7 +669,7 @@ function function_513e90cf() {
     var_2151fb35 = getentarray("state_rooms_to_lower_stairs_door", "targetname");
     foreach (mdl_door in var_2151fb35) {
         if (mdl_door.model === #"hash_9a7063a36ee590f") {
-            mdl_door setmodel(#"hash_f61afc978fee42e");
+            mdl_door setmodel(#"p8_kit_zod_din_05_door_42_left_stained_wood_02");
         } else if (mdl_door.model === #"hash_41f5587fd2de45fc") {
             mdl_door setmodel(#"hash_525a2f81b2c0f847");
         }
@@ -1059,7 +1059,7 @@ function function_bfd3a7b1() {
     self function_2d18e4c9();
     self catalyst();
     self cooperative();
-    self function_b642e639();
+    self crafting();
     self power();
     music::setmusicstate("tutorial_intermediate_end");
     self lui::screen_fade_out(5);
@@ -1361,7 +1361,7 @@ function cooperative() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x2cd2c9a8, Offset: 0x74f8
 // Size: 0x704
-function function_b642e639() {
+function crafting() {
     var_171df470 = getent("tutorial_forced_shield_part", "targetname");
     if (isdefined(var_171df470)) {
         var_171df470 clientfield::set("tutorial_keyline_fx", 1);

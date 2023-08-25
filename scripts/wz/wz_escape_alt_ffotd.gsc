@@ -3,7 +3,7 @@
 
 #namespace namespace_7073a886;
 
-// Namespace namespace_7073a886/namespace_f341461c
+// Namespace namespace_7073a886/wz_escape_alt_ffotd
 // Params 0, eflags: 0x2
 // Checksum 0xebec2a0c, Offset: 0xc8
 // Size: 0x44
@@ -11,7 +11,7 @@ function autoexec __init__system__() {
     system::register(#"hash_76040d0f2663ccc", &__init__, &__main__, undefined);
 }
 
-// Namespace namespace_7073a886/namespace_f341461c
+// Namespace namespace_7073a886/wz_escape_alt_ffotd
 // Params 0, eflags: 0x1 linked
 // Checksum 0x80f724d1, Offset: 0x118
 // Size: 0x4
@@ -19,7 +19,7 @@ function __init__() {
     
 }
 
-// Namespace namespace_7073a886/namespace_f341461c
+// Namespace namespace_7073a886/wz_escape_alt_ffotd
 // Params 0, eflags: 0x1 linked
 // Checksum 0x73da96a8, Offset: 0x128
 // Size: 0xec

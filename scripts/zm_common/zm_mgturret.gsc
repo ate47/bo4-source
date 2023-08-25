@@ -197,7 +197,7 @@ function burst_fire_unmanned() {
         turret_burst_range = burst_fire_settings("burst_range");
     }
     pauseuntiltime = gettime();
-    var_b6014cc8 = "start";
+    turretstate = "start";
     self.script_shooting = 0;
     for (;;) {
         for (;;) {
@@ -207,8 +207,8 @@ function burst_fire_unmanned() {
             }
             duration = (pauseuntiltime - gettime()) * 0.001;
             if (duration <= 0) {
-                if (var_b6014cc8 != "fire") {
-                    var_b6014cc8 = "fire";
+                if (turretstate != "fire") {
+                    turretstate = "fire";
                     self playsound(#"mpl_turret_alert");
                     self thread do_shoot();
                     self.script_shooting = 1;
@@ -221,8 +221,8 @@ function burst_fire_unmanned() {
                 pauseuntiltime = gettime() + int(duration * 1000);
                 continue;
             }
-            if (var_b6014cc8 != "aim") {
-                var_b6014cc8 = "aim";
+            if (turretstate != "aim") {
+                turretstate = "aim";
             }
             self thread turret_timer(duration);
         }
