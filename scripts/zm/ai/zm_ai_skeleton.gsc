@@ -7,7 +7,7 @@
 #include scripts/zm_common/zm_devgui.gsc;
 #include scripts/zm_common/zm_audio.gsc;
 #include scripts/core_common/ai/archetype_skeleton.gsc;
-#include script_41fe08c37d53a635;
+#include scripts/core_common/ai/systems/destructible_character.gsc;
 #include script_2c5daa95f8fec03c;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/values_shared.gsc;
@@ -19,7 +19,7 @@
 #include scripts/core_common/scene_shared.gsc;
 #include scripts/core_common/clientfield_shared.gsc;
 #include scripts/core_common/callbacks_shared.gsc;
-#include script_3aa0f32b70d4f7cb;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
 #include scripts/core_common/animation_shared.gsc;
 #include scripts/core_common/ai_shared.gsc;
 
@@ -513,13 +513,13 @@ function function_946c1972(eventstruct) {
             level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 4);
         }
         break;
-    case #"hash_635a1e72798883f6":
+    case #"fakedeath":
         level thread zm_audio::zmbaivox_playvox(self, "pain", 1, 3);
         break;
     case #"pain":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 3);
         break;
-    case #"hash_2d419cc17df39a71":
+    case #"melee_vox":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 2, 1);
         break;
     case #"sprint":
@@ -555,7 +555,7 @@ function private function_6d3ecc88() {
 function private function_6ae10cf1(cmd) {
     /#
         switch (cmd) {
-        case #"hash_4a664a643f5d33c6":
+        case #"skeleton_spawn":
             zm_devgui::spawn_archetype("<unknown string>");
             break;
         case #"hash_12e2063dc669bbe0":

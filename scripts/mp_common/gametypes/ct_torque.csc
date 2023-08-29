@@ -10,7 +10,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x12f1a5f6, Offset: 0xc0
 // Size: 0x96
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     ct_core::function_fa03fc55();
     clientfield::register("allplayers", "danger_pstfx", 1, 1, "counter", &danger_pstfx, 1, 0);

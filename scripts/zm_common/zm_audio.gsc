@@ -2494,7 +2494,7 @@ function isfatal(e_victim, damage) {
 // Params 1, eflags: 0x40
 // Checksum 0x2ce38b4, Offset: 0x9308
 // Size: 0x2ca
-function event<bhtn_action_start> function_320145f7(eventstruct) {
+function event_handler[bhtn_action_start] function_320145f7(eventstruct) {
     if (isdefined(self.var_b467f3a1)) {
         self thread [[ self.var_b467f3a1 ]](eventstruct);
         return;

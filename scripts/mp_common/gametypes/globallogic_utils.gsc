@@ -427,9 +427,9 @@ function waitfortimeornotify(time, notifyname) {
 function waitfortimeornotifynoartillery(time, notifyname) {
     self endon(notifyname);
     wait(time);
-    while (isdefined(level.var_c85996c7)) {
+    while (isdefined(level.artilleryinprogress)) {
         /#
-            assert(level.var_c85996c7);
+            assert(level.artilleryinprogress);
         #/
         wait(0.25);
     }

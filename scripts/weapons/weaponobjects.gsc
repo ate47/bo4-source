@@ -80,7 +80,7 @@ function start_gametype() {
     level._equipment_spark_fx = #"explosions/fx8_exp_equipment_lg";
     level._equipment_fizzleout_fx = #"explosions/fx8_exp_equipment_lg";
     level._equipment_emp_destroy_fx = #"killstreaks/fx_emp_explosion_equip";
-    level.var_3f58e693 = #"_t6/explosions/fx_exp_equipment";
+    level._equipment_explode_fx = #"_t6/explosions/fx_exp_equipment";
     level._equipment_explode_fx_lg = #"explosions/fx8_exp_equipment_lg";
     level.weaponobjects_hacker_trigger_width = 32;
     level.weaponobjects_hacker_trigger_height = 32;
@@ -161,7 +161,7 @@ function function_dcc8b5d5(name, var_80e51919, var_7bd83b52) {
 // Params 1, eflags: 0x40
 // Checksum 0xa90a1e47, Offset: 0xaf8
 // Size: 0x7a
-function event<player_loadoutchanged> loadout_changed(eventstruct) {
+function event_handler[player_loadoutchanged] loadout_changed(eventstruct) {
     switch (eventstruct.event) {
     case #"give_weapon":
     case #"give_weapon_dual":
@@ -1558,8 +1558,8 @@ function hackerthink(trigger, watcher) {
 function itemhacked(watcher, player) {
     self proximityalarmactivate(0, watcher);
     self.owner hackerremoveweapon(self);
-    if (isdefined(level.var_8a2b539f)) {
-        self.owner [[ level.var_8a2b539f ]]();
+    if (isdefined(level.playequipmenthackedonplayer)) {
+        self.owner [[ level.playequipmenthackedonplayer ]]();
     }
     if (self.weapon.ammocountequipment > 0 && isdefined(self.ammo)) {
         ammoleftequipment = self.ammo;
@@ -1643,7 +1643,7 @@ function hackerresult(player, owner) {
         /#
             if (!isdefined(self.progressbar)) {
                 self.progressbar = player hud::function_5037fb7f();
-                self.progressbar.var_4ee6c5d9 = -1;
+                self.progressbar.lastuserate = -1;
                 self.progressbar hud::showelem();
                 self.progressbar hud::updatebar(0.01, 1 / hacktime);
                 self.progresstext = player hud::function_48badcf4();
@@ -2773,8 +2773,8 @@ function switch_team(entity, watcher, owner) {
                 if (isdefined(level.getenemyteam) && isdefined(owner) && isdefined(owner.team)) {
                     team = [[ level.getenemyteam ]](owner.team);
                 }
-                if (isdefined(level.var_9863da28)) {
-                    player = [[ level.var_9863da28 ]](team);
+                if (isdefined(level.devongetormakebot)) {
+                    player = [[ level.devongetormakebot ]](team);
                 }
                 if (!isdefined(player)) {
                     println("<unknown string>");

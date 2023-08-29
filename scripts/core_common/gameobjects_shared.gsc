@@ -1095,7 +1095,7 @@ function create_carry_object(ownerteam, trigger, visuals, offset, objectivename,
         carryobject thread use_object_prox_think();
     }
     carryobject.getuseratemultiplier = &defaultuseratescalercallback;
-    carryobject.var_b217f865 = &defaultallowweaponscallback;
+    carryobject.allowweaponscallback = &defaultallowweaponscallback;
     if (carryobject function_4ea98a09()) {
         carryobject thread update_carry_object_objective_origin();
     }
@@ -1143,8 +1143,8 @@ function set_picked_up(player) {
             if (isdefined(player.carryobject.swappable) && player.carryobject.swappable) {
                 player.carryobject thread set_dropped();
             } else {
-                if (isdefined(self.var_ef52fbcb)) {
-                    self [[ self.var_ef52fbcb ]](player);
+                if (isdefined(self.onpickupfailed)) {
+                    self [[ self.onpickupfailed ]](player);
                 }
                 return;
             }
@@ -1152,8 +1152,8 @@ function set_picked_up(player) {
         player give_object(self);
     } else if (self.type == "packObject") {
         if (isdefined(level.max_packobjects) && level.max_packobjects <= player.packobject.size) {
-            if (isdefined(self.var_ef52fbcb)) {
-                self [[ self.var_ef52fbcb ]](player);
+            if (isdefined(self.onpickupfailed)) {
+                self [[ self.onpickupfailed ]](player);
             }
             return;
         }
@@ -1245,8 +1245,8 @@ function give_object(object) {
     self callback::on_death(&function_19f7be2d);
     self thread track_carrier(object);
     allowweapons = object.allowweapons;
-    if (isdefined(object.var_b217f865)) {
-        allowweapons = [[ object.var_b217f865 ]](object);
+    if (isdefined(object.allowweaponscallback)) {
+        allowweapons = [[ object.allowweaponscallback ]](object);
     }
     if (isdefined(object.carryweapon)) {
         if (isdefined(object.carryweaponthink)) {
@@ -1709,8 +1709,8 @@ function take_object(object) {
         self weapons::force_stowed_weapon_update();
     }
     allowweapons = object.allowweapons;
-    if (isdefined(object.var_b217f865)) {
-        allowweapons = [[ object.var_b217f865 ]](object);
+    if (isdefined(object.allowweaponscallback)) {
+        allowweapons = [[ object.allowweaponscallback ]](object);
     }
     if (!allowweapons && shouldenableweapon) {
         self val::reset(#"carry_object", "disable_weapons");
@@ -2436,8 +2436,8 @@ function private function_76f3a4cd() {
 // Checksum 0x7991fe46, Offset: 0x7f60
 // Size: 0x66
 function private function_4783042a() {
-    if (isdefined(self.var_9e5340b9)) {
-        self [[ self.var_9e5340b9 ]]();
+    if (isdefined(self.oncontested)) {
+        self [[ self.oncontested ]]();
     }
     if (!self.decayprogress || self.curprogress == 0) {
         self set_claim_team(#"none");
@@ -2630,8 +2630,8 @@ function use_object_prox_think() {
                 }
             } else if (!self.numtouching[self.claimteam]) {
                 self.inuse = 0;
-                if (isdefined(self.var_b37ddee9)) {
-                    self [[ self.var_b37ddee9 ]]();
+                if (isdefined(self.onunoccupied)) {
+                    self [[ self.onunoccupied ]]();
                 }
                 self set_claim_team(#"none");
                 self.claimplayer = undefined;
@@ -2645,14 +2645,14 @@ function use_object_prox_think() {
             if (self.mustmaintainclaim && self get_owner_team() != #"none") {
                 if (!self.numtouching[self get_owner_team()]) {
                     self.inuse = 0;
-                    if (isdefined(self.var_b37ddee9)) {
-                        self [[ self.var_b37ddee9 ]]();
+                    if (isdefined(self.onunoccupied)) {
+                        self [[ self.onunoccupied ]]();
                     }
                 } else if (self.cancontestclaim && self.lastclaimteam != #"none" && self.numtouching[self.lastclaimteam]) {
                     numother = get_num_touching_except_team(self.lastclaimteam);
                     if (numother == 0) {
-                        if (isdefined(self.var_8a5299ba)) {
-                            self [[ self.var_8a5299ba ]](self.lastclaimteam);
+                        if (isdefined(self.onuncontested)) {
+                            self [[ self.onuncontested ]](self.lastclaimteam);
                         }
                     }
                 }
@@ -3003,8 +3003,8 @@ function trigger_touch_think(object) {
         }
     }
     self.touchtriggers[object.entnum] = object.trigger;
-    if (isdefined(object.var_3c57b17d)) {
-        object [[ object.var_3c57b17d ]](self);
+    if (isdefined(object.ontouchuse)) {
+        object [[ object.ontouchuse ]](self);
     }
     if (isdefined(self.var_17bc9194) && self.var_17bc9194) {
         object.curprogress = object.usetime + 1;
@@ -3139,8 +3139,8 @@ function update_use_rate() {
     } else if (numclaimants && !numother) {
         self.userate = claimantsuserate;
     }
-    if (isdefined(self.var_df79c725)) {
-        self [[ self.var_df79c725 ]]();
+    if (isdefined(self.onupdateuserate)) {
+        self [[ self.onupdateuserate ]]();
     }
 }
 
@@ -4235,7 +4235,7 @@ function can_touch(sentient) {
     if (self is_excluded(sentient)) {
         return 0;
     }
-    if (isdefined(self.var_56ffb77d) && ![[ self.var_56ffb77d ]](sentient)) {
+    if (isdefined(self.canuseobject) && ![[ self.canuseobject ]](sentient)) {
         return 0;
     }
     if (self.triggertype === "use" && isdefined(sentient.var_121392a1) && sentient.var_121392a1.size > 0) {

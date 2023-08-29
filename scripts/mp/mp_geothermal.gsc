@@ -21,7 +21,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x2ddc7fc6, Offset: 0x270
 // Size: 0x164
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("toplayer", "toggle_player_steam", 1, 1, "int");
     mp_geothermal_fx::main();
     mp_geothermal_sound::main();

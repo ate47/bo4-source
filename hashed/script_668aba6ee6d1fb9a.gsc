@@ -60,7 +60,7 @@ function function_255e9614(command, key) {
     case #"hash_1c75e807f4c4e0c3":
         function_9024fce3(&adsbuttonpressed, command);
         break;
-    case #"hash_7fa1df65551193d3":
+    case #"+changeseat":
         function_9024fce3(&changeseatbuttonpressed, command);
         break;
     case #"hash_1d811f41761a35d4":
@@ -72,10 +72,10 @@ function function_255e9614(command, key) {
     case #"+frag":
         function_9024fce3(&fragbuttonpressed, command);
         break;
-    case #"hash_329305cda840577":
+    case #"+actionslot 1":
         function_9024fce3(&actionslotonebuttonpressed, command);
         break;
-    case #"hash_329315cda84072a":
+    case #"+actionslot 2":
         function_9024fce3(&actionslottwobuttonpressed, command);
         break;
     case #"+actionslot 3":
@@ -348,7 +348,7 @@ function propinputwatch() {
     self.var_960f723f = 1;
     while (1) {
         waitresult = undefined;
-        waitresult = self waittill(#"lock", #"spin", #"hash_a2f4b7b87527be0", #"hash_1b8b34b45c703f21", #"hash_33a6eeaf7fb1162e", #"hash_6dd92d4c2f4fafeb", #"hide");
+        waitresult = self waittill(#"lock", #"spin", #"changeprop", #"hash_1b8b34b45c703f21", #"propability", #"cloneprop", #"hide");
         msg = waitresult._notify;
         if (!isdefined(msg)) {
             continue;
@@ -359,11 +359,11 @@ function propinputwatch() {
         } else if (msg == "spin") {
             self function_9bc7ac53();
         } else if (msg == "changeProp") {
-            self function_5d6d3cbf();
+            self propchange();
         } else if (msg == "setToSlope") {
             self function_e8d4d2b();
         } else if (msg == "propAbility") {
-            self function_d44d9101();
+            self propability();
         } else if (msg == "cloneProp") {
             self function_88cea693();
         } else if (msg == "hide") {
@@ -421,7 +421,7 @@ function function_50f021a8(inplayer) {
 // Params 0, eflags: 0x0
 // Checksum 0x9ad276d0, Offset: 0x1780
 // Size: 0x2cc
-function function_5d6d3cbf() {
+function propchange() {
     if (!self function_a70825e1()) {
         return;
     }
@@ -432,7 +432,7 @@ function function_5d6d3cbf() {
         }
         self.var_5764318b = gettime();
     }
-    self notify(#"hash_17365159190a4895");
+    self notify(#"changed_prop");
     function_50f021a8(self);
     self.prop.info = prop::getnextprop(self);
     /#
@@ -592,7 +592,7 @@ function function_e8d4d2b() {
 // Params 0, eflags: 0x0
 // Checksum 0xc46dcf80, Offset: 0x21b8
 // Size: 0x6c
-function function_d44d9101() {
+function propability() {
     if (!level flag::get("props_hide_over")) {
         return;
     }
@@ -608,7 +608,7 @@ function function_d44d9101() {
 // Size: 0x44
 function function_88cea693() {
     if (function_39049635()) {
-        self thread function_1e2bc584();
+        self thread cloneprop();
         self thread function_41da91d7();
     }
 }
@@ -1035,8 +1035,8 @@ function canlock() {
         }
         var_734faed8 = point[2] - org1[2];
         if (var_734faed8 > 50) {
-            var_c272af81 = getnearestpathpoint(org1, 50);
-            if (!isdefined(var_c272af81)) {
+            point2 = getnearestpathpoint(org1, 50);
+            if (!isdefined(point2)) {
                 /#
                     function_6de7bc19(0, "<unknown string>", self, org1, "<unknown string>", point, "<unknown string>");
                 #/
@@ -1082,7 +1082,7 @@ function function_be19060b() {
     self.thirdpersonrange = self.prop.info.proprange;
     while (1) {
         waitresult = undefined;
-        waitresult = self waittill(#"hash_27b4bbb9ac557a1d", #"hash_5c51a97fdcdbf586");
+        waitresult = self waittill(#"zoomin", #"zoomout");
         zoom = waitresult._notify;
         if (!isdefined(zoom)) {
             continue;
@@ -1184,7 +1184,7 @@ function function_bc073c8d(var_c8c9bf0f = self, position = self.origin) {
     fwd = vectornormalize((fwd[0], fwd[1], 0));
     var_ec24ae95 = fwd * 60;
     spawn_pos = position + vectorscale((0, 0, 1), 10) + fwd * 30;
-    var_f6beab23 = var_c8c9bf0f magicmissile(getweapon(#"hash_25d3ed64dda487d"), spawn_pos, var_ec24ae95);
+    concuss = var_c8c9bf0f magicmissile(getweapon(#"hash_25d3ed64dda487d"), spawn_pos, var_ec24ae95);
 }
 
 // Namespace prop_controls/_prop_controls
@@ -1224,7 +1224,7 @@ function function_fdb58854() {
     /#
         assert(isdefined(var_ccb1dd7));
     #/
-    var_ccb1dd7 notify(#"hash_5913274f83579b1e");
+    var_ccb1dd7 notify(#"maxdelete");
     var_ccb1dd7 delete();
     self.propclones = clones;
 }
@@ -1233,7 +1233,7 @@ function function_fdb58854() {
 // Params 0, eflags: 0x0
 // Checksum 0xed66effe, Offset: 0x4338
 // Size: 0x23e
-function function_1e2bc584() {
+function cloneprop() {
     if (!isdefined(self.propclones)) {
         self.propclones = [];
     } else {

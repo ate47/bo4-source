@@ -5,7 +5,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x11f08041, Offset: 0x68
 // Size: 0x3e
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     level._zombie_gamemodeprecache = &onprecachegametype;
     level._zombie_gamemodemain = &onstartgametype;
 }

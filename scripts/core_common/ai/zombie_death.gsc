@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/fx_shared.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 
 #namespace zombie_death;
 
@@ -10,8 +10,8 @@
 // Size: 0x76
 function on_fire_timeout() {
     self endon(#"death");
-    if (isdefined(self.var_9df8cb9b)) {
-        wait(self.var_9df8cb9b);
+    if (isdefined(self.flame_fx_timeout)) {
+        wait(self.flame_fx_timeout);
     } else {
         wait(8);
     }

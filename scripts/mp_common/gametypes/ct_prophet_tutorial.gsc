@@ -383,12 +383,12 @@ function function_7c64c8be(s_start_loc) {
     self endon(#"death");
     self.bot.var_b2b8f0b6 = 500;
     self.bot.var_e8c941d6 = 1000;
-    self val::set(#"hash_7fe43756c9d1ef21", "ignoreall", 1);
+    self val::set(#"enemy_bot", "ignoreall", 1);
     self ct_utils::function_9fe3c3f4();
     self ct_utils::give_weapon(#"ar_accurate_t8", 1);
     self thread ct_utils::function_96dda082();
-    if (isdefined(s_start_loc.script_noteworthy) && s_start_loc.script_noteworthy == #"hash_71586a6ae7b9af52") {
-        level.var_bc8c7099 = struct::get(#"hash_71586a6ae7b9af52", "script_noteworthy");
+    if (isdefined(s_start_loc.script_noteworthy) && s_start_loc.script_noteworthy == #"seeker_target") {
+        level.var_bc8c7099 = struct::get(#"seeker_target", "script_noteworthy");
         var_d6456ed5 = 0;
     } else {
         var_d6456ed5 = 1;
@@ -403,7 +403,7 @@ function function_7c64c8be(s_start_loc) {
     self notify(#"hash_624290b3f2248336");
     var_adf33a9e delete();
     wait(randomfloatrange(0.1, 0.75));
-    self val::reset(#"hash_7fe43756c9d1ef21", "ignoreall");
+    self val::reset(#"enemy_bot", "ignoreall");
     if (isalive(level.var_d8630ddb)) {
         self ct_bots::function_911f9e8f(level.var_d8630ddb, 0.7);
         n_wait = randomfloatrange(1.5, 3);
@@ -625,7 +625,7 @@ function function_7065027f() {
 // Checksum 0x68155dee, Offset: 0x3f10
 // Size: 0x1a8
 function function_8868dc7c() {
-    level endoncallback(&function_799be48a, #"hash_77fce365a97468c2");
+    level endoncallback(&function_799be48a, #"combattraining_finished");
     level.var_8ca3c62 = 4;
     ct_utils::function_e9ab1003(undefined);
     self ct_vo::function_831e0584(array("vox_tvoi_tutor_prop_enemy_seeker_shoot_0"));
@@ -911,7 +911,7 @@ function function_8bbca25b() {
 // Size: 0x2e0
 function function_c4546e73(s_start_loc) {
     self endoncallback(&function_3b67dc84, #"death");
-    self val::set(#"hash_7fe43756c9d1ef21", "ignoreall", 1);
+    self val::set(#"enemy_bot", "ignoreall", 1);
     self.bot.var_b2b8f0b6 = 500;
     self.bot.var_e8c941d6 = 1000;
     self ct_utils::function_9fe3c3f4();
@@ -931,7 +931,7 @@ function function_c4546e73(s_start_loc) {
     level notify(#"hash_129b5ffae6f3693f");
     var_adf33a9e delete();
     wait(randomfloatrange(0.75, 1.75));
-    self val::reset(#"hash_7fe43756c9d1ef21", "ignoreall");
+    self val::reset(#"enemy_bot", "ignoreall");
     self thread function_b559b2a5();
     s_notify = undefined;
     s_notify = self waittill(#"shock_end");
@@ -1219,7 +1219,7 @@ function function_c448a1e0() {
             level notify(#"hash_3ce5abc259d8b041");
             ct_utils::function_49e0c5bc();
         }
-        self waittill(#"hash_25e3fd571f782d01");
+        self waittill(#"dart_done");
     }
 }
 
@@ -1393,10 +1393,10 @@ function function_1d1403a() {
     self ct_utils::function_61d750d4(s_loc.origin, s_loc.angles);
     self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 64);
     self util::magic_bullet_shield();
-    self val::set(#"hash_7c67fb18eb782ff", "ignoreall", 1);
+    self val::set(#"ai_seeker", "ignoreall", 1);
     level waittill(#"hash_7711f0aa30443b10");
     self util::stop_magic_bullet_shield();
-    self val::reset(#"hash_7c67fb18eb782ff", "ignoreall");
+    self val::reset(#"ai_seeker", "ignoreall");
 }
 
 // Namespace ct_prophet_tutorial/ct_prophet_tutorial
@@ -1412,7 +1412,7 @@ function function_383a4355() {
     }
     self setorigin(s_loc.origin);
     self setplayerangles(s_loc.angles);
-    self val::set(#"hash_1740293f7d810d46", "ignoreall", 1);
+    self val::set(#"enemy_prophet", "ignoreall", 1);
     self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 32, 1, 1, 1);
     level.var_924c5b44 = self;
     level waittill(#"hash_56227775188dc01");
@@ -1433,7 +1433,7 @@ function function_d6e37caf() {
     self setorigin(s_loc.origin);
     self setplayerangles(s_loc.angles);
     self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 64);
-    self val::set(#"hash_6df1261b7fea513a", "ignoreall", 1);
+    self val::set(#"enemy_tempest", "ignoreall", 1);
     level.var_90de2af7 = self;
 }
 
@@ -1451,7 +1451,7 @@ function function_cbc459dc() {
     self setorigin(s_loc.origin);
     self setplayerangles(s_loc.angles);
     self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 64);
-    self val::set(#"hash_6df1261b7fea513a", "ignoreall", 1);
+    self val::set(#"enemy_tempest", "ignoreall", 1);
 }
 
 // Namespace ct_prophet_tutorial/ct_prophet_tutorial
@@ -1485,7 +1485,7 @@ function function_58c62280(b_keyline, var_2f3964e3) {
     self ct_utils::function_61d750d4(s_loc);
     self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 32);
     if (isdefined(var_2f3964e3) && var_2f3964e3) {
-        self val::set(#"hash_7fe43756c9d1ef21", "ignoreall");
+        self val::set(#"enemy_bot", "ignoreall");
     }
     wait(0.2);
     if (isdefined(b_keyline) && b_keyline) {
@@ -1494,7 +1494,7 @@ function function_58c62280(b_keyline, var_2f3964e3) {
     switch (level.var_8ca3c62) {
     case 1:
         level waittill(#"hash_7fb05a5bbcb14d6b");
-        self val::reset(#"hash_7fe43756c9d1ef21", "ignoreall");
+        self val::reset(#"enemy_bot", "ignoreall");
         self thread ct_utils::function_5b59f3b7(self.origin, self.angles, 200);
         break;
     case 2:
@@ -1786,7 +1786,7 @@ function function_f99e791d() {
         self thread ct_utils::function_61c3d59c(var_92efd918);
         self function_cf621509();
         self function_6ccd49e4();
-        self notify(#"hash_25e3fd571f782d01");
+        self notify(#"dart_done");
         wait(1);
         if (!level flag::get("fin2_enemy_chopper_destroyed") && isalive(self)) {
             ct_utils::function_e44c5b8e(#"dart", 0, 1);
@@ -2028,7 +2028,7 @@ function function_324c6d8c() {
             case #"kill_player":
                 e_player dodamage(1000, e_player.origin);
                 break;
-            case #"hash_463202175aa8819d":
+            case #"kill_seeker":
                 if (isalive(level.var_d8630ddb)) {
                     level.var_d8630ddb dodamage(1000, level.var_d8630ddb.origin);
                 }

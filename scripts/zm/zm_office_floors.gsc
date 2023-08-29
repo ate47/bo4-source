@@ -111,7 +111,7 @@ function function_cd2f24b2(zone_name) {
     case #"labs_hallway2":
     case #"labs_zone1":
     case #"labs_zone2":
-    case #"hash_73f49edde06be4e9":
+    case #"labs_zone3":
         return 3;
     case #"cage_upper":
     case #"cage":

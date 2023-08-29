@@ -87,7 +87,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0x65e1471, Offset: 0xcd8
 // Size: 0xc74
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     setclearanceceiling(17);
     level thread lui::add_luimenu("full_screen_movie", &full_screen_movie::register, "full_screen_movie");
     level thread function_d0f18ffe();

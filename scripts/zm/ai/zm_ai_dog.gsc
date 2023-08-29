@@ -6,12 +6,12 @@
 #include scripts/core_common/ai_shared.gsc;
 #include scripts/core_common/ai/archetype_mocomps_utility.gsc;
 #include scripts/core_common/spawner_shared.gsc;
-#include script_59f07c660e6710a5;
-#include script_522aeb6ae906391e;
-#include script_3aa0f32b70d4f7cb;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
 #include scripts/core_common/ai/archetype_utility.gsc;
-#include script_4d85e8de54b02198;
-#include script_caf007e2a98afa2;
+#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
 
 #namespace zm_ai_dog;
 

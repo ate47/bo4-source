@@ -165,7 +165,7 @@ function notetrackmovementrun(note, flagname) {
 // Size: 0x46
 function notetrackalertnesscasual(note, flagname) {
     if (issentient(self)) {
-        self.a.var_c094e865 = "casual";
+        self.a.alertness = "casual";
     }
 }
 
@@ -175,7 +175,7 @@ function notetrackalertnesscasual(note, flagname) {
 // Size: 0x46
 function notetrackalertnessalert(note, flagname) {
     if (issentient(self)) {
-        self.a.var_c094e865 = "alert";
+        self.a.alertness = "alert";
     }
 }
 

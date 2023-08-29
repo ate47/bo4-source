@@ -61,7 +61,7 @@ function function_8921af36() {
 // Params 1, eflags: 0x21 linked
 // Checksum 0xfe68475f, Offset: 0x320
 // Size: 0xc0
-function get_stat(vararg...) {
+function get_stat(...) {
     /#
         assert(vararg.size > 0);
     #/
@@ -85,7 +85,7 @@ function get_stat(vararg...) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0x822f6119, Offset: 0x3e8
 // Size: 0xc0
-function function_6d50f14b(vararg...) {
+function function_6d50f14b(...) {
     /#
         assert(vararg.size > 0);
     #/
@@ -109,7 +109,7 @@ function function_6d50f14b(vararg...) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0xe6beaab2, Offset: 0x4b0
 // Size: 0xc0
-function function_ff8f4f17(vararg...) {
+function function_ff8f4f17(...) {
     /#
         assert(vararg.size > 0);
     #/
@@ -133,7 +133,7 @@ function function_ff8f4f17(vararg...) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0x33a78da4, Offset: 0x578
 // Size: 0x12a
-function set_stat(vararg...) {
+function set_stat(...) {
     /#
         assert(vararg.size > 1);
     #/
@@ -162,7 +162,7 @@ function set_stat(vararg...) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0xa4b264c2, Offset: 0x6b0
 // Size: 0x152
-function inc_stat(vararg...) {
+function inc_stat(...) {
     /#
         assert(vararg.size > 1);
     #/

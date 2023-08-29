@@ -56,20 +56,20 @@ function plane_mortar_bda_dialog() {
     if (isdefined(self.planemortarbda)) {
         if (self.planemortarbda === 1) {
             bdadialog = "kill1";
-            var_598809bb = "killConfirmed1_p";
+            killconfirmed = "killConfirmed1_p";
         } else if (self.planemortarbda === 2) {
             bdadialog = "kill2";
-            var_598809bb = "killConfirmed2_p";
+            killconfirmed = "killConfirmed2_p";
         } else if (self.planemortarbda === 3) {
             bdadialog = "kill3";
-            var_598809bb = "killConfirmed3_p";
+            killconfirmed = "killConfirmed3_p";
         } else if (isdefined(self.planemortarbda) && self.planemortarbda > 3) {
             bdadialog = "killMultiple";
-            var_598809bb = "killConfirmedMult_p";
+            killconfirmed = "killConfirmedMult_p";
         }
         self killstreaks::play_pilot_dialog(bdadialog, "planemortar", undefined, self.planemortarpilotindex);
         if (battlechatter::dialog_chance("taacomPilotKillConfirmChance")) {
-            self killstreaks::play_taacom_dialog_response(var_598809bb, "planemortar", undefined, self.planemortarpilotindex);
+            self killstreaks::play_taacom_dialog_response(killconfirmed, "planemortar", undefined, self.planemortarpilotindex);
         } else {
             self killstreaks::play_taacom_dialog_response("hitConfirmed_p", "planemortar", undefined, self.planemortarpilotindex);
         }
@@ -86,12 +86,12 @@ function plane_mortar_bda_dialog() {
 // Size: 0x154
 function planeawardscoreevent(attacker, plane) {
     attacker endon(#"disconnect");
-    attacker notify(#"hash_4849aa5e68e53646");
-    attacker endon(#"hash_4849aa5e68e53646");
+    attacker notify(#"planeawardscoreevent_singleton");
+    attacker endon(#"planeawardscoreevent_singleton");
     waittillframeend();
     if (isdefined(attacker) && (!isdefined(plane.owner) || plane.owner util::isenemyplayer(attacker))) {
         challenges::destroyedaircraft(attacker, getweapon(#"emp"), 0, 1);
-        scoreevents::processscoreevent(#"hash_742f669c588b26db", attacker, plane.owner, getweapon(#"emp"));
+        scoreevents::processscoreevent(#"destroyed_plane_mortar", attacker, plane.owner, getweapon(#"emp"));
         attacker challenges::addflyswatterstat(getweapon(#"emp"), plane);
     }
 }

@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x87b1d9cf, Offset: 0xd0
 // Size: 0xbc
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     var_c1ffc425 = getdynentarray("blastdoor_button");
     foreach (var_58300a67 in var_c1ffc425) {
         var_58300a67.onuse = &function_ed401dbd;

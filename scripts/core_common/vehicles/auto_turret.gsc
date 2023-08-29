@@ -74,8 +74,8 @@ function function_b07539aa() {
     if (isdefined(self.settings.keylinerender) && self.settings.keylinerender) {
         self clientfield::set("turret_keyline_render", 1);
     }
-    if (isdefined(level.var_b4158f86)) {
-        [[ level.var_b4158f86 ]](self);
+    if (isdefined(level.vehicle_initializer_cb)) {
+        [[ level.vehicle_initializer_cb ]](self);
     }
     if (isdefined(self.settings.var_d3cc01c7) && self.settings.var_d3cc01c7 && !(isdefined(self.has_bad_place) && self.has_bad_place)) {
         if (!isdefined(level.var_c70c6768)) {

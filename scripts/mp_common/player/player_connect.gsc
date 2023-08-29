@@ -107,7 +107,7 @@ function callback_playerconnect() {
         self.pers[#"deathtime"] = 0;
     }
     self.deathtime = self.pers[#"deathtime"];
-    self.var_e54b3c14 = 0;
+    self.class_num = 0;
     self.alivetimes = [];
     for (index = 0; index < level.alivetimemaxcount; index++) {
         self.alivetimes[index] = 0;

@@ -54,7 +54,7 @@ function function_c5343206(eattacker, einflictor, idamage, smeansofdeath, weapon
         var_d72bd991.meansofdeath = smeansofdeath;
         var_d72bd991.idflags = self.idflags;
         var_d72bd991.isads = eattacker playerads();
-        var_d72bd991.var_e54b3c14 = eattacker.var_e54b3c14;
+        var_d72bd991.class_num = eattacker.class_num;
         var_d72bd991.var_121392a1 = isdefined(eattacker.var_121392a1) ? arraycopy(eattacker.var_121392a1) : undefined;
         var_d72bd991.ismantling = eattacker ismantling();
         var_d72bd991.isjumping = !eattacker isonground() && !eattacker isonladder() && !eattacker isplayerswimming();

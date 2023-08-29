@@ -412,7 +412,7 @@ function function_c0fa0ecb(weapon) {
     case #"sniper_fastrechamber_t8":
     case #"tr_powersemi_t8":
     case #"smg_handling_t8":
-        self stats::function_eec52333(weapon, #"hash_4e43a25a3e77ab5f", 1, self.var_e54b3c14);
+        self stats::function_eec52333(weapon, #"hash_4e43a25a3e77ab5f", 1, self.class_num);
         break;
     default:
         break;

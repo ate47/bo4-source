@@ -2,11 +2,11 @@
 #include scripts/core_common/ai/archetype_aivsaimelee.gsc;
 #include scripts/core_common/array_shared.gsc;
 #include scripts/core_common/ai/archetype_mocomps_utility.gsc;
-#include script_4c5c4a64a59247a2;
-#include script_35598499769dbb3d;
-#include script_3aa0f32b70d4f7cb;
-#include script_178024232e91b0a1;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/shared.gsc;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/ai_shared.gsc;
 
 #namespace aiutility;

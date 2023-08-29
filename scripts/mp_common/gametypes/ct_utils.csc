@@ -46,12 +46,12 @@ function __init__() {
     level.ct_shared_ingame_objective = ct_shared_ingame_objective::register("ct_shared_ingame_objective");
     level.ct_shared_warning = ct_shared_warning::register("ct_shared_warning");
     level.ct_shared_objcounter = ct_shared_objcounter::register("ct_shared_objcounter");
-    level._effect[#"hash_62dd73d4603d4fb8"] = [];
-    level._effect[#"hash_62dd73d4603d4fb8"][0] = #"hash_1f447aeb1973f7b6";
-    level._effect[#"hash_62dd73d4603d4fb8"][1] = #"hash_5c2ae9f4f331d4b9";
-    level._effect[#"hash_62dd73d4603d4fb8"][2] = #"hash_7d1b0f001ea88b82";
-    level._effect[#"hash_62dd73d4603d4fb8"][3] = #"hash_7981eb245ea536fc";
-    level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][0];
+    level._effect[#"zoneedgemarker"] = [];
+    level._effect[#"zoneedgemarker"][0] = #"hash_1f447aeb1973f7b6";
+    level._effect[#"zoneedgemarker"][1] = #"hash_5c2ae9f4f331d4b9";
+    level._effect[#"zoneedgemarker"][2] = #"hash_7d1b0f001ea88b82";
+    level._effect[#"zoneedgemarker"][3] = #"hash_7981eb245ea536fc";
+    level.var_57b466e9 = level._effect[#"zoneedgemarker"][0];
     level.var_84c5e66d = "area_";
     level.a_ct_timer_mod_ticks = [];
     for (i = 0; i < 3; i++) {
@@ -98,40 +98,40 @@ function screen_blur(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 function area_arrows_specialist(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     switch (newval) {
     case 1:
-        level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][1];
+        level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "nomad_area_4";
         level.var_8c3d6a40 = 1;
         break;
     case 2:
-        level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][1];
+        level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "crash_area_";
         break;
     case 3:
-        level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][2];
+        level.var_57b466e9 = level._effect[#"zoneedgemarker"][2];
         level.var_84c5e66d = "seraph_area_";
         break;
     case 4:
-        level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][1];
+        level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "firebreak_tut_finale_arrow";
         level.var_8c3d6a40 = 1;
         break;
     case 5:
-        level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][2];
+        level.var_57b466e9 = level._effect[#"zoneedgemarker"][2];
         level.var_84c5e66d = "ajax_enemy_arrows";
         level.var_8c3d6a40 = 1;
         break;
     case 6:
-        level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][1];
+        level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "torque_tut_finale_arrow";
         level.var_8c3d6a40 = 1;
         break;
     case 7:
-        level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][1];
+        level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "hardpoint_chevrons";
         level.var_8c3d6a40 = 1;
         break;
     default:
-        level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][0];
+        level.var_57b466e9 = level._effect[#"zoneedgemarker"][0];
         level.var_84c5e66d = "area_";
         break;
     }
@@ -148,13 +148,13 @@ function area_arrows(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
         if (!(isdefined(level.var_8c3d6a40) && level.var_8c3d6a40)) {
             var_b29c151c = var_b29c151c + newval;
         } else if (newval == 4) {
-            level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][3];
+            level.var_57b466e9 = level._effect[#"zoneedgemarker"][3];
         } else if (newval == 3) {
-            level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][2];
+            level.var_57b466e9 = level._effect[#"zoneedgemarker"][2];
         } else if (newval == 2) {
-            level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][1];
+            level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         } else {
-            level.var_57b466e9 = level._effect[#"hash_62dd73d4603d4fb8"][0];
+            level.var_57b466e9 = level._effect[#"zoneedgemarker"][0];
         }
         level.var_6158c164 = [];
         level.var_c39096f2 = struct::get_array(var_b29c151c, "targetname");

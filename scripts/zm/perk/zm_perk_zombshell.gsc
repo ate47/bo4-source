@@ -4,7 +4,7 @@
 #include scripts/zm_common/zm_utility.gsc;
 #include scripts/zm_common/zm_perks.gsc;
 #include scripts/zm_common/callbacks.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/values_shared.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/system_shared.gsc;

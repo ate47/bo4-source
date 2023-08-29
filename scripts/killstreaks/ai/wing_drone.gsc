@@ -261,7 +261,7 @@ function function_789652f2(origin, owner, innerradius, outerradius, halfheight, 
 function function_ede09a4e(leader) {
     protectdest = undefined;
     var_8c46694c = anglestoforward(leader.angles) * -1 * 125;
-    if (self.var_3af78c8 == "right") {
+    if (self.formation == "right") {
         var_7a1bb341 = anglestoright(leader.angles) * 125;
     } else {
         var_7a1bb341 = anglestoright(leader.angles) * -1 * 125;
@@ -299,7 +299,7 @@ function function_b0c75ada(leader) {
     }
     protectdest = undefined;
     var_8c46694c = anglestoforward(leader.angles) * -1 * 125;
-    if (self.var_3af78c8 == "right") {
+    if (self.formation == "right") {
         var_7a1bb341 = anglestoright(leader.angles) * 125;
     } else {
         var_7a1bb341 = anglestoright(leader.angles) * -1 * 125;

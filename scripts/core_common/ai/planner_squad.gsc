@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/bots/bot.gsc;
 #include scripts/core_common/ai/strategic_command.gsc;
-#include script_30e0aa25775a6927;
-#include script_31e56101095f174b;
+#include scripts/core_common/ai/systems/planner_blackboard.gsc;
+#include scripts/core_common/ai/systems/planner.gsc;
 
 #namespace plannersquad;
 

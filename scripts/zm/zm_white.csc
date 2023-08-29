@@ -49,7 +49,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0xaddde21a, Offset: 0x698
 // Size: 0x78c
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     full_screen_movie::register("full_screen_movie");
     clientfield::register("clientuimodel", "player_lives", 1, 2, "int", undefined, 0, 0);
     level._effect[#"headshot"] = "_t6/impacts/fx_flesh_hit";

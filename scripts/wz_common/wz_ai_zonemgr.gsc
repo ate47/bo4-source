@@ -1477,7 +1477,7 @@ function function_d9a69cf2(origin, forward) {
 // Params 1, eflags: 0x40
 // Checksum 0x27df4731, Offset: 0x67e8
 // Size: 0x364
-function event<event_9673dc9a> function_3981d015(eventstruct) {
+function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (isdefined(eventstruct.ent.target) && eventstruct.ent.target != "") {
         traversal_start_node = getnode(eventstruct.ent.target, "targetname");
         if (isdefined(traversal_start_node)) {

@@ -359,7 +359,7 @@ function register(name, percentage, cooldown_time_entity, cooldown_time_attacker
     #/
     level.aat[name] = spawnstruct();
     level.aat[name].name = name;
-    level.aat[name].var_33c87f51 = function_129f6487(name);
+    level.aat[name].hash_id = function_129f6487(name);
     level.aat[name].percentage = percentage;
     level.aat[name].cooldown_time_entity = cooldown_time_entity;
     level.aat[name].cooldown_time_attacker = cooldown_time_attacker;

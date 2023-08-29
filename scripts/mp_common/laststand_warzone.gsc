@@ -79,7 +79,7 @@ function __init__() {
 // Checksum 0x2d177566, Offset: 0x898
 // Size: 0x50
 function function_feb3e91d() {
-    return isdefined(getgametypesetting(#"hash_5c7133ffaac1ffc8")) ? getgametypesetting(#"hash_5c7133ffaac1ffc8") : 0;
+    return isdefined(getgametypesetting(#"laststandfinishing")) ? getgametypesetting(#"laststandfinishing") : 0;
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -211,7 +211,7 @@ function function_23089de2() {
 // Params 1, eflags: 0x40
 // Checksum 0x53402256, Offset: 0x10a8
 // Size: 0xca
-function event<exit_vehicle> codecallback_vehicleexit(eventstruct) {
+function event_handler[exit_vehicle] codecallback_vehicleexit(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

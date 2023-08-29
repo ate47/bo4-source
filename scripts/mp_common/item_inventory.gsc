@@ -222,7 +222,7 @@ function private function_e72d56f9(weapon, usecount) {
 // Params 1, eflags: 0x44
 // Checksum 0x315a8fc0, Offset: 0xf20
 // Size: 0x82
-function event<event_1294e3a7> private function_9e4c68e2(eventstruct) {
+function event_handler[event_1294e3a7] private function_9e4c68e2(eventstruct) {
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self) && self function_76646dad(eventstruct.weapon)) {
         self.var_cd3bc45b = eventstruct.weapon;
     }
@@ -232,7 +232,7 @@ function event<event_1294e3a7> private function_9e4c68e2(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xfac1ef84, Offset: 0xfb0
 // Size: 0x82
-function event<event_eb7e11e4> function_2f677e9d(eventstruct) {
+function event_handler[event_eb7e11e4] function_2f677e9d(eventstruct) {
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self) && self function_76646dad(eventstruct.weapon)) {
         self.var_d0015cb3 = eventstruct.weapon;
     }
@@ -242,7 +242,7 @@ function event<event_eb7e11e4> function_2f677e9d(eventstruct) {
 // Params 1, eflags: 0x44
 // Checksum 0x33e1c57d, Offset: 0x1040
 // Size: 0x7bc
-function event<grenade_fire> private function_4776caf4(eventstruct) {
+function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self) && self function_76646dad(eventstruct.weapon)) {
         self.var_8181d952 = eventstruct.weapon;
         var_994e5c9a = 0;
@@ -336,7 +336,7 @@ function event<grenade_fire> private function_4776caf4(eventstruct) {
 // Params 1, eflags: 0x44
 // Checksum 0x52b806db, Offset: 0x1808
 // Size: 0xaa
-function event<weapon_switch_started> private function_f5883bb1(eventstruct) {
+function event_handler[weapon_switch_started] private function_f5883bb1(eventstruct) {
     self.next_weapon = undefined;
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self)) {
         if (eventstruct.weapon.isprimary && eventstruct.weapon != eventstruct.last_weapon) {
@@ -349,7 +349,7 @@ function event<weapon_switch_started> private function_f5883bb1(eventstruct) {
 // Params 1, eflags: 0x44
 // Checksum 0xbd907045, Offset: 0x18c0
 // Size: 0x20a
-function event<weapon_change> private function_a8c42ee4(eventstruct) {
+function event_handler[weapon_change] private function_a8c42ee4(eventstruct) {
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self)) {
         if (isdefined(self.var_8181d952)) {
             weapon = self.var_8181d952;
@@ -378,7 +378,7 @@ function event<weapon_change> private function_a8c42ee4(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xdce02222, Offset: 0x1ad8
 // Size: 0xb2
-function event<gadget_primed> gadget_primed_callback(eventstruct) {
+function event_handler[gadget_primed] gadget_primed_callback(eventstruct) {
     player = eventstruct.entity;
     if (sessionmodeiswarzonegame() && isplayer(player) && isalive(player) && player function_76646dad(eventstruct.weapon)) {
         function_d62822d5();
@@ -390,7 +390,7 @@ function event<gadget_primed> gadget_primed_callback(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xc4e89291, Offset: 0x1b98
 // Size: 0x188
-function event<gadget_on> gadget_on_callback(eventstruct) {
+function event_handler[gadget_on] gadget_on_callback(eventstruct) {
     player = eventstruct.entity;
     if (sessionmodeiswarzonegame() && isplayer(player) && isalive(player) && player function_76646dad(eventstruct.weapon)) {
         equipments = array(#"eq_grapple", #"dart", #"eq_hawk");
@@ -407,7 +407,7 @@ function event<gadget_on> gadget_on_callback(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x668ec505, Offset: 0x1d28
 // Size: 0x9e
-function event<event_dfabd488> function_40d8d1ec(eventstruct) {
+function event_handler[event_dfabd488] function_40d8d1ec(eventstruct) {
     player = eventstruct.entity;
     if (sessionmodeiswarzonegame() && isplayer(player) && isalive(player) && player function_76646dad(eventstruct.weapon)) {
         player.var_14c391cc = eventstruct.weapon;
@@ -418,7 +418,7 @@ function event<event_dfabd488> function_40d8d1ec(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x6fa26a9e, Offset: 0x1dd0
 // Size: 0x9c
-function event<change_seat> function_2aa4e6cf(eventstruct) {
+function event_handler[change_seat] function_2aa4e6cf(eventstruct) {
     player = self;
     if (sessionmodeiswarzonegame() && isplayer(player) && isalive(player)) {
         if (eventstruct.seat_index == 0 && player function_2cceca7b()) {
@@ -836,8 +836,8 @@ function private function_6c36ab6b() {
             }
         }
     }
-    if (isdefined(self.var_e54b3c14)) {
-        self.specialty = self getloadoutperks(self.var_e54b3c14);
+    if (isdefined(self.class_num)) {
+        self.specialty = self getloadoutperks(self.class_num);
     } else {
         self.specialty = [];
     }

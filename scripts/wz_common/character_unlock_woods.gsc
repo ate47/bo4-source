@@ -69,7 +69,7 @@ function function_6cba9a1a() {
 // Params 1, eflags: 0x40
 // Checksum 0x30be582c, Offset: 0x3a0
 // Size: 0xd4
-function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
+function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
     if (!(isdefined(level.var_e1b226fb) && level.var_e1b226fb)) {
         return;
     }
@@ -87,7 +87,7 @@ function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x231fea23, Offset: 0x480
 // Size: 0xd4
-function event<change_seat> function_2aa4e6cf(eventstruct) {
+function event_handler[change_seat] function_2aa4e6cf(eventstruct) {
     if (!(isdefined(level.var_e1b226fb) && level.var_e1b226fb)) {
         return;
     }

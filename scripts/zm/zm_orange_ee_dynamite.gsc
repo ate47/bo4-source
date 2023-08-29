@@ -13,7 +13,7 @@
 #include scripts/zm_common/zm_unitrigger.gsc;
 #include scripts/zm_common/zm_sq.gsc;
 #include scripts/zm_common/zm_item_pickup.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/animation_shared.gsc;
 #include scripts/core_common/math_shared.gsc;

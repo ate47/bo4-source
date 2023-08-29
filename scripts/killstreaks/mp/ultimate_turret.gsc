@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 // Size: 0x4c
 function __init__() {
     level.var_729a0937 = &function_4b645b3f;
-    level.var_bbc796bf = &function_f63adb32;
+    level.var_bbc796bf = &turret_destroyed;
     init_shared();
 }
 
@@ -37,7 +37,7 @@ function function_4b645b3f(killstreaktype) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x5d80bd50, Offset: 0x190
 // Size: 0x6e
-function function_f63adb32(attacker, weapon) {
+function turret_destroyed(attacker, weapon) {
     profilestart();
     if (isdefined(attacker)) {
         attacker battlechatter::function_dd6a6012("ultimate_turret", weapon);

@@ -27,7 +27,7 @@ function __init__() {
 // Params 5, eflags: 0x21 linked
 // Checksum 0xb3b6fe17, Offset: 0x138
 // Size: 0x20e
-function register_character_unlock(unlock_name, unlock_stat, item, var_f27097cc, vararg...) {
+function register_character_unlock(unlock_name, unlock_stat, item, var_f27097cc, ...) {
     /#
         assert(vararg.size > 0, "<unknown string>");
     #/

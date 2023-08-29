@@ -4,7 +4,7 @@
 #include scripts/zm/weapons/zm_weap_riotshield.csc;
 #include scripts/zm/zm_mansion_traps_firegates.csc;
 #include scripts/zm/zm_trap_electric.csc;
-#include script_14d2d89964cae0b1;
+#include scripts/core_common/ai/systems/gib.csc;
 #include scripts/zm/ai/zm_ai_bat.csc;
 #include script_5fb8da2731850d9e;
 #include scripts/zm/zm_mansion_storage.csc;
@@ -18,7 +18,7 @@
 #include script_2d9c4a173633aa72;
 #include scripts/zm/zm_mansion_jordans.csc;
 #include scripts/zm/zm_mansion_boss_ww.csc;
-#include script_6c494cd6189bb8dc;
+#include scripts/zm/zm_mansion_a_skeet_fink.csc;
 #include scripts/zm_common/zm_characters.csc;
 #include scripts/zm_common/zm_utility.csc;
 #include scripts/zm_common/zm_weapons.csc;
@@ -48,7 +48,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0xf975e723, Offset: 0x378
 // Size: 0xf24
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("clientuimodel", "player_lives", 8000, 2, "int", undefined, 0, 0);
     clientfield::register("clientuimodel", "zmhud.ammoModifierActive", 8000, 1, "int", undefined, 0, 0);
     clientfield::register("world", "" + #"hash_42e03f9ae74a1070", 8000, 1, "int", &function_64968a3c, 0, 0);
@@ -119,7 +119,7 @@ function event<level_init> main(eventstruct) {
     mansion_pap::init_clientfields();
     mansion_ww_lvl3_quest::init();
     mansion_silver_bullet::init();
-    namespace_59d4913f::init();
+    mansion_a_skeet_fink::init();
     mansion_jordans::init();
     zm_audio_sq::init();
     ai::add_archetype_spawn_function(#"zombie_dog", &zombie_dog_spawned);

@@ -40,7 +40,7 @@
 #include scripts/zm_common/gametypes/globallogic_player.gsc;
 #include scripts/zm_common/gametypes/globallogic_spawn.gsc;
 #include scripts/zm_common/gametypes/zm_gametype.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/zm_common/bb.gsc;
 #include scripts/zm_common/gametypes/globallogic.gsc;
 #include scripts/core_common/killcam_shared.gsc;

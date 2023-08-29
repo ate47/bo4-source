@@ -2,7 +2,7 @@
 #include scripts/zm_common/zm_devgui.gsc;
 #include scripts/zm_common/zm_behavior.gsc;
 #include scripts/core_common/status_effects/status_effect_util.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/system_shared.gsc;
 #include scripts/core_common/spawner_shared.gsc;

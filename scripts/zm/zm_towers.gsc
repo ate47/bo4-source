@@ -80,7 +80,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0x5a5e94ed, Offset: 0xfb8
 // Size: 0x1c06
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     setclearanceceiling(24);
     zm::init_fx();
     clientfield::register("clientuimodel", "player_lives", 1, 2, "int");

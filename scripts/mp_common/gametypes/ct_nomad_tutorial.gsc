@@ -16,7 +16,7 @@
 #include scripts/core_common/exploder_shared.gsc;
 #include scripts/core_common/clientfield_shared.gsc;
 #include scripts/core_common/callbacks_shared.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 
 #namespace ct_nomad_tutorial;
 
@@ -188,12 +188,12 @@ function function_72ba0df6(einflictor, attacker, idamage, smeansofdeath, weapon,
             }
         }
     } else {
-        level notify(#"hash_55f77db51abaf5f3");
+        level notify(#"bot_kill");
         level.var_a86320e8 = gettime() / 1000;
         self.isinuse = 0;
         if (isdefined(weapon) && weapon == getweapon(#"eq_tripwire")) {
             level flag::set("tripwire_kill");
-            level notify(#"hash_205740d9a7c3b4b8");
+            level notify(#"tripwire_kill");
         }
         if (isdefined(level.var_ad7c0539)) {
             switch (level.var_ad7c0539) {
@@ -327,7 +327,7 @@ function function_45d34164(var_2970d97, var_9c8d914, var_af764233, var_f1111d99,
             level thread ct_vo::function_14b08e49(array(#"hash_4c2430811fce4c2"), "stop_nag");
             function_4f54cf00(s_loc, i);
             level notify(#"stop_nag");
-            level notify(#"hash_265967974cb19cdd");
+            level notify(#"tripwire_placed");
             if (i == 0) {
                 level.var_632734b1 = 3;
             } else {
@@ -344,7 +344,7 @@ function function_45d34164(var_2970d97, var_9c8d914, var_af764233, var_f1111d99,
             }
         }
         level.var_632734b1 = 2;
-        level notify(#"hash_835dfb44a8f2df9");
+        level notify(#"vo_callout");
         level notify(#"hash_622db456eabd4e20");
         if (isdefined(level.var_3ef5b3ad)) {
             wait(level.var_3ef5b3ad);
@@ -357,7 +357,7 @@ function function_45d34164(var_2970d97, var_9c8d914, var_af764233, var_f1111d99,
             level thread function_e19de01();
             level flag::wait_till_any(array("tripwire_kill", "objective_failed"));
             if (level flag::get("tripwire_kill")) {
-                level notify(#"hash_835dfb44a8f2df9");
+                level notify(#"vo_callout");
                 function_a710c695();
                 level flag::clear("tripwire_kill");
                 e_player setlowready(0);
@@ -584,7 +584,7 @@ function function_afa281f4() {
     level notify(#"stop_nag");
     ct_utils::function_e9ab1003("s_nomad_tripwire_obj3_goto");
     level notify(#"hash_3a93dae9fd6a221d");
-    level notify(#"hash_835dfb44a8f2df9");
+    level notify(#"vo_callout");
     level.var_4255e463 = 0;
     level.var_e882762e = 1;
     function_45d34164(array(#"hash_222b4b892fd765a2"), 40, #"hash_72958f658edea7f4", 2, undefined, 0);
@@ -661,9 +661,9 @@ function function_244e4db8() {
 // Size: 0xc4
 function function_ba6c3061() {
     level endon(#"combattraining_logic_finished");
-    level waittill(#"hash_55f77db51abaf5f3");
+    level waittill(#"bot_kill");
     level thread ct_vo::function_831e0584(array(#"hash_291be681fe8fa375"));
-    level waittill(#"hash_55f77db51abaf5f3");
+    level waittill(#"bot_kill");
     wait(0.5);
     ct_vo::function_3ca1b77d();
     ct_vo::function_831e0584(array(#"hash_291be581fe8fa1c2"));
@@ -807,7 +807,7 @@ function function_34696b67() {
         }
         waypoint ct_utils::function_f9ed304d();
         if (b_timeout) {
-            level notify(#"hash_7bd29fa0bf08552");
+            level notify(#"bomb_cleanup");
             ct_utils::function_c561377e();
             level thread ct_vo::function_831e0584(array(#"hash_26c398139ec1094b"), 1);
             e_bomb.gameobject gameobjects::disable_object();
@@ -820,7 +820,7 @@ function function_34696b67() {
         }
     }
     ct_utils::function_9aca2fa0("ct_action");
-    level notify(#"hash_7bd29fa0bf08552");
+    level notify(#"bomb_cleanup");
     level notify(#"hash_7cc96ce0987abca");
     e_bomb.gameobject gameobjects::function_2efe0342();
     setbombtimer("A", 0);
@@ -998,8 +998,8 @@ function function_eadc9c91() {
                     e_player thread ct_utils::function_8f04870f(undefined);
                     wait(0.1);
                     if (isdefined(e_player.var_85988a58)) {
-                        foreach (var_a173320f in e_player.var_85988a58) {
-                            var_a173320f dodamage(var_a173320f.health + 100, var_a173320f.origin);
+                        foreach (e_turret in e_player.var_85988a58) {
+                            e_turret dodamage(e_turret.health + 100, e_turret.origin);
                         }
                     }
                     ct_utils::function_e44c5b8e(#"ultimate_turret", 0, 1);
@@ -1135,7 +1135,7 @@ function function_4f54cf00(s_loc, var_ebb5bb71) {
     e_mine setscale(1.5);
     v_loc = (s_loc.origin[0], s_loc.origin[1], s_loc.origin[2] + 10);
     waypoint = ct_utils::create_waypoint(#"hash_43f27b76957da4d2", v_loc, s_loc.angles, #"any", undefined, undefined, undefined);
-    level notify(#"hash_835dfb44a8f2df9");
+    level notify(#"vo_callout");
     level.var_e72728b8 = array(#"ability_dog");
     function_432f35f8(s_loc);
     level.var_e72728b8 = array(#"ability_dog", #"eq_tripwire");
@@ -1208,7 +1208,7 @@ function function_e19de01() {
 // Size: 0x27c
 function function_3b95089d(var_df7e07e5, var_7c876c46, var_2e663c1b) {
     self endon(#"death");
-    self val::set(#"hash_4a0d94c78ad2f501", "ignoreall", 1);
+    self val::set(#"bot_tripwire", "ignoreall", 1);
     self thread function_b7ff9e87();
     self thread function_dfc80de0();
     str_name = "s_nomad_easy_enemy_" + level.var_ad7c0539;
@@ -1256,7 +1256,7 @@ function function_dfc80de0() {
         if (n_dist <= 2) {
             var_66a9afd7++;
             if (var_66a9afd7 >= 8) {
-                level notify(#"hash_205740d9a7c3b4b8");
+                level notify(#"tripwire_kill");
                 level flag::set("tripwire_kill");
                 level function_f9d20586(self.origin, 500);
                 self thread ct_utils::function_3e0767e2(0);
@@ -1371,16 +1371,16 @@ function function_a710c695() {
 // Checksum 0x28fe152b, Offset: 0x7210
 // Size: 0x154
 function function_ccbcdbce() {
-    level waittill(#"hash_835dfb44a8f2df9");
+    level waittill(#"vo_callout");
     var_3608d414 = array("vox_tvoi_tutor_noma_slide_4_0");
     level thread ct_vo::function_831e0584(var_3608d414, 1);
-    level waittill(#"hash_835dfb44a8f2df9");
+    level waittill(#"vo_callout");
     var_3608d414 = array("vox_tvoi_tutor_noma_slide_5_0");
     level thread ct_vo::function_41e59aeb(var_3608d414, 1);
-    level waittill(#"hash_835dfb44a8f2df9");
+    level waittill(#"vo_callout");
     var_3608d414 = array("vox_tvoi_tutor_noma_slide_6_0");
     level thread ct_vo::function_41e59aeb(var_3608d414, 1);
-    level waittill(#"hash_835dfb44a8f2df9");
+    level waittill(#"vo_callout");
     wait(1);
     var_3608d414 = array("vox_tvoi_tutor_noma_slide_7_0");
     ct_vo::function_41e59aeb(var_3608d414, 1);
@@ -1391,7 +1391,7 @@ function function_ccbcdbce() {
 // Checksum 0xacfb2120, Offset: 0x7370
 // Size: 0xb4
 function function_f606c349() {
-    level waittill(#"hash_835dfb44a8f2df9");
+    level waittill(#"vo_callout");
     var_3608d414 = array(#"hash_7c28af2622f285e4");
     ct_vo::function_831e0584(var_3608d414, 1);
     level waittill(#"hash_622db456eabd4e20");
@@ -1408,12 +1408,12 @@ function function_4613d123() {
     level thread ct_vo::function_831e0584(array(#"hash_1a1b9c4d540e83a2", #"hash_1a1b9d4d540e8555"), 1);
     level waittill(#"stop_nag");
     level thread ct_vo::function_41e59aeb(array(#"hash_1a1b9a4d540e803c"), 1);
-    level waittill(#"hash_265967974cb19cdd");
-    level waittill(#"hash_265967974cb19cdd");
+    level waittill(#"tripwire_placed");
+    level waittill(#"tripwire_placed");
     level thread ct_vo::function_41e59aeb(array(#"hash_1a1b9b4d540e81ef"), 1);
-    level waittill(#"hash_205740d9a7c3b4b8");
+    level waittill(#"tripwire_kill");
     ct_vo::function_831e0584(array(#"hash_3af123c4e08bf1f"), 1);
-    level waittill(#"hash_205740d9a7c3b4b8");
+    level waittill(#"tripwire_kill");
 }
 
 // Namespace ct_nomad_tutorial/ct_nomad_tutorial
@@ -1442,7 +1442,7 @@ function function_eb021db8() {
     level endon(#"combattraining_logic_finished");
     while (1) {
         waitresult = undefined;
-        waitresult = level waittill(#"hash_5ffeb02b3dfcec40");
+        waitresult = level waittill(#"dog_spawned");
         level.e_dog = waitresult.dog;
         if (level.var_ad7c0539 < 7) {
             level.e_dog.health = 1000;
@@ -1530,7 +1530,7 @@ function function_e8009771() {
         if (isalive(var_2249999)) {
             var_2249999 thread ct_utils::function_3e0767e2(0);
             level flag::set("tripwire_kill");
-            level notify(#"hash_205740d9a7c3b4b8");
+            level notify(#"tripwire_kill");
         }
         waitframe(1);
     }

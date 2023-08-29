@@ -63,14 +63,14 @@ function on_player_connect() {
 // Checksum 0xd2baf4ba, Offset: 0x298
 // Size: 0x22
 function on_player_spawned() {
-    self.var_e54b3c14 = self function_cc90c352();
+    self.class_num = self function_cc90c352();
 }
 
 // Namespace zm_loadout/weapon_change
 // Params 1, eflags: 0x40
 // Checksum 0xa61f98f7, Offset: 0x2c8
 // Size: 0x5a
-function event<weapon_change> weapon_changed(eventstruct) {
+function event_handler[weapon_change] weapon_changed(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -83,7 +83,7 @@ function event<weapon_change> weapon_changed(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x5881b182, Offset: 0x330
 // Size: 0xd4
-function event<player_loadoutchanged> loadout_changed(eventstruct) {
+function event_handler[player_loadoutchanged] loadout_changed(eventstruct) {
     switch (eventstruct.event) {
     case #"give_weapon":
         self function_54cb37a4(eventstruct.weapon);
@@ -688,13 +688,13 @@ function give_start_weapon(b_switch_weapon) {
 // Checksum 0x54691fc6, Offset: 0x1ed8
 // Size: 0x6a
 function get_loadout_item(slot) {
-    if (!isdefined(self.var_e54b3c14)) {
-        self.var_e54b3c14 = self function_cc90c352();
+    if (!isdefined(self.class_num)) {
+        self.class_num = self function_cc90c352();
     }
-    if (!isdefined(self.var_e54b3c14)) {
-        self.var_e54b3c14 = 0;
+    if (!isdefined(self.class_num)) {
+        self.class_num = 0;
     }
-    return self getloadoutitem(self.var_e54b3c14, slot);
+    return self getloadoutitem(self.class_num, slot);
 }
 
 // Namespace zm_loadout/zm_loadout
@@ -702,13 +702,13 @@ function get_loadout_item(slot) {
 // Checksum 0x722eb26a, Offset: 0x1f50
 // Size: 0x6a
 function function_439b009a(slot) {
-    if (!isdefined(self.var_e54b3c14)) {
-        self.var_e54b3c14 = self function_cc90c352();
+    if (!isdefined(self.class_num)) {
+        self.class_num = self function_cc90c352();
     }
-    if (!isdefined(self.var_e54b3c14)) {
-        self.var_e54b3c14 = 0;
+    if (!isdefined(self.class_num)) {
+        self.class_num = 0;
     }
-    return self getloadoutweapon(self.var_e54b3c14, slot);
+    return self getloadoutweapon(self.class_num, slot);
 }
 
 // Namespace zm_loadout/zm_loadout

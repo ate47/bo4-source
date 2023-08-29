@@ -18,7 +18,7 @@ function autoexec __init() {
 // Params 1, eflags: 0x40
 // Checksum 0xe6ec58b4, Offset: 0x1a8
 // Size: 0x54
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level thread function_c5d0e538();
     level thread function_68b9a530();
     level thread function_af9a5cd8();

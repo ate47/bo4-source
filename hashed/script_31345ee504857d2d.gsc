@@ -2,8 +2,8 @@
 #include scripts/core_common/system_shared.gsc;
 #include scripts/core_common/struct.gsc;
 #include scripts/core_common/scene_shared.gsc;
-#include script_3aa0f32b70d4f7cb;
-#include script_178024232e91b0a1;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
 
 #namespace aiinteractables;
 

@@ -14,7 +14,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x92078107, Offset: 0xb0
 // Size: 0xbc
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     mp_militia_fx::main();
     mp_militia_sound::main();
     load::main();

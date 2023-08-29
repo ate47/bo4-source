@@ -35,8 +35,8 @@ function raps_initialize() {
     smart_bomb::function_c6f75619();
     self useanimtree("generic");
     self initsounds();
-    if (isdefined(level.var_b4158f86)) {
-        [[ level.var_b4158f86 ]](self);
+    if (isdefined(level.vehicle_initializer_cb)) {
+        [[ level.vehicle_initializer_cb ]](self);
     }
     defaultrole();
 }

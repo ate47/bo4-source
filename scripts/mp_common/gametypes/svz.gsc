@@ -33,7 +33,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x4cbfe265, Offset: 0x340
 // Size: 0x566
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     infection::initialize();
     infection::function_153000d0(#"hash_70fe115fad3f4fa", #"hash_3ca96ae1bd7d344f");
@@ -170,13 +170,13 @@ function onspawnplayer(predictedspawn) {
     }
     if (self.team == game.attackers) {
         self.var_ec2d285c = 0;
-        if (!isdefined(self.pers[#"hash_36de4b01e78a01f7"])) {
-            self.pers[#"hash_36de4b01e78a01f7"] = self player_role::get();
+        if (!isdefined(self.pers[#"cachedrole"])) {
+            self.pers[#"cachedrole"] = self player_role::get();
         }
         self thread function_fe170e7();
-    } else if (isdefined(self.pers[#"hash_36de4b01e78a01f7"])) {
-        self player_role::set(self.pers[#"hash_36de4b01e78a01f7"], 1);
-        #"hash_36de4b01e78a01f7" = [];
+    } else if (isdefined(self.pers[#"cachedrole"])) {
+        self player_role::set(self.pers[#"cachedrole"], 1);
+        #"cachedrole" = [];
     }
     spawning::onspawnplayer(predictedspawn);
 }

@@ -27,7 +27,7 @@ function __init__() {
 // Params 1, eflags: 0x40
 // Checksum 0x2facda2c, Offset: 0x198
 // Size: 0x724
-function event<event_9673dc9a> function_3981d015(eventstruct) {
+function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     dynent = eventstruct.ent;
     var_16a4afdc = eventstruct.state;
     bundle = function_489009c1(dynent);
@@ -69,7 +69,7 @@ function event<event_9673dc9a> function_3981d015(eventstruct) {
         if (isdefined(newstate.var_c7ae60e8)) {
             add_helico(dynent, newstate.var_c7ae60e8);
         }
-        if (isdefined(newstate.var_879eb2ff)) {
+        if (isdefined(newstate.stateanim)) {
             starttime = 0;
             rate = isdefined(newstate.animrate) ? newstate.animrate : 0;
             if (isdefined(newstate.var_8725802) && newstate.var_8725802) {
@@ -77,13 +77,13 @@ function event<event_9673dc9a> function_3981d015(eventstruct) {
                 if (isdefined(newstate.var_e23400ad) && newstate.var_e23400ad) {
                     gametime = gametime + abs(dynent.origin[0] + dynent.origin[1] + dynent.origin[2]);
                 }
-                animlength = int(getanimlength(newstate.var_879eb2ff) * 1000);
+                animlength = int(getanimlength(newstate.stateanim) * 1000);
                 starttime = gametime / animlength / rate;
                 starttime = starttime - int(starttime);
-            } else if (teleport && !isanimlooping(0, newstate.var_879eb2ff)) {
+            } else if (teleport && !isanimlooping(0, newstate.stateanim)) {
                 starttime = 1;
             }
-            function_1e23c01f(dynent, newstate.var_879eb2ff, starttime, rate);
+            function_1e23c01f(dynent, newstate.stateanim, starttime, rate);
         } else {
             function_27b5ddff(dynent);
         }

@@ -132,8 +132,8 @@ function defcon_sign_setup() {
 // Size: 0xa0
 function function_cec9d001() {
     var_4006a329 = getentarray("punch_switch", "targetname");
-    foreach (var_9a560db0 in var_4006a329) {
-        var_9a560db0 hide();
+    foreach (t_switch in var_4006a329) {
+        t_switch hide();
     }
 }
 

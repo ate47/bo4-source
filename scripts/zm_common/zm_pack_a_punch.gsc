@@ -626,7 +626,7 @@ function private function_222c0292(current_weapon, packa_rollers, pap_machine, v
     if (pap_machine.var_a86430cb && pap_machine.b_weapon_supports_aat) {
         var_5a20ddd5 = self aat::getaatonweapon(current_weapon);
         if (isdefined(var_5a20ddd5)) {
-            currentaathashid = var_5a20ddd5.var_33c87f51;
+            currentaathashid = var_5a20ddd5.hash_id;
         }
         self.var_655c0753 = 1;
         self.restore_clip = self getweaponammoclip(current_weapon);
@@ -854,7 +854,7 @@ function private wait_for_player_to_take(player, weapon, packa_timer, var_a86430
                     player zm_pap_util::repack_weapon(upgrade_weapon, pap_machine.unitrigger_stub.var_3ae1dddb + var_5023ce90);
                     aatobj = player aat::getaatonweapon(upgrade_weapon);
                     if (isdefined(aatobj)) {
-                        aatid = aatobj.var_33c87f51;
+                        aatid = aatobj.hash_id;
                         player zm_audio::create_and_play_dialog(#"pap", aatobj.name);
                     }
                 } else if (isdefined(pap_machine.unitrigger_stub.var_da1ddb37)) {
@@ -938,7 +938,7 @@ function private wait_for_timeout(weapon, packa_timer, player, var_a86430cb, var
                 aatonweapon = player aat::getaatonweapon(weapon);
                 aathash = -1;
                 if (isdefined(aatonweapon)) {
-                    aathash = aatonweapon.var_33c87f51;
+                    aathash = aatonweapon.hash_id;
                 }
                 player recordmapevent(26, gettime(), player.origin, level.round_number, weaponidx, aathash);
             }

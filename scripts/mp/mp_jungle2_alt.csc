@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xc1bbb172, Offset: 0x118
 // Size: 0x18c
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     setsaveddvar(#"enable_global_wind", 1);
     setsaveddvar(#"wind_global_vector", "88 0 0");
     setsaveddvar(#"wind_global_low_altitude", 0);

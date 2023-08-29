@@ -45,7 +45,7 @@ function __init__() {
     callback::on_start_gametype(&init);
     callback::on_connect(&on_player_connected);
     /#
-        level.var_9863da28 = &getormakebot;
+        level.devongetormakebot = &getormakebot;
     #/
 }
 

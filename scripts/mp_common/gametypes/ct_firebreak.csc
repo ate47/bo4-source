@@ -12,7 +12,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x1af65440, Offset: 0xb8
 // Size: 0x64
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     ct_core::function_fa03fc55();
     level.ct_firebreak_multi_kill = ct_firebreak_multi_kill::register("ct_firebreak_multi_kill");

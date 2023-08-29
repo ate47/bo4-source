@@ -27,19 +27,19 @@ function __init__() {
 // Checksum 0x360d7726, Offset: 0x100
 // Size: 0x1c
 function on_player_spawned() {
-    self thread function_8fc56001();
+    self thread begin_other_grenade_tracking();
 }
 
 // Namespace explosive_bolt/explosive_bolt
 // Params 0, eflags: 0x1 linked
 // Checksum 0x8ffce5a9, Offset: 0x128
 // Size: 0x160
-function function_8fc56001() {
+function begin_other_grenade_tracking() {
     self endon(#"death");
     self endon(#"disconnect");
-    self notify(#"hash_3aa5708c34c0df49");
-    self endon(#"hash_3aa5708c34c0df49");
-    var_a009765b = getweapon(#"explosive_bolt");
+    self notify(#"bolttrackingstart");
+    self endon(#"bolttrackingstart");
+    weapon_bolt = getweapon(#"explosive_bolt");
     for (;;) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
@@ -48,7 +48,7 @@ function function_8fc56001() {
         if (grenade util::ishacked()) {
             continue;
         }
-        if (weapon == var_a009765b) {
+        if (weapon == weapon_bolt) {
             grenade.ownerweaponatlaunch = self.currentweapon;
             grenade.owneradsatlaunch = self playerads() == 1 ? 1 : 0;
             grenade thread weapons::check_stuck_to_player(1, 0, weapon);

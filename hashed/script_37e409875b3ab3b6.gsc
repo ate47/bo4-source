@@ -5,12 +5,12 @@
 #include script_1b4af057274ffcd0;
 #include script_37e409875b3ab3b6;
 #include scripts/core_common/ai/planner_squad_utility.gsc;
-#include script_261ab6f031d07a15;
+#include scripts/core_common/ai/planner_generic_squad.gsc;
 #include scripts/core_common/ai/planner_generic_commander.gsc;
 #include scripts/core_common/ai/planner_commander_utility.gsc;
 #include scripts/core_common/ai/planner_commander.gsc;
-#include script_31e56101095f174b;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/planner.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 
 #namespace namespace_4932f496;
 

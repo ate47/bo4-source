@@ -3,7 +3,7 @@
 #include scripts/wz_common/wz_ee_poster.gsc;
 #include scripts/wz_common/wz_nixie_tubes.gsc;
 #include scripts/wz/wz_escape_elevators.gsc;
-#include script_2c2d166441e0da0f;
+#include scripts/wz/wz_escape_ai_zones.gsc;
 #include scripts/mp_common/load.gsc;
 #include scripts/wz_common/wz_loadouts.gsc;
 #include scripts/wz/wz_escape_ffotd.gsc;
@@ -27,7 +27,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xe2b3ec21, Offset: 0x150
 // Size: 0x2e4
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     callback::on_spawned(&on_player_spawned);
     callback::add_callback(#"hash_3be1213f454fa90e", &function_78d5fb9b);
     /#
@@ -50,7 +50,7 @@ function event<level_init> main(eventstruct) {
     /#
         level thread init_devgui();
     #/
-    level namespace_51010f55::init();
+    level wz_escape_ai_zones::init();
     level.var_18bf5e98 = &function_d075b84e;
     var_80b6eb8c = isdefined(level.waverespawndelay) ? level.waverespawndelay : 30;
     if (var_80b6eb8c == 0) {
@@ -504,7 +504,7 @@ function function_e8f0335f() {
 // Params 1, eflags: 0x44
 // Checksum 0x5d9d86dc, Offset: 0x2a08
 // Size: 0x2b0
-function event<event_9673dc9a> private function_f9b68fd7(eventstruct) {
+function event_handler[event_9673dc9a] private function_f9b68fd7(eventstruct) {
     /#
         if (!getdvarint(#"hash_69592e1b2d05fb21", 0)) {
             return;

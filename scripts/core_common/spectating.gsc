@@ -153,7 +153,7 @@ function set_permissions() {
         return;
     }
     if (isdefined(team) && isdefined(level.teams[team])) {
-        if (isdefined(level.spectateoverride[team].var_1a09ecae)) {
+        if (isdefined(level.spectateoverride[team].allowfreespectate)) {
             self allowspectateteam("freelook", 1);
         }
         if (isdefined(level.spectateoverride[team].allowenemyspectate)) {

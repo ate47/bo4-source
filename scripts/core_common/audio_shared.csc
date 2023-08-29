@@ -304,7 +304,7 @@ function startsoundrandoms(localclientnum) {
     if (isdefined(randoms) && randoms.size > 0) {
         nscriptthreadedrandoms = 0;
         for (i = 0; i < randoms.size; i++) {
-            if (isdefined(randoms[i].var_7ab2f325)) {
+            if (isdefined(randoms[i].script_scripted)) {
                 nscriptthreadedrandoms++;
             }
         }
@@ -687,7 +687,7 @@ function thread_bump_trigger(localclientnum) {
     for (;;) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
-        self thread trigger::function_521edc64(waitresult.activator, &trig_enter_bump, &trig_leave_bump);
+        self thread trigger::function_thread(waitresult.activator, &trig_enter_bump, &trig_leave_bump);
     }
 }
 

@@ -158,7 +158,7 @@ function function_ab7f70b9(e_player) {
     case #"labs_zone2":
         var_601fee0 = #"hash_6e0ee1a58f326969";
         break;
-    case #"hash_73f49edde06be4e9":
+    case #"labs_zone3":
         var_601fee0 = #"hash_6e0ee0a58f3267b6";
         break;
     case #"cage_upper":

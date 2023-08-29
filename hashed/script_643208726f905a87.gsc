@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include script_4bf952f6ba31bb17;
-#include script_3aa0f32b70d4f7cb;
+#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/system_shared.gsc;
 

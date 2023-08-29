@@ -26,7 +26,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x74e36e5d, Offset: 0x218
 // Size: 0x2e4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.select_character = ct_utils::get_roleindex(#"prt_mp_recon");
     level.var_820c5561 = "RECON";

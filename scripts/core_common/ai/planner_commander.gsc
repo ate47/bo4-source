@@ -6,9 +6,9 @@
 #include scripts/core_common/ai/planner_squad.gsc;
 #include scripts/core_common/ai/planner_commander_interface.gsc;
 #include scripts/core_common/ai/commander_util.gsc;
-#include script_31e56101095f174b;
-#include script_522aeb6ae906391e;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/planner.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 
 #namespace planner_commander;
 
@@ -76,7 +76,7 @@ function private _cloneblackboard(commander) {
 // Params 2, eflags: 0x5 linked
 // Checksum 0xd284e559, Offset: 0x4b0
 // Size: 0x1b4
-function private function_b1c3f0bd(commander, blackboard&) {
+function private function_b1c3f0bd(commander, &blackboard) {
     pixbeginevent(#"commanderconstructtargetlist");
     aiprofile_beginentry("commanderConstructTargetList");
     /#
@@ -101,7 +101,7 @@ function private function_b1c3f0bd(commander, blackboard&) {
 // Params 2, eflags: 0x5 linked
 // Checksum 0x4f411cf1, Offset: 0x670
 // Size: 0x774
-function private function_12b9fafb(commander, blackboard&) {
+function private function_12b9fafb(commander, &blackboard) {
     pixbeginevent(#"commanderconstructtargetlist");
     aiprofile_beginentry("commanderConstructTargetList");
     /#
@@ -577,7 +577,7 @@ function private function_f9d38682(commander) {
 // Params 2, eflags: 0x5 linked
 // Checksum 0x7504f7cd, Offset: 0x2d28
 // Size: 0x166
-function private _plan(commander, blackboard&) {
+function private _plan(commander, &blackboard) {
     planstarttime = gettime();
     var_80d439bc = [];
     var_547a067e = 0;
@@ -599,7 +599,7 @@ function private _plan(commander, blackboard&) {
 // Params 2, eflags: 0x4
 // Checksum 0xfbc67ef2, Offset: 0x2e98
 // Size: 0x51c
-function private _reclaimescortparameters(commander, blackboard&) {
+function private _reclaimescortparameters(commander, &blackboard) {
     pixbeginevent(#"commanderreclaimescortparameters");
     aiprofile_beginentry("commanderReclaimEscortParameters");
     /#
@@ -656,7 +656,7 @@ function private _reclaimescortparameters(commander, blackboard&) {
 // Params 2, eflags: 0x5 linked
 // Checksum 0x3d0571eb, Offset: 0x33c0
 // Size: 0x45c
-function private function_ac4ff936(commander, blackboard&) {
+function private function_ac4ff936(commander, &blackboard) {
     pixbeginevent(#"commanderreclaimtargets");
     aiprofile_beginentry("commanderReclaimTargets");
     /#
@@ -813,7 +813,7 @@ function private function_60f42acc(commander) {
 // Params 2, eflags: 0x5 linked
 // Checksum 0xcd4b7c16, Offset: 0x4028
 // Size: 0x3cc
-function private function_d8b8afde(commander, blackboard&) {
+function private function_d8b8afde(commander, &blackboard) {
     pixbeginevent(#"commandersorttargetlist");
     aiprofile_beginentry("commanderSortTargetList");
     priorities = array("escortbiped", "destroy", "capturearea", "defend", "goto", "gameobject");

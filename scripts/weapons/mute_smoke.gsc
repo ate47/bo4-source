@@ -40,7 +40,7 @@ function on_player_spawned() {
 // Params 5, eflags: 0x1 linked
 // Checksum 0x6d615a1b, Offset: 0x288
 // Size: 0x19c
-function function_3c893ac6(owner, statweapon, var_12708b9, duration, totaltime) {
+function function_3c893ac6(owner, statweapon, grenadeweaponname, duration, totaltime) {
     if (isplayer(owner)) {
         owner stats::function_e24eec31(statweapon, #"used", 1);
     }
@@ -53,7 +53,7 @@ function function_3c893ac6(owner, statweapon, var_12708b9, duration, totaltime) 
     onefoot = vectorscale((0, 0, 1), 12);
     var_16ae7522 = isdefined(waitresult.position) ? waitresult.position : self.origin;
     startpos = var_16ae7522 + onefoot;
-    smokeweapon = getweapon(var_12708b9);
+    smokeweapon = getweapon(grenadeweaponname);
     function_3d455aca(owner, statweapon, smokeweapon, var_16ae7522, 250, totaltime, duration);
     /#
         function_9dddd194(var_16ae7522, vectorscale((0, 0, 1), 0.9));
@@ -263,7 +263,7 @@ function function_41470017(var_56d6af0e, applicant) {
 // Params 1, eflags: 0x40
 // Checksum 0xc9c12c1a, Offset: 0xed8
 // Size: 0x11c
-function event<grenade_fire> function_f9d992c2(eventstruct) {
+function event_handler[grenade_fire] function_f9d992c2(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

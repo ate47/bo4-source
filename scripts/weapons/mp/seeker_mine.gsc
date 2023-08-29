@@ -127,7 +127,7 @@ function onspawned() {
 // Params 2, eflags: 0x0
 // Checksum 0x500e9845, Offset: 0xaf8
 // Size: 0x3c
-function function_1abb321(entnum, event) {
+function onteamchanged(entnum, event) {
     abandoned = 1;
     function_53df8a4c(entnum, abandoned);
 }
@@ -255,7 +255,7 @@ function function_3019d870(origin, angles) {
     mine killstreaks::configure_team("raps", "raps", originalowner, undefined, undefined, &configureteampost);
     mine clientfield::set("enemyvehicle", 1);
     mine setinvisibletoall();
-    mine thread function_484f2f48();
+    mine thread autosetvisibletoall();
     mine playsound("mpl_seeker_mine_activate");
     mine vehicle::toggle_sounds(1);
     mine thread function_f43b3686(originalowner);
@@ -303,7 +303,7 @@ function configureteampost(owner, ishacked) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe8d511cb, Offset: 0x15b8
 // Size: 0x3c
-function function_484f2f48() {
+function autosetvisibletoall() {
     self endon(#"death");
     waitframe(1);
     waitframe(1);
@@ -362,8 +362,8 @@ function function_a8552c0a() {
     if (!isdefined(preset)) {
         return;
     }
-    var_7b6db33f = mine influencers::get_enemy_team_mask(mine.team);
-    mine.var_f8bc2316 = mine influencers::create_entity_influencer("raps", var_7b6db33f);
+    enemy_team_mask = mine influencers::get_enemy_team_mask(mine.team);
+    mine.var_f8bc2316 = mine influencers::create_entity_influencer("raps", enemy_team_mask);
 }
 
 // Namespace seeker_mine_mp/seeker_mine
@@ -642,7 +642,7 @@ function function_3653370a(var_26b2b1bb, var_6d9320d1) {
 function function_ef690fef(var_6d9320d1, var_26b2b1bb) {
     self endon(#"death");
     var_6d9320d1 endon(#"death");
-    self waittill(#"hash_2ce4de45160de27");
+    self waittill(#"minigame_laststand");
     function_b6ee86e3(var_6d9320d1, var_26b2b1bb);
 }
 
@@ -735,15 +735,15 @@ function function_e56220fe() {
     self endon(#"death");
     var_d04b86 = self usebuttonpressed();
     while (self.var_dda9b735.prompt < 3) {
-        var_fe14d42d = self usebuttonpressed();
+        pressed = self usebuttonpressed();
         if (var_d04b86) {
-            if (!var_fe14d42d) {
+            if (!pressed) {
                 var_d04b86 = 0;
             }
         } else if (self status_effect::function_3c54ae98(5) > 0 && self.var_dda9b735.prompt == 1) {
             self.var_dda9b735.state = 1;
             break;
-        } else if (var_fe14d42d) {
+        } else if (pressed) {
             if (self.var_dda9b735.prompt == 1) {
                 self.var_dda9b735.state = 1;
             } else if (self.var_dda9b735.prompt == 2) {

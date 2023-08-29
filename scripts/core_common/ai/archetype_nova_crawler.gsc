@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/ai/archetype_nova_crawler_interface.gsc;
-#include script_522aeb6ae906391e;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/spawner_shared.gsc;
 
 #namespace archetypenovacrawler;

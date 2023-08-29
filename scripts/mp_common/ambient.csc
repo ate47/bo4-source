@@ -30,8 +30,8 @@ function on_player_connect(localclientnum) {
     thread ceiling_fans_init(localclientnum);
     thread clocks_init(localclientnum);
     thread spin_anemometers(localclientnum);
-    if (isdefined(level.var_a70429e8)) {
-        thread [[ level.var_a70429e8 ]](localclientnum);
+    if (isdefined(level._levelspecificambient)) {
+        thread [[ level._levelspecificambient ]](localclientnum);
     }
 }
 

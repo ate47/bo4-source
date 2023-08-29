@@ -11,7 +11,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x1aa97ce2, Offset: 0x158
 // Size: 0xe4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     clientfield::register("actor", "escort_robot_burn", 6000, 1, "int", &robot_burn, 0, 0);
     clientfield::register("worlduimodel", "Escort.robotProgress", 6000, 7, "float", undefined, 0, 0);
     clientfield::register("worlduimodel", "Escort.robotMoving", 6000, 1, "int", undefined, 0, 0);

@@ -68,7 +68,7 @@ function on_player_spawned() {
 // Params 1, eflags: 0x40
 // Checksum 0xde1b292c, Offset: 0x378
 // Size: 0x7c
-function event<gadget_give> gadget_give_callback(eventstruct) {
+function event_handler[gadget_give] gadget_give_callback(eventstruct) {
     /#
         eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
     #/
@@ -79,7 +79,7 @@ function event<gadget_give> gadget_give_callback(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x24e85d8e, Offset: 0x400
 // Size: 0x7c
-function event<gadget_take> gadget_take_callback(eventstruct) {
+function event_handler[gadget_take] gadget_take_callback(eventstruct) {
     /#
         eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
     #/
@@ -90,7 +90,7 @@ function event<gadget_take> gadget_take_callback(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x9074f374, Offset: 0x488
 // Size: 0x7c
-function event<gadget_primed> gadget_primed_callback(eventstruct) {
+function event_handler[gadget_primed] gadget_primed_callback(eventstruct) {
     /#
         eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
     #/
@@ -101,7 +101,7 @@ function event<gadget_primed> gadget_primed_callback(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x5fdd03a7, Offset: 0x510
 // Size: 0xec
-function event<gadget_ready> gadget_ready_callback(eventstruct) {
+function event_handler[gadget_ready] gadget_ready_callback(eventstruct) {
     /#
         eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
     #/
@@ -116,7 +116,7 @@ function event<gadget_ready> gadget_ready_callback(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x55782023, Offset: 0x608
 // Size: 0xec
-function event<gadget_on> gadget_on_callback(eventstruct) {
+function event_handler[gadget_on] gadget_on_callback(eventstruct) {
     /#
         eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
     #/
@@ -131,7 +131,7 @@ function event<gadget_on> gadget_on_callback(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xb45b88ee, Offset: 0x700
 // Size: 0x7c
-function event<gadget_off> gadget_off_callback(eventstruct) {
+function event_handler[gadget_off] gadget_off_callback(eventstruct) {
     /#
         eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
     #/
@@ -142,7 +142,7 @@ function event<gadget_off> gadget_off_callback(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x3f5df80b, Offset: 0x788
 // Size: 0x7c
-function event<event_dfabd488> function_40d8d1ec(eventstruct) {
+function event_handler[event_dfabd488] function_40d8d1ec(eventstruct) {
     /#
         eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
     #/
@@ -153,7 +153,7 @@ function event<event_dfabd488> function_40d8d1ec(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x723a280e, Offset: 0x810
 // Size: 0x7c
-function event<event_e46d75fa> function_15061ae6(eventstruct) {
+function event_handler[event_e46d75fa] function_15061ae6(eventstruct) {
     /#
         eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
     #/
@@ -164,7 +164,7 @@ function event<event_e46d75fa> function_15061ae6(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x645b3fe5, Offset: 0x898
 // Size: 0x7c
-function event<gadget_flicker> gadget_flicker_callback(eventstruct) {
+function event_handler[gadget_flicker] gadget_flicker_callback(eventstruct) {
     /#
         eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
     #/

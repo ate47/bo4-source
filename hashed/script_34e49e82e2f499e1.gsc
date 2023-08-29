@@ -71,7 +71,7 @@ function function_624de77b() {
 // Size: 0x158
 function function_920f9a6() {
     if (!level.var_69167fa4) {
-        pianos = getdynentarray(#"hash_78f8887a7ed09542");
+        pianos = getdynentarray(#"buried_piano");
         item_world::function_1b11e73c();
         foreach (piano in pianos) {
             function_e2a06860(piano, 3);
@@ -89,7 +89,7 @@ function function_920f9a6() {
 // Size: 0x1ea
 function function_82141ae4() {
     if (!level.var_c30abd0d) {
-        var_fff29b0e = getdynentarray(#"hash_78ac94587fde0380");
+        var_fff29b0e = getdynentarray(#"t_switch");
         item_world::function_1b11e73c();
         foreach (var_93696d49 in var_fff29b0e) {
             function_e2a06860(var_93696d49, 2);
@@ -99,7 +99,7 @@ function function_82141ae4() {
             function_e2a06860(var_93696d49, 2);
         }
     } else {
-        var_fff29b0e = getdynentarray(#"hash_78ac94587fde0380");
+        var_fff29b0e = getdynentarray(#"t_switch");
         foreach (var_93696d49 in var_fff29b0e) {
             var_93696d49.onuse = &function_62ef723;
         }
@@ -146,7 +146,7 @@ function function_dabe7910() {
 // Params 1, eflags: 0x44
 // Checksum 0xeedbc2d1, Offset: 0xba0
 // Size: 0x16c
-function event<grenade_fire> private function_4776caf4(eventstruct) {
+function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
     if (level.inprematchperiod) {
         return;
     }
@@ -154,9 +154,9 @@ function event<grenade_fire> private function_4776caf4(eventstruct) {
         if (eventstruct.weapon.name === #"hatchet") {
             if (isdefined(eventstruct.projectile)) {
                 hatchet = eventstruct.projectile;
-                var_d05de427 = getdynent(#"hash_35003db0f22ba9ec");
-                if (isdefined(var_d05de427)) {
-                    player_dist = distance(var_d05de427.origin, self.origin);
+                dartboard = getdynent(#"buried_dartboard");
+                if (isdefined(dartboard)) {
+                    player_dist = distance(dartboard.origin, self.origin);
                     if (player_dist > 200 && player_dist < 5000) {
                         hatchet thread function_34f4460b(self);
                     }
@@ -188,10 +188,10 @@ function function_34f4460b(player) {
     }
     while (!var_25d0b13d && abs(var_e5823d2[0]) > 0 && abs(var_e5823d2[1]) > 0) {
         var_e5823d2 = self getvelocity();
-        foreach (var_d05de427 in var_3df14205) {
-            if (self istouching(var_d05de427)) {
-                if (isdefined(var_d05de427.target)) {
-                    var_e9320407 = var_d05de427.target;
+        foreach (dartboard in var_3df14205) {
+            if (self istouching(dartboard)) {
+                if (isdefined(dartboard.target)) {
+                    var_e9320407 = dartboard.target;
                 }
                 var_25d0b13d = 1;
                 break;

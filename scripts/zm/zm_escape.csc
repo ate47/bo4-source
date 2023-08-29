@@ -59,7 +59,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0xd6fc12ba, Offset: 0x628
 // Size: 0x78c
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("clientuimodel", "" + #"player_lives", 1, 2, "int", undefined, 0, 0);
     clientfield::register("toplayer", "" + #"rumble_gondola", 1, 1, "int", &rumble_gondola, 0, 0);
     clientfield::register("toplayer", "" + #"hash_51b0de5e2b184c28", 1, 1, "int", &function_1bccf046, 0, 0);

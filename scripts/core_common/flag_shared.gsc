@@ -172,7 +172,7 @@ function get(str_flag) {
 // Params 1, eflags: 0x0
 // Checksum 0x7792fb45, Offset: 0x6b0
 // Size: 0x8a
-function get_any(array&) {
+function get_any(&array) {
     foreach (str_flag in array) {
         if (get(str_flag)) {
             return 1;
@@ -185,7 +185,7 @@ function get_any(array&) {
 // Params 1, eflags: 0x0
 // Checksum 0xf6a742bd, Offset: 0x748
 // Size: 0x8a
-function get_all(array&) {
+function get_all(&array) {
     foreach (str_flag in array) {
         if (!get(str_flag)) {
             return 0;

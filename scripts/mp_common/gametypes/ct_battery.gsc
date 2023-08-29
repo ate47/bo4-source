@@ -33,7 +33,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x86210df8, Offset: 0x338
 // Size: 0x27c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.select_character = ct_utils::get_roleindex(#"prt_mp_battery");
     level.var_820c5561 = "BATTERY";
@@ -295,7 +295,7 @@ function spawn_attack_helicopter(str_targetname, str_team, b_guns = 1, b_missile
     chopper.attackerdata = [];
     chopper.attackerdamage = [];
     chopper.flareattackerdamage = [];
-    chopper.var_b46557d6 = &function_64dd0b39;
+    chopper.destroyfunc = &function_64dd0b39;
     chopper.hardpointtype = "attack_helicopter";
     chopper.killstreak_id = -1;
     chopper.lastrocketfiretime = -1;

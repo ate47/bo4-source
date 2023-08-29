@@ -10,7 +10,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x8a3f5b58, Offset: 0xc0
 // Size: 0x84
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     ct_core::function_fa03fc55();
     clientfield::register("scriptmover", "follow_path_fx", 1, 1, "int", &follow_path_fx, 0, 0);

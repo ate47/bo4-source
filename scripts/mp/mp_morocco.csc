@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x90d94b45, Offset: 0x118
 // Size: 0x154
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level.var_bbb8810e = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     setsaveddvar(#"enable_global_wind", 1);

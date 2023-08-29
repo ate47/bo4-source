@@ -5,27 +5,27 @@
 #include scripts/core_common/math_shared.gsc;
 #include scripts/core_common/ai_shared.gsc;
 
-#namespace namespace_36220e95;
+#namespace robotphalanx;
 
-// Namespace namespace_36220e95
+// Namespace robotphalanx
 // Method(s) 25 Total 25
-class class_36220e95 {
+class robotphalanx {
 
-    // Namespace class_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 0, eflags: 0x9 linked
     // Checksum 0x4fc4c550, Offset: 0x16b8
     // Size: 0x56
     __constructor() {
-        self.var_c6d6c9f0 = [];
-        self.var_ed2a6210 = [];
-        self.var_d5a4f0de = [];
-        self.var_36d7e5b5 = 0;
-        self.var_1c557eb0 = 0;
+        self.tier1robots_ = [];
+        self.tier2robots_ = [];
+        self.tier3robots_ = [];
+        self.startrobotcount_ = 0;
+        self.currentrobotcount_ = 0;
         self.breakingpoint_ = 0;
         self.scattered_ = 0;
     }
 
-    // Namespace class_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 0, eflags: 0x11 linked
     // Checksum 0x80f724d1, Offset: 0x1718
     // Size: 0x4
@@ -33,53 +33,53 @@ class class_36220e95 {
         
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 0, eflags: 0x1 linked
     // Checksum 0x47144607, Offset: 0x1d50
     // Size: 0xee
     function scatterphalanx() {
         if (!self.scattered_) {
             self.scattered_ = 1;
-            function_fefd3143(self.var_c6d6c9f0);
-            self.var_c6d6c9f0 = [];
-            _assignphalanxstance(self.var_ed2a6210, "crouch");
+            _releaserobots(self.tier1robots_);
+            self.tier1robots_ = [];
+            _assignphalanxstance(self.tier2robots_, "crouch");
             wait(randomfloatrange(5, 7));
-            function_fefd3143(self.var_ed2a6210);
-            self.var_ed2a6210 = [];
-            _assignphalanxstance(self.var_d5a4f0de, "crouch");
+            _releaserobots(self.tier2robots_);
+            self.tier2robots_ = [];
+            _assignphalanxstance(self.tier3robots_, "crouch");
             wait(randomfloatrange(5, 7));
-            function_fefd3143(self.var_d5a4f0de);
-            self.var_d5a4f0de = [];
+            _releaserobots(self.tier3robots_);
+            self.tier3robots_ = [];
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 0, eflags: 0x1 linked
     // Checksum 0x8a9fce1e, Offset: 0x1cf8
     // Size: 0x4c
     function resumefire() {
-        function_bdd6600(self.var_c6d6c9f0);
-        function_bdd6600(self.var_ed2a6210);
-        function_bdd6600(self.var_d5a4f0de);
+        _resumefirerobots(self.tier1robots_);
+        _resumefirerobots(self.tier2robots_);
+        _resumefirerobots(self.tier3robots_);
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 0, eflags: 0x1 linked
     // Checksum 0xc1aa3fed, Offset: 0x1bd8
     // Size: 0x114
     function resumeadvance() {
         if (!self.scattered_) {
-            _assignphalanxstance(self.var_c6d6c9f0, "stand");
+            _assignphalanxstance(self.tier1robots_, "stand");
             wait(1);
             forward = vectornormalize(self.endposition_ - self.startposition_);
-            _movephalanxtier(self.var_c6d6c9f0, self.phalanxtype_, "phalanx_tier1", self.endposition_, forward);
-            _movephalanxtier(self.var_ed2a6210, self.phalanxtype_, "phalanx_tier2", self.endposition_, forward);
-            _movephalanxtier(self.var_d5a4f0de, self.phalanxtype_, "phalanx_tier3", self.endposition_, forward);
-            _assignphalanxstance(self.var_c6d6c9f0, "crouch");
+            _movephalanxtier(self.tier1robots_, self.phalanxtype_, "phalanx_tier1", self.endposition_, forward);
+            _movephalanxtier(self.tier2robots_, self.phalanxtype_, "phalanx_tier2", self.endposition_, forward);
+            _movephalanxtier(self.tier3robots_, self.phalanxtype_, "phalanx_tier3", self.endposition_, forward);
+            _assignphalanxstance(self.tier1robots_, "crouch");
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 8, eflags: 0x1 linked
     // Checksum 0x31ade7c8, Offset: 0x18c0
     // Size: 0x30c
@@ -98,14 +98,14 @@ class class_36220e95 {
         #/
         maxtiersize = math::clamp(maxtiersize, 1, 10);
         forward = vectornormalize(destination - origin);
-        self.var_c6d6c9f0 = _createphalanxtier(phalanxtype, "phalanx_tier1", origin, forward, maxtiersize, tieronespawner);
-        self.var_ed2a6210 = _createphalanxtier(phalanxtype, "phalanx_tier2", origin, forward, maxtiersize, tiertwospawner);
-        self.var_d5a4f0de = _createphalanxtier(phalanxtype, "phalanx_tier3", origin, forward, maxtiersize, tierthreespawner);
-        _assignphalanxstance(self.var_c6d6c9f0, "crouch");
-        _movephalanxtier(self.var_c6d6c9f0, phalanxtype, "phalanx_tier1", destination, forward);
-        _movephalanxtier(self.var_ed2a6210, phalanxtype, "phalanx_tier2", destination, forward);
-        _movephalanxtier(self.var_d5a4f0de, phalanxtype, "phalanx_tier3", destination, forward);
-        self.var_36d7e5b5 = self.var_c6d6c9f0.size + self.var_ed2a6210.size + self.var_d5a4f0de.size;
+        self.tier1robots_ = _createphalanxtier(phalanxtype, "phalanx_tier1", origin, forward, maxtiersize, tieronespawner);
+        self.tier2robots_ = _createphalanxtier(phalanxtype, "phalanx_tier2", origin, forward, maxtiersize, tiertwospawner);
+        self.tier3robots_ = _createphalanxtier(phalanxtype, "phalanx_tier3", origin, forward, maxtiersize, tierthreespawner);
+        _assignphalanxstance(self.tier1robots_, "crouch");
+        _movephalanxtier(self.tier1robots_, phalanxtype, "phalanx_tier1", destination, forward);
+        _movephalanxtier(self.tier2robots_, phalanxtype, "phalanx_tier2", destination, forward);
+        _movephalanxtier(self.tier3robots_, phalanxtype, "phalanx_tier3", destination, forward);
+        self.startrobotcount_ = self.tier1robots_.size + self.tier2robots_.size + self.tier3robots_.size;
         self.breakingpoint_ = breakingpoint;
         self.startposition_ = origin;
         self.endposition_ = destination;
@@ -113,29 +113,29 @@ class class_36220e95 {
         self thread _updatephalanxthread(self);
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 0, eflags: 0x1 linked
     // Checksum 0x444f84a0, Offset: 0x1860
     // Size: 0x54
     function haltadvance() {
         if (!self.scattered_) {
-            _haltadvance(self.var_c6d6c9f0);
-            _haltadvance(self.var_ed2a6210);
-            _haltadvance(self.var_d5a4f0de);
+            _haltadvance(self.tier1robots_);
+            _haltadvance(self.tier2robots_);
+            _haltadvance(self.tier3robots_);
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 0, eflags: 0x1 linked
     // Checksum 0xd2d527df, Offset: 0x1808
     // Size: 0x4c
     function haltfire() {
-        _haltfire(self.var_c6d6c9f0);
-        _haltfire(self.var_ed2a6210);
-        _haltfire(self.var_d5a4f0de);
+        _haltfire(self.tier1robots_);
+        _haltfire(self.tier2robots_);
+        _haltfire(self.tier3robots_);
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 0, eflags: 0x5 linked
     // Checksum 0xcfc6d9e, Offset: 0x1728
     // Size: 0xd4
@@ -143,18 +143,18 @@ class class_36220e95 {
         if (self.scattered_) {
             return 0;
         }
-        self.var_c6d6c9f0 = _prunedead(self.var_c6d6c9f0);
-        self.var_ed2a6210 = _prunedead(self.var_ed2a6210);
-        self.var_d5a4f0de = _prunedead(self.var_d5a4f0de);
-        self.var_1c557eb0 = self.var_c6d6c9f0.size + self.var_ed2a6210.size + self.var_ed2a6210.size;
-        if (self.var_1c557eb0 <= self.var_36d7e5b5 - self.breakingpoint_) {
+        self.tier1robots_ = _prunedead(self.tier1robots_);
+        self.tier2robots_ = _prunedead(self.tier2robots_);
+        self.tier3robots_ = _prunedead(self.tier3robots_);
+        self.currentrobotcount_ = self.tier1robots_.size + self.tier2robots_.size + self.tier2robots_.size;
+        if (self.currentrobotcount_ <= self.startrobotcount_ - self.breakingpoint_) {
             scatterphalanx();
             return 0;
         }
         return 1;
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0xf8ab2132, Offset: 0x1688
     // Size: 0x28
@@ -164,7 +164,7 @@ class class_36220e95 {
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 2, eflags: 0x5 linked
     // Checksum 0x217ac43d, Offset: 0x15e0
     // Size: 0xa0
@@ -172,11 +172,11 @@ class class_36220e95 {
         return (vector[0] * cos(angle) - vector[1] * sin(angle), vector[0] * sin(angle) + vector[1] * cos(angle), vector[2]);
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0xcb6b4ee6, Offset: 0x1530
     // Size: 0xa8
-    function private function_bdd6600(robots) {
+    function private _resumefirerobots(robots) {
         /#
             assert(isarray(robots));
         #/
@@ -185,7 +185,7 @@ class class_36220e95 {
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0x9e4b7894, Offset: 0x14c8
     // Size: 0x5c
@@ -195,23 +195,23 @@ class class_36220e95 {
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0x8f893952, Offset: 0x1408
     // Size: 0xb8
-    function private function_fefd3143(robots) {
+    function private _releaserobots(robots) {
         foreach (robot in robots) {
             _resumefire(robot);
-            function_4aa99332(robot);
+            _releaserobot(robot);
             wait(randomfloatrange(0.5, 5));
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0x90d3c8c4, Offset: 0x12b0
     // Size: 0x14c
-    function private function_4aa99332(robot) {
+    function private _releaserobot(robot) {
         if (isdefined(robot) && isalive(robot)) {
             robot function_d4c687c9();
             robot pathmode("move delayed", 1, randomfloatrange(0.5, 1));
@@ -226,21 +226,21 @@ class class_36220e95 {
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0x2b7d6a, Offset: 0x11f8
     // Size: 0xb0
     function private _prunedead(robots) {
-        var_515b29eb = [];
+        liverobots = [];
         foreach (index, robot in robots) {
             if (isdefined(robot) && isalive(robot)) {
-                var_515b29eb[index] = robot;
+                liverobots[index] = robot;
             }
         }
-        return var_515b29eb;
+        return liverobots;
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 5, eflags: 0x5 linked
     // Checksum 0xc4408e52, Offset: 0x1000
     // Size: 0x1f0
@@ -262,11 +262,11 @@ class class_36220e95 {
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0x1be9282b, Offset: 0xf10
     // Size: 0xe4
-    function private function_5ab6cd9c(robot) {
+    function private _initializerobot(robot) {
         /#
             assert(isactor(robot));
         #/
@@ -277,7 +277,7 @@ class class_36220e95 {
         aiutility::addaioverridedamagecallback(robot, &_dampenexplosivedamage, 1);
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0xeffcb851, Offset: 0xe28
     // Size: 0xe0
@@ -292,7 +292,7 @@ class class_36220e95 {
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0xf9f0e0bd, Offset: 0xcf8
     // Size: 0x128
@@ -309,7 +309,7 @@ class class_36220e95 {
         }
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 1, eflags: 0x5 linked
     // Checksum 0x1fe66706, Offset: 0xc38
     // Size: 0xb4
@@ -324,7 +324,7 @@ class class_36220e95 {
         return spawner[0];
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 2, eflags: 0x5 linked
     // Checksum 0x88cc2ad, Offset: 0x680
     // Size: 0x5ac
@@ -407,7 +407,7 @@ class class_36220e95 {
         #/
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 12, eflags: 0x5 linked
     // Checksum 0x64c8212e, Offset: 0x4d0
     // Size: 0x1a8
@@ -426,7 +426,7 @@ class class_36220e95 {
         return damage;
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 6, eflags: 0x5 linked
     // Checksum 0x36f4747a, Offset: 0x2a0
     // Size: 0x224
@@ -448,7 +448,7 @@ class class_36220e95 {
             }
             robot = spawner spawner::spawn(1, "", navmeshposition, angles);
             if (isalive(robot)) {
-                function_5ab6cd9c(robot);
+                _initializerobot(robot);
                 waitframe(1);
                 robots[robots.size] = robot;
             }
@@ -456,7 +456,7 @@ class class_36220e95 {
         return robots;
     }
 
-    // Namespace namespace_36220e95/namespace_32add7e4
+    // Namespace robotphalanx/robot_phalanx
     // Params 2, eflags: 0x5 linked
     // Checksum 0xe241323b, Offset: 0x1c0
     // Size: 0xd8

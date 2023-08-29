@@ -8,7 +8,7 @@
 #include scripts/zm_common/zm_audio.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/ai/archetype_tiger.gsc;
-#include script_3aa0f32b70d4f7cb;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
 #include scripts/core_common/values_shared.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/system_shared.gsc;

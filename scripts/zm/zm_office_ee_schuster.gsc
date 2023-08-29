@@ -38,15 +38,15 @@ function __main__() {
         array::run_all(var_5ee87ca5, &hide);
     }
     level flag::init(#"hash_519e40d088b134");
-    zm_sq::register(#"hash_1d6fe2291fc412a5", #"step_1", #"hash_56a5b1536ea0e8f7", &function_d82c6d09, &function_f5ee5629);
-    zm_sq::start(#"hash_1d6fe2291fc412a5");
+    zm_sq::register(#"ee_schuster", #"step_1", #"ee_schuster_step1", &ee_schuster_step1_setup, &ee_schuster_step1_cleanup);
+    zm_sq::start(#"ee_schuster");
 }
 
 // Namespace zm_office_ee_schuster/zm_office_ee_schuster
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe748f31f, Offset: 0x368
 // Size: 0x49c
-function function_d82c6d09(var_5ea5c94d) {
+function ee_schuster_step1_setup(var_5ea5c94d) {
     var_66ef9199 = struct::get_array("office_audio_log_schuster");
     a_e_players = getplayers();
     foreach (e_player in a_e_players) {
@@ -94,7 +94,7 @@ function function_d82c6d09(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x4c2b1672, Offset: 0x810
 // Size: 0xf0
-function function_f5ee5629(var_5ea5c94d, ended_early) {
+function ee_schuster_step1_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         level flag::set(#"hash_519e40d088b134");
         var_66ef9199 = struct::get_array("office_audio_log_schuster");

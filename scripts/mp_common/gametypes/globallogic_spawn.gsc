@@ -250,7 +250,7 @@ function function_d3d4ff67(spawn) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0x1de0395, Offset: 0xf60
 // Size: 0x244
-function addspawnsforteamname(teamname, searchentity, spawnarray&, startspawns&) {
+function addspawnsforteamname(teamname, searchentity, &spawnarray, &startspawns) {
     rawspawns = struct::get_array(searchentity, "targetname");
     foreach (spawn in rawspawns) {
         array::add(level.allspawnpoints, spawn);
@@ -715,8 +715,8 @@ function spawnplayer() {
     }
     pixbeginevent(#"onspawnplayer");
     self [[ level.onspawnplayer ]](0);
-    if (isdefined(level.var_76d547e4)) {
-        self [[ level.var_76d547e4 ]]();
+    if (isdefined(level.playerspawnedcb)) {
+        self [[ level.playerspawnedcb ]]();
     }
     pixendevent();
     pixendevent();

@@ -15,8 +15,8 @@
 #include scripts/core_common/clientfield_shared.gsc;
 #include scripts/core_common/challenges_shared.gsc;
 #include scripts/core_common/callbacks_shared.gsc;
-#include script_35598499769dbb3d;
-#include script_41fe08c37d53a635;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/destructible_character.gsc;
 
 #namespace globallogic_actor;
 

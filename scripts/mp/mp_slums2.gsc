@@ -11,7 +11,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x7a7a4887, Offset: 0xc0
 // Size: 0x244
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     mp_slums2_fx::main();
     mp_slums2_sound::main();
     load::main();

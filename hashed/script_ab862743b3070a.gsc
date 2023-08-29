@@ -98,7 +98,7 @@ function dog_spawner_init() {
     /#
         assert(level.dog_spawners.size > 0);
     #/
-    level.var_27d588d9 = 100;
+    level.dog_health = 100;
     array::thread_all(level.dog_spawners, &spawner::add_spawn_function, &dog_init);
 }
 
@@ -300,16 +300,16 @@ function get_favorite_enemy() {
 function dog_health_increase() {
     players = getplayers();
     if (level.dog_round_count == 1) {
-        level.var_27d588d9 = 800;
+        level.dog_health = 800;
     } else if (level.dog_round_count == 2) {
-        level.var_27d588d9 = 1200;
+        level.dog_health = 1200;
     } else if (level.dog_round_count == 3) {
-        level.var_27d588d9 = 1600;
+        level.dog_health = 1600;
     } else if (level.dog_round_count == 4) {
-        level.var_27d588d9 = 2000;
+        level.dog_health = 2000;
     }
-    if (level.var_27d588d9 > 2000) {
-        level.var_27d588d9 = 2000;
+    if (level.dog_health > 2000) {
+        level.dog_health = 2000;
     }
 }
 
@@ -477,8 +477,8 @@ function dog_init() {
     self collidewithactors(1);
     health_multiplier = getdvarfloat(#"scr_dog_health_walk_multiplier", 4);
     health_multiplier = health_multiplier * (isdefined(level.var_570d178a) ? level.var_570d178a : 1);
-    self.maxhealth = int(level.var_27d588d9 * health_multiplier);
-    self.health = int(level.var_27d588d9 * health_multiplier);
+    self.maxhealth = int(level.dog_health * health_multiplier);
+    self.health = int(level.dog_health * health_multiplier);
     self.freezegun_damage = 0;
     self.zombie_move_speed = "sprint";
     if (self.var_9fde8624 != #"zombie_wolf") {
@@ -671,9 +671,9 @@ function dog_clip_monitor() {
 function dog_run_think() {
     self endon(#"death");
     self waittill(#"visible");
-    if (self.health > level.var_27d588d9) {
-        self.maxhealth = level.var_27d588d9;
-        self.health = level.var_27d588d9;
+    if (self.health > level.dog_health) {
+        self.maxhealth = level.dog_health;
+        self.health = level.dog_health;
     }
     if (self.aitype !== "spawner_zm_wolf") {
         self clientfield::set("dog_fx", 1);

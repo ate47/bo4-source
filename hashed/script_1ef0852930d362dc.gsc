@@ -19,7 +19,7 @@
 #include scripts/core_common/clientfield_shared.gsc;
 #include scripts/core_common/array_shared.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 
 #namespace namespace_82497b8a;
 
@@ -578,7 +578,7 @@ function function_6cd38e99(var_f5716a6, var_18e8905a) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0xa9707dd6, Offset: 0x2c18
 // Size: 0xc4
-function function_f8679f8d(var_ea0a46dc, var_8c987230, vararg...) {
+function function_f8679f8d(var_ea0a46dc, var_8c987230, ...) {
     a_zombies = self function_6cd38e99(var_ea0a46dc);
     foreach (e_zombie in a_zombies) {
         if (!isdefined(e_zombie)) {
@@ -593,7 +593,7 @@ function function_f8679f8d(var_ea0a46dc, var_8c987230, vararg...) {
 // Params 4, eflags: 0x21 linked
 // Checksum 0x8e40cce8, Offset: 0x2ce8
 // Size: 0x36
-function function_a7c67ad6(ai_enemy, var_ea0a46dc, var_8c987230, vararg...) {
+function function_a7c67ad6(ai_enemy, var_ea0a46dc, var_8c987230, ...) {
     ai_enemy thread [[ var_8c987230 ]](vararg);
 }
 
@@ -754,7 +754,7 @@ function function_9b512839(e_trigger) {
     e_trigger endon(#"hash_775ddc8cde7b36e4");
     self endon(#"disconnect");
     for (var_358ea838 = 0; var_358ea838 < 15; var_358ea838++) {
-        self waittill(#"hash_6adf11a441dcbb2d");
+        self waittill(#"zombie_shrunk");
     }
     self notify(#"hash_148a0d55a59ee6a3");
 }
@@ -790,7 +790,7 @@ function function_e607e26e(e_attacker) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0x59b7af34, Offset: 0x3710
 // Size: 0x2d2
-function function_c9b2e87f(vararg...) {
+function function_c9b2e87f(...) {
     if (isdefined(self.var_780857a) && self.var_780857a) {
         return;
     }
@@ -820,7 +820,7 @@ function function_c9b2e87f(vararg...) {
             self thread namespace_9ff9f642::slowdown(#"hash_193617f42c166879");
             wait(1);
             if (isdefined(e_attacker)) {
-                e_attacker notify(#"hash_6adf11a441dcbb2d");
+                e_attacker notify(#"zombie_shrunk");
             }
             self function_61b2f057(e_attacker, level.var_4b14202f);
             break;
@@ -892,7 +892,7 @@ function function_e46e9108(var_8cf2f35b, v_origin, e_attacker) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0x2246fa77, Offset: 0x3d88
 // Size: 0x8c
-function function_bbbbc4d0(vararg...) {
+function function_bbbbc4d0(...) {
     if (isdefined(self.var_6a36f6dc) && self.var_6a36f6dc) {
         return;
     }
@@ -1074,7 +1074,7 @@ function function_b3d8a8c4(v_origin, e_attacker, var_9a1f1865) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0xa461cba, Offset: 0x48b0
 // Size: 0x3f2
-function function_e5e6e403(vararg...) {
+function function_e5e6e403(...) {
     if (isdefined(self.var_bd48b030) && self.var_bd48b030) {
         return;
     }
@@ -1102,8 +1102,8 @@ function function_e5e6e403(vararg...) {
             self thread function_ba22c7e1();
             self thread function_6476c708(e_attacker, var_9a1f1865);
             self thread function_a7fcc7db();
-            self val::set(#"hash_6db94f5d4636e7fc", "ignoreme", 1);
-            self val::set(#"hash_ec3fe5d58797862", "ignoreall", 1);
+            self val::set(#"ww_ignoreme", "ignoreme", 1);
+            self val::set(#"ww_ignorall", "ignoreall", 1);
             self util::delay(randomfloatrange(0.5, 1.5), "death", &function_c5eccfa2);
             wait(2);
             self.var_4a4430c5 = undefined;
@@ -1326,7 +1326,7 @@ function function_1beb7376(e_attacker) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0x84a86d9, Offset: 0x57c8
 // Size: 0x3aa
-function function_886f2b8d(vararg...) {
+function function_886f2b8d(...) {
     if (isdefined(self.var_7fcb707c) && self.var_7fcb707c) {
         return;
     }

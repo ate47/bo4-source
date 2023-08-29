@@ -28,7 +28,7 @@ function __init__() {
     if (!zm_trial::is_trial_mode()) {
         return;
     }
-    zm_trial::register_challenge(#"hash_bbf349c22f69752", &on_begin, &on_end);
+    zm_trial::register_challenge(#"mansion_ghost", &on_begin, &on_end);
 }
 
 // Namespace zm_trial_mansion_ghost/zm_trial_mansion_ghost

@@ -142,7 +142,7 @@ function function_8005e7f3(w_base, var_ebc2aad) {
 // Params 1, eflags: 0x40
 // Checksum 0xa9d92e3d, Offset: 0x780
 // Size: 0x1bc
-function event<player_gunchallengecomplete> player_gunchallengecomplete(s_event) {
+function event_handler[player_gunchallengecomplete] player_gunchallengecomplete(s_event) {
     if (s_event.is_lastrank) {
         var_8e617ca1 = 0;
         a_w_guns = get_guns();

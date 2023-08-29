@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/mp_common/armor.gsc;
 #include scripts/core_common/math_shared.gsc;
-#include script_35598499769dbb3d;
-#include script_3aa0f32b70d4f7cb;
-#include script_178024232e91b0a1;
-#include script_4d85e8de54b02198;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
 #include scripts/core_common/ai/zombie.gsc;
 #include script_3819e7a1427df6d2;
 #include scripts/core_common/values_shared.gsc;
@@ -1305,7 +1305,7 @@ function damage_over_time(dmg, delay, attacker, means_of_death) {
 // Params 1, eflags: 0x40
 // Checksum 0x1ebf372a, Offset: 0x49c8
 // Size: 0x222
-function event<bhtn_action_start> function_320145f7(eventstruct) {
+function event_handler[bhtn_action_start] function_320145f7(eventstruct) {
     notify_string = eventstruct.action;
     switch (notify_string) {
     case #"death":

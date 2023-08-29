@@ -567,7 +567,7 @@ function trigger_auto_disable() {
 // Params 1, eflags: 0x0
 // Checksum 0x5bf8d9ad, Offset: 0x25a0
 // Size: 0xb4
-function function_ad3901ce(var_cc966c56) {
+function activate_color_trigger(var_cc966c56) {
     switch (var_cc966c56) {
     case #"allies":
         str_color = self.script_color_allies;
@@ -1364,8 +1364,8 @@ function colornode_replace_on_death() {
                 continue;
             }
             correct_colored_guy set_force_color(color);
-            if (isdefined(level.var_cfd841c7)) {
-                correct_colored_guy [[ level.var_cfd841c7 ]](color);
+            if (isdefined(level.friendly_promotion_thread)) {
+                correct_colored_guy [[ level.friendly_promotion_thread ]](color);
             }
         }
     }
@@ -1455,17 +1455,17 @@ function get_color_spawner(classname, fromcolor) {
         }
     }
     spawners = getentarray("color_spawner", "targetname");
-    var_411bc3f5 = [];
+    class_spawners = [];
     for (i = 0; i < spawners.size; i++) {
-        var_411bc3f5[spawners[i].classname] = spawners[i];
+        class_spawners[spawners[i].classname] = spawners[i];
     }
     spawner = undefined;
-    keys = getarraykeys(var_411bc3f5);
+    keys = getarraykeys(class_spawners);
     for (i = 0; i < keys.size; i++) {
-        if (!issubstr(var_411bc3f5[keys[i]].classname, classname)) {
+        if (!issubstr(class_spawners[keys[i]].classname, classname)) {
             continue;
         }
-        spawner = var_411bc3f5[keys[i]];
+        spawner = class_spawners[keys[i]];
         break;
     }
     if (!isdefined(spawner)) {

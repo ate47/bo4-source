@@ -16,7 +16,7 @@ function init_shared() {
     if (!isdefined(level.var_4249c222)) {
         level.var_4249c222 = {};
         level.remoteweapons = [];
-        level.var_aa05cd8e = #"hash_17ed51b55d2d46e4";
+        level.remoteexithint = #"hash_17ed51b55d2d46e4";
         callback::on_spawned(&on_player_spawned);
     }
 }
@@ -389,8 +389,8 @@ function endremotecontrolweaponuse(exitrequestedbyowner, gameended) {
         return;
     }
     if (isdefined(weapon.remoteowner) && remote_controlled) {
-        if (isdefined(weapon.var_4de51503)) {
-            wait(weapon.var_4de51503);
+        if (isdefined(weapon.remoteweaponshutdowndelay)) {
+            wait(weapon.remoteweaponshutdowndelay);
         }
         player = weapon.remoteowner;
         if (player.dofutz === 1) {

@@ -12,7 +12,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xf685e6c9, Offset: 0x118
 // Size: 0xb6
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     ct_core::function_fa03fc55();
     clientfield::register("scriptmover", "blood_splat", 1, 1, "int", &function_8bca10ba, 0, 0);

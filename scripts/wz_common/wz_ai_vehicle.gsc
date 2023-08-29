@@ -2,7 +2,7 @@
 #include scripts/killstreaks/ai_tank_shared.gsc;
 #include scripts/weapons/heatseekingmissile.gsc;
 #include scripts/core_common/ai/blackboard_vehicle.gsc;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 #include scripts/core_common/vehicle_ai_shared.gsc;
 #include scripts/core_common/vehicle_shared.gsc;
 #include scripts/core_common/util_shared.gsc;
@@ -110,7 +110,7 @@ function state_combat_update(params) {
             self.current_pathto_pos = getclosestpointonnavmesh(var_1f2328d0.goalpos, self.radius * 2, self.radius);
             should_slow_down_at_goal = 1;
             if (isdefined(self.current_pathto_pos) && self function_a57c34b7(self.current_pathto_pos, should_slow_down_at_goal, 1)) {
-                self asmrequestsubstate(#"hash_2d4b292477dc5711");
+                self asmrequestsubstate(#"locomotion@movement");
                 self thread path_update_interrupt_by_attacker();
                 self thread path_update_interrupt();
                 self vehicle_ai::waittill_pathing_done();
@@ -151,14 +151,14 @@ function function_de11ece(drone) {
     drone.overridevehicledamage = &ai_tank::drone_callback_damage;
     drone thread vehicle_ai::nudge_collision();
     drone.cobra = 0;
-    drone asmrequestsubstate(#"hash_2d4b292477dc5711");
+    drone asmrequestsubstate(#"locomotion@movement");
     drone.variant = "light_weight";
     drone.var_a8c60b0e = 1;
     drone.var_b4c9d62 = 1;
     drone.var_527f38dc = 0;
     drone util::cooldown("cobra_up", 10);
-    if (isdefined(level.var_b4158f86)) {
-        [[ level.var_b4158f86 ]](drone);
+    if (isdefined(level.vehicle_initializer_cb)) {
+        [[ level.vehicle_initializer_cb ]](drone);
     }
     drone.var_232915af = 1;
     drone vehicle_ai::init_state_machine_for_role("default");

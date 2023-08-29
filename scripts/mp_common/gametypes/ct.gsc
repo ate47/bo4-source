@@ -17,7 +17,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xefd450e, Offset: 0xf8
 // Size: 0x1c4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.select_character = ct_utils::get_roleindex(#"prt_mp_mercenary");
     level.var_820c5561 = "RUIN";
@@ -172,7 +172,7 @@ function function_72e84e64() {
         }
         if (!e_player isinmovemode("ufo", "noclip")) {
             level thread ct_bots::activate_bots(level.var_105dad71, #"axis");
-            level thread function_bf9b418c(e_player);
+            level thread spawn_robot(e_player);
         }
         waitframe(1);
         while (!e_player actionslottwobuttonpressed()) {
@@ -189,7 +189,7 @@ function function_72e84e64() {
 // Params 1, eflags: 0x0
 // Checksum 0xb289864e, Offset: 0x928
 // Size: 0x4c
-function function_bf9b418c(e_player) {
+function spawn_robot(e_player) {
     var_16e591d7 = e_player.origin;
     wait(3);
     ct_ai::spawn_zombie(var_16e591d7, 1, 0);

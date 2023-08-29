@@ -1690,7 +1690,7 @@ function event_bookmark(var_65e76577, time, var_81538b15, scoreeventpriority, ev
 // Params 6, eflags: 0x1 linked
 // Checksum 0xd21c363d, Offset: 0x64f0
 // Size: 0xbc
-function function_d6b60141(var_25b9e3c2, client, label, score, combatefficiencyscore, eventindex) {
+function function_d6b60141(event_name, client, label, score, combatefficiencyscore, eventindex) {
     if (!isenabled()) {
         return;
     }
@@ -1701,7 +1701,7 @@ function function_d6b60141(var_25b9e3c2, client, label, score, combatefficiencys
     eventdata.score = score;
     eventdata.combatefficiencyscore = combatefficiencyscore;
     eventdata.eventindex = eventindex;
-    event_bookmark(var_25b9e3c2, gettime(), client, 0, eventdata);
+    event_bookmark(event_name, gettime(), client, 0, eventdata);
 }
 
 // Namespace potm/potm_shared

@@ -80,7 +80,7 @@ function function_e1076862() {
 // Checksum 0x1eb70a73, Offset: 0x7c0
 // Size: 0xbc
 function run_oob_trigger() {
-    self.var_ce4e0c56 = [];
+    self.oob_players = [];
     if (!isdefined(level.oob_triggers)) {
         level.oob_triggers = [];
     } else if (!isarray(level.oob_triggers)) {

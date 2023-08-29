@@ -795,7 +795,7 @@ function can_suicide() {
     if (!self laststand::player_is_in_laststand()) {
         return 0;
     }
-    if (!isdefined(self.var_46106100)) {
+    if (!isdefined(self.suicideprompt)) {
         return 0;
     }
     if (isdefined(self.is_zombie) && self.is_zombie) {

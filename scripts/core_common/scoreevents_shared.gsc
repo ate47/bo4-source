@@ -82,7 +82,7 @@ function processscoreevent(event, player, victim, weapon, var_36f23f1f) {
         if (isdefined(level.var_3426461d)) {
             xp_difficulty_multiplier = [[ level.var_3426461d ]]();
         }
-        player addrankxp(event, weapon, player.var_e54b3c14, pickedup, isscoreevent, xp_difficulty_multiplier);
+        player addrankxp(event, weapon, player.class_num, pickedup, isscoreevent, xp_difficulty_multiplier);
         if (isdefined(event) && isdefined(weapon) && isdefined(level.scoreinfo[event])) {
             var_6d1793bb = level.scoreinfo[event][#"medalnamehash"];
             if (isdefined(var_6d1793bb)) {
@@ -301,44 +301,44 @@ function givecratecapturemedal(crate, capturer) {
 // Params 1, eflags: 0x0
 // Checksum 0x80d37d99, Offset: 0x1220
 // Size: 0x46
-function register_hero_ability_kill_event(var_dad8c7d) {
+function register_hero_ability_kill_event(event_func) {
     if (!isdefined(level.hero_ability_kill_events)) {
         level.hero_ability_kill_events = [];
     }
-    level.hero_ability_kill_events[level.hero_ability_kill_events.size] = var_dad8c7d;
+    level.hero_ability_kill_events[level.hero_ability_kill_events.size] = event_func;
 }
 
 // Namespace scoreevents/scoreevents_shared
 // Params 1, eflags: 0x0
 // Checksum 0xf7da446a, Offset: 0x1270
 // Size: 0x46
-function register_hero_ability_multikill_event(var_dad8c7d) {
+function register_hero_ability_multikill_event(event_func) {
     if (!isdefined(level.hero_ability_multikill_events)) {
         level.hero_ability_multikill_events = [];
     }
-    level.hero_ability_multikill_events[level.hero_ability_multikill_events.size] = var_dad8c7d;
+    level.hero_ability_multikill_events[level.hero_ability_multikill_events.size] = event_func;
 }
 
 // Namespace scoreevents/scoreevents_shared
 // Params 1, eflags: 0x0
 // Checksum 0xbd8b4d61, Offset: 0x12c0
 // Size: 0x46
-function register_hero_weapon_multikill_event(var_dad8c7d) {
+function register_hero_weapon_multikill_event(event_func) {
     if (!isdefined(level.hero_weapon_multikill_events)) {
         level.hero_weapon_multikill_events = [];
     }
-    level.hero_weapon_multikill_events[level.hero_weapon_multikill_events.size] = var_dad8c7d;
+    level.hero_weapon_multikill_events[level.hero_weapon_multikill_events.size] = event_func;
 }
 
 // Namespace scoreevents/scoreevents_shared
 // Params 1, eflags: 0x0
 // Checksum 0xc5c04663, Offset: 0x1310
 // Size: 0x46
-function register_thief_shutdown_enemy_event(var_dad8c7d) {
+function register_thief_shutdown_enemy_event(event_func) {
     if (!isdefined(level.thief_shutdown_enemy_events)) {
         level.thief_shutdown_enemy_events = [];
     }
-    level.thief_shutdown_enemy_events[level.thief_shutdown_enemy_events.size] = var_dad8c7d;
+    level.thief_shutdown_enemy_events[level.thief_shutdown_enemy_events.size] = event_func;
 }
 
 // Namespace scoreevents/scoreevents_shared
@@ -349,9 +349,9 @@ function hero_ability_kill_event(ability, victim_ability) {
     if (!isdefined(level.hero_ability_kill_events)) {
         return;
     }
-    foreach (var_dad8c7d in level.hero_ability_kill_events) {
-        if (isdefined(var_dad8c7d)) {
-            self [[ var_dad8c7d ]](ability, victim_ability);
+    foreach (event_func in level.hero_ability_kill_events) {
+        if (isdefined(event_func)) {
+            self [[ event_func ]](ability, victim_ability);
         }
     }
 }
@@ -364,9 +364,9 @@ function hero_ability_multikill_event(killcount, ability) {
     if (!isdefined(level.hero_ability_multikill_events)) {
         return;
     }
-    foreach (var_dad8c7d in level.hero_ability_multikill_events) {
-        if (isdefined(var_dad8c7d)) {
-            self [[ var_dad8c7d ]](killcount, ability);
+    foreach (event_func in level.hero_ability_multikill_events) {
+        if (isdefined(event_func)) {
+            self [[ event_func ]](killcount, ability);
         }
     }
 }
@@ -379,9 +379,9 @@ function hero_weapon_multikill_event(killcount, weapon) {
     if (!isdefined(level.hero_weapon_multikill_events)) {
         return;
     }
-    foreach (var_dad8c7d in level.hero_weapon_multikill_events) {
-        if (isdefined(var_dad8c7d)) {
-            self [[ var_dad8c7d ]](killcount, weapon);
+    foreach (event_func in level.hero_weapon_multikill_events) {
+        if (isdefined(event_func)) {
+            self [[ event_func ]](killcount, weapon);
         }
     }
 }
@@ -394,9 +394,9 @@ function thief_shutdown_enemy_event() {
     if (!isdefined(level.thief_shutdown_enemy_event)) {
         return;
     }
-    foreach (var_dad8c7d in level.thief_shutdown_enemy_event) {
-        if (isdefined(var_dad8c7d)) {
-            self [[ var_dad8c7d ]]();
+    foreach (event_func in level.thief_shutdown_enemy_event) {
+        if (isdefined(event_func)) {
+            self [[ event_func ]]();
         }
     }
 }

@@ -21,7 +21,7 @@ function callback_void() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x1fc054c9, Offset: 0xc8
 // Size: 0x24
-function function_d0941a1b(spawner) {
+function callback_actorspawnedfrontend(spawner) {
     self thread spawner::spawn_think(spawner);
 }
 
@@ -29,12 +29,12 @@ function function_d0941a1b(spawner) {
 // Params 1, eflags: 0x40
 // Checksum 0xff77b2fe, Offset: 0xf8
 // Size: 0x17c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     level.callbackstartgametype = &callback_void;
     level.callbackplayerconnect = &callback_playerconnect;
     level.callbackplayerdisconnect = &callback_void;
     level.callbackentityspawned = &callback_void;
-    level.callbackactorspawned = &function_d0941a1b;
+    level.callbackactorspawned = &callback_actorspawnedfrontend;
     level.orbis = getdvarstring(#"orbisgame") == "true";
     level.durango = getdvarstring(#"durangogame") == "true";
     level.weaponnone = getweapon(#"none");
@@ -53,7 +53,7 @@ function event<gametype_init> main(eventstruct) {
 // Size: 0x1c
 function callback_playerconnect() {
     /#
-        self thread function_d376d67f();
+        self thread dailychallengedevguithink();
     #/
 }
 
@@ -61,14 +61,14 @@ function callback_playerconnect() {
 // Params 0, eflags: 0x0
 // Checksum 0xbfc31924, Offset: 0x2a8
 // Size: 0x14e
-function function_5436a07f() {
+function dailychallengedevguiinit() {
     /#
-        setdvar(#"hash_4eb7549c11b67d47", 0);
-        var_245dd807 = tablelookuprowcount(#"hash_492a37b72e9cab84");
-        for (var_c1c502b5 = 2; var_c1c502b5 < var_245dd807; var_c1c502b5++) {
-            challenge_name = tablelookupcolumnforrow(#"hash_492a37b72e9cab84", var_c1c502b5, 5);
-            var_81b0209 = var_c1c502b5 - 2;
-            devgui_string = "<unknown string>" + "<unknown string>" + (var_81b0209 > 10 ? "<unknown string>" + var_81b0209 : var_81b0209) + "<unknown string>" + function_9e72a96(challenge_name) + "<unknown string>" + var_c1c502b5 + "<unknown string>";
+        setdvar(#"daily_challenge_cmd", 0);
+        num_rows = tablelookuprowcount(#"gamedata/stats/zm/statsmilestones4.csv");
+        for (row_num = 2; row_num < num_rows; row_num++) {
+            challenge_name = tablelookupcolumnforrow(#"gamedata/stats/zm/statsmilestones4.csv", row_num, 5);
+            display_row_num = row_num - 2;
+            devgui_string = "<unknown string>" + "<unknown string>" + (display_row_num > 10 ? "<unknown string>" + display_row_num : display_row_num) + "<unknown string>" + function_9e72a96(challenge_name) + "<unknown string>" + row_num + "<unknown string>";
             adddebugcommand(devgui_string);
         }
     #/
@@ -80,7 +80,7 @@ function function_5436a07f() {
 // Size: 0x4c
 function function_83f052f2() {
     /#
-        setdvar(#"hash_47c0288a652e4b25", "<unknown string>");
+        setdvar(#"ct_cmd", "<unknown string>");
         adddebugcommand("<unknown string>");
     #/
 }
@@ -93,16 +93,16 @@ function function_5f1dd5aa() {
     /#
         self endon(#"disconnect");
         while (1) {
-            var_70eee44 = getdvarstring(#"hash_47c0288a652e4b25", "<unknown string>");
-            if (var_70eee44 == "<unknown string>") {
+            ct_cmd = getdvarstring(#"ct_cmd", "<unknown string>");
+            if (ct_cmd == "<unknown string>") {
                 wait(0.25);
                 continue;
             }
-            if (var_70eee44 == "<unknown string>") {
+            if (ct_cmd == "<unknown string>") {
                 unlocked = getdvar(#"hash_4ba148eeb58eee06", 0);
                 setdvar(#"hash_4ba148eeb58eee06", !unlocked);
             }
-            setdvar(#"hash_47c0288a652e4b25", "<unknown string>");
+            setdvar(#"ct_cmd", "<unknown string>");
         }
     #/
 }
@@ -111,22 +111,22 @@ function function_5f1dd5aa() {
 // Params 0, eflags: 0x0
 // Checksum 0xcc2e0bc9, Offset: 0x560
 // Size: 0x190
-function function_d376d67f() {
+function dailychallengedevguithink() {
     /#
         self endon(#"disconnect");
         while (1) {
-            var_e8b92572 = getdvarint(#"hash_4eb7549c11b67d47", 0);
-            if (var_e8b92572 == 0 || !sessionmodeiszombiesgame()) {
+            daily_challenge_cmd = getdvarint(#"daily_challenge_cmd", 0);
+            if (daily_challenge_cmd == 0 || !sessionmodeiszombiesgame()) {
                 wait(1);
                 continue;
             }
-            var_ffdbc0f3 = var_e8b92572;
-            var_7ef76ffd = tablelookupcolumnforrow(#"hash_492a37b72e9cab84", var_ffdbc0f3, 0);
-            var_85baeef8 = tablelookupcolumnforrow(#"hash_492a37b72e9cab84", var_ffdbc0f3, 4);
-            adddebugcommand("<unknown string>" + var_85baeef8 + "<unknown string>" + "<unknown string>");
-            adddebugcommand("<unknown string>" + var_7ef76ffd + "<unknown string>");
+            daily_challenge_row = daily_challenge_cmd;
+            daily_challenge_index = tablelookupcolumnforrow(#"gamedata/stats/zm/statsmilestones4.csv", daily_challenge_row, 0);
+            daily_challenge_stat = tablelookupcolumnforrow(#"gamedata/stats/zm/statsmilestones4.csv", daily_challenge_row, 4);
+            adddebugcommand("<unknown string>" + daily_challenge_stat + "<unknown string>" + "<unknown string>");
+            adddebugcommand("<unknown string>" + daily_challenge_index + "<unknown string>");
             adddebugcommand("<unknown string>" + "<unknown string>");
-            setdvar(#"hash_4eb7549c11b67d47", 0);
+            setdvar(#"daily_challenge_cmd", 0);
         }
     #/
 }
@@ -141,24 +141,24 @@ function function_27d2e95a() {
         if (!isdefined(level.var_314051a1)) {
             return;
         }
-        setdvar(#"hash_4079f3c162817a77", "<unknown string>");
+        setdvar(#"callings_cmd", "<unknown string>");
         adddebugcommand("<unknown string>");
         for (var_e1e74353 = 1; var_e1e74353 <= level.var_314051a1.size; var_e1e74353++) {
             for (var_d49657fd = 0; var_d49657fd < 4; var_d49657fd++) {
                 faction = getscriptbundle(level.var_314051a1.factionlist[var_d49657fd].faction);
-                var_e405f6fb = makelocalizedstring(faction.var_e405f6fb);
+                factionname = makelocalizedstring(faction.factionname);
                 var_662e72f3 = array(0, 1, 3, 6, 12);
                 counter = 1;
                 foreach (tokens in var_662e72f3) {
                     var_3430f147 = "<unknown string>" + var_e1e74353 + "<unknown string>" + var_d49657fd + "<unknown string>" + tokens;
-                    devgui_string = "<unknown string>" + var_e1e74353 + "<unknown string>" + var_e405f6fb + "<unknown string>" + tokens + "<unknown string>" + (tokens != 1 ? "<unknown string>" : "<unknown string>") + "<unknown string>" + counter + "<unknown string>" + var_3430f147 + "<unknown string>";
+                    devgui_string = "<unknown string>" + var_e1e74353 + "<unknown string>" + factionname + "<unknown string>" + tokens + "<unknown string>" + (tokens != 1 ? "<unknown string>" : "<unknown string>") + "<unknown string>" + counter + "<unknown string>" + var_3430f147 + "<unknown string>";
                     adddebugcommand(devgui_string);
                     counter++;
                 }
                 counter = 1;
                 for (var_cab404b1 = 0; var_cab404b1 <= 12; var_cab404b1++) {
                     var_f6c57b = "<unknown string>" + var_e1e74353 + "<unknown string>" + var_d49657fd + "<unknown string>" + var_cab404b1;
-                    devgui_string = "<unknown string>" + var_e1e74353 + "<unknown string>" + var_e405f6fb + "<unknown string>" + var_cab404b1 + "<unknown string>" + counter + "<unknown string>" + var_f6c57b + "<unknown string>";
+                    devgui_string = "<unknown string>" + var_e1e74353 + "<unknown string>" + factionname + "<unknown string>" + var_cab404b1 + "<unknown string>" + counter + "<unknown string>" + var_f6c57b + "<unknown string>";
                     adddebugcommand(devgui_string);
                     counter++;
                 }
@@ -173,7 +173,7 @@ function function_27d2e95a() {
 // Params 1, eflags: 0x20
 // Checksum 0x3a31ac2d, Offset: 0xae0
 // Size: 0xc4
-function function_1c289498(vararg...) {
+function function_1c289498(...) {
     /#
         /#
             assert(vararg.size > 1);
@@ -254,35 +254,35 @@ function function_2cdf0184() {
         }
         level endon(#"game_ended");
         while (1) {
-            var_3dbe4683 = getdvarstring(#"hash_4079f3c162817a77", "<unknown string>");
-            if (var_3dbe4683 == "<unknown string>") {
+            callings_cmd = getdvarstring(#"callings_cmd", "<unknown string>");
+            if (callings_cmd == "<unknown string>") {
                 wait(0.25);
                 continue;
             }
-            if (var_3dbe4683 == "<unknown string>") {
+            if (callings_cmd == "<unknown string>") {
                 function_87e397ba();
-            } else if (strstartswith(var_3dbe4683, "<unknown string>")) {
-                str = strreplace(var_3dbe4683, "<unknown string>", "<unknown string>");
+            } else if (strstartswith(callings_cmd, "<unknown string>")) {
+                str = strreplace(callings_cmd, "<unknown string>", "<unknown string>");
                 arr = strtok(str, "<unknown string>");
                 var_e1e74353 = arr[0];
                 var_d49657fd = arr[1];
                 tokens = arr[2];
                 statpath = "<unknown string>" + int(var_e1e74353) - 1 + "<unknown string>" + var_d49657fd + "<unknown string>" + tokens;
                 adddebugcommand("<unknown string>" + statpath + "<unknown string>");
-            } else if (strstartswith(var_3dbe4683, "<unknown string>")) {
-                str = strreplace(var_3dbe4683, "<unknown string>", "<unknown string>");
+            } else if (strstartswith(callings_cmd, "<unknown string>")) {
+                str = strreplace(callings_cmd, "<unknown string>", "<unknown string>");
                 var_e1e74353 = int(str);
                 function_c209f336(var_e1e74353);
-            } else if (strstartswith(var_3dbe4683, "<unknown string>")) {
-                str = strreplace(var_3dbe4683, "<unknown string>", "<unknown string>");
+            } else if (strstartswith(callings_cmd, "<unknown string>")) {
+                str = strreplace(callings_cmd, "<unknown string>", "<unknown string>");
                 arr = strtok(str, "<unknown string>");
                 var_e1e74353 = arr[0];
                 var_d49657fd = arr[1];
                 tier = arr[2];
                 statpath = "<unknown string>" + int(var_e1e74353) - 1 + "<unknown string>" + var_d49657fd + "<unknown string>" + tier;
                 adddebugcommand("<unknown string>" + statpath + "<unknown string>");
-            } else if (strstartswith(var_3dbe4683, "<unknown string>")) {
-                str = strreplace(var_3dbe4683, "<unknown string>", "<unknown string>");
+            } else if (strstartswith(callings_cmd, "<unknown string>")) {
+                str = strreplace(callings_cmd, "<unknown string>", "<unknown string>");
                 arr = strtok(str, "<unknown string>");
                 taskid = arr[0];
                 taskid = int(taskid);
@@ -290,7 +290,7 @@ function function_2cdf0184() {
                 setdvar(#"zm_active_event_calling", 0);
                 setdvar(#"hash_acdd08b365cb62f", 1);
             }
-            setdvar(#"hash_4079f3c162817a77", "<unknown string>");
+            setdvar(#"callings_cmd", "<unknown string>");
         }
     #/
 }

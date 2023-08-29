@@ -48,7 +48,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x13d6dcfa, Offset: 0xa60
 // Size: 0x1096
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     util::registerroundswitch(0, 9);
     util::registertimelimit(0, 4);
@@ -2404,7 +2404,7 @@ function function_9c2f28fb() {
     }
     team = self.pers[#"team"];
     if (isdefined(self.pers[#"music"].spawn) && self.pers[#"music"].spawn == 0) {
-        if (level.var_3e9a7494) {
+        if (level.wagermatch) {
             music = "SPAWN_WAGER";
         } else {
             music = game.music["spawn_" + team];
@@ -2848,7 +2848,7 @@ function function_d24f3562() {
         if (gamehasstarted && level.numlives && !self.pers[#"lives"] || level.numteamlives && !game.stat[self.team + "_lives"]) {
             return 0;
         } else if (gamehasstarted) {
-            if (!level.ingraceperiod && !self.hasspawned && !level.var_3e9a7494) {
+            if (!level.ingraceperiod && !self.hasspawned && !level.wagermatch) {
                 return 0;
             }
         }

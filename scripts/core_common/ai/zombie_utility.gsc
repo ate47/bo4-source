@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/struct.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/ai/zombie_shared.gsc;
 #include scripts/core_common/scene_shared.gsc;
 #include scripts/core_common/laststand_shared.gsc;
@@ -41,8 +41,8 @@ function get_closest_valid_player(origin, ignore_player, ignore_laststand_player
     pixbeginevent(#"get_closest_valid_player");
     valid_player_found = 0;
     targets = getplayers();
-    if (isdefined(level.var_90f49e6b)) {
-        targets = [[ level.var_90f49e6b ]]();
+    if (isdefined(level.closest_player_targets_override)) {
+        targets = [[ level.closest_player_targets_override ]]();
     }
     if (isdefined(ignore_player)) {
         for (i = 0; i < ignore_player.size; i++) {
@@ -890,7 +890,7 @@ function crossproduct(vec1, vec2) {
 // Checksum 0x7fb415c1, Offset: 0x2b38
 // Size: 0x2a
 function scriptchange() {
-    self.a.var_8004cf2 = "none";
+    self.a.current_script = "none";
     self notify(anim.scriptchange);
 }
 
@@ -919,7 +919,7 @@ function canthrowgrenade() {
     if (!self.grenadeammo) {
         return 0;
     }
-    if (self.var_516a8e1a) {
+    if (self.script_forcegrenade) {
         return 1;
     }
     return isplayer(self.enemy);
@@ -1450,8 +1450,8 @@ function spawn_zombie(spawner, target_name, spawn_point, round_number) {
             guy = spawner spawnfromspawner(0, 1);
         }
         if (!zombie_spawn_failed(guy)) {
-            if (isdefined(level.var_5eaddb68)) {
-                guy [[ level.var_5eaddb68 ]]();
+            if (isdefined(level.giveextrazombies)) {
+                guy [[ level.giveextrazombies ]]();
             }
             guy enableaimassist();
             if (isdefined(round_number)) {
@@ -2231,8 +2231,8 @@ function zombie_gib(amount, attacker, direction_vec, point, type, tagname, model
             self setpitchorient();
             health = self.health;
             health = health * 0.1;
-            if (isdefined(self.var_cd965da7)) {
-                self [[ self.var_cd965da7 ]]();
+            if (isdefined(self.crawl_anim_override)) {
+                self [[ self.crawl_anim_override ]]();
             }
         }
         if (b_gibbed && self.health > 0) {

@@ -87,7 +87,7 @@ function function_2cdcf5c3() {
 // Size: 0xa8
 function function_69a9563e(a_ents) {
     while (isdefined(a_ents[#"prop 1"])) {
-        a_ents[#"prop 1"] waittill(#"hash_1fc67e4cbdfee15c", #"death");
+        a_ents[#"prop 1"] waittill(#"napalm_rumble", #"death");
         if (isdefined(a_ents[#"prop 1"])) {
             a_ents[#"prop 1"] clientfield::increment("spawn_flavor_napalm_rumble");
         }

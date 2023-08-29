@@ -62,7 +62,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xdbea0090, Offset: 0x800
 // Size: 0xecc
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     level.var_87bcb1b = 0;
     globallogic::init();
     util::registerroundswitch(0, 9);
@@ -1679,7 +1679,7 @@ function function_cb4b48d5(var_80427091 = 1) {
 // Params 1, eflags: 0x40
 // Checksum 0x4824a151, Offset: 0x7528
 // Size: 0x3c
-function event<enter_vehicle> codecallback_entervehicle(eventstruct) {
+function event_handler[enter_vehicle] codecallback_entervehicle(eventstruct) {
     if (isplayer(self)) {
         self function_cb4b48d5(0);
     }
@@ -1689,7 +1689,7 @@ function event<enter_vehicle> codecallback_entervehicle(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x98f5a52, Offset: 0x7570
 // Size: 0x3c
-function event<exit_vehicle> codecallback_exitvehicle(eventstruct) {
+function event_handler[exit_vehicle] codecallback_exitvehicle(eventstruct) {
     if (isplayer(self)) {
         self function_2f66bc37();
     }
@@ -1699,7 +1699,7 @@ function event<exit_vehicle> codecallback_exitvehicle(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xeffe119d, Offset: 0x75b8
 // Size: 0x54
-function event<freefall> function_5019e563(eventstruct) {
+function event_handler[freefall] function_5019e563(eventstruct) {
     if (eventstruct.freefall) {
         self function_cb4b48d5();
     } else if (!eventstruct.var_695a7111) {
@@ -1711,7 +1711,7 @@ function event<freefall> function_5019e563(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x777ff0b0, Offset: 0x7618
 // Size: 0x44
-function event<parachute> function_87b05fa3(eventstruct) {
+function event_handler[parachute] function_87b05fa3(eventstruct) {
     if (eventstruct.parachute) {
         self function_cb4b48d5();
     } else {

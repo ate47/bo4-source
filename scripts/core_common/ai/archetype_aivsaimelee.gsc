@@ -2,7 +2,7 @@
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/array_shared.gsc;
 #include scripts/core_common/ai/archetype_utility.gsc;
-#include script_3aa0f32b70d4f7cb;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
 #include scripts/core_common/ai_shared.gsc;
 #include scripts/core_common/struct.gsc;
 
@@ -367,9 +367,9 @@ function private chooseaivsaimeleeanimations(behaviortreeentity) {
     foundanims = 0;
     possiblemelees = [];
     if (abs(yawtoenemy) > 120) {
-        if (isdefined(behaviortreeentity.var_9c3773f7)) {
+        if (isdefined(behaviortreeentity.__forceaiflipmelee)) {
             possiblemelees[possiblemelees.size] = &chooseaivsaimeleefrontflipanimations;
-        } else if (isdefined(behaviortreeentity.var_6cc28067)) {
+        } else if (isdefined(behaviortreeentity.__forceaiwrestlemelee)) {
             possiblemelees[possiblemelees.size] = &chooseaivsaimeleefrontwrestleanimations;
         } else {
             possiblemelees[possiblemelees.size] = &chooseaivsaimeleefrontflipanimations;

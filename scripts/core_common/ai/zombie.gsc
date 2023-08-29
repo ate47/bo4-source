@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/ai/archetype_zombie_interface.gsc;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
-#include script_35598499769dbb3d;
-#include script_522aeb6ae906391e;
-#include script_7b7ed6e4bc963a51;
-#include script_3aa0f32b70d4f7cb;
-#include script_178024232e91b0a1;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/ai_blackboard.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
 #include scripts/core_common/ai/archetype_utility.gsc;
 #include script_3819e7a1427df6d2;
-#include script_489b835a247c990e;
-#include script_4bf952f6ba31bb17;
-#include script_4d85e8de54b02198;
-#include script_caf007e2a98afa2;
+#include scripts/core_common/ai/archetype_locomotion_utility.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
 #include scripts/core_common/spawner_shared.gsc;
 #include scripts/core_common/math_shared.gsc;
 #include scripts/core_common/laststand_shared.gsc;
@@ -504,8 +504,8 @@ function zombietargetservice(entity) {
         return 0;
     }
     specifictarget = undefined;
-    if (isdefined(level.var_6df7d4c2)) {
-        specifictarget = [[ level.var_6df7d4c2 ]]();
+    if (isdefined(level.zombielevelspecifictargetcallback)) {
+        specifictarget = [[ level.zombielevelspecifictargetcallback ]]();
     }
     if (isdefined(specifictarget)) {
         entity setgoal(specifictarget.origin);

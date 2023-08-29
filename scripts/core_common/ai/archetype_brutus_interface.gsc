@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/ai/archetype_brutus.gsc;
 
 #namespace brutusinterface;

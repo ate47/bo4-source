@@ -43,7 +43,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x4bd7697e, Offset: 0x238
 // Size: 0x19c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     zm_gametype::main();
     level.onprecachegametype = &onprecachegametype;
     level.onstartgametype = &onstartgametype;
@@ -66,7 +66,7 @@ function event<gametype_init> main(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x3077cb36, Offset: 0x3e0
 // Size: 0x164
-function event<level_init> levelinit(eventstruct) {
+function event_handler[level_init] levelinit(eventstruct) {
     var_189d26ca = "";
     /#
         var_189d26ca = getdvarstring(#"ztrial_name");

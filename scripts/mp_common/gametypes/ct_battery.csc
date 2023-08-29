@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x1c707593, Offset: 0x80
 // Size: 0x2c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     ct_core::function_fa03fc55();
 }

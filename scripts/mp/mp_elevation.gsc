@@ -21,7 +21,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x296baf2b, Offset: 0x160
 // Size: 0x18c
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level.var_cfec596d = -500;
     level.var_39b27fbe = -3500;
     level.var_8db9ea19 = 5500;

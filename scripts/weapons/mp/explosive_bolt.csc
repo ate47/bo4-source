@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 // Checksum 0x819cce11, Offset: 0x100
 // Size: 0x64
 function __init__() {
-    level._effect[#"hash_15c48c730d20d9ee"] = #"weapon/fx8_equip_light_os";
+    level._effect[#"crossbow_light"] = #"weapon/fx8_equip_light_os";
     callback::add_weapon_type(#"explosive_bolt", &spawned);
 }
 
@@ -59,7 +59,7 @@ function fx_think(localclientnum) {
 // Checksum 0x3ba37d8d, Offset: 0x2f8
 // Size: 0x4a
 function start_light_fx(localclientnum) {
-    self.fx = util::playfxontag(localclientnum, level._effect[#"hash_15c48c730d20d9ee"], self, "tag_origin");
+    self.fx = util::playfxontag(localclientnum, level._effect[#"crossbow_light"], self, "tag_origin");
 }
 
 // Namespace explosive_bolt/explosive_bolt

@@ -170,7 +170,7 @@ function watchhackertoolfired() {
 // Params 1, eflags: 0x40
 // Checksum 0x64f68bba, Offset: 0xbe8
 // Size: 0x124
-function event<grenade_pullback> function_f4068d35(eventstruct) {
+function event_handler[grenade_pullback] function_f4068d35(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

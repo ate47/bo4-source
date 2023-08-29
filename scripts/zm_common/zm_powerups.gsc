@@ -538,7 +538,7 @@ function add_zombie_powerup(powerup_name, model_name, hint, func_should_drop_wit
     struct.only_affects_grabber = only_affects_grabber;
     struct.any_team = any_team;
     struct.zombie_grabbable = zombie_grabbable;
-    struct.var_33c87f51 = function_129f6487(powerup_name);
+    struct.hash_id = function_129f6487(powerup_name);
     struct.player_specific = player_specific;
     struct.can_pick_up_in_last_stand = 1;
     if (isdefined(fx)) {
@@ -1134,8 +1134,8 @@ function powerup_grab(powerup_team) {
                     demo::bookmark(#"zm_player_powerup_grabbed", gettime(), player);
                     potm::bookmark(#"zm_player_powerup_grabbed", gettime(), player);
                     bb::logpowerupevent(self, player, "_grabbed");
-                    if (isdefined(self.var_33c87f51)) {
-                        player recordmapevent(23, gettime(), grabber.origin, level.round_number, self.var_33c87f51);
+                    if (isdefined(self.hash_id)) {
+                        player recordmapevent(23, gettime(), grabber.origin, level.round_number, self.hash_id);
                     }
                     if (should_award_stat(self.powerup_name) && isplayer(player)) {
                         player zm_stats::increment_client_stat("drops");

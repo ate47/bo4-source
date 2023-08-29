@@ -23,7 +23,7 @@
 #include scripts/core_common/ai_shared.gsc;
 #include scripts/abilities/ability_player.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 
 #namespace zm_weap_hand_charon;
 
@@ -42,9 +42,9 @@ function autoexec __init__system__() {
 function __init__() {
     clientfield::register("scriptmover", "charon_pool", 16000, 1, "int");
     clientfield::register("scriptmover", "charon_shoot", 16000, 1, "counter");
-    clientfield::register("scriptmover", "" + #"hash_15c29a8560f09487", 16000, 2, "int");
+    clientfield::register("scriptmover", "" + #"charon_impact", 16000, 2, "int");
     clientfield::register("allplayers", "charon_flash", 16000, 1, "int");
-    clientfield::register("actor", "" + #"hash_45cf1b4a3391ca3d", 16000, 1, "counter");
+    clientfield::register("actor", "" + #"charon_death", 16000, 1, "counter");
     clientfield::register("actor", "" + #"hash_3681b677c0d46042", 16000, 1, "counter");
     clientfield::register("actor", "" + #"hash_25691c415a4aea4c", 16000, 1, "int");
     level.w_hand_charon = getweapon(#"ww_hand_c");
@@ -275,7 +275,7 @@ function function_26819e32(e_projectile, ai_zombie, n_damage) {
     if (!isdefined(ai_zombie) || isdefined(ai_zombie.var_3df1a748) && ai_zombie.var_3df1a748) {
         e_projectile moveto(v_end, n_time);
         e_projectile waittill(#"movedone");
-        e_projectile clientfield::set("" + #"hash_15c29a8560f09487", 1);
+        e_projectile clientfield::set("" + #"charon_impact", 1);
         waitframe(1);
     } else {
         var_2ed6f142 = self getweaponmuzzlepoint();
@@ -461,7 +461,7 @@ function function_dced5aef(e_target, weapon = level.weaponnone, v_to_target, n_d
             break;
         case #"boss":
             if (!isactor(e_target)) {
-                e_target clientfield::set("" + #"hash_15c29a8560f09487", 1);
+                e_target clientfield::set("" + #"charon_impact", 1);
             }
             n_damage = 175;
             e_target dodamage(n_damage, e_target.origin, self, self, "none", "MOD_UNKNOWN", 0, weapon);
@@ -582,7 +582,7 @@ function function_39e6dc29(v_end) {
     }
     self moveto(v_end, n_time);
     self waittill(#"movedone");
-    self clientfield::set("" + #"hash_15c29a8560f09487", 2);
+    self clientfield::set("" + #"charon_impact", 2);
     wait(0.1);
     self delete();
 }
@@ -782,7 +782,7 @@ function function_197896ad(e_target, n_damage) {
     if (!(isdefined(e_target.var_61768419) && e_target.var_61768419)) {
         e_target.var_61768419 = 1;
         if (e_target.health <= n_damage) {
-            e_target clientfield::increment("" + #"hash_45cf1b4a3391ca3d");
+            e_target clientfield::increment("" + #"charon_death");
             e_target.skipdeath = 1;
             e_target.diedinscriptedanim = 1;
             n_damage = e_target.health + 999;

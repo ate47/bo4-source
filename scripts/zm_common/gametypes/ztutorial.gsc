@@ -11,7 +11,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xa32a24c8, Offset: 0xb8
 // Size: 0xbe
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     zm_gametype::main();
     level.disableclassselection = 1;
     level.onprecachegametype = &onprecachegametype;

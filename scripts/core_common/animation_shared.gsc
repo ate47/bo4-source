@@ -458,7 +458,7 @@ function add_notetrack_func(funcname, func) {
 // Params 4, eflags: 0x21 linked
 // Checksum 0x2e251bd5, Offset: 0x1f38
 // Size: 0x128
-function add_global_notetrack_handler(str_note, func, pass_notify_params, vararg...) {
+function add_global_notetrack_handler(str_note, func, pass_notify_params, ...) {
     if (!isdefined(level._animnotetrackhandlers)) {
         level._animnotetrackhandlers = [];
     }

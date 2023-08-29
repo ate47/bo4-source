@@ -21,7 +21,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x81b96873, Offset: 0x548
 // Size: 0x854
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     insertion_passenger_count::register("insertionPassengerElem");
     deathcirclerespawn = getgametypesetting(#"deathcirclerespawn");
     clientfield::register("worlduimodel", "hudItems.warzone.collapseTimerState", 1, 2, "int", undefined, 0, 0);

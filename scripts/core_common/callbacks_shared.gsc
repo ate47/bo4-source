@@ -218,7 +218,7 @@ function on_finalize_initialization(func, obj) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0xf89be2a2, Offset: 0xc38
 // Size: 0x44
-function on_connect(func, obj, vararg...) {
+function on_connect(func, obj, ...) {
     add_callback(#"on_player_connect", func, obj, vararg);
 }
 
@@ -794,7 +794,7 @@ function function_27d9ab8(func, obj) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0xad8ddd2f, Offset: 0x2080
 // Size: 0x44
-function on_trigger(func, obj, vararg...) {
+function on_trigger(func, obj, ...) {
     function_d8abfc3d(#"on_trigger", func, obj, vararg);
 }
 
@@ -810,7 +810,7 @@ function remove_on_trigger(func, obj) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0xfaa7acc, Offset: 0x2118
 // Size: 0x44
-function on_trigger_once(func, obj, vararg...) {
+function on_trigger_once(func, obj, ...) {
     function_d8abfc3d(#"on_trigger_once", func, obj, vararg);
 }
 
@@ -938,7 +938,7 @@ function on_contract_complete(func, obj) {
 // Params 1, eflags: 0x40
 // Checksum 0x1073802e, Offset: 0x25a0
 // Size: 0x3c
-function event<level_preinit> codecallback_preinitialization(eventstruct) {
+function event_handler[level_preinit] codecallback_preinitialization(eventstruct) {
     callback(#"on_pre_initialization");
     system::run_pre_systems();
 }
@@ -947,7 +947,7 @@ function event<level_preinit> codecallback_preinitialization(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xfa2ccc8a, Offset: 0x25e8
 // Size: 0x3c
-function event<level_finalizeinit> codecallback_finalizeinitialization(eventstruct) {
+function event_handler[level_finalizeinit] codecallback_finalizeinitialization(eventstruct) {
     system::run_post_systems();
     callback(#"on_finalize_initialization");
 }
@@ -1012,7 +1012,7 @@ function callback_weapon_fired(weapon) {
 // Params 1, eflags: 0x40
 // Checksum 0xf0291f72, Offset: 0x2878
 // Size: 0x4e
-function event<gametype_start> codecallback_startgametype(eventstruct) {
+function event_handler[gametype_start] codecallback_startgametype(eventstruct) {
     if (!isdefined(level.gametypestarted) || !level.gametypestarted) {
         [[ level.callbackstartgametype ]]();
         level.gametypestarted = 1;
@@ -1023,7 +1023,7 @@ function event<gametype_start> codecallback_startgametype(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xbdcb6da4, Offset: 0x28d0
 // Size: 0x30
-function event<player_connect> codecallback_playerconnect(eventstruct) {
+function event_handler[player_connect] codecallback_playerconnect(eventstruct) {
     self endon(#"disconnect");
     [[ level.callbackplayerconnect ]]();
 }
@@ -1032,7 +1032,7 @@ function event<player_connect> codecallback_playerconnect(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x949ede02, Offset: 0x2908
 // Size: 0x8c
-function event<player_disconnect> codecallback_playerdisconnect(eventstruct) {
+function event_handler[player_disconnect] codecallback_playerdisconnect(eventstruct) {
     self notify(#"death");
     self.player_disconnected = 1;
     self notify(#"disconnect");
@@ -1041,11 +1041,11 @@ function event<player_disconnect> codecallback_playerdisconnect(eventstruct) {
     callback(#"on_player_disconnect");
 }
 
-// Namespace callback/event_dcce952e
+// Namespace callback/hostmigration_setupgametype
 // Params 0, eflags: 0x40
 // Checksum 0xd1fa637f, Offset: 0x29a0
 // Size: 0x34
-function event<event_dcce952e> codecallback_migration_setupgametype() {
+function event_handler[hostmigration_setupgametype] codecallback_migration_setupgametype() {
     /#
         println("<unknown string>");
     #/
@@ -1056,7 +1056,7 @@ function event<event_dcce952e> codecallback_migration_setupgametype() {
 // Params 1, eflags: 0x40
 // Checksum 0x79f45823, Offset: 0x29e0
 // Size: 0x3c
-function event<hostmigration> codecallback_hostmigration(eventstruct) {
+function event_handler[hostmigration] codecallback_hostmigration(eventstruct) {
     /#
         println("<unknown string>");
     #/
@@ -1067,7 +1067,7 @@ function event<hostmigration> codecallback_hostmigration(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xe574ed37, Offset: 0x2a28
 // Size: 0x3c
-function event<hostmigration_save> codecallback_hostmigrationsave(eventstruct) {
+function event_handler[hostmigration_save] codecallback_hostmigrationsave(eventstruct) {
     /#
         println("<unknown string>");
     #/
@@ -1078,7 +1078,7 @@ function event<hostmigration_save> codecallback_hostmigrationsave(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x96b466d8, Offset: 0x2a70
 // Size: 0x3c
-function event<hostmigration_premigrationsave> codecallback_prehostmigrationsave(eventstruct) {
+function event_handler[hostmigration_premigrationsave] codecallback_prehostmigrationsave(eventstruct) {
     /#
         println("<unknown string>");
     #/
@@ -1089,7 +1089,7 @@ function event<hostmigration_premigrationsave> codecallback_prehostmigrationsave
 // Params 1, eflags: 0x40
 // Checksum 0xa089ccb2, Offset: 0x2ab8
 // Size: 0x3c
-function event<hostmigration_playermigrated> codecallback_playermigrated(eventstruct) {
+function event_handler[hostmigration_playermigrated] codecallback_playermigrated(eventstruct) {
     /#
         println("<unknown string>");
     #/
@@ -1100,7 +1100,7 @@ function event<hostmigration_playermigrated> codecallback_playermigrated(eventst
 // Params 1, eflags: 0x40
 // Checksum 0x92e884bd, Offset: 0x2b00
 // Size: 0xc8
-function event<player_damage> codecallback_playerdamage(eventstruct) {
+function event_handler[player_damage] codecallback_playerdamage(eventstruct) {
     self endon(#"disconnect");
     [[ level.callbackplayerdamage ]](eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.flags, eventstruct.mod, eventstruct.weapon, eventstruct.position, eventstruct.direction, eventstruct.hit_location, eventstruct.damage_origin, eventstruct.time_offset, eventstruct.bone_index, eventstruct.normal);
 }
@@ -1109,7 +1109,7 @@ function event<player_damage> codecallback_playerdamage(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x7354f8ef, Offset: 0x2bd0
 // Size: 0x98
-function event<player_killed> codecallback_playerkilled(eventstruct) {
+function event_handler[player_killed] codecallback_playerkilled(eventstruct) {
     self endon(#"disconnect");
     [[ level.callbackplayerkilled ]](eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.mod, eventstruct.weapon, eventstruct.direction, eventstruct.hit_location, eventstruct.time_offset, eventstruct.death_anim_duration);
 }
@@ -1118,7 +1118,7 @@ function event<player_killed> codecallback_playerkilled(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x6a44544a, Offset: 0x2c70
 // Size: 0x78
-function event<event_2958ea55> function_73e8e3f9(eventstruct) {
+function event_handler[event_2958ea55] function_73e8e3f9(eventstruct) {
     self endon(#"disconnect");
     if (isdefined(level.var_3a9881cb)) {
         [[ level.var_3a9881cb ]](eventstruct.attacker, eventstruct.effect_name, eventstruct.var_894859a2, eventstruct.var_ab5b905e, eventstruct.weapon);
@@ -1129,7 +1129,7 @@ function event<event_2958ea55> function_73e8e3f9(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x7cf95e65, Offset: 0x2cf0
 // Size: 0x38
-function event<event_a98a54a7> function_323548ba(eventstruct) {
+function event_handler[event_a98a54a7] function_323548ba(eventstruct) {
     self endon(#"disconnect");
     [[ level.callbackplayershielddamageblocked ]](eventstruct.damage);
 }
@@ -1138,7 +1138,7 @@ function event<event_a98a54a7> function_323548ba(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xcc25887a, Offset: 0x2d30
 // Size: 0xac
-function event<player_laststand> codecallback_playerlaststand(eventstruct) {
+function event_handler[player_laststand] codecallback_playerlaststand(eventstruct) {
     self endon(#"disconnect");
     self stopanimscripted();
     [[ level.callbackplayerlaststand ]](eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.mod, eventstruct.weapon, eventstruct.direction, eventstruct.hit_location, eventstruct.time_offset, eventstruct.delay);
@@ -1148,7 +1148,7 @@ function event<player_laststand> codecallback_playerlaststand(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x199e784f, Offset: 0x2de8
 // Size: 0x38
-function event<event_dd67c1a8> function_46c0443b(eventstruct) {
+function event_handler[event_dd67c1a8] function_46c0443b(eventstruct) {
     self endon(#"disconnect");
     [[ level.var_69959686 ]](eventstruct.weapon);
 }
@@ -1157,7 +1157,7 @@ function event<event_dd67c1a8> function_46c0443b(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x6db8e9de, Offset: 0x2e28
 // Size: 0x48
-function event<event_1294e3a7> function_9e4c68e2(eventstruct) {
+function event_handler[event_1294e3a7] function_9e4c68e2(eventstruct) {
     self endon(#"disconnect");
     if (isdefined(level.var_bb1ea3f1)) {
         [[ level.var_bb1ea3f1 ]](eventstruct.weapon);
@@ -1168,7 +1168,7 @@ function event<event_1294e3a7> function_9e4c68e2(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x9abded37, Offset: 0x2e78
 // Size: 0x48
-function event<event_eb7e11e4> function_2f677e9d(eventstruct) {
+function event_handler[event_eb7e11e4] function_2f677e9d(eventstruct) {
     self endon(#"disconnect");
     if (isdefined(level.var_2f64d35)) {
         [[ level.var_2f64d35 ]](eventstruct.weapon);
@@ -1179,7 +1179,7 @@ function event<event_eb7e11e4> function_2f677e9d(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xb9a743f3, Offset: 0x2ec8
 // Size: 0x48
-function event<event_bf57d5bb> function_d7eb3672(eventstruct) {
+function event_handler[event_bf57d5bb] function_d7eb3672(eventstruct) {
     self endon(#"disconnect");
     if (isdefined(level.var_a28be0a5)) {
         [[ level.var_a28be0a5 ]](eventstruct.weapon);
@@ -1190,7 +1190,7 @@ function event<event_bf57d5bb> function_d7eb3672(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x9a480b36, Offset: 0x2f18
 // Size: 0x48
-function event<event_e9b4bb47> function_7dba9a1(eventstruct) {
+function event_handler[event_e9b4bb47] function_7dba9a1(eventstruct) {
     self endon(#"disconnect");
     if (isdefined(level.var_bd0b5fc1)) {
         [[ level.var_bd0b5fc1 ]](eventstruct.weapon);
@@ -1201,7 +1201,7 @@ function event<event_e9b4bb47> function_7dba9a1(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x261a9ab8, Offset: 0x2f68
 // Size: 0x74
-function event<event_9a0e3f85> function_3b159f77(eventstruct) {
+function event_handler[event_9a0e3f85] function_3b159f77(eventstruct) {
     self endon(#"disconnect");
     if (isdefined(level.var_4268159)) {
         [[ level.var_4268159 ]](eventstruct.gestureindex, eventstruct.animlength);
@@ -1213,7 +1213,7 @@ function event<event_9a0e3f85> function_3b159f77(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x21c0a6ea, Offset: 0x2fe8
 // Size: 0x44
-function event<event_8451509a> function_e35aeddd(eventstruct) {
+function event_handler[event_8451509a] function_e35aeddd(eventstruct) {
     self endon(#"disconnect");
     callback(#"hash_4a9c56bba76da754");
 }
@@ -1222,7 +1222,7 @@ function event<event_8451509a> function_e35aeddd(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xf17be2e6, Offset: 0x3038
 // Size: 0x8c
-function event<player_melee> codecallback_playermelee(eventstruct) {
+function event_handler[player_melee] codecallback_playermelee(eventstruct) {
     self endon(#"disconnect");
     [[ level.callbackplayermelee ]](eventstruct.attacker, eventstruct.amount, eventstruct.weapon, eventstruct.position, eventstruct.direction, eventstruct.bone_index, eventstruct.is_shieldhit, eventstruct.is_frombehind);
 }
@@ -1231,7 +1231,7 @@ function event<player_melee> codecallback_playermelee(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x130666f, Offset: 0x30d0
 // Size: 0x28
-function event<actor_spawned> codecallback_actorspawned(eventstruct) {
+function event_handler[actor_spawned] codecallback_actorspawned(eventstruct) {
     self [[ level.callbackactorspawned ]](eventstruct.entity);
 }
 
@@ -1239,7 +1239,7 @@ function event<actor_spawned> codecallback_actorspawned(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xc6815f52, Offset: 0x3100
 // Size: 0xcc
-function event<actor_damage> codecallback_actordamage(eventstruct) {
+function event_handler[actor_damage] codecallback_actordamage(eventstruct) {
     [[ level.callbackactordamage ]](eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.flags, eventstruct.mod, eventstruct.weapon, eventstruct.position, eventstruct.direction, eventstruct.hit_location, eventstruct.damage_origin, eventstruct.time_offset, eventstruct.bone_index, eventstruct.model_index, eventstruct.surface_type, eventstruct.normal);
 }
 
@@ -1247,7 +1247,7 @@ function event<actor_damage> codecallback_actordamage(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xd2b47ba8, Offset: 0x31d8
 // Size: 0x78
-function event<actor_killed> codecallback_actorkilled(eventstruct) {
+function event_handler[actor_killed] codecallback_actorkilled(eventstruct) {
     [[ level.callbackactorkilled ]](eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.mod, eventstruct.weapon, eventstruct.direction, eventstruct.hit_location, eventstruct.time_offset);
 }
 
@@ -1255,7 +1255,7 @@ function event<actor_killed> codecallback_actorkilled(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x93afc83c, Offset: 0x3258
 // Size: 0x24
-function event<actor_cloned> codecallback_actorcloned(eventstruct) {
+function event_handler[actor_cloned] codecallback_actorcloned(eventstruct) {
     [[ level.callbackactorcloned ]](eventstruct.clone);
 }
 
@@ -1263,7 +1263,7 @@ function event<actor_cloned> codecallback_actorcloned(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xd038fc8, Offset: 0x3288
 // Size: 0xd8
-function event<event_1524de24> function_5b0a9275(eventstruct) {
+function event_handler[event_1524de24] function_5b0a9275(eventstruct) {
     [[ level.var_6788bf11 ]](eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.flags, eventstruct.mod, eventstruct.weapon, eventstruct.position, eventstruct.direction, eventstruct.hit_location, eventstruct.damage_origin, eventstruct.time_offset, eventstruct.bone_index, eventstruct.model_index, eventstruct.part_name, eventstruct.surface_type, eventstruct.normal);
 }
 
@@ -1271,7 +1271,7 @@ function event<event_1524de24> function_5b0a9275(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xc74c14f1, Offset: 0x3368
 // Size: 0x34
-function event<vehicle_spawned> codecallback_vehiclespawned(eventstruct) {
+function event_handler[vehicle_spawned] codecallback_vehiclespawned(eventstruct) {
     if (isdefined(level.callbackvehiclespawned)) {
         [[ level.callbackvehiclespawned ]](eventstruct.spawner);
     }
@@ -1281,7 +1281,7 @@ function event<vehicle_spawned> codecallback_vehiclespawned(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x8e2a6e58, Offset: 0x33a8
 // Size: 0x78
-function event<vehicle_killed> codecallback_vehiclekilled(eventstruct) {
+function event_handler[vehicle_killed] codecallback_vehiclekilled(eventstruct) {
     [[ level.callbackvehiclekilled ]](eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.mod, eventstruct.weapon, eventstruct.direction, eventstruct.hit_location, eventstruct.time_offset);
 }
 
@@ -1289,7 +1289,7 @@ function event<vehicle_killed> codecallback_vehiclekilled(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x18886c80, Offset: 0x3428
 // Size: 0xcc
-function event<vehicle_damage> codecallback_vehicledamage(eventstruct) {
+function event_handler[vehicle_damage] codecallback_vehicledamage(eventstruct) {
     [[ level.callbackvehicledamage ]](eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.flags, eventstruct.mod, eventstruct.weapon, eventstruct.position, eventstruct.direction, eventstruct.hit_location, eventstruct.damage_origin, eventstruct.time_offset, eventstruct.damage_from_underneath, eventstruct.model_index, eventstruct.part_name, eventstruct.normal);
 }
 
@@ -1297,7 +1297,7 @@ function event<vehicle_damage> codecallback_vehicledamage(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x632b3a7, Offset: 0x3500
 // Size: 0xb4
-function event<vehicle_radiusdamage> codecallback_vehicleradiusdamage(eventstruct) {
+function event_handler[vehicle_radiusdamage] codecallback_vehicleradiusdamage(eventstruct) {
     [[ level.callbackvehicleradiusdamage ]](eventstruct.inflictor, eventstruct.attacker, eventstruct.amount, eventstruct.inner_damage, eventstruct.outer_damage, eventstruct.flags, eventstruct.mod, eventstruct.weapon, eventstruct.position, eventstruct.outer_radius, eventstruct.cone_angle, eventstruct.cone_direction, eventstruct.time_offset);
 }
 
@@ -1335,7 +1335,7 @@ function killedcustomtraversallistener() {
 // Params 1, eflags: 0x40
 // Checksum 0x77a15d6b, Offset: 0x36f8
 // Size: 0x1cc
-function event<entity_playcustomtraversal> codecallback_playcustomtraversal(eventstruct) {
+function event_handler[entity_playcustomtraversal] codecallback_playcustomtraversal(eventstruct) {
     entity = eventstruct.entity;
     endparent = eventstruct.end_entity;
     entity.blockingpain = 1;
@@ -1369,7 +1369,7 @@ function codecallback_faceeventnotify(notify_msg, ent) {
 // Params 1, eflags: 0x40
 // Checksum 0x7c1ca8a, Offset: 0x3978
 // Size: 0xa8
-function event<ui_menuresponse> codecallback_menuresponse(eventstruct) {
+function event_handler[ui_menuresponse] codecallback_menuresponse(eventstruct) {
     if (!isdefined(level.menuresponsequeue)) {
         level.menuresponsequeue = [];
         level thread menu_response_queue_pump();
@@ -1401,7 +1401,7 @@ function menu_response_queue_pump() {
 // Params 1, eflags: 0x40
 // Checksum 0xa961aff4, Offset: 0x3b28
 // Size: 0xde
-function event<notetrack_callserverscript> codecallback_callserverscript(eventstruct) {
+function event_handler[notetrack_callserverscript] codecallback_callserverscript(eventstruct) {
     if (!isdefined(level._animnotifyfuncs)) {
         return;
     }
@@ -1418,7 +1418,7 @@ function event<notetrack_callserverscript> codecallback_callserverscript(eventst
 // Params 1, eflags: 0x40
 // Checksum 0x425ced8, Offset: 0x3c10
 // Size: 0xce
-function event<notetrack_callserverscriptonlevel> codecallback_callserverscriptonlevel(eventstruct) {
+function event_handler[notetrack_callserverscriptonlevel] codecallback_callserverscriptonlevel(eventstruct) {
     if (!isdefined(level._animnotifyfuncs)) {
         return;
     }
@@ -1435,7 +1435,7 @@ function event<notetrack_callserverscriptonlevel> codecallback_callserverscripto
 // Params 1, eflags: 0x40
 // Checksum 0x662950e9, Offset: 0x3ce8
 // Size: 0x10c
-function event<event_69572c01> function_2073f6dc(eventstruct) {
+function event_handler[event_69572c01] function_2073f6dc(eventstruct) {
     origin = self.origin;
     magnitude = float(eventstruct.magnitude);
     innerradius = float(eventstruct.innerradius);
@@ -1449,7 +1449,7 @@ function event<event_69572c01> function_2073f6dc(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x1568d98c, Offset: 0x3e00
 // Size: 0x9c
-function event<sidemission_launch> codecallback_launchsidemission(eventstruct) {
+function event_handler[sidemission_launch] codecallback_launchsidemission(eventstruct) {
     switchmap_preload(eventstruct.name, eventstruct.game_type);
     luinotifyevent(#"open_side_mission_countdown", 1, eventstruct.list_index);
     wait(10);
@@ -1461,7 +1461,7 @@ function event<sidemission_launch> codecallback_launchsidemission(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xe79a0065, Offset: 0x3ea8
 // Size: 0x7c
-function event<ui_fadeblackscreen> codecallback_fadeblackscreen(eventstruct) {
+function event_handler[ui_fadeblackscreen] codecallback_fadeblackscreen(eventstruct) {
     if (isplayer(self) && !isbot(self)) {
         self thread hud::fade_to_black_for_x_sec(0, eventstruct.duration, eventstruct.blend, eventstruct.blend);
     }
@@ -1471,7 +1471,7 @@ function event<ui_fadeblackscreen> codecallback_fadeblackscreen(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xd44578b2, Offset: 0x3f30
 // Size: 0x7c
-function event<event_40f83b44> function_4b5ab05f(eventstruct) {
+function event_handler[event_40f83b44] function_4b5ab05f(eventstruct) {
     if (isplayer(self) && !isbot(self)) {
         self thread hud::fade_to_black_for_x_sec(0, eventstruct.duration, eventstruct.blend_out, eventstruct.blend_in);
     }
@@ -1514,7 +1514,7 @@ function abort_level() {
 // Params 1, eflags: 0x40
 // Checksum 0x302837f3, Offset: 0x4200
 // Size: 0x58
-function event<glass_smash> codecallback_glasssmash(eventstruct) {
+function event_handler[glass_smash] codecallback_glasssmash(eventstruct) {
     level notify(#"glass_smash", {#direction:eventstruct.direction, #position:eventstruct.position});
 }
 
@@ -1522,7 +1522,7 @@ function event<glass_smash> codecallback_glasssmash(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xbde21233, Offset: 0x4260
 // Size: 0x2c
-function event<freefall> function_5019e563(eventstruct) {
+function event_handler[freefall] function_5019e563(eventstruct) {
     self callback(#"freefall", eventstruct);
 }
 
@@ -1530,7 +1530,7 @@ function event<freefall> function_5019e563(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xa8dcf8f4, Offset: 0x4298
 // Size: 0x2c
-function event<parachute> function_87b05fa3(eventstruct) {
+function event_handler[parachute] function_87b05fa3(eventstruct) {
     self callback(#"parachute", eventstruct);
 }
 
@@ -1538,7 +1538,7 @@ function event<parachute> function_87b05fa3(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xbae084f6, Offset: 0x42d0
 // Size: 0x2c
-function event<swimming> codecallback_swimming(eventstruct) {
+function event_handler[swimming] codecallback_swimming(eventstruct) {
     self callback(#"swimming", eventstruct);
 }
 
@@ -1546,7 +1546,7 @@ function event<swimming> codecallback_swimming(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x5f1ca4aa, Offset: 0x4308
 // Size: 0x2c
-function event<underwater> codecallback_underwater(eventstruct) {
+function event_handler[underwater] codecallback_underwater(eventstruct) {
     self callback(#"underwater", eventstruct);
 }
 
@@ -1554,7 +1554,7 @@ function event<underwater> codecallback_underwater(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xeb732e3c, Offset: 0x4340
 // Size: 0x2c
-function event<event_d6f9e6ad> function_8877d89(eventstruct) {
+function event_handler[event_d6f9e6ad] function_8877d89(eventstruct) {
     self callback(#"hash_42aa89b2a0951308", eventstruct);
 }
 
@@ -1562,7 +1562,7 @@ function event<event_d6f9e6ad> function_8877d89(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x1ced91b2, Offset: 0x4378
 // Size: 0x34
-function event<debug_movement> function_930ce3c3(eventstruct) {
+function event_handler[debug_movement] function_930ce3c3(eventstruct) {
     /#
         self callback(#"debug_movement", eventstruct);
     #/
@@ -1572,7 +1572,7 @@ function event<debug_movement> function_930ce3c3(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x315da427, Offset: 0x43b8
 // Size: 0x5c
-function event<event_31e1c5e9> function_7d45bff(eventstruct) {
+function event_handler[event_31e1c5e9] function_7d45bff(eventstruct) {
     self endon(#"death");
     level flagsys::wait_till("system_init_complete");
     self callback(#"hash_1e4a4ca774f4ce22");
@@ -1582,7 +1582,7 @@ function event<event_31e1c5e9> function_7d45bff(eventstruct) {
 // Params 2, eflags: 0x41 linked
 // Checksum 0x71da971f, Offset: 0x4420
 // Size: 0xb4
-function event<trigger> codecallback_trigger(eventstruct, look_trigger = 0) {
+function event_handler[trigger] codecallback_trigger(eventstruct, look_trigger = 0) {
     if (look_trigger || !trigger::is_look_trigger()) {
         self util::script_delay();
         self callback(#"on_trigger", eventstruct);
@@ -1595,7 +1595,7 @@ function event<trigger> codecallback_trigger(eventstruct, look_trigger = 0) {
 // Params 1, eflags: 0x40
 // Checksum 0x1fec034a, Offset: 0x44e0
 // Size: 0x2c
-function event<entity_deleted> codecallback_entitydeleted(eventstruct) {
+function event_handler[entity_deleted] codecallback_entitydeleted(eventstruct) {
     self callback(#"on_entity_deleted");
 }
 
@@ -1603,7 +1603,7 @@ function event<entity_deleted> codecallback_entitydeleted(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x775922fd, Offset: 0x4518
 // Size: 0x64
-function event<bot_enteruseredge> codecallback_botentereduseredge(eventstruct) {
+function event_handler[bot_enteruseredge] codecallback_botentereduseredge(eventstruct) {
     self [[ level.callbackbotentereduseredge ]](eventstruct.start_node, eventstruct.end_node, eventstruct.mantle_node, eventstruct.start_position, eventstruct.end_position, eventstruct.var_a8cc518d);
 }
 
@@ -1611,7 +1611,7 @@ function event<bot_enteruseredge> codecallback_botentereduseredge(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x3a82429e, Offset: 0x4588
 // Size: 0x20
-function event<bot_create_player_bot> codecallback_botcreateplayerbot(eventstruct) {
+function event_handler[bot_create_player_bot] codecallback_botcreateplayerbot(eventstruct) {
     self [[ level.callbackbotcreateplayerbot ]]();
 }
 
@@ -1619,7 +1619,7 @@ function event<bot_create_player_bot> codecallback_botcreateplayerbot(eventstruc
 // Params 1, eflags: 0x40
 // Checksum 0x3dd61e80, Offset: 0x45b0
 // Size: 0x20
-function event<bot_stop_update> codecallback_botstopupdate(eventstruct) {
+function event_handler[bot_stop_update] codecallback_botstopupdate(eventstruct) {
     self [[ level.callbackbotshutdown ]]();
 }
 
@@ -1627,7 +1627,7 @@ function event<bot_stop_update> codecallback_botstopupdate(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x25fb09ce, Offset: 0x45d8
 // Size: 0x34
-function event<event_b100b913> function_451258ba(eventstruct) {
+function event_handler[event_b100b913] function_451258ba(eventstruct) {
     self voice_events::function_c710099c(eventstruct.event, eventstruct.params);
 }
 
@@ -1635,7 +1635,7 @@ function event<event_b100b913> function_451258ba(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x5bc6cc04, Offset: 0x4618
 // Size: 0xa4
-function event<event_596b7bdc> function_f5026566(eventstruct) {
+function event_handler[event_596b7bdc] function_f5026566(eventstruct) {
     if (!isdefined(level.var_abb3fd2)) {
         return;
     }
@@ -1644,14 +1644,14 @@ function event<event_596b7bdc> function_f5026566(eventstruct) {
     eventdata = {};
     eventdata.tableindex = eventstruct.tableindex;
     eventdata.var_96db1aff = eventstruct.var_96db1aff;
-    self [[ level.var_abb3fd2 ]](eventstruct.var_25b9e3c2, eventstruct.time, eventstruct.client, eventstruct.priority, eventdata);
+    self [[ level.var_abb3fd2 ]](eventstruct.event_name, eventstruct.time, eventstruct.client, eventstruct.priority, eventdata);
 }
 
 // Namespace callback/player_decoration
 // Params 1, eflags: 0x40
 // Checksum 0x9e7dac33, Offset: 0x46c8
 // Size: 0x70
-function event<player_decoration> codecallback_decoration(eventstruct) {
+function event_handler[player_decoration] codecallback_decoration(eventstruct) {
     a_decorations = self getdecorations(1);
     if (!isdefined(a_decorations)) {
         return;
@@ -1659,14 +1659,14 @@ function event<player_decoration> codecallback_decoration(eventstruct) {
     if (a_decorations.size == 12) {
     }
     level notify(#"decoration_awarded");
-    [[ level.var_7da8ea45 ]]();
+    [[ level.callbackdecorationawarded ]]();
 }
 
 // Namespace callback/event_ba6fea54
 // Params 1, eflags: 0x40
 // Checksum 0x2cb8931b, Offset: 0x4740
 // Size: 0x58
-function event<event_ba6fea54> function_f4449e63(eventstruct) {
+function event_handler[event_ba6fea54] function_f4449e63(eventstruct) {
     if (isdefined(level.var_17c7288a)) {
         [[ level.var_17c7288a ]](eventstruct.player, eventstruct.eventtype, eventstruct.eventdata, eventstruct.var_c5a66313);
     }
@@ -1676,7 +1676,7 @@ function event<event_ba6fea54> function_f4449e63(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xe4b0da1c, Offset: 0x47a0
 // Size: 0x2c
-function event<detonate> codecallback_detonate(eventstruct) {
+function event_handler[detonate] codecallback_detonate(eventstruct) {
     self callback(#"detonate", eventstruct);
 }
 
@@ -1684,7 +1684,7 @@ function event<detonate> codecallback_detonate(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x13044a33, Offset: 0x47d8
 // Size: 0x2c
-function event<doubletap_detonate> function_92aba4c4(eventstruct) {
+function event_handler[doubletap_detonate] function_92aba4c4(eventstruct) {
     self callback(#"doubletap_detonate", eventstruct);
 }
 
@@ -1692,7 +1692,7 @@ function event<doubletap_detonate> function_92aba4c4(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xe6ff4420, Offset: 0x4810
 // Size: 0x2c
-function event<death> codecallback_death(eventstruct) {
+function event_handler[death] codecallback_death(eventstruct) {
     self callback(#"death", eventstruct);
 }
 

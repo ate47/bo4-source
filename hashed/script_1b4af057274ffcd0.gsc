@@ -4,9 +4,9 @@
 #include scripts/core_common/ai/strategic_command.gsc;
 #include scripts/core_common/ai/planner_squad.gsc;
 #include scripts/core_common/ai/planner_commander.gsc;
-#include script_30e0aa25775a6927;
-#include script_31e56101095f174b;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/planner_blackboard.gsc;
+#include scripts/core_common/ai/systems/planner.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 
 #namespace namespace_e4f52212;
 

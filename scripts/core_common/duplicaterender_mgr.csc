@@ -149,10 +149,10 @@ function register_filter_materials(filter) {
         value = filter.values[i];
         if (isstring(value)) {
             if (!isdefined(playercount)) {
-                while (!isdefined(level.localplayers) && !isdefined(level.var_b1330740)) {
+                while (!isdefined(level.localplayers) && !isdefined(level.frontendclientconnected)) {
                     waitframe(1);
                 }
-                if (isdefined(level.var_b1330740)) {
+                if (isdefined(level.frontendclientconnected)) {
                     playercount = 1;
                 } else {
                     util::waitforallclients();

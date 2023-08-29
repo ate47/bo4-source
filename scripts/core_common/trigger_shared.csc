@@ -5,7 +5,7 @@
 // Params 3, eflags: 0x1 linked
 // Checksum 0x46ebe4fd, Offset: 0x78
 // Size: 0x11c
-function function_521edc64(ent, on_enter_payload, on_exit_payload) {
+function function_thread(ent, on_enter_payload, on_exit_payload) {
     ent endon(#"death");
     if (!isdefined(self)) {
         return;

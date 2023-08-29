@@ -500,7 +500,7 @@ function private spawn_point_class_name_being_used(name) {
 // Params 1, eflags: 0x40
 // Checksum 0x4dd29de8, Offset: 0x1e58
 // Size: 0x9c
-function event<spawnpoints_update> codecallback_updatespawnpoints(eventstruct) {
+function event_handler[spawnpoints_update] codecallback_updatespawnpoints(eventstruct) {
     foreach (team, _ in level.teams) {
         rebuild_spawn_points(team);
     }
@@ -545,7 +545,7 @@ function private add_spawn_points_internal(team, spawnpoints, list = 0) {
 // Params 3, eflags: 0x20
 // Checksum 0x2670e03a, Offset: 0x2168
 // Size: 0x238
-function clear_and_add_spawn_points(str_team, classnames, vararg...) {
+function clear_and_add_spawn_points(str_team, classnames, ...) {
     str_team = util::get_team_mapping(str_team);
     /#
         assert(vararg.size % 2 == 0, "<unknown string>");

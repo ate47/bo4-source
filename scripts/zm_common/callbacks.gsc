@@ -10,7 +10,7 @@
 #include scripts/weapons/deployable.gsc;
 #include scripts/core_common/system_shared.gsc;
 #include scripts/core_common/callbacks_shared.gsc;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 #include scripts/core_common/struct.gsc;
 
 #namespace callback;

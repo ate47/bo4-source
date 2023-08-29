@@ -37,7 +37,7 @@ function __init__() {
     level.playgadgetactivate = &play_gadget_activate;
     level.playgadgetsuccess = &play_gadget_success;
     level.playpromotionreaction = &play_promotion_reaction;
-    level.var_5c1e9085 = &play_throw_hatchet;
+    level.playthrowhatchet = &play_throw_hatchet;
     level.playgadgetoff = &play_gadget_off;
     level.var_da2d586a = &function_78c16252;
     level.bcsounds = [];
@@ -512,7 +512,7 @@ function say_kill_battle_chatter(attacker, weapon, victim, inflictor) {
 // Params 1, eflags: 0x40
 // Checksum 0xa5759b72, Offset: 0x2ed8
 // Size: 0x194
-function event<missile_fire> function_28a568b9(eventstruct) {
+function event_handler[missile_fire] function_28a568b9(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -532,7 +532,7 @@ function event<missile_fire> function_28a568b9(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xb4109534, Offset: 0x3078
 // Size: 0x17c
-function event<grenade_fire> function_54ca82b9(eventstruct) {
+function event_handler[grenade_fire] function_54ca82b9(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -585,7 +585,7 @@ function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
 // Params 1, eflags: 0x40
 // Checksum 0xf2e24912, Offset: 0x33a0
 // Size: 0xbc
-function event<grenade_stuck> function_2ad593d8(eventstruct) {
+function event_handler[grenade_stuck] function_2ad593d8(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -921,7 +921,7 @@ function get_player_dialog_alias(dialogkey) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x5a03aede, Offset: 0x44d0
 // Size: 0xe8
-function count_keys(keycounts&, bundle, dialogkey) {
+function count_keys(&keycounts, bundle, dialogkey) {
     i = 0;
     field = dialogkey + i;
     fieldvalue = bundle.(field);

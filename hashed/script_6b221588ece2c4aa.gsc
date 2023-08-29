@@ -29,7 +29,7 @@ function function_b455d5d8() {
 function createspecialcrossbowwatchertypes(watcher) {
     watcher.ondetonatecallback = &deleteent;
     watcher.ondamage = &voidondamage;
-    if (isdefined(level.var_32db78d1) && level.var_32db78d1) {
+    if (isdefined(level.b_crossbow_bolt_destroy_on_impact) && level.b_crossbow_bolt_destroy_on_impact) {
         watcher.onspawn = &onspawncrossbowboltimpact;
         watcher.onspawnretrievetriggers = &voidonspawnretrievetriggers;
         watcher.pickup = &voidpickup;
@@ -48,7 +48,7 @@ function function_f297d773() {
     function_e6400478(#"special_crossbow_t8", &createspecialcrossbowwatchertypes, 1);
     function_e6400478(#"special_crossbowlh", &createspecialcrossbowwatchertypes, 1);
     function_e6400478(#"special_crossbow_dw", &createspecialcrossbowwatchertypes, 1);
-    if (isdefined(level.var_6a438cde) && level.var_6a438cde) {
+    if (isdefined(level.b_create_upgraded_crossbow_watchers) && level.b_create_upgraded_crossbow_watchers) {
         function_e6400478(#"special_crossbow_t8_upgraded", &createspecialcrossbowwatchertypes, 1);
     }
 }
@@ -91,11 +91,11 @@ function createtactinsertwatcher(watcher) {
 // Size: 0x86
 function creatercbombwatcher(watcher) {
     watcher.altdetonate = 0;
-    watcher.var_cf3d8844 = 1;
+    watcher.ismovable = 1;
     watcher.ownergetsassist = 1;
     watcher.playdestroyeddialog = 0;
     watcher.deleteonkillbrush = 0;
-    watcher.ondetonatecallback = level.var_19b42c74;
+    watcher.ondetonatecallback = level.rcbombonblowup;
     watcher.stuntime = 1;
     watcher.notequipment = 1;
 }
@@ -106,12 +106,12 @@ function creatercbombwatcher(watcher) {
 // Size: 0x9a
 function createqrdronewatcher(watcher) {
     watcher.altdetonate = 0;
-    watcher.var_cf3d8844 = 1;
+    watcher.ismovable = 1;
     watcher.ownergetsassist = 1;
     watcher.playdestroyeddialog = 0;
     watcher.deleteonkillbrush = 0;
-    watcher.ondetonatecallback = level.var_97b3d697;
-    watcher.ondamage = level.var_5a2f8f1f;
+    watcher.ondetonatecallback = level.qrdroneonblowup;
+    watcher.ondamage = level.qrdroneondamage;
     watcher.stuntime = 5;
     watcher.notequipment = 1;
 }
@@ -230,9 +230,9 @@ function function_f0e307a2(watcher, player) {
 // Size: 0xc4
 function function_b70eb3a9(watcher, player) {
     pos = self.origin + vectorscale((0, 0, 1), 15);
-    self.var_faa71693 = spawn("trigger_radius", pos, 0, 50, 50);
-    self.var_faa71693 setteamfortrigger(player.team);
-    self.var_faa71693.owner = player;
+    self.ammo_trigger = spawn("trigger_radius", pos, 0, 50, 50);
+    self.ammo_trigger setteamfortrigger(player.team);
+    self.ammo_trigger.owner = player;
     self thread function_5742754c();
     self thread function_42eeab72(self);
 }
@@ -244,13 +244,13 @@ function function_b70eb3a9(watcher, player) {
 function function_5742754c() {
     station = self;
     station endon(#"death");
-    if (!isdefined(station.var_e66dbbd1)) {
-        station.var_e66dbbd1 = 0;
+    if (!isdefined(station.ammo_resupplies_given)) {
+        station.ammo_resupplies_given = 0;
     }
     /#
-        assert(isdefined(station.var_faa71693));
+        assert(isdefined(station.ammo_trigger));
     #/
-    trigger = station.var_faa71693;
+    trigger = station.ammo_trigger;
     while (isdefined(trigger)) {
         waitresult = undefined;
         waitresult = trigger waittill(#"touch");
@@ -281,12 +281,12 @@ function function_e98cee52(player, station) {
     if (!var_c20b09e1) {
         return;
     }
-    if (!isdefined(station.var_99c10edf)) {
-        station.var_99c10edf = [];
+    if (!isdefined(station.last_ammo_resupply_time)) {
+        station.last_ammo_resupply_time = [];
     }
-    station.var_99c10edf[player getentitynumber()] = gettime();
-    station.var_e66dbbd1++;
-    if (station.var_e66dbbd1 >= 1) {
+    station.last_ammo_resupply_time[player getentitynumber()] = gettime();
+    station.ammo_resupplies_given++;
+    if (station.ammo_resupplies_given >= 1) {
         station function_f47cd4cb();
         station delete();
     }
@@ -319,8 +319,8 @@ function function_42eeab72(station) {
 // Checksum 0x3c03a841, Offset: 0x10e0
 // Size: 0x2c
 function function_f47cd4cb() {
-    if (isdefined(self.var_faa71693)) {
-        self.var_faa71693 delete();
+    if (isdefined(self.ammo_trigger)) {
+        self.ammo_trigger delete();
     }
 }
 
@@ -329,15 +329,15 @@ function function_f47cd4cb() {
 // Checksum 0xc19cf275, Offset: 0x1118
 // Size: 0xe4
 function delayedspikedetonation(attacker, weapon) {
-    if (!isdefined(self.owner.var_98332466)) {
-        self.owner.var_98332466 = 0;
+    if (!isdefined(self.owner.spikedelay)) {
+        self.owner.spikedelay = 0;
     }
-    delaytime = self.owner.var_98332466;
+    delaytime = self.owner.spikedelay;
     owner = self.owner;
-    self.owner.var_98332466 = self.owner.var_98332466 + 0.3;
+    self.owner.spikedelay = self.owner.spikedelay + 0.3;
     waittillframeend();
     wait(delaytime);
-    owner.var_98332466 = owner.var_98332466 - 0.3;
+    owner.spikedelay = owner.spikedelay - 0.3;
     if (isdefined(self)) {
         self weapondetonate(attacker, weapon);
     }
@@ -362,8 +362,8 @@ function spikedetonate(attacker, weapon, target) {
 // Checksum 0x7a42ed3, Offset: 0x1280
 // Size: 0x38
 function onspawnhatchet(watcher, player) {
-    if (isdefined(level.var_5c1e9085)) {
-        player [[ level.var_5c1e9085 ]]();
+    if (isdefined(level.playthrowhatchet)) {
+        player [[ level.playthrowhatchet ]]();
     }
 }
 

@@ -25,7 +25,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xf819b318, Offset: 0x230
 // Size: 0x28c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.select_character = ct_utils::get_roleindex(#"prt_mp_buffassault");
     level.var_820c5561 = "CRASH";

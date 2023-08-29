@@ -95,7 +95,7 @@ function function_cfc02934() {
 // Params 1, eflags: 0x40
 // Checksum 0x14ee8894, Offset: 0xbf0
 // Size: 0xac
-function event<player_medal> codecallback_medal(eventstruct) {
+function event_handler[player_medal] codecallback_medal(eventstruct) {
     if (isdefined(eventstruct) && isdefined(eventstruct.var_7fcb97e3) && isdefined(level.scoreinfo) && isdefined(level.scoreinfo[eventstruct.var_7fcb97e3])) {
         medalinfo = level.scoreinfo[eventstruct.var_7fcb97e3];
         self give_xp("medal", #"medalxp", medalinfo[#"xp"]);
@@ -1001,7 +1001,7 @@ function function_6c478b00(params) {
 // Params 1, eflags: 0x44
 // Checksum 0x44bd2c0, Offset: 0x4c88
 // Size: 0xe4
-function event<grenade_fire> private function_4776caf4(eventstruct) {
+function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
     if (level.inprematchperiod) {
         return;
     }
@@ -1196,7 +1196,7 @@ function on_item_pickup(params) {
 // Params 1, eflags: 0x44
 // Checksum 0xbc6378d5, Offset: 0x5e98
 // Size: 0x204
-function event<event_cf200f34> private function_209450ae(eventstruct) {
+function event_handler[event_cf200f34] private function_209450ae(eventstruct) {
     if (level.inprematchperiod) {
         return;
     }

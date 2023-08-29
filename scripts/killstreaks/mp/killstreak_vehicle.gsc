@@ -58,7 +58,7 @@ function init_vehicle() {
     vehicle enableaimassist();
     vehicle setdrawinfrared(1);
     vehicle.delete_on_death = 1;
-    vehicle.var_3de40e43 = &function_3c6cec8b;
+    vehicle.death_enter_cb = &function_3c6cec8b;
     vehicle.disableremoteweaponswitch = 1;
     vehicle.overridevehicledamage = &on_damage;
     vehicle.overridevehiclekilled = &on_death;
@@ -189,7 +189,7 @@ function activate_vehicle(type) {
     vehicle.health = bundle.kshealth;
     vehicle.maxhealth = bundle.kshealth;
     vehicle.hackedhealth = bundle.kshackedhealth;
-    vehicle.var_ce904ce = &function_f07460c5;
+    vehicle.hackedhealthupdatecallback = &function_f07460c5;
     vehicle.ignore_vehicle_underneath_splash_scalar = 1;
     if (isdefined(bundle.ksweapon)) {
         vehicle setweapon(bundle.ksweapon);

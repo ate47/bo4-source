@@ -56,7 +56,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x83012142, Offset: 0x7a0
 // Size: 0x73c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     level.var_f5682bb8 = zm_arcade_timer::register("zm_arcade_timer");
     level.var_f995ece6 = zm_trial_timer::register("zm_trial_timer");
     level.var_b9f167ba = self_revive_visuals_rush::register("self_revive_visuals_rush");

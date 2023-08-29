@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x96fa02a4, Offset: 0x118
 // Size: 0xc6
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     load::main();
     level function_89088577();
     level spawnkilltrigger();

@@ -56,8 +56,8 @@ function localclientconnect(localclientnum) {
     /#
         println("<unknown string>" + localclientnum);
     #/
-    if (isdefined(level.var_51b3e4e0)) {
-        [[ level.var_51b3e4e0 ]](localclientnum);
+    if (isdefined(level.charactercustomizationsetup)) {
+        [[ level.charactercustomizationsetup ]](localclientnum);
     }
     callback(#"on_localclient_connect", localclientnum);
 }
@@ -252,7 +252,7 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         data.endpoint = pos + vectorscale(anglestoforward(direction), planehalfdistance);
         data.planemodel = "t5_veh_air_b52";
         data.flybysound = "null";
-        data.var_47bf2bb5 = #"veh_b52_flyby_wash";
+        data.washsound = #"veh_b52_flyby_wash";
         data.apextime = 6145;
         data.exittype = -1;
         data.flyspeed = 2000;
@@ -265,7 +265,7 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         data.endpoint = pos + vectorscale(anglestoforward(direction), planehalfdistance);
         data.planemodel = airsupport::getplanemodel(teamfaction);
         data.flybysound = "null";
-        data.var_47bf2bb5 = #"evt_us_napalm_wash";
+        data.washsound = #"evt_us_napalm_wash";
         data.apextime = 2362;
         data.exittype = exittype;
         data.flyspeed = 7000;

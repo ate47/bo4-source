@@ -16,7 +16,7 @@
 #include scripts/zm_common/zm_equipment.gsc;
 #include scripts/zm_common/zm_characters.gsc;
 #include scripts/zm_common/ai/zm_ai_utility.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/exploder_shared.gsc;
 #include scripts/core_common/vehicle_shared.gsc;

@@ -10,7 +10,7 @@
 // Params 4, eflags: 0x21 linked
 // Checksum 0x41ce9769, Offset: 0xa0
 // Size: 0x196
-function filter(array&, b_keep_keys, func_filter, vararg...) {
+function filter(&array, b_keep_keys, func_filter, ...) {
     a_new = [];
     foreach (key, val in array) {
         a_args = arraycombine(array(val), vararg, 1, 0);
@@ -35,7 +35,7 @@ function filter(array&, b_keep_keys, func_filter, vararg...) {
 // Params 2, eflags: 0x0
 // Checksum 0x484af635, Offset: 0x240
 // Size: 0x3a
-function remove_undefined(array&, b_keep_keys) {
+function remove_undefined(&array, b_keep_keys) {
     return filter(array, b_keep_keys, &_filter_undefined);
 }
 
@@ -43,7 +43,7 @@ function remove_undefined(array&, b_keep_keys) {
 // Params 2, eflags: 0x0
 // Checksum 0x8a6c46a7, Offset: 0x288
 // Size: 0x3a
-function remove_dead(array&, b_keep_keys) {
+function remove_dead(&array, b_keep_keys) {
     return filter(array, b_keep_keys, &_filter_dead);
 }
 
@@ -51,7 +51,7 @@ function remove_dead(array&, b_keep_keys) {
 // Params 3, eflags: 0x0
 // Checksum 0x3b6665e7, Offset: 0x2d0
 // Size: 0x42
-function filter_classname(array&, b_keep_keys, str_classname) {
+function filter_classname(&array, b_keep_keys, str_classname) {
     return filter(array, b_keep_keys, &_filter_classname, str_classname);
 }
 
@@ -59,7 +59,7 @@ function filter_classname(array&, b_keep_keys, str_classname) {
 // Params 3, eflags: 0x0
 // Checksum 0x88dbd526, Offset: 0x320
 // Size: 0x42
-function function_f23011ac(array&, b_keep_keys, str_classname) {
+function function_f23011ac(&array, b_keep_keys, str_classname) {
     return filter(array, b_keep_keys, &function_e01a747e, str_classname);
 }
 
@@ -104,7 +104,7 @@ function remove_index(array, index, b_keep_keys) {
 // Params 2, eflags: 0x0
 // Checksum 0xf0a3e719, Offset: 0x550
 // Size: 0xf0
-function delete_all(array&, is_struct) {
+function delete_all(&array, is_struct) {
     foreach (ent in array) {
         if (isdefined(ent)) {
             if (isdefined(is_struct) && is_struct) {
@@ -124,7 +124,7 @@ function delete_all(array&, is_struct) {
 // Params 2, eflags: 0x0
 // Checksum 0xea168041, Offset: 0x648
 // Size: 0x7c
-function notify_all(array&, str_notify) {
+function notify_all(&array, str_notify) {
     foreach (elem in array) {
         elem notify(str_notify);
     }
@@ -134,7 +134,7 @@ function notify_all(array&, str_notify) {
 // Params 8, eflags: 0x1 linked
 // Checksum 0x1e007946, Offset: 0x6d0
 // Size: 0x16c
-function thread_all(entities&, func, arg1, arg2, arg3, arg4, arg5, arg6) {
+function thread_all(&entities, func, arg1, arg2, arg3, arg4, arg5, arg6) {
     /#
         assert(isdefined(entities), "<unknown string>");
     #/
@@ -157,7 +157,7 @@ function thread_all(entities&, func, arg1, arg2, arg3, arg4, arg5, arg6) {
 // Params 7, eflags: 0x0
 // Checksum 0x47376013, Offset: 0x848
 // Size: 0x154
-function thread_all_ents(entities&, func, arg1, arg2, arg3, arg4, arg5) {
+function thread_all_ents(&entities, func, arg1, arg2, arg3, arg4, arg5) {
     /#
         assert(isdefined(entities), "<unknown string>");
     #/
@@ -177,7 +177,7 @@ function thread_all_ents(entities&, func, arg1, arg2, arg3, arg4, arg5) {
 // Params 8, eflags: 0x1 linked
 // Checksum 0xa4f19ad9, Offset: 0x9a8
 // Size: 0x164
-function run_all(entities&, func, arg1, arg2, arg3, arg4, arg5, arg6) {
+function run_all(&entities, func, arg1, arg2, arg3, arg4, arg5, arg6) {
     /#
         assert(isdefined(entities), "<unknown string>");
     #/
@@ -213,7 +213,7 @@ function exclude(array, array_exclude) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xb73ba5e6, Offset: 0xbf8
 // Size: 0x6c
-function add(array&, item, allow_dupes = 1) {
+function add(&array, item, allow_dupes = 1) {
     if (isdefined(item)) {
         if (allow_dupes || !isinarray(array, item)) {
             array[array.size] = item;
@@ -225,7 +225,7 @@ function add(array&, item, allow_dupes = 1) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0xfef586d1, Offset: 0xc70
 // Size: 0x132
-function add_sorted(array&, item, allow_dupes = 1, func_compare, var_e19f0739 = 0) {
+function add_sorted(&array, item, allow_dupes = 1, func_compare, var_e19f0739 = 0) {
     if (isdefined(item)) {
         if (allow_dupes || !isinarray(array, item)) {
             for (i = 0; i <= array.size; i++) {
@@ -242,7 +242,7 @@ function add_sorted(array&, item, allow_dupes = 1, func_compare, var_e19f0739 = 
 // Params 3, eflags: 0x1 linked
 // Checksum 0x5e0fa642, Offset: 0xdb0
 // Size: 0x154
-function wait_till(array&, notifies, n_timeout) {
+function wait_till(&array, notifies, n_timeout) {
     if (isdefined(n_timeout)) {
         __s = spawnstruct();
         __s endon(#"timeout");
@@ -264,7 +264,7 @@ function wait_till(array&, notifies, n_timeout) {
 // Params 4, eflags: 0x0
 // Checksum 0x5693e626, Offset: 0xf10
 // Size: 0x194
-function wait_till_match(array&, str_notify, str_match, n_timeout) {
+function wait_till_match(&array, str_notify, str_match, n_timeout) {
     if (isdefined(n_timeout)) {
         __s = spawnstruct();
         __s endon(#"timeout");
@@ -318,7 +318,7 @@ function update_waitlogic_tracker(s_tracker) {
 // Params 2, eflags: 0x0
 // Checksum 0x9584a3f1, Offset: 0x1198
 // Size: 0x7e
-function flag_wait(array&, str_flag) {
+function flag_wait(&array, str_flag) {
     for (i = 0; i < array.size; i++) {
         ent = array[i];
         if (!ent flag::get(str_flag)) {
@@ -332,7 +332,7 @@ function flag_wait(array&, str_flag) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x46ed9870, Offset: 0x1220
 // Size: 0x7e
-function flagsys_wait(array&, str_flag) {
+function flagsys_wait(&array, str_flag) {
     for (i = 0; i < array.size; i++) {
         ent = array[i];
         if (!ent flagsys::get(str_flag)) {
@@ -346,7 +346,7 @@ function flagsys_wait(array&, str_flag) {
 // Params 2, eflags: 0x21 linked
 // Checksum 0x61dba8a2, Offset: 0x12a8
 // Size: 0x106
-function flagsys_wait_any_flag(array&, vararg...) {
+function flagsys_wait_any_flag(&array, ...) {
     for (i = 0; i < array.size; i++) {
         ent = array[i];
         if (isdefined(ent)) {
@@ -369,7 +369,7 @@ function flagsys_wait_any_flag(array&, vararg...) {
 // Params 2, eflags: 0x0
 // Checksum 0x5f9c4e62, Offset: 0x13b8
 // Size: 0xac
-function flagsys_wait_any(array&, str_flag) {
+function flagsys_wait_any(&array, str_flag) {
     foreach (ent in array) {
         if (ent flagsys::get(str_flag)) {
             return ent;
@@ -382,7 +382,7 @@ function flagsys_wait_any(array&, str_flag) {
 // Params 2, eflags: 0x0
 // Checksum 0x953ec17d, Offset: 0x1470
 // Size: 0x7e
-function flag_wait_clear(array&, str_flag) {
+function flag_wait_clear(&array, str_flag) {
     for (i = 0; i < array.size; i++) {
         ent = array[i];
         if (ent flag::get(str_flag)) {
@@ -396,7 +396,7 @@ function flag_wait_clear(array&, str_flag) {
 // Params 3, eflags: 0x0
 // Checksum 0x88541fd2, Offset: 0x14f8
 // Size: 0xf6
-function flagsys_wait_clear(array&, str_flag, n_timeout) {
+function flagsys_wait_clear(&array, str_flag, n_timeout) {
     if (isdefined(n_timeout)) {
         __s = spawnstruct();
         __s endon(#"timeout");
@@ -497,7 +497,7 @@ function reverse(array) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0x2245fb99, Offset: 0x1a10
 // Size: 0xd0
-function slice(array&, var_12692bcf = 0, var_d88b3814 = 2147483647, n_increment = 1) {
+function slice(&array, var_12692bcf = 0, var_d88b3814 = 2147483647, n_increment = 1) {
     var_d88b3814 = min(var_d88b3814, array.size - 1);
     a_ret = [];
     i = var_12692bcf;
@@ -526,7 +526,7 @@ function remove_keys(array) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x2152b044, Offset: 0x1b88
 // Size: 0xa8
-function swap(array&, index1, index2) {
+function swap(&array, index1, index2) {
     /#
         assert(index1 < array.size, "<unknown string>");
     #/
@@ -542,7 +542,7 @@ function swap(array&, index1, index2) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x400e5a50, Offset: 0x1c38
 // Size: 0xa2
-function pop(array&, index, b_keep_keys = 1) {
+function pop(&array, index, b_keep_keys = 1) {
     if (array.size > 0) {
         if (!isdefined(index)) {
             index = getfirstarraykey(array);
@@ -559,7 +559,7 @@ function pop(array&, index, b_keep_keys = 1) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x6770cd71, Offset: 0x1ce8
 // Size: 0x64
-function push(array&, val, index = getlastarraykey(array) + 1) {
+function push(&array, val, index = getlastarraykey(array) + 1) {
     arrayinsert(array, val, index);
 }
 
@@ -567,7 +567,7 @@ function push(array&, val, index = getlastarraykey(array) + 1) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x3e81c04c, Offset: 0x1d58
 // Size: 0x34
-function push_front(array&, val) {
+function push_front(&array, val) {
     push(array, val, 0);
 }
 
@@ -596,7 +596,7 @@ function private function_80fe1cb6(a, b) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x3d70a32a, Offset: 0x1e68
 // Size: 0x7c
-function find(array&, ent, func_compare = &function_80fe1cb6) {
+function find(&array, ent, func_compare = &function_80fe1cb6) {
     for (i = 0; i < array.size; i++) {
         if ([[ func_compare ]](array[i], ent)) {
             return i;
@@ -624,7 +624,7 @@ function fartherfunc(dist1, dist2) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0x1b2acd02, Offset: 0x1f40
 // Size: 0x2f8
-function get_all_closest(org, array&, excluders = [], max = array.size, maxdist) {
+function get_all_closest(org, &array, excluders = [], max = array.size, maxdist) {
     maxdists2rd = undefined;
     if (isdefined(maxdist)) {
         maxdists2rd = maxdist * maxdist;
@@ -685,7 +685,7 @@ function get_all_closest(org, array&, excluders = [], max = array.size, maxdist)
 // Params 1, eflags: 0x1 linked
 // Checksum 0x4504701a, Offset: 0x2240
 // Size: 0x22
-function alphabetize(array&) {
+function alphabetize(&array) {
     return sort_by_value(array, 1);
 }
 
@@ -693,7 +693,7 @@ function alphabetize(array&) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x67c6bb11, Offset: 0x2270
 // Size: 0x42
-function sort_by_value(array&, b_lowest_first = 0) {
+function sort_by_value(&array, b_lowest_first = 0) {
     return merge_sort(array, &_compare_value, b_lowest_first);
 }
 
@@ -701,7 +701,7 @@ function sort_by_value(array&, b_lowest_first = 0) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc88eab87, Offset: 0x22c0
 // Size: 0x42
-function sort_by_script_int(a_ents&, b_lowest_first = 0) {
+function sort_by_script_int(&a_ents, b_lowest_first = 0) {
     return merge_sort(a_ents, &_compare_script_int, b_lowest_first);
 }
 
@@ -709,7 +709,7 @@ function sort_by_script_int(a_ents&, b_lowest_first = 0) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xf2b33062, Offset: 0x2310
 // Size: 0x1ba
-function merge_sort(current_list&, func_sort, param) {
+function merge_sort(&current_list, func_sort, param) {
     if (current_list.size <= 1) {
         return current_list;
     }
@@ -777,7 +777,7 @@ function merge(left, right, func_sort, param) {
 // Params 2, eflags: 0x0
 // Checksum 0xc2f9394, Offset: 0x2660
 // Size: 0x196
-function function_b63fcb3(array&, sort_func) {
+function function_b63fcb3(&array, sort_func) {
     start = 0;
     end = array.size;
     var_f9038db1 = 1;
@@ -811,7 +811,7 @@ function function_b63fcb3(array&, sort_func) {
 // Params 7, eflags: 0x0
 // Checksum 0xced66052, Offset: 0x2800
 // Size: 0x19c
-function spread_all(entities&, func, arg1, arg2, arg3, arg4, arg5) {
+function spread_all(&entities, func, arg1, arg2, arg3, arg4, arg5) {
     /#
         assert(isdefined(entities), "<unknown string>");
     #/
@@ -835,7 +835,7 @@ function spread_all(entities&, func, arg1, arg2, arg3, arg4, arg5) {
 // Params 2, eflags: 0x0
 // Checksum 0x1d10423c, Offset: 0x29a8
 // Size: 0x38
-function wait_till_touching(a_ents&, e_volume) {
+function wait_till_touching(&a_ents, e_volume) {
     while (!is_touching(a_ents, e_volume)) {
         waitframe(1);
     }
@@ -845,7 +845,7 @@ function wait_till_touching(a_ents&, e_volume) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc2a4c9c, Offset: 0x29e8
 // Size: 0x92
-function is_touching(a_ents&, e_volume) {
+function is_touching(&a_ents, e_volume) {
     foreach (e_ent in a_ents) {
         if (!e_ent istouching(e_volume)) {
             return 0;
@@ -874,7 +874,7 @@ function contains(array_or_val, value) {
 // Params 2, eflags: 0x0
 // Checksum 0x3c549428, Offset: 0x2b40
 // Size: 0x60
-function quick_sort(array&, compare_func) {
+function quick_sort(&array, compare_func) {
     sorted_array = arraycopy(array);
     quick_sort_mid(sorted_array, 0, sorted_array.size - 1, compare_func);
     return sorted_array;
@@ -884,7 +884,7 @@ function quick_sort(array&, compare_func) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0x8666d7fd, Offset: 0x2ba8
 // Size: 0x14c
-function quick_sort_mid(array&, start, end, compare_func) {
+function quick_sort_mid(&array, start, end, compare_func) {
     if (end - start >= 1) {
         if (!isdefined(compare_func)) {
             compare_func = &_compare_value;

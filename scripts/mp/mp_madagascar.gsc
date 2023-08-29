@@ -17,7 +17,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x78b0a8b3, Offset: 0x148
 // Size: 0x11c
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     mp_madagascar_fx::main();
     mp_madagascar_sound::main();
     setdvar(#"hash_3910a4196fe6b62e", 0);

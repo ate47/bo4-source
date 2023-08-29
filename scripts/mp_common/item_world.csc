@@ -1077,7 +1077,7 @@ function private function_34418003(localclientnum, eyepos, angles) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xbbb10e1f, Offset: 0x5140
 // Size: 0x2ba
-function private function_5cbe24ea(dest&, source&, order&) {
+function private function_5cbe24ea(&dest, &source, &order) {
     items = [];
     foreach (item in source) {
         if (!isdefined(item)) {
@@ -1115,7 +1115,7 @@ function private function_5cbe24ea(dest&, source&, order&) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x47abbede, Offset: 0x5408
 // Size: 0xa70
-function private function_43d3ebe1(items&) {
+function private function_43d3ebe1(&items) {
     /#
         assert(isplayer(self));
     #/

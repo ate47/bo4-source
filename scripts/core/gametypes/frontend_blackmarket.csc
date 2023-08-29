@@ -56,17 +56,17 @@ function function_78a5c895(localclientnum, menu_data) {
 // Size: 0x29e
 function function_8aff1931(localclientnum, menu_data) {
     level notify(#"hash_1a6765b456dde230");
-    level endon(#"hash_1a6765b456dde230", #"hash_2467a4ba67689fe1");
+    level endon(#"hash_1a6765b456dde230", #"blackmarket_closed");
     while (1) {
         waitresult = undefined;
-        waitresult = level waittill(#"hash_46e5b5e04de68671");
+        waitresult = level waittill(#"blackjackreserve");
         if (isdefined(waitresult.open) && !waitresult.open) {
             function_99278be8(localclientnum, menu_data);
         } else {
             switch (waitresult.status) {
-            case #"hash_6d2a0d82cde87c3c":
+            case #"opencrate":
                 if (waitresult.result) {
-                    switch (hash(waitresult.var_7c4b58bd)) {
+                    switch (hash(waitresult.crateid)) {
                     case #"1000":
                         level thread function_f559e439(localclientnum, menu_data, "loot_case");
                         break;
@@ -81,7 +81,7 @@ function function_8aff1931(localclientnum, menu_data) {
             case #"playsound":
                 level.var_ca61b442 = playsound(localclientnum, waitresult.soundalias);
                 break;
-            case #"hash_22573eece2ec97a2":
+            case #"stopplaysound":
                 stopsound(level.var_ca61b442);
                 level.var_ca61b442 = playsound(localclientnum, waitresult.soundalias);
                 break;
@@ -152,16 +152,16 @@ function function_f559e439(localclientnum, menu_data, state) {
     level.var_cf24a85f.var_5a133766 = 0;
     switch (hash(state)) {
     case #"hash_1f8afff27df8492":
-    case #"hash_19e85451b581aa65":
+    case #"welcome_empty":
     case #"hash_5005f24cf98a0530":
     case #"hash_5c87d0d1cc24e8b0":
     case #"hash_5e0f6f6c23dde3e9":
         level.var_cf24a85f.var_5a133766 = 1;
-        level.var_cf24a85f.var_46d8e7d1 = hash(state) != #"hash_19e85451b581aa65";
+        level.var_cf24a85f.var_46d8e7d1 = hash(state) != #"welcome_empty";
         var_f56984dc = "idle";
         break;
     case #"hash_2c6dd0b59031c5ad":
-    case #"hash_31c4c4c8b87dc6a4":
+    case #"loot_case":
         var_ce1b87cf = #"scene_frontend_blackjack_case";
         if (state == "loot_case_open") {
             var_f56984dc = "crateidle";
@@ -171,10 +171,10 @@ function function_f559e439(localclientnum, menu_data, state) {
                 var_f56984dc = "crate";
             }
             level.var_cf24a85f.var_63efd7bf = "loot_case";
-            var_ac97b37c = #"hash_31c4c4c8b87dc6a4";
+            var_ac97b37c = #"loot_case";
         }
         break;
-    case #"hash_1608d0b1f569d973":
+    case #"loot_crate":
     case #"hash_5782738d595b7e44":
         var_ce1b87cf = #"scene_frontend_blackjack_crate";
         if (state == "loot_crate_open") {
@@ -185,7 +185,7 @@ function function_f559e439(localclientnum, menu_data, state) {
                 var_f56984dc = "crate";
             }
             level.var_cf24a85f.var_63efd7bf = "loot_crate";
-            var_ac97b37c = #"hash_1608d0b1f569d973";
+            var_ac97b37c = #"loot_crate";
         }
         break;
     }
@@ -293,7 +293,7 @@ function function_fa73161a(localclientnum, menu_data, state) {
 function function_feaafe07(localclientnum, state) {
     var_24282d8c = [];
     switch (hash(state)) {
-    case #"hash_31c4c4c8b87dc6a4":
+    case #"loot_case":
         if (!isdefined(var_24282d8c)) {
             var_24282d8c = [];
         } else if (!isarray(var_24282d8c)) {
@@ -303,7 +303,7 @@ function function_feaafe07(localclientnum, state) {
             var_24282d8c[var_24282d8c.size] = "fxexp_blkjck_case_gen";
         }
         break;
-    case #"hash_1608d0b1f569d973":
+    case #"loot_crate":
         if (!isdefined(var_24282d8c)) {
             var_24282d8c = [];
         } else if (!isarray(var_24282d8c)) {
@@ -348,10 +348,10 @@ function function_2f3c1d65(localclientnum, menu_data, state) {
         waitframe(1);
     }
     switch (hash(state)) {
-    case #"hash_31c4c4c8b87dc6a4":
+    case #"loot_case":
         function_f559e439(localclientnum, menu_data, "loot_case_open");
         break;
-    case #"hash_1608d0b1f569d973":
+    case #"loot_crate":
         function_f559e439(localclientnum, menu_data, "loot_crate_open");
         break;
     }

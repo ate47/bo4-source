@@ -402,11 +402,11 @@ class csceneplayer : csceneobject {
     // Checksum 0xaa85d6bf, Offset: 0x4ff0
     // Size: 0x12c
     function set_player_stance(player) {
-        if (self._s.var_94fa5e2b === "crouch") {
+        if (self._s.playerstance === "crouch") {
             player allowstand(0);
             player allowcrouch(1);
             player allowprone(0);
-        } else if (self._s.var_94fa5e2b === "prone") {
+        } else if (self._s.playerstance === "prone") {
             player allowstand(0);
             player allowcrouch(0);
             player allowprone(1);

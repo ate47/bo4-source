@@ -188,7 +188,7 @@ function heli_deletefx(localclientnum) {
         deletefx(localclientnum, self.exhaustleftfxhandle);
         self.exhaustleftfxhandle = undefined;
     }
-    if (isdefined(self.var_236cfe1a)) {
+    if (isdefined(self.exhaustrightfxhandlee)) {
         deletefx(localclientnum, self.exhaustrightfxhandle);
         self.exhaustrightfxhandle = undefined;
     }

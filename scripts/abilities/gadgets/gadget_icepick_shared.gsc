@@ -95,7 +95,7 @@ function function_3e3330bc() {
 // Params 1, eflags: 0x40
 // Checksum 0x63166fd, Offset: 0xac8
 // Size: 0xc
-function event<event_36cd4a90> function_9497a4f3(eventstruct) {
+function event_handler[event_36cd4a90] function_9497a4f3(eventstruct) {
     
 }
 
@@ -442,7 +442,7 @@ function private function_73d5db3b(player) {
 // Params 2, eflags: 0x4
 // Checksum 0x1f6c0cd6, Offset: 0x1cb0
 // Size: 0x2c
-function private function_d65b8dbe(array&, sort_func) {
+function private function_d65b8dbe(&array, sort_func) {
     array::function_b63fcb3(array, sort_func);
 }
 
@@ -450,7 +450,7 @@ function private function_d65b8dbe(array&, sort_func) {
 // Params 2, eflags: 0x4
 // Checksum 0x15aae6fd, Offset: 0x1ce8
 // Size: 0x2c
-function private function_f1f877e0(array&, sort_func) {
+function private function_f1f877e0(&array, sort_func) {
     array::function_b63fcb3(array, sort_func);
 }
 
@@ -458,7 +458,7 @@ function private function_f1f877e0(array&, sort_func) {
 // Params 2, eflags: 0x4
 // Checksum 0x60f3b2db, Offset: 0x1d20
 // Size: 0x2c
-function private sort_vehicles(array&, sort_func) {
+function private sort_vehicles(&array, sort_func) {
     array::function_b63fcb3(array, sort_func);
 }
 

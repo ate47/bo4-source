@@ -94,7 +94,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0x58ca74c9, Offset: 0x1568
 // Size: 0xcc6
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     setclearanceceiling(24);
     level._uses_default_wallbuy_fx = 1;
     level._uses_sticky_grenades = 1;

@@ -8,7 +8,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x431ff8d1, Offset: 0x78
 // Size: 0x6a
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     precache();
     setmapcenter((0, 0, 0));
     core_frontend_fx::main();

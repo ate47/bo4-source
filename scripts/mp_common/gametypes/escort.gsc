@@ -35,8 +35,8 @@
 #include scripts/core_common/clientfield_shared.gsc;
 #include scripts/core_common/callbacks_shared.gsc;
 #include scripts/core_common/ai_shared.gsc;
-#include script_35598499769dbb3d;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 #include scripts/core_common/ai/archetype_utility.gsc;
 #include scripts/core_common/ai/archetype_robot.gsc;
 #include script_3819e7a1427df6d2;
@@ -68,7 +68,7 @@ function __init__() {
 // Params 1, eflags: 0x40
 // Checksum 0x60aed8f9, Offset: 0xa90
 // Size: 0x53c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     util::registertimelimit(0, 1440);
     util::registerroundscorelimit(0, 2000);
@@ -80,27 +80,27 @@ function event<gametype_init> main(eventstruct) {
     level.bootTime = getgametypesetting(#"bootTime");
     level.rebootTime = getgametypesetting(#"rebootTime");
     level.rebootPlayers = getgametypesetting(#"rebootPlayers");
-    level.var_24b79196 = getgametypesetting(#"hash_7add838fc1bf8a8e");
-    level.var_a6ffdf8d = getgametypesetting(#"hash_75aa1b4ab753e35e");
+    level.moveplayers = getgametypesetting(#"moveplayers");
+    level.robotshield = getgametypesetting(#"robotshield");
     level.robotSpeed = "run";
     level.var_cdb8ae2c = &function_a8da260c;
     switch (getgametypesetting(#"shutdownDamage")) {
     case 1:
-        level.var_25a81c62 = "escort_robot_low";
+        level.escortrobotkillstreakbundle = "escort_robot_low";
         break;
     case 2:
-        level.var_25a81c62 = "escort_robot";
+        level.escortrobotkillstreakbundle = "escort_robot";
         break;
     case 3:
-        level.var_25a81c62 = "escort_robot_high";
+        level.escortrobotkillstreakbundle = "escort_robot_high";
     case 0:
     default:
         level.shutdownDamage = 0;
         break;
     }
-    if (isdefined(level.var_25a81c62)) {
-        killstreak_bundles::register_killstreak_bundle(level.var_25a81c62);
-        level.shutdownDamage = killstreak_bundles::get_max_health(level.var_25a81c62);
+    if (isdefined(level.escortrobotkillstreakbundle)) {
+        killstreak_bundles::register_killstreak_bundle(level.escortrobotkillstreakbundle);
+        level.shutdownDamage = killstreak_bundles::get_max_health(level.escortrobotkillstreakbundle);
     }
     switch (isdefined(getgametypesetting(#"robotSpeed")) ? getgametypesetting(#"robotSpeed") : 0) {
     case 1:
@@ -124,8 +124,8 @@ function event<gametype_init> main(eventstruct) {
     level.ontimelimit = &ontimelimit;
     level.onendround = &onendround;
     level.shouldplayovertimeround = &shouldplayovertimeround;
-    var_31e4b09c = function_a7ec8007();
-    level.var_e02589eb = function_9c0c4127(var_31e4b09c[0], var_31e4b09c);
+    var_31e4b09c = get_robot_path_array();
+    level.var_e02589eb = calc_robot_path_length(var_31e4b09c[0], var_31e4b09c);
     killstreak_bundles::register_killstreak_bundle("escort_robot");
     globallogic_spawn::addsupportedspawnpointtype("escort");
 }
@@ -160,11 +160,11 @@ function onstartgametype() {
             level.onendround = &function_c8a1552d;
         } else if (isdefined(game.var_8e2b660a)) {
             times = float(game.var_8e2b660a) / 1000;
-            var_bbf05134 = int(times) / 60;
-            util::registertimelimit(var_bbf05134, var_bbf05134);
+            timem = int(times) / 60;
+            util::registertimelimit(timem, timem);
         }
     }
-    level thread function_b38a0ce0();
+    level thread drop_robot();
 }
 
 // Namespace escort/escort
@@ -183,14 +183,14 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
     if (!isdefined(attacker) || attacker == self || !isplayer(attacker) || attacker.team == self.team) {
         return;
     }
-    if (self.team == game.defenders && isdefined(attacker.var_838ecd80) && attacker.var_838ecd80) {
+    if (self.team == game.defenders && isdefined(attacker.escortingrobot) && attacker.escortingrobot) {
         attacker recordgameevent("attacking");
         scoreevents::processscoreevent(#"killed_defender", attacker, self, weapon);
         attacker challenges::function_82bb78f7(weapon);
         [[ level.var_37d62931 ]](attacker, 1);
         attacker.pers[#"objectiveekia"]++;
         attacker.objectiveekia = attacker.pers[#"objectiveekia"];
-    } else if (self.team == game.attackers && isdefined(self.var_838ecd80) && self.var_838ecd80) {
+    } else if (self.team == game.attackers && isdefined(self.escortingrobot) && self.escortingrobot) {
         attacker recordgameevent("defending");
         scoreevents::processscoreevent(#"killed_attacker", attacker, self, weapon);
         attacker challenges::function_82bb78f7(weapon);
@@ -231,7 +231,7 @@ function onendround(var_c1e98979) {
         }
     #/
     if (isdefined(level.robot)) {
-        level.robot thread function_e9ad1736();
+        level.robot thread delete_on_endgame_sequence();
     }
 }
 
@@ -255,7 +255,7 @@ function function_c8a1552d(var_c1e98979) {
     default:
         break;
     }
-    level.robot thread function_e9ad1736();
+    level.robot thread delete_on_endgame_sequence();
 }
 
 // Namespace escort/escort
@@ -282,25 +282,25 @@ function shouldplayovertimeround() {
 // Checksum 0xa29c83f7, Offset: 0x1808
 // Size: 0xe
 function on_player_spawned() {
-    self.var_838ecd80 = undefined;
+    self.escortingrobot = undefined;
 }
 
 // Namespace escort/escort
 // Params 0, eflags: 0x1 linked
 // Checksum 0x585ba75d, Offset: 0x1820
 // Size: 0x8dc
-function function_b38a0ce0() {
+function drop_robot() {
     level endon(#"game_ended");
     globallogic::waitforplayers();
     if (overtime::is_overtime_round()) {
         globallogic_audio::leader_dialog("sfgStartOvertime");
     }
-    var_1646544f = getent("escort_robot_move_trig", "targetname");
-    var_289d873a = function_a7ec8007();
-    var_2bbd993b = var_289d873a[0] - var_1646544f.origin;
-    startangles = vectortoangles(var_2bbd993b);
-    drop_origin = var_1646544f.origin;
-    drop_height = isdefined(level.var_f32c0d57) ? level.var_f32c0d57 : supplydrop::getdropheight(drop_origin);
+    movetrigger = getent("escort_robot_move_trig", "targetname");
+    patharray = get_robot_path_array();
+    startdir = patharray[0] - movetrigger.origin;
+    startangles = vectortoangles(startdir);
+    drop_origin = movetrigger.origin;
+    drop_height = isdefined(level.escort_drop_height) ? level.escort_drop_height : supplydrop::getdropheight(drop_origin);
     heli_drop_goal = (drop_origin[0], drop_origin[1], drop_height);
     level.var_234c4109 = drop_origin;
     goalpath = undefined;
@@ -313,16 +313,16 @@ function function_b38a0ce0() {
     chopper.health = 999999;
     chopper setteam(game.attackers);
     chopper.spawntime = gettime();
-    var_710802a7 = isdefined(level.var_c206d875) ? level.var_c206d875 : getdvarint(#"hash_3b550686bec6f805", 1000);
-    var_96487324 = isdefined(level.var_2250f66a) ? level.var_2250f66a : getdvarint(#"hash_26017f6c33ae2cf6", 1000);
-    chopper setspeed(var_710802a7, var_96487324);
+    supplydropspeed = isdefined(level.escort_drop_speed) ? level.escort_drop_speed : getdvarint(#"scr_supplydropspeedstarting", 1000);
+    supplydropaccel = isdefined(level.escort_drop_accel) ? level.escort_drop_accel : getdvarint(#"scr_supplydropaccelstarting", 1000);
+    chopper setspeed(supplydropspeed, supplydropaccel);
     maxpitch = getdvarint(#"scr_supplydropmaxpitch", 25);
     maxroll = getdvarint(#"scr_supplydropmaxroll", 45);
     chopper setmaxpitchroll(0, maxroll);
     chopper setrotorspeed(1);
-    var_8d9f7441 = (0, 0, 0);
+    spawnposition = (0, 0, 0);
     spawnangles = (0, 0, 0);
-    level.robot = function_bf9b418c(var_8d9f7441, spawnangles);
+    level.robot = spawn_robot(spawnposition, spawnangles);
     level.robot.onground = undefined;
     level.robot.team = game.attackers;
     level.robot setforcenocull();
@@ -330,39 +330,39 @@ function function_b38a0ce0() {
     level.robot.dropundervehicleoriginoverride = 1;
     level.robot.targetangles = startangles;
     chopper vehicle::unload("all");
-    level.robot playsound(#"hash_7bac31e605fbae20");
-    chopper thread function_d33dc7f5();
+    level.robot playsound(#"evt_safeguard_robot_land");
+    chopper thread drop_heli_leave();
     while (level.robot flagsys::get(#"in_vehicle")) {
         wait(1);
     }
-    level.robot.var_289d873a = var_289d873a;
+    level.robot.patharray = patharray;
     level.robot.pathindex = 0;
     level.robot.victimsoundmod = "safeguard_robot";
-    level.robot.var_2db651d0 = 0;
-    level.robot thread function_f05d667f();
-    level.robot thread function_6b6768fc();
+    level.robot.goaljustblocked = 0;
+    level.robot thread update_stop_position();
+    level.robot thread watch_robot_damaged();
     level.robot thread function_dd7755c1();
-    level.robot thread function_2c3b1920();
-    level.robot thread function_a316d24();
-    level.robot.var_dff31122 = level.robot influencers::create_entity_friendly_influencer("escort_robot_attackers", game.attackers);
+    level.robot thread wait_robot_moving();
+    level.robot thread wait_robot_stopped();
+    level.robot.spawn_influencer_friendly = level.robot influencers::create_entity_friendly_influencer("escort_robot_attackers", game.attackers);
     /#
-        function_c8d55752();
-        level thread function_b0693b2c();
+        debug_draw_robot_path();
+        level thread debug_reset_robot_to_start();
     #/
-    level.var_171f17cc = function_b3d560f2(level.robot, "escort_robot_move_trig");
-    level.var_e1f98cba = function_c2fb1ec0(level.robot, "escort_robot_goal_trig");
-    function_9d7e4873(level.robot, "escort_robot_reboot_trig");
+    level.moveobject = setup_move_object(level.robot, "escort_robot_move_trig");
+    level.goalobject = setup_goal_object(level.robot, "escort_robot_goal_trig");
+    setup_reboot_object(level.robot, "escort_robot_reboot_trig");
     if (level.bootTime) {
-        level.var_171f17cc gameobjects::set_flags(1);
+        level.moveobject gameobjects::set_flags(1);
         level.robot setblackboardattribute("_stance", "crouch");
         level.robot ai::set_behavior_attribute("rogue_control_speed", level.robotSpeed);
-        level.robot function_4e5bb046();
+        level.robot shutdown_robot();
     } else {
-        objective_setprogress(level.var_171f17cc.objectiveid, 1);
-        level.var_171f17cc gameobjects::allow_use(#"friendly");
+        objective_setprogress(level.moveobject.objectiveid, 1);
+        level.moveobject gameobjects::allow_use(#"friendly");
     }
-    level.robot thread function_fe01da38();
-    level.robot thread function_7045a646();
+    level.robot thread wait_robot_shutdown();
+    level.robot thread wait_robot_reboot();
     while (level.inprematchperiod) {
         waitframe(1);
     }
@@ -370,9 +370,9 @@ function function_b38a0ce0() {
     level.robot.distancetraveled = 0;
     level.robot thread function_ba95878f();
     if (level.bootTime) {
-        level.robot thread function_c282aa58(level.bootTime);
-    } else if (level.var_24b79196 == 0) {
-        level.robot function_cd983806();
+        level.robot thread auto_reboot_robot(level.bootTime);
+    } else if (level.moveplayers == 0) {
+        level.robot move_robot();
     }
 }
 
@@ -380,12 +380,12 @@ function function_b38a0ce0() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xc85e2bb0, Offset: 0x2108
 // Size: 0x154
-function function_d33dc7f5() {
+function drop_heli_leave() {
     chopper = self;
     wait(1);
-    var_710802a7 = getdvarint(#"hash_5394e1e2dfd8c2c7", 250);
-    var_96487324 = getdvarint(#"hash_2c8ce11aa2f94da", 60);
-    chopper setspeed(var_710802a7, var_96487324);
+    supplydropspeed = getdvarint(#"scr_supplydropspeedleaving", 250);
+    supplydropaccel = getdvarint(#"scr_supplydropaccelleaving", 60);
+    chopper setspeed(supplydropspeed, supplydropaccel);
     goal = helicopter::getvalidrandomleavenode(chopper.origin, 1).origin;
     chopper setgoal(goal);
     chopper setneargoalnotifydist(400);
@@ -398,17 +398,17 @@ function function_d33dc7f5() {
 // Params 0, eflags: 0x0
 // Checksum 0x185f233a, Offset: 0x2268
 // Size: 0x1b8
-function function_c8d55752() {
+function debug_draw_robot_path() {
     /#
-        if ((isdefined(getdvarint(#"hash_5be9167d7fae9d8b", 0)) ? getdvarint(#"hash_5be9167d7fae9d8b", 0) : 0) == 0) {
+        if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
         debug_duration = 999999999;
-        pathnodes = level.robot.var_289d873a;
+        pathnodes = level.robot.patharray;
         for (i = 0; i < pathnodes.size - 1; i++) {
-            var_552d0ef5 = pathnodes[i];
+            currnode = pathnodes[i];
             nextnode = pathnodes[i + 1];
-            util::debug_line(var_552d0ef5, nextnode, vectorscale((0, 1, 0), 0.9), 0.9, 0, debug_duration);
+            util::debug_line(currnode, nextnode, vectorscale((0, 1, 0), 0.9), 0.9, 0, debug_duration);
         }
         foreach (path in pathnodes) {
             util::debug_sphere(path, 6, vectorscale((0, 0, 1), 0.9), 0.9, debug_duration);
@@ -420,17 +420,17 @@ function function_c8d55752() {
 // Params 1, eflags: 0x0
 // Checksum 0x1c54fb4b, Offset: 0x2428
 // Size: 0x1b0
-function function_4d2f7bfd(var_3b5dcf39&) {
+function debug_draw_approximate_robot_path_to_goal(&goalpatharray) {
     /#
-        if ((isdefined(getdvarint(#"hash_5be9167d7fae9d8b", 0)) ? getdvarint(#"hash_5be9167d7fae9d8b", 0) : 0) == 0) {
+        if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
         debug_duration = 60;
-        pathnodes = var_3b5dcf39;
+        pathnodes = goalpatharray;
         for (i = 0; i < pathnodes.size - 1; i++) {
-            var_552d0ef5 = pathnodes[i];
+            currnode = pathnodes[i];
             nextnode = pathnodes[i + 1];
-            util::debug_line(var_552d0ef5, nextnode, vectorscale((1, 1, 0), 0.9), 0.9, 0, debug_duration);
+            util::debug_line(currnode, nextnode, vectorscale((1, 1, 0), 0.9), 0.9, 0, debug_duration);
         }
         foreach (path in pathnodes) {
             util::debug_sphere(path, 3, (0, 0.5, 0.5), 0.9, debug_duration);
@@ -442,9 +442,9 @@ function function_4d2f7bfd(var_3b5dcf39&) {
 // Params 1, eflags: 0x0
 // Checksum 0x18e28ed7, Offset: 0x25e0
 // Size: 0xb4
-function function_e31bd066(goal) {
+function debug_draw_current_robot_goal(goal) {
     /#
-        if ((isdefined(getdvarint(#"hash_5be9167d7fae9d8b", 0)) ? getdvarint(#"hash_5be9167d7fae9d8b", 0) : 0) == 0) {
+        if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
         if (isdefined(goal)) {
@@ -458,9 +458,9 @@ function function_e31bd066(goal) {
 // Params 1, eflags: 0x0
 // Checksum 0x5f68f3d, Offset: 0x26a0
 // Size: 0xc4
-function function_2ad70da6(pathgoal) {
+function debug_draw_find_immediate_goal(pathgoal) {
     /#
-        if ((isdefined(getdvarint(#"hash_5be9167d7fae9d8b", 0)) ? getdvarint(#"hash_5be9167d7fae9d8b", 0) : 0) == 0) {
+        if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
         if (isdefined(pathgoal)) {
@@ -474,14 +474,14 @@ function function_2ad70da6(pathgoal) {
 // Params 1, eflags: 0x0
 // Checksum 0xdffad5ff, Offset: 0x2770
 // Size: 0xc4
-function function_6890a094(var_424dcc0a) {
+function debug_draw_find_immediate_goal_override(immediategoal) {
     /#
-        if ((isdefined(getdvarint(#"hash_5be9167d7fae9d8b", 0)) ? getdvarint(#"hash_5be9167d7fae9d8b", 0) : 0) == 0) {
+        if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
-        if (isdefined(var_424dcc0a)) {
+        if (isdefined(immediategoal)) {
             debug_duration = 60;
-            util::debug_sphere(var_424dcc0a + vectorscale((0, 0, 1), 18), 6, vectorscale((1, 0, 1), 0.9), 0.9, debug_duration);
+            util::debug_sphere(immediategoal + vectorscale((0, 0, 1), 18), 6, vectorscale((1, 0, 1), 0.9), 0.9, debug_duration);
         }
     #/
 }
@@ -490,9 +490,9 @@ function function_6890a094(var_424dcc0a) {
 // Params 2, eflags: 0x0
 // Checksum 0xa7750708, Offset: 0x2840
 // Size: 0x10c
-function function_7b6e70ee(center, radius) {
+function debug_draw_blocked_path_kill_radius(center, radius) {
     /#
-        if ((isdefined(getdvarint(#"hash_5be9167d7fae9d8b", 0)) ? getdvarint(#"hash_5be9167d7fae9d8b", 0) : 0) == 0) {
+        if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
         if (isdefined(center)) {
@@ -507,10 +507,10 @@ function function_7b6e70ee(center, radius) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe5e8cf1a, Offset: 0x2958
 // Size: 0x78
-function function_2c3b1920() {
+function wait_robot_moving() {
     level endon(#"game_ended");
     while (1) {
-        self waittill(#"hash_357c0d12046b0ee6");
+        self waittill(#"robot_moving");
         self recordgameeventnonplayer("robot_start");
         level clientfield::set_world_uimodel("Escort.robotMoving", 1);
     }
@@ -520,10 +520,10 @@ function function_2c3b1920() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xd70adbed, Offset: 0x29d8
 // Size: 0x88
-function function_a316d24() {
+function wait_robot_stopped() {
     level endon(#"game_ended");
     while (1) {
-        self waittill(#"hash_aca1ee8e85e3f39");
+        self waittill(#"robot_stopped");
         if (self.active) {
             self recordgameeventnonplayer("robot_stop");
             level clientfield::set_world_uimodel("Escort.robotMoving", 0);
@@ -535,19 +535,19 @@ function function_a316d24() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xaba03280, Offset: 0x2a68
 // Size: 0x178
-function function_fe01da38() {
+function wait_robot_shutdown() {
     level endon(#"game_ended");
     while (1) {
-        self waittill(#"hash_19b6c6cf9dfb51ca");
-        level.var_171f17cc gameobjects::allow_use(#"none");
-        objective_setprogress(level.var_171f17cc.objectiveid, -0.05);
-        level.var_171f17cc gameobjects::set_flags(1);
+        self waittill(#"robot_shutdown");
+        level.moveobject gameobjects::allow_use(#"none");
+        objective_setprogress(level.moveobject.objectiveid, -0.05);
+        level.moveobject gameobjects::set_flags(1);
         otherteam = util::getotherteam(self.team);
         globallogic_audio::leader_dialog("sfgRobotDisabledAttacker", self.team, undefined, "robot");
         globallogic_audio::leader_dialog("sfgRobotDisabledDefender", otherteam, undefined, "robot");
         globallogic_audio::play_2d_on_team("mpl_safeguard_disabled_sting_friend", self.team);
         globallogic_audio::play_2d_on_team("mpl_safeguard_disabled_sting_enemy", otherteam);
-        self thread function_c282aa58(level.rebootTime);
+        self thread auto_reboot_robot(level.rebootTime);
     }
 }
 
@@ -555,24 +555,24 @@ function function_fe01da38() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xb67a968d, Offset: 0x2be8
 // Size: 0x1e8
-function function_7045a646() {
+function wait_robot_reboot() {
     level endon(#"game_ended");
     while (1) {
-        self waittill(#"hash_2b6b3dbde7859981");
+        self waittill(#"robot_reboot");
         self recordgameeventnonplayer("robot_repair_complete");
-        level.var_171f17cc gameobjects::allow_use(#"friendly");
+        level.moveobject gameobjects::allow_use(#"friendly");
         otherteam = util::getotherteam(self.team);
         globallogic_audio::leader_dialog("sfgRobotRebootedAttacker", self.team, undefined, "robot");
         globallogic_audio::leader_dialog("sfgRobotRebootedDefender", otherteam, undefined, "robot");
         globallogic_audio::play_2d_on_team("mpl_safeguard_reboot_sting_friend", self.team);
         globallogic_audio::play_2d_on_team("mpl_safeguard_reboot_sting_enemy", otherteam);
-        objective_setprogress(level.var_171f17cc.objectiveid, 1);
-        if (level.var_24b79196 == 0) {
-            self function_cd983806();
-        } else if (level.var_171f17cc.numtouching[level.var_171f17cc.ownerteam] == 0) {
+        objective_setprogress(level.moveobject.objectiveid, 1);
+        if (level.moveplayers == 0) {
+            self move_robot();
+        } else if (level.moveobject.numtouching[level.moveobject.ownerteam] == 0) {
             level clientfield::set_world_uimodel("Escort.robotMoving", 0);
         }
-        level.var_171f17cc gameobjects::set_flags(0);
+        level.moveobject gameobjects::set_flags(0);
     }
 }
 
@@ -580,56 +580,56 @@ function function_7045a646() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x1e958db, Offset: 0x2dd8
 // Size: 0x2ac
-function function_c282aa58(time) {
+function auto_reboot_robot(time) {
     if (!isdefined(self)) {
         return;
     }
-    self endon(#"hash_2b6b3dbde7859981", #"game_ended");
+    self endon(#"robot_reboot", #"game_ended");
     shutdowntime = 0;
     while (shutdowntime < time) {
         rate = 0;
-        var_c01d8dbb = level.var_171f17cc.numtouching[level.var_171f17cc.ownerteam];
+        friendlycount = level.moveobject.numtouching[level.moveobject.ownerteam];
         if (!level.rebootPlayers) {
             rate = float(function_60d95f53()) / 1000;
-        } else if (var_c01d8dbb > 0) {
+        } else if (friendlycount > 0) {
             rate = float(function_60d95f53()) / 1000;
-            if (var_c01d8dbb > 1) {
-                var_eadfcb09 = (var_c01d8dbb - 1) * float(function_60d95f53()) / 1000 * 0;
-                rate = rate + var_eadfcb09;
+            if (friendlycount > 1) {
+                bonusrate = (friendlycount - 1) * float(function_60d95f53()) / 1000 * 0;
+                rate = rate + bonusrate;
             }
         }
         if (rate > 0) {
             shutdowntime = shutdowntime + rate;
             percent = min(1, shutdowntime / time);
-            objective_setprogress(level.var_171f17cc.objectiveid, percent);
+            objective_setprogress(level.moveobject.objectiveid, percent);
         }
         waitframe(1);
     }
     if (level.rebootPlayers > 0) {
-        foreach (struct in level.var_171f17cc.touchlist[game.attackers]) {
-            scoreevents::processscoreevent(#"hash_7ed287a2b6b9112a", struct.player, undefined, undefined);
+        foreach (struct in level.moveobject.touchlist[game.attackers]) {
+            scoreevents::processscoreevent(#"escort_robot_reboot", struct.player, undefined, undefined);
         }
     }
-    self thread function_f31ccd44();
+    self thread reboot_robot();
 }
 
 // Namespace escort/escort
 // Params 0, eflags: 0x1 linked
 // Checksum 0x8d330d5d, Offset: 0x3090
 // Size: 0x162
-function function_6b6768fc() {
+function watch_robot_damaged() {
     level endon(#"game_ended");
     while (1) {
-        self waittill(#"hash_4786d33b29c15c8f");
+        self waittill(#"robot_damaged");
         percent = min(1, self.shutdownDamage / level.shutdownDamage);
-        objective_setprogress(level.var_171f17cc.objectiveid, 1 - percent);
+        objective_setprogress(level.moveobject.objectiveid, 1 - percent);
         health = level.shutdownDamage - self.shutdownDamage;
-        lowhealth = killstreak_bundles::get_low_health(level.var_25a81c62);
-        if (!(isdefined(self.var_36a986e6) && self.var_36a986e6) && health <= lowhealth) {
+        lowhealth = killstreak_bundles::get_low_health(level.escortrobotkillstreakbundle);
+        if (!(isdefined(self.playeddamage) && self.playeddamage) && health <= lowhealth) {
             globallogic_audio::leader_dialog("sfgRobotUnderFire", self.team, undefined, "robot");
-            self.var_36a986e6 = 1;
+            self.playeddamage = 1;
         } else if (health > lowhealth) {
-            self.var_36a986e6 = 0;
+            self.playeddamage = 0;
         }
     }
 }
@@ -666,7 +666,7 @@ function function_dd7755c1() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xfe0f4a84, Offset: 0x33c0
 // Size: 0x44
-function function_e9ad1736() {
+function delete_on_endgame_sequence() {
     self endon(#"death");
     level waittill(#"endgame_intermission");
     self delete();
@@ -676,39 +676,39 @@ function function_e9ad1736() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x17a5ae88, Offset: 0x3410
 // Size: 0x12c
-function function_a7ec8007() {
-    if (isdefined(level.var_be95a734)) {
+function get_robot_path_array() {
+    if (isdefined(level.escortrobotpath)) {
         /#
             println("return");
         #/
-        return level.var_be95a734;
+        return level.escortrobotpath;
     }
     /#
         println("<unknown string>");
     #/
-    var_289d873a = [];
-    var_552d0ef5 = getnode("escort_robot_path_start", "targetname");
-    var_289d873a[var_289d873a.size] = var_552d0ef5.origin;
-    while (isdefined(var_552d0ef5.target)) {
-        var_552d0ef5 = getnode(var_552d0ef5.target, "targetname");
-        var_289d873a[var_289d873a.size] = var_552d0ef5.origin;
+    patharray = [];
+    currnode = getnode("escort_robot_path_start", "targetname");
+    patharray[patharray.size] = currnode.origin;
+    while (isdefined(currnode.target)) {
+        currnode = getnode(currnode.target, "targetname");
+        patharray[patharray.size] = currnode.origin;
     }
-    if (isdefined(level.var_aac7424a)) {
-        [[ level.var_aac7424a ]](var_289d873a);
+    if (isdefined(level.update_escort_robot_path)) {
+        [[ level.update_escort_robot_path ]](patharray);
     }
-    return var_289d873a;
+    return patharray;
 }
 
 // Namespace escort/escort
 // Params 2, eflags: 0x1 linked
 // Checksum 0x61b22baa, Offset: 0x3548
 // Size: 0xb8
-function function_9c0c4127(var_e81a87b7, var_289d873a) {
+function calc_robot_path_length(robotorigin, patharray) {
     distance = 0;
-    lastpoint = var_e81a87b7;
-    for (i = 0; i < var_289d873a.size; i++) {
-        distance = distance + distance(lastpoint, var_289d873a[i]);
-        lastpoint = var_289d873a[i];
+    lastpoint = robotorigin;
+    for (i = 0; i < patharray.size; i++) {
+        distance = distance + distance(lastpoint, patharray[i]);
+        lastpoint = patharray[i];
     }
     /#
         println("<unknown string>" + distance);
@@ -720,7 +720,7 @@ function function_9c0c4127(var_e81a87b7, var_289d873a) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x56703e8c, Offset: 0x3608
 // Size: 0x458
-function function_bf9b418c(position, angles) {
+function spawn_robot(position, angles) {
     robot = spawnactor("spawner_bo3_robot_grunt_assault_mp_escort", position, angles, "", 1);
     robot.pathablematerial = robot.pathablematerial | 2;
     robot.enableterrainik = 1;
@@ -736,7 +736,7 @@ function function_bf9b418c(position, angles) {
     robot ai::set_behavior_attribute("traversals", "procedural");
     aiutility::clearaioverridedamagecallbacks(robot);
     robot.active = 1;
-    robot.var_3b78d9f5 = 1;
+    robot.canwalk = 1;
     robot.moving = 0;
     robot.shutdownDamage = 0;
     robot.propername = "";
@@ -751,15 +751,15 @@ function function_bf9b418c(position, angles) {
     robot disableaimassist();
     robot setsteeringmode("slow steering");
     robot setblackboardattribute("_robot_locomotion_type", "alt1");
-    if (level.var_a6ffdf8d) {
+    if (level.robotshield) {
         aiutility::attachriotshield(robot, getweapon("riotshield"), "wpn_t7_shield_riot_world_lh", "tag_stowed_back");
     }
     robot asmsetanimationrate(1.1);
     if (isdefined(level.shutdownDamage) && level.shutdownDamage) {
         target_set(robot, vectorscale((0, 0, 1), 50));
     }
-    robot.overrideactordamage = &function_47c9fa3c;
-    robot thread function_a16b3a55();
+    robot.overrideactordamage = &robot_damage;
+    robot thread robot_move_chatter();
     robot.missiletargetmissdistance = 64;
     robot thread heatseekingmissile::missiletarget_proximitydetonateincomingmissile();
     return robot;
@@ -769,7 +769,7 @@ function function_bf9b418c(position, angles) {
 // Params 12, eflags: 0x1 linked
 // Checksum 0x6e7da46f, Offset: 0x3a68
 // Size: 0x702
-function function_47c9fa3c(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, modelindex) {
+function robot_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, modelindex) {
     if (!(isdefined(self.onground) && self.onground)) {
         return 0;
     }
@@ -780,7 +780,7 @@ function function_47c9fa3c(einflictor, eattacker, idamage, idflags, smeansofdeat
         return 0;
     }
     level.usestartspawns = 0;
-    weapon_damage = killstreak_bundles::get_weapon_damage(level.var_25a81c62, level.shutdownDamage, eattacker, weapon, smeansofdeath, idamage, idflags, undefined);
+    weapon_damage = killstreak_bundles::get_weapon_damage(level.escortrobotkillstreakbundle, level.shutdownDamage, eattacker, weapon, smeansofdeath, idamage, idflags, undefined);
     if (!isdefined(weapon_damage)) {
         weapon_damage = idamage;
     }
@@ -788,20 +788,20 @@ function function_47c9fa3c(einflictor, eattacker, idamage, idflags, smeansofdeat
         return 0;
     }
     self.shutdownDamage = self.shutdownDamage + weapon_damage;
-    self notify(#"hash_4786d33b29c15c8f");
-    if (!isdefined(eattacker.var_d6b81efd)) {
-        eattacker.var_d6b81efd = 0;
+    self notify(#"robot_damaged");
+    if (!isdefined(eattacker.damagerobot)) {
+        eattacker.damagerobot = 0;
     }
-    eattacker.var_d6b81efd = eattacker.var_d6b81efd + weapon_damage;
+    eattacker.damagerobot = eattacker.damagerobot + weapon_damage;
     if (self.shutdownDamage >= level.shutdownDamage) {
         origin = (0, 0, 0);
         if (isplayer(eattacker)) {
             level thread popups::displayteammessagetoall(#"hash_6fd616c1d7988357", eattacker);
             level.robot recordgameeventnonplayer("robot_disabled");
-            if (distance2dsquared(self.origin, level.var_e1f98cba.trigger.origin) < (level.var_e1f98cba.trigger.radius + 50) * (level.var_e1f98cba.trigger.radius + 50)) {
-                scoreevents::processscoreevent(#"hash_55d9982c385962d2", eattacker, undefined, undefined);
+            if (distance2dsquared(self.origin, level.goalobject.trigger.origin) < (level.goalobject.trigger.radius + 50) * (level.goalobject.trigger.radius + 50)) {
+                scoreevents::processscoreevent(#"escort_robot_disable_near_goal", eattacker, undefined, undefined);
             } else {
-                scoreevents::processscoreevent(#"hash_d619fe1e6e3e8b9", eattacker, undefined, undefined);
+                scoreevents::processscoreevent(#"escort_robot_disable", eattacker, undefined, undefined);
             }
             [[ level.var_37d62931 ]](eattacker, 1);
             if (isdefined(eattacker.pers[#"disables"])) {
@@ -813,19 +813,19 @@ function function_47c9fa3c(einflictor, eattacker, idamage, idflags, smeansofdeat
             origin = eattacker.origin;
         }
         foreach (player in level.players) {
-            if (player == eattacker || player.team == self.team || !isdefined(player.var_d6b81efd)) {
+            if (player == eattacker || player.team == self.team || !isdefined(player.damagerobot)) {
                 continue;
             }
-            damagepercent = player.var_d6b81efd / level.shutdownDamage;
+            damagepercent = player.damagerobot / level.shutdownDamage;
             if (damagepercent >= 0.5) {
-                scoreevents::processscoreevent(#"hash_48e06d4b02042bfb", player, undefined, undefined);
+                scoreevents::processscoreevent(#"escort_robot_disable_assist_50", player, undefined, undefined);
             } else if (damagepercent >= 0.25) {
-                scoreevents::processscoreevent(#"hash_48e3f04b0207406b", player, undefined, undefined);
+                scoreevents::processscoreevent(#"escort_robot_disable_assist_25", player, undefined, undefined);
             }
-            player.var_d6b81efd = undefined;
+            player.damagerobot = undefined;
         }
         bb::function_95a5b5c2("escort_shutdown", undefined, game.defenders, origin);
-        self function_4e5bb046();
+        self shutdown_robot();
         if (isdefined(eattacker) && eattacker != self && isdefined(weapon)) {
             if (weapon.statname == #"planemortar") {
                 if (!isdefined(eattacker.planemortarbda)) {
@@ -857,7 +857,7 @@ function function_47c9fa3c(einflictor, eattacker, idamage, idflags, smeansofdeat
 // Params 12, eflags: 0x1 linked
 // Checksum 0x5709520b, Offset: 0x4178
 // Size: 0x66
-function function_6810f6d7(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, modelindex) {
+function robot_damage_none(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, modelindex) {
     return 0;
 }
 
@@ -865,12 +865,12 @@ function function_6810f6d7(einflictor, eattacker, idamage, idflags, smeansofdeat
 // Params 0, eflags: 0x1 linked
 // Checksum 0xbdff85d8, Offset: 0x41e8
 // Size: 0x154
-function function_4e5bb046() {
+function shutdown_robot() {
     self.active = 0;
     self val::set(#"hash_3de2bce887b7b68d", "ignoreme", 1);
-    self.var_3b78d9f5 = 0;
-    self function_92cafff7();
-    self notify(#"hash_19b6c6cf9dfb51ca");
+    self.canwalk = 0;
+    self stop_robot();
+    self notify(#"robot_shutdown");
     if (target_istarget(self)) {
         target_remove(self);
     }
@@ -886,16 +886,16 @@ function function_4e5bb046() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5bfb0414, Offset: 0x4348
 // Size: 0x1aa
-function function_f31ccd44() {
+function reboot_robot() {
     if (!isdefined(self)) {
         return;
     }
-    self endon(#"hash_19b6c6cf9dfb51ca");
+    self endon(#"robot_shutdown");
     level endon(#"game_ended");
     self.active = 1;
     self.shutdownDamage = 0;
     self val::reset(#"hash_3de2bce887b7b68d", "ignoreme");
-    self notify(#"hash_2b6b3dbde7859981");
+    self notify(#"robot_reboot");
     if (isdefined(level.shutdownDamage) && level.shutdownDamage) {
         target_set(self, vectorscale((0, 0, 1), 50));
     }
@@ -905,9 +905,9 @@ function function_f31ccd44() {
         aiutility::attachriotshield(self, getweapon("riotshield"), "wpn_t7_shield_riot_world_lh", "tag_stowed_back");
     }
     self ai::set_behavior_attribute("shutdown", 0);
-    wait(getanimlength(#"hash_2202ec85f2325d29"));
+    wait(getanimlength(#"ai_robot_rogue_ctrl_crc_shutdown_2_alert"));
     if (isdefined(self)) {
-        self.var_3b78d9f5 = 1;
+        self.canwalk = 1;
     }
 }
 
@@ -915,20 +915,20 @@ function function_f31ccd44() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xa5f43fe3, Offset: 0x4500
 // Size: 0xb4
-function function_cd983806() {
+function move_robot() {
     if (self.active == 0 || self.moving || !isdefined(self.pathindex)) {
         return;
     }
-    if (self function_bbd6a5a8()) {
+    if (self check_blocked_goal_and_kill()) {
         return;
     }
-    if (gettime() < (isdefined(self.var_5b6b68f2) ? self.var_5b6b68f2 : 0)) {
+    if (gettime() < (isdefined(self.blocked_wait_end_time) ? self.blocked_wait_end_time : 0)) {
         return;
     }
-    self notify(#"hash_357c0d12046b0ee6");
+    self notify(#"robot_moving");
     self.moving = 1;
-    self function_7292b417();
-    self thread function_48d5a5d5();
+    self set_goal_to_point_on_path();
+    self thread robot_wait_next_point();
 }
 
 // Namespace escort/escort
@@ -941,11 +941,11 @@ function function_ba95878f() {
         if (self.moving) {
             distance = 0;
             if (self.pathindex > 0) {
-                distance = distance + distance(level.var_234c4109, self.var_289d873a[0]);
+                distance = distance + distance(level.var_234c4109, self.patharray[0]);
                 for (i = 1; i < self.pathindex; i++) {
-                    distance = distance + distance(self.var_289d873a[i - 1], self.var_289d873a[i]);
+                    distance = distance + distance(self.patharray[i - 1], self.patharray[i]);
                 }
-                distance = distance + distance(self.var_289d873a[self.pathindex - 1], self.origin);
+                distance = distance + distance(self.patharray[self.pathindex - 1], self.origin);
             } else {
                 distance = distance + distance(level.var_234c4109, self.origin);
             }
@@ -968,25 +968,25 @@ function function_ba95878f() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xd1ed009c, Offset: 0x4798
 // Size: 0x2c
-function function_7de71781() {
-    return isdefined(self.var_e301f36f) ? self.var_e301f36f : self.var_289d873a[self.pathindex];
+function get_current_goal() {
+    return isdefined(self.immediategoaloverride) ? self.immediategoaloverride : self.patharray[self.pathindex];
 }
 
 // Namespace escort/escort
 // Params 1, eflags: 0x1 linked
 // Checksum 0x144819d5, Offset: 0x47d0
 // Size: 0xfe
-function function_b237dbdc(var_475bafcd) {
-    if (isdefined(self.var_e301f36f)) {
+function reached_closest_nav_mesh_goal_but_still_too_far_and_blocked(goalonnavmesh) {
+    if (isdefined(self.immediategoaloverride)) {
         return 0;
     }
-    distsqr = distancesquared(var_475bafcd, self.origin);
-    var_5a97a250 = distsqr <= 24 * 24;
-    if (var_5a97a250) {
-        var_8b664227 = distancesquared(var_475bafcd, self.var_289d873a[self.pathindex]) > 1 * 1;
-        if (var_8b664227) {
-            var_c42e0921 = self function_71dde260(self.origin, self.var_289d873a[self.pathindex]);
-            if (var_c42e0921) {
+    distsqr = distancesquared(goalonnavmesh, self.origin);
+    robotreachedclosestgoalonnavmesh = distsqr <= 24 * 24;
+    if (robotreachedclosestgoalonnavmesh) {
+        closestgoalonnavmeshtoofarfrompathgoal = distancesquared(goalonnavmesh, self.patharray[self.pathindex]) > 1 * 1;
+        if (closestgoalonnavmeshtoofarfrompathgoal) {
+            robotisblockedfromgettingtopathgoal = self check_if_goal_is_blocked(self.origin, self.patharray[self.pathindex]);
+            if (robotisblockedfromgettingtopathgoal) {
                 return 1;
             }
         }
@@ -998,29 +998,29 @@ function function_b237dbdc(var_475bafcd) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x10be8693, Offset: 0x48d8
 // Size: 0x1bc
-function function_bbd6a5a8() {
-    if (!self.var_3b78d9f5) {
+function check_blocked_goal_and_kill() {
+    if (!self.canwalk) {
         return 0;
     }
-    if (gettime() < (isdefined(self.var_5b6b68f2) ? self.var_5b6b68f2 : 0)) {
-        wait(float(self.var_5b6b68f2 - gettime()) / 1000);
+    if (gettime() < (isdefined(self.blocked_wait_end_time) ? self.blocked_wait_end_time : 0)) {
+        wait(float(self.blocked_wait_end_time - gettime()) / 1000);
     }
-    var_475bafcd = self function_da79711f();
-    var_12dabaab = self.pathindex > 0 && !isdefined(self.var_e301f36f) ? self.var_289d873a[self.pathindex - 1] : self.origin;
-    if (self.var_2db651d0 || self function_b237dbdc(var_475bafcd) || self function_71dde260(var_12dabaab, var_475bafcd)) {
-        self.var_2db651d0 = 0;
-        var_48a86177 = 1;
-        var_32994cfd = self function_3135a437(var_475bafcd);
-        if (var_32994cfd) {
-            var_48a86177 = self function_71dde260(var_12dabaab, var_475bafcd);
-            if (var_48a86177) {
-                self.var_5b6b68f2 = gettime() + 200;
-                self function_92cafff7();
+    goalonnavmesh = self get_closest_point_on_nav_mesh_for_current_goal();
+    previousgoal = self.pathindex > 0 && !isdefined(self.immediategoaloverride) ? self.patharray[self.pathindex - 1] : self.origin;
+    if (self.goaljustblocked || self reached_closest_nav_mesh_goal_but_still_too_far_and_blocked(goalonnavmesh) || self check_if_goal_is_blocked(previousgoal, goalonnavmesh)) {
+        self.goaljustblocked = 0;
+        stillblocked = 1;
+        killedsomething = self kill_anything_blocking_goal(goalonnavmesh);
+        if (killedsomething) {
+            stillblocked = self check_if_goal_is_blocked(previousgoal, goalonnavmesh);
+            if (stillblocked) {
+                self.blocked_wait_end_time = gettime() + 200;
+                self stop_robot();
             }
         } else {
-            self function_626f279();
+            self find_immediate_goal();
         }
-        return var_48a86177;
+        return stillblocked;
     }
     return 0;
 }
@@ -1029,19 +1029,19 @@ function function_bbd6a5a8() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x6c90ac71, Offset: 0x4aa0
 // Size: 0x10c
-function function_626f279() {
-    pathgoal = self.var_289d873a[self.pathindex];
-    var_c8faa89b = self.origin;
+function find_immediate_goal() {
+    pathgoal = self.patharray[self.pathindex];
+    currpos = self.origin;
     /#
-        function_2ad70da6(pathgoal);
+        debug_draw_find_immediate_goal(pathgoal);
     #/
-    var_424dcc0a = function_32cc17ce(vectorlerp(var_c8faa89b, pathgoal, 0.5));
-    while (self function_71dde260(var_c8faa89b, var_424dcc0a)) {
-        var_424dcc0a = function_32cc17ce(vectorlerp(var_c8faa89b, var_424dcc0a, 0.5));
+    immediategoal = get_closest_point_on_nav_mesh(vectorlerp(currpos, pathgoal, 0.5));
+    while (self check_if_goal_is_blocked(currpos, immediategoal)) {
+        immediategoal = get_closest_point_on_nav_mesh(vectorlerp(currpos, immediategoal, 0.5));
     }
-    self.var_e301f36f = var_424dcc0a;
+    self.immediategoaloverride = immediategoal;
     /#
-        function_6890a094(self.var_e301f36f);
+        debug_draw_find_immediate_goal_override(self.immediategoaloverride);
     #/
 }
 
@@ -1049,22 +1049,22 @@ function function_626f279() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xcf29374a, Offset: 0x4bb8
 // Size: 0xba
-function function_71dde260(var_12dabaab, goal) {
-    var_10963261 = self calcapproximatepathtoposition(goal);
-    var_a845a835 = min(distance(self.origin, goal), distance(var_12dabaab, goal));
-    var_97040bb7 = function_4d0baea8(var_10963261, var_a845a835 * 2.5);
-    return var_97040bb7;
+function check_if_goal_is_blocked(previousgoal, goal) {
+    approxpatharray = self calcapproximatepathtoposition(goal);
+    distancetonextgoal = min(distance(self.origin, goal), distance(previousgoal, goal));
+    approxpathtoolong = is_path_distance_to_goal_too_long(approxpatharray, distancetonextgoal * 2.5);
+    return approxpathtoolong;
 }
 
 // Namespace escort/escort
 // Params 1, eflags: 0x1 linked
 // Checksum 0x82b6ef74, Offset: 0x4c80
 // Size: 0x13a
-function function_d1a2b84b(goal) {
-    self notify(#"hash_32cec95ad713789a");
-    self endon(#"hash_32cec95ad713789a", #"hash_aca1ee8e85e3f39", #"goal");
+function watch_goal_becoming_blocked(goal) {
+    self notify(#"end_watch_goal_becoming_blocked_singleton");
+    self endon(#"end_watch_goal_becoming_blocked_singleton", #"robot_stopped", #"goal");
     level endon(#"game_ended");
-    var_43e45614 = 1e+09;
+    disttogoalsqr = 1e+09;
     while (1) {
         wait(0.1);
         if (isdefined(self.traversestartnode)) {
@@ -1074,15 +1074,15 @@ function function_d1a2b84b(goal) {
         if (self asmistransdecrunning()) {
             continue;
         }
-        if (!self.var_3b78d9f5) {
+        if (!self.canwalk) {
             continue;
         }
-        var_b1dbd5b3 = distancesquared(self.origin, goal);
-        if (var_b1dbd5b3 < var_43e45614) {
-            var_43e45614 = var_b1dbd5b3;
+        newdisttogoalsqr = distancesquared(self.origin, goal);
+        if (newdisttogoalsqr < disttogoalsqr) {
+            disttogoalsqr = newdisttogoalsqr;
         } else {
-            self.var_2db651d0 = 1;
-            self notify(#"hash_32ec5d1632ebe315");
+            self.goaljustblocked = 1;
+            self notify(#"goal_blocked");
         }
     }
 }
@@ -1091,69 +1091,69 @@ function function_d1a2b84b(goal) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe1970396, Offset: 0x4dc8
 // Size: 0x13e
-function function_1355041() {
-    self notify(#"hash_3ea08fca40d25910");
-    self endon(#"hash_3ea08fca40d25910", #"hash_1e42b7cde9400998");
+function watch_becoming_blocked_at_goal() {
+    self notify(#"end_watch_becoming_blocked_at_goal");
+    self endon(#"end_watch_becoming_blocked_at_goal", #"robot_stop");
     level endon(#"game_ended");
     while (isdefined(self.traversestartnode)) {
         self waittill(#"traverse_end");
     }
-    self.var_8fb3cca9 = 1;
+    self.watch_becoming_blocked_at_goal_established = 1;
     startpos = self.origin;
-    var_4c0ed1c9 = 0;
-    var_6dc2c2e3 = 0;
+    atsameposcount = 0;
+    iterationcount = 0;
     while (self.moving) {
         wait(0.1);
         if (distancesquared(startpos, self.origin) < 1) {
-            var_4c0ed1c9++;
+            atsameposcount++;
         }
-        if (var_4c0ed1c9 >= 2) {
-            self.var_2db651d0 = 1;
-            self notify(#"hash_32ec5d1632ebe315");
+        if (atsameposcount >= 2) {
+            self.goaljustblocked = 1;
+            self notify(#"goal_blocked");
         }
-        var_6dc2c2e3++;
-        if (var_6dc2c2e3 >= 3) {
+        iterationcount++;
+        if (iterationcount >= 3) {
             break;
         }
     }
-    self.var_8fb3cca9 = 0;
+    self.watch_becoming_blocked_at_goal_established = 0;
 }
 
 // Namespace escort/escort
 // Params 0, eflags: 0x1 linked
 // Checksum 0xfd64c9a0, Offset: 0x4f10
 // Size: 0x12e
-function function_92cafff7() {
+function stop_robot() {
     if (!self.moving) {
         return;
     }
     if (isdefined(self.traversestartnode)) {
-        self thread function_de7b7c31();
+        self thread check_robot_on_travesal_end();
         return;
     }
     self.moving = 0;
-    self.var_200757da = undefined;
-    self.var_8fb3cca9 = 0;
+    self.mostrecentclosestpathpointgoal = undefined;
+    self.watch_becoming_blocked_at_goal_established = 0;
     velocity = self getvelocity();
-    var_1e202cb1 = velocity * 0.05;
-    var_633cb6a9 = isdefined(getclosestpointonnavmesh(self.origin + var_1e202cb1, 48, 15)) ? getclosestpointonnavmesh(self.origin + var_1e202cb1, 48, 15) : self.origin;
-    self setgoal(var_633cb6a9, 0);
-    self notify(#"hash_aca1ee8e85e3f39");
+    deltapos = velocity * 0.05;
+    stopgoal = isdefined(getclosestpointonnavmesh(self.origin + deltapos, 48, 15)) ? getclosestpointonnavmesh(self.origin + deltapos, 48, 15) : self.origin;
+    self setgoal(stopgoal, 0);
+    self notify(#"robot_stopped");
 }
 
 // Namespace escort/escort
 // Params 0, eflags: 0x1 linked
 // Checksum 0x58d53314, Offset: 0x5048
 // Size: 0xe4
-function function_de7b7c31() {
-    self notify(#"hash_1791a09042310ba1");
-    self endon(#"hash_1791a09042310ba1", #"death");
+function check_robot_on_travesal_end() {
+    self notify(#"check_robot_on_travesal_end_singleton");
+    self endon(#"check_robot_on_travesal_end_singleton", #"death");
     self waittill(#"traverse_end");
-    var_2cc818f7 = isdefined(level.var_171f17cc.numtouching[level.var_171f17cc.ownerteam]) ? level.var_171f17cc.numtouching[level.var_171f17cc.ownerteam] : 0;
-    if (var_2cc818f7 < level.var_24b79196) {
-        self function_92cafff7();
+    numowners = isdefined(level.moveobject.numtouching[level.moveobject.ownerteam]) ? level.moveobject.numtouching[level.moveobject.ownerteam] : 0;
+    if (numowners < level.moveplayers) {
+        self stop_robot();
     } else {
-        self function_cd983806();
+        self move_robot();
     }
 }
 
@@ -1161,7 +1161,7 @@ function function_de7b7c31() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x89683cd0, Offset: 0x5138
 // Size: 0x78
-function function_f05d667f() {
+function update_stop_position() {
     self endon(#"death");
     level endon(#"game_ended");
     while (1) {
@@ -1176,35 +1176,35 @@ function function_f05d667f() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x6370fe55, Offset: 0x51b8
 // Size: 0x288
-function function_48d5a5d5() {
-    self endon(#"hash_aca1ee8e85e3f39", #"death");
+function robot_wait_next_point() {
+    self endon(#"robot_stopped", #"death");
     level endon(#"game_ended");
     while (1) {
-        self waittill(#"goal", #"hash_32ec5d1632ebe315");
-        if (!isdefined(self.var_8fb3cca9) || self.var_8fb3cca9 == 0) {
-            self thread function_1355041();
+        self waittill(#"goal", #"goal_blocked");
+        if (!isdefined(self.watch_becoming_blocked_at_goal_established) || self.watch_becoming_blocked_at_goal_established == 0) {
+            self thread watch_becoming_blocked_at_goal();
         }
-        if (distancesquared(self.origin, function_7de71781()) < 24 * 24) {
-            self.pathindex = self.pathindex + (isdefined(self.var_e301f36f) ? 0 : 1);
-            self.var_e301f36f = undefined;
+        if (distancesquared(self.origin, get_current_goal()) < 24 * 24) {
+            self.pathindex = self.pathindex + (isdefined(self.immediategoaloverride) ? 0 : 1);
+            self.immediategoaloverride = undefined;
         }
-        while (self.pathindex < self.var_289d873a.size && distancesquared(self.origin, self.var_289d873a[self.pathindex]) < (48 + 1) * (48 + 1)) {
+        while (self.pathindex < self.patharray.size && distancesquared(self.origin, self.patharray[self.pathindex]) < (48 + 1) * (48 + 1)) {
             self.pathindex++;
         }
-        if (self.pathindex >= self.var_289d873a.size) {
+        if (self.pathindex >= self.patharray.size) {
             self.pathindex = undefined;
-            self function_92cafff7();
+            self stop_robot();
             return;
         }
-        if (self.pathindex + 1 >= self.var_289d873a.size) {
+        if (self.pathindex + 1 >= self.patharray.size) {
             otherteam = util::getotherteam(self.team);
             globallogic_audio::leader_dialog("sfgRobotCloseAttacker", self.team, undefined, "robot");
             globallogic_audio::leader_dialog("sfgRobotCloseDefender", otherteam, undefined, "robot");
         }
-        if (self function_bbd6a5a8()) {
-            self function_92cafff7();
+        if (self check_blocked_goal_and_kill()) {
+            self stop_robot();
         }
-        function_7292b417();
+        set_goal_to_point_on_path();
     }
 }
 
@@ -1212,57 +1212,57 @@ function function_48d5a5d5() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xf492130, Offset: 0x5448
 // Size: 0x82
-function function_da79711f() {
-    var_424dcc0a = function_7de71781();
-    var_1e3ed60 = getclosestpointonnavmesh(var_424dcc0a, 48, 15);
-    if (!isdefined(var_1e3ed60)) {
-        var_1e3ed60 = getclosestpointonnavmesh(var_424dcc0a, 96, 15);
+function get_closest_point_on_nav_mesh_for_current_goal() {
+    immediategoal = get_current_goal();
+    closestpathpoint = getclosestpointonnavmesh(immediategoal, 48, 15);
+    if (!isdefined(closestpathpoint)) {
+        closestpathpoint = getclosestpointonnavmesh(immediategoal, 96, 15);
     }
-    return isdefined(var_1e3ed60) ? var_1e3ed60 : var_424dcc0a;
+    return isdefined(closestpathpoint) ? closestpathpoint : immediategoal;
 }
 
 // Namespace escort/escort
 // Params 1, eflags: 0x1 linked
 // Checksum 0x44882952, Offset: 0x54d8
 // Size: 0x104
-function function_32cc17ce(point) {
-    var_1e3ed60 = getclosestpointonnavmesh(point, 48, 15);
-    if (!isdefined(var_1e3ed60)) {
-        var_1e3ed60 = getclosestpointonnavmesh(point, 96, 15);
+function get_closest_point_on_nav_mesh(point) {
+    closestpathpoint = getclosestpointonnavmesh(point, 48, 15);
+    if (!isdefined(closestpathpoint)) {
+        closestpathpoint = getclosestpointonnavmesh(point, 96, 15);
     }
-    if (!isdefined(var_1e3ed60)) {
-        var_4d1b016a = 0;
-        var_f887ec51 = point - vectorscale((0, 0, 1), 36);
-        while (!isdefined(var_1e3ed60) && var_4d1b016a < 5) {
-            var_1e3ed60 = getclosestpointonnavmesh(var_f887ec51, 48, 15);
-            var_f887ec51 = var_f887ec51 - vectorscale((0, 0, 1), 36);
-            var_4d1b016a++;
+    if (!isdefined(closestpathpoint)) {
+        itercount = 0;
+        lowerpoint = point - vectorscale((0, 0, 1), 36);
+        while (!isdefined(closestpathpoint) && itercount < 5) {
+            closestpathpoint = getclosestpointonnavmesh(lowerpoint, 48, 15);
+            lowerpoint = lowerpoint - vectorscale((0, 0, 1), 36);
+            itercount++;
         }
     }
-    return isdefined(var_1e3ed60) ? var_1e3ed60 : point;
+    return isdefined(closestpathpoint) ? closestpathpoint : point;
 }
 
 // Namespace escort/escort
 // Params 1, eflags: 0x1 linked
 // Checksum 0x3b842550, Offset: 0x55e8
 // Size: 0x144
-function function_7292b417(var_96a19edf = 0) {
-    self.var_2db651d0 = 0;
-    var_1e3ed60 = self function_da79711f();
-    if (isdefined(var_1e3ed60)) {
-        if (!isdefined(self.var_200757da) || distancesquared(var_1e3ed60, self.var_200757da) > 1) {
-            self setgoal(var_1e3ed60, 0, 24);
-            self thread function_d1a2b84b(var_1e3ed60);
-            self.var_200757da = var_1e3ed60;
+function set_goal_to_point_on_path(recursioncount = 0) {
+    self.goaljustblocked = 0;
+    closestpathpoint = self get_closest_point_on_nav_mesh_for_current_goal();
+    if (isdefined(closestpathpoint)) {
+        if (!isdefined(self.mostrecentclosestpathpointgoal) || distancesquared(closestpathpoint, self.mostrecentclosestpathpointgoal) > 1) {
+            self setgoal(closestpathpoint, 0, 24);
+            self thread watch_goal_becoming_blocked(closestpathpoint);
+            self.mostrecentclosestpathpointgoal = closestpathpoint;
         }
-    } else if (var_96a19edf < 3) {
-        self function_626f279();
-        self function_7292b417(var_96a19edf + 1);
+    } else if (recursioncount < 3) {
+        self find_immediate_goal();
+        self set_goal_to_point_on_path(recursioncount + 1);
     } else {
-        self function_92cafff7();
+        self stop_robot();
     }
     /#
-        function_e31bd066(var_1e3ed60);
+        debug_draw_current_robot_goal(closestpathpoint);
     #/
 }
 
@@ -1270,18 +1270,18 @@ function function_7292b417(var_96a19edf = 0) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc761eaa3, Offset: 0x5738
 // Size: 0xd8
-function function_4d0baea8(var_289d873a&, var_a4c43ac5) {
+function is_path_distance_to_goal_too_long(&patharray, toolongthreshold) {
     /#
-        function_4d2f7bfd(var_289d873a);
+        debug_draw_approximate_robot_path_to_goal(patharray);
     #/
-    if (var_a4c43ac5 < 20) {
-        var_a4c43ac5 = 20;
+    if (toolongthreshold < 20) {
+        toolongthreshold = 20;
     }
-    var_6dadca51 = 0;
-    var_392eec6 = var_289d873a.size - 1;
-    for (i = 0; i < var_392eec6; i++) {
-        var_6dadca51 = var_6dadca51 + distance(var_289d873a[i], var_289d873a[i + 1]);
-        if (var_6dadca51 >= var_a4c43ac5) {
+    goaldistance = 0;
+    lastindextocheck = patharray.size - 1;
+    for (i = 0; i < lastindextocheck; i++) {
+        goaldistance = goaldistance + distance(patharray[i], patharray[i + 1]);
+        if (goaldistance >= toolongthreshold) {
             return 1;
         }
     }
@@ -1292,29 +1292,29 @@ function function_4d0baea8(var_289d873a&, var_a4c43ac5) {
 // Params 0, eflags: 0x0
 // Checksum 0x8754ea49, Offset: 0x5818
 // Size: 0x250
-function function_b0693b2c() {
+function debug_reset_robot_to_start() {
     /#
         level endon(#"game_ended");
         while (1) {
-            if ((isdefined(getdvarint(#"hash_363f484622731b83", 0)) ? getdvarint(#"hash_363f484622731b83", 0) : 0) > 0) {
+            if ((isdefined(getdvarint(#"scr_escort_robot_reset_path", 0)) ? getdvarint(#"scr_escort_robot_reset_path", 0) : 0) > 0) {
                 if (isdefined(level.robot)) {
-                    pathindex = (isdefined(getdvarint(#"hash_363f484622731b83", 0)) ? getdvarint(#"hash_363f484622731b83", 0) : 0) - 1;
-                    var_d7d41ff1 = level.robot.var_289d873a[pathindex];
-                    var_25dfa6bf = (0, 0, 0);
-                    if (pathindex < level.robot.var_289d873a.size - 1) {
-                        nextpoint = level.robot.var_289d873a[pathindex + 1];
-                        var_25dfa6bf = vectortoangles(nextpoint - var_d7d41ff1);
+                    pathindex = (isdefined(getdvarint(#"scr_escort_robot_reset_path", 0)) ? getdvarint(#"scr_escort_robot_reset_path", 0) : 0) - 1;
+                    pathpoint = level.robot.patharray[pathindex];
+                    robotangles = (0, 0, 0);
+                    if (pathindex < level.robot.patharray.size - 1) {
+                        nextpoint = level.robot.patharray[pathindex + 1];
+                        robotangles = vectortoangles(nextpoint - pathpoint);
                     }
-                    level.robot forceteleport(var_d7d41ff1, var_25dfa6bf);
+                    level.robot forceteleport(pathpoint, robotangles);
                     level.robot.pathindex = pathindex;
-                    level.robot.var_e301f36f = undefined;
+                    level.robot.immediategoaloverride = undefined;
                     while (isdefined(self.traversestartnode)) {
                         waitframe(1);
                     }
-                    level.robot function_92cafff7();
+                    level.robot stop_robot();
                     level.robot setgoal(level.robot.origin, 0);
                 }
-                setdvar(#"hash_363f484622731b83", 0);
+                setdvar(#"scr_escort_robot_reset_path", 0);
             }
             wait(0.5);
         }
@@ -1325,10 +1325,10 @@ function function_b0693b2c() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x61d4c8ff, Offset: 0x5a70
 // Size: 0x284
-function function_268637ff() {
+function explode_robot() {
     self clientfield::set("escort_robot_burn", 1);
     clientfield::set("robot_mind_control_explosion", 1);
-    self thread function_a5dc2514();
+    self thread wait_robot_corpse();
     if (randomint(100) >= 50) {
         gibserverutils::gibleftarm(self);
     } else {
@@ -1353,7 +1353,7 @@ function function_268637ff() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5bc3d52, Offset: 0x5d00
 // Size: 0x7c
-function function_a5dc2514() {
+function wait_robot_corpse() {
     level endon(#"game_ended");
     archetype = self.archetype;
     waitresult = undefined;
@@ -1365,7 +1365,7 @@ function function_a5dc2514() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x1958533, Offset: 0x5d88
 // Size: 0x78
-function function_a16b3a55() {
+function robot_move_chatter() {
     level endon(#"game_ended");
     while (1) {
         if (self.moving) {
@@ -1379,8 +1379,8 @@ function function_a16b3a55() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x559dfdb9, Offset: 0x5e08
 // Size: 0x1fe
-function function_b3d560f2(robot, var_b2950fe9) {
-    trigger = getent(var_b2950fe9, "targetname");
+function setup_move_object(robot, triggername) {
+    trigger = getent(triggername, "targetname");
     useobj = gameobjects::create_use_object(game.attackers, trigger, [], (0, 0, 0), #"escort_robot");
     useobj gameobjects::set_objective_entity(robot);
     useobj gameobjects::allow_use(#"none");
@@ -1388,14 +1388,14 @@ function function_b3d560f2(robot, var_b2950fe9) {
     useobj gameobjects::set_use_time(0);
     trigger enablelinkto();
     trigger linkto(robot);
-    useobj.onuse = &function_496d2c26;
-    useobj.var_df79c725 = &function_3a2a93b8;
+    useobj.onuse = &on_use_robot_move;
+    useobj.onupdateuserate = &on_update_use_rate_robot_move;
     useobj.robot = robot;
-    if (isdefined(level.var_da151a47)) {
+    if (isdefined(level.levelescortdisable)) {
         if (!isdefined(useobj.exclusions)) {
             useobj.exclusions = [];
         }
-        foreach (trigger in level.var_da151a47) {
+        foreach (trigger in level.levelescortdisable) {
             useobj.exclusions[useobj.exclusions.size] = trigger;
         }
     }
@@ -1406,9 +1406,9 @@ function function_b3d560f2(robot, var_b2950fe9) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x313783f, Offset: 0x6010
 // Size: 0x12c
-function function_496d2c26(player) {
+function on_use_robot_move(player) {
     level.usestartspawns = 0;
-    if (self.robot.moving || !self.robot.active || self.numtouching[self.ownerteam] < level.var_24b79196) {
+    if (self.robot.moving || !self.robot.active || self.numtouching[self.ownerteam] < level.moveplayers) {
         return;
     }
     if (!isdefined(level.var_113c8efc)) {
@@ -1418,18 +1418,18 @@ function function_496d2c26(player) {
         level thread popups::displayteammessagetoteam(#"hash_752379b18bb66bd5", player, player.team, undefined, undefined);
         level.var_113c8efc = gettime();
     }
-    self thread function_15c491b5();
-    self.robot function_cd983806();
+    self thread track_escorting_players();
+    self.robot move_robot();
 }
 
 // Namespace escort/escort
 // Params 3, eflags: 0x1 linked
 // Checksum 0x8107abbd, Offset: 0x6148
 // Size: 0x64
-function function_3a2a93b8(team, progress, change) {
-    var_2cc818f7 = self.numtouching[self.ownerteam];
-    if (var_2cc818f7 < level.var_24b79196) {
-        self.robot function_92cafff7();
+function on_update_use_rate_robot_move(team, progress, change) {
+    numowners = self.numtouching[self.ownerteam];
+    if (numowners < level.moveplayers) {
+        self.robot stop_robot();
     }
 }
 
@@ -1437,16 +1437,16 @@ function function_3a2a93b8(team, progress, change) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xfbf7cab8, Offset: 0x61b8
 // Size: 0x122
-function function_15c491b5() {
+function track_escorting_players() {
     level endon(#"game_ended");
-    self.robot endon(#"hash_aca1ee8e85e3f39");
+    self.robot endon(#"robot_stopped");
     while (1) {
         foreach (touch in self.touchlist[self.team]) {
             if (!isdefined(touch) || !isdefined(touch.player)) {
                 continue;
             }
-            if (!(isdefined(touch.player.var_838ecd80) && touch.player.var_838ecd80)) {
-                self thread function_6d5b85e9(touch.player);
+            if (!(isdefined(touch.player.escortingrobot) && touch.player.escortingrobot)) {
+                self thread track_escort_time(touch.player);
             }
         }
         waitframe(1);
@@ -1457,15 +1457,15 @@ function function_15c491b5() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x9aa136c3, Offset: 0x62e8
 // Size: 0x25c
-function function_6d5b85e9(player) {
+function track_escort_time(player) {
     level endon(#"game_ended");
     player endon(#"death");
-    self.robot endon(#"hash_19b6c6cf9dfb51ca");
-    player.var_838ecd80 = 1;
+    self.robot endon(#"robot_shutdown");
+    player.escortingrobot = 1;
     player recordgameevent("player_escort_start");
-    self thread function_b8c52342(player);
-    self thread function_3156a0df(player);
-    var_4cee6018 = 0;
+    self thread wait_escort_death(player);
+    self thread wait_escort_shutdown(player);
+    consecutiveescorts = 0;
     while (1) {
         wait(1);
         touching = 0;
@@ -1483,13 +1483,13 @@ function function_6d5b85e9(player) {
             player.escorts = player.pers[#"escorts"];
         }
         player stats::function_bb7eedf0(#"escorts", 1);
-        var_4cee6018++;
-        if (var_4cee6018 % 3 == 0) {
-            scoreevents::processscoreevent(#"hash_545259529b693147", player, undefined, undefined);
+        consecutiveescorts++;
+        if (consecutiveescorts % 3 == 0) {
+            scoreevents::processscoreevent(#"escort_robot_escort", player, undefined, undefined);
         }
     }
     if (isdefined(player)) {
-        player function_2ab82db2();
+        player player_stop_escort();
     }
 }
 
@@ -1497,22 +1497,22 @@ function function_6d5b85e9(player) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xaad0291c, Offset: 0x6550
 // Size: 0x3e
-function function_2ab82db2() {
-    self.var_838ecd80 = 0;
+function player_stop_escort() {
+    self.escortingrobot = 0;
     self recordgameevent("player_escort_stop");
-    self notify(#"hash_54aff7a581aa8c5d");
+    self notify(#"escorting_stopped");
 }
 
 // Namespace escort/escort
 // Params 1, eflags: 0x1 linked
 // Checksum 0x63c81791, Offset: 0x6598
 // Size: 0x84
-function function_b8c52342(player) {
+function wait_escort_death(player) {
     level endon(#"game_ended");
-    player endon(#"hash_54aff7a581aa8c5d", #"disconnect");
+    player endon(#"escorting_stopped", #"disconnect");
     player waittill(#"death");
     if (isdefined(player)) {
-        player thread function_2ab82db2();
+        player thread player_stop_escort();
     }
 }
 
@@ -1520,12 +1520,12 @@ function function_b8c52342(player) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x70d5d883, Offset: 0x6628
 // Size: 0x74
-function function_3156a0df(player) {
+function wait_escort_shutdown(player) {
     level endon(#"game_ended");
-    player endon(#"hash_54aff7a581aa8c5d");
-    self.robot waittill(#"hash_19b6c6cf9dfb51ca");
+    player endon(#"escorting_stopped");
+    self.robot waittill(#"robot_shutdown");
     if (isdefined(player)) {
-        player thread function_2ab82db2();
+        player thread player_stop_escort();
     }
 }
 
@@ -1533,8 +1533,8 @@ function function_3156a0df(player) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xec26e1df, Offset: 0x66a8
 // Size: 0x5c
-function function_9d7e4873(robot, var_b2950fe9) {
-    trigger = getent(var_b2950fe9, "targetname");
+function setup_reboot_object(robot, triggername) {
+    trigger = getent(triggername, "targetname");
     if (isdefined(trigger)) {
         trigger delete();
     }
@@ -1544,13 +1544,13 @@ function function_9d7e4873(robot, var_b2950fe9) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x31ba0d65, Offset: 0x6710
 // Size: 0x1b8
-function function_c2fb1ec0(robot, var_b2950fe9) {
-    trigger = getent(var_b2950fe9, "targetname");
+function setup_goal_object(robot, triggername) {
+    trigger = getent(triggername, "targetname");
     if (isdefined(game.var_69b0dc87)) {
         trigger = spawn("trigger_radius_new", game.var_69b0dc87);
         trigger.radius = 120;
     }
-    useobj = gameobjects::create_use_object(game.defenders, trigger, [], (0, 0, 0), #"hash_69cae90a25032311");
+    useobj = gameobjects::create_use_object(game.defenders, trigger, [], (0, 0, 0), #"escort_goal");
     useobj gameobjects::set_visible_team(#"any");
     useobj gameobjects::allow_use(#"none");
     useobj gameobjects::set_use_time(0);
@@ -1559,7 +1559,7 @@ function function_c2fb1ec0(robot, var_b2950fe9) {
     useobj.fx = spawnfx("ui/fx_dom_marker_team_r120", trigger.origin, fwd, right);
     useobj.fx.team = game.defenders;
     triggerfx(useobj.fx, 0.001);
-    useobj thread function_7f386b7d(robot);
+    useobj thread watch_robot_enter(robot);
     return useobj;
 }
 
@@ -1567,22 +1567,22 @@ function function_c2fb1ec0(robot, var_b2950fe9) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x28dbd06b, Offset: 0x68d0
 // Size: 0x370
-function function_7f386b7d(robot) {
+function watch_robot_enter(robot) {
     robot endon(#"death");
     level endon(#"game_ended");
     radiussq = self.trigger.radius * self.trigger.radius;
     while (1) {
         if (robot.moving === 1 && distance2dsquared(self.trigger.origin, robot.origin) < radiussq) {
-            level.var_24b79196 = 0;
-            robot.overrideactordamage = &function_6810f6d7;
+            level.moveplayers = 0;
+            robot.overrideactordamage = &robot_damage_none;
             if (target_istarget(self)) {
                 target_remove(self);
             }
             attackers = game.attackers;
             self.fx.team = attackers;
             foreach (player in level.aliveplayers[attackers]) {
-                if (isdefined(player.var_838ecd80) && player.var_838ecd80) {
-                    scoreevents::processscoreevent(#"hash_4a1a7bd94721191b", player, undefined, undefined);
+                if (isdefined(player.escortingrobot) && player.escortingrobot) {
+                    scoreevents::processscoreevent(#"escort_robot_escort_goal", player, undefined, undefined);
                     [[ level.var_37d62931 ]](player, 1);
                     var_6913cac0 = player stats::get_stat(#"playerstatslist", #"hash_69b694eed7150881", #"statvalue") + 1;
                     player stats::set_stat(#"playerstatslist", #"hash_69b694eed7150881", #"statvalue", var_6913cac0);
@@ -1591,7 +1591,7 @@ function function_7f386b7d(robot) {
             level.robot recordgameeventnonplayer("robot_reached_objective");
             setgameendtime(0);
             robot val::set(#"escort_robot", "ignoreme", 1);
-            robot thread function_cd24840b(1);
+            robot thread explode_robot_after_wait(1);
             globallogic_score::giveteamscoreforobjective(attackers, 1);
             round::set_winner(attackers);
             level thread globallogic::end_round(1);
@@ -1605,11 +1605,11 @@ function function_7f386b7d(robot) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf853065b, Offset: 0x6c48
 // Size: 0x3c
-function function_cd24840b(wait_time) {
+function explode_robot_after_wait(wait_time) {
     robot = self;
     wait(wait_time);
     if (isdefined(robot)) {
-        robot function_268637ff();
+        robot explode_robot();
     }
 }
 
@@ -1617,15 +1617,15 @@ function function_cd24840b(wait_time) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xb3d38924, Offset: 0x6c90
 // Size: 0x4ec
-function function_3135a437(goal) {
-    self endon(#"hash_3541570614886e6a");
+function kill_anything_blocking_goal(goal) {
+    self endon(#"end_kill_anything");
     self.disablefinalkillcam = 1;
-    var_f0594989 = vectornormalize(goal - self.origin);
-    var_729e366c = 0;
-    var_ac1b6e90 = undefined;
-    var_2227837c = -1e+09;
+    dirtogoal = vectornormalize(goal - self.origin);
+    atleastonedestroyed = 0;
+    bestcandidate = undefined;
+    bestcandidatedot = -1e+09;
     /#
-        function_7b6e70ee(self.origin, 108);
+        debug_draw_blocked_path_kill_radius(self.origin, 108);
     #/
     entities = getdamageableentarray(self.origin, 108);
     foreach (entity in entities) {
@@ -1641,14 +1641,14 @@ function function_3135a437(goal) {
         if (!isalive(entity)) {
             continue;
         }
-        var_78e6fc5e = vectordot(var_f0594989, entity.origin - self.origin);
-        if (var_78e6fc5e > var_2227837c) {
-            var_ac1b6e90 = entity;
-            var_2227837c = var_78e6fc5e;
+        entitydot = vectordot(dirtogoal, entity.origin - self.origin);
+        if (entitydot > bestcandidatedot) {
+            bestcandidate = entity;
+            bestcandidatedot = entitydot;
         }
     }
-    if (isdefined(var_ac1b6e90)) {
-        entity = var_ac1b6e90;
+    if (isdefined(bestcandidate)) {
+        entity = bestcandidate;
         if (isdefined(entity.targetname)) {
             if (entity.targetname == "talon") {
                 entity notify(#"death");
@@ -1681,35 +1681,35 @@ function function_3135a437(goal) {
             return 1;
         }
         entity dodamage(entity.health * 2, self.origin + (0, 0, 1), self, self, 0, "MOD_CRUSH");
-        var_729e366c = 1;
+        atleastonedestroyed = 1;
     }
-    var_729e366c = var_729e366c || self function_d3cfb9db(var_f0594989);
-    return var_729e366c;
+    atleastonedestroyed = atleastonedestroyed || self destroy_supply_crate_blocking_goal(dirtogoal);
+    return atleastonedestroyed;
 }
 
 // Namespace escort/escort
 // Params 1, eflags: 0x1 linked
 // Checksum 0x2529d63b, Offset: 0x7188
 // Size: 0x1b4
-function function_d3cfb9db(var_f0594989) {
-    var_f512e31d = getentarray("care_package", "script_noteworthy");
-    var_2aa6783b = undefined;
-    var_b230f625 = -1e+09;
-    foreach (crate in var_f512e31d) {
+function destroy_supply_crate_blocking_goal(dirtogoal) {
+    crates = getentarray("care_package", "script_noteworthy");
+    bestcrate = undefined;
+    bestcrateedot = -1e+09;
+    foreach (crate in crates) {
         if (distancesquared(crate.origin, self.origin) > 108 * 108) {
             continue;
         }
-        var_69535e8a = vectordot(var_f0594989, crate.origin - self.origin);
-        if (var_69535e8a > var_b230f625) {
-            var_2aa6783b = crate;
-            var_b230f625 = var_69535e8a;
+        cratedot = vectordot(dirtogoal, crate.origin - self.origin);
+        if (cratedot > bestcrateedot) {
+            bestcrate = crate;
+            bestcrateedot = cratedot;
         }
     }
-    if (isdefined(var_2aa6783b)) {
-        playfx(level._supply_drop_explosion_fx, var_2aa6783b.origin);
-        playsoundatposition(#"wpn_grenade_explode", var_2aa6783b.origin);
+    if (isdefined(bestcrate)) {
+        playfx(level._supply_drop_explosion_fx, bestcrate.origin);
+        playsoundatposition(#"wpn_grenade_explode", bestcrate.origin);
         wait(0.1);
-        var_2aa6783b supplydrop::cratedelete();
+        bestcrate supplydrop::cratedelete();
         return 1;
     }
     return 0;

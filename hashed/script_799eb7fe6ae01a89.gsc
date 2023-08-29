@@ -79,7 +79,7 @@ function function_65937bee(var_5ea5c94d, ended_early) {
 // Size: 0xa4
 function function_e0254b72() {
     var_8c07f4aa = array(#"hash_3da8a375da1a29c2", #"hash_4350c9d0e319afc3", #"hash_8cf7bf5d41063ec", #"hash_5b57476ff83609ad");
-    var_25eaa205 = struct::get(#"hash_5ac2330aac27e165");
+    var_25eaa205 = struct::get(#"morgue_audio");
     zm_hms_util::function_52c3fe8d(var_8c07f4aa, var_25eaa205.origin);
 }
 

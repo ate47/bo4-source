@@ -517,8 +517,8 @@ function play_crashing_loop() {
 // Size: 0xa4
 function helicopter_explode(delete_me) {
     self endon(#"death");
-    if (isdefined(self.var_b46557d6)) {
-        self [[ self.var_b46557d6 ]](1);
+    if (isdefined(self.destroyfunc)) {
+        self [[ self.destroyfunc ]](1);
     }
     self vehicle::do_death_fx();
     if (isdefined(delete_me) && delete_me) {

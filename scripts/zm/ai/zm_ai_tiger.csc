@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include script_ac6a30f1991e105;
+#include scripts/core_common/ai/systems/fx_character.csc;
 #include scripts/zm_common/zm_utility.csc;
 #include scripts/zm_common/zm.csc;
 #include scripts/core_common/util_shared.csc;

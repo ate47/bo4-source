@@ -68,8 +68,8 @@ function private function_6bf7d04f(var_c766fbe6) {
     /#
         assert(isdefined(level.var_d77a6967));
     #/
-    var_aced072d = util::get_human_players(#"allies");
-    player_count = var_aced072d.size;
+    a_human_players = util::get_human_players(#"allies");
+    player_count = a_human_players.size;
     if (level.round_number == 24) {
         /#
             assert(level.var_d77a6967.name == #"unhealthy");

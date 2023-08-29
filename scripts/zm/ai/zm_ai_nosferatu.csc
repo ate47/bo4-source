@@ -3,7 +3,7 @@
 #include scripts/zm_common/zm_customgame.csc;
 #include scripts/zm_common/zm_utility.csc;
 #include scripts/core_common/callbacks_shared.csc;
-#include script_ac6a30f1991e105;
+#include scripts/core_common/ai/systems/fx_character.csc;
 #include scripts/core_common/util_shared.csc;
 #include scripts/core_common/system_shared.csc;
 #include scripts/core_common/postfx_shared.csc;
@@ -51,7 +51,7 @@ function private function_4207e678(localclientnum, oldval, newval, bnewent, bini
     if (newval == 1) {
         self thread function_3a03717(localclientnum);
     } else {
-        self notify(#"hash_4d749d2c8c4c9f2d");
+        self notify(#"stop_summon");
     }
 }
 
@@ -60,8 +60,8 @@ function private function_4207e678(localclientnum, oldval, newval, bnewent, bini
 // Checksum 0xe0d17e87, Offset: 0x4c0
 // Size: 0xc8
 function function_3a03717(localclientnum) {
-    self notify(#"hash_4d749d2c8c4c9f2d");
-    self endon(#"death", #"hash_4d749d2c8c4c9f2d");
+    self notify(#"stop_summon");
+    self endon(#"death", #"stop_summon");
     while (1) {
         e_player = function_5c10bd79(localclientnum);
         n_dist = distance(self.origin, e_player.origin);

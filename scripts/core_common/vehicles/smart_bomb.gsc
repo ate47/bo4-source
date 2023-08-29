@@ -113,7 +113,7 @@ function state_combat_update(params) {
                 continue;
             }
             if (!isdefined(self.enemy)) {
-                if (isdefined(self.settings.var_134b9cef)) {
+                if (isdefined(self.settings.all_knowing)) {
                     self force_get_enemies();
                 }
                 self setspeed(self.settings.defaultmovespeed * 0.35);
@@ -550,7 +550,7 @@ function try_detonate() {
 // Checksum 0xbaf22c8a, Offset: 0x2758
 // Size: 0x368
 function function_dcecac3c() {
-    if (isdefined(self.settings.var_134b9cef)) {
+    if (isdefined(self.settings.all_knowing)) {
         if (isdefined(self.enemy)) {
             target_pos = self.enemy.origin;
         }

@@ -480,8 +480,8 @@ function watch_team_change(hawk) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xea44cb44, Offset: 0x1f20
 // Size: 0x5f0
-function getvalidtargets(hawk, stance_offsets&) {
-    pixbeginevent(#"hash_154ee37d3b8c607f");
+function getvalidtargets(hawk, &stance_offsets) {
+    pixbeginevent(#"hawk_enemies");
     targets = [];
     if (isdefined(self.hawk.var_b61d83c4) && self.hawk.var_b61d83c4) {
         return targets;

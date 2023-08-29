@@ -41,7 +41,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0xe386cafa, Offset: 0xd98
 // Size: 0x29c2
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("clientuimodel", "player_lives", 1, 2, "int", undefined, 0, 0);
     clientfield::register("scriptmover", "entry_gate_dust", 1, 1, "int", &function_ce727843, 0, 0);
     clientfield::register("scriptmover", "zombie_head_pickup_glow", 1, 1, "int", &function_b675c8b2, 0, 0);

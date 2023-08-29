@@ -34,13 +34,13 @@
 #include scripts/core_common/challenges_shared.gsc;
 #include scripts/core_common/callbacks_shared.gsc;
 
-#namespace namespace_2225cf06;
+#namespace mission_koth;
 
-// Namespace namespace_2225cf06/gametype_init
+// Namespace mission_koth/gametype_init
 // Params 1, eflags: 0x40
 // Checksum 0xf0579c66, Offset: 0x990
 // Size: 0x786
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     util::registertimelimit(0, 1440);
     util::registerscorelimit(0, 2000);
@@ -50,13 +50,13 @@ function event<gametype_init> main(eventstruct) {
     util::registerroundwinlimit(0, 10);
     util::registerscorelimit(0, 5000);
     globallogic::registerfriendlyfiredelay(level.gametype, 15, 0, 1440);
-    game.var_f89ce1fc = "mpl_flagcapture_sting_friend";
-    game.var_90aa6ae6 = "mpl_flagcapture_sting_enemy";
+    game.objective_gained_sound = "mpl_flagcapture_sting_friend";
+    game.objective_lost_sound = "mpl_flagcapture_sting_enemy";
     level.onstartgametype = &on_start_gametype;
     level.onspawnplayer = &on_spawn_player;
     player::function_cf3aa03d(&on_player_killed);
     player::function_3c5cc656(&function_610d3790);
-    level.ontimelimit = &function_ee410a60;
+    level.ontimelimit = &on_time_limit;
     level.onendgame = &on_end_game;
     level.ononeleftevent = &ononeleftevent;
     level.onendround = &on_end_round;
@@ -65,42 +65,42 @@ function event<gametype_init> main(eventstruct) {
     level.ondeadevent = &on_dead_event;
     level.doprematch = 1;
     level.overrideteamscore = 1;
-    level.var_bfa006c9 = 0;
+    level.warstarttime = 0;
     level.var_f5a73a96 = 1;
     level.takelivesondeath = 1;
     level.b_allow_vehicle_proximity_pickup = 1;
     level.scoreroundwinbased = getgametypesetting(#"cumulativeroundscores") == 0;
-    level.var_a346e384 = getgametypesetting(#"objectiveSpawnTime");
+    level.zonespawntime = getgametypesetting(#"objectiveSpawnTime");
     level.capturetime = getgametypesetting(#"capturetime");
     level.destroyTime = getgametypesetting(#"destroyTime");
     level.timePausesWhenInZone = getgametypesetting(#"timePausesWhenInZone");
-    level.dela = getgametypesetting(#"hash_16efbe2186f760ad");
+    level.dela = getgametypesetting(#"delayplayer");
     level.scorePerPlayer = getgametypesetting(#"scorePerPlayer");
     level.neutralZone = getgametypesetting(#"neutralZone");
     level.decayCapturedZones = getgametypesetting(#"decayCapturedZones");
     level.capDecay = getgametypesetting(#"capDecay");
     level.extraTime = getgametypesetting(#"extraTime");
-    level.var_26ee7cf = getgametypesetting(#"hash_3de4aa2f016161ec");
+    level.playercapturelpm = getgametypesetting(#"maxplayereventsperminute");
     level.autodecaytime = isdefined(getgametypesetting(#"autodecaytime")) ? getgametypesetting(#"autodecaytime") : undefined;
     level.timerpaused = 0;
-    level.var_3c4ca038 = [];
+    level.zonepauseinfo = [];
     level.var_b9d36d8e = [];
     level.var_46ff851e = 0;
-    level.var_433c44c5 = 0;
+    level.numzonesoccupied = 0;
     level.flagCaptureRateIncrease = getgametypesetting(#"flagCaptureRateIncrease");
     level.bonusLivesForCapturingZone = isdefined(getgametypesetting(#"bonusLivesForCapturingZone")) ? getgametypesetting(#"bonusLivesForCapturingZone") : 0;
     globallogic_audio::set_leader_gametype_dialog("startControl", "hcStartControl", "controlOrdersOfs", "controlOrdersDef", "bbStartControl", "hcbbStartControl");
     register_clientfields();
     callback::on_connect(&on_player_connect);
-    level.var_53305148 = [];
-    level.var_8b2913b0 = getscriptbundle("mission_settings_control");
+    level.audiocues = [];
+    level.mission_bundle = getscriptbundle("mission_settings_control");
     globallogic_spawn::addsupportedspawnpointtype("control");
     game.strings[#"hash_bab7f2001813aa7"] = #"hash_15294f07ee519376";
     game.strings[#"hash_5db475ae2d5164e1"] = #"hash_3a9b595d0bf81f13";
     hud_message::function_36419c2(1, game.strings[#"hash_bab7f2001813aa7"], game.strings[#"hash_5db475ae2d5164e1"]);
-    level.var_61a8cce3 = int(level.var_8b2913b0.var_bb89b5c5);
-    if (!isdefined(level.var_61a8cce3)) {
-        level.var_61a8cce3 = 5000;
+    level.audioplaybackthrottle = int(level.mission_bundle.msaudioplaybackthrottle);
+    if (!isdefined(level.audioplaybackthrottle)) {
+        level.audioplaybackthrottle = 5000;
     }
     if (util::function_8570168d()) {
         namespace_9096c917::init();
@@ -109,7 +109,7 @@ function event<gametype_init> main(eventstruct) {
     level.var_d3a438fb = &function_d3a438fb;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0xfee2bf62, Offset: 0x1120
 // Size: 0x1fc
@@ -142,7 +142,7 @@ function function_fcee7d01() {
     globallogic_spawn::addspawns();
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x7c21aa57, Offset: 0x1328
 // Size: 0xc4
@@ -153,12 +153,12 @@ function register_clientfields() {
     clientfield::register("worlduimodel", "hudItems.war.attackingTeam", 1, 2, "int");
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x296a60e4, Offset: 0x13f8
 // Size: 0xa4
-function function_ee410a60() {
-    if (level.zones.size == level.var_907fd719) {
+function on_time_limit() {
+    if (level.zones.size == level.capturedzones) {
         level thread globallogic::end_round(1);
         return;
     }
@@ -170,7 +170,7 @@ function function_ee410a60() {
     thread globallogic::end_round(2);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0xb6f57c0b, Offset: 0x14a8
 // Size: 0x64
@@ -182,19 +182,19 @@ function on_spawn_player(predictedspawn) {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x595da37a, Offset: 0x1518
 // Size: 0x3e
 function gettimelimit() {
     timelimit = globallogic_defaults::default_gettimelimit();
-    if (level.var_e321292) {
+    if (level.usingextratime) {
         return (timelimit + level.extraTime);
     }
     return timelimit;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0x3ed4c4ed, Offset: 0x1560
 // Size: 0x7c
@@ -208,7 +208,7 @@ function on_end_game(var_c1e98979) {
     match::function_af2e264f(winner);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0xe2203c4f, Offset: 0x15e8
 // Size: 0xb4
@@ -224,7 +224,7 @@ function on_end_round(var_c1e98979) {
     function_68387604(var_c1e98979);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0xc6dac18b, Offset: 0x16a8
 // Size: 0x30
@@ -238,7 +238,7 @@ function function_d126ce1b() {
     return 0;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 4, eflags: 0x0
 // Checksum 0xaac72eac, Offset: 0x16e0
 // Size: 0x66c
@@ -267,8 +267,8 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
             zone = controlzone;
         }
     }
-    var_a8cbc1c4 = 0;
-    var_e4b6c276 = 0;
+    medalgiven = 0;
+    scoreeventprocessed = 0;
     ownerteam = undefined;
     if (level.capturetime == 0) {
         if (!isdefined(zone)) {
@@ -288,7 +288,7 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
         if (victim.team == game.attackers && attacker.team == game.defenders) {
             attacker thread challenges::killedbaseoffender(zone.gameobject, weapon, einflictor);
             if (var_1cfdf798 && var_376742ed) {
-                attacker thread function_353427b(victim, weapon);
+                attacker thread kill_while_contesting(victim, weapon);
                 scoreevents::processscoreevent(#"hash_339b0e87303dbd56", attacker, self, weapon);
             }
         }
@@ -298,7 +298,7 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
                 if (var_1cfdf798 && (!attacker function_d126ce1b() || level.capturetime == 0 && attacker istouching(zone.trigger))) {
                     scoreevents::processscoreevent(#"hash_75a65ea8fdda2ceb", attacker, victim, weapon);
                 }
-                scoreevents::processscoreevent(#"hash_126aaff0ffbd9376", attacker, victim, weapon);
+                scoreevents::processscoreevent(#"war_killed_defender_in_zone", attacker, victim, weapon);
             }
         }
         if (var_1cfdf798 && var_376742ed) {
@@ -309,7 +309,7 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 9, eflags: 0x0
 // Checksum 0x4ba49a38, Offset: 0x1d58
 // Size: 0x214
@@ -337,7 +337,7 @@ function on_player_killed(einflictor, attacker, idamage, smeansofdeath, weapon, 
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x0
 // Checksum 0x9b8bded3, Offset: 0x1f78
 // Size: 0x180
@@ -349,8 +349,8 @@ function function_a800815(victim, attacker) {
         return 0;
     }
     if (isdefined(victim.touchtriggers) && victim.touchtriggers.size && attacker.pers[#"team"] != victim.pers[#"team"] && victim.pers[#"team"] == game.attackers) {
-        var_34bb9c9e = getarraykeys(victim.touchtriggers);
-        zone = victim.touchtriggers[var_34bb9c9e[0]].useobj;
+        triggerids = getarraykeys(victim.touchtriggers);
+        zone = victim.touchtriggers[triggerids[0]].useobj;
         if (zone.curprogress > 0) {
             return 1;
         }
@@ -358,7 +358,7 @@ function function_a800815(victim, attacker) {
     return 0;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0xffb89f4e, Offset: 0x2100
 // Size: 0xba
@@ -374,7 +374,7 @@ function function_d3a438fb(entity) {
     return 0;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x0
 // Checksum 0xcf8c9d2e, Offset: 0x21c8
 // Size: 0x1b8
@@ -397,31 +397,31 @@ function function_580fd2d5(attacker, weapon) {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0xab6a51f9, Offset: 0x2388
 // Size: 0x82
-function function_7317c1bb(var_f66fb259) {
-    var_c12a0335 = 1;
+function get_player_userate(use_object) {
+    use_rate_multiplier = 1;
     if (isdefined(self.playerrole)) {
         if (self.team == game.attackers) {
-            var_c12a0335 = self.playerrole.var_b0ddf8e5;
+            use_rate_multiplier = self.playerrole.attackercapturemultiplier;
         } else if (self.team == game.defenders) {
-            var_c12a0335 = self.playerrole.var_3a1d8b72;
+            use_rate_multiplier = self.playerrole.defenddecaymultiplier;
         }
     }
-    return var_c12a0335;
+    return use_rate_multiplier;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0xe3f3ae9c, Offset: 0x2418
 // Size: 0x24
 function on_player_connect() {
-    self gameobjects::setplayergametypeuseratecallback(&function_7317c1bb);
+    self gameobjects::setplayergametypeuseratecallback(&get_player_userate);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x4
 // Checksum 0x2d69bd61, Offset: 0x2448
 // Size: 0x2a
@@ -430,53 +430,53 @@ function private use_start_spawns() {
     level.usestartspawns = 0;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0xca65675b, Offset: 0x2480
 // Size: 0xdc
 function on_start_gametype() {
-    level.var_e321292 = 0;
-    level.var_83220de2 = 0;
+    level.usingextratime = 0;
+    level.wartotalsecondsinzone = 0;
     level.var_83f7fa3b = undefined;
-    function_d494e69();
+    setup_objectives();
     globallogic_score::resetteamscores();
-    level.var_e25d4ecc = 0;
-    level.var_d3a30eff = 0;
+    level.zonemask = 0;
+    level.zonestatemask = 0;
     thread use_start_spawns();
     userspawnselection::supressspawnselectionmenuforallplayers();
-    function_5274dbe8();
+    setup_zones();
     function_fcee7d01();
     thread set_ui_team();
-    thread function_9bb83f0();
+    thread main_loop();
     thread function_caff2d60();
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x2bf75c48, Offset: 0x2568
 // Size: 0x57a
-function function_5274dbe8() {
-    level.zones = function_c9bc70d6();
+function setup_zones() {
+    level.zones = get_zone_array();
     if (level.zones.size == 0) {
         globallogic_utils::print_map_errors();
         return 0;
     }
     if (level.zones.size > 1) {
-        level.var_df6215f4 = level.zones.size;
+        level.nzones = level.zones.size;
         trigs = getentarray("control_zone_trigger", "targetname");
     } else {
-        level.var_df6215f4 = 1;
+        level.nzones = 1;
         trigs = getentarray("control_zone_trigger", "targetname");
     }
-    for (zi = 0; zi < level.var_df6215f4; zi++) {
+    for (zi = 0; zi < level.nzones; zi++) {
         zone = level.zones[zi];
-        var_b2150652 = 0;
+        errored = 0;
         zone.trigger = undefined;
         for (j = 0; j < trigs.size; j++) {
             if (zone istouching(trigs[j])) {
                 if (isdefined(zone.trigger)) {
                     globallogic_utils::add_map_error("Zone at " + zone.origin + " is touching more than one "zonetrigger" trigger");
-                    var_b2150652 = 1;
+                    errored = 1;
                     break;
                 }
                 zone.trigger = trigs[j];
@@ -484,23 +484,23 @@ function function_5274dbe8() {
             }
         }
         if (!isdefined(zone.trigger)) {
-            if (!var_b2150652) {
+            if (!errored) {
                 globallogic_utils::add_map_error("Zone at " + zone.origin + " is not inside any "zonetrigger" trigger");
                 return;
             }
         }
         /#
-            assert(!var_b2150652);
+            assert(!errored);
         #/
         zone.trigger trigger::function_1792c799(16);
-        zone.var_3390c6f0 = zone.trigger.origin;
-        zone.var_24fbbe05 = spawn("script_model", zone.origin);
+        zone.trigorigin = zone.trigger.origin;
+        zone.objectiveanchor = spawn("script_model", zone.origin);
         visuals = [];
         visuals[0] = zone;
         if (isdefined(zone.target)) {
-            var_1f95679e = getentarray(zone.target, "targetname");
-            for (j = 0; j < var_1f95679e.size; j++) {
-                visuals[visuals.size] = var_1f95679e[j];
+            othervisuals = getentarray(zone.target, "targetname");
+            for (j = 0; j < othervisuals.size; j++) {
+                visuals[visuals.size] = othervisuals[j];
             }
         }
         ownerteam = game.defenders;
@@ -511,24 +511,24 @@ function function_5274dbe8() {
         zone.gameobject gameobjects::set_objective_entity(zone);
         zone.gameobject gameobjects::disable_object();
         zone.gameobject gameobjects::set_model_visibility(0);
-        zone.gameobject.var_cb205f83 = zone;
+        zone.gameobject.owningzone = zone;
         zone.trigger.useobj = zone.gameobject;
-        zone.gameobject.var_2d4c706 = #"neutral";
-        zone.gameobject.var_eac9e8ae = 1;
+        zone.gameobject.lastteamtoownzone = #"neutral";
+        zone.gameobject.currentlyunoccupied = 1;
         zone.gameobject.var_a0ff5eb8 = !level.flagCaptureRateIncrease;
         zone.zoneindex = zi;
         zone.scores = [];
         foreach (team, _ in level.teams) {
             zone.scores[team] = 0;
         }
-        zone function_fadbbfea();
+        zone setup_zone_exclusions();
     }
     if (globallogic_utils::print_map_errors()) {
         return 0;
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x4
 // Checksum 0x6c0e8134, Offset: 0x2af0
 // Size: 0xa4
@@ -542,63 +542,63 @@ function private function_a8da260c() {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x0
 // Checksum 0xe0c033d, Offset: 0x2ba0
 // Size: 0xfc
-function function_e7e84c96(zone_a, zone_b) {
-    var_4aeef54 = zone_a.script_index;
-    var_2e6a42ca = zone_b.script_index;
-    if (!isdefined(var_4aeef54) && !isdefined(var_2e6a42ca)) {
+function compare_zone_indicies(zone_a, zone_b) {
+    script_index_a = zone_a.script_index;
+    script_index_b = zone_b.script_index;
+    if (!isdefined(script_index_a) && !isdefined(script_index_b)) {
         return 0;
     }
-    if (!isdefined(var_4aeef54) && isdefined(var_2e6a42ca)) {
+    if (!isdefined(script_index_a) && isdefined(script_index_b)) {
         /#
             println("kothActiveDialogBuffer" + zone_a.origin);
         #/
         return 1;
     }
-    if (isdefined(var_4aeef54) && !isdefined(var_2e6a42ca)) {
+    if (isdefined(script_index_a) && !isdefined(script_index_b)) {
         /#
             println("kothActiveDialogBuffer" + zone_b.origin);
         #/
         return 0;
     }
-    if (var_4aeef54 > var_2e6a42ca) {
+    if (script_index_a > script_index_b) {
         return 1;
     }
     return 0;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x15531f40, Offset: 0x2ca8
 // Size: 0x37c
-function function_c9bc70d6() {
-    var_c96c663b = getentarray("control_zone_center", "targetname");
-    if (!isdefined(var_c96c663b)) {
+function get_zone_array() {
+    allzones = getentarray("control_zone_center", "targetname");
+    if (!isdefined(allzones)) {
         globallogic_utils::add_map_error("Cannot find any zone entities");
         return [];
     }
-    if (var_c96c663b.size == 0) {
+    if (allzones.size == 0) {
         globallogic_utils::add_map_error("There are no control zones defined for this map " + util::get_map_name());
         return [];
     }
-    if (var_c96c663b.size > 1) {
-        var_71b9425c = [];
-        var_93fd6689 = var_c96c663b.size;
-        for (i = 0; i < var_93fd6689; i++) {
-            fieldname = "zoneinfo" + var_93fd6689 + i + 1;
-            index = isdefined(level.var_8b2913b0.(fieldname)) ? level.var_8b2913b0.(fieldname) : 0;
-            var_71b9425c[var_71b9425c.size] = index;
+    if (allzones.size > 1) {
+        zoneindices = [];
+        numberofzones = allzones.size;
+        for (i = 0; i < numberofzones; i++) {
+            fieldname = "zoneinfo" + numberofzones + i + 1;
+            index = isdefined(level.mission_bundle.(fieldname)) ? level.mission_bundle.(fieldname) : 0;
+            zoneindices[zoneindices.size] = index;
         }
         zones = [];
-        for (i = 0; i < var_c96c663b.size; i++) {
-            ind = var_c96c663b[i].script_index;
+        for (i = 0; i < allzones.size; i++) {
+            ind = allzones[i].script_index;
             if (isdefined(ind)) {
-                for (j = 0; j < var_71b9425c.size; j++) {
-                    if (var_71b9425c[j] == ind) {
-                        zones[zones.size] = var_c96c663b[i];
+                for (j = 0; j < zoneindices.size; j++) {
+                    if (zoneindices[j] == ind) {
+                        zones[zones.size] = allzones[i];
                         break;
                     }
                 }
@@ -613,15 +613,15 @@ function function_c9bc70d6() {
         globallogic_utils::add_map_error("Cannot find any zone entities");
         return [];
     }
-    var_58429fdf = 1;
-    for (n = zones.size; var_58429fdf; n--) {
-        var_58429fdf = 0;
+    swapped = 1;
+    for (n = zones.size; swapped; n--) {
+        swapped = 0;
         for (i = 0; i < n - 1; i++) {
-            if (function_e7e84c96(zones[i], zones[i + 1])) {
+            if (compare_zone_indicies(zones[i], zones[i + 1])) {
                 temp = zones[i];
                 zones[i] = zones[i + 1];
                 zones[i + 1] = temp;
-                var_58429fdf = 1;
+                swapped = 1;
             }
         }
     }
@@ -631,7 +631,7 @@ function function_c9bc70d6() {
     return zones;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x0
 // Checksum 0x3de200a3, Offset: 0x3030
 // Size: 0xe6
@@ -646,18 +646,18 @@ function update_objective_hint_message(attackersmsg, defendersmsg) {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0xbdb9a718, Offset: 0x3120
 // Size: 0x152
-function function_d494e69() {
-    level.var_96c0acbc = #"hash_428c6be88cdba7e1";
-    level.var_5046f809 = #"hash_20ab0af94351c0d8";
-    level.var_962c97ec = #"hash_257d8ae2e7fc8eb8";
-    if (level.var_a346e384) {
-        update_objective_hint_message(level.var_96c0acbc);
+function setup_objectives() {
+    level.objectivehintpreparezone = #"hash_428c6be88cdba7e1";
+    level.objectivehintcapturezone = #"hash_20ab0af94351c0d8";
+    level.objectivehintdefendhq = #"hash_257d8ae2e7fc8eb8";
+    if (level.zonespawntime) {
+        update_objective_hint_message(level.objectivehintpreparezone);
     } else {
-        update_objective_hint_message(level.var_5046f809);
+        update_objective_hint_message(level.objectivehintcapturezone);
     }
     game.strings[game.attackers + "_mission_win"] = #"hash_6ed10cd957ecbde6";
     game.strings[game.attackers + "_mission_loss"] = #"hash_504843f8a8fe0230";
@@ -665,39 +665,39 @@ function function_d494e69() {
     game.strings[game.defenders + "_mission_loss"] = #"hash_7d37cafde0ab4ecd";
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0xb8c3d622, Offset: 0x3280
 // Size: 0xd4
-function function_d137466e(enabled) {
+function toggle_zone_effects(enabled) {
     if (enabled) {
-        level.var_e25d4ecc = level.var_e25d4ecc | 1 << self.zone_index;
+        level.zonemask = level.zonemask | 1 << self.zone_index;
     } else {
-        level.var_e25d4ecc = level.var_e25d4ecc & ~(1 << self.zone_index);
+        level.zonemask = level.zonemask & ~(1 << self.zone_index);
     }
-    level.var_d3a30eff = level.var_d3a30eff & ~(3 << self.zone_index);
-    level clientfield::set("warzone", level.var_e25d4ecc);
-    level clientfield::set("warzonestate", level.var_d3a30eff);
+    level.zonestatemask = level.zonestatemask & ~(3 << self.zone_index);
+    level clientfield::set("warzone", level.zonemask);
+    level clientfield::set("warzonestate", level.zonestatemask);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x5ecbd892, Offset: 0x3360
 // Size: 0x348
-function function_9bb83f0() {
+function main_loop() {
     level endon(#"game_ended");
     while (level.inprematchperiod) {
         waitframe(1);
     }
-    thread function_c4922ad8();
+    thread hide_timer_on_game_end();
     wait(1);
     sound::play_on_players("mp_suitcase_pickup");
-    if (level.var_a346e384 && !(isdefined(level.neutralZone) && level.neutralZone)) {
+    if (level.zonespawntime && !(isdefined(level.neutralZone) && level.neutralZone)) {
         foreach (zone in level.zones) {
             zone.gameobject gameobjects::set_flags(1);
         }
-        update_objective_hint_message(level.var_96c0acbc);
-        wait(level.var_a346e384);
+        update_objective_hint_message(level.objectivehintpreparezone);
+        wait(level.zonespawntime);
         foreach (zone in level.zones) {
             zone.gameobject gameobjects::set_flags(0);
         }
@@ -709,31 +709,31 @@ function function_9bb83f0() {
         update_objective_hint_message(#"hash_68ddcee590e87b3d", #"hash_4900ca003706dc1d");
     }
     sound::play_on_players("mpl_hq_cap_us");
-    thread function_22c0cb97();
+    thread audio_loop();
     thread function_23bedaa1();
     foreach (zone in level.zones) {
-        thread function_4fb0ec25(zone);
+        thread capture_loop(zone);
     }
-    level.var_907fd719 = 0;
-    while (level.var_907fd719 < level.zones.size) {
+    level.capturedzones = 0;
+    while (level.capturedzones < level.zones.size) {
         res = undefined;
         res = level waittill(#"zone_captured");
         waitframe(1);
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x51097490, Offset: 0x36b0
 // Size: 0x10e
-function function_22c0cb97() {
+function audio_loop() {
     level endon(#"game_ended");
-    self notify(#"hash_78d966dcae0916fa");
-    self endon(#"hash_78d966dcae0916fa");
+    self notify(#"audio_loop_singleton");
+    self endon(#"audio_loop_singleton");
     while (1) {
         foreach (zone in level.zones) {
-            if (function_73d7b040(zone.gameobject)) {
-                playsoundatposition(#"hash_3cdbad029d1c9f65", zone.gameobject.origin);
+            if (is_zone_contested(zone.gameobject)) {
+                playsoundatposition(#"mpl_zone_contested", zone.gameobject.origin);
                 break;
             }
         }
@@ -741,7 +741,7 @@ function function_22c0cb97() {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x22dcabd, Offset: 0x37c8
 // Size: 0x9c
@@ -751,37 +751,37 @@ function function_23bedaa1() {
     self endon(#"hash_5e9e72ecc3fc7569");
     while (1) {
         for (i = 0; i < level.zones.size; i++) {
-            function_9ed0e6e9(i, 0);
+            update_timer(i, 0);
         }
         wait(0.1);
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x3fac149d, Offset: 0x3870
 // Size: 0x3c
 function function_31c391cf() {
     util::wait_network_frame();
     util::wait_network_frame();
-    self function_d137466e(1);
+    self toggle_zone_effects(1);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0x7db15487, Offset: 0x38b8
 // Size: 0x5d6
-function function_4fb0ec25(zone) {
+function capture_loop(zone) {
     level endon(#"game_ended");
-    level.var_bfa006c9 = gettime();
+    level.warstarttime = gettime();
     zone.gameobject gameobjects::set_flags(0);
     zone.gameobject gameobjects::enable_object();
-    objective_onentity(zone.gameobject.objectiveid, zone.var_24fbbe05);
-    zone.gameobject.var_1d42950b = 0;
+    objective_onentity(zone.gameobject.objectiveid, zone.objectiveanchor);
+    zone.gameobject.capturecount = 0;
     zone.gameobject gameobjects::allow_use(#"enemy");
     zone.gameobject gameobjects::set_use_time(level.capturetime);
     zone.gameobject gameobjects::set_use_text(#"hash_467145983994c6c2");
-    numtouching = zone.gameobject function_109febeb();
+    numtouching = zone.gameobject get_num_touching();
     zone.gameobject gameobjects::set_visible_team(#"any");
     zone.gameobject gameobjects::set_model_visibility(1);
     zone.gameobject gameobjects::must_maintain_claim(0);
@@ -790,29 +790,29 @@ function function_4fb0ec25(zone) {
     zone.gameobject gameobjects::set_decay_time(level.capturetime);
     zone.autodecaytime = level.autodecaytime;
     if (isdefined(level.neutralZone) && level.neutralZone) {
-        zone.gameobject.onuse = &function_ef9ae3d9;
+        zone.gameobject.onuse = &on_zone_capture_neutral;
     } else {
-        zone.gameobject.onuse = &function_2efe6449;
+        zone.gameobject.onuse = &on_zone_capture;
     }
-    zone.gameobject.onbeginuse = &function_c6249b2e;
-    zone.gameobject.onenduse = &function_55f0016b;
-    zone.gameobject.var_3c57b17d = &function_8c50d606;
-    zone.gameobject.var_df79c725 = &function_bcaf6836;
-    zone.gameobject.onendtouchuse = &function_27b934b5;
-    zone.gameobject.onresumeuse = &function_8c50d606;
+    zone.gameobject.onbeginuse = &on_begin_use;
+    zone.gameobject.onenduse = &on_end_use;
+    zone.gameobject.ontouchuse = &on_touch_use;
+    zone.gameobject.onupdateuserate = &function_bcaf6836;
+    zone.gameobject.onendtouchuse = &on_end_touch_use;
+    zone.gameobject.onresumeuse = &on_touch_use;
     zone.gameobject.stage = 1;
     if (isdefined(level.neutralZone) && level.neutralZone) {
-        zone.gameobject.onuseupdate = &function_ebb16836;
+        zone.gameobject.onuseupdate = &on_use_update_neutral;
     } else {
-        zone.gameobject.onuseupdate = &function_59ab563c;
+        zone.gameobject.onuseupdate = &on_use_update;
     }
-    zone.gameobject.ondecaycomplete = &function_76a36857;
+    zone.gameobject.ondecaycomplete = &on_decay_complete;
     zone thread function_31c391cf();
     spawn_beacon::function_18f38647(zone.trigger);
-    level waittill("zone_captured" + zone.zone_index, #"hash_6ab56017e4e08f62");
+    level waittill("zone_captured" + zone.zone_index, #"mission_timed_out");
     ownerteam = zone.gameobject gameobjects::get_owner_team();
     profilestart();
-    zone.gameobject.var_346e7b46 = undefined;
+    zone.gameobject.lastcaptureteam = undefined;
     zone.gameobject gameobjects::set_visible_team(#"any");
     zone.gameobject gameobjects::allow_use(#"none");
     zone.gameobject gameobjects::set_owner_team(#"neutral");
@@ -821,17 +821,17 @@ function function_4fb0ec25(zone) {
     zone.gameobject.decayprogress = 1;
     zone.autodecaytime = level.autodecaytime;
     objective_setstate(zone.gameobject.objectiveid, "done");
-    zone function_d137466e(0);
+    zone toggle_zone_effects(0);
     spawn_beacon::function_60a53911(zone.trigger);
     zone.gameobject gameobjects::disable_object();
     profilestop();
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x4
 // Checksum 0xc4b0a156, Offset: 0x3e98
 // Size: 0x8e
-function private function_109febeb() {
+function private get_num_touching() {
     numtouching = 0;
     foreach (team, _ in level.teams) {
         numtouching = numtouching + self.numtouching[team];
@@ -839,22 +839,22 @@ function private function_109febeb() {
     return numtouching;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x4
 // Checksum 0xd803329, Offset: 0x3f30
 // Size: 0x5c
-function private function_c4922ad8() {
-    level notify(#"hash_1d7d82960127eba");
-    level endon(#"hash_1d7d82960127eba");
+function private hide_timer_on_game_end() {
+    level notify(#"hide_timer_on_game_end");
+    level endon(#"hide_timer_on_game_end");
     level waittill(#"game_ended");
     setmatchflag("bomb_timer_a", 0);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x4
 // Checksum 0xf2ef59f0, Offset: 0x3f98
 // Size: 0xb6
-function private function_8c5f5bed(touchlist, team) {
+function private give_held_credit(touchlist, team) {
     wait(0.05);
     util::waittillslowprocessallowed();
     foreach (touch in touchlist) {
@@ -865,51 +865,51 @@ function private function_8c5f5bed(touchlist, team) {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0x732aa5a0, Offset: 0x4058
 // Size: 0x5e
-function private function_720063db(sentient) {
+function private checkifshouldupdateattackerstatusplayback(sentient) {
     if (sentient.team != game.attackers) {
         return;
     }
-    if (!isdefined(self.var_2d4c706)) {
+    if (!isdefined(self.lastteamtoownzone)) {
         return;
     }
-    if (self.var_2d4c706 == sentient.team) {
+    if (self.lastteamtoownzone == sentient.team) {
         return;
     }
-    self.var_b94d5f63 = 1;
+    self.needsattackerstatusplayback = 1;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0xd87cfb20, Offset: 0x40c0
 // Size: 0x5e
-function private function_f777c684(sentient) {
+function private checkifshouldupdatedefenderstatusplayback(sentient) {
     if (sentient.team != game.defenders) {
         return;
     }
-    if (isdefined(self.var_2d4c706) && self.var_2d4c706 == sentient.team) {
+    if (isdefined(self.lastteamtoownzone) && self.lastteamtoownzone == sentient.team) {
         return;
     }
-    self.var_c1bda824 = 1;
+    self.needsdefenderstatusplayback = 1;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0x76ba3936, Offset: 0x4128
 // Size: 0x6c
-function private function_edcc7296(sentient) {
+function private checkifshouldupdatestatusplayback(sentient) {
     if (isdefined(level.neutralZone) && level.neutralZone) {
-        self.var_704b8073 = 1;
+        self.needsallstatusplayback = 1;
     } else {
-        function_720063db(sentient);
-        function_f777c684(sentient);
+        checkifshouldupdateattackerstatusplayback(sentient);
+        checkifshouldupdatedefenderstatusplayback(sentient);
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x4
 // Checksum 0x2f7e0697, Offset: 0x41a0
 // Size: 0x1b6
@@ -918,7 +918,7 @@ function private function_bcaf6836() {
         self.contested = 0;
     }
     var_464f0169 = self.contested;
-    self.contested = function_73d7b040(self);
+    self.contested = is_zone_contested(self);
     if (self.contested) {
         if (!var_464f0169) {
             foreach (playerlist in self.touchlist) {
@@ -934,26 +934,26 @@ function private function_bcaf6836() {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0xa52108a8, Offset: 0x4360
 // Size: 0x14c
-function private function_8c50d606(sentient) {
+function private on_touch_use(sentient) {
     if (isplayer(sentient)) {
-        if (function_73d7b040(self) && (isdefined(sentient.var_c8d27c06) ? sentient.var_c8d27c06 : 0) < gettime()) {
+        if (is_zone_contested(self) && (isdefined(sentient.var_c8d27c06) ? sentient.var_c8d27c06 : 0) < gettime()) {
             sentient playsoundtoplayer(#"hash_5daa27b37c13bc01", sentient);
             sentient.var_c8d27c06 = gettime() + 5000;
         }
         bb::function_95a5b5c2("entered_control_point", self.zoneindex, sentient.team, sentient.origin, sentient);
         self notify(#"hash_68e3332f714afbbc");
         sentient.var_c1647e26 = self.zoneindex;
-        sentient thread function_c0a83418(self);
+        sentient thread player_use_loop(self);
     }
-    self function_edcc7296(sentient);
-    self function_28481667();
+    self checkifshouldupdatestatusplayback(sentient);
+    self update_team_client_field();
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0x77c2fc54, Offset: 0x44b8
 // Size: 0x96
@@ -971,70 +971,70 @@ function private function_88acffae(sentient) {
     sentient.var_c1647e26 = undefined;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0xf4056c35, Offset: 0x4558
 // Size: 0x5c
-function private function_27b934b5(sentient) {
-    sentient notify("use_stopped" + self.var_cb205f83.zone_index);
-    self function_28481667();
+function private on_end_touch_use(sentient) {
+    sentient notify("use_stopped" + self.owningzone.zone_index);
+    self update_team_client_field();
     self thread function_88acffae(sentient);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 3, eflags: 0x4
 // Checksum 0x94ed2c7f, Offset: 0x45c0
 // Size: 0x54
-function private function_55f0016b(team, sentient, success) {
-    sentient notify("event_ended" + self.var_cb205f83.zone_index);
-    self function_28481667();
+function private on_end_use(team, sentient, success) {
+    sentient notify("event_ended" + self.owningzone.zone_index);
+    self update_team_client_field();
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x4
 // Checksum 0x93d8d879, Offset: 0x4620
 // Size: 0x8c
-function private function_56716d30(var_ed3792dc, team) {
-    if (isdefined(level.var_53305148[var_ed3792dc])) {
-        if (level.var_53305148[var_ed3792dc] + level.var_61a8cce3 > gettime()) {
+function private play_objective_audio(audiocue, team) {
+    if (isdefined(level.audiocues[audiocue])) {
+        if (level.audiocues[audiocue] + level.audioplaybackthrottle > gettime()) {
             return;
         }
     }
-    level.var_53305148[var_ed3792dc] = gettime();
-    thread globallogic_audio::leader_dialog(var_ed3792dc, team, undefined, "gamemode_objective", undefined, "kothActiveDialogBuffer");
+    level.audiocues[audiocue] = gettime();
+    thread globallogic_audio::leader_dialog(audiocue, team, undefined, "gamemode_objective", undefined, "kothActiveDialogBuffer");
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x4
 // Checksum 0x30f3556e, Offset: 0x46b8
 // Size: 0x1e8
-function private function_17bc20e1(zone, var_4456a2ef) {
+function private process_zone_capture_audio(zone, capture_team) {
     foreach (team, _ in level.teams) {
-        if (team == var_4456a2ef) {
-            var_37dac42b = "controlZ" + zone.zone_index + 1 + "TakenOfs";
-            function_56716d30(var_37dac42b, team);
-            if (level.var_df6215f4 == 0) {
-                var_37dac42b = "controlAllZonesCapOfs";
+        if (team == capture_team) {
+            soundkey = "controlZ" + zone.zone_index + 1 + "TakenOfs";
+            play_objective_audio(soundkey, team);
+            if (level.nzones == 0) {
+                soundkey = "controlAllZonesCapOfs";
             } else {
-                var_37dac42b = "controlLastZoneOfs";
+                soundkey = "controlLastZoneOfs";
             }
-            function_56716d30(var_37dac42b, team);
-            thread sound::play_on_players(game.var_f89ce1fc, team);
+            play_objective_audio(soundkey, team);
+            thread sound::play_on_players(game.objective_gained_sound, team);
         } else {
-            var_37dac42b = "controlZ" + zone.zone_index + 1 + "LostDef";
-            function_56716d30(var_37dac42b, team);
-            if (level.var_df6215f4 == 0) {
-                var_37dac42b = "controlAllZonesCapDef";
+            soundkey = "controlZ" + zone.zone_index + 1 + "LostDef";
+            play_objective_audio(soundkey, team);
+            if (level.nzones == 0) {
+                soundkey = "controlAllZonesCapDef";
             } else {
-                var_37dac42b = "controlLastZoneDef";
+                soundkey = "controlLastZoneDef";
             }
-            function_56716d30(var_37dac42b, team);
-            thread sound::play_on_players(game.var_90aa6ae6, team);
+            play_objective_audio(soundkey, team);
+            thread sound::play_on_players(game.objective_lost_sound, team);
         }
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0xe9eb7c24, Offset: 0x48a8
 // Size: 0xe4
@@ -1052,31 +1052,31 @@ function ononeleftevent(team) {
     util::function_5a68c330(17, player.team, player getentitynumber());
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0xa128979a, Offset: 0x4998
 // Size: 0x5fc
-function private function_2efe6449(sentient) {
-    level.var_df6215f4--;
-    var_4456a2ef = sentient.team;
+function private on_zone_capture(sentient) {
+    level.nzones--;
+    capture_team = sentient.team;
     capturetime = gettime();
     string = #"hash_6d6f47aad6be619f";
-    if (!isdefined(self.var_346e7b46) || self.var_346e7b46 != var_4456a2ef) {
-        if (isdefined(getgametypesetting(#"hash_5362566b7e897067")) && getgametypesetting(#"hash_5362566b7e897067")) {
-            var_1dbb2b2b = arraycopy(self.var_1dbb2b2b[var_4456a2ef]);
-            var_6d7ae157 = arraycopy(self.touchlist[var_4456a2ef]);
-            self thread function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, capturetime, var_4456a2ef, self.var_346e7b46);
+    if (!isdefined(self.lastcaptureteam) || self.lastcaptureteam != capture_team) {
+        if (isdefined(getgametypesetting(#"contributioncapture")) && getgametypesetting(#"contributioncapture")) {
+            var_1dbb2b2b = arraycopy(self.var_1dbb2b2b[capture_team]);
+            var_6d7ae157 = arraycopy(self.touchlist[capture_team]);
+            self thread function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, capturetime, capture_team, self.lastcaptureteam);
         } else {
-            touchlist = arraycopy(self.touchlist[var_4456a2ef]);
-            thread function_48b7eb27(touchlist, string, capturetime, var_4456a2ef, self.var_346e7b46);
+            touchlist = arraycopy(self.touchlist[capture_team]);
+            thread give_capture_credit(touchlist, string, capturetime, capture_team, self.lastcaptureteam);
         }
     }
-    level.var_61ae3b1c = var_4456a2ef;
-    level.var_bb7f17e5 = 1;
+    level.warcapteam = capture_team;
+    level.war_mission_succeeded = 1;
     util::function_5a68c330(20, sentient.team, -1, function_da460cb8(self.var_f23c87bd));
-    self gameobjects::set_owner_team(var_4456a2ef);
+    self gameobjects::set_owner_team(capture_team);
     foreach (team, _ in level.teams) {
-        if (team == var_4456a2ef) {
+        if (team == capture_team) {
             for (index = 0; index < level.players.size; index++) {
                 player = level.players[index];
                 if (player.pers[#"team"] == team) {
@@ -1087,74 +1087,74 @@ function private function_2efe6449(sentient) {
             }
         }
     }
-    function_17bc20e1(self.var_cb205f83, var_4456a2ef);
-    self.var_1d42950b++;
-    self.var_346e7b46 = var_4456a2ef;
+    process_zone_capture_audio(self.owningzone, capture_team);
+    self.capturecount++;
+    self.lastcaptureteam = capture_team;
     self.var_f9a5e231 = 1;
     self gameobjects::must_maintain_claim(1);
-    self function_28481667();
+    self update_team_client_field();
     if (isplayer(sentient)) {
         sentient recordgameevent("hardpoint_captured");
         bb::function_95a5b5c2("exited_control_point_captured", self.zoneindex, sentient.team, sentient.origin, sentient);
         self notify(#"hash_68e3332f714afbbc");
     }
-    level.var_907fd719++;
-    if (level.var_907fd719 == 1 && [[ level.gettimelimit ]]() > 0) {
-        level.var_e321292 = 1;
+    level.capturedzones++;
+    if (level.capturedzones == 1 && [[ level.gettimelimit ]]() > 0) {
+        level.usingextratime = 1;
     }
-    if (level.var_907fd719 == 1 && (isdefined(level.bonusLivesForCapturingZone) ? level.bonusLivesForCapturingZone : 0) > 0 && var_4456a2ef == game.attackers) {
+    if (level.capturedzones == 1 && (isdefined(level.bonusLivesForCapturingZone) ? level.bonusLivesForCapturingZone : 0) > 0 && capture_team == game.attackers) {
         game.lives[game.attackers] = game.lives[game.attackers] + level.bonusLivesForCapturingZone;
         teamid = "team" + level.teamindex[game.attackers];
         clientfield::set_world_uimodel("hudItems." + teamid + ".livesCount", game.lives[game.attackers]);
     }
-    level notify("zone_captured" + self.var_cb205f83.zone_index);
+    level notify("zone_captured" + self.owningzone.zone_index);
     level notify(#"zone_captured");
-    level notify("zone_captured" + var_4456a2ef);
-    sentient notify("event_ended" + self.var_cb205f83.zone_index);
-    if (level.zones.size == level.var_907fd719) {
+    level notify("zone_captured" + capture_team);
+    sentient notify("event_ended" + self.owningzone.zone_index);
+    if (level.zones.size == level.capturedzones) {
         round::set_winner(game.attackers);
         level thread globallogic::end_round(1);
     }
     thread function_fcee7d01();
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0xf463a32, Offset: 0x4fa0
 // Size: 0x44e
-function private function_ef9ae3d9(sentient) {
-    var_4456a2ef = sentient.team;
+function private on_zone_capture_neutral(sentient) {
+    capture_team = sentient.team;
     capturetime = gettime();
     string = #"hash_6d6f47aad6be619f";
-    if (!isdefined(self.var_346e7b46) || self.var_346e7b46 != var_4456a2ef) {
-        if (isdefined(getgametypesetting(#"hash_5362566b7e897067")) && getgametypesetting(#"hash_5362566b7e897067")) {
-            var_1dbb2b2b = arraycopy(self.var_1dbb2b2b[var_4456a2ef]);
-            var_6d7ae157 = arraycopy(self.touchlist[var_4456a2ef]);
-            self thread function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, capturetime, var_4456a2ef, self.var_346e7b46);
+    if (!isdefined(self.lastcaptureteam) || self.lastcaptureteam != capture_team) {
+        if (isdefined(getgametypesetting(#"contributioncapture")) && getgametypesetting(#"contributioncapture")) {
+            var_1dbb2b2b = arraycopy(self.var_1dbb2b2b[capture_team]);
+            var_6d7ae157 = arraycopy(self.touchlist[capture_team]);
+            self thread function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, capturetime, capture_team, self.lastcaptureteam);
         } else {
-            touchlist = arraycopy(self.touchlist[var_4456a2ef]);
-            thread function_48b7eb27(touchlist, string, capturetime, var_4456a2ef, self.var_346e7b46);
+            touchlist = arraycopy(self.touchlist[capture_team]);
+            thread give_capture_credit(touchlist, string, capturetime, capture_team, self.lastcaptureteam);
         }
     }
-    level.var_61ae3b1c = var_4456a2ef;
-    level.var_bb7f17e5 = 1;
+    level.warcapteam = capture_team;
+    level.war_mission_succeeded = 1;
     if (!(isdefined(level.decayCapturedZones) && level.decayCapturedZones)) {
-        if (self.ownerteam != var_4456a2ef) {
-            self thread function_aeb2df43(var_4456a2ef);
-            self gameobjects::set_owner_team(var_4456a2ef);
+        if (self.ownerteam != capture_team) {
+            self thread award_capture_points_neutral(capture_team);
+            self gameobjects::set_owner_team(capture_team);
         }
     } else {
         if (self.ownerteam == #"neutral") {
-            self gameobjects::set_owner_team(var_4456a2ef);
-            self thread function_aeb2df43(var_4456a2ef);
+            self gameobjects::set_owner_team(capture_team);
+            self thread award_capture_points_neutral(capture_team);
         }
-        if (self.ownerteam != var_4456a2ef) {
-            level notify(#"hash_21c87cf883134285");
+        if (self.ownerteam != capture_team) {
+            level notify(#"awardcapturepointsrunningneutral");
             self gameobjects::set_owner_team(#"neutral");
         }
     }
     foreach (team, _ in level.teams) {
-        if (team == var_4456a2ef) {
+        if (team == capture_team) {
             for (index = 0; index < level.players.size; index++) {
                 player = level.players[index];
                 if (player.pers[#"team"] == team) {
@@ -1165,22 +1165,22 @@ function private function_ef9ae3d9(sentient) {
             }
         }
     }
-    function_17bc20e1(self.var_cb205f83, var_4456a2ef);
-    self.var_1d42950b++;
-    self.var_346e7b46 = var_4456a2ef;
+    process_zone_capture_audio(self.owningzone, capture_team);
+    self.capturecount++;
+    self.lastcaptureteam = capture_team;
     self gameobjects::must_maintain_claim(1);
-    self function_28481667();
+    self update_team_client_field();
     if (isplayer(sentient)) {
         sentient recordgameevent("hardpoint_captured");
     }
-    sentient notify("event_ended" + self.var_cb205f83.zone_index);
+    sentient notify("event_ended" + self.owningzone.zone_index);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 6, eflags: 0x4
 // Checksum 0x187e4a06, Offset: 0x53f8
 // Size: 0x364
-function private function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, capturetime, var_4456a2ef, var_346e7b46) {
+function private function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, capturetime, capture_team, lastcaptureteam) {
     var_b4613aa2 = [];
     earliestplayer = undefined;
     foreach (contribution in var_1dbb2b2b) {
@@ -1217,34 +1217,34 @@ function private function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, captureti
                 break;
             }
         }
-        function_5a9598f0(player, string, capturetime, var_4456a2ef, var_346e7b46, var_a84f97bf, var_af8f6146);
+        function_5a9598f0(player, string, capturetime, capture_team, lastcaptureteam, var_a84f97bf, var_af8f6146);
     }
     self gameobjects::function_98aae7cf();
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 5, eflags: 0x4
 // Checksum 0xc22dc5cd, Offset: 0x5768
 // Size: 0xe0
-function private function_48b7eb27(touchlist, string, capturetime, var_4456a2ef, var_346e7b46) {
+function private give_capture_credit(touchlist, string, capturetime, capture_team, lastcaptureteam) {
     foreach (touch in touchlist) {
         player = gameobjects::function_73944efe(touchlist, touch);
         if (!isdefined(player)) {
             continue;
         }
-        function_5a9598f0(player, string, capturetime, var_4456a2ef, var_346e7b46, 0, 1);
+        function_5a9598f0(player, string, capturetime, capture_team, lastcaptureteam, 0, 1);
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 7, eflags: 0x4
 // Checksum 0xfb042b23, Offset: 0x5850
 // Size: 0x374
-function private function_5a9598f0(player, string, capturetime, var_4456a2ef, var_346e7b46, var_a84f97bf, var_af8f6146) {
-    player function_6e852882(var_346e7b46);
-    if (!function_e28be4d4(player)) {
+function private function_5a9598f0(player, string, capturetime, capture_team, lastcaptureteam, var_a84f97bf, var_af8f6146) {
+    player update_caps_per_minute(lastcaptureteam);
+    if (!is_score_boosting(player)) {
         player challenges::capturedobjective(capturetime, self.trigger);
-        scoreevents::processscoreevent(#"hash_28f5087b6d10647", player, undefined, undefined);
+        scoreevents::processscoreevent(#"war_captured_zone", player, undefined, undefined);
         player recordgameevent("capture");
         if (var_a84f97bf) {
             level thread popups::displayteammessagetoall(string, player);
@@ -1255,15 +1255,15 @@ function private function_5a9598f0(player, string, capturetime, var_4456a2ef, va
         }
         player.pers[#"objectives"]++;
         player.objectives = player.pers[#"objectives"];
-        if (level.var_bfa006c9 + 500 > capturetime) {
+        if (level.warstarttime + 500 > capturetime) {
             player challenges::immediatecapture();
         }
         demo::bookmark(#"event", gettime(), player);
         potm::bookmark(#"event", gettime(), player);
         player stats::function_bb7eedf0(#"captures", 1);
         player globallogic_score::incpersstat(#"objectivescore", 1, 0, 1);
-        if (isdefined(getgametypesetting(#"hash_5362566b7e897067")) && getgametypesetting(#"hash_5362566b7e897067")) {
-            player luinotifyevent(#"hash_289bacbf80b953c9", 2, self.var_f23c87bd, player.var_759a143b);
+        if (isdefined(getgametypesetting(#"contributioncapture")) && getgametypesetting(#"contributioncapture")) {
+            player luinotifyevent(#"waypoint_captured", 2, self.var_f23c87bd, player.var_759a143b);
             player.var_759a143b = undefined;
         }
         if (var_af8f6146) {
@@ -1277,30 +1277,30 @@ function private function_5a9598f0(player, string, capturetime, var_4456a2ef, va
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0xfbf67a6d, Offset: 0x5bd0
 // Size: 0x58
-function private function_73d7b040(gameobject) {
+function private is_zone_contested(gameobject) {
     if (gameobject.touchlist[game.attackers].size > 0 && gameobject.touchlist[game.defenders].size > 0) {
         return 1;
     }
     return 0;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0x350d32c9, Offset: 0x5c30
 // Size: 0x120
-function function_aeb2df43(team) {
+function award_capture_points_neutral(team) {
     level endon(#"game_ended");
-    level notify("awardCapturePointsRunningNeutral" + self.var_cb205f83.zone_index);
-    level endon("awardCapturePointsRunningNeutral" + self.var_cb205f83.zone_index);
-    seconds = int(level.var_8b2913b0.var_4ff97309);
+    level notify("awardCapturePointsRunningNeutral" + self.owningzone.zone_index);
+    level endon("awardCapturePointsRunningNeutral" + self.owningzone.zone_index);
+    seconds = int(level.mission_bundle.msscoreinterval);
     if (!isdefined(seconds)) {
         seconds = 4;
     }
-    score = int(level.var_8b2913b0.var_1fa4234f);
+    score = int(level.mission_bundle.msscorevalue);
     if (!isdefined(score)) {
         score = 5;
     }
@@ -1311,25 +1311,25 @@ function function_aeb2df43(team) {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0xd9617471, Offset: 0x5d58
 // Size: 0x224
-function function_d033480b(team) {
+function award_capture_points(team) {
     level endon(#"game_ended");
-    level notify(#"hash_48acd4ddfac8ca2a");
-    level endon(#"hash_48acd4ddfac8ca2a");
+    level notify(#"awardcapturepointsrunning");
+    level endon(#"awardcapturepointsrunning");
     seconds = 1;
     score = 1;
     while (!level.gameended) {
         wait(seconds);
         hostmigration::waittillhostmigrationdone();
-        if (!function_73d7b040(self)) {
+        if (!is_zone_contested(self)) {
             if (level.scorePerPlayer) {
                 score = self.numtouching[team];
             }
             globallogic_score::giveteamscoreforobjective(team, score);
-            level.var_83220de2++;
+            level.wartotalsecondsinzone++;
             foreach (player in level.aliveplayers[team]) {
                 if (!isdefined(player.touchtriggers[self.entnum])) {
                     continue;
@@ -1345,16 +1345,16 @@ function function_d033480b(team) {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x0
 // Checksum 0x3541a26, Offset: 0x5f88
 // Size: 0x216
-function function_353427b(victim, weapon) {
+function kill_while_contesting(victim, weapon) {
     self endon(#"disconnect");
     if (!isdefined(self.var_f58d97ed) || self.var_f58d97ed + 5000 < gettime()) {
-        self.var_80220c95 = 0;
+        self.clearenemycount = 0;
     }
-    self.var_80220c95++;
+    self.clearenemycount++;
     self.var_f58d97ed = gettime();
     foreach (trigger in victim.touchtriggers) {
         foreach (zone in level.zones) {
@@ -1369,90 +1369,90 @@ function function_353427b(victim, weapon) {
         }
     }
     waitframe(1);
-    if (isdefined(point) && point.touchlist[game.attackers].size == 0 && self.var_80220c95 >= 2) {
-        scoreevents::processscoreevent(#"hash_5d581b2af1ef6338", self, victim, undefined);
+    if (isdefined(point) && point.touchlist[game.attackers].size == 0 && self.clearenemycount >= 2) {
+        scoreevents::processscoreevent(#"clear_2_attackers", self, victim, undefined);
         self challenges::function_e0f51b6f(weapon);
-        self.var_80220c95 = 0;
+        self.clearenemycount = 0;
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x59617029, Offset: 0x61a8
 // Size: 0x1be
-function function_fadbbfea() {
-    if (!isdefined(level.var_aa8eff32)) {
+function setup_zone_exclusions() {
+    if (!isdefined(level.levelwardisable)) {
         return;
     }
-    foreach (var_f8de67c4 in level.var_aa8eff32) {
+    foreach (nullzone in level.levelwardisable) {
         mindist = 1410065408;
-        var_41891211 = undefined;
+        foundzone = undefined;
         foreach (zone in level.zones) {
-            distance = distancesquared(var_f8de67c4.origin, zone.origin);
+            distance = distancesquared(nullzone.origin, zone.origin);
             if (distance < mindist) {
-                var_41891211 = zone;
+                foundzone = zone;
                 mindist = distance;
             }
         }
-        if (isdefined(var_41891211) && var_41891211 == self) {
-            if (!isdefined(var_41891211.gameobject.exclusions)) {
-                var_41891211.gameobject.exclusions = [];
+        if (isdefined(foundzone) && foundzone == self) {
+            if (!isdefined(foundzone.gameobject.exclusions)) {
+                foundzone.gameobject.exclusions = [];
             }
-            var_41891211.gameobject.exclusions[var_41891211.gameobject.exclusions.size] = var_f8de67c4;
+            foundzone.gameobject.exclusions[foundzone.gameobject.exclusions.size] = nullzone;
         }
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0x8653dd82, Offset: 0x6370
 // Size: 0x3a0
-function function_c0a83418(gameobject) {
-    self notify("player_use_loop_singleton" + gameobject.var_cb205f83.zone_index);
-    self endon("player_use_loop_singleton" + gameobject.var_cb205f83.zone_index);
+function player_use_loop(gameobject) {
+    self notify("player_use_loop_singleton" + gameobject.owningzone.zone_index);
+    self endon("player_use_loop_singleton" + gameobject.owningzone.zone_index);
     player = self;
-    player endon("use_stopped" + gameobject.var_cb205f83.zone_index, "event_ended" + gameobject.var_cb205f83.zone_index, #"death");
+    player endon("use_stopped" + gameobject.owningzone.zone_index, "event_ended" + gameobject.owningzone.zone_index, #"death");
     if (!isdefined(player.playerrole)) {
         return;
     }
-    var_ea7cfb48 = 1.5;
-    var_c3d6bd84 = 1;
-    var_d1b869cc = isdefined(player.playerrole.var_b0ddf8e5) ? player.playerrole.var_b0ddf8e5 : 1;
-    var_e301b275 = isdefined(player.playerrole.var_3a1d8b72) ? player.playerrole.var_3a1d8b72 : 1;
-    if (var_d1b869cc <= var_ea7cfb48 && var_e301b275 <= var_c3d6bd84) {
+    fast_capture_threshold = 1.5;
+    fast_decay_threshold = 1;
+    attacker_capture_multiplier = isdefined(player.playerrole.attackercapturemultiplier) ? player.playerrole.attackercapturemultiplier : 1;
+    defend_decay_multiplier = isdefined(player.playerrole.defenddecaymultiplier) ? player.playerrole.defenddecaymultiplier : 1;
+    if (attacker_capture_multiplier <= fast_capture_threshold && defend_decay_multiplier <= fast_decay_threshold) {
         return;
     }
     while (1) {
         while (!isdefined(gameobject.userate) || isdefined(gameobject.userate) && gameobject.userate == 0 || gameobject.claimteam == "none") {
             wait(0.2);
         }
-        var_fab1d216 = 0;
-        var_5502873c = 0;
-        var_4a8afb8e = level.time + 5000;
-        while (level.time < var_4a8afb8e) {
-            var_be41be3d = gameobject.curprogress;
+        any_capture_progress = 0;
+        any_decay_progress = 0;
+        measure_progress_end_time = level.time + 5000;
+        while (level.time < measure_progress_end_time) {
+            prev_progress = gameobject.curprogress;
             wait(1);
-            if (gameobject.curprogress > var_be41be3d) {
-                var_fab1d216 = 1;
-            } else if (gameobject.curprogress < var_be41be3d) {
-                var_5502873c = 1;
+            if (gameobject.curprogress > prev_progress) {
+                any_capture_progress = 1;
+            } else if (gameobject.curprogress < prev_progress) {
+                any_decay_progress = 1;
             }
         }
         if (isdefined(gameobject.userate) && gameobject.userate != 0 && gameobject.claimteam != "none") {
-            if (var_fab1d216 && player.pers[#"team"] == game.attackers && var_d1b869cc > var_ea7cfb48) {
-                scoreevents::processscoreevent(#"hash_3cf3f60798783a68", player, undefined, undefined);
-            } else if (var_5502873c && var_e301b275 > var_c3d6bd84) {
-                scoreevents::processscoreevent(#"hash_401df3d8102f77d4", player, undefined, undefined);
+            if (any_capture_progress && player.pers[#"team"] == game.attackers && attacker_capture_multiplier > fast_capture_threshold) {
+                scoreevents::processscoreevent(#"fast_capture_progress", player, undefined, undefined);
+            } else if (any_decay_progress && defend_decay_multiplier > fast_decay_threshold) {
+                scoreevents::processscoreevent(#"fast_decay_progress", player, undefined, undefined);
             }
         }
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0xafc0f651, Offset: 0x6718
 // Size: 0x10c
-function private function_c6249b2e(sentient) {
+function private on_begin_use(sentient) {
     if (isplayer(sentient)) {
         ownerteam = self gameobjects::get_owner_team();
         if (ownerteam == #"neutral") {
@@ -1461,68 +1461,68 @@ function private function_c6249b2e(sentient) {
             sentient thread battlechatter::gametype_specific_battle_chatter("hq_attack", sentient.pers[#"team"]);
         }
     }
-    self function_edcc7296(sentient);
-    self function_28481667();
+    self checkifshouldupdatestatusplayback(sentient);
+    self update_team_client_field();
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0xb4e1deb4, Offset: 0x6830
 // Size: 0x86
-function private function_702a4443(touchlist) {
-    foreach (var_2ac436b0 in touchlist) {
-        if (var_2ac436b0.userate > 1) {
+function private isuserateelevated(touchlist) {
+    foreach (touchinfo in touchlist) {
+        if (touchinfo.userate > 1) {
             return 1;
         }
     }
     return 0;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x4
 // Checksum 0xed5f263b, Offset: 0x68c0
 // Size: 0xe6
-function private function_6e160542(touchlist, var_f1e25cce) {
-    foreach (var_2ac436b0 in touchlist) {
-        if (!isdefined(var_2ac436b0)) {
+function private isplayerinzonewithrole(touchlist, roletype) {
+    foreach (touchinfo in touchlist) {
+        if (!isdefined(touchinfo)) {
             continue;
         }
-        if (isplayer(var_2ac436b0.player) && isdefined(var_2ac436b0.player.playerrole) && var_2ac436b0.player.playerrole.rolename == var_f1e25cce) {
+        if (isplayer(touchinfo.player) && isdefined(touchinfo.player.playerrole) && touchinfo.player.playerrole.rolename == roletype) {
             return 1;
         }
     }
     return 0;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0x3c8084b, Offset: 0x69b0
 // Size: 0x1a4
-function private function_4f1fa16a(zone) {
-    if (function_73d7b040(zone)) {
+function private update_team_userate_clientfield(zone) {
+    if (is_zone_contested(zone)) {
         clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 0);
-        zone.var_2d4c706 = "contested";
+        zone.lastteamtoownzone = "contested";
     } else if (zone.touchlist[game.attackers].size > 0) {
-        if (function_6e160542(zone.touchlist[game.attackers], "objective")) {
+        if (isplayerinzonewithrole(zone.touchlist[game.attackers], "objective")) {
             clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 1);
         }
-        zone.var_2d4c706 = game.attackers;
+        zone.lastteamtoownzone = game.attackers;
     } else if (zone.touchlist[game.defenders].size > 0 && zone.curprogress > 0) {
-        if (function_6e160542(zone.touchlist[game.defenders], "objective")) {
+        if (isplayerinzonewithrole(zone.touchlist[game.defenders], "objective")) {
             clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 2);
         }
-        zone.var_2d4c706 = game.defenders;
+        zone.lastteamtoownzone = game.defenders;
     } else {
         clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 0);
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x4
 // Checksum 0xe059e580, Offset: 0x6b60
 // Size: 0x284
-function private function_28481667() {
-    level.var_d3a30eff = 0;
+function private update_team_client_field() {
+    level.zonestatemask = 0;
     for (zi = 0; zi < level.zones.size; zi++) {
         gameobj = level.zones[zi].gameobject;
         ownerteam = gameobj gameobjects::get_owner_team();
@@ -1534,7 +1534,7 @@ function private function_28481667() {
             } else {
                 flags = level.teamindex[gameobj.claimteam];
             }
-        } else if (function_73d7b040(gameobj)) {
+        } else if (is_zone_contested(gameobj)) {
             state = 3;
         } else if (gameobj.claimteam != "none" && gameobj.numtouching[gameobj.claimteam] > 0) {
             if (gameobj.claimteam == game.attackers) {
@@ -1551,84 +1551,84 @@ function private function_28481667() {
                 state = 1;
             }
         }
-        level.var_d3a30eff = level.var_d3a30eff | state << zi * 2;
+        level.zonestatemask = level.zonestatemask | state << zi * 2;
         gameobj gameobjects::set_flags(flags);
     }
-    level clientfield::set("warzonestate", level.var_d3a30eff);
-    function_4f1fa16a(self);
+    level clientfield::set("warzonestate", level.zonestatemask);
+    update_team_userate_clientfield(self);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0x5faa258f, Offset: 0x6df0
 // Size: 0x12a
-function function_6e852882(var_277c627b) {
-    if (!isdefined(self.var_36cd5e69)) {
-        self.var_8bf2fa7 = 0;
-        self.var_36cd5e69 = 0;
+function update_caps_per_minute(lastownerteam) {
+    if (!isdefined(self.capsperminute)) {
+        self.numcaps = 0;
+        self.capsperminute = 0;
     }
-    if (!isdefined(var_277c627b) || var_277c627b == #"neutral") {
+    if (!isdefined(lastownerteam) || lastownerteam == #"neutral") {
         return;
     }
-    self.var_8bf2fa7++;
+    self.numcaps++;
     minutespassed = float(globallogic_utils::gettimepassed()) / 60000;
     if (isplayer(self) && isdefined(self.timeplayed[#"total"])) {
         minutespassed = self.timeplayed[#"total"] / 60;
     }
-    self.var_36cd5e69 = self.var_8bf2fa7 / minutespassed;
-    if (self.var_36cd5e69 > self.var_8bf2fa7) {
-        self.var_36cd5e69 = self.var_8bf2fa7;
+    self.capsperminute = self.numcaps / minutespassed;
+    if (self.capsperminute > self.numcaps) {
+        self.capsperminute = self.numcaps;
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0x1afc563a, Offset: 0x6f28
 // Size: 0x3e
-function function_e28be4d4(player) {
+function is_score_boosting(player) {
     if (!level.rankedmatch) {
         return 0;
     }
-    if (player.var_36cd5e69 > level.var_26ee7cf) {
+    if (player.capsperminute > level.playercapturelpm) {
         return 1;
     }
     return 0;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x3bd47fab, Offset: 0x6f70
 // Size: 0x168
-function function_76a36857() {
+function on_decay_complete() {
     clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 0);
     self gameobjects::set_flags(0);
     if (!(isdefined(self.var_670f7a7f) && self.var_670f7a7f)) {
         if (self.touchlist[game.attackers].size == 0 && self.touchlist[game.defenders].size > 0) {
             self.var_670f7a7f = 1;
             foreach (st in self.touchlist[game.defenders]) {
-                var_5498ee18 = gameobjects::function_73944efe(self.touchlist[game.defenders], st);
-                if (!isdefined(var_5498ee18)) {
+                player_from_touchlist = gameobjects::function_73944efe(self.touchlist[game.defenders], st);
+                if (!isdefined(player_from_touchlist)) {
                     continue;
                 }
-                scoreevents::processscoreevent(#"hash_abbc936bf9059a6", var_5498ee18, undefined, undefined);
+                scoreevents::processscoreevent(#"hash_abbc936bf9059a6", player_from_touchlist, undefined, undefined);
             }
         }
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0x9babeb89, Offset: 0x70e0
 // Size: 0x150
-function function_e99b8010(var_277695bd) {
-    trig = self.var_cb205f83.trigger;
+function score_capture_progress(var_277695bd) {
+    trig = self.owningzone.trigger;
     players = getplayers();
     for (i = 0; i < players.size; i++) {
         player = players[i];
         if (player.team == game.attackers) {
             player playsoundtoplayer(#"hash_554eb90f62c68b44", player);
             if (player istouching(trig)) {
-                scoreevents::processscoreevent(#"hash_494906cc7e7b8bc2", player);
+                scoreevents::processscoreevent(#"war_capture_progress", player);
             }
             bb::function_95a5b5c2("control_segment_complete" + var_277695bd, self.zoneindex, player.team, player.origin, player);
             self notify(#"hash_68e3332f714afbbc");
@@ -1636,34 +1636,34 @@ function function_e99b8010(var_277695bd) {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 3, eflags: 0x0
 // Checksum 0x226ecbd2, Offset: 0x7238
 // Size: 0x74e
-function function_59ab563c(team, progress, change) {
+function on_use_update(team, progress, change) {
     if (isdefined(level.capDecay) && level.capDecay && !(isdefined(level.neutralZone) && level.neutralZone)) {
         if (progress >= 0.666667) {
             if (self.stage == 2) {
                 self.decayprogressmin = int(0.666667 * self.usetime);
-                self function_e99b8010(2);
+                self score_capture_progress(2);
                 self.stage = 3;
                 util::function_5a68c330(23, team, -1, function_da460cb8(self.var_f23c87bd));
             }
         } else if (progress >= 0.333333) {
             if (self.stage == 1) {
                 self.decayprogressmin = int(0.333333 * self.usetime);
-                self function_e99b8010(1);
+                self score_capture_progress(1);
                 self.stage = 2;
                 util::function_5a68c330(23, team, -1, function_da460cb8(self.var_f23c87bd));
             }
         }
     }
     if (!(isdefined(level.neutralZone) && level.neutralZone)) {
-        function_9ed0e6e9(self.var_cb205f83.zone_index, change);
+        update_timer(self.owningzone.zone_index, change);
     }
-    if (change > 0 && self.var_eac9e8ae) {
-        level.var_433c44c5++;
-        self.var_eac9e8ae = 0;
+    if (change > 0 && self.currentlyunoccupied) {
+        level.numzonesoccupied++;
+        self.currentlyunoccupied = 0;
         players = getplayers();
         foreach (player in players) {
             if (player.team == game.attackers) {
@@ -1672,28 +1672,28 @@ function function_59ab563c(team, progress, change) {
                 player playsoundtoplayer(#"hash_2bb2a0ec776ba8f7", player);
             }
         }
-    } else if (change == 0 && !self.var_eac9e8ae) {
-        level.var_433c44c5--;
-        self.var_eac9e8ae = 1;
+    } else if (change == 0 && !self.currentlyunoccupied) {
+        level.numzonesoccupied--;
+        self.currentlyunoccupied = 1;
     }
     if (progress > 0.05) {
-        if (change > 0 && isdefined(self.var_b94d5f63) && self.var_b94d5f63) {
+        if (change > 0 && isdefined(self.needsattackerstatusplayback) && self.needsattackerstatusplayback) {
             if (!(isdefined(level.neutralZone) && level.neutralZone)) {
-                if (level.var_433c44c5 <= 1) {
-                    var_35f7ecde = "controlZ" + self.var_cb205f83.zone_index + 1 + "CapturingOfs";
-                    var_3d9d108 = "controlZ" + self.var_cb205f83.zone_index + 1 + "LosingDef";
-                    function_56716d30(var_35f7ecde, game.attackers);
-                    function_56716d30(var_3d9d108, game.defenders);
+                if (level.numzonesoccupied <= 1) {
+                    soundkeyofs = "controlZ" + self.owningzone.zone_index + 1 + "CapturingOfs";
+                    soundkeydef = "controlZ" + self.owningzone.zone_index + 1 + "LosingDef";
+                    play_objective_audio(soundkeyofs, game.attackers);
+                    play_objective_audio(soundkeydef, game.defenders);
                 } else {
-                    function_56716d30("controlZMCapturingOfs", game.attackers);
-                    function_56716d30("controlZMLosingDef", game.defenders);
+                    play_objective_audio("controlZMCapturingOfs", game.attackers);
+                    play_objective_audio("controlZMLosingDef", game.defenders);
                 }
             }
-            self.var_b94d5f63 = 0;
-        } else if (change < 0 && isdefined(self.var_c1bda824) && self.var_c1bda824) {
-            function_56716d30("warLosingProgressOfs", game.attackers);
-            function_56716d30("warLosingProgressDef", game.defenders);
-            self.var_c1bda824 = 0;
+            self.needsattackerstatusplayback = 0;
+        } else if (change < 0 && isdefined(self.needsdefenderstatusplayback) && self.needsdefenderstatusplayback) {
+            play_objective_audio("warLosingProgressOfs", game.attackers);
+            play_objective_audio("warLosingProgressDef", game.defenders);
+            self.needsdefenderstatusplayback = 0;
         }
     }
     if (isdefined(self.decayprogressmin) && change == 0 && (progress == 0.333333 || progress == 0.666667)) {
@@ -1714,7 +1714,7 @@ function function_59ab563c(team, progress, change) {
     }
     if (self.touchlist[game.attackers].size == 0 && self.touchlist[game.defenders].size > 0) {
         if (!(isdefined(self.var_8b62ad00) && self.var_8b62ad00) && self.decayprogressmin === self.curprogress) {
-            self function_28481667();
+            self update_team_client_field();
             self.var_8b62ad00 = 1;
         }
     } else {
@@ -1722,33 +1722,33 @@ function function_59ab563c(team, progress, change) {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 3, eflags: 0x0
 // Checksum 0x606de0d0, Offset: 0x7990
 // Size: 0x176
-function function_ebb16836(team, progress, change) {
+function on_use_update_neutral(team, progress, change) {
     if (progress > 0.05) {
-        if (isdefined(self.var_704b8073) && self.var_704b8073) {
+        if (isdefined(self.needsallstatusplayback) && self.needsallstatusplayback) {
             if (change > 0) {
                 if (self.ownerteam == #"neutral") {
-                    function_56716d30("warCapturingOfs", team);
-                    function_56716d30("warCapturingDef", util::getotherteam(team));
-                    self.var_704b8073 = 0;
+                    play_objective_audio("warCapturingOfs", team);
+                    play_objective_audio("warCapturingDef", util::getotherteam(team));
+                    self.needsallstatusplayback = 0;
                 } else {
-                    function_56716d30("warLosingProgressDef", team);
-                    function_56716d30("warLosingProgressOfs", util::getotherteam(team));
-                    self.var_704b8073 = 0;
+                    play_objective_audio("warLosingProgressDef", team);
+                    play_objective_audio("warLosingProgressOfs", util::getotherteam(team));
+                    self.needsallstatusplayback = 0;
                 }
             } else if (change < 0) {
-                function_56716d30("warLosingProgressOfs", team);
-                function_56716d30("warLosingProgressDef", util::getotherteam(team));
-                self.var_704b8073 = 0;
+                play_objective_audio("warLosingProgressOfs", team);
+                play_objective_audio("warLosingProgressDef", util::getotherteam(team));
+                self.needsallstatusplayback = 0;
             }
         }
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x4
 // Checksum 0x689aeb66, Offset: 0x7b10
 // Size: 0x84
@@ -1761,7 +1761,7 @@ function private set_ui_team() {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x83df5d44, Offset: 0x7ba0
 // Size: 0x52
@@ -1772,37 +1772,37 @@ function pause_time() {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x2c8729cd, Offset: 0x7c00
 // Size: 0x52
-function function_8984d8eb() {
+function resume_time() {
     if (level.timePausesWhenInZone && isdefined(level.timerpaused) && level.timerpaused) {
         globallogic_utils::resumetimer();
         level.timerpaused = 0;
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 2, eflags: 0x0
 // Checksum 0x687c9c05, Offset: 0x7c60
 // Size: 0xfc
-function function_9ed0e6e9(zoneindex, change) {
-    if (change > 0 || function_73d7b040(level.zones[zoneindex].gameobject)) {
-        level.var_3c4ca038[zoneindex] = 1;
+function update_timer(zoneindex, change) {
+    if (change > 0 || is_zone_contested(level.zones[zoneindex].gameobject)) {
+        level.zonepauseinfo[zoneindex] = 1;
         pause_time();
     } else {
-        level.var_3c4ca038[zoneindex] = 0;
+        level.zonepauseinfo[zoneindex] = 0;
         for (zi = 0; zi < level.zones.size; zi++) {
-            if (isdefined(level.var_3c4ca038[zi]) && level.var_3c4ca038[zi]) {
+            if (isdefined(level.zonepauseinfo[zi]) && level.zonepauseinfo[zi]) {
                 return;
             }
         }
-        function_8984d8eb();
+        resume_time();
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 0, eflags: 0x0
 // Checksum 0x4382dafc, Offset: 0x7d68
 // Size: 0x2d4
@@ -1813,7 +1813,7 @@ function function_caff2d60() {
     while (1) {
         var_af32dd2d = 1;
         for (i = 0; i < level.zones.size; i++) {
-            if (!function_73d7b040(level.zones[i].gameobject)) {
+            if (!is_zone_contested(level.zones[i].gameobject)) {
                 var_af32dd2d = 0;
                 level.var_46ff851e = 0;
                 break;
@@ -1822,24 +1822,24 @@ function function_caff2d60() {
         if (var_af32dd2d) {
             if (!(isdefined(level.var_46ff851e) && level.var_46ff851e)) {
                 level.var_46ff851e = 1;
-                function_56716d30("controlContestedOfsAll", game.attackers);
-                function_56716d30("controlContestedDefAll", game.defenders);
+                play_objective_audio("controlContestedOfsAll", game.attackers);
+                play_objective_audio("controlContestedDefAll", game.defenders);
             }
         } else {
-            if (function_73d7b040(level.zones[0].gameobject)) {
+            if (is_zone_contested(level.zones[0].gameobject)) {
                 if (!(isdefined(level.var_b9d36d8e[0]) && level.var_b9d36d8e[0])) {
                     level.var_b9d36d8e[0] = 1;
-                    function_56716d30("controlContestedOfsA", game.attackers);
-                    function_56716d30("controlContestedDefA", game.defenders);
+                    play_objective_audio("controlContestedOfsA", game.attackers);
+                    play_objective_audio("controlContestedDefA", game.defenders);
                 }
             } else {
                 level.var_b9d36d8e[0] = 0;
             }
-            if (function_73d7b040(level.zones[1].gameobject)) {
+            if (is_zone_contested(level.zones[1].gameobject)) {
                 if (!(isdefined(level.var_b9d36d8e[1]) && level.var_b9d36d8e[1])) {
                     level.var_b9d36d8e[1] = 1;
-                    function_56716d30("controlContestedOfsB", game.attackers);
-                    function_56716d30("controlContestedDefB", game.defenders);
+                    play_objective_audio("controlContestedOfsB", game.attackers);
+                    play_objective_audio("controlContestedDefB", game.defenders);
                 }
             } else {
                 level.var_b9d36d8e[1] = 0;
@@ -1849,7 +1849,7 @@ function function_caff2d60() {
     }
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x0
 // Checksum 0x399ee459, Offset: 0x8048
 // Size: 0x18c
@@ -1880,7 +1880,7 @@ function function_68387604(var_c1e98979) {
     bb::function_bf5cad4e(var_1e866967);
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0xf9a4158d, Offset: 0x81e0
 // Size: 0x4c
@@ -1893,7 +1893,7 @@ function private function_da460cb8(var_b6ec55d) {
     return var_2989dcef;
 }
 
-// Namespace namespace_2225cf06/control
+// Namespace mission_koth/control
 // Params 1, eflags: 0x4
 // Checksum 0x944d9593, Offset: 0x8238
 // Size: 0x4c

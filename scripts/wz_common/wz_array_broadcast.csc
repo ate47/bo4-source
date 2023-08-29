@@ -38,13 +38,13 @@ function __init__() {
 // Params 1, eflags: 0x40
 // Checksum 0xa08e70f8, Offset: 0x258
 // Size: 0x2d4
-function event<event_9673dc9a> function_3981d015(eventstruct) {
+function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (isdefined(level.var_47f205b) && !level.var_47f205b) {
         return;
     }
     if (eventstruct.ent.targetname === "array_broadcast") {
         if (eventstruct.state === 0) {
-            eventstruct.ent thread function_b7bec782();
+            eventstruct.ent thread broadcast_off();
         } else if (eventstruct.state === 1 || eventstruct.state === 2) {
             waitframe(1);
             if (level clientfield::get("array_broadcast") == 1) {
@@ -102,15 +102,15 @@ function function_fb90d490() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x7396dbd1, Offset: 0x658
 // Size: 0x1a0
-function function_b7bec782() {
-    self notify(#"hash_52acd1689d3337f6");
+function broadcast_off() {
+    self notify(#"broadcast_off");
     var_5be26843 = struct::get_array("array_emergency_broadcast", "targetname");
     foreach (struct in var_5be26843) {
         audio::stoploopat(#"hash_39c8dfc4efa25b26", struct.origin);
     }
     exploder::kill_exploder("fxexp_radar_activation");
     foreach (struct in var_5be26843) {
-        struct notify(#"hash_52acd1689d3337f6");
+        struct notify(#"broadcast_off");
         audio::stoploopat(#"hash_39c8dfc4efa25b26", struct.origin);
         if (isdefined(struct.var_7a993bec)) {
             stopsound(struct.var_7a993bec);
@@ -130,7 +130,7 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
         }
     }
     wait(30);
-    self endon(#"hash_52acd1689d3337f6");
+    self endon(#"broadcast_off");
     var_5be26843 = struct::get_array("array_emergency_broadcast", "targetname");
     foreach (struct in var_5be26843) {
         audio::playloopat(#"hash_39c8dfc4efa25b26", struct.origin);

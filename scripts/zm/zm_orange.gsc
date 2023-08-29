@@ -93,7 +93,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0x8af793b5, Offset: 0xc20
 // Size: 0xb2c
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level._uses_default_wallbuy_fx = 1;
     level._uses_sticky_grenades = 1;
     level._uses_taser_knuckles = 1;

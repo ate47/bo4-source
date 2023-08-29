@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/util_shared.csc;
 #include scripts/core_common/system_shared.csc;
-#include script_14d2d89964cae0b1;
-#include script_ac6a30f1991e105;
+#include scripts/core_common/ai/systems/gib.csc;
+#include scripts/core_common/ai/systems/fx_character.csc;
 #include scripts/core_common/clientfield_shared.csc;
 #include scripts/core_common/ai_shared.csc;
 

@@ -19,7 +19,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xc9feaf01, Offset: 0x158
 // Size: 0x2fc
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     precache();
     level.var_7fd6bd44 = 1800;
     callback::on_game_playing(&on_game_playing);
@@ -36,11 +36,11 @@ function event<level_init> main(eventstruct) {
     var_8751af93 = struct::get("spawn_flavor_tanks", "targetname");
     if (isdefined(var_8751af93) && isdefined(var_8751af93.scene_ents)) {
         var_8751af93.scene_ents[#"vehicle 1"] clientfield::set("hide_tank_rob", 1);
-        var_8751af93.scene_ents[#"hash_5c05a014188790bd"] clientfield::set("hide_tank_rob", 1);
-        var_8751af93.scene_ents[#"hash_5c059f1418878f0a"] clientfield::set("hide_tank_rob", 1);
+        var_8751af93.scene_ents[#"vehicle 2"] clientfield::set("hide_tank_rob", 1);
+        var_8751af93.scene_ents[#"vehicle 3"] clientfield::set("hide_tank_rob", 1);
         var_8751af93.scene_ents[#"vehicle 1"] notsolid();
-        var_8751af93.scene_ents[#"hash_5c05a014188790bd"] notsolid();
-        var_8751af93.scene_ents[#"hash_5c059f1418878f0a"] notsolid();
+        var_8751af93.scene_ents[#"vehicle 2"] notsolid();
+        var_8751af93.scene_ents[#"vehicle 3"] notsolid();
     }
 }
 

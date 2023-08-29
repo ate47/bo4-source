@@ -37,7 +37,7 @@ function init() {
     }
     callback::add_callback(#"on_end_game", &on_end_game);
     function_ea5f46d2();
-    level.ct_difficulty = getdvarstring(#"hash_3617a5f5fe554488", "(default)");
+    level.ct_difficulty = getdvarstring(#"overridedifficulty", "(default)");
     if (level.ct_difficulty == "tutorial" || level.ct_difficulty == "easy") {
         level thread function_8599f7cb();
     } else {
@@ -225,7 +225,7 @@ function function_8599f7cb() {
             if (var_f77362e3 < 9) {
                 player function_d6095f2b(var_f77362e3 + 1);
             } else {
-                player function_efa762f6(#"hash_76e7e78c3850134a");
+                player function_efa762f6(#"story_outro");
             }
             player function_3b91934f(specialist, #"skirmish_completed");
             player function_a6cbcab(specialist, #"bronze");
@@ -248,8 +248,8 @@ function function_8599f7cb() {
 // Checksum 0xf52d41d1, Offset: 0xf38
 // Size: 0x28c
 function function_6cc515f7(str_difficulty) {
-    level notify(#"hash_3d21813e6de72408");
-    level endon(#"hash_3d21813e6de72408");
+    level notify(#"check_skirmish");
+    level endon(#"check_skirmish");
     var_d4002929 = 0;
     level.b_movie = 0;
     s_result = undefined;
@@ -315,12 +315,12 @@ function private function_95e72b33(moviefile) {
 function function_ea5f46d2() {
     level.var_247f79eb = function_5f516f9d(#"headshots");
     level.var_6f99c3bd = function_5f516f9d(#"melee_kills");
-    level.var_7e008e0c = function_5f516f9d(#"hash_65d388fae333b6ea");
-    level.var_24370902 = function_5f516f9d(#"hash_4abb8db802b122b5");
+    level.var_7e008e0c = function_5f516f9d(#"best_killstreak");
+    level.var_24370902 = function_5f516f9d(#"scorestreak_kills");
     level.var_924497ca = function_5f516f9d(#"hash_512584b15284d144");
     level.var_94b2e2da = function_5f516f9d(#"hash_513bb5302a850f1c");
     level.var_9356f44c = function_5f516f9d(#"hash_1ebacadf6dc3dbdf");
-    level.var_f0b5757d = function_5f516f9d(#"hash_47f09f514721a1c2");
+    level.var_f0b5757d = function_5f516f9d(#"veteran_kills");
     level.var_b7ad6f5b = function_5f516f9d(#"hash_683d7dfc8782d6b9", 1);
     level.var_c30109f4 = function_5f516f9d(#"hash_68046b0858420412", 1);
     level.var_4ac5338a = function_5f516f9d(#"hash_3caeae083fb50ceb", 1);
@@ -347,7 +347,7 @@ function give_killstreaks(var_8be50b09) {
     if (!level.loadoutkillstreaksenabled) {
         return;
     }
-    classnum = self.var_69a7c6b0;
+    classnum = self.class_num_for_global_weapons;
     sortedkillstreaks = [];
     currentkillstreak = 0;
     for (killstreaknum = 0; killstreaknum < 3; killstreaknum++) {
@@ -496,7 +496,7 @@ function function_d8cdeb6a(n_index) {
         var_6b99a088 = array(#"ar_modular_t8", #"rf", #"steadyaim", #"mixclip");
         break;
     case 5:
-        var_6b99a088 = array(#"ar_stealth_t8", #"damage", #"extbarrel", #"rf", #"hash_3ead2a29f1e9d7e");
+        var_6b99a088 = array(#"ar_stealth_t8", #"damage", #"extbarrel", #"rf", #"uber_bayonet");
         break;
     case 6:
         var_6b99a088 = array(#"ar_damage_t8", #"holo", #"damage", #"damage2");
@@ -508,7 +508,7 @@ function function_d8cdeb6a(n_index) {
         var_6b99a088 = array(#"ar_stealth_t8", #"acog", #"suppressed", #"stalker", #"stalker2");
         break;
     case 9:
-        var_6b99a088 = array(#"ar_fastfire_t8", #"steadyaim", #"steadyaim2", #"stalker", #"hash_3605090fe5328123");
+        var_6b99a088 = array(#"ar_fastfire_t8", #"steadyaim", #"steadyaim2", #"stalker", #"uber_firingunit");
         break;
     case 10:
         var_6b99a088 = array(#"ar_modular_t8", #"reflex", #"suppressed", #"stalker", #"grip", #"quickdraw");
@@ -527,17 +527,17 @@ function function_d8cdeb6a(n_index) {
 function function_1833fe3e(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
     if (self.team !== attacker.team && !isbot(attacker) && isplayer(attacker)) {
         if (level.ct_difficulty == "hard") {
-            if (attacker function_15e5c1da(#"hash_47f09f514721a1c2") < level.var_f0b5757d) {
-                attacker function_9401373f(#"hash_47f09f514721a1c2", 1);
+            if (attacker function_15e5c1da(#"veteran_kills") < level.var_f0b5757d) {
+                attacker function_9401373f(#"veteran_kills", 1);
             }
         }
         attacker.var_7e008e0c++;
-        if (attacker.var_7e008e0c > attacker function_15e5c1da(#"hash_65d388fae333b6ea") && attacker.var_7e008e0c <= level.var_7e008e0c) {
-            attacker function_9401373f(#"hash_65d388fae333b6ea", 1);
+        if (attacker.var_7e008e0c > attacker function_15e5c1da(#"best_killstreak") && attacker.var_7e008e0c <= level.var_7e008e0c) {
+            attacker function_9401373f(#"best_killstreak", 1);
         }
         if (killstreaks::is_killstreak_weapon(weapon) && weapon != getweapon(#"dog_ai_defaultmelee")) {
-            if (attacker function_15e5c1da(#"hash_4abb8db802b122b5") < level.var_24370902) {
-                attacker function_9401373f(#"hash_4abb8db802b122b5", 1);
+            if (attacker function_15e5c1da(#"scorestreak_kills") < level.var_24370902) {
+                attacker function_9401373f(#"scorestreak_kills", 1);
             }
         }
         if (isdefined(weapon.isheroweapon) && weapon.isheroweapon || isdefined(weapon.var_76ce72e8) && weapon.var_76ce72e8 || weapon == getweapon(#"sig_buckler_turret") || weapon == getweapon(#"sig_buckler_dw") || weapon == getweapon(#"dog_ai_defaultmelee")) {
@@ -640,7 +640,7 @@ function function_b4ebcd8a() {
     }
     foreach (index in var_3e22bae5) {
         str_state = self function_c2c1d36b(index);
-        if (str_state == #"tutorial_completed" || str_state == #"skirmish_completed" || str_state == #"hash_1946933613548897") {
+        if (str_state == #"tutorial_completed" || str_state == #"skirmish_completed" || str_state == #"skirmish_started") {
             var_10e6d37f++;
         }
     }
@@ -655,10 +655,10 @@ function function_b4ebcd8a() {
 // Checksum 0xeb112fb5, Offset: 0x3038
 // Size: 0xec
 function function_51450191() {
-    if (self function_15e5c1da(#"hash_7c2c8f10f053d93") < 10) {
-        self function_9401373f(#"hash_7c2c8f10f053d93", 1);
+    if (self function_15e5c1da(#"bronze_stars") < 10) {
+        self function_9401373f(#"bronze_stars", 1);
         self function_ea859fe2();
-        if (self function_15e5c1da(#"hash_7c2c8f10f053d93") == 10) {
+        if (self function_15e5c1da(#"bronze_stars") == 10) {
             self function_399964c8(1);
             self giveachievement("st_stargazer");
             wait(1);
@@ -672,8 +672,8 @@ function function_51450191() {
 // Checksum 0x5473e49, Offset: 0x3130
 // Size: 0x64
 function function_46f9c28e() {
-    if (self function_15e5c1da(#"hash_2a492630689ff21e") < 10) {
-        self function_9401373f(#"hash_2a492630689ff21e", 1);
+    if (self function_15e5c1da(#"silver_stars") < 10) {
+        self function_9401373f(#"silver_stars", 1);
         self function_ea859fe2();
     }
 }
@@ -701,8 +701,8 @@ function function_9b717ff4() {
 // Size: 0x94
 function function_ca8c7182() {
     self function_9b717ff4();
-    if (self function_15e5c1da(#"hash_4893fe83ee2ad00d") < 10) {
-        self function_9401373f(#"hash_4893fe83ee2ad00d", 1);
+    if (self function_15e5c1da(#"gold_stars") < 10) {
+        self function_9401373f(#"gold_stars", 1);
         self function_ea859fe2();
         self thread function_78a17c00();
     }
@@ -717,7 +717,7 @@ function function_78a17c00() {
     if (self function_dd91e3dd() < 30) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_65d388fae333b6ea") < level.var_7e008e0c) {
+    if (self function_15e5c1da(#"best_killstreak") < level.var_7e008e0c) {
         b_complete = 0;
     }
     if (self function_15e5c1da(#"melee_kills") < level.var_6f99c3bd) {
@@ -729,13 +729,13 @@ function function_78a17c00() {
     if (self function_15e5c1da(#"headshots") < level.var_247f79eb) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_4abb8db802b122b5") < level.var_24370902) {
+    if (self function_15e5c1da(#"scorestreak_kills") < level.var_24370902) {
         b_complete = 0;
     }
     if (self function_15e5c1da(#"hash_513bb5302a850f1c") < level.var_94b2e2da) {
         b_complete = 0;
     }
-    if (self function_15e5c1da(#"hash_47f09f514721a1c2") < level.var_f0b5757d) {
+    if (self function_15e5c1da(#"veteran_kills") < level.var_f0b5757d) {
         b_complete = 0;
     }
     if (self function_15e5c1da(#"hash_1ebacadf6dc3dbdf") < level.var_9356f44c) {

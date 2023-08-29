@@ -97,7 +97,7 @@
 #include scripts/zm_common/gametypes/globallogic_spawn.gsc;
 #include scripts/zm_common/gametypes/zm_gametype.gsc;
 #include scripts/zm_common/bots/zm_bot.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/zm_common/zm_characters.gsc;
 #include scripts/zm_common/bb.gsc;
 #include scripts/core_common/player/player_stats.gsc;
@@ -2179,7 +2179,7 @@ function printhashids() {
         outputstring = "<unknown string>";
         outputstring = outputstring + "<unknown string>";
         foreach (powerup in level.zombie_powerups) {
-            outputstring = outputstring + powerup.powerup_name + "<unknown string>" + powerup.var_33c87f51 + "<unknown string>";
+            outputstring = outputstring + powerup.powerup_name + "<unknown string>" + powerup.hash_id + "<unknown string>";
         }
         outputstring = outputstring + "<unknown string>";
         if (isdefined(level.aat_in_use) && level.aat_in_use) {
@@ -2187,7 +2187,7 @@ function printhashids() {
                 if (!isdefined(aat) || !isdefined(aat.name) || aat.name == "<unknown string>") {
                     continue;
                 }
-                outputstring = outputstring + aat.name + "<unknown string>" + aat.var_33c87f51 + "<unknown string>";
+                outputstring = outputstring + aat.name + "<unknown string>" + aat.hash_id + "<unknown string>";
             }
         }
         outputstring = outputstring + "<unknown string>";

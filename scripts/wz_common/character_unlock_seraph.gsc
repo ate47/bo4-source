@@ -113,7 +113,7 @@ function function_75097bb5() {
 // Params 1, eflags: 0x44
 // Checksum 0xb6332976, Offset: 0x5b8
 // Size: 0x2e4
-function event<event_cf200f34> private function_209450ae(eventstruct) {
+function event_handler[event_cf200f34] private function_209450ae(eventstruct) {
     if (!(isdefined(level.var_d27ee2e7) && level.var_d27ee2e7)) {
         return;
     }

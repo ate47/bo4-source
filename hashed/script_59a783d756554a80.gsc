@@ -46,7 +46,7 @@ function function_5bd0ee94() {
     level.var_b10a99a1 = array(#"hash_32d43d269e30acea", #"hash_17d53ca41c412d7f", #"hash_da35c4f5834157c", #"hash_3ee8d76b357581a1", #"hash_7cc1be647a9336e6");
     level.var_7e23e2dd = 0;
     level thread function_148c9f71();
-    level waittill(#"hash_2b803f353d8e13c0");
+    level waittill(#"rich_mind");
     self thread function_c207b97();
     function_25f77618();
 }
@@ -97,7 +97,7 @@ function function_148c9f71() {
         level.var_7e23e2dd++;
     }
     level.var_7e23e2dd = 0;
-    level notify(#"hash_2b803f353d8e13c0");
+    level notify(#"rich_mind");
 }
 
 // Namespace namespace_8f53e87b/namespace_8f53e87b

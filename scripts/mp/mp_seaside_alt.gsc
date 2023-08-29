@@ -16,7 +16,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x22348adf, Offset: 0xd8
 // Size: 0x104
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     precache();
     callback::on_game_playing(&on_game_playing);
     mp_seaside_alt_fx::main();

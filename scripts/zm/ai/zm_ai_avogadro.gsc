@@ -8,11 +8,11 @@
 #include scripts/zm_common/zm_behavior.gsc;
 #include scripts/zm_common/zm.gsc;
 #include scripts/core_common/status_effects/status_effect_util.gsc;
-#include script_522aeb6ae906391e;
-#include script_3aa0f32b70d4f7cb;
-#include script_4d85e8de54b02198;
-#include script_caf007e2a98afa2;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include script_3819e7a1427df6d2;
 #include scripts/core_common/ai/archetype_avogadro.gsc;

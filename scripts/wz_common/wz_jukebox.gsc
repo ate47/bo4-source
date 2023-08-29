@@ -16,7 +16,7 @@ function autoexec __init() {
 // Params 1, eflags: 0x40
 // Checksum 0xb9f6848b, Offset: 0x148
 // Size: 0x24
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level thread function_2bf3c36e();
 }
 
@@ -58,7 +58,7 @@ function function_1f3a1c47(activator, laststate, state) {
 // Params 1, eflags: 0x40
 // Checksum 0xeb1c1c77, Offset: 0x390
 // Size: 0xec
-function event<event_9673dc9a> function_3981d015(eventstruct) {
+function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (isdefined(level.var_8b13d130) && !level.var_8b13d130) {
         if (eventstruct.ent.targetname === "dynent_jukebox") {
             setdynentenabled(eventstruct.ent, 0);

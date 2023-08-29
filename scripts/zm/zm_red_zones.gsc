@@ -367,7 +367,7 @@ function function_27028b8e(str_zone) {
     case #"zone_amphitheater":
         var_601fee0 = #"hash_654702bdca18105";
         break;
-    case #"hash_76cb1817d961720a":
+    case #"zone_amphitheater_backstage":
         var_601fee0 = #"hash_10a873392c5d4565";
         break;
     case #"zone_cliff_tombs_lower":
@@ -388,12 +388,12 @@ function function_27028b8e(str_zone) {
         var_601fee0 = #"hash_27a6b15e094c02f1";
         break;
     case #"hash_11705b329bbacfdd":
-    case #"hash_12d79aa067af1d6e":
-    case #"hash_16e3e1ab218f314f":
+    case #"zone_intersection_of_treasuries_upper":
+    case #"zone_intersection_of_treasuries_lower":
         var_601fee0 = #"hash_4785d4d350f36326";
         break;
-    case #"hash_eb2b0eec0088af9":
-    case #"hash_1acff5b963b2f680":
+    case #"zone_monument_of_craterus_lower":
+    case #"zone_monument_of_craterus_upper":
         var_601fee0 = #"hash_70363674b3e9a47c";
         break;
     case #"zone_river_lower":
@@ -406,7 +406,7 @@ function function_27028b8e(str_zone) {
     case #"zone_serpent_pass_lower":
         var_601fee0 = #"hash_4f55839413fe0046";
         break;
-    case #"hash_543890f2b02dbfe":
+    case #"zone_stoa_of_athenians_to_spartan_upper":
     case #"zone_spartan_monument_west":
     case #"zone_spartan_monument_east":
     case #"zone_spartan_monument_upper":
@@ -428,12 +428,12 @@ function function_27028b8e(str_zone) {
     case #"zone_offering":
         var_601fee0 = #"hash_6268d50ff53b29d4";
         break;
-    case #"hash_58617d80d1ef9a3f":
-    case #"hash_67d858ec118aa0d5":
-    case #"hash_72e39e9502eb97a8":
+    case #"zone_upper_road_west":
+    case #"zone_upper_road_east":
+    case #"zone_portico":
         var_601fee0 = #"hash_32a859886bcbfb10";
         break;
-    case #"hash_73d23d661a288313":
+    case #"zone_western_plaza":
         var_601fee0 = #"hash_187fe3987a160b42";
         break;
     case #"zone_boss_plateau_1":
@@ -479,10 +479,10 @@ function function_17ac86f7() {
     self thread zm_audio::function_713192b1(#"hash_4785d4d350f36326", #"hash_622639b863ef6669");
     self thread zm_audio::function_713192b1(#"hash_12a9743a3b9f2236", #"hash_2d65510066aca8d");
     self thread zm_audio::function_713192b1(#"hash_303ce0aa4cf6a23e", #"hash_1b3475683eff03ae");
-    self thread function_f7a190a8(undefined, 60, #"hash_106d425e41e8c240", #"hash_3442c6bca6e454f");
+    self thread function_f7a190a8(undefined, 60, #"hash_106d425e41e8c240", #"temp_apollo");
     self thread function_f7a190a8(#"hash_3dba794053dea40e", 60, #"hash_654702bdca18105", #"amphi");
     self thread zm_audio::function_713192b1(#"hash_4f55839413fe0046", #"hash_185c7ca2794dd39");
-    self thread function_f7a190a8(#"pap_quest_completed", 30, #"hash_78d4c8eb48aabd66", #"hash_3507a36f2d9d7c97");
+    self thread function_f7a190a8(#"pap_quest_completed", 30, #"hash_78d4c8eb48aabd66", #"center_world");
 }
 
 // Namespace zm_red_zones/zm_red_zones

@@ -44,7 +44,7 @@ function autoexec __init__system__() {
 // Size: 0x286
 function __init__() {
     profilestart();
-    killstreaks::register_killstreak("killstreak_ac130", &function_461bc4c7);
+    killstreaks::register_killstreak("killstreak_ac130", &activatemaingunner);
     killstreaks::register_alt_weapon("ac130", getweapon(#"killstreak_remote"));
     killstreaks::register_alt_weapon("ac130", getweapon(#"hash_17df39d53492b0bf"));
     killstreaks::register_alt_weapon("ac130", getweapon(#"hash_7b24d0d0d2823bca"));
@@ -54,7 +54,7 @@ function __init__() {
     level.killstreaks[#"ac130"].threatonkill = 1;
     callback::on_connect(&onplayerconnect);
     callback::on_finalize_initialization(&function_3675de8b);
-    level thread function_24930cc2();
+    level thread waitforgameendthread();
     level.ac130 = undefined;
     clientfield::register_clientuimodel("vehicle.selectedWeapon", 1, 2, "int", 0);
     clientfield::register_clientuimodel("vehicle.flareCount", 1, 2, "int", 0);
@@ -130,7 +130,7 @@ function rotaterig(bundle) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x7d5c7d4e, Offset: 0xb30
 // Size: 0x118
-function function_461bc4c7(killstreaktype) {
+function activatemaingunner(killstreaktype) {
     player = self;
     attempts = 0;
     while (isdefined(level.ac130)) {
@@ -143,9 +143,9 @@ function function_461bc4c7(killstreaktype) {
         }
         wait(0.1);
     }
-    player val::set(#"hash_4b7312362ee4e5f8", "freezecontrols");
-    result = player function_57916426();
-    player val::reset(#"hash_4b7312362ee4e5f8", "freezecontrols");
+    player val::set(#"spawnac130", "freezecontrols");
+    result = player spawnac130();
+    player val::reset(#"spawnac130", "freezecontrols");
     if (level.gameended) {
         return 1;
     }
@@ -160,16 +160,16 @@ function function_461bc4c7(killstreaktype) {
 // Checksum 0xa44d501, Offset: 0xc50
 // Size: 0x10c
 function hackedprefunction(hacker) {
-    var_71a362d4 = self;
-    var_71a362d4.owner unlink();
+    heligunner = self;
+    heligunner.owner unlink();
     level.ac130 clientfield::set("vehicletransition", 0);
-    var_71a362d4.owner setmodellodbias(0);
-    var_71a362d4.owner notify(#"hash_31fa26bcde15ad26");
-    var_71a362d4.owner killstreaks::clear_using_remote();
-    var_71a362d4.owner killstreaks::unhide_compass();
-    var_71a362d4.owner vehicle::stop_monitor_missiles_locked_on_to_me();
-    var_71a362d4.owner vehicle::stop_monitor_damage_as_occupant();
-    var_71a362d4 makevehicleunusable();
+    heligunner.owner setmodellodbias(0);
+    heligunner.owner notify(#"gunner_left");
+    heligunner.owner killstreaks::clear_using_remote();
+    heligunner.owner killstreaks::unhide_compass();
+    heligunner.owner vehicle::stop_monitor_missiles_locked_on_to_me();
+    heligunner.owner vehicle::stop_monitor_damage_as_occupant();
+    heligunner makevehicleunusable();
 }
 
 // Namespace ac130/ac130
@@ -177,25 +177,25 @@ function hackedprefunction(hacker) {
 // Checksum 0x348e6693, Offset: 0xd68
 // Size: 0x21a
 function hackedpostfunction(hacker) {
-    var_71a362d4 = self;
-    var_71a362d4 clientfield::set("enemyvehicle", 2);
-    var_71a362d4 makevehicleusable();
-    var_71a362d4 usevehicle(hacker, 1);
+    heligunner = self;
+    heligunner clientfield::set("enemyvehicle", 2);
+    heligunner makevehicleusable();
+    heligunner usevehicle(hacker, 1);
     level.ac130 clientfield::set("vehicletransition", 1);
-    var_71a362d4 thread vehicle::monitor_missiles_locked_on_to_me(hacker);
-    var_71a362d4 thread vehicle::monitor_damage_as_occupant(hacker);
+    heligunner thread vehicle::monitor_missiles_locked_on_to_me(hacker);
+    heligunner thread vehicle::monitor_damage_as_occupant(hacker);
     hacker killstreaks::hide_compass();
-    var_71a362d4 thread watchplayerexitrequestthread(hacker);
-    hacker setmodellodbias(isdefined(level.var_3a0e7f4a) ? level.var_3a0e7f4a : 8);
-    var_71a362d4.owner givededicatedshadow(level.ac130);
-    hacker thread function_5f941d8a(var_71a362d4);
+    heligunner thread watchplayerexitrequestthread(hacker);
+    hacker setmodellodbias(isdefined(level.mothership_lod_bias) ? level.mothership_lod_bias : 8);
+    heligunner.owner givededicatedshadow(level.ac130);
+    hacker thread watchplayerteamchangethread(heligunner);
     hacker killstreaks::set_killstreak_delay_killcam("ac130");
-    if (var_71a362d4.var_95801183) {
-        var_71a362d4.killstreak_duration = var_71a362d4 killstreak_hacking::get_hacked_timeout_duration_ms();
-        var_71a362d4.killstreak_end_time = hacker killstreak_hacking::set_vehicle_drivable_time_starting_now(var_71a362d4);
-        var_71a362d4.killstreakendtime = int(var_71a362d4.killstreak_end_time);
+    if (heligunner.killstreak_timer_started) {
+        heligunner.killstreak_duration = heligunner killstreak_hacking::get_hacked_timeout_duration_ms();
+        heligunner.killstreak_end_time = hacker killstreak_hacking::set_vehicle_drivable_time_starting_now(heligunner);
+        heligunner.killstreakendtime = int(heligunner.killstreak_end_time);
     } else {
-        var_71a362d4.var_6a18446d = 1;
+        heligunner.killstreak_timer_start_using_hacked_time = 1;
     }
 }
 
@@ -203,7 +203,7 @@ function hackedpostfunction(hacker) {
 // Params 0, eflags: 0x5 linked
 // Checksum 0x542c3902, Offset: 0xf90
 // Size: 0x890
-function private function_57916426() {
+function private spawnac130() {
     player = self;
     player endon(#"disconnect");
     level endon(#"game_ended");
@@ -227,23 +227,23 @@ function private function_57916426() {
     level.ac130 killstreaks::configure_team("ac130", killstreak_id, player, "helicopter");
     level.ac130 killstreak_hacking::enable_hacking("ac130", &hackedprefunction, &hackedpostfunction);
     level.ac130.killstreak_id = killstreak_id;
-    level.ac130.var_b46557d6 = &function_a51c391f;
+    level.ac130.destroyfunc = &function_a51c391f;
     level.ac130.hardpointtype = "ac130";
     level.ac130 clientfield::set("enemyvehicle", 1);
     level.ac130 vehicle::init_target_group();
-    level.ac130.var_95801183 = 0;
+    level.ac130.killstreak_timer_started = 0;
     level.ac130.allowdeath = 0;
-    level.ac130.var_ba0b1611 = 0;
+    level.ac130.playermovedrecently = 0;
     level.ac130.soundmod = "default_loud";
     level.ac130 hacker_tool::registerwithhackertool(50, 10000);
     level.ac130.usage = [];
-    level.destructible_callbacks[#"hash_327f4b2020106273"] = &function_7df0b8f5;
+    level.destructible_callbacks[#"turret_destroyed"] = &vtoldestructiblecallback;
     level.ac130.shuttingdown = 0;
-    level.ac130.var_953f407f = 0;
-    level.ac130 thread function_4f426310(player, level.ac130);
+    level.ac130.completely_shutdown = 0;
+    level.ac130 thread playlockonsoundsthread(player, level.ac130);
     level.ac130 thread helicopter::wait_for_killed();
     level.ac130.maxhealth = isdefined(killstreak_bundles::get_max_health("ac130")) ? killstreak_bundles::get_max_health("ac130") : 5000;
-    level.ac130.var_7a213748 = level.ac130.maxhealth;
+    level.ac130.original_health = level.ac130.maxhealth;
     level.ac130.health = level.ac130.maxhealth;
     level.ac130.damagetaken = 0;
     level.ac130 thread helicopter::heli_health("ac130");
@@ -262,14 +262,14 @@ function private function_57916426() {
     level.ac130.maxvisibledist = 16384;
     level.ac130 function_53d3b37a(bundle);
     level.ac130.totalrockethits = 0;
-    level.ac130.var_4265be4a = 0;
+    level.ac130.turretrockethits = 0;
     level.ac130.overridevehicledamage = &function_dea7ec6a;
-    level.ac130.var_ce904ce = &function_7cdff810;
-    level.ac130.detonateviaemp = &function_591b8468;
+    level.ac130.hackedhealthupdatecallback = &function_7cdff810;
+    level.ac130.detonateviaemp = &helicoptedetonateviaemp;
     player thread killstreaks::play_killstreak_start_dialog("ac130", player.team, killstreak_id);
     level.ac130 killstreaks::play_pilot_dialog_on_owner("arrive", "ac130", killstreak_id);
     player stats::function_e24eec31(bundle.ksweapon, #"used", 1);
-    player thread function_52ee02aa(level.ac130);
+    player thread waitforvtolshutdownthread(level.ac130);
     level.ac130 function_7c61ce31(bundle);
     profilestop();
     if (level.gameended === 1) {
@@ -323,7 +323,7 @@ function function_7cdff810() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x464fa391, Offset: 0x1a70
 // Size: 0x6c
-function function_24930cc2() {
+function waitforgameendthread() {
     level waittill(#"game_ended");
     if (isdefined(level.ac130) && isdefined(level.ac130.owner)) {
         function_8721028e(level.ac130.owner, 1);
@@ -334,13 +334,13 @@ function function_24930cc2() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x7d9b5971, Offset: 0x1ae8
 // Size: 0x1ba
-function function_52ee02aa(ac130) {
+function waitforvtolshutdownthread(ac130) {
     waitresult = undefined;
-    waitresult = ac130 waittill(#"hash_72c1abe12fde572a");
+    waitresult = ac130 waittill(#"ac130_shutdown");
     if (!isdefined(ac130)) {
         return;
     }
-    if (ac130.var_953f407f !== 1) {
+    if (ac130.completely_shutdown !== 1) {
         attacker = waitresult.attacker;
         if (isdefined(attacker)) {
             luinotifyevent(#"player_callout", 2, #"hash_20aa28bee9cfdd61", attacker.entnum);
@@ -399,14 +399,14 @@ function function_31d18ab9() {
 // Size: 0x28
 function function_a51c391f() {
     ac130 = self;
-    ac130 notify(#"hash_72c1abe12fde572a");
+    ac130 notify(#"ac130_shutdown");
 }
 
 // Namespace ac130/ac130
 // Params 0, eflags: 0x1 linked
 // Checksum 0xaaf68d28, Offset: 0x1da0
 // Size: 0x74
-function function_bfe0a51f() {
+function ontimeoutcallback() {
     if (!(isdefined(level.var_43da6545) && level.var_43da6545) && isdefined(level.ac130) && isdefined(level.ac130.owner)) {
         function_8721028e(level.ac130.owner, 1);
     }
@@ -423,7 +423,7 @@ function function_c2bfa7e1(ent, weapon) {
     if (ent.shuttingdown === 1) {
         return 0;
     }
-    if (ent.var_953f407f === 1) {
+    if (ent.completely_shutdown === 1) {
         return 0;
     }
     return 1;
@@ -435,7 +435,7 @@ function function_c2bfa7e1(ent, weapon) {
 // Size: 0xfa
 function function_d4896942(bundle) {
     ac130 = self;
-    ac130 endon(#"death", #"hash_72c1abe12fde572a");
+    ac130 endon(#"death", #"ac130_shutdown");
     ac130.var_7132bbb7 = undefined;
     while (1) {
         ac130 waittill(#"flare_deployed");
@@ -453,7 +453,7 @@ function function_d4896942(bundle) {
 // Size: 0xf0
 function function_31f9c728(bundle) {
     ac130 = self;
-    ac130 endon(#"death", #"hash_72c1abe12fde572a");
+    ac130 endon(#"death", #"ac130_shutdown");
     ac130.var_7132bbb7 = undefined;
     while (1) {
         waitresult = undefined;
@@ -546,19 +546,19 @@ function function_6650cc9c(missile, bundle, var_2f984f68) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x4978e14b, Offset: 0x2550
 // Size: 0x118
-function function_5f941d8a(ac130) {
-    ac130 notify(#"hash_3f2e342ad6180001");
-    ac130 endon(#"hash_3f2e342ad6180001");
+function watchplayerteamchangethread(ac130) {
+    ac130 notify(#"mothership_team_change");
+    ac130 endon(#"mothership_team_change");
     /#
         assert(isplayer(self));
     #/
     player = self;
-    player endon(#"hash_31fa26bcde15ad26");
+    player endon(#"gunner_left");
     player waittill(#"joined_team", #"disconnect", #"joined_spectators");
-    var_cef1449f = ac130.ownerentnum == player.entnum;
-    player thread function_8721028e(player, var_cef1449f);
-    if (var_cef1449f) {
-        ac130 notify(#"hash_72c1abe12fde572a");
+    ownerleft = ac130.ownerentnum == player.entnum;
+    player thread function_8721028e(player, ownerleft);
+    if (ownerleft) {
+        ac130 notify(#"ac130_shutdown");
     }
 }
 
@@ -567,14 +567,14 @@ function function_5f941d8a(ac130) {
 // Checksum 0x1a9590fa, Offset: 0x2670
 // Size: 0x19a
 function watchplayerexitrequestthread(player) {
-    player notify(#"hash_1087b2a7627d2c18");
-    player endon(#"hash_1087b2a7627d2c18");
+    player notify(#"watchplayerexitrequestthread_singleton");
+    player endon(#"watchplayerexitrequestthread_singleton");
     /#
         assert(isplayer(player));
     #/
     ac130 = self;
     level endon(#"game_ended");
-    player endon(#"disconnect", #"hash_31fa26bcde15ad26");
+    player endon(#"disconnect", #"gunner_left");
     ac130 endon(#"death");
     owner = ac130.ownerentnum == player.entnum;
     while (1) {
@@ -596,7 +596,7 @@ function watchplayerexitrequestthread(player) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x46b728be, Offset: 0x2818
 // Size: 0x410
-function private function_4d980695(var_c5811837) {
+function private function_4d980695(isowner) {
     /#
         assert(isplayer(self));
     #/
@@ -610,8 +610,8 @@ function private function_4d980695(var_c5811837) {
         if (result != "disconnect") {
             player killstreaks::clear_using_remote();
         }
-        level.ac130.var_73183186 = 1;
-        level.ac130 notify(#"hash_72c1abe12fde572a");
+        level.ac130.failed2enter = 1;
+        level.ac130 notify(#"ac130_shutdown");
         return 0;
     }
     bundle = getscriptbundle("killstreak_ac130");
@@ -621,7 +621,7 @@ function private function_4d980695(var_c5811837) {
     level.ac130 thread vehicle::monitor_missiles_locked_on_to_me(player);
     level.ac130 thread vehicle::monitor_damage_as_occupant(player);
     level.ac130 thread function_5cdcce1e(player);
-    if (level.ac130.var_95801183) {
+    if (level.ac130.killstreak_timer_started) {
         player vehicle::set_vehicle_drivable_time(level.ac130.killstreak_duration, level.ac130.killstreak_end_time);
     } else {
         duration = isdefined(bundle.ksduration) ? bundle.ksduration : 60000;
@@ -630,11 +630,11 @@ function private function_4d980695(var_c5811837) {
     if (!(isdefined(level.var_dab73f4a) && level.var_dab73f4a)) {
         level.ac130 thread watchplayerexitrequestthread(player);
     }
-    player thread function_5f941d8a(level.ac130);
-    player setmodellodbias(isdefined(level.var_3a0e7f4a) ? level.var_3a0e7f4a : 8);
+    player thread watchplayerteamchangethread(level.ac130);
+    player setmodellodbias(isdefined(level.mothership_lod_bias) ? level.mothership_lod_bias : 8);
     player givededicatedshadow(level.ac130);
     if (1) {
-        player thread function_d3e0aad(0.1);
+        player thread hidecompassafterwait(0.1);
     }
     player clientfield::set_player_uimodel("vehicle.inAC130", 1);
     player clientfield::set_to_player("inAC130", 1);
@@ -648,7 +648,7 @@ function private function_4d980695(var_c5811837) {
 // Checksum 0x44494a0a, Offset: 0x2c30
 // Size: 0xec
 function function_c137f6f8(ac130) {
-    ac130 endon(#"death", #"hash_72c1abe12fde572a");
+    ac130 endon(#"death", #"ac130_shutdown");
     self endon(#"disconnect");
     map_center = airsupport::getmapcenter();
     wait(0.1);
@@ -663,27 +663,27 @@ function function_c137f6f8(ac130) {
 // Size: 0x378
 function function_5cdcce1e(player) {
     ac130 = self;
-    ac130 endon(#"delete", #"hash_72c1abe12fde572a");
+    ac130 endon(#"delete", #"ac130_shutdown");
     player endon(#"disconnect", #"joined_team", #"joined_spectator", #"changed_specialist");
     var_2990ddbd = -1;
     while (1) {
-        var_71b2bed7 = ac130 function_e2d89efe(1);
-        player clientfield::set_player_uimodel("vehicle.rocketAmmo", var_71b2bed7);
+        ammo_in_clip = ac130 function_e2d89efe(1);
+        player clientfield::set_player_uimodel("vehicle.rocketAmmo", ammo_in_clip);
         var_a4a44abc = ac130 function_fde0d99e(1);
         player clientfield::set_player_uimodel("vehicle.bindingCooldown" + 0 + ".cooldown", 1 - var_a4a44abc);
-        var_71b2bed7 = ac130 function_e2d89efe(2);
-        player clientfield::set_player_uimodel("vehicle.ammoCount", var_71b2bed7);
+        ammo_in_clip = ac130 function_e2d89efe(2);
+        player clientfield::set_player_uimodel("vehicle.ammoCount", ammo_in_clip);
         var_a4a44abc = ac130 function_fde0d99e(2);
         player clientfield::set_player_uimodel("vehicle.bindingCooldown" + 1 + ".cooldown", 1 - var_a4a44abc);
-        var_71b2bed7 = ac130 function_e2d89efe(3);
-        player clientfield::set_player_uimodel("vehicle.ammo2Count", var_71b2bed7);
+        ammo_in_clip = ac130 function_e2d89efe(3);
+        player clientfield::set_player_uimodel("vehicle.ammo2Count", ammo_in_clip);
         var_a4a44abc = ac130 function_fde0d99e(3);
         player clientfield::set_player_uimodel("vehicle.bindingCooldown" + 2 + ".cooldown", 1 - var_a4a44abc);
         player clientfield::set_player_uimodel("vehicle.flareCount", ac130.numflares);
         seat_index = int(max(0, isdefined(ac130 getoccupantseat(player)) ? ac130 getoccupantseat(player) : 0));
         player clientfield::set_player_uimodel("vehicle.selectedWeapon", seat_index);
         if (var_2990ddbd != seat_index && isdefined(ac130.killstreak_duration) && isdefined(ac130.killstreak_end_time)) {
-            ac130 function_89ce97de(ac130.killstreak_duration, ac130.killstreak_end_time);
+            ac130 updatedrivabletimeforalloccupants(ac130.killstreak_duration, ac130.killstreak_end_time);
             var_2990ddbd = seat_index;
         }
         wait(0.1);
@@ -694,7 +694,7 @@ function function_5cdcce1e(player) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x764ce539, Offset: 0x30a8
 // Size: 0x4c
-function function_d3e0aad(waittime) {
+function hidecompassafterwait(waittime) {
     self endon(#"death", #"disconnect");
     wait(waittime);
     self killstreaks::hide_compass();
@@ -704,7 +704,7 @@ function function_d3e0aad(waittime) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xe1b50d85, Offset: 0x3100
 // Size: 0x23c
-function function_3ddb4f8e(ac130, eattacker, weapon) {
+function mainturretdestroyed(ac130, eattacker, weapon) {
     ac130.owner iprintlnbold(#"hash_bbc64fd3a1e88d");
     if (target_istarget(ac130)) {
         target_remove(ac130);
@@ -730,21 +730,21 @@ function function_3ddb4f8e(ac130, eattacker, weapon) {
 // Params 6, eflags: 0x1 linked
 // Checksum 0xb8190b18, Offset: 0x3348
 // Size: 0x84
-function function_7df0b8f5(var_fece8514, eattacker, weapon, var_b1f9d94f, dir, mod) {
+function vtoldestructiblecallback(brokennotify, eattacker, weapon, var_b1f9d94f, dir, mod) {
     ac130 = self;
-    ac130 endon(#"delete", #"hash_72c1abe12fde572a");
-    function_3ddb4f8e(ac130, eattacker, weapon);
+    ac130 endon(#"delete", #"ac130_shutdown");
+    mainturretdestroyed(ac130, eattacker, weapon);
 }
 
 // Namespace ac130/ac130
 // Params 3, eflags: 0x1 linked
 // Checksum 0xe1f54f6b, Offset: 0x33d8
 // Size: 0x420
-function function_8721028e(player, var_cef1449f, var_dbcb1965 = 0) {
+function function_8721028e(player, ownerleft, var_dbcb1965 = 0) {
     if (isbot(player)) {
         player ai::set_behavior_attribute("control", "commander");
     }
-    if (!isdefined(level.ac130) || level.ac130.var_953f407f === 1) {
+    if (!isdefined(level.ac130) || level.ac130.completely_shutdown === 1) {
         return;
     }
     profilestart();
@@ -787,10 +787,10 @@ function function_8721028e(player, var_cef1449f, var_dbcb1965 = 0) {
         player setmodellodbias(0);
         player givededicatedshadow(player);
         player killstreaks::unhide_compass();
-        player notify(#"hash_31fa26bcde15ad26");
+        player notify(#"gunner_left");
         player killstreaks::clear_using_remote();
     }
-    level.ac130.var_953f407f = 1;
+    level.ac130.completely_shutdown = 1;
     level.ac130.shuttingdown = 0;
     profilestop();
 }
@@ -828,11 +828,11 @@ function function_dea7ec6a(einflictor, eattacker, idamage, idflags, smeansofdeat
     if (idamage == 0) {
         return 0;
     }
-    var_f180e0af = smeansofdeath == "MOD_PROJECTILE" || smeansofdeath == "MOD_EXPLOSIVE";
+    handleasrocketdamage = smeansofdeath == "MOD_PROJECTILE" || smeansofdeath == "MOD_EXPLOSIVE";
     if (weapon.statindex == level.weaponshotgunenergy.statindex || weapon.statindex == level.weaponpistolenergy.statindex) {
-        var_f180e0af = 0;
+        handleasrocketdamage = 0;
     }
-    if (var_f180e0af) {
+    if (handleasrocketdamage) {
         ac130 function_c4aa4bb2();
         ac130 playsound(#"hash_ddcd9d25e056016");
     }
@@ -881,7 +881,7 @@ function wait_and_explode() {
         self vehicle::do_death_fx();
         wait(0.25);
         if (isdefined(self)) {
-            self notify(#"hash_72c1abe12fde572a");
+            self notify(#"ac130_shutdown");
         }
     }
 }
@@ -893,10 +893,10 @@ function wait_and_explode() {
 function function_46d0e4e5() {
     ac130 = self;
     ac130 endon(#"death");
-    if (self.var_90717a === 1) {
+    if (self.leave_by_damage_initiated === 1) {
         return;
     }
-    self.var_90717a = 1;
+    self.leave_by_damage_initiated = 1;
     if (target_istarget(ac130)) {
         target_remove(ac130);
     }
@@ -904,8 +904,8 @@ function function_46d0e4e5() {
         ac130 function_60d50ea4();
     }
     ac130 thread remote_weapons::do_static_fx();
-    var_23f04d4f = 5;
-    ac130 waittilltimeout(var_23f04d4f, #"static_fx_done");
+    failsafe_timeout = 5;
+    ac130 waittilltimeout(failsafe_timeout, #"static_fx_done");
     var_dbcb1965 = 1;
     function_8721028e(ac130.owner, 1, var_dbcb1965);
 }
@@ -914,15 +914,15 @@ function function_46d0e4e5() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x5634ceda, Offset: 0x3ff8
 // Size: 0x34
-function function_591b8468(attacker, weapon) {
-    function_3ddb4f8e(level.ac130, attacker, weapon);
+function helicoptedetonateviaemp(attacker, weapon) {
+    mainturretdestroyed(level.ac130, attacker, weapon);
 }
 
 // Namespace ac130/ac130
 // Params 1, eflags: 0x0
 // Checksum 0xa1aa00ec, Offset: 0x4038
 // Size: 0x84
-function function_feaaedba(missile) {
+function missilecleanupthread(missile) {
     targetent = self;
     targetent endon(#"delete", #"death");
     missile waittill(#"death", #"delete");
@@ -933,8 +933,8 @@ function function_feaaedba(missile) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xd01e2d, Offset: 0x40c8
 // Size: 0x1f8
-function function_4f426310(player, heli) {
-    player endon(#"disconnect", #"hash_31fa26bcde15ad26");
+function playlockonsoundsthread(player, heli) {
+    player endon(#"disconnect", #"gunner_left");
     heli endon(#"death", #"crashing", #"leaving");
     heli.locksounds = spawn("script_model", heli.origin);
     wait(0.1);
@@ -942,15 +942,15 @@ function function_4f426310(player, heli) {
     while (1) {
         heli waittill(#"locking on");
         while (1) {
-            if (function_83533d90(heli)) {
+            if (enemyislocking(heli)) {
                 heli.locksounds playsoundtoplayer(#"hash_fa62d8cec85b1a0", player);
                 wait(0.125);
             }
-            if (function_47ab3c40(heli)) {
+            if (enemylockedon(heli)) {
                 heli.locksounds playsoundtoplayer(#"hash_1683ed70beb3f2", player);
                 wait(0.125);
             }
-            if (!function_83533d90(heli) && !function_47ab3c40(heli)) {
+            if (!enemyislocking(heli) && !enemylockedon(heli)) {
                 heli.locksounds stopsounds();
                 break;
             }
@@ -962,7 +962,7 @@ function function_4f426310(player, heli) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf8aaf770, Offset: 0x42c8
 // Size: 0x28
-function function_83533d90(heli) {
+function enemyislocking(heli) {
     return isdefined(heli.locking_on) && heli.locking_on;
 }
 
@@ -970,7 +970,7 @@ function function_83533d90(heli) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe0dfd7c8, Offset: 0x42f8
 // Size: 0x28
-function function_47ab3c40(heli) {
+function enemylockedon(heli) {
     return isdefined(heli.locked_on) && heli.locked_on;
 }
 
@@ -978,7 +978,7 @@ function function_47ab3c40(heli) {
 // Params 2, eflags: 0x0
 // Checksum 0xdf3a933b, Offset: 0x4328
 // Size: 0x3a2
-function function_cd679760(startnode, var_bd7589b1) {
+function function_cd679760(startnode, destnodes) {
     self notify(#"flying");
     self endon(#"flying", #"crashing", #"leaving", #"death");
     bundle = getscriptbundle("killstreak_ac130");
@@ -990,35 +990,35 @@ function function_cd679760(startnode, var_bd7589b1) {
     self setneargoalnotifydist(100);
     self setgoal(nextnode.origin + (0, 0, 0), 1);
     self waittill(#"near_goal");
-    var_389ec60 = 1;
-    if (!self.var_ba0b1611) {
-        node = self function_4a01d817(var_bd7589b1, 0);
+    firstpass = 1;
+    if (!self.playermovedrecently) {
+        node = self updateareanodes(destnodes, 0);
         level.ac130.currentnode = node;
-        var_999c9446 = getent(node.target, "targetname");
-        function_bb6faa72(var_999c9446);
-        if (isdefined(var_999c9446.script_airspeed) && isdefined(var_999c9446.script_accel)) {
-            heli_speed = var_999c9446.script_airspeed;
-            heli_accel = var_999c9446.script_accel;
+        targetnode = getent(node.target, "targetname");
+        traveltonode(targetnode);
+        if (isdefined(targetnode.script_airspeed) && isdefined(targetnode.script_accel)) {
+            heli_speed = targetnode.script_airspeed;
+            heli_accel = targetnode.script_accel;
         } else {
             heli_speed = 150 + randomint(20);
             heli_accel = 40 + randomint(10);
         }
         self setspeed(heli_speed, heli_accel);
-        self setgoal(var_999c9446.origin + (0, 0, 0), 1);
-        self setgoalyaw(var_999c9446.angles[1]);
+        self setgoal(targetnode.origin + (0, 0, 0), 1);
+        self setgoalyaw(targetnode.angles[1]);
     }
-    if (!isdefined(var_999c9446) || !isdefined(var_999c9446.script_delay)) {
+    if (!isdefined(targetnode) || !isdefined(targetnode.script_delay)) {
         self waittill(#"near_goal");
         waittime = 10 + randomint(5);
     } else {
         self waittill(#"goal");
-        waittime = var_999c9446.script_delay;
+        waittime = targetnode.script_delay;
     }
-    if (var_389ec60) {
+    if (firstpass) {
         profilestart();
         self function_53d3b37a(bundle);
         profilestop();
-        var_389ec60 = 0;
+        firstpass = 0;
     }
     wait(waittime);
 }
@@ -1028,19 +1028,19 @@ function function_cd679760(startnode, var_bd7589b1) {
 // Checksum 0x6ac3b906, Offset: 0x46d8
 // Size: 0x104
 function function_53d3b37a(bundle) {
-    self.killstreak_duration = isdefined(bundle.ksduration) ? bundle.ksduration : self.var_6a18446d === 1 ? self killstreak_hacking::get_hacked_timeout_duration_ms() : 60000;
+    self.killstreak_duration = isdefined(bundle.ksduration) ? bundle.ksduration : self.killstreak_timer_start_using_hacked_time === 1 ? self killstreak_hacking::get_hacked_timeout_duration_ms() : 60000;
     self.killstreak_end_time = gettime() + self.killstreak_duration;
     self.killstreakendtime = int(self.killstreak_end_time);
-    self thread killstreaks::waitfortimeout("ac130", self.killstreak_duration, &function_bfe0a51f, "delete", "death");
-    self.var_95801183 = 1;
-    self function_89ce97de(self.killstreak_duration, self.killstreak_end_time);
+    self thread killstreaks::waitfortimeout("ac130", self.killstreak_duration, &ontimeoutcallback, "delete", "death");
+    self.killstreak_timer_started = 1;
+    self updatedrivabletimeforalloccupants(self.killstreak_duration, self.killstreak_end_time);
 }
 
 // Namespace ac130/ac130
 // Params 2, eflags: 0x1 linked
 // Checksum 0x195ec507, Offset: 0x47e8
 // Size: 0x3c
-function function_89ce97de(duration_ms, end_time_ms) {
+function updatedrivabletimeforalloccupants(duration_ms, end_time_ms) {
     if (isdefined(self.owner)) {
         self.owner vehicle::set_vehicle_drivable_time(duration_ms, end_time_ms);
     }
@@ -1050,13 +1050,13 @@ function function_89ce97de(duration_ms, end_time_ms) {
 // Params 1, eflags: 0x0
 // Checksum 0xdc54104a, Offset: 0x4830
 // Size: 0x2f8
-function function_a57c21b8(var_bd7589b1) {
+function watchlocationchangethread(destnodes) {
     player = self;
-    player endon(#"disconnect", #"hash_31fa26bcde15ad26");
+    player endon(#"disconnect", #"gunner_left");
     ac130 = level.ac130;
     settings = getscriptbundle("killstreak_ac130");
-    ac130 endon(#"delete", #"hash_72c1abe12fde572a");
-    player thread function_7f2e60();
+    ac130 endon(#"delete", #"ac130_shutdown");
+    player thread setplayermovedrecentlythread();
     player.moves = 0;
     while (1) {
         ac130 waittill(#"goal");
@@ -1065,21 +1065,21 @@ function function_a57c21b8(var_bd7589b1) {
             wait(float(waittime) / 1000);
         }
         player.moves++;
-        node = self function_4a01d817(var_bd7589b1, 1);
+        node = self updateareanodes(destnodes, 1);
         ac130.currentnode = node;
-        var_999c9446 = getent(node.target, "targetname");
-        player playlocalsound(#"hash_1ae4524673298983");
-        ac130 function_bb6faa72(var_999c9446);
-        if (isdefined(var_999c9446.script_airspeed) && isdefined(var_999c9446.script_accel)) {
-            heli_speed = var_999c9446.script_airspeed;
-            heli_accel = var_999c9446.script_accel;
+        targetnode = getent(node.target, "targetname");
+        player playlocalsound(#"mpl_cgunner_nav");
+        ac130 traveltonode(targetnode);
+        if (isdefined(targetnode.script_airspeed) && isdefined(targetnode.script_accel)) {
+            heli_speed = targetnode.script_airspeed;
+            heli_accel = targetnode.script_accel;
         } else {
             heli_speed = 80 + randomint(20);
             heli_accel = 40 + randomint(10);
         }
         ac130 setspeed(heli_speed, heli_accel);
-        ac130 setgoal(var_999c9446.origin + (0, 0, 0), 1);
-        ac130 setgoalyaw(var_999c9446.angles[1]);
+        ac130 setgoal(targetnode.origin + (0, 0, 0), 1);
+        ac130 setgoalyaw(targetnode.angles[1]);
     }
 }
 
@@ -1087,16 +1087,16 @@ function function_a57c21b8(var_bd7589b1) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xeb60cc6, Offset: 0x4b30
 // Size: 0xd6
-function function_7f2e60() {
+function setplayermovedrecentlythread() {
     player = self;
-    player endon(#"disconnect", #"hash_31fa26bcde15ad26");
+    player endon(#"disconnect", #"gunner_left");
     ac130 = level.ac130;
-    ac130 endon(#"delete", #"hash_72c1abe12fde572a");
-    var_9f589009 = self.moves;
-    level.ac130.var_ba0b1611 = 1;
+    ac130 endon(#"delete", #"ac130_shutdown");
+    mymove = self.moves;
+    level.ac130.playermovedrecently = 1;
     wait(100);
-    if (var_9f589009 === self.moves && isdefined(level.ac130)) {
-        level.ac130.var_ba0b1611 = 0;
+    if (mymove === self.moves && isdefined(level.ac130)) {
+        level.ac130.playermovedrecently = 0;
     }
 }
 
@@ -1104,11 +1104,11 @@ function function_7f2e60() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xdb3cade9, Offset: 0x4c10
 // Size: 0x3fe
-function function_4a01d817(var_4a5733c5, var_465ed415) {
+function updateareanodes(areanodes, forcemove) {
     validenemies = [];
-    foreach (node in var_4a5733c5) {
+    foreach (node in areanodes) {
         node.validplayers = [];
-        node.var_e86e559 = 0;
+        node.nodescore = 0;
     }
     foreach (player in level.players) {
         if (!isalive(player)) {
@@ -1117,42 +1117,42 @@ function function_4a01d817(var_4a5733c5, var_465ed415) {
         if (player.team == self.team) {
             continue;
         }
-        foreach (node in var_4a5733c5) {
+        foreach (node in areanodes) {
             if (distancesquared(player.origin, node.origin) > 1048576) {
                 continue;
             }
             node.validplayers[node.validplayers.size] = player;
         }
     }
-    var_c2e3e4c5 = undefined;
-    foreach (node in var_4a5733c5) {
+    bestnode = undefined;
+    foreach (node in areanodes) {
         if (isdefined(level.ac130.currentnode) && node == level.ac130.currentnode) {
             continue;
         }
-        var_2afc6bd7 = getent(node.target, "targetname");
+        helinode = getent(node.target, "targetname");
         foreach (player in node.validplayers) {
-            node.var_e86e559 = node.var_e86e559 + 1;
-            if (bullettracepassed(player.origin + vectorscale((0, 0, 1), 32), var_2afc6bd7.origin, 0, player)) {
-                node.var_e86e559 = node.var_e86e559 + 3;
+            node.nodescore = node.nodescore + 1;
+            if (bullettracepassed(player.origin + vectorscale((0, 0, 1), 32), helinode.origin, 0, player)) {
+                node.nodescore = node.nodescore + 3;
             }
         }
-        if (var_465ed415 && distancesquared(level.ac130.origin, var_2afc6bd7.origin) < 40000) {
-            node.var_e86e559 = -1;
+        if (forcemove && distancesquared(level.ac130.origin, helinode.origin) < 40000) {
+            node.nodescore = -1;
         }
-        if (!isdefined(var_c2e3e4c5) || node.var_e86e559 > var_c2e3e4c5.var_e86e559) {
-            var_c2e3e4c5 = node;
+        if (!isdefined(bestnode) || node.nodescore > bestnode.nodescore) {
+            bestnode = node;
         }
     }
-    return var_c2e3e4c5;
+    return bestnode;
 }
 
 // Namespace ac130/ac130
 // Params 1, eflags: 0x1 linked
 // Checksum 0xb4374067, Offset: 0x5018
 // Size: 0x2b2
-function function_bb6faa72(goalnode) {
-    var_2edd2f3c = function_ca7ac4fd(goalnode);
-    if (var_2edd2f3c[#"start"] != self.origin) {
+function traveltonode(goalnode) {
+    originoffets = getoriginoffsets(goalnode);
+    if (originoffets[#"start"] != self.origin) {
         if (isdefined(goalnode.script_airspeed) && isdefined(goalnode.script_accel)) {
             heli_speed = goalnode.script_airspeed;
             heli_accel = goalnode.script_accel;
@@ -1161,11 +1161,11 @@ function function_bb6faa72(goalnode) {
             heli_accel = 15 + randomint(15);
         }
         self setspeed(heli_speed, heli_accel);
-        self setgoal(var_2edd2f3c[#"start"] + vectorscale((0, 0, 1), 30), 0);
+        self setgoal(originoffets[#"start"] + vectorscale((0, 0, 1), 30), 0);
         self setgoalyaw(goalnode.angles[1]);
         self waittill(#"goal");
     }
-    if (var_2edd2f3c[#"end"] != goalnode.origin) {
+    if (originoffets[#"end"] != goalnode.origin) {
         if (isdefined(goalnode.script_airspeed) && isdefined(goalnode.script_accel)) {
             heli_speed = goalnode.script_airspeed;
             heli_accel = goalnode.script_accel;
@@ -1174,7 +1174,7 @@ function function_bb6faa72(goalnode) {
             heli_accel = 15 + randomint(15);
         }
         self setspeed(heli_speed, heli_accel);
-        self setgoal(var_2edd2f3c[#"end"] + vectorscale((0, 0, 1), 30), 0);
+        self setgoal(originoffets[#"end"] + vectorscale((0, 0, 1), 30), 0);
         self setgoalyaw(goalnode.angles[1]);
         self waittill(#"goal");
     }
@@ -1184,14 +1184,14 @@ function function_bb6faa72(goalnode) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x965ed4b5, Offset: 0x52d8
 // Size: 0x246
-function function_ca7ac4fd(goalnode) {
+function getoriginoffsets(goalnode) {
     startorigin = self.origin;
     endorigin = goalnode.origin;
-    var_f1f22232 = 0;
-    var_857ad2d3 = 40;
+    numtraces = 0;
+    maxtraces = 40;
     traceoffset = vectorscale((0, 0, -1), 196);
     traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self);
-    while (distancesquared(traceorigin[#"position"], endorigin + traceoffset) > 10 && var_f1f22232 < var_857ad2d3) {
+    while (distancesquared(traceorigin[#"position"], endorigin + traceoffset) > 10 && numtraces < maxtraces) {
         /#
             println("<unknown string>" + distancesquared(traceorigin[#"position"], endorigin + traceoffset));
         #/
@@ -1203,7 +1203,7 @@ function function_ca7ac4fd(goalnode) {
             startorigin = startorigin + vectorscale((0, 0, 1), 128);
             endorigin = endorigin + vectorscale((0, 0, 1), 128);
         }
-        var_f1f22232++;
+        numtraces++;
         traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self);
     }
     offsets = [];
@@ -1217,7 +1217,7 @@ function function_ca7ac4fd(goalnode) {
 // Checksum 0x34ac6c13, Offset: 0x5528
 // Size: 0x294
 function function_3939b657(vehicle) {
-    vehicle endon(#"hash_72c1abe12fde572a");
+    vehicle endon(#"ac130_shutdown");
     self endon(#"disconnect");
     waitframe(1);
     while (self isremotecontrolling()) {

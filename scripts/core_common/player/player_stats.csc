@@ -24,7 +24,7 @@ function function_d92cb558(result, vararg) {
 // Params 2, eflags: 0x21 linked
 // Checksum 0x7d4d009b, Offset: 0x198
 // Size: 0x68
-function get_stat(localclientnum, vararg...) {
+function get_stat(localclientnum, ...) {
     result = readstat(localclientnum, currentsessionmode(), vararg);
     /#
         function_d92cb558(result, vararg);
@@ -36,7 +36,7 @@ function get_stat(localclientnum, vararg...) {
 // Params 3, eflags: 0x20
 // Checksum 0x75a37c2b, Offset: 0x208
 // Size: 0x68
-function function_842e069e(localclientnum, sessionmode, vararg...) {
+function function_842e069e(localclientnum, sessionmode, ...) {
     result = readstat(localclientnum, sessionmode, vararg);
     /#
         function_d92cb558(result, vararg);

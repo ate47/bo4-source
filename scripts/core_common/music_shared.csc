@@ -17,9 +17,9 @@ function autoexec __init__system__() {
 // Checksum 0xd7a7a6ee, Offset: 0xd0
 // Size: 0x64
 function __init__() {
-    level.var_115a8712 = "";
-    level.var_8790e5fe = "";
-    level.var_a6849acd = [];
+    level.activemusicstate = "";
+    level.nextmusicstate = "";
+    level.musicstates = [];
     util::register_system(#"musiccmd", &musiccmdhandler);
 }
 

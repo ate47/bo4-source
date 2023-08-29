@@ -390,7 +390,7 @@ function trigger_once(s_info) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0xe3f74422, Offset: 0x15c0
 // Size: 0xf2
-function get_all(vararg...) {
+function get_all(...) {
     if (vararg.size == 1 && isarray(vararg[0])) {
         a_vararg = vararg[0];
     } else {
@@ -411,7 +411,7 @@ function get_all(vararg...) {
 // Params 1, eflags: 0x21 linked
 // Checksum 0x2a5ceadc, Offset: 0x16c0
 // Size: 0x72
-function is_trigger_of_type(vararg...) {
+function is_trigger_of_type(...) {
     if (vararg.size == 1 && isarray(vararg[0])) {
         a_vararg = vararg[0];
     } else {
@@ -639,7 +639,7 @@ function is_trigger_once() {
 // Params 1, eflags: 0x21 linked
 // Checksum 0x696c5e08, Offset: 0x2190
 // Size: 0x1b2
-function wait_till_any(vararg...) {
+function wait_till_any(...) {
     ent = spawnstruct();
     if (isarray(vararg[0])) {
         var_6a8e65fd = vararg[0];
@@ -796,7 +796,7 @@ function trigger_group(s_info) {
 // Params 3, eflags: 0x0
 // Checksum 0x463179e0, Offset: 0x2a50
 // Size: 0x11c
-function function_521edc64(ent, on_enter_payload, on_exit_payload) {
+function function_thread(ent, on_enter_payload, on_exit_payload) {
     ent endon(#"death");
     if (!isdefined(self)) {
         return;
@@ -880,7 +880,7 @@ function trigger_wait() {
 // Params 2, eflags: 0x20
 // Checksum 0x595c9d20, Offset: 0x2d00
 // Size: 0x10c
-function run(func, vararg...) {
+function run(func, ...) {
     var_3bdd90c2 = 0;
     if (isdefined(self.targetname)) {
         foreach (trig in getentarraybytype(20)) {

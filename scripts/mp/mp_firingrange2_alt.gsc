@@ -15,7 +15,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x517d9fec, Offset: 0x748
 // Size: 0x1474
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     load::main();
     compass::setupminimap("");
     level.cleandepositpoints = array((495, 1345, -64.5), (-667, 1040, -51), (937.25, 91.25, -120), (1627, 1770, -48), (-123.75, 2390, -44));

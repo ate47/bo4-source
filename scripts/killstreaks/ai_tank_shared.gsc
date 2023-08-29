@@ -4,7 +4,7 @@
 #include scripts/core_common/weapons_shared.gsc;
 #include scripts/core_common/turret_shared.gsc;
 #include scripts/core_common/ai/blackboard_vehicle.gsc;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 #include scripts/core_common/globallogic/globallogic_score.gsc;
 #include scripts/core_common/visionset_mgr_shared.gsc;
 #include scripts/core_common/array_shared.gsc;
@@ -609,7 +609,7 @@ function function_9b13ebf(drone) {
     drone.overridevehicledamage = &drone_callback_damage;
     drone thread vehicle_ai::nudge_collision();
     drone.cobra = 0;
-    drone asmrequestsubstate(#"hash_2d4b292477dc5711");
+    drone asmrequestsubstate(#"locomotion@movement");
     drone.variant = "light_weight";
     drone.var_a8c60b0e = 1;
     drone.var_b4c9d62 = 1;
@@ -982,7 +982,7 @@ function cobra_retract() {
     self.cobra = 0;
     self laseroff();
     self notify(#"disable_lens_flare");
-    self asmrequestsubstate(#"hash_2d4b292477dc5711");
+    self asmrequestsubstate(#"locomotion@movement");
     self vehicle_ai::waittill_asm_complete("locomotion@movement", 4);
 }
 
@@ -1381,7 +1381,7 @@ function function_dd91d091(params) {
             self.current_pathto_pos = goalpos;
         }
         if (self haspath()) {
-            self asmrequestsubstate(#"hash_2d4b292477dc5711");
+            self asmrequestsubstate(#"locomotion@movement");
             result = undefined;
             result = self waittill(#"near_goal", #"stunned");
         } else {
@@ -1556,7 +1556,7 @@ function state_combat_update(params) {
                     #/
                     self function_a57c34b7(newpos, 0, 1);
                     self setbrake(0);
-                    self asmrequestsubstate(#"hash_2d4b292477dc5711");
+                    self asmrequestsubstate(#"locomotion@movement");
                     result = undefined;
                     result = self waittilltimeout(randomintrange(4, 5), #"near_goal", #"stunned");
                 } else {
@@ -1581,7 +1581,7 @@ function state_combat_update(params) {
                         #/
                         self function_a57c34b7(newpos, 0, 1);
                         self setbrake(0);
-                        self asmrequestsubstate(#"hash_2d4b292477dc5711");
+                        self asmrequestsubstate(#"locomotion@movement");
                         result = undefined;
                         result = self waittilltimeout(randomintrange(4, 5), #"near_goal", #"stunned");
                     }
@@ -1786,7 +1786,7 @@ function tank_damage_think() {
     self.isstunned = 0;
     self.var_b61a6415 = 0;
     self.var_cff05bbd = 0;
-    self.var_ce904ce = &tank_hacked_health_update;
+    self.hackedhealthupdatecallback = &tank_hacked_health_update;
     self.hackedhealth = killstreak_bundles::get_hacked_health("tank_robot");
     low_health = 0;
     self.damagetaken = 0;

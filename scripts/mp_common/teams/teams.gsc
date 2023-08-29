@@ -39,10 +39,10 @@ function init() {
     level.teambalance = getdvarint(#"scr_teambalance", 0);
     level.teambalancetimer = 0;
     level.timeplayedcap = getdvarint(#"scr_timeplayedcap", 1800);
-    level.var_76f0b28e = [];
+    level.freeplayers = [];
     if (level.teambased) {
-        level.var_9e8d665e = [];
-        level.var_8ce92069 = [];
+        level.alliesplayers = [];
+        level.axisplayers = [];
         callback::on_connect(&on_player_connect);
         callback::on_joined_team(&on_joined_team);
         callback::on_joined_spectate(&on_joined_spectators);

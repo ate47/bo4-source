@@ -237,7 +237,7 @@ function initialize_match_stats() {
 // Params 1, eflags: 0x40
 // Checksum 0xce15dbcc, Offset: 0xc80
 // Size: 0xa4
-function event<player_challengecomplete> codecallback_challengecomplete(eventstruct) {
+function event_handler[player_challengecomplete] codecallback_challengecomplete(eventstruct) {
     if (sessionmodeiscampaigngame()) {
         if (isdefined(self.challenge_callback_cp)) {
             [[ self.challenge_callback_cp ]](eventstruct.reward, eventstruct.max, eventstruct.row, eventstruct.table_number, eventstruct.challenge_type, eventstruct.item_index, eventstruct.challenge_index);
@@ -338,7 +338,7 @@ function challenge_complete(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x882e0fa4, Offset: 0x13d8
 // Size: 0x164
-function event<player_gunchallengecomplete> codecallback_gunchallengecomplete(eventstruct) {
+function event_handler[player_gunchallengecomplete] codecallback_gunchallengecomplete(eventstruct) {
     rewardxp = eventstruct.reward;
     attachmentindex = eventstruct.attachment_index;
     itemindex = eventstruct.item_index;

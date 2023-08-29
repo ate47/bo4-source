@@ -50,7 +50,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x43762464, Offset: 0x770
 // Size: 0xac6
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     util::registerroundswitch(0, 9);
     util::registertimelimit(0, 1440);
@@ -110,7 +110,7 @@ function event<gametype_init> main(eventstruct) {
     level.timePausesWhenInZone = getgametypesetting(#"timePausesWhenInZone");
     level.var_3e14d8dd = getgametypesetting(#"bountybagomoneymoney");
     level.var_b2a8558a = level.var_3e14d8dd;
-    level.var_2b8c785f = getgametypesetting(#"hash_4a392638abf35991");
+    level.laststandhealth = getgametypesetting(#"laststandhealth");
     level.lastStandTimer = getgametypesetting(#"lastStandTimer");
     level.var_aad2ad58 = getgametypesetting(#"hash_4462b9c231538fc9");
     if (level.var_aad2ad58) {
@@ -169,7 +169,7 @@ function private onconnect() {
     waitframe(1);
     if (!isdefined(self.pers[#"money"])) {
         self.pers[#"money"] = level.var_6fb8c585;
-        self.pers[#"hash_3b82407ba7ff9bc3"] = 0;
+        self.pers[#"money_earned"] = 0;
         if (game.roundsplayed > 0) {
             var_ea8ca56d = 0;
             var_69c2bc0d = 0;
@@ -177,12 +177,12 @@ function private onconnect() {
                 if (player == self) {
                     continue;
                 }
-                if (!isdefined(player.pers[#"hash_3b82407ba7ff9bc3"])) {
+                if (!isdefined(player.pers[#"money_earned"])) {
                     continue;
                 }
                 if (player.team == self.team) {
                     var_ea8ca56d++;
-                    var_69c2bc0d = var_69c2bc0d + player.pers[#"hash_3b82407ba7ff9bc3"];
+                    var_69c2bc0d = var_69c2bc0d + player.pers[#"money_earned"];
                 }
             }
             if (var_ea8ca56d) {
@@ -276,7 +276,7 @@ function private onstartgametype() {
         [[ level._setteamscore ]](#"allies", game.stat[#"roundswon"][#"allies"]);
         [[ level._setteamscore ]](#"axis", game.stat[#"roundswon"][#"axis"]);
     }
-    laststand_mp::function_414115a0(level.lastStandTimer, level.var_2b8c785f);
+    laststand_mp::function_414115a0(level.lastStandTimer, level.laststandhealth);
     level.var_4cfc17cc = struct::get_script_bundle("killstreak", #"hash_156aacd529965ba1");
     function_fb6f71d5();
     function_9f5ae64d();
@@ -318,7 +318,7 @@ function private function_95002a59(attacker, victim, inflictor, weapon, meansofd
         return;
     }
     var_e9d49a33 = 0;
-    self notify(#"hash_2ce4de45160de27");
+    self notify(#"minigame_laststand");
     if (isdefined(weapon) && killstreaks::is_killstreak_weapon(weapon)) {
         var_e9d49a33 = 1;
     }
@@ -523,7 +523,7 @@ function private function_acf3ff19() {
                     level.timerpaused = 1;
                 }
             } else if (level.timerpaused) {
-                function_8984d8eb();
+                resume_time();
                 level.timerpaused = 0;
             }
         }
@@ -819,9 +819,9 @@ function private function_9698aa74(winner) {
         }
         if (!player laststand_mp::is_cheating()) {
             if (player.team == winner) {
-                player scoreevents::processscoreevent(#"hash_2a0165f111a241cc", player);
+                player scoreevents::processscoreevent(#"round_won", player);
             } else {
-                player scoreevents::processscoreevent(#"hash_bbaf3beb0339a1a", player);
+                player scoreevents::processscoreevent(#"round_lost", player);
             }
         }
     }
@@ -962,12 +962,12 @@ function private function_7f8c4043() {
         var_1c8f5a97[0].origin = getclosestpointonnavmesh(mapcenter, 256, 32);
     } else if (var_1c8f5a97.size > 1) {
         if (isdefined(game.var_46ffd493)) {
-            var_f704c15e = 2147483647;
+            closestdist = 2147483647;
             closestindex = -1;
             for (i = 0; i < var_1c8f5a97.size; i++) {
                 dist = distancesquared(game.var_46ffd493, var_1c8f5a97[i].origin);
-                if (dist < var_f704c15e) {
-                    var_f704c15e = dist;
+                if (dist < closestdist) {
+                    closestdist = dist;
                     closestindex = i;
                 }
             }
@@ -975,12 +975,12 @@ function private function_7f8c4043() {
                 arrayremoveindex(var_1c8f5a97, closestindex);
             }
         }
-        var_f704c15e = 2147483647;
+        closestdist = 2147483647;
         closestindex = -1;
         for (i = 0; i < var_1c8f5a97.size; i++) {
             dist = distancesquared(level.var_7e7897b8.origin, var_1c8f5a97[i].origin);
-            if (dist < var_f704c15e) {
-                var_f704c15e = dist;
+            if (dist < closestdist) {
+                closestdist = dist;
                 closestindex = i;
             }
         }
@@ -1731,8 +1731,8 @@ function function_3a77006e(amount, reason) {
         return;
     }
     self.pers[#"money"] = self.pers[#"money"] + amount;
-    self.pers[#"hash_3b82407ba7ff9bc3"] = self.pers[#"hash_3b82407ba7ff9bc3"] + amount;
-    [[ level._setplayerscore ]](self, self.pers[#"hash_3b82407ba7ff9bc3"]);
+    self.pers[#"money_earned"] = self.pers[#"money_earned"] + amount;
+    [[ level._setplayerscore ]](self, self.pers[#"money_earned"]);
     self clientfield::set_to_player("bountyMoney", self.pers[#"money"]);
     bb::function_95a5b5c2(reason, "", self.team, self.origin, self);
 }
@@ -1752,7 +1752,7 @@ function pause_time() {
 // Params 0, eflags: 0x0
 // Checksum 0x601cdd99, Offset: 0x7820
 // Size: 0x52
-function function_8984d8eb() {
+function resume_time() {
     if (level.timePausesWhenInZone && isdefined(level.timerpaused) && level.timerpaused) {
         globallogic_utils::resumetimer();
         level.timerpaused = 0;

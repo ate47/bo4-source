@@ -391,7 +391,7 @@ function setup_callbacks() {
     level.onforfeit = &globallogic_defaults::default_onforfeit;
     level.ontimelimit = &globallogic_defaults::default_ontimelimit;
     level.onscorelimit = &globallogic_defaults::default_onscorelimit;
-    level.var_80fb9b43 = &globallogic_defaults::default_onroundscorelimit;
+    level.onroundscorelimit = &globallogic_defaults::default_onroundscorelimit;
     level.onalivecountchange = &globallogic_defaults::default_onalivecountchange;
     level.ondeadevent = undefined;
     level.ononeleftevent = &globallogic_defaults::default_ononeleftevent;
@@ -406,7 +406,7 @@ function setup_callbacks() {
     level._setplayerscore = &globallogic_score::_setplayerscore;
     level._getteamscore = &globallogic_score::_getteamscore;
     level._getplayerscore = &globallogic_score::_getplayerscore;
-    level.var_5096a4fd = &globallogic_score::resetplayerscorechainandmomentum;
+    level.resetplayerscorestreaks = &globallogic_score::resetplayerscorechainandmomentum;
     level.onprecachegametype = &blank;
     level.onstartgametype = &blank;
     level.onplayerconnect = &blank;
@@ -2569,7 +2569,7 @@ function checkroundscorelimit() {
             return 0;
         }
     }
-    [[ level.var_80fb9b43 ]]();
+    [[ level.onroundscorelimit ]]();
 }
 
 // Namespace globallogic/globallogic
@@ -3268,8 +3268,8 @@ function startgame() {
     level.playabletimerstopped = 0;
     gamestate::set_state("pregame");
     function_8111babb();
-    if (isdefined(level.var_f6d346db)) {
-        [[ level.var_f6d346db ]]();
+    if (isdefined(level.custom_prematch_period)) {
+        [[ level.custom_prematch_period ]]();
     } else {
         prematchperiod();
     }
@@ -3437,8 +3437,8 @@ function prematchperiod() {
 // Size: 0x16c
 function graceperiod() {
     level endon(#"game_ended");
-    if (isdefined(level.var_318d245e)) {
-        [[ level.var_318d245e ]]();
+    if (isdefined(level.graceperiodfunc)) {
+        [[ level.graceperiodfunc ]]();
     } else {
         wait(level.graceperiod);
     }
@@ -3569,7 +3569,7 @@ function function_b9b7618() {
         game.gamestarted = 1;
         game.totalkills = 0;
         foreach (team, _ in level.teams) {
-            if (!isdefined(game.var_ccd916b0)) {
+            if (!isdefined(game.migratedhost)) {
                 game.stat[#"teamscores"][team] = 0;
             }
             game.teamsuddendeath[team] = 0;

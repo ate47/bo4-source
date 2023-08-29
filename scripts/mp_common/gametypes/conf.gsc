@@ -21,7 +21,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x6837875, Offset: 0x158
 // Size: 0x26c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     util::registertimelimit(0, 1440);
     util::registerscorelimit(0, 50000);
@@ -103,10 +103,10 @@ function onuse(player) {
     } else {
         /#
             /#
-                assert(isdefined(player.var_d6610c31));
+                assert(isdefined(player.lastkillconfirmedtime));
             #/
             /#
-                assert(isdefined(player.var_26eb86ef));
+                assert(isdefined(player.lastkillconfirmedcount));
             #/
         #/
         player.pers[#"killsconfirmed"]++;
@@ -114,16 +114,16 @@ function onuse(player) {
         player globallogic_score::giveteamscoreforobjective(player.team, level.teamScorePerKillConfirmed);
         if (!tacinsertboost) {
             currenttime = gettime();
-            if (player.var_d6610c31 + 4000 > currenttime) {
-                player.var_26eb86ef++;
-                if (player.var_26eb86ef >= 3) {
-                    scoreevents::processscoreevent(#"hash_72c5b3896c4a8809", player, undefined, undefined);
-                    player.var_26eb86ef = 0;
+            if (player.lastkillconfirmedtime + 4000 > currenttime) {
+                player.lastkillconfirmedcount++;
+                if (player.lastkillconfirmedcount >= 3) {
+                    scoreevents::processscoreevent(#"kill_confirmed_multi", player, undefined, undefined);
+                    player.lastkillconfirmedcount = 0;
                 }
             } else {
-                player.var_26eb86ef = 1;
+                player.lastkillconfirmedcount = 1;
             }
-            player.var_d6610c31 = currenttime;
+            player.lastkillconfirmedtime = currenttime;
         }
     }
 }
@@ -137,8 +137,8 @@ function onspawnplayer(predictedspawn) {
     if (level.usestartspawns && !level.ingraceperiod) {
         level.usestartspawns = 0;
     }
-    self.var_d6610c31 = 0;
-    self.var_26eb86ef = 0;
+    self.lastkillconfirmedtime = 0;
+    self.lastkillconfirmedcount = 0;
     spawning::onspawnplayer(predictedspawn);
     dogtags::on_spawn_player();
 }

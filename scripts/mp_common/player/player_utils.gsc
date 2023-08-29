@@ -29,8 +29,8 @@ function figure_out_friendly_fire(victim, attacker) {
             return 2;
         }
     }
-    if (isdefined(level.var_2e0d65f)) {
-        return [[ level.var_2e0d65f ]](victim);
+    if (isdefined(level.figure_out_gametype_friendly_fire)) {
+        return [[ level.figure_out_gametype_friendly_fire ]](victim);
     }
     return level.friendlyfire;
 }

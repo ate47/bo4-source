@@ -173,8 +173,8 @@ function fizzle(attacker) {
     playfx(level._effect[#"tacticalinsertionfizzle"], self.origin);
     self playsound(#"dst_tac_insert_break");
     if (isdefined(attacker) && attacker != self.owner) {
-        if (isdefined(level.var_8acef0e6)) {
-            self.owner [[ level.var_8acef0e6 ]]("tact_destroyed", "item_destroyed");
+        if (isdefined(level.globallogic_audio_dialog_on_player_override)) {
+            self.owner [[ level.globallogic_audio_dialog_on_player_override ]]("tact_destroyed", "item_destroyed");
         }
     }
     self destroy_tactical_insertion(attacker);
@@ -270,8 +270,8 @@ function spawntacticalinsertion() {
             }
         }
         if (isdefined(attacker) && attacker != self) {
-            if (isdefined(level.var_8acef0e6)) {
-                self [[ level.var_8acef0e6 ]]("tact_destroyed", "item_destroyed");
+            if (isdefined(level.globallogic_audio_dialog_on_player_override)) {
+                self [[ level.globallogic_audio_dialog_on_player_override ]]("tact_destroyed", "item_destroyed");
             }
         }
         self.tacticalinsertion thread fizzle();
@@ -386,8 +386,8 @@ function tacticalinsertiondestroyedbytrophysystem(attacker, trophysystem) {
     if (isdefined(owner)) {
         owner endon(#"death", #"disconnect");
         waitframe(1);
-        if (isdefined(level.var_8acef0e6)) {
-            owner [[ level.var_8acef0e6 ]]("tact_destroyed", "item_destroyed");
+        if (isdefined(level.globallogic_audio_dialog_on_player_override)) {
+            owner [[ level.globallogic_audio_dialog_on_player_override ]]("tact_destroyed", "item_destroyed");
         }
     }
 }
@@ -396,7 +396,7 @@ function tacticalinsertiondestroyedbytrophysystem(attacker, trophysystem) {
 // Params 1, eflags: 0x40
 // Checksum 0xf6c26d00, Offset: 0x17d8
 // Size: 0xac
-function event<grenade_fire> function_73648468(eventstruct) {
+function event_handler[grenade_fire] function_73648468(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

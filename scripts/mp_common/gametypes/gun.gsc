@@ -26,7 +26,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x5d1de2eb, Offset: 0x318
 // Size: 0x10c4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     level.onstartgametype = &onstartgametype;
     level.onspawnplayer = &onspawnplayer;
@@ -37,105 +37,105 @@ function event<gametype_init> main(eventstruct) {
     callback::on_connect(&onconnect);
     globallogic_audio::set_leader_gametype_dialog("startGunGame", "hcSstartGunGame", "", "", "bbStartGunGame", "hcbbSstartGunGame");
     level.givecustomloadout = &givecustomloadout;
-    level.var_6c480499 = getgametypesetting(#"setbacks");
+    level.setbacksperdemotion = getgametypesetting(#"setbacks");
     level.inactivitykick = 120;
     level.var_f46d16f0 = 1;
     setdvar(#"hash_137c8b2b96ac6c72", 0.2);
     setdvar(#"compassradarpingfadetime", 0.75);
     globallogic_spawn::addsupportedspawnpointtype("gg");
-    level.var_4e727991 = [];
-    var_a807bb30 = getgametypesetting(#"gunselection");
-    if (var_a807bb30 == 4) {
-        var_a807bb30 = randomintrange(0, 4);
+    level.gunprogression = [];
+    gunlist = getgametypesetting(#"gunselection");
+    if (gunlist == 4) {
+        gunlist = randomintrange(0, 4);
     }
-    switch (var_a807bb30) {
+    switch (gunlist) {
     case 0:
-        function_5f3fa9d1(#"pistol_standard_t8");
-        function_5f3fa9d1(#"pistol_burst_t8", "grip");
-        function_5f3fa9d1(#"shotgun_semiauto_t8");
-        function_5f3fa9d1(#"shotgun_pump_t8", "extbarrel", "quickdraw");
-        function_5f3fa9d1(#"smg_fastfire_t8", "steadyaim", "extclip");
-        function_5f3fa9d1(#"smg_accurate_t8", "extbarrel", "extbarrel2");
-        function_5f3fa9d1(#"smg_handling_t8", "stalker", "quickdraw");
-        function_5f3fa9d1(#"ar_accurate_t8", "grip", "grip2", "reflex");
-        function_5f3fa9d1(#"ar_fastfire_t8", "elo", "steadyaim", "stalker");
-        function_5f3fa9d1(#"ar_damage_t8", "reflex", "extbarrel");
-        function_5f3fa9d1(#"ar_stealth_t8", "elo", "suppressed");
-        function_5f3fa9d1(#"tr_midburst_t8", "quickdraw", "grip");
-        function_5f3fa9d1(#"tr_powersemi_t8", "uber");
-        function_5f3fa9d1(#"lmg_standard_t8", "stalker", "reflex");
-        function_5f3fa9d1(#"lmg_spray_t8", "rf", "uber");
-        function_5f3fa9d1(#"sniper_powersemi_t8", "is");
-        function_5f3fa9d1(#"sniper_quickscope_t8", "uber");
-        function_5f3fa9d1(#"sniper_powerbolt_t8", "adsreload", "mms");
-        function_5f3fa9d1(#"launcher_standard_t8", "damage", "supply");
-        function_5f3fa9d1(#"special_ballisticknife_t8_dw");
+        addguntoprogression(#"pistol_standard_t8");
+        addguntoprogression(#"pistol_burst_t8", "grip");
+        addguntoprogression(#"shotgun_semiauto_t8");
+        addguntoprogression(#"shotgun_pump_t8", "extbarrel", "quickdraw");
+        addguntoprogression(#"smg_fastfire_t8", "steadyaim", "extclip");
+        addguntoprogression(#"smg_accurate_t8", "extbarrel", "extbarrel2");
+        addguntoprogression(#"smg_handling_t8", "stalker", "quickdraw");
+        addguntoprogression(#"ar_accurate_t8", "grip", "grip2", "reflex");
+        addguntoprogression(#"ar_fastfire_t8", "elo", "steadyaim", "stalker");
+        addguntoprogression(#"ar_damage_t8", "reflex", "extbarrel");
+        addguntoprogression(#"ar_stealth_t8", "elo", "suppressed");
+        addguntoprogression(#"tr_midburst_t8", "quickdraw", "grip");
+        addguntoprogression(#"tr_powersemi_t8", "uber");
+        addguntoprogression(#"lmg_standard_t8", "stalker", "reflex");
+        addguntoprogression(#"lmg_spray_t8", "rf", "uber");
+        addguntoprogression(#"sniper_powersemi_t8", "is");
+        addguntoprogression(#"sniper_quickscope_t8", "uber");
+        addguntoprogression(#"sniper_powerbolt_t8", "adsreload", "mms");
+        addguntoprogression(#"launcher_standard_t8", "damage", "supply");
+        addguntoprogression(#"special_ballisticknife_t8_dw");
         break;
     case 1:
-        function_5f3fa9d1(#"pistol_revolver_t8");
-        function_5f3fa9d1(#"pistol_standard_t8", "suppressed");
-        function_5f3fa9d1(#"pistol_burst_t8", "elo", "quickdraw");
-        function_5f3fa9d1(#"shotgun_pump_t8", "elo", "quickdraw");
-        function_5f3fa9d1(#"shotgun_semiauto_t8", "steadyaim");
-        function_5f3fa9d1(#"smg_standard_t8", "mixclip", "reflex");
-        function_5f3fa9d1(#"smg_capacity_t8", "grip");
-        function_5f3fa9d1(#"smg_fastfire_t8", "extclip", "uber");
-        function_5f3fa9d1(#"smg_accurate_t8", "suppressed");
-        function_5f3fa9d1(#"smg_handling_t8", "dw");
-        function_5f3fa9d1(#"ar_fastfire_t8", "elo", "uber");
-        function_5f3fa9d1(#"ar_modular_t8", "extclip", "grip");
-        function_5f3fa9d1(#"ar_stealth_t8", "uber");
-        function_5f3fa9d1(#"ar_damage_t8", "extbarrel");
-        function_5f3fa9d1(#"tr_midburst_t8", "elo");
-        function_5f3fa9d1(#"lmg_standard_t8", "quickdraw");
-        function_5f3fa9d1(#"lmg_spray_t8", "uber");
-        function_5f3fa9d1(#"sniper_quickscope_t8", "is", "steadyaim");
-        function_5f3fa9d1(#"launcher_standard_t8", "damage");
-        function_5f3fa9d1(#"special_ballisticknife_t8_dw");
+        addguntoprogression(#"pistol_revolver_t8");
+        addguntoprogression(#"pistol_standard_t8", "suppressed");
+        addguntoprogression(#"pistol_burst_t8", "elo", "quickdraw");
+        addguntoprogression(#"shotgun_pump_t8", "elo", "quickdraw");
+        addguntoprogression(#"shotgun_semiauto_t8", "steadyaim");
+        addguntoprogression(#"smg_standard_t8", "mixclip", "reflex");
+        addguntoprogression(#"smg_capacity_t8", "grip");
+        addguntoprogression(#"smg_fastfire_t8", "extclip", "uber");
+        addguntoprogression(#"smg_accurate_t8", "suppressed");
+        addguntoprogression(#"smg_handling_t8", "dw");
+        addguntoprogression(#"ar_fastfire_t8", "elo", "uber");
+        addguntoprogression(#"ar_modular_t8", "extclip", "grip");
+        addguntoprogression(#"ar_stealth_t8", "uber");
+        addguntoprogression(#"ar_damage_t8", "extbarrel");
+        addguntoprogression(#"tr_midburst_t8", "elo");
+        addguntoprogression(#"lmg_standard_t8", "quickdraw");
+        addguntoprogression(#"lmg_spray_t8", "uber");
+        addguntoprogression(#"sniper_quickscope_t8", "is", "steadyaim");
+        addguntoprogression(#"launcher_standard_t8", "damage");
+        addguntoprogression(#"special_ballisticknife_t8_dw");
         break;
     case 2:
-        function_5f3fa9d1(#"pistol_revolver_t8", "uber");
-        function_5f3fa9d1(#"smg_standard_t8", "ir", "reflex");
-        function_5f3fa9d1(#"smg_accurate_t8", "uber", "acog");
-        function_5f3fa9d1(#"ar_modular_t8", "extclip", "holo");
-        function_5f3fa9d1(#"ar_accurate_t8", "dualoptic", "grip");
-        function_5f3fa9d1(#"ar_fastfire_t8", "holo", "uber");
-        function_5f3fa9d1(#"ar_damage_t8", "mms", "extbarrel");
-        function_5f3fa9d1(#"ar_stealth_t8", "mms", "extbarrel");
-        function_5f3fa9d1(#"tr_longburst_t8", "acog", "quickdraw", "quickdraw2");
-        function_5f3fa9d1(#"tr_midburst_t8", "ir");
-        function_5f3fa9d1(#"tr_powersemi_t8", "dualoptic");
-        function_5f3fa9d1(#"lmg_standard_t8", "ir");
-        function_5f3fa9d1(#"lmg_heavy_t8", "dualoptic", "uber");
-        function_5f3fa9d1(#"lmg_spray_t8", "ir");
-        function_5f3fa9d1(#"sniper_fastrechamber_t8", "uber");
-        function_5f3fa9d1(#"sniper_quickscope_t8", "swayreduc");
-        function_5f3fa9d1(#"sniper_powersemi_t8", "ir");
-        function_5f3fa9d1(#"sniper_powerbolt_t8", "adsreload", "swayreduc");
-        function_5f3fa9d1(#"launcher_standard_t8", "damage");
-        function_5f3fa9d1(#"special_ballisticknife_t8_dw");
+        addguntoprogression(#"pistol_revolver_t8", "uber");
+        addguntoprogression(#"smg_standard_t8", "ir", "reflex");
+        addguntoprogression(#"smg_accurate_t8", "uber", "acog");
+        addguntoprogression(#"ar_modular_t8", "extclip", "holo");
+        addguntoprogression(#"ar_accurate_t8", "dualoptic", "grip");
+        addguntoprogression(#"ar_fastfire_t8", "holo", "uber");
+        addguntoprogression(#"ar_damage_t8", "mms", "extbarrel");
+        addguntoprogression(#"ar_stealth_t8", "mms", "extbarrel");
+        addguntoprogression(#"tr_longburst_t8", "acog", "quickdraw", "quickdraw2");
+        addguntoprogression(#"tr_midburst_t8", "ir");
+        addguntoprogression(#"tr_powersemi_t8", "dualoptic");
+        addguntoprogression(#"lmg_standard_t8", "ir");
+        addguntoprogression(#"lmg_heavy_t8", "dualoptic", "uber");
+        addguntoprogression(#"lmg_spray_t8", "ir");
+        addguntoprogression(#"sniper_fastrechamber_t8", "uber");
+        addguntoprogression(#"sniper_quickscope_t8", "swayreduc");
+        addguntoprogression(#"sniper_powersemi_t8", "ir");
+        addguntoprogression(#"sniper_powerbolt_t8", "adsreload", "swayreduc");
+        addguntoprogression(#"launcher_standard_t8", "damage");
+        addguntoprogression(#"special_ballisticknife_t8_dw");
         break;
     case 3:
-        function_5f3fa9d1(#"pistol_fullauto_t8", "reflex", "grip", "fastreload");
-        function_5f3fa9d1(#"pistol_revolver_t8");
-        function_5f3fa9d1(#"shotgun_fullauto_t8", "grip", "reflex");
-        function_5f3fa9d1(#"smg_folding_t8", "elo", "grip");
-        function_5f3fa9d1(#"smg_capacity_t8", "grip");
-        function_5f3fa9d1(#"smg_fastburst_t8", "reflex", "steadyaim");
-        function_5f3fa9d1(#"ar_standard_t8", "quickdraw", "fastreload");
-        function_5f3fa9d1(#"ar_stealth_t8", "elo", "uber");
-        function_5f3fa9d1(#"ar_damage_t8", "holo", "extbarrel");
-        function_5f3fa9d1(#"ar_fastfire_t8", "elo", "uber");
-        function_5f3fa9d1(#"ar_accurate_t8", "holo", "extbarrel");
-        function_5f3fa9d1(#"tr_longburst_t8", "quickdraw", "quickdraw2");
-        function_5f3fa9d1(#"tr_powersemi_t8", "fastreload");
-        function_5f3fa9d1(#"lmg_standard_t8", "ir");
-        function_5f3fa9d1(#"lmg_heavy_t8", "holo", "uber");
-        function_5f3fa9d1(#"sniper_powersemi_t8", "is");
-        function_5f3fa9d1(#"sniper_quickscope_t8", "steadyaim");
-        function_5f3fa9d1(#"sniper_powerbolt_t8", "adsreload", "swayreduc");
-        function_5f3fa9d1(#"launcher_standard_t8", "damage");
-        function_5f3fa9d1(#"special_ballisticknife_t8_dw");
+        addguntoprogression(#"pistol_fullauto_t8", "reflex", "grip", "fastreload");
+        addguntoprogression(#"pistol_revolver_t8");
+        addguntoprogression(#"shotgun_fullauto_t8", "grip", "reflex");
+        addguntoprogression(#"smg_folding_t8", "elo", "grip");
+        addguntoprogression(#"smg_capacity_t8", "grip");
+        addguntoprogression(#"smg_fastburst_t8", "reflex", "steadyaim");
+        addguntoprogression(#"ar_standard_t8", "quickdraw", "fastreload");
+        addguntoprogression(#"ar_stealth_t8", "elo", "uber");
+        addguntoprogression(#"ar_damage_t8", "holo", "extbarrel");
+        addguntoprogression(#"ar_fastfire_t8", "elo", "uber");
+        addguntoprogression(#"ar_accurate_t8", "holo", "extbarrel");
+        addguntoprogression(#"tr_longburst_t8", "quickdraw", "quickdraw2");
+        addguntoprogression(#"tr_powersemi_t8", "fastreload");
+        addguntoprogression(#"lmg_standard_t8", "ir");
+        addguntoprogression(#"lmg_heavy_t8", "holo", "uber");
+        addguntoprogression(#"sniper_powersemi_t8", "is");
+        addguntoprogression(#"sniper_quickscope_t8", "steadyaim");
+        addguntoprogression(#"sniper_powerbolt_t8", "adsreload", "swayreduc");
+        addguntoprogression(#"launcher_standard_t8", "damage");
+        addguntoprogression(#"special_ballisticknife_t8_dw");
         break;
     }
     util::registertimelimit(0, 1440);
@@ -170,8 +170,8 @@ function onconnect() {
 // Checksum 0x9ed709bb, Offset: 0x14e0
 // Size: 0x8c
 function onstartgametype() {
-    level.var_da82e6d4 = rank::getscoreinfovalue("kill_gun");
-    util::registerscorelimit(level.var_4e727991.size * level.var_da82e6d4, level.var_4e727991.size * level.var_da82e6d4);
+    level.gungamekillscore = rank::getscoreinfovalue("kill_gun");
+    util::registerscorelimit(level.gunprogression.size * level.gungamekillscore, level.gunprogression.size * level.gungamekillscore);
     level.displayroundendtext = 0;
     globallogic_spawn::addspawns();
 }
@@ -210,7 +210,7 @@ function onspawnplayer(predictedspawn) {
         level.usestartspawns = 0;
     }
     spawning::onspawnplayer(predictedspawn);
-    self thread function_b7a266c8();
+    self thread infiniteammo();
     self thread inactivitykick();
 }
 
@@ -221,26 +221,26 @@ function onspawnplayer(predictedspawn) {
 function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
     level.usestartspawns = 0;
     if (smeansofdeath == "MOD_SUICIDE" || smeansofdeath == "MOD_TRIGGER_HURT") {
-        self thread function_ed2c6050();
+        self thread demoteplayer();
         return;
     }
     if (isdefined(attacker) && isplayer(attacker)) {
         if (attacker == self) {
-            self thread function_ed2c6050(attacker);
+            self thread demoteplayer(attacker);
             return;
         }
-        if (isdefined(attacker.var_6f5a82a) && attacker.var_6f5a82a + 3000 > gettime()) {
-            scoreevents::processscoreevent(#"hash_3eed4672b9e50444", attacker, self, weapon);
+        if (isdefined(attacker.lastpromotiontime) && attacker.lastpromotiontime + 3000 > gettime()) {
+            scoreevents::processscoreevent(#"kill_in_3_seconds_gun", attacker, self, weapon);
         }
         if (weapon_utils::ismeleemod(smeansofdeath)) {
-            scoreevents::processscoreevent(#"hash_62b00603fb96ce71", attacker, self, weapon);
+            scoreevents::processscoreevent(#"humiliation_gun", attacker, self, weapon);
             if (globallogic_score::gethighestscoringplayer() === self) {
-                scoreevents::processscoreevent(#"hash_293752851784df04", attacker, self, weapon);
+                scoreevents::processscoreevent(#"melee_leader_gun", attacker, self, weapon);
             }
-            self thread function_ed2c6050(attacker);
+            self thread demoteplayer(attacker);
         }
         if (smeansofdeath != "MOD_MELEE_WEAPON_BUTT") {
-            attacker thread function_e53834b2(weapon);
+            attacker thread promoteplayer(weapon);
         }
     }
 }
@@ -258,7 +258,7 @@ function onendgame(var_c1e98979) {
 // Params 9, eflags: 0x1 linked
 // Checksum 0xd7953c95, Offset: 0x19d8
 // Size: 0x16a
-function function_5f3fa9d1(weaponname, attachment1, attachment2, attachment3, attachment4, attachment5, attachment6, attachment7, var_d7d306d5) {
+function addguntoprogression(weaponname, attachment1, attachment2, attachment3, attachment4, attachment5, attachment6, attachment7, attachment8) {
     attachments = [];
     if (isdefined(attachment1)) {
         attachments[attachments.size] = attachment1;
@@ -281,11 +281,11 @@ function function_5f3fa9d1(weaponname, attachment1, attachment2, attachment3, at
     if (isdefined(attachment7)) {
         attachments[attachments.size] = attachment7;
     }
-    if (isdefined(var_d7d306d5)) {
-        attachments[attachments.size] = var_d7d306d5;
+    if (isdefined(attachment8)) {
+        attachments[attachments.size] = attachment8;
     }
     weapon = getweapon(weaponname, attachments);
-    level.var_4e727991[level.var_4e727991.size] = weapon;
+    level.gunprogression[level.gunprogression.size] = weapon;
 }
 
 // Namespace gun/gun
@@ -320,10 +320,10 @@ function givecustomloadout(takeoldweapon = 0) {
         }
         self thread takeoldweapon(oldweapon);
     }
-    if (!isdefined(self.var_91e03d9e)) {
-        self.var_91e03d9e = 0;
+    if (!isdefined(self.gunprogress)) {
+        self.gunprogress = 0;
     }
-    currentweapon = level.var_4e727991[self.var_91e03d9e];
+    currentweapon = level.gunprogression[self.gunprogress];
     self giveweapon(currentweapon);
     self switchtoweapon(currentweapon);
     if (self.firstspawn !== 0) {
@@ -354,23 +354,23 @@ function givecustomloadout(takeoldweapon = 0) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x303a1678, Offset: 0x1fd8
 // Size: 0x19e
-function function_e53834b2(var_aa415589) {
-    self endon(#"disconnect", #"hash_7db8ed2ad531c87d");
+function promoteplayer(weaponused) {
+    self endon(#"disconnect", #"cancel_promotion");
     level endon(#"game_ended");
     waitframe(1);
-    if (var_aa415589.rootweapon == level.var_4e727991[self.var_91e03d9e].rootweapon || isdefined(level.var_4e727991[self.var_91e03d9e].dualwieldweapon) && level.var_4e727991[self.var_91e03d9e].dualwieldweapon.rootweapon == var_aa415589.rootweapon) {
-        if (self.var_91e03d9e < level.var_4e727991.size - 1) {
-            self.var_91e03d9e++;
+    if (weaponused.rootweapon == level.gunprogression[self.gunprogress].rootweapon || isdefined(level.gunprogression[self.gunprogress].dualwieldweapon) && level.gunprogression[self.gunprogress].dualwieldweapon.rootweapon == weaponused.rootweapon) {
+        if (self.gunprogress < level.gunprogression.size - 1) {
+            self.gunprogress++;
             if (isalive(self)) {
                 self thread givecustomloadout(1);
             }
         }
         pointstowin = self.pers[#"pointstowin"];
         if (pointstowin < level.scorelimit) {
-            scoreevents::processscoreevent(#"hash_795a2dd5e3a84200", self, undefined, var_aa415589);
-            self globallogic_score::givepointstowin(level.var_da82e6d4);
+            scoreevents::processscoreevent(#"kill_gun", self, undefined, weaponused);
+            self globallogic_score::givepointstowin(level.gungamekillscore);
         }
-        self.var_6f5a82a = gettime();
+        self.lastpromotiontime = gettime();
     }
 }
 
@@ -378,26 +378,26 @@ function function_e53834b2(var_aa415589) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xd0763058, Offset: 0x2180
 // Size: 0x23c
-function function_ed2c6050(attacker) {
+function demoteplayer(attacker) {
     self endon(#"disconnect");
-    self notify(#"hash_7db8ed2ad531c87d");
-    var_75ab01aa = self.var_91e03d9e;
-    for (i = 0; i < level.var_6c480499; i++) {
-        if (self.var_91e03d9e <= 0) {
+    self notify(#"cancel_promotion");
+    currentgunprogress = self.gunprogress;
+    for (i = 0; i < level.setbacksperdemotion; i++) {
+        if (self.gunprogress <= 0) {
             break;
         }
-        self globallogic_score::givepointstowin(level.var_da82e6d4 * -1);
-        globallogic_score::_setplayerscore(self, self.score - level.var_da82e6d4);
-        self.var_91e03d9e--;
+        self globallogic_score::givepointstowin(level.gungamekillscore * -1);
+        globallogic_score::_setplayerscore(self, self.score - level.gungamekillscore);
+        self.gunprogress--;
     }
-    if (var_75ab01aa != self.var_91e03d9e && isalive(self)) {
+    if (currentgunprogress != self.gunprogress && isalive(self)) {
         self thread givecustomloadout(1);
     }
     if (isdefined(attacker)) {
-        self stats::function_bb7eedf0(#"hash_32e29284b36e4d45", 1);
+        self stats::function_bb7eedf0(#"humiliate_attacker", 1);
         attacker recordgameevent("capture");
     }
-    self stats::function_bb7eedf0(#"hash_74e72b5f43ad59be", 1);
+    self stats::function_bb7eedf0(#"humiliate_victim", 1);
     self.pers[#"humiliated"]++;
     self.humiliated = self.pers[#"humiliated"];
     self recordgameevent("return");
@@ -409,7 +409,7 @@ function function_ed2c6050(attacker) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4322e6d7, Offset: 0x23c8
 // Size: 0x70
-function function_b7a266c8() {
+function infiniteammo() {
     self endon(#"death", #"disconnect");
     while (1) {
         wait(0.1);
@@ -423,22 +423,22 @@ function function_b7a266c8() {
 // Checksum 0xa0fee671, Offset: 0x2440
 // Size: 0x10a
 function function_486a8395() {
-    var_6399b7fa = 3;
+    ruleweaponsleft = 3;
     /#
     #/
-    var_f67da88e = level.var_4e727991.size;
+    minweaponsleft = level.gunprogression.size;
     foreach (player in level.activeplayers) {
         if (!isdefined(player)) {
             continue;
         }
-        if (!isdefined(player.var_91e03d9e)) {
+        if (!isdefined(player.gunprogress)) {
             continue;
         }
-        var_496c57a9 = level.var_4e727991.size - player.var_91e03d9e;
-        if (var_f67da88e > var_496c57a9) {
-            var_f67da88e = var_496c57a9;
+        weaponsleft = level.gunprogression.size - player.gunprogress;
+        if (minweaponsleft > weaponsleft) {
+            minweaponsleft = weaponsleft;
         }
-        if (var_6399b7fa >= var_f67da88e) {
+        if (ruleweaponsleft >= minweaponsleft) {
             /#
             #/
             return 0;

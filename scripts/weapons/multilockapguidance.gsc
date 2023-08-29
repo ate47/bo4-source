@@ -78,7 +78,7 @@ function clearaptarget(weapon, whom) {
 // Params 1, eflags: 0x40
 // Checksum 0x5da9cf00, Offset: 0x3f8
 // Size: 0x118
-function event<missile_fire> function_bfb94991(eventstruct) {
+function event_handler[missile_fire] function_bfb94991(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

@@ -158,7 +158,7 @@ function on_player_revived(params) {
 // Params 0, eflags: 0x40
 // Checksum 0xa2d404a, Offset: 0x738
 // Size: 0x104
-function event<button_bit_actionslot_2_pressed> function_9b83de0f() {
+function event_handler[button_bit_actionslot_2_pressed] function_9b83de0f() {
     /#
         if (getdvarint(#"zm_bot_orders", 0) == 0) {
             return;

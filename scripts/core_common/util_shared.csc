@@ -173,7 +173,7 @@ function waittill_string(msg, ent) {
 // Params 1, eflags: 0x20
 // Checksum 0xdced80e1, Offset: 0x868
 // Size: 0x9c
-function waittill_multiple(vararg...) {
+function waittill_multiple(...) {
     s_tracker = spawnstruct();
     s_tracker._wait_count = 0;
     for (i = 0; i < vararg.size; i++) {
@@ -197,7 +197,7 @@ function waittill_either(msg1, msg2) {
 // Params 1, eflags: 0x20
 // Checksum 0xcc5573d9, Offset: 0x948
 // Size: 0x1c4
-function waittill_multiple_ents(vararg...) {
+function waittill_multiple_ents(...) {
     a_ents = [];
     a_notifies = [];
     for (i = 0; i < vararg.size; i++) {
@@ -331,7 +331,7 @@ function waittill_any_ents_two(ent1, string1, ent2, string2) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0x844e9b0f, Offset: 0xf00
 // Size: 0x3a
-function single_func(entity, func, vararg...) {
+function single_func(entity, func, ...) {
     return _single_func(entity, func, vararg);
 }
 
@@ -425,7 +425,7 @@ function _single_func(entity, func, a_vars) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xb3246877, Offset: 0x14d8
 // Size: 0x6e
-function _clean_up_arg_array(a_vars&) {
+function _clean_up_arg_array(&a_vars) {
     for (i = a_vars.size - 1; i >= 0; i--) {
         if (a_vars[i] === undefined) {
             arrayremoveindex(a_vars, i, 0);
@@ -662,7 +662,7 @@ function timer_wait(n_wait) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x9e21daf0, Offset: 0x1fd0
 // Size: 0x84
-function add_remove_list(a& = [], on_off) {
+function add_remove_list(&a = [], on_off) {
     if (on_off) {
         if (!isinarray(a, self)) {
             arrayinsert(a, self, a.size);
@@ -676,7 +676,7 @@ function add_remove_list(a& = [], on_off) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xaf63c87e, Offset: 0x2060
 // Size: 0x24
-function clean_deleted(array&) {
+function clean_deleted(&array) {
     arrayremovevalue(array, undefined);
 }
 
@@ -1024,7 +1024,7 @@ function note_elapsed_time(start_time, label = "unspecified") {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xec9c5d7c, Offset: 0x2e18
 // Size: 0x98
-function record_elapsed_time(start_time, elapsed_time_array&) {
+function record_elapsed_time(start_time, &elapsed_time_array) {
     elapsed_time = get_elapsed_time(start_time, getmicrosecondsraw());
     if (!isdefined(elapsed_time_array)) {
         elapsed_time_array = [];
@@ -1038,7 +1038,7 @@ function record_elapsed_time(start_time, elapsed_time_array&) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xa5f501ee, Offset: 0x2eb8
 // Size: 0x2c4
-function note_elapsed_times(elapsed_time_array&, label = "unspecified") {
+function note_elapsed_times(&elapsed_time_array, label = "unspecified") {
     /#
         if (!isarray(elapsed_time_array)) {
             return;
@@ -1410,10 +1410,10 @@ function button_held_think(which_button) {
         time_started = 0;
         while (1) {
             if (self._holding_button[which_button]) {
-                if (!self [[ level.var_3aa48dfc[which_button] ]]()) {
+                if (!self [[ level._button_funcs[which_button] ]]()) {
                     self._holding_button[which_button] = 0;
                 }
-            } else if (self [[ level.var_3aa48dfc[which_button] ]]()) {
+            } else if (self [[ level._button_funcs[which_button] ]]()) {
                 if (time_started == 0) {
                     time_started = gettime();
                 }
@@ -1434,9 +1434,9 @@ function button_held_think(which_button) {
 // Size: 0x56
 function init_button_wrappers() {
     /#
-        if (!isdefined(level.var_3aa48dfc)) {
-            level.var_3aa48dfc[4] = &up_button_pressed;
-            level.var_3aa48dfc[5] = &down_button_pressed;
+        if (!isdefined(level._button_funcs)) {
+            level._button_funcs[4] = &up_button_pressed;
+            level._button_funcs[5] = &down_button_pressed;
         }
     #/
 }
@@ -1549,7 +1549,7 @@ function function_16fb0a3b() {
 // Params 4, eflags: 0x21 linked
 // Checksum 0x3d618388, Offset: 0x42b8
 // Size: 0x17c
-function lerp_generic(localclientnum, duration, callback, vararg...) {
+function lerp_generic(localclientnum, duration, callback, ...) {
     starttime = getservertime(localclientnum);
     currenttime = starttime;
     elapsedtime = 0;

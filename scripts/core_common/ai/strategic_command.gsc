@@ -8,8 +8,8 @@
 #include scripts/core_common/bots/bot.gsc;
 #include scripts/core_common/ai_shared.gsc;
 #include scripts/core_common/ai/planner_squad.gsc;
-#include script_522aeb6ae906391e;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 
 #namespace strategic_command;
 
@@ -648,7 +648,7 @@ function private function_adb62fbb(breadcrumb, index) {
 // Params 4, eflags: 0x24
 // Checksum 0x6f4b725b, Offset: 0x32b8
 // Size: 0xdc
-function private function_15462dcd(pos, color, channel, vararg...) {
+function private function_15462dcd(pos, color, channel, ...) {
     /#
         /#
             recordstr = "<unknown string>";

@@ -138,7 +138,7 @@ function function_6b34141d() {
 // Params 1, eflags: 0x40
 // Checksum 0x79e469da, Offset: 0x9e0
 // Size: 0x132
-function event<weapon_change> function_edc4ebe8(eventstruct) {
+function event_handler[weapon_change] function_edc4ebe8(eventstruct) {
     if (!isdefined(self.var_ea1458aa)) {
         return;
     }
@@ -161,7 +161,7 @@ function event<weapon_change> function_edc4ebe8(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x8efa033d, Offset: 0xb20
 // Size: 0x32
-function event<offhand_fire> function_97023fdf(eventstruct) {
+function event_handler[offhand_fire] function_97023fdf(eventstruct) {
     if (!isdefined(self.var_ea1458aa)) {
         return;
     }
@@ -172,7 +172,7 @@ function event<offhand_fire> function_97023fdf(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x13adc00b, Offset: 0xb60
 // Size: 0x146
-function event<grenade_fire> function_4776caf4(eventstruct) {
+function event_handler[grenade_fire] function_4776caf4(eventstruct) {
     newweapon = eventstruct.weapon;
     if (isdefined(self.var_9cd2c51d)) {
         if (isdefined(level.var_ca4ce464) && level.var_ca4ce464[newweapon] === 1) {
@@ -351,7 +351,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
         var_fff76b4 = victim.var_b6672e47;
         totalenemies = countplayers(victim.team);
         victimentnum = victim getentitynumber();
-        var_3cd641b = var_6af452fc.var_e54b3c14;
+        var_3cd641b = var_6af452fc.class_num;
         if (!isdefined(self.var_ea1458aa)) {
             self.var_ea1458aa = {};
         }
@@ -1068,7 +1068,7 @@ function challengekills(data) {
         if (meansofdeath == #"mod_head_shot") {
             if (isdefined(victim.var_ea1458aa) && isdefined(victim.var_ea1458aa.attackerdamage)) {
                 var_d72bd991 = victim.var_ea1458aa.attackerdamage[player.clientid];
-                gear = player function_b958b70d(player.var_e54b3c14, "tacticalgear");
+                gear = player function_b958b70d(player.class_num, "tacticalgear");
                 if (gear === #"gear_armor" && isdefined(var_d72bd991)) {
                     if (var_d72bd991.var_d7bd6f9b === 1) {
                         player stats::function_dad108fa(#"hash_2ed3de647f5090f1", 1);
@@ -1327,7 +1327,7 @@ function challengekills(data) {
             player stats::function_dad108fa(#"kill_enemy_who_damaged_robot", 1);
         }
     }
-    var_46119dfa = player getloadoutitem(player.var_e54b3c14, "primarygrenadecount");
+    var_46119dfa = player getloadoutitem(player.class_num, "primarygrenadecount");
     if (var_46119dfa) {
         if (weapon.rootweapon.name == "hatchet" && inflictorchallenge_hatchettosscount <= 2) {
             player.challenge_hatchetkills++;
@@ -2176,7 +2176,7 @@ function function_2f462ffd(victim, weapon, inflictor, objective) {
         }
         if (isdefined(victim.var_ea1458aa)) {
             var_d72bd991 = victim.var_ea1458aa.attackerdamage[self.clientid];
-            gear = self function_b958b70d(var_d72bd991.var_e54b3c14, "tacticalgear");
+            gear = self function_b958b70d(var_d72bd991.class_num, "tacticalgear");
             if (gear == #"gear_medicalinjectiongun") {
                 if (var_d72bd991.var_46a82df0 === 1) {
                     self stats::function_dad108fa(#"hash_47c5c8af0f105c71", 1);

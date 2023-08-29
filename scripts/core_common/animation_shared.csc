@@ -203,7 +203,7 @@ function add_notetrack_func(funcname, func) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0xd5ed63f2, Offset: 0xea0
 // Size: 0x118
-function add_global_notetrack_handler(str_note, func, vararg...) {
+function add_global_notetrack_handler(str_note, func, ...) {
     if (!isdefined(level._animnotetrackhandlers)) {
         level._animnotetrackhandlers = [];
     }

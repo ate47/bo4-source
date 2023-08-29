@@ -8,14 +8,14 @@
 #include scripts/abilities/wz/gadgets/gadget_concertina_wire.gsc;
 #include scripts/abilities/gadgets/gadget_homunculus.gsc;
 #include scripts/abilities/gadgets/gadget_cymbal_monkey.gsc;
-#include script_35598499769dbb3d;
-#include script_3aa0f32b70d4f7cb;
-#include script_178024232e91b0a1;
-#include script_caf007e2a98afa2;
-#include script_4d85e8de54b02198;
-#include script_4bf952f6ba31bb17;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
 #include scripts/core_common/ai/zombie.gsc;
-#include script_489b835a247c990e;
+#include scripts/core_common/ai/archetype_locomotion_utility.gsc;
 #include script_3819e7a1427df6d2;
 #include scripts/core_common/values_shared.gsc;
 #include scripts/core_common/util_shared.gsc;
@@ -1430,7 +1430,7 @@ function private function_25b61968() {
 // Params 4, eflags: 0x21 linked
 // Checksum 0xfa892c77, Offset: 0x6348
 // Size: 0x86
-function function_e732359c(position, var_4603c944, entity, vararg...) {
+function function_e732359c(position, var_4603c944, entity, ...) {
     level.var_ee6c4739[level.var_ee6c4739.size] = {#params:vararg, #entity:entity, #radius:var_4603c944, #position:position};
 }
 
@@ -3334,7 +3334,7 @@ function hide_and_show() {
 // Params 1, eflags: 0x40
 // Checksum 0xf697e840, Offset: 0xd318
 // Size: 0x222
-function event<bhtn_action_start> function_320145f7(eventstruct) {
+function event_handler[bhtn_action_start] function_320145f7(eventstruct) {
     notify_string = eventstruct.action;
     switch (notify_string) {
     case #"death":

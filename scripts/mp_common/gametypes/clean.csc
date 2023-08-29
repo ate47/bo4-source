@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x228632e3, Offset: 0x1d8
 // Size: 0x23c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     clientfield::register("clientuimodel", "hudItems.cleanCarryCount", 14000, 4, "int", undefined, 0, 0);
     clientfield::register("clientuimodel", "hudItems.cleanCarryFull", 14000, 1, "int", undefined, 0, 0);
     clientfield::register("scriptmover", "taco_flag", 14000, 2, "int", &function_11abf5b2, 0, 0);

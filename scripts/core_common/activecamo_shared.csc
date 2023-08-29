@@ -580,7 +580,7 @@ function init_activecamo(activecamoinfo) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0x2b1a8c38, Offset: 0x2750
 // Size: 0x460
-function function_374e37a0(localclientnum, weaponmodel, var_3594168e, var_49daa2f6&) {
+function function_374e37a0(localclientnum, weaponmodel, var_3594168e, &var_49daa2f6) {
     tagname = "tag_origin";
     stage = {};
     stage.rob = var_3594168e.rob;

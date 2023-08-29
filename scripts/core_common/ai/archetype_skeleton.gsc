@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include script_41fe08c37d53a635;
+#include scripts/core_common/ai/systems/destructible_character.gsc;
 #include script_2c5daa95f8fec03c;
-#include script_522aeb6ae906391e;
-#include script_3aa0f32b70d4f7cb;
-#include script_4bf952f6ba31bb17;
-#include script_59f07c660e6710a5;
-#include script_7b7ed6e4bc963a51;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
+#include scripts/core_common/ai/systems/ai_blackboard.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/ai/zombie.gsc;
 #include script_3819e7a1427df6d2;

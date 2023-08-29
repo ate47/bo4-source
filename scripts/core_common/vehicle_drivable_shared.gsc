@@ -7,7 +7,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x937677fe, Offset: 0x80
 // Size: 0x34
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     add_main_callback("air_vehicle1", &air_vehicle1_initialize);
 }
 

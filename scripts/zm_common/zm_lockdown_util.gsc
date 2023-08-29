@@ -12,9 +12,9 @@
 #include scripts/core_common/status_effects/status_effect_util.gsc;
 #include scripts/core_common/ai/zombie.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
-#include script_41fe08c37d53a635;
-#include script_35598499769dbb3d;
-#include script_71dfbfdfba4489a0;
+#include scripts/core_common/ai/systems/destructible_character.gsc;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/debug.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/trigger_shared.gsc;
 #include scripts/core_common/system_shared.gsc;
@@ -515,7 +515,7 @@ function private function_d3fbb5ec(entity, stub, current_zone) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x2bd74456, Offset: 0x1d90
 // Size: 0x1f4
-function private function_9c7d5271(entity, registerlotus_right&, range) {
+function private function_9c7d5271(entity, &registerlotus_right, range) {
     current_zone = entity zm_utility::get_current_zone();
     stubs = arraysortclosest(level.var_f17bdf53, entity.origin, undefined, 0, range);
     foreach (stub in stubs) {
@@ -568,7 +568,7 @@ function private function_fea6f0c0(entity, stub, current_zone) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x86fb9623, Offset: 0x2070
 // Size: 0x1f4
-function private function_db989a2a(entity, registerlotus_right&, range) {
+function private function_db989a2a(entity, &registerlotus_right, range) {
     current_zone = entity zm_utility::get_current_zone();
     stubs = arraysortclosest(level.var_9235b607, entity.origin, undefined, 0, range);
     foreach (stub in stubs) {
@@ -615,7 +615,7 @@ function private function_ea677a9a(entity, stub, current_zone) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xc3a3c6e5, Offset: 0x22f8
 // Size: 0x1f4
-function private function_d0e1d38c(entity, registerlotus_right&, range) {
+function private function_d0e1d38c(entity, &registerlotus_right, range) {
     current_zone = entity zm_utility::get_current_zone();
     stubs = arraysortclosest(level.var_16cfe3ef, entity.origin, undefined, 0, range);
     foreach (stub in stubs) {
@@ -680,7 +680,7 @@ function private function_95250640(entity, stub) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xabce0130, Offset: 0x26b8
 // Size: 0x1ec
-function private function_e6761711(entity, registerlotus_right&, range) {
+function private function_e6761711(entity, &registerlotus_right, range) {
     chests = arraysortclosest(level.chests, entity.origin, undefined, 0, range);
     foreach (chest in chests) {
         if (!function_95250640(entity, chest.unitrigger_stub)) {
@@ -732,7 +732,7 @@ function private function_790e3eb0(entity, trigger) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x9f1ff51f, Offset: 0x2968
 // Size: 0x1c4
-function private function_165e2bd6(entity, registerlotus_right&, range) {
+function private function_165e2bd6(entity, &registerlotus_right, range) {
     if (!level flag::get("pap_machine_active")) {
         return;
     }
@@ -782,7 +782,7 @@ function private function_809ae5cb(entity, blocker) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xcc10c819, Offset: 0x2ba8
 // Size: 0x1f4
-function private function_8850974b(entity, registerlotus_right&, range) {
+function private function_8850974b(entity, &registerlotus_right, range) {
     blockers = arraysortclosest(level.exterior_goals, entity.origin, undefined, 0, range);
     foreach (blocker in blockers) {
         if (function_55d2ad24(blocker, entity)) {
@@ -829,7 +829,7 @@ function private function_387fd27e(entity, trap_trig) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xbb58e25, Offset: 0x2e28
 // Size: 0x194
-function private function_d2ce5ac1(entity, registerlotus_right&, range) {
+function private function_d2ce5ac1(entity, &registerlotus_right, range) {
     trap_trigs = arraysortclosest(level.var_2510f3e4, entity.origin, undefined, 0, range);
     foreach (trap_trig in trap_trigs) {
         if (function_55d2ad24(trap_trig, entity)) {
@@ -1104,7 +1104,7 @@ function function_61a9bc58() {
 // Params 4, eflags: 0x20
 // Checksum 0xeb0573cb, Offset: 0x3cb0
 // Size: 0x136
-function function_78eae22a(entity, stub, reason, vararg...) {
+function function_78eae22a(entity, stub, reason, ...) {
     /#
         if (getdvarint(#"hash_3ec02cda135af40f", 0) == 1 && getdvarint(#"recorder_enablerec", 0) == 1) {
             if (!isdefined(entity.var_d187874c)) {

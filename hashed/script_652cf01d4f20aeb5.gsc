@@ -50,12 +50,12 @@ function main() {
     level.var_79260935.e_vault_defend_blocker = getent("e_vault_defend_blocker", "targetname");
     level.var_79260935.s_vault_reward = struct::get("s_vault_reward", "targetname");
     level.var_79260935.var_7ff5dbc4 = struct::get("facility_vault_door_bundle", "targetname");
-    zm_sq::register(#"sams_box", #"step_1", #"hash_6261200a332f0945", &function_88dec965, &function_3aa0b188);
-    zm_sq::register(#"sams_box", #"step_2", #"hash_62611d0a332f042c", &function_ac7f503f, &function_7f4e2be3);
-    zm_sq::register(#"sams_box", #"step_3", #"hash_62611e0a332f05df", &function_145d9203, &function_33b22107);
-    zm_sq::register(#"sams_box", #"step_4", #"hash_62611b0a332f00c6", &function_e7991e06, &function_441f41e9);
-    zm_sq::register(#"sams_box", #"step_5", #"hash_62611c0a332f0279", &function_bb9777b, &function_4b460950);
-    zm_sq::register(#"sams_box", #"step_6", #"hash_6261190a332efd60", &function_779b1320, &function_8a1848f8);
+    zm_sq::register(#"sams_box", #"step_1", #"sams_box_step1", &sams_box_step1_setup, &sams_box_step1_cleanup);
+    zm_sq::register(#"sams_box", #"step_2", #"sams_box_step2", &sams_box_step2_setup, &sams_box_step2_cleanup);
+    zm_sq::register(#"sams_box", #"step_3", #"sams_box_step3", &sams_box_step3_setup, &sams_box_step3_cleanup);
+    zm_sq::register(#"sams_box", #"step_4", #"sams_box_step4", &sams_box_step4_setup, &sams_box_step4_cleanup);
+    zm_sq::register(#"sams_box", #"step_5", #"sams_box_step5", &sams_box_step5_setup, &sams_box_step5_cleanup);
+    zm_sq::register(#"sams_box", #"step_6", #"sams_box_step6", &sams_box_step6_setup, &sams_box_step6_cleanup);
     zm_sq::start(#"sams_box", !zm_utility::is_standard());
 }
 
@@ -63,7 +63,7 @@ function main() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf2eb9b76, Offset: 0x758
 // Size: 0x244
-function function_88dec965(var_5ea5c94d) {
+function sams_box_step1_setup(var_5ea5c94d) {
     function_ee2edc25();
     level.var_79260935.var_c8b70e7e = 1;
     foreach (s_vault_keyhole in level.var_79260935.a_s_vault_keyholes) {
@@ -238,7 +238,7 @@ function function_2ec6a1aa() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x10339883, Offset: 0x15b8
 // Size: 0x1bc
-function function_3aa0b188(var_5ea5c94d, ended_early) {
+function sams_box_step1_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         foreach (s_keycard in level.var_79260935.a_s_keycards) {
             if (isdefined(s_keycard.e_keycard)) {
@@ -265,7 +265,7 @@ function function_3aa0b188(var_5ea5c94d, ended_early) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x2e49abb9, Offset: 0x1780
 // Size: 0x84
-function function_ac7f503f(var_5ea5c94d) {
+function sams_box_step2_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         level.var_79260935.var_6388e36f zm_unitrigger::create("", 64);
         level.var_79260935.var_6388e36f thread function_6c5a5d32();
@@ -292,7 +292,7 @@ function function_6c5a5d32() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x7a9b8315, Offset: 0x1920
 // Size: 0x94
-function function_7f4e2be3(var_5ea5c94d, ended_early) {
+function sams_box_step2_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         if (isdefined(self.var_b6aa4c4f)) {
             self.var_b6aa4c4f delete();
@@ -308,7 +308,7 @@ function function_7f4e2be3(var_5ea5c94d, ended_early) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa17f8fa9, Offset: 0x19c0
 // Size: 0x54
-function function_145d9203(var_5ea5c94d) {
+function sams_box_step3_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         level flag::set(#"hash_475c24f631fab267");
         level flag::wait_till(#"hash_50f159e379843d0c");
@@ -319,7 +319,7 @@ function function_145d9203(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x88bb0640, Offset: 0x1a20
 // Size: 0x110
-function function_33b22107(var_5ea5c94d, ended_early) {
+function sams_box_step3_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         level flag::set(#"hash_5c6f1082ddbc7389");
         level flag::set(#"hash_50f159e379843d0c");
@@ -385,7 +385,7 @@ function function_3590cb58() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x879603e0, Offset: 0x1ef0
 // Size: 0x8c
-function function_e7991e06(var_5ea5c94d) {
+function sams_box_step4_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         level.var_79260935.s_vault_reward zm_unitrigger::create(&function_bb5cf7f2, 128);
         level.var_79260935.s_vault_reward thread function_6b4a631b();
@@ -397,7 +397,7 @@ function function_e7991e06(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x92c435ae, Offset: 0x1f88
 // Size: 0x7c
-function function_441f41e9(var_5ea5c94d, ended_early) {
+function sams_box_step4_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         level flag::set(#"hash_4839f3b910ec6b98");
     }
@@ -446,7 +446,7 @@ function function_6b4a631b() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x153ce869, Offset: 0x2288
 // Size: 0x8c
-function function_bb9777b(var_5ea5c94d) {
+function sams_box_step5_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         level thread function_1f269398();
         exploder::exploder("fxexp_vault_door_facility_steam");
@@ -459,7 +459,7 @@ function function_bb9777b(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xddeadbb6, Offset: 0x2320
 // Size: 0x104
-function function_4b460950(var_5ea5c94d, ended_early) {
+function sams_box_step5_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         level.var_79260935.var_7ff5dbc4 scene::play("open_fast");
         level flag::clear(#"infinite_round_spawning");
@@ -521,7 +521,7 @@ function function_b53212e5() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe74a6b83, Offset: 0x2790
 // Size: 0xfc
-function function_779b1320(var_5ea5c94d) {
+function sams_box_step6_setup(var_5ea5c94d) {
     level.var_79260935.w_music_box = getweapon(#"music_box");
     callback::function_33f0ddd3(&function_33f0ddd3);
     callback::on_disconnect(&on_disconnect);
@@ -536,7 +536,7 @@ function function_779b1320(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x3671dba3, Offset: 0x2898
 // Size: 0x10c
-function function_8a1848f8(var_5ea5c94d, ended_early) {
+function sams_box_step6_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         a_e_players = getplayers();
         foreach (e_player in a_e_players) {

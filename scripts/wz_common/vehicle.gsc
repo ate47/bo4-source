@@ -867,7 +867,7 @@ function function_adc0649a() {
 // Params 1, eflags: 0x40
 // Checksum 0xb8e70cb0, Offset: 0x40b8
 // Size: 0x3dc
-function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
+function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -925,7 +925,7 @@ function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x616456cd, Offset: 0x44a0
 // Size: 0x29c
-function event<exit_vehicle> codecallback_vehicleexit(eventstruct) {
+function event_handler[exit_vehicle] codecallback_vehicleexit(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -972,7 +972,7 @@ function event<exit_vehicle> codecallback_vehicleexit(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x71a94add, Offset: 0x4748
 // Size: 0x6c
-function event<event_363c2131> function_3a4d53f8(eventstruct) {
+function event_handler[event_363c2131] function_3a4d53f8(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -986,7 +986,7 @@ function event<event_363c2131> function_3a4d53f8(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x8969fab5, Offset: 0x47c0
 // Size: 0x4cc
-function event<change_seat> function_2aa4e6cf(eventstruct) {
+function event_handler[change_seat] function_2aa4e6cf(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -1052,7 +1052,7 @@ function event<change_seat> function_2aa4e6cf(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x67ba7a40, Offset: 0x4c98
 // Size: 0xbc
-function event<event_44d3f985> function_2d7f6e48(eventstruct) {
+function event_handler[event_44d3f985] function_2d7f6e48(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -1069,7 +1069,7 @@ function event<event_44d3f985> function_2d7f6e48(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xdc61560c, Offset: 0x4d60
 // Size: 0x15c
-function event<event_99100cb2> function_22d9386e(eventstruct) {
+function event_handler[event_99100cb2] function_22d9386e(eventstruct) {
     occupants = self getvehoccupants();
     if (isdefined(occupants) && occupants.size) {
         for (i = 0; i < occupants.size; i++) {
@@ -2576,9 +2576,9 @@ function private function_365e033d(params) {
     self setphysacceleration((0, 0, 0));
     self thread vehicle_ai::nudge_collision();
     self setrotorspeed(1);
-    if (isdefined(level.var_173daec0)) {
+    if (isdefined(level.enable_thermal)) {
         if (self vehicle_ai::get_next_state() !== "death") {
-            [[ level.var_173daec0 ]]();
+            [[ level.enable_thermal ]]();
         }
     }
     if (!(isdefined(self.nolights) && self.nolights)) {
@@ -2592,8 +2592,8 @@ function private function_365e033d(params) {
 // Size: 0x2b4
 function private function_4b5646b1(params) {
     self endon(#"death");
-    if (isdefined(level.var_1e700111)) {
-        [[ level.var_1e700111 ]](self);
+    if (isdefined(level.vehicle_destructer_cb)) {
+        [[ level.vehicle_destructer_cb ]](self);
     }
     self vehicle_death::death_fx();
     self thread vehicle_death::death_radius_damage("MOD_EXPLOSIVE", params.attacker);

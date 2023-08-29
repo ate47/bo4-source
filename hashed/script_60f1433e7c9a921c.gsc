@@ -8,9 +8,9 @@
 #include scripts/core_common/ai/region_utility.gsc;
 #include scripts/core_common/ai/planner_squad.gsc;
 #include scripts/core_common/ai/planner_commander.gsc;
-#include script_30e0aa25775a6927;
-#include script_31e56101095f174b;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/planner_blackboard.gsc;
+#include scripts/core_common/ai/systems/planner.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 
 #namespace namespace_ff7f7372;
 
@@ -238,7 +238,7 @@ function private function_88ab5a6e(commander) {
         }
         var_2435544a = [];
         var_2435544a[#"origin"] = domflag.origin;
-        var_2435544a[#"radius"] = domflag.var_6402a372.radius;
+        var_2435544a[#"radius"] = domflag.levelflag.radius;
         var_2435544a[#"claimed"] = commanderteam == domflag gameobjects::get_owner_team();
         if (!isdefined(var_2435544a[#"__unsafe__"])) {
             var_2435544a[#"__unsafe__"] = array();

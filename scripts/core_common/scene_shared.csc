@@ -2078,7 +2078,7 @@ function _trigger_stop(trig) {
 // Params 4, eflags: 0x21 linked
 // Checksum 0xe27ce2d4, Offset: 0xadc0
 // Size: 0x184
-function add_scene_func(str_scenedef, func, var_e21c4c4c = "play", vararg...) {
+function add_scene_func(str_scenedef, func, var_e21c4c4c = "play", ...) {
     /#
         /#
             assert(isdefined(getscriptbundle(str_scenedef)), "<unknown string>" + function_9e72a96(str_scenedef) + "<unknown string>");

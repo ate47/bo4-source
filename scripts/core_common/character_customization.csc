@@ -1381,7 +1381,7 @@ function function_bee62aa1(character) {
 // Size: 0x1ca
 function __init__() {
     level.extra_cam_render_current_hero_headshot_func_callback = &process_current_hero_headshot_extracam_request;
-    level.var_96a9882 = &process_head_preview_extracam_request;
+    level.extra_cam_render_head_preview_func_callback = &process_head_preview_extracam_request;
     level.var_dda8e1d8 = &function_1c0ddf49;
     level.extra_cam_render_character_head_item_func_callback = &process_character_head_item_extracam_request;
     level.extra_cam_render_gender_func_callback = &process_gender_extracam_request;
@@ -1404,7 +1404,7 @@ function __init__() {
     if (!isdefined(level.extra_cam_gender_preview_data)) {
         level.extra_cam_gender_preview_data = [];
     }
-    level.var_51b3e4e0 = &localclientconnect;
+    level.charactercustomizationsetup = &localclientconnect;
     level.var_6e23b0fc = [];
 }
 
@@ -1626,7 +1626,7 @@ function updateeventthread(localclientnum, var_d0b01271, notifyname, var_1d7f159
     while (1) {
         waitresult = undefined;
         waitresult = level waittill(notifyname + localclientnum);
-        switch (waitresult.var_25b9e3c2) {
+        switch (waitresult.event_name) {
         case #"update_lcn":
             [[ var_d0b01271 ]]->function_e08bf4f2(waitresult.local_client_num);
             break;
@@ -1744,7 +1744,7 @@ function updateeventthread(localclientnum, var_d0b01271, notifyname, var_1d7f159
             }
             params = {};
             [[ var_1d7f1597 ]](localclientnum, var_d0b01271, waitresult, params);
-            if (waitresult.var_25b9e3c2 == "previewShopFace") {
+            if (waitresult.event_name == "previewShopFace") {
                 params.align_struct = struct::get(#"hash_1b6b643ea423735b");
             }
             if (isdefined(params.var_c76f3e47) && params.var_c76f3e47) {

@@ -10,7 +10,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xa5143e0a, Offset: 0x1e0
 // Size: 0x2f4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     callback::on_localclient_connect(&on_localclient_connect);
     clientfield::register("scriptmover", "ctf_flag_away", 17000, 1, "int", &setctfaway, 0, 0);
     clientfield::register("allplayers", "ctf_flag_carried", 17000, 1, "int", &function_4db33d0, 0, 1);

@@ -65,8 +65,8 @@ function wasp_initialize() {
     self.overridevehicledamage = &drone_callback_damage;
     self.allowfriendlyfiredamageoverride = &drone_allowfriendlyfiredamage;
     self thread vehicle_ai::nudge_collision();
-    if (isdefined(level.var_b4158f86)) {
-        [[ level.var_b4158f86 ]](self);
+    if (isdefined(level.vehicle_initializer_cb)) {
+        [[ level.vehicle_initializer_cb ]](self);
     }
     init_guard_points();
     defaultrole();

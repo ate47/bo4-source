@@ -2,11 +2,11 @@
 #include script_3819e7a1427df6d2;
 #include scripts/core_common/ai/archetype_utility.gsc;
 #include scripts/core_common/ai/archetype_human_interface.gsc;
-#include script_35598499769dbb3d;
-#include script_41fe08c37d53a635;
-#include script_522aeb6ae906391e;
-#include script_59f07c660e6710a5;
-#include script_7b7ed6e4bc963a51;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/destructible_character.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
+#include scripts/core_common/ai/systems/ai_blackboard.gsc;
 #include scripts/core_common/spawner_shared.gsc;
 #include scripts/core_common/math_shared.gsc;
 #include scripts/core_common/clientfield_shared.gsc;

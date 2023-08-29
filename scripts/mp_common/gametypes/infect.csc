@@ -12,7 +12,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x94b6240b, Offset: 0xd8
 // Size: 0x74
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     level.infect_timer = mp_infect_timer::register("InfectTimer");
     clientfield::register("allplayers", "Infected.player_infected", 15000, 1, "int", &function_fd78da38, 0, 0);
 }

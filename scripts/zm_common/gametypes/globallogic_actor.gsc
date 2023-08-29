@@ -3,8 +3,8 @@
 #include scripts/zm_common/gametypes/globallogic_player.gsc;
 #include scripts/zm_common/bb.gsc;
 #include scripts/core_common/globallogic/globallogic_player.gsc;
-#include script_35598499769dbb3d;
-#include script_41fe08c37d53a635;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/destructible_character.gsc;
 #include scripts/core_common/spawner_shared.gsc;
 #include scripts/core_common/challenges_shared.gsc;
 #include scripts/core_common/struct.gsc;

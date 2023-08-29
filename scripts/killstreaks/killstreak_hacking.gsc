@@ -139,8 +139,8 @@ function set_vehicle_drivable_time_starting_now(killstreak, duration_ms = -1) {
 // Size: 0xe4
 function _update_health(hacker) {
     killstreak = self;
-    if (isdefined(killstreak.var_ce904ce)) {
-        killstreak [[ killstreak.var_ce904ce ]](hacker);
+    if (isdefined(killstreak.hackedhealthupdatecallback)) {
+        killstreak [[ killstreak.hackedhealthupdatecallback ]](hacker);
     } else if (issentient(killstreak)) {
         hackedhealth = killstreak_bundles::get_hacked_health(killstreak.killstreaktype);
         /#
@@ -185,8 +185,8 @@ function killstreak_switch_team(owner) {
                 if (isdefined(level.getenemyteam) && isdefined(owner) && isdefined(owner.team)) {
                     team = [[ level.getenemyteam ]](owner.team);
                 }
-                if (isdefined(level.var_9863da28)) {
-                    player = [[ level.var_9863da28 ]](team);
+                if (isdefined(level.devongetormakebot)) {
+                    player = [[ level.devongetormakebot ]](team);
                 }
                 if (!isdefined(player)) {
                     println("<unknown string>");

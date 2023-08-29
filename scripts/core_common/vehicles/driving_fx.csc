@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x83e688d6, Offset: 0x150
 // Size: 0x74
-function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
+function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

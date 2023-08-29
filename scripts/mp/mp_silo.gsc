@@ -20,7 +20,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x9c19cc97, Offset: 0x308
 // Size: 0x2e4
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("scriptmover", "helo_spawn_flavor_rope_pulse", 1, 1, "counter");
     level.var_cfec596d = -4271;
     level.var_39b27fbe = -8002;

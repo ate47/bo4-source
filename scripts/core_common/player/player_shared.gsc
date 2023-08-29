@@ -641,7 +641,7 @@ function function_6f6c29e(var_b66879ad) {
 // Params 2, eflags: 0x21 linked
 // Checksum 0x485aa377, Offset: 0x2450
 // Size: 0xa8
-function function_2f80d95b(player_func, vararg...) {
+function function_2f80d95b(player_func, ...) {
     players = level.players;
     foreach (player in players) {
         util::single_func_argarray(player, player_func, vararg);
@@ -652,7 +652,7 @@ function function_2f80d95b(player_func, vararg...) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0xc445f89a, Offset: 0x2500
 // Size: 0x98
-function function_4dcd9a89(players, player_func, vararg...) {
+function function_4dcd9a89(players, player_func, ...) {
     foreach (player in players) {
         util::single_func_argarray(player, player_func, vararg);
     }
@@ -662,7 +662,7 @@ function function_4dcd9a89(players, player_func, vararg...) {
 // Params 3, eflags: 0x20
 // Checksum 0xdc200b8f, Offset: 0x25a0
 // Size: 0xc0
-function function_7629df88(team, player_func, vararg...) {
+function function_7629df88(team, player_func, ...) {
     players = level.players;
     foreach (player in players) {
         if (player.team == team) {
@@ -675,7 +675,7 @@ function function_7629df88(team, player_func, vararg...) {
 // Params 2, eflags: 0x21 linked
 // Checksum 0x59510324, Offset: 0x2668
 // Size: 0xc8
-function function_e7f18b20(player_func, vararg...) {
+function function_e7f18b20(player_func, ...) {
     players = level.players;
     foreach (player in players) {
         if (!isdefined(player.pers[#"team"])) {

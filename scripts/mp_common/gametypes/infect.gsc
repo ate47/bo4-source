@@ -38,7 +38,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x40187529, Offset: 0x578
 // Size: 0x52c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     infection::initialize();
     infection::function_153000d0(#"hash_70fe115fad3f4fa", #"hash_3ca96ae1bd7d344f");
@@ -101,10 +101,10 @@ function onstartgametype() {
         game.switchedsides = 0;
     }
     if (game.switchedsides) {
-        var_ab3391a2 = game.attackers;
-        var_3983ee73 = game.defenders;
-        game.attackers = var_3983ee73;
-        game.defenders = var_ab3391a2;
+        oldattackers = game.attackers;
+        olddefenders = game.defenders;
+        game.attackers = olddefenders;
+        game.defenders = oldattackers;
     }
     level.displayroundendtext = 0;
     influencers::create_map_placed_influencers();
@@ -124,7 +124,7 @@ function onstartgametype() {
     level.var_bc04d789 = 0;
     level.var_67f55810 = 0;
     level.var_a93f2ba7 = 0;
-    function_d15082db();
+    inithud();
     maxfree = getdvarint(#"bot_maxfree", 0);
     level thread bot::monitor_bot_population(maxfree);
     level thread function_a6489256();
@@ -179,7 +179,7 @@ function function_8d346fd8(winningteam) {
 // Params 0, eflags: 0x0
 // Checksum 0xe894dc99, Offset: 0xfe0
 // Size: 0xee
-function function_d15082db() {
+function inithud() {
     level.var_43406ee9 = spawnstruct();
     level.var_43406ee9.label = #"hash_7bf80a392d947b6e";
     level.var_43406ee9.alpha = 0;
@@ -734,8 +734,8 @@ function function_a6489256() {
 // Checksum 0xa1def254, Offset: 0x2cf8
 // Size: 0xf6
 function function_a5abd7ee() {
-    level notify(#"hash_633babac906acabd");
-    level endon(#"game_ended", #"hash_14fed44cd3ece79d", #"hash_633babac906acabd");
+    level notify(#"timeextended");
+    level endon(#"game_ended", #"hash_14fed44cd3ece79d", #"timeextended");
     timeout = 0;
     while (isdefined(level.var_43406ee9) && level.var_43406ee9.alpha > 0) {
         hostmigration::waitlongdurationwithhostmigrationpause(0.5);
@@ -822,7 +822,7 @@ function function_28da9505() {
     if (var_63f8204e < 1) {
         level.var_ad5ac73b = 1;
     } else {
-        function_d5560d60(game.defenders);
+        forcespawnteam(game.defenders);
     }
     level thread popups::displayteammessagetoall(#"hash_429f9447bfe0581e", self);
     scoreevents::processscoreevent("first_infected", self);
@@ -838,7 +838,7 @@ function function_28da9505() {
 // Params 1, eflags: 0x0
 // Checksum 0xefd02ff0, Offset: 0x3290
 // Size: 0xa0
-function function_d5560d60(team) {
+function forcespawnteam(team) {
     players = getplayers(team);
     foreach (player in players) {
         player thread function_e812fdee();
@@ -1025,16 +1025,16 @@ function function_ef516d85(winner, endtype, endreasontext, outcometext, team, wi
             outcometext = game.strings[#"draw"];
         } else if (isdefined(self.pers[#"team"]) && winner == team) {
             outcometext = game.strings[#"victory"];
-            var_c231e309 = 1;
+            overridespectator = 1;
         } else {
             outcometext = game.strings[#"defeat"];
             if ((level.rankedmatch || level.leaguematch) && self.pers[#"latejoin"] === 1) {
-                endreasontext = game.strings[#"hash_75707b18a9b1f095"];
+                endreasontext = game.strings[#"join_in_progress_loss"];
             }
-            var_c231e309 = 1;
+            overridespectator = 1;
         }
         notifyroundendtoui = 0;
-        if (team == "spectator" && var_c231e309) {
+        if (team == "spectator" && overridespectator) {
             foreach (team in level.teams) {
                 if (endreasontext == game.strings[team + "_eliminated"]) {
                     endreasontext = game.strings[#"cod_caster_team_eliminated"];
@@ -1072,7 +1072,7 @@ function function_df1183b3() {
     level notify(#"hash_674fa4643cd81a8c");
     level endon(#"hash_674fa4643cd81a8c");
     wait(30);
-    function_d5560d60(game.defenders);
+    forcespawnteam(game.defenders);
 }
 
 // Namespace infect/infect

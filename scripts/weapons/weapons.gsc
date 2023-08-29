@@ -147,7 +147,7 @@ function function_878d649f(player) {
 // Params 1, eflags: 0x40
 // Checksum 0x439ff8e3, Offset: 0xad8
 // Size: 0xf4
-function event<weapon_change> function_edc4ebe8(eventstruct) {
+function event_handler[weapon_change] function_edc4ebe8(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -305,7 +305,7 @@ function update_last_held_weapon_timings(newtime) {
             if (isdefined(self.pickedupweapons) && isdefined(self.pickedupweapons[self.currentweapon])) {
                 weaponpickedup = 1;
             }
-            self stats::function_eec52333(self.currentweapon, #"timeused", totaltime, self.var_e54b3c14, weaponpickedup);
+            self stats::function_eec52333(self.currentweapon, #"timeused", totaltime, self.class_num, weaponpickedup);
             self.currentweaponstarttime = newtime;
         }
     }
@@ -330,12 +330,12 @@ function update_timings(newtime) {
     self.staticweaponsstarttime = newtime;
     if (isdefined(self.weapon_array_grenade)) {
         for (i = 0; i < self.weapon_array_grenade.size; i++) {
-            self stats::function_eec52333(self.weapon_array_grenade[i], #"timeused", totaltime, self.var_e54b3c14);
+            self stats::function_eec52333(self.weapon_array_grenade[i], #"timeused", totaltime, self.class_num);
         }
     }
     if (isdefined(self.weapon_array_inventory)) {
         for (i = 0; i < self.weapon_array_inventory.size; i++) {
-            self stats::function_eec52333(self.weapon_array_inventory[i], #"timeused", totaltime, self.var_e54b3c14);
+            self stats::function_eec52333(self.weapon_array_inventory[i], #"timeused", totaltime, self.class_num);
         }
     }
     if (isdefined(self.killstreak)) {
@@ -343,7 +343,7 @@ function update_timings(newtime) {
             killstreaktype = level.menureferenceforkillstreak[self.killstreak[i]];
             if (isdefined(killstreaktype)) {
                 killstreakweapon = killstreaks::get_killstreak_weapon(killstreaktype);
-                self stats::function_eec52333(killstreakweapon, #"timeused", totaltime, self.var_e54b3c14);
+                self stats::function_eec52333(killstreakweapon, #"timeused", totaltime, self.class_num);
             }
         }
     }
@@ -356,9 +356,9 @@ function update_timings(newtime) {
         if (!isdefined(self.curclass)) {
             return;
         }
-        if (isdefined(self.var_e54b3c14)) {
+        if (isdefined(self.class_num)) {
             for (numspecialties = 0; numspecialties < level.maxspecialties; numspecialties++) {
-                perk = self getloadoutitem(self.var_e54b3c14, "specialty" + numspecialties + 1);
+                perk = self getloadoutitem(self.class_num, "specialty" + numspecialties + 1);
                 if (perk != 0) {
                     perksindexarray[perk] = 1;
                 }
@@ -637,7 +637,7 @@ function watch_pickup() {
 // Params 1, eflags: 0x40
 // Checksum 0xdd2d4254, Offset: 0x2498
 // Size: 0x6c
-function event<weapon_fired> function_cafc776a(eventstruct) {
+function event_handler[weapon_fired] function_cafc776a(eventstruct) {
     self callback::callback(#"weapon_fired", eventstruct);
     self callback::callback_weapon_fired(eventstruct.weapon);
     self function_f2c53bb2(eventstruct.weapon);
@@ -647,7 +647,7 @@ function event<weapon_fired> function_cafc776a(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x1d4280c3, Offset: 0x2510
 // Size: 0x2c
-function event<weapon_melee> function_3eaa5d64(eventstruct) {
+function event_handler[weapon_melee] function_3eaa5d64(eventstruct) {
     self callback::callback(#"weapon_melee", eventstruct);
 }
 
@@ -655,7 +655,7 @@ function event<weapon_melee> function_3eaa5d64(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x96a5cb93, Offset: 0x2548
 // Size: 0x2c
-function event<weapon_melee_charge> function_9847a517(eventstruct) {
+function event_handler[weapon_melee_charge] function_9847a517(eventstruct) {
     self callback::callback(#"weapon_melee_charge", eventstruct);
 }
 
@@ -684,7 +684,7 @@ function function_f2c53bb2(curweapon) {
         break;
     case #"rocketlauncher":
     case #"grenade":
-        self stats::function_eec52333(curweapon, #"shots", 1, self.var_e54b3c14, 0);
+        self stats::function_eec52333(curweapon, #"shots", 1, self.class_num, 0);
         break;
     default:
         break;
@@ -716,7 +716,7 @@ function track_fire(curweapon) {
     if (isdefined(self.pickedupweapons) && isdefined(self.pickedupweapons[curweapon])) {
         weaponpickedup = 1;
     }
-    self trackweaponfirenative(curweapon, 1, isdefined(self.hits) ? self.hits : 0, isdefined(self.var_2641e022) ? self.var_2641e022 : 0, 1, self.var_e54b3c14, weaponpickedup);
+    self trackweaponfirenative(curweapon, 1, isdefined(self.hits) ? self.hits : 0, isdefined(self.var_2641e022) ? self.var_2641e022 : 0, 1, self.class_num, weaponpickedup);
     if (isdefined(self.totalmatchshots)) {
         self.totalmatchshots++;
     }
@@ -749,7 +749,7 @@ function track_fire(curweapon) {
 // Checksum 0xd8141c37, Offset: 0x2ad0
 // Size: 0x4c
 function function_b1d41bd5(weapon, damagedone) {
-    self stats::function_eec52333(weapon, #"damagedone", damagedone, self.var_e54b3c14);
+    self stats::function_eec52333(weapon, #"damagedone", damagedone, self.class_num);
 }
 
 // Namespace weapons/weapons
@@ -770,12 +770,12 @@ function on_end_game() {
 // Params 1, eflags: 0x40
 // Checksum 0x2c61ee67, Offset: 0x2ba8
 // Size: 0xcc
-function event<grenade_pullback> function_5755a808(eventstruct) {
+function event_handler[grenade_pullback] function_5755a808(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
     weapon = eventstruct.weapon;
-    self stats::function_eec52333(weapon, #"shots", 1, self.var_e54b3c14);
+    self stats::function_eec52333(weapon, #"shots", 1, self.class_num);
     self.hasdonecombat = 1;
     self.throwinggrenade = 1;
     self.gotpullbacknotify = 1;
@@ -787,7 +787,7 @@ function event<grenade_pullback> function_5755a808(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xd5abd768, Offset: 0x2c80
 // Size: 0x15a
-function event<missile_fire> function_f075cefa(eventstruct) {
+function event_handler[missile_fire] function_f075cefa(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -982,8 +982,8 @@ function begin_grenade_tracking() {
     if (cookedtime > 1000) {
         grenade.iscooked = 1;
     }
-    if (isdefined(self.var_a5959c73)) {
-        self.var_a5959c73++;
+    if (isdefined(self.grenadesused)) {
+        self.grenadesused++;
     }
     switch (weapon.rootweapon.name) {
     case #"frag_grenade":
@@ -1019,7 +1019,7 @@ function begin_grenade_tracking() {
 // Params 1, eflags: 0x40
 // Checksum 0x50fa6cbd, Offset: 0x3980
 // Size: 0x24a
-function event<grenade_fire> function_e2b6d5a5(eventstruct) {
+function event_handler[grenade_fire] function_e2b6d5a5(eventstruct) {
     self callback::callback(#"grenade_fired", eventstruct);
     if (!isplayer(self)) {
         return;
@@ -1060,7 +1060,7 @@ function event<grenade_fire> function_e2b6d5a5(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x33d57f76, Offset: 0x3bd8
 // Size: 0x2c
-function event<offhand_fire> function_97023fdf(eventstruct) {
+function event_handler[offhand_fire] function_97023fdf(eventstruct) {
     self callback::callback(#"offhand_fire", eventstruct);
 }
 
@@ -1068,7 +1068,7 @@ function event<offhand_fire> function_97023fdf(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x1d9af370, Offset: 0x3c10
 // Size: 0x2c
-function event<grenade_launcher_fire> function_aa7da3a(eventstruct) {
+function event_handler[grenade_launcher_fire] function_aa7da3a(eventstruct) {
     self callback::callback(#"hash_198a389d6b65f68d", eventstruct);
 }
 
@@ -1573,10 +1573,10 @@ function loadout_get_offhand_count(stat) {
         return 0;
     }
     /#
-        assert(isdefined(self.var_e54b3c14));
+        assert(isdefined(self.class_num));
     #/
-    if (isdefined(self.var_e54b3c14)) {
-        count = self loadout::getloadoutitemfromddlstats(self.var_e54b3c14, stat);
+    if (isdefined(self.class_num)) {
+        count = self loadout::getloadoutitemfromddlstats(self.class_num, stat);
     }
     return count;
 }
@@ -1613,7 +1613,7 @@ function scavenger_think() {
         } else if (isdefined(player.grenadetypesecondary) && weapon == player.grenadetypesecondary && isdefined(player.grenadetypesecondarycount) && player.grenadetypesecondarycount > 0) {
             maxammo = player.grenadetypesecondarycount;
         }
-        if (isdefined(level.var_2f96b84c)) {
+        if (isdefined(level.customloasdoutscavenge)) {
             maxammo = self [[ level.customloadoutscavenge ]](weapon);
         }
         if (maxammo == 0) {
@@ -1849,7 +1849,7 @@ function multi_detonation_get_cluster_launch_dir(weapon, index, multival, normal
 // Params 1, eflags: 0x40
 // Checksum 0x539c2c44, Offset: 0x6818
 // Size: 0x7c
-function event<grenade_stuck> function_5c5941ef(eventstruct) {
+function event_handler[grenade_stuck] function_5c5941ef(eventstruct) {
     grenade = eventstruct.projectile;
     if (!isdefined(grenade)) {
         return;

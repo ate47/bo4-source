@@ -11,7 +11,7 @@
 function register_killstreak_bundle(type) {
     level.killstreakbundle[type] = struct::get_script_bundle("killstreak", "killstreak_" + type);
     level.killstreakbundle["inventory_" + type] = level.killstreakbundle[type];
-    level.var_e3544a0b = &get_max_health;
+    level.killstreakmaxhealthfunction = &get_max_health;
     /#
         assert(isdefined(level.killstreakbundle[type]));
     #/
@@ -23,7 +23,7 @@ function register_killstreak_bundle(type) {
 // Size: 0x6c
 function register_bundle(type, bundle) {
     level.killstreakbundle[type] = bundle;
-    level.var_e3544a0b = &get_max_health;
+    level.killstreakmaxhealthfunction = &get_max_health;
     /#
         assert(isdefined(level.killstreakbundle[type]));
     #/
@@ -72,7 +72,7 @@ function get_hack_timeout() {
 // Checksum 0x48312667, Offset: 0x450
 // Size: 0x48
 function get_hack_protection() {
-    return isdefined(get_bundle(self).var_1438204a) ? get_bundle(self).var_1438204a : 0;
+    return isdefined(get_bundle(self).kshackprotection) ? get_bundle(self).kshackprotection : 0;
 }
 
 // Namespace killstreak_bundles/killstreak_bundles

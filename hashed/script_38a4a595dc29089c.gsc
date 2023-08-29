@@ -45,8 +45,8 @@ function on_game_playing() {
         elevator.gameobjects = [];
         foreach (interact in var_ff30d7f) {
             if (isdefined(interact.mdl_gameobject)) {
-                var_6b437169 = struct::get(interact.target);
-                interact.mdl_gameobject.var_6b437169 = var_6b437169;
+                move_to = struct::get(interact.target);
+                interact.mdl_gameobject.move_to = move_to;
                 if (interact.script_noteworthy === "link_to") {
                     interact.mdl_gameobject.trigger enablelinkto();
                     interact.mdl_gameobject.trigger linkto(elevator);
@@ -90,8 +90,8 @@ function on_game_playing() {
         }
         foreach (gameobject in elevator.gameobjects) {
             gameobject.elevator = elevator;
-            if (isdefined(gameobject.var_6b437169) && gameobject.var_6b437169.script_noteworthy === "bottom") {
-                elevator.origin = gameobject.var_6b437169.origin;
+            if (isdefined(gameobject.move_to) && gameobject.move_to.script_noteworthy === "bottom") {
+                elevator.origin = gameobject.move_to.origin;
                 gameobject gameobjects::disable_object();
             }
         }
@@ -117,17 +117,17 @@ function function_65509998(activator) {
     level endon(#"game_ended");
     elevator = self.elevator;
     doors = elevator.doors;
-    var_6b437169 = self.var_6b437169;
+    move_to = self.move_to;
     gameobjects = elevator.gameobjects;
-    traverse = var_6b437169.traverse;
+    traverse = move_to.traverse;
     shot = "down";
-    if (var_6b437169.script_noteworthy == "top") {
+    if (move_to.script_noteworthy == "top") {
         shot = "up";
     }
     self playsound("evt_elevator_button_bell");
     activator gestures::function_56e00fbf("gestable_door_interact", undefined, 0);
     array::thread_all(gameobjects, &gameobjects::disable_object);
-    array::thread_all(doors, &function_b1005820, elevator, var_6b437169.script_noteworthy);
+    array::thread_all(doors, &function_b1005820, elevator, move_to.script_noteworthy);
     foreach (node in elevator.traversals) {
         unlinktraversal(node);
     }
@@ -135,23 +135,23 @@ function function_65509998(activator) {
     elevator playsound("evt_elevator_start");
     elevator playloopsound("evt_elevator_move", 0);
     elevator.align thread scene::play(#"hash_20bba52d7d060c5f", shot);
-    elevator moveto(var_6b437169.origin, 1.25, 0.2, 0.2);
+    elevator moveto(move_to.origin, 1.25, 0.2, 0.2);
     elevator waittill(#"movedone");
     elevator.align thread scene::play(#"hash_20bba52d7d060c5f", shot + "_idle");
     elevator playsound("evt_elevator_button_bell");
     elevator playsound("evt_elevator_stop");
     elevator stoploopsound(1);
-    array::thread_all(doors, &open_door, var_6b437169.script_noteworthy);
+    array::thread_all(doors, &open_door, move_to.script_noteworthy);
     array::wait_any(doors, "movedone");
     foreach (node in elevator.traversals) {
-        if (node.script_noteworthy == var_6b437169.script_noteworthy) {
+        if (node.script_noteworthy == move_to.script_noteworthy) {
             linktraversal(node);
         }
     }
     wait(0);
     foreach (gameobject in gameobjects) {
         gameobject.e_object.origin = gameobject.origin;
-        if (isdefined(gameobject.var_6b437169) && var_6b437169.script_noteworthy != gameobject.var_6b437169.script_noteworthy) {
+        if (isdefined(gameobject.move_to) && move_to.script_noteworthy != gameobject.move_to.script_noteworthy) {
             gameobject gameobjects::enable_object();
         }
     }

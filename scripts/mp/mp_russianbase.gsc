@@ -19,7 +19,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xedd760bf, Offset: 0x2b0
 // Size: 0x104
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("scriptmover", "center_explosion_rope_pulse", 1, 1, "counter");
     load::main();
     compass::setupminimap("");
@@ -39,7 +39,7 @@ function function_c3c859e1() {
         if (util::isfirstround() && draft::is_draft_this_round()) {
             crane = getent("linear_crane_moveable", "targetname");
             if (isdefined(crane)) {
-                crane notify(#"hash_25efbd2d83ec1441");
+                crane notify(#"draftend");
             }
             exploder::exploder("fxexp_glass_shatter");
             var_236af60c = getent("center_event_eploder_trig", "targetname");
@@ -113,10 +113,10 @@ function function_4dd23d6e() {
         return;
     }
     crane thread function_670cd4a3();
-    crane.var_cc69056e = getent("linear_crane_veh_kill", "targetname");
-    crane.var_cc69056e enablelinkto();
-    crane.var_cc69056e linkto(crane);
-    crane.var_cc69056e callback::on_trigger(&function_51905d68);
+    crane.veh_kill = getent("linear_crane_veh_kill", "targetname");
+    crane.veh_kill enablelinkto();
+    crane.veh_kill linkto(crane);
+    crane.veh_kill callback::on_trigger(&function_51905d68);
     crane.buttons = struct::get_array("linear_crane_buttons");
     crane.package = getentarray(crane.target, "targetname");
     array::run_all(crane.package, &linkto, crane);
@@ -129,10 +129,10 @@ function function_4dd23d6e() {
             waitframe(1);
         }
         waitresult = undefined;
-        waitresult = crane waittilltimeout(5, #"hash_25efbd2d83ec1441");
+        waitresult = crane waittilltimeout(5, #"draftend");
         if (waitresult._notify !== "draftend") {
             crane moveto(crane.endpoint, 4);
-            crane waittill(#"hash_25efbd2d83ec1441");
+            crane waittill(#"draftend");
         }
         crane.origin = crane.endpoint;
         crane moveto(crane.startpoint, 4);
@@ -172,7 +172,7 @@ function function_80c5243b(e_activator) {
         crane.location = #"end";
         destination = crane.endpoint;
     }
-    crane.var_cc69056e.var_1654952d = 1;
+    crane.veh_kill.var_1654952d = 1;
     crane function_e0954c11();
     exploder::stop_exploder("fxexp_gantry_on");
     exploder::exploder("fxexp_gantry_off");
@@ -188,7 +188,7 @@ function function_80c5243b(e_activator) {
         crane.var_60cf65bc.var_2563dc55 = 1;
     }
     wait(0.65);
-    crane.var_cc69056e.var_1654952d = 0;
+    crane.veh_kill.var_1654952d = 0;
     crane.var_60cf65bc.var_2563dc55 = 0;
     crane function_e0954c11();
     exploder::stop_exploder("fxexp_gantry_off");

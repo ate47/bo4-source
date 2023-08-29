@@ -255,7 +255,7 @@ function private function_2d90a835(localclientnum, radius) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x354ce6d6, Offset: 0xfc8
 // Size: 0x218
-function private function_d952430d(localclientnum, array&, targets) {
+function private function_d952430d(localclientnum, &array, targets) {
     var_e5cf40eb = [];
     foreach (target in targets) {
         var_e5cf40eb[target getentitynumber()] = 1;

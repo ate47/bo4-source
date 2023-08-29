@@ -1110,7 +1110,7 @@ function function_b8048aaf() {
         level.var_f1be1a60[i].var_83fad8a9 = var_83fad8a9;
         foreach (var_aed8d635 in level.var_f1be1a60[i].var_3abff2c8) {
             if (var_aed8d635.script_string == var_83fad8a9) {
-                var_aed8d635.var_2ff68741 = util::spawn_model(var_aed8d635.model, var_aed8d635.origin, var_aed8d635.angles);
+                var_aed8d635.mdl_number = util::spawn_model(var_aed8d635.model, var_aed8d635.origin, var_aed8d635.angles);
             }
         }
     }
@@ -1266,8 +1266,8 @@ function function_ae4e9016() {
             self.var_6f7cfe6d waittill(#"rotatedone");
             level.var_8237e7d3 unlink();
             foreach (var_aed8d635 in self.var_3abff2c8) {
-                if (isdefined(var_aed8d635.var_2ff68741)) {
-                    var_aed8d635.var_2ff68741 delete();
+                if (isdefined(var_aed8d635.mdl_number)) {
+                    var_aed8d635.mdl_number delete();
                 }
             }
             self.var_d6249c56 = e_player.var_d6249c56;

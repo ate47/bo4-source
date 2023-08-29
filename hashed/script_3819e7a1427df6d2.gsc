@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include script_3aa0f32b70d4f7cb;
-#include script_178024232e91b0a1;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
 
 #namespace aiutility;
 
@@ -195,8 +195,8 @@ function rapskilled(entity) {
 // Checksum 0xafea95d3, Offset: 0xcf0
 // Size: 0xce
 function function_e2010f4c(entity, var_515373f2) {
-    if (isdefined(entity) && isdefined(var_515373f2.var_3156b021) && var_515373f2.var_3156b021.size > 0) {
-        foreach (var_4e73c1e in var_515373f2.var_3156b021) {
+    if (isdefined(entity) && isdefined(var_515373f2.durations) && var_515373f2.durations.size > 0) {
+        foreach (var_4e73c1e in var_515373f2.durations) {
             if (var_4e73c1e.archetype === entity.archetype) {
                 return var_4e73c1e;
             }
@@ -222,23 +222,23 @@ function private tookflashbangdamage(entity) {
 // Size: 0xee
 function bb_getdamagedirection() {
     /#
-        if (isdefined(level.var_e638a387)) {
-            return level.var_e638a387;
+        if (isdefined(level._debug_damage_direction)) {
+            return level._debug_damage_direction;
         }
     #/
     if (self.damageyaw > 135 || self.damageyaw <= -135) {
-        self.var_ba257100 = "front";
+        self.damage_direction = "front";
         return "front";
     }
     if (self.damageyaw > 45 && self.damageyaw <= 135) {
-        self.var_ba257100 = "right";
+        self.damage_direction = "right";
         return "right";
     }
     if (self.damageyaw > -45 && self.damageyaw <= 45) {
-        self.var_ba257100 = "back";
+        self.damage_direction = "back";
         return "back";
     }
-    self.var_ba257100 = "left";
+    self.damage_direction = "left";
     return "left";
 }
 
@@ -259,8 +259,8 @@ function function_7e269d82() {
 // Size: 0x368
 function bb_actorgetdamagelocation() {
     /#
-        if (isdefined(level.var_a3367a70)) {
-            return level.var_a3367a70;
+        if (isdefined(level._debug_damage_pain_location)) {
+            return level._debug_damage_pain_location;
         }
     #/
     shitloc = self.damagelocation;
@@ -320,8 +320,8 @@ function bb_getdamageweaponclass() {
 // Checksum 0x6b0bec77, Offset: 0x1500
 // Size: 0x72
 function bb_getdamageweapon() {
-    if (isdefined(self.var_9f447e7e) && isdefined(self.var_9f447e7e.name)) {
-        return self.var_9f447e7e.name;
+    if (isdefined(self.special_weapon) && isdefined(self.special_weapon.name)) {
+        return self.special_weapon.name;
     }
     if (isdefined(self.damageweapon) && isdefined(self.damageweapon.name)) {
         return self.damageweapon.name;
@@ -346,8 +346,8 @@ function bb_getdamagemod() {
 // Size: 0xea
 function bb_getdamagetaken() {
     /#
-        if (isdefined(level.var_9518bd54)) {
-            return level.var_9518bd54;
+        if (isdefined(level._debug_damage_intensity)) {
+            return level._debug_damage_intensity;
         }
     #/
     damagetaken = self.damagetaken;
@@ -373,8 +373,8 @@ function bb_getdamagetaken() {
 // Checksum 0x48dc7275, Offset: 0x16b8
 // Size: 0x2a
 function bb_idgungetdamagedirection() {
-    if (isdefined(self.var_ba257100)) {
-        return self.var_ba257100;
+    if (isdefined(self.damage_direction)) {
+        return self.damage_direction;
     }
     return self bb_getdamagedirection();
 }
@@ -385,8 +385,8 @@ function bb_idgungetdamagedirection() {
 // Size: 0x248
 function bb_actorgetfataldamagelocation() {
     /#
-        if (isdefined(level.var_b2790b1d)) {
-            return level.var_b2790b1d;
+        if (isdefined(level._debug_damage_location)) {
+            return level._debug_damage_location;
         }
     #/
     shitloc = self.damagelocation;
@@ -418,7 +418,7 @@ function bb_actorgetfataldamagelocation() {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xae6a2909, Offset: 0x1940
 // Size: 0x25e
-function addaioverridedamagecallback(entity, callback, var_46c8afbb) {
+function addaioverridedamagecallback(entity, callback, addtofront) {
     /#
         assert(isentity(entity));
     #/
@@ -433,7 +433,7 @@ function addaioverridedamagecallback(entity, callback, var_46c8afbb) {
     } else if (!isarray(entity.aioverridedamage)) {
         entity.aioverridedamage = array(entity.aioverridedamage);
     }
-    if (isdefined(var_46c8afbb) && var_46c8afbb) {
+    if (isdefined(addtofront) && addtofront) {
         damageoverrides = [];
         damageoverrides[damageoverrides.size] = callback;
         foreach (override in entity.aioverridedamage) {
@@ -493,13 +493,13 @@ function addaioverridekilledcallback(entity, callback) {
         assert(isfunctionptr(callback));
     #/
     /#
-        assert(!isdefined(entity.var_da7889fd) || isarray(entity.var_da7889fd));
+        assert(!isdefined(entity.aioverridekilled) || isarray(entity.aioverridekilled));
     #/
-    if (!isdefined(entity.var_da7889fd)) {
-        entity.var_da7889fd = [];
-    } else if (!isarray(entity.var_da7889fd)) {
-        entity.var_da7889fd = array(entity.var_da7889fd);
+    if (!isdefined(entity.aioverridekilled)) {
+        entity.aioverridekilled = [];
+    } else if (!isarray(entity.aioverridekilled)) {
+        entity.aioverridekilled = array(entity.aioverridekilled);
     }
-    entity.var_da7889fd[entity.var_da7889fd.size] = callback;
+    entity.aioverridekilled[entity.aioverridekilled.size] = callback;
 }
 

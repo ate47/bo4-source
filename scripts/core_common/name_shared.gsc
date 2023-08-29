@@ -12,7 +12,7 @@ function setup() {
         assert(!isdefined(level.names));
     #/
     level.names = [];
-    level.var_120c5a2 = [];
+    level.namesindex = [];
     if (!isdefined(level.script)) {
         level.script = util::get_map_name();
     }
@@ -283,8 +283,8 @@ function get_name_for_nationality(nationality) {
     if (!isdefined(lastname)) {
         lastname = "";
     }
-    if (isdefined(level.var_a452f554)) {
-        self [[ level.var_a452f554 ]](lastname);
+    if (isdefined(level._override_rank_func)) {
+        self [[ level._override_rank_func ]](lastname);
     } else if (isdefined(self.airank) && self.airank == "none") {
         self.propername = lastname;
         return;

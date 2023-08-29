@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xcc240bc7, Offset: 0xa0
 // Size: 0xb4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ztcm::main(eventstruct);
     level.var_7a973c0e = createuimodel(getglobaluimodel(), "ZMHudGlobal.tcm");
     setuimodelvalue(createuimodel(level.var_7a973c0e, "active"), 0);

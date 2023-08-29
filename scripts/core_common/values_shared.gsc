@@ -70,7 +70,7 @@ function __init__() {
 // Params 5, eflags: 0x21 linked
 // Checksum 0x5b2cf81, Offset: 0x8d8
 // Size: 0x15e
-function register(str_name, var_3509ed3e, call_on = "$self", func, vararg...) {
+function register(str_name, var_3509ed3e, call_on = "$self", func, ...) {
     if (!isdefined(level.values)) {
         level.values = [];
     }
@@ -111,7 +111,7 @@ function private assert_registered(str_name) {
 // Params 4, eflags: 0x21 linked
 // Checksum 0x9ce9cb4a, Offset: 0xae0
 // Size: 0x86
-function default_func(str_name, call_on, value, vararg...) {
+function default_func(str_name, call_on, value, ...) {
     if (assert_registered(str_name)) {
         s_value = level.values[str_name];
         s_value.default_call_on = call_on;
@@ -433,7 +433,7 @@ function private set_ignore_health_regen_delay(b_value = 1) {
 // Params 4, eflags: 0x24
 // Checksum 0xed43bebf, Offset: 0x1780
 // Size: 0xfe
-function private validate(str_name, call_on, func, vararg...) {
+function private validate(str_name, call_on, func, ...) {
     /#
         a_registered = getarraykeys(level.values);
         if (!isinarray(a_registered, hash(str_name))) {

@@ -3,7 +3,7 @@
 #include scripts/abilities/ability_player.gsc;
 #include scripts/core_common/ai/zombie_vortex.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/zm_common/zm_perks.gsc;
 #include scripts/zm_common/zm_player.gsc;
 #include scripts/zm_common/zm_laststand.gsc;

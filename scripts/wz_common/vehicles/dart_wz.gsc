@@ -233,7 +233,7 @@ function on_vehicle_damage(params) {
 // Params 1, eflags: 0x40
 // Checksum 0xf69cef3d, Offset: 0xe70
 // Size: 0x19c
-function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
+function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -280,7 +280,7 @@ function watchremotecontroldeactivate() {
 // Params 1, eflags: 0x40
 // Checksum 0x8f86a72, Offset: 0x1100
 // Size: 0x8c
-function event<exit_vehicle> codecallback_vehicleexit(eventstruct) {
+function event_handler[exit_vehicle] codecallback_vehicleexit(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

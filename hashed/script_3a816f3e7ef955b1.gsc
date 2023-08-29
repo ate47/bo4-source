@@ -55,19 +55,19 @@ function function_18d7622a(info) {
         }
         destinations = arraysort(self.destinations, self.origin, 0, 1);
         destination = destinations[0];
-        var_f8ddc7bb = "fxexp_teleporter_a_tell";
+        tell = "fxexp_teleporter_a_tell";
         inuse = "fxexp_teleporter_b_inuse";
         if (destination.var_362fcf1d === "b") {
-            var_f8ddc7bb = "fxexp_teleporter_b_tell";
+            tell = "fxexp_teleporter_b_tell";
             inuse = "fxexp_teleporter_a_inuse";
         }
         exploder::exploder(inuse);
-        exploder::exploder(var_f8ddc7bb);
+        exploder::exploder(tell);
         exploder::stop_exploder("fxexp_teleporter_a_light_ready");
         exploder::exploder("fxexp_teleporter_a_light_active");
         exploder::stop_exploder("fxexp_teleporter_b_light_ready");
         exploder::exploder("fxexp_teleporter_b_light_active");
-        level util::delay(2, undefined, &exploder::stop_exploder, var_f8ddc7bb);
+        level util::delay(2, undefined, &exploder::stop_exploder, tell);
         level util::delay(2, undefined, &exploder::stop_exploder, "fxexp_teleporter_a_light_active");
         level util::delay(2.5, undefined, &exploder::exploder, "fxexp_teleporter_a_light_cooldwn");
         level util::delay(2, undefined, &exploder::stop_exploder, "fxexp_teleporter_b_light_active");

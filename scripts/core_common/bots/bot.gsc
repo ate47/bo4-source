@@ -13,8 +13,8 @@
 #include scripts/core_common/bots/bot_action.gsc;
 #include scripts/core_common/animation_shared.gsc;
 #include scripts/core_common/ai_shared.gsc;
-#include script_522aeb6ae906391e;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 
 #namespace bot;
 
@@ -209,8 +209,8 @@ function remove_bot(bot) {
     if (!bot istestclient()) {
         return;
     }
-    if (isdefined(level.var_e51ecd36)) {
-        bot [[ level.var_e51ecd36 ]]();
+    if (isdefined(level.onbotremove)) {
+        bot [[ level.onbotremove ]]();
     }
     bot botdropclient();
 }

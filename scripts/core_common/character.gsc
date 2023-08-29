@@ -38,7 +38,7 @@ function newcharacter() {
         return;
     }
     self.anim_gunhand = "none";
-    self [[ anim.var_773fa7af ]](oldgunhand);
+    self [[ anim.putguninhand ]](oldgunhand);
 }
 
 // Namespace character/character

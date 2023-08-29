@@ -23,7 +23,7 @@
 #include scripts/core_common/ai_shared.gsc;
 #include scripts/abilities/ability_player.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 
 #namespace zm_weap_hand_ouranos;
 
@@ -755,7 +755,7 @@ function function_7a1456c5(e_target) {
             e_target thread namespace_9ff9f642::slowdown(#"hash_1e38c032f8b8621c");
         }
         wait(3);
-        e_target notify(#"hash_508ff80fa202a477");
+        e_target notify(#"stop_slow");
         e_target.var_6cec0263 = undefined;
     }
 }
@@ -765,7 +765,7 @@ function function_7a1456c5(e_target) {
 // Checksum 0xbf2712c4, Offset: 0x3320
 // Size: 0x138
 function function_d54becbd() {
-    self endon(#"death", #"hash_508ff80fa202a477");
+    self endon(#"death", #"stop_slow");
     while (1) {
         wait(randomfloatrange(1, 2.5));
         n_rand = randomint(3);

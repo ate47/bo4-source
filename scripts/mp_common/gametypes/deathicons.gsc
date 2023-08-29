@@ -41,7 +41,7 @@ function init() {
 // Checksum 0x234cb8c1, Offset: 0x188
 // Size: 0xe
 function on_player_connect() {
-    self.var_8b7747b9 = [];
+    self.selfdeathicons = [];
 }
 
 // Namespace deathicons/deathicons

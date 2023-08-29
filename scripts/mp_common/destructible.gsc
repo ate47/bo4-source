@@ -360,7 +360,7 @@ function car_fire_think(attacker) {
 // Params 1, eflags: 0x40
 // Checksum 0x2093d0ce, Offset: 0x1528
 // Size: 0x11c
-function event<destructible> codecallback_destructibleevent(eventstruct) {
+function event_handler[destructible] codecallback_destructibleevent(eventstruct) {
     if (eventstruct.event == "broken") {
         event_callback(eventstruct.notify_type, eventstruct.attacker, eventstruct.weapon, eventstruct.piece, eventstruct.point, eventstruct.dir, eventstruct.mod);
         self notify(eventstruct.event, {#attacker:eventstruct.attacker, #type:eventstruct.notify_type});

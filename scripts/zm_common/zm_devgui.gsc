@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/ai/zombie_shared.gsc;
 #include scripts/core_common/ai/zombie_death.gsc;

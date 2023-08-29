@@ -2,7 +2,7 @@
 #include scripts/zm_common/zm_utility.gsc;
 #include scripts/core_common/system_shared.gsc;
 #include scripts/core_common/clientfield_shared.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 
 #namespace namespace_9ff9f642;
 

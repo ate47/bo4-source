@@ -489,7 +489,7 @@ function waittill_level_string(msg, ent, otherent) {
 // Params 1, eflags: 0x20
 // Checksum 0x55aadb9b, Offset: 0x1ba8
 // Size: 0x9c
-function waittill_multiple(vararg...) {
+function waittill_multiple(...) {
     s_tracker = spawnstruct();
     s_tracker._wait_count = 0;
     for (i = 0; i < vararg.size; i++) {
@@ -528,7 +528,7 @@ function break_glass(n_radius = 50) {
 // Params 1, eflags: 0x20
 // Checksum 0x36f0c65a, Offset: 0x1d40
 // Size: 0x1c4
-function waittill_multiple_ents(vararg...) {
+function waittill_multiple_ents(...) {
     a_ents = [];
     a_notifies = [];
     for (i = 0; i < vararg.size; i++) {
@@ -697,7 +697,7 @@ function isstunned() {
 // Params 3, eflags: 0x21 linked
 // Checksum 0x8837140, Offset: 0x2438
 // Size: 0x3a
-function single_func(entity, func, vararg...) {
+function single_func(entity, func, ...) {
     return _single_func(entity, func, vararg);
 }
 
@@ -791,7 +791,7 @@ function _single_func(entity, func, a_vars) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xaa0d02bd, Offset: 0x2a10
 // Size: 0x6e
-function _clean_up_arg_array(a_vars&) {
+function _clean_up_arg_array(&a_vars) {
     for (i = a_vars.size - 1; i >= 0; i--) {
         if (a_vars[i] === undefined) {
             arrayremoveindex(a_vars, i, 0);
@@ -829,7 +829,7 @@ function call_func(s_func) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0xbeab1519, Offset: 0x2be0
 // Size: 0x3c
-function single_thread(entity, func, vararg...) {
+function single_thread(entity, func, ...) {
     _single_thread(entity, func, undefined, undefined, vararg);
 }
 
@@ -837,7 +837,7 @@ function single_thread(entity, func, vararg...) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x12b5ad14, Offset: 0x2c28
 // Size: 0x3c
-function single_thread_argarray(entity, func, a_vars&) {
+function single_thread_argarray(entity, func, &a_vars) {
     _single_thread(entity, func, undefined, undefined, a_vars);
 }
 
@@ -845,7 +845,7 @@ function single_thread_argarray(entity, func, a_vars&) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0x87d7a87c, Offset: 0x2c70
 // Size: 0x44
-function function_50f54b6f(entity, func, arg1, a_vars&) {
+function function_50f54b6f(entity, func, arg1, &a_vars) {
     _single_thread(entity, func, arg1, undefined, a_vars);
 }
 
@@ -853,7 +853,7 @@ function function_50f54b6f(entity, func, arg1, a_vars&) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0x5adaccc9, Offset: 0x2cc0
 // Size: 0x54
-function function_cf55c866(entity, func, arg1, arg2, a_vars&) {
+function function_cf55c866(entity, func, arg1, arg2, &a_vars) {
     _single_thread(entity, func, arg1, arg2, a_vars);
 }
 
@@ -861,7 +861,7 @@ function function_cf55c866(entity, func, arg1, arg2, a_vars&) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0x723955af, Offset: 0x2d20
 // Size: 0x9b2
-function _single_thread(entity, func, arg1, arg2, a_vars&) {
+function _single_thread(entity, func, arg1, arg2, &a_vars) {
     _clean_up_arg_array(a_vars);
     /#
         /#
@@ -1833,7 +1833,7 @@ function set_console_status() {
             assert(level.console == getdvarstring(#"consolegame") == "<unknown string>", "<unknown string>");
         #/
     }
-    if (!isdefined(level.var_94e3c666)) {
+    if (!isdefined(level.consolexenon)) {
         level.xenon = getdvarstring(#"xenongame") == "true";
     } else {
         /#
@@ -2033,10 +2033,10 @@ function button_held_think(which_button) {
         usinggamepad = self gamepadusedlast();
         use_time = ispc() && !usinggamepad ? 0 : 250;
         if (self._holding_button[which_button]) {
-            if (!self [[ level.var_3aa48dfc[which_button] ]]()) {
+            if (!self [[ level._button_funcs[which_button] ]]()) {
                 self._holding_button[which_button] = 0;
             }
-        } else if (self [[ level.var_3aa48dfc[which_button] ]]()) {
+        } else if (self [[ level._button_funcs[which_button] ]]()) {
             if (time_started == 0) {
                 time_started = gettime();
             }
@@ -2190,15 +2190,15 @@ function waittill_vehicle_move_up_button_pressed() {
 // Checksum 0x9d0f27aa, Offset: 0x6a38
 // Size: 0xfe
 function init_button_wrappers() {
-    if (!isdefined(level.var_3aa48dfc)) {
-        level.var_3aa48dfc[0] = &usebuttonpressed;
-        level.var_3aa48dfc[2] = &adsbuttonpressed;
-        level.var_3aa48dfc[3] = &attackbuttonpressed;
-        level.var_3aa48dfc[1] = &stancebuttonpressed;
-        level.var_3aa48dfc[6] = &actionslotfourbuttonpressed;
+    if (!isdefined(level._button_funcs)) {
+        level._button_funcs[0] = &usebuttonpressed;
+        level._button_funcs[2] = &adsbuttonpressed;
+        level._button_funcs[3] = &attackbuttonpressed;
+        level._button_funcs[1] = &stancebuttonpressed;
+        level._button_funcs[6] = &actionslotfourbuttonpressed;
         /#
-            level.var_3aa48dfc[4] = &up_button_pressed;
-            level.var_3aa48dfc[5] = &down_button_pressed;
+            level._button_funcs[4] = &up_button_pressed;
+            level._button_funcs[5] = &down_button_pressed;
         #/
     }
 }
@@ -2399,7 +2399,7 @@ function note_elapsed_time(start_time, label = "unspecified") {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x77d0181f, Offset: 0x70c8
 // Size: 0x98
-function record_elapsed_time(start_time, elapsed_time_array&) {
+function record_elapsed_time(start_time, &elapsed_time_array) {
     elapsed_time = get_elapsed_time(start_time, getmicrosecondsraw());
     if (!isdefined(elapsed_time_array)) {
         elapsed_time_array = [];
@@ -2413,7 +2413,7 @@ function record_elapsed_time(start_time, elapsed_time_array&) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x1afa6021, Offset: 0x7168
 // Size: 0x284
-function note_elapsed_times(elapsed_time_array&, label = "unspecified") {
+function note_elapsed_times(&elapsed_time_array, label = "unspecified") {
     /#
         if (!isarray(elapsed_time_array)) {
             return;
@@ -2988,7 +2988,7 @@ function auto_delete(n_mode = 1, n_min_time_alive = 0, n_dist_horizontal = 0, n_
 // Params 5, eflags: 0x0
 // Checksum 0xcb1c1338, Offset: 0x8c78
 // Size: 0x436
-function query_ents(a_kvps_match&, b_match_all = 1, a_kvps_ingnore&, b_ignore_spawners = 0, b_match_substrings = 0) {
+function query_ents(&a_kvps_match, b_match_all = 1, &a_kvps_ingnore, b_ignore_spawners = 0, b_match_substrings = 0) {
     a_ret = [];
     if (b_match_substrings) {
         a_all_ents = arraycombine(getentarray(), level.struct, 0, 0);
@@ -3037,7 +3037,7 @@ function query_ents(a_kvps_match&, b_match_all = 1, a_kvps_ingnore&, b_ignore_sp
 // Params 4, eflags: 0x1 linked
 // Checksum 0xcd1467e0, Offset: 0x90b8
 // Size: 0x170
-function _query_ents_by_substring_helper(a_ents&, str_value, str_key = "targetname", b_ignore_spawners = 0) {
+function _query_ents_by_substring_helper(&a_ents, str_value, str_key = "targetname", b_ignore_spawners = 0) {
     a_ret = [];
     foreach (ent in a_ents) {
         if (b_ignore_spawners && isspawner(ent)) {
@@ -4841,7 +4841,7 @@ function function_22bf0a4a() {
 // Params 3, eflags: 0x21 linked
 // Checksum 0x5d00a5e6, Offset: 0xded0
 // Size: 0x2dc
-function register_callback(str_kvp, func, vararg...) {
+function register_callback(str_kvp, func, ...) {
     var_a12e87bd = hash(str_kvp);
     var_bcb861f = self.(str_kvp + "_target");
     if (isdefined(var_bcb861f)) {
@@ -4972,7 +4972,7 @@ function callback(str_kvp) {
 // Params 3, eflags: 0x20
 // Checksum 0xe9a80f99, Offset: 0xe8a8
 // Size: 0xca
-function custom_callback(str_name, str_kvp, vararg...) {
+function custom_callback(str_name, str_kvp, ...) {
     var_e028d750 = function_7ed1d198(str_kvp, str_name);
     if (var_e028d750.size) {
         foreach (var_8507e893 in var_e028d750) {

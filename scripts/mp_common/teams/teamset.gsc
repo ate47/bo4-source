@@ -12,8 +12,8 @@ function init() {
     if (!isdefined(game.carry_flagmodels)) {
         game.carry_flagmodels = [];
     }
-    if (!isdefined(game.var_a5542ecb)) {
-        game.var_a5542ecb = [];
+    if (!isdefined(game.carry_icon)) {
+        game.carry_icon = [];
     }
     game.flagmodels[#"neutral"] = "p8_mp_flag_pole_1";
 }

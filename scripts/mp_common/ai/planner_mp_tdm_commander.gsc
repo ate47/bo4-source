@@ -5,8 +5,8 @@
 #include scripts/core_common/ai/planner_generic_commander.gsc;
 #include scripts/core_common/ai/planner_commander_utility.gsc;
 #include scripts/core_common/ai/planner_commander.gsc;
-#include script_31e56101095f174b;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/planner.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 
 #namespace plannermptdmcommander;
 

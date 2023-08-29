@@ -224,7 +224,7 @@ function function_ac341c2c() {
     speaker = util::spawn_model(#"tag_origin", self.origin, self.angles);
     while (isdefined(speaker)) {
         speaker playsoundwithnotify("vox_muse_lobby_pa", "pa_done");
-        speaker waittill(#"hash_70ee2dd3c9b3b57b", #"death");
+        speaker waittill(#"pa_done", #"death");
         wait(randomfloatrange(60, 120));
     }
 }

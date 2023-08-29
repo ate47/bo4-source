@@ -13,7 +13,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x2c70aad7, Offset: 0x180
 // Size: 0x13c
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("toplayer", "toggle_player_steam", 1, 1, "int", &function_37488be, 0, 0);
     level.var_bbb8810e = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";

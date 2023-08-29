@@ -204,7 +204,7 @@ function getminimumflyheight() {
 // Checksum 0x897cf083, Offset: 0xb38
 // Size: 0x3c4
 function callstrike(flightplan) {
-    level.var_d7de633 = [];
+    level.bomberdamagedents = [];
     level.bomberdamagedentscount = 0;
     level.bomberdamagedentsindex = 0;
     /#
@@ -231,9 +231,9 @@ function callstrike(flightplan) {
     plane_seperation = 25;
     side_offset = vectorscale(side, plane_seperation);
     level thread planestrike(flightplan.owner, requireddeathcount, startpoint, endpoint, bombtime, flytime, flightplan.speed, flightplan.bombspeedscale, direction, flightplan.planespawncallback);
-    wait(flightplan.var_a24fd240);
+    wait(flightplan.planespacing);
     level thread planestrike(flightplan.owner, requireddeathcount, startpoint + side_offset, endpoint + side_offset, bombtime, flytime, flightplan.speed, flightplan.bombspeedscale, direction, flightplan.planespawncallback);
-    wait(flightplan.var_a24fd240);
+    wait(flightplan.planespacing);
     side_offset = vectorscale(side, -1 * plane_seperation);
     level thread planestrike(flightplan.owner, requireddeathcount, startpoint + side_offset, endpoint + side_offset, bombtime, flytime, flightplan.speed, flightplan.bombspeedscale, direction, flightplan.planespawncallback);
 }

@@ -1024,7 +1024,7 @@ function watchweaponchange() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x12439e79, Offset: 0x4ed0
 // Size: 0x6a
-function function_57f553e9(var_85947e0d&, maxallowed) {
+function function_57f553e9(&var_85947e0d, maxallowed) {
     if (var_85947e0d.size <= maxallowed) {
         return undefined;
     }

@@ -10,7 +10,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xdd4753e0, Offset: 0x88
 // Size: 0x1ac
-function event<event_10eed35b> function_d8f1209f(eventstruct) {
+function event_handler[event_10eed35b] function_d8f1209f(eventstruct) {
     if (eventstruct.eventid != 1) {
         return;
     }

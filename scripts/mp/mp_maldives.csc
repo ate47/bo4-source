@@ -8,7 +8,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xc87be761, Offset: 0x128
 // Size: 0x176
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level.var_bbb8810e = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     setsaveddvar(#"enable_global_wind", 1);
@@ -20,7 +20,7 @@ function event<level_init> main(eventstruct) {
     level.domflagbasefxoverride = &dom_flag_base_fx_override;
     level.domflagcapfxoverride = &dom_flag_cap_fx_override;
     util::waitforclient(0);
-    level.var_f5cd144f = "ui_cam_endgame_mp_common";
+    level.endgamexcamname = "ui_cam_endgame_mp_common";
     level.var_aefa616f = 1;
 }
 

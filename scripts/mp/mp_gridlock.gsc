@@ -15,7 +15,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xa03b3233, Offset: 0x118
 // Size: 0x174
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     callback::on_game_playing(&on_game_playing);
     mp_gridlock_fx::main();
     mp_gridlock_sound::main();

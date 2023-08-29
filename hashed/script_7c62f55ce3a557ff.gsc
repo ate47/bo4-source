@@ -12,7 +12,7 @@
 #include scripts/zm_common/zm_score.gsc;
 #include scripts/zm_common/zm_audio.gsc;
 #include scripts/zm/ai/zm_ai_brutus.gsc;
-#include script_41fe08c37d53a635;
+#include scripts/core_common/ai/systems/destructible_character.gsc;
 #include scripts/core_common/ai/zombie_death.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/ai/archetype_brutus.gsc;

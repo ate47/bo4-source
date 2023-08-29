@@ -209,10 +209,10 @@ function function_84d0eb82(a_ents) {
     waitframe(2);
     if (isdefined(var_c09154b7)) {
         var_b2503142 = getent("rocket_cradle_clip", "targetname");
-        var_543480f3 = util::spawn_model(#"tag_origin", var_c09154b7 gettagorigin("tag_link_all"), var_c09154b7 gettagangles("tag_link_all"));
+        link = util::spawn_model(#"tag_origin", var_c09154b7 gettagorigin("tag_link_all"), var_c09154b7 gettagangles("tag_link_all"));
         var_b2503142 setmovingplatformenabled(1, 0);
-        var_543480f3 linkto(var_c09154b7, "tag_link_all");
-        var_b2503142 linkto(var_543480f3);
+        link linkto(var_c09154b7, "tag_link_all");
+        var_b2503142 linkto(link);
     }
 }
 
@@ -239,7 +239,7 @@ function function_e3ec98e4(a_ents) {
     }
     array::run_all(rumbles, &playrumblelooponentity, "mp_cosdmodrome_gantry_prep_rumble");
     function_aa8af5cd(level.var_40263d6, "vox_rupa_pa_rocket_sequence_3");
-    a_ents[#"prop 2"] waittill(#"hash_13645d08d2af742b", #"death");
+    a_ents[#"prop 2"] waittill(#"stop_rumble", #"death");
     array::run_all(rumbles, &stoprumble, "mp_cosdmodrome_rocket_ready_rumble");
     if (isdefined(a_ents[#"prop 2"])) {
         a_ents[#"prop 2"] playrumbleonentity("mp_cosdmodrome_rocket_ready_rumble");
@@ -261,7 +261,7 @@ function function_269c793(a_ents) {
         a_ents[#"prop 3"] endon(#"death");
         var_f81682b6 = util::spawn_model(#"tag_origin", self.var_a9572efa.origin);
         var_f81682b6 linkto(a_ents[#"prop 3"]);
-        a_ents[#"prop 3"] waittill(#"hash_223b4b59d115d311");
+        a_ents[#"prop 3"] waittill(#"start_damage");
         a_ents[#"prop 3"] util::delay("line_23", undefined, &function_aa8af5cd, level.var_40263d6, "vox_rupa_pa_rocket_sequence_23");
         level.var_578a0ca4 thread function_7be405f8();
         self.var_a9572efa triggerenable(1);
@@ -274,7 +274,7 @@ function function_269c793(a_ents) {
             self.var_a9572efa triggerenable(0);
         }
         a_ents[#"prop 3"] thread util::delete_on_death(var_f81682b6);
-        a_ents[#"prop 3"] waittill(#"hash_23a67de0587789f9");
+        a_ents[#"prop 3"] waittill(#"cleared_tower");
         level thread function_aa8af5cd(level.var_40263d6, "vox_rupa_pa_rocket_sequence_20");
     }
 }

@@ -72,7 +72,7 @@ function function_371a151b(einflictor, eattacker, idamage, idflags, smeansofdeat
 // Params 1, eflags: 0x40
 // Checksum 0xc5e0b2cd, Offset: 0x450
 // Size: 0xdc
-function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
+function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -103,7 +103,7 @@ function watchownerdisconnect(player) {
 // Params 1, eflags: 0x40
 // Checksum 0xb15c4f56, Offset: 0x5e0
 // Size: 0xf4
-function event<exit_vehicle> codecallback_vehicleexit(eventstruct) {
+function event_handler[exit_vehicle] codecallback_vehicleexit(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

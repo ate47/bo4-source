@@ -3,7 +3,7 @@
 #include scripts/zm_common/zm_stats.gsc;
 #include scripts/zm_common/zm_bgb.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/system_shared.gsc;
 #include scripts/core_common/math_shared.gsc;
 #include scripts/core_common/clientfield_shared.gsc;

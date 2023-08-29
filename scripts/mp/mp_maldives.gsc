@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x5b2df0cf, Offset: 0x88
 // Size: 0x76
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     load::main();
     compass::setupminimap("");
     level.var_cddcf1e3 = &function_261b0d99;

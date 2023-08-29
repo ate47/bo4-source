@@ -79,7 +79,7 @@ function function_a1aa3b85(var_3245778e, weapon) {
         break;
     }
     if (isdefined(self)) {
-        self notify(#"hash_42c444c25b02cd57");
+        self notify(#"bladeended");
     }
 }
 
@@ -90,7 +90,7 @@ function function_a1aa3b85(var_3245778e, weapon) {
 function function_b0105ee8(var_3245778e, weapon) {
     if (isdefined(self)) {
         self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 0);
-        self notify(#"hash_42c444c25b02cd57");
+        self notify(#"bladeended");
     }
     self.var_f5455815 = 0;
 }
@@ -104,7 +104,7 @@ function function_c5c8d661(weapon) {
     self endon("4066015d94dac5b3");
     self endon(#"death");
     self endon(#"disconnect");
-    self endon(#"hash_42c444c25b02cd57");
+    self endon(#"bladeended");
     if (self isplayerswimming()) {
         self function_d6805ff5(weapon);
     }

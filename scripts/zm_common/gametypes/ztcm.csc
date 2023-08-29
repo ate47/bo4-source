@@ -8,7 +8,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xbd011b61, Offset: 0x78
 // Size: 0xa4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     level._zombie_gamemodeprecache = &onprecachegametype;
     level._zombie_gamemodemain = &onstartgametype;
     if (!level flag::exists(#"ztcm")) {

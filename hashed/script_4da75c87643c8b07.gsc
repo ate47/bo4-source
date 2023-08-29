@@ -26,7 +26,7 @@ function __init__() {
 // Params 1, eflags: 0x40
 // Checksum 0x3861cde1, Offset: 0x120
 // Size: 0x8c
-function event<event_9673dc9a> function_3981d015(eventstruct) {
+function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (eventstruct.ent.targetname === "blast_door") {
         if (eventstruct.state == 0) {
             eventstruct.ent thread function_feb37b9f("red");

@@ -726,7 +726,7 @@ function add_vehicle_at_eye_trace(vehiclename) {
         trace = host bot::eye_trace();
         veh_spawner = getent(vehiclename + "<unknown string>", "<unknown string>");
         vehicle = veh_spawner spawnfromspawner(vehiclename, 1, 1, 1);
-        vehicle asmrequestsubstate(#"hash_2d4b292477dc5711");
+        vehicle asmrequestsubstate(#"locomotion@movement");
         waitframe(1);
         vehicle makevehicleusable();
         vehicle.origin = trace[#"position"];

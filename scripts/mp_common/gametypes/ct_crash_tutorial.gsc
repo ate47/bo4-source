@@ -40,7 +40,7 @@ function init() {
     level.var_30264985 = 1;
     level.var_ed73ac32 = 0;
     setdvar(#"hash_48162cd174e3034d", 0);
-    ability_player::register_gadget_primed_callbacks(36, &function_8da58e58);
+    ability_player::register_gadget_primed_callbacks(36, &tak5_start);
     callback::on_vehicle_damage(&function_2a6fb094);
     level.var_ae120f18 = array(#"hash_73f4f0c897cb832");
     level flag::init("opening_battle");
@@ -82,8 +82,8 @@ function function_d0ad09c5(effect) {
 // Params 2, eflags: 0x0
 // Checksum 0x30ba5121, Offset: 0x1048
 // Size: 0x28
-function function_8da58e58(slot, weapon) {
-    level notify(#"hash_5032db49f8954399");
+function tak5_start(slot, weapon) {
+    level notify(#"tak5_start");
 }
 
 // Namespace ct_crash_tutorial/ct_crash_tutorial
@@ -358,7 +358,7 @@ function function_6dd7691f() {
         level thread ct_vo::play_vo(#"hash_50cde7f5b369d294", 0);
         ct_vo::function_3ca1b77d();
     } else {
-        level notify(#"hash_4c5443e79e990efb");
+        level notify(#"ammo_watch");
         player thread ct_utils::function_61c3d59c(#"hash_76238e91d49336be", undefined);
     }
     player thread function_a929047f();
@@ -596,7 +596,7 @@ function function_8ab81320() {
 // Checksum 0x23f84445, Offset: 0x3fa0
 // Size: 0xec
 function function_89bb199b() {
-    level endon(#"hash_28ace86397435b9e");
+    level endon(#"mantis_enemies");
     trigger::wait_till("trigger_enemies");
     if (!level.players[0] isinvehicle()) {
         if (isalive(level.mantis)) {
@@ -753,7 +753,7 @@ function function_667b9fbc() {
 function function_9b2c973f() {
     level endon(#"combattraining_logic_finished");
     self endon(#"hash_600461f8d5fa1837");
-    level endon(#"hash_2598ad8194166d30");
+    level endon(#"squad_dead");
     a_bots = self ct_bots::function_71ec2b36();
     var_c5a2f4b9 = a_bots.size;
     var_c378327e = 0;
@@ -829,7 +829,7 @@ function function_119c4576(s_loc) {
 // Checksum 0xf510d5af, Offset: 0x4f98
 // Size: 0x264
 function function_57da4e0f() {
-    level endon(#"combattraining_logic_finished", #"hash_65df7bb0d8d09a9b");
+    level endon(#"combattraining_logic_finished", #"mantis_failed");
     level.var_72c3ea74 = struct::get_array("s_mantis_enemy_1");
     level.var_da5432a2 = 0;
     level thread ct_bots::activate_bots(level.var_72c3ea74.size, #"axis");
@@ -900,7 +900,7 @@ function function_457bfbbf() {
 // Checksum 0x1e38b9c9, Offset: 0x5458
 // Size: 0x11e
 function function_2ba574d8() {
-    level endon(#"combattraining_logic_finished", #"hash_65df7bb0d8d09a9b");
+    level endon(#"combattraining_logic_finished", #"mantis_failed");
     s_result = undefined;
     s_result = self waittill(#"death");
     level thread function_eabeced7();
@@ -951,7 +951,7 @@ function function_58c62280(b_keyline, b_ignoreall) {
     }
     self endon(#"death");
     if (isdefined(b_ignoreall) && b_ignoreall) {
-        self val::set(#"hash_173f59746fdf0fbe", "ignoreall", 1);
+        self val::set(#"crash_bot", "ignoreall", 1);
     }
     self.n_wait = s_loc.script_wait;
     self.n_index = s_loc.script_int;
@@ -1396,7 +1396,7 @@ function function_c93a1ee3() {
 // Checksum 0x244399b2, Offset: 0x7510
 // Size: 0x170
 function function_c3ff6f27() {
-    level endon(#"combattraining_logic_finished", #"hash_5a506c02d7214bf2", #"hash_24c1093a37be9df1");
+    level endon(#"combattraining_logic_finished", #"battle_over", #"hash_24c1093a37be9df1");
     self endon(#"death");
     level flag::wait_till("squad_health_70");
     wait(10);
@@ -1466,7 +1466,7 @@ function function_9ece6b44() {
 // Checksum 0x1b54b1fd, Offset: 0x7960
 // Size: 0x3b4
 function function_779e90b6() {
-    level endon(#"combattraining_logic_finished", #"hash_29868b91d58513af");
+    level endon(#"combattraining_logic_finished", #"supply_done");
     while (1) {
         s_result = undefined;
         s_result = level.players[0] waittill(#"supplypod_placed");
@@ -1583,7 +1583,7 @@ function function_9d4e5572() {
 // Size: 0x106
 function function_22014724() {
     self endon(#"death");
-    level endon(#"hash_836c94d03625fc0", #"combattraining_logic_finished");
+    level endon(#"flash_bang", #"combattraining_logic_finished");
     while (1) {
         if (level.var_ad7c0539 === 4) {
             self val::reset("protect", "takedamage");
@@ -1611,7 +1611,7 @@ function function_d08d8968() {
     level thread ct_vo::play_vo(#"hash_4ab0ccbfd177602f");
     setslowmotion(1, 0.2, 2);
     s_result = undefined;
-    s_result = level waittilltimeout(2.5, #"hash_5032db49f8954399");
+    s_result = level waittilltimeout(2.5, #"tak5_start");
     ct_utils::function_c2a10fc();
     setslowmotion(0.2, 1, 2);
     level notify(#"hash_11ec8b463a6ad0f");
@@ -1749,9 +1749,9 @@ function function_44b78b73() {
 // Params 1, eflags: 0x0
 // Checksum 0xfb061d13, Offset: 0x8ed0
 // Size: 0x552
-function function_d736bfff(str_event) {
-    self notify(#"hash_4c5443e79e990efb");
-    self endon(#"death", #"hash_4c5443e79e990efb");
+function ammo_watch(str_event) {
+    self notify(#"ammo_watch");
+    self endon(#"death", #"ammo_watch");
     level flag::wait_till("supply_done");
     wait(1);
     while (1) {
@@ -1863,8 +1863,8 @@ function function_a929047f() {
 // Checksum 0x725a7020, Offset: 0x96e0
 // Size: 0xc0
 function function_885de242() {
-    level notify(#"hash_4c5443e79e990efb");
-    level endon(#"combattraining_logic_finished", #"hash_4c5443e79e990efb");
+    level notify(#"ammo_watch");
+    level endon(#"combattraining_logic_finished", #"ammo_watch");
     while (1) {
         s_result = undefined;
         s_result = level.players[0] waittill(#"supplypod_placed");

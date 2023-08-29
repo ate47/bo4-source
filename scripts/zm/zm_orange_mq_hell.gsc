@@ -6,7 +6,7 @@
 #include script_4333a03353e1e13a;
 #include scripts/zm/zm_orange_ee_dynamite.gsc;
 #include scripts/zm_common/bgbs/zm_bgb_anywhere_but_here.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/zm_common/zm_player.gsc;
 #include scripts/zm_common/zm_audio.gsc;

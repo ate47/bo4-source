@@ -90,7 +90,7 @@ function function_a439ae56(missile, weapon, attacker) {
 // Params 1, eflags: 0x40
 // Checksum 0x329ff725, Offset: 0x5b0
 // Size: 0x10c
-function event<missile_fire> function_a3d258b6(eventstruct) {
+function event_handler[missile_fire] function_a3d258b6(eventstruct) {
     missile = eventstruct.projectile;
     weapon = eventstruct.weapon;
     target = eventstruct.target;
@@ -855,7 +855,7 @@ function setfriendlyflags(weapon, target) {
         self setfriendlyhacking(weapon, target);
         self setfriendlytargetting(weapon, target);
         self setfriendlytargetlocked(weapon, target);
-        if (isdefined(level.var_e3544a0b)) {
+        if (isdefined(level.killstreakmaxhealthfunction)) {
             if (isdefined(target.usevtoltime) && isdefined(level.vtol)) {
                 killstreakendtime = level.vtol.killstreakendtime;
                 if (isdefined(killstreakendtime)) {
@@ -881,7 +881,7 @@ function setfriendlyflags(weapon, target) {
                 } else if (isdefined(target.usevtoltime) && isdefined(level.vtol) && isdefined(level.vtol.totalrockethits) && isdefined(level.vtol.missiletodestroy)) {
                     self settargetedmissilesremaining(weapon, level.vtol.missiletodestroy - level.vtol.totalrockethits);
                 } else {
-                    maxhealth = [[ level.var_e3544a0b ]](killstreaktype);
+                    maxhealth = [[ level.killstreakmaxhealthfunction ]](killstreaktype);
                     damagetaken = target.damagetaken;
                     if (!isdefined(damagetaken) && isdefined(target.parentstruct)) {
                         damagetaken = target.parentstruct.damagetaken;

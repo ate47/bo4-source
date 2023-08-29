@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/hostmigration_shared.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/spawner_shared.gsc;
 #include scripts/core_common/flag_shared.gsc;

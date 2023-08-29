@@ -85,13 +85,13 @@ function init_quest() {
     var_4e4ef50e = array(#"hash_217e6ae56b61ad3b");
     var_2c28b1bb = array(#"hash_2747b199d121f40b");
     level.var_5a599dbf = [];
-    level.var_5a599dbf[0] = {#var_42a7972a:var_240bceab, #in_inventory:0};
-    level.var_5a599dbf[1] = {#var_42a7972a:var_e4158c30, #in_inventory:0};
-    level.var_5a599dbf[2] = {#var_42a7972a:var_19bb8831, #in_inventory:0};
-    level.var_5a599dbf[3] = {#var_42a7972a:var_17b5a12, #in_inventory:0};
-    level.var_5a599dbf[4] = {#var_42a7972a:var_b37ebf6, #in_inventory:0};
-    level.var_5a599dbf[5] = {#var_42a7972a:var_4e4ef50e, #in_inventory:0};
-    level.var_5a599dbf[6] = {#var_42a7972a:var_2c28b1bb, #in_inventory:0};
+    level.var_5a599dbf[0] = {#vo_line:var_240bceab, #in_inventory:0};
+    level.var_5a599dbf[1] = {#vo_line:var_e4158c30, #in_inventory:0};
+    level.var_5a599dbf[2] = {#vo_line:var_19bb8831, #in_inventory:0};
+    level.var_5a599dbf[3] = {#vo_line:var_17b5a12, #in_inventory:0};
+    level.var_5a599dbf[4] = {#vo_line:var_b37ebf6, #in_inventory:0};
+    level.var_5a599dbf[5] = {#vo_line:var_4e4ef50e, #in_inventory:0};
+    level.var_5a599dbf[6] = {#vo_line:var_2c28b1bb, #in_inventory:0};
     level.var_a035a0b9 = zm_hms_util::function_bffcedde("office_punch_card", "targetname", "script_int");
     level.var_3d015a65 = 0;
     foreach (var_453ce50f in level.var_a035a0b9) {
@@ -317,8 +317,8 @@ function function_54db89ef() {
             function_2f5993d6();
             level thread function_9f206255();
             level flag::wait_till("card_inserted");
-            zm_hms_util::function_52c3fe8d(s_card.var_42a7972a, level.var_a73534b7.origin);
-            if (s_card.var_42a7972a[0] == #"hash_217e6ae56b61ad3b") {
+            zm_hms_util::function_52c3fe8d(s_card.vo_line, level.var_a73534b7.origin);
+            if (s_card.vo_line[0] == #"hash_217e6ae56b61ad3b") {
                 level flag::set(#"hash_5df188993c013698");
             }
             var_ab007509++;

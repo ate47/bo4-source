@@ -379,7 +379,7 @@ function flakjacketprotected(weapon, attacker) {
 // Checksum 0xaaf3b0c1, Offset: 0x16a0
 // Size: 0x106
 function earnedkillstreak() {
-    gear = self function_b958b70d(self.var_e54b3c14, "tacticalgear");
+    gear = self function_b958b70d(self.class_num, "tacticalgear");
     if (gear === #"gear_scorestreakcharge") {
         self stats::function_dad108fa(#"hash_656a2ab7e777796b", 1);
         if (isdefined(self.var_ea1458aa)) {
@@ -478,7 +478,7 @@ function spawnwatcher() {
         self waittill(#"spawned_player");
         self.pers[#"longshotsperlife"] = 0;
         self.weaponkills = [];
-        self.var_14a6fb59 = [];
+        self.attachmentkills = [];
         self.retreivedblades = 0;
         self.lastreloadtime = 0;
         self.crossbowclipkillcount = 0;
@@ -605,7 +605,7 @@ function challengeroundend(data) {
             if (game.challenge[winner][#"allalive"]) {
                 player stats::function_d40764f3(#"round_win_no_deaths", 1);
             }
-            if (isdefined(player.var_efe24f2)) {
+            if (isdefined(player.lastmansddefeat3enemies)) {
                 player stats::function_d40764f3(#"last_man_defeat_3_enemies", 1);
             }
         }
@@ -1106,7 +1106,7 @@ function function_24db0c33(weapon, destroyedobject) {
     if (isdefined(self.pickedupweapons) && isdefined(self.pickedupweapons[weapon])) {
         weaponpickedup = 1;
     }
-    self stats::function_eec52333(weapon, #"destroyed", 1, self.var_e54b3c14, weaponpickedup);
+    self stats::function_eec52333(weapon, #"destroyed", 1, self.class_num, weaponpickedup);
     if (self function_6c32d092(#"talent_engineer")) {
         self stats::function_dad108fa(#"destroy_scorestreaks_equipment_engineer", 1);
     }
@@ -1683,27 +1683,27 @@ function destroyedaircraft(attacker, weapon, playercontrolled, lethal = 1) {
 // Checksum 0x6b25bca2, Offset: 0x64e0
 // Size: 0x1a4
 function killstreakten() {
-    if (!isdefined(self.var_e54b3c14)) {
+    if (!isdefined(self.class_num)) {
         return;
     }
-    primary = self getloadoutitem(self.var_e54b3c14, "primary");
+    primary = self getloadoutitem(self.class_num, "primary");
     if (primary != 0) {
         return;
     }
-    secondary = self getloadoutitem(self.var_e54b3c14, "secondary");
+    secondary = self getloadoutitem(self.class_num, "secondary");
     if (secondary != 0) {
         return;
     }
-    primarygrenade = self getloadoutitem(self.var_e54b3c14, "primarygrenade");
+    primarygrenade = self getloadoutitem(self.class_num, "primarygrenade");
     if (primarygrenade != 0) {
         return;
     }
-    specialgrenade = self getloadoutitem(self.var_e54b3c14, "specialgrenade");
+    specialgrenade = self getloadoutitem(self.class_num, "specialgrenade");
     if (specialgrenade != 0) {
         return;
     }
     for (numspecialties = 0; numspecialties < level.maxspecialties; numspecialties++) {
-        perk = self getloadoutitem(self.var_e54b3c14, "specialty" + numspecialties + 1);
+        perk = self getloadoutitem(self.class_num, "specialty" + numspecialties + 1);
         if (perk != 0) {
             return;
         }

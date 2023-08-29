@@ -38,7 +38,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xc6356497, Offset: 0x368
 // Size: 0x514
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     level.weapon_sas_primary_weapon = getweapon("special_crossbow_t8_sas");
     level.weapon_sas_secondary_weapon = getweapon("special_ballisticknife_t8_dw");

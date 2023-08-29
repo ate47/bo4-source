@@ -2429,7 +2429,7 @@ class cscene {
     // Params 2, eflags: 0x1 linked
     // Checksum 0x1066b3ff, Offset: 0x106e8
     // Size: 0x10c
-    function wait_till_objects_finished(str_shot, array&) {
+    function wait_till_objects_finished(str_shot, &array) {
         for (i = 0; i < array.size; i++) {
             obj = array[i];
             if (isdefined(obj) && !obj flagsys::get(str_shot + "finished") && obj flagsys::get(str_shot + "active") && !obj flagsys::get(str_shot + "stopped")) {
@@ -2451,7 +2451,7 @@ class cscene {
     // Params 2, eflags: 0x1 linked
     // Checksum 0x32143448, Offset: 0x10598
     // Size: 0x10c
-    function wait_till_objects_ready(str_shot, array&) {
+    function wait_till_objects_ready(str_shot, &array) {
         for (i = 0; i < array.size; i++) {
             obj = array[i];
             if (isdefined(obj) && !obj flagsys::get(str_shot + "ready") && obj flagsys::get(str_shot + "active") && !obj flagsys::get(str_shot + "stopped")) {
@@ -3253,7 +3253,7 @@ class cscene {
     // Params 5, eflags: 0x1 linked
     // Checksum 0xa0427d37, Offset: 0xce70
     // Size: 0x16e
-    function _assign_ents_by_type(a_objects&, a_ents&, str_type, func_test, str_team) {
+    function _assign_ents_by_type(&a_objects, &a_ents, str_type, func_test, str_team) {
         if (a_ents.size) {
             a_objects_of_type = get_objects(str_type, str_team);
             if (a_objects_of_type.size) {
@@ -3278,7 +3278,7 @@ class cscene {
     // Params 2, eflags: 0x1 linked
     // Checksum 0x39b81e86, Offset: 0xca90
     // Size: 0x3d6
-    function _assign_ents_by_name(a_objects&, a_ents&) {
+    function _assign_ents_by_name(&a_objects, &a_ents) {
         if (a_ents.size) {
             foreach (str_name, e_ent in arraycopy(a_ents)) {
                 foreach (i, o_obj in arraycopy(a_objects)) {

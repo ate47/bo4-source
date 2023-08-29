@@ -9,7 +9,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x1fb201dc, Offset: 0x80
 // Size: 0x44
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     core_frontend_fx::main();
     core_frontend_sound::main();
     util::waitforclient(0);

@@ -8,15 +8,15 @@
 #include scripts/killstreaks/ai/leave.gsc;
 #include scripts/killstreaks/ai/escort.gsc;
 #include scripts/core_common/targetting_delay.gsc;
-#include script_489b835a247c990e;
+#include scripts/core_common/ai/archetype_locomotion_utility.gsc;
 #include script_3819e7a1427df6d2;
-#include script_522aeb6ae906391e;
-#include script_3aa0f32b70d4f7cb;
-#include script_178024232e91b0a1;
-#include script_4bf952f6ba31bb17;
-#include script_caf007e2a98afa2;
-#include script_4d85e8de54b02198;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/spawner_shared.gsc;
 #include scripts/core_common/clientfield_shared.gsc;
@@ -1089,7 +1089,7 @@ function function_668f9379(entity, mocompanim, mocompanimblendouttime, mocompani
 // Params 1, eflags: 0x40
 // Checksum 0xf4381cfe, Offset: 0x4558
 // Size: 0x6c
-function event<bhtn_action_start> function_df9abf31(eventstruct) {
+function event_handler[bhtn_action_start] function_df9abf31(eventstruct) {
     if (isdefined(self.archetype) && self.archetype == #"mp_dog") {
         if (eventstruct.action == "bark") {
             self playsound(#"hash_21775fa77c0df395");

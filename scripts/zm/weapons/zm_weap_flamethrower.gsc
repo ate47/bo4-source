@@ -9,7 +9,7 @@
 #include scripts/zm_common/zm_audio.gsc;
 #include scripts/zm_common/zm.gsc;
 #include scripts/abilities/ability_player.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/throttle_shared.gsc;
 #include scripts/core_common/ai_shared.gsc;

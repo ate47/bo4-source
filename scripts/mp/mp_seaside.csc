@@ -14,12 +14,12 @@
 // Params 1, eflags: 0x40
 // Checksum 0x47047330, Offset: 0x290
 // Size: 0x1b6
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level.var_bbb8810e = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     callback::on_localclient_connect(&on_localclient_connect);
     callback::on_gameplay_started(&on_gameplay_started);
-    callback::on_localplayer_spawned(&function_d8ca430a);
+    callback::on_localplayer_spawned(&on_localclient_spawned);
     clientfield::register("world", "remove_blood_decals", 1, 1, "int", &function_cfadee36, 1, 0);
     clientfield::register("vehicle", "hide_tank_rob", 1, 1, "int", &function_4c64b702, 1, 0);
     mp_seaside_fx::main();
@@ -28,7 +28,7 @@ function event<level_init> main(eventstruct) {
     level.domflagbasefxoverride = &dom_flag_base_fx_override;
     level.domflagcapfxoverride = &dom_flag_cap_fx_override;
     util::waitforclient(0);
-    level.var_f5cd144f = "ui_cam_endgame_mp_common";
+    level.endgamexcamname = "ui_cam_endgame_mp_common";
 }
 
 // Namespace mp_seaside/mp_seaside
@@ -119,7 +119,7 @@ function function_4c64b702(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 1, eflags: 0x1 linked
 // Checksum 0x1370e18, Offset: 0x808
 // Size: 0x1c
-function function_d8ca430a(localclientnum) {
+function on_localclient_spawned(localclientnum) {
     thread function_88a882af();
 }
 
@@ -133,7 +133,7 @@ function function_88a882af() {
         return;
     }
     if (!isdefined(level.var_f55e70b[0])) {
-        callback::remove_on_localplayer_spawned(&function_d8ca430a);
+        callback::remove_on_localplayer_spawned(&on_localclient_spawned);
         return;
     }
     foreach (tank in level.var_f55e70b) {

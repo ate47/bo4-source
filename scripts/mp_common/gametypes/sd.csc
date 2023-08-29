@@ -11,7 +11,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x9700a2e9, Offset: 0xd8
 // Size: 0xb4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     if (getgametypesetting(#"silentplant") != 0) {
         setsoundcontext("bomb_plant", "silent");
     }

@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/zm/ai/zm_ai_ghost.gsc;
 
 #namespace zm_ai_ghost_interface;

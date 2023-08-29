@@ -26,8 +26,8 @@ function set_difficulty(difficulty) {
     init_turret_difficulty_settings();
     turrets = getentarray("misc_turret", "classname");
     for (index = 0; index < turrets.size; index++) {
-        if (isdefined(turrets[index].var_54ca8ff)) {
-            switch (turrets[index].var_54ca8ff) {
+        if (isdefined(turrets[index].script_skilloverride)) {
+            switch (turrets[index].script_skilloverride) {
             case #"easy":
                 difficulty = "easy";
                 break;

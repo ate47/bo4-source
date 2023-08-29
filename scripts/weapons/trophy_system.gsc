@@ -21,7 +21,7 @@
 function init_shared() {
     level.trophylongflashfx = #"weapon/fx_trophy_flash";
     level.trophydetonationfx = #"weapon/fx_trophy_detonation";
-    level.var_1a540d78 = #"weapon/fx_trophy_radius_indicator";
+    level.fx_trophy_radius_indicator = #"weapon/fx_trophy_radius_indicator";
     trophydeployanim = "p8_fxanim_mp_eqp_trophy_system_world_anim";
     trophyspinanim = "p8_fxanim_mp_eqp_trophy_system_world_open_anim";
     level.var_4f3822f4 = &trophysystemdetonate;

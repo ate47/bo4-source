@@ -21,7 +21,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x9223e836, Offset: 0x138
 // Size: 0x2e
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level.zm_build_progress = zm_build_progress::register("zm_build_progress");
 }
 

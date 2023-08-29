@@ -253,7 +253,7 @@ function overridedamage_player(e_inflictor, e_attacker, n_damage, n_dflags, str_
 // Size: 0x280
 function function_72ba0df6(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
     if (isbot(self)) {
-        self val::reset(#"hash_560c3142c482f2ac", "ignoreall");
+        self val::reset(#"tut_ignoreall", "ignoreall");
         self ct_bots::function_43df30a8();
         self.prevstate = undefined;
         self.var_ef59b90 = undefined;
@@ -355,7 +355,7 @@ function function_c84bc48(_hash) {
 // Checksum 0xed5aded7, Offset: 0x2910
 // Size: 0x448
 function function_d0815f2e() {
-    level endon(#"combattraining_logic_finished", #"hash_52394c0b0b4becbf");
+    level endon(#"combattraining_logic_finished", #"tut_stop");
     /#
         if (level flag::get("colbounds_tut_fin1_fight5_start_off") && level.var_e3146bce !== "stand") {
             return;
@@ -407,7 +407,7 @@ function function_7175d1b1() {
     s_loc = struct::get("s_tut_purifier_1_target", "targetname");
     v_loc = getclosestpointonnavmesh(s_loc.origin, 48);
     self ct_utils::function_61d750d4(v_loc, s_loc.angles);
-    self val::set(#"hash_560c3142c482f2ac", "ignoreall", 1);
+    self val::set(#"tut_ignoreall", "ignoreall", 1);
     do {
         str_stance = self getstance();
         waitframe(1);
@@ -433,7 +433,7 @@ function function_29b75dd8() {
 // Checksum 0xc7aa30d9, Offset: 0x2f28
 // Size: 0x224
 function function_de43fab3() {
-    level endon(#"combattraining_logic_finished", #"hash_52394c0b0b4becbf");
+    level endon(#"combattraining_logic_finished", #"tut_stop");
     /#
         if (level flag::get("colbounds_tut_fin1_fight5_start_off") && level.var_e3146bce !== "damage") {
             return;
@@ -582,7 +582,7 @@ function function_d50f326c() {
 // Checksum 0x70a746db, Offset: 0x3888
 // Size: 0x268
 function function_951ce866() {
-    level endon(#"combattraining_logic_finished", #"hash_52394c0b0b4becbf");
+    level endon(#"combattraining_logic_finished", #"tut_stop");
     /#
         if (level flag::get("colbounds_tut_fin1_fight5_start_off") && level.var_e3146bce !== "vox_tvoi_tutor_fire_core_dmg") {
             return;
@@ -767,7 +767,7 @@ function function_b973c685(s_loc) {
 // Checksum 0x73c607fa, Offset: 0x4590
 // Size: 0x16c
 function function_feee3d4f() {
-    level endon(#"combattraining_logic_finished", #"hash_52394c0b0b4becbf");
+    level endon(#"combattraining_logic_finished", #"tut_stop");
     level.var_8ca3c62 = 4;
     self setnormalhealth(1);
     level notify(#"hash_479ebf389694847e");
@@ -860,7 +860,7 @@ function function_1bdf6fc7() {
 // Checksum 0xf11e0e3b, Offset: 0x4cc8
 // Size: 0xac
 function function_eca698c0() {
-    level endon(#"combattraining_logic_finished", #"hash_52394c0b0b4becbf");
+    level endon(#"combattraining_logic_finished", #"tut_stop");
     level.var_8ca3c62 = 5;
     level notify(#"hash_479ebf389694847e");
     level notify(#"hash_24ddc9c4596243ed");
@@ -945,7 +945,7 @@ function function_cdb43167(s_loc) {
 // Checksum 0x92b8c957, Offset: 0x5240
 // Size: 0x254
 function function_fcc23983() {
-    level endon(#"combattraining_logic_finished", #"hash_52394c0b0b4becbf");
+    level endon(#"combattraining_logic_finished", #"tut_stop");
     level.var_8ca3c62 = 6;
     self setnormalhealth(1);
     level notify(#"hash_6c1498c606a453ed");
@@ -1014,7 +1014,7 @@ function function_c0bccc48(_hash) {
 // Checksum 0x42173a94, Offset: 0x56e8
 // Size: 0x1ae
 function function_235b259b() {
-    level endoncallback(&function_e73b7704, #"combattraining_logic_finished", #"hash_52394c0b0b4becbf");
+    level endoncallback(&function_e73b7704, #"combattraining_logic_finished", #"tut_stop");
     level.var_8ca3c62 = 7;
     level.var_b7fa636e = "tut_fin1_fight1";
     self setnormalhealth(1);
@@ -1959,10 +1959,10 @@ function function_41dcd216() {
             case #"kill_player":
                 e_player dodamage(1000, e_player.origin);
                 break;
-            case #"hash_52c68c82c2230580":
+            case #"lowready_on":
                 e_player setlowready(1);
                 break;
-            case #"hash_4a81d82fe19a1f1a":
+            case #"lowready_off":
                 e_player setlowready(0);
                 break;
             case #"restart_tutorial":
@@ -2070,7 +2070,7 @@ function function_d74a7e31() {
         self ct_utils::function_1bb93418();
         level notify(#"hash_4c9c5fbc89779e64");
         level notify(#"tutorial_goto_end");
-        level notify(#"hash_52394c0b0b4becbf");
+        level notify(#"tut_stop");
         ct_bots::deactivate_bots();
     #/
 }

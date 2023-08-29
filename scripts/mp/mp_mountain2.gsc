@@ -11,7 +11,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x9d84c9ca, Offset: 0x158
 // Size: 0xafe
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     load::main();
     screen = spawn("script_model", (2794, -860, 397));
     if (isdefined(screen)) {

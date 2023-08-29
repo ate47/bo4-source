@@ -418,7 +418,7 @@ function private function_e1965ae1() {
 // Params 1, eflags: 0x40
 // Checksum 0x304a5810, Offset: 0x2240
 // Size: 0x74
-function event<freefall> function_5019e563(eventstruct) {
+function event_handler[freefall] function_5019e563(eventstruct) {
     if (!isdefined(self.var_554ec2e2)) {
         return;
     }
@@ -431,7 +431,7 @@ function event<freefall> function_5019e563(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x192881a5, Offset: 0x22c0
 // Size: 0x4c
-function event<parachute> function_87b05fa3(eventstruct) {
+function event_handler[parachute] function_87b05fa3(eventstruct) {
     if (!isdefined(self.var_554ec2e2)) {
         return;
     }

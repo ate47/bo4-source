@@ -19,7 +19,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x617fe272, Offset: 0x1b0
 // Size: 0x2f4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.select_character = ct_utils::get_roleindex(#"prt_mp_swatpolice");
     level.var_820c5561 = "AJAX";

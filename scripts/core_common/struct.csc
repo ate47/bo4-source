@@ -17,7 +17,7 @@ function autoexec __init__() {
 // Params 1, eflags: 0x40
 // Checksum 0xcd4d793e, Offset: 0xe8
 // Size: 0x24
-function event<createstruct> createstruct(struct) {
+function event_handler[createstruct] createstruct(struct) {
     struct init();
 }
 
@@ -138,7 +138,7 @@ function get_script_bundle_instances(str_type, kvp) {
 // Params 1, eflags: 0x40
 // Checksum 0x30b311fa, Offset: 0x5e8
 // Size: 0xb6
-function event<findstruct> findstruct(eventstruct) {
+function event_handler[findstruct] findstruct(eventstruct) {
     if (isdefined(level.struct)) {
         foreach (struct in level.struct) {
             if (distancesquared(struct.origin, eventstruct.position) < 1) {

@@ -364,7 +364,7 @@ function body_customization_process_command(character_index) {
 // Params 5, eflags: 0x0
 // Checksum 0x5a43aefc, Offset: 0x1b70
 // Size: 0x120
-function function_3cec5609(arr&, devgui_path, bodytype, outfitindex, optiontype) {
+function function_3cec5609(&arr, devgui_path, bodytype, outfitindex, optiontype) {
     /#
         foreach (index, option in arr) {
             if (option.isvalid) {

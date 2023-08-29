@@ -40,7 +40,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x83140a39, Offset: 0x350
 // Size: 0x6fc
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     level.pointsperweaponkill = getgametypesetting("pointsPerWeaponKill") * 10;
     level.pointspermeleekill = getgametypesetting("pointsPerMeleeKill") * 10;

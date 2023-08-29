@@ -678,7 +678,7 @@ function private function_6b9be08d() {
 // Params 4, eflags: 0x5 linked
 // Checksum 0xd8d56baf, Offset: 0x3088
 // Size: 0x1364
-function private function_e25c9d12(var_8107154f&, spawncount, stashitem = 0, var_a1b91de4& = undefined) {
+function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &var_a1b91de4 = undefined) {
     if (!isstruct(self)) {
         /#
             assert(0);
@@ -1089,7 +1089,7 @@ function reset_items() {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x755da753, Offset: 0x5090
 // Size: 0x3ee
-function function_50a2c746(var_f38d5b52&, reset = 1, var_87e9f374 = 0) {
+function function_50a2c746(&var_f38d5b52, reset = 1, var_87e9f374 = 0) {
     /#
         assert(isarray(var_f38d5b52));
     #/

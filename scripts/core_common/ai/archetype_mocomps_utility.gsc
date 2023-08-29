@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/ai/archetype_utility.gsc;
-#include script_4bf952f6ba31bb17;
+#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
 #include scripts/core_common/math_shared.gsc;
 
 #namespace archetype_mocomps_utility;

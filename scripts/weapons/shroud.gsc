@@ -64,7 +64,7 @@ function function_1c601b99() {
 // Size: 0x284
 function function_bff5c062(shroud, attackingplayer) {
     shroud.owner weaponobjects::hackerremoveweapon(shroud);
-    arrayremovevalue(shroud.owner.var_7efb5bf8, shroud);
+    arrayremovevalue(shroud.owner.shrouds, shroud);
     shroud setteam(attackingplayer.team);
     shroud.team = attackingplayer.team;
     shroud.owner = attackingplayer;
@@ -72,15 +72,15 @@ function function_bff5c062(shroud, attackingplayer) {
     shroud notify(#"hacked");
     shroud clientfield::set("shroud_state", 1);
     shroud weaponobjects::function_386fa470(attackingplayer);
-    if (!isdefined(attackingplayer.var_7efb5bf8)) {
-        attackingplayer.var_7efb5bf8 = [];
+    if (!isdefined(attackingplayer.shrouds)) {
+        attackingplayer.shrouds = [];
     }
-    if (!isdefined(attackingplayer.var_7efb5bf8)) {
-        attackingplayer.var_7efb5bf8 = [];
-    } else if (!isarray(attackingplayer.var_7efb5bf8)) {
-        attackingplayer.var_7efb5bf8 = array(attackingplayer.var_7efb5bf8);
+    if (!isdefined(attackingplayer.shrouds)) {
+        attackingplayer.shrouds = [];
+    } else if (!isarray(attackingplayer.shrouds)) {
+        attackingplayer.shrouds = array(attackingplayer.shrouds);
     }
-    attackingplayer.var_7efb5bf8[attackingplayer.var_7efb5bf8.size] = shroud;
+    attackingplayer.shrouds[attackingplayer.shrouds.size] = shroud;
     if (isdefined(level.var_f1edf93f)) {
         _station_up_to_detention_center_triggers = [[ level.var_f1edf93f ]]() * 1000;
         if (isdefined(_station_up_to_detention_center_triggers) ? _station_up_to_detention_center_triggers : 0) {
@@ -126,8 +126,8 @@ function function_75f9989a(attacker, victim, weapon, attackerweapon, meansofdeat
         return 0;
     }
     function_a86d28fc(attacker, victim);
-    if (isdefined(attacker.var_7efb5bf8)) {
-        foreach (dart in attacker.var_7efb5bf8) {
+    if (isdefined(attacker.shrouds)) {
+        foreach (dart in attacker.shrouds) {
             if (isdefined(dart) && distance2dsquared(victim.origin, dart.origin) < 1350 * 1350) {
                 dart.killcount = (isdefined(dart.killcount) ? dart.killcount : 0) + 1;
                 if (!isdefined(dart.var_cbca1a8f) && isdefined(level.var_ac6052e9) && dart.killcount >= [[ level.var_ac6052e9 ]]("shroudSuccessKillCount", 0) && isdefined(level.playgadgetsuccess) && isdefined(dart.owner)) {
@@ -160,17 +160,17 @@ function function_a86d28fc(attacker, victim) {
         if (teammate == attacker) {
             continue;
         }
-        if (!isdefined(teammate.var_7efb5bf8)) {
+        if (!isdefined(teammate.shrouds)) {
             continue;
         }
-        foreach (dart in teammate.var_7efb5bf8) {
+        foreach (dart in teammate.shrouds) {
             if (!isdefined(dart)) {
                 continue;
             }
             if (distance2dsquared(victim.origin, dart.origin) >= 1350 * 1350) {
                 continue;
             }
-            scoreevents::processscoreevent(#"hash_75b325a107dc4ece", teammate, victim, getweapon(#"eq_shroud"));
+            scoreevents::processscoreevent(#"shroud_assist", teammate, victim, getweapon(#"eq_shroud"));
             break;
         }
     }
@@ -217,23 +217,23 @@ function function_f4970a20(watcher, player) {
     self.var_2d045452 = watcher;
     self.weapon = getweapon(#"eq_shroud");
     self setweapon(self.weapon);
-    if (!isdefined(player.var_7efb5bf8)) {
-        player.var_7efb5bf8 = [];
+    if (!isdefined(player.shrouds)) {
+        player.shrouds = [];
     }
-    if (!isdefined(player.var_7efb5bf8)) {
-        player.var_7efb5bf8 = [];
-    } else if (!isarray(player.var_7efb5bf8)) {
-        player.var_7efb5bf8 = array(player.var_7efb5bf8);
+    if (!isdefined(player.shrouds)) {
+        player.shrouds = [];
+    } else if (!isarray(player.shrouds)) {
+        player.shrouds = array(player.shrouds);
     }
-    player.var_7efb5bf8[player.var_7efb5bf8.size] = self;
+    player.shrouds[player.shrouds.size] = self;
     waitresult = undefined;
     waitresult = self waittilltimeout(5, #"stationary");
     if (waitresult._notify == #"timeout") {
         function_4db10465();
         return;
     }
-    player notify(#"hash_784412f37d8b2c0f", {#dart:self});
-    player clientfield::set_player_uimodel("hudItems.shroudCount", player.var_7efb5bf8.size);
+    player notify(#"shroud_active", {#dart:self});
+    player clientfield::set_player_uimodel("hudItems.shroudCount", player.shrouds.size);
     player stats::function_e24eec31(self.weapon, #"used", 1);
     self util::make_sentient();
     self thread function_aa8bb7be();
@@ -262,9 +262,9 @@ function private function_6852f0e1() {
     owner = self.owner;
     waitresult = undefined;
     waitresult = self waittill(#"picked_up", #"death");
-    if (isdefined(owner) && isdefined(owner.var_7efb5bf8)) {
-        arrayremovevalue(owner.var_7efb5bf8, undefined);
-        owner clientfield::set_player_uimodel("hudItems.shroudCount", owner.var_7efb5bf8.size);
+    if (isdefined(owner) && isdefined(owner.shrouds)) {
+        arrayremovevalue(owner.shrouds, undefined);
+        owner clientfield::set_player_uimodel("hudItems.shroudCount", owner.shrouds.size);
     }
     if (waitresult._notify == "death") {
         return;
@@ -296,7 +296,7 @@ function function_c142e8ec(attacker, callback_data) {
             self.owner thread killstreaks::play_taacom_dialog("shroudDestroyedFriendly");
         }
         attacker challenges::destroyedequipment();
-        scoreevents::processscoreevent(#"hash_5b353dafa17d66ab", attacker, self.owner, undefined);
+        scoreevents::processscoreevent(#"shroud_shutdown", attacker, self.owner, undefined);
         if (isdefined(level.var_d2600afc)) {
             self [[ level.var_d2600afc ]](attacker, self.owner, self.weapon);
         }
@@ -317,7 +317,7 @@ function function_4db10465() {
 // Checksum 0xbb021b7d, Offset: 0x1468
 // Size: 0x204
 function function_4b3bc61d(attacker, weapon, target) {
-    level notify(#"hash_7544b0612d1e412c");
+    level notify(#"shroud_destroyed");
     if (!isdefined(weapon) || !weapon.isemp) {
         playfx(level._equipment_explode_fx_lg, self.origin);
     }
@@ -334,7 +334,7 @@ function function_4b3bc61d(attacker, weapon, target) {
     if (isdefined(level.var_d2600afc)) {
         self [[ level.var_d2600afc ]](attacker, self.owner, self.weapon, weapon);
     }
-    self.owner luinotifyevent(#"hash_7544b0612d1e412c");
+    self.owner luinotifyevent(#"shroud_destroyed");
     self delete();
 }
 

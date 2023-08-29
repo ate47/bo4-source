@@ -24,12 +24,12 @@ function autoexec __init__system__() {
 function __init__() {
     clientfield::register("scriptmover", "charon_pool", 16000, 1, "int", &function_a083252d, 0, 0);
     clientfield::register("scriptmover", "charon_shoot", 16000, 1, "counter", &function_3762b44b, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_15c29a8560f09487", 16000, 2, "int", &function_12c042fc, 0, 0);
+    clientfield::register("scriptmover", "" + #"charon_impact", 16000, 2, "int", &function_12c042fc, 0, 0);
     clientfield::register("allplayers", "charon_flash", 16000, 1, "int", &function_3b17ff6f, 0, 0);
-    clientfield::register("actor", "" + #"hash_45cf1b4a3391ca3d", 16000, 1, "counter", &function_120153b7, 0, 0);
+    clientfield::register("actor", "" + #"charon_death", 16000, 1, "counter", &function_120153b7, 0, 0);
     clientfield::register("actor", "" + #"hash_3681b677c0d46042", 16000, 1, "counter", &function_b10c4057, 0, 0);
     clientfield::register("actor", "" + #"hash_25691c415a4aea4c", 16000, 1, "int", &function_d64a6790, 0, 0);
-    level._effect[#"hash_7ea1cd593a8bfc26"] = #"hash_4952906e2b897ac8";
+    level._effect[#"charon_proj"] = #"hash_4952906e2b897ac8";
     level._effect[#"hash_51c706450345c1cd"] = #"hash_3a0c132d4e39ba81";
     level._effect[#"hash_30c814dd07c0c371"] = #"hash_25c4a39b373bfc67";
     level._effect[#"hash_3a8801fc057183dc"] = #"hash_237010c93c358590";
@@ -129,7 +129,7 @@ function function_d64a6790(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0xcb61b687, Offset: 0xf48
 // Size: 0xaa
 function function_3762b44b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    util::playfxontag(localclientnum, level._effect[#"hash_7ea1cd593a8bfc26"], self, "tag_origin");
+    util::playfxontag(localclientnum, level._effect[#"charon_proj"], self, "tag_origin");
     if (!isdefined(self.var_69754745)) {
         self.var_69754745 = self playloopsound(#"hash_60a1a9475224f99");
     }

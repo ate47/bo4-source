@@ -16,7 +16,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x6c026afd, Offset: 0x1f0
 // Size: 0x1a2
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     precache();
     level.var_7fd6bd44 = 1200;
     callback::on_game_playing(&on_game_playing);

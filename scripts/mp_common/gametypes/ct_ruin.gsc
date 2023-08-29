@@ -21,7 +21,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xf12b44d9, Offset: 0x218
 // Size: 0x2c4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.select_character = ct_utils::get_roleindex(#"prt_mp_mercenary");
     level.var_820c5561 = "RUIN";

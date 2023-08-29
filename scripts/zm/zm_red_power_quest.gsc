@@ -18,7 +18,7 @@
 #include scripts/zm_common/zm_audio.gsc;
 #include scripts/core_common/ai/zombie_death.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/vehicle_shared.gsc;
 #include scripts/core_common/values_shared.gsc;

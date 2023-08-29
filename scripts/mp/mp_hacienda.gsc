@@ -20,7 +20,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x6aec6cae, Offset: 0x418
 // Size: 0x124
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     callback::on_game_playing(&on_game_playing);
     mp_hacienda_fx::main();
     mp_hacienda_sound::main();

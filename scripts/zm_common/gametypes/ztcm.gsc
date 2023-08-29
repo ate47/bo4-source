@@ -12,7 +12,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xc3c5ca36, Offset: 0xc0
 // Size: 0xdc
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     zm_gametype::main();
     level.onprecachegametype = &onprecachegametype;
     level.onstartgametype = &onstartgametype;

@@ -8,11 +8,11 @@
 #include scripts/zm_common/zm_devgui.gsc;
 #include scripts/zm_common/zm_cleanup_mgr.gsc;
 #include scripts/zm_common/zm.gsc;
-#include script_4d85e8de54b02198;
+#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
 #include scripts/core_common/animation_shared.gsc;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/ai/blackboard_vehicle.gsc;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/vehicle_ai_shared.gsc;
 #include scripts/core_common/vehicle_death_shared.gsc;
@@ -607,7 +607,7 @@ function function_66d3e7c2() {
 // Size: 0x1e8
 function state_combat_update(params) {
     self endon(#"change_state", #"death");
-    self asmrequestsubstate(#"hash_2d4b292477dc5711");
+    self asmrequestsubstate(#"locomotion@movement");
     for (;;) {
         for (;;) {
             if (isdefined(self.ignoreall) && self.ignoreall) {

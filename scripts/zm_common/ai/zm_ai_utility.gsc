@@ -2,9 +2,9 @@
 #include scripts/zm_common/zm_zonemgr.gsc;
 #include scripts/zm_common/zm_powerups.gsc;
 #include scripts/zm_common/zm_utility.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include script_2c5daa95f8fec03c;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/values_shared.gsc;
 #include scripts/core_common/util_shared.gsc;

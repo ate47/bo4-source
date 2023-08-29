@@ -76,11 +76,11 @@ function function_b540b576() {
     var_e6c1fe70 = array(#"hash_85c1a5d874f4cca", #"hash_6ba76f0dae639fda", #"hash_3cf4fec50390cfc4", #"hash_7dedea74983affc4", #"hash_1c38fdc40339b86e", #"hash_704a6e82a159cc1e", #"hash_3b5addc029eb24b8", #"hash_5f090d187dae1178", #"hash_75901c4c2a6309e2");
     var_51ba7b4a = array(#"hash_79fe2d0224018f5c");
     var_68e586cf = array(#"hash_2b4e25f8eaed9341");
-    level.var_5849269a[0] = {#var_42a7972a:var_1c8e90b4, #in_inventory:0};
-    level.var_5849269a[1] = {#var_42a7972a:var_ab6a16ff, #in_inventory:0};
-    level.var_5849269a[2] = {#var_46db68fd:1, #var_42a7972a:var_e6c1fe70, #in_inventory:0};
-    level.var_5849269a[3] = {#var_42a7972a:var_51ba7b4a, #in_inventory:0};
-    level.var_5849269a[4] = {#var_42a7972a:var_68e586cf, #in_inventory:0};
+    level.var_5849269a[0] = {#vo_line:var_1c8e90b4, #in_inventory:0};
+    level.var_5849269a[1] = {#vo_line:var_ab6a16ff, #in_inventory:0};
+    level.var_5849269a[2] = {#var_46db68fd:1, #vo_line:var_e6c1fe70, #in_inventory:0};
+    level.var_5849269a[3] = {#vo_line:var_51ba7b4a, #in_inventory:0};
+    level.var_5849269a[4] = {#vo_line:var_68e586cf, #in_inventory:0};
     level.var_e046b238 = struct::get(#"hash_5201d44a6f57e32a");
     level.var_94b00cff = spawn("script_model", level.var_e046b238.origin);
     level.var_ba07f1de = zm_hms_util::function_bffcedde("office_audio_reel", "targetname", "script_int");
@@ -189,7 +189,7 @@ function function_8352562a() {
                 level.var_94b00cff playloopsound(#"hash_48cebe2e9cc70ddc");
             }
             wait(2);
-            zm_hms_util::function_52c3fe8d(s_log.var_42a7972a, level.var_94b00cff.origin);
+            zm_hms_util::function_52c3fe8d(s_log.vo_line, level.var_94b00cff.origin);
             var_e578920c++;
             level.var_94b00cff stoploopsound();
             level.var_94b00cff playsound(#"hash_1f5fc24563134758");

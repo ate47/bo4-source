@@ -31,7 +31,7 @@ function init_shared() {
         airsupport::init_shared();
         level.qrdrone_vehicle = "qrdrone_mp";
         level.ai_tank_stun_fx = "killstreaks/fx_agr_emp_stun";
-        level.var_a00f54a7 = "weapon/fx_muz_md_rifle_3p";
+        level.qrdrone_minigun_flash = "weapon/fx_muz_md_rifle_3p";
         level.qrdrone_fx[#"explode"] = "_t7/killstreaks/fx_drgnfire_explosion";
         level._effect[#"quadrotor_nudge"] = #"hash_10f127a62acd37ee";
         level._effect[#"quadrotor_damage"] = #"hash_2cf01c21155d889a";
@@ -69,8 +69,8 @@ function init_shared() {
         clientfield::register("vehicle", "qrdrone_timeout", 1, 1, "int");
         clientfield::register("vehicle", "qrdrone_countdown", 1, 1, "int");
         clientfield::register("vehicle", "qrdrone_out_of_range", 1, 1, "int");
-        level.var_97b3d697 = &qrdrone_blowup;
-        level.var_5a2f8f1f = &qrdrone_damagewatcher;
+        level.qrdroneonblowup = &qrdrone_blowup;
+        level.qrdroneondamage = &qrdrone_damagewatcher;
     }
 }
 
@@ -117,7 +117,7 @@ function givecarryqrdrone(lifeid, streakname) {
 // Size: 0x288
 function createcarryqrdrone(streakname, owner) {
     pos = owner.origin + anglestoforward(owner.angles) * 4 + anglestoup(owner.angles) * 50;
-    carryqrdrone.var_8faf06b9 = "sentry";
+    carryqrdrone.turrettype = "sentry";
     carryqrdrone.origin = pos;
     carryqrdrone.angles = owner.angles;
     carryqrdrone.canbeplaced = 1;
@@ -357,7 +357,7 @@ function createqrdrone(lifeid, owner, streakname, origin, angles, killstreak_id)
     qrdrone.smoking = 0;
     qrdrone.inheliproximity = 0;
     qrdrone.helitype = "qrdrone";
-    qrdrone.var_8f6138cd = [];
+    qrdrone.markedplayers = [];
     qrdrone.isstunned = 0;
     qrdrone setdrawinfrared(1);
     qrdrone.killcament = qrdrone.owner;
@@ -975,8 +975,8 @@ function qrdrone_rangecountdown() {
     }
     hostmigration::waitlongdurationwithhostmigrationpause(countdown);
     self.owner notify(#"stop_signal_failure");
-    if (isdefined(self.var_95679a97)) {
-        return [[ self.var_95679a97 ]]();
+    if (isdefined(self.distance_shutdown_override)) {
+        return [[ self.distance_shutdown_override ]]();
     }
     self clientfield::set("qrdrone_state", 3);
     watcher = self.owner weaponobjects::getweaponobjectwatcher("qrdrone");

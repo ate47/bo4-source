@@ -43,7 +43,7 @@ function function_555b0649(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0xea53117e, Offset: 0x208
 // Size: 0x4c
 function spawned(local_client_num, bundle) {
-    if (self.var_9fde8624 === #"hash_44deb12ab3cef3f4") {
+    if (self.var_9fde8624 === #"human_sniper") {
         self killstreak_bundles::spawned(local_client_num, bundle);
     }
 }

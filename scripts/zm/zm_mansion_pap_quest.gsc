@@ -29,7 +29,7 @@
 #include scripts/core_common/vehicle_shared.gsc;
 #include scripts/core_common/spawner_shared.gsc;
 #include scripts/core_common/math_shared.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/values_shared.gsc;
 #include scripts/core_common/trigger_shared.gsc;

@@ -347,7 +347,7 @@ function function_3f6f8daa() {
                 return;
             }
             speaker playsoundwithnotify(var_22082d80, "radio_done");
-            speaker waittill(#"hash_7a8d9e7b7976fd3d", #"death");
+            speaker waittill(#"radio_done", #"death");
             wait(0.2);
         }
         wait(randomfloatrange(30, 35));

@@ -17,7 +17,7 @@
 #include scripts/core_common/array_shared.gsc;
 #include scripts/core_common/ai_shared.gsc;
 #include scripts/abilities/ability_player.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 
 #namespace zm_weap_hammer;
 

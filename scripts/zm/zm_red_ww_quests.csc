@@ -3,7 +3,7 @@
 #include scripts/zm_common/zm_customgame.csc;
 #include script_624a704d0f6bf28d;
 #include scripts/zm_common/zm_utility.csc;
-#include script_14d2d89964cae0b1;
+#include scripts/core_common/ai/systems/gib.csc;
 #include scripts/core_common/util_shared.csc;
 #include scripts/core_common/clientfield_shared.csc;
 #include scripts/core_common/postfx_shared.csc;

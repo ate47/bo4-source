@@ -18,7 +18,7 @@ function init_shared() {
     level.smokegrenadeduration = 8;
     level.smokegrenadedissipation = 4;
     level.smokegrenadetotaltime = level.smokegrenadeduration + level.smokegrenadedissipation;
-    level.var_7871999 = "smoke_center";
+    level.fx_smokegrenade_single = "smoke_center";
     level.smoke_grenade_triggers = [];
     clientfield::register("allplayers", "inenemysmoke", 14000, 1, "int");
     clientfield::register("allplayers", "insmoke", 16000, 2, "int");
@@ -371,7 +371,7 @@ function function_8b6ddd71(grenadeent, smokeweapon) {
 // Params 1, eflags: 0x40
 // Checksum 0x342c8650, Offset: 0x15e8
 // Size: 0x1ac
-function event<grenade_fire> function_debb0d4e(eventstruct) {
+function event_handler[grenade_fire] function_debb0d4e(eventstruct) {
     weapon = eventstruct.weapon;
     if (!function_50ef4b12(weapon)) {
         return;

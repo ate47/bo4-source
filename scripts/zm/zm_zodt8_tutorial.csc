@@ -11,7 +11,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x71b64ccf, Offset: 0x220
 // Size: 0x3dc
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     if (util::get_game_type() != "ztutorial") {
         return;
     }

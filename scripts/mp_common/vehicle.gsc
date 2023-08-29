@@ -106,7 +106,7 @@ function vehiclespawnthread(veh_name, origin, angles, time_interval) {
             wait(randomfloatrange(1, 2));
             continue;
         }
-        vehicle asmrequestsubstate(#"hash_2d4b292477dc5711");
+        vehicle asmrequestsubstate(#"locomotion@movement");
         waitframe(1);
         vehicle makevehicleusable();
         if (target_istarget(vehicle)) {

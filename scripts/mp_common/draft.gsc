@@ -467,8 +467,8 @@ function draft_run() {
         if (isbot(player)) {
             player player_role::clear();
         }
-        var_e54b3c14 = player stats::get_stat(#"selectedcustomclass");
-        player setplayerstateloadoutweapons(var_e54b3c14);
+        class_num = player stats::get_stat(#"selectedcustomclass");
+        player setplayerstateloadoutweapons(class_num);
     }
     if (timeremaining == 0) {
         level.var_9205f2e8 = gettime();

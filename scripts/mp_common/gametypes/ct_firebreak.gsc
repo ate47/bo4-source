@@ -25,7 +25,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xcfe0eb1b, Offset: 0x238
 // Size: 0x2bc
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.var_d6d98fbe = 0;
     level.select_character = ct_utils::get_roleindex(#"prt_mp_firebreak");

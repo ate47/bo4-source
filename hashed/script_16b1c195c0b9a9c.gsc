@@ -8,10 +8,10 @@
 #include scripts/core_common/ai/strategic_command.gsc;
 #include scripts/core_common/ai/planner_squad_utility.gsc;
 #include scripts/core_common/ai/planner_squad.gsc;
-#include script_30e0aa25775a6927;
-#include script_31e56101095f174b;
-#include script_522aeb6ae906391e;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/planner_blackboard.gsc;
+#include scripts/core_common/ai/systems/planner.gsc;
+#include scripts/core_common/ai/systems/blackboard.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/ai/region_utility.gsc;
 
 #namespace namespace_83a61576;
@@ -997,13 +997,13 @@ function private function_458e36c0(planner, constants) {
     }
     params.regions[params.regions.size] = getclosesttacpoint(params.sdbombzone.origin).region;
     var_c1db2604 = function_b507a336(params.regions[0]);
-    foreach (var_95f1103c in var_c1db2604.neighbors) {
+    foreach (neighbor in var_c1db2604.neighbors) {
         if (!isdefined(params.regions)) {
             params.regions = [];
         } else if (!isarray(params.regions)) {
             params.regions = array(params.regions);
         }
-        params.regions[params.regions.size] = var_95f1103c;
+        params.regions[params.regions.size] = neighbor;
     }
     return params;
 }

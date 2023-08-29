@@ -68,7 +68,7 @@ function init_fx() {
     level._effect[#"hash_3524e302fa83d12e"] = #"hash_3a791d490f01f5c7";
     level._effect[#"hash_2498ee8a7586b418"] = #"hash_15dc4292340f0f1c";
     level._effect[#"hash_16c2570acb38a0ed"] = #"hash_7691f79bfc16f0bf";
-    level._effect[#"hash_365969fdd1765d57"] = #"hash_335feb1d213c22f6";
+    level._effect[#"car_lights"] = #"hash_335feb1d213c22f6";
     level._effect[#"hash_1c0ed73a9b21a882"] = #"hash_cc7196a44e2fbe3";
     level._effect[#"hash_704d3c12d59fb5d7"] = #"hash_2aabc11b07ad74d8";
     level._effect[#"hash_4ec5da9e09256102"] = #"hash_3063115f97c18abf";
@@ -131,7 +131,7 @@ function function_bfdd6659(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xbe
 function function_ae668ae9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
-        self.n_trail_fx = util::playfxontag(localclientnum, level._effect[#"hash_365969fdd1765d57"], self, "tag_body");
+        self.n_trail_fx = util::playfxontag(localclientnum, level._effect[#"car_lights"], self, "tag_body");
     } else if (isdefined(self.n_trail_fx)) {
         killfx(localclientnum, self.n_trail_fx);
         self.n_trail_fx = undefined;
@@ -164,7 +164,7 @@ function function_34f5c98(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Size: 0x10c
 function function_5218405b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
-        s_loc = struct::get(#"hash_7d39df096f2ae193");
+        s_loc = struct::get(#"spark_loc");
         playfx(localclientnum, level._effect[#"hash_3524e302fa83d12e"], s_loc.origin, anglestoforward(s_loc.angles), anglestoup(s_loc.angles));
         wait(0.5);
         playrumbleonposition(localclientnum, #"hash_743b325bf45e1c8c", s_loc.origin);

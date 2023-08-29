@@ -10,7 +10,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x21e14a18, Offset: 0x150
 // Size: 0x20c
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("scriptmover", "center_explosion_rope_pulse", 1, 1, "counter", &function_1e28ac3b, 0, 0);
     setsaveddvar(#"enable_global_wind", 1);
     setsaveddvar(#"wind_global_vector", "88 0 0");

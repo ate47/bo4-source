@@ -17,12 +17,12 @@
 #include scripts/zm_common/zm_audio.gsc;
 #include scripts/zm_common/ai/zm_ai_utility.gsc;
 #include scripts/zm_common/zm.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/status_effects/status_effect_util.gsc;
-#include script_3aa0f32b70d4f7cb;
-#include script_178024232e91b0a1;
-#include script_4d85e8de54b02198;
-#include script_caf007e2a98afa2;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include script_3819e7a1427df6d2;
 #include scripts/core_common/ai/archetype_catalyst.gsc;

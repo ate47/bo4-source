@@ -521,7 +521,7 @@ function on_challenge_complete(params) {
         if (isdefined(self)) {
             uploadstats(self);
         }
-        a_challenges = table::load(#"hash_492a37b72e9cab84", "a0");
+        a_challenges = table::load(#"gamedata/stats/zm/statsmilestones4.csv", "a0");
         str_current_challenge = a_challenges[n_challenge_index][#"e4"];
         n_players = level.players.size;
         n_time_played = game.timepassed / 1000;
@@ -539,7 +539,7 @@ function on_challenge_complete(params) {
 // Checksum 0xaabe5dcf, Offset: 0x1b68
 // Size: 0x52
 function is_daily_challenge(n_challenge_index) {
-    n_row = tablelookuprownum(#"hash_492a37b72e9cab84", 0, n_challenge_index);
+    n_row = tablelookuprownum(#"gamedata/stats/zm/statsmilestones4.csv", 0, n_challenge_index);
     if (n_row > -1) {
         return 1;
     }

@@ -1280,7 +1280,7 @@ function remove_when_done(killstreak, haskillstreakbeenused, isfrominventory) {
             self recordkillstreakbegindirect(killstreak, recordstreakindex);
         }
         if (isdefined(level.usingscorestreaks) && level.usingscorestreaks) {
-            var_ad8ae78f = {#var_9a1d6c6f:getplayerspawnid(self), #killstreak:killstreak, #gametime:function_f8d53445()};
+            var_ad8ae78f = {#activatedby:getplayerspawnid(self), #killstreak:killstreak, #gametime:function_f8d53445()};
             function_92d1707f(#"hash_1aa07f199266e0c7", var_ad8ae78f);
             if (isdefined(isfrominventory) && isfrominventory) {
                 remove_used_killstreak(killstreak);
@@ -2096,7 +2096,7 @@ function get_killstreak_usage(usagekey) {
 // Size: 0xee
 function on_player_spawned() {
     profilestart();
-    pixbeginevent(#"hash_1d81325f0403ec55");
+    pixbeginevent(#"_killstreaks.gsc/onPlayerSpawned");
     self thread give_owned();
     self.killcamkilledbyent = undefined;
     self callback::on_weapon_change(&function_4f415d8e);
@@ -3062,7 +3062,7 @@ function unhide_compass() {
 function setup_health(killstreak_ref, max_health, low_health) {
     self.maxhealth = max_health;
     self.lowhealth = low_health;
-    self.var_ce904ce = &defaulthackedhealthupdatecallback;
+    self.hackedhealthupdatecallback = &defaulthackedhealthupdatecallback;
     tablemaxhealth = killstreak_bundles::get_max_health(killstreak_ref);
     if (isdefined(tablemaxhealth)) {
         self.maxhealth = tablemaxhealth;

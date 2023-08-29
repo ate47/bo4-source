@@ -21,7 +21,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x28e3c08a, Offset: 0x1e0
 // Size: 0x2ec
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.select_character = ct_utils::get_roleindex(#"prt_mp_technomancer");
     level.var_820c5561 = "PROPHET";

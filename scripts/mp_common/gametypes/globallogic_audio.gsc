@@ -32,7 +32,7 @@ function __init__() {
     level.playleaderdialogonplayer = &leader_dialog_on_player;
     level.var_57e2bc08 = &leader_dialog;
     level.playequipmentdestroyedonplayer = &play_equipment_destroyed_on_player;
-    level.var_8a2b539f = &play_equipment_hacked_on_player;
+    level.playequipmenthackedonplayer = &play_equipment_hacked_on_player;
     setdvar(#"hash_2fd9eb199c2ef1cf", 0.4);
 }
 

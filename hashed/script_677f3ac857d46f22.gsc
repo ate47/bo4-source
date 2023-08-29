@@ -31,15 +31,15 @@ class cct_shared_button_prompt : cluielem {
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
-        } else if (#"hash_2ac8151a999989c3" == state_name) {
+        } else if (#"smoke_button" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
-        } else if (#"hash_6e1a1b6e18faf33e" == state_name) {
+        } else if (#"frag_button" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
         } else if (#"hash_321379c3a0d01a39" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
         } else if (#"hash_39ade572f801d7d0" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
-        } else if (#"hash_60d982c768c8379c" == state_name) {
+        } else if (#"x_button" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
         } else if (#"hash_554e932bc3ab8c3e" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
@@ -55,7 +55,7 @@ class cct_shared_button_prompt : cluielem {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 11);
         } else if (#"hash_2269874f1c7c7493" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 12);
-        } else if (#"hash_55e896105414c323" == state_name) {
+        } else if (#"square_button" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 13);
         } else if (#"hash_72d4665454938ae" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 14);

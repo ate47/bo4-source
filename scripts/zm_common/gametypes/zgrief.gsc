@@ -16,7 +16,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x75ae21b4, Offset: 0x108
 // Size: 0x144
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     zm_gametype::main();
     util::registertimelimit(0, 1440);
     util::registerscorelimit(0, 50000);

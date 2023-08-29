@@ -13,7 +13,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xd54553ed, Offset: 0x1a8
 // Size: 0x236
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     createuimodel(getglobaluimodel(), "ZMHudGlobal.trials.gameStartTime");
     callback::on_localclient_connect(&on_localplayer_connect);
     callback::on_finalize_initialization(&finalize_clientfields);

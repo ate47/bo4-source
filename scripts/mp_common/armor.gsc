@@ -13,7 +13,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xcd1fa8cb, Offset: 0x188
 // Size: 0x2c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     callback::on_connect(&on_player_connect);
 }
 

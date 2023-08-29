@@ -53,8 +53,8 @@ function localclientconnect(localclientnum) {
         println("<unknown string>" + localclientnum);
     #/
     callback(#"on_localclient_connect", localclientnum);
-    if (isdefined(level.var_51b3e4e0)) {
-        [[ level.var_51b3e4e0 ]](localclientnum);
+    if (isdefined(level.charactercustomizationsetup)) {
+        [[ level.charactercustomizationsetup ]](localclientnum);
     }
 }
 

@@ -25,7 +25,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x9c249ff6, Offset: 0x260
 // Size: 0x3f4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.var_e3049e92 = 1;
     level.var_7b05c4b5 = 0;
@@ -487,13 +487,13 @@ function function_f704f55c() {
         var_e8d6f89 = 2;
     }
     for (i = 0; i < var_e8d6f89; i++) {
-        function_bf9b418c(0);
+        spawn_robot(0);
         waitframe(1);
     }
     while (1) {
-        level waittill(#"hash_350b341d5ea3c621");
+        level waittill(#"robot_killed");
         wait(10);
-        function_bf9b418c(1);
+        spawn_robot(1);
     }
 }
 
@@ -501,7 +501,7 @@ function function_f704f55c() {
 // Params 1, eflags: 0x0
 // Checksum 0xc0aa1183, Offset: 0x1f38
 // Size: 0xe8
-function function_bf9b418c(var_fd15f2f7) {
+function spawn_robot(var_fd15f2f7) {
     while (1) {
         var_fbd8f808 = function_1a67c935();
         e_player = getplayers()[0];
@@ -555,7 +555,7 @@ function function_7b0b7f0a() {
 // Size: 0x30
 function function_a63b091b() {
     self waittill(#"death");
-    level notify(#"hash_350b341d5ea3c621");
+    level notify(#"robot_killed");
 }
 
 // Namespace ct_seraph/ct_seraph

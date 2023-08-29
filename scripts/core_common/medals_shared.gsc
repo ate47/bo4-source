@@ -26,7 +26,7 @@ function __init__() {
 // Size: 0x4c
 function init() {
     level.medalinfo = [];
-    level.var_228c8a1e = [];
+    level.medalcallbacks = [];
     level.numkills = 0;
     callback::on_connect(&on_player_connect);
 }
@@ -68,7 +68,7 @@ function defenseglobalcount() {
 // Params 1, eflags: 0x40
 // Checksum 0x18025088, Offset: 0x1c8
 // Size: 0x7c
-function event<player_medal> codecallback_medal(eventstruct) {
+function event_handler[player_medal] codecallback_medal(eventstruct) {
     if (!function_8570168d()) {
         self luinotifyevent(#"medal_received", 1, eventstruct.medal_index);
         self function_b552ffa9(#"medal_received", 1, eventstruct.medal_index);

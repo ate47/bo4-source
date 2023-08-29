@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/zm_common/trials/zm_trial_headshots_only.gsc;
 #include scripts/zm_common/zm_stats.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/system_shared.gsc;
 #include scripts/core_common/math_shared.gsc;

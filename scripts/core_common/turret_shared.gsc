@@ -489,7 +489,7 @@ function _shoot_turret_at_target(e_target, n_time, v_offset, n_index, b_just_onc
         b_just_once = 0;
     }
     set_target(e_target, v_offset, n_index);
-    if (!isdefined(self.var_2aca1b7f)) {
+    if (!isdefined(self.aim_only_no_shooting)) {
         _waittill_turret_on_target(e_target, n_index);
         if (b_just_once) {
             fire(n_index);
@@ -942,23 +942,23 @@ function _init_vehicle_turret(n_index) {
     s_turret = spawnstruct();
     switch (n_index) {
     case 0:
-        s_turret.var_dc58633 = "tag_flash";
+        s_turret.str_tag_flash = "tag_flash";
         s_turret.str_tag_pivot = "tag_barrel";
         break;
     case 1:
-        s_turret.var_dc58633 = "tag_gunner_flash1";
+        s_turret.str_tag_flash = "tag_gunner_flash1";
         s_turret.str_tag_pivot = "tag_gunner_barrel1";
         break;
     case 2:
-        s_turret.var_dc58633 = "tag_gunner_flash2";
+        s_turret.str_tag_flash = "tag_gunner_flash2";
         s_turret.str_tag_pivot = "tag_gunner_barrel2";
         break;
     case 3:
-        s_turret.var_dc58633 = "tag_gunner_flash3";
+        s_turret.str_tag_flash = "tag_gunner_flash3";
         s_turret.str_tag_pivot = "tag_gunner_barrel3";
         break;
     case 4:
-        s_turret.var_dc58633 = "tag_gunner_flash4";
+        s_turret.str_tag_flash = "tag_gunner_flash4";
         s_turret.str_tag_pivot = "tag_gunner_barrel4";
         break;
     }
@@ -1116,7 +1116,7 @@ function can_hit_target(e_target, n_index) {
 // Checksum 0x5a53a8c5, Offset: 0x3930
 // Size: 0x28e
 function trace_test(e_target, v_offset = (0, 0, 0), n_index) {
-    if (isdefined(self.var_e42923eb)) {
+    if (isdefined(self.good_old_style_turret_tracing)) {
         s_turret = _get_turret_data(n_index);
         v_start_org = self gettagorigin(s_turret.str_tag_pivot);
         if (e_target sightconetrace(v_start_org, self) > 0.2) {

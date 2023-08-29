@@ -22,7 +22,7 @@ function autoexec __init__() {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x42de1ee3, Offset: 0xe8
 // Size: 0xe4
-function private function_59c1a869(replacementarray&, var_d1c21f6f, var_b06dd57e) {
+function private function_59c1a869(&replacementarray, var_d1c21f6f, var_b06dd57e) {
     if (!function_bbc0b67f(0)) {
         return;
     }
@@ -48,7 +48,7 @@ function private function_59c1a869(replacementarray&, var_d1c21f6f, var_b06dd57e
 // Params 3, eflags: 0x5 linked
 // Checksum 0x5a18efc2, Offset: 0x1d8
 // Size: 0x10c
-function private function_41015db1(replacementarray&, itemname, replacementitemname) {
+function private function_41015db1(&replacementarray, itemname, replacementitemname) {
     if (!function_bbc0b67f(0)) {
         return;
     }

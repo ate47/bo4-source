@@ -44,7 +44,7 @@ function end(id) {
         s_sc = level.var_345df07[id];
         exploder::stop_exploder(s_sc.var_915be716);
         namespace_617a54f4::function_2a94055d(id);
-        s_sc.var_f929d531 notify(#"hash_63acd5ff4da933c5");
+        s_sc.var_f929d531 notify(#"event_end");
     }
 }
 
@@ -96,7 +96,7 @@ function private soul_captured(var_f0e6c7a2, ent) {
 // Checksum 0x2b8f053b, Offset: 0x500
 // Size: 0x7c
 function private function_fab8c488() {
-    self endon(#"death", #"hash_63acd5ff4da933c5");
+    self endon(#"death", #"event_end");
     while (self zm_hms_util::function_b8a27acc()) {
         wait(0.1);
     }
@@ -109,7 +109,7 @@ function private function_fab8c488() {
 // Checksum 0xd9f028a6, Offset: 0x588
 // Size: 0x74
 function private player_enter_watcher() {
-    self endon(#"death", #"hash_63acd5ff4da933c5");
+    self endon(#"death", #"event_end");
     while (!self zm_hms_util::function_b8a27acc()) {
         wait(0.1);
     }
@@ -122,7 +122,7 @@ function private player_enter_watcher() {
 // Checksum 0x8e642d1b, Offset: 0x608
 // Size: 0x7c
 function private function_b1e6482f() {
-    self endon(#"death", #"player_enter", #"hash_63acd5ff4da933c5");
+    self endon(#"death", #"player_enter", #"event_end");
     wait(5);
     level thread [[ level.var_345df07[self.id].var_af245552 ]]();
     end(self.id);

@@ -164,13 +164,13 @@ function function_93440c52() {
             if (getdvarint(#"hash_62162f1f94cbba77", 0) != var_f4098dd1) {
                 var_f4098dd1 = getdvarint(#"hash_62162f1f94cbba77", 0);
                 if (var_f4098dd1) {
-                    setdvar(#"hash_7ebe9ee37349aae2", 1);
-                    setdvar(#"hash_263969a4f5f48bd1", 1);
-                    setdvar(#"hash_21c715cded2e84e9", 10000);
+                    setdvar(#"doublejump_time_before_recharge", 1);
+                    setdvar(#"doublejump_time_before_recharge_fast", 1);
+                    setdvar(#"playerenergy_restrate", 10000);
                 } else {
-                    setdvar(#"hash_7ebe9ee37349aae2", 1600);
-                    setdvar(#"hash_263969a4f5f48bd1", 1000);
-                    setdvar(#"hash_21c715cded2e84e9", 400);
+                    setdvar(#"doublejump_time_before_recharge", 1600);
+                    setdvar(#"doublejump_time_before_recharge_fast", 1000);
+                    setdvar(#"playerenergy_restrate", 400);
                     iprintlnbold(var_f4098dd1 ? "<unknown string>" : "<unknown string>");
                 }
             }

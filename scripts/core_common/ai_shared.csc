@@ -17,7 +17,7 @@ function autoexec main() {
 // Params 2, eflags: 0x21 linked
 // Checksum 0x828ac357, Offset: 0xa0
 // Size: 0x132
-function add_ai_spawn_function(func_spawn, vararg...) {
+function add_ai_spawn_function(func_spawn, ...) {
     if (!isdefined(level.var_71b23817)) {
         level.var_71b23817 = [];
     } else if (!isarray(level.var_71b23817)) {
@@ -52,7 +52,7 @@ function function_932006d1(func_spawn) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0x607d5cb3, Offset: 0x2a0
 // Size: 0x1e0
-function add_archetype_spawn_function(str_archetype, func_spawn, vararg...) {
+function add_archetype_spawn_function(str_archetype, func_spawn, ...) {
     if (!isdefined(level.var_c18b23c1)) {
         level.var_c18b23c1 = [];
     } else if (!isarray(level.var_c18b23c1)) {

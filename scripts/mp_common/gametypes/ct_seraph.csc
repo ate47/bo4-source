@@ -10,7 +10,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xa4c1d915, Offset: 0x118
 // Size: 0x10a
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     ct_core::function_fa03fc55();
     level.hardpoint_bar = luielembar_ct::register("hardpoint_bar");

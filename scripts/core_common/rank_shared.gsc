@@ -584,7 +584,7 @@ function updaterank() {
 // Params 1, eflags: 0x40
 // Checksum 0xd0f47c62, Offset: 0x2848
 // Size: 0x1d8
-function event<player_rankup> codecallback_rankup(eventstruct) {
+function event_handler[player_rankup] codecallback_rankup(eventstruct) {
     if (sessionmodeismultiplayergame()) {
         if (eventstruct.rank > 53) {
             self giveachievement("mp_trophy_battle_tested");

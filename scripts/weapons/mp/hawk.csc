@@ -360,7 +360,7 @@ function function_5a1bf101(localclientnum) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x39122974, Offset: 0x17d8
 // Size: 0x5e
-function function_86f17acc(controllermodel, var_1f3cc5f9&) {
+function function_86f17acc(controllermodel, &var_1f3cc5f9) {
     for (ti = 0; ti < 6; ti++) {
         setuimodelvalue(var_1f3cc5f9[ti], 1);
     }

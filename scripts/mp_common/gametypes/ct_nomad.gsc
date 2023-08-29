@@ -24,7 +24,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x38246db0, Offset: 0x288
 // Size: 0x3c4
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
     level.select_character = ct_utils::get_roleindex(#"prt_mp_trapper");
     level.var_820c5561 = "NOMAD";
@@ -287,7 +287,7 @@ function function_a898afdc() {
         }
         e_player = getplayers()[0];
         e_player thread ct_utils::function_785eb2ca();
-        level notify(#"hash_3976352dba2b1e90");
+        level notify(#"hardpoint_completed");
         level.var_156f3cee++;
         if (level.var_156f3cee <= 3) {
             function_37adbd8f();
@@ -368,7 +368,7 @@ function function_86a5d2b9() {
         }
         waitframe(1);
     }
-    level notify(#"hash_15b65416c6dbe5a7");
+    level notify(#"tripwires_planted");
 }
 
 // Namespace ct_nomad/ct_nomad
@@ -377,7 +377,7 @@ function function_86a5d2b9() {
 // Size: 0x7a
 function function_85eb0847() {
     self endon(#"death");
-    level endon(#"hash_3976352dba2b1e90", #"combattraining_logic_finished");
+    level endon(#"hardpoint_completed", #"combattraining_logic_finished");
     while (1) {
         self waittill(#"tripwire_spawn");
         level.var_bd6e4af0++;
@@ -626,7 +626,7 @@ function function_795960e7() {
 // Checksum 0x9f18a6c, Offset: 0x2680
 // Size: 0x5c
 function function_8d02c681() {
-    level notify(#"hash_5ffeb02b3dfcec40", {#dog:self});
+    level notify(#"dog_spawned", {#dog:self});
     self thread function_bb7fe568();
     self thread function_2ff69a5d();
 }
@@ -752,7 +752,7 @@ function function_764aabbc() {
     }
     level.var_d08f855b = 1;
     self thread ct_utils::function_329f9ba6(#"hash_65db26ed106e82cd", 10000, "green", 2);
-    level waittill(#"hash_15b65416c6dbe5a7");
+    level waittill(#"tripwires_planted");
     self thread ct_utils::function_415cd308(0.1, "green", 2);
     level.var_d08f855b = 0;
 }
@@ -791,7 +791,7 @@ function function_a6b6f492() {
 function function_dd64960c(a_ents) {
     if (isdefined(a_ents[#"prop 1"])) {
         var_7425591a = a_ents[#"prop 1"] gettagorigin("tarp_06_jnt") + vectorscale((0, 0, -1), 8);
-        a_ents[#"prop 1"] waittill(#"hash_7b96690bce0dcf30", #"death");
+        a_ents[#"prop 1"] waittill(#"physics_pulse", #"death");
         physicsexplosionsphere(var_7425591a, 1024, 1, 1);
     }
 }

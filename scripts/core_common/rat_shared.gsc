@@ -113,7 +113,7 @@ function addratscriptcmd(commandname, functioncallback) {
 // Params 1, eflags: 0x40
 // Checksum 0xd146d540, Offset: 0x7d8
 // Size: 0x114
-function event<rat_scriptcommand> codecallback_ratscriptcommand(params) {
+function event_handler[rat_scriptcommand] codecallback_ratscriptcommand(params) {
     /#
         init();
         /#
@@ -601,7 +601,7 @@ function function_d1b632ff(params) {
 // Size: 0x5e
 function rscsimulatescripterror(params) {
     /#
-        if (params.var_2cad34 == "<unknown string>") {
+        if (params.errorlevel == "<unknown string>") {
             /#
                 assertmsg("<unknown string>");
             #/

@@ -5,7 +5,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xa9b4029, Offset: 0x100
 // Size: 0x1d4
-function event<event_9673dc9a> function_3981d015(eventstruct) {
+function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     dynent = eventstruct.ent;
     if (isdefined(dynent)) {
         if (dynent.targetname === "spring_event_homunculus" || dynent.targetname === "zombie_apoc_homunculus") {

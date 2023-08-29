@@ -14,7 +14,7 @@
 #include scripts/zm/zm_mansion_jordans.gsc;
 #include script_9af9e17217da6e6;
 #include scripts/zm/zm_mansion_boss_ww.gsc;
-#include script_1035f8d62d51bc68;
+#include scripts/zm/zm_mansion_a_skeet_fink.gsc;
 #include scripts/zm/zm_mansion_achievements.gsc;
 #include script_1ef0852930d362dc;
 #include scripts/zm/weapons/zm_weap_riotshield.gsc;
@@ -63,7 +63,7 @@
 #include scripts/zm_common/load.gsc;
 #include script_190d6b82bcca0908;
 #include scripts/core_common/ai/zombie_utility.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/music_shared.gsc;
 #include scripts/core_common/lui_shared.gsc;
 #include scripts/core_common/exploder_shared.gsc;
@@ -127,7 +127,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0xc3d98fba, Offset: 0x1278
 // Size: 0x13ac
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     setclearanceceiling(131);
     level.var_e1d82d33 = 1500;
     level.var_cd24b30 = 32;
@@ -144,7 +144,7 @@ function event<level_init> main(eventstruct) {
     namespace_b6ca3ccc::init();
     mansion_triad::init();
     mansion_impaler::init();
-    namespace_59d4913f::init();
+    mansion_a_skeet_fink::init();
     mansion_jordans::init();
     mansion_achievements::init();
     zm_audio_sq::init();

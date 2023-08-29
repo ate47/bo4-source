@@ -53,7 +53,7 @@ function autoexec __init__() {
 // Params 1, eflags: 0x40
 // Checksum 0xcd76c6d1, Offset: 0x528
 // Size: 0x26
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     profilestart();
     level thread function_39193e3a();
     profilestop();
@@ -1687,7 +1687,7 @@ function setinflictorstat(einflictor, eattacker, weapon) {
         weaponpickedup = 1;
     }
     if (!isdefined(einflictor)) {
-        eattacker stats::function_eec52333(weapon, #"hits", 1, eattacker.var_e54b3c14, weaponpickedup);
+        eattacker stats::function_eec52333(weapon, #"hits", 1, eattacker.class_num, weaponpickedup);
         return;
     }
     if (!isdefined(einflictor.playeraffectedarray)) {
@@ -1705,7 +1705,7 @@ function setinflictorstat(einflictor, eattacker, weapon) {
         if (weapon.rootweapon.name == "tabun_gas") {
             eattacker stats::function_e24eec31(weapon, #"used", 1);
         }
-        eattacker stats::function_eec52333(weapon, #"hits", 1, eattacker.var_e54b3c14, weaponpickedup);
+        eattacker stats::function_eec52333(weapon, #"hits", 1, eattacker.class_num, weaponpickedup);
     }
 }
 
@@ -1764,7 +1764,7 @@ function function_b1a3b359(killedplayer, damagedone, weapon, assist_level = unde
         if (isdefined(self.pickedupweapons) && isdefined(self.pickedupweapons[weapon])) {
             weaponpickedup = 1;
         }
-        self stats::function_eec52333(weapon, #"assists", 1, self.var_e54b3c14, weaponpickedup);
+        self stats::function_eec52333(weapon, #"assists", 1, self.class_num, weaponpickedup);
     }
     if (!level.var_724cf71) {
         switch (weapon.name) {

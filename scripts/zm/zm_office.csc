@@ -37,7 +37,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0x5a74d6ee, Offset: 0x4c8
 // Size: 0x2dc
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("clientuimodel", "player_lives", 1, 2, "int", undefined, 0, 0);
     clientfield::register("world", "flicker_function_controller", 1, 1, "int", &function_1ed795b7, 0, 0);
     clientfield::register("world", "flicker_function_controller_persistant", 1, 1, "int", &function_93f4e0e6, 0, 0);

@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include script_4bf952f6ba31bb17;
+#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
 
 #namespace bot_animation;
 

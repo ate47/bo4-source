@@ -25,7 +25,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xd124a8fe, Offset: 0x1d0
 // Size: 0x35e
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     util::registerroundswitch(0, 9);
     util::registertimelimit(0, 1440);

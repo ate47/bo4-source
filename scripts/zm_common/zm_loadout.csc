@@ -42,9 +42,9 @@ function __init__() {
 // Checksum 0x2df0b8d6, Offset: 0x1a8
 // Size: 0x1fe
 function on_localplayer_spawned(localclientnum) {
-    self.var_e54b3c14 = 0;
+    self.class_num = 0;
     if (isplayer(self)) {
-        self.var_e54b3c14 = function_cc90c352(localclientnum);
+        self.class_num = function_cc90c352(localclientnum);
     }
     self.loadout = [];
     var_cd6fae8c = self get_loadout_item(localclientnum, "primarygrenade");
@@ -78,13 +78,13 @@ function get_loadout_item(localclientnum, slot) {
     if (!isplayer(self)) {
         return undefined;
     }
-    if (!isdefined(self.var_e54b3c14)) {
-        self.var_e54b3c14 = function_cc90c352(localclientnum);
+    if (!isdefined(self.class_num)) {
+        self.class_num = function_cc90c352(localclientnum);
     }
-    if (!isdefined(self.var_e54b3c14)) {
-        self.var_e54b3c14 = 0;
+    if (!isdefined(self.class_num)) {
+        self.class_num = 0;
     }
-    return self getloadoutitem(localclientnum, self.var_e54b3c14, slot);
+    return self getloadoutitem(localclientnum, self.class_num, slot);
 }
 
 // Namespace zm_loadout/zm_loadout
@@ -95,12 +95,12 @@ function function_439b009a(localclientnum, slot) {
     if (!isplayer(self)) {
         return undefined;
     }
-    if (!isdefined(self.var_e54b3c14)) {
-        self.var_e54b3c14 = function_cc90c352(localclientnum);
+    if (!isdefined(self.class_num)) {
+        self.class_num = function_cc90c352(localclientnum);
     }
-    if (!isdefined(self.var_e54b3c14)) {
-        self.var_e54b3c14 = 0;
+    if (!isdefined(self.class_num)) {
+        self.class_num = 0;
     }
-    return self getloadoutweapon(localclientnum, self.var_e54b3c14, slot);
+    return self getloadoutweapon(localclientnum, self.class_num, slot);
 }
 

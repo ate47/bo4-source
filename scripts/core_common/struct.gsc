@@ -34,7 +34,7 @@ function autoexec __init__() {
 // Params 1, eflags: 0x40
 // Checksum 0xa66493c3, Offset: 0x318
 // Size: 0x34
-function event<createstruct> createstruct(struct) {
+function event_handler[createstruct] createstruct(struct) {
     __init__();
     struct init();
 }
@@ -173,7 +173,7 @@ function get_script_bundle_instances(str_type, kvp) {
 // Params 3, eflags: 0x40
 // Checksum 0x55a8915c, Offset: 0xa40
 // Size: 0x2c0
-function event<findstruct> findstruct(param1, name, index) {
+function event_handler[findstruct] findstruct(param1, name, index) {
     if (isvec(param1)) {
         position = param1;
         foreach (key in level.struct_class_names) {

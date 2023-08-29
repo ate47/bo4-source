@@ -559,7 +559,7 @@ function watch_death() {
 // Params 1, eflags: 0x40
 // Checksum 0xf9c7e62d, Offset: 0x2450
 // Size: 0xac
-function event<grenade_fire> function_b0604bb3(eventstruct) {
+function event_handler[grenade_fire] function_b0604bb3(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

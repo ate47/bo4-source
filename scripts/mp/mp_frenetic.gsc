@@ -17,7 +17,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x97a0ff1f, Offset: 0x230
 // Size: 0x19c
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level.var_cfec596d = 828;
     level.var_39b27fbe = -3294;
     level.var_8db9ea19 = 4500;
@@ -101,7 +101,7 @@ function on_game_playing() {
 function function_dd64960c(a_ents) {
     if (isdefined(a_ents[#"prop 1"])) {
         var_7425591a = a_ents[#"prop 1"] gettagorigin("tarp_06_jnt") + vectorscale((0, 0, -1), 8);
-        a_ents[#"prop 1"] waittill(#"hash_7b96690bce0dcf30", #"death");
+        a_ents[#"prop 1"] waittill(#"physics_pulse", #"death");
         physicsexplosionsphere(var_7425591a, 1024, 1, 1);
     }
 }

@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/ai/blackboard_vehicle.gsc;
-#include script_522aeb6ae906391e;
+#include scripts/core_common/ai/systems/blackboard.gsc;
 #include scripts/core_common/vehicle_ai_shared.gsc;
 #include scripts/core_common/spawner_shared.gsc;
 #include scripts/core_common/vehicle_shared.gsc;
@@ -55,7 +55,7 @@ function amws_initialize() {
     self.overridevehicledamage = &drone_callback_damage;
     self thread vehicle_ai::nudge_collision();
     self.cobra = 0;
-    self asmrequestsubstate(#"hash_2d4b292477dc5711");
+    self asmrequestsubstate(#"locomotion@movement");
     self.variant = "light_weight";
     if (issubstr(self.scriptvehicletype, "pamws")) {
         self.variant = "armored";
@@ -69,8 +69,8 @@ function amws_initialize() {
         self.var_a8c60b0e = 1;
     }
     self util::cooldown("cobra_up", 10);
-    if (isdefined(level.var_b4158f86)) {
-        [[ level.var_b4158f86 ]](self);
+    if (isdefined(level.vehicle_initializer_cb)) {
+        [[ level.vehicle_initializer_cb ]](self);
     }
     self.var_232915af = 1;
     defaultrole();
@@ -192,7 +192,7 @@ function cobra_retract() {
     self.cobra = 0;
     self laseroff();
     self notify(#"disable_lens_flare");
-    self asmrequestsubstate(#"hash_2d4b292477dc5711");
+    self asmrequestsubstate(#"locomotion@movement");
     self vehicle_ai::waittill_asm_complete("locomotion@movement", 4);
     if (isdefined(self.var_9b4a5686) && self.var_9b4a5686) {
         self.var_a8c60b0e = 1;
@@ -322,7 +322,7 @@ function state_combat_enter(params) {
 // Checksum 0x7362ab19, Offset: 0x14c8
 // Size: 0x2e
 function is_ai_using_minigun() {
-    return isdefined(self.settings.var_f95067e4) ? self.settings.var_f95067e4 : 1;
+    return isdefined(self.settings.ai_uses_minigun) ? self.settings.ai_uses_minigun : 1;
 }
 
 // Namespace amws/amws

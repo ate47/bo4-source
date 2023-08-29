@@ -46,7 +46,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xd62542ac, Offset: 0x5e8
 // Size: 0x416
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     util::registerroundswitch(0, 9);
     util::registertimelimit(0, 1440);
@@ -60,7 +60,7 @@ function event<gametype_init> main(eventstruct) {
     level.onprecachegametype = &onprecachegametype;
     level.onstartgametype = &onstartgametype;
     level.onspawnplayer = &onspawnplayer;
-    level.var_76d547e4 = &sd_playerspawnedcb;
+    level.playerspawnedcb = &sd_playerspawnedcb;
     player::function_cf3aa03d(&onplayerkilled);
     player::function_3c5cc656(&function_610d3790);
     level.ondeadevent = &ondeadevent;
@@ -71,7 +71,7 @@ function event<gametype_init> main(eventstruct) {
     level.getteamkillscore = &sd_getteamkillscore;
     level.iskillboosting = &sd_iskillboosting;
     level.var_cdb8ae2c = &function_a8da260c;
-    level.var_2e0d65f = &figureoutgametypefriendlyfire;
+    level.figure_out_gametype_friendly_fire = &figureoutgametypefriendlyfire;
     level.var_60507c71 = 1;
     level.takelivesondeath = 1;
     level.var_4348a050 = 1;
@@ -109,7 +109,7 @@ function register_clientfields() {
 // Size: 0x2a
 function onprecachegametype() {
     game.bomb_dropped_sound = "fly_bomb_drop_plr";
-    game.var_bdaf0e9b = "fly_bomb_pickup_plr";
+    game.bomb_recovered_sound = "fly_bomb_pickup_plr";
 }
 
 // Namespace sd/sd
@@ -551,8 +551,8 @@ function bombs() {
         objective_add(var_69bc8821.objectiveid, "invisible", var_69bc8821, waypointname);
         var_69bc8821 gameobjects::set_visible_team(#"any");
         bombzone.waypoint = var_69bc8821;
-        if (isdefined(level.var_494cb7f8)) {
-            [[ level.var_494cb7f8 ]](bombzone);
+        if (isdefined(level.bomb_zone_fixup)) {
+            [[ level.bomb_zone_fixup ]](bombzone);
         }
         if (!level.multibomb) {
             bombzone.trigger setinvisibletoall();
@@ -672,7 +672,7 @@ function function_941367ab(team, player, result) {
         return;
     }
     player.isplanting = 0;
-    player notify(#"hash_69dfa712e01f884c");
+    player notify(#"event_ended");
     if (level.multibomb && !result) {
         for (i = 0; i < self.otherbombzones.size; i++) {
             self.otherbombzones[i] gameobjects::enable_object();
@@ -692,7 +692,7 @@ function function_46031620(team, player, result) {
         return;
     }
     player.isdefusing = 0;
-    player notify(#"hash_69dfa712e01f884c");
+    player notify(#"event_ended");
     if (isdefined(level.sdbombmodel) && !result) {
         level.sdbombmodel show();
     }
@@ -806,10 +806,10 @@ function ondrop(player) {
     if (!level.bombplanted) {
         globallogic_audio::leader_dialog("bombFriendlyDropped", game.attackers);
     }
-    player notify(#"hash_69dfa712e01f884c");
+    player notify(#"event_ended");
     sound::play_on_players(game.bomb_dropped_sound, game.attackers);
-    if (isdefined(level.var_942ae28a)) {
-        [[ level.var_942ae28a ]]();
+    if (isdefined(level.bombdropbotevent)) {
+        [[ level.bombdropbotevent ]]();
     }
 }
 
@@ -843,8 +843,8 @@ function onpickup(player) {
         level.bombzones[i] gameobjects::hide_waypoint();
         level.bombzones[i] gameobjects::show_waypoint(player);
     }
-    if (isdefined(level.var_19c02bfc)) {
-        [[ level.var_19c02bfc ]]();
+    if (isdefined(level.bombpickupbotevent)) {
+        [[ level.bombpickupbotevent ]]();
     }
 }
 

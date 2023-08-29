@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 function __init__() {
     level.classicmode = getgametypesetting(#"classicmode");
     if (level.classicmode) {
-        function_9c179856();
+        enableclassicmode();
     }
 }
 
@@ -26,10 +26,10 @@ function __init__() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xba660371, Offset: 0x110
 // Size: 0x214
-function function_9c179856() {
+function enableclassicmode() {
     setdvar(#"doublejump_enabled", 0);
     setdvar(#"wallrun_enabled", 0);
-    setdvar(#"hash_7fc5ae26248606ca", 550);
+    setdvar(#"slide_maxtime", 550);
     setdvar(#"playerenergy_slideenergyenabled", 0);
     setdvar(#"trm_maxsidemantleheight", 0);
     setdvar(#"trm_maxbackmantleheight", 0);

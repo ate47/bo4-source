@@ -34,9 +34,9 @@
 #include scripts/core_common/ai/archetype_utility.gsc;
 #include scripts/core_common/animation_shared.gsc;
 #include scripts/core_common/ai_shared.gsc;
-#include script_178024232e91b0a1;
-#include script_4bf952f6ba31bb17;
-#include script_3aa0f32b70d4f7cb;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
 #include script_3819e7a1427df6d2;
 
 #namespace swat_team;

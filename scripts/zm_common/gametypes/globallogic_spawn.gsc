@@ -207,8 +207,8 @@ function spawnplayer() {
     } else {
         self [[ level.onspawnplayer ]](0);
     }
-    if (isdefined(level.var_76d547e4)) {
-        self [[ level.var_76d547e4 ]]();
+    if (isdefined(level.playerspawnedcb)) {
+        self [[ level.playerspawnedcb ]]();
     }
     pixendevent();
     pixendevent();

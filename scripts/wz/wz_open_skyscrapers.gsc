@@ -11,7 +11,7 @@
 #include scripts/wz_common/wz_array_broadcast.gsc;
 #include scripts/wz_common/wz_firing_range.gsc;
 #include script_3267610dfd12104c;
-#include script_2a355b8e0ddce331;
+#include scripts/wz/wz_open_skyscrapers_ai_zones.gsc;
 #include scripts/wz/wz_open_skyscrapers_ffotd.gsc;
 #include scripts/core_common/flagsys_shared.gsc;
 #include scripts/core_common/gestures.gsc;
@@ -40,7 +40,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x79f63928, Offset: 0x1d8
 // Size: 0x2dc
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     setclearanceceiling(17);
     callback::on_spawned(&on_player_spawned);
     callback::on_vehicle_spawned(&on_vehicle_spawned);
@@ -67,7 +67,7 @@ function event<level_init> main(eventstruct) {
     /#
         init_devgui();
     #/
-    level namespace_25266c0d::init();
+    level wz_open_skyscrapers_ai_zones::init();
     wz_firing_range::init_targets("firing_range_target");
     wz_firing_range::init_targets("firing_range_target_challenge");
     item_world::function_cbc32e1b(30000);
@@ -139,12 +139,12 @@ function private function_5725bc63() {
 // Checksum 0xb477a6e4, Offset: 0x708
 // Size: 0x100
 function function_7276b578() {
-    var_cab99933 = getdynentarray("hmh_ramp");
+    a_ramps = getdynentarray("hmh_ramp");
     enabled = isdefined(getgametypesetting(#"wzheavymetalheroes")) && getgametypesetting(#"wzheavymetalheroes");
-    if (isdefined(var_cab99933)) {
-        foreach (var_f42f78d5 in var_cab99933) {
-            if (isdefined(var_f42f78d5)) {
-                setdynentenabled(var_f42f78d5, enabled);
+    if (isdefined(a_ramps)) {
+        foreach (ramp in a_ramps) {
+            if (isdefined(ramp)) {
+                setdynentenabled(ramp, enabled);
             }
         }
     }
@@ -156,12 +156,12 @@ function function_7276b578() {
 // Size: 0x110
 function function_2560f130() {
     item_world::function_4de3ca98();
-    var_cab99933 = getdynentarray("hmh_ramp");
+    a_ramps = getdynentarray("hmh_ramp");
     enabled = isdefined(getgametypesetting(#"wzheavymetalheroes")) && getgametypesetting(#"wzheavymetalheroes");
-    if (isdefined(var_cab99933)) {
-        foreach (var_f42f78d5 in var_cab99933) {
-            if (isdefined(var_f42f78d5)) {
-                setdynentenabled(var_f42f78d5, enabled);
+    if (isdefined(a_ramps)) {
+        foreach (ramp in a_ramps) {
+            if (isdefined(ramp)) {
+                setdynentenabled(ramp, enabled);
             }
         }
     }
@@ -1262,7 +1262,7 @@ function function_e8f0335f() {
 // Params 1, eflags: 0x44
 // Checksum 0xad01112f, Offset: 0x6888
 // Size: 0x2b0
-function event<event_9673dc9a> private function_f9b68fd7(eventstruct) {
+function event_handler[event_9673dc9a] private function_f9b68fd7(eventstruct) {
     /#
         if (!getdvarint(#"hash_69592e1b2d05fb21", 0)) {
             return;

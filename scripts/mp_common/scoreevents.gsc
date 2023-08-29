@@ -714,7 +714,7 @@ function scoreeventplayerkill(data, time) {
                 if (isdefined(attacker.pickedupweapons) && isdefined(attacker.pickedupweapons[weapon])) {
                     weaponpickedup = 1;
                 }
-                attacker stats::function_eec52333(weapon, #"backstabber_kill", 1, attacker.var_e54b3c14, weaponpickedup);
+                attacker stats::function_eec52333(weapon, #"backstabber_kill", 1, attacker.class_num, weaponpickedup);
                 attacker.pers[#"backstabs"]++;
                 attacker.backstabs = attacker.pers[#"backstabs"];
             } else if (!(isdefined(weapon.var_cfc07f04) && weapon.var_cfc07f04) && (anglediff < -30 || anglediff > 70 || isdefined(victim.laststand) && victim.laststand)) {

@@ -240,7 +240,7 @@ function badplace_think(badplace) {
 function playerdamagerumble() {
     while (1) {
         self waittill(#"damage");
-        if (isdefined(self.var_3919e01e)) {
+        if (isdefined(self.specialdamage)) {
             continue;
         }
         self playrumbleonentity("damage_heavy");
@@ -253,7 +253,7 @@ function playerdamagerumble() {
 // Size: 0x82
 function map_is_early_in_the_game() {
     /#
-        if (isdefined(level.var_7572607f)) {
+        if (isdefined(level.testmap)) {
             return 1;
         }
     #/
@@ -546,7 +546,7 @@ function shock_ondeath() {
     if (isdefined(self.shock_ondeath) && !self.shock_ondeath) {
         return;
     }
-    if (isdefined(self.var_cadf8f1b)) {
+    if (isdefined(self.specialdeath)) {
         return;
     }
     if (getdvarint(#"r_texturebits", 0) == 16) {

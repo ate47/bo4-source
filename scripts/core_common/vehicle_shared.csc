@@ -513,7 +513,7 @@ function lights_on(localclientnum, team) {
 // Params 6, eflags: 0x1 linked
 // Checksum 0xe61807d7, Offset: 0x2d38
 // Size: 0x108
-function addanimtolist(animitem, liston&, listoff&, playwhenoff, id, maxid) {
+function addanimtolist(animitem, &liston, &listoff, playwhenoff, id, maxid) {
     if (isdefined(animitem) && id <= maxid) {
         if (playwhenoff === 1) {
             if (!isdefined(listoff)) {
@@ -705,7 +705,7 @@ function function_6ad96295(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 1, eflags: 0x40
 // Checksum 0x6a0e27d7, Offset: 0x39c0
 // Size: 0x1cc
-function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
+function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -743,7 +743,7 @@ function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xa9bf24c9, Offset: 0x3b98
 // Size: 0x1f4
-function event<change_seat> function_124469f4(eventstruct) {
+function event_handler[change_seat] function_124469f4(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -1698,7 +1698,7 @@ function field_toggle_lockon_handler(localclientnum, oldval, newval, bnewent, bi
 // Params 3, eflags: 0x1 linked
 // Checksum 0x8a30a4ef, Offset: 0x73b8
 // Size: 0xae
-function function_670a62e7(var_96ceb3eb, fxlist&, taglist&) {
+function function_670a62e7(var_96ceb3eb, &fxlist, &taglist) {
     if (isdefined(var_96ceb3eb) && isarray(var_96ceb3eb)) {
         for (i = 0; i < var_96ceb3eb.size; i++) {
             addfxandtagtolists(var_96ceb3eb[i].fx, var_96ceb3eb[i].tag, fxlist, taglist, i, var_96ceb3eb.size - 1);
@@ -1710,7 +1710,7 @@ function function_670a62e7(var_96ceb3eb, fxlist&, taglist&) {
 // Params 6, eflags: 0x1 linked
 // Checksum 0x454384f6, Offset: 0x7470
 // Size: 0x128
-function addfxandtagtolists(fx, tag, fxlist&, taglist&, id, maxid) {
+function addfxandtagtolists(fx, tag, &fxlist, &taglist, id, maxid) {
     if (isdefined(fx) && isdefined(tag) && isint(id) && isint(maxid) && id <= maxid) {
         if (!isdefined(fxlist)) {
             fxlist = [];

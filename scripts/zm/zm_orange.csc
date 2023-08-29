@@ -63,7 +63,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0xb2d20871, Offset: 0x508
 // Size: 0x3fc
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     full_screen_movie::register("full_screen_movie");
     clientfield::register("actor", "sndActorUnderwater", 28000, 1, "int", &sndactorunderwater, 0, 1);
     level.setupcustomcharacterexerts = &setup_personality_character_exerts;

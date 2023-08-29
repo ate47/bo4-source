@@ -135,7 +135,7 @@ function private function_32b2794(degree) {
 // Params 6, eflags: 0x5 linked
 // Checksum 0x9ea4e9fe, Offset: 0xa20
 // Size: 0x552
-function private function_44a6883c(drop_item_id&, drop_items&, drop_count&, drop_amount&, var_4a5c0085 = 1, var_fee0423a = 0) {
+function private function_44a6883c(&drop_item_id, &drop_items, &drop_count, &drop_amount, var_4a5c0085 = 1, var_fee0423a = 0) {
     var_f55ea9e5 = drop_item_id.size;
     for (index = 0; index < var_f55ea9e5; index++) {
         if (!isdefined(drop_item_id[index])) {
@@ -578,7 +578,7 @@ function function_10ececeb(var_e280bfe2 = 1, tracedistance = 24, originheightoff
 // Params 1, eflags: 0x40
 // Checksum 0x18e5b26e, Offset: 0x2aa0
 // Size: 0x5e
-function event<player_killed> codecallback_playerkilled(eventstruct) {
+function event_handler[player_killed] codecallback_playerkilled(eventstruct) {
     if (sessionmodeiswarzonegame() && isplayer(self)) {
         drop_inventory(self);
         if (isdefined(self)) {
@@ -591,7 +591,7 @@ function event<player_killed> codecallback_playerkilled(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x68ef5686, Offset: 0x2b08
 // Size: 0xa6
-function event<player_disconnect> codecallback_playerdisconnect(eventstruct) {
+function event_handler[player_disconnect] codecallback_playerdisconnect(eventstruct) {
     if (sessionmodeiswarzonegame() && isplayer(self)) {
         if (!(isdefined(level.inprematchperiod) && level.inprematchperiod) && isdefined(self) && isdefined(self.var_97b0977) && self.var_97b0977) {
             drop_inventory(self);

@@ -91,9 +91,9 @@ function enemyobj_keyline_render(localclientnum, oldval, newval, bnewent, biniti
 // Size: 0x8c
 function objective_glow(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval > 0) {
-        self playrenderoverridebundle(#"hash_259015a020079d94");
+        self playrenderoverridebundle(#"rob_objective");
     } else {
-        self stoprenderoverridebundle(#"hash_259015a020079d94");
+        self stoprenderoverridebundle(#"rob_objective");
     }
 }
 

@@ -47,7 +47,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0x1b228df2, Offset: 0x4b0
 // Size: 0x4dc
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("clientuimodel", "player_lives", 16000, 2, "int", undefined, 0, 0);
     clientfield::register("scriptmover", "" + #"register_pegasus", 16000, 1, "counter", &register_pegasus, 0, 0);
     clientfield::register("scriptmover", "" + #"medusa_eyes", 16000, 1, "int", &function_deaba617, 0, 0);
@@ -115,7 +115,7 @@ function function_3b118f17(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self thread postfx::playpostfxbundle(#"hash_5e6d2d91ca059a03");
         self thread postfx::playpostfxbundle(#"hash_6422033e84a54e2d");
-        level waittill(#"hash_1a42012edc846390");
+        level waittill(#"pstfx_off");
         self thread postfx::exitpostfxbundle(#"hash_5e6d2d91ca059a03");
         self thread postfx::exitpostfxbundle(#"hash_6422033e84a54e2d");
     }

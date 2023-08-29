@@ -95,7 +95,7 @@ function jump_pad_think() {
 function delayed_jump_pad_start(who) {
     wait(0.5);
     if (who istouching(self)) {
-        self thread trigger::function_521edc64(who, &jump_pad_start, &jump_pad_cancel);
+        self thread trigger::function_thread(who, &jump_pad_start, &jump_pad_cancel);
     }
 }
 

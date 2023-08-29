@@ -3,7 +3,7 @@
 #include scripts/core_common/ai/planner_squad_utility.gsc;
 #include scripts/core_common/ai/planner_commander_utility.gsc;
 #include scripts/core_common/ai/planner_commander.gsc;
-#include script_31e56101095f174b;
+#include scripts/core_common/ai/systems/planner.gsc;
 
 #namespace plannermpsdsquad;
 

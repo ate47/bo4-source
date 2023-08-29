@@ -5,7 +5,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xf2a653ac, Offset: 0x68
 // Size: 0x10c
-function event<delete> main(eventstruct) {
+function event_handler[delete] main(eventstruct) {
     /#
         assert(isdefined(self));
     #/

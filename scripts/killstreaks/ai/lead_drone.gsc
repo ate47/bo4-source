@@ -3,7 +3,7 @@
 #include scripts/killstreaks/killstreaks_shared.gsc;
 #include scripts/core_common/weapons_shared.gsc;
 #include scripts/core_common/targetting_delay.gsc;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/turret_shared.gsc;
 #include scripts/core_common/vehicle_ai_shared.gsc;

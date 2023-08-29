@@ -66,12 +66,12 @@ function function_ece8f018(attacker, victim, weapon, attackerweapon, meansofdeat
 // Params 6, eflags: 0x1 linked
 // Checksum 0x55a5e3fd, Offset: 0x4d0
 // Size: 0xe4
-function function_3e8ff788(attacker, victim, var_f5db414c, killtime, weapon, var_cb08a021) {
-    if (!isdefined(attacker) || !isdefined(var_cb08a021) || !isdefined(killtime) || !isdefined(attacker.var_7c18e526)) {
+function function_3e8ff788(attacker, victim, var_f5db414c, killtime, weapon, spawnbeaconweapon) {
+    if (!isdefined(attacker) || !isdefined(spawnbeaconweapon) || !isdefined(killtime) || !isdefined(attacker.var_7c18e526)) {
         return;
     }
     if (attacker != attacker.var_7c18e526 && (isdefined(attacker.var_1a6703cc) ? attacker.var_1a6703cc : 0) + 5000 > killtime) {
-        scoreevents::processscoreevent(#"hash_62131f4647f7c61a", attacker.var_7c18e526, undefined, var_cb08a021);
+        scoreevents::processscoreevent(#"hash_62131f4647f7c61a", attacker.var_7c18e526, undefined, spawnbeaconweapon);
     }
 }
 
@@ -79,12 +79,12 @@ function function_3e8ff788(attacker, victim, var_f5db414c, killtime, weapon, var
 // Params 4, eflags: 0x1 linked
 // Checksum 0x1a1460c5, Offset: 0x5c0
 // Size: 0xcc
-function function_cdeb9089(attacker, victim, var_cb08a021, var_fb972b2b) {
-    if (!isdefined(attacker) || !isdefined(var_cb08a021) || !isdefined(attacker.var_7c18e526)) {
+function function_cdeb9089(attacker, victim, spawnbeaconweapon, var_fb972b2b) {
+    if (!isdefined(attacker) || !isdefined(spawnbeaconweapon) || !isdefined(attacker.var_7c18e526)) {
         return;
     }
     if (attacker != attacker.var_7c18e526 && (isdefined(attacker.var_1a6703cc) ? attacker.var_1a6703cc : 0) + 5000 > gettime()) {
-        scoreevents::processscoreevent(#"hash_17705bbdbf8cf23a", attacker.var_7c18e526, undefined, var_cb08a021);
+        scoreevents::processscoreevent(#"hash_17705bbdbf8cf23a", attacker.var_7c18e526, undefined, spawnbeaconweapon);
     }
 }
 
@@ -92,12 +92,12 @@ function function_cdeb9089(attacker, victim, var_cb08a021, var_fb972b2b) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0x5504ec48, Offset: 0x698
 // Size: 0xdc
-function function_5bfd1343(attacker, var_f231d134, killtime, capturedobjective, var_cb08a021) {
-    if (!isdefined(attacker) || !isdefined(var_cb08a021) || !isdefined(killtime) || !isdefined(attacker.var_7c18e526)) {
+function function_5bfd1343(attacker, var_f231d134, killtime, capturedobjective, spawnbeaconweapon) {
+    if (!isdefined(attacker) || !isdefined(spawnbeaconweapon) || !isdefined(killtime) || !isdefined(attacker.var_7c18e526)) {
         return;
     }
     if (attacker != attacker.var_7c18e526 && (isdefined(attacker.var_1a6703cc) ? attacker.var_1a6703cc : 0) + 5000 > killtime) {
-        scoreevents::processscoreevent(#"hash_5ce122c3419f6a58", attacker.var_7c18e526, undefined, var_cb08a021);
+        scoreevents::processscoreevent(#"hash_5ce122c3419f6a58", attacker.var_7c18e526, undefined, spawnbeaconweapon);
     }
 }
 
@@ -132,8 +132,8 @@ function function_60a53911(zone) {
 // Checksum 0xfbf29bcb, Offset: 0x8d0
 // Size: 0xce
 function private function_bf3aeb8b() {
-    for (var_2bc5899a = 0; var_2bc5899a < (isdefined(level.spawnbeaconsettings.settingsbundle.var_369f0da) ? level.spawnbeaconsettings.settingsbundle.var_369f0da : 0); var_2bc5899a++) {
-        array::add(level.spawnbeaconsettings.availablespawnlists, (isdefined(level.spawnbeaconsettings.settingsbundle.var_7609eee) ? level.spawnbeaconsettings.settingsbundle.var_7609eee : "") + var_2bc5899a);
+    for (spawnlistidx = 0; spawnlistidx < (isdefined(level.spawnbeaconsettings.settingsbundle.var_369f0da) ? level.spawnbeaconsettings.settingsbundle.var_369f0da : 0); spawnlistidx++) {
+        array::add(level.spawnbeaconsettings.availablespawnlists, (isdefined(level.spawnbeaconsettings.settingsbundle.var_7609eee) ? level.spawnbeaconsettings.settingsbundle.var_7609eee : "") + spawnlistidx);
     }
 }
 
@@ -186,7 +186,7 @@ function function_abb55703(spawnbeacon, var_d8f817bc) {
         spawnbeacon.health = spawnbeacon.health - (isdefined(level.spawnbeaconsettings.settingsbundle.var_f9dea783) ? level.spawnbeaconsettings.settingsbundle.var_f9dea783 : 0);
     }
     if (isdefined(spawnbeacon.owner) && player != spawnbeacon.owner) {
-        spawnbeacon.owner luinotifyevent(#"hash_73814706b8448493");
+        spawnbeacon.owner luinotifyevent(#"spawn_beacon_used");
     }
     if (isdefined(spawnbeacon.owner) && isdefined(self) && !var_d8f817bc) {
         if (spawnbeacon.owner == player) {
@@ -233,7 +233,7 @@ function function_fa81d248(attacker, weapon) {
     spawnbeacon = self;
     if (isdefined(spawnbeacon.var_a08c7e4)) {
         self influencers::remove_influencer(spawnbeacon.var_a08c7e4);
-        self.var_1100ba09 = undefined;
+        self.spawn_influencer_enemy_carrier = undefined;
     }
     if (isdefined(spawnbeacon.var_16b8f97a)) {
         foreach (influencer in spawnbeacon.var_16b8f97a) {
@@ -302,7 +302,7 @@ function private function_4ddddf03(placedspawnbeacon) {
     if (isdefined(level.spawnbeaconsettings.settingsbundle.var_b4403828) ? level.spawnbeaconsettings.settingsbundle.var_b4403828 : 0) {
         function_6c529d0b(placedspawnbeacon, level.spawnbeaconsettings.settingsbundle.var_69fd6325, player getteam(), #"friendly", #"hash_f91a28adadc5409", &function_e67b6bd, &function_4f5f518a, &function_d77d0cbb);
         player clientclaimtrigger(placedspawnbeacon.var_d7cf6658[#"friendly"].trigger);
-        placedspawnbeacon.var_d7cf6658[#"friendly"] gameobjects::set_use_time(isdefined(level.spawnbeaconsettings.settingsbundle.var_89f1a843) ? level.spawnbeaconsettings.settingsbundle.var_89f1a843 : 0);
+        placedspawnbeacon.var_d7cf6658[#"friendly"] gameobjects::set_use_time(isdefined(level.spawnbeaconsettings.settingsbundle.pickuptime) ? level.spawnbeaconsettings.settingsbundle.pickuptime : 0);
     }
     placedspawnbeacon.var_a08c7e4 = placedspawnbeacon influencers::create_influencer("activeSpawnBeacon", placedspawnbeacon.origin, util::getteammask(player getteam()));
     if (isdefined(placedspawnbeacon.var_a08c7e4) && placedspawnbeacon.var_a08c7e4 != -1 && isdefined(placedspawnbeacon.spawnlist)) {
@@ -315,7 +315,7 @@ function private function_4ddddf03(placedspawnbeacon) {
 // Params 2, eflags: 0x4
 // Checksum 0x2006dfae, Offset: 0x1a58
 // Size: 0xfc
-function private function_94dcc72e(spawnlist&, spawnbeacon) {
+function private function_94dcc72e(&spawnlist, spawnbeacon) {
     var_df1363e1 = [];
     for (index = 0; index < spawnlist.size; index++) {
         if (!sighttracepassed(spawnlist[index].origin + vectorscale((0, 0, 1), 72), spawnbeacon.origin + vectorscale((0, 0, 1), 70), 0, spawnbeacon)) {

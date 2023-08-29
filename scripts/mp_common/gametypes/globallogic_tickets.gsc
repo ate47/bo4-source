@@ -75,7 +75,7 @@ function setup_stage_start_tickets(team, zone_index) {
 // Checksum 0x4c98619, Offset: 0x390
 // Size: 0x68
 function get_zone_start_tickets(zone_index) {
-    return isdefined(getgametypesetting(#"hash_bb21a7873913ec5" + zone_index)) ? getgametypesetting(#"hash_bb21a7873913ec5" + zone_index) : 0;
+    return isdefined(getgametypesetting(#"ticketsgivenatstagestart_" + zone_index)) ? getgametypesetting(#"ticketsgivenatstagestart_" + zone_index) : 0;
 }
 
 // Namespace tickets/globallogic_tickets
@@ -215,7 +215,7 @@ function award_stage_win(team, stage) {
 // Checksum 0x97904702, Offset: 0xbc8
 // Size: 0x68
 function get_stage_win_tickets(stage) {
-    return isdefined(getgametypesetting(#"hash_1a3759a7df86c135" + stage)) ? getgametypesetting(#"hash_1a3759a7df86c135" + stage) : 0;
+    return isdefined(getgametypesetting(#"ticketsearnedatstagewin_" + stage)) ? getgametypesetting(#"ticketsearnedatstagewin_" + stage) : 0;
 }
 
 // Namespace tickets/globallogic_tickets

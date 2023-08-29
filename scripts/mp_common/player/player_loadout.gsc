@@ -161,12 +161,12 @@ function function_9f888e75(weapons_table) {
 // Checksum 0xa1f7048c, Offset: 0x10d8
 // Size: 0x422
 function function_5be71695() {
-    level.classmap[#"hash_974997673c3efd1"] = "CLASS_SMG";
-    level.classmap[#"hash_7d01247623afcfce"] = "CLASS_CQB";
-    level.classmap[#"hash_6b932ec7e5b2dd0f"] = "CLASS_ASSAULT";
-    level.classmap[#"hash_4c1a7a7650cfa524"] = "CLASS_LMG";
-    level.classmap[#"hash_196aad35ed6a218b"] = "CLASS_SNIPER";
-    level.classmap[#"hash_5e9a7c66ae16b2f5"] = "CLASS_SPECIALIZED";
+    level.classmap[#"class_smg"] = "CLASS_SMG";
+    level.classmap[#"class_cqb"] = "CLASS_CQB";
+    level.classmap[#"class_assault"] = "CLASS_ASSAULT";
+    level.classmap[#"class_lmg"] = "CLASS_LMG";
+    level.classmap[#"class_sniper"] = "CLASS_SNIPER";
+    level.classmap[#"class_specialized"] = "CLASS_SPECIALIZED";
     level.classmap[#"custom0"] = "CLASS_CUSTOM1";
     level.classmap[#"custom1"] = "CLASS_CUSTOM2";
     level.classmap[#"custom2"] = "CLASS_CUSTOM3";
@@ -179,12 +179,12 @@ function function_5be71695() {
     level.classmap[#"custom9"] = "CLASS_CUSTOM10";
     level.classmap[#"custom10"] = "CLASS_CUSTOM11";
     level.classmap[#"custom11"] = "CLASS_CUSTOM12";
-    level.classmap[#"custom12"] = level.classmap[#"hash_974997673c3efd1"];
-    level.classmap[#"custom13"] = level.classmap[#"hash_7d01247623afcfce"];
-    level.classmap[#"custom14"] = level.classmap[#"hash_6b932ec7e5b2dd0f"];
-    level.classmap[#"custom15"] = level.classmap[#"hash_4c1a7a7650cfa524"];
-    level.classmap[#"custom16"] = level.classmap[#"hash_196aad35ed6a218b"];
-    level.classmap[#"custom17"] = level.classmap[#"hash_5e9a7c66ae16b2f5"];
+    level.classmap[#"custom12"] = level.classmap[#"class_smg"];
+    level.classmap[#"custom13"] = level.classmap[#"class_cqb"];
+    level.classmap[#"custom14"] = level.classmap[#"class_assault"];
+    level.classmap[#"custom15"] = level.classmap[#"class_lmg"];
+    level.classmap[#"custom16"] = level.classmap[#"class_sniper"];
+    level.classmap[#"custom17"] = level.classmap[#"class_specialized"];
 }
 
 // Namespace loadout/player_loadout
@@ -309,7 +309,7 @@ function private function_6bc4927f() {
     level.inventory_array = [];
     level.perkicons = [];
     level.perkspecialties = [];
-    level.var_6cb4cdcf = [];
+    level.killstreakicons = [];
     level.killstreakindices = [];
     for (i = 0; i < 1024; i++) {
         iteminfo = getunlockableiteminfofromindex(i, 0);
@@ -423,7 +423,7 @@ function give_killstreaks() {
     if (!level.loadoutkillstreaksenabled) {
         return;
     }
-    classnum = self.var_69a7c6b0;
+    classnum = self.class_num_for_global_weapons;
     sortedkillstreaks = [];
     currentkillstreak = 0;
     for (killstreaknum = 0; killstreaknum < level.maxkillstreaks; killstreaknum++) {
@@ -497,7 +497,7 @@ function give_killstreaks() {
 // Params 1, eflags: 0x5 linked
 // Checksum 0xa2af6c43, Offset: 0x2710
 // Size: 0x16
-function private reset_specialty_slots(var_e54b3c14) {
+function private reset_specialty_slots(class_num) {
     self.specialty = [];
 }
 
@@ -575,7 +575,7 @@ function private function_c84c77d8(loadoutslot) {
 // Size: 0x17c
 function private give_talents() {
     pixbeginevent(#"give_talents");
-    self.var_c8836f02 = self function_fd62a2aa(self.var_e54b3c14);
+    self.var_c8836f02 = self function_fd62a2aa(self.class_num);
     foreach (var_ebdddedf in self.var_c8836f02) {
         if (var_ebdddedf.namehash == #"hash_6be738527a4213aa" && level.hardcoremode) {
             var_ebdddedf.namehash = #"hash_5c9c79c25b74b7bb";
@@ -594,9 +594,9 @@ function private give_talents() {
 // Size: 0x164
 function give_perks() {
     pixbeginevent(#"give_perks");
-    self.specialty = self getloadoutperks(self.var_e54b3c14);
-    self setplayerstateloadoutweapons(self.var_e54b3c14);
-    self setplayerstateloadoutbonuscards(self.var_e54b3c14);
+    self.specialty = self getloadoutperks(self.class_num);
+    self setplayerstateloadoutweapons(self.class_num);
+    self setplayerstateloadoutbonuscards(self.class_num);
     if (level.leaguematch) {
         for (i = 0; i < self.specialty.size; i++) {
             if (isitemrestricted(self.specialty[i])) {
@@ -617,12 +617,12 @@ function give_perks() {
 // Checksum 0xf765c220, Offset: 0x2bf8
 // Size: 0x18c
 function function_f436358b(weaponclass) {
-    self.var_e54b3c14 = function_6972fdbb(weaponclass);
+    self.class_num = function_6972fdbb(weaponclass);
     if (issubstr(weaponclass, "CLASS_CUSTOM")) {
         pixbeginevent(#"custom class");
-        self.var_69a7c6b0 = self.var_e54b3c14;
-        self reset_specialty_slots(self.var_e54b3c14);
-        playerrenderoptions = self calcplayeroptions(self.var_e54b3c14);
+        self.class_num_for_global_weapons = self.class_num;
+        self reset_specialty_slots(self.class_num);
+        playerrenderoptions = self calcplayeroptions(self.class_num);
         self setplayerrenderoptions(playerrenderoptions);
         pixendevent();
     } else {
@@ -630,11 +630,11 @@ function function_f436358b(weaponclass) {
         /#
             assert(isdefined(self.pers[#"class"]), "<unknown string>");
         #/
-        self.var_69a7c6b0 = 0;
+        self.class_num_for_global_weapons = 0;
         self setplayerrenderoptions(0);
         pixendevent();
     }
-    self recordloadoutindex(self.var_e54b3c14);
+    self recordloadoutindex(self.class_num);
 }
 
 // Namespace loadout/player_loadout
@@ -650,32 +650,32 @@ function function_6972fdbb(weaponclass) {
     var_8bba14bc = max(var_8bba14bc, 0);
     if (isstring(weaponclass) && issubstr(weaponclass, prefixstring)) {
         var_3858e4e = getsubstr(weaponclass, prefixstring.size);
-        var_e54b3c14 = int(var_3858e4e) - 1;
-        if (var_e54b3c14 == -1) {
-            var_e54b3c14 = var_8bba14bc;
+        class_num = int(var_3858e4e) - 1;
+        if (class_num == -1) {
+            class_num = var_8bba14bc;
         }
         /#
-            assert(isdefined(var_e54b3c14));
+            assert(isdefined(class_num));
         #/
-        if (var_e54b3c14 < 0 || var_e54b3c14 > var_8bba14bc) {
-            var_e54b3c14 = 0;
+        if (class_num < 0 || class_num > var_8bba14bc) {
+            class_num = 0;
         }
         /#
-            assert(var_e54b3c14 >= 0 && var_e54b3c14 <= var_8bba14bc);
+            assert(class_num >= 0 && class_num <= var_8bba14bc);
         #/
     } else {
-        var_e54b3c14 = level.classtoclassnum[weaponclass];
+        class_num = level.classtoclassnum[weaponclass];
     }
-    if (!isdefined(var_e54b3c14)) {
-        var_e54b3c14 = self stats::get_stat(#"selectedcustomclass");
-        if (!isdefined(var_e54b3c14)) {
-            var_e54b3c14 = 0;
+    if (!isdefined(class_num)) {
+        class_num = self stats::get_stat(#"selectedcustomclass");
+        if (!isdefined(class_num)) {
+            class_num = 0;
         }
     }
     /#
-        assert(isdefined(var_e54b3c14));
+        assert(isdefined(class_num));
     #/
-    return var_e54b3c14;
+    return class_num;
 }
 
 // Namespace loadout/player_loadout
@@ -704,7 +704,7 @@ function private function_6bc6995e(weapon_options) {
 // Checksum 0xcf29deb9, Offset: 0x3038
 // Size: 0x2a
 function private get_weapon_options(type_index) {
-    return self calcweaponoptions(self.var_e54b3c14, type_index);
+    return self calcweaponoptions(self.class_num, type_index);
 }
 
 // Namespace loadout/player_loadout
@@ -721,7 +721,7 @@ function private function_f4042786(type_index) {
 // Checksum 0x4ede78cf, Offset: 0x30c0
 // Size: 0xe6
 function private function_2ada6938(slot) {
-    weapon = self getloadoutweapon(self.var_e54b3c14, slot);
+    weapon = self getloadoutweapon(self.class_num, slot);
     if (weapon.iscarriedkillstreak) {
         weapon = level.weaponnull;
     }
@@ -754,8 +754,8 @@ function private give_weapon(weapon, slot, var_a6a8156, var_bc218695) {
         if (weapon.isgadget) {
             self ability_util::gadget_reset(weapon, self.pers[#"changed_class"], !util::isoneround(), util::isfirstround(), changedspecialist);
         }
-        self function_3fb8b14(weapon, self function_9b237966(self.var_e54b3c14, "primary" == slot));
-        self function_a85d2581(weapon, self function_73182cb6(self.var_e54b3c14, "primary" == slot));
+        self function_3fb8b14(weapon, self function_9b237966(self.class_num, "primary" == slot));
+        self function_a85d2581(weapon, self function_73182cb6(self.class_num, "primary" == slot));
     } else {
         self function_442539(slot, level.weaponnone);
     }
@@ -797,7 +797,7 @@ function private function_286ee0b6(previous_weapon, spawn_weapon) {
 function private function_ee9b8d55() {
     primary_weapon = function_18a77b37("primary");
     secondary_weapon = function_18a77b37("secondary");
-    self bbclasschoice(self.var_e54b3c14, primary_weapon, secondary_weapon);
+    self bbclasschoice(self.class_num, primary_weapon, secondary_weapon);
 }
 
 // Namespace loadout/player_loadout
@@ -998,8 +998,8 @@ function function_d98a8122(spawn_weapon) {
 // Size: 0x23c
 function private give_weapons(previous_weapon) {
     pixbeginevent(#"give_weapons");
-    self.primaryloadoutgunsmithvariantindex = self getloadoutgunsmithvariantindex(self.var_e54b3c14, 0);
-    self.secondaryloadoutgunsmithvariantindex = self getloadoutgunsmithvariantindex(self.var_e54b3c14, 1);
+    self.primaryloadoutgunsmithvariantindex = self getloadoutgunsmithvariantindex(self.class_num, 0);
+    self.secondaryloadoutgunsmithvariantindex = self getloadoutgunsmithvariantindex(self.class_num, 1);
     spawn_weapon = self function_68c2f1dc("primary", previous_weapon, level.weaponnull, 0, &function_f4042786);
     spawn_weapon = self function_68c2f1dc("secondary", previous_weapon, spawn_weapon, 1, &get_weapon_options);
     spawn_weapon = self function_286ee0b6(previous_weapon, spawn_weapon);
@@ -1065,7 +1065,7 @@ function private function_8e961216(slot, previous_weapon) {
     primaryoffhand = level.weaponnone;
     var_46119dfa = 0;
     primaryoffhandcount = 0;
-    primaryoffhandname = self function_b958b70d(self.var_e54b3c14, "primarygrenade");
+    primaryoffhandname = self function_b958b70d(self.class_num, "primarygrenade");
     if (primaryoffhandname == "default_specialist_equipment" && isdefined(self.playerrole) && isdefined(self.playerrole.var_a7e7cb46)) {
         if (isdefined(level.var_50e97365) && level.var_50e97365) {
             primaryoffhandname = self.playerrole.var_a7e7cb46;
@@ -1075,7 +1075,7 @@ function private function_8e961216(slot, previous_weapon) {
     }
     if (primaryoffhandname != #"hash_0" && primaryoffhandname != #"weapon_null") {
         primaryoffhand = getweapon(primaryoffhandname);
-        var_46119dfa = self getloadoutitem(self.var_e54b3c14, "primarygrenadecount");
+        var_46119dfa = self getloadoutitem(self.class_num, "primarygrenadecount");
         primaryoffhandcount = var_46119dfa ? 2 : 1;
         if (isdefined(self.pers[#"primarygrenadecount"]) && self.pers[#"primarygrenadecount"] < primaryoffhandcount && isdefined(self.pers[#"held_gadgets_power"]) && isdefined(self.pers[#"held_gadgets_power"][primaryoffhand])) {
             self.pers[#"held_gadgets_power"][primaryoffhand] = self.pers[#"held_gadgets_power"][primaryoffhand] * self.pers[#"primarygrenadecount"] / primaryoffhandcount;
@@ -1123,10 +1123,10 @@ function function_c3448ab0(slot, previous_weapon, force_give_gadget_health_regen
             secondaryoffhandcount = secondaryoffhand.startammo;
         }
     } else {
-        secondaryoffhandname = self function_b958b70d(self.var_e54b3c14, "specialgrenade");
+        secondaryoffhandname = self function_b958b70d(self.class_num, "specialgrenade");
         if (secondaryoffhandname != #"hash_0" && secondaryoffhandname != #"weapon_null") {
             secondaryoffhand = getweapon(secondaryoffhandname);
-            secondaryoffhandcount = self getloadoutitem(self.var_e54b3c14, "specialgrenadecount");
+            secondaryoffhandcount = self getloadoutitem(self.class_num, "specialgrenadecount");
         }
     }
     if (isitemrestricted(secondaryoffhand.name) || !function_50797a7f(secondaryoffhand.name)) {
@@ -1141,7 +1141,7 @@ function function_c3448ab0(slot, previous_weapon, force_give_gadget_health_regen
         secondaryoffhand = getweapon(#"hash_28323cd36d8b5f93");
         secondaryoffhandcount = 0;
     } else if (force_give_gadget_health_regen === 1 && level.new_health_model) {
-        tactical_gear = self function_d78e0e04(self.var_e54b3c14);
+        tactical_gear = self function_d78e0e04(self.class_num);
         if (#"gear_medicalinjectiongun" == tactical_gear) {
             secondaryoffhand = getweapon(#"gadget_medicalinjectiongun");
         } else if (level.specialisthealingenabled) {
@@ -1175,7 +1175,7 @@ function private give_special_offhand(slot, previous_weapon) {
     roundbased = !util::isoneround();
     firstround = util::isfirstround();
     changedspecialist = self.pers[#"changed_specialist"];
-    classnum = self.var_69a7c6b0;
+    classnum = self.class_num_for_global_weapons;
     specialoffhand = level.weaponnone;
     specialoffhandcount = 0;
     if (isdefined(self.playerrole) && isdefined(self.playerrole.var_c21d61e9)) {
@@ -1235,7 +1235,7 @@ function private give_ultimate(slot, previous_weapon) {
     roundbased = !util::isoneround();
     firstround = util::isfirstround();
     changedspecialist = self.pers[#"changed_specialist"];
-    classnum = self.var_69a7c6b0;
+    classnum = self.class_num_for_global_weapons;
     ultimate = level.weaponnone;
     var_36aac800 = 0;
     if (isdefined(self.playerrole) && isdefined(self.playerrole.ultimateweapon)) {
@@ -1307,8 +1307,8 @@ function give_loadout(team, weaponclass) {
         if (isdefined(self.var_560765bb) && self.var_560765bb >= gettime() && current_weapon != level.weaponnone) {
             return;
         }
-        if (current_weapon == level.weaponnone && isdefined(self.var_e54b3c14)) {
-            current_weapon = self getloadoutweapon(self.var_e54b3c14, "primary");
+        if (current_weapon == level.weaponnone && isdefined(self.class_num)) {
+            current_weapon = self getloadoutweapon(self.class_num, "primary");
         }
         self setactionslot(3, "flourish_callouts");
         self setactionslot(4, "sprays_boasts");
@@ -1329,7 +1329,7 @@ function give_loadout(team, weaponclass) {
             }
             self init_player(1);
             function_f436358b(weaponclass);
-            allocationspent = self getloadoutallocation(self.var_e54b3c14);
+            allocationspent = self getloadoutallocation(self.class_num);
             overallocation = allocationspent > level.maxallocation;
             self function_8aa3ff4e();
             if (var_c8f2f688) {
@@ -1434,7 +1434,7 @@ function private on_player_connecting() {
             self.pers[#"class"] = "";
         }
         self.curclass = self.pers[#"class"];
-        self.var_840ae106 = "";
+        self.lastclass = "";
         self function_c67222df();
         self function_d7c205b9(self.curclass);
     }
@@ -1654,7 +1654,7 @@ function private function_c57586b8() {
 // Checksum 0x1c6428cf, Offset: 0x6bf8
 // Size: 0x586
 function private function_8aa3ff4e() {
-    wildcards = self function_6f2c0492(self.var_e54b3c14);
+    wildcards = self function_6f2c0492(self.class_num);
     self.var_86fd5bf3 = spawnstruct();
     self.var_86fd5bf3.var_42aa9c3 = isdefined(level.var_86fd5bf3[0].var_42aa9c3) ? level.var_86fd5bf3[0].var_42aa9c3 : 0;
     self.var_86fd5bf3.var_355c3581 = isdefined(level.var_86fd5bf3[0].var_355c3581) ? level.var_86fd5bf3[0].var_355c3581 : 0;

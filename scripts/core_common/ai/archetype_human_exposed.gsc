@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/ai/archetype_utility.gsc;
-#include script_3aa0f32b70d4f7cb;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
 
 #namespace archetype_human_exposed;
 

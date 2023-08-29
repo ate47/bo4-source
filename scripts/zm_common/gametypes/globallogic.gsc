@@ -823,7 +823,7 @@ function endgame(winner, endreasontext) {
         clientnum = player getentitynumber();
         player stats::set_stat(#"afteractionreportstats", #"clientnum", clientnum);
         if ((level.rankedmatch || level.leaguematch) && !player issplitscreen()) {
-            if (isdefined(player.var_5fe8ce7f)) {
+            if (isdefined(player.setpromotion)) {
                 player stats::set_stat(#"afteractionreportstats", #"lobbypopup", #"promotion");
             } else {
                 player stats::set_stat(#"afteractionreportstats", #"lobbypopup", #"summary");
@@ -1379,8 +1379,8 @@ function prematchperiod() {
 // Size: 0x140
 function graceperiod() {
     level endon(#"game_ended");
-    if (isdefined(level.var_318d245e)) {
-        [[ level.var_318d245e ]]();
+    if (isdefined(level.graceperiodfunc)) {
+        [[ level.graceperiodfunc ]]();
     } else {
         wait(level.graceperiod);
     }

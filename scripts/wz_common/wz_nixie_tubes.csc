@@ -275,7 +275,7 @@ function function_f98a4376(localclientnum) {
 // Params 1, eflags: 0x40
 // Checksum 0xf3da06be, Offset: 0x1ad0
 // Size: 0x3f8
-function event<event_9673dc9a> function_3981d015(eventstruct) {
+function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (!(isdefined(level.var_f64d56a1) && level.var_f64d56a1)) {
         if (eventstruct.ent.targetname === "nixie_tube_cage") {
             setdynentenabled(eventstruct.ent, 0);

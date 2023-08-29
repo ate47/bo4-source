@@ -13,7 +13,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x4b57d996, Offset: 0x128
 // Size: 0x13c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     level.var_ea696257 = 1;
     level.var_fd6018ca = 1;
     clientfield::register("allplayers", "bountymoneytrail", 1, 1, "int", &function_44cacd61, 0, 1);

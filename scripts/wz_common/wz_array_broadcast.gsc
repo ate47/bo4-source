@@ -68,7 +68,7 @@ function function_1e224132(activator, laststate, state) {
 // Params 1, eflags: 0x40
 // Checksum 0xb8ab1ab3, Offset: 0x458
 // Size: 0xb4
-function event<event_9673dc9a> function_3981d015(eventstruct) {
+function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (isdefined(level.var_47f205b) && !level.var_47f205b) {
         return;
     }

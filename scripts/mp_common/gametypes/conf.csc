@@ -8,7 +8,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x9e2d1e35, Offset: 0x78
 // Size: 0x354
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     if (util::function_8570168d()) {
         namespace_9096c917::init();
     }

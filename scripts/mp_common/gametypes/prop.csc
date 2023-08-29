@@ -12,10 +12,10 @@
 // Params 1, eflags: 0x40
 // Checksum 0xd5f829d0, Offset: 0x278
 // Size: 0x3ac
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     clientfield::register("allplayers", "hideTeamPlayer", 16000, 2, "int", &function_abaafe9a, 0, 0);
     clientfield::register("allplayers", "pingHighlight", 16000, 1, "int", &function_3c95ba87, 0, 0);
-    clientfield::register("toplayer", "PROP.change_prop", 16000, 1, "int", &function_5d6d3cbf, 0, 0);
+    clientfield::register("toplayer", "PROP.change_prop", 16000, 1, "int", &propchange, 0, 0);
     clientfield::register("toplayer", "PROP.cameraHeight", 16000, 8, "int", &function_c7691337, 0, 0);
     clientfield::register("toplayer", "PROP.cameraRange", 16000, 8, "int", &function_d8273603, 0, 0);
     clientfield::register("toplayer", "PROP.hide_prop", 16000, 1, "int", &function_65208afd, 0, 0);
@@ -249,7 +249,7 @@ function function_abaafe9a(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x0
 // Checksum 0xafadd680, Offset: 0x12e0
 // Size: 0x74
-function function_5d6d3cbf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function propchange(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self function_b9fceaaf(localclientnum)) {
         self.prop function_415dc60b(localclientnum);
     }

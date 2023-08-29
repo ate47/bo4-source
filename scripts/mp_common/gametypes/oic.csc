@@ -5,7 +5,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xadfc2bb7, Offset: 0x88
 // Size: 0x474
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     level.var_8eef5741 = 1;
     var_1f99b9e8 = [];
     if (!isdefined(var_1f99b9e8)) {

@@ -96,7 +96,7 @@ function __init__() {
     clientfield::register("vehicle", "vehUseMaterialPhysics", 1, 1, "int");
     clientfield::register("scriptmover", "play_flare_fx", 1, 1, "int");
     clientfield::register("scriptmover", "play_flare_hit_fx", 1, 1, "int");
-    if (isdefined(level.var_bdd12415)) {
+    if (isdefined(level.bypassvehiclescripts)) {
         return;
     }
     level.heli_default_decel = 10;
@@ -395,7 +395,7 @@ function sort_by_startingpos(guysarray) {
 // Checksum 0x9fc611d2, Offset: 0x2538
 // Size: 0x9a
 function rider_walk_setup(vehicle) {
-    if (!isdefined(self.var_bf6625c4)) {
+    if (!isdefined(self.script_vehiclewalk)) {
         return;
     }
     if (isdefined(self.script_followmode)) {
@@ -621,14 +621,14 @@ function paths(node) {
             self.set_lookat_point = undefined;
             self vehclearlookat();
         }
-        if (isdefined(currentpoint.var_257a8cc8)) {
-            if (currentpoint.var_257a8cc8) {
+        if (isdefined(currentpoint.script_lights_on)) {
+            if (currentpoint.script_lights_on) {
                 self lights_on();
             } else {
                 self lights_off();
             }
         }
-        if (isdefined(currentpoint.var_4dce35d5)) {
+        if (isdefined(currentpoint.script_stopnode)) {
             self set_goal_pos(currentpoint.origin, 1);
         }
         if (isdefined(self.switchnode)) {
@@ -1001,7 +1001,7 @@ function init(vehicle) {
     if (!vehicle is_cheap()) {
         vehicle friendly_fire_shield();
     }
-    if (isdefined(vehicle.var_44ca8aab) && vehicle.var_44ca8aab) {
+    if (isdefined(vehicle.script_physicsjolt) && vehicle.script_physicsjolt) {
     }
     levelstuff(vehicle);
     vehicle.disconnectpathdetail = 0;
@@ -1020,7 +1020,7 @@ function init(vehicle) {
     if (!vehicle is_cheap() && !(vehicle.vehicleclass === "plane") && !(vehicle.vehicleclass === "artillery")) {
         vehicle thread _disconnect_paths_when_stopped();
     }
-    if (!isdefined(vehicle.var_9d761018)) {
+    if (!isdefined(vehicle.script_nonmovingvehicle)) {
         path_start = get_target(vehicle);
         if (isdefined(path_start) && function_5f430582(path_start)) {
             vehicle thread get_on_path(path_start);
@@ -1518,10 +1518,10 @@ function _vehicle_load_assets() {
 // Checksum 0x138fd3fb, Offset: 0x5f40
 // Size: 0x26
 function is_cheap() {
-    if (!isdefined(self.var_1897c7b7)) {
+    if (!isdefined(self.script_cheap)) {
         return 0;
     }
-    if (!self.var_1897c7b7) {
+    if (!self.script_cheap) {
         return 0;
     }
     return 1;
@@ -2387,8 +2387,8 @@ function is_destructible() {
 // Size: 0x2cc
 function attack_group_think() {
     self endon(#"death", #"hash_bfb3547eac174da", #"hash_1f5849cf956e2ad");
-    if (isdefined(self.var_a194c6c6)) {
-        wait(self.var_a194c6c6);
+    if (isdefined(self.script_vehicleattackgroupwait)) {
+        wait(self.script_vehicleattackgroupwait);
     }
     for (;;) {
         group = getentarray("script_vehicle", "classname");
@@ -2599,7 +2599,7 @@ function function_bbc1d940(on) {
 // Params 1, eflags: 0x40
 // Checksum 0x1c8fb042, Offset: 0x9058
 // Size: 0x134
-function event<event_9430cf9f> function_c8effed1(eventstruct) {
+function event_handler[event_9430cf9f] function_c8effed1(eventstruct) {
     if (isvehicle(eventstruct.vehicle)) {
         if (!isdefined(eventstruct.vehicle.var_18a9fdc) || self [[ eventstruct.vehicle.var_18a9fdc ]](eventstruct.vehicle)) {
             if (isdefined(eventstruct.vehicle.var_304cf9da) && eventstruct.vehicle.var_304cf9da) {
@@ -2619,7 +2619,7 @@ function event<event_9430cf9f> function_c8effed1(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x18f45347, Offset: 0x9198
 // Size: 0x74
-function event<event_1e1c81ae> function_7e40b597(eventstruct) {
+function event_handler[event_1e1c81ae] function_7e40b597(eventstruct) {
     if (isvehicle(eventstruct.vehicle)) {
         if (!(isdefined(eventstruct.vehicle.var_304cf9da) && eventstruct.vehicle.var_304cf9da)) {
             eventstruct.vehicle function_bbc1d940(0);
@@ -2631,7 +2631,7 @@ function event<event_1e1c81ae> function_7e40b597(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xad678911, Offset: 0x9218
 // Size: 0x2c
-function event<event_8edc4e4a> function_5b65d9ec(eventstruct) {
+function event_handler[event_8edc4e4a] function_5b65d9ec(eventstruct) {
     callback::callback(#"veh_collision", eventstruct);
 }
 
@@ -3469,7 +3469,7 @@ function function_1e82f829(var_35304872, b_one_shot = 0) {
 // Params 1, eflags: 0x40
 // Checksum 0x25852cee, Offset: 0xc0e8
 // Size: 0x2f4
-function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
+function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
     if (isvehicle(eventstruct.vehicle)) {
         if (!isdefined(eventstruct.seat_index)) {
             return;
@@ -3510,7 +3510,7 @@ function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xd767af70, Offset: 0xc3e8
 // Size: 0x314
-function event<change_seat> function_124469f4(eventstruct) {
+function event_handler[change_seat] function_124469f4(eventstruct) {
     if (isvehicle(eventstruct.vehicle)) {
         if (!isdefined(eventstruct.seat_index)) {
             return;

@@ -51,7 +51,7 @@ function __init__() {
 // Params 1, eflags: 0x40
 // Checksum 0x117017fb, Offset: 0x798
 // Size: 0x39c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     globallogic::init();
     util::registertimelimit(0, 1440);
     util::registerscorelimit(0, 50000);
@@ -476,7 +476,7 @@ function function_bad2b0d4(origin) {
     deposithub gameobjects::set_use_time(0);
     deposithub gameobjects::disable_object();
     deposithub.onuse = &function_83e87bd5;
-    deposithub.var_56ffb77d = &function_1237ad98;
+    deposithub.canuseobject = &function_1237ad98;
     deposithub.effectorigin = trigger.origin + (0, 0, 0);
     deposithub.influencer = influencers::create_influencer("clean_deposit_hub", deposithub.origin, 0);
     enableinfluencer(deposithub.influencer, 0);

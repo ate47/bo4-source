@@ -72,7 +72,7 @@ function function_731497bb() {
     level.var_6f535d7f = [];
     i = 0;
     if (isdefined(getgametypesetting(#"hash_2e8be75aaeb34d13")) ? getgametypesetting(#"hash_2e8be75aaeb34d13") : 0) {
-        level.var_6f535d7f[i] = #"hash_29bf2a514004c71c";
+        level.var_6f535d7f[i] = #"open_areas";
         i = i + 1;
     }
     if (isdefined(getgametypesetting(#"hash_418601236eb2ed88")) ? getgametypesetting(#"hash_418601236eb2ed88") : 0) {
@@ -167,7 +167,7 @@ function function_c213f1b5(var_31c68e48) {
         return;
     }
     switch (var_e4204b3) {
-    case #"hash_29bf2a514004c71c":
+    case #"open_areas":
         function_fdabbb8a();
         break;
     case #"hash_5fc1190b8d4cb2":

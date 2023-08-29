@@ -74,7 +74,7 @@ function main() {
 // Checksum 0xac5f1a00, Offset: 0x688
 // Size: 0x64
 function init_steps() {
-    zm_sq::register(#"spoon_quest", #"1", #"hash_3b8b2ab09b97dee6", &step_1, &step_1_cleanup);
+    zm_sq::register(#"spoon_quest", #"1", #"spoon_quest_step_1", &step_1, &step_1_cleanup);
 }
 
 // Namespace namespace_9d58c1cd/namespace_9d58c1cd
@@ -85,7 +85,7 @@ function step_1(var_a276c861) {
     level flag::wait_till("start_zombie_round_logic");
     level thread function_3fcb1e5e();
     level thread function_1c5d2f2();
-    var_b09af3eb = "" + #"hash_3b8b2ab09b97dee6" + "_";
+    var_b09af3eb = "" + #"spoon_quest_step_1" + "_";
     level waittill(var_b09af3eb + "completed", var_b09af3eb + "skipped_over", var_b09af3eb + "ended_early");
 }
 

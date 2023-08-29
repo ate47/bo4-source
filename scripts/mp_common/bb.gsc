@@ -66,7 +66,7 @@ function function_95a5b5c2(var_daec1817, label, team, origin, player) {
     if (sessionmodeismultiplayergame()) {
         var_cfad67d4 = ishash(team) ? team : hash(team);
         clientid = isdefined(player) && isdefined(player.clientid) ? player.clientid : -1;
-        function_92d1707f(#"hash_d424efe4db1dff7", {#clientid:clientid, #playerz:origin[2], #playery:origin[1], #playerx:origin[0], #team:var_cfad67d4, #label:label, #var_e06b6654:var_daec1817, #gametime:function_f8d53445()});
+        function_92d1707f(#"hash_d424efe4db1dff7", {#clientid:clientid, #playerz:origin[2], #playery:origin[1], #playerx:origin[0], #team:var_cfad67d4, #label:label, #objtype:var_daec1817, #gametime:function_f8d53445()});
     }
 }
 
@@ -135,7 +135,7 @@ function function_6661621a() {
             assert(isdefined(self._bbdata));
         #/
     #/
-    if (!isdefined(self.var_e54b3c14)) {
+    if (!isdefined(self.class_num)) {
         return;
     }
     if (!sessionmodeismultiplayergame()) {
@@ -144,7 +144,7 @@ function function_6661621a() {
     mploadout = spawnstruct();
     mploadout.gametime = function_f8d53445();
     mploadout.spawnid = getplayerspawnid(self);
-    primaryweapon = self getloadoutweapon(self.var_e54b3c14, "primary");
+    primaryweapon = self getloadoutweapon(self.class_num, "primary");
     mploadout.primary = primaryweapon.name;
     primaryattachments = function_285f8efd(primaryweapon);
     mploadout.primaryattachment1 = primaryattachments.attachment0;
@@ -153,9 +153,9 @@ function function_6661621a() {
     mploadout.primaryattachment4 = primaryattachments.attachment3;
     mploadout.primaryattachment5 = primaryattachments.attachment4;
     mploadout.primaryreticle = hash(self getweaponoptic(primaryweapon));
-    mploadout.var_b3cb3732 = self function_9b237966(self.var_e54b3c14, 1);
-    mploadout.var_5f2a5b01 = self function_73182cb6(self.var_e54b3c14, 1);
-    secondaryweapon = self getloadoutweapon(self.var_e54b3c14, "secondary");
+    mploadout.var_b3cb3732 = self function_9b237966(self.class_num, 1);
+    mploadout.var_5f2a5b01 = self function_73182cb6(self.class_num, 1);
+    secondaryweapon = self getloadoutweapon(self.class_num, "secondary");
     mploadout.secondary = secondaryweapon.name;
     secondaryattachments = function_285f8efd(secondaryweapon);
     mploadout.secondaryattachment1 = secondaryattachments.attachment0;
@@ -164,20 +164,20 @@ function function_6661621a() {
     mploadout.secondaryattachment4 = secondaryattachments.attachment3;
     mploadout.secondaryattachment5 = secondaryattachments.attachment4;
     mploadout.secondaryreticle = hash(self getweaponoptic(secondaryweapon));
-    mploadout.var_37fdd840 = self function_9b237966(self.var_e54b3c14, 0);
-    mploadout.var_f27f3a24 = self function_73182cb6(self.var_e54b3c14, 0);
-    mploadout.tacticalgear = self function_d78e0e04(self.var_e54b3c14);
+    mploadout.var_37fdd840 = self function_9b237966(self.class_num, 0);
+    mploadout.var_f27f3a24 = self function_73182cb6(self.class_num, 0);
+    mploadout.tacticalgear = self function_d78e0e04(self.class_num);
     mploadout.killstreak1 = self.killstreak.size < 0 ? hash(self.killstreak[0]) : 0;
     mploadout.killstreak2 = self.killstreak.size < 1 ? hash(self.killstreak[1]) : 0;
     mploadout.killstreak3 = self.killstreak.size < 2 ? hash(self.killstreak[2]) : 0;
-    talents = self function_4a9f1384(self.var_e54b3c14);
+    talents = self function_4a9f1384(self.class_num);
     mploadout.var_942f949 = talents.size < 0 ? talents[0] : 0;
     mploadout.talent1 = talents.size < 1 ? talents[1] : 0;
     mploadout.talent2 = talents.size < 2 ? talents[2] : 0;
     mploadout.talent3 = talents.size < 3 ? talents[3] : 0;
     mploadout.talent4 = talents.size < 4 ? talents[4] : 0;
     mploadout.talent5 = talents.size < 5 ? talents[5] : 0;
-    wildcards = self function_6f2c0492(self.var_e54b3c14);
+    wildcards = self function_6f2c0492(self.class_num);
     mploadout.wildcard0 = wildcards.size < 0 ? wildcards[0] : 0;
     mploadout.wildcard1 = wildcards.size < 1 ? wildcards[1] : 0;
     mploadout.var_13573300 = wildcards.size < 2 ? wildcards[2] : 0;

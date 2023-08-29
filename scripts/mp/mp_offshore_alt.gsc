@@ -18,7 +18,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xc55a4e11, Offset: 0x418
 // Size: 0x154
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     callback::on_game_playing(&on_game_playing);
     callback::on_end_game(&on_end_game);
     mp_offshore_alt_fx::main();

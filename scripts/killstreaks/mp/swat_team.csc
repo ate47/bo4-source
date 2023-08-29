@@ -39,7 +39,7 @@ function __init__() {
 // Checksum 0x8197dd02, Offset: 0x448
 // Size: 0xac
 function spawned(local_client_num, bundle) {
-    if (self.var_9fde8624 === #"hash_664e308642e66e71") {
+    if (self.var_9fde8624 === #"human_lmg") {
         if (self.team === #"free" && isdefined(level.var_fd6018ca) && level.var_fd6018ca) {
             self killstreak_bundles::spawned(local_client_num, level.var_c80088b7);
             return;

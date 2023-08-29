@@ -29,7 +29,7 @@ function main() {
     level.aitriggerspawnflags = getaitriggerflags();
     level.vehicletriggerspawnflags = getvehicletriggerflags();
     setup_traversals();
-    level.var_8acef0e6 = &globallogic_audio::leader_dialog_on_player;
+    level.globallogic_audio_dialog_on_player_override = &globallogic_audio::leader_dialog_on_player;
     level.growing_hitmarker = 1;
     system::wait_till("all");
     level flagsys::set(#"load_main_complete");

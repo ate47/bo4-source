@@ -183,7 +183,7 @@ function function_89c6128e(mode) {
 // Params 1, eflags: 0x40
 // Checksum 0x307ce45e, Offset: 0x15e0
 // Size: 0x15c
-function event<gametype_init> main(eventstruct) {
+function event_handler[gametype_init] main(eventstruct) {
     draft::init();
     level.callbackentityspawned = &entityspawned;
     level.callbacklocalclientconnect = &localclientconnect;
@@ -194,7 +194,7 @@ function event<gametype_init> main(eventstruct) {
     function_89c6128e(1);
     function_89c6128e(0);
     function_89c6128e(3);
-    level thread function_12d06e87();
+    level thread blackscreen_watcher();
     setstreamerrequest(1, "core_frontend");
 }
 
@@ -211,16 +211,16 @@ function function_e843475e(localclientnum, menuname) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x7e0286c4, Offset: 0x17d8
 // Size: 0x1570
-function function_523433c1(localclientnum) {
+function setupclientmenus(localclientnum) {
     lui::initmenudata(localclientnum);
-    lui::createcustomcameramenu("Main", localclientnum, &function_733911f5, 1, undefined, &function_58994f4a);
-    lui::createcustomcameramenu("LobbyInspection", localclientnum, &function_23c10b9a, 0, &function_84d78a0a, &function_5536c596);
+    lui::createcustomcameramenu("Main", localclientnum, &lobby_main, 1, undefined, &function_58994f4a);
+    lui::createcustomcameramenu("LobbyInspection", localclientnum, &handle_inspect_player, 0, &start_character_rotating_any, &end_character_rotating_any);
     lui::linktocustomcharacter("LobbyInspection", localclientnum, "inspection_character", 0);
-    lui::createcustomcameramenu("SinglePlayerInspection", localclientnum, &function_23c10b9a, 0, &function_84d78a0a, &function_5536c596);
+    lui::createcustomcameramenu("SinglePlayerInspection", localclientnum, &handle_inspect_player, 0, &start_character_rotating_any, &end_character_rotating_any);
     lui::linktocustomcharacter("SinglePlayerInspection", localclientnum, "inspection_character", 0);
-    lui::createcustomcameramenu("ChooseTaunts", localclientnum, &function_d51dfe0f, 0);
+    lui::createcustomcameramenu("ChooseTaunts", localclientnum, &choose_taunts_camera_watch, 0);
     lui::linktocustomcharacter("ChooseTaunts", localclientnum, "character_customization");
-    lui::createcameramenu("ChooseFaction", localclientnum, #"hash_7c20222576374f5d", #"ui_cam_character_customization", "cam_helmet", undefined, undefined, undefined, 1000);
+    lui::createcameramenu("ChooseFaction", localclientnum, #"spawn_char_custom", #"ui_cam_character_customization", "cam_helmet", undefined, undefined, undefined, 1000);
     lui::createcustomcameramenu("Paintshop", localclientnum, undefined, 0, undefined, undefined);
     lui::createcustomcameramenu("PaintjobWeaponSelect", localclientnum, undefined, 0, undefined, undefined);
     lui::createcustomcameramenu("Gunsmith", localclientnum, undefined, 0, undefined, undefined);
@@ -232,20 +232,20 @@ function function_523433c1(localclientnum) {
     lui::createcustomcameramenu("MyShowcase_CategorySelector", localclientnum, undefined, 0, undefined, undefined);
     lui::createcustomcameramenu("GroupHeadquarters", localclientnum, undefined, 0, undefined, undefined);
     lui::createcustomcameramenu("MediaManager", localclientnum, undefined, 0, undefined, undefined);
-    lui::createcameramenu("WeaponBuildKits", localclientnum, #"hash_27dffae2a1e1889d", #"hash_4c14e1418c6d882b", "cam_specialist", undefined, undefined, undefined);
-    lui::createcameramenu("CombatRecordWeaponsZM", localclientnum, #"hash_27dffae2a1e1889d", #"hash_4c14e1418c6d882b", "cam_specialist", undefined, undefined, undefined);
-    lui::createcameramenu("BubblegumBuffs", localclientnum, #"hash_74c7714950f5b273", #"hash_60d13be73c9656ae", "c_fe_zm_megachew_vign_camera_2", undefined, undefined, undefined);
-    lui::createcameramenu("BubblegumPacks", localclientnum, #"hash_74c7714950f5b273", #"hash_60d13be73c9656ae", "c_fe_zm_megachew_vign_camera_2");
+    lui::createcameramenu("WeaponBuildKits", localclientnum, #"zm_weapon_position", #"ui_cam_cac_specialist", "cam_specialist", undefined, undefined, undefined);
+    lui::createcameramenu("CombatRecordWeaponsZM", localclientnum, #"zm_weapon_position", #"ui_cam_cac_specialist", "cam_specialist", undefined, undefined, undefined);
+    lui::createcameramenu("BubblegumBuffs", localclientnum, #"loadout_camera", #"c_fe_zm_megachew_vign_camera_2", "c_fe_zm_megachew_vign_camera_2", undefined, undefined, undefined);
+    lui::createcameramenu("BubblegumPacks", localclientnum, #"loadout_camera", #"c_fe_zm_megachew_vign_camera_2", "c_fe_zm_megachew_vign_camera_2");
     lui::createcustomcameramenu("BubblegumPackEdit", localclientnum, undefined, undefined, undefined, undefined);
     lui::createcustomcameramenu("BubblegumBuffSelect", localclientnum, undefined, undefined, undefined, undefined);
     lui::createcustomcameramenu("CombatRecordBubblegumBuffs", localclientnum, undefined, undefined, undefined, undefined);
-    lui::createcameramenu("MegaChewFactory", localclientnum, #"zm_gum_position", #"hash_75cf3ce50ea001e7", "default", undefined, undefined, undefined);
-    lui::createcustomcameramenu("Pregame_Main", localclientnum, &function_733911f5, 1);
+    lui::createcameramenu("MegaChewFactory", localclientnum, #"zm_gum_position", #"c_fe_zm_megachew_vign_camera", "default", undefined, undefined, undefined);
+    lui::createcustomcameramenu("Pregame_Main", localclientnum, &lobby_main, 1);
     lui::createcustomcameramenu("CombatRecordWeapons", localclientnum, undefined, 0, undefined, undefined);
     lui::createcustomcameramenu("CombatRecordEquipment", localclientnum, undefined, 0, undefined, undefined);
     lui::createcustomcameramenu("CombatRecordCybercore", localclientnum, undefined, 0, undefined, undefined);
     lui::createcustomcameramenu("CombatRecordCollectibles", localclientnum, undefined, 0, undefined, undefined);
-    lui::createcameramenu("CombatRecordSpecialists", localclientnum, #"hash_21a3897a5a2557dd", #"hash_4c14e1418c6d882b", "cam_specialist", undefined, &function_c07bc2e2, &function_948def9d);
+    lui::createcameramenu("CombatRecordSpecialists", localclientnum, #"spawn_char_cac_choose", #"ui_cam_cac_specialist", "cam_specialist", undefined, &open_choose_class, &close_choose_class);
     lui::linktocustomcharacter("CombatRecordSpecialists", localclientnum, "character_customization");
     lui::createcameramenu("MPCustomizeClassMenu", localclientnum, #"hash_434d5a5ec5b33e52", #"hash_42064e95d20cee44", "");
     lui::createcustomcameramenu("AAR_T8_MP", localclientnum, &function_73b8462a, 1, undefined, &function_48fb04a7);
@@ -256,7 +256,7 @@ function function_523433c1(localclientnum) {
     lui::linktocustomcharacter("AAR_T8_WZ", localclientnum, "aar_character");
     lui::createcustomcameramenu("AAR_T8_ARENA", localclientnum, &function_73b8462a, 1, undefined, &function_48fb04a7);
     lui::linktocustomcharacter("AAR_T8_ARENA", localclientnum, "aar_character");
-    lui::createcustomcameramenu("AARMissionRewardOverlay", localclientnum, &function_f8cec907, 1, undefined, &function_2dbfbdb3);
+    lui::createcustomcameramenu("AARMissionRewardOverlay", localclientnum, &function_f8cec907, 1, undefined, &end_character_rotating);
     lui::linktocustomcharacter("AARMissionRewardOverlay", localclientnum, "specialist_customization");
     function_e843475e(localclientnum, "Social_Main");
     function_e843475e(localclientnum, "SupportSelection");
@@ -271,42 +271,42 @@ function function_523433c1(localclientnum) {
     function_e843475e(localclientnum, "DirectorFindGame");
     function_e843475e(localclientnum, "ZMPersonalizeCharacterMain");
     function_e843475e(localclientnum, "WZPersonalizeCharacterMain");
-    lui::createcustomcameramenu("MPSpecialistHUBInspect", localclientnum, &function_25b060af, 1, &function_8e931c3f, &function_2dbfbdb3);
+    lui::createcustomcameramenu("MPSpecialistHUBInspect", localclientnum, &function_25b060af, 1, &start_character_rotating, &end_character_rotating);
     lui::linktocustomcharacter("MPSpecialistHUBInspect", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("directorTraining", localclientnum, &function_25b060af, 1, &function_8e931c3f, &function_2dbfbdb3);
+    lui::createcustomcameramenu("directorTraining", localclientnum, &function_25b060af, 1, &start_character_rotating, &end_character_rotating);
     lui::linktocustomcharacter("directorTraining", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("PersonalizeCharacter", localclientnum, &function_6657c529, 1, &function_8e931c3f, array(&function_2dbfbdb3, &function_a72640b3));
+    lui::createcustomcameramenu("PersonalizeCharacter", localclientnum, &function_6657c529, 1, &start_character_rotating, array(&end_character_rotating, &function_a72640b3));
     lui::linktocustomcharacter("PersonalizeCharacter", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("ZMPersonalizeCharacter", localclientnum, &function_d8402f0c, 1, &function_8e931c3f, &function_2dbfbdb3);
+    lui::createcustomcameramenu("ZMPersonalizeCharacter", localclientnum, &function_d8402f0c, 1, &start_character_rotating, &end_character_rotating);
     lui::linktocustomcharacter("ZMPersonalizeCharacter", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("MPSpecialistHUBGestures", localclientnum, &function_9602c423, 1, &function_8e931c3f, &function_2dbfbdb3);
+    lui::createcustomcameramenu("MPSpecialistHUBGestures", localclientnum, &function_9602c423, 1, &start_character_rotating, &end_character_rotating);
     lui::linktocustomcharacter("MPSpecialistHUBGestures", localclientnum, "specialist_customization");
     function_e843475e(localclientnum, "MPSpecialistHUBTags");
     lui::createcustomcameramenu("MPSpecialistHUBPreviewMoment", localclientnum, &function_3dde055b, 0, undefined, &function_c4db2740);
     lui::linktocustomcharacter("MPSpecialistHUBPreviewMoment", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("ItemShopDetails", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&function_2dbfbdb3, &function_7142469f));
+    lui::createcustomcameramenu("ItemShopDetails", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&end_character_rotating, &function_7142469f));
     lui::linktocustomcharacter("ItemShopDetails", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("ItemShopDetailsSunset", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&function_2dbfbdb3, &function_7142469f));
+    lui::createcustomcameramenu("ItemShopDetailsSunset", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&end_character_rotating, &function_7142469f));
     lui::linktocustomcharacter("ItemShopDetailsSunset", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("QuarterMasterMenu", localclientnum, &function_837446a8, 1, array(&function_98088878, &blackmarket::function_78a5c895), array(&function_2dbfbdb3, &function_7142469f, &blackmarket::function_c46c0287));
+    lui::createcustomcameramenu("QuarterMasterMenu", localclientnum, &function_837446a8, 1, array(&function_98088878, &blackmarket::function_78a5c895), array(&end_character_rotating, &function_7142469f, &blackmarket::function_c46c0287));
     lui::linktocustomcharacter("QuarterMasterMenu", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("ContractDetails", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&function_2dbfbdb3, &function_7142469f));
+    lui::createcustomcameramenu("ContractDetails", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&end_character_rotating, &function_7142469f));
     lui::linktocustomcharacter("ContractDetails", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("ContractDetailsSunset", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&function_2dbfbdb3, &function_7142469f));
+    lui::createcustomcameramenu("ContractDetailsSunset", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&end_character_rotating, &function_7142469f));
     lui::linktocustomcharacter("ContractDetailsSunset", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("BlackMarketBountyDetails", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&function_2dbfbdb3, &function_7142469f));
+    lui::createcustomcameramenu("BlackMarketBountyDetails", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&end_character_rotating, &function_7142469f));
     lui::linktocustomcharacter("BlackMarketBountyDetails", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("PersonalizeDefaultWZCharacter", localclientnum, &function_36962bc4, 1, &function_8e931c3f, &function_2dbfbdb3);
+    lui::createcustomcameramenu("PersonalizeDefaultWZCharacter", localclientnum, &function_36962bc4, 1, &start_character_rotating, &end_character_rotating);
     lui::linktocustomcharacter("PersonalizeDefaultWZCharacter", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("WZPersonalizeCharacterInspect", localclientnum, &function_8ad37038, 1, &function_8e931c3f, &function_2dbfbdb3);
+    lui::createcustomcameramenu("WZPersonalizeCharacterInspect", localclientnum, &function_8ad37038, 1, &start_character_rotating, &end_character_rotating);
     lui::linktocustomcharacter("WZPersonalizeCharacterInspect", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("WZPersonalizeCharacter", localclientnum, &wz_personalize_character, 1, &function_8e931c3f, &function_2dbfbdb3);
+    lui::createcustomcameramenu("WZPersonalizeCharacter", localclientnum, &wz_personalize_character, 1, &start_character_rotating, &end_character_rotating);
     lui::linktocustomcharacter("WZPersonalizeCharacter", localclientnum, "specialist_customization");
-    lui::createcustomcameramenu("WeaponBribeSelection", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&function_2dbfbdb3, &function_7142469f));
+    lui::createcustomcameramenu("WeaponBribeSelection", localclientnum, &function_837446a8, 1, array(&function_98088878), array(&end_character_rotating, &function_7142469f));
     lui::linktocustomcharacter("WeaponBribeSelection", localclientnum, "specialist_customization");
     lui::createcustomcameramenu("WZJumpKitSelector", localclientnum, &function_bc98f036);
     lui::createcustomcameramenu("DirectorChangeCharacter", localclientnum, &function_d252281d, 0, undefined, undefined);
-    lui::createcustomcameramenu("WeaponDeathFxSelect", localclientnum, &function_ac9a8cf, 0, &function_8e931c3f, array(&function_5e7dcbed, &function_2dbfbdb3));
+    lui::createcustomcameramenu("WeaponDeathFxSelect", localclientnum, &function_ac9a8cf, 0, &start_character_rotating, array(&function_5e7dcbed, &end_character_rotating));
     lui::linktocustomcharacter("WeaponDeathFxSelect", localclientnum, "specialist_customization");
     var_eeef11ce = "scene_frontend_t8_zombies";
     scene::add_scene_func(var_eeef11ce, &function_2f93d681, "init");
@@ -324,27 +324,27 @@ function function_523433c1(localclientnum) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xf32523ce, Offset: 0x2d50
 // Size: 0x168
-function function_12d06e87() {
-    var_ee8988df = createuimodel(getglobaluimodel(), "hideWorldForStreamer");
-    setuimodelvalue(var_ee8988df, 1);
+function blackscreen_watcher() {
+    blackscreenuimodel = createuimodel(getglobaluimodel(), "hideWorldForStreamer");
+    setuimodelvalue(blackscreenuimodel, 1);
     while (1) {
         waitresult = undefined;
-        waitresult = level waittill(#"hash_54638656e8d82f4f");
+        waitresult = level waittill(#"streamer_change");
         var_d0b01271 = waitresult.var_d0b01271;
-        setuimodelvalue(var_ee8988df, 1);
+        setuimodelvalue(blackscreenuimodel, 1);
         wait(0.1);
         while (1) {
-            var_3daf65a7 = 1;
+            charready = 1;
             if (isdefined(var_d0b01271)) {
-                var_3daf65a7 = [[ var_d0b01271 ]]->is_streamed();
+                charready = [[ var_d0b01271 ]]->is_streamed();
             }
-            var_efc55d6c = getstreamerrequestprogress(0) >= 100;
-            if (var_3daf65a7 && var_efc55d6c) {
+            sceneready = getstreamerrequestprogress(0) >= 100;
+            if (charready && sceneready) {
                 break;
             }
             wait(0.1);
         }
-        setuimodelvalue(var_ee8988df, 0);
+        setuimodelvalue(blackscreenuimodel, 0);
     }
 }
 
@@ -352,20 +352,20 @@ function function_12d06e87() {
 // Params 2, eflags: 0x0
 // Checksum 0x47ab034c, Offset: 0x2ec0
 // Size: 0x78
-function function_3097be17(hint, var_d0b01271) {
+function streamer_change(hint, var_d0b01271) {
     if (isdefined(hint)) {
         setstreamerrequest(0, hint);
     } else {
         clearstreamerrequest(0);
     }
-    level notify(#"hash_54638656e8d82f4f", {#var_d0b01271:var_d0b01271});
+    level notify(#"streamer_change", {#var_d0b01271:var_d0b01271});
 }
 
 // Namespace frontend/frontend
 // Params 2, eflags: 0x1 linked
 // Checksum 0xa328c3be, Offset: 0x2f40
 // Size: 0x128
-function function_23c10b9a(localclientnum, menu_name) {
+function handle_inspect_player(localclientnum, menu_name) {
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
     level thread scene::play("scene_frontend_inspection_camera", "inspection_full");
@@ -373,11 +373,11 @@ function function_23c10b9a(localclientnum, menu_name) {
     level thread function_37304ace(localclientnum, menu_name);
     while (1) {
         waitresult = undefined;
-        waitresult = level waittill(#"hash_30323da9954fd32d");
+        waitresult = level waittill(#"inspect_player");
         /#
             assert(isdefined(waitresult.xuid));
         #/
-        level threadendon function_77c28d1b(localclientnum, waitresult.xuid, menu_name);
+        level threadendon update_inspection_character(localclientnum, waitresult.xuid, menu_name);
     }
 }
 
@@ -395,7 +395,7 @@ function function_b885d47c(menu_name, localclientnum) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xcd21cec7, Offset: 0x30d8
 // Size: 0x4c8
-function function_77c28d1b(localclientnum, xuid, menu_name) {
+function update_inspection_character(localclientnum, xuid, menu_name) {
     self notify("adfb62bb15c5d46");
     self endon("adfb62bb15c5d46");
     var_d0b01271 = lui::getcharacterdataformenu(menu_name, localclientnum);
@@ -493,10 +493,10 @@ function function_37304ace(localclientnum, menu_name) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x3e0c8f2a, Offset: 0x3748
 // Size: 0x2cc
-function function_daa3f7d0(localclientnum, weaponinfo, var_13285754 = 1) {
-    var_47465301 = weaponinfo.weapon;
+function function_daa3f7d0(localclientnum, weaponinfo, should_update_weapon_options = 1) {
+    newweaponstring = weaponinfo.weapon;
     var_f020955 = weaponinfo.attachments;
-    current_weapon = getweapon(var_47465301, strtok(var_f020955, "+"));
+    current_weapon = getweapon(newweaponstring, strtok(var_f020955, "+"));
     if (isdefined(current_weapon) && isdefined(level.var_44011752)) {
         if (level scene::is_playing(#"scene_frontend_inspection_weapon")) {
             level.var_44011752 show();
@@ -606,7 +606,7 @@ function function_da10fc8f(localclientnum, var_da239274) {
 // Params 4, eflags: 0x0
 // Checksum 0x93fb08eb, Offset: 0x3ef8
 // Size: 0x254
-function function_93ccf33d(var_62d90151, var_71bac06, var_37451b86&, var_7f0244ba&) {
+function function_93ccf33d(var_62d90151, var_71bac06, &var_37451b86, &var_7f0244ba) {
     /#
         foreach (i, item in var_62d90151) {
             entry = {#item:item, #type:var_71bac06, #index:i};
@@ -785,7 +785,7 @@ function function_4920c25a(localclientnum, menu_name, state) {
         }
         [[ var_d0b01271 ]]->function_39a68bf2();
         level notify("<unknown string>" + localclientnum, {#status:"<unknown string>", #menu:"<unknown string>"});
-        setdvar(#"hash_36ae76934a09e0ea", "WZPersonalizeCharacterInspect");
+        setdvar(#"char_render", "WZPersonalizeCharacterInspect");
         function_59013397();
     #/
 }
@@ -863,12 +863,12 @@ function function_fb399a61(localclientnum) {
                 }
             }
         }
-        setdvar(#"hash_36ae76934a09e0ea", "WZPersonalizeCharacterInspect");
+        setdvar(#"char_render", "WZPersonalizeCharacterInspect");
         var_f7a528f2 = "WZPersonalizeCharacterInspect";
         while (1) {
             wait(0.1);
-            if (getdvarstring(#"hash_36ae76934a09e0ea", var_f7a528f2) != var_f7a528f2) {
-                var_f7a528f2 = getdvarstring(#"hash_36ae76934a09e0ea");
+            if (getdvarstring(#"char_render", var_f7a528f2) != var_f7a528f2) {
+                var_f7a528f2 = getdvarstring(#"char_render");
                 if (var_f7a528f2 != "WZPersonalizeCharacterInspect") {
                     level notify("<unknown string>" + localclientnum, {#state:var_f7a528f2, #status:"<unknown string>", #menu:"<unknown string>"});
                 }
@@ -908,11 +908,11 @@ function function_5d6480a0(localclientnum, weapon, weapon_model, weapon_name, va
             if (isdefined(var_3594168e)) {
                 activecamo::function_374e37a0(localclientnum, weapon_model, var_3594168e, level.var_43aac701);
             }
-            var_6326c878 = 0;
+            iteration = 0;
             do {
                 wait(0.5);
-                var_6326c878++;
-            } while(!weapon_model isstreamed(8, 4) && var_6326c878 < 1);
+                iteration++;
+            } while(!weapon_model isstreamed(8, 4) && iteration < 1);
             wait(2);
             function_da10fc8f(localclientnum, "<unknown string>" + weapon_name + "<unknown string>" + weapon_name + "<unknown string>" + var_9ce34e01 + "<unknown string>");
         }
@@ -987,7 +987,7 @@ function function_f2c538de(localclientnum, menu_name, state) {
         level thread scene::stop(#"scene_frontend_weapon_camo_render");
         level notify("<unknown string>" + localclientnum, {#status:"<unknown string>", #menu:"<unknown string>"});
         weapon_model delete();
-        setdvar(#"hash_7c6efad1ad1659ad", "WZPersonalizeCharacterInspect");
+        setdvar(#"weap_render", "WZPersonalizeCharacterInspect");
         function_59013397();
     #/
 }
@@ -1027,7 +1027,7 @@ function function_db3c4c69(localclientnum) {
             adddebugcommand(localclientnum, "frontend" + var_ee63b362 + "<unknown string>" + "<unknown string>" + "<unknown string>" + name + "1e968675840551ec");
         }
         setdvar(#"hash_1311d7636a782655", "WZPersonalizeCharacterInspect");
-        setdvar(#"hash_7c6efad1ad1659ad", "WZPersonalizeCharacterInspect");
+        setdvar(#"weap_render", "WZPersonalizeCharacterInspect");
         var_c11ba901 = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
         weapon_name = "WZPersonalizeCharacterInspect";
         var_f7a528f2 = "WZPersonalizeCharacterInspect";
@@ -1057,8 +1057,8 @@ function function_db3c4c69(localclientnum) {
                     }
                 }
             }
-            if (getdvarstring(#"hash_7c6efad1ad1659ad", var_f7a528f2) != var_f7a528f2) {
-                var_f7a528f2 = getdvarstring(#"hash_7c6efad1ad1659ad");
+            if (getdvarstring(#"weap_render", var_f7a528f2) != var_f7a528f2) {
+                var_f7a528f2 = getdvarstring(#"weap_render");
                 if (var_f7a528f2 != "WZPersonalizeCharacterInspect") {
                     level notify("<unknown string>" + localclientnum, {#state:var_f7a528f2, #status:"<unknown string>", #menu:"<unknown string>"});
                 }
@@ -1224,8 +1224,8 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
 // Size: 0xda
 function function_70e963be(entry, localclientnum) {
     if (entry.mode == 3 && isdefined(localclientnum)) {
-        var_f5605eb4 = function_25f808c9(localclientnum, entry.mode, entry.role_index);
-        if (isdefined(var_f5605eb4) && isdefined(var_f5605eb4.locked) && var_f5605eb4.locked) {
+        customization = function_25f808c9(localclientnum, entry.mode, entry.role_index);
+        if (isdefined(customization) && isdefined(customization.locked) && customization.locked) {
             return 0;
         }
     }
@@ -1315,14 +1315,14 @@ function function_deed1dbf(localclientnum) {
     }
     if (!isdefined(var_d6895424)) {
         scenes = [];
-        foreach (var_bacf34c8 in var_17064111) {
-            if (!isdefined(scenes[var_bacf34c8.scene])) {
-                scenes[var_bacf34c8.scene] = [];
-            } else if (!isarray(scenes[var_bacf34c8.scene])) {
-                scenes[var_bacf34c8.scene] = array(scenes[var_bacf34c8.scene]);
+        foreach (moment in var_17064111) {
+            if (!isdefined(scenes[moment.scene])) {
+                scenes[moment.scene] = [];
+            } else if (!isarray(scenes[moment.scene])) {
+                scenes[moment.scene] = array(scenes[moment.scene]);
             }
-            if (!isinarray(scenes[var_bacf34c8.scene], var_bacf34c8)) {
-                scenes[var_bacf34c8.scene][scenes[var_bacf34c8.scene].size] = var_bacf34c8;
+            if (!isinarray(scenes[moment.scene], moment)) {
+                scenes[moment.scene][scenes[moment.scene].size] = moment;
             }
         }
         var_d6895424 = array::random(array::random(scenes));
@@ -1380,24 +1380,24 @@ function localclientconnect(localclientnum) {
     level thread scene::play(#"scene_frontend_inspection_weapon", "inspection_weapon_full");
     function_becded4f(localclientnum);
     function_a588eb2e(localclientnum);
-    function_523433c1(localclientnum);
+    setupclientmenus(localclientnum);
     level thread function_f00ff0c7(localclientnum);
     level thread function_deed1dbf(localclientnum);
-    if (isdefined(level.var_51b3e4e0)) {
-        [[ level.var_51b3e4e0 ]](localclientnum);
+    if (isdefined(level.charactercustomizationsetup)) {
+        [[ level.charactercustomizationsetup ]](localclientnum);
     }
     if (isdefined(level.weaponcustomizationiconsetup)) {
         [[ level.weaponcustomizationiconsetup ]](localclientnum);
     }
     callback::callback(#"on_localclient_connect", localclientnum);
     customclass::localclientconnect(localclientnum);
-    customclass::function_6c5294d(localclientnum);
+    customclass::hide_paintshop_bg(localclientnum);
     globalmodel = getglobaluimodel();
-    var_7d1d59c1 = createuimodel(globalmodel, "lobbyRoot.room");
-    var_3c58d1b6 = getuimodelvalue(var_7d1d59c1);
+    roommodel = createuimodel(globalmodel, "lobbyRoot.room");
+    room = getuimodelvalue(roommodel);
     postfx::setfrontendstreamingoverlay(localclientnum, "frontend", 1);
-    level.var_b1330740 = 1;
-    level notify("menu_change" + localclientnum, {#state:var_3c58d1b6, #status:"opened", #menu:"Main"});
+    level.frontendclientconnected = 1;
+    level notify("menu_change" + localclientnum, {#state:room, #status:"opened", #menu:"Main"});
     /#
         level function_92087f1b(localclientnum);
         level thread function_db3c4c69(localclientnum);
@@ -1425,7 +1425,7 @@ function onstartgametype() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x3c38fb6, Offset: 0x8048
 // Size: 0x44
-function function_c07bc2e2(localclientnum, menu_data) {
+function open_choose_class(localclientnum, menu_data) {
     level thread character_customization::rotation_thread_spawner(localclientnum, menu_data.custom_character, "choose_class_closed" + localclientnum);
 }
 
@@ -1433,7 +1433,7 @@ function function_c07bc2e2(localclientnum, menu_data) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xd3b01019, Offset: 0x8098
 // Size: 0x5a
-function function_948def9d(localclientnum, menu_data) {
+function close_choose_class(localclientnum, menu_data) {
     enablefrontendlockedweaponoverlay(localclientnum, 0);
     enablefrontendtokenlockedweaponoverlay(localclientnum, 0);
     level notify("choose_class_closed" + localclientnum);
@@ -1457,27 +1457,27 @@ function function_d3cd6cf7(localclientnum, var_d0b01271, waitresult, params) {
             params.scene = undefined;
         } else if (lui::is_current_menu(localclientnum, "PersonalizeDefaultWZCharacter") || lui::is_current_menu(localclientnum, "WZPersonalizeCharacter")) {
             params.scene = fields.var_bb70c379;
-            params.scene_target = struct::get(#"hash_4392db411d6a96fe");
+            params.scene_target = struct::get(#"cac_specialist");
         } else if (lui::is_current_menu(localclientnum, "PersonalizeCharacter") || lui::is_current_menu(localclientnum, "WZPersonalizeCharacterInspect")) {
-            params.scene_target = struct::get(#"hash_4392db411d6a96fe");
+            params.scene_target = struct::get(#"cac_specialist");
             params.scene = fields.var_bb70c379;
             params.var_f5332569 = [[ var_d0b01271 ]]->function_98d70bef();
         } else if (lui::is_current_menu(localclientnum, "ZMPersonalizeCharacter")) {
-            params.scene_target = struct::get(#"hash_4392db411d6a96fe");
+            params.scene_target = struct::get(#"cac_specialist");
             params.scene = fields.var_bb70c379;
         } else if (lui::is_current_menu(localclientnum, "AARMissionRewardOverlay", waitresult.character_index)) {
             params.scene = fields.var_be6ea125;
             params.scene_target = struct::get(#"hash_143a7ce67a7f527f");
         } else if (lui::is_current_menu(localclientnum, "MPSpecialistHUBGestures")) {
             params.anim_name = [[ var_d0b01271 ]]->function_8144231c();
-            params.align_struct = struct::get(#"hash_4392db411d6a96fe");
+            params.align_struct = struct::get(#"cac_specialist");
             params.scene = undefined;
         } else if (lui::is_current_menu(localclientnum, "WeaponDeathFxSelect")) {
             params.anim_name = [[ var_d0b01271 ]]->function_8144231c();
-            params.align_struct = struct::get(#"hash_4392db411d6a96fe");
+            params.align_struct = struct::get(#"cac_specialist");
             params.scene = undefined;
         } else {
-            params.scene_target = struct::get(#"hash_4392db411d6a96fe");
+            params.scene_target = struct::get(#"cac_specialist");
         }
     }
 }
@@ -1487,7 +1487,7 @@ function function_d3cd6cf7(localclientnum, var_d0b01271, waitresult, params) {
 // Checksum 0x6378508, Offset: 0x85f0
 // Size: 0x10c
 function function_f2e7abdc(localclientnum, notifyname) {
-    var_20e9ec07 = struct::get(#"hash_4392db411d6a96fe");
+    var_20e9ec07 = struct::get(#"cac_specialist");
     if (isdefined(var_20e9ec07)) {
         var_8aa8dfb7 = util::spawn_model(localclientnum, "tag_origin", var_20e9ec07.origin, var_20e9ec07.angles);
         var_8aa8dfb7.targetname = "specialist_customization";
@@ -1503,10 +1503,10 @@ function function_f2e7abdc(localclientnum, notifyname) {
 // Params 2, eflags: 0x0
 // Checksum 0xa6cb3232, Offset: 0x8708
 // Size: 0x64
-function function_5482b36b(localclientnum, menu_data) {
-    var_4a1a1094 = getent(localclientnum, menu_data.target_name, "targetname");
-    if (isdefined(var_4a1a1094)) {
-        var_4a1a1094 show();
+function open_character_menu(localclientnum, menu_data) {
+    character_ent = getent(localclientnum, menu_data.target_name, "targetname");
+    if (isdefined(character_ent)) {
+        character_ent show();
     }
 }
 
@@ -1514,10 +1514,10 @@ function function_5482b36b(localclientnum, menu_data) {
 // Params 2, eflags: 0x0
 // Checksum 0x81bdd75d, Offset: 0x8778
 // Size: 0x64
-function function_6f465b1d(localclientnum, menu_data) {
-    var_4a1a1094 = getent(localclientnum, menu_data.target_name, "targetname");
-    if (isdefined(var_4a1a1094)) {
-        var_4a1a1094 hide();
+function close_character_menu(localclientnum, menu_data) {
+    character_ent = getent(localclientnum, menu_data.target_name, "targetname");
+    if (isdefined(character_ent)) {
+        character_ent hide();
     }
 }
 
@@ -1525,10 +1525,10 @@ function function_6f465b1d(localclientnum, menu_data) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc1816cf9, Offset: 0x87e8
 // Size: 0x5e
-function function_84d78a0a(localclientnum, menu_data) {
-    var_ccf09375 = getmaxlocalclients();
-    while (localclientnum < var_ccf09375) {
-        function_8e931c3f(localclientnum, menu_data);
+function start_character_rotating_any(localclientnum, menu_data) {
+    maxlocalclient = getmaxlocalclients();
+    while (localclientnum < maxlocalclient) {
+        start_character_rotating(localclientnum, menu_data);
         localclientnum++;
     }
 }
@@ -1537,10 +1537,10 @@ function function_84d78a0a(localclientnum, menu_data) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xa5c79a06, Offset: 0x8850
 // Size: 0x5e
-function function_5536c596(localclientnum, menu_data) {
-    var_ccf09375 = getmaxlocalclients();
-    while (localclientnum < var_ccf09375) {
-        function_2dbfbdb3(localclientnum, menu_data);
+function end_character_rotating_any(localclientnum, menu_data) {
+    maxlocalclient = getmaxlocalclients();
+    while (localclientnum < maxlocalclient) {
+        end_character_rotating(localclientnum, menu_data);
         localclientnum++;
     }
 }
@@ -1549,7 +1549,7 @@ function function_5536c596(localclientnum, menu_data) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x28f9ac5e, Offset: 0x88b8
 // Size: 0x44
-function function_8e931c3f(localclientnum, menu_data) {
+function start_character_rotating(localclientnum, menu_data) {
     level thread character_customization::rotation_thread_spawner(localclientnum, menu_data.custom_character, "end_character_rotating" + localclientnum);
 }
 
@@ -1557,7 +1557,7 @@ function function_8e931c3f(localclientnum, menu_data) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc34f680a, Offset: 0x8908
 // Size: 0x2a
-function function_2dbfbdb3(localclientnum, menu_data) {
+function end_character_rotating(localclientnum, menu_data) {
     level notify("end_character_rotating" + localclientnum);
 }
 
@@ -1565,41 +1565,41 @@ function function_2dbfbdb3(localclientnum, menu_data) {
 // Params 2, eflags: 0x0
 // Checksum 0x28d72e44, Offset: 0x8940
 // Size: 0xd0
-function function_b35c4fc8(localclientnum, menu_data) {
+function open_choose_head_menu(localclientnum, menu_data) {
     [[ menu_data.custom_character ]]->set_show_helmets(0);
     [[ menu_data.custom_character ]]->function_79f89fb6(1);
     [[ menu_data.custom_character ]]->set_character_mode(2);
     [[ menu_data.custom_character ]]->function_225b6e07();
     [[ menu_data.custom_character ]]->function_77e3be08();
     [[ menu_data.custom_character ]]->update();
-    function_8e931c3f(localclientnum, menu_data);
-    level notify(#"hash_61fd10d11c6104d");
+    start_character_rotating(localclientnum, menu_data);
+    level notify(#"begin_personalizing_hero");
 }
 
 // Namespace frontend/frontend
 // Params 2, eflags: 0x0
 // Checksum 0x5a19d384, Offset: 0x8a18
 // Size: 0xd8
-function function_854396ee(localclientnum, menu_data) {
+function close_choose_head_menu(localclientnum, menu_data) {
     if (!isdefined(menu_data.custom_character.charactermode) || menu_data.custom_character.charactermode == 4) {
         menu_data.custom_character.charactermode = currentsessionmode();
     }
     [[ menu_data.custom_character ]]->set_show_helmets(1);
     [[ menu_data.custom_character ]]->function_79f89fb6(0);
-    function_2dbfbdb3(localclientnum, menu_data);
-    level notify(#"hash_2c43a21b0f783328");
+    end_character_rotating(localclientnum, menu_data);
+    level notify(#"done_personalizing_hero");
 }
 
 // Namespace frontend/frontend
 // Params 2, eflags: 0x0
 // Checksum 0x675cb59d, Offset: 0x8af8
 // Size: 0x210
-function function_13ef094d(localclientnum, menu_name) {
+function personalize_characters_watch(localclientnum, menu_name) {
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
-    var_f7dcde44 = struct::get(#"hash_420adf83758ed451", "targetname");
+    s_cam = struct::get(#"personalizehero_camera", "targetname");
     /#
-        assert(isdefined(var_f7dcde44));
+        assert(isdefined(s_cam));
     #/
     animtime = 0;
     while (1) {
@@ -1607,11 +1607,11 @@ function function_13ef094d(localclientnum, menu_name) {
         waitresult = level waittill("camera_change" + localclientnum);
         pose = waitresult.pose;
         if (pose === "exploring") {
-            playmaincamxcam(localclientnum, #"ui_cam_character_customization", animtime, "cam_preview", "", var_f7dcde44.origin, var_f7dcde44.angles);
+            playmaincamxcam(localclientnum, #"ui_cam_character_customization", animtime, "cam_preview", "", s_cam.origin, s_cam.angles);
         } else if (pose === "inspecting_helmet") {
-            playmaincamxcam(localclientnum, #"ui_cam_character_customization", animtime, "cam_helmet", "", var_f7dcde44.origin, var_f7dcde44.angles);
+            playmaincamxcam(localclientnum, #"ui_cam_character_customization", animtime, "cam_helmet", "", s_cam.origin, s_cam.angles);
         } else if (pose === "inspecting_body") {
-            playmaincamxcam(localclientnum, #"ui_cam_character_customization", animtime, "cam_select", "", var_f7dcde44.origin, var_f7dcde44.angles);
+            playmaincamxcam(localclientnum, #"ui_cam_character_customization", animtime, "cam_select", "", s_cam.origin, s_cam.angles);
         }
         animtime = 300;
     }
@@ -1624,25 +1624,25 @@ function function_13ef094d(localclientnum, menu_name) {
 function function_d9a44ae1(localclientnum, menu_name) {
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
-    var_f7dcde44 = struct::get(#"hash_7c20222576374f5d", "targetname");
+    s_cam = struct::get(#"spawn_char_custom", "targetname");
     /#
-        assert(isdefined(var_f7dcde44));
+        assert(isdefined(s_cam));
     #/
-    playmaincamxcam(localclientnum, #"ui_cam_character_customization", 0, "cam_helmet", "", var_f7dcde44.origin, var_f7dcde44.angles);
+    playmaincamxcam(localclientnum, #"ui_cam_character_customization", 0, "cam_helmet", "", s_cam.origin, s_cam.angles);
     while (1) {
         waitresult = undefined;
         waitresult = level waittill("choose_face_camera_change" + localclientnum);
         region = waitresult.param1;
         if (region === "face") {
-            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_helmet", "", var_f7dcde44.origin, var_f7dcde44.angles);
+            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_helmet", "", s_cam.origin, s_cam.angles);
         } else if (region === "eyes") {
-            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_eyes", "", var_f7dcde44.origin, var_f7dcde44.angles);
+            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_eyes", "", s_cam.origin, s_cam.angles);
         } else if (region === "ears") {
-            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_ears", "", var_f7dcde44.origin, var_f7dcde44.angles);
+            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_ears", "", s_cam.origin, s_cam.angles);
         } else if (region === "nose") {
-            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_nose", "", var_f7dcde44.origin, var_f7dcde44.angles);
+            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_nose", "", s_cam.origin, s_cam.angles);
         } else if (region === "mouth") {
-            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_mouth", "", var_f7dcde44.origin, var_f7dcde44.angles);
+            playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_mouth", "", s_cam.origin, s_cam.angles);
         }
     }
 }
@@ -1651,19 +1651,19 @@ function function_d9a44ae1(localclientnum, menu_name) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xa15351ce, Offset: 0x9018
 // Size: 0x1ac
-function function_d51dfe0f(localclientnum, menu_name) {
-    var_f7dcde44 = struct::get(#"hash_420adf83758ed451", "targetname");
+function choose_taunts_camera_watch(localclientnum, menu_name) {
+    s_cam = struct::get(#"personalizehero_camera", "targetname");
     /#
-        assert(isdefined(var_f7dcde44));
+        assert(isdefined(s_cam));
     #/
-    playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_topscorers", "", var_f7dcde44.origin, var_f7dcde44.angles);
+    playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_topscorers", "", s_cam.origin, s_cam.angles);
     var_d0b01271 = lui::getcharacterdataformenu(menu_name, localclientnum);
     [[ var_d0b01271 ]]->function_4240a39a(1, vectorscale((0, 1, 0), 112));
     level waittill(menu_name + "_closed");
     params = {#anim_name:[[ var_d0b01271 ]]->function_8144231c()};
     [[ var_d0b01271 ]]->update(params);
     [[ var_d0b01271 ]]->function_4240a39a(0, undefined);
-    playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_preview", "", var_f7dcde44.origin, var_f7dcde44.angles);
+    playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_preview", "", s_cam.origin, s_cam.angles);
     wait(3);
 }
 
@@ -1720,12 +1720,12 @@ function function_eb297e19(var_23904c1d) {
 // Checksum 0x6a34ae62, Offset: 0x94c0
 // Size: 0x544
 function function_f00765ad(localclientnum, xuid, var_87c045d1, index, var_3f0e790b) {
-    level endon(#"hash_6b2a1282c45c59f4");
+    level endon(#"lobby_change");
     session_mode = 1;
     force_update = 0;
     var_ed7308ad = 0;
     var_a65df30 = [[ var_87c045d1 ]]->function_e599283f();
-    var_6d4c188e = [[ var_87c045d1 ]]->function_9004475c();
+    current_index = [[ var_87c045d1 ]]->function_9004475c();
     [[ var_87c045d1 ]]->show_model();
     [[ var_87c045d1 ]]->set_xuid(xuid);
     [[ var_87c045d1 ]]->set_character_mode(session_mode);
@@ -1769,7 +1769,7 @@ function function_f00765ad(localclientnum, xuid, var_87c045d1, index, var_3f0e79
             [[ var_87c045d1 ]]->function_22039feb();
         }
     }
-    if (!isdefined(var_23904c1d) && var_6d4c188e != var_4865db3b) {
+    if (!isdefined(var_23904c1d) && current_index != var_4865db3b) {
         var_7f40501d = undefined;
         var_44cf5e5b = getcharacterfields(var_4865db3b, session_mode);
         if (isdefined(var_44cf5e5b)) {
@@ -1796,7 +1796,7 @@ function function_f00765ad(localclientnum, xuid, var_87c045d1, index, var_3f0e79
 // Params 3, eflags: 0x1 linked
 // Checksum 0x2a3a77c4, Offset: 0x9a10
 // Size: 0x186
-function function_7c77108d(localclientnum, var_13ef9467&, var_63aea26e) {
+function function_7c77108d(localclientnum, &var_13ef9467, var_63aea26e) {
     for (i = 0; 1; i++) {
         target = struct::get(var_63aea26e + i);
         if (!isdefined(target)) {
@@ -2009,8 +2009,8 @@ function function_f00ff0c7(localclientnum) {
     level.var_90fa1c3e = var_c7581878;
     while (1) {
         waitresult = undefined;
-        waitresult = level waittill(#"hash_6b2a1282c45c59f4");
-        if (level.var_2aea7676 === "matchmaking" || level.var_2aea7676 === "zm_online" || level.var_2aea7676 === #"hash_433990930cddc3f1") {
+        waitresult = level waittill(#"lobby_change");
+        if (level.lastlobbystate === "matchmaking" || level.lastlobbystate === "zm_online" || level.lastlobbystate === #"lobby_pose") {
             var_68a9a63c = function_664bca26(localclientnum, 1, 0, 1);
         } else {
             var_68a9a63c = function_77ccb73(1, 1);
@@ -2021,12 +2021,12 @@ function function_f00ff0c7(localclientnum) {
                     setuimodelvalue(createuimodel(var_11302f48, i), var_68a9a63c[i]);
                     foreach (var_3f0e790b, var_3a76595 in level.var_6f1da91a) {
                         var_7d4d74d3 = i > var_3a76595.size ? var_3a76595[i] : undefined;
-                        if (isdefined(var_7d4d74d3) && (level.var_2aea7676 === #"hash_433990930cddc3f1" || level.var_2aea7676 === #"hash_1d7b3cf37134ce94" || level.var_2aea7676 === #"hash_6ffe554be39e00d")) {
+                        if (isdefined(var_7d4d74d3) && (level.lastlobbystate === #"lobby_pose" || level.lastlobbystate === #"arena_pose" || level.lastlobbystate === #"hash_6ffe554be39e00d")) {
                             var_7d4d74d3.target thread function_f00765ad(localclientnum, var_68a9a63c[i], var_7d4d74d3.character, i, var_3f0e790b);
-                        } else if (level.var_2aea7676 === "matchmaking" && !(isdefined(level.var_e76e961f) && level.var_e76e961f)) {
+                        } else if (level.lastlobbystate === "matchmaking" && !(isdefined(level.var_e76e961f) && level.var_e76e961f)) {
                             function_4fc36b1a(localclientnum, var_68a9a63c[i]);
                         } else if (isdefined(var_7d4d74d3)) {
-                            var_7d4d74d3.character draft::function_1e63c21d();
+                            var_7d4d74d3.character draft::cancel_spray();
                             var_7d4d74d3.character notify(#"cancel_gesture");
                             character_customization::function_bee62aa1(var_7d4d74d3.character);
                         }
@@ -2036,7 +2036,7 @@ function function_f00ff0c7(localclientnum) {
                         var_7d4d74d3 = i > var_3a76595.size ? var_3a76595[i] : undefined;
                         if (isdefined(var_7d4d74d3)) {
                             [[ var_7d4d74d3.character ]]->hide_model();
-                            var_7d4d74d3.character draft::function_1e63c21d();
+                            var_7d4d74d3.character draft::cancel_spray();
                             var_7d4d74d3.character notify(#"cancel_gesture");
                             character_customization::function_bee62aa1(var_7d4d74d3.character);
                         }
@@ -2044,7 +2044,7 @@ function function_f00ff0c7(localclientnum) {
                 }
             }
             forcenotifyuimodel(var_11302f48);
-            if (level.var_2aea7676 === "matchmaking" && !(isdefined(level.var_e76e961f) && level.var_e76e961f)) {
+            if (level.lastlobbystate === "matchmaking" && !(isdefined(level.var_e76e961f) && level.var_e76e961f)) {
                 function_ce0c92c1(localclientnum, var_68a9a63c);
                 if (!(isdefined(level.var_494e824d) && level.var_494e824d) || !(isdefined(level.var_3cea0f38) && level.var_3cea0f38)) {
                     level thread function_6e9fbb54(localclientnum);
@@ -2056,7 +2056,7 @@ function function_f00ff0c7(localclientnum) {
             for (i = 0; i < var_c7581878; i++) {
                 if (i < var_68a9a63c.size) {
                     var_7d4d74d3 = i > var_3a76595.size ? var_3a76595[i] : undefined;
-                    if (isdefined(var_7d4d74d3) && (level.var_2aea7676 === #"hash_433990930cddc3f1" || level.var_2aea7676 === #"hash_1d7b3cf37134ce94" || level.var_2aea7676 === #"hash_6ffe554be39e00d")) {
+                    if (isdefined(var_7d4d74d3) && (level.lastlobbystate === #"lobby_pose" || level.lastlobbystate === #"arena_pose" || level.lastlobbystate === #"hash_6ffe554be39e00d")) {
                         draft::function_8be87802(localclientnum, var_7d4d74d3.character);
                     }
                 }
@@ -2162,20 +2162,20 @@ function function_f03f5d4e(localclientnum, xuid, session_mode) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xce6a2ff1, Offset: 0xb558
 // Size: 0xc80
-function function_733911f5(localclientnum, menu_name, state) {
+function lobby_main(localclientnum, menu_name, state) {
     level endon(menu_name + "_closed");
     setpbgactivebank(localclientnum, 1);
-    if (isdefined(level.var_2aea7676) && state !== level.var_2aea7676) {
-        if (level.var_2aea7676 === #"hash_433990930cddc3f1" || level.var_2aea7676 === #"hash_6ffe554be39e00d") {
+    if (isdefined(level.lastlobbystate) && state !== level.lastlobbystate) {
+        if (level.lastlobbystate === #"lobby_pose" || level.lastlobbystate === #"hash_6ffe554be39e00d") {
             function_b1b8f767(localclientnum, 0);
-        } else if (level.var_2aea7676 === #"hash_1d7b3cf37134ce94") {
+        } else if (level.lastlobbystate === #"arena_pose") {
             function_db9d479f(localclientnum, 0);
-        } else if (level.var_2aea7676 === "warzone" || level.var_2aea7676 === "zm_online" || level.var_2aea7676 === "zm_custom") {
+        } else if (level.lastlobbystate === "warzone" || level.lastlobbystate === "zm_online" || level.lastlobbystate === "zm_custom") {
             level notify(#"positiondraft_close", {#var_b69dc9af:1, #localclientnum:localclientnum});
             level waittill(#"hash_21c79522aa982cdd");
-        } else if (level.var_2aea7676 === "inspect_specialist") {
+        } else if (level.lastlobbystate === "inspect_specialist") {
             level notify("menu_change" + localclientnum, {#mode:1, #state:undefined, #status:"closed", #menu:"directorTraining"});
-        } else if (level.var_2aea7676 === "matchmaking") {
+        } else if (level.lastlobbystate === "matchmaking") {
             level.var_47863282 = function_9bed6a71(localclientnum, 1);
             level.var_202758dc = undefined;
             level.var_4c6f850d = undefined;
@@ -2194,11 +2194,11 @@ function function_733911f5(localclientnum, menu_name, state) {
             lut_index = 2;
             var_d53ddee1 = function_ae99571d(localclientnum);
             /#
-                function_f9280954(localclientnum);
+                update_room2_devgui(localclientnum);
             #/
         } else if (state == "room1") {
             setallcontrollerslightbarcolor((1, 0.4, 0));
-            level thread function_12b4aab();
+            level thread pulse_controller_color();
             if (isdefined(level.var_ff851224)) {
                 var_d53ddee1 = level.var_ff851224;
             } else if (isdefined(level.var_4e236556)) {
@@ -2219,7 +2219,7 @@ function function_733911f5(localclientnum, menu_name, state) {
                     var_f44acc91 = level.var_e362b5d9[var_6d8e8e31];
                     var_d53ddee1 = character_customization::function_7474681d(localclientnum, var_f44acc91.mode, var_f44acc91.role_index);
                 }
-            } else if (level.var_2aea7676 !== state) {
+            } else if (level.lastlobbystate !== state) {
                 var_b0c618aa = 1;
             } else {
                 if (!(isdefined(level.var_494e824d) && level.var_494e824d) || !(isdefined(level.var_3cea0f38) && level.var_3cea0f38)) {
@@ -2227,11 +2227,11 @@ function function_733911f5(localclientnum, menu_name, state) {
                 }
                 var_fce147fa = 0;
             }
-        } else if (state == #"hash_433990930cddc3f1" || state == #"hash_6ffe554be39e00d") {
-            level notify(#"hash_6b2a1282c45c59f4", {#var_a3325423:1});
+        } else if (state == #"lobby_pose" || state == #"hash_6ffe554be39e00d") {
+            level notify(#"lobby_change", {#var_a3325423:1});
             function_b1b8f767(localclientnum, 1);
-        } else if (state == #"hash_1d7b3cf37134ce94") {
-            level notify(#"hash_6b2a1282c45c59f4", {#var_a3325423:1});
+        } else if (state == #"arena_pose") {
+            level notify(#"lobby_change", {#var_a3325423:1});
             function_db9d479f(localclientnum, 1);
         } else if (state == "warzone") {
             if (!(isdefined(level.draftactive) && level.draftactive)) {
@@ -2270,7 +2270,7 @@ function function_733911f5(localclientnum, menu_name, state) {
                 var_f44acc91 = level.var_e362b5d9[level.var_be02eda3];
                 var_d53ddee1 = character_customization::function_7474681d(localclientnum, var_f44acc91.mode, var_f44acc91.role_index);
             }
-        } else if (state == "inspect_specialist" && level.var_2aea7676 !== "inspect_specialist") {
+        } else if (state == "inspect_specialist" && level.lastlobbystate !== "inspect_specialist") {
             waitframe(1);
             controllermodel = getuimodelforcontroller(localclientnum);
             var_aa16ae79 = getuimodel(controllermodel, "SpecialistHeadquarters.ChosenSpecialistID");
@@ -2280,7 +2280,7 @@ function function_733911f5(localclientnum, menu_name, state) {
                 character_index = getuimodelvalue(var_aa16ae79);
             }
             level notify("menu_change" + localclientnum, {#mode:1, #state:character_index, #status:"opened", #menu:"directorTraining"});
-        } else if (state == "inspect_specialist" && level.var_2aea7676 === "inspect_specialist") {
+        } else if (state == "inspect_specialist" && level.lastlobbystate === "inspect_specialist") {
             var_fce147fa = 0;
         } else {
             var_d53ddee1 = function_ae99571d(localclientnum);
@@ -2294,11 +2294,11 @@ function function_733911f5(localclientnum, menu_name, state) {
     }
     if (!isdefined(state) || state != "room1") {
         setallcontrollerslightbarcolor();
-        level notify(#"hash_7066d01317c5fb45");
+        level notify(#"end_controller_pulse");
     }
-    level.var_2aea7676 = state;
+    level.lastlobbystate = state;
     if (isdefined(var_b0c618aa) && var_b0c618aa) {
-        level notify(#"hash_6b2a1282c45c59f4", {#var_a3325423:1});
+        level notify(#"lobby_change", {#var_a3325423:1});
     }
 }
 
@@ -2317,9 +2317,9 @@ function function_58994f4a(localclientnum, menu_data) {
 // Params 1, eflags: 0x0
 // Checksum 0x80782190, Offset: 0xc288
 // Size: 0x2c
-function function_f9280954(localclientnum) {
+function update_room2_devgui(localclientnum) {
     /#
-        level thread namespace_498e3f81::function_1be30731(localclientnum);
+        level thread mp_devgui::remove_mp_contracts_devgui(localclientnum);
     #/
 }
 
@@ -2327,12 +2327,12 @@ function function_f9280954(localclientnum) {
 // Params 2, eflags: 0x0
 // Checksum 0xceb74f92, Offset: 0xc2c0
 // Size: 0x74
-function function_611a826b(localclientnum, state) {
+function update_mp_lobby_room_devgui(localclientnum, state) {
     /#
         if (state == "<unknown string>" || state == "<unknown string>") {
-            level thread namespace_498e3f81::function_f4c99e70(localclientnum);
+            level thread mp_devgui::create_mp_contracts_devgui(localclientnum);
         } else {
-            level namespace_498e3f81::function_1be30731(localclientnum);
+            level mp_devgui::remove_mp_contracts_devgui(localclientnum);
         }
     #/
 }
@@ -2341,8 +2341,8 @@ function function_611a826b(localclientnum, state) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x120b6300, Offset: 0xc340
 // Size: 0xca
-function function_12b4aab() {
-    level endon(#"hash_7066d01317c5fb45");
+function pulse_controller_color() {
+    level endon(#"end_controller_pulse");
     delta_t = -0.01;
     t = 1;
     while (1) {
@@ -2395,7 +2395,7 @@ function function_a71254a9(localclientnum, play, var_211dbb67, var_1c5551d6 = 0,
             if (isdefined(level.var_8013e6bd) && level.var_8013e6bd !== var_53511779) {
                 stopmaincamxcam(localclientnum);
             }
-            if (!(isdefined(level.var_2aea7676) && level.var_2aea7676 == "matchmaking")) {
+            if (!(isdefined(level.lastlobbystate) && level.lastlobbystate == "matchmaking")) {
                 fbc = getuimodel(getglobaluimodel(), "lobbyRoot.fullscreenBlackCount");
                 setuimodelvalue(fbc, 1);
             }
@@ -2464,7 +2464,7 @@ function function_9602c423(localclientnum, menu_name, state) {
     playmaincamxcam(localclientnum, #"hash_76063cbfea101a2f", 0, "", "", camera_ent.origin, camera_ent.angles);
     if (isdefined(state)) {
         [[ var_d0b01271 ]]->set_character_index(state);
-        level notify("updateSpecialistCustomization" + localclientnum, {#mode:currentsessionmode(), #character_index:state, #var_25b9e3c2:"changeHero"});
+        level notify("updateSpecialistCustomization" + localclientnum, {#mode:currentsessionmode(), #character_index:state, #event_name:"changeHero"});
     }
 }
 
@@ -2479,7 +2479,7 @@ function function_25b060af(localclientnum, menu_name, state) {
     playmaincamxcam(localclientnum, #"hash_42064e95d20cee44", 0, "", "", camera_ent.origin, camera_ent.angles);
     if (isdefined(state)) {
         [[ var_d0b01271 ]]->set_character_index(state);
-        level notify("updateSpecialistCustomization" + localclientnum, {#mode:1, #character_index:state, #var_25b9e3c2:"changeHero"});
+        level notify("updateSpecialistCustomization" + localclientnum, {#mode:1, #character_index:state, #event_name:"changeHero"});
     }
 }
 
@@ -2498,7 +2498,7 @@ function function_f8cec907(localclientnum, menu_name, state) {
         outfit_index = int(isdefined(args[1]) ? args[1] : 0);
         [[ var_d0b01271 ]]->set_character_mode(3);
         [[ var_d0b01271 ]]->set_character_index(var_da416ad1);
-        level notify("updateSpecialistCustomization" + localclientnum, {#outfit_index:outfit_index, #var_25b9e3c2:"changeOutfit"});
+        level notify("updateSpecialistCustomization" + localclientnum, {#outfit_index:outfit_index, #event_name:"changeOutfit"});
     }
 }
 
@@ -2535,7 +2535,7 @@ function function_d8402f0c(localclientnum, menu_name, state) {
     var_d0b01271 = lui::getcharacterdataformenu(menu_name, localclientnum);
     if (isdefined(state)) {
         [[ var_d0b01271 ]]->set_character_index(state);
-        level notify("updateSpecialistCustomization" + localclientnum, {#mode:0, #character_index:state, #var_25b9e3c2:"changeHero"});
+        level notify("updateSpecialistCustomization" + localclientnum, {#mode:0, #character_index:state, #event_name:"changeHero"});
     }
     [[ var_d0b01271 ]]->show_model();
     camera_ent = struct::get(#"hash_434d5a5ec5b33e52");
@@ -2569,7 +2569,7 @@ function function_a8095769(localclientnum, menu_name) {
 // Checksum 0x24f98f15, Offset: 0xd3c8
 // Size: 0xdc
 function function_7142469f(localclientnum, menu_data) {
-    level notify(#"hash_2467a4ba67689fe1");
+    level notify(#"blackmarket_closed");
     level thread scene::stop(level.var_d29ac799, 1);
     level.var_d29ac799 = undefined;
     if (isdefined(level.var_c7cd91f5)) {
@@ -2665,7 +2665,7 @@ function function_837446a8(localclientnum, menu_name, state) {
         weapon_model hide();
         scene = #"hash_405078b6916e2229";
         break;
-    case #"hash_4115d59836f6cf34":
+    case #"character_full":
         [[ var_d0b01271 ]]->function_4240a39a(1, vectorscale((0, 1, 0), 90));
         level thread character_customization::rotation_thread_spawner(localclientnum, var_d0b01271, "end_character_rotating" + localclientnum);
         [[ var_d0b01271 ]]->function_4240a39a(0);
@@ -2673,7 +2673,7 @@ function function_837446a8(localclientnum, menu_name, state) {
         weapon_model hide();
         scene = #"hash_7cf7be2d8080bb9b";
         break;
-    case #"hash_1331aa97d4495fb4":
+    case #"character_face":
         [[ var_d0b01271 ]]->function_4240a39a(1, vectorscale((0, 1, 0), 90));
         level thread character_customization::rotation_thread_spawner(localclientnum, var_d0b01271, "end_character_rotating" + localclientnum);
         [[ var_d0b01271 ]]->function_4240a39a(0);
@@ -2748,7 +2748,7 @@ function function_8ad37038(localclientnum, menu_name, state) {
     var_d0b01271 = lui::getcharacterdataformenu(menu_name, localclientnum);
     if (isdefined(state)) {
         [[ var_d0b01271 ]]->set_character_index(state);
-        level notify("updateSpecialistCustomization" + localclientnum, {#mode:3, #character_index:state, #var_25b9e3c2:"changeHero"});
+        level notify("updateSpecialistCustomization" + localclientnum, {#mode:3, #character_index:state, #event_name:"changeHero"});
     }
     [[ var_d0b01271 ]]->show_model();
     camera_ent = struct::get(#"hash_434d5a5ec5b33e52");
@@ -2793,15 +2793,15 @@ function function_914198cd(localclientnum, var_d0b01271, menu_name) {
     while (1) {
         waitresult = undefined;
         waitresult = level waittill("deathfx_update_" + localclientnum);
-        switch (waitresult.var_25b9e3c2) {
-        case #"hash_2a63bd317e65907b":
+        switch (waitresult.event_name) {
+        case #"updatecharacter":
             var_d0b01271 function_79c881da(localclientnum, waitresult.mode);
             break;
-        case #"hash_1df847169b1cbb6d":
-            var_d0b01271 notify(#"hash_6e62697f69789de0");
+        case #"previewdeathfx":
+            var_d0b01271 notify(#"cancel_deathfx");
             var_d0b01271 thread function_317ab257(localclientnum, menu_name, waitresult.var_2febbde5);
             break;
-        case #"hash_1f27ef15376f67ab":
+        case #"stopdeathfx":
             var_d0b01271 function_ca43d336(localclientnum);
             break;
         }
@@ -2834,7 +2834,7 @@ function function_317ab257(localclientnum, menu_name, var_83a11058) {
     self endon("5befa1e0f1c95e1e");
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
-    self endon(#"hash_6e62697f69789de0");
+    self endon(#"cancel_deathfx");
     var_cc8a3490 = #"hash_521de69029125f63";
     var_7d89d45 = #"hash_33ffd8c85b4da392";
     var_e04a6c21 = #"hash_4c04b62047703a60";

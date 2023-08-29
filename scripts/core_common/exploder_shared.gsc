@@ -167,7 +167,7 @@ function __main__() {
         }
         level.createfxexploders[ent.v[#"exploder"]][level.createfxexploders[ent.v[#"exploder"]].size] = ent;
     }
-    level.var_f10ea584 = [];
+    level.radiantexploders = [];
     reportexploderids();
     foreach (trig in trigger::get_all()) {
         if (isdefined(trig.script_prefab_exploder)) {

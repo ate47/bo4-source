@@ -81,7 +81,7 @@ function __init__() {
 // Checksum 0x7d857546, Offset: 0x8e0
 // Size: 0x50
 function function_feb3e91d() {
-    return isdefined(getgametypesetting(#"hash_5c7133ffaac1ffc8")) ? getgametypesetting(#"hash_5c7133ffaac1ffc8") : 0;
+    return isdefined(getgametypesetting(#"laststandfinishing")) ? getgametypesetting(#"laststandfinishing") : 0;
 }
 
 // Namespace laststand_mp/laststand

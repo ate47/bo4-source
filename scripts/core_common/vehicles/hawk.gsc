@@ -46,7 +46,7 @@ function hawk_initialize() {
 // Params 1, eflags: 0x40
 // Checksum 0x71a4df63, Offset: 0x310
 // Size: 0xdc
-function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
+function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -64,7 +64,7 @@ function event<enter_vehicle> codecallback_vehicleenter(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0xdcdb901d, Offset: 0x3f8
 // Size: 0xbc
-function event<exit_vehicle> codecallback_vehicleexit(eventstruct) {
+function event_handler[exit_vehicle] codecallback_vehicleexit(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

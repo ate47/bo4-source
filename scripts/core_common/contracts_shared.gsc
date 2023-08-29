@@ -31,54 +31,54 @@ function init_player_contract_events() {
 // Params 3, eflags: 0x0
 // Checksum 0xec03448b, Offset: 0x118
 // Size: 0x106
-function register_player_contract_event(var_25b9e3c2, var_dad8c7d, max_param_count = 0) {
-    if (!isdefined(level.player_contract_events[var_25b9e3c2])) {
-        level.player_contract_events[var_25b9e3c2] = spawnstruct();
-        level.player_contract_events[var_25b9e3c2].param_count = max_param_count;
-        level.player_contract_events[var_25b9e3c2].events = [];
+function register_player_contract_event(event_name, event_func, max_param_count = 0) {
+    if (!isdefined(level.player_contract_events[event_name])) {
+        level.player_contract_events[event_name] = spawnstruct();
+        level.player_contract_events[event_name].param_count = max_param_count;
+        level.player_contract_events[event_name].events = [];
     }
     /#
-        assert(max_param_count == level.player_contract_events[var_25b9e3c2].param_count);
+        assert(max_param_count == level.player_contract_events[event_name].param_count);
     #/
-    level.player_contract_events[var_25b9e3c2].events[level.player_contract_events[var_25b9e3c2].events.size] = var_dad8c7d;
+    level.player_contract_events[event_name].events[level.player_contract_events[event_name].events.size] = event_func;
 }
 
 // Namespace contracts/contracts_shared
 // Params 4, eflags: 0x0
 // Checksum 0xd85c9c3e, Offset: 0x228
 // Size: 0x32a
-function player_contract_event(var_25b9e3c2, param1 = undefined, param2 = undefined, param3 = undefined) {
-    if (!isdefined(level.player_contract_events[var_25b9e3c2])) {
+function player_contract_event(event_name, param1 = undefined, param2 = undefined, param3 = undefined) {
+    if (!isdefined(level.player_contract_events[event_name])) {
         return;
     }
-    param_count = isdefined(level.player_contract_events[var_25b9e3c2].param_count) ? level.player_contract_events[var_25b9e3c2].param_count : 0;
+    param_count = isdefined(level.player_contract_events[event_name].param_count) ? level.player_contract_events[event_name].param_count : 0;
     switch (param_count) {
     case 0:
     default:
-        foreach (var_dad8c7d in level.player_contract_events[var_25b9e3c2].events) {
-            if (isdefined(var_dad8c7d)) {
-                self [[ var_dad8c7d ]]();
+        foreach (event_func in level.player_contract_events[event_name].events) {
+            if (isdefined(event_func)) {
+                self [[ event_func ]]();
             }
         }
         break;
     case 1:
-        foreach (var_dad8c7d in level.player_contract_events[var_25b9e3c2].events) {
-            if (isdefined(var_dad8c7d)) {
-                self [[ var_dad8c7d ]](param1);
+        foreach (event_func in level.player_contract_events[event_name].events) {
+            if (isdefined(event_func)) {
+                self [[ event_func ]](param1);
             }
         }
         break;
     case 2:
-        foreach (var_dad8c7d in level.player_contract_events[var_25b9e3c2].events) {
-            if (isdefined(var_dad8c7d)) {
-                self [[ var_dad8c7d ]](param1, param2);
+        foreach (event_func in level.player_contract_events[event_name].events) {
+            if (isdefined(event_func)) {
+                self [[ event_func ]](param1, param2);
             }
         }
         break;
     case 3:
-        foreach (var_dad8c7d in level.player_contract_events[var_25b9e3c2].events) {
-            if (isdefined(var_dad8c7d)) {
-                self [[ var_dad8c7d ]](param1, param2, param3);
+        foreach (event_func in level.player_contract_events[event_name].events) {
+            if (isdefined(event_func)) {
+                self [[ event_func ]](param1, param2, param3);
             }
         }
         break;

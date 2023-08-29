@@ -22,7 +22,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xac4816fa, Offset: 0x548
 // Size: 0x41e
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     precache();
     lui::add_luimenu("full_screen_movie", &full_screen_movie::register, "full_screen_movie");
     level.var_d38af2b = 0;
@@ -138,7 +138,7 @@ function function_edde176f(owner) {
 // Params 1, eflags: 0x40
 // Checksum 0x157f7367, Offset: 0x1280
 // Size: 0x1a
-function event<gametype_start> codecallback_startgametype(eventstruct) {
+function event_handler[gametype_start] codecallback_startgametype(eventstruct) {
     level.var_1765ad79 = 0;
 }
 
@@ -179,10 +179,10 @@ function function_b3e0f5e0() {
 // Checksum 0x15ac0acb, Offset: 0x1398
 // Size: 0xd4
 function function_e0136874(destructible_event, attacker, weapon, piece_index, point, dir, mod) {
-    if (!isdefined(level.var_387f6a62)) {
+    if (!isdefined(level.mannequin_time)) {
         return;
     }
-    if (gettime() < level.var_387f6a62 + getdvarint(#"hash_5d828d352b1ef6bc", 120) * 1000) {
+    if (gettime() < level.mannequin_time + getdvarint(#"mannequin_timelimit", 120) * 1000) {
         level.var_ecb7b947++;
         if (level.var_ecb7b947 >= 27 && level.var_d38af2b == 0) {
             level thread function_d38af2b();
@@ -278,7 +278,7 @@ function function_25cf04b2(a_ents) {
 // Checksum 0x3958ba98, Offset: 0x1a60
 // Size: 0xdcc
 function on_game_playing() {
-    level.var_387f6a62 = gettime();
+    level.mannequin_time = gettime();
     array::delete_all(getentarray("sun_block", "targetname"));
     playsoundatposition("evt_spawn_alarm", (-1000, 401, 164));
     playsoundatposition("evt_spawn_alarm", (-576, 464, 41));
@@ -543,9 +543,9 @@ function function_f062b7d9(var_d7c49efd) {
 // Checksum 0x46ea945b, Offset: 0x34a0
 // Size: 0x8c
 function function_c2bd6a1f(a_ents) {
-    var_bf26c58c = getent("truck_destructible", "targetname");
-    if (isdefined(a_ents[#"prop 1"]) && isdefined(var_bf26c58c)) {
-        var_bf26c58c linkto(a_ents[#"prop 1"], "tag_link_uaz", (0, 0, 0));
+    truck = getent("truck_destructible", "targetname");
+    if (isdefined(a_ents[#"prop 1"]) && isdefined(truck)) {
+        truck linkto(a_ents[#"prop 1"], "tag_link_uaz", (0, 0, 0));
     }
 }
 
@@ -645,7 +645,7 @@ function spawn_mannequin() {
 // Params 12, eflags: 0x1 linked
 // Checksum 0xf37f2997, Offset: 0x3bd0
 // Size: 0xb2
-function mannequindamage(inflictor, attacker, damage, var_fcf51927, mod, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
+function mannequindamage(inflictor, attacker, damage, dflags, mod, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
     if (isdefined(inflictor) && isactor(inflictor) && inflictor.archetype == #"zombie") {
         return 0;
     }

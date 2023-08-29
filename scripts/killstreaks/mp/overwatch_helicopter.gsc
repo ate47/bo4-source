@@ -94,7 +94,7 @@ function function_bff5c062(var_f9e52949, attackingplayer) {
         }
         var_e60c203 dodamage(1000, var_e60c203.origin, attackingplayer);
     }
-    var_f9e52949.var_953f407f = 1;
+    var_f9e52949.completely_shutdown = 1;
     if (isdefined(var_f9e52949.owner)) {
         var_f9e52949.owner thread globallogic_audio::function_fd32b1bd("overwatch_helicopter_snipers");
     }
@@ -145,20 +145,20 @@ function function_ca6698c6() {
     helicopter setowner(player);
     helicopter killstreaks::configure_team("overwatch_helicopter", killstreak_id, player, "helicopter");
     helicopter.killstreak_id = killstreak_id;
-    helicopter.var_b46557d6 = &function_39badde6;
+    helicopter.destroyfunc = &deletehelicoptercallback;
     helicopter.hardpointtype = "overwatch_helicopter";
     helicopter clientfield::set("enemyvehicle", 1);
     helicopter vehicle::init_target_group();
-    helicopter.var_95801183 = 0;
+    helicopter.killstreak_timer_started = 0;
     helicopter.allowdeath = 0;
     helicopter.targeting_delay = level.heli_targeting_delay;
     helicopter.identifier_weapon = getweapon("overwatch_helicopter");
-    helicopter.var_ba0b1611 = 0;
+    helicopter.playermovedrecently = 0;
     helicopter.soundmod = "heli";
     helicopter.usage = [];
     helicopter.shuttingdown = 0;
     helicopter.maxhealth = isdefined(killstreak_bundles::get_max_health("overwatch_helicopter")) ? killstreak_bundles::get_max_health("overwatch_helicopter") : 5000;
-    helicopter.var_7a213748 = helicopter.maxhealth;
+    helicopter.original_health = helicopter.maxhealth;
     helicopter.health = helicopter.maxhealth;
     helicopter.damagetaken = 0;
     helicopter.do_scripted_crash = 0;
@@ -171,7 +171,7 @@ function function_ca6698c6() {
     helicopter.numflares = 1;
     helicopter thread helicopter::create_flare_ent(vectorscale((0, 0, -1), 100));
     helicopter.totalrockethits = 0;
-    helicopter.var_4265be4a = 0;
+    helicopter.turretrockethits = 0;
     helicopter.overridevehicledamage = &function_a0068ca0;
     helicopter thread helicopter::heli_health("overwatch_helicopter");
     helicopter thread function_c4b00a04(startnode, protectlocation, "overwatch_helicopter", player.team);
@@ -182,7 +182,7 @@ function function_ca6698c6() {
     player notify(#"hash_7b84cc3c326479a6", {#chopper:helicopter});
     player addweaponstat(settings.ksweapon, #"used", 1);
     player thread function_a9fc0ef6(helicopter);
-    player thread function_5f941d8a(helicopter);
+    player thread watchplayerteamchangethread(helicopter);
     function_ab667e1c(player, helicopter);
     helicopter thread function_5c15f6d6();
     util::function_5a68c330(21, player.team, player getentitynumber(), #"hash_76bc8a74d60388e4");
@@ -193,8 +193,8 @@ function function_ca6698c6() {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x4bcc8f12, Offset: 0x1140
 // Size: 0x20c
-function function_f6442ecd(helicopter, player, var_cef1449f) {
-    if (!isdefined(helicopter) || helicopter.var_953f407f === 1) {
+function function_f6442ecd(helicopter, player, ownerleft) {
+    if (!isdefined(helicopter) || helicopter.completely_shutdown === 1) {
         return;
     }
     if (isdefined(player)) {
@@ -207,9 +207,9 @@ function function_f6442ecd(helicopter, player, var_cef1449f) {
     helicopter thread audio::sndupdatevehiclecontext(0);
     if (isdefined(player)) {
         player thread globallogic_audio::function_fd32b1bd("overwatch_helicopter_snipers");
-        player notify(#"hash_10cc0a0c192e542");
+        player notify(#"overwatch_left");
     }
-    helicopter.var_953f407f = 1;
+    helicopter.completely_shutdown = 1;
     if (isdefined(helicopter.var_e60e2941)) {
         foreach (swat_gunner in helicopter.var_e60e2941) {
             if (isdefined(swat_gunner)) {
@@ -228,7 +228,7 @@ function function_f6442ecd(helicopter, player, var_cef1449f) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x462a902c, Offset: 0x1358
 // Size: 0x28
-function function_39badde6() {
+function deletehelicoptercallback() {
     helicopter = self;
     helicopter notify(#"hash_3904c1a9ebdc27de");
 }
@@ -249,9 +249,9 @@ function function_a0068ca0(einflictor, eattacker, idamage, idflags, smeansofdeat
     if (idamage == 0) {
         return 0;
     }
-    var_f180e0af = smeansofdeath == "MOD_PROJECTILE" || smeansofdeath == "MOD_EXPLOSIVE";
+    handleasrocketdamage = smeansofdeath == "MOD_PROJECTILE" || smeansofdeath == "MOD_EXPLOSIVE";
     if (weapon.statindex == level.weaponshotgunenergy.statindex || weapon.statindex == level.weaponpistolenergy.statindex) {
-        var_f180e0af = 0;
+        handleasrocketdamage = 0;
     }
     if (idamage >= helicopter.health && !helicopter.shuttingdown) {
         helicopter.shuttingdown = 1;
@@ -269,7 +269,7 @@ function function_a0068ca0(einflictor, eattacker, idamage, idflags, smeansofdeat
             eattacker challenges::addflyswatterstat(weapon, self);
             eattacker stats::function_e24eec31(weapon, #"hash_3f3d8a93c372c67d", 1);
         }
-        helicopter thread function_7c78a751();
+        helicopter thread performleavehelicopterfromdamage();
     } else if (!helicopter.shuttingdown && !(isdefined(helicopter.var_ddabcaf1) && helicopter.var_ddabcaf1)) {
         helicopter.owner thread globallogic_audio::function_fd32b1bd("overwatch_helicopter_snipers");
         helicopter killstreaks::play_pilot_dialog_on_owner("damaged", "overwatch_helicopter", helicopter.killstreak_id);
@@ -294,15 +294,15 @@ function wait_and_explode() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x19b36909, Offset: 0x1838
 // Size: 0x9c
-function function_7c78a751() {
+function performleavehelicopterfromdamage() {
     helicopter = self;
     helicopter endon(#"death");
-    if (self.var_90717a === 1) {
+    if (self.leave_by_damage_initiated === 1) {
         return;
     }
-    self.var_90717a = 1;
-    var_23f04d4f = 5;
-    helicopter waittilltimeout(var_23f04d4f, #"static_fx_done");
+    self.leave_by_damage_initiated = 1;
+    failsafe_timeout = 5;
+    helicopter waittilltimeout(failsafe_timeout, #"static_fx_done");
     function_f6442ecd(helicopter, helicopter.owner, 1);
 }
 
@@ -358,18 +358,18 @@ function function_a9fc0ef6(helicopter) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x14e9574, Offset: 0x1b50
 // Size: 0x150
-function function_5f941d8a(helicopter) {
+function watchplayerteamchangethread(helicopter) {
     helicopter notify(#"hash_73c07c54a285eb73");
-    helicopter endon(#"hash_73c07c54a285eb73", #"hash_3196bdf9a0ef317f");
+    helicopter endon(#"hash_73c07c54a285eb73", #"overwatch_hacked");
     /#
         assert(isplayer(self));
     #/
     player = self;
-    player endon(#"hash_10cc0a0c192e542");
+    player endon(#"overwatch_left");
     player waittill(#"joined_team", #"disconnect", #"joined_spectators");
-    var_cef1449f = !isdefined(player) || isdefined(helicopter) && helicopter.ownerentnum == player.entnum;
-    player thread function_f6442ecd(helicopter, player, var_cef1449f);
-    if (var_cef1449f && isdefined(helicopter)) {
+    ownerleft = !isdefined(player) || isdefined(helicopter) && helicopter.ownerentnum == player.entnum;
+    player thread function_f6442ecd(helicopter, player, ownerleft);
+    if (ownerleft && isdefined(helicopter)) {
         helicopter notify(#"hash_3904c1a9ebdc27de");
     }
 }
@@ -422,7 +422,7 @@ function function_5c15f6d6() {
                 var_5eb30267 = (self.protectdest[0] - self.heligoalpos[0], self.protectdest[1] - self.heligoalpos[1], 0);
                 var_5eb30267 = vectornormalize(var_5eb30267);
                 angles = vectortoangles(var_5eb30267);
-                var_d24d4fe2 = isdefined(self.var_62a768cb) && isalive(self.var_62a768cb);
+                var_d24d4fe2 = isdefined(self.leftgunner) && isalive(self.leftgunner);
                 var_ccfa6c33 = isdefined(self.var_e8b1fa34) && isalive(self.var_e8b1fa34);
                 if (var_d24d4fe2 && var_ccfa6c33) {
                     if (randomint(100) > 50) {
@@ -596,7 +596,7 @@ function function_ab667e1c(owner, helicopter) {
         if (i == 0) {
             swat_gunner linkto(helicopter, "tag_rider1", (0, 0, 0), vectorscale((0, 1, 0), 90));
             swat_gunner.ai.swat_gunner = 1;
-            helicopter.var_62a768cb = swat_gunner;
+            helicopter.leftgunner = swat_gunner;
             swat_gunner function_7fac6670(swat_gunner);
             swat_gunner thread function_64b435c4(swat_gunner);
         } else if (i == 1) {
@@ -648,7 +648,7 @@ function function_64b435c4(ai) {
 // Size: 0x33a
 function function_b8047055(swat_gunner, helicopter) {
     swat_gunner endon(#"death");
-    helicopter.owner endon(#"hash_10cc0a0c192e542");
+    helicopter.owner endon(#"overwatch_left");
     while (isdefined(helicopter) && !helicopter.shuttingdown) {
         event = undefined;
         if (isdefined(self.enemy)) {
@@ -681,7 +681,7 @@ function function_b8047055(swat_gunner, helicopter) {
                 self.script_owner globallogic_audio::play_taacom_dialog("secondaryTargetAquired", "overwatch_helicopter_snipers");
             }
             break;
-        case #"hash_27a37f5d2e008740":
+        case #"lost_enemy":
             if (self.voxid == 0) {
                 self.script_owner globallogic_audio::play_taacom_dialog("targetLost", "overwatch_helicopter_snipers");
             } else {

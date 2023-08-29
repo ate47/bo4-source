@@ -187,10 +187,10 @@ function defend_areas() {
         }
     #/
     zm_utility::function_fdb0368(3);
-    var_f79ff5ec = array::random(array(#"lounge", #"hash_2b467fe62e7e8ee2"));
+    var_f79ff5ec = array::random(array(#"lounge", #"dining_hall"));
     s_defend_area = zm_utility::function_a877cd10(var_f79ff5ec);
     var_2f1c9c80 = var_f79ff5ec;
-    if (var_f79ff5ec == #"hash_2b467fe62e7e8ee2") {
+    if (var_f79ff5ec == #"dining_hall") {
         level zm_utility::open_door("forecastle_state_rooms_door", undefined, undefined, 1);
         zm_utility::function_fdb0368(5);
         level zm_utility::open_door("state_rooms_to_lower_stairs_door", undefined, undefined, 1);
@@ -213,15 +213,15 @@ function defend_areas() {
     level util::delay(var_cec10eb3 / 4, "end_game", &zm_round_spawning::function_376e51ef, #"stoker");
     level waittill(#"hash_7a04a7fb98fa4e4d");
     zm_utility::function_fef4b36a(var_f79ff5ec);
-    if (var_f79ff5ec == #"hash_2b467fe62e7e8ee2") {
+    if (var_f79ff5ec == #"dining_hall") {
         level zm_utility::open_door(array("dining_to_promenade_door", "promenade_aft_door"), undefined, 15, 1);
     } else {
         level zm_utility::open_door(array("suites_promenade_door", "library_boat_deck_door"), undefined, 15, 1);
     }
     function_52498131("started_defend_area");
-    var_f79ff5ec = #"hash_5611ac0b89e7f8b1";
+    var_f79ff5ec = #"poop_deck";
     s_defend_area = zm_utility::function_a877cd10(var_f79ff5ec);
-    util::delay(4, undefined, &zm_utility::function_11101458, #"hash_5611ac0b89e7f8b1");
+    util::delay(4, undefined, &zm_utility::function_11101458, #"poop_deck");
     zm_zonemgr::zone_wait_till_enabled("zone_poop_deck");
     level waittill(#"end_of_round");
     zm_round_spawning::function_306ce518(#"blight_father", &intro_blight_father);
@@ -231,7 +231,7 @@ function defend_areas() {
     level waittill(#"hash_7a04a7fb98fa4e4d");
     level.var_531d5f99 = 1;
     zm_utility::enable_power_switch(1, 1);
-    if (var_2f1c9c80 == #"hash_2b467fe62e7e8ee2") {
+    if (var_2f1c9c80 == #"dining_hall") {
         var_420e4589 = array("suites_promenade_door", "library_boat_deck_door", "state_rooms_bridge_door", "bridge_to_upper_stairs_door", "grand_stairs_suites_door");
     } else {
         var_420e4589 = array("dining_to_promenade_door", "promenade_aft_door", "forecastle_state_rooms_door", "state_rooms_to_lower_stairs_door", "grand_stair_lower_to_dining");
@@ -245,14 +245,14 @@ function defend_areas() {
 // Checksum 0xaea96384, Offset: 0x10a8
 // Size: 0x774
 function function_84139b27() {
-    zm_utility::function_c492c4d6(#"hash_5611ac0b89e7f8b1", #"hash_82cab1897c803b8", array(#"zone_poop_deck"), array(#"engine_room", #"lounge", #"hash_2b467fe62e7e8ee2", #"hash_492a368d4273a505"), #"hash_419e018f0a0f07fe", #"hash_5f80d9ba2fc090a");
-    zm_utility::function_c492c4d6(#"lounge", #"hash_18944a1360325a74", array(#"zone_lounge"), array(#"engine_room", #"hash_5611ac0b89e7f8b1", #"cargo_hold", #"bridge"), #"hash_40ba277929e49516", #"hash_2bed1c6d7afa4192");
-    zm_utility::function_c492c4d6(#"hash_2b467fe62e7e8ee2", #"hash_7ab52512f34acbe3", array(#"hash_793d7ec398cf9674", #"hash_574cb9ab1a4d0993"), array(#"hash_5611ac0b89e7f8b1", #"engine_room", #"cargo_hold", #"forecastle"), #"hash_8a9d3480015e78b", #"hash_6bdaac7090cd4985");
-    zm_utility::function_c492c4d6(#"hash_492a368d4273a505", #"hash_3d0f15229df3eca2", array(#"zone_fore_deck"), array(#"bridge", #"engine_room", #"hash_5611ac0b89e7f8b1", #"forecastle"), #"hash_7ed3d98c25f1502a", #"hash_4b2d803f03300036");
-    zm_utility::function_c492c4d6(#"forecastle", #"hash_4ceaaaca5eeb762e", array(#"zone_forecastle_lower", #"zone_forecastle_upper"), array(#"cargo_hold", #"bridge", #"hash_492a368d4273a505", #"hash_2b467fe62e7e8ee2"), #"hash_27ad030950415bce", #"hash_fc714290197baba");
-    zm_utility::function_c492c4d6(#"engine_room", #"hash_1c2b2651f9ae026e", array(#"zone_upper_engine_room", #"zone_engine"), array(#"hash_5611ac0b89e7f8b1", #"hash_492a368d4273a505", #"lounge", #"hash_2b467fe62e7e8ee2"), #"hash_1f86bdff7abc4240", #"hash_7b8e9ff889f16cb0");
-    zm_utility::function_c492c4d6(#"cargo_hold", #"hash_59db20fe9332d7f8", array(#"zone_cargo"), array(#"forecastle", #"lounge", #"hash_2b467fe62e7e8ee2", #"bridge"), #"hash_380fd44f5294766c", #"hash_49f3092df33c779c");
-    zm_utility::function_c492c4d6(#"bridge", #"hash_69b6ed066e710bd1", array(#"zone_bridge"), array(#"forecastle", #"cargo_hold", #"hash_492a368d4273a505", #"lounge"), #"hash_a3060fdfbbfdadb", #"hash_705b2c8817bf3775");
+    zm_utility::function_c492c4d6(#"poop_deck", #"hash_82cab1897c803b8", array(#"zone_poop_deck"), array(#"engine_room", #"lounge", #"dining_hall", #"boat_deck"), #"hash_419e018f0a0f07fe", #"hash_5f80d9ba2fc090a");
+    zm_utility::function_c492c4d6(#"lounge", #"hash_18944a1360325a74", array(#"zone_lounge"), array(#"engine_room", #"poop_deck", #"cargo_hold", #"bridge"), #"hash_40ba277929e49516", #"hash_2bed1c6d7afa4192");
+    zm_utility::function_c492c4d6(#"dining_hall", #"hash_7ab52512f34acbe3", array(#"hash_793d7ec398cf9674", #"hash_574cb9ab1a4d0993"), array(#"poop_deck", #"engine_room", #"cargo_hold", #"forecastle"), #"hash_8a9d3480015e78b", #"hash_6bdaac7090cd4985");
+    zm_utility::function_c492c4d6(#"boat_deck", #"hash_3d0f15229df3eca2", array(#"zone_fore_deck"), array(#"bridge", #"engine_room", #"poop_deck", #"forecastle"), #"hash_7ed3d98c25f1502a", #"hash_4b2d803f03300036");
+    zm_utility::function_c492c4d6(#"forecastle", #"hash_4ceaaaca5eeb762e", array(#"zone_forecastle_lower", #"zone_forecastle_upper"), array(#"cargo_hold", #"bridge", #"boat_deck", #"dining_hall"), #"hash_27ad030950415bce", #"hash_fc714290197baba");
+    zm_utility::function_c492c4d6(#"engine_room", #"hash_1c2b2651f9ae026e", array(#"zone_upper_engine_room", #"zone_engine"), array(#"poop_deck", #"boat_deck", #"lounge", #"dining_hall"), #"hash_1f86bdff7abc4240", #"hash_7b8e9ff889f16cb0");
+    zm_utility::function_c492c4d6(#"cargo_hold", #"hash_59db20fe9332d7f8", array(#"zone_cargo"), array(#"forecastle", #"lounge", #"dining_hall", #"bridge"), #"hash_380fd44f5294766c", #"hash_49f3092df33c779c");
+    zm_utility::function_c492c4d6(#"bridge", #"hash_69b6ed066e710bd1", array(#"zone_bridge"), array(#"forecastle", #"cargo_hold", #"boat_deck", #"lounge"), #"hash_a3060fdfbbfdadb", #"hash_705b2c8817bf3775");
     a_str_keys = getarraykeys(level.a_s_defend_areas);
     foreach (s_defend_area in level.a_s_defend_areas) {
         foreach (str_index in s_defend_area.var_cc0c35ca) {
@@ -270,7 +270,7 @@ function function_84139b27() {
 // Size: 0x1ba
 function function_466fb0ff() {
     level endon(#"end_game");
-    var_f79ff5ec = zm_utility::function_40ef77ab(#"hash_5611ac0b89e7f8b1");
+    var_f79ff5ec = zm_utility::function_40ef77ab(#"poop_deck");
     var_679cd7a8 = zm_utility::function_a877cd10(var_f79ff5ec);
     var_55a36349 = 1;
     while (1) {

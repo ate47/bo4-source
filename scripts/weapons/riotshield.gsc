@@ -16,15 +16,15 @@ function init_shared() {
         level.weaponriotshield = getweapon(#"riotshield");
     }
     level.deployedshieldmodel = #"wpn_t7_shield_riot_world";
-    level.var_b6b0eecc = #"wpn_t7_shield_riot_world";
-    level.var_a04fd33a = #"wpn_t7_shield_riot_world";
+    level.stowedshieldmodel = #"wpn_t7_shield_riot_world";
+    level.carriedshieldmodel = #"wpn_t7_shield_riot_world";
     level.detectshieldmodel = #"wpn_t7_shield_riot_world";
-    level.var_92d95810 = "o_riot_stand_destroyed";
-    level.var_5d5bc5d6 = "o_riot_stand_deploy";
-    level.var_31b8c17c = "o_riot_stand_shot";
-    level.var_f246971e = "o_riot_stand_shot_back";
-    level.var_6fb39df1 = "o_riot_stand_melee_front";
-    level.var_6ae8fa68 = "o_riot_stand_melee_back";
+    level.riotshielddestroyanim = "o_riot_stand_destroyed";
+    level.riotshielddeployanim = "o_riot_stand_deploy";
+    level.riotshieldshotanimfront = "o_riot_stand_shot";
+    level.riotshieldshotanimback = "o_riot_stand_shot_back";
+    level.riotshieldmeleeanimfront = "o_riot_stand_melee_front";
+    level.riotshieldmeleeanimback = "o_riot_stand_melee_back";
     level.riotshield_placement_zoffset = 26;
     thread register();
     callback::on_spawned(&on_player_spawned);
@@ -473,7 +473,7 @@ function watch_riot_shield_use() {
 // Params 1, eflags: 0x40
 // Checksum 0xade09964, Offset: 0x1b38
 // Size: 0xd2
-function event<grenade_fire> function_4f975761(eventstruct) {
+function event_handler[grenade_fire] function_4f975761(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

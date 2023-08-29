@@ -2050,7 +2050,7 @@ function get_player_dialog_alias(dialogkey, meansofdeath) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x1118ca7e, Offset: 0x8d08
 // Size: 0xf8
-function count_keys(keycounts&, bundle, dialogkey) {
+function count_keys(&keycounts, bundle, dialogkey) {
     i = 0;
     field = dialogkey + i;
     fieldvalue = bundle.(field);

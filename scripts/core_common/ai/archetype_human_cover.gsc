@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/laststand_shared.gsc;
-#include script_4a3f9b8905878272;
+#include scripts/core_common/ai/archetype_cover_utility.gsc;
 #include scripts/core_common/ai/archetype_utility.gsc;
-#include script_3aa0f32b70d4f7cb;
-#include script_59f07c660e6710a5;
-#include script_7b7ed6e4bc963a51;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
+#include scripts/core_common/ai/systems/ai_blackboard.gsc;
 #include scripts/core_common/ai_shared.gsc;
 
 #namespace archetype_human_cover;

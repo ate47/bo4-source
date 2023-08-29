@@ -8,10 +8,10 @@
 #include scripts/zm_common/zm_devgui.gsc;
 #include scripts/core_common/ai/zombie_utility.gsc;
 #include scripts/core_common/ai/zombie.gsc;
-#include script_35598499769dbb3d;
-#include script_41fe08c37d53a635;
-#include script_3aa0f32b70d4f7cb;
-#include script_4d85e8de54b02198;
+#include scripts/core_common/ai/systems/gib.gsc;
+#include scripts/core_common/ai/systems/destructible_character.gsc;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
 #include scripts/core_common/ai/archetype_utility.gsc;
 #include script_3819e7a1427df6d2;
 #include scripts/core_common/system_shared.gsc;

@@ -616,8 +616,8 @@ function iff_override(owner, time = 60) {
     self endon(#"death");
     self._iffoverride_oldteam = self.team;
     self iff_override_team_switch_behavior(owner.team);
-    if (isdefined(self.var_99c770d5)) {
-        self [[ self.var_99c770d5 ]](1);
+    if (isdefined(self.iff_override_cb)) {
+        self [[ self.iff_override_cb ]](1);
     }
     if (isdefined(self.settings) && !(isdefined(self.settings.iffshouldrevertteam) && self.settings.iffshouldrevertteam)) {
         return;
@@ -634,8 +634,8 @@ function iff_override(owner, time = 60) {
     }
     self playsound(#"gdt_iff_deactivate");
     self iff_override_team_switch_behavior(self._iffoverride_oldteam);
-    if (isdefined(self.var_99c770d5)) {
-        self [[ self.var_99c770d5 ]](0);
+    if (isdefined(self.iff_override_cb)) {
+        self [[ self.iff_override_cb ]](0);
     }
 }
 
@@ -1084,7 +1084,7 @@ function init_state_machine_for_role(rolename = "default") {
     statemachine statemachine::add_interrupt_connection("off", "pain", "pain");
     statemachine statemachine::add_interrupt_connection("driving", "pain", "pain");
     self.overridevehiclekilled = &callback_vehiclekilled;
-    self.var_c38bd792 = &callback_vehiclekilled;
+    self.overridevehicledeathpostgame = &callback_vehiclekilled;
     statemachine thread statemachine::set_state("suspend");
     self thread on_death_cleanup();
     return statemachine;
@@ -1261,8 +1261,8 @@ function default_death(params) {
     if (self.classname == "script_vehicle") {
         self thread vehicle_death::death_jolt(self.vehicletype);
     }
-    if (isdefined(level.var_4d25d6c7)) {
-        [[ level.var_4d25d6c7 ]]();
+    if (isdefined(level.disable_thermal)) {
+        [[ level.disable_thermal ]]();
     }
     waittime = isdefined(self.waittime_before_delete) ? self.waittime_before_delete : 0;
     owner = self getvehicleowner();
@@ -1301,8 +1301,8 @@ function get_death_type(params) {
 // Size: 0x182
 function defaultstate_death_update(params) {
     self endon(#"death");
-    if (isdefined(level.var_1e700111)) {
-        [[ level.var_1e700111 ]](self);
+    if (isdefined(level.vehicle_destructer_cb)) {
+        [[ level.vehicle_destructer_cb ]](self);
     }
     if (self.delete_on_death === 1) {
         default_death(params);
@@ -1335,7 +1335,7 @@ function defaultstate_scripted_enter(params) {
         clearalllookingandtargeting();
         clearallmovement();
         if (hasasm(self)) {
-            self asmrequestsubstate(#"hash_2d4b292477dc5711");
+            self asmrequestsubstate(#"locomotion@movement");
         }
         self resumespeed();
     }
@@ -1473,8 +1473,8 @@ function defaultstate_off_enter(params) {
     turnoffallambientanims();
     clearalllookingandtargeting();
     clearallmovement();
-    if (isdefined(level.var_4d25d6c7)) {
-        [[ level.var_4d25d6c7 ]]();
+    if (isdefined(level.disable_thermal)) {
+        [[ level.disable_thermal ]]();
     }
     if (isairborne(self)) {
         if (params.isinitialstate !== 1 && params.no_falling !== 1) {
@@ -1511,9 +1511,9 @@ function defaultstate_off_exit(params) {
     if (params.laseron === 1) {
         self laseron();
     }
-    if (isdefined(level.var_173daec0)) {
+    if (isdefined(level.enable_thermal)) {
         if (self get_next_state() !== "death") {
-            [[ level.var_173daec0 ]]();
+            [[ level.enable_thermal ]]();
         }
     }
     if (!(isdefined(self.nolights) && self.nolights)) {
@@ -1575,7 +1575,7 @@ function defaultstate_driving_enter(params) {
         self.team = params.driver.team;
     }
     if (hasasm(self)) {
-        self asmrequestsubstate(#"hash_2d4b292477dc5711");
+        self asmrequestsubstate(#"locomotion@movement");
     }
     clearalllookingandtargeting();
     clearallmovement();
@@ -1919,7 +1919,7 @@ function target_hijackers() {
 // Params 1, eflags: 0x40
 // Checksum 0xdbd37b3, Offset: 0x6a50
 // Size: 0x28
-function event<enter_vehicle> function_f2964e93(eventstruct) {
+function event_handler[enter_vehicle] function_f2964e93(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -1929,7 +1929,7 @@ function event<enter_vehicle> function_f2964e93(eventstruct) {
 // Params 1, eflags: 0x40
 // Checksum 0x5680ac50, Offset: 0x6a80
 // Size: 0x28
-function event<exit_vehicle> function_b7880090(eventstruct) {
+function event_handler[exit_vehicle] function_b7880090(eventstruct) {
     if (!isplayer(self)) {
         return;
     }
@@ -1982,7 +1982,7 @@ function private function_e057db25(var_2d1cbdd9, goalpos, vararg) {
 // Params 1, eflags: 0x20
 // Checksum 0x11ace4ed, Offset: 0x6e50
 // Size: 0x526
-function function_1d436633(vararg...) {
+function function_1d436633(...) {
     /#
         assert(isdefined(self.ai));
     #/

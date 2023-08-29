@@ -195,18 +195,18 @@ function private function_9ddb4115(var_1d83d08d) {
     #/
     if (isdefined(level.deathcircles) && level.deathcircles.size > 0) {
         initcircle = level.deathcircles[0];
-        var_ddab8e6c = var_1d83d08d.start;
+        newstart = var_1d83d08d.start;
         var_dd00b78e = vectornormalize(var_1d83d08d.end - var_1d83d08d.start);
-        var_164fe5c9 = distance2dsquared(var_ddab8e6c, initcircle.origin);
+        var_164fe5c9 = distance2dsquared(newstart, initcircle.origin);
         while (var_164fe5c9 > initcircle.radius * initcircle.radius) {
-            var_ddab8e6c = var_ddab8e6c + var_dd00b78e * 1000;
-            var_c820832 = distance2dsquared(var_ddab8e6c, initcircle.origin);
+            newstart = newstart + var_dd00b78e * 1000;
+            var_c820832 = distance2dsquared(newstart, initcircle.origin);
             if (var_c820832 > var_164fe5c9) {
                 break;
             }
             var_164fe5c9 = var_c820832;
         }
-        var_1d83d08d.start = var_ddab8e6c;
+        var_1d83d08d.start = newstart;
         var_1b8e09d2 = var_1d83d08d.end;
         var_6d773f9e = var_dd00b78e * -1;
         var_164fe5c9 = distance2dsquared(var_1b8e09d2, initcircle.origin);

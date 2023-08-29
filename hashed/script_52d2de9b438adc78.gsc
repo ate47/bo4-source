@@ -319,7 +319,7 @@ function checkforemp() {
 // Params 1, eflags: 0x40
 // Checksum 0xb165fa00, Offset: 0x14f0
 // Size: 0xfc
-function event<grenade_fire> function_cb63f633(eventstruct) {
+function event_handler[grenade_fire] function_cb63f633(eventstruct) {
     if (!isdefined(level.var_d2c88dc5)) {
         return;
     }

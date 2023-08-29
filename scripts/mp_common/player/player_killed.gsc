@@ -556,7 +556,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         var_a48b1a67 = function_b14806c6(attacker player_role::get(), currentsessionmode());
         attacker.lastkilltime = gettime();
         killer = attacker;
-        killerloadoutindex = attacker.var_e54b3c14;
+        killerloadoutindex = attacker.class_num;
         killerwasads = attacker playerads() >= 1;
         killerinvictimfov = util::within_fov(self.origin, self.angles, attacker.origin, self.fovcosine);
         victiminkillerfov = util::within_fov(attacker.origin, attacker.angles, self.origin, attacker.fovcosine);
@@ -616,7 +616,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         }
     }
     var_989983f4 = spawnstruct();
-    var_989983f4.var_b4b63e47 = self.var_e54b3c14;
+    var_989983f4.var_b4b63e47 = self.class_num;
     var_989983f4.victimweaponpickedup = victimweaponpickedup;
     var_989983f4.victimwasads = victimwasads;
     var_989983f4.killerloadoutindex = killerloadoutindex;
@@ -1010,8 +1010,8 @@ function private watch_death(weapon, attacker, smeansofdeath, deathanimduration)
     } else if (0 < weapon.deathcamtime) {
         defaultplayerdeathwatchtime = weapon.deathcamtime;
     }
-    if (isdefined(level.var_75b7c028)) {
-        defaultplayerdeathwatchtime = [[ level.var_75b7c028 ]](defaultplayerdeathwatchtime);
+    if (isdefined(level.overrideplayerdeathwatchtimer)) {
+        defaultplayerdeathwatchtime = [[ level.overrideplayerdeathwatchtimer ]](defaultplayerdeathwatchtime);
     }
     if (!(isdefined(self.var_342564dd) && self.var_342564dd && self == attacker)) {
         globallogic_utils::waitfortimeornotify(defaultplayerdeathwatchtime, "end_death_delay");
@@ -1100,14 +1100,14 @@ function private function_abbc84ad(attacker, weapon, smeansofdeath, inflictor) {
         if (isdefined(attacker.pickedupweapons) && isdefined(attacker.pickedupweapons[weapon])) {
             attackerweaponpickedup = 1;
         }
-        self stats::function_eec52333(weapon, #"deaths", 1, self.var_e54b3c14, attackerweaponpickedup);
+        self stats::function_eec52333(weapon, #"deaths", 1, self.class_num, attackerweaponpickedup);
         victim_weapon = self.lastdroppableweapon;
         if (isdefined(victim_weapon)) {
             victimweaponpickedup = 0;
             if (isdefined(self.pickedupweapons) && isdefined(self.pickedupweapons[victim_weapon])) {
                 victimweaponpickedup = 1;
             }
-            self stats::function_eec52333(victim_weapon, #"deathsduringuse", 1, self.var_e54b3c14, victimweaponpickedup);
+            self stats::function_eec52333(victim_weapon, #"deathsduringuse", 1, self.class_num, victimweaponpickedup);
         }
         recordweaponstatkills = 1;
         if (attacker.isthief === 1 && isdefined(weapon) && weapon.isheroweapon === 1) {
@@ -1119,13 +1119,13 @@ function private function_abbc84ad(attacker, weapon, smeansofdeath, inflictor) {
                 if (isdefined(attacker.pickedupweapons) && isdefined(attacker.pickedupweapons[inflictor.ownerweaponatlaunch])) {
                     inflictorownerweaponatlaunchpickedup = 1;
                 }
-                attacker stats::function_eec52333(inflictor.ownerweaponatlaunch, #"kills", 1, attacker.var_e54b3c14, inflictorownerweaponatlaunchpickedup, 1);
+                attacker stats::function_eec52333(inflictor.ownerweaponatlaunch, #"kills", 1, attacker.class_num, inflictorownerweaponatlaunchpickedup, 1);
             } else {
-                attacker stats::function_eec52333(weapon, #"kills", 1, attacker.var_e54b3c14, attackerweaponpickedup);
+                attacker stats::function_eec52333(weapon, #"kills", 1, attacker.class_num, attackerweaponpickedup);
             }
         }
         if (smeansofdeath == "MOD_HEAD_SHOT") {
-            attacker stats::function_eec52333(weapon, #"headshots", 1, attacker.var_e54b3c14, attackerweaponpickedup);
+            attacker stats::function_eec52333(weapon, #"headshots", 1, attacker.class_num, attackerweaponpickedup);
         }
         if (smeansofdeath == "MOD_PROJECTILE") {
             attacker stats::function_e24eec31(weapon, #"direct_hit_kills", 1);

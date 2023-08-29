@@ -17,7 +17,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0xfc9ad12, Offset: 0x278
 // Size: 0x1c6
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     level.var_227e5947 = 0;
     full_screen_movie::register("full_screen_movie");
     level.var_bbb8810e = #"ui_cam_draft_common";
@@ -33,14 +33,14 @@ function event<level_init> main(eventstruct) {
     level.domflagbasefxoverride = &dom_flag_base_fx_override;
     level.domflagcapfxoverride = &dom_flag_cap_fx_override;
     util::waitforclient(0);
-    level.var_f5cd144f = "ui_cam_endgame_mp_common";
+    level.endgamexcamname = "ui_cam_endgame_mp_common";
 }
 
 // Namespace mp_nuketown_4/gametype_start
 // Params 1, eflags: 0x40
 // Checksum 0x7a7ffa3, Offset: 0x448
 // Size: 0x1a
-function event<gametype_start> codecallback_startgametype(eventstruct) {
+function event_handler[gametype_start] codecallback_startgametype(eventstruct) {
     level.var_1765ad79 = 0;
 }
 
@@ -113,8 +113,8 @@ function nuked_population_sign_think(localclientnum) {
         level thread function_102a701c(var_80ac8621, var_3c0c17f2);
     #/
     step = 36;
-    var_c4637e06 = 0;
-    var_c43b65cb = 0;
+    ones = 0;
+    tens = 0;
     var_80ac8621 rotateroll(step, 0.05);
     var_3c0c17f2 rotateroll(step, 0.05);
     for (;;) {
@@ -142,28 +142,28 @@ function nuked_population_sign_think(localclientnum) {
                 players[players.size] = mannequin;
             }
         }
-        dial = var_c4637e06 + var_c43b65cb * 10;
+        dial = ones + tens * 10;
         while (level.nuketown_population < dial) {
-            var_c4637e06--;
-            if (var_c4637e06 < 0) {
-                var_c4637e06 = 9;
+            ones--;
+            if (ones < 0) {
+                ones = 9;
                 var_80ac8621 rotateroll(0 - step, time);
-                var_c43b65cb--;
+                tens--;
             }
             var_3c0c17f2 rotateroll(0 - step, time);
             var_3c0c17f2 waittill(#"rotatedone");
-            dial = var_c4637e06 + var_c43b65cb * 10;
+            dial = ones + tens * 10;
         }
         while (level.nuketown_population > dial) {
-            var_c4637e06++;
-            if (var_c4637e06 > 9) {
-                var_c4637e06 = 0;
+            ones++;
+            if (ones > 9) {
+                ones = 0;
                 var_80ac8621 rotateroll(step, time);
-                var_c43b65cb++;
+                tens++;
             }
             var_3c0c17f2 rotateroll(step, time);
             var_3c0c17f2 waittill(#"rotatedone");
-            dial = var_c4637e06 + var_c43b65cb * 10;
+            dial = ones + tens * 10;
         }
     }
 }
@@ -172,9 +172,9 @@ function nuked_population_sign_think(localclientnum) {
 // Params 2, eflags: 0x0
 // Checksum 0x406157a, Offset: 0xb78
 // Size: 0x4e
-function function_102a701c(var_c43b65cb, var_c4637e06) {
+function function_102a701c(tens, ones) {
     /#
-        while (!isdefined(var_c43b65cb) || !isdefined(var_c4637e06)) {
+        while (!isdefined(tens) || !isdefined(ones)) {
             iprintlnbold("<unknown string>");
             wait(2);
         }

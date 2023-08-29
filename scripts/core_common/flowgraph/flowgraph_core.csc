@@ -370,7 +370,7 @@ function collect_inputs() {
 // Params 1, eflags: 0x40
 // Checksum 0x26a652, Offset: 0x1af8
 // Size: 0x290
-function event<flowgraph_run> run(eventstruct) {
+function event_handler[flowgraph_run] run(eventstruct) {
     graph_def = get_graph_def(eventstruct.flowgraph_asset);
     /#
         assert(isdefined(graph_def), "<unknown string>" + eventstruct.flowgraph_asset + "<unknown string>");

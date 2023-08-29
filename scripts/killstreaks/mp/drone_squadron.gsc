@@ -241,7 +241,7 @@ function function_d52c51c6(killstreaktype) {
     wing_drone.leader = drone_squadron;
     wing_drone setteam(drone_squadron.team);
     wing_drone.team = drone_squadron.team;
-    wing_drone.var_3af78c8 = "right";
+    wing_drone.formation = "right";
     wing_drone setrotorspeed(1);
     wing_drone.protectent = self;
     wing_drone.owner = player;
@@ -259,7 +259,7 @@ function function_d52c51c6(killstreaktype) {
     wing_drone.leader = drone_squadron;
     wing_drone setteam(drone_squadron.team);
     wing_drone.team = drone_squadron.team;
-    wing_drone.var_3af78c8 = "left";
+    wing_drone.formation = "left";
     wing_drone setrotorspeed(1);
     wing_drone.protectent = self;
     wing_drone.owner = player;
@@ -398,7 +398,7 @@ function function_97bbef8(drone_squadron) {
         minheightoverride = minz_struct[0].origin[2];
     }
     drone_squadron thread qrdrone::qrdrone_watch_distance(2000, minheightoverride);
-    drone_squadron.var_95679a97 = &function_2d28907;
+    drone_squadron.distance_shutdown_override = &function_2d28907;
     drone_squadron.owner killstreaks::thermal_glow(1);
     player vehicle::set_vehicle_drivable_time(45000, drone_squadron.killstreak_end_time);
     visionset_mgr::activate("visionset", "drone_squadron_visionset", player, 1, 90000, 1);

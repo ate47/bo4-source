@@ -34,7 +34,7 @@
 #include scripts/core_common/throttle_shared.gsc;
 #include scripts/core_common/trigger_shared.gsc;
 #include scripts/core_common/ai/archetype_catalyst.gsc;
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/animation_shared.gsc;
 #include scripts/core_common/values_shared.gsc;
 #include scripts/core_common/clientfield_shared.gsc;

@@ -31,8 +31,8 @@ function function_91ea9492() {
     self.detonate_sides_disabled = 1;
     self useanimtree("generic");
     self initsounds();
-    if (isdefined(level.var_b4158f86)) {
-        [[ level.var_b4158f86 ]](self);
+    if (isdefined(level.vehicle_initializer_cb)) {
+        [[ level.vehicle_initializer_cb ]](self);
     }
     defaultrole();
 }

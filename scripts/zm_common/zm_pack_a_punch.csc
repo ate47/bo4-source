@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/zm_common/zm_utility.csc;
 #include scripts/core_common/exploder_shared.csc;
-#include script_14d2d89964cae0b1;
+#include scripts/core_common/ai/systems/gib.csc;
 #include scripts/core_common/flag_shared.csc;
 #include scripts/core_common/scene_shared.csc;
 #include scripts/core_common/util_shared.csc;

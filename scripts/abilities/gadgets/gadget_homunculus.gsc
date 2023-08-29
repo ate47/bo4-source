@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include script_35598499769dbb3d;
+#include scripts/core_common/ai/systems/gib.gsc;
 #include scripts/core_common/util_shared.gsc;
 #include scripts/core_common/system_shared.gsc;
 #include scripts/core_common/scene_shared.gsc;
@@ -125,7 +125,7 @@ function private function_62318121(homunculus, ent) {
 // Params 1, eflags: 0x44
 // Checksum 0xb27a48ff, Offset: 0x670
 // Size: 0x57c
-function event<grenade_fire> private function_4776caf4(eventstruct) {
+function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
     if (eventstruct.weapon.name == #"homunculus") {
         grenade = eventstruct.projectile;
         grenade ghost();

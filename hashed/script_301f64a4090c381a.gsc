@@ -326,7 +326,7 @@ function on_player_connect() {
 // Params 3, eflags: 0x20
 // Checksum 0x42959f1a, Offset: 0x1040
 // Size: 0x74
-function function_c1ccd7f3(var_fc09f1a3, n_player, vararg...) {
+function function_c1ccd7f3(var_fc09f1a3, n_player, ...) {
     /#
         a_e_players = getplayers();
         if (a_e_players.size >= n_player) {

@@ -371,7 +371,7 @@ function spawn_helicopter(owner, origin, angles, vehicledef, targetname, target_
     chopper.attackerdata = [];
     chopper.attackerdamage = [];
     chopper.flareattackerdamage = [];
-    chopper.var_b46557d6 = &destroyhelicopter;
+    chopper.destroyfunc = &destroyhelicopter;
     chopper.hardpointtype = hardpointtype;
     chopper.killstreak_id = killstreak_id;
     chopper.pilotistalking = 0;
@@ -1209,7 +1209,7 @@ function heli_damage_monitor(hardpointtype) {
     self.damagetaken = 0;
     last_hit_vo = 0;
     hit_vo_spacing = 6000;
-    helicopter.var_ce904ce = &heli_hacked_health_update;
+    helicopter.hackedhealthupdatecallback = &heli_hacked_health_update;
     helicopter.hackedhealth = killstreak_bundles::get_hacked_health(hardpointtype);
     if (!isdefined(self.attackerdata)) {
         self.attackers = [];
@@ -1387,7 +1387,7 @@ function init_active_camo() {
 // Size: 0x24c
 function heli_set_active_camo_state(state) {
     heli = self;
-    if (!isdefined(heli.var_581c7559)) {
+    if (!isdefined(heli.active_camo_supported)) {
         return;
     }
     if (state == 0) {
@@ -1823,9 +1823,9 @@ function heli_explode() {
     self function_e1058a3e();
     wait(0.1);
     /#
-        assert(isdefined(self.var_b46557d6));
+        assert(isdefined(self.destroyfunc));
     #/
-    self [[ self.var_b46557d6 ]]();
+    self [[ self.destroyfunc ]]();
 }
 
 // Namespace helicopter/helicopter_shared
@@ -1933,9 +1933,9 @@ function function_62eb6272(var_70031e7b) {
                 self.alarm_snd_ent = undefined;
             }
             /#
-                assert(isdefined(self.var_b46557d6));
+                assert(isdefined(self.destroyfunc));
             #/
-            self [[ self.var_b46557d6 ]]();
+            self [[ self.destroyfunc ]]();
         }
     }
 }
@@ -2019,9 +2019,9 @@ function heli_leave(var_70031e7b = undefined, var_1caffd41 = 0) {
             self.alarm_snd_ent = undefined;
         }
         /#
-            assert(isdefined(self.var_b46557d6));
+            assert(isdefined(self.destroyfunc));
         #/
-        self [[ self.var_b46557d6 ]]();
+        self [[ self.destroyfunc ]]();
     }
 }
 

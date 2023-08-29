@@ -85,7 +85,7 @@ function private follow_path() {
 // Params 1, eflags: 0x44
 // Checksum 0xac4a61c7, Offset: 0x4b8
 // Size: 0x1e6
-function event<event_cf200f34> private function_209450ae(eventstruct) {
+function event_handler[event_cf200f34] private function_209450ae(eventstruct) {
     dynent = eventstruct.ent;
     if (!isdefined(dynent.hitindex)) {
         return;
@@ -102,9 +102,9 @@ function event<event_cf200f34> private function_209450ae(eventstruct) {
     bundle = function_489009c1(dynent);
     if (isstruct(bundle) && isarray(bundle.dynentstates)) {
         var_daedea1b = bundle.dynentstates[dynent.hitindex];
-        if (isdefined(var_daedea1b.var_879eb2ff)) {
+        if (isdefined(var_daedea1b.stateanim)) {
             function_e2a06860(dynent, dynent.hitindex);
-            animlength = getanimlength(var_daedea1b.var_879eb2ff);
+            animlength = getanimlength(var_daedea1b.stateanim);
             wait(animlength);
             function_e2a06860(dynent, 0);
             dynent.hitindex = 1 + dynent.hitindex % 2;

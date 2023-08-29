@@ -43,7 +43,7 @@ function autoexec opt_in() {
 // Params 1, eflags: 0x40
 // Checksum 0xfd01dcbd, Offset: 0x680
 // Size: 0x864
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("clientuimodel", "player_lives", 1, 2, "int", undefined, 0, 0);
     clientfield::register("vehicle", "pap_projectile_fx", 1, 1, "int", &pap_projectile_fx, 0, 0);
     clientfield::register("vehicle", "pap_projectile_end_fx", 1, 1, "counter", &pap_projectile_end_fx, 0, 0);

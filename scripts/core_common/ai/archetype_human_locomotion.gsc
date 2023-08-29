@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
 #include scripts/core_common/ai_shared.gsc;
-#include script_3aa0f32b70d4f7cb;
-#include script_178024232e91b0a1;
-#include script_59f07c660e6710a5;
+#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
+#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
+#include scripts/core_common/ai/systems/ai_interface.gsc;
 
 #namespace archetype_human_locomotion;
 

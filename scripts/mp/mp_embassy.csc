@@ -10,7 +10,7 @@
 // Params 1, eflags: 0x40
 // Checksum 0x71d20d8d, Offset: 0x110
 // Size: 0x1bc
-function event<level_init> main(eventstruct) {
+function event_handler[level_init] main(eventstruct) {
     clientfield::register("scriptmover", "spawn_flavor_apc_explosion", 1, 1, "counter", &function_b3242503, 0, 0);
     setsaveddvar(#"enable_global_wind", 1);
     setsaveddvar(#"wind_global_vector", "88 0 0");

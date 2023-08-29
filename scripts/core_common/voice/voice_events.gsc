@@ -159,7 +159,7 @@ function function_c710099c(event, params) {
 // Params 2, eflags: 0x5 linked
 // Checksum 0x91382913, Offset: 0x908
 // Size: 0x7c
-function private queue_item(queue&, item) {
+function private queue_item(&queue, item) {
     for (i = 0; i < queue.size; i++) {
         if (queue[i].priority < item.priority) {
             break;
@@ -172,7 +172,7 @@ function private queue_item(queue&, item) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0xb666aeea, Offset: 0x990
 // Size: 0xba
-function private function_accf7a2e(queue&) {
+function private function_accf7a2e(&queue) {
     level endon(#"game_ended");
     while (1) {
         while (queue.size > 0) {

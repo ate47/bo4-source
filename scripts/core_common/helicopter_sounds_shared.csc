@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 // Checksum 0x204bc4c, Offset: 0x258
 // Size: 0x5cc
 function __init__() {
-    level.var_c413656 = &heli_linkto_sound_ents_delete;
+    level._entityshutdowncbfunc = &heli_linkto_sound_ents_delete;
     level.helisoundvalues = [];
     init_heli_sound_values("cobra", "turbine", 65, 0.6, 0.8, 65, 1, 1.1);
     init_heli_sound_values("cobra", "top_rotor", 45, 0.7, 1, 45, 0.95, 1.1);
@@ -340,7 +340,7 @@ function start_helicopter_sounds(localclientnum) {
     if (isdefined(self.sounddef)) {
         self.heli = [];
         self.terrain = [];
-        self.var_2f9376d6 = [];
+        self.sound_ents = [];
         self.cur_speed = 0;
         self.mph_to_inches_per_sec = 17.6;
         self.speed_of_wind = 20;

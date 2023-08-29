@@ -6,7 +6,7 @@
 #include scripts/core_common/bots/bot_chain.gsc;
 #include scripts/core_common/bots/bot.gsc;
 #include scripts/core_common/ai/strategic_command.gsc;
-#include script_31e56101095f174b;
+#include scripts/core_common/ai/systems/planner.gsc;
 
 #namespace planner_squad_utility;
 

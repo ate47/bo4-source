@@ -75,7 +75,7 @@ function function_eaeb557() {
 // Params 1, eflags: 0x44
 // Checksum 0x56a90e1d, Offset: 0x4e0
 // Size: 0x2dc
-function event<event_cf200f34> private function_209450ae(eventstruct) {
+function event_handler[event_cf200f34] private function_209450ae(eventstruct) {
     dynent = eventstruct.ent;
     if (dynent.targetname !== "spring_event_homunculus" && dynent.targetname !== "zombie_apoc_homunculus") {
         return;

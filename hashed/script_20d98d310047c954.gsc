@@ -43,8 +43,8 @@ function nuked_population_sign_think(localclientnum) {
         level thread function_102a701c(var_80ac8621, var_3c0c17f2);
     #/
     step = 36;
-    var_c4637e06 = 0;
-    var_c43b65cb = 0;
+    ones = 0;
+    tens = 0;
     var_80ac8621 rotateroll(step, 0.05);
     var_3c0c17f2 rotateroll(step, 0.05);
     for (;;) {
@@ -74,28 +74,28 @@ function nuked_population_sign_think(localclientnum) {
                 players[players.size] = player;
             }
         }
-        dial = var_c4637e06 + var_c43b65cb * 10;
+        dial = ones + tens * 10;
         while (players.size < dial) {
-            var_c4637e06--;
-            if (var_c4637e06 < 0) {
-                var_c4637e06 = 9;
+            ones--;
+            if (ones < 0) {
+                ones = 9;
                 var_80ac8621 rotateroll(0 - step, time);
-                var_c43b65cb--;
+                tens--;
             }
             var_3c0c17f2 rotateroll(0 - step, time);
             var_3c0c17f2 waittill(#"rotatedone");
-            dial = var_c4637e06 + var_c43b65cb * 10;
+            dial = ones + tens * 10;
         }
         while (players.size > dial) {
-            var_c4637e06++;
-            if (var_c4637e06 > 9) {
-                var_c4637e06 = 0;
+            ones++;
+            if (ones > 9) {
+                ones = 0;
                 var_80ac8621 rotateroll(step, time);
-                var_c43b65cb++;
+                tens++;
             }
             var_3c0c17f2 rotateroll(step, time);
             var_3c0c17f2 waittill(#"rotatedone");
-            dial = var_c4637e06 + var_c43b65cb * 10;
+            dial = ones + tens * 10;
         }
     }
 }
@@ -115,9 +115,9 @@ function set_dvar_float_if_unset(dvar, value) {
 // Params 2, eflags: 0x0
 // Checksum 0xa1361610, Offset: 0x6b8
 // Size: 0x4e
-function function_102a701c(var_c43b65cb, var_c4637e06) {
+function function_102a701c(tens, ones) {
     /#
-        while (!isdefined(var_c43b65cb) || !isdefined(var_c4637e06)) {
+        while (!isdefined(tens) || !isdefined(ones)) {
             iprintlnbold("<unknown string>");
             wait(2);
         }

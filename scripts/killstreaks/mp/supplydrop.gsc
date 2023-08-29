@@ -2091,7 +2091,7 @@ function spawn_helicopter(owner, team, origin, angles, vehicledef, targetname, k
         }
         return undefined;
     }
-    chopper.var_b46557d6 = &destroyhelicopter;
+    chopper.destroyfunc = &destroyhelicopter;
     chopper.script_nocorpse = 1;
     chopper killstreaks::configure_team("supply_drop", killstreak_id, owner);
     chopper.maxhealth = level.heli_maxhealth;

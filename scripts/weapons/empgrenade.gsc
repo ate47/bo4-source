@@ -220,7 +220,7 @@ function empexplosiondamageents(owner, weapon, origin, radius, damageplayers) {
 // Params 1, eflags: 0x40
 // Checksum 0x976b0d1f, Offset: 0xc60
 // Size: 0x9c
-function event<grenade_fire> function_b18444ea(eventstruct) {
+function event_handler[grenade_fire] function_b18444ea(eventstruct) {
     if (!isplayer(self)) {
         return;
     }

@@ -46,7 +46,7 @@ function init_shared(bundlename) {
         clientfield::register("clientuimodel", "hudItems.remoteMissilePhase2", 1, 1, "int");
         clientfield::register("scriptmover", "hellstorm_camera", 1, 1, "int");
         clientfield::register("scriptmover", "hellstorm_deploy", 1, 1, "int");
-        level.var_39931ca6 = [];
+        level.missilesforsighttraces = [];
         level.missileremotedeployfx = bundle.var_64cbe61e;
         level.missileremotelaunchvert = 12000;
         level.missileremotelaunchhorz = 7000;
@@ -239,7 +239,7 @@ function _fire(lifeid, player, team, killstreak_id) {
     rocket killstreaks::configure_team("remote_missile", killstreak_id, self, undefined, undefined, undefined);
     rocket killstreak_hacking::enable_hacking("remote_missile", undefined, &hackedpostfunction);
     killstreak_detect::killstreaktargetset(rocket);
-    rocket.var_ce904ce = &hackedhealthupdate;
+    rocket.hackedhealthupdatecallback = &hackedhealthupdate;
     rocket clientfield::set("enemyvehicle", 1);
     rocket clientfield::set("remote_missile_phase2", 0);
     rocket.identifier_weapon = getweapon("remote_missile");

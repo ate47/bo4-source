@@ -495,8 +495,8 @@ function function_ac904e5e() {
 // Size: 0xa0
 function function_f436d901() {
     var_83a5fb84 = getentarray("use_elec_switch", "targetname");
-    foreach (var_9a560db0 in var_83a5fb84) {
-        var_9a560db0 hide();
+    foreach (t_switch in var_83a5fb84) {
+        t_switch hide();
     }
 }
 

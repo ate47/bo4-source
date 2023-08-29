@@ -28,7 +28,7 @@ function autoexec __init__system__() {
 function __init__() {
     level._ai_group = [];
     level.missionfailed = 0;
-    level.var_df45a8a2 = [];
+    level.deathflags = [];
     level.go_to_node_arrays = [];
     level.global_spawn_timer = 0;
     level.global_spawn_count = 0;
@@ -306,19 +306,19 @@ function spawn_think_action(spawner) {
     if (isdefined(self.script_grenades)) {
         self.grenadeammo = self.script_grenades;
     }
-    if (isdefined(self.var_253727ff)) {
+    if (isdefined(self.script_pacifist)) {
         self.pacifist = 1;
     }
     if (isdefined(self.script_allowdeath)) {
         self.allowdeath = self.script_allowdeath;
     }
-    if (isdefined(self.var_228d5265)) {
+    if (isdefined(self.script_forcegib)) {
         self.force_gib = 1;
     }
-    if (isdefined(self.var_734fb1c3)) {
+    if (isdefined(self.script_patroller)) {
         return;
     }
-    if (isdefined(self.target) && !isdefined(self.var_177897cd)) {
+    if (isdefined(self.target) && !isdefined(self.script_disable_spawn_targeting)) {
         var_8e8b0300 = 0;
         a_s_targets = struct::get_array(self.target);
         foreach (s_target in a_s_targets) {
@@ -525,11 +525,11 @@ function go_to_node_using_funcs(node, get_target_func, set_goal_func_quits, opti
         }
         node = nextnode_array;
     }
-    if (isdefined(self.var_ddb2f8)) {
-        [[ self.var_ddb2f8 ]](node);
+    if (isdefined(self.arrived_at_end_node_func)) {
+        [[ self.arrived_at_end_node_func ]](node);
     }
     self notify(#"reached_path_end");
-    if (isdefined(self.var_9a15c96e)) {
+    if (isdefined(self.delete_on_path_end)) {
         self delete();
     }
     self set_goalradius_based_on_settings(node);
@@ -1009,8 +1009,8 @@ function spawn(b_force = 0, str_targetname, v_origin, v_angles, bignorespawningl
             e_spawned = self spawnfromspawner(str_targetname, force_spawn, makeroom, infinitespawn, self.aitypevariant);
         } else {
             override_aitype = undefined;
-            if (isdefined(level.var_64be36b0)) {
-                override_aitype = [[ level.var_64be36b0 ]](self);
+            if (isdefined(level.override_spawned_aitype_func)) {
+                override_aitype = [[ level.override_spawned_aitype_func ]](self);
             }
             if (isdefined(override_aitype)) {
                 e_spawned = self spawnfromspawner(str_targetname, force_spawn, makeroom, infinitespawn, override_aitype);
@@ -1244,7 +1244,7 @@ function get_ai_group_ai(aigroup) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0x5b73222f, Offset: 0x46e8
 // Size: 0x148
-function add_global_spawn_function(team, spawn_func, vararg...) {
+function add_global_spawn_function(team, spawn_func, ...) {
     if (!isdefined(level.spawn_funcs)) {
         level.spawn_funcs = [];
     }
@@ -1266,7 +1266,7 @@ function add_global_spawn_function(team, spawn_func, vararg...) {
 // Params 2, eflags: 0x21 linked
 // Checksum 0x446e3a63, Offset: 0x4838
 // Size: 0x19c
-function add_ai_spawn_function(spawn_func, vararg...) {
+function add_ai_spawn_function(spawn_func, ...) {
     if (!isdefined(level.spawn_funcs)) {
         level.spawn_funcs = [];
     }
@@ -1288,7 +1288,7 @@ function add_ai_spawn_function(spawn_func, vararg...) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0xa353548c, Offset: 0x49e0
 // Size: 0x148
-function add_archetype_spawn_function(archetype, spawn_func, vararg...) {
+function add_archetype_spawn_function(archetype, spawn_func, ...) {
     if (!isdefined(level.spawn_funcs)) {
         level.spawn_funcs = [];
     }
@@ -1310,7 +1310,7 @@ function add_archetype_spawn_function(archetype, spawn_func, vararg...) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0x365d1ec1, Offset: 0x4b30
 // Size: 0x1a4
-function function_89a2cd87(archetype, spawn_func, vararg...) {
+function function_89a2cd87(archetype, spawn_func, ...) {
     if (!isdefined(level.spawn_funcs)) {
         level.spawn_funcs = [];
     }
@@ -1348,7 +1348,7 @@ function remove_global_spawn_function(team, func) {
 // Params 2, eflags: 0x21 linked
 // Checksum 0x26f9c0d, Offset: 0x4dd0
 // Size: 0xc6
-function add_spawn_function(spawn_func, vararg...) {
+function add_spawn_function(spawn_func, ...) {
     /#
         assert(!isdefined(level._loadstarted) || !isalive(self), "<unknown string>");
     #/
@@ -1432,7 +1432,7 @@ function remove_spawn_function_ai_group(str_aigroup, func_spawn, param_1, param_
 // Params 3, eflags: 0x21 linked
 // Checksum 0xce6fc222, Offset: 0x5278
 // Size: 0x1e8
-function simple_spawn(name_or_spawners, spawn_func, vararg...) {
+function simple_spawn(name_or_spawners, spawn_func, ...) {
     spawners = [];
     if (isstring(name_or_spawners)) {
         spawners = getentarray(name_or_spawners, "targetname");
@@ -1469,7 +1469,7 @@ function simple_spawn(name_or_spawners, spawn_func, vararg...) {
 // Params 3, eflags: 0x21 linked
 // Checksum 0x4291b4cc, Offset: 0x5468
 // Size: 0xc8
-function simple_spawn_single(name_or_spawner, spawn_func, vararg...) {
+function simple_spawn_single(name_or_spawner, spawn_func, ...) {
     a_args = arraycombine(array(name_or_spawner, spawn_func), vararg, 1, 0);
     ai = util::single_func_argarray(undefined, &simple_spawn, a_args);
     /#

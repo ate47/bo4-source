@@ -54,7 +54,7 @@ function function_2bf3c36e() {
 // Params 1, eflags: 0x40
 // Checksum 0x556ccb10, Offset: 0x360
 // Size: 0x104
-function event<event_9673dc9a> function_3981d015(eventstruct) {
+function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (isdefined(level.var_8b13d130) && !level.var_8b13d130) {
         if (eventstruct.ent.targetname === "dynent_jukebox") {
             setdynentenabled(eventstruct.ent, 0);
@@ -63,9 +63,9 @@ function event<event_9673dc9a> function_3981d015(eventstruct) {
     }
     if (eventstruct.ent.targetname === "dynent_jukebox") {
         if (eventstruct.state == 0 || eventstruct.state == 3) {
-            eventstruct.ent thread function_9a08f655();
+            eventstruct.ent thread jukebox_off();
         } else if (eventstruct.state == 2) {
-            eventstruct.ent thread function_91c01729();
+            eventstruct.ent thread jukebox_on();
         }
     }
 }
@@ -74,8 +74,8 @@ function event<event_9673dc9a> function_3981d015(eventstruct) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x6f583a49, Offset: 0x470
 // Size: 0x46
-function function_9a08f655() {
-    self notify(#"hash_7878c9cebd885173");
+function jukebox_off() {
+    self notify(#"jukebox_off");
     if (isdefined(self.var_14da73bd)) {
         stopsound(self.var_14da73bd);
         self.var_14da73bd = undefined;
@@ -86,8 +86,8 @@ function function_9a08f655() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xebc5d27b, Offset: 0x4c0
 // Size: 0x212
-function function_91c01729() {
-    self endon(#"hash_7878c9cebd885173");
+function jukebox_on() {
+    self endon(#"jukebox_off");
     var_96748cfb = (self.origin[0] + 32, self.origin[1] - 16, self.origin[2] + 64);
     if (isdefined(self.var_14da73bd)) {
         stopsound(self.var_14da73bd);
