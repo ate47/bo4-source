@@ -71,7 +71,7 @@ function on_end_game() {
     }
     foreach (scene in level.var_ba9e60ac) {
         foreach (bundle in struct::get_array(scene, "scriptbundlename")) {
-            bundle.var_47dbac3f = 0;
+            bundle.barrage = 0;
         }
     }
 }
@@ -105,9 +105,9 @@ function function_fc73e385() {
 // Size: 0x98
 function function_c76ccdd2() {
     self.script_play_multiple = 1;
-    self.var_47dbac3f = 1;
+    self.barrage = 1;
     wait(randomfloatrange(1, 10));
-    while (self.var_47dbac3f) {
+    while (self.barrage) {
         self scene::play();
         wait(randomfloatrange(10, 20));
     }

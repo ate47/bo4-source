@@ -78,7 +78,7 @@ function private on_item_use(params) {
         anglesdelta = traceresults.hitent.angles - var_2e2dbfa3;
         spawnorigin = traceresults.hitent.origin + rotatepoint(var_7f11909d, anglesdelta);
     }
-    self thread function_bac16d76(spawnorigin, traceresults.angles, params.item.id);
+    self thread throw_dart(spawnorigin, traceresults.angles, params.item.id);
 }
 
 // Namespace dart/dart_wz
@@ -129,7 +129,7 @@ function private take_remote() {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xeea4cbb8, Offset: 0x840
 // Size: 0x214
-function private function_bac16d76(spawnorigin, spawnangles, itemid) {
+function private throw_dart(spawnorigin, spawnangles, itemid) {
     self endon(#"death", #"disconnect");
     playereyepos = self getplayercamerapos();
     vehicle = spawnvehicle(#"veh_dart_wz", spawnorigin, spawnangles);

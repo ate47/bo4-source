@@ -13,7 +13,7 @@ function autoexec initnotetrackhandler() {
 // Params 1, eflags: 0x44
 // Checksum 0x95594d17, Offset: 0x88
 // Size: 0x96
-function event_handler[runnotetrackhandler] private runnotetrackhandler(eventstruct) {
+function private event_handler[runnotetrackhandler] runnotetrackhandler(eventstruct) {
     /#
         assert(isarray(eventstruct.notetracks));
     #/

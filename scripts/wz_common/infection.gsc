@@ -298,7 +298,7 @@ function private function_70f6e873(params) {
 // Params 1, eflags: 0x44
 // Checksum 0x8a7d04, Offset: 0x1270
 // Size: 0xfc
-function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
+function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
     eventstruct.projectile endon(#"death");
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self)) {
         weaponname = eventstruct.weapon.name;

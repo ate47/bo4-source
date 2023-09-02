@@ -87,19 +87,19 @@ function function_1c601b99() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x2b2fe151, Offset: 0x878
 // Size: 0x144
-function function_bff5c062(var_f9e52949, attackingplayer) {
-    foreach (var_e60c203 in var_f9e52949.var_e60e2941) {
+function function_bff5c062(overwatchhelicopter, attackingplayer) {
+    foreach (var_e60c203 in overwatchhelicopter.var_e60e2941) {
         if (!isdefined(var_e60c203)) {
             continue;
         }
         var_e60c203 dodamage(1000, var_e60c203.origin, attackingplayer);
     }
-    var_f9e52949.completely_shutdown = 1;
-    if (isdefined(var_f9e52949.owner)) {
-        var_f9e52949.owner thread globallogic_audio::function_fd32b1bd("overwatch_helicopter_snipers");
+    overwatchhelicopter.completely_shutdown = 1;
+    if (isdefined(overwatchhelicopter.owner)) {
+        overwatchhelicopter.owner thread globallogic_audio::function_fd32b1bd("overwatch_helicopter_snipers");
     }
-    var_f9e52949 killstreaks::function_73566ec7(attackingplayer, getweapon(#"gadget_icepick"), var_f9e52949.owner);
-    var_f9e52949 wait_and_explode();
+    overwatchhelicopter killstreaks::function_73566ec7(attackingplayer, getweapon(#"gadget_icepick"), overwatchhelicopter.owner);
+    overwatchhelicopter wait_and_explode();
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter

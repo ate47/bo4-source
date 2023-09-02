@@ -134,7 +134,7 @@ function event_handler[gametype_init] main(eventstruct) {
     callback::on_player_damage(&onplayerdamage);
     globallogic_defaults::function_daa7e9d5();
     laststand_mp::function_367cfa1b(&function_95002a59);
-    laststand_mp::function_eb8c0e47(&function_114f1da7);
+    laststand_mp::function_eb8c0e47(&onplayerrevived);
     setdvar(#"hash_7036719f41a78d54", getgametypesetting(#"hash_2e756f25094a5b3c"));
     clientfield::register("allplayers", "bountymoneytrail", 1, 1, "int");
     clientfield::register("toplayer", "realtime_multiplay", 1, 1, "int");
@@ -339,7 +339,7 @@ function private function_95002a59(attacker, victim, inflictor, weapon, meansofd
 // Params 2, eflags: 0x4
 // Checksum 0xefac5f27, Offset: 0x1e10
 // Size: 0xd0
-function private function_114f1da7(revivee, reviver) {
+function private onplayerrevived(revivee, reviver) {
     [[ level.var_37d62931 ]](reviver, 1);
     reviver.pers[#"revives"] = (isdefined(reviver.pers[#"revives"]) ? reviver.pers[#"revives"] : 0) + 1;
     reviver.revives = reviver.pers[#"revives"];

@@ -41,7 +41,7 @@
 // Params 0, eflags: 0x6
 // Checksum 0x52dca983, Offset: 0x1a0
 // Size: 0x24
-function autoexec private function_88c28903() {
+function private autoexec function_88c28903() {
     zm_round_spawning::function_54fee373(&function_6bf7d04f);
 }
 

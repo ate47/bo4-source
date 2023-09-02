@@ -909,7 +909,7 @@ function in_combat() {
     if (!isdefined(self.enemy)) {
         return 0;
     }
-    switch (self.var_61d90c1a) {
+    switch (self.combatstate) {
     case #"hash_13ae5523119f0e4d":
     case #"combat_state_in_combat":
     case #"combat_state_has_visible_enemy":

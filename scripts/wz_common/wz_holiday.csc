@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#namespace namespace_9723fa3;
+#namespace wz_holiday;
 
-// Namespace namespace_9723fa3/namespace_9723fa3
+// Namespace wz_holiday/wz_holiday
 // Params 0, eflags: 0x2
 // Checksum 0x898b7260, Offset: 0xc0
 // Size: 0xb2
@@ -10,7 +10,7 @@ function autoexec __init() {
     level.var_7b65cb7 = isdefined(getgametypesetting(#"hash_2e25d475b271a700")) ? getgametypesetting(#"hash_2e25d475b271a700") : 0;
 }
 
-// Namespace namespace_9723fa3/level_init
+// Namespace wz_holiday/level_init
 // Params 1, eflags: 0x40
 // Checksum 0xe7134f11, Offset: 0x180
 // Size: 0x3c
@@ -19,7 +19,7 @@ function event_handler[level_init] main(eventstruct) {
     level thread function_af9a5cd8();
 }
 
-// Namespace namespace_9723fa3/namespace_9723fa3
+// Namespace wz_holiday/wz_holiday
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4a835708, Offset: 0x1c8
 // Size: 0x1e8
@@ -40,7 +40,7 @@ function function_af9a5cd8() {
     }
 }
 
-// Namespace namespace_9723fa3/namespace_9723fa3
+// Namespace wz_holiday/wz_holiday
 // Params 0, eflags: 0x1 linked
 // Checksum 0x724af990, Offset: 0x3b8
 // Size: 0x5ac

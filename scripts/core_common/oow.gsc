@@ -11,7 +11,7 @@
 // Checksum 0x617098bc, Offset: 0xb8
 // Size: 0x3c
 function autoexec __init__system__() {
-    system::register(#"hash_160d7214c7356e06", &__init__, undefined, undefined);
+    system::register(#"out_of_world", &__init__, undefined, undefined);
 }
 
 // Namespace oob/oow

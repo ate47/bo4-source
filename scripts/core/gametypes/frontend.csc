@@ -151,8 +151,8 @@ function function_3a965fac(scene_name, var_7c9878fb, mode, fields) {
         }
         level.var_e362b5d9[level.var_e362b5d9.size] = var_7accf7bb;
         if (mode == 1) {
-            var_6195127e = scene::get_all_shot_names(scene_name, undefined, 1);
-            foreach (shot in var_6195127e) {
+            scene_shots = scene::get_all_shot_names(scene_name, undefined, 1);
+            foreach (shot in scene_shots) {
                 scene::add_scene_func(scene_name, &function_ebc650f4, shot, scene_name, shot);
             }
         }
@@ -1168,7 +1168,7 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
         }
         var_351da865 = getent(localclientnum, "<unknown string>", "<unknown string>");
         var_731a18b3 = struct::get(#"hash_4759fde09aee8d9f");
-        var_b92b3cf9 = struct::get(#"hash_3cf76492cd93048a");
+        fx_end = struct::get(#"hash_3cf76492cd93048a");
         foreach (type, var_3aec81f4 in types) {
             switch (type) {
             case 1:
@@ -1190,7 +1190,7 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
                     if (!isdefined(handle)) {
                         continue;
                     }
-                    direction = var_b92b3cf9.origin - var_731a18b3.origin;
+                    direction = fx_end.origin - var_731a18b3.origin;
                     step_size = direction / getdvarint(#"hash_522e5987825dd16e", 100);
                     for (var_d7f46807 = 0; var_d7f46807 <= getdvarint(#"hash_522e5987825dd16e", 100); var_d7f46807++) {
                         waitframe(1);
@@ -1904,8 +1904,8 @@ function function_79b4e640(localclientnum) {
             level.var_47863282 = level.var_202758dc;
             level.var_3cea0f38 = 0;
             if (isdefined(level.var_4c6f850d) && isdefined(level.var_4c6f850d[level.var_47863282])) {
-                var_6195127e = scene::get_all_shot_names(level.var_723bf922, undefined, 1);
-                scene_shot = array::random(var_6195127e);
+                scene_shots = scene::get_all_shot_names(level.var_723bf922, undefined, 1);
+                scene_shot = array::random(scene_shots);
                 function_a71254a9(localclientnum, 1, level.var_4c6f850d[level.var_47863282], 0, scene_shot, var_2c72511b == var_f5bfdfe7);
             } else {
                 level.var_494e824d = 0;

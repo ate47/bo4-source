@@ -29,7 +29,7 @@ function start(id) {
     if (level.var_d2540500[id].active !== 1) {
         s_sc = level.var_345df07[id];
         s_sc.var_7944be4a = 0;
-        exploder::exploder(s_sc.var_915be716);
+        exploder::exploder(s_sc.fx_exp);
         namespace_617a54f4::function_3f808d3d(id);
         s_sc.var_f929d531 thread function_fab8c488();
     }
@@ -42,7 +42,7 @@ function start(id) {
 function end(id) {
     if (level.var_d2540500[id].active === 1) {
         s_sc = level.var_345df07[id];
-        exploder::stop_exploder(s_sc.var_915be716);
+        exploder::stop_exploder(s_sc.fx_exp);
         namespace_617a54f4::function_2a94055d(id);
         s_sc.var_f929d531 notify(#"event_end");
     }

@@ -54,7 +54,7 @@ function function_6e7c4665() {
 // Params 1, eflags: 0x44
 // Checksum 0xba7eed71, Offset: 0x3d0
 // Size: 0x144
-function event_handler[event_9673dc9a] private function_3981d015(eventstruct) {
+function private event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (isdefined(level.var_7ad3f6a0) && !level.var_7ad3f6a0) {
         return;
     }

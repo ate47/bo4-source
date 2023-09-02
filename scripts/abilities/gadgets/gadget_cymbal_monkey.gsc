@@ -110,7 +110,7 @@ function private function_17c51c94(monkey, ent) {
 // Params 1, eflags: 0x44
 // Checksum 0x53e28474, Offset: 0x570
 // Size: 0x244
-function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
+function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
     if (eventstruct.weapon.name == #"cymbal_monkey") {
         e_grenade = eventstruct.projectile;
         e_grenade ghost();

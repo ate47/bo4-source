@@ -85,7 +85,7 @@ function private follow_path() {
 // Params 1, eflags: 0x44
 // Checksum 0xac4a61c7, Offset: 0x4b8
 // Size: 0x1e6
-function event_handler[event_cf200f34] private function_209450ae(eventstruct) {
+function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
     dynent = eventstruct.ent;
     if (!isdefined(dynent.hitindex)) {
         return;

@@ -1197,11 +1197,11 @@ function event_handler[event_e9b4bb47] function_7dba9a1(eventstruct) {
     }
 }
 
-// Namespace callback/event_9a0e3f85
+// Namespace callback/player_boast
 // Params 1, eflags: 0x40
 // Checksum 0x261a9ab8, Offset: 0x2f68
 // Size: 0x74
-function event_handler[event_9a0e3f85] function_3b159f77(eventstruct) {
+function event_handler[player_boast] function_3b159f77(eventstruct) {
     self endon(#"disconnect");
     if (isdefined(level.var_4268159)) {
         [[ level.var_4268159 ]](eventstruct.gestureindex, eventstruct.animlength);
@@ -1623,11 +1623,11 @@ function event_handler[bot_stop_update] codecallback_botstopupdate(eventstruct) 
     self [[ level.callbackbotshutdown ]]();
 }
 
-// Namespace callback/event_b100b913
+// Namespace callback/voice_event
 // Params 1, eflags: 0x40
 // Checksum 0x25fb09ce, Offset: 0x45d8
 // Size: 0x34
-function event_handler[event_b100b913] function_451258ba(eventstruct) {
+function event_handler[voice_event] function_451258ba(eventstruct) {
     self voice_events::function_c710099c(eventstruct.event, eventstruct.params);
 }
 

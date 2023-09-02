@@ -3,9 +3,9 @@
 #using scripts\mp_common\item_world.gsc;
 #using scripts\core_common\player\player_stats.gsc;
 
-#namespace namespace_9723fa3;
+#namespace wz_holiday;
 
-// Namespace namespace_9723fa3/namespace_9723fa3
+// Namespace wz_holiday/wz_holiday
 // Params 0, eflags: 0x2
 // Checksum 0x3d117121, Offset: 0xe8
 // Size: 0xb2
@@ -14,7 +14,7 @@ function autoexec __init() {
     level.var_7b65cb7 = isdefined(getgametypesetting(#"hash_2e25d475b271a700")) ? getgametypesetting(#"hash_2e25d475b271a700") : 0;
 }
 
-// Namespace namespace_9723fa3/level_init
+// Namespace wz_holiday/level_init
 // Params 1, eflags: 0x40
 // Checksum 0xe6ec58b4, Offset: 0x1a8
 // Size: 0x54
@@ -24,7 +24,7 @@ function event_handler[level_init] main(eventstruct) {
     level thread function_af9a5cd8();
 }
 
-// Namespace namespace_9723fa3/namespace_9723fa3
+// Namespace wz_holiday/wz_holiday
 // Params 0, eflags: 0x1 linked
 // Checksum 0xf1658058, Offset: 0x208
 // Size: 0x1e8
@@ -45,7 +45,7 @@ function function_af9a5cd8() {
     }
 }
 
-// Namespace namespace_9723fa3/namespace_9723fa3
+// Namespace wz_holiday/wz_holiday
 // Params 0, eflags: 0x1 linked
 // Checksum 0xcd29c471, Offset: 0x3f8
 // Size: 0xe8
@@ -61,7 +61,7 @@ function function_68b9a530() {
     }
 }
 
-// Namespace namespace_9723fa3/namespace_9723fa3
+// Namespace wz_holiday/wz_holiday
 // Params 0, eflags: 0x1 linked
 // Checksum 0xaf1b33ee, Offset: 0x4e8
 // Size: 0x6fc

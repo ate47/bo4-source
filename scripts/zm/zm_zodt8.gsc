@@ -143,7 +143,7 @@ function event_handler[level_init] main(eventstruct) {
     level thread function_255747bd();
     level thread function_172ac1b5();
     zm_custom::function_a00576dd(&function_7722c6f0, &function_389e7c22, &function_c8ce0a17);
-    function_91a085a8();
+    water_init();
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -824,7 +824,7 @@ function function_531fd4b6() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x9313e56d, Offset: 0x50d8
 // Size: 0x304
-function function_91a085a8() {
+function water_init() {
     level.e_clip_water_fore = getent("e_clip_water_fore", "targetname");
     level.var_af197ec = struct::get("s_water_height_flooded_fore").origin[2];
     level.var_1b85943e = struct::get("s_water_height_drained_fore").origin[2];
@@ -833,10 +833,10 @@ function function_91a085a8() {
     level.var_7836c664 = struct::get("s_water_height_drained_aft").origin[2];
     level.e_clip_water_fore.origin = (level.e_clip_water_fore.origin[0], level.e_clip_water_fore.origin[1], level.var_af197ec);
     level.e_clip_water_fore.angles = (level.e_clip_water_fore.angles[0], level.e_clip_water_fore.angles[1], 0);
-    level.var_2416cb53 = function_d3786e2e(level.e_clip_water_fore getentitynumber());
+    level.forewater = function_d3786e2e(level.e_clip_water_fore getentitynumber());
     level.e_clip_water_aft.origin = (level.e_clip_water_aft.origin[0], level.e_clip_water_aft.origin[1], level.var_d47c96d5);
     level.e_clip_water_aft.angles = (level.e_clip_water_aft.angles[0], level.e_clip_water_aft.angles[1], 0);
-    level.var_3ec4f77d = function_d3786e2e(level.e_clip_water_aft getentitynumber());
+    level.aftwater = function_d3786e2e(level.e_clip_water_aft getentitynumber());
     level.e_clip_water_fore clientfield::increment("update_wave_water_height", 1);
     level.e_clip_water_aft clientfield::increment("update_wave_water_height", 1);
     level flag::set(#"water_initialized");

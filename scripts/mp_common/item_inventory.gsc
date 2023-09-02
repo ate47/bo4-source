@@ -222,7 +222,7 @@ function private function_e72d56f9(weapon, usecount) {
 // Params 1, eflags: 0x44
 // Checksum 0x315a8fc0, Offset: 0xf20
 // Size: 0x82
-function event_handler[event_1294e3a7] private function_9e4c68e2(eventstruct) {
+function private event_handler[event_1294e3a7] function_9e4c68e2(eventstruct) {
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self) && self function_76646dad(eventstruct.weapon)) {
         self.var_cd3bc45b = eventstruct.weapon;
     }
@@ -242,7 +242,7 @@ function event_handler[event_eb7e11e4] function_2f677e9d(eventstruct) {
 // Params 1, eflags: 0x44
 // Checksum 0x33e1c57d, Offset: 0x1040
 // Size: 0x7bc
-function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
+function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self) && self function_76646dad(eventstruct.weapon)) {
         self.var_8181d952 = eventstruct.weapon;
         var_994e5c9a = 0;
@@ -336,7 +336,7 @@ function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
 // Params 1, eflags: 0x44
 // Checksum 0x52b806db, Offset: 0x1808
 // Size: 0xaa
-function event_handler[weapon_switch_started] private function_f5883bb1(eventstruct) {
+function private event_handler[weapon_switch_started] function_f5883bb1(eventstruct) {
     self.next_weapon = undefined;
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self)) {
         if (eventstruct.weapon.isprimary && eventstruct.weapon != eventstruct.last_weapon) {
@@ -349,7 +349,7 @@ function event_handler[weapon_switch_started] private function_f5883bb1(eventstr
 // Params 1, eflags: 0x44
 // Checksum 0xbd907045, Offset: 0x18c0
 // Size: 0x20a
-function event_handler[weapon_change] private function_a8c42ee4(eventstruct) {
+function private event_handler[weapon_change] function_a8c42ee4(eventstruct) {
     if (sessionmodeiswarzonegame() && isplayer(self) && isalive(self)) {
         if (isdefined(self.var_8181d952)) {
             weapon = self.var_8181d952;

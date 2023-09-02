@@ -16,9 +16,9 @@ function event_handler[gametype_init] main(eventstruct) {
     clientfield::register("allplayers", "hideTeamPlayer", 16000, 2, "int", &function_abaafe9a, 0, 0);
     clientfield::register("allplayers", "pingHighlight", 16000, 1, "int", &function_3c95ba87, 0, 0);
     clientfield::register("toplayer", "PROP.change_prop", 16000, 1, "int", &propchange, 0, 0);
-    clientfield::register("toplayer", "PROP.cameraHeight", 16000, 8, "int", &function_c7691337, 0, 0);
-    clientfield::register("toplayer", "PROP.cameraRange", 16000, 8, "int", &function_d8273603, 0, 0);
-    clientfield::register("toplayer", "PROP.hide_prop", 16000, 1, "int", &function_65208afd, 0, 0);
+    clientfield::register("toplayer", "PROP.cameraHeight", 16000, 8, "int", &cameraheightchange, 0, 0);
+    clientfield::register("toplayer", "PROP.cameraRange", 16000, 8, "int", &camerarangechange, 0, 0);
+    clientfield::register("toplayer", "PROP.hide_prop", 16000, 1, "int", &hideprop, 0, 0);
     clientfield::register("worlduimodel", "hudItems.war.attackingTeam", 16000, 2, "int", undefined, 0, 1);
     clientfield::register("clientuimodel", "hudItems.numPropsAlive", 16000, 4, "int", undefined, 0, 1);
     clientfield::register("clientuimodel", "hudItems.numPropConcusses", 16000, 2, "int", undefined, 0, 1);
@@ -27,8 +27,8 @@ function event_handler[gametype_init] main(eventstruct) {
     clientfield::register("toplayer", "realtime_multiplay", 16000, 1, "int", &function_a1b40aa4, 0, 1);
     level.hide_timer = mp_prop_timer::register("HideTimer");
     level.prop_controls = mp_prop_controls::register("PropControls");
-    callback::on_localplayer_spawned(&function_357207b9);
-    level.var_20ece392 = &function_aa5f176f;
+    callback::on_localplayer_spawned(&onlocalplayerspawned);
+    level.var_20ece392 = &highlightprop;
     thread function_2691bc1b();
 }
 
@@ -36,7 +36,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Params 1, eflags: 0x0
 // Checksum 0xc659ac7f, Offset: 0x630
 // Size: 0xcc
-function function_357207b9(localclientnum) {
+function onlocalplayerspawned(localclientnum) {
     level notify("localPlayerSpectatingEnd" + localclientnum);
     if (!self function_b9fceaaf(localclientnum)) {
         function_da64790f(localclientnum);
@@ -147,7 +147,7 @@ function function_b5a6504c(localclientnum) {
 // Params 7, eflags: 0x0
 // Checksum 0x193dbf5f, Offset: 0xc50
 // Size: 0xc4
-function function_aa5f176f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function highlightprop(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 0) {
         self notify(#"hash_3fe34dcd29fd6a0f");
         self duplicate_render::update_dr_flag(localclientnum, "prop_ally", 0);
@@ -218,7 +218,7 @@ function function_29561f83(localclientnum, var_dc9f0c39) {
 // Params 7, eflags: 0x0
 // Checksum 0x1c6b0ce4, Offset: 0x1120
 // Size: 0xfc
-function function_65208afd(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function hideprop(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     localplayer = function_5c10bd79(localclientnum);
     var_6955388c = newval && isdefined(self) && self == localplayer;
     if (var_6955388c) {
@@ -259,7 +259,7 @@ function propchange(localclientnum, oldval, newval, bnewent, binitialsnap, field
 // Params 7, eflags: 0x0
 // Checksum 0x767a1aa, Offset: 0x1360
 // Size: 0x5c
-function function_c7691337(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function cameraheightchange(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     function_ac297091(localclientnum, newval * 10);
 }
 
@@ -267,7 +267,7 @@ function function_c7691337(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x0
 // Checksum 0x6c3d8e26, Offset: 0x13c8
 // Size: 0x5c
-function function_d8273603(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function camerarangechange(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     function_d69242bb(localclientnum, newval * 10);
 }
 

@@ -1366,7 +1366,7 @@ function watchspecialgrenadethrow() {
         res = self waittill(#"grenade_fire");
         grenade = res.projectile;
         weapon = res.weapon;
-        self thread function_6eadaf78(grenade, weapon);
+        self thread trackgrenade(grenade, weapon);
         self.thrownspecialcount = self.thrownspecialcount + 1;
     }
 }
@@ -1375,7 +1375,7 @@ function watchspecialgrenadethrow() {
 // Params 2, eflags: 0x0
 // Checksum 0x26aefc5b, Offset: 0x4b38
 // Size: 0x124
-function function_6eadaf78(grenade, weapon) {
+function trackgrenade(grenade, weapon) {
     level endon(#"game_ended");
     self endon(#"disconnect");
     res = undefined;

@@ -393,8 +393,8 @@ function private function_f78e62a8() {
             continue;
         }
         players = getplayers();
-        var_74d1ffb1 = arraygetclosest(tacpoint.origin, players, 120);
-        if (isdefined(var_74d1ffb1)) {
+        close_player = arraygetclosest(tacpoint.origin, players, 120);
+        if (isdefined(close_player)) {
             continue;
         }
         if (!ispointonnavmesh(tacpoint.origin, self)) {

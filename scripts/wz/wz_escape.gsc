@@ -504,7 +504,7 @@ function function_e8f0335f() {
 // Params 1, eflags: 0x44
 // Checksum 0x5d9d86dc, Offset: 0x2a08
 // Size: 0x2b0
-function event_handler[event_9673dc9a] private function_f9b68fd7(eventstruct) {
+function private event_handler[event_9673dc9a] function_f9b68fd7(eventstruct) {
     /#
         if (!getdvarint(#"hash_69592e1b2d05fb21", 0)) {
             return;

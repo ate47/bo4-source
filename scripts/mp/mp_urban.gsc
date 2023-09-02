@@ -102,7 +102,7 @@ function on_end_game() {
         level.var_f3754f02 = [];
     }
     foreach (scene in level.var_f3754f02) {
-        scene.var_47dbac3f = 0;
+        scene.barrage = 0;
     }
     var_968ca543 = struct::get("p8_fxanim_mp_urban_remote_tank_armor_test_bundle", "scriptbundlename");
     if (isdefined(var_968ca543)) {
@@ -148,14 +148,14 @@ function function_50059d86() {
 // Size: 0xb0
 function function_d611b306() {
     self.script_play_multiple = 1;
-    self.var_47dbac3f = 1;
+    self.barrage = 1;
     wait(randomfloatrange(8, 35));
     i = 0;
-    while (self.var_47dbac3f) {
+    while (self.barrage) {
         self scene::play();
         i++;
         if (i == 2) {
-            self.var_47dbac3f = 0;
+            self.barrage = 0;
             break;
         }
         wait(randomfloatrange(45, 200));

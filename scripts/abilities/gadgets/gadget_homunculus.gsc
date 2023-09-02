@@ -125,7 +125,7 @@ function private function_62318121(homunculus, ent) {
 // Params 1, eflags: 0x44
 // Checksum 0xb27a48ff, Offset: 0x670
 // Size: 0x57c
-function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
+function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
     if (eventstruct.weapon.name == #"homunculus") {
         grenade = eventstruct.projectile;
         grenade ghost();

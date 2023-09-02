@@ -717,7 +717,7 @@ function function_ca108f41(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
         level.var_2ec91d6e[var_a257f75d] = -1;
         return;
     }
-    e_origin thread function_70d8acdd();
+    e_origin thread shrink_globe();
     e_trigger = spawn("trigger_radius", v_origin, 512 | 1, 128, 128);
     e_trigger thread function_e607e26e(e_attacker);
     e_attacker thread function_9b512839(e_trigger);
@@ -763,7 +763,7 @@ function function_9b512839(e_trigger) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xd74eaf1a, Offset: 0x35d0
 // Size: 0x8c
-function function_70d8acdd() {
+function shrink_globe() {
     waitframe(1);
     self clientfield::set("" + #"hash_64f62d9a3170948e", 1);
     self waittill(#"hash_775ddc8cde7b36e4");

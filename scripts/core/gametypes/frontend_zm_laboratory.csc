@@ -1715,9 +1715,9 @@ function function_24222bb4(localclientnum, a_ents) {
 function function_de0d6843(localclientnum, a_ents) {
     self endon(#"hash_200ae59dc85ae6f");
     function_4df2b792(localclientnum, a_ents[#"bottle1"], a_ents[#"bottle2"], a_ents[#"bottle3"]);
-    a_ents[#"bottle1"] thread function_2c99b5c7(localclientnum, #"bottle1_dropped", #"bottle1_start_fill", 0.5, 1);
-    a_ents[#"bottle2"] thread function_2c99b5c7(localclientnum, #"bottle2_dropped", #"bottle2_start_fill", 0.6, 2);
-    a_ents[#"bottle3"] thread function_2c99b5c7(localclientnum, #"bottle3_dropped", #"bottle3_start_fill", 0.7, 3);
+    a_ents[#"bottle1"] thread fill_bottle(localclientnum, #"bottle1_dropped", #"bottle1_start_fill", 0.5, 1);
+    a_ents[#"bottle2"] thread fill_bottle(localclientnum, #"bottle2_dropped", #"bottle2_start_fill", 0.6, 2);
+    a_ents[#"bottle3"] thread fill_bottle(localclientnum, #"bottle3_dropped", #"bottle3_start_fill", 0.7, 3);
 }
 
 // Namespace zm_laboratory/namespace_6f8011a
@@ -1756,7 +1756,7 @@ function function_4df2b792(localclientnum, var_56448842, var_cf59fa73, var_bb17d
 // Params 5, eflags: 0x1 linked
 // Checksum 0x77355d51, Offset: 0xa970
 // Size: 0x33c
-function function_2c99b5c7(localclientnum, var_1a44a9d9, var_6d1c3912, var_7046a27c, var_6cf17519) {
+function fill_bottle(localclientnum, var_1a44a9d9, var_6d1c3912, var_7046a27c, var_6cf17519) {
     self endon(#"death");
     level endon(array(#"laboratory_closed", #"hash_1d604ddf352ddcca"));
     var_92ecfb94 = isdefined(self.var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? self.var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin";

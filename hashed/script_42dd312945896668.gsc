@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 // Checksum 0xf229a58c, Offset: 0x568
 // Size: 0x584
 function __init__() {
-    clientfield::register("scriptmover", "" + #"hash_64f62d9a3170948e", 1, 1, "int", &function_70d8acdd, 0, 0);
+    clientfield::register("scriptmover", "" + #"hash_64f62d9a3170948e", 1, 1, "int", &shrink_globe, 0, 0);
     clientfield::register("actor", "" + #"hash_6848ec3d200d443b", 1, 1, "int", &shrink_zombie, 0, 0);
     clientfield::register("vehicle", "" + #"hash_6848ec3d200d443b", 1, 1, "int", &shrink_zombie, 0, 0);
     clientfield::register("actor", "" + #"hash_6f59675863e19a50", 1, 1, "int", &function_d8cf1bd7, 0, 0);
@@ -46,7 +46,7 @@ function __init__() {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x278f518b, Offset: 0xaf8
 // Size: 0x1cc
-function function_70d8acdd(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function shrink_globe(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     v_up = vectorscale((1, 0, 0), 360);
     v_forward = vectorscale((0, 0, 1), 360);
     if (newval == 1) {

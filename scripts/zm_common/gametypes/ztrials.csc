@@ -49,7 +49,7 @@ function onstartgametype() {
 // Params 1, eflags: 0x44
 // Checksum 0x24c667c8, Offset: 0x1a8
 // Size: 0x5c
-function event_handler[event_b72c1844] private function_df05c5d(eventstruct) {
+function private event_handler[event_b72c1844] function_df05c5d(eventstruct) {
     if (namespace_fcd611c3::is_active() && self namespace_fcd611c3::function_26f124d8()) {
         return;
     }

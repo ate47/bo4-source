@@ -25,7 +25,7 @@ function autoexec __init__system__() {
 // Checksum 0x3983145c, Offset: 0x218
 // Size: 0x19c
 function __init__() {
-    clientfield::register("toplayer", "nosferatu_damage_fx", 8000, 1, "counter", &function_b8a868db, 0, 0);
+    clientfield::register("toplayer", "nosferatu_damage_fx", 8000, 1, "counter", &nosferatudamagefx, 0, 0);
     clientfield::register("actor", "nosferatu_spawn_fx", 8000, 1, "counter", &nosferatu_spawn_fx, 0, 0);
     clientfield::register("actor", "nfrtu_silver_hit_fx", 8000, 1, "counter", &function_6b82c26d, 0, 0);
     clientfield::register("actor", "summon_nfrtu", 8000, 1, "int", &function_4207e678, 0, 0);
@@ -105,7 +105,7 @@ function private function_5ec9aadb(localclientnum) {
 // Params 7, eflags: 0x5 linked
 // Checksum 0xfa4fd6ff, Offset: 0x778
 // Size: 0x74
-function private function_b8a868db(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
+function private nosferatudamagefx(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue && self util::function_50ed1561(localclientnum)) {
         self thread function_3468dc45(localclientnum);
     }

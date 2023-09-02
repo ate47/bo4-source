@@ -342,7 +342,7 @@ function use_dynent(dynent, activator) {
 // Params 1, eflags: 0x44
 // Checksum 0x83f25af7, Offset: 0x1680
 // Size: 0x55c
-function event_handler[event_9673dc9a] private function_3981d015(eventstruct) {
+function private event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     dynent = eventstruct.ent;
     var_16a4afdc = eventstruct.state;
     bundle = function_489009c1(dynent);
@@ -395,7 +395,7 @@ function event_handler[event_9673dc9a] private function_3981d015(eventstruct) {
 // Params 1, eflags: 0x44
 // Checksum 0xbfeb6d4, Offset: 0x1be8
 // Size: 0x10c
-function event_handler[event_9e981c4] private function_ff8b3908(eventstruct) {
+function private event_handler[event_9e981c4] function_ff8b3908(eventstruct) {
     dynent = eventstruct.ent;
     bundle = function_489009c1(dynent);
     var_1a5e0c43 = isdefined(eventstruct.clientside) && eventstruct.clientside;

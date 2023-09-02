@@ -359,8 +359,8 @@ function function_6c529d0b(beacon, objective, team, var_d1653c48, hinttext, onus
 // Size: 0x422
 function private function_e67b6bd(player) {
     spawnbeacon = self.var_5ecd70;
-    spawnbeacon.var_2584b5de = (isdefined(spawnbeacon.var_2584b5de) ? spawnbeacon.var_2584b5de : 0) + float(gettime() - (isdefined(spawnbeacon.var_1df612a0) ? spawnbeacon.var_1df612a0 : spawnbeacon.birthtime)) / 1000;
-    remainingtime = (isdefined(level.spawnbeaconsettings.settingsbundle.timeout) ? level.spawnbeaconsettings.settingsbundle.timeout : 0) - spawnbeacon.var_2584b5de;
+    spawnbeacon.alivetime = (isdefined(spawnbeacon.alivetime) ? spawnbeacon.alivetime : 0) + float(gettime() - (isdefined(spawnbeacon.var_1df612a0) ? spawnbeacon.var_1df612a0 : spawnbeacon.birthtime)) / 1000;
+    remainingtime = (isdefined(level.spawnbeaconsettings.settingsbundle.timeout) ? level.spawnbeaconsettings.settingsbundle.timeout : 0) - spawnbeacon.alivetime;
     if (remainingtime <= (isdefined(level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4) ? level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4 : 0)) {
         return;
     }

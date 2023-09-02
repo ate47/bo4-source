@@ -11,7 +11,7 @@
 // Params 0, eflags: 0x6
 // Checksum 0x3fe2e82b, Offset: 0xf8
 // Size: 0x44
-function autoexec private init() {
+function private autoexec init() {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
             adddebugcommand("<unknown string>");

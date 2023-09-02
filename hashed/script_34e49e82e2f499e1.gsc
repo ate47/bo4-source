@@ -146,7 +146,7 @@ function function_dabe7910() {
 // Params 1, eflags: 0x44
 // Checksum 0xeedbc2d1, Offset: 0xba0
 // Size: 0x16c
-function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
+function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
     if (level.inprematchperiod) {
         return;
     }

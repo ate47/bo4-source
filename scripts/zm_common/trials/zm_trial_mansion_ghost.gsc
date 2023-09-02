@@ -124,7 +124,7 @@ function private function_eb301e1b() {
         nd_start = getvehiclenode(var_c98c4943 + "_trail_start_node", "targetname");
         level.e_ghost.e_mover thread scene::play(#"hash_1d324e9f967f0848", level.e_ghost);
         level.e_ghost thread scene::play(#"hash_1d324e9f967f0848", level.e_ghost.mdl_head);
-        function_1aa8f593(20);
+        start_timers(20);
         level.e_ghost.e_mover thread scene::play(#"hash_d278eff0ca38301", level.e_ghost);
         level.e_ghost thread scene::play(#"hash_d278eff0ca38301", level.e_ghost.mdl_head);
         level.e_ghost.e_mover moveto(nd_start.origin, 20);
@@ -140,7 +140,7 @@ function private function_eb301e1b() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x3c903e38, Offset: 0xb30
 // Size: 0xfe
-function function_1aa8f593(n_timer) {
+function start_timers(n_timer) {
     foreach (player in getplayers()) {
         if (!level.var_f995ece6 zm_trial_timer::is_open(player)) {
             level.var_f995ece6 zm_trial_timer::open(player);

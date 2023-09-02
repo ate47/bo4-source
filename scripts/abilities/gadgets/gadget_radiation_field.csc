@@ -298,7 +298,7 @@ function function_2e24ef27(owner) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xf5cf9206, Offset: 0x1460
 // Size: 0x374
-function function_a225797d(localclientnum, var_7e4d34a7, var_377aab2f) {
+function function_a225797d(localclientnum, var_7e4d34a7, phase2) {
     if (isdefined(self) && isdefined(self.owner)) {
         startpos = self.owner gettagorigin("tag_fx");
         if (!isdefined(startpos)) {
@@ -314,7 +314,7 @@ function function_a225797d(localclientnum, var_7e4d34a7, var_377aab2f) {
     if (isdefined(level.var_17dcd732[localclientnum][var_7e4d34a7])) {
         level.var_17dcd732[localclientnum][var_7e4d34a7] util::waittill_dobj(localclientnum);
     }
-    if (var_377aab2f) {
+    if (phase2) {
         if (self function_83973173()) {
             level.var_d0df06e9[localclientnum][var_7e4d34a7] = util::playfxontag(localclientnum, "weapon/fx8_hero_sig_radiation_phase2_friend_v4", level.var_17dcd732[localclientnum][var_7e4d34a7], "tag_origin");
         } else {
@@ -327,14 +327,14 @@ function function_a225797d(localclientnum, var_7e4d34a7, var_377aab2f) {
     }
     setfxteam(localclientnum, level.var_d0df06e9[localclientnum][var_7e4d34a7], self.team);
     level.var_17dcd732[localclientnum][var_7e4d34a7] thread function_2e24ef27(self.owner);
-    level.var_17dcd732[localclientnum][var_7e4d34a7] thread function_cabcef4(localclientnum, level.var_d0df06e9[localclientnum][var_7e4d34a7]);
+    level.var_17dcd732[localclientnum][var_7e4d34a7] thread cleanup_fx(localclientnum, level.var_d0df06e9[localclientnum][var_7e4d34a7]);
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
 // Params 2, eflags: 0x1 linked
 // Checksum 0x32384891, Offset: 0x17e0
 // Size: 0x5c
-function function_cabcef4(localclientnum, fx) {
+function cleanup_fx(localclientnum, fx) {
     self waittill(#"delete", #"death");
     if (isdefined(fx)) {
         stopfx(localclientnum, fx);

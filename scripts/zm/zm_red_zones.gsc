@@ -476,7 +476,7 @@ function function_17ac86f7() {
     self thread zm_audio::function_713192b1(#"hash_70363674b3e9a47c", #"hash_237b36f7aeb1a896");
     self thread zm_audio::function_713192b1(#"hash_6268d50ff53b29d4", #"hash_4576fb3345db827b");
     self thread zm_audio::function_713192b1(#"hash_27a6b15e094c02f1", #"bathhouse");
-    self thread zm_audio::function_713192b1(#"hash_4785d4d350f36326", #"hash_622639b863ef6669");
+    self thread zm_audio::function_713192b1(#"hash_4785d4d350f36326", #"treasur");
     self thread zm_audio::function_713192b1(#"hash_12a9743a3b9f2236", #"hash_2d65510066aca8d");
     self thread zm_audio::function_713192b1(#"hash_303ce0aa4cf6a23e", #"hash_1b3475683eff03ae");
     self thread function_f7a190a8(undefined, 60, #"hash_106d425e41e8c240", #"temp_apollo");

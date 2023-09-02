@@ -37,7 +37,7 @@ function __init__() {
 // Params 1, eflags: 0x44
 // Checksum 0xec48a7b0, Offset: 0x1c0
 // Size: 0x154
-function event_handler[grenade_fire] private function_4776caf4(eventstruct) {
+function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
     if (level.inprematchperiod || !level.var_5805dc3b) {
         return;
     }

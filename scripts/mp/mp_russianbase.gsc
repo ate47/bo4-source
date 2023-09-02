@@ -149,8 +149,8 @@ function function_4dd23d6e() {
     exploder::exploder("fxexp_gantry_on");
     exploder::exploder("fxexp_controlroom_on");
     exploder::exploder("fxexp_cleanroom_on");
-    crane.var_60cf65bc = getent(end_spot.target, "targetname");
-    crane.var_60cf65bc callback::on_trigger(&function_147c1726);
+    crane.kill_trig = getent(end_spot.target, "targetname");
+    crane.kill_trig callback::on_trigger(&function_147c1726);
     foreach (button in crane.buttons) {
         button.mdl_gameobject.crane = crane;
         button.mdl_gameobject gameobjects::set_onuse_event(&function_80c5243b);
@@ -185,11 +185,11 @@ function function_80c5243b(e_activator) {
     crane playsound("evt_gantry_start");
     wait(3.35);
     if (var_3d17caa5) {
-        crane.var_60cf65bc.var_2563dc55 = 1;
+        crane.kill_trig.var_2563dc55 = 1;
     }
     wait(0.65);
     crane.veh_kill.var_1654952d = 0;
-    crane.var_60cf65bc.var_2563dc55 = 0;
+    crane.kill_trig.var_2563dc55 = 0;
     crane function_e0954c11();
     exploder::stop_exploder("fxexp_gantry_off");
     exploder::exploder("fxexp_gantry_on");

@@ -136,8 +136,8 @@ function function_f7dd380e() {
     }
     do {
         waitframe(5);
-        var_fb0e4a69 = function_efa3251f();
-    } while(!var_fb0e4a69);
+        reached_score = function_efa3251f();
+    } while(!reached_score);
     wait(3);
 }
 
@@ -302,7 +302,7 @@ function function_6edeb4c2(rocket) {
     level endon(#"game_ended");
     rocket endon(#"stop_damage", #"death");
     while (1) {
-        self function_230caae(self.var_a9572efa);
+        self kill_equipment(self.var_a9572efa);
         waitframe(5);
     }
 }
@@ -413,7 +413,7 @@ function is_equipment(entity) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x1fe95c7d, Offset: 0x1d70
 // Size: 0x26e
-function function_230caae(var_a9572efa) {
+function kill_equipment(var_a9572efa) {
     self endon(#"death");
     level endon(#"start_warzone");
     if (!isdefined(var_a9572efa)) {
