@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/systems/gib.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\core_common\ai\systems\gib.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_weap_freezegun;
 
@@ -233,7 +233,7 @@ function function_9babbcd9(localclientnum) {
         for (i = 0; i < keys.size; i++) {
             function_90674103(localclientnum, keys[i]);
         }
-        localclientnum = [];
+        self.var_dc23481f[localclientnum] = undefined;
     }
 }
 

@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_pack_a_punch_util.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/activecamo_shared.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_pack_a_punch_util.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\activecamo_shared.gsc;
 
 #namespace zm_camos;
 

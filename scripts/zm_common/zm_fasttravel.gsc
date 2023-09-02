@@ -1,28 +1,28 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/zm_common/trials/zm_trial_disable_buys.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/zm_common/zm_contracts.gsc;
-#include scripts/zm_common/zm_challenges.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\zm_common\zm_contracts.gsc;
+#using scripts\zm_common\zm_challenges.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace zm_fasttravel;
 
@@ -613,7 +613,7 @@ function function_78e3c2ba(var_5817f611) {
     level endon(#"end_game");
     level.var_d03afa3[var_5817f611] = 1;
     util::wait_network_frame(2);
-    var_5817f611 = [];
+    level.var_d03afa3[var_5817f611] = undefined;
 }
 
 // Namespace zm_fasttravel/zm_fasttravel

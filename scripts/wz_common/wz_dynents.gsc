@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/trophy_system.gsc;
-#include scripts/weapons/sensor_dart.gsc;
-#include scripts/abilities/gadgets/gadget_homunculus.gsc;
-#include scripts/abilities/gadgets/gadget_cymbal_monkey.gsc;
-#include scripts/abilities/gadgets/gadget_tripwire.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/dynent_world.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\weapons\trophy_system.gsc;
+#using scripts\weapons\sensor_dart.gsc;
+#using scripts\abilities\gadgets\gadget_homunculus.gsc;
+#using scripts\abilities\gadgets\gadget_cymbal_monkey.gsc;
+#using scripts\abilities\gadgets\gadget_tripwire.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\dynent_world.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace wz_dynents;
 

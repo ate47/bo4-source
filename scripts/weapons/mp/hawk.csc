@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/math_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\math_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace hawk_mp;
 
@@ -316,14 +316,14 @@ function function_5a1bf101(localclientnum) {
         var_ca5159f1 = anglestoforward(cam_angles);
         for (ti = 0; ti < 6; ti++) {
             if (getuimodelvalue(var_ebf5b862[ti]) == 0) {
-                ti = [];
+                var_6c8b920a[ti] = undefined;
             } else {
                 var_8347ac20 = getuimodelvalue(var_15d793e8[ti]);
                 target_player = getentbynum(localclientnum, var_8347ac20);
                 if (!isdefined(target_player) || !isplayer(target_player)) {
-                    ti = [];
+                    var_6c8b920a[ti] = undefined;
                 } else if (vectordot(var_ca5159f1, target_player.origin - var_1d7ce7ba) < 0) {
-                    ti = [];
+                    var_6c8b920a[ti] = undefined;
                 } else {
                     if (!isdefined(var_6c8b920a[ti])) {
                         var_6c8b920a[ti] = now - 100 - 10;

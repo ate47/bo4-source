@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_notetracks.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_utility.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace zm_behavior_utility;
 

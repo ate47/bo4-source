@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_perks.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_perks.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace zm_perk_stronghold;
 
@@ -82,7 +82,7 @@ function function_2400dd1d(localclientnum, oldval, newval, bnewent, binitialsnap
     } else {
         if (isdefined(self.var_f9c892e3[localclientnum])) {
             deletefx(localclientnum, self.var_f9c892e3[localclientnum], 0);
-            localclientnum = [];
+            self.var_f9c892e3[localclientnum] = undefined;
         }
         if (isdefined(self.var_2ec16150)) {
             self playsound(localclientnum, #"hash_73b66a25abec1fe4");

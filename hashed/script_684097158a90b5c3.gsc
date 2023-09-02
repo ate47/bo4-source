@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/powerup/zm_powerup_nuke.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_round_spawning.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/ai/zm_ai_utility.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include script_2c5daa95f8fec03c;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\zm\powerup\zm_powerup_nuke.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_round_spawning.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\ai\zm_ai_utility.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using script_2c5daa95f8fec03c;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace zombie_gladiator_util;
 

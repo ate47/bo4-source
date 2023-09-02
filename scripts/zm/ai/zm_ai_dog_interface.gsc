@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/zm/ai/zm_ai_dog.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\zm\ai\zm_ai_dog.gsc;
 
 #namespace zm_ai_dog_interface;
 

@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_player.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/damage.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_player.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\damage.gsc;
 
 #namespace globallogic_scriptmover;
 

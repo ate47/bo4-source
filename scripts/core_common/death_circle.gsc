@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/core_common/map.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\core_common\map.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace death_circle;
 

@@ -1,37 +1,37 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/spawnbeacon.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/gametypes/spawning.gsc;
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/gametypes/outcome.gsc;
-#include scripts/mp_common/gametypes/hostmigration.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include script_4c8dba49908aecc2;
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/mp_common/challenges.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/sound_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/persistence_shared.gsc;
-#include scripts/core_common/medals_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/demo_shared.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\spawnbeacon.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\gametypes\spawning.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\gametypes\outcome.gsc;
+#using scripts\mp_common\gametypes\hostmigration.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using script_4c8dba49908aecc2;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\mp_common\challenges.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\persistence_shared.gsc;
+#using scripts\core_common\medals_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\demo_shared.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
 
 #namespace koth;
 
@@ -57,15 +57,15 @@ function event_handler[gametype_init] main(eventstruct) {
     level.var_c605eb2a = &function_38874bf6;
     clientfield::register("world", "hardpoint", 1, 5, "int");
     clientfield::register("world", "hardpointteam", 1, 5, "int");
-    level.zoneautomovetime = getgametypesetting(#"autoDestroyTime");
-    level.zonespawntime = getgametypesetting(#"objectiveSpawnTime");
+    level.zoneautomovetime = getgametypesetting(#"hash_444b81eab0b09aa1");
+    level.zonespawntime = getgametypesetting(#"hash_6090fb2501533436");
     level.kothmode = getgametypesetting(#"kothmode");
     level.capturetime = getgametypesetting(#"capturetime");
-    level.destroyTime = getgametypesetting(#"destroyTime");
+    level.destroyTime = getgametypesetting(#"hash_2668df77d6e3dae4");
     level.delayplayer = getgametypesetting(#"delayplayer");
-    level.randomzonespawn = getgametypesetting(#"randomObjectiveLocations");
-    level.scorePerPlayer = getgametypesetting(#"scorePerPlayer");
-    level.timePausesWhenInZone = getgametypesetting(#"timePausesWhenInZone");
+    level.randomzonespawn = getgametypesetting(#"hash_16223f5db756a4bf");
+    level.scorePerPlayer = getgametypesetting(#"hash_5d39db2666484b69");
+    level.timePausesWhenInZone = getgametypesetting(#"hash_4b491f67e68ad5de");
     level.b_allow_vehicle_proximity_pickup = 1;
     level.var_c85170d1 = 1;
     globallogic_spawn::addsupportedspawnpointtype("koth");
@@ -191,7 +191,7 @@ function resume_time() {
 // Size: 0x56
 function updategametypedvars() {
     level.playercapturelpm = getgametypesetting(#"maxplayereventsperminute");
-    level.timePausesWhenInZone = getgametypesetting(#"timePausesWhenInZone");
+    level.timePausesWhenInZone = getgametypesetting(#"hash_4b491f67e68ad5de");
 }
 
 // Namespace koth/koth
@@ -982,7 +982,7 @@ function shufflezones() {
                     continue;
                 }
                 level.zonespawnqueue[level.zonespawnqueue.size] = spawnqueue[zone];
-                zone = [];
+                spawnqueue[zone] = undefined;
                 continue;
             }
             valid_zones++;

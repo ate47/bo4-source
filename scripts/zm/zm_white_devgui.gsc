@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_white_mee.gsc;
-#include script_724752ab26bff81b;
-#include scripts/zm/zm_white_special_rounds.gsc;
-#include scripts/zm_common/zm_ui_inventory.gsc;
-#include script_ab862743b3070a;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/core_common/flag_shared.gsc;
+#using scripts\zm\zm_white_mee.gsc;
+#using script_724752ab26bff81b;
+#using scripts\zm\zm_white_special_rounds.gsc;
+#using scripts\zm_common\zm_ui_inventory.gsc;
+#using script_ab862743b3070a;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\core_common\flag_shared.gsc;
 
 #namespace zm_white_devgui;
 

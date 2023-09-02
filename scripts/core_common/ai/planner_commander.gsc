@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/ai/strategic_command.gsc;
-#include scripts/core_common/ai/planner_squad.gsc;
-#include scripts/core_common/ai/planner_commander_interface.gsc;
-#include scripts/core_common/ai/commander_util.gsc;
-#include scripts/core_common/ai/systems/planner.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\ai\strategic_command.gsc;
+#using scripts\core_common\ai\planner_squad.gsc;
+#using scripts\core_common\ai\planner_commander_interface.gsc;
+#using scripts\core_common\ai\commander_util.gsc;
+#using scripts\core_common\ai\systems\planner.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
 
 #namespace planner_commander;
 
@@ -116,7 +116,7 @@ function private function_12b9fafb(commander, &blackboard) {
         targets[priority] = array();
     }
     gameobjects = blackboard[#"gameobjects"];
-    #"gameobjects" = [];
+    blackboard[#"gameobjects"] = undefined;
     foreach (gameobject in gameobjects) {
         priority = gameobject[#"strategy"].("doppelbotspriority");
         targetsize = targets[priority].size;
@@ -136,7 +136,7 @@ function private function_12b9fafb(commander, &blackboard) {
         return;
     }
     missioncomponents = blackboard[#"missioncomponents"];
-    #"missioncomponents" = [];
+    blackboard[#"missioncomponents"] = undefined;
     foreach (component in missioncomponents) {
         priority = component[#"strategy"].("doppelbotspriority");
         targetsize = targets[priority].size;
@@ -156,7 +156,7 @@ function private function_12b9fafb(commander, &blackboard) {
         return;
     }
     gpbundles = blackboard[#"gpbundles"];
-    #"gpbundles" = [];
+    blackboard[#"gpbundles"] = undefined;
     foreach (bundle in gpbundles) {
         priority = bundle[#"strategy"].("doppelbotspriority");
         targetsize = targets[priority].size;

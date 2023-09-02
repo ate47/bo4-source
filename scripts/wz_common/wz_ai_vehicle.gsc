@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/ai_tank_shared.gsc;
-#include scripts/weapons/heatseekingmissile.gsc;
-#include scripts/core_common/ai/blackboard_vehicle.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\killstreaks\ai_tank_shared.gsc;
+#using scripts\weapons\heatseekingmissile.gsc;
+#using scripts\core_common\ai\blackboard_vehicle.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace wz_ai_vehicle;
 

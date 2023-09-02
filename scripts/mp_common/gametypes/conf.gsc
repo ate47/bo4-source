@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/gametypes/spawning.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/mp_common/gametypes/hostmigration.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/gametypes/dogtags.gsc;
-#include script_4c8dba49908aecc2;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\gametypes\spawning.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\mp_common\gametypes\hostmigration.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\gametypes\dogtags.gsc;
+#using script_4c8dba49908aecc2;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
 
 #namespace conf;
 
@@ -36,8 +36,8 @@ function event_handler[gametype_init] main(eventstruct) {
     player::function_cf3aa03d(&onplayerkilled);
     level.overrideteamscore = 1;
     level.teamscoreperkill = getgametypesetting(#"teamscoreperkill");
-    level.teamScorePerKillConfirmed = getgametypesetting(#"teamScorePerKillConfirmed");
-    level.teamScorePerKillDenied = getgametypesetting(#"teamScorePerKillDenied");
+    level.teamScorePerKillConfirmed = getgametypesetting(#"hash_27ba603f08da6da");
+    level.teamScorePerKillDenied = getgametypesetting(#"hash_445d11fd3012d702");
     level.var_cdb8ae2c = &function_a8da260c;
     globallogic_audio::set_leader_gametype_dialog("startKillConfirmed", "hcStartKillConfirmed", "gameBoost", "gameBoost", "bbStartKillConfirmed", "hcbbStartKillConfirmed");
     if (util::function_8570168d()) {

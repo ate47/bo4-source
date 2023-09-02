@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include script_70ab01a7690ea256;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/beam_shared.csc;
+#using script_70ab01a7690ea256;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\beam_shared.csc;
 
 #namespace zm_weap_scepter;
 
@@ -287,7 +287,7 @@ function function_3f83a22f(localclientnum, oldval, newval, bnewent, binitialsnap
                 if (isdefined(fxhandle)) {
                     stopfx(localclientnum, fxhandle);
                     if (isdefined(self)) {
-                        localclientnum = [];
+                        self.var_aa9e07fe[localclientnum] = undefined;
                         self.var_5427d523 = undefined;
                     }
                 }

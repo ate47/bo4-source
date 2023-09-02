@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_maptable.csc;
-#include scripts/core_common/util_shared.csc;
+#using scripts\zm_common\zm_maptable.csc;
+#using scripts\core_common\util_shared.csc;
 
 #namespace zm_inventory;
 

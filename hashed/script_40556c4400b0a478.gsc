@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/zm/ai/zm_ai_brutus.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\zm\ai\zm_ai_brutus.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
 
 #namespace namespace_9d28c60;
 

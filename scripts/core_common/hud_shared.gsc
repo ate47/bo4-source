@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include script_6103fadfc4a82745;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using script_6103fadfc4a82745;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace hud;
 
@@ -280,7 +280,7 @@ function function_9b9f0fd8(str_identifier, var_cc966c56, b_success = 1, e_player
     wait(0.75);
     if (isdefined(s_objective.s_radiant.var_b6340ad0) && isdefined(s_objective.s_radiant.var_b6340ad0[var_cc966c56]) && s_objective.s_radiant.var_b6340ad0[var_cc966c56]) {
         clientfield::set_world_uimodel(var_67af9061 + ".progressType", 0);
-        var_cc966c56 = [];
+        s_objective.s_radiant.var_b6340ad0[var_cc966c56] = undefined;
     }
     if (var_776f69c5.var_f6fd19fc.size) {
         s_objective.s_radiant thread function_e5ae6379(str_winning_team, 0);
@@ -890,7 +890,7 @@ function private function_cbf3f034(s_objective) {
         if (isdefined(self.var_3a93e1f9)) {
             arrayremovevalue(self.var_3a93e1f9, s_objective, 0);
         }
-        self getentitynumber() = [];
+        s_objective.var_75659ce3[self getentitynumber()] = undefined;
         if (!isdefined(s_objective.var_75659ce3) || !s_objective.var_75659ce3.size) {
             s_objective.var_75659ce3 = undefined;
             if (isdefined(s_objective.var_428fe2c1) && s_objective.var_428fe2c1) {

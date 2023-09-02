@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_hacienda_sound.gsc;
-#include scripts/mp/mp_hacienda_fx.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/compass.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp\mp_hacienda_sound.gsc;
+#using scripts\mp\mp_hacienda_fx.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\compass.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace mp_hacienda;
 
@@ -87,7 +87,7 @@ function function_d839264a() {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
         s_button.mdl_gameobject.var_a43a7410 = var_a43a7410;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
-        if (getgametypesetting(#"allowMapScripting")) {
+        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
             s_button.mdl_gameobject gameobjects::set_onuse_event(&function_45cfd64e);
         } else {
@@ -133,7 +133,7 @@ function function_d99e105f() {
     foreach (s_button in a_s_buttons) {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
-        if (getgametypesetting(#"allowMapScripting")) {
+        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
             s_button.mdl_gameobject gameobjects::set_onuse_event(&function_393b459a);
         } else {
@@ -175,7 +175,7 @@ function function_f5a4a3eb() {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
         s_button.mdl_gameobject.var_2151fb35 = var_2151fb35;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
-        if (getgametypesetting(#"allowMapScripting")) {
+        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
             s_button.mdl_gameobject gameobjects::set_onuse_event(&function_886f3928);
         } else {

@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_orange_util.gsc;
-#include scripts/zm_common/trials/zm_trial_special_enemy.gsc;
-#include scripts/zm_common/ai/zm_ai_utility.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_cleanup_mgr.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_round_spawning.gsc;
-#include script_ab862743b3070a;
-#include scripts/zm_common/zm_behavior.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
+#using scripts\zm\zm_orange_util.gsc;
+#using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
+#using scripts\zm_common\ai\zm_ai_utility.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_cleanup_mgr.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_round_spawning.gsc;
+#using script_ab862743b3070a;
+#using scripts\zm_common\zm_behavior.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
 
 #namespace zm_orange_special_rounds;
 

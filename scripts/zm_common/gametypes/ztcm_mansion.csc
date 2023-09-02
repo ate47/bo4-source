@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/zm_common/gametypes/ztcm.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\zm_common\gametypes\ztcm.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace ztcm_mansion;
 

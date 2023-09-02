@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
+#using scripts\core_common\util_shared.csc;
 
 #namespace ability_util;
 
@@ -111,7 +111,7 @@ function stop_aoe_fx(local_client_num, clientfield_name, aoe_fx_info) {
         }
         stopfx(local_client_num, fx);
     }
-    clientfield_name = [];
+    self.aoe_fx_arrays[clientfield_name] = undefined;
 }
 
 // Namespace ability_util/ability_util

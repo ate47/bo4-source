@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/map.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\map.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace oob;
 

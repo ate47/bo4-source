@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_morocco_scripted.gsc;
-#include scripts/mp/mp_morocco_sound.gsc;
-#include scripts/mp/mp_morocco_fx.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/compass.gsc;
+#using scripts\mp\mp_morocco_scripted.gsc;
+#using scripts\mp\mp_morocco_sound.gsc;
+#using scripts\mp\mp_morocco_fx.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\compass.gsc;
 
 #namespace mp_morocco;
 

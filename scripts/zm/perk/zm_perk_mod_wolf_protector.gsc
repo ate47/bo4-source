@@ -1,21 +1,21 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/powerup/zm_powerup_hero_weapon_power.gsc;
-#include scripts/zm/powerup/zm_powerup_small_ammo.gsc;
-#include scripts/zm/powerup/zm_powerup_bonus_points_player.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/zm_common/util.gsc;
-#include scripts/core_common/visionset_mgr_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm\powerup\zm_powerup_hero_weapon_power.gsc;
+#using scripts\zm\powerup\zm_powerup_small_ammo.gsc;
+#using scripts\zm\powerup\zm_powerup_bonus_points_player.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\core_common\visionset_mgr_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_perk_mod_wolf_protector;
 

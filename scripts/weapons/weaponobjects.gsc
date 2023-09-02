@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include script_6b221588ece2c4aa;
-#include scripts/weapons/trophy_system.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/placeables.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/entityheadicons_shared.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/damage.gsc;
-#include scripts/core_common/dev_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using script_6b221588ece2c4aa;
+#using scripts\weapons\trophy_system.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\placeables.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\entityheadicons_shared.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\damage.gsc;
+#using scripts\core_common\dev_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace weaponobjects;
 
@@ -1296,7 +1296,7 @@ function watchweaponobjectspawn(notify_type, endonnotify = undefined) {
                     if (isdefined(watcher.var_82aa8ec4) && watcher.var_82aa8ec4) {
                         watcher.objectarray[0] setstate(5);
                     }
-                    0 = [];
+                    watcher.objectarray[0] = undefined;
                     cleanweaponobjectarray(watcher);
                 }
             }

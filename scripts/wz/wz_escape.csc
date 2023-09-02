@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_nixie_tubes.csc;
-#include scripts/wz/wz_escape_ffotd.csc;
-#include scripts/core_common/exploder_shared.csc;
-#include scripts/mp_common/item_world.csc;
-#include scripts/mp_common/load.csc;
-#include scripts/core_common/util_shared.csc;
+#using scripts\wz_common\wz_nixie_tubes.csc;
+#using scripts\wz\wz_escape_ffotd.csc;
+#using scripts\core_common\exploder_shared.csc;
+#using scripts\mp_common\item_world.csc;
+#using scripts\mp_common\load.csc;
+#using scripts\core_common\util_shared.csc;
 
 #namespace wz_escape;
 

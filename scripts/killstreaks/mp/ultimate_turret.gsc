@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/killstreaks/ultimate_turret_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\killstreaks\ultimate_turret_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace ultimate_turret;
 

@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/killstreaks/mp/killstreaks.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/hud_message_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\killstreaks\mp\killstreaks.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\hud_message_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace player;
 

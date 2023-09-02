@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/draft.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace mp_austria_scripted;
 
@@ -52,7 +52,7 @@ function on_game_playing() {
     level scene::add_scene_func(#"hash_711c3c97dc4804e2", &function_7ea86b26, "finger_down");
     level thread scene::play(#"hash_2f32b57967d58743", "button_out");
     button = struct::get("finger_trap_button");
-    if (getgametypesetting(#"allowMapScripting")) {
+    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
         button.mdl_gameobject gameobjects::set_onuse_event(&function_dc12d0bd);
         return;
     }

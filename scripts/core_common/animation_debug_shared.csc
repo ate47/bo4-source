@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/flagsys_shared.csc;
-#include scripts/core_common/animation_shared.csc;
+#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\animation_shared.csc;
 
 #namespace animation;
 

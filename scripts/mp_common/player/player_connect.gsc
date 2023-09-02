@@ -1,31 +1,31 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gamerep.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/mp_common/player/player_monitor.gsc;
-#include scripts/mp_common/player/player_record.gsc;
-#include scripts/mp_common/player/player_killed.gsc;
-#include scripts/mp_common/player/player.gsc;
-#include scripts/mp_common/gametypes/menus.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_ui.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/spectating.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/persistence_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/high_value_operative.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/bb_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\gamerep.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\mp_common\player\player_monitor.gsc;
+#using scripts\mp_common\player\player_record.gsc;
+#using scripts\mp_common\player\player_killed.gsc;
+#using scripts\mp_common\player\player.gsc;
+#using scripts\mp_common\gametypes\menus.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_ui.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\spectating.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\persistence_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\high_value_operative.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\bb_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace player;
 
@@ -129,7 +129,7 @@ function callback_playerconnect() {
         self.pers[#"lives"] = level.numlives;
     }
     if (!level.teambased) {
-        #"team" = [];
+        self.pers[#"team"] = undefined;
     }
     init_heal(1, 0);
     self.hasspawned = 0;
@@ -191,7 +191,7 @@ function callback_playerconnect() {
                 }
             }
         #/
-        #"needteam" = [];
+        self.pers[#"needteam"] = undefined;
         self.pers[#"team"] = #"spectator";
         self.team = #"spectator";
         self.sessionteam = #"spectator";

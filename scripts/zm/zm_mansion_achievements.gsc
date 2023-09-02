@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace mansion_achievements;
 

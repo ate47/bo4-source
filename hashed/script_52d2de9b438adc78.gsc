@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/killstreaks/helicopter_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\killstreaks\helicopter_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace ir_strobe;
 

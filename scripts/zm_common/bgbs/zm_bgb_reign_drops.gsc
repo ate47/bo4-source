@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/bgbs/zm_bgb_extra_credit.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\zm_common\bgbs\zm_bgb_extra_credit.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_bgb_reign_drops;
 

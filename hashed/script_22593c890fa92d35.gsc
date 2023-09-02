@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/mp_common/item_supply_drop.gsc;
-#include scripts/core_common/player_insertion.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\mp_common\item_supply_drop.gsc;
+#using scripts\core_common\player_insertion.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace namespace_795feefe;
 

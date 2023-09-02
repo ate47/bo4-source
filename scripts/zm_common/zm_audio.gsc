@@ -1,31 +1,31 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_sq.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_round_spawning.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/zm_common/zm_laststand.gsc;
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/music_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_sq.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_round_spawning.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\zm_common\zm_laststand.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\music_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_audio;
 
@@ -1249,9 +1249,9 @@ function function_e1666976(str_category, var_39acfdda) {
     if (isdefined(self.var_c13233ee)) {
         if (isdefined(self.var_c13233ee[str_category])) {
             if (isdefined(self.var_c13233ee[str_category][var_39acfdda])) {
-                var_39acfdda = [];
+                self.var_c13233ee[str_category][var_39acfdda] = undefined;
                 if (!self.var_c13233ee[str_category].size) {
-                    str_category = [];
+                    self.var_c13233ee[str_category] = undefined;
                 }
                 if (!self.var_c13233ee.size) {
                     self.var_c13233ee = undefined;

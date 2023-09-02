@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
 
 #namespace zm_weap_thunderstorm;
 

@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/draft.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace mp_cairo_scripted;
 
@@ -56,7 +56,7 @@ function on_game_playing() {
 // Size: 0x56
 function function_c3c859e1() {
     if (util::isfirstround()) {
-        if (getgametypesetting(#"allowMapScripting")) {
+        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
             level thread scene::play(#"hash_f73ff215479cc55");
         }
         return;
@@ -75,7 +75,7 @@ function function_34fc666e() {
         }
     }
     if (util::isfirstround()) {
-        if (getgametypesetting(#"allowMapScripting")) {
+        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
             level scene::play(#"hash_f73ff215479cc55");
         }
     }

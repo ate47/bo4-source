@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_office_teleporters.gsc;
-#include scripts/zm/zm_office_special_rounds.gsc;
-#include script_174ebb9642933bf7;
-#include script_ab862743b3070a;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_cleanup_mgr.gsc;
-#include scripts/zm_common/zm_round_logic.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm\zm_office_teleporters.gsc;
+#using scripts\zm\zm_office_special_rounds.gsc;
+#using script_174ebb9642933bf7;
+#using script_ab862743b3070a;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_cleanup_mgr.gsc;
+#using scripts\zm_common\zm_round_logic.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace namespace_76ccb07a;
 

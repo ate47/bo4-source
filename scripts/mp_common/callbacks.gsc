@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/player/player_killed.gsc;
-#include scripts/mp_common/player/player_damage.gsc;
-#include scripts/mp_common/player/player_disconnect.gsc;
-#include scripts/mp_common/player/player_connect.gsc;
-#include scripts/mp_common/player/player_callbacks.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/bots/bot_traversals.gsc;
-#include scripts/mp_common/gametypes/hostmigration.gsc;
-#include scripts/mp_common/gametypes/globallogic_scriptmover.gsc;
-#include scripts/mp_common/gametypes/globallogic_actor.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/globallogic/globallogic_vehicle.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\player\player_killed.gsc;
+#using scripts\mp_common\player\player_damage.gsc;
+#using scripts\mp_common\player\player_disconnect.gsc;
+#using scripts\mp_common\player\player_connect.gsc;
+#using scripts\mp_common\player\player_callbacks.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\bots\bot_traversals.gsc;
+#using scripts\mp_common\gametypes\hostmigration.gsc;
+#using scripts\mp_common\gametypes\globallogic_scriptmover.gsc;
+#using scripts\mp_common\gametypes\globallogic_actor.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\globallogic\globallogic_vehicle.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace callback;
 

@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\system_shared.csc;
 
 #namespace zm_weap_tesla_sniper_t8;
 
@@ -78,7 +78,7 @@ function function_2d6416dc(localclientnum) {
                 }
                 if (i > var_7ec33855 && isdefined(self.var_7ad5becf[i])) {
                     deletefx(localclientnum, self.var_7ad5becf[i], 1);
-                    i = [];
+                    self.var_7ad5becf[i] = undefined;
                 }
             }
         }
@@ -93,7 +93,7 @@ function function_a6907b54(localclientnum) {
     for (i = 1; i <= 4; i++) {
         if (isdefined(self.var_7ad5becf[i])) {
             deletefx(localclientnum, self.var_7ad5becf[i], 1);
-            i = [];
+            self.var_7ad5becf[i] = undefined;
         }
     }
 }

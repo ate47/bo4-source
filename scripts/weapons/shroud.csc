@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/math_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\math_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace shroud;
 
@@ -102,7 +102,7 @@ function private function_a252eaf0(localclientnum, entnum, team) {
     if (!isdefined(level.var_effa221)) {
         level.var_effa221 = [];
     }
-    entnum = [];
+    level.var_effa221[entnum] = undefined;
     foreach (player in getplayers(localclientnum)) {
         if (isdefined(player) && player.team == team) {
             player function_90fc4e4c();

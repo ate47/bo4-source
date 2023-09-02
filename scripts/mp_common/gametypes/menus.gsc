@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
 
 #namespace menus;
 

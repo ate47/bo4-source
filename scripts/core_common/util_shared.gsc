@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include script_51e19a6cd0b4d30f;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using script_51e19a6cd0b4d30f;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace util;
 

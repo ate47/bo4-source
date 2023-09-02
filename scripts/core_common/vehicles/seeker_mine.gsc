@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/core_common/vehicles/smart_bomb.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/weapons/arc.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/targetting_delay.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/statemachine_shared.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\core_common\vehicles\smart_bomb.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\weapons\arc.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\targetting_delay.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\statemachine_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace seeker_mine;
 

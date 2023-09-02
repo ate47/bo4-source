@@ -358,7 +358,7 @@ function collect_inputs() {
         } else if (input_def.type == #"exec" && self.def.is_auto_exec) {
             inputs[input_index] = 1;
         } else {
-            input_index = [];
+            inputs[input_index] = undefined;
         }
         input_index++;
     }

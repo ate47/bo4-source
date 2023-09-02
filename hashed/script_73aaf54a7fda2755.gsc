@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/zm_common/zm_behavior.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\zm_common\zm_behavior.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace namespace_1d05befd;
 

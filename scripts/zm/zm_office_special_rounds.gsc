@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include script_59a783d756554a80;
-#include scripts/zm/zm_office_floors.gsc;
-#include scripts/zm_common/callbacks.gsc;
-#include scripts/zm_common/zm_round_logic.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_round_spawning.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm.gsc;
-#include script_174ebb9642933bf7;
-#include script_ab862743b3070a;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flag_shared.gsc;
+#using script_59a783d756554a80;
+#using scripts\zm\zm_office_floors.gsc;
+#using scripts\zm_common\callbacks.gsc;
+#using scripts\zm_common\zm_round_logic.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_round_spawning.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm.gsc;
+#using script_174ebb9642933bf7;
+#using script_ab862743b3070a;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flag_shared.gsc;
 
 #namespace zm_office_special_rounds;
 

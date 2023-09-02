@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/rank_shared.gsc;
-#include scripts/core_common/activecamo_shared.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\rank_shared.gsc;
+#using scripts\core_common\activecamo_shared.gsc;
 
 #namespace globallogic_score;
 

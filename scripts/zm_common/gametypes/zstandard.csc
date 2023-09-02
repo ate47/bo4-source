@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include script_2f226180773b89b9;
-#include script_13ba67412d79c7f;
-#include script_151cd5772fe546db;
-#include scripts/zm_common/zm_powerups.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using script_2f226180773b89b9;
+#using script_13ba67412d79c7f;
+#using script_151cd5772fe546db;
+#using scripts\zm_common\zm_powerups.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace zstandard;
 

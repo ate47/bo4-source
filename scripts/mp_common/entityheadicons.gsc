@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/entityheadicons_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\entityheadicons_shared.gsc;
 
 #namespace entityheadicons;
 

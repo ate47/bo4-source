@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include script_71e26f08f03b7a7a;
-#include scripts/mp_common/item_world_fixup.gsc;
-#include scripts/mp_common/item_inventory.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using script_71e26f08f03b7a7a;
+#using scripts\mp_common\item_world_fixup.gsc;
+#using scripts\mp_common\item_inventory.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace character_unlock;
 

@@ -1,26 +1,26 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/weapons/zm_weap_riotshield.csc;
-#include script_54a67b7ed7b385e6;
-#include scripts/zm/zm_zodt8_tutorial.csc;
-#include script_5504fe574aed77a8;
-#include scripts/zm/zm_zodt8_sentinel_trial.csc;
-#include scripts/zm/zm_zodt8_eye.csc;
-#include scripts/zm/zm_zodt8_sound.csc;
-#include scripts/zm/zm_zodt8_gamemodes.csc;
-#include scripts/zm_common/zm_characters.csc;
-#include scripts/zm_common/zm_weapons.csc;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_pack_a_punch.csc;
-#include scripts/zm_common/zm_fasttravel.csc;
-#include scripts/zm_common/zm_audio_sq.csc;
-#include scripts/zm_common/zm.csc;
-#include scripts/zm_common/load.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/audio_shared.csc;
+#using scripts\zm\weapons\zm_weap_riotshield.csc;
+#using script_54a67b7ed7b385e6;
+#using scripts\zm\zm_zodt8_tutorial.csc;
+#using script_5504fe574aed77a8;
+#using scripts\zm\zm_zodt8_sentinel_trial.csc;
+#using scripts\zm\zm_zodt8_eye.csc;
+#using scripts\zm\zm_zodt8_sound.csc;
+#using scripts\zm\zm_zodt8_gamemodes.csc;
+#using scripts\zm_common\zm_characters.csc;
+#using scripts\zm_common\zm_weapons.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_pack_a_punch.csc;
+#using scripts\zm_common\zm_fasttravel.csc;
+#using scripts\zm_common\zm_audio_sq.csc;
+#using scripts\zm_common\zm.csc;
+#using scripts\zm_common\load.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\audio_shared.csc;
 
 #namespace zodt8_pap_quest;
 
@@ -74,7 +74,7 @@ function pap_chunk_big_rune(localclientnum, oldval, newval, bnewent, binitialsna
         audio::stoploopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
         if (isdefined(self.var_86adf17d[localclientnum])) {
             killfx(localclientnum, self.var_86adf17d[localclientnum]);
-            localclientnum = [];
+            self.var_86adf17d[localclientnum] = undefined;
             playfx(localclientnum, level._effect[#"hash_79b06b6af34ac1ab"], self.origin, v_forward);
         }
         break;

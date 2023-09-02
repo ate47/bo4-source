@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/scene_shared.csc;
-#include scripts/core_common/duplicaterender_mgr.csc;
-#include scripts/core_common/animation_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/multi_extracam.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/activecamo_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\duplicaterender_mgr.csc;
+#using scripts\core_common\animation_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\multi_extracam.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\activecamo_shared.csc;
 
 #namespace character_customization;
 
@@ -530,11 +530,11 @@ class class_7da27482 {
                 if (isdefined(self.var_5633914d[slot])) {
                     self.var_5633914d[slot] unlink();
                     self.var_5633914d[slot] delete();
-                    slot = [];
+                    self.var_5633914d[slot] = undefined;
                 } else if (self.var_228f64da isattached(self.var_45210dc7[slot], bone)) {
                     self.var_228f64da detach(self.var_45210dc7[slot], bone);
                 }
-                slot = [];
+                self.var_45210dc7[slot] = undefined;
             }
             self.var_45210dc7[slot] = attached_model;
             if (isdefined(self.var_45210dc7[slot])) {
@@ -1076,7 +1076,7 @@ class class_7da27482 {
             ent unlink();
             ent delete();
         }
-        self.var_228f64da.targetname = [];
+        level.custom_characters[self.var_f141235b][self.var_228f64da.targetname] = undefined;
         self.var_5633914d = [];
         self.var_228f64da delete();
         self.var_228f64da = undefined;

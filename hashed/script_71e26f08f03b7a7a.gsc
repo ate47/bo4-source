@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_supply_drop.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\item_supply_drop.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace namespace_3d2704b3;
 

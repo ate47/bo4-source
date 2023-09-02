@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/sound_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
 
 #namespace tabun;
 
@@ -327,7 +327,7 @@ function spawnalllocs(owner, startpos) {
             locations[#"radius"][i] = level.fx_tabun_radius3;
             continue;
         default:
-            i = [];
+            locations[#"fxtoplay"][i] = undefined;
             locations[#"radius"][i] = 0;
             continue;
         }

@@ -1,32 +1,32 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/bots/mp_bot_position.gsc;
-#include script_2be661251429fd1a;
-#include scripts/mp_common/ai/planner_mp_tdm_squad.gsc;
-#include scripts/mp_common/ai/planner_mp_tdm_commander.gsc;
-#include scripts/mp_common/ai/planner_mp_sd_squad.gsc;
-#include scripts/mp_common/ai/planner_mp_sd_commander.gsc;
-#include scripts/mp_common/ai/planner_mp_koth_squad.gsc;
-#include scripts/mp_common/ai/planner_mp_koth_commander.gsc;
-#include scripts/mp_common/ai/planner_mp_dom_squad.gsc;
-#include scripts/mp_common/ai/planner_mp_dom_commander.gsc;
-#include scripts/mp_common/ai/planner_mp_control_squad.gsc;
-#include scripts/mp_common/ai/planner_mp_control_commander.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/emp_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/rank_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/bots/bot_action.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/ai/region_utility.gsc;
+#using scripts\mp_common\bots\mp_bot_position.gsc;
+#using script_2be661251429fd1a;
+#using scripts\mp_common\ai\planner_mp_tdm_squad.gsc;
+#using scripts\mp_common\ai\planner_mp_tdm_commander.gsc;
+#using scripts\mp_common\ai\planner_mp_sd_squad.gsc;
+#using scripts\mp_common\ai\planner_mp_sd_commander.gsc;
+#using scripts\mp_common\ai\planner_mp_koth_squad.gsc;
+#using scripts\mp_common\ai\planner_mp_koth_commander.gsc;
+#using scripts\mp_common\ai\planner_mp_dom_squad.gsc;
+#using scripts\mp_common\ai\planner_mp_dom_commander.gsc;
+#using scripts\mp_common\ai\planner_mp_control_squad.gsc;
+#using scripts\mp_common\ai\planner_mp_control_commander.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\emp_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\rank_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\bots\bot_action.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\region_utility.gsc;
 
 #namespace bot;
 
@@ -193,7 +193,7 @@ function function_1b0af429() {
             for (j = 0; j < attachments.size; j++) {
                 if (attachments[j] != "uber") {
                     attachments[j] = attachments[attachments.size - 1];
-                    attachments.size - 1 = [];
+                    attachments[attachments.size - 1] = undefined;
                     continue;
                 }
             }

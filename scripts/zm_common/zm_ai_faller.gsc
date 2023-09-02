@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_laststand.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/ai/zombie_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_laststand.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\ai\zombie_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_ai_faller;
 

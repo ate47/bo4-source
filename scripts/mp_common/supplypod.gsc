@@ -1,25 +1,25 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
 
 #namespace supplypod;
 
@@ -462,7 +462,7 @@ function function_827486aa(var_d3213f00, var_7497ba51 = 1) {
     deleteobjective(self.objectiveid);
     deleteobjective(self.var_134eefb9);
     self.var_83d9bfb5 = 1;
-    self.objectiveid = [];
+    level.var_934fb97.supplypods[self.objectiveid] = undefined;
     self clientfield::set("enemyequip", 0);
     if (isdefined(self.gameobject)) {
         self.gameobject thread gameobjects::destroy_object(1, 1);
@@ -552,7 +552,7 @@ function private function_5761966a(supplypod) {
         }
     }
     objective_setinvisibletoplayer(supplypod.var_134eefb9, player);
-    player.clientid = [];
+    supplypod.var_7b7607df[player.clientid] = undefined;
 }
 
 // Namespace supplypod/supplypod
@@ -681,7 +681,7 @@ function function_9abdee8c(object) {
         if (isdefined(obj)) {
             obj thread function_827486aa(0);
         } else {
-            self.clientid = [];
+            level.var_934fb97.var_27fce4c0[self.clientid] = undefined;
         }
     }
     slot = player gadgetgetslot(level.var_934fb97.weapon);
@@ -985,7 +985,7 @@ function function_5bc9564e(weapon) {
             var_831b3584 = player getweaponammostock(weapon);
             if (var_831b3584 == 0) {
                 player setweaponammostock(weapon, int(player.pod_ammo[baseweaponindex]));
-                baseweaponindex = [];
+                player.pod_ammo[baseweaponindex] = undefined;
                 player thread function_452147b1(weapon, baseweaponindex);
             }
         }

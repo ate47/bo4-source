@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/core_common/ai/systems/shared.gsc;
-#include scripts/core_common/ai/systems/destructible_character.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\core_common\ai\systems\shared.gsc;
+#using scripts\core_common\ai\systems\destructible_character.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace gib;
 

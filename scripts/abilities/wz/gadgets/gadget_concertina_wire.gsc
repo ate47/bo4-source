@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/gadgets/gadget_concertina_wire.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\abilities\gadgets\gadget_concertina_wire.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace concertina_wire;
 

@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace zm_transform;
 
@@ -379,7 +379,7 @@ function private function_c81eb299(id, def) {
         /#
             assert(level.var_170852dc[def.aitype] == id, "<unknown string>");
         #/
-        def.aitype = [];
+        level.var_170852dc[def.aitype] = undefined;
     }
 }
 

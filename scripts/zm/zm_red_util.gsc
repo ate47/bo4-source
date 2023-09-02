@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_red_zones.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/zm_common/zm_cleanup_mgr.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include script_48288470fe0b53d;
+#using scripts\zm\zm_red_zones.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\zm_common\zm_cleanup_mgr.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using script_48288470fe0b53d;
 
 #namespace zm_red_util;
 

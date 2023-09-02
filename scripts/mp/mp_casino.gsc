@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_casino_scripted.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/core_common/compass.gsc;
+#using scripts\mp\mp_casino_scripted.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\core_common\compass.gsc;
 
 #namespace mp_casino;
 

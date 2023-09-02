@@ -1,21 +1,21 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/scene_vehicle_shared.gsc;
-#include scripts/core_common/scene_model_shared.gsc;
-#include scripts/core_common/scene_actor_shared.gsc;
-#include scripts/core_common/scene_player_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/teleport_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/bots/bot_util.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\scene_vehicle_shared.gsc;
+#using scripts\core_common\scene_model_shared.gsc;
+#using scripts\core_common\scene_actor_shared.gsc;
+#using scripts\core_common\scene_player_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\teleport_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\bots\bot_util.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace scene;
 
@@ -667,7 +667,7 @@ class csceneobject {
             }
         #/
         if (!isdefined(self._e) || !self._e isplayinganimscripted()) {
-            self._n_ent_num = [];
+            self.current_playing_anim[self._n_ent_num] = undefined;
         }
         /#
             if (getdvarint(#"debug_scene_skip", 0) > 0) {
@@ -3104,7 +3104,7 @@ class cscene {
                 arrayremovevalue(level.active_scenes[self._str_name], self._e_root);
                 arrayremovevalue(level.active_scenes[self._str_name], undefined);
                 if (level.active_scenes[self._str_name].size == 0) {
-                    self._str_name = [];
+                    level.active_scenes[self._str_name] = undefined;
                 }
                 arrayremovevalue(level.active_scenes, undefined, 1);
             }
@@ -3129,7 +3129,7 @@ class cscene {
                 if (isstruct(self._e_root) && !isdefined(self._e_root.scriptbundlename) && isarray(level.inactive_scenes[self._str_name])) {
                     arrayremovevalue(level.inactive_scenes[self._str_name], self._e_root);
                     if (level.inactive_scenes[self._str_name].size == 0) {
-                        self._str_name = [];
+                        level.inactive_scenes[self._str_name] = undefined;
                     }
                 }
             }
@@ -3489,7 +3489,7 @@ class cscene {
                 }
             }
             if (!level.scene_sync_list[n_request_time].size) {
-                n_request_time = [];
+                level.scene_sync_list[n_request_time] = undefined;
             }
         }
     }

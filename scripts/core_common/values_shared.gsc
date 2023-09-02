@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/string_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\string_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
 
 #namespace val;
 
@@ -211,7 +211,7 @@ function private _remove_value(str_id, str_name) {
             }
         }
         if (!self.values[str_name].size) {
-            str_name = [];
+            self.values[str_name] = undefined;
             if (!self.values.size) {
                 self.values = undefined;
             }

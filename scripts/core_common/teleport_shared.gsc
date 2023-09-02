@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
 
 #namespace teleport;
 

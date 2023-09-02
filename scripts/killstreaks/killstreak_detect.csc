@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreak_bundles.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/shoutcaster.csc;
-#include scripts/core_common/renderoverridebundle.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/array_shared.csc;
+#using scripts\killstreaks\killstreak_bundles.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\shoutcaster.csc;
+#using scripts\core_common\renderoverridebundle.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\array_shared.csc;
 
 #namespace killstreak_detect;
 
@@ -408,7 +408,7 @@ function function_32c8b999(local_client_num) {
         if (isdefined(vehicle) && isalive(vehicle)) {
             vehicle enemyvehicle_changed(local_client_num, undefined, newval);
         }
-        i = [];
+        level.var_b1dca2fb[local_client_num][i] = undefined;
     }
     arrayremoveindex(level.var_b1dca2fb, local_client_num);
     if (level.var_b1dca2fb.size == 0) {
@@ -452,7 +452,7 @@ function function_3eff7815(local_client_num) {
         if (isdefined(actor) && isalive(actor)) {
             actor function_430c370a(local_client_num, undefined, newval);
         }
-        i = [];
+        level.inserted_pop_[local_client_num][i] = undefined;
     }
     arrayremoveindex(level.inserted_pop_, local_client_num);
     if (level.inserted_pop_.size == 0) {

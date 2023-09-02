@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_util.gsc;
+#using scripts\mp_common\item_world_util.gsc;
 
 #namespace namespace_a0d533d1;
 

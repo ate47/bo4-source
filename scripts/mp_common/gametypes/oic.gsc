@@ -1,38 +1,38 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/abilities/ability_util.gsc;
-#include scripts/core_common/spectating.gsc;
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/gametypes/spawning.gsc;
-#include scripts/mp_common/gametypes/outcome.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_ui.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_defaults.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/sound_shared.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/bots/bot_action.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\core_common\spectating.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\gametypes\spawning.gsc;
+#using scripts\mp_common\gametypes\outcome.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_ui.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_defaults.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\bots\bot_action.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
 
 #namespace oic;
 
@@ -156,13 +156,13 @@ function givecustomloadout() {
     clipammo = 1;
     if (isdefined(self.pers[#"clip_ammo"])) {
         clipammo = self.pers[#"clip_ammo"];
-        #"clip_ammo" = [];
+        self.pers[#"clip_ammo"] = undefined;
     }
     self setweaponammoclip(weapon, clipammo);
     stockammo = 0;
     if (isdefined(self.pers[#"stock_ammo"])) {
         stockammo = self.pers[#"stock_ammo"];
-        #"stock_ammo" = [];
+        self.pers[#"stock_ammo"] = undefined;
     }
     self setweaponammostock(weapon, stockammo);
     self setspawnweapon(weapon);

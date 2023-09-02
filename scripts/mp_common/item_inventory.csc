@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_util.csc;
-#include scripts/mp_common/item_world.csc;
-#include script_c1eebdc8cad5d78;
-#include scripts/core_common/player/player_stats.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/flagsys_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\mp_common\item_world_util.csc;
+#using scripts\mp_common\item_world.csc;
+#using script_c1eebdc8cad5d78;
+#using scripts\core_common\player\player_stats.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace item_inventory;
 

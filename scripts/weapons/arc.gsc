@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include script_3819e7a1427df6d2;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/damage.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using script_3819e7a1427df6d2;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\damage.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace arc;
 

@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace player;
 
@@ -591,7 +591,7 @@ function function_b933de24(modname, var_b861a047) {
             self.var_894f7879 = [];
         }
         var_d87cedce = self.var_66cb03ad;
-        modname = [];
+        self.var_894f7879[modname] = undefined;
         self function_9080887a();
         if (!(isdefined(var_b861a047) && var_b861a047)) {
             self function_b2b139e6();

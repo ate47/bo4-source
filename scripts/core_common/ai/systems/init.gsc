@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/ai/systems/shared.gsc;
-#include scripts/core_common/name_shared.gsc;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\ai\systems\shared.gsc;
+#using scripts\core_common\name_shared.gsc;
 
 #namespace init;
 

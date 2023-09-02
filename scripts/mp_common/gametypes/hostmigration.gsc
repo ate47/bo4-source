@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/hostmigration_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
 
 #namespace hostmigration;
 

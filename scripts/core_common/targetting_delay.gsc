@@ -29,8 +29,8 @@ function function_7e1a12ce(radius) {
             }
             entnum = enemy getentitynumber();
             if (isdefined(info.var_d1e06a5f[entnum]) && (!isalive(enemy) || isdefined(enemy.lastspawntime) && enemy.lastspawntime > info.var_d1e06a5f[entnum])) {
-                entnum = [];
-                entnum = [];
+                info.var_d1e06a5f[entnum] = undefined;
+                info.var_2fae95e[entnum] = undefined;
             }
             if (!isalive(enemy)) {
                 continue;
@@ -47,8 +47,8 @@ function function_7e1a12ce(radius) {
             } else if (isdefined(info.var_d1e06a5f[entnum])) {
                 resettime = int(max(enemy function_348ab5dd(), 250));
                 if (gettime() - info.var_d1e06a5f[entnum] > resettime) {
-                    entnum = [];
-                    entnum = [];
+                    info.var_d1e06a5f[entnum] = undefined;
+                    info.var_2fae95e[entnum] = undefined;
                 }
             }
         }

@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace damagefeedback;
 

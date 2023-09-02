@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/bots/bot_action.gsc;
-#include scripts/core_common/bots/bot.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\bots\bot_action.gsc;
+#using scripts\core_common\bots\bot.gsc;
 
 #namespace zm_bot_action;
 

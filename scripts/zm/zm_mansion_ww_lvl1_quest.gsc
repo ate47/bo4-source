@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flag_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flag_shared.gsc;
 
 #namespace ww_lvl1_quest;
 

@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include script_67c9a990c0db216c;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/abilities/ability_player.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using script_67c9a990c0db216c;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\abilities\ability_player.gsc;
 
 #namespace namespace_9096c917;
 

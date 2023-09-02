@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/weapons/grapple.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\weapons\grapple.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace battlechatter;
 
@@ -116,7 +116,7 @@ function __init__() {
         count_keys(keycounts, bundle, "killReaper");
         count_keys(keycounts, bundle, "killSpectre");
         if (keycounts[bundle.name].size == 0) {
-            bundle.name = [];
+            keycounts[bundle.name] = undefined;
         }
     }
     level.var_f53efe5c = keycounts;

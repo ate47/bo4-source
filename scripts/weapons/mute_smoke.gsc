@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/sound_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
 
 #namespace mute_smoke;
 

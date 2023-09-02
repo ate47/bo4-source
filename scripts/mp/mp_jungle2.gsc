@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_jungle2_scripted.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/core_common/compass.gsc;
+#using scripts\mp\mp_jungle2_scripted.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\core_common\compass.gsc;
 
 #namespace mp_jungle2;
 

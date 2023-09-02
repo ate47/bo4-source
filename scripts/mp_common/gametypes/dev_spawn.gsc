@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/dev.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\dev.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace dev_spawn;
 

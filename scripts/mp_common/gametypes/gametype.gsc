@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/userspawnselection.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\userspawnselection.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace gametype;
 

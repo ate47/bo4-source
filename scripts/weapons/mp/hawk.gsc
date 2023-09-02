@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include script_342e0d1a78771d3f;
-#include script_5afbda9de6000ad9;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/core_common/vehicles/hawk.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using script_342e0d1a78771d3f;
+#using script_5afbda9de6000ad9;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\core_common\vehicles\hawk.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace hawk_mp;
 
@@ -523,7 +523,7 @@ function getvalidtargets(hawk, &stance_offsets) {
         if (!in_sight) {
             if (var_131803ce) {
                 if (bundle.var_d1a5fb3b === 1) {
-                    player getentitynumber() = [];
+                    self.hawk.var_5f360c48[player getentitynumber()] = undefined;
                     continue;
                 }
                 if (isdefined(self.hawk.var_5f360c48[player getentitynumber()])) {
@@ -531,7 +531,7 @@ function getvalidtargets(hawk, &stance_offsets) {
                 }
             } else {
                 if (bundle.var_4917731f === 1) {
-                    player getentitynumber() = [];
+                    self.hawk.var_c55be3a2[player getentitynumber()] = undefined;
                     continue;
                 }
                 if (isdefined(self.hawk.var_c55be3a2[player getentitynumber()])) {
@@ -734,7 +734,7 @@ function function_9ace0fb6(targets) {
             }
             if (!isalive(target)) {
                 if (isdefined(self.hawk.var_5f360c48)) {
-                    target getentitynumber() = [];
+                    self.hawk.var_5f360c48[target getentitynumber()] = undefined;
                 }
             } else {
                 var_4ef4e267 = target getentitynumber();

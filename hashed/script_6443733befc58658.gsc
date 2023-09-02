@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_util.csc;
-#include scripts/mp_common/item_world.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/flagsys_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\mp_common\item_world_util.csc;
+#using scripts\mp_common\item_world.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace namespace_3b8b8298;
 
@@ -113,7 +113,7 @@ function function_6b5dfd6c(localclientnum, playfx, var_484cae2, id, player) {
         if (isdefined(player.var_c1c8ef9c[id].fxent)) {
             player.var_c1c8ef9c[id].fxent delete();
         }
-        id = [];
+        player.var_c1c8ef9c[id] = undefined;
     }
 }
 

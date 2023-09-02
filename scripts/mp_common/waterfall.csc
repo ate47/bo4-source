@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/water_surface.csc;
-#include scripts/core_common/trigger_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/filter_shared.csc;
+#using scripts\core_common\water_surface.csc;
+#using scripts\core_common\trigger_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\filter_shared.csc;
 
 #namespace waterfall;
 

@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/teams/teams.gsc;
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/platoons.gsc;
-#include scripts/core_common/infection.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\teams\teams.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\platoons.gsc;
+#using scripts\core_common\infection.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace platoons;
 

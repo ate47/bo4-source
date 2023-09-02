@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/teams/teams.gsc;
-#include scripts/mp_common/teams/platoons.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/teams.gsc;
-#include scripts/core_common/platoons.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\mp_common\teams\teams.gsc;
+#using scripts\mp_common\teams\platoons.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\teams.gsc;
+#using scripts\core_common\platoons.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace teams;
 

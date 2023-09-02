@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/vehicles/smart_bomb.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\core_common\vehicles\smart_bomb.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace raps;
 
@@ -115,23 +115,23 @@ function initsounds() {
     if (isdefined(self.vehicletype) && (self.vehicletype == #"spawner_enemy_zombie_vehicle_raps_suicide" || self.vehicletype == #"spawner_zombietron_veh_meatball" || self.vehicletype == #"spawner_zombietron_veh_meatball_med" || self.vehicletype == #"spawner_zombietron_veh_meatball_small")) {
         self.sndalias[#"inair"] = #"zmb_meatball_in_air";
         self.sndalias[#"land"] = #"zmb_meatball_land";
-        #"spawn" = [];
-        #"direction" = [];
+        self.sndalias[#"spawn"] = undefined;
+        self.sndalias[#"direction"] = undefined;
         self.sndalias[#"jump_up"] = #"zmb_meatball_jump_up";
         self.sndalias[#"vehclose250"] = #"zmb_meatball_close_250";
-        #"vehclose1500" = [];
+        self.sndalias[#"vehclose1500"] = undefined;
         self.sndalias[#"vehtargeting"] = #"zmb_meatball_targeting";
-        #"vehalarm" = [];
+        self.sndalias[#"vehalarm"] = undefined;
         self.sndalias[#"vehcollision"] = #"zmb_meatball_collision";
     }
     if (isdefined(self.vehicletype) && self.vehicletype == #"hash_22f2770b0b570f88") {
         self.sndalias[#"inair"] = #"hash_b4c1fb7fb7b70be";
         self.sndalias[#"land"] = #"hash_56707e87f5b058df";
         self.sndalias[#"spawn"] = #"hash_220536a567c22f9d";
-        #"direction" = [];
+        self.sndalias[#"direction"] = undefined;
         self.sndalias[#"jump_up"] = #"hash_1182d9ecfe86442e";
         self.sndalias[#"vehclose250"] = #"hash_4d4a13f08b063112";
-        #"vehclose1500" = [];
+        self.sndalias[#"vehclose1500"] = undefined;
         self.sndalias[#"vehtargeting"] = #"hash_57d3d8cf8a3cb109";
         self.sndalias[#"vehalarm"] = #"hash_28033d94de922793";
         self.sndalias[#"vehcollision"] = #"hash_481f37c2ab12bdfe";

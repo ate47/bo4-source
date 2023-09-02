@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace zm_orange_ice_slide;
 

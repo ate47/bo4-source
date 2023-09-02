@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/encounters/aispawning.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\encounters\aispawning.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace wave_manager_sys;
 

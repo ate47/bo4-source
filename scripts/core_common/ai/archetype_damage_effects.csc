@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/math_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\core_common\math_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace archetype_damage_effects;
 

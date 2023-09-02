@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
 
 #namespace zm_bgb_undead_man_walking;
 

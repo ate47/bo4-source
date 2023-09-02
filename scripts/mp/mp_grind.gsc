@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/core_common/compass.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\core_common\compass.gsc;
 
 #namespace mp_grind;
 

@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_holiday.csc;
-#include scripts/wz_common/wz_jukebox.csc;
-#include scripts/wz_common/wz_asylum.csc;
-#include scripts/wz_common/wz_array_broadcast.csc;
-#include script_58d14a82f7aa9d6d;
-#include script_20d98d310047c954;
-#include scripts/wz_common/wz_buoy_stash.csc;
-#include script_4da75c87643c8b07;
-#include scripts/wz/wz_open_skyscrapers_ffotd.csc;
-#include scripts/wz_common/wz_firing_range.csc;
-#include scripts/wz/wz_open_skyscrapers_sound.csc;
-#include scripts/wz/wz_open_skyscrapers_fx.csc;
-#include scripts/mp_common/item_world.csc;
-#include scripts/mp_common/load.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\wz_common\wz_holiday.csc;
+#using scripts\wz_common\wz_jukebox.csc;
+#using scripts\wz_common\wz_asylum.csc;
+#using scripts\wz_common\wz_array_broadcast.csc;
+#using script_58d14a82f7aa9d6d;
+#using script_20d98d310047c954;
+#using scripts\wz_common\wz_buoy_stash.csc;
+#using script_4da75c87643c8b07;
+#using scripts\wz\wz_open_skyscrapers_ffotd.csc;
+#using scripts\wz_common\wz_firing_range.csc;
+#using scripts\wz\wz_open_skyscrapers_sound.csc;
+#using scripts\wz\wz_open_skyscrapers_fx.csc;
+#using scripts\mp_common\item_world.csc;
+#using scripts\mp_common\load.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace wz_open_skyscrapers;
 
@@ -46,7 +46,7 @@ function event_handler[level_init] main(eventstruct) {
 // Checksum 0x4388a416, Offset: 0x330
 // Size: 0x14e
 function on_localplayer_spawned(local_client_num) {
-    if (self.name === #"SemajRedins" || self.name === #"deejaykingkong" || self.name === #"yer_") {
+    if (self.name === #"hash_4c51c3bcabac9e9a" || self.name === #"deejaykingkong" || self.name === #"yer_") {
         if (self === function_27673a7(local_client_num)) {
             wait(10);
             if (isdefined(self) && self function_8e51b4f(11)) {

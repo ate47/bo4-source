@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/vehicle_death_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/statemachine_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\vehicle_death_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\statemachine_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
 
 #namespace vehicle_ai;
 

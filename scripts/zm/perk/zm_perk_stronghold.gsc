@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/zm_common/zm_armor.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\zm_common\zm_armor.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace zm_perk_stronghold;
 

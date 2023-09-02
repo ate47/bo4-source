@@ -1,43 +1,43 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/util.gsc;
-#include scripts/zm_common/rat.gsc;
-#include scripts/weapons/zm/weaponobjects.gsc;
-#include scripts/zm_common/gametypes/spawnlogic.gsc;
-#include scripts/zm_common/gametypes/hud_message.gsc;
-#include scripts/zm_common/gametypes/hostmigration.gsc;
-#include scripts/zm_common/gametypes/globallogic_utils.gsc;
-#include scripts/zm_common/gametypes/globallogic_ui.gsc;
-#include scripts/zm_common/gametypes/globallogic_spawn.gsc;
-#include scripts/zm_common/gametypes/globallogic_score.gsc;
-#include scripts/zm_common/gametypes/globallogic_player.gsc;
-#include scripts/zm_common/gametypes/globallogic_defaults.gsc;
-#include scripts/zm_common/gametypes/globallogic_audio.gsc;
-#include scripts/zm_common/gametypes/dev.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/globallogic/globallogic_player.gsc;
-#include scripts/core_common/visionset_mgr_shared.gsc;
-#include scripts/core_common/bb_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/simple_hostmigration.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/tweakables_shared.gsc;
-#include scripts/core_common/rank_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/core_common/persistence_shared.gsc;
-#include scripts/core_common/music_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/hud_message_shared.gsc;
-#include scripts/core_common/hud_shared.gsc;
-#include scripts/core_common/healthoverlay.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\zm_common\rat.gsc;
+#using scripts\weapons\zm\weaponobjects.gsc;
+#using scripts\zm_common\gametypes\spawnlogic.gsc;
+#using scripts\zm_common\gametypes\hud_message.gsc;
+#using scripts\zm_common\gametypes\hostmigration.gsc;
+#using scripts\zm_common\gametypes\globallogic_utils.gsc;
+#using scripts\zm_common\gametypes\globallogic_ui.gsc;
+#using scripts\zm_common\gametypes\globallogic_spawn.gsc;
+#using scripts\zm_common\gametypes\globallogic_score.gsc;
+#using scripts\zm_common\gametypes\globallogic_player.gsc;
+#using scripts\zm_common\gametypes\globallogic_defaults.gsc;
+#using scripts\zm_common\gametypes\globallogic_audio.gsc;
+#using scripts\zm_common\gametypes\dev.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\globallogic\globallogic_player.gsc;
+#using scripts\core_common\visionset_mgr_shared.gsc;
+#using scripts\core_common\bb_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\simple_hostmigration.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\tweakables_shared.gsc;
+#using scripts\core_common\rank_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\core_common\persistence_shared.gsc;
+#using scripts\core_common\music_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\hud_message_shared.gsc;
+#using scripts\core_common\hud_shared.gsc;
+#using scripts\core_common\healthoverlay.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace globallogic;
 
@@ -734,9 +734,9 @@ function gamehistoryplayerquit() {
         self incrementmatchcompletionstat(gamemode, "played", "quit");
         if (isdefined(self.pers[#"matcheshostedstatstracked"])) {
             self incrementmatchcompletionstat(gamemode, "hosted", "quit");
-            #"matcheshostedstatstracked" = [];
+            self.pers[#"matcheshostedstatstracked"] = undefined;
         }
-        #"matchesplayedstatstracked" = [];
+        self.pers[#"matchesplayedstatstracked"] = undefined;
     }
     uploadstats(self);
     wait(1);
@@ -1037,7 +1037,7 @@ function removedisconnectedplayerfromplacement() {
     if (!found) {
         return;
     }
-    numplayers - 1 = [];
+    level.placement[#"all"][numplayers - 1] = undefined;
     /#
         assert(level.placement[#"all"].size == numplayers - 1);
     #/

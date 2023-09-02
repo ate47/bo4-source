@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/hacker_tool.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\weapons\hacker_tool.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace hacker_tool;
 

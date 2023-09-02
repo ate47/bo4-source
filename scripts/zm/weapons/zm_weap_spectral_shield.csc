@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include script_70ab01a7690ea256;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/core_common/scene_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/beam_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using script_70ab01a7690ea256;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\beam_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_weap_spectral_shield;
 
@@ -126,7 +126,7 @@ function function_b7608e70(localclientnum, oldval, newval, bnewent, binitialsnap
         }
     } else if (isdefined(self.var_1d12110c[localclientnum])) {
         stopfx(localclientnum, self.var_1d12110c[localclientnum]);
-        localclientnum = [];
+        self.var_1d12110c[localclientnum] = undefined;
     }
 }
 
@@ -285,11 +285,11 @@ function function_4700b6cd(localclientnum) {
     self notify(#"hash_4ea2d9a0f785e09b");
     if (isdefined(self.var_3e52c79e[localclientnum])) {
         beamkill(localclientnum, self.var_3e52c79e[localclientnum]);
-        localclientnum = [];
+        self.var_3e52c79e[localclientnum] = undefined;
     }
     if (isdefined(self.var_2723e767[localclientnum])) {
         self.var_2723e767[localclientnum] delete();
-        localclientnum = [];
+        self.var_2723e767[localclientnum] = undefined;
     }
     if (isdefined(self.var_4cd8e6cb)) {
         self stoploopsound(self.var_4cd8e6cb);
@@ -370,7 +370,7 @@ function function_f9a03171(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (isdefined(self.fx_muzzle_flash[localclientnum])) {
         deletefx(localclientnum, self.fx_muzzle_flash[localclientnum]);
-        localclientnum = [];
+        self.fx_muzzle_flash[localclientnum] = undefined;
     }
     a_e_players = getlocalplayers();
     foreach (e_player in a_e_players) {
@@ -430,7 +430,7 @@ function function_3f83a22f(localclientnum, oldval, newval, bnewent, binitialsnap
             if (isdefined(fxhandle)) {
                 stopfx(localclientnum, fxhandle);
                 if (isdefined(self)) {
-                    localclientnum = [];
+                    self.var_aa9e07fe[localclientnum] = undefined;
                     self.var_5427d523 = undefined;
                 }
             }
@@ -588,12 +588,12 @@ function function_36c349d0(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (isdefined(self.var_2a2f2afa[localclientnum])) {
         deletefx(localclientnum, self.var_2a2f2afa[localclientnum], 1);
-        localclientnum = [];
+        self.var_2a2f2afa[localclientnum] = undefined;
         self function_f6e99a8d("rob_key_charging", "tag_weapon_right");
     }
     if (isdefined(self.var_b2b4e5eb[localclientnum])) {
         deletefx(localclientnum, self.var_b2b4e5eb[localclientnum], 1);
-        localclientnum = [];
+        self.var_b2b4e5eb[localclientnum] = undefined;
         self function_f6e99a8d("rob_key_charged", "tag_weapon_right");
     }
     if (!isdefined(self.weapon)) {
@@ -634,12 +634,12 @@ function function_7203304d(localclientnum) {
         if (!function_98890cd8(self.weapon)) {
             if (isdefined(self.var_2a2f2afa[localclientnum])) {
                 deletefx(localclientnum, self.var_2a2f2afa[localclientnum], 1);
-                localclientnum = [];
+                self.var_2a2f2afa[localclientnum] = undefined;
                 self function_f6e99a8d("rob_key_charging", "tag_weapon_right");
             }
             if (isdefined(self.var_b2b4e5eb[localclientnum])) {
                 deletefx(localclientnum, self.var_b2b4e5eb[localclientnum], 1);
-                localclientnum = [];
+                self.var_b2b4e5eb[localclientnum] = undefined;
                 self function_f6e99a8d("rob_key_charged", "tag_weapon_right");
             }
             return;
@@ -696,7 +696,7 @@ function function_6b58c030(localclientnum, oldval, newval, bnewent, binitialsnap
         if (isdefined(self.var_3e85852d[localclientnum])) {
             deletefx(localclientnum, self.var_3e85852d[localclientnum], 1);
         }
-        localclientnum = [];
+        self.var_3e85852d[localclientnum] = undefined;
     }
 }
 

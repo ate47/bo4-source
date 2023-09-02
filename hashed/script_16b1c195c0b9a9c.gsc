@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/ai/strategic_command.gsc;
-#include scripts/core_common/ai/planner_squad_utility.gsc;
-#include scripts/core_common/ai/planner_squad.gsc;
-#include scripts/core_common/ai/systems/planner_blackboard.gsc;
-#include scripts/core_common/ai/systems/planner.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/ai/region_utility.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\ai\strategic_command.gsc;
+#using scripts\core_common\ai\planner_squad_utility.gsc;
+#using scripts\core_common\ai\planner_squad.gsc;
+#using scripts\core_common\ai\systems\planner_blackboard.gsc;
+#using scripts\core_common\ai\systems\planner.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\region_utility.gsc;
 
 #namespace namespace_83a61576;
 
@@ -1124,7 +1124,7 @@ function private function_6203826a(planner, params) {
                 continue;
             }
             bot setgoal(var_494658cd.region);
-            i = [];
+            var_d5fcb00b.bots[i] = undefined;
         }
     }
     return function_a702eb04(var_d5fcb00b, params.var_46b70ee6);

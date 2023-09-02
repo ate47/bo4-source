@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/player/player_damage.gsc;
-#include scripts/mp_common/gametypes/globallogic_ui.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
+#using scripts\mp_common\player\player_damage.gsc;
+#using scripts\mp_common\gametypes\globallogic_ui.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
 
 #namespace player;
 

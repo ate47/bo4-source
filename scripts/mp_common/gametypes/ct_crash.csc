@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/ct_core.csc;
-#include scripts/mp_common/gametypes/ct_crash_tutorial.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include script_38dc72b5220a1a67;
-#include script_ef0f46d70331b6f;
+#using scripts\mp_common\gametypes\ct_core.csc;
+#using scripts\mp_common\gametypes\ct_crash_tutorial.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using script_38dc72b5220a1a67;
+#using script_ef0f46d70331b6f;
 
 #namespace ct_crash;
 

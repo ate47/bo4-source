@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_ai_zonemgr.gsc;
-#include scripts/wz_common/wz_ai_zombie.gsc;
-#include scripts/wz_common/wz_ai_vehicle.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include script_cb32d07c95e5628;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/infection.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\wz_common\wz_ai_zonemgr.gsc;
+#using scripts\wz_common\wz_ai_zombie.gsc;
+#using scripts\wz_common\wz_ai_vehicle.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using script_cb32d07c95e5628;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\infection.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace wz_ai_utils;
 

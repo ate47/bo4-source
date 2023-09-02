@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/proximity_grenade.csc;
-#include scripts/core_common/system_shared.csc;
+#using scripts\weapons\proximity_grenade.csc;
+#using scripts\core_common\system_shared.csc;
 
 #namespace proximity_grenade;
 

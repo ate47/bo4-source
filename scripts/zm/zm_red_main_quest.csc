@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include script_70ab01a7690ea256;
-#include scripts/zm_common/zm.csc;
-#include scripts/zm/zm_red_ww_quests.csc;
-#include scripts/zm_common/zm_blockers.csc;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/core_common/math_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/beam_shared.csc;
-#include scripts/core_common/audio_shared.csc;
-#include scripts/core_common/array_shared.csc;
+#using script_70ab01a7690ea256;
+#using scripts\zm_common\zm.csc;
+#using scripts\zm\zm_red_ww_quests.csc;
+#using scripts\zm_common\zm_blockers.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\core_common\math_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\beam_shared.csc;
+#using scripts\core_common\audio_shared.csc;
+#using scripts\core_common\array_shared.csc;
 
 #namespace zm_red_main_quest;
 
@@ -343,7 +343,7 @@ function function_ed4ed5e(localclientnum, str_step) {
             var_360148 delete();
             var_b5d35012 delete();
         }
-        str_step = [];
+        level.var_b20dd024[str_step] = undefined;
     }
 }
 
@@ -1078,14 +1078,14 @@ function function_b750bd91(localclientnum, newval, str_ww) {
     if (newval <= 0) {
         if (isdefined(n_fx)) {
             stopfx(localclientnum, n_fx);
-            str_ww = [];
+            level.var_6ca19725[str_ww] = undefined;
         }
         if (isdefined(var_740e1e0e)) {
             if (isdefined(var_740e1e0e.var_f5257d20)) {
                 var_740e1e0e playsound(localclientnum, var_740e1e0e.var_f5257d20);
             }
             var_740e1e0e delete();
-            str_ww = [];
+            level.var_39ab105d[str_ww] = undefined;
         }
     } else if (!isdefined(n_fx) && !isdefined(var_740e1e0e)) {
         if (newval == 1) {

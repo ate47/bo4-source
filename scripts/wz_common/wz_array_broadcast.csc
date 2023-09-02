@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/audio_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/exploder_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\audio_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\exploder_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace wz_array_broadcast;
 

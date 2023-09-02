@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/zm_common/callings/zm_callings.gsc;
-#include scripts/core_common/flag_shared.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\zm_common\callings\zm_callings.gsc;
+#using scripts\core_common\flag_shared.gsc;
 
 #namespace zm_callings_devgui;
 

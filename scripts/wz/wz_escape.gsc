@@ -1,25 +1,25 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_blackjack_stash.gsc;
-#include scripts/wz_common/wz_ee_poster.gsc;
-#include scripts/wz_common/wz_nixie_tubes.gsc;
-#include scripts/wz/wz_escape_elevators.gsc;
-#include scripts/wz/wz_escape_ai_zones.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/wz_common/wz_loadouts.gsc;
-#include scripts/wz/wz_escape_ffotd.gsc;
-#include scripts/mp_common/item_inventory.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include script_71e26f08f03b7a7a;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/death_circle.gsc;
-#include scripts/core_common/compass.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\wz_common\wz_blackjack_stash.gsc;
+#using scripts\wz_common\wz_ee_poster.gsc;
+#using scripts\wz_common\wz_nixie_tubes.gsc;
+#using scripts\wz\wz_escape_elevators.gsc;
+#using scripts\wz\wz_escape_ai_zones.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\wz_common\wz_loadouts.gsc;
+#using scripts\wz\wz_escape_ffotd.gsc;
+#using scripts\mp_common\item_inventory.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using script_71e26f08f03b7a7a;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\death_circle.gsc;
+#using scripts\core_common\compass.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace wz_escape;
 

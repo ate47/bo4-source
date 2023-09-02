@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include script_25b8e6a85a7f8635;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using script_25b8e6a85a7f8635;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_trial_white_nukerun;
 

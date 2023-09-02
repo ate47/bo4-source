@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace mp_maldives_scripted;
 
@@ -40,7 +40,7 @@ function on_game_playing() {
     var_b8169a3f = struct::get("laser_button");
     var_b8169a3f.mdl_gameobject gameobjects::set_onuse_event(&function_bc78a4d0);
     var_b8169a3f.mdl_gameobject.var_64c54a7d = var_64c54a7d;
-    if (!getgametypesetting(#"allowMapScripting")) {
+    if (!getgametypesetting(#"hash_5e5bd42399148b51")) {
         var_b8169a3f.mdl_gameobject gameobjects::disable_object();
         return;
     }

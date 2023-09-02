@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai/archetype_human_cover.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/ai/archetype_civilian_interface.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/ai/systems/ai_blackboard.gsc;
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai\archetype_human_cover.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\ai\archetype_civilian_interface.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\systems\ai_blackboard.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\systems\behavior_state_machine.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_utility.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace archetype_civilian;
 

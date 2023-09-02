@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/systems/planner_blackboard.gsc;
+#using scripts\core_common\ai\systems\planner_blackboard.gsc;
 
 #namespace planner;
 
@@ -18,7 +18,7 @@ function private _blackboardsapplyundostate(planner, state) {
         if (isdefined(state[key])) {
             plannerblackboard::undo(blackboard, state[key]);
         } else {
-            key = [];
+            planner.blackboards[key] = undefined;
         }
     }
 }
@@ -236,7 +236,7 @@ function private _planstackpopnode(planner) {
         assert(planner.nodestack.size > 0);
     #/
     nodeentry = planner.nodestack[planner.nodestack.size - 1];
-    planner.nodestack.size - 1 = [];
+    planner.nodestack[planner.nodestack.size - 1] = undefined;
     return nodeentry;
 }
 
@@ -359,7 +359,7 @@ function private _undoplan(planner, planindex) {
         assert(planindex < planner.plan.size);
     #/
     for (index = planner.plan.size - 1; index > planindex && index >= 0; index--) {
-        index = [];
+        planner.plan[index] = undefined;
     }
 }
 

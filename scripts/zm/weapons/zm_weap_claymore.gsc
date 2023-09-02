@@ -1,25 +1,25 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/proximity_grenade.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_placeable_mine.gsc;
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/entityheadicons_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\proximity_grenade.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_placeable_mine.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\entityheadicons_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_weap_claymore;
 

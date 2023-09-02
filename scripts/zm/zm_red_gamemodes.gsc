@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_red_zstandard.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\zm\zm_red_zstandard.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace zm_red_gamemodes;
 

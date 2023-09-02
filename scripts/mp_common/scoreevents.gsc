@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/challenges.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/activecamo_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\challenges.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\activecamo_shared.gsc;
 
 #namespace scoreevents;
 

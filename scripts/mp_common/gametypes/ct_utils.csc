@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/oob.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include script_84f5590d2ac48f8;
-#include script_20813718c06b8e14;
-#include script_2e18617cd7d0ba32;
-#include script_50b169791779fa9d;
-#include script_3d94f5281e33ca0;
-#include script_4de1878f8140315a;
-#include script_43928ec8431e6b96;
-#include script_32ee21fd8fc9be00;
-#include script_2037b40c1c1d0268;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\oob.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using script_84f5590d2ac48f8;
+#using script_20813718c06b8e14;
+#using script_2e18617cd7d0ba32;
+#using script_50b169791779fa9d;
+#using script_3d94f5281e33ca0;
+#using script_4de1878f8140315a;
+#using script_43928ec8431e6b96;
+#using script_32ee21fd8fc9be00;
+#using script_2037b40c1c1d0268;
 
 #namespace ct_utils;
 

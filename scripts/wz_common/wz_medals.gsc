@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/gametypes/warzone.gsc;
-#include scripts/mp_common/player/player_record.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include script_1d29de500c266470;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/core_common/loot_tracking.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\wz_common\gametypes\warzone.gsc;
+#using scripts\mp_common\player\player_record.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using script_1d29de500c266470;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\core_common\loot_tracking.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace wz_medals;
 

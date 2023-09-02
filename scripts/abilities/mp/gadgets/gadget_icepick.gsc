@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/callbacks.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/abilities/gadgets/gadget_icepick_shared.gsc;
+#using scripts\mp_common\callbacks.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\abilities\gadgets\gadget_icepick_shared.gsc;
 
 #namespace icepick;
 

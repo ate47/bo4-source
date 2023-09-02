@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/trials/zm_trial_reset_loadout.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\zm_common\trials\zm_trial_reset_loadout.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace zm_perk_bandolier;
 

@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/teams/teams.gsc;
-#include scripts/mp_common/gametypes/overtime.gsc;
-#include scripts/mp_common/gametypes/outcome.gsc;
-#include scripts/core_common/hud_message_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\mp_common\teams\teams.gsc;
+#using scripts\mp_common\gametypes\overtime.gsc;
+#using scripts\mp_common\gametypes\outcome.gsc;
+#using scripts\core_common\hud_message_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace hud_message;
 

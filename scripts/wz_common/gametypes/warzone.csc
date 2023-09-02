@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_ignore_systems.csc;
-#include scripts/wz_common/wz_ai.csc;
-#include scripts/wz_common/vehicle.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/audio_shared.csc;
-#include scripts/mp_common/laststand_warzone.csc;
-#include scripts/mp_common/gametypes/globallogic_score.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/map.csc;
-#include scripts/core_common/player/player_reinsertion.csc;
-#include scripts/core_common/player_insertion.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include script_71f2f8a6fc184b69;
+#using scripts\wz_common\wz_ignore_systems.csc;
+#using scripts\wz_common\wz_ai.csc;
+#using scripts\wz_common\vehicle.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\audio_shared.csc;
+#using scripts\mp_common\laststand_warzone.csc;
+#using scripts\mp_common\gametypes\globallogic_score.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\map.csc;
+#using scripts\core_common\player\player_reinsertion.csc;
+#using scripts\core_common\player_insertion.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using script_71f2f8a6fc184b69;
 
 #namespace warzone;
 
@@ -146,7 +146,7 @@ function function_783be487() {
         if (isdefined(clientobjid)) {
             objective_delete(localclientnum, clientobjid);
             util::releaseobjid(localclientnum, clientobjid);
-            waitresult.clientnum = [];
+            level.var_a5ec5f1a[localclientnum][waitresult.clientnum] = undefined;
         }
     }
 }
@@ -167,7 +167,7 @@ function function_41f9de03() {
     foreach (struct in level.struct) {
         if (isdefined(struct.targetname) && isdefined(var_4e59607a[struct.targetname])) {
             function_4b8a09b(localclientnum, var_4e59607a[struct.targetname], struct.origin);
-            struct.targetname = [];
+            var_4e59607a[struct.targetname] = undefined;
         }
         if (struct.classname === "script_struct") {
             struct.classname = undefined;

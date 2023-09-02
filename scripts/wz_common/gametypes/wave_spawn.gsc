@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/spawn.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/infection.gsc;
-#include scripts/core_common/death_circle.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\wz_common\spawn.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\infection.gsc;
+#using scripts\core_common\death_circle.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace wave_spawn;
 

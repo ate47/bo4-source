@@ -1,27 +1,27 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/zm_common/zm_laststand.gsc;
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/zm_common/util.gsc;
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/core_common/visionset_mgr_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\zm_common\zm_laststand.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\core_common\visionset_mgr_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_altbody;
 
@@ -325,7 +325,7 @@ function private player_restore_loadout(name, trigger) {
     if (isdefined(loadout)) {
         if (isdefined(self.altbody_loadout[name])) {
             self zm_weapons::switch_back_primary_weapon(self.altbody_loadout[name].current, 1);
-            name = [];
+            self.altbody_loadout[name] = undefined;
             self waittilltimeout(1, #"weapon_change_complete");
         }
         self zm_weapons::player_take_loadout(loadout);

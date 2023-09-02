@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_net.gsc;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/zm_common/zm_behavior.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/zm/ai/zm_ai_nova_crawler.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai/archetype_nova_crawler.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_net.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\zm_common\zm_behavior.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\zm\ai\zm_ai_nova_crawler.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_utility.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_notetracks.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai\archetype_nova_crawler.gsc;
 
 #namespace zm_ai_white_nova_crawler;
 

@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/ct_utils.gsc;
-#include scripts/mp_common/gametypes/ct_gadgets.gsc;
-#include scripts/mp_common/gametypes/ct_firebreak_tutorial.gsc;
-#include scripts/mp_common/gametypes/ct_core.gsc;
-#include scripts/mp_common/gametypes/ct_bots.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include script_366b8782ff72bb1d;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\ct_utils.gsc;
+#using scripts\mp_common\gametypes\ct_gadgets.gsc;
+#using scripts\mp_common\gametypes\ct_firebreak_tutorial.gsc;
+#using scripts\mp_common\gametypes\ct_core.gsc;
+#using scripts\mp_common\gametypes\ct_bots.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using script_366b8782ff72bb1d;
 
 #namespace ct_firebreak;
 

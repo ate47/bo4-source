@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include script_4194df57536e11ed;
-#include script_50719ad9bcd4b183;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using script_4194df57536e11ed;
+#using script_50719ad9bcd4b183;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace lui;
 
@@ -558,7 +558,7 @@ function private _screen_close_menu() {
             } else {
                 [[ lui_menu.lui_menu ]]->close(self);
             }
-            str_menu_id = [];
+            self.screen_fade_menus[str_menu_id] = undefined;
         }
     }
 }
@@ -650,7 +650,7 @@ function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_
                 [[ lui_menu ]]->close(self);
             }
         }
-        str_menu_id = [];
+        self.screen_fade_menus[str_menu_id] = undefined;
         if (!self.screen_fade_menus.size) {
             self.screen_fade_menus = undefined;
         }

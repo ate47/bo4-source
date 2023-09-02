@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/gametypes/hud_message.gsc;
-#include scripts/mp_common/gametypes/hostmigration.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/hud_message_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\gametypes\hud_message.gsc;
+#using scripts\mp_common\gametypes\hostmigration.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\hud_message_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace globallogic_utils;
 

@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_trial_orange_open_all_doors;
 

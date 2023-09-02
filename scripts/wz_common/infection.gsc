@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_loadouts.gsc;
-#include scripts/wz_common/wz_ai_zonemgr.gsc;
-#include scripts/wz_common/wz_ai_utils.gsc;
-#include scripts/wz_common/gametypes/warzone.gsc;
-#include scripts/mp_common/gametypes/globallogic_defaults.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include script_cb32d07c95e5628;
-#include scripts/mp_common/item_inventory.gsc;
-#include scripts/mp_common/item_drop.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/infection.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\wz_common\wz_loadouts.gsc;
+#using scripts\wz_common\wz_ai_zonemgr.gsc;
+#using scripts\wz_common\wz_ai_utils.gsc;
+#using scripts\wz_common\gametypes\warzone.gsc;
+#using scripts\mp_common\gametypes\globallogic_defaults.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_inventory.gsc;
+#using scripts\mp_common\item_drop.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\infection.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace infection;
 

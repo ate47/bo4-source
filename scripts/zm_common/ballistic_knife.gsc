@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_player.gsc;
-#include scripts/zm_common/zm_laststand.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/ballistic_knife.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_player.gsc;
+#using scripts\zm_common\zm_laststand.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\ballistic_knife.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace ballistic_knife;
 

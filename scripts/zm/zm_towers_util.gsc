@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/zm_common/zm_magicbox.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\zm_common\zm_magicbox.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
 
 #namespace zm_towers_util;
 

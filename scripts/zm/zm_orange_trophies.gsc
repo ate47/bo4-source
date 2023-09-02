@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_orange_util.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/callbacks.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm\zm_orange_util.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\callbacks.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace zm_orange_trophies;
 

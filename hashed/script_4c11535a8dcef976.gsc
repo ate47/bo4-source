@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace elevators;
 

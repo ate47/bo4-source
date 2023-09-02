@@ -1,47 +1,47 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/heatseekingmissile.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/gametypes/overtime.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/mp_common/gametypes/hud_message.gsc;
-#include scripts/mp_common/gametypes/hostmigration.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/challenges.gsc;
-#include scripts/mp_common/bb.gsc;
-#include scripts/killstreaks/mp/supplydrop.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/killstreaks/helicopter_shared.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/core_common/vehicleriders_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/ai/archetype_robot.gsc;
-#include script_3819e7a1427df6d2;
-#include scripts/abilities/gadgets/gadget_smart_cover.gsc;
-#include scripts/abilities/gadgets/gadget_concertina_wire.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\heatseekingmissile.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\gametypes\overtime.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\mp_common\gametypes\hud_message.gsc;
+#using scripts\mp_common\gametypes\hostmigration.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\challenges.gsc;
+#using scripts\mp_common\bb.gsc;
+#using scripts\killstreaks\mp\supplydrop.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\killstreaks\helicopter_shared.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\core_common\vehicleriders_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\ai\archetype_robot.gsc;
+#using script_3819e7a1427df6d2;
+#using scripts\abilities\gadgets\gadget_smart_cover.gsc;
+#using scripts\abilities\gadgets\gadget_concertina_wire.gsc;
 
 #namespace escort;
 
@@ -77,14 +77,14 @@ function event_handler[gametype_init] main(eventstruct) {
     util::registerroundswitch(0, 9);
     util::registerroundwinlimit(0, 10);
     util::registernumlives(0, 100);
-    level.bootTime = getgametypesetting(#"bootTime");
-    level.rebootTime = getgametypesetting(#"rebootTime");
-    level.rebootPlayers = getgametypesetting(#"rebootPlayers");
+    level.bootTime = getgametypesetting(#"hash_3a64e31d02834194");
+    level.rebootTime = getgametypesetting(#"hash_1d5318dc84fcfef1");
+    level.rebootPlayers = getgametypesetting(#"hash_1e5d29788698deda");
     level.moveplayers = getgametypesetting(#"moveplayers");
     level.robotshield = getgametypesetting(#"robotshield");
     level.robotSpeed = "run";
     level.var_cdb8ae2c = &function_a8da260c;
-    switch (getgametypesetting(#"shutdownDamage")) {
+    switch (getgametypesetting(#"hash_78e80a41589e26aa")) {
     case 1:
         level.escortrobotkillstreakbundle = "escort_robot_low";
         break;
@@ -102,7 +102,7 @@ function event_handler[gametype_init] main(eventstruct) {
         killstreak_bundles::register_killstreak_bundle(level.escortrobotkillstreakbundle);
         level.shutdownDamage = killstreak_bundles::get_max_health(level.escortrobotkillstreakbundle);
     }
-    switch (isdefined(getgametypesetting(#"robotSpeed")) ? getgametypesetting(#"robotSpeed") : 0) {
+    switch (isdefined(getgametypesetting(#"hash_52378dd81e94f2da")) ? getgametypesetting(#"hash_52378dd81e94f2da") : 0) {
     case 1:
     default:
         level.robotSpeed = "run";

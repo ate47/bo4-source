@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_score.csc;
-#include scripts/zm_common/zm_audio.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/scene_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/util_shared.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_score.csc;
+#using scripts\zm_common\zm_audio.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\util_shared.csc;
 
 #namespace zm_perk_random;
 
@@ -77,7 +77,7 @@ function lightning_bolt_fx_toggle(localclientnum, oldval, newval, bnewent, binit
             }
         } else if (isdefined(self._location_indicator[localclientnum])) {
             stopfx(localclientnum, self._location_indicator[localclientnum]);
-            localclientnum = [];
+            self._location_indicator[localclientnum] = undefined;
         }
         wait(1);
     }
@@ -195,7 +195,7 @@ function private perk_random_machine_play_fx(localclientnum, piece_index, tag, f
     piece = self zbarriergetpiece(piece_index);
     if (isdefined(self.perk_random_machine_fx[tag + piece_index][localclientnum])) {
         deletefx(localclientnum, self.perk_random_machine_fx[tag + piece_index][localclientnum], deleteimmediate);
-        localclientnum = [];
+        self.perk_random_machine_fx[tag + piece_index][localclientnum] = undefined;
     }
     if (isdefined(fx)) {
         self.perk_random_machine_fx[tag + piece_index][localclientnum] = util::playfxontag(localclientnum, fx, piece, tag);

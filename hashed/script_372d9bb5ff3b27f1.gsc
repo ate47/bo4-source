@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_fixup.csc;
-#include scripts/wz_common/wz_common_fixup.csc;
+#using scripts\mp_common\item_world_fixup.csc;
+#using scripts\wz_common\wz_common_fixup.csc;
 
 #namespace namespace_794c7965;
 

@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/player_insertion.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\player_insertion.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace bot_insertion;
 

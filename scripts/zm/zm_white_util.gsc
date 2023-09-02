@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/perk/zm_perk_mod_additionalprimaryweapon.gsc;
-#include scripts/zm/zm_hms_util.gsc;
-#include script_5f9141e04e4e94a2;
-#include scripts/zm/zm_white_main_quest.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm\perk\zm_perk_mod_additionalprimaryweapon.gsc;
+#using scripts\zm\zm_hms_util.gsc;
+#using script_5f9141e04e4e94a2;
+#using scripts\zm\zm_white_main_quest.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_white_util;
 

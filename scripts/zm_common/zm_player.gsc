@@ -1,52 +1,52 @@
 // Atian COD Tools GSC decompiler test
-#include script_4194df57536e11ed;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/zm_common/zm_melee_weapon.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/zm_common/zm_laststand.gsc;
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm_armor.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/zm_common/util.gsc;
-#include scripts/zm_common/bb.gsc;
-#include scripts/zm_common/bots/zm_bot.gsc;
-#include scripts/zm_common/gametypes/globallogic_scriptmover.gsc;
-#include scripts/zm_common/gametypes/globallogic_player.gsc;
-#include scripts/zm_common/gametypes/globallogic_spawn.gsc;
-#include scripts/zm_common/gametypes/zm_gametype.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/zm_common/gametypes/globallogic.gsc;
-#include scripts/core_common/drown.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_vehicle.gsc;
-#include scripts/core_common/visionset_mgr_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/status_effects/status_effects.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/demo_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using script_4194df57536e11ed;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\zm_common\zm_melee_weapon.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\zm_common\zm_laststand.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm_armor.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\zm_common\bb.gsc;
+#using scripts\zm_common\bots\zm_bot.gsc;
+#using scripts\zm_common\gametypes\globallogic_scriptmover.gsc;
+#using scripts\zm_common\gametypes\globallogic_player.gsc;
+#using scripts\zm_common\gametypes\globallogic_spawn.gsc;
+#using scripts\zm_common\gametypes\zm_gametype.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\zm_common\gametypes\globallogic.gsc;
+#using scripts\core_common\drown.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_vehicle.gsc;
+#using scripts\core_common\visionset_mgr_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\status_effects\status_effects.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\demo_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_player;
 
@@ -2006,7 +2006,7 @@ function slowdown(str_type, var_a47cf2b2) {
         n_lowest_rate = 10;
         foreach (str_index, n_slowdown_timeout in self.a_n_slowdown_timeouts) {
             if (isdefined(n_timeout) && n_slowdown_timeout <= n_time) {
-                str_index = [];
+                self.a_n_slowdown_timeouts[str_index] = undefined;
             } else {
                 if (str_index == str_type && isdefined(var_a47cf2b2)) {
                     n_rate = var_a47cf2b2;
@@ -2027,7 +2027,7 @@ function slowdown(str_type, var_a47cf2b2) {
             }
             n_duration = self.a_n_slowdown_timeouts[str_lowest_type] - n_time;
             wait(n_duration);
-            str_lowest_type = [];
+            self.a_n_slowdown_timeouts[str_lowest_type] = undefined;
         }
     }
     self setmovespeedscale(1);

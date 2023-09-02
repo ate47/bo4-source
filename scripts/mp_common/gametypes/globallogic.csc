@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreak_detect.csc;
-#include scripts/mp_common/player/player.csc;
-#include scripts/mp_common/gametypes/display_transition.csc;
-#include scripts/core_common/renderoverridebundle.csc;
-#include scripts/core_common/animation_shared.csc;
-#include scripts/core_common/visionset_mgr_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/player/player_shared.csc;
-#include scripts/core_common/killcam_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/array_shared.csc;
+#using scripts\killstreaks\killstreak_detect.csc;
+#using scripts\mp_common\player\player.csc;
+#using scripts\mp_common\gametypes\display_transition.csc;
+#using scripts\core_common\renderoverridebundle.csc;
+#using scripts\core_common\animation_shared.csc;
+#using scripts\core_common\visionset_mgr_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\player\player_shared.csc;
+#using scripts\core_common\killcam_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\array_shared.csc;
 
 #namespace globallogic;
 

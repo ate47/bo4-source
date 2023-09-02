@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/mp/killstreak_vehicle.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/killstreaks/killstreaks_shared.csc;
+#using scripts\killstreaks\mp\killstreak_vehicle.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\killstreaks\killstreaks_shared.csc;
 
 #namespace killstreaks;
 

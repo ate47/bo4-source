@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weapons.gsc;
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/challenges.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_player.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/systems/destructible_character.gsc;
+#using scripts\weapons\weapons.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\challenges.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_player.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\systems\destructible_character.gsc;
 
 #namespace globallogic_actor;
 

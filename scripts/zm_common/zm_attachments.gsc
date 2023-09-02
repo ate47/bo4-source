@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include script_24c32478acf44108;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/ai/zombie_death.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using script_24c32478acf44108;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\ai\zombie_death.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace zm_attachments;
 

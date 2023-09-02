@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/bots/bot_stance.gsc;
-#include scripts/core_common/bots/bot_position.gsc;
-#include scripts/core_common/bots/bot_interface.gsc;
-#include scripts/core_common/bots/bot_chain.gsc;
-#include scripts/core_common/bots/bot_action.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\bots\bot_stance.gsc;
+#using scripts\core_common\bots\bot_position.gsc;
+#using scripts\core_common\bots\bot_interface.gsc;
+#using scripts\core_common\bots\bot_chain.gsc;
+#using scripts\core_common\bots\bot_action.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
 
 #namespace bot;
 

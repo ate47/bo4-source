@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace aat;
 
@@ -596,8 +596,8 @@ function remove(weapon) {
         assert(weapon != level.weaponnone, "<unknown string>");
     #/
     weapon = function_702fb333(weapon);
-    weapon = [];
-    weapon = [];
+    self.aat[weapon] = undefined;
+    self.var_b01de37[weapon] = undefined;
 }
 
 // Namespace aat/aat_shared

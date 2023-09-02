@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/teams/teams.gsc;
-#include scripts/mp_common/player/player_killed.gsc;
-#include scripts/mp_common/laststand_warzone.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\teams\teams.gsc;
+#using scripts\mp_common\player\player_killed.gsc;
+#using scripts\mp_common\laststand_warzone.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace wz_contracts;
 

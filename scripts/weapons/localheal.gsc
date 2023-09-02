@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/activecamo_shared.gsc;
-#include script_23789ec11f581cd0;
-#include scripts/abilities/gadgets/gadget_hero_weapon.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\activecamo_shared.gsc;
+#using script_23789ec11f581cd0;
+#using scripts\abilities\gadgets\gadget_hero_weapon.gsc;
 
 #namespace locaheal;
 
@@ -378,7 +378,7 @@ function function_45fd00c6() {
     }
     foreach (index, friendly in players) {
         if (friendly == self || isdefined(friendly.localheal) && (isdefined(friendly.localheal.var_21de13e3) ? friendly.localheal.var_21de13e3 : 0)) {
-            index = [];
+            players[index] = undefined;
         }
     }
     return players;

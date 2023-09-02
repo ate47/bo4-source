@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/ability_util.gsc;
-#include scripts/abilities/ability_power.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/bots/bot_action.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\abilities\ability_power.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\bots\bot_action.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace ability_player;
 
@@ -599,7 +599,7 @@ function take_gadget(slot, weapon) {
             }
         }
     }
-    slot = [];
+    self._gadgets_player[slot] = undefined;
 }
 
 // Namespace ability_player/ability_player

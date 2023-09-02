@@ -1,25 +1,25 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/core_common/visionset_mgr_shared.gsc;
-#include scripts/core_common/vehicle_death_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/turret_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/placeables.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\core_common\visionset_mgr_shared.gsc;
+#using scripts\core_common\vehicle_death_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\turret_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\placeables.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace mini_turret;
 

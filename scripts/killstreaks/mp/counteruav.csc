@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace counteruav;
 
@@ -33,7 +33,7 @@ function counteruavchanged(localclientnum, oldval, newval, bnewent, binitialsnap
     player setenemyglobalscrambler(newval);
     if (isdefined(level.var_8c4291cb[localclientnum])) {
         function_d48752e(localclientnum, level.var_8c4291cb[localclientnum], 1);
-        localclientnum = [];
+        level.var_8c4291cb[localclientnum] = undefined;
     }
     if (newval) {
         level.var_8c4291cb[localclientnum] = function_604c9983(localclientnum, "mpl_cuav_static");

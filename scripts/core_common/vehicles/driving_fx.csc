@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/audio_shared.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\audio_shared.csc;
 
 #namespace driving_fx;
 

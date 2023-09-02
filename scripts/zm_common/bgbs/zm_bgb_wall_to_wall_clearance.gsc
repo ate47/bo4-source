@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_wallbuy.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_wallbuy.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_bgb_wall_to_wall_clearance;
 

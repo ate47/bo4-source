@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weapons.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\weapons\weapons.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace weapons;
 

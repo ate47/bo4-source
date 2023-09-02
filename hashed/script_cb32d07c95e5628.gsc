@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_util.gsc;
-#include scripts/mp_common/item_drop.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\mp_common\item_world_util.gsc;
+#using scripts\mp_common\item_drop.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace namespace_65181344;
 
@@ -988,7 +988,7 @@ function function_62fdaf9e() {
             continue;
         }
         if (isdefined(value.classname) && value.classname == #"scriptbundle_itemspawnlist") {
-            key = [];
+            level.struct[key] = undefined;
         }
         if (getrealtime() - level.var_d0676b07 > level.var_3e9c9a35) {
             waitframe(1);

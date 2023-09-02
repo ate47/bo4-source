@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/ct_vo.gsc;
-#include scripts/mp_common/gametypes/ct_utils.gsc;
-#include scripts/mp_common/gametypes/ct_gadgets.gsc;
-#include scripts/mp_common/gametypes/ct_bots.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\ct_vo.gsc;
+#using scripts\mp_common\gametypes\ct_utils.gsc;
+#using scripts\mp_common\gametypes\ct_gadgets.gsc;
+#using scripts\mp_common\gametypes\ct_bots.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace ct_ajax_tutorial;
 

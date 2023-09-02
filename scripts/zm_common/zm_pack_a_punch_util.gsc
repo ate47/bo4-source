@@ -1,27 +1,27 @@
 // Atian COD Tools GSC decompiler test
-#include script_698dd790cdc4965f;
-#include scripts/zm_common/trials/zm_trial_disable_buys.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_pack_a_punch.gsc;
-#include scripts/zm_common/zm_magicbox.gsc;
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_camos.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/zm_common/util.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/activecamo_shared.gsc;
-#include scripts/core_common/aat_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using script_698dd790cdc4965f;
+#using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_pack_a_punch.gsc;
+#using scripts\zm_common\zm_magicbox.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_camos.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\activecamo_shared.gsc;
+#using scripts\core_common\aat_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_pap_util;
 
@@ -363,7 +363,7 @@ function function_c01d9f22(weapon) {
     w_original = weapon;
     weapon = zm_weapons::function_93cd8e76(weapon);
     if (isdefined(self.var_2843d3cc) && isdefined(self.var_2843d3cc[weapon])) {
-        weapon = [];
+        self.var_2843d3cc[weapon] = undefined;
         self zm_camos::function_a24c564f(#"hash_bc45c49c8304dc8", weapon);
     }
 }

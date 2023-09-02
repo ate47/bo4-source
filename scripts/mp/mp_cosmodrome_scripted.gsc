@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace mp_cosmodrome_scripted;
 
@@ -51,7 +51,7 @@ function __main__() {
 // Checksum 0xaf35c966, Offset: 0x688
 // Size: 0x6c
 function function_c3c859e1() {
-    if (getgametypesetting(#"allowMapScripting")) {
+    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
         level thread scene::play(#"hash_5c22828d306d4fcc");
         level thread scene::play(#"hash_2fb18b19a7ad26ef", "Shot 1");
     }
@@ -68,7 +68,7 @@ function on_game_playing() {
     #/
     level util::delay(#"hash_35c1b03137d3be89", "game_ended", &exploder::stop_exploder, "exp_lgt_spawn_flavor");
     level util::delay(#"hash_35c1b03137d3be89", "game_ended", &function_aa8af5cd, level.var_40263d6, "evt_base_alarm");
-    if (getgametypesetting(#"allowMapScripting")) {
+    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
         if (1) {
             level thread function_3a7aa317();
         }
@@ -313,7 +313,7 @@ function function_6edeb4c2(rocket) {
 // Size: 0x114
 function function_34fc666e() {
     level endon(#"game_ended");
-    if (getgametypesetting(#"allowMapScripting") && draft::is_draft_this_round()) {
+    if (getgametypesetting(#"hash_5e5bd42399148b51") && draft::is_draft_this_round()) {
         if (util::isfirstround()) {
             level scene::init(#"hash_5c22828d306d4fcc");
         }

@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include script_70ab01a7690ea256;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/core_common/ai_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/struct.csc;
+#using script_70ab01a7690ea256;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\core_common\ai_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace zm_weap_katana;
 
@@ -78,7 +78,7 @@ function function_ea3e4435(localclientnum, oldval, newval, bnewent, binitialsnap
         foreach (fx in self.var_d3d459f[localclientnum]) {
             stopfx(localclientnum, fx);
         }
-        localclientnum = [];
+        self.var_d3d459f[localclientnum] = undefined;
     }
 }
 
@@ -122,7 +122,7 @@ function private function_82ee4d9d(localclientnum) {
             foreach (fx in ai.var_1030ad00[localclientnum]) {
                 killfx(localclientnum, fx);
             }
-            localclientnum = [];
+            ai.var_1030ad00[localclientnum] = undefined;
         }
     }
 }

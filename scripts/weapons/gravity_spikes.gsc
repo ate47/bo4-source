@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace gravity_spikes;
 

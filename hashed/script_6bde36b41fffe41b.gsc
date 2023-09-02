@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include script_71e26f08f03b7a7a;
-#include scripts/mp_common/item_world_fixup.gsc;
-#include scripts/wz_common/character_unlock_fixup.gsc;
-#include scripts/wz_common/character_unlock.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using script_71e26f08f03b7a7a;
+#using scripts\mp_common\item_world_fixup.gsc;
+#using scripts\wz_common\character_unlock_fixup.gsc;
+#using scripts\wz_common\character_unlock.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace namespace_b7ee637a;
 

@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_zodt8_sound.csc;
-#include scripts/zm/zm_zodt8_gamemodes.csc;
-#include scripts/zm_common/zm_characters.csc;
-#include scripts/zm_common/zm_weapons.csc;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_pack_a_punch.csc;
-#include scripts/zm_common/zm_fasttravel.csc;
-#include scripts/zm_common/zm_audio_sq.csc;
-#include scripts/zm_common/zm.csc;
-#include scripts/zm_common/load.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/audio_shared.csc;
+#using scripts\zm\zm_zodt8_sound.csc;
+#using scripts\zm\zm_zodt8_gamemodes.csc;
+#using scripts\zm_common\zm_characters.csc;
+#using scripts\zm_common\zm_weapons.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_pack_a_punch.csc;
+#using scripts\zm_common\zm_fasttravel.csc;
+#using scripts\zm_common\zm_audio_sq.csc;
+#using scripts\zm_common\zm.csc;
+#using scripts\zm_common\load.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\audio_shared.csc;
 
 #namespace namespace_57873b62;
 

@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace colors;
 
@@ -120,9 +120,9 @@ function __init__() {
         level.arrays_of_colorforced_ai[#"allies"][level.colorlist[i]] = [];
         level.arrays_of_colorforced_ai[#"axis"][level.colorlist[i]] = [];
         level.arrays_of_colorforced_ai[#"team3"][level.colorlist[i]] = [];
-        level.colorlist[i] = [];
-        level.colorlist[i] = [];
-        level.colorlist[i] = [];
+        level.currentcolorforced[#"allies"][level.colorlist[i]] = undefined;
+        level.currentcolorforced[#"axis"][level.colorlist[i]] = undefined;
+        level.currentcolorforced[#"team3"][level.colorlist[i]] = undefined;
     }
     /#
         thread debugdvars();
@@ -1647,7 +1647,7 @@ function update_debug_friendlycolor() {
     if (isdefined(self.script_forcecolor)) {
         level.debug_color_friendlies[self getentitynumber()] = self.script_forcecolor;
     } else {
-        self getentitynumber() = [];
+        level.debug_color_friendlies[self getentitynumber()] = undefined;
     }
     level notify(#"updated_color_friendlies");
 }

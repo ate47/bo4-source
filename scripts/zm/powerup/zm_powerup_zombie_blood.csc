@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_powerups.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/audio_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\zm_common\zm_powerups.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\audio_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_powerup_zombie_blood;
 
@@ -51,7 +51,7 @@ function toggle_player_zombie_blood_fx(localclientnum, oldval, newval, bnewent, 
             n_fx_id = undefined;
         }
         if (newval == 0) {
-            localclientnum = [];
+            self.var_ea67fd25[localclientnum] = undefined;
         }
     }
     if (newval == 1) {

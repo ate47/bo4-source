@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/clientfield_shared.csc;
-#include script_63fbdc46fe0ddab1;
+#using scripts\core_common\clientfield_shared.csc;
+#using script_63fbdc46fe0ddab1;
 
 #namespace zm_red_util;
 

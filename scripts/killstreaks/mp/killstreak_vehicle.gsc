@@ -1,25 +1,25 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/core_common/visionset_mgr_shared.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/vehicles/rcxd.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/vehicle_death_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/remote_weapons.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/killstreak_hacking.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/audio_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\core_common\visionset_mgr_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\vehicles\rcxd.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\vehicle_death_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\remote_weapons.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\killstreak_hacking.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\audio_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
 
 #namespace killstreak_vehicle;
 

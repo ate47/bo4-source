@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/vehicles/auto_turret.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/turret_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/microwave_turret_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\core_common\vehicles\auto_turret.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\turret_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\microwave_turret_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace guardian_turret;
 

@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/ai/target.gsc;
-#include scripts/killstreaks/ai/escort.gsc;
-#include scripts/killstreaks/ai/state.gsc;
-#include scripts/core_common/entityheadicons_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\killstreaks\ai\target.gsc;
+#using scripts\killstreaks\ai\escort.gsc;
+#using scripts\killstreaks\ai\state.gsc;
+#using scripts\core_common\entityheadicons_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace ai_patrol;
 

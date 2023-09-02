@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/bots/bot_action.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/bots/bot_animation.gsc;
+#using scripts\core_common\bots\bot_action.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\bots\bot_animation.gsc;
 
 #namespace bot;
 

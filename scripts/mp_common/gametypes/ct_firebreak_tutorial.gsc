@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/ct_vo.gsc;
-#include scripts/mp_common/gametypes/ct_utils.gsc;
-#include scripts/mp_common/gametypes/ct_gadgets.gsc;
-#include scripts/mp_common/gametypes/ct_bots.gsc;
-#include scripts/core_common/bots/bot_stance.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/abilities/gadgets/gadget_radiation_field.gsc;
-#include script_20a30e3aaa7368c9;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\ct_vo.gsc;
+#using scripts\mp_common\gametypes\ct_utils.gsc;
+#using scripts\mp_common\gametypes\ct_gadgets.gsc;
+#using scripts\mp_common\gametypes\ct_bots.gsc;
+#using scripts\core_common\bots\bot_stance.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\abilities\gadgets\gadget_radiation_field.gsc;
+#using script_20a30e3aaa7368c9;
 
 #namespace ct_firebreak_tutorial;
 

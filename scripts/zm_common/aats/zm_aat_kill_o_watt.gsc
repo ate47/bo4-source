@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/zm_common/callbacks.gsc;
-#include scripts/zm/zm_lightning_chain.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/aat_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\zm_common\callbacks.gsc;
+#using scripts\zm\zm_lightning_chain.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\aat_shared.gsc;
 
 #namespace zm_aat_kill_o_watt;
 

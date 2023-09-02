@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm.csc;
-#include scripts/core_common/ai/systems/fx_character.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/ai_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm.csc;
+#using scripts\core_common\ai\systems\fx_character.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\ai_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace zm_ai_stoker;
 
@@ -136,40 +136,40 @@ function private stoker_fx_stop(localclientnum, oldvalue, newvalue, bnewent, bin
         if (isdefined(self.currentfx[2])) {
             stopfx(localclientnum, self.currentfx[2]);
         }
-        2 = [];
+        self.currentfx[2] = undefined;
         break;
     case 3:
         if (isdefined(self.currentfx[3])) {
             stopfx(localclientnum, self.currentfx[3]);
         }
-        3 = [];
+        self.currentfx[3] = undefined;
         break;
     case 4:
         if (isdefined(self.currentfx[4])) {
             stopfx(localclientnum, self.currentfx[4]);
         }
-        4 = [];
+        self.currentfx[4] = undefined;
         break;
     case 5:
         if (isdefined(self.currentfx[5])) {
             stopfx(localclientnum, self.currentfx[5]);
         }
-        5 = [];
+        self.currentfx[5] = undefined;
         break;
     case 6:
         if (isdefined(self.currentfx[6])) {
             stopfx(localclientnum, self.currentfx[6]);
         }
-        6 = [];
+        self.currentfx[6] = undefined;
         break;
     case 7:
         if (isdefined(self.currentfx[7]) && isdefined(self.currentfx[7][0])) {
             stopfx(localclientnum, self.currentfx[7][0]);
             stopfx(localclientnum, self.currentfx[7][1]);
             stopfx(localclientnum, self.currentfx[7][2]);
-            0 = [];
-            1 = [];
-            2 = [];
+            self.currentfx[7][0] = undefined;
+            self.currentfx[7][1] = undefined;
+            self.currentfx[7][2] = undefined;
         }
         break;
     }

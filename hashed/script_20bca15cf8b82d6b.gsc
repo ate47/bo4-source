@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/archetype_brutus.csc;
-#include scripts/zm/ai/zm_ai_brutus.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/ai_shared.csc;
+#using scripts\core_common\ai\archetype_brutus.csc;
+#using scripts\zm\ai\zm_ai_brutus.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\ai_shared.csc;
 
 #namespace zombie_brutus_util;
 

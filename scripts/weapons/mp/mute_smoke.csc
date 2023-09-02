@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/mute_smoke.csc;
-#include scripts/core_common/system_shared.csc;
+#using scripts\weapons\mute_smoke.csc;
+#using scripts\core_common\system_shared.csc;
 
 #namespace mute_smoke;
 

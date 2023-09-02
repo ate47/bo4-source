@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/deployable.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\weapons\deployable.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace concertina_wire;
 

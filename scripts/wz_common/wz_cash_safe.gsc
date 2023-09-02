@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include scripts/mp_common/item_inventory.gsc;
-#include scripts/mp_common/item_drop.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/dynent_world.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using scripts\mp_common\item_inventory.gsc;
+#using scripts\mp_common\item_drop.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\dynent_world.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace wz_cash_safe;
 

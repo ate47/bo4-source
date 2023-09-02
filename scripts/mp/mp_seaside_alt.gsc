@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_seaside_alt_sound.gsc;
-#include scripts/mp/mp_seaside_alt_fx.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/compass.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp\mp_seaside_alt_sound.gsc;
+#using scripts\mp\mp_seaside_alt_fx.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\compass.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace mp_seaside_alt;
 

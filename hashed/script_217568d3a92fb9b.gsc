@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include scripts/mp_common/item_drop.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using scripts\mp_common\item_drop.gsc;
 
 #namespace namespace_10277d51;
 

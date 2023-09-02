@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/trials/zm_trial_restrict_loadout.gsc;
-#include scripts/zm_common/zm_hero_weapon.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/throttle_shared.gsc;
+#using scripts\zm_common\trials\zm_trial_restrict_loadout.gsc;
+#using scripts\zm_common\zm_hero_weapon.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\throttle_shared.gsc;
 
 #namespace zm_weap_chakram;
 

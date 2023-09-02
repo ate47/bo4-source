@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/rank_shared.gsc;
-#include scripts/abilities/ability_power.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\rank_shared.gsc;
+#using scripts\abilities\ability_power.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace scoreevents;
 

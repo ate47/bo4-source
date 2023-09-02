@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/ai/archetype_tiger_interface.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\archetype_tiger_interface.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\systems\behavior_state_machine.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_utility.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_notetracks.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_mocomp.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
 
 #namespace tigerbehavior;
 

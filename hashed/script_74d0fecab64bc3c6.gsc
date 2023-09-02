@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/character_unlock_fixup.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\wz_common\character_unlock_fixup.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace namespace_d0919546;
 

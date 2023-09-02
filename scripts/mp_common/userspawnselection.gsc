@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace userspawnselection;
 
@@ -122,7 +122,7 @@ function removespawnbeacon(spawnbeaconid) {
     if (isdefined(spawnbeacon) && isdefined(spawnbeacon.spawnlist)) {
         clearspawnpoints(spawnbeacon.spawnlist);
     }
-    spawnbeaconid = [];
+    level.spawnselect.vox_plr_1_revive_down_2[spawnbeaconid] = undefined;
 }
 
 // Namespace userspawnselection/userspawnselection
@@ -290,7 +290,7 @@ function clearcacheforplayer() {
         return;
     }
     if (isdefined(level.spawnselect.lastchosenplayerspawns) && isdefined(level.spawnselect.lastchosenplayerspawns[self.clientid])) {
-        self.clientid = [];
+        level.spawnselect.lastchosenplayerspawns[self.clientid] = undefined;
     }
 }
 

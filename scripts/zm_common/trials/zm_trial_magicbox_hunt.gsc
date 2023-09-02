@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_bgb_pack.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_bgb_pack.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace zm_trial_magicbox_hunt;
 

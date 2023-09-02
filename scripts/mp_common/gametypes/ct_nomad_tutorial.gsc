@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/dog_shared.gsc;
-#include scripts/killstreaks/ai/state.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/abilities/gadgets/gadget_tripwire.gsc;
-#include scripts/mp_common/gametypes/ct_vo.gsc;
-#include scripts/mp_common/gametypes/ct_utils.gsc;
-#include scripts/mp_common/gametypes/ct_gadgets.gsc;
-#include scripts/mp_common/gametypes/ct_bots.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
+#using scripts\killstreaks\dog_shared.gsc;
+#using scripts\killstreaks\ai\state.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\abilities\gadgets\gadget_tripwire.gsc;
+#using scripts\mp_common\gametypes\ct_vo.gsc;
+#using scripts\mp_common\gametypes\ct_utils.gsc;
+#using scripts\mp_common\gametypes\ct_gadgets.gsc;
+#using scripts\mp_common\gametypes\ct_bots.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
 
 #namespace ct_nomad_tutorial;
 

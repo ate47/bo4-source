@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/deployable.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\weapons\deployable.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace ultimate_turret;
 

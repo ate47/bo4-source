@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace planemortar;
 

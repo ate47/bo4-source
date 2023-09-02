@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/aat_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\aat_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_trial_acquire_weapon;
 

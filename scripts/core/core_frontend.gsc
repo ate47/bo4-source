@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core/core_frontend_sound.gsc;
-#include scripts/core/core_frontend_fx.gsc;
+#using scripts\core\core_frontend_sound.gsc;
+#using scripts\core\core_frontend_fx.gsc;
 
 #namespace core_frontend;
 

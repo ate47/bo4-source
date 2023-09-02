@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/gadgets/gadget_jammer_shared.gsc;
-#include script_578e247c429144f6;
-#include script_48bb1764a662152d;
-#include script_1cf46b33555422b7;
-#include script_5961deb533dad533;
-#include scripts/wz_common/wz_progression.gsc;
-#include scripts/wz_common/wz_contracts.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/infection.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/vehicle_death_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\abilities\gadgets\gadget_jammer_shared.gsc;
+#using script_578e247c429144f6;
+#using script_48bb1764a662152d;
+#using script_1cf46b33555422b7;
+#using script_5961deb533dad533;
+#using scripts\wz_common\wz_progression.gsc;
+#using scripts\wz_common\wz_contracts.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\infection.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\vehicle_death_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace wz_vehicle;
 

@@ -1,33 +1,33 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/sensor_dart.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/ct_vo.gsc;
-#include scripts/mp_common/gametypes/ct_utils.gsc;
-#include scripts/mp_common/gametypes/ct_gadgets.gsc;
-#include scripts/mp_common/gametypes/ct_bots.gsc;
-#include scripts/killstreaks/mp/swat_team.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/helicopter_shared.gsc;
-#include scripts/core_common/bots/bot_stance.gsc;
-#include scripts/core_common/bots/bot_action.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/spawnbeacon_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/abilities/gadgets/gadget_smart_cover.gsc;
-#include scripts/abilities/gadgets/gadget_concertina_wire.gsc;
+#using scripts\weapons\sensor_dart.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\ct_vo.gsc;
+#using scripts\mp_common\gametypes\ct_utils.gsc;
+#using scripts\mp_common\gametypes\ct_gadgets.gsc;
+#using scripts\mp_common\gametypes\ct_bots.gsc;
+#using scripts\killstreaks\mp\swat_team.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\helicopter_shared.gsc;
+#using scripts\core_common\bots\bot_stance.gsc;
+#using scripts\core_common\bots\bot_action.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\spawnbeacon_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\abilities\gadgets\gadget_smart_cover.gsc;
+#using scripts\abilities\gadgets\gadget_concertina_wire.gsc;
 
 #namespace ct_torque_tutorial;
 
@@ -2579,8 +2579,8 @@ function function_c785404a() {
 function function_60d7db7f(var_de22a8df, var_f3aa6dfe) {
     if (!isdefined(self.var_bb1b065f)) {
         self.var_bb1b065f = [];
-        2 = [];
-        1 = [];
+        self.var_bb1b065f[2] = undefined;
+        self.var_bb1b065f[1] = undefined;
     }
     self.var_bb1b065f[var_f3aa6dfe] = var_de22a8df;
 }

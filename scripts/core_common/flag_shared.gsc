@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
 
 #namespace flag;
 
@@ -383,7 +383,7 @@ function wait_till_clear_any_timeout(n_timeout, a_flags) {
 // Size: 0x54
 function delete(str_flag) {
     if (isdefined(self.flag[str_flag])) {
-        str_flag = [];
+        self.flag[str_flag] = undefined;
     } else {
         /#
             println("<unknown string>" + str_flag);

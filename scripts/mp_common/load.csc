@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/gametype.csc;
-#include scripts/mp_common/callbacks.csc;
-#include scripts/core_common/vehicles/driving_fx.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/map.csc;
-#include scripts/core_common/flagsys_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\mp_common\gametypes\gametype.csc;
+#using scripts\mp_common\callbacks.csc;
+#using scripts\core_common\vehicles\driving_fx.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\map.csc;
+#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace load;
 

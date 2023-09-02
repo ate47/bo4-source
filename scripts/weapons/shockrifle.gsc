@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/gadgets/gadget_radiation_field.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/audio_shared.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/bots/bot_stance.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/damage.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/abilities/ability_power.gsc;
+#using scripts\abilities\gadgets\gadget_radiation_field.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\audio_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\bots\bot_stance.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\damage.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\abilities\ability_power.gsc;
 
 #namespace shockrifle;
 

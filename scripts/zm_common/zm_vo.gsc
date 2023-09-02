@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_round_spawning.gsc;
-#include scripts/zm_common/zm_round_logic.gsc;
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_round_spawning.gsc;
+#using scripts\zm_common\zm_round_logic.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace zm_vo;
 
@@ -220,7 +220,7 @@ function function_2fd1af0(var_a33019a0, var_c6a4663f = 1, var_3e24b5d5 = isdefin
     if (!isdefined(level.var_5388c8f9[var_3e24b5d5])) {
         level.var_5388c8f9[var_3e24b5d5] = [];
     }
-    var_a33019a0 = [];
+    level.var_5388c8f9[var_3e24b5d5][var_a33019a0] = undefined;
     if (var_c6a4663f) {
         function_cf6c9597("skipto", var_3e24b5d5, var_a33019a0);
     }

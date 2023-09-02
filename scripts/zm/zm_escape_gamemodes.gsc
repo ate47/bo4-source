@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_escape_zstandard.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\zm\zm_escape_zstandard.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace zm_escape_gamemodes;
 

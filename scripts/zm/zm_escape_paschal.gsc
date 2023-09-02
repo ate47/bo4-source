@@ -1,51 +1,51 @@
 // Atian COD Tools GSC decompiler test
-#include script_190d6b82bcca0908;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/zm/weapons/zm_weap_tomahawk.gsc;
-#include scripts/zm/weapons/zm_weap_spectral_shield.gsc;
-#include scripts/zm/zm_escape_util.gsc;
-#include script_668c4fbb94671fb4;
-#include scripts/zm_common/zm_loadout.gsc;
-#include script_ab862743b3070a;
-#include script_7c62f55ce3a557ff;
-#include scripts/zm_common/bgbs/zm_bgb_anywhere_but_here.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_ui_inventory.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_sq.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_player.gsc;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/zm_common/zm_cleanup_mgr.gsc;
-#include scripts/zm_common/zm_challenges.gsc;
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/zm_common/zm_bgb_pack.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/bots/bot_util.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/music_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using script_190d6b82bcca0908;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\zm\weapons\zm_weap_tomahawk.gsc;
+#using scripts\zm\weapons\zm_weap_spectral_shield.gsc;
+#using scripts\zm\zm_escape_util.gsc;
+#using script_668c4fbb94671fb4;
+#using scripts\zm_common\zm_loadout.gsc;
+#using script_ab862743b3070a;
+#using script_7c62f55ce3a557ff;
+#using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_ui_inventory.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_sq.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_player.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\zm_common\zm_cleanup_mgr.gsc;
+#using scripts\zm_common\zm_challenges.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\zm_common\zm_bgb_pack.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\bots\bot_util.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\music_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace paschal;
 
@@ -3927,7 +3927,7 @@ function function_37d4f9(var_f6d24584, n_brutus = 0, var_b8fc6ea2 = 0, var_49770
     if (isdefined(n_zombies_max)) {
         for (i = 0; i < var_ea4b199f.size; i++) {
             if (var_ea4b199f[i].script_noteworthy == "riser_location") {
-                i = [];
+                var_ea4b199f[i] = undefined;
             }
         }
         var_ea4b199f = array::remove_undefined(var_ea4b199f);

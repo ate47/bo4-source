@@ -1,38 +1,38 @@
 // Atian COD Tools GSC decompiler test
-#include script_52d2de9b438adc78;
-#include scripts/killstreaks/mp/killstreak_weapons.gsc;
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/weapons/weapons.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/tacticalinsertion.gsc;
-#include scripts/weapons/smokegrenade.gsc;
-#include scripts/weapons/heatseekingmissile.gsc;
-#include scripts/weapons/hacker_tool.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/sound_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/killstreaks/helicopter_shared.gsc;
-#include scripts/killstreaks/emp_shared.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/killstreaks/ai_tank_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/entityheadicons_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using script_52d2de9b438adc78;
+#using scripts\killstreaks\mp\killstreak_weapons.gsc;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\weapons\weapons.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\tacticalinsertion.gsc;
+#using scripts\weapons\smokegrenade.gsc;
+#using scripts\weapons\heatseekingmissile.gsc;
+#using scripts\weapons\hacker_tool.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\killstreaks\helicopter_shared.gsc;
+#using scripts\killstreaks\emp_shared.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\killstreaks\ai_tank_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\entityheadicons_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace supplydrop;
 
@@ -443,7 +443,7 @@ function adddroplocation(killstreak_id, location) {
 // Checksum 0x3ea14231, Offset: 0x2168
 // Size: 0x1c
 function deldroplocation(killstreak_id) {
-    killstreak_id = [];
+    level.droplocations[killstreak_id] = undefined;
 }
 
 // Namespace supplydrop/supplydrop

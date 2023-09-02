@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/localheal.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/mp_common/teams/teams.gsc;
-#include scripts/mp_common/supplypod.gsc;
-#include scripts/abilities/gadgets/gadget_smart_cover.gsc;
-#include scripts/abilities/gadgets/gadget_concertina_wire.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/bots/bot_position.gsc;
-#include scripts/core_common/bots/bot_action.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\weapons\localheal.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\mp_common\teams\teams.gsc;
+#using scripts\mp_common\supplypod.gsc;
+#using scripts\abilities\gadgets\gadget_smart_cover.gsc;
+#using scripts\abilities\gadgets\gadget_concertina_wire.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\bots\bot_position.gsc;
+#using scripts\core_common\bots\bot_action.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace namespace_104c3c75;
 

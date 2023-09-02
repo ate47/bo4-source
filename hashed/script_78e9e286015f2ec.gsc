@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_white_util.gsc;
-#include script_2f877a0752174fc1;
-#include script_2da1a66a13e2bbe1;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm/zm_hms_util.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm\zm_white_util.gsc;
+#using script_2f877a0752174fc1;
+#using script_2da1a66a13e2bbe1;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm\zm_hms_util.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace namespace_7d8e6ec3;
 

@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/util.gsc;
-#include scripts/core_common/sound_shared.gsc;
-#include scripts/core_common/fx_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\fx_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace fx;
 

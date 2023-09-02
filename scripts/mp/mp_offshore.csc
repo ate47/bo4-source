@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_offshore_sound.csc;
-#include scripts/mp/mp_offshore_fx.csc;
-#include scripts/mp_common/load.csc;
-#include scripts/core_common/util_shared.csc;
+#using scripts\mp\mp_offshore_sound.csc;
+#using scripts\mp\mp_offshore_fx.csc;
+#using scripts\mp_common\load.csc;
+#using scripts\core_common\util_shared.csc;
 
 #namespace mp_offshore;
 

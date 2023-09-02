@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.csc;
-#include script_40114edfb27a2dd9;
+#using scripts\core_common\system_shared.csc;
+#using script_40114edfb27a2dd9;
 
 #namespace hud;
 

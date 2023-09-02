@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/ct_firebreak_tutorial.csc;
-#include scripts/mp_common/gametypes/ct_core.csc;
-#include scripts/core_common/renderoverridebundle.csc;
-#include scripts/core_common/oob.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include script_127edb82eabcb791;
+#using scripts\mp_common\gametypes\ct_firebreak_tutorial.csc;
+#using scripts\mp_common\gametypes\ct_core.csc;
+#using scripts\core_common\renderoverridebundle.csc;
+#using scripts\core_common\oob.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using script_127edb82eabcb791;
 
 #namespace ct_firebreak;
 

@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/perks.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/ai/strategic_command.gsc;
-#include scripts/core_common/ai/planner_squad_utility.gsc;
-#include scripts/core_common/ai/planner_squad.gsc;
-#include scripts/core_common/ai/systems/planner_blackboard.gsc;
-#include scripts/core_common/ai/systems/planner.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\perks.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\ai\strategic_command.gsc;
+#using scripts\core_common\ai\planner_squad_utility.gsc;
+#using scripts\core_common\ai\planner_squad.gsc;
+#using scripts\core_common\ai\systems\planner_blackboard.gsc;
+#using scripts\core_common\ai\systems\planner.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace namespace_5bb8bcd5;
 

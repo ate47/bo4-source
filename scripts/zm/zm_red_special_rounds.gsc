@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_round_spawning.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_round_spawning.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
 
 #namespace zm_red_special_rounds;
 

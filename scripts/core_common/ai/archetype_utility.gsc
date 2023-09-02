@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/archetype_aivsaimelee.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai/archetype_mocomps_utility.gsc;
-#include scripts/core_common/ai/systems/shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\ai\archetype_aivsaimelee.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai\archetype_mocomps_utility.gsc;
+#using scripts\core_common\ai\systems\shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\systems\behavior_state_machine.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace aiutility;
 

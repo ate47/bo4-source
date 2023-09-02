@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/zm_common/zm_cleanup_mgr.gsc;
-#include script_2f9a68261f6a17be;
-#include script_6951ea86fdae9ae0;
-#include scripts/zm_common/trials/zm_trial_restrict_loadout.gsc;
-#include script_24c32478acf44108;
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\zm_common\zm_cleanup_mgr.gsc;
+#using script_2f9a68261f6a17be;
+#using script_6951ea86fdae9ae0;
+#using scripts\zm_common\trials\zm_trial_restrict_loadout.gsc;
+#using script_24c32478acf44108;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
 
 #namespace zm_perk_death_dash;
 

@@ -1,25 +1,25 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/heatseekingmissile.gsc;
-#include scripts/core_common/turret_shared.gsc;
-#include scripts/core_common/targetting_delay.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/killstreak_hacking.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/killstreaks/flak_drone.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/damage.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\weapons\heatseekingmissile.gsc;
+#using scripts\core_common\turret_shared.gsc;
+#using scripts\core_common\targetting_delay.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\killstreak_hacking.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\killstreaks\flak_drone.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\damage.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace helicopter;
 

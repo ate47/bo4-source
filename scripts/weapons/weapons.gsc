@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/trophy_system.gsc;
-#include scripts/weapons/tabun.gsc;
-#include scripts/weapons/riotshield.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/loadout_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/core_common/hud_shared.gsc;
-#include scripts/core_common/debug_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/bb_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\trophy_system.gsc;
+#using scripts\weapons\tabun.gsc;
+#using scripts\weapons\riotshield.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\loadout_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\core_common\hud_shared.gsc;
+#using scripts\core_common\debug_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\bb_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace weapons;
 
@@ -613,7 +613,7 @@ function watch_pickup() {
             if (isdefined(player.tookweaponfrom[droppedweapon])) {
                 droppeditem[i].owner = player.tookweaponfrom[droppedweapon].previousowner;
                 droppeditem[i].ownersattacker = player;
-                droppedweapon = [];
+                player.tookweaponfrom[droppedweapon] = undefined;
             }
             array::add(level.var_2d187870, droppeditem[i], 0);
             droppeditem[i] thread watch_pickup();
@@ -627,8 +627,8 @@ function watch_pickup() {
             player.tookweaponfrom[weapon].smeansofdeath = self.smeansofdeath;
             player.pickedupweaponkills[weapon] = 0;
         } else {
-            weapon = [];
-            weapon = [];
+            player.tookweaponfrom[weapon] = undefined;
+            player.pickedupweaponkills[weapon] = undefined;
         }
     }
 }

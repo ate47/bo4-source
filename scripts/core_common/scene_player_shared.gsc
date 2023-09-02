@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/scene_player_shared.gsc;
-#include script_24c15fbbb838c794;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scene_objects_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
+#using scripts\core_common\scene_player_shared.gsc;
+#using script_24c15fbbb838c794;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scene_objects_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
 
 #namespace scene;
 
@@ -1542,7 +1542,7 @@ class cscenesharedplayer : csceneplayer, csceneobject {
                 player flagsys::clear(self.player_animation_notify + "_skip_init_clear");
             }
             if (!player isplayinganimscripted()) {
-                player_num = [];
+                self.current_playing_anim[player_num] = undefined;
             }
             /#
                 if (getdvarint(#"debug_scene", 0) > 0) {

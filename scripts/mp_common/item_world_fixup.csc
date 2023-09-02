@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/flagsys_shared.csc;
+#using scripts\core_common\flagsys_shared.csc;
 
 #namespace item_world_fixup;
 

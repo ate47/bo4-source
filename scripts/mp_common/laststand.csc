@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include script_330e1a53a92b38cc;
-#include script_3b8f43c68572f06;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using script_330e1a53a92b38cc;
+#using script_3b8f43c68572f06;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace laststand;
 

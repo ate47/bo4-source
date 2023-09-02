@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/rewindobjects.csc;
+#using scripts\core_common\rewindobjects.csc;
 
 #namespace airsupport;
 

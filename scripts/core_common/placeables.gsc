@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/deployable.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/laststand_shared.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\laststand_shared.gsc;
 
 #namespace placeables;
 

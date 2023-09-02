@@ -1,25 +1,25 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/gametypes/ct_utils.gsc;
-#include scripts/mp_common/gametypes/ct_ui.gsc;
-#include script_4c8dba49908aecc2;
-#include scripts/mp_common/gametypes/ct_difficulty.gsc;
-#include scripts/mp_common/gametypes/ct_bots.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/abilities/ability_util.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\gametypes\ct_utils.gsc;
+#using scripts\mp_common\gametypes\ct_ui.gsc;
+#using script_4c8dba49908aecc2;
+#using scripts\mp_common\gametypes\ct_difficulty.gsc;
+#using scripts\mp_common\gametypes\ct_bots.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\abilities\ability_util.gsc;
 
 #namespace ct_core;
 

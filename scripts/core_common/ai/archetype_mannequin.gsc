@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/archetype_mannequin_interface.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/ai/zombie.gsc;
-#include scripts/core_common/spawner_shared.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\archetype_mannequin_interface.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\ai\zombie.gsc;
+#using scripts\core_common\spawner_shared.gsc;
 
 #namespace mannequinbehavior;
 

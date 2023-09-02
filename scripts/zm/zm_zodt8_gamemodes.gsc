@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_zodt8_zstandard.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\zm\zm_zodt8_zstandard.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace zm_zodt8_gamemodes;
 

@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/draft.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace mp_firingrange2_scripted;
 

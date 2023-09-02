@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_fixup.csc;
+#using scripts\mp_common\item_world_fixup.csc;
 
 #namespace warzone_fixup;
 

@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/ability_util.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace killstreaks;
 

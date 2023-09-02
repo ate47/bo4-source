@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/scene_actor_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scene_objects_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
+#using scripts\core_common\scene_actor_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scene_objects_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
 
 #namespace scene;
 

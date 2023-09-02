@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_laststand.gsc;
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/zm_common/zm_clone.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_laststand.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\zm_common\zm_clone.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_weap_cymbal_monkey;
 

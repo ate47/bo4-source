@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_orange_mq_sendoff.csc;
-#include script_6fdaa897ed596805;
-#include scripts/zm/zm_orange_mq_fuse.csc;
-#include scripts/zm/zm_orange_mq_hell.csc;
-#include scripts/zm/zm_orange_mq_campfire.csc;
-#include scripts/zm/zm_orange_mq_blood.csc;
-#include scripts/zm/perk/zm_perk_death_perception.csc;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm.csc;
-#include scripts/core_common/exploder_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\zm\zm_orange_mq_sendoff.csc;
+#using script_6fdaa897ed596805;
+#using scripts\zm\zm_orange_mq_fuse.csc;
+#using scripts\zm\zm_orange_mq_hell.csc;
+#using scripts\zm\zm_orange_mq_campfire.csc;
+#using scripts\zm\zm_orange_mq_blood.csc;
+#using scripts\zm\perk\zm_perk_death_perception.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm.csc;
+#using scripts\core_common\exploder_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_orange_mq_mgr;
 

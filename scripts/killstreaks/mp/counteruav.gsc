@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/mp_common/teams/teams.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/weapons/heatseekingmissile.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/tweakables_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/killstreak_hacking.gsc;
-#include scripts/killstreaks/killstreak_detect.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\mp_common\teams\teams.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\weapons\heatseekingmissile.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\tweakables_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\killstreak_hacking.gsc;
+#using scripts\killstreaks\killstreak_detect.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace counteruav;
 

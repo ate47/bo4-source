@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace multi_extracam;
 
@@ -14,7 +14,7 @@ function extracam_reset_index(localclientnum, index) {
     if (isdefined(level.camera_ents[localclientnum][index])) {
         level.camera_ents[localclientnum][index] clearextracam();
         level.camera_ents[localclientnum][index] delete();
-        index = [];
+        level.camera_ents[localclientnum][index] = undefined;
     }
 }
 
@@ -41,7 +41,7 @@ function extracam_init_item(localclientnum, copy_ent, index) {
     if (isdefined(level.camera_ents[localclientnum][index])) {
         level.camera_ents[localclientnum][index] clearextracam();
         level.camera_ents[localclientnum][index] delete();
-        index = [];
+        level.camera_ents[localclientnum][index] = undefined;
     }
     if (isdefined(copy_ent)) {
         level.camera_ents[localclientnum][index] = spawn(localclientnum, copy_ent.origin, "script_origin");

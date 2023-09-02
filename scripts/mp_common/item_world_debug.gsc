@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_util.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\item_world_util.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace item_world_debug;
 

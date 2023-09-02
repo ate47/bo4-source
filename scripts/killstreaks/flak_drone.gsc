@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/heatseekingmissile.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/vehicle_death_shared.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\weapons\heatseekingmissile.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\vehicle_death_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace flak_drone;
 

@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include script_2595527427ea71eb;
-#include scripts/zm/zm_towers_pap_quest.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
+#using script_2595527427ea71eb;
+#using scripts\zm\zm_towers_pap_quest.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
 
 #namespace namespace_bd742265;
 

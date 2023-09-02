@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/zm_common/zm_sq.gsc;
-#include scripts/zm/zm_hms_util.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\zm_common\zm_sq.gsc;
+#using scripts\zm\zm_hms_util.gsc;
 
 #namespace namespace_35b7c648;
 

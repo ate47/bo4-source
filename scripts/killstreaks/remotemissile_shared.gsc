@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include script_342e0d1a78771d3f;
-#include script_5afbda9de6000ad9;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/killstreak_hacking.gsc;
-#include scripts/killstreaks/killstreak_detect.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/core_common/dialog_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/hud_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using script_342e0d1a78771d3f;
+#using script_5afbda9de6000ad9;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\killstreak_hacking.gsc;
+#using scripts\killstreaks\killstreak_detect.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\core_common\dialog_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\hud_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace remotemissile;
 
@@ -661,7 +661,7 @@ function rocket_cleanupondeath() {
     entitynumber = self getentitynumber();
     level.rockets[entitynumber] = self;
     self waittill(#"death");
-    entitynumber = [];
+    level.rockets[entitynumber] = undefined;
 }
 
 // Namespace remotemissile/remotemissile_shared

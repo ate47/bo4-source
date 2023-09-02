@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/gametypes/globallogic_ui.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spectating.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/persistence_shared.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\gametypes\globallogic_ui.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spectating.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\persistence_shared.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace teams;
 
@@ -86,7 +86,7 @@ function on_joined_team(params) {
 // Checksum 0x40fe6f89, Offset: 0x3b8
 // Size: 0x24
 function on_joined_spectators(params) {
-    #"teamtime" = [];
+    self.pers[#"teamtime"] = undefined;
 }
 
 // Namespace teams/teams
@@ -226,9 +226,9 @@ function change(team) {
     }
     self.pers[#"team"] = team;
     self.team = team;
-    #"spawnweapon" = [];
-    #"savedmodel" = [];
-    #"teamtime" = [];
+    self.pers[#"spawnweapon"] = undefined;
+    self.pers[#"savedmodel"] = undefined;
+    self.pers[#"teamtime"] = undefined;
     self.sessionteam = self.pers[#"team"];
     self globallogic_ui::updateobjectivetext();
     self spectating::set_permissions();

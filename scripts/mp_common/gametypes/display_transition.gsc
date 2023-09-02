@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/gametypes/overtime.gsc;
-#include scripts/mp_common/gametypes/outcome.gsc;
-#include scripts/mp_common/gametypes/hud_message.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/music_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\gametypes\overtime.gsc;
+#using scripts\mp_common\gametypes\outcome.gsc;
+#using scripts\mp_common\gametypes\hud_message.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\music_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace display_transition;
 

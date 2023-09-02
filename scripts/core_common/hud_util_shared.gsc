@@ -55,7 +55,7 @@ function removechild(element) {
             self.children[element.index] = self.children[self.children.size - 1];
             self.children[element.index].index = element.index;
         }
-        self.children.size - 1 = [];
+        self.children[self.children.size - 1] = undefined;
         element.index = undefined;
     #/
 }

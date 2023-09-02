@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_lockdown_util.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_lockdown_util.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_unitrigger;
 
@@ -149,7 +149,7 @@ function function_28304f6a() {
             register_static_unitrigger(level._unitriggers._deferredinitlist[i], level._unitriggers._deferredinitlist[i].trigger_func);
         }
         for (i = 0; i < level._unitriggers._deferredinitlist.size; i++) {
-            i = [];
+            level._unitriggers._deferredinitlist[i] = undefined;
         }
         level._unitriggers._deferredinitlist = undefined;
     }
@@ -916,13 +916,13 @@ function cleanup_trigger(trigger, player) {
     trigger notify(#"kill_trigger");
     if (isdefined(trigger.stub.trigger_per_player) && trigger.stub.trigger_per_player) {
         if (isdefined(trigger.stub.playertrigger) && isarray(trigger.stub.playertrigger)) {
-            player getentitynumber() = [];
+            trigger.stub.playertrigger[player getentitynumber()] = undefined;
         }
     } else {
         trigger.stub.trigger = undefined;
     }
     trigger delete();
-    player getentitynumber() = [];
+    level._unitriggers.trigger_pool[player getentitynumber()] = undefined;
 }
 
 // Namespace zm_unitrigger/zm_unitrigger
@@ -1259,7 +1259,7 @@ function private function_bb454fe6() {
                 if (trigger_still_valid) {
                     old_trigger = trigger;
                     trigger = undefined;
-                    player getentitynumber() = [];
+                    level._unitriggers.trigger_pool[player getentitynumber()] = undefined;
                 } else if (isdefined(trigger)) {
                     cleanup_trigger(trigger, player);
                 }
@@ -1300,7 +1300,7 @@ function private function_bb454fe6() {
                     }
                     if (isdefined(trigger)) {
                         if (is_same_trigger(old_trigger, trigger)) {
-                            player getentitynumber() = [];
+                            level._unitriggers.trigger_pool[player getentitynumber()] = undefined;
                         } else {
                             cleanup_trigger(trigger, player);
                         }

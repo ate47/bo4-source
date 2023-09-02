@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/ability_util.gsc;
-#include scripts/mp/mp_geothermal_sound.gsc;
-#include scripts/mp/mp_geothermal_fx.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/compass.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\mp\mp_geothermal_sound.gsc;
+#using scripts\mp\mp_geothermal_fx.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\compass.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace mp_geothermal;
 
@@ -80,7 +80,7 @@ function function_89088577() {
 // Checksum 0x39cab4e0, Offset: 0xca8
 // Size: 0x10c
 function function_34fc666e() {
-    if (util::isfirstround() && draft::is_draft_this_round() && getgametypesetting(#"allowMapScripting")) {
+    if (util::isfirstround() && draft::is_draft_this_round() && getgametypesetting(#"hash_5e5bd42399148b51")) {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
@@ -98,7 +98,7 @@ function function_34fc666e() {
 // Size: 0xdc
 function function_c3c859e1() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    if (util::isfirstround() && getgametypesetting(#"allowMapScripting")) {
+    if (util::isfirstround() && getgametypesetting(#"hash_5e5bd42399148b51")) {
         exploder::exploder("fxexp_pipe_explosion");
         util::delay(1, undefined, &exploder::exploder, "fxexp_pipe_explosion_fires");
         level thread scene::play(#"hash_4ef02c46a17d4830", "Shot 2");

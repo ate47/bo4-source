@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_bgb.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\zm_common\zm_bgb.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_bgb_dividend_yield;
 
@@ -46,7 +46,7 @@ function function_441dc042(localclientnum, oldval, newval, bnewent, binitialsnap
         }
     } else if (isdefined(self.var_4399fda6) && isdefined(self.var_4399fda6[localclientnum])) {
         stopfx(localclientnum, self.var_4399fda6[localclientnum]);
-        localclientnum = [];
+        self.var_4399fda6[localclientnum] = undefined;
     }
 }
 
@@ -62,7 +62,7 @@ function function_1e792793(localclientnum, oldval, newval, bnewent, binitialsnap
         level.var_b28c30ba[localclientnum] = playfxoncamera(localclientnum, "zombie/fx_bgb_profit_1p", (0, 0, 0), (1, 0, 0));
     } else if (isdefined(level.var_b28c30ba[localclientnum])) {
         stopfx(localclientnum, level.var_b28c30ba[localclientnum]);
-        localclientnum = [];
+        level.var_b28c30ba[localclientnum] = undefined;
     }
 }
 

@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace vehicle;
 

@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/ai/planner_mp_dom_squad.gsc;
-#include script_60f1433e7c9a921c;
-#include scripts/core_common/ai/planner_squad_utility.gsc;
-#include scripts/core_common/ai/planner_generic_commander.gsc;
-#include scripts/core_common/ai/planner_commander_utility.gsc;
-#include scripts/core_common/ai/planner_commander.gsc;
-#include scripts/core_common/ai/systems/planner.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
+#using scripts\mp_common\ai\planner_mp_dom_squad.gsc;
+#using script_60f1433e7c9a921c;
+#using scripts\core_common\ai\planner_squad_utility.gsc;
+#using scripts\core_common\ai\planner_generic_commander.gsc;
+#using scripts\core_common\ai\planner_commander_utility.gsc;
+#using scripts\core_common\ai\planner_commander.gsc;
+#using scripts\core_common\ai\systems\planner.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
 
 #namespace plannermpdomcommander;
 

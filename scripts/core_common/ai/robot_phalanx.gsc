@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/values_shared.gsc;
-#include script_3819e7a1427df6d2;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using script_3819e7a1427df6d2;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace robotphalanx;
 

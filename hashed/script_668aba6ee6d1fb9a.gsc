@@ -1,27 +1,27 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/tweakables_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/fx_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/killstreaks/mp/killstreaks.gsc;
-#include scripts/mp_common/gametypes/prop.gsc;
-#include scripts/mp_common/gametypes/spawnlogic.gsc;
-#include scripts/mp_common/gametypes/spawning.gsc;
-#include scripts/mp_common/gametypes/_prop_dev.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/gametypes/dogtags.gsc;
-#include scripts/mp_common/util.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\tweakables_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\fx_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\killstreaks\mp\killstreaks.gsc;
+#using scripts\mp_common\gametypes\prop.gsc;
+#using scripts\mp_common\gametypes\spawnlogic.gsc;
+#using scripts\mp_common\gametypes\spawning.gsc;
+#using scripts\mp_common\gametypes\_prop_dev.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\gametypes\dogtags.gsc;
+#using scripts\mp_common\util.gsc;
 
 #namespace prop_controls;
 
@@ -1392,7 +1392,7 @@ function function_6eadaf78(grenade, weapon) {
     waitframe(1);
     self function_58699cee(index);
     waitframe(1);
-    index = [];
+    level.var_fe458fef[index] = undefined;
 }
 
 // Namespace prop_controls/_prop_controls

@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace aisquads;
 
@@ -145,7 +145,7 @@ function private createsquad(squadname) {
 // Size: 0x44
 function private removesquad(squadname) {
     if (isdefined(level._squads) && isdefined(level._squads[squadname])) {
-        squadname = [];
+        level._squads[squadname] = undefined;
     }
 }
 

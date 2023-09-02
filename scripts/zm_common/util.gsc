@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/sound_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/fx_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\fx_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace util;
 
@@ -28,7 +28,7 @@ function brush_delete() {
         assert(isdefined(self.model));
     #/
     if (!isdefined(self.v[#"fxid"]) || self.v[#"fxid"] == "No FX") {
-        #"exploder" = [];
+        self.v[#"exploder"] = undefined;
     }
     waittillframeend();
     self.model delete();
@@ -75,7 +75,7 @@ function brush_throw() {
     z = temp_vec[2];
     self.model rotatevelocity((x, y, z), 12);
     self.model movegravity((x, y, z), 12);
-    #"exploder" = [];
+    self.v[#"exploder"] = undefined;
     wait(6);
     self.model delete();
 }

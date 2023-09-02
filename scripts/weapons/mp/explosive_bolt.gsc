@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weapons.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\weapons\weapons.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace explosive_bolt;
 

@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace namespace_7d8e6ec3;
 

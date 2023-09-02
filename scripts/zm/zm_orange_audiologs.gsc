@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_hms_util.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_item_pickup.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm\zm_hms_util.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_item_pickup.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace zm_orange_audiologs;
 

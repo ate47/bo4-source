@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_ai_utils.gsc;
-#include scripts/wz_common/wz_ai_zombie.gsc;
-#include scripts/mp_common/player/player_damage.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/infection.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include script_3819e7a1427df6d2;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_utility.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\wz_common\wz_ai_utils.gsc;
+#using scripts\wz_common\wz_ai_zombie.gsc;
+#using scripts\mp_common\player\player_damage.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\infection.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_utility.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_mocomp.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace wz_ai_zombie_dog;
 

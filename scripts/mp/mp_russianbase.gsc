@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/load.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/compass.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\compass.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace mp_russianbase;
 
@@ -34,7 +34,7 @@ function event_handler[level_init] main(eventstruct) {
 // Size: 0x196
 function function_c3c859e1() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    if (getgametypesetting(#"allowMapScripting")) {
+    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
         level thread function_8dc01472();
         if (util::isfirstround() && draft::is_draft_this_round()) {
             crane = getent("linear_crane_moveable", "targetname");
@@ -124,7 +124,7 @@ function function_4dd23d6e() {
     end_spot = struct::get(crane.target, "targetname");
     crane.endpoint = end_spot.origin;
     crane.location = #"start";
-    if (getgametypesetting(#"allowMapScripting") && draft::is_draft_this_round()) {
+    if (getgametypesetting(#"hash_5e5bd42399148b51") && draft::is_draft_this_round()) {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
@@ -139,7 +139,7 @@ function function_4dd23d6e() {
         crane playsound("evt_gantry_start");
         crane waittill(#"movedone");
     }
-    if (!getdvarint(#"hash_2d698a5ac4538f6d", 1) || !getgametypesetting(#"allowMapScripting")) {
+    if (!getdvarint(#"hash_2d698a5ac4538f6d", 1) || !getgametypesetting(#"hash_5e5bd42399148b51")) {
         foreach (button in crane.buttons) {
             button.mdl_gameobject gameobjects::destroy_object(1, 0);
         }

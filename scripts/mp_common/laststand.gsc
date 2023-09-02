@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/player/player_damage.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/weapons/weapons.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/demo_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include script_5394c653bafe1358;
-#include script_243ea03c7a285692;
+#using scripts\mp_common\player\player_damage.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\weapons\weapons.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\demo_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using script_5394c653bafe1358;
+#using script_243ea03c7a285692;
 
 #namespace laststand_mp;
 

@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.csc;
-#include scripts/killstreaks/remotemissile_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\killstreaks\remotemissile_shared.csc;
 
 #namespace remotemissile;
 

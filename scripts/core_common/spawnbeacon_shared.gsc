@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
 
 #namespace spawn_beacon;
 
@@ -560,7 +560,7 @@ function function_a9ff3efb(var_d3213f00) {
         #/
         if (isdefined(self.objectiveid)) {
             deleteobjective(self.objectiveid);
-            self.objectiveid = [];
+            level.spawnbeaconsettings.beacons[self.objectiveid] = undefined;
         }
         self.beacondisabled = 1;
         freespawnbeaconspawnlist(self.spawnlist);
@@ -842,7 +842,7 @@ function retreatedstartmelee(var_a820f9, spawns) {
         if (isdefined(beacontoremove)) {
             beacontoremove thread function_a9ff3efb(0);
         } else {
-            self.clientid = [];
+            level.spawnbeaconsettings.userspawnbeacons[self.clientid] = undefined;
         }
     }
     slot = player gadgetgetslot(level.spawnbeaconsettings.var_c1a364b9);

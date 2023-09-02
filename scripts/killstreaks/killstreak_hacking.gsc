@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace killstreak_hacking;
 

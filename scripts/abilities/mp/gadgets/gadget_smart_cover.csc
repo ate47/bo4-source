@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/ability_util.csc;
-#include scripts/abilities/ability_power.csc;
-#include scripts/abilities/ability_player.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/abilities/gadgets/gadget_smart_cover.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\abilities\ability_util.csc;
+#using scripts\abilities\ability_power.csc;
+#using scripts\abilities\ability_player.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\abilities\gadgets\gadget_smart_cover.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace smart_cover;
 

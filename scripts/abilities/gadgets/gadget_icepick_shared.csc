@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreak_detect.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/array_shared.csc;
+#using scripts\killstreaks\killstreak_detect.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\array_shared.csc;
 
 #namespace icepick;
 
@@ -123,7 +123,7 @@ function function_d3c5b110(local_client_num, oldval, newval, bnewent, binitialsn
         }
     } else if (isdefined(level.var_1a8113a7[local_client_num])) {
         function_d48752e(local_client_num, level.var_1a8113a7[local_client_num]);
-        local_client_num = [];
+        level.var_1a8113a7[local_client_num] = undefined;
         playsound(local_client_num, #"hash_1d4f78480965b59d");
     }
 }
@@ -350,7 +350,7 @@ function function_868adc20(local_client_num, oldval, newval, bnewent, binitialsn
         }
     } else if (newval == 0 && isdefined(level.var_422c4695[local_client_num])) {
         function_d48752e(local_client_num, level.var_422c4695[local_client_num]);
-        local_client_num = [];
+        level.var_422c4695[local_client_num] = undefined;
         if (!bwastimejump) {
             playsound(local_client_num, #"hash_b5e00bf57762b86");
         }

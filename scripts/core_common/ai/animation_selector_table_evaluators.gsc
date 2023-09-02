@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/systems/animation_selector_table.gsc;
+#using scripts\core_common\ai\systems\animation_selector_table.gsc;
 
 #namespace animation_selector_table_evaluators;
 

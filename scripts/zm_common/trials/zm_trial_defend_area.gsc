@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include script_2595527427ea71eb;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_laststand.gsc;
-#include scripts/core_common/bots/bot_util.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using script_2595527427ea71eb;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_laststand.gsc;
+#using scripts\core_common\bots\bot_util.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_trial_defend_area;
 

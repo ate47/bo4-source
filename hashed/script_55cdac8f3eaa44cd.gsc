@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include script_c5bc2e592d581d0;
-#include scripts/core_common/ai/planner_squad_utility.gsc;
-#include scripts/core_common/ai/planner_commander_utility.gsc;
-#include scripts/core_common/ai/planner_commander.gsc;
-#include scripts/core_common/ai/systems/planner.gsc;
+#using script_c5bc2e592d581d0;
+#using scripts\core_common\ai\planner_squad_utility.gsc;
+#using scripts\core_common\ai\planner_commander_utility.gsc;
+#using scripts\core_common\ai\planner_commander.gsc;
+#using scripts\core_common\ai\systems\planner.gsc;
 
 #namespace namespace_42cba673;
 

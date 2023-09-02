@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include script_1f0e83e43bf9c3b9;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/ai/systems/behavior_state_machine.gsc;
-#include scripts/core_common/ai/systems/ai_blackboard.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/aat_shared.gsc;
+#using script_1f0e83e43bf9c3b9;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\ai\systems\behavior_state_machine.gsc;
+#using scripts\core_common\ai\systems\ai_blackboard.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_notetracks.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_mocomp.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\aat_shared.gsc;
 
 #namespace archetypenosferatu;
 

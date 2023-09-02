@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/teams/teamset.gsc;
+#using scripts\mp_common\teams\teamset.gsc;
 
 #namespace teamset_multiteam;
 

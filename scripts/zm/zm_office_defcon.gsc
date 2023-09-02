@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/zm/zm_office_ww_quest.gsc;
-#include scripts/zm/zm_office_teleporters.gsc;
-#include script_59a783d756554a80;
-#include scripts/zm_common/zm_pack_a_punch.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\zm\zm_office_ww_quest.gsc;
+#using scripts\zm\zm_office_teleporters.gsc;
+#using script_59a783d756554a80;
+#using scripts\zm_common\zm_pack_a_punch.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_office_defcon;
 

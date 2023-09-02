@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/player/player_stats.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/struct.csc;
-#include script_474309807eb94f34;
+#using scripts\core_common\player\player_stats.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\struct.csc;
+#using script_474309807eb94f34;
 
 #namespace activecamo;
 

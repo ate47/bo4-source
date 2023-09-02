@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/ct_core.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include script_4196ba3abca31535;
+#using scripts\mp_common\gametypes\ct_core.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using script_4196ba3abca31535;
 
 #namespace ct_seraph;
 

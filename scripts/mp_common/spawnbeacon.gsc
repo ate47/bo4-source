@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/mp_common/userspawnselection.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/core_common/spawnbeacon_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\mp_common\userspawnselection.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\core_common\spawnbeacon_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace spawn_beacon;
 
@@ -377,7 +377,7 @@ function private function_e67b6bd(player) {
             gameobject.trigger.origin = spawnbeacon.origin;
         }
     }
-    spawnbeacon.objectiveid = [];
+    level.spawnbeaconsettings.beacons[spawnbeacon.objectiveid] = undefined;
     userspawnselection::removespawnbeacon(spawnbeacon.objectiveid);
     objective_delete(spawnbeacon.objectiveid);
     heldweapon = getweapon(#"hash_7ab3f9a730359659");

@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/gametypes/globallogic_score.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_pack_a_punch_util.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/table_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\zm_common\gametypes\globallogic_score.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_pack_a_punch_util.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\table_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace zm_daily_challenges;
 

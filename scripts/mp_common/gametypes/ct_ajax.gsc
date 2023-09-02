@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/ct_utils.gsc;
-#include scripts/mp_common/gametypes/ct_gadgets.gsc;
-#include scripts/mp_common/gametypes/ct_core.gsc;
-#include scripts/mp_common/gametypes/ct_bots.gsc;
-#include scripts/mp_common/gametypes/ct_ajax_tutorial.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\ct_utils.gsc;
+#using scripts\mp_common\gametypes\ct_gadgets.gsc;
+#using scripts\mp_common\gametypes\ct_core.gsc;
+#using scripts\mp_common\gametypes\ct_bots.gsc;
+#using scripts\mp_common\gametypes\ct_ajax_tutorial.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace ct_ajax;
 

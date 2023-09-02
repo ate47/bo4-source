@@ -1,34 +1,34 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/tacticalinsertion.gsc;
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/placeables.gsc;
-#include scripts/core_common/loadout_shared.gsc;
-#include scripts/abilities/ability_util.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/killstreak_hacking.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/hud_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/dialog_shared.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/damage.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\tacticalinsertion.gsc;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\placeables.gsc;
+#using scripts\core_common\loadout_shared.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\killstreak_hacking.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\hud_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\dialog_shared.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\damage.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace killstreaks;
 
@@ -1252,7 +1252,7 @@ function recordkillstreakbegindirect(killstreak, recordstreakindex) {
         kills = player.killstreakevents[recordstreakindex];
         eventindex = player recordkillstreakevent(recordstreakindex, var_b16cd32d);
         player killstreakrules::recordkillstreakenddirect(eventindex, recordstreakindex, kills);
-        recordstreakindex = [];
+        player.killstreakevents[recordstreakindex] = undefined;
     } else {
         eventindex = player recordkillstreakevent(recordstreakindex, var_b16cd32d);
         player.killstreakevents[recordstreakindex] = eventindex;
@@ -1403,10 +1403,10 @@ function remove_used_killstreak(killstreak, killstreakid, take_weapon_after_use 
         self.pers[#"killstreak_unique_id"][i] = self.pers[#"killstreak_unique_id"][i + 1];
         self.pers[#"killstreak_ammo_count"][i] = self.pers[#"killstreak_ammo_count"][i + 1];
     }
-    arraysize - 1 = [];
-    arraysize - 1 = [];
-    arraysize - 1 = [];
-    arraysize - 1 = [];
+    self.pers[#"killstreaks"][arraysize - 1] = undefined;
+    self.pers[#"killstreak_has_been_used"][arraysize - 1] = undefined;
+    self.pers[#"killstreak_unique_id"][arraysize - 1] = undefined;
+    self.pers[#"killstreak_ammo_count"][arraysize - 1] = undefined;
     return 1;
 }
 
@@ -2096,7 +2096,7 @@ function get_killstreak_usage(usagekey) {
 // Size: 0xee
 function on_player_spawned() {
     profilestart();
-    pixbeginevent(#"_killstreaks.gsc/onPlayerSpawned");
+    pixbeginevent(#"hash_1d81325f0403ec55");
     self thread give_owned();
     self.killcamkilledbyent = undefined;
     self callback::on_weapon_change(&function_4f415d8e);
@@ -3204,7 +3204,7 @@ function trackactivekillstreak(killstreak) {
         self endon(#"disconnect");
         self.pers[#"activekillstreaks"][killstreakindex] = killstreak;
         killstreak waittill(#"killstreak_hacked", #"death");
-        killstreakindex = [];
+        self.pers[#"activekillstreaks"][killstreakindex] = undefined;
     }
 }
 
@@ -3736,7 +3736,7 @@ function remove_ricochet_protection(killstreak_id, owner) {
     if (!isdefined(owner) || !isdefined(owner.ricochet_protection) || !isdefined(killstreak_id)) {
         return;
     }
-    killstreak_id = [];
+    owner.ricochet_protection[killstreak_id] = undefined;
 }
 
 // Namespace killstreaks/killstreaks_shared

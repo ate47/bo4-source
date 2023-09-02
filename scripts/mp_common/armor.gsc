@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/perks.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\perks.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace armor;
 

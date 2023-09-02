@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/callbacks.csc;
-#include scripts/core_common/visionset_mgr_shared.csc;
-#include scripts/core_common/vehicles/driving_fx.csc;
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/killstreaks/killstreak_bundles.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\mp_common\callbacks.csc;
+#using scripts\core_common\visionset_mgr_shared.csc;
+#using scripts\core_common\vehicles\driving_fx.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\killstreaks\killstreak_bundles.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace killstreak_vehicle;
 

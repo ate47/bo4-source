@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/match_record.gsc;
+#using scripts\core_common\match_record.gsc;
 
 #namespace compass;
 

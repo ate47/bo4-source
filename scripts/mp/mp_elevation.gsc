@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_elevation_sound.gsc;
-#include scripts/mp/mp_elevation_fx.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/compass.gsc;
+#using scripts\mp\mp_elevation_sound.gsc;
+#using scripts\mp\mp_elevation_fx.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\compass.gsc;
 
 #namespace mp_elevation;
 

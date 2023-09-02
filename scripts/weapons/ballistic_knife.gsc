@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
 
 #namespace ballistic_knife;
 

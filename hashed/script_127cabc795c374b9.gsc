@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/wz_common/wz_ai_utils.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include script_cb32d07c95e5628;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\wz_common\wz_ai_utils.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using script_cb32d07c95e5628;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace namespace_87f097c4;
 

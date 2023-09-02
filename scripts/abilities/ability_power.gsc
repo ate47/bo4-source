@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/ability_util.gsc;
-#include scripts/abilities/ability_gadgets.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\abilities\ability_gadgets.gsc;
 
 #namespace ability_power;
 

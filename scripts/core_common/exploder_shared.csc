@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/sound_shared.csc;
-#include scripts/core_common/fx_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\sound_shared.csc;
+#using scripts\core_common\fx_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace exploder;
 
@@ -268,7 +268,7 @@ function stop_exploder(exploder_id) {
                 for (j = 0; j < ent.loopfx.size; j++) {
                     if (isdefined(ent.loopfx[j])) {
                         stopfx(j, ent.loopfx[j]);
-                        j = [];
+                        ent.loopfx[j] = undefined;
                     }
                 }
                 ent.loopfx = [];

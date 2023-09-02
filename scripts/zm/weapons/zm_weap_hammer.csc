@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include script_70ab01a7690ea256;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm/zm_lightning_chain.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using script_70ab01a7690ea256;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm\zm_lightning_chain.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_weap_hammer;
 
@@ -143,7 +143,7 @@ function function_93d275f2(localclientnum, oldval, newval, bnewent, binitialsnap
         self.var_9f5d50f5 = undefined;
     }
     if (isdefined(level.var_76234ae5[localclientnum])) {
-        localclientnum = [];
+        level.var_76234ae5[localclientnum] = undefined;
     }
     if (newval == 1) {
         self.var_9f5d50f5 = util::playfxontag(localclientnum, level._effect[#"lightning_miss"], self, "tag_origin");

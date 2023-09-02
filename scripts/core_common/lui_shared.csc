@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include script_1da833573eb80e61;
-#include script_2feaeed9ab01d6f7;
-#include scripts/core_common/multi_extracam.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/character_customization.csc;
-#include scripts/core_common/struct.csc;
+#using script_1da833573eb80e61;
+#using script_2feaeed9ab01d6f7;
+#using scripts\core_common\multi_extracam.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\character_customization.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace lui;
 
@@ -574,12 +574,12 @@ function private _screen_close_menu() {
         str_menu = "FullScreenBlack";
         if (isdefined(self.screen_fade_menus[str_menu])) {
             closeluimenu(self.localclientnum, self.screen_fade_menus[str_menu].lui_menu);
-            str_menu = [];
+            self.screen_fade_menus[str_menu] = undefined;
         }
         str_menu = "FullScreenWhite";
         if (isdefined(self.screen_fade_menus[str_menu])) {
             closeluimenu(self.localclientnum, self.screen_fade_menus[str_menu].lui_menu);
-            str_menu = [];
+            self.screen_fade_menus[str_menu] = undefined;
         }
     }
 }
@@ -638,7 +638,7 @@ function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_
     wait(n_time);
     if (b_force_close_menu || n_target_alpha == 0) {
         closeluimenu(self.localclientnum, self.screen_fade_menus[str_menu].lui_menu);
-        str_menu = [];
+        self.screen_fade_menus[str_menu] = undefined;
     }
 }
 

@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/ai/strategic_command.gsc;
-#include scripts/core_common/ai/region_utility.gsc;
-#include scripts/core_common/ai/planner_squad.gsc;
-#include scripts/core_common/ai/planner_commander.gsc;
-#include scripts/core_common/ai/systems/planner_blackboard.gsc;
-#include scripts/core_common/ai/systems/planner.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\ai\strategic_command.gsc;
+#using scripts\core_common\ai\region_utility.gsc;
+#using scripts\core_common\ai\planner_squad.gsc;
+#using scripts\core_common\ai\planner_commander.gsc;
+#using scripts\core_common\ai\systems\planner_blackboard.gsc;
+#using scripts\core_common\ai\systems\planner.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
 
 #namespace namespace_ff7f7372;
 

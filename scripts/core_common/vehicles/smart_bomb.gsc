@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace smart_bomb;
 

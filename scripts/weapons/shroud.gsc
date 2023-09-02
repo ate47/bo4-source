@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/damage.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\damage.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace shroud;
 

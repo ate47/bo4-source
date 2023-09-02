@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
 
 #namespace radar_sweeps;
 

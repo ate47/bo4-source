@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/gamerep.gsc;
-#include scripts/mp_common/player/player_record.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/gamestate.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\gamerep.gsc;
+#using scripts\mp_common\player\player_record.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\gamestate.gsc;
 
 #namespace player;
 
@@ -61,25 +61,25 @@ function callback_playerdisconnect() {
                 level.players[entry] = level.players[entry + 1];
                 entry++;
             }
-            entry = [];
+            level.players[entry] = undefined;
             break;
         }
     }
     for (entry = 0; entry < level.players.size; entry++) {
         if (isdefined(level.players[entry].pers[#"killed_players"][self.name])) {
-            self.name = [];
+            level.players[entry].pers[#"killed_players"][self.name] = undefined;
         }
         if (isdefined(level.players[entry].pers[#"killed_players_with_specialist"][self.name])) {
-            self.name = [];
+            level.players[entry].pers[#"killed_players_with_specialist"][self.name] = undefined;
         }
         if (isdefined(level.players[entry].killedplayerscurrent[self.name])) {
-            self.name = [];
+            level.players[entry].killedplayerscurrent[self.name] = undefined;
         }
         if (isdefined(level.players[entry].pers[#"killed_by"][self.name])) {
-            self.name = [];
+            level.players[entry].pers[#"killed_by"][self.name] = undefined;
         }
         if (isdefined(level.players[entry].pers[#"nemesis_tracking"][self.name])) {
-            self.name = [];
+            level.players[entry].pers[#"nemesis_tracking"][self.name] = undefined;
         }
         if (level.players[entry].pers[#"nemesis_name"] == self.name) {
             level.players[entry] function_79915d44();

@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/gadgets/gadget_homunculus.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/sensor_dart.gsc;
-#include scripts/mp_common/armor.gsc;
-#include scripts/mp_common/item_world_util.gsc;
-#include script_cb32d07c95e5628;
-#include script_3a6e1cc57d28db61;
-#include script_6b993fdc7adc35ec;
-#include scripts/mp_common/item_inventory.gsc;
-#include scripts/mp_common/item_drop.gsc;
-#include scripts/mp_common/dynent_world.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\abilities\gadgets\gadget_homunculus.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\sensor_dart.gsc;
+#using scripts\mp_common\armor.gsc;
+#using scripts\mp_common\item_world_util.gsc;
+#using script_cb32d07c95e5628;
+#using script_3a6e1cc57d28db61;
+#using script_6b993fdc7adc35ec;
+#using scripts\mp_common\item_inventory.gsc;
+#using scripts\mp_common\item_drop.gsc;
+#using scripts\mp_common\dynent_world.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace item_world;
 
@@ -1099,7 +1099,7 @@ function function_248022d9() {
                 if (time - respawnitem.hidetime >= level.var_75dc9c49) {
                     function_54ca5536(respawnitem.id, 0);
                     function_bfc28859(3, respawnitem.id, var_5610ded4, 1);
-                    index = [];
+                    level.var_37a4536d[index] = undefined;
                 } else {
                     break;
                 }

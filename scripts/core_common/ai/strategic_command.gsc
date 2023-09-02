@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/bots/bot_chain.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/ai/planner_squad.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\bots\bot_chain.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\planner_squad.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
 
 #namespace strategic_command;
 

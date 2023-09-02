@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_traps.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_contracts.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_traps.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_contracts.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace namespace_f2050961;
 

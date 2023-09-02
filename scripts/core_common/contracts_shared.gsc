@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/gamestate.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\gamestate.gsc;
 
 #namespace contracts;
 
@@ -224,7 +224,7 @@ function function_5e1c4d33(var_5ceb23d0) {
         }
         var_38280f2f = var_5ceb23d0.var_38280f2f;
         if (var_38280f2f == #"hash_6a1133003efe7380") {
-            var_38280f2f = [];
+            player.pers[#"contracts"][var_38280f2f] = undefined;
             return;
         }
         var_5ceb23d0.var_38280f2f = undefined;
@@ -300,7 +300,7 @@ function function_33bab9aa() {
                         continue;
                     }
                     if (isdefined(player.pers) && isdefined(player.pers[#"contracts"])) {
-                        #"contracts" = [];
+                        player.pers[#"contracts"] = undefined;
                     }
                     iprintln("<unknown string>" + player.name);
                 }

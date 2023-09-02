@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/planemortar_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/killstreak_hacking.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/weapons/heatseekingmissile.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
+#using scripts\killstreaks\planemortar_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\killstreak_hacking.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\weapons\heatseekingmissile.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
 
 #namespace artillery_barrage;
 

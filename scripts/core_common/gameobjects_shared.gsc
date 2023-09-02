@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/tweakables_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\tweakables_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace gameobjects;
 
@@ -3022,7 +3022,7 @@ function trigger_touch_think(object) {
         }
     }
     if (isdefined(self)) {
-        object.entnum = [];
+        self.touchtriggers[object.entnum] = undefined;
         if (isdefined(object.objectiveid) && object.type != "carryObject") {
             if (isplayer(self)) {
                 objective_clearplayerusing(object.objectiveid, self);
@@ -3031,7 +3031,7 @@ function trigger_touch_think(object) {
             }
         }
     } else if (isdefined(object.var_1dbb2b2b) && isdefined(object.var_1dbb2b2b[team])) {
-        touchname = [];
+        object.var_1dbb2b2b[team][touchname] = undefined;
     }
     if (level.gameended) {
         return;
@@ -3039,7 +3039,7 @@ function trigger_touch_think(object) {
     if (isdefined(var_f25f27fb)) {
         var_f25f27fb.var_e22ea52b = 0;
     }
-    touchname = [];
+    object.touchlist[team][touchname] = undefined;
     object.numtouching[team] = object.numtouching[team] - score;
     object.touchinguserate[team] = object.touchinguserate[team] - player_use_rate;
     if (object.numtouching[team] < 1) {
@@ -4259,7 +4259,7 @@ function can_interact_with(sentient) {
             if (level.time < ignore_time) {
                 return 0;
             } else {
-                sentient getentitynumber() = [];
+                self.ignore_use_time[sentient getentitynumber()] = undefined;
             }
         }
     }

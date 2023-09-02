@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core/gametypes/frontend.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/scene_shared.csc;
-#include scripts/core_common/lui_shared.csc;
-#include scripts/core_common/exploder_shared.csc;
-#include scripts/core_common/character_customization.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/array_shared.csc;
+#using scripts\core\gametypes\frontend.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\lui_shared.csc;
+#using scripts\core_common\exploder_shared.csc;
+#using scripts\core_common\character_customization.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\array_shared.csc;
 
 #namespace blackmarket;
 

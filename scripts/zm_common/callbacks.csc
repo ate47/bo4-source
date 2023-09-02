@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/weapons/zm_weap_sticky_grenade.csc;
-#include scripts/weapons/acid_bomb.csc;
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/footsteps_shared.csc;
-#include scripts/core_common/filter_shared.csc;
-#include scripts/core_common/exploder_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/audio_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\zm\weapons\zm_weap_sticky_grenade.csc;
+#using scripts\weapons\acid_bomb.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\footsteps_shared.csc;
+#using scripts\core_common\filter_shared.csc;
+#using scripts\core_common\exploder_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\audio_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace callback;
 

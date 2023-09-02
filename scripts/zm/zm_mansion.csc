@@ -1,37 +1,37 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_ui_inventory.csc;
-#include script_42dd312945896668;
-#include scripts/zm/weapons/zm_weap_riotshield.csc;
-#include scripts/zm/zm_mansion_traps_firegates.csc;
-#include scripts/zm/zm_trap_electric.csc;
-#include scripts/core_common/ai/systems/gib.csc;
-#include scripts/zm/ai/zm_ai_bat.csc;
-#include script_5fb8da2731850d9e;
-#include scripts/zm/zm_mansion_storage.csc;
-#include scripts/zm/zm_mansion_impaler.csc;
-#include scripts/zm/zm_mansion_triad.csc;
-#include script_3cd7be071a3f1ce0;
-#include scripts/zm/zm_mansion_sound.csc;
-#include scripts/zm/zm_mansion_ww_lvl3_quest.csc;
-#include scripts/zm/zm_mansion_silver_bullet.csc;
-#include scripts/zm/zm_mansion_pap_quest.csc;
-#include script_2d9c4a173633aa72;
-#include scripts/zm/zm_mansion_jordans.csc;
-#include scripts/zm/zm_mansion_boss_ww.csc;
-#include scripts/zm/zm_mansion_a_skeet_fink.csc;
-#include scripts/zm_common/zm_characters.csc;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_weapons.csc;
-#include scripts/zm_common/zm_fasttravel.csc;
-#include scripts/zm_common/zm_audio_sq.csc;
-#include scripts/zm_common/load.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/fx_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/ai_shared.csc;
+#using scripts\zm_common\zm_ui_inventory.csc;
+#using script_42dd312945896668;
+#using scripts\zm\weapons\zm_weap_riotshield.csc;
+#using scripts\zm\zm_mansion_traps_firegates.csc;
+#using scripts\zm\zm_trap_electric.csc;
+#using scripts\core_common\ai\systems\gib.csc;
+#using scripts\zm\ai\zm_ai_bat.csc;
+#using script_5fb8da2731850d9e;
+#using scripts\zm\zm_mansion_storage.csc;
+#using scripts\zm\zm_mansion_impaler.csc;
+#using scripts\zm\zm_mansion_triad.csc;
+#using script_3cd7be071a3f1ce0;
+#using scripts\zm\zm_mansion_sound.csc;
+#using scripts\zm\zm_mansion_ww_lvl3_quest.csc;
+#using scripts\zm\zm_mansion_silver_bullet.csc;
+#using scripts\zm\zm_mansion_pap_quest.csc;
+#using script_2d9c4a173633aa72;
+#using scripts\zm\zm_mansion_jordans.csc;
+#using scripts\zm\zm_mansion_boss_ww.csc;
+#using scripts\zm\zm_mansion_a_skeet_fink.csc;
+#using scripts\zm_common\zm_characters.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_weapons.csc;
+#using scripts\zm_common\zm_fasttravel.csc;
+#using scripts\zm_common\zm_audio_sq.csc;
+#using scripts\zm_common\load.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\fx_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\ai_shared.csc;
 
 #namespace zm_mansion;
 
@@ -290,7 +290,7 @@ function clock_zombie_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
     }
     foreach (i, fx_clock in self.var_36d3ad0b) {
         stopfx(localclientnum, fx_clock);
-        i = [];
+        self.var_36d3ad0b[i] = undefined;
     }
 }
 
@@ -314,7 +314,7 @@ function function_739703b0(localclientnum, entity, gibflag) {
     }
     if (isint(self.var_36d3ad0b[str_fx])) {
         stopfx(localclientnum, self.var_36d3ad0b[str_fx]);
-        str_fx = [];
+        self.var_36d3ad0b[str_fx] = undefined;
     }
 }
 

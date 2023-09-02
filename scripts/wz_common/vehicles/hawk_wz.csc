@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include script_5520b91a8aa516ab;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/math_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using script_5520b91a8aa516ab;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\math_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace hawk_wz;
 
@@ -677,7 +677,7 @@ function private function_8487fabe(localclientnum) {
         if (!in_sight) {
             if (var_131803ce) {
                 if (bundle.var_d1a5fb3b === 1) {
-                    player getentitynumber() = [];
+                    self.var_5f360c48[player getentitynumber()] = undefined;
                     continue;
                 }
                 if (isdefined(self.var_5f360c48[player getentitynumber()])) {
@@ -685,7 +685,7 @@ function private function_8487fabe(localclientnum) {
                 }
             } else {
                 if (bundle.var_4917731f === 1) {
-                    player getentitynumber() = [];
+                    self.var_c55be3a2[player getentitynumber()] = undefined;
                     continue;
                 }
                 if (isdefined(self.var_c55be3a2[player getentitynumber()])) {

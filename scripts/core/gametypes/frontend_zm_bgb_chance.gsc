@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace zm_frontend_zm_bgb_chance;
 

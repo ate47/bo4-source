@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
+#using scripts\core_common\util_shared.csc;
 
 #namespace flagsys;
 
@@ -33,7 +33,7 @@ function set_for_time(n_time, str_flag) {
 // Size: 0x64
 function clear(str_flag) {
     if (isdefined(self) && isdefined(self.flag) && isdefined(self.flag[str_flag]) && self.flag[str_flag]) {
-        str_flag = [];
+        self.flag[str_flag] = undefined;
         self notify(str_flag);
     }
 }

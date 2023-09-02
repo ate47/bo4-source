@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_red_fasttravel.gsc;
-#include scripts/zm/zm_red_boss_battle.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_aoe.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\zm\zm_red_fasttravel.gsc;
+#using scripts\zm\zm_red_boss_battle.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_aoe.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_trial_red_boss_fight;
 

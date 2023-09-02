@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/zm/perk/zm_perk_wolf_protector.gsc;
-#include scripts/zm/ai/zm_ai_dog.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include script_3819e7a1427df6d2;
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\zm\perk\zm_perk_wolf_protector.gsc;
+#using scripts\zm\ai\zm_ai_dog.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_notetracks.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_mocomp.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace zm_ai_wolf_ally;
 

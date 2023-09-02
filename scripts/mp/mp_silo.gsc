@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_silo_sound.gsc;
-#include scripts/mp/mp_silo_fx.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/compass.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp\mp_silo_sound.gsc;
+#using scripts\mp\mp_silo_fx.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\compass.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace mp_silo;
 
@@ -102,7 +102,7 @@ function function_de525e63() {
         node = getnode(nodename, "targetname");
         linktraversal(node);
     }
-    if (!getgametypesetting(#"allowMapScripting")) {
+    if (!getgametypesetting(#"hash_5e5bd42399148b51")) {
         a_s_gameobjects = struct::get_array("elevator_push_button", "targetname");
         foreach (var_20aecb28 in a_s_gameobjects) {
             var_20aecb28 gameobjects::destroy_object(1, 0);
@@ -220,7 +220,7 @@ function function_c3c859e1() {
     level flag::wait_till("first_player_spawned");
     wait(getdvarfloat(#"hash_205d729c5c415715", 0));
     exploder::exploder("fxexp_alarm_lights");
-    if (!getgametypesetting(#"allowMapScripting")) {
+    if (!getgametypesetting(#"hash_5e5bd42399148b51")) {
         exploder::exploder("fxexp_catwalk_off");
     } else {
         exploder::exploder("fxexp_catwalk_on");

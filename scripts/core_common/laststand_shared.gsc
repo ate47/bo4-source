@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include script_243ea03c7a285692;
-#include scripts/core_common/util_shared.gsc;
+#using script_243ea03c7a285692;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace laststand;
 

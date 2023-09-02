@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreak_detect.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/shoutcaster.csc;
-#include scripts/core_common/dialog_shared.csc;
-#include scripts/core_common/player/player_role.csc;
-#include scripts/core_common/character_customization.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/serverfield_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\killstreaks\killstreak_detect.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\shoutcaster.csc;
+#using scripts\core_common\dialog_shared.csc;
+#using scripts\core_common\player\player_role.csc;
+#using scripts\core_common\character_customization.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\serverfield_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace draft;
 
@@ -193,8 +193,8 @@ function show_cam(localclientnum, xcam, animname, lerpduration) {
 // Size: 0x44
 function stop_cameras(localclientnum) {
     stopmaincamxcam(localclientnum);
-    localclientnum = [];
-    localclientnum = [];
+    level.var_368aaeb9[localclientnum] = undefined;
+    level.var_df72fe54[localclientnum] = undefined;
 }
 
 // Namespace draft/draft

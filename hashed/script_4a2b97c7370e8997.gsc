@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_office_teleporters.gsc;
-#include scripts/zm/zm_office_elevators.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\zm\zm_office_teleporters.gsc;
+#using scripts\zm\zm_office_elevators.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace namespace_aa2f0fe;
 

@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/archetype_human_rpg_interface.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\ai\archetype_human_rpg_interface.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace archetype_human_rpg;
 

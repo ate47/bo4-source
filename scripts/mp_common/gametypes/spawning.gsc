@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace spawning;
 

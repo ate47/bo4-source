@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_util.gsc;
-#include script_cb32d07c95e5628;
-#include scripts/mp_common/item_drop.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player_insertion.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\item_world_util.gsc;
+#using script_cb32d07c95e5628;
+#using scripts\mp_common\item_drop.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player_insertion.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace item_supply_drop;
 

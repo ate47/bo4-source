@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/zm_common/util.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_talisman;
 

@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/teams.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spectating.gsc;
-#include scripts/core_common/platoons.gsc;
+#using scripts\core_common\teams.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spectating.gsc;
+#using scripts\core_common\platoons.gsc;
 
 #namespace infection;
 
@@ -294,10 +294,10 @@ function function_d3da95cf() {
         self.leaving_team = self.pers[#"team"];
     }
     self teams::function_dc7eaabd(team);
-    #"weapon" = [];
-    #"spawnweapon" = [];
-    #"savedmodel" = [];
-    #"teamtime" = [];
+    self.pers[#"weapon"] = undefined;
+    self.pers[#"spawnweapon"] = undefined;
+    self.pers[#"savedmodel"] = undefined;
+    self.pers[#"teamtime"] = undefined;
     self.infected = 1;
     self spectating::set_permissions();
 }

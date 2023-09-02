@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_orange_mq_sendoff.gsc;
-#include scripts/zm/zm_orange_challenges.gsc;
-#include scripts/zm/zm_orange_ee_dynamite.gsc;
-#include scripts/zm/zm_orange_zones.gsc;
-#include scripts/zm/zm_orange_mq_hell.gsc;
-#include scripts/zm/zm_orange_pap.gsc;
-#include scripts/zm/zm_orange_fasttravel_ziplines.gsc;
-#include scripts/zm_common/zm_sq.gsc;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm\zm_orange_mq_sendoff.gsc;
+#using scripts\zm\zm_orange_challenges.gsc;
+#using scripts\zm\zm_orange_ee_dynamite.gsc;
+#using scripts\zm\zm_orange_zones.gsc;
+#using scripts\zm\zm_orange_mq_hell.gsc;
+#using scripts\zm\zm_orange_pap.gsc;
+#using scripts\zm\zm_orange_fasttravel_ziplines.gsc;
+#using scripts\zm_common\zm_sq.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_orange_devgui;
 

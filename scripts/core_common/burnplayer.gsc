@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace burnplayer;
 

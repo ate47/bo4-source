@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_trial.csc;
-#include scripts/core_common/system_shared.csc;
+#using scripts\zm_common\zm_trial.csc;
+#using scripts\core_common\system_shared.csc;
 
 #namespace namespace_a476311c;
 

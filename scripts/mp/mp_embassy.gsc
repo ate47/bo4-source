@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/doors_shared.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/compass.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\core_common\doors_shared.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\compass.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace mp_embassy;
 
@@ -31,7 +31,7 @@ function event_handler[level_init] main(eventstruct) {
 // Size: 0x19c
 function function_34fc666e() {
     level endon(#"game_ended");
-    if (util::isfirstround() && getgametypesetting(#"allowMapScripting") && draft::is_draft_this_round()) {
+    if (util::isfirstround() && getgametypesetting(#"hash_5e5bd42399148b51") && draft::is_draft_this_round()) {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
@@ -55,7 +55,7 @@ function function_c3c859e1() {
     array::delete_all(getentarray("sun_block", "targetname"));
     scene::stop(#"hash_127ce0c6d4b4f2aa", 1);
     scene::stop(#"hash_127cdfc6d4b4f0f7", 1);
-    if (util::isfirstround() && getgametypesetting(#"allowMapScripting")) {
+    if (util::isfirstround() && getgametypesetting(#"hash_5e5bd42399148b51")) {
         exploder::exploder("fxexp_embassy_explosion");
         level util::delay(4, "game_ended", &scene::play, #"hash_ebe25ca358c0cba");
         level thread scene::play(#"hash_1971c36184b14ef8");

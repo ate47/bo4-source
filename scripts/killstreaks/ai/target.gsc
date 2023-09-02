@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/targetting_delay.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\targetting_delay.gsc;
 
 #namespace ai_target;
 

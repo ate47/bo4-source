@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace zm_magicbox;
 
@@ -222,7 +222,7 @@ function function_d7e80953(localclientnum, newval, str_state) {
     if (isdefined(self) && isdefined(self.var_6bcfabea[localclientnum])) {
         if (newval || !newval && self.var_37becd64 === str_state) {
             stopfx(localclientnum, self.var_6bcfabea[localclientnum]);
-            localclientnum = [];
+            self.var_6bcfabea[localclientnum] = undefined;
         }
     }
     self notify(#"end_demo_jump_listener");
@@ -265,7 +265,7 @@ function function_e8a16acc(localclientnum) {
 function function_db505504(localclientnum) {
     if (isdefined(self) && isdefined(self.var_c142c34f[localclientnum])) {
         killfx(localclientnum, self.var_c142c34f[localclientnum]);
-        localclientnum = [];
+        self.var_c142c34f[localclientnum] = undefined;
     }
     self notify(#"hash_22de3d549a25efd3");
 }
@@ -346,13 +346,13 @@ function function_24deca6d(localclientnum) {
         for (i = 0; i < self.var_4d1d25b5[localclientnum].size; i++) {
             killfx(localclientnum, self.var_4d1d25b5[localclientnum][i]);
         }
-        localclientnum = [];
+        self.var_4d1d25b5[localclientnum] = undefined;
     }
     if (isdefined(self) && isdefined(self.var_cf76db4a[localclientnum])) {
         for (i = 0; i < self.var_cf76db4a[localclientnum].size; i++) {
             stopfx(localclientnum, self.var_cf76db4a[localclientnum][i]);
         }
-        localclientnum = [];
+        self.var_cf76db4a[localclientnum] = undefined;
     }
     self notify(#"hash_33c72dec301d4a01");
 }

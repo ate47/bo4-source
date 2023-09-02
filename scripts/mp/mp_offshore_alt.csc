@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_offshore_alt_player_rain.csc;
-#include scripts/mp/mp_offshore_alt_sound.csc;
-#include scripts/mp/mp_offshore_alt_fx.csc;
-#include scripts/mp_common/load.csc;
-#include scripts/core_common/util_shared.csc;
+#using scripts\mp\mp_offshore_alt_player_rain.csc;
+#using scripts\mp\mp_offshore_alt_sound.csc;
+#using scripts\mp\mp_offshore_alt_fx.csc;
+#using scripts\mp_common\load.csc;
+#using scripts\core_common\util_shared.csc;
 
 #namespace mp_offshore_alt;
 

@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/callbacks.csc;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_trial_util.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/system_shared.csc;
+#using scripts\zm_common\callbacks.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_trial_util.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\system_shared.csc;
 
 #namespace zm_trial;
 

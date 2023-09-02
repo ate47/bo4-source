@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/ai/archetype_catalyst_interface.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_mocomp.gsc;
-#include scripts/core_common/spawner_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\ai\archetype_catalyst_interface.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_mocomp.gsc;
+#using scripts\core_common\spawner_shared.gsc;
 
 #namespace archetypecatalyst;
 

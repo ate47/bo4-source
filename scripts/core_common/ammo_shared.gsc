@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/ai/systems/shared.gsc;
-#include scripts/core_common/hud_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\ai\systems\shared.gsc;
+#using scripts\core_common\hud_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace ammo;
 

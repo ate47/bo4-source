@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_powerup_bonus_points_team;
 

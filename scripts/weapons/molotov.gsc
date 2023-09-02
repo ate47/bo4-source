@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/weapons/weapons.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/entityheadicons_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\weapons\weapons.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\entityheadicons_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace molotov;
 
@@ -291,7 +291,7 @@ function function_31cc6bd9() {
     time = gettime();
     foreach (key in keys) {
         if (level.var_a88ac760[key].var_46ee5246 < time) {
-            key = [];
+            level.var_a88ac760[key] = undefined;
         }
     }
 }
@@ -770,12 +770,12 @@ function trytoapplyfiredamage(target, owner, position, fireeffectarea, var_289a7
         if (target.var_84e41b20.size == 0) {
             target.var_84e41b20 = undefined;
             target status_effect::function_408158ef(level.var_5d450296, level.var_e6a4f161);
-            targetentnum = [];
+            self.var_ebf0b1c9[targetentnum] = undefined;
         } else if (isdefined(killcament)) {
-            killcament.starttime = [];
+            target.var_84e41b20[killcament.starttime] = undefined;
         }
         if (isdefined(owner)) {
-            targetentnum = [];
+            owner.var_52dceca[targetentnum] = undefined;
         }
     }
 }
@@ -907,7 +907,7 @@ function resetfiredamage(entnum, time) {
     if (time > 0.05) {
         wait(time - 0.05);
     }
-    entnum = [];
+    level.var_e8a6b3ee[entnum] = undefined;
 }
 
 // Namespace molotov/molotov

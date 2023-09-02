@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai_shared.gsc;
-#include script_67c9a990c0db216c;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/mp/mp_nuketown_4_sound.gsc;
-#include scripts/mp/mp_nuketown_4_fx.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/load.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/compass.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using script_67c9a990c0db216c;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\mp\mp_nuketown_4_sound.gsc;
+#using scripts\mp\mp_nuketown_4_fx.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\load.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\compass.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace mp_nuketown_4;
 

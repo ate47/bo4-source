@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/gametypes/dev.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\zm_common\gametypes\dev.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace dev_class;
 

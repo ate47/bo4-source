@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/deployable.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\weapons\deployable.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace smart_cover;
 
@@ -453,8 +453,8 @@ function play_fx_on_tag(localclientnum, fxname, tag, team) {
 function stop_fx_on_tag(localclientnum, fxname, tag) {
     if (isdefined(self.fxhandles[tag])) {
         stopfx(localclientnum, self.fxhandles[tag]);
-        tag = [];
-        tag = [];
+        self.fxhandles[tag] = undefined;
+        self.fxnames[tag] = undefined;
     }
 }
 

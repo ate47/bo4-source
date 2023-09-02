@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_lightning_chain.csc;
-#include scripts/zm_common/zm_bgb.csc;
-#include scripts/core_common/system_shared.csc;
+#using scripts\zm\zm_lightning_chain.csc;
+#using scripts\zm_common\zm_bgb.csc;
+#using scripts\core_common\system_shared.csc;
 
 #namespace zm_bgb_pop_shocks;
 

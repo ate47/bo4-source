@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/burnplayer.csc;
-#include script_38dc72b5220a1a67;
+#using scripts\core_common\burnplayer.csc;
+#using script_38dc72b5220a1a67;
 
 #namespace ct_firebreak_tutorial;
 

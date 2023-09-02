@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/perk/zm_perk_death_perception.csc;
-#include scripts/zm_common/zm.csc;
-#include scripts/zm_common/zm_trial.csc;
-#include scripts/core_common/system_shared.csc;
+#using scripts\zm\perk\zm_perk_death_perception.csc;
+#using scripts\zm_common\zm.csc;
+#using scripts\zm_common\zm_trial.csc;
+#using scripts\core_common\system_shared.csc;
 
 #namespace zm_trial_disable_hud;
 

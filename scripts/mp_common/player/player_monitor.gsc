@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/bb.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
+#using scripts\mp_common\bb.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
 
 #namespace player_monitor;
 

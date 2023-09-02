@@ -1,47 +1,47 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/weapons/zm_weap_proximity_grenade.csc;
-#include scripts/zm/weapons/zm_weap_mini_turret.csc;
-#include scripts/zm/weapons/zm_weap_homunculus.csc;
-#include scripts/zm_common/aats/zm_aat_plasmatic_burst.csc;
-#include scripts/zm_common/aats/zm_aat_kill_o_watt.csc;
-#include scripts/zm_common/aats/zm_aat_frostbite.csc;
-#include scripts/zm_common/aats/zm_aat_brain_decay.csc;
-#include script_7520bf82a814057c;
-#include scripts/zm_common/zm_ui_inventory.csc;
-#include scripts/zm_common/gametypes/globallogic.csc;
-#include scripts/zm_common/zm_zdraw.csc;
-#include scripts/zm_common/zm_weapons.csc;
-#include scripts/zm_common/zm_wallbuy.csc;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_powerups.csc;
-#include scripts/zm_common/zm_vapor_random.csc;
-#include scripts/zm_common/zm_perks.csc;
-#include scripts/zm_common/zm_laststand.csc;
-#include scripts/zm_common/zm_hud.csc;
-#include scripts/zm_common/zm_hero_weapon.csc;
-#include scripts/zm_common/zm_ffotd.csc;
-#include scripts/zm_common/zm_equipment.csc;
-#include scripts/zm_common/zm_demo.csc;
-#include scripts/zm_common/zm_crafting.csc;
-#include scripts/zm_common/zm_blockers.csc;
-#include scripts/zm_common/zm_bgb.csc;
-#include scripts/zm_common/zm_audio.csc;
-#include scripts/zm_common/load.csc;
-#include scripts/core_common/visionset_mgr_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/status_effects/status_effects.csc;
-#include scripts/core_common/scene_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/renderoverridebundle.csc;
-#include scripts/core_common/fx_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/duplicaterender_mgr.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/aat_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\zm\weapons\zm_weap_proximity_grenade.csc;
+#using scripts\zm\weapons\zm_weap_mini_turret.csc;
+#using scripts\zm\weapons\zm_weap_homunculus.csc;
+#using scripts\zm_common\aats\zm_aat_plasmatic_burst.csc;
+#using scripts\zm_common\aats\zm_aat_kill_o_watt.csc;
+#using scripts\zm_common\aats\zm_aat_frostbite.csc;
+#using scripts\zm_common\aats\zm_aat_brain_decay.csc;
+#using script_7520bf82a814057c;
+#using scripts\zm_common\zm_ui_inventory.csc;
+#using scripts\zm_common\gametypes\globallogic.csc;
+#using scripts\zm_common\zm_zdraw.csc;
+#using scripts\zm_common\zm_weapons.csc;
+#using scripts\zm_common\zm_wallbuy.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_powerups.csc;
+#using scripts\zm_common\zm_vapor_random.csc;
+#using scripts\zm_common\zm_perks.csc;
+#using scripts\zm_common\zm_laststand.csc;
+#using scripts\zm_common\zm_hud.csc;
+#using scripts\zm_common\zm_hero_weapon.csc;
+#using scripts\zm_common\zm_ffotd.csc;
+#using scripts\zm_common\zm_equipment.csc;
+#using scripts\zm_common\zm_demo.csc;
+#using scripts\zm_common\zm_crafting.csc;
+#using scripts\zm_common\zm_blockers.csc;
+#using scripts\zm_common\zm_bgb.csc;
+#using scripts\zm_common\zm_audio.csc;
+#using scripts\zm_common\load.csc;
+#using scripts\core_common\visionset_mgr_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\status_effects\status_effects.csc;
+#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\renderoverridebundle.csc;
+#using scripts\core_common\fx_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\duplicaterender_mgr.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\aat_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace zm;
 
@@ -484,7 +484,7 @@ function deletezombieeyes(localclientnum) {
     if (isdefined(self._eyearray)) {
         if (isdefined(self._eyearray[localclientnum])) {
             deletefx(localclientnum, self._eyearray[localclientnum], 1);
-            localclientnum = [];
+            self._eyearray[localclientnum] = undefined;
         }
     }
 }

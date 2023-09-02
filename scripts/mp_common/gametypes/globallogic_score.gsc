@@ -1,35 +1,35 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/scoreevents.gsc;
-#include scripts/mp_common/callbacks.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/mp_common/gametypes/outcome.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/challenges.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/abilities/ability_util.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/rank_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/persistence_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/loadout_shared.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/bb_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/activecamo_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\scoreevents.gsc;
+#using scripts\mp_common\callbacks.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\mp_common\gametypes\outcome.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\challenges.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\rank_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\persistence_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\loadout_shared.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\bb_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\activecamo_shared.gsc;
 
 #namespace globallogic_score;
 
@@ -74,7 +74,7 @@ function function_39193e3a() {
             player = waitresult.player;
             if (isdefined(player.pers[#"hash_53919d92ff1d039"])) {
                 scoreevents::function_6f51d1e9("battle_command_ultimate_command", player.pers[#"hash_53919d92ff1d039"], undefined, undefined);
-                #"hash_53919d92ff1d039" = [];
+                player.pers[#"hash_53919d92ff1d039"] = undefined;
             }
         }
     }
@@ -1887,8 +1887,8 @@ function function_e7b4c25c(nemesis_name, value, nemesis_rank, var_15574043, neme
 // Size: 0x54
 function function_30ab51a4(params) {
     if (isdefined(self) && isdefined(self.pers)) {
-        #"hash_49e7469988944ecf" = [];
-        #"hash_53919d92ff1d039" = [];
+        self.pers[#"hash_49e7469988944ecf"] = undefined;
+        self.pers[#"hash_53919d92ff1d039"] = undefined;
     }
 }
 

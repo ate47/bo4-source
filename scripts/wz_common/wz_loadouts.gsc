@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world.gsc;
-#include script_6b993fdc7adc35ec;
-#include scripts/mp_common/item_inventory.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using script_6b993fdc7adc35ec;
+#using scripts\mp_common\item_inventory.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace wz_loadouts;
 

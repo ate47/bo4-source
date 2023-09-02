@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include script_624a704d0f6bf28d;
+#using script_624a704d0f6bf28d;
 
 #namespace namespace_bd74bbd2;
 

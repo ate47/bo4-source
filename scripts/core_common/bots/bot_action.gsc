@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/bots/bot_position.gsc;
-#include scripts/core_common/bots/bot_stance.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\bots\bot_position.gsc;
+#using scripts\core_common\bots\bot_stance.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace bot_action;
 

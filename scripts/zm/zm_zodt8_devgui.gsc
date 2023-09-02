@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include script_7893277eec698972;
-#include script_311952573639271c;
-#include scripts/zm/zm_zodt8_sentinel_trial.gsc;
-#include scripts/zm/zm_zodt8_pap_quest.gsc;
-#include scripts/zm/zm_zodt8.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_magicbox.gsc;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using script_7893277eec698972;
+#using script_311952573639271c;
+#using scripts\zm\zm_zodt8_sentinel_trial.gsc;
+#using scripts\zm\zm_zodt8_pap_quest.gsc;
+#using scripts\zm\zm_zodt8.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_magicbox.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace zm_zodt8_devgui;
 

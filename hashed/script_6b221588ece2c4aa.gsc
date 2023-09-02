@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace weaponobjects;
 
@@ -415,7 +415,7 @@ function onspawncrossbowboltimpact_internal(s_watcher, e_player) {
     s_watcher thread waitandfizzleout(self, 0);
     foreach (n_index, e_object in s_watcher.objectarray) {
         if (self == e_object) {
-            n_index = [];
+            s_watcher.objectarray[n_index] = undefined;
         }
     }
     cleanweaponobjectarray(s_watcher);

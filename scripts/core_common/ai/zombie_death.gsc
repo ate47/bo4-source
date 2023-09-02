@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/fx_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
+#using scripts\core_common\fx_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
 
 #namespace zombie_death;
 

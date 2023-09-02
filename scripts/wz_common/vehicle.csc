@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include script_7814d07c54641f82;
-#include script_28356b649490eda1;
-#include script_40e017336a087343;
-#include script_38dc72b5220a1a67;
-#include scripts/core_common/vehicles/driving_fx.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using script_7814d07c54641f82;
+#using script_28356b649490eda1;
+#using script_40e017336a087343;
+#using script_38dc72b5220a1a67;
+#using scripts\core_common\vehicles\driving_fx.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace wz_vehicle;
 

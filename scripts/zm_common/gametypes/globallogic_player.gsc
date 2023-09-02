@@ -1,36 +1,36 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/zm_common/util.gsc;
-#include scripts/zm_common/gametypes/spectating.gsc;
-#include scripts/zm_common/gametypes/spawnlogic.gsc;
-#include scripts/zm_common/gametypes/spawning.gsc;
-#include scripts/zm_common/gametypes/hostmigration.gsc;
-#include scripts/zm_common/gametypes/globallogic_utils.gsc;
-#include scripts/zm_common/gametypes/globallogic_ui.gsc;
-#include scripts/zm_common/gametypes/globallogic_spawn.gsc;
-#include scripts/zm_common/gametypes/globallogic_score.gsc;
-#include scripts/zm_common/gametypes/globallogic_audio.gsc;
-#include scripts/zm_common/gametypes/globallogic.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/globallogic/globallogic_player.gsc;
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/tweakables_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/hud_message_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/demo_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/bb_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\zm_common\gametypes\spectating.gsc;
+#using scripts\zm_common\gametypes\spawnlogic.gsc;
+#using scripts\zm_common\gametypes\spawning.gsc;
+#using scripts\zm_common\gametypes\hostmigration.gsc;
+#using scripts\zm_common\gametypes\globallogic_utils.gsc;
+#using scripts\zm_common\gametypes\globallogic_ui.gsc;
+#using scripts\zm_common\gametypes\globallogic_spawn.gsc;
+#using scripts\zm_common\gametypes\globallogic_score.gsc;
+#using scripts\zm_common\gametypes\globallogic_audio.gsc;
+#using scripts\zm_common\gametypes\globallogic.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\globallogic\globallogic_player.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\tweakables_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\hud_message_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\demo_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\bb_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace globallogic_player;
 
@@ -164,7 +164,7 @@ function callback_playerconnect() {
         self.pers[#"lives"] = level.numlives;
     }
     if (!level.teambased) {
-        #"team" = [];
+        self.pers[#"team"] = undefined;
     }
     self.hasspawned = 0;
     self.waitingtospawn = 0;
@@ -193,7 +193,7 @@ function callback_playerconnect() {
         self thread hostmigration::hostmigrationtimerthink();
     }
     if (level.oldschool) {
-        #"class" = [];
+        self.pers[#"class"] = undefined;
         self.curclass = self.pers[#"class"];
     }
     if (isdefined(self.pers[#"team"])) {
@@ -203,7 +203,7 @@ function callback_playerconnect() {
         self.curclass = self.pers[#"class"];
     }
     if (!isdefined(self.pers[#"team"]) || isdefined(self.pers[#"needteam"])) {
-        #"needteam" = [];
+        self.pers[#"needteam"] = undefined;
         self.pers[#"team"] = "spectator";
         self.team = "spectator";
         self.sessionstate = "dead";
@@ -444,22 +444,22 @@ function callback_playerdisconnect() {
                 level.players[entry] = level.players[entry + 1];
                 entry++;
             }
-            entry = [];
+            level.players[entry] = undefined;
             break;
         }
     }
     for (entry = 0; entry < level.players.size; entry++) {
         if (isdefined(level.players[entry].pers[#"killed_players"][self.name])) {
-            self.name = [];
+            level.players[entry].pers[#"killed_players"][self.name] = undefined;
         }
         if (isdefined(level.players[entry].killedplayerscurrent[self.name])) {
-            self.name = [];
+            level.players[entry].killedplayerscurrent[self.name] = undefined;
         }
         if (isdefined(level.players[entry].pers[#"killed_by"][self.name])) {
-            self.name = [];
+            level.players[entry].pers[#"killed_by"][self.name] = undefined;
         }
         if (isdefined(level.players[entry].pers[#"nemesis_tracking"][self.name])) {
-            self.name = [];
+            level.players[entry].pers[#"nemesis_tracking"][self.name] = undefined;
         }
         if (level.players[entry].pers[#"nemesis_name"] == self.name) {
             level.players[entry] choosenextbestnemesis();

@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/abilities/ability_util.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/drown.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/activecamo_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\drown.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\activecamo_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
 
 #namespace challenges;
 
@@ -129,7 +129,7 @@ function addflyswatterstat(weapon, aircraft) {
     }
     if (isdefined(self.destroyedaircrafttime[weapon]) && gettime() - self.destroyedaircrafttime[weapon] < 10000) {
         self stats::function_e24eec31(weapon, #"destroyed_2aircraft_quickly", 1);
-        weapon = [];
+        self.destroyedaircrafttime[weapon] = undefined;
     } else {
         self.destroyedaircrafttime[weapon] = gettime();
     }

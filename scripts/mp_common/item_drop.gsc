@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_util.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include script_6b993fdc7adc35ec;
-#include scripts/mp_common/item_inventory.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\item_world_util.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using script_6b993fdc7adc35ec;
+#using scripts\mp_common\item_inventory.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace item_drop;
 
@@ -161,9 +161,9 @@ function private function_44a6883c(&drop_item_id, &drop_items, &drop_count, &dro
                 }
                 drop_count[var_604c3ae6] = drop_count[var_604c3ae6] + drop_count[index];
                 drop_item_id[index] = -1;
-                index = [];
-                index = [];
-                index = [];
+                drop_items[index] = undefined;
+                drop_count[index] = undefined;
+                drop_amount[index] = undefined;
             }
         }
         if (!(isdefined(var_a6762160.stackable) && var_a6762160.stackable)) {
@@ -216,9 +216,9 @@ function private function_44a6883c(&drop_item_id, &drop_items, &drop_count, &dro
                         assert(drop_count[index] == 0);
                     #/
                     drop_item_id[index] = -1;
-                    index = [];
-                    index = [];
-                    index = [];
+                    drop_items[index] = undefined;
+                    drop_count[index] = undefined;
+                    drop_amount[index] = undefined;
                     continue;
                 }
             }

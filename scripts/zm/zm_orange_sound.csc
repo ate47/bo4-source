@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/audio_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\audio_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace zm_orange_sound;
 

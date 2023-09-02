@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
 
 #namespace gadget_other;
 

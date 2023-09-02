@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/scene_shared.csc;
-#include script_64914218f744517b;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/filter_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/scriptbundle_shared.csc;
-#include scripts/core_common/scene_debug_shared.csc;
-#include scripts/core_common/lui_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/flagsys_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/animation_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\scene_shared.csc;
+#using script_64914218f744517b;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\filter_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\scriptbundle_shared.csc;
+#using scripts\core_common\scene_debug_shared.csc;
+#using scripts\core_common\lui_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\animation_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace scene;
 
@@ -244,7 +244,7 @@ class cscene : cscriptbundlebase {
         if (isdefined(level.active_scenes[self._str_name])) {
             arrayremovevalue(level.active_scenes[self._str_name], self._e_root);
             if (level.active_scenes[self._str_name].size == 0) {
-                self._str_name = [];
+                level.active_scenes[self._str_name] = undefined;
             }
         }
         if (isdefined(self._e_root) && isdefined(self._e_root.scenes)) {
@@ -327,7 +327,7 @@ class cscene : cscriptbundlebase {
         if (isarray(level.inactive_scenes[self._str_name])) {
             arrayremovevalue(level.inactive_scenes[self._str_name], self._e_root);
             if (level.inactive_scenes[self._str_name].size == 0) {
-                self._str_name = [];
+                level.inactive_scenes[self._str_name] = undefined;
             }
         }
     }
@@ -1093,7 +1093,7 @@ class csceneobject : cscriptbundleobjectbase {
     function finish_per_client(clientnum, b_clear = 0, b_finished = 0) {
         if (!is_alive(clientnum)) {
             _cleanup(clientnum);
-            clientnum = [];
+            self._e_array[clientnum] = undefined;
             self._is_valid = 0;
         }
         flagsys::set(#"ready");

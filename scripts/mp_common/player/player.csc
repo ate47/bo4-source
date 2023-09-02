@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/smokegrenade.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/shoutcaster.csc;
-#include scripts/core_common/renderoverridebundle.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include script_4daa124bc391e7ed;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/abilities/gadgets/gadget_vision_pulse.csc;
+#using scripts\weapons\smokegrenade.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\shoutcaster.csc;
+#using scripts\core_common\renderoverridebundle.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using script_4daa124bc391e7ed;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\abilities\gadgets\gadget_vision_pulse.csc;
 
 #namespace player;
 

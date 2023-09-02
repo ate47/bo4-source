@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/mp_common/gametypes/ct_core.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\mp_common\gametypes\ct_core.csc;
 
 #namespace ct_nomad_tutorial;
 

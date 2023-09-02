@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/bots/zm_bot_position.gsc;
-#include scripts/zm_common/bots/zm_bot_action.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/ai/zm_ai_utility.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/bots/bot_action.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\zm_common\bots\zm_bot_position.gsc;
+#using scripts\zm_common\bots\zm_bot_action.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\ai\zm_ai_utility.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\bots\bot_action.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace zm_bot;
 

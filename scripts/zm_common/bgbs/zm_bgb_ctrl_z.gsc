@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/aats/zm_aat_brain_decay.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm_common\aats\zm_aat_brain_decay.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace zm_bgb_ctrl_z;
 

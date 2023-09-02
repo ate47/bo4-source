@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_perks.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_perks.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_perk_widows_wine;
 
@@ -115,7 +115,7 @@ function function_c6366dbe(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (isdefined(self.var_e7addfc4[localclientnum])) {
         stopfx(localclientnum, self.var_e7addfc4[localclientnum]);
-        localclientnum = [];
+        self.var_e7addfc4[localclientnum] = undefined;
     }
     a_e_players = getlocalplayers();
     foreach (e_player in a_e_players) {

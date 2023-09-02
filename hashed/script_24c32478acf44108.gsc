@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
 
 #namespace namespace_9ff9f642;
 
@@ -136,7 +136,7 @@ function private function_8aefaae3(s_burn) {
             }
             n_total_damage = n_total_damage + n_damage;
             if (var_39d0f0a8.n_time_remaining <= 0) {
-                str_type = [];
+                self.var_88421cc2[str_type] = undefined;
             }
         }
         arrayremovevalue(self.var_88421cc2, undefined, 1);
@@ -345,7 +345,7 @@ function slowdown(str_type, var_a47cf2b2) {
                 self waittilltimeout(float(n_duration) / 1000, #"hash_62a477d53a6bbad");
             }
             if (var_e489fea < gettime() && var_dc1625a7.n_duration != -1) {
-                str_lowest_type = [];
+                self.a_n_slowdown_timeouts[str_lowest_type] = undefined;
             }
         }
         self function_e01e1ea1();
@@ -362,7 +362,7 @@ function private function_e01e1ea1() {
     n_time = gettime();
     foreach (str_index, n_slowdown_timeout in self.a_n_slowdown_timeouts) {
         if (level.var_981dd9cf[#"slow"][str_index].n_duration != -1 && n_slowdown_timeout <= n_time || n_slowdown_timeout == -1) {
-            str_index = [];
+            self.a_n_slowdown_timeouts[str_index] = undefined;
         }
     }
     arrayremovevalue(self.a_n_slowdown_timeouts, undefined, 1);

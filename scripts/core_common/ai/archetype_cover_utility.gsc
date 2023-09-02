@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/systems/behavior_tree_utility.gsc;
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace aiutility;
 

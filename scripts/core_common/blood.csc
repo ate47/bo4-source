@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace blood;
 
@@ -175,7 +175,7 @@ function private stop_breath(localclientnum) {
     }
     if (isdefined(level.hurt_breath_snd_handle[localclientnum])) {
         function_d48752e(localclientnum, level.hurt_breath_snd_handle[localclientnum], 1);
-        localclientnum = [];
+        level.hurt_breath_snd_handle[localclientnum] = undefined;
     }
 }
 

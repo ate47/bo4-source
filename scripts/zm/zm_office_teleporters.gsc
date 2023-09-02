@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_hms_util.gsc;
-#include script_4bae07eadc57bb51;
-#include scripts/zm/zm_office_defcon.gsc;
-#include scripts/zm/zm_office_floors.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_fasttravel.gsc;
-#include scripts/zm_common/zm_pack_a_punch.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm\zm_hms_util.gsc;
+#using script_4bae07eadc57bb51;
+#using scripts\zm\zm_office_defcon.gsc;
+#using scripts\zm\zm_office_floors.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_fasttravel.gsc;
+#using scripts\zm_common\zm_pack_a_punch.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_office_teleporters;
 

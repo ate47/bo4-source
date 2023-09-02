@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include script_70ab01a7690ea256;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using script_70ab01a7690ea256;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_weap_chakram;
 
@@ -166,15 +166,15 @@ function function_522aa0e9(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (isdefined(self.var_779b5b35[localclientnum])) {
         deletefx(localclientnum, self.var_779b5b35[localclientnum]);
-        localclientnum = [];
+        self.var_779b5b35[localclientnum] = undefined;
     }
     if (isdefined(self.var_1c7e53dd[localclientnum])) {
         self stoploopsound(self.var_1c7e53dd[localclientnum]);
-        localclientnum = [];
+        self.var_1c7e53dd[localclientnum] = undefined;
     }
     if (isdefined(self.var_4316c62f[localclientnum])) {
         stopfx(localclientnum, self.var_4316c62f[localclientnum]);
-        localclientnum = [];
+        self.var_4316c62f[localclientnum] = undefined;
     }
     a_e_players = getlocalplayers();
     foreach (e_player in a_e_players) {

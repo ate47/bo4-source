@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include script_2f9a68261f6a17be;
-#include script_6951ea86fdae9ae0;
-#include scripts/zm_common/trials/zm_trial_restrict_loadout.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/zm_common/zm_challenges.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using script_2f9a68261f6a17be;
+#using script_6951ea86fdae9ae0;
+#using scripts\zm_common\trials\zm_trial_restrict_loadout.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\zm_common\zm_challenges.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace zm_perk_slider;
 

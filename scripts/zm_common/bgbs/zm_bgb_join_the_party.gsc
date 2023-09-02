@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_player.gsc;
-#include scripts/zm_common/zm_laststand.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\zm_common\zm_player.gsc;
+#using scripts\zm_common\zm_laststand.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_bgb_join_the_party;
 

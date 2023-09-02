@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/scene_shared.csc;
-#include scripts/core_common/exploder_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/beam_shared.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\exploder_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\beam_shared.csc;
 
 #namespace paschal;
 
@@ -273,20 +273,20 @@ function function_a596ea8d(localclientnum, oldval, newval, bnewent, binitialsnap
     } else {
         if (isdefined(self.var_86931af3[localclientnum])) {
             level beam::function_47deed80(localclientnum, self.var_86931af3[localclientnum]);
-            localclientnum = [];
+            self.var_86931af3[localclientnum] = undefined;
         }
         if (isdefined(self.var_d1f92a1c[localclientnum])) {
             self.var_d1f92a1c[localclientnum] delete();
-            localclientnum = [];
+            self.var_d1f92a1c[localclientnum] = undefined;
         }
         if (isdefined(self.var_95496a89[localclientnum])) {
             self.var_95496a89[localclientnum] delete();
-            localclientnum = [];
+            self.var_95496a89[localclientnum] = undefined;
         }
         if (isdefined(self.var_147a3cdc[localclientnum])) {
             self playsound(localclientnum, #"hash_3c3813560a59a64a");
             self stoploopsound(self.var_147a3cdc[localclientnum]);
-            localclientnum = [];
+            self.var_147a3cdc[localclientnum] = undefined;
         }
     }
 }
@@ -385,7 +385,7 @@ function function_6357e884(localclientnum, oldval, newval, bnewent, binitialsnap
         foreach (fx in self.var_2185511c[localclientnum]) {
             deletefx(localclientnum, fx);
         }
-        localclientnum = [];
+        self.var_2185511c[localclientnum] = undefined;
     }
 }
 

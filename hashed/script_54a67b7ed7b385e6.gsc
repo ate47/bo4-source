@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include script_442f1042340e6bf1;
-#include script_624a704d0f6bf28d;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using script_442f1042340e6bf1;
+#using script_624a704d0f6bf28d;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace namespace_4a807bff;
 

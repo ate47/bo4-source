@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/trials/zm_trial_randomize_perks.gsc;
-#include scripts/zm_common/trials/zm_trial_disable_perks.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
+#using scripts\zm_common\trials\zm_trial_randomize_perks.gsc;
+#using scripts\zm_common\trials\zm_trial_disable_perks.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
 
 #namespace zm_bgb_perkaholic;
 

@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/riotshield.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\weapons\riotshield.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace riotshield;
 

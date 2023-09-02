@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include script_621434df66e97145;
-#include script_2595527427ea71eb;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using script_621434df66e97145;
+#using script_2595527427ea71eb;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace zm_trial_white_minutemen;
 

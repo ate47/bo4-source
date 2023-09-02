@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/dynamic_loadout.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
+#using scripts\mp_common\dynamic_loadout.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
 
 #namespace pickup_ammo;
 

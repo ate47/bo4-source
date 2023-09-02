@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/killstreaks/remotemissile_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\killstreaks\remotemissile_shared.gsc;
 
 #namespace remotemissile;
 

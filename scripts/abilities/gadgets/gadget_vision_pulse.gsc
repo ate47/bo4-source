@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/visionset_mgr_shared.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\visionset_mgr_shared.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace gadget_vision_pulse;
 

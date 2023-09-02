@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
 
 #namespace killstreakrules;
 

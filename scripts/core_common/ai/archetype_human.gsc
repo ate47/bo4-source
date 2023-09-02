@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include script_3819e7a1427df6d2;
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/ai/archetype_human_interface.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/systems/destructible_character.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/ai/systems/ai_blackboard.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\ai\archetype_human_interface.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\systems\destructible_character.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\systems\ai_blackboard.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace archetype_human;
 

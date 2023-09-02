@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include script_50a49d535160be60;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/struct.csc;
+#using script_50a49d535160be60;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace zm_equipment;
 

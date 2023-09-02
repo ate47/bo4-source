@@ -1,53 +1,53 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/userspawnselection.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/challenges.gsc;
-#include scripts/mp_common/bb.gsc;
-#include scripts/mp_common/teams/teams.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/player/player_record.gsc;
-#include scripts/mp_common/player/player_damage.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/gametypes/display_transition.gsc;
-#include scripts/mp_common/gametypes/deathicons.gsc;
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/weapons/weapons.gsc;
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/tweakables_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/platoons.gsc;
-#include scripts/core_common/medals_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_vehicle.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/globallogic/globallogic_player.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/core_common/infection.gsc;
-#include scripts/core_common/demo_shared.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/core_common/audio_shared.gsc;
-#include scripts/core_common/activecamo_shared.gsc;
+#using scripts\mp_common\userspawnselection.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\challenges.gsc;
+#using scripts\mp_common\bb.gsc;
+#using scripts\mp_common\teams\teams.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\player\player_record.gsc;
+#using scripts\mp_common\player\player_damage.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\gametypes\display_transition.gsc;
+#using scripts\mp_common\gametypes\deathicons.gsc;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\weapons\weapons.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\tweakables_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\platoons.gsc;
+#using scripts\core_common\medals_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_vehicle.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\globallogic\globallogic_player.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\core_common\infection.gsc;
+#using scripts\core_common\demo_shared.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\audio_shared.gsc;
+#using scripts\core_common\activecamo_shared.gsc;
 
 #namespace player;
 
@@ -343,7 +343,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         if (!isdefined(attacker.damagedplayers)) {
             attacker.damagedplayers = [];
         }
-        self.clientid = [];
+        attacker.damagedplayers[self.clientid] = undefined;
     }
     if (enteredresurrect == 0) {
         globallogic::doweaponspecifickilleffects(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime);
@@ -390,7 +390,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         self.sessionstate = "dead";
         self.statusicon = "hud_status_dead";
     }
-    #"weapon" = [];
+    self.pers[#"weapon"] = undefined;
     self.killedplayerscurrent = [];
     if (countdeath) {
         if (!isdefined(self.deathcount)) {
@@ -519,7 +519,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         if (attacker.pers[#"hash_49e7469988944ecf"] === 1) {
             if (weapon.statindex == level.weapon_hero_annihilator.statindex) {
                 scoreevents::processscoreevent(#"hash_39926f44fa76b382", attacker, self, weapon);
-                #"hash_49e7469988944ecf" = [];
+                attacker.pers[#"hash_49e7469988944ecf"] = undefined;
             }
         }
     }

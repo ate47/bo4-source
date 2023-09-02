@@ -1,20 +1,20 @@
 // Atian COD Tools GSC decompiler test
-#include script_3aa54d3cb36ea43f;
-#include script_4d00889cf8c807d5;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include script_2595527427ea71eb;
-#include scripts/zm_common/zm_bgb_pack.gsc;
-#include scripts/zm/zm_red_ww_quests.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_fasttravel.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using script_3aa54d3cb36ea43f;
+#using script_4d00889cf8c807d5;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using script_2595527427ea71eb;
+#using scripts\zm_common\zm_bgb_pack.gsc;
+#using scripts\zm\zm_red_ww_quests.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_fasttravel.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace namespace_8216831d;
 

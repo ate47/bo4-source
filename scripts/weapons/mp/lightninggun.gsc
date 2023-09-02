@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/lightninggun.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\weapons\lightninggun.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace lightninggun;
 

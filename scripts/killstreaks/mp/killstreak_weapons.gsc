@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/mp/supplydrop.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/weapons/weapons.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/loadout_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\killstreaks\mp\supplydrop.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\weapons\weapons.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\loadout_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace killstreak_weapons;
 

@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/shockrifle.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\weapons\shockrifle.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace shockrifle;
 

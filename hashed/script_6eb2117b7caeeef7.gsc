@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/deployable.gsc;
-#include scripts/killstreaks/ultimate_turret_shared.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/turret_shared.gsc;
-#include scripts/core_common/targetting_delay.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\killstreaks\ultimate_turret_shared.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\turret_shared.gsc;
+#using scripts\core_common\targetting_delay.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace ultimate_turret;
 
@@ -363,7 +363,7 @@ function function_fc58f46f() {
     }
     if (isdefined(turretvehicle.enemy)) {
         turretvehicle.var_c8072bcc = undefined;
-        turretvehicle.enemy getentitynumber() = [];
+        turretvehicle.var_7eb3ebd5[turretvehicle.enemy getentitynumber()] = undefined;
     }
     turretvehicle clearenemy();
     turretvehicle.favoriteenemy = undefined;

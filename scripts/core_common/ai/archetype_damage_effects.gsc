@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/callbacks_shared.gsc;
-#include script_3819e7a1427df6d2;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using script_3819e7a1427df6d2;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace archetype_damage_effects;
 

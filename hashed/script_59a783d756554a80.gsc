@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_office_floors.gsc;
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/zm_common/callbacks.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm\zm_office_floors.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\zm_common\callbacks.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace namespace_8f53e87b;
 

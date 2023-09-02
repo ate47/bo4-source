@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/damage.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/abilities/ability_power.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\damage.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\abilities\ability_power.gsc;
 
 #namespace lightninggun;
 

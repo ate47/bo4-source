@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/weapons/weapons.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\weapons\weapons.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace airsupport;
 
@@ -730,7 +730,7 @@ function _getstrikepathstartandend(goal, yaw, halfdistance) {
         startpoint = (startpoint[0], startpoint[1], level.noflyzones[noflyzone].origin[2] + level.noflyzones[noflyzone].height);
         endpoint = (endpoint[0], endpoint[1], startpoint[2]);
     } else {
-        #"noflyzone" = [];
+        path[#"noflyzone"] = undefined;
     }
     path[#"start"] = startpoint;
     path[#"end"] = endpoint;

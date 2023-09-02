@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreaks_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/lui_shared.csc;
-#include script_84f5590d2ac48f8;
-#include scripts/core_common/player/player_role.csc;
+#using scripts\killstreaks\killstreaks_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\lui_shared.csc;
+#using script_84f5590d2ac48f8;
+#using scripts\core_common\player\player_role.csc;
 
 #namespace namespace_9096c917;
 

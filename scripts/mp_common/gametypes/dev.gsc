@@ -1,29 +1,29 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/killstreaks/mp/supplydrop.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/gametypes/dev_spawn.gsc;
-#include scripts/mp_common/gametypes/dev_class.gsc;
-#include scripts/mp_common/devgui.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/sound_shared.gsc;
-#include scripts/core_common/rank_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/perks.gsc;
-#include scripts/killstreaks/killstreakrules_shared.gsc;
-#include scripts/killstreaks/helicopter_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/killcam_shared.gsc;
-#include scripts/core_common/dev_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\killstreaks\mp\supplydrop.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\gametypes\dev_spawn.gsc;
+#using scripts\mp_common\gametypes\dev_class.gsc;
+#using scripts\mp_common\devgui.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\rank_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\perks.gsc;
+#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\killstreaks\helicopter_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\killcam_shared.gsc;
+#using scripts\core_common\dev_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace dev;
 
@@ -716,7 +716,7 @@ function updatedevsettings() {
             perk = getdvarstring(#"scr_takeperk");
             for (i = 0; i < level.players.size; i++) {
                 level.players[i] perks::perk_unsetperk(perk);
-                perk = [];
+                level.players[i].extraperks[perk] = undefined;
             }
             setdvar(#"scr_takeperk", "<unknown string>");
         }

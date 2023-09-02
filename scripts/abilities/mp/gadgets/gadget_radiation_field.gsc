@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/abilities/gadgets/gadget_radiation_field.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\abilities\gadgets\gadget_radiation_field.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace gadget_radiation_field;
 

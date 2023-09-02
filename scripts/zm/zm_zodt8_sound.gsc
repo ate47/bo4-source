@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zodt8_sound;
 

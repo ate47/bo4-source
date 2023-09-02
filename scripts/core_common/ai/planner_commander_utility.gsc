@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/ai/strategic_command.gsc;
-#include scripts/core_common/ai/planner_squad.gsc;
-#include scripts/core_common/ai/planner_commander.gsc;
-#include scripts/core_common/ai/systems/planner.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\ai\strategic_command.gsc;
+#using scripts\core_common\ai\planner_squad.gsc;
+#using scripts\core_common\ai\planner_commander.gsc;
+#using scripts\core_common\ai\systems\planner.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
 
 #namespace planner_commander_utility;
 
@@ -1051,7 +1051,7 @@ function private daemonupdateobjective(commander) {
                         if (!isdefined(cachedobjective[#"__unsafe__"])) {
                             cachedobjective[#"__unsafe__"] = array();
                         }
-                        #"trigger" = [];
+                        cachedobjective[#"__unsafe__"][#"trigger"] = undefined;
                         if (isdefined(player.a_t_breadcrumbs)) {
                             cachedobjective[#"breadcrumbs"] = player.a_t_breadcrumbs.size;
                             for (index = 0; index < player.a_t_breadcrumbs.size; index++) {
@@ -1091,7 +1091,7 @@ function private daemonupdateobjective(commander) {
                                 if (!isdefined(cachedobjective[#"__unsafe__"])) {
                                     cachedobjective[#"__unsafe__"] = array();
                                 }
-                                #"trigger" = [];
+                                cachedobjective[#"__unsafe__"][#"trigger"] = undefined;
                             }
                         }
                     }

@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include script_702b73ee97d18efe;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/pickup_health.gsc;
-#include scripts/mp_common/perks.gsc;
-#include scripts/mp_common/gametypes/menus.gsc;
-#include scripts/mp_common/armor.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/loadout_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using script_702b73ee97d18efe;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\pickup_health.gsc;
+#using scripts\mp_common\perks.gsc;
+#using scripts\mp_common\gametypes\menus.gsc;
+#using scripts\mp_common\armor.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\loadout_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace dynamic_loadout;
 
@@ -67,7 +67,7 @@ function private function_597cbfb8(slot, weapon, force = 0) {
         }
     }
     if (take) {
-        2 = [];
+        self.pers[#"dynamic_loadout"].weapons[2] = undefined;
         function_ff8ef46b(2, "luielement.BountyHunterLoadout.equipment", 0);
         self function_9ede386f(slot);
     }

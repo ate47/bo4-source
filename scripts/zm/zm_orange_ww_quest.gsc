@@ -1,25 +1,25 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_orange_pablo.gsc;
-#include scripts/zm/zm_orange_util.gsc;
-#include scripts/zm/zm_hms_util.gsc;
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_ui_inventory.gsc;
-#include script_3e5ec44cfab7a201;
-#include scripts/zm_common/zm_sq.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm\zm_orange_pablo.gsc;
+#using scripts\zm\zm_orange_util.gsc;
+#using scripts\zm\zm_hms_util.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_ui_inventory.gsc;
+#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace zm_orange_ww_quest;
 

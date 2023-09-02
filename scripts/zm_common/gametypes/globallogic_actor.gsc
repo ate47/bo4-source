@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/gametypes/globallogic_utils.gsc;
-#include scripts/zm_common/gametypes/globallogic_player.gsc;
-#include scripts/zm_common/bb.gsc;
-#include scripts/core_common/globallogic/globallogic_player.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/systems/destructible_character.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\gametypes\globallogic_utils.gsc;
+#using scripts\zm_common\gametypes\globallogic_player.gsc;
+#using scripts\zm_common\bb.gsc;
+#using scripts\core_common\globallogic\globallogic_player.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\systems\destructible_character.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace globallogic_actor;
 

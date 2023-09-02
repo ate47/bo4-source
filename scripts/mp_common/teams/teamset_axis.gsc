@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/teams/teamset.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\mp_common\teams\teamset.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace teamset_axis;
 

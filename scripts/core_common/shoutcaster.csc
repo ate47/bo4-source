@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/gadgets/gadget_vision_pulse.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/renderoverridebundle.csc;
-#include scripts/core_common/flag_shared.csc;
+#using scripts\abilities\gadgets\gadget_vision_pulse.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\renderoverridebundle.csc;
+#using scripts\core_common\flag_shared.csc;
 
 #namespace shoutcaster;
 
@@ -282,7 +282,7 @@ function private function_8e1e7736(localclientnum, player) {
 function private function_35248a94(localclientnum, playername) {
     if (isdefined(level.shoutcasterpucks[playername])) {
         stopfx(localclientnum, level.shoutcasterpucks[playername]);
-        playername = [];
+        level.shoutcasterpucks[playername] = undefined;
     }
 }
 

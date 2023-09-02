@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/duplicaterender_mgr.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/audio_shared.csc;
+#using scripts\core_common\duplicaterender_mgr.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\audio_shared.csc;
 
 #namespace mute_smoke;
 

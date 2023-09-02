@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/mp_common/item_world_util.csc;
-#include script_68c78107b4aa059c;
-#include script_5e5ac8c591dedeed;
-#include script_c1eebdc8cad5d78;
-#include scripts/mp_common/item_inventory.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/flagsys_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include script_474309807eb94f34;
-#include scripts/core_common/activecamo_shared.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\mp_common\item_world_util.csc;
+#using script_68c78107b4aa059c;
+#using script_5e5ac8c591dedeed;
+#using script_c1eebdc8cad5d78;
+#using scripts\mp_common\item_inventory.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using script_474309807eb94f34;
+#using scripts\core_common\activecamo_shared.csc;
 
 #namespace item_world;
 
@@ -469,7 +469,7 @@ function private _draw(localclientnum, draworigin) {
         if (isdefined(clientdata.var_89e328b4[id])) {
             model = clientdata.var_89e328b4[id];
             clientdata.modellist[id] = model;
-            id = [];
+            clientdata.var_89e328b4[id] = undefined;
         } else {
             var_c29769e0[var_c29769e0.size] = item;
         }
@@ -1096,7 +1096,7 @@ function private function_5cbe24ea(&dest, &source, &order) {
                 dest[dest.size] = item;
             }
         }
-        itemname = [];
+        items[itemname] = undefined;
     }
     foreach (itemarray in items) {
         if (!isdefined(itemarray)) {
@@ -1753,7 +1753,7 @@ function private function_1b42632a(localclientnum, clientdata, var_2ccf7a1c) {
         }
     }
     if (isdefined(var_f0a9e97d)) {
-        var_f0a9e97d = [];
+        clientdata.var_ffc1c0e1[var_f0a9e97d] = undefined;
         model = function_61f5d33a(localclientnum, clientdata, var_f0a9e97d);
         if (isdefined(model)) {
             function_a4886b1e(localclientnum, var_f0a9e97d, model);
@@ -1769,7 +1769,7 @@ function private function_1b42632a(localclientnum, clientdata, var_2ccf7a1c) {
         }
     }
     if (isdefined(var_cd3b74d6)) {
-        var_cd3b74d6 = [];
+        clientdata.var_baf65690[var_cd3b74d6] = undefined;
         vehicle = getentbynum(localclientnum, var_cd3b74d6);
         if (isdefined(vehicle)) {
             function_3bd99d2f(localclientnum, clientdata, vehicle, 1);

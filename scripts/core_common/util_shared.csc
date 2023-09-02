@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include script_72d4466ce2e2cc7b;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using script_72d4466ce2e2cc7b;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace util;
 
@@ -1353,7 +1353,7 @@ function getnextobjid(localclientnum) {
     nextid = 0;
     if (level.releasedobjectives[localclientnum].size > 0) {
         nextid = level.releasedobjectives[localclientnum][level.releasedobjectives[localclientnum].size - 1];
-        level.releasedobjectives[localclientnum].size - 1 = [];
+        level.releasedobjectives[localclientnum][level.releasedobjectives[localclientnum].size - 1] = undefined;
     } else {
         nextid = level.numgametypereservedobjectives[localclientnum];
         level.numgametypereservedobjectives[localclientnum]++;

@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_inventory.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/killstreaks/airsupport.gsc;
-#include scripts/core_common/vehicles/hawk.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\mp_common\item_inventory.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\killstreaks\airsupport.gsc;
+#using scripts\core_common\vehicles\hawk.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace hawk_wz;
 

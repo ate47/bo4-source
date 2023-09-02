@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include script_2c5daa95f8fec03c;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using script_2c5daa95f8fec03c;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace zm_ai_utility;
 

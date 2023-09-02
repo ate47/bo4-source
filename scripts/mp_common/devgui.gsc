@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include script_7edb54aca54e9a2b;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/core_common/dev_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using script_7edb54aca54e9a2b;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\core_common\dev_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace devgui;
 

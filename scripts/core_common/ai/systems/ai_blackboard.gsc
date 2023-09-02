@@ -85,7 +85,7 @@ function getblackboardevents(eventname) {
 // Size: 0x34
 function removeblackboardevents(eventname) {
     if (isdefined(level.__ai_blackboard[eventname])) {
-        eventname = [];
+        level.__ai_blackboard[eventname] = undefined;
     }
 }
 

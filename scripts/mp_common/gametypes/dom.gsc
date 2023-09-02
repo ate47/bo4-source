@@ -1,38 +1,38 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/spawnbeacon.gsc;
-#include scripts/mp_common/userspawnselection.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/mp_common/gametypes/hostmigration.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/gametypes/gametype.gsc;
-#include script_4c8dba49908aecc2;
-#include scripts/mp_common/challenges.gsc;
-#include scripts/mp_common/bb.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/sound_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/persistence_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/hostmigration_shared.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/demo_shared.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\spawnbeacon.gsc;
+#using scripts\mp_common\userspawnselection.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\mp_common\gametypes\hostmigration.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\gametypes\gametype.gsc;
+#using script_4c8dba49908aecc2;
+#using scripts\mp_common\challenges.gsc;
+#using scripts\mp_common\bb.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\persistence_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\demo_shared.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace dom;
 
@@ -255,10 +255,10 @@ function updategametypedvars() {
     level.flagcapturelpm = getgametypesetting(#"maxobjectiveeventsperminute");
     level.playeroffensivemax = getgametypesetting(#"maxplayeroffensive");
     level.playerdefensivemax = getgametypesetting(#"maxplayerdefensive");
-    level.flagCanBeNeutralized = getgametypesetting(#"flagCanBeNeutralized");
+    level.flagCanBeNeutralized = getgametypesetting(#"hash_27298832add70e8b");
     level.decayprogress = isdefined(getgametypesetting(#"decayprogress")) ? getgametypesetting(#"decayprogress") : 0;
     level.autodecaytime = isdefined(getgametypesetting(#"autodecaytime")) ? getgametypesetting(#"autodecaytime") : undefined;
-    level.flagCaptureRateIncrease = isdefined(getgametypesetting(#"flagCaptureRateIncrease")) ? getgametypesetting(#"flagCaptureRateIncrease") : 0;
+    level.flagCaptureRateIncrease = isdefined(getgametypesetting(#"hash_57fe8e4f461c236d")) ? getgametypesetting(#"hash_57fe8e4f461c236d") : 0;
 }
 
 // Namespace dom/dom

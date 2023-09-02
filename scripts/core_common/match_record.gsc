@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/array_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace match_record;
 

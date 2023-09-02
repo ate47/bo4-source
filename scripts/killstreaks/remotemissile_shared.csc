@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreak_detect.csc;
-#include script_5520b91a8aa516ab;
-#include script_7bee869df82e0445;
-#include scripts/core_common/shoutcaster.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\killstreaks\killstreak_detect.csc;
+#using script_5520b91a8aa516ab;
+#using script_7bee869df82e0445;
+#using scripts\core_common\shoutcaster.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace remotemissile;
 

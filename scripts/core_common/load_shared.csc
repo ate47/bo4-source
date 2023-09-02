@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/dev_shared.csc;
-#include scripts/core_common/activecamo_shared.csc;
-#include scripts/core_common/delete.csc;
-#include script_10aeb2e4f2b455a1;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\dev_shared.csc;
+#using scripts\core_common\activecamo_shared.csc;
+#using scripts\core_common\delete.csc;
+#using script_10aeb2e4f2b455a1;
 
 #namespace load;
 

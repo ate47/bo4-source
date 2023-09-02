@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core/gametypes/frontend_draft.csc;
-#include scripts/core/gametypes/frontend_blackmarket.csc;
-#include script_7ca3324ffa5389e4;
-#include scripts/core_common/lui_shared.csc;
-#include scripts/core_common/character_customization.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/mp_common/devgui.csc;
-#include scripts/core_common/scene_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/exploder_shared.csc;
-#include scripts/core_common/weapon_customization_icon.csc;
-#include scripts/core_common/math_shared.csc;
-#include scripts/core_common/custom_class.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/animation_shared.csc;
-#include scripts/core_common/activecamo_shared.csc;
+#using scripts\core\gametypes\frontend_draft.csc;
+#using scripts\core\gametypes\frontend_blackmarket.csc;
+#using script_7ca3324ffa5389e4;
+#using scripts\core_common\lui_shared.csc;
+#using scripts\core_common\character_customization.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\mp_common\devgui.csc;
+#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\exploder_shared.csc;
+#using scripts\core_common\weapon_customization_icon.csc;
+#using scripts\core_common\math_shared.csc;
+#using scripts\core_common\custom_class.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\animation_shared.csc;
+#using scripts\core_common\activecamo_shared.csc;
 
 #namespace frontend;
 
@@ -901,7 +901,7 @@ function function_5d6480a0(localclientnum, weapon, weapon_model, weapon_name, va
             }
             if (isdefined(level.var_43aac701[localclientnum])) {
                 weapon_model stoprenderoverridebundle(level.var_43aac701[localclientnum]);
-                localclientnum = [];
+                level.var_43aac701[localclientnum] = undefined;
             }
             render_options = function_140a6212(camo_index, 0, var_e30bf49f, 0, 0, 0);
             weapon_model useweaponmodel(weapon, undefined, render_options);
@@ -2595,7 +2595,7 @@ function function_3e7aaaea(localclientnum, weapon_model, waitresult) {
         while (1) {
             if (isdefined(level.var_324c3190[localclientnum])) {
                 weapon_model stoprenderoverridebundle(level.var_324c3190[localclientnum]);
-                localclientnum = [];
+                level.var_324c3190[localclientnum] = undefined;
             }
             var_3594168e = activecamoinfo.stages[stage];
             if (!isdefined(var_3594168e.disabled) || var_3594168e.disabled == 0) {
@@ -2628,7 +2628,7 @@ function function_98088878(localclientnum, menu_data) {
         waitresult = level waittill(#"hash_25e20b0ca5f9acf2");
         if (isdefined(level.var_324c3190[localclientnum])) {
             weapon_model stoprenderoverridebundle(level.var_324c3190[localclientnum]);
-            localclientnum = [];
+            level.var_324c3190[localclientnum] = undefined;
         }
         camoindex = 0;
         if (isdefined(waitresult.camoindex)) {

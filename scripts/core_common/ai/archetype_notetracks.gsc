@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/ai/systems/shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/ai/systems/animation_state_machine_notetracks.gsc;
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/ai/archetype_human_cover.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\systems\shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\ai\systems\animation_state_machine_notetracks.gsc;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\ai\archetype_human_cover.gsc;
 
 #namespace animationstatenetwork;
 

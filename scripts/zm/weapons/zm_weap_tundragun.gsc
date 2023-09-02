@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_orange_water.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\zm\zm_orange_water.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_weap_tundragun;
 

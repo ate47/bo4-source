@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include script_439e9618e516580f;
-#include scripts/core_common/lui_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/teleport_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scene_debug_shared.gsc;
-#include scripts/core_common/scene_objects_shared.gsc;
-#include scripts/core_common/oob.gsc;
-#include scripts/core_common/music_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/animation_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using script_439e9618e516580f;
+#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\teleport_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scene_debug_shared.gsc;
+#using scripts\core_common\scene_objects_shared.gsc;
+#using scripts\core_common\oob.gsc;
+#using scripts\core_common\music_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace scene;
 
@@ -2607,7 +2607,7 @@ function _wait_for_ordered_notify(id, group_obj, group_name, str_note) {
         waitframe(1);
         if (group_obj.current_count == group_obj.count) {
             group_obj.pending_notifies = undefined;
-            group_name = [];
+            level.scene_ordered_notetracks[group_name] = undefined;
         } else if (isdefined(group_obj.pending_notifies) && group_obj.current_count + group_obj.pending_notifies.size == group_obj.count) {
             self thread _fire_ordered_notitifes(group_obj, group_name);
         }
@@ -2640,7 +2640,7 @@ function _fire_ordered_notitifes(group_obj, group_name) {
         }
     }
     group_obj.pending_notifies = undefined;
-    group_name = [];
+    level.scene_ordered_notetracks[group_name] = undefined;
 }
 
 // Namespace scene/scene_shared

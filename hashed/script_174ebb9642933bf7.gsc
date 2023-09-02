@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_round_logic.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_round_spawning.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_round_logic.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_round_spawning.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace namespace_df88241c;
 

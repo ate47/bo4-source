@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/ai/archetype_blight_father_interface.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/ai/systems/blackboard.gsc;
-#include scripts/core_common/spawner_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\ai\archetype_blight_father_interface.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\spawner_shared.gsc;
 
 #namespace archetypeblightfather;
 

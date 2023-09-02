@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/trophy_system.gsc;
-#include scripts/mp_common/gametypes/battlechatter.gsc;
-#include scripts/core_common/contracts_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\weapons\trophy_system.gsc;
+#using scripts\mp_common\gametypes\battlechatter.gsc;
+#using scripts\core_common\contracts_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace trophy_system;
 

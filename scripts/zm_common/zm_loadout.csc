@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.csc;
-#include scripts/zm_common/zm_weapons.csc;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_score.csc;
-#include scripts/zm_common/zm_magicbox.csc;
-#include scripts/zm_common/zm_equipment.csc;
-#include scripts/zm_common/zm_bgb.csc;
-#include scripts/zm_common/zm_audio.csc;
-#include scripts/zm_common/util.csc;
-#include scripts/core_common/player/player_stats.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/aat_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\zm_common\zm_weapons.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_score.csc;
+#using scripts\zm_common\zm_magicbox.csc;
+#using scripts\zm_common\zm_equipment.csc;
+#using scripts\zm_common\zm_bgb.csc;
+#using scripts\zm_common\zm_audio.csc;
+#using scripts\zm_common\util.csc;
+#using scripts\core_common\player\player_stats.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\aat_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace zm_loadout;
 

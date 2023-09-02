@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/perk/zm_perk_mod_additionalprimaryweapon.gsc;
-#include scripts/zm_common/trials/zm_trial_disable_perks.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_player.gsc;
-#include scripts/zm_common/zm_perks.gsc;
-#include scripts/zm_common/util.gsc;
-#include scripts/core_common/visionset_mgr_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/aat_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm\perk\zm_perk_mod_additionalprimaryweapon.gsc;
+#using scripts\zm_common\trials\zm_trial_disable_perks.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_player.gsc;
+#using scripts\zm_common\zm_perks.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\core_common\visionset_mgr_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\aat_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_perk_additionalprimaryweapon;
 

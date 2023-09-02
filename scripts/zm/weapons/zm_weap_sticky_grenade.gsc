@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace sticky_grenade;
 

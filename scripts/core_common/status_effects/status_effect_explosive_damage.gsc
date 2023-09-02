@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace status_effect_explosive_damage;
 

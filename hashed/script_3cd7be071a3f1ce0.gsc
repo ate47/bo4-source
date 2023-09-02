@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace namespace_b6ca3ccc;
 
@@ -200,7 +200,7 @@ function function_d61c8c59(localclientnum, oldval, newval, bnewent, binitialsnap
             foreach (fx in self.var_b196c692[localclientnum]) {
                 stopfx(localclientnum, fx);
             }
-            localclientnum = [];
+            self.var_b196c692[localclientnum] = undefined;
         }
         if (isdefined(self.var_5d816fd0)) {
             self playsound(localclientnum, #"hash_28d41f681d0c4371");

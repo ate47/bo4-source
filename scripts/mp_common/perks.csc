@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace perks;
 
@@ -626,7 +626,7 @@ function monitor_detectnearbyenemies(local_client_num) {
                         continue;
                     }
                     if (gettime() - var_aaf15d9a > 500) {
-                        action = [];
+                        sixthsenseent.var_629d0f94[action] = undefined;
                     } else {
                         var_7cecdeb5 = function_365c39ef(action, bundle) * range;
                         if (!var_7aeac1e7 || function_3edf2cf8(distcurrentsq, var_d6ff0766, var_7cecdeb5)) {

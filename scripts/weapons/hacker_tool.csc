@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/duplicaterender_mgr.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\core_common\duplicaterender_mgr.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace hacker_tool;
 
@@ -28,15 +28,15 @@ function on_localplayer_spawned(localclientnum) {
     player = self;
     if (isdefined(level.hackingsoundid[localclientnum])) {
         player stoploopsound(level.hackingsoundid[localclientnum]);
-        localclientnum = [];
+        level.hackingsoundid[localclientnum] = undefined;
     }
     if (isdefined(level.hackingsweetspotid[localclientnum])) {
         player stoploopsound(level.hackingsweetspotid[localclientnum]);
-        localclientnum = [];
+        level.hackingsweetspotid[localclientnum] = undefined;
     }
     if (isdefined(level.friendlyhackingsoundid[localclientnum])) {
         player stoploopsound(level.friendlyhackingsoundid[localclientnum]);
-        localclientnum = [];
+        level.friendlyhackingsoundid[localclientnum] = undefined;
     }
 }
 
@@ -49,15 +49,15 @@ function player_hacking(localclientnum, oldval, newval, bnewent, binitialsnap, f
     player = self;
     if (isdefined(level.hackingsoundid[localclientnum])) {
         player stoploopsound(level.hackingsoundid[localclientnum]);
-        localclientnum = [];
+        level.hackingsoundid[localclientnum] = undefined;
     }
     if (isdefined(level.hackingsweetspotid[localclientnum])) {
         player stoploopsound(level.hackingsweetspotid[localclientnum]);
-        localclientnum = [];
+        level.hackingsweetspotid[localclientnum] = undefined;
     }
     if (isdefined(level.friendlyhackingsoundid[localclientnum])) {
         player stoploopsound(level.friendlyhackingsoundid[localclientnum]);
-        localclientnum = [];
+        level.friendlyhackingsoundid[localclientnum] = undefined;
     }
     if (isdefined(player.targetent)) {
         player.targetent duplicate_render::set_hacker_tool_hacking(localclientnum, 0);
@@ -138,7 +138,7 @@ function watchtargethack(localclientnum, player, isbreachingfirewall) {
         } else {
             if (isdefined(level.hackingsweetspotid[localclientnum])) {
                 player stoploopsound(level.hackingsweetspotid[localclientnum]);
-                localclientnum = [];
+                level.hackingsweetspotid[localclientnum] = undefined;
             }
             if (!isdefined(level.hackingsoundid[localclientnum])) {
                 level.hackingsoundid[localclientnum] = player playloopsound(#"evt_hacker_hacking_loop");
@@ -153,7 +153,7 @@ function watchtargethack(localclientnum, player, isbreachingfirewall) {
                 level.friendlyhackingsoundid[localclientnum] = player playloopsound(#"evt_hacker_hacking_loop_mult");
             } else if (!friendlyhacking && isdefined(level.friendlyhackingsoundid[localclientnum])) {
                 player stoploopsound(level.friendlyhackingsoundid[localclientnum]);
-                localclientnum = [];
+                level.friendlyhackingsoundid[localclientnum] = undefined;
             }
         }
         wait(0.1);

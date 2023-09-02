@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_powerups.gsc;
-#include scripts/zm_common/zm_pack_a_punch_util.gsc;
-#include scripts/zm_common/zm_pack_a_punch.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/util.gsc;
-#include scripts/core_common/ai/zombie_death.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/aat_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_powerups.gsc;
+#using scripts\zm_common\zm_pack_a_punch_util.gsc;
+#using scripts\zm_common\zm_pack_a_punch.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\core_common\ai\zombie_death.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\aat_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace namespace_47a807c3;
 

@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_ai_utils.gsc;
-#include scripts/wz_common/wz_ai_zonemgr.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\wz_common\wz_ai_utils.gsc;
+#using scripts\wz_common\wz_ai_zonemgr.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace wz_escape_ai_zones;
 

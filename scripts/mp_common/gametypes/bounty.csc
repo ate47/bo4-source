@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/killstreaks/mp/killstreak_vehicle.csc;
-#include scripts/mp_common/laststand.csc;
-#include scripts/mp_common/dynamic_loadout.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\killstreaks\mp\killstreak_vehicle.csc;
+#using scripts\mp_common\laststand.csc;
+#using scripts\mp_common\dynamic_loadout.csc;
 
 #namespace bounty;
 

@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/bots/bot.gsc;
-#include scripts/core_common/bots/bot_position.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\bots\bot_position.gsc;
 
 #namespace mp_bot_position;
 

@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/lui_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/duplicaterender_mgr.csc;
-#include scripts/core_common/activecamo_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\lui_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\duplicaterender_mgr.csc;
+#using scripts\core_common\activecamo_shared.csc;
 
 #namespace customclass;
 
@@ -57,7 +57,7 @@ function refeshweaponposition() {
 function custom_class_init(localclientnum) {
     level.last_weapon_name[localclientnum] = "";
     level.var_8ad413c[localclientnum] = "";
-    localclientnum = [];
+    level.current_weapon[localclientnum] = undefined;
     level thread custom_class_start_threads(localclientnum);
     level thread handle_cac_customization(localclientnum);
 }
@@ -658,7 +658,7 @@ function update_weapon_script_model(localclientnum, newweaponstring, var_f020955
     if (!function_3e2b5b60(localclientnum, weaponmodel)) {
         if (isdefined(level.var_aa10d0b4[localclientnum])) {
             weaponmodel stoprenderoverridebundle(level.var_aa10d0b4[localclientnum]);
-            localclientnum = [];
+            level.var_aa10d0b4[localclientnum] = undefined;
         }
     }
     level.weapon_script_model[localclientnum] setscale(function_8d32e28(level.current_weapon[localclientnum]));

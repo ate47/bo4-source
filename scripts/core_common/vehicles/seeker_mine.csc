@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/ai_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\ai_shared.csc;
 
 #namespace seeker_mine;
 

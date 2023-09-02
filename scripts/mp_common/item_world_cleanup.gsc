@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/abilities/gadgets/gadget_homunculus.gsc;
-#include scripts/abilities/gadgets/gadget_cymbal_monkey.gsc;
-#include scripts/abilities/gadgets/gadget_tripwire.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\abilities\gadgets\gadget_homunculus.gsc;
+#using scripts\abilities\gadgets\gadget_cymbal_monkey.gsc;
+#using scripts\abilities\gadgets\gadget_tripwire.gsc;
 
 #namespace item_world_cleanup;
 

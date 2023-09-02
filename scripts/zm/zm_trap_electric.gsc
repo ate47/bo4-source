@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/zombie_death.gsc;
-#include scripts/zm_common/zm_traps.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_contracts.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\ai\zombie_death.gsc;
+#using scripts\zm_common\zm_traps.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_contracts.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_trap_electric;
 

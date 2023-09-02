@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/trophy_system.csc;
-#include scripts/core_common/system_shared.csc;
+#using scripts\weapons\trophy_system.csc;
+#using scripts\core_common\system_shared.csc;
 
 #namespace trophy_system;
 

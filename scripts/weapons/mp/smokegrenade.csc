@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/smokegrenade.csc;
-#include scripts/core_common/system_shared.csc;
+#using scripts\weapons\smokegrenade.csc;
+#using scripts\core_common\system_shared.csc;
 
 #namespace smokegrenade;
 

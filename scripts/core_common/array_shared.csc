@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/flagsys_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace array;
 

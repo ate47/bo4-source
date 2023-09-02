@@ -1,19 +1,19 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/infection.gsc;
-#include scripts/mp_common/gametypes/spawning.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/match_record.gsc;
-#include script_1d29de500c266470;
-#include scripts/core_common/player/player_free_fall.gsc;
-#include scripts/core_common/player_insertion.gsc;
-#include scripts/core_common/infection.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\wz_common\infection.gsc;
+#using scripts\mp_common\gametypes\spawning.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\match_record.gsc;
+#using script_1d29de500c266470;
+#using scripts\core_common\player\player_free_fall.gsc;
+#using scripts\core_common\player_insertion.gsc;
+#using scripts\core_common\infection.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace spawn;
 
@@ -351,7 +351,7 @@ function private function_178abfd(struct) {
     }
     foreach (i, val in level.struct) {
         if (val === struct) {
-            i = [];
+            level.struct[i] = undefined;
             return;
         }
     }

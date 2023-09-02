@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_fixup.csc;
-#include scripts/mp_common/item_inventory.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\mp_common\item_world_fixup.csc;
+#using scripts\mp_common\item_inventory.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace character_unlock;
 

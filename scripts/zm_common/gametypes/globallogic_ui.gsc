@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/util.gsc;
-#include scripts/zm_common/gametypes/spectating.gsc;
-#include scripts/zm_common/gametypes/globallogic_player.gsc;
-#include scripts/zm_common/gametypes/globallogic.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/hud_message_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\zm_common\gametypes\spectating.gsc;
+#using scripts\zm_common\gametypes\globallogic_player.gsc;
+#using scripts\zm_common\gametypes\globallogic.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\hud_message_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace globallogic_ui;
 
@@ -193,10 +193,10 @@ function menuautoassign(comingfrommenu) {
     }
     self.pers[#"team"] = assignment;
     self.team = assignment;
-    #"class" = [];
+    self.pers[#"class"] = undefined;
     self.curclass = undefined;
-    #"weapon" = [];
-    #"savedmodel" = [];
+    self.pers[#"weapon"] = undefined;
+    self.pers[#"savedmodel"] = undefined;
     self updateobjectivetext();
     self.sessionteam = assignment;
     if (!isalive(self)) {
@@ -356,10 +356,10 @@ function menuteam(team) {
         }
         self.pers[#"team"] = team;
         self.team = team;
-        #"class" = [];
+        self.pers[#"class"] = undefined;
         self.curclass = undefined;
-        #"weapon" = [];
-        #"savedmodel" = [];
+        self.pers[#"weapon"] = undefined;
+        self.pers[#"savedmodel"] = undefined;
         self updateobjectivetext();
         self.sessionteam = team;
         self player::function_466d8a4b(1);
@@ -383,10 +383,10 @@ function menuspectator() {
         }
         self.pers[#"team"] = "spectator";
         self.team = "spectator";
-        #"class" = [];
+        self.pers[#"class"] = undefined;
         self.curclass = undefined;
-        #"weapon" = [];
-        #"savedmodel" = [];
+        self.pers[#"weapon"] = undefined;
+        self.pers[#"savedmodel"] = undefined;
         self updateobjectivetext();
         self.sessionteam = "spectator";
         [[ level.spawnspectator ]]();

@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/map.gsc;
-#include script_71e26f08f03b7a7a;
-#include scripts/mp_common/load.gsc;
-#include scripts/core_common/compass.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/death_circle.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\map.gsc;
+#using script_71e26f08f03b7a7a;
+#using scripts\mp_common\load.gsc;
+#using scripts\core_common\compass.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\death_circle.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace namespace_ebd5f10d;
 

@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/tdm.gsc;
-#include scripts/mp_common/gametypes/os.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\tdm.gsc;
+#using scripts\mp_common\gametypes\os.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
 
 #namespace ostdm;
 

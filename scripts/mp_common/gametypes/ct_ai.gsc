@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/ct_utils.gsc;
-#include scripts/mp_common/gametypes/ct_bots.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/bots/bot_stance.gsc;
+#using scripts\mp_common\gametypes\ct_utils.gsc;
+#using scripts\mp_common\gametypes\ct_bots.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\bots\bot_stance.gsc;
 
 #namespace ct_ai;
 

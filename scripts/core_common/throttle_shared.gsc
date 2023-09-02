@@ -57,7 +57,7 @@ class throttle {
                 firstqueueindex = getfirstarraykey(self.queue_);
                 if (self.processed_ < self.processlimit_ && self.queue_[firstqueueindex] === entity) {
                     firstinqueue = 1;
-                    firstqueueindex = [];
+                    self.queue_[firstqueueindex] = undefined;
                 } else {
                     self.var_3cd6b18f[self.var_3cd6b18f.size] = entity;
                     wait(self.updaterate_);

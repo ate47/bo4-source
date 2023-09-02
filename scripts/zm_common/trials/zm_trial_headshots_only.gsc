@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_trial_util.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_traps.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_trial_util.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_traps.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace zm_trial_headshots_only;
 

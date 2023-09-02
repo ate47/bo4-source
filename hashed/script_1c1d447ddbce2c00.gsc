@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/flag_shared.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\flag_shared.gsc;
 
 #namespace namespace_a71af4de;
 

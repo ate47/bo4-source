@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include script_624a704d0f6bf28d;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using script_624a704d0f6bf28d;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_orange_ww_quest;
 

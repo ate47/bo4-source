@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_round_logic.gsc;
-#include scripts/zm_common/zm_contracts.gsc;
-#include scripts/zm_common/zm_challenges.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/zm_common/gametypes/globallogic_score.gsc;
-#include scripts/zm_common/gametypes/globallogic.gsc;
-#include scripts/zm_common/callings/zm_callings.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_round_logic.gsc;
+#using scripts\zm_common\zm_contracts.gsc;
+#using scripts\zm_common\zm_challenges.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\zm_common\gametypes\globallogic_score.gsc;
+#using scripts\zm_common\gametypes\globallogic.gsc;
+#using scripts\zm_common\callings\zm_callings.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_stats;
 
@@ -379,9 +379,9 @@ function update_players_stats_at_match_end(players) {
                 player globallogic::incrementmatchcompletionstat(gamemode, "played", "completed");
                 if (isdefined(player.pers[#"matcheshostedstatstracked"])) {
                     player globallogic::incrementmatchcompletionstat(gamemode, "hosted", "completed");
-                    #"matcheshostedstatstracked" = [];
+                    player.pers[#"matcheshostedstatstracked"] = undefined;
                 }
-                #"matchesplayedstatstracked" = [];
+                player.pers[#"matchesplayedstatstracked"] = undefined;
             }
         }
         if (!isdefined(player.pers[#"previous_distance_traveled"])) {

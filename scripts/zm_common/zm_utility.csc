@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_weapons.csc;
-#include scripts/zm_common/zm_powerups.csc;
-#include scripts/zm_common/zm_maptable.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/activecamo_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\zm_common\zm_weapons.csc;
+#using scripts\zm_common\zm_powerups.csc;
+#using scripts\zm_common\zm_maptable.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\activecamo_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace zm_utility;
 

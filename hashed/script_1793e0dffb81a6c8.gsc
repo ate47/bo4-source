@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/util.csc;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/zm_common/zm_trial_util.csc;
-#include scripts/zm_common/zm_trial.csc;
-#include scripts/zm_common/zm_pack_a_punch.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\zm_common\util.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_trial_util.csc;
+#using scripts\zm_common\zm_trial.csc;
+#using scripts\zm_common\zm_pack_a_punch.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace namespace_841de7df;
 

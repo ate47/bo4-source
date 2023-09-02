@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include script_28a20e497bd69c36;
-#include scripts/mp_common/gametypes/globallogic_score.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\util_shared.csc;
+#using script_28a20e497bd69c36;
+#using scripts\mp_common\gametypes\globallogic_score.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace tdm;
 

@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/draft.gsc;
-#include scripts/abilities/ability_util.gsc;
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/rank_shared.gsc;
-#include scripts/core_common/persistence_shared.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\rank_shared.gsc;
+#using scripts\core_common\persistence_shared.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace gun;
 

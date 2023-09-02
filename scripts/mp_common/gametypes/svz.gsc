@@ -1,31 +1,31 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/laststand.gsc;
-#include scripts/mp_common/bb.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/abilities/ability_util.gsc;
-#include scripts/mp_common/player/player_utils.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/mp_common/gametypes/dogtags.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/killstreaks/mp/killstreaks.gsc;
-#include scripts/mp_common/gametypes/spawning.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/mp_common/gametypes/globallogic_spawn.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/gametypes/gametype.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/infection.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\laststand.gsc;
+#using scripts\mp_common\bb.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\abilities\ability_util.gsc;
+#using scripts\mp_common\player\player_utils.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\mp_common\gametypes\dogtags.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\killstreaks\mp\killstreaks.gsc;
+#using scripts\mp_common\gametypes\spawning.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\gametypes\gametype.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\infection.gsc;
 
 #namespace svz;
 
@@ -176,7 +176,7 @@ function onspawnplayer(predictedspawn) {
         self thread function_fe170e7();
     } else if (isdefined(self.pers[#"cachedrole"])) {
         self player_role::set(self.pers[#"cachedrole"], 1);
-        #"cachedrole" = [];
+        self.pers[#"cachedrole"] = undefined;
     }
     spawning::onspawnplayer(predictedspawn);
 }

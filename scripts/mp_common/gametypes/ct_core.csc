@@ -1,8 +1,8 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/ct_utils.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/renderoverridebundle.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\mp_common\gametypes\ct_utils.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\renderoverridebundle.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace ct_core;
 

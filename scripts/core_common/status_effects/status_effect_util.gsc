@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace status_effect;
 
@@ -72,7 +72,7 @@ function private function_b24f18a1() {
         }
         self.owner function_14fdd7e2(self.var_4f6b79a4);
         self [[ level._status_effects[self.setype].var_a4c649a2 ]]();
-        self.var_18d16a6b = [];
+        self.owner.var_121392a1[self.var_18d16a6b] = undefined;
         self notify(#"endstatuseffect");
     }
 }

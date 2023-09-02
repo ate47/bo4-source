@@ -1,24 +1,24 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_spawner.gsc;
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/callbacks.gsc;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/zm_common/zm_round_logic.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/aat_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\callbacks.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\zm_common\zm_round_logic.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\aat_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace zm_hms_util;
 

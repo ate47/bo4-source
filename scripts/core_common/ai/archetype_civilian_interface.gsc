@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/archetype_utility.gsc;
-#include scripts/core_common/ai/archetype_civilian.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
+#using scripts\core_common\ai\archetype_utility.gsc;
+#using scripts\core_common\ai\archetype_civilian.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
 
 #namespace civilianinterface;
 

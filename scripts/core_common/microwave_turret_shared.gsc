@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/damage.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\damage.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace microwave_turret;
 
@@ -152,7 +152,7 @@ function microwaveentitypostshutdowncleanup(entity) {
     turret waittill(#"microwave_turret_shutdown");
     if (isdefined(entity)) {
         if (isdefined(entity.beingmicrowavedby) && isdefined(entity.beingmicrowavedby[turret_vehicle_entnum])) {
-            turret_vehicle_entnum = [];
+            entity.beingmicrowavedby[turret_vehicle_entnum] = undefined;
         }
     }
 }
@@ -186,7 +186,7 @@ function microwaveentity(entity) {
             if (!isdefined(entity)) {
                 return;
             }
-            turret.turret_vehicle_entnum = [];
+            entity.beingmicrowavedby[turret.turret_vehicle_entnum] = undefined;
             if (isdefined(entity.microwavepoisoning) && entity.microwavepoisoning) {
                 entity.microwavepoisoning = 0;
             }

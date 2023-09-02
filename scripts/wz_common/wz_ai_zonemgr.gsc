@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_ai_zombie.gsc;
-#include scripts/wz_common/wz_ai_utils.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/match_record.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\wz_common\wz_ai_zombie.gsc;
+#using scripts\wz_common\wz_ai_utils.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\match_record.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace wz_ai_zonemgr;
 

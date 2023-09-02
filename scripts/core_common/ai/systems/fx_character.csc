@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/systems/gib.csc;
-#include scripts/core_common/ai/systems/destructible_character.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\ai\systems\gib.csc;
+#using scripts\core_common\ai\systems\destructible_character.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace fx_character;
 
@@ -73,7 +73,7 @@ function private _destructhandler(localclientnum, entity, piecenumber) {
         for (index = 0; index < fxbundle.fx.size; index++) {
             if (isdefined(fxbundleinst[index]) && fxbundle.fx[index].stoponpiecedestroyed === piecenumber) {
                 stopfx(localclientnum, fxbundleinst[index]);
-                index = [];
+                fxbundleinst[index] = undefined;
             }
         }
     }
@@ -92,7 +92,7 @@ function private _gibhandler(localclientnum, entity, gibflag) {
         for (index = 0; index < fxbundle.fx.size; index++) {
             if (isdefined(fxbundleinst[index]) && fxbundle.fx[index].stopongib === gibflag) {
                 stopfx(localclientnum, fxbundleinst[index]);
-                index = [];
+                fxbundleinst[index] = undefined;
             }
         }
     }
@@ -214,7 +214,7 @@ function stopfxbundle(localclientnum, entity, fxscriptbundle) {
                 stopfx(localclientnum, fx);
             }
         }
-        fxbundle.name = [];
+        entity._fxcharacter[fxbundle.name] = undefined;
     }
 }
 
@@ -234,7 +234,7 @@ function function_ae92446(localclientnum, entity, fxscriptbundle) {
                 killfx(localclientnum, fx);
             }
         }
-        fxbundle.name = [];
+        entity._fxcharacter[fxbundle.name] = undefined;
     }
 }
 

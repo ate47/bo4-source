@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/gadgets/gadget_health_regen.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\abilities\gadgets\gadget_health_regen.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace pickup_health;
 

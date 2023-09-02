@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_morocco_scripted.csc;
-#include scripts/mp_common/load.csc;
-#include scripts/core_common/util_shared.csc;
+#using scripts\mp\mp_morocco_scripted.csc;
+#using scripts\mp_common\load.csc;
+#using scripts\core_common\util_shared.csc;
 
 #namespace mp_morocco;
 

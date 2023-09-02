@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/popups_shared.gsc;
-#include scripts/killstreaks/emp_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\popups_shared.gsc;
+#using scripts\killstreaks\emp_shared.gsc;
 
 #namespace killstreakrules;
 
@@ -142,7 +142,7 @@ function displaykillstreakstartteammessagetoall(hardpointtype) {
 function recordkillstreakenddirect(eventindex, recordstreakindex, totalkills) {
     player = self;
     player recordkillstreakendevent(eventindex, recordstreakindex, totalkills);
-    recordstreakindex = [];
+    player.killstreakevents[recordstreakindex] = undefined;
 }
 
 // Namespace killstreakrules/killstreakrules_shared
@@ -232,8 +232,8 @@ function killstreakstop(hardpointtype, team, id) {
         mpkillstreakuses = {#team:team, #name:hardpointtype, #spawnid:level.killstreaks_triggered[id][#"spawnid"], #endtime:level.killstreaks_triggered[id][#"endtime"], #starttime:level.killstreaks_triggered[id][#"starttime"]};
         function_92d1707f(#"hash_710b205b26e46446", mpkillstreakuses);
     }
-    id = [];
-    id = [];
+    level.killstreaks_triggered[id] = undefined;
+    level.matchrecorderkillstreakkills[id] = undefined;
     if (isdefined(level.killstreaks[hardpointtype].menuname)) {
         recordstreakindex = level.killstreakindices[level.killstreaks[hardpointtype].menuname];
         if (isdefined(self) && isdefined(recordstreakindex) && (!isdefined(self.activatingkillstreak) || !self.activatingkillstreak)) {

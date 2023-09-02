@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/abilities/ability_player.gsc;
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/userspawnselection.gsc;
-#include scripts/mp_common/teams/team_assignment.gsc;
-#include scripts/mp_common/teams/platoons.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/player/player.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/mp_common/draft.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/teams.gsc;
-#include scripts/core_common/spectating.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/hud_message_shared.gsc;
-#include scripts/core_common/gamestate.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\userspawnselection.gsc;
+#using scripts\mp_common\teams\team_assignment.gsc;
+#using scripts\mp_common\teams\platoons.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\player\player.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\mp_common\draft.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\teams.gsc;
+#using scripts\core_common\spectating.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\hud_message_shared.gsc;
+#using scripts\core_common\gamestate.gsc;
 
 #namespace globallogic_ui;
 
@@ -156,8 +156,8 @@ function menuautoassign(comingfrommenu, var_4c542e39) {
     }
     self.pers[#"class"] = "";
     self.curclass = "";
-    #"weapon" = [];
-    #"savedmodel" = [];
+    self.pers[#"weapon"] = undefined;
+    self.pers[#"savedmodel"] = undefined;
     self teams::function_dc7eaabd(assignment);
     self platoons::function_4b016b57();
     distribution = teams::function_7d93567f();
@@ -281,8 +281,8 @@ function menuteam(team) {
         self.team = team;
         self.pers[#"class"] = "";
         self.curclass = "";
-        #"weapon" = [];
-        #"savedmodel" = [];
+        self.pers[#"weapon"] = undefined;
+        self.pers[#"savedmodel"] = undefined;
         self updateobjectivetext();
         if (!level.rankedmatch && !level.leaguematch) {
             self.sessionstate = "spectator";
@@ -312,8 +312,8 @@ function menuspectator() {
         self.team = #"spectator";
         self.pers[#"class"] = "";
         self.curclass = "";
-        #"weapon" = [];
-        #"savedmodel" = [];
+        self.pers[#"weapon"] = undefined;
+        self.pers[#"savedmodel"] = undefined;
         self updateobjectivetext();
         self.sessionteam = #"spectator";
         [[ level.spawnspectator ]]();
@@ -361,7 +361,7 @@ function menuclass(response, forcedclass, updatecharacterindex, closemenus) {
     self.pers[#"class"] = playerclass;
     self.curclass = playerclass;
     self loadout::function_d7c205b9(playerclass);
-    #"weapon" = [];
+    self.pers[#"weapon"] = undefined;
     if (gamestate::is_game_over()) {
         return 0;
     }

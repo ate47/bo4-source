@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/acid_bomb.csc;
-#include scripts/mp_common/vehicle.csc;
-#include scripts/mp_common/callbacks.csc;
-#include scripts/abilities/gadgets/gadget_vision_pulse.csc;
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/killstreaks/helicopter_shared.csc;
-#include scripts/killstreaks/airsupport.csc;
-#include scripts/core_common/footsteps_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\weapons\acid_bomb.csc;
+#using scripts\mp_common\vehicle.csc;
+#using scripts\mp_common\callbacks.csc;
+#using scripts\abilities\gadgets\gadget_vision_pulse.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\killstreaks\helicopter_shared.csc;
+#using scripts\killstreaks\airsupport.csc;
+#using scripts\core_common\footsteps_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace callback;
 

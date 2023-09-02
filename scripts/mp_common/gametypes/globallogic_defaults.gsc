@@ -1,22 +1,22 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/util.gsc;
-#include scripts/mp_common/teams/platoons.gsc;
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/gametypes/match.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/killstreaks/killstreaks_util.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/spectating.gsc;
-#include scripts/core_common/spawning_shared.gsc;
-#include scripts/core_common/rank_shared.gsc;
-#include scripts/core_common/platoons.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/infection.gsc;
-#include scripts/core_common/gamestate.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\teams\platoons.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\gametypes\match.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\killstreaks\killstreaks_util.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\spectating.gsc;
+#using scripts\core_common\spawning_shared.gsc;
+#using scripts\core_common\rank_shared.gsc;
+#using scripts\core_common\platoons.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\infection.gsc;
+#using scripts\core_common\gamestate.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace globallogic_defaults;
 

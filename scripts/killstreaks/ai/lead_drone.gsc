@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/remote_weapons.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/core_common/targetting_delay.gsc;
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/turret_shared.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\killstreaks\remote_weapons.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\targetting_delay.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\turret_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace lead_drone;
 

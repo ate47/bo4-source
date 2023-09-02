@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/ct_core.csc;
+#using scripts\mp_common\gametypes\ct_core.csc;
 
 #namespace ct_ajax;
 

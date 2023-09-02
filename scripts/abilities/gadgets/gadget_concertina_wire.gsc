@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreak_bundles.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/player/player_loadout.gsc;
-#include scripts/abilities/gadgets/gadget_smart_cover.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/core_common/status_effects/status_effect_util.gsc;
-#include scripts/core_common/globallogic/globallogic_score.gsc;
-#include scripts/weapons/weapon_utils.gsc;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/deployable.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/influencers_shared.gsc;
-#include scripts/core_common/gestures.gsc;
-#include scripts/core_common/gameobjects_shared.gsc;
-#include scripts/core_common/damagefeedback_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/abilities/ability_player.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\killstreaks\killstreak_bundles.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\player\player_loadout.gsc;
+#using scripts\abilities\gadgets\gadget_smart_cover.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util.gsc;
+#using scripts\core_common\globallogic\globallogic_score.gsc;
+#using scripts\weapons\weapon_utils.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\deployable.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\influencers_shared.gsc;
+#using scripts\core_common\gestures.gsc;
+#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\core_common\damagefeedback_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace concertina_wire;
 

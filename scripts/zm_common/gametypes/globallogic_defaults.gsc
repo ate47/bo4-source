@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/util.gsc;
-#include scripts/zm_common/gametypes/spawnlogic.gsc;
-#include scripts/zm_common/gametypes/globallogic_utils.gsc;
-#include scripts/zm_common/gametypes/globallogic_score.gsc;
-#include scripts/zm_common/gametypes/globallogic_audio.gsc;
-#include scripts/zm_common/gametypes/globallogic.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\zm_common\util.gsc;
+#using scripts\zm_common\gametypes\spawnlogic.gsc;
+#using scripts\zm_common\gametypes\globallogic_utils.gsc;
+#using scripts\zm_common\gametypes\globallogic_score.gsc;
+#using scripts\zm_common\gametypes\globallogic_audio.gsc;
+#using scripts\zm_common\gametypes\globallogic.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace globallogic_defaults;
 

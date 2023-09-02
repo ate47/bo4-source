@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_round_logic.gsc;
-#include scripts/zm_common/gametypes/zm_gametype.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/math_shared.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_round_logic.gsc;
+#using scripts\zm_common\gametypes\zm_gametype.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\math_shared.gsc;
 
 #namespace ztutorial;
 

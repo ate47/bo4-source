@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_towers_zstandard.csc;
-#include scripts/core_common/util_shared.csc;
+#using scripts\zm\zm_towers_zstandard.csc;
+#using scripts\core_common\util_shared.csc;
 
 #namespace zm_towers_gamemodes;
 

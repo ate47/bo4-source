@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/round.gsc;
-#include scripts/mp_common/gametypes/overtime.gsc;
-#include scripts/mp_common/gametypes/outcome.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\mp_common\gametypes\round.gsc;
+#using scripts\mp_common\gametypes\overtime.gsc;
+#using scripts\mp_common\gametypes\outcome.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace match;
 

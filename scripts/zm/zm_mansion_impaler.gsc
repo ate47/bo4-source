@@ -1,33 +1,33 @@
 // Atian COD Tools GSC decompiler test
-#include script_6b221588ece2c4aa;
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/zm/zm_mansion_special_rounds.gsc;
-#include scripts/zm/zm_mansion_util.gsc;
-#include scripts/zm/zm_mansion_pap_quest.gsc;
-#include scripts/zm/ai/zm_ai_nosferatu.gsc;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_sq.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/zm_common/zm_bgb_pack.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/core_common/vehicle_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
+#using script_6b221588ece2c4aa;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\zm\zm_mansion_special_rounds.gsc;
+#using scripts\zm\zm_mansion_util.gsc;
+#using scripts\zm\zm_mansion_pap_quest.gsc;
+#using scripts\zm\ai\zm_ai_nosferatu.gsc;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_sq.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\zm_common\zm_bgb_pack.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\core_common\vehicle_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
 
 #namespace mansion_impaler;
 
@@ -1338,7 +1338,7 @@ function onspawncrossbowboltimpact_internal(s_watcher, e_player) {
     s_watcher thread waitandfizzleout(self, 2);
     foreach (n_index, e_object in s_watcher.objectarray) {
         if (self == e_object) {
-            n_index = [];
+            s_watcher.objectarray[n_index] = undefined;
         }
     }
     cleanweaponobjectarray(s_watcher);

@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/gametypes/globallogic_utils.gsc;
-#include scripts/core_common/util_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\core_common\util_shared.gsc;
 
 #namespace events;
 

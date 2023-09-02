@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.csc;
-#include scripts/mp_common/item_world.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\mp_common\item_world.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace namespace_d0937679;
 

@@ -1,16 +1,16 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_player.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/hud_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_player.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\hud_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace hostmigration;
 

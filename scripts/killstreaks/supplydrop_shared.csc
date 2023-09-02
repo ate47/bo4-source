@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include script_324d329b31b9b4ec;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/struct.csc;
+#using script_324d329b31b9b4ec;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace supplydrop;
 

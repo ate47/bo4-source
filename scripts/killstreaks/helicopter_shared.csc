@@ -1,14 +1,14 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/killstreak_bundles.csc;
-#include scripts/killstreaks/flak_drone.csc;
-#include scripts/core_common/vehicle_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/duplicaterender_mgr.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/helicopter_sounds_shared.csc;
-#include scripts/core_common/fx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/struct.csc;
+#using scripts\killstreaks\killstreak_bundles.csc;
+#using scripts\killstreaks\flak_drone.csc;
+#using scripts\core_common\vehicle_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\duplicaterender_mgr.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\helicopter_sounds_shared.csc;
+#using scripts\core_common\fx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\struct.csc;
 
 #namespace helicopter;
 

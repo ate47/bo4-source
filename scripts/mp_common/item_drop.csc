@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/item_world_util.csc;
-#include scripts/mp_common/item_world.csc;
-#include script_c1eebdc8cad5d78;
-#include scripts/mp_common/item_inventory.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/flagsys_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\mp_common\item_world_util.csc;
+#using scripts\mp_common\item_world.csc;
+#using script_c1eebdc8cad5d78;
+#using scripts\mp_common\item_inventory.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace item_drop;
 
@@ -50,7 +50,7 @@ function private function_b8f6e02f() {
         var_d68d9a4d = level.var_d49a1a10.size;
         for (index = 0; index < var_d68d9a4d; index++) {
             var_5c6af5cf = level.var_d49a1a10[index];
-            index = [];
+            level.var_d49a1a10[index] = undefined;
             if (!isdefined(var_5c6af5cf) || !isdefined(var_5c6af5cf.item)) {
                 continue;
             }
@@ -118,7 +118,7 @@ function private function_67189b6b(localclientnum, newval) {
         item_world::function_b78a9820(localclientnum);
         item_world::function_2990e5f(localclientnum, self);
         if (isdefined(self.var_bd027dd9) && getdvarint(#"hash_99bb0233e482c77", 0)) {
-            self.var_bd027dd9 = [];
+            level.item_spawn_drops[self.var_bd027dd9] = undefined;
         }
         player = function_5c10bd79(localclientnum);
         player item_world::hide_item(localclientnum, self.var_bd027dd9);

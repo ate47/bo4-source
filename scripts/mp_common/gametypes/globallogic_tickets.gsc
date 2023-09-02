@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace tickets;
 

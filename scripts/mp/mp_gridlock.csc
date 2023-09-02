@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp/mp_gridlock_sound.csc;
-#include scripts/mp/mp_gridlock_fx.csc;
-#include scripts/mp_common/load.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\mp\mp_gridlock_sound.csc;
+#using scripts\mp\mp_gridlock_fx.csc;
+#using scripts\mp_common\load.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace mp_gridlock;
 

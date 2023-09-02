@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/planner_commander.gsc;
+#using scripts\core_common\ai\planner_commander.gsc;
 
 #namespace commander_util;
 

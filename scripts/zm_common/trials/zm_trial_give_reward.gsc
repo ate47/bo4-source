@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/zm_common/zm_contracts.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\zm_common\zm_contracts.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_trial_give_reward;
 

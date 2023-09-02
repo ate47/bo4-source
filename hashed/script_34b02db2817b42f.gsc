@@ -1,21 +1,21 @@
 // Atian COD Tools GSC decompiler test
-#include script_724752ab26bff81b;
-#include scripts/zm/zm_white_util.gsc;
-#include scripts/zm/zm_white_main_quest.gsc;
-#include script_174ce72cc0f850;
-#include scripts/zm/zm_hms_util.gsc;
-#include scripts/zm_common/zm_ui_inventory.gsc;
-#include scripts/zm_common/zm_item_pickup.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using script_724752ab26bff81b;
+#using scripts\zm\zm_white_util.gsc;
+#using scripts\zm\zm_white_main_quest.gsc;
+#using script_174ce72cc0f850;
+#using scripts\zm\zm_hms_util.gsc;
+#using scripts\zm_common\zm_ui_inventory.gsc;
+#using scripts\zm_common\zm_item_pickup.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace namespace_90b0490e;
 

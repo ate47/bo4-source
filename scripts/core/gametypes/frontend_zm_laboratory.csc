@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core/gametypes/frontend.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/scene_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/math_shared.csc;
-#include scripts/core_common/lui_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/exploder_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
-#include scripts/core_common/animation_shared.csc;
-#include scripts/core_common/array_shared.csc;
+#using scripts\core\gametypes\frontend.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\math_shared.csc;
+#using scripts\core_common\lui_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\exploder_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\animation_shared.csc;
+#using scripts\core_common\array_shared.csc;
 
 #namespace zm_laboratory;
 

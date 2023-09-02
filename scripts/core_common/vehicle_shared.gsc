@@ -1,25 +1,25 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/weapons_shared.gsc;
-#include scripts/weapons/heatseekingmissile.gsc;
-#include scripts/core_common/vehicle_death_shared.gsc;
-#include scripts/core_common/vehicle_ai_shared.gsc;
-#include scripts/core_common/vehicleriders_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/turret_shared.gsc;
-#include scripts/core_common/trigger_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spawner_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/flagsys_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\core_common\weapons_shared.gsc;
+#using scripts\weapons\heatseekingmissile.gsc;
+#using scripts\core_common\vehicle_death_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared.gsc;
+#using scripts\core_common\vehicleriders_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\turret_shared.gsc;
+#using scripts\core_common\trigger_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace vehicle;
 
@@ -971,7 +971,7 @@ function init(vehicle) {
         rigs = level.vehicle_attachedmodels[type];
         strings = getarraykeys(rigs);
         for (i = 0; i < strings.size; i++) {
-            strings[i] = [];
+            vehicle.getoutrig[strings[i]] = undefined;
             vehicle.getoutriganimating[strings[i]] = 0;
         }
     }

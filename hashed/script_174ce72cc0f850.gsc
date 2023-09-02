@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/zm_hms_util.gsc;
-#include script_3e5ec44cfab7a201;
-#include scripts/core_common/exploder_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/flag_shared.gsc;
+#using scripts\zm\zm_hms_util.gsc;
+#using script_3e5ec44cfab7a201;
+#using scripts\core_common\exploder_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\flag_shared.gsc;
 
 #namespace namespace_bd74bbd2;
 

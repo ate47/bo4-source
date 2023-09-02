@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/sound_shared.gsc;
+#using scripts\core_common\sound_shared.gsc;
 
 #namespace zombie_shared;
 

@@ -1,9 +1,9 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
-#include scripts/core_common/fx_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\fx_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace gadget_radiation_field;
 
@@ -421,7 +421,7 @@ function function_6a1db576(localclientnum, var_7e4d34a7, var_3880aff8) {
             function_1a7aaaa8(localclientnum, "<unknown string>" + var_3880aff8);
         #/
         stopfx(localclientnum, level.var_d0df06e9[localclientnum][var_7e4d34a7]);
-        var_7e4d34a7 = [];
+        level.var_d0df06e9[localclientnum][var_7e4d34a7] = undefined;
     } else {
         /#
             function_1a7aaaa8(localclientnum, "<unknown string>" + var_3880aff8);

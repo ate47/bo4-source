@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include script_444bc5b4fa0fe14f;
-#include scripts/zm_common/zm_trial.gsc;
-#include scripts/core_common/system_shared.gsc;
+#using script_444bc5b4fa0fe14f;
+#using scripts\zm_common\zm_trial.gsc;
+#using scripts\core_common\system_shared.gsc;
 
 #namespace zm_trial_super_sprinters_only;
 

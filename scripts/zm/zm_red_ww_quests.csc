@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/exploder_shared.csc;
-#include scripts/zm_common/zm_customgame.csc;
-#include script_624a704d0f6bf28d;
-#include scripts/zm_common/zm_utility.csc;
-#include scripts/core_common/ai/systems/gib.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/clientfield_shared.csc;
-#include scripts/core_common/postfx_shared.csc;
+#using scripts\core_common\exploder_shared.csc;
+#using scripts\zm_common\zm_customgame.csc;
+#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_utility.csc;
+#using scripts\core_common\ai\systems\gib.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\postfx_shared.csc;
 
 #namespace zm_red_ww_quests;
 
@@ -456,7 +456,7 @@ function function_c94905dc(localclientnum, oldval, newval, bnewent, binitialsnap
     } else {
         if (isdefined(self.var_f252bba1[localclientnum])) {
             deletefx(localclientnum, self.var_f252bba1[localclientnum], 1);
-            localclientnum = [];
+            self.var_f252bba1[localclientnum] = undefined;
         }
         if (self postfx::function_556665f2(#"hash_33f79c189a73adf9")) {
             self postfx::exitpostfxbundle(#"hash_33f79c189a73adf9");
@@ -578,7 +578,7 @@ function function_629b41e7(localclientnum, oldval, newval, bnewent, binitialsnap
     } else {
         if (isdefined(self.var_f252bba1[localclientnum])) {
             deletefx(localclientnum, self.var_f252bba1[localclientnum], 1);
-            localclientnum = [];
+            self.var_f252bba1[localclientnum] = undefined;
         }
         if (self postfx::function_556665f2(#"hash_867b31debc40b0a")) {
             self postfx::exitpostfxbundle(#"hash_867b31debc40b0a");
@@ -611,7 +611,7 @@ function function_c06211fc(localclientnum, oldval, newval, bnewent, binitialsnap
     } else {
         if (isdefined(self.var_f252bba1[localclientnum])) {
             deletefx(localclientnum, self.var_f252bba1[localclientnum], 1);
-            localclientnum = [];
+            self.var_f252bba1[localclientnum] = undefined;
         }
         if (self postfx::function_556665f2(#"hash_2ea4efbdd5fc3dfd")) {
             self postfx::exitpostfxbundle(#"hash_2ea4efbdd5fc3dfd");
@@ -644,7 +644,7 @@ function function_7df075f0(localclientnum, oldval, newval, bnewent, binitialsnap
     } else {
         if (isdefined(self.var_f252bba1[localclientnum])) {
             deletefx(localclientnum, self.var_f252bba1[localclientnum], 1);
-            localclientnum = [];
+            self.var_f252bba1[localclientnum] = undefined;
         }
         if (self postfx::function_556665f2(#"hash_49cc4d561f671b1a")) {
             self postfx::exitpostfxbundle(#"hash_49cc4d561f671b1a");

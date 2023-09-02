@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_utility.csc;
-#include script_624a704d0f6bf28d;
-#include script_3535cbd276d2c358;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/struct.csc;
-#include scripts/core_common/clientfield_shared.csc;
+#using scripts\zm_common\zm_utility.csc;
+#using script_624a704d0f6bf28d;
+#using script_3535cbd276d2c358;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\struct.csc;
+#using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_red_challenges;
 

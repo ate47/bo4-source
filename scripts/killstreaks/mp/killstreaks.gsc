@@ -1,12 +1,12 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/killstreaks/mp/killstreakrules.gsc;
-#include scripts/killstreaks/mp/killstreak_vehicle.gsc;
-#include scripts/mp_common/gametypes/globallogic_score.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/scoreevents_shared.gsc;
-#include scripts/killstreaks/killstreaks_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\killstreaks\mp\killstreakrules.gsc;
+#using scripts\killstreaks\mp\killstreak_vehicle.gsc;
+#using scripts\mp_common\gametypes\globallogic_score.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\scoreevents_shared.gsc;
+#using scripts\killstreaks\killstreaks_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace killstreaks;
 

@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include script_24c32478acf44108;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
+#using script_24c32478acf44108;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
 
 #namespace zm_weap_freezegun;
 

@@ -1,10 +1,10 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/wz_common/wz_firing_range.csc;
-#include scripts/wz_common/character_unlock_fixup.csc;
-#include scripts/mp_common/item_world.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/array_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\wz_common\wz_firing_range.csc;
+#using scripts\wz_common\character_unlock_fixup.csc;
+#using scripts\mp_common\item_world.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\array_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace character_unlock_seraph;
 

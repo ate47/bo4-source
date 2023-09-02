@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
 
 #namespace player_role;
 
@@ -157,7 +157,7 @@ function clear() {
         assert(isplayer(player));
     #/
     player setspecialistindex(0);
-    #"characterindex" = [];
+    player.pers[#"characterindex"] = undefined;
     player.playerrole = undefined;
 }
 

@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/systems/ai_interface.gsc;
-#include scripts/zm/archetype/archetype_zod_companion.gsc;
+#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\zm\archetype\archetype_zod_companion.gsc;
 
 #namespace zodcompanioninterface;
 

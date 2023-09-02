@@ -1,17 +1,17 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm_common/zm_zonemgr.gsc;
-#include scripts/zm_common/zm_vo.gsc;
-#include scripts/zm_common/zm_unitrigger.gsc;
-#include scripts/zm_common/zm_characters.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/struct.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\zm_common\zm_zonemgr.gsc;
+#using scripts\zm_common\zm_vo.gsc;
+#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_characters.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\struct.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace zm_mansion_sound;
 
@@ -378,7 +378,7 @@ function function_e432aeb6(str_category, var_39acfdda) {
         function_2d4ce142(n_voice);
         return 1;
     } else {
-        var_39acfdda = [];
+        self.var_631a26f0[str_category][var_39acfdda] = undefined;
         return 0;
     }
 }

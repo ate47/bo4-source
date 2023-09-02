@@ -1,18 +1,18 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/gametypes/globallogic_audio.gsc;
-#include scripts/mp_common/gametypes/globallogic.gsc;
-#include scripts/core_common/serverfield_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spectating.gsc;
-#include scripts/core_common/rat_shared.gsc;
-#include scripts/core_common/player/player_role.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\globallogic.gsc;
+#using scripts\core_common\serverfield_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spectating.gsc;
+#using scripts\core_common\rat_shared.gsc;
+#using scripts\core_common\player\player_role.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
 
 #namespace draft;
 
@@ -689,7 +689,7 @@ function assign_remaining_players(only_assign_player) {
             }
             oldspecialistindex = player getspecialistindex();
             if (isdefined(oldspecialistindex) && oldspecialistindex != selectedcharacter) {
-                #"class" = [];
+                player.pers[#"class"] = undefined;
             }
             /#
                 println("<unknown string>" + player.name + "<unknown string>" + selectedcharacter);

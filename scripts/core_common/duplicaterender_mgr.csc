@@ -1,11 +1,11 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/shoutcaster.csc;
-#include scripts/core_common/system_shared.csc;
-#include scripts/core_common/util_shared.csc;
-#include scripts/core_common/flagsys_shared.csc;
-#include scripts/core_common/flag_shared.csc;
-#include scripts/core_common/filter_shared.csc;
-#include scripts/core_common/callbacks_shared.csc;
+#using scripts\core_common\shoutcaster.csc;
+#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\util_shared.csc;
+#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\flag_shared.csc;
+#using scripts\core_common\filter_shared.csc;
+#using scripts\core_common\callbacks_shared.csc;
 
 #namespace duplicate_render;
 
@@ -359,7 +359,7 @@ function apply_filter(localclientnum, filter, filterset = "framebuffer") {
             if (isdefined(material)) {
                 self addduplicaterenderoption(type, var_385a59fa, material, culling);
             } else {
-                filterset = [];
+                self.currentdrfilter[filterset] = undefined;
             }
         } else {
             self addduplicaterenderoption(type, value, -1, culling);

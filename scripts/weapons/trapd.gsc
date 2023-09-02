@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/weaponobjects.gsc;
-#include scripts/weapons/proximity_grenade.gsc;
-#include scripts/weapons/molotov.gsc;
+#using scripts\weapons\weaponobjects.gsc;
+#using scripts\weapons\proximity_grenade.gsc;
+#using scripts\weapons\molotov.gsc;
 
 #namespace trapd;
 

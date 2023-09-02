@@ -1,15 +1,15 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/visionset_mgr_shared.gsc;
-#include scripts/weapons/tacticalinsertion.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/spectating.gsc;
-#include scripts/core_common/potm_shared.gsc;
-#include scripts/core_common/hud_util_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/challenges_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\visionset_mgr_shared.gsc;
+#using scripts\weapons\tacticalinsertion.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\spectating.gsc;
+#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\hud_util_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\challenges_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
 
 #namespace killcam;
 
@@ -929,7 +929,7 @@ function get_closest_killcam_entity(attacker, killcamentities, depth = 0) {
     }
     if (depth < 3 && isdefined(closestkillcament)) {
         if (!bullettracepassed(closestkillcament.origin, self.origin, 0, self)) {
-            closestkillcamentindex = [];
+            killcamentities[closestkillcamentindex] = undefined;
             betterkillcament = get_closest_killcam_entity(attacker, killcamentities, depth + 1);
             if (isdefined(betterkillcament)) {
                 closestkillcament = betterkillcament;

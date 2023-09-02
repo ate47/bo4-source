@@ -1,13 +1,13 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/ai/systems/gib.gsc;
-#include scripts/zm/zm_lightning_chain.gsc;
-#include scripts/zm_common/trials/zm_trial_headshots_only.gsc;
-#include scripts/zm_common/zm_stats.gsc;
-#include scripts/zm_common/zm_loadout.gsc;
-#include scripts/zm_common/zm_bgb.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/ai_shared.gsc;
+#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\zm\zm_lightning_chain.gsc;
+#using scripts\zm_common\trials\zm_trial_headshots_only.gsc;
+#using scripts\zm_common\zm_stats.gsc;
+#using scripts\zm_common\zm_loadout.gsc;
+#using scripts\zm_common\zm_bgb.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\ai_shared.gsc;
 
 #namespace zm_bgb_pop_shocks;
 

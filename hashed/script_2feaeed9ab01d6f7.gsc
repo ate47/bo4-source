@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/core_common/lui_shared.csc;
+#using scripts\core_common\lui_shared.csc;
 
 #namespace full_screen_black;
 

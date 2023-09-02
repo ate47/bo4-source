@@ -1,34 +1,34 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/zm/weapons/zm_weap_riotshield.gsc;
-#include script_6951ea86fdae9ae0;
-#include scripts/zm_common/trials/zm_trial_restrict_loadout.gsc;
-#include script_24c32478acf44108;
-#include scripts/zm_common/zm_weapons.gsc;
-#include scripts/zm_common/zm_score.gsc;
-#include scripts/zm_common/zm_hero_weapon.gsc;
-#include scripts/zm_common/zm_laststand.gsc;
-#include scripts/zm_common/zm_devgui.gsc;
-#include scripts/zm_common/zm_utility.gsc;
-#include scripts/zm_common/zm_equipment.gsc;
-#include scripts/zm_common/zm_customgame.gsc;
-#include scripts/zm_common/zm_crafting.gsc;
-#include scripts/zm_common/zm_audio.gsc;
-#include scripts/zm_common/zm.gsc;
-#include scripts/core_common/throttle_shared.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/scene_shared.gsc;
-#include scripts/core_common/laststand_shared.gsc;
-#include scripts/core_common/flag_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/ai/zombie_utility.gsc;
-#include scripts/core_common/ai/zombie_death.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include scripts/core_common/ai_shared.gsc;
-#include scripts/core_common/struct.gsc;
+#using scripts\zm\weapons\zm_weap_riotshield.gsc;
+#using script_6951ea86fdae9ae0;
+#using scripts\zm_common\trials\zm_trial_restrict_loadout.gsc;
+#using script_24c32478acf44108;
+#using scripts\zm_common\zm_weapons.gsc;
+#using scripts\zm_common\zm_score.gsc;
+#using scripts\zm_common\zm_hero_weapon.gsc;
+#using scripts\zm_common\zm_laststand.gsc;
+#using scripts\zm_common\zm_devgui.gsc;
+#using scripts\zm_common\zm_utility.gsc;
+#using scripts\zm_common\zm_equipment.gsc;
+#using scripts\zm_common\zm_customgame.gsc;
+#using scripts\zm_common\zm_crafting.gsc;
+#using scripts\zm_common\zm_audio.gsc;
+#using scripts\zm_common\zm.gsc;
+#using scripts\core_common\throttle_shared.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\laststand_shared.gsc;
+#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\ai\zombie_death.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\struct.gsc;
 
 #namespace zm_weap_spectral_shield;
 
@@ -815,7 +815,7 @@ function function_d1a7390b(w_curr) {
         if (isdefined(a_trace[#"position"])) {
             n_dist_sq = distancesquared(self.origin, a_trace[#"position"]);
             if (n_dist_sq > n_dist_sq_max) {
-                #"entity" = [];
+                a_trace[#"entity"] = undefined;
             }
         }
         ai_zombie_target = self function_f0b16c98(w_curr, n_dist_sq_max);

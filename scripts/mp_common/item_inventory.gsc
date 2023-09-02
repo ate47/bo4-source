@@ -1,23 +1,23 @@
 // Atian COD Tools GSC decompiler test
-#include scripts/weapons/sensor_dart.gsc;
-#include scripts/mp_common/player/player_loadout.gsc;
-#include scripts/mp_common/item_world_util.gsc;
-#include scripts/mp_common/item_world.gsc;
-#include script_6b993fdc7adc35ec;
-#include scripts/mp_common/item_drop.gsc;
-#include scripts/mp_common/armor.gsc;
-#include scripts/core_common/values_shared.gsc;
-#include scripts/core_common/util_shared.gsc;
-#include scripts/core_common/system_shared.gsc;
-#include scripts/core_common/player/player_stats.gsc;
-#include scripts/core_common/player/player_shared.gsc;
-#include scripts/core_common/math_shared.gsc;
-#include scripts/core_common/clientfield_shared.gsc;
-#include scripts/core_common/callbacks_shared.gsc;
-#include scripts/core_common/array_shared.gsc;
-#include script_67c87580908a0a00;
-#include scripts/abilities/gadgets/gadget_health_regen.gsc;
-#include scripts/abilities/ability_player.gsc;
+#using scripts\weapons\sensor_dart.gsc;
+#using scripts\mp_common\player\player_loadout.gsc;
+#using scripts\mp_common\item_world_util.gsc;
+#using scripts\mp_common\item_world.gsc;
+#using script_6b993fdc7adc35ec;
+#using scripts\mp_common\item_drop.gsc;
+#using scripts\mp_common\armor.gsc;
+#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats.gsc;
+#using scripts\core_common\player\player_shared.gsc;
+#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\array_shared.gsc;
+#using script_67c87580908a0a00;
+#using scripts\abilities\gadgets\gadget_health_regen.gsc;
+#using scripts\abilities\ability_player.gsc;
 
 #namespace item_inventory;
 
