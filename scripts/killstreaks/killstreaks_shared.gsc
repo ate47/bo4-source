@@ -2096,7 +2096,7 @@ function get_killstreak_usage(usagekey) {
 // Size: 0xee
 function on_player_spawned() {
     profilestart();
-    pixbeginevent(#"hash_1d81325f0403ec55");
+    pixbeginevent(#"_killstreaks.gsc/onplayerspawned");
     self thread give_owned();
     self.killcamkilledbyent = undefined;
     self callback::on_weapon_change(&function_4f415d8e);

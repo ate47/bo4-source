@@ -1524,7 +1524,7 @@ function hackerinit(watcher) {
         triggerorigin = self gettagorigin(self.weapon.hackertriggerorigintag);
     }
     self.hackertrigger = function_c7cdf243(triggerorigin, level.weaponobjects_hacker_trigger_width, level.weaponobjects_hacker_trigger_height);
-    self.hackertrigger set_hint_string(self.weapon.var_2f3ca476, #"hash_249ca5756f6ccd3e");
+    self.hackertrigger set_hint_string(self.weapon.var_2f3ca476, #"mp/generic_hacking");
     self.hackertrigger setignoreentfortrigger(self);
     self.hackertrigger setperkfortrigger(#"specialty_disarmexplosive");
     self.hackertrigger thread hackertriggersetvisibility(self.owner);
@@ -2404,7 +2404,7 @@ function function_ac27aef5(watcher, player, origin) {
     self.pickuptrigger setinvisibletoall();
     self.pickuptrigger setvisibletoplayer(player);
     self.pickuptrigger setteamfortrigger(player.pers[#"team"]);
-    self.pickuptrigger set_hint_string(self.weapon.var_8a03df2b, #"hash_5a7d32b6f408ad1f");
+    self.pickuptrigger set_hint_string(self.weapon.var_8a03df2b, #"mp/generic_pickup");
     self thread watchusetrigger(self.pickuptrigger, watcher.pickup, watcher.pickupsoundplayer, watcher.pickupsound, watcher.weapon);
     if (isdefined(watcher.pickup_trigger_listener)) {
         self thread [[ watcher.pickup_trigger_listener ]](self.pickuptrigger, player);

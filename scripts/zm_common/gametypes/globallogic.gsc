@@ -343,7 +343,7 @@ function forceend(hostsucks = 0) {
     level.forcedend = 1;
     level.hostforcedend = 1;
     if (hostsucks) {
-        endstring = #"hash_115339e33ac1efcb";
+        endstring = #"mp/host_sucks";
     } else if (level.splitscreen) {
         endstring = #"mp/ended_game";
     } else {
@@ -1479,7 +1479,7 @@ function callback_startgametype() {
         game.strings[#"waiting_to_spawn"] = #"hash_44d60a6e6ed2a53c";
         game.strings[#"waiting_to_spawn_ss"] = #"hash_78bf3a61cf52e257";
         game.strings[#"you_will_spawn"] = #"hash_53c0ba6abce1c0ea";
-        game.strings[#"match_starting"] = #"hash_73938fd7959ab087";
+        game.strings[#"match_starting"] = #"mp/match_starting";
         game.strings[#"change_class"] = #"hash_181a96fe9c28ada2";
         game.strings[#"last_stand"] = #"hash_5732d212e4511a00";
         game.strings[#"cowards_way"] = #"hash_268e464278a2f8ff";

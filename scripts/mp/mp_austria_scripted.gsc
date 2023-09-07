@@ -52,7 +52,7 @@ function on_game_playing() {
     level scene::add_scene_func(#"hash_711c3c97dc4804e2", &function_7ea86b26, "finger_down");
     level thread scene::play(#"hash_2f32b57967d58743", "button_out");
     button = struct::get("finger_trap_button");
-    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (getgametypesetting(#"allowmapscripting")) {
         button.mdl_gameobject gameobjects::set_onuse_event(&function_dc12d0bd);
         return;
     }

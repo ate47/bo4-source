@@ -1025,7 +1025,7 @@ function turretscanning() {
                     veh playsoundtoteam("mpl_ultimate_turret_lockon_enemy", util::getotherteam(veh.team));
                     veh.var_2b8e6720 = gettime();
                 }
-                veh threadendon function_b8952a40(0);
+                veh childthread function_b8952a40(0);
             }
             if (veh.turretontarget && veh function_2034705c(bundle) && veh cansee(veh.enemy)) {
                 if (burst_fire_enabled) {

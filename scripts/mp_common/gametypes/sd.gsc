@@ -214,11 +214,11 @@ function onstartgametype() {
     setbombtimer("B", 0);
     setmatchflag("bomb_timer_b", 0);
     setclientnamemode("manual_change");
-    game.strings[#"target_destroyed"] = #"hash_3e15ab566ff29bac";
-    game.strings[#"bomb_defused"] = #"hash_ce3810afcec6b54";
+    game.strings[#"target_destroyed"] = #"mp/target_destroyed";
+    game.strings[#"bomb_defused"] = #"mp/bomb_defused";
     hud_message::function_36419c2(1, game.strings[#"target_destroyed"], game.strings[#"target_destroyed"]);
     hud_message::function_36419c2(11, game.strings[#"bomb_defused"], game.strings[#"bomb_defused"]);
-    level._effect[#"bombexplosion"] = #"hash_5146504768c835f";
+    level._effect[#"bombexplosion"] = #"explosions/fx_exp_bomb_demo_mp";
     level.alwaysusestartspawns = 1;
     foreach (team, _ in level.teams) {
         level.var_a236b703[team] = 1;
@@ -927,7 +927,7 @@ function bombplanted(destroyedobj, player) {
     defuseobject = gameobjects::create_use_object(game.attackers, trigger, visuals, vectorscale((0, 0, 1), 32), #"hash_7b74e27a1a2facf8", 1, 1);
     defuseobject gameobjects::allow_use(#"enemy");
     defuseobject gameobjects::set_use_time(level.defusetime);
-    defuseobject gameobjects::set_use_text(#"hash_c01b634e9ce264c");
+    defuseobject gameobjects::set_use_text(#"mp/defusing_explosive");
     defuseobject gameobjects::set_use_hint_text(#"hash_754b795109a2bbba");
     defuseobject gameobjects::set_visible_team(#"any");
     defuseobject.label = label;

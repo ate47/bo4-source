@@ -76,8 +76,8 @@ function register_steps() {
     zm_sq::register(#"hash_4c0e5e4b34877996", #"step_2", #"hash_5b60b651867b65f8", &function_4e14c2d7, &function_21e10c11);
     zm_sq::register(#"hash_65636bbec86da22c", #"step_1", #"hash_1551692125951197", &function_6c1be65c, &function_e4b6830d);
     zm_sq::register(#"hash_65636bbec86da22c", #"step_2", #"hash_15516a212595134a", &function_28995f54, &function_f5692472);
-    zm_sq::register(#"zm_storage_billiards", #"step_1", #"hash_33b63d9ccbdb1e3e", &function_ffc4a06a, &function_a4daedbe);
-    zm_sq::register(#"zm_storage_billiards", #"step_2", #"hash_33b63c9ccbdb1c8b", &function_f21f0537, &function_2ff803fa);
+    zm_sq::register(#"zm_storage_billiards", #"step_1", #"storage_billiards_step_1", &function_ffc4a06a, &function_a4daedbe);
+    zm_sq::register(#"zm_storage_billiards", #"step_2", #"storage_billiards_step_2", &function_f21f0537, &function_2ff803fa);
 }
 
 // Namespace mansion_storage/zm_mansion_storage

@@ -92,7 +92,7 @@ function registernotetracks() {
     anim.notetracks[#"hash_4170f46935239626"] = &notetrackmovementwalk;
     anim.notetracks[#"anim_movement = "run""] = &notetrackmovementrun;
     anim.notetracks[#"hash_40fdc55d0cf02732"] = &notetrackalertnesscasual;
-    anim.notetracks[#"hash_404f1950633f51b"] = &notetrackalertnessalert;
+    anim.notetracks[#"anim_alertness = alert"] = &notetrackalertnessalert;
     anim.notetracks[#"gravity on"] = &notetrackgravity;
     anim.notetracks[#"gravity off"] = &notetrackgravity;
     anim.notetracks[#"hash_3a65333187809d2e"] = &notetrackgravity;
@@ -306,7 +306,7 @@ function handlenotetrack(note, flagname, customfunction, var1) {
     case #"hash_50c6c08f5de3ec2a":
         self.allowpain = 1;
         break;
-    case #"hash_d734c21f2e3b83e":
+    case #"anim_melee = right":
     case #"hash_39ec7b0969bab796":
         self.a.meleestate = "right";
         break;

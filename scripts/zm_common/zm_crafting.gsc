@@ -1166,7 +1166,7 @@ function private function_9693e041(player) {
             str = self.blueprint.var_1238231a;
             var_e7ed2264 = function_c9163c5d(str);
             hint_str = zm_utility::function_d6046228(str, var_e7ed2264);
-            backup_str = zm_utility::function_d6046228(#"hash_38222048e6736323", #"hash_197687e8f04962c9");
+            backup_str = zm_utility::function_d6046228(#"zombie/repair_shield", #"hash_197687e8f04962c9");
             self.hint_string = isdefined(hint_str) ? hint_str : backup_str;
             _shad_turret_debug_server = 1;
         } else {

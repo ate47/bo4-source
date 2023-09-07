@@ -1743,7 +1743,7 @@ function function_1ba28169(str_objective, var_3608d414, var_f54b52b3, var_8eb934
     self endoncallback(&function_986f117c, #"death", #"hash_3fe1dc3fe28515f3");
     self ct_utils::function_61c3d59c(str_objective, var_3608d414);
     wait(var_8eb9348c);
-    self threadendon function_9f1d8637(var_f54b52b3);
+    self childthread function_9f1d8637(var_f54b52b3);
 }
 
 // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial

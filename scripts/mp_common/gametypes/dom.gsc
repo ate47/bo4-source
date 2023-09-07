@@ -255,10 +255,10 @@ function updategametypedvars() {
     level.flagcapturelpm = getgametypesetting(#"maxobjectiveeventsperminute");
     level.playeroffensivemax = getgametypesetting(#"maxplayeroffensive");
     level.playerdefensivemax = getgametypesetting(#"maxplayerdefensive");
-    level.flagCanBeNeutralized = getgametypesetting(#"hash_27298832add70e8b");
+    level.flagcanbeneutralized = getgametypesetting(#"flagcanbeneutralized");
     level.decayprogress = isdefined(getgametypesetting(#"decayprogress")) ? getgametypesetting(#"decayprogress") : 0;
     level.autodecaytime = isdefined(getgametypesetting(#"autodecaytime")) ? getgametypesetting(#"autodecaytime") : undefined;
-    level.flagCaptureRateIncrease = isdefined(getgametypesetting(#"hash_57fe8e4f461c236d")) ? getgametypesetting(#"hash_57fe8e4f461c236d") : 0;
+    level.flagcapturerateincrease = isdefined(getgametypesetting(#"flagcapturerateincrease")) ? getgametypesetting(#"flagcapturerateincrease") : 0;
 }
 
 // Namespace dom/dom
@@ -319,12 +319,12 @@ function domflags() {
         visuals[0] = trigger.visual;
         domflag = gameobjects::create_use_object(#"neutral", trigger, visuals, (0, 0, 0), name);
         domflag gameobjects::allow_use(#"enemy");
-        if (level.flagCanBeNeutralized) {
+        if (level.flagcanbeneutralized) {
             domflag gameobjects::set_use_time(level.flagcapturetime / 2);
         } else {
             domflag gameobjects::set_use_time(level.flagcapturetime);
         }
-        domflag gameobjects::set_use_text(#"hash_12e5f9d3793fc759");
+        domflag gameobjects::set_use_text(#"mp/capturing_flag");
         label = domflag gameobjects::get_label();
         domflag.label = label;
         domflag.flagindex = trigger.visual.script_index;
@@ -336,14 +336,14 @@ function domflags() {
         domflag.onupdateuserate = &onupdateuserate;
         domflag.ondecaycomplete = &ondecaycomplete;
         domflag.hasbeencaptured = 0;
-        domflag.var_a0ff5eb8 = !level.flagCaptureRateIncrease;
+        domflag.var_a0ff5eb8 = !level.flagcapturerateincrease;
         domflag.decayprogress = level.decayprogress;
         domflag.autodecaytime = level.autodecaytime;
         domflag.currentlyunoccupied = 1;
         domflag.ontouchuse = &on_touch_use;
         if (domflag.decayprogress) {
             domflag gameobjects::must_maintain_claim(0);
-            if (level.flagCanBeNeutralized) {
+            if (level.flagcanbeneutralized) {
                 domflag gameobjects::set_decay_time(level.flagcapturetime / 2);
             } else {
                 domflag gameobjects::set_decay_time(level.flagcapturetime);
@@ -778,7 +778,7 @@ function onusewithoutneutralizingflag(sentient) {
 // Checksum 0x2afaa392, Offset: 0x3f48
 // Size: 0xbc
 function onuse(sentient) {
-    if (level.flagCanBeNeutralized) {
+    if (level.flagcanbeneutralized) {
         self onusewithneutralizingflag(sentient);
     } else {
         self onusewithoutneutralizingflag(sentient);

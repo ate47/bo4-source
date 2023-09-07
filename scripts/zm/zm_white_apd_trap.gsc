@@ -75,13 +75,13 @@ function function_d1112480(e_player) {
         self sethintstring("");
         return 0;
     } else if (level.s_apd_trap.var_6b64b967 === 1) {
-        self sethintstring(#"hash_39d080503c6a8d96");
+        self sethintstring(#"zombie/trap_active");
         return 1;
     } else if (isdefined(self.stub.related_parent.power_flag) && !level flag::get(self.stub.related_parent.power_flag)) {
-        self sethintstring(#"hash_71158766520dc432");
+        self sethintstring(#"zombie/need_power");
         return 1;
     } else if (level flag::get(#"hash_1478cafcd626c361") && !level flag::get(#"circuit_step_complete")) {
-        self sethintstring(#"hash_71158766520dc432");
+        self sethintstring(#"zombie/need_power");
         return 1;
     } else if (level.s_apd_trap.var_41ee2ddc === 0) {
         self sethintstring(#"zombie/trap_cooldown");

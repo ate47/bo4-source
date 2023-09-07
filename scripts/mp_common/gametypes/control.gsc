@@ -70,16 +70,16 @@ function event_handler[gametype_init] main(eventstruct) {
     level.takelivesondeath = 1;
     level.b_allow_vehicle_proximity_pickup = 1;
     level.scoreroundwinbased = getgametypesetting(#"cumulativeroundscores") == 0;
-    level.zonespawntime = getgametypesetting(#"hash_6090fb2501533436");
+    level.zonespawntime = getgametypesetting(#"objectivespawntime");
     level.capturetime = getgametypesetting(#"capturetime");
-    level.destroyTime = getgametypesetting(#"hash_2668df77d6e3dae4");
-    level.timePausesWhenInZone = getgametypesetting(#"hash_4b491f67e68ad5de");
+    level.destroytime = getgametypesetting(#"destroytime");
+    level.timepauseswheninzone = getgametypesetting(#"timepauseswheninzone");
     level.dela = getgametypesetting(#"delayplayer");
-    level.scorePerPlayer = getgametypesetting(#"hash_5d39db2666484b69");
-    level.neutralZone = getgametypesetting(#"hash_c20a87c80edb10e");
-    level.decayCapturedZones = getgametypesetting(#"hash_5e8cc49cfd2a1fd2");
-    level.capDecay = getgametypesetting(#"hash_4ea8f72af0b6d15b");
-    level.extraTime = getgametypesetting(#"hash_63cf0861bfd26240");
+    level.scoreperplayer = getgametypesetting(#"scoreperplayer");
+    level.neutralzone = getgametypesetting(#"neutralzone");
+    level.decaycapturedzones = getgametypesetting(#"decaycapturedzones");
+    level.capdecay = getgametypesetting(#"capdecay");
+    level.extratime = getgametypesetting(#"extratime");
     level.playercapturelpm = getgametypesetting(#"maxplayereventsperminute");
     level.autodecaytime = isdefined(getgametypesetting(#"autodecaytime")) ? getgametypesetting(#"autodecaytime") : undefined;
     level.timerpaused = 0;
@@ -87,8 +87,8 @@ function event_handler[gametype_init] main(eventstruct) {
     level.var_b9d36d8e = [];
     level.var_46ff851e = 0;
     level.numzonesoccupied = 0;
-    level.flagCaptureRateIncrease = getgametypesetting(#"hash_57fe8e4f461c236d");
-    level.bonusLivesForCapturingZone = isdefined(getgametypesetting(#"hash_3bbb6171dd1867a1")) ? getgametypesetting(#"hash_3bbb6171dd1867a1") : 0;
+    level.flagcapturerateincrease = getgametypesetting(#"flagcapturerateincrease");
+    level.bonuslivesforcapturingzone = isdefined(getgametypesetting(#"bonuslivesforcapturingzone")) ? getgametypesetting(#"bonuslivesforcapturingzone") : 0;
     globallogic_audio::set_leader_gametype_dialog("startControl", "hcStartControl", "controlOrdersOfs", "controlOrdersDef", "bbStartControl", "hcbbStartControl");
     register_clientfields();
     callback::on_connect(&on_player_connect);
@@ -162,7 +162,7 @@ function on_time_limit() {
         level thread globallogic::end_round(1);
         return;
     }
-    if (isdefined(level.neutralZone) && level.neutralZone) {
+    if (isdefined(level.neutralzone) && level.neutralzone) {
         round::function_870759fb();
     } else {
         round::set_winner(game.defenders);
@@ -189,7 +189,7 @@ function on_spawn_player(predictedspawn) {
 function gettimelimit() {
     timelimit = globallogic_defaults::default_gettimelimit();
     if (level.usingextratime) {
-        return (timelimit + level.extraTime);
+        return (timelimit + level.extratime);
     }
     return timelimit;
 }
@@ -504,7 +504,7 @@ function setup_zones() {
             }
         }
         ownerteam = game.defenders;
-        if (isdefined(level.neutralZone) && level.neutralZone) {
+        if (isdefined(level.neutralzone) && level.neutralzone) {
             ownerteam = #"neutral";
         }
         zone.gameobject = gameobjects::create_use_object(ownerteam, zone.trigger, visuals, (0, 0, 0), "control_" + zi);
@@ -515,7 +515,7 @@ function setup_zones() {
         zone.trigger.useobj = zone.gameobject;
         zone.gameobject.lastteamtoownzone = #"neutral";
         zone.gameobject.currentlyunoccupied = 1;
-        zone.gameobject.var_a0ff5eb8 = !level.flagCaptureRateIncrease;
+        zone.gameobject.var_a0ff5eb8 = !level.flagcapturerateincrease;
         zone.zoneindex = zi;
         zone.scores = [];
         foreach (team, _ in level.teams) {
@@ -651,9 +651,9 @@ function update_objective_hint_message(attackersmsg, defendersmsg) {
 // Checksum 0xbdb9a718, Offset: 0x3120
 // Size: 0x152
 function setup_objectives() {
-    level.objectivehintpreparezone = #"hash_428c6be88cdba7e1";
-    level.objectivehintcapturezone = #"hash_20ab0af94351c0d8";
-    level.objectivehintdefendhq = #"hash_257d8ae2e7fc8eb8";
+    level.objectivehintpreparezone = #"mp/control_koth";
+    level.objectivehintcapturezone = #"mp/capture_koth";
+    level.objectivehintdefendhq = #"mp/defend_koth";
     if (level.zonespawntime) {
         update_objective_hint_message(level.objectivehintpreparezone);
     } else {
@@ -692,7 +692,7 @@ function main_loop() {
     thread hide_timer_on_game_end();
     wait(1);
     sound::play_on_players("mp_suitcase_pickup");
-    if (level.zonespawntime && !(isdefined(level.neutralZone) && level.neutralZone)) {
+    if (level.zonespawntime && !(isdefined(level.neutralzone) && level.neutralzone)) {
         foreach (zone in level.zones) {
             zone.gameobject gameobjects::set_flags(1);
         }
@@ -703,10 +703,10 @@ function main_loop() {
         }
     }
     waittillframeend();
-    if (isdefined(level.neutralZone) && level.neutralZone) {
-        update_objective_hint_message(#"hash_68ddcee590e87b3d", #"hash_68ddcee590e87b3d");
+    if (isdefined(level.neutralzone) && level.neutralzone) {
+        update_objective_hint_message(#"mp/capture_strong", #"mp/capture_strong");
     } else {
-        update_objective_hint_message(#"hash_68ddcee590e87b3d", #"hash_4900ca003706dc1d");
+        update_objective_hint_message(#"mp/capture_strong", #"mp/defend_strong");
     }
     sound::play_on_players("mpl_hq_cap_us");
     thread audio_loop();
@@ -780,7 +780,7 @@ function capture_loop(zone) {
     zone.gameobject.capturecount = 0;
     zone.gameobject gameobjects::allow_use(#"enemy");
     zone.gameobject gameobjects::set_use_time(level.capturetime);
-    zone.gameobject gameobjects::set_use_text(#"hash_467145983994c6c2");
+    zone.gameobject gameobjects::set_use_text(#"mp/capturing_objective");
     numtouching = zone.gameobject get_num_touching();
     zone.gameobject gameobjects::set_visible_team(#"any");
     zone.gameobject gameobjects::set_model_visibility(1);
@@ -789,7 +789,7 @@ function capture_loop(zone) {
     zone.gameobject.decayprogress = 1;
     zone.gameobject gameobjects::set_decay_time(level.capturetime);
     zone.autodecaytime = level.autodecaytime;
-    if (isdefined(level.neutralZone) && level.neutralZone) {
+    if (isdefined(level.neutralzone) && level.neutralzone) {
         zone.gameobject.onuse = &on_zone_capture_neutral;
     } else {
         zone.gameobject.onuse = &on_zone_capture;
@@ -801,7 +801,7 @@ function capture_loop(zone) {
     zone.gameobject.onendtouchuse = &on_end_touch_use;
     zone.gameobject.onresumeuse = &on_touch_use;
     zone.gameobject.stage = 1;
-    if (isdefined(level.neutralZone) && level.neutralZone) {
+    if (isdefined(level.neutralzone) && level.neutralzone) {
         zone.gameobject.onuseupdate = &on_use_update_neutral;
     } else {
         zone.gameobject.onuseupdate = &on_use_update;
@@ -901,7 +901,7 @@ function private checkifshouldupdatedefenderstatusplayback(sentient) {
 // Checksum 0x76ba3936, Offset: 0x4128
 // Size: 0x6c
 function private checkifshouldupdatestatusplayback(sentient) {
-    if (isdefined(level.neutralZone) && level.neutralZone) {
+    if (isdefined(level.neutralzone) && level.neutralzone) {
         self.needsallstatusplayback = 1;
     } else {
         checkifshouldupdateattackerstatusplayback(sentient);
@@ -1102,8 +1102,8 @@ function private on_zone_capture(sentient) {
     if (level.capturedzones == 1 && [[ level.gettimelimit ]]() > 0) {
         level.usingextratime = 1;
     }
-    if (level.capturedzones == 1 && (isdefined(level.bonusLivesForCapturingZone) ? level.bonusLivesForCapturingZone : 0) > 0 && capture_team == game.attackers) {
-        game.lives[game.attackers] = game.lives[game.attackers] + level.bonusLivesForCapturingZone;
+    if (level.capturedzones == 1 && (isdefined(level.bonuslivesforcapturingzone) ? level.bonuslivesforcapturingzone : 0) > 0 && capture_team == game.attackers) {
+        game.lives[game.attackers] = game.lives[game.attackers] + level.bonuslivesforcapturingzone;
         teamid = "team" + level.teamindex[game.attackers];
         clientfield::set_world_uimodel("hudItems." + teamid + ".livesCount", game.lives[game.attackers]);
     }
@@ -1138,7 +1138,7 @@ function private on_zone_capture_neutral(sentient) {
     }
     level.warcapteam = capture_team;
     level.war_mission_succeeded = 1;
-    if (!(isdefined(level.decayCapturedZones) && level.decayCapturedZones)) {
+    if (!(isdefined(level.decaycapturedzones) && level.decaycapturedzones)) {
         if (self.ownerteam != capture_team) {
             self thread award_capture_points_neutral(capture_team);
             self gameobjects::set_owner_team(capture_team);
@@ -1325,7 +1325,7 @@ function award_capture_points(team) {
         wait(seconds);
         hostmigration::waittillhostmigrationdone();
         if (!is_zone_contested(self)) {
-            if (level.scorePerPlayer) {
+            if (level.scoreperplayer) {
                 score = self.numtouching[team];
             }
             globallogic_score::giveteamscoreforobjective(team, score);
@@ -1528,7 +1528,7 @@ function private update_team_client_field() {
         ownerteam = gameobj gameobjects::get_owner_team();
         state = 0;
         flags = 0;
-        if (isdefined(level.neutralZone) && level.neutralZone) {
+        if (isdefined(level.neutralzone) && level.neutralzone) {
             if (gameobj.claimteam == "none" || !isdefined(level.teamindex[gameobj.claimteam])) {
                 flags = 0;
             } else {
@@ -1641,7 +1641,7 @@ function score_capture_progress(var_277695bd) {
 // Checksum 0x226ecbd2, Offset: 0x7238
 // Size: 0x74e
 function on_use_update(team, progress, change) {
-    if (isdefined(level.capDecay) && level.capDecay && !(isdefined(level.neutralZone) && level.neutralZone)) {
+    if (isdefined(level.capdecay) && level.capdecay && !(isdefined(level.neutralzone) && level.neutralzone)) {
         if (progress >= 0.666667) {
             if (self.stage == 2) {
                 self.decayprogressmin = int(0.666667 * self.usetime);
@@ -1658,7 +1658,7 @@ function on_use_update(team, progress, change) {
             }
         }
     }
-    if (!(isdefined(level.neutralZone) && level.neutralZone)) {
+    if (!(isdefined(level.neutralzone) && level.neutralzone)) {
         update_timer(self.owningzone.zone_index, change);
     }
     if (change > 0 && self.currentlyunoccupied) {
@@ -1678,7 +1678,7 @@ function on_use_update(team, progress, change) {
     }
     if (progress > 0.05) {
         if (change > 0 && isdefined(self.needsattackerstatusplayback) && self.needsattackerstatusplayback) {
-            if (!(isdefined(level.neutralZone) && level.neutralZone)) {
+            if (!(isdefined(level.neutralzone) && level.neutralzone)) {
                 if (level.numzonesoccupied <= 1) {
                     soundkeyofs = "controlZ" + self.owningzone.zone_index + 1 + "CapturingOfs";
                     soundkeydef = "controlZ" + self.owningzone.zone_index + 1 + "LosingDef";
@@ -1754,7 +1754,7 @@ function on_use_update_neutral(team, progress, change) {
 // Size: 0x84
 function private set_ui_team() {
     wait(0.05);
-    if (game.attackers == #"allies" || isdefined(level.neutralZone) && level.neutralZone) {
+    if (game.attackers == #"allies" || isdefined(level.neutralzone) && level.neutralzone) {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 1);
     } else {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 2);
@@ -1766,7 +1766,7 @@ function private set_ui_team() {
 // Checksum 0x83df5d44, Offset: 0x7ba0
 // Size: 0x52
 function pause_time() {
-    if (level.timePausesWhenInZone && !(isdefined(level.timerpaused) && level.timerpaused)) {
+    if (level.timepauseswheninzone && !(isdefined(level.timerpaused) && level.timerpaused)) {
         globallogic_utils::pausetimer();
         level.timerpaused = 1;
     }
@@ -1777,7 +1777,7 @@ function pause_time() {
 // Checksum 0x2c8729cd, Offset: 0x7c00
 // Size: 0x52
 function resume_time() {
-    if (level.timePausesWhenInZone && isdefined(level.timerpaused) && level.timerpaused) {
+    if (level.timepauseswheninzone && isdefined(level.timerpaused) && level.timerpaused) {
         globallogic_utils::resumetimer();
         level.timerpaused = 0;
     }

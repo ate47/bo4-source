@@ -102,7 +102,7 @@ function function_de525e63() {
         node = getnode(nodename, "targetname");
         linktraversal(node);
     }
-    if (!getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (!getgametypesetting(#"allowmapscripting")) {
         a_s_gameobjects = struct::get_array("elevator_push_button", "targetname");
         foreach (var_20aecb28 in a_s_gameobjects) {
             var_20aecb28 gameobjects::destroy_object(1, 0);
@@ -220,7 +220,7 @@ function function_c3c859e1() {
     level flag::wait_till("first_player_spawned");
     wait(getdvarfloat(#"hash_205d729c5c415715", 0));
     exploder::exploder("fxexp_alarm_lights");
-    if (!getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (!getgametypesetting(#"allowmapscripting")) {
         exploder::exploder("fxexp_catwalk_off");
     } else {
         exploder::exploder("fxexp_catwalk_on");

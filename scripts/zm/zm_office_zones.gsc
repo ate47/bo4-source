@@ -133,7 +133,7 @@ function function_ab7f70b9(e_player) {
         break;
     case #"war_room_zone_south":
     case #"war_room_zone_north":
-    case #"hash_68274c1ec613a47f":
+    case #"war_room_zone_elevator":
         var_601fee0 = #"hash_25854f4ac1fdadf5";
         break;
     case #"war_room_server_room":

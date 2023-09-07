@@ -118,14 +118,14 @@ function electric_switch() {
                 if (function_8b1a219a()) {
                     self sethintstring(#"hash_5c4125d53451e888");
                 } else {
-                    self sethintstring(#"hash_5d8ba3059b5e82e4");
+                    self sethintstring(#"zombie/electric_switch");
                 }
                 break;
             case #"hash_47bde376753a03c9":
                 if (function_8b1a219a()) {
                     self sethintstring(#"hash_5c4125d53451e888");
                 } else {
-                    self sethintstring(#"hash_5d8ba3059b5e82e4");
+                    self sethintstring(#"zombie/electric_switch");
                 }
                 break;
             case #"artifact_mind":
@@ -916,7 +916,7 @@ function turn_power_off_and_close_doors(power_zone) {
                 door notify(#"power_on");
                 if (isdefined(level.temporary_power_switch_logic)) {
                     door.power_on = 0;
-                    door sethintstring(#"hash_71158766520dc432");
+                    door sethintstring(#"zombie/need_power");
                     door notify(#"kill_door_think");
                     door thread zm_blockers::door_think();
                 }

@@ -2704,7 +2704,7 @@ function function_f6ac524d() {
 // Checksum 0xc6bfffe6, Offset: 0xd708
 // Size: 0x30
 function function_c03c3007(e_player) {
-    self sethintstring(#"hash_71158766520dc432");
+    self sethintstring(#"zombie/need_power");
     return 1;
 }
 
@@ -3323,7 +3323,7 @@ function function_a4cda974(e_player) {
         if (function_8b1a219a()) {
             self sethintstring(#"hash_5c4125d53451e888");
         } else {
-            self sethintstring(#"hash_5d8ba3059b5e82e4");
+            self sethintstring(#"zombie/electric_switch");
         }
     }
     return 1;

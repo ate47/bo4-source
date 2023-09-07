@@ -1199,7 +1199,7 @@ function function_c7bb6e59() {
 function function_fd9e1b7d() {
     level endon(#"combattraining_logic_finished");
     level.var_3d80a2a5 = 0;
-    self threadendon ct_vo::function_261ed63c("vox_tvoi_tutor_prop_slide_2_nag", 7, 10);
+    self childthread ct_vo::function_261ed63c("vox_tvoi_tutor_prop_slide_2_nag", 7, 10);
     ct_utils::function_93c86846(undefined, "s_prophet_tut_fin2_goto", array(#"eq_seeker_mine", #"shock_rifle"), 0, undefined, 128);
     level notify(#"hash_60e26e14a51c5211");
     level.var_3d80a2a5 = 1;

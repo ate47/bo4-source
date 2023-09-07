@@ -341,10 +341,10 @@ function function_b649cf93() {
 function function_b2e1326(var_58df9892, var_1dc9c1bf = 1) {
     switch (var_58df9892) {
     case 0:
-        self sethintstring(#"hash_2276db2c26ee907a");
+        self sethintstring(#"zombie/trap_locked");
         break;
     case 1:
-        self sethintstring(#"hash_71158766520dc432");
+        self sethintstring(#"zombie/need_power");
         break;
     case 2:
         if (util::get_game_type() == "zstandard") {
@@ -360,7 +360,7 @@ function function_b2e1326(var_58df9892, var_1dc9c1bf = 1) {
         }
         break;
     case 3:
-        self sethintstring(#"hash_39d080503c6a8d96");
+        self sethintstring(#"zombie/trap_active");
         break;
     case 4:
         self sethintstring(#"zombie/trap_cooldown");

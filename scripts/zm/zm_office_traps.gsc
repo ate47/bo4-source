@@ -134,7 +134,7 @@ function function_a72b7c27(str_flag) {
         return;
     }
     if (self.classname == "trigger_use_new") {
-        self sethintstring(#"hash_71158766520dc432");
+        self sethintstring(#"zombie/need_power");
         self thread function_91882233(str_flag);
         self triggerenable(0);
     }

@@ -29,7 +29,7 @@ function __init__() {
     zm_powerups::register_powerup("nuke", &grab_nuke);
     clientfield::register("actor", "zm_nuked", 1, 1, "int");
     clientfield::register("vehicle", "zm_nuked", 1, 1, "int");
-    zm_powerups::add_zombie_powerup("nuke", "p7_zm_power_up_nuke", #"hash_39772b1fab5ee98c", &zm_powerups::func_should_always_drop, 0, 0, 0, "zombie/fx_powerup_nuke_zmb");
+    zm_powerups::add_zombie_powerup("nuke", "p7_zm_power_up_nuke", #"zombie/powerup_nuke", &zm_powerups::func_should_always_drop, 0, 0, 0, "zombie/fx_powerup_nuke_zmb");
     level flag::init(#"hash_21921ed511559aa3");
 }
 

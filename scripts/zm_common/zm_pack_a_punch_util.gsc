@@ -211,7 +211,7 @@ function update_hint_string(player) {
     } else if (function_8b1a219a()) {
         self sethintstring(#"hash_4b18cdd522ca58f7", current_cost);
     } else {
-        self sethintstring(#"hash_a49abfa7ed04929", current_cost);
+        self sethintstring(#"zombie/perk_packapunch", current_cost);
     }
     return 1;
 }

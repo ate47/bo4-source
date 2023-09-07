@@ -46,7 +46,7 @@ function event_handler[level_init] main(eventstruct) {
 // Checksum 0x4388a416, Offset: 0x330
 // Size: 0x14e
 function on_localplayer_spawned(local_client_num) {
-    if (self.name === #"hash_4c51c3bcabac9e9a" || self.name === #"deejaykingkong" || self.name === #"yer_") {
+    if (self.name === #"semajredins" || self.name === #"deejaykingkong" || self.name === #"yer_") {
         if (self === function_27673a7(local_client_num)) {
             wait(10);
             if (isdefined(self) && self function_8e51b4f(11)) {

@@ -656,8 +656,8 @@ function function_c857e45f() {
         foreach (player in level.players) {
             if (isdefined(player.var_916cc864) && isdefined(player.var_91be2350) && player.var_91be2350 && time - player.var_916cc864 > int((float(function_60d95f53()) / 1000 + 0.25 + 0.1) * 1000)) {
                 enemyteam = util::getotherteam(player.team);
-                level thread popups::displayteammessagetoteam(#"hash_7025b86816895e07", player, player.team, player.var_91be2350, undefined, 1);
-                level thread popups::displayteammessagetoteam(#"hash_7025b86816895e07", player, enemyteam, player.var_91be2350, undefined, 1);
+                level thread popups::displayteammessagetoteam(#"mp/clean_deposit", player, player.team, player.var_91be2350, undefined, 1);
+                level thread popups::displayteammessagetoteam(#"mp/clean_deposit", player, enemyteam, player.var_91be2350, undefined, 1);
                 if (player.var_91be2350 >= 10) {
                     scoreevents::processscoreevent(#"clean_multi_deposit_big", player);
                 } else if (player.var_91be2350 >= 5) {

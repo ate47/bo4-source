@@ -101,9 +101,9 @@ function private function_61be4b2c(bot, gameobject) {
 // Size: 0x230
 function private function_3ecc52d9(var_d3547bb1, lanenum) {
     if (isdefined(self.bot.var_6369695a)) {
-        currentpath = self.bot.var_6369695a.path;
-        if (currentpath.size > 0) {
-            var_3ebdf257 = currentpath[currentpath.size - 1];
+        soundsgunnerplay = self.bot.var_6369695a.path;
+        if (soundsgunnerplay.size > 0) {
+            var_3ebdf257 = soundsgunnerplay[soundsgunnerplay.size - 1];
             if (var_3ebdf257 === var_d3547bb1) {
                 return self.bot.var_6369695a;
             }

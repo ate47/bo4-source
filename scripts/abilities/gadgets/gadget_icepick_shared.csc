@@ -35,7 +35,7 @@ function function_b53fa4ba(entity) {
     if (isdefined(entity.vehicletype)) {
         if (entity.vehicletype == #"vehicle_t8_mil_helicopter_swat_transport") {
             return getweapon("player_air_vehicle1_main_turret_3rd_person_swat");
-        } else if (entity.vehicletype == #"hash_69af304f79c30059") {
+        } else if (entity.vehicletype == #"vehicle_t8_mil_helicopter_overwatch") {
             return getweapon("overwatch_helicopter");
         }
     }

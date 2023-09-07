@@ -37,7 +37,7 @@ function init() {
     game.strings[#"time_limit_reached"] = #"mp/time_limit_reached";
     game.strings[#"players_forfeited"] = #"mp/players_forfeited";
     game.strings[#"other_teams_forfeited"] = #"mp_other_teams_forfeited";
-    game.strings[#"host_sucks"] = #"hash_115339e33ac1efcb";
+    game.strings[#"host_sucks"] = #"mp/host_sucks";
     game.strings[#"host_ended"] = #"hash_cd63faed592da03";
     game.strings[#"game_ended"] = #"mp/ended_game";
     level.var_c3abe983 = [];

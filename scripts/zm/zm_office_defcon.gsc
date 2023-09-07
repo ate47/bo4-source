@@ -43,7 +43,7 @@ function pentagon_packapunch_init() {
 function defcon_sign_setup() {
     self setcursorhint("HINT_NOICON");
     self usetriggerrequirelookat();
-    self sethintstring(#"hash_71158766520dc432");
+    self sethintstring(#"zombie/need_power");
     level waittill(#"hash_2124984d1ece329c");
     self.lights = getentarray(self.target, "targetname");
     if (isdefined(self.lights) && util::get_game_type() != #"zstandard") {

@@ -951,8 +951,8 @@ function private function_ad7ad6ce(trigger_struct) {
 // Checksum 0x52b9b1ce, Offset: 0x4288
 // Size: 0xfa
 function private function_eb900758(stash) {
-    self threadendon function_d87c50ae(stash);
-    self threadendon function_6266f448(stash);
+    self childthread function_d87c50ae(stash);
+    self childthread function_6266f448(stash);
     self waittill(#"disconnect", #"death", #"entering_last_stand", #"hash_2781407e327b42ee");
     if (isdefined(stash) && isdefined(stash.lootlocker) && stash.lootlocker) {
         function_35c26e09(stash);

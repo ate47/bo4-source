@@ -497,7 +497,7 @@ function function_5c4d70d4(e_player) {
     if (!level flag::get(#"hash_1478cafcd626c361") || level flag::get(#"circuit_step_complete")) {
         self sethintstring(#"hash_25ac72d1e45049ef");
     } else {
-        self sethintstring(#"hash_71158766520dc432");
+        self sethintstring(#"zombie/need_power");
     }
     return 1;
 }
@@ -1259,7 +1259,7 @@ function function_f79e10f9(e_door) {
     if (e_door.script_flag === "bunker_power_event") {
         e_door sethintstring(#"hash_42a58f21fe6769a4");
     } else {
-        e_door sethintstring(#"hash_71158766520dc432");
+        e_door sethintstring(#"zombie/need_power");
     }
 }
 

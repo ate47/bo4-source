@@ -205,8 +205,8 @@ function function_c209f336(var_e1e74353) {
             function_1c289498("<unknown string>", var_e1e74353 - 1, "<unknown string>", var_d49657fd, "<unknown string>");
             function_1c289498("<unknown string>", var_e1e74353 - 1, "<unknown string>", var_d49657fd, "<unknown string>");
             for (groupid = 0; groupid < 3; groupid++) {
-                for (var_7706b208 = 0; var_7706b208 < 4; var_7706b208++) {
-                    function_1c289498("<unknown string>", var_e1e74353 - 1, "<unknown string>", var_d49657fd, "<unknown string>", groupid, "<unknown string>", var_7706b208, "<unknown string>");
+                for (categoryid = 0; categoryid < 4; categoryid++) {
+                    function_1c289498("<unknown string>", var_e1e74353 - 1, "<unknown string>", var_d49657fd, "<unknown string>", groupid, "<unknown string>", categoryid, "<unknown string>");
                 }
             }
         }

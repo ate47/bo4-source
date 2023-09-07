@@ -748,7 +748,7 @@ function heli_targeting(missilesenabled, hardpointtype) {
                     killstreaks::update_player_threat(targets[0]);
                 }
                 self.primarytarget = targets[0];
-                self notify(#"hash_60aef9581f7a8d3");
+                self notify(#"primary acquired");
                 self.secondarytarget = undefined;
                 /#
                     debug_print_target();
@@ -1056,7 +1056,7 @@ function assignprimarytargets(targets) {
         assert(isdefined(primarytarget), "<unknown string>");
     #/
     self.primarytarget = primarytarget;
-    self notify(#"hash_60aef9581f7a8d3");
+    self notify(#"primary acquired");
 }
 
 // Namespace helicopter/helicopter_shared
@@ -2459,7 +2459,7 @@ function heli_protect(startnode, protectdest, hardpointtype, heli_team) {
     self thread updatetargetyaw();
     self thread updatespeedonlock();
     self function_86012f82(protectdest, 1);
-    self waittilltimeout(30, #"near_goal", #"hash_60aef9581f7a8d3");
+    self waittilltimeout(30, #"near_goal", #"primary acquired");
     self setneargoalnotifydist(256);
     var_520e3459 = level.heli_protect_pos_time;
     var_2ca2e589 = 1;
@@ -2705,7 +2705,7 @@ function missile_support(target_player, rof, instantfire, endon_notify) {
                     /#
                         airsupport::debug_print3d_simple("<unknown string>", self, vectorscale((0, 0, -1), 80), 40);
                     #/
-                    self notify(#"hash_e4d0e93ec90d140");
+                    self notify(#"missile ready");
                     return;
                 }
             }
@@ -2715,7 +2715,7 @@ function missile_support(target_player, rof, instantfire, endon_notify) {
                 /#
                     airsupport::debug_print3d_simple("<unknown string>", self, vectorscale((0, 0, -1), 80), 40);
                 #/
-                self notify(#"hash_e4d0e93ec90d140");
+                self notify(#"missile ready");
                 return;
             }
         }
@@ -2729,7 +2729,7 @@ function missile_support(target_player, rof, instantfire, endon_notify) {
     }
     if (instantfire) {
         wait(rof);
-        self notify(#"hash_e4d0e93ec90d140");
+        self notify(#"missile ready");
     }
 }
 
@@ -2800,7 +2800,7 @@ function attack_primary(hardpointtype) {
                     self.turrettarget.antithreat = undefined;
                 }
             }
-            self waittill(#"hash_60aef9581f7a8d3");
+            self waittill(#"primary acquired");
         }
     }
 }

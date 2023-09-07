@@ -36,8 +36,8 @@ function event_handler[gametype_init] main(eventstruct) {
     player::function_cf3aa03d(&onplayerkilled);
     level.overrideteamscore = 1;
     level.teamscoreperkill = getgametypesetting(#"teamscoreperkill");
-    level.teamScorePerKillConfirmed = getgametypesetting(#"hash_27ba603f08da6da");
-    level.teamScorePerKillDenied = getgametypesetting(#"hash_445d11fd3012d702");
+    level.teamscoreperkillconfirmed = getgametypesetting(#"teamscoreperkillconfirmed");
+    level.teamscoreperkilldenied = getgametypesetting(#"teamscoreperkilldenied");
     level.var_cdb8ae2c = &function_a8da260c;
     globallogic_audio::set_leader_gametype_dialog("startKillConfirmed", "hcStartKillConfirmed", "gameBoost", "gameBoost", "bbStartKillConfirmed", "hcbbStartKillConfirmed");
     if (util::function_8570168d()) {
@@ -95,10 +95,10 @@ function onuse(player) {
     if (player.team != self.attackerteam) {
         tacinsertboost = self.tacinsert;
         if (isdefined(self.attacker) && self.attacker.team == self.attackerteam) {
-            self.attacker luinotifyevent(#"player_callout", 2, #"hash_2645b0c08b8b19b9", player.entnum);
+            self.attacker luinotifyevent(#"player_callout", 2, #"mp/kill_denied", player.entnum);
         }
         if (!tacinsertboost) {
-            player globallogic_score::giveteamscoreforobjective(player.team, level.teamScorePerKillDenied);
+            player globallogic_score::giveteamscoreforobjective(player.team, level.teamscoreperkilldenied);
         }
     } else {
         /#
@@ -111,7 +111,7 @@ function onuse(player) {
         #/
         player.pers[#"killsconfirmed"]++;
         player.killsconfirmed = player.pers[#"killsconfirmed"];
-        player globallogic_score::giveteamscoreforobjective(player.team, level.teamScorePerKillConfirmed);
+        player globallogic_score::giveteamscoreforobjective(player.team, level.teamscoreperkillconfirmed);
         if (!tacinsertboost) {
             currenttime = gettime();
             if (player.lastkillconfirmedtime + 4000 > currenttime) {

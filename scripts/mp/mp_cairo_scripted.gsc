@@ -56,7 +56,7 @@ function on_game_playing() {
 // Size: 0x56
 function function_c3c859e1() {
     if (util::isfirstround()) {
-        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+        if (getgametypesetting(#"allowmapscripting")) {
             level thread scene::play(#"hash_f73ff215479cc55");
         }
         return;
@@ -75,7 +75,7 @@ function function_34fc666e() {
         }
     }
     if (util::isfirstround()) {
-        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+        if (getgametypesetting(#"allowmapscripting")) {
             level scene::play(#"hash_f73ff215479cc55");
         }
     }

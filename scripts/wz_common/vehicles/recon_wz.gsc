@@ -29,7 +29,7 @@ function __init__() {
     if (!isdefined(level.var_1f020f16)) {
         level.var_1f020f16 = [];
     }
-    level.var_1f020f16[#"hash_1119f1f80616b887"] = &function_3711499d;
+    level.var_1f020f16[#"vehicle_t8_drone_recon_wz"] = &function_3711499d;
 }
 
 // Namespace recon_wz/recon_wz

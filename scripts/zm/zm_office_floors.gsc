@@ -104,7 +104,7 @@ function function_cd2f24b2(zone_name) {
     case #"war_room_zone_south":
     case #"war_room_server_room":
     case #"war_room_zone_north":
-    case #"hash_68274c1ec613a47f":
+    case #"war_room_zone_elevator":
         return 2;
     case #"labs_elevator":
     case #"labs_hallway1":

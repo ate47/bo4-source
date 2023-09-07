@@ -3559,7 +3559,7 @@ function function_b9b7618() {
         game.strings[#"waiting_to_spawn"] = #"hash_44d60a6e6ed2a53c";
         game.strings[#"waiting_to_spawn_ss"] = #"hash_78bf3a61cf52e257";
         game.strings[#"you_will_spawn"] = #"hash_53c0ba6abce1c0ea";
-        game.strings[#"match_starting"] = #"hash_73938fd7959ab087";
+        game.strings[#"match_starting"] = #"mp/match_starting";
         game.strings[#"change_class"] = #"hash_181a96fe9c28ada2";
         game.strings[#"item_on_respawn"] = #"hash_220160808c99fe71";
         game.strings[#"hash_b71875e85956ea"] = #"hash_61f8bf2959b7bd5a";

@@ -507,7 +507,7 @@ function private function_72cf5db2() {
     pap_machine = self.stub.zbarrier;
     b_power_off = !pap_machine is_on();
     if (b_power_off) {
-        self sethintstring(#"hash_71158766520dc432");
+        self sethintstring(#"zombie/need_power");
         pap_machine flag::wait_till("Pack_A_Punch_on");
     }
     for (;;) {

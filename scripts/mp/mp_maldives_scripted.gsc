@@ -40,7 +40,7 @@ function on_game_playing() {
     var_b8169a3f = struct::get("laser_button");
     var_b8169a3f.mdl_gameobject gameobjects::set_onuse_event(&function_bc78a4d0);
     var_b8169a3f.mdl_gameobject.var_64c54a7d = var_64c54a7d;
-    if (!getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (!getgametypesetting(#"allowmapscripting")) {
         var_b8169a3f.mdl_gameobject gameobjects::disable_object();
         return;
     }

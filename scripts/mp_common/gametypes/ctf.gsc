@@ -75,7 +75,7 @@ function event_handler[gametype_init] main(eventstruct) {
     util::registernumlives(0, 100);
     util::registerscorelimit(0, 5000);
     level.scoreroundwinbased = getgametypesetting(#"cumulativeroundscores") == 0;
-    level.flagCaptureCondition = getgametypesetting(#"hash_45b80b22c4dc71e8");
+    level.flagcapturecondition = getgametypesetting(#"flagcapturecondition");
     level.doubleovertime = 1;
     globallogic::registerfriendlyfiredelay(level.gametype, 15, 0, 1440);
     level.overrideteamscore = 1;
@@ -322,9 +322,9 @@ function onspawnplayer(predictedspawn) {
 function updategametypedvars() {
     level.flagcapturetime = getgametypesetting(#"capturetime");
     level.flagtouchreturntime = getgametypesetting(#"defusetime");
-    level.idleflagreturntime = getgametypesetting(#"hash_18d6868839108361");
-    level.flagRespawnTime = getgametypesetting(#"hash_4b900e7272befb4c");
-    level.enemyCarrierVisible = getgametypesetting(#"hash_2c5c31373530028d");
+    level.idleflagreturntime = getgametypesetting(#"idleflagresettime");
+    level.flagrespawntime = getgametypesetting(#"flagrespawntime");
+    level.enemycarriervisible = getgametypesetting(#"enemycarriervisible");
     level.roundlimit = getgametypesetting(#"roundlimit");
     level.cumulativeroundscores = getgametypesetting(#"cumulativeroundscores");
     level.teamkillpenaltymultiplier = getgametypesetting(#"teamkillpenalty");
@@ -394,7 +394,7 @@ function createflag(trigger) {
     } else if (var_a319c814 === 2) {
         flag gameobjects::function_98c39cbc(1);
     }
-    if (level.enemyCarrierVisible == 2) {
+    if (level.enemycarriervisible == 2) {
         flag.objidpingfriendly = 1;
     }
     if (getdvarint(#"hash_3127d4491fda6ae0", 0)) {
@@ -435,7 +435,7 @@ function createflagzone(trigger) {
     flagzone = gameobjects::create_use_object(entityteam, trigger, visuals, (0, 0, 0), entityteam + "_base");
     flagzone gameobjects::allow_use(#"friendly");
     flagzone gameobjects::set_use_time(0);
-    flagzone gameobjects::set_use_text(#"hash_12e5f9d3793fc759");
+    flagzone gameobjects::set_use_text(#"mp/capturing_flag");
     flagzone gameobjects::set_visible_team(#"friendly");
     enemyteam = util::getotherteam(entityteam);
     flagzone gameobjects::set_key_object(level.teamflags[enemyteam]);
@@ -747,7 +747,7 @@ function onpickup(player) {
         }
         globallogic_audio::play_2d_on_team("mpl_flagget_sting_friend", otherteam);
         globallogic_audio::play_2d_on_team("mpl_flagget_sting_enemy", team);
-        if (level.enemyCarrierVisible) {
+        if (level.enemycarriervisible) {
             self gameobjects::set_visible_team(#"any");
         } else {
             self gameobjects::set_visible_team(#"enemy");
@@ -830,7 +830,7 @@ function oncapture(player) {
     enemyteam = util::getotherteam(team);
     time = gettime();
     playerteamsflag = level.teamflags[team];
-    if (level.flagCaptureCondition == 1 && playerteamsflag gameobjects::is_object_away_from_home()) {
+    if (level.flagcapturecondition == 1 && playerteamsflag gameobjects::is_object_away_from_home()) {
         return;
     }
     if (overtime::is_overtime_round()) {

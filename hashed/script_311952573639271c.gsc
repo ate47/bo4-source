@@ -112,15 +112,15 @@ function init_quests() {
     zm_sq::register(#"hash_634eee6c99fa32d6", #"step_4", #"hash_33e492fbaa9e7c42", &function_1a1d203a, &function_127efb37);
     zm_sq::register(#"sea_walkers", #"step_1", #"sea_walkers_step_1", &sea_walkers_setup, &sea_walkers_cleanup);
     zm_sq::register(#"vomit_blade", #"step_1", #"vomit_blade_step_1", &vomit_blade_setup, &vomit_blade_cleanup);
-    zm_sq::register(#"fishy_offering", #"step_1", #"hash_189536bc9c5850f1", &function_143dcc81, &function_16d4b0d1);
-    zm_sq::register(#"fishy_offering", #"step_2", #"hash_189533bc9c584bd8", &function_282743a6, &function_15a4011a);
+    zm_sq::register(#"fishy_offering", #"step_1", #"hash_189536bc9c5850f1", &fishy_offering_step_1_setup, &fishy_offering_step_1_cleanup);
+    zm_sq::register(#"fishy_offering", #"step_2", #"hash_189533bc9c584bd8", &fishy_offering_step_2_setup, &fishy_offering_step_2_cleanup);
     zm_sq::register(#"portal_pass", #"step_1", #"portal_pass_step_1", &portal_pass_step_1_setup, &portal_pass_step_1_cleanup);
     zm_sq::register(#"portal_pass", #"step_2", #"portal_pass_step_2", &portal_pass_step_2_setup, &portal_pass_step_2_cleanup);
     zm_sq::register(#"hash_68677a02650cad00", #"step_1", #"hash_4ba91dee7d31240b", &function_b87c71d7, &function_46a445cd);
     zm_sq::register(#"hash_68677a02650cad00", #"step_2", #"hash_4ba91eee7d3125be", &function_9a209775, &function_2ae7b2a6);
-    zm_sq::register(#"ships_engineer", #"step_1", #"ships_engineer_step_1", &function_422a07e8, &function_3ce98642);
-    zm_sq::register(#"ships_engineer", #"step_2", #"ships_engineer_step_2", &function_3435c03, &function_4514c7b5);
-    zm_sq::register(#"ships_engineer", #"step_3", #"ships_engineer_step_3", &function_c8919eef, &function_f1979a);
+    zm_sq::register(#"ships_engineer", #"step_1", #"ships_engineer_step_1", &ships_engineer_1_setup, &ships_engineer_1_cleanup);
+    zm_sq::register(#"ships_engineer", #"step_2", #"ships_engineer_step_2", &ships_engineer_2_setup, &ships_engineer_2_cleanup);
+    zm_sq::register(#"ships_engineer", #"step_3", #"ships_engineer_step_3", &ships_engineer_3_setup, &ships_engineer_3_cleanup);
     callback::on_disconnect(&on_disconnect);
     if (zm_utility::is_ee_enabled()) {
         level thread fireworks_show();
@@ -138,7 +138,7 @@ function init_quests() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x881a54c9, Offset: 0x1280
 // Size: 0x74
-function function_422a07e8(var_a276c861) {
+function ships_engineer_1_setup(var_a276c861) {
     if (!getdvarint(#"zm_debug_ee", 0)) {
         level waittill(#"pap_quest_complete");
     } else {
@@ -153,7 +153,7 @@ function function_422a07e8(var_a276c861) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x3e1b86f, Offset: 0x1300
 // Size: 0x3c
-function function_3ce98642(var_a276c861, var_19e802fa) {
+function ships_engineer_1_cleanup(var_a276c861, var_19e802fa) {
     if (var_a276c861 || var_19e802fa) {
         level thread function_9e34f29();
     }
@@ -196,7 +196,7 @@ function function_4e186966() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x8458b93d, Offset: 0x1570
 // Size: 0x74
-function function_3435c03(var_a276c861) {
+function ships_engineer_2_setup(var_a276c861) {
     if (!var_a276c861) {
         level thread function_977835f8();
         level flag::wait_till(#"hash_f244999377a9081");
@@ -209,7 +209,7 @@ function function_3435c03(var_a276c861) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x5a7e9123, Offset: 0x15f0
 // Size: 0x44
-function function_4514c7b5(var_a276c861, var_19e802fa) {
+function ships_engineer_2_cleanup(var_a276c861, var_19e802fa) {
     if (var_a276c861 || var_19e802fa) {
         level flag::set(#"hash_f244999377a9081");
     }
@@ -264,7 +264,7 @@ function function_977835f8() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf08624c1, Offset: 0x1970
 // Size: 0x34
-function function_c8919eef(var_a276c861) {
+function ships_engineer_3_setup(var_a276c861) {
     if (!var_a276c861) {
         level flag::wait_till(#"hash_598d4e6af1cf4c39");
     }
@@ -274,7 +274,7 @@ function function_c8919eef(var_a276c861) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xd9798fdb, Offset: 0x19b0
 // Size: 0x54
-function function_f1979a(var_a276c861, var_19e802fa) {
+function ships_engineer_3_cleanup(var_a276c861, var_19e802fa) {
     level flag::set(#"hash_f244999377a9081");
     level flag::set(#"hash_598d4e6af1cf4c39");
 }
@@ -719,7 +719,7 @@ function function_76351c42() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x5920e3d3, Offset: 0x3750
 // Size: 0x4a0
-function function_143dcc81(var_5ea5c94d) {
+function fishy_offering_step_1_setup(var_5ea5c94d) {
     a_spots = array::randomize(struct::get_array(#"hash_152bb6bdedef598a"));
     e_fish = getent("dead_offering", "targetname");
     e_fish val::set(#"fishy_offering", "takedamage", 1);
@@ -760,7 +760,7 @@ function function_143dcc81(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xa6ef69ea, Offset: 0x3bf8
 // Size: 0x5c
-function function_16d4b0d1(var_5ea5c94d, ended_early) {
+function fishy_offering_step_1_cleanup(var_5ea5c94d, ended_early) {
     e_fish = getent("dead_offering", "targetname");
     if (isdefined(e_fish)) {
         e_fish delete();
@@ -771,7 +771,7 @@ function function_16d4b0d1(var_5ea5c94d, ended_early) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xef28ec7c, Offset: 0x3c60
 // Size: 0x224
-function function_282743a6(var_5ea5c94d) {
+function fishy_offering_step_2_setup(var_5ea5c94d) {
     array::run_all(util::get_players(), &forcestreambundle, #"p8_fxanim_zm_zod_tentacle_bundle");
     s_trigger = struct::get(#"hash_693bda099c0710af");
     e_activator = s_trigger zm_unitrigger::function_fac87205();
@@ -796,7 +796,7 @@ function function_282743a6(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x2a9a8051, Offset: 0x3e90
 // Size: 0x14
-function function_15a4011a(var_5ea5c94d, ended_early) {
+function fishy_offering_step_2_cleanup(var_5ea5c94d, ended_early) {
     
 }
 

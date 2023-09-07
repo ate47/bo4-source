@@ -57,15 +57,15 @@ function event_handler[gametype_init] main(eventstruct) {
     level.var_c605eb2a = &function_38874bf6;
     clientfield::register("world", "hardpoint", 1, 5, "int");
     clientfield::register("world", "hardpointteam", 1, 5, "int");
-    level.zoneautomovetime = getgametypesetting(#"hash_444b81eab0b09aa1");
-    level.zonespawntime = getgametypesetting(#"hash_6090fb2501533436");
+    level.zoneautomovetime = getgametypesetting(#"autodestroytime");
+    level.zonespawntime = getgametypesetting(#"objectivespawntime");
     level.kothmode = getgametypesetting(#"kothmode");
     level.capturetime = getgametypesetting(#"capturetime");
-    level.destroyTime = getgametypesetting(#"hash_2668df77d6e3dae4");
+    level.destroytime = getgametypesetting(#"destroytime");
     level.delayplayer = getgametypesetting(#"delayplayer");
-    level.randomzonespawn = getgametypesetting(#"hash_16223f5db756a4bf");
-    level.scorePerPlayer = getgametypesetting(#"hash_5d39db2666484b69");
-    level.timePausesWhenInZone = getgametypesetting(#"hash_4b491f67e68ad5de");
+    level.randomzonespawn = getgametypesetting(#"randomobjectivelocations");
+    level.scoreperplayer = getgametypesetting(#"scoreperplayer");
+    level.timepauseswheninzone = getgametypesetting(#"timepauseswheninzone");
     level.b_allow_vehicle_proximity_pickup = 1;
     level.var_c85170d1 = 1;
     globallogic_spawn::addsupportedspawnpointtype("koth");
@@ -143,9 +143,9 @@ function private function_785d5e6d() {
 function onstartgametype() {
     globallogic_score::resetteamscores();
     level.kothtotalsecondsinzone = 0;
-    level.objectivehintpreparezone = #"hash_428c6be88cdba7e1";
-    level.objectivehintcapturezone = #"hash_20ab0af94351c0d8";
-    level.objectivehintdefendhq = #"hash_257d8ae2e7fc8eb8";
+    level.objectivehintpreparezone = #"mp/control_koth";
+    level.objectivehintcapturezone = #"mp/capture_koth";
+    level.objectivehintdefendhq = #"mp/defend_koth";
     if (getgametypesetting(#"allowovertime")) {
         level.ontimelimit = &function_a2ef4132;
     }
@@ -168,7 +168,7 @@ function onstartgametype() {
 // Checksum 0xca3f2cf3, Offset: 0xe78
 // Size: 0x32
 function pause_time() {
-    if (level.timePausesWhenInZone) {
+    if (level.timepauseswheninzone) {
         globallogic_utils::pausetimer();
         level.timerpaused = 1;
     }
@@ -179,7 +179,7 @@ function pause_time() {
 // Checksum 0x4963dceb, Offset: 0xeb8
 // Size: 0x5a
 function resume_time() {
-    if (level.timePausesWhenInZone) {
+    if (level.timepauseswheninzone) {
         globallogic_utils::resumetimerdiscardoverride(int(level.kothtotalsecondsinzone * 1000));
         level.timerpaused = 0;
     }
@@ -191,7 +191,7 @@ function resume_time() {
 // Size: 0x56
 function updategametypedvars() {
     level.playercapturelpm = getgametypesetting(#"maxplayereventsperminute");
-    level.timePausesWhenInZone = getgametypesetting(#"hash_4b491f67e68ad5de");
+    level.timepauseswheninzone = getgametypesetting(#"timepauseswheninzone");
 }
 
 // Namespace koth/koth
@@ -284,7 +284,7 @@ function kothcaptureloop() {
     while (1) {
         level.zone.gameobject gameobjects::allow_use(#"any");
         level.zone.gameobject gameobjects::set_use_time(level.capturetime);
-        level.zone.gameobject gameobjects::set_use_text(#"hash_467145983994c6c2");
+        level.zone.gameobject gameobjects::set_use_text(#"mp/capturing_objective");
         numtouching = level.zone.gameobject getnumtouching();
         level.zone.gameobject gameobjects::set_visible_team(#"any");
         level.zone.gameobject gameobjects::set_model_visibility(1);
@@ -547,7 +547,7 @@ function onzonecapture(sentient) {
     level.kothcapteam = capture_team;
     self gameobjects::set_owner_team(capture_team);
     if (!level.kothmode) {
-        self gameobjects::set_use_time(level.destroyTime);
+        self gameobjects::set_use_time(level.destroytime);
     }
     foreach (team, _ in level.teams) {
         if (team == capture_team) {
@@ -744,7 +744,7 @@ function awardcapturepoints(team, lastcaptureteam) {
         wait(seconds);
         hostmigration::waittillhostmigrationdone();
         if (!level.zone.gameobject.iscontested) {
-            if (level.scorePerPlayer) {
+            if (level.scoreperplayer) {
                 score = level.zone.gameobject.numtouching[team];
             }
             globallogic_score::giveteamscoreforobjective(team, score);

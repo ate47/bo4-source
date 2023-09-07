@@ -66,7 +66,7 @@ function monitorgpsjammer() {
         return;
     }
     self clientfield::set("gps_jammer_active", self hasperk(#"specialty_gpsjammer") ? 1 : 0);
-    graceperiods = self function_ee4a9054(#"hash_37972a2f1d9bd52");
+    graceperiods = self function_ee4a9054(#"grace_periods");
     minspeed = self function_ee4a9054(#"min_speed");
     mindistance = self function_ee4a9054(#"min_distance");
     timeperiod = self function_ee4a9054("time_period");
@@ -92,7 +92,7 @@ function monitorgpsjammer() {
     gpsjammerprotection = 0;
     while (1) {
         /#
-            graceperiods = self function_ee4a9054(#"hash_37972a2f1d9bd52");
+            graceperiods = self function_ee4a9054(#"grace_periods");
             minspeed = self function_ee4a9054(#"min_speed");
             mindistance = self function_ee4a9054(#"min_distance");
             timeperiod = self function_ee4a9054("<unknown string>");

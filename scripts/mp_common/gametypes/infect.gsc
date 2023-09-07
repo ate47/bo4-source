@@ -378,7 +378,7 @@ function function_98c89d66(victim, wassuicide) {
     if (var_63f8204e > 1 && isdefined(victim)) {
         sound::play_on_players("mpl_flagget_sting_enemy", game.defenders);
         sound::play_on_players("mpl_flagget_sting_friend", game.attackers);
-        level thread popups::displayteammessagetoall(#"hash_429f9447bfe0581e", victim);
+        level thread popups::displayteammessagetoall(#"mp/got_infected", victim);
         if (var_63f8204e == 3) {
             globallogic_audio::leader_dialog("infectLowLives", game.defenders);
             globallogic_audio::leader_dialog("infectLowLivesEnemy", game.attackers);
@@ -824,7 +824,7 @@ function function_28da9505() {
     } else {
         forcespawnteam(game.defenders);
     }
-    level thread popups::displayteammessagetoall(#"hash_429f9447bfe0581e", self);
+    level thread popups::displayteammessagetoall(#"mp/got_infected", self);
     scoreevents::processscoreevent("first_infected", self);
     sound::play_on_players("mpl_flagget_sting_enemy");
     self thread infection::function_da08f4d0();

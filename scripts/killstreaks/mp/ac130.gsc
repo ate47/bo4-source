@@ -459,8 +459,8 @@ function function_31f9c728(bundle) {
         waitresult = undefined;
         waitresult = ac130 waittill(#"stinger_fired_at_me");
         if (isdefined(waitresult.projectile)) {
-            ac130 threadendon function_849819e9(waitresult.projectile, bundle, "exp_incoming_missile");
-            ac130 threadendon function_6650cc9c(waitresult.projectile, bundle, "uin_ac130_alarm_missile_incoming");
+            ac130 childthread function_849819e9(waitresult.projectile, bundle, "exp_incoming_missile");
+            ac130 childthread function_6650cc9c(waitresult.projectile, bundle, "uin_ac130_alarm_missile_incoming");
         }
     }
 }

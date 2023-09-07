@@ -150,7 +150,7 @@ function function_496d0824(var_3bc2d545, var_e8456387, team, killstreak_id) {
     plane thread function_6cd200d2();
     plane thread watchgameended();
     owner thread function_598dc586(plane, var_3bc2d545, var_e8456387, team, killstreak_id, height);
-    owner threadendon function_a9ef6d5d(plane, var_675219e7, var_aff95821, var_d1769adf);
+    owner childthread function_a9ef6d5d(plane, var_675219e7, var_aff95821, var_d1769adf);
     plane.var_f348056 = var_f348056;
     plane.var_493a2839 = var_aff95821;
     plane.var_66e0652a = var_66e0652a;

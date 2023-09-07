@@ -1290,16 +1290,16 @@ function function_89eab9e8() {
         level.var_47cd3e56 = 0;
     }
     self ct_utils::function_61d750d4(s_loc.origin, s_loc.angles);
-    self val::set(#"hash_327cbcfdc60b4a4d", "ignoreme", 1);
-    self val::set(#"hash_327cbcfdc60b4a4d", "ignoreall", 1);
+    self val::set(#"dog_meat", "ignoreme", 1);
+    self val::set(#"dog_meat", "ignoreall", 1);
     s_target = struct::get(s_loc.target, "targetname");
     waitframe(1);
     self clientfield::set("enemy_keyline_render", 1);
     s_path = struct::get(s_target.script_noteworthy, "targetname");
     self thread ct_utils::function_1e7b75f2(s_path);
     level waittill(#"hash_16cac42598bc6a4");
-    self val::reset(#"hash_327cbcfdc60b4a4d", "ignoreme");
-    self val::reset(#"hash_327cbcfdc60b4a4d", "ignoreall");
+    self val::reset(#"dog_meat", "ignoreme");
+    self val::reset(#"dog_meat", "ignoreall");
 }
 
 // Namespace ct_nomad_tutorial/ct_nomad_tutorial

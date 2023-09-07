@@ -35,7 +35,7 @@ function __init__() {
 // Checksum 0x8cbdf1c6, Offset: 0x170
 // Size: 0x1bc
 function init() {
-    game.strings[#"autobalance"] = #"hash_3e1f31b57ad2d3d9";
+    game.strings[#"autobalance"] = #"mp/autobalance_now";
     level.teambalance = getdvarint(#"scr_teambalance", 0);
     level.teambalancetimer = 0;
     level.timeplayedcap = getdvarint(#"scr_timeplayedcap", 1800);

@@ -1546,7 +1546,7 @@ function treasure_chest_weapon_spawn(chest, player, respin) {
     }
     if (!move_the_box && preferred_weapon == level.weaponnone) {
         if (isdefined(player)) {
-            player iprintlnbold(#"hash_3d644aadc1626b4b");
+            player iprintlnbold(#"zombie/magic_box_empty");
         }
         wait(1);
         if (isdefined(player)) {
@@ -1568,7 +1568,7 @@ function treasure_chest_weapon_spawn(chest, player, respin) {
     }
     if (rand == level.weaponnone) {
         if (isdefined(player)) {
-            player iprintlnbold(#"hash_3d644aadc1626b4b");
+            player iprintlnbold(#"zombie/magic_box_empty");
         }
         wait(1);
         if (isdefined(player)) {

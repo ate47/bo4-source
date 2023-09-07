@@ -167,7 +167,7 @@ function playerzombie_downed_hud() {
         text.fontscale = 1.8;
         text.alpha = 0;
         text.color = (1, 1, 1);
-        text settext(#"hash_574da66f3a4d92dd");
+        text settext(#"zombie/playerzombie_downed");
         text.y = -113;
         if (self issplitscreen()) {
             text.y = -137;

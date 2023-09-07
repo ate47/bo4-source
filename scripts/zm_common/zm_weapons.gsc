@@ -1834,9 +1834,9 @@ function suppress_stowed_weapon(onoff) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x7edd808, Offset: 0x6160
 // Size: 0x24
-function checkstringvalid(var_f5bc27b5) {
-    if (var_f5bc27b5 != "") {
-        return var_f5bc27b5;
+function checkstringvalid(hash_or_str) {
+    if (hash_or_str != "") {
+        return hash_or_str;
     }
     return undefined;
 }

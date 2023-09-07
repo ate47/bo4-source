@@ -1022,7 +1022,7 @@ function init(vehicle) {
     }
     if (!isdefined(vehicle.script_nonmovingvehicle)) {
         path_start = get_target(vehicle);
-        if (isdefined(path_start) && function_5f430582(path_start)) {
+        if (isdefined(path_start) && isvehiclenode(path_start)) {
             vehicle thread get_on_path(path_start);
         }
     }
@@ -2386,7 +2386,7 @@ function is_destructible() {
 // Checksum 0xd4852871, Offset: 0x8720
 // Size: 0x2cc
 function attack_group_think() {
-    self endon(#"death", #"hash_bfb3547eac174da", #"hash_1f5849cf956e2ad");
+    self endon(#"death", #"hash_bfb3547eac174da", #"killed all targets");
     if (isdefined(self.script_vehicleattackgroupwait)) {
         wait(self.script_vehicleattackgroupwait);
     }
@@ -2416,7 +2416,7 @@ function attack_group_think() {
                 if (valid_targets.size != 0) {
                     current_target = self get_nearest_target(valid_targets);
                 } else {
-                    self notify(#"hash_1f5849cf956e2ad");
+                    self notify(#"killed all targets");
                 }
                 if (current_target.health <= 0) {
                     arrayremovevalue(valid_targets, current_target);

@@ -336,11 +336,11 @@ function wait_and_revive() {
     }
     var_3269dfa3 = (isdefined(self.var_b92e42da) ? self.var_b92e42da : getdvarfloat(#"player_laststandbleedouttime", 0)) * 0.25;
     var_3269dfa3 = getdvarfloat(#"hash_1d447d6b4492bf4f", var_3269dfa3);
-    self thread laststand::revive_hud_show_n_fade(#"hash_45804a37272bc580", var_3269dfa3);
+    self thread laststand::revive_hud_show_n_fade(#"zombie/reviving_solo", var_3269dfa3);
     var_c564fe97 = undefined;
     var_c564fe97 = level waittilltimeout(var_3269dfa3, #"end_of_round");
     if (var_c564fe97._notify === "end_of_round") {
-        self thread laststand::revive_hud_show_n_fade(#"hash_45804a37272bc580", 1);
+        self thread laststand::revive_hud_show_n_fade(#"zombie/reviving_solo", 1);
     }
     while (self.var_16735873 === 1) {
         wait(0.1);

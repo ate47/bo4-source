@@ -1172,7 +1172,7 @@ function perk_machine_spawn_init() {
             unitrigger_stub.require_look_at = 0;
             unitrigger_stub.targetname = "zombie_vending";
             unitrigger_stub.script_noteworthy = perk;
-            unitrigger_stub.hint_string = #"hash_71158766520dc432";
+            unitrigger_stub.hint_string = #"zombie/need_power";
             unitrigger_stub.hint_parm1 = undefined;
             unitrigger_stub.hint_parm2 = undefined;
             if (isdefined(s_spawn_pos.script_int)) {
@@ -1253,7 +1253,7 @@ function function_5296af32(player) {
     if (isdefined(perk) && !player hasperk(perk) && self vending_trigger_can_player_use(player, 1) && !player has_perk_paused(perk) && !player zm_utility::in_revive_trigger() && !zm_equipment::is_equipment_that_blocks_purchase(player getcurrentweapon()) && !player zm_equipment::hacker_active()) {
         b_is_invis = 0;
         if (!var_f2a92d5e) {
-            self.stub.hint_string = #"hash_71158766520dc432";
+            self.stub.hint_string = #"zombie/need_power";
             self.stub.hint_parm1 = undefined;
         } else {
             cost = zombie_utility::function_d2dfacfd(#"zombie_perk_cost");
@@ -1985,7 +1985,7 @@ function perk_vapor_altar_init() {
             unitrigger_stub.require_look_at = 0;
             unitrigger_stub.targetname = "perk_vapor_altar_stub";
             unitrigger_stub.script_int = n_slot;
-            unitrigger_stub.hint_string = #"hash_71158766520dc432";
+            unitrigger_stub.hint_string = #"zombie/need_power";
             unitrigger_stub.hint_parm1 = undefined;
             unitrigger_stub.hint_parm2 = undefined;
             zm_unitrigger::unitrigger_force_per_player_triggers(unitrigger_stub, 1);
@@ -2122,7 +2122,7 @@ function function_b7f2c635(player) {
     }
     var_99442276 = 0;
     if (self.stub.var_3468124.var_2977c27 == "off") {
-        self sethintstringforplayer(player, #"hash_71158766520dc432");
+        self sethintstringforplayer(player, #"zombie/need_power");
         return 1;
     }
     if (zm_trial_disable_buys::is_active()) {

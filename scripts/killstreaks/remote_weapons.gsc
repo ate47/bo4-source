@@ -16,7 +16,7 @@ function init_shared() {
     if (!isdefined(level.var_4249c222)) {
         level.var_4249c222 = {};
         level.remoteweapons = [];
-        level.remoteexithint = #"hash_17ed51b55d2d46e4";
+        level.remoteexithint = #"mp/remote_exit";
         callback::on_spawned(&on_player_spawned);
     }
 }

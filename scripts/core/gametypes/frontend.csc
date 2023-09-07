@@ -377,7 +377,7 @@ function handle_inspect_player(localclientnum, menu_name) {
         /#
             assert(isdefined(waitresult.xuid));
         #/
-        level threadendon update_inspection_character(localclientnum, waitresult.xuid, menu_name);
+        level childthread update_inspection_character(localclientnum, waitresult.xuid, menu_name);
     }
 }
 
@@ -484,7 +484,7 @@ function function_37304ace(localclientnum, menu_name) {
             /#
                 assert(isdefined(waitresult.var_c62cc1ff));
             #/
-            level threadendon function_daa3f7d0(localclientnum, waitresult, 1);
+            level childthread function_daa3f7d0(localclientnum, waitresult, 1);
         }
     }
 }
@@ -950,12 +950,12 @@ function function_f2c538de(localclientnum, menu_name, state) {
             options = function_ea647602("<unknown string>");
             if (camo == -1) {
                 start_index = 0;
-                var_a1054744 = options.size - 1;
+                end_index = options.size - 1;
             } else {
                 start_index = camo;
-                var_a1054744 = camo;
+                end_index = camo;
             }
-            for (i = start_index; i <= var_a1054744; i++) {
+            for (i = start_index; i <= end_index; i++) {
                 var_2d8a24a3 = options[i];
                 if (filter != "<unknown string>") {
                     category = function_57411076(var_2d8a24a3.name);
@@ -975,12 +975,12 @@ function function_f2c538de(localclientnum, menu_name, state) {
         if (var_c58c03de != 0) {
             if (var_c58c03de == -1) {
                 start_index = 1;
-                var_a1054744 = weapon.var_5b73038c;
+                end_index = weapon.var_5b73038c;
             } else {
                 start_index = var_c58c03de;
-                var_a1054744 = var_c58c03de;
+                end_index = var_c58c03de;
             }
-            for (i = start_index; i <= var_a1054744; i++) {
+            for (i = start_index; i <= end_index; i++) {
                 function_5d6480a0(localclientnum, weapon, weapon_model, weapon_name, {#name:"<unknown string>" + i, #item_index:0}, i);
             }
         }
@@ -2642,7 +2642,7 @@ function function_98088878(localclientnum, menu_data) {
         weapon_model.origin = var_7ef44086.origin + var_2d45743e.offset;
         weapon_model.angles = var_7ef44086.angles;
         if (isdefined(waitresult.var_1ca7e142)) {
-            threadendon function_3e7aaaea(localclientnum, weapon_model, waitresult);
+            childthread function_3e7aaaea(localclientnum, weapon_model, waitresult);
         }
     }
 }

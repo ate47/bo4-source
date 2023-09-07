@@ -65,8 +65,8 @@ function function_6b183c78(var_736940b3) {
     /#
         assert(ishash(var_736940b3), "<unknown string>");
     #/
-    foreach (index, var_8aa9ab80 in level.var_50f7dbd5) {
-        if (var_8aa9ab80 == var_736940b3) {
+    foreach (index, name_hash in level.var_50f7dbd5) {
+        if (name_hash == var_736940b3) {
             var_689205d = index;
             break;
         }

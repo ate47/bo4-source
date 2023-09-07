@@ -116,7 +116,7 @@ function event_handler[level_init] main(eventstruct) {
     /#
         level thread zm_zodt8_devgui::function_5d346946();
     #/
-    level thread function_b290ef8f();
+    level thread lore_room_door();
     level thread function_704f6133();
     level thread function_ef155de5();
     if (util::get_game_type() != "ztutorial") {
@@ -515,7 +515,7 @@ function function_d4fea86c(zbarrier_magicbox) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x86e8997b, Offset: 0x3998
 // Size: 0x150
-function function_b290ef8f() {
+function lore_room_door() {
     level endon(#"end_game");
     level flag::init(#"open_lore_room");
     var_48e9f58e = getent("baphomets_entry", "targetname");
@@ -2140,7 +2140,7 @@ function function_c52e8ba(player, var_8d5d092c) {
         self.hint_string[n_player_index] = #"hash_7667bd0f83307360";
         b_result = 1;
     } else if (isdefined(self.stub.delay) && !self.stub flag::get("delayed")) {
-        self.hint_string[n_player_index] = #"hash_4be7c1bbfe9f5d86";
+        self.hint_string[n_player_index] = #"zombie/fasttravel_delay";
         b_result = 1;
     } else {
         switch (str_loc) {

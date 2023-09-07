@@ -161,7 +161,7 @@ function perk_random_machine_stub_update_prompt(player) {
     self.hint_parm1 = undefined;
     n_power_on = is_power_on(self.stub.script_int);
     if (!n_power_on) {
-        self.hint_string = #"hash_71158766520dc432";
+        self.hint_string = #"zombie/need_power";
         return 0;
     } else if (self.stub.trigger_target.state == "idle" || self.stub.trigger_target.state == "vending") {
         n_purchase_limit = player zm_utility::get_player_perk_purchase_limit();

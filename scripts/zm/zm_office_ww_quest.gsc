@@ -225,7 +225,7 @@ function function_469495ed(e_player) {
             self sethintstring(#"hash_43ea35c7ca629e09");
         }
     } else {
-        self sethintstring(#"hash_71158766520dc432");
+        self sethintstring(#"zombie/need_power");
     }
     return 1;
 }

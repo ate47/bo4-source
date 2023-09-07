@@ -39,7 +39,7 @@ function gunfireloopfx(fxid, fxpos, shotsmin, shotsmax, shotdelaymin, shotdelaym
 // Checksum 0xd4d646f5, Offset: 0x298
 // Size: 0x20a
 function gunfireloopfxthread(fxid, fxpos, shotsmin, shotsmax, shotdelaymin, shotdelaymax, betweensetsmin, betweensetsmax) {
-    level endon(#"hash_d5682445dd3d910");
+    level endon(#"stop all gunfireloopfx");
     waitframe(1);
     if (betweensetsmax < betweensetsmin) {
         temp = betweensetsmax;
@@ -86,7 +86,7 @@ function gunfireloopfxvec(fxid, fxpos, fxpos2, shotsmin, shotsmax, shotdelaymin,
 // Checksum 0xfd430526, Offset: 0x540
 // Size: 0x29a
 function gunfireloopfxvecthread(fxid, fxpos, fxpos2, shotsmin, shotsmax, shotdelaymin, shotdelaymax, betweensetsmin, betweensetsmax) {
-    level endon(#"hash_d5682445dd3d910");
+    level endon(#"stop all gunfireloopfx");
     waitframe(1);
     if (betweensetsmax < betweensetsmin) {
         temp = betweensetsmax;

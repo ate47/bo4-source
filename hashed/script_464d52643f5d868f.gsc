@@ -43,7 +43,7 @@ function function_4989fd7e() {
     level flag::init(#"catwalk_event_completed");
     level flag::init(#"catwalk_door_open");
     var_40762d8a = getent("t_catwalk_door_open", "targetname");
-    var_40762d8a sethintstring(#"hash_71158766520dc432");
+    var_40762d8a sethintstring(#"zombie/need_power");
     level.var_2ea46461 = getent("mdl_ca_l", "targetname");
     a_e_door = getentarray("door_model_west_side_exterior_to_catwalk", "targetname");
     foreach (e_door in a_e_door) {

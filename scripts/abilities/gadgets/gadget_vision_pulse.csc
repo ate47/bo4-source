@@ -175,7 +175,7 @@ function function_ab898b2d(notifystring) {
     self endon(#"death");
     localclientnum = self.localclientnum;
     if (notifystring == "visor_down") {
-        self threadendon function_5f4276b8();
+        self childthread function_5f4276b8();
         level.registerdevgui_dev_cac_fallimp[localclientnum] = 1;
     } else if (notifystring == "visor_up") {
         self clearanim(#"pt_recon_t8_stand_vision_pulse_goggles_down_loop", 0);

@@ -108,9 +108,9 @@ function private function_37175e73(var_fee74908) {
     }
     level flagsys::wait_till(#"item_world_initialized");
     for (var_5473c308 = 0; var_5473c308 < var_fee74908.size - 1; var_5473c308++) {
-        for (bitindex = 0; bitindex < 32; bitindex++) {
-            if (var_fee74908[var_5473c308] & 1 << bitindex) {
-                itemindex = var_5473c308 * 32 + bitindex;
+        for (shaderanimopacity_opacity = 0; shaderanimopacity_opacity < 32; shaderanimopacity_opacity++) {
+            if (var_fee74908[var_5473c308] & 1 << shaderanimopacity_opacity) {
+                itemindex = var_5473c308 * 32 + shaderanimopacity_opacity;
                 hide_item(-1, itemindex);
             }
         }

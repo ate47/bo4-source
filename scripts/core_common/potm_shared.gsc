@@ -2313,7 +2313,7 @@ function private updatedebugmenustate() {
 // Params 0, eflags: 0x0
 // Checksum 0x9530c38c, Offset: 0x8ad8
 // Size: 0x224
-function debugupdate() {
+function hkaibehaviorblockeddetector() {
     /#
         if (!isenabled()) {
             return;

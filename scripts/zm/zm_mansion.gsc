@@ -1283,7 +1283,7 @@ function function_c52e8ba(player, var_8d5d092c) {
             self.hint_string[n_player_index] = #"hash_6dcacaabbe757952";
             break;
         default:
-            self.hint_string[n_player_index] = #"hash_222289639943b061";
+            self.hint_string[n_player_index] = #"zombie/fasttravel_locked";
             break;
         }
         b_result = 1;
@@ -1291,7 +1291,7 @@ function function_c52e8ba(player, var_8d5d092c) {
         self.hint_string[n_player_index] = #"hash_7667bd0f83307360";
         b_result = 1;
     } else if (isdefined(self.stub.delay) && !self.stub flag::get("delayed")) {
-        self.hint_string[n_player_index] = #"hash_4be7c1bbfe9f5d86";
+        self.hint_string[n_player_index] = #"zombie/fasttravel_delay";
         b_result = 1;
     } else {
         switch (self.stub.script_string) {

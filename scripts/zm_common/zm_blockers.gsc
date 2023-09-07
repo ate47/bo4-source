@@ -2684,7 +2684,7 @@ function function_dafd2e5a() {
     } else if (isdefined(level.var_d5bd7049)) {
         self sethintstring(level.var_d5bd7049);
     } else {
-        self sethintstring(#"hash_71158766520dc432");
+        self sethintstring(#"zombie/need_power");
     }
 }
 

@@ -978,7 +978,7 @@ function magicbox() {
     while (level.chests[level.chest_index].zbarrier.weapon == level.weaponnone) {
         waitframe(1);
     }
-    self notify(#"hash_3e0d007260914523");
+    self notify(#"weapon_settled");
     level thread function_68da8e33(#"hash_7a9ff8dcf14fb758");
     level.chests[level.chest_index].zbarrier waittill(#"weapon_grabbed");
     level.customrandomweaponweights = undefined;

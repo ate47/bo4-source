@@ -77,14 +77,14 @@ function event_handler[gametype_init] main(eventstruct) {
     util::registerroundswitch(0, 9);
     util::registerroundwinlimit(0, 10);
     util::registernumlives(0, 100);
-    level.bootTime = getgametypesetting(#"hash_3a64e31d02834194");
-    level.rebootTime = getgametypesetting(#"hash_1d5318dc84fcfef1");
-    level.rebootPlayers = getgametypesetting(#"hash_1e5d29788698deda");
+    level.boottime = getgametypesetting(#"boottime");
+    level.reboottime = getgametypesetting(#"reboottime");
+    level.rebootplayers = getgametypesetting(#"rebootplayers");
     level.moveplayers = getgametypesetting(#"moveplayers");
     level.robotshield = getgametypesetting(#"robotshield");
-    level.robotSpeed = "run";
+    level.robotspeed = "run";
     level.var_cdb8ae2c = &function_a8da260c;
-    switch (getgametypesetting(#"hash_78e80a41589e26aa")) {
+    switch (getgametypesetting(#"shutdowndamage")) {
     case 1:
         level.escortrobotkillstreakbundle = "escort_robot_low";
         break;
@@ -95,23 +95,23 @@ function event_handler[gametype_init] main(eventstruct) {
         level.escortrobotkillstreakbundle = "escort_robot_high";
     case 0:
     default:
-        level.shutdownDamage = 0;
+        level.shutdowndamage = 0;
         break;
     }
     if (isdefined(level.escortrobotkillstreakbundle)) {
         killstreak_bundles::register_killstreak_bundle(level.escortrobotkillstreakbundle);
-        level.shutdownDamage = killstreak_bundles::get_max_health(level.escortrobotkillstreakbundle);
+        level.shutdowndamage = killstreak_bundles::get_max_health(level.escortrobotkillstreakbundle);
     }
-    switch (isdefined(getgametypesetting(#"hash_52378dd81e94f2da")) ? getgametypesetting(#"hash_52378dd81e94f2da") : 0) {
+    switch (isdefined(getgametypesetting(#"robotspeed")) ? getgametypesetting(#"robotspeed") : 0) {
     case 1:
     default:
-        level.robotSpeed = "run";
+        level.robotspeed = "run";
         break;
     case 2:
-        level.robotSpeed = "sprint";
+        level.robotspeed = "sprint";
         break;
     case 0:
-        level.robotSpeed = "walk";
+        level.robotspeed = "walk";
         break;
     }
     globallogic_audio::set_leader_gametype_dialog("startSafeguard", "hcStartSafeguard", "sfgStartAttack", "sfgStartDefend", "bbStartSafeguard", "hcbbStartSafeguard");
@@ -352,10 +352,10 @@ function drop_robot() {
     level.moveobject = setup_move_object(level.robot, "escort_robot_move_trig");
     level.goalobject = setup_goal_object(level.robot, "escort_robot_goal_trig");
     setup_reboot_object(level.robot, "escort_robot_reboot_trig");
-    if (level.bootTime) {
+    if (level.boottime) {
         level.moveobject gameobjects::set_flags(1);
         level.robot setblackboardattribute("_stance", "crouch");
-        level.robot ai::set_behavior_attribute("rogue_control_speed", level.robotSpeed);
+        level.robot ai::set_behavior_attribute("rogue_control_speed", level.robotspeed);
         level.robot shutdown_robot();
     } else {
         objective_setprogress(level.moveobject.objectiveid, 1);
@@ -369,8 +369,8 @@ function drop_robot() {
     level.robot.onground = 1;
     level.robot.distancetraveled = 0;
     level.robot thread function_ba95878f();
-    if (level.bootTime) {
-        level.robot thread auto_reboot_robot(level.bootTime);
+    if (level.boottime) {
+        level.robot thread auto_reboot_robot(level.boottime);
     } else if (level.moveplayers == 0) {
         level.robot move_robot();
     }
@@ -547,7 +547,7 @@ function wait_robot_shutdown() {
         globallogic_audio::leader_dialog("sfgRobotDisabledDefender", otherteam, undefined, "robot");
         globallogic_audio::play_2d_on_team("mpl_safeguard_disabled_sting_friend", self.team);
         globallogic_audio::play_2d_on_team("mpl_safeguard_disabled_sting_enemy", otherteam);
-        self thread auto_reboot_robot(level.rebootTime);
+        self thread auto_reboot_robot(level.reboottime);
     }
 }
 
@@ -589,7 +589,7 @@ function auto_reboot_robot(time) {
     while (shutdowntime < time) {
         rate = 0;
         friendlycount = level.moveobject.numtouching[level.moveobject.ownerteam];
-        if (!level.rebootPlayers) {
+        if (!level.rebootplayers) {
             rate = float(function_60d95f53()) / 1000;
         } else if (friendlycount > 0) {
             rate = float(function_60d95f53()) / 1000;
@@ -605,7 +605,7 @@ function auto_reboot_robot(time) {
         }
         waitframe(1);
     }
-    if (level.rebootPlayers > 0) {
+    if (level.rebootplayers > 0) {
         foreach (struct in level.moveobject.touchlist[game.attackers]) {
             scoreevents::processscoreevent(#"escort_robot_reboot", struct.player, undefined, undefined);
         }
@@ -621,9 +621,9 @@ function watch_robot_damaged() {
     level endon(#"game_ended");
     while (1) {
         self waittill(#"robot_damaged");
-        percent = min(1, self.shutdownDamage / level.shutdownDamage);
+        percent = min(1, self.shutdowndamage / level.shutdowndamage);
         objective_setprogress(level.moveobject.objectiveid, 1 - percent);
-        health = level.shutdownDamage - self.shutdownDamage;
+        health = level.shutdowndamage - self.shutdowndamage;
         lowhealth = killstreak_bundles::get_low_health(level.escortrobotkillstreakbundle);
         if (!(isdefined(self.playeddamage) && self.playeddamage) && health <= lowhealth) {
             globallogic_audio::leader_dialog("sfgRobotUnderFire", self.team, undefined, "robot");
@@ -727,7 +727,7 @@ function spawn_robot(position, angles) {
     robot ai::set_behavior_attribute("rogue_allow_pregib", 0);
     robot ai::set_behavior_attribute("rogue_allow_predestruct", 0);
     robot ai::set_behavior_attribute("rogue_control", "forced_level_2");
-    robot ai::set_behavior_attribute("rogue_control_speed", level.robotSpeed);
+    robot ai::set_behavior_attribute("rogue_control_speed", level.robotspeed);
     robot val::set(#"escort_robot", "ignoreall", 1);
     robot.allowdeath = 0;
     robot ai::set_behavior_attribute("can_become_crawler", 0);
@@ -738,7 +738,7 @@ function spawn_robot(position, angles) {
     robot.active = 1;
     robot.canwalk = 1;
     robot.moving = 0;
-    robot.shutdownDamage = 0;
+    robot.shutdowndamage = 0;
     robot.propername = "";
     robot.ignoretriggerdamage = 1;
     robot.allowpain = 0;
@@ -755,7 +755,7 @@ function spawn_robot(position, angles) {
         aiutility::attachriotshield(robot, getweapon("riotshield"), "wpn_t7_shield_riot_world_lh", "tag_stowed_back");
     }
     robot asmsetanimationrate(1.1);
-    if (isdefined(level.shutdownDamage) && level.shutdownDamage) {
+    if (isdefined(level.shutdowndamage) && level.shutdowndamage) {
         target_set(robot, vectorscale((0, 0, 1), 50));
     }
     robot.overrideactordamage = &robot_damage;
@@ -776,24 +776,24 @@ function robot_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, we
     if (!isdefined(eattacker)) {
         return 0;
     }
-    if (level.shutdownDamage <= 0 || !self.active || eattacker.team == game.attackers) {
+    if (level.shutdowndamage <= 0 || !self.active || eattacker.team == game.attackers) {
         return 0;
     }
     level.usestartspawns = 0;
-    weapon_damage = killstreak_bundles::get_weapon_damage(level.escortrobotkillstreakbundle, level.shutdownDamage, eattacker, weapon, smeansofdeath, idamage, idflags, undefined);
+    weapon_damage = killstreak_bundles::get_weapon_damage(level.escortrobotkillstreakbundle, level.shutdowndamage, eattacker, weapon, smeansofdeath, idamage, idflags, undefined);
     if (!isdefined(weapon_damage)) {
         weapon_damage = idamage;
     }
     if (!weapon_damage) {
         return 0;
     }
-    self.shutdownDamage = self.shutdownDamage + weapon_damage;
+    self.shutdowndamage = self.shutdowndamage + weapon_damage;
     self notify(#"robot_damaged");
     if (!isdefined(eattacker.damagerobot)) {
         eattacker.damagerobot = 0;
     }
     eattacker.damagerobot = eattacker.damagerobot + weapon_damage;
-    if (self.shutdownDamage >= level.shutdownDamage) {
+    if (self.shutdowndamage >= level.shutdowndamage) {
         origin = (0, 0, 0);
         if (isplayer(eattacker)) {
             level thread popups::displayteammessagetoall(#"hash_6fd616c1d7988357", eattacker);
@@ -816,7 +816,7 @@ function robot_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, we
             if (player == eattacker || player.team == self.team || !isdefined(player.damagerobot)) {
                 continue;
             }
-            damagepercent = player.damagerobot / level.shutdownDamage;
+            damagepercent = player.damagerobot / level.shutdowndamage;
             if (damagepercent >= 0.5) {
                 scoreevents::processscoreevent(#"escort_robot_disable_assist_50", player, undefined, undefined);
             } else if (damagepercent >= 0.25) {
@@ -893,10 +893,10 @@ function reboot_robot() {
     self endon(#"robot_shutdown");
     level endon(#"game_ended");
     self.active = 1;
-    self.shutdownDamage = 0;
+    self.shutdowndamage = 0;
     self val::reset(#"hash_3de2bce887b7b68d", "ignoreme");
     self notify(#"robot_reboot");
-    if (isdefined(level.shutdownDamage) && level.shutdownDamage) {
+    if (isdefined(level.shutdowndamage) && level.shutdowndamage) {
         target_set(self, vectorscale((0, 0, 1), 50));
     }
     if (isdefined(self.riotshield)) {

@@ -439,10 +439,10 @@ function function_9c896b69(localclientnum) {
         waitresult = level waittill(#"positiondraft_update", #"positiondraft_reject", #"hash_6f2435126950e914");
         localclientnum = waitresult.localclientnum;
         if (waitresult._notify == #"hash_6f2435126950e914") {
-            level threadendon update_team(localclientnum, 1);
-            level threadendon function_1cf2437c(localclientnum, waitresult.characterindex);
+            level childthread update_team(localclientnum, 1);
+            level childthread function_1cf2437c(localclientnum, waitresult.characterindex);
         } else {
-            level threadendon update_team(localclientnum, 0);
+            level childthread update_team(localclientnum, 0);
         }
     }
 }
@@ -604,7 +604,7 @@ function function_9afd868e(localclientnum) {
         level thread function_9c896b69(localclientnum);
         level thread function_a5644aa3(localclientnum);
         level thread function_37313c1b(localclientnum);
-        level threadendon update_team(localclientnum);
+        level childthread update_team(localclientnum);
     }
 }
 

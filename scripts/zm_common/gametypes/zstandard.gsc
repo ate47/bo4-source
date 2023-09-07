@@ -1006,7 +1006,7 @@ function function_dead22f(player) {
 function function_10e451d7(player) {
     n_cooldown = function_3e1c5dad(player, "pap");
     if (n_cooldown > 0) {
-        self sethintstringforplayer(player, #"hash_247dbb2f60f86abc", n_cooldown);
+        self sethintstringforplayer(player, #"zombie/wallbuy_cooldown", n_cooldown);
         player.var_486c9d59 = 1;
     } else {
         if (function_8b1a219a()) {
@@ -1466,7 +1466,7 @@ function function_127f0ac5(e_player) {
     if (n_cooldown > 0) {
         self.hint_string = undefined;
         e_player.var_838c00de = 1;
-        self sethintstringforplayer(e_player, #"hash_247dbb2f60f86abc", n_cooldown);
+        self sethintstringforplayer(e_player, #"zombie/wallbuy_cooldown", n_cooldown);
         return 1;
     } else {
         e_player.var_838c00de = undefined;
@@ -1497,7 +1497,7 @@ function function_36f1c05b(e_player, var_29827302) {
 function function_75ebd926(e_player) {
     n_cooldown = function_3e1c5dad(e_player, "crafting_table");
     if (n_cooldown > 0) {
-        self.hint_string = #"hash_247dbb2f60f86abc";
+        self.hint_string = #"zombie/wallbuy_cooldown";
         self.cost = n_cooldown;
         return 1;
     } else if (isdefined(self.blueprint.var_54a97edd.isriotshield) && self.blueprint.var_54a97edd.isriotshield && isdefined(e_player.player_shield_reset_health) && isdefined(e_player.var_d3345483) && e_player.var_d3345483 || !e_player zm_crafting::function_2d53738e(self.blueprint.var_54a97edd) && (isdefined(self.blueprint.var_c028dcfe) && self.blueprint.var_c028dcfe && !e_player zm_crafting::function_48ce9379(self.blueprint.var_54a97edd) || isdefined(level.var_905507c3) && level.var_905507c3)) {
@@ -1578,7 +1578,7 @@ function function_3d4fea64(e_player, player_has_weapon) {
     var_f1d1c3e6 = function_3e1c5dad(level, self.clientfieldname);
     var_897c4321 = int(max(var_f84749aa, var_f1d1c3e6));
     if (var_897c4321 > 0) {
-        self sethintstringforplayer(e_player, #"hash_247dbb2f60f86abc", var_897c4321);
+        self sethintstringforplayer(e_player, #"zombie/wallbuy_cooldown", var_897c4321);
         return 1;
     } else if (player_has_weapon) {
         if (self.stub.weapon !== getweapon("bowie_knife")) {
@@ -1649,7 +1649,7 @@ function function_b8839207(e_door) {
         if (isdefined(level.var_d5bd7049)) {
             e_door sethintstring(level.var_d5bd7049);
         } else if (zm_utility::get_story() == 1) {
-            e_door sethintstring(#"hash_71158766520dc432");
+            e_door sethintstring(#"zombie/need_power");
         } else {
             e_door sethintstring(#"hash_3dc033ef1e67a5c0");
         }

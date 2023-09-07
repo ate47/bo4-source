@@ -51,7 +51,7 @@ function __main__() {
 // Checksum 0xaf35c966, Offset: 0x688
 // Size: 0x6c
 function function_c3c859e1() {
-    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (getgametypesetting(#"allowmapscripting")) {
         level thread scene::play(#"hash_5c22828d306d4fcc");
         level thread scene::play(#"hash_2fb18b19a7ad26ef", "Shot 1");
     }
@@ -68,7 +68,7 @@ function on_game_playing() {
     #/
     level util::delay(#"hash_35c1b03137d3be89", "game_ended", &exploder::stop_exploder, "exp_lgt_spawn_flavor");
     level util::delay(#"hash_35c1b03137d3be89", "game_ended", &function_aa8af5cd, level.var_40263d6, "evt_base_alarm");
-    if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+    if (getgametypesetting(#"allowmapscripting")) {
         if (1) {
             level thread function_3a7aa317();
         }
@@ -313,7 +313,7 @@ function function_6edeb4c2(rocket) {
 // Size: 0x114
 function function_34fc666e() {
     level endon(#"game_ended");
-    if (getgametypesetting(#"hash_5e5bd42399148b51") && draft::is_draft_this_round()) {
+    if (getgametypesetting(#"allowmapscripting") && draft::is_draft_this_round()) {
         if (util::isfirstround()) {
             level scene::init(#"hash_5c22828d306d4fcc");
         }

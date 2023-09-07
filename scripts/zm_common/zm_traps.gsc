@@ -197,7 +197,7 @@ function trap_main() {
         self._trap_use_trigs[i] setcursorhint("HINT_NOICON");
     }
     if (!isdefined(self.script_string) || "disable_wait_for_power" != self.script_string) {
-        self trap_set_string(#"hash_71158766520dc432");
+        self trap_set_string(#"zombie/need_power");
         if (isdefined(self.script_int) && level flag::exists("power_on" + self.script_int)) {
             level flag::wait_till("power_on" + self.script_int);
         } else {
@@ -230,7 +230,7 @@ function function_783f63e9(var_1c9c3123 = 1) {
     if (zm_trial_disable_buys::is_active()) {
         self trap_set_string(#"hash_55d25caf8f7bbb2f");
     } else if (isdefined(self.var_fc36786e) && self.var_fc36786e || isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
-        self trap_set_string(#"hash_2276db2c26ee907a");
+        self trap_set_string(#"zombie/trap_locked");
     } else if (zm_utility::is_standard() || namespace_b28d86fd::is_active()) {
         cheat_too_friendly_s_ = zm_utility::function_d6046228(#"hash_24a438482954901", #"hash_61d85c966dd9e83f");
         self trap_set_string(cheat_too_friendly_s_);
@@ -296,7 +296,7 @@ function trap_purchase(e_player, n_cost) {
 function trap_activate(trap, who) {
     trap.activated_by_player = who;
     trap._trap_in_use = 1;
-    trap trap_set_string(#"hash_39d080503c6a8d96");
+    trap trap_set_string(#"zombie/trap_active");
     if (isdefined(who)) {
         zm_utility::play_sound_at_pos("purchase", who.origin);
         if (isdefined(trap._trap_type)) {
@@ -848,7 +848,7 @@ function get_trap_array(trap_type) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe26889a8, Offset: 0x3478
 // Size: 0x174
-function trap_disable(var_ccf895cc = #"hash_2276db2c26ee907a") {
+function trap_disable(var_ccf895cc = #"zombie/trap_locked") {
     if (!(isdefined(self.var_b3166dc1) && self.var_b3166dc1)) {
         return;
     }
@@ -891,7 +891,7 @@ function trap_enable(var_f9afc2b3 = #"hash_23c1c09e94181fdb", var_b8c50025 = #"h
 // Params 1, eflags: 0x1 linked
 // Checksum 0x8ff2715, Offset: 0x3748
 // Size: 0xd6
-function function_6966417b(var_ccf895cc = #"hash_2276db2c26ee907a") {
+function function_6966417b(var_ccf895cc = #"zombie/trap_locked") {
     a_t_traps = getentarray("zombie_trap", "targetname");
     foreach (t_trap in a_t_traps) {
         t_trap thread trap_disable(var_ccf895cc);

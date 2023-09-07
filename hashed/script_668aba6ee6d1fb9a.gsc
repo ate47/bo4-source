@@ -840,16 +840,16 @@ function function_68d1fd31() {
         if (!isdefined(movement)) {
             continue;
         }
-        var_c9473c38 = movement[0] != 0 || movement[1] != 0 || jumping;
-        if (self.lock && var_de410ab8 && !var_c9473c38) {
+        ismoving = movement[0] != 0 || movement[1] != 0 || jumping;
+        if (self.lock && var_de410ab8 && !ismoving) {
             var_de410ab8 = 0;
-        } else if (self.lock && !var_554b8919 && var_c9473c38) {
+        } else if (self.lock && !var_554b8919 && ismoving) {
             var_de410ab8 = 1;
-        } else if (self.lock && var_c9473c38 && !var_de410ab8) {
+        } else if (self.lock && ismoving && !var_de410ab8) {
             self unlockprop();
         }
         var_554b8919 = self.lock;
-        var_cd6d7e01 = var_c9473c38;
+        var_cd6d7e01 = ismoving;
     }
 }
 

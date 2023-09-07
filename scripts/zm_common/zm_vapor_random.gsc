@@ -115,7 +115,7 @@ function function_1a038e0b() {
     unitrigger_stub.script_length = 72;
     unitrigger_stub.require_look_at = 0;
     unitrigger_stub.targetname = "random_vapor_altar_stub";
-    unitrigger_stub.hint_string = #"hash_71158766520dc432";
+    unitrigger_stub.hint_string = #"zombie/need_power";
     unitrigger_stub.script_struct = self;
     zm_unitrigger::unitrigger_force_per_player_triggers(unitrigger_stub, 1);
     unitrigger_stub.prompt_and_visibility_func = &function_6842bdd7;

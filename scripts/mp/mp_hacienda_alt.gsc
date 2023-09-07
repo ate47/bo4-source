@@ -87,7 +87,7 @@ function function_d839264a() {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
         s_button.mdl_gameobject.var_a43a7410 = var_a43a7410;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
-        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+        if (getgametypesetting(#"allowmapscripting")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
             s_button.mdl_gameobject gameobjects::set_onuse_event(&function_45cfd64e);
         } else {
@@ -133,7 +133,7 @@ function function_d99e105f() {
     foreach (s_button in a_s_buttons) {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
-        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+        if (getgametypesetting(#"allowmapscripting")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
             s_button.mdl_gameobject gameobjects::set_onuse_event(&function_393b459a);
         } else {
@@ -175,7 +175,7 @@ function function_f5a4a3eb() {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
         s_button.mdl_gameobject.var_2151fb35 = var_2151fb35;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
-        if (getgametypesetting(#"hash_5e5bd42399148b51")) {
+        if (getgametypesetting(#"allowmapscripting")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
             s_button.mdl_gameobject gameobjects::set_onuse_event(&function_886f3928);
         } else {

@@ -3641,7 +3641,7 @@ function has_tactical_mask_purchased_and_equipped() {
 // Checksum 0x68f03ed9, Offset: 0xa900
 // Size: 0x32
 function has_hacker_perk_purchased_and_equipped() {
-    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_showenemyequipment", #"hash_1897ec9fa8c5c1c");
+    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_showenemyequipment", #"specialty_showenemyequipment|specialty_showscorestreakicons|specialty_showenemyvehicles");
 }
 
 // Namespace util/util_shared
@@ -3649,7 +3649,7 @@ function has_hacker_perk_purchased_and_equipped() {
 // Checksum 0xc92f8e5b, Offset: 0xa940
 // Size: 0x32
 function has_cold_blooded_perk_purchased_and_equipped() {
-    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_nottargetedbyaitank", #"hash_b28558f13693bd9");
+    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_nottargetedbyaitank", #"specialty_nottargetedbyaitank|specialty_nottargetedbyraps|specialty_nottargetedbysentry|specialty_nottargetedbyrobot|specialty_immunenvthermal");
 }
 
 // Namespace util/util_shared
@@ -3665,7 +3665,7 @@ function has_hard_wired_perk_purchased_and_equipped() {
 // Checksum 0x89a832f5, Offset: 0xa9c0
 // Size: 0x32
 function has_gung_ho_perk_purchased_and_equipped() {
-    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_sprintfire", #"hash_1fee6b565ce51b8");
+    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_sprintfire", #"specialty_sprintfire|specialty_sprintgrenadelethal|specialty_sprintgrenadetactical|specialty_sprintequipment");
 }
 
 // Namespace util/util_shared
