@@ -250,9 +250,9 @@ function private function_d01affa9() {
 // Size: 0xc4
 function function_4092decc(weapon) {
     if (zm_weapons::is_weapon_upgraded(weapon)) {
-        self activecamo::function_896ac347(weapon, #"hash_203688d7883cf38c", 1);
+        self activecamo::function_896ac347(weapon, #"pap_weapon_packed", 1);
         if (zm_pap_util::function_7352d8cc(weapon)) {
-            self activecamo::function_896ac347(weapon, #"hash_300fdf15a515feda", 1);
+            self activecamo::function_896ac347(weapon, #"pap_weapon_double_packed", 1);
         }
     } else {
         self function_a24c564f(#"reset_pack", weapon);

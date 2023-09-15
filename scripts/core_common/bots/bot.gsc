@@ -1897,7 +1897,7 @@ function bot_joinleave_loop() {
 }
 
 // Namespace bot/bot
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdcaccbf, Offset: 0x6d40
 // Size: 0x640
 function function_301f229d(team) {

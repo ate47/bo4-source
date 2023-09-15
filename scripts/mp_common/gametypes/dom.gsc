@@ -906,7 +906,7 @@ function function_5a9598f0(player, string, lastownerteam, isbflag, neutralizing,
             scoreevents::processscoreevent(#"dom_point_secured_neutralizing", player, level.weaponnone, undefined);
         } else if (lastownerteam == #"neutral") {
             if (isbflag) {
-                scoreevents::processscoreevent(#"hash_40d073eb367b9e75", player, level.weaponnone, undefined);
+                scoreevents::processscoreevent(#"neutral_b_secured", player, level.weaponnone, undefined);
                 player stats::function_dad108fa(#"hash_60545a50ce7c9791", 1);
             } else {
                 scoreevents::processscoreevent(#"dom_point_neutral_secured", player, level.weaponnone, undefined);
@@ -934,7 +934,7 @@ function function_5a9598f0(player, string, lastownerteam, isbflag, neutralizing,
             player.var_759a143b = undefined;
         }
         if (var_af8f6146) {
-            player stats::function_dad108fa(#"hash_2f1df496791a2f5f", 1);
+            player stats::function_dad108fa(#"captures_in_capture_area", 1);
             player contracts::increment_contract(#"hash_4fa0008b60deaab4");
         }
     } else {
@@ -1266,7 +1266,7 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
             ownerteam = flag.ownerteam;
             team = victim.pers[#"team"];
             if (team != ownerteam) {
-                scoreevents::processscoreevent(#"hash_339b0e87303dbd56", attacker, self, weapon);
+                scoreevents::processscoreevent(#"kill_enemy_that_is_capping_your_objective", attacker, self, weapon);
                 scoreeventprocessed = 1;
                 if (flag.contested === 1) {
                     attacker killwhilecontesting(flag, weapon);

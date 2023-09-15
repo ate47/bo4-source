@@ -65,7 +65,7 @@ function initscoreinfo() {
     scoreinfotablename = scoreevents::getscoreeventtablename(level.gametype);
     rowcount = tablelookuprowcount(scoreinfotablename);
     if (sessionmodeismultiplayergame() && rowcount === 0) {
-        scoreinfotablename = #"hash_44588d37c7fe1bf3" + "_base.csv";
+        scoreinfotablename = #"gamedata/tables/mp/scoreinfo/mp_scoreinfo" + "_base.csv";
         rowcount = tablelookuprowcount(scoreinfotablename);
     }
     for (row = 0; row < rowcount; row++) {
@@ -292,7 +292,7 @@ function getscoreinforesource(type) {
 }
 
 // Namespace rank/rank_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc4b584ff, Offset: 0x1678
 // Size: 0xc6
 function getscoreinfoxp(type) {

@@ -282,7 +282,7 @@ function waittill_any_ents(ent1, string1, ent2, string2, ent3, string3, ent4, st
 }
 
 // Namespace util/util_shared
-// Params b, eflags: 0x1 linked
+// Params b, eflags: 0x0
 // Checksum 0xd0f2b581, Offset: 0xd40
 // Size: 0x12e
 function function_e532f5da(n_timeout, ent1, string1, ent2, string2, ent3, string3, ent4, string4, ent5, string5) {
@@ -952,7 +952,7 @@ function isenemyplayer(player) {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x37a30443, Offset: 0x2b88
 // Size: 0xd2
 function function_50ed1561(localclientnum) {
@@ -1133,7 +1133,7 @@ function is_mature() {
 }
 
 // Namespace util/util_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd84e1550, Offset: 0x33a0
 // Size: 0x12
 function function_fa1da5cb() {
@@ -1160,7 +1160,7 @@ function is_gib_restricted_build() {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5a5c94f7, Offset: 0x3420
 // Size: 0x22
 function function_cd6c95db(localclientnum) {

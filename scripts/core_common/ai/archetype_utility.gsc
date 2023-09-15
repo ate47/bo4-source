@@ -2425,7 +2425,7 @@ function isunarmed(behaviortreeentity) {
 }
 
 // Namespace aiutility/archetype_utility
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcf45f7b5, Offset: 0x9150
 // Size: 0x180
 function preshootlaserandglinton(ai) {
@@ -2454,7 +2454,7 @@ function preshootlaserandglinton(ai) {
 }
 
 // Namespace aiutility/archetype_utility
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6672a077, Offset: 0x92d8
 // Size: 0x76
 function postshootlaserandglintoff(ai) {
@@ -2546,7 +2546,7 @@ function shouldattackobject(entity) {
 }
 
 // Namespace aiutility/archetype_utility
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x91107536, Offset: 0x9690
 // Size: 0xb2
 function meleeattributescallback(entity, attribute, oldvalue, value) {
@@ -2569,7 +2569,7 @@ function meleeattributescallback(entity, attribute, oldvalue, value) {
 }
 
 // Namespace aiutility/archetype_utility
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x2f72c6ae, Offset: 0x9750
 // Size: 0x82
 function arrivalattributescallback(entity, attribute, oldvalue, value) {

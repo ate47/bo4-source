@@ -1263,7 +1263,7 @@ function add_global_spawn_function(team, spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 2, eflags: 0x21 linked
+// Params 2, eflags: 0x20
 // Checksum 0x446e3a63, Offset: 0x4838
 // Size: 0x19c
 function add_ai_spawn_function(spawn_func, ...) {
@@ -1329,7 +1329,7 @@ function function_89a2cd87(archetype, spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8feb95f5, Offset: 0x4ce0
 // Size: 0xe6
 function remove_global_spawn_function(team, func) {
@@ -1466,7 +1466,7 @@ function simple_spawn(name_or_spawners, spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x20
 // Checksum 0x4291b4cc, Offset: 0x5468
 // Size: 0xc8
 function simple_spawn_single(name_or_spawner, spawn_func, ...) {

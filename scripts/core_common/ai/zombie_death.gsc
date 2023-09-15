@@ -22,7 +22,7 @@ function on_fire_timeout() {
 }
 
 // Namespace zombie_death/zombie_death
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x81a13f5e, Offset: 0x1e0
 // Size: 0x434
 function flame_death_fx() {
@@ -183,7 +183,7 @@ function get_random(array) {
 }
 
 // Namespace zombie_death/zombie_death
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd380318e, Offset: 0xad0
 // Size: 0x1aa
 function do_gib() {

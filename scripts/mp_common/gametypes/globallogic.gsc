@@ -2072,7 +2072,7 @@ function private function_159d7b6f() {
                         }
                         item_data[item_data.size] = data;
                         if (item_data.size >= 100) {
-                            var_cae7fe15 = {#var_6c7318e0:item_data.size, #seed:level.item_spawn_seed};
+                            var_cae7fe15 = {#event_count:item_data.size, #seed:level.item_spawn_seed};
                             function_92d1707f(#"hash_67dcbe8b30edd15a", #"summary", var_cae7fe15, #"entries", item_data);
                             item_data = [];
                             wait(0.1);
@@ -2083,7 +2083,7 @@ function private function_159d7b6f() {
         }
     }
     if (item_data.size > 0) {
-        var_cae7fe15 = {#var_6c7318e0:item_data.size, #seed:level.item_spawn_seed};
+        var_cae7fe15 = {#event_count:item_data.size, #seed:level.item_spawn_seed};
         function_92d1707f(#"hash_67dcbe8b30edd15a", #"summary", var_cae7fe15, #"entries", item_data);
     }
 }

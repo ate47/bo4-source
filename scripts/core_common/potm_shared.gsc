@@ -505,7 +505,7 @@ function private play_potm_on_player(event) {
 }
 
 // Namespace potm/potm_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa22823e1, Offset: 0x1e10
 // Size: 0x24
 function function_afe21831() {
@@ -884,7 +884,7 @@ function private function_a85adb2c(delta) {
 }
 
 // Namespace potm/potm_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x220b5c65, Offset: 0x36a8
 // Size: 0x8c
 function play_potm(var_a7f35e6d) {
@@ -2313,7 +2313,7 @@ function private updatedebugmenustate() {
 // Params 0, eflags: 0x0
 // Checksum 0x9530c38c, Offset: 0x8ad8
 // Size: 0x224
-function hkaibehaviorblockeddetector() {
+function debugupdate() {
     /#
         if (!isenabled()) {
             return;

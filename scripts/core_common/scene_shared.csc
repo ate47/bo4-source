@@ -1597,7 +1597,7 @@ function in_igc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x93e33a87, Offset: 0x8a38
 // Size: 0x92
 function function_2e58158b(func_igc) {

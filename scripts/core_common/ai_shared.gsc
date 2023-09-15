@@ -800,7 +800,7 @@ function function_41b04632() {
 }
 
 // Namespace ai/ai_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4ce51463, Offset: 0x2bb8
 // Size: 0x110
 function function_63734291(enemy) {
@@ -825,7 +825,7 @@ function function_63734291(enemy) {
 }
 
 // Namespace ai/ai_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x67c7fda9, Offset: 0x2cd0
 // Size: 0xd6
 function stun(duration = self.var_95d94ac4) {
@@ -848,7 +848,7 @@ function is_stunned() {
 }
 
 // Namespace ai/ai_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a8993c3, Offset: 0x2dd8
 // Size: 0xe
 function clear_stun() {

@@ -14,7 +14,7 @@
 #namespace zm_orange_trophies;
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xab3630c4, Offset: 0x470
 // Size: 0x164
 function init() {
@@ -35,7 +35,7 @@ function init() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x83889d0b, Offset: 0x5e0
 // Size: 0x5c
 function main() {
@@ -46,7 +46,7 @@ function main() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b6f5592, Offset: 0x648
 // Size: 0x8c
 function on_player_connect() {
@@ -61,7 +61,7 @@ function on_player_connect() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7ef746cd, Offset: 0x6e0
 // Size: 0x64
 function function_ea67bd7c() {
@@ -73,7 +73,7 @@ function function_ea67bd7c() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa9010204, Offset: 0x750
 // Size: 0xa0
 function function_e12fb431() {
@@ -84,7 +84,7 @@ function function_e12fb431() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x17f90583, Offset: 0x7f8
 // Size: 0xbc
 function function_e86e864b() {
@@ -98,7 +98,7 @@ function function_e86e864b() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x385f66fc, Offset: 0x8c0
 // Size: 0x130
 function function_790e5d6() {
@@ -125,7 +125,7 @@ function function_790e5d6() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x27ce2ec6, Offset: 0x9f8
 // Size: 0x84
 function function_a0367a9() {
@@ -141,7 +141,7 @@ function function_a0367a9() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8f56b83a, Offset: 0xa88
 // Size: 0x64
 function function_c28621d7(s_params) {
@@ -151,7 +151,7 @@ function function_c28621d7(s_params) {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3d6b4ac1, Offset: 0xaf8
 // Size: 0x112
 function function_b9f47977(e_zombie) {
@@ -171,7 +171,7 @@ function function_b9f47977(e_zombie) {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x301b7623, Offset: 0xc18
 // Size: 0x2c
 function function_e140ff5c() {
@@ -182,7 +182,7 @@ function function_e140ff5c() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6489d2cc, Offset: 0xc50
 // Size: 0x14c
 function function_4ff2cfd9(s_result) {
@@ -200,7 +200,7 @@ function function_4ff2cfd9(s_result) {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x94a93bae, Offset: 0xda8
 // Size: 0x6c
 function function_6c88da5b() {
@@ -214,7 +214,7 @@ function function_6c88da5b() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x299c3d99, Offset: 0xe20
 // Size: 0x154
 function function_3202188() {
@@ -241,7 +241,7 @@ function function_3202188() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x727237e9, Offset: 0xf80
 // Size: 0x7c
 function function_b0e59abe() {
@@ -255,7 +255,7 @@ function function_b0e59abe() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe90b109f, Offset: 0x1008
 // Size: 0x1206
 function third_fallen_soldiers_robots_decon_room_cleared() {
@@ -480,7 +480,7 @@ function third_fallen_soldiers_robots_decon_room_cleared() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x55800620, Offset: 0x2218
 // Size: 0x12c
 function function_63522769() {
@@ -495,7 +495,7 @@ function function_63522769() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3c498046, Offset: 0x2350
 // Size: 0x150
 function function_c7b3bfea() {
@@ -522,7 +522,7 @@ function function_c7b3bfea() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x73b8c307, Offset: 0x24a8
 // Size: 0x3a
 function function_5b264d4d(s_result) {
@@ -532,7 +532,7 @@ function function_5b264d4d(s_result) {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6637a6b6, Offset: 0x24f0
 // Size: 0x52
 function function_3d9f4eef() {
@@ -545,7 +545,7 @@ function function_3d9f4eef() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9f247b07, Offset: 0x2550
 // Size: 0x64
 function function_2b6fe83b() {
@@ -555,7 +555,7 @@ function function_2b6fe83b() {
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf4dc9c16, Offset: 0x25c0
 // Size: 0x158
 function function_82947e72() {

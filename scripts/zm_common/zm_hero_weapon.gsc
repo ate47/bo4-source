@@ -516,7 +516,7 @@ function function_9a100883(weapon_level, enabled) {
     /#
         self zm_challenges::debug_print("<unknown string>");
     #/
-    self zm_stats::increment_challenge_stat(#"hash_4182a6e5bc52ba9");
+    self zm_stats::increment_challenge_stat(#"special_weapon_levels");
     self.var_39b77a76 = undefined;
 }
 

@@ -92,7 +92,7 @@ function decrement(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x33e273c4, Offset: 0x410
 // Size: 0x64
 function set_for_time(n_time, str_flag) {

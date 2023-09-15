@@ -113,7 +113,7 @@ function ability_give(weapon_name) {
 }
 
 // Namespace ability_util/ability_util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xabe94409, Offset: 0x4f8
 // Size: 0x1a
 function is_weapon_gadget(weapon) {

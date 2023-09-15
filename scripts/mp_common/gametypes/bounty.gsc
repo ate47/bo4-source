@@ -637,7 +637,7 @@ function private onplayerkilled(einflictor, attacker, idamage, smeansofdeath, we
         scoreevents::processscoreevent(#"eliminated_enemy", attacker, self, weapon);
         attacker contracts::function_fd9fb79b(#"hash_7ea5ab346a8be398");
         if (var_ff9338bb === 0) {
-            attacker stats::function_dad108fa(#"hash_f7fc3ff160a3ac5", 1);
+            attacker stats::function_dad108fa(#"eliminated_final_enemy", 1);
         }
     }
     self function_4f2c425d();

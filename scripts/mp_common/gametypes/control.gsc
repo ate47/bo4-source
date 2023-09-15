@@ -289,14 +289,14 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
             attacker thread challenges::killedbaseoffender(zone.gameobject, weapon, einflictor);
             if (var_1cfdf798 && var_376742ed) {
                 attacker thread kill_while_contesting(victim, weapon);
-                scoreevents::processscoreevent(#"hash_339b0e87303dbd56", attacker, self, weapon);
+                scoreevents::processscoreevent(#"kill_enemy_that_is_capping_your_objective", attacker, self, weapon);
             }
         }
         if (victim.team == game.defenders && attacker.team == game.attackers) {
             attacker thread challenges::killedbasedefender(zone.gameobject);
             if (var_376742ed) {
                 if (var_1cfdf798 && (!attacker function_d126ce1b() || level.capturetime == 0 && attacker istouching(zone.trigger))) {
-                    scoreevents::processscoreevent(#"hash_75a65ea8fdda2ceb", attacker, victim, weapon);
+                    scoreevents::processscoreevent(#"war_killed_enemy_while_capping_control", attacker, victim, weapon);
                 }
                 scoreevents::processscoreevent(#"war_killed_defender_in_zone", attacker, victim, weapon);
             }
@@ -332,7 +332,7 @@ function on_player_killed(einflictor, attacker, idamage, smeansofdeath, weapon, 
         }
         level.var_c473f6ca[self.team]++;
         if (level.playercount[self.team] == level.var_c473f6ca[self.team]) {
-            attacker stats::function_dad108fa(#"hash_f7fc3ff160a3ac5", 1);
+            attacker stats::function_dad108fa(#"eliminated_final_enemy", 1);
         }
     }
 }
@@ -1267,7 +1267,7 @@ function private function_5a9598f0(player, string, capturetime, capture_team, la
             player.var_759a143b = undefined;
         }
         if (var_af8f6146) {
-            player stats::function_dad108fa(#"hash_2f1df496791a2f5f", 1);
+            player stats::function_dad108fa(#"captures_in_capture_area", 1);
             player contracts::increment_contract(#"hash_4fa0008b60deaab4");
         }
     } else {

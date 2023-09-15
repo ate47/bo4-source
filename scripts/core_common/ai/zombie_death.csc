@@ -30,7 +30,7 @@ function on_fire_timeout(localclientnum) {
 }
 
 // Namespace zombie_death/zombie_death
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x874de6fe, Offset: 0x218
 // Size: 0x3a4
 function flame_death_fx(localclientnum) {

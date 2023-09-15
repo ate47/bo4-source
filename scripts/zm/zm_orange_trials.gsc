@@ -45,7 +45,7 @@
 #namespace zm_orange_trials;
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbca08b98, Offset: 0x248
 // Size: 0xde
 function preload() {
@@ -57,7 +57,7 @@ function preload() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xad88683e, Offset: 0x330
 // Size: 0x83c
 function main() {
@@ -152,7 +152,7 @@ function main() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x63cb3154, Offset: 0xb78
 // Size: 0x17c
 function function_ff59ba7a(is_game_over) {
@@ -171,7 +171,7 @@ function function_ff59ba7a(is_game_over) {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa289538c, Offset: 0xd00
 // Size: 0x794
 function function_b4bd25ef() {
@@ -267,7 +267,7 @@ function function_b4bd25ef() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9b5a1ed1, Offset: 0x14a0
 // Size: 0x2d4
 function function_ff0b7907() {
@@ -296,7 +296,7 @@ function function_ff0b7907() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3e536577, Offset: 0x1780
 // Size: 0x1bc
 function function_7206d28() {
@@ -321,7 +321,7 @@ function function_7206d28() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb9eb3860, Offset: 0x1948
 // Size: 0x66
 function function_b93ad88d() {
@@ -332,7 +332,7 @@ function function_b93ad88d() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41ee313b, Offset: 0x19b8
 // Size: 0x7c
 function function_53a1ecb9() {
@@ -345,7 +345,7 @@ function function_53a1ecb9() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x64f482cc, Offset: 0x1a40
 // Size: 0x23c
 function blood_buff() {
@@ -380,7 +380,7 @@ function blood_buff() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8178cbaa, Offset: 0x1c88
 // Size: 0xfc
 function function_8532d13f() {
@@ -396,7 +396,7 @@ function function_8532d13f() {
 }
 
 // Namespace zm_orange_trials/zm_orange_trials
-// Params 10, eflags: 0x5 linked
+// Params 10, eflags: 0x4
 // Checksum 0x4d176954, Offset: 0x1d90
 // Size: 0xb8
 function private function_dcebc908(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {

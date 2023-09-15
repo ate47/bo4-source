@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace aat/aat_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xce9adcf2, Offset: 0x110
 // Size: 0x94
 function private __init__() {
@@ -28,7 +28,7 @@ function private __init__() {
 }
 
 // Namespace aat/aat_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x276a6428, Offset: 0x1b0
 // Size: 0x16a
 function register(name, localized_string, icon) {
@@ -54,7 +54,7 @@ function register(name, localized_string, icon) {
 }
 
 // Namespace aat/aat_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x658fb951, Offset: 0x328
 // Size: 0x78
 function aat_hud_manager(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -64,7 +64,7 @@ function aat_hud_manager(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace aat/aat_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd5c5129f, Offset: 0x3a8
 // Size: 0x18a
 function finalize_clientfields() {
@@ -88,7 +88,7 @@ function finalize_clientfields() {
 }
 
 // Namespace aat/aat_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf1d75254, Offset: 0x540
 // Size: 0x9a
 function get_string(n_aat_index) {
@@ -101,7 +101,7 @@ function get_string(n_aat_index) {
 }
 
 // Namespace aat/aat_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbf9360a3, Offset: 0x5e8
 // Size: 0x9a
 function get_icon(n_aat_index) {

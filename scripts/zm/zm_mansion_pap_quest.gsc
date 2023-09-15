@@ -2286,7 +2286,7 @@ function show_trail(nd_start, var_ff4b3a13) {
     /#
         self.var_c176969a thread function_75e87a52(var_2cee3bd);
     #/
-    level notify(#"hash_74beea7c4720cdb9");
+    level notify(#"ghostleading_halfway");
     self thread function_900b7dca(var_878f0f0a);
     self.var_c176969a vehicle::get_on_and_go_path(var_2cee3bd);
     self.s_portal = arraygetclosest(self.origin, struct::get_array(nd_start.targetname + "_end"));
@@ -2470,7 +2470,7 @@ function function_f0b97bc7() {
 function function_b5697137() {
     level endon(#"end_game");
     self endon(#"death");
-    level waittill(#"hash_74beea7c4720cdb9");
+    level waittill(#"ghostleading_halfway");
     var_844489a = self mansion_util::_print_player_out();
     if (isdefined(var_844489a)) {
         n_player_index = var_844489a.n_index;

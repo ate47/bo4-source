@@ -573,7 +573,7 @@ function function_3172cf59(player, newscore, weapon, mpplayerscore) {
         scoreevents = function_3cbc4c6c(weapon.var_2e4a8800);
         var_8a4cfbd = weapon.var_76ce72e8 && isdefined(scoreevents) && scoreevents.var_fcd2ff3a === 1;
         if (var_8a4cfbd) {
-            player stats::function_dad108fa(#"hash_6e9980514a73974", scorediff);
+            player stats::function_dad108fa(#"score_specialized_equipment", scorediff);
         } else if (weapon.issignatureweapon) {
             player stats::function_dad108fa(#"score_specialized_weapons", scorediff);
         }

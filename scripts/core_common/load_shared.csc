@@ -4,7 +4,6 @@
 #using scripts\core_common\dev_shared.csc;
 #using scripts\core_common\activecamo_shared.csc;
 #using scripts\core_common\delete.csc;
-#using script_10aeb2e4f2b455a1;
 
 #namespace load;
 
@@ -60,7 +59,7 @@ function apply_mature_filter() {
 }
 
 // Namespace load/load_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb16884e9, Offset: 0x288
 // Size: 0x3c
 function art_review() {

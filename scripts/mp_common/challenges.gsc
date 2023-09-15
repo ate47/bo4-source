@@ -448,12 +448,12 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
         weaponclass = util::getweaponclass(weapon);
         if (isdefined(var_3cd641b)) {
             if (isprimaryweapon) {
-                self stats::function_dad108fa(#"hash_207964660a784470", 1);
+                self stats::function_dad108fa(#"ekia_primary_secondary_weapon", 1);
                 if (weapon.attachments.size > 2) {
                     self stats::function_dad108fa(#"hash_6803083fa39064a4", 1);
                 }
             } else if (var_197329e6) {
-                self stats::function_dad108fa(#"hash_207964660a784470", 1);
+                self stats::function_dad108fa(#"ekia_primary_secondary_weapon", 1);
                 if (weapon.attachments.size > 2) {
                     self stats::function_dad108fa(#"hash_7b0b54996f4aafbc", 1);
                 }
@@ -493,7 +493,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                         self stats::function_dad108fa(#"ekia_perk2_gluttony", 1);
                         var_ee03db9e = 1;
                     } else if (self function_db654c9(var_3cd641b, #"bonuscard_perk_3_gluttony")) {
-                        self stats::function_dad108fa(#"hash_af94e8f65ee288c", 1);
+                        self stats::function_dad108fa(#"ekia_perk3_gluttony", 1);
                         var_ee03db9e = 1;
                     }
                     if (var_ee03db9e) {
@@ -552,7 +552,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                 }
                 if (isdefined(var_5afc3871[#"talent_dexterity"])) {
                     if (var_6af452fc.ismantling === 1 || var_6af452fc.var_bd77a1eb === 1 || var_6af452fc.isjumping === 1) {
-                        self stats::function_dad108fa(#"hash_20be2d12bc757e0a", 1);
+                        self stats::function_dad108fa(#"ekia_swap_weapon_jump_mantle_dexterity", 1);
                     }
                 }
                 if (isdefined(var_5afc3871[#"talent_scavenger"]) && var_6af452fc.var_54433d4b === 1) {
@@ -569,7 +569,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                 switch (gear) {
                 case #"gear_armor":
                     if (var_6af452fc.var_d7bd6f9b === 1) {
-                        self stats::function_dad108fa(#"hash_434323084b426f9", 1);
+                        self stats::function_dad108fa(#"ekia_against_armor_damager", 1);
                     }
                     break;
                 case #"gear_awareness":
@@ -645,7 +645,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
             }
             if (isads) {
                 if (self weaponhasattachmentandunlocked(weapon, "swayreduc")) {
-                    self stats::function_dad108fa(#"hash_86e5ece62a4a70e", 1);
+                    self stats::function_dad108fa(#"ekia_ads_swayreduc", 1);
                 }
                 if (self weaponhasattachmentandunlocked(weapon, "quickdraw", "stalker", "grip")) {
                     self stats::function_dad108fa(#"ekia_ads_quickdraw_stalker_grip", 1);
@@ -695,7 +695,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                 }
             }
             if (self weaponhasattachmentandunlocked(weapon, "fastreload")) {
-                self stats::function_dad108fa(#"hash_3f378b9a10f47f0", 1);
+                self stats::function_dad108fa(#"ekia_fastreload_mixclip", 1);
                 if (weaponclass == #"weapon_launcher") {
                     self stats::function_dad108fa(#"hash_4b19afce40dfc918", 1);
                 }
@@ -707,7 +707,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                 }
             }
             if (self weaponhasattachmentandunlocked(weapon, "mixclip")) {
-                self stats::function_dad108fa(#"hash_3f378b9a10f47f0", 1);
+                self stats::function_dad108fa(#"ekia_fastreload_mixclip", 1);
             }
             if (var_95c30fc5 < 2) {
                 if (self weaponhasattachmentandunlocked(weapon, "extbarrel", "extbarrel2")) {
@@ -733,7 +733,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                 case #"pistol_revolver_t8":
                 case #"lmg_heavy_t8":
                 case #"shotgun_pump_t8":
-                    self stats::function_dad108fa(#"hash_1dc20f3502e9530", 1);
+                    self stats::function_dad108fa(#"ekia_dw_fatbarrel_skullsplitter_dragonbreath", 1);
                     break;
                 case #"tr_midburst_t8":
                 case #"ar_fastfire_t8":
@@ -765,7 +765,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
             }
         }
         if (weapon.statname == "smg_handling_t8" && (isdefined(weapon.dualwieldweapon) && weapon.dualwieldweapon != level.weaponnone || self weaponhasattachmentandunlocked(weapon, "dw"))) {
-            self stats::function_dad108fa(#"hash_1dc20f3502e9530", 1);
+            self stats::function_dad108fa(#"ekia_dw_fatbarrel_skullsplitter_dragonbreath", 1);
         }
         if (isdefined(var_5018995b) && var_5018995b.statname == #"gadget_radiation_field" && (!isdefined(var_6af452fc.var_75c08813) || var_6af452fc.var_75c08813 < 1)) {
             self stats::function_dad108fa(#"radiation_field_shutdown_ekia", 1);
@@ -779,11 +779,11 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
         if (!isdefined(var_5afc3871[#"talent_resistance"])) {
             if (var_2d4a24ea) {
                 if (var_6c5ba24c) {
-                    self stats::function_dad108fa(#"hash_f03c59c6881738c", 1);
+                    self stats::function_dad108fa(#"kill_enemy_who_stunned_you_during_stun", 1);
                 }
             }
             if (var_ba9c5900 === 1) {
-                self stats::function_dad108fa(#"hash_f03c59c6881738c", 1);
+                self stats::function_dad108fa(#"kill_enemy_who_stunned_you_during_stun", 1);
             }
         }
         if (isdefined(var_70137a58.var_64ffda50)) {
@@ -1174,7 +1174,7 @@ function challengekills(data) {
                 var_141c7081 = victimorigin + vectorscale((0, 0, 1), 31);
                 var_2baca0fc = !bullettracepassed(var_141c7081, var_141c7081 + victimforward * 144, 0, victim);
                 if (var_2baca0fc) {
-                    player stats::function_dad108fa(#"hash_4c3088a2e317bb2", 1);
+                    player stats::function_dad108fa(#"kill_enemy_shooting_in_partial_cover", 1);
                 }
             }
         }
@@ -1185,7 +1185,7 @@ function challengekills(data) {
         }
         if (weapon.statname == #"ar_stealth_t8" || weapon.statname == #"pistol_standard_t8") {
             if (player weaponhasattachmentandunlocked(weapon, "uber")) {
-                player stats::function_dad108fa(#"hash_541dc7f1d7d397a", 1);
+                player stats::function_dad108fa(#"kill_bayonet_tacknife", 1);
             }
         }
         checkkillstreak5(baseweapon, player);
@@ -1525,7 +1525,7 @@ function challengekills(data) {
             }
         }
         if (var_d6553aa9 === 1 && level.teambased) {
-            attacker stats::function_dad108fa(#"hash_ae06343a118b545", 1);
+            attacker stats::function_dad108fa(#"kill_enemy_revealed_by_team_fog_of_war", 1);
         }
         if (!victimwasonground && var_e828179e <= 0) {
             attacker stats::function_dad108fa(#"kill_enemy_thats_in_air", 1);
@@ -1541,16 +1541,16 @@ function challengekills(data) {
             }
         }
         if (isdefined(level.var_2e3031be) && isdefined(victimvisionpulseactivatetime) && victimvisionpulseactivatetime + level.var_2e3031be.gadget_pulse_duration / 3 + 500 > time) {
-            attacker stats::function_dad108fa(#"hash_7d0936fda6c3d60", 1);
+            attacker stats::function_dad108fa(#"shutdown_visionpulse_immediately", 1);
         }
         if (var_1fa3e8cc === 1 && !var_8556c722 && var_911b9b40 !== 1) {
             attacker stats::function_dad108fa(#"kill_with_weapon_in_right_hand_only", 1);
         }
         if (isdefined(attacker.attackerdamage) && isdefined(attacker.attackerdamage[victim.clientid]) && isdefined(attacker.attackerdamage[victim.clientid].lasttimedamaged) && attacker.attackerdamage[victim.clientid].lasttimedamaged + 1500 > time) {
-            attacker stats::function_dad108fa(#"hash_40df7b67ff81556e", 1);
+            attacker stats::function_dad108fa(#"kill_enemy_damage_you", 1);
         }
         if (!victimwasonground && victimwasinslamstate && var_d24b8539 === 1) {
-            attacker stats::function_dad108fa(#"hash_50371401f38a92f", 1);
+            attacker stats::function_dad108fa(#"shutdown_gravslam_midair_after_grapple", 1);
         }
         if (isdefined(var_58b48038)) {
             attacker stats::function_dad108fa(#"kill_enemy_after_surviving_rcxd", 1);
@@ -1564,7 +1564,7 @@ function challengekills(data) {
         var_2cf35051 = globallogic_score::function_3cbc4c6c(victimweapon.var_2e4a8800);
         if (victimweapon.issignatureweapon === 1 || isdefined(var_2cf35051) && var_2cf35051.var_fcd2ff3a === 1) {
             if (killstreak == #"dart" || killstreak == #"inventory_dart" || killstreak == #"recon_car" || killstreak == #"inventory_recon_car" || (killstreak == #"tank_robot" || killstreak == #"inventory_tank_robot") && var_911b9b40 === 1) {
-                attacker stats::function_dad108fa(#"hash_7ce97233d9d7e81", 1);
+                attacker stats::function_dad108fa(#"shutdown_enemy_by_controlling_scorestreak", 1);
             }
         }
     }
@@ -1950,7 +1950,7 @@ function challengegameendmp(data) {
             playeriswinner = var_f5d9e583 < 3;
         }
         if (playeriswinner) {
-            player stats::function_dad108fa(#"hash_1ffca5180d4e7b6", 1);
+            player stats::function_dad108fa(#"most_ekias_least_deaths", 1);
             player contracts::increment_contract(#"hash_8f83854f9aa068e");
         }
     }

@@ -625,7 +625,7 @@ function give_capture_credit(touchlist, string, capturetime, capture_team, lastc
             demo::bookmark(#"event", gettime(), player);
             potm::bookmark(#"event", gettime(), player);
             player stats::function_bb7eedf0(#"captures", 1);
-            player stats::function_bb7eedf0(#"hash_2f1df496791a2f5f", 1);
+            player stats::function_bb7eedf0(#"captures_in_capture_area", 1);
             player contracts::increment_contract(#"hash_4fa0008b60deaab4");
         } else {
             /#

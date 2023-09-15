@@ -678,7 +678,7 @@ function private function_222c0292(current_weapon, packa_rollers, pap_machine, v
             /#
                 self zm_challenges::debug_print("<unknown string>");
             #/
-            self zm_stats::increment_challenge_stat(#"hash_203688d7883cf38c");
+            self zm_stats::increment_challenge_stat(#"pap_weapon_packed");
             self zm_stats::increment_challenge_stat(#"hash_2126e77556d8e66b");
             self stats::inc_stat(#"item_stats", current_weapon.name, #"packed", #"statvalue", 1);
         }
@@ -691,7 +691,7 @@ function private function_222c0292(current_weapon, packa_rollers, pap_machine, v
                 /#
                     self zm_challenges::debug_print("<unknown string>");
                 #/
-                self zm_stats::increment_challenge_stat(#"hash_300fdf15a515feda", undefined, 1);
+                self zm_stats::increment_challenge_stat(#"pap_weapon_double_packed", undefined, 1);
                 self stats::inc_stat(#"item_stats", current_weapon.name, #"doublepacked", #"statvalue", 1);
                 self zm_challenges::function_e40c9d13();
             }

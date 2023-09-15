@@ -8,7 +8,7 @@
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 0, eflags: 0x2
-// Checksum 0x33146048, Offset: 0xf0
+// Checksum 0xc9956d9, Offset: 0xf0
 // Size: 0x3c
 function autoexec __init__system__() {
     system::register(#"sticky_grenade", &__init__, undefined, undefined);
@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 0, eflags: 0x1 linked
-// Checksum 0xa8ce0b0b, Offset: 0x138
+// Checksum 0xcd7c1328, Offset: 0x138
 // Size: 0x304
 function __init__() {
     level._effect[#"grenade_light"] = #"weapon/fx8_equip_light_os";
@@ -39,7 +39,7 @@ function __init__() {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 1, eflags: 0x1 linked
-// Checksum 0xe5510eb7, Offset: 0x448
+// Checksum 0xf25b1f6c, Offset: 0x448
 // Size: 0x44
 function spawned(localclientnum) {
     if (self isgrenadedud()) {
@@ -50,7 +50,7 @@ function spawned(localclientnum) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 1, eflags: 0x1 linked
-// Checksum 0xb8e913b, Offset: 0x498
+// Checksum 0x450047b4, Offset: 0x498
 // Size: 0x44
 function spawned_arrow(localclientnum) {
     if (self isgrenadedud()) {
@@ -61,7 +61,7 @@ function spawned_arrow(localclientnum) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 1, eflags: 0x1 linked
-// Checksum 0xffe783d2, Offset: 0x4e8
+// Checksum 0x6151b1fc, Offset: 0x4e8
 // Size: 0x3c
 function function_6054cc1e(localclientnum) {
     if (self isgrenadedud()) {
@@ -72,7 +72,7 @@ function function_6054cc1e(localclientnum) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 1, eflags: 0x1 linked
-// Checksum 0x7d06b4, Offset: 0x530
+// Checksum 0x15b5dfbf, Offset: 0x530
 // Size: 0x74
 function function_117f61b8(localclientnum) {
     if (self isgrenadedud()) {
@@ -84,7 +84,7 @@ function function_117f61b8(localclientnum) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 1, eflags: 0x1 linked
-// Checksum 0x23f2b843, Offset: 0x5b0
+// Checksum 0x6072fb9e, Offset: 0x5b0
 // Size: 0x34
 function stop_sound_on_ent_shutdown(handle) {
     self waittill(#"death");
@@ -93,7 +93,7 @@ function stop_sound_on_ent_shutdown(handle) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 2, eflags: 0x1 linked
-// Checksum 0xfc782cf3, Offset: 0x5f0
+// Checksum 0xe7e97f2b, Offset: 0x5f0
 // Size: 0x23a
 function fx_think(localclientnum, var_1e60ee48) {
     self notify(#"light_disable");
@@ -121,7 +121,7 @@ function fx_think(localclientnum, var_1e60ee48) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 2, eflags: 0x1 linked
-// Checksum 0x8e057adf, Offset: 0x838
+// Checksum 0x1f7a678c, Offset: 0x838
 // Size: 0x5a
 function start_light_fx(localclientnum, fx) {
     self stop_light_fx(localclientnum);
@@ -130,7 +130,7 @@ function start_light_fx(localclientnum, fx) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 1, eflags: 0x1 linked
-// Checksum 0x2a73c4a4, Offset: 0x8a0
+// Checksum 0x9afc5631, Offset: 0x8a0
 // Size: 0x4e
 function stop_light_fx(localclientnum) {
     if (isdefined(self.fx) && self.fx != 0) {
@@ -141,7 +141,7 @@ function stop_light_fx(localclientnum) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 1, eflags: 0x1 linked
-// Checksum 0x20fc1dfa, Offset: 0x8f8
+// Checksum 0x867451cb, Offset: 0x8f8
 // Size: 0x122
 function function_c879d0fd(localclientnum) {
     self notify(#"light_disable");
@@ -160,7 +160,7 @@ function function_c879d0fd(localclientnum) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 2, eflags: 0x1 linked
-// Checksum 0x59b27102, Offset: 0xa28
+// Checksum 0x8c15e52b, Offset: 0xa28
 // Size: 0xe0
 function sticky_indicator(localclientnum, indicator) {
     controllermodel = getuimodelforcontroller(localclientnum);
@@ -178,7 +178,7 @@ function sticky_indicator(localclientnum, indicator) {
 
 // Namespace sticky_grenade/sticky_grenade
 // Params 2, eflags: 0x1 linked
-// Checksum 0x3ff551af, Offset: 0xb10
+// Checksum 0xbcb6b22b, Offset: 0xb10
 // Size: 0x104
 function fullscreen_fx(localclientnum, indicator) {
     if (function_1cbf351b(localclientnum)) {

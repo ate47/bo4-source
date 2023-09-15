@@ -1016,7 +1016,7 @@ function calculatepathtotrigger(bot, trigger) {
 }
 
 // Namespace strategiccommandutility/strategic_command
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x13d83f11, Offset: 0x4740
 // Size: 0x182
 function function_e696ce55(bot, trigger) {

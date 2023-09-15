@@ -970,7 +970,7 @@ function init(arg1, arg2, arg3, b_test_run) {
 }
 
 // Namespace scene/scene_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x79e6529f, Offset: 0x4268
 // Size: 0x102
 function function_27f5972e(str_scenedef, var_a068ac72, var_cdab6c2c) {
@@ -1019,7 +1019,7 @@ function function_cef06dcb() {
 }
 
 // Namespace scene/scene_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xaf90927a, Offset: 0x44c0
 // Size: 0x4d4
 function init_streamer(str_scenedef, var_1b38cf1d, var_b6213032 = 0, b_invulnerable = 1) {
@@ -1615,7 +1615,7 @@ function _play_instance(s_tracker, str_scenedef = self.scriptbundlename, a_ents,
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xca928234, Offset: 0x6f40
 // Size: 0x23c
 function delete_scene_spawned_ents(arg1) {
@@ -2016,7 +2016,7 @@ function function_128f0294(var_37fa9b04) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x37b830d1, Offset: 0x8590
 // Size: 0x4e
 function is_active(str_scenedef) {
@@ -2857,7 +2857,7 @@ function check_team(str_team1 = #"any", str_team2 = #"any") {
 }
 
 // Namespace scene/scene_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x79c6c89e, Offset: 0xb220
 // Size: 0x18
 function function_c935c42() {
@@ -3003,7 +3003,7 @@ function function_e941ea66(str_team) {
 }
 
 // Namespace scene/scene_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16e8178f, Offset: 0xb770
 // Size: 0x15e
 function function_8b06792(var_18835bcc) {

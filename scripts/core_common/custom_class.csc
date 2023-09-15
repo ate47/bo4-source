@@ -164,7 +164,7 @@ function toggle_locked_weapon_shader(localclientnum, is_item_unlocked = 1) {
 // Checksum 0x5fc2442b, Offset: 0xb98
 // Size: 0x98
 function is_optic(attachmentname) {
-    csv_filename = #"hash_7cfeb5c2c217b385";
+    csv_filename = #"gamedata/weapons/common/attachmenttable.csv";
     row = tablelookuprownum(csv_filename, 4, attachmentname);
     if (row > -1) {
         group = tablelookupcolumnforrow(csv_filename, row, 2);

@@ -1139,7 +1139,7 @@ function check_stuck_to_player(deleteonteamchange, awardscoreevent, weapon) {
         }
         if (awardscoreevent && isdefined(self.originalowner)) {
             if (self.originalowner util::isenemyplayer(player)) {
-                scoreevents::processscoreevent(#"hash_19163019019a1709", self.originalowner, player, weapon);
+                scoreevents::processscoreevent(#"cluster_semtex_stick", self.originalowner, player, weapon);
             }
         }
         self.stucktoplayer = player;

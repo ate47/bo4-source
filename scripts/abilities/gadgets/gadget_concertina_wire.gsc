@@ -83,7 +83,7 @@ function onplayerkilled(s_params) {
         return;
     }
     if (s_params.weapon != level.var_87226c31.var_3e7344ee) {
-        killstreaks::processscoreevent(#"hash_7f457b0236eb8fc", s_params.eattacker, self, level.var_87226c31.var_3e7344ee);
+        killstreaks::processscoreevent(#"concertina_wire_snared_kill", s_params.eattacker, self, level.var_87226c31.var_3e7344ee);
     }
     if (s_params.weapon != level.var_87226c31.var_3e7344ee) {
         return;

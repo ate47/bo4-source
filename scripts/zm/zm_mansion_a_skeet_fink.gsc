@@ -104,7 +104,7 @@ function function_93bd3e32() {
 // Checksum 0x86bf7145, Offset: 0xb08
 // Size: 0x208
 function function_f2971bfd(b_respawn = 0) {
-    level.var_6d3c8378 = struct::get_array(#"hash_63f3e730a983218c", "targetname");
+    level.var_6d3c8378 = struct::get_array(#"a_skeet_fink_obj", "targetname");
     if (!b_respawn) {
         level.var_6d3c8378 = array::randomize(level.var_6d3c8378);
     }
@@ -257,7 +257,7 @@ function function_834e6f7() {
 function function_39e0636(var_a276c861) {
     level flag::init(#"hash_6df692c4073d421b");
     level clientfield::set("" + #"hash_155407a9010f2b23", 1);
-    a_s_damage = struct::get_array(#"hash_775ec130d95ad426", "targetname");
+    a_s_damage = struct::get_array(#"a_skeet_fink_damage", "targetname");
     a_s_damage = array::sort_by_script_int(a_s_damage, 1);
     foreach (s_damage in a_s_damage) {
         s_damage thread function_6941c919();
@@ -295,7 +295,7 @@ function function_39e0636(var_a276c861) {
 // Size: 0x1d4
 function function_4fccc01f(var_a276c861, ended_early) {
     level clientfield::set("" + #"hash_155407a9010f2b23", 0);
-    a_s_damage = struct::get_array(#"hash_775ec130d95ad426", "targetname");
+    a_s_damage = struct::get_array(#"a_skeet_fink_damage", "targetname");
     foreach (s_damage in a_s_damage) {
         if (isdefined(s_damage.t_damage)) {
             s_damage.t_damage delete();

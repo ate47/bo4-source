@@ -290,7 +290,7 @@ function bat_death(str_notify) {
 function function_18f5f327(s_spawn_loc) {
     if (isdefined(s_spawn_loc.scriptbundlename)) {
         switch (s_spawn_loc.scriptbundlename) {
-        case #"hash_c84f757f722cc2d":
+        case #"aib_t8_zm_mnsn_nfrtu_trvrs_grnd_climbout_01":
             self zm_spawner::function_45bb11e4(s_spawn_loc);
             break;
         case #"hash_7d11e0c604cdd69e":

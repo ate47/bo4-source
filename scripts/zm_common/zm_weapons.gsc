@@ -199,7 +199,7 @@ function get_guns() {
 function function_14590040(str_weapon) {
     var_9bea1b6 = [];
     for (i = 0; i < 16; i++) {
-        var_4a3def14 = tablelookup(#"hash_5ea60cf27bedfa51", 2, str_weapon, 0, i, 1);
+        var_4a3def14 = tablelookup(#"gamedata/weapons/zm/zm_gunlevels.csv", 2, str_weapon, 0, i, 1);
         if ("" == var_4a3def14) {
             break;
         }

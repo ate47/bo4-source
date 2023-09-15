@@ -218,7 +218,7 @@ function take_weapons() {
 }
 
 // Namespace player/player_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdbac7572, Offset: 0xe38
 // Size: 0x216
 function generate_weapon_data() {
@@ -456,7 +456,7 @@ function get_snapped_spot_origin(spot_position) {
 }
 
 // Namespace player/player_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x454a5903, Offset: 0x1c68
 // Size: 0x1b2
 function allow_stance_change(b_allow = 1) {
@@ -757,7 +757,7 @@ function function_4ca4d8c6(string, value) {
 }
 
 // Namespace player/player_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf9ee4994, Offset: 0x2ae8
 // Size: 0x78
 function function_2abc116(string, defaultval) {

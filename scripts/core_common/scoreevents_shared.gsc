@@ -228,13 +228,13 @@ function getscoreeventtablename(gametype) {
     if (!isdefined(gametype)) {
         gametype = "base";
     }
-    prefix = #"hash_44588d37c7fe1bf3";
+    prefix = #"gamedata/tables/mp/scoreinfo/mp_scoreinfo";
     if (sessionmodeiscampaigngame()) {
-        prefix = #"hash_3bebadbc9db1102b";
+        prefix = #"gamedata/tables/cp/scoreinfo/cp_scoreinfo";
     } else if (sessionmodeiszombiesgame()) {
-        prefix = #"hash_5f114025234e912f";
+        prefix = #"gamedata/tables/zm/scoreinfo/zm_scoreinfo";
     } else if (sessionmodeiswarzonegame()) {
-        prefix = #"hash_2bedaa060f1bcc0f";
+        prefix = #"gamedata/tables/wz/scoreinfo/wz_scoreinfo";
     }
     gametype = strreplace(gametype, "_hc", "");
     gametype = strreplace(gametype, "_cwl", "");

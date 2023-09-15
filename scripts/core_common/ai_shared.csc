@@ -33,7 +33,7 @@ function add_ai_spawn_function(func_spawn, ...) {
 }
 
 // Namespace ai/ai_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x218ced65, Offset: 0x1e0
 // Size: 0xb2
 function function_932006d1(func_spawn) {

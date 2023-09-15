@@ -1215,7 +1215,7 @@ function bladekill() {
 }
 
 // Namespace challenges/challenges_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbd96d57b, Offset: 0x4e08
 // Size: 0x4c
 function destroyedexplosive(weapon) {

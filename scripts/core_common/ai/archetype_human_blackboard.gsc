@@ -6,7 +6,7 @@
 
 // Namespace blackboard/archetype_human_blackboard
 // Params 0, eflags: 0x5 linked
-// Checksum 0x957a3b85, Offset: 0x178
+// Checksum 0x4d70cff3, Offset: 0x178
 // Size: 0x36
 function private bb_getarrivaltype() {
     if (self ai::get_behavior_attribute("disablearrivals")) {
@@ -17,7 +17,7 @@ function private bb_getarrivaltype() {
 
 // Namespace blackboard/archetype_human_blackboard
 // Params 0, eflags: 0x5 linked
-// Checksum 0x342c2bcc, Offset: 0x1b8
+// Checksum 0xeb5d72d4, Offset: 0x1b8
 // Size: 0x3a
 function private bb_gettacticalarrivalfacingyaw() {
     return angleclamp180(self.angles[1] - self.node.angles[1]);
@@ -25,7 +25,7 @@ function private bb_gettacticalarrivalfacingyaw() {
 
 // Namespace blackboard/archetype_human_blackboard
 // Params 0, eflags: 0x5 linked
-// Checksum 0x2bb06922, Offset: 0x200
+// Checksum 0x18d4cdbf, Offset: 0x200
 // Size: 0x1b6
 function private bb_getlocomotionmovementtype() {
     if (!ai::getaiattribute(self, "disablesprint")) {
@@ -58,7 +58,7 @@ function private bb_getlocomotionmovementtype() {
 
 // Namespace blackboard/archetype_human_blackboard
 // Params 0, eflags: 0x5 linked
-// Checksum 0x5fe81fd7, Offset: 0x3c0
+// Checksum 0x7d25f31b, Offset: 0x3c0
 // Size: 0x1fa
 function private bb_getcoverflankability() {
     if (self asmistransitionrunning()) {

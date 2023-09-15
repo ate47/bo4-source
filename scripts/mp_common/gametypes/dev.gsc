@@ -774,7 +774,7 @@ function updatedevsettings() {
             level thread killcam::do_final_killcam();
             level thread waitthennotifyroundkillcam();
         }
-        potm::hkaibehaviorblockeddetector();
+        potm::debugupdate();
     #/
 }
 

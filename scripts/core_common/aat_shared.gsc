@@ -167,7 +167,7 @@ function private aat_cooldown_init() {
 }
 
 // Namespace aat/aat_shared
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x9c197a6a, Offset: 0xa98
 // Size: 0x100
 function aat_vehicle_damage_monitor(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -299,7 +299,7 @@ function aat_response(death, inflictor, attacker, damage, flags, mod, weapon, vp
 }
 
 // Namespace aat/aat_shared
-// Params 11, eflags: 0x1 linked
+// Params 11, eflags: 0x0
 // Checksum 0xc6b5d86d, Offset: 0x1300
 // Size: 0x61a
 function register(name, percentage, cooldown_time_entity, cooldown_time_attacker, cooldown_time_global, occurs_on_death, result_func, damage_feedback_icon, damage_feedback_sound, validation_func, catalyst) {
@@ -379,7 +379,7 @@ function register(name, percentage, cooldown_time_entity, cooldown_time_attacker
 }
 
 // Namespace aat/aat_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xcf2d2ae0, Offset: 0x1928
 // Size: 0x1f6
 function register_immunity(name, archetype, immune_trigger, immune_result_direct, immune_result_indirect) {
@@ -440,7 +440,7 @@ function finalize_clientfields() {
 }
 
 // Namespace aat/aat_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4dc0dd99, Offset: 0x1ca8
 // Size: 0x3e
 function register_aat_exemption(weapon) {
@@ -507,7 +507,7 @@ function function_702fb333(weapon) {
 }
 
 // Namespace aat/aat_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x92c2bad7, Offset: 0x1ff8
 // Size: 0x108
 function getaatonweapon(weapon, var_a217d0c1 = 0) {
@@ -522,7 +522,7 @@ function getaatonweapon(weapon, var_a217d0c1 = 0) {
 }
 
 // Namespace aat/aat_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x10046349, Offset: 0x2108
 // Size: 0x392
 function acquire(weapon, name, var_77cf85b7) {
@@ -620,7 +620,7 @@ function watch_weapon_changes() {
 }
 
 // Namespace aat/aat_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeef201f7, Offset: 0x2650
 // Size: 0x50
 function has_aat(w_current) {

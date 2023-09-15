@@ -873,7 +873,7 @@ function function_92112113(attacker, victim, weapon, attackerweapon, meansofdeat
         if (smartcover.owner == attacker) {
             return 1;
         } else {
-            scoreevents::processscoreevent(#"hash_3d0d53aff3c68c68", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
+            scoreevents::processscoreevent(#"deployable_cover_assist", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
         }
     }
     return 0;

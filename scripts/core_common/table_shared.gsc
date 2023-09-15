@@ -2,7 +2,7 @@
 #namespace table;
 
 // Namespace table/table_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x94d3609b, Offset: 0x78
 // Size: 0x25e
 function load(str_filename, str_table_start, b_convert_numbers = 1) {
@@ -42,7 +42,7 @@ function load(str_filename, str_table_start, b_convert_numbers = 1) {
 }
 
 // Namespace table/table_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa4012e9e, Offset: 0x2e0
 // Size: 0x72
 function str_to_num(value) {

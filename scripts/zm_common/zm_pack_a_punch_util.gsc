@@ -351,7 +351,7 @@ function repack_weapon(weapon, n_repacks) {
         }
     }
     if (self.var_2843d3cc[weapon] == 4) {
-        self activecamo::function_896ac347(w_original, #"hash_300fdf15a515feda", 1);
+        self activecamo::function_896ac347(w_original, #"pap_weapon_double_packed", 1);
     }
 }
 

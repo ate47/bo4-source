@@ -2729,7 +2729,7 @@ function drawcylinder_think(pos, rad, height, seconds, stop_notify, color, alpha
 }
 
 // Namespace util/util_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb56a42d1, Offset: 0x7f00
 // Size: 0x2e
 function spawn_array_struct() {
@@ -3460,7 +3460,7 @@ function function_97cf7eb0(v_start, n_max_dist = 5000, n_ground_offset = 0, e_ig
 }
 
 // Namespace util/util_shared
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x222a5a8d, Offset: 0xa2d8
 // Size: 0x9a
 function ground_position(v_start, n_max_dist = 5000, n_ground_offset = 0, e_ignore, b_ignore_water = 0, b_ignore_glass = 0) {
@@ -3479,7 +3479,7 @@ function delayed_notify(str_notify, f_delay_seconds) {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xca5c24dc, Offset: 0xa3b8
 // Size: 0x6c
 function delayed_delete(f_delay_seconds) {
@@ -4622,7 +4622,7 @@ function cleanup_fancycam() {
 }
 
 // Namespace util/util_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5ff26e46, Offset: 0xd510
 // Size: 0x82
 function set_dvar_if_unset(dvar, value, reset = 0) {
@@ -4749,7 +4749,7 @@ function function_8eb53136(radius) {
 }
 
 // Namespace util/util_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43a25827, Offset: 0xdb90
 // Size: 0x28
 function is_spectating() {
@@ -4779,7 +4779,7 @@ function function_8570168d() {
 }
 
 // Namespace util/util_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd6d48c0c, Offset: 0xdc48
 // Size: 0x13a
 function function_88c74107(var_2cd16289 = "ufo", var_e7245730 = "noclip") {

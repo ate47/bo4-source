@@ -255,7 +255,7 @@ function on_disconnect(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x40c1c88e, Offset: 0xda8
 // Size: 0x3c
 function remove_on_disconnect(func, obj) {
@@ -279,7 +279,7 @@ function remove_on_spawned(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1c26a8a7, Offset: 0xe80
 // Size: 0x3c
 function remove_on_revived(func, obj) {
@@ -287,7 +287,7 @@ function remove_on_revived(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x51026241, Offset: 0xec8
 // Size: 0x3c
 function on_deleted(func, obj) {
@@ -327,7 +327,7 @@ function on_player_damage(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb88346ca, Offset: 0x1030
 // Size: 0x3c
 function remove_on_player_damage(func, obj) {
@@ -447,7 +447,7 @@ function on_ai_killed(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf5c52487, Offset: 0x1468
 // Size: 0x3c
 function remove_on_ai_killed(func, obj) {
@@ -511,7 +511,7 @@ function remove_on_vehicle_killed(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa3674d7, Offset: 0x16a8
 // Size: 0x3c
 function on_ai_damage(func, obj) {
@@ -519,7 +519,7 @@ function on_ai_damage(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x87e496af, Offset: 0x16f0
 // Size: 0x3c
 function remove_on_ai_damage(func, obj) {
@@ -535,7 +535,7 @@ function on_ai_spawned(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2cfa1cdc, Offset: 0x1780
 // Size: 0x3c
 function remove_on_ai_spawned(func, obj) {
@@ -615,7 +615,7 @@ function on_laststand(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3d1933d7, Offset: 0x1a50
 // Size: 0x3c
 function remove_on_laststand(func, obj) {
@@ -663,7 +663,7 @@ function on_weapon_change(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb325b099, Offset: 0x1c00
 // Size: 0x3c
 function remove_on_weapon_change(func, obj) {
@@ -679,7 +679,7 @@ function on_weapon_fired(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8e15fe5a, Offset: 0x1c90
 // Size: 0x3c
 function remove_on_weapon_fired(func, obj) {
@@ -831,7 +831,7 @@ function function_33f0ddd3(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x995ace6c, Offset: 0x21f8
 // Size: 0x3c
 function function_824d206(func, obj) {
@@ -981,7 +981,7 @@ function callback_weapon_damage(eattacker, einflictor, weapon, meansofdeath, dam
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x95a05da1, Offset: 0x2770
 // Size: 0x4a
 function add_weapon_fired(weapon, callback) {

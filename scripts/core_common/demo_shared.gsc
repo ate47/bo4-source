@@ -103,7 +103,7 @@ function function_c6ae5fd6(var_65e76577, winningteamindex, losingteamindex) {
 }
 
 // Namespace demo/demo_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3cbd92a7, Offset: 0x4f8
 // Size: 0x5a
 function initactorbookmarkparams(killtimescount, killtimemsec, killtimedelay) {
@@ -131,7 +131,7 @@ function reset_actor_bookmark_kill_times() {
 }
 
 // Namespace demo/demo_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa632da6, Offset: 0x5e0
 // Size: 0x116
 function add_actor_bookmark_kill_time() {

@@ -367,7 +367,7 @@ function function_c80bac1f(shockcharge, var_51415470, var_3ee2edfa) {
         if (var_51415470) {
             scoreevents::processscoreevent(#"hash_6f0ec202863eacd", owner, self, level.var_1b72f911);
         } else {
-            scoreevents::processscoreevent(#"hash_2c9365f07df9dae6", owner, self, level.var_1b72f911);
+            scoreevents::processscoreevent(#"tempest_shock_chain", owner, self, level.var_1b72f911);
         }
     }
     wait(var_3ee2edfa);

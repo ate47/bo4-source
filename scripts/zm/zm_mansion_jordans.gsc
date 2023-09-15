@@ -87,10 +87,10 @@ function function_653412f4(var_a276c861) {
     #/
     function_23da5626();
     level flag::init(#"hash_2311d328e336b7d");
-    level.var_a690f86 = struct::get_array(#"hash_36b57732bfe7db9d", "targetname");
+    level.var_a690f86 = struct::get_array(#"jordans_reward_doa", "targetname");
     array::thread_all(level.var_a690f86, &function_9f6a9379);
     level.var_72b665d8 = 6;
-    level.var_93aa61b1 = struct::get_array(#"hash_7007d299ddde4783", "targetname");
+    level.var_93aa61b1 = struct::get_array(#"jordans_reward_narcos", "targetname");
     function_21334921();
     level.var_403919f2 = array::sort_by_script_int(level.var_403919f2, 1);
     /#
@@ -142,7 +142,7 @@ function function_23da5626() {
         var_d7e8ee3e = getent(var_4ef73a79.target, "targetname");
         var_4ef73a79.var_d7e8ee3e = var_d7e8ee3e;
     }
-    level.var_1c929a74 = struct::get_array(#"hash_4b78fbb5c37b6fdf", "targetname");
+    level.var_1c929a74 = struct::get_array(#"jordans_reward_randall", "targetname");
     foreach (var_c453fc76 in level.var_1c929a74) {
         var_ce3d3ff6 = util::spawn_model(var_c453fc76.model, var_c453fc76.origin, var_c453fc76.angles);
         var_3a75e57c = struct::get(var_c453fc76.target, "targetname");
@@ -479,7 +479,7 @@ function function_5a7f565a() {
 function function_c7da583f(var_a276c861) {
     if (!var_a276c861) {
         level.var_352e1e6f = 0;
-        var_1cb747b2 = struct::get(#"hash_2ed75532bbac2791", "targetname");
+        var_1cb747b2 = struct::get(#"jordans_reward_ear", "targetname");
         var_1cb747b2.var_f55eb63 = util::spawn_model(var_1cb747b2.model, var_1cb747b2.origin, var_1cb747b2.angles);
         s_trigger_pos = struct::get(var_1cb747b2.target, "targetname");
         s_trigger_pos.var_1cb747b2 = var_1cb747b2;
@@ -548,7 +548,7 @@ function function_2a93c8cc(var_a276c861, ended_early) {
             var_29c75f3.var_8656a4f1 delete();
         }
     }
-    var_1cb747b2 = struct::get(#"hash_2ed75532bbac2791", "targetname");
+    var_1cb747b2 = struct::get(#"jordans_reward_ear", "targetname");
     zm_unitrigger::unregister_unitrigger(var_1cb747b2.s_unitrigger_stub);
     if (isdefined(var_1cb747b2.var_f55eb63)) {
         var_1cb747b2.var_f55eb63 delete();
@@ -1084,7 +1084,7 @@ function function_6366a177(s_lookat, var_3ac8690f, var_149b3205) {
 // Size: 0xbc
 function function_f62d9f65(var_a276c861) {
     level flag::init(#"hash_11cbce4fcf9f3aec");
-    s_painting = struct::get(#"hash_451396ad5dd0643e", "targetname");
+    s_painting = struct::get(#"gato_saltando_pos", "targetname");
     s_painting.s_unitrigger_stub = s_painting zm_unitrigger::create(undefined, s_painting.radius, &function_eb269563, 0, 1);
     zm_unitrigger::unitrigger_force_per_player_triggers(s_painting.s_unitrigger_stub, 1);
 }
@@ -1103,7 +1103,7 @@ function function_6134319c(var_a276c861, ended_early) {
 // Size: 0x138
 function function_eb269563() {
     self endon(#"death");
-    s_lookat = struct::get(#"hash_435c10185189155d", "targetname");
+    s_lookat = struct::get(#"gato_saltando_target", "targetname");
     var_1611e2c0 = s_lookat.origin;
     while (1) {
         s_waitresult = undefined;

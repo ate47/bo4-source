@@ -548,10 +548,10 @@ function function_f8072c71(player) {
                     player stats::function_dad108fa(#"distance_traveled_vehicle_land", distancetraveled);
                     var_ae40ba19 = player stats::get_stat_global(#"distance_traveled_vehicle_land");
                     var_7f444a72 = int(var_ae40ba19 / 63360);
-                    var_a7f485eb = player stats::get_stat_global(#"hash_83f7445bc09cd22");
+                    var_a7f485eb = player stats::get_stat_global(#"distance_traveled_vehicle_land_miles");
                     if (var_7f444a72 > var_a7f485eb) {
                         diff = var_7f444a72 - var_a7f485eb;
-                        player stats::function_dad108fa(#"hash_83f7445bc09cd22", diff);
+                        player stats::function_dad108fa(#"distance_traveled_vehicle_land_miles", diff);
                     }
                 }
                 if (var_b01d9212) {

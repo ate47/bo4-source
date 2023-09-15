@@ -452,7 +452,7 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
         if (isdefined(var_5e39ac54) && var_5e39ac54) {
             if (var_7ba94ed3 > 0) {
                 player.var_5350f794 = gettime();
-                scoreevents::processscoreevent(#"hash_19a9c949aa35bd2", player, undefined, weapon, var_7ba94ed3);
+                scoreevents::processscoreevent(#"radiation_field_radiating_enemy", player, undefined, weapon, var_7ba94ed3);
             }
         }
         if (isdefined(level.playgadgetsuccess) && isdefined(player.radiationdamage)) {

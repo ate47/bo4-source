@@ -192,7 +192,7 @@ function function_abb55703(spawnbeacon, var_d8f817bc) {
         if (spawnbeacon.owner == player) {
             player thread scoreevents::function_c046c773(0.5, "spawn_beacon_insertion", spawnbeacon.owner, player, level.spawnbeaconsettings.var_c1a364b9);
         } else {
-            scoreevents::processscoreevent(#"hash_5cedcf32c882947f", spawnbeacon.owner, player, level.spawnbeaconsettings.var_c1a364b9);
+            scoreevents::processscoreevent(#"spawn_beacon_insertion", spawnbeacon.owner, player, level.spawnbeaconsettings.var_c1a364b9);
         }
         player.var_1a6703cc = gettime();
         player.var_7c18e526 = spawnbeacon.owner;

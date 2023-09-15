@@ -788,7 +788,7 @@ function create_from_spawngroup_and_go_path(spawngroup) {
 }
 
 // Namespace vehicle/vehicle_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd0875de8, Offset: 0x39a0
 // Size: 0x5c
 function get_on_and_go_path(path_start, distance = 0) {

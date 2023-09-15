@@ -338,7 +338,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
         scoreevents::processscoreevent(#"eliminated_enemy", attacker, self, weapon);
         attacker contracts::function_fd9fb79b(#"hash_7ea5ab346a8be398");
         if (isdefined(self.lastmansd) && self.lastmansd == 1) {
-            attacker stats::function_dad108fa(#"hash_f7fc3ff160a3ac5", 1);
+            attacker stats::function_dad108fa(#"eliminated_final_enemy", 1);
         }
     }
     if (isdefined(level.droppedtagrespawn) && level.droppedtagrespawn) {

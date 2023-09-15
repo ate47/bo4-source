@@ -464,7 +464,7 @@ function updatedevsettings() {
                 }
             }
         }
-        potm::hkaibehaviorblockeddetector();
+        potm::debugupdate();
     #/
 }
 

@@ -700,25 +700,25 @@ function specialistmedalachievement(weapon, scoreevents) {
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_war_machine_x2_multikill_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_tak5_multikill_x2_multikill_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_purifier_x2_multikill_summary");
-        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"hash_8e1be3c09f208ce");
-        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"hash_a299f1dbd0c1c7d");
+        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_attack_dog_x2_multikill_summary");
+        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_tempest_x2_multikill_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_vision_pulse_x2_multikill_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_gravity_slam_multikill_x2");
-        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"hash_305bd298951fd742");
+        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_annihilator_x2_multikill_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_deployable_cover_x2_multikill_summary");
         if (var_e716a62e >= 10) {
             self giveachievement("mp_trophy_special_issue_weaponry");
         }
     } else if (isdefined(baseweapon.var_76ce72e8) && baseweapon.var_76ce72e8 && isdefined(scoreevents) && isdefined(scoreevents.var_fcd2ff3a) && scoreevents.var_fcd2ff3a) {
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_swat_grenade_multikill_x2_summary");
-        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"hash_caa3df31fb4d23c");
+        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_cluster_semtex_multikill_x2_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"hash_3427f2d4181d570");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_radiation_field_multikill_x2_summary");
-        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"hash_23697882250026c");
+        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_tripwire_ied_multikill_x2_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_seeker_shock_mine_paralyzed_headshot");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_sensor_dart_multikill_x2_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_grapple_gun_multikill_x2_summary");
-        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"hash_13133901e76182d");
+        var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_spawn_beacon_multikill_x2_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_concertina_wire_multikill_x2_summary");
         if (var_e716a62e >= 10) {
             self giveachievement("mp_trophy_special_issue_equipment");

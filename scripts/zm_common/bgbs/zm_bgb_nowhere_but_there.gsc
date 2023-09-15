@@ -367,7 +367,7 @@ function on_revived(s_params) {
     e_reviver = s_params.e_reviver;
     if (isdefined(e_reviver)) {
         if (isdefined(e_reviver.var_4ed95eb7) && e_reviver.var_4ed95eb7) {
-            e_reviver zm_stats::increment_challenge_stat(#"hash_54f005134489c6d");
+            e_reviver zm_stats::increment_challenge_stat(#"nowhere_but_there_revives");
         }
     }
 }

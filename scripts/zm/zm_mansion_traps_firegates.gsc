@@ -509,7 +509,7 @@ function function_7d9e84f9(str_color = "red") {
         self.str_exploder = undefined;
     }
     switch (self.script_string) {
-    case #"hash_1da63a56d335126d":
+    case #"firegate_entrance_hall":
         self.str_exploder = "fxexp_tf_" + str_color + "_mh";
         break;
     case #"firegate_cellar":

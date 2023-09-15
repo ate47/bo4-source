@@ -861,7 +861,7 @@ function oncapture(player) {
     demo::bookmark(#"event", gettime(), player);
     potm::bookmark(#"event", gettime(), player);
     player stats::function_bb7eedf0(#"captures", 1);
-    player stats::function_bb7eedf0(#"hash_2f1df496791a2f5f", 1);
+    player stats::function_bb7eedf0(#"captures_in_capture_area", 1);
     player contracts::increment_contract(#"hash_4fa0008b60deaab4");
     player globallogic_score::incpersstat(#"objectivescore", 1, 0, 1);
     level thread popups::displayteammessagetoteam(#"hash_97b6e279104e355", player, team, undefined, undefined);

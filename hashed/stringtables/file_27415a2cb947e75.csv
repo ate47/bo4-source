@@ -1,0 +1,13 @@
+#bowie_knife,#hash_0,false,3000,#bowie,#hash_0,0,false,false,false,false,false,0,0,false,false,melee,false,false,0
+#homunculus,#homunculus_upgraded,false,2000,#cymbal_monkey,#hash_0,0,false,false,true,false,false,0,0,false,false,equipment,false,false,0
+#thunderstorm,#hash_500288f408c55b63,false,2000,#cymbal_monkey,#hash_0,0,false,false,false,false,false,0,0,false,false,equipment,false,false,0
+#zhield_zpear_dw,#hash_0,false,1500,#shield,#hash_0,0,false,false,false,false,false,0,0,false,false,shield,false,false,0
+#ww_hand_o,#ww_hand_o_upgraded,true,10000,#wonder,#hash_0,0,false,false,false,false,false,0,0,false,true,special,false,true,0
+#ww_hand_g,#ww_hand_g_upgraded,true,10000,#wonder,#hash_0,0,false,false,false,false,false,0,0,false,true,special,false,true,0
+#ww_hand_h,#ww_hand_h_upgraded,true,10000,#wonder,#hash_0,0,false,false,false,false,false,0,0,false,true,special,false,true,0
+#ww_hand_c,#ww_hand_c_upgraded,true,10000,#wonder,#hash_0,0,false,false,false,false,false,0,0,false,true,special,false,true,0
+#ww_hand_c_uncharged,#hash_0,false,10000,#wonder,#hash_0,0,false,false,false,false,false,0,0,false,true,special,false,true,0
+#ww_hand_g_uncharged,#hash_0,false,10000,#wonder,#hash_0,0,false,false,false,false,false,0,0,false,true,special,false,true,0
+#ww_hand_h_uncharged,#hash_0,false,10000,#wonder,#hash_0,0,false,false,false,false,false,0,0,false,true,special,false,true,0
+#ww_hand_o_uncharged,#hash_0,false,10000,#wonder,#hash_0,0,false,false,false,false,false,0,0,false,true,special,false,true,0
+#equip_sprout,#hash_0,false,2000,#cymbal_monkey,#hash_0,0,false,false,false,false,false,0,0,false,false,special,false,false,0

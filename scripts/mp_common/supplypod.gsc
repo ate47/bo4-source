@@ -175,7 +175,7 @@ function hintobjectivehint_updat(weapon) {
     if (!isdefined(self) || !isplayer(self) || !self function_49ef5263() || !isdefined(weapon) || weapon.name != "launcher_standard_t8") {
         return;
     }
-    scoreevents::processscoreevent(#"hash_21472dde8e287011", self, undefined, level.var_934fb97.weapon);
+    scoreevents::processscoreevent(#"golden_kill_bonus", self, undefined, level.var_934fb97.weapon);
     if (isdefined(self.var_bfeea3dd) && isalive(self.var_bfeea3dd) && self != self.var_bfeea3dd) {
         scoreevents::processscoreevent(#"hash_131b23d720fc82c3", self.var_bfeea3dd, undefined, level.var_934fb97.weapon);
     }

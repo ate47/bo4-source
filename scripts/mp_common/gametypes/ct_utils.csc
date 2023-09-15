@@ -71,7 +71,7 @@ function vision_pulse(localclientnum, oldval, newval, bnewent, binitialsnap, fie
         self function_116b95e5(#"hash_3b4e3282e8a33852", #"hash_222b3bb254b3295c", 0.4);
         self function_116b95e5(#"hash_3b4e3282e8a33852", #"hash_2efccfad2b32081a", 2500);
         self function_116b95e5(#"hash_3b4e3282e8a33852", #"hash_33856c0e283a93e2", 8);
-        self function_116b95e5(#"hash_3b4e3282e8a33852", #"hash_62d7529690efa8a6", 200);
+        self function_116b95e5(#"hash_3b4e3282e8a33852", #"pulse width", 200);
     } else {
         self postfx::stoppostfxbundle(#"hash_3b4e3282e8a33852");
     }

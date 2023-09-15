@@ -682,7 +682,7 @@ function get_all_closest(org, &array, excluders = [], max = array.size, maxdist)
 }
 
 // Namespace array/array_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4504701a, Offset: 0x2240
 // Size: 0x22
 function alphabetize(&array) {
@@ -698,7 +698,7 @@ function sort_by_value(&array, b_lowest_first = 0) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc88eab87, Offset: 0x22c0
 // Size: 0x42
 function sort_by_script_int(&a_ents, b_lowest_first = 0) {

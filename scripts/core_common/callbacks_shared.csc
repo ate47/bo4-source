@@ -226,7 +226,7 @@ function remove_on_spawned(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe70a2f6c, Offset: 0xb80
 // Size: 0x3c
 function on_laststand(func, obj) {
@@ -306,7 +306,7 @@ function on_shutdown(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x54dd6396, Offset: 0xe50
 // Size: 0x3c
 function on_start_gametype(func, obj) {
@@ -386,7 +386,7 @@ function remove_on_trigger_once(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x878f66c5, Offset: 0x1120
 // Size: 0x3c
 function on_death(func, obj) {

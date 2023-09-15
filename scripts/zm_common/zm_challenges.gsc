@@ -137,7 +137,7 @@ function round_tracking() {
             /#
                 self debug_print("<unknown string>");
             #/
-            self zm_stats::increment_challenge_stat(#"hash_2325c4e9d9c8568", undefined, 1);
+            self zm_stats::increment_challenge_stat(#"rounds_no_downs", undefined, 1);
         }
         self.var_152810ff[1] = 0;
         self.var_152810ff[2] = 0;
@@ -254,7 +254,7 @@ function death_check_for_challenge_updates(e_attacker) {
             /#
                 e_attacker debug_print("<unknown string>");
             #/
-            e_attacker zm_stats::increment_challenge_stat(#"hash_e5e9f9a250abfb0");
+            e_attacker zm_stats::increment_challenge_stat(#"perk_mule_kick_kills");
         }
         if (isdefined(e_attacker.var_807f94d7) && e_attacker.var_807f94d7 > 0) {
             /#
@@ -475,7 +475,7 @@ function death_check_for_challenge_updates(e_attacker) {
         /#
             e_attacker debug_print("<unknown string>");
         #/
-        e_attacker zm_stats::increment_challenge_stat(#"hash_4e95db8d75052f1");
+        e_attacker zm_stats::increment_challenge_stat(#"wraith_fire_kills");
         return;
     }
     if (isdefined(w_damage.isriotshield) && w_damage.isriotshield) {
@@ -816,7 +816,7 @@ function function_a3cd4521() {
     if (self stats::function_af5584ca(#"survivalist_survive_rounds") == 5) {
         var_a9d7bd6++;
     }
-    if (self stats::function_af5584ca(#"hash_2325c4e9d9c8568") == 3) {
+    if (self stats::function_af5584ca(#"rounds_no_downs") == 3) {
         var_a9d7bd6++;
     }
     if (self stats::function_af5584ca(#"rounds_no_damage") == 3) {
@@ -842,10 +842,10 @@ function function_a3cd4521() {
     if (self stats::function_af5584ca(#"pap_activation") == 3) {
         var_a9d7bd6++;
     }
-    if (self stats::function_af5584ca(#"hash_203688d7883cf38c") == 3) {
+    if (self stats::function_af5584ca(#"pap_weapon_packed") == 3) {
         var_a9d7bd6++;
     }
-    if (self stats::function_af5584ca(#"hash_300fdf15a515feda") == 3) {
+    if (self stats::function_af5584ca(#"pap_weapon_double_packed") == 3) {
         var_a9d7bd6++;
     }
     if (self stats::function_af5584ca(#"shield_kills") == 3) {
@@ -869,7 +869,7 @@ function function_a3cd4521() {
     if (self stats::function_af5584ca(#"scepter_revives") == 3) {
         var_a9d7bd6++;
     }
-    if (self stats::function_af5584ca(#"hash_4182a6e5bc52ba9") == 3) {
+    if (self stats::function_af5584ca(#"special_weapon_levels") == 3) {
         var_a9d7bd6++;
     }
     if (self stats::function_af5584ca(#"maxed_special_weapon_kills") == 3) {
@@ -907,7 +907,7 @@ function function_a3cd4521() {
     if (self stats::function_af5584ca(#"hash_5d098efca02f7c99") == 3) {
         var_a9d7bd6++;
     }
-    if (self stats::function_af5584ca(#"hash_54f005134489c6d") == 3) {
+    if (self stats::function_af5584ca(#"nowhere_but_there_revives") == 3) {
         var_a9d7bd6++;
     }
     if (self stats::function_af5584ca(#"hash_47646e52fcbb190e") == 3) {
@@ -948,7 +948,7 @@ function function_a3cd4521() {
     if (self stats::function_af5584ca(#"acid_bomb_kills") == 3) {
         var_a9d7bd6++;
     }
-    if (self stats::function_af5584ca(#"hash_4e95db8d75052f1") == 3) {
+    if (self stats::function_af5584ca(#"wraith_fire_kills") == 3) {
         var_a9d7bd6++;
     }
     if (self stats::function_af5584ca(#"sentry_kills") == 3) {
@@ -983,13 +983,13 @@ function function_a3cd4521() {
     if (self stats::function_af5584ca(#"hash_d0eb45f997dadf0") == 5) {
         var_a9d7bd6++;
     }
-    if (self stats::function_af5584ca(#"hash_e5e9f9a250abfb0") == 5) {
+    if (self stats::function_af5584ca(#"perk_mule_kick_kills") == 5) {
         var_a9d7bd6++;
     }
     if (self stats::function_af5584ca(#"perk_electric_cherry_kills") == 5) {
         var_a9d7bd6++;
     }
-    if (self stats::function_af5584ca(#"hash_13d0e9e764b1b52") == 5) {
+    if (self stats::function_af5584ca(#"perk_deadshot_kills") == 5) {
         var_a9d7bd6++;
     }
     if (self stats::function_af5584ca(#"perk_slider_kills") == 5) {

@@ -1,0 +1,8 @@
+1,#hash_2ea9ac6c7db71c76,1,1500,#kills,#hash_1cccdf3e71b5d14b,1000,#reward_1
+1,#hash_2ea9ac6c7db71c76,2,100,#survive_rounds,#hash_6f9cb804872fc35a,2500,#reward_2
+1,#hash_2ea9ac6c7db71c76,3,1000,#headshots,#hash_187aad79c5ab44c,5000,#reward_3
+1,#hash_2ea9ac6c7db71c76,4,1000,#repacked_kills,#hash_757868a69a92efa7,10000,#reward_4
+2,#hash_7ee6634b4cb6e9e2,1,100,#kills_melee,#hash_7d094b545b332880,1000,#reward_1
+2,#hash_7ee6634b4cb6e9e2,2,20,#boxbuys,#hash_26554bd9ba571ffd,2500,#reward_2
+2,#hash_7ee6634b4cb6e9e2,3,1500,#kills_lmg,#hash_7116f3eec93fa7e1,5000,#reward_3
+2,#hash_7ee6634b4cb6e9e2,4,15,#perks_used,#hash_364f446240a6108d,10000,#reward_4

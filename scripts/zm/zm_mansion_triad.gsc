@@ -576,7 +576,7 @@ function function_2aa04f9f() {
                     var_e4e66b68 = 0;
                 }
                 break;
-            case #"hash_181850bb8bb2f622":
+            case #"kp_fireplace_greenhouse":
                 if (self.script_int == level.var_94c6e50c) {
                     if (self.script_int == 0) {
                         self thread function_82dc0664(e_player);
@@ -651,7 +651,7 @@ function function_82dc0664(e_player) {
     case #"kp_fireplace_cemetery":
         level.var_ded69395 = 0;
         break;
-    case #"hash_181850bb8bb2f622":
+    case #"kp_fireplace_greenhouse":
         level.var_5f9f8ce8 = 0;
         break;
     }
@@ -665,7 +665,7 @@ function function_82dc0664(e_player) {
         level.var_ded69395 = 1;
         level.var_2ba64f64 = 0;
         break;
-    case #"hash_181850bb8bb2f622":
+    case #"kp_fireplace_greenhouse":
         level.var_5f9f8ce8 = 1;
         level.var_94c6e50c = 0;
         break;

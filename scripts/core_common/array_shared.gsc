@@ -123,7 +123,7 @@ function delete_all(&array) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf4d332a7, Offset: 0x628
 // Size: 0x7c
 function notify_all(&array, str_notify) {
@@ -574,7 +574,7 @@ function push(&array, val, index = array.size + 1) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf9995e8, Offset: 0x1dd8
 // Size: 0x34
 function push_front(&array, val) {
@@ -645,7 +645,7 @@ function get_all_farthest(org, &array, a_exclude, n_max = array.size, n_maxdist)
 }
 
 // Namespace array/array_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xf9ff38dd, Offset: 0x2088
 // Size: 0xba
 function get_all_closest(org, &array, a_exclude, n_max = array.size, n_maxdist) {
@@ -675,7 +675,7 @@ function sort_by_value(&array, b_lowest_first = 0) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc4811824, Offset: 0x21d0
 // Size: 0x42
 function sort_by_script_int(&a_ents, b_lowest_first = 0) {
@@ -751,7 +751,7 @@ function merge(left, right, func_sort, param) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7d374cd4, Offset: 0x2570
 // Size: 0x196
 function function_b63fcb3(&array, sort_func) {

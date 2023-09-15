@@ -100,7 +100,7 @@ function function_36228265(inflictor, attacker, damage, flags, meansofdeath, wea
             /#
                 attacker zm_challenges::debug_print("<unknown string>");
             #/
-            attacker zm_stats::increment_challenge_stat(#"hash_13d0e9e764b1b52");
+            attacker zm_stats::increment_challenge_stat(#"perk_deadshot_kills");
         }
         return var_e99e314;
     }

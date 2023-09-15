@@ -1344,8 +1344,8 @@ function function_bf35870e() {
     case #"symbol_front_power":
     case #"symbol_back_power":
         self clientfield::set("power_door_ambient_fx", 1);
-    case #"hash_345b9631e96a8ba7":
-    case #"hash_6de30803b49a37a3":
+    case #"symbol_front_power_debris":
+    case #"symbol_back_power_debris":
         self clientfield::set("power_debris_ambient_fx", 1);
     case #"symbol_back_debris":
     case #"symbol_front_debris":
@@ -1373,8 +1373,8 @@ function function_f2f6ce12() {
                 var_6c61edec clientfield::set("power_door_bought_fx", 1);
                 var_6c61edec thread function_f070c4b8();
                 break;
-            case #"hash_345b9631e96a8ba7":
-            case #"hash_6de30803b49a37a3":
+            case #"symbol_front_power_debris":
+            case #"symbol_back_power_debris":
                 var_6c61edec clientfield::set("power_debris_ambient_fx", 0);
                 var_6c61edec clientfield::set("power_debris_bought_fx", 1);
                 var_6c61edec thread function_f070c4b8();

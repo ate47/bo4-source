@@ -146,7 +146,7 @@ function set(str_id, str_name, value) {
 }
 
 // Namespace val/values_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xfee735f2, Offset: 0xc68
 // Size: 0x74
 function set_for_time(n_time, str_id, str_name, value) {

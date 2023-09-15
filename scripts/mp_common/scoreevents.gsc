@@ -321,7 +321,7 @@ function scoreeventplayerkill(data, time) {
         if (isdefined(var_cf13980c)) {
             sensor = function_c01cb128(victim, var_cf13980c);
             if (isdefined(sensor)) {
-                processscoreevent(#"hash_224fd59f924db25a", attacker, victim, sensor.weapon);
+                processscoreevent(#"sensor_dart_kill", attacker, victim, sensor.weapon);
                 if ((isdefined(sensor.var_1fd3a368) ? sensor.var_1fd3a368 : 1) && isdefined(level.playgadgetsuccess)) {
                     attacker.var_cbb5d202 = (isdefined(attacker.var_cbb5d202) ? attacker.var_cbb5d202 : 0) + 1;
                     if (isdefined(level.var_ac6052e9)) {
@@ -340,7 +340,7 @@ function scoreeventplayerkill(data, time) {
                 if (function_9aef690a(weapon)) {
                     processscoreevent(#"hash_1f661efe5e6707ad", var_78056843, victim, weapon);
                 } else {
-                    processscoreevent(#"hash_731f824a77ef7369", var_78056843, victim, weapon);
+                    processscoreevent(#"sensor_dart_assist", var_78056843, victim, weapon);
                 }
                 if ((isdefined(sensor.var_1fd3a368) ? sensor.var_1fd3a368 : 1) && isdefined(level.playgadgetsuccess)) {
                     var_78056843.var_cbb5d202 = (isdefined(var_78056843.var_cbb5d202) ? var_78056843.var_cbb5d202 : 0) + 1;
@@ -368,7 +368,7 @@ function scoreeventplayerkill(data, time) {
                 processscoreevent(#"hash_63b75d5e59c12f69", attacker, victim, weapon);
             }
         } else if (var_e020b97e && !var_c3f8aa38 && isdefined(var_af1b39cb) && var_af1b39cb == attacker) {
-            processscoreevent(#"hash_5133c3fc034db4aa", attacker, victim, weapon);
+            processscoreevent(#"swat_grenade_kill_blinded_enemy", attacker, victim, weapon);
         }
         if (isdefined(attacker.var_121392a1) && isarray(attacker.var_121392a1)) {
             foreach (effect in attacker.var_121392a1) {
@@ -431,7 +431,7 @@ function scoreeventplayerkill(data, time) {
                             break;
                         }
                     }
-                    processscoreevent(#"hash_80ad2ddab577c7e", attacker, victim, weapon);
+                    processscoreevent(#"vision_pulse_shutdown", attacker, victim, weapon);
                     attacker activecamo::function_896ac347(weapon, #"showstopper", 1);
                     attacker contracts::player_contract_event(#"killed_hero_ability_enemy");
                     break;
@@ -447,7 +447,7 @@ function scoreeventplayerkill(data, time) {
                 if (function_9aef690a(weapon)) {
                     processscoreevent(#"hash_bad79b50f40ce0b", victimlastvisionpulsedby, victim, level.var_2e3031be);
                 } else {
-                    processscoreevent(#"hash_7ce9f144e4d72853", victimlastvisionpulsedby, victim, level.var_2e3031be);
+                    processscoreevent(#"vision_pulse_assist", victimlastvisionpulsedby, victim, level.var_2e3031be);
                 }
                 processscoreevent(#"hash_6d41ba237c04cb10", attacker, victim, weapon);
             } else {
@@ -503,10 +503,10 @@ function scoreeventplayerkill(data, time) {
                 attacker [[ level.playgadgetsuccess ]](getweapon(#"eq_grapple"), undefined, undefined, undefined);
                 attacker.var_5069fdec = gettime();
             }
-            processscoreevent(#"hash_2b28b6abff07567e", attacker, victim, weapon);
+            processscoreevent(#"grapple_gun_kill", attacker, victim, weapon);
         }
         if (weapon == getweapon(#"eq_gravityslam")) {
-            processscoreevent(#"hash_5c8c3bd3007e5948", attacker, victim, weapon);
+            processscoreevent(#"gravity_slam_kill", attacker, victim, weapon);
         }
         if (victimheroabilityactive && isdefined(victimheroability)) {
             attacker notify(#"hero_shutdown", {#gadget:victimheroability});
@@ -736,7 +736,7 @@ function scoreeventplayerkill(data, time) {
             var_21877ec1 = 1;
         }
         if (isdefined(var_21877ec1) && var_21877ec1) {
-            processscoreevent(#"hash_50328eac1e8cfdcb", attacker, victim, weapon);
+            processscoreevent(#"kill_enemy_with_armor", attacker, victim, weapon);
         }
         /#
             assert(isdefined(attacker));
@@ -1012,7 +1012,7 @@ function multikill(killcount, weapon) {
     #/
     self challenges::multikill(killcount, weapon);
     if (killcount > 7) {
-        processscoreevent(#"hash_5276c86cb9b56332", self, undefined, weapon);
+        processscoreevent(#"multikill_more_than_7", self, undefined, weapon);
     } else {
         processscoreevent(#"multikill_" + killcount, self, undefined, weapon);
     }
@@ -1683,9 +1683,9 @@ function function_43ee1b3d(attacker, victim, attackerweapon) {
     }
     if (isdefined(var_71eedb0b) && isdefined(var_a3aba5a9) && var_a3aba5a9) {
         if (smartcover.owner == attacker) {
-            processscoreevent(#"hash_253788f8c27edb93", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
+            processscoreevent(#"deployable_cover_kill", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
         } else {
-            processscoreevent(#"hash_3d0d53aff3c68c68", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
+            processscoreevent(#"deployable_cover_assist", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
         }
     }
 }

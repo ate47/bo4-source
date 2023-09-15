@@ -64,7 +64,7 @@ function main() {
             level thread function_439b486f();
             break;
         case 21:
-            level thread function_21e77256();
+            level thread head_hunter();
             break;
         case 30:
             level thread function_e478fb2a();
@@ -144,7 +144,7 @@ function function_439b486f() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xdbace9d7, Offset: 0x8d8
 // Size: 0xf8
-function function_21e77256() {
+function head_hunter() {
     level flag::set(#"hash_502f2e83a538c679");
     level.a_mees = getentarray("dummy", "targetname");
     level.var_561ae1f8 = level.a_mees.size;

@@ -49,7 +49,7 @@ function function_2bf3c36e() {
 function function_1f3a1c47(activator, laststate, state) {
     if (isdefined(activator)) {
         if (!level.inprematchperiod && laststate === 0) {
-            activator stats::function_d40764f3(#"hash_5c671cd186af7120", 1);
+            activator stats::function_d40764f3(#"activation_count_jukebox", 1);
         }
     }
 }

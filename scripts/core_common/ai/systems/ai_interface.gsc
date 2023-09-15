@@ -204,7 +204,7 @@ function registermatchedinterface(archetype, attribute, defaultvalue, possibleva
 }
 
 // Namespace ai/ai_interface
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xc0361b74, Offset: 0xd68
 // Size: 0x33c
 function registernumericinterface(archetype, attribute, defaultvalue, minimum, maximum, callbackfunction) {

@@ -2790,7 +2790,7 @@ function function_679b5b7a(actionparams) {
 }
 
 // Namespace bot_action/bot_action
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdf9663be, Offset: 0xa740
 // Size: 0xe6
 function function_faa6a59d(actionparams, range) {

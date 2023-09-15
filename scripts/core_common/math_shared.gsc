@@ -25,7 +25,7 @@ function clamp(val, val_min, val_max = val) {
 }
 
 // Namespace math/math_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x3913d582, Offset: 0x130
 // Size: 0x6a
 function linear_map(num, min_a, max_a, min_b, max_b) {
@@ -213,7 +213,7 @@ function get_dot_direction(v_point, b_ignore_z, b_normalize, str_direction, b_us
 }
 
 // Namespace math/math_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x30e00939, Offset: 0x9f8
 // Size: 0x72
 function get_dot_right(v_point, b_ignore_z, b_normalize) {

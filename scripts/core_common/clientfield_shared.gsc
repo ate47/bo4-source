@@ -135,7 +135,7 @@ function get_world_uimodel(str_field_name) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2a23fa6, Offset: 0x550
 // Size: 0x22
 function increment_world_uimodel(str_field_name) {
@@ -172,7 +172,7 @@ function private _increment(str_field_name, n_increment_count = 1) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe2f4ee24, Offset: 0x6a0
 // Size: 0x106
 function increment_uimodel(str_field_name, n_increment_count = 1) {

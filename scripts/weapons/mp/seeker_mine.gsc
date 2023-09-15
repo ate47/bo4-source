@@ -510,7 +510,7 @@ function function_9cf3b3a0(seekermine) {
     params = self waittill(#"death");
     var_86e4cf17 = isdefined(params.attacker) && isplayer(params.attacker) && isdefined(seekermine.owner) && seekermine.owner == params.attacker;
     if (isdefined(params.mod) && params.mod == "MOD_HEAD_SHOT" && var_86e4cf17) {
-        scoreevents::processscoreevent(#"hash_7afc91cc76690ee3", seekermine.owner, self, params.weapon);
+        scoreevents::processscoreevent(#"seeker_shock_mine_paralyzed_headshot", seekermine.owner, self, params.weapon);
         seekermine.owner globallogic_score::specialistmedalachievement(level.var_9d47488.weapon, undefined);
     }
     wait(2);

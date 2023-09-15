@@ -77,11 +77,11 @@ function on_player_connect() {
 function devgui_notif_getgunleveltablename() {
     /#
         if (sessionmodeiscampaigngame()) {
-            return #"hash_4150230c4105dc11";
+            return #"gamedata/weapons/cp/cp_gunlevels.csv";
         } else if (sessionmodeiszombiesgame()) {
-            return #"hash_5ea60cf27bedfa51";
+            return #"gamedata/weapons/zm/zm_gunlevels.csv";
         } else {
-            return #"hash_7d6337a77ef98ad";
+            return #"gamedata/weapons/mp/mp_gunlevels.csv";
         }
     #/
 }

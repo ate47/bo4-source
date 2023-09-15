@@ -50,7 +50,7 @@ function set(str_flag) {
 }
 
 // Namespace flag/flag_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x302929bd, Offset: 0x248
 // Size: 0x8c
 function increment(str_flag) {
@@ -64,7 +64,7 @@ function increment(str_flag) {
 }
 
 // Namespace flag/flag_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8549ba34, Offset: 0x2e0
 // Size: 0xd4
 function decrement(str_flag) {
@@ -83,7 +83,7 @@ function decrement(str_flag) {
 }
 
 // Namespace flag/flag_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x95e7a0e5, Offset: 0x3c0
 // Size: 0x3c
 function delay_set(n_delay, str_flag, str_cancel) {
@@ -206,7 +206,7 @@ function wait_till(str_flag) {
 }
 
 // Namespace flag/flag_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9af68855, Offset: 0x830
 // Size: 0x84
 function wait_till_timeout(n_timeout, str_flag) {
@@ -261,7 +261,7 @@ function wait_till_any(a_flags) {
 }
 
 // Namespace flag/flag_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x553af8b1, Offset: 0xaa0
 // Size: 0x84
 function wait_till_any_timeout(n_timeout, a_flags) {

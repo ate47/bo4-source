@@ -740,14 +740,14 @@ function function_4920c25a(localclientnum, menu_name, state) {
                             [[ var_d0b01271 ]]->set_character_outfit_item(option, type);
                         }
                         function_23bc6f08(localclientnum, var_d0b01271, 8, preset, mode, character_index, 0);
-                        foreach (option, var_bd469c67 in var_9cf37283.options[7]) {
-                            if (var_bd469c67.name == preset.name) {
+                        foreach (option, war_paint in var_9cf37283.options[7]) {
+                            if (war_paint.name == preset.name) {
                                 [[ var_d0b01271 ]]->set_character_outfit_item(option, 7);
                                 break;
                             }
                         }
-                        foreach (option, var_bd469c67 in var_9cf37283.options[1]) {
-                            if (var_bd469c67.name == preset.name) {
+                        foreach (option, war_paint in var_9cf37283.options[1]) {
+                            if (war_paint.name == preset.name) {
                                 [[ var_d0b01271 ]]->set_character_outfit_item(option, 7);
                                 break;
                             }

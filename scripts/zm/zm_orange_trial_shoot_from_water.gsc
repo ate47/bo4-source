@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x565e4c4d, Offset: 0x130
 // Size: 0x5c
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x61c237, Offset: 0x198
 // Size: 0xc8
 function private on_begin() {
@@ -41,7 +41,7 @@ function private on_begin() {
 }
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd804513d, Offset: 0x268
 // Size: 0xe2
 function private on_end(round_reset) {
@@ -55,7 +55,7 @@ function private on_end(round_reset) {
 }
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x1ba32762, Offset: 0x358
 // Size: 0x2f2
 function private function_9e0e99e1() {
@@ -98,7 +98,7 @@ function private function_9e0e99e1() {
 }
 
 // Namespace zm_orange_trial_shoot_from_water/zm_orange_trial_shoot_from_water
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1a808cf7, Offset: 0x658
 // Size: 0x1e0
 function private function_33f0ddd3(s_event) {

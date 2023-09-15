@@ -635,7 +635,7 @@ function function_cbfd8fd6(localclientnum) {
 }
 
 // Namespace activecamo/activecamo_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4b506e94, Offset: 0x2c80
 // Size: 0x13c
 function function_e40c785a(localclientnum) {

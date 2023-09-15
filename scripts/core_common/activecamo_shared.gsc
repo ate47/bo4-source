@@ -453,25 +453,25 @@ function function_938534a8(var_d2eac588) {
     var_19ef0b8d = undefined;
     switch (var_d2eac588) {
     case #"hash_3d392c6f96aa2ac1":
-        var_19ef0b8d = #"hash_1dfe074febc1a47";
+        var_19ef0b8d = #"camo_active_ar_accurate_base";
         break;
     case #"hash_9da725fe15aa048":
-        var_19ef0b8d = #"hash_62942bcbd7f7246f";
+        var_19ef0b8d = #"camo_active_ar_fastfire_base";
         break;
     case #"hash_5cf945d7954a39e0":
-        var_19ef0b8d = #"hash_28de2e37d153637";
+        var_19ef0b8d = #"camo_active_lmg_standard_base";
         break;
     case #"hash_1ffb9d5647330a52":
-        var_19ef0b8d = #"hash_4325109e26315e0e";
+        var_19ef0b8d = #"camo_active_pistol_standard_base";
         break;
     case #"hash_6ed19b98000fb441":
-        var_19ef0b8d = #"hash_45a80b864ab2adc1";
+        var_19ef0b8d = #"camo_active_shotgun_semiauto_base";
         break;
     case #"hash_4b703056e870752e":
-        var_19ef0b8d = #"hash_3c5adf2858a5fec3";
+        var_19ef0b8d = #"camo_active_smg_accurate_base";
         break;
     case #"hash_207f20afd71816c":
-        var_19ef0b8d = #"hash_6df1f30ebff59926";
+        var_19ef0b8d = #"camo_active_smg_standard_base";
         break;
     default:
         break;

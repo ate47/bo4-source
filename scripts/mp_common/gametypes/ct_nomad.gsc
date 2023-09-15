@@ -406,7 +406,7 @@ function function_5b0597d0(var_511a3f1c) {
 // Params 2, eflags: 0x0
 // Checksum 0xd2bf3c11, Offset: 0x19d0
 // Size: 0x8e
-function function_8eab6809(var_c03b0783, var_97f91376) {
+function spawn_warlords(var_c03b0783, var_97f91376) {
     for (i = 0; i < var_c03b0783; i++) {
         v_pos = var_97f91376[i].origin;
         v_angles = var_97f91376[i].angles;
@@ -430,7 +430,7 @@ function function_30e4da9a(var_4d4513ee) {
     var_7716dee7 = "warlord_spawn_point_" + var_4d4513ee + 1;
     var_97f91376 = getnodearray(var_7716dee7, "targetname");
     var_97f91376 = array::randomize(var_97f91376);
-    level thread function_8eab6809(var_ec102dab, var_97f91376);
+    level thread spawn_warlords(var_ec102dab, var_97f91376);
 }
 
 // Namespace ct_nomad/ct_nomad

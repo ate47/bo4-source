@@ -176,7 +176,7 @@ function owner_in_line_of_fire() {
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xdf148b49, Offset: 0xb08
 // Size: 0x5c
 function setturrettarget(target, turretidx = 0, offset = (0, 0, 0)) {
@@ -1091,7 +1091,7 @@ function init_state_machine_for_role(rolename = "default") {
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xec3a6089, Offset: 0x3db0
 // Size: 0x46
 function register_custom_add_state_callback(func) {

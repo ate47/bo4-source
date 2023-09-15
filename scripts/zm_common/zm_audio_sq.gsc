@@ -62,10 +62,10 @@ function function_9310fe45() {
 // Size: 0x128
 function function_9e3ff948() {
     var_1a2e422e = 0;
-    var_2361f0ab = struct::get_array(#"hash_ef13d6f1414e0f7", "targetname");
-    foreach (var_ebacacf2 in var_2361f0ab) {
-        if (isdefined(var_ebacacf2.script_int) && var_ebacacf2.script_int == level.var_c5c448d) {
-            var_ebacacf2 thread function_c0862b9e();
+    var_2361f0ab = struct::get_array(#"s_music_sq_location", "targetname");
+    foreach (s_music_sq_location in var_2361f0ab) {
+        if (isdefined(s_music_sq_location.script_int) && s_music_sq_location.script_int == level.var_c5c448d) {
+            s_music_sq_location thread function_c0862b9e();
             util::wait_network_frame();
         }
     }
@@ -113,10 +113,10 @@ function function_c0862b9e() {
 // Checksum 0xacfcb25f, Offset: 0x598
 // Size: 0xd0
 function music_sq_cleanup() {
-    var_2361f0ab = struct::get_array(#"hash_ef13d6f1414e0f7", "targetname");
-    foreach (var_ebacacf2 in var_2361f0ab) {
-        if (isdefined(var_ebacacf2.var_6522085c)) {
-            var_ebacacf2.var_6522085c delete();
+    var_2361f0ab = struct::get_array(#"s_music_sq_location", "targetname");
+    foreach (s_music_sq_location in var_2361f0ab) {
+        if (isdefined(s_music_sq_location.var_6522085c)) {
+            s_music_sq_location.var_6522085c delete();
             util::wait_network_frame();
         }
     }

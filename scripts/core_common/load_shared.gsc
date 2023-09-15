@@ -10,7 +10,6 @@
 #using scripts\core_common\array_shared.gsc;
 #using scripts\core_common\activecamo_shared.gsc;
 #using scripts\core_common\delete.gsc;
-#using scripts\core_common\clientids_shared.gsc;
 
 #namespace load;
 
@@ -601,7 +600,7 @@ function hide_ents() {
 }
 
 // Namespace load/load_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x38a61ba8, Offset: 0x1ea0
 // Size: 0x23a
 function art_review() {

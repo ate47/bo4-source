@@ -82,7 +82,7 @@ function get(kvp_value, kvp_key = "targetname") {
 }
 
 // Namespace struct/struct
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xadfc294d, Offset: 0x670
 // Size: 0x72
 function spawn(v_origin = (0, 0, 0), v_angles = (0, 0, 0)) {
