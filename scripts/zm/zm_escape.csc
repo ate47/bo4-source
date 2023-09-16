@@ -89,7 +89,7 @@ function event_handler[level_init] main(eventstruct) {
     level._uses_default_wallbuy_fx = 1;
     level._uses_sticky_grenades = 1;
     level._uses_taser_knuckles = 1;
-    level.var_d0ab70a2 = #"hash_241c0e86d7b363e9";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_escape_weapons.csv";
     level._effect[#"hash_2bba72fdcc5508b5"] = #"hash_2ac7ec38d265c496";
     level._effect[#"chest_light_closed"] = #"hash_5b118cefec864e37";
     level._effect[#"hash_9d26763cbe16490"] = #"hash_5a9159bef624d260";

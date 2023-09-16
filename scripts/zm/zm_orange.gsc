@@ -117,7 +117,7 @@ function event_handler[level_init] main(eventstruct) {
     callback::on_ai_spawned(&function_8c000d3b);
     level.var_22fda912 = &function_9f50079d;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
-    level.var_d0ab70a2 = #"hash_544f128e274c84e0";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_orange_weapons.csv";
     level._allow_melee_weapon_switching = 1;
     level.zombiemode_reusing_pack_a_punch = 1;
     level.var_161cb00c = 1;

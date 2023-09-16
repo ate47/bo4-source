@@ -6,7 +6,7 @@
 #location_enter,#cargohold,#hash_64ca2062958c61ba,0,0,true,true,false,false
 #water,#exit,#hash_55c511a4abacedf7,0,0,true,false,false,false
 #zombie,#react_first,#hash_494428d3c9311cdc,0,0,true,false,false,false
-#door,#hash_5c99f5e0cbafc608,#hash_388aa7424156b1b5,0,0,true,false,false,false
+#door,#open_first,#hash_388aa7424156b1b5,0,0,true,false,false,false
 #box,#react_first,#hash_6fb6307489066c39,0,0,true,false,false,false
 #box,#interact_first,#hash_18323b510ff94e32,0,0,true,false,false,false
 #sentinel,#los_first,#hash_349761b63c99fe27,0,0,true,false,false,false
@@ -26,7 +26,7 @@
 #fish,#retrieve_first,#hash_310b5c63fef333d3,0,0,true,false,false,false
 #fish,#reward_comp,#hash_3051dd3213c3167d,0,0,true,false,false,false
 #altar,#activate_generic,#hash_a87bd666db70dc5,0,0,false,false,false,false
-#pap,#activate,#hash_6955c72c78a657a0,0,0,false,false,false,false
+#pap,#activate,#vox_pap_activate,0,0,false,false,false,false
 #stoker_key,#pick_up,#hash_4995c22c93873b21,0,0,true,false,false,false
 #hash_26a9f2114c4dc662,#build,#hash_461b4cf8bf87a9cf,0,0,true,false,false,false
 #fast_travel,#end,#hash_4d6d4cd2bfc6d91c,50,0,false,true,false,false
@@ -47,13 +47,13 @@
 #m_quest,#hash_c56979b503c4220,#hash_1ad33382e08dace7,0,0,false,false,false,false
 #m_quest,#hash_71169f8e9e2489fd,#hash_6c43ec4efecb96f8,0,0,false,false,false,false
 #m_quest,#hash_19fca744d8d369fa,#hash_285f457b52081bd3,0,0,true,false,false,false
-#m_quest,#hash_b7a0669a7ca2cc8,#hash_74cb038c7565ddc9,0,0,true,false,false,false
+#m_quest,#cat_sentinel,#hash_74cb038c7565ddc9,0,0,true,false,false,false
 #m_quest,#hash_d70e28ab6ed340e,#hash_6a413b4d74b92971,0,0,true,false,false,false
 #m_quest,#hash_1e7e62fe2b4d29e4,#hash_2e8d8d922535b1db,0,0,true,false,false,false
 #m_quest,#hash_7ccac254437d97c2,#hash_61094d6f2ad53949,0,0,true,false,false,false
 #m_quest,#hash_45e36c01ad8ad25c,#hash_7ce167d241020437,0,0,true,false,false,false
 #m_quest,#hash_75e9e3640a38273,#hash_23be102927fbcf96,0,0,true,false,false,false
-#m_quest,#hash_5836c19a9823d02c,#hash_4ba720f616544675,0,0,true,false,false,false
+#m_quest,#ambient_change,#hash_4ba720f616544675,0,0,true,false,false,false
 #m_quest,#circle_appears,#hash_539974cb95bdf211,0,0,true,false,false,false
 #m_quest,#hash_64499c01670a6e,#hash_3d70e83c6d1a839d,0,0,true,false,false,false
 #m_quest,#hash_538f3799369755c7,#hash_696f2e5fafff5614,0,0,true,false,false,false

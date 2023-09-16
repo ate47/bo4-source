@@ -777,7 +777,7 @@ function merge(left, right, func_sort, param) {
 // Params 2, eflags: 0x0
 // Checksum 0xc2f9394, Offset: 0x2660
 // Size: 0x196
-function function_b63fcb3(&array, sort_func) {
+function bubble_sort(&array, sort_func) {
     start = 0;
     end = array.size;
     var_f9038db1 = 1;
@@ -1089,7 +1089,7 @@ function function_70daaa9d(max_entries, minval, maxval, compare_func, var_c8e96e
             source_array[source_array.size] = function_21a3a673(minval, maxval);
         }
         sorted_array = arraycopy(source_array);
-        function_b63fcb3(sorted_array, compare_func);
+        bubble_sort(sorted_array, compare_func);
         if (var_c8e96eee) {
             for (i = 0; i < var_365f3054 - 1; i++) {
                 /#

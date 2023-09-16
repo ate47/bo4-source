@@ -533,7 +533,7 @@ function function_a82cad64(ai_zone) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x78cdbd6c, Offset: 0x2d10
 // Size: 0x1bc
-function function_63375576(ai_zone) {
+function add_magicbox(ai_zone) {
     if (!(isdefined(level.var_65d14681) && level.var_65d14681)) {
         return;
     }
@@ -1677,7 +1677,7 @@ function function_41101f23(zone, var_d42412dc) {
         return;
     }
     zone.is_active = 1;
-    function_63375576(zone);
+    add_magicbox(zone);
     waitframe(1);
     var_1c9891ec = level.var_7b5ba689;
     if (zone.var_cafac64a != #"spawner_boct_zombie_wz" && zone.var_cafac64a != #"hash_618248fca82d83a6") {

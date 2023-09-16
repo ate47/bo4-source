@@ -198,7 +198,7 @@ function event_handler[level_init] main(eventstruct) {
     level._effect[#"hash_23ba00d2f804acc2"] = #"hash_56b121a7e7eee303";
     level._effect[#"hash_5afda864f8b64f5c"] = #"hash_5f48f8d916a0f612";
     level thread zm_audio_sq::init();
-    level.var_d0ab70a2 = #"hash_42dcec7533a676b0";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_towers_weapons.csv";
     level.var_210ce105 = zm_towers_crowd_meter::register("zm_towers_crowd_meter");
     load::main();
     util::waitforclient(0);

@@ -188,7 +188,7 @@ function event_handler[level_init] main(eventstruct) {
     level thread zm_towers_special_rounds::init();
     level.var_22fda912 = &function_9f50079d;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
-    level.var_d0ab70a2 = #"hash_42dcec7533a676b0";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_towers_weapons.csv";
     level._allow_melee_weapon_switching = 1;
     level.zombiemode_reusing_pack_a_punch = 1;
     level.w_wraithfire = getweapon(#"eq_wraith_fire");

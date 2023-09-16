@@ -261,9 +261,9 @@ function function_adceefd(local_client_num, hacker) {
         }
         var_94e70cdd[entweapon.var_a8bd8bb2][var_94e70cdd[entweapon.var_a8bd8bb2].size] = var_20651f4;
     }
-    array::function_b63fcb3(var_94e70cdd[0], &function_8d50c205);
-    array::function_b63fcb3(var_94e70cdd[1], &function_8d50c205);
-    array::function_b63fcb3(var_94e70cdd[2], &function_8d50c205);
+    array::bubble_sort(var_94e70cdd[0], &function_8d50c205);
+    array::bubble_sort(var_94e70cdd[1], &function_8d50c205);
+    array::bubble_sort(var_94e70cdd[2], &function_8d50c205);
     return var_94e70cdd;
 }
 

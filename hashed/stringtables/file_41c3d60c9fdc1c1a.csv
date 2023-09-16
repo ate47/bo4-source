@@ -77,7 +77,7 @@
 #perk,#specialty_electriccherry,#hash_6b9fb792bd54d277,0,0,true,false,false,false
 #perk,#specialty_deadshot,#hash_28782c633fbb5e4a,0,0,true,false,false,false
 #pap,#wait,#hash_cddf5fea0108c90,0,0,true,false,false,false
-#pap,#pickup,#hash_3890eb86ec462ff5,0,0,true,false,false,false
+#pap,#pickup,#vox_pap_pickup,0,0,true,false,false,false
 #pap,#hash_53bb9b9a0cbdc924,#hash_1179bfeb2496bee3,0,0,true,false,false,false
 #pap,#hash_d3fbd2d49279dba,#hash_4a5d1b333da7e3b7,0,0,true,false,false,false
 #pap,#hash_7fd46a337cf2620f,#hash_30103ca035252eba,0,0,true,false,false,false
@@ -95,7 +95,7 @@
 #weapon_pickup,#bowie,#hash_1d0f0630ef1d2812,0,0,false,false,false,false
 #weapon_pickup,#raygun,#hash_43d252dd310e2faa,0,0,false,false,false,false
 #weapon_pickup,#homunculus,#hash_43d252dd310e2faa,0,0,false,false,false,false
-#weapon_pickup,#upgrade,#hash_3890eb86ec462ff5,0,0,true,false,false,false
+#weapon_pickup,#upgrade,#vox_pap_pickup,0,0,true,false,false,false
 #bgb,#buy,#hash_68ee5b183970ce35,0,0,false,false,false,false
 #bgb,#eat,#hash_4fa8d1182b53b213,0,0,false,false,false,false
 #elixir,#drink,#hash_1550216483f19c05,0,0,false,false,false,false

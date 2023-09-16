@@ -129,7 +129,7 @@ function event_handler[level_init] main(eventstruct) {
     level.default_game_mode = "zclassic";
     level.var_22fda912 = &function_9f50079d;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
-    level.var_d0ab70a2 = #"hash_6dcfc619b819ab4f";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_white_weapons.csv";
     level._allow_melee_weapon_switching = 1;
     level.var_161cb00c = 1;
     level.registerobjective_qzonejukeinit = 0;

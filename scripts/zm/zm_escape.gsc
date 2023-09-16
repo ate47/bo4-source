@@ -128,7 +128,7 @@ function event_handler[level_init] main(eventstruct) {
     level.disableclassselection = 0;
     level.var_22fda912 = &function_9f50079d;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
-    level.var_d0ab70a2 = #"hash_241c0e86d7b363e9";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_escape_weapons.csv";
     level._allow_melee_weapon_switching = 1;
     level.zombiemode_reusing_pack_a_punch = 1;
     level._effect[#"lght_marker"] = #"hash_2eb17822848d1484";

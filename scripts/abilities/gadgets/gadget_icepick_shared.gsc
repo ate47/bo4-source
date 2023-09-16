@@ -443,7 +443,7 @@ function private function_73d5db3b(player) {
 // Checksum 0x1f6c0cd6, Offset: 0x1cb0
 // Size: 0x2c
 function private function_d65b8dbe(&array, sort_func) {
-    array::function_b63fcb3(array, sort_func);
+    array::bubble_sort(array, sort_func);
 }
 
 // Namespace icepick/gadget_icepick_shared
@@ -451,7 +451,7 @@ function private function_d65b8dbe(&array, sort_func) {
 // Checksum 0x15aae6fd, Offset: 0x1ce8
 // Size: 0x2c
 function private function_f1f877e0(&array, sort_func) {
-    array::function_b63fcb3(array, sort_func);
+    array::bubble_sort(array, sort_func);
 }
 
 // Namespace icepick/gadget_icepick_shared
@@ -459,7 +459,7 @@ function private function_f1f877e0(&array, sort_func) {
 // Checksum 0x60f3b2db, Offset: 0x1d20
 // Size: 0x2c
 function private sort_vehicles(&array, sort_func) {
-    array::function_b63fcb3(array, sort_func);
+    array::bubble_sort(array, sort_func);
 }
 
 // Namespace icepick/gadget_icepick_shared

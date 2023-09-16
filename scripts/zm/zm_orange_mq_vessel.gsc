@@ -239,7 +239,7 @@ function private function_9c223c27() {
         level.var_1c53964e zm_hms_util::function_6a0d675d(#"hash_497ec7e9ca9ca204", -1, 0, 1);
     }
     player = self zm_unitrigger::function_fac87205(zm_utility::function_d6046228(#"hash_3be823a04b5cca2d", #"hash_25cb84d1af883c53"), 64);
-    player thread zm_orange_util::function_51b752a9(#"hash_4323f85521955dd7");
+    player thread zm_orange_util::function_51b752a9(#"vox_seal_pickup");
     self.e_vessel hide();
     self.e_vessel playsound("zmb_vessel_pickup");
     level flag::set(#"vessel_found");

@@ -241,7 +241,7 @@ function init_level_vars() {
     level.default_game_mode = "zclassic";
     level.var_22fda912 = &offhand_weapon_overrride;
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
-    level.var_d0ab70a2 = #"hash_3180c9ba4da02927";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_zodt8_weapons.csv";
     level._allow_melee_weapon_switching = 1;
     level.zombiemode_reusing_pack_a_punch = 1;
     level.player_out_of_playable_area_monitor_callback = &player_out_of_playable_area_monitor_callback;

@@ -84,7 +84,7 @@ function event_handler[level_init] main(eventstruct) {
     level.zombiemode_using_juggernaut_perk = 1;
     level.zombiemode_using_revive_perk = 1;
     level.zombiemode_using_sleightofhand_perk = 1;
-    level.var_d0ab70a2 = #"hash_6dcfc619b819ab4f";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_white_weapons.csv";
     level zm_white_zstandard::main();
     level namespace_7d8e6ec3::preload();
     level zm_white_special_rounds::register_clientfields();

@@ -398,7 +398,7 @@ function docks_power() {
         waitresult = undefined;
         waitresult = power_trig waittill(#"trigger");
         user = waitresult.activator;
-        user thread function_51b752a9(#"hash_52d22e25dd1ac29f");
+        user thread function_51b752a9(#"vox_power_switch_1_activate");
     }
 }
 

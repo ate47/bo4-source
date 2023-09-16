@@ -234,7 +234,7 @@ function private get_favorite_enemy(entity) {
     }
     if (valid_targets.size > 0) {
         if (valid_targets.size > 1) {
-            array::function_b63fcb3(valid_targets, &function_e0b49b0b);
+            array::bubble_sort(valid_targets, &function_e0b49b0b);
         }
         return valid_targets[valid_targets.size - 1];
     }

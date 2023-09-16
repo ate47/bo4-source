@@ -28,7 +28,7 @@
 #location_enter,#wardens_house,#hash_3614038d698d0e02,0,0,true,false,false,false
 #location_enter,#wardens_office,#hash_5b768eac0768dc2,0,0,true,false,false,false
 #bathtub,#react,#hash_507eee9659597f59,0,0,false,false,false,false
-#zone_dock,#hash_4f30a6de1a21c618,#hash_85d9ffe8c304b41,0,0,false,false,false,false
+#zone_dock,#react_1,#hash_85d9ffe8c304b41,0,0,false,false,false,false
 #elev_crash,#react,#hash_6c87f2f8a3db8e79,0,0,false,false,false,false
 #escape_plan,#react,#hash_1690133fb65679ae,0,0,true,false,false,false
 #vista,#react,#hash_78c6761045215de8,0,0,false,false,false,false
@@ -42,7 +42,7 @@
 #location_enter,#wardens_house,#hash_3614038d698d0e02,0,0,true,false,false,false
 #location_enter,#wardens_office,#hash_5b768eac0768dc2,0,0,true,false,false,false
 #bathtub,#react,#hash_507eee9659597f59,0,0,false,false,false,false
-#zone_dock,#hash_4f30a6de1a21c618,#hash_85d9ffe8c304b41,0,0,false,false,false,false
+#zone_dock,#react_1,#hash_85d9ffe8c304b41,0,0,false,false,false,false
 #elev_crash,#react,#hash_6c87f2f8a3db8e79,0,0,false,false,false,false
 #escape_plan,#react,#hash_1690133fb65679ae,0,0,true,false,false,false
 #vista,#react,#hash_78c6761045215de8,0,0,false,false,false,false
@@ -84,7 +84,7 @@
 #wolf_head,#comp,#hash_1117d1cb7f362930,0,0,false,false,false,false
 #wolf_head,#feed,#hash_59541f4cdb2989f,50,20,false,false,false,false
 #wolf_head,#feed_first,#hash_8a9cdc24c0da56e,0,0,false,false,false,false
-#hash_3cce4eee39ea0875,#pickup,#hash_6ae96725c891addc,0,0,false,false,false,false
+#zmb_blood,#pickup,#hash_6ae96725c891addc,0,0,false,false,false,false
 #m_quest,#hash_65f698382efe6e78,#hash_68b4a0bee89499a7,0,0,false,false,false,false
 #m_quest,#hash_6a0e4f34de571bc2,#hash_7cf068b4ca0db57b,0,0,false,false,false,false
 #m_quest,#hash_83507d85fc4afee,#hash_420cd62afa5f7e5f,0,0,false,false,false,false
@@ -93,12 +93,12 @@
 #m_quest,#hash_169bdb4f20c19f6a,#hash_69e992122611c96f,0,0,false,false,false,false
 #m_quest,#hash_24c0d3f7174bc5b3,#hash_5f84ae79adca64b4,0,0,false,false,false,false
 #m_quest,#hash_3e5ed3e7e6cc95d9,#hash_58698646dc41b7cc,0,0,false,false,false,false
-#m_quest,#hash_35a93f7cf3b437de,#hash_6a36332b44f8f69,0,0,false,false,false,false
+#m_quest,#ghost_power,#hash_6a36332b44f8f69,0,0,false,false,false,false
 #m_quest,#hash_36a2cd1c4f541346,#hash_75dd4d3a12f7a4ff,0,0,false,false,false,false
-#m_quest,#hash_72352521c99249a2,#hash_4de71ac9ed523e0f,0,0,false,false,false,false
-#m_quest,#hash_24855bbe3a6eeca7,#hash_7908358765812286,0,0,false,false,false,false
-#m_quest,#hash_3399053736f8b543,#hash_21d36ad9aebdc862,0,0,false,false,false,false
-#m_quest,#hash_6b4f0efc6019edae,#hash_346283ac47189915,0,0,false,false,false,false
+#m_quest,#ghost_murder,#hash_4de71ac9ed523e0f,0,0,false,false,false,false
+#m_quest,#ghost_riot,#hash_7908358765812286,0,0,false,false,false,false
+#m_quest,#ghost_shower,#hash_21d36ad9aebdc862,0,0,false,false,false,false
+#m_quest,#ghost_spoon,#hash_346283ac47189915,0,0,false,false,false,false
 #m_quest,#hash_2d26bacd58f13326,#hash_2db7e999104e9d85,0,0,false,false,false,false
 #m_quest,#hash_2b1c210a6d80ed6c,#hash_e6dbc38573eb591,0,0,false,false,false,false
 #m_quest,#hash_6aac19902c15636a,#hash_13cd65f9025f98b,0,0,false,false,false,false
@@ -111,6 +111,6 @@
 #m_quest,#hash_78ea08235b9ab986,#hash_449831e8d03243ab,0,0,false,false,false,false
 #m_quest,#hash_1049fe312cd9fe48,#hash_744ecba5e638fd81,0,0,false,false,false,false
 #m_quest,#hash_3628ca4fb470947e,#hash_7ece3932c57d8fad,0,0,false,false,false,false
-#m_quest,#hash_32328c75afd54cd4,#hash_5931ce3f54ff9613,0,0,false,false,false,false
+#m_quest,#ward_stun,#hash_5931ce3f54ff9613,0,0,false,false,false,false
 #shield_piece,#pickup,#hash_7e030fccc2c5a121,0,0,false,false,false,false
 #weapon_pickup,#shield,#hash_7a78273efd96ec45,0,0,true,false,false,false

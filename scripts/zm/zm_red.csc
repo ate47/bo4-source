@@ -60,7 +60,7 @@ function event_handler[level_init] main(eventstruct) {
     level._uses_default_wallbuy_fx = 1;
     level._uses_sticky_grenades = 1;
     level._uses_taser_knuckles = 1;
-    level.var_d0ab70a2 = #"hash_27415a2cb947e75";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_red_weapons.csv";
     level.var_5603a802 = "pstfx_gaussian_blur";
     level._effect[#"fasttravel_rail_1p"] = #"hash_51fd09e47e0cd679";
     level._effect[#"fasttravel_rail_3p"] = #"hash_51fd09e47e0cd679";

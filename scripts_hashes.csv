@@ -1,3 +1,4 @@
+0,
 4bbc1,state_off_exit
 7720e,delay_trace
 7e2e9,setup_player_contracts
@@ -1564,6 +1565,7 @@ b5cab1b,has_lockon
 b5d6491,doexplosion
 b60062f,codecallback_extracamrenderwcvarianticon
 b605f97,fx_tabun_radius3
+b63fcb3,bubble_sort
 b674dc1,handle_thundergun_pain_notetracks
 b694867,sfx_waterdrain_aft
 b6d4ee1,is_player_offhand_weapon
@@ -13871,6 +13873,7 @@ ffe2f24,minigame_on
 63338e48,set_visible_carrier_model
 63351cd9,claymore_spawned
 63362628,group_name
+63375576,add_magicbox
 6337dfc9,enemyobjid
 633b4326,isstillvalidtarget
 633b44e5,centerref
@@ -36549,6 +36552,7 @@ fd79bf5478b106,status_effect_deaf
 2694b388c90e575,scripts/zm/weapons/zm_weap_blundergat.gsc
 26c5489cffa7c30,autoturret
 271a1195d0fc9c1,sun
+27415a2cb947e75,gamedata/weapons/zm/zm_red_weapons.csv
 2744dd5cfdaf0e6,passenger1
 2750aaa2765547f,movespeed
 279c37ad8e91ce6,bountystartmoney
@@ -38817,6 +38821,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 14e7ed71e67b11c2,zombie/fx_powerup_grab_green_zmb
 14ec09249c6db7bc,zm_talisman_start_weapon_smg
 14ec304180a5f0c0,tower_c_lower_chest
+14ee3b02a56347de,gamedata/tables/mp/mp_contracttable.csv
 14ee5e66e7bb1ed7,ztrial_name
 14f0ab0945521238,capturearea
 14f3f35558fd380b,triad_beam
@@ -40695,6 +40700,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 24180d462604bf28,stock_ammo
 241a9923b06b6c6e,sword_bloodswipe_l_1p
 241b626618728357,scripts/zm/zm_towers_zstandard.gsc
+241c0e86d7b363e9,gamedata/weapons/zm/zm_escape_weapons.csv
 241f401f618e9330,nixie_tube_trigger_3
 241f411f618e94e3,nixie_tube_trigger_2
 241f421f618e9696,nixie_tube_trigger_1
@@ -42419,6 +42425,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 317aa6153a75c589,scripts/core_common/ai/archetype_mocomps_utility.gsc
 317afc9eb6bd2436,p8_fxanim_zm_man_beam_device_bundle
 317e25a802fa9a50,veh_t7_drone_hunter
+3180c9ba4da02927,gamedata/weapons/zm/zm_zodt8_weapons.csv
 3187270bf5a054e3,reddot
 3187be2bbbcb657f,max_range
 318816742cac11da,scripts/zm/zm_white_special_rounds.csc
@@ -43304,6 +43311,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 38821d90f8209d05,foregrip_wz_item
 38826601ec390962,p8_fxanim_wz_supply_stash_01_mod
 3882e337d28ec4df,special_ballisticknife_t8_dw_upgraded
+3890eb86ec462ff5,vox_pap_pickup
 38935b99e409f15e,wardens_house
 3893e1d0ce8a5ffc,shouldadjuststanceattacticalwalk
 3897b1568835a037,scepter_revive
@@ -44533,6 +44541,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 42d54b76ac9bf937,stop_zombie_rise_fx
 42d64256df943c2b,zod_companion
 42d9b53cda90aa8d,dev_cac_dpad_think
+42dcec7533a676b0,gamedata/weapons/zm/zm_towers_weapons.csv
 42e13df03664f005,magicbox
 42e3673730d13c20,prima_materia
 42e3c90e49eb6699,player_bled_out
@@ -44567,6 +44576,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 4320b9827322fac4,zone_foyer_eastend
 4321c2f1193f3097,scripts/zm/weapons/zm_weap_scepter.csc
 432259dad45aad47,veh_huey_tail
+4323f85521955dd7,vox_seal_pickup
 4324053ce5e27661,scripts/core_common/ai/archetype_elephant.gsc
 4325109e26315e0e,camo_active_pistol_standard_base
 4326699933130d82,friendlydronestrike
@@ -46508,6 +46518,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 52c62df546998ab2,drop_o
 52c68c82c2230580,lowready_on
 52c6c2d1a2ef1b46,scripts/zm_common/zm_ui_inventory.gsc
+52d22e25dd1ac29f,vox_power_switch_1_activate
 52d26b207c2dd6dc,landing
 52d2ab6e02aa25cb,drowning
 52d37104fb5e6eb5,ar_fastfire_t8_gold_item
@@ -46713,6 +46724,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 544781c33308458c,lighthouse_annex
 544b157a9fa6573d,zmperksdeathdash
 544eb0fc2d634d63,secondary_mastery_pistol
+544f128e274c84e0,gamedata/weapons/zm/zm_orange_weapons.csv
 545259529b693147,escort_robot_escort
 5457dfecf07e04bb,player_close
 545a0bac37bda541,scripts/core_common/globallogic/globallogic_score.gsc
@@ -49049,6 +49061,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 678c85f6f120d34b,wzmerittop5
 679116c8fb952990,mq6_cv5
 6792c1f90c3a5c7f,gametype
+67972fca091f2c13,gamedata/weapons/zm/zm_mansion_weapons.csv
 679a78d301a340cc,zm_bgb_unbearable
 679b15ab55980c91,fizzleout
 679e4d608e807965,exit
@@ -49831,6 +49844,7 @@ fff69dfdbb1f75e,support_structure_list_item_default_small_dlc1
 6dcc421d5fbf8d22,soul_fill
 6dce40dd2d8c2e81,start_grapple_high_ledge_collision
 6dcf83ef0b015c6e,_zombie_game_over
+6dcfc619b819ab4f,gamedata/weapons/zm/zm_white_weapons.csv
 6dd1db7ef5514379,soul_capture_kp1_halfway
 6dd595b7924701fc,veh_qrdrone_move_up
 6dd6bf1a83b01f98,zm_white_mq_crawler_step1

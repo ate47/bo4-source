@@ -2424,7 +2424,7 @@ function function_9bc19458(str_vo) {
 // Checksum 0xf9edb395, Offset: 0xa6e8
 // Size: 0x2c
 function function_229fd7e9() {
-    self zm_vo::function_a2bd5a0c(#"hash_3890eb86ec462ff5", 0, 1);
+    self zm_vo::function_a2bd5a0c(#"vox_pap_pickup", 0, 1);
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest

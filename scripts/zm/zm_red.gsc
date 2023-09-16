@@ -141,7 +141,7 @@ function event_handler[level_init] main(eventstruct) {
     }
     level.pack_a_punch.custom_power_think = &zm_red_pap_quest::function_9b917fd5;
     level.var_c02e63 = &function_c02e63;
-    level.var_d0ab70a2 = #"hash_27415a2cb947e75";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_red_weapons.csv";
     level._allow_melee_weapon_switching = 1;
     level.zombiemode_reusing_pack_a_punch = 1;
     level.custom_spawner_entry[#"crawl"] = &zm_spawner::function_45bb11e4;

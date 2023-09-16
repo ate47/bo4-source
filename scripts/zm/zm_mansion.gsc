@@ -189,7 +189,7 @@ function event_handler[level_init] main(eventstruct) {
     level.zombiemode_offhand_weapon_give_override = &offhand_weapon_give_override;
     level.var_ee565b3f = &namespace_82497b8a::function_1998c3ac;
     level.var_bb2323e4 = &namespace_82497b8a::function_912c1a28;
-    level.var_d0ab70a2 = #"hash_67972fca091f2c13";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_mansion_weapons.csv";
     level._allow_melee_weapon_switching = 1;
     level.zombiemode_reusing_pack_a_punch = 1;
     level.custom_spawner_entry[#"crawl"] = &zm_spawner::function_45bb11e4;

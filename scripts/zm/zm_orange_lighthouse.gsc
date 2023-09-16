@@ -246,7 +246,7 @@ function function_320f5fb3() {
         function_6a10478();
         wait(3);
         if (isdefined(level.var_9a8dee15)) {
-            level.var_9a8dee15 thread zm_orange_util::function_51b752a9(#"hash_52d22e25dd1ac29f");
+            level.var_9a8dee15 thread zm_orange_util::function_51b752a9(#"vox_power_switch_1_activate");
         }
         break;
     case 2:

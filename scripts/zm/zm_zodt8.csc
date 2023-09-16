@@ -75,7 +75,7 @@ function event_handler[level_init] main(eventstruct) {
     level.var_24cb6ae8 = findvolumedecalindexarray("cargo_hold_water_puddles");
     level.var_ec4c3b67 = findvolumedecalindexarray("engine_room_water_puddles");
     level.var_59d3631c = #"hash_129339f4a4da8ea2";
-    level.var_d0ab70a2 = #"hash_3180c9ba4da02927";
+    level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_zodt8_weapons.csv";
     zodt8_pap_quest::init();
     zodt8_sentinel::init();
     namespace_4a807bff::init();

@@ -154,7 +154,7 @@ function add_contract_slot(localclientnum, slot) {
             break;
         }
         root = root + "<unknown string>" + slot + "<unknown string>";
-        table = #"hash_14ee3b02a56347de";
+        table = #"gamedata/tables/mp/mp_contracttable.csv";
         num_rows = tablelookuprowcount(table);
         stat_write = "<unknown string>" + slot;
         next_cmd = "<unknown string>";
