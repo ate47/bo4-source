@@ -1,0 +1,5 @@
+exec gamedata/stats/zm/playerstats_reset.cfg
+
+statwriteddl PlayerStatsList CODPOINTS statValue 0
+statwriteddl PlayerStatsList RANKXP statValue 0
+statwriteddl PlayerStatsList RANK statValue 0

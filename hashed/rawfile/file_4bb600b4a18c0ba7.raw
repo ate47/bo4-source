@@ -1,0 +1,65 @@
+// Gameplay settings in here only.
+// No controller or keyboard bindings.
+// Nothing platform specific.
+
+
+// UI DEFAULTS
+set ui_mapname									""
+gametype									warzone_quad
+set cg_hudMapFriendlyHeight						19
+set cg_hudMapFriendlyWidth						19
+set cg_hudMapPlayerHeight						19
+set cg_hudMapPlayerWidth						19
+set waypointIconHeight							25
+set waypointIconWidth							25
+set waypointOffscreenPointerDistance			20
+reset cg_drawCrosshair
+reset cg_drawCrosshairNames
+
+// Minimap player icons
+set cg_hudMapPlayerHeight						19
+set cg_hudMapPlayerWidth						19
+set compassPlayerBackingWidth					0.1
+set compassPlayerBackingAlpha					0.4
+set compassFriendlyHeight						20
+set compassFriendlyWidth						18
+set compassFriendlyBackingWidth					0.1
+set compassFriendlyBackingAlpha					0.4
+
+// UI
+set cg_headIconMinScreenRadius					0.015
+
+// SHARED GAMETYPE DEFAULTS
+
+// gameplay
+set scr_disable_air_death_ragdoll				0
+set com_pauseSupported							0
+
+// hardpoints
+set scr_hardpoint_allowdogs						1
+
+// teams
+set scr_team_teamkillerplaylistbanquantum 		0
+set scr_team_teamkillerplaylistbanpenalty 		0
+
+// UI
+set ui_hud_hardcore								0
+set ui_hud_showobjicons 						1
+
+set scr_xpscalemp								1
+set scr_gunxpscalemp							1
+
+set scr_min_prestige 0
+
+// Max Clients
+set com_maxclients	18
+set party_maxplayers	18
+
+// Bots
+set bot_supported	1
+
+// Show perks on spawn
+set scr_showperksonspawn 1
+
+// remove equipment on player spawn
+set scr_deleteexplosivesonspawn 1

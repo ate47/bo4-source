@@ -1,0 +1,35 @@
+// Remove all debug output for demo playthroughs
+
+set r_developer 0
+set developer_script 0
+
+set com_statmon 0
+
+set debug_show_viewpos 0
+set cg_drawfps 0
+set cg_drawversion 0
+set cg_drawlagometer 0
+
+set loc_warnings 0
+set loc_warningsAsErrors 0
+
+set profile_show_loading 0
+set snd_touchStreamFilesOnLoad 0
+
+set r_showMissingLightGrid 0
+set r_clearColor 0 0 0 0
+set r_clearColor2 0 0 0 0
+
+set replay_time 0
+set replay_autosave 0
+
+set r_vsync 1
+set scr_health_debug 0
+
+set cg_onscreenErrors 0
+
+set cg_drawXCamInfo 0
+set ui_showList 0
+
+set cg_drawFramePerformanceWarnings 0
+set scr_ScriptErrorsAreFatal 0

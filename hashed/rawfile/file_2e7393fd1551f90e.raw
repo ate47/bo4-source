@@ -1,0 +1,5 @@
+exec gamedata/configs/common/default_statversion.cfg
+
+// Gamepad setup
+exec	gamedata/configs/common/thumbstick/default.cfg
+exec	gamedata/configs/common/buttons/default.cfg

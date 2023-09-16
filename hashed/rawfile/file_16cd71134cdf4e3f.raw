@@ -1,0 +1,2 @@
+// set our companion to the second entry in the cp_character_customization table (ruin) since slots 0 and 1 are the male/female player characters
+statWriteMode cp companion 2

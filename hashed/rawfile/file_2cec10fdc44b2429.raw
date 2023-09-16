@@ -1,0 +1,43 @@
+statwriteddl customMatchClassSetIndex 0
+setCustomMatchClassSetNameFromLocString 0 CLASS/SET1
+setCustomMatchClassSetNameFromLocString 1 CLASS/SET2
+setCustomMatchClassSetNameFromLocString 2 CLASS/SET3
+setCustomMatchClassSetNameFromLocString 3 CLASS/SET4
+setCustomMatchClassSetNameFromLocString 4 CLASS/SET5
+setCustomMatchClassSetNameFromLocString 5 CLASS/SET6
+setCustomMatchClassSetNameFromLocString 6 CLASS/SET7
+setCustomMatchClassSetNameFromLocString 7 CLASS/SET8
+setCustomMatchClassSetNameFromLocString 8 CLASS/SET9
+setCustomMatchClassSetNameFromLocString 9 CLASS/SET10
+copyToCustomMatchClassSet 0
+zeroCustomMatchClassSet 1
+zeroCustomMatchClassSet 2
+zeroCustomMatchClassSet 3
+zeroCustomMatchClassSet 4
+zeroCustomMatchClassSet 5
+zeroCustomMatchClassSet 6
+zeroCustomMatchClassSet 7
+zeroCustomMatchClassSet 8
+zeroCustomMatchClassSet 9
+
+statwriteddl leagueMatchClassSetIndex 0
+setLeagueMatchClassSetNameFromLocString 0 CLASS/SET1
+setLeagueMatchClassSetNameFromLocString 1 CLASS/SET2
+setLeagueMatchClassSetNameFromLocString 2 CLASS/SET3
+setLeagueMatchClassSetNameFromLocString 3 CLASS/SET4
+setLeagueMatchClassSetNameFromLocString 4 CLASS/SET5
+setLeagueMatchClassSetNameFromLocString 5 CLASS/SET6
+setLeagueMatchClassSetNameFromLocString 6 CLASS/SET7
+setLeagueMatchClassSetNameFromLocString 7 CLASS/SET8
+setLeagueMatchClassSetNameFromLocString 8 CLASS/SET9
+setLeagueMatchClassSetNameFromLocString 9 CLASS/SET10
+copyToLeagueMatchClassSet 0
+zeroLeagueMatchClassSet 1
+zeroLeagueMatchClassSet 2
+zeroLeagueMatchClassSet 3
+zeroLeagueMatchClassSet 4
+zeroLeagueMatchClassSet 5
+zeroLeagueMatchClassSet 6
+zeroLeagueMatchClassSet 7
+zeroLeagueMatchClassSet 8
+zeroLeagueMatchClassSet 9

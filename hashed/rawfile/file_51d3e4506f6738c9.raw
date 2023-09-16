@@ -1,0 +1,29 @@
+# The file is broken into the CPU section followed by the GPU section.,,
+"# The first column of the GPU section must be ""gpu"".  This triggers the start of the GPU section.",,
+# Each subsequent column header in both sections is a dvar name.,,
+"# For GPU names, spaces are treated as wildcards that match any sequence of 0 or more non-numeric characters.  You can use * to match 0 or more of any character, or ? to match any single character.",,
+,,
+,,
+,,
+cpu name,r_max_worker_threads,
+Intel(R) Core(TM) i3*,1,
+AMD Phenom(tm) 8*,1,
+*,4,
+,,
+,,
+,,
+gpu,r_lowResolutionMode,r_OIT,r_OIT_MaxEntries,r_texFilterQuality,r_lightingSunShadowDisableDynamicDraw,r_ssaoEnable,r_aaTechnique,r_volumetric_lighting_enabled
+,,
+GeForce GTX T*,0,1,"16",2,0,1,"Filmic SMAA T2x",1
+GeForce GTX 9*,0,1,"8",2,0,1,"Filmic SMAA T2x",1
+GeForce GTX 7*,0,1,"8",2,0,1,"Filmic SMAA T2x",1
+GeForce GTX 6*,0,1,"8",2,0,1,"Filmic SMAA T2x",1
+GeForce GTX 5*,1,1,"8",1,0,1,"FXAA",0
+GeForce GTX 4*,1,0,"8",0,1,0,"FXAA",0
+,,
+AMD Radeon R9*,0,1,"8",2,0,1,"Filmic SMAA T2x",1
+Radeon HD 7*,0,1,"8",2,0,1,"FXAA",1
+Radeon HD 6*,1,0,"8",1,1,0,"FXAA",0
+Radeon HD 5*,1,0,"8",0,1,0,"FXAA",0
+,,
+*,1,0,"8",0,1,0,"FXAA",0

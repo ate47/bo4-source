@@ -1,0 +1,25 @@
+// check to see if they have been banned from prestiging
+CheckPrestigeFeatureBan
+
+awardAchievement MP_MISC_2 // award achievement: Welcome to the Penthouse - Prestige once in multiplayer Matchmaking. 50 points  
+
+// see if you have purchased the prestige lb
+set oldprestigelb 0
+
+exec gamedata/configs/mp/mp_reset_loadouts_online.cfg
+exec gamedata/configs/mp/mp_reset_showcase_weapons.cfg
+exec gamedata/configs/mp/mp_reset_class_sets.cfg
+
+// Reset all of the stats
+// Mark all of the items, attachments and options as unpurchased
+PrestigeStatsReset 1
+
+
+// xp
+statWriteMode mp PlayerStatsList rankxp statValue 0
+statWriteMode mp PlayerStatsList rank statValue 0
+
+prestigerequest
+
+updategamerprofile
+uploadstats 1

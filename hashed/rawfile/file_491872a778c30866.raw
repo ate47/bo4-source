@@ -1,0 +1,7 @@
+exec gamedata/stats/mp/playerstats_reset.cfg
+
+exec gamedata/configs/mp/reset_behavior_tracker.cfg
+
+statwriteddl PlayerStatsList CODPOINTS statValue 0
+statwriteddl PlayerStatsList RANKXP statValue 0
+statwriteddl PlayerStatsList RANK statValue 0

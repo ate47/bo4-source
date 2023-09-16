@@ -1,0 +1,6 @@
+
+// called once when advancing past the press start screen only if there is no mode selected
+
+gametype_setting	maxAllowedSkills					6
+gametype_setting	maxAllowedPrimaryAttachments		5
+gametype_setting	maxAllowedSecondaryAttachments		3

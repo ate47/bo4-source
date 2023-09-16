@@ -1,0 +1,15 @@
+// check to see if they have been banned from prestiging
+CheckPrestigeFeatureBan
+
+exec gamedata/configs/zm/zm_reset_loadouts_online.cfg
+
+// Reset all of the stats
+// Mark all of the items, attachments and options as unpurchased
+PrestigeStatsReset 0
+
+// xp
+statwritemode zm PlayerStatsList rankxp statValue 0
+statwritemode zm PlayerStatsList rank statValue 0
+
+updategamerprofile
+uploadstats 0

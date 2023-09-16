@@ -1,0 +1,9 @@
+// 
+// This file will get run after default_xboxlive.cfg
+// It is for setting any dvars for a private game (privatematch, combat training, theater )
+//
+
+set ui_allow_teamchange 1
+set bot_difficulty 1
+set bot_enemies 0
+set bot_friends 0

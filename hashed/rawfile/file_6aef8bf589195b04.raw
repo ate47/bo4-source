@@ -1,0 +1,35 @@
+set ui_allow_teamchange				1
+set ui_options_open 					0
+
+set party_maxlocalplayers					4
+reset party_allowguests
+reset party_autoteams
+
+// UI
+set cg_hudlegacysplitscreenscale	2
+set cg_hudsplitscreencompassscale	1.5
+set cg_hudsplitscreenstancescale	2
+set waypointOffscreenScaleSmallest 	0.65
+set cg_headIconMinScreenRadius		0.03
+set cg_hudMapFriendlyHeight			15
+set cg_hudMapFriendlyWidth			15
+set cg_hudMapPlayerHeight			20
+set cg_hudMapPlayerWidth			20
+set cg_hudGrenadeIconMaxRangeFrag	250
+set cg_weaponHintsCoD1Style			0
+set com_gameMsgWindow1LineCount		5
+
+// SHARED GAMETYPE DEFAULTS
+
+// zombie dogs
+set scr_attack_dog_time_zm				45
+set scr_attack_dog_kills_zm				25
+set scr_attack_dog_health_zm			100
+set scr_attack_dog_count_zm				3
+set scr_attack_dog_max_at_once_zm		3
+
+// UI
+set scr_hardcore						0
+set ui_hud_hardcore						0
+set ui_hud_obituaries					1
+set ui_hud_showobjicons 				1

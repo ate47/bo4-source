@@ -1,0 +1,21 @@
+statwriteddl publicMatchClassSetIndex 0
+setPublicMatchClassSetNameFromLocString 0 CLASS/SET1
+setPublicMatchClassSetNameFromLocString 1 CLASS/SET2
+setPublicMatchClassSetNameFromLocString 2 CLASS/SET3
+setPublicMatchClassSetNameFromLocString 3 CLASS/SET4
+setPublicMatchClassSetNameFromLocString 4 CLASS/SET5
+setPublicMatchClassSetNameFromLocString 5 CLASS/SET6
+setPublicMatchClassSetNameFromLocString 6 CLASS/SET7
+setPublicMatchClassSetNameFromLocString 7 CLASS/SET8
+setPublicMatchClassSetNameFromLocString 8 CLASS/SET9
+setPublicMatchClassSetNameFromLocString 9 CLASS/SET10
+copyToPublicMatchClassSet 0
+zeroPublicMatchClassSet 1
+zeroPublicMatchClassSet 2
+zeroPublicMatchClassSet 3
+zeroPublicMatchClassSet 4
+zeroPublicMatchClassSet 5
+zeroPublicMatchClassSet 6
+zeroPublicMatchClassSet 7
+zeroPublicMatchClassSet 8
+zeroPublicMatchClassSet 9

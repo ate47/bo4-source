@@ -1,0 +1,166 @@
+// Hello Dave, Would you like to play a game?
+unbindall
+
+// Base Movement
+bind w	"+forward"
+bind s	"+back"
+bind a	"+moveleft"
+bind d	"+moveright"
+bind h 	"autorun"
+
+// Stances
+bind LCTRL 	"toggleprone"
+bind c		"+stance"
+bind SPACE	"+gostand"
+
+// Weapon Controls
+bind LSHIFT			"+breath_sprint"
+bind MOUSE1			"+attack"
+bind MOUSE2			"+speed_throw" // Hold ADS
+bind v				"+melee"
+bind MOUSE3			"+melee"
+bind MWHEELUP		"weapnext"
+bind MWHEELDOWN		"weapprev"
+bind r				"+reload"
+bind 1				"weapnext"
+bind 2				"weapprev"
+bind 7				"flourish" // Weapon Inspect
+
+// Specialist Abilities
+bind e				"+frag" // Equipment
+bind MOUSE4			"+frag"
+bind x				"+smoke" // Health Kit
+bind MOUSE5			"+smoke"
+bind q				"+weapoffhandspecial" // Specialist Ability
+
+// Interactions
+bind f			"+activate"
+bind TAB		"+scores"		// MP
+bind TAB    	"+inventory"	// WZ
+bind TAB		"+inventoryzm"	// ZM
+bind CAPSLOCK 	"+map"			// MP & WZ
+bind CAPSLOCK	"+scoreszm"		// ZM
+bind BACKSPACE  "+scoreswz"     // WZ
+bind m			"togglemap"		// MP & WZ
+
+// Scorestreaks
+bind 3 		"scorestreak1"
+bind 4 		"scorestreak2"
+bind 5 		"scorestreak3"
+bind 6 		"scorestreak4"
+
+// Communication Wheels & Gestures
+bind LALT	"+calloutwheel"
+bind /		"quickcallout"
+bind t		"quickspray"
+bind y		"+spraygesturewheel"
+
+// Zombies
+bind 3 		"usebgb1"
+bind 4 		"usebgb2"
+bind 5 		"usebgb3"
+bind 6 		"usebgb4"
+
+// Warzone
+bind g		"+pickup"
+bind 3		"quickcycle_health"
+bind 4		"quickconsume2"
+bind 5		"quickcycle_equipment"
+bind z 		"+armorrepair"
+bind q		"quickconsume1"
+
+
+// Chat
+bind b			"+talk"
+bind ENTER 		"chatmodelast"
+bind KP_ENTER 	"chatmodelast"
+
+// Vehicle
+bind MOUSE3			"+vehiclealtcontrol"
+bind LSHIFT			"+vehicleboost"
+bind c				"+vehiclemovedown"
+bind SPACE			"+vehiclemoveup"
+bind v				"+handbrake"
+bind n				"+switchseat"
+bind KP_END			"+vehicleseat1"
+bind KP_DOWNARROW	"+vehicleseat2"
+bind KP_PGDN		"+vehicleseat3"
+bind KP_LEFTARROW	"+vehicleseat4"
+bind KP_5			"+vehicleseat5"
+bind g				"+vehiclehorn"
+
+// Mouse movement dvars
+set sensitivity		"5"
+set cl_freelook		"1"
+set ui_mousePitch	"0"
+set m_filter		"0"
+set cl_mouseAccel	"0"
+
+// Menus
+bind PAUSE			"pause"
+bind ESCAPE			"togglemenu"
+bind `				"toggleconsole"
+bind ~				"toggleconsole"
+bind F9				"debugui_devgui"
+bind PRINTSCREEN 	"screenshotJPEG"
+
+// Gamepad settings
+set gpad_enabled			"1"
+bind BUTTON_START			"togglemenu"
+bind BUTTON_BACK			"togglescores"
+
+// Loadouts shortcuts
+bind KP_END			"chooseclass_1"
+bind KP_DOWNARROW	"chooseclass_2"
+bind KP_PGDN		"chooseclass_3"
+bind KP_LEFTARROW	"chooseclass_4"
+bind KP_5			"chooseclass_5"
+bind KP_RIGHTARROW	"chooseclass_6"
+bind KP_HOME		"chooseclass_7"
+bind KP_UPARROW		"chooseclass_8"
+bind KP_PGUP		"chooseclass_9"
+bind KP_INS			"chooseclass_10"
+bind KP_DEL			"chooseclass_11"
+bind KP_PLUS		"chooseclass_12"
+
+// UI Shortcuts
+bind F1		"ui_openfriends"
+bind F2		"ui_opensocial"
+bind o 		"ui_opensocial"
+bind F3		"ui_opensettings"
+bind F4		"ui_openplayeraccount"
+bind F7		"ui_acceptinvite"
+bind F8		"ui_declineinvite"
+bind F10 	"ui_muteall"
+bind f	    "ui_contextual_1"
+bind g   	"ui_contextual_2"
+bind v		"ui_contextual_3"
+
+bind 3		"ui_layertop"
+bind 4		"ui_layerbottom"
+bind t		"ui_toggleoutline"
+bind TAB	"ui_open"
+bind 1		"ui_loweropacity"
+bind 2		"ui_raiseopacity"
+bind x		"ui_cutlayer"
+bind c		"ui_copylayer"
+bind n		"ui_newlayer"
+bind LSHIFT	"ui_link"
+bind z		"ui_group"
+
+bind UPARROW	"ui_navup"
+bind w	        "ui_navup"
+bind DOWNARROW	"ui_navdown"
+bind s	        "ui_navdown"
+bind LEFTARROW	"ui_navleft"
+bind a	        "ui_navleft"
+bind RIGHTARROW	"ui_navright"
+bind d	        "ui_navright"
+bind q 			"ui_prevtab"
+bind MOUSE4		"ui_prevtab"
+bind e 			"ui_nexttab"
+bind MOUSE5		"ui_nexttab"
+bind SPACE      "ui_confirm"
+
+bind R			"ui_remove"
+bind DEL		"ui_remove"

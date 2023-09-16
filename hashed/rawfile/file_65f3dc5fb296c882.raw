@@ -1,0 +1,29 @@
+ffotdversion 1
+
+exec gamedata/configs/common/test_ffotd.cfg
+
+//////////////////////////////////////////////////////////////////////////////////////
+// TU specific - begin
+//////////////////////////////////////////////////////////////////////////////////////
+
+// begin execlua
+
+execlua ui ui/uieditor/widgets/ItemShop/Reserves/ReservesBribeStackCarouselTall.lua		// 3421195 by jtomlinson (T8-228355,T8-228378,T8-228364)
+execlua ui ui/uieditor/widgets/ItemShop/WeaponBribePreview.lua
+execlua ui ui/uieditor/widgets/ItemShop/ItemShopWeaponBribePreviewWidget.lua
+
+execlua ui ui/uieditor/widgets/ItemShop/BlackJacksShopFrameSunset.lua					// 3421207 by jtomlinson (T8-228356), 3422296 by jtomlinson (T8-228625)
+
+execlua ui ui/uieditor/menus/ItemShop/PurchaseBribeStack.lua								// 3422296 by jtomlinson (T8-228625)
+execlua ui ui/uieditor/menus/ItemShop/QuarterMasterMenu.lua								// also 3422301 by jtomlinson (T8-228624)
+execlua ui ui/uieditor/widgets/ItemShop/Reserves/ReservesBribeStack.lua
+execlua ui ui/uieditor/widgets/ItemShop/Reserves/ReservesBribeStackFreeBanner.lua
+execlua ui ui/uieditor/widgets/ItemShop/Reserves/ReservesBribeStackTall.lua
+
+// end execlua
+
+//////////////////////////////////////////////////////////////////////////////////////
+// TU specific - end
+//////////////////////////////////////////////////////////////////////////////////////
+
+lobby_reload

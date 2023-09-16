@@ -1,0 +1,44 @@
+reset waypointOffscreenScaleSmallest 
+reset compassObjectiveHeight
+reset compassObjectiveWidth
+reset cg_drawCrosshair
+reset cg_drawCrosshairNames
+reset ragdoll_explode_force
+reset ragdoll_explode_upbias
+reset jump_height
+reset jump_slowdownEnable
+reset bg_fallDamageMinHeight
+reset bg_fallDamageMaxHeight
+reset com_gameMsgWindow1LineCount
+
+reset party_maxlocalplayers		
+reset party_allowguests
+reset party_autoteams
+
+set ui_allow_teamchange				1
+set ui_options_open 					0
+
+
+// UI
+set cg_headIconMinScreenRadius		0.025
+set cg_hudMapFriendlyHeight			15
+set cg_hudMapFriendlyWidth			15
+set cg_hudMapPlayerHeight			20
+set cg_hudMapPlayerWidth			20
+set cg_hudGrenadeIconMaxRangeFrag	250
+set cg_weaponHintsCoD1Style			1
+
+// SHARED GAMETYPE DEFAULTS
+
+// zombie dogs
+set scr_attack_dog_time_zm				45
+set scr_attack_dog_kills_zm				25
+set scr_attack_dog_health_zm			100000
+set scr_attack_dog_count_zm				3
+set scr_attack_dog_max_at_once_zm		3
+
+// UI
+set scr_hardcore						0
+set ui_hud_hardcore						0
+set ui_hud_obituaries					1
+set ui_hud_showobjicons 				1

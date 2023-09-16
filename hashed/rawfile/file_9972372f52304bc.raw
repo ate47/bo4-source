@@ -1,0 +1,139 @@
+// Lefty
+unbindall
+
+// Base Movement
+bind i	"+forward"
+bind k	"+back"
+bind j	"+moveleft"
+bind l	"+moveright"
+bind f 	"autorun"
+
+// Stances
+bind m		"toggleprone"
+bind n		"+stance"
+bind SPACE	"+gostand"
+
+// Weapon Controls
+bind /				"+breath_sprint"
+bind MOUSE2			"+attack"
+bind MOUSE1			"+speed_throw" //Hold ADS
+bind b				"+melee"
+bind MOUSE3			"+melee"
+bind MWHEELUP		"weapnext"
+bind MWHEELDOWN		"weapprev"
+bind y				"+reload"
+bind 9				"weapnext"
+bind 0				"weapprev"
+bind 4				"flourish" // Weapon Inspect
+
+//Specialist Abilities
+bind u			"+frag" // Equipment
+bind MOUSE4		"+frag"
+bind ,			"+smoke" // Health Kit
+bind MOUSE5		"+smoke"
+bind o			"+weapoffhandspecial" // Special Ability
+
+// Interaction
+bind h		"+activate"
+bind \		"+scores"
+bind \  	"+inventory"
+bind \  	"+inventoryzm"
+bind p		"+map"			// MP & WZ
+bind p		"+scoreszm"		// ZM
+bind c		"togglemap"
+
+// Scorestreaks
+bind 8	"scorestreak1"
+bind 7	"scorestreak2"
+bind 6	"scorestreak3"
+bind 5	"scorestreak4"
+
+// Communication Wheels & Gestures
+bind RALT	"+calloutwheel"
+bind t		"quickspray"
+bind r		"+spraygesturewheel"
+
+// Zombies
+bind 8 		"usebgb1"
+bind 7 		"usebgb2"
+bind 6 		"usebgb3"
+bind 5 		"usebgb4"
+
+// Blackout
+bind g 		"+pickup"
+bind 7		"quickcycle_health"
+bind 8		"quickcycle_equipment"
+bind o 		"+armorrepair"
+
+// Chat
+bind v			"+talk"
+bind ENTER 		"chatmodelast"
+bind KP_ENTER 	"chatmodelast"
+
+// Vehicle
+bind MOUSE3			"+vehiclealtcontrol"
+bind /				"+vehicleboost"
+bind n				"+vehiclemovedown"
+bind SPACE			"+vehiclemoveup"
+bind .				"+switchseat"
+bind b				"+handbrake"
+bind KP_END			"+vehicleseat1"
+bind KP_DOWNARROW	"+vehicleseat2"
+bind KP_PGDN		"+vehicleseat3"
+bind KP_LEFTARROW	"+vehicleseat4"
+bind KP_5			"+vehicleseat5"
+bind g				"+vehiclehorn"
+
+// Mouse movement dvars
+set sensitivity		"5"
+set cl_freelook		"1"
+set ui_mousePitch	"0"
+set m_filter		"0"
+set cl_mouseAccel	"0"
+
+// Menus
+bind PAUSE			"pause"
+bind ESCAPE			"togglemenu"
+bind ~				"toggleconsole"
+bind `				"toggleconsole"
+bind F9				"devgui"
+bind PRINTSCREEN 	"screenshotJPEG"
+
+// Gamepad settings
+set gpad_enabled			"1"
+bind BUTTON_START			"togglemenu"
+bind BUTTON_BACK			"togglescores"
+
+// Loadouts shortcuts
+bind KP_END			"chooseclass_1"
+bind KP_DOWNARROW	"chooseclass_2"
+bind KP_PGDN		"chooseclass_3"
+bind KP_LEFTARROW	"chooseclass_4"
+bind KP_5			"chooseclass_5"
+bind KP_RIGHTARROW	"chooseclass_6"
+
+// UI Shortcuts
+bind F1 "ui_openfriends"
+bind F2 "ui_opensocial"
+bind F3 "ui_opensettings"
+bind F4 "ui_openplayeraccount"
+bind F7	"ui_acceptinvite"
+bind F8	"ui_declineinvite"
+bind F10 "ui_muteall"
+
+bind UPARROW	"ui_navup"
+bind i	        "ui_navup"
+bind DOWNARROW	"ui_navdown"
+bind k	        "ui_navdown"
+bind LEFTARROW	"ui_navleft"
+bind j	        "ui_navleft"
+bind RIGHTARROW	"ui_navright"
+bind l	        "ui_navright"
+bind u 			"ui_prevtab"
+bind MOUSE4		"ui_prevtab"
+bind o 			"ui_nexttab"
+bind MOUSE5		"ui_nexttab"
+bind SPACE      "ui_confirm"
+
+bind y			"ui_remove"
+bind DEL		"ui_remove"
