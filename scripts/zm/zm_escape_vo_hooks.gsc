@@ -191,7 +191,7 @@ function private function_f1da2bd5() {
 // Size: 0x5a
 function function_480ec8c(player) {
     if (!(isdefined(player.var_b5fbfab4) && player.var_b5fbfab4)) {
-        self sethintstring(#"hash_0");
+        self sethintstring(#"");
         return 1;
     } else {
         return 0;

@@ -125,7 +125,7 @@ class cluielemtext : cluielem {
         [[ self ]]->set_data(localclientnum, "red", 0);
         [[ self ]]->set_data(localclientnum, "green", 0);
         [[ self ]]->set_data(localclientnum, "blue", 0);
-        [[ self ]]->set_data(localclientnum, "text", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "text", #"");
         [[ self ]]->set_data(localclientnum, "horizontal_alignment", 0);
     }
 

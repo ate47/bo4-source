@@ -1641,7 +1641,7 @@ function function_b8839207(e_door) {
                     e_door sethintstring(#"hash_7960cdc72d34a2db");
                 }
             } else {
-                e_door sethintstring(#"hash_0");
+                e_door sethintstring(#"");
             }
             waitframe(1);
         }

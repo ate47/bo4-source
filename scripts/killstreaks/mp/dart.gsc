@@ -46,7 +46,7 @@ function __init__() {
     killstreaks::register_alt_weapon("dart", getweapon(#"dart_turret"));
     clientfield::register("toplayer", "dart_update_ammo", 1, 2, "int");
     clientfield::register("toplayer", "fog_bank_3", 1, 1, "int");
-    remote_weapons::registerremoteweapon("dart", #"hash_0", &startdartremotecontrol, &enddartremotecontrol, 1);
+    remote_weapons::registerremoteweapon("dart", #"", &startdartremotecontrol, &enddartremotecontrol, 1);
     visionset_mgr::register_info("visionset", "dart_visionset", 1, 90, 16, 1, &visionset_mgr::ramp_in_out_thread_per_player_death_shutdown, 0);
 }
 

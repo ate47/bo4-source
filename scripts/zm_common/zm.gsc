@@ -1408,7 +1408,7 @@ function actor_killed_override(einflictor, attacker, idamage, smeansofdeath, wea
         perks = [];
         killstreaks = [];
         rounds = level.round_number;
-        var_65e76577 = #"hash_0";
+        var_65e76577 = #"";
         if (isdefined(self.archetype) && (self.archetype == #"tiger" || self.archetype == #"brutus" || self.archetype == #"zombie_dog" || self.archetype == #"catalyst" || self.archetype == #"stoker" || self.archetype == #"blight_father")) {
             var_65e76577 = #"hash_1553fcea4f6a00e";
         } else {

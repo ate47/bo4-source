@@ -238,7 +238,7 @@ function function_ea6f56ee() {
         if (!zm_utility::can_use(player) || level flag::get(#"hash_1462d174d4023e58")) {
             continue;
         }
-        var_21839a96 = #"hash_0";
+        var_21839a96 = #"";
         var_57ec466d = #"zmb_sq_souls_release";
         if (level flag::get("flag_player_grabbed_werewolf_material") && !level flag::get("flag_player_grabbed_werewolf_prima")) {
             var_21839a96 = #"hash_5dba850c6ed3ebee";

@@ -347,7 +347,7 @@ function function_bb0565d0(var_de58f286) {
         weapon_group = function_e2703c27(weapon);
         if (isdefined(level.var_f35699bc[weapon.name])) {
             weapon_group_anim = level.var_f35699bc[weapon.name];
-        } else if (weapon_group == #"hash_0") {
+        } else if (weapon_group == #"") {
             weapon_group_anim = "brawler";
             dualwield = getweapon(#"smg_handling_t8_dw");
             if (weapon.name == dualwield.name) {

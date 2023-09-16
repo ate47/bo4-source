@@ -926,12 +926,12 @@ function private function_ad7ad6ce(trigger_struct) {
         }
     }
     if (var_91d3170d == 1 || var_91d3170d == 0 && usetrigger.itemstruct.hidetime === -1) {
-        usetrigger sethintstring(#"hash_0");
+        usetrigger sethintstring(#"");
         activator clientfield::set_player_uimodel("hudItems.multiItemPickup.status", 2);
         activator thread function_eb900758(item_world_util::function_31f5aa51(usetrigger.itemstruct));
         function_a54d07e6(usetrigger.itemstruct, activator);
     } else if (var_91d3170d == 2) {
-        usetrigger sethintstring(#"hash_0");
+        usetrigger sethintstring(#"");
     } else {
         item = usetrigger.itemstruct;
         if (isdefined(item) && !isentity(item) && isdefined(item.id)) {
@@ -1259,7 +1259,7 @@ function private function_7c84312d(origin, angles) {
     if (self inlaststand()) {
         var_9b882d22 = undefined;
     }
-    var_caafaa25 = #"hash_0";
+    var_caafaa25 = #"";
     if (isdefined(var_9b882d22) && !self isinvehicle()) {
         self.groupitems = [];
         hasbackpack = self item_inventory::has_backpack();
@@ -1286,7 +1286,7 @@ function private function_7c84312d(origin, angles) {
         }
         if (stashitem) {
             usetrigger setcursorhint("HINT_NOICON");
-            usetrigger sethintstring(#"hash_0");
+            usetrigger sethintstring(#"");
             usetrigger function_89fca53b(1);
             usetrigger function_49462027(0);
             stash = item_world_util::function_31f5aa51(var_9b882d22);
@@ -1313,7 +1313,7 @@ function private function_7c84312d(origin, angles) {
             if (isdefined(var_a6762160.weapon) && var_a6762160.weapon != level.weaponnone) {
                 if (var_a6762160.itemtype != #"ammo") {
                     usetrigger setcursorhint("HINT_WEAPON_3D", namespace_a0d533d1::function_2b83d3ff(var_9b882d22));
-                    var_caafaa25 = #"hash_0";
+                    var_caafaa25 = #"";
                     if (isdefined(var_a6762160.weapon)) {
                         var_caafaa25 = var_a6762160.weapon.displayname;
                     } else {
@@ -1322,12 +1322,12 @@ function private function_7c84312d(origin, angles) {
                     usetrigger sethintstring(var_caafaa25);
                 } else {
                     usetrigger setcursorhint("HINT_3D");
-                    var_caafaa25 = isdefined(var_a6762160.hintstring) ? var_a6762160.hintstring : #"hash_0";
+                    var_caafaa25 = isdefined(var_a6762160.hintstring) ? var_a6762160.hintstring : #"";
                     usetrigger sethintstring(var_caafaa25);
                 }
             } else {
                 usetrigger setcursorhint("HINT_3D");
-                var_caafaa25 = isdefined(var_a6762160.hintstring) ? var_a6762160.hintstring : #"hash_0";
+                var_caafaa25 = isdefined(var_a6762160.hintstring) ? var_a6762160.hintstring : #"";
                 usetrigger sethintstring(var_caafaa25);
             }
         }
@@ -1386,7 +1386,7 @@ function private function_7c84312d(origin, angles) {
         angles = self getplayerangles();
         self.var_bf3cabc9 = item_world_util::function_6af455de(0, eyepos, angles);
         hintstring = item_world_util::function_c62ad9a7(self.var_bf3cabc9);
-        if (hintstring != #"hash_0") {
+        if (hintstring != #"") {
             var_caafaa25 = hintstring;
         }
     }

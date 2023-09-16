@@ -265,7 +265,7 @@ function function_668e3f89(e_player) {
                 self sethintstring(#"hash_1deb745365a6cfdd");
                 break;
             default:
-                self sethintstring(#"hash_0");
+                self sethintstring(#"");
                 break;
             }
         }
@@ -280,11 +280,11 @@ function function_668e3f89(e_player) {
 function function_afab6169(e_player) {
     b_result = 0;
     if (!(isdefined(e_player zombie_utility::is_player_valid(e_player)) && e_player zombie_utility::is_player_valid(e_player))) {
-        self.hint_string = #"hash_0";
+        self.hint_string = #"";
     } else if (isdefined(self.stub.b_used) && self.stub.b_used) {
-        self.hint_string = #"hash_0";
+        self.hint_string = #"";
     } else if (level flag::get("pap_quest_complete")) {
-        self.hint_string = #"hash_0";
+        self.hint_string = #"";
     } else {
         if (function_8b1a219a()) {
             self.hint_string = #"hash_36ba40b9e876f572";

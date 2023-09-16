@@ -430,7 +430,7 @@ function function_bfb15d08() {
 // Size: 0x68
 function function_130c65ff() {
     zm_ui_inventory::function_7df6bb60("flinger_gear_box_1", 2);
-    level.pablo_npc.var_cb3ed98f[4].var_e7b75754 = #"hash_0";
+    level.pablo_npc.var_cb3ed98f[4].var_e7b75754 = #"";
     level notify(#"hash_3cbe96c6150e208c");
 }
 
@@ -553,7 +553,7 @@ function function_b37bdeb4() {
 // Size: 0x68
 function function_7619040c() {
     zm_ui_inventory::function_7df6bb60("flinger_gear_box_2", 2);
-    level.pablo_npc.var_cb3ed98f[5].var_e7b75754 = #"hash_0";
+    level.pablo_npc.var_cb3ed98f[5].var_e7b75754 = #"";
     level notify(#"hash_3b6b392c9f59fe4b");
 }
 

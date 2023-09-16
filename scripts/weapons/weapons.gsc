@@ -1445,12 +1445,12 @@ function play_concussion_sound(duration) {
     concussionsound.origin = self.origin;
     concussionsound linkto(self);
     concussionsound thread delete_ent_on_owner_death(self);
-    concussionsound playsound(#"hash_0");
-    concussionsound playloopsound(#"hash_0");
+    concussionsound playsound(#"");
+    concussionsound playloopsound(#"");
     if (duration > 0.5) {
         wait(duration - 0.5);
     }
-    concussionsound playsound(#"hash_0");
+    concussionsound playsound(#"");
     concussionsound stoploopsound(0.5);
     wait(0.5);
     concussionsound notify(#"delete");

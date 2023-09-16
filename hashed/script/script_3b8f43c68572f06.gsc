@@ -61,7 +61,7 @@ class crevive_hud : cluielem {
     // Size: 0x84
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "text", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "text", #"");
         [[ self ]]->set_data(localclientnum, "clientNum", 0);
         [[ self ]]->set_data(localclientnum, "fadeTime", 0);
     }

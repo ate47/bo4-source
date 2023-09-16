@@ -126,14 +126,14 @@ function pernell_archive_step1_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         level.var_2cbf5e38 = 0;
         s_server_part_pickup = struct::get("server_part_pickup");
-        s_server_part_pickup zm_unitrigger::create(#"hash_0", 64, &function_8703c1fe);
+        s_server_part_pickup zm_unitrigger::create(#"", 64, &function_8703c1fe);
         level flag::wait_till(#"hash_4c30d0428f1d4060");
         var_185199a1 = getent(s_server_part_pickup.target, "targetname");
         var_185199a1 playsound(#"hash_18f957b8000dd0c6");
         var_185199a1 delete();
         zm_unitrigger::unregister_unitrigger(s_server_part_pickup.s_unitrigger);
         s_server_part_pickup struct::delete();
-        level.var_595db1e1 zm_unitrigger::create(#"hash_0", 64, &function_e4fcfb0a);
+        level.var_595db1e1 zm_unitrigger::create(#"", 64, &function_e4fcfb0a);
         level flag::wait_till(#"hash_5516784173c2ee27");
         playsoundatposition(#"hash_359664e44a2bb635", level.var_595db1e1.origin);
         level clientfield::set("" + #"hash_3284b0cf34bfe44e", 0);

@@ -227,9 +227,9 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
             player = level.players[i];
             playerteam = player.pers[#"team"];
             if (isdefined(playerteam)) {
-                if (playerteam == team && isdefined(printfriendly) && printfriendly != #"hash_0") {
+                if (playerteam == team && isdefined(printfriendly) && printfriendly != #"") {
                     player iprintln(printfriendly, printarg);
-                } else if (isdefined(printenemy) && printenemy != #"hash_0") {
+                } else if (isdefined(printenemy) && printenemy != #"") {
                     if (isdefined(enemyteam) && playerteam == enemyteam) {
                         player iprintln(printenemy, printarg);
                     } else if (!isdefined(enemyteam) && playerteam != team) {
@@ -254,12 +254,12 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
                 playerteam = player.pers[#"team"];
                 if (isdefined(playerteam)) {
                     if (playerteam == team) {
-                        if (isdefined(printfriendly) && printfriendly != #"hash_0") {
+                        if (isdefined(printfriendly) && printfriendly != #"") {
                             player iprintln(printfriendly, printarg);
                         }
                         player playlocalsound(soundfriendly);
                     } else if (isdefined(enemyteam) && playerteam == enemyteam || !isdefined(enemyteam) && playerteam != team) {
-                        if (isdefined(printenemy) && printenemy != #"hash_0") {
+                        if (isdefined(printenemy) && printenemy != #"") {
                             player iprintln(printenemy, printarg);
                         }
                         player playlocalsound(soundenemy);
@@ -272,11 +272,11 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
                 playerteam = player.pers[#"team"];
                 if (isdefined(playerteam)) {
                     if (playerteam == team) {
-                        if (isdefined(printfriendly) && printfriendly != #"hash_0") {
+                        if (isdefined(printfriendly) && printfriendly != #"") {
                             player iprintln(printfriendly, printarg);
                         }
                         player playlocalsound(soundfriendly);
-                    } else if (isdefined(printenemy) && printenemy != #"hash_0") {
+                    } else if (isdefined(printenemy) && printenemy != #"") {
                         if (isdefined(enemyteam) && playerteam == enemyteam) {
                             player iprintln(printenemy, printarg);
                         } else if (!isdefined(enemyteam) && playerteam != team) {

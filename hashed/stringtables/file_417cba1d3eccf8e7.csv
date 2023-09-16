@@ -1,10 +1,10 @@
-#weapon_bribe,50,500580,623778873,1,false,#hash_0,,0,false,false,0,weapon_bribe,,false,1,0,0,0,false
-#no_dupe_crate,51,500660,20,200,false,#hash_0,500163,6,false,false,0,no_dupe_crate,,false,2,0,0,0,false
-#functional_dlc_bribe,52,500774,672867095,1,false,#hash_0,,0,false,false,101,functional_dlc_bribe,,false,3,0,0,0,false
-#case,53,500862,500163,1,false,#hash_0,,0,false,true,0,case,,false,4,0,0,0,false
-#crate,54,500578,20,200,false,#hash_0,500161,1,false,false,0,crate,,false,5,0,0,0,false
-#promo_no_dupe_crate,55,500510,20,400,false,#hash_0,500165,1,false,false,0,promo_no_dupe_crate,,false,6,0,0,0,false
-#half_off_crate,56,500533,20,100,false,#hash_0,,0,false,false,0,half_off_crate,,false,7,0,0,0,false
+#weapon_bribe,50,500580,623778873,1,false,#,,0,false,false,0,weapon_bribe,,false,1,0,0,0,false
+#no_dupe_crate,51,500660,20,200,false,#,500163,6,false,false,0,no_dupe_crate,,false,2,0,0,0,false
+#functional_dlc_bribe,52,500774,672867095,1,false,#,,0,false,false,101,functional_dlc_bribe,,false,3,0,0,0,false
+#case,53,500862,500163,1,false,#,,0,false,true,0,case,,false,4,0,0,0,false
+#crate,54,500578,20,200,false,#,500161,1,false,false,0,crate,,false,5,0,0,0,false
+#promo_no_dupe_crate,55,500510,20,400,false,#,500165,1,false,false,0,promo_no_dupe_crate,,false,6,0,0,0,false
+#half_off_crate,56,500533,20,100,false,#,,0,false,false,0,half_off_crate,,false,7,0,0,0,false
 #ar_peacekeeper_t8_bribe,57,900252193,20,2400,false,#hash_687bfa2dbf4327ef,500163,50,false,false,0,ar_peacekeeper_t8_bribe,280174596,true,10,557,1200,25,false
 #ar_an94_t8_bribe,58,900330383,20,2400,false,#hash_687bfa2dbf4327ef,500163,50,false,false,0,ar_an94_t8_bribe,241496474,true,11,558,1200,25,false
 #ar_doublebarrel_t8_bribe,59,900234001,20,2400,false,#hash_687bfa2dbf4327ef,500163,50,false,false,0,ar_doublebarrel_t8_bribe,242625617,true,12,559,1200,25,false
@@ -53,7 +53,7 @@
 #lmg_stealth_t8_bribe,102,900173665,20,2400,false,#hash_687bfa2dbf4327ef,500163,50,false,false,101,lmg_stealth_t8_bribe,114053909,true,19,602,1200,25,false
 #pistol_fullauto_t8_bribe,103,900433396,20,2400,false,#hash_687bfa2dbf4327ef,500163,50,false,false,101,pistol_fullauto_t8_bribe,384248841,true,23,603,1200,25,false
 #sniper_mini14_t8_bribe,104,900392902,20,2400,false,#hash_687bfa2dbf4327ef,500163,50,false,false,101,sniper_mini14_t8_bribe,196137356,true,20,604,1200,25,false
-#half_off_no_dupe_crate,105,900121152,20,100,false,#hash_0,500163,6,false,false,0,half_off_no_dupe_crate,,false,2,0,0,0,false
+#half_off_no_dupe_crate,105,900121152,20,100,false,#,500163,6,false,false,0,half_off_no_dupe_crate,,false,2,0,0,0,false
 #ar_peacekeeper_t8_bribe_free,106,900350746,20,0,false,#hash_687bfa2dbf4327ef,500163,0,false,false,0,ar_peacekeeper_t8_bribe_free,280174596,true,10,0,0,0,true
 #ar_an94_t8_bribe_free,107,900189744,20,0,false,#hash_687bfa2dbf4327ef,500163,0,false,false,0,ar_an94_t8_bribe_free,241496474,true,11,0,0,0,true
 #ar_doublebarrel_t8_bribe_free,108,900472197,20,0,false,#hash_687bfa2dbf4327ef,500163,0,false,false,0,ar_doublebarrel_t8_bribe_free,242625617,true,12,0,0,0,true

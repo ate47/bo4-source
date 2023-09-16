@@ -74,7 +74,7 @@ class clower_message : cluielem {
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
         [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "message", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "message", #"");
         [[ self ]]->set_data(localclientnum, "countdownTimeSeconds", 0);
     }
 

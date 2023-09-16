@@ -307,7 +307,7 @@ function function_2b2308c6(var_c1e98979, var_76f0c6e5, var_767536e4) {
 // Checksum 0xac57479c, Offset: 0x1880
 // Size: 0x4c
 function function_5d9d54a9(var_c1e98979, var_76f0c6e5) {
-    function_d756b48a(var_c1e98979, var_76f0c6e5, var_76f0c6e5, #"hash_0", #"hash_0");
+    function_d756b48a(var_c1e98979, var_76f0c6e5, var_76f0c6e5, #"", #"");
 }
 
 // Namespace hud_message/hud_message
@@ -315,7 +315,7 @@ function function_5d9d54a9(var_c1e98979, var_76f0c6e5) {
 // Checksum 0x4e5eec66, Offset: 0x18d8
 // Size: 0x54
 function function_36419c2(var_c1e98979, winner_text, loser_text) {
-    function_d756b48a(var_c1e98979, winner_text, loser_text, #"hash_0", #"hash_0");
+    function_d756b48a(var_c1e98979, winner_text, loser_text, #"", #"");
 }
 
 // Namespace hud_message/hud_message

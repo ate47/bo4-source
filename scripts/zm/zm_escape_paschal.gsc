@@ -1222,7 +1222,7 @@ function private function_750df71a() {
     var_21841d64 clientfield::set("" + #"hash_6e2f9a57d1bc4b6a", 1);
     var_21841d64 thread function_e645ca47();
     t_interact = spawn("trigger_radius_use", var_21841d64.origin, 0, 64, 64);
-    t_interact sethintstring(#"hash_0");
+    t_interact sethintstring(#"");
     t_interact setcursorhint("HINT_NOICON");
     t_interact triggerignoreteam();
     t_interact setvisibletoall();

@@ -86,12 +86,12 @@ function function_96d38b95(result) {
     }
     xpearned = currxp - prevxp;
     perkstr = function_685505ce(player getperks());
-    primaryweaponname = #"hash_0";
+    primaryweaponname = #"";
     primaryweaponattachstr = "";
-    secondaryweaponname = #"hash_0";
+    secondaryweaponname = #"";
     secondaryweaponattachstr = "";
-    grenadeprimaryname = #"hash_0";
-    grenadesecondaryname = #"hash_0";
+    grenadeprimaryname = #"";
+    grenadesecondaryname = #"";
     if (loadout::function_87bcb1b()) {
         primary_weapon = player loadout::function_18a77b37("primary");
         if (isdefined(primary_weapon)) {

@@ -45,7 +45,7 @@ class czm_location : cluielem {
     // Size: 0x4c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "location_name", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "location_name", #"");
     }
 
     // Namespace czm_location/zm_location

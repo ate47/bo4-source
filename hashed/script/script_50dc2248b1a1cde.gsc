@@ -81,7 +81,7 @@ class czm_towers_challenges_hud : cluielem {
         cluielem::function_fa582112(localclientnum);
         [[ self ]]->set_state(localclientnum, #"defaultstate");
         [[ self ]]->set_data(localclientnum, "progress", 0);
-        [[ self ]]->set_data(localclientnum, "challenge_text", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "challenge_text", #"");
         [[ self ]]->set_data(localclientnum, "required_goal", 0);
     }
 

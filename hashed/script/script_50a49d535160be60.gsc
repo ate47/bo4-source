@@ -64,7 +64,7 @@ class czm_hint_text : cluielem {
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
         [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "text", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "text", #"");
     }
 
     // Namespace czm_hint_text/zm_hint_text

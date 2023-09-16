@@ -38,7 +38,7 @@ function init() {
 function init_killstreak(bundle) {
     killstreaks::register_bundle(bundle, &activate_vehicle);
     killstreaks::allow_assists(bundle.var_d3413870, 1);
-    remote_weapons::registerremoteweapon(bundle.ksweapon.name, #"hash_0", &function_c9aa9ee5, &function_8cb72281, 0);
+    remote_weapons::registerremoteweapon(bundle.ksweapon.name, #"", &function_c9aa9ee5, &function_8cb72281, 0);
     vehicle::add_main_callback(bundle.ksvehicle, &init_vehicle);
     deployable::register_deployable(bundle.ksweapon, undefined, undefined);
     level.killstreaks[bundle.var_d3413870].var_b6c17aab = 1;

@@ -167,9 +167,9 @@ function function_8e0b371() {
     while (1) {
         if (isalive(self)) {
             str_location = function_ab7f70b9(self);
-            self zm_hud::function_29780fb5(isdefined(str_location) ? str_location : #"hash_0");
+            self zm_hud::function_29780fb5(isdefined(str_location) ? str_location : #"");
         } else {
-            self zm_hud::function_29780fb5(#"hash_0");
+            self zm_hud::function_29780fb5(#"");
         }
         wait(0.5);
     }

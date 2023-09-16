@@ -61,7 +61,7 @@ function on_player_spawned() {
     if (level.zm_location zm_location::is_open(self)) {
         level.zm_location zm_location::close(self);
     }
-    self.var_b3122c84 = #"hash_0";
+    self.var_b3122c84 = #"";
     util::wait_network_frame();
     if (isdefined(self)) {
         self function_84c3e8e6();

@@ -101,7 +101,7 @@ function function_9e9f43cd() {
             angles = points[index].angles;
             ground_pos = physicstraceex(origin + vectorscale((0, 0, 1), 24), origin - vectorscale((0, 0, 1), 96), (0, 0, 0), (0, 0, 0), undefined, 32);
             position = ground_pos[#"position"];
-            function_53a81463(position, angles, targetname, #"hash_0");
+            function_53a81463(position, angles, targetname, #"");
         }
         if (getrealtime() - level.var_d0676b07 > level.var_3e9c9a35) {
             waitframe(1);
@@ -127,7 +127,7 @@ function function_e88ecf7f() {
     for (index = 0; index < level.var_bf9b06d3.size; index++) {
         points = function_abaeb170(level.var_bf9b06d3[index], undefined, undefined, level.var_8d50adaa[index], undefined, 0);
         for (pointindex = 0; pointindex < points.size; pointindex++) {
-            function_b2cf8bc6(points[pointindex].id, #"hash_0");
+            function_b2cf8bc6(points[pointindex].id, #"");
             if (isdefined(points[pointindex].targetname)) {
                 level.var_28cd0b1f[points[pointindex].targetname] = 1;
             }

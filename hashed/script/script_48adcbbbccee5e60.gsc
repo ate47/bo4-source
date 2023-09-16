@@ -45,7 +45,7 @@ class cinteractive_shot : cluielem {
     // Size: 0x4c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "text", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "text", #"");
     }
 
     // Namespace cinteractive_shot/interactive_shot

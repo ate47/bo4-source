@@ -3921,7 +3921,7 @@ function use_killstreak(var_bd027dd9, item) {
         self sethintstring(#"hash_37605398dce96965");
         wait(1.5);
         if (isdefined(self)) {
-            self sethintstring(#"hash_0");
+            self sethintstring(#"");
         }
     }
 }

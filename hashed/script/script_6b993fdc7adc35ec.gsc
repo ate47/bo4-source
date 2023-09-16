@@ -90,7 +90,7 @@ function function_2ced1d34(item, var_fe35755b, allowdupes = 0) {
         return;
     }
     weapon = item_world_util::function_35e06774(item.var_a6762160);
-    if (isdefined(weapon) && isdefined(weapon.statname) && weapon.statname != #"hash_0") {
+    if (isdefined(weapon) && isdefined(weapon.statname) && weapon.statname != #"") {
         weapon = getweapon(weapon.statname);
     }
     if (!isdefined(weapon) || !isdefined(weapon.supportedattachments) || weapon.supportedattachments.size <= 0) {

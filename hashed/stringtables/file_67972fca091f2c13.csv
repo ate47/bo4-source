@@ -1,7 +1,7 @@
-#bowie_knife,#hash_0,false,3000,#bowie,#hash_0,0,false,false,false,false,false,0,0,false,false,melee,false,false,0
-#homunculus,#homunculus_upgraded,false,2000,#cymbal_monkey,#hash_0,0,false,false,true,false,false,0,0,false,false,equipment,false,false,0
-#zhield_dw,#hash_67e9f63d356e6e39,false,1500,#shield,#hash_0,0,false,false,false,false,false,0,0,false,false,shield,false,false,0
-#ww_crossbow_impaler_t8,#hash_0,false,10000,#wonder,#hash_0,0,false,false,false,false,false,0,0,false,false,special,false,true,0
-#hash_138efe2bb30be63c,#hash_0,false,10000,#wpck_ray,#hash_0,0,false,false,false,false,false,0,0,false,false,wonder,false,true,0
-#hash_138f012bb30beb55,#hash_0,false,10000,#wpck_ray,#hash_0,0,false,false,false,false,false,0,0,false,false,wonder,false,true,0
-#hash_138f002bb30be9a2,#hash_0,false,10000,#wpck_ray,#hash_0,0,false,false,false,false,false,0,0,false,false,wonder,false,true,0
+#bowie_knife,#,false,3000,#bowie,#,0,false,false,false,false,false,0,0,false,false,melee,false,false,0
+#homunculus,#homunculus_upgraded,false,2000,#cymbal_monkey,#,0,false,false,true,false,false,0,0,false,false,equipment,false,false,0
+#zhield_dw,#hash_67e9f63d356e6e39,false,1500,#shield,#,0,false,false,false,false,false,0,0,false,false,shield,false,false,0
+#ww_crossbow_impaler_t8,#,false,10000,#wonder,#,0,false,false,false,false,false,0,0,false,false,special,false,true,0
+#hash_138efe2bb30be63c,#,false,10000,#wpck_ray,#,0,false,false,false,false,false,0,0,false,false,wonder,false,true,0
+#hash_138f012bb30beb55,#,false,10000,#wpck_ray,#,0,false,false,false,false,false,0,0,false,false,wonder,false,true,0
+#hash_138f002bb30be9a2,#,false,10000,#wpck_ray,#,0,false,false,false,false,false,0,0,false,false,wonder,false,true,0

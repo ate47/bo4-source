@@ -118,8 +118,8 @@ class czm_red_challenges_hud : cluielem {
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
         [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "challengeText", #"hash_0");
-        [[ self ]]->set_data(localclientnum, "bottomText", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "challengeText", #"");
+        [[ self ]]->set_data(localclientnum, "bottomText", #"");
         [[ self ]]->set_data(localclientnum, "bInLocation", 0);
         [[ self ]]->set_data(localclientnum, "progress", 0);
         [[ self ]]->set_data(localclientnum, "tributeAvailable", 0);

@@ -455,7 +455,7 @@ function function_f47528e7(localclientnum, var_9d5a2308, index) {
     var_fd54b4c8 = getuimodel(var_9d5a2308, index + ".modelRef");
     if (isdefined(var_fd54b4c8)) {
         var_c23428a2 = getuimodelvalue(var_fd54b4c8);
-        if (isdefined(var_c23428a2) && var_c23428a2 !== "" && var_c23428a2 !== #"hash_0") {
+        if (isdefined(var_c23428a2) && var_c23428a2 !== "" && var_c23428a2 !== #"") {
             return var_c23428a2;
         }
     }

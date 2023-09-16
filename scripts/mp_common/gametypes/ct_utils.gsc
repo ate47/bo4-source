@@ -2900,7 +2900,7 @@ function function_6046a5e3(str_weapon, attachments) {
         setdvar(#"hash_721ee06404866532" + i, hash(attachments[i]));
     }
     while (i < 6) {
-        setdvar(#"hash_721ee06404866532" + i, #"hash_0");
+        setdvar(#"hash_721ee06404866532" + i, #"");
         i++;
     }
 }
@@ -2916,7 +2916,7 @@ function function_c3e647e2(str_weapon, attachments) {
         setdvar(#"hash_c7f896e4dff882e" + i, hash(attachments[i]));
     }
     while (i < 6) {
-        setdvar(#"hash_c7f896e4dff882e" + i, #"hash_0");
+        setdvar(#"hash_c7f896e4dff882e" + i, #"");
         i++;
     }
 }

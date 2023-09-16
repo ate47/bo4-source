@@ -72,7 +72,7 @@ class czm_arcade_timer : cluielem {
         [[ self ]]->set_data(localclientnum, "showzero", 0);
         [[ self ]]->set_data(localclientnum, "seconds", 0);
         [[ self ]]->set_data(localclientnum, "minutes", 0);
-        [[ self ]]->set_data(localclientnum, "title", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "title", #"");
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer

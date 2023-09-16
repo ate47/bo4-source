@@ -89,7 +89,7 @@ function function_1ad84248() {
     }
     while (1) {
         self waittill(#"trigger_activated");
-        story = #"hash_0";
+        story = #"";
         switch (level.var_80c25d0a) {
         case 1:
             story = #"hash_416ddb9315ab3501";
@@ -172,7 +172,7 @@ function function_561d9cff() {
     level flag::set(#"hold_round_end");
     level.sndvoxoverride = 1;
     wait(5);
-    story = #"hash_0";
+    story = #"";
     switch (level.var_96eedc2a) {
     case 1:
         story = #"hash_11249122ea4664c1";

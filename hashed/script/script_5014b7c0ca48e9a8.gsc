@@ -46,10 +46,10 @@ function autoexec function_45a212c0() {
         wz_common_fixup::item_remover(var_a12b4736, var_87d0eef8, #"perk_item_medic");
     }
     if (!(isdefined(getgametypesetting(#"wzsnowballsenabled")) && getgametypesetting(#"wzsnowballsenabled"))) {
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"wz_snowball", #"hash_0");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"wz_snowball", #"");
     }
     if (!(isdefined(getgametypesetting(#"wzwaterballoonsenabled")) && getgametypesetting(#"wzwaterballoonsenabled")) && !(isdefined(getgametypesetting(#"hash_3e2d2cf6b1cc6c68")) && getgametypesetting(#"hash_3e2d2cf6b1cc6c68"))) {
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"wz_waterballoon", #"hash_0");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"wz_waterballoon", #"");
     }
     if (isdefined(getgametypesetting(#"hash_230e67d5ddfb2c06")) && getgametypesetting(#"hash_230e67d5ddfb2c06")) {
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"melee_bowie_t8_item", #"melee_bloody_bowie_t8_item");
@@ -102,10 +102,10 @@ function autoexec function_45a212c0() {
         }
     }
     if (!(isdefined(getgametypesetting(#"wzenablesecretsanta")) && getgametypesetting(#"wzenablesecretsanta"))) {
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"melee_secretsanta_t8_item", #"hash_0");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"melee_secretsanta_t8_item", #"");
     }
     if (!(isdefined(getgametypesetting(#"wzenableslaybell")) && getgametypesetting(#"wzenableslaybell"))) {
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"melee_slaybell_t8_item", #"hash_0");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"melee_slaybell_t8_item", #"");
     }
     if (isdefined(getgametypesetting(#"wzenablecontrabandstash")) && getgametypesetting(#"wzenablecontrabandstash")) {
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"blackjack_ammo_stash_parent_placeholder", #"blackjack_ammo_stash_parent_guns");

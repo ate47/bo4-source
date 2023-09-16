@@ -349,13 +349,13 @@ function function_c52e8ba(player, var_8d5d092c) {
     if (level flag::get(#"disable_fast_travel")) {
         self.hint_string[n_player_index] = #"hash_91829275c00db24";
     } else if (!(isdefined(player zombie_utility::is_player_valid(player)) && player zombie_utility::is_player_valid(player))) {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
     } else if (isdefined(player.var_564dec14) && player.var_564dec14) {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
     } else if (!level flag::get("power_on")) {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
     } else if (isdefined(player.var_16735873) && player.var_16735873 && str_loc != "dropout") {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
     } else if (isdefined(self.stub.var_a4134e51) && !level flag::get(self.stub.var_a4134e51)) {
         switch (self.stub.var_a4134e51) {
         case #"hash_45ae4decdc919e41":
@@ -365,7 +365,7 @@ function function_c52e8ba(player, var_8d5d092c) {
             self.hint_string[n_player_index] = #"hash_2bdcee65a214c377";
             break;
         default:
-            self.hint_string[n_player_index] = #"hash_0";
+            self.hint_string[n_player_index] = #"";
             break;
         }
         b_result = 1;

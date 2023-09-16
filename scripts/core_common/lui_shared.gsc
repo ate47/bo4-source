@@ -232,7 +232,7 @@ function timer(n_time, str_endon, x = 1080, y = 200, height = 60) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xe28f31dc, Offset: 0x948
 // Size: 0x18c
-function prime_movie(str_movie, b_looping = 0, str_key = #"hash_0") {
+function prime_movie(str_movie, b_looping = 0, str_key = #"") {
     if (isarray(self)) {
         foreach (player in self) {
             player primemovie(str_movie, b_looping, str_key);
@@ -250,7 +250,7 @@ function prime_movie(str_movie, b_looping = 0, str_key = #"hash_0") {
 // Params 4, eflags: 0x0
 // Checksum 0xf0019f7b, Offset: 0xae0
 // Size: 0x108
-function function_2fb8927b(str_team, str_movie, b_looping = 0, str_key = #"hash_0") {
+function function_2fb8927b(str_team, str_movie, b_looping = 0, str_key = #"") {
     callback::on_connect(&function_67373791, undefined, str_team, str_movie, b_looping, str_key);
     foreach (player in util::get_human_players(str_team)) {
         player prime_movie(str_movie);
@@ -273,7 +273,7 @@ function private function_67373791(str_team, str_movie, b_looping, str_key) {
 // Params 8, eflags: 0x0
 // Checksum 0x6f8117db, Offset: 0xc68
 // Size: 0x148
-function function_c6d1cb5d(str_team, str_movie, str_type, show_black_screen = 0, b_looping = 0, b_skippable = 0, str_key = #"hash_0", n_timeout) {
+function function_c6d1cb5d(str_team, str_movie, str_type, show_black_screen = 0, b_looping = 0, b_skippable = 0, str_key = #"", n_timeout) {
     callback::remove_on_connect(&function_67373791);
     foreach (player in util::get_human_players(str_team)) {
         player thread play_movie(str_movie, str_type, show_black_screen, b_looping, b_skippable, str_key, n_timeout);
@@ -284,7 +284,7 @@ function function_c6d1cb5d(str_team, str_movie, str_type, show_black_screen = 0,
 // Params 8, eflags: 0x1 linked
 // Checksum 0x7cf3f843, Offset: 0xdb8
 // Size: 0x458
-function play_movie(str_movie, str_type, show_black_screen = 0, b_looping = 0, b_skippable = 0, str_key = #"hash_0", n_timeout, var_c16d0253 = 1) {
+function play_movie(str_movie, str_type, show_black_screen = 0, b_looping = 0, b_skippable = 0, str_key = #"", n_timeout, var_c16d0253 = 1) {
     if (str_type === "fullscreen" || str_type === "fullscreen_additive") {
         b_hide_hud = 1;
     }
@@ -418,7 +418,7 @@ function private function_6c2457a9(b_disable = 1) {
 // Size: 0x318
 function play_outro_movie(show_black_screen = 1) {
     outro_movie = getmapoutromovie();
-    if (!isdefined(outro_movie) || outro_movie == #"hash_0") {
+    if (!isdefined(outro_movie) || outro_movie == #"") {
         return;
     }
     if (isarray(self)) {

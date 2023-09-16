@@ -284,7 +284,7 @@ function challenge_complete(eventstruct) {
         tablename = #"gamedata/stats/zm/statsmilestones" + var_c4e9517b + ".csv";
         if (var_c4e9517b == 2) {
             var_a05af556 = tablelookupcolumnforrow(tablename, row, 9);
-            if (var_a05af556 === #"hash_0") {
+            if (var_a05af556 === #"") {
                 return;
             } else if (getdvarint(#"hash_730fab929626f598", 0) == 0) {
                 if (var_a05af556 === #"camo_gold" || var_a05af556 === #"camo_diamond" || var_a05af556 === #"camo_darkmatter") {

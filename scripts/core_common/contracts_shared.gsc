@@ -107,7 +107,7 @@ function function_d17bcd3c(slot) {
     if (!getdvarint(#"hash_d233413e805fbd0", 0)) {
         var_38280f2f = hash(var_38280f2f);
     }
-    if (var_38280f2f != #"hash_0") {
+    if (var_38280f2f != #"") {
         var_5ceb23d0.var_38280f2f = var_38280f2f;
         var_5ceb23d0.target_value = player stats::function_ff8f4f17(#"loot_contracts", slot, #"target");
         var_5ceb23d0.var_59cb904f = player stats::function_ff8f4f17(#"loot_contracts", slot, #"progress");
@@ -128,7 +128,7 @@ function function_de4ff5a(slot) {
     if (!getdvarint(#"hash_d233413e805fbd0", 0)) {
         var_38280f2f = hash(var_38280f2f);
     }
-    if (var_38280f2f != #"hash_0") {
+    if (var_38280f2f != #"") {
         level.contract_ids[var_38280f2f] = player stats::function_ff8f4f17(#"loot_contracts", slot, #"contractid");
     }
 }
@@ -540,7 +540,7 @@ function function_78083139() {
 // Size: 0xbc
 function function_d8c98325(var_38280f2f, delta, flags, var_4b67585c, var_2de8a050) {
     player = self;
-    if (var_38280f2f != #"hash_0") {
+    if (var_38280f2f != #"") {
         var_ae857992 = getdvarint(#"hash_60d812bef0f782fb", 4);
         player function_cce105c8(var_38280f2f, 1, delta, 2, var_ae857992, 3, flags, 4, var_4b67585c, 5, var_2de8a050);
     }

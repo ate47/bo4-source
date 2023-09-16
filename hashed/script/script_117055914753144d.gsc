@@ -110,8 +110,8 @@ class cct_shared_aar : cluielem {
         [[ self ]]->set_state(localclientnum, #"defaultstate");
         [[ self ]]->set_data(localclientnum, "timeMilliseconds", 0);
         [[ self ]]->set_data(localclientnum, "bestTimeMilliseconds", 0);
-        [[ self ]]->set_data(localclientnum, "missionResultMsg", #"hash_0");
-        [[ self ]]->set_data(localclientnum, "medalThresholds", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "missionResultMsg", #"");
+        [[ self ]]->set_data(localclientnum, "medalThresholds", #"");
     }
 
     // Namespace cct_shared_aar/ct_shared_aar

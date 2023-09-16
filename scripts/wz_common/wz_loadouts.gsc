@@ -44,7 +44,7 @@ function private __init__() {
 // Checksum 0x25e817c0, Offset: 0x2f0
 // Size: 0x6a
 function _get_item(itemname) {
-    if (isdefined(level.var_4afb8f5a[itemname]) && level.var_4afb8f5a[itemname] != #"hash_0") {
+    if (isdefined(level.var_4afb8f5a[itemname]) && level.var_4afb8f5a[itemname] != #"") {
         itemname = level.var_4afb8f5a[itemname];
     }
     return function_4ba8fde(itemname);

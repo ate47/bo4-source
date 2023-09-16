@@ -626,7 +626,7 @@ class csceneplayer : csceneobject {
                 level.interactive_shot interactive_shot::set_text(player, #"hash_2c841879f1d933ef");
                 break;
             default:
-                level.interactive_shot interactive_shot::set_text(player, #"hash_0");
+                level.interactive_shot interactive_shot::set_text(player, #"");
                 break;
             }
         }

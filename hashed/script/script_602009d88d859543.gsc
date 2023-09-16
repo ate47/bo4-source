@@ -115,14 +115,14 @@ function function_c52e8ba(player, var_8d5d092c) {
         str_loc = self.stub.script_string;
     }
     if (!zombie_utility::is_player_valid(player)) {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
     } else if (isdefined(player.var_16735873) && player.var_16735873 && self.stub.script_string !== "dropout") {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
         return 1;
     } else if (isdefined(player.var_564dec14) && player.var_564dec14) {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
     } else if (level flag::get(#"disable_fast_travel")) {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
     } else if (!level flag::get("power_on1")) {
         self.hint_string[n_player_index] = #"hash_1889aab1f9075530";
         self sethintstringforplayer(player, self.hint_string[n_player_index]);
@@ -135,7 +135,7 @@ function function_c52e8ba(player, var_8d5d092c) {
         self sethintstringforplayer(player, self.hint_string[n_player_index]);
         b_result = 1;
     } else {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
         b_result = 1;
         switch (str_loc) {
         case #"hash_3c428518d68f7f04":

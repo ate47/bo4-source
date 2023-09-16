@@ -195,9 +195,9 @@ function show_text(text, n_display_time = 0, str_waittill = undefined, var_3de28
 // Size: 0x6c
 function function_b952264e(var_3de28ed8 = 1) {
     if (var_3de28ed8) {
-        self set_challenge_text(#"hash_0");
+        self set_challenge_text(#"");
     } else {
-        self function_f0d355fc(#"hash_0");
+        self function_f0d355fc(#"");
     }
 }
 

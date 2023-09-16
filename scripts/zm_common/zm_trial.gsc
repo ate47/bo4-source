@@ -604,7 +604,7 @@ function private function_4dbf2663() {
                 array::add(round_info.challenges, {#params:var_10a28798, #row:row, #name:challenge_name});
                 for (i = 0; i < 8; i++) {
                     param = tablelookupcolumnforrow(table, row, 6 + i);
-                    if (isdefined(param) && param != #"hash_0") {
+                    if (isdefined(param) && param != #"") {
                         var_10a28798[var_10a28798.size] = param;
                     }
                 }

@@ -14,8 +14,8 @@
 442606,#hash_654fec57e810f500,#legendary,1,#outfit,500,,0
 404446,#loot_contract_nomad_heist,#epic,1,#outfit,800,,0
 400312,#loot_contract_zero_cyberpunk,#epic,1,#hash_50f6d84b91339c8b,700,,0
-404599,#hash_909b7a622671fe8,#hash_0,1,#event,0,,0
-418379,#hash_12253e31ee802772,#hash_0,1,#event,0,,0
+404599,#hash_909b7a622671fe8,#,1,#event,0,,0
+418379,#hash_12253e31ee802772,#,1,#event,0,,0
 442994,#hash_1d3916c363e9b980,#legendary,1,#outfit,500,,0
 412726,#hash_3fc6cb71e2f11c96,#legendary,1,#outfit,500,,0
 429240,#hash_30ce320acbec7290,#legendary,1,#outfit,500,,0
@@ -30,12 +30,12 @@
 481864,#hash_5af2c89caaa95830,#legendary,1,#outfit,500,,0
 448419,#loot_contract_seraph_cop,#epic,1,#outfit,800,,0
 418554,#loot_contract_valkyrie,#ultra,1,#hash_3d74cf5a087733f7,1500,,0
-454180,#hash_4e19340ec03e16e2,#hash_0,1,#event,0,,0
+454180,#hash_4e19340ec03e16e2,#,1,#event,0,,0
 482087,#loot_contract_crash_cop,#epic,1,#outfit,800,,0
 415891,#loot_contract_sergei,#ultra,1,#character,1000,,0
 489358,#hash_46c3a0c6a5852e6c,#epic,1,#outfit,800,,0
 447694,#loot_contract_icr7_mastercraft,#ultra,1,#hash_3d74cf5a087733f7,1900,,0
-486535,#hash_4e7fde1bd5e47b70,#hash_0,1,#event,0,,0
+486535,#hash_4e7fde1bd5e47b70,#,1,#event,0,,0
 480693,#loot_contract_afterglow,#legendary,1,#weapon_camo,700,,0
 492878,#loot_contract_tedd,#ultra,1,#character,1000,,0
 490878,#hash_1650e2d48996a074,#legendary,1,#outfit,500,,0
@@ -45,5 +45,5 @@
 434883,#loot_contract_ahabs_revenge,#ultra,1,#hash_3d74cf5a087733f7,2000,,0
 474203,#hash_46cba3b9a82eecc0,#epic,1,#outfit,800,,0
 413629,#loot_contract_ajax_roman_warrior,#epic,1,#outfit,700,,0
-475221,#hash_6ef3ba6380c215fa,#hash_0,1,#event,0,,0
+475221,#hash_6ef3ba6380c215fa,#,1,#event,0,,0
 446177,#hash_4fa997983aa038dc,#legendary,1,#outfit,500,,0

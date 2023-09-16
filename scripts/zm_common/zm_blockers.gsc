@@ -1850,7 +1850,7 @@ function blocker_trigger_think() {
         if (isdefined(level.var_aef7f7d5) && level.var_aef7f7d5) {
             if (isdefined(self.unitrigger_stub) && !isdefined(self.unitrigger_stub.var_88312f4)) {
                 self.unitrigger_stub.var_88312f4 = self.unitrigger_stub.hint_string;
-                self.unitrigger_stub.hint_string = isdefined(level.var_b0612462) ? level.var_b0612462 : #"hash_0";
+                self.unitrigger_stub.hint_string = isdefined(level.var_b0612462) ? level.var_b0612462 : #"";
             }
             continue;
         } else if (isdefined(self.unitrigger_stub) && isdefined(self.unitrigger_stub.var_88312f4)) {

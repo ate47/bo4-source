@@ -557,7 +557,7 @@ function onenduse(team, player, success) {
 function flagcapturedfromneutral(team) {
     self.singleowner = 1;
     otherteam = util::getotherteam(team);
-    thread util::printandsoundoneveryone(team, undefined, #"hash_0", undefined, "mp_war_objective_taken");
+    thread util::printandsoundoneveryone(team, undefined, #"", undefined, "mp_war_objective_taken");
     thread sound::play_on_players("mus_dom_captured" + "_" + level.teampostfix[team]);
     if (getteamflagcount(team) == level.flags.size) {
         statusdialog("secured_all", team, "objective_all");
@@ -578,7 +578,7 @@ function flagcapturedfromneutral(team) {
 // Size: 0x21e
 function flagcapturedfromteam(team, oldteam) {
     self.singleowner = 0;
-    thread util::printandsoundoneveryone(team, oldteam, #"hash_0", #"hash_0", "mp_war_objective_taken", "mp_war_objective_lost", "");
+    thread util::printandsoundoneveryone(team, oldteam, #"", #"", "mp_war_objective_taken", "mp_war_objective_lost", "");
     if (getteamflagcount(team) == level.flags.size) {
         statusdialog("secured_all", team, "objective_all");
         statusdialog("lost_all", oldteam, "objective_all");
@@ -603,7 +603,7 @@ function flagcapturedfromteam(team, oldteam) {
 // Size: 0x144
 function flagneutralized(team, oldteam) {
     self.singleowner = 1;
-    thread util::printandsoundoneveryone(#"neutral", oldteam, #"hash_0", #"hash_0", "mp_war_objective_neutralized", "mp_war_objective_lost", "");
+    thread util::printandsoundoneveryone(#"neutral", oldteam, #"", #"", "mp_war_objective_neutralized", "mp_war_objective_lost", "");
     if (getteamflagcount(team) == level.flags.size) {
         statusdialog("lost_all", oldteam, "objective_all");
         flushobjectiveflagdialog();
@@ -619,7 +619,7 @@ function flagneutralized(team, oldteam) {
 // Checksum 0xbb7355fc, Offset: 0x34e8
 // Size: 0x226
 function getdomflagusestring(label, neutralized) {
-    string = #"hash_0";
+    string = #"";
     if (neutralized) {
         switch (label) {
         case #"_a":
@@ -679,7 +679,7 @@ function onusewithneutralizingflag(sentient) {
     /#
         assert(team != #"neutral");
     #/
-    string = #"hash_0";
+    string = #"";
     if (oldteam == #"neutral") {
         level notify(#"flag_captured");
         string = getdomflagusestring(label, 0);
@@ -697,7 +697,7 @@ function onusewithneutralizingflag(sentient) {
         self flagneutralized(team, oldteam);
     }
     /#
-        assert(string != #"hash_0");
+        assert(string != #"");
     #/
     touchlist = arraycopy(self.touchlist[team]);
     isbflag = 0;
@@ -744,7 +744,7 @@ function onusewithoutneutralizingflag(sentient) {
     }
     string = getdomflagusestring(label, 0);
     /#
-        assert(string != #"hash_0");
+        assert(string != #"");
     #/
     if (isdefined(getgametypesetting(#"contributioncapture")) && getgametypesetting(#"contributioncapture")) {
         var_1dbb2b2b = arraycopy(self.var_1dbb2b2b[team]);

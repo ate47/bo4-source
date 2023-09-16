@@ -74,7 +74,7 @@ function setlowermessage(text, time) {
     if (!isdefined(level.lower_message)) {
         return;
     }
-    level.lower_message lower_message::set_message(self, isdefined(text) ? text : #"hash_0");
+    level.lower_message lower_message::set_message(self, isdefined(text) ? text : #"");
     if (isdefined(time) && time > 0) {
         level.lower_message lower_message::set_countdowntimeseconds(self, int(time));
         level.lower_message lower_message::set_state(self, #"visible");
@@ -103,7 +103,7 @@ function clearlowermessage() {
 function private function_fa47c5af() {
     self endon(#"hash_6ceeeb477ece797b", #"disconnect");
     wait(1);
-    level.lower_message lower_message::set_message(self, #"hash_0");
+    level.lower_message lower_message::set_message(self, #"");
     level.lower_message lower_message::set_countdowntimeseconds(self, 0);
 }
 

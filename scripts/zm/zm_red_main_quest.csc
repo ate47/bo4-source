@@ -1140,7 +1140,7 @@ function function_b750bd91(localclientnum, newval, str_ww) {
                 break;
             }
             var_408c2f30 = #"hash_57f7a8a10722c251";
-            var_f5257d20 = #"hash_0";
+            var_f5257d20 = #"";
             var_88dfc0c9 = 0.75;
         }
         n_fx = playfx(localclientnum, str_fx, s_pos.origin, anglestoforward(s_pos.angles), anglestoup(s_pos.angles));

@@ -154,7 +154,7 @@ function private function_8b87e57c(timer_label, grace_period, timer_value) {
         level.var_869f4c31 = timer_value;
     }
     wait(grace_period);
-    timer_label = isdefined(timer_label) ? timer_label : #"hash_0";
+    timer_label = isdefined(timer_label) ? timer_label : #"";
     if (!level.var_f995ece6 zm_trial_timer::is_open(self)) {
         level.var_f995ece6 zm_trial_timer::open(self);
         level.var_f995ece6 zm_trial_timer::set_timer_text(self, timer_label);

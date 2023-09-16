@@ -203,7 +203,7 @@ function function_2d1eb0ec(intpayload) {
         }
         if (callout.name == "sgc_warzone_item") {
             var_5f6c1c04 = self.var_cc586562;
-            if (!isdefined(var_5f6c1c04) || var_5f6c1c04 == #"hash_0") {
+            if (!isdefined(var_5f6c1c04) || var_5f6c1c04 == #"") {
                 return;
             }
         }

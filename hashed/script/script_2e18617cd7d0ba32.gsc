@@ -91,7 +91,7 @@ class cct_shared_objcounter : cluielem {
         cluielem::function_fa582112(localclientnum);
         [[ self ]]->set_state(localclientnum, #"defaultstate");
         [[ self ]]->set_data(localclientnum, "objectiveCount", 0);
-        [[ self ]]->set_data(localclientnum, "objectiveLabel", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "objectiveLabel", #"");
         [[ self ]]->set_data(localclientnum, "objectiveTotal", 0);
     }
 

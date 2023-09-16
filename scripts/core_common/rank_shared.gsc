@@ -103,7 +103,7 @@ function initscoreinfo() {
                 ismedal = 0;
                 var_9750677a = tablelookup(scoreinfotablename, 0, type, 10);
                 var_9f6af7ed = tablelookup(scoreinfotablename, 0, type, 11);
-                if (isdefined(var_9750677a) && var_9750677a != #"hash_0" && isdefined(var_9f6af7ed) && var_9f6af7ed != #"hash_0") {
+                if (isdefined(var_9750677a) && var_9750677a != #"" && isdefined(var_9f6af7ed) && var_9f6af7ed != #"") {
                     ismedal = 1;
                 }
                 registerxp(type, xp, addplayerstat, ismedal, dp, row, var_65181181);
@@ -174,7 +174,7 @@ function registerscoreinfo(type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is_
         if (isdefined(label)) {
             level.scoreinfo[type][#"label"] = label;
         }
-        if (isdefined(medalname) && medalname != #"hash_0") {
+        if (isdefined(medalname) && medalname != #"") {
             level.scoreinfo[type][#"medalnamehash"] = medalname;
         }
         if (job_type != "") {

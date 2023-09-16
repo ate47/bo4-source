@@ -80,7 +80,7 @@ class cct_shared_ingame_hint : cluielem {
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
         [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "inGameHint", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "inGameHint", #"");
     }
 
     // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint

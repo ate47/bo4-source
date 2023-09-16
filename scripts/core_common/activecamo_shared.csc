@@ -132,7 +132,7 @@ function on_player_spawned(localclientnum) {
 function function_ae141bf2(camoindex) {
     activecamoinfo = undefined;
     activecamoname = getactivecamo(camoindex);
-    if (isdefined(activecamoname) && activecamoname != #"hash_0") {
+    if (isdefined(activecamoname) && activecamoname != #"") {
         activecamoinfo = getscriptbundle(activecamoname);
     }
     return activecamoinfo;

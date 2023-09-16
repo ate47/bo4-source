@@ -186,7 +186,7 @@ function private function_c92a5584(activator) {
 // Size: 0x64
 function private function_97eb71f0(activator) {
     if (isdefined(activator.var_8a022726)) {
-        activator.var_8a022726 sethintstring(#"hash_0");
+        activator.var_8a022726 sethintstring(#"");
     }
     activator clientfield::set_player_uimodel("hudItems.depositing", 1);
 }

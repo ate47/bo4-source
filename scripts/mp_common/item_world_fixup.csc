@@ -64,7 +64,7 @@ function private function_41015db1(&replacementarray, itemname, replacementitemn
     if (isdefined(replacementarray[itemname])) {
         return;
     }
-    if (replacementitemname == #"hash_0") {
+    if (replacementitemname == #"") {
         replacementitemname = "";
     }
     /#

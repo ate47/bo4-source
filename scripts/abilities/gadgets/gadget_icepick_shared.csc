@@ -173,7 +173,7 @@ function function_ca096bad(model, index, namehash, entnum, category, categoryind
     }
     doublewidth = 0;
     setuimodelvalue(createuimodel(itemuimodel, "hackableId"), entnum);
-    if (isdefined(weapon) && weapon.statname != #"hash_0") {
+    if (isdefined(weapon) && weapon.statname != #"") {
         weaponindex = getitemindexfromref(weapon.statname);
         setuimodelvalue(createuimodel(itemuimodel, "hackableItemIndex"), weaponindex);
         doublewidth = weapon.var_df381b5d == 2;
@@ -182,7 +182,7 @@ function function_ca096bad(model, index, namehash, entnum, category, categoryind
     setuimodelvalue(createuimodel(itemuimodel, "indexWithinCategory"), categoryindex);
     setuimodelvalue(createuimodel(itemuimodel, "hackStatus"), 0);
     setuimodelvalue(createuimodel(itemuimodel, "hackableDoubleWidth"), doublewidth);
-    setuimodelvalue(createuimodel(itemuimodel, "hackableFlavorText"), #"hash_0");
+    setuimodelvalue(createuimodel(itemuimodel, "hackableFlavorText"), #"");
 }
 
 // Namespace icepick/gadget_icepick_shared
@@ -301,7 +301,7 @@ function function_9e88e881(local_client_num) {
     hackableitems = function_adceefd(local_client_num, self);
     numplayers = getdvarint(#"com_maxclients", 0);
     for (i = 0; i < numplayers; i++) {
-        function_ca096bad(var_e2d02d46, var_9411ea0, #"hash_0", i, 0, var_a9705012[0], undefined);
+        function_ca096bad(var_e2d02d46, var_9411ea0, #"", i, 0, var_a9705012[0], undefined);
         var_9411ea0++;
         var_a9705012[0]++;
     }
@@ -451,7 +451,7 @@ function private function_34aba8d8(local_client_num, targetid, newval) {
                 var_b095c57b = function_b2755499(self.weapon, self);
                 var_cce9de60 = var_b095c57b.var_77b46a8c;
             } else {
-                var_cce9de60 = #"hash_0";
+                var_cce9de60 = #"";
             }
             setuimodelvalue(getuimodel(itemuimodel, "hackableFlavorText"), var_cce9de60);
         } else if (newval == 2) {

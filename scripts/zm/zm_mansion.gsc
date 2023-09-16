@@ -1276,7 +1276,7 @@ function function_c52e8ba(player, var_8d5d092c) {
     }
     n_player_index = player getentitynumber();
     if (!self zm_fasttravel::function_d06e636b(player)) {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
     } else if (isdefined(self.stub.var_a4134e51) && !level flag::get(self.stub.var_a4134e51)) {
         switch (self.stub.var_a4134e51) {
         case #"open_pap":

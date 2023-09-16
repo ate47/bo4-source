@@ -4810,7 +4810,7 @@ function function_b5d522f8() {
                     if (var_10acd4fa > 0) {
                         player zm_ui_inventory::function_d8f1d200(#"hash_336cbe1bb6ff213");
                     } else {
-                        player zm_ui_inventory::function_d8f1d200(#"hash_0");
+                        player zm_ui_inventory::function_d8f1d200(#"");
                     }
                 }
             }

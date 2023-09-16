@@ -198,7 +198,7 @@ function function_3aa81e0e(activecamoinfo) {
                         } else {
                             activecamoname = getactivecamo(stage.var_19b6044e);
                             var_31567a86 = undefined;
-                            if (isdefined(activecamoname) && activecamoname != #"hash_0") {
+                            if (isdefined(activecamoname) && activecamoname != #"") {
                                 var_31567a86 = getscriptbundle(activecamoname);
                             }
                             if (!isdefined(var_31567a86)) {
@@ -243,7 +243,7 @@ function weapon_get_activecamo(weapon, b_has_weapon = 1) {
     }
     camoindex = getcamoindex(weaponoptions);
     activecamoname = getactivecamo(camoindex);
-    if (isdefined(activecamoname) && activecamoname != #"hash_0") {
+    if (isdefined(activecamoname) && activecamoname != #"") {
         activecamoinfo = getscriptbundle(activecamoname);
     }
     return activecamoinfo;

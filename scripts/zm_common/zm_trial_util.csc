@@ -212,8 +212,8 @@ function private function_d59810a5() {
     /#
         assert(isdefined(level.var_a2859227));
     #/
-    setuimodelvalue(level.var_940b67bb, #"hash_0");
-    setuimodelvalue(level.var_63e5f17c, #"hash_0");
+    setuimodelvalue(level.var_940b67bb, #"");
+    setuimodelvalue(level.var_63e5f17c, #"");
     switch (level.var_a2859227) {
     default:
         if (isdefined(level.var_1420e3f6)) {

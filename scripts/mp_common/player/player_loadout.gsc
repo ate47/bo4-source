@@ -1073,7 +1073,7 @@ function private function_8e961216(slot, previous_weapon) {
             primaryoffhandname = #"weapon_null";
         }
     }
-    if (primaryoffhandname != #"hash_0" && primaryoffhandname != #"weapon_null") {
+    if (primaryoffhandname != #"" && primaryoffhandname != #"weapon_null") {
         primaryoffhand = getweapon(primaryoffhandname);
         var_46119dfa = self getloadoutitem(self.class_num, "primarygrenadecount");
         primaryoffhandcount = var_46119dfa ? 2 : 1;
@@ -1124,7 +1124,7 @@ function function_c3448ab0(slot, previous_weapon, force_give_gadget_health_regen
         }
     } else {
         secondaryoffhandname = self function_b958b70d(self.class_num, "specialgrenade");
-        if (secondaryoffhandname != #"hash_0" && secondaryoffhandname != #"weapon_null") {
+        if (secondaryoffhandname != #"" && secondaryoffhandname != #"weapon_null") {
             secondaryoffhand = getweapon(secondaryoffhandname);
             secondaryoffhandcount = self getloadoutitem(self.class_num, "specialgrenadecount");
         }

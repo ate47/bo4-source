@@ -193,7 +193,7 @@ function function_a84fcb78(var_3a553e99) {
 // Checksum 0x18af00ea, Offset: 0xab0
 // Size: 0x3c
 function add_armor() {
-    self zm_armor::add(#"stronghold_armor", 5, 50, #"hash_0");
+    self zm_armor::add(#"stronghold_armor", 5, 50, #"");
 }
 
 // Namespace zm_perk_stronghold/zm_perk_stronghold

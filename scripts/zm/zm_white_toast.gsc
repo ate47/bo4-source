@@ -478,7 +478,7 @@ function function_c88a99db(str_hint) {
         waitframe(1);
     }
     vol_apd_console playsound("evt_computer_interact");
-    vol_apd_console sethintstring(#"hash_0");
+    vol_apd_console sethintstring(#"");
     vol_apd_console hide();
 }
 
@@ -499,7 +499,7 @@ function function_3b0da1a8(str_hint) {
         }
         waitframe(1);
     }
-    vol_apd_console sethintstring(#"hash_0");
+    vol_apd_console sethintstring(#"");
     vol_apd_console hide();
 }
 

@@ -800,7 +800,7 @@ function drop_inventory(player) {
             itemname = var_bf145320.type;
             if (isdefined(level.var_4afb8f5a[itemname])) {
                 itemname = level.var_4afb8f5a[itemname];
-                jumpiffalse(itemname == #"hash_0") LOC_00000b9a;
+                jumpiffalse(itemname == #"") LOC_00000b9a;
             } else {
             LOC_00000b9a:
                 itempoint = function_4ba8fde(itemname);
@@ -927,7 +927,7 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
     }
     if (isdefined(level.var_4afb8f5a[item.var_a6762160.name])) {
         item_name = level.var_4afb8f5a[item.var_a6762160.name];
-        if (item_name == #"hash_0") {
+        if (item_name == #"") {
             return;
         }
         item = function_4ba8fde(item_name);

@@ -262,13 +262,13 @@ function function_bad2e505(player) {
         self setvisibletoplayer(player);
         switch (self.targetname) {
         case #"nixie_tube_trigger_1":
-            self sethintstring(#"hash_0");
+            self sethintstring(#"");
             break;
         case #"nixie_tube_trigger_2":
-            self sethintstring(#"hash_0");
+            self sethintstring(#"");
             break;
         case #"nixie_tube_trigger_3":
-            self sethintstring(#"hash_0");
+            self sethintstring(#"");
             break;
         }
         return 1;

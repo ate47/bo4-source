@@ -589,9 +589,9 @@ function function_8e0b371() {
             if (isdefined(level.var_bc410725) && level.var_bc410725 && isdefined(level.var_dcc985c4)) {
                 str_location = self function_ab7f70b9(level.var_dcc985c4.script_string);
             }
-            self zm_hud::function_29780fb5(isdefined(str_location) ? str_location : #"hash_0");
+            self zm_hud::function_29780fb5(isdefined(str_location) ? str_location : #"");
         } else {
-            self zm_hud::function_29780fb5(#"hash_0");
+            self zm_hud::function_29780fb5(#"");
         }
         wait(0.5);
     }

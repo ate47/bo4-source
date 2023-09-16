@@ -89,14 +89,14 @@ function function_84f1c310() {
         } else {
             var_40762d8a sethintstring(#"hash_52803ee9fe3f2ea5");
         }
-        t_catwalk_door sethintstring(#"hash_0");
+        t_catwalk_door sethintstring(#"");
         level.var_2ea46461 setmodel(#"p8_zm_esc_catwalk_door_light_green");
         if (function_8b1a219a()) {
             var_40762d8a sethintstring(#"hash_6c7c18e3ce28c91b");
         } else {
             var_40762d8a sethintstring(#"hash_52803ee9fe3f2ea5");
         }
-        t_catwalk_door sethintstring(#"hash_0");
+        t_catwalk_door sethintstring(#"");
         waitresult = undefined;
         waitresult = var_40762d8a waittill(#"trigger");
         level flag::set(#"catwalk_door_open");
@@ -104,7 +104,7 @@ function function_84f1c310() {
         if (isplayer(waitresult.activator)) {
             waitresult.activator thread zm_audio::create_and_play_dialog(#"catwalk", #"open", undefined, 1);
         }
-        var_40762d8a sethintstring(#"hash_0");
+        var_40762d8a sethintstring(#"");
         t_catwalk_door notify(#"power_on");
         playsoundatposition(#"hash_97aff7905795396", (8223, 10111, 817));
         level.musicsystemoverride = 1;
@@ -125,8 +125,8 @@ function function_84f1c310() {
         level.var_2ea46461 clientfield::increment("" + #"hash_48f1f50c412d80c7");
         level.var_b2b15659 = 1;
     } else if (zm_custom::function_901b751c("zmPowerState") == 2 || zm_custom::function_901b751c(#"zmpowerdoorstate") == 2) {
-        var_40762d8a sethintstring(#"hash_0");
-        t_catwalk_door sethintstring(#"hash_0");
+        var_40762d8a sethintstring(#"");
+        t_catwalk_door sethintstring(#"");
         var_40762d8a setinvisibletoall();
         t_catwalk_door setinvisibletoall();
         if (isdefined(level.var_2ea46461)) {

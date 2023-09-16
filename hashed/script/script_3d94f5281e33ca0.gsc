@@ -148,7 +148,7 @@ class cct_shared_ingame_objective : cluielem {
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
         [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "objectiveText", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "objectiveText", #"");
         [[ self ]]->set_data(localclientnum, "objpoints", 0);
     }
 

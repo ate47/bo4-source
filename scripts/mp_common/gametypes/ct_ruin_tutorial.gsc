@@ -1149,7 +1149,7 @@ function function_1c78b967() {
     level endoncallback(&function_b8f40318, #"hash_6308f4ed0b129e5d", #"dodge_the_hellstorm_objective_success");
     e_player = ct_utils::get_player();
     e_player ct_bots::function_fd2d220e();
-    setdvar(#"hash_3fb2952874e511c2", #"hash_0");
+    setdvar(#"hash_3fb2952874e511c2", #"");
     starttime = gettime();
     n_bomb_timer = starttime + int(16 * 1000);
     setmatchflag("bomb_timer_a", 1);

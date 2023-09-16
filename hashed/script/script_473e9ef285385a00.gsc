@@ -86,9 +86,9 @@ class cct_shared_aar_medals : cluielem {
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
         [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "medalGoldThreshold", #"hash_0");
-        [[ self ]]->set_data(localclientnum, "medalSilverThreshold", #"hash_0");
-        [[ self ]]->set_data(localclientnum, "medalBronzeThreshold", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "medalGoldThreshold", #"");
+        [[ self ]]->set_data(localclientnum, "medalSilverThreshold", #"");
+        [[ self ]]->set_data(localclientnum, "medalBronzeThreshold", #"");
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals

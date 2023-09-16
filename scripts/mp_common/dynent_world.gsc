@@ -198,7 +198,7 @@ function private function_2f394f36() {
 // Checksum 0x40171696, Offset: 0xd58
 // Size: 0xb4
 function function_836af3b3(bundle, state) {
-    hintstring = #"hash_0";
+    hintstring = #"";
     if (isdefined(bundle) && isdefined(bundle.dynentstates) && isdefined(bundle.dynentstates[state]) && isdefined(bundle.dynentstates[state].hintstring)) {
         hintstring = bundle.dynentstates[state].hintstring;
     }

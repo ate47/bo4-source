@@ -624,7 +624,7 @@ function private function_bb88526(n_num) {
 function private function_333c93f3(var_3df8381d) {
     level.var_66a47b57 = spawn("trigger_radius_use", self.origin, 0, 48);
     level.var_66a47b57 triggerignoreteam();
-    level.var_66a47b57 sethintstring(#"hash_0");
+    level.var_66a47b57 sethintstring(#"");
     level.var_66a47b57 setcursorhint("HINT_NOICON");
     level.var_66a47b57.is_visible = 1;
     level.var_66a47b57 endon(#"death");
@@ -2453,7 +2453,7 @@ function private function_34e153c7() {
     foreach (var_a001c66d in level.var_6df70f90) {
         var_aa794395 = var_a001c66d.origin + anglestoforward(var_a001c66d.angles) * -15;
         var_a001c66d.t_interact = spawn("trigger_radius_use", var_aa794395, 0, 64, 64);
-        var_a001c66d.t_interact sethintstring(#"hash_0");
+        var_a001c66d.t_interact sethintstring(#"");
         var_a001c66d.t_interact setcursorhint("HINT_NOICON");
         var_a001c66d.t_interact triggerignoreteam();
         var_a001c66d thread function_a9c796c9(1);
@@ -2589,7 +2589,7 @@ function private function_eab368cb(s_interact) {
     s_interact.var_b31fa41a = util::spawn_model("tag_origin", s_interact.origin, s_interact.angles);
     s_interact.var_b31fa41a clientfield::set("" + #"hash_64f2dd36b17bf17", 1);
     s_interact.t_interact = spawn("trigger_radius_use", s_interact.origin, 0, 128, 64);
-    s_interact.t_interact sethintstring(#"hash_0");
+    s_interact.t_interact sethintstring(#"");
     s_interact.t_interact setcursorhint("HINT_NOICON");
     s_interact.t_interact triggerignoreteam();
     s_interact.t_interact setvisibletoall();
@@ -2689,7 +2689,7 @@ function function_18b599e0() {
         var_7b2c16b1.var_9e7c3935 = util::spawn_model(var_7b2c16b1.model, var_7b2c16b1.origin, var_7b2c16b1.angles);
         var_7b2c16b1.var_307df34b = getent(var_7b2c16b1.target, "targetname");
         var_7b2c16b1.t_interact = spawn("trigger_radius_use", var_7b2c16b1.origin, 0, 64, 64);
-        var_7b2c16b1.t_interact sethintstring(#"hash_0");
+        var_7b2c16b1.t_interact sethintstring(#"");
         var_7b2c16b1.t_interact setcursorhint("HINT_NOICON");
         var_7b2c16b1.t_interact triggerignoreteam();
         var_7b2c16b1.t_interact setinvisibletoall();
@@ -2889,7 +2889,7 @@ function private function_1fb1907c() {
     var_78fda516.var_11e3fffb = util::spawn_model(var_78fda516.model, var_78fda516.origin, var_78fda516.angles);
     var_78fda516.var_11e3fffb playsound(#"hash_13aeee936e183bc7");
     var_78fda516.t_interact = spawn("trigger_radius_use", var_78fda516.origin, 0, 64, 64);
-    var_78fda516.t_interact sethintstring(#"hash_0");
+    var_78fda516.t_interact sethintstring(#"");
     var_78fda516.t_interact setcursorhint("HINT_NOICON");
     var_78fda516.t_interact triggerignoreteam();
     while (1) {
@@ -2913,7 +2913,7 @@ function private function_ca9ddf1b() {
     var_e1b1210d = getent("md_te_mi", "targetname");
     var_aa794395 = var_e1b1210d.origin + anglestoforward(var_e1b1210d.angles) * -15 + vectorscale((0, 0, 1), 5);
     var_e1b1210d.t_interact = spawn("trigger_radius_use", var_aa794395, 0, 64, 64);
-    var_e1b1210d.t_interact sethintstring(#"hash_0");
+    var_e1b1210d.t_interact sethintstring(#"");
     var_e1b1210d.t_interact setcursorhint("HINT_NOICON");
     var_e1b1210d.t_interact triggerignoreteam();
     while (isdefined(var_e1b1210d.t_interact)) {
@@ -3123,7 +3123,7 @@ function private function_29d29761(e_ghost, var_5b9ba5a5) {
 function private function_a9277243() {
     self endon(#"death");
     self.t_interact = spawn("trigger_radius_use", self.origin, 0, 94, 64);
-    self.t_interact sethintstring(#"hash_0");
+    self.t_interact sethintstring(#"");
     self.t_interact setcursorhint("HINT_NOICON");
     self.t_interact triggerignoreteam();
     while (isdefined(self.t_interact)) {
@@ -3213,7 +3213,7 @@ function private function_768e71d5() {
     self.t_interact = spawn("trigger_radius_use", self.origin + anglestoforward(self.angles) * 15 + vectorscale((0, 0, 1), 5), 0, 64, 64);
     self.t_interact enablelinkto();
     self.t_interact linkto(self);
-    self.t_interact sethintstring(#"hash_0");
+    self.t_interact sethintstring(#"");
     self.t_interact setcursorhint("HINT_NOICON");
     self.t_interact triggerignoreteam();
     self.t_interact setvisibletoall();
@@ -3378,7 +3378,7 @@ function private function_252499a3(v_pos) {
     var_b7eee573 setscale(4);
     var_b7eee573 playsound(#"hash_748c338212771d3");
     var_b7eee573.t_interact = spawn("trigger_radius_use", v_pos + vectorscale((0, 0, 1), 20), 0, 64, 64);
-    var_b7eee573.t_interact sethintstring(#"hash_0");
+    var_b7eee573.t_interact sethintstring(#"");
     var_b7eee573.t_interact setcursorhint("HINT_NOICON");
     var_b7eee573.t_interact triggerignoreteam();
     while (isdefined(var_b7eee573)) {

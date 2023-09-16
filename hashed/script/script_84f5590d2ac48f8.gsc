@@ -93,13 +93,13 @@ class cfull_screen_movie : cluielem {
     // Size: 0x104
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "movieName", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "movieName", #"");
         [[ self ]]->set_data(localclientnum, "showBlackScreen", 0);
         [[ self ]]->set_data(localclientnum, "looping", 0);
         [[ self ]]->set_data(localclientnum, "additive", 0);
         [[ self ]]->set_data(localclientnum, "playOutroMovie", 0);
         [[ self ]]->set_data(localclientnum, "skippable", 0);
-        [[ self ]]->set_data(localclientnum, "movieKey", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "movieKey", #"");
     }
 
     // Namespace cfull_screen_movie/full_screen_movie

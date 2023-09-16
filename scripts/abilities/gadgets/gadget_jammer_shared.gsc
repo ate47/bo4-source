@@ -410,7 +410,7 @@ function private function_b16c8865(entity, attackingplayer) {
     if (self == entity) {
         return 0;
     }
-    if (!isplayer(entity) && (!isdefined(entity.model) || entity.model == #"hash_0")) {
+    if (!isplayer(entity) && (!isdefined(entity.model) || entity.model == #"")) {
         return 0;
     }
     if (isactor(entity) && !(isdefined(entity.var_8f61d7f4) && entity.var_8f61d7f4)) {

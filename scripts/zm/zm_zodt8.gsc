@@ -1840,11 +1840,11 @@ function function_8e0b371() {
     self endon(#"disconnect");
     while (1) {
         str_location = function_ab7f70b9(self);
-        str_location = isdefined(str_location) ? str_location : #"hash_0";
+        str_location = isdefined(str_location) ? str_location : #"";
         if (isalive(self) && !(isdefined(self.var_16735873) && self.var_16735873)) {
             self zm_hud::function_29780fb5(str_location);
         } else {
-            self zm_hud::function_29780fb5(#"hash_0");
+            self zm_hud::function_29780fb5(#"");
         }
         wait(0.5);
     }
@@ -2118,11 +2118,11 @@ function function_c52e8ba(player, var_8d5d092c) {
     }
     n_player_index = player getentitynumber();
     if (zm_trial_disable_buys::is_active()) {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
         return 0;
     }
     if (!self zm_fasttravel::function_d06e636b(player)) {
-        self.hint_string[n_player_index] = #"hash_0";
+        self.hint_string[n_player_index] = #"";
     } else if (isdefined(self.stub.var_a4134e51) && !level flag::get(self.stub.var_a4134e51)) {
         switch (self.stub.var_a4134e51) {
         case #"hash_45ae4decdc919e41":
@@ -2132,7 +2132,7 @@ function function_c52e8ba(player, var_8d5d092c) {
             self.hint_string[n_player_index] = #"hash_2bdcee65a214c377";
             break;
         default:
-            self.hint_string[n_player_index] = #"hash_0";
+            self.hint_string[n_player_index] = #"";
             break;
         }
         b_result = 1;

@@ -2547,7 +2547,7 @@ function getweaponclass(weapon) {
     }
     baseweaponparam = weapons::getbaseweapon(weapon);
     baseweaponindex = getbaseweaponitemindex(baseweaponparam);
-    weaponclass = #"hash_0";
+    weaponclass = #"";
     weaponinfo = getunlockableiteminfofromindex(baseweaponindex, 1);
     if (isdefined(weaponinfo)) {
         weaponclass = weaponinfo.itemgroupname;

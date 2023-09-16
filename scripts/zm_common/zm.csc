@@ -1267,7 +1267,7 @@ function update_aat_hud(localclientnum, oldval, newval, bnewent, binitialsnap, f
     str_localized = aat::get_string(newval);
     icon = aat::get_icon(newval);
     if (str_localized == "none") {
-        str_localized = #"hash_0";
+        str_localized = #"";
     }
     controllermodel = getuimodelforcontroller(localclientnum);
     aatmodel = createuimodel(controllermodel, "zmhud.aat");

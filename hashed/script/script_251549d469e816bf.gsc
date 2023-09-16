@@ -126,7 +126,7 @@ class cluielemimage : cluielem {
         [[ self ]]->set_data(localclientnum, "red", 0);
         [[ self ]]->set_data(localclientnum, "green", 0);
         [[ self ]]->set_data(localclientnum, "blue", 0);
-        [[ self ]]->set_data(localclientnum, "material", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "material", #"");
     }
 
     // Namespace cluielemimage/luielemimage

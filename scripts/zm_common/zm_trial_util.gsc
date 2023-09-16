@@ -205,7 +205,7 @@ function stop_timer() {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x8a682e6, Offset: 0x1228
 // Size: 0xdc
-function function_128378c9(n_timer, var_97fd1b64 = 1, var_779bd906 = #"hash_0") {
+function function_128378c9(n_timer, var_97fd1b64 = 1, var_779bd906 = #"") {
     if (!level.var_f995ece6 zm_trial_timer::is_open(self)) {
         level.var_f995ece6 zm_trial_timer::open(self);
         level.var_f995ece6 zm_trial_timer::set_under_round_rules(self, var_97fd1b64);

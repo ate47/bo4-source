@@ -121,7 +121,7 @@ function custom_class_update(localclientnum) {
         var_8ba4443d = 1;
     }
     if (!isdefined(var_8a6eef52)) {
-        var_8a6eef52 = #"hash_0";
+        var_8a6eef52 = #"";
     }
     if (isdefined(var_f0bf9259)) {
         if (isdefined(weapon_options_param) && weapon_options_param != "none") {
@@ -601,7 +601,7 @@ function private function_3e2b5b60(localclientnum, weaponmodel) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0xac03f1a3, Offset: 0x2308
 // Size: 0x61c
-function update_weapon_script_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options = 1, is_item_unlocked = 1, var_8ba4443d = 1, var_8a6eef52 = #"hash_0") {
+function update_weapon_script_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options = 1, is_item_unlocked = 1, var_8ba4443d = 1, var_8a6eef52 = #"") {
     /#
         /#
             assert(isdefined(newweaponstring), "<unknown string>");
@@ -635,12 +635,12 @@ function update_weapon_script_model(localclientnum, newweaponstring, var_f020955
         }
     }
     level.current_weapon[localclientnum] = getweapon(level.last_weapon_name[localclientnum], strtok(level.var_8ad413c[localclientnum], "+"));
-    if (level.current_weapon[localclientnum] == level.weaponnone || !(var_8a6eef52 === #"hash_0")) {
+    if (level.current_weapon[localclientnum] == level.weaponnone || !(var_8a6eef52 === #"")) {
         level.weapon_script_model[localclientnum] delete();
         position = level.weapon_position;
         level.weapon_script_model[localclientnum] = spawn_weapon_model(localclientnum, position.origin, position.angles);
         toggle_locked_weapon_shader(localclientnum, is_item_unlocked);
-        if (!(var_8a6eef52 === #"hash_0")) {
+        if (!(var_8a6eef52 === #"")) {
             level.weapon_script_model[localclientnum] setmodel(var_8a6eef52);
         } else {
             level.weapon_script_model[localclientnum] setmodel(level.last_weapon_name[localclientnum]);

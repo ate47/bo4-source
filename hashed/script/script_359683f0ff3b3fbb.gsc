@@ -170,10 +170,10 @@ class cprototype_hud : cluielem {
         [[ self ]]->set_data(localclientnum, "defense_resource_count", 0);
         [[ self ]]->set_data(localclientnum, "resource_count_visibility", 0);
         [[ self ]]->set_data(localclientnum, "craft_progress", 0);
-        [[ self ]]->set_data(localclientnum, "active_objective_string", #"hash_0");
-        [[ self ]]->set_data(localclientnum, "objective1_string", #"hash_0");
-        [[ self ]]->set_data(localclientnum, "objective2_string", #"hash_0");
-        [[ self ]]->set_data(localclientnum, "objective3_string", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "active_objective_string", #"");
+        [[ self ]]->set_data(localclientnum, "objective1_string", #"");
+        [[ self ]]->set_data(localclientnum, "objective2_string", #"");
+        [[ self ]]->set_data(localclientnum, "objective3_string", #"");
         [[ self ]]->set_data(localclientnum, "objective_prompt_visibility", 0);
         [[ self ]]->set_data(localclientnum, "objective1_strike", 0);
         [[ self ]]->set_data(localclientnum, "objective2_strike", 0);

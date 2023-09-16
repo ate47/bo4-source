@@ -635,7 +635,7 @@ function function_93ccf33d(var_62d90151, var_71bac06, &var_37451b86, &var_7f0244
 // Size: 0x31c
 function function_23bc6f08(localclientnum, var_d0b01271, itemtype, item_data, mode, character_index, var_b34f01f0) {
     /#
-        if (item_data.lootid == #"hash_0") {
+        if (item_data.lootid == #"") {
             return;
         }
         switch (itemtype) {
@@ -734,7 +734,7 @@ function function_4920c25a(localclientnum, menu_name, state) {
             [[ var_d0b01271 ]]->function_158505aa(outfitindex);
             if (mode == 1 && (var_7823b8b1 == -1 || var_7823b8b1 == 8)) {
                 foreach (preset in var_9cf37283.presets) {
-                    if (preset.isvalid && preset.lootid != #"hash_0") {
+                    if (preset.isvalid && preset.lootid != #"") {
                         [[ var_d0b01271 ]]->function_95779b72();
                         foreach (type, option in preset.parts) {
                             [[ var_d0b01271 ]]->set_character_outfit_item(option, type);

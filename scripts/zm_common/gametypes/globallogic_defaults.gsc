@@ -37,7 +37,7 @@ function default_onforfeit(team) {
     wait(10);
     announcement(game.strings[#"opponent_forfeiting_in"], 10, 0);
     wait(10);
-    endreason = #"hash_0";
+    endreason = #"";
     if (!isdefined(team)) {
         setdvar(#"ui_text_endreason", game.strings[#"players_forfeited"]);
         endreason = game.strings[#"players_forfeited"];

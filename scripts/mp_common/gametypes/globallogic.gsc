@@ -2390,7 +2390,7 @@ function private beacon_cp_biodomes_server_room_top_floor_door_rumble() {
     }
     if (isdefined(level.end_game_video)) {
         function_9a022fbc("open");
-        level thread lui::play_movie(level.end_game_video, "fullscreen", 1, 0, 0, #"hash_0", level.var_48ea0e8c);
+        level thread lui::play_movie(level.end_game_video, "fullscreen", 1, 0, 0, #"", level.var_48ea0e8c);
         level waittill(#"movie_done");
     }
     level callback::callback(#"hash_1b5be9017cd4b5fa");

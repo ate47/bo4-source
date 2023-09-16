@@ -53,7 +53,7 @@ class czm_trial_timer : cluielem {
     // Size: 0x68
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "timer_text", #"hash_0");
+        [[ self ]]->set_data(localclientnum, "timer_text", #"");
         [[ self ]]->set_data(localclientnum, "under_round_rules", 0);
     }
 

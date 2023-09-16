@@ -353,9 +353,9 @@ function function_7314957c(player, result) {
     lpselfnum = player getentitynumber();
     lpxuid = player getxuid(1);
     bb::function_e0dfa262(player.name, lpselfnum, lpxuid);
-    primaryweaponname = #"hash_0";
+    primaryweaponname = #"";
     primaryweaponattachstr = "";
-    secondaryweaponname = #"hash_0";
+    secondaryweaponname = #"";
     secondaryweaponattachstr = "";
     if (isdefined(player.primaryloadoutweapon)) {
         primaryweaponname = player.primaryloadoutweapon.name;

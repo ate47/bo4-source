@@ -99,7 +99,7 @@ function function_1dd43d36(spawn_weapon) {
                 attachments[attachments.size] = getdvar(#"hash_721ee06404866532" + i);
             }
         }
-        arrayremovevalue(attachments, #"hash_0");
+        arrayremovevalue(attachments, #"");
         primary_weapon = getweapon(var_d0d43f5a, attachments);
         stashweapon = getdvarint(#"hash_48162cd174e3034d", 0) || isdefined(spawn_weapon);
         if (stashweapon) {
@@ -144,7 +144,7 @@ function function_1dd43d36(spawn_weapon) {
                 attachments[attachments.size] = getdvar(#"hash_c7f896e4dff882e" + i);
             }
         }
-        arrayremovevalue(attachments, #"hash_0");
+        arrayremovevalue(attachments, #"");
         secondary_weapon = getweapon(var_670cba7, attachments);
         if (getdvarint(#"hash_48162cd174e3034d", 0)) {
             if (!isdefined(player.var_de9764de)) {

@@ -164,15 +164,15 @@ function function_6061a15(var_f4b807cb, maxdist, origin, angles, forward, var_4b
 // Checksum 0xd44cb6c5, Offset: 0xbd0
 // Size: 0xfa
 function function_45efe0ab(var_a6762160) {
-    var_caafaa25 = #"hash_0";
+    var_caafaa25 = #"";
     if (isdefined(var_a6762160.weapon) && var_a6762160.weapon != level.weaponnone) {
         if (var_a6762160.itemtype != #"ammo") {
             var_caafaa25 = var_a6762160.weapon.displayname;
         } else {
-            var_caafaa25 = isdefined(var_a6762160.hintstring) ? var_a6762160.hintstring : #"hash_0";
+            var_caafaa25 = isdefined(var_a6762160.hintstring) ? var_a6762160.hintstring : #"";
         }
     } else {
-        var_caafaa25 = isdefined(var_a6762160.hintstring) ? var_a6762160.hintstring : #"hash_0";
+        var_caafaa25 = isdefined(var_a6762160.hintstring) ? var_a6762160.hintstring : #"";
     }
     return var_caafaa25;
 }
@@ -306,7 +306,7 @@ function function_6af455de(localclientnum, origin, angles) {
 // Checksum 0xd6489a63, Offset: 0x13a8
 // Size: 0x1ee
 function function_c62ad9a7(vehicle) {
-    hinttext = #"hash_0";
+    hinttext = #"";
     if (isdefined(vehicle) && isdefined(vehicle.scriptvehicletype)) {
         switch (vehicle.scriptvehicletype) {
         case #"player_atv":

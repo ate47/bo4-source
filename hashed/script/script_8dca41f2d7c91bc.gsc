@@ -337,7 +337,7 @@ function private start_timer(n_timer) {
     if (!level.var_f995ece6 zm_trial_timer::is_open(self)) {
         level.var_f995ece6 zm_trial_timer::open(self);
         level.var_f995ece6 zm_trial_timer::set_under_round_rules(self, 1);
-        level.var_f995ece6 zm_trial_timer::set_timer_text(self, #"hash_0");
+        level.var_f995ece6 zm_trial_timer::set_timer_text(self, #"");
         self zm_trial_util::start_timer(n_timer);
     }
 }

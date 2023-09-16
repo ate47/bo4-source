@@ -56,7 +56,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_
     }
     self notify(#"new_scripted_anim");
     self endon(#"new_scripted_anim", #"death");
-    if (!isdefined(self.model) || self.model == #"hash_0") {
+    if (!isdefined(self.model) || self.model == #"") {
         /#
             /#
                 assertmsg("<unknown string>" + self.origin);
