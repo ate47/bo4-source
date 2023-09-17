@@ -51,7 +51,7 @@
 #ballista,#shoot,#hash_3280eb0abc8ec3ed,0,0,false,false,false,false
 #ballista,#stuck,#hash_78b771973e490d4e,0,0,false,false,false,false
 #trap_activate,#bath,#hash_150ed78f0557df5f,0,0,false,false,false,false
-#trap_activate,#hash_7ebb27b6f598c76a,#hash_37d475cd42f208a1,0,0,false,false,false,false
+#trap_activate,#venom,#hash_37d475cd42f208a1,0,0,false,false,false,false
 #spear_throw,#kill,#hash_3bd43fcc3e46cd40,0,0,false,false,false,false
 #gaia,#hand_battle,#hash_1b054ceded4d2aca,0,0,false,false,false,false
 #gaia,#hash_6a616bcdd1a33c0,#vox_gaia_hand_kill_first,0,0,false,false,false,false
@@ -76,7 +76,7 @@
 #tribute,#initiate,#hash_437e8a096cbe35f8,0,0,false,false,false,false
 #hash_220aee95f14788d6,#hash_7ef905f0a1c74def,#hash_5dfb705eb4fffef,0,0,false,false,false,false
 #hash_220aee95f14788d6,#hash_24a659c7553afe69,#hash_2b8d0adc9ec3b069,0,0,false,false,false,false
-#hash_220aee95f14788d6,#hash_1110449211ef6fc,#hash_4fbde9977e09dcfc,0,0,false,false,false,false
+#hash_220aee95f14788d6,#pegasus_attack,#hash_4fbde9977e09dcfc,0,0,false,false,false,false
 #hash_220aee95f14788d6,#stun,#hash_248248312e0377c1,0,0,false,false,false,false
 #apollo_light,#react,#hash_7c2fc0e6e835e8df,0,0,false,false,false,false
 #boss,#hash_6460734cd3352f95,#hash_213d18d49a47d63b,0,0,false,false,false,false
@@ -87,10 +87,10 @@
 #mirror,#hash_1b5921c0f0bb54d4,#hash_5b6e60c5280dcb1c,0,0,false,false,false,false
 #playhouse,#enter,#hash_3589981fbb315aa6,0,0,true,false,false,false
 #playhouse,#complete,#hash_efff3e5807ca477,0,0,false,false,false,false
-#hash_2f4e9f248cb97922,#hash_1b5921c0f0bb54d4,#hash_74d703743c928320,0,0,false,false,false,false
+#prism,#hash_1b5921c0f0bb54d4,#hash_74d703743c928320,0,0,false,false,false,false
 #hash_1caadf11baffb33b,#react_first,#hash_379aab9b6f7dc5f4,0,0,false,false,false,false
 #hash_7b05be95286ae7f2,#stuck,#hash_497fcbdaee283347,0,0,false,false,false,false
-#hash_2d48e718d42f06df,#hash_5660b1598a41246e,#hash_7d5dcd4efa48be79,0,0,false,false,false,false
+#serp,#hash_5660b1598a41246e,#hash_7d5dcd4efa48be79,0,0,false,false,false,false
 #vision_mode,#enter,#hash_4c8a4f38397df93a,0,0,false,false,false,false
 #war_sounds,#react,#hash_1aa9fc5f46a728d0,0,0,false,false,false,false
 #hash_59a7cb6bdad813ab,#hash_14c7cad64cfaf479,#hash_41371e6903720ece,0,0,false,false,false,false

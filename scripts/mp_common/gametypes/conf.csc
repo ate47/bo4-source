@@ -1,6 +1,6 @@
 // Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
-#using script_28a20e497bd69c36;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish.csc;
 
 #namespace conf;
 
@@ -10,7 +10,7 @@
 // Size: 0x354
 function event_handler[gametype_init] main(eventstruct) {
     if (util::function_8570168d()) {
-        namespace_9096c917::init();
+        ct_tutorial_skirmish::init();
     }
     forcestreamxmodel(#"hash_7a65efdf091dd1ab", 8, -1);
     forcestreamxmodel(#"hash_38504bb508f6c76", 8, -1);

@@ -70,7 +70,7 @@
 #hash_6504afb1698bb9bc,0,0,0,0,0,false,0,false,#,#,#,false,false,false,#,#,#,#,#,false,false,0,?0,0
 #hash_4edb96d5817acc7b,0,0,0,0,0,false,0,false,#,#,#,false,false,false,#,#,#,#,#,false,false,0,?0,0
 #hash_392d85b53bb8733e,0,100,0,0,0,false,0,false,#,#stats_frag_multikill_x2_summary,#medal_frag_multikill_x2_summary,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
-#hash_662fbbd63e067395,0,0,0,0,0,false,0,false,#,#,#,false,false,false,#,#,#,#,#,false,false,0,?0,0
+#frag_grenade_kill,0,0,0,0,0,false,0,false,#,#,#,false,false,false,#,#,#,#,#,false,false,0,?0,0
 #hatchet_kill,0,100,0,0,0,false,0,false,#,#stats_hatchet_kill,#medal_hatchet_kill,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
 #bounce_hatchet_kill,0,500,0,0,0,false,0,false,#,#stats_bounce_hatchet_kill,#medal_bounce_hatchet_kill,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
 #trophy_defense,0,25,0,0,0,false,0,false,#hash_24da2389569c2729,#,#,false,true,false,#,#,#,#,#,false,false,0,?0,0
@@ -147,7 +147,7 @@
 #overwatch_helicopter_kill,0,100,0,0,0,false,0,false,#hash_6cb3f0ef911d73fe,#stats_overwatch_helicopter_kill,#hash_3aa4d8160e690a33,true,true,false,#scorestreak,#,#,#,#,false,false,0,?0,0
 #warthog_kill,0,100,0,0,0,false,0,false,#hash_67e34e8d8ddcd2b,#stats_warthog_kill,#hash_5c7d1e61ea5a8da4,true,true,false,#scorestreak,#,#,#,#,false,false,0,?0,0
 #gunship_kill,0,100,0,0,0,false,0,false,#hash_58d156008586605b,#stats_gunship_kill,#hash_275e88ea6b462dd4,true,true,false,#scorestreak,#,#,#,#,false,false,0,?0,0
-#uav_assist,0,10,0,0,0,false,0,false,#hash_61fc36f6dace7814,#,#,false,true,false,#,#,#,#,#,false,false,0,?0,0
+#uav_assist,0,10,0,0,0,false,0,false,#score/uav_assist,#,#,false,true,false,#,#,#,#,#,false,false,0,?0,0
 #counter_uav_assist,0,25,0,0,0,false,0,false,#hash_76a52aa1e43635a9,#,#,false,true,false,#,#,#,#,#,false,false,25,?0,0
 #battle_shield_kill,0,100,0,0,0,false,0,false,#hash_cf06ec41453c7a5,#stats_battle_shield_kill,#,true,true,false,#,#,#,#,#,false,false,0,?0,0
 #shield_blocked_damage,0,10,0,0,0,false,0,false,#hash_534a387147cf0ff4,#stats_shield_blocked_damage,#,true,true,false,#,#,#,#,#,false,false,0,?0,0

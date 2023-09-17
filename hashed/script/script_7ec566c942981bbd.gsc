@@ -48,9 +48,9 @@ function function_6df391ab() {
     }
     if (!(isdefined(getgametypesetting(#"wzenabletacticalraft")) && getgametypesetting(#"wzenabletacticalraft"))) {
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"zodiac_wz_vehicle", #"");
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"hash_2042fbc5251cee8", #"");
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"hash_5596b963052eb73a", #"");
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"hash_4e20ad723ed1eaaf", #"");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"zodiac_wz_vehicle_black", #"");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"zodiac_wz_vehicle_grey", #"");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"zodiac_wz_vehicle_odg", #"");
     }
     if (!(isdefined(getgametypesetting(#"wzenablearav")) && getgametypesetting(#"wzenablearav"))) {
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"hash_71e093f11898ba29", #"");
@@ -168,7 +168,7 @@ function function_6df391ab() {
         }
     }
     if (isdefined(getgametypesetting(#"wzwetworks")) && getgametypesetting(#"wzwetworks") && !(isdefined(getgametypesetting(#"hash_23e09b48546a7e3b")) && getgametypesetting(#"hash_23e09b48546a7e3b")) && !(isdefined(getgametypesetting(#"wzenablebountyhuntervehicles")) && getgametypesetting(#"wzenablebountyhuntervehicles")) && !(isdefined(getgametypesetting(#"wzenableheavymetalvehicles")) && getgametypesetting(#"wzenableheavymetalvehicles")) && !(isdefined(getgametypesetting(#"wzbigteambattle")) && getgametypesetting(#"wzbigteambattle")) && !(isdefined(getgametypesetting(#"wztestallvehicles")) && getgametypesetting(#"wztestallvehicles"))) {
-        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"hash_4e20ad723ed1eaaf", #"hash_5596b963052eb73a");
+        wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"zodiac_wz_vehicle_odg", #"zodiac_wz_vehicle_grey");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"hash_159e4e48721d6125", #"hash_6f6862f0792bbdf");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"hash_2cb3a37c908b9d9b", #"hash_6626d2dc4952331e");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"hash_139acdd590ca3442", #"open_skyscraper_vehicles_cargo_truck_small");

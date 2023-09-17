@@ -75,7 +75,7 @@ function on_player_connect() {
     self.usedweapons = 0;
     self.lastfiretime = 0;
     self.hits = 0;
-    self.var_2641e022 = 0;
+    self.headshothits = 0;
     if (isdefined(level.var_3a0bbaea) && level.var_3a0bbaea) {
         function_878d649f(self);
     }
@@ -716,7 +716,7 @@ function track_fire(curweapon) {
     if (isdefined(self.pickedupweapons) && isdefined(self.pickedupweapons[curweapon])) {
         weaponpickedup = 1;
     }
-    self trackweaponfirenative(curweapon, 1, isdefined(self.hits) ? self.hits : 0, isdefined(self.var_2641e022) ? self.var_2641e022 : 0, 1, self.class_num, weaponpickedup);
+    self trackweaponfirenative(curweapon, 1, isdefined(self.hits) ? self.hits : 0, isdefined(self.headshothits) ? self.headshothits : 0, 1, self.class_num, weaponpickedup);
     if (isdefined(self.totalmatchshots)) {
         self.totalmatchshots++;
     }
@@ -740,7 +740,7 @@ function track_fire(curweapon) {
         self.shotsmissed = self.pers[#"shotsmissed"];
     }
     self.hits = 0;
-    self.var_2641e022 = 0;
+    self.headshothits = 0;
     pixendevent();
 }
 

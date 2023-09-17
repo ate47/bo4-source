@@ -99,7 +99,7 @@ function on_player_connect() {
     }
     self.usedweapons = 0;
     self.hits = 0;
-    self.var_2641e022 = 0;
+    self.headshothits = 0;
 }
 
 // Namespace weaponobjects/weaponobjects

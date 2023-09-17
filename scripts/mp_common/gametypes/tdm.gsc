@@ -12,7 +12,7 @@
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;
 #using scripts\mp_common\gametypes\gametype.gsc;
-#using script_4c8dba49908aecc2;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\core_common\spawning_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -51,7 +51,7 @@ function event_handler[gametype_init] main(eventstruct) {
     globallogic_audio::set_leader_gametype_dialog("startTeamDeathmatch", "hcStartTeamDeathmatch", "gameBoost", "gameBoost", "bbStartTeamDeathmatch", "hcbbStartTeamDeathmatch");
     globallogic_spawn::addsupportedspawnpointtype("tdm");
     if (util::function_8570168d()) {
-        namespace_9096c917::init();
+        ct_tutorial_skirmish::init();
     }
     if (getdvarint(#"hash_5795d85dc4b1b0d9", 0)) {
         level.var_49a15413 = getdvarint(#"hash_5795d85dc4b1b0d9", 0);

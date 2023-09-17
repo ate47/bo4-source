@@ -25,7 +25,7 @@ function autoexec __init__system__() {
 // Checksum 0x7079ea14, Offset: 0x150
 // Size: 0x154
 function private __init__() {
-    plannercommanderutility::registerutilityapi(#"commanderscoreage", &_monkey_water_corvus_vo_cleared);
+    plannercommanderutility::registerutilityapi(#"commanderscoreage", &function_cb29a211);
     plannercommanderutility::registerdaemonapi(#"daemonzmaltars", &function_ea95685);
     plannercommanderutility::registerdaemonapi(#"daemonzmblockers", &function_80c4721f);
     plannercommanderutility::registerdaemonapi(#"daemonzmchests", &function_73588006);
@@ -220,7 +220,7 @@ function private function_873b1369(commander) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xb1098e6c, Offset: 0x1038
 // Size: 0x9a
-function private _monkey_water_corvus_vo_cleared(commander, squad, constants) {
+function private function_cb29a211(commander, squad, constants) {
     /#
         assert(isdefined(constants[#"maxage"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     #/

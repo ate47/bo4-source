@@ -1,5 +1,5 @@
 // Atian COD Tools GSC decompiler test
-#using script_28a20e497bd69c36;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish.csc;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\shoutcaster.csc;
 #using scripts\core_common\callbacks_shared.csc;
@@ -16,7 +16,7 @@ function event_handler[gametype_init] main(eventstruct) {
         setsoundcontext("bomb_plant", "silent");
     }
     if (util::function_8570168d()) {
-        namespace_9096c917::init();
+        ct_tutorial_skirmish::init();
     }
 }
 

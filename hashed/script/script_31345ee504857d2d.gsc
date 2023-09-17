@@ -42,7 +42,7 @@ function __init__() {
 function private function_2f0f1b62() {
     nodes = getallnodes();
     foreach (node in nodes) {
-        if (isdefined(node.var_514e7397) && node.var_514e7397 && isdefined(node.target)) {
+        if (isdefined(node.interact_node) && node.interact_node && isdefined(node.target)) {
             if (isdefined(node.var_71c87324) && node.var_71c87324) {
                 continue;
             }
@@ -71,7 +71,7 @@ function function_64d25a18(entity) {
     if (!entity isatcovernode()) {
         return 0;
     }
-    if (!(isdefined(entity.node.var_514e7397) && entity.node.var_514e7397)) {
+    if (!(isdefined(entity.node.interact_node) && entity.node.interact_node)) {
         return 0;
     }
     if (isdefined(entity.node.var_31c05612)) {

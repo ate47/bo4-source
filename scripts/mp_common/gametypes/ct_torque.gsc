@@ -541,17 +541,17 @@ function function_96d0afea(var_e8ee1cd1, var_c8e04bda = 0) {
     nd_guard = getnode(level.var_94dda6f.target, "targetname");
     nd_guard thread function_944278fd(8, 1, 300, 800, 0, 1);
     level.var_94dda6f waittill(#"trigger");
-    var_8c09fb7b = 0;
+    b_secured = 0;
     self thread ct_utils::function_329f9ba6(#"hash_528794fbc2dce8d4", 7, "grey", 1);
     self thread ct_utils::function_61c3d59c(#"hash_64646dd1e309ce97", undefined);
-    while (!var_8c09fb7b) {
+    while (!b_secured) {
         var_656eb4ea = 0;
         foreach (zombie in level.a_ai_zombies) {
             if (isalive(zombie) && zombie istouching(level.var_94dda6f)) {
                 var_656eb4ea++;
             }
         }
-        var_8c09fb7b = var_656eb4ea <= var_c8e04bda;
+        b_secured = var_656eb4ea <= var_c8e04bda;
         wait(0.1);
     }
     level.var_748a14fe flag::set("vip_checkpoint_action");

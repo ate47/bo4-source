@@ -938,8 +938,8 @@ function private update_attacker(einflictor, eattacker, smeansofdeath) {
                 if (!isdefined(eattacker.hits)) {
                     eattacker.hits = 0;
                 }
-                if (!isdefined(eattacker.var_2641e022)) {
-                    eattacker.var_2641e022 = 0;
+                if (!isdefined(eattacker.headshothits)) {
+                    eattacker.headshothits = 0;
                 }
                 if (!isdefined(eattacker.shotsfired)) {
                     eattacker.shotsfired = 0;
@@ -956,7 +956,7 @@ function private update_attacker(einflictor, eattacker, smeansofdeath) {
                 }
                 eattacker.hits++;
                 if (smeansofdeath == "MOD_HEAD_SHOT") {
-                    eattacker.var_2641e022++;
+                    eattacker.headshothits++;
                 }
                 shotsmissed = eattacker.shotsfired - eattacker.shotshit;
                 if (shotsmissed < 0) {

@@ -65,7 +65,7 @@ function on_game_playing() {
     level flag::wait_till("first_player_spawned");
     wait(getdvarfloat(#"hash_205d729c5c415715", 0));
     level util::delay(1.5, undefined, &function_fb047aa8);
-    level util::delay(1.5, undefined, &function_4601a968);
+    level util::delay(1.5, undefined, &stop_exploders);
     level thread scene::play(#"p8_fxanim_mp_ele_tree_gust_01_bundle", "shot 2");
     level thread scene::play(#"p8_fxanim_mp_ele_tree_gust_02_bundle", "shot 2");
     level thread scene::play(#"p8_fxanim_mp_ele_flower_pots_gust_bundle");
@@ -83,7 +83,7 @@ function function_fb047aa8() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x8f0cb42e, Offset: 0x540
 // Size: 0x34
-function function_4601a968() {
+function stop_exploders() {
     exploder::stop_exploder("fxexp_mist_gust");
     exploder::stop_exploder("fxexp_snow_gust");
 }

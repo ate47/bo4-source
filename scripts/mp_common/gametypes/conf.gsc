@@ -8,7 +8,7 @@
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;
 #using scripts\mp_common\gametypes\dogtags.gsc;
-#using script_4c8dba49908aecc2;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\spawning_shared.gsc;
@@ -42,7 +42,7 @@ function event_handler[gametype_init] main(eventstruct) {
     globallogic_audio::set_leader_gametype_dialog("startKillConfirmed", "hcStartKillConfirmed", "gameBoost", "gameBoost", "bbStartKillConfirmed", "hcbbStartKillConfirmed");
     if (util::function_8570168d()) {
         level.var_c7494a5d = 1;
-        namespace_9096c917::init();
+        ct_tutorial_skirmish::init();
     }
 }
 

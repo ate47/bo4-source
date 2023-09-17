@@ -1121,7 +1121,7 @@ function _init_instance(str_scenedef, a_ents, b_test_run = 0) {
             assert(isdefined(s_bundle), "<unknown string>" + (isdefined(self.origin) ? self.origin : "<unknown string>") + "<unknown string>" + str_scenedef + "<unknown string>");
         #/
     #/
-    if (!(isdefined(self.var_146935c1) && self.var_146935c1)) {
+    if (!(isdefined(self.script_ignore_active_scene_check) && self.script_ignore_active_scene_check)) {
         o_scene = get_active_scene(str_scenedef);
     }
     if (!isdefined(o_scene)) {

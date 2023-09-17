@@ -2494,10 +2494,10 @@ function function_f8cec907(localclientnum, menu_name, state) {
     playmaincamxcam(localclientnum, #"hash_29ce5a87ce25b761", 0, "", "", camera_ent.origin, camera_ent.angles);
     if (isdefined(state)) {
         args = strtok(state, ";");
-        var_da416ad1 = int(isdefined(args[0]) ? args[0] : 0);
+        char_index = int(isdefined(args[0]) ? args[0] : 0);
         outfit_index = int(isdefined(args[1]) ? args[1] : 0);
         [[ var_d0b01271 ]]->set_character_mode(3);
-        [[ var_d0b01271 ]]->set_character_index(var_da416ad1);
+        [[ var_d0b01271 ]]->set_character_index(char_index);
         level notify("updateSpecialistCustomization" + localclientnum, {#outfit_index:outfit_index, #event_name:"changeOutfit"});
     }
 }

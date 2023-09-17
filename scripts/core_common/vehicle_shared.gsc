@@ -3285,8 +3285,8 @@ function function_93844822(e_player, b_skip_scene, b_enter = 1) {
             debug_scene = getdvarstring(#"hash_56b164d8150f9e8d", "");
             if (debug_scene != "") {
                 str_scene = debug_scene;
-            } else if (isdefined(self.var_e31ecd10)) {
-                str_scene = self.var_e31ecd10;
+            } else if (isdefined(self.script_vh_entrance)) {
+                str_scene = self.script_vh_entrance;
             } else if (isdefined(self.settings) && isdefined(self.settings.var_fbbdbf11)) {
                 str_scene = self.settings.var_fbbdbf11;
                 if (!isdefined(e_player.companion)) {
@@ -3426,13 +3426,13 @@ function function_19bd94a1(var_3051fdcd, b_one_shot = 0) {
         }
     }
     foreach (vh in a_vehicles) {
-        vh.var_e31ecd10 = var_3051fdcd;
+        vh.script_vh_entrance = var_3051fdcd;
     }
     if (b_one_shot) {
         array::wait_till(a_vehicles, "vehicle_scene_done");
         foreach (vh in a_vehicles) {
             if (isdefined(vh)) {
-                vh.var_e31ecd10 = undefined;
+                vh.script_vh_entrance = undefined;
             }
         }
     }

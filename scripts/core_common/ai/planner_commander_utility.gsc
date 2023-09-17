@@ -1277,7 +1277,7 @@ function private function_14c766b3(planner, constant) {
     hasplayers = players.size > 0;
     var_8769837e = !hasplayers || target[#"strategy"].("doppelbotsinteractions") == #"hash_7fa10febd2862b4a";
     var_f75536ec = !hasplayers || target[#"strategy"].("companionsinteractions") == #"hash_7fa10febd2862b4a";
-    var_f22aefd = strategiccommandutility::function_698a5382(target[#"strategy"]);
+    airvehicles = strategiccommandutility::function_698a5382(target[#"strategy"]);
     groundvehicles = strategiccommandutility::function_54032f13(target[#"strategy"]);
     var_eda803e5 = groundvehicles;
     validsquads = [];
@@ -1293,7 +1293,7 @@ function private function_14c766b3(planner, constant) {
             if (var_3db29cab && !bot gameobjects::has_key_object(object)) {
                 continue;
             }
-            if (var_f22aefd && member[#"type"] == "air") {
+            if (airvehicles && member[#"type"] == "air") {
                 validsquads[validsquads.size] = squad;
                 break;
             } else if (groundvehicles && member[#"type"] == "ground") {

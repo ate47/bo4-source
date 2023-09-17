@@ -153,8 +153,8 @@ function function_5726a711() {
                 var_a8539bf6.angles = var_5e63b00d.angles;
                 var_a8539bf6.model = var_5e63b00d.model;
                 gameobject = var_2d727ba0.gameobject;
-                if (isdefined(var_5e63b00d.var_3b9b6b78)) {
-                    gameobject = var_5e63b00d.var_3b9b6b78;
+                if (isdefined(var_5e63b00d.scriptbundle_gameobject_override)) {
+                    gameobject = var_5e63b00d.scriptbundle_gameobject_override;
                 }
                 var_a8539bf6.var_5b026504 = var_5e63b00d.script_objective;
                 var_a8539bf6.var_ef146db5 = var_5e63b00d.var_d513a1cb;
@@ -164,7 +164,7 @@ function function_5726a711() {
                     if (!(isdefined(var_5e63b00d.script_enable_on_start) && var_5e63b00d.script_enable_on_start)) {
                         var_a8539bf6 gameobjects::disable_object(1);
                     }
-                    if (isdefined(var_5e63b00d.var_d1cae5f4) && var_5e63b00d.var_d1cae5f4) {
+                    if (isdefined(var_5e63b00d.script_autoactivate_trap) && var_5e63b00d.script_autoactivate_trap) {
                         if (isdefined(var_5e63b00d.script_waittill)) {
                             var_5e63b00d thread function_8ecf6615(var_a8539bf6.mdl_gameobject.var_3af54106);
                         }

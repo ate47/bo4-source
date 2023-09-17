@@ -357,9 +357,9 @@ function private function_be478e08(var_a40eadd) {
 // Size: 0x1d8
 function private function_ad40f5b3() {
     foreach (s_wave_manager in level.a_s_wave_managers) {
-        if (isdefined(level.var_28c22d88) && isdefined(s_wave_manager.var_4053bf4d)) {
+        if (isdefined(level.var_28c22d88) && isdefined(s_wave_manager.script_enable_on_skipto)) {
             foreach (var_d3440450 in level.var_28c22d88) {
-                if (var_d3440450 == s_wave_manager.var_4053bf4d) {
+                if (var_d3440450 == s_wave_manager.script_enable_on_skipto) {
                     s_wave_manager wave_manager::start();
                     s_wave_manager.var_f50b617f = 1;
                 }
@@ -567,7 +567,7 @@ function private start_internal(s_wave_manager_struct, str_team, b_looping, str_
         }
         var_dcd6c23.m_str_team = util::get_team_mapping(s_wave_manager_struct.script_team);
         var_dcd6c23.var_f68bc980 = isdefined(s_wave_manager_struct.var_3868f387) && s_wave_manager_struct.var_3868f387;
-        var_dcd6c23.var_a709a080 = isdefined(s_wave_manager_struct.var_8e0ed81f) && s_wave_manager_struct.var_8e0ed81f;
+        var_dcd6c23.var_a709a080 = isdefined(s_wave_manager_struct.script_auto_delete) && s_wave_manager_struct.script_auto_delete;
         if (isdefined(s_wave_manager_struct.var_a69f424f)) {
             foreach (var_7635207b in s_wave_manager_struct.var_a69f424f) {
                 if (!isdefined(var_dcd6c23.var_23802722)) {

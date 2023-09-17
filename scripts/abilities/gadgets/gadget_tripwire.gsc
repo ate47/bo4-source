@@ -353,14 +353,14 @@ function function_55e95173(hitent) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xdf145ab8, Offset: 0x16b0
 // Size: 0x250
-function function_430b5b99(entity, var_7ffaab28) {
+function function_430b5b99(entity, tripmine) {
     if (sessionmodeiswarzonegame() && isdefined(self.var_c2f0f6da) && self.var_c2f0f6da && !isdefined(entity)) {
         return 1;
     }
     if (!isdefined(entity)) {
         return 0;
     }
-    if (!util::function_fbce7263(entity.team, var_7ffaab28.team)) {
+    if (!util::function_fbce7263(entity.team, tripmine.team)) {
         return 0;
     }
     if (!isplayer(entity) && !isvehicle(entity) && !isai(entity) && !entity ismovingplatform() && !(isdefined(entity.var_4f564337) && entity.var_4f564337)) {
@@ -375,7 +375,7 @@ function function_430b5b99(entity, var_7ffaab28) {
         } else {
             owner = entity getseatoccupant(0);
         }
-        if (isplayer(owner) && !util::function_fbce7263(owner.team, var_7ffaab28.team)) {
+        if (isplayer(owner) && !util::function_fbce7263(owner.team, tripmine.team)) {
             return 0;
         }
     }

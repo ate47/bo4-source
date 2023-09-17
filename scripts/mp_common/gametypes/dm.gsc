@@ -7,7 +7,7 @@
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;
-#using script_4c8dba49908aecc2;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\spawning_shared.gsc;
@@ -40,7 +40,7 @@ function event_handler[gametype_init] main(eventstruct) {
     globallogic_audio::set_leader_gametype_dialog("startFreeForAll", "hcStartFreeForAll", "gameBoost", "gameBoost", "bbStartFreeForAll", "hcbbStartFreeForAll");
     if (util::function_8570168d()) {
         level.is_dm = 1;
-        namespace_9096c917::init();
+        ct_tutorial_skirmish::init();
     }
 }
 

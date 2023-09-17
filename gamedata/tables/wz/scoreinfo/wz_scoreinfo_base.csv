@@ -7,7 +7,7 @@
 #multikill_7,0,150,0,0,0,false,3,false,#,#hash_636e46d7c211e9c0,#medal_wz_ultrakill,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
 #multikill_more_than_7,0,175,0,0,0,false,3,false,#,#hash_469482ab3cbcb986,#medal_wz_killchain,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
 #revives,0,25,0,0,0,false,0,false,#,#stats_revives,#medal_wz_revives,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
-#assists,0,25,0,0,0,false,0,false,#,#hash_784c2e93923a46eb,#medal_wz_assists,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
+#assists,0,25,0,0,0,false,0,false,#,#stats_assists,#medal_wz_assists,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
 #hash_36b13ed6e99e6f06,0,50,0,0,0,false,0,false,#,#hash_6e4a9baca51be0d2,#medal_wz_squad_wipe_duo,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
 #hash_6f41f79a13199c79,0,100,0,0,0,false,0,false,#,#hash_50d79b09bdd96a55,#medal_wz_squad_wipe_quad,true,true,false,#combat,#,#,#,#,false,false,0,?0,0
 #zombie_kills,0,10,0,0,0,false,0,false,#,#hash_37f91979b0e8701d,#medal_wz_zombie_kills,true,true,false,#combat,#,#,#,#,false,false,0,?0,0

@@ -3617,7 +3617,7 @@ function has_flak_jacket_perk_purchased_and_equipped() {
 // Checksum 0x804998cb, Offset: 0xa850
 // Size: 0x32
 function has_blind_eye_perk_purchased_and_equipped() {
-    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_nottargetedbyairsupport", #"hash_1989bed2fa3c7b67");
+    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_nottargetedbyairsupport", #"specialty_nottargetedbyairsupport|specialty_nokillstreakreticle");
 }
 
 // Namespace util/util_shared
@@ -3633,7 +3633,7 @@ function has_ghost_perk_purchased_and_equipped() {
 // Checksum 0x5f9006, Offset: 0xa8c0
 // Size: 0x32
 function has_tactical_mask_purchased_and_equipped() {
-    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_stunprotection", #"hash_18d73d37c73a8114");
+    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_stunprotection", #"specialty_stunprotection|specialty_flashprotection|specialty_proximityprotection");
 }
 
 // Namespace util/util_shared
@@ -3657,7 +3657,7 @@ function has_cold_blooded_perk_purchased_and_equipped() {
 // Checksum 0x97725a72, Offset: 0xa980
 // Size: 0x32
 function has_hard_wired_perk_purchased_and_equipped() {
-    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_immunecounteruav", #"hash_6537e48a9b3f0527");
+    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_immunecounteruav", #"specialty_immunecounteruav|specialty_immuneemp|specialty_immunetriggerc4|specialty_immunetriggershock|specialty_immunetriggerbetty|specialty_sixthsensejammer|specialty_trackerjammer|specialty_immunesmoke");
 }
 
 // Namespace util/util_shared
@@ -3673,7 +3673,7 @@ function has_gung_ho_perk_purchased_and_equipped() {
 // Checksum 0x492640e5, Offset: 0xaa00
 // Size: 0x32
 function has_fast_hands_perk_purchased_and_equipped() {
-    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_fastweaponswitch", #"hash_7fc4f09d0daa7cc6");
+    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_fastweaponswitch", #"specialty_fastweaponswitch|specialty_sprintrecovery|specialty_sprintfirerecovery");
 }
 
 // Namespace util/util_shared
@@ -3689,7 +3689,7 @@ function has_scavenger_perk_purchased_and_equipped() {
 // Checksum 0x19bc9c60, Offset: 0xaa70
 // Size: 0x32
 function has_jetquiet_perk_purchased_and_equipped() {
-    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_jetquiet", #"hash_37417e9ac4c35344");
+    return self has_purchased_perk_equipped_with_specific_stat(#"specialty_jetquiet", #"specialty_jetnoradar|specialty_jetquiet");
 }
 
 // Namespace util/util_shared

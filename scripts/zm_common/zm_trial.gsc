@@ -592,7 +592,7 @@ function private function_4dbf2663() {
                     round_info.name = tablelookupcolumnforrow(table, row, 1);
                     round_info.round = round;
                     round_info.name_str = tablelookupcolumnforrow(table, row, 2);
-                    round_info.var_695d8fd1 = tablelookupcolumnforrow(table, row, 3);
+                    round_info.desc_str = tablelookupcolumnforrow(table, row, 3);
                     round_info.challenges = [];
                 }
                 /#

@@ -1051,7 +1051,7 @@ function function_c8592985() {
 // Params 0, eflags: 0x0
 // Checksum 0xf738b690, Offset: 0x5f00
 // Size: 0x9c
-function function_5a1adde5() {
+function strike_team() {
     level endon(#"combattraining_logic_finished");
     wait(1);
     e_player = getplayers()[0];

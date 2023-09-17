@@ -557,12 +557,12 @@ function function_176070dc() {
         } else {
             str_team_override = undefined;
         }
-        s_radiant init_game_objects(undefined, str_team_override, s_radiant.var_5c8915f4, undefined, undefined, s_radiant.var_17afe51d);
+        s_radiant init_game_objects(undefined, str_team_override, s_radiant.var_5c8915f4, undefined, undefined, s_radiant.script_objective_override);
         s_radiant disable_object(1);
         if (isdefined(s_radiant.script_enable_on_start) && s_radiant.script_enable_on_start) {
             s_radiant thread enable_object(1);
         }
-        if (isdefined(s_radiant.script_carry_object_key_target) && isdefined(s_radiant.var_91fc94c1) && s_radiant.var_91fc94c1) {
+        if (isdefined(s_radiant.script_carry_object_key_target) && isdefined(s_radiant.script_destroy_keys_after_use) && s_radiant.script_destroy_keys_after_use) {
             s_radiant function_e7e3d146();
         }
         s_radiant function_71479ff3();
@@ -590,8 +590,8 @@ function private init_flags() {
     if (isdefined(self.script_flag_false)) {
         util::create_flags_and_return_tokens(self.script_flag_false);
     }
-    if (isdefined(self.var_fff2f8a8)) {
-        util::create_flags_and_return_tokens(self.var_fff2f8a8);
+    if (isdefined(self.script_flag_set_start)) {
+        util::create_flags_and_return_tokens(self.script_flag_set_start);
     }
     if (isdefined(self.script_flag_set)) {
         util::create_flags_and_return_tokens(self.script_flag_set);
@@ -612,8 +612,8 @@ function private function_35a012bf() {
         self util::function_fb80e9ca();
     }
     self flag::set("enabled");
-    if (isdefined(self.var_fff2f8a8)) {
-        util::function_aebdb74f(self.var_fff2f8a8);
+    if (isdefined(self.script_flag_set_start)) {
+        util::function_aebdb74f(self.script_flag_set_start);
     }
 }
 
@@ -681,8 +681,8 @@ function private function_d4107dde(var_bf5ad193) {
 // Size: 0x248
 function private function_2f3ba1ad() {
     foreach (s_key in struct::get_script_bundle_instances("gameobject")) {
-        if (isdefined(s_key.var_51676529)) {
-            var_fac9218d = strtok(s_key.var_51676529, " ");
+        if (isdefined(s_key.script_carry_object_key_src)) {
+            var_fac9218d = strtok(s_key.script_carry_object_key_src, " ");
             s_key.a_s_locks = [];
             foreach (var_9d32a381 in var_fac9218d) {
                 s_key.a_s_locks = arraycombine(s_key.a_s_locks, struct::get_array(var_9d32a381, "script_carry_object_key_target"), 0, 0);
@@ -694,7 +694,7 @@ function private function_2f3ba1ad() {
                     s_lock.var_4cd30731 = s_key;
                 }
             }
-            if (isdefined(s_key.var_3a8907ff) && s_key.var_3a8907ff && isdefined(s_key.a_s_locks)) {
+            if (isdefined(s_key.script_toggle_lock_visibility) && s_key.script_toggle_lock_visibility && isdefined(s_key.a_s_locks)) {
                 s_key thread function_2e028a0e();
             }
         }

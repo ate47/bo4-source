@@ -34,7 +34,7 @@ function team(kvp, var_dad37549, var_b095575e = 0) {
     if (isdefined(level.heroes)) {
         foreach (ai_hero in level.heroes) {
             foreach (s_teleport in var_bac46abd.a_s_heroes) {
-                if (isdefined(s_teleport.var_f7486b69) && s_teleport.var_f7486b69 != ai_hero.targetname) {
+                if (isdefined(s_teleport.script_hero_name) && s_teleport.script_hero_name != ai_hero.targetname) {
                     continue;
                 }
                 if (!(isdefined(s_teleport.b_used) && s_teleport.b_used)) {
@@ -79,7 +79,7 @@ function hero(ai_hero, kvp, var_dad37549) {
     str_key = var_20212d26.str_key;
     str_value = var_20212d26.str_value;
     foreach (s_teleport in level.var_c89d2304) {
-        if (isdefined(s_teleport.var_f7486b69) && s_teleport.var_f7486b69 != ai_hero.targetname) {
+        if (isdefined(s_teleport.script_hero_name) && s_teleport.script_hero_name != ai_hero.targetname) {
             continue;
         }
         if (s_teleport.(str_key) === str_value && !(isdefined(s_teleport.b_used) && s_teleport.b_used)) {
@@ -124,8 +124,8 @@ function private function_e6615993(kvp, var_dad37549) {
     if (isdefined(self.script_teleport_location)) {
         str_value = self.script_teleport_location;
         str_key = "script_teleport_location";
-        if (!isdefined(var_dad37549) && isdefined(self.var_3e93c0f9)) {
-            var_dad37549 = self.var_3e93c0f9;
+        if (!isdefined(var_dad37549) && isdefined(self.script_regroup_distance)) {
+            var_dad37549 = self.script_regroup_distance;
         }
     } else if (isdefined(kvp) && isarray(kvp)) {
         str_value = kvp[0];
@@ -209,7 +209,7 @@ function private function_29305761(s_teleport, var_dad37549, var_b095575e = 0) {
     }
     if (self isinvehicle()) {
         vehicle = self getvehicleoccupied();
-        if (isdefined(s_teleport.var_ae20ad9b) && s_teleport.var_ae20ad9b) {
+        if (isdefined(s_teleport.script_allow_vehicle) && s_teleport.script_allow_vehicle) {
             vehicle.origin = s_teleport.origin;
             vehicle.angles = s_teleport.angles;
             self notify(#"teleported");

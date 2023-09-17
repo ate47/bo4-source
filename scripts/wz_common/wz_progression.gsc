@@ -762,7 +762,7 @@ function function_35ac33e1(attacker, victim, var_c5948a69 = {}) {
         attacker give_xp("kill", #"killxp", var_ced14f4b);
         attacker stats::function_b7f80d87(#"kills", 1);
         if (isdefined(attacker.pers[#"timesrevived"]) && attacker.pers[#"timesrevived"] > 0) {
-            attacker stats::function_d40764f3(#"hash_602e8101bd834f5d", 1);
+            attacker stats::function_d40764f3(#"kills_after_revive", 1);
         }
         var_2fba6abe = attacker.var_37ef8626;
         currenttime = gettime();

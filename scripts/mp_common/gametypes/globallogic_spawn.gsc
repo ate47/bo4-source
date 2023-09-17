@@ -133,61 +133,61 @@ function function_82ca1565(spawnpoint, gametype) {
         return (isdefined(spawnpoint.frontline) && spawnpoint.frontline);
         break;
     case #"dom_flag_a":
-        return (isdefined(spawnpoint.var_50156c55) && spawnpoint.var_50156c55);
+        return (isdefined(spawnpoint.domination_flag_a) && spawnpoint.domination_flag_a);
         break;
     case #"dom_flag_b":
-        return (isdefined(spawnpoint.var_3e85c936) && spawnpoint.var_3e85c936);
+        return (isdefined(spawnpoint.domination_flag_b) && spawnpoint.domination_flag_b);
         break;
     case #"dom_flag_c":
-        return (isdefined(spawnpoint.var_6cda25e2) && spawnpoint.var_6cda25e2);
+        return (isdefined(spawnpoint.domination_flag_c) && spawnpoint.domination_flag_c);
         break;
     case #"hash_6056c310624d5afd":
-        return (isdefined(spawnpoint.var_5b72d24c) && spawnpoint.var_5b72d24c);
+        return (isdefined(spawnpoint.demolition_attacker_a) && spawnpoint.demolition_attacker_a);
         break;
     case #"hash_6056c010624d55e4":
-        return (isdefined(spawnpoint.var_f3739d6) && spawnpoint.var_f3739d6);
+        return (isdefined(spawnpoint.demolition_attacker_b) && spawnpoint.demolition_attacker_b);
         break;
     case #"hash_6ef2d89ce8ee9a32":
-        return (isdefined(spawnpoint.var_efff95db) && spawnpoint.var_efff95db);
+        return (isdefined(spawnpoint.demolition_remove_a) && spawnpoint.demolition_remove_a);
         break;
     case #"hash_6ef2d79ce8ee987f":
-        return (isdefined(spawnpoint.var_58e9e7ae) && spawnpoint.var_58e9e7ae);
+        return (isdefined(spawnpoint.demolition_remove_b) && spawnpoint.demolition_remove_b);
         break;
     case #"dem_overtime":
         return (isdefined(spawnpoint.demolition_overtime) && spawnpoint.demolition_overtime);
         break;
     case #"hash_7cb9d0a58715cebe":
-        return (isdefined(spawnpoint.var_20e05c9f) && spawnpoint.var_20e05c9f);
+        return (isdefined(spawnpoint.demolition_start_spawn) && spawnpoint.demolition_start_spawn);
         break;
     case #"hash_6d83e5f1bdefa7dd":
-        return (isdefined(spawnpoint.var_7d98dad4) && spawnpoint.var_7d98dad4);
+        return (isdefined(spawnpoint.demolition_defender_a) && spawnpoint.demolition_defender_a);
         break;
     case #"hash_6d83e2f1bdefa2c4":
-        return (isdefined(spawnpoint.var_93530648) && spawnpoint.var_93530648);
+        return (isdefined(spawnpoint.demolition_defender_b) && spawnpoint.demolition_defender_b);
         break;
     case #"control_attack_add_0":
-        return (isdefined(spawnpoint.var_ce26d39d) && spawnpoint.var_ce26d39d);
+        return (isdefined(spawnpoint.control_attack_add_a) && spawnpoint.control_attack_add_a);
         break;
     case #"control_attack_add_1":
-        return (isdefined(spawnpoint.var_dfd87700) && spawnpoint.var_dfd87700);
+        return (isdefined(spawnpoint.control_attack_add_b) && spawnpoint.control_attack_add_b);
         break;
     case #"control_attack_remove_0":
-        return (isdefined(spawnpoint.var_2c6a069f) && spawnpoint.var_2c6a069f);
+        return (isdefined(spawnpoint.control_attack_remove_a) && spawnpoint.control_attack_remove_a);
         break;
     case #"control_attack_remove_1":
-        return (isdefined(spawnpoint.var_5f196bfd) && spawnpoint.var_5f196bfd);
+        return (isdefined(spawnpoint.control_attack_remove_b) && spawnpoint.control_attack_remove_b);
         break;
     case #"control_defend_add_0":
         return (isdefined(spawnpoint.registerlast_mapshouldstun) && spawnpoint.registerlast_mapshouldstun);
         break;
     case #"control_defend_add_1":
-        return (isdefined(spawnpoint.var_8dfc136) && spawnpoint.var_8dfc136);
+        return (isdefined(spawnpoint.control_defend_add_b) && spawnpoint.control_defend_add_b);
         break;
     case #"control_defend_remove_0":
-        return (isdefined(spawnpoint.var_ba7e6e0d) && spawnpoint.var_ba7e6e0d);
+        return (isdefined(spawnpoint.control_defend_remove_a) && spawnpoint.control_defend_remove_a);
         break;
     case #"control_defend_remove_1":
-        return (isdefined(spawnpoint.var_5cc5b29d) && spawnpoint.var_5cc5b29d);
+        return (isdefined(spawnpoint.control_defend_remove_b) && spawnpoint.control_defend_remove_b);
         break;
     case #"ct":
         return (isdefined(spawnpoint.ct) && spawnpoint.ct);

@@ -406,7 +406,7 @@ function genericbulletkill(data, victim, weapon) {
         if (data.victim.idflags & 8) {
             player stats::function_dad108fa(#"kill_enemy_through_objects", 1);
             if (isdefined(weapon) && weaponhasattachment(weapon, "fmj")) {
-                player stats::function_dad108fa(#"hash_5cd4af996e3202e", 1);
+                player stats::function_dad108fa(#"kill_enemy_through_objects_with_fmj", 1);
             }
         }
     }
@@ -988,14 +988,14 @@ function getfinalkill(player) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x4d0f80d6, Offset: 0x3dd0
 // Size: 0xdc
-function destroy_killstreak_vehicle(weapon, vehicle, var_734a4410) {
+function destroy_killstreak_vehicle(weapon, vehicle, hatchet_kill_stat) {
     if (!isplayer(self) || !isdefined(weapon)) {
         return;
     }
     controlled = isdefined(vehicle.controlled) ? vehicle.controlled : 1;
     self destroyscorestreak(weapon, controlled, 1);
-    if (weapon.rootweapon.name == "hatchet" && isdefined(var_734a4410)) {
-        self stats::function_dad108fa(var_734a4410, 1);
+    if (weapon.rootweapon.name == "hatchet" && isdefined(hatchet_kill_stat)) {
+        self stats::function_dad108fa(hatchet_kill_stat, 1);
     }
 }
 

@@ -11,7 +11,7 @@
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;
-#using script_4c8dba49908aecc2;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish.gsc;
 #using scripts\mp_common\gametypes\battlechatter.gsc;
 #using scripts\mp_common\challenges.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -75,7 +75,7 @@ function event_handler[gametype_init] main(eventstruct) {
     game.objective_contested_sound = "mpl_flagreturn_sting";
     level.zonespawnqueue = [];
     if (util::function_8570168d()) {
-        namespace_9096c917::init();
+        ct_tutorial_skirmish::init();
     }
     level.var_d3a438fb = &function_d3a438fb;
 }
@@ -1181,11 +1181,11 @@ function createzonespawninfluencer() {
     self.influencer_large = self influencers::create_influencer("koth_large", self.gameobject.curorigin, 0);
     self.influencer_small = influencers::create_influencer("koth_small", self.gameobject.curorigin, 0);
     self enable_influencers(0);
-    if ((isdefined(self.var_caa7270c) ? self.var_caa7270c : 0) > 0) {
-        function_2e07e8f9(self.influencer_small, self.var_caa7270c);
+    if ((isdefined(self.influencer_radius_small) ? self.influencer_radius_small : 0) > 0) {
+        function_2e07e8f9(self.influencer_small, self.influencer_radius_small);
     }
-    if ((isdefined(self.var_aa2f147a) ? self.var_aa2f147a : 0) > 0) {
-        function_2e07e8f9(self.influencer_large, self.var_aa2f147a);
+    if ((isdefined(self.influencer_radius_large) ? self.influencer_radius_large : 0) > 0) {
+        function_2e07e8f9(self.influencer_large, self.influencer_radius_large);
     }
 }
 

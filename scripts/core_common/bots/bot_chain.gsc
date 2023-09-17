@@ -96,7 +96,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
                     }
                 }
             }
-            if (isdefined(var_72284260.var_6440b5b)) {
+            if (isdefined(var_72284260.script_bot_chain_src)) {
                 var_354db6a0 = var_72284260 namespace_2e6206f9::get_target_structs("<unknown string>");
                 if (var_354db6a0.size > 0) {
                     targetstructs = arraycombine(targetstructs, var_354db6a0, 0, 0);
@@ -319,7 +319,7 @@ function private function_e7b80b1e(var_72284260) {
     /#
         assert(isdefined(var_72284260));
     #/
-    if (!isdefined(var_72284260.target) && !isdefined(var_72284260.var_6440b5b)) {
+    if (!isdefined(var_72284260.target) && !isdefined(var_72284260.script_bot_chain_src)) {
         return undefined;
     }
     structs = [];
@@ -329,7 +329,7 @@ function private function_e7b80b1e(var_72284260) {
             structs = arraycombine(structs, var_436fb4d0, 0, 0);
         }
     }
-    if (isdefined(var_72284260.var_6440b5b)) {
+    if (isdefined(var_72284260.script_bot_chain_src)) {
         var_436fb4d0 = var_72284260 namespace_2e6206f9::get_target_structs("script_bot_chain");
         if (var_436fb4d0.size > 0) {
             structs = arraycombine(structs, var_436fb4d0, 0, 0);
@@ -483,7 +483,7 @@ function private function_c2d874f1(var_72284260, bot) {
     var_1bfc6c1d = [];
     if (isdefined(self.bot.var_53ffa4c4.var_e7ce4106)) {
         foreach (goal in goals) {
-            if (isdefined(goal.var_b750799) && goal.var_b750799 == self.bot.var_53ffa4c4.var_e7ce4106) {
+            if (isdefined(goal.script_botchain_color) && goal.script_botchain_color == self.bot.var_53ffa4c4.var_e7ce4106) {
                 array::add(var_1bfc6c1d, goal);
             }
         }
@@ -567,9 +567,9 @@ function function_95d17a51(startstruct) {
         }
     }
     targets = array();
-    if (isdefined(startstruct.var_6440b5b)) {
-        targets[targets.size] = startstruct.var_6440b5b;
-        var_5842dd6c[startstruct.var_6440b5b] = 1;
+    if (isdefined(startstruct.script_bot_chain_src)) {
+        targets[targets.size] = startstruct.script_bot_chain_src;
+        var_5842dd6c[startstruct.script_bot_chain_src] = 1;
     }
     while (targets.size > 0) {
         target = targets[0];
@@ -577,9 +577,9 @@ function function_95d17a51(startstruct) {
         targetstructs = struct::get_array(target, "script_bot_chain_target");
         foreach (struct in targetstructs) {
             structs[structs.size] = struct;
-            if (isdefined(struct.var_6440b5b) && !isdefined(var_5842dd6c[struct.var_6440b5b])) {
-                targets[targets.size] = struct.var_6440b5b;
-                var_5842dd6c[struct.var_6440b5b] = 1;
+            if (isdefined(struct.script_bot_chain_src) && !isdefined(var_5842dd6c[struct.script_bot_chain_src])) {
+                targets[targets.size] = struct.script_bot_chain_src;
+                var_5842dd6c[struct.script_bot_chain_src] = 1;
             }
         }
     }
@@ -648,8 +648,8 @@ function function_cf70f2fe(startstruct, resuming = 0) {
         if (isdefined(var_4de004b7.script_notify)) {
             self notify(var_4de004b7.script_notify);
         }
-        if (isdefined(goal.var_b750799)) {
-            self.bot.var_53ffa4c4.var_e7ce4106 = goal.var_b750799;
+        if (isdefined(goal.script_botchain_color)) {
+            self.bot.var_53ffa4c4.var_e7ce4106 = goal.script_botchain_color;
         }
         if (isdefined(var_4de004b7.script_flag_set)) {
             level flag::set(var_4de004b7.script_flag_set);

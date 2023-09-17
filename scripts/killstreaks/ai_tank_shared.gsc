@@ -808,7 +808,7 @@ function function_9868e24e(player) {
         var_5781dbe = anglestoforward(angles);
         fwd = vectorscale(var_5781dbe, 2000);
         locking = player adsbuttonpressed();
-        var_5ce6a3c6 = 0;
+        nlocks = 0;
         enemies = getplayers();
         foreach (target in enemies) {
             if (!isplayer(target) || player.team === target.team) {
@@ -831,7 +831,7 @@ function function_9868e24e(player) {
             } else if (var_8712c5b8.state != 4) {
                 if (locking) {
                     good = util::within_fov(origin, angles, target.origin, fovcosine);
-                    if (isdefined(good) && good && var_5ce6a3c6 < self.numberrockets) {
+                    if (isdefined(good) && good && nlocks < self.numberrockets) {
                         if (var_8712c5b8.state != 3) {
                             if (var_8712c5b8.state == 2) {
                                 if (var_8712c5b8.var_8c0f6d2c < gettime()) {
@@ -844,7 +844,7 @@ function function_9868e24e(player) {
                                 self playsoundtoplayer(#"hash_5386a095fd840c2e", player);
                             }
                         }
-                        var_5ce6a3c6++;
+                        nlocks++;
                     } else {
                         var_8712c5b8.state = 1;
                     }

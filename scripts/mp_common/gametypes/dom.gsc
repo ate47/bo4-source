@@ -12,7 +12,7 @@
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;
 #using scripts\mp_common\gametypes\gametype.gsc;
-#using script_4c8dba49908aecc2;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish.gsc;
 #using scripts\mp_common\challenges.gsc;
 #using scripts\mp_common\bb.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
@@ -92,7 +92,7 @@ function event_handler[gametype_init] main(eventstruct) {
     level.var_e6979a05[#"_b"] = "dom_flag_b";
     level.var_e6979a05[#"_c"] = "dom_flag_c";
     if (util::function_8570168d()) {
-        namespace_9096c917::init();
+        ct_tutorial_skirmish::init();
     }
     level.var_1aef539f = &function_a800815;
     level.var_d3a438fb = &function_d3a438fb;

@@ -455,12 +455,12 @@ function function_a0d0fc27(entity, startnode, endnode, mantlenode) {
     if (!(isdefined(entity.var_20e07206) && entity.var_20e07206)) {
         return;
     }
-    if (isdefined(mantlenode.var_d2a62948) && mantlenode.var_d2a62948) {
+    if (isdefined(mantlenode.uneven_mantle_traversal) && mantlenode.uneven_mantle_traversal) {
         return;
     }
     heightdiff = abs(endnode.origin[2] - startnode.origin[2]);
     if (heightdiff > 40) {
-        mantlenode.var_d2a62948 = 1;
+        mantlenode.uneven_mantle_traversal = 1;
     }
 }
 
@@ -505,10 +505,10 @@ function bb_getparametrictraversaltype() {
     }
     if (isdefined(entity.traversestartnode) && isdefined(entity.traversemantlenode)) {
         function_a0d0fc27(entity, entity.traversestartnode, entity.traverseendnode, entity.traversemantlenode);
-        if (sessionmodeiswarzonegame() && isdefined(entity.traversemantlenode.var_d2a62948) && entity.traversemantlenode.var_d2a62948) {
+        if (sessionmodeiswarzonegame() && isdefined(entity.traversemantlenode.uneven_mantle_traversal) && entity.traversemantlenode.uneven_mantle_traversal) {
             entity.traveseheightoverride = abs(function_b882ba71(entity, entity.traversestartnode, entity.traverseendnode, entity.traversemantlenode));
         }
-        if (isdefined(entity.traversemantlenode.var_d2a62948) && entity.traversemantlenode.var_d2a62948 && isdefined(entity.var_2c628c0f) && entity.var_2c628c0f) {
+        if (isdefined(entity.traversemantlenode.uneven_mantle_traversal) && entity.traversemantlenode.uneven_mantle_traversal && isdefined(entity.var_2c628c0f) && entity.var_2c628c0f) {
             isendpointaboveorsamelevel = startposition[2] < endposition[2];
             traversaltype = "jump_down_mantle_traversal";
             if (isendpointaboveorsamelevel) {
@@ -531,7 +531,7 @@ function bb_getparametrictraversaltype() {
             return "jump_across_traversal";
         }
         if (isendpointaboveorsamelevel) {
-            if (isdefined(entity.traverseendnode.var_446fcc3b) && entity.traverseendnode.var_446fcc3b && isdefined(entity.var_1731eda3) && entity.var_1731eda3) {
+            if (isdefined(entity.traverseendnode.hanging_traversal) && entity.traverseendnode.hanging_traversal && isdefined(entity.var_1731eda3) && entity.var_1731eda3) {
                 return "jump_up_hanging_traversal";
             } else {
                 return "jump_up_traversal";

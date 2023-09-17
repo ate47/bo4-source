@@ -897,7 +897,7 @@ class csceneobject {
     // Checksum 0x5addd9bc, Offset: 0x5ce0
     // Size: 0xc6
     function restore_saved_ent() {
-        if (isdefined(self._o_scene._e_root) && isdefined(self._o_scene._e_root.scene_ents) && !(isdefined(self._o_scene._e_root.var_146935c1) && self._o_scene._e_root.var_146935c1)) {
+        if (isdefined(self._o_scene._e_root) && isdefined(self._o_scene._e_root.scene_ents) && !(isdefined(self._o_scene._e_root.script_ignore_active_scene_check) && self._o_scene._e_root.script_ignore_active_scene_check)) {
             if (isdefined(self._o_scene._e_root.scene_ents[self._str_name])) {
                 self._e = self._o_scene._e_root.scene_ents[self._str_name];
             }
@@ -1675,7 +1675,7 @@ class csceneobject {
         }
         if (isdefined(self._o_scene._e_root) && isdefined(self._o_scene._e_root.target)) {
             var_c17a3b30 = getnode(self._o_scene._e_root.target, "targetname");
-            if (isdefined(var_c17a3b30) && isdefined(var_c17a3b30.var_514e7397) && var_c17a3b30.var_514e7397) {
+            if (isdefined(var_c17a3b30) && isdefined(var_c17a3b30.interact_node) && var_c17a3b30.interact_node) {
                 var_c17a3b30.var_31c05612 = 1;
             }
         }

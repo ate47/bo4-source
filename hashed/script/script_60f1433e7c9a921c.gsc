@@ -35,7 +35,7 @@ function private __init__() {
     plannercommanderutility::registerdaemonapi("daemonSdBomb", &function_4364713f);
     plannercommanderutility::registerdaemonapi("daemonSdBombZones", &function_c111c0aa);
     plannercommanderutility::registerdaemonapi("daemonSdDefuseObj", &function_7e03c94a);
-    plannercommanderutility::registerutilityapi("commanderScoreAge", &_monkey_water_corvus_vo_cleared);
+    plannercommanderutility::registerutilityapi("commanderScoreAge", &function_cb29a211);
     plannercommanderutility::registerutilityapi("commanderScoreAlive", &function_e319475e);
     plannercommanderutility::registerutilityapi("commanderScoreControlZones", &function_f478ac94);
     plannercommanderutility::registerutilityapi("commanderScoreDomFlags", &function_78126acd);
@@ -384,7 +384,7 @@ function private function_7e03c94a(commander) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xbc582afe, Offset: 0x1eb0
 // Size: 0x9a
-function private _monkey_water_corvus_vo_cleared(commander, squad, constants) {
+function private function_cb29a211(commander, squad, constants) {
     /#
         assert(isdefined(constants[#"maxage"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     #/

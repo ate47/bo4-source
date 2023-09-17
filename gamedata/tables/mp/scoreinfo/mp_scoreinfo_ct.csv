@@ -1,4 +1,4 @@
-#kill,250,100,100,25,0,false,5,false,#hash_61c078c11093f212,#,#,false,true,true,#,#,#,#,#,false
+#kill,250,100,100,25,0,false,5,false,#score/kill,#,#,false,true,true,#,#,#,#,#,false
 #first_kill,0,500,0,0,0,false,2,false,#hash_69656187f495ef7d,#medal_first_kill,#t7_hud_medal_first_kill,false,true,false,#combat,#general,#,#major,#,false
 #headshot,0,100,0,25,0,false,2,false,#,#medal_headshot,#events_headshot,false,true,true,#combat,#general,#,#major,#,false
 #assisted_suicide,0,100,0,0,0,false,2,false,#,#medal_assisted_suicide,#t7_hud_medal_assisted_suicide,false,true,false,#combat,#,#,#,#,false
@@ -66,9 +66,9 @@
 #multikill_7,0,1000,0,25,0,false,0,false,#hash_2a61fe50321d59ad,#medal_multikill_7,#hash_360343f1e645e108,true,true,false,#combat,#general,#,#major,#,false
 #multikill_8,0,1000,0,25,0,false,0,false,#hash_2a61ef50321d4030,#medal_multikill_8,#hash_360342f1e645df55,true,true,false,#combat,#general,#,#major,#,false
 #multikill_more_than_8,0,1000,0,25,0,false,0,false,#hash_32261a55dae18e6e,#medal_multikill_more_than_8,#hash_51cd3f0bc16b3a6f,true,true,false,#combat,#general,#,#major,#,false
-#assist_75,0,75,75,25,0,false,2,false,#hash_184242d922e01326,#,#,false,true,true,#,#,#,#,#,false
-#assist_50,0,50,50,25,0,false,2,false,#hash_184242d922e01326,#,#,false,true,true,#,#,#,#,#,false
-#assist_25,0,25,25,25,0,false,2,false,#hash_184242d922e01326,#,#,false,true,true,#,#,#,#,#,false
+#assist_75,0,75,75,25,0,false,2,false,#score/assists,#,#,false,true,true,#,#,#,#,#,false
+#assist_50,0,50,50,25,0,false,2,false,#score/assists,#,#,false,true,true,#,#,#,#,#,false
+#assist_25,0,25,25,25,0,false,2,false,#score/assists,#,#,false,true,true,#,#,#,#,#,false
 #team_kill,0,0,0,0,0,false,0,false,#,#,#,false,false,false,#,#,#,#,#,false
 #death,0,0,0,0,0,false,0,false,#,#,#,false,false,false,#,#,#,#,#,false
 #suicide,0,0,0,0,0,false,0,false,#,#,#,false,false,false,#,#,#,#,#,false

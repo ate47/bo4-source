@@ -4,7 +4,7 @@
 #using scripts\mp_common\gametypes\globallogic.gsc;
 #using scripts\mp_common\gametypes\ct_utils.gsc;
 #using scripts\mp_common\gametypes\ct_ui.gsc;
-#using script_4c8dba49908aecc2;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish.gsc;
 #using scripts\mp_common\gametypes\ct_difficulty.gsc;
 #using scripts\mp_common\gametypes\ct_bots.gsc;
 #using scripts\core_common\values_shared.gsc;
@@ -336,7 +336,7 @@ function function_1e84c767() {
     if (util::function_8570168d() && b_completed) {
         str_state = player function_c2c1d36b(player function_76785843());
         if (str_state == #"skirmish_completed") {
-            player thread namespace_9096c917::function_b4ebcd8a();
+            player thread ct_tutorial_skirmish::function_b4ebcd8a();
             player function_ea859fe2();
             function_588a84ce();
             thread globallogic::end_round(9);
@@ -344,9 +344,9 @@ function function_1e84c767() {
             player function_3b91934f(player function_76785843(), #"tutorial_completed");
             player function_ea859fe2();
             waitframe(1);
-            player thread namespace_9096c917::function_b4ebcd8a();
+            player thread ct_tutorial_skirmish::function_b4ebcd8a();
             function_588a84ce();
-            namespace_9096c917::function_5e1029a();
+            ct_tutorial_skirmish::function_5e1029a();
         }
     }
 }

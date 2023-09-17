@@ -1441,7 +1441,7 @@ function function_d6e37caf() {
 // Params 0, eflags: 0x0
 // Checksum 0x48a9eae5, Offset: 0x7740
 // Size: 0x10c
-function function_cbc459dc() {
+function dailydaily() {
     self endon(#"death");
     s_loc = level.var_72c3ea74[level.var_da5432a2];
     level.var_da5432a2++;

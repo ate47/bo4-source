@@ -41,7 +41,7 @@
 #m_quest,#collect_dung,#hash_2e56a3f1fc967c9b,0,0,true,false,false,false
 #m_quest,#collect_skull,#hash_44a710040a5cf058,0,0,true,false,false,false
 #m_quest,#collect_wood,#hash_13750f5daa5486e6,0,0,true,false,false,false
-#m_quest,#hash_744ddbb3ca9bac0f,#hash_2b150384d50cde7c,0,0,true,false,false,false
+#m_quest,#danu_complete,#hash_2b150384d50cde7c,0,0,true,false,false,false
 #m_quest,#fury_arrive,#hash_5850b57ef4133eea,0,0,true,false,false,false
 #m_quest,#hash_79dc404532bd8b8,#hash_1a458ffc30e9306d,0,0,true,false,false,false
 #m_quest,#hash_249c85fdc05479b9,#hash_6e1019732c1a9fc4,0,0,true,false,false,false

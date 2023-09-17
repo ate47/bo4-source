@@ -611,7 +611,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
         }
         if (isdefined(level.gametype) && (level.gametype == #"tdm" || level.gametype == #"dm")) {
             if (level.hardcoremode) {
-                self stats::function_dad108fa(#"hash_307266bd52a9fc51", 1);
+                self stats::function_dad108fa(#"ekia_hc_in_tdm_dm", 1);
             } else if (!level.arenamatch) {
                 self stats::function_dad108fa(#"ekia_core_in_tdm_dm", 1);
             }
@@ -1934,16 +1934,16 @@ function challengegameendmp(data) {
         winnerscore = game.stat[#"teamscores"][winner];
         loserscore = getlosersteamscores(winner);
     }
-    var_97e12758 = 1;
+    mostekiasleastdeaths = 1;
     for (index = 0; index < level.placement[#"all"].size; index++) {
         if (level.placement[#"all"][index].deaths < player.deaths) {
-            var_97e12758 = 0;
+            mostekiasleastdeaths = 0;
         }
         if (level.placement[#"all"][index].ekia > player.ekia) {
-            var_97e12758 = 0;
+            mostekiasleastdeaths = 0;
         }
     }
-    if (var_97e12758 && player.ekia > 0 && level.placement[#"all"].size > 3) {
+    if (mostekiasleastdeaths && player.ekia > 0 && level.placement[#"all"].size > 3) {
         if (level.teambased) {
             playeriswinner = player.team === winner;
         } else {

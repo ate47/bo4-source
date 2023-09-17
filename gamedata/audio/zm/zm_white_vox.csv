@@ -49,7 +49,7 @@
 #generator,#defend,#vox_generator_defend,0,0,false,false,false,false
 #air_vent,#hash_3c408eb185e995f0,#vox_air_vent_repair_react,0,0,false,false,false,false
 #air_vent,#hash_4c3a9103a3a05411,#vox_air_vent_repaired_react,0,0,false,false,false,false
-#hash_7eae96a2bca7899f,#place,#hash_7832a05d73569401,0,0,false,false,false,false
+#mmtd,#place,#hash_7832a05d73569401,0,0,false,false,false,false
 #power_switch,#activate,#hash_20d3116fdeafe16d,0,0,false,false,false,false
 #roundstart,#special,#hash_783a2842fe3ddecf,0,0,false,false,false,false
 #trap_electric,#activate,#hash_393c192bfbe71aea,20,0,false,false,false,false

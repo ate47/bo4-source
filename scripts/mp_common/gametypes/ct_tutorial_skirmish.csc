@@ -6,9 +6,9 @@
 #using script_84f5590d2ac48f8;
 #using scripts\core_common\player\player_role.csc;
 
-#namespace namespace_9096c917;
+#namespace ct_tutorial_skirmish;
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x3842b028, Offset: 0xb0
 // Size: 0x3c
@@ -17,7 +17,7 @@ function init() {
     callback::on_localplayer_spawned(&on_localplayer_spawned);
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0xcb5f3ece, Offset: 0xf8
 // Size: 0x24

@@ -48,7 +48,7 @@ function callback_playerconnect() {
     self.killstreakdialogqueue = [];
     self.timeplayed = [];
     self.hits = 0;
-    self.var_2641e022 = 0;
+    self.headshothits = 0;
     self.var_a7d7e50a = 0;
     if (!isdefined(self.pers[#"roundjoined"])) {
         self.pers[#"roundjoined"] = isdefined(game.roundsplayed) ? game.roundsplayed : 0;

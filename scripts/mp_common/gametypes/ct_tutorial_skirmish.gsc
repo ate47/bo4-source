@@ -13,9 +13,9 @@
 #using scripts\core_common\player\player_role.gsc;
 #using scripts\abilities\ability_player.gsc;
 
-#namespace namespace_9096c917;
+#namespace ct_tutorial_skirmish;
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4338b5c4, Offset: 0x210
 // Size: 0x332
@@ -56,7 +56,7 @@ function init() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x1 linked
 // Checksum 0xd3ac04b5, Offset: 0x550
 // Size: 0xbc
@@ -68,7 +68,7 @@ function on_end_game(params) {
     callback::remove_callback(#"on_end_game", &on_end_game);
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x56ed9150, Offset: 0x618
 // Size: 0x5c
@@ -79,7 +79,7 @@ function initial_black() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x19d012eb, Offset: 0x680
 // Size: 0xa0
@@ -97,7 +97,7 @@ function function_92c29649() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x43afea91, Offset: 0x728
 // Size: 0x124
@@ -121,7 +121,7 @@ function function_c11071a8() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 2, eflags: 0x0
 // Checksum 0xb7a62c82, Offset: 0x858
 // Size: 0x9c
@@ -133,7 +133,7 @@ function function_3b69388(weapon, slot) {
     self giveweapon(weapon);
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x0
 // Checksum 0xf9b87857, Offset: 0x900
 // Size: 0xe4
@@ -151,7 +151,7 @@ function function_5e1029a() {
     switchmap_switch();
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x13b1089a, Offset: 0x9f0
 // Size: 0x94
@@ -165,7 +165,7 @@ function function_edd52efc() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x0
 // Checksum 0x88094706, Offset: 0xa90
 // Size: 0xa6
@@ -181,7 +181,7 @@ function get_roleindex(name) {
     return undefined;
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x2e2f0c7b, Offset: 0xb40
 // Size: 0x3ee
@@ -243,7 +243,7 @@ function function_8599f7cb() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf52d41d1, Offset: 0xf38
 // Size: 0x28c
@@ -283,7 +283,7 @@ function function_6cc515f7(str_difficulty) {
     player thread function_78a17c00();
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x1 linked
 // Checksum 0x3f770d3f, Offset: 0x11d0
 // Size: 0x74
@@ -294,7 +294,7 @@ function function_ccc3b1e3(var_d6602dc0) {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x5 linked
 // Checksum 0x134d80fc, Offset: 0x1250
 // Size: 0xcc
@@ -308,7 +308,7 @@ function private function_95e72b33(moviefile) {
     self val::reset(#"hash_61f16f3175b9a96f", "freezecontrols");
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4a37d61a, Offset: 0x1328
 // Size: 0x236
@@ -328,7 +328,7 @@ function function_ea5f46d2() {
     level.var_92dc2d7c = function_5f516f9d(#"hash_1aee13f64efb2ef2", 1);
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x0
 // Checksum 0x276ecc18, Offset: 0x1568
 // Size: 0x5c
@@ -338,7 +338,7 @@ function function_b2bc66d3() {
     self give_killstreaks(var_8be50b09);
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x1 linked
 // Checksum 0x64e8454b, Offset: 0x15d0
 // Size: 0x59e
@@ -417,7 +417,7 @@ function give_killstreaks(var_8be50b09) {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 2, eflags: 0x1 linked
 // Checksum 0x7228ae54, Offset: 0x1b78
 // Size: 0xb4
@@ -434,7 +434,7 @@ function function_3ba6ee5d(weapon, amount) {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x1 linked
 // Checksum 0xc62cbddb, Offset: 0x1c38
 // Size: 0x3ee
@@ -477,7 +477,7 @@ function function_b958401e(n_index) {
     return var_8be50b09;
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x0
 // Checksum 0xa678015, Offset: 0x2030
 // Size: 0x52e
@@ -520,7 +520,7 @@ function function_d8cdeb6a(n_index) {
     return var_6b99a088;
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 9, eflags: 0x1 linked
 // Checksum 0xdba3d061, Offset: 0x2568
 // Size: 0x714
@@ -598,7 +598,7 @@ function function_1833fe3e(einflictor, attacker, idamage, smeansofdeath, weapon,
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x3d3d2bfa, Offset: 0x2c88
 // Size: 0x19c
@@ -622,7 +622,7 @@ function function_8e22d234() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0xc88bf21b, Offset: 0x2e30
 // Size: 0x1fc
@@ -650,7 +650,7 @@ function function_b4ebcd8a() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0xeb112fb5, Offset: 0x3038
 // Size: 0xec
@@ -667,7 +667,7 @@ function function_51450191() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5473e49, Offset: 0x3130
 // Size: 0x64
@@ -678,7 +678,7 @@ function function_46f9c28e() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x168f8166, Offset: 0x31a0
 // Size: 0x9c
@@ -695,7 +695,7 @@ function function_9b717ff4() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x315ed677, Offset: 0x3248
 // Size: 0x94
@@ -708,7 +708,7 @@ function function_ca8c7182() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0x2cb37e6f, Offset: 0x32e8
 // Size: 0x2d4
@@ -761,7 +761,7 @@ function function_78a17c00() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 0, eflags: 0x1 linked
 // Checksum 0xa58ef590, Offset: 0x35c8
 // Size: 0x3a
@@ -772,7 +772,7 @@ function function_2162b140() {
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 11, eflags: 0x1 linked
 // Checksum 0x6bc14d09, Offset: 0x3610
 // Size: 0xae
@@ -785,7 +785,7 @@ function on_player_damage(einflictor, eattacker, idamage, idflags, smeansofdeath
     }
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 2, eflags: 0x1 linked
 // Checksum 0xbf2d60e9, Offset: 0x36c8
 // Size: 0x82
@@ -797,7 +797,7 @@ function function_5f516f9d(var_129f6487, var_16538d01 = 0) {
     return target;
 }
 
-// Namespace namespace_9096c917/namespace_9096c917
+// Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x1 linked
 // Checksum 0x9efdd46f, Offset: 0x3758
 // Size: 0xfc

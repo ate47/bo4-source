@@ -44,8 +44,8 @@ function private function_c94723bd() {
         function_9b8d4d02();
     }
     if (!(isdefined(getgametypesetting(#"hash_1d02e28ba907a343")) ? getgametypesetting(#"hash_1d02e28ba907a343") : 0)) {
-        item_world_fixup::function_96ff7b88(#"hash_3c5ee4ad37d65f4e");
-        item_world_fixup::remove_item(#"hash_3c5ee4ad37d65f4e");
+        item_world_fixup::function_96ff7b88(#"perk_item_bloody_tracker");
+        item_world_fixup::remove_item(#"perk_item_bloody_tracker");
     }
 }
 

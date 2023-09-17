@@ -218,7 +218,7 @@ function private function_d59810a5() {
     default:
         if (isdefined(level.var_1420e3f6)) {
             setuimodelvalue(level.var_940b67bb, level.var_1420e3f6.name_str);
-            setuimodelvalue(level.var_63e5f17c, level.var_1420e3f6.var_695d8fd1);
+            setuimodelvalue(level.var_63e5f17c, level.var_1420e3f6.desc_str);
         }
         break;
     }

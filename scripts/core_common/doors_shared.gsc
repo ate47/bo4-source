@@ -1406,7 +1406,7 @@ function function_dc98f943(c_door) {
     e_door waittill(#"door_closed");
     e_door setcandamage(1);
     e_door setteam(waitresult.player.team);
-    if (isdefined(c_door.var_a2f96f78) && isdefined(c_door.var_a2f96f78.var_dc13f874) && c_door.var_a2f96f78.var_dc13f874) {
+    if (isdefined(c_door.var_a2f96f78) && isdefined(c_door.var_a2f96f78.script_make_full_sentient) && c_door.var_a2f96f78.script_make_full_sentient) {
         e_door makesentient();
         e_door.canbemeleed = 0;
     } else {
