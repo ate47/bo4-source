@@ -1737,19 +1737,19 @@ function function_94335f4a(var_1aa5a6d6) {
     level.var_1aa5a6d6 = var_1aa5a6d6;
     level.var_ad5d54b = [];
     for (n_row = 0; 1; n_row++) {
-        n_event = tablelookupcolumnforrow(#"hash_76ee9df26d2df66a", n_row, 0);
+        n_event = tablelookupcolumnforrow(#"gamedata/stats/zm/zm_event_callings.csv", n_row, 0);
         if (!isdefined(n_event) || n_event > var_1aa5a6d6) {
             return;
         }
         if (n_event == var_1aa5a6d6) {
             if (!isdefined(level.var_6ad5a223)) {
-                level.var_6ad5a223 = tablelookupcolumnforrow(#"hash_76ee9df26d2df66a", n_row, 1);
+                level.var_6ad5a223 = tablelookupcolumnforrow(#"gamedata/stats/zm/zm_event_callings.csv", n_row, 1);
             }
-            n_tier = tablelookupcolumnforrow(#"hash_76ee9df26d2df66a", n_row, 2);
-            var_e226ec4f = tablelookupcolumnforrow(#"hash_76ee9df26d2df66a", n_row, 3);
-            var_ad971622 = tablelookupcolumnforrow(#"hash_76ee9df26d2df66a", n_row, 4);
-            n_xp = tablelookupcolumnforrow(#"hash_76ee9df26d2df66a", n_row, 6);
-            var_1f2bdb95 = tablelookupcolumnforrow(#"hash_76ee9df26d2df66a", n_row, 7);
+            n_tier = tablelookupcolumnforrow(#"gamedata/stats/zm/zm_event_callings.csv", n_row, 2);
+            var_e226ec4f = tablelookupcolumnforrow(#"gamedata/stats/zm/zm_event_callings.csv", n_row, 3);
+            var_ad971622 = tablelookupcolumnforrow(#"gamedata/stats/zm/zm_event_callings.csv", n_row, 4);
+            n_xp = tablelookupcolumnforrow(#"gamedata/stats/zm/zm_event_callings.csv", n_row, 6);
+            var_1f2bdb95 = tablelookupcolumnforrow(#"gamedata/stats/zm/zm_event_callings.csv", n_row, 7);
             /#
                 var_6530064b = getdvarint(#"hash_74a04bcc32a59d68", 0);
                 if (var_6530064b) {

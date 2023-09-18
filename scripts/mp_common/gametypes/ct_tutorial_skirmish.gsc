@@ -793,7 +793,7 @@ function function_5f516f9d(var_129f6487, var_16538d01 = 0) {
     if (isdefined(var_16538d01) && var_16538d01) {
         var_129f6487 = #"hash_287942b71dbfe24f";
     }
-    target = tablelookup(#"hash_4e78cba3061f8de6", 2, var_129f6487, 1);
+    target = tablelookup(#"gamedata/tables/mp/mp_combat_training_challenges.csv", 2, var_129f6487, 1);
     return target;
 }
 
