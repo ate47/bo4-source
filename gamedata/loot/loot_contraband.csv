@@ -651,7 +651,7 @@
 241496474,#ar_an94_t8,#range_weapon,#ultra,#,#,#,#,#ar_an94_t8,11,#,#,782744813,782744813,5
 242625617,#ar_doublebarrel_t8,#range_weapon,#ultra,#,#,#,#,#ar_doublebarrel_t8,11,#,#,865208429,865208429,5
 258944114,#smg_vmp_t8,#range_weapon,#ultra,#,#,#,#,#smg_vmp_t8,11,#,#,854204044,854204044,5
-208854822,#loot_shotgun_semi_sig_01,#hash_5cc13b0f8eeff726,#ultra,#,#,#,#,#shotgun_semiauto,1,#,#,727004486,727004486,5
+208854822,#loot_shotgun_semi_sig_01,#signature_weapon,#ultra,#,#,#,#,#shotgun_semiauto,1,#,#,727004486,727004486,5
 255115329,#camo_dlc5_citrus,#single_camo,#epic,#,#,#,#,#ar_accurate_t8,11,#,#hash_2f21502d8c9413e1,842207945,842207945,5
 217147034,#camo_dlc5_citrus,#single_camo,#epic,#,#,#,#,#ar_damage_t8,11,#,#hash_24dba0cdbf4e794c,775763150,775763150,5
 232532488,#camo_dlc5_citrus,#single_camo,#epic,#,#,#,#,#ar_fastfire_t8,11,#,#hash_d7cb4b318651691,879625929,879625929,5

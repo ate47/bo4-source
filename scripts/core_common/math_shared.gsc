@@ -8,7 +8,7 @@
 // Checksum 0x431f4e47, Offset: 0x88
 // Size: 0x38
 function cointoss(n_chance = 50) {
-    return function_21a3a673(1, 100) <= n_chance;
+    return randomintrangeinclusive(1, 100) <= n_chance;
 }
 
 // Namespace math/math_shared

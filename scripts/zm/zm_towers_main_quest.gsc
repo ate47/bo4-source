@@ -4628,7 +4628,7 @@ function function_ef2a451c(var_8997f0f2) {
 // Size: 0x7e4
 function function_e9d463a0() {
     level endon(#"hash_12768f75609d32ca");
-    level.var_263754a7 = function_21a3a673(9, 20);
+    level.var_263754a7 = randomintrangeinclusive(9, 20);
     var_e4a16c04 = array();
     var_671dac98 = array();
     var_e4a16c04[0] = getent("hell_gate_1_l", "targetname");
@@ -4681,9 +4681,9 @@ function function_e9d463a0() {
     while (1) {
         if (level.ai[#"axis"].size < level.var_ced6f061) {
             if (level flag::get(#"hash_353dcb95f778ad73")) {
-                n_toggle = function_21a3a673(0, 2);
+                n_toggle = randomintrangeinclusive(0, 2);
             } else {
-                n_toggle = function_21a3a673(0, 1);
+                n_toggle = randomintrangeinclusive(0, 1);
             }
             switch (n_toggle) {
             case 0:

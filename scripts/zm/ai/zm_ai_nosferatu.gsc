@@ -399,7 +399,7 @@ function function_57abef39(n_round_number) {
     while (1) {
         level waittill(#"hash_5d3012139f083ccb");
         if (zm_round_spawning::function_d0db51fc(#"crimson_nosferatu")) {
-            level.var_da92f51a = level.round_number + function_21a3a673(2, 3);
+            level.var_da92f51a = level.round_number + randomintrangeinclusive(2, 3);
         }
     }
 }
@@ -673,7 +673,7 @@ function private function_82785646(entity) {
     if (!function_c16e1ca1(entity)) {
         return 0;
     }
-    if (function_21a3a673(0, 100) < entity ai::function_9139c839().var_3b66f582) {
+    if (randomintrangeinclusive(0, 100) < entity ai::function_9139c839().var_3b66f582) {
         return 1;
     }
     return 0;

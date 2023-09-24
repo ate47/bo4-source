@@ -149,10 +149,10 @@ function event_handler[player_gunchallengecomplete] player_gunchallengecomplete(
         foreach (weapon in a_w_guns) {
             str_weapon = weapon.name;
             n_item_index = getbaseweaponitemindex(weapon);
-            var_cc074f5b = stats::get_stat(#"hash_60e21f66eb3a1f18", str_weapon, #"xp");
+            var_cc074f5b = stats::get_stat(#"ranked_item_stats", str_weapon, #"xp");
             if (isdefined(var_cc074f5b)) {
                 var_6b792d1d = function_33cc663e(str_weapon);
-                var_56ccc9fe = stats::get_stat(#"hash_60e21f66eb3a1f18", str_weapon, #"plevel");
+                var_56ccc9fe = stats::get_stat(#"ranked_item_stats", str_weapon, #"plevel");
                 if (var_cc074f5b >= var_6b792d1d || var_56ccc9fe >= 1) {
                     var_8e617ca1++;
                 }

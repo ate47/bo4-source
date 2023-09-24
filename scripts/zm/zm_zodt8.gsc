@@ -621,7 +621,7 @@ function function_96c0d840() {
 // Size: 0xb0
 function function_d515e5e7() {
     while (1) {
-        var_f2c45ac3 = level.round_number + function_21a3a673(3, 6);
+        var_f2c45ac3 = level.round_number + randomintrangeinclusive(3, 6);
         while (var_f2c45ac3 > level.round_number) {
             level waittill(#"end_of_round");
         }

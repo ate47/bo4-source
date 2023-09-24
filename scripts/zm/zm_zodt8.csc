@@ -222,7 +222,7 @@ function function_3353845b(localclientnum) {
         wait(n_waittime);
         if (n_chance >= randomint(100)) {
             if (self.var_655d9e4b === 0 || gettime() - var_d82f94cd >= self.var_655d9e4b) {
-                self playsound(localclientnum, self.var_e95193b8[function_21a3a673(0, 2)][self.var_25e6f383]);
+                self playsound(localclientnum, self.var_e95193b8[randomintrangeinclusive(0, 2)][self.var_25e6f383]);
                 self.var_655d9e4b = gettime();
                 self.var_25e6f383++;
                 if (self.var_25e6f383 > 10) {

@@ -1162,7 +1162,7 @@ function function_cf5ef033(n_round_number) {
                 level.var_a21ee6fc = undefined;
                 return;
             }
-            level.var_a21ee6fc = level.round_number + function_21a3a673(1, 2);
+            level.var_a21ee6fc = level.round_number + randomintrangeinclusive(1, 2);
         }
     }
 }
@@ -1182,7 +1182,7 @@ function function_b381320(var_dbce0c44) {
         var_1797c23a = 1 + max(0, floor((level.round_number - zombie_utility::function_d2dfacfd(#"hash_3b4ad7449c039d1b")) / 3));
     }
     var_2506688 = var_1797c23a < 8 ? var_1797c23a * 0.75 : max(var_1797c23a - 3, 0);
-    return function_21a3a673(int(var_2506688), int(min(var_8cf00d40, var_1797c23a)));
+    return randomintrangeinclusive(int(var_2506688), int(min(var_8cf00d40, var_1797c23a)));
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker

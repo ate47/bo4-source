@@ -176,9 +176,9 @@ function private function_ad641569() {
     self endon(#"disconnect");
     level endoncallback(&function_1a109202, #"hash_7646638df88a3656", #"host_migration_begin");
     while (1) {
-        wait(function_21a3a673(5, 15));
+        wait(randomintrangeinclusive(5, 15));
         var_6eabfd9d = getstatuseffect("blind_zm_catalyst");
-        n_duration = function_21a3a673(5000, 7500);
+        n_duration = randomintrangeinclusive(5000, 7500);
         self status_effect::status_effect_apply(var_6eabfd9d, undefined, self, 0, n_duration);
         wait(float(n_duration) / 1000);
         var_3caa2c0f = getstatuseffect("deaf_electricity_catalyst");

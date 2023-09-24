@@ -1627,7 +1627,7 @@ function function_d08d8968() {
         level ct_vo::play_vo(#"hash_4ab0cebfd1776395", 1);
         level flag::set("ambush_done");
     } else {
-        level.players[0] thread function_682b83f7();
+        level.players[0] thread kill_squad();
         wait(1);
         level ct_vo::play_vo(#"hash_2bde6f5627471e7a", 1);
         level flag::set("ambush_failed");
@@ -1693,7 +1693,7 @@ function function_41eecea9(enemy, status_effect) {
 // Params 0, eflags: 0x0
 // Checksum 0xb30029bb, Offset: 0x8b10
 // Size: 0xc8
-function function_682b83f7() {
+function kill_squad() {
     a_bots = level.players[0] ct_bots::function_71ec2b36();
     foreach (bot in a_bots) {
         wait(randomfloatrange(0.8, 1.3));

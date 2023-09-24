@@ -781,7 +781,7 @@ function drop_inventory(player) {
         drop_amount[drop_item_id.size] = amount;
         drop_weapon_options[drop_item_id.size] = inventoryitem.weaponoptions;
         var_d148a5b6[drop_item_id.size] = inventoryitem.charmindex;
-        var_406c6a0e[drop_item_id.size] = inventoryitem.var_2febbde5;
+        var_406c6a0e[drop_item_id.size] = inventoryitem.deathfxindex;
         drop_item_id[drop_item_id.size] = itemid;
     }
     foreach (ammoweapon, itemid in player.inventory.ammo) {
@@ -883,7 +883,7 @@ function drop_inventory(player) {
 // Params 15, eflags: 0x1 linked
 // Checksum 0x5622f03, Offset: 0x3f88
 // Size: 0xb4a
-function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, angles = (0, 0, 0), stashitem = 0, deathstash = 0, targetname = undefined, parentent = undefined, attachments = undefined, var_ba40b4c1 = 1, weaponoptions = undefined, charmindex = undefined, var_2febbde5 = undefined) {
+function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, angles = (0, 0, 0), stashitem = 0, deathstash = 0, targetname = undefined, parentent = undefined, attachments = undefined, var_ba40b4c1 = 1, weaponoptions = undefined, charmindex = undefined, deathfxindex = undefined) {
     /#
         assert(!isdefined(deathstash) || deathstash === 1 || deathstash === 0);
     #/
@@ -948,7 +948,7 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
     dropitem.id = function_4ba8fde(item.var_a6762160.name).id;
     dropitem.weaponoptions = weaponoptions;
     dropitem.charmindex = charmindex;
-    dropitem.var_2febbde5 = var_2febbde5;
+    dropitem.deathfxindex = deathfxindex;
     /#
         assert(dropitem.id < 1024);
     #/

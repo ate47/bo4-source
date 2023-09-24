@@ -109,7 +109,7 @@
 #kill_flag_carrier,0,0,25,50,0,false,0,false,#hash_1adbab93883a7682,#medal_kill_flag_carrier,#t7_hud_medal_kill_flag_carrier,false,true,false,#gamemode,#,#,#,#,false
 #war_capture_progress,0,0,100,50,0,false,0,true,#hash_3515bf1abb92c839,#,#,false,false,false,#,#,#,#,#,false
 #war_captured_zone,0,42,200,50,0,false,0,true,#hash_14097df93be54ea,#medal_war_captured_zone,#medal_war_captured_zone,false,false,false,#,#,#,#,#,false
-#war_killed_attacker_in_zone,0,42,25,0,0,false,0,true,#hash_50ff391c7a60db,#hash_61f6dde09e7c7f3a,#hash_61f6dde09e7c7f3a,false,false,false,#,#,#,#,#,false
+#war_killed_attacker_in_zone,0,42,25,0,0,false,0,true,#hash_50ff391c7a60db,#medal_war_killed_attacker_in_zone,#medal_war_killed_attacker_in_zone,false,false,false,#,#,#,#,#,false
 #war_killed_defender_in_zone,0,0,25,0,0,false,0,true,#hash_7d708140005a1df7,#,#,false,false,false,#,#,#,#,#,false
 #hash_106186bebd3134fe,0,0,0,0,0,false,0,false,#,#,#hash_3d32443ae5ebf872,false,true,true,#,#ability,#,#minor,#,false
 #hash_4d28f899d6cdfe9a,0,50,0,50,15,false,2,false,#,#,#hash_2a8eb555b551e69e,false,true,true,#,#ability,#,#core,#,false

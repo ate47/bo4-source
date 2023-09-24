@@ -281,7 +281,7 @@ function private function_40eb02fc(response, intpayload) {
         self function_e6fa90be(package);
     } else if (slot <= 9) {
         self function_14e4d700(slot, package);
-        intpayload = package.var_220eaf2;
+        intpayload = package.tracktier;
     } else if (slot == 10) {
         self function_1875e2a9(package);
     } else if (slot <= 12) {
@@ -312,7 +312,7 @@ function private function_5b8256ca(package, isammo = 0, var_e120a933 = undefined
     if (isdefined(isammo) && isammo) {
         cost = package.refillcost * (isdefined(getgametypesetting(#"hash_71b2b43696e16252")) ? getgametypesetting(#"hash_71b2b43696e16252") : 1);
     } else if (isdefined(var_e120a933)) {
-        cost = package.var_95c30fc5[var_e120a933 - 1].purchasecost * registerend_prestige_imp;
+        cost = package.attachmentupgrades[var_e120a933 - 1].purchasecost * registerend_prestige_imp;
     }
     cost = int(cost);
     if (!isdefined(cost)) {
@@ -333,7 +333,7 @@ function private function_5b8256ca(package, isammo = 0, var_e120a933 = undefined
 // Size: 0x126
 function private function_a3d739c6(slot, package) {
     self.pers[#"dynamic_loadout"].weapons[slot] = spawnstruct();
-    self.pers[#"dynamic_loadout"].weapons[slot].name = package.var_60f86f10[0].item;
+    self.pers[#"dynamic_loadout"].weapons[slot].name = package.packageitems[0].item;
     self.pers[#"dynamic_loadout"].weapons[slot].attachments = [];
     self.pers[#"dynamic_loadout"].weapons[slot].ammo = -1;
     self.pers[#"dynamic_loadout"].weapons[slot].startammo = package.startammo;
@@ -345,7 +345,7 @@ function private function_a3d739c6(slot, package) {
 // Size: 0x1da
 function private function_e6fa90be(package) {
     self.pers[#"dynamic_loadout"].armor = {};
-    self.pers[#"dynamic_loadout"].armor.name = package.var_60f86f10[0].item;
+    self.pers[#"dynamic_loadout"].armor.name = package.packageitems[0].item;
     self.pers[#"dynamic_loadout"].armor.armor = package.armor;
     self.pers[#"dynamic_loadout"].armor.var_782dbf79 = isdefined(package.var_782dbf79) ? package.var_782dbf79 : 0;
     self.pers[#"dynamic_loadout"].armor.var_767b7337 = isdefined(package.var_767b7337) ? package.var_767b7337 : 0;
@@ -358,7 +358,7 @@ function private function_e6fa90be(package) {
 // Checksum 0x69190035, Offset: 0x1ac8
 // Size: 0x19e
 function private function_14e4d700(slot, package) {
-    foreach (talent in package.var_60f86f10) {
+    foreach (talent in package.packageitems) {
         if (!isdefined(self.pers[#"dynamic_loadout"].talents)) {
             self.pers[#"dynamic_loadout"].talents = [];
         } else if (!isarray(self.pers[#"dynamic_loadout"].talents)) {
@@ -393,7 +393,7 @@ function private function_2b402d5d(package) {
     if (!isdefined(primary.name)) {
         return 0;
     }
-    if (primary.name == package.var_60f86f10[0].item) {
+    if (primary.name == package.packageitems[0].item) {
         return 1;
     }
     return 0;
@@ -422,7 +422,7 @@ function private addammo(slot, package) {
 // Checksum 0x89b5b11, Offset: 0x1f40
 // Size: 0x46
 function private function_1875e2a9(package) {
-    self.pers[#"dynamic_loadout"].scorestreak = package.var_60f86f10[0].item;
+    self.pers[#"dynamic_loadout"].scorestreak = package.packageitems[0].item;
 }
 
 // Namespace dynamic_loadout/dynamic_loadout
@@ -430,7 +430,7 @@ function private function_1875e2a9(package) {
 // Checksum 0xd13ef69f, Offset: 0x1f90
 // Size: 0x26e
 function private function_7a836986(slot, package, var_e120a933) {
-    var_51cc2fc9 = package.var_95c30fc5[var_e120a933 - 1].attachmentlist;
+    var_51cc2fc9 = package.attachmentupgrades[var_e120a933 - 1].attachmentlist;
     attacharray = strtok(var_51cc2fc9, "+");
     foreach (attach in attacharray) {
         if (!isdefined(self.pers[#"dynamic_loadout"].weapons[slot].attachments)) {

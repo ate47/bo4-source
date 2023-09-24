@@ -1584,8 +1584,8 @@ function watch_robot_enter(robot) {
                 if (isdefined(player.escortingrobot) && player.escortingrobot) {
                     scoreevents::processscoreevent(#"escort_robot_escort_goal", player, undefined, undefined);
                     [[ level.var_37d62931 ]](player, 1);
-                    var_6913cac0 = player stats::get_stat(#"playerstatslist", #"hash_69b694eed7150881", #"statvalue") + 1;
-                    player stats::set_stat(#"playerstatslist", #"hash_69b694eed7150881", #"statvalue", var_6913cac0);
+                    var_6913cac0 = player stats::get_stat(#"playerstatslist", #"stats_escort_robot_delivered", #"statvalue") + 1;
+                    player stats::set_stat(#"playerstatslist", #"stats_escort_robot_delivered", #"statvalue", var_6913cac0);
                 }
             }
             level.robot recordgameeventnonplayer("robot_reached_objective");

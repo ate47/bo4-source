@@ -105,7 +105,7 @@ function on_ai_killed(s_params) {
     if (isdefined(e_attacker) && isplayer(e_attacker.player_owner) && e_attacker.player_owner hasperk(#"specialty_mod_wolf_protector")) {
         if (level.active_powerups.size < 75) {
             if (math::cointoss(25)) {
-                roll = function_21a3a673(0, 100);
+                roll = randomintrangeinclusive(0, 100);
                 if (roll <= 33) {
                     e_powerup = zm_powerups::specific_powerup_drop("wolf_bonus_hero_power", self.origin, undefined, 0.1, e_attacker.player_owner, 0, 1);
                     if (isdefined(e_powerup)) {

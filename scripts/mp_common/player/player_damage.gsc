@@ -424,7 +424,7 @@ function private function_961fe569(einflictor, eattacker, idamage, idflags, smea
             }
         }
     }
-    if (level.var_71c35c9f && weapon.statname == #"launcher_standard_t8" && smeansofdeath == "MOD_PROJECTILE_SPLASH") {
+    if (level.competitivesettingsenabled && weapon.statname == #"launcher_standard_t8" && smeansofdeath == "MOD_PROJECTILE_SPLASH") {
         idamage = int(idamage * 0.25);
     }
     fatal = self finishplayerdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, boneindex, vsurfacenormal);

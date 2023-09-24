@@ -244,7 +244,7 @@ function function_f4ebfe85(localclientnum) {
 function on_game_ended(localclientnum) {
     local_player = function_5c10bd79(localclientnum);
     if (isdefined(local_player)) {
-        local_player function_432cfdb9(localclientnum);
+        local_player shutdown_vision_pulse(localclientnum);
     }
 }
 
@@ -252,7 +252,7 @@ function on_game_ended(localclientnum) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa2d0b5c6, Offset: 0xf78
 // Size: 0x7a
-function function_432cfdb9(localclientnum) {
+function shutdown_vision_pulse(localclientnum) {
     if (isdefined(level.vision_pulse[localclientnum]) && level.vision_pulse[localclientnum]) {
         self stop_postfx(1);
         self function_f4ebfe85(localclientnum);
@@ -269,7 +269,7 @@ function function_85e399a9(localclientnum) {
     self endon(#"hash_54f15501beb799f9");
     self endon(#"stop_googles");
     self waittill(#"death", #"game_ended");
-    self function_432cfdb9(localclientnum);
+    self shutdown_vision_pulse(localclientnum);
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse

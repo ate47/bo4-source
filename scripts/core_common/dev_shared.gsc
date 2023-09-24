@@ -430,13 +430,13 @@ function body_customization_populate(mode, var_ef4940a5) {
                             }
                         }
                     }
-                    for (var_56fe70a0 = 0; var_56fe70a0 < var_9cf37283.presets.size; var_56fe70a0++) {
-                        preset = var_9cf37283.presets[var_56fe70a0];
+                    for (presetindex = 0; presetindex < var_9cf37283.presets.size; presetindex++) {
+                        preset = var_9cf37283.presets[presetindex];
                         if (!preset.isvalid) {
                             continue;
                         }
                         util::waittill_can_add_debug_command();
-                        util::add_debug_command(var_a818c4e + "<unknown string>" + "<unknown string>" + var_56fe70a0 + "<unknown string>" + var_56fe70a0 + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + playerbodytype + "<unknown string>" + "<unknown string>" + outfitindex + "<unknown string>" + "<unknown string>" + "<unknown string>" + var_56fe70a0 + "<unknown string>");
+                        util::add_debug_command(var_a818c4e + "<unknown string>" + "<unknown string>" + presetindex + "<unknown string>" + presetindex + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + playerbodytype + "<unknown string>" + "<unknown string>" + outfitindex + "<unknown string>" + "<unknown string>" + "<unknown string>" + presetindex + "<unknown string>");
                     }
                 }
                 if (isdefined(var_ef4940a5)) {

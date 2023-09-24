@@ -360,7 +360,7 @@ function function_8476e19() {
             level flag::set(#"hash_65224b2f37fb9446");
         } else {
             foreach (e_lock in level.var_79f3b34b) {
-                e_lock thread function_229f868f(function_21a3a673(1, 4));
+                e_lock thread function_229f868f(randomintrangeinclusive(1, 4));
             }
             level util::waittill_multiple("ww_lock_scrambled_0", "ww_lock_scrambled_1", "ww_lock_scrambled_2", "ww_lock_scrambled_3");
             level flag::clear(#"hash_4c1f880bcc6be2d0");

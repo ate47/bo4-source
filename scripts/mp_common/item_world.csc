@@ -31,7 +31,7 @@ function private __init__() {
     if (getgametypesetting(#"useitemspawns") == 0) {
         return;
     }
-    level.var_2c47298b = [];
+    level.showpickuphintmodel = [];
     level.var_89f832ca = [];
     level.var_62c91473 = [];
     level.var_ce95aace = [];
@@ -134,7 +134,7 @@ function private function_952d97dc(localclientnum) {
     objective_add(localclientnum, level.var_d9beffb9, "invisible", #"weapon_pickup");
     level.var_383edf80 = util::getnextobjid(localclientnum);
     objective_add(localclientnum, level.var_383edf80, "invisible", #"multi_item_pickup");
-    level.var_2c47298b[localclientnum] = createuimodel(getuimodelforcontroller(localclientnum), "hudItems.showPickupHint");
+    level.showpickuphintmodel[localclientnum] = createuimodel(getuimodelforcontroller(localclientnum), "hudItems.showPickupHint");
     level.var_89f832ca[localclientnum] = createuimodel(getuimodelforcontroller(localclientnum), "hudItems.pickupHintText");
     level.var_62c91473[localclientnum] = createuimodel(getuimodelforcontroller(localclientnum), "hudItems.pickupHintTextOverride");
     level.var_ce95aace[localclientnum] = createuimodel(getuimodelforcontroller(localclientnum), "hudItems.weapon3dHintState");

@@ -39,7 +39,7 @@ function main() {
         s_dial.var_e5f66b29 = 0;
         s_dial.b_correct = 0;
         s_dial.n_value = 0;
-        s_dial.var_7bb4ff56 = function_21a3a673(1, 9);
+        s_dial.var_7bb4ff56 = randomintrangeinclusive(1, 9);
         s_dial.dial_model = getent(s_dial.target, "targetname");
         s_dial.dial_model hide();
     }

@@ -402,12 +402,12 @@ function iskillstreaksenabled() {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x964f2d33, Offset: 0x12d8
 // Size: 0xa4
-function private function_78e3e07b(team, index, var_6d8f07f6) {
-    setobjectivetext(team, var_6d8f07f6.text);
+function private function_78e3e07b(team, index, objective_strings) {
+    setobjectivetext(team, objective_strings.text);
     if (level.splitscreen) {
-        setobjectivescoretext(team, var_6d8f07f6.var_27a7a289);
+        setobjectivescoretext(team, objective_strings.var_27a7a289);
     } else {
-        setobjectivescoretext(team, var_6d8f07f6.var_4687634f);
+        setobjectivescoretext(team, objective_strings.var_4687634f);
     }
     function_db4846b(team, index);
 }
@@ -420,8 +420,8 @@ function function_e17a230f(team) {
     if (!isdefined(level.var_d1455682)) {
         return;
     }
-    var_6d8f07f6 = level.var_d1455682.var_6d8f07f6;
-    foreach (index, var_53c9b682 in var_6d8f07f6) {
+    objective_strings = level.var_d1455682.objective_strings;
+    foreach (index, var_53c9b682 in objective_strings) {
         if (isdefined(var_53c9b682.attacker) && var_53c9b682.attacker && team != game.attackers) {
             continue;
         }

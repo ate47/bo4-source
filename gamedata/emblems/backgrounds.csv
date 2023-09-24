@@ -401,7 +401,7 @@
 #background,400,400,#ui_icon_callingcards_zm_zombie_hunter_06,#hash_346f1c0b0f47a085,1,0,0,0,#global,#,#,#,#,#,#,#,#,?0,#
 #background,401,401,#ui_icon_callingcards_zm_zombie_hunter_13,#hash_27f3f49de813004,1,0,0,0,#global,#,#,#,#,#,#,#,#,?0,#
 #background,402,402,#ui_icon_callingcards_zm_zombie_hunter_10,#hash_638b77ffb48c58f,1,0,0,0,#global,#,#,#,#,#,#,#,#,?0,#
-#background,403,403,#hash_5a97f2cc703c031,#hash_44bd0e430d0ca41d,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_hunter_13,#,#,?0,#
+#background,403,403,#callingcards_zm_zombie_hunter_08,#hash_44bd0e430d0ca41d,1,0,0,0,#global,#,#,#,#,#,#ui_icon_callingcards_zm_hunter_13,#,#,?0,#
 #background,404,404,#ui_icon_callingcards_zm_default_blightfather,#hash_5c74b75a6a04b1f6,1,0,0,0,#global,#,#,#,#,#,#,#,#,?0,#
 #background,405,405,#ui_icon_callingcards_zm_default_cargo_hold1,#hash_5c74b65a6a04b043,1,0,0,0,#global,#,#,#,#,#,#,#,#,?0,#
 #background,406,406,#ui_icon_callingcards_zm_default_cargo_hold2,#hash_5c74b55a6a04ae90,1,0,0,0,#global,#,#,#,#,#,#,#,#,?0,#

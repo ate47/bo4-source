@@ -2096,7 +2096,7 @@ function function_4c903aa5() {
                     var_d0cd0dba showpart(str_off);
                 }
             }
-            n_opening = function_21a3a673(2, 4);
+            n_opening = randomintrangeinclusive(2, 4);
             str_shot = str_shots + "_0" + n_opening + "_open";
             level scene::play(str_scene, str_shot);
             b_clockwise = !b_clockwise;

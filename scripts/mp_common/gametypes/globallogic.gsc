@@ -177,7 +177,7 @@ function init() {
     #/
     level.multiteam = level.teamcount > 2;
     level.maxteamplayers = getgametypesetting(#"maxteamplayers");
-    level.var_71c35c9f = getgametypesetting(#"competitivesettings") === 1;
+    level.competitivesettingsenabled = getgametypesetting(#"competitivesettings") === 1;
     level.competitiveteamlives = getgametypesetting(#"competitiveteamlives") === 1;
     gametype::init();
     init_teams();
@@ -1041,9 +1041,9 @@ function showobjectivenotificationuiforallplayers(missiontype, delay) {
         delay = 2;
     }
     if (sessionmodeismultiplayergame()) {
-        var_b43cb603 = getgametypesetting(#"hash_112e2ccb6a33c090");
-        if (isdefined(var_b43cb603)) {
-            delay = delay + var_b43cb603;
+        menudelay = getgametypesetting(#"bountypurchasephaseduration");
+        if (isdefined(menudelay)) {
+            delay = delay + menudelay;
         }
     }
     wait(delay);

@@ -300,7 +300,7 @@ function handlenotetrack(note, flagname, customfunction, var1) {
     case #"no death":
         self.a.nodeath = 1;
         break;
-    case #"hash_70c20f2d48c55e02":
+    case #"no pain":
         self.allowpain = 0;
         break;
     case #"hash_50c6c08f5de3ec2a":

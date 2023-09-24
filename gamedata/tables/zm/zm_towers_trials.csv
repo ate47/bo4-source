@@ -6,7 +6,7 @@
 5,#shielded,#hash_17d3c3f9575deaa,#hash_7deef3bed09aed9a,#,#acquire_weapon,#zhield_zword_dw,#,#,#,#,#,#,#
 6,#open_sesame,#hash_3d43eb968949b801,#hash_6077836e3d0cccfb,#,#open_all_doors,#,#,#,#,#,#,#,#
 7,#shields_up,#hash_5f92a1f5298fbf70,#hash_4fabaa43dbddbdd8,#,#restrict_loadout,#shield,#,#,#,#,#,#,#
-8,#hash_5c2ef513cd35cd,#hash_77fd91d432462218,#hash_6b6711cf5ee83b00,#,#hash_64d77357e69aee75,#crouch,#,#,#,#,#,#,#
+8,#creeper,#hash_77fd91d432462218,#hash_6b6711cf5ee83b00,#,#hash_64d77357e69aee75,#crouch,#,#,#,#,#,#,#
 9,#ix_lives,#hash_4241496521489863,#hash_e410c373c3adf35,#,#hash_6c9de9db7f3e44a3,#hash_5fea2159d1a2a904,#gladiator,#9,#hash_f7011df2ad413b5,#zone_starting_area_center,#,#,#
 10,#hash_6ab5543f25d2b74b,#hash_55e02dd5d39f9106,#hash_5807dc4b69518bf6,#,#defend_area,#hash_aefdadde0c31697,#hash_7cd92738d04c1625,#hash_79cbb781f15087ce,#zone_pap_room,#zone_pap_room_balcony_flooded_crypt,#,#,#
 10,#,#,#,#,#give_reward,#hash_20e770cec441c9f2,#hash_3ad6fd4b554f42a0,#uie_trial_medal_bronze,#hash_6dd1118d38426588,#,#,#,#

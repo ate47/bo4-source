@@ -552,7 +552,7 @@ function monitor_detectnearbyenemies(local_client_num) {
         setuimodelvalue(var_e4ed29e4, 1);
         enemydetectedbitfield = 0;
         playerangles = localplayer.angles;
-        var_92b00101 = getdvarint(#"hash_701d23642a5b951", 0);
+        var_92b00101 = getdvarint(#"ui_awareness_rotate", 0);
         if (var_92b00101) {
             if (playerangles[0] > 0) {
                 playerangles = (1, 0, 0);

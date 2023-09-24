@@ -869,7 +869,7 @@ function function_abb0b62() {
     a_reactions = array::randomize(a_reactions);
     i = 0;
     while (1) {
-        wait(function_21a3a673(5, 10));
+        wait(randomintrangeinclusive(5, 10));
         b_spoke = 0;
         s_results = undefined;
         s_results = level waittill(#"hash_7edbeeb2b6f53bfe");
@@ -906,7 +906,7 @@ function function_abb0b62() {
 function function_1cc4b08e() {
     level endon(#"game_ended", #"avog_captured");
     while (1) {
-        wait(function_21a3a673(5, 10));
+        wait(randomintrangeinclusive(5, 10));
         b_spoke = 0;
         s_results = undefined;
         s_results = level waittill(#"hash_3a603bc69204f012");
@@ -1021,7 +1021,7 @@ function function_1fba7fc2() {
     var_4854a91b = "vox_boss_taunt_";
     while (1) {
         b_spoke = 0;
-        wait(function_21a3a673(30, 60));
+        wait(randomintrangeinclusive(30, 60));
         if (isdefined(level.e_avogadro)) {
             players = getplayers();
             valid_players = [];
@@ -1349,7 +1349,7 @@ function function_5f7d6e4c() {
     self endon(#"hash_56dcbeaf295dd09e", #"end_game");
     zm_hms_util::function_3c173d37();
     level.var_8200dc81 zm_hms_util::function_6a0d675d(#"hash_529b7231d7ddbe80", 0, 0, 1);
-    n_variant = function_21a3a673(0, 9);
+    n_variant = randomintrangeinclusive(0, 9);
     zm_hms_util::function_3c173d37();
     level.e_avogadro zm_hms_util::function_6a0d675d(#"hash_7c662a0005eae5d4", n_variant, 0, 1);
 }

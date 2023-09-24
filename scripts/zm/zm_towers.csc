@@ -1101,7 +1101,7 @@ function function_cbe2ea1(localclientnum, var_49f77cdc, var_4b327660 = 0) {
         level.var_ecc6b1b0 = 0;
     }
     if (var_49f77cdc) {
-        level.var_ecc6b1b0 = function_21a3a673(0, 4);
+        level.var_ecc6b1b0 = randomintrangeinclusive(0, 4);
         a_structs = struct::get_array("sndCrowdOneshot", "targetname");
         a_structs = array::randomize(a_structs);
         foreach (s_struct in a_structs) {

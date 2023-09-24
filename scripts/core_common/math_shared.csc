@@ -124,6 +124,6 @@ function sign(x) {
 // Checksum 0x4209ab5e, Offset: 0x598
 // Size: 0x38
 function cointoss(n_chance = 50) {
-    return function_21a3a673(1, 100) <= n_chance;
+    return randomintrangeinclusive(1, 100) <= n_chance;
 }
 

@@ -30,7 +30,7 @@ function init_shared() {
     visionset_mgr::register_info("visionset", "vision_pulse", 1, level.vsmgr_prio_visionset_visionpulse, 12, 1, &visionset_mgr::ramp_in_out_thread_per_player_death_shutdown, 0);
     globallogic_score::function_5a241bd8(level.var_2e3031be, &is_pulsed);
     globallogic_score::function_86f90713(level.var_2e3031be, &is_pulsed);
-    level.var_432cfdb9 = &function_432cfdb9;
+    level.shutdown_vision_pulse = &shutdown_vision_pulse;
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
@@ -111,7 +111,7 @@ function gadget_vision_pulse_watch_death(slot, weapon) {
     self notify(#"vision_pulse_watch_death");
     self endon(#"vision_pulse_watch_death", #"disconnect");
     self waittill(#"death");
-    self endon(#"hash_67b8b8174869f4a2");
+    self endon(#"shutdown_vision_pulse");
     if (isdefined(self._pulse_ent)) {
         self._pulse_ent delete();
         self ability_player::function_f2250880(weapon, 0);
@@ -128,7 +128,7 @@ function gadget_vision_pulse_watch_death(slot, weapon) {
 // Size: 0xdc
 function gadget_vision_pulse_watch_emp(slot, weapon) {
     self notify(#"vision_pulse_watch_emp");
-    self endon(#"vision_pulse_watch_emp", #"disconnect", #"hash_67b8b8174869f4a2");
+    self endon(#"vision_pulse_watch_emp", #"disconnect", #"shutdown_vision_pulse");
     while (1) {
         if (self isempjammed()) {
             self notify(#"emp_vp_jammed");
@@ -148,7 +148,7 @@ function gadget_vision_pulse_watch_emp(slot, weapon) {
 // Size: 0x12e
 function function_46f384d5() {
     self notify(#"remote_control");
-    self endon(#"remote_control", #"disconnect", #"death", #"hash_67b8b8174869f4a2");
+    self endon(#"remote_control", #"disconnect", #"death", #"shutdown_vision_pulse");
     while (1) {
         if (self isremotecontrolling() || self clientfield::get_to_player("remote_missile_screenfx") != 0) {
             self clientfield::set_to_player("toggle_postfx", 1);
@@ -185,7 +185,7 @@ function gadget_vision_pulse_on(slot, weapon) {
 // Checksum 0xd273235, Offset: 0xa80
 // Size: 0x1e
 function gadget_vision_pulse_off(slot, weapon) {
-    self.var_35182804 = 0;
+    self.visionpulsekill = 0;
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
@@ -193,7 +193,7 @@ function gadget_vision_pulse_off(slot, weapon) {
 // Checksum 0x2c0b8575, Offset: 0xaa8
 // Size: 0x3b4
 function gadget_vision_pulse_start(slot, weapon) {
-    self endon(#"disconnect", #"death", #"emp_vp_jammed", #"hash_67b8b8174869f4a2", #"hash_7e581b90612825f4");
+    self endon(#"disconnect", #"death", #"emp_vp_jammed", #"shutdown_vision_pulse", #"hash_7e581b90612825f4");
     wait(0.1);
     if (isdefined(self._pulse_ent)) {
         return;
@@ -232,14 +232,14 @@ function gadget_vision_pulse_start(slot, weapon) {
     }
     self thread function_19bef771(weapon);
     self wait_until_is_done(slot, self._gadgets_player[slot].gadget_pulse_duration);
-    self function_432cfdb9(spottedenemy, 0, weapon);
+    self shutdown_vision_pulse(spottedenemy, 0, weapon);
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
 // Params 3, eflags: 0x0
 // Checksum 0x6772ed0d, Offset: 0xe68
 // Size: 0x144
-function function_432cfdb9(spottedenemy, immediate, weapon) {
+function shutdown_vision_pulse(spottedenemy, immediate, weapon) {
     self notify(#"vision_pulse_off");
     self.var_87b1ba00 = 0;
     if (!spottedenemy) {
@@ -264,7 +264,7 @@ function function_432cfdb9(spottedenemy, immediate, weapon) {
 // Checksum 0xf6d9db9e, Offset: 0xfb8
 // Size: 0x114
 function function_19bef771(weapon) {
-    self endon(#"death", #"hash_67b8b8174869f4a2", #"hash_7e581b90612825f4");
+    self endon(#"death", #"shutdown_vision_pulse", #"hash_7e581b90612825f4");
     wait(float(weapon.var_4d88a1ff) / 1000);
     self disableoffhandweapons();
     self switchtooffhand(level.var_2e3031be);
@@ -283,7 +283,7 @@ function function_19bef771(weapon) {
 // Checksum 0xfe4b58dd, Offset: 0x10d8
 // Size: 0x84
 function wait_until_is_done(slot, timepulse) {
-    self endon(#"hash_7e581b90612825f4", #"hash_67b8b8174869f4a2", #"death");
+    self endon(#"hash_7e581b90612825f4", #"shutdown_vision_pulse", #"death");
     wait(float(timepulse) / 1000);
     self globallogic_score::function_d3ca3608(#"hash_32591f4be1bf4f22");
 }

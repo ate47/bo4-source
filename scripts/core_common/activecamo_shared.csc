@@ -142,8 +142,8 @@ function function_ae141bf2(camoindex) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa45b1c79, Offset: 0x8e0
 // Size: 0x42
-function function_3d96ad48(var_6f2ae9c0) {
-    camoindex = getcamoindex(var_6f2ae9c0);
+function function_3d96ad48(camooptions) {
+    camoindex = getcamoindex(camooptions);
     return function_ae141bf2(camoindex);
 }
 
@@ -216,17 +216,17 @@ function function_95f12bac(localclientnum, weapon, weaponoptions) {
 function updateactivecamo(localclientnum, eventstruct) {
     weaponoptions = self function_e10e6c37();
     stagenum = getactivecamostage(weaponoptions);
-    self update_active_camo(localclientnum, eventstruct.weapon, eventstruct.tagname, stagenum, eventstruct.impulse, 0, eventstruct.var_6f2ae9c0);
+    self update_active_camo(localclientnum, eventstruct.weapon, eventstruct.tagname, stagenum, eventstruct.impulse, 0, eventstruct.camooptions);
 }
 
 // Namespace activecamo/activecamo_shared
 // Params 7, eflags: 0x1 linked
 // Checksum 0x4947d2d4, Offset: 0xdc0
 // Size: 0x7c4
-function update_active_camo(localclientnum, weapon, tagname, stagenum, impulse, var_d71e8c6e, var_6f2ae9c0) {
+function update_active_camo(localclientnum, weapon, tagname, stagenum, impulse, var_d71e8c6e, camooptions) {
     var_d1460f46 = tagname == "tag_stowed_back";
     self function_7a55e60a(var_d1460f46);
-    activecamoinfo = function_3d96ad48(var_6f2ae9c0);
+    activecamoinfo = function_3d96ad48(camooptions);
     if (!isdefined(activecamoinfo)) {
         function_3e27a7cb(localclientnum, tagname);
         return;

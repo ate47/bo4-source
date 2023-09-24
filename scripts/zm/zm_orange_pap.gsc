@@ -550,7 +550,7 @@ function function_21b093ce(var_5ea5c94d, ended_early) {
         }
         zm_orange_lighthouse::function_1f29d511();
     }
-    n_variant = function_21a3a673(0, 2);
+    n_variant = randomintrangeinclusive(0, 2);
     if (!(isdefined(level.var_3c9cfd6f) && level.var_3c9cfd6f)) {
         level.pablo_npc zm_vo::vo_stop();
         level.pablo_npc zm_audio::do_player_or_npc_playvox(#"hash_6ab0c09b3c332af6" + n_variant);

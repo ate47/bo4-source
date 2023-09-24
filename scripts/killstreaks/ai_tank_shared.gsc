@@ -252,7 +252,7 @@ function function_c3d60d1c() {
 // Params 0, eflags: 0x0
 // Checksum 0x45aaabd0, Offset: 0x1488
 // Size: 0x28
-function function_5569aa48() {
+function islocselincommandmode() {
     return self clientfield::get_player_uimodel("locSel.commandMode") == 1;
 }
 

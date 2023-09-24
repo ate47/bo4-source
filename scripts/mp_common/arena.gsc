@@ -90,7 +90,7 @@ function update_arena_challenge_seasons() {
     eventtype = function_945560bf();
     switch (eventtype) {
     case 0:
-        eventstate = #"hash_ca4c97bc6c2963b";
+        eventstate = #"rankedplaystats";
         break;
     case 1:
         eventstate = #"leagueplaystats";

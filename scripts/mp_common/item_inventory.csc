@@ -158,7 +158,7 @@ function private function_ca87f318(localclientnum) {
         }
         if (waitresult._notify === var_790695cc) {
             var_bd027dd9 = waitresult.id;
-            quickequip = isdefined(waitresult.var_d9b84a57) ? waitresult.var_d9b84a57 : 0;
+            quickequip = isdefined(waitresult.extraarg) ? waitresult.extraarg : 0;
             if (quickequip) {
                 var_ed98a5fe = function_15d578f4(localclientnum, var_bd027dd9);
                 if (isdefined(var_ed98a5fe)) {
@@ -182,7 +182,7 @@ function private function_ca87f318(localclientnum) {
                     }
                 }
             }
-            if (isdefined(waitresult.var_31a0fb28)) {
+            if (isdefined(waitresult.extraarg2)) {
                 function_97fedb0d(localclientnum, 11, var_bd027dd9, quickequip);
             } else {
                 function_97fedb0d(localclientnum, 4, var_bd027dd9, quickequip);
@@ -531,7 +531,7 @@ function private function_ac4df751(localclientnum) {
         waitresult = level waittill(var_5054e2f7, var_ffec0c46, var_46a7a0e3, var_fcd005cc, var_3d759450);
         if (waitresult._notify === var_5054e2f7) {
             var_bd027dd9 = waitresult.id;
-            count = waitresult.var_d9b84a57;
+            count = waitresult.extraarg;
             itemid = item_world::function_28b42f1c(localclientnum, var_bd027dd9);
             if (itemid != 32767) {
                 if (function_6d9d9cd7(waitresult.selectedindex)) {

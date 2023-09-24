@@ -50,7 +50,7 @@ function private on_begin() {
 function private on_end(round_reset) {
     self.active = 0;
     zombie_utility::set_zombie_var(#"zombie_powerup_drop_max_per_round", 4);
-    level.var_1dce56cc = level.n_total_kills + function_21a3a673(15, 25);
+    level.var_1dce56cc = level.n_total_kills + randomintrangeinclusive(15, 25);
     zombie_utility::set_zombie_var(#"zombie_drop_item", 0);
     zm_spawner::deregister_zombie_death_event_callback(&function_138aec8e);
 }

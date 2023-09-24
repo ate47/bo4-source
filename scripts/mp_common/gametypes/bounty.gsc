@@ -76,7 +76,7 @@ function event_handler[gametype_init] main(eventstruct) {
     if (!isdefined(game.var_b40d8319)) {
         game.var_b40d8319 = getgametypesetting(#"hash_2847dbf50c74391f");
     }
-    level.var_b9aad767 = getgametypesetting(#"hash_112e2ccb6a33c090");
+    level.var_b9aad767 = getgametypesetting(#"bountypurchasephaseduration");
     level.var_860cdbdb = getgametypesetting(#"hash_63f088c667689f40");
     level.var_8e8e80c6 = getgametypesetting(#"hash_32995dae734b94b6");
     level.var_374a483e = getgametypesetting(#"hash_561be47168b4e674");

@@ -40,22 +40,22 @@ function on_player_spawned() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x127471fa, Offset: 0x1e0
 // Size: 0x2cc
-function function_bf5cad4e(var_1e866967) {
+function function_bf5cad4e(gamemodedata) {
     var_10d87328 = (isdefined(level.var_8a3a9ca4.roundend) ? level.var_8a3a9ca4.roundend : 0) - (isdefined(level.var_8a3a9ca4.roundstart) ? level.var_8a3a9ca4.roundstart : 0);
     firstblood = (isdefined(level.var_8a3a9ca4.firstblood) ? level.var_8a3a9ca4.firstblood : 0) - (isdefined(level.var_8a3a9ca4.roundstart) ? level.var_8a3a9ca4.roundstart : 0);
     alliesscore = isdefined([[ level._getteamscore ]](#"allies")) ? [[ level._getteamscore ]](#"allies") : 0;
     axisscore = isdefined([[ level._getteamscore ]](#"axis")) ? [[ level._getteamscore ]](#"axis") : 0;
     var_5e25b17b = abs(alliesscore - axisscore);
-    var_1e866967 = {};
-    var_1e866967.gamemode = level.gametype;
-    var_1e866967.wintype = isdefined(var_1e866967.wintype) ? var_1e866967.wintype : "NA";
-    var_1e866967.var_10d87328 = var_10d87328;
-    var_1e866967.firstblood = firstblood;
-    var_1e866967.var_5e25b17b = var_5e25b17b;
-    var_1e866967.timeremaining = isdefined(var_1e866967.remainingtime) ? var_1e866967.remainingtime : 0;
-    var_1e866967.var_20de6a02 = isdefined(var_1e866967.var_20de6a02) ? var_1e866967.var_20de6a02 : 0;
-    var_1e866967.var_be1de2ab = isdefined(var_1e866967.var_be1de2ab) ? var_1e866967.var_be1de2ab : 0;
-    function_92d1707f(#"hash_1a63efe7c6121b24", var_1e866967);
+    gamemodedata = {};
+    gamemodedata.gamemode = level.gametype;
+    gamemodedata.wintype = isdefined(gamemodedata.wintype) ? gamemodedata.wintype : "NA";
+    gamemodedata.var_10d87328 = var_10d87328;
+    gamemodedata.firstblood = firstblood;
+    gamemodedata.var_5e25b17b = var_5e25b17b;
+    gamemodedata.timeremaining = isdefined(gamemodedata.remainingtime) ? gamemodedata.remainingtime : 0;
+    gamemodedata.var_20de6a02 = isdefined(gamemodedata.var_20de6a02) ? gamemodedata.var_20de6a02 : 0;
+    gamemodedata.var_be1de2ab = isdefined(gamemodedata.var_be1de2ab) ? gamemodedata.var_be1de2ab : 0;
+    function_92d1707f(#"hash_1a63efe7c6121b24", gamemodedata);
 }
 
 // Namespace bb/bb

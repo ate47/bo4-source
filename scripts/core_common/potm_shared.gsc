@@ -206,7 +206,7 @@ function function_ec01de3() {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x687ddbd6, Offset: 0xa50
 // Size: 0x6c
-function private function_ec9661b4(clientent) {
+function private getclientname(clientent) {
     if (!isdefined(clientent)) {
         return "N/A";
     }
@@ -231,7 +231,7 @@ function function_c7e98e25(var_6060b78c) {
         if (isdefined(var_6060b78c.clientnum)) {
             foreach (player in level.players) {
                 if (player getentitynumber() == var_6060b78c.clientnum) {
-                    var_1be0f2c3 = function_ec9661b4(player);
+                    var_1be0f2c3 = getclientname(player);
                     var_1be0f2c3 = var_1be0f2c3 + " (KillcamParams: N/A)";
                 }
             }
@@ -270,9 +270,9 @@ function function_b5433e55(bookmark) {
     var_cef89b92.infoindex = bookmark.var_900768bc.index;
     var_cef89b92.var_fddbd3ce = bookmark.var_900768bc.id;
     var_cef89b92.mainclientnum = bookmark.mainclientnum;
-    var_cef89b92.var_9b2cab54 = function_ec9661b4(bookmark.var_81538b15);
+    var_cef89b92.var_9b2cab54 = getclientname(bookmark.var_81538b15);
     var_cef89b92.otherclientnum = bookmark.otherclientnum;
-    var_cef89b92.var_3b8a36fd = function_ec9661b4(bookmark.var_f28fb772);
+    var_cef89b92.var_3b8a36fd = getclientname(bookmark.var_f28fb772);
     var_cef89b92.scoreaddition = bookmark.scoreaddition;
     var_cef89b92.scoremultiplier = bookmark.scoremultiplier;
     var_cef89b92.scoreeventpriority = bookmark.scoreeventpriority;
@@ -1372,10 +1372,10 @@ function private function_e81fe19d(bookmark) {
             var_567b8be5 = var_567b8be5 + "<unknown string>" + bookmark.isfirstperson;
         }
         if (isdefined(bookmark.var_81538b15)) {
-            var_567b8be5 = var_567b8be5 + "<unknown string>" + function_ec9661b4(bookmark.var_81538b15);
+            var_567b8be5 = var_567b8be5 + "<unknown string>" + getclientname(bookmark.var_81538b15);
         }
         if (isdefined(bookmark.var_f28fb772)) {
-            var_567b8be5 = var_567b8be5 + "<unknown string>" + function_ec9661b4(bookmark.var_f28fb772);
+            var_567b8be5 = var_567b8be5 + "<unknown string>" + getclientname(bookmark.var_f28fb772);
         }
         if (isdefined(bookmark.scoreaddition)) {
             var_567b8be5 = var_567b8be5 + "<unknown string>" + bookmark.scoreaddition;

@@ -303,7 +303,7 @@ function blood_move() {
         self moveto(s_point.origin, 0.5, 0.1, 0.2);
         self.var_d0fed9fb = s_point.script_int;
         s_result = undefined;
-        s_result = self waittilltimeout(function_21a3a673(4 - level.var_9e3c632e, 6 - level.var_9e3c632e), #"threshold_hit");
+        s_result = self waittilltimeout(randomintrangeinclusive(4 - level.var_9e3c632e, 6 - level.var_9e3c632e), #"threshold_hit");
     }
 }
 

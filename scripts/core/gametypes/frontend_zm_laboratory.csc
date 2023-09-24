@@ -468,7 +468,7 @@ function function_f47528e7(localclientnum, var_9d5a2308, index) {
 function function_18d7cd9b(localclientnum, index) {
     /#
         if (isdefined(level.var_32f68719) && level.var_32f68719) {
-            return function_21a3a673(0, 4);
+            return randomintrangeinclusive(0, 4);
         }
         switch (index) {
         case 1:

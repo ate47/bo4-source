@@ -560,7 +560,7 @@ function assign_remaining_players(only_assign_player) {
         characters[i] = spawnstruct();
         characters[i].index = i;
         characters[i].available = 0;
-        characters[i].enabled = function_f4bf7e3f(i) && isdefined(playerrolefields.var_422e172f) && playerrolefields.var_422e172f && (!util::function_8570168d() || isdefined(characterfields.var_49a55967) && characterfields.var_49a55967) && !isdefined(characterfields.var_b12a801f);
+        characters[i].enabled = function_f4bf7e3f(i) && isdefined(playerrolefields.var_422e172f) && playerrolefields.var_422e172f && (!util::function_8570168d() || isdefined(characterfields.var_49a55967) && characterfields.var_49a55967) && !isdefined(characterfields.requireddvar);
         characters[i].category = player_role::get_category_for_index(i);
         characters[i].var_9a6db9eb = getgametypesetting(#"maxuniquerolesperteam", i);
         if (characters[i].enabled && player_role::is_valid(i) && characters[i].category != "default" && characters[i].var_9a6db9eb != 0) {

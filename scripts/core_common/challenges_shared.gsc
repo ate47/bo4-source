@@ -656,7 +656,7 @@ function roundend(winner) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xd5280286, Offset: 0x2398
 // Size: 0xe3c
-function function_90185171(totaltimeplayed, credits, var_e1020153) {
+function function_90185171(totaltimeplayed, credits, casexp) {
     if (!sessionmodeisonlinegame() || !(isdefined(level.rankedmatch) && level.rankedmatch)) {
         return;
     }
@@ -681,7 +681,7 @@ function function_90185171(totaltimeplayed, credits, var_e1020153) {
         println("<unknown string>" + (isdefined(credits) ? credits : "<unknown string>"));
     #/
     /#
-        println("<unknown string>" + (isdefined(var_e1020153) ? var_e1020153 : "<unknown string>"));
+        println("<unknown string>" + (isdefined(casexp) ? casexp : "<unknown string>"));
     #/
     /#
         println("<unknown string>" + (isdefined(totaltimeplayed) ? totaltimeplayed : "<unknown string>"));
@@ -689,10 +689,10 @@ function function_90185171(totaltimeplayed, credits, var_e1020153) {
     /#
         println("<unknown string>" + (isdefined(player.pers[#"participation"]) ? player.pers[#"participation"] : "<unknown string>"));
     #/
-    if (credits <= 0 && var_e1020153 <= 0) {
+    if (credits <= 0 && casexp <= 0) {
         return;
     }
-    if (credits > 0 || var_e1020153 > 0) {
+    if (credits > 0 || casexp > 0) {
         if (!isdefined(totaltimeplayed) || totaltimeplayed <= 0) {
             return;
         }
@@ -705,7 +705,7 @@ function function_90185171(totaltimeplayed, credits, var_e1020153) {
             }
             var_159015d5 = getdvarint(#"hash_69a151539f8595de", 0);
             if (var_159015d5 > 0) {
-                var_e1020153 = var_159015d5;
+                casexp = var_159015d5;
                 player.timeplayed[#"total"]++;
                 player.pers[#"participation"]++;
             }
@@ -760,7 +760,7 @@ function function_90185171(totaltimeplayed, credits, var_e1020153) {
                 #/
             }
             /#
-                println("<unknown string>" + player.name + "<unknown string>" + totaltimeplayed + "<unknown string>" + credits + "<unknown string>" + var_e1020153);
+                println("<unknown string>" + player.name + "<unknown string>" + totaltimeplayed + "<unknown string>" + credits + "<unknown string>" + casexp);
             #/
             if (player function_875e4dbc()) {
                 var_91503b6f = getdvarfloat(#"hash_4da039b4bc312fc1", 1.1);
@@ -776,7 +776,7 @@ function function_90185171(totaltimeplayed, credits, var_e1020153) {
                 var_5f508856 = getdvarint(#"hash_3e456f4cef4816f5", 1000);
             }
             credits = min(credits, var_1ed920ee);
-            var_e1020153 = min(var_e1020153, var_5f508856);
+            casexp = min(casexp, var_5f508856);
             modeindex = 1;
             if (sessionmodeiswarzonegame()) {
                 modeindex = 2;
@@ -797,13 +797,13 @@ function function_90185171(totaltimeplayed, credits, var_e1020153) {
                     player function_cce105c8(#"hash_680a99fa024dd073", 1, int(credits), 2, modeindex, 3, int(totaltimeplayed));
                 }
             }
-            if (var_e1020153 > 0) {
+            if (casexp > 0) {
                 if (sessionmodeismultiplayergame() && getdvarint(#"hash_107f9b52b0455b54", 1) || sessionmodeiswarzonegame() && getdvarint(#"hash_10d78d52b08fb960", 1)) {
                     var_ae857992 = getdvarint(#"hash_60d812bef0f782fb", 2);
                     /#
-                        println("<unknown string>" + var_e1020153);
+                        println("<unknown string>" + casexp);
                     #/
-                    player function_cce105c8(#"hash_7c81ccc32581870e", 1, int(var_e1020153), 2, modeindex, 3, int(totaltimeplayed), 4, int(var_ae857992));
+                    player function_cce105c8(#"hash_7c81ccc32581870e", 1, int(casexp), 2, modeindex, 3, int(totaltimeplayed), 4, int(var_ae857992));
                 }
             }
         }
@@ -819,9 +819,9 @@ function function_659f7dc(var_1ef5a3ba, var_3e853b2e, var_25ad32e1) {
     if (isdefined(var_1ef5a3ba) && var_1ef5a3ba > 0) {
         var_5024088b = float(var_1ef5a3ba) / 1000;
         credits = var_5024088b * var_3e853b2e;
-        var_e1020153 = var_5024088b * var_25ad32e1;
+        casexp = var_5024088b * var_25ad32e1;
         if (credits > 0) {
-            self function_90185171(var_5024088b, credits, var_e1020153);
+            self function_90185171(var_5024088b, credits, casexp);
         }
     }
 }

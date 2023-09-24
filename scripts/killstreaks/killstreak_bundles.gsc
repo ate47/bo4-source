@@ -448,7 +448,7 @@ function function_dd7587e4(bundle, maxhealth, attacker, weapon, type, damage, fl
                     weapon_damage = function_daad16b8(maxhealth, weapon_damage, bundle.ksshotgunenergytokill);
                 } else {
                     rocketstokill = isdefined(bundle.ksrocketstokill) ? bundle.ksrocketstokill : 0;
-                    if (level.var_71c35c9f && isdefined(bundle.var_b744074b) && bundle.var_b744074b != 0) {
+                    if (level.competitivesettingsenabled && isdefined(bundle.var_b744074b) && bundle.var_b744074b != 0) {
                         rocketstokill = bundle.var_b744074b;
                     }
                     if (rocketstokill == 0) {

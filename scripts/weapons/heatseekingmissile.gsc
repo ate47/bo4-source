@@ -891,7 +891,7 @@ function setfriendlyflags(weapon, target) {
                     }
                     if (isdefined(damagetaken) && isdefined(maxhealth)) {
                         rocketstokill = level.killstreakbundle[killstreaktype].ksrocketstokill;
-                        if (level.var_71c35c9f && isdefined(level.killstreakbundle[killstreaktype].var_b744074b) && level.killstreakbundle[killstreaktype].var_b744074b != 0) {
+                        if (level.competitivesettingsenabled && isdefined(level.killstreakbundle[killstreaktype].var_b744074b) && level.killstreakbundle[killstreaktype].var_b744074b != 0) {
                             rocketstokill = level.killstreakbundle[killstreaktype].var_b744074b;
                         }
                         damageperrocket = maxhealth / rocketstokill + 1;

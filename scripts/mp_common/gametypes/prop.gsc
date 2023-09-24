@@ -1118,7 +1118,7 @@ function propwhistle() {
     level endon(#"game_ended");
     function_241f7953();
     var_e9aeaa85 = gettime();
-    var_edda915c = level.phsettings.propwhistletime * 1000;
+    whistletime = level.phsettings.propwhistletime * 1000;
     var_cc98cae0 = 20000;
     var_2baed43 = var_cc98cae0;
     var_2d0854a2 = 500;
@@ -1130,11 +1130,11 @@ function propwhistle() {
         var_b87d1ed = var_8419e70e[0].origin;
     }
     hostmigration::waitlongdurationwithhostmigrationpause(level.phsettings.prophidetime);
-    setbombtimer("A", gettime() + var_edda915c);
+    setbombtimer("A", gettime() + whistletime);
     setmatchflag("bomb_timer_a", 1);
     hostmigration::waitlongdurationwithhostmigrationpause(level.phsettings.propwhistletime);
     while (1) {
-        if (var_e9aeaa85 + var_edda915c - var_2d0854a2 < gettime()) {
+        if (var_e9aeaa85 + whistletime - var_2d0854a2 < gettime()) {
             var_ec943162++;
             setmatchflag("bomb_timer_a", 0);
             if (useprophudserver()) {
@@ -1166,15 +1166,15 @@ function propwhistle() {
                     var_2baed43 = var_2baed43 + getteamplayersalive(game.defenders) * 2500;
                 }
                 if (useprophudserver()) {
-                    level.phwhistletimer settimer(int(var_edda915c / 1000));
+                    level.phwhistletimer settimer(int(whistletime / 1000));
                 }
-                whistlestarttimer(int(var_edda915c / 1000));
+                whistlestarttimer(int(whistletime / 1000));
                 if (useprophudserver()) {
                     level.whistling.alpha = 0;
                     level.phwhistletimer.alpha = 1;
                 }
             }
-            setbombtimer("A", gettime() + int(var_edda915c));
+            setbombtimer("A", gettime() + int(whistletime));
             setmatchflag("bomb_timer_a", 1);
         }
         hostmigration::waitlongdurationwithhostmigrationpause(0.5);

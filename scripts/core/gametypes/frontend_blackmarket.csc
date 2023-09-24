@@ -151,11 +151,11 @@ function function_f559e439(localclientnum, menu_data, state) {
     var_ac97b37c = undefined;
     level.var_cf24a85f.var_5a133766 = 0;
     switch (hash(state)) {
-    case #"hash_1f8afff27df8492":
+    case #"welcome_case_multi":
     case #"welcome_empty":
-    case #"hash_5005f24cf98a0530":
-    case #"hash_5c87d0d1cc24e8b0":
-    case #"hash_5e0f6f6c23dde3e9":
+    case #"welcome_case_avail":
+    case #"welcome_case_special":
+    case #"welcome_case_notavail":
         level.var_cf24a85f.var_5a133766 = 1;
         level.var_cf24a85f.var_46d8e7d1 = hash(state) != #"welcome_empty";
         var_f56984dc = "idle";
@@ -252,13 +252,13 @@ function function_fa73161a(localclientnum, menu_data, state) {
             default:
                 level.var_cf24a85f.var_82406a05 = #"cin_black_market_greeting";
                 break;
-            case #"hash_5005f24cf98a0530":
+            case #"welcome_case_avail":
                 level.var_cf24a85f.var_82406a05 = #"hash_436b9483accb9a63";
                 break;
-            case #"hash_1f8afff27df8492":
+            case #"welcome_case_multi":
                 level.var_cf24a85f.var_82406a05 = #"hash_4fba9743015d76e";
                 break;
-            case #"hash_5c87d0d1cc24e8b0":
+            case #"welcome_case_special":
                 level.var_cf24a85f.var_82406a05 = #"hash_2808d911694eca55";
                 break;
             }

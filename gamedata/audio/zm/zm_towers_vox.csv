@@ -11,7 +11,7 @@
 #trap_activate,#hellpool,#hash_719b5e24f6fa208d,0,0,false,false,false,false
 #build_complete,#zblueprint_trap_hellpools,#hash_54c90b4fd6b2dca9,0,0,false,false,false,false
 #fire_trail,#active,#hash_4e1883cacfc0080b,0,0,true,false,false,false
-#hash_50b9af2220df4763,#pickup,#hash_2b2a7c0ea867948e,0,0,true,false,false,false
+#imp_jar,#pickup,#hash_2b2a7c0ea867948e,0,0,true,false,false,false
 #hash_3a7466277372554d,#pickup,#hash_7afc64a7fa6a0db4,0,0,true,false,false,false
 #box,#hash_73ff1c53a97e6f2d,#hash_1c667d0f1af843a9,0,0,true,false,false,false
 #crowd,#positive_good,#hash_1f176a67f27ed5f6,0,0,false,false,false,false

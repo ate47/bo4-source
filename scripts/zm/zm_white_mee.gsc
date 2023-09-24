@@ -518,7 +518,7 @@ function function_6e678915() {
     while (isdefined(self)) {
         b_player_in_range = 0;
         while (!b_player_in_range) {
-            wait(function_21a3a673(4, 8));
+            wait(randomintrangeinclusive(4, 8));
             player = zm_hms_util::function_3815943c();
             if (isdefined(player)) {
                 distance = distance(player.origin, self.origin);
@@ -542,7 +542,7 @@ function function_6e678915() {
                     }
                 }
             }
-            wait(function_21a3a673(4, 8));
+            wait(randomintrangeinclusive(4, 8));
         }
     }
 }

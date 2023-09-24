@@ -360,7 +360,7 @@ function function_2ff352cc() {
     } else {
         n_players = a_e_players.size;
     }
-    n_kill_count = function_21a3a673(zombie_utility::function_d2dfacfd(#"hash_434b3261c607850" + n_players), zombie_utility::function_d2dfacfd(#"zombie_powerup_drop_max_" + n_players));
+    n_kill_count = randomintrangeinclusive(zombie_utility::function_d2dfacfd(#"hash_434b3261c607850" + n_players), zombie_utility::function_d2dfacfd(#"zombie_powerup_drop_max_" + n_players));
     if (zm_custom::function_901b751c(#"zmpowerupfrequency") == 0) {
         n_kill_count = n_kill_count * 2;
     } else if (zm_custom::function_901b751c(#"zmpowerupfrequency") == 2) {

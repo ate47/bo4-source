@@ -44,7 +44,7 @@ function function_ea6a4006() {
 function function_5bd0ee94() {
     self endon(#"death");
     level.var_b10a99a1 = array(#"hash_32d43d269e30acea", #"hash_17d53ca41c412d7f", #"hash_da35c4f5834157c", #"hash_3ee8d76b357581a1", #"hash_7cc1be647a9336e6");
-    level.var_7e23e2dd = 0;
+    level.next_rmb = 0;
     level thread function_148c9f71();
     level waittill(#"rich_mind");
     self thread function_c207b97();
@@ -92,11 +92,11 @@ function function_25f77618() {
 function function_148c9f71() {
     self endon(#"game_ended");
     callback::on_round_end(&function_76659f5e);
-    while (level.var_7e23e2dd < 3) {
-        level waittill(#"hash_299e7babad6c5b0e");
-        level.var_7e23e2dd++;
+    while (level.next_rmb < 3) {
+        level waittill(#"next_rmb");
+        level.next_rmb++;
     }
-    level.var_7e23e2dd = 0;
+    level.next_rmb = 0;
     level notify(#"rich_mind");
 }
 
@@ -106,11 +106,11 @@ function function_148c9f71() {
 // Size: 0xb4
 function function_c207b97() {
     self endon(#"death");
-    while (level.var_7e23e2dd < 5) {
+    while (level.next_rmb < 5) {
         self.var_472e3448 = 1;
-        self zm_vo::vo_say(level.var_b10a99a1[level.var_7e23e2dd], undefined, 1, undefined, undefined, 1);
-        level.var_7e23e2dd++;
-        level waittill(#"hash_299e7babad6c5b0e");
+        self zm_vo::vo_say(level.var_b10a99a1[level.next_rmb], undefined, 1, undefined, undefined, 1);
+        level.next_rmb++;
+        level waittill(#"next_rmb");
     }
     callback::remove_on_round_end(&function_76659f5e);
 }
@@ -122,9 +122,9 @@ function function_c207b97() {
 function function_76659f5e() {
     a_e_players = zm_office_floors::function_df2506d3(4);
     foreach (e_player in a_e_players) {
-        level notify(#"hash_299e7babad6c5b0e");
+        level notify(#"next_rmb");
         if (e_player zm_characters::is_character(array(#"hash_59f3598ad57dadd8", #"hash_2bcebdf1bef33311", #"hash_5a715cb0a6e071ae"))) {
-            level notify(#"hash_299e7babad6c5b0e");
+            level notify(#"next_rmb");
         }
     }
 }

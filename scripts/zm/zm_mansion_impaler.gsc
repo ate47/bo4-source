@@ -755,7 +755,7 @@ function function_9ee098d5() {
             level.monolith_ghost.var_dafa2b89 thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost);
             level.monolith_ghost thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost.mdl_head);
         }
-        wait(function_21a3a673(3, 5));
+        wait(randomintrangeinclusive(3, 5));
     }
     level.monolith_ghost.var_dafa2b89 thread scene::stop();
     level.monolith_ghost thread scene::stop();

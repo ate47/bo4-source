@@ -1446,22 +1446,22 @@ function player_killed(einflictor, attacker, idamage, smeansofdeath, weapon, vdi
 // Checksum 0xc1fee8a0, Offset: 0x67b0
 // Size: 0x114
 function function_16e6bd2e(var_c1e98979) {
-    var_1e866967 = spawnstruct();
-    var_1e866967.remainingtime = max(0, globallogic_utils::gettimeremaining());
+    gamemodedata = spawnstruct();
+    gamemodedata.remainingtime = max(0, globallogic_utils::gettimeremaining());
     switch (var_c1e98979) {
     case 2:
-        var_1e866967.wintype = "time_limit_reached";
+        gamemodedata.wintype = "time_limit_reached";
         break;
     case 3:
-        var_1e866967.wintype = "score_limit_reached";
+        gamemodedata.wintype = "score_limit_reached";
         break;
     case 9:
     case 10:
     default:
-        var_1e866967.wintype = "NA";
+        gamemodedata.wintype = "NA";
         break;
     }
-    bb::function_bf5cad4e(var_1e866967);
+    bb::function_bf5cad4e(gamemodedata);
 }
 
 // Namespace warzone/warzone

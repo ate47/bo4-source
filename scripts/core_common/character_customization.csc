@@ -314,9 +314,9 @@ class class_7da27482 {
     // Params 4, eflags: 0x5 linked
     // Checksum 0xce41bb6a, Offset: 0x3df0
     // Size: 0x12a
-    function private function_2e77aae4(localclientnum, weaponmodel, var_6f2ae9c0, var_49daa2f6) {
-        stage = getactivecamostage(var_6f2ae9c0);
-        camoindex = getcamoindex(var_6f2ae9c0);
+    function private function_2e77aae4(localclientnum, weaponmodel, camooptions, var_49daa2f6) {
+        stage = getactivecamostage(camooptions);
+        camoindex = getcamoindex(camooptions);
         activecamoinfo = activecamo::function_ae141bf2(camoindex);
         if (!isdefined(activecamoinfo)) {
             return 0;
@@ -382,10 +382,10 @@ class class_7da27482 {
     // Params 4, eflags: 0x1 linked
     // Checksum 0x6092ceb, Offset: 0x3928
     // Size: 0x304
-    function play_gesture(gesture_index, var_4a759822, var_1b1e990c = 1, var_e14a92d8 = 0) {
+    function play_gesture(gesture_index, wait_until_model_steam_ends, replay_if_already_playing = 1, ignore_if_already_playing = 0) {
         self endon(#"deleted");
         self endon(#"cancel_gesture");
-        if (var_4a759822 && isdefined(self.var_1d18f5c7)) {
+        if (wait_until_model_steam_ends && isdefined(self.var_1d18f5c7)) {
             while (![[ self ]]->function_ea4ac9f8()) {
                 wait(0.25);
             }
@@ -400,8 +400,8 @@ class class_7da27482 {
             }
             var_a7e34ee1 = self.var_228f64da getcurrentanimscriptedname();
             var_99789677 = var_a7e34ee1 === gesture.animation || var_a7e34ee1 === gesture.intro || var_a7e34ee1 === gesture.outro;
-            if (!var_e14a92d8 || !var_99789677) {
-                if (var_1b1e990c || !var_99789677) {
+            if (!ignore_if_already_playing || !var_99789677) {
+                if (replay_if_already_playing || !var_99789677) {
                     self thread function_60b3658e(var_2ec36514, 1);
                     character_customization::function_bee62aa1(self);
                     if (isdefined(gesture.intro)) {
@@ -741,7 +741,7 @@ class class_7da27482 {
     // Checksum 0x699c46a4, Offset: 0x1be8
     // Size: 0xb4
     function function_62dd99d6(model) {
-        render_options = function_aa478513({#var_18d63ea2:self.var_f5c0467b, #var_34ba1b60:self.var_cfe86a3e, #outfitindex:self.var_cf55444c, #characterindex:self.var_1d73bad9, #mode:self._i_mode});
+        render_options = function_aa478513({#outfitoptions:self.var_f5c0467b, #var_34ba1b60:self.var_cfe86a3e, #outfitindex:self.var_cf55444c, #characterindex:self.var_1d73bad9, #mode:self._i_mode});
         model setbodyrenderoptionspacked(render_options);
     }
 
@@ -1778,7 +1778,7 @@ function updateeventthread(localclientnum, var_d0b01271, notifyname, var_1d7f159
             [[ var_d0b01271 ]]->update(params);
             break;
         case #"previewgesture":
-            thread [[ var_d0b01271 ]]->play_gesture(waitresult.gesture_index, waitresult.var_4a759822, waitresult.var_1b1e990c, waitresult.var_e14a92d8);
+            thread [[ var_d0b01271 ]]->play_gesture(waitresult.gesture_index, waitresult.wait_until_model_steam_ends, waitresult.replay_if_already_playing, waitresult.ignore_if_already_playing);
             break;
         case #"stopgesture":
             var_d0b01271 notify(#"cancel_gesture");

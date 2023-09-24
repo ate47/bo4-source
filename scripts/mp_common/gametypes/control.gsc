@@ -1854,30 +1854,30 @@ function function_caff2d60() {
 // Checksum 0x399ee459, Offset: 0x8048
 // Size: 0x18c
 function function_68387604(var_c1e98979) {
-    var_1e866967 = spawnstruct();
-    var_1e866967.var_20de6a02 = game.lives[#"allies"];
-    var_1e866967.var_be1de2ab = game.lives[#"axis"];
+    gamemodedata = spawnstruct();
+    gamemodedata.var_20de6a02 = game.lives[#"allies"];
+    gamemodedata.var_be1de2ab = game.lives[#"axis"];
     switch (var_c1e98979) {
     case 2:
-        var_1e866967.wintype = "time_limit_reached";
+        gamemodedata.wintype = "time_limit_reached";
         break;
     case 1:
-        var_1e866967.wintype = "captured_all_zones";
+        gamemodedata.wintype = "captured_all_zones";
         break;
     case 6:
-        var_1e866967.wintype = "no_lives_left";
+        gamemodedata.wintype = "no_lives_left";
         break;
     case 9:
     case 10:
     default:
-        var_1e866967.wintype = "NA";
+        gamemodedata.wintype = "NA";
         break;
     }
-    var_1e866967.remainingtime = globallogic_utils::gettimeremaining();
-    if (var_1e866967.remainingtime < 0) {
-        var_1e866967.remainingtime = 0;
+    gamemodedata.remainingtime = globallogic_utils::gettimeremaining();
+    if (gamemodedata.remainingtime < 0) {
+        gamemodedata.remainingtime = 0;
     }
-    bb::function_bf5cad4e(var_1e866967);
+    bb::function_bf5cad4e(gamemodedata);
 }
 
 // Namespace mission_koth/control

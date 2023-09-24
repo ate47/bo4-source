@@ -451,7 +451,7 @@ function function_92eabc2f(ent, var_51415470) {
     }
     if (!function_c23ed15d(ent, var_3ee2edfa) && isplayer) {
         if (ent clientfield::get_to_player("vision_pulse_active") == 1) {
-            ent [[ level.var_432cfdb9 ]](0, 1, ent.var_1ad61d27);
+            ent [[ level.shutdown_vision_pulse ]](0, 1, ent.var_1ad61d27);
             waitframe(1);
         }
         ent thread function_c80bac1f(self, var_51415470, var_3ee2edfa);

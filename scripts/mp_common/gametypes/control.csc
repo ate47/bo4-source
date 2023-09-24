@@ -351,7 +351,7 @@ function function_185b0894(localclientnum, oldval, newval) {
     var_4a614782 = 0.8;
     var_9a7dc638 = 1;
     var_f802a6b1 = 255;
-    var_8261032c = 1 / var_f802a6b1;
+    progresspercentage = 1 / var_f802a6b1;
     waitresult = undefined;
     waitresult = level waittill(#"zone_initialization");
     while (1) {
@@ -371,7 +371,7 @@ function function_185b0894(localclientnum, oldval, newval) {
                     zone.soundid = zone.var_6d7365a9 playloopsound(#"hash_5a0b392405d5f148");
                     zone.var_ce6accbd = 1;
                 }
-                var_535a15b1 = var_4a614782 + var_9a7dc638 * progress * var_8261032c;
+                var_535a15b1 = var_4a614782 + var_9a7dc638 * progress * progresspercentage;
                 setsoundpitch(zone.soundid, var_535a15b1);
             }
             zone.var_cbf4cb85 = progress;

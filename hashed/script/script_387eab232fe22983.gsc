@@ -303,7 +303,7 @@ function function_d7a8d5a8(n_round_number) {
         level waittill(#"hash_5d3012139f083ccb");
         if (zm_round_spawning::function_d0db51fc(#"werewolf") && !(isdefined(level.var_153e9058) && level.var_153e9058)) {
             level.var_d7b601b9++;
-            level.var_2c03ab22 = level.round_number + function_21a3a673(3, 5);
+            level.var_2c03ab22 = level.round_number + randomintrangeinclusive(3, 5);
         }
     }
 }
@@ -350,6 +350,6 @@ function function_45bed901(var_dbce0c44) {
     } else {
         var_1797c23a = 1;
     }
-    return function_21a3a673(var_2506688, int(min(var_8cf00d40, var_1797c23a)));
+    return randomintrangeinclusive(var_2506688, int(min(var_8cf00d40, var_1797c23a)));
 }
 

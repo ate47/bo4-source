@@ -312,7 +312,7 @@ function gadget_reset(gadgetweapon, changedclass, roundbased, firstround, change
                 self function_ac25fc1f(slot, gadgetweapon);
             }
         }
-        var_2069cdca = changedclass && level.var_71c35c9f && roundbased && !firstround && !slot;
+        var_2069cdca = changedclass && level.competitivesettingsenabled && roundbased && !firstround && !slot;
         if (var_2069cdca) {
             if (isdefined(self.pers[#"held_gadgets_power"]) && isdefined(self.pers[#"held_gadgets_power"][gadgetweapon])) {
                 var_2069cdca = 0;

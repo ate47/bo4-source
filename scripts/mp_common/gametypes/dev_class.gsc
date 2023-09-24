@@ -115,11 +115,11 @@ function dev_cac_init() {
                 host function_3fb8b14(host getcurrentweapon(), charmindex);
             }
             var_b7b0fdc0 = charmindex;
-            var_2febbde5 = getdvarint(#"hash_729117f20b736ab4", 0);
-            if (var_1db243f1 != var_2febbde5) {
-                host function_a85d2581(host getcurrentweapon(), var_2febbde5);
+            deathfxindex = getdvarint(#"hash_729117f20b736ab4", 0);
+            if (var_1db243f1 != deathfxindex) {
+                host function_a85d2581(host getcurrentweapon(), deathfxindex);
             }
-            var_1db243f1 = var_2febbde5;
+            var_1db243f1 = deathfxindex;
         }
     #/
 }

@@ -978,7 +978,7 @@ function function_f2d037b1() {
         wait(5);
         for (maxval = 0; maxval < 100; maxval++) {
             for (i = 0; i < 100; i++) {
-                minval = function_21a3a673(0, maxval);
+                minval = randomintrangeinclusive(0, maxval);
                 function_d1f43a84(undefined, minval, maxval);
                 function_d1f43a84(undefined, minval, maxval, &function_5b554cb6, 0);
                 waitframe(1);
@@ -1017,7 +1017,7 @@ function function_d1f43a84(max_entries, minval, maxval, compare_func, var_c8e96e
             } else if (!isarray(source_array)) {
                 source_array = array(source_array);
             }
-            source_array[source_array.size] = function_21a3a673(minval, maxval);
+            source_array[source_array.size] = randomintrangeinclusive(minval, maxval);
         }
         test_array = arraycopy(source_array);
         sorted_array = quick_sort(test_array, compare_func);
@@ -1047,7 +1047,7 @@ function function_81d0d595() {
         wait(5);
         for (maxval = 0; maxval < 100; maxval++) {
             for (i = 0; i < 100; i++) {
-                minval = function_21a3a673(0, maxval);
+                minval = randomintrangeinclusive(0, maxval);
                 function_70daaa9d(undefined, minval, maxval, &_compare_value);
                 function_70daaa9d(undefined, minval, maxval, &function_5b554cb6, 0);
                 waitframe(1);
@@ -1086,7 +1086,7 @@ function function_70daaa9d(max_entries, minval, maxval, compare_func, var_c8e96e
             } else if (!isarray(source_array)) {
                 source_array = array(source_array);
             }
-            source_array[source_array.size] = function_21a3a673(minval, maxval);
+            source_array[source_array.size] = randomintrangeinclusive(minval, maxval);
         }
         sorted_array = arraycopy(source_array);
         bubble_sort(sorted_array, compare_func);

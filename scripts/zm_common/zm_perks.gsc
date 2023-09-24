@@ -2287,7 +2287,7 @@ function function_9da4880b() {
         }
         if (math::cointoss() && !self.var_3cfb2018) {
             self.var_3cfb2018 = 1;
-            str_alias = #"hash_84373a7c4b63d22" + function_21a3a673(1, 5);
+            str_alias = #"hash_84373a7c4b63d22" + randomintrangeinclusive(1, 5);
             playsoundatposition(str_alias, self.origin);
             n_wait = float(soundgetplaybacktime(str_alias)) / 1000;
             wait(n_wait);

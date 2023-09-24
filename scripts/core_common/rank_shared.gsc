@@ -423,7 +423,7 @@ function getrankxpstat() {
 // Size: 0x70
 function getarenapointsstat() {
     arenaslot = arenagetslot();
-    arenapoints = self stats::get_stat(#"arenastats", arenaslot, #"hash_ca4c97bc6c2963b", #"points");
+    arenapoints = self stats::get_stat(#"arenastats", arenaslot, #"rankedplaystats", #"points");
     return arenapoints + 1;
 }
 

@@ -2820,10 +2820,10 @@ function function_12479eba(str_scenedef) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0x2b445064, Offset: 0xdbf0
 // Size: 0xd2
-function function_67e52759(str_scenedef, s_instance, var_8c4d2266, var_47f77330, var_62e8e2f0) {
+function function_67e52759(str_scenedef, s_instance, var_8c4d2266, startsearch, var_62e8e2f0) {
     a_shots = get_all_shot_names(str_scenedef, s_instance, var_8c4d2266);
-    if (isdefined(var_47f77330) || isdefined(var_62e8e2f0)) {
-        a_shots = array::slice(a_shots, isdefined(var_47f77330) ? var_47f77330 : 0, isdefined(var_62e8e2f0) ? var_62e8e2f0 : 2147483647);
+    if (isdefined(startsearch) || isdefined(var_62e8e2f0)) {
+        a_shots = array::slice(a_shots, isdefined(startsearch) ? startsearch : 0, isdefined(var_62e8e2f0) ? var_62e8e2f0 : 2147483647);
     }
     s_shot = array::random(a_shots);
     return s_shot;

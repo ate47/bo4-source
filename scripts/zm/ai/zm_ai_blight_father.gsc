@@ -2867,7 +2867,7 @@ function function_fa00e485(n_round_number) {
         level waittill(#"hash_5d3012139f083ccb");
         if (zm_round_spawning::function_d0db51fc(#"blight_father") && !(isdefined(level.var_153e9058) && level.var_153e9058)) {
             level.var_d47205b++;
-            level.var_bd626b54 = level.round_number + function_21a3a673(3, 5);
+            level.var_bd626b54 = level.round_number + randomintrangeinclusive(3, 5);
         }
     }
 }
@@ -2922,7 +2922,7 @@ function function_633d7436(var_dbce0c44) {
             break;
         }
     }
-    return function_21a3a673(var_2506688, int(min(var_8cf00d40, var_1797c23a)));
+    return randomintrangeinclusive(var_2506688, int(min(var_8cf00d40, var_1797c23a)));
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father

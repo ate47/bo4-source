@@ -110,7 +110,7 @@ function __init__() {
 // Size: 0x96
 function function_c4dfe16e(localclientnum) {
     localplayer = function_5c10bd79(localclientnum);
-    isteambased = function_b2272884();
+    isteambased = isgametypeteambased();
     if (!isteambased && localplayer.team != #"free") {
         return #"allies";
     }
@@ -654,7 +654,7 @@ function function_20811f66(localclientnum) {
 // Size: 0x290
 function setup_team(localclientnum) {
     function_20811f66(localclientnum);
-    teambased = function_b2272884();
+    teambased = isgametypeteambased();
     team = function_c4dfe16e(localclientnum);
     if (isdefined(level.playerscriptstructs[team])) {
         for (i = 0; i < level.playerscriptstructs[team].size; i++) {

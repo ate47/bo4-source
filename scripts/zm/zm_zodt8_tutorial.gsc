@@ -1089,7 +1089,7 @@ function function_bfd3a7b1() {
     self function_2b4bf122(5500);
     self function_e326c0a();
     self function_a2e9f78b();
-    self function_5fe8f638();
+    self elixirs();
     self pap();
     self fast_travel();
 }
@@ -1602,7 +1602,7 @@ function function_b024c4f4() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xab6a55fe, Offset: 0x8638
 // Size: 0x17a
-function function_5fe8f638() {
+function elixirs() {
     self bgb_pack::function_da912bff(0, 1);
     self bgb_pack::function_da912bff(1, 1);
     self bgb_pack::function_da912bff(2, 1);

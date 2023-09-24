@@ -3434,7 +3434,7 @@ function function_55c6dedd(str_weapon, xp) {
         if (0 > xp) {
             xp = 0;
         }
-        self stats::set_stat(#"hash_60e21f66eb3a1f18", str_weapon, #"xp", xp);
+        self stats::set_stat(#"ranked_item_stats", str_weapon, #"xp", xp);
     #/
 }
 

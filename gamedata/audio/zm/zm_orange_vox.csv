@@ -56,7 +56,7 @@
 #hash_77e102144e6247e3,#hash_5b24599bc1564d56,#hash_73bace81b1d3f83b,0,0,false,false,false,false
 #hash_77e102144e6247e3,#have_rock,#hash_921478d69bafc7c,0,0,false,false,false,false
 #blue_rock,#hash_72db61590dff0002,#hash_1558be2f4ebc39b5,0,0,false,false,false,false
-#blue_rock,#hash_695003735d7fde77,#hash_75f4c63702dc54e,0,0,false,false,false,false
+#blue_rock,#not_met,#hash_75f4c63702dc54e,0,0,false,false,false,false
 #blue_rock,#give_0,#hash_35af7b078d87570c,0,0,false,false,false,false
 #blue_rock,#give_1,#hash_35af7c078d8758bf,0,0,false,false,false,false
 #vril,#reveal_0,#hash_18f8725c1c67153d,0,0,false,false,false,false

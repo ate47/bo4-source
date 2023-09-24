@@ -116,9 +116,9 @@ function private function_9299d039() {
 // Checksum 0xe203af7d, Offset: 0x818
 // Size: 0x40
 function private function_1edd6e9e(isspectre) {
-    var_91de0487 = 0;
+    modelvalue = 0;
     if (isspectre && isalive(self)) {
-        var_91de0487 = 1;
+        modelvalue = 1;
     }
 }
 

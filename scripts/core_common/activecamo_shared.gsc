@@ -168,7 +168,7 @@ function function_3aa81e0e(activecamoinfo) {
         info = level.activecamoinfo[activecamoinfo.name];
         info.name = activecamoinfo.name;
         info.var_e639aa37 = activecamoinfo.var_e639aa37;
-        info.var_cd82182a = activecamoinfo.var_cd82182a;
+        info.istiered = activecamoinfo.istiered;
         info.var_e0b0d8cc = activecamoinfo.var_e0b0d8cc;
         info.var_ed6f91d5 = activecamoinfo.var_ed6f91d5;
         info.var_bd863267 = activecamoinfo.var_bd863267;
@@ -333,7 +333,7 @@ function init_stages(activecamo, var_3a8a1e00, isdeath) {
                     }
                 }
                 if (!reset && isdefined(stage.var_dd54a13b[activecamo.baseweapon].cleared) && stage.var_dd54a13b[activecamo.baseweapon].cleared) {
-                    if (isdefined(activecamo.info.var_cd82182a) && activecamo.info.var_cd82182a) {
+                    if (isdefined(activecamo.info.istiered) && activecamo.info.istiered) {
                         if (weaponstage > stagenum) {
                             stage.var_dd54a13b[activecamo.baseweapon].statvalue = stage.info.var_e2dbd42d;
                         }
@@ -354,7 +354,7 @@ function init_stages(activecamo, var_3a8a1e00, isdeath) {
                 }
                 stage.var_dd54a13b[activecamo.baseweapon].cleared = undefined;
                 if (var_7491ec51) {
-                    if (isdefined(activecamo.info.var_cd82182a) && activecamo.info.var_cd82182a) {
+                    if (isdefined(activecamo.info.istiered) && activecamo.info.istiered) {
                         if (weaponstage > stagenum) {
                             if (isdefined(stage.info.var_d2eac588)) {
                                 stage.var_dd54a13b[activecamo.baseweapon].statvalue = stage.info.var_e2dbd42d;
@@ -643,7 +643,7 @@ function function_896ac347(oweapon, statname, value) {
                                 }
                             }
                         }
-                        if (isdefined(activecamo.info.var_cd82182a) && activecamo.info.var_cd82182a) {
+                        if (isdefined(activecamo.info.istiered) && activecamo.info.istiered) {
                             break;
                         }
                     }
@@ -708,7 +708,7 @@ function function_f0d83504(activecamo, stage, stagenum) {
 // Checksum 0x6a0dd668, Offset: 0x2fb0
 // Size: 0x1d4
 function function_e44edbd1(activecamo) {
-    if (isdefined(activecamo.info.var_cd82182a) && activecamo.info.var_cd82182a) {
+    if (isdefined(activecamo.info.istiered) && activecamo.info.istiered) {
         var_e92afc26 = 0;
         for (stagenum = activecamo.stages.size - 1; stagenum >= 0; stagenum--) {
             stage = activecamo.stages[stagenum];
@@ -737,7 +737,7 @@ function function_b9119037(activecamo) {
     if (!isdefined(activecamo.baseweapon) || !isdefined(activecamo.var_dd54a13b[activecamo.baseweapon])) {
         return;
     }
-    if (isdefined(activecamo.info.var_cd82182a) && activecamo.info.var_cd82182a) {
+    if (isdefined(activecamo.info.istiered) && activecamo.info.istiered) {
         stagenum = 0;
         foreach (key, stage in activecamo.stages) {
             if (!isdefined(stage.var_dd54a13b[activecamo.baseweapon])) {
@@ -1222,7 +1222,7 @@ function function_779a9561(stagenum) {
             if (isdefined(activecamo) && isdefined(activecamo.stages) && stagenum < activecamo.stages.size) {
                 activecamo.weapon = weapon;
                 activecamo.baseweapon = function_c14cb514(activecamo.weapon);
-                if (isdefined(activecamo.info.var_cd82182a) && activecamo.info.var_cd82182a) {
+                if (isdefined(activecamo.info.istiered) && activecamo.info.istiered) {
                     foreach (key, stage in activecamo.stages) {
                         statcount = 0;
                         if (key < stagenum) {

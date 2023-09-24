@@ -145,7 +145,7 @@ function function_5e1029a() {
     }
     specialist = player function_76785843();
     s_fields = getcharacterfields(specialist, currentsessionmode());
-    str_map = s_fields.var_beedba3d;
+    str_map = s_fields.ctmap;
     switchmap_load(str_map, s_fields.var_a19fcbe8);
     util::wait_network_frame(1);
     switchmap_switch();
@@ -216,7 +216,7 @@ function function_8599f7cb() {
     if (var_f77362e3 == 9) {
         var_d6602dc0 = fields.var_b51717c3;
     } else {
-        var_d6602dc0 = fields.var_3d800252[var_f77362e3].movie;
+        var_d6602dc0 = fields.interstitiallist[var_f77362e3].movie;
     }
     specialist = player function_76785843();
     if (isdefined(var_d6602dc0) && !var_743bf28b) {

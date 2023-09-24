@@ -525,22 +525,22 @@ function function_34b291c3(e_player) {
 function function_cd3a65e0() {
     switch (level.dog_round_count) {
     case 2:
-        level.next_dog_round = level.round_number + function_21a3a673(5, 7);
+        level.next_dog_round = level.round_number + randomintrangeinclusive(5, 7);
         zm_round_spawning::function_376e51ef(#"zombie_dog", level.next_dog_round + 1);
         break;
     case 3:
-        level.next_dog_round = level.round_number + function_21a3a673(6, 8);
+        level.next_dog_round = level.round_number + randomintrangeinclusive(6, 8);
         break;
     case 4:
-        level.next_dog_round = level.round_number + function_21a3a673(7, 9);
+        level.next_dog_round = level.round_number + randomintrangeinclusive(7, 9);
         break;
     default:
-        level.next_dog_round = level.round_number + function_21a3a673(8, 10);
+        level.next_dog_round = level.round_number + randomintrangeinclusive(8, 10);
         break;
     }
     foreach (e_player in util::get_active_players()) {
         if (e_player flag::exists(#"hash_120fbb364796cd32") && e_player flag::exists(#"hash_11ab20934759ebc3") && e_player flag::get(#"hash_120fbb364796cd32") && !e_player flag::get(#"hash_11ab20934759ebc3")) {
-            level.next_dog_round = level.round_number + function_21a3a673(5, 7);
+            level.next_dog_round = level.round_number + randomintrangeinclusive(5, 7);
         }
     }
 }

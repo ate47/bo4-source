@@ -51,7 +51,7 @@ function function_fa00e485(n_round_number) {
         level waittill(#"hash_5d3012139f083ccb");
         if (zm_round_spawning::function_d0db51fc(#"blight_father") && !(isdefined(level.var_153e9058) && level.var_153e9058)) {
             if (isdefined(level.var_9ce0f2a5)) {
-                level.var_9ce0f2a5 = level.round_number + function_21a3a673(4, 6);
+                level.var_9ce0f2a5 = level.round_number + randomintrangeinclusive(4, 6);
             }
         }
     }
@@ -67,7 +67,7 @@ function function_c1a0ea97(n_round_number) {
         level waittill(#"hash_5d3012139f083ccb");
         if (zm_round_spawning::function_d0db51fc(#"gegenees") && !(isdefined(level.var_153e9058) && level.var_153e9058)) {
             if (isdefined(level.var_9ce0f2a5)) {
-                level.var_9ce0f2a5 = level.round_number + function_21a3a673(4, 6);
+                level.var_9ce0f2a5 = level.round_number + randomintrangeinclusive(4, 6);
             }
         }
     }
@@ -125,7 +125,7 @@ function function_ec882ff(n_max) {
         var_1797c23a = 3;
     }
     var_2506688 = 1;
-    n_num_to_spawn = function_21a3a673(int(var_2506688), var_1797c23a);
+    n_num_to_spawn = randomintrangeinclusive(int(var_2506688), var_1797c23a);
     if (level.var_4c6c91cf < level.var_9b1fafcf) {
         level.var_4c6c91cf = level.var_4c6c91cf + n_num_to_spawn;
         return n_num_to_spawn;
@@ -154,7 +154,7 @@ function function_57fd9735(n_max) {
         var_1797c23a = 3;
     }
     var_2506688 = 1;
-    n_num_to_spawn = function_21a3a673(int(var_2506688), var_1797c23a);
+    n_num_to_spawn = randomintrangeinclusive(int(var_2506688), var_1797c23a);
     if (level.var_4c6c91cf < level.var_9b1fafcf) {
         level.var_4c6c91cf = level.var_4c6c91cf + n_num_to_spawn;
         return n_num_to_spawn;

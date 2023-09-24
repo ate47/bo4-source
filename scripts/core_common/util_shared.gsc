@@ -4745,7 +4745,7 @@ function function_8eb53136(radius) {
     if (!isdefined(radius) || radius <= 0) {
         return 0;
     }
-    return function_21a3a673(radius * -1, radius);
+    return randomintrangeinclusive(radius * -1, radius);
 }
 
 // Namespace util/util_shared
@@ -4810,7 +4810,7 @@ function function_22bf0a4a() {
         profilestop();
         return;
     }
-    if (getdvarstring(#"hash_60bd94571c7f1e3b", "") != "community_galil_achievement") {
+    if (getdvarstring(#"loot_special_contract_bundle", "") != "community_galil_achievement") {
         profilestop();
         return;
     }

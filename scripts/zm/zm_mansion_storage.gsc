@@ -744,7 +744,7 @@ function function_f21f0537(var_a276c861) {
         if (n_rand <= 39) {
             level thread function_fd9b3e16(0);
         } else {
-            level thread function_fd9b3e16(function_21a3a673(1, 7));
+            level thread function_fd9b3e16(randomintrangeinclusive(1, 7));
         }
         break;
     case 2:

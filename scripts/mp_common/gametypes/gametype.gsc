@@ -18,7 +18,7 @@ function init() {
     if (!isdefined(bundle)) {
         return;
     }
-    level.teambased = function_b2272884();
+    level.teambased = isgametypeteambased();
     setvisiblescoreboardcolumns(bundle.scoreboard_1, bundle.scoreboard_2, bundle.scoreboard_3, bundle.scoreboard_4, bundle.scoreboard_5, bundle.var_d4259e74, bundle.var_54dd9ff6, bundle.var_5ee7b40a, bundle.var_6d3350a1, bundle.var_26d52900);
     globallogic_audio::set_leader_gametype_dialog(bundle.var_ef0e6936, bundle.var_92ea240c, bundle.var_39d466bc, bundle.var_fd58840f, "", "");
     if (!isdefined(game.switchedsides)) {

@@ -375,7 +375,7 @@ function function_c0bc0375() {
     if (isdefined(level.var_a929ea7f) && level.var_a929ea7f) {
         level.var_2ba5b206 = level.round_number + 1;
     } else {
-        level.var_2ba5b206 = level.round_number + function_21a3a673(2, 4);
+        level.var_2ba5b206 = level.round_number + randomintrangeinclusive(2, 4);
     }
     while (1) {
         level waittill(#"end_of_round");

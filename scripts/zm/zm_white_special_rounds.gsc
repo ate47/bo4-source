@@ -139,7 +139,7 @@ function function_2ae2045c() {
 // Checksum 0x1ddd2d41, Offset: 0x15a0
 // Size: 0x194
 function enable_dog_rounds() {
-    level.var_973488a5 = function_21a3a673(5, 7);
+    level.var_973488a5 = randomintrangeinclusive(5, 7);
     if (zm_utility::is_classic()) {
         level.var_2f14be05 = level.round_number + 1;
         if (level.round_number < 15) {
@@ -1019,7 +1019,7 @@ function function_751e9580() {
                 level thread function_85644731();
                 level thread function_5be4c9e4(1);
                 level.var_8200dc81 zm_hms_util::function_6a0d675d(#"hash_48d01436dc5c21bb", 0, 0);
-                n_variant = function_21a3a673(1, 2);
+                n_variant = randomintrangeinclusive(1, 2);
                 zm_hms_util::function_fd24e47f("vox_air_vent_repair", n_variant, 1);
                 level thread zm_white_util::function_2389bb7a("zmb_goop_pap_locked");
                 break;

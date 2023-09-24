@@ -1687,7 +1687,7 @@ function function_3b759619(var_1c996690) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0xd3b896b3, Offset: 0x6e20
 // Size: 0x3f8
-function function_263d3e9e(var_1c996690, context, owner, var_9f26686a = 0) {
+function function_263d3e9e(var_1c996690, context, owner, secondattempt = 0) {
     if (getdvarint(#"hash_60d47d611bbc3bed", 1)) {
         if (!function_3b759619(var_1c996690)) {
             var_986a13c3 = getclosesttacpoint(var_1c996690);
@@ -1726,7 +1726,7 @@ function function_263d3e9e(var_1c996690, context, owner, var_9f26686a = 0) {
                 }
             }
         }
-        if (!var_9f26686a && isdefined(var_c65dd8e7) && var_c65dd8e7.size) {
+        if (!secondattempt && isdefined(var_c65dd8e7) && var_c65dd8e7.size) {
             points = function_187f6d8f(var_c65dd8e7);
             if (isdefined(points)) {
                 var_54746e33 = arraygetfarthest(var_1c996690, points);

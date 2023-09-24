@@ -170,7 +170,7 @@ function private function_d0ae71bb(weapon) {
         return 1;
     }
     weaponoptions = self getbuildkitweaponoptions(weapon);
-    if (function_2470f404(weaponoptions) != 0) {
+    if (getweaponmodelslot(weaponoptions) != 0) {
         return 1;
     }
     return 0;

@@ -69,7 +69,7 @@ function custom_class_init(localclientnum) {
 function custom_class_start_threads(localclientnum) {
     level endon(#"disconnect");
     while (1) {
-        if (getdvarint(#"hash_296f823881cb6f30", 0) == 0) {
+        if (getdvarint(#"ui_enablecacscene", 0) == 0) {
             level thread custom_class_update(localclientnum);
             level thread custom_class_attachment_select_focus(localclientnum);
             level thread custom_class_remove(localclientnum);
@@ -112,16 +112,16 @@ function custom_class_update(localclientnum) {
     camera = waitresult.camera;
     weapon_options_param = waitresult.options;
     is_item_unlocked = waitresult.is_item_unlocked;
-    var_8a6eef52 = waitresult.var_8a6eef52;
-    var_8ba4443d = waitresult.var_8ba4443d;
+    xmodel_name = waitresult.xmodel_name;
+    xmodel_scale = waitresult.xmodel_scale;
     if (!isdefined(is_item_unlocked)) {
         is_item_unlocked = 1;
     }
-    if (!isdefined(var_8ba4443d)) {
-        var_8ba4443d = 1;
+    if (!isdefined(xmodel_scale)) {
+        xmodel_scale = 1;
     }
-    if (!isdefined(var_8a6eef52)) {
-        var_8a6eef52 = #"";
+    if (!isdefined(xmodel_name)) {
+        xmodel_name = #"";
     }
     if (isdefined(var_f0bf9259)) {
         if (isdefined(weapon_options_param) && weapon_options_param != "none") {
@@ -135,7 +135,7 @@ function custom_class_update(localclientnum) {
             level.preload_weapon_model[localclientnum] hide();
         }
         toggle_locked_weapon_shader(localclientnum, is_item_unlocked);
-        update_weapon_script_model(localclientnum, var_f0bf9259, attachments, undefined, is_item_unlocked, var_8ba4443d, var_8a6eef52);
+        update_weapon_script_model(localclientnum, var_f0bf9259, attachments, undefined, is_item_unlocked, xmodel_scale, xmodel_name);
         level notify(#"xcammoved");
         lerpduration = get_lerp_duration(camera);
         setup_paintshop_bg(localclientnum, camera);
@@ -601,7 +601,7 @@ function private function_3e2b5b60(localclientnum, weaponmodel) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0xac03f1a3, Offset: 0x2308
 // Size: 0x61c
-function update_weapon_script_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options = 1, is_item_unlocked = 1, var_8ba4443d = 1, var_8a6eef52 = #"") {
+function update_weapon_script_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options = 1, is_item_unlocked = 1, xmodel_scale = 1, xmodel_name = #"") {
     /#
         /#
             assert(isdefined(newweaponstring), "<unknown string>");
@@ -635,17 +635,17 @@ function update_weapon_script_model(localclientnum, newweaponstring, var_f020955
         }
     }
     level.current_weapon[localclientnum] = getweapon(level.last_weapon_name[localclientnum], strtok(level.var_8ad413c[localclientnum], "+"));
-    if (level.current_weapon[localclientnum] == level.weaponnone || !(var_8a6eef52 === #"")) {
+    if (level.current_weapon[localclientnum] == level.weaponnone || !(xmodel_name === #"")) {
         level.weapon_script_model[localclientnum] delete();
         position = level.weapon_position;
         level.weapon_script_model[localclientnum] = spawn_weapon_model(localclientnum, position.origin, position.angles);
         toggle_locked_weapon_shader(localclientnum, is_item_unlocked);
-        if (!(var_8a6eef52 === #"")) {
-            level.weapon_script_model[localclientnum] setmodel(var_8a6eef52);
+        if (!(xmodel_name === #"")) {
+            level.weapon_script_model[localclientnum] setmodel(xmodel_name);
         } else {
             level.weapon_script_model[localclientnum] setmodel(level.last_weapon_name[localclientnum]);
         }
-        level.weapon_script_model[localclientnum] setscale(var_8ba4443d);
+        level.weapon_script_model[localclientnum] setscale(xmodel_scale);
         level.weapon_script_model[localclientnum] setdedicatedshadow(1);
         if (lui::is_current_menu(localclientnum, "BubblegumBuffSelect")) {
             level.weapon_script_model[localclientnum] function_ccfcedeb(localclientnum);

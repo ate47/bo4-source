@@ -2,7 +2,7 @@
 1,#cold_feet,#hash_509f257dd61c4e66,#hash_3c45fab1ceb9fb96,#,#shoot_from_water,#,#,#,#,#,#,#,#
 2,#safe_haven,#hash_509f247dd61c4cb3,#hash_170ae9542e9ccea5,#,#safe_zone,#hash_6f77696e49283640,#5,#,#,#,#,#,#
 3,#side_job,#hash_509f237dd61c4b00,#hash_652b072deeb9df88,#,#restrict_loadout,#hash_7416cabf26f52c5f,#,#,#,#,#,#,#
-4,#hash_32ae29f7604042d6,#hash_509f2a7dd61c56e5,#hash_34a741ede3224fef,#,#hash_27897abffa9137fc,#,#,#,#,#,#,#,#
+4,#perched,#hash_509f2a7dd61c56e5,#hash_34a741ede3224fef,#,#hash_27897abffa9137fc,#,#,#,#,#,#,#,#
 5,#hash_17905455d75a8dd9,#hash_509f297dd61c5532,#hash_1b140e9372db8aa2,#,#special_enemy,#zombie_electric,#40,#80,#,#,#,#,#
 6,#hash_206ca787adf8fc16,#hash_509f287dd61c537f,#hash_16245ae627ba6651,#,#flag_check,#hash_7d9f8ec3cb9af87e,#hash_52f58e31a90916e3,#,#,#,#,#,#
 7,#hash_4cb716c0efc903d,#hash_509f277dd61c51cc,#hash_5ef081161d940834,#,#disable_regen,#,#,#,#,#,#,#,#
@@ -12,7 +12,7 @@
 10,#,#,#,#,#give_reward,#hash_20e770cec441c9f2,#hash_3ad6fd4b554f42a0,#uie_trial_medal_bronze,#hash_2dd24a7c45283d98,#,#,#,#
 11,#hash_4f390f711100dac3,#hash_509c217dd61a11c3,#hash_35337d8baa964355,#,#flag_check,#hash_3b7cff73fa5e7121,#hash_1544a5bc927bae1c,#,#,#,#,#,#
 12,#hash_66cf85461068245c,#hash_509c227dd61a1376,#hash_4d31b9e2bfe7386,#,#hash_12dc7b4f915f4cf1,#,#,#,#,#,#,#,#
-13,#hash_5bfb38f3267b8942,#hash_509c237dd61a1529,#hash_2a88e974fda8ab23,#,#kills_with_flinger,#15,#25,#35,#50,#,#,#,#
+13,#toss_up,#hash_509c237dd61a1529,#hash_2a88e974fda8ab23,#,#kills_with_flinger,#15,#25,#35,#50,#,#,#,#
 14,#hash_3a07efaa19ef7fc7,#hash_509c247dd61a16dc,#hash_4d2064193f627324,#,#flag_check,#hash_4e33fc3d32735214,#hash_2965a935caf13052,#,#,#,#,#,#
 15,#hash_39293de37586605c,#hash_509c257dd61a188f,#hash_5fca199af03b1501,#,#defend_area,#s_destination_crevasse,#hash_43dabbb2b40e3d09,#hash_629d5fe4a75781c8,#frozen_crevasse,#,#,#,#
 16,#hash_3ede6504593c0fdd,#hash_509c267dd61a1a42,#hash_642160b2ebf55dd2,#,#restrict_loadout,#hash_44dcc4dbf2ce47de,#,#,#,#,#,#,#

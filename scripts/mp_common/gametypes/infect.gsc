@@ -421,17 +421,17 @@ function function_6c614880() {
     sound::play_on_players("mpl_ballreturn_sting");
     globallogic_audio::leader_dialog("infectNoLives", game.defenders);
     globallogic_audio::leader_dialog("infectNoLivesEnemy", game.attackers);
-    var_c13a1e93 = getplayers(game.defenders)[0];
+    finalsurvivor = getplayers(game.defenders)[0];
     if (!level.var_a93f2ba7) {
-        var_c13a1e93 function_4928e571();
-        if (var_c13a1e93.var_fc81f69c && var_c13a1e93 function_f86ae9e5()) {
-            var_c13a1e93 scoreevents::processscoreevent("final_survivor", var_c13a1e93);
+        finalsurvivor function_4928e571();
+        if (finalsurvivor.var_fc81f69c && finalsurvivor function_f86ae9e5()) {
+            finalsurvivor scoreevents::processscoreevent("final_survivor", finalsurvivor);
         }
         level.var_a93f2ba7 = 1;
     }
     var_816446f3 = getdvarint(#"hash_a7883ea30e7608a", 0);
     if (var_816446f3) {
-        level thread function_57f4f37e(var_c13a1e93);
+        level thread function_57f4f37e(finalsurvivor);
     }
     level.var_8ea7e2d5 = 1;
 }
@@ -455,16 +455,16 @@ function function_4928e571() {
 // Params 1, eflags: 0x0
 // Checksum 0x3c772643, Offset: 0x1e60
 // Size: 0x23c
-function function_57f4f37e(var_c13a1e93) {
+function function_57f4f37e(finalsurvivor) {
     level endon(#"game_ended");
-    var_c13a1e93 endon(#"disconnect", #"death");
+    finalsurvivor endon(#"disconnect", #"death");
     level endon(#"hash_c99e3873a00e736");
-    level thread function_ce8c907e(var_c13a1e93);
+    level thread function_ce8c907e(finalsurvivor);
     setteamspyplane(game.attackers, 1);
     util::set_team_radar(game.attackers, 1);
     var_ed36658a = 0;
     while (1) {
-        prevpos = var_c13a1e93.origin;
+        prevpos = finalsurvivor.origin;
         wait(4);
         if (var_ed36658a) {
             setteamspyplane(game.attackers, 0);
@@ -472,7 +472,7 @@ function function_57f4f37e(var_c13a1e93) {
             var_ed36658a = 0;
         }
         wait(6);
-        if (distancesquared(prevpos, var_c13a1e93.origin) < 200 * 200) {
+        if (distancesquared(prevpos, finalsurvivor.origin) < 200 * 200) {
             setteamspyplane(game.attackers, 1);
             util::set_team_radar(game.attackers, 1);
             var_ed36658a = 1;
@@ -487,9 +487,9 @@ function function_57f4f37e(var_c13a1e93) {
 // Params 1, eflags: 0x0
 // Checksum 0xe28ea126, Offset: 0x20a8
 // Size: 0xea
-function function_ce8c907e(var_c13a1e93) {
+function function_ce8c907e(finalsurvivor) {
     level endon(#"game_ended");
-    var_c13a1e93 endon(#"disconnect", #"death");
+    finalsurvivor endon(#"disconnect", #"death");
     while (1) {
         var_63f8204e = function_4d9c9e8e(game.defenders);
         if (var_63f8204e > 1) {

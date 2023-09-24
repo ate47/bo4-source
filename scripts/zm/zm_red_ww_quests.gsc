@@ -232,7 +232,7 @@ function function_65bda766(a_hands) {
                 continue;
             }
             if (e_player istouching(vol_ww_oracle)) {
-                e_player.var_93666696 = function_21a3a673(90, 120);
+                e_player.var_93666696 = randomintrangeinclusive(90, 120);
                 e_player thread ww_oracle_cooldown();
                 var_85a6dbde = e_player thread function_f72adc9d(a_hands);
             }

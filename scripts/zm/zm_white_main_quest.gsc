@@ -903,7 +903,7 @@ function function_643d9747() {
 // Size: 0x1f42
 function function_967cd489() {
     level.a_s_code = [];
-    var_31d8f64c = function_21a3a673(1, 4);
+    var_31d8f64c = randomintrangeinclusive(1, 4);
     var_90959fc6 = getentarray("alert_me", "targetname");
     for (i = 0; i < var_90959fc6.size; i++) {
         if (var_90959fc6[i].script_int == var_31d8f64c) {
@@ -918,9 +918,9 @@ function function_967cd489() {
             var_90959fc6[i] delete();
         }
     }
-    var_b59d25d3 = function_21a3a673(1, 8);
+    var_b59d25d3 = randomintrangeinclusive(1, 8);
     while (var_b59d25d3 == 6 || var_b59d25d3 == 7) {
-        var_b59d25d3 = function_21a3a673(1, 8);
+        var_b59d25d3 = randomintrangeinclusive(1, 8);
     }
     switch (var_b59d25d3) {
     case 1:
@@ -1202,7 +1202,7 @@ function function_704b8e() {
         }
     }
     n_hour = randomintrange(1, 12);
-    n_minute = function_21a3a673(0, 3) * 15;
+    n_minute = randomintrangeinclusive(0, 3) * 15;
     if (n_hour == level.a_s_code[var_92ac68d0].n_hour) {
         if (n_hour == 1) {
             n_hour = 12;
@@ -3444,7 +3444,7 @@ function function_431ee8fc() {
 // Checksum 0x2c81c55c, Offset: 0x10e78
 // Size: 0x112
 function function_ee37a268() {
-    n_idx = function_21a3a673(0, 2);
+    n_idx = randomintrangeinclusive(0, 2);
     switch (n_idx) {
     case 0:
         level.var_5dd0d3ff thread zm_hms_util::function_6a0d675d(#"vox_s3_hint", 0, 0);
@@ -4503,7 +4503,7 @@ function function_553ec923(var_5ea5c94d) {
 // Size: 0x788
 function function_b0b7e8a9() {
     level flag::set(#"hash_7c2ae917559738ec");
-    var_fa20d93d = function_21a3a673(0, 2);
+    var_fa20d93d = randomintrangeinclusive(0, 2);
     str_start = "number_line_start_" + var_fa20d93d;
     str_start_trigger = "equation_" + var_fa20d93d;
     var_d93ca8ec = getent("enumerator", "targetname");

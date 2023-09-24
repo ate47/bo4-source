@@ -283,9 +283,9 @@ function function_17b75237(attacker, victim, weapon, attackerweapon, meansofdeat
         return 0;
     }
     var_e49690cd = victim getentitynumber();
-    var_b5425607 = attacker.var_13c51aa5[var_e49690cd];
-    if (isdefined(var_b5425607) && var_b5425607 < 6) {
-        var_f27d6782 = attacker.var_e6013893[var_b5425607];
+    targetindex = attacker.var_13c51aa5[var_e49690cd];
+    if (isdefined(targetindex) && targetindex < 6) {
+        var_f27d6782 = attacker.var_e6013893[targetindex];
     }
     if (!isdefined(var_f27d6782)) {
         return 0;

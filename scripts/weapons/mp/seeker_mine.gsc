@@ -784,7 +784,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
     var_84a7f98e = undefined;
     waitduration = 0;
     var_94d99e87 = 0;
-    var_75cbfd13 = 1;
+    islooping = 1;
     if (!isdefined(seekermine)) {
         self.var_dda9b735.state = 3;
     }
@@ -804,7 +804,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
     case 1:
         var_7c2ff516 = "gestable_shocked_success";
         var_84a7f98e = getweapon(#"hash_597ead6ff2ce9284");
-        var_75cbfd13 = 0;
+        islooping = 0;
         self playsoundtoplayer(#"hash_74864310c6a986a8", self);
         self battlechatter::function_72b65730();
         function_1750438e(level.var_9d47488.tunables.var_df3ed3fd, seekermine.arcweapon, seekermine.owner);
@@ -825,7 +825,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
     case 3:
         var_7c2ff516 = "gestable_shocked_success";
         var_84a7f98e = getweapon(#"hash_597ead6ff2ce9284");
-        var_75cbfd13 = 0;
+        islooping = 0;
         self playsoundtoplayer(#"hash_74864310c6a986a8", self);
         /#
             println("<unknown string>");
@@ -837,7 +837,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         #/
         break;
     }
-    self thread function_e380fde7(var_84a7f98e, var_7c2ff516, waitduration, var_75cbfd13, var_94d99e87);
+    self thread function_e380fde7(var_84a7f98e, var_7c2ff516, waitduration, islooping, var_94d99e87);
     self thread function_24d08109(seekermine, waitduration, var_26b2b1bb, self.var_dda9b735.state);
 }
 
@@ -871,7 +871,7 @@ function function_b6ee86e3(seekermine, var_26b2b1bb) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0xba0ee68a, Offset: 0x3720
 // Size: 0x2e2
-function function_e380fde7(var_84a7f98e, var_7c2ff516, waitduration, var_75cbfd13, var_94d99e87) {
+function function_e380fde7(var_84a7f98e, var_7c2ff516, waitduration, islooping, var_94d99e87) {
     self notify("49a0bba57c17e324");
     self endon("49a0bba57c17e324");
     self endon(#"death");
@@ -885,28 +885,28 @@ function function_e380fde7(var_84a7f98e, var_7c2ff516, waitduration, var_75cbfd1
     if (isdefined(self.var_dda9b735.gesture) && (isdefined(var_84a7f98e) || isdefined(var_8ac35735) && var_8ac35735 != self.var_dda9b735.gesture)) {
         self stopgestureviewmodel(self.var_dda9b735.gesture, 50, 1);
         self.var_dda9b735.gesture = undefined;
-        self.var_dda9b735.var_75cbfd13 = undefined;
+        self.var_dda9b735.islooping = undefined;
     }
     if (isdefined(var_84a7f98e) && var_84a7f98e != getweapon(#"none")) {
         self.var_dda9b735.gesture = undefined;
-        self.var_dda9b735.var_75cbfd13 = undefined;
+        self.var_dda9b735.islooping = undefined;
         self thread gestures::function_f3e2696f(self, var_84a7f98e, undefined, 1.5, undefined, undefined, undefined);
     } else if (isdefined(var_8ac35735)) {
         while (isdefined(self.var_dda9b735.isshocked) ? self.var_dda9b735.isshocked : 0) {
             if (self gestures::play_gesture(var_8ac35735, undefined, 1)) {
                 self.var_dda9b735.gesture = var_8ac35735;
-                self.var_dda9b735.var_75cbfd13 = var_75cbfd13;
+                self.var_dda9b735.islooping = islooping;
                 break;
             }
             waitframe(1);
         }
     }
-    if (isdefined(self.var_dda9b735.var_75cbfd13) && self.var_dda9b735.var_75cbfd13) {
+    if (isdefined(self.var_dda9b735.islooping) && self.var_dda9b735.islooping) {
         self waittilltimeout(waitduration, #"hash_89051c7805b3d19");
         if (isdefined(self) && isdefined(self.var_dda9b735.gesture)) {
             self stopgestureviewmodel(self.var_dda9b735.gesture, 0, 0);
             self.var_dda9b735.gesture = undefined;
-            self.var_dda9b735.var_75cbfd13 = undefined;
+            self.var_dda9b735.islooping = undefined;
         }
     }
 }

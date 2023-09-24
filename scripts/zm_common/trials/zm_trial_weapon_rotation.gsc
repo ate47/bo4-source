@@ -208,7 +208,7 @@ function private function_413cffae(n_interval, e_player) {
             if (math::cointoss()) {
                 if (zm_weapons::weapon_supports_aat(weapon)) {
                     e_player thread aat::acquire(weapon);
-                    e_player zm_pap_util::repack_weapon(weapon, function_21a3a673(1, 4));
+                    e_player zm_pap_util::repack_weapon(weapon, randomintrangeinclusive(1, 4));
                 }
             }
         }

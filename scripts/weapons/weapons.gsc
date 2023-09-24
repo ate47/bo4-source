@@ -1812,7 +1812,7 @@ function track_multi_detonation(ownerent, weapon, cooktime) {
         }
         dir = level multi_detonation_get_cluster_launch_dir(weapon, i, weapon.multidetonation, waitresult.normal);
         fusetime = randomfloatrange(weapon.var_cb3d0f65, weapon.var_cd539cb2);
-        speed = function_21a3a673(weapon.var_95d8fabf, weapon.var_c264efc6);
+        speed = randomintrangeinclusive(weapon.var_95d8fabf, weapon.var_c264efc6);
         vel = dir * speed;
         var_561c6e7c = waitresult.position + dir * 5;
         if (weapon === getweapon(#"hash_117b6097e272dd1f")) {

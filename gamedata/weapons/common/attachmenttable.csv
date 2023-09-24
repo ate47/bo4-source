@@ -1,62 +1,62 @@
 0,none,none,#hash_11d17195d5833bc4,none,0,#weapon_missing_image,#hash_17ede46111f44fec,#,,0,0,,0,0,0,0,,,false,,#,,#,,,#none
-1,top,optic,#hash_714d50924a98d471,acog,0,#ui_icon_attachment_recon,#hash_2b8096f4212652cb,#,acog,1,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#acog
+1,top,optic,#mpui/acog,acog,0,#ui_icon_attachment_recon,#hash_2b8096f4212652cb,#,acog,1,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#acog
 2,gunperk,rig,#hash_5afd03a588cd1c62,adsreload,0,#ui_icon_attachment_adsreloader,#hash_49281fa933339a32,#,adsreload,2,0,adsreload,1,0,0,0,,,false,,#,,#,,,#adsreload
 3,muzzle,rig,#hash_19ab29890f4ebb91,barrelchoke,0,#ui_icon_attachment_chokedbarrel,#hash_13d29462fd0d57ab,#hash_61ae56844fb4ecd3,barrelchoke,3,0,barrelchoke,1,0,0,0,,,false,,#,,#,,,#barrelchoke
-4,gunperk,mod,#hash_63e806d9564d3305,clantag,0,#cac_mods_clan_tag,#,#,clantag,4,0,clantag custom2 killcounter,0,0,0,0,,,false,,#,,#,,,#clantag
+4,gunperk,mod,#mpui/clantag,clantag,0,#cac_mods_clan_tag,#,#,clantag,4,0,clantag custom2 killcounter,0,0,0,0,,,false,,#,,#,,,#clantag
 5,gunperk,rig,#hash_360742434808cf8e,custom1,0,#ui_icon_attachment_rapidfire,#hash_49e88c8053d4f73e,#,custom1,5,0,,1,0,0,0,,,false,,#,,#,,,#custom1
 6,gunperk,mod,#hash_7bf8bcf55e2bd26e,custom2,0,#blacktransparent,#,#,custom2,6,0,clantag custom2 killcounter,0,0,0,0,,,false,,#,,#,,,#custom2
 7,gunperk,rig,#hash_4f23c6ecb321fa19,custom3,0,#ui_icon_attachment_longbarrel,#hash_366888e106b2bbb3,#,custom3,7,0,,1,0,0,0,,,false,,#,,#,,,#custom3
 8,none,none,#hash_11d17195d5833bc4,custom4,0,#weapon_missing_image,#hash_17ede46111f44fec,#,custom4,8,0,,0,0,0,0,,,false,,#,,#,,,#custom4
 9,none,none,#hash_11d17195d5833bc4,custom5,0,#weapon_missing_image,#hash_17ede46111f44fec,#,custom5,9,0,,0,0,0,0,,,false,,#,,#,,,#custom5
-10,rig,rig,#hash_758a5a9b0d37907e,damage,0,#ui_icon_attachment_highcaliber,#hash_42047aa0e594d7ce,#hash_56074383a6c3b738,damage,10,0,damage dw mk,1,0,0,0,,,false,,#,,#,,,#damage
-11,rig,rig,#hash_71a84177756a3124,damage2,0,#ui_icon_attachment_highcaliber2,#hash_c3550301fc75b8c,#hash_2903042e98504cc7,damage2,11,0,damage2,1,0,0,0,,,false,,#,,#,,,#damage2
+10,rig,rig,#mpui/damage,damage,0,#ui_icon_attachment_highcaliber,#hash_42047aa0e594d7ce,#hash_56074383a6c3b738,damage,10,0,damage dw mk,1,0,0,0,,,false,,#,,#,,,#damage
+11,rig,rig,#mpui/damage2,damage2,0,#ui_icon_attachment_highcaliber2,#hash_c3550301fc75b8c,#hash_2903042e98504cc7,damage2,11,0,damage2,1,0,0,0,,,false,,#,,#,,,#damage2
 12,top,optic,#hash_20ea333c5ec0972,dualoptic,0,#ui_icon_attachment_dualoptic,#hash_24029a6ad88b81e2,#,dualoptic,12,0,acog dualoptic dw dynzoom elo gl holo ir is mk mms rangefinder reddot reflex sf tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#dualoptic
-13,bottom,uber,#hash_1179ef0a1e16b092,dw,0,#ui_icon_attachment_saug_opmod_dual_wield,#hash_7a5f9a2a3cfa9ac2,#,dw,13,0,acog damage dualoptic dw dynzoom elo extbarrel fastreload2 fmj gl grip holo ir is mk mms quickdraw rangefinder reddot reflex rf sf stackfire stalker stalker2 steadyaim swayreduc tacknife vzoom,2,0,0,0,,,false,,#,,#,,,#dw
+13,bottom,uber,#mpui/dw,dw,0,#ui_icon_attachment_saug_opmod_dual_wield,#mpui/dw_desc,#,dw,13,0,acog damage dualoptic dw dynzoom elo extbarrel fastreload2 fmj gl grip holo ir is mk mms quickdraw rangefinder reddot reflex rf sf stackfire stalker stalker2 steadyaim swayreduc tacknife vzoom,2,0,0,0,,,false,,#,,#,,,#dw
 14,top,optic,#,dynzoom,0,#cac_mods_dynzoom,#,#,dynzoom,14,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#dynzoom
-15,top,optic,#hash_41e802311d14f63b,elo,0,#ui_icon_attachment_float_dot,#hash_25b761f80b963d2d,#,elo,15,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#elo
+15,top,optic,#mpui/elo,elo,0,#ui_icon_attachment_float_dot,#hash_25b761f80b963d2d,#,elo,15,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#elo
 16,muzzle,rig,#hash_4145598022d0a29a,extbarrel,0,#ui_icon_attachment_longbarrel,#hash_68fe011060c3cc2a,#,extbarrel,16,0,dw extbarrel mk,1,0,0,0,,,false,,#,,#,,,#extbarrel
 17,muzzle,rig,#hash_3979bcbb28846378,extbarrel2,0,#ui_icon_attachment_longbarrel2,#hash_60ad70a7e7b392a0,#,extbarrel2,17,0,extbarrel2,1,0,0,0,,,false,,#,,#,,,#extbarrel2
-18,trigger,rig,#hash_8539dade7ded104,extclip,0,#ui_icon_attachment_extendedmags,#hash_9b21599b0be92c,#,extclip,18,0,extclip mk,1,0,0,0,,,false,,#,,#,,,#extclip
+18,trigger,rig,#mpui/extclip,extclip,0,#ui_icon_attachment_extendedmags,#hash_9b21599b0be92c,#,extclip,18,0,extclip mk,1,0,0,0,,,false,,#,,#,,,#extclip
 19,trigger,rig,#hash_4e62480ff9d7ec2,extclip2,0,#ui_icon_attachment_extendedmags2,#hash_4ed6dfbae4e23b52,#,extclip2,19,0,extclip2,1,0,0,0,,,false,,#,,#,,,#extclip2
 20,gunperk,rig,#hash_549d76181177939a,extrapellets,0,#ui_icon_attachment_shotgun_semiauto_pellets,#hash_5f68abd42a1cff2a,#hash_5567d64527c57712,extrapellets,20,0,extrapellets,1,0,0,0,,,false,,#,,#,,,#extrapellets
 21,top,optic,#hash_40dd44e49656068f,fastlockon,0,#ui_icon_attachment_laser,#hash_e6b6ba489f41f01,#,fastlockon,21,0,fastlockon,1,0,0,0,,,false,,#,,#,,,#fastlockon
 22,gunperk,rig,#hash_69417526d0316c80,fastreload,0,#ui_icon_attachment_fastmags,#hash_602e0ff43b44d408,#,fastreload,22,0,fastreload mk,1,0,0,0,,,false,,#,,#,,,#fastreload
 23,gunperk,rig,#hash_ba6c2f3c3fbb276,fastreload2,0,#ui_icon_attachment_fastmags2,#hash_2eca6fba714f086,#,fastreload2,23,0,fastreload2 dw,1,0,0,0,,,false,,#,,#,,,#fastreload2
-24,trigger,rig,#hash_36c9d4311616d408,fmj,0,#ui_icon_attachment_fmj,#hash_9b8af453a6a410,#hash_32f76fa42f85198,fmj,24,0,dw fmj mk,1,0,0,0,,,false,,#,,#,,,#fmj
-25,trigger,rig,#hash_2fc7c96888ca9e8e,fmj2,0,#ui_icon_attachment_fmj2,#hash_28c8d09a7f7e043e,#hash_387f98b0e40cc796,fmj2,25,0,fmj2,1,0,0,0,,,false,,#,,#,,,#fmj2
-26,bottom,rig,#hash_1170040a1e0e7fbc,gl,0,#hud_grenade_launcher,#hash_3ed360b2cde2c144,#,gl,26,0,dualoptic dw gl mk sf,1,0,0,0,,,false,,#,,#,,,#gl
-27,bottom,rig,#hash_1668ba627a4613df,grip,0,#ui_icon_attachment_grip,#hash_39aeb41b98bc1671,#,grip,27,0,dw grip mk,1,0,0,0,,,false,,#,,#,,,#grip
-28,bottom,rig,#hash_5a08a255c513dbb7,grip2,0,#ui_icon_attachment_grip2,#hash_7705cb8207f499e9,#,grip2,28,0,grip2,1,0,0,0,,,false,,#,,#,,,#grip2
-29,bottom,rig,#hash_5a913d1e3a54fd50,hipgrip,0,#ui_icon_attachment_grip,#hash_45d36cd4b3bb6578,#,hipgrip,29,0,hipgrip,1,0,0,0,,,false,,#,,#,,,#hipgrip
+24,trigger,rig,#mpui/fmj,fmj,0,#ui_icon_attachment_fmj,#hash_9b8af453a6a410,#hash_32f76fa42f85198,fmj,24,0,dw fmj mk,1,0,0,0,,,false,,#,,#,,,#fmj
+25,trigger,rig,#mpui/fmj2,fmj2,0,#ui_icon_attachment_fmj2,#hash_28c8d09a7f7e043e,#hash_387f98b0e40cc796,fmj2,25,0,fmj2,1,0,0,0,,,false,,#,,#,,,#fmj2
+26,bottom,rig,#mpui/gl,gl,0,#hud_grenade_launcher,#mpui/gl_desc,#,gl,26,0,dualoptic dw gl mk sf,1,0,0,0,,,false,,#,,#,,,#gl
+27,bottom,rig,#mpui/grip,grip,0,#ui_icon_attachment_grip,#hash_39aeb41b98bc1671,#,grip,27,0,dw grip mk,1,0,0,0,,,false,,#,,#,,,#grip
+28,bottom,rig,#mpui/grip2,grip2,0,#ui_icon_attachment_grip2,#hash_7705cb8207f499e9,#,grip2,28,0,grip2,1,0,0,0,,,false,,#,,#,,,#grip2
+29,bottom,rig,#mpui/hipgrip,hipgrip,0,#ui_icon_attachment_grip,#hash_45d36cd4b3bb6578,#,hipgrip,29,0,hipgrip,1,0,0,0,,,false,,#,,#,,,#hipgrip
 30,rig,rig,#hash_2c454eb3fec22798,holdbreath,0,#ui_icon_attachment_stablizer,#hash_297bd6fbffa55b80,#,holdbreath,30,0,holdbreath,1,0,0,0,,,false,,#,,#,,,#holdbreath
-31,top,optic,#hash_4629c45bbbf2d03b,holo,0,#ui_icon_attachment_holo,#hash_34f83c239da58b2d,#,holo,31,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#holo
-32,top,optic,#hash_1168ea0a1e0834e0,ir,0,#ui_icon_attachment_thermal,#hash_307e37f5bfcb6aa8,#,ir,32,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#ir
-33,top,optic,#hash_1168eb0a1e083693,is,0,#ui_icon_attachment_iron_sights,#hash_3f23a70471a6fa45,#,is,33,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#is
+31,top,optic,#mpui/holo,holo,0,#ui_icon_attachment_holo,#hash_34f83c239da58b2d,#,holo,31,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#holo
+32,top,optic,#mpui/ir,ir,0,#ui_icon_attachment_thermal,#mpui/ir_desc,#,ir,32,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#ir
+33,top,optic,#mpui/is,is,0,#ui_icon_attachment_iron_sights,#mpui/is_desc,#,is,33,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#is
 34,gunperk,mod,#hash_39403d3ae8fec071,killcounter,0,#cac_mods_kill_counter,#,#,killcounter,34,0,clantag custom2 killcounter,0,0,0,0,,,false,,#,,#,,,#killcounter
-35,gunperk,rig,#hash_5cc7f71abfc0cff9,mixclip,0,#ui_icon_attachment_advancedmags,#hash_41675721bd9111d3,#,mixclip,35,0,mixclip,1,0,0,0,,,false,,#,,#,,,#mixclip
-36,bottom,rig,#hash_115beb0a1dfdac37,mk,0,#cac_mods_trigger_group,#hash_78a4e60712353b69,#,mk,36,0,acog damage dualoptic dw dynzoom elo extbarrel extclip fastreload fmj gl grip holo ir is mk mms quickdraw rangefinder reddot reflex rf sf stackfire stalker steadyaim suppressed swayreduc tacknife vzoom,0,0,0,0,,,false,,#,,#,,,#mk
-37,top,optic,#hash_7cd59e30f6058b46,mms,0,#ui_icon_attachment_mms,#hash_5cc8a98a1a1af336,#hash_1dffea8c96fdc0fe,mms,37,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#mms
-38,none,none,#hash_15f35f26eaa6d402,null,0,#weapon_missing_image,#hash_17ede46111f44fec,#,,38,0,,0,0,0,0,,,false,,#,,#,,,#null
+35,gunperk,rig,#mpui/mixclip,mixclip,0,#ui_icon_attachment_advancedmags,#hash_41675721bd9111d3,#,mixclip,35,0,mixclip,1,0,0,0,,,false,,#,,#,,,#mixclip
+36,bottom,rig,#mpui/mk,mk,0,#cac_mods_trigger_group,#mpui/mk_desc,#,mk,36,0,acog damage dualoptic dw dynzoom elo extbarrel extclip fastreload fmj gl grip holo ir is mk mms quickdraw rangefinder reddot reflex rf sf stackfire stalker steadyaim suppressed swayreduc tacknife vzoom,0,0,0,0,,,false,,#,,#,,,#mk
+37,top,optic,#mpui/mms,mms,0,#ui_icon_attachment_mms,#hash_5cc8a98a1a1af336,#hash_1dffea8c96fdc0fe,mms,37,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#mms
+38,none,none,#mpui/null,null,0,#weapon_missing_image,#hash_17ede46111f44fec,#,,38,0,,0,0,0,0,,,false,,#,,#,,,#null
 39,top,optic,#hash_26875a88704d7c94,pistolscope,0,#ui_icon_attachment_pistolscope,#hash_651a766bae9b7c5c,#,pistolscope,39,0,pistolscope,1,0,0,0,,,false,,#,,#,,,#pistolscope
 40,rig,rig,#hash_4d3fb8921872badc,quickdraw,0,#ui_icon_attachment_quickdraw,#hash_464fb4d63791df24,#,quickdraw,40,0,dw mk quickdraw,1,0,0,0,,,false,,#,,#,,,#quickdraw
 41,rig,rig,#hash_36018e3f8af3a26a,quickdraw2,0,#ui_icon_attachment_quickdraw2,#hash_7129c2ef942745a,#,quickdraw2,41,0,quickdraw2,1,0,0,0,,,false,,#,,#,,,#quickdraw2
 42,top,optic,#hash_6fe3fbbbbb63092c,rangefinder,0,#cac_mods_rangefinder,#hash_7afac73e4e0688d4,#,rangefinder,42,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex swayreduc tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#rangefinder
-43,top,optic,#hash_625384180d17528d,reddot,0,#ui_icon_attachment_dualoptic,#hash_3ad0e7a1cbad4cb7,#,reddot,43,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#reddot
-44,top,optic,#hash_2e8a1c0b5f43a091,reflex,0,#ui_icon_attachment_reflex,#hash_58f22446fa93e6ab,#,reflex,44,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#reflex
-45,muzzle,rig,#hash_11b6e00a1e4a4533,rf,0,#ui_icon_attachment_rapidfire,#hash_784d83fd50c8e825,#,rf,45,0,dw mk rf,1,0,0,0,,,false,,#,,#,,,#rf
-46,bottom,rig,#hash_11b3fe0a1e484256,sf,0,#cac_mods_trigger_group,#hash_4efeba8e443b4e26,#,sf,46,0,dualoptic dw gl mk sf,1,0,0,0,,,false,,#,,#,,,#sf
+43,top,optic,#mpui/reddot,reddot,0,#ui_icon_attachment_dualoptic,#hash_3ad0e7a1cbad4cb7,#,reddot,43,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#reddot
+44,top,optic,#mpui/reflex,reflex,0,#ui_icon_attachment_reflex,#hash_58f22446fa93e6ab,#,reflex,44,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#reflex
+45,muzzle,rig,#mpui/rf,rf,0,#ui_icon_attachment_rapidfire,#mpui/rf_desc,#,rf,45,0,dw mk rf,1,0,0,0,,,false,,#,,#,,,#rf
+46,bottom,rig,#mpui/sf,sf,0,#cac_mods_trigger_group,#mpui/sf_desc,#,sf,46,0,dualoptic dw gl mk sf,1,0,0,0,,,false,,#,,#,,,#sf
 47,gunperk,rig,#hash_7a4289cde4df7d84,speedreloader,0,#ui_icon_attachment_speedloader,#hash_543fe4ea753b9eac,#,speedreloader,47,0,speedreloader,1,0,0,0,,,false,,#,,#,,,#speedreloader
-48,trigger,rig,#hash_6a93fd437465f4db,stackfire,0,#cac_mods_tribolt,#hash_6443239d452b1e8d,#,stackfire,48,0,dw mk stackfire,1,0,0,0,,,false,,#,,#,,,#stackfire
-49,gunperk,rig,#hash_5acc09d0ccf025,stalker,0,#ui_icon_attachment_stock,#hash_74bcbdc19707392f,#,stalker,49,0,dw mk stalker,1,0,0,0,,,false,,#,,#,,,#stalker
+48,trigger,rig,#mpui/burst2,stackfire,0,#cac_mods_tribolt,#hash_6443239d452b1e8d,#,stackfire,48,0,dw mk stackfire,1,0,0,0,,,false,,#,,#,,,#stackfire
+49,gunperk,rig,#mpui/stalker,stalker,0,#ui_icon_attachment_stock,#hash_74bcbdc19707392f,#,stalker,49,0,dw mk stalker,1,0,0,0,,,false,,#,,#,,,#stalker
 50,gunperk,rig,#hash_6738cbadcc3bf715,stalker2,0,#ui_icon_attachment_stock2,#hash_72b5e12c9c5b3bf,#,stalker2,50,0,dw stalker2,1,0,0,0,,,false,,#,,#,,,#stalker2
 51,gunperk,rig,#hash_623a0d2ae835c09a,steadyaim,0,#ui_icon_attachment_laser,#hash_3e4a67b0d74a662a,#,steadyaim,51,0,dw mk steadyaim,1,0,0,0,,,false,,#,,#,,,#steadyaim
 52,gunperk,rig,#hash_1e6507e893565d78,steadyaim2,0,#ui_icon_attachment_laser2,#hash_5819d3514e6b40a0,#,steadyaim2,52,0,steadyaim2,1,0,0,0,,,false,,#,,#,,,#steadyaim2
-53,gunperk,rig,#hash_42f0ad7055088814,supply,0,#ui_icon_attachment_bandolier,#hash_14ad824a233eedc,#,supply,53,0,supply,1,0,0,0,,,false,,#,,#,,,#supply
+53,gunperk,rig,#mpui/supply,supply,0,#ui_icon_attachment_bandolier,#hash_14ad824a233eedc,#,supply,53,0,supply,1,0,0,0,,,false,,#,,#,,,#supply
 54,rig,rig,#hash_44e9b9c1d82dd8a9,suppressed,0,#ui_icon_attachment_supressor,#hash_175b0c2ccec045a3,#hash_3d7abb3373fab887,suppressed,54,0,mk suppressed,1,0,0,0,,,false,,#,,#,,,#suppressed
 55,rig,rig,#hash_701c5f025eb74ec6,swayreduc,0,#ui_icon_attachment_stablizer,#hash_2c3e9e30064c8db6,#,swayreduc,55,0,dw mk rangefinder swayreduc,1,0,0,0,,,false,,#,,#,,,#swayreduc
 56,gunperk,rig,#hash_3ddb056b79311ade,tacknife,0,#cac_mods_tact_knife,#hash_7e61522bc8bc3dee,#,tacknife,56,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#tacknife
-57,gunperk,uber,#hash_12d06cf78a4133d3,uber,0,#ui_icon_attachment_smg_accurate_opmod_wildfire,#hash_192620fbfe2bb385,#,uber,57,0,uber,2,0,0,0,,,false,,#,,#,,,#uber
-58,top,optic,#hash_103de0d8ae4d6fe4,vzoom,0,#cac_mods_var_zoom,#hash_5071aa2f1fc20b4c,#,vzoom,58,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#vzoom
+57,gunperk,uber,#mpui/uber,uber,0,#ui_icon_attachment_smg_accurate_opmod_wildfire,#hash_192620fbfe2bb385,#,uber,57,0,uber,2,0,0,0,,,false,,#,,#,,,#uber
+58,top,optic,#mpui/vzoom,vzoom,0,#cac_mods_var_zoom,#hash_5071aa2f1fc20b4c,#,vzoom,58,0,acog dualoptic dw dynzoom elo holo ir is mk mms rangefinder reddot reflex tacknife vzoom,1,0,0,0,,,false,,#,,#,,,#vzoom
 0,camo,weaponoption,#mpui/none,camo_none,0,#menu_cac_none,#mpui/none,#,,0,0,,0,0,0,1000,,,false,,#,,#,,,#camo_none
 1,camo,weaponoption,#hash_768c5aeecc2d7cc4,camo_alfa,0,#hash_711086aed7528885,#hash_4361bc63de0848d3,#,,0,0,,0,0,0,1000,,,false,mp,#,perf,#,,,#camo_alfa
 2,camo,weaponoption,#hash_2d003d6a1240093c,camo_alfa_wz,0,#hash_6eba51005ba9a081,#hash_7664f631b276facc,#,,0,0,,0,0,0,1000,,,false,wz,#,perf,#,,,#camo_alfa_wz

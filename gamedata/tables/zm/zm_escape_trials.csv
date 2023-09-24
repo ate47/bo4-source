@@ -29,7 +29,7 @@
 23,#hash_f7f0df08ae49da2,#hash_3f8148709c4d666b,#hash_5c4bf26b01b252bd,#,#restrict_loadout,#no_attachments,#,#,#,#,#,#,#
 24,#lockdown,#hash_3f814d709c4d6eea,#hash_6521de8792989da,#,#door_lockdown,#,#,#,#,#,#,#,#
 25,#stand_firm,#hash_3f814e709c4d709d,#hash_50186cf704217ba7,#,#defend_area,#hash_17775a73cd45c14b,#hash_64b81f066e6cc540,#hash_a6b7fc2d7e6e6a,#zone_infirmary,#zone_infirmary_roof,#,#,#
-26,#hash_7cbe4475a76e4325,#hash_3f814b709c4d6b84,#hash_228c7aed5b4aa8ac,#,#restrict_loadout,#tommy_gun,#,#,#,#,#,#,#
+26,#mobster,#hash_3f814b709c4d6b84,#hash_228c7aed5b4aa8ac,#,#restrict_loadout,#tommy_gun,#,#,#,#,#,#,#
 27,#im_out,#hash_3f814c709c4d6d37,#hash_4f496d07ff6de69,#,#reset_loadout,#ammo,#,#,#,#,#,#,#
 28,#hash_4c82af5bd5c0c6cc,#hash_3f8141709c4d5a86,#hash_7f60e043a8757876,#,#hash_163077e21e01f4a7,#60,#,#,#,#,#,#,#
 29,#hash_d282349ebdbb182,#hash_3f8142709c4d5c39,#hash_7b070a13d922f413,#,#add_special,#zombie_dog,#50,#75,#125,#165,#,#,#

@@ -323,14 +323,14 @@ function scoreeventplayerkill(data, time) {
             if (isdefined(sensor)) {
                 processscoreevent(#"sensor_dart_kill", attacker, victim, sensor.weapon);
                 if ((isdefined(sensor.var_1fd3a368) ? sensor.var_1fd3a368 : 1) && isdefined(level.playgadgetsuccess)) {
-                    attacker.var_cbb5d202 = (isdefined(attacker.var_cbb5d202) ? attacker.var_cbb5d202 : 0) + 1;
+                    attacker.sensorkill = (isdefined(attacker.sensorkill) ? attacker.sensorkill : 0) + 1;
                     if (isdefined(level.var_ac6052e9)) {
                         var_9194a036 = [[ level.var_ac6052e9 ]]("sensorDartSuccessLineCount", 0);
                     }
-                    if (attacker.var_cbb5d202 == (isdefined(var_9194a036) ? var_9194a036 : 3)) {
+                    if (attacker.sensorkill == (isdefined(var_9194a036) ? var_9194a036 : 3)) {
                         attacker [[ level.playgadgetsuccess ]](sensor.weapon, undefined, victim, undefined);
                         function_3932ffa2(var_cf13980c);
-                        attacker.var_cbb5d202 = 0;
+                        attacker.sensorkill = 0;
                     }
                 }
             }
@@ -343,14 +343,14 @@ function scoreeventplayerkill(data, time) {
                     processscoreevent(#"sensor_dart_assist", var_78056843, victim, weapon);
                 }
                 if ((isdefined(sensor.var_1fd3a368) ? sensor.var_1fd3a368 : 1) && isdefined(level.playgadgetsuccess)) {
-                    var_78056843.var_cbb5d202 = (isdefined(var_78056843.var_cbb5d202) ? var_78056843.var_cbb5d202 : 0) + 1;
+                    var_78056843.sensorkill = (isdefined(var_78056843.sensorkill) ? var_78056843.sensorkill : 0) + 1;
                     if (isdefined(level.var_ac6052e9)) {
                         var_9194a036 = [[ level.var_ac6052e9 ]]("sensorDartSuccessLineCount", 0);
                     }
-                    if (var_78056843.var_cbb5d202 == (isdefined(var_9194a036) ? var_9194a036 : 3)) {
+                    if (var_78056843.sensorkill == (isdefined(var_9194a036) ? var_9194a036 : 3)) {
                         var_78056843 [[ level.playgadgetsuccess ]](sensor.weapon, undefined, victim, attacker);
                         function_3932ffa2(var_4f6eb670);
-                        var_78056843.var_cbb5d202 = 0;
+                        var_78056843.sensorkill = 0;
                     }
                 }
             }
@@ -459,11 +459,11 @@ function scoreeventplayerkill(data, time) {
                 }
             }
             if (isdefined(level.playgadgetsuccess) && isdefined(victimlastvisionpulsedby)) {
-                victimlastvisionpulsedby.var_35182804 = (isdefined(victimlastvisionpulsedby.var_35182804) ? victimlastvisionpulsedby.var_35182804 : 0) + 1;
+                victimlastvisionpulsedby.visionpulsekill = (isdefined(victimlastvisionpulsedby.visionpulsekill) ? victimlastvisionpulsedby.visionpulsekill : 0) + 1;
                 if (isdefined(level.var_ac6052e9)) {
                     var_9194a036 = [[ level.var_ac6052e9 ]]("visionPulseSuccessLineCount", 0);
                 }
-                if (victimlastvisionpulsedby.var_35182804 == (isdefined(var_9194a036) ? var_9194a036 : 3)) {
+                if (victimlastvisionpulsedby.visionpulsekill == (isdefined(var_9194a036) ? var_9194a036 : 3)) {
                     victimlastvisionpulsedby thread [[ level.playgadgetsuccess ]](level.var_2e3031be, undefined, undefined, undefined);
                 }
             }

@@ -21,7 +21,7 @@
 18,#hash_4dc5e83c00b7a1b3,#hash_e3f7506da3caa71,#hash_15fb628e8e1e14cb,#,#hash_27f8093e2c3d8f82,#30,#,#,#,#,#,#,#
 18,#,#,#,#,#disable_buys,#1,#,#,#,#,#,#,#
 19,#hash_276a6b00a06f8521,#hash_e3f7406da3ca8be,#hash_71daff3020a0070e,#,#hash_5124770c13a75bab,#health,#10,#prone_random,#,#,#,#,#
-20,#hash_20b00d3da12b72bc,#hash_e42f306da3fb662,#hash_1d7a5994ac492832,#,#defend_area,#hash_32472566165f72f5,#hash_6694d1174c6d1440,#hash_3222bb2cc52e81a,#zone_drakaina_arena,#,#,#,#
+20,#worldly,#hash_e42f306da3fb662,#hash_1d7a5994ac492832,#,#defend_area,#hash_32472566165f72f5,#hash_6694d1174c6d1440,#hash_3222bb2cc52e81a,#zone_drakaina_arena,#,#,#,#
 20,#,#,#,#,#give_reward,#hash_20e46acec43f89e9,#hash_46044d0ce4567ceb,#uie_trial_medal_silver,#hash_24c321e8e1e698ee,#,#,#,#
 21,#hash_6d64c452d3f289e1,#hash_e42f406da3fb815,#hash_12e1aab6522356bf,#,#hash_6c768f3c15d55377,#random_blindness,#,#,#,#,#,#,#
 22,#hash_bab56b2193627ac,#hash_e42f106da3fb2fc,#hash_f3454a4ccde8884,#,#hash_b7f913776f85df2,#5,#4,#,#,#,#,#,#

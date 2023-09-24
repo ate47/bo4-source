@@ -618,13 +618,13 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
         }
         if (isdefined(weapon.attachments) && weapon.attachments.size > 0) {
             isads = isdefined(var_6af452fc.isads) && var_6af452fc.isads;
-            var_95c30fc5 = 0;
+            attachmentupgrades = 0;
             if (self weaponhasattachmentandunlocked(weapon, "grip")) {
                 if (isads) {
                     self stats::function_dad108fa(#"ekia_ads_grip", 1);
                 }
                 if (self weaponhasattachmentandunlocked(weapon, "grip2")) {
-                    var_95c30fc5++;
+                    attachmentupgrades++;
                 }
             }
             if (self weaponhasattachmentandunlocked(weapon, "quickdraw")) {
@@ -632,7 +632,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                     self stats::function_dad108fa(#"ekia_ads_quickdraw", 1);
                 }
                 if (self weaponhasattachmentandunlocked(weapon, "quickdraw2")) {
-                    var_95c30fc5++;
+                    attachmentupgrades++;
                 }
             }
             if (self weaponhasattachmentandunlocked(weapon, "stalker")) {
@@ -640,7 +640,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                     self stats::function_dad108fa(#"ekia_ads_stalker", 1);
                 }
                 if (self weaponhasattachmentandunlocked(weapon, "stalker2")) {
-                    var_95c30fc5++;
+                    attachmentupgrades++;
                 }
             }
             if (isads) {
@@ -656,7 +656,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                     self stats::function_dad108fa(#"hash_779e1fc5021c532c", 1);
                 }
                 if (self weaponhasattachmentandunlocked(weapon, "extclip2")) {
-                    var_95c30fc5++;
+                    attachmentupgrades++;
                 }
             }
             if (self weaponhasattachmentandunlocked(weapon, "steadyaim")) {
@@ -675,7 +675,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                     self stats::function_dad108fa(#"ekia_hipfire_steadyaim_rf", 1);
                 }
                 if (self weaponhasattachmentandunlocked(weapon, "steadyaim2")) {
-                    var_95c30fc5++;
+                    attachmentupgrades++;
                 }
             }
             if (self weaponhasattachmentandunlocked(weapon, "damage")) {
@@ -683,7 +683,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                     self stats::function_dad108fa(#"hash_4ad196e3eaceeb26", 1);
                 }
                 if (self weaponhasattachmentandunlocked(weapon, "damage2")) {
-                    var_95c30fc5++;
+                    attachmentupgrades++;
                 }
             }
             if (self weaponhasattachmentandunlocked(weapon, "fmj")) {
@@ -691,7 +691,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                     self stats::function_dad108fa(#"ekia_enemy_through_wall_with_fmj", 1);
                 }
                 if (self weaponhasattachmentandunlocked(weapon, "fmj2")) {
-                    var_95c30fc5++;
+                    attachmentupgrades++;
                 }
             }
             if (self weaponhasattachmentandunlocked(weapon, "fastreload")) {
@@ -700,7 +700,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                     self stats::function_dad108fa(#"hash_4b19afce40dfc918", 1);
                 }
                 if (self weaponhasattachmentandunlocked(weapon, "fastreload2")) {
-                    var_95c30fc5++;
+                    attachmentupgrades++;
                     if (isads && var_6af452fc.var_14f058c7 === 1 && self weaponhasattachmentandunlocked(weapon, "quickdraw")) {
                         self stats::function_dad108fa(#"ekia_ads_reload_quickdraw_fastreload2", 1);
                     }
@@ -709,14 +709,14 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
             if (self weaponhasattachmentandunlocked(weapon, "mixclip")) {
                 self stats::function_dad108fa(#"ekia_fastreload_mixclip", 1);
             }
-            if (var_95c30fc5 < 2) {
+            if (attachmentupgrades < 2) {
                 if (self weaponhasattachmentandunlocked(weapon, "extbarrel", "extbarrel2")) {
-                    var_95c30fc5++;
+                    attachmentupgrades++;
                 }
             }
-            if (var_95c30fc5 == 1) {
+            if (attachmentupgrades == 1) {
                 self stats::function_dad108fa(#"hash_51430fd20ccb2b05", 1);
-            } else if (var_95c30fc5 > 1) {
+            } else if (attachmentupgrades > 1) {
                 self stats::function_dad108fa(#"hash_6c36aa2d7d6f2b4", 1);
             }
             if (weaponclass == #"weapon_launcher") {
@@ -738,7 +738,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                 case #"tr_midburst_t8":
                 case #"ar_fastfire_t8":
                 case #"smg_fastfire_t8":
-                    if (!isads && var_95c30fc5 > 0 && self weaponhasattachmentandunlocked(weapon, "steadyaim2")) {
+                    if (!isads && attachmentupgrades > 0 && self weaponhasattachmentandunlocked(weapon, "steadyaim2")) {
                         velocity = self getvelocity();
                         speedsq = lengthsquared(velocity);
                         if (speedsq > 100 * 100) {

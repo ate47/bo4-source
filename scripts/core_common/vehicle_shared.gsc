@@ -3895,7 +3895,7 @@ function function_78cfd053() {
     self endon(#"death");
     var_c56865cf = self.healthdefault;
     var_c96543ab = self.var_7812fce8;
-    var_70fdf0cb = self.var_2f13ccc9;
+    var_70fdf0cb = self.healthpoolsize;
     var_8ac0fa8 = [];
     for (n = 0; n < var_c96543ab; n++) {
         if (n == 0) {

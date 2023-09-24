@@ -1273,7 +1273,7 @@ function private function_43f02cf0(entity) {
     if (!(isdefined(level.var_8a5c1a7a) && level.var_8a5c1a7a) && zombie_utility::get_current_zombie_count() >= level.zombie_ai_limit) {
         return 0;
     }
-    if (function_21a3a673(0, 100) < entity ai::function_9139c839().var_d9838997) {
+    if (randomintrangeinclusive(0, 100) < entity ai::function_9139c839().var_d9838997) {
         entity.summon_wolves = 1;
     }
 }

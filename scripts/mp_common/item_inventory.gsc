@@ -725,7 +725,7 @@ function function_520b16d6() {
     item.var_627c698b = undefined;
     item.weaponoptions = undefined;
     item.charmindex = undefined;
-    item.var_2febbde5 = undefined;
+    item.deathfxindex = undefined;
     return item;
 }
 
@@ -2189,7 +2189,7 @@ function equip_weapon(item, switchweapon = 1, var_9fa01da8 = 0, var_a3a17c55 = 0
             return;
         }
         self function_26c87da8(slotid, var_68dc9720);
-        if (initialweaponraise && !isdefined(item.weaponoptions) && !isdefined(item.charmindex) && !isdefined(item.var_2febbde5)) {
+        if (initialweaponraise && !isdefined(item.weaponoptions) && !isdefined(item.charmindex) && !isdefined(item.deathfxindex)) {
             weaponoptions = undefined;
             if (isdefined(getgametypesetting(#"wzrandomcamo")) ? getgametypesetting(#"wzrandomcamo") : 0) {
                 renderoptions = function_ea647602("camo", weapon);
@@ -2201,16 +2201,16 @@ function equip_weapon(item, switchweapon = 1, var_9fa01da8 = 0, var_a3a17c55 = 0
                 buildkitweapon = activecamo::function_385ef18d(weapon);
                 weaponoptions = self getbuildkitweaponoptions(buildkitweapon);
                 charmindex = self function_9826b353(buildkitweapon);
-                var_2febbde5 = self function_74829bcf(buildkitweapon);
+                deathfxindex = self function_74829bcf(buildkitweapon);
             }
             if (weaponoptions != self getbuildkitweaponoptions(level.weaponnone)) {
                 item.weaponoptions = weaponoptions;
             }
             item.charmindex = charmindex;
-            item.var_2febbde5 = var_2febbde5;
+            item.deathfxindex = deathfxindex;
         }
         item.weaponoptions = self function_fc04b237(weapon, item.weaponoptions);
-        self replace_weapon(currentweapon, weapon, 1, initialweaponraise, var_a3a17c55, item.weaponoptions, item.charmindex, item.var_2febbde5);
+        self replace_weapon(currentweapon, weapon, 1, initialweaponraise, var_a3a17c55, item.weaponoptions, item.charmindex, item.deathfxindex);
         if (var_6073ab7b) {
             self replace_weapon(level.weaponnone, level.weaponbasemeleeheld);
         }
@@ -2684,7 +2684,7 @@ function give_inventory_item(item, itemcount = 1, var_aec6fa7f = 0, slotid = und
             var_92d652f2.endtime = undefined;
             var_92d652f2.weaponoptions = undefined;
             var_92d652f2.charmindex = undefined;
-            var_92d652f2.var_2febbde5 = undefined;
+            var_92d652f2.deathfxindex = undefined;
             self function_b00db06(4, item.id, var_8c6165fc, slotid + 1);
             itemcount = itemcount - var_8c6165fc;
             /#
@@ -2734,7 +2734,7 @@ function give_inventory_item(item, itemcount = 1, var_aec6fa7f = 0, slotid = und
                 }
                 var_92d652f2.weaponoptions = item.weaponoptions;
                 var_92d652f2.charmindex = item.charmindex;
-                var_92d652f2.var_2febbde5 = item.var_2febbde5;
+                var_92d652f2.deathfxindex = item.deathfxindex;
                 self function_6c36ab6b();
                 self function_a4413333();
                 return 0;
@@ -2957,8 +2957,8 @@ function function_db2abc4(item) {
     #/
     if (isdefined(item) && isdefined(item.var_a6762160)) {
         if (isdefined(item.var_a6762160.consumable) && item.var_a6762160.consumable) {
-            if (isdefined(item.var_a6762160.var_3785127d)) {
-                self playsoundtoplayer(item.var_a6762160.var_3785127d, self);
+            if (isdefined(item.var_a6762160.equipsound)) {
+                self playsoundtoplayer(item.var_a6762160.equipsound, self);
                 return;
             }
         }
@@ -2976,8 +2976,8 @@ function function_db2abc4(item) {
         case #"backpack":
             break;
         case #"attachment":
-            if (isdefined(item.var_a6762160.var_3785127d)) {
-                self playsoundtoplayer(item.var_a6762160.var_3785127d, self);
+            if (isdefined(item.var_a6762160.equipsound)) {
+                self playsoundtoplayer(item.var_a6762160.equipsound, self);
             }
             break;
         case #"generic":
@@ -3123,7 +3123,7 @@ function remove_inventory_item(var_bd027dd9, var_dfe6c7e5 = 0, notifyclient = 1,
 // Params 8, eflags: 0x1 linked
 // Checksum 0xdc8a5501, Offset: 0xcf70
 // Size: 0x226
-function replace_weapon(old_weapon, new_weapon, primary_weapon = 0, var_e47b0bf = 1, var_6086c488 = 0, options = undefined, charmindex = undefined, var_2febbde5) {
+function replace_weapon(old_weapon, new_weapon, primary_weapon = 0, var_e47b0bf = 1, var_6086c488 = 0, options = undefined, charmindex = undefined, deathfxindex) {
     /#
         assert(isdefined(old_weapon));
     #/
@@ -3142,8 +3142,8 @@ function replace_weapon(old_weapon, new_weapon, primary_weapon = 0, var_e47b0bf 
     if (isdefined(charmindex) && charmindex >= 0) {
         self function_3fb8b14(new_weapon, charmindex);
     }
-    if (isdefined(var_2febbde5) && var_2febbde5 >= 0) {
-        self function_a85d2581(new_weapon, var_2febbde5);
+    if (isdefined(deathfxindex) && deathfxindex >= 0) {
+        self function_a85d2581(new_weapon, deathfxindex);
     }
     if (var_6086c488) {
         self function_c9a111a(new_weapon);

@@ -1812,18 +1812,18 @@ function onupdateuserate() {
 // Checksum 0x6811f7d, Offset: 0x8308
 // Size: 0x26e
 function function_1609a882(var_c1e98979) {
-    var_1e866967 = spawnstruct();
+    gamemodedata = spawnstruct();
     switch (var_c1e98979) {
     case 4:
-        var_1e866967.wintype = "round_score_reached";
+        gamemodedata.wintype = "round_score_reached";
         break;
     case 9:
     case 10:
     default:
-        var_1e866967.wintype = "NA";
+        gamemodedata.wintype = "NA";
         break;
     }
-    bb::function_bf5cad4e(var_1e866967);
+    bb::function_bf5cad4e(gamemodedata);
     for (var_268d0315 = 0; var_268d0315 < level.domflags.size; var_268d0315++) {
         domflag = level.domflags[var_268d0315];
         var_9669dd4c = 0;

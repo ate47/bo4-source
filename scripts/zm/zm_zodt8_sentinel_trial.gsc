@@ -461,7 +461,7 @@ function function_23153807(s_telegraph, var_3d89d732 = undefined, var_d0b3106f =
     }
     if (s_telegraph.var_e9af6526 == 11) {
         if (!isdefined(var_d0b3106f)) {
-            var_d0b3106f = function_21a3a673(1, 10);
+            var_d0b3106f = randomintrangeinclusive(1, 10);
         }
         if (var_d0b3106f >= min(var_3d89d732, 6)) {
             var_d0b3106f = var_d0b3106f + 1;
@@ -471,7 +471,7 @@ function function_23153807(s_telegraph, var_3d89d732 = undefined, var_d0b3106f =
         }
     } else if (s_telegraph.var_e9af6526 == 7) {
         if (!isdefined(var_d0b3106f)) {
-            var_d0b3106f = function_21a3a673(1, 6);
+            var_d0b3106f = randomintrangeinclusive(1, 6);
         }
         if (var_d0b3106f >= 4 || var_d0b3106f >= var_3d89d732) {
             if (var_3d89d732 <= 4) {
@@ -488,7 +488,7 @@ function function_23153807(s_telegraph, var_3d89d732 = undefined, var_d0b3106f =
         }
     } else if (s_telegraph.var_e9af6526 == 5) {
         if (!isdefined(var_d0b3106f)) {
-            var_d0b3106f = function_21a3a673(1, 4);
+            var_d0b3106f = randomintrangeinclusive(1, 4);
         }
         if (var_d0b3106f >= 3 || var_d0b3106f >= var_3d89d732) {
             if (var_3d89d732 <= 3) {
