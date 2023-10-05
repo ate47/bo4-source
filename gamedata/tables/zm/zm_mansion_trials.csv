@@ -25,7 +25,7 @@
 20,#hash_283e602bff1de304,#hash_66b8162b30dbe0ec,#hash_37ca7d0a170ecb94,#,#defend_area,#hash_5ec85154ce5aff03,#hash_1f52d7fd8f2a1b50,#hash_5a9e647e580873a2,#zone_cellar,#,#,#,#
 20,#,#,#,#,#give_reward,#hash_20e46acec43f89e9,#hash_46044d0ce4567ceb,#uie_trial_medal_silver,#hash_57a704e24a1baad4,#,#,#,#
 21,#perk_drunk,#hash_66b8172b30dbe29f,#hash_49d5ec18cbcd8431,#,#hash_6c768f3c15d55377,#perk_drunk,#,#,#,#,#,#,#
-22,#hash_533244a67126a0a9,#hash_66b8182b30dbe452,#hash_73027543dca42482,#,#reset_loadout,#ammo,#1,#,#,#,#,#,#
+22,#stock_crash,#hash_66b8182b30dbe452,#hash_73027543dca42482,#,#reset_loadout,#ammo,#1,#,#,#,#,#,#
 23,#cursed,#hash_66b8192b30dbe605,#hash_40cccac56698bbcf,#,#hash_3493e071de24d8a1,#1,#,#,#,#,#,#,#
 23,#,#,#,#,#add_special,#crimson_nosferatu,#10,#10,#15,#25,#,#,#
 24,#hash_1dc4b24660ed29ce,#hash_66b8122b30dbda20,#hash_416c0321eb197ee8,#,#restrict_loadout,#hash_1dd9431fbe7472b7,#,#,#,#,#,#,#

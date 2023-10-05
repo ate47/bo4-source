@@ -146,7 +146,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0xc8257b2c, Offset: 0x1240
 // Size: 0x4c
 function function_f2d6cd4a(gestureindex, animlength) {
-    if (isdefined(level.var_5f3b8d08) && level.var_5f3b8d08) {
+    if (isdefined(level.purchasephase) && level.purchasephase) {
         self setlowready(0);
     }
 }
@@ -156,7 +156,7 @@ function function_f2d6cd4a(gestureindex, animlength) {
 // Checksum 0x21eb3dcd, Offset: 0x1298
 // Size: 0x3c
 function function_41c54fc4() {
-    if (isdefined(level.var_5f3b8d08) && level.var_5f3b8d08) {
+    if (isdefined(level.purchasephase) && level.purchasephase) {
         self setlowready(1);
     }
 }
@@ -233,7 +233,7 @@ function function_feeebad() {
 // Size: 0xdc
 function private onspawned() {
     self clientfield::set_to_player("bountyMoney", self.pers[#"money"]);
-    if (isdefined(level.var_5f3b8d08) && level.var_5f3b8d08) {
+    if (isdefined(level.purchasephase) && level.purchasephase) {
         self freezecontrols(1);
         self thread function_9b85340e();
         self setlowready(1);
@@ -385,7 +385,7 @@ function private function_c04cc87c() {
         waitframe(1);
     }
     globallogic_utils::pausetimer();
-    level.var_5f3b8d08 = 1;
+    level.purchasephase = 1;
     foreach (player in level.players) {
         player thread globallogic_audio::set_music_on_player("spawnPreLoop");
         player [[ level.givecustomloadout ]]();
@@ -433,7 +433,7 @@ function private function_c04cc87c() {
         wait(1);
     }
     level.var_324e2795 = 0;
-    level.var_5f3b8d08 = 0;
+    level.purchasephase = 0;
     foreach (player in level.players) {
         player function_7c685040(1);
         player [[ level.givecustomloadout ]]();

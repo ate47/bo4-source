@@ -54,7 +54,7 @@ function init_clientfields() {
 // Size: 0x274
 function init_quest() {
     level.var_774c21fa = struct::get(#"hash_117cb1e7c329e0ad");
-    level.var_9fcb5938 = spawn("script_model", level.var_774c21fa.origin);
+    level.mcnamara = spawn("script_model", level.var_774c21fa.origin);
     level.var_33d3e84a = 0;
     zm_sq::register(#"hash_5a9580406af2d773", #"step_1", #"hash_5cbd9c892dca9e05", &function_4b16859a, &function_53935f3d);
     zm_sq::register(#"hash_5a9580406af2d773", #"step_2", #"hash_5cbd99892dca98ec", &function_9235fc9a, &function_fe3de565);
@@ -90,7 +90,7 @@ function function_53935f3d(var_5ea5c94d, ended_early) {
         playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
         level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
         wait(3);
-        zm_hms_util::function_e308175e(#"hash_40c5232d4f3e85b", level.var_9fcb5938.origin);
+        zm_hms_util::function_e308175e(#"hash_40c5232d4f3e85b", level.mcnamara.origin);
     }
 }
 
@@ -120,7 +120,7 @@ function function_fe3de565(var_5ea5c94d, ended_early) {
         playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
         level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
         wait(3);
-        zm_hms_util::function_e308175e(#"hash_338550de989ad1a7", level.var_9fcb5938.origin);
+        zm_hms_util::function_e308175e(#"hash_338550de989ad1a7", level.mcnamara.origin);
     }
 }
 
@@ -150,7 +150,7 @@ function function_3409e90e(var_5ea5c94d, ended_early) {
         playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
         level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
         wait(3);
-        zm_hms_util::function_e308175e(#"hash_182892c4bb99b96a", level.var_9fcb5938.origin);
+        zm_hms_util::function_e308175e(#"hash_182892c4bb99b96a", level.mcnamara.origin);
     }
 }
 
@@ -180,7 +180,7 @@ function function_c2bd8b3d(var_5ea5c94d, ended_early) {
         playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
         level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
         wait(3);
-        zm_hms_util::function_e308175e(#"hash_1d3964f5cb0069af", level.var_9fcb5938.origin);
+        zm_hms_util::function_e308175e(#"hash_1d3964f5cb0069af", level.mcnamara.origin);
     }
 }
 
@@ -210,7 +210,7 @@ function function_d8b688e7(var_5ea5c94d, ended_early) {
         playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
         level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
         wait(3);
-        zm_hms_util::function_e308175e(#"hash_e51948d3d12b229", level.var_9fcb5938.origin);
+        zm_hms_util::function_e308175e(#"hash_e51948d3d12b229", level.mcnamara.origin);
     }
     level thread zm_office_special_rounds::function_6b3512d();
 }

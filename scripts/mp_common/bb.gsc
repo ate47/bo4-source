@@ -41,7 +41,7 @@ function on_player_spawned() {
 // Checksum 0x127471fa, Offset: 0x1e0
 // Size: 0x2cc
 function function_bf5cad4e(gamemodedata) {
-    var_10d87328 = (isdefined(level.var_8a3a9ca4.roundend) ? level.var_8a3a9ca4.roundend : 0) - (isdefined(level.var_8a3a9ca4.roundstart) ? level.var_8a3a9ca4.roundstart : 0);
+    matchtime = (isdefined(level.var_8a3a9ca4.roundend) ? level.var_8a3a9ca4.roundend : 0) - (isdefined(level.var_8a3a9ca4.roundstart) ? level.var_8a3a9ca4.roundstart : 0);
     firstblood = (isdefined(level.var_8a3a9ca4.firstblood) ? level.var_8a3a9ca4.firstblood : 0) - (isdefined(level.var_8a3a9ca4.roundstart) ? level.var_8a3a9ca4.roundstart : 0);
     alliesscore = isdefined([[ level._getteamscore ]](#"allies")) ? [[ level._getteamscore ]](#"allies") : 0;
     axisscore = isdefined([[ level._getteamscore ]](#"axis")) ? [[ level._getteamscore ]](#"axis") : 0;
@@ -49,7 +49,7 @@ function function_bf5cad4e(gamemodedata) {
     gamemodedata = {};
     gamemodedata.gamemode = level.gametype;
     gamemodedata.wintype = isdefined(gamemodedata.wintype) ? gamemodedata.wintype : "NA";
-    gamemodedata.var_10d87328 = var_10d87328;
+    gamemodedata.matchtime = matchtime;
     gamemodedata.firstblood = firstblood;
     gamemodedata.var_5e25b17b = var_5e25b17b;
     gamemodedata.timeremaining = isdefined(gamemodedata.remainingtime) ? gamemodedata.remainingtime : 0;

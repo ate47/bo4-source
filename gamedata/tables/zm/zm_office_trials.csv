@@ -10,7 +10,7 @@
 9,#brittle,#hash_752c1c5c6c09ad22,#hash_6655ab6e9517c0f2,#,#limited_hits,#3,#2,#,#,#,#,#,#
 10,#hash_53d40f9130bcc1c0,#hash_23bc530b9487f87e,#hash_1c6b3ac49cbd0fce,#,#defend_area,#s_destination_server_room,#hash_519bb7412e82974a,#hash_633a104c09561ce9,#war_room_server_room,#,#,#,#
 10,#,#,#,#,#give_reward,#hash_20e770cec441c9f2,#hash_3ad6fd4b554f42a0,#uie_trial_medal_bronze,#hash_29263107e5304d26,#,#,#,#
-11,#hash_3bb4cc45b95efc74,#hash_23bc540b9487fa31,#hash_4b47c0453bea448b,#,#hash_63788b93aa1642c1,#,#,#,#,#,#,#,#
+11,#gas_attacks,#hash_23bc540b9487fa31,#hash_4b47c0453bea448b,#,#hash_63788b93aa1642c1,#,#,#,#,#,#,#,#
 11,#,#,#,#,#add_special,#nova_crawler,#15,#25,#25,#35,#,#,#
 12,#hash_7a955cf3490ca2c1,#hash_23bc510b9487f518,#hash_454f0740bcbad400,#,#hash_3a3072e83c70889c,#10,#,#,#,#,#,#,#
 13,#hash_163e6f655a12172a,#hash_23bc520b9487f6cb,#hash_521f545be597e1dd,#,#magicbox_hunt,#6,#,#,#,#,#,#,#
@@ -28,7 +28,7 @@
 22,#hash_bab56b2193627ac,#hash_23b94b0b9485b50f,#hash_6ac1cbe3ee259a81,#,#hash_b7f913776f85df2,#5,#,#,#,#,#,#,#
 23,#cqz,#hash_23b94a0b9485b35c,#hash_581816623d4cf8a4,#,#close_quarters,#,#,#,#,#,#,#,#
 24,#double_damage,#hash_23b9490b9485b1a9,#hash_35809bbdfb9330a3,#,#double_damage,#,#,#,#,#,#,#,#
-25,#hash_6eb4a7d42f20cb14,#hash_23b9480b9485aff6,#hash_fcacde729e8f906,#,#defend_area,#s_destination_conference_room,#hash_40460fc034480e42,#hash_6ec3bd3ccccffd81,#conference_level1,#hallway_level1,#,#,#
+25,#conference_call,#hash_23b9480b9485aff6,#hash_fcacde729e8f906,#,#defend_area,#s_destination_conference_room,#hash_40460fc034480e42,#hash_6ec3bd3ccccffd81,#conference_level1,#hallway_level1,#,#,#
 26,#hash_44b1177e76b4a4e1,#hash_23b9470b9485ae43,#hash_402b2fd4a880c8d5,#,#timeout,#hash_6e1d873c28de9fc2,#hash_644ab7ffec4f69b0,#15,#120,#240,#240,#240,#
 27,#hash_10bf891caf30e842,#hash_23b9460b9485ac90,#hash_a64dc7b49e4e8b8,#,#restrict_loadout,#burst_pistol,#,#,#,#,#,#,#
 28,#hash_2e83ac1414f40572,#hash_23b9550b9485c60d,#hash_3b86b85e0bb6f737,#,#disable_teleporters_elevators,#,#,#,#,#,#,#,#

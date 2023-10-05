@@ -278,7 +278,7 @@ function function_dc7906e8(einflictor, attacker, idamage, smeansofdeath, weapon,
     self.laststandparams.victimorigin = self.origin;
     self.laststandparams.var_5fceefd4 = self getplayerangles();
     self.laststandparams.victimweapon = self.currentweapon;
-    self.laststandparams.var_10d87328 = gettime();
+    self.laststandparams.matchtime = gettime();
     self.laststandparams.bledout = 0;
     self.laststandparams.var_59b19c1b = 1;
     if (isdefined(einflictor) && isdefined(einflictor.item) && einflictor.item.name === #"planemortar") {
@@ -594,7 +594,7 @@ function laststand_bleedout_damage() {
             self.bleedout_time = 0;
             self.var_1cc38de0 = 1;
             vattacker = isdefined(waitresult.eattacker) ? waitresult.eattacker : self;
-            self.var_a1d415ee = {#var_10d87328:function_f8d53445(), #shitloc:waitresult.shitloc, #vdir:waitresult.vdir, #sweapon:waitresult.weapon, #smeansofdeath:waitresult.smeansofdeath, #idamage:waitresult.idamage, #var_83634238:isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles, #attackerorigin:vattacker.origin, #attacker:waitresult.eattacker, #einflictor:waitresult.einflictor};
+            self.var_a1d415ee = {#matchtime:function_f8d53445(), #shitloc:waitresult.shitloc, #vdir:waitresult.vdir, #sweapon:waitresult.weapon, #smeansofdeath:waitresult.smeansofdeath, #idamage:waitresult.idamage, #var_83634238:isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles, #attackerorigin:vattacker.origin, #attacker:waitresult.eattacker, #einflictor:waitresult.einflictor};
             self notify(#"update_bleedout");
         }
         if (isdefined(self.var_d75a6ff5)) {

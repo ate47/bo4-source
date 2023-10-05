@@ -79,7 +79,7 @@
 #pap,#wait,#hash_cddf5fea0108c90,0,0,true,false,false,false
 #pap,#pickup,#vox_pap_pickup,0,0,true,false,false,false
 #pap,#hash_53bb9b9a0cbdc924,#hash_1179bfeb2496bee3,0,0,true,false,false,false
-#pap,#hash_d3fbd2d49279dba,#hash_4a5d1b333da7e3b7,0,0,true,false,false,false
+#pap,#aat_frostbite,#hash_4a5d1b333da7e3b7,0,0,true,false,false,false
 #pap,#hash_7fd46a337cf2620f,#hash_30103ca035252eba,0,0,true,false,false,false
 #pap,#hash_51753e95eeab887a,#hash_861c80308af6435,0,0,true,false,false,false
 #weapon_pickup,#generic,#hash_43d252dd310e2faa,0,0,false,false,false,false

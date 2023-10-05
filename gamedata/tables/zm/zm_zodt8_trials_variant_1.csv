@@ -1,7 +1,7 @@
 0,#zm_zodt8_variant_1,#,#,#,#,#,#,#,#,#,#,#,#
 1,#hash_66b1f7746ab04d59,#hash_36dd348e1d001463,#hash_11889275d187d335,#,#hash_293a2fd65ffe0222,#,#,#,#,#,#,#,#
 1,#,#,#,#,#sprinters_only,#,#,#,#,#,#,#,#
-2,#hash_599abb241febef37,#hash_45cb73ced891c9ca,#hash_1d8bf96eb831687a,#,#restrict_loadout,#equipment,#,#,#,#,#,#,#
+2,#well_equipped,#hash_45cb73ced891c9ca,#hash_1d8bf96eb831687a,#,#restrict_loadout,#equipment,#,#,#,#,#,#,#
 2,#,#,#,#,#sprinters_only,#,#,#,#,#,#,#,#
 3,#hash_791ecd1f5cb795f2,#hash_1dc524ac624a1ab1,#hash_4d5216db6f1d60b,#,#restrict_loadout,#melee,#,#,#,#,#,#,#
 3,#,#,#,#,#hash_293a2fd65ffe0222,#,#,#,#,#,#,#,#
@@ -39,7 +39,7 @@
 15,#,#,#,#,#hash_32cdfeca4a793d78,#,#,#,#,#,#,#,#
 16,#lever_again,#hash_47d77a590180224b,#hash_45b36a3eb813b45d,#,#restrict_loadout,#leveraction,#,#,#,#,#,#,#
 16,#,#,#,#,#hash_6c768f3c15d55377,#hash_5a202c5d6f53d672,#,#,#,#,#,#,#
-17,#hash_1ef88568dc0c7bb7,#hash_4abb03b57a547954,#hash_6d2530f930efc11c,#,#headshots_only,#,#,#,#,#,#,#,#
+17,#head_games,#hash_4abb03b57a547954,#hash_6d2530f930efc11c,#,#headshots_only,#,#,#,#,#,#,#,#
 17,#,#,#,#,#no_ads,#,#,#,#,#,#,#,#
 18,#powerless,#hash_569c87a91821557d,#hash_5d6b3a4351a86c7,#,#no_powerups,#,#,#,#,#,#,#,#
 18,#,#,#,#,#close_quarters,#,#,#,#,#,#,#,#
@@ -51,7 +51,7 @@
 21,#hash_137949e8443fd071,#hash_2045bfcb4ec0b4ad,#hash_43062aaa02d5d217,#,#acquire_weapon,#hero_lv3_weapon,#,#,#,#,#,#,#
 21,#,#,#,#,#hash_64d77357e69aee75,#hash_6c6c8f6b349b8751,#,#,#,#,#,#,#
 21,#,#,#,#,#hash_6840f605489bddc2,#hash_6c6c8f6b349b8751,#,#,#,#,#,#,#
-22,#hash_915a159c190c686,#hash_de300c470db85c8,#hash_67e9b1725f4892d0,#,#hash_3746f3c279f7a5ea,#15,#20,#25,#30,#,#,#,#
+22,#cat_fight,#hash_de300c470db85c8,#hash_67e9b1725f4892d0,#,#hash_3746f3c279f7a5ea,#15,#20,#25,#30,#,#,#,#
 22,#,#,#,#,#double_damage,#,#,#,#,#,#,#,#
 23,#press_start,#hash_31952300837d21df,#hash_6ae39edd46d28071,#,#reset_loadout,#zombie_fists,#,#,#,#,#,#,#
 24,#unhealthy,#hash_53312ce351118dea,#hash_e2ea7c626d786da,#,#hash_250115340b2e27a5,#,#50,#15,#1,#25,#,#,#

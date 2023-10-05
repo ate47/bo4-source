@@ -255,7 +255,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
     var_8efc9727 = isplayer(attacker) && self util::isenemyplayer(attacker) == 0;
     var_41c4d474 = isplayer(attacker) && self == attacker;
     vattacker = isdefined(attacker) ? attacker : self;
-    var_aedb48f4 = {#var_10d87328:function_f8d53445(), #shitloc:shitloc, #vdir:vdir, #sweapon:weapon, #smeansofdeath:smeansofdeath, #idamage:idamage, #var_83634238:isplayer(vattacker.origin) ? vattacker getplayerangles() : vattacker.angles, #attackerorigin:vattacker.origin, #attacker:attacker, #einflictor:einflictor, #victimweapon:self.currentweapon, #var_5fceefd4:self getplayerangles(), #victimorigin:self.origin};
+    var_aedb48f4 = {#matchtime:function_f8d53445(), #shitloc:shitloc, #vdir:vdir, #sweapon:weapon, #smeansofdeath:smeansofdeath, #idamage:idamage, #var_83634238:isplayer(vattacker.origin) ? vattacker getplayerangles() : vattacker.angles, #attackerorigin:vattacker.origin, #attacker:attacker, #einflictor:einflictor, #victimweapon:self.currentweapon, #var_5fceefd4:self getplayerangles(), #victimorigin:self.origin};
     laststandparams = self.laststandparams;
     var_a1d415ee = self.var_a1d415ee;
     if (isdefined(self.uselaststandparams) && enteredresurrect == 0) {
@@ -935,7 +935,7 @@ function private function_caabcf70(victim, var_aedb48f4, laststandparams, var_a1
     }
     var_f53d817d = isdefined(laststandparams) ? laststandparams : var_aedb48f4;
     var_ee2f4691 = isdefined(var_a1d415ee) ? var_a1d415ee : var_aedb48f4;
-    function_ad11630f(victim, var_f53d817d.victimorigin, var_f53d817d.var_5fceefd4, var_f53d817d.victimweapon, var_f53d817d.attacker, var_f53d817d.attackerorigin, var_f53d817d.var_83634238, var_f53d817d.sweapon, var_f53d817d.var_10d87328, var_f53d817d.shitloc, var_f53d817d.smeansofdeath, var_ee2f4691.attacker, var_ee2f4691.attackerorigin, var_ee2f4691.var_83634238, var_ee2f4691.sweapon, var_ee2f4691.var_10d87328, var_ee2f4691.shitloc, var_ee2f4691.smeansofdeath);
+    function_ad11630f(victim, var_f53d817d.victimorigin, var_f53d817d.var_5fceefd4, var_f53d817d.victimweapon, var_f53d817d.attacker, var_f53d817d.attackerorigin, var_f53d817d.var_83634238, var_f53d817d.sweapon, var_f53d817d.matchtime, var_f53d817d.shitloc, var_f53d817d.smeansofdeath, var_ee2f4691.attacker, var_ee2f4691.attackerorigin, var_ee2f4691.var_83634238, var_ee2f4691.sweapon, var_ee2f4691.matchtime, var_ee2f4691.shitloc, var_ee2f4691.smeansofdeath);
     lifeindex = victim match_record::get_player_stat(#"hash_ec4aea1a8bbd82");
     if (isdefined(lifeindex) && isdefined(victim) && isplayer(victim)) {
         var_6c7269e = victim match_record::get_player_index();

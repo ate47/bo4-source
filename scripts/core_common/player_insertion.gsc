@@ -1802,7 +1802,7 @@ function function_ab6af198() {
 // Size: 0x46e
 function function_6671872c() {
     if (isdefined(getgametypesetting(#"wzintersectdeathcircle")) && getgametypesetting(#"wzintersectdeathcircle")) {
-        circleindex = isdefined(getgametypesetting(#"hash_567a288b2ca685f3")) ? getgametypesetting(#"hash_567a288b2ca685f3") : 0;
+        circleindex = isdefined(getgametypesetting(#"wzintersectdeathcircleindex")) ? getgametypesetting(#"wzintersectdeathcircleindex") : 0;
         if (isdefined(level.deathcircles) && level.deathcircles.size > 0 && circleindex < level.deathcircles.size) {
             center = level.deathcircles[circleindex].origin;
             return (center[0], center[1], function_e3f18577());
@@ -1835,7 +1835,7 @@ function function_6671872c() {
 // Size: 0x1c2
 function function_45644b08() {
     if (isdefined(getgametypesetting(#"wzintersectdeathcircle")) && getgametypesetting(#"wzintersectdeathcircle")) {
-        circleindex = isdefined(getgametypesetting(#"hash_567a288b2ca685f3")) ? getgametypesetting(#"hash_567a288b2ca685f3") : 0;
+        circleindex = isdefined(getgametypesetting(#"wzintersectdeathcircleindex")) ? getgametypesetting(#"wzintersectdeathcircleindex") : 0;
         if (isdefined(level.deathcircles) && level.deathcircles.size > 0 && circleindex < level.deathcircles.size) {
             center = level.deathcircles[circleindex].origin;
             if (circleindex > 0) {

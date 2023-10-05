@@ -11,10 +11,10 @@
 #photo,#hash_5c79328e39d8a6b,#hash_799f9af88bb20656,0,0,false,false,false,false
 #photo,#hash_594f2dba216b2842,#hash_7467c8261ce4f7b5,0,0,false,false,false,false
 #hash_4c72ead05bcea9f9,#place,#hash_7e0df5eda50fd3f3,0,0,false,false,false,false
-#groom_lake,#hash_21f1927cc55db6bd,#hash_2a834e891cc8667a,0,0,false,false,false,false
+#groom_lake,#teleport_active,#hash_2a834e891cc8667a,0,0,false,false,false,false
 #groom_lake,#arrive,#hash_52de71efb1e8de2b,0,0,false,false,false,false
 #groom_lake,#sent_back,#hash_4242580c7c8c10b8,0,0,false,false,false,false
-#hash_362bf3d95b0d6752,#repair,#hash_774f316900b028fc,0,0,false,false,false,false
+#mcnamara_log,#repair,#hash_774f316900b028fc,0,0,false,false,false,false
 #code_sequence,#complete,#hash_7fe91aa83c27c4b8,0,0,false,false,false,false
 #shield_piece,#pickup,#hash_667abc2824133e55,0,0,false,false,false,false
 #weapon_pickup,#shield,#hash_7a78273efd96ec45,0,0,true,false,false,false

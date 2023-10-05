@@ -26,7 +26,7 @@
 20,#,#,#,#,#give_reward,#hash_20e46acec43f89e9,#hash_46044d0ce4567ceb,#uie_trial_medal_silver,#hash_63dfdbf360bad3a8,#,#,#,#
 21,#hash_5dcea2de3056157,#hash_3f814a709c4d69d1,#hash_7e02c915b04f83eb,#,#hash_6840f605489bddc2,#prone,#,#,#,#,#,#,#
 22,#pointless,#hash_3f8147709c4d64b8,#hash_4f7ba54fd8d544e0,#,#reset_points,#,#,#,#,#,#,#,#
-23,#hash_f7f0df08ae49da2,#hash_3f8148709c4d666b,#hash_5c4bf26b01b252bd,#,#restrict_loadout,#no_attachments,#,#,#,#,#,#,#
+23,#unattached,#hash_3f8148709c4d666b,#hash_5c4bf26b01b252bd,#,#restrict_loadout,#no_attachments,#,#,#,#,#,#,#
 24,#lockdown,#hash_3f814d709c4d6eea,#hash_6521de8792989da,#,#door_lockdown,#,#,#,#,#,#,#,#
 25,#stand_firm,#hash_3f814e709c4d709d,#hash_50186cf704217ba7,#,#defend_area,#hash_17775a73cd45c14b,#hash_64b81f066e6cc540,#hash_a6b7fc2d7e6e6a,#zone_infirmary,#zone_infirmary_roof,#,#,#
 26,#mobster,#hash_3f814b709c4d6b84,#hash_228c7aed5b4aa8ac,#,#restrict_loadout,#tommy_gun,#,#,#,#,#,#,#

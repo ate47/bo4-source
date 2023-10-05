@@ -43,7 +43,7 @@ function function_78a5c895(localclientnum, menu_data) {
     forcestreambundle(#"hash_436b9483accb9a63", 8, -1);
     forcestreambundle(#"cin_black_market_greeting", 8, -1);
     forcestreambundle(#"cin_black_market_in_store", 8, -1);
-    forcestreambundle(#"hash_4fba9743015d76e", 8, -1);
+    forcestreambundle(#"cin_black_market_mult_case", 8, -1);
     forcestreambundle(#"cin_black_market_not_welcome", 8, -1);
     forcestreambundle(#"hash_2808d911694eca55", 8, -1);
     forcestreambundle(#"cin_black_market_welcome", 8, -1);
@@ -160,7 +160,7 @@ function function_f559e439(localclientnum, menu_data, state) {
         level.var_cf24a85f.var_46d8e7d1 = hash(state) != #"welcome_empty";
         var_f56984dc = "idle";
         break;
-    case #"hash_2c6dd0b59031c5ad":
+    case #"loot_case_open":
     case #"loot_case":
         var_ce1b87cf = #"scene_frontend_blackjack_case";
         if (state == "loot_case_open") {
@@ -175,7 +175,7 @@ function function_f559e439(localclientnum, menu_data, state) {
         }
         break;
     case #"loot_crate":
-    case #"hash_5782738d595b7e44":
+    case #"loot_crate_open":
         var_ce1b87cf = #"scene_frontend_blackjack_crate";
         if (state == "loot_crate_open") {
             var_f56984dc = "crateidle";
@@ -256,7 +256,7 @@ function function_fa73161a(localclientnum, menu_data, state) {
                 level.var_cf24a85f.var_82406a05 = #"hash_436b9483accb9a63";
                 break;
             case #"welcome_case_multi":
-                level.var_cf24a85f.var_82406a05 = #"hash_4fba9743015d76e";
+                level.var_cf24a85f.var_82406a05 = #"cin_black_market_mult_case";
                 break;
             case #"welcome_case_special":
                 level.var_cf24a85f.var_82406a05 = #"hash_2808d911694eca55";
@@ -409,7 +409,7 @@ function function_c46c0287(localclientnum, menu_data) {
     function_66b6e720(#"hash_436b9483accb9a63");
     function_66b6e720(#"cin_black_market_greeting");
     function_66b6e720(#"cin_black_market_in_store");
-    function_66b6e720(#"hash_4fba9743015d76e");
+    function_66b6e720(#"cin_black_market_mult_case");
     function_66b6e720(#"cin_black_market_not_welcome");
     function_66b6e720(#"hash_2808d911694eca55");
     function_66b6e720(#"cin_black_market_welcome");

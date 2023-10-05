@@ -33,13 +33,13 @@ function __init__() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa2b5406c, Offset: 0x158
 // Size: 0x9e
-function function_aad9199e(var_1e0a7a84) {
-    var_1e0a7a84 notify(#"hash_7dc65ec6fe251daf");
-    var_1e0a7a84 endon(#"hash_7dc65ec6fe251daf", #"death", #"disconnect");
+function function_aad9199e(pulsedenemy) {
+    pulsedenemy notify(#"hash_7dc65ec6fe251daf");
+    pulsedenemy endon(#"hash_7dc65ec6fe251daf", #"death", #"disconnect");
     wait(float(level.var_2e3031be.var_9d776ba6) / 1000);
-    if (isdefined(var_1e0a7a84)) {
-        var_1e0a7a84.ispulsed = 0;
-        var_1e0a7a84.var_5379bee8 = undefined;
+    if (isdefined(pulsedenemy)) {
+        pulsedenemy.ispulsed = 0;
+        pulsedenemy.var_5379bee8 = undefined;
     }
 }
 
@@ -47,11 +47,11 @@ function function_aad9199e(var_1e0a7a84) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x6a5cd249, Offset: 0x200
 // Size: 0x84
-function function_fc3478b7(var_1e0a7a84) {
-    self battlechatter::function_bd715920(getweapon(#"gadget_vision_pulse"), var_1e0a7a84, var_1e0a7a84.origin, self, 2);
-    var_1e0a7a84.ispulsed = 1;
-    var_1e0a7a84.var_5379bee8 = self;
-    thread function_aad9199e(var_1e0a7a84);
+function function_fc3478b7(pulsedenemy) {
+    self battlechatter::function_bd715920(getweapon(#"gadget_vision_pulse"), pulsedenemy, pulsedenemy.origin, self, 2);
+    pulsedenemy.ispulsed = 1;
+    pulsedenemy.var_5379bee8 = self;
+    thread function_aad9199e(pulsedenemy);
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse

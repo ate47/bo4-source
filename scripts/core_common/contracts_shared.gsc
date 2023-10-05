@@ -373,7 +373,7 @@ function function_d589391f() {
     if (!isdefined(level.var_107734a6)) {
         return;
     }
-    if (getdvarint(#"hash_3b8a673f8fcff50d", 0) > 0) {
+    if (getdvarint(#"contract_monitor_time_played_disabled", 0) > 0) {
         return;
     }
     if (!isdefined(level.var_e054dd5c)) {

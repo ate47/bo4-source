@@ -45,10 +45,10 @@
 #shield_pickup,#pickup,#hash_7e030fccc2c5a121,0,0,false,false,false,false
 #shield,#destroy,#hash_112938160e7b4685,0,0,false,false,false,false
 #weapon_pickup,#shield,#hash_667abc2824133e55,0,0,true,false,false,false
-#hash_6882cdf0cde58a8d,#encounter,#vox_nova_gas_encounter,0,0,false,false,false,false
+#nova_gas,#encounter,#vox_nova_gas_encounter,0,0,false,false,false,false
 #generator,#defend,#vox_generator_defend,0,0,false,false,false,false
-#air_vent,#hash_3c408eb185e995f0,#vox_air_vent_repair_react,0,0,false,false,false,false
-#air_vent,#hash_4c3a9103a3a05411,#vox_air_vent_repaired_react,0,0,false,false,false,false
+#air_vent,#repair_react,#vox_air_vent_repair_react,0,0,false,false,false,false
+#air_vent,#repaired_react,#vox_air_vent_repaired_react,0,0,false,false,false,false
 #mmtd,#place,#hash_7832a05d73569401,0,0,false,false,false,false
 #power_switch,#activate,#hash_20d3116fdeafe16d,0,0,false,false,false,false
 #roundstart,#special,#hash_783a2842fe3ddecf,0,0,false,false,false,false
@@ -85,7 +85,7 @@
 #s3,#return,#vox_s3_return,0,0,false,false,false,false
 #s4,#locate,#vox_s4_locate,0,0,false,false,false,false
 #s4,#hint,#vox_s4_hint,0,0,false,false,false,false
-#s4,#hash_1b4200d1a156e5f,#vox_s4_last_code,0,0,false,false,false,false
+#s4,#last_code,#vox_s4_last_code,0,0,false,false,false,false
 #s4,#success,#vox_s4_success,0,0,false,false,false,false
 #s5,#shutdown,#vox_s5_shutdown,0,0,false,false,false,false
 #s5,#end,#vox_s5_end,0,0,false,false,false,false

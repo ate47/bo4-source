@@ -297,7 +297,7 @@
 #hash_3ce7ff166cb0c6f3,0,150,0,75,25,false,0,false,#,#,#hash_69555c8dc04fa98f,false,true,true,#,#ultimate,#,#major,#,false
 #hash_3ce800166cb0c8a6,0,200,0,75,25,false,0,false,#,#,#hash_69555d8dc04fab42,false,true,true,#,#ultimate,#,#major,#,false
 #attack_chopper_shutdown,0,50,50,25,0,false,2,false,#hash_7abe44ed8a9f250d,#,#t7_hud_medal_destroyed_helicopter_comlink,false,true,true,#antiscorestreak,#general,#,#core,#,false
-#hash_358adedc7149abad,0,25,0,25,5,false,0,false,#,#,#hash_4f0eea93a3fc4b89,false,true,true,#,#ability,#,#core,#,false
+#tempest_activated,0,25,0,25,5,false,0,false,#,#,#hash_4f0eea93a3fc4b89,false,true,true,#,#ability,#,#core,#,false
 #tempest_fired,0,0,0,0,15,false,0,false,#,#,#hash_71c2e72fd5be3aca,false,true,true,#,#ability,#,#minor,#,false
 #hash_155971ff23a4355a,0,50,0,100,15,false,2,false,#,#,#hash_2375ae794c2f6646,false,true,true,#,#ability,#,#core,#hash_432c6a41f35cf76d,false
 #hash_734904dd987c0f7a,0,50,50,100,15,false,4,false,#hash_1a09660f39662fab,#,#hash_7113ce5e90f4015e,false,true,true,#,#ability,#,#core,#hash_6f0ec202863eacd,false
@@ -435,7 +435,7 @@
 #hash_22cdad477872796,0,200,0,75,25,false,0,false,#,#,#hash_621ec78a0aecaeba,false,true,true,#,#equipment,#,#epic,#,false
 #annihilator_fired,0,0,0,0,0,false,0,false,#,#,#hash_535d825bc8d2214b,false,true,true,#,#ultimate,#,#core,#,false
 #hash_5e69a863008f311,0,50,0,100,15,false,2,false,#,#,#hash_686f00b14820673d,false,true,true,#,#ultimate,#,#core,#,false
-#hash_6c144d8ad5707714,0,25,0,25,5,false,0,false,#,#,#hash_74a6d815dd637e80,false,true,true,#,#ultimate,#,#core,#,false
+#annihilator_activated,0,25,0,25,5,false,0,false,#,#,#hash_74a6d815dd637e80,false,true,true,#,#ultimate,#,#core,#,false
 #hash_38ce4ad6f4be82b8,0,50,0,100,15,false,2,false,#,#,#hash_69481d8845c13c74,false,true,true,#,#ultimate,#,#core,#,false
 #annihilator_kill,0,50,50,100,15,false,6,false,#hash_66530765f5e29eae,#,#hash_678029bc3d357e6d,false,true,true,#,#ultimate,#,#core,#,false
 #hash_71d963d803cadc19,0,50,0,100,15,false,2,false,#,#,#hash_205f11782e9c1a05,false,true,true,#,#ultimate,#,#core,#,false

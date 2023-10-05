@@ -13,7 +13,7 @@
 #location_enter,#hash_2781f0de96fa6e4e,#hash_2385ac4fe9895c95,0,0,true,false,false,false
 #location_enter,#facility_infusion,#hash_3494a7911d96a99,0,0,true,false,false,false
 #location_enter,#facility_geological,#hash_6382c06046ec6fd6,0,0,true,false,false,false
-#location_enter,#hash_63ee81597199de7d,#hash_84fa084a2617bf4,0,0,true,false,false,false
+#location_enter,#ice_flow,#hash_84fa084a2617bf4,0,0,true,false,false,false
 #punchcard_1,#pickup,#hash_18bc664341e86310,0,0,false,false,false,false
 #punchcard_2,#hash_218450780e0957b3,#hash_35c946ee7d89155d,0,0,false,false,false,false
 #punchcard_2,#hash_493b4e6a8f1278d,#hash_52378df470d0a88b,0,0,false,false,false,false
@@ -30,7 +30,7 @@
 #gear_box,#give_0,#hash_23ba538ee5a42b5d,0,0,false,false,false,false
 #gear_box,#give_1,#hash_23ba528ee5a429aa,0,0,false,false,false,false
 #gear_box,#fixed,#hash_5e981943f6b25ff,0,0,false,false,false,false
-#gear_box,#hash_1acc62d2465b86f6,#hash_754cd427015598bc,0,0,false,false,false,false
+#gear_box,#fixed_pickup,#hash_754cd427015598bc,0,0,false,false,false,false
 #trap_lighthouse,#activate,#hash_3e83d1e7d81dcd0f,0,0,true,true,false,false
 #trap_ice,#activate,#hash_645075fef1035014,0,0,true,true,false,false
 #german_zombie,#react,#hash_18c3a6f7c2619c16,0,5,false,false,false,true
@@ -130,8 +130,8 @@
 #key,#pickup,#hash_7cc5c64ef2e9f6bf,0,0,false,false,false,false
 #ww,#pickup,#vox_ww_pickup,0,0,false,false,false,false
 #mq,#start,#hash_254c37174dfe3cd2,0,0,false,false,false,false
-#hash_4e032097d45c27e5,#pickup,#hash_37b261e51a21c0cc,0,0,false,false,false,false
-#hash_4e032097d45c27e5,#insert,#hash_13b606b34fa64ed5,0,0,false,false,false,false
+#colored_dials,#pickup,#hash_37b261e51a21c0cc,0,0,false,false,false,false
+#colored_dials,#insert,#hash_13b606b34fa64ed5,0,0,false,false,false,false
 #seal,#dynamite,#hash_497ec7e9ca9ca204,0,0,false,false,false,false
 #seal,#pickup_0,#hash_327cc5948debadf8,0,0,false,false,false,false
 #seal,#pickup,#vox_seal_pickup,0,0,false,false,false,false
@@ -148,7 +148,7 @@
 #device,#pickup_0,#hash_5a47b04bc068ce21,0,0,false,false,false,false
 #device,#pickup,#hash_6f774fe92d5d01b6,0,0,false,false,false,false
 #device,#fail,#hash_170341e08a9cda92,0,0,false,false,false,false
-#device,#hash_5f22ba7ff2cb934a,#hash_abba1937c744399,0,0,false,false,false,false
+#device,#pap_give,#hash_abba1937c744399,0,0,false,false,false,false
 #device,#pap_take,#hash_4de6e4f76ebb0c43,0,0,false,false,false,false
 #device,#hash_35fe5458525dd655,#hash_549030026224cbce,0,0,false,false,false,false
 #device,#hash_117daf37fe5804d6,#hash_2afdd7a8acba7721,0,0,false,false,false,false
@@ -166,8 +166,8 @@
 #device,#deliver,#hash_18d17175b6700e47,0,0,false,false,false,false
 #pablo,#gift,#hash_35b42e4ca5afd6da,0,0,false,false,false,false
 #lighthouse,#crazy,#hash_8f686e289c54c01,0,0,false,false,false,false
-#hash_53a6f2a58d14e6b9,#react_0,#hash_145677eecd7abe5c,0,0,false,false,false,false
-#hash_53a6f2a58d14e6b9,#react,#hash_1003004a8ca44bb3,0,0,false,false,false,false
+#sky_portal,#react_0,#hash_145677eecd7abe5c,0,0,false,false,false,false
+#sky_portal,#react,#hash_1003004a8ca44bb3,0,0,false,false,false,false
 #pablo,#departs,#hash_1a974fe7a0edddab,0,0,false,false,false,false
 #get,#tundragun,#vox_tundragun_get,0,0,false,false,false,false
 #romero,#glasses_0,#hash_4ca5f5f81fb521ad,0,0,false,false,false,false

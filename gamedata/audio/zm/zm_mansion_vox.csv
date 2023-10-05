@@ -9,7 +9,7 @@
 #location_enter,#library,#hash_27898fbc0c36318f,0,0,true,false,false,false
 #location_enter,#main_hall,#hash_450f0aa22923ff49,0,0,true,false,false,false
 #location_enter,#master_bed,#hash_354051e8ce57f644,0,0,true,false,false,false
-#location_enter,#hash_2f2e72ae71d7561c,#hash_e9b2c2227fd46a7,0,0,true,false,false,false
+#location_enter,#secret_chamber,#hash_e9b2c2227fd46a7,0,0,true,false,false,false
 #location_enter,#wine_cellar,#hash_58fa0bca1849bdf1,0,0,true,false,false,false
 #revive,#down,#hash_606bb418a1c0c4ab,0,0,false,false,true,false
 #trap_activate,#firegate,#hash_bd38da38c2202c6,0,0,false,false,false,false
@@ -39,10 +39,10 @@
 #crossbow,#pickup,#hash_5b257b4bd8a2c6ec,0,0,false,false,false,false
 #silver_bullets,#build,#hash_400e358c3529b05f,0,0,false,false,false,false
 #silver_bullets,#kill,#hash_79251b73edd2c2d5,0,0,false,false,false,false
-#hash_441765785e15d670,#pickup,#hash_445d4e233806a7cf,0,0,false,false,false,false
+#stake_bowie,#pickup,#hash_445d4e233806a7cf,0,0,false,false,false,false
 #bowie,#pickup,#hash_774982f314301fc,0,0,false,false,false,false
 #bowie,#kill,#hash_3391e1b5c193e040,0,0,false,false,false,false
-#component_pickup,#hash_bac36723c59b4b7,#hash_12fcbcf5f7dfcc6f,0,0,false,false,false,false
+#component_pickup,#bat_bile,#hash_12fcbcf5f7dfcc6f,0,0,false,false,false,false
 #component_pickup,#chaos_material,#hash_161206ddd7dcc321,0,0,false,false,false,false
 #component_pickup,#hash_3b036955869eed34,#hash_66bfd55d9cda1c1c,0,0,false,false,false,false
 #component_pickup,#hash_72e94c726a72d3c,#hash_31e2f2fbfc612834,0,0,false,false,false,false
@@ -70,12 +70,12 @@
 #forest,#defend,#hash_6e63b3f7935e773f,0,0,false,false,false,false
 #forest,#defend_comp,#hash_29e15e16eeffb2f7,0,0,false,false,false,false
 #artifact_2,#pickup,#hash_324bc06bf94d1931,0,0,false,false,false,false
-#hash_5b36f03b78f8e4a5,#interact,#hash_583fb331f46365be,0,0,false,false,false,false
+#ghost_cath,#interact,#hash_583fb331f46365be,0,0,false,false,false,false
 #cemetary,#defend,#hash_16869727f81b98d0,0,0,false,false,false,false
 #cemetary,#defend_comp,#hash_637b438e59b6efa2,0,0,false,false,false,false
 #artifact_3,#pickup,#hash_f23ff0d4f779a1c,0,0,false,false,false,false
 #forest,#door_unlock,#hash_7cedb4ec0f14ff50,0,0,false,false,false,false
-#hash_5b36f03b78f8e4a5,#jump_react,#vox_ghost_cath_jump_react,0,0,false,false,false,false
+#ghost_cath,#jump_react,#vox_ghost_cath_jump_react,0,0,false,false,false,false
 #fast_travel,#end,#hash_4d6d4cd2bfc6d91c,0,0,false,false,false,false
 #grenade,#react,#hash_2e144459850ac7db,0,0,false,false,false,false
 #headstone_death,#react,#hash_7b5ae04f082da5a6,0,0,false,false,false,false

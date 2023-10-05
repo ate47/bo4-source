@@ -13,7 +13,7 @@
 #fire_trail,#active,#hash_4e1883cacfc0080b,0,0,true,false,false,false
 #imp_jar,#pickup,#hash_2b2a7c0ea867948e,0,0,true,false,false,false
 #hash_3a7466277372554d,#pickup,#hash_7afc64a7fa6a0db4,0,0,true,false,false,false
-#box,#hash_73ff1c53a97e6f2d,#hash_1c667d0f1af843a9,0,0,true,false,false,false
+#box,#feed_elixir,#hash_1c667d0f1af843a9,0,0,true,false,false,false
 #crowd,#positive_good,#hash_1f176a67f27ed5f6,0,0,false,false,false,false
 #crowd,#positive_great,#hash_4f6066b8fe283a44,0,0,false,false,false,false
 #crowd,#positive_immac,#hash_6e85a9308f6911e8,0,0,false,false,false,false
@@ -32,7 +32,7 @@
 #kill,#tiger,#hash_8e02cfd8df09f5a,0,60,false,false,false,false
 #m_quest,#armor_nag,#hash_5e35f3979c4c9eaa,0,30,false,false,false,false
 #m_quest,#basket_nag,#hash_1703590c8a95e273,0,30,false,false,false,false
-#m_quest,#hash_61fb207502f24402,#hash_4529b90b3d008c9f,0,0,true,false,false,false
+#m_quest,#build_fertilizer,#hash_4529b90b3d008c9f,0,0,true,false,false,false
 #m_quest,#hash_256af9f0986b423a,#hash_3cfc741d08bb9eb3,0,0,true,false,false,false
 #m_quest,#hash_6f9717e64e333a5b,#hash_2c87f4c5bf8b38f4,0,0,true,false,false,false
 #m_quest,#charge_warn,#hash_39b355d7c7b89ca5,0,30,false,false,false,false
@@ -50,7 +50,7 @@
 #m_quest,#hash_32945de55f48b610,#hash_51a59d04d4a7e8b1,0,0,true,false,false,false
 #m_quest,#hash_4679377bf6d64ac1,#hash_129a667064652cd2,0,30,false,false,false,false
 #m_quest,#heart_nag,#hash_29ab1dc01501cac1,0,30,false,false,false,false
-#m_quest,#hash_6d2d0b49fcc4b431,#hash_671a04c9b101659c,0,0,true,false,false,false
+#m_quest,#key_pickup,#hash_671a04c9b101659c,0,0,true,false,false,false
 #m_quest,#missile_track,#hash_2f94a3fb2ad2f6fc,0,30,false,false,false,false
 #m_quest,#missile_warn,#hash_50090cd9bcff1671,0,30,false,false,false,false
 #m_quest,#hash_4ea218919b3e35e4,#hash_30b4404eefd745f5,0,0,true,false,false,false

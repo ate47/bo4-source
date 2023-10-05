@@ -212,7 +212,7 @@ class class_7da27482 {
     // Checksum 0x152893eb, Offset: 0x4400
     // Size: 0xac
     function function_e599283f() {
-        return {#outfititems:self.var_f5c0467b, #var_665ae20e:self.var_cfe86a3e, #outfit:self.var_cf55444c, #characterhead:self.var_db113baf, #charactertype:self.var_1d73bad9, #charactermode:self._i_mode, #xuid:self._xuid};
+        return {#outfititems:self.var_f5c0467b, #warpaintoutfit:self.var_cfe86a3e, #outfit:self.var_cf55444c, #characterhead:self.var_db113baf, #charactertype:self.var_1d73bad9, #charactermode:self._i_mode, #xuid:self._xuid};
     }
 
     // Namespace namespace_7da27482/character_customization
@@ -227,7 +227,7 @@ class class_7da27482 {
         [[ self ]]->set_character_index(var_23904c1d.charactertype);
         [[ self ]]->set_character_head(var_23904c1d.characterhead);
         [[ self ]]->set_character_outfit(var_23904c1d.outfit);
-        [[ self ]]->function_158505aa(var_23904c1d.var_665ae20e);
+        [[ self ]]->function_158505aa(var_23904c1d.warpaintoutfit);
         /#
             /#
                 assert(var_23904c1d.outfititems.size == 8);
@@ -1553,7 +1553,7 @@ function function_7474681d(local_client_num, session_mode, character_index) {
         var_9b90e15d = itemtype == 7 ? var_17b172ca : outfit_index;
         outfit_items[itemtype] = function_bd9a67ae(local_client_num, session_mode, character_index, var_9b90e15d, itemtype);
     }
-    return {#outfititems:outfit_items, #var_665ae20e:var_17b172ca, #outfit:outfit_index, #characterhead:getequippedheadindexforhero(local_client_num, session_mode), #charactertype:character_index, #charactermode:session_mode};
+    return {#outfititems:outfit_items, #warpaintoutfit:var_17b172ca, #outfit:outfit_index, #characterhead:getequippedheadindexforhero(local_client_num, session_mode), #charactertype:character_index, #charactermode:session_mode};
 }
 
 // Namespace character_customization/character_customization
@@ -1565,7 +1565,7 @@ function function_3f5625f1(mode, character_index = 1) {
     for (itemtype = 0; itemtype < 8; itemtype++) {
         outfit_items[itemtype] = 0;
     }
-    return {#outfititems:outfit_items, #var_665ae20e:0, #outfit:0, #characterhead:0, #charactertype:character_index, #charactermode:mode};
+    return {#outfititems:outfit_items, #warpaintoutfit:0, #outfit:0, #characterhead:0, #charactertype:character_index, #charactermode:mode};
 }
 
 // Namespace character_customization/character_customization
