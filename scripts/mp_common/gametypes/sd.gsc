@@ -336,7 +336,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
     clientfield::set_player_uimodel("hudItems.playerLivesCount", level.numlives - self.var_a7d7e50a);
     if (isdefined(self) && isdefined(attacker) && attacker != self && isplayer(attacker) && attacker.team != self.team) {
         scoreevents::processscoreevent(#"eliminated_enemy", attacker, self, weapon);
-        attacker contracts::function_fd9fb79b(#"hash_7ea5ab346a8be398");
+        attacker contracts::function_fd9fb79b(#"contract_mp_eliminations");
         if (isdefined(self.lastmansd) && self.lastmansd == 1) {
             attacker stats::function_dad108fa(#"eliminated_final_enemy", 1);
         }

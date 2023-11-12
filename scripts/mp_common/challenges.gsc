@@ -461,7 +461,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
             if (var_95ac2e77 === 1) {
                 if (self function_db654c9(var_3cd641b, #"bonuscard_overkill")) {
                     self stats::function_dad108fa(#"hash_33dd7ef72b15e6ac", 1);
-                    self contracts::increment_contract(#"hash_bda5f100f182228");
+                    self contracts::increment_contract(#"contract_mp_overkill");
                 } else if (self function_db654c9(var_3cd641b, #"bonuscard_underkill")) {
                     self stats::function_dad108fa(#"hash_9cb265b8b1483b0", 1);
                 }
@@ -497,11 +497,11 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                         var_ee03db9e = 1;
                     }
                     if (var_ee03db9e) {
-                        self contracts::increment_contract(#"hash_29c44b5c02f1674d");
+                        self contracts::increment_contract(#"contract_mp_class_gluttony");
                     }
                 }
                 if (talents.size >= 5) {
-                    self contracts::increment_contract(#"hash_1d68713877c674d8");
+                    self contracts::increment_contract(#"contract_mp_class_5_perks");
                 }
                 if (isdefined(var_5afc3871[#"talent_resistance"])) {
                     if (var_6af452fc.var_5745c480 === 1) {
@@ -814,7 +814,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                 } else {
                     self.var_93da0d74[weapon] = 1;
                 }
-                self contracts::increment_contract(#"hash_4b2b63ef119a97e5");
+                self contracts::increment_contract(#"contract_mp_pickup_weapon_kills");
             }
         }
         if (var_2adaec2f === 1) {

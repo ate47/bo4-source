@@ -520,7 +520,7 @@ function function_97429d68() {
     if (!self clientfield::get("" + #"hero_hammer_stun")) {
         self clientfield::set("" + #"hero_hammer_stun", 1);
         if (self.archetype == #"zombie") {
-            function_6eac4ca1(self, "electrocute");
+            bhtnactionstartevent(self, "electrocute");
         }
     }
     wait(0.2);
@@ -639,7 +639,7 @@ function staff_lightning_ball_damage_over_time(e_source, e_target, e_attacker) {
     }
     e_target clientfield::set("" + #"lightning_impact_fx", 1);
     if (e_target.archetype === #"zombie") {
-        function_6eac4ca1(e_target, "electrocute");
+        bhtnactionstartevent(e_target, "electrocute");
     }
     n_range_sq = e_source.n_range * e_source.n_range;
     e_target.is_being_zapped = 1;

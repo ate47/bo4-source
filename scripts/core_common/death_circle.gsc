@@ -52,8 +52,8 @@ function __init__() {
 function init() {
     deathcircleindex = isdefined(getgametypesetting(#"hash_70072ee20a43ae21")) ? getgametypesetting(#"hash_70072ee20a43ae21") : 0;
     var_65792f8b = map::get_script_bundle();
-    if (isdefined(var_65792f8b) && isarray(var_65792f8b.var_2fd8cff3) && deathcircleindex < var_65792f8b.var_2fd8cff3.size) {
-        var_ae6c2bbe = getscriptbundle(var_65792f8b.var_2fd8cff3[deathcircleindex].var_47fd5ad2);
+    if (isdefined(var_65792f8b) && isarray(var_65792f8b.deathcirclelist) && deathcircleindex < var_65792f8b.deathcirclelist.size) {
+        var_ae6c2bbe = getscriptbundle(var_65792f8b.deathcirclelist[deathcircleindex].var_47fd5ad2);
         function_5e412e4a(var_ae6c2bbe);
     }
 }
@@ -69,7 +69,7 @@ function function_5e412e4a(var_ae6c2bbe) {
     function_114f128a(isdefined(var_ae6c2bbe.var_904b645e) ? var_ae6c2bbe.var_904b645e : 0);
     level.var_6c870a00 = isdefined(var_ae6c2bbe.var_6c870a00) ? var_ae6c2bbe.var_6c870a00 : 10;
     level.var_ab9cd581 = isdefined(var_ae6c2bbe.var_ab9cd581) ? var_ae6c2bbe.var_ab9cd581 : 20;
-    foreach (circle in var_ae6c2bbe.var_2fd8cff3) {
+    foreach (circle in var_ae6c2bbe.deathcirclelist) {
         var_b9aec05c = isdefined(circle.var_b9aec05c) ? circle.var_b9aec05c : 0;
         var_112f6f50 = isdefined(circle.var_112f6f50) ? circle.var_112f6f50 : 0;
         origin = (var_b9aec05c, var_112f6f50, 0);

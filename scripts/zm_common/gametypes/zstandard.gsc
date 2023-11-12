@@ -124,8 +124,8 @@ function event_handler[gametype_init] main(eventstruct) {
         clientfield::register("worlduimodel", "PlayerList.client" + i + ".multiplier_blink", 1, 1, "int");
         clientfield::register("worlduimodel", "PlayerList.client" + i + ".self_revives", 1, 8, "int");
     }
-    function_ab2f100f();
-    function_bec643d1();
+    init_elixirs();
+    init_talismans();
     init_pack_a_punch();
     init_magicbox();
     function_24a75fd1();
@@ -250,7 +250,7 @@ function intro_vox() {
 // Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x15d8
 // Size: 0x4
-function function_ab2f100f() {
+function init_elixirs() {
     
 }
 
@@ -258,7 +258,7 @@ function function_ab2f100f() {
 // Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x15e8
 // Size: 0x4
-function function_bec643d1() {
+function init_talismans() {
     
 }
 
@@ -893,7 +893,7 @@ function function_cd6476e(var_16ef1c43) {
             self zm_utility::giveachievement_wrapper("zm_rush_multiplier_100");
             self.var_b3381e0 = 1;
         }
-        self contracts::increment_zm_contract(#"hash_88b286a634040c6");
+        self contracts::increment_zm_contract(#"contract_zm_rush_multiplier");
     }
 }
 

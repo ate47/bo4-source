@@ -202,7 +202,7 @@ function function_92f341d0(e_activator, e_volume) {
         self.water_damage = 1;
         if (isplayer(level.s_freeze_trap.activated_by_player)) {
             level.s_freeze_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-            level.s_freeze_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+            level.s_freeze_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         }
         level notify(#"trap_kill", {#trap:e_volume, #victim:self});
         self dodamage(self.health + 1000, e_volume.origin, e_volume);

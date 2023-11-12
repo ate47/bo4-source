@@ -160,7 +160,7 @@ function death_check_for_challenge_updates(e_attacker) {
     #/
     e_attacker function_979f4cc0(#"darkops_kills", undefined, 1);
     e_attacker zm_stats::function_c0c6ab19(#"kills");
-    e_attacker contracts::increment_zm_contract(#"hash_759f87f4e42ffcd3");
+    e_attacker contracts::increment_zm_contract(#"contract_zm_kills");
     e_attacker contracts::function_dff4c02f();
     if (isvehicle(self)) {
         str_damagemod = self.str_damagemod;
@@ -192,7 +192,7 @@ function death_check_for_challenge_updates(e_attacker) {
             e_attacker stats::inc_stat(#"item_stats", w_damage.name, #"heavykills", #"statvalue", 1);
             e_attacker thread activecamo::function_896ac347(w_damage, #"heavy_kills", 1);
             e_attacker thread activecamo::function_896ac347(w_damage, #"hash_39ab7cda18fd5c74", 1);
-            e_attacker contracts::increment_zm_contract(#"hash_442b84244ca6a613");
+            e_attacker contracts::increment_zm_contract(#"contract_zm_heavy_kills");
             break;
         case #"miniboss":
             /#
@@ -203,7 +203,7 @@ function death_check_for_challenge_updates(e_attacker) {
             e_attacker stats::inc_stat(#"item_stats", w_damage.name, #"minibosskills", #"statvalue", 1);
             e_attacker thread activecamo::function_896ac347(w_damage, #"mini_boss_kills", 1);
             e_attacker thread activecamo::function_896ac347(w_damage, #"hash_39ab7cda18fd5c74", 1);
-            e_attacker contracts::increment_zm_contract(#"hash_126eeecb48b8db2e");
+            e_attacker contracts::increment_zm_contract(#"contract_zm_miniboss_kills");
             break;
         case #"popcorn":
             /#
@@ -213,7 +213,7 @@ function death_check_for_challenge_updates(e_attacker) {
             e_attacker stats::inc_stat(#"item_stats", w_damage.name, #"verminkills", #"statvalue", 1);
             e_attacker thread activecamo::function_896ac347(w_damage, #"vermin_kills", 1);
             e_attacker thread activecamo::function_896ac347(w_damage, #"hash_39ab7cda18fd5c74", 1);
-            e_attacker contracts::increment_zm_contract(#"hash_2eccd05bcbd822f");
+            e_attacker contracts::increment_zm_contract(#"contract_zm_vermin_kills");
             break;
         case #"enhanced":
             e_attacker thread activecamo::function_896ac347(w_damage, #"hash_39ab7cda18fd5c74", 1);
@@ -228,7 +228,7 @@ function death_check_for_challenge_updates(e_attacker) {
         #/
         e_attacker thread activecamo::function_896ac347(w_damage, #"enhanced_kills", 1);
         e_attacker thread activecamo::function_896ac347(w_damage, #"hash_39ab7cda18fd5c74", 1);
-        e_attacker contracts::increment_zm_contract(#"hash_2277f12631eb5323");
+        e_attacker contracts::increment_zm_contract(#"contract_zm_catalyst_kills");
         if (isdefined(self.var_69a981e6) && self.var_69a981e6) {
             /#
                 e_attacker debug_print("<unknown string>");
@@ -249,7 +249,7 @@ function death_check_for_challenge_updates(e_attacker) {
             e_attacker debug_print("<unknown string>");
         #/
         e_attacker zm_stats::function_c0c6ab19(#"headshots");
-        e_attacker contracts::increment_zm_contract(#"hash_33c68058207bfb41");
+        e_attacker contracts::increment_zm_contract(#"contract_zm_headshots");
         if (w_damage === e_attacker.var_2a62e678) {
             /#
                 e_attacker debug_print("<unknown string>");
@@ -270,7 +270,7 @@ function death_check_for_challenge_updates(e_attacker) {
         e_attacker zm_stats::increment_challenge_stat(#"zombie_hunter_kill_melee");
         e_attacker zm_stats::increment_challenge_stat(#"zm_daily_kills_melee");
         e_attacker zm_stats::function_c0c6ab19(#"kills_melee");
-        e_attacker contracts::increment_zm_contract(#"hash_5aa9aaa3efcc8c08");
+        e_attacker contracts::increment_zm_contract(#"contract_zm_melee_kills");
     }
     if (str_damagemod === "MOD_GRENADE" || str_damagemod === "MOD_GRENADE_SPLASH" || str_damagemod === "MOD_EXPLOSIVE" || zm_weapons::is_explosive_weapon(w_damage)) {
         /#
@@ -278,7 +278,7 @@ function death_check_for_challenge_updates(e_attacker) {
         #/
         e_attacker zm_stats::increment_challenge_stat(#"zombie_hunter_kill_explosives");
         e_attacker zm_stats::function_c0c6ab19(#"explosions");
-        e_attacker contracts::increment_zm_contract(#"hash_6cde879eb969cfbb");
+        e_attacker contracts::increment_zm_contract(#"contract_zm_explosive_kills");
         if (w_damage == getweapon(#"hash_790eab2239858f5d")) {
             e_attacker shotgun_kill();
         }
@@ -298,7 +298,7 @@ function death_check_for_challenge_updates(e_attacker) {
         e_attacker zm_stats::increment_challenge_stat(#"double_pap_kills", undefined, 1);
         e_attacker zm_stats::function_c0c6ab19(#"hash_5d3dce1c38a95835");
         e_attacker zm_stats::function_c0c6ab19(#"repacked_kills");
-        e_attacker contracts::increment_zm_contract(#"hash_3178840f53beab88");
+        e_attacker contracts::increment_zm_contract(#"contract_zm_packed_kills");
         w_stat = zm_weapons::get_base_weapon(w_damage);
         e_attacker stats::function_e24eec31(w_damage, #"packedkills", 1);
         e_attacker stats::inc_stat(#"item_stats", w_damage.name, #"packedkills", #"statvalue", 1);
@@ -308,7 +308,7 @@ function death_check_for_challenge_updates(e_attacker) {
         #/
         e_attacker zm_stats::increment_challenge_stat(#"zombie_hunter_kill_packapunch");
         e_attacker zm_stats::function_c0c6ab19(#"hash_5d3dce1c38a95835");
-        e_attacker contracts::increment_zm_contract(#"hash_3178840f53beab88");
+        e_attacker contracts::increment_zm_contract(#"contract_zm_packed_kills");
         w_stat = zm_weapons::get_base_weapon(w_damage);
         e_attacker stats::function_e24eec31(w_damage, #"packedkills", 1);
         e_attacker stats::inc_stat(#"item_stats", w_damage.name, #"packedkills", #"statvalue", 1);
@@ -326,7 +326,7 @@ function death_check_for_challenge_updates(e_attacker) {
             #/
             e_attacker zm_stats::increment_challenge_stat(#"ar_kills");
             e_attacker zm_stats::function_c0c6ab19(#"kills_ar");
-            e_attacker contracts::increment_zm_contract(#"hash_6887bad7ad79485b");
+            e_attacker contracts::increment_zm_contract(#"contract_zm_ar_kills");
             break;
         case #"lmg":
             /#
@@ -334,7 +334,7 @@ function death_check_for_challenge_updates(e_attacker) {
             #/
             e_attacker zm_stats::increment_challenge_stat(#"lmg_kills");
             e_attacker zm_stats::function_c0c6ab19(#"kills_lmg");
-            e_attacker contracts::increment_zm_contract(#"hash_475aacbeb2b4fe0c");
+            e_attacker contracts::increment_zm_contract(#"contract_zm_lmg_kills");
             break;
         case #"pistol":
             /#
@@ -342,7 +342,7 @@ function death_check_for_challenge_updates(e_attacker) {
             #/
             e_attacker zm_stats::increment_challenge_stat(#"pistol_kills");
             e_attacker zm_stats::function_c0c6ab19(#"kills_pistol");
-            e_attacker contracts::increment_zm_contract(#"hash_4d1e895f9313c6b");
+            e_attacker contracts::increment_zm_contract(#"contract_zm_pistol_kills");
             break;
         case #"shotgun":
             e_attacker shotgun_kill();
@@ -353,7 +353,7 @@ function death_check_for_challenge_updates(e_attacker) {
             #/
             e_attacker zm_stats::increment_challenge_stat(#"smg_kills");
             e_attacker zm_stats::function_c0c6ab19(#"kills_smg");
-            e_attacker contracts::increment_zm_contract(#"hash_7dfd3b61c51584fd");
+            e_attacker contracts::increment_zm_contract(#"contract_zm_smg_kills");
             break;
         case #"sniper":
             /#
@@ -361,7 +361,7 @@ function death_check_for_challenge_updates(e_attacker) {
             #/
             e_attacker zm_stats::increment_challenge_stat(#"sniper_kills");
             e_attacker zm_stats::function_c0c6ab19(#"hash_2333d2f2b7271a56");
-            e_attacker contracts::increment_zm_contract(#"hash_b47dacccdb18663");
+            e_attacker contracts::increment_zm_contract(#"contract_zm_sniper_kills");
             break;
         case #"tr":
             /#
@@ -369,7 +369,7 @@ function death_check_for_challenge_updates(e_attacker) {
             #/
             e_attacker zm_stats::increment_challenge_stat(#"tr_kills");
             e_attacker zm_stats::function_c0c6ab19(#"hash_26d8f2fa0846a614");
-            e_attacker contracts::increment_zm_contract(#"hash_4974be997d299342");
+            e_attacker contracts::increment_zm_contract(#"contract_zm_tr_kills");
             break;
         }
     }
@@ -441,7 +441,7 @@ function death_check_for_challenge_updates(e_attacker) {
             e_attacker debug_print("<unknown string>");
         #/
         e_attacker zm_stats::function_c0c6ab19(#"kills_equipment");
-        e_attacker contracts::increment_zm_contract(#"hash_47a744f5c776d978");
+        e_attacker contracts::increment_zm_contract(#"contract_zm_equip_kills");
     }
     if (zm_utility::is_frag_grenade(w_damage)) {
         /#
@@ -483,12 +483,12 @@ function death_check_for_challenge_updates(e_attacker) {
             e_attacker debug_print("<unknown string>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"shield_kills");
-        e_attacker contracts::increment_zm_contract(#"hash_7af98643fc22ffd5");
+        e_attacker contracts::increment_zm_contract(#"contract_zm_shield_kills");
         return;
     }
     if (zm_loadout::is_hero_weapon(w_damage) || zm_hero_weapon::function_6a32b8f(w_damage)) {
         e_attacker zm_stats::function_c0c6ab19(#"kills_special_weapons");
-        e_attacker contracts::increment_zm_contract(#"hash_4f442f95b647960b");
+        e_attacker contracts::increment_zm_contract(#"contract_zm_special_kills");
         e_attacker contracts::function_ac03f21e();
         if (w_damage == getweapon(#"hero_chakram_lv1") || w_damage == getweapon(#"hero_chakram_lv2") || w_damage == getweapon(#"hero_chakram_lv3") || w_damage == getweapon(#"hero_flamethrower_t8_lv1") || w_damage == getweapon(#"hero_flamethrower_t8_lv2") || w_damage == getweapon(#"hero_flamethrower_t8_lv3")) {
             /#
@@ -1056,7 +1056,7 @@ function shotgun_kill() {
     #/
     self zm_stats::increment_challenge_stat(#"shotgun_kills");
     self zm_stats::function_c0c6ab19(#"kills_shotguns");
-    self contracts::increment_zm_contract(#"hash_354e673137b60582");
+    self contracts::increment_zm_contract(#"contract_zm_shotgun_kills");
 }
 
 // Namespace zm_challenges/zm_challenges

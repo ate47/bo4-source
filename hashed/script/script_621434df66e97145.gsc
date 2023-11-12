@@ -233,7 +233,7 @@ function function_a77f3804(e_activator, e_volume) {
     self.marked_for_death = 1;
     if (isdefined(level.s_shower_trap.activated_by_player) && isplayer(level.s_shower_trap.activated_by_player)) {
         level.s_shower_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-        level.s_shower_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+        level.s_shower_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
     }
     self clientfield::set("shower_trap_death_fx", 1);
     level notify(#"hash_336bf8053ce21208", {#e_player:e_activator});
@@ -467,7 +467,7 @@ function function_11e5b2ee(e_activator, e_volume) {
     self.marked_for_death = 1;
     if (isdefined(level.s_fire_trap.activated_by_player) && isplayer(level.s_fire_trap.activated_by_player)) {
         level.s_fire_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-        level.s_fire_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+        level.s_fire_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
     }
     level notify(#"fire_trap_kill", {#e_player:e_activator});
     if (isdefined(self.animname) && self.animname != "zombie_dog") {
@@ -723,7 +723,7 @@ function function_7bd8cfde(e_activator, s_trap) {
     self.marked_for_death = 1;
     if (isdefined(s_trap.activated_by_player) && isplayer(s_trap.activated_by_player)) {
         s_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-        s_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+        s_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
     }
     level notify(#"hash_63be45d89436088", {#e_player:e_activator});
     if (isalive(self) && (!isdefined(self.var_bd4627e1) || !self.var_bd4627e1)) {

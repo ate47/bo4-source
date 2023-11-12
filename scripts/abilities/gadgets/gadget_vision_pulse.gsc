@@ -28,7 +28,7 @@ function init_shared() {
         level.vsmgr_prio_visionset_visionpulse = 61;
     }
     visionset_mgr::register_info("visionset", "vision_pulse", 1, level.vsmgr_prio_visionset_visionpulse, 12, 1, &visionset_mgr::ramp_in_out_thread_per_player_death_shutdown, 0);
-    globallogic_score::function_5a241bd8(level.var_2e3031be, &is_pulsed);
+    globallogic_score::register_kill_callback(level.var_2e3031be, &is_pulsed);
     globallogic_score::function_86f90713(level.var_2e3031be, &is_pulsed);
     level.shutdown_vision_pulse = &shutdown_vision_pulse;
 }

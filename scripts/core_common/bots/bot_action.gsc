@@ -2972,9 +2972,9 @@ function function_412e04fa(node) {
         return;
     }
     noderight = anglestoright(node.angles);
-    rotation = function_9ccb67a3(node) ? 20 : 45;
+    rotation = isfullcovernode(node) ? 20 : 45;
     if (var_208965cf && var_a26a51ba) {
-        if (function_9ccb67a3(node)) {
+        if (isfullcovernode(node)) {
             if (vectordot(noderight, self.origin - node.origin) >= 0) {
                 rotation = rotation * -1;
             }

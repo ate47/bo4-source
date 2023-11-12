@@ -152,7 +152,7 @@ function uninterruptedobitfeedkills(attacker, weapon) {
     wait(0.1);
     if (isdefined(attacker)) {
         processscoreevent(#"uninterrupted_obit_feed_kills", attacker, self, weapon);
-        attacker contracts::increment_contract(#"hash_2e97dac7aef215da");
+        attacker contracts::increment_contract(#"contract_mp_quad_feed");
     }
 }
 

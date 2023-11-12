@@ -44,7 +44,7 @@ function init_shared() {
     } else {
         level.var_c34a20f5 = getscriptbundle("localheal_custom_settings");
     }
-    globallogic_score::function_5a241bd8(weapon, &function_2100fa40);
+    globallogic_score::register_kill_callback(weapon, &function_2100fa40);
     globallogic_score::function_86f90713(weapon, &function_4afb5c9d);
 }
 

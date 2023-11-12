@@ -38,7 +38,7 @@ function grab_bonus_points_player(player) {
     level thread bonus_points_player_powerup(self, player);
     player thread zm_powerups::powerup_vo("bonus");
     if (zm_utility::is_standard()) {
-        player contracts::increment_zm_contract(#"hash_722a0179c583fff8");
+        player contracts::increment_zm_contract(#"contract_zm_rush_powerups");
     }
 }
 

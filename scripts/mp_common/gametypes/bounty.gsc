@@ -635,7 +635,7 @@ function private onplayerkilled(einflictor, attacker, idamage, smeansofdeath, we
     }
     if (isdefined(self) && isdefined(attacker) && isplayer(attacker) && attacker != self && attacker.team != self.team && !self laststand_mp::is_cheating()) {
         scoreevents::processscoreevent(#"eliminated_enemy", attacker, self, weapon);
-        attacker contracts::function_fd9fb79b(#"hash_7ea5ab346a8be398");
+        attacker contracts::function_fd9fb79b(#"contract_mp_eliminations");
         if (var_ff9338bb === 0) {
             attacker stats::function_dad108fa(#"eliminated_final_enemy", 1);
         }

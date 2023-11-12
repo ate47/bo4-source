@@ -104,7 +104,7 @@ function electrocute_actor(ai) {
     if (!isdefined(ai.var_6f84b820)) {
         return;
     }
-    function_6eac4ca1(ai, "electrocute");
+    bhtnactionstartevent(ai, "electrocute");
     ai notify(#"bhtn_action_notify", {#action:"electrocute"});
     if (!isdefined(self.tesla_enemies_hit)) {
         self.tesla_enemies_hit = 1;

@@ -40,12 +40,12 @@ function setup(localclientnum) {
 // Checksum 0xd0180e44, Offset: 0x1e0
 // Size: 0x14c
 function function_78a5c895(localclientnum, menu_data) {
-    forcestreambundle(#"hash_436b9483accb9a63", 8, -1);
+    forcestreambundle(#"cin_black_market_case_avail", 8, -1);
     forcestreambundle(#"cin_black_market_greeting", 8, -1);
     forcestreambundle(#"cin_black_market_in_store", 8, -1);
     forcestreambundle(#"cin_black_market_mult_case", 8, -1);
     forcestreambundle(#"cin_black_market_not_welcome", 8, -1);
-    forcestreambundle(#"hash_2808d911694eca55", 8, -1);
+    forcestreambundle(#"cin_black_market_spec_offer", 8, -1);
     forcestreambundle(#"cin_black_market_welcome", 8, -1);
     level thread function_8aff1931(localclientnum, menu_data);
 }
@@ -253,13 +253,13 @@ function function_fa73161a(localclientnum, menu_data, state) {
                 level.var_cf24a85f.var_82406a05 = #"cin_black_market_greeting";
                 break;
             case #"welcome_case_avail":
-                level.var_cf24a85f.var_82406a05 = #"hash_436b9483accb9a63";
+                level.var_cf24a85f.var_82406a05 = #"cin_black_market_case_avail";
                 break;
             case #"welcome_case_multi":
                 level.var_cf24a85f.var_82406a05 = #"cin_black_market_mult_case";
                 break;
             case #"welcome_case_special":
-                level.var_cf24a85f.var_82406a05 = #"hash_2808d911694eca55";
+                level.var_cf24a85f.var_82406a05 = #"cin_black_market_spec_offer";
                 break;
             }
             var_9e40a851 = scene::function_67e52759(level.var_cf24a85f.var_82406a05, undefined, 0);
@@ -406,12 +406,12 @@ function function_99278be8(localclientnum, menu_data) {
 // Size: 0x10c
 function function_c46c0287(localclientnum, menu_data) {
     function_99278be8(localclientnum, menu_data);
-    function_66b6e720(#"hash_436b9483accb9a63");
+    function_66b6e720(#"cin_black_market_case_avail");
     function_66b6e720(#"cin_black_market_greeting");
     function_66b6e720(#"cin_black_market_in_store");
     function_66b6e720(#"cin_black_market_mult_case");
     function_66b6e720(#"cin_black_market_not_welcome");
-    function_66b6e720(#"hash_2808d911694eca55");
+    function_66b6e720(#"cin_black_market_spec_offer");
     function_66b6e720(#"cin_black_market_welcome");
 }
 

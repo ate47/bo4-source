@@ -254,7 +254,7 @@ function function_47a88a0c(n_to_spawn = 1, var_1fafa3fc, b_force_spawn = 0, var_
                 ai thread [[ var_1fafa3fc ]]();
             }
             ai playsound(#"hash_63299a75a97f9678");
-            function_6eac4ca1(ai, "spawn");
+            bhtnactionstartevent(ai, "spawn");
         }
         function_cd674a85();
     }

@@ -2017,7 +2017,7 @@ function private function_e8decd0b(attacker, weapon, victim, einflictor, smeanso
         }
     }
     if (isdefined(einflictor)) {
-        function_6eac4ca1(einflictor, "attack_kill");
+        bhtnactionstartevent(einflictor, "attack_kill");
         einflictor notify(#"bhtn_action_notify", {#action:"attack_kill"});
     }
 }
@@ -2042,11 +2042,11 @@ function updatekillstreak(einflictor, attacker, weapon) {
                     if (attacker.pers[#"cur_kill_streak"] % 5 == 0) {
                         attacker activecamo::function_896ac347(weapon, #"killstreak_5", 1);
                         attacker contracts::increment_contract(#"hash_4c15367eed618401");
-                        attacker contracts::increment_contract(#"hash_3f1070327daed588");
+                        attacker contracts::increment_contract(#"contract_wl_kills_without_dying");
                     }
                     if (attacker.pers[#"cur_kill_streak"] % 10 == 0) {
                         attacker challenges::killstreakten();
-                        attacker contracts::increment_contract(#"hash_73a8663654fdba0b");
+                        attacker contracts::increment_contract(#"contract_mp_merciless");
                     }
                     if (attacker.pers[#"cur_kill_streak"] <= 30) {
                         scoreevents::processscoreevent(#"killstreak_" + attacker.pers[#"cur_kill_streak"], attacker, self, weapon);

@@ -49,7 +49,7 @@ function init_shared() {
     level.smartcoversettings.var_357db326 = 10000;
     level.smartcoversettings.var_ff1a491d = level.smartcoversettings.bundle.var_76d79155 * level.smartcoversettings.bundle.var_76d79155;
     if (!sessionmodeiswarzonegame()) {
-        globallogic_score::function_5a241bd8(level.smartcoversettings.var_8d86ade8, &function_92112113);
+        globallogic_score::register_kill_callback(level.smartcoversettings.var_8d86ade8, &function_92112113);
         globallogic_score::function_86f90713(level.smartcoversettings.var_8d86ade8, &function_92112113);
     }
     clientfield::register("clientuimodel", "hudItems.smartCoverState", 1, 1, "int");

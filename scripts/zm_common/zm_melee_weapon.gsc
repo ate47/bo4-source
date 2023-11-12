@@ -416,8 +416,8 @@ function melee_weapon_think(weapon, cost, flourish_fn, vo_dialog_id, flourish_we
                         player zm_score::minus_to_player_score(cost);
                         player zm_stats::function_c0c6ab19(#"wallbuys", 1, 1);
                         player zm_stats::function_c0c6ab19(#"weapons_bought", 1, 1);
-                        player contracts::increment_zm_contract(#"hash_4a8bbc38f59c2743", 1, #"zstandard");
-                        player contracts::increment_zm_contract(#"hash_56a15f4e4fa5f4b7", 1, #"zstandard");
+                        player contracts::increment_zm_contract(#"contract_zm_weapons_bought", 1, #"zstandard");
+                        player contracts::increment_zm_contract(#"contract_zm_wallbuys", 1, #"zstandard");
                         player thread give_melee_weapon(vo_dialog_id, flourish_weapon, weapon, flourish_fn, self);
                     } else {
                         zm_utility::play_sound_on_ent("no_purchase");

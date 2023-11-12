@@ -631,7 +631,7 @@ function treasure_chest_think() {
     user zm_daily_challenges::increment_magic_box();
     user zm_stats::function_c0c6ab19(#"boxbuys", 1, 1);
     user zm_stats::function_c0c6ab19(#"weapons_bought", 1, 1);
-    user contracts::increment_zm_contract(#"hash_4a8bbc38f59c2743", 1, #"zstandard");
+    user contracts::increment_zm_contract(#"contract_zm_weapons_bought", 1, #"zstandard");
     if (isplayer(self.chest_user)) {
         self.chest_user util::delay(0, "death", &zm_audio::create_and_play_dialog, #"box", #"interact");
         level notify(#"hash_39b0256c6c9885fc", {#e_player:self.chest_user});
@@ -1621,7 +1621,7 @@ function treasure_chest_weapon_spawn(chest, player, respin) {
                 chest.chest_user notify(#"zm_bgb_unbearable", {#chest:chest});
                 chest waittill(#"forever");
             } else {
-                chest.chest_user contracts::increment_zm_contract(#"hash_5a5fa0b7ecf7bce5");
+                chest.chest_user contracts::increment_zm_contract(#"contract_zm_move_box");
             }
         }
         if (self.script_string === "t8_magicbox") {
@@ -1880,7 +1880,7 @@ function treasure_chest_give_weapon(weapon, var_75c86f89, e_chest) {
         self.var_966bfd1b = 1;
         w_give = self zm_weapons::weapon_give(weapon);
     }
-    self contracts::increment_zm_contract(#"hash_4489902e9dbb55aa", 1, #"zstandard");
+    self contracts::increment_zm_contract(#"contract_zm_magicbox", 1, #"zstandard");
     self callback::callback(#"hash_7d40e25056b9275c", weapon);
 }
 

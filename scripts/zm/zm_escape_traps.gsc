@@ -215,7 +215,7 @@ function function_9c2d463d(t_damage) {
             self dodamage(self.health + 1000, t_damage.origin, undefined, t_damage);
             if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
                 t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                t_damage.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+                t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
             }
         } else {
             if (isdefined(self.var_1adc13ad) && self.var_1adc13ad) {
@@ -236,7 +236,7 @@ function function_9c2d463d(t_damage) {
                 level notify(#"hash_528d7b7f7d6c51a1", {#e_player:t_damage.activated_by_player});
                 if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
                     t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                    t_damage.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+                    t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
                 }
             }
         }
@@ -566,7 +566,7 @@ function function_9699194a(t_damage) {
             self dodamage(self.health + 1000, t_damage.origin, t_damage.activated_by_player, t_damage);
             if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
                 t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                t_damage.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+                t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
             }
         }
     } else {
@@ -587,7 +587,7 @@ function function_9699194a(t_damage) {
             level notify(#"hash_317f58ba0d580c27", {#e_player:t_damage.activated_by_player});
             if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
                 t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                t_damage.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+                t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
             LOC_00000462:
             }
         LOC_00000462:
@@ -823,14 +823,14 @@ function function_1f7e661f(t_damage) {
                 self dodamage(self.health + 1000, self.origin, undefined, t_damage);
                 if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
                     t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                    t_damage.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+                    t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
                 }
             } else if (self.var_6f84b820 === #"popcorn") {
                 level notify(#"hash_148b3ce521088846", {#e_player:t_damage.activated_by_player});
                 self dodamage(self.health + 1000, self.origin, undefined, t_damage);
                 if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
                     t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                    t_damage.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+                    t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
                 }
             } else {
                 self dodamage(self.maxhealth * 0.2, self.origin, undefined, t_damage);

@@ -46,7 +46,7 @@ function __init__() {
     scene::add_scene_func(#"hash_4a8917199f6efb09", &function_cf48a8f2, "play");
     scene::add_scene_func(#"hash_41fada5e44b023a9", &function_86f1ed70, "play");
     scene::add_scene_func(#"hash_c09d814252d9522", &function_8d3078dc, "play");
-    scene::add_scene_func(#"hash_7cc7d9f749a02418", &registeree_command_heart_, "play");
+    scene::add_scene_func(#"hash_7cc7d9f749a02418", &function_a340ee90, "play");
     init_clientfield();
 }
 
@@ -223,7 +223,7 @@ function private function_8d3078dc(a_ents) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x9eda8f36, Offset: 0x1148
 // Size: 0x94
-function private registeree_command_heart_(a_ents) {
+function private function_a340ee90(a_ents) {
     a_ents[#"pap"] thread function_25adf2e0("power_house", #"hash_6d668f3614ed2393");
     a_ents[#"pap"] clientfield::set("" + #"hash_504d26c38b96651c", 1);
 }

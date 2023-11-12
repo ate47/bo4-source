@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 // Size: 0x84
 function __init__() {
     level.var_8e2aec59 = getweapon(#"sig_blade");
-    level.var_38bd298c = getweapon(#"hash_1e061781198bd083");
+    level.var_38bd298c = getweapon(#"sig_blade_projectile");
     ability_player::register_gadget_activation_callbacks(11, &function_a1aa3b85, &function_b0105ee8);
 }
 

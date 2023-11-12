@@ -617,7 +617,7 @@ function electrocute_zombie() {
         if (math::cointoss()) {
             self thread zm_traps::electroctute_death_fx();
         }
-        function_6eac4ca1(self, "electrocute");
+        bhtnactionstartevent(self, "electrocute");
         self notify(#"bhtn_action_notify", {#action:"electrocute"});
         wait(randomfloat(1.25));
         self playsound(#"hash_5183b687ad8d715a");
@@ -773,7 +773,7 @@ function function_2853c44e(e_trap) {
         level notify(#"hash_5e2619172b4487dd", {#n_count:1});
         if (isdefined(level.var_ab11c23d.activated_by_player) && isplayer(level.var_ab11c23d.activated_by_player)) {
             level.var_ab11c23d.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-            level.var_ab11c23d.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+            level.var_ab11c23d.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         }
         self dodamage(20000, e_trap.origin, undefined, e_trap, undefined, "MOD_BURNED", 0, undefined);
     }

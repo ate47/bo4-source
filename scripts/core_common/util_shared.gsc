@@ -4873,7 +4873,7 @@ function register_callback(str_kvp, func, ...) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xdc25dbd2, Offset: 0xe1b8
 // Size: 0x2cc
-function function_c6dbc898(str_name, str_kvp, func) {
+function register_custom_callback(str_name, str_kvp, func) {
     var_ce100229 = hash(str_name);
     var_bcb861f = self.(str_kvp + "_target");
     if (isdefined(var_bcb861f)) {

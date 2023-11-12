@@ -576,7 +576,7 @@ function function_5ad19000(e_trap) {
             level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
             if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
                 e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                e_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+                e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
             }
             self dodamage(20000, e_trap.origin, undefined, e_trap, undefined, "MOD_BURNED", 0, undefined);
         }

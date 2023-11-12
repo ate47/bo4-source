@@ -555,7 +555,7 @@ function dog_death() {
             self delete();
         }
     } else {
-        function_6eac4ca1(self, "death");
+        bhtnactionstartevent(self, "death");
         self notify(#"bhtn_action_notify", {#action:"death"});
     }
 }
@@ -610,7 +610,7 @@ function dog_behind_audio() {
     self thread stop_dog_sound_on_death();
     self endon(#"death");
     self waittill(#"dog_running", #"dog_combat");
-    function_6eac4ca1(self, "close");
+    bhtnactionstartevent(self, "close");
     self notify(#"bhtn_action_notify", {#action:"close"});
     wait(3);
     while (1) {
@@ -619,7 +619,7 @@ function dog_behind_audio() {
             dogangle = angleclamp180(vectortoangles(self.origin - players[i].origin)[1] - players[i].angles[1]);
             if (isalive(players[i]) && !isdefined(players[i].revivetrigger)) {
                 if (abs(dogangle) > 90 && distance2d(self.origin, players[i].origin) > 100) {
-                    function_6eac4ca1(self, "close");
+                    bhtnactionstartevent(self, "close");
                     self notify(#"bhtn_action_notify", {#action:"close"});
                     wait(3);
                 }
@@ -697,7 +697,7 @@ function dog_run_think() {
 function dog_stalk_audio() {
     self endon(#"death", #"dog_running", #"dog_combat");
     while (1) {
-        function_6eac4ca1(self, "ambient");
+        bhtnactionstartevent(self, "ambient");
         self notify(#"bhtn_action_notify", {#action:"ambient"});
         wait(randomfloatrange(3, 6));
     }

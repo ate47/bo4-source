@@ -316,9 +316,9 @@ function private function_51ce850d() {
     self namespace_2e6206f9::register_callback("script_enable_no_specialist", &wave_manager::start);
     self namespace_2e6206f9::register_callback("script_disable_on_success", &wave_manager::stop);
     self namespace_2e6206f9::register_callback("script_disable_on_failure", &wave_manager::stop);
-    self namespace_2e6206f9::function_c6dbc898("breadcrumb", "script_enable_on_success", &function_710cbc75);
-    self namespace_2e6206f9::function_c6dbc898("breadcrumb", "script_enable_on_failure", &function_710cbc75);
-    self namespace_2e6206f9::function_c6dbc898("breadcrumb", "script_enable_no_specialist", &function_710cbc75);
+    self namespace_2e6206f9::register_custom_callback("breadcrumb", "script_enable_on_success", &function_710cbc75);
+    self namespace_2e6206f9::register_custom_callback("breadcrumb", "script_enable_on_failure", &function_710cbc75);
+    self namespace_2e6206f9::register_custom_callback("breadcrumb", "script_enable_no_specialist", &function_710cbc75);
 }
 
 // Namespace wave_manager_sys/wave_manager

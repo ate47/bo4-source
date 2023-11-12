@@ -162,7 +162,7 @@ function trap_damage(t_trap) {
         }
         if (isplayer(t_trap.activated_by_player)) {
             t_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-            t_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+            t_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         }
         self.b_trap_kill = 1;
     } else {

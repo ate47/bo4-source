@@ -1517,7 +1517,7 @@ function function_8fa45bb0() {
         }
         if (var_76ed16d4 >= n_cooldown) {
             var_76ed16d4 = 0;
-            function_6eac4ca1(self, var_83773814);
+            bhtnactionstartevent(self, var_83773814);
         } else {
             var_76ed16d4++;
         }

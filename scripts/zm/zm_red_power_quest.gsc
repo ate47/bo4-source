@@ -1174,7 +1174,7 @@ function pegasus_victim() {
     self thread zm_perk_electric_cherry::electric_cherry_death_fx();
     self clientfield::set("tesla_shock_eyes_fx", 1);
     if (self.archetype == #"zombie") {
-        function_6eac4ca1(self, "electrocute");
+        bhtnactionstartevent(self, "electrocute");
     }
     wait(0.5);
     self ai::clear_stun();

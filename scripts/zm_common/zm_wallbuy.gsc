@@ -677,8 +677,8 @@ function weapon_spawn_think() {
                         player zm_stats::increment_challenge_stat(#"hash_702d98df99af63d5", undefined, 1);
                         player zm_stats::function_c0c6ab19(#"weapons_bought", 1, 1);
                         player zm_stats::function_c0c6ab19(#"wallbuys", 1, 1);
-                        player contracts::increment_zm_contract(#"hash_4a8bbc38f59c2743", 1, #"zstandard");
-                        player contracts::increment_zm_contract(#"hash_56a15f4e4fa5f4b7", 1, #"zstandard");
+                        player contracts::increment_zm_contract(#"contract_zm_weapons_bought", 1, #"zstandard");
+                        player contracts::increment_zm_contract(#"contract_zm_wallbuys", 1, #"zstandard");
                         if (self.weapon.isriotshield) {
                             player zm_equipment::give(self.weapon);
                             if (isdefined(player.player_shield_reset_health)) {
@@ -773,7 +773,7 @@ function weapon_spawn_think() {
                                 player zm_stats::increment_player_stat("ammo_purchased");
                                 player zm_stats::function_8f10788e("boas_ammo_purchased");
                             }
-                            player contracts::increment_zm_contract(#"hash_56a15f4e4fa5f4b7", 1, #"zstandard");
+                            player contracts::increment_zm_contract(#"contract_zm_wallbuys", 1, #"zstandard");
                             player thread zm_audio::create_and_play_dialog(#"ammo", #"buy");
                             player zm_score::minus_to_player_score(ammo_cost);
                             if (isdefined(level.var_db463b5)) {

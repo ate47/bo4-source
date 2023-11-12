@@ -262,7 +262,7 @@ function door_buy() {
             who zm_stats::increment_challenge_stat(#"survivalist_buy_door");
             who zm_stats::function_8f10788e("boas_doors_purchased");
             who zm_stats::function_c0c6ab19(#"doorbuys", 1, 1);
-            who contracts::increment_zm_contract(#"hash_1a937aa7eeb3cde3", 1, #"zstandard");
+            who contracts::increment_zm_contract(#"contract_zm_doors", 1, #"zstandard");
             self.purchaser = who;
             who namespace_e38c57c1::function_c3f3716();
         } else {
@@ -1062,7 +1062,7 @@ function debris_think() {
                 who zm_stats::increment_challenge_stat(#"survivalist_buy_door", undefined, 1);
                 who zm_stats::function_8f10788e("boas_doors_purchased");
                 who zm_stats::function_c0c6ab19(#"doorbuys", 1, 1);
-                who contracts::increment_zm_contract(#"hash_1a937aa7eeb3cde3", 1, #"zstandard");
+                who contracts::increment_zm_contract(#"contract_zm_doors", 1, #"zstandard");
                 who namespace_e38c57c1::function_c3f3716();
             } else {
                 zm_utility::play_sound_at_pos("no_purchase", self.origin);

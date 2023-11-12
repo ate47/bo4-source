@@ -82,8 +82,8 @@ function play_blur_post_fx(localclientnum, oldval, newval, bnewent, binitialsnap
             self postfx::playpostfxbundle("pstfx_speedblur");
         }
         self postfx::function_c8b5f318("pstfx_speedblur", #"blur", 0.05);
-        self postfx::function_c8b5f318("pstfx_speedblur", #"hash_77259d33b3998de9", 0.3);
-        self postfx::function_c8b5f318("pstfx_speedblur", #"hash_1a3ba6e8a0732aac", 0.8);
+        self postfx::function_c8b5f318("pstfx_speedblur", #"inner mask", 0.3);
+        self postfx::function_c8b5f318("pstfx_speedblur", #"outer mask", 0.8);
     } else if (self postfx::function_556665f2("pstfx_speedblur")) {
         self postfx::stoppostfxbundle("pstfx_speedblur");
     }

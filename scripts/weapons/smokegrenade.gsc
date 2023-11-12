@@ -23,7 +23,7 @@ function init_shared() {
     clientfield::register("allplayers", "inenemysmoke", 14000, 1, "int");
     clientfield::register("allplayers", "insmoke", 16000, 2, "int");
     clientfield::register("scriptmover", "smoke_state", 16000, 1, "int");
-    globallogic_score::function_5a241bd8(getweapon(#"eq_smoke"), &function_b4a975f1);
+    globallogic_score::register_kill_callback(getweapon(#"eq_smoke"), &function_b4a975f1);
 }
 
 // Namespace smokegrenade/smokegrenade

@@ -670,11 +670,11 @@ function function_7139078d() {
 // Params 5, eflags: 0x1 linked
 // Checksum 0xfe634efd, Offset: 0x34a8
 // Size: 0x6fa
-function function_bd715920(var_28b40381, attacker, var_87017634, var_d963f0cf, timedelay) {
+function function_bd715920(var_28b40381, attacker, var_87017634, eventobject, timedelay) {
     if (!level.allowspecialistdialog || !isdefined(self) || !isplayer(self)) {
         return;
     }
-    if ((isdefined(self.var_87b1ba00) ? self.var_87b1ba00 : 0) || (isdefined(var_d963f0cf.var_87b1ba00) ? var_d963f0cf.var_87b1ba00 : 0) || !isdefined(var_28b40381)) {
+    if ((isdefined(self.var_87b1ba00) ? self.var_87b1ba00 : 0) || (isdefined(eventobject.var_87b1ba00) ? eventobject.var_87b1ba00 : 0) || !isdefined(var_28b40381)) {
         return;
     }
     switch (var_28b40381.name) {
@@ -721,7 +721,7 @@ function function_bd715920(var_28b40381, attacker, var_87017634, var_d963f0cf, t
     if (isdefined(var_4a247dec) ? var_4a247dec : 0) {
         if (isdefined(attacker) && isplayer(attacker) && !attacker hasperk(#"specialty_quieter")) {
             if (isdefined(var_2f741f8e) ? var_2f741f8e : 0) {
-                var_d963f0cf.var_87b1ba00 = 1;
+                eventobject.var_87b1ba00 = 1;
             } else {
                 self.var_87b1ba00 = 1;
             }
@@ -760,9 +760,9 @@ function function_bd715920(var_28b40381, attacker, var_87017634, var_d963f0cf, t
                 dir = anglestoforward(player getplayerangles());
                 dotproduct = vectordot(relativepos, dir);
                 if (dotproduct > 0) {
-                    if (sighttracepassed(var_87017634, eyepoint, 1, player, var_d963f0cf)) {
+                    if (sighttracepassed(var_87017634, eyepoint, 1, player, eventobject)) {
                         if (isdefined(var_2f741f8e) ? var_2f741f8e : 0) {
-                            var_d963f0cf.var_87b1ba00 = 1;
+                            eventobject.var_87b1ba00 = 1;
                         } else {
                             self.var_87b1ba00 = 1;
                         }
@@ -3447,8 +3447,8 @@ function function_72b65730() {
 // Params 5, eflags: 0x1 linked
 // Checksum 0x47fa3b06, Offset: 0xd548
 // Size: 0x54
-function function_e44c3a3c(weapon, attacker, var_87017634, var_d963f0cf, timedelay) {
-    self function_bd715920(weapon, attacker, var_87017634, var_d963f0cf, timedelay);
+function function_e44c3a3c(weapon, attacker, var_87017634, eventobject, timedelay) {
+    self function_bd715920(weapon, attacker, var_87017634, eventobject, timedelay);
 }
 
 // Namespace battlechatter/battlechatter

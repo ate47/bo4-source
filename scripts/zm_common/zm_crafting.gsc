@@ -1400,7 +1400,7 @@ function private function_df8ce6e2(player) {
         }
         player notify(#"hash_77d44943fb143b18", {#weapon:self.stub.blueprint.var_54a97edd});
         player zm_stats::function_c0c6ab19(#"weapons_bought", 1, 1);
-        player contracts::increment_zm_contract(#"hash_4a8bbc38f59c2743", 1, #"zstandard");
+        player contracts::increment_zm_contract(#"contract_zm_weapons_bought", 1, #"zstandard");
         self.stub.bought = 1;
         self.stub.hint_string = "";
         self.stub.cost = undefined;

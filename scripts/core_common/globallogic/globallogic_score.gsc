@@ -514,7 +514,7 @@ function function_f7f7b14e(data) {
         scoreevents::processscoreevent(var_3d2a11cf.var_3143c814, attacker, victim, weapon);
         victim.var_ad1472a2 = 1;
         attacker stats::function_dad108fa(#"stats_shutdowns", 1);
-        attacker contracts::increment_contract(#"hash_26f8726bc08d080c");
+        attacker contracts::increment_contract(#"contract_mp_shutdown");
     }
     baseweapon = weapons::getbaseweapon(weapon);
     attacker updatemultikill(inflictor, meansofdeath, victim, attacker, function_3cbc4c6c(weapon.var_2e4a8800), weapon, weapon, baseweapon, time);
@@ -538,7 +538,7 @@ function private function_d68ae402(inflictor, meansofdeath, victim, attacker, sc
     if (var_ac4c1 == #"frag_grenade" || var_ac4c1 == #"eq_molotov" || var_ac4c1 == #"hatchet") {
         attacker contracts::increment_contract(#"hash_3ffc3d28289d21bb");
         if (var_ac4c1 == #"eq_molotov") {
-            attacker contracts::increment_contract(#"hash_7aa4c7b37c66fcc1");
+            attacker contracts::increment_contract(#"contract_mp_molotov_kill");
         }
     }
     if (!isdefined(attacker.multikills) || !isdefined(attacker.multikills[var_ac4c1])) {
@@ -780,7 +780,7 @@ function function_1f9441d7(weapon) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc52dfd3f, Offset: 0x38d8
 // Size: 0x4e
-function function_5a241bd8(weapon, callback) {
+function register_kill_callback(weapon, callback) {
     function_1f9441d7(weapon);
     level.specweapons[weapon.name].kill_callback = callback;
 }

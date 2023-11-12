@@ -38,7 +38,7 @@ function __init__() {
     #/
     callback::on_spawned(&on_player_spawned);
     callback::on_finalize_initialization(&function_3675de8b);
-    globallogic_score::function_5a241bd8(level.hawk_settings.weapon, &function_17b75237);
+    globallogic_score::register_kill_callback(level.hawk_settings.weapon, &function_17b75237);
     for (ti = 0; ti < 6; ti++) {
         clientfield::register_luielem("hawk_target_lockon" + ti, "target_visible", 13000, 1, "int", 1);
     }

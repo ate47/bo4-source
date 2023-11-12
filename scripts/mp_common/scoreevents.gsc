@@ -644,7 +644,7 @@ function scoreeventplayerkill(data, time) {
                     attacker challenges::longdistancehatchetkill();
                 }
                 processscoreevent(#"longshot_kill", attacker, victim, weapon);
-                attacker contracts::increment_contract(#"hash_37a6781050049cc4");
+                attacker contracts::increment_contract(#"contract_mp_longshot");
                 attacker.pers[#"longshots"]++;
                 attacker.longshots = attacker.pers[#"longshots"];
                 victim recordkillmodifier("longshot");
@@ -785,7 +785,7 @@ function scoreeventplayerkill(data, time) {
         if (isdefined(data.victim.explosiveinfo[#"projectile_bounced"]) && data.victim.explosiveinfo[#"projectile_bounced"] == 1) {
             level.globalbankshots++;
             processscoreevent(#"bounce_hatchet_kill", attacker, victim, weapon);
-            attacker contracts::increment_contract(#"hash_660f842f7d97edcc");
+            attacker contracts::increment_contract(#"contract_mp_bankshot");
         }
         break;
     case #"supplydrop":
@@ -1041,12 +1041,12 @@ function multikill(killcount, weapon) {
         }
     }
     if (killcount >= 3) {
-        self contracts::increment_contract(#"hash_34056df55815ffbe");
-        self contracts::increment_contract(#"hash_64a10fd107fcf644");
+        self contracts::increment_contract(#"contract_mp_multikill_3_or_better");
+        self contracts::increment_contract(#"contract_wl_multikill_3_or_better");
     }
     if (killcount >= 2) {
-        self contracts::increment_contract(#"hash_586557e86aef88fd");
-        self contracts::increment_contract(#"hash_8c7ac8fa81d9bc3");
+        self contracts::increment_contract(#"contract_mp_multikill_2_or_better");
+        self contracts::increment_contract(#"contract_wl_multikill_2_or_better");
     }
     if (!isdefined(self.pers[#"highestmultikill"])) {
         self.pers[#"highestmultikill"] = 0;
@@ -1335,7 +1335,7 @@ function updatemultikills(weapon, weaponclass, killstreak, victim) {
     if (self.recentkillcount > 1) {
         self multikill(self.recentkillcount, weapon);
         if (self.recentkillcountsameweapon < self.recentkillcount) {
-            self contracts::increment_contract(#"hash_23e14aee63c48afc");
+            self contracts::increment_contract(#"contract_mp_hotswap_multikill");
         }
     }
     if (self.recentkillcountsameweapon > 1) {

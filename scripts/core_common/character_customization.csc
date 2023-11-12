@@ -741,7 +741,7 @@ class class_7da27482 {
     // Checksum 0x699c46a4, Offset: 0x1be8
     // Size: 0xb4
     function function_62dd99d6(model) {
-        render_options = function_aa478513({#outfitoptions:self.var_f5c0467b, #var_34ba1b60:self.var_cfe86a3e, #outfitindex:self.var_cf55444c, #characterindex:self.var_1d73bad9, #mode:self._i_mode});
+        render_options = function_aa478513({#outfitoptions:self.var_f5c0467b, #warpaintoutfitindex:self.var_cfe86a3e, #outfitindex:self.var_cf55444c, #characterindex:self.var_1d73bad9, #mode:self._i_mode});
         model setbodyrenderoptionspacked(render_options);
     }
 

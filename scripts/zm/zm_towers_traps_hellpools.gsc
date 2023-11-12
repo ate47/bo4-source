@@ -393,7 +393,7 @@ function function_db9410fa(e_trap) {
         self.marked_for_death = 1;
         if (isplayer(e_trap.activated_by_player)) {
             e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-            e_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+            e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         }
         if (self.var_6f84b820 == #"miniboss" || self.var_6f84b820 == #"heavy") {
             self.marked_for_death = 0;

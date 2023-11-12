@@ -910,7 +910,7 @@ function in_combat() {
         return 0;
     }
     switch (self.combatstate) {
-    case #"hash_13ae5523119f0e4d":
+    case #"combat_state_aware_of_enemies":
     case #"combat_state_in_combat":
     case #"combat_state_has_visible_enemy":
         return 1;

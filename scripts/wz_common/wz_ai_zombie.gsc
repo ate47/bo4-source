@@ -3511,7 +3511,7 @@ function play_ambient_zombie_vocals() {
             float = 2;
             type = "crawler";
         }
-        function_6eac4ca1(self, type);
+        bhtnactionstartevent(self, type);
         self notify(#"bhtn_action_notify", {#action:type});
         wait(randomfloatrange(1, float));
     }
@@ -3544,7 +3544,7 @@ function function_625a781d() {
             float = 2;
             type = "crawler";
         }
-        function_6eac4ca1(self, type);
+        bhtnactionstartevent(self, type);
         self notify(#"bhtn_action_notify", {#action:type});
         wait(randomfloatrange(1, float));
     }
@@ -3571,7 +3571,7 @@ function function_b8c2c5cc() {
     while (1) {
         self waittill(#"reset_pathing");
         if (self.aistate == 3) {
-            function_6eac4ca1(self, "chase_state_start");
+            bhtnactionstartevent(self, "chase_state_start");
         }
     }
 }
@@ -3586,7 +3586,7 @@ function function_c2be61f2() {
         self waittill(#"state_changed");
         waitframe(1);
         if (self.current_state.name == #"chase") {
-            function_6eac4ca1(self, "chase_state_start");
+            bhtnactionstartevent(self, "chase_state_start");
         }
     }
 }
@@ -3642,7 +3642,7 @@ function function_d1675b11() {
                 if ((yaw < -95 || yaw > 95) && abs(z_diff) < 50) {
                     wait(0.1);
                     if (isdefined(zombs[i]) && isalive(zombs[i])) {
-                        function_6eac4ca1(zombs[i], "behind");
+                        bhtnactionstartevent(zombs[i], "behind");
                         zombs[i] notify(#"bhtn_action_notify", {#action:"behind"});
                         played_sound = 1;
                     }

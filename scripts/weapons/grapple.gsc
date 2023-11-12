@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 function __init__() {
     callback::on_spawned(&function_8fa5ff65);
     ability_player::register_gadget_activation_callbacks(20, undefined, &gadget_grapple_off);
-    globallogic_score::function_5a241bd8(getweapon(#"eq_grapple"), &function_d79e9bb5);
+    globallogic_score::register_kill_callback(getweapon(#"eq_grapple"), &function_d79e9bb5);
     weaponobjects::function_e6400478(#"eq_grapple", &function_422f24cc, 1);
 }
 

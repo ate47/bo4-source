@@ -745,18 +745,18 @@ function function_90185171(totaltimeplayed, credits, casexp) {
                     println("<unknown string>" + player.name + "<unknown string>" + tier_boost);
                 #/
             }
-            var_15a07618 = player stats::function_ff8f4f17(#"hash_46bff228e40d37d7");
-            if (isdefined(var_15a07618) && var_15a07618 > 0) {
-                credits = credits + credits * var_15a07618 / 100;
+            bo_pass_tier_boost = player stats::function_ff8f4f17(#"bo_pass_tier_boost");
+            if (isdefined(bo_pass_tier_boost) && bo_pass_tier_boost > 0) {
+                credits = credits + credits * bo_pass_tier_boost / 100;
                 /#
-                    println("<unknown string>" + player.name + "<unknown string>" + var_15a07618);
+                    println("<unknown string>" + player.name + "<unknown string>" + bo_pass_tier_boost);
                 #/
             }
-            var_1cd516f6 = player stats::function_ff8f4f17(#"hash_2d1bca92ffa133e6");
-            if (isdefined(var_1cd516f6) && var_1cd516f6 > 0) {
-                credits = credits + credits * var_1cd516f6 / 100;
+            bo_pass_party_tier_boost = player stats::function_ff8f4f17(#"bo_pass_party_tier_boost");
+            if (isdefined(bo_pass_party_tier_boost) && bo_pass_party_tier_boost > 0) {
+                credits = credits + credits * bo_pass_party_tier_boost / 100;
                 /#
-                    println("<unknown string>" + player.name + "<unknown string>" + var_1cd516f6);
+                    println("<unknown string>" + player.name + "<unknown string>" + bo_pass_party_tier_boost);
                 #/
             }
             /#
@@ -1857,10 +1857,10 @@ function playerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, shit
             data.victimgadgetpower = victim gadgetpowerget(slot);
         }
     }
-    if (isdefined(victim.var_43c0c1a8) && victim.var_43c0c1a8 || isdefined(victim.var_2118ca55) && victim.var_2118ca55) {
+    if (isdefined(victim.in_enemy_mute_smoke) && victim.in_enemy_mute_smoke || isdefined(victim.var_2118ca55) && victim.var_2118ca55) {
         data.var_ab4f5741 = 1;
     }
-    data.var_504c7a2f = victim.var_43c0c1a8;
+    data.var_504c7a2f = victim.in_enemy_mute_smoke;
     data.var_7006e4f4 = victim.var_fd0be7bd;
     data.var_af1b39cb = victim.lastflashedby;
     data.var_e020b97e = victim isflashbanged();

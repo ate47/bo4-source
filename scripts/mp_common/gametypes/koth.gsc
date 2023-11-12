@@ -626,7 +626,7 @@ function give_capture_credit(touchlist, string, capturetime, capture_team, lastc
             potm::bookmark(#"event", gettime(), player);
             player stats::function_bb7eedf0(#"captures", 1);
             player stats::function_bb7eedf0(#"captures_in_capture_area", 1);
-            player contracts::increment_contract(#"hash_4fa0008b60deaab4");
+            player contracts::increment_contract(#"contract_mp_objective_capture");
         } else {
             /#
                 player iprintlnbold("<unknown string>");

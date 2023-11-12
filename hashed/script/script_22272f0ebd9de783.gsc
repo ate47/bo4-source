@@ -226,7 +226,7 @@ function damage(e_trap) {
         self.marked_for_death = 1;
         if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
             e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-            e_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+            e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         }
         v_away = self.origin - e_trap.origin;
         v_away = vectornormalize((v_away[0], v_away[1], 0)) * 64;

@@ -1453,7 +1453,7 @@ function private function_88d65504(axe, var_7900b267, move_pos) {
                         gibserverutils::gibhead(hit_ent);
                         hit_ent zm_cleanup::function_23621259();
                         hit_ent kill();
-                        function_6eac4ca1(hit_ent, "attack_melee_notetrack");
+                        bhtnactionstartevent(hit_ent, "attack_melee_notetrack");
                     }
                 }
             }

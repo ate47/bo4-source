@@ -780,7 +780,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         return;
     }
     self notify(#"hash_13bc4f053f8da5b0");
-    var_7c2ff516 = "gestable_shocked_reaction";
+    gesturetable = "gestable_shocked_reaction";
     var_84a7f98e = undefined;
     waitduration = 0;
     var_94d99e87 = 0;
@@ -802,7 +802,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         function_1750438e(level.var_9d47488.tunables.var_7553d738, seekermine.arcweapon, seekermine.owner);
         break;
     case 1:
-        var_7c2ff516 = "gestable_shocked_success";
+        gesturetable = "gestable_shocked_success";
         var_84a7f98e = getweapon(#"hash_597ead6ff2ce9284");
         islooping = 0;
         self playsoundtoplayer(#"hash_74864310c6a986a8", self);
@@ -823,7 +823,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         #/
         break;
     case 3:
-        var_7c2ff516 = "gestable_shocked_success";
+        gesturetable = "gestable_shocked_success";
         var_84a7f98e = getweapon(#"hash_597ead6ff2ce9284");
         islooping = 0;
         self playsoundtoplayer(#"hash_74864310c6a986a8", self);
@@ -837,7 +837,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         #/
         break;
     }
-    self thread function_e380fde7(var_84a7f98e, var_7c2ff516, waitduration, islooping, var_94d99e87);
+    self thread function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, var_94d99e87);
     self thread function_24d08109(seekermine, waitduration, var_26b2b1bb, self.var_dda9b735.state);
 }
 
@@ -871,7 +871,7 @@ function function_b6ee86e3(seekermine, var_26b2b1bb) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0xba0ee68a, Offset: 0x3720
 // Size: 0x2e2
-function function_e380fde7(var_84a7f98e, var_7c2ff516, waitduration, islooping, var_94d99e87) {
+function function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, var_94d99e87) {
     self notify("49a0bba57c17e324");
     self endon("49a0bba57c17e324");
     self endon(#"death");
@@ -879,8 +879,8 @@ function function_e380fde7(var_84a7f98e, var_7c2ff516, waitduration, islooping, 
     if (isdefined(var_84a7f98e) && var_84a7f98e == level.weaponnone) {
         var_84a7f98e = undefined;
     }
-    if (isdefined(var_7c2ff516)) {
-        var_8ac35735 = self gestures::function_c77349d4(var_7c2ff516);
+    if (isdefined(gesturetable)) {
+        var_8ac35735 = self gestures::function_c77349d4(gesturetable);
     }
     if (isdefined(self.var_dda9b735.gesture) && (isdefined(var_84a7f98e) || isdefined(var_8ac35735) && var_8ac35735 != self.var_dda9b735.gesture)) {
         self stopgestureviewmodel(self.var_dda9b735.gesture, 50, 1);

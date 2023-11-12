@@ -104,22 +104,22 @@ function contract_kills(data) {
     if (iskillstreak || iskillstreakweapon === 1) {
         switch (weapon.statname) {
         case #"dart":
-            player function_fd9fb79b(#"hash_49548f9cffbc23b1");
+            player function_fd9fb79b(#"contract_mp_dart_kills");
             break;
         case #"ac130":
-            player function_fd9fb79b(#"hash_5ec4310df5255d7c");
+            player function_fd9fb79b(#"contract_mp_gunship_kills");
             break;
         case #"recon_car":
-            player function_fd9fb79b(#"hash_57e191df429b849b");
+            player function_fd9fb79b(#"contract_mp_rcxd_kills");
             break;
         case #"planemortar":
-            player function_fd9fb79b(#"hash_4510de827483df7f");
+            player function_fd9fb79b(#"contract_mp_lightning_strike");
             break;
         case #"remote_missile":
-            player function_fd9fb79b(#"hash_35d3b04e631ba3a4");
+            player function_fd9fb79b(#"contract_mp_hellstorm_kills");
             break;
         case #"ai_tank_marker":
-            player function_fd9fb79b(#"hash_2a79ee2bb63d7c94");
+            player function_fd9fb79b(#"contract_mp_mantis_kills");
             break;
         default:
             break;
@@ -152,7 +152,7 @@ function function_a34653da(weapon) {
 function on_ekia(weapon) {
     player = self;
     if (level.hardcoremode) {
-        player function_fd9fb79b(#"hash_473a8eefc745db7b");
+        player function_fd9fb79b(#"contract_mp_hardcore_ekia");
     }
     var_6b9aa5a0 = undefined;
     weaponclass = util::getweaponclass(weapon);
@@ -204,7 +204,7 @@ function on_ekia(weapon) {
     var_31d860d9 = player function_a34653da(loadout_secondary_weapon);
     if (var_97f022b3 >= 3) {
         if (loadout_primary_weapon === weapon && var_2d9746d0 >= 3) {
-            player function_fd9fb79b(#"hash_1ed264699cc951b");
+            player function_fd9fb79b(#"contract_mp_attachments3_primary_ekia");
         } else if (loadout_secondary_weapon === weapon && var_31d860d9 >= 3) {
             player function_fd9fb79b(#"hash_264228bd931f8deb");
         }
@@ -223,7 +223,7 @@ function on_ekia(weapon) {
 // Checksum 0x506cc28a, Offset: 0xc10
 // Size: 0x24
 function on_objective_ekia() {
-    self increment_contract(#"hash_674ddfad917fa524");
+    self increment_contract(#"contract_mp_objective_ekia");
 }
 
 // Namespace contracts/contracts
@@ -291,11 +291,11 @@ function function_90a854d2(slot) {
             var_38280f2f = #"hash_6a1133003efe7380";
             switch (slot) {
             case 0:
-                return {#var_59cb904f:98, #target_value:100, #var_416a1e35:10011, #var_38280f2f:#"hash_2abfdc6b42b44644"};
+                return {#var_59cb904f:98, #target_value:100, #contract_id:10011, #var_38280f2f:#"contract_mp_headshot"};
             case 1:
-                return {#var_59cb904f:195, #target_value:200, #var_416a1e35:10004, #var_38280f2f:#"hash_2173bc0bfcbdf90f"};
+                return {#var_59cb904f:195, #target_value:200, #contract_id:10004, #var_38280f2f:#"hash_2173bc0bfcbdf90f"};
             case 2:
-                return {#var_59cb904f:48, #target_value:50, #var_416a1e35:10009, #var_38280f2f:#"hash_250c2d8ef2261723"};
+                return {#var_59cb904f:48, #target_value:50, #contract_id:10009, #var_38280f2f:#"hash_250c2d8ef2261723"};
             default:
                 break;
             }
@@ -326,7 +326,7 @@ function function_a4c8ce2a(data) {
 // Checksum 0x4803f46d, Offset: 0x12c8
 // Size: 0x2c
 function contract_win(winner) {
-    winner function_fd9fb79b(#"hash_1832bdb2f1aba003");
+    winner function_fd9fb79b(#"contract_mp_match_wins");
 }
 
 // Namespace contracts/contracts
@@ -338,15 +338,15 @@ function function_c5958b54() {
     switch (level.var_12323003) {
     case #"ball":
     case #"ball_hc":
-        var_c421e6b = #"hash_34477f0475c38164";
+        var_c421e6b = #"contract_mp_play_uplink";
         break;
     case #"bounty":
     case #"bounty_hc":
-        var_c421e6b = #"hash_4985d4f734fdbfce";
+        var_c421e6b = #"contract_mp_play_heist";
         break;
     case #"clean":
     case #"clean_hc":
-        var_c421e6b = #"hash_25c3abc9e09fbf61";
+        var_c421e6b = #"contract_mp_play_stockpile";
         break;
     case #"conf":
     case #"conf_hc":
@@ -354,7 +354,7 @@ function function_c5958b54() {
         break;
     case #"control":
     case #"control_hc":
-        var_c421e6b = #"hash_512615d6a9739dfa";
+        var_c421e6b = #"contract_mp_play_control";
         break;
     case #"ctf":
     case #"ctf_hc":
@@ -362,7 +362,7 @@ function function_c5958b54() {
         break;
     case #"dem_hc":
     case #"dem":
-        var_c421e6b = #"hash_36472e9b2de73d63";
+        var_c421e6b = #"contract_mp_play_demolition";
         break;
     case #"dm_hc":
     case #"dm":
@@ -370,11 +370,11 @@ function function_c5958b54() {
         break;
     case #"dom":
     case #"dom_hc":
-        var_c421e6b = #"hash_33860b3e1663bea9";
+        var_c421e6b = #"contract_mp_play_domination";
         break;
     case #"escort_hc":
     case #"escort":
-        var_c421e6b = #"hash_38fb96360f792879";
+        var_c421e6b = #"contract_mp_play_safeguard";
         break;
     case #"gun":
     case #"gun_hc":
@@ -382,40 +382,40 @@ function function_c5958b54() {
         break;
     case #"infect_hc":
     case #"infect":
-        var_c421e6b = #"hash_53542c30ea90ca02";
+        var_c421e6b = #"contract_mp_play_infection";
         break;
     case #"koth":
     case #"koth_hc":
-        var_c421e6b = #"hash_7e50b569c6374446";
+        var_c421e6b = #"contract_mp_play_hardpoint";
         break;
     case #"prop":
     case #"prop_hc":
-        var_c421e6b = #"hash_6b23bf478e392be0";
+        var_c421e6b = #"contract_mp_play_prop_hunt";
         break;
     case #"sas":
     case #"sas_hc":
-        var_c421e6b = #"hash_4bba29532de87a59";
+        var_c421e6b = #"contract_mp_play_sticks_and_stones";
         break;
     case #"sd":
     case #"sd_hc":
-        var_c421e6b = #"hash_67b25dee32314d8d";
+        var_c421e6b = #"contract_mp_play_search";
         break;
     case #"svz":
     case #"svz_hc":
         var_c421e6b = #"hash_1d7bdd403c90dda6";
         break;
     case #"tdm":
-        var_c421e6b = #"hash_598fa84b33596a56";
+        var_c421e6b = #"contract_mp_play_team_deathmatch";
         break;
     case #"tdm_hc":
-        var_c421e6b = #"hash_d55e7fc2ab89041";
+        var_c421e6b = #"contract_mp_play_hardcore_team_deathmatch";
         break;
     default:
         break;
     }
     if (isdefined(var_c421e6b)) {
         self function_fd9fb79b(var_c421e6b);
-        self function_fd9fb79b(#"hash_20583033219fa6aa");
+        self function_fd9fb79b(#"contract_mp_play_public_match_games");
     }
     if (globallogic_utils::function_308e3379()) {
         self function_fd9fb79b(#"hash_1ffdd36f8bcda97d");
@@ -428,9 +428,9 @@ function function_c5958b54() {
 // Size: 0x54
 function on_headshot_kill() {
     if (level.hardcoremode) {
-        self function_fd9fb79b(#"hash_1246b2a33b8739f4");
+        self function_fd9fb79b(#"contract_mp_headshots_hardcore");
     }
-    self function_fd9fb79b(#"hash_2abfdc6b42b44644");
+    self function_fd9fb79b(#"contract_mp_headshot");
 }
 
 // Namespace contracts/contracts
@@ -558,23 +558,23 @@ function function_50a60581(var_1d89ece6) {
     /#
         var_78a6fb52 = var_1d89ece6 + "<unknown string>";
         var_c8d599b5 = "<unknown string>";
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_1832bdb2f1aba003");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_34477f0475c38164");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_4985d4f734fdbfce");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_match_wins");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_uplink");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_heist");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_2156d88add08f25f");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_42b7ebc5926b0008");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_36472e9b2de73d63");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_demolition");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_5dbf89f59ac323e3");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_33860b3e1663bea9");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_38fb96360f792879");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_domination");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_safeguard");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_f916a0b9718fb8");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_5ddd56ee74eede05");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_7e50b569c6374446");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_6b23bf478e392be0");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_4bba29532de87a59");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_67b25dee32314d8d");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_598fa84b33596a56");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"hash_d55e7fc2ab89041");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_infected");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_hardpoint");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_prop_hunt");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_sticks_and_stones");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_search");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_team_deathmatch");
+        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_hardcore_team_deathmatch");
     #/
 }
 

@@ -204,17 +204,17 @@ function function_7033488b(notifyhash) {
 function function_c2e7fcb4() {
     player = self;
     player endoncallback(&function_7033488b, #"death", #"disconnect");
-    player.var_43c0c1a8 = player clientfield::get("in_enemy_mute_smoke") == 1;
+    player.in_enemy_mute_smoke = player clientfield::get("in_enemy_mute_smoke") == 1;
     player.var_2118ca55 = player clientfield::get("inFriendlyMuteSmoke") == 1;
     wait(randomfloatrange(0.1, 0.6));
     while (1) {
-        var_43c0c1a8 = player function_79583198();
-        if (player.var_43c0c1a8 != var_43c0c1a8) {
-            player clientfield::set("in_enemy_mute_smoke", var_43c0c1a8 ? 1 : 0);
-            player.var_43c0c1a8 = var_43c0c1a8;
+        in_enemy_mute_smoke = player function_79583198();
+        if (player.in_enemy_mute_smoke != in_enemy_mute_smoke) {
+            player clientfield::set("in_enemy_mute_smoke", in_enemy_mute_smoke ? 1 : 0);
+            player.in_enemy_mute_smoke = in_enemy_mute_smoke;
             applicant = isdefined(player.var_5984154e) ? player.var_5984154e.owner : undefined;
-            player thread function_40abb79a(var_43c0c1a8, applicant);
-            if (player.var_43c0c1a8) {
+            player thread function_40abb79a(in_enemy_mute_smoke, applicant);
+            if (player.in_enemy_mute_smoke) {
                 player.var_fd0be7bd = applicant;
             }
         }
@@ -231,14 +231,14 @@ function function_c2e7fcb4() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x51165a9b, Offset: 0xd28
 // Size: 0xf4
-function function_40abb79a(var_43c0c1a8, applicant) {
+function function_40abb79a(in_enemy_mute_smoke, applicant) {
     player = self;
     var_65ce58a2 = #"deaf";
     if (player getplayerresistance(0) > 0) {
         var_65ce58a2 = #"hash_74cdcf6548f09fcd";
     }
     var_56d6af0e = getstatuseffect(var_65ce58a2);
-    if (var_43c0c1a8) {
+    if (in_enemy_mute_smoke) {
         player thread function_41470017(var_56d6af0e, applicant);
     } else {
         player notify(#"hash_2d871144da153bc1");

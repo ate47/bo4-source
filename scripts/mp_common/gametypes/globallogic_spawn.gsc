@@ -752,7 +752,7 @@ function spawnplayer() {
         var_be574bd8 = self function_b568258e();
         outfitindex = self getcharacteroutfit();
         gender = self getplayergendertype();
-        var_34ba1b60 = self function_3d1a97c6();
+        warpaintoutfitindex = self function_3d1a97c6();
         var_8fa79650 = self function_564cfaeb();
         decallootid = self function_e1c06cd0();
         var_b3d9cfaa = self function_11d0e790();
@@ -763,7 +763,7 @@ function spawnplayer() {
             self match_record::set_stat(#"lives", var_f8e6b703, #"character_outfit_lootid", var_be574bd8);
             self match_record::set_stat(#"lives", var_f8e6b703, #"character_warpaint_lootid", var_8fa79650);
             self match_record::set_stat(#"lives", var_f8e6b703, #"character_outfit", outfitindex);
-            self match_record::set_stat(#"lives", var_f8e6b703, #"character_warpaint_outfit", var_34ba1b60);
+            self match_record::set_stat(#"lives", var_f8e6b703, #"character_warpaint_outfit", warpaintoutfitindex);
             for (i = 0; i < var_b3d9cfaa.size; i++) {
                 self match_record::set_stat(#"lives", var_f8e6b703, #"hash_20d6751cb2f9ca09", i, var_b3d9cfaa[i]);
             }

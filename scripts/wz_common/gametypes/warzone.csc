@@ -159,9 +159,9 @@ function function_41f9de03() {
     localclientnum = 0;
     var_65792f8b = map::get_script_bundle();
     var_4e59607a = [];
-    if (isdefined(var_65792f8b) && isdefined(var_65792f8b.var_9350cee1)) {
-        foreach (var_2083855b in var_65792f8b.var_9350cee1) {
-            var_4e59607a[var_2083855b.targetname] = var_2083855b.displayname;
+    if (isdefined(var_65792f8b) && isdefined(var_65792f8b.destinationlabellist)) {
+        foreach (destinationlabel in var_65792f8b.destinationlabellist) {
+            var_4e59607a[destinationlabel.targetname] = destinationlabel.displayname;
         }
     }
     foreach (struct in level.struct) {
@@ -176,7 +176,7 @@ function function_41f9de03() {
     /#
         foreach (destname in var_4e59607a) {
             level.var_909020d0 = (isdefined(level.var_909020d0) ? level.var_909020d0 : 0) + 1;
-            level.var_a1222bd2 = (isdefined(level.var_a1222bd2) ? level.var_a1222bd2 : "<unknown string>") + var_2083855b.targetname + "<unknown string>";
+            level.var_a1222bd2 = (isdefined(level.var_a1222bd2) ? level.var_a1222bd2 : "<unknown string>") + destinationlabel.targetname + "<unknown string>";
         }
         if (isdefined(level.var_909020d0)) {
             println(level.var_909020d0 + "<unknown string>" + level.var_a1222bd2);

@@ -488,7 +488,7 @@ function do_a_taunt() {
     }
     freq = getdvarint(#"zombie_taunt_freq", 0);
     if (freq >= randomint(100)) {
-        function_6eac4ca1(self, "taunt");
+        bhtnactionstartevent(self, "taunt");
         self notify(#"bhtn_action_notify", {#action:"taunt"});
         tauntstate = "zm_taunt";
         if (isdefined(self.first_node.zbarrier) && self.first_node.zbarrier getzbarriertauntanimstate() != "") {
@@ -549,7 +549,7 @@ function should_attack_player_thru_boards() {
     if (isdefined(self.first_node.zbarrier) && self.first_node.zbarrier getzbarrierreachthroughattackanimstate() != "") {
         attackanimstate = self.first_node.zbarrier getzbarrierreachthroughattackanimstate();
     }
-    function_6eac4ca1(self, "attack");
+    bhtnactionstartevent(self, "attack");
     self notify(#"bhtn_action_notify", {#action:"attack"});
     self animscripted("window_melee_anim", self.origin, self.angles, "ai_zombie_window_attack_arm_l_out");
     self window_notetracks("window_melee_anim");
@@ -1305,7 +1305,7 @@ function zombie_death_event(zombie) {
     if (isdefined(zombie.sndname)) {
         name = zombie.sndname;
     }
-    function_6eac4ca1(zombie, "death");
+    bhtnactionstartevent(zombie, "death");
     self notify(#"bhtn_action_notify", {#action:"death"});
     zombie thread zombie_utility::zombie_eye_glow_stop();
     if (isactor(zombie)) {

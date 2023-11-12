@@ -162,7 +162,7 @@ function ai_damage(e_trap) {
         self.var_3e60a85e = 1;
         if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
             e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-            e_trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+            e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
             if (isdefined(e_trap.activated_by_player.var_a8049e3d)) {
                 e_trap.activated_by_player.var_a8049e3d++;
                 e_trap.activated_by_player notify(#"zombie_zapped");
@@ -187,7 +187,7 @@ function ai_damage(e_trap) {
                 self thread zm_traps::electroctute_death_fx();
                 self thread zm_traps::play_elec_vocals();
             }
-            function_6eac4ca1(self, "electrocute");
+            bhtnactionstartevent(self, "electrocute");
             self notify(#"bhtn_action_notify", {#action:"electrocute"});
             wait(randomfloat(1.25));
             self function_a3059f6(e_trap);

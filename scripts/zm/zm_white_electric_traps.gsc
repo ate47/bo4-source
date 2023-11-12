@@ -392,7 +392,7 @@ function electrocute_zombie(e_activator, e_volume) {
         if (randomint(100) > 50) {
             self thread zm_traps::electroctute_death_fx();
         }
-        function_6eac4ca1(self, "electrocute");
+        bhtnactionstartevent(self, "electrocute");
         self notify(#"bhtn_action_notify", {#action:"electrocute"});
         wait(randomfloat(1.25));
         self playsound(#"hash_5183b687ad8d715a");

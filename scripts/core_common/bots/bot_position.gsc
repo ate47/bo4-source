@@ -939,7 +939,7 @@ function function_b33e4e67(center, fillpos, enemy, var_470022ca) {
 // Checksum 0xeffbaafd, Offset: 0x35d0
 // Size: 0x182
 function function_f29e63ea(node) {
-    if (!function_9ccb67a3(node)) {
+    if (!isfullcovernode(node)) {
         return undefined;
     }
     var_208965cf = node.spawnflags & 262144;

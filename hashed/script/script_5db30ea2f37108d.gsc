@@ -144,29 +144,29 @@ function function_1d683667(localclientnum, oldval, newval, bnewent, binitialsnap
     case 1:
         var_90c27c24 = struct::get("s_metal_01", "targetname");
         var_10cdf6db = struct::get(var_90c27c24.target, "targetname");
-        var_c7f2395b = var_10cdf6db.origin - var_90c27c24.origin;
-        var_76803b4f = vectornormalize(var_c7f2395b);
+        force_vector = var_10cdf6db.origin - var_90c27c24.origin;
+        var_76803b4f = vectornormalize(force_vector);
         var_c0d1f7aa = createdynentandlaunch(localclientnum, var_90c27c24.model, var_90c27c24.origin, var_90c27c24.angles, hitoffset, 4 * var_76803b4f);
         break;
     case 2:
         var_90c27c24 = struct::get("s_metal_02", "targetname");
         var_10cdf6db = struct::get(var_90c27c24.target, "targetname");
-        var_c7f2395b = var_10cdf6db.origin - var_90c27c24.origin;
-        var_76803b4f = vectornormalize(var_c7f2395b);
+        force_vector = var_10cdf6db.origin - var_90c27c24.origin;
+        var_76803b4f = vectornormalize(force_vector);
         var_b210da28 = createdynentandlaunch(localclientnum, var_90c27c24.model, var_90c27c24.origin, var_90c27c24.angles, hitoffset, 4 * var_76803b4f);
         break;
     case 3:
         var_90c27c24 = struct::get("s_metal_03", "targetname");
         var_10cdf6db = struct::get(var_90c27c24.target, "targetname");
-        var_c7f2395b = var_10cdf6db.origin - var_90c27c24.origin;
-        var_76803b4f = vectornormalize(var_c7f2395b);
+        force_vector = var_10cdf6db.origin - var_90c27c24.origin;
+        var_76803b4f = vectornormalize(force_vector);
         var_5b63accf = createdynentandlaunch(localclientnum, var_90c27c24.model, var_90c27c24.origin, var_90c27c24.angles, hitoffset, 4 * var_76803b4f);
         break;
     case 4:
         var_90c27c24 = struct::get("s_metal_04", "targetname");
         var_10cdf6db = struct::get(var_90c27c24.target, "targetname");
-        var_c7f2395b = var_10cdf6db.origin - var_90c27c24.origin;
-        var_76803b4f = vectornormalize(var_c7f2395b);
+        force_vector = var_10cdf6db.origin - var_90c27c24.origin;
+        var_76803b4f = vectornormalize(force_vector);
         var_4e9d9343 = createdynentandlaunch(localclientnum, var_90c27c24.model, var_90c27c24.origin, var_90c27c24.angles, hitoffset, 4 * var_76803b4f);
         break;
     }

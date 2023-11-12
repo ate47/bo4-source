@@ -553,7 +553,7 @@ function private function_ac921de9(entity) {
             var_5c2f5f9a[var_5c2f5f9a.size] = player;
         }
     }
-    function_6eac4ca1(entity, "attack_melee");
+    bhtnactionstartevent(entity, "attack_melee");
     registernotice_walla = anglestoforward(entity.angles);
     var_2f706708 = entity gettagorigin("j_spine4");
     var_9b246038 = entity ai::function_9139c839().var_4e8d4c24;

@@ -983,7 +983,7 @@ function function_35d74d73(e_attacker) {
         self clientfield::set("" + #"hash_1b02e77fdbc51a4d", var_21c1ba1 + 1);
         e_attacker clientfield::set("" + #"hash_1efc6bf68f09d02c", 2);
         if (self.var_6f84b820 == #"basic" || self.var_6f84b820 == #"enhanced") {
-            function_6eac4ca1(self, "electrocute");
+            bhtnactionstartevent(self, "electrocute");
         }
     }
     while (e_attacker.var_f1b20bef === self && isalive(self)) {

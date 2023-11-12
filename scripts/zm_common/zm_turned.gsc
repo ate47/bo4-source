@@ -272,7 +272,7 @@ function turned_player_buttons() {
     while (isdefined(self.is_zombie) && self.is_zombie) {
         if (self attackbuttonpressed() || self adsbuttonpressed() || self meleebuttonpressed()) {
             if (math::cointoss()) {
-                function_6eac4ca1(self, "attack");
+                bhtnactionstartevent(self, "attack");
                 self notify(#"bhtn_action_notify", {#action:"attack"});
             }
             while (self attackbuttonpressed() || self adsbuttonpressed() || self meleebuttonpressed()) {
@@ -280,7 +280,7 @@ function turned_player_buttons() {
             }
         }
         if (self usebuttonpressed()) {
-            function_6eac4ca1(self, "taunt");
+            bhtnactionstartevent(self, "taunt");
             self notify(#"bhtn_action_notify", {#action:"taunt"});
             while (self usebuttonpressed()) {
                 waitframe(1);
@@ -288,7 +288,7 @@ function turned_player_buttons() {
         }
         if (self issprinting()) {
             while (self issprinting()) {
-                function_6eac4ca1(self, "sprint");
+                bhtnactionstartevent(self, "sprint");
                 self notify(#"bhtn_action_notify", {#action:"sprint"});
                 waitframe(1);
             }

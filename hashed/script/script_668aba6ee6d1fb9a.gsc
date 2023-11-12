@@ -84,16 +84,16 @@ function function_255e9614(command, key) {
     case #"+actionslot 4":
         function_9024fce3(&actionslotfourbuttonpressed, command);
         break;
-    case #"hash_6fba413807bd1e19":
+    case #"-actionslot 1":
         function_21e5a72f(&actionslotonebuttonpressed, command);
         break;
-    case #"hash_6fba3e3807bd1900":
+    case #"-actionslot 2":
         function_21e5a72f(&actionslottwobuttonpressed, command);
         break;
-    case #"hash_6fba3f3807bd1ab3":
+    case #"-actionslot 3":
         function_21e5a72f(&actionslotthreebuttonpressed, command);
         break;
-    case #"hash_6fba443807bd2332":
+    case #"-actionslot 4":
         function_21e5a72f(&actionslotfourbuttonpressed, command);
         break;
     case #"+stance":

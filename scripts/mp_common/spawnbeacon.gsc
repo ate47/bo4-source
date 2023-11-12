@@ -37,7 +37,7 @@ function __init__() {
     level.var_4b1d905b = &function_4ddddf03;
     level.var_ae2fe442 = &function_b74804ba;
     level.var_a1ca927c = &function_1f5ed165;
-    globallogic_score::function_5a241bd8(level.spawnbeaconsettings.var_c1a364b9, &function_ece8f018);
+    globallogic_score::register_kill_callback(level.spawnbeaconsettings.var_c1a364b9, &function_ece8f018);
     globallogic_score::function_86f90713(level.spawnbeaconsettings.var_c1a364b9, &function_ece8f018);
     globallogic_score::function_82fb1afa(level.spawnbeaconsettings.var_c1a364b9, &function_5bfd1343);
     globallogic_score::function_2b2c09db(level.spawnbeaconsettings.var_c1a364b9, &function_3e8ff788);

@@ -62,16 +62,16 @@ function on_player_connect() {
     self setup_player_contracts(3, &registerpower_grid_displaycontrolrobotmelee);
     self.shlocalh = 0;
     self.var_45ce0c21 = 0;
-    if (self is_contract_active(#"hash_672bb6ed2dd40cab") || isdefined(level.var_b4ef4d73) && level.var_b4ef4d73) {
+    if (self is_contract_active(#"contract_zm_no_pap") || isdefined(level.var_b4ef4d73) && level.var_b4ef4d73) {
         self thread function_677a89c8();
     }
-    if (self is_contract_active(#"hash_7a3b8f92688f1d73") || isdefined(level.var_b4ef4d73) && level.var_b4ef4d73) {
+    if (self is_contract_active(#"contract_zm_perks") || isdefined(level.var_b4ef4d73) && level.var_b4ef4d73) {
         self thread function_30dc9a23();
     }
-    if (self is_contract_active(#"hash_5a030c886808c790") || isdefined(level.var_b4ef4d73) && level.var_b4ef4d73) {
+    if (self is_contract_active(#"contract_zm_same_shield") || isdefined(level.var_b4ef4d73) && level.var_b4ef4d73) {
         self thread function_9d5cd9ee();
     }
-    if (self is_contract_active(#"hash_507eaa1fcb5caa86") || isdefined(level.var_b4ef4d73) && level.var_b4ef4d73) {
+    if (self is_contract_active(#"contract_zm_same_location") || isdefined(level.var_b4ef4d73) && level.var_b4ef4d73) {
         self thread function_51db541e();
     }
 }
@@ -94,14 +94,14 @@ function function_74872db6() {
     if (level.round_number == 20) {
         foreach (e_player in getplayers()) {
             if (!(isdefined(e_player.var_bd1368a8) && e_player.var_bd1368a8)) {
-                e_player increment_zm_contract(#"hash_672bb6ed2dd40cab", 1, #"zstandard");
+                e_player increment_zm_contract(#"contract_zm_no_pap", 1, #"zstandard");
             }
         }
         level notify(#"hash_786860db94bcc0f3");
     }
     if (level.round_number == 30) {
         foreach (e_player in getplayers()) {
-            e_player increment_zm_contract(#"hash_299f40b6488b37df", 1, #"zstandard");
+            e_player increment_zm_contract(#"contract_zm_rounds", 1, #"zstandard");
         }
         callback::function_50fdac80(&function_74872db6);
     }
@@ -114,36 +114,36 @@ function function_74872db6() {
 function on_round_end() {
     switch (level.script) {
     case #"zm_zodt8":
-        var_c5440c34 = #"hash_f680c899a8e4c85";
+        var_c5440c34 = #"contract_zm_zodt8_rounds";
         break;
     case #"zm_towers":
-        var_c5440c34 = #"hash_3b61416d88d5e278";
+        var_c5440c34 = #"contract_zm_towers_rounds";
         break;
     case #"zm_escape":
-        var_c5440c34 = #"hash_14a819778a6fccbb";
+        var_c5440c34 = #"contract_zm_escape_rounds";
         break;
     case #"zm_office":
-        var_c5440c34 = #"hash_1d8d86a4615a816e";
+        var_c5440c34 = #"contract_zm_office_rounds";
         break;
     case #"zm_mansion":
-        var_c5440c34 = #"hash_747a0c756c61f799";
+        var_c5440c34 = #"contract_zm_mansion_rounds";
         break;
     case #"zm_red":
-        var_c5440c34 = #"hash_3574ca7394ce67df";
+        var_c5440c34 = #"contract_zm_red_rounds";
         break;
     case #"zm_white":
-        var_c5440c34 = #"hash_37d3b7cdc643e3ed";
+        var_c5440c34 = #"contract_zm_white_rounds";
         break;
     case #"zm_orange":
-        var_c5440c34 = #"hash_59ad299e60457948";
+        var_c5440c34 = #"contract_zm_orange_rounds";
         break;
     }
     switch (level.var_837aa533) {
     case #"zclassic":
-        var_fc80b645 = #"hash_753c6b07e7f0d102";
+        var_fc80b645 = #"contract_zm_classic_rounds";
         break;
     case #"ztrials":
-        var_fc80b645 = #"hash_2ce85363da5ddf3c";
+        var_fc80b645 = #"contract_zm_gauntlet_rounds";
         if (level flag::get("round_reset")) {
             return;
         }
@@ -290,7 +290,7 @@ function function_dff4c02f() {
 // Checksum 0x6f865aa7, Offset: 0x1008
 // Size: 0x94
 function function_ac03f21e() {
-    if (!can_process_contracts() || !self is_contract_active(#"hash_16a10697c6afa82")) {
+    if (!can_process_contracts() || !self is_contract_active(#"contract_zm_single_special")) {
         return;
     }
     if (self.var_72d6f15d !== 2) {
@@ -298,7 +298,7 @@ function function_ac03f21e() {
     }
     self.var_45ce0c21++;
     if (self.var_45ce0c21 == 25) {
-        self increment_zm_contract(#"hash_16a10697c6afa82");
+        self increment_zm_contract(#"contract_zm_single_special");
     }
 }
 
@@ -340,7 +340,7 @@ function function_30dc9a23() {
             var_c16ab86f = 0;
         }
         if (var_c16ab86f >= 5) {
-            self increment_zm_contract(#"hash_7a3b8f92688f1d73");
+            self increment_zm_contract(#"contract_zm_perks");
             return;
         }
     }
@@ -378,7 +378,7 @@ function function_9d5cd9ee() {
             var_c16ab86f = 0;
         }
         if (var_c16ab86f >= 10) {
-            self increment_zm_contract(#"hash_5a030c886808c790");
+            self increment_zm_contract(#"contract_zm_same_shield");
             return;
         }
     }
@@ -416,7 +416,7 @@ function function_51db541e() {
             var_c16ab86f++;
         }
         if (var_c16ab86f >= 10) {
-            self increment_zm_contract(#"hash_507eaa1fcb5caa86");
+            self increment_zm_contract(#"contract_zm_same_location");
             self notify(#"hash_4bf9f2755fe74a0d");
             return;
         }

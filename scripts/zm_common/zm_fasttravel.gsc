@@ -551,7 +551,7 @@ function function_66d020b0(var_5314bd63, nd_path_start, var_384528, str_notify, 
         self zm_challenges::debug_print("<unknown string>");
     #/
     self zm_stats::increment_challenge_stat(#"fast_travels");
-    self contracts::increment_zm_contract(#"hash_71ed95630568c0a5");
+    self contracts::increment_zm_contract(#"contract_zm_fast_travel");
     if (!(isdefined(self.var_472e3448) && self.var_472e3448)) {
         self stopsounds();
     }

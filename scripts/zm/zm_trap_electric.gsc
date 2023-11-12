@@ -116,7 +116,7 @@ function damage(trap) {
     self.marked_for_death = 1;
     if (isdefined(trap.activated_by_player) && isplayer(trap.activated_by_player)) {
         trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-        trap.activated_by_player contracts::increment_zm_contract(#"hash_1f11b620a6de486b");
+        trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         if (isdefined(trap.activated_by_player.var_a8049e3d)) {
             trap.activated_by_player.var_a8049e3d++;
             trap.activated_by_player notify(#"zombie_zapped");
@@ -143,7 +143,7 @@ function damage(trap) {
             if (randomint(100) > 50) {
                 self thread zm_traps::electroctute_death_fx();
             }
-            function_6eac4ca1(self, "electrocute");
+            bhtnactionstartevent(self, "electrocute");
             self notify(#"bhtn_action_notify", {#action:"electrocute"});
             wait(randomfloat(1.25));
             self playsound(#"hash_5183b687ad8d715a");

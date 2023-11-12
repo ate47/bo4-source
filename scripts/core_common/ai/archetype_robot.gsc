@@ -1312,7 +1312,7 @@ function private robotbecomecrawler(entity) {
     entity allowpitchangle(1);
     entity setpitchorient();
     entity.crawlerlifetime = gettime() + randomintrange(10000, 20000);
-    function_6eac4ca1(entity, "rbCrawler");
+    bhtnactionstartevent(entity, "rbCrawler");
     entity notify(#"bhtn_action_notify", {#action:"rbCrawler"});
 }
 
@@ -2402,7 +2402,7 @@ function private robotdropstartingweapon(entity, asmstatename) {
 function private robotjukeinitialize(entity) {
     aiutility::choosejukedirection(entity);
     entity clearpath();
-    function_6eac4ca1(entity, "rbJuke");
+    bhtnactionstartevent(entity, "rbJuke");
     entity notify(#"bhtn_action_notify", {#action:"rbJuke"});
     jukeinfo = spawnstruct();
     jukeinfo.origin = entity.origin;

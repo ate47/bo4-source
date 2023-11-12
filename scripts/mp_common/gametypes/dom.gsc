@@ -935,7 +935,7 @@ function function_5a9598f0(player, string, lastownerteam, isbflag, neutralizing,
         }
         if (var_af8f6146) {
             player stats::function_dad108fa(#"captures_in_capture_area", 1);
-            player contracts::increment_contract(#"hash_4fa0008b60deaab4");
+            player contracts::increment_contract(#"contract_mp_objective_capture");
         }
     } else {
         /#

@@ -224,7 +224,7 @@ function function_7857357b(tacbundle, params, node) {
         #/
         return 0;
     }
-    if (!function_4d468769(node)) {
+    if (!iscrouchcovernode(node)) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/
@@ -249,7 +249,7 @@ function function_f1b497ec(tacbundle, params, node) {
         #/
         return 0;
     }
-    if (!function_7131ccf7(node)) {
+    if (!isstandcovernode(node)) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/
@@ -275,7 +275,7 @@ function function_41d967fe(tacbundle, params, node) {
         #/
         return 0;
     }
-    if (!function_9ccb67a3(node)) {
+    if (!isfullcovernode(node)) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/
@@ -307,7 +307,7 @@ function function_f71302f4(tacbundle, params, node) {
         #/
         return 0;
     }
-    if (!function_7131ccf7(node)) {
+    if (!isstandcovernode(node)) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/

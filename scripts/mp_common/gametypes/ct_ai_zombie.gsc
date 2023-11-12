@@ -1478,7 +1478,7 @@ function play_ambient_zombie_vocals() {
             float = 2;
             type = "crawler";
         }
-        function_6eac4ca1(self, type);
+        bhtnactionstartevent(self, type);
         self notify(#"bhtn_action_notify", {#action:type});
         wait(randomfloatrange(1, float));
     }
@@ -1505,7 +1505,7 @@ function function_b8c2c5cc() {
     while (1) {
         self waittill(#"reset_pathing");
         if (self.aistate == 3) {
-            function_6eac4ca1(self, "chase_state_start");
+            bhtnactionstartevent(self, "chase_state_start");
         }
     }
 }

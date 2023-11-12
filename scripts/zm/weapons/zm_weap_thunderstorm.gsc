@@ -526,7 +526,7 @@ function function_97429d68(n_player_index) {
     if (!(isdefined(self.var_c6aafbdb) && self.var_c6aafbdb)) {
         self ai::stun();
         if (self.archetype == #"zombie") {
-            function_6eac4ca1(self, "electrocute");
+            bhtnactionstartevent(self, "electrocute");
         }
     }
     self.var_c6aafbdb = 1;

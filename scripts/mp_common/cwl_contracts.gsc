@@ -129,7 +129,7 @@ function on_player_score(new_score, delta_score) {
     target_value = level.var_9d6b3096[gametype].var_9dd75c18;
     if (old_score < target_value) {
         if (new_score >= target_value) {
-            player increment_cwl_contract(#"hash_78214e78d4159f84");
+            player increment_cwl_contract(#"contract_wl_score_per_mode");
         }
     } else {
         var_2c74fba6 = level.var_9d6b3096[gametype].var_9a5a8dcf;
@@ -268,13 +268,13 @@ function function_a4c8ce2a(data) {
     if (!isplayer(player)) {
         return;
     }
-    player increment_cwl_contract(#"hash_5f67f3e8adbeb98a");
+    player increment_cwl_contract(#"contract_wl_play_games");
     team = player.team;
     if (isdefined(level.placement[team]) && player.score > 0) {
         var_414a209b = min(level.placement.size, 3);
         for (i = 0; i < var_414a209b; i++) {
             if (level.placement[team][i] == player) {
-                player increment_contract(#"hash_355152b5a8de61ef");
+                player increment_contract(#"contract_wl_top_3_team");
                 break;
             }
         }
@@ -292,12 +292,12 @@ function function_a4c8ce2a(data) {
 // Checksum 0x4edb9382, Offset: 0x1208
 // Size: 0xe4
 function contract_win(winner) {
-    winner increment_cwl_contract(#"hash_d693aab50d25b96");
+    winner increment_cwl_contract(#"contract_wl_win_games");
     winner increment_cwl_contract(#"hash_2809e14b0f3b4c5e");
     var_15b1abd9 = winner stats::get_stat_global(#"hash_a06075423336d9c");
     if (var_15b1abd9 > 0) {
         if (var_15b1abd9 % 4 == 0) {
-            winner increment_cwl_contract(#"hash_40186850547832f7");
+            winner increment_cwl_contract(#"contract_wl_win_streak_hard");
         }
         if (var_15b1abd9 % 2 == 0) {
             winner increment_cwl_contract(#"hash_4a14b348f01ad76d");

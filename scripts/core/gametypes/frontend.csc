@@ -45,10 +45,10 @@ function function_b7d4bfd9(var_4fa755f8, var_3f0e790b = 0) {
     }
     switch (var_3f0e790b) {
     case 1:
-        return var_4fa755f8.var_98b6faca;
+        return var_4fa755f8.arenalobbyscenes;
     case 0:
     default:
-        return var_4fa755f8.var_2847e9e7;
+        return var_4fa755f8.lobbyscenes;
     }
 }
 
@@ -838,8 +838,8 @@ function function_fb399a61(localclientnum) {
         var_663588d = "<unknown string>";
         var_f4b452be = [0:"<unknown string>", 3:"<unknown string>", 1:"<unknown string>"];
         var_8d6e963c = [7:"<unknown string>", 6:"<unknown string>", 5:"<unknown string>", 4:"<unknown string>", 3:"<unknown string>", 2:"<unknown string>", 0:"<unknown string>"];
-        foreach (mode, var_95ef3a7b in var_f4b452be) {
-            var_82414930 = var_663588d + var_95ef3a7b + "<unknown string>";
+        foreach (mode, display_name in var_f4b452be) {
+            var_82414930 = var_663588d + display_name + "<unknown string>";
             for (index = 0; index < getplayerroletemplatecount(mode); index++) {
                 var_f75a02ea = function_9e72a96(function_b14806c6(index, mode));
                 var_11f96a92 = var_82414930 + var_f75a02ea + "<unknown string>";
@@ -2696,7 +2696,7 @@ function function_837446a8(localclientnum, menu_name, state) {
     default:
         [[ var_d0b01271 ]]->hide_model();
         weapon_model hide();
-        scene = #"hash_3f9ec5e8f3e3c595";
+        scene = #"scene_frontend_quartermaster";
         break;
     }
     if (level.var_c7cd91f5 !== exploder) {

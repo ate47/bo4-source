@@ -364,11 +364,11 @@ function update_players_stats_at_match_end(players) {
             player function_a6efb963("TOTAL_GAMES_PLAYED", 1);
             player function_9288c79b("TOTAL_GAMES_PLAYED", 1);
             if (zm_utility::is_standard() && level.var_5caadd40 > 1) {
-                player contracts::increment_zm_contract(#"hash_64983d80a1a8a0bc");
+                player contracts::increment_zm_contract(#"contract_zm_rush_games");
                 if (player.var_9fc3ee66 === 1) {
                     player function_7bc347f6("RUSH_FIRST_PLACE_FINISHES");
                     player function_f1a1191d("RUSH_FIRST_PLACE_FINISHES");
-                    player contracts::increment_zm_contract(#"hash_2d05bf381b6a45be");
+                    player contracts::increment_zm_contract(#"contract_zm_rush_wins");
                 }
             }
         }

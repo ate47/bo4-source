@@ -427,7 +427,7 @@ function private electrocute_actor(ai_zombie) {
     if (!isdefined(ai_zombie) || !isalive(ai_zombie)) {
         return;
     }
-    function_6eac4ca1(ai_zombie, "electrocute");
+    bhtnactionstartevent(ai_zombie, "electrocute");
     ai_zombie notify(#"bhtn_action_notify", {#action:"electrocute"});
     if (!isdefined(self.tesla_enemies_hit)) {
         self.tesla_enemies_hit = 1;

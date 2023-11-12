@@ -232,8 +232,8 @@ function function_93a4f3c5(localclientnum, draftcharacter, characterselected = 0
             if (isdefined(fields) && isdefined(fields.var_e297151a)) {
                 var_e297151a = fields.var_e297151a;
             }
-        } else if (isdefined(fields) && isdefined(fields.var_2847e9e7) && fields.var_2847e9e7.size > 0) {
-            var_e297151a = fields.var_2847e9e7[var_fb564576 % fields.var_2847e9e7.size].scene;
+        } else if (isdefined(fields) && isdefined(fields.lobbyscenes) && fields.lobbyscenes.size > 0) {
+            var_e297151a = fields.lobbyscenes[var_fb564576 % fields.lobbyscenes.size].scene;
         }
     } else {
         [[ draftcharacter ]]->set_character_index(0);
@@ -252,7 +252,7 @@ function function_93a4f3c5(localclientnum, draftcharacter, characterselected = 0
 // Params 4, eflags: 0x1 linked
 // Checksum 0xd4809778, Offset: 0x10b8
 // Size: 0x74
-function function_71a9fb67(localclientnum, draftcharacter, var_22d83f76, characterselected = 0) {
+function function_71a9fb67(localclientnum, draftcharacter, isvalidxuid, characterselected = 0) {
     if (function_93a4f3c5(localclientnum, draftcharacter, characterselected)) {
         [[ draftcharacter ]]->update([[ draftcharacter ]]->function_82e05d64().params);
     }
@@ -339,8 +339,8 @@ function update_team(localclientnum, characterselected = 0) {
             [[ draftcharacter ]]->function_82e05d64().visible = getuimodelvalue(getuimodel(var_e1881e64, "visible"));
             function_e1f85a64(draftcharacter, i, function_f701ad2a());
             focusedcharacterindex = undefined;
-            var_22d83f76 = xuid != 0;
-            if (var_22d83f76 && function_89e574c(xuid)) {
+            isvalidxuid = xuid != 0;
+            if (isvalidxuid && function_89e574c(xuid)) {
                 var_2a860e73 = getuimodel(getuimodelforcontroller(localclientnum), "PositionDraft.focusedCharacterIndex");
                 if (isdefined(var_2a860e73)) {
                     focusedcharacterindex = getuimodelvalue(var_2a860e73);
@@ -350,7 +350,7 @@ function update_team(localclientnum, characterselected = 0) {
                 }
             }
             [[ draftcharacter ]]->function_82e05d64().focusedcharacterindex = focusedcharacterindex;
-            function_71a9fb67(localclientnum, draftcharacter, var_22d83f76, characterselected);
+            function_71a9fb67(localclientnum, draftcharacter, isvalidxuid, characterselected);
         }
     }
 }

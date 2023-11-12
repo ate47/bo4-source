@@ -31,7 +31,7 @@ function init_shared() {
     level thread register();
     callback::on_spawned(&on_player_spawned);
     weaponobjects::function_e6400478(#"eq_shroud", &function_2fb567f2, 1);
-    globallogic_score::function_5a241bd8(getweapon("eq_shroud"), &function_75f9989a);
+    globallogic_score::register_kill_callback(getweapon("eq_shroud"), &function_75f9989a);
     globallogic_score::function_86f90713(getweapon("eq_shroud"), &function_75f9989a);
     level.var_9bc205c6 = getweapon("eq_shroud");
     if (getgametypesetting(#"competitivesettings") === 1) {

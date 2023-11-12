@@ -474,7 +474,7 @@ function play_ambient_zombie_vocals() {
             type = "sprint";
             float = 3;
         }
-        function_6eac4ca1(self, type);
+        bhtnactionstartevent(self, type);
         self notify(#"bhtn_action_notify", {#action:type});
         wait(randomfloatrange(1.5, float));
     }

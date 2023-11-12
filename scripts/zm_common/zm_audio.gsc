@@ -2641,7 +2641,7 @@ function zmbaivox_playelectrocution() {
             continue;
         }
         if (weapon.name === #"zombie_beast_lightning_dwl" || weapon.name === #"zombie_beast_lightning_dwl2" || weapon.name === #"zombie_beast_lightning_dwl3") {
-            function_6eac4ca1(self, "electrocute");
+            bhtnactionstartevent(self, "electrocute");
             self notify(#"bhtn_action_notify", {#action:"electrocute"});
         }
     }
@@ -2744,7 +2744,7 @@ function zombie_behind_vox() {
                 if ((yaw < -95 || yaw > 95) && abs(z_diff) < 50) {
                     wait(0.1);
                     if (isdefined(zombs[i]) && isalive(zombs[i])) {
-                        function_6eac4ca1(zombs[i], "behind");
+                        bhtnactionstartevent(zombs[i], "behind");
                         zombs[i] notify(#"bhtn_action_notify", {#action:"behind"});
                         played_sound = 1;
                     }
@@ -2789,7 +2789,7 @@ function play_ambient_zombie_vocals() {
             float = 2;
             type = "crawler";
         }
-        function_6eac4ca1(self, type);
+        bhtnactionstartevent(self, type);
         self notify(#"bhtn_action_notify", {#action:type});
         wait(randomfloatrange(1, float));
     }

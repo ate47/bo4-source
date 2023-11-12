@@ -31,7 +31,7 @@ function init_shared() {
     level thread register();
     callback::on_spawned(&on_player_spawned);
     weaponobjects::function_e6400478(#"eq_sensor", &function_eb12ff13, 1);
-    globallogic_score::function_5a241bd8(getweapon("eq_sensor"), &function_4d8676af);
+    globallogic_score::register_kill_callback(getweapon("eq_sensor"), &function_4d8676af);
     globallogic_score::function_86f90713(getweapon("eq_sensor"), &function_4d8676af);
     level.var_1f151eb = getweapon("eq_sensor");
     if (getgametypesetting(#"competitivesettings") === 1) {

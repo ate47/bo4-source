@@ -1408,9 +1408,9 @@ function player_killed(einflictor, attacker, idamage, smeansofdeath, weapon, vdi
         }
     }
     if (isplayer(attacker) && self function_c14ef1aa(attacker)) {
-        var_27a8d662 = self getxuid(1) + attacker getxuid(1);
-        self function_b096092b(var_27a8d662);
-        attacker function_b096092b(var_27a8d662);
+        encounterid = self getxuid(1) + attacker getxuid(1);
+        self function_b096092b(encounterid);
+        attacker function_b096092b(encounterid);
     }
     if (!isdefined(killstreaks::get_killstreak_for_weapon(weapon)) || isdefined(level.killstreaksgivegamescore) && level.killstreaksgivegamescore) {
         attacker globallogic_score::giveteamscoreforobjective(attacker.team, level.teamscoreperkill);

@@ -471,7 +471,7 @@ function private function_e17d407e(transition, outcome) {
         if (i == 0) {
             player_positions[i] thread scene::play(fields.var_fa8365dc[0].scene, player);
         } else {
-            player_positions[i] thread scene::play(fields.var_728ccd3d[0].scene, player);
+            player_positions[i] thread scene::play(fields.heroicposes[0].scene, player);
         }
     }
     var_5a552ef6 thread scene::play("team_pose_cam");
