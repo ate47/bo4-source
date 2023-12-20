@@ -61,8 +61,8 @@ function main() {
         t_pap_rock_damage delete();
     }
     level.t_pap_rock_damage.var_5d8f658e = getent(level.t_pap_rock_damage.target, "targetname");
-    zm_sq::register(#"pap_rock", #"step_1", #"hash_57c2f2030917f2e4", &function_f279da41, &function_45f8440b);
-    zm_sq::register(#"pap_rock", #"step_2", #"hash_57c2f5030917f7fd", &function_b70e1954, &function_21b093ce);
+    zm_sq::register(#"pap_rock", #"step_1", #"pap_rock_step1", &pap_rock_step1_setup, &pap_rock_step1_cleanup);
+    zm_sq::register(#"pap_rock", #"step_2", #"pap_rock_step2", &pap_rock_step2_setup, &pap_rock_step2_cleanup);
     zm_sq::start(#"pap_rock", !zm_utility::is_standard());
     zm_orange_pablo::register_drop_off(11, #"hash_1e1bf447950e7c92", #"hash_611a8728e3043a26", &function_f001370f);
     while (!isdefined(level.var_f7c50c66)) {
@@ -481,7 +481,7 @@ function function_2401694f() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa84a4e9a, Offset: 0x2040
 // Size: 0xbc
-function function_f279da41(var_5ea5c94d) {
+function pap_rock_step1_setup(var_5ea5c94d) {
     /#
         iprintlnbold("<unknown string>");
     #/
@@ -497,7 +497,7 @@ function function_f279da41(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x9570f0c0, Offset: 0x2108
 // Size: 0xe4
-function function_45f8440b(var_5ea5c94d, ended_early) {
+function pap_rock_step1_cleanup(var_5ea5c94d, ended_early) {
     /#
         iprintlnbold("<unknown string>");
     #/
@@ -515,7 +515,7 @@ function function_45f8440b(var_5ea5c94d, ended_early) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x8002a736, Offset: 0x21f8
 // Size: 0x6c
-function function_b70e1954(var_5ea5c94d) {
+function pap_rock_step2_setup(var_5ea5c94d) {
     /#
         iprintlnbold("<unknown string>");
     #/
@@ -529,7 +529,7 @@ function function_b70e1954(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xe2556767, Offset: 0x2270
 // Size: 0x25c
-function function_21b093ce(var_5ea5c94d, ended_early) {
+function pap_rock_step2_cleanup(var_5ea5c94d, ended_early) {
     /#
         iprintlnbold("<unknown string>");
     #/

@@ -101,8 +101,8 @@ function init_quest() {
     }
     level.mannequin_ally_spawner = getent("mannequin_ally_spawner", "targetname");
     level.var_777acf92 = level.mannequin_ally_spawner;
-    zm_sq::register(#"private_mannequin_program", #"step_1", #"hash_5c83380ff7db3131", &function_cff5f83, &function_aceec77a);
-    zm_sq::register(#"private_mannequin_program", #"step_2", #"hash_5c83350ff7db2c18", &function_20c4e844, &function_9101a54d);
+    zm_sq::register(#"private_mannequin_program", #"step_1", #"private_mannequin_step1", &private_mannequin_step1_setup, &private_mannequin_step1_cleanup);
+    zm_sq::register(#"private_mannequin_program", #"step_2", #"private_mannequin_step2", &private_mannequin_step2_setup, &private_mannequin_step2_cleanup);
     zm_sq::start(#"private_mannequin_program");
 }
 
@@ -143,7 +143,7 @@ function delete_entities() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xab4778c3, Offset: 0xd88
 // Size: 0x3fc
-function function_cff5f83(var_5ea5c94d) {
+function private_mannequin_step1_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         while (!flag::get(#"hash_130656ec8ad5480d")) {
             level flag::wait_till(#"hash_3ee874ebee843004");
@@ -202,7 +202,7 @@ function function_cff5f83(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xb5300f80, Offset: 0x1190
 // Size: 0xa4
-function function_aceec77a(var_5ea5c94d, ended_early) {
+function private_mannequin_step1_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         level flag::set(#"hash_3ee874ebee843004");
         level flag::set(#"hash_315d0bf1d50724f0");
@@ -339,7 +339,7 @@ function visit_prototype_minigun() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xd0191f98, Offset: 0x1a18
 // Size: 0x4c
-function function_20c4e844(var_5ea5c94d) {
+function private_mannequin_step2_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         level thread function_88265619();
         level flag::wait_till(#"hash_6202f3e00d7008b0");
@@ -350,7 +350,7 @@ function function_20c4e844(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x7d598be7, Offset: 0x1a70
 // Size: 0x4c
-function function_9101a54d(var_5ea5c94d, ended_early) {
+function private_mannequin_step2_cleanup(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         if (!isdefined(level.var_f5746584)) {
             level thread function_88265619();

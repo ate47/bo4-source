@@ -1148,8 +1148,8 @@ function function_45822b7e() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xca8ce145, Offset: 0x5440
 // Size: 0x25a
-function function_a3442c46(var_740c2874) {
-    switch (var_740c2874) {
+function function_a3442c46(s_stage) {
+    switch (s_stage) {
     case #"0":
         level.var_cb1cac73 hidepart("tag_lights");
         level.var_cb1cac73 hidepart("tag_stage_01");
