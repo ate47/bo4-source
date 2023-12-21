@@ -770,7 +770,7 @@ function function_24de8afe(var_e8c2fadd, owner) {
 function private function_b5e16bd7(swat_gunner) {
     self endon(#"death");
     while (1) {
-        swat_gunner animation::play(#"hash_672583eed187c6a7", self.origin, self.angles);
+        swat_gunner animation::play(#"ai_crew_macv_driver_idle", self.origin, self.angles);
     }
 }
 

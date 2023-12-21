@@ -1714,7 +1714,7 @@ function function_ff4485b6(a_ents, mdl_key, var_3128fb28) {
                 mdl_key = util::spawn_model(array::random(array(#"hash_2fa3430bd92ec805", #"hash_3d81fa5687d50740", #"hash_28f791b6dd2cda67")));
             }
             if (!isdefined(var_3128fb28)) {
-                var_3128fb28 = util::spawn_model(array::random(array(#"p8_zm_man_pap_gazing_stone_01_full", #"hash_7e08d4df1f3ead6", #"p8_zm_man_pap_gazing_stone_03_full")));
+                var_3128fb28 = util::spawn_model(array::random(array(#"p8_zm_man_pap_gazing_stone_01_full", #"p8_zm_man_pap_gazing_stone_02_full", #"p8_zm_man_pap_gazing_stone_03_full")));
             }
         }
         if (getdvarint(#"hash_3c4df2fe4b1618d5", 0)) {
@@ -1774,7 +1774,7 @@ function function_ff4485b6(a_ents, mdl_key, var_3128fb28) {
     case #"p8_zm_man_pap_gazing_stone_01_full":
         n_value = 1;
         break;
-    case #"hash_7e08d4df1f3ead6":
+    case #"p8_zm_man_pap_gazing_stone_02_full":
         n_value = 2;
         break;
     default:
@@ -3039,7 +3039,7 @@ function function_224d642(var_e62bb9d2) {
     case #"p8_zm_man_pap_gazing_stone_01_full":
         n_value = 1;
         break;
-    case #"hash_7e08d4df1f3ead6":
+    case #"p8_zm_man_pap_gazing_stone_02_full":
         n_value = 2;
         break;
     default:

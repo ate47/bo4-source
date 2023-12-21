@@ -362,9 +362,9 @@ class class_7da27482 {
     // Size: 0x64
     function function_8144231c() {
         if (!self.var_c31e86ed && #"female" === getherogender(self.var_1d73bad9, self._i_mode)) {
-            return #"hash_26d5282647da1123";
+            return #"pb_fem_frontend_default";
         } else {
-            return #"hash_4157b71749071ad4";
+            return #"pb_male_frontend_default";
         }
     }
 
@@ -1039,9 +1039,9 @@ class class_7da27482 {
     function get_gesture(gesture_index) {
         if (gesture_index == -1) {
             if (#"female" === getherogender(self.var_1d73bad9, self._i_mode)) {
-                return {#animation:#"hash_108a8b0f7d2f377d"};
+                return {#animation:#"pb_rifle_fem_stand_spray_fb"};
             } else {
-                return {#animation:#"hash_233be4ac797ac20"};
+                return {#animation:#"pb_rifle_male_stand_spray_fb"};
             }
         }
         return function_2a6a2af(self.var_1d73bad9, self._i_mode, gesture_index);

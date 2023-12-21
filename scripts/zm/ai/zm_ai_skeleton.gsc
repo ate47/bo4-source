@@ -307,9 +307,9 @@ function private function_42a1dabd() {
     self solid();
     if (isdefined(self)) {
         var_ee3cfcfe scene::stop(var_67f0b3a6);
-        var_cee6fc30 = #"hash_1b005efa66b0793c";
+        var_cee6fc30 = #"ai_t8_zm_red_spar_swrd_rebuild_01";
         if (self.var_9fde8624 == #"skeleton_spear" || self.var_9fde8624 == #"hash_1520c8987a671df0") {
-            var_cee6fc30 = #"hash_39b0f562c80e3bb7";
+            var_cee6fc30 = #"ai_t8_zm_red_spar_spear_rebuild_01";
         }
         var_93a62fe = zm_utility::get_closest_valid_player(self.origin, self.ignore_player);
         if (isdefined(var_93a62fe)) {

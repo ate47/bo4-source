@@ -49,7 +49,7 @@ function function_9fc8cc9c(localclientnum) {
                 var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_staminup");
                 continue;
             case 1:
-                var_dcf4ea85 setmodel(#"hash_f19d451775e86");
+                var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_bandolierbandit");
                 continue;
             case 2:
                 var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_timeslip");

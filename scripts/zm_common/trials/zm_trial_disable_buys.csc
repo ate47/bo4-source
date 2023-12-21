@@ -32,7 +32,7 @@ function __init__() {
     forcestreamxmodel(#"p8_zm_wall_buy_shotgun_pump");
     forcestreamxmodel(#"p8_zm_wall_buy_shotgun_trenchgun");
     forcestreamxmodel(#"p8_zm_wall_buy_smg_accurate");
-    forcestreamxmodel(#"hash_5434d478b48918e");
+    forcestreamxmodel(#"p8_zm_wall_buy_smg_mp9");
     forcestreamxmodel(#"p8_zm_wall_buy_smg_drum_pistol");
     forcestreamxmodel(#"p8_zm_wall_buy_smg_fastfire");
     forcestreamxmodel(#"p8_zm_wall_buy_smg_handling");

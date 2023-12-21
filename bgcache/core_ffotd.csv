@@ -1,6 +1,6 @@
 type,name,ptr
-model,p7_mou_clock_wall_hour_hand,2a886c6d9e8
-model,p7_mou_clock_wall_minute_hand,2a886c6db38
-model,p7_mou_clock_wall_second_hand,2a886c6dc88
-model,p7_mou_clock_wall,2a886c6ddd8
-model,p8_screen_tactical_artic_01,2a886c6df28
+model,p7_mou_clock_wall_hour_hand,294cb78d9e8
+model,p7_mou_clock_wall_minute_hand,294cb78db38
+model,p7_mou_clock_wall_second_hand,294cb78dc88
+model,p7_mou_clock_wall,294cb78ddd8
+model,p8_screen_tactical_artic_01,294cb78df28

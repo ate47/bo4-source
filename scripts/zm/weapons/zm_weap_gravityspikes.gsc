@@ -848,7 +848,7 @@ function private gravity_spike_planted_play() {
     self endon(#"death");
     wait(2);
     self useanimtree("generic");
-    self animation::play(#"hash_15fe5de681713cc5", self, undefined, 1, 0, 0, 0, 0, 0, 0, undefined, undefined);
+    self animation::play(#"o_spikes_stand_plant", self, undefined, 1, 0, 0, 0, 0, 0, 0, undefined, undefined);
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes

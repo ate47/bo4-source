@@ -244,7 +244,7 @@ function function_828749d4(localclientnum, oldval, newval, bnewent, binitialsnap
             case #"p8_zm_man_pap_gazing_stone_01_full":
                 str_effect = level._effect[#"hash_59f382e0eb4cd8ae"];
                 break;
-            case #"hash_7e08d4df1f3ead6":
+            case #"p8_zm_man_pap_gazing_stone_02_full":
                 str_effect = level._effect[#"hash_2e59763a88bb2bd4"];
                 break;
             case #"p8_zm_man_pap_gazing_stone_03_full":
@@ -276,7 +276,7 @@ function function_9d797e21(localclientnum, oldval, newval, bnewent, binitialsnap
             case #"p8_zm_man_pap_gazing_stone_01_full":
                 str_effect = level._effect[#"hash_229bf68ca0edaadb"];
                 break;
-            case #"hash_7e08d4df1f3ead6":
+            case #"p8_zm_man_pap_gazing_stone_02_full":
                 str_effect = level._effect[#"hash_5dfd7f47fc0123ad"];
                 break;
             case #"p8_zm_man_pap_gazing_stone_03_full":
@@ -296,7 +296,7 @@ function function_9d797e21(localclientnum, oldval, newval, bnewent, binitialsnap
         case #"p8_zm_man_pap_gazing_stone_01_full":
             str_effect = level._effect[#"hash_82b00d6eafcaeb2"];
             break;
-        case #"hash_7e08d4df1f3ead6":
+        case #"p8_zm_man_pap_gazing_stone_02_full":
             str_effect = level._effect[#"hash_38b6a9869169d0e4"];
             break;
         case #"p8_zm_man_pap_gazing_stone_03_full":

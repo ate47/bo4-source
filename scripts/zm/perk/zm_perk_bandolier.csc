@@ -30,7 +30,7 @@ function function_27473e44() {
     zm_perks::register_perk_clientfields(#"specialty_extraammo", &function_12161a30, &function_b10a7225);
     zm_perks::register_perk_effects(#"specialty_extraammo", "sleight_light");
     zm_perks::register_perk_init_thread(#"specialty_extraammo", &init_perk);
-    zm_perks::function_b60f4a9f(#"specialty_extraammo", #"hash_f19d451775e86", "zombie/fx8_perk_altar_symbol_ambient_bandolier", #"zmperksbandolier");
+    zm_perks::function_b60f4a9f(#"specialty_extraammo", #"p8_zm_vapor_altar_icon_01_bandolierbandit", "zombie/fx8_perk_altar_symbol_ambient_bandolier", #"zmperksbandolier");
 }
 
 // Namespace zm_perk_bandolier/zm_perk_bandolier
