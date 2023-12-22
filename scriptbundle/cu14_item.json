@@ -1,0 +1,42 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_557fcae30c3873c7",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_582e7d699910538e",
+                    "teamsize": 4
+                },
+                {
+                    "description": "#hash_695aefb1afbb4b58",
+                    "teamsize": 1
+                }
+            ],
+            "description": "#hash_695aefb1afbb4b58",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_695af2b1afbb5071"
+        }
+    ],
+    "description": "#hash_76fcfde15697b302",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_11329de6f6804241",
+    "model": "#hash_b567efbbedcbcce",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_6bd8bb04c57868ff",
+    "unlockableitemref": "#hash_16b4930312b8b5ca",
+    "name": "cu14_item",
+    "displayname": "#hash_6bd8bb04c57868ff",
+    "icon": "#hash_3c4c816bd655c1f8",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#zombie/shaw",
+    "pickupicon": "#hash_3c4c816bd655c1f8",
+    "itemtype": "quest"
+}

@@ -1,0 +1,116 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25f5485149d27c76",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_71b9a1e4979cee19",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c217e19fb2cbdc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c380a8b2d15f17d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "finish"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1c49cb51212581c5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "close"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_1da70d4c75c9976c",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_39aa95f613dc2f43",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2dcfaee5af6612d0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3963518cfe95563b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7e75f2f6bd2fd76c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "finish"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_283cb033c96dcd10",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "close"
+                }
+            ],
+            "model": "#hash_2415e81880582ab9",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_mansion_prima_machine_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

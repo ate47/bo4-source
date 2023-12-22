@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#hash_40c1141b2e976981",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "sniper_fastrechamber_restriction",
+    "displayname": "#weapon/sniper_fastrechamber_t8",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__sniper_fastrechamber_t8__restricted"
+}

@@ -1,0 +1,24 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_operator_mod_weapons",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_specialist_weapons",
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "supply_drop_operator_or_specialist",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

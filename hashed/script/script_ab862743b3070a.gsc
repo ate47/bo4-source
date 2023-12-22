@@ -65,7 +65,7 @@ function __init__() {
 // Checksum 0x9ee88c84, Offset: 0x610
 // Size: 0xbc
 function dog_enable_rounds(b_ignore_cleanup = 1) {
-    if (!zm_custom::function_901b751c(#"hash_4deb3ae7a73c87f3") || isdefined(level.var_15747fb1) && level.var_15747fb1) {
+    if (!zm_custom::function_901b751c(#"zmspecialroundsenabled") || isdefined(level.var_15747fb1) && level.var_15747fb1) {
         return;
     }
     level.var_a3f67fc2 = 1;

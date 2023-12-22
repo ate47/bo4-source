@@ -1,0 +1,58 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "pistol_grip_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "foregrip_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "extmag_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "fastmag_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "tritium_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "reflex_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "holo_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "laser_sight_wz_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 8,
+    "var_9b009839": -1,
+    "name": "attachment_list_low",
+    "var_fde72c94": 100
+}

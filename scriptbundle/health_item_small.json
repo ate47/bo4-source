@@ -1,0 +1,17 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "model": "#p7_medical_gauze_roll_sealed",
+    "weapon": <error reading:hash_5bc82db27bb51d8e>,
+    "type": "itemspawnentry",
+    "name": "health_item_small",
+    "stackcount": 10,
+    "icon": "#hash_77b5b87e980767c",
+    "modelscale": 1,
+    "rarity": "Common",
+    "handler": "#hash_51b30f6e7331e136",
+    "pickupicon": "#hash_77b5b87e980767c",
+    "stackable": 1,
+    "itemtype": "health",
+    "pickupsound": "fly_pickup_health_small"
+}

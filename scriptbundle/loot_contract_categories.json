@@ -1,0 +1,124 @@
+{
+    "categories": [
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_29ec4c8d09e45746"
+                },
+                {
+                    "var_b7f6a56": "#hash_29ec4c8d09e45746"
+                },
+                {
+                    "var_b7f6a56": "#hash_2a37648d0a246b88"
+                },
+                {
+                    "var_b7f6a56": "#hash_2a12498d0a05216a"
+                },
+                {
+                    "var_b7f6a56": "#hash_2a375a8d0a245a8a"
+                }
+            ],
+            "categoryname": "#play"
+        },
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_2f564387625b802"
+                },
+                {
+                    "var_b7f6a56": "#hash_745a121174bf46e2"
+                }
+            ],
+            "categoryname": "#combat"
+        },
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_2a06d8f351902716"
+                },
+                {
+                    "var_b7f6a56": "#hash_38b2b1613b63fede"
+                }
+            ],
+            "categoryname": "#equipment"
+        },
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_5ccb7f967c47f2e7"
+                },
+                {
+                    "var_b7f6a56": "#hash_3cc0505716edeaf5"
+                }
+            ],
+            "categoryname": "#scorestreak"
+        },
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_7052669fc2e9c361"
+                },
+                {
+                    "var_b7f6a56": "#hash_657aa4d267d09453"
+                }
+            ],
+            "categoryname": "#objective"
+        },
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_5d5c2be5de75ea08"
+                },
+                {
+                    "var_b7f6a56": "#hash_329b5502840506c"
+                }
+            ],
+            "categoryname": "#specialist"
+        },
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_1ab8019de1534d28"
+                },
+                {
+                    "var_b7f6a56": "#hash_6234adb7edef38cc"
+                }
+            ],
+            "categoryname": "#victory"
+        },
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_544cd3704007970f"
+                },
+                {
+                    "var_b7f6a56": "#hash_42dfe9676f3b09ed"
+                }
+            ],
+            "categoryname": "#exploration"
+        },
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_7052669fc2e9c361"
+                },
+                {
+                    "var_b7f6a56": "#hash_657aa4d267d09453"
+                }
+            ],
+            "categoryname": "#milestone"
+        },
+        {
+            "icons": [
+                {
+                    "var_b7f6a56": "#hash_3b7407a43279da8d"
+                },
+                {
+                    "var_b7f6a56": "#hash_6ce6ab845d3edfd7"
+                }
+            ],
+            "categoryname": "#support"
+        }
+    ],
+    "name": "loot_contract_categories"
+}

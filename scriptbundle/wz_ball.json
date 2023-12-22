@@ -1,0 +1,19 @@
+{
+    "amount": 1,
+    "description": "#hash_63af85b59aab95a2",
+    "var_922067c4": "scriptbundle",
+    "model": "#p7_fir_ball_sports_basketball",
+    "weapon": <error reading:basketball_wz>,
+    "type": "itemspawnentry",
+    "name": "wz_ball",
+    "displayname": "#weapon/basketball",
+    "var_36781d9f": "wpn_bball_bounce_default",
+    "icon": "#hash_17d967d141ce1094",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_17d967d141ce1094",
+    "var_50773731": 5,
+    "itemtype": "weapon",
+    "pickupsound": "wpn_bball_pickup"
+}

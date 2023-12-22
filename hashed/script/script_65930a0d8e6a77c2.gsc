@@ -150,7 +150,7 @@ function trap_damage(t_trap) {
         if (self.archetype === #"zombie" && randomint(100) < 80 && !(isdefined(level.var_b8d87306) && level.var_b8d87306)) {
             level.var_b8d87306 = 1;
             level thread function_49d1db63();
-            self thread scene::play(#"hash_ba3e518e694cc7c", "Shot 1", self);
+            self thread scene::play(#"aib_vign_cust_zm_red_zmb_venom_lqfy_abv_dth_01", "Shot 1", self);
         } else {
             self dodamage(n_damage, t_trap.origin);
         }

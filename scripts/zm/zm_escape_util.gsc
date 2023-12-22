@@ -204,7 +204,7 @@ function function_7273c33d(s_loc, var_2c30f72f = 1) {
 // Checksum 0x1fd84590, Offset: 0xd98
 // Size: 0xbc
 function catwalk_arm_scene_init() {
-    scene::add_scene_func(#"hash_356b958baded5b94", &function_817220a9, "init");
+    scene::add_scene_func(#"aib_vign_tplt_zm_arm_grasp_01", &function_817220a9, "init");
     scene::add_scene_func(#"hash_356b988baded60ad", &function_817220a9, "init");
     var_b959a637 = struct::get_array("catwalk_arm_scene", "targetname");
     array::thread_all(var_b959a637, &function_b5ac159d);

@@ -1,0 +1,27 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_33f64562b01959a0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_4a90c38235084ac8",
+            "type": "actor",
+            "name": "actor 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_inbtl_hllpht_evlve_2_stg_3_00",
+    "dontsync": 1,
+    "team": "any"
+}

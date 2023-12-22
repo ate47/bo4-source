@@ -1,0 +1,89 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_65476b19894a5df8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_710cd8bd693329c4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "melt"
+                }
+            ],
+            "model": "#hash_1f8ccf0474c6823a",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "crystal"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25536ba8b6ab911b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25536ba8b6ab911b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "melt"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_2d1291d610979c8f",
+            "type": "prop",
+            "name": "atlas"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_a2b8977eabd515c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_a2b8977eabd515c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "melt"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_zm_man_atlas_rings_mod",
+            "type": "prop",
+            "name": "atlas_rings"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_man_atlas_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

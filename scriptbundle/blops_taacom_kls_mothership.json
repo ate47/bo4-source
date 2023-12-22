@@ -1,0 +1,16 @@
+{
+    "destroyed": "#hash_f3a3c3ec276538e",
+    "ready": "#hash_70d3d290499069ce",
+    "beinghacked": "#hash_43eac710c3d3c653",
+    "var_922067c4": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "vmtype": "both",
+    "name": "blops_taacom_kls_mothership",
+    "var_6f9447b2": "#hash_566517f72bad9be2",
+    "var_61d32c30": "#hash_566516f72bad9a2f",
+    "var_506f8969": "#hash_566511f72bad91b0",
+    "var_b6b855f9": "#hash_566518f72bad9d95",
+    "firewallbeinghacked": "#hash_f4c00aed0adabe3",
+    "firewallhacked": "#hash_1ac38dff37fc6d53",
+    "hacked": "#hash_3ba768fa6a8f9ae3"
+}

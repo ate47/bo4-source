@@ -1,0 +1,9 @@
+{
+    "lootid": "#c_t8_bo_jumpkit_pirate",
+    "wingsuit": "c_t8_bo_wingsuit_pirate",
+    "image": "loot04_ui_icon_blackmarket_item_shop_wingsuit_preview_pirate",
+    "name": "c_t8_bo_jumpkit_pirate",
+    "displayname": "#hash_15b174e15dcd83f",
+    "var_4fa85a25": "dfxt_pirate",
+    "parachute": "c_t8_bo_parachute_pirate"
+}

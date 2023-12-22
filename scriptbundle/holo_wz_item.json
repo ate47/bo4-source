@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "holo"
+        }
+    ],
+    "description": "#hash_7bd5290e2f410eeb",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_optic_holo_world",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_4938f240cc79a5a",
+    "var_65b3a12": 1,
+    "name": "holo_wz_item",
+    "displayname": "#hash_4938f240cc79a5a",
+    "icon": "#ui_icon_attachment_holo",
+    "modelscale": 2,
+    "rarity": "None",
+    "equipsound": "uin_wz_attach_reflex",
+    "handler": "#hash_788c59214ead02af",
+    "attachslotoptics": 1,
+    "pickupicon": "#ui_icon_attachment_holo",
+    "itemtype": "attachment"
+}

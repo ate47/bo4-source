@@ -1,0 +1,51 @@
+{
+    "option_dependencies": [
+        {
+            "var_1643d946": "1",
+            "var_6825bdb": "m_mouseADSUseMonitorDistance",
+            "operator": "=="
+        }
+    ],
+    "options": [
+        {
+            "label": "#hash_774df961990d1bcf",
+            "value": "0"
+        },
+        {
+            "label": "#hash_774df861990d1a1c",
+            "value": "0.36"
+        },
+        {
+            "label": "#hash_774dfb61990d1f35",
+            "value": "0.71"
+        },
+        {
+            "label": "#hash_774dfa61990d1d82",
+            "value": "1.07"
+        },
+        {
+            "label": "#hash_774df561990d1503",
+            "value": "1.33"
+        },
+        {
+            "label": "#hash_774df461990d1350",
+            "value": "1.78"
+        }
+    ],
+    "var_d260763": "#hash_b0051468c8fa60d",
+    "description": "#hash_6dc71248d00be956",
+    "var_60fcfffa": "#hash_7cdc6df793f97d8c",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.01,
+    "maxvalue": 1,
+    "name": "pc_monitor_distance_sensitivity_coefficient",
+    "displayname": "#hash_3abe0ef5ed72cd26",
+    "var_d6897f56": 1,
+    "var_926d1be9": 0.01,
+    "var_66faec87": 5,
+    "statname": "m_mouseADSSensitivityCoef",
+    "var_d4e288e": 1.33,
+    "var_b7401319": "#hash_4cb3e74e686b536d"
+}

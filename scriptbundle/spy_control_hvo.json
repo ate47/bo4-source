@@ -1,0 +1,42 @@
+{
+    "statsarray": [
+        {
+            "var_82670522": "stats_vision_pulse_kill",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_140a9e3c0bbb5d77"
+        },
+        {
+            "var_82670522": "stats_vision_pulse_assist",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5e8df8fc5b269e3b"
+        },
+        {
+            "stattype": "objectiveekia",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5d1ab6f5e0227795"
+        },
+        {
+            "var_82670522": "stats_shutdowns",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_158193577a14c86e"
+        },
+        {
+            "stattype": "damagedone",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5418827f408e5ca2"
+        },
+        {
+            "stattype": "objectivescore",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_4d3552e327f94ecf"
+        }
+    ],
+    "var_447510ee": "prt_mp_recon",
+    "var_e123fa65": "#hash_401fc36948868c17",
+    "var_999a02c5": "#hash_3da26368c5e321bf",
+    "name": "spy_control_hvo",
+    "var_46a95923": "control"
+}

@@ -1,0 +1,15 @@
+{
+    "var_922067c4": "scriptbundle",
+    "leftstraightanim": "#hash_75a5d99ad9e4ae11",
+    "type": "turretanims",
+    "var_9323d5c1": "#hash_6a655f544bb2330e",
+    "centerstraightanim": "#hash_281dc01e204041d2",
+    "vmtype": "none",
+    "name": "player_turret_fav_driver_anims",
+    "aimpitchangleu": 90,
+    "aimpitchangled": 90,
+    "var_9b47c071": "#hash_6a655f544bb2330e",
+    "rightstraightanim": "#hash_85884a3e58a2f2",
+    "aimyawangler": 35,
+    "aimyawanglel": 35
+}

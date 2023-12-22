@@ -47,12 +47,12 @@ function function_6f6f5189() {
     if (util::get_game_type() == "warzone_dbno" || util::get_game_type() == "warzone_hot_pursuit" || util::get_game_type() == "warzone_pandemic_quad") {
         level thread namespace_3d2704b3::start(array(5, 4, 4, 4), 20, array(60, 45, 20));
         if (isdefined(getgametypesetting(#"hash_6eb44149a8ac6dd1")) ? getgametypesetting(#"hash_6eb44149a8ac6dd1") : 0) {
-            level thread namespace_3d2704b3::start_vehicle(array(#"hash_54469210eb79f8fa", #"hash_2c40642bbbab460d", #"hash_2f8f41949bf9944b"), array(0, 4, 4, 4), 10, array(40, 30, 15));
+            level thread namespace_3d2704b3::start_vehicle(array(#"veh_suv_player_police_wz", #"veh_quad_player_wz_police", #"veh_muscle_car_convertible_player_wz_blk"), array(0, 4, 4, 4), 10, array(40, 30, 15));
         }
     } else if (util::get_game_type() == "warzone_heavy_metal_heroes") {
         level thread namespace_3d2704b3::start(array(4, 4, 3, 3, 0), 20, array(60, 45, 20));
         if (isdefined(getgametypesetting(#"hash_6eb44149a8ac6dd1")) ? getgametypesetting(#"hash_6eb44149a8ac6dd1") : 0) {
-            level thread namespace_3d2704b3::start_vehicle(array(#"hash_660785b539889002", #"hash_54bf3cd56e8c5c4a", #"hash_6fdb3b0114439974", #"hash_327d1f9834b6b91e"), array(2, 2, 2, 2, 2), 10, array(40, 30, 15));
+            level thread namespace_3d2704b3::start_vehicle(array(#"vehicle_t8_mil_tank_wz_black", #"vehicle_t8_mil_tank_wz_green", #"vehicle_t8_mil_tank_wz_grey", #"vehicle_t8_mil_tank_wz_tan"), array(2, 2, 2, 2, 2), 10, array(40, 30, 15));
         }
     } else if (util::get_game_type() == #"warzone_bigteam_quad" || util::get_game_type() == #"warzone_bigteam_dbno_quad") {
         level thread namespace_3d2704b3::start(array(2, 2, 2, 2), 20, array(45, 20, 20));

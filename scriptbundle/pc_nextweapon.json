@@ -1,0 +1,17 @@
+{
+    "var_d260763": "#hash_601d7f93185dd79f",
+    "description": "#hash_3bc987b920ed310b",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_6bb94572": 1,
+    "var_389e8bd": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_nextweapon",
+    "displayname": "#hash_6fd442a2ae8ac3b1",
+    "var_66faec87": 10,
+    "var_d4fdc6a0": "weapnext",
+    "var_b7401319": "#menu/off"
+}

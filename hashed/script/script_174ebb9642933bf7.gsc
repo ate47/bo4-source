@@ -316,7 +316,7 @@ function rise_anim_watcher() {
 // Checksum 0xf219c11a, Offset: 0x1088
 // Size: 0xb8
 function function_c44636f2(b_ignore_cleanup = 1) {
-    if (!zm_custom::function_901b751c(#"hash_4deb3ae7a73c87f3") || isdefined(level.var_5e45f817) && level.var_5e45f817) {
+    if (!zm_custom::function_901b751c(#"zmspecialroundsenabled") || isdefined(level.var_5e45f817) && level.var_5e45f817) {
         return;
     }
     level.var_1ba6a97c = 1;

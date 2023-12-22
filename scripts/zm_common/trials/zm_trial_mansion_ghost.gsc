@@ -47,15 +47,15 @@ function private on_end(round_reset) {
     gameobjects::release_obj_id(level.e_ghost.n_obj_id);
     mansion_pap::function_1ae44836(level.e_ghost.var_c176969a);
     if (isdefined(level.e_ghost.e_mover)) {
-        level.e_ghost.e_mover scene::stop(#"hash_1d324e9f967f0848");
-        level.e_ghost.e_mover scene::stop(#"hash_d278eff0ca38301");
+        level.e_ghost.e_mover scene::stop(#"aib_vign_zm_mnsn_ghost_idle_01");
+        level.e_ghost.e_mover scene::stop(#"aib_vign_zm_mnsn_ghost_walk_01");
         if (isdefined(level.e_ghost.e_mover)) {
             level.e_ghost.e_mover delete();
         }
     }
     if (isdefined(level.e_ghost)) {
-        level.e_ghost scene::stop(#"hash_1d324e9f967f0848");
-        level.e_ghost scene::stop(#"hash_d278eff0ca38301");
+        level.e_ghost scene::stop(#"aib_vign_zm_mnsn_ghost_idle_01");
+        level.e_ghost scene::stop(#"aib_vign_zm_mnsn_ghost_walk_01");
         if (isdefined(level.e_ghost.mdl_head)) {
             level.e_ghost.mdl_head delete();
         }
@@ -117,22 +117,22 @@ function private function_eb301e1b() {
         level.e_ghost mansion_pap::show_trail(nd_start);
         level.e_ghost.e_mover = util::spawn_model("tag_origin", level.e_ghost.origin, level.e_ghost.angles);
         level.e_ghost linkto(level.e_ghost.e_mover);
-        level.e_ghost.e_mover thread scene::play(#"hash_1d324e9f967f0848", level.e_ghost);
-        level.e_ghost thread scene::play(#"hash_1d324e9f967f0848", level.e_ghost.mdl_head);
+        level.e_ghost.e_mover thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.e_ghost);
+        level.e_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.e_ghost.mdl_head);
         wait(5);
         var_c98c4943 = array::random(array("monkey_loc", "bull_loc", "dl_loc"));
         nd_start = getvehiclenode(var_c98c4943 + "_trail_start_node", "targetname");
-        level.e_ghost.e_mover thread scene::play(#"hash_1d324e9f967f0848", level.e_ghost);
-        level.e_ghost thread scene::play(#"hash_1d324e9f967f0848", level.e_ghost.mdl_head);
+        level.e_ghost.e_mover thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.e_ghost);
+        level.e_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.e_ghost.mdl_head);
         start_timers(20);
-        level.e_ghost.e_mover thread scene::play(#"hash_d278eff0ca38301", level.e_ghost);
-        level.e_ghost thread scene::play(#"hash_d278eff0ca38301", level.e_ghost.mdl_head);
+        level.e_ghost.e_mover thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", level.e_ghost);
+        level.e_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", level.e_ghost.mdl_head);
         level.e_ghost.e_mover moveto(nd_start.origin, 20);
         level.e_ghost.e_mover rotateto(nd_start.angles, 20);
         wait(20);
         function_1c6eef6d();
-        level.e_ghost.e_mover scene::stop(#"hash_d278eff0ca38301");
-        level.e_ghost scene::stop(#"hash_d278eff0ca38301");
+        level.e_ghost.e_mover scene::stop(#"aib_vign_zm_mnsn_ghost_walk_01");
+        level.e_ghost scene::stop(#"aib_vign_zm_mnsn_ghost_walk_01");
     }
 }
 

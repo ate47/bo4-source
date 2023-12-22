@@ -1,0 +1,45 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_762126cda5e8f436"
+        },
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_1c8487524f1f587b",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_747054018b2d44d0",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_7b859841234ac56b",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_762125cda5e8f283",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_762124cda5e8f0d0"
+        }
+    ],
+    "description": "#hash_13d8fcc067f4d014",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 3,
+    "var_e8b98a8a": "#hash_31ed753676e47763",
+    "model": "#p8_wz_cu_coin_fortune_bag_full",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_3704dc2854dba865",
+    "unlockableitemref": "#hash_401c15c2505bf180",
+    "name": "cu04_item",
+    "displayname": "#hash_3704dc2854dba865",
+    "icon": "#hash_2deb30f85fdbd34d",
+    "modelscale": 2,
+    "rarity": "None",
+    "var_a51bc1f7": "#hash_7205d4effffcffca",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_6ce34ffbb3998db9",
+    "itemtype": "quest"
+}

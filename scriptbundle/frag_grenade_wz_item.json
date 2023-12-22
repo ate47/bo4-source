@@ -1,0 +1,14 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:frag_grenade_wz>,
+    "type": "itemspawnentry",
+    "name": "frag_grenade_wz_item",
+    "stackcount": 1,
+    "icon": "#hash_4e4ff7b5d2603",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "var_50773731": 1,
+    "itemtype": "equipment"
+}

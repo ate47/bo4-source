@@ -1,0 +1,37 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6461da255695dae8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_72b7d9eac76c1ff3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#p8_fxanim_zm_towers_pap_sarcophagus_blood_03_mod",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_towers_pap_sarcophagus_blood_03_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

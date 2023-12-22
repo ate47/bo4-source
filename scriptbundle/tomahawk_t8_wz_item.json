@@ -1,0 +1,16 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:tomahawk_t8_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "name": "tomahawk_t8_wz_item",
+    "stackcount": 1,
+    "icon": "#hash_6853de2937cd9079",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "pickupicon": "#hash_6853de2937cd9079",
+    "var_50773731": 0.75,
+    "itemtype": "equipment"
+}

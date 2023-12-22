@@ -1007,7 +1007,7 @@ function function_13ebfa5e(var_a276c861, var_19e802fa) {
 function function_90dac8fa() {
     var_b2afb550 = getent("zombie_ghost_dog_spawner", "script_noteworthy");
     while (1) {
-        if (!zm_custom::function_901b751c(#"hash_4deb3ae7a73c87f3")) {
+        if (!zm_custom::function_901b751c(#"zmspecialroundsenabled")) {
             level waittill(#"start_of_round");
         } else {
             level flag::wait_till("dog_round");
@@ -1053,7 +1053,7 @@ function function_90dac8fa() {
                 }
             }
         }
-        if (!zm_custom::function_901b751c(#"hash_4deb3ae7a73c87f3")) {
+        if (!zm_custom::function_901b751c(#"zmspecialroundsenabled")) {
             level waittill(#"end_of_round");
         } else {
             level flag::wait_till_clear("dog_round");

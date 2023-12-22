@@ -1,0 +1,45 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "blackjack_ammo_stash_guns",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "blackjack_ammo_stash_guns",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "armor_shard_item",
+            "var_8261a18": "armor_shard_item",
+            "var_3f8c08e3": "armor_shard_item",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "armor_item_medium",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "melee_demohammer_t8_item",
+            "maxweight": 100,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": 10,
+    "name": "blackjack_ammo_stash_parent_guns",
+    "displayname": "#hash_552e95261f2d04be",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

@@ -1,0 +1,67 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "lmg_standard_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "tr_powersemi_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "ar_stealth_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "smg_capacity_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_9mm_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "sniper_powerbolt_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_50cal_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "smg_accurate_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_45_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "ar_damage_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "launcher_standard_t8_item",
+            "var_3f8c08e3": "ammo_type_rocket_item",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 8,
+    "var_9b009839": -1,
+    "name": "supply_stash_gold_guns",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

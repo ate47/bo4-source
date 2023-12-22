@@ -1,0 +1,12 @@
+{
+    "var_922067c4": "scriptbundle",
+    "model": "#c_t8_zmb_dlc0_elephant_body1",
+    "type": "ainotetrackbonemapping",
+    "footstep_left_forward": "j_fingers_le",
+    "footstep_right_back": "j_ball_ri",
+    "name": "towers_boss_footstep_notetrack_bones",
+    "footstep_right_forward": "j_fingers_ri",
+    "var_2e201e98": "j_fingers_ri",
+    "footstep_left_back": "j_ball_le",
+    "var_7ec59a8f": "j_fingers_le"
+}

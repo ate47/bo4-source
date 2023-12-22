@@ -1,0 +1,68 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_vign_zm_mob_brutus_reveal_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_645a5cd7102d79f8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#c_t8_zmb_mob_brutus_baton",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "baton"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_65c488bacdd7ef68",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_313c7c29cb8be68d",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "brutus"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "dontthrottle": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_brutus_revealed",
+    "dontsync": 1,
+    "disablesceneskipping": 1,
+    "var_241c5f3c": 1,
+    "var_a6da2039": "aib_vign_zm_mob_brutus_revealed",
+    "aligntarget": "tag_align_escape_wardens_attic",
+    "ignorestreamer": 1,
+    "team": "any"
+}

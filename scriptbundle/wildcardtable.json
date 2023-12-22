@@ -1,0 +1,56 @@
+{
+    "wildcardtable": [
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_overkill"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_perk_1_gluttony"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_perk_1_greed"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_perk_2_gluttony"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_perk_2_greed"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_perk_3_gluttony"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_perk_3_greed"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_underkill"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_primary_operator_mod"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_secondary_operator_mod"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_primary_gunfighter"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_primary_gunfighter_2"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_primary_gunfighter_3"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_secondary_gunfighter"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_secondary_gunfighter_2"
+        },
+        {
+            "playerloadoutrestrictions": "#plr_mp_wc_secondary_gunfighter_3"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "wildcardtable",
+    "name": "wildcardtable",
+    "var_e78add03": 16
+}

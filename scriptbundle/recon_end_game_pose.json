@@ -1,0 +1,42 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7fa7c52f774eb2b3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "type": "player",
+            "name": "player 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2217d82289b6a309",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6ad5af7197e7f3e5",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "recon_end_game_pose",
+    "dontsync": 1,
+    "team": "any"
+}

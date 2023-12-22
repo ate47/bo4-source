@@ -1,0 +1,18 @@
+{
+    "hinttext": "#hash_130c390828fb9904",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_7c9022a3": "6",
+    "var_dfed6968": "4",
+    "var_71ce0d1f": "5",
+    "type": "gamesettings",
+    "name": "zm_healthregendelay",
+    "displayname": "#hash_9625d278567087c",
+    "var_9600a8ab": "#hash_7055d21eae0da1ef",
+    "var_71b6e020": "#hash_58d704c861150b81",
+    "var_bd2ff709": "#hash_1ba60b6389d20648",
+    "var_9de86f42": 3,
+    "setting": "zmHealthRegenDelay"
+}

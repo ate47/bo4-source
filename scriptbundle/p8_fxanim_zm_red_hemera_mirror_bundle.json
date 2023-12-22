@@ -1,0 +1,73 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_11d315b7b58bb5e0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_116e3e20b18aafa3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1a89341fec69056a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_58f1c74ade99331d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78ad21e0069579cc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_228fdbfecb5f06e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_773a7113be975a81",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_hemera_mirror_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

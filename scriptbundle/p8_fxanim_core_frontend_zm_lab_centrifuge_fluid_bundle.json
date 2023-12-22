@@ -1,0 +1,43 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_485c3ec3dd80c3fa",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_6be3c3cf1ae41947",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fill"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4f941c9225fa1e15",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "drain"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_mod",
+            "type": "prop",
+            "name": "centrifuge_fluid"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

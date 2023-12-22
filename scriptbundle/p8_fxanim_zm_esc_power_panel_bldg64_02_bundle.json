@@ -1,0 +1,40 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7addf6be37686e41",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "off"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2f5aa0395b44a4f5",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_2ef5a3f9170e3e6d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "on"
+                }
+            ],
+            "model": "#hash_7e11bc2d64b491a2",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_power_panel_bldg64_02_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

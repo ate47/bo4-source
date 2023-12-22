@@ -1,0 +1,42 @@
+{
+    "statsarray": [
+        {
+            "var_82670522": "stats_radiation_field_kill",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5e65bf8482917876"
+        },
+        {
+            "var_82670522": "stats_radiation_field_radiating_enemy",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_289242637f7dc89f"
+        },
+        {
+            "var_82670522": "stats_radiation_field_assist",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_7dc96d4edd4706a3"
+        },
+        {
+            "stattype": "objectiveekia",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5d1ab6f5e0227795"
+        },
+        {
+            "stattype": "damagedone",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5418827f408e5ca2"
+        },
+        {
+            "stattype": "objectivescore",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_6436546a9ac1c536"
+        }
+    ],
+    "var_447510ee": "prt_mp_firebreak",
+    "var_e123fa65": "#hash_401fc36948868c17",
+    "var_999a02c5": "#hash_250d4ce416d76d06",
+    "name": "contaminator_dom_hvo",
+    "var_46a95923": "dom"
+}

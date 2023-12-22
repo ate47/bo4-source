@@ -1,0 +1,16 @@
+{
+    "hinttext": "#hash_72e585c5b6dd6261",
+    "var_922067c4": "scriptbundle",
+    "value2": "2",
+    "var_6006e991": "3",
+    "var_43883094": "1",
+    "var_dfed6968": "4",
+    "var_71ce0d1f": "5",
+    "type": "gamesettings",
+    "label": "#menu/x_zones",
+    "name": "zone_count",
+    "displayname": "#hash_276d6500aad8fb77",
+    "var_9600a8ab": "#menu/1_zone",
+    "var_9de86f42": 5,
+    "setting": "zoneCount"
+}

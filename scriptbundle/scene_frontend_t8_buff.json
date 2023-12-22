@@ -1,0 +1,220 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_buff_play",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_buff_play2",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play2",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_buff_play5",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play5",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_buff_play6",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play6",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6410fa81e95e4c9e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6410fa81e95e4c9e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6410fa81e95e4c9e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6410fa81e95e4c9e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play6",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "frozen_moment_character"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_11575b830bdbb81a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_11575b830bdbb81a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_11575b830bdbb81a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_11575b830bdbb81a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play6",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                }
+            ],
+            "model": "#hash_15caf9166b5de2ec",
+            "type": "fakeplayer",
+            "deletewhenfinished": 1,
+            "name": "wounded"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_705ccd5dfcb0fba1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_705ccd5dfcb0fba1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_705ccd5dfcb0fba1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_705ccd5dfcb0fba1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play6",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                }
+            ],
+            "model": "#hash_53c6a914f3ef501f",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_buff",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

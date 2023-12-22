@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 10,
+            "var_a6762160": "zombie_itemlist",
+            "maxweight": 10,
+            "available": 1
+        },
+        {
+            "minweight": 20,
+            "var_a6762160": "zombie_itemlist_ammo_list",
+            "maxweight": 20,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "zombie_itemlist_ammo",
+    "var_fde72c94": 100
+}

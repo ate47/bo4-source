@@ -1,0 +1,27 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53e6f25898aef1bb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_1f67a213d3760fa9",
+            "type": "actor",
+            "name": "actor 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_ghost_spoon_pickup",
+    "dontsync": 1,
+    "team": "any"
+}

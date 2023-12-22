@@ -1,0 +1,59 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28080f5c94e41ee0",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_2b09a0204a9f0f09",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "part_open"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7d6eb6d9eb630402",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_46b807883715aa0f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "reset",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4374532a1169c188",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_685a198afc299ce1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_6702e3e90b6fa452",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_man_dome_crank_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

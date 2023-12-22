@@ -1,0 +1,32 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_frontend_main_lobby_team_large",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "lobby_team_shot",
+                    "aligntarget": "lobby_align_tag_large"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "lobby_align_tag_large"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_lobby_team_large",
+    "dontsync": 1,
+    "aligntarget": "lobby_align_tag_large",
+    "team": "any"
+}

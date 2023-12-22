@@ -1,0 +1,16 @@
+{
+    "hinttext": "#hash_4b5d46ad6d4fb1d2",
+    "var_922067c4": "scriptbundle",
+    "value2": "2",
+    "var_6006e991": "3",
+    "var_43883094": "1",
+    "var_dfed6968": "4",
+    "var_71ce0d1f": "5",
+    "type": "gamesettings",
+    "label": "#menu/x_balls",
+    "name": "ball_count",
+    "displayname": "#hash_27d0130496c3e80e",
+    "var_9600a8ab": "#menu/1_ball",
+    "var_9de86f42": 5,
+    "setting": "ballCount"
+}

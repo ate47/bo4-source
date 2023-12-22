@@ -1,0 +1,42 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "laser_sight_wz_item"
+        },
+        {
+            "var_6be1bec7": "suppressor_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "extmag_wz_item"
+        },
+        {
+            "var_6be1bec7": "tritium_wz_item"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_66e35da6ffb7f31",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -2,
+    "weapon": <error reading:hash_75a109f4bda3d85>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "baseweapon": "pistol_burst_t8_item",
+    "var_65b3a12": 6,
+    "var_340eac1f": 1,
+    "name": "pistol_burst_t8_gold_item",
+    "icon": "#hash_162f9dbe53561dc5",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Epic",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_6f7bbc72be771986",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

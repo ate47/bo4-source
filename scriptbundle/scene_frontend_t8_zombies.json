@@ -1,0 +1,5166 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zombies_menu_frozen_moment_cam_01",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zombies_menu_frozen_moment_cam_02",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zombies_menu_frozen_moment_cam_03",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zombies_menu_frozen_moment_cam_06",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zombies_menu_frozen_moment_cam_08",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zombies_menu_frozen_moment_cam_04",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zombies_menu_frozen_moment_cam_09",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zombies_menu_frozen_moment_cam_07",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zombies_menu_frozen_moment_cam_05",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3897a1ad236f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3897a1ad236f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3897a1ad236f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3897a1ad236f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3897a1ad236f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3897a1ad236f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3897a1ad236f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3897a1ad236f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3897a1ad236f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_5485d8593d4db74b",
+            "type": "prop",
+            "name": "specialist"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3898a1ad23714a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3898a1ad23714a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3898a1ad23714a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3898a1ad23714a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3898a1ad23714a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3898a1ad23714a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3898a1ad23714a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3898a1ad23714a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3898a1ad23714a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b1a4c65e73801",
+            "type": "prop",
+            "name": "fakeplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3899a1ad2372fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3899a1ad2372fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3899a1ad2372fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3899a1ad2372fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3899a1ad2372fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3899a1ad2372fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3899a1ad2372fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3899a1ad2372fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3899a1ad2372fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3892a1ad236718",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3892a1ad236718",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3892a1ad236718",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3892a1ad236718",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3892a1ad236718",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3892a1ad236718",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3892a1ad236718",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3892a1ad236718",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3892a1ad236718",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b1a4c65e73801",
+            "type": "prop",
+            "name": "fakeplayer 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3893a1ad2368cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3893a1ad2368cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3893a1ad2368cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3893a1ad2368cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3893a1ad2368cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3893a1ad2368cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3893a1ad2368cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3893a1ad2368cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3893a1ad2368cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_6000dbe0ef458168",
+            "type": "prop",
+            "name": "fakeplayer 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3894a1ad236a7e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3894a1ad236a7e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3894a1ad236a7e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3894a1ad236a7e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3894a1ad236a7e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3894a1ad236a7e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3894a1ad236a7e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3894a1ad236a7e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3894a1ad236a7e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_5485d8593d4db74b",
+            "type": "prop",
+            "name": "fakeplayer 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3895a1ad236c31",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3895a1ad236c31",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3895a1ad236c31",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3895a1ad236c31",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3895a1ad236c31",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3895a1ad236c31",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3895a1ad236c31",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3895a1ad236c31",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3895a1ad236c31",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_284fad44dccb71b6",
+            "type": "prop",
+            "name": "fakeplayer 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c388fa1ad2361ff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c388fa1ad2361ff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c388fa1ad2361ff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c388fa1ad2361ff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c388fa1ad2361ff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c388fa1ad2361ff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c388fa1ad2361ff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c388fa1ad2361ff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c388fa1ad2361ff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 8"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ca1ad26876d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ca1ad26876d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ca1ad26876d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ca1ad26876d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ca1ad26876d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ca1ad26876d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ca1ad26876d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ca1ad26876d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ca1ad26876d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b174c65e732e8",
+            "type": "prop",
+            "name": "fakeplayer 9"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ba1ad2685ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ba1ad2685ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ba1ad2685ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ba1ad2685ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ba1ad2685ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ba1ad2685ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ba1ad2685ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ba1ad2685ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1ba1ad2685ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 10"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1aa1ad268407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1aa1ad268407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1aa1ad268407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1aa1ad268407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1aa1ad268407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1aa1ad268407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1aa1ad268407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1aa1ad268407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c1aa1ad268407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b1a4c65e73801",
+            "type": "prop",
+            "name": "fakeplayer 11"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c19a1ad268254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c19a1ad268254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c19a1ad268254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c19a1ad268254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c19a1ad268254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c19a1ad268254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c19a1ad268254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c19a1ad268254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c19a1ad268254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b174c65e732e8",
+            "type": "prop",
+            "name": "fakeplayer 12"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c18a1ad2680a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c18a1ad2680a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c18a1ad2680a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c18a1ad2680a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c18a1ad2680a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c18a1ad2680a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c18a1ad2680a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c18a1ad2680a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c18a1ad2680a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 13"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c17a1ad267eee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c17a1ad267eee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c17a1ad267eee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c17a1ad267eee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c17a1ad267eee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c17a1ad267eee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c17a1ad267eee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c17a1ad267eee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c17a1ad267eee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b174c65e732e8",
+            "type": "prop",
+            "name": "fakeplayer 14"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c16a1ad267d3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c16a1ad267d3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c16a1ad267d3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c16a1ad267d3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c16a1ad267d3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c16a1ad267d3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c16a1ad267d3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c16a1ad267d3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c16a1ad267d3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_284fad44dccb71b6",
+            "type": "prop",
+            "name": "fakeplayer 15"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c15a1ad267b88",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c15a1ad267b88",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c15a1ad267b88",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c15a1ad267b88",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c15a1ad267b88",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c15a1ad267b88",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c15a1ad267b88",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c15a1ad267b88",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c15a1ad267b88",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_5485d8593d4db74b",
+            "type": "prop",
+            "name": "fakeplayer 16"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c14a1ad2679d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c14a1ad2679d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c14a1ad2679d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c14a1ad2679d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c14a1ad2679d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c14a1ad2679d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c14a1ad2679d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c14a1ad2679d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c14a1ad2679d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_284fad44dccb71b6",
+            "type": "prop",
+            "name": "fakeplayer 17"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c13a1ad267822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c13a1ad267822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c13a1ad267822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c13a1ad267822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c13a1ad267822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c13a1ad267822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c13a1ad267822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c13a1ad267822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3c13a1ad267822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_6000dbe0ef458168",
+            "type": "prop",
+            "name": "fakeplayer 18"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f82a1ad296a96",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f82a1ad296a96",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f82a1ad296a96",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f82a1ad296a96",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f82a1ad296a96",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f82a1ad296a96",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f82a1ad296a96",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f82a1ad296a96",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f82a1ad296a96",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 19"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f83a1ad296c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f83a1ad296c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f83a1ad296c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f83a1ad296c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f83a1ad296c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f83a1ad296c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f83a1ad296c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f83a1ad296c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f83a1ad296c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b174c65e732e8",
+            "type": "prop",
+            "name": "fakeplayer 20"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f80a1ad296730",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f80a1ad296730",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f80a1ad296730",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f80a1ad296730",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f80a1ad296730",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f80a1ad296730",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f80a1ad296730",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f80a1ad296730",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f80a1ad296730",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b1a4c65e73801",
+            "type": "prop",
+            "name": "fakeplayer 21"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f81a1ad2968e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f81a1ad2968e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f81a1ad2968e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f81a1ad2968e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f81a1ad2968e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f81a1ad2968e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f81a1ad2968e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f81a1ad2968e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f81a1ad2968e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b1a4c65e73801",
+            "type": "prop",
+            "name": "fakeplayer 22"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f86a1ad297162",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f86a1ad297162",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f86a1ad297162",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f86a1ad297162",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f86a1ad297162",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f86a1ad297162",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f86a1ad297162",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f86a1ad297162",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f86a1ad297162",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_6000dbe0ef458168",
+            "type": "prop",
+            "name": "fakeplayer 23"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f87a1ad297315",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f87a1ad297315",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f87a1ad297315",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f87a1ad297315",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f87a1ad297315",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f87a1ad297315",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f87a1ad297315",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f87a1ad297315",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f87a1ad297315",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_296a2437d42f6a54",
+            "type": "prop",
+            "name": "fakeplayer 24"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f84a1ad296dfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f84a1ad296dfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f84a1ad296dfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f84a1ad296dfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f84a1ad296dfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f84a1ad296dfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f84a1ad296dfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f84a1ad296dfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f84a1ad296dfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_284fad44dccb71b6",
+            "type": "prop",
+            "name": "fakeplayer 25"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f85a1ad296faf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f85a1ad296faf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f85a1ad296faf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f85a1ad296faf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f85a1ad296faf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f85a1ad296faf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f85a1ad296faf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f85a1ad296faf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f85a1ad296faf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 26"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8aa1ad29782e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8aa1ad29782e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8aa1ad29782e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8aa1ad29782e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8aa1ad29782e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8aa1ad29782e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8aa1ad29782e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8aa1ad29782e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8aa1ad29782e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_6000dbe0ef458168",
+            "type": "prop",
+            "name": "fakeplayer 28"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8ba1ad2979e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8ba1ad2979e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8ba1ad2979e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8ba1ad2979e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8ba1ad2979e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8ba1ad2979e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8ba1ad2979e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8ba1ad2979e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c3f8ba1ad2979e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b174c65e732e8",
+            "type": "prop",
+            "name": "fakeplayer 27"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4308a1ad2c841f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4308a1ad2c841f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4308a1ad2c841f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4308a1ad2c841f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4308a1ad2c841f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4308a1ad2c841f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4308a1ad2c841f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4308a1ad2c841f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4308a1ad2c841f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b1a4c65e73801",
+            "type": "prop",
+            "name": "fakeplayer 29"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4307a1ad2c826c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4307a1ad2c826c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4307a1ad2c826c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4307a1ad2c826c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4307a1ad2c826c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4307a1ad2c826c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4307a1ad2c826c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4307a1ad2c826c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4307a1ad2c826c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 30"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430aa1ad2c8785",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_338117af8a7a1b6e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430aa1ad2c8785",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430aa1ad2c8785",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430aa1ad2c8785",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430aa1ad2c8785",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430aa1ad2c8785",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430aa1ad2c8785",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430aa1ad2c8785",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 31"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4309a1ad2c85d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4309a1ad2c85d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4309a1ad2c85d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4309a1ad2c85d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4309a1ad2c85d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4309a1ad2c85d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4309a1ad2c85d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4309a1ad2c85d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4309a1ad2c85d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 32"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4304a1ad2c7d53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4304a1ad2c7d53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4304a1ad2c7d53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4304a1ad2c7d53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4304a1ad2c7d53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4304a1ad2c7d53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4304a1ad2c7d53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4304a1ad2c7d53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4304a1ad2c7d53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 33"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4303a1ad2c7ba0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4303a1ad2c7ba0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4303a1ad2c7ba0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4303a1ad2c7ba0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4303a1ad2c7ba0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4303a1ad2c7ba0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4303a1ad2c7ba0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4303a1ad2c7ba0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4303a1ad2c7ba0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 34",
+            "var_3e692842": 5
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4306a1ad2c80b9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4306a1ad2c80b9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4306a1ad2c80b9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4306a1ad2c80b9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4306a1ad2c80b9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4306a1ad2c80b9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4306a1ad2c80b9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4306a1ad2c80b9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4306a1ad2c80b9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 35",
+            "var_3e692842": 14
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4305a1ad2c7f06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4305a1ad2c7f06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4305a1ad2c7f06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4305a1ad2c7f06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4305a1ad2c7f06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4305a1ad2c7f06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4305a1ad2c7f06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4305a1ad2c7f06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4305a1ad2c7f06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 36"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4310a1ad2c91b7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4310a1ad2c91b7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4310a1ad2c91b7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4310a1ad2c91b7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4310a1ad2c91b7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4310a1ad2c91b7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4310a1ad2c91b7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4310a1ad2c91b7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4310a1ad2c91b7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 37"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430fa1ad2c9004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430fa1ad2c9004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430fa1ad2c9004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430fa1ad2c9004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430fa1ad2c9004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430fa1ad2c9004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430fa1ad2c9004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430fa1ad2c9004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c430fa1ad2c9004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 38"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2afea1ad17e140",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2afea1ad17e140",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2afea1ad17e140",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2afea1ad17e140",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2afea1ad17e140",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2afea1ad17e140",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2afea1ad17e140",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2afea1ad17e140",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2afea1ad17e140",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 39"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2affa1ad17e2f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2affa1ad17e2f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2affa1ad17e2f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2affa1ad17e2f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2affa1ad17e2f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2affa1ad17e2f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2affa1ad17e2f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2affa1ad17e2f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2affa1ad17e2f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_6000dbe0ef458168",
+            "type": "prop",
+            "name": "fakeplayer 40"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b00a1ad17e4a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b00a1ad17e4a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b00a1ad17e4a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b00a1ad17e4a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b00a1ad17e4a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b00a1ad17e4a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b00a1ad17e4a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b00a1ad17e4a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b00a1ad17e4a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_182b1a4c65e73801",
+            "type": "prop",
+            "name": "fakeplayer 41",
+            "var_922b4fc5": 19,
+            "var_3e692842": -16
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b01a1ad17e659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b01a1ad17e659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b01a1ad17e659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b01a1ad17e659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b01a1ad17e659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b01a1ad17e659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b01a1ad17e659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b01a1ad17e659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b01a1ad17e659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 42"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b02a1ad17e80c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b02a1ad17e80c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b02a1ad17e80c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b02a1ad17e80c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b02a1ad17e80c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b02a1ad17e80c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b02a1ad17e80c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b02a1ad17e80c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b02a1ad17e80c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 43"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b03a1ad17e9bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b03a1ad17e9bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b03a1ad17e9bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b03a1ad17e9bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b03a1ad17e9bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b03a1ad17e9bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b03a1ad17e9bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b03a1ad17e9bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b03a1ad17e9bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 44"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b04a1ad17eb72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b04a1ad17eb72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b04a1ad17eb72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b04a1ad17eb72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b04a1ad17eb72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b04a1ad17eb72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b04a1ad17eb72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b04a1ad17eb72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b04a1ad17eb72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_6000dbe0ef458168",
+            "type": "prop",
+            "name": "fakeplayer 45"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b05a1ad17ed25",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b05a1ad17ed25",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b05a1ad17ed25",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b05a1ad17ed25",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b05a1ad17ed25",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b05a1ad17ed25",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b05a1ad17ed25",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b05a1ad17ed25",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b05a1ad17ed25",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 46"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b06a1ad17eed8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b06a1ad17eed8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b06a1ad17eed8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b06a1ad17eed8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b06a1ad17eed8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b06a1ad17eed8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b06a1ad17eed8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b06a1ad17eed8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b06a1ad17eed8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 47"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b07a1ad17f08b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b07a1ad17f08b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b07a1ad17f08b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b07a1ad17f08b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b07a1ad17f08b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b07a1ad17f08b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b07a1ad17f08b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b07a1ad17f08b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2b07a1ad17f08b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 48"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e84a1ad1afac9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e84a1ad1afac9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e84a1ad1afac9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e84a1ad1afac9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e84a1ad1afac9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e84a1ad1afac9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e84a1ad1afac9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e84a1ad1afac9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e84a1ad1afac9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 49"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e83a1ad1af916",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1a2b3616c174097b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e83a1ad1af916",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e83a1ad1af916",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e83a1ad1af916",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e83a1ad1af916",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e83a1ad1af916",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e83a1ad1af916",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e83a1ad1af916",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 50"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e82a1ad1af763",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e82a1ad1af763",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e82a1ad1af763",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e82a1ad1af763",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e82a1ad1af763",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e82a1ad1af763",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e82a1ad1af763",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e82a1ad1af763",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e82a1ad1af763",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 51"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e81a1ad1af5b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e81a1ad1af5b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e81a1ad1af5b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e81a1ad1af5b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e81a1ad1af5b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e81a1ad1af5b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e81a1ad1af5b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e81a1ad1af5b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e81a1ad1af5b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "fakeplayer 52"
+        },
+        {
+            "shots": [
+                {
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_337cece7342a33fa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#p8_rock_mantle",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e88a1ad1b0195",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e87a1ad1affe2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e86a1ad1afe2f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e85a1ad1afc7c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e8ca1ad1b0861",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c2e8ba1ad1b06ae",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "prop 7"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c320aa1ad1e1452",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "prop 8"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c320ba1ad1e1605",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_39fd697b": "core_frontend_buff",
+                    "var_b94164e": "core_frontend_buff"
+                },
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_7667b0a2a3251ea5",
+            "type": "prop",
+            "name": "prop 9"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_zombies",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen_zm",
+    "team": "any"
+}

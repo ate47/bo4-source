@@ -1,0 +1,11 @@
+{
+    "lootid": "#hash_76702ef5b45ce55b",
+    "wingsuit": "c_t8_bo_wingsuit_sparrow",
+    "feature": "loot_season_06_mid",
+    "image": "loot_07_ui_icon_blackmarket_reserves_jumppack_sparrow",
+    "name": "c_t8_bo_jumpkit_sparrow",
+    "displayname": "#hash_6c99a1c14d2f0b13",
+    "var_15d11806": "loot_07_ui_icon_blackmarket_reserves_jumppack_sparrow",
+    "var_4fa85a25": "dfxt_sparrow",
+    "parachute": "c_t8_bo_parachute_sparrow"
+}

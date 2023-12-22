@@ -1,0 +1,27 @@
+{
+    "ingame_right": [
+        {
+            "indicator": "livesremaining"
+        },
+        {
+            "indicator": "kills"
+        },
+        {
+            "indicator": "cleanups"
+        },
+        {
+            "indicator": "playersalive"
+        },
+        {
+            "indicator": "playersspectating"
+        }
+    ],
+    "var_e41e73bc": "#hash_470f56bbfd7288d2",
+    "var_7fb0fb2a": 5,
+    "name": "wz_game_status_indicators",
+    "var_64c41c9": "#hash_514b2e7558f68939",
+    "var_4d841948": "#hash_2aff92bfc92c51b4",
+    "var_9c1cb18e": "#hash_165a58bc1d90709",
+    "var_41b27c8f": "#hash_55efe28d1e8eb917",
+    "var_7a5e8f79": "#hash_52ae79631e8041a4"
+}

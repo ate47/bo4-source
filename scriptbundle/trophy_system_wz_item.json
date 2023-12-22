@@ -1,0 +1,16 @@
+{
+    "amount": 1,
+    "description": "#hash_58dd986229b8b8c4",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:trophy_system_wz>,
+    "type": "itemspawnentry",
+    "name": "trophy_system_wz_item",
+    "displayname": "#weapon/trophy_system",
+    "stackcount": 1,
+    "icon": "#hash_520ca05870509c43",
+    "modelscale": 0.8,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "pickupicon": "#hash_520ca05870509c43",
+    "itemtype": "equipment"
+}

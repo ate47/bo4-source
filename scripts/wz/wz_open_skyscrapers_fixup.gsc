@@ -26,7 +26,7 @@ function private function_4305a789() {
 // Size: 0xdc
 function private function_c94723bd() {
     if (isdefined(getgametypesetting(#"wzenableflareguns")) && getgametypesetting(#"wzenableflareguns") && !(isdefined(getgametypesetting(#"wzheavymetalheroes")) && getgametypesetting(#"wzheavymetalheroes"))) {
-        item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"hash_3378cb5b05564c01", 5);
+        item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"supply_stash_parent_dlc1_flare_guns", 5);
     }
 }
 

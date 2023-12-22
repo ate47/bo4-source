@@ -1,0 +1,17 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "model": "#p8_wz_supply_stash_health_lvl2",
+    "weapon": <error reading:hash_503952ee4123de00>,
+    "type": "itemspawnentry",
+    "name": "health_item_medium",
+    "stackcount": 5,
+    "icon": "#hash_754ad969787d7c73",
+    "modelscale": 1.1,
+    "rarity": "Common",
+    "handler": "#hash_51b30f6e7331e136",
+    "pickupicon": "#hash_754ad969787d7c73",
+    "stackable": 1,
+    "itemtype": "health",
+    "pickupsound": "fly_pickup_health_medium"
+}

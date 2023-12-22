@@ -1,0 +1,42 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_40838cba9f56afbf",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_4cedf0c0447d3d9c",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_5e24251fa458b027",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_40838cba9f56afbf",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_40838dba9f56b172"
+        }
+    ],
+    "description": "#hash_5e9e1e8ac367e1d7",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_1204269480d99a2",
+    "model": "#hash_5b12331abd8ad0e1",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_25fdf644e07c02e0",
+    "unlockableitemref": "#hash_6ea9c24424bf5bcb",
+    "name": "cu13_item",
+    "displayname": "#hash_25fdf644e07c02e0",
+    "icon": "#hash_330aa0747f7db2bf",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#zombie/scarlett",
+    "pickupicon": "#hash_330aa0747f7db2bf",
+    "itemtype": "quest"
+}

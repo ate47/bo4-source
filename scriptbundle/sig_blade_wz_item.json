@@ -1,0 +1,25 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_22c17849657af108"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_62cb1047e69b0d4e",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:sig_blade_wz>,
+    "type": "itemspawnentry",
+    "var_7adcadc1": 165,
+    "name": "sig_blade_wz_item",
+    "displayname": "#weapon/sig_blade",
+    "var_36781d9f": "fly_drop_blade",
+    "icon": "#hash_57048601ba6e2892",
+    "modelscale": 1,
+    "rarity": "Common",
+    "var_38f854e5": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_ff0bf0098fa7a6b",
+    "var_50773731": 20,
+    "itemtype": "weapon",
+    "pickupsound": "fly_pickup_blade"
+}

@@ -89,7 +89,7 @@ function __main__() {
     waitframe(1);
     treasure_chest_init(level.start_chest_name);
     level thread function_4873c058();
-    if (zm_custom::function_901b751c(#"hash_543954c3281a530f")) {
+    if (zm_custom::function_901b751c(#"zmmysteryboxlimitround")) {
         level thread function_338c302b();
     }
     level flag::set("magicbox_initialized");
@@ -120,7 +120,7 @@ function treasure_chest_init(start_chest_name) {
             level.chests[i].old_cost = 950;
         }
     }
-    if (!level.enable_magic || zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 0) {
+    if (!level.enable_magic || zm_custom::function_901b751c(#"zmmysteryboxstate") == 0) {
         foreach (chest in level.chests) {
             chest hide_chest();
         }
@@ -151,13 +151,13 @@ function init_starting_chest_location(start_chest_name) {
             level.chests[level.chest_index].zbarrier set_magic_box_zbarrier_state("initial");
             level.chests[level.chest_index] thread zm_audio::function_ef9ba49c(#"box", 0, -1, 500, array("left", "trigger"));
         }
-    } else if (zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 3) {
+    } else if (zm_custom::function_901b751c(#"zmmysteryboxstate") == 3) {
         for (i = 0; i < level.chests.size; i++) {
             level.chests[i] function_2db086bf();
             level.chests[i].no_fly_away = 1;
             level.chests[i] thread show_chest();
         }
-    } else if (zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 1) {
+    } else if (zm_custom::function_901b751c(#"zmmysteryboxstate") == 1) {
         level.chest_index = -1;
         for (i = 0; i < level.chests.size; i++) {
             level.chests[i] hide_chest();
@@ -188,7 +188,7 @@ function init_starting_chest_location(start_chest_name) {
             level.pandora_show_func = &default_pandora_show_func;
         }
     }
-    if (!(isdefined(zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 1) && zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 1)) {
+    if (!(isdefined(zm_custom::function_901b751c(#"zmmysteryboxstate") == 1) && zm_custom::function_901b751c(#"zmmysteryboxstate") == 1)) {
         level.chests[level.chest_index] thread [[ level.pandora_show_func ]]();
     }
 }
@@ -233,8 +233,8 @@ function get_chest_pieces() {
 // Size: 0x138
 function boxtrigger_update_prompt(player) {
     can_use = self boxstub_update_prompt(player);
-    if (zm_custom::function_901b751c(#"hash_543954c3281a530f") && !(isdefined(self.stub.trigger_target._box_open) && self.stub.trigger_target._box_open)) {
-        if ((isdefined(level.var_40f4f72d) ? level.var_40f4f72d : 0) >= zm_custom::function_901b751c(#"hash_543954c3281a530f")) {
+    if (zm_custom::function_901b751c(#"zmmysteryboxlimitround") && !(isdefined(self.stub.trigger_target._box_open) && self.stub.trigger_target._box_open)) {
+        if ((isdefined(level.var_40f4f72d) ? level.var_40f4f72d : 0) >= zm_custom::function_901b751c(#"zmmysteryboxlimitround")) {
             can_use = 0;
         }
     }
@@ -403,7 +403,7 @@ function function_2db086bf() {
 // Checksum 0x24a0ebc2, Offset: 0x1fe8
 // Size: 0x1e8
 function show_chest() {
-    if (!level.enable_magic || zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 0) {
+    if (!level.enable_magic || zm_custom::function_901b751c(#"zmmysteryboxstate") == 0) {
         return;
     }
     self.zbarrier set_magic_box_zbarrier_state("arriving");
@@ -646,17 +646,17 @@ function treasure_chest_think() {
     if (isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") && !isdefined(self.auto_open) && self [[ level._zombiemode_check_firesale_loc_valid_func ]]()) {
         self._box_opened_by_fire_sale = 1;
     }
-    if (zm_custom::function_901b751c(#"hash_4ffb80b47c049c61")) {
+    if (zm_custom::function_901b751c(#"zmmysteryboxlimit")) {
         if (!isdefined(level.var_bcd3620a)) {
             level.var_bcd3620a = 0;
         }
         level.var_bcd3620a = level.var_bcd3620a + 1;
-        if (level.var_bcd3620a >= zm_custom::function_901b751c(#"hash_4ffb80b47c049c61")) {
+        if (level.var_bcd3620a >= zm_custom::function_901b751c(#"zmmysteryboxlimit")) {
             zm_powerups::powerup_remove_from_regular_drops("fire_sale");
             level thread function_7d384b90();
         }
     }
-    if (zm_custom::function_901b751c(#"hash_543954c3281a530f")) {
+    if (zm_custom::function_901b751c(#"zmmysteryboxlimitround")) {
         if (level.registerupdateyawevenwhilestationary_activate !== level.round_number) {
             level.var_40f4f72d = 1;
             level.registerupdateyawevenwhilestationary_activate = level.round_number;
@@ -791,7 +791,7 @@ function treasure_chest_think() {
         } else {
             wait(3);
         }
-        if (isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") && self [[ level._zombiemode_check_firesale_loc_valid_func ]]() || zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 3 || zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 1 || self == level.chests[level.chest_index]) {
+        if (isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") && self [[ level._zombiemode_check_firesale_loc_valid_func ]]() || zm_custom::function_901b751c(#"zmmysteryboxstate") == 3 || zm_custom::function_901b751c(#"zmmysteryboxstate") == 1 || self == level.chests[level.chest_index]) {
             thread zm_unitrigger::register_static_unitrigger(self.unitrigger_stub, &magicbox_unitrigger_think);
         }
     }
@@ -802,8 +802,8 @@ function treasure_chest_think() {
     self.chest_user = undefined;
     self notify(#"chest_accessed");
     level flag::set("chest_weapon_has_been_taken");
-    if (zm_custom::function_901b751c(#"hash_4ffb80b47c049c61")) {
-        if (level.var_bcd3620a >= zm_custom::function_901b751c(#"hash_4ffb80b47c049c61")) {
+    if (zm_custom::function_901b751c(#"zmmysteryboxlimit")) {
+        if (level.var_bcd3620a >= zm_custom::function_901b751c(#"zmmysteryboxlimit")) {
             return;
         }
     }
@@ -896,8 +896,8 @@ function can_buy_weapon(var_5429ee1f = 1) {
     if (!isdefined(self)) {
         return 0;
     }
-    if (var_5429ee1f && zm_custom::function_901b751c(#"hash_543954c3281a530f")) {
-        if ((isdefined(level.var_40f4f72d) ? level.var_40f4f72d : 0) >= zm_custom::function_901b751c(#"hash_543954c3281a530f")) {
+    if (var_5429ee1f && zm_custom::function_901b751c(#"zmmysteryboxlimitround")) {
+        if ((isdefined(level.var_40f4f72d) ? level.var_40f4f72d : 0) >= zm_custom::function_901b751c(#"zmmysteryboxlimitround")) {
             return 0;
         }
     }
@@ -1378,18 +1378,18 @@ function treasure_chest_should_move(chest, player) {
         }
         if (!isdefined(level.chest_min_move_usage)) {
             level.chest_min_move_usage = 4;
-            if (zm_custom::function_901b751c(#"hash_1513b70c43495cc0")) {
-                if (zm_custom::function_901b751c(#"hash_1513b70c43495cc0") < 4) {
-                    level.chest_min_move_usage = zm_custom::function_901b751c(#"hash_1513b70c43495cc0") - 1;
+            if (zm_custom::function_901b751c(#"zmmysteryboxlimitmove")) {
+                if (zm_custom::function_901b751c(#"zmmysteryboxlimitmove") < 4) {
+                    level.chest_min_move_usage = zm_custom::function_901b751c(#"zmmysteryboxlimitmove") - 1;
                 }
             }
         }
         if (level.chest_accessed < level.chest_min_move_usage) {
             chance_of_joker = -1;
         }
-        if (zm_custom::function_901b751c(#"hash_1513b70c43495cc0")) {
-            var_4066429c = level.chest_accessed - zm_custom::function_901b751c(#"hash_1513b70c43495cc0") * level.chest_moves;
-            if (level.chest_accessed >= zm_custom::function_901b751c(#"hash_1513b70c43495cc0")) {
+        if (zm_custom::function_901b751c(#"zmmysteryboxlimitmove")) {
+            var_4066429c = level.chest_accessed - zm_custom::function_901b751c(#"zmmysteryboxlimitmove") * level.chest_moves;
+            if (level.chest_accessed >= zm_custom::function_901b751c(#"zmmysteryboxlimitmove")) {
                 chance_of_joker = 100;
             } else {
                 chance_of_joker = -1;

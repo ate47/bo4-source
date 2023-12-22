@@ -1,0 +1,42 @@
+{
+    "statsarray": [
+        {
+            "var_82670522": "stats_tempest_kill",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_469110c0e2843f92"
+        },
+        {
+            "var_82670522": "stats_tempest_shock_chain",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_45c2ebc00d0bd232"
+        },
+        {
+            "stattype": "objectiveekia",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5d1ab6f5e0227795"
+        },
+        {
+            "var_82670522": "stats_shutdowns",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_158193577a14c86e"
+        },
+        {
+            "stattype": "damagedone",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5418827f408e5ca2"
+        },
+        {
+            "stattype": "objectivescore",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_4d3552e327f94ecf"
+        }
+    ],
+    "var_447510ee": "prt_mp_technomancer",
+    "var_e123fa65": "#hash_401fc36948868c17",
+    "var_999a02c5": "#hash_5cfef11175731e19",
+    "name": "disabler_control_hvo",
+    "var_46a95923": "control"
+}

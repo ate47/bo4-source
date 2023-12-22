@@ -40,8 +40,8 @@ function autoexec function_313e9d31() {
     level.var_50e97365 = getgametypesetting(#"hash_7684a70eb68f1ebb");
     level.specialistabilityreadyonrespawn = getgametypesetting(#"specialistabilityreadyonrespawn_allies_1");
     level.specialistequipmentreadyonrespawn = getgametypesetting(#"specialistequipmentreadyonrespawn_allies_1");
-    level.var_86fd5bf3 = [];
-    level.var_86fd5bf3[0] = getscriptbundle(#"hash_133d2a86644e762d");
+    level.playerloadoutrestrictions = [];
+    level.playerloadoutrestrictions[0] = getscriptbundle(#"plr_mp_default");
     if (isdefined(getgametypesetting(#"scorestreaksbarebones")) && getgametypesetting(#"scorestreaksbarebones")) {
         level.scorestreaksbarebones = [];
         level.scorestreaksbarebones[0] = 126;
@@ -50,9 +50,9 @@ function autoexec function_313e9d31() {
     }
     wildcardtable = getscriptbundle(#"wildcardtable");
     foreach (wildcard in wildcardtable.wildcardtable) {
-        var_43645456 = wildcard.var_86fd5bf3;
-        var_86fd5bf3 = getscriptbundle(var_43645456);
-        level.var_86fd5bf3[var_86fd5bf3.var_9bb0ceab] = var_86fd5bf3;
+        var_43645456 = wildcard.playerloadoutrestrictions;
+        playerloadoutrestrictions = getscriptbundle(var_43645456);
+        level.playerloadoutrestrictions[playerloadoutrestrictions.var_9bb0ceab] = playerloadoutrestrictions;
     }
 }
 
@@ -548,20 +548,20 @@ function private give_gesture() {
 function private function_c84c77d8(loadoutslot) {
     switch (loadoutslot) {
     case 41:
-        self.var_86fd5bf3.var_a2ef45f8--;
-        if (self.var_86fd5bf3.var_a2ef45f8 < 0) {
+        self.playerloadoutrestrictions.var_a2ef45f8--;
+        if (self.playerloadoutrestrictions.var_a2ef45f8 < 0) {
             return 0;
         }
         break;
     case 42:
-        self.var_86fd5bf3.var_cd3db98c--;
-        if (self.var_86fd5bf3.var_cd3db98c < 0) {
+        self.playerloadoutrestrictions.var_cd3db98c--;
+        if (self.playerloadoutrestrictions.var_cd3db98c < 0) {
             return 0;
         }
         break;
     case 43:
-        self.var_86fd5bf3.var_25a22f4--;
-        if (self.var_86fd5bf3.var_25a22f4 < 0) {
+        self.playerloadoutrestrictions.var_25a22f4--;
+        if (self.playerloadoutrestrictions.var_25a22f4 < 0) {
             return 0;
         }
         break;
@@ -808,13 +808,13 @@ function private function_d9035e42(weapon) {
     itemindex = getbaseweaponitemindex(weapon);
     iteminfo = getunlockableiteminfofromindex(itemindex, 1);
     if (iteminfo.loadoutslotname === "primary") {
-        self.var_86fd5bf3.var_42aa9c3--;
-        if (self.var_86fd5bf3.var_42aa9c3 < 0) {
+        self.playerloadoutrestrictions.var_42aa9c3--;
+        if (self.playerloadoutrestrictions.var_42aa9c3 < 0) {
             return 0;
         }
     } else if (iteminfo.loadoutslotname === "secondary") {
-        self.var_86fd5bf3.var_ab1984e9--;
-        if (self.var_86fd5bf3.var_ab1984e9 < 0) {
+        self.playerloadoutrestrictions.var_ab1984e9--;
+        if (self.playerloadoutrestrictions.var_ab1984e9 < 0) {
             return 0;
         }
     }
@@ -861,24 +861,24 @@ function private function_3aa744b9(slot, weapon) {
         num_attachments--;
     }
     if (slot === "primary") {
-        self.var_86fd5bf3.var_355c3581 = self.var_86fd5bf3.var_355c3581 - num_attachments;
-        if (self.var_86fd5bf3.var_355c3581 < 0) {
+        self.playerloadoutrestrictions.var_355c3581 = self.playerloadoutrestrictions.var_355c3581 - num_attachments;
+        if (self.playerloadoutrestrictions.var_355c3581 < 0) {
             return 0;
         }
         if (has_uber || weapon.isdualwield) {
-            self.var_86fd5bf3.var_882b6b71--;
-            if (self.var_86fd5bf3.var_882b6b71 < 0) {
+            self.playerloadoutrestrictions.var_882b6b71--;
+            if (self.playerloadoutrestrictions.var_882b6b71 < 0) {
                 return 0;
             }
         }
     } else if (slot === "secondary") {
-        self.var_86fd5bf3.var_934131b6 = self.var_86fd5bf3.var_934131b6 - num_attachments;
-        if (self.var_86fd5bf3.var_934131b6 < 0) {
+        self.playerloadoutrestrictions.var_934131b6 = self.playerloadoutrestrictions.var_934131b6 - num_attachments;
+        if (self.playerloadoutrestrictions.var_934131b6 < 0) {
             return 0;
         }
         if (has_uber || weapon.isdualwield) {
-            self.var_86fd5bf3.var_c3fc8c73--;
-            if (self.var_86fd5bf3.var_c3fc8c73 < 0) {
+            self.playerloadoutrestrictions.var_c3fc8c73--;
+            if (self.playerloadoutrestrictions.var_c3fc8c73 < 0) {
                 return 0;
             }
         }
@@ -894,11 +894,11 @@ function private function_d126318c(slot, weapon) {
     var_b5bd8bd9 = 0;
     remove_uber = 0;
     if (slot === "primary") {
-        var_b5bd8bd9 = self.var_86fd5bf3.var_355c3581;
-        remove_uber = self.var_86fd5bf3.var_882b6b71 < 0;
+        var_b5bd8bd9 = self.playerloadoutrestrictions.var_355c3581;
+        remove_uber = self.playerloadoutrestrictions.var_882b6b71 < 0;
     } else if (slot === "secondary") {
-        var_b5bd8bd9 = self.var_86fd5bf3.var_934131b6;
-        remove_uber = self.var_86fd5bf3.var_c3fc8c73 < 0;
+        var_b5bd8bd9 = self.playerloadoutrestrictions.var_934131b6;
+        remove_uber = self.playerloadoutrestrictions.var_c3fc8c73 < 0;
     }
     attachments = arraycopy(weapon.attachments);
     max_index = attachments.size + var_b5bd8bd9;
@@ -1655,29 +1655,29 @@ function private function_c57586b8() {
 // Size: 0x586
 function private function_8aa3ff4e() {
     wildcards = self function_6f2c0492(self.class_num);
-    self.var_86fd5bf3 = spawnstruct();
-    self.var_86fd5bf3.var_42aa9c3 = isdefined(level.var_86fd5bf3[0].var_42aa9c3) ? level.var_86fd5bf3[0].var_42aa9c3 : 0;
-    self.var_86fd5bf3.var_355c3581 = isdefined(level.var_86fd5bf3[0].var_355c3581) ? level.var_86fd5bf3[0].var_355c3581 : 0;
-    self.var_86fd5bf3.var_882b6b71 = isdefined(level.var_86fd5bf3[0].var_882b6b71) ? level.var_86fd5bf3[0].var_882b6b71 : 0;
-    self.var_86fd5bf3.var_ab1984e9 = isdefined(level.var_86fd5bf3[0].var_ab1984e9) ? level.var_86fd5bf3[0].var_ab1984e9 : 0;
-    self.var_86fd5bf3.var_934131b6 = isdefined(level.var_86fd5bf3[0].var_934131b6) ? level.var_86fd5bf3[0].var_934131b6 : 0;
-    self.var_86fd5bf3.var_c3fc8c73 = isdefined(level.var_86fd5bf3[0].var_c3fc8c73) ? level.var_86fd5bf3[0].var_c3fc8c73 : 0;
-    self.var_86fd5bf3.var_a2ef45f8 = isdefined(level.var_86fd5bf3[0].var_a2ef45f8) ? level.var_86fd5bf3[0].var_a2ef45f8 : 0;
-    self.var_86fd5bf3.var_cd3db98c = isdefined(level.var_86fd5bf3[0].var_cd3db98c) ? level.var_86fd5bf3[0].var_cd3db98c : 0;
-    self.var_86fd5bf3.var_25a22f4 = isdefined(level.var_86fd5bf3[0].var_25a22f4) ? level.var_86fd5bf3[0].var_25a22f4 : 0;
+    self.playerloadoutrestrictions = spawnstruct();
+    self.playerloadoutrestrictions.var_42aa9c3 = isdefined(level.playerloadoutrestrictions[0].var_42aa9c3) ? level.playerloadoutrestrictions[0].var_42aa9c3 : 0;
+    self.playerloadoutrestrictions.var_355c3581 = isdefined(level.playerloadoutrestrictions[0].var_355c3581) ? level.playerloadoutrestrictions[0].var_355c3581 : 0;
+    self.playerloadoutrestrictions.var_882b6b71 = isdefined(level.playerloadoutrestrictions[0].var_882b6b71) ? level.playerloadoutrestrictions[0].var_882b6b71 : 0;
+    self.playerloadoutrestrictions.var_ab1984e9 = isdefined(level.playerloadoutrestrictions[0].var_ab1984e9) ? level.playerloadoutrestrictions[0].var_ab1984e9 : 0;
+    self.playerloadoutrestrictions.var_934131b6 = isdefined(level.playerloadoutrestrictions[0].var_934131b6) ? level.playerloadoutrestrictions[0].var_934131b6 : 0;
+    self.playerloadoutrestrictions.var_c3fc8c73 = isdefined(level.playerloadoutrestrictions[0].var_c3fc8c73) ? level.playerloadoutrestrictions[0].var_c3fc8c73 : 0;
+    self.playerloadoutrestrictions.var_a2ef45f8 = isdefined(level.playerloadoutrestrictions[0].var_a2ef45f8) ? level.playerloadoutrestrictions[0].var_a2ef45f8 : 0;
+    self.playerloadoutrestrictions.var_cd3db98c = isdefined(level.playerloadoutrestrictions[0].var_cd3db98c) ? level.playerloadoutrestrictions[0].var_cd3db98c : 0;
+    self.playerloadoutrestrictions.var_25a22f4 = isdefined(level.playerloadoutrestrictions[0].var_25a22f4) ? level.playerloadoutrestrictions[0].var_25a22f4 : 0;
     if (isdefined(wildcards) && wildcards.size > 0) {
         foreach (var_9bb0ceab in wildcards) {
-            var_47dbd1c3 = level.var_86fd5bf3[var_9bb0ceab];
+            var_47dbd1c3 = level.playerloadoutrestrictions[var_9bb0ceab];
             if (isdefined(var_47dbd1c3)) {
-                self.var_86fd5bf3.var_42aa9c3 = self.var_86fd5bf3.var_42aa9c3 + (isdefined(var_47dbd1c3.var_42aa9c3) ? var_47dbd1c3.var_42aa9c3 : 0);
-                self.var_86fd5bf3.var_355c3581 = self.var_86fd5bf3.var_355c3581 + (isdefined(var_47dbd1c3.var_355c3581) ? var_47dbd1c3.var_355c3581 : 0);
-                self.var_86fd5bf3.var_882b6b71 = self.var_86fd5bf3.var_882b6b71 + (isdefined(var_47dbd1c3.var_882b6b71) ? var_47dbd1c3.var_882b6b71 : 0);
-                self.var_86fd5bf3.var_ab1984e9 = self.var_86fd5bf3.var_ab1984e9 + (isdefined(var_47dbd1c3.var_ab1984e9) ? var_47dbd1c3.var_ab1984e9 : 0);
-                self.var_86fd5bf3.var_934131b6 = self.var_86fd5bf3.var_934131b6 + (isdefined(var_47dbd1c3.var_934131b6) ? var_47dbd1c3.var_934131b6 : 0);
-                self.var_86fd5bf3.var_c3fc8c73 = self.var_86fd5bf3.var_c3fc8c73 + (isdefined(var_47dbd1c3.var_c3fc8c73) ? var_47dbd1c3.var_c3fc8c73 : 0);
-                self.var_86fd5bf3.var_a2ef45f8 = self.var_86fd5bf3.var_a2ef45f8 + (isdefined(var_47dbd1c3.var_a2ef45f8) ? var_47dbd1c3.var_a2ef45f8 : 0);
-                self.var_86fd5bf3.var_cd3db98c = self.var_86fd5bf3.var_cd3db98c + (isdefined(var_47dbd1c3.var_cd3db98c) ? var_47dbd1c3.var_cd3db98c : 0);
-                self.var_86fd5bf3.var_25a22f4 = self.var_86fd5bf3.var_25a22f4 + (isdefined(var_47dbd1c3.var_25a22f4) ? var_47dbd1c3.var_25a22f4 : 0);
+                self.playerloadoutrestrictions.var_42aa9c3 = self.playerloadoutrestrictions.var_42aa9c3 + (isdefined(var_47dbd1c3.var_42aa9c3) ? var_47dbd1c3.var_42aa9c3 : 0);
+                self.playerloadoutrestrictions.var_355c3581 = self.playerloadoutrestrictions.var_355c3581 + (isdefined(var_47dbd1c3.var_355c3581) ? var_47dbd1c3.var_355c3581 : 0);
+                self.playerloadoutrestrictions.var_882b6b71 = self.playerloadoutrestrictions.var_882b6b71 + (isdefined(var_47dbd1c3.var_882b6b71) ? var_47dbd1c3.var_882b6b71 : 0);
+                self.playerloadoutrestrictions.var_ab1984e9 = self.playerloadoutrestrictions.var_ab1984e9 + (isdefined(var_47dbd1c3.var_ab1984e9) ? var_47dbd1c3.var_ab1984e9 : 0);
+                self.playerloadoutrestrictions.var_934131b6 = self.playerloadoutrestrictions.var_934131b6 + (isdefined(var_47dbd1c3.var_934131b6) ? var_47dbd1c3.var_934131b6 : 0);
+                self.playerloadoutrestrictions.var_c3fc8c73 = self.playerloadoutrestrictions.var_c3fc8c73 + (isdefined(var_47dbd1c3.var_c3fc8c73) ? var_47dbd1c3.var_c3fc8c73 : 0);
+                self.playerloadoutrestrictions.var_a2ef45f8 = self.playerloadoutrestrictions.var_a2ef45f8 + (isdefined(var_47dbd1c3.var_a2ef45f8) ? var_47dbd1c3.var_a2ef45f8 : 0);
+                self.playerloadoutrestrictions.var_cd3db98c = self.playerloadoutrestrictions.var_cd3db98c + (isdefined(var_47dbd1c3.var_cd3db98c) ? var_47dbd1c3.var_cd3db98c : 0);
+                self.playerloadoutrestrictions.var_25a22f4 = self.playerloadoutrestrictions.var_25a22f4 + (isdefined(var_47dbd1c3.var_25a22f4) ? var_47dbd1c3.var_25a22f4 : 0);
             }
         }
     }

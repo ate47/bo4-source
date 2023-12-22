@@ -1,0 +1,49 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2ef173abc9f2fe6d",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_72d799cc95c040f6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_72d799cc95c040f6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9da42015b752ab3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "close"
+                }
+            ],
+            "model": "#p8_fxanim_zm_zod_kraken_chest_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_zod_kraken_chest_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

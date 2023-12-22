@@ -1,0 +1,33 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5fd396f06a82a093",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#spawner_zm_gladiator_marauder",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "prop 1",
+            "attackme": 1,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_twrs_ent_odin_top_zg_mrdr_02",
+    "dontsync": 1,
+    "aligntarget": "tag_align_odin",
+    "team": "any"
+}

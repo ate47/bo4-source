@@ -1,0 +1,26 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_6ccce08ecb4de8f0"
+        },
+        {
+            "description": "#hash_6ccce38ecb4dee09"
+        }
+    ],
+    "description": "#hash_352fa0f46bea077a",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_2405e17f8771fd9",
+    "model": "#p8_wz_cu_bandana",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_46107248e6ff17c7",
+    "unlockableitemref": "#hash_52668ac16b2d46a5",
+    "name": "cu22_item",
+    "displayname": "#hash_46107248e6ff17c7",
+    "icon": "#hash_4c3e98d67e4af20a",
+    "modelscale": 1.25,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_34ae5f9e39fc4a1f",
+    "itemtype": "quest"
+}

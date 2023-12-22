@@ -1,0 +1,18 @@
+{
+    "hinttext": "#hash_50fc254def8a4bb3",
+    "var_922067c4": "scriptbundle",
+    "value2": "2",
+    "var_6006e991": "3",
+    "var_43883094": "1",
+    "var_dfed6968": "4",
+    "type": "gamesettings",
+    "label": "#menu/normal",
+    "name": "ability_cooldown",
+    "displayname": "#hash_3d6510245392a19",
+    "var_684ccd4c": "#menu/instant",
+    "var_9600a8ab": "#menu/slow",
+    "var_71b6e020": "#menu/fast",
+    "var_bd2ff709": "#menu/normal",
+    "var_9de86f42": 4,
+    "setting": "specialistAbilityCooldown_allies_1"
+}

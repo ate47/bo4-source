@@ -1,0 +1,15 @@
+{
+    "var_4dbc4aee": "#hash_12b2ee41f7902a2d",
+    "var_922067c4": "scriptbundle",
+    "result": <error reading:hash_43eda28032566542>,
+    "type": "craftblueprint",
+    "var_99577dd3": <error reading:hash_356d84033a052424>,
+    "var_670f9944": <error reading:hash_6435a41b474a98db>,
+    "var_2e0a273a": <error reading:hash_3948c811380fcd46>,
+    "name": "zblueprint_mansion_silver_molten",
+    "displayname": "Silver Molten",
+    "var_46309255": "spawn_as_ingredient",
+    "var_f4a82731": 3,
+    "var_d8967a0c": 1,
+    "var_318c150c": "section_quests"
+}

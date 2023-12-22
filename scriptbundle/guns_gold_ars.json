@@ -1,0 +1,47 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "ar_accurate_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ar_damage_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ar_modular_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ar_fastfire_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ar_stealth_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 200,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "guns_gold_ars",
+    "var_fde72c94": 100
+}

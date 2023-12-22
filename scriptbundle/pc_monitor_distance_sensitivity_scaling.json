@@ -1,0 +1,18 @@
+{
+    "var_d260763": "#hash_b0051468c8fa60d",
+    "description": "#hash_666d94561c0af34f",
+    "var_60fcfffa": "#hash_323b2b74cfa68663",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "name": "pc_monitor_distance_sensitivity_scaling",
+    "displayname": "#hash_5e9b75a6a0a6a885",
+    "var_926d1be9": 0.01,
+    "var_66faec87": 100,
+    "statname": "m_mouseADSUseMonitorDistance",
+    "var_82c732a7": 1,
+    "minvalue": 1,
+    "var_d4e288e": 15,
+    "var_b7401319": "#hash_7cdc6df793f97d8c"
+}

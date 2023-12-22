@@ -1,0 +1,46 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "hw_event_item_jk",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "var_a6762160": "hw_event_item_kk",
+            "maxweight": 20,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "hw_event_item_mc",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "var_a6762160": "hw_event_item_th",
+            "maxweight": 20,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "var_a6762160": "hw_event_item_tod",
+            "maxweight": 20,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "var_a6762160": "hw_event_item_wb",
+            "maxweight": 20,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 6,
+    "var_9b009839": -1,
+    "name": "world_hw_event_tags_stash",
+    "var_fde72c94": 100
+}

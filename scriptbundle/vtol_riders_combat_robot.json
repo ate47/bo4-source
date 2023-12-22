@@ -1,0 +1,95 @@
+{
+    "objects": [
+        {
+            "exithighloopanim": "#ai_crew_crobot_vtolrider_highdrop_loop",
+            "aligntag": "tag_origin",
+            "rideanim": "#ai_crew_crobot_vtolrider_idle_left",
+            "position": "driver",
+            "exithighlandanim": "#ai_crew_crobot_vtolrider_highdrop_land",
+            "exithighanim": "#ai_crew_crobot_vtolrider_highdrop_intro_left"
+        },
+        {
+            "aligntag": "tag_rider1",
+            "rideanim": "#ai_crew_vtol_captain_idle",
+            "position": "passenger1"
+        },
+        {
+            "exithighloopanim": "#ai_crew_vtol_1_norope_drop_loop",
+            "aligntag": "tag_origin",
+            "rideanim": "#ai_crew_vtol_1_norope_idle",
+            "position": "crew1",
+            "exithighlandanim": "#ai_crew_vtol_1_norope_drop_landing",
+            "exithighanim": "#ai_crew_vtol_1_norope_drop_intro"
+        },
+        {
+            "exithighloopanim": "#ai_crew_vtol_2_norope_drop_loop",
+            "vehicleexitanim": "#v_crew_vtol_hatch_back_open",
+            "aligntag": "tag_rider1",
+            "rideanim": "#ai_crew_vtol_2_norope_idle",
+            "position": "crew2",
+            "exithighlandanim": "#ai_crew_vtol_2_norope_drop_landing",
+            "exithighanim": "#ai_crew_vtol_2_norope_drop_intro"
+        },
+        {
+            "exithighloopanim": "#ai_crew_vtol_3_norope_drop_loop",
+            "vehicleexitanim": "#v_crew_vtol_hatch_back_open",
+            "aligntag": "tag_rider1",
+            "rideanim": "#ai_crew_vtol_3_norope_idle",
+            "position": "crew3",
+            "exithighlandanim": "#ai_crew_vtol_3_norope_drop_landing",
+            "exithighanim": "#ai_crew_vtol_3_norope_drop_intro"
+        },
+        {
+            "exithighloopanim": "#ai_crew_vtol_4_norope_drop_loop",
+            "vehicleexitanim": "#v_crew_vtol_hatch_back_open",
+            "aligntag": "tag_rider1",
+            "rideanim": "#ai_crew_vtol_4_norope_idle",
+            "position": "crew4",
+            "exithighlandanim": "#ai_crew_vtol_4_norope_drop_landing",
+            "exithighanim": "#ai_crew_vtol_4_norope_drop_intro"
+        },
+        {
+            "exithighloopanim": "#ai_crew_vtol_5_norope_drop_loop",
+            "vehicleexitanim": "#v_crew_vtol_hatch_left_open",
+            "aligntag": "tag_rider1",
+            "rideanim": "#ai_crew_vtol_5_norope_idle",
+            "position": "crew5",
+            "exithighlandanim": "#ai_crew_vtol_5_norope_drop_landing",
+            "exithighanim": "#ai_crew_vtol_5_norope_drop_intro"
+        },
+        {
+            "exithighloopanim": "#ai_crew_vtol_6_norope_drop_loop",
+            "vehicleexitanim": "#v_crew_vtol_hatch_left_open",
+            "aligntag": "tag_rider1",
+            "rideanim": "#ai_crew_vtol_6_norope_idle",
+            "position": "crew6",
+            "exithighlandanim": "#ai_crew_vtol_6_norope_drop_landing",
+            "exithighanim": "#ai_crew_vtol_6_norope_drop_intro"
+        },
+        {
+            "exithighloopanim": "#ai_crew_vtol_7_norope_drop_loop",
+            "vehicleexitanim": "#v_crew_vtol_hatch_right_open",
+            "aligntag": "tag_rider1",
+            "rideanim": "#ai_crew_vtol_7_norope_idle",
+            "position": "crew7",
+            "exithighlandanim": "#ai_crew_vtol_7_norope_drop_landing",
+            "exithighanim": "#ai_crew_vtol_7_norope_drop_intro"
+        },
+        {
+            "exithighloopanim": "#ai_crew_vtol_8_norope_drop_loop",
+            "vehicleexitanim": "#v_crew_vtol_hatch_right_open",
+            "aligntag": "tag_rider1",
+            "rideanim": "#ai_crew_vtol_8_norope_idle",
+            "position": "crew8",
+            "exithighlandanim": "#ai_crew_vtol_8_norope_drop_landing",
+            "exithighanim": "#ai_crew_vtol_8_norope_drop_intro"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_68364173334cd4d4",
+    "type": "vehicleriders",
+    "vmtype": "both",
+    "dropspeed": 350,
+    "name": "vtol_riders_combat_robot",
+    "highexitlandheight": 28
+}

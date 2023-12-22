@@ -1,0 +1,48 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_t8_zm_zod_catalyst_plasma_spawn_01",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#spawner_zm_catalyst_plasma",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "zombie_spawner_catalyst_plasma",
+            "allowdeath": 1,
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_13c0c900aa1bd882",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "name": "spawner_zm_zombie",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_zod_catalyst_plasma_spawn_post_split",
+    "dontsync": 1,
+    "team": "any"
+}

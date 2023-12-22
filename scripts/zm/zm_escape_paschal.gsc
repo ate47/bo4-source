@@ -1885,7 +1885,7 @@ function function_5bcc5537(e_revivee, s_return) {
 // Size: 0x264
 function private function_2aee0563() {
     level endon(#"hash_2f347ddff9fdaeb9", #"hash_4ff99434ccb06268");
-    level thread scene::init_streamer(#"hash_722c4512700977d4", #"allies", 0, 0);
+    level thread scene::init_streamer(#"aib_vign_zm_mob_brutus_revealed", #"allies", 0, 0);
     var_704f12cc = struct::get("s_p_s4_s_k_ins");
     var_704f12cc.e_activator = var_704f12cc zm_unitrigger::function_fac87205("", 64);
     var_704f12cc.mdl_key = util::spawn_model(var_704f12cc.model, var_704f12cc.origin, var_704f12cc.angles);
@@ -1973,7 +1973,7 @@ function private function_adb645f2() {
         return;
     }
     level flag::set(#"hash_67f8280f4ac19125");
-    scene::add_scene_func(#"hash_722c4512700977d4", &function_bdaf22e8, "Shot 1");
+    scene::add_scene_func(#"aib_vign_zm_mob_brutus_revealed", &function_bdaf22e8, "Shot 1");
     foreach (e_player in util::get_players()) {
         if (e_player clientfield::get("" + #"hash_4f58771e117ee3ee")) {
             e_player clientfield::set("" + #"hash_4f58771e117ee3ee", 0);
@@ -1988,7 +1988,7 @@ function private function_adb645f2() {
     music::setmusicstate("escape_lockup");
     level thread util::delay(5.5, undefined, &function_f8ec40fe);
     level thread util::delay(2, undefined, &function_f52bbbb5);
-    level scene::play(#"hash_722c4512700977d4", "Shot 1");
+    level scene::play(#"aib_vign_zm_mob_brutus_revealed", "Shot 1");
 }
 
 // Namespace paschal/zm_escape_paschal
@@ -3422,10 +3422,10 @@ function step_5(var_a276c861) {
     }
     level thread function_e998f810("tag_socket_b");
     exploder::exploder("lgtexp_richtofenspod_on");
-    level scene::function_27f5972e(#"hash_70ea46435e8fd4ed");
+    level scene::function_27f5972e(#"aib_vign_zm_mob_idle_inside_pod");
     wait(1.6);
-    scene::add_scene_func(#"hash_70ea46435e8fd4ed", &function_8ffd93bf);
-    level thread scene::play(#"hash_70ea46435e8fd4ed");
+    scene::add_scene_func(#"aib_vign_zm_mob_idle_inside_pod", &function_8ffd93bf);
+    level thread scene::play(#"aib_vign_zm_mob_idle_inside_pod");
     s_map = struct::get(#"hash_137eedd5080e585d");
     s_map scene::play("Shot 2");
     mdl_door scene::play(#"p8_fxanim_zm_esc_lab_door_map_bundle", mdl_door);
@@ -3662,8 +3662,8 @@ function step_5_cleanup(var_a276c861, var_19e802fa) {
     }
     function_37838b09();
     exploder::stop_exploder("lgtexp_richtofenspod_on");
-    level scene::stop(#"hash_70ea46435e8fd4ed");
-    level scene::function_f81475ae(#"hash_70ea46435e8fd4ed");
+    level scene::stop(#"aib_vign_zm_mob_idle_inside_pod");
+    level scene::function_f81475ae(#"aib_vign_zm_mob_idle_inside_pod");
     function_f2f59362();
     arrayremoveindex(level.sndplayervox, "elixir", 1);
     arrayremoveindex(level.sndplayervox, "powerup", 1);
@@ -3698,9 +3698,9 @@ function step_6(var_a276c861) {
     level.var_8b4ac110 = 256;
     if (!var_a276c861) {
         var_3ded86ce = function_708bfb60();
-        scene::add_scene_func(#"hash_6c8ed7f336f9ee3c", &boss_intro, "play");
-        scene::add_scene_func(#"hash_6c8ed7f336f9ee3c", &_cover_challenge_reward_timeout, "done");
-        level scene::play(#"hash_6c8ed7f336f9ee3c", var_3ded86ce);
+        scene::add_scene_func(#"aib_vign_zm_mob_brutus_boss_ghost_intro", &boss_intro, "play");
+        scene::add_scene_func(#"aib_vign_zm_mob_brutus_boss_ghost_intro", &_cover_challenge_reward_timeout, "done");
+        level scene::play(#"aib_vign_zm_mob_brutus_boss_ghost_intro", var_3ded86ce);
     }
     level.musicsystemoverride = 1;
     music::setmusicstate("boss");
@@ -3736,11 +3736,11 @@ function function_ea25ff10(player) {
 // Size: 0x13c
 function boss_intro(a_ents) {
     wait(2.1);
-    a_ents[#"hash_5e9ded7036d6311f"] hide();
+    a_ents[#"fakeactor 2"] hide();
     wait(4.95);
-    a_ents[#"hash_5e9dec7036d62f6c"] hide();
+    a_ents[#"fakeactor 3"] hide();
     wait(1.6);
-    a_ents[#"hash_5e9dee7036d632d2"] hide();
+    a_ents[#"fakeactor 1"] hide();
     wait(1.6);
     a_ents[#"boss"] clientfield::increment("" + #"hash_29d283d7f747d358");
     wait(0.3);
@@ -4289,13 +4289,13 @@ function function_77cf4d4a() {
     e_richtofen function_30bab0b0();
     foreach (player in getplayers()) {
         if (player !== e_richtofen) {
-            player scene::function_8b06792(array(#"hash_38654bcdffc6d5ed", #"hash_15674d3b96867b43", #"hash_55cf700c69e28ede"));
+            player scene::function_8b06792(array(#"ai_vign_zm_mob_pod", #"vign_zm_mob_into_machine", #"hash_55cf700c69e28ede"));
         }
     }
-    scene::add_scene_func(#"hash_25e7b4fd0113745e", &function_dc59c134, "play");
-    level thread scene::play(#"hash_25e7b4fd0113745e");
+    scene::add_scene_func(#"vign_zm_mob_into_machine_idle", &function_dc59c134, "play");
+    level thread scene::play(#"vign_zm_mob_into_machine_idle");
     level thread scene::play(#"p8_zm_esc_dark_machine_bundle", "RICH_IN");
-    level scene::play(#"hash_15674d3b96867b43", e_richtofen);
+    level scene::play(#"vign_zm_mob_into_machine", e_richtofen);
     e_richtofen thread lui::screen_flash(0.1, 1, 0.6, 1, "white");
     level flag::set(#"richtofen_sacrifice");
     e_richtofen setcharacteroutfit(2);
@@ -4305,10 +4305,10 @@ function function_77cf4d4a() {
     }
     level.var_7e34e7db.script_animname = "cryo_pod";
     a_scene_ents = array(e_richtofen, level.var_7e34e7db);
-    level scene::init(#"hash_38654bcdffc6d5ed", a_scene_ents);
+    level scene::init(#"ai_vign_zm_mob_pod", a_scene_ents);
     wait(1.2);
-    scene::add_scene_func(#"hash_38654bcdffc6d5ed", &function_6225044e, "Shot 3");
-    level scene::play(#"hash_38654bcdffc6d5ed", a_scene_ents);
+    scene::add_scene_func(#"ai_vign_zm_mob_pod", &function_6225044e, "Shot 3");
+    level scene::play(#"ai_vign_zm_mob_pod", a_scene_ents);
     e_richtofen.var_f22c83f5 = 0;
     level flag::wait_till(#"hash_3d16465b22e70170");
     e_richtofen thread function_30bab0b0(0);
@@ -4426,7 +4426,7 @@ function function_dc59c134(a_ents) {
     level flag::wait_till(#"richtofen_sacrifice");
     a_ents[#"fake_richtofen"] show();
     level flag::wait_till(#"main_quest_completed");
-    level scene::stop(#"hash_25e7b4fd0113745e", 1);
+    level scene::stop(#"vign_zm_mob_into_machine_idle", 1);
 }
 
 // Namespace paschal/zm_escape_paschal
@@ -4548,8 +4548,8 @@ function function_30febada() {
     level.var_e7184999 = 1;
     var_14ed46ec delete();
     if (level.var_7fe331bf) {
-        scene::add_scene_func(#"hash_2f6dc47d93e018d0", &function_9c59bce1, "play");
-        var_3ded86ce scene::play(#"hash_2f6dc47d93e018d0", var_3ded86ce);
+        scene::add_scene_func(#"aib_vign_zm_mob_brutus_grand_attack_fail", &function_9c59bce1, "play");
+        var_3ded86ce scene::play(#"aib_vign_zm_mob_brutus_grand_attack_fail", var_3ded86ce);
         level thread function_17b00ca4(1);
         level waittilltimeout(6.1, #"hash_6721db7073dcfe48");
         level notify(#"hash_77922c6d618e505a");

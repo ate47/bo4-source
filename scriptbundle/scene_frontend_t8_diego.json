@@ -1,0 +1,78 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_diego_main",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_a1590241d402f29",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "specialist"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1533c72a0b06d435",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_350311504362cb9b",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_57ad0af6aa107968",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#p8_mov_zm_zod_dual_knives_diego_01",
+            "type": "prop",
+            "name": "prop2"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_diego",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

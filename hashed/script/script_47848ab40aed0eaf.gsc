@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 // Size: 0x8c
 function __init__() {
     if (isdefined(getgametypesetting(#"hash_6fb11b1e304d533c")) ? getgametypesetting(#"hash_6fb11b1e304d533c") : 0) {
-        item_world_fixup::function_e70fa91c(#"supply_stash_parent", #"hash_122a0d1e67363704", 3);
+        item_world_fixup::function_e70fa91c(#"supply_stash_parent", #"world_hw_event_tags_supply_drop", 3);
     }
 }
 

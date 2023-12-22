@@ -1,0 +1,53 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "sniperscope_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "pistol_grip_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "acog_plus_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "extbarrel_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "foregrip_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "fastmag_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "var_345eba59": 7,
+    "var_9b009839": -1,
+    "name": "ambush_supply_stash_slot5",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

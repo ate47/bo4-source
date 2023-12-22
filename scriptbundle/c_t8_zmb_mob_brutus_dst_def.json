@@ -1,0 +1,22 @@
+{
+    "piece2_hittags": [
+        {
+            "hittag": "tag_weapon_right"
+        }
+    ],
+    "var_ce6ea3fa": "#c_t8_zmb_mob_brutus_baton",
+    "var_aa7fbf8b": "j_helmet",
+    "var_20a1cc0c": -1,
+    "var_922067c4": "scriptbundle",
+    "var_c83371f4": "#c_t8_zmb_mob_brutus_helmet",
+    "type": "destructiblecharacterdef",
+    "var_9fdd055b": "tag_weapon_right",
+    "var_cb768102": "helmet",
+    "vmtype": "both",
+    "name": "c_t8_zmb_mob_brutus_dst_def",
+    "var_4d756ec6": "#c_t8_zmb_mob_brutus_baton",
+    "var_55d2a6b2": 1,
+    "piececount": 2,
+    "var_19e4a0d": "#c_t8_zmb_mob_brutus_helmet",
+    "var_56d63213": "tag_weapon_right"
+}

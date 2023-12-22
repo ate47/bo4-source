@@ -1,0 +1,19 @@
+{
+    "privacysettingslist": [
+        {
+            "versionlist": [
+                {
+                    "descentrylist": [
+                        {
+                            "var_2cc19304": "#hash_4ffce427b1305595"
+                        }
+                    ],
+                    "var_98bce37f": "#hash_5c78caf09b7d4d85",
+                    "var_7a610673": 1
+                }
+            ],
+            "var_4099f2b9": "ccpa"
+        }
+    ],
+    "name": "privacysettingslist"
+}

@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 500,
+            "var_a6762160": "wz_escape_dest_parade_grounds_list_items",
+            "maxweight": 500,
+            "available": -1
+        },
+        {
+            "minweight": 32,
+            "maxweight": 55,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 420,
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "wz_escape_dest_parade_grounds_list_item_default",
+    "var_fde72c94": 100
+}

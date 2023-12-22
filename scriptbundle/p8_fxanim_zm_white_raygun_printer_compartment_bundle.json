@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d8db414363dd277",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7d8db4446ceb9db5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                }
+            ],
+            "model": "#hash_23a5090230216ec",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_white_raygun_printer_compartment_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

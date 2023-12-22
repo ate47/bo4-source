@@ -1,0 +1,37 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_189c3991bbdd6443",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_20fa98ea919b7729",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_4c06bc763e373f0f",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_book_zombie_shuffle_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

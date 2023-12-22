@@ -1,0 +1,181 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_532417549af66d4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "ilde"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_38b27576336531d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6a75c26877f3e5e6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1aac8126dbc153d6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "roar"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b984857d9eb63",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "roar1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53aba2b7c90243a0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "roar2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_24f221de31f87832",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "pain"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45d4746e9d677506",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "charge"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_493cdfb7c852b2ad",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "charge_blast"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_eaa339792cd1389",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "arrive",
+                    "var_1c7fbd6b": "#hash_5aeaed077ff41f8a"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_54fb8a6268fcd5a9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "leave",
+                    "var_1c7fbd6b": "#hash_5aeaed077ff41f8a"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_64ac92a9e7e06d26",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "var_64c0ee5a": "#hash_46aa8073bbd2e3d2",
+                    "name": "crack",
+                    "var_1c7fbd6b": "#hash_32a51dafb1c7344f"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3770cecd779c7056",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "crack_leave",
+                    "var_1c7fbd6b": "#hash_46aa8073bbd2e3d2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25cf04431b3e6a8c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "crack_arrive",
+                    "var_1c7fbd6b": "#hash_46aa8073bbd2e3d2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28e333fd3018fcf1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "var_64c0ee5a": "#hash_5af2bec2a3aa53af",
+                    "name": "break",
+                    "var_1c7fbd6b": "#hash_32a51dafb1c7344f"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_23f22f984ef7db59",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break_leave",
+                    "var_1c7fbd6b": "#hash_5af2bec2a3aa53af"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_70f4c6486b558759",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break_arrive",
+                    "var_1c7fbd6b": "#hash_5af2bec2a3aa53af"
+                }
+            ],
+            "model": "#hash_5cb4b96f5c4d8f49",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_zod_eye_02_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

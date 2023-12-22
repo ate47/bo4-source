@@ -45,11 +45,11 @@ function __init__() {
     level.var_8cb8d474[#"free"][3] = #"hash_6eb883c3b52cdd66";
     level.var_8cb8d474[#"free"][4] = #"hash_6eb886c3b52ce27f";
     level.var_8cb8d474[#"allies"] = [];
-    level.var_8cb8d474[#"allies"][0] = #"hash_3de928cb4eca5c62";
-    level.var_8cb8d474[#"allies"][2] = #"hash_14207ac052338b77";
-    level.var_8cb8d474[#"allies"][1] = #"hash_2da80819aca61444";
-    level.var_8cb8d474[#"allies"][3] = #"hash_477e5761fdabcb19";
-    level.var_8cb8d474[#"allies"][4] = #"hash_42145b8ebbfee26";
+    level.var_8cb8d474[#"allies"][0] = #"draft_player_struct_0_allies";
+    level.var_8cb8d474[#"allies"][2] = #"draft_player_struct_1_allies";
+    level.var_8cb8d474[#"allies"][1] = #"draft_player_struct_2_allies";
+    level.var_8cb8d474[#"allies"][3] = #"draft_player_struct_3_allies";
+    level.var_8cb8d474[#"allies"][4] = #"draft_player_struct_4_allies";
     level.var_8cb8d474[#"axis"] = [];
     level.var_8cb8d474[#"axis"][0] = #"hash_3b2607cfca030035";
     level.var_8cb8d474[#"axis"][2] = #"hash_253fd3975ea7547c";

@@ -1,0 +1,70 @@
+{
+    "itemlist": [
+        {
+            "minweight": 300,
+            "var_a6762160": "dockyard_list_guns_dlc1",
+            "maxweight": 320,
+            "available": -1
+        },
+        {
+            "minweight": 250,
+            "var_a6762160": "dockyard_list_health",
+            "maxweight": 300,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "var_a6762160": "dockyard_list_equipment",
+            "maxweight": 240,
+            "available": -1
+        },
+        {
+            "minweight": 33,
+            "var_a6762160": "dockyard_list_gear",
+            "maxweight": 58,
+            "available": -1
+        },
+        {
+            "minweight": 105,
+            "var_a6762160": "dockyard_list_consumable",
+            "maxweight": 180,
+            "available": -1
+        },
+        {
+            "minweight": 200,
+            "var_a6762160": "dockyard_list_attachment",
+            "maxweight": 300,
+            "available": -1
+        },
+        {
+            "minweight": 200,
+            "var_a6762160": "dockyard_list_ammo",
+            "maxweight": 250,
+            "available": -1
+        },
+        {
+            "minweight": 35,
+            "var_a6762160": "storage_list",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 45,
+            "var_a6762160": "world_base_event_parent",
+            "maxweight": 65,
+            "available": -1
+        },
+        {
+            "minweight": 70,
+            "var_a6762160": "dockyard_list_armor_shards",
+            "maxweight": 70,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 10,
+    "var_9b009839": -1,
+    "name": "dockyard_list_items_dlc1",
+    "var_fde72c94": 100
+}

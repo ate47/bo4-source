@@ -1,0 +1,40 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1d1730f5440fbf62",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_2c107f5bb910588",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_47584fbf1db850cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "name": "actor 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_hook_trap_zombie",
+    "dontsync": 1,
+    "team": "any"
+}

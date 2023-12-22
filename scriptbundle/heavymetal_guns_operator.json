@@ -1,0 +1,26 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "lmg_spray_t8_operator_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "lmg_standard_t8_operator_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "heavymetal_guns_operator",
+    "var_fde72c94": 100
+}

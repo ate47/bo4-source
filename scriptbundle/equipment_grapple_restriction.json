@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#hash_660dddffebb9984d",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "equipment_grapple_restriction",
+    "displayname": "#hash_2d272d013fc30895",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__eq_grapple__restricted"
+}

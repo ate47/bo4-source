@@ -1,0 +1,74 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_t8_zm_zod_bltfthr_spawn",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#spawner_zm_blight_father",
+            "type": "actor",
+            "name": "zombie_spawner_blight_father"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7669c41c7e869b72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "spawner_zm_zombie"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#c_t8_zmb_blightfather_body1",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#c_t8_zmb_blightfather_elbow1_ri",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#c_t8_zmb_blightfather_elbow1_le",
+            "type": "prop",
+            "name": "prop 3"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_zod_bltfthr_spawn_post_split",
+    "dontsync": 1,
+    "team": "any"
+}

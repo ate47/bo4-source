@@ -1,0 +1,68 @@
+{
+    "spawnlocations": [
+        {
+            "spawnlocation": "stoker_location"
+        }
+    ],
+    "weapondamagescaleoverrides": [
+        {
+            "var_fe55d685": "#hero_scepter_lv1_zm",
+            "var_fc420d71": 0.5,
+            "weaponid": "#hero_scepter_lv1",
+            "var_628192b0": 1,
+            "var_97b22faa": 1,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_scepter_lv1_zm",
+            "var_fc420d71": 0.5,
+            "weaponid": "#hero_scepter_lv1",
+            "var_628192b0": 1,
+            "var_97b22faa": 1,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_scepter_lv1_zm",
+            "var_fc420d71": 0.5,
+            "weaponid": "#hero_scepter_lv1",
+            "var_628192b0": 1,
+            "var_97b22faa": 1,
+            "damagescale": 0.5
+        }
+    ],
+    "var_20266c0d": 400,
+    "var_10460f1e": 1,
+    "var_87e1e74d": 250,
+    "var_10a1d059": 0.5,
+    "var_73070557": 5000,
+    "scoreevent": "#kill_stoker",
+    "var_322773b9": 0.5,
+    "var_287805eb": 10000,
+    "var_b7a8163d": 110,
+    "var_d33d95d0": 8000,
+    "maxhealth": 14000,
+    "var_e3ee7606": 3,
+    "var_fc420d71": 1,
+    "var_159f74bb": 240,
+    "var_accd767d": 5,
+    "name": "zm_stoker_settings",
+    "minhealth": 5000,
+    "var_2512cf3b": 600,
+    "var_628192b0": 3,
+    "var_250a1683": 100,
+    "var_10d707f8": 1000,
+    "var_97b22faa": 5,
+    "damagescale": 0.5,
+    "category": "#heavy",
+    "var_854eebd": 0.15,
+    "var_cd8b7a6c": 0.8,
+    "var_20dea374": 100,
+    "var_a22e6e32": 48,
+    "stunduration": 1,
+    "var_81da787": 1100,
+    "var_6f7331cd": 1,
+    "var_f227d0d0": 36,
+    "var_bf28a226": 250,
+    "var_1d505f4d": 5000,
+    "var_450edb3b": 1
+}

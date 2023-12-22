@@ -1,0 +1,17 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "model": "#p8_wz_supply_stash_health_lvl3",
+    "weapon": <error reading:hash_7ecd376f9782832>,
+    "type": "itemspawnentry",
+    "name": "health_item_large",
+    "var_36781d9f": "fly_drop_generic",
+    "stackcount": 1,
+    "icon": "#hash_754ad869787d7ac0",
+    "modelscale": 1.2,
+    "rarity": "Common",
+    "handler": "#hash_51b30f6e7331e136",
+    "pickupicon": "#hash_754ad869787d7ac0",
+    "itemtype": "health",
+    "pickupsound": "fly_pickup_health_large"
+}

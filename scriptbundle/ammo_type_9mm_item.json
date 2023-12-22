@@ -1,0 +1,17 @@
+{
+    "amount": 50,
+    "description": "#hash_34af0d829f35cf59",
+    "var_922067c4": "scriptbundle",
+    "model": "#p8_wz_ammo_pickup_9mm",
+    "weapon": <error reading:hash_716325846a60c18a>,
+    "type": "itemspawnentry",
+    "hintstring": "#hash_3ef744e8fe8025ee",
+    "name": "ammo_type_9mm_item",
+    "displayname": "#hash_3ef744e8fe8025ee",
+    "icon": "#hash_1f1a7bba22bf7c6f",
+    "modelscale": 1.1,
+    "rarity": "None",
+    "handler": "#hash_9ed0c30684ca35a",
+    "itemtype": "ammo",
+    "pickupsound": "fly_pickup_ammo_box"
+}

@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 30,
+            "var_a6762160": "armor_item_large",
+            "maxweight": 30,
+            "available": -1
+        },
+        {
+            "minweight": 70,
+            "maxweight": 70,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "gear_list_good",
+    "var_fde72c94": 100
+}

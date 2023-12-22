@@ -196,7 +196,7 @@ function function_4967eb5a(activator) {
 // Checksum 0x1e0322ea, Offset: 0x10d8
 // Size: 0xc4
 function function_35fa13e8(a_ents) {
-    fakeactor = a_ents[#"hash_5e9dee7036d632d2"];
+    fakeactor = a_ents[#"fakeactor 1"];
     if (isdefined(fakeactor)) {
         level endon(#"game_ended");
         fakeactor setcandamage(1);

@@ -1,0 +1,32 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5406bc11418b4d69",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_60588ad0b075bfc0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "main & idle loop out"
+                }
+            ],
+            "model": "#p8_fxanim_zm_esc_water_tower_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_water_tower_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

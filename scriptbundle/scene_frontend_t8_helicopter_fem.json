@@ -1,0 +1,413 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_helicopter",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_helicopter2",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_helicopter3",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_helicopter4",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "player",
+            "name": "player 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_699ec2efbb71f285",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_699ec2efbb71f285",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_699ec2efbb71f285",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_699ec2efbb71f285",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "frozen_moment_character",
+            "aligntarget": "tag_align_frozen"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4b4dbb96dc38203e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4b4dbb96dc38203e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4b4dbb96dc38203e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4b4dbb96dc38203e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_4a7568851a0264b8",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_450212a4a35fecfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_450212a4a35fecfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_450212a4a35fecfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_450212a4a35fecfc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_228d6995eaf4053",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_71d86a7e53c9c626",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_71d86a7e53c9c626",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_71d86a7e53c9c626",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_71d86a7e53c9c626",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_228d9995eaf456c",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_b5aa53195353735",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_b5aa53195353735",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_b5aa53195353735",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_b5aa53195353735",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_72c32bb7f037871e",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d6b606b8552c331",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d6b606b8552c331",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d6b606b8552c331",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d6b606b8552c331",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_4a7568851a0264b8",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d6b5f6b8552c17e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d6b5f6b8552c17e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d6b5f6b8552c17e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d6b5f6b8552c17e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_4a7568851a0264b8",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ac4f719dc3de49c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ac4f719dc3de49c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ac4f719dc3de49c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ac4f719dc3de49c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_50a0382a42b3dbdb",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 7"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_helicopter_fem",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "var_16999a5d": -1,
+    "var_eb00c330": -26,
+    "team": "any",
+    "var_be60a82b": 29,
+    "var_922b4fc5": 1,
+    "var_3e692842": -35
+}

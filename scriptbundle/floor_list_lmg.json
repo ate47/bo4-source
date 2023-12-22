@@ -1,0 +1,17 @@
+{
+    "itemlist": [
+        {
+            "minweight": 300,
+            "var_a6762160": "lmg_standard_t8_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 380,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "var_9b009839": -1,
+    "name": "floor_list_lmg",
+    "var_fde72c94": 100
+}

@@ -1,0 +1,21 @@
+{
+    "description": "#hash_3ee36b22d9999257",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_25afd8c1f55ba379",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_6911b319f54dc1ed",
+    "consumable": 1,
+    "name": "armor_shard_item",
+    "displayname": "#hash_6911b319f54dc1ed",
+    "var_36781d9f": "fly_drop_armor_repair_plate",
+    "stackcount": 5,
+    "icon": "#hash_1f4710b94c2f59c0",
+    "casttime": 3,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "evt_armor_plate_repair",
+    "handler": "#generic_pickup",
+    "stackable": 1,
+    "itemtype": "armor_shard",
+    "pickupsound": "fly_pickup_armor_repair_plate"
+}

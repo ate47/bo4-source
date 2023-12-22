@@ -1,0 +1,25 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_6b4f1f8c0c22026f"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_49bc6c07c0e8d845",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_77481a72bcac3eec",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_11687cdf537985b2",
+    "consumable": 1,
+    "name": "perk_item_stimulant",
+    "displayname": "#hash_11687cdf537985b2",
+    "stackcount": 1,
+    "icon": "#hash_72a85c9b46e9c864",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_gungho",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

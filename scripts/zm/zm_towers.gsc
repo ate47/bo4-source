@@ -1017,7 +1017,7 @@ function function_ef3f5ee5() {
         level flag::clear("exp_lgt_smg_accurate_t8");
         level flag::set(#"pause_round_timeout");
         array::thread_all(level.players, &zm_towers_crowd::function_51ea46f3, 0, 1);
-        scene::init_streamer(#"hash_44287f972922420d", #"allies");
+        scene::init_streamer(#"cin_zm_mvid_pack_a_punch_react", #"allies");
         while (level.var_7292cf15) {
             level thread function_79aa236();
             level scene::play("<unknown string>");

@@ -1,0 +1,12 @@
+{
+    "var_6a36c78c": "j_wrist_le",
+    "var_82aadb9b": "j_knee_le",
+    "dropoff": "#hash_4e338e7d91559579",
+    "contrails": "#hash_4614aebd76bba158",
+    "name": "dfxt_heist",
+    "icon": "loot_ui_icon_jumppacks_trail_heist",
+    "var_ccb00fe4": "j_wrist_ri",
+    "body_trail_3p": "#hash_4a74075e11578eb",
+    "largeicon": "loot_ui_icon_jumppacks_trail_heist_large",
+    "body_trail": "#hash_4a03475e10f45d9"
+}

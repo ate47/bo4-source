@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5ea73635166f3bd7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 10,
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_3a04236cc35a9b92",
+            "type": "prop",
+            "name": "wire_sparking_xlong_thick_mod"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_wire_sparking_xlong_thick_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

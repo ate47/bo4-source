@@ -1,0 +1,16 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "wz_default_list_health",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "var_9b009839": -1,
+    "name": "construction_list_health",
+    "var_fde72c94": 100
+}

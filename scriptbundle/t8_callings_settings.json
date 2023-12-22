@@ -1,0 +1,1359 @@
+{
+    "factioncallings": [
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 1000,
+                    "task": "zombiekiller_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 20,
+                    "task": "perkaholism_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "tacticalrifles_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 750,
+                    "task": "assaultrifles_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 50,
+                    "task": "alchemist_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 200000,
+                    "task": "moneyhungry_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 75,
+                    "task": "armsdealer_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 1000,
+                    "task": "lightmachineguns_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 500,
+                    "task": "headhunter_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 30,
+                    "task": "packmule_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "closeandpersonal_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 1500,
+                    "task": "submachineguns_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 15,
+                    "task": "revenant_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 75,
+                    "task": "doorman_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 1000000,
+                    "task": "makeyourpoint_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 500,
+                    "task": "pistols_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 150,
+                    "task": "closeandpersonal_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "boom_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 2000,
+                    "task": "zombiekiller_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 2500,
+                    "task": "shotguns_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 2500,
+                    "task": "punchdrunk_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 500,
+                    "task": "punchdrunk_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 50,
+                    "task": "alchemist_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 1500,
+                    "task": "sniperrifles_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 100,
+                    "task": "arcaneaggression_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 25,
+                    "task": "wallbuyer_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 750,
+                    "task": "headhunter_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 5000,
+                    "task": "tacticalrifles_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 1000,
+                    "task": "assaultrifles_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 100,
+                    "task": "specialslaughter_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 75,
+                    "task": "powergrabber_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 750,
+                    "task": "lightmachineguns_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 15,
+                    "task": "perkaholic_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 30,
+                    "task": "itsamystery_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 25,
+                    "task": "packmule_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "boom_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 2000,
+                    "task": "submachineguns_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 750,
+                    "task": "arcaneaggression_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 15,
+                    "task": "armsdealer_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 1000,
+                    "task": "pistols_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 75,
+                    "task": "survivor_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 125,
+                    "task": "alchemist_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 10,
+                    "task": "perkaholism_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 2000,
+                    "task": "zombiekiller_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "shotguns_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 5,
+                    "task": "revenant_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 100,
+                    "task": "specialslaughter_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 1500,
+                    "task": "sniperrifles_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 250,
+                    "task": "closeandpersonal_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 1000,
+                    "task": "tacticalrifles_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 20,
+                    "task": "packmule_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 750,
+                    "task": "headhunter_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "boom_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 25,
+                    "task": "doorman_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "zombiekiller_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 5000,
+                    "task": "assaultrifles_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "closeandpersonal_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 2000,
+                    "task": "lightmachineguns_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000000,
+                    "task": "makeyourpoint_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 750,
+                    "task": "submachineguns_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 1000,
+                    "task": "punchdrunk_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 750,
+                    "task": "headhunter_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 500,
+                    "task": "arcaneaggression_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 25,
+                    "task": "alchemist_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 1000,
+                    "task": "punchdrunk_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 1500,
+                    "task": "pistols_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 75000,
+                    "task": "moneyhungry_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 1500,
+                    "task": "shotguns_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 15,
+                    "task": "packmule_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 125,
+                    "task": "survivor_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 500,
+                    "task": "sniperrifles_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 50,
+                    "task": "powergrabber_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 150,
+                    "task": "specialslaughter_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 15,
+                    "task": "itsamystery_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 25,
+                    "task": "armsdealer_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 2500,
+                    "task": "tacticalrifles_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 75,
+                    "task": "perkaholic_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 250,
+                    "task": "arcaneaggression_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 2000,
+                    "task": "assaultrifles_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 150,
+                    "task": "boom_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 25,
+                    "task": "alchemist_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 10,
+                    "task": "revenant_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 50,
+                    "task": "wallbuyer_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 5000,
+                    "task": "lightmachineguns_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 10,
+                    "task": "perkaholism_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 2000,
+                    "task": "zombiekiller_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "submachineguns_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 500,
+                    "task": "pistols_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 25,
+                    "task": "doorman_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "zombiekiller_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 2500,
+                    "task": "punchdrunk_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 1000,
+                    "task": "shotguns_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 500,
+                    "task": "headhunter_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 30,
+                    "task": "packmule_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "boom_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 1000,
+                    "task": "sniperrifles_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 150,
+                    "task": "specialslaughter_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 1500,
+                    "task": "headhunter_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "closeandpersonal_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 2000,
+                    "task": "tacticalrifles_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000000,
+                    "task": "makeyourpoint_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 25,
+                    "task": "survivor_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 100,
+                    "task": "closeandpersonal_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 2500,
+                    "task": "assaultrifles_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 25,
+                    "task": "packmule_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 500,
+                    "task": "punchdrunk_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 50,
+                    "task": "alchemist_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "lightmachineguns_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 15,
+                    "task": "wallbuyer_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 200,
+                    "task": "arcaneaggression_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 2500,
+                    "task": "submachineguns_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 500000,
+                    "task": "moneyhungry_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 500,
+                    "task": "pistols_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 100,
+                    "task": "specialslaughter_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 75,
+                    "task": "powergrabber_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 15,
+                    "task": "armsdealer_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 25,
+                    "task": "doorman_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 50,
+                    "task": "itsamystery_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 5000,
+                    "task": "shotguns_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "boom_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 500,
+                    "task": "sniperrifles_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 750,
+                    "task": "arcaneaggression_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 750,
+                    "task": "tacticalrifles_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 15,
+                    "task": "perkaholic_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "zombiekiller_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 25,
+                    "task": "revenant_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 1000,
+                    "task": "assaultrifles_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 20,
+                    "task": "packmule_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "zombiekiller_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 250,
+                    "task": "headhunter_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 1500,
+                    "task": "lightmachineguns_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 75,
+                    "task": "alchemist_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 250,
+                    "task": "boom_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 250,
+                    "task": "headhunter_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 2000,
+                    "task": "submachineguns_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 30,
+                    "task": "perkaholism_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "specialslaughter_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 100,
+                    "task": "closeandpersonal_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 1500,
+                    "task": "pistols_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 2500,
+                    "task": "punchdrunk_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 1000000,
+                    "task": "makeyourpoint_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 100,
+                    "task": "closeandpersonal_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "shotguns_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 100,
+                    "task": "arcaneaggression_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 50,
+                    "task": "survivor_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 15,
+                    "task": "packmule_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 2500,
+                    "task": "sniperrifles_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 1000,
+                    "task": "tacticalrifles_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 50,
+                    "task": "powergrabber_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 1500,
+                    "task": "punchdrunk_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 750,
+                    "task": "assaultrifles_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 50,
+                    "task": "alchemist_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 50,
+                    "task": "wallbuyer_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 25,
+                    "task": "revenant_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "specialslaughter_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 2000,
+                    "task": "lightmachineguns_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 75,
+                    "task": "alchemist_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 1000,
+                    "task": "zombiekiller_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 1500,
+                    "task": "submachineguns_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 750,
+                    "task": "headhunter_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 500000,
+                    "task": "moneyhungry_task"
+                }
+            ]
+        },
+        {
+            "rushpact": [
+                {
+                    "xp": 500,
+                    "target": 50,
+                    "task": "boom_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 500,
+                    "task": "arcaneaggression_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 3000,
+                    "task": "assaultrifles_task"
+                }
+            ],
+            "classicpact": [
+                {
+                    "xp": 500,
+                    "target": 10,
+                    "task": "perkaholic_task"
+                },
+                {
+                    "xp": 1000,
+                    "target": 100,
+                    "task": "specialslaughter_task"
+                },
+                {
+                    "xp": 1500,
+                    "target": 2500,
+                    "task": "shotguns_task"
+                },
+                {
+                    "xp": 2500,
+                    "target": 75,
+                    "task": "itsamystery_task"
+                }
+            ]
+        }
+    ],
+    "eventlist": [
+        {
+            "event": "zm_halloween_2018"
+        },
+        {
+            "event": "zm_winter_2018"
+        }
+    ],
+    "tasklist": [
+        {
+            "xp": 500,
+            "task": "zombiekiller_task"
+        },
+        {
+            "xp": 500,
+            "task": "assaultrifles_task"
+        },
+        {
+            "xp": 500,
+            "task": "submachineguns_task"
+        },
+        {
+            "xp": 500,
+            "task": "lightmachineguns_task"
+        },
+        {
+            "xp": 500,
+            "task": "sniperrifles_task"
+        },
+        {
+            "xp": 500,
+            "task": "shotguns_task"
+        },
+        {
+            "xp": 500,
+            "task": "tacticalrifles_task"
+        },
+        {
+            "xp": 500,
+            "task": "pistols_task"
+        },
+        {
+            "xp": 500,
+            "task": "closeandpersonal_task"
+        },
+        {
+            "xp": 500,
+            "task": "punchdrunk_task"
+        },
+        {
+            "xp": 500,
+            "task": "boom_task"
+        },
+        {
+            "xp": 500,
+            "task": "arcaneaggression_task"
+        },
+        {
+            "xp": 500,
+            "task": "specialslaughter_task"
+        },
+        {
+            "xp": 500,
+            "task": "headhunter_task"
+        },
+        {
+            "xp": 500,
+            "task": "alchemist_task"
+        },
+        {
+            "xp": 500,
+            "task": "perkaholic_task"
+        },
+        {
+            "xp": 500,
+            "task": "moneyhungry_task"
+        },
+        {
+            "xp": 500,
+            "task": "armsdealer_task"
+        },
+        {
+            "xp": 500,
+            "task": "wallbuyer_task"
+        },
+        {
+            "xp": 500,
+            "task": "itsamystery_task"
+        },
+        {
+            "xp": 500,
+            "task": "survivor_task"
+        },
+        {
+            "xp": 500,
+            "task": "doorman_task"
+        },
+        {
+            "xp": 500,
+            "task": "revenant_task"
+        },
+        {
+            "xp": 500,
+            "task": "packmule_task"
+        },
+        {
+            "xp": 500,
+            "task": "packingheat_task"
+        },
+        {
+            "xp": 500,
+            "task": "closeandpersonal_task_holiday"
+        },
+        {
+            "xp": 500,
+            "task": "itsamystery_task_holiday"
+        },
+        {
+            "xp": 500,
+            "task": "lightmachineguns_task_holiday"
+        },
+        {
+            "xp": 500,
+            "task": "perkaholic_task_holiday"
+        },
+        {
+            "xp": 500,
+            "task": "makeyourpoint_task"
+        },
+        {
+            "xp": 500,
+            "task": "powergrabber_task"
+        },
+        {
+            "xp": 500,
+            "task": "perkaholism_task"
+        }
+    ],
+    "dailyschedule": [
+        {
+            "xp": 1000,
+            "task": "invalid_task"
+        },
+        {
+            "xp": 1000,
+            "task": "survivor_task"
+        },
+        {
+            "xp": 1000,
+            "task": "submachineguns_task"
+        },
+        {
+            "xp": 1000,
+            "task": "arcaneaggression_task"
+        },
+        {
+            "xp": 1000,
+            "task": "alchemist_task"
+        },
+        {
+            "xp": 1000,
+            "task": "zombiekiller_task"
+        },
+        {
+            "xp": 1000,
+            "task": "closeandpersonal_task"
+        },
+        {
+            "xp": 1000,
+            "task": "boom_task"
+        },
+        {
+            "xp": 1000,
+            "task": "specialslaughter_task"
+        },
+        {
+            "xp": 1000,
+            "task": "headhunter_task"
+        },
+        {
+            "xp": 1000,
+            "task": "shotguns_task"
+        },
+        {
+            "xp": 1000,
+            "task": "revenant_task"
+        },
+        {
+            "xp": 1000,
+            "task": "wallbuyer_task"
+        },
+        {
+            "xp": 1000,
+            "task": "perkaholic_task"
+        },
+        {
+            "xp": 1000,
+            "task": "closeandpersonal_task"
+        },
+        {
+            "xp": 1000,
+            "task": "tacticalrifles_task"
+        },
+        {
+            "xp": 1000,
+            "task": "itsamystery_task"
+        },
+        {
+            "xp": 1000,
+            "task": "packmule_task"
+        },
+        {
+            "xp": 1000,
+            "task": "doorman_task"
+        },
+        {
+            "xp": 1000,
+            "task": "armsdealer_task"
+        },
+        {
+            "xp": 1000,
+            "task": "punchdrunk_task"
+        },
+        {
+            "xp": 1000,
+            "task": "moneyhungry_task"
+        },
+        {
+            "xp": 1000,
+            "task": "arcaneaggression_task"
+        },
+        {
+            "xp": 1000,
+            "task": "zombiekiller_task"
+        },
+        {
+            "xp": 1000,
+            "task": "alchemist_task"
+        },
+        {
+            "xp": 1000,
+            "task": "wallbuyer_task"
+        },
+        {
+            "xp": 1000,
+            "task": "boom_task"
+        },
+        {
+            "xp": 1000,
+            "task": "assaultrifles_task"
+        },
+        {
+            "xp": 1000,
+            "task": "packmule_task"
+        },
+        {
+            "xp": 1000,
+            "task": "punchdrunk_task"
+        },
+        {
+            "xp": 1000,
+            "task": "revenant_task"
+        },
+        {
+            "xp": 1000,
+            "task": "specialslaughter_task"
+        },
+        {
+            "xp": 1000,
+            "task": "survivor_task"
+        },
+        {
+            "xp": 1000,
+            "task": "sniperrifles_task"
+        },
+        {
+            "xp": 1000,
+            "task": "headhunter_task"
+        },
+        {
+            "xp": 1000,
+            "task": "perkaholic_task"
+        },
+        {
+            "xp": 1000,
+            "task": "moneyhungry_task"
+        },
+        {
+            "xp": 1000,
+            "task": "itsamystery_task"
+        },
+        {
+            "xp": 1000,
+            "task": "pistols_task"
+        },
+        {
+            "xp": 1000,
+            "task": "armsdealer_task"
+        },
+        {
+            "xp": 1000,
+            "task": "closeandpersonal_task"
+        },
+        {
+            "xp": 1000,
+            "task": "doorman_task"
+        },
+        {
+            "xp": 1000,
+            "task": "zombiekiller_task"
+        },
+        {
+            "xp": 1000,
+            "task": "packmule_task"
+        },
+        {
+            "xp": 1000,
+            "task": "boom_task"
+        },
+        {
+            "xp": 1000,
+            "task": "survivor_task"
+        },
+        {
+            "xp": 1000,
+            "task": "alchemist_task"
+        },
+        {
+            "xp": 1000,
+            "task": "wallbuyer_task"
+        },
+        {
+            "xp": 1000,
+            "task": "arcaneaggression_task"
+        },
+        {
+            "xp": 1000,
+            "task": "lightmachineguns_task"
+        },
+        {
+            "xp": 1000,
+            "task": "armsdealer_task"
+        },
+        {
+            "xp": 1000,
+            "task": "revenant_task"
+        },
+        {
+            "xp": 1000,
+            "task": "perkaholic_task"
+        },
+        {
+            "xp": 1000,
+            "task": "punchdrunk_task"
+        },
+        {
+            "xp": 1000,
+            "task": "assaultrifles_task"
+        },
+        {
+            "xp": 1000,
+            "task": "itsamystery_task"
+        },
+        {
+            "xp": 1000,
+            "task": "headhunter_task"
+        }
+    ],
+    "var_1fb16f5a": "1544551257",
+    "var_922067c4": "scriptbundle",
+    "name": "t8_callings_settings"
+}

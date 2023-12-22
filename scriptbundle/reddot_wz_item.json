@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "reddot"
+        }
+    ],
+    "description": "#hash_2aa9e45553bbeb9d",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_optic_red_dot_world",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_665191b4ba3b8d8b",
+    "var_65b3a12": 1,
+    "name": "reddot_wz_item",
+    "displayname": "#hash_665191b4ba3b8d8b",
+    "icon": "#ui_icon_attachment_dualoptic",
+    "modelscale": 2,
+    "rarity": "None",
+    "equipsound": "uin_wz_attach_reflex",
+    "handler": "#hash_788c59214ead02af",
+    "attachslotoptics": 1,
+    "pickupicon": "#ui_icon_attachment_dualoptic",
+    "itemtype": "attachment"
+}

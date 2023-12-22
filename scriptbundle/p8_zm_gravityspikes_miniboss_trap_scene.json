@@ -1,0 +1,44 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3aeaefe5c418adef",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_272b0bf7ae3fb76e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_68632e6c521ef1f4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2",
+                    "blend": 0.2
+                }
+            ],
+            "model": "#$default_aitype",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "mini_boss",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_zm_gravityspikes_miniboss_trap_scene",
+    "dontsync": 1,
+    "team": "any"
+}

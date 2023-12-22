@@ -1,0 +1,81 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4d04de579f60ed17",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4d04de579f60ed17",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "press_tease",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7d2950e903c4a40b",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_532a03c08b153e01",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "press_create"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_19817afeb975e5af",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "exit",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_69f8d0c3dc85b219",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "press_no_create"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_532a03c08b153e01",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "skip_to_idle"
+                }
+            ],
+            "lerptime": 0.5,
+            "firstframe": 1,
+            "model": "#p8_fxanim_core_frontend_zm_lab_talisman_press_mod",
+            "type": "prop",
+            "name": "talisman"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p8_fxanim_core_frontend_zm_lab_talisman_press_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

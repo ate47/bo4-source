@@ -1,0 +1,38 @@
+{
+    "itemlist": [
+        {
+            "minweight": 200,
+            "var_a6762160": "pistol_fullauto_t8_item",
+            "var_3f8c08e3": "ammo_type_45_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "var_a6762160": "shotgun_fullauto_t8_item",
+            "var_3f8c08e3": "ammo_type_12ga_item",
+            "maxweight": 150,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "var_a6762160": "smg_folding_t8_item",
+            "var_3f8c08e3": "ammo_type_9mm_item",
+            "maxweight": 150,
+            "available": -1
+        },
+        {
+            "minweight": 70,
+            "var_a6762160": "sniper_mini14_t8_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 70,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 4,
+    "var_9b009839": -1,
+    "name": "firing_range_list_guns_event",
+    "var_fde72c94": 100
+}

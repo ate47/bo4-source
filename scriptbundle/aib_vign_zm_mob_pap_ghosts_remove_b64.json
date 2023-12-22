@@ -1,0 +1,62 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7ec9289e25612bbd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6205190718bd89cd",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7ec9259e256126a4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6205160718bd84b4",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_57e1deced266e0eb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_3c96cdb8ef969f0e",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "pap"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_pap_ghosts_remove_b64",
+    "dontsync": 1,
+    "team": "any"
+}

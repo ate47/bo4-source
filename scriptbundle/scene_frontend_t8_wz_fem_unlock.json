@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_fem_lobby_mp_pos_03",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom",
+                    "blend": 0.2
+                }
+            ],
+            "var_9de1f44c": 1,
+            "type": "fakeplayer",
+            "name": "specialist_customization"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_wz_fem_unlock",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,82 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3db4ed657ebd4d0f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_dbcf7e1ccb26cc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9fbdcce8543ae72",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_793205c54cf30709",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3e1bc4a8cec98b08",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53b0c65e01c2d8d7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_49cd4346ccfd0037",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_1aa3c43c489c3295",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_ballista_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

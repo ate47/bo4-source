@@ -988,13 +988,13 @@ function function_35d74d73(e_attacker) {
     }
     while (e_attacker.var_f1b20bef === self && isalive(self)) {
         if (self.health <= self.maxhealth * 0.5 && !(isdefined(self.is_floating) && self.is_floating)) {
-            self thread scene::play(#"hash_39dbc8cee7057640", self);
+            self thread scene::play(#"aib_tplt_zombie_base_dth_f_float_notrans_01", self);
             self.is_floating = 1;
         }
         waitframe(1);
     }
     if (isdefined(self) && isdefined(self.is_floating) && self.is_floating) {
-        self thread scene::stop(#"hash_39dbc8cee7057640");
+        self thread scene::stop(#"aib_tplt_zombie_base_dth_f_float_notrans_01");
         self.is_floating = undefined;
     }
     var_d64818ae = e_attacker clientfield::get("" + #"hash_1efc6bf68f09d02c");

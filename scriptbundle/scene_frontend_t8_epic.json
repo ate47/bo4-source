@@ -1,0 +1,66 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_nomad_main",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play",
+                    "var_b94164e": "core_frontend_ruin"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen",
+            "var_29563fd6": 90
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5298fb0a7a554732",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_b94164e": "core_frontend_ruin"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "frozen_moment_character"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_48e50d9ca012bddc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_b94164e": "core_frontend_ruin"
+                }
+            ],
+            "model": "#hash_4a7568851a0264b8",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_epic",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

@@ -1,0 +1,17 @@
+{
+    "hinttext": "#hash_78763c330c5852a1",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_dfed6968": "3",
+    "type": "gamesettings",
+    "name": "zm_heavyfrequency",
+    "displayname": "#hash_5a4c1293b8b75b5f",
+    "var_684ccd4c": "#hash_6aa28260a8fffe8",
+    "var_9600a8ab": "#hash_8547de6ff2e6e2a",
+    "var_71b6e020": "#hash_3d70f0da8afd383a",
+    "var_bd2ff709": "#hash_4bf59e78dfb9da30",
+    "var_9de86f42": 4,
+    "setting": "zmHeavySpawnFreq"
+}

@@ -1,0 +1,23 @@
+{
+    "var_4050486a": "#hash_3e6da11174f09627",
+    "var_4dbc4aee": "#hash_7afcbd7b37054026",
+    "var_11928e3b": -90,
+    "var_922067c4": "scriptbundle",
+    "var_fe8a5e39": "#hash_1796d85a4ee770b1",
+    "result": <error reading:hash_1189cbd2be3400c5>,
+    "type": "craftblueprint",
+    "var_3c809ce0": 16,
+    "var_99577dd3": <error reading:hash_6a40892d11e16a06>,
+    "var_670f9944": <error reading:hash_13188921c711b031>,
+    "var_2e0a273a": <error reading:hash_3ce9451a2bd662e4>,
+    "name": "zblueprint_shield_dual_wield",
+    "displayname": "Dual wield shield",
+    "var_db27a7f7": "p8_zm_off_blueprint_01",
+    "var_391591d0": "#hash_15397900097c254e",
+    "var_1238231a": "#zombie/repair_shield",
+    "var_46309255": "persistent_buy",
+    "var_abd9b2d0": "#hash_6573f011f996ab09",
+    "var_f4a82731": 3,
+    "var_c028dcfe": 1,
+    "var_318c150c": "section_shield"
+}

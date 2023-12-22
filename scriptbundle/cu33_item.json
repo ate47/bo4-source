@@ -1,0 +1,29 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_75a83b86aa7dd7e3",
+            "var_7e835304": "#hash_35020c395a89befb"
+        },
+        {
+            "description": "#hash_75a83c86aa7dd996"
+        }
+    ],
+    "description": "#hash_7d7d8d5f3f0f5b63",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_5d7167ce757d1ede",
+    "model": "#hash_418c075f73d35766",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_5ff76c7784c93de4",
+    "unlockableitemref": "#hash_7e8f5d041a7f5941",
+    "name": "cu33_item",
+    "displayname": "#hash_5ff76c7784c93de4",
+    "icon": "#hash_1ab72676e090d843",
+    "modelscale": 1,
+    "rarity": "None",
+    "var_a51bc1f7": "#hash_3b65f8d23493d947",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_4947abbb91b5fbfe",
+    "pickupicon": "#hash_1ab72676e090d843",
+    "itemtype": "quest"
+}

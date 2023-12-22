@@ -1,0 +1,55 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "cu06_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_slot1_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_slot2_dlc1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_slot3_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "molotov_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_slot5_dlc1",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "flamethrower_wz_item",
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "var_345eba59": 7,
+    "var_9b009839": 10,
+    "name": "supply_stash_cu06",
+    "var_fde72c94": 100,
+    "var_dc91e192": 1,
+    "supplystash": 1
+}

@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "pistolscope"
+        }
+    ],
+    "description": "#hash_2122bde7362c6934",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_wz_pickup_hybrid_optic",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_75910f89d3c7bccc",
+    "var_65b3a12": 1,
+    "name": "acog_plus_wz_item",
+    "displayname": "#hash_75910f89d3c7bccc",
+    "icon": "#hash_b68d2a74e183b4",
+    "modelscale": 1.5,
+    "rarity": "None",
+    "equipsound": "uin_wz_attach_reflex",
+    "handler": "#hash_788c59214ead02af",
+    "attachslotoptics": 1,
+    "pickupicon": "#hash_b68d2a74e183b4",
+    "itemtype": "attachment"
+}

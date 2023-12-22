@@ -1,0 +1,22 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:ar_an94_t8_wz>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "var_65b3a12": 6,
+    "name": "ar_an94_t8_item",
+    "icon": "#hash_48ae534cd67cee68",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Common",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_5992913ace5fcff9",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

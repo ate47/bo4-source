@@ -1,0 +1,18 @@
+{
+    "amount": 30,
+    "description": "#hash_21159a051530cd1c",
+    "var_922067c4": "scriptbundle",
+    "model": "#p8_wz_ammo_pickup_338",
+    "weapon": <error reading:hash_3a56659cea54a13>,
+    "type": "itemspawnentry",
+    "hintstring": "#hash_2f951a0817f78b9d",
+    "var_6731866b": 60,
+    "name": "ammo_type_338_item",
+    "displayname": "#hash_2f951a0817f78b9d",
+    "icon": "#hash_5115a4ba3e7e6d1c",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_9ed0c30684ca35a",
+    "itemtype": "ammo",
+    "pickupsound": "fly_pickup_ammo_can"
+}

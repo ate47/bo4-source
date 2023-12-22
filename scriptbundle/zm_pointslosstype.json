@@ -1,0 +1,17 @@
+{
+    "hinttext": "#hash_8bfbc24e8aebc47",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_dfed6968": "3",
+    "type": "gamesettings",
+    "name": "zm_pointslosstype",
+    "displayname": "#hash_2982088a351381fd",
+    "var_684ccd4c": "#hash_1f0968aad9d63087",
+    "var_9600a8ab": "#hash_68b65fb510ccd214",
+    "var_71b6e020": "#hash_19680cd9d03c2a1c",
+    "var_bd2ff709": "#hash_24cb168909e0ed9f",
+    "var_9de86f42": 3,
+    "setting": "zmPointsLossType"
+}

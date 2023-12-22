@@ -1,0 +1,28 @@
+{
+    "options": [
+        {
+            "label": "#menu/none",
+            "value": "0"
+        },
+        {
+            "label": "#menu/default",
+            "value": "1"
+        },
+        {
+            "label": "#hash_2a0c72a43293dde0",
+            "value": "2"
+        }
+    ],
+    "var_dfedf08e": 1,
+    "description": "#hash_24e34fadee1405ea",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "multiplayer_music",
+    "displayname": "#hash_1af05951bcd0e15a",
+    "var_66faec87": 10,
+    "statname": "snd_multiplayer_music_track",
+    "var_b7401319": "#menu/off"
+}

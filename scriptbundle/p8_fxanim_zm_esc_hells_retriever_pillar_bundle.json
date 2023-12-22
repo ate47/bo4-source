@@ -1,0 +1,123 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2d3240f3c88af041",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_724c06e8e491f8b2",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_64d20d729e8be153",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a8bee70786aad81",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_216f72960ba54e42",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3bdc3121d2046fec",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_2dc0396f428de43d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_181d939167fb663b",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_15fc8234d968f2e7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c12cd5c32deec34",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_1fae84a0cf3ee405",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c0809ce178a7d07",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_4cfb80e36fe648c0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_121674574b1cbb1a",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_534da2ee6ac39b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                }
+            ],
+            "model": "#hash_adeac78843c8ca5",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_hells_retriever_pillar_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

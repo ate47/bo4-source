@@ -1,0 +1,8 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "gamesettings",
+    "name": "scope_acog_tr_powersemi_restriction",
+    "displayname": "#weapon/tr_powersemi_t8",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__tr_powersemi_t8__attachments__acog"
+}

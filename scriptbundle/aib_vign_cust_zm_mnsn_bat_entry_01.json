@@ -1,0 +1,31 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_752c5670d0f949f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_72c6c555ef9bc8e5",
+            "type": "vehicle",
+            "name": "prop 1",
+            "allowdeath": 1,
+            "aligntarget": "tag_align_main_hall",
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_mnsn_bat_entry_01",
+    "dontsync": 1,
+    "aligntarget": "tag_align_main_hall",
+    "team": "any"
+}

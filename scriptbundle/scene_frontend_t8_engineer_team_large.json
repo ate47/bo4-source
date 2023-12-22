@@ -1,0 +1,34 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2954561e478e158e",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_52de1e8f816a3991",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom"
+                }
+            ],
+            "model": "#hash_2b06dc88b8bd2ad0",
+            "type": "fakeplayer",
+            "name": "specialist"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_engineer_team_large",
+    "dontsync": 1,
+    "aligntarget": "lobby_player_7_large",
+    "team": "any"
+}

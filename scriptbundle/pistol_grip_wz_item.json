@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "grip"
+        }
+    ],
+    "description": "#hash_5f1c07e495c6fe3d",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_wz_pickup_pistol_grip",
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "hintstring": "#hash_11ed4198ea5c24eb",
+    "var_65b3a12": 1,
+    "name": "pistol_grip_wz_item",
+    "displayname": "#hash_11ed4198ea5c24eb",
+    "icon": "#hash_4348110f15bef28",
+    "modelscale": 1.5,
+    "rarity": "Common",
+    "equipsound": "uin_wz_attach_grip",
+    "handler": "#hash_788c59214ead02af",
+    "pickupicon": "#hash_4348110f15bef28",
+    "itemtype": "attachment"
+}

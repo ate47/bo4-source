@@ -50,7 +50,7 @@ function private function_eaba72c9() {
                     level thread function_418e26fe();
                     break;
                 case 2:
-                    vehicletypes = array(#"hash_54469210eb79f8fa", #"hash_2c40642bbbab460d", #"hash_2f8f41949bf9944b");
+                    vehicletypes = array(#"veh_suv_player_police_wz", #"veh_quad_player_wz_police", #"veh_muscle_car_convertible_player_wz_blk");
                     level thread function_418e26fe(undefined, 1, 1, 0, 1, vehicletypes[randomint(vehicletypes.size)]);
                     break;
                 }
@@ -78,14 +78,14 @@ function private function_eaba72c9() {
                         level thread drop_supply_drop(players[0].origin, 1);
                         break;
                     case 3:
-                        vehicletypes = array(#"hash_54469210eb79f8fa", #"hash_2c40642bbbab460d", #"hash_2f8f41949bf9944b");
+                        vehicletypes = array(#"veh_suv_player_police_wz", #"veh_quad_player_wz_police", #"veh_muscle_car_convertible_player_wz_blk");
                         level thread drop_supply_drop(players[0].origin, 1, 1, vehicletypes[randomint(vehicletypes.size)]);
                         break;
                     case 4:
                         spawn_supply_drop(players[0].origin);
                         break;
                     case 5:
-                        vehicletypes = array(#"hash_660785b539889002", #"hash_54bf3cd56e8c5c4a", #"hash_6fdb3b0114439974", #"hash_327d1f9834b6b91e");
+                        vehicletypes = array(#"vehicle_t8_mil_tank_wz_black", #"vehicle_t8_mil_tank_wz_green", #"vehicle_t8_mil_tank_wz_grey", #"vehicle_t8_mil_tank_wz_tan");
                         level thread drop_supply_drop(players[0].origin, 1, 1, vehicletypes[randomint(vehicletypes.size)]);
                         break;
                     }
@@ -265,7 +265,7 @@ function private function_71c31c8d() {
 // Params 1, eflags: 0x5 linked
 // Checksum 0xae289f4d, Offset: 0x1688
 // Size: 0x694
-function private function_500a6615(itemspawnlist = #"hash_696141fcc5f2e372") {
+function private function_500a6615(itemspawnlist = #"supply_drop_stash_parent_dlc1") {
     if (isdefined(self.supplydrop)) {
         supplydrop = self.supplydrop;
         self.supplydrop = undefined;

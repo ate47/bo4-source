@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6efaabae6f84710a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_447f76ed4c2c8dbb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "launch"
+                }
+            ],
+            "model": "#hash_297d3c8be0667ad7",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_orange_flinger_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

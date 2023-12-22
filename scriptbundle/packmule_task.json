@@ -1,0 +1,9 @@
+{
+    "callingtask": "#weapons_packed",
+    "var_922067c4": "scriptbundle",
+    "image": "#hash_2f4a5e6a604831be",
+    "dailytarget": 5,
+    "name": "packmule_task",
+    "var_4ef43740": "#hash_4e141bff36e4287c",
+    "var_88e4a04f": "#hash_56d2601cf5da034f"
+}

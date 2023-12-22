@@ -1,0 +1,16 @@
+{
+    "var_d260763": "#hash_bf81085f8ce51b5",
+    "description": "#hash_87fb19808c57064",
+    "var_60fcfffa": "#menu/off",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "name": "pc_vertical_sync",
+    "displayname": "#hash_5a8e85e3aa51701c",
+    "var_66faec87": 10,
+    "statname": "r_vsync",
+    "var_82c732a7": 1,
+    "minvalue": 1,
+    "var_b7401319": "#menu/on"
+}

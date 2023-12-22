@@ -1,0 +1,34 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2de9020c72665e3c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "blend": 0.5
+                }
+            ],
+            "lerptime": 1,
+            "model": "#hash_7d34923130fabf8c",
+            "type": "player",
+            "var_d318cc2c": 1,
+            "name": "bot",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "scene_rifle_m_stand_idle_lowready",
+    "dontsync": 1,
+    "team": "any"
+}

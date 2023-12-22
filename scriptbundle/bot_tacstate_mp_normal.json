@@ -1,0 +1,109 @@
+{
+    "movingstancehandlerlist": [
+        {
+            "stance": "#slide",
+            "name": "#hash_51f609ea675fecde"
+        },
+        {
+            "stance": "#sprint",
+            "name": "#hash_59db68c04af7aab5"
+        },
+        {
+            "stance": "#stand",
+            "name": "#default"
+        }
+    ],
+    "positionhandlerlist": [
+        {
+            "name": "#gameobject_interact",
+            "center": "#gameobject_interact"
+        },
+        {
+            "name": "#hash_27560b4cbc3c3443",
+            "center": "#goal"
+        },
+        {
+            "querylist": [
+                {
+                    "name": "bot_tacquery_nearest_point_nodeless"
+                }
+            ],
+            "name": "#default",
+            "center": "#goal"
+        }
+    ],
+    "actionlist": [
+        {
+            "name": "#hash_78881ac649c38041"
+        },
+        {
+            "name": "#melee_glass"
+        },
+        {
+            "name": "#melee_enemy"
+        },
+        {
+            "name": "#reload_weapon"
+        },
+        {
+            "name": "#use_gameobject"
+        },
+        {
+            "name": "#switch_to_weapon"
+        },
+        {
+            "name": "#look_for_enemy"
+        },
+        {
+            "name": "#scan_for_threats"
+        }
+    ],
+    "var_6ef48dfa": 0.2,
+    "var_a78526b8": "j_spineupper",
+    "var_48aa05a1": 400,
+    "var_1f5429aa": 200,
+    "fovbusy": 90,
+    "var_4f836fd6": 3500,
+    "var_f181b86b": "bot_tacquery_space_seeds",
+    "var_bda90bb9": 200,
+    "yawsensitivity": 0.8,
+    "var_922067c4": "scriptbundle",
+    "inaccuracy": 80,
+    "var_19019506": 0.76,
+    "pacifistwait": 1,
+    "var_4333f343": 0.1,
+    "type": "bottacticalstate",
+    "var_1f8a6a2": 4,
+    "var_2fc77943": 8,
+    "pitchacceleration": 7.5,
+    "var_b9f05fc": 0.5,
+    "var_c850085f": 1,
+    "var_abf895b5": 1,
+    "var_d5bf8f0d": 0.85,
+    "var_25664dde": 1000,
+    "pitchsensitivity": 0.8,
+    "yawacceleration": 15,
+    "var_b4c8298c": 0.9,
+    "vmtype": "server",
+    "var_ac1c818f": 0.7,
+    "sprintdist": 300,
+    "var_b6b1339c": "j_head",
+    "name": "bot_tacstate_mp_normal",
+    "var_82aa37d8": 4500,
+    "var_ecf6111e": 0.5,
+    "var_fc299ded": 0.1,
+    "highlyawareradius": 128,
+    "perfectaim": 1,
+    "maxsightdist": 16384,
+    "fov": 140,
+    "var_f80f8551": 0.8,
+    "maxrange": 5000,
+    "var_2b02e26a": 10,
+    "var_b392418": 0.1,
+    "var_f58a14bd": 0.8,
+    "var_69610dbe": 20,
+    "var_5eaa9e02": 1,
+    "var_bc0b2a06": 3,
+    "Accuracy": 1,
+    "var_d1fb2f1a": 0.25
+}

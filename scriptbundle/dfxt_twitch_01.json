@@ -1,0 +1,12 @@
+{
+    "var_6a36c78c": "j_wrist_le",
+    "var_82aadb9b": "j_knee_le",
+    "dropoff": "#hash_432b1dc6fbe37489",
+    "contrails": "#hash_2bd9596be0908e3a",
+    "name": "dfxt_twitch_01",
+    "icon": "loot_ui_icon_jumppacks_trail_twitch_2",
+    "var_ccb00fe4": "j_wrist_ri",
+    "body_trail_3p": "#hash_2bce8ed8f05e1f21",
+    "largeicon": "loot_ui_icon_jumppacks_trail_twitch_2_large",
+    "body_trail": "#hash_2bd57ad8f0641bd3"
+}

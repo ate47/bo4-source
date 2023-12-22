@@ -1,0 +1,81 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_304d5c1a7989dcba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_44474b974ab03cb2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_44474a974ab03aff",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_444749974ab0394c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_444748974ab03799",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_444747974ab035e6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_444746974ab03433",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break6"
+                }
+            ],
+            "model": "#hash_2614f911ca2e2c19",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_office_wall_barrier_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

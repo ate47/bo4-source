@@ -1,0 +1,23 @@
+{
+    "options": [
+        {
+            "label": "#hash_49b77bd0a4122a0",
+            "value": "0"
+        },
+        {
+            "label": "#hash_13af8f935b42b69e",
+            "value": "1"
+        }
+    ],
+    "description": "#hash_15094916b17a28ae",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "look_inversion",
+    "displayname": "#hash_3a6409cda9a68b9e",
+    "var_66faec87": 10,
+    "statname": "input_invertpitch",
+    "var_b7401319": "#menu/off"
+}

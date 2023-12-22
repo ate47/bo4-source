@@ -1,0 +1,15 @@
+{
+    "damageevaded": "#hash_ec10bdd1d41ea46",
+    "wavestartfinal": "#hash_7b4886abf5e52596",
+    "var_922067c4": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "killmultiple": "#hash_4cc70f27f5793a64",
+    "vmtype": "both",
+    "name": "cdp_pilot2_kls_straferun",
+    "arrive": "#hash_7e510e03e3b6a3ba",
+    "wavestart": "#hash_62f02b7de65686ff",
+    "kill1": "#hash_786896d885fcd22d",
+    "kill3": "#hash_786894d885fccec7",
+    "kill2": "#hash_786893d885fccd14",
+    "killnone": "#hash_5f317a0f7c106624"
+}

@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "extclip"
+        }
+    ],
+    "description": "#hash_35bc4dffbb65053a",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_wz_pickup_ext_mag",
+    "type": "itemspawnentry",
+    "hintstring": "#wz/attach_extclip",
+    "var_65b3a12": 1,
+    "name": "extmag_wz_item",
+    "displayname": "#wz/attach_extclip",
+    "icon": "#ui_icon_attachment_extendedmags",
+    "attachslotmagazine": 1,
+    "modelscale": 1.25,
+    "rarity": "None",
+    "equipsound": "uin_wz_attach_mags",
+    "handler": "#hash_788c59214ead02af",
+    "pickupicon": "#ui_icon_attachment_extendedmags",
+    "itemtype": "attachment"
+}

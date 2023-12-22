@@ -1,0 +1,17 @@
+{
+    "hinttext": "#hash_7e8098493922e69f",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_dfed6968": "3",
+    "type": "gamesettings",
+    "label": "#hash_4bf59e78dfb9da30",
+    "name": "zm_doorstate",
+    "displayname": "#hash_c8cbcf5089e3cb5",
+    "var_9600a8ab": "#hash_3b41c280ca439dd1",
+    "var_71b6e020": "#hash_7ebc76ab224b7dcb",
+    "var_bd2ff709": "#hash_4bf59e78dfb9da30",
+    "var_9de86f42": 3,
+    "setting": "zmDoorState"
+}

@@ -949,11 +949,11 @@ function function_864365ef(t_damage, var_e72c9959) {
     self notsolid();
     self setteam(util::get_enemy_team(self.team));
     self zombie_utility::makezombiecrawler(1);
-    var_e72c9959 thread scene::init(#"hash_6a81729051de85ac", self);
+    var_e72c9959 thread scene::init(#"aib_vign_zm_mob_hook_trap_zombie", self);
     playsoundatposition(#"hash_42c6cc2204b7fbbd", self.origin);
     t_damage waittill(#"trap_finished");
     var_44342e79 = var_e72c9959 scene::function_8582657c(#"p8_fxanim_zm_esc_trap_fan_play", "Shot 2");
-    var_e72c9959 scene::play(#"hash_6a81729051de85ac", self);
+    var_e72c9959 scene::play(#"aib_vign_zm_mob_hook_trap_zombie", self);
     if (isdefined(self)) {
         self val::reset("spinning_trap", "ignoreall");
         self val::reset("spinning_trap", "allowdeath");

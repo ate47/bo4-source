@@ -1,0 +1,22 @@
+{
+    "var_4050486a": "#hash_6adaea9a0756a29e",
+    "var_4dbc4aee": "#hash_687c0230505673f9",
+    "var_11928e3b": -90,
+    "var_922067c4": "scriptbundle",
+    "var_fe8a5e39": "#hash_1796d85a4ee770b1",
+    "result": <error reading:hash_6bc98c4c2176f9b8>,
+    "type": "craftblueprint",
+    "var_3c809ce0": 16,
+    "var_99577dd3": <error reading:hash_48e6c6655df12b80>,
+    "var_670f9944": <error reading:hash_2025267ea3980087>,
+    "var_2e0a273a": <error reading:hash_4c8c0a735bce4532>,
+    "name": "zblueprint_zhield_white",
+    "displayname": "Riot Shield",
+    "var_db27a7f7": "p8_zm_whi_blueprint_04",
+    "var_391591d0": "#hash_5b4330351c2e1f64",
+    "var_46309255": "persistent_buy",
+    "var_abd9b2d0": "#hash_3562fe8569b10d6f",
+    "var_f4a82731": 3,
+    "var_c028dcfe": 1,
+    "var_318c150c": "section_shield"
+}

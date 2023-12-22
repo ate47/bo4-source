@@ -1,0 +1,29 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "zombie_supply_stash_guns_gold_or_purple",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_zombie_items",
+            "maxweight": 50,
+            "available": 3
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "cu15_item",
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "zombie_supply_stash_cu15",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

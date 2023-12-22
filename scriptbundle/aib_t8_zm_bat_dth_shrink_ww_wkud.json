@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_42729aaa573a7e2f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_72c6c555ef9bc8e5",
+            "type": "vehicle",
+            "name": "vehicle 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "aib_t8_zm_bat_dth_shrink_ww_wkud",
+    "dontsync": 1,
+    "team": "any"
+}

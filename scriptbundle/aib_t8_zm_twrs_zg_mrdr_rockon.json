@@ -1,0 +1,41 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4284d62a1797928b",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_4f2920ed5e6dab15",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_485de37ae65b7ff1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_5095ea6f1f637881",
+            "type": "fakeactor",
+            "name": "fakeactor 1",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_t8_zm_twrs_zg_mrdr_rockon",
+    "dontsync": 1,
+    "team": "any"
+}

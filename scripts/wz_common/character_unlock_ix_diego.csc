@@ -28,9 +28,9 @@ function __init__() {
 function function_2613aeec(enabled) {
     if (enabled) {
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
-            item_world_fixup::function_e70fa91c(#"hash_5d3928f724e1cadf", #"hash_24bfa16ffb71fe9f", 3);
+            item_world_fixup::function_e70fa91c(#"ammo_stash_parent_dlc1", #"zombie_supply_stash_cu29", 3);
         } else {
-            item_world_fixup::function_e70fa91c(#"hash_5d3928f724e1cadf", #"hash_24bfa16ffb71fe9f", 6);
+            item_world_fixup::function_e70fa91c(#"ammo_stash_parent_dlc1", #"zombie_supply_stash_cu29", 6);
         }
     }
 }

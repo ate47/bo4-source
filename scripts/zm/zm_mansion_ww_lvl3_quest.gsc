@@ -856,12 +856,12 @@ function function_d8648a1e(e_player) {
 // Checksum 0x5b18d526, Offset: 0x3b48
 // Size: 0x134
 function function_42c889b7(e_player) {
-    level thread scene::init(#"hash_1f7947f335a89821", self);
+    level thread scene::init(#"aib_vign_cust_mnsn_crmsn_nfrtu_spawn_01", self);
     level thread scene::play(#"p8_fxanim_zm_man_grave_lid_break_bundle");
     level waittill(#"hash_771956e8f5a4a301");
-    scene::add_scene_func(#"hash_1f7947f335a89821", &function_79b81681, "play");
-    scene::add_scene_func(#"hash_1f7947f335a89821", &function_2c0edc3d, "done");
-    level thread scene::play(#"hash_1f7947f335a89821", self);
+    scene::add_scene_func(#"aib_vign_cust_mnsn_crmsn_nfrtu_spawn_01", &function_79b81681, "play");
+    scene::add_scene_func(#"aib_vign_cust_mnsn_crmsn_nfrtu_spawn_01", &function_2c0edc3d, "done");
+    level thread scene::play(#"aib_vign_cust_mnsn_crmsn_nfrtu_spawn_01", self);
     exploder::stop_exploder("fxexp_crypt_glow");
     self waittill(#"hash_11d606d611e5047e");
     function_d2278936(e_player);
@@ -872,9 +872,9 @@ function function_42c889b7(e_player) {
 // Checksum 0x55a831b3, Offset: 0x3c88
 // Size: 0x7a
 function function_79b81681(a_ents) {
-    if (isactor(a_ents[#"hash_17e93fc8e34f1d4d"])) {
-        a_ents[#"hash_17e93fc8e34f1d4d"].var_7b0667d9 = 1;
-        a_ents[#"hash_17e93fc8e34f1d4d"].blockingpain = 1;
+    if (isactor(a_ents[#"actor 1"])) {
+        a_ents[#"actor 1"].var_7b0667d9 = 1;
+        a_ents[#"actor 1"].blockingpain = 1;
     }
 }
 
@@ -884,9 +884,9 @@ function function_79b81681(a_ents) {
 // Size: 0x7a
 function function_2c0edc3d(a_ents) {
     waitframe(1);
-    if (isalive(a_ents[#"hash_17e93fc8e34f1d4d"])) {
-        a_ents[#"hash_17e93fc8e34f1d4d"].var_7b0667d9 = undefined;
-        a_ents[#"hash_17e93fc8e34f1d4d"].blockingpain = 0;
+    if (isalive(a_ents[#"actor 1"])) {
+        a_ents[#"actor 1"].var_7b0667d9 = undefined;
+        a_ents[#"actor 1"].blockingpain = 0;
     }
 }
 
@@ -1197,7 +1197,7 @@ function function_a2256244(var_f9105ee8, var_f1935ec8) {
     self.v_zombie_custom_goal_pos = var_f1935ec8;
     self waittill(#"goal");
     var_f9105ee8.var_b92834ee thread function_6a21ff38();
-    self scene::play(#"hash_7c22ddfd9102f68f", self);
+    self scene::play(#"aib_vign_zm_mnsn_zombie_dig_up", self);
     var_f9105ee8.var_b92834ee clientfield::set("" + #"hash_486960f190957256", 0);
     var_f9105ee8.var_ac144521 = 1;
     hidemiscmodels(var_f9105ee8.script_noteworthy);

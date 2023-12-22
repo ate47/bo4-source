@@ -1,0 +1,19 @@
+{
+    "amount": 1,
+    "description": "#hash_2735cedffef30ddf",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -6,
+    "var_3e688854": -4,
+    "weapon": <error reading:lmg_double_t8_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 80,
+    "var_65b3a12": 6,
+    "name": "lmg_double_t8_item",
+    "icon": "#hash_6ba7cf667702aebc",
+    "modelscale": 1,
+    "rarity": "Common",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_4fd3ede5dcc78c34",
+    "var_50773731": 2.5,
+    "itemtype": "weapon"
+}

@@ -1366,12 +1366,12 @@ function function_cda69f5e(player) {
 function play_outro_igc() {
     setdvar(#"hash_44340be18f159be3", 0);
     level.var_ea32773 = &function_7f493481;
-    level thread scene::init_streamer(#"hash_3f0bec2bc9216cd4", #"allies", 0, 0);
-    scene::add_scene_func(#"hash_3f0bec2bc9216cd4", &function_8b76623, "play");
-    scene::add_scene_func(#"hash_3f0bec2bc9216cd4", &function_9419b975, "sh195");
-    scene::add_scene_func(#"hash_3f0bec2bc9216cd4", &function_4e94caa8, "sh240");
-    scene::add_scene_func(#"hash_231df2f485c6e30", &function_34273b53, "play");
-    scene::add_scene_func(#"hash_ab97b28f47828e9", &function_f996845d, "play");
+    level thread scene::init_streamer(#"cin_zm_mansion_outro_butler", #"allies", 0, 0);
+    scene::add_scene_func(#"cin_zm_mansion_outro_butler", &function_8b76623, "play");
+    scene::add_scene_func(#"cin_zm_mansion_outro_butler", &function_9419b975, "sh195");
+    scene::add_scene_func(#"cin_zm_mansion_outro_butler", &function_4e94caa8, "sh240");
+    scene::add_scene_func(#"cin_zm_mansion_outro_exit_mansion", &function_34273b53, "play");
+    scene::add_scene_func(#"cin_zm_mansion_outro_car_chase", &function_f996845d, "play");
     foreach (e_player in util::get_active_players()) {
         e_player freezecontrols(1);
         e_player.var_16735873 = 1;
@@ -1401,10 +1401,10 @@ function play_outro_igc() {
     zombie_utility::clear_all_corpses();
     util::set_lighting_state(0);
     level zm_utility::create_streamer_hint((-100, -26800, -5550), (12, -39, 0), 1, 180);
-    scene::play(#"hash_3f0bec2bc9216cd4");
-    scene::play(#"hash_231df2f485c6e30");
-    scene::play(#"hash_ab97b28f47828e9");
-    scene::play(#"hash_12cf1a9d1efe9bde");
+    scene::play(#"cin_zm_mansion_outro_butler");
+    scene::play(#"cin_zm_mansion_outro_exit_mansion");
+    scene::play(#"cin_zm_mansion_outro_car_chase");
+    scene::play(#"cin_zm_mansion_outro_aftermath");
     level notify(#"end_game");
 }
 
@@ -1467,7 +1467,7 @@ function function_8b76623(a_ents) {
     foreach (e_player in util::get_active_players()) {
         e_player freezecontrols(0);
     }
-    level thread scene::init_streamer(#"hash_231df2f485c6e30", #"allies", 0, 0);
+    level thread scene::init_streamer(#"cin_zm_mansion_outro_exit_mansion", #"allies", 0, 0);
 }
 
 // Namespace zm_mansion/zm_mansion
@@ -1492,7 +1492,7 @@ function function_4e94caa8(a_ents) {
 // Checksum 0x424ab0f, Offset: 0x7740
 // Size: 0x44
 function function_34273b53(a_ents) {
-    level thread scene::init_streamer(#"hash_ab97b28f47828e9", #"allies", 0, 0);
+    level thread scene::init_streamer(#"cin_zm_mansion_outro_car_chase", #"allies", 0, 0);
 }
 
 // Namespace zm_mansion/zm_mansion
@@ -1500,7 +1500,7 @@ function function_34273b53(a_ents) {
 // Checksum 0x9f32e6f4, Offset: 0x7790
 // Size: 0x44
 function function_f996845d(a_ents) {
-    level thread scene::init_streamer(#"hash_12cf1a9d1efe9bde", #"allies", 0, 0);
+    level thread scene::init_streamer(#"cin_zm_mansion_outro_aftermath", #"allies", 0, 0);
 }
 
 // Namespace zm_mansion/zm_mansion
@@ -2225,7 +2225,7 @@ function function_3f147b12(cmd) {
             level flag::set("<unknown string>");
             break;
         case #"igc_play_outro":
-            level scene::init_streamer(#"hash_3f0bec2bc9216cd4", #"allies", 0, 0);
+            level scene::init_streamer(#"cin_zm_mansion_outro_butler", #"allies", 0, 0);
             level thread play_outro_igc();
             break;
         case #"hash_2b5e2a1e2bb301d1":

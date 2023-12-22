@@ -1,0 +1,62 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "floor_list_classified",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "floor_list_equipment",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "floor_list_ar",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "floor_list_lmg",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "floor_list_shotgun",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "floor_list_smg",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "floor_list_sniper",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "floor_list_tr",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 9,
+    "var_9b009839": -1,
+    "name": "prematch_override_list",
+    "var_fde72c94": 100
+}

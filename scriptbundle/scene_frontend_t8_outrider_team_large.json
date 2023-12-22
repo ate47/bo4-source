@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_male_lobby_mp_pos_05",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom"
+                }
+            ],
+            "model": "#hash_91762ea068fcc6b",
+            "type": "fakeplayer",
+            "name": "specialist"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_outrider_team_large",
+    "dontsync": 1,
+    "aligntarget": "lobby_player_8_large",
+    "team": "any"
+}

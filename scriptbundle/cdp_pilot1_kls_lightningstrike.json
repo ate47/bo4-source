@@ -1,0 +1,13 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "killmultiple": "#hash_657458a1e7fcb6e6",
+    "vmtype": "both",
+    "name": "cdp_pilot1_kls_lightningstrike",
+    "arrive": "#hash_4fa6cbb358d8c13c",
+    "kill": "#hash_7b103cd5e129d628",
+    "kill1": "#hash_67e03832603acc1b",
+    "kill3": "#hash_67e03a32603acf81",
+    "kill2": "#hash_67e03932603acdce",
+    "killnone": "#hash_6eb24fad4ea1d42a"
+}

@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_57cf89a3b7faf232",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_63d8308e4385a33b",
+            "type": "actor",
+            "name": "actor 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_gegn_arrow_road",
+    "dontsync": 1,
+    "aligntarget": "tag_align_red_arrow_road",
+    "team": "any"
+}

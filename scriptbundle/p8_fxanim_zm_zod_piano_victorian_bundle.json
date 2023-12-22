@@ -1,0 +1,45 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_430f0e5417ab871a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fail"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2fcee6aae4531a14",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sample"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7217633c369a4455",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "song"
+                }
+            ],
+            "model": "#p8_fxanim_zm_zod_piano_victorian_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_zod_piano_victorian_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

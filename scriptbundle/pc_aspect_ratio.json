@@ -1,0 +1,38 @@
+{
+    "options": [
+        {
+            "label": "#hash_51b400b4ec7fcb0b",
+            "value": "0"
+        },
+        {
+            "label": "#hash_2c3bfcda2937a3e6",
+            "value": "3"
+        },
+        {
+            "label": "#hash_48b2b67ae924ab4a",
+            "value": "4"
+        },
+        {
+            "label": "#hash_51c5db7aee66b3dc",
+            "value": "5"
+        },
+        {
+            "label": "#hash_5a727c7af35128f0",
+            "value": "6"
+        }
+    ],
+    "var_d260763": "#hash_2e3e30e8169ebc0",
+    "description": "#hash_14cc5284c5ddbe19",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_5352657b": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_aspect_ratio",
+    "displayname": "#hash_44ae8d9bdc1baf87",
+    "var_66faec87": 10,
+    "statname": "r_aspectRatio",
+    "var_b7401319": "#menu/off"
+}

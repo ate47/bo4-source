@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_deb8a6fd8a87f93",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "b_to_a"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f78f6d6c9b89f09",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "a_to_b"
+                }
+            ],
+            "model": "#hash_753a8b1ec4aef4dc",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_zm_off_panel_electric_box_03_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

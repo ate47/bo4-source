@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6fe49a2b72160dc9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_5c06b0bb16d4efb6",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "perseus_amphitheater"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_amp_perseus_intro",
+    "dontsync": 1,
+    "aligntarget": "tag_align_red_amphitheatre",
+    "team": "any"
+}

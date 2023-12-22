@@ -1,0 +1,19 @@
+{
+    "rightdownanim": "#hash_16ae9ef2d45a56c3",
+    "leftdownanim": "#hash_732efd471cfe5142",
+    "var_922067c4": "scriptbundle",
+    "leftstraightanim": "#hash_bedf4c961d3cb51",
+    "leftupanim": "#hash_56b9aedced7381e7",
+    "type": "turretanims",
+    "centerstraightanim": "#hash_3e8b07b8d894c16",
+    "vmtype": "none",
+    "centerdownanim": "#hash_57909282e37b745c",
+    "name": "player_turret_huey_gunner1_anims",
+    "centerupanim": "#hash_cf91b9c6206edfd",
+    "rightupanim": "#hash_5828bb13ce89ee22",
+    "aimpitchangleu": 35,
+    "aimpitchangled": 55,
+    "rightstraightanim": "#hash_280170001beb4132",
+    "aimyawangler": 90,
+    "aimyawanglel": 90
+}

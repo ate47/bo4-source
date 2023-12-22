@@ -1,0 +1,25 @@
+{
+    "option_dependencies": [
+        {
+            "var_1643d946": "1",
+            "var_6825bdb": "maxfps_uncapped",
+            "operator": "=="
+        }
+    ],
+    "var_d260763": "#hash_39ff5214d3f6d38a",
+    "description": "#hash_3e3014b107c5d96a",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_menu_framerate_cap",
+    "displayname": "#hash_2dee4be57b0257da",
+    "var_4a4760c0": 30,
+    "var_d6897f56": 1,
+    "var_66faec87": 300,
+    "statname": "com_maxfps_menu",
+    "var_d4e288e": 60,
+    "var_b7401319": "#menu/off"
+}

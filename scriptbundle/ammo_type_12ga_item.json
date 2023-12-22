@@ -1,0 +1,18 @@
+{
+    "amount": 20,
+    "description": "#hash_24d839f4458ea27f",
+    "var_922067c4": "scriptbundle",
+    "model": "#p8_wz_ammo_pickup_shotgun",
+    "weapon": <error reading:hash_2f47f966ebc641aa>,
+    "type": "itemspawnentry",
+    "hintstring": "#hash_36b0f4217f0831b8",
+    "var_6731866b": 90,
+    "name": "ammo_type_12ga_item",
+    "displayname": "#hash_36b0f4217f0831b8",
+    "icon": "#hash_6b77016c324c0644",
+    "modelscale": 0.6,
+    "rarity": "None",
+    "handler": "#hash_9ed0c30684ca35a",
+    "itemtype": "ammo",
+    "pickupsound": "fly_pickup_ammo_shotgun"
+}

@@ -1,0 +1,10 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnentry",
+    "name": "motorcycle_wz_vehicle_light_grey",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#generic_pickup",
+    "vehicle": "veh_motorcycle_sidecar_player_wz_light_grey",
+    "itemtype": "vehicle"
+}

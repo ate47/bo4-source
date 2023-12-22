@@ -1,0 +1,265 @@
+{
+    "weapondamagescaleoverrides": [
+        {
+            "var_fe55d685": "#hash_1c3be4d6d4934447",
+            "var_fc420d71": 0.5,
+            "weaponid": "#launcher_standard_t8_upgraded",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.5,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hero_hammer_lv1_zm",
+            "var_fc420d71": 0.65,
+            "weaponid": "#hero_hammer_lv1",
+            "var_628192b0": 0.65,
+            "var_97b22faa": 0.7,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_hammer_lv2_zm",
+            "var_fc420d71": 0.65,
+            "weaponid": "#hero_hammer_lv2",
+            "var_628192b0": 0.65,
+            "var_97b22faa": 0.7,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_hammer_lv3_zm",
+            "var_fc420d71": 0.65,
+            "weaponid": "#hero_hammer_lv3",
+            "var_628192b0": 0.65,
+            "var_97b22faa": 0.7,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_chakram_lv1_zm",
+            "var_fc420d71": 0.7,
+            "weaponid": "#hero_chakram_lv1",
+            "var_628192b0": 0.7,
+            "var_97b22faa": 0.9,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_chakram_lv2_zm",
+            "var_fc420d71": 0.7,
+            "weaponid": "#hero_chakram_lv2",
+            "var_628192b0": 0.7,
+            "var_97b22faa": 0.9,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_chakram_lv3_zm",
+            "var_fc420d71": 0.7,
+            "weaponid": "#hero_chakram_lv3",
+            "var_628192b0": 0.7,
+            "var_97b22faa": 0.9,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_sword_pistol_lv1_zm",
+            "var_fc420d71": 0.6,
+            "weaponid": "#hero_sword_pistol_lv1",
+            "var_628192b0": 0.6,
+            "var_97b22faa": 0.7,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_sword_pistol_lv2_zm",
+            "var_fc420d71": 0.6,
+            "weaponid": "#hero_sword_pistol_lv2",
+            "var_628192b0": 0.6,
+            "var_97b22faa": 0.7,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_sword_pistol_lv3_zm",
+            "var_fc420d71": 0.6,
+            "weaponid": "#hero_sword_pistol_lv3",
+            "var_628192b0": 0.6,
+            "var_97b22faa": 0.7,
+            "damagescale": 0.5
+        },
+        {
+            "var_fe55d685": "#hero_scepter_lv1_zm",
+            "var_fc420d71": 0.15,
+            "weaponid": "#hero_scepter_lv1",
+            "var_628192b0": 0.15,
+            "var_97b22faa": 0.2,
+            "damagescale": 0.12
+        },
+        {
+            "var_fe55d685": "#hero_scepter_lv2_zm",
+            "var_fc420d71": 0.15,
+            "weaponid": "#hero_scepter_lv2",
+            "var_628192b0": 0.15,
+            "var_97b22faa": 0.2,
+            "damagescale": 0.12
+        },
+        {
+            "var_fe55d685": "#hero_scepter_lv3_zm",
+            "var_fc420d71": 0.15,
+            "weaponid": "#hero_scepter_lv3",
+            "var_628192b0": 0.15,
+            "var_97b22faa": 0.2,
+            "damagescale": 0.12
+        },
+        {
+            "var_fe55d685": "#hash_5b10080871ad106c",
+            "var_fc420d71": 0.5,
+            "weaponid": "#gun_mini_turret",
+            "var_628192b0": 0.25,
+            "var_97b22faa": 0.5,
+            "damagescale": 0.1
+        },
+        {
+            "var_fe55d685": "#hash_2c6f972743e02431",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_c",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_64c28e159e811e6b",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_c_uncharged",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_2fc08852f394e718",
+            "var_fc420d71": 0.2,
+            "weaponid": "#hash_57674b2a4d9eea50",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_14950d710b3d3778",
+            "var_fc420d71": 0.3,
+            "weaponid": "#ww_hand_c_upgraded",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.4,
+            "damagescale": 0.2
+        },
+        {
+            "var_fe55d685": "#hash_78f376ef8e52b12e",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_h",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_73ada1cc177c3f98",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_h_uncharged",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_3d78330214d4d0cf",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_h_charged",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_7570d1b608819be5",
+            "var_fc420d71": 0.4,
+            "weaponid": "#ww_hand_h_upgraded",
+            "var_628192b0": 0.4,
+            "var_97b22faa": 0.5,
+            "damagescale": 0.2
+        },
+        {
+            "var_fe55d685": "#hash_53b2b708d6f3408d",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_g",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_74124298e23f9a17",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_g_uncharged",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_5998a631b4da4974",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_g_charged",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_4d4aff017c2e2e9c",
+            "var_fc420d71": 0.3,
+            "weaponid": "#ww_hand_g_upgraded",
+            "var_628192b0": 0.4,
+            "var_97b22faa": 0.5,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_490f76c5d6979055",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_o",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_6330ce44163194cf",
+            "var_fc420d71": 0.2,
+            "weaponid": "#ww_hand_o_uncharged",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_1aee4b7139b0db1c",
+            "var_fc420d71": 0.2,
+            "weaponid": "#hash_730ad7426b976c7c",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.25,
+            "damagescale": 0.15
+        },
+        {
+            "var_fe55d685": "#hash_73e4103ad6947124",
+            "var_fc420d71": 0.4,
+            "weaponid": "#ww_hand_o_upgraded",
+            "var_628192b0": 0.4,
+            "var_97b22faa": 0.5,
+            "damagescale": 0.3
+        }
+    ],
+    "var_10460f1e": 1,
+    "var_1be2be91": 150,
+    "scoreevent": "#hash_7081e565be89208b",
+    "var_922067c4": "scriptbundle",
+    "maxhealth": 50000,
+    "var_e3ee7606": 30,
+    "var_fc420d71": 1,
+    "name": "zm_gegenees_settings",
+    "minhealth": 8500,
+    "var_dbb3ef3d": 300,
+    "var_628192b0": 1,
+    "var_250a1683": 500,
+    "var_97b22faa": 2,
+    "var_3422adfd": 1.5,
+    "damagescale": 0.2,
+    "category": "#miniboss",
+    "var_854eebd": 0.2,
+    "var_ef908ac8": 64,
+    "stunduration": 1,
+    "var_5d9f2696": 1,
+    "var_450edb3b": 1
+}

@@ -1,0 +1,10 @@
+{
+    "type": "linear",
+    "vmtype": "server",
+    "threat_score_max_same": 10,
+    "range_max": 750,
+    "name": "big_vehicle_death_influencer_def",
+    "score_min": 1,
+    "lifetime": 2,
+    "threat_score_max_other": 10
+}

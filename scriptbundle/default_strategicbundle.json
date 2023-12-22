@@ -1,0 +1,18 @@
+{
+    "doppelbotsdistribution": "greedy",
+    "companionsfocus": "inherit from doppelbot",
+    "var_922067c4": "scriptbundle",
+    "doppelbotsallowground": 1,
+    "type": "strategicbundle",
+    "doppelbotsfocus": "follow player",
+    "vmtype": "server",
+    "companionsinteractions": "inherit from doppelbot",
+    "name": "default_strategicbundle",
+    "doppelbotstactics": "aggressive",
+    "doppelbotsinteractions": "first come first served",
+    "doppelbotspriority": "(-4) unimportant",
+    "companionspriority": "inherit from doppelbot",
+    "companionsdistribution": "inherit from doppelbot",
+    "companionstactics": "inherit from doppelbot",
+    "companionsallowground": 1
+}

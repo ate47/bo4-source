@@ -1,0 +1,26 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_150f5d7d214e07d7"
+        }
+    ],
+    "amount": 1,
+    "duration": 120,
+    "description": "#hash_2a65c49afd832c6d",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_5bf45cecee2a7c52",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_52dbecc9f5d7600a",
+    "consumable": 1,
+    "name": "perk_item_looter",
+    "displayname": "#hash_52dbecc9f5d7600a",
+    "stackcount": 1,
+    "icon": "#hash_735f3e9db64dfca",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_looter",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

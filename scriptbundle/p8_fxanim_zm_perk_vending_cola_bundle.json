@@ -1,0 +1,99 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_59cc3b6c3d93be3c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "off"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_58221ce48a904d2e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "on"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_dcf5500873b316b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "disable"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_270f1acadbbae9d0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "use1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53bca59b4ad64613",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "use2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2c9ee608be50ce5a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "use3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1e5206173a7af18d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "use4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_d7cc2e2b8e62c7c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "use5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_50026740c9fdea7f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "use6"
+                }
+            ],
+            "model": "#p8_fxanim_zm_perk_vending_cola_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_perk_vending_cola_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

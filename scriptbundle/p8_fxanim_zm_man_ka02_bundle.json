@@ -1,0 +1,38 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7ac1aa7253af7794",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "crumble"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_f3a4f4f44c61a33",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "rise",
+                    "var_1c7fbd6b": "#hash_485dabee10eddd9a"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_56a27cea8f067650",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_man_ka02_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

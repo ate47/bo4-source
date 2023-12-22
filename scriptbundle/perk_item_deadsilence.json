@@ -1,0 +1,26 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_2d0972cc34c8d313"
+        }
+    ],
+    "amount": 1,
+    "duration": 120,
+    "description": "#hash_beda22816417731",
+    "var_922067c4": "scriptbundle",
+    "model": "#p8_wz_perk_pickups_deadsilence",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_4c9bf18ebd4aa256",
+    "consumable": 1,
+    "name": "perk_item_deadsilence",
+    "displayname": "#hash_4c9bf18ebd4aa256",
+    "stackcount": 1,
+    "icon": "#hash_618aa698508bc260",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_deadsilence",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

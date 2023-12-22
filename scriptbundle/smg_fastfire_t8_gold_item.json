@@ -1,0 +1,47 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "laser_sight_wz_item"
+        },
+        {
+            "var_6be1bec7": "suppressor_wz_item"
+        },
+        {
+            "var_6be1bec7": "stock_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "advmag_wz_item"
+        },
+        {
+            "var_6be1bec7": "reflex_wz_item"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_7a8d083779348223",
+    "var_922067c4": "scriptbundle",
+    "var_3e688854": -2,
+    "weapon": <error reading:hash_673c1f4737de6baf>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "baseweapon": "smg_fastfire_t8_item",
+    "var_65b3a12": 6,
+    "var_340eac1f": 1,
+    "name": "smg_fastfire_t8_gold_item",
+    "var_9507cf45": "#hash_3354cac0d45705dd",
+    "icon": "#hash_8c78856ae6e3d4e",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Epic",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_1b17c4f6dfa757c9",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

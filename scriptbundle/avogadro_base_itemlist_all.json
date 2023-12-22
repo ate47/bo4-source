@@ -1,0 +1,88 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "avogadro_gold_guns",
+            "maxweight": 1,
+            "available": 3
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_bowie_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "armor_item_large",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "health_item_medium",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "health_item_medium",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "health_item_medium",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "health_item_medium",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "health_item_medium",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "health_item_large",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "health_item_large",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "health_item_large",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "zombie_supply_stash_wonder_weapons",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "perk_item_bloody_tracker",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 13,
+    "var_9b009839": -1,
+    "name": "avogadro_base_itemlist_all",
+    "var_fde72c94": 100
+}

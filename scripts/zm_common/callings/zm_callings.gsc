@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 // Checksum 0xdaafe3d2, Offset: 0x110
 // Size: 0x196
 function __init__() {
-    level.var_314051a1 = getscriptbundle(#"hash_7258efc12235efc9");
+    level.var_314051a1 = getscriptbundle(#"t8_callings_settings");
     if (isdefined(level.var_314051a1.var_2e61f0ce)) {
         for (i = 0; i < level.var_314051a1.var_2e61f0ce.size; i++) {
             for (j = 0; j < level.var_314051a1.var_2e61f0ce[i].factionlist.size; j++) {
@@ -89,14 +89,14 @@ function function_f3393d6a() {
         var_3afde5e2 = hash(self stats::get_stat(#"playercalling", #"seasons", self.var_e06cb519, #"hash_7e597fbe41270a4d"));
         var_51fe014e = level.var_314051a1.var_2e61f0ce[self.var_e06cb519].var_ecb4fc1[var_3afde5e2].var_642e4919 - 1;
         var_51fe014e = var_51fe014e + self.var_bf6f8ec3;
-        var_51fe014e = var_51fe014e % level.var_314051a1.var_742e4106.size;
+        var_51fe014e = var_51fe014e % level.var_314051a1.factioncallings.size;
         if (zm_utility::is_classic()) {
-            var_98a2d658 = level.var_314051a1.var_742e4106[var_51fe014e].var_effda190;
+            var_98a2d658 = level.var_314051a1.factioncallings[var_51fe014e].var_effda190;
             foreach (task in var_98a2d658) {
                 self function_c3be3572(task.task, #"hash_20deab97abbf7b12", task.target, task.xp);
             }
         } else if (zm_utility::is_standard()) {
-            var_c53e054e = level.var_314051a1.var_742e4106[var_51fe014e].var_ebb6275a;
+            var_c53e054e = level.var_314051a1.factioncallings[var_51fe014e].var_ebb6275a;
             foreach (task in var_c53e054e) {
                 self function_c3be3572(task.task, #"hash_764a5fc3ba8820d2", task.target, task.xp);
             }

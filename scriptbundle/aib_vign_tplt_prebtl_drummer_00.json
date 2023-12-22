@@ -1,0 +1,134 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_67cf596b7814a53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init",
+                    "blend": 4
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1663d6a2e4ed5901",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_4cee3b5dcdd84b9e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start_drum"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_13574f5b3b4024f1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "end_drum",
+                    "var_3ee70278": 5,
+                    "viewclampright": 10
+                }
+            ],
+            "model": "#hash_5b9981f95bbc2248",
+            "type": "prop",
+            "name": "actor 1",
+            "var_922b4fc5": -2
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c25b4d28409b914",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_103e137770471d2",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_1a5544f4f7b7183",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start_drum"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2932e4ebbd264682",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "end_drum",
+                    "var_3ee70278": 5
+                }
+            ],
+            "model": "#hash_43676178db155a2e",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c25b7d28409be2d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 4,
+                    "name": "init",
+                    "cameratween": 8
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_103e0377704701f",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_1a5554f4f7b7336",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start_drum"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2932e3ebbd2644cf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "end_drum",
+                    "var_3ee70278": 5
+                }
+            ],
+            "model": "#hash_43676178db155a2e",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "aib_vign_tplt_prebtl_drummer_00",
+    "dontsync": 1,
+    "team": "any"
+}

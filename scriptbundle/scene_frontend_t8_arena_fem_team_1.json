@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_fem_lobby_mp_pos_06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom",
+                    "blend": 0.2
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "specialist"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_arena_fem_team_1",
+    "dontsync": 1,
+    "aligntarget": "arena_player_1",
+    "team": "any"
+}

@@ -1,0 +1,18 @@
+{
+    "var_d260763": "#hash_b0051468c8fa60d",
+    "description": "#hash_79d39e17860302ad",
+    "var_60fcfffa": "#hash_62ed1ce9b3cdba91",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.01,
+    "maxvalue": -1,
+    "name": "pc_mouse_acceleration",
+    "displayname": "#hash_6843a3d03d6952bb",
+    "var_d6897f56": 1,
+    "var_926d1be9": 0.01,
+    "var_66faec87": 1,
+    "statname": "m_mouseAcceleration",
+    "minvalue": 1,
+    "var_b7401319": "#hash_33f7784385593061"
+}

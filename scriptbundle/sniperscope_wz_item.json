@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "adsreload"
+        }
+    ],
+    "description": "#hash_57dec6e03d01eb93",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_1573a00c751fa386",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_1c067a1967345eb9",
+    "var_65b3a12": 1,
+    "name": "sniperscope_wz_item",
+    "displayname": "#hash_1c067a1967345eb9",
+    "icon": "#hash_7a3edf2fe58c6064",
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_attach_reflex",
+    "handler": "#hash_788c59214ead02af",
+    "attachslotoptics": 1,
+    "pickupicon": "#hash_7a3edf2fe58c6064",
+    "itemtype": "attachment"
+}

@@ -63,14 +63,14 @@ function function_62cd02cc() {
         wz_common_fixup::item_replacer(var_f8a4c541, undefined, #"supply_stash_operator_mod_weapons", #"supply_stash_operator_mod_weapons_ambush");
         wz_common_fixup::item_replacer(var_f8a4c541, undefined, #"supply_stash_gold_guns", str_list + "_guns_gold");
         wz_common_fixup::item_replacer(var_f8a4c541, undefined, #"blackjack_ammo_stash_guns", #"ambush_v2_blackjack_ammo_stash_guns");
-        wz_common_fixup::item_replacer(var_f8a4c541, undefined, #"loot_locker_parent", #"hash_5f368fdfb643d45e");
-        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"attachment_list_good", #"hash_14c8f136272c2cc0");
-        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"attachment_list_med", #"hash_629cbe2478d19625");
+        wz_common_fixup::item_replacer(var_f8a4c541, undefined, #"loot_locker_parent", #"loot_locker_parent_ambush");
+        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"attachment_list_good", #"attachment_list_good_ambush");
+        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"attachment_list_med", #"attachment_list_med_ambush");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"attachment_list_low", #"attachment_list_low_ambush");
-        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"equipment_list_low", #"hash_1d4ea58da145f816");
+        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"equipment_list_low", #"equipment_list_low_ambush");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"equipment_list_zombie", #"equipment_list_zombie_ambush");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"gear_list_good", #"gear_list_good_ambush");
-        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"consumable_list_low", #"hash_576fbac492e4d1cb");
+        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"consumable_list_low", #"consumable_list_low_ambush");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"consumable_list_med", #"consumable_list_med_ambush");
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"consumable_list_good", #"consumable_list_good_ambush");
         if (isdefined(getgametypesetting(#"wzenablewallbuyasylum")) && getgametypesetting(#"wzenablewallbuyasylum") || isdefined(getgametypesetting(#"hash_232750b87390cbff")) && getgametypesetting(#"hash_232750b87390cbff")) {

@@ -337,7 +337,7 @@ function function_e870d33d() {
 function function_18a9a4e4(settings) {
     self notify("21639be952ab6485");
     self endon("21639be952ab6485");
-    if (!isdefined(settings.var_dec12a50)) {
+    if (!isdefined(settings.mountable_weapon_mounted_rumble)) {
         return;
     }
     player = self;
@@ -349,7 +349,7 @@ function function_18a9a4e4(settings) {
     if (player playerads() == 0) {
         return;
     }
-    player playrumbleonentity(settings.var_dec12a50);
+    player playrumbleonentity(settings.mountable_weapon_mounted_rumble);
 }
 
 // Namespace weapons/weapons_shared

@@ -1,0 +1,24 @@
+{
+    "zmstartweapons": [
+        {
+            "weapon": "#pistol_topbreak_t8"
+        },
+        {
+            "weapon": "#tr_leveraction_t8"
+        },
+        {
+            "weapon": "#pistol_standard_t8"
+        },
+        {
+            "weapon": "#pistol_burst_t8"
+        },
+        {
+            "weapon": "#smg_handling_t8"
+        },
+        {
+            "weapon": "#shotgun_pump_t8"
+        }
+    ],
+    "name": "zmstartweapontable",
+    "var_16977adf": 6
+}

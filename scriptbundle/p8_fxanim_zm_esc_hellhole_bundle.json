@@ -1,0 +1,73 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_73f7ea4f2da48897",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "unpowered"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c7639600ab0c4e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "cooldown"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c4a7ec4b60bea1d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "closed_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2e8a793dedcc3610",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6f8ae9ad75fd9649",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5f579a2bc6e7d38c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "close"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_290420129f24f0b4",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_hellhole_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

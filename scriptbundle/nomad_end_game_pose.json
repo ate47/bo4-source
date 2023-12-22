@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_40ef46ff1dadf4ca",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "loop"
+                }
+            ],
+            "type": "player",
+            "name": "player 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "nomad_end_game_pose",
+    "dontsync": 1,
+    "team": "any"
+}

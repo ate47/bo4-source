@@ -1,0 +1,34 @@
+{
+    "itemlist": [
+        {
+            "minweight": 7,
+            "var_a6762160": "equipment_list_good",
+            "maxweight": 7,
+            "available": -1
+        },
+        {
+            "minweight": 30,
+            "var_a6762160": "equipment_list_med",
+            "maxweight": 30,
+            "available": -1
+        },
+        {
+            "minweight": 30,
+            "var_a6762160": "equipment_list_low",
+            "maxweight": 30,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "equipment_list_zombie",
+            "maxweight": 40,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 4,
+    "var_9b009839": -1,
+    "name": "lighthouse_list_equipment",
+    "var_fde72c94": 100
+}

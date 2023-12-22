@@ -1,0 +1,89 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5e2eae294570af63",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_18759cf25362e442",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_57513ea2cd64dfdd",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5e2eae294570af63",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_18759cf25362e442",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_7f07765e5a8a0b3d",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_db56b14f3499122",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_61ee02b790d04347",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_176284cb1b96ae76",
+            "type": "prop",
+            "name": "prop 3"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_eagle_cage_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

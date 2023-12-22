@@ -1,0 +1,142 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_stanton_main",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c576a03d629c9b4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "specialist"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_35a33a1cfbae3dd5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#p7_zm_sta_gibs_arm_r",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_35a3371cfbae38bc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#p7_zm_sta_gibs_arm_r",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_710132b54c34e674",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#p7_zm_sta_gibs_chunk_bone",
+            "type": "prop",
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2075b8413f5dc25b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_77ef8294c44076f1",
+            "type": "prop",
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1ee94d3f26f64847",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#p7_zm_sta_gibs_head",
+            "type": "prop",
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2d75d22e5c84270e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_463653fbc84693a9",
+            "type": "prop",
+            "name": "prop 6"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_stanton",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

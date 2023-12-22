@@ -1,0 +1,16 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hatchet_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "name": "hatchet_wz_item",
+    "stackcount": 1,
+    "icon": "#hash_4faed1551f1f43e2",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "pickupicon": "#hash_4faed1551f1f43e2",
+    "var_50773731": 0.75,
+    "itemtype": "equipment"
+}

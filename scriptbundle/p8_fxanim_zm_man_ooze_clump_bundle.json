@@ -1,0 +1,204 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_32034ec805413214",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_32034ec805413214",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "clump01_rise"
+                },
+                {
+                    "name": "clump02_rise"
+                },
+                {
+                    "name": "clump03_rise"
+                },
+                {
+                    "name": "trails"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_5853acd72e8b52e7",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c0eb997d9885df7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "name": "clump01_rise"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c0eb997d9885df7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "clump02_rise"
+                },
+                {
+                    "name": "clump03_rise"
+                },
+                {
+                    "name": "trails"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_357300c8cc0aa132",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_110cd1ae76d9624e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "name": "clump01_rise"
+                },
+                {
+                    "name": "clump02_rise"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_110cd1ae76d9624e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "clump03_rise"
+                },
+                {
+                    "name": "trails"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_3c6f9e997e6cbf15",
+            "type": "prop",
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "name": "init"
+                },
+                {
+                    "name": "clump01_rise"
+                },
+                {
+                    "name": "clump02_rise"
+                },
+                {
+                    "name": "clump03_rise"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4af37851c408abad",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "trails"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_6d1c43d8b9909e38",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "name": "init"
+                },
+                {
+                    "name": "clump01_rise"
+                },
+                {
+                    "name": "clump02_rise"
+                },
+                {
+                    "name": "clump03_rise"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5d12a01b69831cb6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "trails"
+                }
+            ],
+            "model": "#hash_6d1c43d8b9909e38",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "name": "init"
+                },
+                {
+                    "name": "clump01_rise"
+                },
+                {
+                    "name": "clump02_rise"
+                },
+                {
+                    "name": "clump03_rise"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_54166eb9fb42891f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "trails"
+                }
+            ],
+            "model": "#hash_6d1c43d8b9909e38",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 6"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_man_ooze_clump_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

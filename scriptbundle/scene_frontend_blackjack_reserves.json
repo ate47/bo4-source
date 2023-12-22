@@ -1,0 +1,47 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_blackjack_character",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_blackjack_crate",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "crate"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_blackjack_crate_idle",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "crateidle"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_blackjack_reserves",
+    "dontsync": 1,
+    "aligntarget": "tag_align_blackjack_reserves",
+    "team": "any"
+}

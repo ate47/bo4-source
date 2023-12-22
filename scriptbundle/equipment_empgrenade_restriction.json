@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#hash_5cc1294548b76186",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "equipment_empgrenade_restriction",
+    "displayname": "#weapon/eq_emp_grenade",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__eq_emp_grenade__restricted"
+}

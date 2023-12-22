@@ -1,0 +1,29 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_2c77ba13adb5c064"
+        },
+        {
+            "description": "#hash_2c77bd13adb5c57d"
+        }
+    ],
+    "description": "#hash_43b8ba99c9f6409e",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_351b0b7c315cc8f5",
+    "model": "#p8_wz_cu_armor_plating_dmg",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_7f661aa9bdeb2cae",
+    "unlockableitemref": "#hash_61eb938cfbf3d87c",
+    "name": "cu01_item",
+    "displayname": "#hash_7f661aa9bdeb2cae",
+    "stackcount": 3,
+    "icon": "#hash_5d48ea7bca4f3385",
+    "modelscale": 1,
+    "rarity": "None",
+    "var_a51bc1f7": "#hash_12f169c39158140c",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_57252f16d6cf4edb",
+    "stackable": 1,
+    "itemtype": "quest"
+}

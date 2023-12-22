@@ -1000,7 +1000,7 @@ function private function_c95282e3() {
 // Checksum 0x24010de8, Offset: 0x4dc8
 // Size: 0x158
 function crafting_table_watcher() {
-    if (isdefined(self.stub.blueprint) && self.stub.blueprint.name == #"hash_2118d591e173a7f3") {
+    if (isdefined(self.stub.blueprint) && self.stub.blueprint.name == #"zblueprint_acid_gat_build_kit") {
         v_pos = self.stub.origin;
         s_progress = undefined;
         s_progress = self waittill(#"death", #"hash_6db03c91467a21f5");

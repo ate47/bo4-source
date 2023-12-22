@@ -1,0 +1,17 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:melee_amuletfist_t8_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 180,
+    "var_65b3a12": 6,
+    "name": "melee_amuletfist_t8_item",
+    "icon": "#hash_6c547f582a28f507",
+    "modelscale": 1,
+    "rarity": "Common",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_31de6ea5cff2cc7c",
+    "var_50773731": 2,
+    "itemtype": "weapon",
+    "pickupsound": "fly_pickup_generic"
+}

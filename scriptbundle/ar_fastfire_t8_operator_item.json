@@ -1,0 +1,41 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "uber"
+        },
+        {
+            "var_6be1bec7": "acog_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "stock_wz_item"
+        },
+        {
+            "var_6be1bec7": "extmag_wz_item"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_14ee8631a91cdf56",
+    "var_922067c4": "scriptbundle",
+    "var_3e688854": -2,
+    "weapon": <error reading:ar_fastfire_t8_operator_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "var_dc6c5d3b": 1,
+    "var_65b3a12": 6,
+    "name": "ar_fastfire_t8_operator_item",
+    "var_9507cf45": "#hash_3b98bc14feda5d92",
+    "icon": "#hash_2d2684950b50629d",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Legendary",
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_4621eefe05a06bdd",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

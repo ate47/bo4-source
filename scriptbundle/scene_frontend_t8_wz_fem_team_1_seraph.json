@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78569a066c8c50bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom",
+                    "blend": 0.2
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "specialist"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_wz_fem_team_1_seraph",
+    "dontsync": 1,
+    "aligntarget": "draft_player_struct_1_allies",
+    "team": "any"
+}

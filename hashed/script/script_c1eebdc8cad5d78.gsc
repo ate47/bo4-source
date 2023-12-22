@@ -341,7 +341,7 @@ function function_70b12595(item) {
         var_8697fbe7 = 0;
         foreach (attachment in item.var_a6762160.attachments) {
             var_fe35755b = getscriptbundle(attachment.var_6be1bec7);
-            if (!isdefined(var_fe35755b) || var_fe35755b.type != #"hash_10587321f369e7f3" || !isarray(var_fe35755b.attachments)) {
+            if (!isdefined(var_fe35755b) || var_fe35755b.type != #"itemspawnentry" || !isarray(var_fe35755b.attachments)) {
                 continue;
             }
             var_8697fbe7++;

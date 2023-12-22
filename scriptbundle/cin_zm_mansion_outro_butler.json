@@ -1,0 +1,3984 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh010",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh020",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh020"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh030",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh040",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh050",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh060",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh060"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh070",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh070"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh080",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh080"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh090",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh090"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh100",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh100"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh110",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh110"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh120",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh120"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh130",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh130"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh140",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh140"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh150",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh150"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh160",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh160"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh170",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh170"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh180",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh180"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh190",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh190"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh195",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh195"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh200",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh200"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh210",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh220",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh220"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh230",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh230"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh240",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh240"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh250",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh250"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh260",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh260"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh270",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh270"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh280",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh280"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh290",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh290"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh300",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh300"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh310",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh310"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh320",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh320"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh330",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh330"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh340",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh340"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_47b06b44576f28c4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_12a57406e0aeb1cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_492ffa0b1940b615",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_39793bce93cf2712",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_20a9d9910e76dddc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh090"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c06326250170e2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_742d72ad88e72530",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_190f9711599bd51b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1886630a25a7b906",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_13ed4efac295278c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_7ef7aacfb6165a01",
+            "type": "prop",
+            "name": "gypsy"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_43709a7116b30b6c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_417a57dd8680dcf9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4d1012be6bba3132",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_b6e26a1c923c30f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c10eeb7cc87dd75",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_60d87f315dfcd5de",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_55eca6cfb0e8cc14",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh090"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6b9f27873c10e2ee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1fa6fa61ac1b45c9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5082d24c8c8aee3c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a2a4028a953de2d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_598a4165e9a0b167",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4814819287ed041d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_3999e7c7720e4aa5",
+            "type": "prop",
+            "name": "gunslinger"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7df35461eb2b6f97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2b45ef11bbea56de",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1ece6a1fa89b796b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5f0465487f57e708",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_445f3d222928cb45",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1074b72c4a1fd3cf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_73e8840cda9141e7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_15e0bc28ebd1b69a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5417fcc1e15ea210",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_674e67a3da49c8bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_233a8afa809d0175",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_538975fd7bd33616",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_389efa77406bee80",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_4d643438126a8134",
+            "type": "prop",
+            "name": "brigadier"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_77b442ce24e331f6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_12d58bfea6e57195",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2e96d391143ce3b3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4351a7fa83f5eb00",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6fe4ae7e7682ac99",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_91a3d49032e2bae",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh090"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_262156b74c868ed0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1e26c21f3b8e2703",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_739a7a79956d0e5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_59a6d876ebe86cf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_54295bb32d7dea06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_701e1ccbe8716f71",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_33c640b0b06e6808",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh180"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2498628c4723bfbb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh190"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_17f9b82d9e00a08e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh195"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_334e1896593251db",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "cleanuphide": 1,
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6f2969e71d8849dd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh220"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ba9fae035ecbf82",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh230"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_765e22e0fe051a27",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh240"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5e5328acbdcfd264",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_654a2b4d7dc6491e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_725b5e53fc754d70",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh290"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d27b3f3e8daf192",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh300"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7df0a3e3832db12d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh310"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c10061a841a0e78",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh320"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_47a02866cf5c36ab",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh330"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3d470bb89ec889ee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_2f2c0a0fc58e8443",
+            "type": "prop",
+            "name": "butler"
+        },
+        {
+            "shots": [
+                {
+                    "prepareshow": 1,
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "cleanuphide": 1,
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2b45ef11bbea56de",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "sh060"
+                },
+                {
+                    "cleanuphide": 1,
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34ccbdf889050ed6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6a4afeffbd4ae8b0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh260"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_155905ab3f82c2a3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh270"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_772e487326285b7a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh280"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_18b0e066b601ff35",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh290"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_68f2545639c3ee5f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh300"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7b80f16a2a994e0c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh310"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5facdd2f09db79fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh320"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2dd4971d6d997fa2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh330"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_138c6f9c85a6f633",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_350311504362cb9b",
+            "type": "prop",
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1be74d83ce372004",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_129f2994b4866337",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4f0c464dbdb9a79f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_51d7d9b55ce69bd6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_187caeeedc4fa52c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh090"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_b11804b115a7f46",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_6d883e6ed5934e1b",
+            "type": "prop",
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1dff3eaf259f9c52",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2b45ef11bbea56de",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_106c0fd84db740a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_679ccda3ca7ba72d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4ecf6f3b7b76dfca",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_55900dd0fee49602",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9941bf0d9b559ef",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_364b5ce77c9c8495",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1988d33250a6ae9a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_62a5d5a12e2b8a55",
+            "type": "prop",
+            "name": "prop 7"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_17b8dd65b85d6c51",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_52cfa62ecb783642",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_129f2994b4866337",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6800824304b605bd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_2d4445f982e2b0c3",
+            "type": "prop",
+            "name": "prop 8"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b06cd5c9778d5b2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_542f9beb7e1a5d9e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_211814dc924924da",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh230"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7a421442ccb60283",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_67db287f0e47a485",
+            "type": "prop",
+            "name": "prop 9"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_238da9eb71a744e2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7a7bb25178e9d753",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_775b3f0fac5a390c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_42234a58779e81dd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_48fe5db63696a698",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5f5e974ea09cadce",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3bf722d7be815805",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_355df85b3b30dc74",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_37c3db20f9e8bae0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_67aba7ad7a0a1d26",
+            "type": "prop",
+            "name": "prop 10"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2cc4bc5e476ce68f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3d70c8dda19fdff5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh260"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_60c714d4a96f2356",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh270"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_211a0c9cb83105db",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh280"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_46b5dbc4b9932264",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh290"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_17a8581b55e01aa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh300"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_399e15ceb8ad4ae9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh310"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9992025ec67768c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh320"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4202403d23b8a3a3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh330"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_705fef88d0b27106",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_68e43aaeda249da8",
+            "type": "prop",
+            "name": "mansion_hero"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_381b44143df40dfe",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_68a8d96543fa87d4",
+            "type": "prop",
+            "name": "prop 12"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_38d660437fcb89c0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_6608b178f5cb8e31",
+            "type": "prop",
+            "name": "prop 14"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4abc53ecefe94643",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_7b15dbee7c902d29",
+            "type": "prop",
+            "name": "prop 15"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1edda0fc51e33926",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_15762f5cc05a157e",
+            "type": "prop",
+            "name": "prop 13"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_12993f9f4b379c58",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_2a92f1695394c8c6",
+            "type": "prop",
+            "name": "prop 16"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3799bd4b815e6158",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_67cc2d78b9a203a7",
+            "type": "prop",
+            "name": "prop 17"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dfa6caa77f870bc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_2ca16ba132e540dd",
+            "type": "prop",
+            "name": "prop 20"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c57f50f6cc61e29",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_2132859d2d56eceb",
+            "type": "prop",
+            "name": "prop 21"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_521dd775baeefcd3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_5b736a8e0773edee",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 22"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_50bc029014108254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_70bb5cd650339429",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_396fc4ba2a9d0181",
+            "type": "prop",
+            "name": "prop 23"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_507ef69013dcbfd2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_7dbd9cec34052ff",
+            "type": "prop",
+            "name": "prop 24"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "name": "sh060"
+                },
+                {
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7bd70e22bca1e1b8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_a3edaf62e1a1399",
+            "type": "prop",
+            "name": "prop 18"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6e209b62febac67b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh010",
+                    "aligntarget": "tag_align_billiards"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6f38795a1b99832e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh020"
+                },
+                {
+                    "name": "sh030"
+                },
+                {
+                    "name": "sh040"
+                },
+                {
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_26afa1349369ceca",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3073d50714ee3a85",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh070"
+                },
+                {
+                    "name": "sh080"
+                },
+                {
+                    "name": "sh090"
+                },
+                {
+                    "name": "sh100"
+                },
+                {
+                    "name": "sh110"
+                },
+                {
+                    "name": "sh120"
+                },
+                {
+                    "name": "sh130"
+                },
+                {
+                    "name": "sh140"
+                },
+                {
+                    "name": "sh150"
+                },
+                {
+                    "name": "sh160"
+                },
+                {
+                    "name": "sh170"
+                },
+                {
+                    "name": "sh180"
+                },
+                {
+                    "name": "sh190"
+                },
+                {
+                    "name": "sh195"
+                },
+                {
+                    "name": "sh200"
+                },
+                {
+                    "name": "sh210",
+                    "aligntarget": "tag_align_outro_front"
+                },
+                {
+                    "name": "sh220"
+                },
+                {
+                    "name": "sh230"
+                },
+                {
+                    "name": "sh240"
+                },
+                {
+                    "name": "sh250"
+                },
+                {
+                    "name": "sh260"
+                },
+                {
+                    "name": "sh270"
+                },
+                {
+                    "name": "sh280"
+                },
+                {
+                    "name": "sh290"
+                },
+                {
+                    "name": "sh300"
+                },
+                {
+                    "name": "sh310"
+                },
+                {
+                    "name": "sh320"
+                },
+                {
+                    "name": "sh330"
+                },
+                {
+                    "name": "sh340"
+                }
+            ],
+            "model": "#hash_616114fc5cdd0943",
+            "type": "prop",
+            "name": "prop 19"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "dontthrottle": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "cin_zm_mansion_outro_butler",
+    "dontsync": 1,
+    "disablesceneskipping": 1,
+    "var_241c5f3c": 1,
+    "var_a6da2039": "cin_zm_mansion_outro_butler",
+    "aligntarget": "tag_align_billiards",
+    "team": "any"
+}

@@ -452,7 +452,7 @@ function function_d38af2b() {
         }
         level thread scene::play(#"p8_fxanim_mp_nt4_missile_launch_bundle");
         wait(4);
-        level scene::play(#"hash_41edbf03d547e5c");
+        level scene::play(#"cin_nuketown_4_movie_sh010");
         level scene::play(#"hash_428edf03d5cf177");
     } else {
         playsoundatposition("vox_pa_ee_warning", (1356, 159, 165));

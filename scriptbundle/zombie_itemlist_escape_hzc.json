@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 95,
+            "var_a6762160": "zombie_itemlist_hzc",
+            "maxweight": 95,
+            "available": 1
+        },
+        {
+            "minweight": 5,
+            "var_a6762160": "cu_escape_list",
+            "maxweight": 5,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "zombie_itemlist_escape_hzc",
+    "var_fde72c94": 100
+}

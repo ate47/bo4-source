@@ -526,7 +526,7 @@ function do_monkey_sound(info) {
 // Size: 0x6c
 function function_875fd1df() {
     var_bdd70f6a = self.var_bdd70f6a;
-    var_bdd70f6a thread scene::play(#"hash_2b352ec1d391daaa", var_bdd70f6a);
+    var_bdd70f6a thread scene::play(#"cin_t8_monkeybomb_dance", var_bdd70f6a);
     while (isdefined(self)) {
         waitframe(1);
     }

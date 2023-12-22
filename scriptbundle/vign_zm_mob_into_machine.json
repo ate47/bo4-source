@@ -1,0 +1,35 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_d796100327cfca4",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_vign_zm_mob_richtofen_into_machine",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_45b00ade1dbcab2b",
+            "type": "player",
+            "name": "player 1",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "vign_zm_mob_into_machine",
+    "dontsync": 1,
+    "disablesceneskipping": 1,
+    "var_241c5f3c": 1,
+    "aligntarget": "tag_align_escape_arena",
+    "team": "any"
+}

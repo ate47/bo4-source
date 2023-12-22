@@ -1040,7 +1040,7 @@ function player_revive_monitor() {
                 self zm_audio::create_and_play_dialog(#"revive", #"up");
             }
             points = self.score_lost_when_downed;
-            if (!isdefined(points) || self == reviver || zm_custom::function_901b751c(#"hash_1fed0d9afc0b0040")) {
+            if (!isdefined(points) || self == reviver || zm_custom::function_901b751c(#"zmpointlossondown")) {
                 points = 0;
             } else if (points > 2500) {
                 points = 2500 + (points - 2500) * 0.5;

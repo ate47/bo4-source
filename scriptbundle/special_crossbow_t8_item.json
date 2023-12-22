@@ -1,0 +1,18 @@
+{
+    "amount": 1,
+    "description": "#hash_5061feb7eb006041",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:special_crossbow_t8_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 35,
+    "var_65b3a12": 6,
+    "name": "special_crossbow_t8_item",
+    "displayname": "#weapon/special_crossbow_t8",
+    "icon": "#hash_19d9ac5ea119cf5c",
+    "modelscale": 1,
+    "rarity": "Common",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_44cb8e1f83107aa1",
+    "var_50773731": 3,
+    "itemtype": "weapon"
+}

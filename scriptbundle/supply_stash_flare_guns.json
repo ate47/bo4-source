@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "flare_gun_wz_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "flare_gun_veh_wz_item",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "supply_stash_flare_guns",
+    "var_fde72c94": 100
+}

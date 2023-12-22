@@ -1,0 +1,24 @@
+{
+    "options": [
+        {
+            "label": "#hash_3b9f82963f90a6f0",
+            "value": "0"
+        },
+        {
+            "label": "#hash_6c64c260c9efa2dd",
+            "value": "1"
+        }
+    ],
+    "description": "#hash_758788da40f5e7c1",
+    "var_60fcfffa": "#menu/on",
+    "var_8722393c": 1,
+    "var_9358ee0a": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "warzone_cycle_items",
+    "displayname": "#hash_db6129f6ac2f26",
+    "var_66faec87": 10,
+    "statname": "warzoneCycleItems",
+    "var_b7401319": "#menu/off"
+}

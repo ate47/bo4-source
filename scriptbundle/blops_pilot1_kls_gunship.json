@@ -1,0 +1,19 @@
+{
+    "damageevaded": "#hash_4ca3a9abf683004c",
+    "var_922067c4": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "damaged": "#hash_4aedce0b2f41a919",
+    "killmultiple": "#hash_1433c33e0265f230",
+    "var_dfa3bfb0": "#hash_e61f52d14bbc818",
+    "vmtype": "both",
+    "var_ad134a93": "#hash_76fe5f464ac6ef69",
+    "var_d6a59dbb": "#hash_76fe5d464ac6ec03",
+    "var_c2d1760f": "#hash_76fe5c464ac6ea50",
+    "name": "blops_pilot1_kls_gunship",
+    "arrive": "#hash_845495e30546d73",
+    "var_c332a711": "#hash_4afeca0b2f501580",
+    "timeout": "#hash_1f57ea8a7d2622c6",
+    "kill1": "#hash_3301c5b209871e31",
+    "kill3": "#hash_3301c3b209871acb",
+    "kill2": "#hash_3301c2b209871918"
+}

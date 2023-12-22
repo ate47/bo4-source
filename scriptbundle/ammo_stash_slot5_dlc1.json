@@ -1,0 +1,18 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "armor_shard_item",
+            "var_8261a18": "armor_shard_item",
+            "var_3f8c08e3": "armor_shard_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "var_9b009839": -1,
+    "name": "ammo_stash_slot5_dlc1",
+    "var_fde72c94": 100
+}

@@ -1,0 +1,38 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_142986d23f823fc8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_429a872cb7b171de",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_6e00a91ee82b9ce3",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_man_wm_stick_05_bundle",
+    "dontsync": 1,
+    "aligntarget": "tag_align_cemetery",
+    "team": "any"
+}

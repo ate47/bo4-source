@@ -26,7 +26,7 @@ function init_shared() {
     level.smartcoversettings = spawnstruct();
     if (sessionmodeismultiplayergame()) {
         if (getgametypesetting(#"competitivesettings") === 1) {
-            level.smartcoversettings.bundle = getscriptbundle(#"hash_1df8cd70e8310c57");
+            level.smartcoversettings.bundle = getscriptbundle(#"smartcover_custom_settings_comp");
         } else {
             level.smartcoversettings.bundle = getscriptbundle(#"smartcover_settings_mp");
         }

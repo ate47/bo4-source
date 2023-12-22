@@ -1,0 +1,41 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3fc8a8a91777a484",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_7fd3b42b8278ece",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_811b245032a2157",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_7b01b05441039644",
+            "type": "prop",
+            "vmtype": "server",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_packasplat_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

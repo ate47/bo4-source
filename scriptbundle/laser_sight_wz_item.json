@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "steadyaim"
+        }
+    ],
+    "description": "#hash_471c49f0a37cb7f2",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_wz_pickup_laser",
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "hintstring": "#hash_215c3e3eb8ff0a22",
+    "var_65b3a12": 1,
+    "name": "laser_sight_wz_item",
+    "displayname": "#hash_215c3e3eb8ff0a22",
+    "icon": "#ui_icon_attachment_laser",
+    "modelscale": 1.25,
+    "rarity": "Common",
+    "equipsound": "uin_wz_attach_lasersight_on",
+    "handler": "#hash_788c59214ead02af",
+    "pickupicon": "#ui_icon_attachment_laser",
+    "itemtype": "attachment"
+}

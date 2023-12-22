@@ -1,0 +1,40 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "pistol_grip_wz_item"
+        },
+        {
+            "var_6be1bec7": "extbarrel_wz_item"
+        },
+        {
+            "var_6be1bec7": "acog_wz_item"
+        },
+        {
+            "var_6be1bec7": "fastmag_wz_item"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_67f3e60ee61f305",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -6,
+    "var_3e688854": -2,
+    "weapon": <error reading:hash_22968b857f5ce43>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "baseweapon": "lmg_spray_t8_item",
+    "var_65b3a12": 6,
+    "var_340eac1f": 1,
+    "name": "lmg_spray_t8_gold_item",
+    "var_9507cf45": "#hash_371b634564ca3cf1",
+    "icon": "#hash_6547eaac6f5dd972",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Epic",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "pickupicon": "#hash_6c965ad1e7d1ad6d",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

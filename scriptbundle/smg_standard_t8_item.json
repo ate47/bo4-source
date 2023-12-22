@@ -1,0 +1,23 @@
+{
+    "amount": 1,
+    "description": "#hash_26f65a9fb0bb914e",
+    "var_922067c4": "scriptbundle",
+    "var_3e688854": -2,
+    "weapon": <error reading:smg_standard_t8_wz>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "var_65b3a12": 6,
+    "name": "smg_standard_t8_item",
+    "icon": "#hash_791db6a5b7b77ad",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Common",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "pickupicon": "#hash_33c0b695ecf6c36a",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

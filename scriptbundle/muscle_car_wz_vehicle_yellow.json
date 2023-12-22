@@ -1,0 +1,10 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnentry",
+    "name": "muscle_car_wz_vehicle_yellow",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#generic_pickup",
+    "vehicle": "veh_muscle_car_convertible_player_wz_ylw",
+    "itemtype": "vehicle"
+}

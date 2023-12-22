@@ -1,0 +1,44 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4fd2015064b057e5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#spawner_zm_werewolf",
+            "type": "actor",
+            "name": "zombie_spawner_werewolf"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4cc67b54a62118ea",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "spawner_zm_zombie"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mnsn_werewolf_post_transform",
+    "dontsync": 1,
+    "team": "any"
+}

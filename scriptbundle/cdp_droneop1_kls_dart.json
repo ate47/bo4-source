@@ -1,0 +1,11 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "killmultiple": "#hash_2e789248c0d40a3",
+    "vmtype": "both",
+    "name": "cdp_droneop1_kls_dart",
+    "kill1": "#hash_4bf6642680297fe2",
+    "kill3": "#hash_4bf6622680297c7c",
+    "kill2": "#hash_4bf6632680297e2f",
+    "killnone": "#hash_6865f35ff6d5c52"
+}

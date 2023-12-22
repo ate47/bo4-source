@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1cff487ffa82a26b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "blend": 0.2
+                }
+            ],
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "name": "spawner_zm_zombie"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_zod_bltfthr_spawn_pre_split",
+    "dontsync": 1,
+    "team": "any"
+}

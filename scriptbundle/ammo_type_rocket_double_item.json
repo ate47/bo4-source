@@ -1,0 +1,18 @@
+{
+    "amount": 4,
+    "description": "#hash_350770388cdaa1e",
+    "var_922067c4": "scriptbundle",
+    "model": "#p8_wz_ammo_pickup_rockets",
+    "weapon": <error reading:hash_2f2b5d4837fb0d6f>,
+    "type": "itemspawnentry",
+    "hintstring": "#hash_3ccf9bf5cc21aeb3",
+    "var_6731866b": 60,
+    "name": "ammo_type_rocket_double_item",
+    "displayname": "#hash_3ccf9bf5cc21aeb3",
+    "icon": "#hash_69861de068dbd4bf",
+    "modelscale": 0.6,
+    "rarity": "None",
+    "handler": "#hash_9ed0c30684ca35a",
+    "itemtype": "ammo",
+    "pickupsound": "fly_pickup_ammo_rocket"
+}

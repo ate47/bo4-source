@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2296cd4506feaade",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "rise"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_301b8b349df3b305",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_shrine_charon_lantern_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

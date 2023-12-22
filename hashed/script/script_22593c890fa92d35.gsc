@@ -80,7 +80,7 @@ function function_f3dbfe8d(einflictor, eattacker, idamage, idflags, smeansofdeat
         level.var_f5ea5804 = 1;
         self ghost();
         if (!(isdefined(level.var_f2ea2755) && level.var_f2ea2755)) {
-            item_supply_drop::spawn_supply_drop(self.origin, #"hash_6bf51ee970d5ba5e");
+            item_supply_drop::spawn_supply_drop(self.origin, #"zombie_supply_stash_parent");
             level.var_f2ea2755 = 1;
         }
     }

@@ -1,0 +1,14 @@
+{
+    "description": "#hash_4a59c95aa6a91cee",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "controller_vibration",
+    "displayname": "#hash_462513dcd14f6fde",
+    "var_66faec87": 10,
+    "statname": "gpad_rumble",
+    "var_82c732a7": 1,
+    "var_b7401319": "#menu/off"
+}

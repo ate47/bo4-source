@@ -1,0 +1,19 @@
+{
+    "hinttext": "#hash_9160409056ed145",
+    "var_922067c4": "scriptbundle",
+    "var_f2038d90": "4.5",
+    "var_fc4aa21e": "5",
+    "value2": "1.5",
+    "var_6006e991": "2",
+    "var_43883094": "1",
+    "var_7c9022a3": "3.5",
+    "var_8e4ec620": "4",
+    "var_dfed6968": "2.5",
+    "var_71ce0d1f": "3",
+    "type": "gamesettings",
+    "label": "#menu/noloc",
+    "name": "kill_event_score_multiplier",
+    "displayname": "#hash_26d4fa9a55965aeb",
+    "var_9de86f42": 9,
+    "setting": "killEventScoreMultiplier"
+}

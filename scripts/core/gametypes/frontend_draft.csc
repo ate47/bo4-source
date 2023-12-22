@@ -47,16 +47,16 @@ function function_47569560() {
 function function_75442e78(index) {
     var_8cb8d474 = [];
     if (currentsessionmode() == 0) {
-        var_8cb8d474[0] = #"hash_28c8cd6c10e5c798";
-        var_8cb8d474[1] = #"hash_28c8d06c10e5ccb1";
-        var_8cb8d474[2] = #"hash_28c8cf6c10e5cafe";
-        var_8cb8d474[3] = #"hash_28c8ce6c10e5c94b";
+        var_8cb8d474[0] = #"zm_lobby_player_2";
+        var_8cb8d474[1] = #"zm_lobby_player_1";
+        var_8cb8d474[2] = #"zm_lobby_player_0";
+        var_8cb8d474[3] = #"zm_lobby_player_3";
     } else {
-        var_8cb8d474[0] = #"hash_2da80819aca61444";
-        var_8cb8d474[1] = #"hash_14207ac052338b77";
-        var_8cb8d474[2] = #"hash_3de928cb4eca5c62";
-        var_8cb8d474[3] = #"hash_477e5761fdabcb19";
-        var_8cb8d474[4] = #"hash_42145b8ebbfee26";
+        var_8cb8d474[0] = #"draft_player_struct_2_allies";
+        var_8cb8d474[1] = #"draft_player_struct_1_allies";
+        var_8cb8d474[2] = #"draft_player_struct_0_allies";
+        var_8cb8d474[3] = #"draft_player_struct_3_allies";
+        var_8cb8d474[4] = #"draft_player_struct_4_allies";
     }
     if (index < var_8cb8d474.size) {
         return struct::get(var_8cb8d474[index]);

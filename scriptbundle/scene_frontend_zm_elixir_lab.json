@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_lab",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_zm_elixir_lab",
+    "dontsync": 1,
+    "aligntarget": "tag_align_zm_lab",
+    "team": "any"
+}

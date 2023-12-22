@@ -23,5 +23,6 @@ Pools dumped:
 | rawfile         | 41  |
 | stringtable     | 43  |
 | scriptparsetree | 48  |
+| scriptbundle    | 63  |
 | bgcache         | 85  |
 | rawstring       | 157 |

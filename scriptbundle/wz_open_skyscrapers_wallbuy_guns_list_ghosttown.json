@@ -1,0 +1,52 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_ar",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_smg",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_shotgun",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 25,
+            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_tr",
+            "maxweight": 25,
+            "available": -1
+        },
+        {
+            "minweight": 25,
+            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_lmg",
+            "maxweight": 25,
+            "available": -1
+        },
+        {
+            "minweight": 25,
+            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_sniper",
+            "maxweight": 25,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_zombie",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 7,
+    "var_9b009839": -1,
+    "name": "wz_open_skyscrapers_wallbuy_guns_list_ghosttown",
+    "var_fde72c94": 100
+}

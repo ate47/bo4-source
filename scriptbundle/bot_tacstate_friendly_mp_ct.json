@@ -1,0 +1,122 @@
+{
+    "positionhandlerlist": [
+        {
+            "querylist": [
+                {
+                    "name": "bot_tacquery_trigger"
+                }
+            ],
+            "name": "#revive_player",
+            "center": "#revive_target"
+        },
+        {
+            "querylist": [
+                {
+                    "name": "bot_tacquery_trigger"
+                }
+            ],
+            "name": "#gameobject_interact",
+            "center": "#gameobject_interact"
+        },
+        {
+            "querylist": [
+                {
+                    "name": "bot_tacquery_nearest_cover_see_enemy"
+                },
+                {
+                    "name": "bot_tacquery_nearest_see_enemy"
+                }
+            ],
+            "name": "#in_combat",
+            "center": "#goal"
+        },
+        {
+            "querylist": [
+                {
+                    "name": "bot_tacquery_nearest_cover"
+                },
+                {
+                    "name": "bot_tacquery_nearest_point"
+                }
+            ],
+            "name": "#hash_c0bcf7fa0d58e5",
+            "center": "#goal"
+        },
+        {
+            "name": "#default",
+            "center": "#goal"
+        }
+    ],
+    "actionlist": [
+        {
+            "name": "#hash_78881ac649c38041"
+        },
+        {
+            "name": "#use_gameobject"
+        },
+        {
+            "name": "#melee_glass"
+        },
+        {
+            "name": "#melee_enemy"
+        },
+        {
+            "name": "#reload_weapon"
+        },
+        {
+            "name": "#switch_to_weapon"
+        },
+        {
+            "name": "#look_for_enemy"
+        },
+        {
+            "name": "#scan_for_threats"
+        }
+    ],
+    "var_6ef48dfa": 0.25,
+    "var_a78526b8": "j_spineupper",
+    "var_48aa05a1": 400,
+    "var_1f5429aa": 200,
+    "fovbusy": 110,
+    "var_4f836fd6": 1750,
+    "var_f181b86b": "bot_tacquery_space_seeds",
+    "var_bda90bb9": 1000,
+    "yawsensitivity": 1,
+    "var_922067c4": "scriptbundle",
+    "inaccuracy": 80,
+    "var_19019506": 0.76,
+    "pacifistwait": 1,
+    "var_4333f343": 0.1,
+    "type": "bottacticalstate",
+    "var_1f8a6a2": 1,
+    "var_2fc77943": 1.1,
+    "pitchacceleration": 10,
+    "var_b9f05fc": 0.5,
+    "var_c850085f": 1,
+    "var_d5bf8f0d": 0.85,
+    "var_25664dde": 1000,
+    "pitchsensitivity": 1,
+    "yawacceleration": 20,
+    "var_b4c8298c": 0.95,
+    "vmtype": "server",
+    "var_ac1c818f": 0.7,
+    "sprintdist": 300,
+    "var_b6b1339c": "j_head",
+    "name": "bot_tacstate_friendly_mp_ct",
+    "var_82aa37d8": 4500,
+    "var_ecf6111e": 0.5,
+    "var_fc299ded": 0.1,
+    "highlyawareradius": 128,
+    "perfectaim": 1,
+    "maxsightdist": 8192,
+    "fov": 179,
+    "var_f80f8551": 0.85,
+    "maxrange": 2500,
+    "var_2b02e26a": 15,
+    "var_b392418": 0.1,
+    "var_f58a14bd": 0.8,
+    "var_69610dbe": 25,
+    "var_5eaa9e02": 1,
+    "var_bc0b2a06": 1.1,
+    "Accuracy": 1
+}

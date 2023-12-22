@@ -1,0 +1,58 @@
+{
+    "options": [
+        {
+            "label": "#menu/default",
+            "value": "0"
+        },
+        {
+            "label": "#hash_41bbe8bb75e0fda6",
+            "value": "1"
+        },
+        {
+            "label": "#menu/lefty",
+            "value": "2"
+        },
+        {
+            "label": "#menu/nomad",
+            "value": "3"
+        },
+        {
+            "label": "#menu/charlie",
+            "value": "4"
+        },
+        {
+            "label": "#hash_139c067801823f4b",
+            "value": "5"
+        },
+        {
+            "label": "#hash_1e31a517d89f8d8b",
+            "value": "6"
+        },
+        {
+            "label": "#hash_528bdecc81455bad",
+            "value": "7"
+        },
+        {
+            "label": "#hash_186146d66336a088",
+            "value": "8"
+        }
+    ],
+    "var_d260763": "#hash_7ff90f0bea8ed361",
+    "description": "#hash_14931926194bdccd",
+    "var_60fcfffa": "#hash_33f7784385593061",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_5352657b": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.01,
+    "maxvalue": 1,
+    "name": "pc_gamepad_horizontal_sensitivity",
+    "displayname": "#hash_74bca3e24cc1ed1b",
+    "var_4a4760c0": 0.01,
+    "var_d6897f56": 1,
+    "var_926d1be9": 0.01,
+    "var_66faec87": 4,
+    "statname": "input_viewSensitivityHorizontal",
+    "var_d4e288e": 1,
+    "var_b7401319": "#hash_62ed1ce9b3cdba91"
+}

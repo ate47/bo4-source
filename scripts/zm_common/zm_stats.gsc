@@ -1853,9 +1853,9 @@ function function_7f377150(s_event_calling_task, n_value = 1) {
 // Size: 0x19e
 function function_e8c496dd(var_d479261a) {
     level.var_d479261a = var_d479261a;
-    var_314051a1 = getscriptbundle(#"hash_7258efc12235efc9");
-    if (isdefined(var_314051a1.var_4c2d4591) && isdefined(var_314051a1.var_4c2d4591[var_d479261a])) {
-        task = var_314051a1.var_4c2d4591[var_d479261a];
+    var_314051a1 = getscriptbundle(#"t8_callings_settings");
+    if (isdefined(var_314051a1.dailyschedule) && isdefined(var_314051a1.dailyschedule[var_d479261a])) {
+        task = var_314051a1.dailyschedule[var_d479261a];
         var_e199fb8a = getscriptbundle(task.task);
         if (isdefined(var_e199fb8a.callingtask)) {
             var_341c004b = undefined;

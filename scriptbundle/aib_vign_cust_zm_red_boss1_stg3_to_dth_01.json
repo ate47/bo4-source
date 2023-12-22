@@ -1,0 +1,61 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2d1474b0b8e7da7a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start"
+                }
+            ],
+            "model": "#hash_2fbc31b782c52b97",
+            "type": "prop",
+            "name": "boss_1",
+            "var_2baad8fc": 1,
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2f36d19c6d5eb655",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start"
+                }
+            ],
+            "model": "#hash_1cd365685eb76aec",
+            "type": "prop",
+            "name": "p_shield"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4e267e5ae854c9fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start"
+                }
+            ],
+            "model": "#hash_39b17285015a6944",
+            "type": "prop",
+            "name": "p_sword"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_boss1_stg3_to_dth_01",
+    "dontsync": 1,
+    "team": "any"
+}

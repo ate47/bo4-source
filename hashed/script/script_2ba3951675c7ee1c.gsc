@@ -70,7 +70,7 @@ function __init__() {
     level flag::init(#"magma_forge_completed");
     level flag::init(#"hash_5e6097345e223e2d");
     level.var_19a54d73 = 0;
-    scene::add_scene_func(#"hash_22d77c3d8f8cdb1e", &function_6672db20, "play");
+    scene::add_scene_func(#"aib_vign_zm_mob_smelter_ghost", &function_6672db20, "play");
 }
 
 // Namespace namespace_fc5c8455/namespace_8d08012b
@@ -1002,8 +1002,8 @@ function function_e672cf9(e_player, var_fc074136) {
 // Checksum 0xa616e0a8, Offset: 0x4cd8
 // Size: 0x1d4
 function function_6672db20(a_ents) {
-    var_36fa84e8 = a_ents[#"hash_5e9dee7036d632d2"];
-    var_48c0a804 = a_ents[#"hash_5e9ded7036d6311f"];
+    var_36fa84e8 = a_ents[#"fakeactor 1"];
+    var_48c0a804 = a_ents[#"fakeactor 2"];
     var_36fa84e8 clientfield::set("" + #"hash_7692067c56d8b6cc", 1);
     var_48c0a804 clientfield::set("" + #"hash_7692067c56d8b6cc", 1);
     var_48c0a804 waittill(#"start_alpha");

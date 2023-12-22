@@ -1,0 +1,26 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "vehicle_list_arav_wz",
+            "maxweight": 1,
+            "available": 3
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 20000,
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "vehiclespawner": 1,
+    "var_9b009839": -1,
+    "name": "open_skyscraper_vehicles_arav_test",
+    "var_fde72c94": 100
+}

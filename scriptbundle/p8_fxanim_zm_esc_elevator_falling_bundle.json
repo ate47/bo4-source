@@ -1,0 +1,71 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_70a1874089da3c51",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_591fb71679a08ed8",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_497c29f457092610",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_6eaba1ae3505d6d3",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1d42b627b51f9a6f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4d71924752bff486",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_1663e2bb6ea3822",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_17b0baa9ad4d7e91",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_elevator_falling_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

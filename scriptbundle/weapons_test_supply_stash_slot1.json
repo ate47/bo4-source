@@ -1,0 +1,42 @@
+{
+    "itemlist": [
+        {
+            "minweight": 40,
+            "var_a6762160": "weapons_test_guns",
+            "maxweight": 40,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "weapons_test_guns_gold",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "weapons_test_guns_operator",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "health_item_medium",
+            "maxweight": 60,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "armor_item_medium",
+            "maxweight": 60,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "name": "weapons_test_supply_stash_slot1",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

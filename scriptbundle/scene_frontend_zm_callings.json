@@ -1,0 +1,156 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_artifact_all",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_artifact_align",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_artifact_overview",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_bf_callings",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 4"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_bf_completion",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_bf_lore",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_db_callings",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_db_completion",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_db_lore",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 9"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_fl_callings",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 10"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_fl_completion",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 11"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_fl_lore",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 12"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_tn_callings",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 13"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_tn_completion",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 14"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_zm_factions_tn_lore",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 15"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_zm_callings",
+    "dontsync": 1,
+    "aligntarget": "tag_align_zm_factions",
+    "team": "any"
+}

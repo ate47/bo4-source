@@ -1,0 +1,188 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_swat_play",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_swat_play2",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_swat_play3",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_swat_play6",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play6"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34aad46150cfd697",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34aad46150cfd697",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34aad46150cfd697",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34aad46150cfd697",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play6"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "frozen_moment_character"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_79fcb04a30eaf298",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_79fcb04a30eaf298",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_79fcb04a30eaf298",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_79fcb04a30eaf298",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play6"
+                }
+            ],
+            "model": "#hash_4c11738f6a26dfde",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_44dd922eb7499a41",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_44dd922eb7499a41",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_44dd922eb7499a41",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_44dd922eb7499a41",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play6"
+                }
+            ],
+            "model": "#hash_1bf1ae854431a109",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop2"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_swat",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

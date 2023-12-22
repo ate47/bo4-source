@@ -1,0 +1,18 @@
+{
+    "amount": 4,
+    "description": "#hash_45c5cd656e3bc648",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_9ce8bbfeca8bb96>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": -65,
+    "name": "trip_wire_wz_item",
+    "displayname": "#hash_50d8b3b5944ed86c",
+    "stackcount": 1,
+    "icon": "#hash_3fcb9d6697dc3324",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "stackable": 1,
+    "var_50773731": 2.5,
+    "itemtype": "equipment"
+}

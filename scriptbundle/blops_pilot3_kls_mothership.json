@@ -1,0 +1,16 @@
+{
+    "var_1087836d": "#hash_6fe4c70f85a798ad",
+    "var_922067c4": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "killmultiple": "#hash_2c8bc06b6b47ec97",
+    "vmtype": "both",
+    "var_3ce56802": "#hash_3e421afa9991c2a",
+    "name": "blops_pilot3_kls_mothership",
+    "arrive": "#hash_391c6a22e7a58195",
+    "timeout": "#hash_5922fd00e3ad91f5",
+    "kill": "#hash_4a7d014ec51256f6",
+    "weapondestroyed": "#hash_1bfd85301451f2f8",
+    "kill1": "#hash_24bfffd8de297425",
+    "kill3": "#hash_24bffdd8de2970bf",
+    "kill2": "#hash_24bffcd8de296f0c"
+}

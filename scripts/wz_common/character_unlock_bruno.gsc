@@ -31,7 +31,7 @@ function __init__() {
 function function_2613aeec(enabled) {
     if (enabled) {
         callback::on_downed(&on_player_downed);
-        character_unlock::function_d2294476(#"hash_2b1b5e3a3cc284a7", 3, 4);
+        character_unlock::function_d2294476(#"supply_drop_stash_cu11", 3, 4);
     }
 }
 

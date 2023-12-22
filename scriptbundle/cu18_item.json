@@ -1,0 +1,46 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_7b686f3eea03cb1b"
+        },
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_2486995ff1df34d4",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_c5a6e85a211b7ed",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_6a30f871330c4184",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_7b68703eea03ccce",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_7b68713eea03ce81"
+        }
+    ],
+    "description": "#hash_211dd865e50ededb",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 3,
+    "var_e8b98a8a": "#hash_1f3de3e08b3ad876",
+    "model": "#p8_wz_cu_emperor_letter",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_685b78d996fab60c",
+    "unlockableitemref": "#hash_1aab7708cff692e7",
+    "name": "cu18_item",
+    "displayname": "#hash_685b78d996fab60c",
+    "icon": "#hash_459b44cdbca0e2e2",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#zombie/takeo",
+    "pickupicon": "#hash_459b44cdbca0e2e2",
+    "var_50773731": 0.75,
+    "itemtype": "quest"
+}

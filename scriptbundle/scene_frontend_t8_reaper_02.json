@@ -1,0 +1,172 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_reaper_play",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play1"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_reaper_play3",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_reaper_play5",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_reaper_play2",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play4"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_reaper_play4",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play5"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen_reaper"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2e33fcc0e596e98a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2e33fcc0e596e98a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2e33fcc0e596e98a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2e33fcc0e596e98a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2e33fcc0e596e98a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                }
+            ],
+            "model": "#hash_4da6374ac52ab325",
+            "type": "fakeplayer",
+            "name": "frozen_moment_character"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6cd452a707075df9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6cd452a707075df9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6cd452a707075df9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6cd452a707075df9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6cd452a707075df9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                }
+            ],
+            "model": "#hash_375f20f89e279ffd",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "gun"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_reaper_02",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen_reaper",
+    "team": "any"
+}

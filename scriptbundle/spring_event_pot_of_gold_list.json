@@ -1,0 +1,25 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "resource_item_paint_stack_10",
+            "maxweight": 100,
+            "available": 3
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "melee_coinbag_t8_item",
+            "maxweight": 100,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "spring_event_pot_of_gold_list",
+    "displayname": "#wz/blackjackstash",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

@@ -1,0 +1,34 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "perk_item_brawler",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "perk_item_consumer",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "perk_item_lightweight",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "perk_item_brawler",
+            "maxweight": 200,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 4,
+    "var_9b009839": -1,
+    "name": "consumable_list_low_closequarters",
+    "var_fde72c94": 100
+}

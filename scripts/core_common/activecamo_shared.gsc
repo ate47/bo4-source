@@ -630,13 +630,13 @@ function function_896ac347(oweapon, statname, value) {
                                 self thread function_a6bcf0e2(activecamo);
                             }
                             if (sessionmodeismultiplayergame()) {
-                                if (activecamoinfo.name == #"hash_391b1d38f4d65c14") {
+                                if (activecamoinfo.name == #"activecamoinfo_t8_darkmatter") {
                                     if (stagenum == 1 && stage.var_dd54a13b[activecamo.baseweapon].statvalue == 5) {
                                         self stats::function_dad108fa(#"hash_51eff59939399dc9", 1);
                                     } else if (stagenum == 5 && stage.var_dd54a13b[activecamo.baseweapon].statvalue == 5) {
                                         self function_c0fa0ecb(weapon);
                                     }
-                                } else if (activecamoinfo.name == #"hash_4cc835f621014977") {
+                                } else if (activecamoinfo.name == #"activecamoinfo_t8_gold") {
                                     if (stagenum == 1 && stage.var_dd54a13b[activecamo.baseweapon].statvalue == 1) {
                                         self stats::function_dad108fa(#"hash_354bfe5c140365bf", 1);
                                     }

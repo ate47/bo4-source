@@ -33,7 +33,7 @@ function function_2613aeec(enabled) {
         callback::add_callback(#"hash_48bcdfea6f43fecb", &function_1c4b5097);
         callback::add_callback(#"on_last_alive", &function_4ac25840);
         callback::add_callback(#"on_drop_item", &on_drop_item);
-        character_unlock::function_d2294476(#"hash_2b1b5d3a3cc282f4", 2, 3);
+        character_unlock::function_d2294476(#"supply_drop_stash_cu10", 2, 3);
     }
 }
 

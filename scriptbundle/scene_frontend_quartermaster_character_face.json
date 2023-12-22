@@ -1,0 +1,48 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_rifle_male_draft_ch_select_3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "edit"
+                }
+            ],
+            "disabled": 1,
+            "model": "#hash_12acc1e0f42eea42",
+            "type": "fakeplayer",
+            "name": "specialist",
+            "aligntarget": "tag_align_quartermaster_character_head"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_blackmarket_character_head",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "edit"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_quartermaster_character_face",
+    "dontsync": 1,
+    "aligntarget": "tag_align_quartermaster_head_scene",
+    "team": "any"
+}

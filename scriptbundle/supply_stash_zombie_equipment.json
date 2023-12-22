@@ -1,0 +1,94 @@
+{
+    "itemlist": [
+        {
+            "minweight": 40,
+            "var_a6762160": "frag_grenade_wz_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "concussion_wz_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "sensor_dart_wz_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "molotov_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "concertina_wire_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "cluster_semtex_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "hatchet_wz_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "trip_wire_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "barricade_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "trophy_system_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "grapple_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "itemlist_cymbol_monkey",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "itemlist_smoke_grenade",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "recon_car_wz_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 14,
+    "var_9b009839": -1,
+    "name": "supply_stash_zombie_equipment",
+    "var_fde72c94": 100
+}

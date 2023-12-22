@@ -1,0 +1,172 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_outrider_play",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play1"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_outrider_play2",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_outrider_play5",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_outrider_play3",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_outrider_play4",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen_outrider"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_208e1ee2328db885",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_208e1ee2328db885",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_208e1ee2328db885",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_208e1ee2328db885",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_208e1ee2328db885",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#hash_91762ea068fcc6b",
+            "type": "fakeplayer",
+            "name": "frozen_moment_character"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1d93dee1c0fc5e2d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#hash_7c951baa910483eb",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_outrider",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen_outrider",
+    "team": "any"
+}

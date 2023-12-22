@@ -1,0 +1,34 @@
+{
+    "options": [
+        {
+            "label": "#hash_733d7cc550138701",
+            "value": "0"
+        },
+        {
+            "label": "#hash_649a1720b86cf55",
+            "value": "1"
+        },
+        {
+            "label": "#hash_61e402574c2a80cf",
+            "value": "2"
+        },
+        {
+            "label": "#hash_71415b1e154c24d8",
+            "value": "3"
+        }
+    ],
+    "var_d260763": "#hash_70dc2e854a9bef43",
+    "description": "#hash_ba86b3187253d63",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_5352657b": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_display_mode",
+    "displayname": "#hash_e3617617ec31669",
+    "var_66faec87": 10,
+    "statname": "r_fullscreen",
+    "var_b7401319": "#menu/off"
+}

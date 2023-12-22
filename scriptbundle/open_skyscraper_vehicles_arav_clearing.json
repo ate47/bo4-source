@@ -1,0 +1,29 @@
+{
+    "itemlist": [
+        {
+            "minweight": 20,
+            "var_a6762160": "vehicle_list_arav_wz",
+            "maxweight": 20,
+            "available": 1
+        },
+        {
+            "minweight": 60,
+            "var_a6762160": "vehicle_list_cargo_truck_wz",
+            "maxweight": 60,
+            "available": 1
+        },
+        {
+            "minweight": 20,
+            "maxweight": 20,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "vehiclespawner": 1,
+    "var_9b009839": -1,
+    "name": "open_skyscraper_vehicles_arav_clearing",
+    "var_fde72c94": 100
+}

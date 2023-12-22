@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53d7bf16f5e38c7f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_300227ef120ffea4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "breakout"
+                }
+            ],
+            "model": "#c_t8_zmb_3rdclass_male_body1",
+            "type": "prop",
+            "name": "actor 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_amp_zmb_brk_out_02",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,20 @@
+{
+    "amount": 1,
+    "description": "#hash_6e5e92f05297a27a",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:melee_zombiearm_t8_wz>,
+    "type": "itemspawnentry",
+    "var_7adcadc1": -5,
+    "var_65b3a12": 6,
+    "name": "melee_zombiearm_t8_item",
+    "displayname": "#weapon/melee_zombiearm_t8",
+    "var_36781d9f": "fly_drop_blade",
+    "icon": "#hash_2888e98b1862c1b6",
+    "modelscale": 1,
+    "rarity": "Common",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_18ef9803cfaa70a3",
+    "var_50773731": 4,
+    "itemtype": "weapon",
+    "pickupsound": "fly_pickup_blade"
+}

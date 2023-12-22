@@ -1,0 +1,39 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "lmg_heavy_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_50cal_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "lmg_spray_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "lmg_standard_t8_gold_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "armor_item_large",
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "var_345eba59": 4,
+    "var_9b009839": -1,
+    "name": "supply_stash_slot1_heavymetal",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

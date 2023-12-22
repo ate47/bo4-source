@@ -1,0 +1,35 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_t8_zm_zombie_base_dth_ww_xbow_intro",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#ai_t8_zm_zombie_base_dth_ww_xbow_loop",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "nospawn": 1,
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "dying_zombie",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_t8_zm_zombie_base_dth_ww_xbow",
+    "dontsync": 1,
+    "team": "any"
+}

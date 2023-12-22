@@ -1,0 +1,17 @@
+{
+    "hinttext": "#hash_687449d390bc2d93",
+    "var_922067c4": "scriptbundle",
+    "value2": "100",
+    "var_6006e991": "200",
+    "var_43883094": "0",
+    "var_dfed6968": "50",
+    "type": "gamesettings",
+    "name": "carrier_armor",
+    "displayname": "#hash_5ebf176f4e5b189d",
+    "var_684ccd4c": "#menu/half",
+    "var_9600a8ab": "#hash_94eb0e3329edf5f",
+    "var_71b6e020": "#menu/double",
+    "var_bd2ff709": "#menu/normal",
+    "var_9de86f42": 4,
+    "setting": "carrierArmor"
+}

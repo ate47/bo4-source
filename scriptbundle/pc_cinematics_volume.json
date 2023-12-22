@@ -1,0 +1,25 @@
+{
+    "option_dependencies": [
+        {
+            "var_1643d946": "0",
+            "var_6825bdb": "snd_mute_master_volume",
+            "operator": "=="
+        }
+    ],
+    "var_d260763": "#hash_79fda6795137590",
+    "description": "#hash_215057a0ef4ad32c",
+    "var_60fcfffa": "#hash_14d7072b1be4a4c",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.01,
+    "maxvalue": 1,
+    "name": "pc_cinematics_volume",
+    "displayname": "#hash_3ddbccbaea735f04",
+    "var_d6897f56": 1,
+    "var_926d1be9": 0.01,
+    "var_66faec87": 1,
+    "statname": "snd_menu_cinematic",
+    "var_d4e288e": 1,
+    "var_b7401319": "#hash_661e43062ca9239f"
+}

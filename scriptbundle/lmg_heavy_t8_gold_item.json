@@ -1,0 +1,44 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "pistol_grip_wz_item"
+        },
+        {
+            "var_6be1bec7": "extbarrel_wz_item"
+        },
+        {
+            "var_6be1bec7": "reddot_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "fastmag_wz_item"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_4ee41897c81afe5f",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -8,
+    "var_3e688854": -2,
+    "weapon": <error reading:hash_335924ba1c666165>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "baseweapon": "lmg_heavy_t8_item",
+    "var_65b3a12": 6,
+    "var_340eac1f": 1,
+    "name": "lmg_heavy_t8_gold_item",
+    "var_9507cf45": "#hash_35603200f9c8f873",
+    "icon": "#hash_3dd5d9f50d4b725c",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Epic",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_a611be3ea3cdfa7",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

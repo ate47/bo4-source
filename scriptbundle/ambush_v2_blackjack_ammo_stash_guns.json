@@ -1,0 +1,34 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "sniper_mini14_t8_item",
+            "var_8261a18": "ammo_type_556_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 100
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sniper_fastrechamber_t8_operator_item",
+            "var_3f8c08e3": "ammo_type_338_item",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sniper_quickscope_t8_operator_item",
+            "var_3f8c08e3": "ammo_type_338_item",
+            "maxweight": 100,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "ambush_v2_blackjack_ammo_stash_guns",
+    "displayname": "#hash_552e95261f2d04be",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

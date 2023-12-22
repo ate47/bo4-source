@@ -1,0 +1,31 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_19148e7553112f64",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#spawner_zm_tiger",
+            "type": "actor",
+            "name": "actor 1",
+            "var_29563fd6": 90.0714,
+            "var_be60a82b": -112,
+            "var_922b4fc5": -3648.15,
+            "var_3e692842": -14
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_twrs_ent_obelisk_tgr_01",
+    "dontsync": 1,
+    "team": "any"
+}

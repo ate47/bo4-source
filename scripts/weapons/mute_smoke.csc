@@ -45,7 +45,7 @@ function function_783a1c07(weapon) {
     /#
         assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
     #/
-    level.var_7c063d70 = getscriptbundle(weapon.customsettings);
+    level.mute_smoke_custom_settings = getscriptbundle(weapon.customsettings);
 }
 
 // Namespace mute_smoke/mute_smoke
@@ -121,7 +121,7 @@ function function_12e09509(localclientnum = 0) {
         /#
             function_783a1c07(previs_weapon);
         #/
-        settings = level.var_7c063d70;
+        settings = level.mute_smoke_custom_settings;
         var_91f40e9 = max(isdefined(settings.var_91f40e9) ? settings.var_91f40e9 : 1, 0.01);
         var_46e1fb08 setscale(var_91f40e9);
         var_37b85cb5 setscale(var_91f40e9);

@@ -1,0 +1,34 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_50803de69132ea58",
+                    "teamsize": 1
+                }
+            ],
+            "description": "#hash_10a843cf1acdae3a",
+            "var_57b131bd": 1
+        },
+        {
+            "description": "#hash_10a842cf1acdac87"
+        }
+    ],
+    "description": "#hash_7603b43454c5db0",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_503dcc29a3312eef",
+    "model": "#hash_36163e35fb8eb490",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_2f3edaf17b2213d9",
+    "unlockableitemref": "#hash_364c701b1646ddc8",
+    "name": "cu06_item",
+    "displayname": "#hash_2f3edaf17b2213d9",
+    "icon": "#hash_c9dfeb04f2b253e",
+    "modelscale": 1,
+    "rarity": "None",
+    "var_a51bc1f7": "#hash_5e2ef185900101fe",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_5b4889e3a720c949",
+    "itemtype": "quest"
+}

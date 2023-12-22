@@ -32,9 +32,9 @@ function function_2613aeec(enabled) {
     if (enabled) {
         callback::on_player_killed(&on_player_killed);
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
-            item_world_fixup::function_e70fa91c(#"hash_2e8c8c85b6034ab3", #"hash_d245b711188db4c", 1);
+            item_world_fixup::function_e70fa91c(#"wz_escape_supply_stash_parent", #"supply_stash_cu07", 1);
         } else {
-            item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"hash_d245b711188db4c", 6);
+            item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"supply_stash_cu07", 6);
         }
     }
 }

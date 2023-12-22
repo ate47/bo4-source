@@ -1,0 +1,16 @@
+{
+    "var_10460f1e": 1,
+    "scoreevent": "#kill_dog",
+    "var_922067c4": "scriptbundle",
+    "maxhealth": 100,
+    "var_fc420d71": 1,
+    "name": "zm_zombie_dog_settings",
+    "minhealth": 100,
+    "var_628192b0": 1,
+    "var_250a1683": 100,
+    "var_97b22faa": 1,
+    "damagescale": 1,
+    "category": "#popcorn",
+    "stunduration": 1,
+    "var_450edb3b": 1
+}

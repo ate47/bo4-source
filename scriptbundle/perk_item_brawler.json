@@ -1,0 +1,26 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_45dd57e95e6680ad"
+        }
+    ],
+    "amount": 1,
+    "duration": 240,
+    "description": "#hash_7cc9d6d4b454c013",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_2b0170573a22adba",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_9ed2158d57e594",
+    "consumable": 1,
+    "name": "perk_item_brawler",
+    "displayname": "#hash_9ed2158d57e594",
+    "stackcount": 1,
+    "icon": "#hash_3e2187739e0a7582",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_gungho",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

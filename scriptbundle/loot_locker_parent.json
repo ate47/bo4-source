@@ -1,0 +1,183 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "tr_damageburst_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "sniper_damagesemi_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "shotgun_precision_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "special_crossbow_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "sniper_locus_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "tr_flechette_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "sniper_mini14_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "ar_peacekeeper_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "lmg_stealth_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "shotgun_fullauto_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "smg_folding_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "ar_standard_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "smg_fastburst_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "pistol_fullauto_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "ar_an94_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_zombiearm_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_stopsign_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_club_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_cutlass_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_demohammer_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_coinbag_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_secretsanta_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_slaybell_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "ar_doublebarrel_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "smg_vmp_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_actionfigure_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "smg_minigun_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "melee_amuletfist_t8_item",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "lootlocker": 1,
+    "var_345eba59": 28,
+    "var_9b009839": 32,
+    "name": "loot_locker_parent",
+    "displayname": "#wz/blackjackstash",
+    "var_fde72c94": 100,
+    "var_dc91e192": 1,
+    "supplystash": 1
+}

@@ -241,7 +241,7 @@ function playerlaststand(einflictor, attacker, idamage, smeansofdeath, weapon, v
     }
     self.n_downs = self.n_downs + 1;
     bleedout_time = getdvarfloat(#"hash_1116ba0f929df636", isdefined(self.var_b92e42da) ? self.var_b92e42da : getdvarfloat(#"player_laststandbleedouttime", 0));
-    if (zm_custom::function_901b751c(#"hash_2d34a5d9024db85f") && self.n_downs > zm_custom::function_901b751c(#"hash_2d34a5d9024db85f")) {
+    if (zm_custom::function_901b751c(#"zmlimiteddownsamount") && self.n_downs > zm_custom::function_901b751c(#"zmlimiteddownsamount")) {
         bleedout_time = 0;
     }
     if (isdefined(self.n_bleedout_time_multiplier)) {

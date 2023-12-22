@@ -1,0 +1,21 @@
+{
+    "hinttext": "#hash_52854a2a04be7b7f",
+    "var_922067c4": "scriptbundle",
+    "var_f2038d90": "30",
+    "var_fc4aa21e": "60",
+    "value2": "2.5",
+    "var_6006e991": "5",
+    "var_43883094": "1",
+    "var_7c9022a3": "15",
+    "var_8e4ec620": "20",
+    "var_dfed6968": "7.5",
+    "var_71ce0d1f": "10",
+    "type": "gamesettings",
+    "label": "#hash_22a7b89757514dfb",
+    "name": "destroy_time",
+    "displayname": "#hash_7e1a441e7d737d19",
+    "var_c3da8466": "#hash_666d89ef0248d1ef",
+    "var_9600a8ab": "#hash_7201503206ce2d27",
+    "var_9de86f42": 9,
+    "setting": "destroyTime"
+}

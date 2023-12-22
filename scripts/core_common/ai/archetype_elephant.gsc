@@ -926,7 +926,7 @@ function private function_4c731a08() {
     self.ai.var_a5dabb8b = 1;
     self.allowdeath = 0;
     self bloodimpact("none");
-    namespace_81245006::initweakpoints(self, #"hash_13e16de0f170d841");
+    namespace_81245006::initweakpoints(self, #"c_t8_zmb_dlc0_towers_boss_weakpoint_def");
     aiutility::addaioverridedamagecallback(self, &function_cfe82365);
     function_2e4487f6(self, #"hash_8e173ae91589439");
     self thread function_f51431a9(self);

@@ -1,0 +1,106 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7ff97ee1d694355b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "aligntarget": "tag_align_escape_arena"
+                }
+            ],
+            "model": "#spawner_zm_brutus_special",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "boss",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_59918aa7b3ee8b19",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "aligntarget": "tag_align_escape_arena"
+                }
+            ],
+            "model": "#hash_6205190718bd89cd",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 1",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_599187a7b3ee8600",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "aligntarget": "tag_align_escape_arena"
+                }
+            ],
+            "model": "#hash_6205190718bd89cd",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 2",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_599188a7b3ee87b3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "aligntarget": "tag_align_escape_arena"
+                }
+            ],
+            "model": "#hash_6205190718bd89cd",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 3",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5263579e0a9c424b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "aligntarget": "tag_align_escape_arena"
+                }
+            ],
+            "model": "#c_t8_zmb_mob_brutus_boss_baton",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_brutus_boss_ghost_intro",
+    "dontsync": 1,
+    "aligntarget": "tag_align_escape_arena",
+    "team": "any"
+}

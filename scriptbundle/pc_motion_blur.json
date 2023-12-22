@@ -1,0 +1,29 @@
+{
+    "options": [
+        {
+            "label": "#hash_43ecbdda975e2ac1",
+            "value": "0"
+        },
+        {
+            "label": "#hash_51b400b4ec7fcb0b",
+            "value": "1"
+        },
+        {
+            "label": "#hash_439156e8d96d245",
+            "value": "2"
+        }
+    ],
+    "var_d260763": "#hash_668c63aab44dd4d7",
+    "description": "#hash_d4924f511db3e16",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_motion_blur",
+    "displayname": "#hash_653269b2339c49e6",
+    "var_66faec87": 10,
+    "statname": "r_motionBlurMode",
+    "var_b7401319": "#menu/off"
+}

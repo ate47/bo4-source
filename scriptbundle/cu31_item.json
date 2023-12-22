@@ -1,0 +1,45 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_359ef41c4528c1a2"
+        },
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_3ef7115237a4a31f",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_5cd00823d3c6f1cc",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_7eb7924020c15d17",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_359ef31c4528bfef",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_359ef21c4528be3c"
+        }
+    ],
+    "description": "#hash_7269b8a7718be398",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 3,
+    "var_e8b98a8a": "#hash_7d9704e3b0507957",
+    "model": "#hash_58286cd1d8b65b63",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_2d93e9364b720411",
+    "unlockableitemref": "#hash_54b973f453f4d094",
+    "name": "cu31_item",
+    "displayname": "#hash_2d93e9364b720411",
+    "icon": "#hash_3d965ca4a7ef85c9",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#zombie/stanton",
+    "pickupicon": "#hash_3d965ca4a7ef85c9",
+    "itemtype": "quest"
+}

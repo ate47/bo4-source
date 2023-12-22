@@ -1,0 +1,47 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_60541806f8a05274",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "showhud": 1,
+            "model": "#hash_340e0ee87d76f6e6",
+            "dontreloadammo": 1,
+            "type": "player",
+            "name": "player 1",
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_30a3ae992c453f0c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#spawner_zm_nosferatu",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "actor 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_mnsn_nfrtu_attack_latch_01",
+    "dontsync": 1,
+    "team": "any"
+}

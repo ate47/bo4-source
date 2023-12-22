@@ -58,7 +58,7 @@ function autoexec function_45a212c0() {
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"melee_bowie_t8_item", #"melee_bloody_bowie_t8_item");
     }
     if (isdefined(getgametypesetting(#"wztestallvehicles")) && getgametypesetting(#"wztestallvehicles")) {
-        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"equipment_list_med", #"hash_7f6ccc550b17457f");
+        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"equipment_list_med", #"equipment_list_med_vehicle_test");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"shotgun_fullauto_t8_item", #"launcher_standard_t8_item");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"shotgun_pump_t8_item", #"launcher_standard_t8_item");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"shotgun_semiauto_t8_item", #"launcher_standard_t8_item");

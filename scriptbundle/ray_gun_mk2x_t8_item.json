@@ -1,0 +1,18 @@
+{
+    "amount": 1,
+    "description": "#hash_b5a9e121eb22e9",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:ray_gun_mk2x_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "var_65b3a12": 6,
+    "name": "ray_gun_mk2x_t8_item",
+    "displayname": "#weapon/ray_gun",
+    "icon": "#hash_5b90d5267fa49338",
+    "modelscale": 1,
+    "rarity": "Common",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_4165a52bb963636d",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

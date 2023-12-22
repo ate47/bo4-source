@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1666b414e4cab80f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "_outro"
+                }
+            ],
+            "lerptime": 0.2,
+            "model": "#hash_4e787637acca8f4",
+            "type": "player",
+            "name": "player 1",
+            "cameratweenout": 0.5
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p_zm_seer_stone_s_out_male",
+    "dontsync": 1,
+    "team": "any"
+}

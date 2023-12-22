@@ -1,0 +1,32 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_e34930515615552",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#spawner_zm_werewolf",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "actor 1",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_mnsn_forest_gate_intro",
+    "dontsync": 1,
+    "aligntarget": "tag_align_forest",
+    "team": "any"
+}

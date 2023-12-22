@@ -1,0 +1,16 @@
+{
+    "amount": 1,
+    "description": "#hash_25f0076dd9406c3a",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_3f8cbb548898a466>,
+    "type": "itemspawnentry",
+    "name": "smoke_grenade_wz_item_spring_holiday",
+    "stackcount": 2,
+    "icon": "#hash_27f891b5cc3751dd",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "stackable": 1,
+    "var_50773731": 3.5,
+    "itemtype": "equipment"
+}

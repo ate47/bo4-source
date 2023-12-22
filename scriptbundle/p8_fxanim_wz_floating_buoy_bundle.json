@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_wz_floating_buoy_anim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_wz_floating_buoy_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "initial",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_wz_floating_buoy_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

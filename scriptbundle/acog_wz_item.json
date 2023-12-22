@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "acog"
+        }
+    ],
+    "description": "#hash_291880ef1dd7599d",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_optic_acog_world",
+    "type": "itemspawnentry",
+    "hintstring": "#wz/attach_acog",
+    "var_65b3a12": 1,
+    "name": "acog_wz_item",
+    "displayname": "#wz/attach_acog",
+    "icon": "#ui_icon_attachment_recon",
+    "modelscale": 1.5,
+    "rarity": "None",
+    "equipsound": "uin_wz_attach_reflex",
+    "handler": "#hash_788c59214ead02af",
+    "attachslotoptics": 1,
+    "pickupicon": "#ui_icon_attachment_recon",
+    "itemtype": "attachment"
+}

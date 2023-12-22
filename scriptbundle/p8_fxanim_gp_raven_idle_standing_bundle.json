@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7936bc35225a3b8c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 5,
+                    "spacermax": 30,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_gp_raven_01_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_gp_raven_idle_standing_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

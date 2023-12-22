@@ -24,7 +24,7 @@ function autoexec function_45a212c0() {
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"ammo_type_762_item", #"ammo_type_762_double_item");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"ammo_type_9mm_item", #"ammo_type_9mm_double_item");
         wz_common_fixup::item_replacer(var_d2223309, var_74257310, #"ammo_type_rocket_item", #"ammo_type_rocket_double_item");
-        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"supply_stash_parent_dlc1", #"hash_4bcb236eaf106519");
+        wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"supply_stash_parent_dlc1", #"supply_stash_parent_pandemic");
     }
 }
 

@@ -1,0 +1,23 @@
+{
+    "amount": 1,
+    "description": "#hash_67f3e60ee61f305",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -6,
+    "var_3e688854": -2,
+    "weapon": <error reading:lmg_spray_t8_wz>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "var_65b3a12": 6,
+    "name": "lmg_spray_t8_item",
+    "icon": "#hash_17a898ca62b95657",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Common",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "pickupicon": "#hash_6c965ad1e7d1ad6d",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

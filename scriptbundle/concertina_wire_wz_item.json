@@ -1,0 +1,18 @@
+{
+    "amount": 1,
+    "description": "#hash_3fbc31728dcf625e",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_6d6d1c6a7ce007e8>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": -90,
+    "name": "concertina_wire_wz_item",
+    "displayname": "#hash_746b33d0a9b035d2",
+    "stackcount": 2,
+    "icon": "#hash_33754daf03ddc89e",
+    "modelscale": 0.8,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "stackable": 1,
+    "var_50773731": 2,
+    "itemtype": "equipment"
+}

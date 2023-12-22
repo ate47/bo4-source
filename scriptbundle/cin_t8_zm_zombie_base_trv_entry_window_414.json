@@ -1,0 +1,38 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_10120cf8e1328f20",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "default"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_e292e15107bf79c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "crawler"
+                }
+            ],
+            "model": "#hash_6c258fe575114eac",
+            "type": "actor",
+            "name": "actor 1",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "cin_t8_zm_zombie_base_trv_entry_window_414",
+    "dontsync": 1,
+    "team": "any"
+}

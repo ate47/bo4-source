@@ -1193,7 +1193,7 @@ function function_365bef4(localclientnum, var_ff27a24 = 0) {
     level endon(array(#"laboratory_closed", #"hash_1d604ddf352ddcca"));
     function_9c935526();
     level flag::clear(#"hash_4bbc47f6a0a31743");
-    s_cam = struct::get(#"hash_3dd33181f00d872f");
+    s_cam = struct::get(#"tag_align_zm_lab");
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_lab_in", 0, "", "", s_cam.origin, s_cam.angles);
     playsound(localclientnum, #"hash_3e1e95a35dedc6bc");
     level thread scene::play(level.var_49f26c00.var_42c70173, level.var_49f26c00.var_febe408a + "_exit");
@@ -1297,7 +1297,7 @@ function function_205528f5(localclientnum) {
             forcenotifyuimodel(createuimodel(level.var_49f26c00.controller_model, "Laboratory.timedOut"));
         }
     }
-    s_cam = struct::get(#"hash_3dd33181f00d872f");
+    s_cam = struct::get(#"tag_align_zm_lab");
     level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
     level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_bundle", 1);
     level scene::stop(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", 1);
@@ -1326,7 +1326,7 @@ function function_205528f5(localclientnum) {
 // Size: 0x6f4
 function function_4053acdb(localclientnum) {
     level endon(#"laboratory_closed");
-    s_cam = struct::get(#"hash_3dd33181f00d872f");
+    s_cam = struct::get(#"tag_align_zm_lab");
     /#
         level thread function_66051772();
     #/
@@ -1420,7 +1420,7 @@ function function_254a0f6d(localclientnum) {
     /#
         level thread function_66051772();
     #/
-    s_cam = struct::get(#"hash_3dd33181f00d872f");
+    s_cam = struct::get(#"tag_align_zm_lab");
     if (isdefined(level.var_49f26c00.var_f6e518bb)) {
         level util::delay(0.25, #"laboratory_closed", &scene::play, #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "exit");
     }
@@ -1483,7 +1483,7 @@ function function_254a0f6d(localclientnum) {
 // Size: 0x274
 function function_8ab548f5(localclientnum) {
     level.var_ee871019 = undefined;
-    s_cam = struct::get(#"hash_3dd33181f00d872f");
+    s_cam = struct::get(#"tag_align_zm_lab");
     function_a8f6e36c(localclientnum, 6);
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", "exit");
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_bottles_bundle", "exit");

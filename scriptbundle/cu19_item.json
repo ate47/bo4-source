@@ -1,0 +1,44 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_71ee2ed846c955a1"
+        },
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_203d8d5eb73dbc34",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_48b03bcf3187a2cd",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_3c6bec6b106a6ae4",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_71ee2dd846c953ee",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_71ee30d846c95907"
+        }
+    ],
+    "description": "#hash_5803baabdfd40972",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 3,
+    "var_e8b98a8a": "#hash_69ea629874ffc11",
+    "model": "#p8_wz_cu_clothes_tshirt",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_777414243131336f",
+    "unlockableitemref": "#hash_68a8a2d6d70fbc5d",
+    "name": "cu19_item",
+    "displayname": "#hash_777414243131336f",
+    "icon": "#hash_6a9711e31201d8a",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_7fc535d42eb00c97",
+    "itemtype": "quest"
+}

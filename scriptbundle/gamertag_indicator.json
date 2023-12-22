@@ -1,0 +1,27 @@
+{
+    "options": [
+        {
+            "label": "#hash_fc96a8486de30c0",
+            "value": "0"
+        },
+        {
+            "label": "#hash_74615c4f22fb455c",
+            "value": "1"
+        },
+        {
+            "label": "#hash_6ad13a07527ba434",
+            "value": "2"
+        }
+    ],
+    "description": "#hash_65c197c3e3ac4a18",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "gamertag_indicator",
+    "displayname": "#platform/team_indicator",
+    "var_66faec87": 10,
+    "statname": "team_indicator",
+    "var_b7401319": "#menu/off"
+}

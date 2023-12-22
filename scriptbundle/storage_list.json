@@ -1,0 +1,17 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "backpack_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "var_9b009839": -1,
+    "name": "storage_list",
+    "var_fde72c94": 100
+}

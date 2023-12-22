@@ -208,20 +208,20 @@ function function_aa79a199(var_a276c861) {
                 level.monolith_ghost.var_dafa2b89 rotateto(s_cemetery.angles, n_time);
                 level.monolith_ghost setvisibletoall();
                 level.monolith_ghost.mdl_head setvisibletoall();
-                level.monolith_ghost.var_dafa2b89 thread scene::play(#"hash_d278eff0ca38301", level.monolith_ghost);
-                level.monolith_ghost thread scene::play(#"hash_d278eff0ca38301", level.monolith_ghost.mdl_head);
+                level.monolith_ghost.var_dafa2b89 thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", level.monolith_ghost);
+                level.monolith_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", level.monolith_ghost.mdl_head);
                 level.monolith_ghost.var_dafa2b89 waittill(#"movedone");
                 level.monolith_ghost.var_dafa2b89 thread scene::stop();
                 level.monolith_ghost thread scene::stop();
-                level.monolith_ghost.var_dafa2b89 thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost);
-                level.monolith_ghost thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost.mdl_head);
+                level.monolith_ghost.var_dafa2b89 thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost);
+                level.monolith_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost.mdl_head);
             } else {
                 level.monolith_ghost.var_dafa2b89.origin = s_cemetery.origin;
                 level.monolith_ghost.var_dafa2b89.angles = s_cemetery.angles;
                 level.monolith_ghost setvisibletoall();
                 level.monolith_ghost.mdl_head setvisibletoall();
-                level.monolith_ghost.var_dafa2b89 thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost);
-                level.monolith_ghost thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost.mdl_head);
+                level.monolith_ghost.var_dafa2b89 thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost);
+                level.monolith_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost.mdl_head);
             }
         } else {
             level.monolith_ghost = util::spawn_model("tag_origin", s_cemetery.origin, s_cemetery.angles);
@@ -234,8 +234,8 @@ function function_aa79a199(var_a276c861) {
             level.monolith_ghost thread mansion_pap::function_c9c7a593();
             level.monolith_ghost clientfield::set("" + #"ghost_trail", 1);
             util::wait_network_frame();
-            level.monolith_ghost.var_dafa2b89 thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost);
-            level.monolith_ghost thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost.mdl_head);
+            level.monolith_ghost.var_dafa2b89 thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost);
+            level.monolith_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost.mdl_head);
         }
         s_cemetery thread function_9ee098d5();
         level flag::wait_till_all(array(#"hash_67e415588696c592", #"hash_67e416588696c745", #"hash_67e413588696c22c", #"hash_67e414588696c3df"));
@@ -739,21 +739,21 @@ function function_9ee098d5() {
         waitframe(1);
         level.monolith_ghost.var_dafa2b89 thread scene::stop();
         level.monolith_ghost thread scene::stop();
-        level.monolith_ghost.var_dafa2b89 thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost);
-        level.monolith_ghost thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost.mdl_head);
+        level.monolith_ghost.var_dafa2b89 thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost);
+        level.monolith_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost.mdl_head);
         if (!level.monolith_ghost istouching(e_trigger)) {
             n_time = function_c5a4ae6(level.monolith_ghost.origin, self.origin);
             level.monolith_ghost.var_dafa2b89 moveto(self.origin, n_time);
             level.monolith_ghost.var_dafa2b89 rotateto(self.angles, n_time);
             level.monolith_ghost.var_dafa2b89 thread scene::stop();
             level.monolith_ghost thread scene::stop();
-            level.monolith_ghost.var_dafa2b89 thread scene::play(#"hash_d278eff0ca38301", level.monolith_ghost);
-            level.monolith_ghost thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost.mdl_head);
+            level.monolith_ghost.var_dafa2b89 thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", level.monolith_ghost);
+            level.monolith_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost.mdl_head);
             level.monolith_ghost.var_dafa2b89 waittill(#"movedone");
             level.monolith_ghost.var_dafa2b89 thread scene::stop();
             level.monolith_ghost thread scene::stop();
-            level.monolith_ghost.var_dafa2b89 thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost);
-            level.monolith_ghost thread scene::play(#"hash_1d324e9f967f0848", level.monolith_ghost.mdl_head);
+            level.monolith_ghost.var_dafa2b89 thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost);
+            level.monolith_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost.mdl_head);
         }
         wait(randomintrangeinclusive(3, 5));
     }

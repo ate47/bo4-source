@@ -1,0 +1,16 @@
+{
+    "description": "#hash_59c55e58258ac4a5",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_8722393c": 1,
+    "var_77c0bdd6": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "controller_sound",
+    "displayname": "#platform/controller_sound",
+    "var_66faec87": 10,
+    "statname": "snd_controller_sounds",
+    "var_82c732a7": 1,
+    "var_b7401319": "#menu/off"
+}

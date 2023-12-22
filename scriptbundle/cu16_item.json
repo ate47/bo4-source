@@ -1,0 +1,42 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_1bb19b246fc160e7",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_3b760b1efcb1bee4",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_7a96bc1343d46e4f",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_723a64b62576b2a7",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_723a65b62576b45a"
+        }
+    ],
+    "description": "#hash_763edb9060c94c5f",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_58b710d31643246a",
+    "model": "#p8_wz_cu_hat_tanker",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_1943b05edbb6e818",
+    "unlockableitemref": "#hash_2971a6ab940789d4",
+    "name": "cu16_item",
+    "displayname": "#hash_1943b05edbb6e818",
+    "icon": "#hash_423f39a67d2653fa",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#zombie/nikolai",
+    "pickupicon": "#hash_423f39a67d2653fa",
+    "itemtype": "quest"
+}

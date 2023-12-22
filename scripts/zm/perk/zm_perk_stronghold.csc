@@ -34,7 +34,7 @@ function enable_stronghold_perk_for_level() {
     zm_perks::register_perk_clientfields(#"specialty_camper", &function_5a4557ee, &function_44bd921f);
     zm_perks::register_perk_effects(#"specialty_camper", "divetonuke_light");
     zm_perks::register_perk_init_thread(#"specialty_camper", &init_stronghold);
-    zm_perks::function_b60f4a9f(#"specialty_camper", #"p8_zm_vapor_altar_icon_01_stonecoldstronghold", "zombie/fx8_perk_altar_symbol_ambient_stronghold", #"hash_5690c4dcc61973ec");
+    zm_perks::function_b60f4a9f(#"specialty_camper", #"p8_zm_vapor_altar_icon_01_stonecoldstronghold", "zombie/fx8_perk_altar_symbol_ambient_stronghold", #"zmperksstonecold");
     zm_perks::function_f3c80d73("zombie_perk_bottle_stronghold", "zombie_perk_totem_stronghold");
 }
 

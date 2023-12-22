@@ -1130,10 +1130,10 @@ function private player_stuck() {
     self allowcrouch(0);
     self allowprone(0);
     if (self.str_name === "pic_gypsy") {
-        level.var_9661fac0 = #"hash_4dd0f80c40d0f04";
+        level.var_9661fac0 = #"scene_zm_mansn_wm_fem_fullsequence";
         var_cab90298 = #"hash_3475f0b9b2ad7422";
     } else {
-        level.var_9661fac0 = #"hash_23cb0c0b7b9e5851";
+        level.var_9661fac0 = #"scene_zm_mansn_wm_male_fullsequence";
         var_cab90298 = #"hash_54f8a53a5930ed55";
     }
     var_3add8e25 = struct::get("s_stick_scene", "targetname");
@@ -1231,8 +1231,8 @@ function lead_player(nd_start, player) {
     self linkto(var_dafa2b89);
     self.var_c176969a thread scene::stop();
     self thread scene::stop();
-    var_dafa2b89 thread scene::play(#"hash_1d324e9f967f0848", self);
-    self thread scene::play(#"hash_1d324e9f967f0848", self.mdl_head);
+    var_dafa2b89 thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self);
+    self thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self.mdl_head);
     var_dafa2b89 rotateyaw(180, 1.5);
     var_dafa2b89 waittill(#"rotatedone");
     var_65c9997c = getent("health_stone", "targetname");

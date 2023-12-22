@@ -1,0 +1,37 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ea791565cd4f139",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_62ef419a195f3501",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_3b7a9084ec3c4d4f",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "brutus"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_zm_mob_brutus_summon_brutus",
+    "dontsync": 1,
+    "team": "any"
+}

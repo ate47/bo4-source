@@ -1,0 +1,42 @@
+{
+    "statsarray": [
+        {
+            "var_82670522": "stats_spawn_beacon_kill",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_9b9c7166164a72d"
+        },
+        {
+            "var_82670522": "stats_spawn_beacon_insertion",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_639ed1e49b7a88f5"
+        },
+        {
+            "stattype": "objectiveekia",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5d1ab6f5e0227795"
+        },
+        {
+            "var_82670522": "stats_shutdowns",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_158193577a14c86e"
+        },
+        {
+            "stattype": "damagedone",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5418827f408e5ca2"
+        },
+        {
+            "stattype": "objectivescore",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_6abbd7a88ee593ed"
+        }
+    ],
+    "var_447510ee": "prt_mp_enforcer",
+    "var_e123fa65": "#hash_401fc36948868c17",
+    "var_999a02c5": "#hash_343ec455f1707e",
+    "name": "reinforcer_sd_hvo",
+    "var_46a95923": "sd"
+}

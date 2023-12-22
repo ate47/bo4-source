@@ -1,0 +1,62 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "armor_item_large",
+            "var_3f8c08e3": "armor_item_large",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "health_item_large",
+            "var_3f8c08e3": "health_item_large",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "blundergat_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "ray_gun_mk2_t8_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_gold_guns",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_gold_guns",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "melee_bloody_bowie_t8_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "resource_item_paint_stack_10",
+            "var_3f8c08e3": "resource_item_paint_stack_10",
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 8,
+    "var_9b009839": -1,
+    "name": "zombie_supply_stash_ee_parent_duo",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

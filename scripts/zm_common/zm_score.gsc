@@ -362,8 +362,8 @@ function player_reduce_points(event, n_amount) {
         points = n_amount;
         break;
     case #"no_revive_penalty":
-        if (zm_custom::function_901b751c(#"hash_64291919b16c489a")) {
-            percent = zm_custom::function_901b751c(#"hash_64291919b16c489a") / 100;
+        if (zm_custom::function_901b751c(#"zmpointlossonteammatedeath")) {
+            percent = zm_custom::function_901b751c(#"zmpointlossonteammatedeath") / 100;
             points = self.score * percent;
         } else if (level.round_number >= 50) {
             percent = zombie_utility::function_d2dfacfd(#"penalty_no_revive");
@@ -371,8 +371,8 @@ function player_reduce_points(event, n_amount) {
         }
         break;
     case #"died":
-        if (zm_custom::function_901b751c(#"hash_1158d006a3913ef6")) {
-            percent = zm_custom::function_901b751c(#"hash_1158d006a3913ef6") / 100;
+        if (zm_custom::function_901b751c(#"zmpointlossondeath")) {
+            percent = zm_custom::function_901b751c(#"zmpointlossondeath") / 100;
             points = self.score * percent;
         } else if (level.round_number >= 50) {
             percent = zombie_utility::function_d2dfacfd(#"penalty_died");
@@ -380,10 +380,10 @@ function player_reduce_points(event, n_amount) {
         }
         break;
     case #"downed":
-        if (level.round_number < 50 && !zm_custom::function_901b751c(#"hash_1fed0d9afc0b0040")) {
+        if (level.round_number < 50 && !zm_custom::function_901b751c(#"zmpointlossondown")) {
             percent = 0;
-        } else if (zm_custom::function_901b751c(#"hash_1fed0d9afc0b0040")) {
-            percent = zm_custom::function_901b751c(#"hash_1fed0d9afc0b0040") / 100;
+        } else if (zm_custom::function_901b751c(#"zmpointlossondown")) {
+            percent = zm_custom::function_901b751c(#"zmpointlossondown") / 100;
         } else {
             percent = zombie_utility::function_d2dfacfd(#"penalty_downed");
             step = zombie_utility::function_d2dfacfd(#"hash_3037a1f286b662e6");

@@ -1,0 +1,18 @@
+{
+    "amount": 1,
+    "description": "#hash_5acc6565befe7e0a",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_447b6679cfaec851>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 180,
+    "name": "barricade_wz_item",
+    "displayname": "#hash_3cf5343acd975b86",
+    "stackcount": 1,
+    "icon": "#hash_4df25a115b8c3300",
+    "modelscale": 0.5,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "pickupicon": "#hash_4df25a115b8c3300",
+    "var_50773731": 3.5,
+    "itemtype": "equipment"
+}

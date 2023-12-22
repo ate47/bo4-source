@@ -967,7 +967,7 @@ function get_upgrade_weapon(weapon, add_attachment) {
     baseweapon = get_base_weapon(weapon);
     if (!is_weapon_upgraded(rootweapon) && isdefined(level.zombie_weapons[rootweapon])) {
         newweapon = level.zombie_weapons[rootweapon].upgrade;
-    } else if (!zm_custom::function_901b751c(#"hash_57a5c7a9dcf94d61")) {
+    } else if (!zm_custom::function_901b751c(#"zmsuperpapenabled")) {
         return weapon;
     }
     /#
@@ -1005,7 +1005,7 @@ function can_upgrade_weapon(weapon) {
 // Checksum 0x1a9045a7, Offset: 0x2f98
 // Size: 0xa6
 function weapon_supports_aat(weapon) {
-    if (!zm_custom::function_901b751c(#"hash_57a5c7a9dcf94d61")) {
+    if (!zm_custom::function_901b751c(#"zmsuperpapenabled")) {
         return 0;
     }
     if (!isdefined(weapon)) {

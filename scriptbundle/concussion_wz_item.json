@@ -1,0 +1,14 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_2534ad64dd2085c>,
+    "type": "itemspawnentry",
+    "name": "concussion_wz_item",
+    "stackcount": 1,
+    "icon": "#hash_d00d8a76c23a166",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "var_50773731": 4,
+    "itemtype": "equipment"
+}

@@ -1,0 +1,11 @@
+{
+    "type": "linear",
+    "vmtype": "server",
+    "threat_score_max_same": 6,
+    "range_min": 1,
+    "range_max": 750,
+    "name": "player_influencer_def",
+    "score_min": 1,
+    "lifetime": 5,
+    "threat_score_max_other": 6
+}

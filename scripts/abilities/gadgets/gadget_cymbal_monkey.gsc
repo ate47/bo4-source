@@ -145,7 +145,7 @@ function function_b9934c1d() {
     self.var_68005ac5 = 1;
     self playsound(#"hash_4509539f9e7954e2");
     playfxontag(level._effect[#"monkey_glow"], self, "tag_weapon");
-    self thread scene::play(#"hash_2b352ec1d391daaa", self);
+    self thread scene::play(#"cin_t8_monkeybomb_dance", self);
     self thread util::delay(6.5, "death", &function_4e61e1d);
     var_de3026af = gettime() + int(8 * 1000);
     while (gettime() < var_de3026af) {

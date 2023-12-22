@@ -4469,7 +4469,7 @@ function boss_fight() {
     level thread function_ae1cbf2e();
     animation::add_global_notetrack_handler("tower_contact", &function_a407b7bc, 0);
     e_elephant.takedamage = 0;
-    scene::play(#"hash_5e82fd01d9eb1519", array(e_elephant));
+    scene::play(#"aib_vign_cust_zm_twrs_ent_hllpht_00", array(e_elephant));
     e_elephant.takedamage = 1;
     e_elephant notify(#"entrace_done");
     level thread function_4d682898();
@@ -4514,7 +4514,7 @@ function boss_fight() {
     e_elephant notify(#"hash_6537a2364ba9dcb3");
     level thread scene::play("p8_fxanim_zm_towers_boss_arena_gate_destroy_bundle", "shot 2");
     e_elephant.takedamage = 0;
-    scene::play(#"hash_5e82fc01d9eb1366", array(e_elephant));
+    scene::play(#"aib_vign_cust_zm_twrs_ent_hllpht_01", array(e_elephant));
     e_elephant.takedamage = 1;
     e_elephant notify(#"entrace_done");
     level.var_3395fcab = 2;

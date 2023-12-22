@@ -1,0 +1,54 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4706092509ffab82",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "off"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_51ffdc0f47af0d64",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "on"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1f0f409b9843c5d5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "disable"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_17f40753c3905f10",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "use1"
+                }
+            ],
+            "model": "#p8_fxanim_zm_perk_vending_tonic_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_perk_vending_tonic_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

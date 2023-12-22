@@ -1,0 +1,16 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "cu21_item",
+            "maxweight": 1,
+            "available": 6
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "var_9b009839": -1,
+    "name": "cu21_list",
+    "var_fde72c94": 100
+}

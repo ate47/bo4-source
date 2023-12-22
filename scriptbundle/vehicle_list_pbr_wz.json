@@ -1,0 +1,37 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "pbr_wz_vehicle_black",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "pbr_wz_vehicle_green",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "pbr_wz_vehicle_grey",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "pbr_wz_vehicle_tan",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "var_345eba59": 4,
+    "vehiclespawner": 1,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "vehicle_list_pbr_wz",
+    "var_fde72c94": 100
+}

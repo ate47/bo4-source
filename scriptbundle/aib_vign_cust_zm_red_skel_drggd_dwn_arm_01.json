@@ -1,0 +1,31 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_254c8411ec6fbd95",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "var_eb00c330": 2.99995,
+                    "var_be60a82b": 0.125
+                }
+            ],
+            "model": "#hash_47d352d9279f453b",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "skeleton_arm",
+            "var_3e692842": 100
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_skel_drggd_dwn_arm_01",
+    "dontsync": 1,
+    "team": "any"
+}

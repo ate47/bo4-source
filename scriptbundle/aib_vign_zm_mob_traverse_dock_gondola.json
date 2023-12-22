@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_415e3a9ae686b5c1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "main"
+                }
+            ],
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "name": "actor 1",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_traverse_dock_gondola",
+    "dontsync": 1,
+    "team": "any"
+}

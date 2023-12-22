@@ -1,0 +1,29 @@
+{
+    "itemlist": [
+        {
+            "minweight": 6,
+            "var_a6762160": "gear_list_good",
+            "maxweight": 10,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "var_a6762160": "gear_list_med",
+            "maxweight": 30,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "gear_list_low",
+            "maxweight": 60,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 420,
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "wind_turbine_list_gear",
+    "var_fde72c94": 100
+}

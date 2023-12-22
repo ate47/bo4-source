@@ -1,0 +1,53 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_cin_zm_red_outro_sh360_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh360",
+                    "aligntarget": "tag_align_red_temple"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ebf790a76da35f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh360",
+                    "aligntarget": "tag_align_red_temple"
+                }
+            ],
+            "model": "#hash_53d8655bc4775f2f",
+            "type": "prop",
+            "name": "scarlett_eyes"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "dontthrottle": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "cin_zm_red_outro_temple_part2",
+    "dontsync": 1,
+    "disablesceneskipping": 1,
+    "var_241c5f3c": 1,
+    "var_a6da2039": "cin_zm_red_outro_temple_part2",
+    "aligntarget": "tag_align_red_temple",
+    "ignorestreamer": 1,
+    "team": "any"
+}

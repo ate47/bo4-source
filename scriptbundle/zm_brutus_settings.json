@@ -1,0 +1,219 @@
+{
+    "weapondamagescaleoverrides": [
+        {
+            "var_fe55d685": "#hash_664ed6b81eca9e0b",
+            "var_fc420d71": 0.3,
+            "weaponid": "#ww_blundergat_t8",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_4ba57e1ab543ae5a",
+            "var_fc420d71": 0.3,
+            "weaponid": "#ww_blundergat_t8_upgraded",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_42091433870f2e63",
+            "var_fc420d71": 0.3,
+            "weaponid": "#ww_blundergat_acid_t8",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_1384ddfe5d885112",
+            "var_fc420d71": 0.3,
+            "weaponid": "#ww_blundergat_acid_t8_upgraded",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_61939ddbdf40d266",
+            "var_fc420d71": 0.3,
+            "weaponid": "#ww_blundergat_fire_t8",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_2aaac48402d446dd",
+            "var_fc420d71": 0.3,
+            "weaponid": "#ww_blundergat_fire_t8_upgraded",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_1d861ae1ddd5c62",
+            "var_fc420d71": 0.3,
+            "weaponid": "#ww_blundergat_fire_t8_unfinished",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_7966256a6008ad65",
+            "var_fc420d71": 0.3,
+            "weaponid": "#hash_193835f0385edbc3",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_6f4c2e4fdace9754",
+            "var_fc420d71": 0.3,
+            "weaponid": "#hash_7463389ec66d9d94",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_2f2554ceaa4eaa3f",
+            "var_fc420d71": 0.3,
+            "weaponid": "#hash_494f5501b3f8e1e9",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_73ece7ad89ad188",
+            "var_fc420d71": 0.3,
+            "weaponid": "#hash_3de0926b89369160",
+            "var_628192b0": 0.3,
+            "var_97b22faa": 0.3,
+            "damagescale": 0.3
+        },
+        {
+            "var_fe55d685": "#hash_5d0f8c192ceaf1dd",
+            "var_fc420d71": 0.12,
+            "weaponid": "#hero_flamethrower_t8_lv1",
+            "var_628192b0": 0.12,
+            "var_97b22faa": 0.12,
+            "damagescale": 0.12
+        },
+        {
+            "var_fe55d685": "#hash_3400ac24778b9fa2",
+            "var_fc420d71": 0.16,
+            "weaponid": "#hero_flamethrower_t8_lv2",
+            "var_628192b0": 0.16,
+            "var_97b22faa": 0.16,
+            "damagescale": 0.16
+        },
+        {
+            "var_fe55d685": "#hash_5e1e882ad7564337",
+            "var_fc420d71": 0.2,
+            "weaponid": "#hero_flamethrower_t8_lv3",
+            "var_628192b0": 0.2,
+            "var_97b22faa": 0.2,
+            "damagescale": 0.2
+        },
+        {
+            "var_fe55d685": "#hash_49df56a07d91d21a",
+            "var_fc420d71": 1,
+            "weaponid": "#hero_gravityspikes_t8_lv1",
+            "var_628192b0": 1,
+            "var_97b22faa": 1,
+            "damagescale": 1
+        },
+        {
+            "var_fe55d685": "#hash_1fcf569a1dd32eb5",
+            "var_fc420d71": 1,
+            "weaponid": "#hero_gravityspikes_t8_lv2",
+            "var_628192b0": 1,
+            "var_97b22faa": 1,
+            "damagescale": 1
+        },
+        {
+            "var_fe55d685": "#hash_463a12927fb4b868",
+            "var_fc420d71": 1,
+            "weaponid": "#hero_gravityspikes_t8_lv3",
+            "var_628192b0": 1,
+            "var_97b22faa": 1,
+            "damagescale": 1
+        },
+        {
+            "var_fe55d685": "#hash_6117b744f36b74f1",
+            "var_fc420d71": 0.29,
+            "weaponid": "#hero_katana_t8_lv1",
+            "var_628192b0": 0.29,
+            "var_97b22faa": 0.29,
+            "damagescale": 0.29
+        },
+        {
+            "var_fe55d685": "#hash_ec3b74b563ad0c6",
+            "var_fc420d71": 0.29,
+            "weaponid": "#hero_katana_t8_lv2",
+            "var_628192b0": 0.29,
+            "var_97b22faa": 0.29,
+            "damagescale": 0.29
+        },
+        {
+            "var_fe55d685": "#hash_39b0935565759c5b",
+            "var_fc420d71": 0.29,
+            "weaponid": "#hero_katana_t8_lv3",
+            "var_628192b0": 0.29,
+            "var_97b22faa": 0.29,
+            "damagescale": 0.29
+        },
+        {
+            "var_fe55d685": "#hash_545fd158bb58c964",
+            "var_fc420d71": 0.1,
+            "weaponid": "#hero_minigun_t8_lv1",
+            "var_628192b0": 0.1,
+            "var_97b22faa": 0.1,
+            "damagescale": 0.1
+        },
+        {
+            "var_fe55d685": "#hash_328f170c89ff11b",
+            "var_fc420d71": 0.1,
+            "weaponid": "#hero_minigun_t8_lv2",
+            "var_628192b0": 0.1,
+            "var_97b22faa": 0.1,
+            "damagescale": 0.1
+        },
+        {
+            "var_fe55d685": "#hash_1b7156ba163d086",
+            "var_fc420d71": 0.1,
+            "weaponid": "#hero_minigun_t8_lv3",
+            "var_628192b0": 0.1,
+            "var_97b22faa": 0.1,
+            "damagescale": 0.1
+        }
+    ],
+    "var_b7366094": 48,
+    "var_10460f1e": 1,
+    "scoreevent": "#kill_brutus",
+    "var_98d0b358": 24,
+    "var_922067c4": "scriptbundle",
+    "var_267bc182": 5,
+    "maxhealth": 5000,
+    "var_e3ee7606": 23,
+    "var_fc420d71": 0.1,
+    "var_af3fff17": 16,
+    "var_58b424ec": 240,
+    "name": "zm_brutus_settings",
+    "var_7ea758e1": 50,
+    "var_da7f4645": 99,
+    "minhealth": 500,
+    "var_628192b0": 0.1,
+    "var_250a1683": 1000,
+    "var_d0d2e3ce": 4500,
+    "var_97b22faa": 0.1,
+    "damagescale": 0.1,
+    "category": "#miniboss",
+    "var_854eebd": 0.75,
+    "var_d5427206": 10,
+    "var_e81712d": 64,
+    "var_1709a39": 200,
+    "var_544b0295": 600,
+    "var_78a5f50": 160,
+    "stunduration": 1,
+    "var_d463e760": 3,
+    "var_450edb3b": 1,
+    "var_b4c77cfb": 100
+}

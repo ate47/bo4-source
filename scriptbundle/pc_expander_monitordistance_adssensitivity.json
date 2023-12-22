@@ -1,0 +1,36 @@
+{
+    "expander_options": [
+        {
+            "var_35e98147": "pc_ads_sensitivity_horizontal"
+        },
+        {
+            "var_35e98147": "pc_ads_sensitivity_vertical"
+        },
+        {
+            "var_35e98147": "pc_ads_sensitivity_horizontal_high_zoom"
+        },
+        {
+            "var_35e98147": "pc_ads_sensitivity_vertical_high_zoom"
+        },
+        {
+            "var_35e98147": "pc_mouse_ads_sensitivity_on_fully_scoped"
+        },
+        {
+            "var_35e98147": "pc_monitor_distance_sensitivity_coefficient"
+        }
+    ],
+    "var_d7c59c8f": "pc_monitor_distance_sensitivity_scaling",
+    "var_60fcfffa": "#hash_7cdc6df793f97d8c",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_expander_monitordistance_adssensitivity",
+    "var_926d1be9": 0.01,
+    "var_54a43dc2": 1,
+    "var_66faec87": 100,
+    "statname": "expanderMonitordistance",
+    "var_d4e288e": 15,
+    "var_b7401319": "#hash_4cb3e74e686b536d"
+}

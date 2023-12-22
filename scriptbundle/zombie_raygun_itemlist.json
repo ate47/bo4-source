@@ -1,0 +1,16 @@
+{
+    "itemlist": [
+        {
+            "minweight": 15,
+            "var_a6762160": "ray_gun_t8_item",
+            "maxweight": 15,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "var_9b009839": -1,
+    "name": "zombie_raygun_itemlist",
+    "var_fde72c94": 100
+}

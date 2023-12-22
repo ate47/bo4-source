@@ -600,7 +600,7 @@ function function_33f9ab00(a_e_targets, weapon) {
             if (!(isdefined(self.var_6fe9ec3f) && self.var_6fe9ec3f) && !(isdefined(e_target.var_a447e680) && e_target.var_a447e680) && (e_target.archetype === #"zombie" || e_target.archetype === #"catalyst")) {
                 self.var_6fe9ec3f = 1;
                 e_target.var_a447e680 = 1;
-                self thread scene::play(#"hash_10b486a0eff3b1cb", e_target);
+                self thread scene::play(#"aib_vign_cust_zm_red_zmb_impale_from_below_00", e_target);
             }
         }
     }

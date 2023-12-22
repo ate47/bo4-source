@@ -27,7 +27,7 @@ function private __init__() {
         level.var_cc310d06 = &function_7bfc867f;
         level thread function_c83057f0();
         callback::on_finalize_initialization(&function_1c601b99);
-        level scene::add_scene_func(#"hash_42c9ac9338fda8d1", &jump);
+        level scene::add_scene_func(#"aib_t8_zm_zod_homunculus_jump_up_01", &jump);
     }
 }
 
@@ -145,7 +145,7 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
         } else {
             homunculus playsoundontag(#"hash_689f11fd8983d1a6", "j_head");
         }
-        homunculus thread scene::play(#"hash_76de80efed42a7ee", homunculus);
+        homunculus thread scene::play(#"aib_t8_zm_zod_homunculus_throw_loop_01", homunculus);
         grenade waittill(#"stationary", #"death");
         if (isdefined(grenade)) {
             homunculus unlink();
@@ -176,7 +176,7 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
                 if (!var_255a121f) {
                     homunculus thread function_1dba4a2();
                 }
-                homunculus.mover scene::play(#"hash_2e6bf8370e7c2412", homunculus);
+                homunculus.mover scene::play(#"aib_t8_zm_zod_homunculus_deploy_01", homunculus);
                 homunculus notify(#"hash_3e410dbcd9e66000");
                 homunculus.spawning = undefined;
             }
@@ -229,8 +229,8 @@ function private function_bb17ec5a() {
                         self playsound(#"hash_22c88cff01a4691b");
                     }
                     self.mover scene::stop();
-                    self.mover scene::play(#"hash_42c9ac9338fda8d1", self);
-                    self.mover thread scene::play(#"hash_6d058a77349e6267", self);
+                    self.mover scene::play(#"aib_t8_zm_zod_homunculus_jump_up_01", self);
+                    self.mover thread scene::play(#"aib_t8_zm_zod_homunculus_attack_01", self);
                     if (!isalive(enemy)) {
                         continue;
                     }
@@ -255,7 +255,7 @@ function private function_bb17ec5a() {
 function private function_b053b486() {
     self endon(#"death");
     self.dancing = 1;
-    self.mover scene::play(#"hash_3cfd8e7348ff04ed", self);
+    self.mover scene::play(#"aib_t8_zm_zod_homunculus_idle_01", self);
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
@@ -273,7 +273,7 @@ function private drop_to_ground(b_immediate = 0) {
         n_time = 0.25;
         self.mover scene::stop();
         self.mover moveto(var_a75fe4be, 0.25);
-        self.mover scene::play(#"hash_3b32418a502baf6", self);
+        self.mover scene::play(#"aib_t8_zm_zod_homunculus_jump_down_01", self);
     }
 }
 
@@ -333,7 +333,7 @@ function function_7bfc867f() {
     self playsoundontag(#"hash_6e471fde121d0263", "j_head");
     self drop_to_ground();
     self.mover scene::stop();
-    self.mover scene::play(#"hash_7315321629a290c5", self);
+    self.mover scene::play(#"aib_t8_zm_zod_homunculus_dth_01", self);
     playfx(#"zm_weapons/fx8_equip_homunc_death_exp", self.origin);
     self delete();
 }

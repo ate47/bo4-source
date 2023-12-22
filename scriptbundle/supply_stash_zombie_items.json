@@ -1,0 +1,46 @@
+{
+    "itemlist": [
+        {
+            "minweight": 150,
+            "var_a6762160": "supply_stash_zombie_health",
+            "maxweight": 150,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "supply_stash_zombie_equipment",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 300,
+            "var_a6762160": "supply_stash_zombie_armor",
+            "maxweight": 300,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "backpack_item",
+            "maxweight": 150
+        },
+        {
+            "minweight": 150,
+            "var_a6762160": "supply_stash_zombie_perks",
+            "maxweight": 200,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "melee_weapons",
+            "maxweight": 100,
+            "available": 1
+        }
+    ],
+    "var_3d685b35": 1,
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 6,
+    "var_9b009839": -1,
+    "name": "supply_stash_zombie_items",
+    "var_fde72c94": 100
+}

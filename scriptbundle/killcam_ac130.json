@@ -1,0 +1,13 @@
+{
+    "killcambackdist": 150,
+    "var_922067c4": "scriptbundle",
+    "type": "killcam",
+    "vmtype": "none",
+    "killcamgroundupdist": 25,
+    "name": "killcam_ac130",
+    "var_531c4094": "#none",
+    "killcamupdist": 10,
+    "killcamwallsidedist": 30,
+    "killcamwalloutdist": 10,
+    "killcamgroundbackdist": 50
+}

@@ -1,0 +1,35 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "cu14_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "wraithfire_wz_item",
+            "maxweight": 1,
+            "available": 2
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "acid_bomb_wz_item",
+            "maxweight": 1,
+            "available": 2
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "supply_stash_gold_guns",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 4,
+    "var_9b009839": -1,
+    "name": "zombie_supply_stash_cu14",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

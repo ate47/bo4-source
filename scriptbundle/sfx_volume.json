@@ -1,0 +1,16 @@
+{
+    "description": "#hash_2ca09553839b9543",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_2284d52": 1,
+    "var_86a04811": 10,
+    "var_43a952c1": 0.1,
+    "maxvalue": 1,
+    "name": "sfx_volume",
+    "displayname": "#hash_5477d9e4bdcf4b89",
+    "var_d6897f56": 1,
+    "var_66faec87": 1,
+    "statname": "snd_menu_sfx",
+    "var_d4e288e": 1,
+    "var_b7401319": "#menu/off"
+}

@@ -1,0 +1,65 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_222884a2cbedeb16",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_1f67a213d3760fa9",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "actor 1",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_222883a2cbede963",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_1f67a213d3760fa9",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "actor 2",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_12b2690983ad32c0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_3c96cdb8ef969f0e",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "pap"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_pap_ghosts",
+    "dontsync": 1,
+    "aligntarget": "tag_align_escape_roof",
+    "team": "any"
+}

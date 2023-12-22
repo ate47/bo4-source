@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5f2636b48c3d20c5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "blend": 0.2
+                }
+            ],
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "name": "spawner_zm_zombie",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_zod_catalyst_water_spawn_pre_split",
+    "dontsync": 1,
+    "team": "any"
+}

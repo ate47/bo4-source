@@ -1,0 +1,43 @@
+{
+    "deathcirclelist": [
+        {
+            "var_bb9f7c3f": 60,
+            "var_24ae2e27": 90,
+            "var_50d5787c": 120,
+            "circledelay": 480,
+            "var_1dfb1051": 60,
+            "var_96584cff": 30,
+            "circledamage": 5,
+            "var_5a8689a9": 1,
+            "circleradius": 19000,
+            "var_112f6f50": 1000,
+            "var_b9aec05c": -1000,
+            "var_b97ecd26": 10,
+            "var_85589312": 60
+        },
+        {
+            "var_bb9f7c3f": 30,
+            "var_95437170": 23359,
+            "var_24ae2e27": 60,
+            "var_50d5787c": 90,
+            "circledelay": 30,
+            "var_1dfb1051": 15,
+            "var_96584cff": 15,
+            "circledamage": 15,
+            "var_a3841ae2": 22457,
+            "var_5a8689a9": 1,
+            "circleradius": 5000,
+            "var_112f6f50": 1000,
+            "var_b9aec05c": -1000,
+            "var_b97ecd26": 25,
+            "var_85589312": 60
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "deathcircle",
+    "name": "wz_escape_death_circles_one_circle",
+    "var_7a60538a": 2,
+    "var_64232072": 60,
+    "var_6c870a00": 15,
+    "var_ab9cd581": 25
+}

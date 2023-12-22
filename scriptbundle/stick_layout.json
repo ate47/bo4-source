@@ -1,0 +1,31 @@
+{
+    "options": [
+        {
+            "label": "#menu/default",
+            "value": "0"
+        },
+        {
+            "label": "#hash_6435df98c91c794c",
+            "value": "1"
+        },
+        {
+            "label": "#menu/legacy",
+            "value": "2"
+        },
+        {
+            "label": "#hash_3d4f362894cbd39e",
+            "value": "3"
+        }
+    ],
+    "description": "#hash_41ac34c8608be21c",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "stick_layout",
+    "displayname": "#platform/stick_layout",
+    "var_66faec87": 10,
+    "statname": "gpad_sticksConfig",
+    "var_b7401319": "#menu/off"
+}

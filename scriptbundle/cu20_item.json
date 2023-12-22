@@ -1,0 +1,43 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_51217c22aa19a294",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_608793e24f353233",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_1e0259def0e71f8a",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_51217c22aa19a294",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_51217e22aa19a5fa"
+        }
+    ],
+    "description": "#hash_1877a41463bbaec6",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_6526b26aeddff3c5",
+    "model": "#p8_wz_cu_necklace",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_2e849d595fc7e02b",
+    "unlockableitemref": "#hash_1ae88c2dcdc992b",
+    "var_7adcadc1": 180,
+    "name": "cu20_item",
+    "displayname": "#hash_2e849d595fc7e02b",
+    "icon": "#hash_4873e7ccc8f6a233",
+    "modelscale": 2,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_5a1bf52f33c62b5d",
+    "var_50773731": 1,
+    "itemtype": "quest"
+}

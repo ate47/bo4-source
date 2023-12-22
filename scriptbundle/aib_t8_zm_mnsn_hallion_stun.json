@@ -1,0 +1,71 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28d0d7261e23e3f5",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_7116679a409ed587",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b748d3c78fcfde4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_436570e4a6dcea4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "timeout",
+                    "blend": 0.2
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7f2e6d19a55ebdc7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "stage1_trans",
+                    "blend": 0.2
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7f2e6f19a55ec12d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "stage3_trans",
+                    "blend": 0.2
+                }
+            ],
+            "model": "#hash_3df2c3496c6a62fd",
+            "type": "fakeactor",
+            "name": "boss_sp_mdl",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_t8_zm_mnsn_hallion_stun",
+    "dontsync": 1,
+    "team": "any"
+}

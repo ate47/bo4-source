@@ -1,0 +1,68 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4114d6ce3151b93c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_509b6922c208ad5e",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_36469f71371a7d60",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "nospawn": 1,
+            "firstframe": 1,
+            "model": "#hash_1db2ca3b4a27c669",
+            "type": "prop",
+            "name": "odin_brazier_banner"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5b2073b2c63f9e93",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_291963619cb23cdf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_3e9501a0ab7bc225",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_towers_banner_achievement_blue_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,31 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_777a748a620f82b6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "blend": 0.2
+                }
+            ],
+            "skipdeathanim": 1,
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "name": "actor 1",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_tplt_zombie_base_dth_f_float_notrans_01",
+    "dontsync": 1,
+    "team": "any"
+}

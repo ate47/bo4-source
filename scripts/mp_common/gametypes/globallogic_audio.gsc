@@ -117,7 +117,7 @@ function function_6e084fd3(var_37ecca7, taacombundle) {
         bundlename = taacombundle.helicopterdialogbundle;
         break;
     case #"overwatch_helicopter":
-        bundlename = taacombundle.var_f8bd3ac5;
+        bundlename = taacombundle.overwatchhelicopterdialogbundle;
         break;
     case #"hash_59687845e5356ded":
         bundlename = taacombundle.var_4062b33e;
@@ -132,7 +132,7 @@ function function_6e084fd3(var_37ecca7, taacombundle) {
         bundlename = taacombundle.remotemissiledialogbundle;
         break;
     case #"straferun":
-        bundlename = taacombundle.var_66389705;
+        bundlename = taacombundle.straferundialogbundle;
         break;
     case #"supply_drop":
         bundlename = taacombundle.supplydropdialogbundle;
@@ -144,7 +144,7 @@ function function_6e084fd3(var_37ecca7, taacombundle) {
         bundlename = taacombundle.uavdialogbundle;
         break;
     case #"ultimate_turret":
-        bundlename = taacombundle.var_c9b104f1;
+        bundlename = taacombundle.ultturretdialogbundle;
         break;
     default:
         break;

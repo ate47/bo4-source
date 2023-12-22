@@ -1,0 +1,27 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_48f98711b1cabb71"
+        },
+        {
+            "description": "#hash_48f98411b1cab658"
+        }
+    ],
+    "description": "#hash_7213e97e8741719d",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_70a60065874b2140",
+    "model": "#p8_wz_cu_wrist_guard",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_762c9dc85d0a4ffa",
+    "unlockableitemref": "#hash_7df6a35b9b5ef697",
+    "name": "cu30_item",
+    "displayname": "#hash_762c9dc85d0a4ffa",
+    "icon": "#hash_82eeebafc18fc5c",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#zombie/scarlett",
+    "pickupicon": "#hash_82eeebafc18fc5c",
+    "itemtype": "quest"
+}

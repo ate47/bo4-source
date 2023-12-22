@@ -1,0 +1,38 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_1363e98eb2c347db",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_4d555c7d0e21ad2",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_2396c7aa8bdab21c",
+            "var_57b131bd": 2
+        },
+        {
+            "description": "#hash_2396caaa8bdab735"
+        }
+    ],
+    "description": "#hash_37738499f67cb3ee",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_3658295ff39e722d",
+    "model": "#hash_68dd6c3d61c97ec9",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_161c216ed83a1283",
+    "unlockableitemref": "#hash_7ca005e6339facc7",
+    "name": "cu28_item",
+    "displayname": "#hash_161c216ed83a1283",
+    "icon": "#hash_56d86574972458f7",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#zombie/bruno",
+    "pickupicon": "#hash_56d86574972458f7",
+    "itemtype": "quest"
+}

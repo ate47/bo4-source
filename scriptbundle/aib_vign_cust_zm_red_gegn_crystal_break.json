@@ -1,0 +1,34 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5cd52356e2ebd0d0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "nospawn": 1,
+            "firstframe": 1,
+            "model": "#hash_63d8308e4385a33b",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "actor 1",
+            "attackme": 1,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_gegn_crystal_break",
+    "dontsync": 1,
+    "aligntarget": "tag_align_red_terrace",
+    "team": "any"
+}

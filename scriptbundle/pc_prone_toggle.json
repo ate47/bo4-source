@@ -1,0 +1,17 @@
+{
+    "var_d260763": "#hash_601d7f93185dd79f",
+    "description": "#hash_7b26982ed096f9c2",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_6bb94572": 1,
+    "var_389e8bd": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_prone_toggle",
+    "displayname": "#hash_7cde24b44d1f8592",
+    "var_66faec87": 10,
+    "var_d4fdc6a0": "toggleprone",
+    "var_b7401319": "#menu/off"
+}

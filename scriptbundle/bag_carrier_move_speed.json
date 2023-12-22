@@ -1,0 +1,15 @@
+{
+    "hinttext": "#hash_5f5ce5309b90aae8",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "1.5",
+    "var_43883094": ".5",
+    "type": "gamesettings",
+    "name": "bag_carrier_move_speed",
+    "displayname": "#hash_750072f6ce79be20",
+    "var_9600a8ab": "#menu/slow",
+    "var_71b6e020": "#menu/fast",
+    "var_bd2ff709": "#menu/normal",
+    "var_9de86f42": 3,
+    "setting": "bountyBagOMoneyMoveScale"
+}

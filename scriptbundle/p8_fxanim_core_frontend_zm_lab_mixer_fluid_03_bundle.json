@@ -1,0 +1,123 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_67f4c0b96e9e3559",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "mixer_idle",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_anim",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_2394f170287e552e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "mixer_activate",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_284e7c79fe4bc555",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_3122c31521f45370",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "mixer_fill_finish",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_40ef18a579f9acc8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "mixer_drain"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_mod",
+            "type": "prop",
+            "name": "mixer_fluid"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c4e01303c510809",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "mixer_idle",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_core_frontend_zm_lab_mixer_03_anim",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_342192eef5f5c479",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "mixer_activate",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_772f5f34ebd2d89e",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_331d2594623d53bb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "mixer_fill_finish",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_19dcca5a96c3f38b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "mixer_drain",
+                    "blend": 0.5
+                }
+            ],
+            "model": "#p8_fxanim_core_frontend_zm_lab_mixer_03_mod",
+            "type": "prop",
+            "name": "mixer_container"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

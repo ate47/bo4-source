@@ -15,7 +15,7 @@ function private function_2c4d3d40() {
     if (issplitscreen()) {
         level.var_de3d5d56 = undefined;
     }
-    var_3a1737b4 = getscriptbundles(#"hash_10587321f369e7f3");
+    var_3a1737b4 = getscriptbundles(#"itemspawnentry");
     var_cce250bc = function_d634ed59();
     index = 0;
     offsetorigin = vectorscale((0, 0, -1), 64000);
@@ -889,7 +889,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
 // Size: 0x4fc
 function private function_c6477714(reset) {
     override = spawnstruct();
-    override.scriptbundlename = #"hash_2793921166478849";
+    override.scriptbundlename = #"prematch_override_list";
     override.var_b91441dd = getscriptbundle(override.scriptbundlename);
     override.var_ebfb74b9 = function_8322cf16();
     var_8107154f = [];

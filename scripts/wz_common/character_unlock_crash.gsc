@@ -37,9 +37,9 @@ function function_2613aeec(enabled) {
         callback::on_item_pickup(&on_item_pickup);
         callback::on_item_use(&on_item_use);
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
-            item_world_fixup::function_e70fa91c(#"hash_34dde6670d802e92", #"hash_336749f373d0fbf7", 3);
+            item_world_fixup::function_e70fa91c(#"health_stash_parent", #"health_stash_cu03", 3);
         } else {
-            item_world_fixup::function_e70fa91c(#"hash_34dde6670d802e92", #"hash_336749f373d0fbf7", 10);
+            item_world_fixup::function_e70fa91c(#"health_stash_parent", #"health_stash_cu03", 10);
         }
     }
 }

@@ -598,7 +598,7 @@ function function_e1a452f5(e_homunculus, var_21bb918c, var_c8279d50) {
 function function_c867ac0a(e_homunculus, var_21bb918c, var_c8279d50) {
     level waittill(#"power_on");
     trigger::wait_till("trigger_life_preserver");
-    e_homunculus thread scene::play(#"hash_3cfd8e7348ff04ed", e_homunculus);
+    e_homunculus thread scene::play(#"aib_t8_zm_zod_homunculus_idle_01", e_homunculus);
     e_homunculus show();
     var_21bb918c show();
     var_c8279d50 show();
@@ -705,7 +705,7 @@ function function_c867ac0a(e_homunculus, var_21bb918c, var_c8279d50) {
     var_c8279d50.var_55e11aa9 delete();
     var_21bb918c delete();
     var_c8279d50 delete();
-    e_homunculus scene::stop(#"hash_3cfd8e7348ff04ed", 1);
+    e_homunculus scene::stop(#"aib_t8_zm_zod_homunculus_idle_01", 1);
     if (isdefined(e_homunculus)) {
         e_homunculus delete();
     }

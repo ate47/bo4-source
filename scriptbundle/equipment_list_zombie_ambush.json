@@ -1,0 +1,28 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "itemlist_cymbol_monkey",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "smoke_grenade_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "acid_bomb_wz_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "equipment_list_zombie_ambush",
+    "var_fde72c94": 100
+}

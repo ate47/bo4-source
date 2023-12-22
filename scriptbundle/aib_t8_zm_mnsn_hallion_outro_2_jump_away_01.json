@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3afd8d18397e12d8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_3df2c3496c6a62fd",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "fakeactor 1",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_t8_zm_mnsn_hallion_outro_2_jump_away_01",
+    "dontsync": 1,
+    "aligntarget": "tag_align_export_boss_arena_1",
+    "team": "any"
+}

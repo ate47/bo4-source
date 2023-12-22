@@ -1,0 +1,20 @@
+{
+    "amount": 1,
+    "description": "#hash_11e20e7aebbc76a3",
+    "var_922067c4": "scriptbundle",
+    "var_3e688854": -7,
+    "model": "#p8_backpack_military",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_2b2096d421c8cd24",
+    "var_6731866b": -90,
+    "var_7adcadc1": -90,
+    "name": "backpack_item",
+    "displayname": "#hash_2b2096d421c8cd24",
+    "icon": "#hash_3fc6dc76d7fcc7a8",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_6247ea34d3b1ddb6",
+    "doubleinventory": 1,
+    "var_50773731": 5,
+    "itemtype": "backpack"
+}

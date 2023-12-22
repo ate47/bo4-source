@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#hash_4e02c60ccbee1ce9",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "ability_lightninggun_restriction",
+    "displayname": "#weapon/hero_lightninggun",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__shock_rifle__restricted"
+}

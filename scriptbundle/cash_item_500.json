@@ -1,0 +1,17 @@
+{
+    "amount": 500,
+    "description": "#hash_1fff5c963dc2d990",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_4ed969f6bbfe1745",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_7c209aedac76fe39",
+    "name": "cash_item_500",
+    "displayname": "#hash_7c209aedac76fe39",
+    "icon": "#hash_1acb135199df2094",
+    "casttime": 0.5,
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_3bfb97e39d67e5f9",
+    "pickupicon": "#hash_1acb135199df2094",
+    "itemtype": "cash"
+}

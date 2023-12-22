@@ -1,0 +1,18 @@
+{
+    "var_d260763": "#hash_694df777b574c7a8",
+    "description": "#hash_1077f2ed46a585d6",
+    "var_60fcfffa": "#menu/off",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.1,
+    "name": "pc_profanity_filter",
+    "displayname": "#hash_25f7b8772f6b26a6",
+    "var_926d1be9": 0.01,
+    "var_66faec87": 1,
+    "statname": "chat_profanity_filter",
+    "var_82c732a7": 1,
+    "minvalue": 1,
+    "var_d4e288e": 1,
+    "var_b7401319": "#menu/on"
+}

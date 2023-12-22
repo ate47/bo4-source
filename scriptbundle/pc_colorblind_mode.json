@@ -1,0 +1,35 @@
+{
+    "options": [
+        {
+            "label": "#menu/off",
+            "value": "0"
+        },
+        {
+            "label": "#hash_1b6bc5ccab0bdee1",
+            "value": "1"
+        },
+        {
+            "label": "#hash_5c699d4cbbfef34d",
+            "value": "2"
+        },
+        {
+            "label": "#hash_4d464ae076b53d33",
+            "value": "3"
+        }
+    ],
+    "var_d260763": "#hash_40905dbe4e17fe6e",
+    "description": "#hash_4d83397acb1206b7",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_e0274350": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_colorblind_mode",
+    "displayname": "#hash_41d173878a6fd08d",
+    "var_b56e8776": "StartMenu_Options_Graphics_Colorblind",
+    "var_66faec87": 10,
+    "statname": "colorblindMode",
+    "var_b7401319": "#menu/off"
+}

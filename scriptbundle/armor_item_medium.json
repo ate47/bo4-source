@@ -1,0 +1,32 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_7a71dcca83b381ae"
+        }
+    ],
+    "amount": 500,
+    "var_19f48bbe": "loc_armor_medium",
+    "var_99c0cb08": 0.65,
+    "description": "#hash_552c7ed252ae74a2",
+    "var_a3aa1ca2": 100,
+    "armorshards": 5,
+    "var_922067c4": "scriptbundle",
+    "var_22c3ab38": 1,
+    "model": "#p8_mp_spe_armor_medium",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_60aeeec1490ce332",
+    "var_7a80f06e": 1,
+    "name": "armor_item_medium",
+    "displayname": "#hash_60aeeec1490ce332",
+    "icon": "#hash_4a3fa1a1c48735cb",
+    "modelscale": 1,
+    "rarity": "None",
+    "var_c690c73d": 0.65,
+    "var_38f854e5": 1,
+    "handler": "#hash_76a324a4d6073913",
+    "armortier": 2,
+    "pickupicon": "#hash_2d7ca591b43301db",
+    "var_9f307988": 1,
+    "itemtype": "armor",
+    "pickupsound": "fly_pickup_armor_medium"
+}

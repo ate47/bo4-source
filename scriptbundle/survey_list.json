@@ -1,0 +1,192 @@
+{
+    "zm_postmatch_surveys": [
+        {
+            "survey_buttons": [
+                {
+                    "description": "#hash_31667f42e23cb874"
+                },
+                {
+                    "description": "#hash_31668242e23cbd8d"
+                },
+                {
+                    "description": "#hash_31668142e23cbbda"
+                }
+            ],
+            "description": "#hash_47cde512453830c5",
+            "var_308a9b83": 0.005,
+            "title": "#hash_1871a9be264ce732"
+        }
+    ],
+    "wz_postmatch_surveys": [
+        {
+            "survey_buttons": [
+                {
+                    "description": "#hash_31667f42e23cb874"
+                },
+                {
+                    "description": "#hash_31668242e23cbd8d"
+                },
+                {
+                    "description": "#hash_31668142e23cbbda"
+                }
+            ],
+            "description": "#hash_47cde512453830c5",
+            "var_308a9b83": 0.005,
+            "title": "#hash_1871a9be264ce732"
+        }
+    ],
+    "mp_intro_surveys": [
+        {
+            "survey_buttons": [
+                {
+                    "description": "#hash_a2ffe30bbb062d5"
+                },
+                {
+                    "description": "#hash_a2ffb30bbb05dbc"
+                },
+                {
+                    "description": "#hash_a2ffc30bbb05f6f"
+                },
+                {
+                    "description": "#hash_a2ff930bbb05a56"
+                },
+                {
+                    "description": "#hash_a2ffa30bbb05c09"
+                },
+                {
+                    "description": "#hash_a2ff730bbb056f0"
+                }
+            ],
+            "description": "#hash_58e24cd38cd1d20d",
+            "var_308a9b83": 1,
+            "devonly": 1,
+            "var_3e9e8362": 1,
+            "title": "#hash_7130895060cfded6"
+        }
+    ],
+    "arena_postmatch_surveys": [
+        {
+            "survey_buttons": [
+                {
+                    "description": "#hash_31667f42e23cb874"
+                },
+                {
+                    "description": "#hash_31668242e23cbd8d"
+                },
+                {
+                    "description": "#hash_31668142e23cbbda"
+                }
+            ],
+            "description": "#hash_47cde512453830c5",
+            "var_308a9b83": 0.005,
+            "title": "#hash_1871a9be264ce732"
+        }
+    ],
+    "mp_postmatch_surveys": [
+        {
+            "survey_buttons": [
+                {
+                    "description": "#hash_31667f42e23cb874"
+                },
+                {
+                    "description": "#hash_31668242e23cbd8d"
+                },
+                {
+                    "description": "#hash_31668142e23cbbda"
+                }
+            ],
+            "description": "#hash_47cde512453830c5",
+            "var_308a9b83": 0.005,
+            "title": "#hash_1871a9be264ce732",
+            "var_33ba47f0": 501
+        }
+    ],
+    "zm_intro_surveys": [
+        {
+            "survey_buttons": [
+                {
+                    "description": "#hash_a2ffe30bbb062d5"
+                },
+                {
+                    "description": "#hash_a2ffb30bbb05dbc"
+                },
+                {
+                    "description": "#hash_a2ffc30bbb05f6f"
+                },
+                {
+                    "description": "#hash_a2ff930bbb05a56"
+                },
+                {
+                    "description": "#hash_a2ffa30bbb05c09"
+                },
+                {
+                    "description": "#hash_a2ff730bbb056f0"
+                }
+            ],
+            "description": "#hash_a77d3d06eb40a65",
+            "var_308a9b83": 1,
+            "devonly": 1,
+            "var_3e9e8362": 1,
+            "title": "#hash_380a0eaf6220607e"
+        }
+    ],
+    "arena_intro_surveys": [
+        {
+            "survey_buttons": [
+                {
+                    "description": "#hash_a2ffe30bbb062d5"
+                },
+                {
+                    "description": "#hash_a2ffb30bbb05dbc"
+                },
+                {
+                    "description": "#hash_a2ffc30bbb05f6f"
+                },
+                {
+                    "description": "#hash_a2ff930bbb05a56"
+                },
+                {
+                    "description": "#hash_a2ffa30bbb05c09"
+                },
+                {
+                    "description": "#hash_a2ff730bbb056f0"
+                }
+            ],
+            "description": "#hash_2a88bdf212b6ff6d",
+            "var_308a9b83": 1,
+            "devonly": 1,
+            "var_3e9e8362": 1,
+            "title": "#hash_7de72c11a18dc504"
+        }
+    ],
+    "wz_intro_surveys": [
+        {
+            "survey_buttons": [
+                {
+                    "description": "#hash_a2ffe30bbb062d5"
+                },
+                {
+                    "description": "#hash_a2ffb30bbb05dbc"
+                },
+                {
+                    "description": "#hash_a2ffc30bbb05f6f"
+                },
+                {
+                    "description": "#hash_a2ff930bbb05a56"
+                },
+                {
+                    "description": "#hash_a2ffa30bbb05c09"
+                },
+                {
+                    "description": "#hash_a2ff730bbb056f0"
+                }
+            ],
+            "description": "#hash_4218a1d3b7a25bc9",
+            "var_308a9b83": 1,
+            "devonly": 1,
+            "var_3e9e8362": 1,
+            "title": "#hash_4b5964d0ada3421e"
+        }
+    ],
+    "name": "survey_list"
+}

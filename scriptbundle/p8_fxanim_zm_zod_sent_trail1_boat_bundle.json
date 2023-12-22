@@ -1,0 +1,40 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7a834b7b3149469c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "boat_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1394d66d6f77aa6b",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_3ced73ff363365c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "boat_break"
+                }
+            ],
+            "model": "#p8_fxanim_zm_zod_sent_trail1_boat_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_zod_sent_trail1_boat_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

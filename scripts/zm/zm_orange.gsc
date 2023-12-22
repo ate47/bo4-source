@@ -470,7 +470,7 @@ function function_c3d2b3ee() {
 // Size: 0x158
 function function_486119ea() {
     self endon(#"end_game");
-    if (zm_utility::is_standard() || zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 3) {
+    if (zm_utility::is_standard() || zm_custom::function_901b751c(#"zmmysteryboxstate") == 3) {
         level thread function_cf95fbb7();
         return;
     }

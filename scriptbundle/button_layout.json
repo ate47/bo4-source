@@ -1,0 +1,51 @@
+{
+    "options": [
+        {
+            "label": "#menu/default",
+            "value": "0"
+        },
+        {
+            "label": "#hash_41bbe8bb75e0fda6",
+            "value": "1"
+        },
+        {
+            "label": "#menu/lefty",
+            "value": "2"
+        },
+        {
+            "label": "#menu/nomad",
+            "value": "3"
+        },
+        {
+            "label": "#menu/charlie",
+            "value": "4"
+        },
+        {
+            "label": "#hash_139c067801823f4b",
+            "value": "5"
+        },
+        {
+            "label": "#hash_1e31a517d89f8d8b",
+            "value": "6"
+        },
+        {
+            "label": "#hash_528bdecc81455bad",
+            "value": "7"
+        },
+        {
+            "label": "#hash_186146d66336a088",
+            "value": "8"
+        }
+    ],
+    "description": "#hash_19d2c802dfef955e",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "button_layout",
+    "displayname": "#platform/button_layout",
+    "var_66faec87": 10,
+    "statname": "gpad_buttonsConfig",
+    "var_b7401319": "#menu/off"
+}

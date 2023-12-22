@@ -1,0 +1,18 @@
+{
+    "var_d260763": "#hash_1fa2283fa1a27106",
+    "description": "#hash_5bd6ec99eac01a2b",
+    "var_60fcfffa": "#hash_4b665bb9dd5936a0",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_weaponcycledelay",
+    "displayname": "#hash_7354a077efef3711",
+    "var_d6897f56": 1,
+    "var_926d1be9": 1,
+    "var_66faec87": 500,
+    "statname": "weapon_cycle_delay",
+    "var_d4e288e": 100,
+    "var_b7401319": "#hash_54b9d28e8d5975fa"
+}

@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "reflex"
+        }
+    ],
+    "description": "#hash_48467d65cb9490a9",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_optic_reflex_world",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_3b4f78132d7e832c",
+    "var_65b3a12": 1,
+    "name": "reflex_wz_item",
+    "displayname": "#hash_3b4f78132d7e832c",
+    "icon": "#ui_icon_attachment_reflex",
+    "modelscale": 2,
+    "rarity": "None",
+    "equipsound": "uin_wz_attach_reflex",
+    "handler": "#hash_788c59214ead02af",
+    "attachslotoptics": 1,
+    "pickupicon": "#ui_icon_attachment_reflex",
+    "itemtype": "attachment"
+}

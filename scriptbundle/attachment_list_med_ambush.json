@@ -1,0 +1,40 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "sniperscope_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "acog_plus_wz_item",
+            "maxweight": 150,
+            "available": -1
+        },
+        {
+            "minweight": 90,
+            "var_a6762160": "fastmag_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 90,
+            "var_a6762160": "extmag_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 90,
+            "var_a6762160": "stock_wz_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "name": "attachment_list_med_ambush",
+    "var_fde72c94": 100
+}

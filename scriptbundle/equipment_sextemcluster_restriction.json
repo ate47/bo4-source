@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#hash_63fef5f0d3146a2c",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "equipment_sextemcluster_restriction",
+    "displayname": "#hash_bd772f171a2c608",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__eq_cluster_semtex_grenade__restricted"
+}

@@ -1,0 +1,10 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnentry",
+    "name": "cargo_truck_wz_vehicle_dark",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#generic_pickup",
+    "vehicle": "vehicle_boct_mil_truck_cargo_wz_dark",
+    "itemtype": "vehicle"
+}

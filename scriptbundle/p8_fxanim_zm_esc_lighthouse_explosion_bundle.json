@@ -1,0 +1,41 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "p8_fxanim_zm_esc_lighthouse_explosion_pristine_sanim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "p8_fxanim_zm_esc_lighthouse_explosion_sanim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "var_64c0ee5a": "#hash_45f3ba9d498d523c",
+                    "name": "main & idle loop out",
+                    "var_1c7fbd6b": "#hash_1dd963459dc5b310"
+                }
+            ],
+            "issiege": 1,
+            "firstframe": 1,
+            "model": "#hash_109eb70b68cb9857",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_lighthouse_explosion_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

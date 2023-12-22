@@ -1,0 +1,41 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_slot1",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_slot2",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_slot3",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_slot4",
+            "maxweight": 50,
+            "available": 2
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "supply_stash_slot5",
+            "maxweight": 50,
+            "available": 2
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "name": "supply_stash_buoy",
+    "var_fde72c94": 70,
+    "supplystash": 1
+}

@@ -1,0 +1,60 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_70bb3626628d98b9",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_6ee1aa243be31b4a",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_1bb5c737dc5dbc0d",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_2ab30ae80d7cd215",
+            "var_57b131bd": 3
+        },
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_6f747fe028443016",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_7d2a9602a619d67b",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_4175bed334f4b2f2",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_4175bed334f4b2f2",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_2ab308e80d7cceaf"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_7d77ead59bf31420",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 3,
+    "var_e8b98a8a": "#hash_31b5340e9a1b398c",
+    "weapon": <error reading:ww_blundergat_t8_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "name": "blundergat_wz_item",
+    "displayname": "#hash_7acfa1a35ed86e41",
+    "icon": "#hash_6492d731da11b0af",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_6a956df533db8718",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

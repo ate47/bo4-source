@@ -1,0 +1,62 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ch_vign_tplt_inbtl_hllpht_evlve_2_stg_2_00_hllpht",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#hash_4a90c38235084ac8",
+            "type": "actor",
+            "name": "actor 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_20cbd41b17321edc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#c_t8_zmb_dlc0_zombie_destroyer_body1_igc",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_20cbd71b173223f5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#c_t8_zmb_dlc0_zombie_destroyer_body1_igc",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_inbtl_hllpht_evlve_2_stg_2_00",
+    "dontsync": 1,
+    "team": "any"
+}

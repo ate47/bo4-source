@@ -1,0 +1,32 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_57c62ed0e692c3d3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "inspection_full"
+                }
+            ],
+            "model": "#hash_cdce6dfe0689960",
+            "type": "fakeplayer",
+            "name": "inspection_character",
+            "var_f839fa70": "inspection_character",
+            "var_132e5621": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_inspection_wz",
+    "dontsync": 1,
+    "aligntarget": "wz_inspection_struct",
+    "team": "any"
+}

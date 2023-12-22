@@ -1,0 +1,60 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_199538f20fe6b7fc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "blend": 0.1
+                }
+            ],
+            "model": "#hash_1f67a213d3760fa9",
+            "type": "actor",
+            "name": "ni_gh",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_58a05a3b76fab682",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_97ec57cff49c5ab",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_6205160718bd84b4",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "ni_gh_vi",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_spoon_ghost_stab",
+    "dontsync": 1,
+    "aligntarget": "tag_align_escape_new_industries",
+    "team": "any"
+}

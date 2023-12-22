@@ -1,0 +1,46 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b1db5a85673abd0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "devstate": "initial",
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_22c7807cff7cd6be",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.1,
+                    "var_b3dddfd3": 1,
+                    "name": "death"
+                }
+            ],
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "var_615b1f16": 1,
+            "name": "zombie",
+            "var_873368a8": 200,
+            "aligntargettag": "tag_net_3",
+            "var_69aabff2": 1,
+            "aligntarget": "docks_crane_link",
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "dontthrottle": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_crane_net_zombie",
+    "dontsync": 1,
+    "team": "any"
+}

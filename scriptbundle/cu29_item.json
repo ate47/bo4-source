@@ -1,0 +1,27 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_4530df3f9dd4e8e8"
+        },
+        {
+            "description": "#hash_4530e23f9dd4ee01"
+        }
+    ],
+    "description": "#hash_7218adea7e568c12",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_5cc53b522fd3cd71",
+    "model": "#p8_wz_cu_medallion",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_7870c79073d6908f",
+    "unlockableitemref": "#hash_3e4dc834e385c307",
+    "name": "cu29_item",
+    "displayname": "#hash_7870c79073d6908f",
+    "icon": "#hash_7d45ef3d7fb052f9",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#zombie/diego",
+    "pickupicon": "#hash_7d45ef3d7fb052f9",
+    "itemtype": "quest"
+}

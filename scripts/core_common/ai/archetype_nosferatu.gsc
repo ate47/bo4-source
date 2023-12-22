@@ -314,7 +314,7 @@ function private function_fb3fdf43(entity, latch_enemy) {
     entity endoncallback(&function_2ad18645, #"death");
     latch_enemy endoncallback(&function_2ad18645, #"disconnect", #"death");
     if (isdefined(self) && isdefined(entity) && isdefined(latch_enemy)) {
-        self scene::play(#"hash_2f5e51824901e5", array(entity, latch_enemy));
+        self scene::play(#"aib_vign_cust_mnsn_nfrtu_attack_latch_01", array(entity, latch_enemy));
     }
     if (isdefined(entity)) {
         entity.var_cd8354e0 = undefined;

@@ -1,0 +1,39 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_weapon_camo_render",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_1327c325457e448",
+            "type": "prop",
+            "name": "render_weapon_model"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_weapon_camo_render",
+    "dontsync": 1,
+    "aligntarget": "weapon_icon_staging",
+    "team": "any"
+}

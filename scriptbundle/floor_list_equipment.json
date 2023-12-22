@@ -1,0 +1,100 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "itemlist_frag",
+            "maxweight": 125,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "itemlist_concussion",
+            "maxweight": 125,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sensor_dart_wz_item",
+            "maxweight": 125,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "hatchet_wz_item",
+            "maxweight": 125,
+            "available": -1
+        },
+        {
+            "minweight": 60,
+            "var_a6762160": "itemlist_molotov",
+            "maxweight": 70,
+            "available": -1
+        },
+        {
+            "minweight": 60,
+            "var_a6762160": "concertina_wire_wz_item",
+            "maxweight": 70,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "itemlist_cluster_semtex",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "itemlist_swat_grenade",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "trip_wire_wz_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 60,
+            "var_a6762160": "barricade_wz_item",
+            "maxweight": 70,
+            "available": -1
+        },
+        {
+            "minweight": 60,
+            "var_a6762160": "trophy_system_wz_item",
+            "maxweight": 70,
+            "available": -1
+        },
+        {
+            "minweight": 60,
+            "var_a6762160": "grapple_wz_item",
+            "maxweight": 70,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "itemlist_cymbol_monkey",
+            "maxweight": 125,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "itemlist_smoke_grenade",
+            "maxweight": 125,
+            "available": -1
+        },
+        {
+            "minweight": 40,
+            "var_a6762160": "recon_car_wz_item",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 15,
+    "var_9b009839": -1,
+    "name": "floor_list_equipment",
+    "var_fde72c94": 100
+}

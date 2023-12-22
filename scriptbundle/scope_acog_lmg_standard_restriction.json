@@ -1,0 +1,8 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "gamesettings",
+    "name": "scope_acog_lmg_standard_restriction",
+    "displayname": "#weapon/lmg_standard_t8",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__lmg_standard_t8__attachments__acog"
+}

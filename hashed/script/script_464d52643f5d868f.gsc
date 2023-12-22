@@ -52,10 +52,10 @@ function function_4989fd7e() {
             break;
         }
     }
-    scene::add_scene_func(#"hash_5df6183c594ce5cc", &function_bbc07822, "Shot 1");
-    scene::add_scene_func(#"hash_5df6183c594ce5cc", &function_e7c9f15b, "Shot 1");
-    scene::add_scene_func(#"hash_5df6183c594ce5cc", &play_brutus_scene_done, "done");
-    scene::add_scene_func(#"hash_5df6183c594ce5cc", &function_e16c819a, "Shot 1");
+    scene::add_scene_func(#"aib_vign_zm_mob_brutus_summon_hellhounds", &function_bbc07822, "Shot 1");
+    scene::add_scene_func(#"aib_vign_zm_mob_brutus_summon_hellhounds", &function_e7c9f15b, "Shot 1");
+    scene::add_scene_func(#"aib_vign_zm_mob_brutus_summon_hellhounds", &play_brutus_scene_done, "done");
+    scene::add_scene_func(#"aib_vign_zm_mob_brutus_summon_hellhounds", &function_e16c819a, "Shot 1");
     var_47463bbe = getent("t_rocks_b_bundle_play_scene", "targetname");
     var_1b4c13ea = getent("t_rocks_c_bundle_play_scene", "targetname");
     var_47463bbe thread function_f184754();
@@ -100,7 +100,7 @@ function function_84f1c310() {
         waitresult = undefined;
         waitresult = var_40762d8a waittill(#"trigger");
         level flag::set(#"catwalk_door_open");
-        level thread scene::init_streamer(#"hash_5df6183c594ce5cc", #"allies", 0, 0);
+        level thread scene::init_streamer(#"aib_vign_zm_mob_brutus_summon_hellhounds", #"allies", 0, 0);
         if (isplayer(waitresult.activator)) {
             waitresult.activator thread zm_audio::create_and_play_dialog(#"catwalk", #"open", undefined, 1);
         }

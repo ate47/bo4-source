@@ -1,0 +1,46 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "pistol_grip_wz_item"
+        },
+        {
+            "var_6be1bec7": "suppressor_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "extmag_wz_item"
+        },
+        {
+            "var_6be1bec7": "acog_plus_wz_item"
+        },
+        {
+            "var_6be1bec7": "uber"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_6785cec2add1b5b3",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -4,
+    "var_3e688854": -2,
+    "weapon": <error reading:tr_longburst_t8_operator_wz>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "var_dc6c5d3b": 1,
+    "var_65b3a12": 6,
+    "name": "tr_longburst_t8_operator_item",
+    "var_9507cf45": "#hash_5c0bc0017e009dd3",
+    "icon": "#hash_276f88c298a7ae9c",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Legendary",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_7426cf63ab23b956",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

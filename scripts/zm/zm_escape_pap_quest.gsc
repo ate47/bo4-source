@@ -41,11 +41,11 @@ function __init__() {
     level._effect[#"lightning_near"] = "maps/zm_escape/fx8_pap_lightning_near";
     level._effect[#"lightning_bridge"] = "maps/zm_escape/fx8_pap_lightning_bridge";
     level flag::init(#"pap_quest_completed");
-    scene::add_scene_func(#"hash_5220785f163cc4fc", &function_26cff57, "play");
-    scene::add_scene_func(#"hash_55c695e9e345c653", &function_f7af87b9, "play");
-    scene::add_scene_func(#"hash_4a8917199f6efb09", &function_cf48a8f2, "play");
+    scene::add_scene_func(#"aib_vign_zm_mob_pap_ghosts", &function_26cff57, "play");
+    scene::add_scene_func(#"aib_vign_zm_mob_pap_ghosts_b64", &function_f7af87b9, "play");
+    scene::add_scene_func(#"aib_vign_zm_mob_pap_ghosts_power_house", &function_cf48a8f2, "play");
     scene::add_scene_func(#"hash_41fada5e44b023a9", &function_86f1ed70, "play");
-    scene::add_scene_func(#"hash_c09d814252d9522", &function_8d3078dc, "play");
+    scene::add_scene_func(#"aib_vign_zm_mob_pap_ghosts_remove_b64", &function_8d3078dc, "play");
     scene::add_scene_func(#"hash_7cc7d9f749a02418", &function_a340ee90, "play");
     init_clientfield();
 }
@@ -127,7 +127,7 @@ function function_124362b5(is_powered) {
             wait(2);
             e_player = zm_utility::get_closest_player(var_a8d69fbd.origin);
             e_player thread zm_audio::create_and_play_dialog(#"pap", #"build", undefined, 1);
-            scene::play(#"hash_5220785f163cc4fc");
+            scene::play(#"aib_vign_zm_mob_pap_ghosts");
             self zm_pack_a_punch::function_bb629351(1);
             self thread function_c0bc0375();
             level zm_ui_inventory::function_7df6bb60(#"zm_escape_paschal", 1);
@@ -387,7 +387,7 @@ function function_c0bc0375() {
                 level thread scene::play(#"hash_41fada5e44b023a9");
                 break;
             case #"building_64":
-                level thread scene::play(#"hash_c09d814252d9522");
+                level thread scene::play(#"aib_vign_zm_mob_pap_ghosts_remove_b64");
                 break;
             case #"power_house":
                 level thread scene::play(#"hash_7cc7d9f749a02418");
@@ -405,13 +405,13 @@ function function_c0bc0375() {
             wait(5);
             switch (e_pack.script_string) {
             case #"roof":
-                level scene::play(#"hash_5220785f163cc4fc");
+                level scene::play(#"aib_vign_zm_mob_pap_ghosts");
                 break;
             case #"building_64":
-                level scene::play(#"hash_55c695e9e345c653");
+                level scene::play(#"aib_vign_zm_mob_pap_ghosts_b64");
                 break;
             case #"power_house":
-                level scene::play(#"hash_4a8917199f6efb09");
+                level scene::play(#"aib_vign_zm_mob_pap_ghosts_power_house");
                 break;
             }
             e_pack zm_pack_a_punch::function_bb629351(1);

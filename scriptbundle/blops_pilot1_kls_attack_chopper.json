@@ -1,0 +1,11 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "damaged": "#hash_6c1d3d650607f20f",
+    "vmtype": "both",
+    "timecheck": "#hash_3420e996e31d50ec",
+    "name": "blops_pilot1_kls_attack_chopper",
+    "arrive": "#hash_4309efa4dec98c36",
+    "timeout": "#hash_34167796e3143ab1",
+    "kill": "#hash_571f518cd2f1e301"
+}

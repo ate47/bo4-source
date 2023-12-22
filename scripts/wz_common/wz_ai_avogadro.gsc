@@ -113,7 +113,7 @@ function private function_c41e67c() {
 // Size: 0x2e
 function function_5ff730c7() {
     self.var_2cee3556 = [];
-    self.var_2cee3556[#"hash_45d006f75a326654"] = 15;
+    self.var_2cee3556[#"avogadro_base_itemlist_all"] = 15;
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro

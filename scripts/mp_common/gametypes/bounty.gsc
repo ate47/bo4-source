@@ -277,7 +277,7 @@ function private onstartgametype() {
         [[ level._setteamscore ]](#"axis", game.stat[#"roundswon"][#"axis"]);
     }
     laststand_mp::function_414115a0(level.laststandtimer, level.laststandhealth);
-    level.var_4cfc17cc = struct::get_script_bundle("killstreak", #"hash_156aacd529965ba1");
+    level.var_4cfc17cc = struct::get_script_bundle("killstreak", #"killstreak_bounty_deposit_site_heli");
     function_fb6f71d5();
     function_9f5ae64d();
     level thread function_7cb5420e(level.var_b9aad767);

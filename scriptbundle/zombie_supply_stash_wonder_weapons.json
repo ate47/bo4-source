@@ -1,0 +1,41 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "death_of_orion_t8_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "allistairs_folly_t8_item",
+            "var_3f8c08e3": "ammo_type_45_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "zombie_supply_stash_raygun_mk_variants",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "ww_crossbow_impaler_t8_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "ww_winters_fury_t8_item",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "name": "zombie_supply_stash_wonder_weapons",
+    "var_fde72c94": 100
+}

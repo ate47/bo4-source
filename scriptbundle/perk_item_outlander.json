@@ -1,0 +1,26 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_7dc29686606c1b8a"
+        }
+    ],
+    "amount": 1,
+    "duration": 180,
+    "description": "#hash_4acd6807292167c6",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_1daeeb9a852e5657",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_1bf992decba13b2b",
+    "consumable": 1,
+    "name": "perk_item_outlander",
+    "displayname": "#hash_1bf992decba13b2b",
+    "stackcount": 1,
+    "icon": "#hash_707e5cedaaeee67f",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_outlander",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

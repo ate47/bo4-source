@@ -1,0 +1,18 @@
+{
+    "var_d260763": "#hash_227938edafa1f35d",
+    "description": "#hash_f3f37bb4f5f3511",
+    "var_60fcfffa": "#menu/off",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.1,
+    "maxvalue": 1,
+    "name": "pc_skip_intro",
+    "displayname": "#hash_54265fd90b5d153f",
+    "var_926d1be9": 0.01,
+    "var_66faec87": 1,
+    "statname": "ui_play_intro_movies",
+    "var_82c732a7": 1,
+    "var_d4e288e": 1,
+    "var_b7401319": "#menu/on"
+}

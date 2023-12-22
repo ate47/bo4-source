@@ -1,0 +1,55 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6aede6ceaa874251",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fly_to_hover"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6e2b58d5fc2c869c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "hover_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_14412386c809050e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "hover_attack"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1be2101cb9181fb2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "hover_exit"
+                }
+            ],
+            "model": "#hash_3836076c978b4c35",
+            "type": "prop",
+            "name": "eagle_1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_eagle_1",
+    "dontsync": 1,
+    "aligntarget": "tag_align_red_eagles",
+    "team": "any"
+}

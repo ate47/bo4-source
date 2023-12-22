@@ -1,0 +1,62 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_base_01_idle",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#spawner_mp_swat_buddy_team1_male",
+            "type": "actor",
+            "name": "actor 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_base_02_idle",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#spawner_mp_swat_buddy_team1_male",
+            "type": "actor",
+            "name": "actor 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_base_03_idle",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#spawner_mp_swat_buddy_team1_male",
+            "type": "actor",
+            "name": "actor 3"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "ai_swat_rifle_ent_ent_litbird_rappel_base_idle",
+    "dontsync": 1,
+    "team": "any"
+}

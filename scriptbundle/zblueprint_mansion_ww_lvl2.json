@@ -1,0 +1,19 @@
+{
+    "var_4dbc4aee": "#hash_1302228fd9afcebb",
+    "var_11928e3b": -90,
+    "var_922067c4": "scriptbundle",
+    "result": <error reading:hash_62d2ea43a8cf6113>,
+    "type": "craftblueprint",
+    "var_3c809ce0": 16,
+    "var_99577dd3": <error reading:hash_601c4a2cd6fabedc>,
+    "var_670f9944": <error reading:hash_300b5026595febfd>,
+    "var_2e0a273a": <error reading:hash_5d81702cbc01eec2>,
+    "name": "zblueprint_mansion_ww_lvl2",
+    "displayname": "Wonder Weapon 2",
+    "var_391591d0": "#hash_1415168bdbf687ad",
+    "var_46309255": "one_time_craft",
+    "var_abd9b2d0": "#hash_1bc3fe888bfb0d6d",
+    "var_f4a82731": 3,
+    "var_c028dcfe": 1,
+    "var_318c150c": "section_wonder_weapon"
+}

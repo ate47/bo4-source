@@ -1,0 +1,65 @@
+{
+    "itemlist": [
+        {
+            "minweight": 240,
+            "var_a6762160": "global_list_guns_small_dlc1",
+            "maxweight": 320,
+            "available": -1
+        },
+        {
+            "minweight": 85,
+            "var_a6762160": "ghosttown_list_health",
+            "maxweight": 150,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "var_a6762160": "ghosttown_list_equipment",
+            "maxweight": 240,
+            "available": -1
+        },
+        {
+            "minweight": 33,
+            "var_a6762160": "ghosttown_list_gear",
+            "maxweight": 58,
+            "available": -1
+        },
+        {
+            "minweight": 105,
+            "var_a6762160": "ghosttown_list_consumable",
+            "maxweight": 180,
+            "available": -1
+        },
+        {
+            "minweight": 200,
+            "var_a6762160": "ghosttown_list_attachment",
+            "maxweight": 300,
+            "available": -1
+        },
+        {
+            "minweight": 350,
+            "var_a6762160": "ghosttown_list_ammo",
+            "maxweight": 400,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "var_a6762160": "storage_list",
+            "maxweight": 30,
+            "available": -1
+        },
+        {
+            "minweight": 70,
+            "var_a6762160": "ghosttown_list_armor_shards",
+            "maxweight": 70,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 420,
+    "type": "itemspawnlist",
+    "var_345eba59": 9,
+    "var_9b009839": -1,
+    "name": "ghosttown_list_items_small_dlc1",
+    "var_fde72c94": 100
+}

@@ -1,0 +1,16 @@
+{
+    "amount": 1,
+    "description": "#hash_274dde55e72757fc",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_6696d36c3e11b19e>,
+    "type": "itemspawnentry",
+    "name": "cluster_semtex_wz_item",
+    "displayname": "#hash_6a6dc00bc727bf4",
+    "stackcount": 1,
+    "icon": "#hash_63fef5f0d3146a2c",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "var_50773731": 1.25,
+    "itemtype": "equipment"
+}

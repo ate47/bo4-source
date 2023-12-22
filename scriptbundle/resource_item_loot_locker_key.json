@@ -1,0 +1,22 @@
+{
+    "amount": 1,
+    "description": "#hash_12be1775f606b2cd",
+    "var_922067c4": "scriptbundle",
+    "model": "#p7_pro_card_key_access",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_29cb4e88079890ea",
+    "var_e6ac0592": 90,
+    "var_6b5d0aaa": 1,
+    "name": "resource_item_loot_locker_key",
+    "displayname": "#hash_29cb4e88079890ea",
+    "var_9507cf45": "#hash_63945ff9f02670f2",
+    "stackcount": 10,
+    "icon": "#hash_63945ff9f02670f2",
+    "modelscale": 2,
+    "rarity": "None",
+    "handler": "#hash_31380667bf69d3a0",
+    "pickupicon": "#hash_63945ff9f02670f2",
+    "stackable": 1,
+    "var_50773731": 1,
+    "itemtype": "resource"
+}

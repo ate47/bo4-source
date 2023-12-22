@@ -1,0 +1,20 @@
+{
+    "lobbymode": -1,
+    "id": 1000,
+    "var_24e84cf8": 1,
+    "var_45f67af4": "main",
+    "maxlocalclientsnetwork": 2,
+    "mainmode": -1,
+    "var_d16ccae8": 1,
+    "isprivate": 1,
+    "var_1d4ea5bd": "titlescreen",
+    "room": "mode_select",
+    "maxclients": 6,
+    "name": "director_lan_select",
+    "networkmode": 1,
+    "var_80a68682": "director_lan",
+    "egamemodes": 1,
+    "maxlocalclients": 4,
+    "var_38c7a0d1": "showdirectorcustom",
+    "var_f0c68dbb": 1
+}

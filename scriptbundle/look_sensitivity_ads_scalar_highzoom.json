@@ -1,0 +1,65 @@
+{
+    "options": [
+        {
+            "label": "#hash_50e118f6ac243148",
+            "value": "0.25"
+        },
+        {
+            "label": "#hash_50e119f6ac2432fb",
+            "value": "0.5"
+        },
+        {
+            "label": "#hash_50e11af6ac2434ae",
+            "value": "0.75"
+        },
+        {
+            "label": "#hash_50e11bf6ac243661",
+            "value": "1.0"
+        },
+        {
+            "label": "#hash_50e11cf6ac243814",
+            "value": "1.25"
+        },
+        {
+            "label": "#hash_50e11df6ac2439c7",
+            "value": "1.5"
+        },
+        {
+            "label": "#hash_50e11ef6ac243b7a",
+            "value": "1.75"
+        },
+        {
+            "label": "#hash_50e11ff6ac243d2d",
+            "value": "2"
+        },
+        {
+            "label": "#hash_50e110f6ac2423b0",
+            "value": "2.5"
+        },
+        {
+            "label": "#hash_50e111f6ac242563",
+            "value": "3"
+        },
+        {
+            "label": "#hash_50e49ef6ac274ad1",
+            "value": "3.5"
+        },
+        {
+            "label": "#hash_50e49df6ac27491e",
+            "value": "4"
+        }
+    ],
+    "var_dfedf08e": 3,
+    "description": "#hash_496f7261a755ab84",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_2284d52": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "look_sensitivity_ads_scalar_highzoom",
+    "displayname": "#hash_5d9c675a383bf3fc",
+    "var_66faec87": 10,
+    "statname": "input_viewSensitivityADSScalarHighZoom",
+    "var_b7401319": "#menu/off"
+}

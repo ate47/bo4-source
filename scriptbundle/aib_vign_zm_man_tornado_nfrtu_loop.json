@@ -1,0 +1,32 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5b7d1b7a85c7bbc8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "nospawn": 1,
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "actor 1",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_man_tornado_nfrtu_loop",
+    "dontsync": 1,
+    "team": "any"
+}

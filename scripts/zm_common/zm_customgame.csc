@@ -30,7 +30,7 @@ function autoexec function_d776b402() {
 // Size: 0x27e
 function function_772f66bd(localclientnum) {
     localplayer = function_5c10bd79(localclientnum);
-    switch (getgametypesetting(#"hash_29d174e7d8ab76c8")) {
+    switch (getgametypesetting(#"zmhealthstartingbars")) {
     case 3:
     default:
         var_d75008e3 = 0;

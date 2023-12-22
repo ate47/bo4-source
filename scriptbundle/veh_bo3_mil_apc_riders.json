@@ -1,0 +1,35 @@
+{
+    "objects": [
+        {
+            "exitgroundanim": "#hash_7ee300e61046bc42",
+            "aligntag": "tag_driver",
+            "rideanim": "#hash_477a418155485b1c",
+            "position": "driver"
+        },
+        {
+            "exitgroundanim": "#hash_761827c3c462c512",
+            "aligntag": "tag_passenger",
+            "rideanim": "#hash_2980285e6c64c4ec",
+            "position": "passenger1"
+        },
+        {
+            "exitgroundanim": "#hash_320f96ce99610b87",
+            "aligntag": "tag_passenger",
+            "rideanim": "#hash_30adae337d3f5f75",
+            "position": "crew1"
+        },
+        {
+            "exitgroundanim": "#hash_6c9e26c399ed9c66",
+            "aligntag": "tag_passenger",
+            "rideanim": "#hash_4f392fa07d3b1648",
+            "position": "crew2"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_4237e5a7091bed74",
+    "type": "vehicleriders",
+    "vmtype": "both",
+    "dropspeed": 250,
+    "name": "veh_bo3_mil_apc_riders",
+    "highexitlandheight": 32
+}

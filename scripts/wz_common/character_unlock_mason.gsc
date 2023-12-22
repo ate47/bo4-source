@@ -38,9 +38,9 @@ function function_2613aeec(enabled) {
         callback::add_callback(#"hash_48bcdfea6f43fecb", &function_1c4b5097);
         callback::add_callback(#"on_team_eliminated", &function_4ac25840);
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
-            item_world_fixup::function_e70fa91c(#"hash_2e8c8c85b6034ab3", #"hash_d215d711186a8db", 1);
+            item_world_fixup::function_e70fa91c(#"wz_escape_supply_stash_parent", #"supply_stash_cu19", 1);
         } else {
-            item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"hash_d215d711186a8db", 6);
+            item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"supply_stash_cu19", 6);
         }
         dynent = getdynent(#"array_broadcast");
         if (isdefined(dynent)) {

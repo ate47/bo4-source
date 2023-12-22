@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3c3e85a375b15f19",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom",
+                    "blend": 0.2
+                }
+            ],
+            "var_9de1f44c": 1,
+            "type": "fakeplayer",
+            "name": "specialist_customization"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_wz_male_unlock",
+    "dontsync": 1,
+    "team": "any"
+}

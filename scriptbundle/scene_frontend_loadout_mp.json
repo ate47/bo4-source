@@ -1,0 +1,60 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_cac_ar_accurate",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "edit"
+                },
+                {
+                    "name": "primary"
+                },
+                {
+                    "name": "secondary"
+                },
+                {
+                    "name": "skill"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "cameratween": 7
+        },
+        {
+            "shots": [
+                {
+                    "name": "edit"
+                },
+                {
+                    "name": "primary"
+                },
+                {
+                    "name": "secondary"
+                },
+                {
+                    "name": "skill"
+                }
+            ],
+            "disabled": 1,
+            "model": "#hash_4ead7e0cf1be186f",
+            "type": "prop",
+            "name": "prop 1",
+            "var_922b4fc5": -6
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_loadout_mp",
+    "dontsync": 1,
+    "team": "any"
+}

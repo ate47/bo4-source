@@ -1,0 +1,8 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "gamesettings",
+    "name": "attachment_rf_lmg_heavy_restriction",
+    "displayname": "#weapon/lmg_heavy_t8",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__lmg_heavy_t8__attachments__rf"
+}

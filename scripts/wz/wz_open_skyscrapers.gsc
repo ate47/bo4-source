@@ -57,11 +57,11 @@ function event_handler[level_init] main(eventstruct) {
     setdvar(#"hash_6b51c550499b0af2", 1);
     level namespace_ebd5f10d::function_6f6f5189();
     if (isdefined(getgametypesetting(#"wzheavymetalheroes")) && getgametypesetting(#"wzheavymetalheroes")) {
-        level.var_2089aa11 = #"hash_5754a06c21bb7ad3";
-        namespace_3d2704b3::function_f0297225(#"hash_1e669a620270a631", 2, 4);
+        level.var_2089aa11 = #"supply_drop_stash_parent_dlc1_heroes";
+        namespace_3d2704b3::function_f0297225(#"supply_drop_stash_parent_dlc1_flare_gun_heroes", 2, 4);
     }
     if (util::get_game_type() == "warzone_pandemic_quad") {
-        namespace_3d2704b3::function_f0297225(#"hash_a2e61e4e076fb8d", 2147483647, 100);
+        namespace_3d2704b3::function_f0297225(#"supply_drop_stash_parent_pandemic", 2147483647, 100);
         level function_5725bc63();
     }
     /#
@@ -209,46 +209,46 @@ function function_4b227faf() {
             case #"open_skyscraper_vehicles_arav":
                 var_d5d9cd1 = group;
                 break;
-            case #"hash_2cb3a37c908b9d9b":
+            case #"open_skyscraper_vehicles_atv":
                 var_96bc77ce = group;
                 break;
-            case #"hash_139acdd590ca3442":
+            case #"open_skyscraper_vehicles_cargo_truck":
                 var_208aaa54 = group;
                 break;
-            case #"hash_3b1a45effd27050":
+            case #"open_skyscraper_vehicles_cargo_truck_clearing":
                 var_25dfca32 = group;
                 break;
-            case #"hash_6d90d15ce8e75ac2":
+            case #"open_skyscraper_vehicles_heli":
                 var_4b606147 = group;
                 break;
-            case #"hash_18134e61b5fb4bd0":
+            case #"open_skyscraper_vehicles_heli_clearing":
                 var_d6662d66 = group;
                 break;
-            case #"hash_10f8fa86764a95a2":
+            case #"open_skyscraper_vehicles_zodiac":
                 var_dc1ea650 = group;
                 break;
-            case #"hash_18fb285aa313e821":
+            case #"open_skyscraper_vehicles_zodiac_docks":
                 var_707ce24b = group;
                 break;
-            case #"hash_32decf8f5b9557fa":
+            case #"open_skyscraper_vehicles_zodiac_nuketown":
                 var_e3ab2d7f = group;
                 break;
-            case #"hash_64604aee91f4fc0a":
+            case #"open_skyscraper_vehicles_zodiac_hydro_dam":
                 var_169219e9 = group;
                 break;
-            case #"hash_31be38307768aac2":
+            case #"open_skyscraper_vehicles_zodiac_skyscraper":
                 var_4bf01581 = group;
                 break;
-            case #"hash_1fa35d6531b6441e":
+            case #"open_skyscraper_vehicles_zodiac_hijacked":
                 var_993b03f = group;
                 break;
-            case #"hash_159e4e48721d6125":
+            case #"open_skyscraper_vehicles_muscle_car_hot_pursuit":
                 var_5864ac74 = group;
                 break;
-            case #"hash_1926dc7c3ce2bfb2":
+            case #"open_skyscraper_vehicles_pbr":
                 var_25e0e288 = group;
                 break;
-            case #"hash_19b0005ca3a8c6c":
+            case #"open_skyscraper_vehicles_suv_base":
                 var_284a1b99 = group;
                 break;
             default:
@@ -374,46 +374,46 @@ function function_eef7849() {
             case #"open_skyscraper_vehicles_arav":
                 var_d5d9cd1 = group;
                 break;
-            case #"hash_2cb3a37c908b9d9b":
+            case #"open_skyscraper_vehicles_atv":
                 var_96bc77ce = group;
                 break;
-            case #"hash_139acdd590ca3442":
+            case #"open_skyscraper_vehicles_cargo_truck":
                 var_208aaa54 = group;
                 break;
-            case #"hash_3b1a45effd27050":
+            case #"open_skyscraper_vehicles_cargo_truck_clearing":
                 var_25dfca32 = group;
                 break;
-            case #"hash_6d90d15ce8e75ac2":
+            case #"open_skyscraper_vehicles_heli":
                 var_4b606147 = group;
                 break;
-            case #"hash_18134e61b5fb4bd0":
+            case #"open_skyscraper_vehicles_heli_clearing":
                 var_d6662d66 = group;
                 break;
-            case #"hash_10f8fa86764a95a2":
+            case #"open_skyscraper_vehicles_zodiac":
                 var_dc1ea650 = group;
                 break;
-            case #"hash_18fb285aa313e821":
+            case #"open_skyscraper_vehicles_zodiac_docks":
                 var_707ce24b = group;
                 break;
-            case #"hash_32decf8f5b9557fa":
+            case #"open_skyscraper_vehicles_zodiac_nuketown":
                 var_e3ab2d7f = group;
                 break;
-            case #"hash_64604aee91f4fc0a":
+            case #"open_skyscraper_vehicles_zodiac_hydro_dam":
                 var_169219e9 = group;
                 break;
-            case #"hash_31be38307768aac2":
+            case #"open_skyscraper_vehicles_zodiac_skyscraper":
                 var_4bf01581 = group;
                 break;
-            case #"hash_1fa35d6531b6441e":
+            case #"open_skyscraper_vehicles_zodiac_hijacked":
                 var_993b03f = group;
                 break;
-            case #"hash_159e4e48721d6125":
+            case #"open_skyscraper_vehicles_muscle_car_hot_pursuit":
                 var_5864ac74 = group;
                 break;
-            case #"hash_1926dc7c3ce2bfb2":
+            case #"open_skyscraper_vehicles_pbr":
                 var_25e0e288 = group;
                 break;
-            case #"hash_19b0005ca3a8c6c":
+            case #"open_skyscraper_vehicles_suv_base":
                 var_284a1b99 = group;
                 break;
             default:
@@ -611,7 +611,7 @@ function function_f567f0cd() {
 // Size: 0x4fe
 function function_1221d304() {
     /#
-        a_str_types = array(#"hash_50df12a3f608295f", #"hash_2321fdb723c1833e", #"hash_1207be62f5586002", #"hash_9c4bbd4ed2ab01a", #"hash_262b20d4fdef3691", #"hash_5e74d2d4d4a1d9dd", #"hash_232aa3a4e81249c6", #"hash_232abda4e81275f4", #"hash_7acdf9a4d20bca08", #"hash_2f8d60a5381870ee", #"hash_1d6e04a52d9a5fe2", #"hash_371dca31a8d2a390", #"hash_1f38eb47b13ae0a2", #"hash_7473bb4a4fe9a17f", #"hash_a32b2557c188dbe", #"hash_32e2d28d167e8e92", #"hash_4c1a688d248f81bc", #"hash_6eba738d801e1796", #"hash_4e73f59c7e21ce5a", #"hash_2f8f4f949bf9ac15", #"hash_15ddcb948d817b45", #"hash_516b7a9466fa5c12", #"hash_769bc3a07e8bc079", #"hash_25efdc944e4cca5b", #"veh_muscle_car_convertible_player_wz_replacer", #"hash_cd755944056a13d", #"hash_56e75c94213b20da", #"hash_2f8f41949bf9944b", #"hash_2da622f0e5b37c60", #"hash_54469210eb79f8fa", #"hash_5a8d85277c6e81cc", #"hash_fd30bfe9c72da01", #"hash_762e82fe8e052b0e", #"hash_6a5a5607b259798f", #"hash_6d35ebfe40e6564f", #"hash_1a7b0eaf3ae726cd", #"hash_2e86e4a61f2237f6", #"hash_2c40642bbbab460d", #"hash_482e864157620248", #"hash_1d37bc413f25898e", #"hash_1d37af413f257377", #"hash_8ea0340ead96490", #"hash_79bf6a7491c80c7", #"hash_32e4c0a7619f03a9", #"hash_22d9b5a7a0d9dd73", #"hash_2466ddfe7224bda1", #"hash_559a470c57ff48f1", #"hash_7c419239b3b272a1", #"hash_750e85ddbd818361", #"hash_6bb2c4db63712ba6", #"hash_2a3f3e38128fc907", #"hash_5aaa847b9e03f876", #"hash_18fa6d20a6e8fa78", #"hash_5b0fb5b643c105fa", #"hash_77ac4aa97a8b5aa2", #"hash_660785b539889002", #"hash_54bf3cd56e8c5c4a", #"hash_6fdb3b0114439974", #"hash_327d1f9834b6b91e", #"hash_1420be7cd22fba24", #"hash_1420be7cd22fba24", #"hash_7450e3a35eaf7c7d", #"hash_187ccca8e5fca987", #"hash_7709d71ab3699f7e", #"hash_275b12ca9b3cc010", #"hash_6125436f40323d0c", #"hash_27cb5ec4239072e2", #"hash_132ff84412bc229", #"hash_ec710c12a11ba1b", #"hash_15f6b46a381e7007");
+        a_str_types = array(#"vehicle_boct_mil_truck_cargo_wz_dark", #"vehicle_boct_mil_truck_cargo_wz_green", #"vehicle_boct_mil_truck_cargo_wz_tan", #"vehicle_boct_mil_boat_tactical_raft_wz_blk", #"vehicle_boct_mil_boat_tactical_raft_wz_gry", #"vehicle_boct_mil_boat_tactical_raft_wz_odg", #"veh_quad_player_wz_blk", #"hash_232abda4e81275f4", #"veh_quad_player_wz_grn", #"hash_2f8d60a5381870ee", #"veh_quad_player_wz_tan", #"vehicle_t8_mil_helicopter_light_transport_wz_grey", #"vehicle_t8_mil_helicopter_light_transport_wz_tan", #"vehicle_t8_mil_helicopter_light_transport_wz_dark", #"vehicle_t8_mil_helicopter_light_transport_wz_black", #"veh_fav_player_wz_blk", #"veh_fav_player_wz_grn", #"veh_fav_player_wz_tan", #"veh_muscle_car_convertible_player_wz_bandit_blk", #"veh_muscle_car_convertible_player_wz_blu", #"veh_muscle_car_convertible_player_wz_grn", #"veh_muscle_car_convertible_player_wz_org", #"veh_muscle_car_convertible_player_wz_phantom", #"veh_muscle_car_convertible_player_wz_red", #"veh_muscle_car_convertible_player_wz_replacer", #"veh_muscle_car_convertible_player_wz_wht", #"veh_muscle_car_convertible_player_wz_ylw", #"veh_muscle_car_convertible_player_wz_blk", #"veh_muscle_car_convertible_player_wz_racing_grn", #"veh_suv_player_police_wz", #"vehicle_boct_mil_boat_pbr_wz_police", #"veh_suv_player_wz_blk", #"veh_suv_player_wz_gry", #"veh_suv_player_wz_met_gry", #"veh_suv_player_wz_wht", #"vehicle_t8_mil_helicopter_light_transport_wz_police", #"veh_suv_player_private_security_wz", #"veh_quad_player_wz_police", #"hash_482e864157620248", #"hash_1d37bc413f25898e", #"hash_1d37af413f257377", #"hash_8ea0340ead96490", #"hash_79bf6a7491c80c7", #"hash_32e4c0a7619f03a9", #"hash_22d9b5a7a0d9dd73", #"vehicle_boct_mil_boat_pbr_wz_black", #"vehicle_boct_mil_boat_pbr_wz_green", #"vehicle_boct_mil_boat_pbr_wz_grey", #"vehicle_boct_mil_boat_pbr_wz_tan", #"vehicle_t8_mil_helicopter_light_gunner_wz_black", #"vehicle_t8_mil_helicopter_light_gunner_wz_dark", #"vehicle_t8_mil_helicopter_light_gunner_wz_green", #"vehicle_t8_mil_helicopter_light_gunner_wz_grey", #"vehicle_t8_mil_helicopter_light_gunner_wz_tan", #"hash_77ac4aa97a8b5aa2", #"vehicle_t8_mil_tank_wz_black", #"vehicle_t8_mil_tank_wz_green", #"vehicle_t8_mil_tank_wz_grey", #"vehicle_t8_mil_tank_wz_tan", #"veh_motorcycle_sidecar_player_wz", #"veh_motorcycle_sidecar_player_wz", #"veh_motorcycle_sidecar_player_wz_dark_grey", #"veh_motorcycle_sidecar_player_wz_light_grey", #"veh_motorcycle_sidecar_player_wz_metal_grey", #"hash_275b12ca9b3cc010", #"veh_motorcycle_sidecar_player_wz_tan", #"veh_motorcycle_sidecar_player_wz_white", #"veh_motorcycle_sidecar_player_wz_heroes", #"vehicle_t8_mil_helicopter_light_gunner_wz_heroes", #"veh_fav_player_wz_heroes");
         foreach (str_type in a_str_types) {
             if (self.vehicletype == str_type) {
                 return 1;
@@ -628,66 +628,66 @@ function function_1221d304() {
 function function_b2775b52() {
     /#
         switch (self.vehicletype) {
-        case #"hash_232aa3a4e81249c6":
+        case #"veh_quad_player_wz_blk":
         case #"hash_232abda4e81275f4":
-        case #"hash_7acdf9a4d20bca08":
-        case #"hash_1d6e04a52d9a5fe2":
+        case #"veh_quad_player_wz_grn":
+        case #"veh_quad_player_wz_tan":
         case #"hash_2f8d60a5381870ee":
             return (0, 0, 1);
-        case #"hash_1207be62f5586002":
-        case #"hash_50df12a3f608295f":
-        case #"hash_2321fdb723c1833e":
+        case #"vehicle_boct_mil_truck_cargo_wz_tan":
+        case #"vehicle_boct_mil_truck_cargo_wz_dark":
+        case #"vehicle_boct_mil_truck_cargo_wz_green":
             return (1, 0, 1);
-        case #"hash_371dca31a8d2a390":
-        case #"hash_a32b2557c188dbe":
+        case #"vehicle_t8_mil_helicopter_light_transport_wz_grey":
+        case #"vehicle_t8_mil_helicopter_light_transport_wz_black":
         case #"hash_482e864157620248":
-        case #"hash_5aaa847b9e03f876":
-        case #"hash_2a3f3e38128fc907":
-        case #"hash_1f38eb47b13ae0a2":
-        case #"hash_5b0fb5b643c105fa":
-        case #"hash_18fa6d20a6e8fa78":
+        case #"vehicle_t8_mil_helicopter_light_gunner_wz_green":
+        case #"vehicle_t8_mil_helicopter_light_gunner_wz_dark":
+        case #"vehicle_t8_mil_helicopter_light_transport_wz_tan":
+        case #"vehicle_t8_mil_helicopter_light_gunner_wz_tan":
+        case #"vehicle_t8_mil_helicopter_light_gunner_wz_grey":
         case #"hash_1d37af413f257377":
         case #"hash_1d37bc413f25898e":
-        case #"hash_6bb2c4db63712ba6":
-        case #"hash_7473bb4a4fe9a17f":
+        case #"vehicle_t8_mil_helicopter_light_gunner_wz_black":
+        case #"vehicle_t8_mil_helicopter_light_transport_wz_dark":
             return (1, 0, 0);
-        case #"hash_9c4bbd4ed2ab01a":
-        case #"hash_262b20d4fdef3691":
-        case #"hash_5e74d2d4d4a1d9dd":
+        case #"vehicle_boct_mil_boat_tactical_raft_wz_blk":
+        case #"vehicle_boct_mil_boat_tactical_raft_wz_gry":
+        case #"vehicle_boct_mil_boat_tactical_raft_wz_odg":
             return (1, 0.5, 0);
-        case #"hash_32e2d28d167e8e92":
-        case #"hash_6eba738d801e1796":
-        case #"hash_4c1a688d248f81bc":
+        case #"veh_fav_player_wz_blk":
+        case #"veh_fav_player_wz_tan":
+        case #"veh_fav_player_wz_grn":
         case #"hash_79bf6a7491c80c7":
         case #"hash_22d9b5a7a0d9dd73":
         case #"hash_32e4c0a7619f03a9":
             return vectorscale((1, 1, 0), 0.501961);
-        case #"hash_750e85ddbd818361":
-        case #"hash_7c419239b3b272a1":
-        case #"hash_559a470c57ff48f1":
-        case #"hash_5a8d85277c6e81cc":
-        case #"hash_2466ddfe7224bda1":
+        case #"vehicle_boct_mil_boat_pbr_wz_tan":
+        case #"vehicle_boct_mil_boat_pbr_wz_grey":
+        case #"vehicle_boct_mil_boat_pbr_wz_green":
+        case #"vehicle_boct_mil_boat_pbr_wz_police":
+        case #"vehicle_boct_mil_boat_pbr_wz_black":
             return (0, 1, 0);
-        case #"hash_fd30bfe9c72da01":
-        case #"hash_6a5a5607b259798f":
-        case #"hash_6d35ebfe40e6564f":
-        case #"hash_762e82fe8e052b0e":
-        case #"hash_2e86e4a61f2237f6":
-        case #"hash_54469210eb79f8fa":
+        case #"veh_suv_player_wz_blk":
+        case #"veh_suv_player_wz_met_gry":
+        case #"veh_suv_player_wz_wht":
+        case #"veh_suv_player_wz_gry":
+        case #"veh_suv_player_private_security_wz":
+        case #"veh_suv_player_police_wz":
             return (0, 1, 1);
-        case #"hash_cd755944056a13d":
+        case #"veh_muscle_car_convertible_player_wz_wht":
         case #"veh_muscle_car_convertible_player_wz_replacer":
-        case #"hash_15ddcb948d817b45":
-        case #"hash_25efdc944e4cca5b":
-        case #"hash_516b7a9466fa5c12":
-        case #"hash_2f8f41949bf9944b":
-        case #"hash_4e73f59c7e21ce5a":
-        case #"hash_2da622f0e5b37c60":
-        case #"hash_2f8f4f949bf9ac15":
-        case #"hash_56e75c94213b20da":
-        case #"hash_769bc3a07e8bc079":
+        case #"veh_muscle_car_convertible_player_wz_grn":
+        case #"veh_muscle_car_convertible_player_wz_red":
+        case #"veh_muscle_car_convertible_player_wz_org":
+        case #"veh_muscle_car_convertible_player_wz_blk":
+        case #"veh_muscle_car_convertible_player_wz_bandit_blk":
+        case #"veh_muscle_car_convertible_player_wz_racing_grn":
+        case #"veh_muscle_car_convertible_player_wz_blu":
+        case #"veh_muscle_car_convertible_player_wz_ylw":
+        case #"veh_muscle_car_convertible_player_wz_phantom":
             return (0, 1, 1);
-        case #"hash_2c40642bbbab460d":
+        case #"veh_quad_player_wz_police":
             return (0.545098, 0.270588, 0.0745098);
         default:
             return (1, 0, 1);

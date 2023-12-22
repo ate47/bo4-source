@@ -661,9 +661,9 @@ function function_72e53e19() {
     level.var_a6583e6d.var_126d7bef = 1;
     level.var_a6583e6d.no_powerups = 1;
     level.var_a6583e6d.var_f34ca9c4 = 1;
-    scene::add_scene_func(#"hash_49e3dd966929fada", &function_c60ba36e, "play");
-    scene::add_scene_func(#"hash_49e3dd966929fada", &function_a1d4bbeb, "done");
-    level thread scene::play(#"hash_49e3dd966929fada", level.var_a6583e6d);
+    scene::add_scene_func(#"aib_vign_cust_zm_mnsn_forest_gate_intro", &function_c60ba36e, "play");
+    scene::add_scene_func(#"aib_vign_cust_zm_mnsn_forest_gate_intro", &function_a1d4bbeb, "done");
+    level thread scene::play(#"aib_vign_cust_zm_mnsn_forest_gate_intro", level.var_a6583e6d);
     level.var_a6583e6d thread function_1c62cd2();
 }
 
@@ -672,9 +672,9 @@ function function_72e53e19() {
 // Checksum 0x349dac9b, Offset: 0x4080
 // Size: 0x7a
 function function_c60ba36e(a_ents) {
-    if (isactor(a_ents[#"hash_17e93fc8e34f1d4d"])) {
-        a_ents[#"hash_17e93fc8e34f1d4d"].var_7b0667d9 = 1;
-        a_ents[#"hash_17e93fc8e34f1d4d"].blockingpain = 1;
+    if (isactor(a_ents[#"actor 1"])) {
+        a_ents[#"actor 1"].var_7b0667d9 = 1;
+        a_ents[#"actor 1"].blockingpain = 1;
     }
 }
 
@@ -684,9 +684,9 @@ function function_c60ba36e(a_ents) {
 // Size: 0x7a
 function function_a1d4bbeb(a_ents) {
     waitframe(1);
-    if (isalive(a_ents[#"hash_17e93fc8e34f1d4d"])) {
-        a_ents[#"hash_17e93fc8e34f1d4d"].var_7b0667d9 = undefined;
-        a_ents[#"hash_17e93fc8e34f1d4d"].blockingpain = 0;
+    if (isalive(a_ents[#"actor 1"])) {
+        a_ents[#"actor 1"].var_7b0667d9 = undefined;
+        a_ents[#"actor 1"].blockingpain = 0;
     }
 }
 
@@ -696,7 +696,7 @@ function function_a1d4bbeb(a_ents) {
 // Size: 0xac
 function function_1c62cd2() {
     self endon(#"death");
-    var_9d90ef8b = scene::function_12479eba(#"hash_49e3dd966929fada");
+    var_9d90ef8b = scene::function_12479eba(#"aib_vign_cust_zm_mnsn_forest_gate_intro");
     wait(var_9d90ef8b * 0.8);
     mansion_util::function_2057ddc1(level.var_a6583e6d.origin, "werewolf", "react_first", array(0, 1), #"hash_1c4067bfba5af231");
 }
@@ -1319,8 +1319,8 @@ function function_16288b92(str_type, s_loc, mdl_key, vol_transform) {
             e_trail thread function_debf98ad();
         #/
         e_trail show_trail(nd_start, var_ff4b3a13);
-        e_trail thread scene::play(#"hash_1d324e9f967f0848", e_trail);
-        e_trail.mdl_head thread scene::play(#"hash_1d324e9f967f0848", e_trail.mdl_head);
+        e_trail thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", e_trail);
+        e_trail.mdl_head thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", e_trail.mdl_head);
         s_loc = s_portal;
         t_portal = getent("trigger_portal", "targetname");
         t_portal.origin = s_loc.origin;
@@ -1400,8 +1400,8 @@ function function_16288b92(str_type, s_loc, mdl_key, vol_transform) {
             e_trail thread function_debf98ad();
         #/
         e_trail show_trail(nd_start);
-        e_trail thread scene::play(#"hash_1d324e9f967f0848", e_trail);
-        e_trail.mdl_head thread scene::play(#"hash_1d324e9f967f0848", e_trail.mdl_head);
+        e_trail thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", e_trail);
+        e_trail.mdl_head thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", e_trail.mdl_head);
         s_loc = e_trail.s_portal;
         s_loc.origin = e_trail.s_portal.origin + vectorscale((0, 0, 1), 48);
         t_portal = getent("trigger_portal", "targetname");
@@ -1883,8 +1883,8 @@ function function_d409a74f(var_9e7c3935) {
                 self.is_idle = 1;
                 self scene::stop();
                 self.mdl_body scene::stop();
-                self thread scene::play(#"hash_1d324e9f967f0848", self.mdl_body);
-                self.mdl_body thread scene::play(#"hash_1d324e9f967f0848", self.mdl_head);
+                self thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self.mdl_body);
+                self.mdl_body thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self.mdl_head);
                 self moveto(self.origin, 0.05);
                 goto LOC_000008fe;
             }
@@ -1906,8 +1906,8 @@ function function_d409a74f(var_9e7c3935) {
                     self.is_idle = 0;
                     self scene::stop();
                     self.mdl_body scene::stop();
-                    self thread scene::play(#"hash_d278eff0ca38301", self.mdl_body);
-                    self.mdl_body thread scene::play(#"hash_d278eff0ca38301", self.mdl_head);
+                    self thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", self.mdl_body);
+                    self.mdl_body thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", self.mdl_head);
                 }
                 self moveto(v_player, 1.35);
                 n_timer = 0;
@@ -1925,8 +1925,8 @@ function function_d409a74f(var_9e7c3935) {
                 self.is_idle = 1;
                 self scene::stop();
                 self.mdl_body scene::stop();
-                self thread scene::play(#"hash_1d324e9f967f0848", self.mdl_body);
-                self.mdl_body thread scene::play(#"hash_1d324e9f967f0848", self.mdl_head);
+                self thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self.mdl_body);
+                self.mdl_body thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self.mdl_head);
             }
             self moveto(self.origin, 0.05);
             n_timer = n_timer + 0.25;
@@ -1940,8 +1940,8 @@ function function_d409a74f(var_9e7c3935) {
                 self.is_idle = 0;
                 self scene::stop();
                 self.mdl_body scene::stop();
-                self thread scene::play(#"hash_d278eff0ca38301", self.mdl_body);
-                self.mdl_body thread scene::play(#"hash_d278eff0ca38301", self.mdl_head);
+                self thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", self.mdl_body);
+                self.mdl_body thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", self.mdl_head);
             }
             self moveto(v_player, 1.35);
             n_timer = 0;
@@ -1955,8 +1955,8 @@ function function_d409a74f(var_9e7c3935) {
                 self.is_idle = 1;
                 self scene::stop();
                 self.mdl_body scene::stop();
-                self thread scene::play(#"hash_1d324e9f967f0848", self.mdl_body);
-                self.mdl_body thread scene::play(#"hash_1d324e9f967f0848", self.mdl_head);
+                self thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self.mdl_body);
+                self.mdl_body thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self.mdl_head);
                 self moveto(self.origin, 0.05);
             }
             n_timer = 0;
@@ -1968,8 +1968,8 @@ function function_d409a74f(var_9e7c3935) {
     self.mdl_body scene::stop();
     self notify(#"hash_26bafee97946f464");
     self function_679cf27a();
-    self thread scene::play(#"hash_d278eff0ca38301", self.mdl_body);
-    self.mdl_body thread scene::play(#"hash_d278eff0ca38301", self.mdl_head);
+    self thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", self.mdl_body);
+    self.mdl_body thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", self.mdl_head);
     self moveto(var_9e7c3935.origin, 2);
     self waittill(#"movedone");
     level flag::set("wisp_done");
@@ -2336,9 +2336,9 @@ function function_900b7dca(var_878f0f0a, var_5a365909 = 0, e_player, var_a797e72
     self.var_aa273e8b = 0;
     while (1) {
         if (math::cointoss()) {
-            var_8423ab7b = #"hash_d278eff0ca38301";
+            var_8423ab7b = #"aib_vign_zm_mnsn_ghost_walk_01";
         } else {
-            var_8423ab7b = #"hash_d278bff0ca37de8";
+            var_8423ab7b = #"aib_vign_zm_mnsn_ghost_walk_02";
         }
         self.var_c176969a thread scene::play(var_8423ab7b, self);
         self thread scene::play(var_8423ab7b, self.mdl_head);
@@ -2355,8 +2355,8 @@ function function_900b7dca(var_878f0f0a, var_5a365909 = 0, e_player, var_a797e72
         self.var_aa273e8b++;
         self.var_c176969a scene::stop();
         self scene::stop();
-        self.var_c176969a thread scene::play(#"hash_1d324e9f967f0848", self);
-        self thread scene::play(#"hash_1d324e9f967f0848", self.mdl_head);
+        self.var_c176969a thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self);
+        self thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self.mdl_head);
         if (!var_a797e723) {
             self.var_c176969a setspeed(0);
         }

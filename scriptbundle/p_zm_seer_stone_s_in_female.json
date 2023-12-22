@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c3ea2aa8e06f16d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "_intro"
+                }
+            ],
+            "lerptime": 0.2,
+            "model": "#hash_729dede53e33f357",
+            "type": "player",
+            "viewclamptop": 20,
+            "name": "player 1",
+            "cameratween": 0.5
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p_zm_seer_stone_s_in_female",
+    "dontsync": 1,
+    "team": "any"
+}

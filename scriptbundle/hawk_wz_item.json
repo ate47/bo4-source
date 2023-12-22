@@ -1,0 +1,19 @@
+{
+    "amount": 1,
+    "description": "#hash_693cbd6544eb9cf9",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_14981b992ef48997",
+    "weapon": <error reading:hash_430b169e311309f>,
+    "type": "itemspawnentry",
+    "name": "hawk_wz_item",
+    "displayname": "#weapon/hawk",
+    "var_36781d9f": "fly_drop_generic",
+    "stackcount": 1,
+    "icon": "#hash_471bb27d2373ed2d",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "pickupicon": "#hash_471bb27d2373ed2d",
+    "itemtype": "equipment",
+    "pickupsound": "fly_pickup_generic"
+}

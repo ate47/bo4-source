@@ -1,0 +1,21 @@
+{
+    "hinttext": "#hash_6257839640ebbf4f",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_7c9022a3": "5",
+    "var_dfed6968": "3",
+    "var_71ce0d1f": "4",
+    "type": "gamesettings",
+    "name": "draft_required_clients",
+    "displayname": "#hash_4be2f986e87cb449",
+    "var_970eaacf": "#menu/noloc",
+    "var_684ccd4c": "#menu/noloc",
+    "var_bcbdf62d": "#menu/noloc",
+    "var_9600a8ab": "#menu/none",
+    "var_71b6e020": "#menu/noloc",
+    "var_bd2ff709": "#menu/noloc",
+    "var_9de86f42": 6,
+    "setting": "draftRequiredClients"
+}

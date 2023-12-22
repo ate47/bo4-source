@@ -1,0 +1,17 @@
+{
+    "hinttext": "#hash_217f6dffe78c74ea",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_dfed6968": "3",
+    "type": "gamesettings",
+    "name": "zm_allowstartingweapon",
+    "displayname": "#hash_17979267edc2665a",
+    "var_684ccd4c": "#hash_1f0968aad9d63087",
+    "var_9600a8ab": "#hash_3555921e31de4297",
+    "var_71b6e020": "#hash_68b65fb510ccd214",
+    "var_bd2ff709": "#hash_1ac823ffd3e68662",
+    "var_9de86f42": 2,
+    "setting": "zmStartingWeaponEnabled"
+}

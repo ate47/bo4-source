@@ -1,0 +1,23 @@
+{
+    "options": [
+        {
+            "label": "#hash_6aeab676cefc7412",
+            "value": "0"
+        },
+        {
+            "label": "#hash_15d00dd142d3824f",
+            "value": "3"
+        }
+    ],
+    "description": "#hash_f70ada44764bfa7",
+    "var_60fcfffa": "#menu/on",
+    "var_9358ee0a": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "warzone_hide_cleanups",
+    "displayname": "#hash_2d80581e9c1e4bf0",
+    "var_66faec87": 10,
+    "statname": "warzoneHideCleanups",
+    "var_b7401319": "#menu/off"
+}

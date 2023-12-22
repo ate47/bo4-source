@@ -1,0 +1,49 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "suppressor_wz_item"
+        },
+        {
+            "var_6be1bec7": "acog_wz_item"
+        },
+        {
+            "var_6be1bec7": "stock_wz_item"
+        },
+        {
+            "var_6be1bec7": "pistol_grip_wz_item"
+        },
+        {
+            "var_6be1bec7": "extmag_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_7f0df06a4e4b3948",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -5,
+    "var_3e688854": -2,
+    "weapon": <error reading:hash_55842a0f98605a32>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "baseweapon": "ar_damage_t8_item",
+    "var_dc6c5d3b": 1,
+    "var_65b3a12": 6,
+    "var_340eac1f": 1,
+    "name": "ar_damage_t8_gold_item",
+    "var_9507cf45": "#hash_3f511219b22dd736",
+    "icon": "#hash_1d61013779852975",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Epic",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_63ca88fff6a10b26",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

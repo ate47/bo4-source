@@ -1,0 +1,26 @@
+{
+    "options": [
+        {
+            "label": "#hash_94eb0e3329edf5f",
+            "value": "0"
+        },
+        {
+            "label": "#menu/enabled",
+            "value": "1"
+        }
+    ],
+    "description": "#hash_646b0e357430560",
+    "var_60fcfffa": "#menu/on",
+    "var_9358ee0a": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "warzone_incognito_others",
+    "displayname": "#hash_5c790f43592d5089",
+    "var_1da8087e": 1,
+    "var_66faec87": 10,
+    "statname": "incognitoOthers",
+    "var_1f28ad4a": 1,
+    "var_6155d2c8": 1,
+    "var_b7401319": "#menu/off"
+}

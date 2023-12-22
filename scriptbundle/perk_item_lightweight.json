@@ -1,0 +1,26 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_231f89f4cd65e13c"
+        }
+    ],
+    "amount": 1,
+    "duration": 300,
+    "description": "#hash_332c2ce69a257af0",
+    "var_922067c4": "scriptbundle",
+    "model": "#p8_wz_perk_pickups_lightweight",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_1f502b29576cdf19",
+    "consumable": 1,
+    "name": "perk_item_lightweight",
+    "displayname": "#hash_1f502b29576cdf19",
+    "stackcount": 1,
+    "icon": "#hash_1fc87c6895b8b085",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_lightweight",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

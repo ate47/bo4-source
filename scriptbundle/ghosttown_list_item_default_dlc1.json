@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 500,
+            "var_a6762160": "ghosttown_list_items_dlc1",
+            "maxweight": 500,
+            "available": -1
+        },
+        {
+            "minweight": 32,
+            "maxweight": 55,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 196,
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "ghosttown_list_item_default_dlc1",
+    "var_fde72c94": 100
+}

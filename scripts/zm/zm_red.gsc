@@ -164,14 +164,14 @@ function event_handler[level_init] main(eventstruct) {
     red_boss_battle::init();
     zm_audio_sq::init();
     load::main();
-    scene::add_scene_func(#"hash_649bf4517c6d8d25", &function_509bbc5b, "sh290");
-    scene::add_scene_func(#"hash_649bf4517c6d8d25", &function_924ba3d, "sh320");
-    scene::add_scene_func(#"hash_649bf4517c6d8d25", &function_bff9977d, "sh330");
-    scene::add_scene_func(#"hash_649bf4517c6d8d25", &function_5b984671, "play");
-    scene::add_scene_func(#"hash_649bf4517c6d8d25", &function_ea8d45ef, "done");
-    scene::add_scene_func(#"hash_29e069a70818e58f", &function_b5670bb7, "play");
-    scene::add_scene_func(#"hash_29e069a70818e58f", &function_75ef7b1f, "play");
-    scene::add_scene_func(#"hash_29e069a70818e58f", &function_ea8d45ef, "done");
+    scene::add_scene_func(#"cin_zm_red_outro_temple", &function_509bbc5b, "sh290");
+    scene::add_scene_func(#"cin_zm_red_outro_temple", &function_924ba3d, "sh320");
+    scene::add_scene_func(#"cin_zm_red_outro_temple", &function_bff9977d, "sh330");
+    scene::add_scene_func(#"cin_zm_red_outro_temple", &function_5b984671, "play");
+    scene::add_scene_func(#"cin_zm_red_outro_temple", &function_ea8d45ef, "done");
+    scene::add_scene_func(#"cin_zm_red_outro_temple_part2", &function_b5670bb7, "play");
+    scene::add_scene_func(#"cin_zm_red_outro_temple_part2", &function_75ef7b1f, "play");
+    scene::add_scene_func(#"cin_zm_red_outro_temple_part2", &function_ea8d45ef, "done");
     scene::add_scene_func(#"hash_29e068a70818e3dc", &function_b648a6d9, "init");
     scene::add_scene_func(#"hash_29e068a70818e3dc", &function_883a1fb8, "play");
     scene::add_scene_func(#"hash_29e068a70818e3dc", &function_ea8d45ef, "done");
@@ -203,15 +203,15 @@ function event_handler[level_init] main(eventstruct) {
             t_kill_ai callback::on_trigger(&function_d4ff1dd6);
         }
     #/
-    if (zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 2) {
+    if (zm_custom::function_901b751c(#"zmmysteryboxstate") == 2) {
         level flag::wait_till("magicbox_initialized");
         var_2d50e3c1 = level.chests[level.chest_index];
         level.chests = array::filter(level.chests, 0, &function_7e4ce7f8);
         level.chest_index = array::find(level.chests, var_2d50e3c1);
     }
-    zm_crafting::function_d1f16587(#"hash_2c548d4a8ba1c9cc", &function_4479ec95);
+    zm_crafting::function_d1f16587(#"zblueprint_shield_zhield_zpear", &function_4479ec95);
     if (!zm_custom::function_901b751c(#"zmequipmentisenabled")) {
-        level thread zm_crafting::function_ca244624(#"hash_3f832ccf78265a33");
+        level thread zm_crafting::function_ca244624(#"zblueprint_red_strike");
     }
     level.zm_bgb_anywhere_but_here_validation_override = &function_598a6222;
     level.var_e120ae98 = &function_46159bb7;
@@ -706,12 +706,12 @@ function function_690aab3e() {
 // Size: 0xc4
 function companys_() {
     self endon(#"death");
-    self thread scene::play(#"hash_1f71a30bc78ea047", "Shot 1", self);
+    self thread scene::play(#"aib_zm_red_ampthtr_zombie_trnsfxd", "Shot 1", self);
     level waittill(#"hash_1cf28f130f16e2eb");
     self.no_eye_glow = undefined;
     self thread zombie_utility::zombie_eye_glow();
     wait(randomfloatrange(1.6, 2.9));
-    self thread scene::play(#"hash_1f71a30bc78ea047", "Shot 2", self);
+    self thread scene::play(#"aib_zm_red_ampthtr_zombie_trnsfxd", "Shot 2", self);
 }
 
 // Namespace zm_red/zm_red
@@ -724,7 +724,7 @@ function function_eba3496(var_cd13b40e = 1, var_4e4cc9a9 = 1) {
     mdl_zombie.target = self.target;
     mdl_zombie.var_e259ad71 = self.var_e259ad71;
     mdl_zombie.sp_model = getent(str_model, "targetname");
-    mdl_zombie thread scene::play(#"hash_1f71a30bc78ea047", "Shot 1", mdl_zombie);
+    mdl_zombie thread scene::play(#"aib_zm_red_ampthtr_zombie_trnsfxd", "Shot 1", mdl_zombie);
     if (var_cd13b40e) {
         mdl_zombie thread function_fb3ab798(var_4e4cc9a9);
     }
@@ -788,7 +788,7 @@ function function_a4e2970b(var_4e4cc9a9 = 1, s_damage) {
         if (isdefined(self.str_scene)) {
             self thread scene::play(self.str_scene, "breakout", self);
         } else {
-            self thread scene::play(#"hash_1f71a30bc78ea047", "Shot 2", self);
+            self thread scene::play(#"aib_zm_red_ampthtr_zombie_trnsfxd", "Shot 2", self);
         }
         if (zm_utility::is_trials() && var_4e4cc9a9) {
             self thread function_19a28e98();
@@ -806,7 +806,7 @@ function function_a4e2970b(var_4e4cc9a9 = 1, s_damage) {
         if (isdefined(self.str_scene)) {
             self scene::play(self.str_scene, "breakout", self);
         } else {
-            self scene::play(#"hash_1f71a30bc78ea047", "Shot 2", self);
+            self scene::play(#"aib_zm_red_ampthtr_zombie_trnsfxd", "Shot 2", self);
         }
         if (!var_4e4cc9a9 && isdefined(ai_zombie)) {
             ai_zombie thread zombie_utility::round_spawn_failsafe();
@@ -1106,8 +1106,8 @@ function play_outro() {
     level zm_audio::sndvoxoverride(1);
     zombie_utility::clear_all_corpses();
     util::set_lighting_state(0);
-    scene::play(#"hash_649bf4517c6d8d25");
-    scene::play(#"hash_29e069a70818e58f");
+    scene::play(#"cin_zm_red_outro_temple");
+    scene::play(#"cin_zm_red_outro_temple_part2");
     scene::play(#"hash_29e068a70818e3dc");
     scene::play(#"hash_29e067a70818e229");
     level scene::function_f81475ae(#"hash_29e067a70818e229");
@@ -1218,7 +1218,7 @@ function function_509bbc5b(a_ents) {
 // Checksum 0x101d4126, Offset: 0x5be8
 // Size: 0x118
 function function_75ef7b1f(a_ents) {
-    level scene::function_f81475ae(#"hash_649bf4517c6d8d25");
+    level scene::function_f81475ae(#"cin_zm_red_outro_temple");
     level scene::function_27f5972e(#"hash_29e067a70818e229");
     level clientfield::set("" + #"postfx_play", 2);
     foreach (e_player in util::get_active_players()) {
@@ -2224,14 +2224,14 @@ function complete_pap() {
         level flag::set(#"hash_7943879f3be8ccc6");
         level thread zm_red_power_quest::devgui_complete();
         level thread scene::play(#"hash_6c19cacedbc244f", "<unknown string>");
-        level thread scene::play(#"hash_437ea4a503c2e1c7", "<unknown string>");
-        level thread scene::play(#"hash_c877e10a252f5a8", "<unknown string>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<unknown string>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<unknown string>");
         level thread scene::play(#"hash_6c19cacedbc244f", "<unknown string>");
-        level thread scene::play(#"hash_437ea4a503c2e1c7", "<unknown string>");
-        level thread scene::play(#"hash_c877e10a252f5a8", "<unknown string>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<unknown string>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<unknown string>");
         level thread scene::play(#"hash_6c19cacedbc244f", "<unknown string>");
-        level thread scene::play(#"hash_437ea4a503c2e1c7", "<unknown string>");
-        level scene::play(#"hash_c877e10a252f5a8", "<unknown string>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<unknown string>");
+        level scene::play(#"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<unknown string>");
         var_6800d950 = getent("<unknown string>", "red_death");
         if (isdefined(var_6800d950)) {
             var_6800d950 delete();

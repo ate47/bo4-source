@@ -1,0 +1,29 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_5d1b10d82bec5269",
+            "var_7e835304": "#destroy_equipment"
+        },
+        {
+            "description": "#hash_5d1b0dd82bec4d50"
+        }
+    ],
+    "description": "#hash_dcfb1306ade68b5",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_62a37757ac4ca938",
+    "model": "#p8_wz_cu_keychain",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_458fcfd4caae9ae2",
+    "unlockableitemref": "#hash_6e3f025910376d7f",
+    "name": "cu32_item",
+    "displayname": "#hash_458fcfd4caae9ae2",
+    "icon": "#hash_289e123d6715d8f0",
+    "modelscale": 1,
+    "rarity": "None",
+    "var_a51bc1f7": "#hash_366ad11ec14087b1",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_4e06263ae2b9a394",
+    "pickupicon": "#hash_289e123d6715d8f0",
+    "itemtype": "quest"
+}

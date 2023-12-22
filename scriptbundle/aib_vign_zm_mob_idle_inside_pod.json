@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_373a145158ef2121",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_58eb21ddb61deff4",
+            "type": "prop",
+            "name": "cryo_pod"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_idle_inside_pod",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "aligntarget": "tag_align_escape_lab",
+    "team": "any"
+}

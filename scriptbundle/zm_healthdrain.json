@@ -1,0 +1,20 @@
+{
+    "hinttext": "#hash_405eb64d37d34300",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_7c9022a3": "5",
+    "var_dfed6968": "3",
+    "var_71ce0d1f": "4",
+    "type": "gamesettings",
+    "name": "zm_healthdrain",
+    "displayname": "#hash_7c9ee92d1f597a18",
+    "var_970eaacf": "#hash_4137b6b6187e7239",
+    "var_684ccd4c": "#hash_2ee9ac05a3167882",
+    "var_9600a8ab": "#hash_68b65fb510ccd214",
+    "var_71b6e020": "#hash_1ba60b6389d20648",
+    "var_bd2ff709": "#hash_54a83205d1ca87f6",
+    "var_9de86f42": 4,
+    "setting": "zmHealthDrain"
+}

@@ -617,7 +617,7 @@ function perseus_amphitheater() {
     s_scene = struct::get("tag_align_red_amphitheatre");
     var_3edd432d = getent("perseus_amphitheater", "targetname");
     var_3edd432d hide();
-    s_scene thread scene::play(#"hash_6f717ae316034ada", var_3edd432d);
+    s_scene thread scene::play(#"aib_vign_cust_zm_red_amp_perseus_intro", var_3edd432d);
     wait(0.1);
     var_3edd432d show();
     level.musicsystemoverride = 1;
@@ -1503,16 +1503,16 @@ function function_f95a14a0() {
     if (isdefined(self.e_linkto)) {
         self.e_linkto.angles = s_scene.angles;
     }
-    var_704f0f40 = #"hash_76de0304e060bae4";
+    var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_no_helm_bundle";
     switch (self.var_9fde8624) {
     case #"hash_fd7b9665529dd42":
         var_704f0f40 = #"hash_21cc4ecb5263f2fd";
         break;
     case #"skeleton_spear":
-        var_704f0f40 = #"hash_3991ae9fa82906a2";
+        var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_spear_no_helm_bundle";
         break;
     case #"hash_1520c8987a671df0":
-        var_704f0f40 = #"hash_4b06db801e96b3db";
+        var_704f0f40 = #"p8_fxanim_zm_red_spartoi_rise_spear_bundle";
         break;
     }
     s_scene.angles = (s_scene.angles[0], s_scene.angles[1] + 90, s_scene.angles[2]);

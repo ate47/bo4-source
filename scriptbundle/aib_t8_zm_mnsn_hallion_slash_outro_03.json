@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_26bf28a4d625c7d3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_3df2c3496c6a62fd",
+            "type": "fakeactor",
+            "name": "fakeactor 1",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_t8_zm_mnsn_hallion_slash_outro_03",
+    "dontsync": 1,
+    "aligntarget": "tag_align_export_boss_arena_3",
+    "team": "any"
+}

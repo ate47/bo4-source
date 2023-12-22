@@ -1,0 +1,19 @@
+{
+    "hinttext": "#hash_5a29440d8bb78582",
+    "var_922067c4": "scriptbundle",
+    "value2": "5",
+    "var_6006e991": "10",
+    "var_43883094": "0",
+    "var_7c9022a3": "45",
+    "var_8e4ec620": "60",
+    "var_dfed6968": "15",
+    "var_71ce0d1f": "30",
+    "type": "gamesettings",
+    "label": "#hash_22a7b89757514dfb",
+    "name": "objective_spawn_time",
+    "displayname": "#hash_192e572fd2ceea9e",
+    "var_ab8053b2": "#hash_666d89ef0248d1ef",
+    "var_9600a8ab": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 7,
+    "setting": "objectiveSpawnTime"
+}

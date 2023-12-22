@@ -1,0 +1,64 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4245264eb3ced748",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_787cb281253c2df6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5a5aa288e6b0059b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "wheel_left"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_49de62535d590576",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "wheel_right"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c399268d66da14",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "close"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_6e60f8a066cd4ec",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_man_atlas_control_panel_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

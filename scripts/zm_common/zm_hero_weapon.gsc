@@ -50,10 +50,10 @@ function __init__() {
     level.var_2d52e9af = [];
     level.var_d5075025 = [];
     level.var_a1feaa28 = 1;
-    if (zm_custom::function_901b751c(#"hash_2f03c6055447a6b1") == 2) {
+    if (zm_custom::function_901b751c(#"zmspecweaponchargerate") == 2) {
         level.var_a1feaa28 = 2;
     }
-    if (zm_custom::function_901b751c(#"hash_2f03c6055447a6b1") == 0) {
+    if (zm_custom::function_901b751c(#"zmspecweaponchargerate") == 0) {
         level.var_a1feaa28 = 0.5;
     }
     ability_player::register_gadget_activation_callbacks(11, &hero_weapon_on, &hero_weapon_off);

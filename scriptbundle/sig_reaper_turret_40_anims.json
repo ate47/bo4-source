@@ -1,0 +1,19 @@
+{
+    "rightdownanim": "#hash_41a3b63fa0cb7a09",
+    "leftdownanim": "#hash_784f17075f273bf0",
+    "var_922067c4": "scriptbundle",
+    "leftstraightanim": "#hash_698b72414fb2f33",
+    "leftupanim": "#hash_1f22bf50b8854be9",
+    "type": "turretanims",
+    "centerstraightanim": "#hash_23af32ce34b2a75b",
+    "vmtype": "none",
+    "centerdownanim": "#hash_3a7f34ddd1c901fe",
+    "name": "sig_reaper_turret_40_anims",
+    "centerupanim": "#hash_17e703308f9f7dcb",
+    "rightupanim": "#hash_67bb337b18965a3c",
+    "aimpitchangleu": 25,
+    "aimpitchangled": 25,
+    "rightstraightanim": "#hash_578a2a72f83d11bc",
+    "aimyawangler": 60,
+    "aimyawanglel": 60
+}

@@ -1,0 +1,33 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_39151e3b05343302",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#spawner_zm_tiger",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "actor 1",
+            "attackme": 1,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_twrs_ent_ra_top_tiger_02",
+    "dontsync": 1,
+    "aligntarget": "tag_align_ra",
+    "team": "any"
+}

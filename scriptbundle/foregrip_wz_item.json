@@ -1,0 +1,25 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "swayreduc"
+        }
+    ],
+    "description": "#hash_2110259747020da9",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_wz_pickup_foregrip",
+    "type": "itemspawnentry",
+    "hintstring": "#wz/attach_foregrip",
+    "var_e6ac0592": 90,
+    "var_65b3a12": 1,
+    "name": "foregrip_wz_item",
+    "displayname": "#wz/attach_foregrip",
+    "icon": "#ui_icon_attachment_grip",
+    "modelscale": 1.75,
+    "rarity": "Common",
+    "equipsound": "uin_wz_attach_grip",
+    "handler": "#hash_788c59214ead02af",
+    "attachslotrail": 1,
+    "pickupicon": "#ui_icon_attachment_grip",
+    "var_50773731": 1.5,
+    "itemtype": "attachment"
+}

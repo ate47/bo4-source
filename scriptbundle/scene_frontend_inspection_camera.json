@@ -1,0 +1,67 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_inspection",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "inspection_full"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_inspection",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "inspection_zoom_player"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_inspection",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "inspection_zoom_weapon1"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_inspection",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "inspection_zoom_weapon2"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_inspection",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "inspection_zoom_weapon3"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_inspection_player"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_inspection_camera",
+    "dontsync": 1,
+    "aligntarget": "tag_align_inspection_player",
+    "team": "any"
+}

@@ -1,0 +1,20 @@
+{
+    "destroyed": "#hash_6f16dd910370ec0a",
+    "ready": "#hash_6af4665b2daa94da",
+    "wavestartfinal": "#hash_349b1e08c2dcdcf2",
+    "beinghacked": "#hash_53870c3479e65487",
+    "var_922067c4": "scriptbundle",
+    "type": "mpdialog_scorestreak",
+    "killmultiple": "#hash_debea8bacc55d58",
+    "vmtype": "both",
+    "name": "blops_taacom_kls_rollingthunder",
+    "firewallbeinghacked": "#hash_d48ef29e516fbc7",
+    "kill": "#hash_29952be39db12c33",
+    "firewallhacked": "#hash_1051908beef78097",
+    "hacked": "#hash_7c5fd5d6b2bee2f7",
+    "wavestart": "#hash_1266fc7edb81768d",
+    "kill1": "#hash_638d50aab49c348f",
+    "kill3": "#hash_638d52aab49c37f5",
+    "kill2": "#hash_638d51aab49c3642",
+    "killnone": "#hash_513235babb0fd5d6"
+}

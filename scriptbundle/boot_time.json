@@ -1,0 +1,17 @@
+{
+    "hinttext": "#hash_4ce625197219ba1b",
+    "var_922067c4": "scriptbundle",
+    "value2": "5",
+    "var_6006e991": "10",
+    "var_43883094": "0",
+    "var_7c9022a3": "30",
+    "var_dfed6968": "15",
+    "var_71ce0d1f": "20",
+    "type": "gamesettings",
+    "label": "#hash_22a7b89757514dfb",
+    "name": "boot_time",
+    "displayname": "#hash_1e55de5752addb5",
+    "var_9600a8ab": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 6,
+    "setting": "bootTime"
+}

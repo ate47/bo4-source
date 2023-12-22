@@ -1,0 +1,26 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_5178148d1b8d1771"
+        }
+    ],
+    "amount": 1,
+    "duration": 240,
+    "description": "#hash_f60317744ccc297",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_f5bc7f024f6a5ac",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_62b7667af7867ca0",
+    "consumable": 1,
+    "name": "perk_item_paranoia",
+    "displayname": "#hash_62b7667af7867ca0",
+    "stackcount": 1,
+    "icon": "#hash_2891841bfac41904",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_paranoia",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

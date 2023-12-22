@@ -1,0 +1,17 @@
+{
+    "vehicleenteranim": "#hash_3b99ce6c2c4c600f",
+    "var_922067c4": "scriptbundle",
+    "leftstraightanim": "#hash_7035eebfed163fd7",
+    "type": "turretanims",
+    "var_9323d5c1": "#hash_2d51fe6c9ba5e45c",
+    "var_6d779d90": "#hash_169ee97b26cc1cf3",
+    "centerstraightanim": "#hash_2de81127771652e5",
+    "vmtype": "none",
+    "name": "player_turret_suv_driver_anims",
+    "aimpitchangleu": 90,
+    "aimpitchangled": 90,
+    "var_9b47c071": "#hash_2d51fe6c9ba5e45c",
+    "rightstraightanim": "#hash_7035f4bfed164a09",
+    "aimyawangler": 35,
+    "aimyawanglel": 35
+}

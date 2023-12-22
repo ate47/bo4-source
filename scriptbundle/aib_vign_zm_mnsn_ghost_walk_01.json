@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_17dc436b8912e261",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "blend": 1
+                }
+            ],
+            "model": "#hash_1f84640df4393f16",
+            "type": "fakeactor",
+            "name": "fakeactor 1",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mnsn_ghost_walk_01",
+    "dontsync": 1,
+    "team": "any"
+}

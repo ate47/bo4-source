@@ -1,0 +1,17 @@
+{
+    "itemlist": [
+        {
+            "minweight": 700,
+            "var_a6762160": "health_item_large",
+            "maxweight": 700,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 300,
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "var_9b009839": -1,
+    "name": "health_list_good",
+    "var_fde72c94": 100
+}

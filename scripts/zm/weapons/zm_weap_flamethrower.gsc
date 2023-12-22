@@ -724,15 +724,15 @@ function private function_72601dd2(e_player, var_ab287846, n_push_away, n_lift_h
             self setplayercollision(0);
             self zm_spawner::zombie_flame_damage("MOD_BURNED", e_player);
             if (isdefined(var_ab287846) && var_ab287846 function_58942bba(self)) {
-                var_ab287846 thread scene::play(#"hash_12dad71980d51ac8", self);
+                var_ab287846 thread scene::play(#"aib_vign_zm_mnsn_tornado_zombie", self);
                 var_ab287846 thread function_943cd1e3(e_player, self);
-                var_c74251a4 = scene::function_8582657c(#"hash_12dad71980d51ac8", "Shot 1");
+                var_c74251a4 = scene::function_8582657c(#"aib_vign_zm_mnsn_tornado_zombie", "Shot 1");
                 n_time = randomfloatrange(2, var_c74251a4);
                 e_player waittilltimeout(n_time, #"hash_20d02a4b6d08596d", #"hash_2ca901b5ada4f20f", #"hash_751e0293eed9a1cf");
                 if (!isdefined(self)) {
                     return;
                 }
-                self thread scene::stop(#"hash_12dad71980d51ac8");
+                self thread scene::stop(#"aib_vign_zm_mnsn_tornado_zombie");
             }
             if (isdefined(level.no_gib_in_wolf_area) && isdefined(self [[ level.no_gib_in_wolf_area ]]()) && self [[ level.no_gib_in_wolf_area ]]()) {
                 self dodamage(self.health + 100, v_origin, e_player, e_player, "torso_lower", "MOD_BURNED", 0, w_flamethrower);

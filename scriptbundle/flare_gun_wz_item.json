@@ -1,0 +1,19 @@
+{
+    "amount": 1,
+    "description": "#hash_6629adf8a16ec51b",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:flare_gun_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "name": "flare_gun_wz_item",
+    "displayname": "#hash_1f7c49e3b8a597e1",
+    "stackcount": 2,
+    "icon": "#hash_400082bcc8c17a2c",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "pickupicon": "#hash_400082bcc8c17a2c",
+    "stackable": 1,
+    "var_50773731": 1,
+    "itemtype": "equipment"
+}

@@ -1,0 +1,81 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7b1ee0d55260b49d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_49f5da286228e4b3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_295b9d8b76e5f83",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_7bf80274e481b449",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3108f41d7067434f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4e4ea4ab4897fd6d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_e2cd63f9f519bd5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_719115b1fe969eef",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_man_pap_terrace_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

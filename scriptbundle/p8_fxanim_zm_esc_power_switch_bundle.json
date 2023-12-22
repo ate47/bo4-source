@@ -1,0 +1,59 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63dc18290c63e0ce",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "off"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a15f904d363a830",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_3f341eed31266f59",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "on"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3366acda3892ecb4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fake_off"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f341eed31266f59",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fake_on"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_70561a7a1fe157bb",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "polishing",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_power_switch_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

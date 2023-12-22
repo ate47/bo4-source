@@ -28,7 +28,7 @@ function __init__() {
 // Size: 0x3c
 function function_2613aeec(enabled) {
     if (enabled) {
-        character_unlock::function_d2294476(#"hash_7f75d13d0c20331e", 2, 3);
+        character_unlock::function_d2294476(#"supply_drop_stash_battery", 2, 3);
     }
 }
 

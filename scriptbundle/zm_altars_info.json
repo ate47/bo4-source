@@ -1,0 +1,42 @@
+{
+    "1": [
+        {
+            "var_dd6c1082": "#hash_463d063fa6a49b1c",
+            "var_5eaad3a7": "#zombie/danu"
+        },
+        {
+            "var_dd6c1082": "#hash_60669f6dd6d8e6dd",
+            "var_5eaad3a7": "#zombie/ra"
+        },
+        {
+            "var_dd6c1082": "#hash_56721a470e845c17",
+            "var_5eaad3a7": "#zombie/zeus"
+        },
+        {
+            "var_dd6c1082": "#hash_6fc8c3b64054fa42",
+            "var_5eaad3a7": "#zombie/odin"
+        }
+    ],
+    "0": [
+        {
+            "var_dd6c1082": "#hash_1fecf0bd40f3bbd4",
+            "var_5eaad3a7": "#zombie/brew"
+        },
+        {
+            "var_dd6c1082": "#hash_2d0ed4eee5befb83",
+            "var_5eaad3a7": "#zombie/cola"
+        },
+        {
+            "var_dd6c1082": "#hash_62887b36279a359b",
+            "var_5eaad3a7": "#zombie/soda"
+        },
+        {
+            "var_dd6c1082": "#hash_7f7a4fe16cf926c5",
+            "var_5eaad3a7": "#zombie/tonic"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "name": "zm_altars_info",
+    "var_2f3a811a": 4,
+    "var_fa1596d1": 4
+}

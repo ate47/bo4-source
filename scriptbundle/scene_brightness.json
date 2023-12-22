@@ -1,0 +1,61 @@
+{
+    "options": [
+        {
+            "label": "#hash_6e59ceea84ef61f9",
+            "value": "-1.0"
+        },
+        {
+            "label": "#hash_71f95b7fe2c0e882",
+            "value": "-0.8"
+        },
+        {
+            "label": "#hash_71f5d57fe2bdcef9",
+            "value": "-0.6"
+        },
+        {
+            "label": "#hash_71f24f7fe2bab570",
+            "value": "-0.4"
+        },
+        {
+            "label": "#hash_720a597fe2cf584f",
+            "value": "-0.2"
+        },
+        {
+            "label": "#hash_7206d37fe2cc3ec6",
+            "value": "0.0"
+        },
+        {
+            "label": "#hash_72036d7fe2c95b9d",
+            "value": "0.2"
+        },
+        {
+            "label": "#hash_71ffe77fe2c64214",
+            "value": "0.4"
+        },
+        {
+            "label": "#hash_7217d17fe2daae93",
+            "value": "0.6"
+        },
+        {
+            "label": "#hash_72146b7fe2d7cb6a",
+            "value": "0.8"
+        },
+        {
+            "label": "#hash_6b9f2c4e4dcb6676",
+            "value": "1.0"
+        }
+    ],
+    "var_dfedf08e": 5,
+    "description": "#hash_2add90130a14039c",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "scene_brightness",
+    "displayname": "#hash_64ade150ffb574d4",
+    "var_66faec87": 10,
+    "statname": "r_sceneBrightness",
+    "var_1f28ad4a": 1,
+    "var_b7401319": "#menu/off"
+}

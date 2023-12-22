@@ -93,7 +93,7 @@ function function_f3edce9a() {
         trace = groundtrace(position, position + vectorscale((0, 0, -1), 20000), 0, self, 0);
         if (isdefined(trace[#"position"]) && trace[#"surfacetype"] != #"none") {
             org = trace[#"position"];
-            vehicletypes = array(#"hash_660785b539889002", #"hash_54bf3cd56e8c5c4a", #"hash_6fdb3b0114439974", #"hash_327d1f9834b6b91e");
+            vehicletypes = array(#"vehicle_t8_mil_tank_wz_black", #"vehicle_t8_mil_tank_wz_green", #"vehicle_t8_mil_tank_wz_grey", #"vehicle_t8_mil_tank_wz_tan");
             item_supply_drop::drop_supply_drop(org, 1, 1, vehicletypes[randomint(vehicletypes.size)]);
         }
     }

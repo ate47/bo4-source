@@ -1,0 +1,14 @@
+{
+    "description": "#hash_793644880a51db74",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "aim_assist",
+    "displayname": "#hash_71e881078619caea",
+    "var_66faec87": 10,
+    "statname": "input_autoAim",
+    "var_82c732a7": 1,
+    "var_b7401319": "#menu/off"
+}

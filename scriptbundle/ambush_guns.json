@@ -1,0 +1,46 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "sniper_quickscope_t8_item",
+            "var_3f8c08e3": "ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sniper_powerbolt_t8_item",
+            "var_3f8c08e3": "ammo_type_50cal_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sniper_powersemi_t8_item",
+            "var_3f8c08e3": "ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sniper_fastrechamber_t8_item",
+            "var_3f8c08e3": "ammo_type_338_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "melee_bowie_t8_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "ambush_guns",
+    "var_fde72c94": 100
+}

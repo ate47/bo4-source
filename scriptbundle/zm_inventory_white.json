@@ -1,0 +1,282 @@
+{
+    "wonderweaponphases": [
+        {
+            "components": [
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_520db7764f24e6bb"
+                        }
+                    ],
+                    "var_1d91eeba": 1,
+                    "clientfield": "#hash_6608231515ad6e93"
+                },
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_520db8764f24e86e"
+                        }
+                    ],
+                    "var_1d91eeba": 1,
+                    "clientfield": "#hash_6608241515ad7046"
+                },
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_520db9764f24ea21"
+                        }
+                    ],
+                    "var_1d91eeba": 1,
+                    "clientfield": "#hash_6608251515ad71f9"
+                }
+            ],
+            "var_b048489f": 3
+        },
+        {
+            "components": [
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_6497c30520ed9f0a"
+                        }
+                    ],
+                    "var_1d91eeba": 1,
+                    "clientfield": "#teleporter_pad_1"
+                },
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_6497c30520ed9f0a"
+                        }
+                    ],
+                    "var_1d91eeba": 1,
+                    "clientfield": "#teleporter_pad_2"
+                }
+            ],
+            "var_b048489f": 2
+        }
+    ],
+    "shieldpieces": [
+        {
+            "var_37acb3da": "#hash_57735462a52670f9",
+            "clientfield": "#hash_108182e410722b84"
+        },
+        {
+            "var_37acb3da": "#hash_57735162a5266be0",
+            "clientfield": "#hash_108185e41072309d"
+        },
+        {
+            "var_37acb3da": "#hash_57735262a5266d93",
+            "clientfield": "#hash_108184e410722eea"
+        }
+    ],
+    "quests": [
+        {
+            "phases": [
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_49fbd930fd38166f"
+                                },
+                                {
+                                    "var_2d787849": "#hash_604704efe83aca6a"
+                                }
+                            ],
+                            "var_1d91eeba": 2,
+                            "var_7db3435c": 1,
+                            "clientfield": "#zm_white_ww_mk2v_ammo"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                },
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_330e014291b6ff39"
+                                },
+                                {
+                                    "var_2d787849": "#hash_53a64436ec4d6140"
+                                }
+                            ],
+                            "var_1d91eeba": 2,
+                            "var_7db3435c": 1,
+                            "clientfield": "#zm_white_ww_mk2x_ammo"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                },
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_55e54799fed1ca2d"
+                                },
+                                {
+                                    "var_2d787849": "#hash_460ca6a260f318c4"
+                                }
+                            ],
+                            "var_1d91eeba": 2,
+                            "var_7db3435c": 1,
+                            "clientfield": "#zm_white_ww_mk2y_ammo"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                },
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_296d50be40f77ca3"
+                                },
+                                {
+                                    "var_2d787849": "#hash_4c928b221443789e"
+                                }
+                            ],
+                            "var_1d91eeba": 2,
+                            "var_7db3435c": 1,
+                            "clientfield": "#zm_white_ww_mk2z_ammo"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                }
+            ],
+            "var_7db3435c": 1,
+            "var_516217cd": 4,
+            "name": "zm_white_ww_mod",
+            "var_a0ebe517": "#zm_white_ww_mod_phase"
+        },
+        {
+            "phases": [
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_5c241e7c16d67796"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "var_7db3435c": 1,
+                            "clientfield": "#zm_white_ww_husk_part"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                }
+            ],
+            "var_7db3435c": 1,
+            "var_516217cd": 1,
+            "name": "zm_white_ww_husk"
+        },
+        {
+            "phases": [
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_5cc7e44a03efab70"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#zm_white_private_mannequin_key_part"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                }
+            ],
+            "var_516217cd": 1,
+            "name": "zm_white_private_mannequin_key"
+        }
+    ],
+    "objprogitems": [
+        {
+            "description": "#hash_5b10d2fec0a94bdb",
+            "image": "#hash_77ad201e915cc72c"
+        },
+        {
+            "description": "#hash_5b10d1fec0a94a28",
+            "image": "#hash_77ad231e915ccc45"
+        },
+        {
+            "description": "#hash_6bc92368a78b9454",
+            "image": "#hash_77ad221e915cca92"
+        },
+        {
+            "description": "#hash_6bc92668a78b996d",
+            "image": "#hash_77ad1d1e915cc213"
+        },
+        {
+            "description": "#hash_6bc92068a78b8f3b",
+            "image": "#hash_77ad1c1e915cc060"
+        },
+        {
+            "description": "#hash_6bc92568a78b97ba",
+            "image": "#hash_77ad1f1e915cc579"
+        },
+        {
+            "description": "#hash_6bc91f68a78b8d88",
+            "image": "#hash_77ad1e1e915cc3c6"
+        },
+        {
+            "description": "#hash_5b10d7fec0a9545a",
+            "image": "#hash_77ad291e915cd677"
+        },
+        {
+            "description": "#hash_5b10cafec0a93e43",
+            "image": "#hash_77ad281e915cd4c4"
+        }
+    ],
+    "packapunchitems": [
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_35c94057300e0eac"
+                }
+            ],
+            "var_1d91eeba": 1,
+            "clientfield": "#hash_133f5935959cbd21"
+        },
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_125dcc445cdead9"
+                }
+            ],
+            "var_1d91eeba": 1,
+            "clientfield": "#hash_133f5635959cb808"
+        },
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_125d9c445cde5c0"
+                }
+            ],
+            "var_1d91eeba": 1,
+            "clientfield": "#hash_133f5735959cb9bb"
+        }
+    ],
+    "var_fde97bcd": "#hash_71aaa3fae51b94e2",
+    "var_922067c4": "scriptbundle",
+    "var_aa76b7dd": 9,
+    "var_6fa1ca44": 3,
+    "type": "zminventory",
+    "var_af62a8e8": 3,
+    "var_b10f2611": "#zm_whiteteleporter_phase_num",
+    "name": "zm_inventory_white",
+    "var_f128673a": "#hash_1b86326ea73c0d46",
+    "var_a05daa90": 3,
+    "var_c029b82f": 2,
+    "var_846fa8e": "#zm_white_breakfast_trial",
+    "var_16fb993f": "#hash_1ebd66c5e00ca2ef"
+}

@@ -1,0 +1,26 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_2cb428c3123b13b1"
+        }
+    ],
+    "amount": 1,
+    "duration": 300,
+    "description": "#hash_7ebdb39cf4930b58",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_71a69678cde975f2",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_4830a0bf0b737bd1",
+    "consumable": 1,
+    "name": "perk_item_ironlungs",
+    "displayname": "#hash_4830a0bf0b737bd1",
+    "stackcount": 1,
+    "icon": "#hash_4824549ef2376a1a",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_gungho",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

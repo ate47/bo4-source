@@ -1,0 +1,43 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_blackmarket_crate",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "edit"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "prepareshow": 1,
+                    "name": "edit"
+                }
+            ],
+            "model": "#p8_wz_high_quality_case_01_blackmarket",
+            "type": "prop",
+            "vmtype": "client",
+            "name": "prop 1",
+            "aligntarget": "tag_align_quartermaster_crate"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_quartermaster_crate",
+    "dontsync": 1,
+    "aligntarget": "tag_align_quartermaster",
+    "team": "any"
+}

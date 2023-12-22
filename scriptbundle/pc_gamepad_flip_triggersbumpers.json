@@ -1,0 +1,18 @@
+{
+    "var_d260763": "#hash_7ff90f0bea8ed361",
+    "description": "#hash_ca5124e8639adf8",
+    "var_60fcfffa": "#hash_4fad90c2bfa2184c",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.1,
+    "maxvalue": 1,
+    "name": "pc_gamepad_flip_triggersbumpers",
+    "displayname": "#hash_4fe08127617fbad0",
+    "var_926d1be9": 0.01,
+    "var_66faec87": 2,
+    "statname": "flipped_control_config",
+    "var_82c732a7": 1,
+    "var_d4e288e": 1,
+    "var_b7401319": "#hash_62ed1ce9b3cdba91"
+}

@@ -1,0 +1,335 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_spectre_play",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_spectre_play5",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_spectre_play6",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_spectre_play4",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 4",
+                    "var_39fd697b": "core_frontend_spectre",
+                    "var_b94164e": "core_frontend_spectre"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_75e3339b9d9845aa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_75e3339b9d9845aa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_75e3339b9d9845aa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_75e3339b9d9845aa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4",
+                    "var_39fd697b": "core_frontend_spectre",
+                    "var_b94164e": "core_frontend_spectre"
+                }
+            ],
+            "model": "#hash_19e8b4fa37be234d",
+            "type": "fakeplayer",
+            "name": "frozen_moment_character"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_bc6cdd57578a11b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_bc6cdd57578a11b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_bc6cdd57578a11b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_bc6cdd57578a11b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4",
+                    "var_39fd697b": "core_frontend_spectre",
+                    "var_b94164e": "core_frontend_spectre"
+                }
+            ],
+            "model": "#wpn_t8_sig_blade_world",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_36888ae4e8f7c4c2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_36888ae4e8f7c4c2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_36888ae4e8f7c4c2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_36888ae4e8f7c4c2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4",
+                    "var_39fd697b": "core_frontend_spectre",
+                    "var_b94164e": "core_frontend_spectre"
+                }
+            ],
+            "model": "#hash_228d6995eaf4053",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_368889e4e8f7c30f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_368889e4e8f7c30f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_368889e4e8f7c30f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_368889e4e8f7c30f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4",
+                    "var_39fd697b": "core_frontend_spectre",
+                    "var_b94164e": "core_frontend_spectre"
+                }
+            ],
+            "model": "#hash_72c32bb7f037871e",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_185be674961567da",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_185be674961567da",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_185be674961567da",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_185be674961567da",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4",
+                    "var_39fd697b": "core_frontend_spectre",
+                    "var_b94164e": "core_frontend_spectre"
+                }
+            ],
+            "model": "#hash_346280601f9b944b",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5001e13394dd374e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5001e13394dd374e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5001e13394dd374e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5001e13394dd374e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4",
+                    "var_39fd697b": "core_frontend_spectre",
+                    "var_b94164e": "core_frontend_spectre"
+                }
+            ],
+            "model": "#hash_66848fc11e4858bb",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 5"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_spectre",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

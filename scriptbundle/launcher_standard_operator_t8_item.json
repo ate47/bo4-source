@@ -1,0 +1,31 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "fastlockon"
+        },
+        {
+            "var_6be1bec7": "damage_launcher"
+        },
+        {
+            "var_6be1bec7": "fastreload"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_1507d5dc9016ea10",
+    "var_922067c4": "scriptbundle",
+    "var_3e688854": -4,
+    "weapon": <error reading:hash_fed1d37eb0c62b>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "var_dc6c5d3b": 1,
+    "var_65b3a12": 6,
+    "name": "launcher_standard_operator_t8_item",
+    "var_9507cf45": "#hash_79dc2b64c5370198",
+    "icon": "#hash_785810078928713b",
+    "modelscale": 1,
+    "rarity": "Legendary",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_379b4321012ed9b3",
+    "var_50773731": 2,
+    "itemtype": "weapon"
+}

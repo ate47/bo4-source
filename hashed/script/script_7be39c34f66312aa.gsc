@@ -44,7 +44,7 @@ function magic_box_update() {
     self endon(#"end_game");
     util::registerclientsys("box_indicator");
     util::setclientsysstate("box_indicator", level.var_ce7f71ea);
-    if (zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") == 0) {
+    if (zm_custom::function_901b751c(#"zmmysteryboxstate") == 0) {
         return;
     }
     box_mode = "no_power";

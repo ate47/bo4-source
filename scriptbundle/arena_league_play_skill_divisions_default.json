@@ -1,0 +1,115 @@
+{
+    "skilldivisiontierlist": [
+        {
+            "bannerlist": [
+                {
+                    "var_7f879ab0": "#$blacktransparent",
+                    "var_366df414": "#$blacktransparent",
+                    "var_6d6fdad": 5
+                },
+                {
+                    "var_7f879ab0": "#$blacktransparent",
+                    "var_366df414": "#$blacktransparent",
+                    "var_6d6fdad": 10
+                },
+                {
+                    "var_7f879ab0": "#$blacktransparent",
+                    "var_366df414": "#$blacktransparent",
+                    "var_6d6fdad": 50
+                }
+            ],
+            "var_7197b13a": 0.0001,
+            "var_70ef0949": "#hash_2f88d8b975b0f42a",
+            "var_9219d804": "#$blacktransparent"
+        },
+        {
+            "bannerlist": [
+                {
+                    "var_7f879ab0": "#hash_5e4d136d68d1890b",
+                    "var_366df414": "#hash_34c5f32e0b86c52b",
+                    "var_6d6fdad": 5
+                },
+                {
+                    "var_7f879ab0": "#hash_3560d9acd79dae74",
+                    "var_366df414": "#hash_254d0f1d396d6378",
+                    "var_6d6fdad": 10
+                },
+                {
+                    "var_7f879ab0": "#hash_4a079b0a238c89fd",
+                    "var_366df414": "#hash_64327d0c88cfe359",
+                    "var_6d6fdad": 50
+                }
+            ],
+            "var_7197b13a": 0.08,
+            "var_70ef0949": "#hash_2f88d9b975b0f5dd",
+            "var_9219d804": "#hash_4d60ac74bbb6e4c0"
+        },
+        {
+            "bannerlist": [
+                {
+                    "var_7f879ab0": "#hash_5782176122055e15",
+                    "var_366df414": "#hash_14610108e4f57311",
+                    "var_6d6fdad": 5
+                },
+                {
+                    "var_7f879ab0": "#hash_238dd65fd5ac6bf2",
+                    "var_366df414": "#hash_35fa192fe8cef5f2",
+                    "var_6d6fdad": 10
+                },
+                {
+                    "var_7f879ab0": "#hash_3d404491bb1f81db",
+                    "var_366df414": "#hash_31e74a532379b57b",
+                    "var_6d6fdad": 50
+                }
+            ],
+            "var_7197b13a": 0.2,
+            "var_70ef0949": "#hash_2f88d2b975b0e9f8",
+            "var_9219d804": "#hash_1ae51df99a62031e"
+        },
+        {
+            "bannerlist": [
+                {
+                    "var_7f879ab0": "#hash_1b5d946462e80244",
+                    "var_366df414": "#hash_707af8eddbfb8ac8",
+                    "var_6d6fdad": 5
+                },
+                {
+                    "var_7f879ab0": "#hash_4bc9c354ab96585f",
+                    "var_366df414": "#hash_2b16a4d500b0db0f",
+                    "var_6d6fdad": 10
+                },
+                {
+                    "var_7f879ab0": "#hash_5abcb1114629b376",
+                    "var_366df414": "#hash_6325a3ea292bac86",
+                    "var_6d6fdad": 50
+                }
+            ],
+            "var_7197b13a": 0.4,
+            "var_70ef0949": "#hash_2f88d3b975b0ebab",
+            "var_9219d804": "#hash_777644a3d1920171"
+        },
+        {
+            "bannerlist": [
+                {
+                    "var_7f879ab0": "#hash_2b9bbe30614b8fb3",
+                    "var_366df414": "#hash_453df35e8492ba53",
+                    "var_6d6fdad": 5
+                },
+                {
+                    "var_7f879ab0": "#hash_7c92abc0d577f75c",
+                    "var_366df414": "#hash_4153c012dd892820",
+                    "var_6d6fdad": 10
+                },
+                {
+                    "var_7f879ab0": "#hash_5ea3703f73b985f5",
+                    "var_366df414": "#hash_6b7b1c728559c031",
+                    "var_6d6fdad": 50
+                }
+            ],
+            "var_7197b13a": 1,
+            "var_70ef0949": "#hash_2f88d4b975b0ed5e",
+            "var_9219d804": "#hash_79853e7cb53e6fe8"
+        }
+    ],
+    "name": "arena_league_play_skill_divisions_default"
+}

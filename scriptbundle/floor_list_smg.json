@@ -1,0 +1,31 @@
+{
+    "itemlist": [
+        {
+            "minweight": 75,
+            "var_a6762160": "smg_standard_t8_item",
+            "var_3f8c08e3": "ammo_type_9mm_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "smg_handling_t8_item",
+            "var_3f8c08e3": "ammo_type_9mm_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 75,
+            "var_a6762160": "smg_capacity_t8_item",
+            "var_3f8c08e3": "ammo_type_9mm_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "floor_list_smg",
+    "var_fde72c94": 100
+}

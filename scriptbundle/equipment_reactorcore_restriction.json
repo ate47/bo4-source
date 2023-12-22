@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#hash_5b0087dcc755cd8",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "equipment_reactorcore_restriction",
+    "displayname": "#hash_26bcf8e03bdf2b74",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__gadget_radiation_field__restricted"
+}

@@ -1,0 +1,28 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "warmachine_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "flamethrower_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sparrow_wz_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "supply_stash_specialist_weapons",
+    "var_fde72c94": 100
+}

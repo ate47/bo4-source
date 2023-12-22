@@ -1,0 +1,24 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_132de7314ef0759f"
+        }
+    ],
+    "description": "#hash_555f55a06d00b723",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 1,
+    "var_e8b98a8a": "#hash_6c89cfd6fd4c3214",
+    "model": "#hash_2d8ab16b3da28762",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_2288ab2499b99929",
+    "unlockableitemref": "#hash_35d58277e75de5a8",
+    "name": "hw_event_item_jk",
+    "displayname": "#hash_2288ab2499b99929",
+    "icon": "#hash_176f2d91fa36db31",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_2288ab2499b99929",
+    "pickupicon": "#hash_176f2d91fa36db31",
+    "itemtype": "quest"
+}

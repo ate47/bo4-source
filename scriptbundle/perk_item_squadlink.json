@@ -1,0 +1,26 @@
+{
+    "talents": [
+        {
+            "talent": "#hash_38e04ebaab53b502"
+        }
+    ],
+    "amount": 1,
+    "duration": 240,
+    "description": "#hash_adb87287fdf895b",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_fd5ea2cd58b608f",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_6655ed86a78c6d8c",
+    "consumable": 1,
+    "name": "perk_item_squadlink",
+    "displayname": "#hash_6655ed86a78c6d8c",
+    "stackcount": 1,
+    "icon": "#hash_7e7dc31ca4df9c7",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_teamlink",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

@@ -114,7 +114,7 @@ function function_b9d56970() {
 // Size: 0x2e
 function function_8e13b81e() {
     self.var_2cee3556 = [];
-    self.var_2cee3556[#"hash_f8ddece10b41d0e"] = 1;
+    self.var_2cee3556[#"hellhound_base_itemlist_all"] = 1;
 }
 
 // Namespace wz_ai_zombie_dog/wz_ai_zombie_dog

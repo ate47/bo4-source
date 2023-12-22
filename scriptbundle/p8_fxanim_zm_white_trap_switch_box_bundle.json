@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2115cfb06584e6a3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_615b029edefb0759",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                }
+            ],
+            "model": "#hash_19b03b0e89fa1628",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_white_trap_switch_box_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a8519f30708656d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "var_be60a82b": 8
+                }
+            ],
+            "model": "#hash_4a90c38235084ac8",
+            "type": "actor",
+            "name": "actor 1",
+            "aligntarget": "tag_align_boss_doors"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_twrs_ent_hllpht_00",
+    "dontsync": 1,
+    "aligntarget": "tag_align_boss_doors",
+    "team": "any"
+}

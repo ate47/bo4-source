@@ -1,0 +1,18 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "cu35_item",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 8000,
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "cu35_list_escape",
+    "var_fde72c94": 100
+}

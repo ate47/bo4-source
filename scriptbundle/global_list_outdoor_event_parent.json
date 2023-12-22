@@ -1,0 +1,16 @@
+{
+    "itemlist": [
+        {
+            "minweight": 180,
+            "var_a6762160": "global_list_outdoor_event_water_balloon",
+            "maxweight": 200,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "var_9b009839": -1,
+    "name": "global_list_outdoor_event_parent",
+    "var_fde72c94": 100
+}

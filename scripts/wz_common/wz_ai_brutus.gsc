@@ -152,7 +152,7 @@ function function_6a482c74(params) {
 // Size: 0x2e
 function function_bad305c7() {
     self.var_2cee3556 = [];
-    self.var_2cee3556[#"hash_4699e07e76afa302"] = 15;
+    self.var_2cee3556[#"brutus_base_itemlist_all"] = 15;
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus

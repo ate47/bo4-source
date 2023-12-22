@@ -1,0 +1,19 @@
+{
+    "hinttext": "#hash_5bd8c7de74bf69b5",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "3",
+    "var_43883094": "0",
+    "var_7c9022a3": "15",
+    "var_8e4ec620": "30",
+    "var_dfed6968": "5",
+    "var_71ce0d1f": "10",
+    "type": "gamesettings",
+    "label": "#menu/x_flags",
+    "name": "score_limit_ctf",
+    "displayname": "#hash_4201be29369b61fb",
+    "var_9600a8ab": "#hash_52b38f6fb98e8982",
+    "var_bd2ff709": "#menu/1_flag",
+    "var_9de86f42": 7,
+    "setting": "scoreLimit"
+}

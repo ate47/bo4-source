@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 500,
+            "var_a6762160": "firing_range_list_items_event",
+            "maxweight": 500,
+            "available": -1
+        },
+        {
+            "minweight": 26,
+            "maxweight": 55,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 128,
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "firing_range_list_item_default_event",
+    "var_fde72c94": 100
+}

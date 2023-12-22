@@ -1,0 +1,31 @@
+{
+    "options": [
+        {
+            "label": "#hash_6aeab676cefc7412",
+            "value": "0"
+        },
+        {
+            "label": "#hash_60e173d706274591",
+            "value": "1"
+        },
+        {
+            "label": "#hash_7592ba8f857b19d5",
+            "value": "2"
+        },
+        {
+            "label": "#hash_15d00dd142d3824f",
+            "value": "3"
+        }
+    ],
+    "description": "#hash_539f7eaa0fbaab32",
+    "var_60fcfffa": "#menu/on",
+    "var_9358ee0a": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "warzone_hide_players_alive",
+    "displayname": "#hash_f50656ab6b3982f",
+    "var_66faec87": 10,
+    "statname": "warzoneHidePlayersAlive",
+    "var_b7401319": "#menu/off"
+}

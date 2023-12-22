@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7aa2b384ddff08a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "specialist"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_zm_male_team_1",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,77 @@
+{
+    "stationarystancehandlerlist": [
+        {
+            "stance": "#stand",
+            "name": "#default"
+        }
+    ],
+    "movingstancehandlerlist": [
+        {
+            "stance": "#stand",
+            "name": "#default"
+        }
+    ],
+    "positionhandlerlist": [
+        {
+            "name": "#hash_26e050bc0c121f1b"
+        }
+    ],
+    "actionlist": [
+        {
+            "name": "#zombie_auto_revive"
+        },
+        {
+            "name": "#look_for_enemy"
+        },
+        {
+            "name": "#zombie_scan_for_threats"
+        }
+    ],
+    "var_6ef48dfa": 0.25,
+    "var_a78526b8": "j_spineupper",
+    "var_48aa05a1": 400,
+    "var_1f5429aa": 200,
+    "fovbusy": 180,
+    "var_4f836fd6": 3500,
+    "var_f181b86b": "bot_tacquery_space_seeds",
+    "var_bda90bb9": 200,
+    "yawsensitivity": 2,
+    "var_922067c4": "scriptbundle",
+    "inaccuracy": 80,
+    "var_19019506": 0.8,
+    "pacifistwait": 1,
+    "var_4333f343": 0.1,
+    "type": "bottacticalstate",
+    "var_1f8a6a2": 0.5,
+    "var_2fc77943": 1,
+    "pitchacceleration": 20,
+    "var_b9f05fc": 0.5,
+    "var_c850085f": 1,
+    "var_abf895b5": 1,
+    "var_d5bf8f0d": 0.9,
+    "var_25664dde": 1000,
+    "pitchsensitivity": 2,
+    "yawacceleration": 25,
+    "var_b4c8298c": 0.9,
+    "vmtype": "server",
+    "var_ac1c818f": 0.7,
+    "sprintdist": 300,
+    "var_b6b1339c": "j_head",
+    "name": "bot_tacstate_zm_laststand",
+    "var_82aa37d8": 2000,
+    "var_ecf6111e": 0.5,
+    "var_fc299ded": 0.1,
+    "highlyawareradius": 256,
+    "perfectaim": 1,
+    "maxsightdist": 8192,
+    "fov": 180,
+    "var_f80f8551": 0.8,
+    "maxrange": 8192,
+    "var_2b02e26a": 20,
+    "var_b392418": 0.1,
+    "var_f58a14bd": 0.8,
+    "var_69610dbe": 25,
+    "var_5eaa9e02": 1,
+    "var_bc0b2a06": 2,
+    "Accuracy": 1
+}

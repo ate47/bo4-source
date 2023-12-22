@@ -1,0 +1,26 @@
+{
+    "finishers": [
+        {
+            "finisherbundle": "finisher_default"
+        },
+        {
+            "finisherbundle": "finisher_stomp"
+        },
+        {
+            "finisherbundle": "finisher_elbow"
+        },
+        {
+            "finisherbundle": "finisher_knee_to_face"
+        },
+        {
+            "finisherbundle": "finisher_groin_kick"
+        },
+        {
+            "finisherbundle": "finisher_spectre"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "finisherlist",
+    "name": "finishers",
+    "var_88198b12": 6
+}

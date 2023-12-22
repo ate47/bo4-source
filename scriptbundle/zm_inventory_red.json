@@ -1,0 +1,278 @@
+{
+    "wonderweaponphases": [
+        {
+            "components": [
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_1f6009e1b61f8658"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_37ebb980b386ee09"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_49179f414f2e7847"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_4917a0414f2e79fa"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_4917a1414f2e7bad"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_aef1c2b3c74dc0c"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_5f4b4f97846b7f25"
+                        }
+                    ],
+                    "var_1d91eeba": 7,
+                    "var_7db3435c": 1,
+                    "clientfield": "#hash_17f88a64d698025"
+                }
+            ],
+            "var_b048489f": 1
+        },
+        {
+            "components": [
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_1f6009e1b61f8658"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_51e70d5edd1d114"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_17fb65d1ba59d6c8"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_17fb68d1ba59dbe1"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_17fb67d1ba59da2e"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_64bc36f173e3f15d"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_59c2ed300fddf610"
+                        }
+                    ],
+                    "var_1d91eeba": 7,
+                    "var_7db3435c": 1,
+                    "clientfield": "#hash_4bd139d5a6e3ca6f"
+                }
+            ],
+            "var_b048489f": 1
+        },
+        {
+            "components": [
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_1f6009e1b61f8658"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_fd3fbbd751c6d63"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_3348f9af7de16449"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_3348f6af7de15f30"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_3348f7af7de160e3"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_370dde2b6085ef0a"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_407e14bb68ac4c37"
+                        }
+                    ],
+                    "var_1d91eeba": 7,
+                    "var_7db3435c": 1,
+                    "clientfield": "#hash_6afbd5b12dbdae9d"
+                }
+            ],
+            "var_b048489f": 1
+        },
+        {
+            "components": [
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_1f6009e1b61f8658"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_4ae28eba6abe7e40"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_44bab7e2d20a849c"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_44babae2d20a89b5"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_44bab9e2d20a8802"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_6a81330369ce9c69"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_5cc2455478e41944"
+                        }
+                    ],
+                    "var_1d91eeba": 7,
+                    "var_7db3435c": 1,
+                    "clientfield": "#hash_3814a46a4c2f1235"
+                }
+            ],
+            "var_b048489f": 1
+        }
+    ],
+    "shieldpieces": [
+        {
+            "var_37acb3da": "#hash_392454387b878862",
+            "clientfield": "#hash_5ec82cf18a254c3c"
+        },
+        {
+            "var_37acb3da": "#hash_44eaf9e4a513dfa0",
+            "clientfield": "#hash_5ec82ff18a255155"
+        },
+        {
+            "var_37acb3da": "#hash_5fd5b70777b6eecb",
+            "clientfield": "#hash_5ec82ef18a254fa2"
+        }
+    ],
+    "quests": [
+        {
+            "phases": [
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_55a6cd7acee99708"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_3b7a4acbf51a22e8"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                }
+            ],
+            "var_516217cd": 1,
+            "name": "zm_red_pegasus_bridle"
+        },
+        {
+            "phases": [
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_2988969d6dd647c7"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_770d4d2226eb79"
+                        },
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_2a6dacc1020dc171"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_770a4d2226e660"
+                        },
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_2c03ecce64b3185d"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_770b4d2226e813"
+                        }
+                    ],
+                    "var_ffd1cb07": 3
+                }
+            ],
+            "var_516217cd": 1,
+            "name": "zm_red_pegasus_parts"
+        }
+    ],
+    "objprogitems": [
+        {
+            "description": "#hash_7122a0a7b75addd9"
+        },
+        {
+            "description": "#hash_71229fa7b75adc26"
+        },
+        {
+            "description": "#hash_7122a2a7b75ae13f"
+        },
+        {
+            "description": "#hash_7122a1a7b75adf8c"
+        },
+        {
+            "description": "#hash_7122a4a7b75ae4a5"
+        },
+        {
+            "description": "#hash_7122a3a7b75ae2f2"
+        },
+        {
+            "description": "#hash_7122a5a7b75ae658"
+        },
+        {
+            "description": "#hash_7122a5a7b75ae658"
+        }
+    ],
+    "var_fde97bcd": "#hash_48e8c8a1322af446",
+    "var_922067c4": "scriptbundle",
+    "var_aa76b7dd": 8,
+    "var_3e38620e": 1,
+    "var_6fa1ca44": 2,
+    "type": "zminventory",
+    "var_af62a8e8": 3,
+    "var_b10f2611": "#hash_28d79c40f29ecc43",
+    "name": "zm_inventory_red",
+    "var_f128673a": "#hash_2028b2c0395c86bf",
+    "var_88c17f11": "#sentinel_artifact",
+    "var_c029b82f": 4,
+    "var_846fa8e": "#zm_red_objective_progress",
+    "var_16fb993f": "#hash_30727aefda60cbd4"
+}

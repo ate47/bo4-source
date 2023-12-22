@@ -1,0 +1,16 @@
+{
+    "var_4dbc4aee": "#hash_b9ef623f63eb472",
+    "var_922067c4": "scriptbundle",
+    "result": <error reading:pistol_topbreak_t8_zm>,
+    "type": "craftblueprint",
+    "var_99577dd3": <error reading:hash_357e452940a24480>,
+    "var_670f9944": <error reading:hash_cbca54286491987>,
+    "var_2e0a273a": <error reading:hash_392389373e7f5e32>,
+    "name": "zblueprint_trap_hellpools",
+    "displayname": "Hellpools",
+    "var_391591d0": "#hash_b9ef623f63eb472",
+    "var_46309255": "one_time_craft",
+    "var_abd9b2d0": "#hash_b9ef623f63eb472",
+    "var_f4a82731": 3,
+    "var_318c150c": "section_wonder_weapon"
+}

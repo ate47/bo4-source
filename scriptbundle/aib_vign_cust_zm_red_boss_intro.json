@@ -1,0 +1,639 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s01_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s02_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s03_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s04_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s05_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s06_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s07_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4b019eb0e2ef841d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5625856fff6655e8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3999e516a3c4a6ee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_64f29f38f3882f69",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1d52b8ea4eee3834",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#c_t8_zmb_dlc2_pegasus_fb",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "pegasus_clean"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_24036b1a3446e4ee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3999e416a3c4a53b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_64f29c38f3882a50",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1d52bbea4eee3d4d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d7e7867e47700fa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_2fbc31b782c52b97",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "boss_1"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_60b2e6aa011026a8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6fa30c9ae1a7fda7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b02b270b33562fe",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2f8476418bf8c25d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_124435e7e9e7bfc4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_1cd365685eb76aec",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "p_shield"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_627f1faa4a8b3313",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_e93179aaa2caa80",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_f6907709a6ebda1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_43cf2d41e042ae1e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_397a46e76f0c54ef",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_39b17285015a6944",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "p_sword"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_791cc64020062736",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1099844d4c26de5f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4eb3fec881a53094",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2be0119ac3e73cd5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_4f6f834f0c79c650",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "scar"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45a26ac1ba162334",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_36e6001622e8eea9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c943225e804193e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_50a6033464341443",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_73692afe6c732546",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "bruno"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_ad4c3ae272a653d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1b138ab3de2fc700",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7279908ba3fe7b0f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f989b0690c55242",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_2a968d8a80fb5331",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "stanton"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_134756b7dea64988",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_35906b8d3cf1e3b1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5e13de0f7fcc982a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78c87850cadfc643",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_23c71e93a1c1579e",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "diego"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot_01",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_02",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_03",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_04",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_05",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "name": "shot_06",
+                    "aligntarget": "tag_align_red_boss"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d7e7767e476ff47",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot_07",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_61790877a7f8e580",
+            "type": "prop",
+            "name": "pegasus"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_boss_intro",
+    "dontsync": 1,
+    "var_a6da2039": "aib_vign_cust_zm_red_boss_intro",
+    "aligntarget": "tag_align_red_boss",
+    "ignorestreamer": 1,
+    "team": "any",
+    "var_3e692842": -4
+}

@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4ff5afe0e5ac8744",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "rise"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4f3b092744faa486",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "explode"
+                }
+            ],
+            "model": "#p8_fxanim_zm_red_gaia_spikes_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_gaia_spikes_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

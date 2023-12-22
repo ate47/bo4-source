@@ -1,0 +1,14 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_4d16f8d393ef1b42>,
+    "type": "itemspawnentry",
+    "name": "molotov_wz_item",
+    "stackcount": 1,
+    "icon": "#hash_b8d33f7bc854044",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "var_50773731": 3,
+    "itemtype": "equipment"
+}

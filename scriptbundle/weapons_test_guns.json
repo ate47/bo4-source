@@ -1,0 +1,188 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "tr_flechette_t8_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "lmg_stealth_t8_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ar_peacekeeper_t8_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "hawk_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "health_item_squad",
+            "var_3f8c08e3": "health_item_squad",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ww_winters_fury_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ww_crossbow_impaler_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ray_gun_mk2x_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ray_gun_mk2y_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ray_gun_mk2z_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "melee_spork_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "special_crossbow_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "allistairs_folly_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "death_of_orion_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "melee_stopsign_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "tomahawk_t8_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "homunculus_wz_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "melee_zombiearm_t8_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "shotgun_precision_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "tr_damageburst_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sniper_damagesemi_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "perk_item_bloody_tracker",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ar_an94_t8_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ar_doublebarrel_t8_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "smg_minigun_t8_item",
+            "var_3f8c08e3": "ammo_type_9mm_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "smg_vmp_t8_item",
+            "var_3f8c08e3": "ammo_type_9mm_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "melee_actionfigure_t8_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "melee_amuletfist_t8_item",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "var_345eba59": 28,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "weapons_test_guns",
+    "var_fde72c94": 100
+}

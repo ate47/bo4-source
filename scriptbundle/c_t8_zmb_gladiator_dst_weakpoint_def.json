@@ -1,0 +1,64 @@
+{
+    "weakpoints": [
+        {
+            "hitloc": "helmet",
+            "var_641ce20e": 1,
+            "type": "#armor",
+            "var_51e8b151": "j_head",
+            "activebydefault": 1,
+            "var_b7fbe51b": 15,
+            "health": 0.33
+        },
+        {
+            "hitloc": "head",
+            "var_8223b0cf": 3,
+            "type": "#weakpoint",
+            "var_51e8b151": "j_head",
+            "var_b7fbe51b": 15,
+            "health": 1
+        },
+        {
+            "hitloc": "left_arm_upper",
+            "var_641ce20e": 1,
+            "type": "#armor",
+            "var_910e2f9b": "j_clavicle_le",
+            "var_51e8b151": "tag_pauldron_le",
+            "activebydefault": 1,
+            "var_b7fbe51b": 15,
+            "health": 0.2
+        },
+        {
+            "hitloc": "right_arm_upper",
+            "var_641ce20e": 1,
+            "type": "#armor",
+            "var_910e2f9b": "j_clavicle_ri",
+            "var_51e8b151": "tag_pauldron_ri",
+            "activebydefault": 1,
+            "var_b7fbe51b": 15,
+            "health": 0.2
+        },
+        {
+            "hitloc": "left_arm_lower",
+            "var_8223b0cf": 2,
+            "type": "#weakpoint",
+            "var_910e2f9b": "j_clavicle_le",
+            "var_51e8b151": "j_shoulder_le",
+            "var_b7fbe51b": 15,
+            "health": 0.1
+        },
+        {
+            "hitloc": "right_arm_lower",
+            "var_8223b0cf": 2,
+            "type": "#weakpoint",
+            "var_910e2f9b": "j_clavicle_ri",
+            "var_51e8b151": "j_shoulder_ri",
+            "var_b7fbe51b": 15,
+            "health": 0.1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "model": "#c_t8_zmb_dlc0_zombie_gladiator_body1",
+    "type": "characterweakpointsettings",
+    "name": "c_t8_zmb_gladiator_dst_weakpoint_def",
+    "var_96a09826": 6
+}

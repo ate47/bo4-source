@@ -1,0 +1,63 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_d3a4877062c98f6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 0.5,
+                    "spacermax": 2,
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3df6ef85a8578f3e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "var_132c9791": 1,
+                    "var_b3dddfd3": 1,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#p8_fxanim_gp_raven_01_mod",
+            "type": "prop",
+            "name": "prop 1",
+            "aligntargettag": "raven_attach_01_jnt",
+            "allowdeath": 1,
+            "aligntarget": "raven_attach",
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_74a549ca9ab4c47f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_3a6edb37ae6a9c30",
+            "type": "prop",
+            "name": "raven_attach"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_raven_eating_die_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

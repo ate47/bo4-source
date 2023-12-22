@@ -95,13 +95,13 @@ function function_847080fa(localclientnum) {
     playsound(localclientnum, #"hash_1b7646cdadf52c4d", self.origin + vectorscale((0, 0, 1), 35));
     switch (self.archetype) {
     case #"zombie":
-        var_99d5ab4f = #"hash_468160681f4a3b5d";
+        var_99d5ab4f = #"aib_t8_zm_zombie_base_dth_shrink_ww_wkud";
         break;
     case #"nosferatu":
-        var_99d5ab4f = #"hash_301e2a321dba18b0";
+        var_99d5ab4f = #"aib_t8_zm_nfrtu_dth_shrink_ww_wkud";
         break;
     case #"bat":
-        var_99d5ab4f = #"hash_38d93968ebc6c95a";
+        var_99d5ab4f = #"aib_t8_zm_bat_dth_shrink_ww_wkud";
         break;
     }
     if (isdefined(var_99d5ab4f)) {

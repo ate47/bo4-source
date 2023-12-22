@@ -1,0 +1,10 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnentry",
+    "name": "zodiac_wz_vehicle_grey",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#generic_pickup",
+    "vehicle": "vehicle_boct_mil_boat_tactical_raft_wz_gry",
+    "itemtype": "vehicle"
+}

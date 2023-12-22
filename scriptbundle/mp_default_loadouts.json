@@ -1,0 +1,405 @@
+{
+    "defaultloadouts": [
+        {
+            "talents": [
+                {
+                    "talent": "#talent_gungho"
+                },
+                {
+                    "talent": "#talent_lightweight"
+                },
+                {
+                    "talent": "#talent_dexterity"
+                }
+            ],
+            "primaryattachments": [
+                {
+                    "attachment": "none"
+                },
+                {
+                    "attachment": "steadyaim"
+                },
+                {
+                    "attachment": "rf"
+                },
+                {
+                    "attachment": "extbarrel"
+                }
+            ],
+            "bonuscards": [
+                {
+                    "bonuscard": "#bonuscard_perk_2_gluttony"
+                },
+                {
+                    "bonuscard": "#bonuscard_primary_gunfighter"
+                }
+            ],
+            "customclassname": "#hash_73bf78bd8d8db95d",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#smg_capacity_t8",
+            "var_aadf0bc9": 2,
+            "var_38f854e5": 6,
+            "tacticalgear": "#gear_medicalinjectiongun"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#talent_flakjacket"
+                },
+                {
+                    "talent": "#talent_gungho"
+                },
+                {
+                    "talent": "#weapon_null"
+                },
+                {
+                    "talent": "#talent_scavenger"
+                }
+            ],
+            "primaryattachments": [
+                {
+                    "attachment": "reflex"
+                },
+                {
+                    "attachment": "mixclip"
+                },
+                {
+                    "attachment": "grip"
+                }
+            ],
+            "bonuscards": [
+                {
+                    "bonuscard": "#bonuscard_perk_1_greed"
+                }
+            ],
+            "customclassname": "#hash_6338674bdead3158",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#ar_modular_t8",
+            "var_aadf0bc9": 2,
+            "secondary": "#pistol_standard_t8",
+            "var_38f854e5": 6,
+            "tacticalgear": "#gear_equipmentcharge"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#talent_engineer"
+                },
+                {
+                    "talent": "#talent_coldblooded"
+                },
+                {
+                    "talent": "#talent_ghost"
+                }
+            ],
+            "secondaryattachments": [
+                {
+                    "attachment": "none"
+                },
+                {
+                    "attachment": "supply"
+                }
+            ],
+            "primaryattachments": [
+                {
+                    "attachment": "ir"
+                },
+                {
+                    "attachment": "fmj"
+                },
+                {
+                    "attachment": "fmj2"
+                }
+            ],
+            "customclassname": "#hash_76fba834032b8fb7",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#lmg_standard_t8",
+            "var_aadf0bc9": 1,
+            "secondary": "#launcher_standard_t8",
+            "var_38f854e5": 6,
+            "tacticalgear": "#gear_armor"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#talent_resistance"
+                },
+                {
+                    "talent": "#talent_skulker"
+                }
+            ],
+            "primaryattachments": [
+                {
+                    "attachment": "none"
+                },
+                {
+                    "attachment": "suppressed"
+                },
+                {
+                    "attachment": "quickdraw"
+                },
+                {
+                    "attachment": "none"
+                },
+                {
+                    "attachment": "uber"
+                }
+            ],
+            "bonuscards": [
+                {
+                    "bonuscard": "#bonuscard_primary_operator_mod"
+                }
+            ],
+            "customclassname": "#hash_13262c0a18d54ad0",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#tr_longburst_t8",
+            "var_aadf0bc9": 1,
+            "secondary": "#shotgun_semiauto_t8",
+            "var_38f854e5": 6,
+            "tacticalgear": "#gear_scorestreakcharge"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#talent_resistance"
+                },
+                {
+                    "talent": "#talent_dexterity"
+                },
+                {
+                    "talent": "#talent_teamlink"
+                }
+            ],
+            "secondaryattachments": [
+                {
+                    "attachment": "none"
+                },
+                {
+                    "attachment": "extclip"
+                }
+            ],
+            "primaryattachments": [
+                {
+                    "attachment": "none"
+                },
+                {
+                    "attachment": "damage"
+                },
+                {
+                    "attachment": "quickdraw"
+                }
+            ],
+            "bonuscards": [
+                {
+                    "bonuscard": "#bonuscard_overkill"
+                }
+            ],
+            "customclassname": "#hash_554a0a19e3773c1a",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#sniper_quickscope_t8",
+            "var_aadf0bc9": 1,
+            "secondary": "#smg_fastfire_t8",
+            "var_38f854e5": 5,
+            "tacticalgear": "#gear_awareness"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#weapon_null"
+                },
+                {
+                    "talent": "#weapon_null"
+                },
+                {
+                    "talent": "#talent_tracker"
+                }
+            ],
+            "secondaryattachments": [
+                {
+                    "attachment": "none"
+                },
+                {
+                    "attachment": "extbarrel"
+                },
+                {
+                    "attachment": "barrelchoke"
+                }
+            ],
+            "primaryattachments": [
+                {
+                    "attachment": "none"
+                },
+                {
+                    "attachment": "damage"
+                },
+                {
+                    "attachment": "extbarrel"
+                }
+            ],
+            "bonuscards": [
+                {
+                    "bonuscard": "#bonuscard_underkill"
+                }
+            ],
+            "customclassname": "#hash_639f992affc7299e",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 3,
+            "primary": "#pistol_revolver_t8",
+            "var_aadf0bc9": 1,
+            "secondary": "#shotgun_pump_t8",
+            "var_38f854e5": 3,
+            "tacticalgear": "#gear_medicalinjectiongun",
+            "primarygrenade": "#hatchet"
+        }
+    ],
+    "defaultcustomloadouts": [
+        {
+            "talents": [
+                {
+                    "talent": "#talent_scavenger"
+                },
+                {
+                    "talent": "#talent_lightweight"
+                },
+                {
+                    "talent": "#talent_ghost"
+                }
+            ],
+            "customclassname": "#class/slot1",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#smg_standard_t8",
+            "secondary": "#pistol_standard_t8",
+            "var_38f854e5": 6,
+            "tacticalgear": "#gear_medicalinjectiongun"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#talent_engineer"
+                },
+                {
+                    "talent": "#talent_skulker"
+                },
+                {
+                    "talent": "#talent_teamlink"
+                }
+            ],
+            "customclassname": "#class/slot2",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#ar_accurate_t8",
+            "secondary": "#pistol_standard_t8",
+            "var_38f854e5": 6,
+            "tacticalgear": "#gear_equipmentcharge"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#talent_engineer"
+                },
+                {
+                    "talent": "#talent_lightweight"
+                },
+                {
+                    "talent": "#talent_teamlink"
+                }
+            ],
+            "customclassname": "#class/slot3",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#lmg_standard_t8",
+            "secondary": "#launcher_standard_t8",
+            "var_38f854e5": 6,
+            "tacticalgear": "#gear_scorestreakcharge"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#talent_scavenger"
+                },
+                {
+                    "talent": "#talent_lightweight"
+                },
+                {
+                    "talent": "#talent_ghost"
+                }
+            ],
+            "customclassname": "#class/slot4",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#tr_powersemi_t8",
+            "secondary": "#launcher_standard_t8",
+            "var_38f854e5": 6,
+            "tacticalgear": "#gear_armor"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#talent_engineer"
+                },
+                {
+                    "talent": "#talent_skulker"
+                },
+                {
+                    "talent": "#talent_ghost"
+                }
+            ],
+            "customclassname": "#class/slot5",
+            "var_d0c837c7": 3,
+            "var_d73c4f3b": 5,
+            "primary": "#sniper_powerbolt_t8",
+            "secondary": "#pistol_standard_t8",
+            "var_38f854e5": 5,
+            "tacticalgear": "#gear_awareness"
+        },
+        {
+            "talents": [
+                {
+                    "talent": "#talent_scavenger"
+                },
+                {
+                    "talent": "#talent_lightweight"
+                },
+                {
+                    "talent": "#talent_teamlink"
+                }
+            ],
+            "customclassname": "#class/slot6",
+            "primary": "#ar_accurate_t8",
+            "secondary": "#shotgun_pump_t8",
+            "var_38f854e5": 3,
+            "tacticalgear": "#gear_awareness"
+        }
+    ],
+    "killstreaks": [
+        {
+            "killstreak": "#uav"
+        },
+        {
+            "killstreak": "#remote_missile"
+        },
+        {
+            "killstreak": "#helicopter_comlink"
+        }
+    ],
+    "var_9027ef1e": "#hash_71dab9659ba194f4",
+    "var_68c52059": "#hash_71dab7659ba1918e",
+    "var_b255336c": "#hash_71daba659ba196a7",
+    "var_55e07a90": "#hash_27b5b2b4f08e4dcb",
+    "var_7afec4cc": "#hash_71dabb659ba1985a",
+    "var_326fb3af": "#hash_3de97428b08ef1b3",
+    "var_67931df5": "#hash_3aae961aff62ddf0",
+    "var_fafb44c3": "#hash_71daba659ba196a7",
+    "var_43b5563a": "#hash_41038f141e60fbfc",
+    "name": "mp_default_loadouts",
+    "sessionmode": "mp",
+    "var_4f96d17e": 6,
+    "var_57ed547e": 6,
+    "var_ebfaaff3": 3
+}

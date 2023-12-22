@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "elo"
+        }
+    ],
+    "description": "#hash_532bf3ddcd502e01",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_optic_float_dot_world",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_25c8019a42576b8f",
+    "var_65b3a12": 1,
+    "name": "tritium_wz_item",
+    "displayname": "#hash_25c8019a42576b8f",
+    "icon": "#ui_icon_attachment_float_dot",
+    "modelscale": 2.5,
+    "rarity": "None",
+    "equipsound": "uin_wz_attach_reflex",
+    "handler": "#hash_788c59214ead02af",
+    "attachslotoptics": 1,
+    "pickupicon": "#ui_icon_attachment_float_dot",
+    "itemtype": "attachment"
+}

@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#hash_37cc29c0c78a652c",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "ar_modular_restriction",
+    "displayname": "#weapon/ar_modular_t8",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__ar_modular_t8__restricted"
+}

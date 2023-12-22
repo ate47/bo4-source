@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_539cdfd686bcb551",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom"
+                }
+            ],
+            "model": "#hash_430d098ceee3be6f",
+            "type": "fakeplayer",
+            "name": "specialist_customization"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_hub_t8_mp_technomancer",
+    "dontsync": 1,
+    "team": "any"
+}

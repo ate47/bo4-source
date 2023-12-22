@@ -286,7 +286,7 @@ function private function_eb25a497() {
 // Size: 0x100
 function private function_99792b2f() {
     self endon(#"death");
-    if (zm_custom::function_901b751c(#"hash_4e0ec3fe56f08b47") != 2) {
+    if (zm_custom::function_901b751c(#"zmmysteryboxstate") != 2) {
         return;
     }
     level flag::wait_till("all_players_spawned");

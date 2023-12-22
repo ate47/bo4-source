@@ -1,0 +1,52 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_pistols_dlc1",
+            "maxweight": 200
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_shotguns_dlc1",
+            "maxweight": 200
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_smgs_dlc1",
+            "maxweight": 200,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_ars_dlc1",
+            "maxweight": 200,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_trs_dlc1",
+            "maxweight": 150,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_lmgs_dlc1",
+            "maxweight": 150,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_snipers_dlc1",
+            "maxweight": 150,
+            "available": 2
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "var_345eba59": 7,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "guns_gold_parent_dlc1_limit_world_high_value",
+    "var_fde72c94": 100
+}

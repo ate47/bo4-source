@@ -1,0 +1,14 @@
+{
+    "description": "#hash_6228f54e35bd1edf",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "demo_togglegamehud",
+    "displayname": "#hash_62c9695fccce2f5",
+    "var_66faec87": 10,
+    "statname": "demo_toggleGameHud",
+    "var_82c732a7": 1,
+    "var_b7401319": "#menu/off"
+}

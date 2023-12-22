@@ -1,0 +1,20 @@
+{
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_dfed6968": "3",
+    "type": "gamesettings",
+    "name": "gun_selection",
+    "displayname": "#menu/gunlist",
+    "var_684ccd4c": "#hash_6a37c4ba570eedb",
+    "var_9600a8ab": "#hash_119c7187844977b7",
+    "var_71b6e020": "#hash_486dd4544d3a3536",
+    "var_bd2ff709": "#hash_34e27b53f6183b2a",
+    "var_9de86f42": 4,
+    "var_8319ab81": "#hash_7d2e456ccea19e55",
+    "var_997e5846": "#hash_21e9b5775cd5cf2a",
+    "var_4c593dfd": "#hash_32e147c4babfb05e",
+    "var_35fb1141": "#hash_1088f63d45b358a1",
+    "setting": "gunSelection"
+}

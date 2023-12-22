@@ -1,0 +1,27 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "vehicle_list_muscle_car_wz",
+            "maxweight": 1,
+            "available": 20
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 8000,
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "vehiclespawner": 1,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "open_skyscraper_vehicles_muscle_car",
+    "var_fde72c94": 100
+}

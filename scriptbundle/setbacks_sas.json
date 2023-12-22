@@ -1,0 +1,22 @@
+{
+    "hinttext": "#hash_12ad874a605d3173",
+    "var_922067c4": "scriptbundle",
+    "var_f2038d90": "15",
+    "var_fc4aa21e": "25",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_7c9022a3": "5",
+    "var_8e4ec620": "10",
+    "var_dfed6968": "3",
+    "var_71ce0d1f": "4",
+    "var_8d1ed54f": "50",
+    "type": "gamesettings",
+    "label": "#hash_399145de9cf614d9",
+    "name": "setbacks_sas",
+    "displayname": "#hash_7d6e8c8d72eb5c33",
+    "var_9600a8ab": "#hash_4fd8347bec56528c",
+    "var_bd2ff709": "#menu/1_point",
+    "var_9de86f42": 10,
+    "setting": "setbacks"
+}

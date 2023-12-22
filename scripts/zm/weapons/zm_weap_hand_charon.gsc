@@ -725,7 +725,7 @@ function function_31d8c58() {
     var_cdeb4ee4.var_58b95 = util::spawn_model("tag_origin", anglestoright(self.angles) * 8 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, -1, 0), 90));
     var_cdeb4ee4.var_31436e10 = util::spawn_model("tag_origin", anglestoright(self.angles) * -6 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, 1, 0), 90));
     if (isdefined(var_cdeb4ee4)) {
-        var_cdeb4ee4 thread scene::play(#"hash_7f49ef9515c90743", self);
+        var_cdeb4ee4 thread scene::play(#"aib_vign_cust_zm_red_zmb_ww_drggd_dwn_00", self);
         var_cdeb4ee4 thread function_8a38ce84();
     }
     if (isdefined(var_cdeb4ee4.var_58b95)) {

@@ -1,0 +1,39 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_zm_towers_grinder_loop_anim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle",
+                    "blend": 1
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_zm_towers_grinder_anim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "completed",
+                    "blend": 0.7
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_zm_towers_grinder_mod",
+            "type": "prop",
+            "name": "grinder"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_towers_grinder_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

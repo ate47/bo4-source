@@ -43,40 +43,40 @@ function function_c7c05a13() {
             function_cb96f01d(var_21249230.var_c53f31a1, "ChallengesInfo.numNeeded", 7, 1);
         }
     }
-    if (isdefined(var_21249230.var_48fdfb9a) && isdefined(var_21249230.var_88c17f11)) {
+    if (isdefined(var_21249230.sentinelstages) && isdefined(var_21249230.var_88c17f11)) {
         function_cb96f01d(var_21249230.var_88c17f11, "ObjProgInfo.Eye.stage", 2, var_21249230.var_f3d39d90);
     }
     if (isdefined(var_21249230.var_38b9613) && var_21249230.var_38b9613) {
-        if (isdefined(var_21249230.var_ffb8d676)) {
-            for (i = 0; i < var_21249230.var_ffb8d676.size; i++) {
-                item = var_21249230.var_ffb8d676[i];
+        if (isdefined(var_21249230.objnonlinearprogitems)) {
+            for (i = 0; i < var_21249230.objnonlinearprogitems.size; i++) {
+                item = var_21249230.objnonlinearprogitems[i];
                 if (isdefined(item.var_846fa8e)) {
                     clientfield = "ObjProgInfo.NonlinearObjProgRingItemInfos." + i + 1 + ".earned";
                     function_cb96f01d(item.var_846fa8e, clientfield, 1, var_21249230.var_f3d39d90);
                 }
             }
         }
-    } else if (isdefined(var_21249230.var_f4dc6a81) && isdefined(var_21249230.var_846fa8e)) {
+    } else if (isdefined(var_21249230.objprogitems) && isdefined(var_21249230.var_846fa8e)) {
         function_cb96f01d(var_21249230.var_846fa8e, "ObjProgInfo.Ring.stage", 4, var_21249230.var_f3d39d90);
     }
-    if (isdefined(var_21249230.var_207c2ef6)) {
-        for (i = 0; i < var_21249230.var_207c2ef6.size; i++) {
-            item = var_21249230.var_207c2ef6[i];
+    if (isdefined(var_21249230.packapunchitems)) {
+        for (i = 0; i < var_21249230.packapunchitems.size; i++) {
+            item = var_21249230.packapunchitems[i];
             if (isdefined(item.clientfield)) {
                 clientfield = "PaPItems." + i + 1 + ".stage";
                 function_cb96f01d(item.clientfield, clientfield, 2, item.var_7db3435c);
             }
         }
     }
-    if (isdefined(var_21249230.var_50cf6c21)) {
+    if (isdefined(var_21249230.wonderweaponphases)) {
         if (isdefined(var_21249230.var_b10f2611)) {
             function_cb96f01d(var_21249230.var_b10f2611, "WonderWeaponPhaseInfo.phase", 2, var_21249230.var_3e38620e);
         }
         var_867e2c15 = -1;
         var_b3aac704 = -1;
         index = 1;
-        for (p = 0; p < var_21249230.var_50cf6c21.size; p++) {
-            phase = var_21249230.var_50cf6c21[p];
+        for (p = 0; p < var_21249230.wonderweaponphases.size; p++) {
+            phase = var_21249230.wonderweaponphases[p];
             for (c = 0; c < phase.components.size; c++) {
                 component = phase.components[c];
                 if (isdefined(component.clientfield)) {

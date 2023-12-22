@@ -1,0 +1,23 @@
+{
+    "var_10460f1e": 1,
+    "var_e61d73b0": 15,
+    "scoreevent": "#kill_nosferatu",
+    "var_922067c4": "scriptbundle",
+    "maxhealth": 8000,
+    "chargemeleedist": 200,
+    "var_fc420d71": 1,
+    "var_23f04a87": 50,
+    "name": "zm_nosferatu_settings",
+    "minhealth": 500,
+    "var_628192b0": 1,
+    "var_250a1683": 100,
+    "var_97b22faa": 1,
+    "var_52a41524": 5,
+    "damagescale": 1,
+    "category": "#enhanced",
+    "var_e7ee9898": 1,
+    "stunduration": 2,
+    "var_3b66f582": 50,
+    "normalmeleedist": 96,
+    "var_450edb3b": 1
+}

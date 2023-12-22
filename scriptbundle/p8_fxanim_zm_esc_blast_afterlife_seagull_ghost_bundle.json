@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_529eb2be885bd600",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_1"
+                }
+            ],
+            "model": "#hash_378203cb50e19570",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "seagull_ghost"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p8_fxanim_zm_esc_blast_afterlife_seagull_ghost_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

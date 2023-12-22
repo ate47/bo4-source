@@ -1,0 +1,18 @@
+{
+    "amount": 1,
+    "description": "#hash_53e534d48ed8ab55",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -6,
+    "var_3e688854": -2,
+    "weapon": <error reading:hero_flamethrower_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "name": "flamethrower_wz_item",
+    "icon": "#hash_165568237c28910e",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_49ef0e07d42cd14a",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

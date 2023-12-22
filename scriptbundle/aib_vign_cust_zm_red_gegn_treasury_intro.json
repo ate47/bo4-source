@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f262766e5a99824",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_63d8308e4385a33b",
+            "type": "actor",
+            "name": "actor 1",
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_gegn_treasury_intro",
+    "dontsync": 1,
+    "aligntarget": "tag_align_red_gegenees_treasury",
+    "team": "any"
+}

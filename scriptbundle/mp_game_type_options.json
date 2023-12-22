@@ -1,0 +1,750 @@
+{
+    "sd_hc_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "round_win_limit"
+        }
+    ],
+    "ball_winconditionslist": [
+        {
+            "option": "time_limit_dom"
+        },
+        {
+            "option": "round_score_limit"
+        }
+    ],
+    "sd_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "round_win_limit"
+        }
+    ],
+    "payload_winconditionslist": [
+        {
+            "option": "time_limit"
+        }
+    ],
+    "dm_advancedoptionslist": [
+        {
+            "option": "team_score_per_kill"
+        },
+        {
+            "option": "team_score_per_death"
+        },
+        {
+            "option": "team_score_per_headshot"
+        },
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "round_win_limit"
+        },
+        {
+            "option": "round_score_limit"
+        },
+        {
+            "option": "killstreaks_give_game_score"
+        }
+    ],
+    "sd_cwl_advancedoptionslist": [
+        {
+            "option": "bomb_timer"
+        },
+        {
+            "option": "plant_time"
+        },
+        {
+            "option": "defuse_time"
+        },
+        {
+            "option": "multi_bomb"
+        },
+        {
+            "option": "round_switch"
+        },
+        {
+            "option": "silent_plant"
+        }
+    ],
+    "oic_advancedoptionslist": [
+        {
+            "option": "points_for_survival_bonus"
+        }
+    ],
+    "dem_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit_sd_dem"
+        }
+    ],
+    "gun_advancedoptionslist": [
+        {
+            "option": "setbacks"
+        }
+    ],
+    "ctf_advancedoptionslist": [
+        {
+            "option": "score_limit_ctf_round"
+        },
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "round_win_limit_ctf"
+        },
+        {
+            "option": "enemy_carrier_visible"
+        },
+        {
+            "option": "idle_flag_reset_time"
+        },
+        {
+            "option": "flag_capture_condition"
+        },
+        {
+            "option": "capture_time_ctf"
+        },
+        {
+            "option": "touch_return"
+        }
+    ],
+    "infil_winconditionslist": [
+        {
+            "option": "time_limit"
+        }
+    ],
+    "sas_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "sd_advancedoptionslist": [
+        {
+            "option": "bomb_timer"
+        },
+        {
+            "option": "plant_time"
+        },
+        {
+            "option": "defuse_time"
+        },
+        {
+            "option": "multi_bomb"
+        },
+        {
+            "option": "round_switch"
+        },
+        {
+            "option": "silent_plant"
+        }
+    ],
+    "dm_hc_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "dm_hc_advancedoptionslist": [
+        {
+            "option": "team_score_per_kill"
+        },
+        {
+            "option": "team_score_per_death"
+        },
+        {
+            "option": "team_score_per_headshot"
+        },
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "round_win_limit"
+        },
+        {
+            "option": "round_score_limit"
+        },
+        {
+            "option": "killstreaks_give_game_score"
+        }
+    ],
+    "dm_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "dom_hc_winconditionslist": [
+        {
+            "option": "time_limit_dom"
+        },
+        {
+            "option": "round_score_limit"
+        }
+    ],
+    "tdm_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "control_hc_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "round_win_limit_control"
+        },
+        {
+            "option": "round_limit"
+        }
+    ],
+    "tdm_hc_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "dom_winconditionslist": [
+        {
+            "option": "time_limit_dom"
+        },
+        {
+            "option": "round_score_limit"
+        }
+    ],
+    "bounty_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "round_win_limit"
+        },
+        {
+            "option": "round_limit"
+        }
+    ],
+    "conf_hc_advancedoptionslist": [
+        {
+            "option": "team_score_per_kill_confirmed"
+        },
+        {
+            "option": "team_score_per_kill_denied"
+        },
+        {
+            "option": "team_score_per_kill"
+        }
+    ],
+    "dom_hc_advancedoptionslist": [
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "capture_time"
+        },
+        {
+            "option": "round_switch"
+        },
+        {
+            "option": "decay_progress"
+        },
+        {
+            "option": "auto_decay"
+        },
+        {
+            "option": "flag_capture_rate_increase"
+        }
+    ],
+    "escort_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "round_win_limit_escort"
+        }
+    ],
+    "sd_cwl_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "round_win_limit"
+        }
+    ],
+    "control_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "round_win_limit_control"
+        },
+        {
+            "option": "round_limit"
+        }
+    ],
+    "clean_winconditionslist": [
+        {
+            "option": "score_limit"
+        },
+        {
+            "option": "time_limit"
+        }
+    ],
+    "ball_advancedoptionslist": [
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "carrier_armor"
+        },
+        {
+            "option": "carry_score"
+        },
+        {
+            "option": "throw_score"
+        },
+        {
+            "option": "enemy_carrier_visible"
+        },
+        {
+            "option": "idle_flag_reset_time_ball"
+        },
+        {
+            "option": "ball_count"
+        }
+    ],
+    "oic_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "tdm_hc_advancedoptionslist": [
+        {
+            "option": "team_score_per_kill"
+        },
+        {
+            "option": "team_score_per_death"
+        },
+        {
+            "option": "team_score_per_headshot"
+        },
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "round_win_limit"
+        },
+        {
+            "option": "round_score_limit"
+        },
+        {
+            "option": "killstreaks_give_game_score"
+        }
+    ],
+    "control_advancedoptionslist": [
+        {
+            "option": "capture_time"
+        },
+        {
+            "option": "objective_spawn_time"
+        },
+        {
+            "option": "extra_time_control"
+        },
+        {
+            "option": "time_pauses_when_in_zone"
+        },
+        {
+            "option": "cap_decay"
+        },
+        {
+            "option": "flag_capture_rate_increase"
+        },
+        {
+            "option": "competitive_team_lives"
+        }
+    ],
+    "conf_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "ctf_winconditionslist": [
+        {
+            "option": "cumulative_round_scores"
+        },
+        {
+            "option": "time_limit"
+        }
+    ],
+    "sd_hc_advancedoptionslist": [
+        {
+            "option": "bomb_timer"
+        },
+        {
+            "option": "plant_time"
+        },
+        {
+            "option": "defuse_time"
+        },
+        {
+            "option": "multi_bomb"
+        },
+        {
+            "option": "round_switch"
+        },
+        {
+            "option": "silent_plant"
+        }
+    ],
+    "infil_advancedoptionslist": [
+        {
+            "option": "carrier_move_speed"
+        },
+        {
+            "option": "pickup_time"
+        },
+        {
+            "option": "deposit_time"
+        },
+        {
+            "option": "objective_health"
+        },
+        {
+            "option": "time_pauses_when_in_zone"
+        },
+        {
+            "option": "enemy_carrier_visible"
+        }
+    ],
+    "control_cwl_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "round_win_limit_control"
+        },
+        {
+            "option": "round_limit"
+        }
+    ],
+    "control_cwl_advancedoptionslist": [
+        {
+            "option": "capture_time"
+        },
+        {
+            "option": "objective_spawn_time"
+        },
+        {
+            "option": "extra_time_control"
+        },
+        {
+            "option": "time_pauses_when_in_zone"
+        },
+        {
+            "option": "cap_decay"
+        },
+        {
+            "option": "flag_capture_rate_increase"
+        },
+        {
+            "option": "competitive_team_lives"
+        }
+    ],
+    "conf_advancedoptionslist": [
+        {
+            "option": "team_score_per_kill_confirmed"
+        },
+        {
+            "option": "team_score_per_kill_denied"
+        },
+        {
+            "option": "team_score_per_kill"
+        }
+    ],
+    "bounty_advancedoptionslist": [
+        {
+            "option": "starting_cash"
+        },
+        {
+            "option": "bag_money"
+        },
+        {
+            "option": "extraction_time"
+        },
+        {
+            "option": "extraction_extra_time"
+        },
+        {
+            "option": "bag_carrier_move_speed"
+        },
+        {
+            "option": "bleedout_time"
+        },
+        {
+            "option": "time_pauses_when_in_zone"
+        }
+    ],
+    "control_hc_advancedoptionslist": [
+        {
+            "option": "capture_time"
+        },
+        {
+            "option": "objective_spawn_time"
+        },
+        {
+            "option": "extra_time_control"
+        },
+        {
+            "option": "time_pauses_when_in_zone"
+        },
+        {
+            "option": "cap_decay"
+        },
+        {
+            "option": "flag_capture_rate_increase"
+        },
+        {
+            "option": "competitive_team_lives"
+        }
+    ],
+    "koth_cwl_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "escort_advancedoptionslist": [
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "shutdown_damage"
+        },
+        {
+            "option": "boot_time"
+        },
+        {
+            "option": "reboot_time"
+        },
+        {
+            "option": "reboot_players"
+        },
+        {
+            "option": "robot_speed"
+        }
+    ],
+    "dom_advancedoptionslist": [
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "capture_time"
+        },
+        {
+            "option": "round_switch"
+        },
+        {
+            "option": "decay_progress"
+        },
+        {
+            "option": "auto_decay"
+        },
+        {
+            "option": "flag_capture_rate_increase"
+        }
+    ],
+    "koth_advancedoptionslist": [
+        {
+            "option": "auto_destroy_time"
+        },
+        {
+            "option": "capture_time_koth"
+        },
+        {
+            "option": "objective_spawn_time"
+        },
+        {
+            "option": "random_objective_locations_koth"
+        },
+        {
+            "option": "score_per_player"
+        },
+        {
+            "option": "time_pauses_when_in_zone"
+        }
+    ],
+    "tdm_advancedoptionslist": [
+        {
+            "option": "team_score_per_kill"
+        },
+        {
+            "option": "team_score_per_death"
+        },
+        {
+            "option": "team_score_per_headshot"
+        },
+        {
+            "option": "round_limit"
+        },
+        {
+            "option": "round_win_limit"
+        },
+        {
+            "option": "round_score_limit"
+        },
+        {
+            "option": "killstreaks_give_game_score"
+        }
+    ],
+    "koth_cwl_advancedoptionslist": [
+        {
+            "option": "auto_destroy_time"
+        },
+        {
+            "option": "capture_time_koth"
+        },
+        {
+            "option": "objective_spawn_time"
+        },
+        {
+            "option": "random_objective_locations_koth"
+        },
+        {
+            "option": "score_per_player"
+        },
+        {
+            "option": "time_pauses_when_in_zone"
+        }
+    ],
+    "gun_winconditionslist": [
+        {
+            "option": "time_limit"
+        }
+    ],
+    "conf_hc_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "koth_winconditionslist": [
+        {
+            "option": "time_limit"
+        },
+        {
+            "option": "score_limit"
+        }
+    ],
+    "dem_advancedoptionslist": [
+        {
+            "option": "bomb_timer"
+        },
+        {
+            "option": "plant_time"
+        },
+        {
+            "option": "defuse_time"
+        },
+        {
+            "option": "extra_time"
+        },
+        {
+            "option": "overtime_time_limit"
+        },
+        {
+            "option": "silent_plant"
+        },
+        {
+            "option": "dropped_tag_respawn"
+        }
+    ],
+    "var_cccc447d": 7,
+    "var_e0db01ed": 3,
+    "var_f56d7494": 3,
+    "var_ef38cb32": 6,
+    "var_83a58050": 1,
+    "var_fb00091b": 2,
+    "var_f7ce5755": 3,
+    "var_ad3b7935": 1,
+    "var_dd7320c": 3,
+    "var_e76f5152": 6,
+    "var_1f399639": 7,
+    "var_a07861cc": 7,
+    "var_d9d34f38": 2,
+    "var_5b1f34ad": 8,
+    "var_a6d651e9": 3,
+    "var_ebdbcc6b": 7,
+    "var_b915bfa3": 3,
+    "var_cd5d278": 2,
+    "var_20236127": 6,
+    "var_5e100727": 1,
+    "var_1c42a0dd": 6,
+    "var_ab7f13": 2,
+    "var_3971a8e0": 3,
+    "var_89866fbe": 7,
+    "var_cce6d043": 1,
+    "var_8811e7ae": 2,
+    "var_ba60ba63": 7,
+    "var_1353593b": 2,
+    "name": "mp_game_type_options",
+    "var_26c93252": 3,
+    "var_d6bc96e3": 2,
+    "var_9bbddd7b": 2,
+    "var_3b1b7f1c": 2,
+    "var_d1b8cc3d": 2,
+    "var_faa12c88": 6,
+    "var_45d6af89": 3,
+    "var_c2da316f": 1,
+    "var_d6772a01": 7,
+    "var_3989ceb4": 7,
+    "var_5531f444": 7,
+    "var_aef6c48f": 6,
+    "var_9557a3cd": 2,
+    "var_609e2b5e": 2,
+    "var_cd4d5b07": 6,
+    "var_2ea3acba": 6,
+    "var_cfebf760": 2,
+    "var_f530917d": 2,
+    "var_99929077": 6,
+    "var_dde61fe5": 2,
+    "var_2376f108": 7,
+    "var_43dc659f": 2,
+    "var_2fff3eab": 2
+}

@@ -1,0 +1,42 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "cu11_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "cu12_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "cu14_item",
+            "var_8261a18": "acid_bomb_wz_item",
+            "var_3f8c08e3": "wraithfire_wz_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "cu28_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "cu31_item",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "name": "cu_escape_list",
+    "var_fde72c94": 100
+}

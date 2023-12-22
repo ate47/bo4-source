@@ -1,0 +1,563 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh590",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh590"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh600",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh600"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh610",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh610"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh620",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh630",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh630"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_mansion_outro_sh640",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7ef765bfe4cb59c7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh590"
+                },
+                {
+                    "name": "sh600"
+                },
+                {
+                    "name": "sh610"
+                },
+                {
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "name": "sh630"
+                },
+                {
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_6608b178f5cb8e31",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_68259e558213d388",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh590"
+                },
+                {
+                    "name": "sh600"
+                },
+                {
+                    "name": "sh610"
+                },
+                {
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "name": "sh630"
+                },
+                {
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_7b15dbee7c902d29",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh590"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5339af46e12c40f7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh600"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9f29fd527c59e50",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh610"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_328e3bc2a698bb3d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_627f12033565a7be",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh630"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3e91a78653fcdc1b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_68e43aaeda249da8",
+            "type": "prop",
+            "name": "mansion_hero"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_b78886e63bf44d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh590"
+                },
+                {
+                    "name": "sh600"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_382489e8d9306b54",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "prepareshow": 1,
+                    "name": "sh610"
+                },
+                {
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "name": "sh630"
+                },
+                {
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_7d35afb61b0951bb",
+            "type": "prop",
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_10750ada7ebeadf9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh590"
+                },
+                {
+                    "name": "sh600"
+                },
+                {
+                    "name": "sh610"
+                },
+                {
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "name": "sh630"
+                },
+                {
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_2a92f1695394c8c6",
+            "type": "prop",
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh590"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_324daff20aa02fdb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh600"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_446d43f0d5cbab0c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh610"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5dd38477598da925",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "name": "sh630"
+                },
+                {
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_67cc2d78b9a203a7",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh590"
+                },
+                {
+                    "name": "sh600"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7340cbde791dccee",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh610"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_484b2cf1f15ecfeb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "name": "sh630"
+                },
+                {
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_573b25fd98692a9b",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 7"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh590"
+                },
+                {
+                    "name": "sh600"
+                },
+                {
+                    "name": "sh610"
+                },
+                {
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5553ed369c64c024",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh630"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c3bb71dc64a191",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_4b2c0fed88e18486",
+            "type": "prop",
+            "name": "prop 8"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh590"
+                },
+                {
+                    "name": "sh600"
+                },
+                {
+                    "name": "sh610"
+                },
+                {
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_20f15364ab35cf05",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh630"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4a77fcdb8ec95b94",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_237b9d2521e28d17",
+            "type": "prop",
+            "name": "prop 9"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh590"
+                },
+                {
+                    "name": "sh600"
+                },
+                {
+                    "name": "sh610"
+                },
+                {
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_747bde3697588245",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh630"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3e32e8d69876b6e8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_237b9e2521e28eca",
+            "type": "prop",
+            "name": "prop 10"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh590"
+                },
+                {
+                    "name": "sh600"
+                },
+                {
+                    "name": "sh610"
+                },
+                {
+                    "name": "sh620",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7e2008953e30f75c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh630"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6839bad29454c39d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh640",
+                    "var_39fd697b": "cin_xd_aftermath",
+                    "var_b94164e": "cin_xd_aftermath"
+                }
+            ],
+            "model": "#hash_237b9f2521e2907d",
+            "type": "prop",
+            "name": "prop 11"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "dontthrottle": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "cin_zm_mansion_outro_aftermath",
+    "dontsync": 1,
+    "disablesceneskipping": 1,
+    "var_241c5f3c": 1,
+    "var_a6da2039": "cin_zm_mansion_outro_aftermath",
+    "aligntarget": "tag_align_outro_road",
+    "ignorestreamer": 1,
+    "team": "any"
+}

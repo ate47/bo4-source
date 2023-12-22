@@ -1,0 +1,20 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_5fac69ad65e0255a",
+    "weapon": <error reading:ultimate_turret_wz>,
+    "type": "itemspawnentry",
+    "hintstring": "#hash_69a3d01cedc93f4c",
+    "name": "ultimate_turret_wz_item",
+    "displayname": "#hash_7a37b2fcb855abe4",
+    "var_36781d9f": "fly_drop_generic",
+    "stackcount": 1,
+    "icon": "#hash_6ddf119ff4972c45",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "pickupicon": "#hash_6ddf119ff4972c45",
+    "vehicle": "veh_ultimate_turret_wz",
+    "itemtype": "equipment",
+    "pickupsound": "fly_pickup_generic"
+}

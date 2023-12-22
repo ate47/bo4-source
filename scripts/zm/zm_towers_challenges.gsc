@@ -167,11 +167,11 @@ function function_7e61f202(mdl_banner) {
     switch (mdl_banner.targetname) {
     case #"hash_5485fa3ed2c27d5c":
         return "green";
-    case #"hash_3aae7b52deb2f625":
+    case #"ra_brazier_banner":
         return "red";
-    case #"hash_4772c04fac27f2fa":
+    case #"odin_brazier_banner":
         return "blue";
-    case #"hash_3534013e54dbaff5":
+    case #"zeus_brazier_banner":
         return "purple";
         break;
     }

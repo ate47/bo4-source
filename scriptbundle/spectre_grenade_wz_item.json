@@ -1,0 +1,16 @@
+{
+    "amount": 1,
+    "description": "#hash_203cc016cbf54c1",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_3a9e3b80897fd78e>,
+    "type": "itemspawnentry",
+    "name": "spectre_grenade_wz_item",
+    "stackcount": 2,
+    "icon": "#hash_27f891b5cc3751dd",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "stackable": 1,
+    "var_50773731": 3.5,
+    "itemtype": "equipment"
+}

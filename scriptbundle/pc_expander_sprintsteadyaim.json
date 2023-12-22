@@ -1,0 +1,33 @@
+{
+    "expander_options": [
+        {
+            "var_35e98147": "pc_sprintsteadyaim_hold"
+        },
+        {
+            "var_35e98147": "pc_sprint_toggle"
+        },
+        {
+            "var_35e98147": "pc_sprint_hold"
+        },
+        {
+            "var_35e98147": "pc_steadyaim"
+        },
+        {
+            "var_35e98147": "pc_steadyaim_toggle"
+        }
+    ],
+    "var_d7c59c8f": "pc_sprintsteadyaim",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_389e8bd": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_expander_sprintsteadyaim",
+    "var_54a43dc2": 1,
+    "var_66faec87": 10,
+    "statname": "expanderSprintsteadyaim",
+    "var_d4fdc6a0": "+activate",
+    "var_b7401319": "#menu/off"
+}

@@ -1,0 +1,20 @@
+{
+    "itemlist": [
+        {
+            "minweight": 400,
+            "var_a6762160": "cymbal_monkey_wz_item",
+            "maxweight": 400,
+            "available": -1
+        },
+        {
+            "var_a6762160": "cymbal_monkey_wz_item",
+            "var_3f8c08e3": "cymbal_monkey_wz_item"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "itemlist_cymbol_monkey",
+    "var_fde72c94": 100
+}

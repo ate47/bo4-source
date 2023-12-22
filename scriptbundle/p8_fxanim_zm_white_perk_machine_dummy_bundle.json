@@ -1,0 +1,37 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_10df62376d920d6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_zm_white_perk_machine_dummy_fly_in",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fly_in"
+                }
+            ],
+            "model": "#hash_487b3a764d3cf29b",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "both",
+    "name": "p8_fxanim_zm_white_perk_machine_dummy_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

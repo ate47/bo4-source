@@ -1184,7 +1184,7 @@ function private function_e0092cfc(planner, constant) {
     if (!isarray(targets)) {
         return spawnstruct();
     }
-    priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"hash_46658a8270df5a9e");
+    priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"(-4) unimportant");
     /#
         assert(isarray(priorities));
     #/
@@ -1275,8 +1275,8 @@ function private function_14c766b3(planner, constant) {
     }
     players = planner::getblackboardattribute(planner, #"players");
     hasplayers = players.size > 0;
-    var_8769837e = !hasplayers || target[#"strategy"].("doppelbotsinteractions") == #"hash_7fa10febd2862b4a";
-    var_f75536ec = !hasplayers || target[#"strategy"].("companionsinteractions") == #"hash_7fa10febd2862b4a";
+    var_8769837e = !hasplayers || target[#"strategy"].("doppelbotsinteractions") == #"first come first served";
+    var_f75536ec = !hasplayers || target[#"strategy"].("companionsinteractions") == #"first come first served";
     airvehicles = strategiccommandutility::function_698a5382(target[#"strategy"]);
     groundvehicles = strategiccommandutility::function_54032f13(target[#"strategy"]);
     var_eda803e5 = groundvehicles;
@@ -1495,7 +1495,7 @@ function private function_166d74b2(planner, constants) {
 // Size: 0x1c4
 function private function_f162255b(planner, constants) {
     targets = planner::getblackboardattribute(planner, #"targets");
-    priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"hash_46658a8270df5a9e");
+    priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"(-4) unimportant");
     /#
         assert(isarray(priorities));
     #/
@@ -2360,7 +2360,7 @@ function function_f6a3c6d5(planner, constants) {
     if (!isarray(targets)) {
         return 0;
     }
-    priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"hash_46658a8270df5a9e");
+    priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"(-4) unimportant");
     /#
         assert(isarray(priorities));
     #/

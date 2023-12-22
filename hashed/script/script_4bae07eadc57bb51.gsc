@@ -511,7 +511,7 @@ function function_2767c5d7(e_player) {
     } else if (isdefined(self.blueprint)) {
         t_crafting = self;
     }
-    if (t_crafting.blueprint.name == #"hash_6ab8e8ea32e97a22") {
+    if (t_crafting.blueprint.name == #"zblueprint_office_teleporter_modifier") {
         t_crafting.var_4f749ffe show();
         if (function_8b1a219a()) {
             level.var_279a11a3 = self.stub.var_4f749ffe zm_unitrigger::create(#"hash_36ff79a9f968a5ee", 64, &function_73e06b11);

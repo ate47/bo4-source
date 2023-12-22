@@ -1,0 +1,48 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "pistol_grip_wz_item"
+        },
+        {
+            "var_6be1bec7": "extbarrel_wz_item"
+        },
+        {
+            "var_6be1bec7": "stock_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "extmag_wz_item"
+        },
+        {
+            "var_6be1bec7": "sniperscope_wz_item"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_2e1be7bb1bd0ae45",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -6,
+    "var_3e688854": -2,
+    "weapon": <error reading:hash_402c8a13bba6323e>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "baseweapon": "sniper_quickscope_t8_item",
+    "var_65b3a12": 6,
+    "var_340eac1f": 1,
+    "name": "sniper_quickscope_t8_gold_item",
+    "var_9507cf45": "#hash_729c03af307e0af2",
+    "icon": "#hash_5b26f94a8f624671",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Epic",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_7ef07bb83693388e",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

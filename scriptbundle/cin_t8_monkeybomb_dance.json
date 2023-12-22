@@ -1,0 +1,33 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_231c51987f2797a9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "devstate": "placeholder",
+                    "name": "shot 1",
+                    "var_b94164e": "monkey"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_6a567788daa70aed",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "monkey",
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "cin_t8_monkeybomb_dance",
+    "dontsync": 1,
+    "team": "any"
+}

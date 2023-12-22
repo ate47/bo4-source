@@ -1,0 +1,31 @@
+{
+    "options": [
+        {
+            "label": "#hash_6ad13a07527ba434",
+            "value": "2"
+        },
+        {
+            "label": "#hash_74615c4f22fb455c",
+            "value": "1"
+        },
+        {
+            "label": "#hash_fc96a8486de30c0",
+            "value": "0"
+        }
+    ],
+    "var_d260763": "#hash_4f10fdc252f86729",
+    "description": "#hash_65c197c3e3ac4a18",
+    "var_60fcfffa": "#hash_4f445f7612232efc",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.1,
+    "name": "pc_playernames",
+    "displayname": "#platform/team_indicator",
+    "var_926d1be9": 0.01,
+    "var_66faec87": 2,
+    "statname": "team_indicator",
+    "minvalue": 1,
+    "var_d4e288e": 1,
+    "var_b7401319": "#hash_26907a4c5e0f4d75"
+}

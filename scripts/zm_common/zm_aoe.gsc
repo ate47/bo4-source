@@ -12,9 +12,9 @@
 
 // Namespace zm_aoe
 // Method(s) 2 Total 2
-class class_8d574d24 {
+class areaofeffect {
 
-    // Namespace class_8d574d24/zm_aoe
+    // Namespace areaofeffect/zm_aoe
     // Params 0, eflags: 0x9 linked
     // Checksum 0xb9ae6375, Offset: 0x1c8
     // Size: 0x2a
@@ -24,7 +24,7 @@ class class_8d574d24 {
         self.var_be1913ae = gettime() + 100;
     }
 
-    // Namespace class_8d574d24/zm_aoe
+    // Namespace areaofeffect/zm_aoe
     // Params 0, eflags: 0x11 linked
     // Checksum 0x80f724d1, Offset: 0x200
     // Size: 0x4
@@ -149,7 +149,7 @@ function function_371b4147(aoeid, type, position, userdata) {
     /#
         assert(var_46f1b5eb.var_9a08bb02.size < var_46f1b5eb.var_3a11a165);
     #/
-    aoe = new class_8d574d24();
+    aoe = new areaofeffect();
     aoe.position = position;
     aoe.endtime = gettime() + var_46f1b5eb.lifetime;
     aoe.entity = spawn("script_model", position);

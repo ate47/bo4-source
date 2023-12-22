@@ -1,0 +1,9 @@
+{
+    "backingsmall": "#hash_619a2403e761ca79",
+    "widget": "BadasseryMedal",
+    "name": "t7_hud_medal_kill_enemy_who_killed_teammate",
+    "backinglarge": "#hash_59cffd7b8f76506d",
+    "iconsmall": "#t7_hud_medal_kill_enemy_who_killed_teammate",
+    "var_8645ce54": "#hash_12aa23dad71fcef0",
+    "iconlarge": "#hash_2c4fdca095df882"
+}

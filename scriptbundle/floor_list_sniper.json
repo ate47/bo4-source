@@ -1,0 +1,31 @@
+{
+    "itemlist": [
+        {
+            "minweight": 175,
+            "var_a6762160": "sniper_quickscope_t8_item",
+            "var_3f8c08e3": "ammo_type_338_item",
+            "maxweight": 250,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "var_a6762160": "sniper_powerbolt_t8_item",
+            "var_3f8c08e3": "ammo_type_50cal_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 60,
+            "var_a6762160": "launcher_standard_t8_item",
+            "var_3f8c08e3": "ammo_type_rocket_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "floor_list_sniper",
+    "var_fde72c94": 100
+}

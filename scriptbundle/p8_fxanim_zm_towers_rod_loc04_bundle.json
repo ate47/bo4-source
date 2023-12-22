@@ -1,0 +1,73 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7f15b4bb7447dd5f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ff6105d6613485c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_75f3be533d0fb2ed",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_61062b2d32de303a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5752c898a898fef3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5534d301f64f4d30",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_zm_towers_rod_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_towers_rod_loc04_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

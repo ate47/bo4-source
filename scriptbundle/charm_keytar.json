@@ -1,0 +1,10 @@
+{
+    "lootid": "#charm_keytar",
+    "var_ff3063df": "attach_t8_charm_keytar_view",
+    "image": "ui_icon_weapon_charms_keytar",
+    "name": "charm_keytar",
+    "displayname": "#hash_10668d8966b5ee19",
+    "icon": "ui_icon_weapon_charms_keytar",
+    "var_ef5ad2b3": "attach_t8_charm_keytar_view",
+    "previewimage": "#ui_icon_weapon_charms_keytar"
+}

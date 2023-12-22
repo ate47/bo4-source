@@ -147,7 +147,7 @@ function private bgb_player_init() {
             self bgb_pack::function_7b91e81c(i, level.bgb[self.bgb_pack[i]].item_index);
         }
     }
-    if (zm_custom::function_901b751c(#"hash_3ab7cedcfef7eacc")) {
+    if (zm_custom::function_901b751c(#"zmelixirsdurables")) {
         var_66dd5e25 = array(#"zm_bgb_nowhere_but_there", #"zm_bgb_now_you_see_me");
         n_rank = self rank::getrank() + 1;
         foreach (bgb in level.bgb) {

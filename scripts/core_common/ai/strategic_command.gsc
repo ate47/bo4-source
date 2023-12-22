@@ -1677,12 +1677,12 @@ function function_f4921cb3(var_6d1ae0e2) {
     case #"hash_617966a33a6bad2b":
         focuses[focuses.size] = #"hash_617966a33a6bad2b";
         break;
-    case #"hash_1d7cd4babd8ff905":
-        focuses[focuses.size] = #"hash_1d7cd4babd8ff905";
+    case #"follow player":
+        focuses[focuses.size] = #"follow player";
         break;
     case #"hash_a465dbf9320e821":
         focuses[focuses.size] = #"hash_617966a33a6bad2b";
-        focuses[focuses.size] = #"hash_1d7cd4babd8ff905";
+        focuses[focuses.size] = #"follow player";
         break;
     case #"hash_964e75ec7937916":
         focuses[focuses.size] = #"hash_964e75ec7937916";
@@ -1699,7 +1699,7 @@ function function_f4921cb3(var_6d1ae0e2) {
         focuses[focuses.size] = #"hash_964e75ec7937916";
         break;
     case #"hash_692e498c8008c994":
-        focuses[focuses.size] = #"hash_1d7cd4babd8ff905";
+        focuses[focuses.size] = #"follow player";
         focuses[focuses.size] = #"hash_64a01d6e814c8dc";
         break;
     case #"objective":

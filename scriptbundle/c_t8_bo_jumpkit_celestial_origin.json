@@ -1,0 +1,11 @@
+{
+    "lootid": "#hash_3382f9e80ca679a1",
+    "wingsuit": "c_t8_bo_wingsuit_celestial_origin",
+    "feature": "loot_season_06",
+    "image": "loot_06_ui_icon_blackmarket_reserves_jumppack_celestial",
+    "name": "c_t8_bo_jumpkit_celestial_origin",
+    "displayname": "#hash_67f6a20e21f9e7b9",
+    "var_15d11806": "loot_06_ui_icon_blackmarket_reserves_jumppack_celestial",
+    "var_4fa85a25": "dfxt_celestial",
+    "parachute": "c_t8_bo_parachute_celestial_origin"
+}

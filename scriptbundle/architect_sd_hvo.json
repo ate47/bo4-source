@@ -1,0 +1,42 @@
+{
+    "statsarray": [
+        {
+            "var_82670522": "stats_deployable_cover_kill",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_f16f29c7e6f1c19"
+        },
+        {
+            "var_82670522": "stats_hpm_suppress",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_785366bfc4a5f74f"
+        },
+        {
+            "var_82670522": "stats_deployable_cover_assist",
+            "stattype": "playerstatslist",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_73d3def88fa5cf5d"
+        },
+        {
+            "stattype": "objectiveekia",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5d1ab6f5e0227795"
+        },
+        {
+            "stattype": "damagedone",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_5418827f408e5ca2"
+        },
+        {
+            "stattype": "objectivescore",
+            "var_26568428": 1,
+            "var_21cc7325": "#hash_6abbd7a88ee593ed"
+        }
+    ],
+    "var_447510ee": "prt_mp_engineer",
+    "var_e123fa65": "#hash_401fc36948868c17",
+    "var_999a02c5": "#hash_6c3a2112468353be",
+    "name": "architect_sd_hvo",
+    "var_46a95923": "sd"
+}

@@ -1,0 +1,481 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_13920df3c2c4398c",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh005_stanton_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh005"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_712b0c71e5226f76",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh010_stanton_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2dfdc3c2a1cb7e85",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh020_stanton_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4d82644c30bb143c",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh030_stanton_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_277367eb6bb01383",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh040_stanton_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7246c019e74a6dba",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh050_stanton_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_11a464f3900004a9",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh060_stanton_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh060"
+                }
+            ],
+            "model": "#hash_77884389918aee65",
+            "type": "player",
+            "name": "e_blood_scar",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_30286fa520b4a6d5",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh005_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh005"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3cbd06463da131b7",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh010_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28d8b14b4db0d2ec",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh020_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53d0a0e364499fe5",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh030_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25d3aa55cc146ae2",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh040_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_17f284dc35f49bab",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh050_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f0377592d0547b0",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "c_zm_red_mid_sh060_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh060"
+                }
+            ],
+            "model": "#hash_6421ebb04e6b9a74",
+            "type": "player",
+            "name": "e_blood_brute",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh005"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2883ca95a09592f2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_32f1094276027bed",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_72de9bc739604b44",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4de6609bc314872f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_16a654ab264c4436",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5789d5cabad318f1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh060"
+                }
+            ],
+            "model": "#p8_mov_zm_zod_dual_knives_diego_01",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh005"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_40e38e5095576a99",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76f7d1d285a9dc0a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_33dae3414fb23f93",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_eba4d2c6ae57b1c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_8f520b0a7e21bdd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7f7a48397ef6401e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh060"
+                }
+            ],
+            "model": "#hash_1a138d630a16b4eb",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1a71bd752a07574f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh005"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_13c7d0e087f516e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5a0d1348fc76fbc4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_73a0d3e8fddbd79f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_39d1ed1e56e38dba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_293d86a08c5a041d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_29c728b78c027fa0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh060"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_3c88606c2dbc0d0e",
+            "type": "prop",
+            "name": "mdl_blood_code"
+        },
+        {
+            "shots": [
+                {
+                    "name": "sh005"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25402fb7b475d216",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4232e0ed1a065a03",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_531329a7957cfd0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78def91dd3a36435",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1da3a8feefad2b4a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c21e339affa09f7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh060"
+                }
+            ],
+            "model": "#hash_526a715b07eb86ba",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 4"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "cin_zm_red_mid",
+    "dontsync": 1,
+    "disablesceneskipping": 1,
+    "var_241c5f3c": 1,
+    "var_a6da2039": "cin_zm_red_mid",
+    "aligntarget": "tag_align_red_acheron_room",
+    "ignorestreamer": 1,
+    "team": "any"
+}

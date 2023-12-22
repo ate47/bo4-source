@@ -1,0 +1,82 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_cin_zm_red_pegasus_ride_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "sharedplayer",
+            "name": "player 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_248375178d5cc98e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#c_t8_zmb_dlc2_pegasus_fb",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "pegasus"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_334406affbfb42e5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_5c06b0bb16d4efb6",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "perseus_scene"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2d1425fdf872a0f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_39b17285015a6944",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "perseus_sword"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "cin_zm_red_pegasus_ride",
+    "dontsync": 1,
+    "aligntarget": "tag_align_red_spartan",
+    "team": "any"
+}

@@ -1,0 +1,41 @@
+{
+    "options": [
+        {
+            "label": "#hash_43ecbdda975e2ac1",
+            "value": "0"
+        },
+        {
+            "label": "#hash_18479b32b55d4009",
+            "value": "1"
+        },
+        {
+            "label": "#hash_2ae831da8978a22e",
+            "value": "2"
+        },
+        {
+            "label": "#hash_135c6499d56b0013",
+            "value": "3"
+        },
+        {
+            "label": "#hash_4f3a6276121adf90",
+            "value": "4"
+        },
+        {
+            "label": "#hash_2e061a48b9d82d65",
+            "value": "5"
+        }
+    ],
+    "var_d260763": "#hash_5f4939397058d88f",
+    "description": "#hash_1d3f43e6840026f5",
+    "var_60fcfffa": "#menu/on",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "pc_anti_aliasing_quality",
+    "displayname": "#hash_6a74ab205f18e323",
+    "var_66faec87": 10,
+    "statname": "r_aaTechnique",
+    "var_b7401319": "#menu/off"
+}

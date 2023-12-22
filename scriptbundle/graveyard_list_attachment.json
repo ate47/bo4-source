@@ -1,0 +1,28 @@
+{
+    "itemlist": [
+        {
+            "minweight": 20,
+            "var_a6762160": "attachment_list_good",
+            "maxweight": 30,
+            "available": -1
+        },
+        {
+            "minweight": 90,
+            "var_a6762160": "attachment_list_med",
+            "maxweight": 135,
+            "available": -1
+        },
+        {
+            "minweight": 90,
+            "var_a6762160": "attachment_list_low",
+            "maxweight": 135,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "graveyard_list_attachment",
+    "var_fde72c94": 100
+}

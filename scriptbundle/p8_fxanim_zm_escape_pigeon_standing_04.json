@@ -1,0 +1,35 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5e605b8347ea0b32",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 5,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_69216447876b9e29",
+            "type": "prop",
+            "var_a1c5c678": 1,
+            "deletewhenfinished": 1,
+            "name": "prop 1",
+            "var_873368a8": 10,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_zm_escape_pigeon_standing_04",
+    "dontsync": 1,
+    "team": "any"
+}

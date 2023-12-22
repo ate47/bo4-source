@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#ui_icon_attachment_saug_opmod_dual_wield",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "operator_dw_restriction",
+    "displayname": "#mpui/dw",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "attachmentRestrictions__dw"
+}

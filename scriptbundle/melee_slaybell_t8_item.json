@@ -1,0 +1,20 @@
+{
+    "amount": 1,
+    "description": "#hash_2f0e45755827f680",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:melee_slaybell_t8_wz>,
+    "type": "itemspawnentry",
+    "var_7adcadc1": 180,
+    "var_65b3a12": 6,
+    "name": "melee_slaybell_t8_item",
+    "displayname": "#weapon/melee_slaybell_t8",
+    "var_36781d9f": "fly_drop_blade",
+    "icon": "#hash_6e552f1d09a5b62b",
+    "modelscale": 0.75,
+    "rarity": "Common",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_13946302bfea7599",
+    "var_50773731": 9,
+    "itemtype": "weapon",
+    "pickupsound": "fly_pickup_blade"
+}

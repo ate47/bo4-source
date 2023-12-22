@@ -1,0 +1,8 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "gamesettings",
+    "name": "scope_ir_tr_longburst_restriction",
+    "displayname": "#weapon/tr_longburst_t8",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__tr_longburst_t8__attachments__ir"
+}

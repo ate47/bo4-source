@@ -32,7 +32,7 @@ function __init__() {
 function function_2613aeec(enabled) {
     if (enabled) {
         callback::on_player_killed(&on_player_killed);
-        character_unlock::function_d2294476(#"hash_7f75d13d0c20331e", 2, 3);
+        character_unlock::function_d2294476(#"supply_drop_stash_battery", 2, 3);
     }
 }
 
@@ -76,7 +76,7 @@ function private function_b00fd65d() {
     maxteamplayers = isdefined(getgametypesetting(#"maxteamplayers")) ? getgametypesetting(#"maxteamplayers") : 4;
     var_49170438 = globallogic::totalalivecount();
     if (var_49170438 < maxteamplayers + 2) {
-        namespace_3d2704b3::function_d0178153(#"hash_7f75d13d0c20331e");
+        namespace_3d2704b3::function_d0178153(#"supply_drop_stash_battery");
     }
 }
 

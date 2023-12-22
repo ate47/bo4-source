@@ -1,0 +1,23 @@
+{
+    "hinttext": "#hash_22e13d1d5a0f4c37",
+    "var_922067c4": "scriptbundle",
+    "var_f2038d90": "7",
+    "var_fc4aa21e": "8",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_7c9022a3": "5",
+    "var_8e4ec620": "6",
+    "var_dfed6968": "3",
+    "var_71ce0d1f": "4",
+    "var_9b4871a2": "10",
+    "var_8d1ed54f": "9",
+    "type": "gamesettings",
+    "label": "#hash_22a7b89757514dfb",
+    "name": "capture_time_koth",
+    "displayname": "#hash_57a8ecf357e0c1a1",
+    "var_9600a8ab": "#hash_94eb0e3329edf5f",
+    "var_bd2ff709": "#hash_7201503206ce2d27",
+    "var_9de86f42": 11,
+    "setting": "captureTime"
+}

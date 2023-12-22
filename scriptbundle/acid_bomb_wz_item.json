@@ -1,0 +1,17 @@
+{
+    "amount": 1,
+    "description": "#hash_3b719a225449db88",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:eq_acid_bomb_wz>,
+    "type": "itemspawnentry",
+    "name": "acid_bomb_wz_item",
+    "displayname": "#weapon/acid_bomb",
+    "stackcount": 1,
+    "icon": "#hash_2296c829d618d76b",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "pickupicon": "#hash_2296c829d618d76b",
+    "var_50773731": 1.75,
+    "itemtype": "equipment"
+}

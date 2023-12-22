@@ -162,12 +162,12 @@ function function_ff4557dc(s_talisman) {
     }
     switch (s_talisman.name) {
     case #"talisman_box_guarantee_box_only":
-        if (!function_901b751c(#"zmtalismanboxguaranteeboxonly") || function_901b751c(#"hash_4e0ec3fe56f08b47") == 0) {
+        if (!function_901b751c(#"zmtalismanboxguaranteeboxonly") || function_901b751c(#"zmmysteryboxstate") == 0) {
             return 0;
         }
         break;
     case #"talisman_box_guarantee_lmg":
-        if (!function_901b751c(#"zmtalismanboxguaranteelmg") || !function_901b751c(#"zmweaponslmg") || function_901b751c(#"hash_4e0ec3fe56f08b47") == 0) {
+        if (!function_901b751c(#"zmtalismanboxguaranteelmg") || !function_901b751c(#"zmweaponslmg") || function_901b751c(#"zmmysteryboxstate") == 0) {
             return 0;
         }
         break;
@@ -521,7 +521,7 @@ function function_3ac936c6(var_ce5ed2e9) {
         }
         break;
     case #"zm_bgb_immolation_liquidation":
-        if (!function_901b751c(#"zmelixirimmolationliquidation") || !function_901b751c(#"zmpowerupfiresale") || !function_901b751c(#"zmpowerupsactive") || function_901b751c(#"hash_4e0ec3fe56f08b47") == 0) {
+        if (!function_901b751c(#"zmelixirimmolationliquidation") || !function_901b751c(#"zmpowerupfiresale") || !function_901b751c(#"zmpowerupsactive") || function_901b751c(#"zmmysteryboxstate") == 0) {
             return 0;
         }
         break;
@@ -680,7 +680,7 @@ function function_3ac936c6(var_ce5ed2e9) {
     }
     switch (n_rarity) {
     case 0:
-        if (!function_901b751c(#"hash_3ab7cedcfef7eacc")) {
+        if (!function_901b751c(#"zmelixirsdurables")) {
             return 0;
         }
         break;
@@ -746,7 +746,7 @@ function function_d9f0defb(str_perk) {
         }
         break;
     case #"specialty_widowswine":
-        if (!function_901b751c(#"hash_557e3edd7fe168c3")) {
+        if (!function_901b751c(#"zmperkswidowswail")) {
             return 0;
         }
         break;
@@ -786,7 +786,7 @@ function function_d9f0defb(str_perk) {
         }
         break;
     case #"specialty_camper":
-        if (!function_901b751c(#"hash_5690c4dcc61973ec")) {
+        if (!function_901b751c(#"zmperksstonecold")) {
             return 0;
         }
         break;
@@ -918,7 +918,7 @@ function function_928e94b9(a_str_archetypes) {
 // Checksum 0x8d55718f, Offset: 0x3bd8
 // Size: 0x5a
 function function_e1f04ede() {
-    if (function_901b751c(#"zmpowerupsislimitedround") && level.powerup_drop_count >= function_901b751c(#"hash_d46a4e7a41e005c")) {
+    if (function_901b751c(#"zmpowerupsislimitedround") && level.powerup_drop_count >= function_901b751c(#"zmpowerupslimitround")) {
         return 1;
     }
     return 0;
@@ -1196,7 +1196,7 @@ function private function_34c2aeb5() {
     n_regen_rate = function_901b751c(#"zmhealthregenrate");
     n_health_on_kill = function_901b751c(#"zmhealthonkill");
     n_health_drain = function_901b751c(#"zmhealthdrain");
-    switch (function_901b751c(#"hash_29d174e7d8ab76c8")) {
+    switch (function_901b751c(#"zmhealthstartingbars")) {
     case 3:
     default:
         var_d75008e3 = 0;
@@ -1357,9 +1357,9 @@ function private function_cd05a082() {
     var_320de887 = function_901b751c(#"zmpointsfixed");
     var_46e28538 = function_901b751c(#"zmpointsstarting") * 100;
     var_1f9ee1b2 = function_901b751c(#"hash_5566698b97a6282e");
-    var_58d18c72 = function_901b751c(#"hash_3326ed4311c47268");
-    var_523e89f3 = function_901b751c(#"hash_696b8f3671d2baf1");
-    var_39215b53 = function_901b751c(#"hash_3b279133f5b3371");
+    var_58d18c72 = function_901b751c(#"zmpointslosstype");
+    var_523e89f3 = function_901b751c(#"zmpointslosspercent");
+    var_39215b53 = function_901b751c(#"zmpointslossvalue");
     if (var_46e28538 != 500) {
         level.player_starting_points = var_46e28538;
     }
@@ -1544,19 +1544,19 @@ function private function_5b526135() {
     kill_trip_mine_shocked_mountain_ = function_901b751c(#"zmheavystate");
     var_4d7e8b66 = function_901b751c(#"zmheavydamagemult");
     var_1b0cc4f5 = function_901b751c(#"zmheavyhealthmult");
-    var_123a3894 = function_901b751c(#"hash_aa498eca8149e1c");
+    var_123a3894 = function_901b751c(#"zmheavyspawnfreq");
     var_305f0400 = function_901b751c(#"zmminibossstate");
     var_1bb1a2fb = function_901b751c(#"zmminibossdamagemult");
     var_9503486c = function_901b751c(#"zmminibosshealthmult");
-    var_e0699280 = function_901b751c(#"hash_5261400ecb67c787");
+    var_e0699280 = function_901b751c(#"zmminibossspawnfreq");
     var_8ebd2946 = function_901b751c(#"zmpopcornstate");
     var_5db2341c = function_901b751c(#"zmpopcorndamagemult");
     var_570d178a = function_901b751c(#"zmpopcornhealthmult");
-    var_eb82fcdb = function_901b751c(#"hash_1c31b8bc2b1996ca");
+    var_eb82fcdb = function_901b751c(#"zmpopcornspawnfreq");
     var_d72fa632 = function_901b751c(#"zmenhancedstate");
     var_53c7ca1d = function_901b751c(#"zmenhanceddamagemult");
     var_1eb98fb1 = function_901b751c(#"zmenhancedhealthmult");
-    var_85b9e9f7 = function_901b751c(#"hash_600fdf6bc4d21353");
+    var_85b9e9f7 = function_901b751c(#"zmenhancedspawnfreq");
     switch (kill_trip_mine_shocked_mountain_) {
     case 1:
         break;
@@ -1740,30 +1740,30 @@ function private function_5b526135() {
         break;
     }
     if (isdefined(level.var_a2831281) && level.var_a2831281) {
-        setgametypesetting(#"hash_4deb3ae7a73c87f3", 0);
+        setgametypesetting(#"zmspecialroundsenabled", 0);
         level.var_fe2bb2ac = 1;
         level.var_15747fb1 = 1;
         level.var_5e45f817 = 1;
         level.var_f300b600 = 1;
     } else if (isdefined(level.var_76934955) && level.var_76934955) {
-        setgametypesetting(#"hash_4deb3ae7a73c87f3", 0);
+        setgametypesetting(#"zmspecialroundsenabled", 0);
         level.var_153e9058 = 1;
         level.var_15747fb1 = 1;
         level.var_5e45f817 = 1;
         level.var_58c73742 = 1;
     } else if (isdefined(level.var_90534a4f) && level.var_90534a4f) {
-        setgametypesetting(#"hash_4deb3ae7a73c87f3", 0);
+        setgametypesetting(#"zmspecialroundsenabled", 0);
         level.var_153e9058 = 1;
         level.var_fe2bb2ac = 1;
         level.var_15747fb1 = 1;
         level.var_5e45f817 = 1;
     } else if (isdefined(level.var_2b94ce72) && level.var_2b94ce72) {
-        setgametypesetting(#"hash_4deb3ae7a73c87f3", 0);
+        setgametypesetting(#"zmspecialroundsenabled", 0);
         level.var_153e9058 = 1;
         level.var_fe2bb2ac = 1;
         level.var_5e45f817 = 1;
     } else if (isdefined(level.var_4a03b294) && level.var_4a03b294) {
-        setgametypesetting(#"hash_4deb3ae7a73c87f3", 0);
+        setgametypesetting(#"zmspecialroundsenabled", 0);
         level.var_153e9058 = 1;
         level.var_fe2bb2ac = 1;
         level.var_15747fb1 = 1;
@@ -1819,7 +1819,7 @@ function private function_c2ebdc07() {
 // Checksum 0xe53acd68, Offset: 0x73f0
 // Size: 0x164
 function private function_401f18e6() {
-    if (!function_901b751c(#"hash_4deb3ae7a73c87f3")) {
+    if (!function_901b751c(#"zmspecialroundsenabled")) {
         while (!flag::exists(#"disable_special_rounds")) {
             waitframe(1);
         }
@@ -1843,7 +1843,7 @@ function private function_401f18e6() {
 // Checksum 0x40d90db4, Offset: 0x7560
 // Size: 0x2f6a
 function private function_a8e9a6c7() {
-    return array({#default_val:1, #name:#"startround"}, {#default_val:0, #name:#"headshotsonly"}, {#default_val:0, #name:#"zmroundcap"}, {#default_val:0, #name:#"zmtimecap"}, {#default_val:0, #name:#"zmshowtimer"}, {#default_val:0, #name:#"zmkillcap"}, {#default_val:1, #name:#"zmdoorstate"}, {#default_val:1, #name:#"hash_4deb3ae7a73c87f3"}, {#default_val:0, #name:#"zmendonquest"}, {#default_val:2, #name:#"hash_4e0ec3fe56f08b47"}, {#default_val:0, #name:#"hash_5d65c0983698a539"}, {#default_val:0, #name:#"hash_1513b70c43495cc0"}, {#default_val:0, #name:#"hash_23fe21eb92ffbc2c"}, {#default_val:0, #name:#"hash_4ffb80b47c049c61"}, {#default_val:0, #name:#"hash_751384283abde22c"}, {#default_val:0, #name:#"hash_543954c3281a530f"}, {#default_val:1, #name:#"zmpowerstate"}, {#default_val:1, #name:#"zmpowerdoorstate"}, {#default_val:1, #name:#"zmperksactive"}, {#default_val:1, #name:#"zmperksjuggernaut"}, {#default_val:1, #name:#"zmperksspeed"}, {#default_val:1, #name:#"zmperksquickrevive"}, {#default_val:1, #name:#"hash_557e3edd7fe168c3"}, {#default_val:1, #name:#"zmperksstaminup"}, {#default_val:1, #name:#"zmperksmulekick"}, {#default_val:1, #name:#"zmperkselectricburst"}, {#default_val:1, #name:#"zmperksdeadshot"}, {#default_val:1, #name:#"zmperkscooldown"}, {#default_val:1, #name:#"zmperksdyingwish"}, {#default_val:1, #name:#"zmpapenabled"}, {#default_val:1, #name:#"hash_57a5c7a9dcf94d61"}, {#default_val:1, #name:#"zmpowerupsactive"}, {#default_val:1, #name:#"zmpowerupnuke"}, {#default_val:1, #name:#"zmpowerupdouble"}, {#default_val:1, #name:#"zmpowerupinstakill"}, {#default_val:1, #name:#"zmpowerupchaospoints"}, {#default_val:1, #name:#"zmpowerupfiresale"}, {#default_val:1, #name:#"zmpowerupspecialweapon"}, {#default_val:1, #name:#"zmpowerupfreeperk"}, {#default_val:1, #name:#"zmpowerupmaxammo"}, {#default_val:1, #name:#"zmpowerupcarpenter"}, {#default_val:0, #name:#"zmpowerupsislimitedround"}, {#default_val:1, #name:#"hash_d46a4e7a41e005c"}, {#default_val:1, #name:#"zmpowerupsharing"}, {#default_val:1, #name:#"zmwallbuysenabled"}, {#default_val:0, #name:#"zmrandomwallbuys"}, {#default_val:1, #name:#"zmelixirsenabled"}, {#default_val:1, #name:#"zmelixirscooldown"}, {#default_val:1, #name:#"zmelixirsindividual"}, {#default_val:1, #name:#"hash_3ab7cedcfef7eacc"}, {#default_val:1, #name:#"zmelixirscommon"}, {#default_val:1, #name:#"zmelixirsrare"}, {#default_val:1, #name:#"zmelixirslegendary"}, {#default_val:1, #name:#"zmelixirsepic"}, {#default_val:1, #name:#"zmtalismansenabled"}, {#default_val:1, #name:#"zmtalismansindividual"}, {#default_val:1, #name:#"zmtalismanscommon"}, {#default_val:1, #name:#"zmtalismansrare"}, {#default_val:1, #name:#"zmtalismanslegendary"}, {#default_val:1, #name:#"zmtalismansepic"}, {#default_val:1, #name:#"zmweaponspistol"}, {#default_val:1, #name:#"zmweaponsshotgun"}, {#default_val:1, #name:#"zmweaponssmg"}, {#default_val:1, #name:#"zmweaponsar"}, {#default_val:1, #name:#"zmweaponstr"}, {#default_val:1, #name:#"zmweaponslmg"}, {#default_val:1, #name:#"zmweaponssniper"}, {#default_val:1, #name:#"zmweaponsknife"}, {#default_val:1, #name:#"zmweaponsmelee"}, {#default_val:1, #name:#"zmspecweaponisenabled"}, {#default_val:1, #name:#"hash_2f03c6055447a6b1"}, {#default_val:1, #name:#"zmwonderweaponisenabled"}, {#default_val:1, #name:#"zmequipmentisenabled"}, {#default_val:1, #name:#"zmequipmentchargerate"}, {#default_val:1, #name:#"zmshieldisenabled"}, {#default_val:1, #name:#"zmshielddurability"}, {#default_val:0, #name:#"zmheadshotsonly"}, {#default_val:0, #name:#"zmrunnerstate"}, {#default_val:0, #name:#"zmwalkerstate"}, {#default_val:1, #name:#"zmcrawlerstate"}, {#default_val:1, #name:#"zmzombiespread"}, {#default_val:0, #name:#"zmzombieminspeed"}, {#default_val:3, #name:#"zmzombiemaxspeed"}, {#default_val:1, #name:#"zmzombiedamagemult"}, {#default_val:1, #name:#"zmzombiehealthmult"}, {#default_val:1, #name:#"zmcrawlerdamagemult"}, {#default_val:1, #name:#"zmcrawlerhealthmult"}, {#default_val:1, #name:#"zmcrawleraggro"}, {#default_val:1, #name:#"zmheavystate"}, {#default_val:1, #name:#"zmheavydamagemult"}, {#default_val:1, #name:#"zmheavyhealthmult"}, {#default_val:1, #name:#"zmheavyaggro"}, {#default_val:1, #name:#"zmminibossstate"}, {#default_val:1, #name:#"zmminibossdamagemult"}, {#default_val:1, #name:#"zmminibosshealthmult"}, {#default_val:1, #name:#"zmminibossaggro"}, {#default_val:3, #name:#"hash_29d174e7d8ab76c8"}, {#default_val:1, #name:#"zmhealthregendelay"}, {#default_val:2, #name:#"zmhealthregenrate"}, {#default_val:0, #name:#"zmhealthonkill"}, {#default_val:0, #name:#"zmhealthdrain"}, {#default_val:0, #name:#"zmpointsfixed"}, {#default_val:5, #name:#"zmpointsstarting"}, {#default_val:0, #name:#"hash_5566698b97a6282e"}, {#default_val:0, #name:#"hash_3326ed4311c47268"}, {#default_val:1, #name:#"hash_696b8f3671d2baf1"}, {#default_val:100, #name:#"hash_3b279133f5b3371"}, {#default_val:2, #name:#"zmlaststandduration"}, {#default_val:0, #name:#"hash_12f776f6bc579bb4"}, {#default_val:0, #name:#"hash_2d34a5d9024db85f"}, {#default_val:1, #name:#"zmbarricadestate"}, {#default_val:1, #name:#"hash_3c5363541b97ca3e"}, {#default_val:1, #name:#"zmpowerupfrequency"}, {#default_val:1, #name:#"zmtalismanboxguaranteeboxonly"}, {#default_val:1, #name:#"zmtalismanboxguaranteelmg"}, {#default_val:1, #name:#"hash_61695e52556ff2d1"}, {#default_val:1, #name:#"zmtalismancoagulant"}, {#default_val:1, #name:#"zmtalismanextraclaymore"}, {#default_val:1, #name:#"zmtalismanextrafrag"}, {#default_val:1, #name:#"zmtalismanextraminiturret"}, {#default_val:1, #name:#"zmtalismanextramolotov"}, {#default_val:1, #name:#"zmtalismanextrasemtex"}, {#default_val:1, #name:#"zmtalismanimpatient"}, {#default_val:1, #name:#"zmtalismanperkmodsingle"}, {#default_val:1, #name:#"zmtalismanperkpermanent1"}, {#default_val:1, #name:#"zmtalismanperkpermanent2"}, {#default_val:1, #name:#"zmtalismanperkpermanent3"}, {#default_val:1, #name:#"zmtalismanperkpermanent4"}, {#default_val:1, #name:#"zmtalismanperkreducecost1"}, {#default_val:1, #name:#"zmtalismanperkreducecost2"}, {#default_val:1, #name:#"zmtalismanperkreducecost3"}, {#default_val:1, #name:#"zmtalismanperkreducecost4"}, {#default_val:1, #name:#"zmtalismanperkstart1"}, {#default_val:1, #name:#"zmtalismanperkstart2"}, {#default_val:1, #name:#"zmtalismanperkstart3"}, {#default_val:1, #name:#"zmtalismanperkstart4"}, {#default_val:1, #name:#"zmtalismanshielddurabilitylegendary"}, {#default_val:1, #name:#"zmtalismanshielddurabilityrare"}, {#default_val:1, #name:#"zmtalismanshieldprice"}, {#default_val:1, #name:#"zmtalismanspecialstartlvl2"}, {#default_val:1, #name:#"zmtalismanspecialstartlvl3"}, {#default_val:1, #name:#"zmtalismanspecialxprate"}, {#default_val:1, #name:#"zmtalismanstartweaponar"}, {#default_val:1, #name:#"zmtalismanstartweaponlmg"}, {#default_val:1, #name:#"zmtalismanstartweaponsmg"}, {#default_val:1, #name:#"zmtalismanreducepapcost"}, {#default_val:1, #name:#"zmtalismansultra"}, {#default_val:1, #name:#"zmelixiralwaysdoneswiftly"}, {#default_val:1, #name:#"zmelixiranywherebuthere"}, {#default_val:1, #name:#"zmelixirarsenalaccelerator"}, {#default_val:1, #name:#"zmelixirdangerclosest"}, {#default_val:1, #name:#"zmelixirinplainsight"}, {#default_val:1, #name:#"zmelixirnewtoniannegation"}, {#default_val:1, #name:#"zmelixirnowyouseeme"}, {#default_val:1, #name:#"zmelixirstockoption"}, {#default_val:1, #name:#"zmelixirboardgames"}, {#default_val:1, #name:#"zmelixirburnedout"}, {#default_val:1, #name:#"zmelixircrawlspace"}, {#default_val:1, #name:#"zmelixirpopshocks"}, {#default_val:1, #name:#"zmelixirtemporalgift"}, {#default_val:1, #name:#"zmelixirpointdrops"}, {#default_val:1, #name:#"zmelixiralchemicalantithesis"}, {#default_val:1, #name:#"zmelixirswordflay"}, {#default_val:1, #name:#"zmelixirdeadofnuclearwinter"}, {#default_val:1, #name:#"zmelixirlicensedcontractor"}, {#default_val:1, #name:#"zmelixirundeadmanwalking"}, {#default_val:1, #name:#"zmelixirwhoskeepingscore"}, {#default_val:1, #name:#"zmelixiraftertaste"}, {#default_val:1, #name:#"zmelixirextracredit"}, {#default_val:1, #name:#"zmelixirkilljoy"}, {#default_val:1, #name:#"zmelixirsodafountain"}, {#default_val:1, #name:#"zmelixirctrlz"}, {#default_val:1, #name:#"zmelixirfreefire"}, {#default_val:1, #name:#"zmelixircacheback"}, {#default_val:1, #name:#"zmelixirimmolationliquidation"}, {#default_val:1, #name:#"zmelixirphoenixup"}, {#default_val:1, #name:#"zmelixirpowerkeg"}, {#default_val:1, #name:#"zmelixirblooddebt"}, {#default_val:1, #name:#"zmelixirneardeathexperience"}, {#default_val:1, #name:#"zmelixirperkaholic"}, {#default_val:1, #name:#"zmelixirwallpower"}, {#default_val:0, #name:#"hash_429b520a87274afb"}, {#default_val:1, #name:#"zmtrapsenabled"}, {#default_val:1, #name:#"zmstartingweaponenabled"}, {#default_val:1, #name:#"hash_aa498eca8149e1c"}, {#default_val:1, #name:#"hash_5261400ecb67c787"}, {#default_val:0, #name:#"zmselfreviveamount"}, {#default_val:1, #name:#"zmpopcornstate"}, {#default_val:1, #name:#"zmpopcorndamagemult"}, {#default_val:1, #name:#"zmpopcornhealthmult"}, {#default_val:1, #name:#"hash_1c31b8bc2b1996ca"}, {#default_val:1, #name:#"zmretainweapons"}, {#default_val:1, #name:#"zmperkdecay"}, {#default_val:0, #name:#"zmcraftingkeyline"}, {#default_val:0, #name:#"hash_1fed0d9afc0b0040"}, {#default_val:0, #name:#"hash_1158d006a3913ef6"}, {#default_val:0, #name:#"hash_64291919b16c489a"}, {#default_val:1, #name:#"zmelixirantientrapment"}, {#default_val:1, #name:#"zmelixirequipmint"}, {#default_val:1, #name:#"zmelixirheadscan"}, {#default_val:1, #name:#"zmelixirjointheparty"}, {#default_val:1, #name:#"zmelixirnowherebutthere"}, {#default_val:1, #name:#"zmelixirphantomreload"}, {#default_val:1, #name:#"zmelixirshieldsup"}, {#default_val:1, #name:#"zmelixirwalltowall"}, {#default_val:1, #name:#"zmperksbandolier"}, {#default_val:1, #name:#"zmperksdeathperception"}, {#default_val:1, #name:#"zmperksphdslider"}, {#default_val:1, #name:#"zmperkssecretsauce"}, {#default_val:1, #name:#"hash_5690c4dcc61973ec"}, {#default_val:1, #name:#"zmperkswolfprotector"}, {#default_val:1, #name:#"zmperksdeathdash"}, {#default_val:1, #name:#"zmperksvictorious"}, {#default_val:0, #name:#"zmfriendlyfiretype"}, {#default_val:1, #name:#"zmelixirconflagrationliquidation"}, {#default_val:1, #name:#"zmelixirperkup"}, {#default_val:1, #name:#"zmelixirrefreshmint"}, {#default_val:1, #name:#"zmenhancedstate"}, {#default_val:1, #name:#"zmenhanceddamagemult"}, {#default_val:1, #name:#"zmenhancedhealthmult"}, {#default_val:1, #name:#"hash_600fdf6bc4d21353"});
+    return array({#default_val:1, #name:#"startround"}, {#default_val:0, #name:#"headshotsonly"}, {#default_val:0, #name:#"zmroundcap"}, {#default_val:0, #name:#"zmtimecap"}, {#default_val:0, #name:#"zmshowtimer"}, {#default_val:0, #name:#"zmkillcap"}, {#default_val:1, #name:#"zmdoorstate"}, {#default_val:1, #name:#"zmspecialroundsenabled"}, {#default_val:0, #name:#"zmendonquest"}, {#default_val:2, #name:#"zmmysteryboxstate"}, {#default_val:0, #name:#"hash_5d65c0983698a539"}, {#default_val:0, #name:#"zmmysteryboxlimitmove"}, {#default_val:0, #name:#"hash_23fe21eb92ffbc2c"}, {#default_val:0, #name:#"zmmysteryboxlimit"}, {#default_val:0, #name:#"hash_751384283abde22c"}, {#default_val:0, #name:#"zmmysteryboxlimitround"}, {#default_val:1, #name:#"zmpowerstate"}, {#default_val:1, #name:#"zmpowerdoorstate"}, {#default_val:1, #name:#"zmperksactive"}, {#default_val:1, #name:#"zmperksjuggernaut"}, {#default_val:1, #name:#"zmperksspeed"}, {#default_val:1, #name:#"zmperksquickrevive"}, {#default_val:1, #name:#"zmperkswidowswail"}, {#default_val:1, #name:#"zmperksstaminup"}, {#default_val:1, #name:#"zmperksmulekick"}, {#default_val:1, #name:#"zmperkselectricburst"}, {#default_val:1, #name:#"zmperksdeadshot"}, {#default_val:1, #name:#"zmperkscooldown"}, {#default_val:1, #name:#"zmperksdyingwish"}, {#default_val:1, #name:#"zmpapenabled"}, {#default_val:1, #name:#"zmsuperpapenabled"}, {#default_val:1, #name:#"zmpowerupsactive"}, {#default_val:1, #name:#"zmpowerupnuke"}, {#default_val:1, #name:#"zmpowerupdouble"}, {#default_val:1, #name:#"zmpowerupinstakill"}, {#default_val:1, #name:#"zmpowerupchaospoints"}, {#default_val:1, #name:#"zmpowerupfiresale"}, {#default_val:1, #name:#"zmpowerupspecialweapon"}, {#default_val:1, #name:#"zmpowerupfreeperk"}, {#default_val:1, #name:#"zmpowerupmaxammo"}, {#default_val:1, #name:#"zmpowerupcarpenter"}, {#default_val:0, #name:#"zmpowerupsislimitedround"}, {#default_val:1, #name:#"zmpowerupslimitround"}, {#default_val:1, #name:#"zmpowerupsharing"}, {#default_val:1, #name:#"zmwallbuysenabled"}, {#default_val:0, #name:#"zmrandomwallbuys"}, {#default_val:1, #name:#"zmelixirsenabled"}, {#default_val:1, #name:#"zmelixirscooldown"}, {#default_val:1, #name:#"zmelixirsindividual"}, {#default_val:1, #name:#"zmelixirsdurables"}, {#default_val:1, #name:#"zmelixirscommon"}, {#default_val:1, #name:#"zmelixirsrare"}, {#default_val:1, #name:#"zmelixirslegendary"}, {#default_val:1, #name:#"zmelixirsepic"}, {#default_val:1, #name:#"zmtalismansenabled"}, {#default_val:1, #name:#"zmtalismansindividual"}, {#default_val:1, #name:#"zmtalismanscommon"}, {#default_val:1, #name:#"zmtalismansrare"}, {#default_val:1, #name:#"zmtalismanslegendary"}, {#default_val:1, #name:#"zmtalismansepic"}, {#default_val:1, #name:#"zmweaponspistol"}, {#default_val:1, #name:#"zmweaponsshotgun"}, {#default_val:1, #name:#"zmweaponssmg"}, {#default_val:1, #name:#"zmweaponsar"}, {#default_val:1, #name:#"zmweaponstr"}, {#default_val:1, #name:#"zmweaponslmg"}, {#default_val:1, #name:#"zmweaponssniper"}, {#default_val:1, #name:#"zmweaponsknife"}, {#default_val:1, #name:#"zmweaponsmelee"}, {#default_val:1, #name:#"zmspecweaponisenabled"}, {#default_val:1, #name:#"zmspecweaponchargerate"}, {#default_val:1, #name:#"zmwonderweaponisenabled"}, {#default_val:1, #name:#"zmequipmentisenabled"}, {#default_val:1, #name:#"zmequipmentchargerate"}, {#default_val:1, #name:#"zmshieldisenabled"}, {#default_val:1, #name:#"zmshielddurability"}, {#default_val:0, #name:#"zmheadshotsonly"}, {#default_val:0, #name:#"zmrunnerstate"}, {#default_val:0, #name:#"zmwalkerstate"}, {#default_val:1, #name:#"zmcrawlerstate"}, {#default_val:1, #name:#"zmzombiespread"}, {#default_val:0, #name:#"zmzombieminspeed"}, {#default_val:3, #name:#"zmzombiemaxspeed"}, {#default_val:1, #name:#"zmzombiedamagemult"}, {#default_val:1, #name:#"zmzombiehealthmult"}, {#default_val:1, #name:#"zmcrawlerdamagemult"}, {#default_val:1, #name:#"zmcrawlerhealthmult"}, {#default_val:1, #name:#"zmcrawleraggro"}, {#default_val:1, #name:#"zmheavystate"}, {#default_val:1, #name:#"zmheavydamagemult"}, {#default_val:1, #name:#"zmheavyhealthmult"}, {#default_val:1, #name:#"zmheavyaggro"}, {#default_val:1, #name:#"zmminibossstate"}, {#default_val:1, #name:#"zmminibossdamagemult"}, {#default_val:1, #name:#"zmminibosshealthmult"}, {#default_val:1, #name:#"zmminibossaggro"}, {#default_val:3, #name:#"zmhealthstartingbars"}, {#default_val:1, #name:#"zmhealthregendelay"}, {#default_val:2, #name:#"zmhealthregenrate"}, {#default_val:0, #name:#"zmhealthonkill"}, {#default_val:0, #name:#"zmhealthdrain"}, {#default_val:0, #name:#"zmpointsfixed"}, {#default_val:5, #name:#"zmpointsstarting"}, {#default_val:0, #name:#"hash_5566698b97a6282e"}, {#default_val:0, #name:#"zmpointslosstype"}, {#default_val:1, #name:#"zmpointslosspercent"}, {#default_val:100, #name:#"zmpointslossvalue"}, {#default_val:2, #name:#"zmlaststandduration"}, {#default_val:0, #name:#"hash_12f776f6bc579bb4"}, {#default_val:0, #name:#"zmlimiteddownsamount"}, {#default_val:1, #name:#"zmbarricadestate"}, {#default_val:1, #name:#"hash_3c5363541b97ca3e"}, {#default_val:1, #name:#"zmpowerupfrequency"}, {#default_val:1, #name:#"zmtalismanboxguaranteeboxonly"}, {#default_val:1, #name:#"zmtalismanboxguaranteelmg"}, {#default_val:1, #name:#"hash_61695e52556ff2d1"}, {#default_val:1, #name:#"zmtalismancoagulant"}, {#default_val:1, #name:#"zmtalismanextraclaymore"}, {#default_val:1, #name:#"zmtalismanextrafrag"}, {#default_val:1, #name:#"zmtalismanextraminiturret"}, {#default_val:1, #name:#"zmtalismanextramolotov"}, {#default_val:1, #name:#"zmtalismanextrasemtex"}, {#default_val:1, #name:#"zmtalismanimpatient"}, {#default_val:1, #name:#"zmtalismanperkmodsingle"}, {#default_val:1, #name:#"zmtalismanperkpermanent1"}, {#default_val:1, #name:#"zmtalismanperkpermanent2"}, {#default_val:1, #name:#"zmtalismanperkpermanent3"}, {#default_val:1, #name:#"zmtalismanperkpermanent4"}, {#default_val:1, #name:#"zmtalismanperkreducecost1"}, {#default_val:1, #name:#"zmtalismanperkreducecost2"}, {#default_val:1, #name:#"zmtalismanperkreducecost3"}, {#default_val:1, #name:#"zmtalismanperkreducecost4"}, {#default_val:1, #name:#"zmtalismanperkstart1"}, {#default_val:1, #name:#"zmtalismanperkstart2"}, {#default_val:1, #name:#"zmtalismanperkstart3"}, {#default_val:1, #name:#"zmtalismanperkstart4"}, {#default_val:1, #name:#"zmtalismanshielddurabilitylegendary"}, {#default_val:1, #name:#"zmtalismanshielddurabilityrare"}, {#default_val:1, #name:#"zmtalismanshieldprice"}, {#default_val:1, #name:#"zmtalismanspecialstartlvl2"}, {#default_val:1, #name:#"zmtalismanspecialstartlvl3"}, {#default_val:1, #name:#"zmtalismanspecialxprate"}, {#default_val:1, #name:#"zmtalismanstartweaponar"}, {#default_val:1, #name:#"zmtalismanstartweaponlmg"}, {#default_val:1, #name:#"zmtalismanstartweaponsmg"}, {#default_val:1, #name:#"zmtalismanreducepapcost"}, {#default_val:1, #name:#"zmtalismansultra"}, {#default_val:1, #name:#"zmelixiralwaysdoneswiftly"}, {#default_val:1, #name:#"zmelixiranywherebuthere"}, {#default_val:1, #name:#"zmelixirarsenalaccelerator"}, {#default_val:1, #name:#"zmelixirdangerclosest"}, {#default_val:1, #name:#"zmelixirinplainsight"}, {#default_val:1, #name:#"zmelixirnewtoniannegation"}, {#default_val:1, #name:#"zmelixirnowyouseeme"}, {#default_val:1, #name:#"zmelixirstockoption"}, {#default_val:1, #name:#"zmelixirboardgames"}, {#default_val:1, #name:#"zmelixirburnedout"}, {#default_val:1, #name:#"zmelixircrawlspace"}, {#default_val:1, #name:#"zmelixirpopshocks"}, {#default_val:1, #name:#"zmelixirtemporalgift"}, {#default_val:1, #name:#"zmelixirpointdrops"}, {#default_val:1, #name:#"zmelixiralchemicalantithesis"}, {#default_val:1, #name:#"zmelixirswordflay"}, {#default_val:1, #name:#"zmelixirdeadofnuclearwinter"}, {#default_val:1, #name:#"zmelixirlicensedcontractor"}, {#default_val:1, #name:#"zmelixirundeadmanwalking"}, {#default_val:1, #name:#"zmelixirwhoskeepingscore"}, {#default_val:1, #name:#"zmelixiraftertaste"}, {#default_val:1, #name:#"zmelixirextracredit"}, {#default_val:1, #name:#"zmelixirkilljoy"}, {#default_val:1, #name:#"zmelixirsodafountain"}, {#default_val:1, #name:#"zmelixirctrlz"}, {#default_val:1, #name:#"zmelixirfreefire"}, {#default_val:1, #name:#"zmelixircacheback"}, {#default_val:1, #name:#"zmelixirimmolationliquidation"}, {#default_val:1, #name:#"zmelixirphoenixup"}, {#default_val:1, #name:#"zmelixirpowerkeg"}, {#default_val:1, #name:#"zmelixirblooddebt"}, {#default_val:1, #name:#"zmelixirneardeathexperience"}, {#default_val:1, #name:#"zmelixirperkaholic"}, {#default_val:1, #name:#"zmelixirwallpower"}, {#default_val:0, #name:#"hash_429b520a87274afb"}, {#default_val:1, #name:#"zmtrapsenabled"}, {#default_val:1, #name:#"zmstartingweaponenabled"}, {#default_val:1, #name:#"zmheavyspawnfreq"}, {#default_val:1, #name:#"zmminibossspawnfreq"}, {#default_val:0, #name:#"zmselfreviveamount"}, {#default_val:1, #name:#"zmpopcornstate"}, {#default_val:1, #name:#"zmpopcorndamagemult"}, {#default_val:1, #name:#"zmpopcornhealthmult"}, {#default_val:1, #name:#"zmpopcornspawnfreq"}, {#default_val:1, #name:#"zmretainweapons"}, {#default_val:1, #name:#"zmperkdecay"}, {#default_val:0, #name:#"zmcraftingkeyline"}, {#default_val:0, #name:#"zmpointlossondown"}, {#default_val:0, #name:#"zmpointlossondeath"}, {#default_val:0, #name:#"zmpointlossonteammatedeath"}, {#default_val:1, #name:#"zmelixirantientrapment"}, {#default_val:1, #name:#"zmelixirequipmint"}, {#default_val:1, #name:#"zmelixirheadscan"}, {#default_val:1, #name:#"zmelixirjointheparty"}, {#default_val:1, #name:#"zmelixirnowherebutthere"}, {#default_val:1, #name:#"zmelixirphantomreload"}, {#default_val:1, #name:#"zmelixirshieldsup"}, {#default_val:1, #name:#"zmelixirwalltowall"}, {#default_val:1, #name:#"zmperksbandolier"}, {#default_val:1, #name:#"zmperksdeathperception"}, {#default_val:1, #name:#"zmperksphdslider"}, {#default_val:1, #name:#"zmperkssecretsauce"}, {#default_val:1, #name:#"zmperksstonecold"}, {#default_val:1, #name:#"zmperkswolfprotector"}, {#default_val:1, #name:#"zmperksdeathdash"}, {#default_val:1, #name:#"zmperksvictorious"}, {#default_val:0, #name:#"zmfriendlyfiretype"}, {#default_val:1, #name:#"zmelixirconflagrationliquidation"}, {#default_val:1, #name:#"zmelixirperkup"}, {#default_val:1, #name:#"zmelixirrefreshmint"}, {#default_val:1, #name:#"zmenhancedstate"}, {#default_val:1, #name:#"zmenhanceddamagemult"}, {#default_val:1, #name:#"zmenhancedhealthmult"}, {#default_val:1, #name:#"zmenhancedspawnfreq"});
 }
 
 // Namespace zm_custom/zm_customgame

@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_arena_lobby",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "lobby_team_shot",
+                    "aligntarget": "arena_align_tag"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_arena_team",
+    "dontsync": 1,
+    "team": "any"
+}

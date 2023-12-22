@@ -212,7 +212,7 @@ function function_8599f7cb() {
     }
     player = getplayers()[0];
     var_f77362e3 = player function_2037c576();
-    fields = getscriptbundle(#"hash_7c41940a6a9678d7");
+    fields = getscriptbundle(#"t8_specialist_archives");
     if (var_f77362e3 == 9) {
         var_d6602dc0 = fields.var_b51717c3;
     } else {

@@ -1,0 +1,44 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "extmag_wz_item"
+        },
+        {
+            "var_6be1bec7": "sniperscope_wz_item"
+        },
+        {
+            "var_6be1bec7": "extbarrel_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "stock_wz_item"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_51cdef3c83e06476",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -8,
+    "var_3e688854": -2,
+    "weapon": <error reading:hash_7503c7254d19035d>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "baseweapon": "sniper_powerbolt_t8_item",
+    "var_65b3a12": 6,
+    "var_340eac1f": 1,
+    "name": "sniper_powerbolt_t8_gold_item",
+    "var_9507cf45": "#hash_4ea2e6260eed969b",
+    "icon": "#hash_203d848df73df990",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Epic",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_4fab529d04078ebd",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

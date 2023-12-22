@@ -76,7 +76,7 @@ function function_f0297225(var_2ab9d3bd, var_f532cd9f, var_3afaa57b) {
 // Checksum 0xb62aa31a, Offset: 0x3f0
 // Size: 0x2e
 function function_d0178153(var_2ab9d3bd) {
-    level.var_ef5dbc90[var_2ab9d3bd] = #"hash_696141fcc5f2e372";
+    level.var_ef5dbc90[var_2ab9d3bd] = #"supply_drop_stash_parent_dlc1";
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3

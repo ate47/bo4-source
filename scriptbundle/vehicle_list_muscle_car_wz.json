@@ -1,0 +1,55 @@
+{
+    "itemlist": [
+        {
+            "minweight": 6,
+            "var_a6762160": "muscle_car_wz_vehicle_black",
+            "maxweight": 6,
+            "available": -1
+        },
+        {
+            "minweight": 6,
+            "var_a6762160": "muscle_car_wz_vehicle_blue",
+            "maxweight": 6,
+            "available": -1
+        },
+        {
+            "minweight": 6,
+            "var_a6762160": "muscle_car_wz_vehicle_green",
+            "maxweight": 6,
+            "available": -1
+        },
+        {
+            "minweight": 6,
+            "var_a6762160": "muscle_car_wz_vehicle_orange",
+            "maxweight": 6,
+            "available": -1
+        },
+        {
+            "minweight": 6,
+            "var_a6762160": "muscle_car_wz_vehicle_red",
+            "maxweight": 6,
+            "available": -1
+        },
+        {
+            "minweight": 6,
+            "var_a6762160": "muscle_car_wz_vehicle_white",
+            "maxweight": 6,
+            "available": -1
+        },
+        {
+            "minweight": 6,
+            "var_a6762160": "muscle_car_wz_vehicle_yellow",
+            "maxweight": 6,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "var_345eba59": 7,
+    "vehiclespawner": 1,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "vehicle_list_muscle_car_wz",
+    "var_fde72c94": 100
+}

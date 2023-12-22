@@ -1,0 +1,14 @@
+{
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "reboot_players",
+    "displayname": "#hash_7e3df9b665464b2f",
+    "var_9600a8ab": "#menu/auto",
+    "var_bd2ff709": "#hash_34a189e3711dc6e9",
+    "var_9de86f42": 2,
+    "var_4c593dfd": "#hash_475fe078c6f8dff7",
+    "var_35fb1141": "#hash_4eaa3053ce374044",
+    "setting": "rebootPlayers"
+}

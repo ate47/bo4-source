@@ -448,7 +448,7 @@ function private function_9b83c65d(localclientnum) {
                 }
                 continue;
             }
-            var_b3d8c077 = function_ab88dbd2(localclientnum, #"hash_da23f5f536ee5f2");
+            var_b3d8c077 = function_ab88dbd2(localclientnum, #"armorrepair_toggle");
             var_a3162739 = isdefined(clientdata.inventory.var_f3518190) && inventoryitem == clientdata.inventory.var_f3518190.item;
             if (waitresult._notify === var_e2d1f454) {
                 if ((!function_e23e5e85(localclientnum) || inventoryitem.count == 0 || !function_10861362(localclientnum)) && (isdefined(var_b3d8c077) && !var_b3d8c077 || isdefined(var_b3d8c077) && var_b3d8c077 && !var_a3162739)) {
@@ -2472,13 +2472,13 @@ function function_b1136fc8(localclientnum, item) {
             playsound(localclientnum, #"hash_67fed8a52accbb23", item.origin);
             break;
         case #"ammo":
-            playsound(localclientnum, #"hash_24fef443bbac697c", item.origin);
+            playsound(localclientnum, #"fly_drop_generic", item.origin);
             break;
         case #"health":
             playsound(localclientnum, #"hash_4d393a136d0df945", item.origin);
             break;
         case #"equipment":
-            playsound(localclientnum, #"hash_24fef443bbac697c", item.origin);
+            playsound(localclientnum, #"fly_drop_generic", item.origin);
             break;
         case #"armor":
             playsound(localclientnum, #"hash_6bd51d5a531ff32", item.origin);
@@ -2487,16 +2487,16 @@ function function_b1136fc8(localclientnum, item) {
             playsound(localclientnum, #"hash_60e9138ddc9660ed", item.origin);
             break;
         case #"attachment":
-            playsound(localclientnum, #"hash_24fef443bbac697c", item.origin);
+            playsound(localclientnum, #"fly_drop_generic", item.origin);
             break;
         case #"quest":
-            playsound(localclientnum, #"hash_24fef443bbac697c", item.origin);
+            playsound(localclientnum, #"fly_drop_generic", item.origin);
             break;
         case #"generic":
-            playsound(localclientnum, #"hash_24fef443bbac697c", item.origin);
+            playsound(localclientnum, #"fly_drop_generic", item.origin);
             break;
         case #"cash":
-            playsound(localclientnum, #"hash_24fef443bbac697c", item.origin);
+            playsound(localclientnum, #"fly_drop_generic", item.origin);
             break;
         }
     }
@@ -2523,7 +2523,7 @@ function function_31868137(localclientnum, item) {
             playsound(localclientnum, #"hash_7cb9f9cf7068ccee", item.origin);
             break;
         case #"equipment":
-            playsound(localclientnum, #"hash_615c575c66ed8695", item.origin);
+            playsound(localclientnum, #"fly_pickup_generic", item.origin);
             break;
         case #"armor":
             playsound(localclientnum, #"hash_2d8e1c5a5387840f", item.origin);
@@ -2538,10 +2538,10 @@ function function_31868137(localclientnum, item) {
             playsound(localclientnum, #"hash_5738a0fcb2e4efca", item.origin);
             break;
         case #"generic":
-            playsound(localclientnum, #"hash_615c575c66ed8695", item.origin);
+            playsound(localclientnum, #"fly_pickup_generic", item.origin);
             break;
         case #"cash":
-            playsound(localclientnum, #"hash_615c575c66ed8695", item.origin);
+            playsound(localclientnum, #"fly_pickup_generic", item.origin);
             break;
         }
     }

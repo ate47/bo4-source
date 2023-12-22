@@ -1,0 +1,76 @@
+{
+    "itemlist": [
+        {
+            "minweight": 180,
+            "var_a6762160": "guns_pistols_dlc1",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 180,
+            "var_a6762160": "guns_shotguns_dlc1",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 260,
+            "var_a6762160": "guns_smgs_dlc1",
+            "maxweight": 270,
+            "available": -1
+        },
+        {
+            "minweight": 190,
+            "var_a6762160": "guns_ars_dlc1",
+            "maxweight": 230,
+            "available": -1
+        },
+        {
+            "minweight": 55,
+            "var_a6762160": "guns_trs_dlc1",
+            "maxweight": 60,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "var_a6762160": "guns_lmgs_dlc1",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 20,
+            "var_a6762160": "guns_snipers_dlc1",
+            "maxweight": 23,
+            "available": -1
+        },
+        {
+            "minweight": 10,
+            "var_a6762160": "guns_launchers_dlc1",
+            "maxweight": 23,
+            "available": -1
+        },
+        {
+            "minweight": 10,
+            "var_a6762160": "guns_gold_parent_dlc1",
+            "maxweight": 15,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_zombie_dlc1",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 55,
+            "var_a6762160": "melee_weapons_dlc1",
+            "maxweight": 60,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 11,
+    "var_9b009839": -1,
+    "name": "ghosttown_list_guns_zombie",
+    "var_fde72c94": 100
+}

@@ -1,0 +1,10 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnentry",
+    "name": "suv_wz_vehicle_met_grey",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#generic_pickup",
+    "vehicle": "veh_suv_player_wz_met_gry",
+    "itemtype": "vehicle"
+}

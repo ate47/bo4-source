@@ -1,0 +1,111 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_343278b5ae78b62c",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_20baf9deb03eeaf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_365af187a5e594d5",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_7305da7f7ed0584",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_of"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_690b698b8de5aac7",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_248f13380a9ff6a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_wa"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6dc57a001c9f5239",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_out"
+                }
+            ],
+            "model": "#hash_1f67a213d3760fa9",
+            "type": "fakeactor",
+            "name": "gh_sh"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3d5e82f4c0f4fafc",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_51aa36d3054580bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_124dc7b3b7885be5",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_1665c09ebe4c57f4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_of"
+                },
+                {
+                    "name": "shot_wa"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7d587cf012d0cee9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_out"
+                }
+            ],
+            "model": "#hash_122bc018037432b0",
+            "type": "prop",
+            "name": "gh_ba"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_banjo_ghost",
+    "dontsync": 1,
+    "team": "any"
+}

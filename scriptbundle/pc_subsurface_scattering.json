@@ -1,0 +1,16 @@
+{
+    "var_d260763": "#hash_356c05dafcdcebb7",
+    "description": "#hash_26059ba4653deec3",
+    "var_60fcfffa": "#menu/off",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "name": "pc_subsurface_scattering",
+    "displayname": "#hash_2db7e90931620409",
+    "var_66faec87": 10,
+    "statname": "r_sssblurEnable",
+    "var_82c732a7": 1,
+    "minvalue": 1,
+    "var_b7401319": "#menu/on"
+}

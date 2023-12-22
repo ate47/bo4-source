@@ -1,0 +1,19 @@
+{
+    "var_d260763": "#hash_7ff90f0bea8ed361",
+    "description": "#hash_5806494c7e790cc2",
+    "var_60fcfffa": "#hash_43ecbdda975e2ac1",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.01,
+    "name": "pc_gamepad_vibration",
+    "displayname": "#hash_5ed7f44802001692",
+    "var_4a4760c0": 0.01,
+    "var_926d1be9": 0.01,
+    "var_66faec87": 4,
+    "statname": "gpad_rumble",
+    "var_82c732a7": 1,
+    "minvalue": 1,
+    "var_d4e288e": 1,
+    "var_b7401319": "#hash_439156e8d96d245"
+}

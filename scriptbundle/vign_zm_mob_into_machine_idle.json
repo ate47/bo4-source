@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6890c69d4778d7d7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_45b00ade1dbcab2b",
+            "type": "fakeactor",
+            "name": "fake_richtofen",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "vign_zm_mob_into_machine_idle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "aligntarget": "tag_align_escape_arena",
+    "team": "any"
+}

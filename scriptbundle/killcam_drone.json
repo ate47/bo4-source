@@ -1,0 +1,13 @@
+{
+    "killcambackdist": 300,
+    "killcamtype": 5,
+    "type": "killcam",
+    "vmtype": "none",
+    "killcamgroundupdist": 25,
+    "name": "killcam_drone",
+    "var_531c4094": "#explosive fast",
+    "killcamupdist": 70,
+    "killcamwallsidedist": 30,
+    "killcamwalloutdist": 10,
+    "killcamgroundbackdist": 50
+}

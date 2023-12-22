@@ -1,0 +1,18 @@
+{
+    "amount": 1,
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_f19aa05b876baa8",
+    "weapon": <error reading:hash_3c9c275a76da54d3>,
+    "type": "itemspawnentry",
+    "hintstring": "#hash_67c263ce5bc83093",
+    "name": "recon_car_wz_item",
+    "displayname": "#hash_5b1189ff13cd8b59",
+    "var_36781d9f": "fly_drop_recon_car",
+    "icon": "#hash_6bd0fde91cc52ad3",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2b4dff2e0db72d06",
+    "vehicle": "vehicle_t8_drone_recon_wz",
+    "itemtype": "killstreak",
+    "pickupsound": "fly_pickup_recon_car"
+}

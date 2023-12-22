@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6b31da4475e24f30",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 2,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_7ac958264eebd967",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_spot_light_stage_03_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

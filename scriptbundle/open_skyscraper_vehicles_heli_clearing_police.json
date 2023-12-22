@@ -1,0 +1,25 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "helicopter_light_wz_vehicle_police",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1
+        },
+        {
+            "minweight": 1,
+            "maxweight": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "vehiclespawner": 1,
+    "var_9b009839": -1,
+    "name": "open_skyscraper_vehicles_heli_clearing_police",
+    "var_fde72c94": 100
+}

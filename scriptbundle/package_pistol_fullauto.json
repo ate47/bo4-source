@@ -1,0 +1,35 @@
+{
+    "packageitems": [
+        {
+            "item": "#pistol_fullauto_t8"
+        }
+    ],
+    "attachmentupgrades": [
+        {
+            "purchasecost": 250,
+            "attachmentlist": "grip"
+        },
+        {
+            "purchasecost": 500,
+            "attachmentlist": "mixclip+stalker"
+        },
+        {
+            "purchasecost": 1000,
+            "attachmentlist": "fastreload+damage+rf"
+        }
+    ],
+    "var_ef921c3c": 1,
+    "var_922067c4": "scriptbundle",
+    "type": "bountyhunterpackage",
+    "var_85d7cf08": 1,
+    "refillcost": 250,
+    "name": "package_pistol_fullauto",
+    "var_6c83a2ba": "secondary",
+    "purchasecost": 500,
+    "startammo": 1,
+    "var_673a16ad": 1,
+    "var_11b09a45": 3,
+    "var_741010b5": 1,
+    "var_782dbf79": 1,
+    "var_767b7337": 1
+}

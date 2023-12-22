@@ -1,0 +1,28 @@
+{
+    "itemlist": [
+        {
+            "minweight": 10,
+            "var_a6762160": "health_list_good",
+            "maxweight": 25,
+            "available": -1
+        },
+        {
+            "minweight": 250,
+            "var_a6762160": "health_list_med",
+            "maxweight": 250,
+            "available": -1
+        },
+        {
+            "minweight": 900,
+            "var_a6762160": "health_list_low",
+            "maxweight": 900,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "support_structure_list_health",
+    "var_fde72c94": 100
+}

@@ -1,0 +1,8 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "gamesettings",
+    "name": "scope_pistolscope_smg_fastburst_restriction",
+    "displayname": "#weapon/smg_fastburst_t8",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__smg_fastburst_t8__attachments__pistolscope"
+}

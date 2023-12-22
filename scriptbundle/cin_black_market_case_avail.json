@@ -1,0 +1,92 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5888275faaaad392",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5888285faaaad545",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5888255faaaad02c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5888265faaaad1df",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5888235faaaaccc6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5888245faaaace79",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5888215faaaac960",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5888225faaaacb13",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                }
+            ],
+            "model": "#hash_66af1225a206cf4e",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "cin_black_market_case_avail",
+    "dontsync": 1,
+    "aligntarget": "tag_align_blackjack_character",
+    "team": "any"
+}

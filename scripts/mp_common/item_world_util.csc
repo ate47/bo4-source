@@ -478,7 +478,7 @@ function function_7363384a(name) {
     if (!isdefined(bundle)) {
         return 0;
     }
-    if (bundle.type != #"hash_10587321f369e7f3") {
+    if (bundle.type != #"itemspawnentry") {
         return 0;
     }
     return 1;
@@ -540,7 +540,7 @@ function function_35e06774(var_a6762160, var_48cfb6ca = 0) {
         if (var_48cfb6ca) {
             foreach (attachment in var_a6762160.attachments) {
                 var_fe35755b = getscriptbundle(attachment.var_6be1bec7);
-                if (!isdefined(var_fe35755b) || var_fe35755b.type != #"hash_10587321f369e7f3" || !isarray(var_fe35755b.attachments)) {
+                if (!isdefined(var_fe35755b) || var_fe35755b.type != #"itemspawnentry" || !isarray(var_fe35755b.attachments)) {
                     continue;
                 }
                 foreach (var_a4559ed2 in var_fe35755b.attachments) {

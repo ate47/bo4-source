@@ -1,0 +1,8 @@
+{
+    "type": "linear",
+    "vmtype": "server",
+    "range_max": 1000,
+    "name": "protect_entity_influencer_def",
+    "score_min": 6,
+    "lifetime": 5
+}

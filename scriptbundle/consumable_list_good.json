@@ -1,0 +1,39 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "perk_item_deadsilence",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "perk_item_stimulant",
+            "maxweight": 100
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "perk_item_lightweight",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "perk_item_engineer",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "perk_item_outlander",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "name": "consumable_list_good",
+    "var_fde72c94": 100
+}

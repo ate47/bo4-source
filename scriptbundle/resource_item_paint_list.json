@@ -1,0 +1,42 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "resource_item_paint",
+            "maxweight": 1,
+            "available": 100
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "resource_item_paint",
+            "maxweight": 1,
+            "available": 75
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 1024,
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "resource_item_paint_list",
+    "var_fde72c94": 100
+}

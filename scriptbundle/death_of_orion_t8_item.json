@@ -1,0 +1,17 @@
+{
+    "amount": 1,
+    "description": "#hash_6b454c4591b3595d",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:ww_crossbow_t8_wz>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 35,
+    "var_65b3a12": 6,
+    "name": "death_of_orion_t8_item",
+    "icon": "#hash_38208b311390cffb",
+    "modelscale": 1,
+    "rarity": "Common",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_7779d39c7d74d38c",
+    "var_50773731": 3,
+    "itemtype": "weapon"
+}

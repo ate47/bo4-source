@@ -1,0 +1,10 @@
+{
+    "var_922067c4": "scriptbundle",
+    "model": "#c_t8_zmb_blightfather_body1",
+    "type": "ainotetrackbonemapping",
+    "footstep_left_forward": "j_palm_le",
+    "footstep_right_back": "j_ball_ri",
+    "name": "blightfather_footstep_notetrack_bones",
+    "footstep_right_forward": "j_palm_ri",
+    "footstep_left_back": "j_ball_le"
+}

@@ -399,14 +399,14 @@ function function_aa8c6854(name, func) {
 // Size: 0x152
 function function_7beea81f(tacbundle) {
     self endoncallback(&function_7f65a721, #"death", #"hash_2747b8ce1136a8ae");
-    if (!isdefined(tacbundle.var_dd394d4e)) {
+    if (!isdefined(tacbundle.positionhandlerlist)) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/
         return;
     }
     handled = 0;
-    foreach (params in tacbundle.var_dd394d4e) {
+    foreach (params in tacbundle.positionhandlerlist) {
         if (isdefined(self function_22d4d2d(params, tacbundle)) && self function_22d4d2d(params, tacbundle)) {
             self.bot.var_87f1dd0b = params.name;
             handled = 1;

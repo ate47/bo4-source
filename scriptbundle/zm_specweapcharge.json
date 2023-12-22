@@ -1,0 +1,16 @@
+{
+    "hinttext": "#hash_703a2deebaf948fb",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "label": "#hash_1ba60b6389d20648",
+    "name": "zm_specweapcharge",
+    "displayname": "#hash_556736ffab760c01",
+    "var_9600a8ab": "#hash_51aa03eea5a0dd76",
+    "var_71b6e020": "#hash_1413f5dcb3e0f537",
+    "var_bd2ff709": "#hash_7e5de0c85e3519f0",
+    "var_9de86f42": 3,
+    "setting": "zmSpecWeaponChargeRate"
+}

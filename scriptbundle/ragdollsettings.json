@@ -1,0 +1,11 @@
+{
+    "var_2d50617": "#pb_death_base_pose",
+    "var_922067c4": "scriptbundle",
+    "type": "ragdollsettings",
+    "var_4790d8dd": "#ai_robot_base_stn_exposed_dth_pose",
+    "var_91d279ad": "#ai_wrlrd_stn_combat_dth_pose",
+    "name": "ragdollsettings",
+    "humanidleanim": "#ai_base_rifle_stn_exposed_dth_pose",
+    "var_6c83cd47": "#ai_fem_rifle_stn_exposed_dth_pose",
+    "var_2cea3cec": "#ai_zombie_base_dth_pose"
+}

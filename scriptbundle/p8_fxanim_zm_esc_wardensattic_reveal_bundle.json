@@ -1,0 +1,178 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_55c8bd2c7f4014d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_32b13c90c94b5fed",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "main & idle loop out"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_6d234845b19fd86c",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4c5f55ed83785e44",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5ad91ca56817be0e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "var_64c0ee5a": "#hash_5b7e58a36965d339",
+                    "name": "main & idle loop out",
+                    "var_1c7fbd6b": "#hash_2965fe8d1a666bd5"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_5bf16edc632384b4",
+            "type": "prop",
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_347a27023d7e58e0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6303a1315c4ae8f2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "var_64c0ee5a": "#hash_b75edbc7cb84245",
+                    "name": "main & idle loop out",
+                    "var_1c7fbd6b": "#hash_2f1f59e623562969"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_c867567ba51ce70",
+            "type": "prop",
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5e86d4db42429dc6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_95be7883cd30a04",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "var_64c0ee5a": "#hash_c0be606b929d4b3",
+                    "name": "main & idle loop out",
+                    "var_1c7fbd6b": "#hash_2d032cdc55a44677"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_7bb68a2317606de2",
+            "type": "prop",
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_44123800a8a26694",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7cb4d35ef992311e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "var_64c0ee5a": "#hash_52beecfecb853d49",
+                    "name": "main & idle loop out",
+                    "var_1c7fbd6b": "#hash_40072624c6939745"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_29169eb8367e8c24",
+            "type": "prop",
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25c6562c46485115",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_70cdb6116af51cb5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "var_64c0ee5a": "#hash_7ba9ec5340fc5c30",
+                    "name": "main & idle loop out",
+                    "var_1c7fbd6b": "#hash_1da8304b99e59614"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_193bfa8e253b7ccb",
+            "type": "prop",
+            "name": "prop 7"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_wardensattic_reveal_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

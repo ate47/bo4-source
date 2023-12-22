@@ -1,0 +1,17 @@
+{
+    "amount": 1,
+    "description": "#hash_186b3aae8cacae88",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_5c8dfd9eda4c8296>,
+    "type": "itemspawnentry",
+    "var_e6ac0592": -90,
+    "name": "sensor_dart_wz_item",
+    "displayname": "#hash_504ad2d8233fb0ac",
+    "stackcount": 1,
+    "icon": "#hash_e02c2f146b573f8",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "var_50773731": 1,
+    "itemtype": "equipment"
+}

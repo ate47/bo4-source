@@ -1,0 +1,11 @@
+{
+    "lootid": "#hash_56d693af1d0418b5",
+    "wingsuit": "c_t8_bo_wingsuit_fire_and_fury",
+    "feature": "loot_season_06",
+    "image": "loot_06_ui_icon_blackmarket_reserves_jumppack_fire",
+    "name": "c_t8_bo_jumpkit_fire_and_fury",
+    "displayname": "#hash_29769c69201fdc49",
+    "var_15d11806": "loot_06_ui_icon_blackmarket_reserves_jumppack_fire",
+    "var_4fa85a25": "dfxt_fire",
+    "parachute": "c_t8_bo_parachute_fire_and_fury"
+}

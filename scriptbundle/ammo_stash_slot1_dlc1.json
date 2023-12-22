@@ -1,0 +1,40 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "grapple_wz_item",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sensor_dart_wz_item",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "trophy_system_wz_item",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "dart_wz_item",
+            "maxweight": 100,
+            "available": 1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ultimate_turret_wz_item",
+            "maxweight": 100,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "name": "ammo_stash_slot1_dlc1",
+    "var_fde72c94": 100
+}

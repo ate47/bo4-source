@@ -1,0 +1,70 @@
+{
+    "itemlist": [
+        {
+            "minweight": 375,
+            "var_a6762160": "wz_escape_list_guns",
+            "maxweight": 375,
+            "available": -1
+        },
+        {
+            "minweight": 400,
+            "var_a6762160": "wz_escape_list_health",
+            "maxweight": 400,
+            "available": -1
+        },
+        {
+            "minweight": 150,
+            "var_a6762160": "wz_escape_list_equipment",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 115,
+            "var_a6762160": "wz_escape_list_gear",
+            "maxweight": 115,
+            "available": -1
+        },
+        {
+            "minweight": 180,
+            "var_a6762160": "wz_escape_list_consumable",
+            "maxweight": 180,
+            "available": -1
+        },
+        {
+            "minweight": 270,
+            "var_a6762160": "wz_escape_list_attachment",
+            "maxweight": 270,
+            "available": -1
+        },
+        {
+            "minweight": 300,
+            "var_a6762160": "wz_escape_list_ammo",
+            "maxweight": 300,
+            "available": -1
+        },
+        {
+            "minweight": 60,
+            "var_a6762160": "storage_list",
+            "maxweight": 60,
+            "available": -1
+        },
+        {
+            "minweight": 45,
+            "var_a6762160": "world_base_event_parent",
+            "maxweight": 65,
+            "available": -1
+        },
+        {
+            "minweight": 70,
+            "var_a6762160": "wz_escape_list_armor_shards",
+            "maxweight": 70,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 10,
+    "var_9b009839": -1,
+    "name": "wz_escape_dest_powerhouse_list_items",
+    "var_fde72c94": 100
+}

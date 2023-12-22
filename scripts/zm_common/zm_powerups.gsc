@@ -46,7 +46,7 @@ function init() {
     zombie_utility::set_zombie_var(#"zombie_powerup_double_points_on", 0, undefined, undefined, 1);
     zombie_utility::set_zombie_var(#"zombie_powerup_double_points_time", 30, undefined, undefined, 1);
     if (zm_custom::function_901b751c(#"zmpowerupsislimitedround")) {
-        zombie_utility::set_zombie_var(#"zombie_powerup_drop_max_per_round", zm_custom::function_901b751c(#"hash_d46a4e7a41e005c"));
+        zombie_utility::set_zombie_var(#"zombie_powerup_drop_max_per_round", zm_custom::function_901b751c(#"zmpowerupslimitround"));
     } else {
         zombie_utility::set_zombie_var(#"zombie_powerup_drop_max_per_round", 4);
     }

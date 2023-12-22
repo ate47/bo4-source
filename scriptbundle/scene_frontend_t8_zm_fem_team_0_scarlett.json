@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_a7abe08232d763e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "specialist"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_zm_fem_team_0_scarlett",
+    "dontsync": 1,
+    "aligntarget": "zm_lobby_player_0",
+    "team": "any"
+}

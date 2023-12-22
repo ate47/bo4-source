@@ -1,0 +1,28 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "ray_gun_mk2x_t8_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "ray_gun_mk2y_t8_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "ray_gun_mk2z_t8_item",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "zombie_supply_stash_raygun_mk_variants",
+    "var_fde72c94": 100
+}

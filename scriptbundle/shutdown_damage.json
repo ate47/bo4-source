@@ -1,0 +1,17 @@
+{
+    "hinttext": "#hash_13f5be8fba144e5",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_dfed6968": "3",
+    "type": "gamesettings",
+    "name": "shutdown_damage",
+    "displayname": "#hash_510464699f475ccb",
+    "var_684ccd4c": "#menu/high",
+    "var_9600a8ab": "#hash_57fb4483fdb80448",
+    "var_71b6e020": "#menu/normal",
+    "var_bd2ff709": "#menu/low",
+    "var_9de86f42": 4,
+    "setting": "shutdownDamage"
+}

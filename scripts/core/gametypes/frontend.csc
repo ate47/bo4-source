@@ -204,7 +204,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Size: 0x84
 function function_e843475e(localclientnum, menuname) {
     lui::createcameramenu(menuname, localclientnum, #"hash_7e0fa2bd8b44780b", #"hash_64fa56583c3b00bd");
-    lui::function_9d7ab167(menuname, localclientnum, 3, #"hash_61410e49e7089bf1", #"hash_191c3f4fc94449f1");
+    lui::function_9d7ab167(menuname, localclientnum, 3, #"wz_inspection_struct", #"hash_191c3f4fc94449f1");
 }
 
 // Namespace frontend/frontend
@@ -509,7 +509,7 @@ function function_daa3f7d0(localclientnum, weaponinfo, should_update_weapon_opti
         level.var_44011752 setscale(info.scale);
         level.var_44011752.targetname = "customized_inspection_weapon";
         level.var_44011752 useanimtree("generic");
-        position = struct::get(#"hash_551034d0d6c9e1f8");
+        position = struct::get(#"tag_align_inspection_weapon1");
         origin = position.origin + info.offset;
         angles = position.angles + info.angles;
         level.var_44011752 thread animation::play(#"hash_3689442490c2e5dd", origin, angles);
@@ -831,7 +831,7 @@ function function_fb399a61(localclientnum) {
     /#
         lui::createcustomcameramenu("<unknown string>", localclientnum, &function_4920c25a, 1, undefined, undefined, 0);
         lui::linktocustomcharacter("<unknown string>", localclientnum, "<unknown string>");
-        target = struct::get(#"hash_4d207c140767b515");
+        target = struct::get(#"character_staging_extracam1");
         /#
             assert(isdefined(target));
         #/
@@ -1284,7 +1284,7 @@ function function_31a3348c(session_mode) {
 function function_deed1dbf(localclientnum) {
     var_b4a66a1f = util::spawn_model(localclientnum, "tag_origin", (0, 0, 0), (0, 0, 0));
     var_b4a66a1f.targetname = "frozen_moment_character";
-    level.var_3272b721 = character_customization::function_dd295310(var_b4a66a1f, localclientnum, 1);
+    level.frozen_moment_character = character_customization::function_dd295310(var_b4a66a1f, localclientnum, 1);
     var_e7eccf53 = util::spawn_model(localclientnum, "tag_origin", (0, 0, 0), (0, 0, 0));
     var_e7eccf53.targetname = "cycle_frozen_moment_char_current";
     level.var_555d5fad = character_customization::function_dd295310(var_e7eccf53, localclientnum, 1);
@@ -1376,7 +1376,7 @@ function localclientconnect(localclientnum) {
     var_22f20461 = character_customization::function_dd295310(var_acd4d941, localclientnum, 0);
     [[ var_22f20461 ]]->function_1ec9448d(1);
     [[ var_22f20461 ]]->update();
-    level.var_8b6d5e2a = function_f2e7abdc(localclientnum, "updateSpecialistCustomization");
+    level.specialist_customization = function_f2e7abdc(localclientnum, "updateSpecialistCustomization");
     level thread scene::play(#"scene_frontend_inspection_weapon", "inspection_weapon_full");
     function_becded4f(localclientnum);
     function_a588eb2e(localclientnum);
@@ -1451,7 +1451,7 @@ function function_d3cd6cf7(localclientnum, var_d0b01271, waitresult, params) {
         params.var_c76f3e47 = 1;
         params.var_d8cb38a9 = 1;
         if (lui::is_current_menu(localclientnum, "ItemShopDetails") || lui::is_current_menu(localclientnum, "ItemShopDetailsSunset") || lui::is_current_menu(localclientnum, "QuarterMasterMenu") || lui::is_current_menu(localclientnum, "ContractDetails") || lui::is_current_menu(localclientnum, "ContractDetailsSunset") || lui::is_current_menu(localclientnum, "BlackMarketBountyDetails") || lui::is_current_menu(localclientnum, "WeaponBribeSelection")) {
-            params.scene_target = struct::get(#"hash_6061c241c576af48");
+            params.scene_target = struct::get(#"tag_align_quartermaster");
             params.anim_name = [[ var_d0b01271 ]]->function_8144231c();
             params.align_struct = struct::get(#"hash_53e916b1367dbee0");
             params.scene = undefined;
@@ -1467,7 +1467,7 @@ function function_d3cd6cf7(localclientnum, var_d0b01271, waitresult, params) {
             params.scene = fields.var_bb70c379;
         } else if (lui::is_current_menu(localclientnum, "AARMissionRewardOverlay", waitresult.character_index)) {
             params.scene = fields.var_be6ea125;
-            params.scene_target = struct::get(#"hash_143a7ce67a7f527f");
+            params.scene_target = struct::get(#"wz_unlock_struct");
         } else if (lui::is_current_menu(localclientnum, "MPSpecialistHUBGestures")) {
             params.anim_name = [[ var_d0b01271 ]]->function_8144231c();
             params.align_struct = struct::get(#"cac_specialist");
@@ -2071,7 +2071,7 @@ function function_f00ff0c7(localclientnum) {
 // Size: 0x15c
 function function_b1b8f767(localclientnum, play) {
     var_6aeec2ad = getdvarstring(#"hash_52abdac1a234fa29", "");
-    var_bfe5e572 = struct::get(#"hash_7a5d3eacb61b9292" + var_6aeec2ad);
+    var_bfe5e572 = struct::get(#"lobby_align_tag" + var_6aeec2ad);
     if (isdefined(var_bfe5e572)) {
         if (play) {
             var_bfe5e572.var_e8b5aff5 = 1;
@@ -2183,7 +2183,7 @@ function lobby_main(localclientnum, menu_name, state) {
             function_e56abdb(localclientnum);
         }
     }
-    camera_ent = struct::get(#"hash_427b5ca46a7bebc8");
+    camera_ent = struct::get(#"tag_align_frozen");
     var_fce147fa = 1;
     var_1c5551d6 = 0;
     var_d43870a7 = undefined;
@@ -2405,11 +2405,11 @@ function function_a71254a9(localclientnum, play, var_211dbb67, var_1c5551d6 = 0,
                     scene_shot = undefined;
                 }
             }
-            [[ level.var_3272b721 ]]->function_15a8906a(var_211dbb67);
+            [[ level.frozen_moment_character ]]->function_15a8906a(var_211dbb67);
             params = {#scene_shot:scene_shot, #var_8d3b5f69:1, #var_d8cb38a9:1, #var_c76f3e47:1, #scene:var_53511779};
-            [[ level.var_3272b721 ]]->update(params);
-            character_index = [[ level.var_3272b721 ]]->function_9004475c();
-            character_mode = [[ level.var_3272b721 ]]->get_character_mode();
+            [[ level.frozen_moment_character ]]->update(params);
+            character_index = [[ level.frozen_moment_character ]]->function_9004475c();
+            character_mode = [[ level.frozen_moment_character ]]->get_character_mode();
             var_6d8e8e31 = isdefined(function_3dc16db1(character_mode, character_index)) ? function_3dc16db1(character_mode, character_index) : 0;
             level.var_8013e6bd = var_53511779;
             level.var_4e236556 = var_211dbb67;
@@ -2419,7 +2419,7 @@ function function_a71254a9(localclientnum, play, var_211dbb67, var_1c5551d6 = 0,
             }
         }
     } else if (!play && isdefined(level.var_8013e6bd)) {
-        [[ level.var_3272b721 ]]->function_39a68bf2();
+        [[ level.frozen_moment_character ]]->function_39a68bf2();
         fbc = getuimodel(getglobaluimodel(), "lobbyRoot.fullscreenBlackCount");
         if (var_1c5551d6) {
             setuimodelvalue(fbc, 1);
@@ -2490,7 +2490,7 @@ function function_25b060af(localclientnum, menu_name, state) {
 function function_f8cec907(localclientnum, menu_name, state) {
     var_d0b01271 = lui::getcharacterdataformenu(menu_name, localclientnum);
     [[ var_d0b01271 ]]->show_model();
-    camera_ent = struct::get(#"hash_143a7ce67a7f527f");
+    camera_ent = struct::get(#"wz_unlock_struct");
     playmaincamxcam(localclientnum, #"hash_29ce5a87ce25b761", 0, "", "", camera_ent.origin, camera_ent.angles);
     if (isdefined(state)) {
         args = strtok(state, ";");
@@ -2560,7 +2560,7 @@ function wz_personalize_character(localclientnum, menu_name, state) {
 function function_a8095769(localclientnum, menu_name) {
     var_d0b01271 = lui::getcharacterdataformenu(menu_name, localclientnum);
     [[ var_d0b01271 ]]->show_model();
-    camera_ent = struct::get(#"hash_6061c241c576af48");
+    camera_ent = struct::get(#"tag_align_quartermaster");
     playmaincamxcam(localclientnum, #"hash_16ae6f8f27541925", 0, "", "", camera_ent.origin, camera_ent.angles);
 }
 
@@ -2663,7 +2663,7 @@ function function_837446a8(localclientnum, menu_name, state) {
         [[ var_d0b01271 ]]->function_4240a39a(0);
         [[ var_d0b01271 ]]->show_model();
         weapon_model hide();
-        scene = #"hash_405078b6916e2229";
+        scene = #"scene_frontend_quartermaster_character";
         break;
     case #"character_full":
         [[ var_d0b01271 ]]->function_4240a39a(1, vectorscale((0, 1, 0), 90));
@@ -2671,7 +2671,7 @@ function function_837446a8(localclientnum, menu_name, state) {
         [[ var_d0b01271 ]]->function_4240a39a(0);
         [[ var_d0b01271 ]]->show_model();
         weapon_model hide();
-        scene = #"hash_7cf7be2d8080bb9b";
+        scene = #"scene_frontend_quartermaster_character_full";
         break;
     case #"character_face":
         [[ var_d0b01271 ]]->function_4240a39a(1, vectorscale((0, 1, 0), 90));
@@ -2679,18 +2679,18 @@ function function_837446a8(localclientnum, menu_name, state) {
         [[ var_d0b01271 ]]->function_4240a39a(0);
         [[ var_d0b01271 ]]->show_model();
         weapon_model hide();
-        scene = #"hash_1795d92d47ce019b";
+        scene = #"scene_frontend_quartermaster_character_face";
         break;
     case #"weapon":
         [[ var_d0b01271 ]]->hide_model();
         weapon_model show();
-        scene = #"hash_425fe6156a45fbce";
+        scene = #"scene_frontend_quartermaster_weapon";
         break;
     case #"crate":
         [[ var_d0b01271 ]]->hide_model();
         weapon_model hide();
         season = getdvarstring(#"mtx_seasonal_exploder");
-        scene = #"hash_335aae37443ebd6d" + season;
+        scene = #"scene_frontend_quartermaster_crate" + season;
         exploder = "fxexp_mtx_crate" + season;
         break;
     default:

@@ -1,0 +1,19 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "fav_wz_vehicle_heroes",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "vehiclespawner": 1,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "vehicle_list_arav_heroes_wz",
+    "var_fde72c94": 100
+}

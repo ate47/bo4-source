@@ -287,7 +287,7 @@ function event_handler[grenade_fire] function_f9d992c2(eventstruct) {
 // Checksum 0x6ac82341, Offset: 0x1000
 // Size: 0x2e
 function function_783a1c07(weapon) {
-    level.var_7c063d70 = getscriptbundle(weapon.customsettings);
+    level.mute_smoke_custom_settings = getscriptbundle(weapon.customsettings);
 }
 
 // Namespace mute_smoke/mute_smoke
@@ -298,7 +298,7 @@ function function_a4998ccd(grenade_origin, player_origin, weapon) {
     /#
         function_783a1c07(weapon);
     #/
-    settings = level.var_7c063d70;
+    settings = level.mute_smoke_custom_settings;
     var_a19445f = self playerads() >= 1;
     var_de0fa6f1 = isdefined(settings.var_de0fa6f1) ? settings.var_de0fa6f1 : var_a19445f ? isdefined(settings.var_d75099e) ? settings.var_d75099e : 0 : 0;
     var_46f48578 = max(isdefined(settings.var_46f48578) ? settings.var_46f48578 : var_a19445f ? isdefined(settings.var_bdb59983) ? settings.var_bdb59983 : 0 : 0, 0.1);

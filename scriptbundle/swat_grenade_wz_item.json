@@ -1,0 +1,16 @@
+{
+    "amount": 1,
+    "description": "#hash_560d256b9ff2b04e",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_3a19eaf2033c6fae>,
+    "type": "itemspawnentry",
+    "name": "swat_grenade_wz_item",
+    "displayname": "#hash_6c7cf85b494507e4",
+    "stackcount": 1,
+    "icon": "#hash_3a339bd695570f84",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "var_50773731": 3,
+    "itemtype": "equipment"
+}

@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#hash_2fd27827549b37b8",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "gear_medicalgun_restriction",
+    "displayname": "#hash_6419614a6d39456",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__gear_medicalinjectiongun__restricted"
+}

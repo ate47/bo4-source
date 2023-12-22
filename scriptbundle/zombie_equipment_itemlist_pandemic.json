@@ -1,0 +1,52 @@
+{
+    "itemlist": [
+        {
+            "minweight": 8,
+            "var_a6762160": "concertina_wire_wz_item",
+            "maxweight": 8,
+            "available": 1
+        },
+        {
+            "minweight": 8,
+            "var_a6762160": "barricade_wz_item",
+            "maxweight": 8,
+            "available": 1
+        },
+        {
+            "minweight": 8,
+            "var_a6762160": "cluster_semtex_wz_item",
+            "maxweight": 8,
+            "available": 1
+        },
+        {
+            "minweight": 8,
+            "var_a6762160": "frag_grenade_wz_item",
+            "maxweight": 8,
+            "available": 1
+        },
+        {
+            "minweight": 8,
+            "var_a6762160": "molotov_wz_item",
+            "maxweight": 8,
+            "available": 1
+        },
+        {
+            "minweight": 8,
+            "var_a6762160": "wraithfire_wz_item",
+            "maxweight": 8,
+            "available": 1
+        },
+        {
+            "minweight": 8,
+            "var_a6762160": "trip_wire_wz_item",
+            "maxweight": 8,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 7,
+    "var_9b009839": -1,
+    "name": "zombie_equipment_itemlist_pandemic",
+    "var_fde72c94": 100
+}

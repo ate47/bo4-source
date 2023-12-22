@@ -1,0 +1,13 @@
+{
+    "var_d260763": "#hash_a7c25afa58937a7",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_43883094": "0",
+    "type": "gamesettings",
+    "name": "equipment_spawnbeacon_restriction",
+    "displayname": "#hash_67021e2872781bfa",
+    "var_9600a8ab": "#menu/enabled",
+    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "var_9de86f42": 2,
+    "setting": "itemRestrictions__gadget_spawnbeacon__restricted"
+}

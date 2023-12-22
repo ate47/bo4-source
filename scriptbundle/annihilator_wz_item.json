@@ -1,0 +1,63 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_70bb3626628d98b9",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_6ee1aa243be31b4a",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_1bb5c737dc5dbc0d",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_2ab30ae80d7cd215",
+            "var_57b131bd": 3
+        },
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_6f747fe028443016",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_7d2a9602a619d67b",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_4175bed334f4b2f2",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_4175bed334f4b2f2",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_2ab308e80d7cceaf"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_6d0c15c50ea1e609",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 3,
+    "var_e8b98a8a": "#hash_31b5340e9a1b398c",
+    "weapon": <error reading:hero_annihilator_wz>,
+    "type": "itemspawnentry",
+    "unlockableitemref": "#hash_3fd5bb2354a7541d",
+    "var_e6ac0592": 90,
+    "name": "annihilator_wz_item",
+    "displayname": "#weapon/hero_annihilator",
+    "icon": "#hash_525f5d5ffa5436eb",
+    "modelscale": 1,
+    "rarity": "None",
+    "var_a51bc1f7": "#hash_1b38cf5bb8542cbd",
+    "handler": "#hash_50375e5de228e9fc",
+    "rewardname": "#hash_3b87d7eb92a261aa",
+    "pickupicon": "#hash_2d5d971b8f5567d",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

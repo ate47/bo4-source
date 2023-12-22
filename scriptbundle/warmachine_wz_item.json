@@ -1,0 +1,48 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_45f6c271560b065c",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_47a314be32a9bba5",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_144fc182e418be9c",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_3ca065480a56ae26",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_3ca064480a56ac73"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_59b8e8c585b73022",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 2,
+    "var_e8b98a8a": "#hash_212a3bd4984ce7b3",
+    "var_5dc4470b": -6,
+    "var_3e688854": -2,
+    "model": "#hash_f298754b73b7362",
+    "weapon": <error reading:hero_pineapplegun_wz>,
+    "type": "itemspawnentry",
+    "unlockableitemref": "#hash_6afae4d580e740ba",
+    "var_e6ac0592": 90,
+    "name": "warmachine_wz_item",
+    "displayname": "#weapon/hero_pineapplegun",
+    "icon": "#hash_18dc3783e4bab519",
+    "modelscale": 1,
+    "rarity": "None",
+    "var_a51bc1f7": "#hash_1646adf908196648",
+    "handler": "#hash_50375e5de228e9fc",
+    "rewardname": "#hash_759cb09309cf4447",
+    "pickupicon": "#hash_1bd5795d910b3a95",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

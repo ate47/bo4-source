@@ -1,0 +1,61 @@
+{
+    "objectives": [
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_1f5091f592b63363",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_9bce5a2bfdc5970",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_5bb56d2da8ca648b",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_1f5091f592b63363",
+            "var_57b131bd": 3
+        },
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_567b107b1cfdbb2c",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_19abedbf61eb06d5",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_3adc2f8d48c2cccc",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_1f5092f592b63516",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_1f5093f592b636c9"
+        }
+    ],
+    "description": "#hash_7fbe67060c64d1e3",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 3,
+    "var_e8b98a8a": "#hash_5deb16df644e7e5e",
+    "model": "#p8_wz_cu_hat_wool",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_99fc2e66d019964",
+    "unlockableitemref": "#hash_78beb7e0db26fa7d",
+    "var_7adcadc1": 10,
+    "name": "cu21_item",
+    "displayname": "#hash_99fc2e66d019964",
+    "icon": "#hash_54e0cd232527b698",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_244ee9beaa552ff7",
+    "var_50773731": -1,
+    "itemtype": "quest"
+}

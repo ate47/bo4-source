@@ -1,0 +1,24 @@
+{
+    "rewardlist": [
+        {
+            "reward": "zm_halloween_2018_reward_1",
+            "task": "zombiekiller_task"
+        },
+        {
+            "reward": "zm_halloween_2018_reward_2",
+            "task": "survivor_task"
+        },
+        {
+            "reward": "zm_halloween_2018_reward_3",
+            "task": "headhunter_task"
+        },
+        {
+            "reward": "zm_halloween_2018_reward_4",
+            "task": "packingheat_task"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "eventname": "#hash_655aa46bbfd449b1",
+    "name": "zm_halloween_2018",
+    "var_febf6e03": "#hash_42cb8a52a85047c1"
+}

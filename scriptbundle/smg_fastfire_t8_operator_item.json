@@ -1,0 +1,45 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "laser_sight_wz_item"
+        },
+        {
+            "var_6be1bec7": "uber"
+        },
+        {
+            "var_6be1bec7": "stock_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "advmag_wz_item"
+        },
+        {
+            "var_6be1bec7": "reflex_wz_item"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_2abed302f5aae83c",
+    "var_922067c4": "scriptbundle",
+    "var_3e688854": -2,
+    "weapon": <error reading:smg_fastfire_t8_operator_wz>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "var_dc6c5d3b": 1,
+    "var_65b3a12": 6,
+    "name": "smg_fastfire_t8_operator_item",
+    "var_9507cf45": "#hash_475c30a6b19552e",
+    "icon": "#hash_61f6aa7d3df5d271",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Legendary",
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_5bb3d1ba33e277a3",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

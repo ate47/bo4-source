@@ -1,0 +1,80 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53bb7d970f369bd0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_2fbc31b782c52b97",
+            "type": "prop",
+            "name": "boss_1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6a2ece7ba58573fb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_1cd365685eb76aec",
+            "type": "prop",
+            "name": "p_shield"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b1ef1925070fbd3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#hash_39b17285015a6944",
+            "type": "prop",
+            "name": "p_sword"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53bb80970f36a0e9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align_red_boss"
+                }
+            ],
+            "model": "#c_t8_zmb_dlc2_pegasus_fb",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_boss1_stg1_to_stg2_01",
+    "dontsync": 1,
+    "team": "any"
+}

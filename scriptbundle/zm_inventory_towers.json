@@ -1,0 +1,269 @@
+{
+    "wonderweaponphases": [
+        {
+            "components": [
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_422774b6767f9cf6"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_5a5e52848e6328d3"
+                        }
+                    ],
+                    "var_1d91eeba": 2,
+                    "clientfield": "#hash_46e7cf2b7aa7c22"
+                },
+                {
+                    "stages": [
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_1b3e3da163198e8f"
+                        },
+                        {
+                            "numneeded": 1,
+                            "var_2d787849": "#hash_17884640cc79cbb5"
+                        }
+                    ],
+                    "var_1d91eeba": 2,
+                    "clientfield": "#hash_d3e328bb2670edf"
+                }
+            ],
+            "var_b048489f": 2
+        }
+    ],
+    "shieldpieces": [
+        {
+            "var_37acb3da": "#hash_79d9d85eebdb2b66",
+            "clientfield": "#hash_92a0fdeb0b5ec56"
+        },
+        {
+            "var_37acb3da": "#hash_34a98cabb57ff31f",
+            "clientfield": "#hash_92a0edeb0b5eaa3"
+        },
+        {
+            "var_37acb3da": "#hash_19e0a200ef5cbde3",
+            "clientfield": "#hash_92a10deb0b5ee09"
+        }
+    ],
+    "quests": [
+        {
+            "phases": [
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_210536e4be42ef04"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_3250b2a811943f26"
+                        },
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_70109bca5336af3f"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_3250b1a811943d73"
+                        },
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_7fd21984ebe5983d"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_3250b0a811943bc0"
+                        }
+                    ],
+                    "var_ffd1cb07": 3
+                }
+            ],
+            "var_516217cd": 1,
+            "name": "trap parts"
+        }
+    ],
+    "challenges": [
+        {
+            "numneeded": 6,
+            "var_3e63e7e4": "#hash_3edd4a623fc74bce",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 10,
+            "var_3e63e7e4": "#hash_6ae8481555edd32",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 13,
+            "var_3e63e7e4": "#hash_1e2dbe377100a39f",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 5,
+            "var_3e63e7e4": "#hash_3b7574758a2049ce",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 1,
+            "var_3e63e7e4": "#hash_d63a7885e762aa5",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 9,
+            "var_3e63e7e4": "#hash_6e8e6d2639901410",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 5,
+            "var_3e63e7e4": "#hash_633d7079a7b20701",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 3,
+            "var_3e63e7e4": "#hash_4758a78b4732480d",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 1,
+            "var_3e63e7e4": "#hash_40d3b427f5fcc414",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "var_3e63e7e4": "#hash_246e66cb1b63cbdf",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 9,
+            "var_3e63e7e4": "#hash_7d4bd5aa38a4f41b",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 9,
+            "var_3e63e7e4": "#hash_1e6964fc2922d01a",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 9,
+            "var_3e63e7e4": "#hash_6cace1c666f1a9b1",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 1,
+            "var_3e63e7e4": "#hash_74af66549232171",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 1,
+            "var_3e63e7e4": "#hash_4741e74c4ca6f8ce",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 20,
+            "var_3e63e7e4": "#hash_7bbf2a5487ffe0c",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        }
+    ],
+    "objprogitems": [
+        {
+            "description": "#hash_40388b79ccbf74d3"
+        },
+        {
+            "description": "#hash_40388c79ccbf7686"
+        },
+        {
+            "description": "#hash_40388d79ccbf7839"
+        },
+        {
+            "description": "#hash_40388e79ccbf79ec"
+        },
+        {
+            "description": "#hash_40388f79ccbf7b9f"
+        },
+        {
+            "description": "#hash_40389079ccbf7d52"
+        }
+    ],
+    "packapunchitems": [
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_5edd1c366f3b5d99"
+                },
+                {
+                    "var_2d787849": "#hash_6417bdc40a7cf000"
+                },
+                {
+                    "var_2d787849": "#hash_41d9193b20e08f2e"
+                }
+            ],
+            "var_1d91eeba": 3,
+            "clientfield": "#hash_4fce42c559430ff9"
+        },
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_5edd1c366f3b5d99"
+                },
+                {
+                    "var_2d787849": "#hash_6417bdc40a7cf000"
+                },
+                {
+                    "var_2d787849": "#hash_41d9193b20e08f2e"
+                }
+            ],
+            "var_1d91eeba": 3,
+            "clientfield": "#hash_61f69ed4cbd8f2f5"
+        },
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_74edeec8dbe74202"
+                },
+                {
+                    "var_2d787849": "#hash_7e2a17d0e7b8bcbf"
+                },
+                {
+                    "var_2d787849": "#hash_453f84c3b5e6660f"
+                }
+            ],
+            "var_1d91eeba": 3,
+            "clientfield": "#hash_6257a73f22800e57"
+        },
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_3bd4dd11278c2664"
+                },
+                {
+                    "var_2d787849": "#hash_166543cc70e067e5"
+                },
+                {
+                    "var_2d787849": "#hash_78d40d61b260bc05"
+                }
+            ],
+            "var_1d91eeba": 3,
+            "clientfield": "#hash_5114ed99a6bad03b"
+        }
+    ],
+    "var_fde97bcd": "#hash_7caa43a24c715df",
+    "var_5a90928f": "#zm_towers_challenges",
+    "var_922067c4": "scriptbundle",
+    "var_aa76b7dd": 6,
+    "var_6fa1ca44": 1,
+    "type": "zminventory",
+    "var_af62a8e8": 3,
+    "name": "zm_inventory_towers",
+    "var_f128673a": "#hash_2028b2c0395c86bf",
+    "var_a05daa90": 4,
+    "var_c029b82f": 1,
+    "var_846fa8e": "#zm_towers_objective_progress",
+    "var_f22d6ad5": 16,
+    "var_f7d932ea": "#zm_towers_challenges_progress",
+    "var_16fb993f": "#hash_30727aefda60cbd4"
+}

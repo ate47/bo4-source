@@ -1253,7 +1253,7 @@ function function_9c062829() {
 function init_powerups() {
     level.var_ec45f213 = 1;
     if (zm_custom::function_901b751c(#"zmpowerupsislimitedround")) {
-        zombie_utility::set_zombie_var(#"zombie_powerup_drop_max_per_round", zm_custom::function_901b751c(#"hash_d46a4e7a41e005c"));
+        zombie_utility::set_zombie_var(#"zombie_powerup_drop_max_per_round", zm_custom::function_901b751c(#"zmpowerupslimitround"));
     } else {
         zombie_utility::set_zombie_var(#"zombie_powerup_drop_max_per_round", 4);
     }

@@ -1,0 +1,17 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "maxweight": 100,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 4000,
+    "type": "itemspawnlist",
+    "var_345eba59": 1,
+    "name": "blackjack_ammo_stash_parent_placeholder",
+    "displayname": "#hash_552e95261f2d04be",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

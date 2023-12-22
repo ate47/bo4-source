@@ -164,7 +164,7 @@ function private boss_fight() {
     level.var_27d781ea = 1;
     level.var_3395fcab = 1;
     animation::add_global_notetrack_handler("tower_contact", &function_dd2db3df, 0);
-    scene::play(#"hash_5e82fd01d9eb1519", array(e_elephant));
+    scene::play(#"aib_vign_cust_zm_twrs_ent_hllpht_00", array(e_elephant));
     e_elephant notify(#"entrace_done");
     level thread function_ae1cbf2e();
     level flag::set(#"spawn_zombies");

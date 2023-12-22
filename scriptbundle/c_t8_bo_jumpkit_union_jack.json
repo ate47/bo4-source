@@ -1,0 +1,10 @@
+{
+    "lootid": "#hash_15bc3f2052afae5c",
+    "wingsuit": "c_t8_bo_wingsuit_union_jack",
+    "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_union_jack",
+    "name": "c_t8_bo_jumpkit_union_jack",
+    "displayname": "#hash_4003fa6ed678a7fe",
+    "var_15d11806": "loot03_ui_icon_blackmarket_item_shop_wingsuit_union_jack",
+    "var_4fa85a25": "dfxt_union_jack",
+    "parachute": "c_t8_bo_parachute_union_jack"
+}

@@ -1,0 +1,52 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c9bebb7f0c82372",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init",
+                    "blend": 0.1
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_23dcfcfff0f885d1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "loop"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_46db468ab8a64d90",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "exit"
+                }
+            ],
+            "nospawn": 1,
+            "lerptime": 0.1,
+            "model": "#hash_9998bbacdfd161f",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "actor 1",
+            "attackme": 1,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_spar_swrd_shld_block_l_00",
+    "dontsync": 1,
+    "team": "any"
+}

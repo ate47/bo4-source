@@ -1,0 +1,17 @@
+{
+    "amount": 1,
+    "description": "#hash_235c7fa5f5e676c2",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:cymbal_monkey_wz>,
+    "type": "itemspawnentry",
+    "name": "cymbal_monkey_wz_item",
+    "stackcount": 5,
+    "icon": "#hash_f9d60bd1e11a5ef",
+    "modelscale": 0.7,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "stackable": 1,
+    "var_50773731": -0.75,
+    "itemtype": "equipment",
+    "pickupsound": "fly_pickup_cymbal_monkey"
+}

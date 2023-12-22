@@ -1,0 +1,129 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_anim",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_4983812e5cc3f6c1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "enter"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_e9844522176a36f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "exit"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4983812e5cc3f6c1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "skip_to_idle"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_mod",
+            "type": "prop",
+            "name": "bottle1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_anim",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_720d30de839de8fc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "enter"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_f0de3d6818caab6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "exit"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_720d30de839de8fc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "skip_to_idle"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_mod",
+            "type": "prop",
+            "name": "bottle2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_anim",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_7c9f3a2a36404293",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "enter"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_797440f6c61c3bf1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "exit"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c9f3a2a36404293",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "skip_to_idle"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_mod",
+            "type": "prop",
+            "name": "bottle3"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p8_fxanim_core_frontend_zm_lab_bottles_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,13 @@
+{
+    "description": "#hash_371d3437175be0e2",
+    "var_60fcfffa": "#menu/on",
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "sprint_cancel_reload",
+    "displayname": "#hash_2a292ebb55b5f25f",
+    "var_66faec87": 10,
+    "statname": "sprint_cancel_reload_toggle",
+    "var_82c732a7": 1,
+    "var_b7401319": "#menu/off"
+}

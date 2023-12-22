@@ -1,0 +1,10 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnentry",
+    "name": "helicopter_light_wz_vehicle_police",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#generic_pickup",
+    "vehicle": "vehicle_t8_mil_helicopter_light_transport_wz_police",
+    "itemtype": "vehicle"
+}

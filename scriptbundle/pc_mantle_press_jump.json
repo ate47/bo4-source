@@ -1,0 +1,38 @@
+{
+    "option_dependencies": [
+        {
+            "var_1643d946": "0",
+            "var_6825bdb": "auto_mantle_enabled",
+            "operator": "=="
+        }
+    ],
+    "options": [
+        {
+            "label": "#menu/off",
+            "value": "2"
+        },
+        {
+            "label": "#hash_704be4ba7ee1453a",
+            "value": "1"
+        },
+        {
+            "label": "#menu/on",
+            "value": "0"
+        }
+    ],
+    "var_d260763": "#hash_1fa2283fa1a27106",
+    "description": "#hash_201bbce1161e4",
+    "var_60fcfffa": "#hash_4f445f7612232efc",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 0.1,
+    "name": "pc_mantle_press_jump",
+    "displayname": "#hash_74e8dbf27cbbb09c",
+    "var_926d1be9": 0.01,
+    "var_66faec87": 2,
+    "statname": "mantle_press_jump",
+    "minvalue": 1,
+    "var_d4e288e": 1,
+    "var_b7401319": "#hash_26907a4c5e0f4d75"
+}

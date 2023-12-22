@@ -1,0 +1,33 @@
+{
+    "durations": [
+        {
+            "duration": 6,
+            "archetype": "human",
+            "effecttype": "electrical"
+        },
+        {
+            "duration": 7,
+            "archetype": "human_riotshield",
+            "effecttype": "electrical"
+        },
+        {
+            "duration": 8,
+            "archetype": "robot",
+            "effecttype": "electrical"
+        },
+        {
+            "duration": 6,
+            "archetype": "warlord",
+            "effecttype": "electrical"
+        },
+        {
+            "duration": 4,
+            "archetype": "mp_dog",
+            "effecttype": "electrical"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "weapondamageeffectype",
+    "name": "damageeffecttype_electrical",
+    "var_c672f15f": 5
+}

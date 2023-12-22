@@ -1,0 +1,22 @@
+{
+    "lobbymode": 4,
+    "id": 2207,
+    "var_45f67af4": "director_online",
+    "maxlocalclientsnetwork": 1,
+    "mainmode": 1,
+    "var_d16ccae8": 1,
+    "isprivate": 1,
+    "var_3cd09ce7": 1,
+    "var_1d4ea5bd": "lobby_mp",
+    "room": "inspect_specialist",
+    "var_7f60c82f": 1,
+    "var_9ff63d1b": "#hash_51f548d4609d9566",
+    "maxclients": 1,
+    "name": "director_online_mp_training",
+    "networkmode": 2,
+    "var_80a68682": "director_online_mp_training",
+    "egamemodes": 1,
+    "var_ec76767d": 5,
+    "title": "#hash_51f548d4609d9566",
+    "maxlocalclients": 1
+}

@@ -1,0 +1,50 @@
+{
+    "objects": [
+        {
+            "var_3477e70c": "#hash_3708e3f3ea135109"
+        },
+        {
+            "var_3477e70c": "#hash_3708e3f3ea135109"
+        },
+        {
+            "var_3477e70c": "#hash_3708e3f3ea135109"
+        },
+        {
+            "var_3477e70c": "#hash_3708e3f3ea135109"
+        },
+        {
+            "var_3477e70c": "#hash_2dc7d7e3f0d56e1a"
+        },
+        {
+            "var_3477e70c": "#hash_2dc7d7e3f0d56e1a"
+        },
+        {
+            "var_3477e70c": "#hash_5aeba06c60de78d"
+        },
+        {
+            "var_3477e70c": "#hash_5aeba06c60de78d"
+        },
+        {
+            "var_3477e70c": "#hash_5aeba06c60de78d"
+        },
+        {
+            "var_3477e70c": "#hash_5aeba06c60de78d"
+        },
+        {
+            "var_3477e70c": "#hash_5aeba06c60de78d"
+        },
+        {
+            "var_3477e70c": "#hash_5aeba06c60de78d"
+        },
+        {
+            "var_3477e70c": "#hash_2dc7d7e3f0d56e1a"
+        },
+        {
+            "var_3477e70c": "#hash_2dc7d7e3f0d56e1a"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "teamcolorfx",
+    "vmtype": "both",
+    "name": "teamcolorfx_ctf_flag_base"
+}

@@ -1,0 +1,22 @@
+{
+    "itemlist": [
+        {
+            "minweight": 300,
+            "var_a6762160": "health_item_medium",
+            "maxweight": 400,
+            "available": -1
+        },
+        {
+            "minweight": 300,
+            "var_a6762160": "health_item_large",
+            "maxweight": 400,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 2,
+    "var_9b009839": -1,
+    "name": "supply_stash_zombie_health",
+    "var_fde72c94": 100
+}

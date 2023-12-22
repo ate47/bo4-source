@@ -1,0 +1,23 @@
+{
+    "lobbymode": 1,
+    "id": 2304,
+    "var_24e84cf8": 1,
+    "var_45f67af4": "director_online",
+    "maxlocalclientsnetwork": 1,
+    "mainmode": 2,
+    "var_d16ccae8": 1,
+    "isprivate": 1,
+    "var_3cd09ce7": 1,
+    "var_1d4ea5bd": "lobby_zm",
+    "room": "zombie",
+    "var_7f60c82f": 4,
+    "var_9ff63d1b": "#hash_5dd231fd15db7531",
+    "maxclients": 4,
+    "name": "director_online_zm_pregame",
+    "networkmode": 2,
+    "var_80a68682": "director_online_zm_pregame",
+    "egamemodes": 2,
+    "title": "#hash_27307830087a401",
+    "var_f68d7d0": 2,
+    "maxlocalclients": 2
+}

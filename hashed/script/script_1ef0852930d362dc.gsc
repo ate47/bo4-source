@@ -1138,11 +1138,11 @@ function function_ba22c7e1() {
     self.marked_for_death = 1;
     self.no_powerups = 1;
     if (self.archetype == #"nosferatu") {
-        var_444cebf6 = #"hash_43077be6d3c64314";
-        var_38c23eeb = #"hash_b44c79631f02196";
+        var_444cebf6 = #"aib_vign_zm_man_tornado_nfrtu_start";
+        var_38c23eeb = #"aib_vign_zm_man_tornado_nfrtu_loop";
     } else {
-        var_444cebf6 = #"hash_16e499ef61dc607";
-        var_38c23eeb = #"hash_3b7439133a4c8d73";
+        var_444cebf6 = #"aib_vign_zm_man_tornado_zombie_start";
+        var_38c23eeb = #"aib_vign_zm_man_tornado_zombie_loop";
     }
     self scene::play(var_444cebf6, self);
     self thread scene::play(var_38c23eeb, self);

@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "mixclip"
+        }
+    ],
+    "description": "#hash_ec3f7fa67575be",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_wz_pickup_ext_fast_mag",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_47f9d805f8f35f0e",
+    "var_65b3a12": 1,
+    "name": "advmag_wz_item",
+    "displayname": "#hash_47f9d805f8f35f0e",
+    "icon": "#ui_icon_attachment_advancedmags",
+    "attachslotmagazine": 1,
+    "modelscale": 0.75,
+    "rarity": "None",
+    "equipsound": "uin_wz_attach_mags",
+    "handler": "#hash_788c59214ead02af",
+    "pickupicon": "#ui_icon_attachment_advancedmags",
+    "itemtype": "attachment"
+}

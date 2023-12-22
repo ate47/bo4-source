@@ -293,7 +293,7 @@ function function_18f5f327(s_spawn_loc) {
         case #"aib_t8_zm_mnsn_nfrtu_trvrs_grnd_climbout_01":
             self zm_spawner::function_45bb11e4(s_spawn_loc);
             break;
-        case #"hash_7d11e0c604cdd69e":
+        case #"aib_t8_zm_mnsn_nfrtu_undercroft_spawn_01":
             self zm_spawner::do_zombie_rise(s_spawn_loc);
             break;
         }

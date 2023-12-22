@@ -1,0 +1,23 @@
+{
+    "amount": 1,
+    "description": "#hash_5d9473493fbc1d54",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -3,
+    "var_3e688854": -1,
+    "weapon": <error reading:pistol_standard_t8_wz>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "var_65b3a12": 6,
+    "name": "pistol_standard_t8_item",
+    "icon": "#hash_3de5323436a5e489",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Common",
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotoptics": 1,
+    "pickupicon": "#hash_2c787de904fa0012",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

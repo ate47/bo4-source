@@ -1,0 +1,18 @@
+{
+    "durations": [
+        {
+            "duration": 1,
+            "archetype": "human",
+            "effecttype": "concussion"
+        },
+        {
+            "duration": 2,
+            "archetype": "mp_dog",
+            "effecttype": "concussion"
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "weapondamageeffectype",
+    "name": "damageeffecttype_concussion",
+    "var_c672f15f": 2
+}

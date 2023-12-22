@@ -1,0 +1,61 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_bruno_main",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_90413d1afb65139",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "specialist"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4ea2874a407d17d0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_5485d8593d4db74b",
+            "type": "fakeplayer",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_bruno",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

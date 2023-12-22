@@ -1,0 +1,23 @@
+{
+    "packageitems": [
+        {
+            "item": "#talent_engineer"
+        },
+        {
+            "item": "#gear_medicalinjectiongun"
+        }
+    ],
+    "var_ef921c3c": 1,
+    "var_922067c4": "scriptbundle",
+    "tracktier": 3,
+    "type": "bountyhunterpackage",
+    "var_85d7cf08": 2,
+    "name": "package_support_3",
+    "var_6c83a2ba": "support",
+    "purchasecost": 2000,
+    "startammo": 2,
+    "var_673a16ad": 1,
+    "var_741010b5": 1,
+    "var_782dbf79": 1,
+    "var_767b7337": 1
+}

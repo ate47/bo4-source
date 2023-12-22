@@ -1,0 +1,154 @@
+{
+    "shieldpieces": [
+        {
+            "var_37acb3da": "#hash_57735262a5266d93",
+            "clientfield": "#hash_108184e410722eea"
+        },
+        {
+            "var_37acb3da": "#hash_57735462a52670f9",
+            "clientfield": "#hash_108182e410722b84"
+        },
+        {
+            "var_37acb3da": "#hash_57735162a5266be0",
+            "clientfield": "#hash_108185e41072309d"
+        }
+    ],
+    "quests": [
+        {
+            "phases": [
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_4b1901f1dfc5158a"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_56af1bf88e729603"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                },
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_5ef0b8da29c42486"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_2695edd24ddf6e7b"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                }
+            ],
+            "var_516217cd": 2,
+            "name": "trap_part_1",
+            "var_a0ebe517": "#hash_48c5bcc6c9fab9d6"
+        },
+        {
+            "phases": [
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_4b1901f1dfc5158a"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_639cad37c167bf8e"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                },
+                {
+                    "items": [
+                        {
+                            "stages": [
+                                {
+                                    "var_2d787849": "#hash_5ef0b8da29c42486"
+                                }
+                            ],
+                            "var_1d91eeba": 1,
+                            "clientfield": "#hash_4a5aa2652a3ee760"
+                        }
+                    ],
+                    "var_ffd1cb07": 1
+                }
+            ],
+            "var_516217cd": 2,
+            "name": "trap_part_2",
+            "var_a0ebe517": "#hash_7d940511ce9f0341"
+        }
+    ],
+    "challenges": [
+        {
+            "numneeded": 2,
+            "var_3e63e7e4": "#hash_5b0cf8d1c923df11",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 4,
+            "var_3e63e7e4": "#hash_5b0cf5d1c923d9f8",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 6,
+            "var_3e63e7e4": "#hash_5b0cf6d1c923dbab",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 8,
+            "var_3e63e7e4": "#hash_5b0cfbd1c923e42a",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        },
+        {
+            "numneeded": 10,
+            "var_3e63e7e4": "#hash_5b0cfcd1c923e5dd",
+            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+        }
+    ],
+    "packapunchitems": [
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_73dc667901a5a4dd"
+                }
+            ],
+            "var_1d91eeba": 1,
+            "clientfield": "#hash_6608231515ad6e93"
+        },
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_70ad7a9e5372134f"
+                }
+            ],
+            "var_1d91eeba": 1,
+            "clientfield": "#hash_6608241515ad7046"
+        },
+        {
+            "stages": [
+                {
+                    "var_2d787849": "#hash_17ed6d25067fba24"
+                }
+            ],
+            "var_1d91eeba": 1,
+            "clientfield": "#hash_6608251515ad71f9"
+        }
+    ],
+    "var_5a90928f": "#hash_7ed874a0ecdefd90",
+    "var_922067c4": "scriptbundle",
+    "var_aa76b7dd": 1,
+    "var_6fa1ca44": 2,
+    "type": "zminventory",
+    "var_af62a8e8": 3,
+    "name": "zm_inventory_office",
+    "var_a05daa90": 3,
+    "var_f22d6ad5": 5,
+    "var_f7d932ea": "#hash_518608853a37856e"
+}

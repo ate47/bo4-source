@@ -54,7 +54,7 @@ function private function_c94723bd() {
 // Checksum 0xaf9739ee, Offset: 0x2d8
 // Size: 0xf8
 function private function_9b8d4d02(prematch = 0) {
-    var_3a1737b4 = getscriptbundles(#"hash_10587321f369e7f3");
+    var_3a1737b4 = getscriptbundles(#"itemspawnentry");
     foreach (var_1461de43, var_28f8f6a9 in var_3a1737b4) {
         if (var_28f8f6a9.itemtype == #"quest") {
             if (prematch) {

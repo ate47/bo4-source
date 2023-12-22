@@ -1,0 +1,26 @@
+{
+    "talents": [
+        {
+            "talent": "#talent_consumer_wz"
+        }
+    ],
+    "amount": 1,
+    "duration": 300,
+    "description": "#hash_23cdac040fa39008",
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_70685cfdade64e7",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_42b309155f05e081",
+    "consumable": 1,
+    "name": "perk_item_consumer",
+    "displayname": "#hash_42b309155f05e081",
+    "stackcount": 1,
+    "icon": "#hash_4f7427259f34215f",
+    "casttime": 2,
+    "modelscale": 1,
+    "rarity": "None",
+    "equipsound": "uin_wz_perk_gungho",
+    "var_38f854e5": 1,
+    "handler": "#generic_pickup",
+    "itemtype": "generic"
+}

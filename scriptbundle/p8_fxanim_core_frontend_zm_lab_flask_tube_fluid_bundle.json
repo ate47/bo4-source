@@ -1,0 +1,42 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7a3bc314d39d5a4e",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_74e02749db84608b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fill"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c082ee474081ef4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "finish"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_core_frontend_zm_lab_flask_tube_fluid_mod",
+            "type": "prop",
+            "name": "flask_tube_fluid"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p8_fxanim_core_frontend_zm_lab_flask_tube_fluid_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,47 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_768f931903720174",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7b722ef47c55ae1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_656709da131e29ea",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_zm_man_clock_03_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_zm_man_clock_03_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

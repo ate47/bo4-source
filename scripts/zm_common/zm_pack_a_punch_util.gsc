@@ -142,7 +142,7 @@ function update_hint_string(player) {
     b_weapon_supports_aat = zm_weapons::weapon_supports_aat(w_current);
     if (pap_machine flag::get("pap_in_retrigger_delay") || !player player_use_can_pack_now(pap_machine) || player bgb::is_active(#"zm_bgb_ephemeral_enhancement")) {
         if (zm_utility::is_standard()) {
-            if (!zm_custom::function_901b751c(#"hash_57a5c7a9dcf94d61") || !b_weapon_supports_aat) {
+            if (!zm_custom::function_901b751c(#"zmsuperpapenabled") || !b_weapon_supports_aat) {
                 self sethintstringforplayer(player, #"hash_fea06394ae21371");
                 return 1;
             } else if (isdefined(player.var_486c9d59) && player.var_486c9d59) {

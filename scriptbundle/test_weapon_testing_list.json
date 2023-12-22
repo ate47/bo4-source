@@ -1,0 +1,96 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "dart_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ultimate_turret_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "shotgun_pump_t8_item",
+            "var_3f8c08e3": "ammo_type_12ga_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "shotgun_semiauto_t8_item",
+            "var_3f8c08e3": "ammo_type_12ga_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sig_blade_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "homunculus_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ww_crossbow_impaler_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ray_gun_mk2x_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ray_gun_mk2y_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ray_gun_mk2z_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "tomahawk_t8_wz_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ww_winters_fury_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "death_of_orion_t8_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "allistairs_folly_t8_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 14,
+    "var_9b009839": -1,
+    "name": "test_weapon_testing_list",
+    "var_fde72c94": 100
+}

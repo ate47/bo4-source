@@ -1,0 +1,45 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "laser_sight_wz_item"
+        },
+        {
+            "var_6be1bec7": "uber"
+        },
+        {
+            "var_6be1bec7": "stock_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "fastmag_wz_item"
+        },
+        {
+            "var_6be1bec7": "pistolscope"
+        }
+    ],
+    "amount": 1,
+    "description": "#hash_6ffea799c6e28841",
+    "var_922067c4": "scriptbundle",
+    "var_5dc4470b": -4,
+    "var_3e688854": -1,
+    "weapon": <error reading:pistol_revolver_t8_operator_wz>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "var_dc6c5d3b": 1,
+    "var_65b3a12": 6,
+    "name": "pistol_revolver_t8_operator_item",
+    "var_9507cf45": "#hash_31e4dd5b2056e05b",
+    "icon": "#hash_31b0b565cdfe99c8",
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Legendary",
+    "handler": "#hash_50375e5de228e9fc",
+    "attachslotrail": 1,
+    "pickupicon": "#hash_4f3d3362ed625cc8",
+    "var_50773731": 1,
+    "itemtype": "weapon"
+}

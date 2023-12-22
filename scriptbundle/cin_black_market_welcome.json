@@ -1,0 +1,117 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_672a411cb68a5e23",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dbc8870a6584704",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dbc8b70a6584c1d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dbc8a70a6584a6a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dbc8570a65841eb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                }
+            ],
+            "model": "#hash_66af1225a206cf4e",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "name": "idle"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 4"
+                },
+                {
+                    "name": "shot 5"
+                }
+            ],
+            "model": "#wpn_t8_pistol_standard_world",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "name": "idle"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_174238e81ae21339",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot 5"
+                }
+            ],
+            "model": "#p8_zm_red_coin_bronze",
+            "type": "prop",
+            "name": "prop 3"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "cin_black_market_welcome",
+    "dontsync": 1,
+    "aligntarget": "tag_align_blackjack_character",
+    "team": "any"
+}

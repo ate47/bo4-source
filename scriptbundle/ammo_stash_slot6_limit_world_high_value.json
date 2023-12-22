@@ -1,0 +1,52 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "ammo_type_556_item",
+            "var_3f8c08e3": "ammo_type_556_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "ammo_type_762_item",
+            "var_3f8c08e3": "ammo_type_762_item",
+            "maxweight": 100,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "ammo_type_9mm_item",
+            "var_3f8c08e3": "ammo_type_9mm_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "ammo_type_45_item",
+            "var_3f8c08e3": "ammo_type_45_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "ammo_type_50cal_item",
+            "var_3f8c08e3": "ammo_type_50cal_item",
+            "maxweight": 50,
+            "available": -1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "ammo_type_338_item",
+            "var_3f8c08e3": "ammo_type_338_item",
+            "maxweight": 50,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 6,
+    "var_9b009839": -1,
+    "name": "ammo_stash_slot6_limit_world_high_value",
+    "var_fde72c94": 100
+}

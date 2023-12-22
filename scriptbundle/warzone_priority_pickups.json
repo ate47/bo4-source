@@ -1,0 +1,24 @@
+{
+    "options": [
+        {
+            "label": "#hash_52bdd7f7d9745a78",
+            "value": "0"
+        },
+        {
+            "label": "#hash_72ed85897f7616d5",
+            "value": "1"
+        }
+    ],
+    "description": "#hash_43bcdf8aa346781d",
+    "var_60fcfffa": "#menu/on",
+    "var_8722393c": 1,
+    "var_9358ee0a": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "maxvalue": 1,
+    "name": "warzone_priority_pickups",
+    "displayname": "#hash_3d4d345bf9945b7a",
+    "var_66faec87": 10,
+    "statname": "warzonePriorityPickups",
+    "var_b7401319": "#menu/off"
+}

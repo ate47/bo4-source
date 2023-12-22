@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1447283275dbbb5c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "var_be60a82b": 8
+                }
+            ],
+            "model": "#c_t8_zmb_dlc0_zombie_destroyer_body1_igc",
+            "type": "prop",
+            "name": "prop 4",
+            "aligntarget": "tag_align_boss_doors"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_twrs_ent_hllpht_01_rider_4",
+    "dontsync": 1,
+    "aligntarget": "tag_align_boss_doors",
+    "team": "any"
+}

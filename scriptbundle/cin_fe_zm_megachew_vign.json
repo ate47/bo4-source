@@ -1,0 +1,19 @@
+{
+    "objects": [
+        {
+            "model": "#tag_origin_animate",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "tag_origin_animate"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "cin_fe_zm_megachew_vign",
+    "dontsync": 1,
+    "aligntarget": "zm_gum_position",
+    "team": "any"
+}

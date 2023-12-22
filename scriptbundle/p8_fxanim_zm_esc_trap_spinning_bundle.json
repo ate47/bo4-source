@@ -1,0 +1,40 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_16e1f913cd7cb766",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_6097ca4497e09ccd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c03a57bb34314e9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_6bb67c51d56328d7",
+            "type": "prop",
+            "name": "spin_trap"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_trap_spinning_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

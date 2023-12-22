@@ -1,0 +1,1724 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_nomad_play",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_nomad_play2",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_nomad_play5",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_nomad_play4",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_15f909425c5b6b40",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_15f909425c5b6b40",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_15f909425c5b6b40",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_15f909425c5b6b40",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "frozen_moment_character"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1f190060c4418aab",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1f190060c4418aab",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1f190060c4418aab",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1f190060c4418aab",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#hash_52ff559d497ecf9",
+            "type": "fakeplayer",
+            "deletewhenfinished": 1,
+            "name": "fakeplayer 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1be9dd23242a6380",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1be9dd23242a6380",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1be9dd23242a6380",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1be9dd23242a6380",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#hash_f67fbaef53fc5a8",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#hash_7f09082df57f3245",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 3",
+            "var_be60a82b": 44,
+            "var_922b4fc5": -104,
+            "var_3e692842": 49
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 4",
+            "var_16999a5d": 2,
+            "var_29563fd6": 22,
+            "var_eb00c330": 36,
+            "var_be60a82b": 24,
+            "var_922b4fc5": -101,
+            "var_3e692842": 73
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 5",
+            "var_16999a5d": 22,
+            "var_29563fd6": -12,
+            "var_eb00c330": 14,
+            "var_be60a82b": 18,
+            "var_922b4fc5": -62,
+            "var_3e692842": 86
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 6",
+            "var_16999a5d": 10,
+            "var_29563fd6": -38,
+            "var_eb00c330": -19,
+            "var_be60a82b": -2,
+            "var_922b4fc5": -46,
+            "var_3e692842": 121
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 9",
+            "var_16999a5d": -7,
+            "var_29563fd6": -42,
+            "var_eb00c330": -18,
+            "var_be60a82b": 25,
+            "var_922b4fc5": -73,
+            "var_3e692842": -36
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 10",
+            "var_16999a5d": -1,
+            "var_29563fd6": -44,
+            "var_eb00c330": 3,
+            "var_be60a82b": 38,
+            "var_922b4fc5": -104,
+            "var_3e692842": -20
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_tree_palm_coconut_small",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 11",
+            "var_16999a5d": -12,
+            "var_29563fd6": -29,
+            "var_eb00c330": 15,
+            "var_be60a82b": 39,
+            "var_922b4fc5": -150,
+            "var_3e692842": 19
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_tree_palm_coconut_small",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 13",
+            "var_16999a5d": -3,
+            "var_29563fd6": -8,
+            "var_eb00c330": -16,
+            "var_be60a82b": 20,
+            "var_922b4fc5": -300,
+            "var_3e692842": 207
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 14",
+            "var_16999a5d": -1,
+            "var_29563fd6": -44,
+            "var_eb00c330": 3,
+            "var_be60a82b": 24,
+            "var_922b4fc5": -94,
+            "var_3e692842": 121
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 7",
+            "var_16999a5d": 20,
+            "var_29563fd6": 59,
+            "var_eb00c330": -23,
+            "var_be60a82b": -10,
+            "var_922b4fc5": 33,
+            "var_3e692842": -49
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_tree_palm_coconut_small",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 8",
+            "var_16999a5d": -9,
+            "var_29563fd6": 102,
+            "var_eb00c330": -7,
+            "var_be60a82b": 98,
+            "var_922b4fc5": -253,
+            "var_3e692842": -350
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 12",
+            "var_16999a5d": -12,
+            "var_29563fd6": -44,
+            "var_eb00c330": -26,
+            "var_be60a82b": 40,
+            "var_922b4fc5": -116,
+            "var_3e692842": 17
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 15",
+            "var_16999a5d": -17,
+            "var_29563fd6": -44,
+            "var_be60a82b": 40,
+            "var_922b4fc5": -97,
+            "var_3e692842": -161
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 16",
+            "var_16999a5d": -17,
+            "var_29563fd6": -44,
+            "var_be60a82b": 43,
+            "var_922b4fc5": -111,
+            "var_3e692842": -88
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 17",
+            "var_16999a5d": -25,
+            "var_29563fd6": -44,
+            "var_be60a82b": 27,
+            "var_922b4fc5": 125,
+            "var_3e692842": -106
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 18",
+            "var_16999a5d": -38,
+            "var_29563fd6": -44,
+            "var_eb00c330": -9,
+            "var_be60a82b": 32,
+            "var_922b4fc5": 25,
+            "var_3e692842": -150
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 19",
+            "var_16999a5d": -25,
+            "var_29563fd6": -44,
+            "var_eb00c330": -17,
+            "var_be60a82b": 39,
+            "var_922b4fc5": -7,
+            "var_3e692842": -191
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 20",
+            "var_16999a5d": -25,
+            "var_29563fd6": -44,
+            "var_eb00c330": -17,
+            "var_be60a82b": 29,
+            "var_922b4fc5": 89,
+            "var_3e692842": -139
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 21",
+            "var_16999a5d": 10,
+            "var_29563fd6": -38,
+            "var_eb00c330": -19,
+            "var_be60a82b": 3,
+            "var_922b4fc5": -108,
+            "var_3e692842": 117
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 22",
+            "var_16999a5d": 10,
+            "var_29563fd6": -38,
+            "var_eb00c330": -19,
+            "var_be60a82b": -2,
+            "var_922b4fc5": -46,
+            "var_3e692842": 121
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 23",
+            "var_16999a5d": 10,
+            "var_29563fd6": -38,
+            "var_eb00c330": -19,
+            "var_be60a82b": 33,
+            "var_922b4fc5": -83,
+            "var_3e692842": 10
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_tree_palm_coconut_small",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 24",
+            "var_29563fd6": -8,
+            "var_eb00c330": -1,
+            "var_be60a82b": 11,
+            "var_922b4fc5": 250,
+            "var_3e692842": -300
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 25",
+            "var_16999a5d": -8,
+            "var_29563fd6": -85,
+            "var_be60a82b": 19,
+            "var_922b4fc5": 80,
+            "var_3e692842": -90
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 26",
+            "var_16999a5d": -23,
+            "var_29563fd6": -38,
+            "var_eb00c330": -19,
+            "var_be60a82b": 9,
+            "var_922b4fc5": -80,
+            "var_3e692842": 17
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 27",
+            "var_16999a5d": -23,
+            "var_29563fd6": -38,
+            "var_eb00c330": -19,
+            "var_be60a82b": 9,
+            "var_922b4fc5": -76,
+            "var_3e692842": -32
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 28",
+            "var_16999a5d": -23,
+            "var_29563fd6": -38,
+            "var_eb00c330": -19,
+            "var_be60a82b": 15,
+            "var_922b4fc5": -101,
+            "var_3e692842": 38
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 29",
+            "var_16999a5d": 24,
+            "var_29563fd6": -38,
+            "var_eb00c330": -17,
+            "var_be60a82b": 33,
+            "var_922b4fc5": -100,
+            "var_3e692842": -113
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 30",
+            "var_16999a5d": 24,
+            "var_29563fd6": -38,
+            "var_eb00c330": -17,
+            "var_be60a82b": 33,
+            "var_922b4fc5": -78,
+            "var_3e692842": -161
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 31",
+            "var_16999a5d": 24,
+            "var_29563fd6": -38,
+            "var_eb00c330": -17,
+            "var_be60a82b": -8,
+            "var_922b4fc5": -52,
+            "var_3e692842": 81
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_451eae86195c7769",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play4"
+                }
+            ],
+            "model": "#p8_foliage_fern_sword_wild_lrg",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 32",
+            "var_16999a5d": 24,
+            "var_29563fd6": -38,
+            "var_eb00c330": -17,
+            "var_be60a82b": -8,
+            "var_922b4fc5": -52,
+            "var_3e692842": 81
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_nomad",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

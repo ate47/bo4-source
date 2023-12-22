@@ -143,9 +143,9 @@ function function_25f97da0() {
         s_result = undefined;
         s_result = self waittill(#"hash_1c35eb15aa210d6");
         if (isdefined(s_result.var_9fa6220c) && isdefined(s_result.var_9fa6220c.script_string) && s_result.var_9fa6220c.script_string == "spartan_monument") {
-            self forcestreambundle(#"hash_4703db4679985a0a");
+            self forcestreambundle(#"p8_fxanim_zm_red_drakaina_bundle");
             wait(3);
-            self function_66b6e720(#"hash_4703db4679985a0a");
+            self function_66b6e720(#"p8_fxanim_zm_red_drakaina_bundle");
         }
     }
 }

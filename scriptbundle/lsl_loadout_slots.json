@@ -1,0 +1,62 @@
+{
+    "entries": [
+        {
+            "key": "herogadget",
+            "value": "#hash_60a0bc550c54bd42"
+        },
+        {
+            "key": "killStreak1",
+            "value": "#hash_4b476d101217a723"
+        },
+        {
+            "key": "primary",
+            "value": "#hash_7b484d92443361d8"
+        },
+        {
+            "key": "primarygrenade",
+            "value": "#hash_2da102a6853690e6"
+        },
+        {
+            "key": "secondary",
+            "value": "#hash_6bb44c71d0f6b5c8"
+        },
+        {
+            "key": "specialty",
+            "value": "#hash_79a2653a123a01fd"
+        },
+        {
+            "key": "talent",
+            "value": "#hash_114fa585889b518b"
+        },
+        {
+            "key": "talent.1",
+            "value": "#mpui/perk1"
+        },
+        {
+            "key": "talent.2",
+            "value": "#mpui/perk2"
+        },
+        {
+            "key": "talent.3",
+            "value": "#mpui/perk3"
+        },
+        {
+            "key": "tacticalgear",
+            "value": "#hash_305e03714ee77fc"
+        },
+        {
+            "key": "bonuscard",
+            "value": "#hash_38deb3201ab34d8e"
+        },
+        {
+            "value": "#hash_17a1f89c3cfa8a86"
+        },
+        {
+            "value": "#hash_2015d4fed971424a"
+        },
+        {
+            "value": "#hash_2b6269f85047c8b4"
+        }
+    ],
+    "name": "lsl_loadout_slots"
+}

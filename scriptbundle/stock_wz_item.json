@@ -1,0 +1,23 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "stalker"
+        }
+    ],
+    "description": "#hash_43c6c10c328d5be7",
+    "var_922067c4": "scriptbundle",
+    "model": "#attach_t8_wz_pickup_stock",
+    "type": "itemspawnentry",
+    "hintstring": "#wz/attach_stock",
+    "attachslotstock": 1,
+    "var_65b3a12": 1,
+    "name": "stock_wz_item",
+    "displayname": "#wz/attach_stock",
+    "icon": "#ui_icon_attachment_stock",
+    "modelscale": 1.35,
+    "rarity": "Common",
+    "equipsound": "uin_wz_attach_stock",
+    "handler": "#hash_788c59214ead02af",
+    "pickupicon": "#ui_icon_attachment_stock",
+    "itemtype": "attachment"
+}

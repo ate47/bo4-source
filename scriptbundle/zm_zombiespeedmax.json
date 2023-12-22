@@ -1,0 +1,17 @@
+{
+    "hinttext": "#hash_3a31cd91e211534d",
+    "var_922067c4": "scriptbundle",
+    "value2": "1",
+    "var_6006e991": "2",
+    "var_43883094": "0",
+    "var_dfed6968": "3",
+    "type": "gamesettings",
+    "name": "zm_zombiespeedmax",
+    "displayname": "#hash_6c541560aa49249b",
+    "var_684ccd4c": "#hash_54e697206a538c5a",
+    "var_9600a8ab": "#hash_1107c2f1d575b902",
+    "var_71b6e020": "#hash_71dff9ad88d96fdb",
+    "var_bd2ff709": "#hash_5bef4cb552cde0e0",
+    "var_9de86f42": 4,
+    "setting": "zmZombieMaxSpeed"
+}

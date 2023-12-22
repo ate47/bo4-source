@@ -1,0 +1,70 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1830e3c38aa46b64",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_52f98026cf540d68",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7cd1b7987cc6e4ce",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_162c7501bb4e5e35",
+            "type": "fakeactor",
+            "name": "fakeactor 1",
+            "removeweapon": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2a0f061b4552a2b7",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_57f789ce2c0acc9b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f8d3ce2ca2312ed",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#c_t8_zmb_dlc0_zombie_destroyer_axe1",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_t8_zm_twrs_zg_dstyr_rockon",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,493 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcaf6157a7b2a3c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcaf7157a7b2bef",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcaf8157a7b2da2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcaf9157a7b2f55",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcaf2157a7b2370",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcaf3157a7b2523",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcaf4157a7b26d6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcaf5157a7b2889",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcafe157a7b37d4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 9"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bcaff157a7b3987",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 10"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bce7c157a7e43c5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 11"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bce7b157a7e4212",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 12"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_672a411cb68a5e23",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 13"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dbc8870a6584704",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 14"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dbc8b70a6584c1d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 15"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dbc8a70a6584a6a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 16"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4dbc8570a65841eb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 17"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecf5200ce03f05b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 18"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecf5100ce03eea8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 19"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecf5400ce03f3c1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 20"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_15508fb4dd9d57c1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 21"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_155090b4dd9d5974",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 22"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecf5500ce03f574",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 23"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecf5800ce03fa8d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 24"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecf5700ce03f8da",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 25"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecf4a00ce03e2c3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 26"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecf4900ce03e110",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 27"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecbcc00ce00d6d2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 28"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecbcd00ce00d885",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 29"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ecbca00ce00d36c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 30"
+                }
+            ],
+            "model": "#hash_66af1225a206cf4e",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 4"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 9"
+                },
+                {
+                    "name": "shot 10"
+                },
+                {
+                    "name": "shot 11"
+                },
+                {
+                    "name": "shot 12"
+                },
+                {
+                    "name": "shot 13"
+                },
+                {
+                    "name": "shot 14"
+                },
+                {
+                    "name": "shot 15"
+                },
+                {
+                    "name": "shot 16"
+                },
+                {
+                    "name": "shot 17"
+                },
+                {
+                    "name": "shot 18"
+                },
+                {
+                    "name": "shot 19"
+                },
+                {
+                    "name": "shot 20"
+                },
+                {
+                    "name": "shot 21"
+                },
+                {
+                    "name": "shot 22"
+                },
+                {
+                    "name": "shot 23"
+                },
+                {
+                    "name": "shot 24"
+                },
+                {
+                    "name": "shot 25"
+                },
+                {
+                    "name": "shot 26"
+                },
+                {
+                    "name": "shot 27"
+                },
+                {
+                    "name": "shot 28"
+                },
+                {
+                    "name": "shot 29"
+                },
+                {
+                    "name": "shot 30"
+                }
+            ],
+            "model": "#wpn_t8_pistol_standard_world",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 3"
+                },
+                {
+                    "name": "shot 4"
+                },
+                {
+                    "name": "shot 5"
+                },
+                {
+                    "name": "shot 6"
+                },
+                {
+                    "name": "shot 7"
+                },
+                {
+                    "name": "shot 8"
+                },
+                {
+                    "name": "shot 9"
+                },
+                {
+                    "name": "shot 10"
+                },
+                {
+                    "name": "shot 11"
+                },
+                {
+                    "name": "shot 12"
+                },
+                {
+                    "name": "shot 13"
+                },
+                {
+                    "name": "shot 14"
+                },
+                {
+                    "name": "shot 15"
+                },
+                {
+                    "name": "shot 16"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_174238e81ae21339",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot 17"
+                },
+                {
+                    "name": "shot 18"
+                },
+                {
+                    "name": "shot 19"
+                },
+                {
+                    "name": "shot 20"
+                },
+                {
+                    "name": "shot 21"
+                },
+                {
+                    "name": "shot 22"
+                },
+                {
+                    "name": "shot 23"
+                },
+                {
+                    "name": "shot 24"
+                },
+                {
+                    "name": "shot 25"
+                },
+                {
+                    "name": "shot 26"
+                },
+                {
+                    "name": "shot 27"
+                },
+                {
+                    "name": "shot 28"
+                },
+                {
+                    "name": "shot 29"
+                },
+                {
+                    "name": "shot 30"
+                }
+            ],
+            "model": "#p8_zm_red_coin_bronze",
+            "type": "prop",
+            "name": "prop 3"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "cin_black_market",
+    "dontsync": 1,
+    "aligntarget": "tag_align_blackjack_character",
+    "team": "any"
+}

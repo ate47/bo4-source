@@ -1,0 +1,47 @@
+{
+    "objectives": [
+        {
+            "description": "#hash_4cf8f0ada77bd8ba",
+            "var_7e835304": "#kills_early"
+        },
+        {
+            "teamsizedescriptions": [
+                {
+                    "description": "#hash_6d66150f48016807",
+                    "teamsize": 1
+                },
+                {
+                    "description": "#hash_265f4d17e05c7e84",
+                    "teamsize": 2
+                },
+                {
+                    "description": "#hash_4c4b35fe1c14756f",
+                    "teamsize": 4
+                }
+            ],
+            "description": "#hash_4c4b35fe1c14756f",
+            "var_57b131bd": 3
+        },
+        {
+            "description": "#hash_4cf8eeada77bd554"
+        }
+    ],
+    "description": "#hash_5a3f81fc92b74930",
+    "var_922067c4": "scriptbundle",
+    "var_eda4062b": 3,
+    "var_e8b98a8a": "#hash_534664d42d57a56f",
+    "model": "#hash_2bce8292eb632293",
+    "type": "itemspawnentry",
+    "hintstring": "#hash_6b8f87d007d03e59",
+    "unlockableitemref": "#hash_4349d21cde0ca3be",
+    "name": "cu35_item",
+    "displayname": "#hash_6b8f87d007d03e59",
+    "icon": "#hash_1bd93a98da71618b",
+    "modelscale": 1,
+    "rarity": "None",
+    "var_a51bc1f7": "#hash_61378a301a27787e",
+    "handler": "#hash_5c844f5c1207159c",
+    "rewardname": "#hash_7b43a0c37a409a85",
+    "pickupicon": "#hash_1bd93a98da71618b",
+    "itemtype": "quest"
+}

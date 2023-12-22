@@ -1,0 +1,45 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3475f0b9b2ad7422",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "intro"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_257b70dc93fcf65b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "loop"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c374b87ebb4961d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "release"
+                }
+            ],
+            "model": "#hash_f397cb989766bd0",
+            "type": "player",
+            "name": "player 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "scene_zm_mansn_wm_fem_fullsequence",
+    "dontsync": 1,
+    "team": "any"
+}

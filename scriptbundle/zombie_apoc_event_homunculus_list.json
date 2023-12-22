@@ -1,0 +1,40 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "zombie_supply_stash_wonder_weapons",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "health_item_large",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "armor_shard_item",
+            "maxweight": 1,
+            "available": 3
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "tr_leveraction_t8_item",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "homunculus_wz_item",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 5,
+    "var_9b009839": -1,
+    "name": "zombie_apoc_event_homunculus_list",
+    "var_fde72c94": 100
+}

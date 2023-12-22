@@ -1,0 +1,154 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_char_customization_fullbody_render",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "fullbody"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_char_customization_head_render",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "head"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_char_customization_headgear_render",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "headgear"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_char_customization_torso_render",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "torso"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_char_customization_warpaint_render",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "warpaint"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_char_customization_arms_render",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "arms"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_char_customization_legs_render",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "legs"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_texture_pose_female",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fullbody"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_texture_pose_female",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "head"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_texture_pose_female",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "headgear"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_texture_pose_female",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "torso"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_texture_pose_female",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "warpaint"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_510c2d072762f78a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "arms"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_texture_pose_female",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "legs"
+                }
+            ],
+            "model": "#hash_47dd7ea4c055662c",
+            "type": "fakeplayer",
+            "name": "character_customization_staging"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_character_female_render",
+    "dontsync": 1,
+    "aligntarget": "character_staging_extracam1",
+    "team": "any"
+}

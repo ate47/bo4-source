@@ -1,0 +1,10 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnentry",
+    "name": "tank_wz_vehicle_green",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#generic_pickup",
+    "vehicle": "vehicle_t8_mil_tank_wz_green",
+    "itemtype": "vehicle"
+}

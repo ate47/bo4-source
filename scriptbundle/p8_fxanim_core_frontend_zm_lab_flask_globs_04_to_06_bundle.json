@@ -1,0 +1,74 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_55296592c3852841",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state4_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1a3e28b68837d4ef",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state4_exit"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_471d09585931f6ca",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state5_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4cd2f278308c744c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state5_exit"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_8451e8e9d017413",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state6_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_51a255b2cdd6d71",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state6_exit"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_core_frontend_zm_lab_flask_globs_04_to_06_mod",
+            "type": "prop",
+            "name": "glob"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p8_fxanim_core_frontend_zm_lab_flask_globs_04_to_06_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

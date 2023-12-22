@@ -1,0 +1,17 @@
+{
+    "amount": 1,
+    "description": "#hash_2046d307dd330226",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:hash_712ebe79f7da6d58>,
+    "type": "itemspawnentry",
+    "name": "wraithfire_wz_item",
+    "displayname": "#hash_2c62a9364c4c32aa",
+    "stackcount": 1,
+    "icon": "#hash_1ceaf0b0360b72b9",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "pickupicon": "#hash_1ceaf0b0360b72b9",
+    "var_50773731": 2.25,
+    "itemtype": "equipment"
+}

@@ -1,0 +1,19 @@
+{
+    "var_d260763": "#hash_25e775dd3e187c49",
+    "description": "#hash_12f714ad024cbf35",
+    "var_60fcfffa": "#hash_54b9d28e8d5975fa",
+    "var_10e01ad5": 1,
+    "var_7d936886": 1,
+    "var_86a04811": 1,
+    "var_43a952c1": 1,
+    "name": "pc_ads_fieldofview",
+    "displayname": "#hash_52c0dd419a53863",
+    "var_4a4760c0": 60,
+    "var_926d1be9": 1,
+    "var_66faec87": 120,
+    "statname": "cg_relative_ads_fov",
+    "var_82c732a7": 1,
+    "minvalue": 1,
+    "var_d4e288e": 90,
+    "var_b7401319": "#hash_4b665bb9dd5936a0"
+}

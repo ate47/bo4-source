@@ -1,0 +1,154 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_ruin_play",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play",
+                    "var_b94164e": "core_frontend_ruin"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_ruin_play3",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_ruin_play5",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot 5",
+                    "var_39fd697b": "core_frontend_ruin",
+                    "var_b94164e": "core_frontend_ruin"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_ruin_play2",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play2"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen",
+            "var_29563fd6": 90
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28211995c19b128f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_b94164e": "core_frontend_ruin"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28211995c19b128f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28211995c19b128f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5",
+                    "var_39fd697b": "core_frontend_ruin",
+                    "var_b94164e": "core_frontend_ruin"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28211995c19b128f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "frozen_moment_character"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_787d067baeb51ddc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play",
+                    "var_b94164e": "core_frontend_ruin"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_787d067baeb51ddc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_787d067baeb51ddc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 5",
+                    "var_39fd697b": "core_frontend_ruin",
+                    "var_b94164e": "core_frontend_ruin"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_787d067baeb51ddc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play2"
+                }
+            ],
+            "model": "#hash_140999eea60754c2",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_ruin",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

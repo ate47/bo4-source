@@ -23,7 +23,7 @@ function __init__() {
     zm_perks::register_perk_clientfields(#"specialty_widowswine", &widows_wine_client_field_func, &widows_wine_code_callback_func);
     zm_perks::register_perk_effects(#"specialty_widowswine", "widow_light");
     zm_perks::register_perk_init_thread(#"specialty_widowswine", &init_widows_wine);
-    zm_perks::function_b60f4a9f(#"specialty_widowswine", #"p8_zm_vapor_altar_icon_01_winterswail", "zombie/fx8_perk_altar_symbol_ambient_widows_wine", #"hash_557e3edd7fe168c3");
+    zm_perks::function_b60f4a9f(#"specialty_widowswine", #"p8_zm_vapor_altar_icon_01_winterswail", "zombie/fx8_perk_altar_symbol_ambient_widows_wine", #"zmperkswidowswail");
     zm_perks::function_f3c80d73("zombie_perk_bottle_widows_wine", "zombie_perk_totem_winters_wail");
 }
 

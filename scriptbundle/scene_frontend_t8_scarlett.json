@@ -1,0 +1,174 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_scene_cam_scarlett_main",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#tag_origin",
+            "type": "sharedplayer",
+            "name": "cam",
+            "aligntarget": "tag_align_frozen"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4bb20f00364b5a67",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "specialist"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9d40ff16880adfd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_185ae1f05ee3ad0c",
+            "type": "fakeplayer",
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_55ccfda952edd0a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_185ae1f05ee3ad0c",
+            "type": "fakeplayer",
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_8b7fbdfbe0aa97f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_185ae1f05ee3ad0c",
+            "type": "fakeplayer",
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_38aa0c0975d222e4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_185ae1f05ee3ad0c",
+            "type": "fakeplayer",
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_f727814c0504cb9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_185ae1f05ee3ad0c",
+            "type": "fakeplayer",
+            "name": "prop 7"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_618037f904ffd0c6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_185ae1f05ee3ad0c",
+            "type": "fakeplayer",
+            "name": "prop 8"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7219d3701f76daed",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_350311504362cb9b",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_54f737c3918c9863",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_350311504362cb9b",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_frontend_t8_scarlett",
+    "dontsync": 1,
+    "aligntarget": "tag_align_frozen",
+    "team": "any"
+}

@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_39fa35c7cc4a3f91",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 5,
+                    "name": "shot 1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_wz_wind_turbine_blades_sml_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_wz_wind_turbine_blades_sml_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

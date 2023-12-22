@@ -1,0 +1,28 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "floor_list_sniper",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "armor_item_large",
+            "maxweight": 1,
+            "available": 1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "backpack_item",
+            "maxweight": 1,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "blast_door_high_value",
+    "var_fde72c94": 100
+}

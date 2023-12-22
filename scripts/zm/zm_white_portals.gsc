@@ -119,7 +119,7 @@ function function_5702b2e7(e_player) {
     } else if (isdefined(self.blueprint)) {
         t_crafting = self;
     }
-    if (t_crafting.blueprint.name == #"hash_ef185e110c83ded") {
+    if (t_crafting.blueprint.name == #"zblueprint_white_mmtd") {
         t_crafting.var_4f749ffe show();
         t_crafting.var_ae360c37 show();
         level flag::set(#"hash_2120a14c5eeab590");

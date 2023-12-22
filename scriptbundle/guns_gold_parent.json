@@ -1,0 +1,54 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_gold_pistols",
+            "maxweight": 200,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_gold_shotguns",
+            "maxweight": 200,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_gold_smgs",
+            "maxweight": 200,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_gold_ars",
+            "maxweight": 200,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_gold_trs",
+            "maxweight": 150,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_gold_lmgs",
+            "maxweight": 150,
+            "available": 2
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "guns_gold_snipers",
+            "maxweight": 150,
+            "available": 2
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 200,
+    "type": "itemspawnlist",
+    "var_345eba59": 7,
+    "var_9b009839": -1,
+    "var_dc7ffbef": 1,
+    "name": "guns_gold_parent",
+    "var_fde72c94": 100
+}

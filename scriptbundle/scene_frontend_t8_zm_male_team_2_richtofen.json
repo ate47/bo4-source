@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_506ff06ad05cd219",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "custom"
+                }
+            ],
+            "type": "fakeplayer",
+            "name": "specialist"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "var_9c542279": 5,
+    "vmtype": "client",
+    "name": "scene_frontend_t8_zm_male_team_2_richtofen",
+    "dontsync": 1,
+    "aligntarget": "zm_lobby_player_2",
+    "team": "any"
+}

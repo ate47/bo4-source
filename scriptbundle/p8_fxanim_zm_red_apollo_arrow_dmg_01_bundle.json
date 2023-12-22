@@ -1,0 +1,37 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_793332df85992fcf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "impact"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_99788272717f77c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_712a6bf62b183be5",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_apollo_arrow_dmg_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

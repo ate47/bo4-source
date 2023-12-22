@@ -1,0 +1,18 @@
+{
+    "amount": 1,
+    "description": "#hash_5743af5837b0f5ff",
+    "var_922067c4": "scriptbundle",
+    "weapon": <error reading:melee_coinbag_t8_wz>,
+    "type": "itemspawnentry",
+    "var_65b3a12": 6,
+    "name": "melee_coinbag_t8_item",
+    "displayname": "#weapon/melee_coinbag_t8",
+    "icon": "#hash_13831944cc412020",
+    "modelscale": 1,
+    "rarity": "Common",
+    "handler": "#hash_50375e5de228e9fc",
+    "pickupicon": "#hash_66ddf44a377e19dd",
+    "var_50773731": 12,
+    "itemtype": "weapon",
+    "pickupsound": "fly_pickup_generic"
+}

@@ -1,0 +1,40 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2789f5cd44519dd3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "closed"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5cef4c736273b355",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_5cc41266139b0e22",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "opened"
+                }
+            ],
+            "model": "#hash_4f527ca9b3a0c46d",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "polishing",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_door_lab_double_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

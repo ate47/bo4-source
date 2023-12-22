@@ -1,0 +1,38 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7517f638f5890638",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state10_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_fba6871480913aa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state10_exit"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_core_frontend_zm_lab_flask_globs_10_mod",
+            "type": "prop",
+            "name": "glob"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p8_fxanim_core_frontend_zm_lab_flask_globs_10_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

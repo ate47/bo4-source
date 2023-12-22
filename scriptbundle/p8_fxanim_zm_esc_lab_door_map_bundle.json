@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4052f10cd0fe0afc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot_1"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_11ddfd8dcd4c8958",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_lab_door_map_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

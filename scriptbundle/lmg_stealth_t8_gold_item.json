@@ -1,0 +1,59 @@
+{
+    "attachments": [
+        {
+            "var_6be1bec7": "reddot_wz_item"
+        },
+        {
+            "var_6be1bec7": "stock_wz_item"
+        },
+        {
+            "var_6be1bec7": "foregrip_wz_item"
+        },
+        {
+            "var_6be1bec7": "fastmag_wz_item"
+        },
+        {
+            "var_6be1bec7": "suppressor_wz_item"
+        },
+        {
+            "var_6be1bec7": "pistol_grip_wz_item"
+        }
+    ],
+    "amount": 1,
+    "var_99c0cb08": 1,
+    "description": "#hash_141e4964026f335d",
+    "var_f2902d7b": 1,
+    "var_a3aa1ca2": 100,
+    "var_922067c4": "scriptbundle",
+    "var_22c3ab38": 1,
+    "var_5dc4470b": -6,
+    "var_3e688854": -2,
+    "var_2ee21ae6": 1,
+    "weapon": <error reading:hash_7fdfd93ac9369655>,
+    "attachslotbody": 1,
+    "type": "itemspawnentry",
+    "var_7a80f06e": 1,
+    "var_e6ac0592": 90,
+    "attachslotstock": 1,
+    "baseweapon": "lmg_stealth_t8_item",
+    "var_65b3a12": 6,
+    "var_340eac1f": 1,
+    "name": "lmg_stealth_t8_gold_item",
+    "var_9507cf45": "#hash_30ba054b09f6a8e3",
+    "var_99edb6a3": 1,
+    "icon": "#hash_5b3a69b0693b5104",
+    "explosivedamagescale": 1,
+    "attachslotmagazine": 1,
+    "modelscale": 1,
+    "rarity": "Epic",
+    "var_c690c73d": 1,
+    "attachslotbarrel": 1,
+    "handler": "#hash_50375e5de228e9fc",
+    "armortier": 1,
+    "attachslotoptics": 1,
+    "attachslotrail": 1,
+    "pickupicon": "#hash_2a3f361b06306697",
+    "var_50773731": 1,
+    "var_9f307988": 1,
+    "itemtype": "weapon"
+}

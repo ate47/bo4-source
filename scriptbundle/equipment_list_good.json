@@ -1,0 +1,28 @@
+{
+    "itemlist": [
+        {
+            "minweight": 100,
+            "var_a6762160": "cluster_semtex_wz_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "sensor_dart_wz_item",
+            "maxweight": 200,
+            "available": -1
+        },
+        {
+            "minweight": 100,
+            "var_a6762160": "concussion_wz_item",
+            "maxweight": 100,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 3,
+    "var_9b009839": -1,
+    "name": "equipment_list_good",
+    "var_fde72c94": 100
+}

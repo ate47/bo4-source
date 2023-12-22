@@ -1,0 +1,124 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ef8c26afd73ba34",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2608a8560c70b840",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "actor 1",
+            "allowdeath": 1,
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ef8c56afd73bf4d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2608a8560c70b840",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "actor 2",
+            "allowdeath": 1,
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ef8c46afd73bd9a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2608a8560c70b840",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "actor 3",
+            "allowdeath": 1,
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ef8bf6afd73b51b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2608a8560c70b840",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "actor 4",
+            "allowdeath": 1,
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ef8be6afd73b368",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_2608a8560c70b840",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "actor 5",
+            "allowdeath": 1,
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5b1e3ff762669c4a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_3b7a9084ec3c4d4f",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "brutus"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_brutus_summon_hellhounds",
+    "dontsync": 1,
+    "aligntarget": "tag_align_escape_rec_yard",
+    "team": "any"
+}

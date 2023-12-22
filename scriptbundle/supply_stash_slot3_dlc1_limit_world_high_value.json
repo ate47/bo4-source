@@ -1,0 +1,59 @@
+{
+    "itemlist": [
+        {
+            "minweight": 50,
+            "var_a6762160": "launcher_standard_t8_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "perk_item_deadsilence",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "perk_item_lightweight",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "health_item_large",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "backpack_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "sensor_dart_wz_item",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "var_a6762160": "perk_item_looter",
+            "maxweight": 50,
+            "available": 1
+        },
+        {
+            "minweight": 50,
+            "maxweight": 50,
+            "available": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "var_7fb0967b": 12000,
+    "type": "itemspawnlist",
+    "var_345eba59": 8,
+    "var_9b009839": -1,
+    "name": "supply_stash_slot3_dlc1_limit_world_high_value",
+    "var_fde72c94": 100,
+    "supplystash": 1
+}

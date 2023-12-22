@@ -1,0 +1,20 @@
+{
+    "hinttext": "#hash_51853e4ec026a005",
+    "var_922067c4": "scriptbundle",
+    "var_f2038d90": "8",
+    "var_fc4aa21e": "9",
+    "value2": "2",
+    "var_6006e991": "3",
+    "var_43883094": "1",
+    "var_7c9022a3": "6",
+    "var_8e4ec620": "7",
+    "var_dfed6968": "4",
+    "var_71ce0d1f": "5",
+    "type": "gamesettings",
+    "label": "#hash_399145de9cf614d9",
+    "name": "carry_score",
+    "displayname": "#hash_491c364488e3abab",
+    "var_9600a8ab": "#menu/1_point",
+    "var_9de86f42": 9,
+    "setting": "carryScore"
+}
