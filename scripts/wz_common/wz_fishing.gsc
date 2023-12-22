@@ -308,10 +308,10 @@ function function_6c71782a(dynent) {
     self function_12747006("fishing_in");
     self clientfield::set_to_player("player_fishing", 1);
     self thread function_ee4ce537(dynent);
-    self waittill(#"hash_7e9761139bebb10f");
+    self waittill(#"fishing_buoy_toss");
     time = dynent.buoy fake_physicslaunch(self.origin, dynent.var_87de0f0d, 200);
     dynent.buoy thread function_8e8c4fef(time, dynent.var_87de0f0d);
-    self waittill(#"hash_7cb51cb463b76708");
+    self waittill(#"fishing_minigame_start");
     if (dynent.var_fb09ad1c === 2) {
         return;
     }
@@ -393,7 +393,7 @@ function function_16e4e507(dynent) {
             if (isdefined(dynent.buoy)) {
                 self function_12747006("fishing_out");
                 self thread function_54a3ec41(dynent);
-                self waittill(#"hash_48fcb6dc25306e9");
+                self waittill(#"fishing_end_minigame");
                 self thread function_ed446f40(dynent);
                 break;
             }
@@ -444,7 +444,7 @@ function function_176e516(dynent) {
         if (dynent.var_fb09ad1c != 3 && (self jumpbuttonpressed() || self stancebuttonpressed())) {
             dynent.var_fb09ad1c = 3;
             self function_12747006("fishing_cancel");
-            self waittill(#"hash_48fcb6dc25306e9");
+            self waittill(#"fishing_end_minigame");
             self function_ed446f40(dynent);
             break;
         }
@@ -461,7 +461,7 @@ function function_54a3ec41(dynent) {
     self endon("28b87437c2b95c62");
     self endon(#"death");
     if (isdefined(dynent.var_3fa8a746) && dynent.var_3fa8a746) {
-        self waittill(#"hash_f330683a277a932");
+        self waittill(#"fishing_caught_minigame");
         if (dynent.dropping_item === 0) {
             dynent.dropping_item = 1;
             dynent function_e8c63c15(self);

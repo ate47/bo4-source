@@ -2,19 +2,19 @@ type,name,ptr
 vehicle,vehicle_boct_mil_boat_tactical_raft_wz_blk,2a88a595fe8
 vehicle,veh_ultimate_turret_wz,2a88a5945b8
 vehicle,vehicle_t8_drone_recon_wz,2a88a576e58
-vehicle,hash_12120ed0e8d99eba,2a88a61a918
+vehicle,vehicle_boct_mil_boat_tactical_raft_wz_blk_pc,2a88a61a918
 vehicle,hash_12d9972b4ec9db34,2a88a5eb1a8
-vehicle,hash_14329b1ac8be8c31,2a88a592b88
+vehicle,vehicle_t8_drone_recon_wz_pc,2a88a592b88
 vehicle,vehicle_boct_mil_boat_tactical_raft_wz_gry,2a88a570598
 vehicle,hash_31493d17c21fcc1b,2a88a6174b8
 vehicle,hash_3effd1dd89ee3d36,2a88a5f68f8
 vehicle,vehicle_zmb_air_alcatraz_plane,2a88a5b1d18
 vehicle,vehicle_t8_mil_helicopter_transport_dark_wz_infiltration,2a88a59c8a8
 vehicle,hash_4bed0c8b353f3511,2a88a5f8328
-vehicle,hash_4c5a9aeea44f2977,2a88a58c2c8
+vehicle,vehicle_boct_mil_boat_tactical_raft_wz_gry_pc,2a88a58c2c8
 vehicle,vehicle_boct_mil_boat_tactical_raft_wz_odg,2a88a5e2eb8
 vehicle,vehicle_t8_mil_air_transport_infiltration,2a88a585a08
-vehicle,hash_7bd99993e951a433,2a88a5a4b98
+vehicle,vehicle_boct_mil_boat_tactical_raft_wz_odg_pc,2a88a5a4b98
 vehicle,hash_7c8dc3d28c1c95e2,2a88a5febe8
 vehicle,hash_7dd2944ddf7cc7e9,2a88a578888
 model,hash_37ee358155bdb,2a886bed918
@@ -334,7 +334,7 @@ model,hash_2a607b42d7f74f08,2a886af35f8
 model,hash_2a6a33e795059880,2a886af3898
 model,hash_2aaf7b75afa8b259,2a886af4318
 model,hash_2ab194382a8f4038,2a886c8cdf8
-model,hash_2ab6b01c5db86c63,2a886af4858
+model,wpn_t8_eqp_radar_shroud_gun_world,2a886af4858
 model,p8_fxanim_zm_esc_power_station_panel_01_mod,2a886d48268
 model,hash_2b0170573a22adba,2a886df5f98
 model,hash_2b159f12cd93558e,2a886c7db28
@@ -462,7 +462,7 @@ model,p7_water_container_plastic_small_yellow,2a886d56c08
 model,hash_3956250a535f25b8,2a886b1eaf8
 model,hash_397ece9c0c6e3c84,2a886b1f2d8
 model,p8_wz_ammo_pickup_338,2a886c8e2f8
-model,hash_39acac264d00d781,2a886cf5ca8
+model,wpn_t8_melee_hatchet_world,2a886cf5ca8
 model,hash_3a40939b527a7458,2a886b21a38
 model,hash_3a55bea7a1b5bbf6,2a886b21f78
 model,hash_3a796213b5be5cd1,2a886c896d8
@@ -572,7 +572,7 @@ model,hash_46fc4fa9d75fef65,2a886b4a688
 model,hash_47632b696d646750,2a886b4b8e8
 model,hash_476c17da4862b3a0,2a886b4be28
 model,hash_477a573463ee3545,2a886b4c218
-model,hash_481e515def9b9e49,2a886b4e438
+model,wpn_t8_loot_smg_vmp_mag_world,2a886b4e438
 model,hash_482992b26654432f,2a886b4e588
 model,c_t8_zmb_mob_brutus_boss_baton,2a886f44e88
 model,attach_t8_wz_pickup_suppressor,2a886c5ac08
@@ -804,7 +804,7 @@ model,p8_wz_fence_gate_wall_debris_horizontal_pole,2a886ecd0f8
 model,hash_62633fd32b6ea3b4,2a886b98e98
 model,hash_6283dbe68a37cf13,2a886b993d8
 model,flying_camera_drone_model,2a886c3aec8
-model,hash_62aa49dcb73c70a2,2a886b99918
+model,wpn_t8_sniper_semiauto_bullet_01_view,2a886b99918
 model,hash_62fc71e77daee9d0,2a886c12ba8
 model,hash_63122fc9d3f89b21,2a886b9a788
 model,hash_634c5d4e3f6d4cf6,2a886b9b4a8
@@ -989,7 +989,7 @@ model,hash_79e8cc9b82adf8d9,2a886bda358
 model,hash_7a827715017a8df7,2a886bdcc08
 model,hash_7a86e56ec6e751fc,2a886bdcd58
 model,hash_7a9d10f934caa343,2a886cab248
-model,hash_7ad1209e4d871c3f,2a886bdda78
+model,wpn_t8_eqp_sensor_dart_gun_world,2a886bdda78
 model,p8_fxp_titan_link,2a886bddfb8
 model,hash_7b6d83ba8fe5c53b,2a886cc21c8
 model,hash_7b7049ce72a51bf7,2a886be01d8
@@ -1415,7 +1415,7 @@ rumble,hash_60ba860667abd52f,2a88a79a190
 rumble,weapon_raise_quick,2a88a79b930
 rumble,hash_62c9299e7f036f23,2a88a79c1a0
 rumble,hash_6734b3c0c3ba63f8,2a88a79ba08
-rumble,hash_69294bfe2f2f1199,2a88a79bae0
+rumble,reload_clipout,2a88a79bae0
 rumble,hash_6e2cf62b0e7ea6a0,2a88a79ce90
 rumble,hash_6f872238aa3abfae,2a88a79bc48
 rumble,hash_71fceb6e20f9fbdc,2a88a79bcd8
@@ -1431,7 +1431,7 @@ rumble,hash_7fbdfa5ac7cedfc9,2a88a79c038
 shellshock,hash_4c7b5c53d134927,2a88a82a800
 shellshock,hash_640e615236430645,2a88a82ae00
 shellshock,hash_679908e086a90b19,2a88a82a440
-shellshock,hash_752331e61927f511,2a88a82a740
+shellshock,shellshock_blur_pc,2a88a82a740
 statuseffect,hash_19533caf858a9f3b,2a88a833770
 statuseffect,hash_1a1afdbe16bce021,2a88a832050
 statuseffect,hash_2608bf886a137e8e,2a88a82c870
@@ -1490,7 +1490,7 @@ xcam,hash_2f819e28c35869cd,2a88a8401c0
 xcam,hash_320401c602936d0f,2a88a840400
 xcam,hash_32556c49982dea72,2a88a8404c0
 xcam,hash_3387fe4e35c99821,2a88a840580
-xcam,hash_35100dcb1fe633b7,2a88a840640
+xcam,ui_cam_cac_ar_standard,2a88a840640
 xcam,hash_351189ab225a944f,2a88a840700
 xcam,hash_355525fb5ac70035,2a88a8407c0
 xcam,hash_3717a94ea371d784,2a88a840940
@@ -7735,7 +7735,7 @@ soundalias,uin_wz_attach_barrel,0
 soundalias,hash_1a930b8c3d2a3fb3,0
 soundalias,hash_1aead9e7cdebe7d2,0
 soundalias,hash_1b426137d1e6d45e,0
-soundalias,hash_1b959a0d8a74b949,0
+soundalias,amb_tarp_flap,0
 soundalias,hash_1ba7a1c3b73b784e,0
 soundalias,hash_1badfcbfc4681533,0
 soundalias,hash_1bf85fd65bf64016,0
@@ -7793,7 +7793,7 @@ soundalias,uin_wz_attach_silencer_on,0
 soundalias,hash_262fb5d3fe734455,0
 soundalias,hash_26bf012beaa38162,0
 soundalias,hash_271fe54d919e7355,0
-soundalias,hash_2788670b4c7bc6ae,0
+soundalias,amb_flag,0
 soundalias,hash_279a74bad53242fc,0
 soundalias,hash_27dbff5069e7e449,0
 soundalias,hash_284cef5dead435f4,0
@@ -7925,7 +7925,7 @@ soundalias,uin_wz_attach_grip,0
 soundalias,hash_465296fdde32ea8b,0
 soundalias,uin_wz_perk_bloody_tracker,0
 soundalias,hash_4676d4369bb15b85,0
-soundalias,hash_46b1c786cea91aac,0
+soundalias,vox_homun_scream_exert_homu_0,0
 soundalias,hash_478553850fcabf34,0
 soundalias,hash_47a7dd1007c11019,0
 soundalias,fly_drop_armor_repair_plate,0
@@ -8074,7 +8074,7 @@ soundalias,hash_633b9532cf0da169,0
 soundalias,hash_633bcc488ff36c4f,0
 soundalias,hash_633ce1c4d50c2315,0
 soundalias,hash_63bcbf23c737f161,0
-soundalias,hash_63e1974f34df59b9,0
+soundalias,fly_bump_chainlink,0
 soundalias,hash_63fbf9092aee8735,0
 soundalias,hash_641e47577f774dbd,0
 soundalias,hash_64441bbb83e130e9,0
@@ -8087,7 +8087,7 @@ soundalias,hash_66aa6b049c23fa3f,0
 soundalias,hash_66d3a62e34378295,0
 soundalias,hash_66edd342df7791fd,0
 soundalias,hash_672528a60ddbd2d7,0
-soundalias,hash_67265c62b91783b3,0
+soundalias,amb_netting_flap,0
 soundalias,uin_wz_attach_stock,0
 soundalias,evt_elevator_stop,0
 soundalias,hash_67c1a48c899c0d83,0
@@ -8146,7 +8146,7 @@ soundalias,uin_wz_perk_medic,0
 soundalias,uin_wz_perk_aware,0
 soundalias,fly_drop_recon_car,0
 soundalias,hash_75037b4727f99cdb,0
-soundalias,hash_7512de7b20457d1e,0
+soundalias,amb_glitched_screen_quiet,0
 soundalias,hash_75152adab4f48391,0
 soundalias,hash_75318bcffca7ff06,0
 soundalias,hash_757c35cbad846c27,0
@@ -8177,7 +8177,7 @@ soundalias,hash_7c8779985c404f70,0
 soundalias,hash_7caaad2c8287dd7c,0
 soundalias,hash_7cd640289ddf6ab7,0
 soundalias,hash_7d0432d3e280bce1,0
-soundalias,hash_7d3497f412b590a6,0
+soundalias,vox_homun_deploy_exert_homu_0,0
 soundalias,hash_7d4eb0bd7c52b57f,0
 soundalias,hash_7d6ddc9c4858ce32,0
 soundalias,hash_7d7670b1795f586f,0
@@ -8187,7 +8187,7 @@ soundalias,hash_7e5f94b2de170a8e,0
 soundalias,hash_7eb51f1a0028ab28,0
 soundalias,hash_7f067d9322e18ffa,0
 soundalias,hash_7f118ea3a4874268,0
-soundalias,hash_7f7b31cf3a439b76,0
+soundalias,amb_water_lap_lp,0
 soundalias,hash_7f813c6bae7ca152,0
 soundalias,hash_7fe19ceed35907ce,0
 soundalias,hash_7ff007fca6ac13d7,0

@@ -346,7 +346,7 @@ model,hash_26b6e46f315ae4b8,2a886c0f488
 model,c_t8_zmb_1stclass_female_hat1_skin2,2a886d3c808
 model,p8_zm_zod_lifeboat_thole_pin,2a886cabb78
 model,c_t8_zmb_dlc0_zombie_female_body1_g_lowclean_skin2,2a886cea248
-model,hash_27bf6639cbf9f26f,2a886c38f48
+model,wpn_t8_zm_knife_bowie_world,2a886c38f48
 model,c_t8_zmb_1stclass_male_body2_g_upclean,2a886aebfd8
 model,hash_27c0bdacaa90081b,2a886d0bdb8
 model,c_t8_zmb_3rdclass_male_body4_g_rarmoff,2a886ca9fe8
@@ -6028,7 +6028,7 @@ soundalias,hash_275d2c36c1f45905,0
 soundalias,hash_275f5ccb7a35d19e,0
 soundalias,hash_275fa58d6877125e,0
 soundalias,hash_277d298cf39a2119,0
-soundalias,hash_2788670b4c7bc6ae,0
+soundalias,amb_flag,0
 soundalias,hash_27941c5d65050abb,0
 soundalias,hash_279a74bad53242fc,0
 soundalias,hash_279b25807020fd58,0

@@ -27,14 +27,14 @@ function autoexec __init() {
 // Checksum 0x1c021631, Offset: 0x1b8
 // Size: 0x4c
 function __init__() {
-    clientfield::register("world", "toilet_ee_play", 19000, 2, "int", &function_c7f970e3, 0, 0);
+    clientfield::register("world", "toilet_ee_play", 19000, 2, "int", &toilet_ee_play, 0, 0);
 }
 
 // Namespace wz_asylum/wz_asylum
 // Params 7, eflags: 0x1 linked
 // Checksum 0xa74000d9, Offset: 0x210
 // Size: 0x18a
-function function_c7f970e3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function toilet_ee_play(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval > 0) {
         toilet = getdynent(#"asylum_toilet");
         if (isdefined(toilet) && isdefined(toilet.target)) {

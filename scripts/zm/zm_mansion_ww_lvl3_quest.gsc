@@ -863,7 +863,7 @@ function function_42c889b7(e_player) {
     scene::add_scene_func(#"aib_vign_cust_mnsn_crmsn_nfrtu_spawn_01", &function_2c0edc3d, "done");
     level thread scene::play(#"aib_vign_cust_mnsn_crmsn_nfrtu_spawn_01", self);
     exploder::stop_exploder("fxexp_crypt_glow");
-    self waittill(#"hash_11d606d611e5047e");
+    self waittill(#"summon_minions");
     function_d2278936(e_player);
 }
 

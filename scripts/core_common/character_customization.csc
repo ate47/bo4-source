@@ -1745,7 +1745,7 @@ function updateeventthread(localclientnum, var_d0b01271, notifyname, var_1d7f159
             params = {};
             [[ var_1d7f1597 ]](localclientnum, var_d0b01271, waitresult, params);
             if (waitresult.event_name == "previewShopFace") {
-                params.align_struct = struct::get(#"hash_1b6b643ea423735b");
+                params.align_struct = struct::get(#"tag_align_quartermaster_character_head");
             }
             if (isdefined(params.var_c76f3e47) && params.var_c76f3e47) {
                 [[ var_d0b01271 ]]->function_27945cb8(1);

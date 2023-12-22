@@ -469,7 +469,7 @@ function private function_e17d407e(transition, outcome) {
         player takeallweapons();
         fields = getcharacterfields(player player_role::get(), currentsessionmode());
         if (i == 0) {
-            player_positions[i] thread scene::play(fields.var_fa8365dc[0].scene, player);
+            player_positions[i] thread scene::play(fields.heroicScenes[0].scene, player);
         } else {
             player_positions[i] thread scene::play(fields.heroicposes[0].scene, player);
         }

@@ -42,7 +42,7 @@ function function_2613aeec(enabled) {
 // Size: 0x13a
 function function_cb514c8b() {
     item_world::function_4de3ca98();
-    var_885c7eef = function_91b29d2a(#"hash_527c48a52cb157d");
+    var_885c7eef = function_91b29d2a(#"cu08_spawn");
     if (!isdefined(var_885c7eef[0])) {
         return;
     }

@@ -54,7 +54,7 @@ function function_772f66bd(localclientnum) {
         var_d75008e3 = -3;
         break;
     }
-    var_ca9c0ca2 = getscriptbundle("zm_base_difficulty");
+    zmdifficultysettings = getscriptbundle("zm_base_difficulty");
     switch (level.gamedifficulty) {
     case 0:
         str_suffix = "_E";
@@ -70,7 +70,7 @@ function function_772f66bd(localclientnum) {
         str_suffix = "_I";
         break;
     }
-    n_base = var_ca9c0ca2.("plyBaseHealth" + str_suffix);
+    n_base = zmdifficultysettings.("plyBaseHealth" + str_suffix);
     n_target = int(max(n_base + 50 * var_d75008e3, 1));
     localplayer.var_ee9b8af0 = n_target;
 }

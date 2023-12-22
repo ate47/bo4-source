@@ -69,7 +69,7 @@ function private function_e717b0d(player) {
 // Size: 0x3dc
 function function_d9ff5189() {
     level.var_6990c489 = [];
-    zones = array(#"hash_4dbcc2b446bd38a1", #"hash_10428139e6b0bbff", #"hash_25aa44d926c0c474", #"hash_6415ec7e8184bf28", #"hash_5847443f3024c929", #"hash_73005dd6865f9f10", #"hash_404f9fa38b97a6d7", #"hash_2b716492bb846abc", #"hash_630ccdf81f24d726", #"hash_637c310235240983", #"hash_2471629856eb1593", #"hash_2534a9ced626d51", #"hash_591cde4f594114c1", #"hash_2db90e94e83ff798", #"hash_7c4b27a01e9028f8", #"hash_1713d247dfe47377", #"hash_5e4769235f7fac0b", #"hash_44cf5914cb790bb6", #"hash_293b65bfdc1ba1db", #"hash_69f475f09d7479b2");
+    zones = array(#"construction_zombie_player_spawn", #"estates_zombie_player_spawn", #"hydro_zombie_player_spawn", #"train_zombie_player_spawn", #"turbine_zombie_player_spawn", #"rivertown_zombie_player_spawn", #"fracking_zombie_player_spawn", #"factory_zombie_player_spawn", #"cargo_zombie_player_spawn", #"array_zombie_player_spawn", #"asylum_zombie_player_spawn", #"nuketown_zombie_player_spawn", #"ghosttown_zombie_player_spawn", #"lighthouse_zombie_player_spawn", #"farm_zombie_player_spawn", #"firing_zombie_player_spawn", #"boxing_zombie_player_spawn", #"diner_zombie_player_spawn", #"clearing_zombie_player_spawn", #"gazebo_zombie_player_spawn");
     foreach (zone in zones) {
         zonespawns = struct::get_array(zone, "targetname");
         if (zonespawns.size > 0) {

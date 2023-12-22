@@ -59,7 +59,7 @@ function private function_637778cf() {
         self.powerups = arraycopy(settingsbundle.var_5c3586f3);
         self thread function_3edc6292();
     }
-    if (isdefined(settingsbundle.var_ca920a99)) {
+    if (isdefined(settingsbundle.weapondamagescaleoverrides)) {
         function_a19d7104(settingsbundle);
     }
 }
@@ -78,7 +78,7 @@ function private function_a19d7104(settingsbundle) {
     if (!isdefined(level.var_532264f5[settingsbundle.name])) {
         level.var_532264f5[settingsbundle.name] = [];
     }
-    foreach (var_e8d7c6d7 in settingsbundle.var_ca920a99) {
+    foreach (var_e8d7c6d7 in settingsbundle.weapondamagescaleoverrides) {
         if (!isdefined(var_e8d7c6d7.weaponid) || !isdefined(var_e8d7c6d7.damagescale)) {
             /#
                 println("<unknown string>" + settingsbundle.name);

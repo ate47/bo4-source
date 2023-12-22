@@ -63,9 +63,9 @@ function __init__() {
     level.var_a72b250f[#"spectator"] = #"hash_e2e52f9cab15dce";
     level.draftstructs = [];
     level.draftstructs[#"free"] = #"draft_team_struct";
-    level.draftstructs[#"allies"] = #"hash_4fb87afe0caa6177";
+    level.draftstructs[#"allies"] = #"draft_team_struct_allies";
     level.draftstructs[#"axis"] = #"hash_700492f71a083a7c";
-    level.draftstructs[#"spectator"] = #"hash_4fb87afe0caa6177";
+    level.draftstructs[#"spectator"] = #"draft_team_struct_allies";
     level.var_1f0933dc = [];
     level.var_1f0933dc[#"allies"] = "mp_draft_lights_allies";
     level.var_1f0933dc[#"axis"] = "mp_draft_lights_axis";

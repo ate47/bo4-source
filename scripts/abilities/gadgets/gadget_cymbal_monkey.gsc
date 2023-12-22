@@ -55,7 +55,7 @@ function private function_a23699fe() {
     while (1) {
         for (i = 0; i < level.var_7d95e1ed.size; i++) {
             monkey = level.var_7d95e1ed[i];
-            if (!isdefined(monkey) || isdefined(monkey.var_68005ac5) && monkey.var_68005ac5) {
+            if (!isdefined(monkey) || isdefined(monkey.fuse_lit) && monkey.fuse_lit) {
                 continue;
             }
             if (!isdefined(monkey.var_38af96b9)) {
@@ -142,7 +142,7 @@ function function_b9934c1d() {
     if (isdefined(level.var_2746aef8)) {
         [[ level.var_2746aef8 ]](self);
     }
-    self.var_68005ac5 = 1;
+    self.fuse_lit = 1;
     self playsound(#"hash_4509539f9e7954e2");
     playfxontag(level._effect[#"monkey_glow"], self, "tag_weapon");
     self thread scene::play(#"cin_t8_monkeybomb_dance", self);
@@ -191,7 +191,7 @@ function function_4a5dff80(zombie) {
             continue;
         }
         dist_sq = distancesquared(zombie.origin, monkey.origin);
-        if (isdefined(monkey) && isdefined(monkey.var_68005ac5) && monkey.var_68005ac5 && dist_sq < var_2d9e38fc) {
+        if (isdefined(monkey) && isdefined(monkey.fuse_lit) && monkey.fuse_lit && dist_sq < var_2d9e38fc) {
             if (!isdefined(var_128c12c9) || dist_sq < var_128c12c9) {
                 var_128c12c9 = dist_sq;
                 best_monkey = monkey;

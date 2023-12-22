@@ -123,7 +123,7 @@ function on_finalize_initialization() {
 // Checksum 0x961f835e, Offset: 0x5b8
 // Size: 0x148
 function private function_5725bc63() {
-    var_e749c212 = struct::get_array(#"hash_25aa44d926c0c474");
+    var_e749c212 = struct::get_array(#"hydro_zombie_player_spawn");
     foreach (spawn in var_e749c212) {
         if (isdefined(spawn)) {
             if (spawn.origin === (30224, -46011, 2048) || spawn.origin === (30149, -45912, 2048) || spawn.origin === (30273, -45851, 2048) || spawn.origin === (30179, -45774, 2048)) {
@@ -509,12 +509,12 @@ function function_df930125(str_type) {
         case #"atv_spawn":
             return (0, 0, 1);
         case #"cargo_truck_spawn":
-        case #"hash_7e0f31597a8a30af":
+        case #"cargo_truck_clearing_spawn":
             return (1, 0, 1);
         case #"heli_spawn":
-        case #"hash_7f58537ca200b519":
+        case #"heli_clearing_spawn":
             return (1, 0, 0);
-        case #"hash_1dbca6f7d0a55809":
+        case #"arav_clearing_spawn":
         case #"arav_spawn":
             return (0, 1, 1);
         case #"pbr_spawn":

@@ -1308,9 +1308,9 @@ function private function_39b663b7(localclientnum, inventoryitem, item) {
                 setuimodelvalue(createuimodel(objectivemodel, "state"), 0);
             }
             if (isdefined(item.var_a6762160.objectives[i])) {
-                if (isdefined(item.var_a6762160.objectives[i].var_eea04f51) && item.var_a6762160.objectives[i].var_eea04f51.size > 0) {
+                if (isdefined(item.var_a6762160.objectives[i].teamsizedescriptions) && item.var_a6762160.objectives[i].teamsizedescriptions.size > 0) {
                     numplayers = getgametypesetting("maxTeamPlayers");
-                    foreach (objectivestruct in item.var_a6762160.objectives[i].var_eea04f51) {
+                    foreach (objectivestruct in item.var_a6762160.objectives[i].teamsizedescriptions) {
                         if (objectivestruct.teamsize == numplayers) {
                             description = objectivestruct.description;
                             break;

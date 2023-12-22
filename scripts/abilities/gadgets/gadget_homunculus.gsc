@@ -195,7 +195,7 @@ function function_1dba4a2() {
     self.mover endon(#"death");
     while (1) {
         waitresult = undefined;
-        waitresult = self waittill(#"hash_5851b555291e7748");
+        waitresult = self waittill(#"snddeployvox");
         if (isdefined(waitresult.str_alias)) {
             self playsoundontag(waitresult.str_alias, "j_head");
         }

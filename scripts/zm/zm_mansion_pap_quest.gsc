@@ -577,7 +577,7 @@ function function_5ccf9075() {
 // Size: 0x9c
 function function_93e11617(a_ents, e_player) {
     level flag::set("unlock_pap_gate");
-    array::wait_any(array::remove_undefined(a_ents), #"hash_6743539e144cc34c");
+    array::wait_any(array::remove_undefined(a_ents), #"player_say_unlocked");
     if (zm_utility::is_player_valid(e_player)) {
         e_player thread zm_vo::function_a2bd5a0c(#"hash_29c7299aeeb543d1");
     }
@@ -591,8 +591,8 @@ function function_94fc7512(var_b374fe7b) {
     if (isstring(var_b374fe7b)) {
         level flag::set("crystal_" + var_b374fe7b + "_key");
     }
-    level flag::wait_till(#"hash_6453fae6f9a19033");
-    level flag::clear(#"hash_6453fae6f9a19033");
+    level flag::wait_till(#"ooze_gate_lock_done");
+    level flag::clear(#"ooze_gate_lock_done");
     s_scene = struct::get(#"p8_fxanim_zm_man_ooze_clump_bundle", "scriptbundlename");
     a_shots = s_scene.scenes[0].var_5a2219f0;
     str_shot = a_shots[s_scene.scene_played.size];
@@ -777,7 +777,7 @@ function function_62561ed8(a_ents) {
 // Checksum 0x10bdf002, Offset: 0x4a20
 // Size: 0xbc
 function function_cf336ef1(a_ents) {
-    level flag::init(#"hash_6453fae6f9a19033", 1);
+    level flag::init(#"ooze_gate_lock_done", 1);
     var_7ba3f1dd = getent("ooze_gate_col", "targetname");
     if (isdefined(var_7ba3f1dd)) {
         var_7ba3f1dd disconnectpaths();

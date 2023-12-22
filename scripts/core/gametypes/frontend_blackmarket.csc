@@ -110,7 +110,7 @@ function function_631642bd(localclientnum, menu_data) {
     forcestreambundle(#"scene_frontend_blackjack_crate");
     level scene::init(#"scene_frontend_blackjack_reserves");
     s_align = struct::get(#"tag_align_blackjack_reserves");
-    playmaincamxcam(localclientnum, #"hash_782af0d18a8eb528", 0, "", "", s_align.origin, s_align.angles);
+    playmaincamxcam(localclientnum, #"ui_cam_blackjack_character", 0, "", "", s_align.origin, s_align.angles);
     level.var_cf24a85f = spawnstruct();
     level.var_cf24a85f.localclientnum = localclientnum;
 }

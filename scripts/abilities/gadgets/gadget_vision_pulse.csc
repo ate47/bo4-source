@@ -25,7 +25,7 @@ function init_shared() {
     clientfield::register("toplayer", "vision_pulse_active", 1, 1, "int", &vision_pulse_changed, 0, 1);
     clientfield::register("toplayer", "toggle_postfx", 1, 1, "int", &toggle_postfx, 0, 1);
     visionset_mgr::register_visionset_info("vision_pulse", 1, 12, undefined, "vision_puls_bw");
-    animation::add_notetrack_func(#"hash_2b70e12a1f51ba4b", &function_ab898b2d);
+    animation::add_notetrack_func(#"gadget_vision_pulse::vision_pulse_notetracks", &function_ab898b2d);
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse

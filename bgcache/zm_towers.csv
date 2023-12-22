@@ -882,7 +882,7 @@ rumble,anim_med,2a88a79c548
 shellshock,hash_4c7b5c53d134927,2a88a82ab00
 shellshock,hash_1f0b5b7bc16ff850,2a88a82a740
 shellshock,hash_2b52b9a74014da20,2a88a829a80
-shellshock,hash_752331e61927f511,2a88a82a800
+shellshock,shellshock_blur_pc,2a88a82a800
 statuseffect,deaf_electricity_catalyst,2a88a8306e0
 statuseffect,hash_baee445ed1d9b99,2a88a830b80
 statuseffect,hash_12a64221f4d27f9b,2a88a831020

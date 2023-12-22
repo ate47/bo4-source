@@ -814,7 +814,7 @@ rumble,zm_shield_damage,294cf2bc500
 rumble,hash_71fceb6e20f9fbdc,294cf2bbcd8
 shellshock,hash_4c7b5c53d134927,294cf34a800
 shellshock,hash_679908e086a90b19,294cf34a440
-shellshock,hash_752331e61927f511,294cf34a740
+shellshock,shellshock_blur_pc,294cf34a740
 shellshock,explosion_zm,294cf34ac80
 statuseffect,hash_160f88dec9e68a1,294cf351710
 statuseffect,hash_19533caf858a9f3b,294cf350490
@@ -3431,7 +3431,7 @@ scriptbundle,p8_fxanim_zm_office_wormhole_bundle,294cf2a7448
 scriptbundle,activecamoinfo_t8_sig_smg_accurate_darkunicorn,294cf299888
 scriptbundle,p8_fxanim_zm_perk_vending_cola_bundle,294cf2b7408
 scriptbundle,p8_fxanim_zm_esc_trap_fan_play,294cf29ff48
-scriptbundle,hash_3d9156ceffe4c9c5,294cf2af548
+scriptbundle,fxb8_zm_char_wolf,294cf2af548
 scriptbundle,activecamoinfo_t8_direct_action_kills_solarflare_wz,294cf299908
 scriptbundle,activecamoinfo_t8_direct_action_kills_solarflare_zm,294cf299948
 scriptbundle,activecamoinfo_t8_sig_ar_damage_fighter_plane,294cf2999c8
@@ -3440,7 +3440,7 @@ scriptbundle,activecamoinfo_t8_gold_classic,294cf299a08
 scriptbundle,activecamoinfo_t8_sig_ar_modular_faberge_wz,294cf299a48
 scriptbundle,activecamoinfo_t8_sig_ar_modular_faberge_zm,294cf299a88
 scriptbundle,default_traversal_extents_zm,294cf2ae1c8
-scriptbundle,hash_40a238dcdce842c8,294cf2b6208
+scriptbundle,zm_wolf_ally_settings,294cf2b6208
 scriptbundle,activecamoinfo_t8_sig_sniper_powersemi_vietnam_zm,294cf299ac8
 scriptbundle,activecamoinfo_t8_sig_sniper_powersemi_vietnam_wz,294cf299b08
 scriptbundle,activecamoinfo_t8_kills_without_dying_retro_vegas_neon_wz,294cf299b48
@@ -8237,7 +8237,7 @@ soundalias,hash_43a73ba22aa6b3b9,0
 soundalias,hash_43a73da22aa6b71f,0
 soundalias,hash_43afa67fdd3d5468,0
 soundalias,hash_43b98c1dfeff1345,0
-soundalias,hash_43be8b74bcb2810a,0
+soundalias,fly_step_glass,0
 soundalias,hash_43bfa40fb01510cc,0
 soundalias,hash_43c940fd6ff86ce8,0
 soundalias,hash_43cd126efe39ea24,0
@@ -10178,7 +10178,7 @@ soundalias,hash_671bf8c5d069f0a7,0
 soundalias,hash_671bf9c5d069f25a,0
 soundalias,hash_671bfac5d069f40d,0
 soundalias,hash_67248cafd4fd9dba,0
-soundalias,hash_67265c62b91783b3,0
+soundalias,amb_netting_flap,0
 soundalias,hash_6729a6f6349866f3,0
 soundalias,hash_67334deb06bdc238,0
 soundalias,hash_6740a5ef4b32b268,0

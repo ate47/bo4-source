@@ -174,7 +174,7 @@ function function_6c029b7() {
 function function_79eec899() {
     level endon(#"end_game");
     function_91ecec97(level.s_shower_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
-    function_eb59d9fe(level.s_shower_trap.a_s_panels);
+    open_panels(level.s_shower_trap.a_s_panels);
     while (1) {
         self waittill(#"hash_41d1d9f238b43a7");
         function_91ecec97(level.s_shower_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
@@ -408,7 +408,7 @@ function function_f24b1ecb() {
 function function_64fa1b6a() {
     level endon(#"end_game");
     function_91ecec97(level.s_fire_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
-    function_eb59d9fe(level.s_fire_trap.a_s_panels);
+    open_panels(level.s_fire_trap.a_s_panels);
     while (1) {
         self waittill(#"fire_trap_activated");
         function_91ecec97(level.s_fire_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
@@ -638,7 +638,7 @@ function function_6facfabc() {
 function function_7fffc105() {
     level endon(#"end_game");
     function_91ecec97(level.s_spinning_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
-    function_eb59d9fe(level.s_spinning_trap.a_s_panels);
+    open_panels(level.s_spinning_trap.a_s_panels);
     while (1) {
         self waittill(#"hash_5a7f89c0b12d9f27");
         function_91ecec97(level.s_spinning_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
@@ -986,7 +986,7 @@ function function_67b12ae8(e_player) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x31b6c705, Offset: 0x47d8
 // Size: 0x88
-function function_eb59d9fe(a_s_panels) {
+function open_panels(a_s_panels) {
     foreach (panel in a_s_panels) {
         panel thread scene::play("open");
     }

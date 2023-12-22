@@ -91,12 +91,12 @@ function function_f3393d6a() {
         var_51fe014e = var_51fe014e + self.var_bf6f8ec3;
         var_51fe014e = var_51fe014e % level.var_314051a1.factioncallings.size;
         if (zm_utility::is_classic()) {
-            var_98a2d658 = level.var_314051a1.factioncallings[var_51fe014e].var_effda190;
+            var_98a2d658 = level.var_314051a1.factioncallings[var_51fe014e].classicpact;
             foreach (task in var_98a2d658) {
                 self function_c3be3572(task.task, #"hash_20deab97abbf7b12", task.target, task.xp);
             }
         } else if (zm_utility::is_standard()) {
-            var_c53e054e = level.var_314051a1.factioncallings[var_51fe014e].var_ebb6275a;
+            var_c53e054e = level.var_314051a1.factioncallings[var_51fe014e].rushpact;
             foreach (task in var_c53e054e) {
                 self function_c3be3572(task.task, #"hash_764a5fc3ba8820d2", task.target, task.xp);
             }

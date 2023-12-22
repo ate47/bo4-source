@@ -1102,7 +1102,7 @@ rumble,reload_large,294cf2bbe40
 shellshock,hash_4c7b5c53d134927,294cf34a800
 shellshock,hash_1f0b5b7bc16ff850,294cf34aa40
 shellshock,hash_2b52b9a74014da20,294cf349a80
-shellshock,hash_752331e61927f511,294cf34a980
+shellshock,shellshock_blur_pc,294cf34a980
 statuseffect,deaf_electricity_catalyst,294cf350b80
 statuseffect,hash_12a64221f4d27f9b,294cf350240
 statuseffect,hash_19533caf858a9f3b,294cf351020

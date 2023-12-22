@@ -814,16 +814,16 @@ function lights_group_toggle(localclientnum, groupid, ison) {
     taglist = [];
     switch (groupid) {
     case 0:
-        function_670a62e7(settings.var_3d203f52, fxlist, taglist);
+        function_670a62e7(settings.lightgroups_1_slots, fxlist, taglist);
         break;
     case 1:
-        function_670a62e7(settings.var_ee802f44, fxlist, taglist);
+        function_670a62e7(settings.lightgroups_2_slots, fxlist, taglist);
         break;
     case 2:
-        function_670a62e7(settings.var_7d2275f6, fxlist, taglist);
+        function_670a62e7(settings.lightgroups_3_slots, fxlist, taglist);
         break;
     case 3:
-        function_670a62e7(settings.var_f92d18eb, fxlist, taglist);
+        function_670a62e7(settings.lightgroups_4_slots, fxlist, taglist);
         break;
     }
     for (i = 0; i < fxlist.size; i++) {
@@ -1374,7 +1374,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
     if (!isdefined(self.settings) && isdefined(self.scriptbundlesettings)) {
         self.settings = struct::get_script_bundle("vehiclecustomsettings", self.scriptbundlesettings);
     }
-    if (!isdefined(self.settings) || !isdefined(self.settings.var_64a3b723)) {
+    if (!isdefined(self.settings) || !isdefined(self.settings.malfunction_effects)) {
         return;
     }
     if (!isdefined(self.fx_handles)) {
@@ -1388,7 +1388,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     self.fx_handles[#"malfunction"] = [];
     if (newval) {
-        foreach (var_b5ddf091 in self.settings.var_64a3b723) {
+        foreach (var_b5ddf091 in self.settings.malfunction_effects) {
             tag = var_b5ddf091.var_454a4e08;
             effect = var_b5ddf091.transition;
             if (isdefined(var_b5ddf091.transition) && isdefined(var_b5ddf091.var_454a4e08)) {

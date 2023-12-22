@@ -57,7 +57,7 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
                 }
             } else if (level.var_c055f451 == 0) {
                 level.var_c055f451 = 1;
-                exploder::exploder(#"hash_45061fff2cb9e34a");
+                exploder::exploder(#"fxexp_radar_activation");
                 playsound(0, "evt_power_up", (4292, 18990, 6528));
                 var_d7987998 = struct::get_array("amb_local_alarm", "targetname");
                 foreach (struct in var_d7987998) {

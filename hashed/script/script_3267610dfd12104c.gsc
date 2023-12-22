@@ -170,24 +170,24 @@ function function_c213f1b5(var_31c68e48) {
     case #"open_areas":
         function_fdabbb8a();
         break;
-    case #"hash_5fc1190b8d4cb2":
-    case #"hash_14fde308e5ba99c8":
-    case #"hash_1529f02be07353c0":
-    case #"hash_25810300d33e4eb2":
-    case #"hash_26e060c4cad9d4c6":
-    case #"hash_270e9d5e33307542":
-    case #"hash_363aabfd36d5216e":
-    case #"hash_3ffccef3a85a02f8":
-    case #"hash_45b55d97e3c25d6b":
-    case #"hash_51a090bf38d1d097":
-    case #"hash_57f1e0654a394b0f":
-    case #"hash_593d38f3e4d4f011":
-    case #"hash_5fb61583f184e67f":
-    case #"hash_68b99a0067affcfc":
-    case #"hash_7023ef4d4036d4ea":
-    case #"hash_74c4646b46922a55":
-    case #"hash_7655ffe2c704406c":
-    case #"hash_78a5d25a9dbdc5d2":
+    case #"boxing_gym_final_circle":
+    case #"turbine_final_circle":
+    case #"construction_final_circle":
+    case #"array_final_circle":
+    case #"fracking_final_circle":
+    case #"asylum_final_circle":
+    case #"estates_final_circle":
+    case #"firing_range_final_circle":
+    case #"lighthouse_final_circle":
+    case #"hydro_final_circle":
+    case #"ghost_town_final_circle":
+    case #"diner_final_circle":
+    case #"factory_final_circle":
+    case #"nuketown_island_final_circle":
+    case #"clearing_final_circle":
+    case #"docks_final_circle":
+    case #"hijacked_final_circle":
+    case #"graveyard_final_circle":
         function_69e60a10(var_e4204b3);
         break;
     default:

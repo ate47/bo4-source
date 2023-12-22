@@ -212,7 +212,7 @@ model,wpn_t8_eqp_ir_strobe_world,294cb7b8d98
 model,hash_fd751dad3ee136a,294cb7a35b8
 model,fx_rifle_shell,294cb590f18
 model,attach_t8_pistol_revolver_stabilzer_view,294cb5c33a8
-model,hash_106758074e1142ac,294cb7953f8
+model,wpn_t8_eqp_drone_hawk_pda_world,294cb7953f8
 model,p8_mannequin_female_coat_03_fullbody_pose_3_lod0,294cb7a8868
 model,hash_108b7ef1769c7934,294cb79cb68
 model,hash_108e5f0873e27a94,294cb7a9048
@@ -490,7 +490,7 @@ model,hash_2a6a33e795059880,294cb613898
 model,p8_crate_metal_military_medium_01,294cb7b4418
 model,hash_2ab194382a8f4038,294cb74a1b8
 model,hash_2ab5db7d71de8ebf,294cb931208
-model,hash_2ab6b01c5db86c63,294cb614858
+model,wpn_t8_eqp_radar_shroud_gun_world,294cb614858
 model,attach_t8_loot_pistol_auto_fast_mag_world,294cb615038
 model,attach_t8_charm_plant_banana_view,294cb74a5a8
 model,hash_2b27512667817734,294cb781e38
@@ -653,7 +653,7 @@ model,p8_spa_patio_furniture_seat_short_01_gold,294cb732f98
 model,hash_3912aa2f560cdc3f,294cb904958
 model,hash_3956250a535f25b8,294cb63eaf8
 model,attach_t7_optic_thermal_scope_world,294cb975b48
-model,hash_39acac264d00d781,294cb751d18
+model,wpn_t8_melee_hatchet_world,294cb751d18
 model,hash_39caaf12e4df3b80,294cb8e3ef8
 model,hash_39dae6cac5711a8c,294cb640148
 model,p7_foliage_flower_bouquet_jar_dead,294cb9e6168
@@ -1381,7 +1381,7 @@ model,p7_stepladder_lrg_closed,294cb7d75d8
 model,hash_7a9d10f934caa343,294cb946c88
 model,hash_7ab543678147ea60,294cb6fd538
 model,hash_7acca578a2bbb5fa,294cb6fd928
-model,hash_7ad1209e4d871c3f,294cb6fda78
+model,wpn_t8_eqp_sensor_dart_gun_world,294cb6fda78
 model,attach_t8_charm_tanuki_view,294cb77b148
 model,hash_7aff24c51b0cc9e9,294cba74bd8
 model,p8_jpn_no_bicycle_cone,294cb937868
@@ -1430,13 +1430,13 @@ model,attach_t8_pistol_standard_suppressor_view_sig02,294cb70bd88
 model,p7_trash_bin_double_01_blue,294cb898b68
 model,hash_7fc999edcece2717,294cba6a678
 model,hash_7fcd8d54c17db83b,294cba17788
-aitype,hash_1751ac8340d37b6,294cefb2140
-aitype,hash_84caf048dd182c1,294cefb0340
-aitype,hash_ba1230bc2e96e74,294cefb1240
+aitype,spawner_mp_swat_gunner_team1_male,294cefb2140
+aitype,spawner_mp_swat_gunner_team2_male,294cefb0340
+aitype,spawner_mp_swat_gunner_team2_female,294cefb1240
 aitype,spawner_bo3_robot_grunt_assault_mp,294cefb3040
 aitype,spawner_mp_swat_buddy_team2_female,294cefb3f40
 aitype,spawner_mp_swat_buddy_team1_male,294cefb4e40
-aitype,hash_3e4a39334844653b,294cefb5d40
+aitype,spawner_mp_swat_gunner_team1_female,294cefb5d40
 aitype,spawner_bo3_robot_grunt_assault_mp_escort,294cefb6c40
 aitype,hash_6948f0a5495b919d,294cefaf440
 aitype,spawner_mp_swat_buddy_team2_male,294cefb7b40
@@ -2025,13 +2025,13 @@ rumble,hash_7fbdfa5ac7cedfc9,294cf2bc038
 shellshock,hash_4c7b5c53d134927,294cf34a800
 shellshock,status_effect_slowed,294cf3496c0
 shellshock,hash_2b52b9a74014da20,294cf349a80
-shellshock,hash_4114b3b137c8f467,294cf34ac80
+shellshock,status_effect_slowed_concertina_wire_pc,294cf34ac80
 shellshock,proximity_grenade,294cf34aa40
 shellshock,hash_59b5d39cca28f5b8,294cf34a8c0
 shellshock,hash_679908e086a90b19,294cf34a440
 shellshock,shock_rifle_shocked,294cf34a980
 shellshock,lightninggun,294cf34ab00
-shellshock,hash_752331e61927f511,294cf34a740
+shellshock,shellshock_blur_pc,294cf34a740
 shellshock,hash_7fd5008cadfdfa21,294cf34ae00
 statuseffect,microwave_slowed,294cf3514c0
 statuseffect,hash_160f88dec9e68a1,294cf351710
@@ -8840,7 +8840,7 @@ fx,hash_7c4a5c6dc0a72d3f,294cef17b98
 fx,hash_7d1b0f001ea88b82,294cef82c18
 fx,hash_7e4a861318714ac9,294cef2cbd8
 fx,hash_7e6be698bd794446,294cef463f8
-lui_menu_data,hash_34d4bff07963dca0,0
+lui_menu_data,huditems.armorpercent,0
 lui_elem,ct_shared_ingame_objective,0
 lui_elem,bountyhunterbuy,0
 lui_elem,ct_progressbar_status,0
@@ -13407,7 +13407,7 @@ soundalias,hash_1d9aeabe2584b637,0
 soundalias,hash_1d9b77bcbffb3a15,0
 soundalias,hash_1d9d29c6210289a3,0
 soundalias,hash_1d9e1396dd7959ad,0
-soundalias,hash_1d9e34ab0716449c,0
+soundalias,amb_rattle_vending,0
 soundalias,hash_1da2cbb8d4904d8d,0
 soundalias,hash_1da43812c302c37d,0
 soundalias,hash_1da4a08e0ae79c7d,0

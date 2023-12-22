@@ -250,8 +250,8 @@ model,hash_52b0e7665e9a2b90,273ba0b3ea8
 model,hash_52c99d5b8b06d895,273ba0fd408
 model,hash_52d200ed834c34ec,273ba0b3ff8
 model,p8_wz_supply_stash_health,273ba0b5108
-model,hash_53d4e0155ca34da0,273ba0b54f8
-model,hash_53d4e6155ca357d2,273ba0b5648
+model,p8_sun_hat_05,273ba0b54f8
+model,p8_sun_hat_03,273ba0b5648
 model,p8_sun_hat_02,273ba0b5798
 model,hash_5417c3c92ba8a600,273ba0fd948
 model,wpn_t8_eqp_briefcase_bomb_stow,273ba0b5a38
@@ -630,7 +630,7 @@ soundalias,hash_271fdedb26bc021c,0
 soundalias,hash_2730ba20330dff4a,0
 soundalias,hash_273c1ce675562cf7,0
 soundalias,hash_2748aa2e6dc57ae0,0
-soundalias,hash_2788670b4c7bc6ae,0
+soundalias,amb_flag,0
 soundalias,hash_27b256569e7a0420,0
 soundalias,hash_27b257569e7a05d3,0
 soundalias,hash_27b258569e7a0786,0
@@ -717,7 +717,7 @@ soundalias,hash_436a4f77c54e7912,0
 soundalias,hash_438b930b61d96f77,0
 soundalias,hash_438dac17f69b90a2,0
 soundalias,hash_43ad48046fb206c8,0
-soundalias,hash_43be8b74bcb2810a,0
+soundalias,fly_step_glass,0
 soundalias,hash_44c55a442909d57d,0
 soundalias,hash_44d925def0cc9c79,0
 soundalias,hash_456af38afaef9d77,0

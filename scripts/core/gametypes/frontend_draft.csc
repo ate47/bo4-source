@@ -34,9 +34,9 @@ function init() {
 // Size: 0x3c
 function function_47569560() {
     if (currentsessionmode() == 0) {
-        return #"hash_7aea8a3e5b5e575d";
+        return #"zm_lobby_struct";
     } else {
-        return #"hash_4fb87afe0caa6177";
+        return #"draft_team_struct_allies";
     }
 }
 

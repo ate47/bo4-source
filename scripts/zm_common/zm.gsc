@@ -828,9 +828,9 @@ function function_1442d44f() {
 // Size: 0x2cc
 function function_268ef952() {
     if (isdefined(level.var_cd45ee9f)) {
-        var_ca9c0ca2 = getscriptbundle(level.var_cd45ee9f);
+        zmdifficultysettings = getscriptbundle(level.var_cd45ee9f);
     } else {
-        var_ca9c0ca2 = getscriptbundle("zm_base_difficulty");
+        zmdifficultysettings = getscriptbundle("zm_base_difficulty");
     }
     var_c6ceb446 = [];
     switch (level.gamedifficulty) {
@@ -849,10 +849,10 @@ function function_268ef952() {
         break;
     }
     foreach (var_c9db62d5 in array("zomMoveSpeedMult", "zomBaseHealth", "zomHealthIncrease", "zomHealthIncreaseMult", "zomSpawnDelay", "zomNewRunnerInt", "zomMaxCount", "zomMaxCountPerPlayer", "zomCountScalar", "zomCountSoloMult", "zomPointScalar", "plyBaseHealth", "plyPenaltyNoRevive", "plyPenaltyDeath", "plyPenaltyDowned", "plyPenaltyDownedPointStep", "plySelfReviveCountCoop", "plySelfReviveCountSolo", "zomMixedStart", "zomMixedStartSolo", "zomCatalystStart", "zomCatalystStartSolo", "zomStokerStart", "zomStokerStartSolo", "plyShieldDamageMult", "plyRetainWeapons", "plyPerksDecay", "plyHealthRegenRate", "plyHealthRegenDelay", "plyXPModfier", "plyHighlightCraftables")) {
-        if (!isdefined(var_ca9c0ca2.(var_c9db62d5 + str_suffix))) {
-            var_ca9c0ca2.(var_c9db62d5 + str_suffix) = 0;
+        if (!isdefined(zmdifficultysettings.(var_c9db62d5 + str_suffix))) {
+            zmdifficultysettings.(var_c9db62d5 + str_suffix) = 0;
         }
-        var_c6ceb446[var_c9db62d5] = var_ca9c0ca2.(var_c9db62d5 + str_suffix);
+        var_c6ceb446[var_c9db62d5] = zmdifficultysettings.(var_c9db62d5 + str_suffix);
     }
     return var_c6ceb446;
 }

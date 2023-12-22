@@ -634,7 +634,7 @@ function function_369efa3e(params) {
     var_62e3519c = params.smeansofdeath === "MOD_MELEE" || params.smeansofdeath === "MOD_MELEE_WEAPON_BUTT" || params.smeansofdeath === "MOD_MELEE_ASSASSINATE";
     if (isalive(self) && (self.archetype === #"zombie" || self.archetype === #"zombie_dog" || self.archetype === #"nova_crawler") && var_62e3519c) {
         if (zm_audio::sndisnetworksafe()) {
-            self playsoundontag(#"hash_5d1ae984d240e43d", "j_head");
+            self playsoundontag(#"zmb_vocals_zombie_death_quack", "j_head");
         }
     }
 }

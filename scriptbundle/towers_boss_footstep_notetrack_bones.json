@@ -6,7 +6,7 @@
     "footstep_right_back": "j_ball_ri",
     "name": "towers_boss_footstep_notetrack_bones",
     "footstep_right_forward": "j_fingers_ri",
-    "var_2e201e98": "j_fingers_ri",
+    "footstep_right_front": "j_fingers_ri",
     "footstep_left_back": "j_ball_le",
-    "var_7ec59a8f": "j_fingers_le"
+    "footstep_left_front": "j_fingers_le"
 }

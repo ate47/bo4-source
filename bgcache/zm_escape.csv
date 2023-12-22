@@ -283,7 +283,7 @@ model,c_t8_zmb_mob_zombie_body1,2305c9f6398
 model,c_t8_zmb_mob_zombie_body2,2305c99a058
 model,hash_38c718b7d18586b5,2305c989f18
 model,hash_3964c81546296b78,2305c9e92e8
-model,hash_39acac264d00d781,2305c9a02c8
+model,wpn_t8_melee_hatchet_world,2305c9a02c8
 model,hash_3a04236cc35a9b92,2305c9aa2e8
 model,hash_3a0d619d8da41ec4,2305c96c938
 model,hash_3aa259c692642a7c,2305ca25f78
@@ -419,7 +419,7 @@ model,hash_5345bf22e2009197,2305ca300e8
 model,c_zom_der_zombie_body2_g_rlegoff,2305ca30238
 model,hash_53aa66af55a2ee4b,2305ca308c8
 model,p8_zm_esc_nixie_tubes_on,2305ca30a18
-model,hash_53d4e4155ca3546c,2305ca30cb8
+model,p8_sun_hat_01,2305ca30cb8
 model,hash_548b5642cc4199cd,2305ca32458
 model,c_t8_zmb_mob_ghoul_body1_rob,2305ca33e98
 model,hash_55a291f6d690eae7,2305ca34e58
@@ -9617,7 +9617,7 @@ soundalias,hash_766d79429990fe57,0
 soundalias,hash_76762fe2169c8e41,0
 soundalias,hash_767b152c458cf93c,0
 soundalias,hash_76898c482a23a565,0
-soundalias,hash_768b17a7d45823d5,0
+soundalias,amb_water_lapping,0
 soundalias,hash_769f75d14373cb9c,0
 soundalias,hash_76a85377af778992,0
 soundalias,hash_76a85477af778b45,0

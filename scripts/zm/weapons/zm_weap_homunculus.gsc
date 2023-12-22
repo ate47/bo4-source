@@ -207,7 +207,7 @@ function function_1dba4a2() {
     self.mdl_anchor endon(#"death");
     while (1) {
         waitresult = undefined;
-        waitresult = self.mdl_anchor waittill(#"hash_5851b555291e7748");
+        waitresult = self.mdl_anchor waittill(#"snddeployvox");
         if (isdefined(waitresult.str_alias)) {
             self.mdl_anchor playsoundontag(waitresult.str_alias, "j_head");
         }

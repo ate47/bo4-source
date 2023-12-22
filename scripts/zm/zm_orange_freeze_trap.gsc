@@ -116,7 +116,7 @@ function function_270aecf7() {
         level flag::wait_till(self.power_flag);
     }
     function_91ecec97(level.s_freeze_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
-    function_eb59d9fe(level.s_freeze_trap.a_s_panels);
+    open_panels(level.s_freeze_trap.a_s_panels);
     while (1) {
         self waittill(#"hash_35807fa157a46934");
         function_91ecec97(level.s_freeze_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
@@ -348,7 +348,7 @@ function function_67b12ae8(e_player) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x17af6245, Offset: 0x18e0
 // Size: 0x88
-function function_eb59d9fe(a_s_panels) {
+function open_panels(a_s_panels) {
     foreach (panel in a_s_panels) {
         panel thread scene::play("open");
     }

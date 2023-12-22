@@ -3,7 +3,7 @@ vehicle,vehicle_t8_mil_helicopter_transport_dark_wz,2a88a575428
 vehicle,hash_d53cf8d457e65cc,2a88a591158
 vehicle,veh_ultimate_turret_wz,2a88a5945b8
 vehicle,vehicle_t8_drone_recon_wz,2a88a576e58
-vehicle,hash_14329b1ac8be8c31,2a88a592b88
+vehicle,vehicle_t8_drone_recon_wz_pc,2a88a592b88
 vehicle,vehicle_straferun_mp,2a88a58a898
 vehicle,veh_hawk_player_wz,2a88a587438
 vehicle,hash_3c1159606c3c4d3c,2a88a571fc8
@@ -11,7 +11,7 @@ vehicle,veh_dart_wz,2a88a583fd8
 vehicle,hash_444804d03bdda785,2a88a5a3168
 vehicle,veh_hawk_player_far_range_wz,2a88a58dcf8
 vehicle,defaultvehicle_mp,2a88a56eb68
-vehicle,hash_54963978f132acb4,2a88a59fd08
+vehicle,veh_dart_wz_pc,2a88a59fd08
 vehicle,vehicle_t8_mil_air_transport_infiltration,2a88a585a08
 vehicle,hash_7dd2944ddf7cc7e9,2a88a578888
 model,hash_37ee358155bdb,2a886bed918
@@ -573,7 +573,7 @@ model,attach_t8_loot_lmg_mk48_barrel_mk2_view,2a886aa3a38
 model,c_t8_bo_hero_misty_torso1_viewbody1,2a886aa3b88
 model,hash_1041b73b2f565fd7,2a886aa3cd8
 model,attach_t8_loot_sniper_mini14_dbal_mk2_view,2a886aa3e28
-model,hash_106758074e1142ac,2a886c70928
+model,wpn_t8_eqp_drone_hawk_pda_world,2a886c70928
 model,attach_t8_smg_capacity_dbal_sig_02_view,2a886aa40c8
 model,attach_t8_loot_shotgun_fullauto_quickdraw_view,2a886aa4218
 model,hash_10889c760fffee52,2a886aa4368
@@ -1479,7 +1479,7 @@ model,hash_294292c444451f2e,2a886aefd88
 model,p8_wz_cu_armor_plating_dmg,2a886c857d8
 model,hash_294a3aa31d5754ba,2a886cba7b8
 model,c_t8_bo_hero_matt_shadows_torso1,2a886aefed8
-model,hash_29530f02b22d874b,2a886af0028
+model,wpn_t8_snowball_world,2a886af0028
 model,c_t8_mp_spe_battery_superhero_lowerbody1_g_blegsoff,2a886af0178
 model,c_t8_mp_spe_recon_samurai_lowerbody2_g_blegsoff_cst,2a886af02c8
 model,c_t8_bo_hero_shadowman_torso1,2a886af0418
@@ -1540,7 +1540,7 @@ model,hash_2aaf7b75afa8b259,2a886af4318
 model,hash_2ab194382a8f4038,2a886c8cdf8
 model,attach_t8_smg_fastfire_barrel_world,2a886af4468
 model,c_t8_mp_spe_nomad_apocalypse_torso1_armorlight,2a886af4708
-model,hash_2ab6b01c5db86c63,2a886af4858
+model,wpn_t8_eqp_radar_shroud_gun_world,2a886af4858
 model,attach_t8_tac_rifle_surgeon_grip_tape_world_wz,2a886af49a8
 model,c_t8_bo_hero_reznov_lowerbody1,2a886af4d98
 model,attach_t8_smg_handling_fastmag02_view,2a886af4ee8
@@ -2048,7 +2048,7 @@ model,c_t8_mp_spe_seraph_cop_arms1,2a886b1f6c8
 model,c_t8_mp_spe_ruin_head1,2a886b1f818
 model,attach_t8_loot_ar_peacekeeper_stock_mk2_view,2a886b1f968
 model,p8_wz_ammo_pickup_338,2a886c8e2f8
-model,hash_39acac264d00d781,2a886cf5ca8
+model,wpn_t8_melee_hatchet_world,2a886cf5ca8
 model,attach_t8_loot_ar_standard_ext_mag_mk2_view,2a886b1fc08
 model,attach_t8_smg_accurate_handguard_02_sig_03_view,2a886b1fd58
 model,hash_39d8ce00a8c4a093,2a886b1fea8
@@ -2555,7 +2555,7 @@ model,attach_t8_sniper_koshka_mag_view,2a886b4dda8
 model,attach_t8_loot_pistol_auto_suppressor_sig_02_world,2a886b4def8
 model,c_t8_mp_spe_reaper_lowerbody1_s_rleg_cst,2a886bfe628
 model,hash_4807101dedb973cb,2a886b4e048
-model,hash_481e515def9b9e49,2a886b4e438
+model,wpn_t8_loot_smg_vmp_mag_world,2a886b4e438
 model,hash_482992b26654432f,2a886b4e588
 model,attach_t8_loot_smg_fastburst_foregrip_mk2_world,2a886b4e6d8
 model,attach_t8_wz_pickup_suppressor,2a886c5ac08
@@ -3112,7 +3112,7 @@ model,hash_585bcdbd01031147,2a886c44468
 model,hash_586f31d7efffa974,2a886b7d448
 model,hash_587f7ddbf5088b61,2a886b7d838
 model,attach_t8_charm_toilet_view,2a886c44858
-model,hash_589143b27d35173e,2a886b7d988
+model,p8_cigar_lit,2a886b7d988
 model,c_t8_bo_hero_davidmason_head1,2a886b7dad8
 model,attach_t8_lmg_plr_fastmag_sig_02_view,2a886b7dc28
 model,c_t8_mp_spe_hacker_pirate_lowerbody1_g_blegsoff,2a886b7dd78
@@ -3448,7 +3448,7 @@ model,hash_6283dbe68a37cf13,2a886b993d8
 model,flying_camera_drone_model,2a886c3aec8
 model,c_t8_mp_spe_spectre_arms1_s_larm_cst,2a886c04898
 model,c_t8_mp_spe_battery_assassin_arms1,2a886b997c8
-model,hash_62aa49dcb73c70a2,2a886b99918
+model,wpn_t8_sniper_semiauto_bullet_01_view,2a886b99918
 model,c_t8_bo_hero_trejo_viewlegs1,2a886b99bb8
 model,attach_t8_charm_earf_view,2a886f72068
 model,c_t8_mp_spe_swat_lowerbody1_s_rleg_cst,2a886c049e8
@@ -4249,7 +4249,7 @@ model,hash_7a9d10f934caa343,2a886cab248
 model,c_t8_bo_hero_tedd_torso1_viewbody,2a886bdd298
 model,c_t8_bo_hero_hudson_torso1_armormedium1,2a886bdd3e8
 model,c_t8_bo_hero_johnson_torso1_armormedium,2a886bdd7d8
-model,hash_7ad1209e4d871c3f,2a886bdda78
+model,wpn_t8_eqp_sensor_dart_gun_world,2a886bdda78
 model,c_t8_mp_spe_firebreak_apocalypse_lowerbody1,2a886bddbc8
 model,c_t8_mp_spe_ruin_viking_torso1_cst,2a886bddd18
 model,c_t8_mp_spe_firebreak_superhero_torso1_armorheavy,2a886bdde68
@@ -4932,7 +4932,7 @@ rumble,hash_60ba860667abd52f,2a88a79a190
 rumble,weapon_raise_quick,2a88a79b930
 rumble,lightninggun_victim,2a88a79c590
 rumble,hash_6734b3c0c3ba63f8,2a88a79ba08
-rumble,hash_69294bfe2f2f1199,2a88a79bae0
+rumble,reload_clipout,2a88a79bae0
 rumble,hash_6f872238aa3abfae,2a88a79bc48
 rumble,hash_71b767f810fb1593,2a88a79cbc0
 rumble,hash_71fceb6e20f9fbdc,2a88a79bcd8
@@ -4946,11 +4946,11 @@ rumble,hash_7dd6fef6710af3ba,2a88a79bff0
 rumble,hash_7fbdfa5ac7cedfc9,2a88a79c038
 shellshock,hash_4c7b5c53d134927,2a88a82a800
 shellshock,hash_2b52b9a74014da20,2a88a829a80
-shellshock,hash_4114b3b137c8f467,2a88a82abc0
+shellshock,status_effect_slowed_concertina_wire_pc,2a88a82abc0
 shellshock,hash_679908e086a90b19,2a88a82a440
 shellshock,shock_rifle_shocked,2a88a82a8c0
 shellshock,lightninggun,2a88a82aa40
-shellshock,hash_752331e61927f511,2a88a82a740
+shellshock,shellshock_blur_pc,2a88a82a740
 shellshock,hash_7fd5008cadfdfa21,2a88a82a980
 statuseffect,microwave_slowed,2a88a8306e0
 statuseffect,hash_98def05d0fd2ddf,2a88a82dd40
@@ -5018,7 +5018,7 @@ xcam,ui_cam_frontend_loadout_mp,2a88a848200
 xcam,hash_320401c602936d0f,2a88a840400
 xcam,hash_32556c49982dea72,2a88a8404c0
 xcam,hash_3387fe4e35c99821,2a88a840580
-xcam,hash_35100dcb1fe633b7,2a88a840640
+xcam,ui_cam_cac_ar_standard,2a88a840640
 xcam,hash_351189ab225a944f,2a88a840700
 xcam,hash_355525fb5ac70035,2a88a8407c0
 xcam,hash_3717a94ea371d784,2a88a840940
@@ -12806,7 +12806,7 @@ fx,hash_7d69ee9822b45157,2a88a40a798
 fx,hash_7dd33e1e520740fe,2a88a42d658
 fx,hash_7e4a861318714ac9,2a88a40cbd8
 fx,hash_7e70ecaeda5dae93,2a88a45ae78
-lui_menu_data,hash_34d4bff07963dca0,0
+lui_menu_data,huditems.armorpercent,0
 lui_elem,wz_wingsuit_hud,0
 lui_elem,prototype_defend_timer,0
 lui_elem,death_zone,0

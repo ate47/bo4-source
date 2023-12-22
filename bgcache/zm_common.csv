@@ -990,7 +990,7 @@ model,c_t8_zmb_mob_hero_zombie_blood_arms1_viewbody1,294cb60b558
 model,hash_27831ef7c8e41cb0,294cb60b7f8
 model,attach_t8_loot_smg_fastburst_fast_mag_view,294cb60ba98
 model,p8_zm_vapor_altar_icon_01_quickrevive,294cb9d1408
-model,hash_27bf6639cbf9f26f,294cb965768
+model,wpn_t8_zm_knife_bowie_world,294cb965768
 model,c_t8_zmb_1stclass_male_body2_g_upclean,294cb60bfd8
 model,hash_27d4522c6e9f7264,294cb60c518
 model,c_t8_bo_hero_johnson_torso1,294cb60c668
@@ -1803,7 +1803,7 @@ model,attach_t8_sniper_koshka_mag_view,294cb66dda8
 model,hash_4807101dedb973cb,294cb66e048
 model,attach_t8_tac_rifle_swordfish_handguard_world,294cb66e198
 model,attach_t8_tac_rifle_mid_burst_dbal_02_mk2_view,294cb66e2e8
-model,hash_481e515def9b9e49,294cb66e438
+model,wpn_t8_loot_smg_vmp_mag_world,294cb66e438
 model,hash_482992b26654432f,294cb66e588
 model,attach_t8_loot_smg_fastburst_foregrip_mk2_world,294cb66e6d8
 model,hash_483c65779431cc62,294cb78ba68
@@ -2438,7 +2438,7 @@ model,hash_62633fd32b6ea3b4,294cb6b8e98
 model,attach_t8_loot_smg_fastburst_quickdraw_mk2_view,294cb6b8fe8
 model,attach_t8_tac_rifle_swordfish_foregrip_mk2_view,294cb6b9288
 model,attach_t8_optic_thermal_world_sml,294cb6b9678
-model,hash_62aa49dcb73c70a2,294cb6b9918
+model,wpn_t8_sniper_semiauto_bullet_01_view,294cb6b9918
 model,attach_t8_tac_rifle_surgeon_bolt_world,294cb6b9a68
 model,attach_t8_charm_earf_view,294cb75aec8
 model,attach_t8_sniper_koshka_mag_fastreload_mk2_world,294cb6b9d08
@@ -3604,7 +3604,7 @@ rumble,grenade_throw,294cf2bb6f0
 rumble,hash_60ba860667abd52f,294cf2ba190
 rumble,weapon_raise_quick,294cf2bb930
 rumble,hash_6734b3c0c3ba63f8,294cf2bba08
-rumble,hash_69294bfe2f2f1199,294cf2bbae0
+rumble,reload_clipout,294cf2bbae0
 rumble,hash_6f872238aa3abfae,294cf2bbc48
 rumble,hash_71b767f810fb1593,294cf2bce90
 rumble,zm_weap_scepter_melee_hit_rumble,294cf2bcb30
@@ -3679,7 +3679,7 @@ xcam,ui_scene_cam_diego_main,294cf360280
 xcam,ui_scene_cam_zm_factions_bf_lore,294cf360340
 xcam,hash_320401c602936d0f,294cf360400
 xcam,hash_32556c49982dea72,294cf3604c0
-xcam,hash_35100dcb1fe633b7,294cf360640
+xcam,ui_cam_cac_ar_standard,294cf360640
 xcam,hash_351189ab225a944f,294cf360700
 xcam,hash_35167604006b8dcb,294cf36d540
 xcam,hash_355525fb5ac70035,294cf3607c0
@@ -8267,7 +8267,7 @@ scriptbundle,scene_frontend_t8_wz_male_team_2,294cf290988
 scriptbundle,scene_frontend_t8_wz_male_team_3,294cf2909c8
 scriptbundle,scene_frontend_t8_wz_male_team_4,294cf290a08
 scriptbundle,scene_frontend_t8_wz_male_team_5,294cf290a48
-scriptbundle,hash_3d9156ceffe4c9c5,294cf2af548
+scriptbundle,fxb8_zm_char_wolf,294cf2af548
 scriptbundle,charm_sniper_round,294cf2a0908
 scriptbundle,activecamoinfo_t8_direct_action_kills_solarflare_wz,294cf299908
 scriptbundle,activecamoinfo_t8_direct_action_kills_solarflare_zm,294cf299948
@@ -8282,7 +8282,7 @@ scriptbundle,activecamoinfo_t8_sig_ar_modular_faberge_zm,294cf299a88
 scriptbundle,ruin,294cf289908
 scriptbundle,default_traversal_extents_zm,294cf2ae1c8
 scriptbundle,charm_9mm,294cf2a0a48
-scriptbundle,hash_40a238dcdce842c8,294cf2b6208
+scriptbundle,zm_wolf_ally_settings,294cf2b6208
 scriptbundle,activecamoinfo_t8_sig_sniper_powersemi_vietnam_zm,294cf299ac8
 scriptbundle,weapondeathfx_water,294cf2a3b48
 scriptbundle,activecamoinfo_t8_sig_sniper_powersemi_vietnam_wz,294cf299b08
@@ -8340,7 +8340,7 @@ scriptbundle,activecamoinfo_t8_sig_ar_standard_adventure_zm,294cf29a108
 scriptbundle,scene_frontend_t8_zm_male_team_2_stanton,294cf292f08
 scriptbundle,activecamoinfo_t8_sig_ar_standard_adventure_wz,294cf29a148
 scriptbundle,scene_frontend_t8_bruno,294cf29bc48
-scriptbundle,hash_5111095c5ff4263f,294cf2a7b48
+scriptbundle,wraith_fire_custom_settings_zm,294cf2a7b48
 scriptbundle,ofc_richtofen,294cf289dc8
 scriptbundle,activecamoinfo_t8_direct_action_kills_zombie_flick_zm,294cf29a188
 scriptbundle,activecamoinfo_t8_direct_action_kills_zombie_flick_wz,294cf29a1c8
@@ -12107,7 +12107,7 @@ soundalias,hash_1d92c32a595ada3b,0
 soundalias,hash_1d95c13df3d417b1,0
 soundalias,hash_1d95f73ddc71d2aa,0
 soundalias,hash_1d969b138108aac2,0
-soundalias,hash_1d9e34ab0716449c,0
+soundalias,amb_rattle_vending,0
 soundalias,hash_1da2cbb8d4904d8d,0
 soundalias,hash_1da86efd09d8c43a,0
 soundalias,hash_1daa81803e88056b,0
@@ -15472,7 +15472,7 @@ soundalias,hash_43b2fd7c828e8eab,0
 soundalias,hash_43bb964471245eba,0
 soundalias,hash_43bbee8041b4fc9f,0
 soundalias,hash_43bce0b1fcfaf0ea,0
-soundalias,hash_43be8b74bcb2810a,0
+soundalias,fly_step_glass,0
 soundalias,hash_43c16258ee77a259,0
 soundalias,hash_43c22e84a2efe9b5,0
 soundalias,hash_43ca537a0b380eca,0
@@ -15711,7 +15711,7 @@ soundalias,hash_469ebdfc2fd7f216,0
 soundalias,hash_46a1325fae09566e,0
 soundalias,hash_46a391f2a0054d74,0
 soundalias,hash_46b119ec01f3226e,0
-soundalias,hash_46b1c786cea91aac,0
+soundalias,vox_homun_scream_exert_homu_0,0
 soundalias,hash_46b2e1073366c56f,0
 soundalias,hash_46b41344b1885489,0
 soundalias,hash_46b4d537f0bb8564,0
@@ -17752,7 +17752,7 @@ soundalias,hash_5d0478d4713fcd02,0
 soundalias,hash_5d0c2654c1495b42,0
 soundalias,hash_5d0c971925e8d404,0
 soundalias,hash_5d14e253aa5df4ff,0
-soundalias,hash_5d1ae984d240e43d,0
+soundalias,zmb_vocals_zombie_death_quack,0
 soundalias,hash_5d1b5a186692f18e,0
 soundalias,hash_5d1c642c1fc3b8ff,0
 soundalias,hash_5d1f6764c42fa7e9,0
@@ -18373,7 +18373,7 @@ soundalias,hash_63d05ba52b6a3dca,0
 soundalias,hash_63d29b23224fe6f0,0
 soundalias,hash_63d5dc4f68aa305a,0
 soundalias,hash_63d664eafa2517d6,0
-soundalias,hash_63e1974f34df59b9,0
+soundalias,fly_bump_chainlink,0
 soundalias,hash_63e19a034a485a76,0
 soundalias,hash_63e3667790eb43fa,0
 soundalias,hash_63e44a86793b4bd9,0
@@ -20595,7 +20595,7 @@ soundalias,hash_7d2e43e67ce7ad01,0
 soundalias,hash_7d2f1486a66f0b35,0
 soundalias,hash_7d2f255b5a9cd62e,0
 soundalias,hash_7d344230f6b47e50,0
-soundalias,hash_7d3497f412b590a6,0
+soundalias,vox_homun_deploy_exert_homu_0,0
 soundalias,hash_7d36712abe522e81,0
 soundalias,hash_7d38c35ea0d48b35,0
 soundalias,hash_7d3e5108bf113d0e,0

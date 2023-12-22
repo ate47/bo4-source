@@ -147,7 +147,7 @@ function function_e14376a3() {
 function function_65c804dc() {
     level endon(#"end_game");
     function_91ecec97(level.s_apd_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
-    function_eb59d9fe(level.s_apd_trap.a_s_panels);
+    open_panels(level.s_apd_trap.a_s_panels);
     while (1) {
         self waittill(#"hash_1d482aca0464609a");
         function_91ecec97(level.s_apd_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
@@ -227,7 +227,7 @@ function function_171226f4(str_notify) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x217848b, Offset: 0xfd8
 // Size: 0x88
-function function_eb59d9fe(a_s_panels) {
+function open_panels(a_s_panels) {
     foreach (panel in a_s_panels) {
         panel thread scene::play("open");
     }

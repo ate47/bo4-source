@@ -601,15 +601,15 @@ function private function_cdd9b388() {
                 if (itemtype == 13) {
                     atv_spawn = function_91b29d2a(#"atv_spawn");
                     cargo_truck_spawn = function_91b29d2a(#"cargo_truck_spawn");
-                    var_dfebf4da = function_91b29d2a(#"hash_7e0f31597a8a30af");
+                    cargo_truck_clearing_spawn = function_91b29d2a(#"cargo_truck_clearing_spawn");
                     heli_spawn = function_91b29d2a(#"heli_spawn");
-                    var_56c17d74 = function_91b29d2a(#"hash_7f58537ca200b519");
+                    heli_clearing_spawn = function_91b29d2a(#"heli_clearing_spawn");
                     zodiac_spawn = function_91b29d2a(#"zodiac_spawn");
-                    var_e8750c36 = function_91b29d2a(#"hash_187ecf3003e27fce");
-                    var_1901b1fa = function_91b29d2a(#"hash_2d6fce71eb390d50");
-                    var_453c640c = function_91b29d2a(#"hash_781a27d230f31faf");
-                    var_b351e4a0 = function_91b29d2a(#"hash_19db6f9cacbc79c3");
-                    var_e4dc1e88 = function_91b29d2a(#"hash_60758a532bcf65bf");
+                    var_e8750c36 = function_91b29d2a(#"zodiac_spawn_docks");
+                    var_1901b1fa = function_91b29d2a(#"zodiac_spawn_hydro");
+                    var_453c640c = function_91b29d2a(#"zodiac_spawn_nuketown");
+                    var_b351e4a0 = function_91b29d2a(#"zodiac_spawn_skyscraper");
+                    var_e4dc1e88 = function_91b29d2a(#"zodiac_spawn_hijacked");
                     muscle_car_spawn = function_91b29d2a(#"muscle_car_spawn");
                     arav_spawn = function_91b29d2a(#"arav_spawn");
                     suv_spawn = function_91b29d2a(#"suv_spawn");
@@ -630,7 +630,7 @@ function private function_cdd9b388() {
                         }
                         sphere(vehicle.origin, radius, (1, 1, 0), 1, 0, 10, 20);
                     }
-                    foreach (vehicle in var_dfebf4da) {
+                    foreach (vehicle in cargo_truck_clearing_spawn) {
                         radius = 128;
                         var_84dd2a8b = 4096;
                         if (distancesquared(origin, vehicle.origin) < var_84dd2a8b * var_84dd2a8b) {
@@ -646,7 +646,7 @@ function private function_cdd9b388() {
                         }
                         sphere(vehicle.origin, radius, (1, 0, 1), 1, 0, 10, 20);
                     }
-                    foreach (vehicle in var_56c17d74) {
+                    foreach (vehicle in heli_clearing_spawn) {
                         radius = 128;
                         var_84dd2a8b = 4096;
                         if (distancesquared(origin, vehicle.origin) < var_84dd2a8b * var_84dd2a8b) {

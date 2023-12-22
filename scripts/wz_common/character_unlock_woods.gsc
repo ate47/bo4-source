@@ -44,7 +44,7 @@ function function_2613aeec(enabled) {
 // Size: 0x1a8
 function function_6cba9a1a() {
     item_world::function_4de3ca98();
-    var_e32947b9 = function_91b29d2a(#"hash_18f7994e33f22f6d");
+    var_e32947b9 = function_91b29d2a(#"cu22_spawn");
     if (!isdefined(var_e32947b9[0])) {
         return;
     }

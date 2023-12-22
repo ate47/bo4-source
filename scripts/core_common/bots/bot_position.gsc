@@ -827,7 +827,7 @@ function function_d0cf287b(params, tacbundle) {
     if (self bot::in_combat()) {
         enemy = self.enemy;
     }
-    position = function_b33e4e67(center, self.origin, enemy, params.var_470022ca);
+    position = function_b33e4e67(center, self.origin, enemy, params.querylist);
     if (!isdefined(position)) {
         /#
             self bot::record_text("<unknown string>" + function_9e72a96(params.center), (1, 0, 0), "<unknown string>");
@@ -851,7 +851,7 @@ function function_d0cf287b(params, tacbundle) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0xf2c0f343, Offset: 0x2cd0
 // Size: 0x8f6
-function function_b33e4e67(center, fillpos, enemy, var_470022ca) {
+function function_b33e4e67(center, fillpos, enemy, querylist) {
     centerpos = self function_de626503(center);
     var_65c3e15e = undefined;
     /#
@@ -886,7 +886,7 @@ function function_b33e4e67(center, fillpos, enemy, var_470022ca) {
     forward = anglestoforward(self.angles);
     forwardpos = self.origin + forward * 100;
     lastenemypos = isentity(enemy) ? enemy.origin : enemy;
-    foreach (query in var_470022ca) {
+    foreach (query in querylist) {
         [[ level.var_d1a4558d ]]->waitinqueue(self);
         /#
             self bot::record_text("<unknown string>" + function_9e72a96(query.name), (1, 1, 1), "<unknown string>");

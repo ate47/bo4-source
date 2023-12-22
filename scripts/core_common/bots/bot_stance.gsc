@@ -132,9 +132,9 @@ function register_stance(name, func) {
 // Checksum 0xfe238835, Offset: 0x700
 // Size: 0x1a4
 function function_7beea81f(tacbundle) {
-    var_f307a84d = tacbundle.var_ddbbc55a;
+    var_f307a84d = tacbundle.stationarystancehandlerlist;
     if (self haspath()) {
-        var_f307a84d = tacbundle.var_37d8817b;
+        var_f307a84d = tacbundle.movingstancehandlerlist;
     }
     if (!isdefined(var_f307a84d)) {
         /#
