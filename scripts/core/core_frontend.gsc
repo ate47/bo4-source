@@ -13,7 +13,7 @@ function event_handler[level_init] main(eventstruct) {
     setmapcenter((0, 0, 0));
     core_frontend_fx::main();
     core_frontend_sound::main();
-    world.var_7407953c = undefined;
+    world.playerroles = undefined;
     world.var_8c7b4214 = undefined;
 }
 

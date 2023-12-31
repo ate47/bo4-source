@@ -1,9 +1,9 @@
 {
     "var_922067c4": "scriptbundle",
-    "result": <error reading:pistol_topbreak_t8_zm>,
+    "result": "weapon#pistol_topbreak_t8_zm",
     "type": "craftblueprint",
-    "var_99577dd3": <error reading:hash_3e20e64d41f2e623>,
-    "var_670f9944": <error reading:hash_380406366d3aae2c>,
+    "var_99577dd3": "weapon#hash_3e20e64d41f2e623",
+    "var_670f9944": "weapon#hash_380406366d3aae2c",
     "name": "zblueprint_orange_zipline_crank",
     "displayname": "orange_zipline_crank",
     "var_46309255": "one_time_craft",

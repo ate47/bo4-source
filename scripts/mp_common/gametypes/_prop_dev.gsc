@@ -10,7 +10,7 @@
 #using scripts\mp_common\gametypes\prop.gsc;
 #using scripts\mp_common\gametypes\spawnlogic.gsc;
 #using scripts\mp_common\gametypes\spawning.gsc;
-#using script_668aba6ee6d1fb9a;
+#using scripts\mp_common\gametypes\_prop_controls.gsc;
 #using scripts\mp_common\gametypes\globallogic_utils.gsc;
 #using scripts\mp_common\gametypes\globallogic_spawn.gsc;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;

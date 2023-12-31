@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_b5a9e121eb22e9",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:ray_gun_mk2x_wz>,
+    "weapon": "weapon#ray_gun_mk2x_wz",
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "var_65b3a12": 6,

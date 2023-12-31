@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_2046d307dd330226",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:hash_712ebe79f7da6d58>,
+    "weapon": "weapon#hash_712ebe79f7da6d58",
     "type": "itemspawnentry",
     "name": "wraithfire_wz_item",
     "displayname": "#hash_2c62a9364c4c32aa",

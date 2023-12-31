@@ -5,7 +5,7 @@
     "var_5dc4470b": -6,
     "var_3e688854": -4,
     "worldfx": "#hash_10138d6ad6687c27",
-    "weapon": <error reading:lmg_double_t8_wz>,
+    "weapon": "weapon#lmg_double_t8_wz",
     "var_86d1fc36": "#hash_64dbfc4253f51c17",
     "type": "itemspawnentry",
     "var_6731866b": -90,

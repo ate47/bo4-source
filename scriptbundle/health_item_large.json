@@ -2,7 +2,7 @@
     "amount": 1,
     "var_922067c4": "scriptbundle",
     "model": "#p8_wz_supply_stash_health_lvl3",
-    "weapon": <error reading:hash_7ecd376f9782832>,
+    "weapon": "weapon#hash_7ecd376f9782832",
     "type": "itemspawnentry",
     "name": "health_item_large",
     "var_36781d9f": "fly_drop_generic",

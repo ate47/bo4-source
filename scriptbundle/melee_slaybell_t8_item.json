@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_2f0e45755827f680",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:melee_slaybell_t8_wz>,
+    "weapon": "weapon#melee_slaybell_t8_wz",
     "type": "itemspawnentry",
     "var_7adcadc1": 180,
     "var_65b3a12": 6,

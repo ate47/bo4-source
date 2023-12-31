@@ -3,7 +3,7 @@
     "description": "#hash_390805c6a4d058b5",
     "var_922067c4": "scriptbundle",
     "var_3e688854": -2,
-    "weapon": <error reading:smg_capacity_t8_wz>,
+    "weapon": "weapon#smg_capacity_t8_wz",
     "attachslotbody": 1,
     "type": "itemspawnentry",
     "var_e6ac0592": 90,

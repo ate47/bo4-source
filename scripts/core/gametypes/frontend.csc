@@ -1167,7 +1167,7 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
             types[type] = type_data;
         }
         var_351da865 = getent(localclientnum, "<unknown string>", "<unknown string>");
-        var_731a18b3 = struct::get(#"fx_trail_start");
+        fx_start = struct::get(#"fx_trail_start");
         fx_end = struct::get(#"fx_trail_end");
         foreach (type, var_3aec81f4 in types) {
             switch (type) {
@@ -1185,12 +1185,12 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
                     if (!isdefined(trail) || !isdefined(trail.body_trail)) {
                         continue;
                     }
-                    var_351da865.origin = var_731a18b3.origin;
+                    var_351da865.origin = fx_start.origin;
                     handle = util::playfxontag(localclientnum, trail.body_trail, var_351da865, "<unknown string>");
                     if (!isdefined(handle)) {
                         continue;
                     }
-                    direction = fx_end.origin - var_731a18b3.origin;
+                    direction = fx_end.origin - fx_start.origin;
                     step_size = direction / getdvarint(#"hash_522e5987825dd16e", 100);
                     for (var_d7f46807 = 0; var_d7f46807 <= getdvarint(#"hash_522e5987825dd16e", 100); var_d7f46807++) {
                         waitframe(1);

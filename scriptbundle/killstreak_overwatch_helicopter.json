@@ -1,7 +1,7 @@
 {
     "altweapons": [
         {
-            "var_359445cd": <error reading:hash_376f685be7b8296d>
+            "var_359445cd": "weapon#hash_376f685be7b8296d"
         }
     ],
     "var_11cb9190": 1,
@@ -60,7 +60,7 @@
     "var_65d707d0": 1,
     "var_1d2a2ca4": "#hash_7b955bb502e82e12",
     "var_7a502c34": "enemyoverwatchhelicopterhacked",
-    "ksweapon": <error reading:hash_755aa583c9e5247a>,
+    "ksweapon": "weapon#hash_755aa583c9e5247a",
     "ksrobshowfriendly": 1,
     "var_dcd2a4d7": 27,
     "var_ee9fdcf3": 200,
@@ -110,7 +110,7 @@
     "var_a2629b1c": 100,
     "ksdartcamerawatchduration": 2,
     "kshacktoollostlineofsightlimitms": 3000,
-    "var_fc0c8eae": <error reading:hash_3584f5f92982d8d5>,
+    "var_fc0c8eae": "weapon#hash_3584f5f92982d8d5",
     "var_1faee2a5": 0.25,
     "kslowhealth": 2500,
     "kshacktoolnolineofsighttime": 6000,

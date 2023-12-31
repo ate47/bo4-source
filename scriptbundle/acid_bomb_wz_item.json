@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_3b719a225449db88",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:eq_acid_bomb_wz>,
+    "weapon": "weapon#eq_acid_bomb_wz",
     "type": "itemspawnentry",
     "name": "acid_bomb_wz_item",
     "displayname": "#weapon/acid_bomb",

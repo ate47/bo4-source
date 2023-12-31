@@ -5,7 +5,7 @@
     "var_5dc4470b": -5,
     "var_3e688854": -2,
     "worldfx": "#hash_10138d6ad6687c27",
-    "weapon": <error reading:ar_galil_t8_wz>,
+    "weapon": "weapon#ar_galil_t8_wz",
     "var_86d1fc36": "#hash_64dbfc4253f51c17",
     "attachslotbody": 1,
     "type": "itemspawnentry",

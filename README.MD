@@ -25,4 +25,5 @@ Pools dumped:
 | scriptparsetree | 48  |
 | scriptbundle    | 63  |
 | bgcache         | 85  |
+| gametypetable   | 113 |
 | rawstring       | 157 |

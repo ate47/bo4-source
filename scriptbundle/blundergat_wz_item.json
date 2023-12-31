@@ -45,7 +45,7 @@
     "var_922067c4": "scriptbundle",
     "var_eda4062b": 3,
     "var_e8b98a8a": "#hash_31b5340e9a1b398c",
-    "weapon": <error reading:ww_blundergat_t8_wz>,
+    "weapon": "weapon#ww_blundergat_t8_wz",
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "name": "blundergat_wz_item",

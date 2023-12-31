@@ -17,8 +17,8 @@ function autoexec __init__system__() {
 // Checksum 0x9af5cda0, Offset: 0xd8
 // Size: 0x22
 function __init__() {
-    if (!isdefined(world.var_7407953c)) {
-        world.var_7407953c = [];
+    if (!isdefined(world.playerroles)) {
+        world.playerroles = [];
     }
 }
 
@@ -61,7 +61,7 @@ function get_category() {
 // Checksum 0x93032221, Offset: 0x278
 // Size: 0x24
 function function_c1f61ea2() {
-    return world.var_7407953c[self getentitynumber()];
+    return world.playerroles[self getentitynumber()];
 }
 
 // Namespace player_role/player_role
@@ -127,7 +127,7 @@ function set(index, force) {
         self botsetrandomcharactercustomization();
     }
     player update_fields();
-    world.var_7407953c[self getentitynumber()] = index;
+    world.playerroles[self getentitynumber()] = index;
     if (currentsessionmode() == 0) {
         customloadoutindex = get_custom_loadout_index(index);
     } else if (currentsessionmode() == 2) {

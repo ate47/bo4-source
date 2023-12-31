@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:hash_351254cd4fc93d6e>,
+    "weapon": "weapon#hash_351254cd4fc93d6e",
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "name": "tomahawk_t8_wz_item_pandemic",

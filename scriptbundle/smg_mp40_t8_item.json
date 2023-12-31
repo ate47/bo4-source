@@ -5,7 +5,7 @@
     "var_5dc4470b": -8,
     "var_3e688854": -2,
     "model": "#hash_3ecca14c69c9824a",
-    "weapon": <error reading:hash_1fd7470195a689d1>,
+    "weapon": "weapon#hash_1fd7470195a689d1",
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "var_65b3a12": 6,

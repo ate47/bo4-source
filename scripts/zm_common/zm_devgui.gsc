@@ -3345,9 +3345,9 @@ function zombie_devgui_dump_zombie_vars() {
         } else {
             return;
         }
-        var_392d3ebe = getarraykeys(level.zombie_vars);
+        var_names = getarraykeys(level.zombie_vars);
         for (i = 0; i < level.zombie_vars.size; i++) {
-            key = var_392d3ebe[i];
+            key = var_names[i];
             println(key + "<unknown string>" + zombie_utility::function_d2dfacfd(key));
         }
         println("<unknown string>");

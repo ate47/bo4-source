@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_186b3aae8cacae88",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:hash_5c8dfd9eda4c8296>,
+    "weapon": "weapon#hash_5c8dfd9eda4c8296",
     "type": "itemspawnentry",
     "var_e6ac0592": -90,
     "name": "sensor_dart_wz_item",

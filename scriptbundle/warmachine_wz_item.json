@@ -30,7 +30,7 @@
     "var_5dc4470b": -6,
     "var_3e688854": -2,
     "model": "#hash_f298754b73b7362",
-    "weapon": <error reading:hero_pineapplegun_wz>,
+    "weapon": "weapon#hero_pineapplegun_wz",
     "type": "itemspawnentry",
     "unlockableitemref": "#hash_6afae4d580e740ba",
     "var_e6ac0592": 90,

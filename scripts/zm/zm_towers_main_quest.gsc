@@ -3769,7 +3769,7 @@ function private debug_spawns() {
 // Params 1, eflags: 0x40
 // Checksum 0x1b7ea65a, Offset: 0x122e0
 // Size: 0x1b4
-function event_handler[weapon_fired] debug_trilane(var_30d3139) {
+function event_handler[weapon_fired] debug_trilane(event_struct) {
     /#
         if (!getdvarint(#"zm_debug_ee", 0) || !getdvarint(#"zm_debug_trilane", 0) >= 1 || !self zm_zonemgr::entity_in_zone("mdl_turn_back", 0)) {
             return;

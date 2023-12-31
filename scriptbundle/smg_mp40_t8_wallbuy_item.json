@@ -6,7 +6,7 @@
     "var_3e688854": -2,
     "model": "#hash_3ecca14c69c9824a",
     "worldfx": "#hash_10138d6ad6687c27",
-    "weapon": <error reading:hash_1fd7470195a689d1>,
+    "weapon": "weapon#hash_1fd7470195a689d1",
     "var_86d1fc36": "#hash_64dbfc4253f51c17",
     "type": "itemspawnentry",
     "var_6731866b": -90,

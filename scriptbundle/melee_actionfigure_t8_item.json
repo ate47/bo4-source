@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:melee_actionfigure_t8_wz>,
+    "weapon": "weapon#melee_actionfigure_t8_wz",
     "type": "itemspawnentry",
     "var_65b3a12": 6,
     "name": "melee_actionfigure_t8_item",

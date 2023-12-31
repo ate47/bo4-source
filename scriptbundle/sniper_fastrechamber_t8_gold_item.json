@@ -21,7 +21,7 @@
     "var_922067c4": "scriptbundle",
     "var_5dc4470b": -10,
     "var_3e688854": -2,
-    "weapon": <error reading:hash_a7f6bea1d4d43e6>,
+    "weapon": "weapon#hash_a7f6bea1d4d43e6",
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "attachslotstock": 1,

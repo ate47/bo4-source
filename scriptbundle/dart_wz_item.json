@@ -2,7 +2,7 @@
     "amount": 1,
     "var_922067c4": "scriptbundle",
     "model": "#hash_1db994b5fa2794bb",
-    "weapon": <error reading:dart_wz>,
+    "weapon": "weapon#dart_wz",
     "type": "itemspawnentry",
     "hintstring": "#hash_6e2e947dd4be6283",
     "name": "dart_wz_item",

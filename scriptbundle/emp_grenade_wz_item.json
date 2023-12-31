@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:hash_ee49be2d8dcc589>,
+    "weapon": "weapon#hash_ee49be2d8dcc589",
     "type": "itemspawnentry",
     "name": "emp_grenade_wz_item",
     "stackcount": 1,

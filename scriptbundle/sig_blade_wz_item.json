@@ -7,7 +7,7 @@
     "amount": 1,
     "description": "#hash_62cb1047e69b0d4e",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:sig_blade_wz>,
+    "weapon": "weapon#sig_blade_wz",
     "type": "itemspawnentry",
     "var_7adcadc1": 165,
     "name": "sig_blade_wz_item",

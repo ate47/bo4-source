@@ -1,16 +1,16 @@
 {
     "altweapons": [
         {
-            "var_359445cd": <error reading:amws_gun_turret_mp>
+            "var_359445cd": "weapon#amws_gun_turret_mp"
         },
         {
-            "var_359445cd": <error reading:hash_3f3230daf2378c17>
+            "var_359445cd": "weapon#hash_3f3230daf2378c17"
         },
         {
-            "var_359445cd": <error reading:amws_gun_turret_mp_player>
+            "var_359445cd": "weapon#amws_gun_turret_mp_player"
         },
         {
-            "var_359445cd": <error reading:hash_63aad3bc732f36cd>
+            "var_359445cd": "weapon#hash_63aad3bc732f36cd"
         }
     ],
     "var_11cb9190": 1,
@@ -67,7 +67,7 @@
     "var_3211a185": "#hash_ed462849e1bee29",
     "var_1d2a2ca4": "#hash_6f13430dac318d3b",
     "var_7a502c34": "enemyaitankhacked",
-    "ksweapon": <error reading:hash_41692c5a7566b185>,
+    "ksweapon": "weapon#hash_41692c5a7566b185",
     "var_8c4d7906": "#hash_242c14244659982f",
     "var_4b395366": "mp_dog_patrol",
     "ksrobshowfriendly": 1,
@@ -122,7 +122,7 @@
     "var_a2629b1c": 250,
     "ksdartcamerawatchduration": 2,
     "kshacktoollostlineofsightlimitms": 3000,
-    "var_fc0c8eae": <error reading:hash_338b9a5ff94807aa>,
+    "var_fc0c8eae": "weapon#hash_338b9a5ff94807aa",
     "var_1faee2a5": 0.25,
     "kslowhealth": 1000,
     "ksthrusterfx": "#hash_1ed803bdff658e96",

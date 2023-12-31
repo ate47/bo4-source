@@ -3,7 +3,7 @@
     "description": "#hash_2308a5c6e21b0f7d",
     "var_922067c4": "scriptbundle",
     "var_3e688854": -2,
-    "weapon": <error reading:ar_fastfire_t8_wz>,
+    "weapon": "weapon#ar_fastfire_t8_wz",
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "attachslotstock": 1,

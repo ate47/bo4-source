@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:hash_3d794b7e34cf01c9>,
+    "weapon": "weapon#hash_3d794b7e34cf01c9",
     "type": "itemspawnentry",
     "var_e6ac0592": -75,
     "name": "unlimited_grapple_wz_item",

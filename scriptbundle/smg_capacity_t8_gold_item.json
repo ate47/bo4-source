@@ -26,7 +26,7 @@
     "var_22c3ab38": 1,
     "var_3e688854": -2,
     "var_2ee21ae6": 1,
-    "weapon": <error reading:hash_7e2afbf6c82ea09d>,
+    "weapon": "weapon#hash_7e2afbf6c82ea09d",
     "attachslotbody": 1,
     "type": "itemspawnentry",
     "var_7a80f06e": 1,

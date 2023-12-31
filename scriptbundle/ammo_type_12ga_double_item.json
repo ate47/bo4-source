@@ -3,7 +3,7 @@
     "description": "#hash_24d839f4458ea27f",
     "var_922067c4": "scriptbundle",
     "model": "#p8_wz_ammo_pickup_shotgun",
-    "weapon": <error reading:hash_2f47f966ebc641aa>,
+    "weapon": "weapon#hash_2f47f966ebc641aa",
     "type": "itemspawnentry",
     "hintstring": "#hash_36b0f4217f0831b8",
     "var_6731866b": 90,

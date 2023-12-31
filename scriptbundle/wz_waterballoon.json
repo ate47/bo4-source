@@ -3,7 +3,7 @@
     "description": "#hash_1ef25920b42565f3",
     "var_922067c4": "scriptbundle",
     "model": "#hash_2a16aa22e8874d06",
-    "weapon": <error reading:waterballoon_wz>,
+    "weapon": "weapon#waterballoon_wz",
     "type": "itemspawnentry",
     "var_77d2cbb5": "#hash_1af210e93d3b0dc8",
     "name": "wz_waterballoon",

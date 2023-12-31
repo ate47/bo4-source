@@ -3,7 +3,7 @@
     "description": "#hash_63af85b59aab95a2",
     "var_922067c4": "scriptbundle",
     "model": "#p7_fir_ball_sports_basketball",
-    "weapon": <error reading:basketball_wz>,
+    "weapon": "weapon#basketball_wz",
     "type": "itemspawnentry",
     "name": "wz_ball",
     "displayname": "#weapon/basketball",

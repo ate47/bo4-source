@@ -27,7 +27,7 @@
 #using scripts\core_common\player\player_stats.gsc;
 #using scripts\mp_common\gametypes\round.gsc;
 #using scripts\mp_common\gametypes\_prop_dev.gsc;
-#using script_668aba6ee6d1fb9a;
+#using scripts\mp_common\gametypes\_prop_controls.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\mp_common\gametypes\spawning.gsc;
 #using scripts\mp_common\gametypes\globallogic_utils.gsc;

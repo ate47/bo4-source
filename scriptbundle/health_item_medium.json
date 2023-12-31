@@ -2,7 +2,7 @@
     "amount": 1,
     "var_922067c4": "scriptbundle",
     "model": "#p8_wz_supply_stash_health_lvl2",
-    "weapon": <error reading:hash_503952ee4123de00>,
+    "weapon": "weapon#hash_503952ee4123de00",
     "type": "itemspawnentry",
     "name": "health_item_medium",
     "stackcount": 5,

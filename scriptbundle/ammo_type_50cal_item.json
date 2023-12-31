@@ -3,7 +3,7 @@
     "description": "#hash_147758749b0e039f",
     "var_922067c4": "scriptbundle",
     "model": "#p8_wz_ammo_pickup_50",
-    "weapon": <error reading:hash_1212239b99e197c>,
+    "weapon": "weapon#hash_1212239b99e197c",
     "type": "itemspawnentry",
     "hintstring": "#hash_2f3db08411548b58",
     "var_6731866b": 60,

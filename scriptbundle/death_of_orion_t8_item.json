@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_6b454c4591b3595d",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:ww_crossbow_t8_wz>,
+    "weapon": "weapon#ww_crossbow_t8_wz",
     "type": "itemspawnentry",
     "var_e6ac0592": 35,
     "var_65b3a12": 6,

@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:frag_grenade_wz>,
+    "weapon": "weapon#frag_grenade_wz",
     "type": "itemspawnentry",
     "name": "frag_grenade_wz_item",
     "stackcount": 1,

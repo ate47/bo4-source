@@ -2,7 +2,7 @@
     "amount": 4,
     "description": "#hash_45c5cd656e3bc648",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:hash_9ce8bbfeca8bb96>,
+    "weapon": "weapon#hash_9ce8bbfeca8bb96",
     "type": "itemspawnentry",
     "var_e6ac0592": -65,
     "name": "trip_wire_wz_item",

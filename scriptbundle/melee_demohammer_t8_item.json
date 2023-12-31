@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_7b56826ef42529f5",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:melee_demohammer_t8_wz>,
+    "weapon": "weapon#melee_demohammer_t8_wz",
     "type": "itemspawnentry",
     "var_e6ac0592": 180,
     "var_65b3a12": 6,

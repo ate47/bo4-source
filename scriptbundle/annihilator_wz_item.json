@@ -45,7 +45,7 @@
     "var_922067c4": "scriptbundle",
     "var_eda4062b": 3,
     "var_e8b98a8a": "#hash_31b5340e9a1b398c",
-    "weapon": <error reading:hero_annihilator_wz>,
+    "weapon": "weapon#hero_annihilator_wz",
     "type": "itemspawnentry",
     "unlockableitemref": "#hash_3fd5bb2354a7541d",
     "var_e6ac0592": 90,

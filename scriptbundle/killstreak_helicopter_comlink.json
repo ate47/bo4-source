@@ -1,7 +1,7 @@
 {
     "altweapons": [
         {
-            "var_359445cd": <error reading:cobra_20mm_comlink_mp>
+            "var_359445cd": "weapon#cobra_20mm_comlink_mp"
         }
     ],
     "var_11cb9190": 1,
@@ -61,7 +61,7 @@
     "var_65d707d0": 1,
     "var_1d2a2ca4": "#hash_13432ebe86139ae1",
     "var_7a502c34": "enemyhelicopterhacked",
-    "ksweapon": <error reading:hash_388045c1ad0085de>,
+    "ksweapon": "weapon#hash_388045c1ad0085de",
     "var_8c4d7906": "#hash_e2ee55c3f615f97",
     "ksrobshowfriendly": 1,
     "var_dcd2a4d7": 27,
@@ -113,7 +113,7 @@
     "var_a2629b1c": 100,
     "ksdartcamerawatchduration": 2,
     "kshacktoollostlineofsightlimitms": 3000,
-    "var_fc0c8eae": <error reading:hash_2c57b4482fbb2525>,
+    "var_fc0c8eae": "weapon#hash_2c57b4482fbb2525",
     "var_1faee2a5": 0.25,
     "kslowhealth": 2500,
     "kshacktoolnolineofsighttime": 6000,

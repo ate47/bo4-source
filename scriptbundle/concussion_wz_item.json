@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:hash_2534ad64dd2085c>,
+    "weapon": "weapon#hash_2534ad64dd2085c",
     "type": "itemspawnentry",
     "name": "concussion_wz_item",
     "stackcount": 1,

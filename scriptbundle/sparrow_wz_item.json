@@ -44,7 +44,7 @@
     "description": "#hash_380a44f5bb88e0bc",
     "var_922067c4": "scriptbundle",
     "var_eda4062b": 3,
-    "weapon": <error reading:sig_bow_quickshot_wz>,
+    "weapon": "weapon#sig_bow_quickshot_wz",
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "name": "sparrow_wz_item",

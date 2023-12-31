@@ -27,7 +27,7 @@
     "var_5dc4470b": -6,
     "var_3e688854": -2,
     "var_2ee21ae6": 1,
-    "weapon": <error reading:ar_stealth_t8_operator_wz>,
+    "weapon": "weapon#ar_stealth_t8_operator_wz",
     "attachslotbody": 1,
     "type": "itemspawnentry",
     "var_7a80f06e": 1,

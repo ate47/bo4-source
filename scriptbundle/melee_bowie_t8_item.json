@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_5891462ffe312cc5",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:melee_bowie_wz>,
+    "weapon": "weapon#melee_bowie_wz",
     "type": "itemspawnentry",
     "var_65b3a12": 6,
     "name": "melee_bowie_t8_item",

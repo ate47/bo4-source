@@ -5,7 +5,7 @@
     "var_5dc4470b": -8,
     "var_3e688854": -2,
     "worldfx": "#hash_10138d6ad6687c27",
-    "weapon": <error reading:hash_19c77a485123c58f>,
+    "weapon": "weapon#hash_19c77a485123c58f",
     "var_86d1fc36": "#hash_64dbfc4253f51c17",
     "attachslotbody": 1,
     "type": "itemspawnentry",

@@ -51,7 +51,7 @@
     "type": "killstreak",
     "var_56f54dc0": 120,
     "var_1d2a2ca4": "#hash_2b0e1f9a3a18912b",
-    "ksweapon": <error reading:ultimate_turret_wz>,
+    "ksweapon": "weapon#ultimate_turret_wz",
     "var_8c4d7906": "#hash_595d5ff7c52d0f12",
     "ksrobshowfriendly": 1,
     "var_ee9fdcf3": 200,

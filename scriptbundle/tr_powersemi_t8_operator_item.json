@@ -24,7 +24,7 @@
     "var_5dc4470b": -8,
     "var_3e688854": -2,
     "var_2ee21ae6": 1,
-    "weapon": <error reading:tr_powersemi_t8_operator_wz>,
+    "weapon": "weapon#tr_powersemi_t8_operator_wz",
     "type": "itemspawnentry",
     "var_7a80f06e": 1,
     "var_e6ac0592": 90,

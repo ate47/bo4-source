@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_6067ee4630b093db",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:flare_gun_veh_wz>,
+    "weapon": "weapon#flare_gun_veh_wz",
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "name": "flare_gun_veh_wz_item",

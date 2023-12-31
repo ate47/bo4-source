@@ -3,7 +3,7 @@
     "description": "#hash_1c96f39a878e18d3",
     "var_922067c4": "scriptbundle",
     "var_3e688854": -4,
-    "weapon": <error reading:launcher_standard_t8_wz>,
+    "weapon": "weapon#launcher_standard_t8_wz",
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "var_65b3a12": 6,

@@ -1898,9 +1898,9 @@ function function_5f5ee5ed() {
 // Size: 0x168
 function function_1707def1() {
     level endon(#"vo_fasttravel");
-    var_3682878e = struct::get_array("fasttravel_trigger");
+    a_s_fasttravel = struct::get_array("fasttravel_trigger");
     while (1) {
-        foreach (s_fasttravel in var_3682878e) {
+        foreach (s_fasttravel in a_s_fasttravel) {
             a_players = array::get_all_closest(s_fasttravel.origin, util::get_active_players(), undefined, 4, 300);
             if (isdefined(a_players) && isalive(a_players[0])) {
                 a_players[0] zm_vo::function_a2bd5a0c(#"hash_c12560526404585", 0.5, 1, 9999, 1);

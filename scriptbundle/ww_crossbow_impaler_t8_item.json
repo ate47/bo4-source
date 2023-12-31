@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_b011b485a1789c3",
     "var_922067c4": "scriptbundle",
-    "weapon": <error reading:hash_5908bed1355cbb74>,
+    "weapon": "weapon#hash_5908bed1355cbb74",
     "type": "itemspawnentry",
     "var_e6ac0592": 35,
     "var_65b3a12": 6,

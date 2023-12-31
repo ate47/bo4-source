@@ -2,7 +2,7 @@
     "amount": 1,
     "var_922067c4": "scriptbundle",
     "model": "#hash_5fac69ad65e0255a",
-    "weapon": <error reading:ultimate_turret_wz>,
+    "weapon": "weapon#ultimate_turret_wz",
     "type": "itemspawnentry",
     "hintstring": "#hash_69a3d01cedc93f4c",
     "name": "ultimate_turret_wz_item",

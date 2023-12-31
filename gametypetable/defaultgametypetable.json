@@ -1,0 +1,21 @@
+{
+    "name": "defaultgametypetable",
+    "sessionMode": "<invalid>",
+    "gametypes":
+    [
+        {
+            "uniqueID": 1025,
+            "name": "default",
+            "baseGameType": "<invalid:0>",
+            "nameRef": "#",
+            "nameRefCaps": "#",
+            "descriptionRef": "#",
+            "isHardcoreAvailable": false,
+            "hardcoreNameRef": "#",
+            "isTeamBased": false,
+            "hideHudScore": false,
+            "groupname": "hidden",
+            "presenceString": "#"
+        }
+    ]
+}
