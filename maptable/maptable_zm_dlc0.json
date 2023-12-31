@@ -1,0 +1,17 @@
+{
+    "name": "maptable_zm_dlc0",
+    "sessionMode": "zombies",
+    "maps": [
+        {
+            "uniqueID": 4097,
+            "name": "zm_office",
+            "hashname": "#zm_office",
+            "missionName": "zm_office",
+            "mapName": "#zmui/office",
+            "rootMapName": "#",
+            "mapDescription": "#hash_3d7df7f70551f80a",
+            "loadingmovie": "zm_office_loadingmovie:bik_zm_office_load",
+            "size": 0
+        }
+    ]
+}

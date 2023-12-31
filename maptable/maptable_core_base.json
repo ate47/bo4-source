@@ -1,0 +1,16 @@
+{
+    "name": "maptable_core_base",
+    "sessionMode": "<invalid>",
+    "maps": [
+        {
+            "uniqueID": 1025,
+            "name": "core_frontend",
+            "hashname": "#core_frontend",
+            "missionName": "core_frontend",
+            "mapName": "#hash_7c00e43a2aa46cc4",
+            "rootMapName": "#",
+            "mapDescription": "#hash_7c00e43a2aa46cc4",
+            "size": 0
+        }
+    ]
+}

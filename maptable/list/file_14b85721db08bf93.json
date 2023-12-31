@@ -1,0 +1,23 @@
+{
+    "cp": [
+    ],
+    "mp": [
+        "#maptable_mp_base",
+        "#maptable_mp_dlc2",
+        "#maptable_mp_dlc3",
+        "#maptable_mp_dlc4",
+        "#maptable_mp_dlc5",
+        "#maptable_mp_dlc6"
+    ],
+    "zm": [
+        "#maptable_zm_base",
+        "#maptable_zm_dlc0",
+        "#maptable_zm_dlc1",
+        "#maptable_zm_dlc2",
+        "#maptable_zm_dlc3",
+        "#maptable_zm_dlc4"
+    ],
+    "wz": [
+        "#maptable_wz_base"
+    ]
+}

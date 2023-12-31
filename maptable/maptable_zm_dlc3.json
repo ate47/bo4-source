@@ -1,0 +1,17 @@
+{
+    "name": "maptable_zm_dlc3",
+    "sessionMode": "zombies",
+    "maps": [
+        {
+            "uniqueID": 28673,
+            "name": "zm_white",
+            "hashname": "#zm_white",
+            "missionName": "zm_white",
+            "mapName": "#hash_2744ee0ea477fe83",
+            "rootMapName": "#",
+            "mapDescription": "#hash_646f63ad5d2cd7e7",
+            "loadingmovie": "zm_white_loadingmovie",
+            "size": 0
+        }
+    ]
+}

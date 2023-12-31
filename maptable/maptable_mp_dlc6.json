@@ -1,0 +1,28 @@
+{
+    "name": "maptable_mp_dlc6",
+    "sessionMode": "multiplayer",
+    "maps": [
+        {
+            "uniqueID": 41217,
+            "name": "mp_maldives",
+            "hashname": "#mp_maldives",
+            "missionName": "mp_maldives",
+            "mapName": "#mpui/maldives",
+            "rootMapName": "#",
+            "mapDescription": "#hash_152830b8e61fe46",
+            "loadingmovie": "mp_maldives_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 41218,
+            "name": "mp_cosmodrome",
+            "hashname": "#mp_cosmodrome",
+            "missionName": "mp_cosmodrome",
+            "mapName": "#mpui/cosmodrome",
+            "rootMapName": "#",
+            "mapDescription": "#hash_239683306b2ae447",
+            "loadingmovie": "mp_cosmodrome_loadingmovie",
+            "size": 1
+        }
+    ]
+}

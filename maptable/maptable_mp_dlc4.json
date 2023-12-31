@@ -1,0 +1,39 @@
+{
+    "name": "maptable_mp_dlc4",
+    "sessionMode": "multiplayer",
+    "maps": [
+        {
+            "uniqueID": 24833,
+            "name": "mp_embassy",
+            "hashname": "#mp_embassy",
+            "missionName": "mp_embassy",
+            "mapName": "#mpui/embassy",
+            "rootMapName": "#",
+            "mapDescription": "#hash_228d1a0cad0999f8",
+            "loadingmovie": "mp_embassy_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 24834,
+            "name": "mp_geothermal",
+            "hashname": "#mp_geothermal",
+            "missionName": "mp_geothermal",
+            "mapName": "#hash_596a88b63b286cd7",
+            "rootMapName": "#",
+            "mapDescription": "#hash_395d896ea5e8f187",
+            "loadingmovie": "mp_geothermal_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 24835,
+            "name": "mp_russianbase",
+            "hashname": "#mp_russianbase",
+            "missionName": "mp_russianbase",
+            "mapName": "#hash_79ada5df28de70d1",
+            "rootMapName": "#",
+            "mapDescription": "#hash_1909ea40355265c1",
+            "loadingmovie": "mp_russianbase_loadingmovie",
+            "size": 1
+        }
+    ]
+}

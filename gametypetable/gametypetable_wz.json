@@ -1,8 +1,7 @@
 {
     "name": "gametypetable_wz",
     "sessionMode": "warzone",
-    "gametypes":
-    [
+    "gametypes": [
         {
             "uniqueID": 769,
             "name": "warzone_solo",

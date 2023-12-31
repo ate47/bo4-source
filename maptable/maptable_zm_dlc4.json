@@ -1,0 +1,17 @@
+{
+    "name": "maptable_zm_dlc4",
+    "sessionMode": "zombies",
+    "maps": [
+        {
+            "uniqueID": 36865,
+            "name": "zm_orange",
+            "hashname": "#zm_orange",
+            "missionName": "zm_orange",
+            "mapName": "#zmui/orange",
+            "rootMapName": "#",
+            "mapDescription": "#hash_36437ccd18f85074",
+            "loadingmovie": "zm_orange_loadingmovie",
+            "size": 0
+        }
+    ]
+}

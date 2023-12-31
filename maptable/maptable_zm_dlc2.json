@@ -1,0 +1,17 @@
+{
+    "name": "maptable_zm_dlc2",
+    "sessionMode": "zombies",
+    "maps": [
+        {
+            "uniqueID": 20481,
+            "name": "zm_red",
+            "hashname": "#zm_red",
+            "missionName": "zm_red",
+            "mapName": "#zmui/red",
+            "rootMapName": "#",
+            "mapDescription": "#hash_7850ad2f674a8769",
+            "loadingmovie": "zm_red_loadingmovie",
+            "size": 1
+        }
+    ]
+}

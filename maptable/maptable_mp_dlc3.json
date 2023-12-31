@@ -1,0 +1,28 @@
+{
+    "name": "maptable_mp_dlc3",
+    "sessionMode": "multiplayer",
+    "maps": [
+        {
+            "uniqueID": 16641,
+            "name": "mp_casino",
+            "hashname": "#mp_casino",
+            "missionName": "mp_casino",
+            "mapName": "#mpui/casino",
+            "rootMapName": "#",
+            "mapDescription": "#hash_5fa5e1ee9f71b10c",
+            "loadingmovie": "mp_casino_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 16642,
+            "name": "mp_station",
+            "hashname": "#mp_station",
+            "missionName": "mp_station",
+            "mapName": "#mpui/station",
+            "rootMapName": "#",
+            "mapDescription": "#hash_478099f9ef8ec7fd",
+            "loadingmovie": "mp_station_loadingmovie",
+            "size": 1
+        }
+    ]
+}

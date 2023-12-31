@@ -1,0 +1,49 @@
+{
+    "name": "maptable_zm_base",
+    "sessionMode": "zombies",
+    "maps": [
+        {
+            "uniqueID": 1,
+            "name": "zm_zodt8",
+            "hashname": "#zm_zodt8",
+            "missionName": "zm_zodt8",
+            "mapName": "#zmui/zodt8",
+            "rootMapName": "#",
+            "mapDescription": "#hash_4906aad8b00560af",
+            "loadingmovie": "zm_zodt8_loadingmovie:bik_zm_voyage_load",
+            "size": 0
+        },
+        {
+            "uniqueID": 2,
+            "name": "zm_towers",
+            "hashname": "#zm_towers",
+            "missionName": "zm_towers",
+            "mapName": "#zmui/towers",
+            "rootMapName": "#",
+            "mapDescription": "#hash_7a91c22c69d54dc4",
+            "loadingmovie": "zm_towers_loadingmovie:bik_zm_towers_load",
+            "size": 0
+        },
+        {
+            "uniqueID": 3,
+            "name": "zm_escape",
+            "hashname": "#zm_escape",
+            "missionName": "zm_escape",
+            "mapName": "#zmui/escape",
+            "rootMapName": "#",
+            "mapDescription": "#hash_7226cb1d509ebfbd",
+            "loadingmovie": "zm_escape_loadingmovie:bik_zm_blood_load",
+            "size": 0
+        },
+        {
+            "uniqueID": 4,
+            "name": "zm_quickplay",
+            "hashname": "#hash_12b132eb33b03b1e",
+            "missionName": "zm_quickplay",
+            "mapName": "#hash_1f6a84783744b749",
+            "rootMapName": "#hash_1f6a84783744b749",
+            "mapDescription": "#hash_323c7dc6a618ba91",
+            "size": 0
+        }
+    ]
+}

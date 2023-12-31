@@ -1,8 +1,7 @@
 {
     "name": "gametypetable_mp",
     "sessionMode": "multiplayer",
-    "gametypes":
-    [
+    "gametypes": [
         {
             "uniqueID": 257,
             "name": "tdm",

@@ -1,8 +1,7 @@
 {
     "name": "defaultgametypetable",
     "sessionMode": "<invalid>",
-    "gametypes":
-    [
+    "gametypes": [
         {
             "uniqueID": 1025,
             "name": "default",

@@ -1,0 +1,28 @@
+{
+    "name": "maptable_mp_dlc2",
+    "sessionMode": "multiplayer",
+    "maps": [
+        {
+            "uniqueID": 8449,
+            "name": "mp_elevation",
+            "hashname": "#mp_elevation",
+            "missionName": "mp_elevation",
+            "mapName": "#hash_795135c0ffdb6fb6",
+            "rootMapName": "#",
+            "mapDescription": "#hash_a712a4d06ee0046",
+            "loadingmovie": "mp_elevation_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 8450,
+            "name": "mp_madagascar",
+            "hashname": "#mp_madagascar",
+            "missionName": "mp_madagascar",
+            "mapName": "#hash_46a0a3dbf10ed5d7",
+            "rootMapName": "#",
+            "mapDescription": "#hash_6b2dda96bb8e6f47",
+            "loadingmovie": "mp_madagascar_loadingmovie",
+            "size": 1
+        }
+    ]
+}

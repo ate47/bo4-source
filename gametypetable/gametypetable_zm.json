@@ -1,8 +1,7 @@
 {
     "name": "gametypetable_zm",
     "sessionMode": "zombies",
-    "gametypes":
-    [
+    "gametypes": [
         {
             "uniqueID": 1,
             "name": "zclassic",

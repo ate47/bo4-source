@@ -1,0 +1,17 @@
+{
+    "name": "maptable_zm_dlc1",
+    "sessionMode": "zombies",
+    "maps": [
+        {
+            "uniqueID": 12289,
+            "name": "zm_mansion",
+            "hashname": "#zm_mansion",
+            "missionName": "zm_mansion",
+            "mapName": "#zmui/mansion",
+            "rootMapName": "#",
+            "mapDescription": "#hash_708ca3393b7322ab",
+            "loadingmovie": "zm_mansion_loadingmovie:bik_zm_mansion_load",
+            "size": 1
+        }
+    ]
+}

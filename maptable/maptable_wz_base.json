@@ -1,0 +1,60 @@
+{
+    "name": "maptable_wz_base",
+    "sessionMode": "warzone",
+    "maps": [
+        {
+            "uniqueID": 769,
+            "name": "wz_open_skyscrapers",
+            "hashname": "#wz_open_skyscrapers",
+            "missionName": "wz_open_skyscrapers",
+            "mapName": "#",
+            "rootMapName": "#",
+            "mapDescription": "#",
+            "loadingmovie": "wz_open_skyscrapers_loadingmovie",
+            "size": 0
+        },
+        {
+            "uniqueID": 770,
+            "name": "wz_open_skyscrapers_alt",
+            "hashname": "#wz_open_skyscrapers_alt",
+            "missionName": "wz_open_skyscrapers_alt",
+            "mapName": "#",
+            "rootMapName": "#",
+            "mapDescription": "#",
+            "loadingmovie": "wz_open_skyscrapers_alt_loadingmovie",
+            "size": 0
+        },
+        {
+            "uniqueID": 771,
+            "name": "wz_escape",
+            "hashname": "#wz_escape",
+            "missionName": "wz_escape",
+            "mapName": "#",
+            "rootMapName": "#",
+            "mapDescription": "#",
+            "loadingmovie": "wz_escape_loadingmovie",
+            "size": 0
+        },
+        {
+            "uniqueID": 772,
+            "name": "wz_escape_alt",
+            "hashname": "#wz_escape_alt",
+            "missionName": "wz_escape_alt",
+            "mapName": "#",
+            "rootMapName": "#",
+            "mapDescription": "#",
+            "loadingmovie": "wz_escape_alt_loadingmovie",
+            "size": 0
+        },
+        {
+            "uniqueID": 773,
+            "name": "wz_quickplay",
+            "hashname": "#hash_48f3b4df4155ad8a",
+            "missionName": "wz_quickplay",
+            "mapName": "#hash_1f6a84783744b749",
+            "rootMapName": "#hash_1f6a84783744b749",
+            "mapDescription": "#hash_57c09e48ba54a363",
+            "size": 0
+        }
+    ]
+}

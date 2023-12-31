@@ -1,0 +1,257 @@
+{
+    "name": "maptable_mp_base",
+    "sessionMode": "multiplayer",
+    "maps": [
+        {
+            "uniqueID": 257,
+            "name": "mp_urban",
+            "hashname": "#mp_urban",
+            "missionName": "mp_urban",
+            "mapName": "#mpui/urban",
+            "rootMapName": "#",
+            "mapDescription": "#hash_f87c9f1d0b7d805",
+            "loadingmovie": "mp_urban_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 258,
+            "name": "mp_offshore",
+            "hashname": "#mp_offshore",
+            "missionName": "mp_offshore",
+            "mapName": "#mpui/offshore",
+            "rootMapName": "#",
+            "mapDescription": "#hash_1d73b6ecc18e4c39",
+            "loadingmovie": "mp_offshore_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 259,
+            "name": "mp_firingrange2",
+            "hashname": "#mp_firingrange2",
+            "missionName": "mp_firingrange2",
+            "mapName": "#mpui/firingrange2",
+            "rootMapName": "#",
+            "mapDescription": "#hash_682eee5cc31b6039",
+            "loadingmovie": "mp_firingrange2_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 260,
+            "name": "mp_frenetic",
+            "hashname": "#mp_frenetic",
+            "missionName": "mp_frenetic",
+            "mapName": "#mpui/frenetic",
+            "rootMapName": "#",
+            "mapDescription": "#hash_7abbaf23aa0fbe9d",
+            "loadingmovie": "mp_frenetic_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 261,
+            "name": "mp_gridlock",
+            "hashname": "#mp_gridlock",
+            "missionName": "mp_gridlock",
+            "mapName": "#mpui/gridlock",
+            "rootMapName": "#",
+            "mapDescription": "#hash_3846f7e59ac8571c",
+            "loadingmovie": "mp_gridlock_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 262,
+            "name": "mp_hacienda",
+            "hashname": "#mp_hacienda",
+            "missionName": "mp_hacienda",
+            "mapName": "#mpui/hacienda",
+            "rootMapName": "#",
+            "mapDescription": "#hash_6eaedc443101c5a0",
+            "loadingmovie": "mp_hacienda_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 263,
+            "name": "mp_icebreaker",
+            "hashname": "#mp_icebreaker",
+            "missionName": "mp_icebreaker",
+            "mapName": "#hash_463b2971c43088d2",
+            "rootMapName": "#",
+            "mapDescription": "#hash_2e55e7489fbc10c2",
+            "loadingmovie": "mp_icebreaker_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 264,
+            "name": "mp_jungle2",
+            "hashname": "#mp_jungle2",
+            "missionName": "mp_jungle2",
+            "mapName": "#mpui/jungle2",
+            "rootMapName": "#",
+            "mapDescription": "#hash_29f5ff0a6d8751e8",
+            "loadingmovie": "mp_jungle2_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 265,
+            "name": "mp_militia",
+            "hashname": "#mp_militia",
+            "missionName": "mp_militia",
+            "mapName": "#mpui/militia",
+            "rootMapName": "#",
+            "mapDescription": "#hash_7e7a6eb31c61baec",
+            "loadingmovie": "mp_militia_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 266,
+            "name": "mp_morocco",
+            "hashname": "#mp_morocco",
+            "missionName": "mp_morocco",
+            "mapName": "#mpui/morocco",
+            "rootMapName": "#",
+            "mapDescription": "#hash_5308420bb3cebc8f",
+            "loadingmovie": "mp_morocco_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 267,
+            "name": "mp_silo",
+            "hashname": "#mp_silo",
+            "missionName": "mp_silo",
+            "mapName": "#mpui/silo",
+            "rootMapName": "#",
+            "mapDescription": "#hash_226e5c37bf1ae6a",
+            "loadingmovie": "mp_silo_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 268,
+            "name": "mp_seaside",
+            "hashname": "#mp_seaside",
+            "missionName": "mp_seaside",
+            "mapName": "#mpui/seaside",
+            "rootMapName": "#",
+            "mapDescription": "#hash_19a56a5eb2c35db5",
+            "loadingmovie": "mp_seaside_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 269,
+            "name": "mp_slums2",
+            "hashname": "#mp_slums2",
+            "missionName": "mp_slums2",
+            "mapName": "#mpui/slums2",
+            "rootMapName": "#",
+            "mapDescription": "#hash_570f2cc698849d4f",
+            "loadingmovie": "mp_slums2_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 270,
+            "name": "mp_mountain2",
+            "hashname": "#mp_mountain2",
+            "missionName": "mp_mountain2",
+            "mapName": "#mpui/mountain2",
+            "rootMapName": "#",
+            "mapDescription": "#hash_1330946a7435c87e",
+            "loadingmovie": "mp_mountain2_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 271,
+            "name": "mp_nuketown_4",
+            "hashname": "#mp_nuketown_4",
+            "missionName": "mp_nuketown_4",
+            "mapName": "#hash_26d9318e1b5b0929",
+            "rootMapName": "#",
+            "mapDescription": "#hash_5f6fc18ea358b839",
+            "loadingmovie": "mp_nuketown_4_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 272,
+            "name": "mp_firingrange2_alt",
+            "hashname": "#mp_firingrange2_alt",
+            "missionName": "mp_firingrange2_alt",
+            "mapName": "#hash_59b6aa82c41372a1",
+            "rootMapName": "#mpui/firingrange2",
+            "mapDescription": "#hash_682eee5cc31b6039",
+            "loadingmovie": "mp_firingrange2_alt_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 273,
+            "name": "mp_seaside_alt",
+            "hashname": "#mp_seaside_alt",
+            "missionName": "mp_seaside_alt",
+            "mapName": "#hash_37f1df39d61340f5",
+            "rootMapName": "#",
+            "mapDescription": "#hash_19a56a5eb2c35db5",
+            "loadingmovie": "mp_seaside_alt_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 274,
+            "name": "mp_offshore_alt",
+            "hashname": "#mp_offshore_alt",
+            "missionName": "mp_offshore_alt",
+            "mapName": "#hash_5b2ef6261cd02cc1",
+            "rootMapName": "#mpui/offshore",
+            "mapDescription": "#hash_1d73b6ecc18e4c39",
+            "loadingmovie": "mp_offshore_alt_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 0,
+            "name": "<invalid:0>",
+            "hashname": "#",
+            "missionName": "<invalid:0>",
+            "mapName": "#",
+            "rootMapName": "#",
+            "mapDescription": "#",
+            "size": 0
+        },
+        {
+            "uniqueID": 276,
+            "name": "mp_grind",
+            "hashname": "#mp_grind",
+            "missionName": "mp_grind",
+            "mapName": "#mpui/grind",
+            "rootMapName": "#",
+            "mapDescription": "#hash_71145a89daaac90f",
+            "loadingmovie": "mp_grind_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 277,
+            "name": "mp_hacienda_alt",
+            "hashname": "#mp_hacienda_alt",
+            "missionName": "mp_hacienda_alt",
+            "mapName": "#hash_25e1a08d09936334",
+            "rootMapName": "#",
+            "mapDescription": "#hash_6eaedc443101c5a0",
+            "loadingmovie": "mp_hacienda_alt_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 278,
+            "name": "mp_jungle2_alt",
+            "hashname": "#mp_jungle2_alt",
+            "missionName": "mp_jungle2_alt",
+            "mapName": "#hash_258192c7b86f77c",
+            "rootMapName": "#",
+            "mapDescription": "#hash_29f5ff0a6d8751e8",
+            "loadingmovie": "mp_jungle2_alt_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 279,
+            "name": "mp_quickplay",
+            "hashname": "#hash_29a9e4ba3c7930c6",
+            "missionName": "mp_quickplay",
+            "mapName": "#hash_1f6a84783744b749",
+            "rootMapName": "#hash_1f6a84783744b749",
+            "mapDescription": "#hash_57c09e48ba54a363",
+            "size": 0
+        }
+    ]
+}

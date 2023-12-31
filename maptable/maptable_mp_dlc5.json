@@ -1,0 +1,39 @@
+{
+    "name": "maptable_mp_dlc5",
+    "sessionMode": "multiplayer",
+    "maps": [
+        {
+            "uniqueID": 33025,
+            "name": "mp_austria",
+            "hashname": "#mp_austria",
+            "missionName": "mp_austria",
+            "mapName": "#mpui/austria",
+            "rootMapName": "#",
+            "mapDescription": "#hash_5c02d923cacf6be6",
+            "loadingmovie": "mp_austria_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 33026,
+            "name": "mp_zombie_museum",
+            "hashname": "#mp_zombie_museum",
+            "missionName": "mp_zombie_museum",
+            "mapName": "#hash_503c83486d6c1ae6",
+            "rootMapName": "#",
+            "mapDescription": "#hash_4f7576fa9ec86596",
+            "loadingmovie": "mp_zombie_museum_loadingmovie",
+            "size": 1
+        },
+        {
+            "uniqueID": 33027,
+            "name": "mp_cairo",
+            "hashname": "#mp_cairo",
+            "missionName": "mp_cairo",
+            "mapName": "#mpui/cairo",
+            "rootMapName": "#",
+            "mapDescription": "#hash_1b1ec3ceb321163d",
+            "loadingmovie": "mp_cairo_loadingmovie",
+            "size": 1
+        }
+    ]
+}
