@@ -1,0 +1,1401 @@
+{
+    "heads": [
+        {
+            "name": "#default",
+            "displayName": "#",
+            "xmodel": "#tag_origin",
+            "gender": 0
+        }
+    ],
+    "playerRoles": [
+        {
+            "id": 0,
+            "enabled": false,
+            "name": "#hash_11fb1ed8c48245b8",
+            "specialistEquipment": "#sticky_grenade",
+            "specialistWeapon": "#gadget_speed_burst",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#hash_4ba8c23577cfea6f",
+                "displayName": "#menu/none",
+                "description": "#menu/none",
+                "sortOrder": 1,
+                "fields": {
+                    "var_af8f68ab": "#hash_5b706bea48ad14ed"
+                }
+            },
+            "body": {
+                "name": "#hash_422c3dcc90a00c35",
+                "displayName": "#menu/none",
+                "description": "#menu/none",
+                "heroWeapon": "#ruin",
+                "gender": "male",
+                "mpDialogBundle": "#ruin",
+                "fields": {
+                    "var_b85069c": "uie_t7_icon_error_overlays",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ruin",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9"
+                }
+            }
+        },
+        {
+            "id": 1,
+            "enabled": true,
+            "name": "#hash_68255d9ce2a09382",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_11c7674684cf9ef2",
+                "displayName": "#zombie/scarlett",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "female",
+                "mpDialogBundle": "#scarlett",
+                "chrName": "scar",
+                "fields": {
+                    "var_be6ea125": "scene_frontend_t8_wz_fem_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_fem_team_0_scarlett",
+                    "var_bb70c379": "scene_frontend_t8_fem_customization",
+                    "var_819846c7": 1,
+                    "var_6c0a990a": 2,
+                    "mpdialog": "scarlett",
+                    "var_2081b2ed": "scene_frontend_inspection_fem",
+                    "chrname": "scar",
+                    "var_4c65efc8": "scene_frontend_zm_elixir_lab_book"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "enabled": true,
+            "name": "#hash_7180c6cf382f6010",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_23c080b015ea47a0",
+                "displayName": "#zombie/bruno",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#nomad",
+                "chrName": "brun",
+                "fields": {
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_1_bruno",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "nomad",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "brun",
+                    "var_4c65efc8": "scene_frontend_t8_zombies"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "enabled": true,
+            "name": "#hash_f531a8c2df891cc",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_5617f5786f6b4d9c",
+                "displayName": "#zombie/diego",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#swatpolice",
+                "chrName": "dieg",
+                "fields": {
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_3_diego",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "var_6c0a990a": 2,
+                    "mpdialog": "swatpolice",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "dieg",
+                    "var_4c65efc8": "scene_frontend_zm_callings"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "enabled": true,
+            "name": "#hash_3e63362aea484e09",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_44f43e2a67686d39",
+                "displayName": "#zombie/stanton",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#shaw",
+                "chrName": "shaw",
+                "fields": {
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_2_stanton",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "var_6c0a990a": 2,
+                    "mpdialog": "shaw",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "shaw",
+                    "var_4c65efc8": "scene_frontend_zm_elixir_lab"
+                }
+            }
+        },
+        {
+            "id": 5,
+            "enabled": true,
+            "name": "#hash_59f3598ad57dadd8",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_41a971269e056be8",
+                "displayName": "#zombie/richtofen",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#swatpolice",
+                "chrName": "rich",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_2_richtofen",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "swatpolice",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "rich"
+                }
+            }
+        },
+        {
+            "id": 6,
+            "enabled": true,
+            "name": "#hash_1aa57ef704f24fa5",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_34112f9c0a28c55",
+                "displayName": "#zombie/dempsey",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ruin",
+                "chrName": "demp",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_0_dempsey",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ruin",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "demp"
+                }
+            }
+        },
+        {
+            "id": 7,
+            "enabled": true,
+            "name": "#hash_22e6f7e13c3a99ef",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_29bca68cb10dea7f",
+                "displayName": "#zombie/nikolai",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#engineer",
+                "chrName": "niko",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_3_nikolai",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "engineer",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "niko"
+                }
+            }
+        },
+        {
+            "id": 8,
+            "enabled": true,
+            "name": "#hash_305f156156d37e34",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_9050f26947c89e4",
+                "displayName": "#zombie/takeo",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#swatpolice",
+                "chrName": "take",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_1_takeo",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "swatpolice",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "take"
+                }
+            }
+        },
+        {
+            "id": 9,
+            "enabled": true,
+            "name": "#hash_515977e191d13967",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_3bf34c69c202c907",
+                "displayName": "#zombie/scarlett",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "female",
+                "mpDialogBundle": "#seraph",
+                "chrName": "psyc",
+                "fields": {
+                    "var_e297151a": "scene_frontend_t8_zm_fem_team_3_psychic",
+                    "var_bb70c379": "scene_frontend_t8_fem_customization",
+                    "var_819846c7": 1,
+                    "var_6c0a990a": 2,
+                    "var_47c73c9d": "scene_frontend_t8_zm_aar_psychic",
+                    "mpdialog": "seraph",
+                    "var_2081b2ed": "scene_frontend_inspection_fem",
+                    "chrname": "psyc",
+                    "var_4c65efc8": "scene_frontend_t8_scarlett"
+                }
+            }
+        },
+        {
+            "id": 10,
+            "enabled": true,
+            "name": "#hash_3c0932fa55ee6e5b",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_6b5c057f2fa03fb",
+                "displayName": "#zombie/bruno",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#nomad",
+                "chrName": "brig",
+                "fields": {
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_0_brigadier",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "var_6c0a990a": 2,
+                    "mpdialog": "nomad",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "brig",
+                    "var_4c65efc8": "scene_frontend_t8_bruno"
+                }
+            }
+        },
+        {
+            "id": 11,
+            "enabled": true,
+            "name": "#hash_4e8f51ec275a4a38",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_1916deee2ac05058",
+                "displayName": "#zombie/diego",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ruin",
+                "chrName": "guns",
+                "fields": {
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_2_gunslinger",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ruin",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "guns",
+                    "var_4c65efc8": "scene_frontend_t8_diego"
+                }
+            }
+        },
+        {
+            "id": 12,
+            "enabled": true,
+            "name": "#hash_5ebf024e1559c04a",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_41748e70e3d2766a",
+                "displayName": "#zombie/stanton",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#swatpolice",
+                "chrName": "butl",
+                "fields": {
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_1_butler",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "var_6c0a990a": 2,
+                    "mpdialog": "swatpolice",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "butl",
+                    "var_4c65efc8": "scene_frontend_t8_stanton"
+                }
+            }
+        },
+        {
+            "id": 13,
+            "enabled": true,
+            "name": "#hash_14e91ceb9a7b3eb6",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_253c65b5254c2343",
+                "displayName": "#zombie/bruno",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#bruno",
+                "chrName": "brun",
+                "fields": {
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_1_bruno",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#zombie/bruno",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "bruno",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "brun",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter"
+                }
+            }
+        },
+        {
+            "id": 14,
+            "enabled": true,
+            "name": "#hash_26072a3b34719d22",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_4d5edad18bf7d543",
+                "displayName": "#zombie/diego",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#diego",
+                "chrName": "dieg",
+                "fields": {
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_3_diego",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "fullname": "#zombie/diego",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "diego",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "dieg",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter"
+                }
+            }
+        },
+        {
+            "id": 15,
+            "enabled": true,
+            "name": "#hash_1a427f842f175b3c",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_691b38344e00a93",
+                "displayName": "#zombie/scarlett",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "female",
+                "mpDialogBundle": "#scarlett",
+                "chrName": "scar",
+                "fields": {
+                    "var_be6ea125": "scene_frontend_t8_wz_fem_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_fem_team_0_scarlett",
+                    "var_bb70c379": "scene_frontend_t8_fem_customization",
+                    "var_819846c7": 1,
+                    "fullname": "#zombie/scarlett",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "scarlett",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "scar",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter_fem"
+                }
+            }
+        },
+        {
+            "id": 16,
+            "enabled": true,
+            "name": "#hash_5a906d7137467771",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_2d020f0df0ecb942",
+                "displayName": "#zombie/shaw",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#shaw",
+                "chrName": "shaw",
+                "fields": {
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_2_stanton",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "fullname": "#zombie/shaw",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "shaw",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "shaw",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter"
+                }
+            }
+        },
+        {
+            "id": 17,
+            "enabled": true,
+            "name": "#hash_36bc80636f0fdac4",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_52f8542610bf069",
+                "displayName": "#zombie/dempsey",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ofc_dempsey",
+                "chrName": "demp",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_0_dempsey",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#zombie/dempsey",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ofc_dempsey",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "demp"
+                }
+            }
+        },
+        {
+            "id": 18,
+            "enabled": true,
+            "name": "#hash_46b92e1337b43236",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_9502faefeba9a9b",
+                "displayName": "#zombie/nikolai",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ofc_nikolai",
+                "chrName": "niko",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_3_nikolai",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#zombie/nikolai",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ofc_nikolai",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "niko"
+                }
+            }
+        },
+        {
+            "id": 19,
+            "enabled": true,
+            "name": "#hash_2bcebdf1bef33311",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_1125d016782da164",
+                "displayName": "#zombie/richtofen",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ofc_richtofen",
+                "chrName": "rich",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_2_richtofen",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#zombie/richtofen",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ofc_richtofen",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "rich"
+                }
+            }
+        },
+        {
+            "id": 20,
+            "enabled": true,
+            "name": "#hash_6df0037e3f390b15",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_70b4c5ed98b736c0",
+                "displayName": "#zombie/takeo",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ofc_takeo",
+                "chrName": "take",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_1_takeo",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#zombie/takeo",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ofc_takeo",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "take"
+                }
+            }
+        },
+        {
+            "id": 21,
+            "enabled": true,
+            "name": "#hash_4cb4663e341a940",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_383ab3e383852691",
+                "displayName": "#zombie/dempsey",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ofc_dempsey",
+                "chrName": "Udem",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_0_dempsey",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#zombie/dempsey",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ofc_dempsey",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "Udem"
+                }
+            }
+        },
+        {
+            "id": 22,
+            "enabled": true,
+            "name": "#hash_78aa6812c38263ba",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_237595894d39c8a3",
+                "displayName": "#zombie/nikolai",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ofc_nikolai",
+                "chrName": "Unik",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_3_nikolai",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#zombie/nikolai",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ofc_nikolai",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "Unik"
+                }
+            }
+        },
+        {
+            "id": 23,
+            "enabled": true,
+            "name": "#hash_73d71ff1e886bbe9",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_15fe6bca9dbc4f0c",
+                "displayName": "#zombie/richtofen",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ofc_richtofen",
+                "chrName": "Uric",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_2_richtofen",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#zombie/richtofen",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ofc_richtofen",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "Uric"
+                }
+            }
+        },
+        {
+            "id": 24,
+            "enabled": true,
+            "name": "#hash_1fd4157dcafc6e45",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_6f0e5c370e2ec0c8",
+                "displayName": "#zombie/takeo",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ofc_takeo",
+                "chrName": "Utak",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_1_takeo",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#zombie/takeo",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ofc_takeo",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "Utak"
+                }
+            }
+        },
+        {
+            "id": 25,
+            "enabled": true,
+            "name": "#hash_8d5bc4a77c74f69",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_bb2838bfca441c8",
+                "displayName": "#hash_341d5f9c9ff87beb",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#russman",
+                "chrName": "russ",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_5"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_1_bruno",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "fullname": "#hash_341d5f9c9ff87beb",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "russman",
+                    "var_5c403974": 14,
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "russ",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter"
+                }
+            }
+        },
+        {
+            "id": 26,
+            "enabled": true,
+            "name": "#hash_291943ac9ed00ebc",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_166b175bf80dcb41",
+                "displayName": "#hash_6f343106a1aa2e9a",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "female",
+                "mpDialogBundle": "#misty",
+                "chrName": "mist",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_5"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_fem_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_fem_team_0_scarlett",
+                    "var_bb70c379": "scene_frontend_t8_fem_customization",
+                    "fullname": "#hash_6f343106a1aa2e9a",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "misty",
+                    "var_5c403974": 14,
+                    "var_2081b2ed": "scene_frontend_inspection_fem",
+                    "chrname": "mist",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter_fem"
+                }
+            }
+        },
+        {
+            "id": 27,
+            "enabled": true,
+            "name": "#hash_7ba62675ab75df69",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_4bffa831ee9c53c0",
+                "displayName": "#hash_229893b69aef3bdf",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#marlton",
+                "chrName": "marl",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_4"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_3_diego",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "fullname": "#hash_229893b69aef3bdf",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "marlton",
+                    "var_5c403974": 14,
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "marl",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter"
+                }
+            }
+        },
+        {
+            "id": 28,
+            "enabled": true,
+            "name": "#hash_447b3c77b73aa2a9",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_3977545a07f094c6",
+                "displayName": "#hash_2e22e75e7ecc5227",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#stuhlinger",
+                "chrName": "stuh",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_4"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_2_stanton",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "fullname": "#hash_2e22e75e7ecc5227",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "stuhlinger",
+                    "var_5c403974": 14,
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "stuh",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter"
+                }
+            }
+        },
+        {
+            "id": 29,
+            "enabled": true,
+            "name": "#hash_5a715cb0a6e071ae",
+            "specialistEquipment": "#frag_grenade",
+            "specialistWeapon": "#hero_chakram_lv1",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#default",
+                "displayName": "#hash_5c759d6c6ee8f8c3",
+                "description": "#hash_5c759d6c6ee8f8c3",
+                "sortOrder": 0,
+                "fields": {
+                }
+            },
+            "body": {
+                "name": "#hash_3e3c7e2f8f06fdde",
+                "displayName": "#zombie/richtofen",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#swatpolice",
+                "chrName": "rich",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_zm_male_team_5"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_2_richtofen",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "swatpolice",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "chrname": "rich"
+                }
+            }
+        }
+    ]
+}

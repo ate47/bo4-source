@@ -16,14 +16,15 @@ Most of the CSV are extracted without the header, you can have some known or gue
 ## Pools
 
 Pools dumped:
-| name            | id  |        path       |
-|-----------------|-----|-------------------|
-| rawfile         | 41  | `/`               |
-| stringtable     | 43  | `/`               |
-| scriptparsetree | 48  | `/`               |
-| scriptbundle    | 63  | `/scriptbundle/`  |
-| bgcache         | 85  | `/bgcache/`       |
-| maptable        | 89  | `/maptable/`      |
-| maptable_list   | 90  | `/maptable/list/` |
-| gametypetable   | 113 | `/gametypetable/` |
-| rawstring       | 157 | `strings.csv`     |
+| name              | id  |        path              |
+|-------------------|-----|--------------------------|
+| customizationtable| 30  | `/tables/customization/` |
+| rawfile           | 41  | `/`                      |
+| stringtable       | 43  | `/`                      |
+| scriptparsetree   | 48  | `/`                      |
+| scriptbundle      | 63  | `/scriptbundle/`         |
+| bgcache           | 85  | `/bgcache/`              |
+| maptable          | 89  | `/tables/map/`           |
+| maptable_list     | 90  | `/tables/map/list/`      |
+| gametypetable     | 113 | `/tables/gametype/`      |
+| rawstring         | 157 | `strings.csv`            |

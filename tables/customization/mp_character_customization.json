@@ -1,0 +1,1833 @@
+{
+    "heads": [
+        {
+            "name": "#default",
+            "displayName": "#",
+            "xmodel": "#tag_origin",
+            "gender": 0
+        }
+    ],
+    "playerRoles": [
+        {
+            "id": 0,
+            "enabled": false,
+            "name": "#hash_11fb1ed8c48245b8",
+            "specialistEquipment": "#sticky_grenade",
+            "specialistWeapon": "#gadget_speed_burst",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#hash_4ba8c23577cfea6f",
+                "displayName": "#menu/none",
+                "description": "#menu/none",
+                "sortOrder": 1,
+                "fields": {
+                    "var_af8f68ab": "#hash_5b706bea48ad14ed"
+                }
+            },
+            "body": {
+                "name": "#hash_422c3dcc90a00c35",
+                "displayName": "#menu/none",
+                "description": "#menu/none",
+                "heroWeapon": "#ruin",
+                "gender": "male",
+                "mpDialogBundle": "#ruin",
+                "fields": {
+                    "var_b85069c": "uie_t7_icon_error_overlays",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "ruin",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9"
+                }
+            }
+        },
+        {
+            "id": 1,
+            "enabled": true,
+            "name": "#prt_mp_swatpolice",
+            "specialistEquipment": "#eq_swat_grenade",
+            "specialistWeapon": "#sig_buckler_dw",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_objective",
+                "displayName": "#hash_24478a903275510a",
+                "description": "#hash_3f39168570a692fa",
+                "sortOrder": 1,
+                "fields": {
+                    "var_af8f68ab": "#hash_40b914e320dd97d6",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_641d42086962443d",
+                "displayName": "#hash_57252f16d6cf4edb",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#swatpolice",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "ajax_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "ajax_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_battery",
+                    "var_7c1ccfd6": "#hash_3b241c1aef808442",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_5005244ea6568b03",
+                    "var_9113ab87": "#hash_38fa33de16848bb0",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutorialajax_loadingmovie",
+                    "ctmap": "mp_urban",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#hash_57252f16d6cf4edb",
+                    "var_f1f952cc": "#hash_675c9b0c01b814fb",
+                    "var_e9b3b4c7": "tdm",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_7169341cb92c0612",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_swatpolice",
+                    "var_df4c987": "#hash_6fd050433c607ac1",
+                    "var_55f31ab6": "ct_skirmishoutro_ajax",
+                    "var_9cb75220": "#hash_4ab3fd4294c21d31",
+                    "var_cff52e6": "#hash_27b6370099fd52ea",
+                    "mpdialog": "swatpolice",
+                    "var_6a6d76a8": "tdm",
+                    "var_a19fcbe8": "tdm",
+                    "var_54f4a8a8": "#hash_363a7faaee6dec3a",
+                    "var_837988ce": "#hash_2793bc2d15b17c17",
+                    "var_a38fcede": "#hash_413f68dd4b4937c3",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_45f9659238799c3b",
+                    "var_c83058bc": "#hash_12d5b78570553793",
+                    "var_bce604f2": "mp_urban",
+                    "var_a7588c27": "#hash_545ed0bb623a084",
+                    "var_be8a5804": "mp_ajax_equipment",
+                    "var_5c403974": 1,
+                    "var_900e3f74": "#mpui/ekia",
+                    "var_6b928faf": "mp_ajax_weapon",
+                    "var_662d70e1": "#hash_12a8bcc76d46ea6d",
+                    "var_c42060d": "mp_urban",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "nationality": "#hash_410816fdbdb4ad8e",
+                    "var_7d89c31c": "#hash_63514e08fda5ddae",
+                    "var_a360a89c": "tdm",
+                    "var_c10e5242": "ct_ajax",
+                    "var_ca4b9cde": "#hash_551866b94f7d225f",
+                    "var_2e84063c": "mp_ajax_weapon",
+                    "var_22b55286": "mp_ajax_equipment",
+                    "var_3ab3c1e3": "mp_urban",
+                    "var_4747b9c": "#hash_147e2848e15ee62e",
+                    "var_4c65efc8": "scene_frontend_t8_swat",
+                    "var_203d75bb": "mp_urban"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "enabled": true,
+            "name": "#prt_mp_battery",
+            "specialistEquipment": "#eq_cluster_semtex_grenade",
+            "specialistWeapon": "#hero_pineapplegun",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_objective",
+                "displayName": "#hash_24478a903275510a",
+                "description": "#hash_3f39168570a692fa",
+                "sortOrder": 1,
+                "fields": {
+                    "var_af8f68ab": "#hash_40b914e320dd97d6",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_25d901b2845affb5",
+                "displayName": "#hash_759cb09309cf4447",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "female",
+                "mpDialogBundle": "#battery",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "battery_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "battery_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_battery",
+                    "var_7c1ccfd6": "#hash_1671990559be23ae",
+                    "var_be6ea125": "scene_frontend_t8_wz_fem_unlock",
+                    "weaponschema": "#hash_10feba446966a537",
+                    "var_9113ab87": "#hash_3ba7454f3fae4c4b",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutobattery_loadingmovie",
+                    "ctmap": "mp_offshore",
+                    "var_bb70c379": "scene_frontend_t8_fem_customization",
+                    "fullname": "#hash_759cb09309cf4447",
+                    "var_f1f952cc": "#hash_7963c96532109686",
+                    "var_e9b3b4c7": "dom",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_e3d633dd7e8c7bd",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_battery",
+                    "var_df4c987": "#hash_19c3670e6b936e74",
+                    "var_55f31ab6": "ct_skirmishoutro_battery",
+                    "var_9cb75220": "#hash_2855e8fe94593c64",
+                    "var_cff52e6": "#mpui/ekia",
+                    "mpdialog": "battery",
+                    "var_6a6d76a8": "dom",
+                    "var_a19fcbe8": "dom",
+                    "var_54f4a8a8": "#hash_1f4bad30e1eccbb5",
+                    "var_837988ce": "#hash_2f46cd598b4e32b2",
+                    "var_a38fcede": "#hash_7ef1a2f829426dee",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_3e8a0cb01da50ec6",
+                    "var_c83058bc": "#hash_2fbda94183eb612",
+                    "var_bce604f2": "mp_offshore",
+                    "var_a7588c27": "#hash_3d3d083bf1cd39ef",
+                    "var_be8a5804": "mp_battery_equipment",
+                    "var_5c403974": 2,
+                    "var_900e3f74": "#mpui/ekia",
+                    "var_6b928faf": "mp_battery_weapon",
+                    "var_662d70e1": "#hash_230b5a2c43542c2",
+                    "var_c42060d": "mp_offshore",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_fem",
+                    "nationality": "#hash_307e6e8b3b60de99",
+                    "var_7d89c31c": "#hash_278d3311308a79b2",
+                    "var_a360a89c": "dom",
+                    "var_c10e5242": "ct_battery",
+                    "var_ca4b9cde": "#hash_60cf1fd2b1e998ba",
+                    "var_2e84063c": "mp_battery_weapon",
+                    "var_22b55286": "mp_battery_equipment",
+                    "var_3ab3c1e3": "mp_offshore",
+                    "var_4747b9c": "#hash_361dcb2fe8b26482",
+                    "var_4c65efc8": "scene_frontend_t8_battery",
+                    "var_203d75bb": "mp_offshore"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "enabled": true,
+            "name": "#prt_mp_buffassault",
+            "specialistEquipment": "#gadget_supplypod",
+            "specialistWeapon": "#eq_localheal",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_support",
+                "displayName": "#hash_65307410511dd3aa",
+                "description": "#hash_2d04000a7a329c9a",
+                "sortOrder": 2,
+                "fields": {
+                    "var_af8f68ab": "#hash_5e12b6089d2d047a",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_271546989f2b39c0",
+                "displayName": "#hash_feee6890a6759fe",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#buffassault",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "crash_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "crash_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_nomad",
+                    "var_7c1ccfd6": "#hash_34c196ce3d0a7583",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_6b70c50c8f533ed6",
+                    "var_9113ab87": "#hash_3a8ea4f2af590045",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutocrash_loadingmovie",
+                    "ctmap": "mp_gridlock",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#hash_feee6890a6759fe",
+                    "var_f1f952cc": "#hash_727c9de8057d6d50",
+                    "var_e9b3b4c7": "conf",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_794af19d38243a13",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_buffassault",
+                    "var_df4c987": "#hash_1d0978b27cf85f52",
+                    "var_55f31ab6": "ct_skirmishoutro_crash",
+                    "var_9cb75220": "#hash_1a181fa1ac4e9142",
+                    "var_cff52e6": "#hash_ba7b3f5adf6a69",
+                    "mpdialog": "buffassault",
+                    "var_6a6d76a8": "conf",
+                    "var_a19fcbe8": "conf",
+                    "var_54f4a8a8": "#hash_68166d774826e4bf",
+                    "var_837988ce": "#hash_60f295a4d0299f84",
+                    "var_a38fcede": "#hash_13c8510fddec2938",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_786f7ff710556590",
+                    "var_c83058bc": "#hash_4253959bde2f749c",
+                    "var_bce604f2": "mp_gridlock",
+                    "var_a7588c27": "#hash_1489abc44c6551",
+                    "var_be8a5804": "mp_crash_equipment",
+                    "var_5c403974": 3,
+                    "var_900e3f74": "#hash_746ff887bb7447f6",
+                    "var_6b928faf": "mp_crash_weapon",
+                    "var_662d70e1": "#hash_a177479f1e2bac0",
+                    "var_c42060d": "mp_gridlock",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "nationality": "#hash_4d2421f7ec86b2c7",
+                    "var_7d89c31c": "#hash_601f72a3327b5651",
+                    "var_a360a89c": "conf",
+                    "var_c10e5242": "ct_crash",
+                    "var_ca4b9cde": "#hash_32c2310cf567912c",
+                    "var_2e84063c": "mp_crash_weapon",
+                    "var_22b55286": "mp_crash_equipment",
+                    "var_3ab3c1e3": "mp_gridlock",
+                    "var_4747b9c": "#hash_47f8021b2a550dd",
+                    "var_4c65efc8": "scene_frontend_t8_buff",
+                    "var_203d75bb": "mp_gridlock"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "enabled": true,
+            "name": "#prt_mp_firebreak",
+            "specialistEquipment": "#gadget_radiation_field",
+            "specialistWeapon": "#hero_flamethrower",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_support",
+                "displayName": "#hash_65307410511dd3aa",
+                "description": "#hash_2d04000a7a329c9a",
+                "sortOrder": 2,
+                "fields": {
+                    "var_af8f68ab": "#hash_5e12b6089d2d047a",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_17c8471ad085983b",
+                "displayName": "#hash_5b4889e3a720c949",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#firebreak",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "firebreak_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "firebreak_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_firebreak",
+                    "var_7c1ccfd6": "#hash_79c04fb2e32b0ccc",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_6ce2d2d0433b2f99",
+                    "var_9113ab87": "#hash_533780d4270ca05d",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutofirebreak_loadingmovie",
+                    "ctmap": "mp_offshore",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#hash_5b4889e3a720c949",
+                    "var_f1f952cc": "#hash_251330f71941b5a4",
+                    "var_e9b3b4c7": "koth",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_136345e001af6313",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_firebreak",
+                    "var_df4c987": "#hash_666dd2233a6aa4de",
+                    "var_55f31ab6": "ct_skirmishoutro_firebreak",
+                    "var_9cb75220": "#hash_57bf03ad30db364e",
+                    "var_cff52e6": "#hash_7942deec3b5c0824",
+                    "mpdialog": "firebreak",
+                    "var_6a6d76a8": "koth",
+                    "var_a19fcbe8": "koth",
+                    "var_54f4a8a8": "#hash_31ec1da17cfc974b",
+                    "var_837988ce": "#hash_4f3691ed2b0cf850",
+                    "var_a38fcede": "#hash_23255bd54ecfbbc",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_6471fbe367207ce4",
+                    "var_c83058bc": "#hash_67f02a7ed7773304",
+                    "var_bce604f2": "mp_offshore",
+                    "var_a7588c27": "#hash_58cfa58aed4f6b81",
+                    "var_be8a5804": "mp_firebreak_equipment",
+                    "var_5c403974": 4,
+                    "var_900e3f74": "#mpui/ekia",
+                    "var_6b928faf": "mp_firebreak_weapon",
+                    "var_662d70e1": "#hash_4c9c1c7f5e9d2ac8",
+                    "var_c42060d": "mp_offshore",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "nationality": "#hash_1673867f6138538f",
+                    "var_7d89c31c": "#hash_44b48cb82a40409c",
+                    "var_a360a89c": "koth",
+                    "var_c10e5242": "ct_firebreak",
+                    "var_ca4b9cde": "#hash_32a2c721b3aef5c8",
+                    "var_2e84063c": "mp_firebreak_weapon",
+                    "var_22b55286": "mp_firebreak_equipment",
+                    "var_3ab3c1e3": "mp_offshore",
+                    "var_4747b9c": "#hash_3a08f8d6796dec18",
+                    "var_4c65efc8": "scene_frontend_t8_firebreak",
+                    "var_203d75bb": "mp_offshore"
+                }
+            }
+        },
+        {
+            "id": 5,
+            "enabled": true,
+            "name": "#prt_mp_trapper",
+            "specialistEquipment": "#eq_tripwire",
+            "specialistWeapon": "#ability_dog",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_support",
+                "displayName": "#hash_65307410511dd3aa",
+                "description": "#hash_2d04000a7a329c9a",
+                "sortOrder": 2,
+                "fields": {
+                    "var_af8f68ab": "#hash_5e12b6089d2d047a",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_bac19a8a93f750a",
+                "displayName": "#hash_725b1719bd56b4ec",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#nomad",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "nomad_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "nomad_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_nomad",
+                    "var_7c1ccfd6": "#hash_dbdf8e01bad6ec5",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_320ebbc5f603e4d4",
+                    "var_9113ab87": "#hash_2416e57528dac8a1",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutonomad_loadingmovie",
+                    "ctmap": "mp_frenetic",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#hash_725b1719bd56b4ec",
+                    "var_f1f952cc": "#hash_2f35a5a77a2e2340",
+                    "var_e9b3b4c7": "sd",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_6a81519c4ea880f3",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_trapper",
+                    "var_df4c987": "#hash_1060f0b82782daae",
+                    "var_55f31ab6": "ct_skirmishoutro_nomad",
+                    "var_9cb75220": "#hash_40559059765cc25e",
+                    "var_cff52e6": "#mpui/ekia",
+                    "mpdialog": "nomad",
+                    "var_6a6d76a8": "sd",
+                    "var_a19fcbe8": "sd",
+                    "var_54f4a8a8": "#hash_5e954a520bb47233",
+                    "var_837988ce": "#hash_302a44e4da38f4b4",
+                    "var_a38fcede": "#hash_3c3649e7e8ffcf08",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_37167f604c666180",
+                    "var_c83058bc": "#hash_71693feee3f77cfc",
+                    "var_bce604f2": "mp_frenetic",
+                    "var_a7588c27": "#hash_39de79f877902d7d",
+                    "var_be8a5804": "mp_nomad_equipment",
+                    "var_5c403974": 5,
+                    "var_900e3f74": "#mpui/ekia",
+                    "var_6b928faf": "mp_nomad_weapon",
+                    "var_662d70e1": "#hash_7390bb1623221ea0",
+                    "var_c42060d": "mp_frenetic",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "nationality": "#hash_7e76e2108b7fa967",
+                    "var_7d89c31c": "#hash_75c1c72658bffa1f",
+                    "var_a360a89c": "sd",
+                    "var_c10e5242": "ct_nomad",
+                    "var_ca4b9cde": "#hash_2bfa18b2dec28e1c",
+                    "var_2e84063c": "mp_nomad_weapon",
+                    "var_22b55286": "mp_nomad_equipment",
+                    "var_3ab3c1e3": "mp_frenetic",
+                    "var_4747b9c": "#hash_1c61d4073c05a0a7",
+                    "var_4c65efc8": "scene_frontend_t8_nomad",
+                    "var_203d75bb": "mp_frenetic"
+                }
+            }
+        },
+        {
+            "id": 6,
+            "enabled": true,
+            "name": "#prt_mp_technomancer",
+            "specialistEquipment": "#eq_seeker_mine",
+            "specialistWeapon": "#shock_rifle",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_objective",
+                "displayName": "#hash_24478a903275510a",
+                "description": "#hash_3f39168570a692fa",
+                "sortOrder": 1,
+                "fields": {
+                    "var_af8f68ab": "#hash_40b914e320dd97d6",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_74a7b1f09eb77129",
+                "displayName": "#hash_3e7ad7302d10e6af",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#prophet",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "default_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "default_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_prophet",
+                    "var_7c1ccfd6": "#hash_2ac4bdf5cbb026a6",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_49ef20fb729908af",
+                    "var_9113ab87": "#hash_21d76663beb85390",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutoprophet_loadingmovie",
+                    "ctmap": "mp_seaside",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#hash_3e7ad7302d10e6af",
+                    "var_f1f952cc": "#hash_5a3160b12a246ea9",
+                    "var_e9b3b4c7": "dm",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_636a57c125ad61ca",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_technomancer",
+                    "var_df4c987": "#hash_87926eb80cd64ff",
+                    "var_55f31ab6": "ct_skirmishoutro_prophet",
+                    "var_9cb75220": "#hash_27ec863426c7f9ef",
+                    "var_cff52e6": "#hash_11d9a7667005bd90",
+                    "mpdialog": "prophet",
+                    "var_6a6d76a8": "dm",
+                    "var_a19fcbe8": "dm",
+                    "var_54f4a8a8": "#hash_2a690f290b9efd24",
+                    "var_837988ce": "#hash_4c32db2b650b9fb5",
+                    "var_a38fcede": "#hash_721fcbbd4924caa1",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_16d4f9160c1078e9",
+                    "var_c83058bc": "#hash_31e0d93e7cea5b0b",
+                    "var_bce604f2": "mp_seaside",
+                    "var_a7588c27": "#hash_840e885e0995fd4",
+                    "var_be8a5804": "mp_prophet_equipment",
+                    "var_5c403974": 7,
+                    "var_900e3f74": "#mpui/ekia",
+                    "var_6b928faf": "mp_prophet_weapon",
+                    "var_662d70e1": "#hash_4b7b8f85e5375505",
+                    "var_c42060d": "mp_seaside",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "nationality": "#hash_378e9287360338a6",
+                    "var_7d89c31c": "#hash_50505213038a045a",
+                    "var_a360a89c": "dm",
+                    "var_c10e5242": "ct_prophet",
+                    "var_ca4b9cde": "#hash_4828dced395cf7cd",
+                    "var_2e84063c": "mp_prophet_weapon",
+                    "var_22b55286": "mp_prophet_equipment",
+                    "var_3ab3c1e3": "mp_seaside",
+                    "var_4747b9c": "#hash_49a891cb0a25d88a",
+                    "var_4c65efc8": "scene_frontend_t8_prophet",
+                    "var_203d75bb": "mp_seaside"
+                }
+            }
+        },
+        {
+            "id": 7,
+            "enabled": true,
+            "name": "#prt_mp_recon",
+            "specialistEquipment": "#eq_sensor",
+            "specialistWeapon": "#gadget_vision_pulse",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_support",
+                "displayName": "#hash_65307410511dd3aa",
+                "description": "#hash_2d04000a7a329c9a",
+                "sortOrder": 2,
+                "fields": {
+                    "var_af8f68ab": "#hash_5e12b6089d2d047a",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_265a8bfe9e6a3a8f",
+                "displayName": "#hash_6ce34ffbb3998db9",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#recon",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "recon_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "recon_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_blackmarket",
+                    "var_7c1ccfd6": "#hash_4890ba1a7d2c379c",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_22343c3ae5fbcb69",
+                    "var_9113ab87": "#hash_6f6b0be8267f9dd",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutorecon_loadingmovie",
+                    "ctmap": "mp_seaside",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#hash_6ce34ffbb3998db9",
+                    "var_f1f952cc": "#hash_3a7482d98cbb39fc",
+                    "var_e9b3b4c7": "control",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_69f08508c4333d67",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_recon",
+                    "var_df4c987": "#hash_18ec15815e795a0a",
+                    "var_55f31ab6": "ct_skirmishoutro_recon",
+                    "var_9cb75220": "#hash_2b99a2cafed13c5a",
+                    "var_cff52e6": "#hash_35785e45bc814b95",
+                    "mpdialog": "recon",
+                    "var_6a6d76a8": "control",
+                    "var_a19fcbe8": "control",
+                    "var_54f4a8a8": "#hash_1b6251c60c5f864f",
+                    "var_837988ce": "#hash_67e528228e95d568",
+                    "var_a38fcede": "#hash_2334750df4c718f4",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_16ed64e3af963a3c",
+                    "var_c83058bc": "#hash_dcf1a3dd3bfce88",
+                    "var_bce604f2": "mp_seaside",
+                    "var_a7588c27": "#hash_baad5a26faa0c11",
+                    "var_be8a5804": "mp_recon_equipment",
+                    "var_900e3f74": "#hash_130269fa0f74449a",
+                    "var_6b928faf": "mp_recon_weapon",
+                    "var_662d70e1": "#hash_5cda0e476b2e6824",
+                    "var_c42060d": "mp_seaside",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "nationality": "#hash_135adda4f059ebb3",
+                    "var_7d89c31c": "#hash_50f8bfed8b88688c",
+                    "var_a360a89c": "control",
+                    "var_c10e5242": "ct_recon",
+                    "var_ca4b9cde": "#hash_7c27be412fae8980",
+                    "var_2e84063c": "mp_recon_weapon",
+                    "var_22b55286": "mp_recon_equipment",
+                    "var_3ab3c1e3": "mp_seaside",
+                    "var_4747b9c": "#hash_2695a183ca5e7ec8",
+                    "var_4c65efc8": "scene_frontend_t8_recon",
+                    "var_203d75bb": "mp_seaside"
+                }
+            }
+        },
+        {
+            "id": 8,
+            "enabled": true,
+            "name": "#prt_mp_mercenary",
+            "specialistEquipment": "#eq_grapple",
+            "specialistWeapon": "#eq_gravityslam",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_slayer",
+                "displayName": "#hash_481f4d1215e979eb",
+                "description": "#hash_1c01013be2691f1b",
+                "sortOrder": 0,
+                "fields": {
+                    "var_af8f68ab": "#hash_51202badea0c3c13",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_215efce6af8d9a10",
+                "displayName": "#hash_318a13787fd10f6a",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#ruin",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "ruin_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "ruin_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_ruin",
+                    "var_7c1ccfd6": "#hash_60a61b2bae2dd4ef",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_4c8a1088a78ed34a",
+                    "var_9113ab87": "#hash_1555ba42a6be2354",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutoruin_loadingmovie",
+                    "ctmap": "mp_silo",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#hash_318a13787fd10f6a",
+                    "var_f1f952cc": "#hash_655f7ba042ce2497",
+                    "var_e9b3b4c7": "koth",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_4e40329fce46aaca",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_mercenary",
+                    "var_df4c987": "#hash_4778a8b413a76f89",
+                    "var_55f31ab6": "ct_skirmishoutro_ruin",
+                    "var_9cb75220": "#hash_606656c009072399",
+                    "var_c6376b99": 1,
+                    "var_cff52e6": "#hash_2dcef906736f45f9",
+                    "mpdialog": "ruin",
+                    "var_6a6d76a8": "koth",
+                    "var_a19fcbe8": "koth",
+                    "var_54f4a8a8": "#hash_3e4b189799958542",
+                    "var_837988ce": "#hash_bb24dcd31b0e213",
+                    "var_a38fcede": "#hash_4cd5da78f5efe87f",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_43fc4626798fabd7",
+                    "var_c83058bc": "#hash_fbdedcc8f2df6eb",
+                    "var_bce604f2": "mp_silo",
+                    "var_a7588c27": "#hash_2a8b9477893742f8",
+                    "var_be8a5804": "mp_ruin_equipment",
+                    "var_5c403974": 9,
+                    "var_900e3f74": "#mpui/ekia",
+                    "var_6b928faf": "mp_ruin_weapon",
+                    "var_662d70e1": "#hash_17ee1ce698a77065",
+                    "var_c42060d": "mp_silo",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "nationality": "#hash_62516580f9566fc6",
+                    "var_7d89c31c": "#hash_7c9101e19dfccce5",
+                    "var_a360a89c": "koth",
+                    "var_c10e5242": "ct_ruin",
+                    "var_ca4b9cde": "#hash_6e49a748cf4b021b",
+                    "var_2e84063c": "mp_ruin_weapon",
+                    "var_22b55286": "mp_ruin_equipment",
+                    "var_3ab3c1e3": "mp_silo",
+                    "var_4747b9c": "#hash_30e40899533141b1",
+                    "var_4c65efc8": "scene_frontend_t8_ruin_sitting_bull",
+                    "var_203d75bb": "mp_silo"
+                }
+            }
+        },
+        {
+            "id": 9,
+            "enabled": true,
+            "name": "#prt_mp_enforcer",
+            "specialistEquipment": "#gadget_spawnbeacon",
+            "specialistWeapon": "#hero_annihilator",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_slayer",
+                "displayName": "#hash_481f4d1215e979eb",
+                "description": "#hash_1c01013be2691f1b",
+                "sortOrder": 0,
+                "fields": {
+                    "var_af8f68ab": "#hash_51202badea0c3c13",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_35abb557417d97bc",
+                "displayName": "#hash_3b87d7eb92a261aa",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "female",
+                "mpDialogBundle": "#seraph",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "seraph_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "seraph_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_seraph",
+                    "var_7c1ccfd6": "#hash_2cfeaf4b3bd0f02f",
+                    "var_be6ea125": "scene_frontend_t8_wz_fem_unlock",
+                    "weaponschema": "#hash_908c895f82f318a",
+                    "var_9113ab87": "#hash_18207070ba4e5433",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutoseraph_loadingmovie",
+                    "ctmap": "mp_hacienda",
+                    "var_bb70c379": "scene_frontend_t8_fem_customization",
+                    "fullname": "#hash_3b87d7eb92a261aa",
+                    "var_f1f952cc": "#hash_19b68f33e380778c",
+                    "var_e9b3b4c7": "control",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_51b5ab61ab29f129",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_enforcer",
+                    "var_df4c987": "#hash_143bc3077382d9ae",
+                    "var_55f31ab6": "ct_skirmishoutro_seraph",
+                    "var_9cb75220": "#hash_5389c422257f635e",
+                    "var_cff52e6": "#hash_4c778ee9a8587639",
+                    "mpdialog": "seraph",
+                    "var_6a6d76a8": "control",
+                    "var_a19fcbe8": "control",
+                    "var_54f4a8a8": "#hash_651814bdafaa7c3",
+                    "var_837988ce": "#hash_27fe61fd57091480",
+                    "var_a38fcede": "#hash_593cb53013d5d464",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_3dc03beae637fccc",
+                    "var_c83058bc": "#hash_59fe9e4753f052c6",
+                    "var_bce604f2": "mp_hacienda",
+                    "var_a7588c27": "#hash_71e5c0cfaafbf56f",
+                    "var_be8a5804": "mp_seraph_equipment",
+                    "var_5c403974": 10,
+                    "var_900e3f74": "#mpui/ekia",
+                    "var_6b928faf": "mp_seraph_weapon",
+                    "var_662d70e1": "#hash_2ee6fabb2e9fceae",
+                    "var_c42060d": "mp_hacienda",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_fem",
+                    "nationality": "#hash_6e3576ba80c5994d",
+                    "var_7d89c31c": "#hash_1f4da16155efef25",
+                    "var_a360a89c": "control",
+                    "var_c10e5242": "ct_seraph",
+                    "var_ca4b9cde": "#hash_59752362fc4bf8b8",
+                    "var_2e84063c": "mp_seraph_weapon",
+                    "var_22b55286": "mp_seraph_equipment",
+                    "var_3ab3c1e3": "mp_hacienda",
+                    "var_4747b9c": "#hash_505a3bc87782f5f1",
+                    "var_4c65efc8": "scene_frontend_t8_seraph",
+                    "var_203d75bb": "mp_hacienda"
+                }
+            }
+        },
+        {
+            "id": 10,
+            "enabled": true,
+            "name": "#prt_mp_engineer",
+            "specialistEquipment": "#eq_concertina_wire",
+            "specialistWeapon": "#ability_smart_cover",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_support",
+                "displayName": "#hash_65307410511dd3aa",
+                "description": "#hash_2d04000a7a329c9a",
+                "sortOrder": 2,
+                "fields": {
+                    "var_af8f68ab": "#hash_5e12b6089d2d047a",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_34c5e1c04823489d",
+                "displayName": "#hash_62bd0375e9e20dab",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#engineer",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "torque_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "torque_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_prophet",
+                    "var_7c1ccfd6": "#hash_3e5c72aa389ce5b2",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_3ca3935f24b68d73",
+                    "var_9113ab87": "#hash_4272bbd56c2a48c8",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "intromovie": "ct_tutotorque_loadingmovie",
+                    "ctmap": "mp_frenetic",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#hash_62bd0375e9e20dab",
+                    "var_f1f952cc": "#hash_61b8b458a78dc18b",
+                    "var_e9b3b4c7": "tdm",
+                    "var_6c0a990a": 2,
+                    "realname": "#hash_7a362b2f128dfc9e",
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_engineer",
+                    "var_df4c987": "#hash_325eb139bfd0468d",
+                    "var_55f31ab6": "ct_skirmishoutro_torque",
+                    "var_9cb75220": "#hash_5b4036609880d6dd",
+                    "var_cff52e6": "#hash_6bad69e3dbe61c75",
+                    "mpdialog": "engineer",
+                    "var_6a6d76a8": "tdm",
+                    "var_a19fcbe8": "tdm",
+                    "var_54f4a8a8": "#hash_4adf225ed950339e",
+                    "var_837988ce": "#hash_756125a1b7275007",
+                    "var_a38fcede": "#hash_57bd9dcf7812ec3",
+                    "var_49a55967": 1,
+                    "var_148d6d91": 1,
+                    "var_4dfce91b": "#hash_5c2610faa4546cb",
+                    "var_c83058bc": "#hash_4f21e335e7f9332f",
+                    "var_bce604f2": "mp_frenetic",
+                    "var_a7588c27": "#hash_10e74d3d7df0190c",
+                    "var_be8a5804": "mp_torque_equipment",
+                    "var_5c403974": 12,
+                    "var_900e3f74": "#hash_7a9e949a1ed5792d",
+                    "var_6b928faf": "mp_torque_weapon",
+                    "var_662d70e1": "#hash_7a39ace8f6ebb2d1",
+                    "var_c42060d": "mp_frenetic",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "nationality": "#hash_67537f6f5c1324ca",
+                    "var_7d89c31c": "#hash_7183f03ef42e797e",
+                    "var_a360a89c": "tdm",
+                    "var_c10e5242": "ct_torque",
+                    "var_ca4b9cde": "#hash_1af195402267945f",
+                    "var_2e84063c": "mp_torque_weapon",
+                    "var_22b55286": "mp_torque_equipment",
+                    "var_3ab3c1e3": "mp_frenetic",
+                    "var_4747b9c": "#hash_7cfd8e611696a5fe",
+                    "var_4c65efc8": "scene_frontend_t8_engineer",
+                    "var_203d75bb": "mp_frenetic"
+                }
+            }
+        },
+        {
+            "id": 11,
+            "enabled": true,
+            "name": "#hash_6e7befeff487ba9a",
+            "specialistEquipment": "#eq_emp_grenade",
+            "specialistWeapon": "#gadget_icepick",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_support",
+                "displayName": "#hash_65307410511dd3aa",
+                "description": "#hash_2d04000a7a329c9a",
+                "sortOrder": 2,
+                "fields": {
+                    "var_af8f68ab": "#hash_5e12b6089d2d047a",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_4ae753fd800cb78a",
+                "displayName": "#hash_4e06263ae2b9a394",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "female",
+                "mpDialogBundle": "#zero",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "battery_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "battery_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_battery",
+                    "var_7c1ccfd6": "#hash_123ae4a60ccf6bfd",
+                    "var_be6ea125": "scene_frontend_t8_wz_fem_unlock",
+                    "weaponschema": "#hash_2095da416d84f50c",
+                    "var_40dc1b65": "#hash_2d99f1ba6381bf92",
+                    "var_bb70c379": "scene_frontend_t8_fem_customization",
+                    "fullname": "#hash_4e06263ae2b9a394",
+                    "var_6c0a990a": 2,
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_zero",
+                    "var_df4c987": "#hash_19c3670e6b936e74",
+                    "var_cff52e6": "#hash_53dd1232efc88328",
+                    "mpdialog": "zero",
+                    "var_a38fcede": "#hash_5537f9bfa32252a3",
+                    "var_c83058bc": "#hash_739a27a92843b783",
+                    "var_be8a5804": "mp_zero_equipment",
+                    "var_900e3f74": "#hash_408a1b3d366d1e96",
+                    "var_6b928faf": "mp_zero_weapon",
+                    "var_662d70e1": "#hash_2b598236a924c47d",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_fem",
+                    "var_7d89c31c": "#hash_6b510146a31748a7",
+                    "var_ca4b9cde": "#hash_60cf1fd2b1e998ba",
+                    "var_2e84063c": "mp_zero_weapon",
+                    "var_22b55286": "mp_zero_equipment",
+                    "var_4747b9c": "#hash_681a4ed1d88fe84f",
+                    "var_4c65efc8": "scene_frontend_t8_zero"
+                }
+            }
+        },
+        {
+            "id": 12,
+            "enabled": true,
+            "name": "#hash_3d9018ee4053e35c",
+            "specialistEquipment": "#eq_hawk",
+            "specialistWeapon": "#sig_bow_quickshot",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_support",
+                "displayName": "#hash_65307410511dd3aa",
+                "description": "#hash_2d04000a7a329c9a",
+                "sortOrder": 2,
+                "fields": {
+                    "var_af8f68ab": "#hash_5e12b6089d2d047a",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_6b10c47c814fffcc",
+                "displayName": "#hash_4947abbb91b5fbfe",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "female",
+                "mpDialogBundle": "#outrider",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_fem_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "default_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_fem_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "default_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_outrider",
+                    "var_7c1ccfd6": "#hash_7111e17e298c3783",
+                    "var_be6ea125": "scene_frontend_t8_wz_fem_unlock",
+                    "weaponschema": "#hash_2339f0cfac2140d6",
+                    "var_bb70c379": "scene_frontend_t8_fem_customization",
+                    "var_6c0a990a": 2,
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_outrider",
+                    "var_cff52e6": "#hash_769b33beaf0ec965",
+                    "mpdialog": "outrider",
+                    "var_a38fcede": "#hash_72a1df093c9bf22d",
+                    "var_c83058bc": "#hash_15d1e2cd4302b931",
+                    "var_be8a5804": "mp_outrider_equipment",
+                    "var_5c403974": 6,
+                    "var_900e3f74": "#mpui/ekia",
+                    "var_6b928faf": "mp_outrider_weapon",
+                    "var_662d70e1": "#hash_99f860d38501ee7",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_fem",
+                    "var_7d89c31c": "#hash_9113879dca04c51",
+                    "var_2e84063c": "mp_outrider_weapon",
+                    "var_22b55286": "mp_outrider_equipment",
+                    "var_4747b9c": "#hash_376efe19fa8506dd",
+                    "var_4c65efc8": "scene_frontend_t8_outrider"
+                }
+            }
+        },
+        {
+            "id": 13,
+            "enabled": true,
+            "name": "#hash_4a011dffec0dd650",
+            "specialistEquipment": "#eq_smoke",
+            "specialistWeapon": "#sig_blade",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_slayer",
+                "displayName": "#hash_481f4d1215e979eb",
+                "description": "#hash_1c01013be2691f1b",
+                "sortOrder": 0,
+                "fields": {
+                    "var_af8f68ab": "#hash_51202badea0c3c13",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_4c0746fa548d2220",
+                "displayName": "#hash_8b67b8f9d9a7f0e",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#spectre",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "default_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "default_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_spectre",
+                    "var_7c1ccfd6": "#hash_26ed695fddf597f3",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_404ca37577438b46",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_6c0a990a": 2,
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_spectre",
+                    "var_cff52e6": "#hash_7bdd52520b75763",
+                    "mpdialog": "spectre",
+                    "var_5c403974": 11,
+                    "var_900e3f74": "#mpui/ekia",
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "var_7d89c31c": "#hash_3a39edbadcadd221",
+                    "var_4747b9c": "#hash_b7832e76adcd1ad",
+                    "var_4c65efc8": "scene_frontend_t8_spectre"
+                }
+            }
+        },
+        {
+            "id": 14,
+            "enabled": true,
+            "name": "#hash_5517568f2fb8127",
+            "specialistEquipment": "#eq_shroud",
+            "specialistWeapon": "#sig_lmg",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_objective",
+                "displayName": "#hash_24478a903275510a",
+                "description": "#hash_3f39168570a692fa",
+                "sortOrder": 1,
+                "fields": {
+                    "var_af8f68ab": "#hash_40b914e320dd97d6",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_906e794ec705237",
+                "displayName": "#hash_7b43a0c37a409a85",
+                "description": "#",
+                "heroWeapon": "#reaper",
+                "gender": "male",
+                "mpDialogBundle": "#reaper",
+                "fields": {
+                    "arenaLobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_arena_male_team_5"
+                        }
+                    ],
+                    "heroicScenes": [
+                        {
+                            "scene": "default_end_game_scene"
+                        }
+                    ],
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_mp_male_team_5"
+                        }
+                    ],
+                    "heroicPoses": [
+                        {
+                            "scene": "default_end_game_pose"
+                        }
+                    ],
+                    "var_b85069c": "t7_mp_notification_weapon_reaper",
+                    "var_7c1ccfd6": "#hash_75d28fb319a7c1e8",
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "weaponschema": "#hash_7c0016c0e8f12a1d",
+                    "digitalblood": 1,
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "var_819846c7": 1,
+                    "fullname": "#hash_7b43a0c37a409a85",
+                    "var_6c0a990a": 2,
+                    "var_9e9caced": "scene_frontend_hub_t8_mp_reaper",
+                    "var_cff52e6": "#hash_7ec654d28300fddd",
+                    "mpdialog": "reaper",
+                    "var_900e3f74": "#hash_4929750024da07ee",
+                    "fullbodyexplosion": "#hash_fc247d893760e05",
+                    "var_7d89c31c": "#hash_3004e4cf18a63fd0",
+                    "var_4747b9c": "#hash_1f512796479b3a4c",
+                    "var_4c65efc8": "scene_frontend_t8_reaper_02"
+                }
+            }
+        },
+        {
+            "id": 15,
+            "enabled": false,
+            "name": "#hash_70fe115fad3f4fa",
+            "specialistEquipment": "#eq_frag_grenade",
+            "specialistWeapon": "#",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_slayer",
+                "displayName": "#hash_481f4d1215e979eb",
+                "description": "#hash_1c01013be2691f1b",
+                "sortOrder": 0,
+                "fields": {
+                    "var_af8f68ab": "#hash_51202badea0c3c13",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_294cd0d26f8bbf8f",
+                "displayName": "#hash_5c28d14331e12664",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "male",
+                "mpDialogBundle": "#zombie_male",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_male_team_5"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_male_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_male_team_2_stanton",
+                    "var_bb70c379": "scene_frontend_t8_male_customization",
+                    "fullname": "#hash_5c28d14331e12664",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "zombie_male",
+                    "var_5c403974": 14,
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_male",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter"
+                }
+            }
+        },
+        {
+            "id": 16,
+            "enabled": false,
+            "name": "#hash_3ca96ae1bd7d344f",
+            "specialistEquipment": "#eq_frag_grenade",
+            "specialistWeapon": "#",
+            "ultimateWeapon": "#",
+            "category": {
+                "name": "#prc_mp_slayer",
+                "displayName": "#hash_481f4d1215e979eb",
+                "description": "#hash_1c01013be2691f1b",
+                "sortOrder": 0,
+                "fields": {
+                    "var_af8f68ab": "#hash_51202badea0c3c13",
+                    "enabled": 1
+                }
+            },
+            "body": {
+                "name": "#hash_11c5be1c64297686",
+                "displayName": "#hash_4c51d87e5d42ea3d",
+                "description": "#",
+                "heroWeapon": "#",
+                "gender": "female",
+                "mpDialogBundle": "#zombie_female",
+                "fields": {
+                    "lobbyScenes": [
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_0"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_1"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_2"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_3"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_4"
+                        },
+                        {
+                            "scene": "scene_frontend_t8_wz_fem_team_5"
+                        }
+                    ],
+                    "var_be6ea125": "scene_frontend_t8_wz_fem_unlock",
+                    "var_e297151a": "scene_frontend_t8_zm_fem_team_0_scarlett",
+                    "var_bb70c379": "scene_frontend_t8_fem_customization",
+                    "fullname": "#hash_4c51d87e5d42ea3d",
+                    "var_6c0a990a": 2,
+                    "mpdialog": "zombie_female",
+                    "var_5c403974": 14,
+                    "fullbodyexplosion": "#hash_7e4a861318714ac9",
+                    "var_2081b2ed": "scene_frontend_inspection_fem",
+                    "var_4c65efc8": "scene_frontend_t8_helicopter_fem"
+                }
+            }
+        }
+    ]
+}
