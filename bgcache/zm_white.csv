@@ -451,7 +451,7 @@ model,p7_fxp_debris_rock_03,294cb6b3558
 model,hash_6060867d244e2797,294cba50518
 model,hash_608b92af2d13f57a,294cb8551e8
 model,hash_60ae3d7b7beb7102,294cb765d58
-model,hash_60b5da6f42487e7a,294cb7a0d08
+model,p8_zm_esc_chalk_buy_shotgun_pump,294cb7a0d08
 model,hash_60d9878aa51094cb,294cb9de0c8
 model,hash_60d9888aa510967e,294cb848e58
 model,hash_60d9898aa5109831,294cb886178
@@ -3493,8 +3493,8 @@ scriptbundle,activecamoinfo_t8_direct_action_kills_celestial,294cf29a408
 scriptbundle,hash_586280338ab7ad11,294cf2ac448
 scriptbundle,hash_5bd667f41c20c3dc,294cf2a95c8
 scriptbundle,activecamoinfo_t8_kill_counter_party_rock,294cf29a508
-scriptbundle,hash_5eaef6da3bb64b9a,294cf29fe08
-scriptbundle,hash_5ef128bba9ff58ca,294cf2a7888
+scriptbundle,zm_avogadro_settings,294cf29fe08
+scriptbundle,zm_mannequin_ally_settings,294cf2a7888
 scriptbundle,activecamoinfo_t8_direct_action_kills_fractalflames,294cf29a588
 scriptbundle,activecamoinfo_t8_showstopper_wz,294cf29a5c8
 scriptbundle,activecamoinfo_t8_showstopper_zm,294cf29a608
@@ -7592,7 +7592,7 @@ soundalias,hash_38e919c1c2160bc2,0
 soundalias,hash_391479360e00b7c3,0
 soundalias,hash_391a1d145e83a3f7,0
 soundalias,hash_391bd03c448038ef,0
-soundalias,hash_391fc5adebeebda5,0
+soundalias,amb_rattle_metal_deep,0
 soundalias,hash_39204e32adbe7694,0
 soundalias,hash_392734c93639bfd4,0
 soundalias,hash_392da4b02e7ec120,0

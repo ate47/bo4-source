@@ -1,4 +1,4 @@
-# Black ops 4 Source
+# Black Ops 4 Source
 
 Dump of some parts of BO4 using [Atian Call of Duty Tools](https://github.com/ate47/atian-cod-tools), please create an issue on the tools directory if you find a strange decompiled code.
 

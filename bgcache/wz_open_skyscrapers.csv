@@ -13,7 +13,7 @@ vehicle,veh_muscle_car_convertible_player_wz_red_pc,0
 vehicle,vehicle_t8_drone_recon_wz,0
 vehicle,vehicle_boct_mil_truck_cargo_wz_tan,0
 vehicle,vehicle_boct_mil_boat_tactical_raft_wz_blk_pc,0
-vehicle,hash_12d9972b4ec9db34,0
+vehicle,vehicle_t8_mil_helicopter_gunship_wz_infiltration,0
 vehicle,veh_motorcycle_sidecar_player_wz,0
 vehicle,vehicle_t8_drone_recon_wz_pc,0
 vehicle,veh_muscle_car_convertible_player_wz_org_pc,0
@@ -47,7 +47,7 @@ vehicle,veh_muscle_car_convertible_player_wz_blk,0
 vehicle,veh_muscle_car_convertible_player_wz_blu,0
 vehicle,vehicle_boct_mil_boat_pbr_wz_black_pc,0
 vehicle,veh_muscle_car_convertible_player_wz_blk_pc,0
-vehicle,hash_31493d17c21fcc1b,0
+vehicle,vehicle_t8_mil_helicopter_light_transport_wz_infil,0
 vehicle,veh_quad_player_wz_grn_pc,0
 vehicle,vehicle_t8_mil_tank_wz_tan,0
 vehicle,veh_fav_player_wz_blk,0
@@ -9071,7 +9071,7 @@ soundalias,hash_38b889c8a1bb9a17,0
 soundalias,hash_38b88ac8a1bb9bca,0
 soundalias,hash_38b88bc8a1bb9d7d,0
 soundalias,hash_390aa7d4252c46b5,0
-soundalias,hash_391fc5adebeebda5,0
+soundalias,amb_rattle_metal_deep,0
 soundalias,hash_3934c7359fb09b6a,0
 soundalias,hash_3986c505c98c47a6,0
 soundalias,hash_39c8dfc4efa25b26,0
@@ -9297,7 +9297,7 @@ soundalias,amb_target_twirl,0
 soundalias,evt_death_circle_strong,0
 soundalias,hash_602903024ed9216f,0
 soundalias,hash_603d8f73f6eca425,0
-soundalias,hash_605aae3dc63fd376,0
+soundalias,amb_rattle_metal,0
 soundalias,hash_60bf8913137206f7,0
 soundalias,hash_60c935d4c50a3d7d,0
 soundalias,hash_60e3fcbc58ccfbb1,0

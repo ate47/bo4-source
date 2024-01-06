@@ -98,8 +98,8 @@ function function_db4ccff2(attacker, victim, weapon, attackerweapon, meansofdeat
         return 0;
     }
     if (isdefined(attacker.playerrole) && isdefined(attacker.playerrole.ultimateweapon)) {
-        var_266391e6 = getweapon(attacker.playerrole.ultimateweapon);
-        if (attacker ability_util::function_43cda488() && weapon == var_266391e6) {
+        ultweapon = getweapon(attacker.playerrole.ultimateweapon);
+        if (attacker ability_util::function_43cda488() && weapon == ultweapon) {
             return 1;
         }
     }
