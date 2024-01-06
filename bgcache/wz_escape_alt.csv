@@ -298,7 +298,7 @@ model,attach_t8_optic_holo_world,2a886ae5978
 model,c_t8_zmb_mob_zombie_body2_g_lowclean,2a886f64e68
 model,hash_2577e93af00b6194,2a886ae62a8
 model,hash_2586ffb8aebeede4,2a886ae67e8
-model,hash_25afd8c1f55ba379,2a886c6eaf8
+model,p8_wz_armor_scrap,2a886c6eaf8
 model,hash_25e0cb8079fe55bb,2a886ae7118
 model,hash_25f66e2f304b26ff,2a886d2cff8
 model,c_t8_zmb_mob_zombie_head4_cage,2a886cf7448
@@ -632,7 +632,7 @@ model,hash_4e88553cee5de212,2a886bff888
 model,p8_fxanim_zm_esc_power_station_panel_03_mod,2a886d830c8
 model,hash_4e94896f5eb99080,2a886b61c98
 model,hash_4ec8837ddb1955a7,2a886f5e178
-model,hash_4ed969f6bbfe1745,2a886f05fd8
+model,p8_heist_duffel_bag_set_open,2a886f05fd8
 model,hash_4f1d95443a53a5ee,2a886b63438
 model,hash_4f57bff3d7989470,2a886c531f8
 model,hash_4f627ad430ea37a2,2a886c6bd08
@@ -7637,7 +7637,7 @@ soundalias,fly_pickup_armor_repair_plate,0
 soundalias,hash_3f50ce10b5ed7f8,0
 soundalias,hash_4092b1743752abd,0
 soundalias,hash_419e84642ebe554,0
-soundalias,hash_4b1e982689f19c9,0
+soundalias,pfx_t8_spark_med,0
 soundalias,hash_518393bfca618a3,0
 soundalias,hash_55243f2d36a2f20,0
 soundalias,hash_5870f3024077503,0
@@ -7811,7 +7811,7 @@ soundalias,hash_29f2a9f49833dfaf,0
 soundalias,hash_2a268e4e40ba6565,0
 soundalias,hash_2b751d50426093db,0
 soundalias,hash_2b9e3e8f3a11bcdb,0
-soundalias,hash_2bdcb267191e4860,0
+soundalias,pfx_spark_med_far,0
 soundalias,hash_2c1d193b7c25d6a2,0
 soundalias,hash_2ca6411fde5a8e5f,0
 soundalias,hash_2ca6571fde5ab3c1,0
@@ -8280,7 +8280,7 @@ client_fx,hash_1206d75150c2464e,2a88a4114f8
 client_fx,hash_12172517482ddd8b,2a88a406b98
 client_fx,hash_122f2f174842806a,2a88a406c38
 client_fx,impacts/fx8_bul_impact_metal_sm,2a88a3f9e98
-client_fx,hash_12ad8654acd39474,2a88a3f9f38
+client_fx,impacts/fx8_bul_impact_metal_lg,2a88a3f9f38
 client_fx,hash_12b26f3fa1018561,2a88a40abf8
 client_fx,hash_12b801a1dd9b7dc1,2a88a4229d8
 client_fx,hash_12b944b36953a819,2a88a4279d8

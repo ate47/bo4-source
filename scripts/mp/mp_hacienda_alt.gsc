@@ -242,7 +242,7 @@ function function_dd0b407b() {
         self moveto(self.v_close, 0.75);
         self waittill(#"movedone");
     }
-    self notify(#"hash_795deea49e0ec32a");
+    self notify(#"hidden_door_moved");
 }
 
 // Namespace mp_hacienda_alt/mp_hacienda_alt

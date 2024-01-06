@@ -69,7 +69,7 @@ function event_handler[level_init] main(eventstruct) {
     clientfield::register("world", "" + #"hash_29fea4571b8649a0", 1, 1, "int", &function_d8b90aba, 0, 0);
     clientfield::register("world", "" + #"hash_cd028842e18845e", 1, 1, "counter", &function_a104a4cb, 0, 0);
     clientfield::register("allplayers", "" + #"hash_500a87b29014ef02", 1, 1, "int", &function_5e901c8c, 0, 1);
-    clientfield::register("toplayer", "" + #"player_pbg_bank", 1, 1, "int", &function_b06125f0, 0, 1);
+    clientfield::register("toplayer", "" + #"player_pbg_bank", 1, 1, "int", &set_player_pbg_bank, 0, 1);
     clientfield::register("vehicle", "" + #"gondola_light", 1, 1, "int", &gondola_light, 0, 1);
     namespace_f2502da8::init_clientfields();
     namespace_9d58c1cd::init_clientfields();
@@ -262,7 +262,7 @@ LOC_00000100:
 // Params 7, eflags: 0x1 linked
 // Checksum 0x70df06ef, Offset: 0x1580
 // Size: 0x7c
-function function_b06125f0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function set_player_pbg_bank(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         setpbgactivebank(localclientnum, 4);
     } else {

@@ -524,7 +524,7 @@ model,hash_2569f1ece93c61c3,0
 model,hash_2577e93af00b6194,0
 model,hash_2586ffb8aebeede4,0
 model,p8_wz_fence_gate_wall_debris_tarp_left,0
-model,hash_25afd8c1f55ba379,0
+model,p8_wz_armor_scrap,0
 model,hash_25e0cb8079fe55bb,0
 model,hash_25ee9d2f43bb2ed9,0
 model,hash_25f66e2f304b26ff,0
@@ -1018,7 +1018,7 @@ model,hash_4e94896f5eb99080,0
 model,hash_4eb70fa4ab09a841,0
 model,hash_4ebda7a4a4530c88,0
 model,hash_4ec8837ddb1955a7,0
-model,hash_4ed969f6bbfe1745,0
+model,p8_heist_duffel_bag_set_open,0
 model,hash_4f1d95443a53a5ee,0
 model,p8_wz_road_sign_yield,0
 model,hash_4f2515d685f2eafc,0
@@ -2008,7 +2008,7 @@ rumble,sniper_fire,0
 rumble,hash_531d85881c0ee2ce,0
 rumble,grenade_rumble,0
 rumble,grenade_throw,0
-rumble,hash_5f4960d10f364d77,0
+rumble,artillery_rumble,0
 rumble,hash_60ba860667abd52f,0
 rumble,jet_rumble,0
 rumble,weapon_raise_quick,0
@@ -8775,7 +8775,7 @@ soundalias,hash_3ed40a388a9e748,0
 soundalias,hash_3f50ce10b5ed7f8,0
 soundalias,hash_4092b1743752abd,0
 soundalias,hash_419e84642ebe554,0
-soundalias,hash_4b1e982689f19c9,0
+soundalias,pfx_t8_spark_med,0
 soundalias,hash_55243f2d36a2f20,0
 soundalias,hash_55faa40126d5c75,0
 soundalias,hash_5870f3024077503,0
@@ -8811,7 +8811,7 @@ soundalias,hash_99c18e53a6a0993,0
 soundalias,hash_a30bb42e31d0282,0
 soundalias,hash_a701893a7d70ea0,0
 soundalias,hash_a703693a7d7419a,0
-soundalias,hash_aa97d1337005f53,0
+soundalias,amb_rattle_barrel,0
 soundalias,hash_aba5ed6b60d87b2,0
 soundalias,hash_accd04815649710,0
 soundalias,hash_b0382b7432f8232,0
@@ -9000,7 +9000,7 @@ soundalias,hash_29d9840f204d31f3,0
 soundalias,hash_2a1ab8d0c34b5f47,0
 soundalias,hash_2a2f1e178dce9dad,0
 soundalias,hash_2b751d50426093db,0
-soundalias,hash_2bdcb267191e4860,0
+soundalias,pfx_spark_med_far,0
 soundalias,hash_2c1d193b7c25d6a2,0
 soundalias,hash_2c89c069ef1d1c3c,0
 soundalias,hash_2ca6411fde5a8e5f,0
@@ -9597,7 +9597,7 @@ client_fx,hash_122f2f174842806a,0
 client_fx,hash_125bccbb53d9b70b,0
 client_fx,impacts/fx8_bul_impact_metal_sm,0
 client_fx,hash_1283a0452a31f379,0
-client_fx,hash_12ad8654acd39474,0
+client_fx,impacts/fx8_bul_impact_metal_lg,0
 client_fx,hash_12b26f3fa1018561,0
 client_fx,hash_12b801a1dd9b7dc1,0
 client_fx,hash_12b944b36953a819,0
@@ -9780,7 +9780,7 @@ client_fx,hash_2e1eeb3b57ed7872,0
 client_fx,hash_2e2fcc5de8ecd639,0
 client_fx,hash_2e3a479308a09bbe,0
 client_fx,hash_2e94c3f0bd739180,0
-client_fx,hash_2eedce7ff290ffe7,0
+client_fx,explosions/fx8_vexp_fav_buggy,0
 client_fx,hash_2f0d90d4922be0a2,0
 client_fx,hash_2f1eed53c7ce423c,0
 client_fx,hash_2f3556d1b2f280bf,0

@@ -5531,14 +5531,14 @@ gesture,hash_2facf060235b9ff8,294cd8ce318
 gesture,hash_2fd846116ecac791,294cd8e0fb8
 gesture,hash_30117d2fddc9f90b,294cd8e11c0
 gesture,hash_3084931092e10317,294cd8ce520
-gesture,hash_30ebbf27ac442ef2,294cd8e13c8
+gesture,boast_gone_fishing_fem,294cd8e13c8
 gesture,hash_30f430da95089a46,294cd8e15d0
 gesture,hash_3111b46d5819cdf4,294cd8ce728
 gesture,hash_32b1e17fac7797a8,294cd8ce930
 gesture,hash_32c00b9e72366fd0,294cd8e17d8
 gesture,hash_3351dc50eeff2e6b,294cd8ceb38
 gesture,hash_33972e18414aa961,294cd8f3028
-gesture,hash_3426c347193b7e49,294cd8e19e0
+gesture,boast_gone_fishing,294cd8e19e0
 gesture,hash_34772cc4659db49a,294cd8e1be8
 gesture,hash_348aafc5e9c82a4d,294cd8f3230
 gesture,hash_34b9f9b443697f19,294cd8e1df0
@@ -5896,7 +5896,7 @@ rumble,status_effect_dot,294cf2bb2b8
 rumble,hash_4406cc9db6615ba7,294cf2bb300
 rumble,hash_4ab32ec00af97d00,294cf2bb348
 rumble,infiltration_rumble,294cf2bb390
-rumble,hash_4df00cee8a59056f,294cf2bb3d8
+rumble,tank_rumble,294cf2bb3d8
 rumble,fallimpact_med,294cf2bb420
 rumble,sniper_fire,294cf2bb468
 rumble,key_press,294cf2bb4b0
@@ -5909,7 +5909,7 @@ rumble,grenade_rumble,294cf2bb660
 rumble,hash_59835272a4b714f8,294cf2bb6a8
 rumble,grenade_throw,294cf2bb6f0
 rumble,jump_rumble_start,294cf2bb738
-rumble,hash_5f4960d10f364d77,294cf2bb780
+rumble,artillery_rumble,294cf2bb780
 rumble,hash_5f4c8cad06be5f5d,294cf2bb7c8
 rumble,hash_5fbf7541f256f3dd,294cf2bb810
 rumble,hash_6016fa85d96c3e56,294cf2bb858
@@ -5987,7 +5987,7 @@ statuseffect,suppress,294cf34e430
 statuseffect,hash_3de6856e90c93c9d,294cf34f210
 statuseffect,hash_41ed8019748927e5,294cf34f460
 statuseffect,dot,294cf34f6b0
-statuseffect,hash_4d25a4e985df5d5b,294cf34daf0
+statuseffect,blind_swat_grenade,294cf34daf0
 statuseffect,hash_524f9d90d4175de8,294cf34f900
 statuseffect,pulse,294cf34c3d0
 statuseffect,shock_seeker_secondary,294cf34e680
@@ -20802,7 +20802,7 @@ client_fx,hash_3df9418864f08e6,294cef18ef8
 client_fx,hash_4100e196c4075bc,294cef2a978
 client_fx,hash_4b78f913268b146,294cef264b8
 client_fx,hash_4f19591329a33bf,294cef19038
-client_fx,hash_500e41a4f3408e9,294cef07478
+client_fx,player/fx_plyr_swim_bubbles_body,294cef07478
 client_fx,hash_5d9986a93fe4b4b,294cef19218
 client_fx,hash_62f074d527f46c0,294cef07658
 client_fx,hash_68eb678b2954c36,294cef076f8
@@ -20851,7 +20851,7 @@ client_fx,hash_12172517482ddd8b,294cef26b98
 client_fx,hash_122f2f174842806a,294cef26c38
 client_fx,hash_123c2521c68b2167,294cef091d8
 client_fx,impacts/fx8_bul_impact_metal_sm,294cef19e98
-client_fx,hash_12ad8654acd39474,294cef19f38
+client_fx,impacts/fx8_bul_impact_metal_lg,294cef19f38
 client_fx,hash_12b26f3fa1018561,294cef2abf8
 client_fx,hash_13526674411d3b0d,294cef2cc78
 client_fx,weapon/fx_prox_grenade_scan_orng,294cef5a498

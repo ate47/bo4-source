@@ -78,7 +78,7 @@ function function_c3c859e1() {
         exploder::kill_exploder("fxexp_teleport_start");
         if (getdvarint(#"hash_2dc42400fe4ca7ed", 0)) {
             var_cc166ca7 = getent("zombies_eating_to_ai_vignette_trig", "targetname");
-            var_cc166ca7 callback::on_trigger(&function_85dcf2d0);
+            var_cc166ca7 callback::on_trigger(&zombies_eating_to_ai_vignette_trig);
             scene::add_scene_func(#"hash_7bdba6315b440b7c", &function_bf7a2005, "loop");
             level thread scene::play(#"hash_7bdba6315b440b7c", "loop");
         }
@@ -115,7 +115,7 @@ function function_bf7a2005(a_ents) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xfa9fb4fe, Offset: 0xc18
 // Size: 0x34
-function function_85dcf2d0(info) {
+function zombies_eating_to_ai_vignette_trig(info) {
     level thread scene::play(#"hash_7bdba6315b440b7c", "Shot 1");
 }
 
@@ -414,7 +414,7 @@ function function_77156d1e() {
                     return;
                 }
                 speaker playsoundwithnotify(line, "skit_done");
-                speaker waittill(#"hash_5f452378614f2e17", #"death");
+                speaker waittill(#"skit_done", #"death");
                 wait(0.2);
             }
             wait(randomfloatrange(15, 45));

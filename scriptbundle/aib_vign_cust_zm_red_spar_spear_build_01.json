@@ -25,7 +25,7 @@
                     "name": "rebuild"
                 }
             ],
-            "model": "#hash_9998bbacdfd161f",
+            "model": "#spawner_zm_skeleton_spear",
             "type": "actor",
             "var_d318cc2c": 1,
             "name": "actor 1",

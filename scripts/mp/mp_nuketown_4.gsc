@@ -255,15 +255,15 @@ function function_5089875d() {
 // Checksum 0x9d8eeaee, Offset: 0x1888
 // Size: 0x1d0
 function function_25cf04b2(a_ents) {
-    var_fb499420 = getent("blue_train", "targetname");
-    var_897612fd = getent("orange_train", "targetname");
-    if (isdefined(a_ents[#"prop 1"]) && isdefined(var_fb499420)) {
+    blue_train = getent("blue_train", "targetname");
+    orange_train = getent("orange_train", "targetname");
+    if (isdefined(a_ents[#"prop 1"]) && isdefined(blue_train)) {
         var_fc46b964 = a_ents[#"prop 1"];
-        var_fb499420 linkto(var_fc46b964, "tag_link_train_engine", (0, 0, 0));
+        blue_train linkto(var_fc46b964, "tag_link_train_engine", (0, 0, 0));
     }
-    if (isdefined(a_ents[#"prop 2"]) && isdefined(var_897612fd)) {
+    if (isdefined(a_ents[#"prop 2"]) && isdefined(orange_train)) {
         var_9a689c98 = a_ents[#"prop 2"];
-        var_897612fd linkto(var_9a689c98, "tag_link_train_carriage", (0, 0, 0));
+        orange_train linkto(var_9a689c98, "tag_link_train_carriage", (0, 0, 0));
     }
     var_e837992 = getentarray("ee_hide", "targetname");
     if (isdefined(var_e837992)) {

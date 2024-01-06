@@ -30,7 +30,7 @@ function __init__() {
 // Checksum 0xdd1a2186, Offset: 0x110
 // Size: 0x3a
 function createcommanderplanner(team) {
-    planner = plannerutility::createplannerfromasset(#"hash_6337694555b945ea");
+    planner = plannerutility::createplannerfromasset(#"zm_commander.ai_htn");
     return planner;
 }
 

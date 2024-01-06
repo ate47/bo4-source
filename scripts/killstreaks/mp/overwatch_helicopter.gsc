@@ -674,7 +674,7 @@ function function_b8047055(swat_gunner, helicopter) {
         self.script_owner globallogic_audio::flush_leader_dialog_key_on_player("secondaryTargetAquired");
         self.script_owner globallogic_audio::flush_leader_dialog_key_on_player("secondaryTargetLost");
         switch (event) {
-        case #"hash_6a8ebbdc35e20199":
+        case #"found_new_enemy":
             if (self.voxid == 0) {
                 self.script_owner globallogic_audio::play_taacom_dialog("targetAquired", "overwatch_helicopter_snipers");
             } else {

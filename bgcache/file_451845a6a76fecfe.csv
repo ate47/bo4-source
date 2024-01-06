@@ -272,7 +272,7 @@ fx,weapon/fx_muz_md_rifle_3p,294cef6ff78
 fx,_t6/bio/player/fx_footstep_dust,294cef09f98
 fx,killstreaks/fx_sc_lights_red,294cef7d5d8
 fx,killstreaks/fx_heli_exp_md,294cef3e3d8
-fx,hash_294fd6c13d7e0d44,294cef39d38
+fx,killstreaks/fx_heli_exp_lg,294cef39d38
 fx,killstreaks/fx_heli_exp_sm,294cef41358
 fx,hash_2cf01c21155d889a,294cef75f18
 fx,killstreaks/fx_vtol_exp,294cef4c9d8

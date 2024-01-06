@@ -62,7 +62,7 @@
 #ouranos,#hash_6a616bcdd1a33c0,#vox_ouranos_hand_kill_first,0,0,false,false,false,false
 #ouranos,#rune_circle,#hash_3393f5b9c2830aa0,0,0,false,false,false,false
 #cliff,#eagle_free,#hash_172d8c7cc7123557,0,0,false,false,false,false
-#cliff,#forge_enter,#hash_747a012709b478de,0,0,false,false,false,false
+#cliff,#forge_enter,#vox_cliff_forge_enter,0,0,false,false,false,false
 #oracle,#hash_7fc312fb8141032c,#hash_1cf28dc8ff858000,0,0,false,false,false,false
 #plateau,#jump,#hash_67dcc7771bb2d280,0,0,false,false,false,false
 #plateau,#loss_react,#hash_67e6464e20e49efb,0,0,false,false,false,false

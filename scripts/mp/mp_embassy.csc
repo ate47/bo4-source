@@ -11,7 +11,7 @@
 // Checksum 0x71d20d8d, Offset: 0x110
 // Size: 0x1bc
 function event_handler[level_init] main(eventstruct) {
-    clientfield::register("scriptmover", "spawn_flavor_apc_explosion", 1, 1, "counter", &function_b3242503, 0, 0);
+    clientfield::register("scriptmover", "spawn_flavor_apc_explosion", 1, 1, "counter", &spawn_flavor_apc_explosion, 0, 0);
     setsaveddvar(#"enable_global_wind", 1);
     setsaveddvar(#"wind_global_vector", "88 0 0");
     setsaveddvar(#"wind_global_low_altitude", 0);
@@ -48,7 +48,7 @@ function on_gameplay_started(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x6e83c51e, Offset: 0x348
 // Size: 0x104
-function function_b3242503(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function spawn_flavor_apc_explosion(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     model = self.model;
     forcestreamxmodel(model);
     playfx(localclientnum, "explosions/fx8_vexp_fav_buggy", self gettagorigin("tag_body_d0"), anglestoforward(self gettagangles("tag_body_d0")));

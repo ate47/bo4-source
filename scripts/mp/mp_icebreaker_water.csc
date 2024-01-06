@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 // Checksum 0x96523a35, Offset: 0x130
 // Size: 0x6c
 function __init__() {
-    clientfield::register("toplayer", "toggle_player_freezing_water", 1, 1, "counter", &function_aae41838, 0, 0);
+    clientfield::register("toplayer", "toggle_player_freezing_water", 1, 1, "counter", &toggle_player_freezing_water, 0, 0);
     callback::on_spawned(&on_player_spawned);
 }
 
@@ -42,7 +42,7 @@ function on_player_spawned(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x8da5f46f, Offset: 0x230
 // Size: 0x2c6
-function function_aae41838(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function toggle_player_freezing_water(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!isalive(self) || self !== function_5c10bd79(localclientnum)) {
         return;
     }

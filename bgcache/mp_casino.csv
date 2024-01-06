@@ -492,7 +492,7 @@ scriptbundle,sb_mp_endgame_player_04,273bdb73848
 scriptbundle,hash_edf8c4978f32434,273bdb72808
 scriptbundle,sb_mp_endgame_player_02,273bdb73608
 scriptbundle,hash_11305f02f2496341,273bdb6f988
-scriptbundle,hash_11459dc6def1b008,273bdb70b08
+scriptbundle,p8_fxanim_mp_cas_swat_driveup_bundle,273bdb70b08
 scriptbundle,hash_1202c3162d06ee1f,273bdb70f08
 scriptbundle,p8_fxanim_gp_wire_sparking_xsml_bundle,273bdb6f9c8
 scriptbundle,hash_14d546375b6cf597,273bdb6ee48
@@ -507,7 +507,7 @@ scriptbundle,hash_3b355d9dda7087a4,273bdb70408
 scriptbundle,hash_3dd75955af7ee6f3,273bdb72288
 scriptbundle,hash_3ea3f06d5e3e38fc,273bdb72208
 scriptbundle,hash_448060990234a02e,273bdb72fc8
-scriptbundle,hash_5781885e121dced0,273bdb71d48
+scriptbundle,p8_fxanim_mp_cas_helicopter_flyover_bundle,273bdb71d48
 scriptbundle,hash_582d6facc69f5d7d,273bdb72088
 scriptbundle,hash_5e298babaecc104c,273bdb6edc8
 scriptbundle,hash_5e8eb2b4df00a85a,273bdb6f048
@@ -544,7 +544,7 @@ soundalias,hash_3ed40a388a9e748,0
 soundalias,hash_4049cea29ca612c,0
 soundalias,hash_419e84642ebe554,0
 soundalias,hash_4638d1437766933,0
-soundalias,hash_4b1e982689f19c9,0
+soundalias,pfx_t8_spark_med,0
 soundalias,hash_4cb8367901ce1cc,0
 soundalias,hash_4f12c14c8757b7a,0
 soundalias,hash_55faa40126d5c75,0
@@ -937,11 +937,11 @@ client_fx,hash_37470d92bc66b93a,273bd80bd18
 client_fx,hash_37b3045dab74db81,273bd7edbd8
 client_fx,hash_39acb811aabc7232,273bd808258
 client_fx,hash_3c2d31e47159de2f,273bd7fb698
-client_fx,hash_3d83798676a353af,273bd84a6f8
+client_fx,ui/fx_dom_cap_indicator_neutral_r220,273bd84a6f8
 client_fx,hash_3f6d16304267fea8,273bd8142d8
 client_fx,hash_3f9e861a8394a8a3,273bd8147d8
 client_fx,hash_40f4c2f5a7d7e23a,273bd822018
-client_fx,hash_4105fb1c31438193,273bd84aa18
+client_fx,ui/fx_dom_marker_neutral_r220,273bd84aa18
 client_fx,hash_412865923c8a9321,273bd80f4b8
 client_fx,hash_413d5db8780e03d8,273bd80d898
 client_fx,hash_42f307b1c7e0ef54,273bd7fe938
@@ -962,7 +962,7 @@ client_fx,hash_54a4fdc179823939,273bd7fbc38
 client_fx,hash_551605801a32aad2,273bd7fbcd8
 client_fx,hash_57759c5fdd88c512,273bd7f1878
 client_fx,hash_5821ea4cefbbfac9,273bd80da78
-client_fx,hash_5eebe8c19872ffb3,273bd84e398
+client_fx,ui/fx_dom_cap_indicator_team_r220,273bd84e398
 client_fx,ui/fx_dom_marker_team_r120,273bd84e938
 client_fx,hash_63ea55c11dafa45e,273bd7fc318
 client_fx,hash_67a4679378e51bf7,273bd80b458
@@ -980,5 +980,5 @@ client_fx,hash_77a3ef479ceb7b5c,273bd822fb8
 client_fx,hash_77a8c32592d4dc2f,273bd805418
 client_fx,hash_7a2b64f7a1e28505,273bd8118f8
 client_fx,hash_7b2e4176bb94d5e8,273bd805378
-client_fx,hash_7b63806059f03bbf,273bd851db8
+client_fx,ui/fx_dom_marker_team_r220,273bd851db8
 client_fx,hash_7f1ad908789e51bf,273bd7f5b58

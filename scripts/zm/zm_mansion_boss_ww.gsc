@@ -304,7 +304,7 @@ function function_5c5680f5(var_5ea5c94d) {
 // Size: 0x34
 function function_9eb08be3(var_5ea5c94d, ended_early) {
     if (!var_5ea5c94d) {
-        function_7a35edd2(1);
+        boss_outro(1);
     }
 }
 
@@ -326,7 +326,7 @@ function function_df7c8713(var_5ea5c94d) {
 // Size: 0x34
 function function_1e450b1a(var_5ea5c94d, ended_early) {
     if (!var_5ea5c94d) {
-        function_7a35edd2(2);
+        boss_outro(2);
     }
 }
 
@@ -351,7 +351,7 @@ function function_43f5567a(var_5ea5c94d, ended_early) {
     music::setmusicstate("none");
     level.musicsystemoverride = 0;
     if (!var_5ea5c94d) {
-        function_7a35edd2(3);
+        boss_outro(3);
     }
     callback::remove_on_spawned(&function_92a12286);
     level function_50aa79cf();
@@ -430,7 +430,7 @@ function boss_intro(n_stage) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x71b848aa, Offset: 0x23d0
 // Size: 0x224
-function function_7a35edd2(n_stage) {
+function boss_outro(n_stage) {
     /#
         iprintlnbold("pounce" + n_stage + "<unknown string>");
     #/

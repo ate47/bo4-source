@@ -331,7 +331,7 @@ model,hash_4a86a22fb0acec9d,294cb8f1788
 model,hash_4ab9dd7d73f7307e,294cb79e848
 model,hash_4ae0506003817df4,294cba4a008
 model,hash_4ae5ce4e8813c6f2,294cb9a1c18
-model,hash_4b3e0bd11cb399ef,294cb86b448
+model,p8_wz_snowball_pile,294cb86b448
 model,hash_4b43a6a2287aff29,294cb8cc8e8
 model,hash_4ba5e2b676bf7a61,294cb9e62b8
 model,hash_4bb8cdc6e1e9ce87,294cb761e58
@@ -8745,7 +8745,7 @@ client_fx,hash_12172517482ddd8b,294cef26b98
 client_fx,hash_122f2f174842806a,294cef26c38
 client_fx,impacts/fx8_bul_impact_metal_sm,294cef19e98
 client_fx,hash_12a82669af8f6be0,294cef6dbd8
-client_fx,hash_12ad8654acd39474,294cef19f38
+client_fx,impacts/fx8_bul_impact_metal_lg,294cef19f38
 client_fx,hash_12b26f3fa1018561,294cef2abf8
 client_fx,zm_ai/fx8_cata_cor_aura_locked,294cef2d038
 client_fx,hash_13de596da2f1bfe9,294cef47a78

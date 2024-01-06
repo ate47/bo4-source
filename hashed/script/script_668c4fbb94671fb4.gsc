@@ -100,9 +100,9 @@ function private function_b247e756() {
 function function_307fdd13(var_a276c861) {
     if (var_a276c861) {
         var_328baab5 = struct::get_array("pa_po_pos", "targetname");
-        foreach (var_1f5391d1 in var_328baab5) {
-            var_aa11c23c = util::spawn_model("tag_origin", var_1f5391d1.origin, var_1f5391d1.angles);
-            var_aa11c23c.script_string = var_1f5391d1.script_string;
+        foreach (s_portal_pos in var_328baab5) {
+            var_aa11c23c = util::spawn_model("tag_origin", s_portal_pos.origin, s_portal_pos.angles);
+            var_aa11c23c.script_string = s_portal_pos.script_string;
             level thread paschal::function_e998f810("tag_socket_a");
             level thread paschal::function_e998f810("tag_socket_c");
             level thread paschal::function_e998f810("tag_socket_d");
@@ -275,10 +275,10 @@ function private function_9f38c4a2() {
         var_ce57a284 = array::random(level.var_85cc9fcc);
     }
     var_328baab5 = struct::get_array("pa_po_pos", "targetname");
-    foreach (var_1f5391d1 in var_328baab5) {
-        if (var_1f5391d1.script_string === var_ce57a284) {
-            var_aa11c23c = util::spawn_model("tag_origin", var_1f5391d1.origin, var_1f5391d1.angles);
-            var_aa11c23c.script_string = var_1f5391d1.script_string;
+    foreach (s_portal_pos in var_328baab5) {
+        if (s_portal_pos.script_string === var_ce57a284) {
+            var_aa11c23c = util::spawn_model("tag_origin", s_portal_pos.origin, s_portal_pos.angles);
+            var_aa11c23c.script_string = s_portal_pos.script_string;
             var_aa11c23c.script_noteworthy = "blast_attack_interactables";
             break;
         }

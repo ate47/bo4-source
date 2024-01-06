@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 // Checksum 0xda2f6dc4, Offset: 0x208
 // Size: 0x12c
 function __init__() {
-    var_a8b89e21 = getweapon(#"hash_6e88c5328af19dc4");
+    var_a8b89e21 = getweapon(#"zitem_rocketshield_part_3");
     a_items = getitemarray();
     foreach (item in a_items) {
         w_item = item.item;

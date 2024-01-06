@@ -18,14 +18,14 @@ function autoexec __init__system__() {
 // Checksum 0xb961a2a4, Offset: 0x118
 // Size: 0x4c
 function __init__() {
-    clientfield::register("toplayer", "toggle_player_rain", 1, 1, "counter", &function_20300515, 0, 0);
+    clientfield::register("toplayer", "toggle_player_rain", 1, 1, "counter", &toggle_player_rain, 0, 0);
 }
 
 // Namespace mp_offshore_alt_player_rain/mp_offshore_alt_player_rain
 // Params 7, eflags: 0x1 linked
 // Checksum 0x40d4d99f, Offset: 0x170
 // Size: 0xe4
-function function_20300515(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function toggle_player_rain(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self !== function_5c10bd79(localclientnum)) {
         return;
     }

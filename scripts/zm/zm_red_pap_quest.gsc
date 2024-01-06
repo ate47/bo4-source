@@ -1430,7 +1430,7 @@ function function_5a4d8124(var_5ea5c94d) {
     level flag::wait_till(#"hash_1b6616e730b1235b");
     level thread function_41d05cb0();
     level thread function_d1f0f2db();
-    level thread function_2f0f6f0();
+    level thread rock_fall();
     level thread function_d8db57f6();
     level.var_8aa0830e = 1;
     var_af2013df = array(#"hash_67695ee69c57c0b2", #"hash_61de3b8fe6f6a35");
@@ -1776,7 +1776,7 @@ function function_f95a14a0() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xa9e84a79, Offset: 0x7ce0
 // Size: 0x2ca
-function function_2f0f6f0() {
+function rock_fall() {
     level endon(#"hash_4d110cc2383265e3");
     level flag::wait_till(#"hash_7943879f3be8ccc6");
     var_228cf3d = array("p8_col_rock_large_04", "p8_zm_red_dks_rock_shale_boulder_lrg_01", "p8_zm_red_dks_rock_shale_boulder_med_01");

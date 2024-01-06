@@ -57,7 +57,7 @@ class cct_shared_button_prompt : cluielem {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 12);
         } else if (#"square_button" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 13);
-        } else if (#"hash_72d4665454938ae" == state_name) {
+        } else if (#"square_button_paused" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 14);
         } else if (#"hash_1e3e2411c866b2a0" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 15);

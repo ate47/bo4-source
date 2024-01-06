@@ -295,15 +295,15 @@ function function_9b9525e9() {
 function function_6cfeee53() {
     level endon(#"combattraining_logic_finished");
     ct_utils::function_e9ab1003(undefined);
-    level notify(#"hash_4b7891abdab16c0e");
-    level notify(#"hash_5475dd4fcced9346");
-    level notify(#"hash_6c81f3027bf240e1");
+    level notify(#"start_begin_collision");
+    level notify(#"start_begin_side_collision");
+    level notify(#"start_event1_enter_collision");
     level thread ct_vo::function_14b08e49(array(#"hash_5895739505ac5bb0"), "stop_nag");
     ct_utils::function_e0d36a2c(undefined, "s_teach_annihilator_goto_obj", array(#"hero_annihilator", #"gadget_spawnbeacon"), 0, undefined, 30);
     level notify(#"stop_nag");
     ct_utils::function_e9ab1003("s_teach_annihilator_goto_obj");
-    level notify(#"hash_216deca950485b7c");
-    level notify(#"hash_1823f1a8c0c47964");
+    level notify(#"stop_begin_collision");
+    level notify(#"start_event1_collision");
     ct_vo::function_831e0584(array(#"hash_5aafec95295f15a1", #"hash_5aafea95295f123b"), 1);
     level.var_e72728b8 = array(#"gadget_spawnbeacon");
     e_player = ct_utils::get_player();
@@ -558,10 +558,10 @@ function function_f6df6250() {
 function function_f36aa3f0() {
     level endon(#"combattraining_logic_finished");
     ct_utils::function_e9ab1003("s_5_enemies_respawn_loc");
-    level notify(#"hash_459ef1ffa060da5a");
-    level notify(#"hash_6a8a869a5b303f63");
-    level notify(#"hash_7dfa5558c2aa4c75");
-    level notify(#"hash_3a4b5052dc6efe6c");
+    level notify(#"stop_event1_collision");
+    level notify(#"stop_event1_enter_collision");
+    level notify(#"start_5_targets_collision");
+    level notify(#"start_5_targets_exit_collision");
     var_3608d414 = array(#"hash_5b98ba49240b816d");
     e_player = ct_utils::get_player();
     e_player thread ct_utils::function_61c3d59c(#"hash_7ae3c7f801226d64", var_3608d414);
@@ -622,7 +622,7 @@ function function_f36aa3f0() {
     }
     ct_utils::function_c2a10fc();
     ct_vo::function_831e0584(array(#"hash_68cad384570d8bd8"), 1);
-    level notify(#"hash_be6ef9577c5d84e");
+    level notify(#"stop_5_targets_exit_collision");
     wait(0.1);
 }
 
@@ -635,14 +635,14 @@ function function_977b4171() {
     function_2232d333(1);
     level.var_e72728b8 = array(#"gadget_spawnbeacon", #"hero_annihilator");
     level thread ct_vo::function_831e0584(array(#"hash_68cad484570d8d8b"), 1);
-    level notify(#"hash_14ae1201d2643893");
-    level notify(#"hash_3248e8545dd5f652");
+    level notify(#"start_spawn_beacon_collision");
+    level notify(#"start_spawn_beacon_exit_collision");
     level thread ct_vo::function_14b08e49(array(#"hash_5895739505ac5bb0"), "stop_nag");
     ct_utils::function_e0d36a2c(undefined, "s_tac_deploy_obj", array(#"hero_annihilator", #"gadget_spawnbeacon"), 0, undefined, 35);
     level notify(#"stop_nag");
     ct_utils::function_e9ab1003("s_tac_deploy_obj");
-    level notify(#"hash_5b509ea15d23152");
-    level notify(#"hash_30977f44d1b348c8");
+    level notify(#"start_spawn_beacon_enter_collision");
+    level notify(#"stop_begin_side_collision");
     e_player = ct_utils::get_player();
     e_player thread ct_utils::function_61c3d59c(#"hash_2a2e135eb8b81ce7", undefined);
     ct_vo::function_41e59aeb(array(#"hash_68cad584570d8f3e"), 1);
@@ -657,7 +657,7 @@ function function_977b4171() {
         e_player = ct_utils::get_player();
         e_player thread ct_utils::function_61c3d59c(#"hash_446da0659a9ea1e9", undefined);
         level.var_e72728b8 = array(#"hero_annihilator");
-        level waittill(#"hash_62df015214d5438f");
+        level waittill(#"friendly_spawn_beacon");
         n_dist = distance(level.var_2b87f134.origin, s_loc.origin);
         if (n_dist < 40) {
             break;
@@ -695,8 +695,8 @@ function function_977b4171() {
 function function_95e6fae3() {
     level endon(#"combattraining_logic_finished");
     ct_utils::function_e9ab1003(undefined);
-    level notify(#"hash_50f9c973038c99f0");
-    level notify(#"hash_7bac9b4a103ffb7");
+    level notify(#"stop_spawn_beacon_exit_collision");
+    level notify(#"start_courtyard_circle_collision");
     a_s_locs = struct::get_array("s_chopper_attack_soldier_loc", "targetname");
     a_bots = ct_bots::function_fbe3dcbb();
     for (i = 0; i < a_bots.size; i++) {
@@ -713,7 +713,7 @@ function function_95e6fae3() {
     ct_utils::function_e0d36a2c(undefined, "s_chopper_attack_loc", array(#"hero_annihilator", #"gadget_spawnbeacon"), 1, undefined, 50);
     level notify(#"stop_nag");
     ct_utils::function_e9ab1003(undefined);
-    level notify(#"hash_31f5315cbdb00535");
+    level notify(#"stop_courtyard_circle_collision");
     level thread ct_vo::function_831e0584(array(#"hash_25909e8e5ca28609"));
     e_player = ct_utils::get_player();
     e_player thread ct_utils::function_61c3d59c(#"hash_276c71244969e7f5", undefined);
@@ -857,7 +857,7 @@ function function_c8e681c8() {
     level thread ct_vo::function_14b08e49(array(#"hash_612ae33753ce1a52"), "stop_nag");
     level waittill(#"hash_48b4c5f856407d62");
     level notify(#"stop_nag");
-    level notify(#"hash_3248e8545dd5f652");
+    level notify(#"start_spawn_beacon_exit_collision");
     level.var_4a4cff9b = undefined;
     ct_utils::function_c2a10fc();
     ct_vo::function_3ca1b77d();
@@ -1011,7 +1011,7 @@ function function_f036b362() {
     wait(0.1);
     e_player = ct_utils::get_player();
     e_player thread ct_utils::function_61c3d59c(#"hash_5f8076551c7e0e73", undefined);
-    level notify(#"hash_50f9c973038c99f0");
+    level notify(#"stop_spawn_beacon_exit_collision");
     level thread function_3ea10d34(2, "courtyard_battle_complete");
     ct_utils::function_9aca2fa0("ct_action2");
     level.var_72c3ea74 = struct::get_array("s_seraph_soldiers_courtyard", "targetname");
@@ -1039,8 +1039,8 @@ function function_f036b362() {
     }
     level thread ct_vo::function_831e0584(array(#"hash_1641a812cb185b3e", #"hash_1641a912cb185cf1"));
     level notify(#"stop_courtyard_collision_door");
-    level notify(#"hash_53117299483d7f0d");
-    level notify(#"hash_5cebb9a7c9a0c33");
+    level notify(#"start_courtyard_collision_beacon");
+    level notify(#"start_courtyard_collision_beacon_exit_door");
     level.var_b4bf4d49 = [];
     level.var_b4bf4d49[level.var_b4bf4d49.size] = struct::get("s_courtyard_left", "targetname");
     level.var_b4bf4d49[level.var_b4bf4d49.size] = struct::get("s_courtyard_right", "targetname");
@@ -1050,7 +1050,7 @@ function function_f036b362() {
     level.var_9f86a24 = 0;
     function_d4bbc142();
     level.var_b4bf4d49 = undefined;
-    level notify(#"hash_76dba9a9f79dc94f");
+    level notify(#"courtyard_battle_complete");
     wait(0.1);
     ct_utils::function_c561377e();
     ct_utils::function_9aca2fa0("ct_action");
@@ -1228,14 +1228,14 @@ function function_ffdd31e0() {
 function function_4bb467a() {
     level endon(#"combattraining_logic_finished");
     function_2232d333(0);
-    level notify(#"hash_6916f6eb392a7c7b");
+    level notify(#"kill_friendly_spawn_beacons");
     level.var_e72728b8 = array(#"gadget_spawnbeacon");
     level.var_2b87f134 = undefined;
     ct_utils::function_e9ab1003(undefined);
-    level notify(#"hash_45b7fc2ecc66b68c");
-    level notify(#"hash_4371c8d7a674f100");
-    level notify(#"hash_49cee081e97c370d");
-    level notify(#"hash_425b7616380f9291");
+    level notify(#"stop_spawn_beacon_enter_collision");
+    level notify(#"start_defend_hp_collision_exit_door");
+    level notify(#"start_defend_hardpoint_collision");
+    level notify(#"stop_courtyard_collision_beacon_exit_door");
     s_loc = struct::get("s_player_heads_to_hardpoint", "targetname");
     level thread ct_utils::function_9a4e412e(s_loc, "start_courtyard_collision_door");
     var_ec804dad = s_loc;
@@ -1280,8 +1280,8 @@ function function_4bb467a() {
     }
     level.var_e21c8bfa = undefined;
     level.var_7ecb2c8e = undefined;
-    level notify(#"hash_6916f6eb392a7c7b");
-    level notify(#"hash_62df015214d5438f");
+    level notify(#"kill_friendly_spawn_beacons");
+    level notify(#"friendly_spawn_beacon");
     wait(0.1);
     ct_utils::function_c561377e(undefined, 0);
     ct_utils::function_9aca2fa0("ct_action");
@@ -1296,7 +1296,7 @@ function function_4bb467a() {
 // Checksum 0xd8b0d3ab, Offset: 0x7088
 // Size: 0x2c6
 function function_1561b83f(var_e3a95ba5) {
-    level endon(#"combattraining_logic_finished", #"hash_6916f6eb392a7c7b");
+    level endon(#"combattraining_logic_finished", #"kill_friendly_spawn_beacons");
     wait(var_e3a95ba5);
     var_1e0ef434 = struct::get_array("s_hardpoint_attacker", "targetname");
     var_5840cb3f = 0;
@@ -1373,8 +1373,8 @@ function spawn_robot(var_8b84b3ce, var_ce2b0d5) {
 // Size: 0xb04
 function function_c43189cd() {
     level endon(#"combattraining_logic_finished");
-    level notify(#"hash_6a1cbdf89bb6ca72");
-    level notify(#"hash_5c3e868dfdf471e4");
+    level notify(#"stop_defend_hp_collision_exit_door");
+    level notify(#"start_approach_killstreak_collision");
     function_2232d333(1);
     level.var_357913db = getentarray("vol_bad_beacon_killstreak_loc", "targetname");
     e_player = ct_utils::get_player();
@@ -1382,14 +1382,14 @@ function function_c43189cd() {
     level thread ct_vo::function_14b08e49(array(#"hash_5895739505ac5bb0"), "stop_nag");
     ct_utils::function_e0d36a2c(undefined, "s_earn_killstreak_obj", array(#"gadget_spawnbeacon"), 0, undefined, 35);
     level notify(#"stop_nag");
-    level notify(#"hash_28a64a39d55579d3");
-    level notify(#"hash_7baaf9245cd3f842");
+    level notify(#"stop_defend_hardpoint_collision");
+    level notify(#"start_active_killstreak_collision");
     function_2232d333(1);
     level.var_e72728b8 = undefined;
     ct_utils::function_e9ab1003(undefined);
     ct_vo::function_831e0584(array(#"hash_3d12740aae5bc7b1", #"hash_3d12710aae5bc298"), 1);
     level notify(#"start_killstreak_collision");
-    level notify(#"hash_4370f0e8e5af5010");
+    level notify(#"stop_active_killstreak_collision");
     callback::on_player_killed_with_params(&ct_utils::function_944e4110);
     level.var_28cfc859 = 150;
     ct_utils::function_9aca2fa0("ct_action2");
@@ -1636,7 +1636,7 @@ function gunship_event() {
     e_player show();
     ac130::function_8721028e(level.ac130.owner, 1);
     level.var_e190d640 = 0;
-    level notify(#"hash_43ae02acbacfd732");
+    level notify(#"stop_flood_spawners");
     ct_utils::function_9aca2fa0("ct_endgame");
     waitframe(1);
     ct_utils::function_c561377e();
@@ -1660,17 +1660,17 @@ function function_e47d773c() {
     level thread ct_vo::function_5df1a850(level.ac130, array(#"hash_30bea962898791f8"));
     level thread function_b8fea992("s_chopper_enemy_wave1", randomfloatrange(0.7, 1.7), "stop_flood_spawners");
     wait(15);
-    level notify(#"hash_43ae02acbacfd732");
+    level notify(#"stop_flood_spawners");
     waitframe(1);
     level thread ct_vo::function_5df1a850(level.ac130, array(#"hash_30beac6289879711"));
     level thread function_b8fea992("s_chopper_garden_wave2", randomfloatrange(0.7, 1.7), "stop_flood_spawners");
     wait(15);
-    level notify(#"hash_43ae02acbacfd732");
+    level notify(#"stop_flood_spawners");
     waitframe(1);
     level thread ct_vo::function_5df1a850(level.ac130, array(#"hash_30bea962898791f8"));
     level thread function_b8fea992("s_chopper_courtyard_wave3", randomfloatrange(0.7, 1.7), "stop_flood_spawners");
     wait(15);
-    level notify(#"hash_43ae02acbacfd732");
+    level notify(#"stop_flood_spawners");
 }
 
 // Namespace namespace_56b8c026/namespace_56b8c026
@@ -2090,7 +2090,7 @@ function function_7e060369() {
             if (var_e9af190e) {
                 level.var_2b87f134 = e_beacon;
                 e_beacon thread function_b5d57aff();
-                level notify(#"hash_62df015214d5438f");
+                level notify(#"friendly_spawn_beacon");
                 e_beacon val::reset(#"sbeacon", "takedamage");
                 if (isdefined(level.var_cc18b401) && level.var_cc18b401) {
                     level thread ct_vo::function_41e59aeb(array(#"hash_7f3275b34f048098"), 1);
@@ -2107,7 +2107,7 @@ function function_7e060369() {
 // Size: 0xa4
 function function_b5d57aff() {
     self endon(#"death");
-    level waittill(#"hash_6916f6eb392a7c7b");
+    level waittill(#"kill_friendly_spawn_beacons");
     self spawn_beacon::function_a9ff3efb(0);
     level.var_2b87f134 = undefined;
     if (isdefined(level.var_7ecb2c8e) && level.var_7ecb2c8e) {

@@ -159,8 +159,8 @@ model,p8_fxanim_zm_man_pap_graveyard_mod,294cb871418
 model,hash_140c8f9f61a8c0eb,294cb92a668
 model,p8_zm_elixir_in_plain_sight_ui,294cb7c0658
 model,hash_14565951791c9495,294cb7645b8
-model,hash_1461ab73187a731f,294cb94e7e8
-model,hash_1461ac73187a74d2,294cb97b5d8
+model,zombietron_gib_chunk_meat_01,294cb94e7e8
+model,zombietron_gib_chunk_meat_02,294cb97b5d8
 model,hash_14640fcaefc6a00b,294cb99cff8
 model,hash_14723c30ad047736,294cba7ded8
 model,p8_zm_wall_buy_ar_fastfire,294cb9c7e68
@@ -4292,7 +4292,7 @@ fx,zombie/fx_bul_flesh_neck_spurt_zmb,294cef43ab8
 fx,hash_21ba4e14e47ce200,294cef81818
 fx,zombie/fx8_wallbuy_amb_reverse,294cef3c7b8
 fx,hash_22aac55b4e3e4c42,294cef726d8
-fx,hash_2494cb3c2a3c9c3a,294cef7e398
+fx,zm_ai/fx8_dog_lightning_spawn,294cef7e398
 fx,hash_2543453edaf343d4,294cef5f0d8
 fx,hash_259b253edb3d834a,294cef30558
 fx,hash_25d71c3a3cd5a62e,294cef4d658
@@ -5813,7 +5813,7 @@ soundalias,hash_17a1c508e04154c3,0
 soundalias,hash_17a1c608e0415676,0
 soundalias,hash_17a1c708e0415829,0
 soundalias,hash_17a3d677a0f6162e,0
-soundalias,hash_17a3d777a0f617e1,0
+soundalias,vox_beginner_end_narr_1,0
 soundalias,hash_17aa0044f06682eb,0
 soundalias,hash_17afe3400fba0855,0
 soundalias,hash_17b96c4df5d1b498,0
@@ -6085,7 +6085,7 @@ soundalias,hash_1ca2f4bc39cba89a,0
 soundalias,hash_1ca2f5bc39cbaa4d,0
 soundalias,hash_1ca40222207eef19,0
 soundalias,hash_1cc0dd3edda0ea4f,0
-soundalias,hash_1cd1d5050ec3f1fa,0
+soundalias,vox_advance_hammer_nag_narr_0,0
 soundalias,hash_1ce63db5622dcaf5,0
 soundalias,hash_1d16567ca50c439f,0
 soundalias,hash_1d2198f4ef4a92ae,0
@@ -6397,7 +6397,7 @@ soundalias,hash_2244dcc04c0a92e9,0
 soundalias,hash_224856c54164e3bc,0
 soundalias,hash_224d8c48960f71ee,0
 soundalias,hash_225725e66143097e,0
-soundalias,hash_22587455e49cb1a7,0
+soundalias,vox_beginner_carp_narr_0,0
 soundalias,hash_225bd3b49abfb96f,0
 soundalias,hash_226312b6142054d7,0
 soundalias,hash_22657d81c5aef333,0
@@ -7035,7 +7035,7 @@ soundalias,hash_2e427ab6d9e4b1ff,0
 soundalias,hash_2e427bb6d9e4b3b2,0
 soundalias,hash_2e427cb6d9e4b565,0
 soundalias,hash_2e4802f47a679aaa,0
-soundalias,hash_2e4ee2d6f4788b51,0
+soundalias,zmb_hit_alert_hallion,0
 soundalias,hash_2e69c21ed2530618,0
 soundalias,hash_2e69c31ed25307cb,0
 soundalias,hash_2e69c41ed253097e,0
@@ -11091,7 +11091,7 @@ soundalias,hash_7a0054b0a19c08a7,0
 soundalias,hash_7a0055b0a19c0a5a,0
 soundalias,hash_7a0056b0a19c0c0d,0
 soundalias,hash_7a0f15f6ec7b21e9,0
-soundalias,hash_7a13143ffb6ebbaf,0
+soundalias,aml_dog_bark,0
 soundalias,hash_7a16d5d26f8ab414,0
 soundalias,hash_7a1c8ce1147b7b49,0
 soundalias,hash_7a1e32b3e71d890a,0
@@ -11394,13 +11394,13 @@ client_fx,hash_33771e94b2c2583,294cef866d8
 client_fx,hash_3535a49b41b3f5e,294cef073d8
 client_fx,hash_3b52862cbfae664,294cef2a8d8
 client_fx,hash_3df9418864f08e6,294cef18ef8
-client_fx,hash_55dadb9cfbf7b9a,294cef384d8
+client_fx,zm_ai/fx8_nosferatu_dash_eyes,294cef384d8
 client_fx,hash_629053b4b8f0d36,294cef4f958
 client_fx,hash_62f074d527f46c0,294cef07658
 client_fx,zm_ai/fx8_stoker_dmg_weak_point,294cef672d8
 client_fx,maps/zm_mansion/fx8_silver_hit_werewolf,294cef723b8
 client_fx,hash_6ce60bc4b64e793,294cef46df8
-client_fx,hash_6ec99f8d8b9f924,294cef3c178
+client_fx,maps/zm_mansion/fx8_silver_hit_zombie,294cef3c178
 client_fx,hash_70354557d03ed27,294cef51c58
 client_fx,hash_72f53865aa0e0ba,294cef26698
 client_fx,hash_78449865ae90fbb,294cef26738
@@ -11444,7 +11444,7 @@ client_fx,hash_1159e7d49f176aba,294cef71238
 client_fx,hash_12172517482ddd8b,294cef26b98
 client_fx,hash_122f2f174842806a,294cef26c38
 client_fx,impacts/fx8_bul_impact_metal_sm,294cef19e98
-client_fx,hash_12ad8654acd39474,294cef19f38
+client_fx,impacts/fx8_bul_impact_metal_lg,294cef19f38
 client_fx,hash_12b26f3fa1018561,294cef2abf8
 client_fx,zm_ai/fx8_cata_cor_aura_locked,294cef86638
 client_fx,hash_1383daf758ffc550,294cef843d8

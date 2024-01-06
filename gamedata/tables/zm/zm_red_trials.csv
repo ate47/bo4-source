@@ -27,7 +27,7 @@
 22,#hash_bab56b2193627ac,#hash_e42f106da3fb2fc,#hash_f3454a4ccde8884,#,#hash_b7f913776f85df2,#5,#4,#,#,#,#,#,#
 23,#hash_e077c6c40548151,#hash_e42f206da3fb4af,#hash_1c89127cb3720861,#,#hash_9a7dc34f5859d41,#,#,#,#,#,#,#,#
 24,#run_away,#hash_e42ef06da3faf96,#hash_159da9be94076f66,#,#timeout,#hash_12fe9d2b14ee84ca,#hash_4e8f21f81aabd63b,#12,#210,#360,#360,#540,#zombie_keep_away
-25,#stoaic,#hash_e42f006da3fb149,#hash_152b44c1e36f8f03,#,#defend_area,#hash_7f0c836d8fb5d7,#hash_17d7733aa9f02f4e,#hash_f74932216b07f8c,#hash_12f596841485adc7,#zone_stoa_of_the_athenians_east,#,#,#
+25,#stoaic,#hash_e42f006da3fb149,#hash_152b44c1e36f8f03,#,#defend_area,#hash_7f0c836d8fb5d7,#hash_17d7733aa9f02f4e,#hash_f74932216b07f8c,#zone_stoa_of_the_athenians_west,#zone_stoa_of_the_athenians_east,#,#,#
 26,#shots_shots_shots,#hash_e42ed06da3fac30,#hash_3c2c23140f315698,#,#hash_2fc73bc20035fe8,#60,#,#,#,#,#,#,#
 27,#hash_46c1b0a5a9968157,#hash_e42ee06da3fade3,#hash_73e16e17352f2fb5,#,#restrict_loadout,#hash_54d4bc51239254b8,#,#,#,#,#,#,#
 28,#hash_34bdc2d186406517,#hash_e42fb06da3fc3fa,#hash_24d7a11f11523cca,#,#hash_2bec904229ece9ed,#10,#,#,#,#,#,#,#

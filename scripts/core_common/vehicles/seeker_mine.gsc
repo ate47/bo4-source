@@ -418,8 +418,8 @@ function function_c23ecb2(params) {
 // Size: 0xa4
 function function_32e99568(params) {
     if (isplayer(self.owner)) {
-        self notify(#"hash_14dc5509ffad9ddb");
-        self.owner notify(#"hash_14dc5509ffad9ddb");
+        self notify(#"seeker_discharge_stopped");
+        self.owner notify(#"seeker_discharge_stopped");
     }
     if (isdefined(self.var_f8f0b8f8)) {
         self.var_f8f0b8f8 delete();

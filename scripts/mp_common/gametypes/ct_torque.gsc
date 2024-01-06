@@ -124,8 +124,8 @@ function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon,
     if (self.team == #"allies") {
         self.var_6b6241ac = self.last_valid_position;
         self.var_45cac770 = self.angles;
-        if (self === level.var_748a14fe) {
-            level.var_748a14fe clientfield::set("set_vip", 0);
+        if (self === level.ai_vip) {
+            level.ai_vip clientfield::set("set_vip", 0);
             self flag::clear("vip_checkpoint_goto");
             self flag::clear("vip_checkpoint_action");
             level flag::set("ct_fail_objective_killed");
@@ -239,11 +239,11 @@ function function_cf3224fe(b_success) {
         var_cd803a6b = gettime() - level.var_ebad4ea8;
         level flag::clear("vip_in_checkpoint_action");
         e_player function_143ffb68();
-        level.var_748a14fe flag::clear("vip_checkpoint_goto");
-        level.var_748a14fe flag::clear("vip_checkpoint_action");
-        level.var_748a14fe.waypoint_defend ct_utils::function_f9ed304d();
-        level.var_748a14fe.var_ebc76246 ct_utils::function_f9ed304d();
-        level.var_748a14fe = undefined;
+        level.ai_vip flag::clear("vip_checkpoint_goto");
+        level.ai_vip flag::clear("vip_checkpoint_action");
+        level.ai_vip.waypoint_defend ct_utils::function_f9ed304d();
+        level.ai_vip.var_ebc76246 ct_utils::function_f9ed304d();
+        level.ai_vip = undefined;
         foreach (var_94dda6f in level.var_ac03813) {
             if (isdefined(var_94dda6f.waypoint)) {
                 var_94dda6f.waypoint gameobjects::set_visible_team("none");
@@ -447,16 +447,16 @@ function function_72e84e64() {
     ct_utils::function_6d7f4ec6(45);
     e_player = ct_utils::get_player();
     level thread function_c326bbe4();
-    level.var_748a14fe thread function_db21e968(12, 1, 1000, 1500, 0, 2);
+    level.ai_vip thread function_db21e968(12, 1, 1000, 1500, 0, 2);
     e_player thread function_db21e968(12, 1, 1000, 1500, 0, 2);
     e_player function_5a57b177(1);
-    level.var_748a14fe thread function_db21e968(10, 1, 1000, 1500, 25, 1.5);
+    level.ai_vip thread function_db21e968(10, 1, 1000, 1500, 25, 1.5);
     e_player thread function_db21e968(10, 1, 800, 1500, 50, 1.5);
     e_player function_5a57b177(2);
-    level.var_748a14fe thread function_db21e968(8, 1, 800, 1500, 50, 1);
+    level.ai_vip thread function_db21e968(8, 1, 800, 1500, 50, 1);
     e_player thread function_db21e968(10, 1, 800, 1500, 50, 1);
     e_player function_5a57b177(3);
-    level.var_748a14fe thread function_db21e968(8, 1, 800, 1500, 50, 1);
+    level.ai_vip thread function_db21e968(8, 1, 800, 1500, 50, 1);
     e_player thread function_db21e968(10, 1, 800, 1500, 75, 1);
     level waittill(#"hash_2158824660e02fa2");
     level notify(#"combattraining_logic_finished", {#success:1});
@@ -480,11 +480,11 @@ function function_5a57b177(var_f1de62b9) {
     level endon(#"combattraining_logic_finished");
     level waittill(#"checkpoint_completed");
     self notify(#"hash_3bd66153d302d5e3");
-    level.var_748a14fe notify(#"hash_3bd66153d302d5e3");
+    level.ai_vip notify(#"hash_3bd66153d302d5e3");
     if (isdefined(var_f1de62b9)) {
         nd_next = getnode(level.var_ac03813[var_f1de62b9].target, "targetname");
         do {
-            var_5d199101 = level.var_748a14fe canpath(level.var_748a14fe.origin, nd_next.origin);
+            var_5d199101 = level.ai_vip canpath(level.ai_vip.origin, nd_next.origin);
             if (!(isdefined(var_5d199101) && var_5d199101)) {
                 self thread ct_utils::function_329f9ba6(#"hash_12b8870765d411f6", 3, "red", 0);
             }
@@ -554,17 +554,17 @@ function function_96d0afea(var_e8ee1cd1, var_c8e04bda = 0) {
         b_secured = var_656eb4ea <= var_c8e04bda;
         wait(0.1);
     }
-    level.var_748a14fe flag::set("vip_checkpoint_action");
-    level.var_748a14fe waittill(#"hash_2a9770290dc54226");
+    level.ai_vip flag::set("vip_checkpoint_action");
+    level.ai_vip waittill(#"hash_2a9770290dc54226");
     level.var_94dda6f.waypoint gameobjects::set_visible_team("none");
     self thread ct_utils::function_329f9ba6(#"hash_bf1fced95009e6f", 7, "grey", 1);
     self thread ct_utils::function_61c3d59c(#"hash_59c59e0f5283ed5", undefined);
     self notify(#"hash_3bd66153d302d5e3");
-    level.var_748a14fe notify(#"hash_3bd66153d302d5e3");
+    level.ai_vip notify(#"hash_3bd66153d302d5e3");
     wait(2);
     a_parms = function_e4e6f295(var_e8ee1cd1);
     self thread function_db21e968(a_parms[#"hash_26e3f994cd3be7ad"], 0, a_parms[#"hash_6ac476a653e52b43"], a_parms[#"hash_79c09420f2a9d1b5"], a_parms[#"hash_c89b29b1052eb3a"], a_parms[#"hash_65d515c48dec9a90"]);
-    level.var_748a14fe thread function_db21e968(a_parms[#"hash_666d68ff5ab5708b"], 0, a_parms[#"hash_1b654f4b57692315"], a_parms[#"hash_26f2c8d3a06033f3"], a_parms[#"hash_53a6b6a30b8be9ae"], a_parms[#"hash_4afa2b23e812aa80"]);
+    level.ai_vip thread function_db21e968(a_parms[#"hash_666d68ff5ab5708b"], 0, a_parms[#"hash_1b654f4b57692315"], a_parms[#"hash_26f2c8d3a06033f3"], a_parms[#"hash_53a6b6a30b8be9ae"], a_parms[#"hash_4afa2b23e812aa80"]);
     self thread function_2444772e(30);
     level waittill(#"sabotage_done");
     self thread function_beca73db();
@@ -627,7 +627,7 @@ function function_2444772e(n_time, var_94629f1a = 50) {
     self ct_utils::function_c314f6b1(45);
     self thread ct_utils::function_b42ce622(#"hash_7185fe2194047325");
     level thread ct_utils::function_bfa522d1();
-    level.var_748a14fe flag::clear("vip_checkpoint_action");
+    level.ai_vip flag::clear("vip_checkpoint_action");
     level notify(#"sabotage_done");
     wait(3);
     self function_143ffb68();
@@ -712,28 +712,28 @@ function function_c7f49476() {
 // Checksum 0x27ad0350, Offset: 0x35e0
 // Size: 0x2fc
 function function_3e213427() {
-    level.var_748a14fe = function_4c551667();
-    level.var_748a14fe clientfield::set("set_vip", 2);
-    level.var_748a14fe function_4852f39d();
-    level.var_748a14fe.var_38b6161f = 1;
-    level.var_748a14fe.waypoint_defend = level.var_748a14fe ct_utils::create_waypoint(#"hash_1a511b2e1cdb8c7f", level.var_748a14fe.origin, level.var_748a14fe.angles, #"allies", undefined, 0, undefined);
-    level.var_748a14fe.waypoint_defend gameobjects::set_visible_team("none");
-    level.var_748a14fe.var_ebc76246 = level.var_748a14fe ct_utils::create_waypoint(#"hash_69b9c95819486ff3", level.var_748a14fe.origin, level.var_748a14fe.angles, #"allies", undefined, 0, undefined);
-    level.var_748a14fe.var_ebc76246 gameobjects::set_visible_team("any");
-    level.var_748a14fe clientfield::set("set_vip", 2);
-    level.var_748a14fe.health = 250;
-    if (!level.var_748a14fe flag::exists("vip_stop")) {
-        level.var_748a14fe flag::init("vip_stop");
+    level.ai_vip = function_4c551667();
+    level.ai_vip clientfield::set("set_vip", 2);
+    level.ai_vip function_4852f39d();
+    level.ai_vip.var_38b6161f = 1;
+    level.ai_vip.waypoint_defend = level.ai_vip ct_utils::create_waypoint(#"hash_1a511b2e1cdb8c7f", level.ai_vip.origin, level.ai_vip.angles, #"allies", undefined, 0, undefined);
+    level.ai_vip.waypoint_defend gameobjects::set_visible_team("none");
+    level.ai_vip.var_ebc76246 = level.ai_vip ct_utils::create_waypoint(#"hash_69b9c95819486ff3", level.ai_vip.origin, level.ai_vip.angles, #"allies", undefined, 0, undefined);
+    level.ai_vip.var_ebc76246 gameobjects::set_visible_team("any");
+    level.ai_vip clientfield::set("set_vip", 2);
+    level.ai_vip.health = 250;
+    if (!level.ai_vip flag::exists("vip_stop")) {
+        level.ai_vip flag::init("vip_stop");
     }
-    if (!level.var_748a14fe flag::exists("vip_checkpoint_goto")) {
-        level.var_748a14fe flag::init("vip_checkpoint_goto");
+    if (!level.ai_vip flag::exists("vip_checkpoint_goto")) {
+        level.ai_vip flag::init("vip_checkpoint_goto");
     }
-    if (!level.var_748a14fe flag::exists("vip_checkpoint_action")) {
-        level.var_748a14fe flag::init("vip_checkpoint_action");
+    if (!level.ai_vip flag::exists("vip_checkpoint_action")) {
+        level.ai_vip flag::init("vip_checkpoint_action");
     }
-    level.var_748a14fe flag::clear("vip_stop");
-    level.var_748a14fe flag::clear("vip_checkpoint_action");
-    level.var_748a14fe thread function_dc3d207e();
+    level.ai_vip flag::clear("vip_stop");
+    level.ai_vip flag::clear("vip_checkpoint_action");
+    level.ai_vip thread function_dc3d207e();
 }
 
 // Namespace ct_torque/ct_torque
@@ -741,8 +741,8 @@ function function_3e213427() {
 // Checksum 0xecd01ae1, Offset: 0x38e8
 // Size: 0x64
 function function_6fc5325c() {
-    if (isalive(level.var_748a14fe) && level.var_748a14fe flag::exists("vip_stop")) {
-        level.var_748a14fe flag::set("vip_stop");
+    if (isalive(level.ai_vip) && level.ai_vip flag::exists("vip_stop")) {
+        level.ai_vip flag::set("vip_stop");
     }
 }
 
@@ -751,8 +751,8 @@ function function_6fc5325c() {
 // Checksum 0xe669dcc2, Offset: 0x3958
 // Size: 0x64
 function function_5f4dc2fe() {
-    if (isalive(level.var_748a14fe) && level.var_748a14fe flag::exists("vip_stop")) {
-        level.var_748a14fe flag::clear("vip_stop");
+    if (isalive(level.ai_vip) && level.ai_vip flag::exists("vip_stop")) {
+        level.ai_vip flag::clear("vip_stop");
     }
 }
 
@@ -770,7 +770,7 @@ function function_dc3d207e() {
         } else if (self flag::get("vip_checkpoint_action")) {
             if (self.var_10a6d7df !== 6 && self.var_ef59b90 !== 6) {
                 self.var_ef59b90 = 6;
-                self thread function_a8fff19e();
+                self thread vip_checkpoint_action();
             }
         }
         waitframe(1);
@@ -825,7 +825,7 @@ function function_5ddc2e1a() {
 // Checksum 0x8a8465f9, Offset: 0x3d58
 // Size: 0x8a
 function function_c633f931() {
-    level.var_748a14fe endon(#"death");
+    level.ai_vip endon(#"death");
     self endon(#"death");
     if (!(isdefined(self.var_64c65ec5) && self.var_64c65ec5)) {
         self.var_64c65ec5 = 1;
@@ -840,7 +840,7 @@ function function_c633f931() {
 // Params 0, eflags: 0x0
 // Checksum 0x2c2a894c, Offset: 0x3df0
 // Size: 0x314
-function function_a8fff19e() {
+function vip_checkpoint_action() {
     self endon(#"death");
     self.waypoint_defend gameobjects::set_visible_team("any");
     self.var_ebc76246 gameobjects::set_visible_team("none");
@@ -860,11 +860,11 @@ function function_a8fff19e() {
         #/
         wpn_current = self getcurrentweapon();
         if (wpn_current != level.var_12b138a6) {
-            if (!level.var_748a14fe hasweapon(level.var_12b138a6)) {
-                level.var_748a14fe giveweapon(level.var_12b138a6);
-                level.var_748a14fe switchtoweapon(level.var_12b138a6, 1);
+            if (!level.ai_vip hasweapon(level.var_12b138a6)) {
+                level.ai_vip giveweapon(level.var_12b138a6);
+                level.ai_vip switchtoweapon(level.var_12b138a6, 1);
             }
-            level.var_748a14fe takeweapon(wpn_current);
+            level.ai_vip takeweapon(wpn_current);
         }
         wait(2);
     }
@@ -890,7 +890,7 @@ function function_7af8c620() {
 // Size: 0x1e4
 function function_4c551667() {
     entities = bot::get_bots();
-    var_8d676db9 = struct::get("s_vip", "targetname");
+    s_vip = struct::get("s_vip", "targetname");
     var_e8d6f89 = 0;
     foreach (entity in entities) {
         if (!isdefined(entity.bot)) {
@@ -903,8 +903,8 @@ function function_4c551667() {
         entity.prevstate = 3;
         entity.var_ef59b90 = 3;
         entity.resurrect_not_allowed_by = undefined;
-        entity setorigin(var_8d676db9.origin);
-        entity setplayerangles(var_8d676db9.angles);
+        entity setorigin(s_vip.origin);
+        entity setplayerangles(s_vip.angles);
         entity.disablespawning = 1;
         entity.var_6722b63 = 0;
         entity.b_revived = 0;
@@ -920,8 +920,8 @@ function function_4c551667() {
 // Checksum 0x9cef8d4f, Offset: 0x4348
 // Size: 0x138
 function spawn_robot(str_team = #"allies", var_3b640040 = "walk") {
-    var_8d676db9 = struct::get("s_vip", "targetname");
-    robot = spawnactor("spawner_bo3_robot_grunt_assault_mp", var_8d676db9.origin, var_8d676db9.angles, "ai_vip", 1);
+    s_vip = struct::get("s_vip", "targetname");
+    robot = spawnactor("spawner_bo3_robot_grunt_assault_mp", s_vip.origin, s_vip.angles, "ai_vip", 1);
     robot ai::set_behavior_attribute("rogue_control_speed", var_3b640040);
     robot val::set(#"escort_robot", "ignoreall", 1);
     robot setteam(str_team);
@@ -1147,10 +1147,10 @@ function function_8d5cfdef() {
             }
         }
         if (var_20e43fcf.size > 0) {
-            if (isdefined(var_a3e53b82) && distance2dsquared(level.var_748a14fe.origin, var_a3e53b82.origin) <= 640000) {
+            if (isdefined(var_a3e53b82) && distance2dsquared(level.ai_vip.origin, var_a3e53b82.origin) <= 640000) {
                 self.var_553008b4 = var_a3e53b82;
             } else {
-                self.var_553008b4 = arraygetclosest(level.var_748a14fe.origin, var_20e43fcf);
+                self.var_553008b4 = arraygetclosest(level.ai_vip.origin, var_20e43fcf);
             }
             self.var_a4b4d1cb = 1;
             return self.var_553008b4;
@@ -1196,7 +1196,7 @@ function function_f243b54e() {
     var_ec90b5ea = 4096;
     while (1) {
         var_e4dd1a2e = self canpath(self.origin, e_player.origin);
-        var_13621637 = self canpath(self.origin, level.var_748a14fe.origin);
+        var_13621637 = self canpath(self.origin, level.ai_vip.origin);
         if (isdefined(self.enemy)) {
             var_115a042a = self canpath(self.origin, self.enemy.origin);
         } else {
@@ -1204,7 +1204,7 @@ function function_f243b54e() {
         }
         self.var_de87c3ae = var_e4dd1a2e || var_13621637 || var_115a042a;
         if (var_13621637) {
-            if (self.zombie_move_speed !== "walk" && distance2dsquared(self.origin, level.var_748a14fe.origin) <= var_ec90b5ea) {
+            if (self.zombie_move_speed !== "walk" && distance2dsquared(self.origin, level.ai_vip.origin) <= var_ec90b5ea) {
                 self.var_4d3692b7 = self.zombie_move_speed;
                 self zombie_utility::set_zombie_run_cycle("walk");
             } else if (isdefined(self.var_4d3692b7)) {
@@ -1295,42 +1295,42 @@ function function_d69c54a8() {
             e_player = ct_utils::get_player();
             switch (cmd) {
             case #"hash_1ce8d5f5a390a03e":
-                if (isalive(level.var_748a14fe)) {
-                    level.var_748a14fe.magic_bullet_shield val::set("<unknown string>", "<unknown string>", 1);
+                if (isalive(level.ai_vip)) {
+                    level.ai_vip.magic_bullet_shield val::set("<unknown string>", "<unknown string>", 1);
                 }
                 break;
             case #"hash_3028b864eea95c40":
-                if (isalive(level.var_748a14fe)) {
-                    level.var_748a14fe.magic_bullet_shield val::reset("<unknown string>", "<unknown string>");
+                if (isalive(level.ai_vip)) {
+                    level.ai_vip.magic_bullet_shield val::reset("<unknown string>", "<unknown string>");
                 }
                 break;
             case #"hash_2a604c8957a7a557":
-                if (isalive(level.var_748a14fe)) {
-                    level.var_748a14fe.magic_bullet_shield val::set("<unknown string>", "<unknown string>", 1);
+                if (isalive(level.ai_vip)) {
+                    level.ai_vip.magic_bullet_shield val::set("<unknown string>", "<unknown string>", 1);
                 }
                 break;
             case #"hash_292c4e5ff1c705bb":
-                if (isalive(level.var_748a14fe)) {
-                    level.var_748a14fe.magic_bullet_shield val::reset("<unknown string>", "<unknown string>");
+                if (isalive(level.ai_vip)) {
+                    level.ai_vip.magic_bullet_shield val::reset("<unknown string>", "<unknown string>");
                 }
                 break;
             case #"hash_12348115d7e7bfac":
-                if (isalive(level.var_748a14fe)) {
-                    level.var_748a14fe.magic_bullet_shield = 1;
+                if (isalive(level.ai_vip)) {
+                    level.ai_vip.magic_bullet_shield = 1;
                 }
                 break;
             case #"hash_5712121ddee190c6":
-                if (isalive(level.var_748a14fe)) {
-                    level.var_748a14fe.magic_bullet_shield = 0;
+                if (isalive(level.ai_vip)) {
+                    level.ai_vip.magic_bullet_shield = 0;
                 }
                 break;
             case #"hash_5ec503eac0f129d9":
-                if (isalive(level.var_748a14fe)) {
+                if (isalive(level.ai_vip)) {
                     function_6fc5325c();
                 }
                 break;
             case #"hash_2000f929025eaeae":
-                if (isdefined(level.var_748a14fe.var_1d6b3936)) {
+                if (isdefined(level.ai_vip.var_1d6b3936)) {
                     function_5f4dc2fe();
                 }
                 break;
@@ -1374,13 +1374,13 @@ function function_d69c54a8() {
                 e_player notify(#"hash_3bd66153d302d5e3");
                 break;
             case #"hash_3849a968028039ac":
-                level.var_748a14fe thread function_db21e968(10, 1);
+                level.ai_vip thread function_db21e968(10, 1);
                 break;
             case #"hash_3853bb680288acc7":
-                level.var_748a14fe thread function_db21e968(20, 1);
+                level.ai_vip thread function_db21e968(20, 1);
                 break;
             case #"hash_4e4dc106db86a01d":
-                level.var_748a14fe notify(#"hash_3bd66153d302d5e3");
+                level.ai_vip notify(#"hash_3bd66153d302d5e3");
                 break;
             case #"hash_2f5364716bda85ac":
                 level thread spawn_zombies(ct_utils::get_player(), 10, 1);

@@ -342,7 +342,7 @@ function function_dd1fa6e7() {
 function function_1c8a3d23() {
     self endon(#"death");
     self waittill(#"hash_225857690f87699b");
-    level notify(#"hash_682a67a2099c3200");
+    level notify(#"stop_seeker_nag");
     level.var_f0e1e497 = 1;
 }
 

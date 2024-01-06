@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 // Checksum 0xcf84f9a0, Offset: 0x140
 // Size: 0xc2
 function __init__() {
-    clientfield::register("world", "flip_skybox", 8000, 1, "int", &function_126d0c26, 0, 0);
+    clientfield::register("world", "flip_skybox", 8000, 1, "int", &flip_skybox, 0, 0);
     clientfield::register("scriptmover", "zombie_has_eyes", 1, 1, "int", &zombie_eyes_clientfield_cb, 0, 0);
     level._effect[#"hash_61fce653578d7f82"] = #"zm_ai/fx8_zombie_eye_glow_orange";
 }
@@ -27,7 +27,7 @@ function __init__() {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x1254edd2, Offset: 0x210
 // Size: 0x6c
-function function_126d0c26(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function flip_skybox(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         setdvar(#"r_skytransition", 1);
     }

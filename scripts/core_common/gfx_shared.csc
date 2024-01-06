@@ -124,7 +124,7 @@ function getshaderconstantvalue(bundle, constprefix, constname, delay) {
         vals[1] = getstructfieldorzero(bundle, constprefix + constname + "_clr_g");
         vals[2] = getstructfieldorzero(bundle, constprefix + constname + "_clr_b");
         break;
-    case #"hash_445a4e55a73fea7f":
+    case #"color+alpha":
         vals[0] = getstructfieldorzero(bundle, constprefix + constname + "_clr_r");
         vals[1] = getstructfieldorzero(bundle, constprefix + constname + "_clr_g");
         vals[2] = getstructfieldorzero(bundle, constprefix + constname + "_clr_b");

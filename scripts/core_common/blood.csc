@@ -553,10 +553,10 @@ function private function_8d8880(localclientnum) {
         if (isdefined(self.blood_enabled) && self.blood_enabled) {
             for (pulse = 0; pulse < 2; pulse++) {
                 self notify(#"pulse_blood");
-                self thread function_c0cdd1f2(localclientnum, 0, 1, level.blood.var_f2de135e.var_562c41de[pulse], #"hash_152dbb4add22b951", self.pstfx_blood);
+                self thread function_c0cdd1f2(localclientnum, 0, 1, level.blood.var_f2de135e.var_562c41de[pulse], #"damage pulse", self.pstfx_blood);
                 wait(float(level.blood.var_f2de135e.var_562c41de[pulse]) / 1000);
                 wait(float(level.blood.var_f2de135e.var_18f673f1[pulse]) / 1000);
-                self thread function_c0cdd1f2(localclientnum, 1, 0, level.blood.var_f2de135e.var_92fc0d45[pulse], #"hash_152dbb4add22b951", self.pstfx_blood);
+                self thread function_c0cdd1f2(localclientnum, 1, 0, level.blood.var_f2de135e.var_92fc0d45[pulse], #"damage pulse", self.pstfx_blood);
                 wait(float(level.blood.var_f2de135e.var_92fc0d45[pulse]) / 1000);
                 wait(float(level.blood.var_f2de135e.var_5b5500f7[pulse]) / 1000);
             }
@@ -595,7 +595,7 @@ function private function_e91b92e2(localclientnum, new_blood_stage, prior_blood_
         self.var_9861062 = 1;
         self enter_critical_health(localclientnum);
         if (isdefined(self.blood_enabled) && self.blood_enabled) {
-            self function_116b95e5(self.pstfx_blood, #"hash_152dbb4add22b951", 1);
+            self function_116b95e5(self.pstfx_blood, #"damage pulse", 1);
         }
         if (isdefined(level.blood.scriptbundle.pulse_loop)) {
             level.blood.soundhandle = function_604c9983(localclientnum, level.blood.scriptbundle.pulse_loop);
@@ -607,7 +607,7 @@ function private function_e91b92e2(localclientnum, new_blood_stage, prior_blood_
         }
         self.var_9861062 = 0;
         if (isdefined(self.blood_enabled) && self.blood_enabled) {
-            self function_116b95e5(self.pstfx_blood, #"hash_152dbb4add22b951", 0);
+            self function_116b95e5(self.pstfx_blood, #"damage pulse", 0);
         }
     }
     if (new_blood_stage < 4) {
@@ -679,8 +679,8 @@ function private function_9a8dc0ec(localclientnum, playerhealth, forceupdate) {
         ramptime = prior_blood_stage < new_blood_stage ? level.blood.var_49774f1 : level.blood.var_587ce5b0;
         self thread function_c0cdd1f2(localclientnum, level.blood.fade[prior_blood_stage], level.blood.fade[new_blood_stage], ramptime, #"fade", self.pstfx_blood);
         self thread function_c0cdd1f2(localclientnum, level.blood.opacity[prior_blood_stage], level.blood.opacity[new_blood_stage], ramptime, #"opacity", self.pstfx_blood);
-        self thread function_c0cdd1f2(localclientnum, level.blood.var_4c8629ad[prior_blood_stage], level.blood.var_4c8629ad[new_blood_stage], ramptime, #"hash_4719d5a85c54db22", self.pstfx_blood);
-        self thread function_c0cdd1f2(localclientnum, level.blood.var_ea220db3[prior_blood_stage], level.blood.var_ea220db3[new_blood_stage], ramptime, #"hash_703cc9e25857079", self.pstfx_blood);
+        self thread function_c0cdd1f2(localclientnum, level.blood.var_4c8629ad[prior_blood_stage], level.blood.var_4c8629ad[new_blood_stage], ramptime, #"vignette darkening amount", self.pstfx_blood);
+        self thread function_c0cdd1f2(localclientnum, level.blood.var_ea220db3[prior_blood_stage], level.blood.var_ea220db3[new_blood_stage], ramptime, #"vignette darkening factor", self.pstfx_blood);
         self thread function_c0cdd1f2(localclientnum, level.blood.blur[prior_blood_stage], level.blood.blur[new_blood_stage], ramptime, #"blur", self.pstfx_blood);
         if (level.blood.var_e9d8aaf5) {
             self thread function_c0cdd1f2(localclientnum, level.blood.refraction[prior_blood_stage], level.blood.refraction[new_blood_stage], ramptime, #"refraction", self.pstfx_blood);

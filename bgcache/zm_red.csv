@@ -125,8 +125,8 @@ model,hash_1405b2910d3452c1,294cba6d5b8
 model,hash_1435f51c9edfe0d3,294cba6daf8
 model,hash_1435f61c9edfe286,294cb8d0d28
 model,hash_145c85c52d233dc4,294cb79b908
-model,hash_1461ab73187a731f,294cb7d6df8
-model,hash_1461ac73187a74d2,294cb86a878
+model,zombietron_gib_chunk_meat_01,294cb7d6df8
+model,zombietron_gib_chunk_meat_02,294cb86a878
 model,p8_zm_wall_buy_ar_fastfire,294cb96a0e8
 model,c_t8_zmb_dlc2_zombie_female_body1_split_skin1,294cb852bd8
 model,c_t8_zmb_dlc2_zombie_female_body1_split_skin2,294cb919e98
@@ -483,7 +483,7 @@ model,hash_49f441830623231a,294cb864b48
 model,hash_4a1d772b140df408,294cb74a1b8
 model,hash_4a2f3d358d6f970d,294cb967988
 model,hash_4a49b32855300ae5,294cba82af8
-model,hash_4a646ceaf6a3b397,294cb993cf8
+model,p8_zm_red_dks_rock_shale_boulder_med_01,294cb993cf8
 model,hash_4a7e5e0aafba6626,294cb75a598
 model,hash_4aecdfb6d0abddc0,294cb869ca8
 model,hash_4aece0b6d0abdf73,294cb7fc9b8
@@ -674,7 +674,7 @@ model,hash_61790877a7f8e580,294cb747ba8
 model,hash_61a636c7c776b5b4,294cb7f3418
 model,hash_61b27ead7a63a4f0,294cba8e7f8
 model,hash_61be1ede8a02f714,294cb744c68
-model,hash_61f7d04d00889560,294cb8d3878
+model,p8_zm_red_dks_rock_shale_boulder_lrg_01,294cb8d3878
 model,c_t8_zmb_catalyst_water_lleg_gib,294cb91d318
 model,hash_625542775e4afd6c,294cba224c8
 model,c_t8_zmb_dlc2_zombie_male_body3_skin2_fb,294cb748cb8
@@ -917,7 +917,7 @@ model,hash_7feb0d9324b26bee,294cb736808
 model,hash_7ff858e248e044d0,294cb938048
 aitype,hash_4c9a2b5965fb76,294cefb0340
 aitype,hash_4c9d2b5966008f,294cefb2140
-aitype,hash_9998bbacdfd161f,294cefb5d40
+aitype,spawner_zm_skeleton_spear,294cefb5d40
 aitype,hash_bba250285fb2991,294cefb3040
 aitype,spawner_zm_catalyst_plasma,294cefb1240
 aitype,hash_25e7c3c34a8a2658,294cefb7b40
@@ -1081,7 +1081,7 @@ rumble,hash_22cb25543ecfd0bf,294cf2bc500
 rumble,hash_230077451d7197c1,294cf2bcbc0
 rumble,hash_2578b3deb6dd485a,294cf2bcc50
 rumble,zm_red_skylight_rumble,294cf2bc428
-rumble,hash_2db0c5ca81c097ca,294cf2bc1a0
+rumble,zm_red_eagle_impact_rumble,294cf2bc1a0
 rumble,hash_2f90ad8c2371d73d,294cf2bc350
 rumble,hash_32ed6d5a446f6a3a,294cf2bc8f0
 rumble,hash_4406cc9db6615ba7,294cf2bb300
@@ -1091,7 +1091,7 @@ rumble,zm_red_omphalos_rumble,294cf2bca58
 rumble,grenade_rumble,294cf2bb660
 rumble,zm_red_step_complete_rumble,294cf2bc0c8
 rumble,hash_5d8a1a68b12dfb24,294cf2bc398
-rumble,hash_602f9ccec20e3a8c,294cf2bc5d8
+rumble,zm_red_gegenees_land_rumble,294cf2bc5d8
 rumble,hash_60ba860667abd52f,294cf2ba190
 rumble,hash_620ca77f414a6e4b,294cf2bc860
 rumble,hash_753c961fb3e7a825,294cf2bc7d0
@@ -3668,7 +3668,7 @@ scriptbundle,fxd8_zm_char_werewolf_body,294cf29e948
 scriptbundle,aib_vign_zm_zod_catalyst_electric_spawn_post_split,294cf2ad2c8
 scriptbundle,aib_vign_zm_zod_catalyst_water_spawn_post_split,294cf2a7c88
 scriptbundle,aib_vign_cust_zm_red_boss1_stg2_to_stg3_01,294cf2b18c8
-scriptbundle,hash_1dd41f1f02d15826,294cf2aed08
+scriptbundle,aib_zm_red_vign_pgs_wng_fld_idle,294cf2aed08
 scriptbundle,p8_fxanim_zm_red_omphalos_egg_bundle,294cf2a1f48
 scriptbundle,aib_vign_zm_zod_catalyst_water_spawn_pre_split,294cf29e908
 scriptbundle,p8_fxanim_zm_red_sundial_outer_doors_bundle,294cf2af388
@@ -4477,7 +4477,7 @@ fx,hash_7b951deec27b35c1,294cef2a5b8
 fx,hash_7d69ee9822b45157,294cef2a798
 lui_elem_uid,zm_hint_text,294cf5452a0
 lui_elem_uid,zm_red_challenges_hud,294cf545108
-radiant_exploder,hash_13eb3910fb857c1,0
+radiant_exploder,fxexp_trap_poison,0
 radiant_exploder,fxexp_wq_o_portal_return,0
 radiant_exploder,exp_lgt_ar_stealth_t8,0
 radiant_exploder,fxexp_barrier_amph_perseus,0
@@ -4583,7 +4583,7 @@ radiant_exploder,hash_48d1b347fabfc957,0
 radiant_exploder,hash_48d1b447fabfcb0a,0
 radiant_exploder,exp_lgt_tr_leveraction_t8,0
 radiant_exploder,hash_4ab5a0f1b10461ba,0
-radiant_exploder,hash_4c62a2a60662727f,0
+radiant_exploder,fxexp_trap_venom_switch,0
 radiant_exploder,hash_5102c9f7e00f175a,0
 radiant_exploder,exp_lgt_smg_fastfire_t8,0
 radiant_exploder,exp_lgt_pistol_standard_t8,0
@@ -4600,7 +4600,7 @@ radiant_exploder,hash_58a73d62e30679e0,0
 radiant_exploder,hash_597efc95d28ef6a1,0
 radiant_exploder,exp_lgt_sniper_quickscope_t8,0
 radiant_exploder,hash_5ac23324f90053f7,0
-radiant_exploder,hash_5bcaadeebd280889,0
+radiant_exploder,exp_lgt_back_chaos,0
 radiant_exploder,exp_lgt_chaos_bush_iot_2,0
 radiant_exploder,exp_lgt_chaos_bush_iot_3,0
 radiant_exploder,exp_lgt_chaos_bush_iot_1,0
@@ -4969,7 +4969,7 @@ soundalias,hash_6b327aac72bc69c,0
 soundalias,hash_6b328aac72bc84f,0
 soundalias,hash_6b329aac72bca02,0
 soundalias,hash_6b32aaac72bcbb5,0
-soundalias,hash_6b4fcad4ae43f16,0
+soundalias,bik_zm_red_pegride_kill_audio,0
 soundalias,hash_6b98920a69fd329,0
 soundalias,hash_6d0962e7c317179,0
 soundalias,hash_6d0972e7c31732c,0
@@ -9901,7 +9901,7 @@ client_fx,hash_194fead3457d21f5,294cef7b2d8
 client_fx,hash_19f390eac78920bb,294cef43978
 client_fx,hash_1a06427eff8dfe13,294cef7d038
 client_fx,hash_1a423b45182c5613,294cef427f8
-client_fx,hash_1b1d42d579380f1b,294cef4a778
+client_fx,maps/zm_red/fx8_soul_red,294cef4a778
 client_fx,hash_1b9a5e0c33750abe,294cef370d8
 client_fx,hash_1bdd0dedebd76ddb,294cef594f8
 client_fx,zombie/fx_bul_flesh_head_nochunks_zmb,294cef7a8d8
@@ -10140,7 +10140,7 @@ client_fx,hash_63074eb9d1a1e00c,294cef38078
 client_fx,hash_636c8abf0f7d5df9,294cef87998
 client_fx,hash_6400b8e89418b50e,294cef66b58
 client_fx,hash_647338beb2cb34ec,294cef43c98
-client_fx,hash_64892654f5d0133c,294cef34298
+client_fx,maps/zm_red/fx8_soul_charge_red,294cef34298
 client_fx,hash_65cea36e2f1cd4c7,294cef50858
 client_fx,hash_65d0dff5c51ac70d,294cef7ed98
 client_fx,hash_65d7cbf5c520c3bf,294cef4c118

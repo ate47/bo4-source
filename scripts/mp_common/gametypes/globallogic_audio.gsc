@@ -119,7 +119,7 @@ function function_6e084fd3(var_37ecca7, taacombundle) {
     case #"overwatch_helicopter":
         bundlename = taacombundle.overwatchhelicopterdialogbundle;
         break;
-    case #"hash_59687845e5356ded":
+    case #"overwatch_helicopter_snipers":
         bundlename = taacombundle.var_4062b33e;
         break;
     case #"planemortar":

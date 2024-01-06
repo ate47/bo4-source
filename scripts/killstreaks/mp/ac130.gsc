@@ -1269,7 +1269,7 @@ function function_631f02c5(isprimaryweapon) {
     if (isprimaryweapon) {
         self.var_1824934b = (isdefined(self.var_1824934b) ? self.var_1824934b : 0) + 1;
     } else {
-        self.var_6c81f48 = (isdefined(self.var_6c81f48) ? self.var_6c81f48 : 0) + 1;
+        self.secondarykill = (isdefined(self.secondarykill) ? self.secondarykill : 0) + 1;
     }
     wait(2.5);
     if (!isdefined(self)) {
@@ -1302,7 +1302,7 @@ function function_568f6426(isprimaryweapon) {
         }
         self.var_1824934b = 0;
     } else {
-        switch (self.var_6c81f48) {
+        switch (self.secondarykill) {
         case 0:
             break;
         case 1:
@@ -1318,7 +1318,7 @@ function function_568f6426(isprimaryweapon) {
             dialogkey = "secondarykillMultiple";
             break;
         }
-        self.var_6c81f48 = 0;
+        self.secondarykill = 0;
     }
     if (isdefined(dialogkey)) {
         self killstreaks::play_pilot_dialog_on_owner(dialogkey, "ac130", self.killstreak_id);

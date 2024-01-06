@@ -243,7 +243,7 @@ function function_170ff027() {
 // Checksum 0x9068fecb, Offset: 0x2530
 // Size: 0x3a
 function function_55fb48a3() {
-    level notify(#"hash_1223834837d857ba");
+    level notify(#"tutorial_used_anywhere_but_here");
     return getnode("tutorial_elixers", "targetname");
 }
 
@@ -671,7 +671,7 @@ function function_513e90cf() {
         if (mdl_door.model === #"hash_9a7063a36ee590f") {
             mdl_door setmodel(#"p8_kit_zod_din_05_door_42_left_stained_wood_02");
         } else if (mdl_door.model === #"hash_41f5587fd2de45fc") {
-            mdl_door setmodel(#"hash_525a2f81b2c0f847");
+            mdl_door setmodel(#"p8_kit_zod_din_05_door_42_right_stained_wood_02");
         }
     }
     zm_characters::set_character(array(#"hash_f531a8c2df891cc", #"hash_26072a3b34719d22"));
@@ -766,7 +766,7 @@ function function_2517cb55() {
     self thread function_261ed63c(#"hash_66a9e9a056f5aa26", 6, "shoot_zombie_completed");
     level waittill(#"zombie_shot");
     function_a09d93d9();
-    self notify(#"hash_268088d4f6e22961");
+    self notify(#"shoot_zombie_completed");
     self notify(#"hash_c366d831c1ff919");
     function_68da8e33(#"hash_4b3c8234832c799e", 0.3);
     w_pistol = self getcurrentweapon();
@@ -1615,7 +1615,7 @@ function elixirs() {
         level notify(#"hash_7d7ad8f95ddcdcbd");
     }
     self thread function_3e1e39f8(#"hash_52ed5bafc1e1a62c", "tutorial_used_anywhere_but_here");
-    level waittill(#"hash_1223834837d857ba");
+    level waittill(#"tutorial_used_anywhere_but_here");
     self function_204dd117("tutorial_elixers");
     level.var_3c8ad64b = -1;
 }
@@ -1694,7 +1694,7 @@ function fast_travel() {
     while (!self.var_16735873) {
         waitframe(1);
     }
-    level notify(#"hash_764b6fe89cf2de74");
+    level notify(#"fast_travel_used");
     self freeze_player_controls();
     self val::set(#"tutorial_finished", "takedamage", 0);
     s_objective function_384bed55(0);
@@ -1824,10 +1824,10 @@ function function_3e1e39f8(str_text, str_notify, var_e6cc3687, n_timeout = 8) {
 // Checksum 0x25c8f3f1, Offset: 0x9448
 // Size: 0x56
 function function_3d825fe() {
-    self endon(#"death", #"hash_268088d4f6e22961");
+    self endon(#"death", #"shoot_zombie_completed");
     self waittill(#"weapon_fired");
     waitframe(1);
-    self notify(#"hash_268088d4f6e22961");
+    self notify(#"shoot_zombie_completed");
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial

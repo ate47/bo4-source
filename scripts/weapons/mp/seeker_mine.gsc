@@ -654,7 +654,7 @@ function function_6c31fc8f(seekermine, var_26b2b1bb) {
     self endon(#"death");
     seekermine waittill(#"death");
     self notify(#"hash_11759ff8ab95f65c");
-    self notify(#"hash_2ec855d07471b8f");
+    self notify(#"seekermine_minigame_complete");
     function_b6ee86e3(seekermine, var_26b2b1bb);
 }
 
@@ -677,7 +677,7 @@ function function_44cae5c5(time) {
 // Checksum 0xafdec948, Offset: 0x2b40
 // Size: 0x1e2
 function function_dfbbefb8() {
-    self endon(#"death", #"hash_2ec855d07471b8f");
+    self endon(#"death", #"seekermine_minigame_complete");
     level notify(#"hash_f7be71cd0b3dc06");
     if (!(self status_effect::function_3c54ae98(5) > 0)) {
         level.var_9d47488.prompt seeker_mine_prompt::open(self, 0);
@@ -705,7 +705,7 @@ function function_dfbbefb8() {
 // Checksum 0x58291166, Offset: 0x2d30
 // Size: 0xc4
 function function_7d2591b() {
-    self endon(#"death", #"hash_2ec855d07471b8f");
+    self endon(#"death", #"seekermine_minigame_complete");
     waittime = level.var_9d47488.tunables.var_170c494e * 1000;
     starttime = gettime();
     do {
@@ -765,7 +765,7 @@ function function_e56220fe() {
         self.var_dda9b735.state = 4;
     }
     level.var_9d47488.prompt seeker_mine_prompt::set_promptstate(self, self.var_dda9b735.state);
-    self notify(#"hash_2ec855d07471b8f");
+    self notify(#"seekermine_minigame_complete");
 }
 
 // Namespace seeker_mine_mp/seeker_mine
@@ -775,7 +775,7 @@ function function_e56220fe() {
 function function_f6f0c876(var_26b2b1bb, seekermine) {
     self endon(#"hash_11759ff8ab95f65c");
     waitresult = undefined;
-    waitresult = self waittill(#"hash_2ec855d07471b8f", #"death");
+    waitresult = self waittill(#"seekermine_minigame_complete", #"death");
     if (waitresult._notify == "death") {
         return;
     }

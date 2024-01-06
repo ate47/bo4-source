@@ -344,8 +344,8 @@
 #infected_survivor,0,0,0,0,0,false,0,false,#hash_3887f79f505d8dcd,#stats_infected_survivor,#medal_infected_survivor,true,true,false,#gamemode,#,#,#,#,false,false,0,?0,0
 #survivor_still_alive,0,0,0,0,0,false,0,false,#hash_541891e4eb1897e0,#,#,false,true,false,#,#,#,#,#,false,false,0,?0,0
 #final_survivor,0,0,0,0,0,false,0,false,#hash_43a1a0d614c400e1,#stats_final_survivor,#medal_final_survivor,true,true,false,#gamemode,#,#,#,#,false,false,0,?0,0
-#hash_611f76f9237038ca,0,0,0,0,0,false,0,false,#,#hash_3ac0b25bcb4d86c5,#medal_infect_3_enemies,true,true,false,#gamemode,#,#,#,#,false,false,0,?0,0
-#hash_87a66991097bd18,0,0,0,0,0,false,0,false,#,#hash_26187deba312d31f,#medal_survive_30_seconds,true,true,false,#gamemode,#,#,#,#,false,false,0,?0,0
+#infected_infect_3_enemies,0,0,0,0,0,false,0,false,#,#hash_3ac0b25bcb4d86c5,#medal_infect_3_enemies,true,true,false,#gamemode,#,#,#,#,false,false,0,?0,0
+#infected_survive_30_seconds,0,0,0,0,0,false,0,false,#,#hash_26187deba312d31f,#medal_survive_30_seconds,true,true,false,#gamemode,#,#,#,#,false,false,0,?0,0
 #prop_survived_entire_round,0,0,0,0,0,false,0,false,#,#stats_prop_survived_entire_round,#medal_prop_survived_entire_round,true,true,false,#gamemode,#,#,#,#,false,false,0,?0,0
 #prop_killed_three_props,0,0,0,0,0,false,0,false,#,#stats_prop_killed_three_props,#medal_prop_killed_three_props,true,true,false,#gamemode,#,#,#,#,false,false,0,?0,0
 #prop_killed_all_props,0,0,0,0,0,false,0,false,#,#stats_prop_killed_all_props,#medal_prop_killed_all_props,true,true,false,#gamemode,#,#,#,#,false,false,0,?0,0

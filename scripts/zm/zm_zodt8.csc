@@ -637,9 +637,9 @@ function water_splashies(localclientnum, oldval, newval, bnewent, binitialsnap, 
 // Size: 0x8c
 function water_drippies(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
-        self postfx::playpostfxbundle(#"hash_6fb10f5e27bb70c1");
+        self postfx::playpostfxbundle(#"pstfx_sprite_rain_loop_sparse");
     } else {
-        self postfx::stoppostfxbundle(#"hash_6fb10f5e27bb70c1");
+        self postfx::stoppostfxbundle(#"pstfx_sprite_rain_loop_sparse");
     }
 }
 

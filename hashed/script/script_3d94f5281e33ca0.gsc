@@ -64,7 +64,7 @@ class cct_shared_ingame_objective : cluielem {
             [[ self ]]->set_data(localclientnum, "_state", 8);
         } else if (#"hash_4de4402f8698c768" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 9);
-        } else if (#"hash_63d3d0d871ba1adb" == state_name) {
+        } else if (#"dynobj_killtoearnseraphchopper" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 10);
         } else if (#"hash_2f0272e755f4abf7" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 11);
@@ -72,11 +72,11 @@ class cct_shared_ingame_objective : cluielem {
             [[ self ]]->set_data(localclientnum, "_state", 12);
         } else if (#"hash_71743ffed428ea2f" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 13);
-        } else if (#"hash_519ed82ca27249dd" == state_name) {
+        } else if (#"dynobj_killsoldiers" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 14);
         } else if (#"hash_7d5a07e3680ec561" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 15);
-        } else if (#"hash_80668531e9e4db6" == state_name) {
+        } else if (#"dynobj_killwithpurifier" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 16);
         } else if (#"hash_5ba30c4069a3b28" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 17);
@@ -84,15 +84,15 @@ class cct_shared_ingame_objective : cluielem {
             [[ self ]]->set_data(localclientnum, "_state", 18);
         } else if (#"hash_83700757d6b9194" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 19);
-        } else if (#"hash_6dfb08308c7640b0" == state_name) {
+        } else if (#"dynobj_earnmantis" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 20);
         } else if (#"hash_2a4442540584316a" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 21);
-        } else if (#"hash_7917ffb178e31e9c" == state_name) {
+        } else if (#"dynobj_earnstraferun" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 22);
         } else if (#"hash_1a051da4d150816" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 23);
-        } else if (#"hash_347a715457b3ba72" == state_name) {
+        } else if (#"dynobj_killtoearnnomadks" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 24);
         } else if (#"hash_21962bee0a15424" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 25);
@@ -100,11 +100,11 @@ class cct_shared_ingame_objective : cluielem {
             [[ self ]]->set_data(localclientnum, "_state", 26);
         } else if (#"hash_29a3c52abd286a3d" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 27);
-        } else if (#"hash_6b6581d0506c0b19" == state_name) {
+        } else if (#"dynobj_earndart" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 28);
         } else if (#"hash_34061eae676df48d" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 29);
-        } else if (#"hash_2937fe33c735a583" == state_name) {
+        } else if (#"dynobj_teamdefend" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 30);
         } else if (#"hash_4bfdec8101cde9e7" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 31);
@@ -120,7 +120,7 @@ class cct_shared_ingame_objective : cluielem {
             [[ self ]]->set_data(localclientnum, "_state", 36);
         } else if (#"hash_6e90224596225271" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 37);
-        } else if (#"hash_52e0c66ed90c5996" == state_name) {
+        } else if (#"dynobj_killenemies" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 38);
         } else if (#"hash_75d2922ca26f2a88" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 39);

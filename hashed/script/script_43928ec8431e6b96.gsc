@@ -56,7 +56,7 @@ class cct_shared_button_prompt : cluielem {
             [[ self ]]->set_data(localclientnum, "_state", 12);
         } else if (#"square_button" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 13);
-        } else if (#"hash_72d4665454938ae" == state_name) {
+        } else if (#"square_button_paused" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 14);
         } else if (#"hash_1e3e2411c866b2a0" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 15);

@@ -44,16 +44,16 @@ function onlocalplayerspawned(localclientnum) {
         function_b1cca54f(localclientnum);
     }
     if (function_65b9eb0f(localclientnum)) {
-        level thread function_29794d02(localclientnum);
+        level thread localplayerspectating(localclientnum);
     }
-    level thread function_b5a6504c(localclientnum);
+    level thread setuppropplayernames(localclientnum);
 }
 
 // Namespace prop/prop
 // Params 1, eflags: 0x0
 // Checksum 0xf2e0057b, Offset: 0x708
 // Size: 0xb0
-function function_29794d02(localclientnum) {
+function localplayerspectating(localclientnum) {
     level notify("localPlayerSpectating" + localclientnum);
     level endon("localPlayerSpectatingEnd" + localclientnum);
     var_22d4baff = playerbeingspectated(localclientnum);
@@ -115,7 +115,7 @@ function function_1d9539dd(localclientnum, player) {
 // Params 1, eflags: 0x0
 // Checksum 0x534e8ab4, Offset: 0x9c8
 // Size: 0x280
-function function_b5a6504c(localclientnum) {
+function setuppropplayernames(localclientnum) {
     level notify("setupPropPlayerNames" + localclientnum);
     level endon("setupPropPlayerNames" + localclientnum);
     while (1) {

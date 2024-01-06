@@ -314,7 +314,7 @@ model,attach_t8_loot_lmg_mk48_suppressor_mk2_view,2a886a8bd98
 model,c_t8_bo_hero_cosmic_silverback_torso1_armormedium,2a886a8bee8
 model,c_t8_mp_spe_engineer_highlander_lowerbody2_viewbody_cst,2a886a8c038
 model,c_t8_hero_playermale_wingsuit_pirate,2a886c2c918
-model,hash_97babb3ed7ddf72,2a886caf7d8
+model,wpn_t8_eqp_supply_pod_prop,2a886caf7d8
 model,attach_t8_smg_handling_foregrip_view,2a886a8cc08
 model,c_t8_mp_spe_firebreak_heist_s_lleg,2a886beee18
 model,hash_9990324350688c3,2a886c69ae8
@@ -1371,7 +1371,7 @@ model,c_t8_zmb_mob_hero_nikolai_torso1_viewbody1_cst,2a886ae6d28
 model,c_t8_mp_spe_outrider_pirate_arms1_s_rarm,2a886bf6ac8
 model,c_t8_mp_spe_buffer_superhero_lowerbody1_s_rleg,2a886bf6c18
 model,attach_t8_tac_rifle_swordfish_burst_count_world,2a886ae6e78
-model,hash_25afd8c1f55ba379,2a886c6eaf8
+model,p8_wz_armor_scrap,2a886c6eaf8
 model,attach_t8_charm_crab_view,2a886c26be8
 model,hash_25e0cb8079fe55bb,2a886ae7118
 model,c_t8_mp_spe_reaper_arms1_g_larmoff_cst,2a886ae7508
@@ -4905,7 +4905,7 @@ rumble,hash_29dda3d6a80b7a2c,2a88a79c1e8
 rumble,reload_medium,2a88a79abb0
 rumble,shotgun_fire,2a88a79abf8
 rumble,hash_2e361344d740b1c3,2a88a79ad18
-rumble,hash_2eef56e1f72b26f7,2a88a79ca58
+rumble,shock_rumble,2a88a79ca58
 rumble,hash_322cc8a226215312,2a88a79ada8
 rumble,hash_343ffab7ab4b1974,2a88a79ae38
 rumble,hash_377a7a741cacfb1d,2a88a79afe8
@@ -4960,7 +4960,7 @@ statuseffect,concertina_wire_slowed,2a88a832990
 statuseffect,hash_2608bf886a137e8e,2a88a82c870
 statuseffect,microwave_dot,2a88a831020
 statuseffect,hash_40dce028641f17d7,2a88a832050
-statuseffect,hash_4d25a4e985df5d5b,2a88a82daf0
+statuseffect,blind_swat_grenade,2a88a82daf0
 statuseffect,deaf_tinnitus,2a88a830490
 statuseffect,hash_57c6ca32810425f9,2a88a830240
 statuseffect,shock_rifle_shock,2a88a830dd0
@@ -12631,7 +12631,7 @@ objective,exposed_hacker,0
 objective,hash_70e9e73a11fef565,0
 objective,hash_711257230ffdb661,0
 objective,hash_752a17d7ca7efc2e,0
-objective,hash_75da91600d0b9482,0
+objective,bounty_drop,0
 objective,hash_762b4b0745dcf339,0
 objective,hash_76e0f6c9185b9f69,0
 objective,hash_7706e8a74123ce49,0
@@ -13702,7 +13702,7 @@ soundalias,hash_69b4b8f53967333,0
 soundalias,hash_69b600e711eea71,0
 soundalias,hash_69c0337101785f2,0
 soundalias,hash_69c36dd464dfd3e,0
-soundalias,hash_69f2e0526473883,0
+soundalias,mpl_safeguard_disabled_sting_enemy,0
 soundalias,hash_6a1fd2b356e02cb,0
 soundalias,hash_6a7590e8f818bd1,0
 soundalias,hash_6a998cb5362ef5d,0
@@ -14081,7 +14081,7 @@ soundalias,hash_9618a4c61527bc5,0
 soundalias,hash_962b9e49efdc1bc,0
 soundalias,hash_962fa406cdc070f,0
 soundalias,hash_9671a7753263728,0
-soundalias,hash_96836cd832175eb,0
+soundalias,mpl_flagdrop_sting_enemy,0
 soundalias,hash_96b071ada644d38,0
 soundalias,hash_9706ec621a5879a,0
 soundalias,hash_970d0768216a44e,0
@@ -14374,7 +14374,7 @@ soundalias,hash_b9e455f9fac4515,0
 soundalias,hash_ba40be1a2e9054d,0
 soundalias,hash_ba4eb9ce8d0862b,0
 soundalias,hash_ba5273cb6130033,0
-soundalias,hash_ba5930fc0387253,0
+soundalias,mpl_flagreturn_sting,0
 soundalias,hash_ba5b90586b27561,0
 soundalias,hash_ba6483d08838385,0
 soundalias,hash_baca1c78f47718b,0
@@ -16649,7 +16649,7 @@ soundalias,hash_1bf5fe37a1f1ddf8,0
 soundalias,hash_1bf7aef6bb9deb36,0
 soundalias,hash_1bf8b41c725e5468,0
 soundalias,hash_1bf8bc7060d6efaf,0
-soundalias,hash_1bf9bb41578fdd6c,0
+soundalias,mpl_flagget_sting_enemy,0
 soundalias,hash_1bfaf6f206ca524f,0
 soundalias,hash_1bfbc790f9ccd5f4,0
 soundalias,hash_1c0205236c818f3f,0
@@ -18038,8 +18038,8 @@ soundalias,hash_2635f28fa4849683,0
 soundalias,hash_2636bd22921e027a,0
 soundalias,hash_2637070223ee814c,0
 soundalias,hash_2637ae644177f120,0
-soundalias,hash_263807863dbbfbb0,0
-soundalias,hash_263bed863dbfb859,0
+soundalias,mpl_rad_field_meltdown_3d,0
+soundalias,mpl_rad_field_meltdown_2d,0
 soundalias,hash_263fd43242c28bbf,0
 soundalias,hash_2640ff647baea61b,0
 soundalias,hash_264a700bb44034ad,0
@@ -18769,7 +18769,7 @@ soundalias,hash_2bbf7f19b525e1b8,0
 soundalias,hash_2bc17616257ecfcc,0
 soundalias,hash_2bc3a58fdd57fe28,0
 soundalias,hash_2bc55fa140809519,0
-soundalias,hash_2bc71ce0900d512c,0
+soundalias,mpl_ballreturn_sting,0
 soundalias,hash_2bcb8de9738e6fe1,0
 soundalias,hash_2bcbfabb7965901d,0
 soundalias,hash_2bce5ad3c0c0ad39,0
@@ -19698,7 +19698,7 @@ soundalias,hash_32507db7fb530113,0
 soundalias,hash_3251400c26552823,0
 soundalias,hash_3252bd31169a0459,0
 soundalias,hash_32534f140be4bf0a,0
-soundalias,hash_3254d3d1f2792672,0
+soundalias,mpl_flagcapture_sting_friend,0
 soundalias,hash_32554f1b7e637520,0
 soundalias,hash_32565b6fe96b2660,0
 soundalias,hash_3259424d6bad92fa,0
@@ -19952,7 +19952,7 @@ soundalias,hash_34273f2f0e182a1c,0
 soundalias,hash_342aa448938b3245,0
 soundalias,hash_342b27393768c129,0
 soundalias,hash_342b4395ff9d3e2c,0
-soundalias,hash_342e0b4d5f33197a,0
+soundalias,mpl_hq_cap_us,0
 soundalias,hash_343209422c54823a,0
 soundalias,hash_343294d34611de9a,0
 soundalias,hash_3435aa0b5bfc12e5,0
@@ -20767,7 +20767,7 @@ soundalias,hash_39dd04e1088e2eea,0
 soundalias,hash_39e11605805af2c9,0
 soundalias,hash_39e450c744825d1f,0
 soundalias,hash_39e4c4593c988ce1,0
-soundalias,hash_39e5cc5a758ee6ea,0
+soundalias,mpl_safeguard_reboot_sting_enemy,0
 soundalias,hash_39e6f8a23b5f3c43,0
 soundalias,hash_39e6fdbfc730bf6c,0
 soundalias,hash_39eb0be2f6af7cc1,0
@@ -21833,7 +21833,7 @@ soundalias,hash_41b16f34c538980f,0
 soundalias,hash_41b3e5107ea36deb,0
 soundalias,hash_41c151c09393cf98,0
 soundalias,hash_41c3a68b73cfc9f2,0
-soundalias,hash_41c3b569f6556871,0
+soundalias,chr_swimming_drown,0
 soundalias,hash_41c60263255ac7d7,0
 soundalias,hash_41c639ffb6d027c1,0
 soundalias,hash_41c7cf686fe22476,0
@@ -22433,7 +22433,7 @@ soundalias,hash_46162b37185ad62c,0
 soundalias,hash_4616655cda90907c,0
 soundalias,hash_4616fcb97d4e1cd3,0
 soundalias,hash_461a79b2d7bf7162,0
-soundalias,hash_461a922357e5be28,0
+soundalias,mpl_flagget_sting_friend,0
 soundalias,hash_461e09fec989a559,0
 soundalias,hash_462556cbd2d38d08,0
 soundalias,hash_4626935765df7206,0
@@ -24177,7 +24177,7 @@ soundalias,hash_51f1b6ae44d5bbac,0
 soundalias,hash_51f22bad2b033b34,0
 soundalias,hash_51f2a9dbfbb7f4a6,0
 soundalias,hash_51f35e10a9721806,0
-soundalias,hash_51f5be495a60b2fa,0
+soundalias,mpl_flagcapture_sting_enemy,0
 soundalias,hash_51f5e50c4c241ad0,0
 soundalias,hash_51f84b78f855a453,0
 soundalias,hash_51f8fdec025c08d4,0
@@ -24891,7 +24891,7 @@ soundalias,hash_576f5211ebef5aca,0
 soundalias,hash_577139f2361062d2,0
 soundalias,hash_57715a5eaa688bfa,0
 soundalias,hash_5773bb515fe605c3,0
-soundalias,hash_57751082c99e7376,0
+soundalias,mpl_rad_field_critical_loop_3d,0
 soundalias,hash_5776d0804aa8e8a4,0
 soundalias,hash_577b0de9a81b2782,0
 soundalias,hash_577d7ff52db0c172,0
@@ -26784,7 +26784,7 @@ soundalias,hash_65668982fc2479cf,0
 soundalias,hash_656c45c2d9579272,0
 soundalias,hash_656e9eddf1628230,0
 soundalias,hash_656ee5116492e2d6,0
-soundalias,hash_656f124acc419142,0
+soundalias,mpl_safeguard_reboot_sting_friend,0
 soundalias,hash_656f644b67d33569,0
 soundalias,hash_6570a8806ae24034,0
 soundalias,hash_657139d3bb358bdc,0
@@ -27629,7 +27629,7 @@ soundalias,hash_6baf45fca986eb8e,0
 soundalias,hash_6bb3b2ab40b6cf71,0
 soundalias,hash_6bb4edb4ebf8902f,0
 soundalias,hash_6bb671042295410c,0
-soundalias,hash_6bb6a3f5fa3e7f00,0
+soundalias,mpl_seeker_mine_activate,0
 soundalias,hash_6bb7a9f1e1c8bfe7,0
 soundalias,hash_6bb8109be0bd1785,0
 soundalias,vox_mist_exert_underwater_emerge_gasp,0
@@ -27690,7 +27690,7 @@ soundalias,hash_6c0ee14151a06e1d,0
 soundalias,hash_6c104d4c4dde0876,0
 soundalias,hash_6c13e4ace635a9c1,0
 soundalias,hash_6c16aa8f5adc00bd,0
-soundalias,hash_6c16da690cc8bbe5,0
+soundalias,mpl_safeguard_disabled_sting_friend,0
 soundalias,hash_6c18d42b6a8409f9,0
 soundalias,vox_stuh_exert_sniper_gasp,0
 soundalias,hash_6c1c01e3db4528a5,0
@@ -29594,7 +29594,7 @@ soundalias,hash_7a0942da55ff521d,0
 soundalias,hash_7a097e275963e1a1,0
 soundalias,hash_7a0a3c696713b1c1,0
 soundalias,hash_7a0a9290a087b6da,0
-soundalias,hash_7a13143ffb6ebbaf,0
+soundalias,aml_dog_bark,0
 soundalias,hash_7a159ee3ca0e2ae4,0
 soundalias,hash_7a1614042eff6a21,0
 soundalias,hash_7a16d5d26f8ab414,0
@@ -30207,7 +30207,7 @@ soundalias,hash_7eb3775648ce833f,0
 soundalias,hash_7eb51f1a0028ab28,0
 soundalias,hash_7eb61f7901df1819,0
 soundalias,hash_7eb87373ea436e57,0
-soundalias,hash_7ebb1851ec8c586d,0
+soundalias,mpl_flagdrop_sting_friend,0
 soundalias,hash_7ebe04e14a827201,0
 soundalias,hash_7ebec283aba29246,0
 soundalias,hash_7ec16b9f46683768,0
@@ -30239,7 +30239,7 @@ soundalias,hash_7ee1dcb4ffe08ce8,0
 soundalias,hash_7ee2fe876d7b73f1,0
 soundalias,hash_7ee3a5126796790f,0
 soundalias,vox_plr_7_exert_sniper_gasp,0
-soundalias,hash_7ee53627c9a66c44,0
+soundalias,mpl_rad_field_critical_loop,0
 soundalias,hash_7ee7f901a97ec687,0
 soundalias,hash_7ee8722207a8c61c,0
 soundalias,hash_7eebb4f3bed8db13,0
@@ -30448,7 +30448,7 @@ client_fx,hash_4b67cae25ddc408,2a88a447eb8
 client_fx,hash_4b78f913268b146,2a88a4064b8
 client_fx,hash_4bd88ae25e3f71a,2a88a415a58
 client_fx,hash_4f19591329a33bf,2a88a3f9038
-client_fx,hash_500e41a4f3408e9,2a88a3e7478
+client_fx,player/fx_plyr_swim_bubbles_body,2a88a3e7478
 client_fx,hash_5a5f94494f33afb,2a88a45ffb8
 client_fx,hash_5b4e0c241c75dae,2a88a42d338
 client_fx,hash_5d9986a93fe4b4b,2a88a3f9218
@@ -30547,7 +30547,7 @@ client_fx,impacts/fx8_bul_impact_metal_sm,2a88a3f9e98
 client_fx,hash_127207a14b238e05,2a88a4206d8
 client_fx,hash_127813a14b280e17,2a88a4118b8
 client_fx,hash_128b6d710df48c0f,2a88a411638
-client_fx,hash_12ad8654acd39474,2a88a3f9f38
+client_fx,impacts/fx8_bul_impact_metal_lg,2a88a3f9f38
 client_fx,hash_12b26f3fa1018561,2a88a40abf8
 client_fx,hash_12b801a1dd9b7dc1,2a88a4229d8
 client_fx,hash_132ef31dcce944e9,2a88a4585d8

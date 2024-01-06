@@ -70,7 +70,7 @@
 29,#,#,#,#,#hash_322751dde777c910,#sprint,#5,#,#,#,#,#,#
 29,#,#,#,#,#hash_163077e21e01f4a7,#60,#,#,#,#,#,#,#
 30,#hash_37f11d9a44a08099,#hash_5caca63ea5d79d4f,#hash_190dd5ec5f5612c1,#,#friendly_fire,#3,#,#,#,#,#,#,#
-30,#,#,#,#,#defend_area,#hash_3c9744dde32b0ee,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#hash_7963c65332b7e93,#hash_741b5ca9e59fbd8,#zone_grand_stairs_c_deck,#hash_149c826eca312a02,#hash_3a509d58d70350f9
+30,#,#,#,#,#defend_area,#hash_3c9744dde32b0ee,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#zone_grand_stairs_a_deck,#zone_grand_stairs_b_deck,#zone_grand_stairs_c_deck,#zone_grand_stairs_d_deck,#zone_grand_stairs_bottom
 30,#,#,#,#,#force_archetypes,#blight_father,#,#,#,#,#,#,#
 30,#,#,#,#,#restrict_controls,#invert,#,#,#,#,#,#,#
 30,#,#,#,#,#give_reward,#fastest_time_to_complete_round_30,#hash_2b5c1c69bebf4f4,#hash_18f9261a2caa7739,#hash_7de12be102824219,#hash_65a6063dd5dc5425,#1,#,#

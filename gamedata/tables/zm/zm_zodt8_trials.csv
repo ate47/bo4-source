@@ -33,6 +33,6 @@
 27,#hash_4185591323b4a06d,#hash_1b52c63b66477cd2,#hash_4add0651a1e51e02,#,#restrict_loadout,#leveraction,#,#,#,#,#,#,#
 28,#hash_7aff6c8730240d5,#hash_b4e63cebd9c4526,#hash_617bd4b683c55156,#,#disable_hud,#,#,#,#,#,#,#,#
 29,#unpacked,#hash_3adffaef19634741,#hash_10c2b841cbdf513b,#,#hash_7dd35595d2a7953a,#,#,#,#,#,#,#,#
-30,#hash_37f11d9a44a08099,#hash_2c1aa9723e93ded2,#hash_4536b98326030402,#,#defend_area,#hash_3c9744dde32b0ee,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#hash_7963c65332b7e93,#hash_741b5ca9e59fbd8,#zone_grand_stairs_c_deck,#hash_149c826eca312a02,#hash_3a509d58d70350f9
+30,#hash_37f11d9a44a08099,#hash_2c1aa9723e93ded2,#hash_4536b98326030402,#,#defend_area,#hash_3c9744dde32b0ee,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#zone_grand_stairs_a_deck,#zone_grand_stairs_b_deck,#zone_grand_stairs_c_deck,#zone_grand_stairs_d_deck,#zone_grand_stairs_bottom
 30,#,#,#,#,#force_archetypes,#blight_father,#,#,#,#,#,#,#
 30,#,#,#,#,#give_reward,#fastest_time_to_complete_round_30,#hash_f60cd1936dfe2ae,#uie_trial_medal_gold,#hash_455678c15cd3bb55,#hash_2c88c6128e0be61,#1,#,#

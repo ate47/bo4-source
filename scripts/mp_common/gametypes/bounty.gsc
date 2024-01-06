@@ -1321,7 +1321,7 @@ function private function_1aca4a4e(helicopter, destination) {
         self waittill(#"near_goal");
     } else {
         helicopter thread airsupport::setgoalposition(destination, "bounty_deposit_site_heli_reached", 1);
-        helicopter waittill(#"hash_43f34de2567c7955");
+        helicopter waittill(#"bounty_deposit_site_heli_reached");
     }
     last_distance_from_goal_squared = 1e+07 * 1e+07;
     continue_waiting = 1;
@@ -1500,7 +1500,7 @@ function function_d8151863(origin) {
     useobj function_ee4574b1();
     fwd = (0, 0, 1);
     right = (0, -1, 0);
-    useobj.fx = spawnfx(#"hash_43e3623e03cb4c5c", origin, fwd, right);
+    useobj.fx = spawnfx(#"ui/fx_dom_marker_team_r90", origin, fwd, right);
     useobj.fx.team = #"none";
     triggerfx(useobj.fx, 0.001);
 }

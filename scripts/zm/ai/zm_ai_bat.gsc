@@ -477,7 +477,7 @@ function function_db99ddec(params) {
 // Size: 0xdc
 function state_death_update(params) {
     self endon(#"death");
-    self asmrequestsubstate(#"hash_49ca75b66bd55529");
+    self asmrequestsubstate(#"death@stationary");
     if (isdefined(self.var_c4e19d3) && isdefined(self.var_c4e19d3.hunted_by)) {
         self.var_c4e19d3.hunted_by--;
     }

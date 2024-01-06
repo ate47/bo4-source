@@ -20,8 +20,8 @@ function event_handler[level_init] main(eventstruct) {
     callback::on_localclient_connect(&on_localclient_connect);
     callback::on_gameplay_started(&on_gameplay_started);
     callback::on_localplayer_spawned(&on_localclient_spawned);
-    clientfield::register("world", "remove_blood_decals", 1, 1, "int", &function_cfadee36, 1, 0);
-    clientfield::register("vehicle", "hide_tank_rob", 1, 1, "int", &function_4c64b702, 1, 0);
+    clientfield::register("world", "remove_blood_decals", 1, 1, "int", &remove_blood_decals, 1, 0);
+    clientfield::register("vehicle", "hide_tank_rob", 1, 1, "int", &hide_tank_rob, 1, 0);
     mp_seaside_fx::main();
     mp_seaside_sound::main();
     load::main();
@@ -101,7 +101,7 @@ function on_localclient_connect(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x9c04b74a, Offset: 0x718
 // Size: 0xe2
-function function_4c64b702(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function hide_tank_rob(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         if (!isdefined(level.var_f55e70b)) {
             level.var_f55e70b = [];
@@ -161,7 +161,7 @@ function on_gameplay_started(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0xa7eb2239, Offset: 0xa30
 // Size: 0xd8
-function function_cfadee36(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function remove_blood_decals(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         a_decals = findvolumedecalindexarray("recon_blood");
         foreach (decal in a_decals) {

@@ -631,7 +631,7 @@ model,hash_7ff3186036fef18e,294cb942ae8
 aitype,hash_315abd45aced506,294cefb6c40
 aitype,hash_d1901246c738b62,294cefb3040
 aitype,hash_f7f25df671c78c9,294cefaf440
-aitype,hash_13a322536b6253e5,294cefb0340
+aitype,spawner_zm_mannequin_ally,294cefb0340
 aitype,$default_aitype,294cefae540
 aitype,hash_23f3ccca936576a9,294cefb8a40
 aitype,hash_3583ee4689e55506,294cefb3f40
@@ -8154,7 +8154,7 @@ soundalias,hash_425b3fc2f368565b,0
 soundalias,hash_4269c1c120848298,0
 soundalias,hash_4269c3c1208485fe,0
 soundalias,hash_4269c4c1208487b1,0
-soundalias,hash_426d8d47cec3b2f0,0
+soundalias,zmb_battery_insert,0
 soundalias,hash_4273b55aa85e3d72,0
 soundalias,hash_427542799afa5126,0
 soundalias,hash_42924f60b7b4c07a,0
@@ -11639,7 +11639,7 @@ client_fx,hash_12172517482ddd8b,294cef26b98
 client_fx,hash_122f2f174842806a,294cef26c38
 client_fx,impacts/fx8_bul_impact_metal_sm,294cef19e98
 client_fx,hash_12a82669af8f6be0,294cef35378
-client_fx,hash_12ad8654acd39474,294cef19f38
+client_fx,impacts/fx8_bul_impact_metal_lg,294cef19f38
 client_fx,hash_12b26f3fa1018561,294cef2abf8
 client_fx,hash_12c020a9aaebd971,294cef6b478
 client_fx,zm_ai/fx8_cata_cor_aura_locked,294cef7d998

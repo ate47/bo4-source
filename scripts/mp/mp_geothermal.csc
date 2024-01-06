@@ -14,7 +14,7 @@
 // Checksum 0x2c70aad7, Offset: 0x180
 // Size: 0x13c
 function event_handler[level_init] main(eventstruct) {
-    clientfield::register("toplayer", "toggle_player_steam", 1, 1, "int", &function_37488be, 0, 0);
+    clientfield::register("toplayer", "toggle_player_steam", 1, 1, "int", &toggle_player_steam, 0, 0);
     level.var_bbb8810e = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     callback::on_localclient_connect(&on_localclient_connect);
@@ -109,7 +109,7 @@ function on_gameplay_started(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0xfa47f16d, Offset: 0x538
 // Size: 0xfc
-function function_37488be(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function toggle_player_steam(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self !== function_5c10bd79(localclientnum)) {
         return;
     }

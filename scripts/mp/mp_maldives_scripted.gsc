@@ -37,11 +37,11 @@ function on_game_playing() {
     var_64c54a7d = getent("laser_kill_trig", "targetname");
     var_64c54a7d triggerenable(0);
     var_64c54a7d callback::on_trigger(&function_7da97cb5);
-    var_b8169a3f = struct::get("laser_button");
-    var_b8169a3f.mdl_gameobject gameobjects::set_onuse_event(&function_bc78a4d0);
-    var_b8169a3f.mdl_gameobject.var_64c54a7d = var_64c54a7d;
+    laser_button = struct::get("laser_button");
+    laser_button.mdl_gameobject gameobjects::set_onuse_event(&function_bc78a4d0);
+    laser_button.mdl_gameobject.var_64c54a7d = var_64c54a7d;
     if (!getgametypesetting(#"allowmapscripting")) {
-        var_b8169a3f.mdl_gameobject gameobjects::disable_object();
+        laser_button.mdl_gameobject gameobjects::disable_object();
         return;
     }
     if (util::isfirstround()) {

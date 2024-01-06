@@ -13,7 +13,7 @@
 // Checksum 0x7b6fb3d8, Offset: 0x208
 // Size: 0x14e
 function event_handler[level_init] main(eventstruct) {
-    clientfield::register("scriptmover", "helo_spawn_flavor_rope_pulse", 1, 1, "counter", &function_1fa60c00, 0, 0);
+    clientfield::register("scriptmover", "helo_spawn_flavor_rope_pulse", 1, 1, "counter", &helo_spawn_flavor_rope_pulse, 0, 0);
     level.var_bbb8810e = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     callback::on_localclient_connect(&on_localclient_connect);
@@ -109,7 +109,7 @@ function on_gameplay_started(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0xaaa55240, Offset: 0x5d0
 // Size: 0xf8
-function function_1fa60c00(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function helo_spawn_flavor_rope_pulse(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     while (isdefined(self)) {
         pos = self gettagorigin("tag_ground");
         if (!isdefined(pos)) {

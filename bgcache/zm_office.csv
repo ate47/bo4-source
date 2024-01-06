@@ -4334,7 +4334,7 @@ soundalias,hash_227b16b532c0b980,0
 soundalias,hash_227b17b532c0bb33,0
 soundalias,hash_227b18b532c0bce6,0
 soundalias,hash_22ac5a3825182036,0
-soundalias,hash_22d2af808989ff70,0
+soundalias,vox_pentagon_teleport_establish_pann_0,0
 soundalias,hash_22e4054b05c95b88,0
 soundalias,hash_22e45f12bb95d04e,0
 soundalias,hash_22f0275e647e01e8,0
@@ -5333,7 +5333,7 @@ soundalias,hash_423ecb0ab75d4f29,0
 soundalias,hash_423ecc0ab75d50dc,0
 soundalias,hash_4244913ace6bceb7,0
 soundalias,hash_425b3fc2f368565b,0
-soundalias,hash_426d8d47cec3b2f0,0
+soundalias,zmb_battery_insert,0
 soundalias,hash_42779653795b1a0b,0
 soundalias,hash_427dc2faecc9adf0,0
 soundalias,hash_4283324c9a775c45,0
@@ -7400,7 +7400,7 @@ client_fx,hash_12172517482ddd8b,23060166b98
 client_fx,hash_122f2f174842806a,23060166c38
 client_fx,impacts/fx8_bul_impact_metal_sm,23060159e98
 client_fx,hash_12a82669af8f6be0,23060185b38
-client_fx,hash_12ad8654acd39474,23060159f38
+client_fx,impacts/fx8_bul_impact_metal_lg,23060159f38
 client_fx,hash_12b26f3fa1018561,2306016abf8
 client_fx,zm_ai/fx8_cata_cor_aura_locked,23060188518
 client_fx,zm_ai/fx8_cata_elec_blast,23060181038

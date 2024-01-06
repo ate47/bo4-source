@@ -9919,7 +9919,7 @@ soundalias,hash_4ac10c7ca6c1773,0
 soundalias,hash_4ade0aee2438391,0
 soundalias,hash_4ae4e83e6f9f614,0
 soundalias,hash_4b19e77f9496803,0
-soundalias,hash_4b1e982689f19c9,0
+soundalias,pfx_t8_spark_med,0
 soundalias,hash_4b3ed0465444285,0
 soundalias,hash_4b4c5bbff1e336d,0
 soundalias,hash_4b5a740671f8de9,0
@@ -10443,7 +10443,7 @@ soundalias,hash_aa14a68228ad4fe,0
 soundalias,hash_aa565d8755cb858,0
 soundalias,hash_aa631778ae92805,0
 soundalias,hash_aa71e4411867210,0
-soundalias,hash_aa97d1337005f53,0
+soundalias,amb_rattle_barrel,0
 soundalias,hash_aaaaae2627028a7,0
 soundalias,hash_aaae6aed929e51e,0
 soundalias,hash_ab2c828d78c9703,0
@@ -13338,7 +13338,7 @@ soundalias,hash_2bd483e6c4af4c6c,0
 soundalias,hash_2bd4fea3f719b989,0
 soundalias,hash_2bd6dfc9a32f59ff,0
 soundalias,hash_2bdba1273e719953,0
-soundalias,hash_2bdcb267191e4860,0
+soundalias,pfx_spark_med_far,0
 soundalias,hash_2bdfd79f4f984e72,0
 soundalias,hash_2be820e6873d9feb,0
 soundalias,hash_2be9f5fd506f9030,0
@@ -15305,7 +15305,7 @@ soundalias,hash_41b14639972bba0d,0
 soundalias,hash_41b16b59c95cbc2d,0
 soundalias,hash_41b16f34c538980f,0
 soundalias,hash_41b3e5107ea36deb,0
-soundalias,hash_41c3b569f6556871,0
+soundalias,chr_swimming_drown,0
 soundalias,hash_41cd74bd9520672a,0
 soundalias,hash_41cee949b2ace458,0
 soundalias,hash_41d0dc8cd4904d3e,0
@@ -20868,7 +20868,7 @@ client_fx,hash_48e1ffce7604b39,294cef7e118
 client_fx,hash_4b78f913268b146,294cef264b8
 client_fx,hash_4f0ff8b76d3ef98,294cef6e678
 client_fx,hash_4f19591329a33bf,294cef19038
-client_fx,hash_500e41a4f3408e9,294cef07478
+client_fx,player/fx_plyr_swim_bubbles_body,294cef07478
 client_fx,hash_58b227559fe0083,294cef6f618
 client_fx,hash_5a4438e8323f32b,294cef60bb8
 client_fx,zombie/fx8_perk_blaze_phase_charged_stretch,294cef80b98
@@ -20941,7 +20941,7 @@ client_fx,hash_122f2f174842806a,294cef26c38
 client_fx,impacts/fx8_bul_impact_metal_sm,294cef19e98
 client_fx,hash_128b6d710df48c0f,294cef31638
 client_fx,hash_128e20307b969081,294cef3b8b8
-client_fx,hash_12ad8654acd39474,294cef19f38
+client_fx,impacts/fx8_bul_impact_metal_lg,294cef19f38
 client_fx,hash_12b26f3fa1018561,294cef2abf8
 client_fx,hash_13526674411d3b0d,294cef2cc78
 client_fx,hash_13595274412337bf,294cef2cd18
@@ -21082,7 +21082,7 @@ client_fx,hash_2bcfbebc06c5bd25,294cef698f8
 client_fx,hash_2bd6cabc06cbf037,294cef2f978
 client_fx,zm_ai/fx8_blightfather_maggot_death_exp,294cef3ad78
 client_fx,hash_2c27cb25fc9a30a3,294cef1cb98
-client_fx,hash_2c5dde55fc1b9f45,294cef54638
+client_fx,weapon/fx_prox_grenade_exp,294cef54638
 client_fx,hash_2d1ceb0fb21de0f9,294cef2b378
 client_fx,hash_2d51902c1ec0748a,294cef82e98
 client_fx,hash_2d6433effb9c5c33,294cef492d8

@@ -223,7 +223,7 @@ function function_84d0eb82(a_ents) {
 function function_e3ec98e4(a_ents) {
     level.var_578a0ca4 = spawnstruct();
     level.var_578a0ca4.scene_ents = self.scene_ents;
-    self.var_a9572efa = getent("rocket_kill_trig", "targetname");
+    self.rocket_kill_trig = getent("rocket_kill_trig", "targetname");
     var_93b0191c = struct::get_array("rocket_gantry_rumble");
     rumbles = [];
     foreach (pos in var_93b0191c) {
@@ -234,8 +234,8 @@ function function_e3ec98e4(a_ents) {
         }
         rumbles[rumbles.size] = util::spawn_model(#"tag_origin", pos.origin, pos.angles);
     }
-    if (isdefined(self.var_a9572efa)) {
-        self.var_a9572efa triggerenable(0);
+    if (isdefined(self.rocket_kill_trig)) {
+        self.rocket_kill_trig triggerenable(0);
     }
     array::run_all(rumbles, &playrumblelooponentity, "mp_cosdmodrome_gantry_prep_rumble");
     function_aa8af5cd(level.var_40263d6, "vox_rupa_pa_rocket_sequence_3");
@@ -256,22 +256,22 @@ function function_e3ec98e4(a_ents) {
 // Size: 0x2ec
 function function_269c793(a_ents) {
     function_aa8af5cd(level.var_40263d6, "evt_rocket_alarm");
-    if (isdefined(self.var_a9572efa)) {
+    if (isdefined(self.rocket_kill_trig)) {
         level endon(#"game_ended");
         a_ents[#"prop 3"] endon(#"death");
-        var_f81682b6 = util::spawn_model(#"tag_origin", self.var_a9572efa.origin);
+        var_f81682b6 = util::spawn_model(#"tag_origin", self.rocket_kill_trig.origin);
         var_f81682b6 linkto(a_ents[#"prop 3"]);
         a_ents[#"prop 3"] waittill(#"start_damage");
         a_ents[#"prop 3"] util::delay("line_23", undefined, &function_aa8af5cd, level.var_40263d6, "vox_rupa_pa_rocket_sequence_23");
         level.var_578a0ca4 thread function_7be405f8();
-        self.var_a9572efa triggerenable(1);
-        self.var_a9572efa callback::on_trigger(&function_971b8aa2);
+        self.rocket_kill_trig triggerenable(1);
+        self.rocket_kill_trig callback::on_trigger(&function_971b8aa2);
         self thread function_6edeb4c2(a_ents[#"prop 3"]);
         var_f81682b6 playrumblelooponentity("mp_cosdmodrome_rocket_rumble");
         a_ents[#"prop 3"] waittill(#"stop_damage");
         level thread function_aa8af5cd(level.var_40263d6, "vox_rupa_pa_rocket_sequence_19");
-        if (isdefined(self) && isdefined(self.var_a9572efa)) {
-            self.var_a9572efa triggerenable(0);
+        if (isdefined(self) && isdefined(self.rocket_kill_trig)) {
+            self.rocket_kill_trig triggerenable(0);
         }
         a_ents[#"prop 3"] thread util::delete_on_death(var_f81682b6);
         a_ents[#"prop 3"] waittill(#"cleared_tower");
@@ -302,7 +302,7 @@ function function_6edeb4c2(rocket) {
     level endon(#"game_ended");
     rocket endon(#"stop_damage", #"death");
     while (1) {
-        self kill_equipment(self.var_a9572efa);
+        self kill_equipment(self.rocket_kill_trig);
         waitframe(5);
     }
 }
@@ -413,15 +413,15 @@ function is_equipment(entity) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x1fe95c7d, Offset: 0x1d70
 // Size: 0x26e
-function kill_equipment(var_a9572efa) {
+function kill_equipment(rocket_kill_trig) {
     self endon(#"death");
     level endon(#"start_warzone");
-    if (!isdefined(var_a9572efa)) {
+    if (!isdefined(rocket_kill_trig)) {
         return;
     }
     equipment = getentitiesinradius(self.origin, 10000);
     foreach (device in equipment) {
-        if (isdefined(device) && is_equipment(device) && device istouching(var_a9572efa)) {
+        if (isdefined(device) && is_equipment(device) && device istouching(rocket_kill_trig)) {
             switch (device.weapon.name) {
             case #"eq_tripwire":
                 device [[ level.var_2e06b76a ]]();

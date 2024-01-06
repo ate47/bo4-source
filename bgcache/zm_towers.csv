@@ -130,8 +130,8 @@ model,p8_zm_gla_paper_narrative_47,2a886d2da78
 model,p8_zm_gla_paper_narrative_46,2a886cf7ad8
 model,p8_zm_gla_paper_narrative_49,2a886cb9408
 model,p8_zm_gla_paper_narrative_48,2a886c3e498
-model,hash_1461ab73187a731f,2a886d3ee18
-model,hash_1461ac73187a74d2,2a886cf3548
+model,zombietron_gib_chunk_meat_01,2a886d3ee18
+model,zombietron_gib_chunk_meat_02,2a886cf3548
 model,p8_zm_wall_buy_ar_fastfire,2a886c942c8
 model,p8_zm_gla_lightning_rod_01_platform_cage,2a886c21938
 model,p7_3d_txt_antiqua_bold_m_red,2a886cadaf8
@@ -835,7 +835,7 @@ weapon,zombie_ai_defaultmelee,2a889023c08
 weapon,blight_father_melee,2a889043b88
 weapon,hash_6e1b405fe2e83b3c,2a8890a3a08
 weapon,ww_crossbow_charged_t8_zm,2a88902bbe8
-weapon,hash_791d87db185e6ff8,2a889025158
+weapon,elephant_eye_projectile_zm,2a889025158
 weapon,hash_7fcc9f73649d03f7,2a889072578
 gesture,hash_1aef2677f88e3ab4,2a888d9c4b0
 gesture,hash_1b6fbb75ef5d93c4,2a888d9c8c0
@@ -4515,7 +4515,7 @@ soundalias,hash_be411cd34835f9a,0
 soundalias,hash_be412cd3483614d,0
 soundalias,hash_be43cfca92fbd03,0
 soundalias,hash_bed745bc0187b9d,0
-soundalias,hash_c0139f56027764f,0
+soundalias,zmb_ai_gladiator_axe_throw,0
 soundalias,hash_c0b6a178c566a55,0
 soundalias,hash_c0bb4bb6f79f737,0
 soundalias,hash_c141f155fdbcc1a,0
@@ -7744,7 +7744,7 @@ soundalias,hash_5b1d46c1da01526a,0
 soundalias,hash_5b1d47c1da01541d,0
 soundalias,hash_5b2eb9e209b6ab5f,0
 soundalias,hash_5b2f4a906b0d72b6,0
-soundalias,hash_5b47d81764649e99,0
+soundalias,zmb_traps_blade_lp,0
 soundalias,hash_5b5439e27642da71,0
 soundalias,hash_5b5b9f808660ee35,0
 soundalias,hash_5b809557262a2ac6,0
@@ -8477,7 +8477,7 @@ soundalias,hash_6b68b9179b859d12,0
 soundalias,hash_6b9785bb89496216,0
 soundalias,hash_6bac935390e59e10,0
 soundalias,hash_6bae336584399f4d,0
-soundalias,hash_6bb6a3f5fa3e7f00,0
+soundalias,mpl_seeker_mine_activate,0
 soundalias,hash_6bb7a9f1e1c8bfe7,0
 soundalias,hash_6bbdf09df8482b6d,0
 soundalias,hash_6bc2c45bdaed326e,0
@@ -9409,7 +9409,7 @@ client_fx,hash_11321db507e6caf1,2a88a424738
 client_fx,hash_12172517482ddd8b,2a88a406b98
 client_fx,hash_122f2f174842806a,2a88a406c38
 client_fx,impacts/fx8_bul_impact_metal_sm,2a88a3f9e98
-client_fx,hash_12ad8654acd39474,2a88a3f9f38
+client_fx,impacts/fx8_bul_impact_metal_lg,2a88a3f9f38
 client_fx,hash_12b26f3fa1018561,2a88a40abf8
 client_fx,zm_ai/fx8_cata_cor_aura_locked,2a88a455ab8
 client_fx,hash_13f09e4051884309,2a88a447a58

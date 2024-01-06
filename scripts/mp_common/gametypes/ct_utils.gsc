@@ -1498,7 +1498,7 @@ function function_80540e80(var_64ef1697 = "BUTTON_A", var_2ee3d6f5 = 0.5) {
     var_c476d87a[#"button_a"] = #"hash_4df4fd56580d5967";
     var_c476d87a[#"hash_1c3ac64d5a66f457"] = #"hash_15620c895dcec00e";
     var_c476d87a[#"hash_24733ab82a65a3fd"] = #"hash_2cb5a2ce94a6ee6d";
-    var_c476d87a[#"button_square"] = #"hash_72d4665454938ae";
+    var_c476d87a[#"button_square"] = #"square_button_paused";
     str_state = var_c476d87a[var_64ef1697];
     var_6976202f = str_state + "_off";
     self function_27420756(str_state);

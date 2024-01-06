@@ -348,7 +348,7 @@ function propinputwatch() {
     self.var_960f723f = 1;
     while (1) {
         waitresult = undefined;
-        waitresult = self waittill(#"lock", #"spin", #"changeprop", #"hash_1b8b34b45c703f21", #"propability", #"cloneprop", #"hide");
+        waitresult = self waittill(#"lock", #"spin", #"changeprop", #"settoslope", #"propability", #"cloneprop", #"hide");
         msg = waitresult._notify;
         if (!isdefined(msg)) {
             continue;

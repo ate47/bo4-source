@@ -229,7 +229,7 @@ model,c_t8_bo_hero_cosmic_silverback_torso1_armormedium,294cb5abee8
 model,c_t8_mp_spe_engineer_highlander_lowerbody2_viewbody_cst,294cb5ac038
 model,p8_zm_elixir_temporal_gift,294cb7ffa48
 model,c_t8_hero_playermale_wingsuit_pirate,294cb731018
-model,hash_97babb3ed7ddf72,294cb77eef8
+model,wpn_t8_eqp_supply_pod_prop,294cb77eef8
 model,c_t8_mp_spe_firebreak_heist_s_lleg,294cb70ee18
 model,hash_9935705bdae408c,294cb74f5b8
 model,attach_t8_ar_galil_silencer_view,294cb5acff8
@@ -8951,7 +8951,7 @@ client_fx,hash_4b67cae25ddc408,294cef444b8
 client_fx,hash_4b78f913268b146,294cef264b8
 client_fx,hash_4bd88ae25e3f71a,294cef44558
 client_fx,hash_4f19591329a33bf,294cef19038
-client_fx,hash_500e41a4f3408e9,294cef07478
+client_fx,player/fx_plyr_swim_bubbles_body,294cef07478
 client_fx,hash_558beb0d06104af,294cef34b58
 client_fx,hash_58b227559fe0083,294cef6f618
 client_fx,hash_5b4e0c241c75dae,294cef57f18
@@ -9030,7 +9030,7 @@ client_fx,impacts/fx8_bul_impact_metal_sm,294cef19e98
 client_fx,hash_127207a14b238e05,294cef460d8
 client_fx,hash_127813a14b280e17,294cef46178
 client_fx,hash_128b6d710df48c0f,294cef31638
-client_fx,hash_12ad8654acd39474,294cef19f38
+client_fx,impacts/fx8_bul_impact_metal_lg,294cef19f38
 client_fx,hash_12b26f3fa1018561,294cef2abf8
 client_fx,hash_12b801a1dd9b7dc1,294cef53878
 client_fx,hash_132ef31dcce944e9,294cef316d8

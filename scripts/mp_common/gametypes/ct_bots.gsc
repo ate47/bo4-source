@@ -758,7 +758,7 @@ function function_956b904a() {
             self thread function_4b111722();
             break;
         case 3:
-            self thread function_7bb67fd();
+            self thread bot_chase_state();
             break;
         case 5:
             self thread function_9125af5f();
@@ -1072,9 +1072,9 @@ function function_4b111722() {
 // Params 0, eflags: 0x0
 // Checksum 0xb2c29dcf, Offset: 0x3f70
 // Size: 0x33a
-function function_7bb67fd() {
+function bot_chase_state() {
     self endon(#"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_chase", #"reset_pathing", #"hash_658257c9e391c92c");
-    self notify(#"hash_7672894fd864263d");
+    self notify(#"bot_chase_state");
     a_players = util::get_players(#"allies");
     e_enemy = self get_enemy();
     distancesq = distancesquared(self.origin, e_enemy.origin);

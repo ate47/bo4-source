@@ -97,7 +97,7 @@ function function_53d38216(einflictor, attacker, idamage, smeansofdeath, weapon,
         } else {
             level flag::set("ct_fail_objective_killed");
         }
-    } else if (self !== level.var_748a14fe) {
+    } else if (self !== level.ai_vip) {
         if (isplayer(einflictor)) {
             einflictor thread function_cf613da7();
             einflictor thread ct_utils::function_785eb2ca();
@@ -267,7 +267,7 @@ function function_98783e17() {
 function function_7e7652be() {
     self endon(#"death");
     level endon(#"game_ended");
-    level.var_748a14fe = self;
+    level.ai_vip = self;
     self clientfield::set("set_vip", 2);
     self thread function_78a1b9ef();
     var_70ff5c3a = ct_utils::function_4a23fd2b();

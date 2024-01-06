@@ -28,7 +28,7 @@ vehicle,defaultvehicle_mp,294cf08eb68
 vehicle,veh_drone_squadron_mp,294cf10b1a8
 vehicle,vehicle_t8_mil_helicopter_overwatch,294cf118328
 vehicle,spawner_boct_mp_wing_drone,294cf0c3168
-vehicle,hash_6efac14362579f4c,294cf11ebe8
+vehicle,vehicle_t8_mil_helicopter_transport_mp_escort,294cf11ebe8
 vehicle,veh_sig_minigun_44,294cf0adcf8
 vehicle,ai_tank_drone_mp,294cf13a918
 vehicle,spawner_bo3_ai_tank_mp,294cf0f7768
@@ -142,7 +142,7 @@ model,p7_log_wood_pile_02,294cb7b7b38
 model,hash_94892650abab274,294cb5ac2d8
 model,p8_mphd_generator,294cb7a1b78
 model,attach_t8_pistol_revolver_hical_mk2_world,294cb5ac968
-model,hash_97babb3ed7ddf72,294cb77eef8
+model,wpn_t8_eqp_supply_pod_prop,294cb77eef8
 model,p8_awning_canvas_01_160_black,294cb7b8078
 model,hash_9afca9e1fb89764,294cb98ab48
 model,hash_9cbfd2954fa996b,294cb5ad688
@@ -894,7 +894,7 @@ model,attach_t8_pistol_burst_suppressor_sig_02_world,294cb681de8
 model,p7_wes_trophy_taxidermy_bear,294cb8587b8
 model,p8_modern_outdoor_umbrella_02_short_arm_closed,294cb75ad78
 model,hash_4ed640692299ad0f,294cb8e9448
-model,hash_4ed969f6bbfe1745,294cb7dc5e8
+model,p8_heist_duffel_bag_set_open,294cb7dc5e8
 model,hash_4f1d95443a53a5ee,294cb683438
 model,hash_4f3bc3e35026f31e,294cb96fa28
 model,attach_t8_pistol_revolver_scope_mk2_view,294cb683c18
@@ -916,7 +916,7 @@ model,hash_50f92ab26d720a29,294cb7f75b8
 model,hash_512916677d707803,294cb9bc948
 model,hash_513c50a04aac9949,294cba6ae58
 model,veh_t8_drone_hunter_mp_light,294cb87e768
-model,hash_5151f85cc96ee8a5,294cb8d2768
+model,wpn_t7_shield_riot_world_lh,294cb8d2768
 model,p7_fir_tank_propane_02_full,294cb9d1408
 model,p8_crate_wood_milk_01,294cba15958
 model,attach_t8_pistol_standard_ext_mag_sig_02_view,294cb68be08
@@ -1481,7 +1481,7 @@ weapon,hash_f223a2a36c9bc0a,294cd9e4188
 weapon,hash_f223b2a36c9bdbd,294cd9e56d8
 weapon,sig_minigun_turret_36_mp,294cdc9f698
 weapon,ultimate_turret_mp,294cdc14e18
-weapon,hash_114729f4d5a8d08c,294cdbbba28
+weapon,tank_robot_launcher_turret_ct,294cdbbba28
 weapon,hash_117639f4d5d05c7e,294cdcb60e8
 weapon,hash_12df2a6ecc1e31f1,294cdc6b768
 weapon,killstreak_qrdrone_mp,294cdc936c8
@@ -1901,11 +1901,11 @@ gesture,hash_7e00f34f8aa5ff91,294cd8c8fd0
 gesture,hash_7e105a9aa11224bc,294cd913008
 gesture,hash_7ec051bc4262c423,294cd8f0990
 gesture,hash_7fc13be092570638,294cd902e10
-gesturetable,hash_3907056485976ae,294cd9bf200
+gesturetable,gestable_shocked_success,294cd9bf200
 gesturetable,gestable_command_flanking,294cd9bde80
 gesturetable,hash_5bf0af11f628e09,294cd9bda70
 gesturetable,hash_c613111b2c030f4,294cd9bdee8
-gesturetable,hash_d89193ea571cbb0,294cd9bf8e8
+gesturetable,gestable_shocked_reaction,294cd9bf8e8
 gesturetable,hash_e0c6ad827f81601,294cd9bdf50
 gesturetable,hash_e67705a3f529b61,294cd9bf060
 gesturetable,gestable_command_acknowledge,294cd9be020
@@ -1972,7 +1972,7 @@ rumble,shotgun_fire,294cf2babf8
 rumble,hash_2c3b37e1188f0f07,294cf2bcb78
 rumble,hash_2e361344d740b1c3,294cf2bad18
 rumble,hash_2e3cb467b18efdfa,294cf2bad60
-rumble,hash_2eef56e1f72b26f7,294cf2bcb30
+rumble,shock_rumble,294cf2bcb30
 rumble,hash_322cc8a226215312,294cf2bada8
 rumble,hash_343ebed0d19bf830,294cf2badf0
 rumble,hash_343ffab7ab4b1974,294cf2bae38
@@ -8504,7 +8504,7 @@ eventstring,end_sustaining_action,0
 eventstring,hash_2dddf8559f5b304d,0
 eventstring,hash_2f68752dea898974,0
 eventstring,announcement_event,0
-eventstring,hash_30fd7942c15836cd,0
+eventstring,spawnselectkeyboard,0
 eventstring,prematch_timer_ended,0
 eventstring,isintrotutorialmovie,0
 eventstring,hash_390a1acd2edcd5b7,0
@@ -8663,7 +8663,7 @@ objective,exposed_hacker,0
 objective,hash_70e9e73a11fef565,0
 objective,hash_711257230ffdb661,0
 objective,hash_752a17d7ca7efc2e,0
-objective,hash_75da91600d0b9482,0
+objective,bounty_drop,0
 objective,hash_762b4b0745dcf339,0
 objective,hash_76e0f6c9185b9f69,0
 objective,hash_7706e8a74123ce49,0
@@ -8682,11 +8682,11 @@ fx,hash_f30d0a8ac6a632,294cef60898
 fx,hash_255ba1e54330098,294cef5fa38
 fx,hash_2b3d580ca590362,294cef882f8
 fx,hash_34be810b7f57d6f,294cef66158
-fx,hash_4288c4493dadcbc,294cef83578
+fx,destruct/fx8_safeguard_robot_exp,294cef83578
 fx,explosions/fx_exp_bomb_demo_mp,294cef71198
 fx,hash_56c8182de62c1c6,294cef697b8
 fx,hash_5aeba06c60de78d,294cef68458
-fx,hash_631d4ec059edfe4,294cef5d198
+fx,electric/fx8_surge_short_robot,294cef5d198
 fx,hash_6a014c5278932b0,294cef74118
 fx,hash_6c355d2e51adf7a,294cef65398
 fx,hash_7f12a8850a85b23,294cef63db8
@@ -8728,7 +8728,7 @@ fx,weapon/fx8_equip_swat_smk_signal,294cef69fd8
 fx,ui/fx8_ui_ct_marker_team_b90_yllw,294cef7d8f8
 fx,hash_28d202d085cbd32e,294cef67058
 fx,hash_2ab40e641efec97d,294cef7d218
-fx,hash_2bb56d8eee07c7ef,294cef49418
+fx,player/fx_plyr_clone_reaper_appear,294cef49418
 fx,hash_2bc6b9bfb73c5eb2,294cef84978
 fx,hash_2c26e887cd7a6b92,294cef7c278
 fx,ui/fx8_fracture_deposit_point_end,294cef79c58
@@ -8765,7 +8765,7 @@ fx,hash_3db1ecb54b192a49,294cef5ab78
 fx,hash_3f9d0a8e45ee201f,294cef72778
 fx,hash_416ab5cb13a9af8c,294cef1ef38
 fx,hash_43abe4a9ce6abd32,294cef85c38
-fx,hash_43e3623e03cb4c5c,294cef2f798
+fx,ui/fx_dom_marker_team_r90,294cef2f798
 fx,_t7/killstreaks/fx_supply_drop_smoke,294cef33cf8
 fx,hash_44d09e0c5ad11d22,294cef7b878
 fx,hash_44d512b39483f47f,294cef762d8
@@ -8796,7 +8796,7 @@ fx,explosions/fx_exp_robot_stage3_evb,294cef86958
 fx,weapon/fx_lightninggun_arc,294cef67d78
 fx,hash_5b7d9a05b1e0ff94,294cef418f8
 fx,hash_5b8d696874f5459a,294cef7abf8
-fx,hash_5bfa31121573c8d1,294cef6db38
+fx,player/fx8_plyr_infect_change_flash_3p,294cef6db38
 fx,hash_5c2ae9f4f331d4b9,294cef744d8
 fx,hash_5d5bae2ad1c8d0ae,294cef13a98
 fx,ui/fx8_ui_ct_plane_marker_team_b180,294cef6ce18
@@ -8811,7 +8811,7 @@ fx,hash_64945fecbb8c1cca,294cef86db8
 fx,ui/fx8_ui_ct_plane_marker_team_b250,294cef61478
 fx,hash_65c5042becfbaa7d,294cef746b8
 fx,hash_66478d394cf5596d,294cef3f7d8
-fx,hash_671e73123ec253bd,294cef6a258
+fx,ui/fx8_ctf_flag_base_team,294cef6a258
 fx,hash_672086fb1140db4d,294cef86f98
 fx,ui/fx8_fracture_deposit_point_end_ire,294cef3fa58
 fx,hash_69455dfeef0311c2,294cef87178
@@ -9571,7 +9571,7 @@ soundalias,hash_4ac3703b8382249,0
 soundalias,hash_4ade0aee2438391,0
 soundalias,hash_4ae4e83e6f9f614,0
 soundalias,hash_4b19e77f9496803,0
-soundalias,hash_4b1e982689f19c9,0
+soundalias,pfx_t8_spark_med,0
 soundalias,hash_4b3c715f74cbe14,0
 soundalias,hash_4b3ed0465444285,0
 soundalias,hash_4b4c5bbff1e336d,0
@@ -9868,7 +9868,7 @@ soundalias,hash_69b4b8f53967333,0
 soundalias,hash_69b600e711eea71,0
 soundalias,hash_69c0337101785f2,0
 soundalias,hash_69c36dd464dfd3e,0
-soundalias,hash_69f2e0526473883,0
+soundalias,mpl_safeguard_disabled_sting_enemy,0
 soundalias,hash_6aa0935177a113e,0
 soundalias,hash_6ab5a0edb0a89a5,0
 soundalias,hash_6ac3878b068b52a,0
@@ -10307,7 +10307,7 @@ soundalias,hash_95c001100c6fe06,0
 soundalias,hash_95e6cc174a4e8ce,0
 soundalias,hash_962b9e49efdc1bc,0
 soundalias,hash_962fa406cdc070f,0
-soundalias,hash_96836cd832175eb,0
+soundalias,mpl_flagdrop_sting_enemy,0
 soundalias,hash_969ce84956d3035,0
 soundalias,hash_96a3a15ab444c35,0
 soundalias,hash_96a5f3e5e8749c6,0
@@ -10505,7 +10505,7 @@ soundalias,hash_aa6073453fcc7c8,0
 soundalias,hash_aa631778ae92805,0
 soundalias,hash_aa65b39680b8d1b,0
 soundalias,hash_aa71e4411867210,0
-soundalias,hash_aa97d1337005f53,0
+soundalias,amb_rattle_barrel,0
 soundalias,hash_aaaaae2627028a7,0
 soundalias,hash_aaae6aed929e51e,0
 soundalias,hash_ab0565d23152d0a,0
@@ -10651,7 +10651,7 @@ soundalias,hash_b9e8d1512f32891,0
 soundalias,hash_ba40be1a2e9054d,0
 soundalias,hash_ba4eb9ce8d0862b,0
 soundalias,hash_ba5273cb6130033,0
-soundalias,hash_ba5930fc0387253,0
+soundalias,mpl_flagreturn_sting,0
 soundalias,hash_ba5b90586b27561,0
 soundalias,hash_ba61b86ed5304b8,0
 soundalias,hash_ba72f8beb4205e1,0
@@ -13119,7 +13119,7 @@ soundalias,hash_1bf7041b46abc729,0
 soundalias,hash_1bf7aef6bb9deb36,0
 soundalias,hash_1bf7b6696eed71e1,0
 soundalias,hash_1bf8b41c725e5468,0
-soundalias,hash_1bf9bb41578fdd6c,0
+soundalias,mpl_flagget_sting_enemy,0
 soundalias,hash_1bfaf6f206ca524f,0
 soundalias,hash_1bfbc790f9ccd5f4,0
 soundalias,hash_1c0205236c818f3f,0
@@ -14703,9 +14703,9 @@ soundalias,hash_263286aedb2eccef,0
 soundalias,hash_26342f65c5964cc2,0
 soundalias,hash_2635f28fa4849683,0
 soundalias,hash_2637070223ee814c,0
-soundalias,hash_263807863dbbfbb0,0
+soundalias,mpl_rad_field_meltdown_3d,0
 soundalias,hash_263915acd4cda6db,0
-soundalias,hash_263bed863dbfb859,0
+soundalias,mpl_rad_field_meltdown_2d,0
 soundalias,hash_263c683166d7a5ef,0
 soundalias,hash_263eb15849e5f0cd,0
 soundalias,hash_263fd43242c28bbf,0
@@ -15519,7 +15519,7 @@ soundalias,hash_2bc078f191304206,0
 soundalias,hash_2bc17616257ecfcc,0
 soundalias,hash_2bc55fa140809519,0
 soundalias,hash_2bc57f9168af8f5f,0
-soundalias,hash_2bc71ce0900d512c,0
+soundalias,mpl_ballreturn_sting,0
 soundalias,hash_2bcb8de9738e6fe1,0
 soundalias,hash_2bcbfabb7965901d,0
 soundalias,hash_2bce5ad3c0c0ad39,0
@@ -15531,7 +15531,7 @@ soundalias,hash_2bd4fea3f719b989,0
 soundalias,hash_2bd6679ecf0ac1b1,0
 soundalias,hash_2bd6dfc9a32f59ff,0
 soundalias,hash_2bdba1273e719953,0
-soundalias,hash_2bdcb267191e4860,0
+soundalias,pfx_spark_med_far,0
 soundalias,hash_2bdfd79f4f984e72,0
 soundalias,hash_2bdfe277a8cfecb4,0
 soundalias,hash_2be0080ecb25d3fb,0
@@ -16535,7 +16535,7 @@ soundalias,hash_32524f85c02d6ffc,0
 soundalias,hash_3252bd31169a0459,0
 soundalias,hash_32534f140be4bf0a,0
 soundalias,hash_325433f3da249300,0
-soundalias,hash_3254d3d1f2792672,0
+soundalias,mpl_flagcapture_sting_friend,0
 soundalias,hash_32554f1b7e637520,0
 soundalias,hash_32565b6fe96b2660,0
 soundalias,hash_3259424d6bad92fa,0
@@ -16830,7 +16830,7 @@ soundalias,hash_3421aba2f21b0c16,0
 soundalias,hash_34245e19224b6ef0,0
 soundalias,hash_342b27393768c129,0
 soundalias,hash_342c3bf43b50a15b,0
-soundalias,hash_342e0b4d5f33197a,0
+soundalias,mpl_hq_cap_us,0
 soundalias,hash_343209422c54823a,0
 soundalias,hash_343294d34611de9a,0
 soundalias,hash_343602315a722cb2,0
@@ -17686,7 +17686,7 @@ soundalias,hash_39da027248290afb,0
 soundalias,hash_39e11605805af2c9,0
 soundalias,hash_39e20ed842d253a1,0
 soundalias,hash_39e450c744825d1f,0
-soundalias,hash_39e5cc5a758ee6ea,0
+soundalias,mpl_safeguard_reboot_sting_enemy,0
 soundalias,hash_39e6f8a23b5f3c43,0
 soundalias,hash_39e6fdbfc730bf6c,0
 soundalias,hash_39ea54aa9f056edf,0
@@ -18925,7 +18925,7 @@ soundalias,hash_41be63d57d56470e,0
 soundalias,hash_41c124ae457130c6,0
 soundalias,hash_41c151c09393cf98,0
 soundalias,hash_41c3a68b73cfc9f2,0
-soundalias,hash_41c3b569f6556871,0
+soundalias,chr_swimming_drown,0
 soundalias,hash_41c73c4762b3c81b,0
 soundalias,hash_41cad7ea1eff7f1d,0
 soundalias,hash_41cd4a7530327285,0
@@ -19633,7 +19633,7 @@ soundalias,hash_461695c7d63fddd7,0
 soundalias,hash_4616b4acdd7e7474,0
 soundalias,hash_4616fcb97d4e1cd3,0
 soundalias,hash_461a79b2d7bf7162,0
-soundalias,hash_461a922357e5be28,0
+soundalias,mpl_flagget_sting_friend,0
 soundalias,hash_461d08616619cf40,0
 soundalias,hash_461e09fec989a559,0
 soundalias,hash_461e95d89c99f659,0
@@ -21465,7 +21465,7 @@ soundalias,hash_51f0bf8fe5b6608c,0
 soundalias,hash_51f1b6ae44d5bbac,0
 soundalias,hash_51f22bad2b033b34,0
 soundalias,hash_51f35e10a9721806,0
-soundalias,hash_51f5be495a60b2fa,0
+soundalias,mpl_flagcapture_sting_enemy,0
 soundalias,hash_51f5e50c4c241ad0,0
 soundalias,hash_51f84b78f855a453,0
 soundalias,hash_51fc595be2878a11,0
@@ -22287,7 +22287,7 @@ soundalias,hash_576f1c0a9cb5996a,0
 soundalias,hash_57715a5eaa688bfa,0
 soundalias,hash_577306bb1c5f2b37,0
 soundalias,hash_5773bb515fe605c3,0
-soundalias,hash_57751082c99e7376,0
+soundalias,mpl_rad_field_critical_loop_3d,0
 soundalias,hash_577531dc41cdb99b,0
 soundalias,hash_5776d0804aa8e8a4,0
 soundalias,hash_5777a8345b9322f9,0
@@ -22347,7 +22347,7 @@ soundalias,hash_57e1ddfa4ec7448e,0
 soundalias,hash_57e2405b221c0e5b,0
 soundalias,hash_57e2b0cf7720fdb8,0
 soundalias,hash_57e3a2c06c61e4f7,0
-soundalias,hash_57e3fe14d8011aae,0
+soundalias,exp_incoming_missile,0
 soundalias,hash_57e47491008f219b,0
 soundalias,hash_57e5b694fd83ed6c,0
 soundalias,hash_57e7165e2e367932,0
@@ -23730,7 +23730,7 @@ soundalias,hash_60d0101e982262bd,0
 soundalias,hash_60d2894530feedd5,0
 soundalias,hash_60d5c7ee1728dd45,0
 soundalias,hash_60d72194e802c8a3,0
-soundalias,hash_60d9320c3984262f,0
+soundalias,exp_ac130,0
 soundalias,hash_60dc2515680dffd0,0
 soundalias,gdt_hawk_pov_in,0
 soundalias,hash_60df25b31bca60d2,0
@@ -24481,7 +24481,7 @@ soundalias,hash_656973028d759c26,0
 soundalias,hash_656c45c2d9579272,0
 soundalias,hash_656d227acaa76c44,0
 soundalias,hash_656e9eddf1628230,0
-soundalias,hash_656f124acc419142,0
+soundalias,mpl_safeguard_reboot_sting_friend,0
 soundalias,hash_656f644b67d33569,0
 soundalias,hash_6570a8806ae24034,0
 soundalias,hash_657139d3bb358bdc,0
@@ -25418,7 +25418,7 @@ soundalias,hash_6baf8274eeb71428,0
 soundalias,hash_6bb3b2ab40b6cf71,0
 soundalias,hash_6bb4edb4ebf8902f,0
 soundalias,hash_6bb671042295410c,0
-soundalias,hash_6bb6a3f5fa3e7f00,0
+soundalias,mpl_seeker_mine_activate,0
 soundalias,hash_6bb7a9f1e1c8bfe7,0
 soundalias,hash_6bb8109be0bd1785,0
 soundalias,hash_6bbd3e8a6f7b8ac1,0
@@ -25484,7 +25484,7 @@ soundalias,hash_6c0ee14151a06e1d,0
 soundalias,hash_6c104d4c4dde0876,0
 soundalias,hash_6c10766fbe6066f8,0
 soundalias,hash_6c16aa8f5adc00bd,0
-soundalias,hash_6c16da690cc8bbe5,0
+soundalias,mpl_safeguard_disabled_sting_friend,0
 soundalias,hash_6c18d42b6a8409f9,0
 soundalias,hash_6c1b57e4a5e893f8,0
 soundalias,hash_6c1b58e4a5e895ab,0
@@ -27675,7 +27675,7 @@ soundalias,hash_7a05917ba254fe37,0
 soundalias,hash_7a097e275963e1a1,0
 soundalias,hash_7a0a9290a087b6da,0
 soundalias,hash_7a10db025bf99652,0
-soundalias,hash_7a13143ffb6ebbaf,0
+soundalias,aml_dog_bark,0
 soundalias,hash_7a159ee3ca0e2ae4,0
 soundalias,hash_7a1614042eff6a21,0
 soundalias,hash_7a17185b41815954,0
@@ -28353,7 +28353,7 @@ soundalias,hash_7eb1ae3ca7ed8608,0
 soundalias,hash_7eb1eaad9c8021fa,0
 soundalias,hash_7eb3775648ce833f,0
 soundalias,hash_7eb61f7901df1819,0
-soundalias,hash_7ebb1851ec8c586d,0
+soundalias,mpl_flagdrop_sting_friend,0
 soundalias,hash_7ebe04e14a827201,0
 soundalias,hash_7ebe4294a85667be,0
 soundalias,hash_7ebec283aba29246,0
@@ -28385,7 +28385,7 @@ soundalias,hash_7ee2fd4e6f9ce18b,0
 soundalias,hash_7ee2fe876d7b73f1,0
 soundalias,hash_7ee39c713efbbf54,0
 soundalias,hash_7ee3a5126796790f,0
-soundalias,hash_7ee53627c9a66c44,0
+soundalias,mpl_rad_field_critical_loop,0
 soundalias,hash_7ee58f7aeb4f41f5,0
 soundalias,hash_7ee7f901a97ec687,0
 soundalias,hash_7ee8722207a8c61c,0
@@ -28625,7 +28625,7 @@ client_fx,ui/fx8_fracture_drop_marker,294cef447d8
 client_fx,hash_5b4e0c241c75dae,294cef57f18
 client_fx,hash_6146c36f1793cdc,294cef44738
 client_fx,hash_62f074d527f46c0,294cef07658
-client_fx,hash_631d4ec059edfe4,294cef5d198
+client_fx,electric/fx8_surge_short_robot,294cef5d198
 client_fx,destruct/fx8_atk_chppr_exp_trail,294cef5f2b8
 client_fx,hash_68a68f1311f7ae8,294cef2ce58
 client_fx,hash_68eb678b2954c36,294cef076f8
@@ -28658,7 +28658,7 @@ client_fx,hash_8f8d0a431403706,294cef36c78
 client_fx,hash_91ac1c8cc05c675,294cef53558
 client_fx,hash_94881a9c15f323f,294cef73498
 client_fx,hash_94cf26182e35057,294cef535f8
-client_fx,hash_9647142145df07d,294cef60e38
+client_fx,player/fx8_plyr_shocked_3p,294cef60e38
 client_fx,destruct/fx8_atk_chppr_exp,294cef6ead8
 client_fx,hash_9b2c066755f3d5d,294cef3fff8
 client_fx,hash_9b7fb95125a540c,294cef26878
@@ -28729,7 +28729,7 @@ client_fx,hash_122f2f174842806a,294cef26c38
 client_fx,impacts/fx8_bul_impact_metal_sm,294cef19e98
 client_fx,hash_1281a58c959d7e00,294cef827b8
 client_fx,hash_128b6d710df48c0f,294cef31638
-client_fx,hash_12ad8654acd39474,294cef19f38
+client_fx,impacts/fx8_bul_impact_metal_lg,294cef19f38
 client_fx,hash_12b26f3fa1018561,294cef2abf8
 client_fx,hash_12b801a1dd9b7dc1,294cef53878
 client_fx,hash_12b944b36953a819,294cef5eb38
@@ -28757,7 +28757,7 @@ client_fx,hash_1618aecf5c25d4c2,294cef58558
 client_fx,hash_164c32da69bb27cc,294cef88cf8
 client_fx,hash_166903d1957005a4,294cef53238
 client_fx,weapon/fx_muz_md_rifle_3p,294cef6ff78
-client_fx,hash_168d6fec13f7c202,294cef701f8
+client_fx,explosions/fx_exp_dest_barrel_lg,294cef701f8
 client_fx,killstreaks/fx_rcxd_lights_solid,294cef30f58
 client_fx,hash_170cf0178ff2783d,294cef46d58
 client_fx,hash_1746d3ed17a66f57,294cef46df8
@@ -28842,7 +28842,7 @@ client_fx,hash_1f7ef41fb4ea4904,294cef0af38
 client_fx,hash_1ffcc9abdf09a615,294cef2afb8
 client_fx,hash_200ce5b84b2184c6,294cef58878
 client_fx,hash_201378189651055d,294cef6efd8
-client_fx,hash_2034d97288c8f10f,294cef843d8
+client_fx,weapon/fx8_hero_sig_radiation_phase2_friend_v4,294cef843d8
 client_fx,hash_20630c4ea816dbb5,294cef84478
 client_fx,hash_209c0f28bb709b3c,294cef4f638
 client_fx,hash_20b6c2a57c7b374f,294cef822b8
@@ -28853,8 +28853,8 @@ client_fx,hash_21727afc6e002c98,294cef327b8
 client_fx,hash_21f397376b81d9ef,294cef1b798
 client_fx,hash_220042bdcc89cd35,294cef7c4f8
 client_fx,hash_223d261706bc60a1,294cef454f8
-client_fx,hash_22400f7d1aa3345e,294cef77e58
-client_fx,hash_2240197d1aa3455c,294cef7e618
+client_fx,player/fx8_plyr_footstep_tracker_r,294cef77e58
+client_fx,player/fx8_plyr_footstep_tracker_l,294cef7e618
 client_fx,hash_22422ba79bd4eaaa,294cef0b618
 client_fx,hash_224475c97e048648,294cef767d8
 client_fx,hash_22f6c3df53586600,294cef71d78
@@ -28897,7 +28897,7 @@ client_fx,hash_28d202d085cbd32e,294cef67058
 client_fx,hash_28f0c36cf372f7df,294cef6def8
 client_fx,hash_28f9f625a9aae35e,294cef58918
 client_fx,hash_292665b1a78d5f6e,294cef1c378
-client_fx,hash_294fd6c13d7e0d44,294cef39d38
+client_fx,killstreaks/fx_heli_exp_lg,294cef39d38
 client_fx,hash_2976d38995f82261,294cef0c3d8
 client_fx,hash_29899e0384daccd6,294cef370d8
 client_fx,hash_29c7478fc5068f69,294cef7aa18
@@ -28906,8 +28906,8 @@ client_fx,hash_2a010423e6fa7449,294cef5d558
 client_fx,hash_2a2258603fd7408a,294cef30238
 client_fx,killstreaks/fx_rcxd_lights_blinky,294cef55c18
 client_fx,hash_2a34062551c5e378,294cef352d8
-client_fx,hash_2a4058e9edfd3edd,294cef7a518
-client_fx,hash_2a405ae9edfd4243,294cef64cb8
+client_fx,player/fx_plyr_flying_tracker_r,294cef7a518
+client_fx,player/fx_plyr_flying_tracker_l,294cef64cb8
 client_fx,hash_2a44d0feab4b5824,294cef1c5f8
 client_fx,hash_2a4a2a0476f106fb,294cef48d38
 client_fx,hash_2aa363cf73f906ec,294cef48dd8
@@ -28928,7 +28928,7 @@ client_fx,hash_2be62088633d77b6,294cef58a58
 client_fx,zm_ai/fx8_blightfather_maggot_death_exp,294cef3c498
 client_fx,hash_2c26e887cd7a6b92,294cef7c278
 client_fx,hash_2c27cb25fc9a30a3,294cef1cb98
-client_fx,hash_2c5dde55fc1b9f45,294cef84a18
+client_fx,weapon/fx_prox_grenade_exp,294cef84a18
 client_fx,killstreaks/fx_rcxd_lights_red,294cef500d8
 client_fx,hash_2ccbb9e9bd87859c,294cef63098
 client_fx,hash_2cf426fd6fec8605,294cef49198
@@ -28940,7 +28940,7 @@ client_fx,hash_2dc7d7e3f0d56e1a,294cef5dff8
 client_fx,hash_2dd59b07c2ea8004,294cef49918
 client_fx,hash_2dedaf65d8e3230b,294cef6a9d8
 client_fx,hash_2e0096e150933469,294cef74d98
-client_fx,hash_2e3c88331c552ec1,294cef84ab8
+client_fx,weapon/fx8_hero_sig_radiation_phase2_foe_v4,294cef84ab8
 client_fx,killstreaks/fx8_mortar_jet_thrusters,294cef7c958
 client_fx,hash_2e91c5a03e98f388,294cef49698
 client_fx,hash_2e960f5499b7853f,294cef78498
@@ -29068,7 +29068,7 @@ client_fx,hash_3fdf258f8d653b84,294cef28038
 client_fx,hash_400b1f8f8d8a6c3d,294cef280d8
 client_fx,hash_400d125e634fa9d5,294cef4b998
 client_fx,hash_40193ed2b55dd6b6,294cef6c4b8
-client_fx,hash_401d0029a8b596df,294cef3ea18
+client_fx,light/fx8_light_plyr_strobe,294cef3ea18
 client_fx,hash_4022d98cdc297692,294cef2b878
 client_fx,hash_405cd5e7058c4890,294cef55d58
 client_fx,hash_40a912d80f24e812,294cef1ec18
@@ -29113,7 +29113,7 @@ client_fx,hash_4621b74bc87fdbe6,294cef6af78
 client_fx,killstreaks/fx8_tankrobot_previs_valid,294cef35058
 client_fx,_debug/fx_missing_fx,294cef05ad8
 client_fx,hash_4685e46e51d763a4,294cef68d18
-client_fx,hash_46dbf5572b655f0e,294cef89bf8
+client_fx,weapon/fx8_hero_sig_radiation_phase1_foe_v4,294cef89bf8
 client_fx,killstreaks/fx_vtol_lights_red,294cef63e58
 client_fx,hash_471aa69ea0155984,294cef7cd18
 client_fx,hash_471c2ac454e42597,294cef0fd58
@@ -29122,9 +29122,9 @@ client_fx,hash_4794548dd4d279cc,294cef7ed98
 client_fx,hash_479be5ae66fcfc44,294cef83078
 client_fx,hash_481a961f4192d4f2,294cef63ef8
 client_fx,hash_4877425b23fd5e40,294cef80b98
-client_fx,hash_4895d07f655197c1,294cef64b78
+client_fx,player/fx_plyr_flying_tracker_rf,294cef64b78
 client_fx,hash_4899a042c417a5a0,294cef55fd8
-client_fx,hash_489ca07f655764df,294cef782b8
+client_fx,player/fx_plyr_flying_tracker_lf,294cef782b8
 client_fx,hash_48ad631cfb8fdb28,294cef59138
 client_fx,hash_48b4af79007c5f91,294cef4c4d8
 client_fx,killstreaks/fx8_tankrobot_previs_invalid,294cef79578
@@ -29284,13 +29284,13 @@ client_fx,hash_5f190015ac9ded95,294cef3de38
 client_fx,hash_5f19b5848f70e13e,294cef4ecd8
 client_fx,hash_5f33e0186f4bb942,294cef2c1d8
 client_fx,hash_5f343db65affbe62,294cef226d8
-client_fx,hash_5f6b5f67f7592f92,294cef72bd8
+client_fx,player/fx_plyr_footstep_tracker_rf,294cef72bd8
 client_fx,hash_5f89d35196869e0e,294cef86bd8
 client_fx,hash_5fa1874396786bd7,294cef6f078
 client_fx,hash_5fb8eddf36744ff0,294cef6bf18
 client_fx,hash_5fc376e533776975,294cef3e018
 client_fx,hash_5fca82e5337d9c87,294cef3e0b8
-client_fx,hash_5fd18f67f7b03454,294cef67cd8
+client_fx,player/fx_plyr_footstep_tracker_lf,294cef67cd8
 client_fx,hash_5fdd021d80dd8fc6,294cef22818
 client_fx,hash_60068072fe634841,294cef6ccd8
 client_fx,hash_601f7a84a55eb054,294cef4eeb8
@@ -29396,7 +29396,7 @@ client_fx,hash_6e1c61155940b277,294cef56cf8
 client_fx,hash_6e2b2bcea07134d1,294cef29cf8
 client_fx,hash_6e5623c64d1a3f07,294cef59bd8
 client_fx,zm_ai/fx8_blightfather_weakspot_sack_amb,294cef50cb8
-client_fx,hash_6e6378eb5e19fc56,294cef875d8
+client_fx,weapon/fx8_hero_sig_radiation_phase1_friend_v4,294cef875d8
 client_fx,hash_6e68fc37599a8e13,294cef40c78
 client_fx,hash_6e7e0fcafd32eb9e,294cef79398
 client_fx,hash_6eef96000a576560,294cef15ed8
@@ -29513,12 +29513,12 @@ client_fx,hash_7f1447088543441e,294cef181d8
 client_fx,hash_7f1ad908789e51bf,294cef25b58
 client_fx,hash_7f1c833c523342f8,294cef52dd8
 client_fx,hash_7f5eedd25c9f8f56,294cef52e78
-client_fx,hash_7f75022d8406d259,294cef79938
+client_fx,player/fx8_plyr_footstep_tracker_inair,294cef79938
 client_fx,hash_7f8b82a8723e566b,294cef57b58
 client_fx,hash_7fae1c95177309a0,294cef4d298
 client_fx,hash_7fb42895177789b2,294cef83e38
 client_fx,zm_ai/fx8_blightfather_maggot_spawn_burst,294cef44f58
-client_tagfxset,hash_29ff119bfba2b251,294ce898688
+client_tagfxset,gametype_heist_money_trail,294ce898688
 client_tagfxset,weapon_hero_seeker_drone_death,294ce898448
 client_tagfxset,gadget_spawnbeacon_teamlight,294ce898308
 client_tagfxset,escort_robot_burn,294ce8985c8

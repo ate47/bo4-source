@@ -4,7 +4,7 @@
     "type": "mpdialog_scorestreak",
     "killmultiple": "#hash_765f57bada506491",
     "vmtype": "both",
-    "var_3ce56802": "#hash_2fe86084deb6b798",
+    "remoteoperatorremoved": "#hash_2fe86084deb6b798",
     "name": "blops_pilot1_kls_mothership",
     "arrive": "#hash_5c2c383ad3778a4f",
     "timeout": "#hash_6f2c366b9df2903b",

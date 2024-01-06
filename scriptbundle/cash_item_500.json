@@ -2,7 +2,7 @@
     "amount": 500,
     "description": "#hash_1fff5c963dc2d990",
     "var_922067c4": "scriptbundle",
-    "model": "#hash_4ed969f6bbfe1745",
+    "model": "#p8_heist_duffel_bag_set_open",
     "type": "itemspawnentry",
     "hintstring": "#hash_7c209aedac76fe39",
     "name": "cash_item_500",

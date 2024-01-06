@@ -23,14 +23,14 @@
 function init() {
     callback::on_spawned(&on_player_spawned);
     level.var_6129f460 = &function_a929cb60;
-    level thread function_7e57b362();
+    level thread cliff_forge_vo();
 }
 
 // Namespace zm_red_zones/zm_red_zones
 // Params 0, eflags: 0x1 linked
 // Checksum 0xdad41f91, Offset: 0x938
 // Size: 0xa4
-function function_7e57b362() {
+function cliff_forge_vo() {
     level flag::wait_till(#"hash_7943879f3be8ccc6");
     a_players = function_6645d04c();
     while (a_players.size == 0) {
@@ -387,7 +387,7 @@ function function_27028b8e(str_zone) {
     case #"zone_bathhouse_inside":
         var_601fee0 = #"hash_27a6b15e094c02f1";
         break;
-    case #"hash_11705b329bbacfdd":
+    case #"zone_spartan_east_to_treasuries":
     case #"zone_intersection_of_treasuries_upper":
     case #"zone_intersection_of_treasuries_lower":
         var_601fee0 = #"hash_4785d4d350f36326";
@@ -413,7 +413,7 @@ function function_27028b8e(str_zone) {
         var_601fee0 = #"hash_303ce0aa4cf6a23e";
         break;
     case #"zone_stoa_of_the_athenians_east":
-    case #"hash_12f596841485adc7":
+    case #"zone_stoa_of_the_athenians_west":
         var_601fee0 = #"hash_12a9743a3b9f2236";
         break;
     case #"zone_temple_to_stoa_of_the_athenians":

@@ -11,7 +11,7 @@
 // Checksum 0x21e14a18, Offset: 0x150
 // Size: 0x20c
 function event_handler[level_init] main(eventstruct) {
-    clientfield::register("scriptmover", "center_explosion_rope_pulse", 1, 1, "counter", &function_1e28ac3b, 0, 0);
+    clientfield::register("scriptmover", "center_explosion_rope_pulse", 1, 1, "counter", &center_explosion_rope_pulse, 0, 0);
     setsaveddvar(#"enable_global_wind", 1);
     setsaveddvar(#"wind_global_vector", "88 0 0");
     setsaveddvar(#"wind_global_low_altitude", 0);
@@ -120,7 +120,7 @@ function on_end_game(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x7a770956, Offset: 0x618
 // Size: 0x94
-function function_1e28ac3b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function center_explosion_rope_pulse(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     ropepulse(self.origin, 1, 1024, 50, 120);
 }
 

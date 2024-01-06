@@ -175,7 +175,7 @@ function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str
         if (isdefined(level.var_bf4ff87f)) {
             n_damage = n_damage * level.var_bf4ff87f;
         }
-        if (weapon === getweapon(#"hash_114729f4d5a8d08c")) {
+        if (weapon === getweapon(#"tank_robot_launcher_turret_ct")) {
             n_damage = n_damage * 0.4;
         }
         if (isdefined(level.var_3a0d2784) && level.var_3a0d2784) {
