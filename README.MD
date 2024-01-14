@@ -27,4 +27,5 @@ Pools dumped:
 | maptable          | 89  | `/tables/map/`           |
 | maptable_list     | 90  | `/tables/map/list/`      |
 | gametypetable     | 113 | `/tables/gametype/`      |
+| playlists         | 119 | `/tables/playlists/`     |
 | rawstring         | 157 | `strings.csv`            |
