@@ -1,0 +1,121 @@
+
+{
+    "index": 14,
+    "name": "#dedicated",
+    "description": "#hash_6e9461351bfebe4c",
+    "lobbyMainMode": 1,
+    "hidden": true,
+    "entries": [
+        {
+            "index": 0,
+            "id": 701,
+            "name": "#hash_51ef41056ad1fb1b",
+            "uniqueName": "#",
+            "mainMode": "multiplayer",
+            "image": "#hash_4c3a8b5bf0adbd3a",
+            "imageBackground": "#hash_3a3a482e699bb4ba",
+            "imageBackgroundFocus": "#hash_206a64a32a3e8aa1",
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "maxPartySize": 6,
+            "minPartySize": 0,
+            "maxPlayers": 18,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "maxLocalPlayers": 2,
+            "searchType": 2,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "arenaSlot": -1,
+            "parkingPlaylist": 9025,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "hideifmissingdlc": false,
+            "isCustomMatch": true,
+            "isNewGameOrResumeGame": false,
+            "rules": [],
+            "rotationList": []
+        },
+        {
+            "index": 1,
+            "id": 702,
+            "name": "#hash_7f26ed4cc8b84eaa",
+            "uniqueName": "#",
+            "mainMode": "multiplayer",
+            "image": "#hash_36b26f79368b599a",
+            "imageBackground": "#hash_3a3a482e699bb4ba",
+            "imageBackgroundFocus": "#hash_206a64a32a3e8aa1",
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "maxPartySize": 5,
+            "minPartySize": 0,
+            "maxPlayers": 12,
+            "minPlayers": 6,
+            "minPlayersToCreate": 1,
+            "maxLocalPlayers": 2,
+            "searchType": 1,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "arenaSlot": -1,
+            "parkingPlaylist": 9001,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "hideifmissingdlc": false,
+            "isCustomMatch": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": 1,
+                    "name": "#scr_xpscalemp",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_7327ca257aa61e93",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 1
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_7b7e1cadbd098787",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 1
+                },
+                {
+                    "type": 0,
+                    "name": "#drafttime",
+                    "value": "0",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                }
+            ],
+            "rotationList": [
+                {
+                    "map": "#mp_seaside",
+                    "mapPlatformMask": 7,
+                    "gametype": "#hash_1ee0474b3247b983",
+                    "weight": 1,
+                    "isFree": false
+                }
+            ]
+        }
+    ]
+}

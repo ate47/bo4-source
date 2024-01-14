@@ -1,0 +1,44 @@
+
+{
+    "index": 1,
+    "name": "#arena",
+    "description": "#hash_44b08b09636ecd9e",
+    "lobbyMainMode": 1,
+    "hidden": false,
+    "entries": [
+        {
+            "index": 0,
+            "id": 0,
+            "name": "#hash_726b0d39c8ec7b1b",
+            "uniqueName": "#",
+            "mainMode": "multiplayer",
+            "image": "#hash_4b9f15be49209495",
+            "imageBackground": "#hash_36faa5c7eb141973",
+            "imageBackgroundFocus": "#hash_3f683e907686134c",
+            "imageTileSmall": "#hash_60f79590dabf7634",
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "maxPartySize": 6,
+            "minPartySize": 0,
+            "maxPlayers": 10,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "maxLocalPlayers": 2,
+            "searchType": 3,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "arenaSlot": 1,
+            "parkingPlaylist": 0,
+            "disableGuests": false,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "hideifmissingdlc": false,
+            "isCustomMatch": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [],
+            "rotationList": []
+        }
+    ]
+}

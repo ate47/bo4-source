@@ -1,0 +1,407 @@
+
+{
+    "index": 18,
+    "name": "#cert",
+    "description": "#hash_17b94858fbc543b2",
+    "lobbyMainMode": -1,
+    "hidden": false,
+    "entries": [
+        {
+            "index": 0,
+            "id": 901,
+            "name": "#hash_57c9e1a59bb4d664",
+            "uniqueName": "#",
+            "mainMode": "warzone",
+            "image": "#hash_55aa115e951dc562",
+            "imageBackground": "#hash_eedcd428dd3a757",
+            "imageBackgroundFocus": "#hash_744b96d9d4a7fe10",
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "maxPartySize": 2,
+            "minPartySize": 0,
+            "maxPlayers": 100,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "maxLocalPlayers": 2,
+            "searchType": 2,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "arenaSlot": -1,
+            "parkingPlaylist": 0,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "hideifmissingdlc": false,
+            "isCustomMatch": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": 1,
+                    "name": "#hash_7327ca257aa61e93",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 1
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_115556efd1526bf8",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_6b1ec01fa78af670",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#startplayers",
+                    "value": "2",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_2cc9b0ef1896d89a",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_3e2d2cf6b1cc6c68",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                }
+            ],
+            "rotationList": [
+                {
+                    "map": "#wz_open_skyscrapers",
+                    "mapPlatformMask": 7,
+                    "gametype": "#hash_7698742d670d791f",
+                    "weight": 1,
+                    "isFree": true
+                }
+            ]
+        },
+        {
+            "index": 1,
+            "id": 902,
+            "name": "#hash_161a6a5a4eded5f2",
+            "uniqueName": "#",
+            "mainMode": "warzone",
+            "image": "#hash_5b3e364c4ea77601",
+            "imageBackground": "#hash_457d379c2ecf61b5",
+            "imageBackgroundFocus": "#hash_2025c5532e63122",
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "maxPartySize": 1,
+            "minPartySize": 0,
+            "maxPlayers": 100,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "maxLocalPlayers": 2,
+            "searchType": 2,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "arenaSlot": -1,
+            "parkingPlaylist": 0,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "hideifmissingdlc": false,
+            "isCustomMatch": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": 1,
+                    "name": "#hash_7327ca257aa61e93",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 1
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_115556efd1526bf8",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_6b1ec01fa78af670",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_1afe8b91b7b953c3",
+                    "value": "100",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#startplayers",
+                    "value": "2",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_2cc9b0ef1896d89a",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                }
+            ],
+            "rotationList": [
+                {
+                    "map": "#wz_open_skyscrapers",
+                    "mapPlatformMask": 7,
+                    "gametype": "#hash_25bc3d7fa3b2b4dd",
+                    "weight": 1,
+                    "isFree": true
+                }
+            ]
+        },
+        {
+            "index": 2,
+            "id": 903,
+            "name": "#hash_100edd73672283cf",
+            "uniqueName": "#",
+            "mainMode": "warzone",
+            "image": "#hash_7c43e75d7a81be65",
+            "imageBackground": "#hash_e151dcb6de47324",
+            "imageBackgroundFocus": "#hash_4c22fe8380f43c1f",
+            "imageTileSideInfo": "#hash_6fab50704f3c62fb",
+            "unlockXp": 0,
+            "unlockPLevel": 0,
+            "maxPartySize": 2,
+            "minPartySize": 0,
+            "maxPlayers": 80,
+            "minPlayers": 2,
+            "minPlayersToCreate": 1,
+            "maxLocalPlayers": 2,
+            "searchType": 2,
+            "minUserTier": 0,
+            "maxUserTier": 0,
+            "arenaSlot": -1,
+            "parkingPlaylist": 0,
+            "disableGuests": true,
+            "excludePublicLobby": false,
+            "customMutation": false,
+            "isSpectreRising": false,
+            "isQuickplayCard": false,
+            "hideifmissingdlc": false,
+            "isCustomMatch": false,
+            "isNewGameOrResumeGame": false,
+            "rules": [
+                {
+                    "type": 1,
+                    "name": "#hash_7327ca257aa61e93",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 1
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_115556efd1526bf8",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_6b1ec01fa78af670",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_1afe8b91b7b953c3",
+                    "value": "100",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#startplayers",
+                    "value": "2",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_35c2d850e39fa704",
+                    "value": "2",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_6cf5f53d1fbb1066",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_3083d02ea0f5761c",
+                    "value": "0",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_3778ec3bd924f17c",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_68f4f3fd681ae3ea",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_6c72667787a1fcc9",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#evolution_interval",
+                    "value": "16",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 1,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#wzenablewallbuyasylum",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#wzenablesentrygun",
+                    "value": "0",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 5,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#hash_2ce00db5cd5003ff",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_35d9cdeecb132532",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 0,
+                    "name": "#wzlootlockers",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                },
+                {
+                    "type": 1,
+                    "name": "#hash_2cc9b0ef1896d89a",
+                    "value": "1",
+                    "utcStartTime": 0,
+                    "utcEndTime": 0,
+                    "platformMask": 7,
+                    "environmentMask": 7
+                }
+            ],
+            "rotationList": [
+                {
+                    "map": "#wz_open_skyscrapers",
+                    "mapPlatformMask": 7,
+                    "gametype": "#hash_2b9c97538d85c6dc",
+                    "weight": 1,
+                    "isFree": true
+                }
+            ]
+        }
+    ]
+}
