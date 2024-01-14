@@ -1,11 +1,11 @@
 {
-    "var_8a31a029": "#hash_322074856f63c7f3",
-    "var_5ed70194": "#weapon/sniper_quickscope_t8",
-    "var_6c44aa0a": "#hash_d8622d38b0078a8",
+    "contracticon": "#hash_322074856f63c7f3",
+    "relateditemname": "#weapon/sniper_quickscope_t8",
+    "contracttitle": "#hash_d8622d38b0078a8",
     "name": "loot_contract_koshka_mastercraft",
     "var_69b5a265": "core_frontend_tr_longburst_ahabs_revenge",
     "var_4b258f2c": "#hash_25974dcdc6cec877",
-    "var_2b265a7c": "#hash_7680bf2bc2219eb1",
+    "contractdescription": "#hash_7680bf2bc2219eb1",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_7dcd5110e7f4d339",
     "var_e08fc162": "#hash_78aad5dda3743198"

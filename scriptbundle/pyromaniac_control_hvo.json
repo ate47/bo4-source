@@ -4,38 +4,38 @@
             "var_82670522": "stats_purifier_kill",
             "stattype": "playerstatslist",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_162400265e98d386"
+            "displaystatname": "#hash_162400265e98d386"
         },
         {
             "stattype": "objectiveekia",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "#hash_5d1ab6f5e0227795"
         },
         {
             "var_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_158193577a14c86e"
+            "displaystatname": "#hash_158193577a14c86e"
         },
         {
             "stattype": "damagedone",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_5418827f408e5ca2"
+            "displaystatname": "#hash_5418827f408e5ca2"
         },
         {
             "stattype": "highestkillstreak",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_110eff19ed3b334d"
+            "displaystatname": "#hash_110eff19ed3b334d"
         },
         {
             "stattype": "objectivescore",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_4d3552e327f94ecf"
+            "displaystatname": "#hash_4d3552e327f94ecf"
         }
     ],
     "var_447510ee": "prt_mp_firebreak",
-    "var_e123fa65": "#hash_401fc36948868c17",
-    "var_999a02c5": "#hash_103416cc60abf3f8",
+    "defaultimage": "#hash_401fc36948868c17",
+    "cardname": "#hash_103416cc60abf3f8",
     "name": "pyromaniac_control_hvo",
     "var_46a95923": "control"
 }

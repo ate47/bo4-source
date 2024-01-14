@@ -4,6 +4,6 @@
     "image": "#hash_a75058635c8146d",
     "dailytarget": 100,
     "name": "specialslaughter_task",
-    "var_4ef43740": "#hash_4831910c1554ab14",
-    "var_88e4a04f": "#hash_6c50c48a187b1737"
+    "taskname": "#hash_4831910c1554ab14",
+    "descsimple": "#hash_6c50c48a187b1737"
 }

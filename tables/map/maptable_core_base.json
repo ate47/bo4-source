@@ -7,9 +7,9 @@
             "name": "core_frontend",
             "hashname": "#core_frontend",
             "missionName": "core_frontend",
-            "mapName": "#hash_7c00e43a2aa46cc4",
+            "mapName": "#menu/main_menu",
             "rootMapName": "#",
-            "mapDescription": "#hash_7c00e43a2aa46cc4",
+            "mapDescription": "#menu/main_menu",
             "size": 0
         }
     ]

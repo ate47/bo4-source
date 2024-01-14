@@ -1,7 +1,7 @@
 {
-    "var_20b3a39": "#hash_7026cc7c28e37921",
+    "detailsicon": "#hash_7026cc7c28e37921",
     "var_6c274f86": "#hash_51ff2d05aab13453",
-    "var_f3d91b40": "#weapon/melee_stopsign_t8",
+    "nametext": "#weapon/melee_stopsign_t8",
     "name": "melee_stopsign_bundle_shop",
-    "var_ba6ab463": "#hash_44aec6c6824b6e90"
+    "desctext": "#hash_44aec6c6824b6e90"
 }

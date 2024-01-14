@@ -29,7 +29,7 @@
     "model": "#hash_5b12331abd8ad0e1",
     "type": "itemspawnentry",
     "hintstring": "#hash_25fdf644e07c02e0",
-    "unlockableitemref": "#hash_6ea9c24424bf5bcb",
+    "unlockableitemref": "#wz_character_scarlett",
     "name": "cu13_item",
     "displayname": "#hash_25fdf644e07c02e0",
     "icon": "#hash_330aa0747f7db2bf",

@@ -63,7 +63,7 @@ function private on_end(round_reset) {
             level.e_ghost delete();
         }
     }
-    function_1c6eef6d();
+    stop_timers();
 }
 
 // Namespace zm_trial_mansion_ghost/zm_trial_mansion_ghost
@@ -130,7 +130,7 @@ function private function_eb301e1b() {
         level.e_ghost.e_mover moveto(nd_start.origin, 20);
         level.e_ghost.e_mover rotateto(nd_start.angles, 20);
         wait(20);
-        function_1c6eef6d();
+        stop_timers();
         level.e_ghost.e_mover scene::stop(#"aib_vign_zm_mnsn_ghost_walk_01");
         level.e_ghost scene::stop(#"aib_vign_zm_mnsn_ghost_walk_01");
     }
@@ -155,7 +155,7 @@ function start_timers(n_timer) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x741de54a, Offset: 0xc38
 // Size: 0xca
-function function_1c6eef6d() {
+function stop_timers() {
     foreach (player in getplayers()) {
         if (level.var_f995ece6 zm_trial_timer::is_open(player)) {
             level.var_f995ece6 zm_trial_timer::close(player);

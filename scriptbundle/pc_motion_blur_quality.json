@@ -1,8 +1,8 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "0",
-            "var_6825bdb": "r_motionBlurMode",
+            "optionvalue": "0",
+            "optionname": "r_motionBlurMode",
             "operator": "~="
         }
     ],
@@ -20,7 +20,7 @@
             "value": "2"
         }
     ],
-    "var_d260763": "#hash_ada378ce3881410",
+    "descriptionimage": "#hash_ada378ce3881410",
     "description": "#hash_39a8d38d0fd3758",
     "var_60fcfffa": "#menu/on",
     "var_10e01ad5": 1,

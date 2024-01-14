@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_dd3b724e7b6c42f",
+    "popupimage": "#hash_dd3b724e7b6c42f",
     "var_5162d01b": "#hash_dd3b724e7b6c42f",
-    "var_f3d91b40": "#hash_290718641d507e03",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_290718641d507e03",
+    "categorytext": "#mpui/bm_bribe",
     "name": "loot_ar_peacekeeper_mk2_bribe_free",
-    "var_ba6ab463": "#hash_37eb07ec7dd694fa",
+    "desctext": "#hash_37eb07ec7dd694fa",
     "var_c1acffb6": "#hash_290718641d507e03"
 }

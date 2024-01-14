@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_2a78043adfae6b2b",
-    "var_95adb48e": "#hash_205647bd40020046",
-    "var_f3d91b40": "#hash_2f9b7ff23b521e70",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_2a78043adfae6b2b",
+    "popupimage": "#hash_205647bd40020046",
+    "nametext": "#hash_2f9b7ff23b521e70",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "battery_queensguard_outfit_bundle",
-    "var_ba6ab463": "#hash_57e945da865e7ad8",
+    "desctext": "#hash_57e945da865e7ad8",
     "previewimage": "#hash_447bef8c2985e67d",
-    "var_fc228068": "#hash_602b2b02bb7fcb3"
+    "reserveimage": "#hash_602b2b02bb7fcb3"
 }

@@ -1,11 +1,11 @@
 {
-    "var_8a31a029": "#hash_122aa7239d32261e",
-    "var_5ed70194": "#weapon/smg_handling_t8",
-    "var_6c44aa0a": "#hash_1c07c87a45375aaf",
+    "contracticon": "#hash_122aa7239d32261e",
+    "relateditemname": "#weapon/smg_handling_t8",
+    "contracttitle": "#hash_1c07c87a45375aaf",
     "name": "loot_contract_party_rock",
     "var_69b5a265": "core_frontend_smg_handling_party_rock",
     "var_4b258f2c": "#hash_2f384027de380f64",
-    "var_2b265a7c": "#hash_7e40f1e9f5f5b22",
+    "contractdescription": "#hash_7e40f1e9f5f5b22",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_2f384027de380f64",
     "var_e08fc162": "#hash_3dab7c3f83b698e0"

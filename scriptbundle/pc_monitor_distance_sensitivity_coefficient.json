@@ -1,8 +1,8 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "1",
-            "var_6825bdb": "m_mouseADSUseMonitorDistance",
+            "optionvalue": "1",
+            "optionname": "m_mouseADSUseMonitorDistance",
             "operator": "=="
         }
     ],
@@ -32,7 +32,7 @@
             "value": "1.78"
         }
     ],
-    "var_d260763": "#hash_b0051468c8fa60d",
+    "descriptionimage": "#hash_b0051468c8fa60d",
     "description": "#hash_6dc71248d00be956",
     "var_60fcfffa": "#hash_7cdc6df793f97d8c",
     "var_10e01ad5": 1,

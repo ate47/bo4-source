@@ -2,7 +2,7 @@
     "var_922067c4": "scriptbundle",
     "type": "aifxtable",
     "vmtype": "client",
-    "surfacefxtable_footstep": "#hash_7d995cc780399197",
+    "surfacefxtable_footstep": "#zm_elephant_footstep",
     "name": "fxb8_zm_char_towers_boss",
-    "var_306eaa3a": "#hash_7d995cc780399197"
+    "var_306eaa3a": "#zm_elephant_footstep"
 }

@@ -1,12 +1,12 @@
 {
-    "var_e9068708": 8,
-    "var_ea90b103": 4,
-    "var_635f0e43": 75,
-    "var_25982bbd": "#hash_195e4e27ab51c4ab",
+    "globstate": 8,
+    "droptype": 4,
+    "plasmaprice": 75,
+    "descriptiontext": "#hash_195e4e27ab51c4ab",
     "name": "zm_lab_palladium_package",
     "popupname": "#hash_7801fc52d735aa91",
     "var_619ae0f2": 1,
-    "var_a22b23b1": "#hash_7801fc52d735aa91",
+    "descriptiontitle": "#hash_7801fc52d735aa91",
     "var_40cee9c0": "#hash_6f61cae6bf794b8b",
     "var_e8a9006": "blue"
 }

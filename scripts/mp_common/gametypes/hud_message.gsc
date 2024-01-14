@@ -282,7 +282,7 @@ function outcomenotify(outcome) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5eac8a31, Offset: 0x1758
 // Size: 0x2c
-function function_6be746c2() {
+function hide_outcome() {
     self luinotifyevent(#"pre_killcam_transition", 1, 0);
 }
 

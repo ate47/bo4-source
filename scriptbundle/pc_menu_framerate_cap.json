@@ -1,12 +1,12 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "1",
-            "var_6825bdb": "maxfps_uncapped",
+            "optionvalue": "1",
+            "optionname": "maxfps_uncapped",
             "operator": "=="
         }
     ],
-    "var_d260763": "#hash_39ff5214d3f6d38a",
+    "descriptionimage": "#hash_39ff5214d3f6d38a",
     "description": "#hash_3e3014b107c5d96a",
     "var_60fcfffa": "#menu/on",
     "var_10e01ad5": 1,
@@ -16,7 +16,7 @@
     "maxvalue": 1,
     "name": "pc_menu_framerate_cap",
     "displayname": "#hash_2dee4be57b0257da",
-    "var_4a4760c0": 30,
+    "rangestartvalue": 30,
     "var_d6897f56": 1,
     "var_66faec87": 300,
     "statname": "com_maxfps_menu",

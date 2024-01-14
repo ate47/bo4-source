@@ -5,6 +5,6 @@
     "name": "medal_kill_enemy_injuring_teammate",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_13fdc79a1ed77a46",
-    "var_8645ce54": "#hash_5544574dbc352ad8",
+    "stringref": "#hash_5544574dbc352ad8",
     "iconlarge": "#hash_39b7947139219836"
 }

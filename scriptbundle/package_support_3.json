@@ -13,7 +13,7 @@
     "type": "bountyhunterpackage",
     "var_85d7cf08": 2,
     "name": "package_support_3",
-    "var_6c83a2ba": "support",
+    "packagetype": "support",
     "purchasecost": 2000,
     "startammo": 2,
     "var_673a16ad": 1,

@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_revenge_kill",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_revenge_kill",
-    "var_8645ce54": "#hash_1b4cbbe611a085fe",
+    "stringref": "#hash_1b4cbbe611a085fe",
     "iconlarge": "#hash_282844f91a520fc8"
 }

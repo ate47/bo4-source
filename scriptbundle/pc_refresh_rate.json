@@ -1,16 +1,16 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "1",
-            "var_6825bdb": "r_fullscreen",
+            "optionvalue": "1",
+            "optionname": "r_fullscreen",
             "operator": "=="
         },
         {
-            "var_6825bdb": "r_monitor",
+            "optionname": "r_monitor",
             "operator": "change"
         }
     ],
-    "var_d260763": "#hash_5579564c9cbf71",
+    "descriptionimage": "#hash_5579564c9cbf71",
     "description": "#hash_2dc6fb7bcbe8d63f",
     "var_60fcfffa": "#menu/on",
     "var_10e01ad5": 1,

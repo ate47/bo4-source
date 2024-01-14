@@ -1,12 +1,12 @@
 {
-    "var_e9068708": 4,
-    "var_ea90b103": 6,
-    "var_635f0e43": 50,
-    "var_25982bbd": "#hash_2044d79d4d009db2",
+    "globstate": 4,
+    "droptype": 6,
+    "plasmaprice": 50,
+    "descriptiontext": "#hash_2044d79d4d009db2",
     "name": "zm_lab_selenium_selection",
     "popupname": "#hash_12390abbd48ea7af",
     "var_619ae0f2": 1,
-    "var_a22b23b1": "#hash_12390abbd48ea7af",
+    "descriptiontitle": "#hash_12390abbd48ea7af",
     "var_40cee9c0": "#hash_246580f4132c4c2b",
     "var_e8a9006": "blue"
 }

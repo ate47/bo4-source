@@ -20,7 +20,7 @@
     "var_85d7cf08": 1,
     "refillcost": 250,
     "name": "package_launcher_standard",
-    "var_6c83a2ba": "secondary",
+    "packagetype": "secondary",
     "purchasecost": 500,
     "startammo": 1,
     "var_673a16ad": 1,

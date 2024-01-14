@@ -4,10 +4,10 @@
             "var_826726a": "#hash_280a44c85709ba6"
         }
     ],
-    "var_8a31a029": "#hash_6c6cd052b39f79bd",
+    "contracticon": "#hash_6c6cd052b39f79bd",
     "var_d0100eab": 1,
-    "var_5ed70194": "#hash_5b4889e3a720c949",
-    "var_6c44aa0a": "#hash_280a44c85709ba6",
+    "relateditemname": "#hash_5b4889e3a720c949",
+    "contracttitle": "#hash_280a44c85709ba6",
     "name": "loot_contract_firebreak_warrior",
     "var_f15e270f": "#white",
     "var_e08fc162": "#hash_40534ffb27a37ede"

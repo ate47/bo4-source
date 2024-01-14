@@ -1,9 +1,9 @@
 {
-    "var_af1e1219": "#hash_4d0d3e52fedf9a80",
-    "var_95adb48e": "#hash_4ed843ea722d2d8e",
-    "var_f3d91b40": "#hash_448260d8cfcab193",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "buttonimage": "#hash_4d0d3e52fedf9a80",
+    "popupimage": "#hash_4ed843ea722d2d8e",
+    "nametext": "#hash_448260d8cfcab193",
+    "categorytext": "#mpui/bm_bribe",
     "name": "functional_dlc_bribe",
-    "var_ba6ab463": "#hash_b51caa0abca8b45",
+    "desctext": "#hash_b51caa0abca8b45",
     "previewimage": "#hash_4e18efee7211607e"
 }

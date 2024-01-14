@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_69a40edd2e41222e",
-    "var_95adb48e": "#hash_7098f66f47f8f4fa",
-    "var_f3d91b40": "#hash_70d0d132596fca60",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_69a40edd2e41222e",
+    "popupimage": "#hash_7098f66f47f8f4fa",
+    "nametext": "#hash_70d0d132596fca60",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "retro_vegas_reactive_camo_bundle",
-    "var_ba6ab463": "#hash_4b5e35143f413b28",
+    "desctext": "#hash_4b5e35143f413b28",
     "previewimage": "#hash_7b54f7897af08053",
-    "var_fc228068": "#hash_17378d69a5538539"
+    "reserveimage": "#hash_17378d69a5538539"
 }

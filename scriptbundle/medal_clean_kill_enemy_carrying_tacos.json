@@ -5,6 +5,6 @@
     "name": "medal_clean_kill_enemy_carrying_tacos",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_443cbd4bcfdfc65f",
-    "var_8645ce54": "#hash_67085d01ec79d0ed",
+    "stringref": "#hash_67085d01ec79d0ed",
     "iconlarge": "#hash_32876ab6c8cb972f"
 }

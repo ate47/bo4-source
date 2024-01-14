@@ -115,8 +115,8 @@ function private function_ba459d03(team) {
 // Size: 0xd0
 function function_a9d594a0(party) {
     /#
-        foreach (var_52ec371a in party.var_d77ed5eb) {
-            var_2798314b = var_52ec371a getparty();
+        foreach (party_member in party.party_members) {
+            var_2798314b = party_member getparty();
             if (var_2798314b.var_a15e4438 != party.var_a15e4438) {
                 /#
                     assertmsg("<unknown string>");

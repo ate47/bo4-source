@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_end_enemy_shooting_lightning_gun",
     "backinglarge": "#hash_735c5e3788111659",
     "iconsmall": "#t7_hud_medal_end_enemy_shooting_lightning_gun",
-    "var_8645ce54": "#hash_37c233dd17a73d23",
+    "stringref": "#hash_37c233dd17a73d23",
     "iconlarge": "#hash_243fb758e6225e19"
 }

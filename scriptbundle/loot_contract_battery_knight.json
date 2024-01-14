@@ -4,12 +4,12 @@
             "var_826726a": "#hash_17596207123b54e4"
         }
     ],
-    "var_8a31a029": "#hash_32664ad15411759a",
+    "contracticon": "#hash_32664ad15411759a",
     "var_d0100eab": 1,
-    "var_5ed70194": "#hash_759cb09309cf4447",
-    "var_6c44aa0a": "#hash_17596207123b54e4",
+    "relateditemname": "#hash_759cb09309cf4447",
+    "contracttitle": "#hash_17596207123b54e4",
     "name": "loot_contract_battery_knight",
-    "var_2b265a7c": "#hash_471d3d570cc92a00",
+    "contractdescription": "#hash_471d3d570cc92a00",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_6b7df65b756b50a8",
     "var_e08fc162": "#hash_40534ffb27a37ede"

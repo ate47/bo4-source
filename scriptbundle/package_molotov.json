@@ -9,7 +9,7 @@
     "type": "bountyhunterpackage",
     "var_85d7cf08": 1,
     "name": "package_molotov",
-    "var_6c83a2ba": "equipment",
+    "packagetype": "equipment",
     "purchasecost": 750,
     "startammo": 2,
     "var_673a16ad": 1,

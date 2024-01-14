@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_while_sliding",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_kill_enemy_while_sliding",
-    "var_8645ce54": "#hash_52c4ee4c526647c9",
+    "stringref": "#hash_52c4ee4c526647c9",
     "iconlarge": "#hash_205a031707957f63"
 }

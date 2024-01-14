@@ -5,6 +5,6 @@
     "name": "medal_wz_redeploy_bonus",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_375bfcbb0060a3de",
-    "var_8645ce54": "#hash_76810846ee63166e",
+    "stringref": "#hash_76810846ee63166e",
     "iconlarge": "#hash_6be0fc9b8cf83a2e"
 }

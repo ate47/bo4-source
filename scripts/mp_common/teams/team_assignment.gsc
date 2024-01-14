@@ -203,7 +203,7 @@ function function_5c389625() {
 // Checksum 0x46122ff1, Offset: 0xaf8
 // Size: 0x192
 function function_5d02dd86(party) {
-    foreach (member in party.var_d77ed5eb) {
+    foreach (member in party.party_members) {
         if (self == member) {
             continue;
         }
@@ -745,13 +745,13 @@ function function_58b6d2c9() {
                         continue;
                     }
                     party = player getparty();
-                    foreach (var_52ec371a in party.var_d77ed5eb) {
-                        if (var_52ec371a.team == #"spectator") {
+                    foreach (party_member in party.party_members) {
+                        if (party_member.team == #"spectator") {
                             continue;
                         }
-                        if (var_52ec371a.team != player.team) {
+                        if (party_member.team != player.team) {
                             /#
-                                assertmsg("<unknown string>" + player.name + "<unknown string>" + function_9e72a96(player.team) + "<unknown string>" + var_52ec371a.name + "<unknown string>" + function_9e72a96(var_52ec371a.team) + "<unknown string>");
+                                assertmsg("<unknown string>" + player.name + "<unknown string>" + function_9e72a96(player.team) + "<unknown string>" + party_member.name + "<unknown string>" + function_9e72a96(party_member.team) + "<unknown string>");
                             #/
                         }
                     }

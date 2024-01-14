@@ -3,10 +3,10 @@
     "var_bde2a7a": "#hash_7ce495b03d022f7b",
     "var_c6fc3ef": "#hash_646862bef4948b72",
     "var_51c1ff70": "#hash_6e9f231cf6f89836",
-    "var_f3d91b40": "#weapon/ar_galil_t8",
-    "var_47909c6c": "#hash_733a50a66558d623",
+    "nametext": "#weapon/ar_galil_t8",
+    "categorytext": "#hash_733a50a66558d623",
     "name": "community_galil_achievement",
-    "var_ba6ab463": "#hash_4297cab466591ff5",
+    "desctext": "#hash_4297cab466591ff5",
     "var_8dc3b89b": "#hash_7c0da7ae3a532f38",
-    "var_fc228068": "#hash_3489edbc14fb1ab8"
+    "reserveimage": "#hash_3489edbc14fb1ab8"
 }

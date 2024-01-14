@@ -39,7 +39,7 @@
 // Size: 0x32c
 function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
-    level.var_12b138a6 = getweapon(#"hash_1d5aabee515197e9");
+    level.var_12b138a6 = getweapon(#"ct_hack_tool");
     level.hardpoint_bar = luielembar_ct::register("hardpoint_bar");
     callback::on_ai_killed(&function_41ce2473);
     ct_utils::function_6046a5e3(#"ar_damage_t8", array("fmj", "fmj2", "extbarrel"));

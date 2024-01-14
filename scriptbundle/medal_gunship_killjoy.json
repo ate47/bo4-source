@@ -5,6 +5,6 @@
     "name": "medal_gunship_killjoy",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_1410cbe9ae6a8eb7",
-    "var_8645ce54": "#hash_5e5f8a4e6890e672",
+    "stringref": "#hash_5e5f8a4e6890e672",
     "iconlarge": "#hash_4a3b80967d846ac7"
 }

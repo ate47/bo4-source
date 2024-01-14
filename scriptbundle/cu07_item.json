@@ -29,7 +29,7 @@
     "model": "#hash_5e816f6a95662bc1",
     "type": "itemspawnentry",
     "hintstring": "#hash_7a55ec7348fc5d58",
-    "unlockableitemref": "#hash_7fe6c36730a5cf65",
+    "unlockableitemref": "#wz_character_trapper",
     "name": "cu07_item",
     "displayname": "#hash_7a55ec7348fc5d58",
     "icon": "#hash_53c6b639b6b8efd3",

@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_backstabber_kill",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_backstabber_kill",
-    "var_8645ce54": "#hash_f3d007a75b74aec",
+    "stringref": "#hash_f3d007a75b74aec",
     "iconlarge": "#hash_1d2a703c0ae04c0e"
 }

@@ -4,6 +4,6 @@
     "image": "#hash_59b69eadfe735ce2",
     "dailytarget": 10,
     "name": "itsamystery_task",
-    "var_4ef43740": "#hash_31c5d6e2319fd7e2",
-    "var_88e4a04f": "#hash_5637b3827f75d90d"
+    "taskname": "#hash_31c5d6e2319fd7e2",
+    "descsimple": "#hash_5637b3827f75d90d"
 }

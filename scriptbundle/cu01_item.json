@@ -14,7 +14,7 @@
     "model": "#p8_wz_cu_armor_plating_dmg",
     "type": "itemspawnentry",
     "hintstring": "#hash_7f661aa9bdeb2cae",
-    "unlockableitemref": "#hash_61eb938cfbf3d87c",
+    "unlockableitemref": "#wz_character_swatpolice",
     "name": "cu01_item",
     "displayname": "#hash_7f661aa9bdeb2cae",
     "stackcount": 3,

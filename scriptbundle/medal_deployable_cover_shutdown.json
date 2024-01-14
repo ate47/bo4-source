@@ -5,6 +5,6 @@
     "name": "medal_deployable_cover_shutdown",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_338689caa4ebd21b",
-    "var_8645ce54": "#hash_559472617f4a4dfd",
+    "stringref": "#hash_559472617f4a4dfd",
     "iconlarge": "#hash_3faed2a10f32b1bb"
 }

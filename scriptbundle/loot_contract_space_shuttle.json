@@ -1,10 +1,10 @@
 {
-    "var_8a31a029": "#hash_31bc10fda1a80f6e",
-    "var_5ed70194": "#weapon/smg_capacity_t8",
-    "var_6c44aa0a": "#hash_2d85a60f366822d1",
+    "contracticon": "#hash_31bc10fda1a80f6e",
+    "relateditemname": "#weapon/smg_capacity_t8",
+    "contracttitle": "#hash_2d85a60f366822d1",
     "name": "loot_contract_space_shuttle",
     "var_69b5a265": "core_frontend_smg_capacity_spaceshuttle",
-    "var_2b265a7c": "#hash_7680bf2bc2219eb1",
+    "contractdescription": "#hash_7680bf2bc2219eb1",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_11e9f2f0cfc349d4",
     "var_e08fc162": "#hash_469af5f3adb94023"

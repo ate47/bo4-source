@@ -32,7 +32,7 @@
     "model": "#p8_wz_cu_emperor_letter",
     "type": "itemspawnentry",
     "hintstring": "#hash_685b78d996fab60c",
-    "unlockableitemref": "#hash_1aab7708cff692e7",
+    "unlockableitemref": "#wz_character_takeo",
     "name": "cu18_item",
     "displayname": "#hash_685b78d996fab60c",
     "icon": "#hash_459b44cdbca0e2e2",

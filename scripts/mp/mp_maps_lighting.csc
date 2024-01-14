@@ -2,17 +2,17 @@
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\callbacks_shared.csc;
 
-#namespace namespace_ba6e6da6;
+#namespace mp_maps_lighting;
 
-// Namespace namespace_ba6e6da6/namespace_ba6e6da6
+// Namespace mp_maps_lighting/mp_maps_lighting
 // Params 0, eflags: 0x2
 // Checksum 0x92fc227c, Offset: 0x78
 // Size: 0x3c
 function autoexec __init__system__() {
-    system::register(#"hash_40bd7cb6e94e2dfb", &__init__, undefined, undefined);
+    system::register(#"mp_maps_lighting", &__init__, undefined, undefined);
 }
 
-// Namespace namespace_ba6e6da6/namespace_ba6e6da6
+// Namespace mp_maps_lighting/mp_maps_lighting
 // Params 0, eflags: 0x1 linked
 // Checksum 0xef6ea471, Offset: 0xc0
 // Size: 0x44
@@ -21,7 +21,7 @@ function __init__() {
     callback::on_gameplay_started(&on_gameplay_started);
 }
 
-// Namespace namespace_ba6e6da6/namespace_ba6e6da6
+// Namespace mp_maps_lighting/mp_maps_lighting
 // Params 1, eflags: 0x1 linked
 // Checksum 0xc2b78308, Offset: 0x110
 // Size: 0x2c
@@ -30,7 +30,7 @@ function on_localclient_connect(localclientnum) {
     setpbgactivebank(localclientnum, 8);
 }
 
-// Namespace namespace_ba6e6da6/namespace_ba6e6da6
+// Namespace mp_maps_lighting/mp_maps_lighting
 // Params 1, eflags: 0x1 linked
 // Checksum 0xbb9246b6, Offset: 0x148
 // Size: 0x2c

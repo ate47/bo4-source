@@ -4,6 +4,6 @@
     "image": "#hash_3035a2f224699d23",
     "dailytarget": 750,
     "name": "tacticalrifles_task",
-    "var_4ef43740": "#hash_151a1264ca159432",
-    "var_88e4a04f": "#hash_792642fd140871bd"
+    "taskname": "#hash_151a1264ca159432",
+    "descsimple": "#hash_792642fd140871bd"
 }

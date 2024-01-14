@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_with_their_weapon",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_kill_enemy_with_their_weapon",
-    "var_8645ce54": "#hash_788cbc81257a188d",
+    "stringref": "#hash_788cbc81257a188d",
     "iconlarge": "#hash_65da44ad5c9aa287"
 }

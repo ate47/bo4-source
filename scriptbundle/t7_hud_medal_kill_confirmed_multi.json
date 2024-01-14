@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_confirmed_multi",
     "backinglarge": "#hash_616c67b488c6314c",
     "iconsmall": "#t7_hud_medal_kill_confirmed_multi",
-    "var_8645ce54": "#hash_424c37933e7c0d2d",
+    "stringref": "#hash_424c37933e7c0d2d",
     "iconlarge": "#hash_52612e60bec9ed8b"
 }

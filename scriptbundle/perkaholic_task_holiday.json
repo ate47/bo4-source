@@ -4,6 +4,6 @@
     "image": "#hash_2ef6fe5f817781e6",
     "dailytarget": 15,
     "name": "perkaholic_task_holiday",
-    "var_4ef43740": "#hash_364f446240a6108d",
-    "var_88e4a04f": "#hash_c2c06eaefd0067d"
+    "taskname": "#hash_364f446240a6108d",
+    "descsimple": "#hash_c2c06eaefd0067d"
 }

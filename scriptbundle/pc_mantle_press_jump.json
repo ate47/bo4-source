@@ -1,8 +1,8 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "0",
-            "var_6825bdb": "auto_mantle_enabled",
+            "optionvalue": "0",
+            "optionname": "auto_mantle_enabled",
             "operator": "=="
         }
     ],
@@ -20,7 +20,7 @@
             "value": "0"
         }
     ],
-    "var_d260763": "#hash_1fa2283fa1a27106",
+    "descriptionimage": "#hash_1fa2283fa1a27106",
     "description": "#hash_201bbce1161e4",
     "var_60fcfffa": "#hash_4f445f7612232efc",
     "var_10e01ad5": 1,

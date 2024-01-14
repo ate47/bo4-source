@@ -4,39 +4,39 @@
             "var_82670522": "stats_tripwire_ied_kill",
             "stattype": "playerstatslist",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_68da827cf0f9863b"
+            "displaystatname": "#hash_68da827cf0f9863b"
         },
         {
             "stattype": "objectiveekia",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "#hash_5d1ab6f5e0227795"
         },
         {
             "var_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_158193577a14c86e"
+            "displaystatname": "#hash_158193577a14c86e"
         },
         {
             "stattype": "damagedone",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_5418827f408e5ca2"
+            "displaystatname": "#hash_5418827f408e5ca2"
         },
         {
             "var_82670522": "stats_headshot",
             "stattype": "playerstatslist",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_619e74f99b27b9ae"
+            "displaystatname": "#hash_619e74f99b27b9ae"
         },
         {
             "stattype": "objectivescore",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_6abbd7a88ee593ed"
+            "displaystatname": "#hash_6abbd7a88ee593ed"
         }
     ],
     "var_447510ee": "prt_mp_trapper",
-    "var_e123fa65": "#hash_401fc36948868c17",
-    "var_999a02c5": "#hash_25d0df4a29037d70",
+    "defaultimage": "#hash_401fc36948868c17",
+    "cardname": "#hash_25d0df4a29037d70",
     "name": "ambusher_sd_hvo",
     "var_46a95923": "sd"
 }

@@ -692,7 +692,7 @@ function private function_4e049216(einflictor, eattacker, idamage, idflags, smea
         self.about_to_die = 1;
         eattacker notify(#"destroyed_helicopter");
         eattacker potm::bookmark(#"ct_battery", gettime(), eattacker);
-        level notify(#"hash_52fa8babe8d8d2c9");
+        level notify(#"ct_timer_stop");
         if (isdefined(self.waypoint)) {
             self.waypoint ct_utils::function_f9ed304d();
         }

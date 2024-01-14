@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_that_is_wallrunning",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_kill_enemy_that_is_wallrunning",
-    "var_8645ce54": "#hash_48354b3631f7944b",
+    "stringref": "#hash_48354b3631f7944b",
     "iconlarge": "#hash_1606bc69c72002b9"
 }

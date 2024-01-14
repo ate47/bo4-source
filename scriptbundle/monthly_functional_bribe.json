@@ -1,11 +1,11 @@
 {
-    "var_af1e1219": "#hash_4d0d3e52fedf9a80",
-    "var_95adb48e": "#hash_58e9d248c53f5898",
-    "var_f3d91b40": "#hash_448260d8cfcab193",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "buttonimage": "#hash_4d0d3e52fedf9a80",
+    "popupimage": "#hash_58e9d248c53f5898",
+    "nametext": "#hash_448260d8cfcab193",
+    "categorytext": "#mpui/bm_bribe",
     "name": "monthly_functional_bribe",
-    "var_6290dfe9": "#hash_37ebf65b6076f60b",
-    "var_ba6ab463": "#hash_b51caa0abca8b45",
+    "stackimage": "#hash_37ebf65b6076f60b",
+    "desctext": "#hash_b51caa0abca8b45",
     "var_76dc8b88": "#hash_60be32fbdad1f573",
     "previewimage": "#hash_4e18efee7211607e"
 }

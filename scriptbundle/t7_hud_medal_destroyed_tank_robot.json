@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_destroyed_tank_robot",
     "backinglarge": "#hash_7aa77346d1e9d83a",
     "iconsmall": "#hash_6864897fc08058d9",
-    "var_8645ce54": "#hash_3ec5b746ee2cfc96",
+    "stringref": "#hash_3ec5b746ee2cfc96",
     "iconlarge": "#hash_41b3163a797a930d"
 }

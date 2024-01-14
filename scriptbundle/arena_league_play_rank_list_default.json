@@ -73,7 +73,7 @@
         {
             "rankrewards": [
                 {
-                    "var_a25963d3": "ui_icon_callingcards_league_rank_5"
+                    "rewarditem": "ui_icon_callingcards_league_rank_5"
                 }
             ],
             "var_7f0a6f1": 1,
@@ -158,7 +158,7 @@
         {
             "rankrewards": [
                 {
-                    "var_a25963d3": "ui_icon_callingcards_league_rank_10"
+                    "rewarditem": "ui_icon_callingcards_league_rank_10"
                 }
             ],
             "var_7f0a6f1": 1,
@@ -243,7 +243,7 @@
         {
             "rankrewards": [
                 {
-                    "var_a25963d3": "ui_icon_callingcards_league_rank_15"
+                    "rewarditem": "ui_icon_callingcards_league_rank_15"
                 }
             ],
             "var_7f0a6f1": 1,
@@ -328,7 +328,7 @@
         {
             "rankrewards": [
                 {
-                    "var_a25963d3": "ui_icon_callingcards_league_rank_20"
+                    "rewarditem": "ui_icon_callingcards_league_rank_20"
                 }
             ],
             "var_7f0a6f1": 1,
@@ -413,7 +413,7 @@
         {
             "rankrewards": [
                 {
-                    "var_a25963d3": "ui_icon_callingcards_league_rank_25"
+                    "rewarditem": "ui_icon_callingcards_league_rank_25"
                 }
             ],
             "var_7f0a6f1": 1,
@@ -498,7 +498,7 @@
         {
             "rankrewards": [
                 {
-                    "var_a25963d3": "ui_icon_callingcards_league_rank_30"
+                    "rewarditem": "ui_icon_callingcards_league_rank_30"
                 }
             ],
             "var_7f0a6f1": 1,

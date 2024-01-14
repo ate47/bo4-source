@@ -15,7 +15,7 @@
     "model": "#p8_wz_cu_keychain",
     "type": "itemspawnentry",
     "hintstring": "#hash_458fcfd4caae9ae2",
-    "unlockableitemref": "#hash_6e3f025910376d7f",
+    "unlockableitemref": "#wz_character_zero",
     "name": "cu32_item",
     "displayname": "#hash_458fcfd4caae9ae2",
     "icon": "#hash_289e123d6715d8f0",

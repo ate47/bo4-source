@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_retrieve_own_tags",
     "backinglarge": "#hash_616c67b488c6314c",
     "iconsmall": "#t7_hud_medal_retrieve_own_tags",
-    "var_8645ce54": "#hash_71604736202c89be",
+    "stringref": "#hash_71604736202c89be",
     "iconlarge": "#hash_29832d755eb16f04"
 }

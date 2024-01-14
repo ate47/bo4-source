@@ -243,14 +243,14 @@ function propcontrolshud() {
     }
     self.var_5478a045 = addupperrighthudelem();
     self.var_e8c312d7 = addupperrighthudelem(#"hash_2f560292a2fb7eab");
-    self.var_8060636f = addupperrighthudelem(#"hash_729ec53689a0f0da", 0);
+    self.var_8060636f = addupperrighthudelem(#"mp_ph_change", 0);
     self.var_8b393c32 = self.var_8b393c32 - 20;
     self.var_8e3b5c8c = addupperrighthudelem(#"hash_fb73fdc2aff963f");
     self.var_a4da95c7 = addupperrighthudelem(#"hash_7f59350f5f223501", undefined, undefined, #"hash_4c7fbb5c1ccd5107");
-    self.var_4901798a = addupperrighthudelem(#"hash_67f01c50e40b84c9");
-    self.var_aa57a992 = addupperrighthudelem(#"hash_61a3873374e36fce", undefined, undefined, #"hash_39e61050ab8d325e");
+    self.var_4901798a = addupperrighthudelem(#"mp_ph_lock");
+    self.var_aa57a992 = addupperrighthudelem(#"mp_ph_spin", undefined, undefined, #"hash_39e61050ab8d325e");
     self function_138e42e4();
-    self.var_65efe125 = addupperrighthudelem(#"hash_3f9f42e6b8f43bcd");
+    self.var_65efe125 = addupperrighthudelem(#"mp_ph_zoom");
     self thread function_ec04079a();
 }
 
@@ -316,7 +316,7 @@ function function_ec04079a() {
                 } else {
                     self.var_a4da95c7.label = #"hash_6ca8e1ea720ba9f";
                 }
-                self.var_aa57a992.label = #"hash_61a3873374e36fce";
+                self.var_aa57a992.label = #"mp_ph_spin";
             } else {
                 if (!(isdefined(self.var_98d22839) && self.var_98d22839)) {
                     self.var_a4da95c7.label = #"hash_4c7fbb5c1ccd5107";
@@ -881,7 +881,7 @@ function unlockprop() {
         }
         self.lock = 0;
         if (prop::useprophudserver()) {
-            self.var_4901798a.label = #"hash_67f01c50e40b84c9";
+            self.var_4901798a.label = #"mp_ph_lock";
             self thread function_74566016();
         }
     }
@@ -907,7 +907,7 @@ function function_fb28c6d5() {
     self.lock = 1;
     self notify(#"locked");
     if (prop::useprophudserver()) {
-        self.var_4901798a.label = #"hash_6c126f41c5d48660";
+        self.var_4901798a.label = #"mp_ph_locked";
         self thread function_74566016();
     }
 }
@@ -1111,7 +1111,7 @@ function function_be19060b() {
 function function_138e42e4() {
     switch (self.currentability) {
     case #"flash":
-        self.var_5478a045.label = #"hash_864bb7b4416fcfc";
+        self.var_5478a045.label = #"mp_ph_flash";
         break;
     default:
         /#

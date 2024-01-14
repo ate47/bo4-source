@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_stop_enemy_killstreak",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_stop_enemy_killstreak",
-    "var_8645ce54": "#hash_38eae8b924fea5d",
+    "stringref": "#hash_38eae8b924fea5d",
     "iconlarge": "#hash_70a183e29f5ba3a3"
 }

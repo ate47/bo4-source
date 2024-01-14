@@ -1,5 +1,5 @@
 {
-    "var_d260763": "#hash_b0051468c8fa60d",
+    "descriptionimage": "#hash_b0051468c8fa60d",
     "description": "#hash_75a4de62df5fc44a",
     "var_60fcfffa": "#menu/on",
     "var_10e01ad5": 1,
@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_mouse_sensitivity",
     "displayname": "#hash_3fb4a1191cbaf67a",
-    "var_4a4760c0": 0.01,
+    "rangestartvalue": 0.01,
     "var_d6897f56": 1,
     "var_926d1be9": 0.01,
     "var_66faec87": 100,

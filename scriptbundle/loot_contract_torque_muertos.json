@@ -7,12 +7,12 @@
             "var_826726a": "#hash_62bd0375e9e20dab"
         }
     ],
-    "var_8a31a029": "#hash_118898fc6ac8037d",
+    "contracticon": "#hash_118898fc6ac8037d",
     "var_d0100eab": 2,
-    "var_5ed70194": "#hash_62bd0375e9e20dab",
-    "var_6c44aa0a": "#hash_675870e0366d7a76",
+    "relateditemname": "#hash_62bd0375e9e20dab",
+    "contracttitle": "#hash_675870e0366d7a76",
     "name": "loot_contract_torque_muertos",
-    "var_2b265a7c": "#hash_25105a1e4c1d1e63",
+    "contractdescription": "#hash_25105a1e4c1d1e63",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_2f73f0d2dd7e330",
     "var_e08fc162": "#hash_1228188324cf56e"

@@ -1,9 +1,9 @@
 {
-    "var_8a31a029": "#hash_70c13cd2e6939430",
-    "var_5ed70194": "#weapon/pistol_standard_t8",
-    "var_6c44aa0a": "#weapon/pistol_standard_t8",
+    "contracticon": "#hash_70c13cd2e6939430",
+    "relateditemname": "#weapon/pistol_standard_t8",
+    "contracttitle": "#weapon/pistol_standard_t8",
     "name": "loot_contract_divinity",
     "var_4b258f2c": "#hash_24df94f20f8b9a2d",
-    "var_2b265a7c": "#weapon/pistol_standard_t8",
+    "contractdescription": "#weapon/pistol_standard_t8",
     "var_f15e270f": "#white"
 }

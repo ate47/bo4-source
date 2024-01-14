@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_e05c7656ca43e47",
+    "popupimage": "#hash_e05c7656ca43e47",
     "var_5162d01b": "#hash_e05c7656ca43e47",
-    "var_f3d91b40": "#hash_4108425ce1d0f984",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_4108425ce1d0f984",
+    "categorytext": "#mpui/bm_bribe",
     "name": "loot_smg_burst_mk2_bribe_free",
-    "var_ba6ab463": "#hash_3f55c90387f692ac",
+    "desctext": "#hash_3f55c90387f692ac",
     "var_c1acffb6": "#hash_4108425ce1d0f984"
 }

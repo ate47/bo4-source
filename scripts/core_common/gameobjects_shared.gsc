@@ -2177,10 +2177,10 @@ function private function_4d047b8d() {
     if (isdefined(useobject.trigger) && isdefined(requiredspecialty) && requiredspecialty != "None") {
         useobject.trigger setperkfortrigger(requiredspecialty);
     }
-    var_af6e4895 = function_1fce1758(useobject.objectiveid);
-    if (isdefined(var_af6e4895)) {
-        useobject.var_af6e4895 = getweapon(var_af6e4895);
-        useobject.trigger function_ca21f900(useobject.var_af6e4895);
+    requiredweapon = function_1fce1758(useobject.objectiveid);
+    if (isdefined(requiredweapon)) {
+        useobject.requiredweapon = getweapon(requiredweapon);
+        useobject.trigger function_ca21f900(useobject.requiredweapon);
     }
 }
 
@@ -4269,12 +4269,12 @@ function can_interact_with(sentient) {
             return 1;
         }
     }
-    if (isdefined(self.var_af6e4895) && isplayer(sentient)) {
+    if (isdefined(self.requiredweapon) && isplayer(sentient)) {
         player = sentient;
-        if (!player hasweapon(self.var_af6e4895)) {
+        if (!player hasweapon(self.requiredweapon)) {
             return 0;
         }
-        ammocount = player getammocount(self.var_af6e4895);
+        ammocount = player getammocount(self.requiredweapon);
         if (ammocount == 0) {
             return 0;
         }

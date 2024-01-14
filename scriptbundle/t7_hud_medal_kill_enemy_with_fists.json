@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_with_fists",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_kill_enemy_with_fists",
-    "var_8645ce54": "#hash_3ebca51d940be3e7",
+    "stringref": "#hash_3ebca51d940be3e7",
     "iconlarge": "#hash_6efb23163ba13019"
 }

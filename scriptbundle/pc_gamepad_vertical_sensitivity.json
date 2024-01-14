@@ -37,7 +37,7 @@
             "value": "8"
         }
     ],
-    "var_d260763": "#hash_7ff90f0bea8ed361",
+    "descriptionimage": "#hash_7ff90f0bea8ed361",
     "description": "#hash_5e9f7f1ec4aa20c3",
     "var_60fcfffa": "#hash_33f7784385593061",
     "var_10e01ad5": 1,
@@ -48,7 +48,7 @@
     "maxvalue": 1,
     "name": "pc_gamepad_vertical_sensitivity",
     "displayname": "#hash_29713f600232aa09",
-    "var_4a4760c0": 0.01,
+    "rangestartvalue": 0.01,
     "var_d6897f56": 1,
     "var_926d1be9": 0.01,
     "var_66faec87": 4,

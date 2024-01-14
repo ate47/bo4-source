@@ -1,9 +1,9 @@
 {
-    "var_af1e1219": "#hash_667809c6d318b8e3",
-    "var_95adb48e": "#hash_11182e57beaa72e1",
-    "var_f3d91b40": "#hash_1cba159f28b3f3b8",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_667809c6d318b8e3",
+    "popupimage": "#hash_11182e57beaa72e1",
+    "nametext": "#hash_1cba159f28b3f3b8",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "triple_play_dec2018",
-    "var_ba6ab463": "#hash_685e84ebbcb491e0",
+    "desctext": "#hash_685e84ebbcb491e0",
     "previewimage": "#hash_67c39f2b1f876aee"
 }

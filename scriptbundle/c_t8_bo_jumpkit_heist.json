@@ -4,7 +4,7 @@
     "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_preview_benjamins",
     "name": "c_t8_bo_jumpkit_heist",
     "displayname": "#hash_330bf8ad247252f2",
-    "var_15d11806": "loot03_ui_icon_blackmarket_item_shop_wingsuit_benjamins",
+    "preview_image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_benjamins",
     "var_4fa85a25": "dfxt_heist",
     "parachute": "c_t8_bo_parachute_heist"
 }

@@ -1,13 +1,13 @@
 {
     "stages": [
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_ab40486c": 1,
             "var_c6bd8560": 1,
             "var_1c54e7b8": "uin_active_camo_ww2",
             "var_50046db7": "#menu/x_kills",
             "var_ab41165": 1,
-            "var_879c8798": "#camo_active_sig_pistol_fullauto_arcade_base",
+            "camooption": "#camo_active_sig_pistol_fullauto_arcade_base",
             "var_d6eb46a8": 1,
             "var_e2dbd42d": 5,
             "var_8fc4c50d": "uin_active_camo_impulse",
@@ -16,7 +16,7 @@
             "var_a70a5df4": 1
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -26,7 +26,7 @@
             "var_b214e79c": 1,
             "var_aaae2554": 1,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_97b209555cbffea",
+            "camooption": "#hash_97b209555cbffea",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 5,
             "var_cea7f3de": 1,
@@ -37,7 +37,7 @@
             "statname": "#kills"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -46,7 +46,7 @@
             "var_b214e79c": 1,
             "var_aaae2554": 1,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_97b1f9555cbfe37",
+            "camooption": "#hash_97b1f9555cbfe37",
             "var_7749dfd0": 1,
             "var_cea7f3de": 1,
             "var_746aff80": 1,

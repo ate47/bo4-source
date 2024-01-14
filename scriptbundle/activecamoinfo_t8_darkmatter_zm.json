@@ -3,7 +3,7 @@
         {
             "var_1c54e7b8": "uin_active_camo_transition",
             "var_50046db7": "#hash_1ed87375e8a35e31",
-            "var_879c8798": "#hash_184dfcd5468eed2a",
+            "camooption": "#hash_184dfcd5468eed2a",
             "var_e2dbd42d": 50,
             "var_c43b3dd3": 1,
             "var_8fc4c50d": "uin_active_camo_impulse",
@@ -11,7 +11,7 @@
         },
         {
             "var_5ef99f63": 0.1,
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -19,7 +19,7 @@
             "var_50046db7": "#hash_1ed87375e8a35e31",
             "var_b214e79c": 1,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_184dfcd5468eed2a",
+            "camooption": "#hash_184dfcd5468eed2a",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 50,
             "var_9fbd261d": "tag_camo_darkmatter",
@@ -31,7 +31,7 @@
             "var_fd18521e": 0.1
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -44,7 +44,7 @@
             "var_aaae2554": 1,
             "var_e0ff6986": 2,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_184df8d5468ee65e",
+            "camooption": "#hash_184df8d5468ee65e",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 100,
             "var_cea7f3de": 1,
@@ -56,7 +56,7 @@
             "statname": "#headshots"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -67,7 +67,7 @@
             "var_683c8289": 2,
             "var_e0ff6986": 2,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_184df9d5468ee811",
+            "camooption": "#hash_184df9d5468ee811",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 100,
             "var_c43b3dd3": 1,
@@ -75,7 +75,7 @@
             "statname": "#headshots"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -86,7 +86,7 @@
             "var_683c8289": 2,
             "var_e0ff6986": 2,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_184dfad5468ee9c4",
+            "camooption": "#hash_184dfad5468ee9c4",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 100,
             "var_c43b3dd3": 1,
@@ -94,7 +94,7 @@
             "statname": "#headshots"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -105,7 +105,7 @@
             "var_683c8289": 2,
             "var_e0ff6986": 2,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_184dfbd5468eeb77",
+            "camooption": "#hash_184dfbd5468eeb77",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 100,
             "var_c43b3dd3": 1,
@@ -113,7 +113,7 @@
             "statname": "#headshots"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -123,7 +123,7 @@
             "var_683c8289": 2,
             "var_e0ff6986": 2,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_184df8d5468ee65e",
+            "camooption": "#hash_184df8d5468ee65e",
             "var_7749dfd0": 1,
             "var_c43b3dd3": 1,
             "var_8fc4c50d": "uin_active_camo_impulse",

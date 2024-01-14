@@ -3,7 +3,7 @@
     "description": "#hash_693cbd6544eb9cf9",
     "var_922067c4": "scriptbundle",
     "model": "#hash_14981b992ef48997",
-    "weapon": "weapon#hash_430b169e311309f",
+    "weapon": "weapon#eq_hawk_wz",
     "type": "itemspawnentry",
     "name": "hawk_wz_item",
     "displayname": "#weapon/hawk",

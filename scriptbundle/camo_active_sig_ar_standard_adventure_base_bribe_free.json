@@ -1,11 +1,11 @@
 {
     "var_c7bd8867": "#hash_44a39e95faef0a4c",
-    "var_95adb48e": "#hash_57106c5c00b1a91e",
+    "popupimage": "#hash_57106c5c00b1a91e",
     "var_5162d01b": "#hash_57106c5c00b1a91e",
-    "var_f3d91b40": "#hash_2a634db8501d93aa",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_2a634db8501d93aa",
+    "categorytext": "#mpui/bm_bribe",
     "name": "camo_active_sig_ar_standard_adventure_base_bribe_free",
-    "var_ba6ab463": "#hash_448be1da4b67ec9a",
+    "desctext": "#hash_448be1da4b67ec9a",
     "var_e35e7c74": "#weapon/ar_standard_t8",
     "var_c1acffb6": "#hash_2a634db8501d93aa"
 }

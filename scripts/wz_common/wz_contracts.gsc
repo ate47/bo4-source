@@ -221,10 +221,10 @@ function on_player_killed() {
         n_character_index = attacker.pers[#"characterindex"];
         rf = getplayerrolefields(n_character_index, currentsessionmode());
         if (isdefined(rf)) {
-            if (!isdefined(rf.var_f0a975bf)) {
-                rf.var_f0a975bf = 0;
+            if (!isdefined(rf.modecategory)) {
+                rf.modecategory = 0;
             }
-            switch (rf.var_f0a975bf) {
+            switch (rf.modecategory) {
             case 0:
                 attacker increment_wz_contract(#"contract_wz_zm_player_character_kill");
                 break;

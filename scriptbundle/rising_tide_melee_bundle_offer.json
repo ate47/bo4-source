@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_274c2af5dd18ff9f",
-    "var_95adb48e": "#hash_634bd672bd27a7d2",
-    "var_f3d91b40": "#hash_4acbcd847d11b9d3",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_274c2af5dd18ff9f",
+    "popupimage": "#hash_634bd672bd27a7d2",
+    "nametext": "#hash_4acbcd847d11b9d3",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "rising_tide_melee_bundle_offer",
-    "var_ba6ab463": "#hash_446d8fcf964b8585",
+    "desctext": "#hash_446d8fcf964b8585",
     "previewimage": "#hash_7d97c14ef8f846c1",
-    "var_fc228068": "#hash_1df2f1e66d22cfb7"
+    "reserveimage": "#hash_1df2f1e66d22cfb7"
 }

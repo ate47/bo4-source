@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_6416d287556e818f",
+    "popupimage": "#hash_6416d287556e818f",
     "var_5162d01b": "#hash_6416d287556e818f",
-    "var_f3d91b40": "#weapon/shotgun_precision_t8",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#weapon/shotgun_precision_t8",
+    "categorytext": "#mpui/bm_bribe",
     "name": "shotgun_precision_t8_bribe",
-    "var_ba6ab463": "#hash_15062ed291e6bce4",
+    "desctext": "#hash_15062ed291e6bce4",
     "var_c1acffb6": "#weapon/shotgun_precision_t8"
 }

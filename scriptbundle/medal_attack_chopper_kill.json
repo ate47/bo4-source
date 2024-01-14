@@ -5,6 +5,6 @@
     "name": "medal_attack_chopper_kill",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_2f66cef7039f272",
-    "var_8645ce54": "#hash_17e991ecc40a75c2",
+    "stringref": "#hash_17e991ecc40a75c2",
     "iconlarge": "#hash_48b6773bf049a472"
 }

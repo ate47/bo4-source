@@ -4,6 +4,6 @@
     "image": "#hash_1feb0fcb9e8700b3",
     "dailytarget": 20,
     "name": "wallbuyer_task",
-    "var_4ef43740": "#hash_522aef9322f48e25",
-    "var_88e4a04f": "#hash_7dbfcae640b37b84"
+    "taskname": "#hash_522aef9322f48e25",
+    "descsimple": "#hash_7dbfcae640b37b84"
 }

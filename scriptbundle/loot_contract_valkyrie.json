@@ -1,9 +1,9 @@
 {
-    "var_8a31a029": "#hash_8a7037152920b58",
-    "var_5ed70194": "#weapon/sniper_powerbolt_t8",
-    "var_6c44aa0a": "#hash_452fd06faf792671",
+    "contracticon": "#hash_8a7037152920b58",
+    "relateditemname": "#weapon/sniper_powerbolt_t8",
+    "contracttitle": "#hash_452fd06faf792671",
     "name": "loot_contract_valkyrie",
-    "var_2b265a7c": "#hash_7680bf2bc2219eb1",
+    "contractdescription": "#hash_7680bf2bc2219eb1",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_7c1aeddf12a07116",
     "var_e08fc162": "#hash_485e43ae0c8e5c85"

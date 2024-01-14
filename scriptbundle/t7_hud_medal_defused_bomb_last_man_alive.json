@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_defused_bomb_last_man_alive",
     "backinglarge": "#hash_616c67b488c6314c",
     "iconsmall": "#t7_hud_medal_defused_bomb_last_man_alive",
-    "var_8645ce54": "#hash_4bf2f1bd7cba5b7a",
+    "stringref": "#hash_4bf2f1bd7cba5b7a",
     "iconlarge": "#hash_6961edffa13460a0"
 }

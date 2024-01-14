@@ -640,14 +640,14 @@ function start_warzone() {
     level start_insertion();
     level.ingraceperiod = 0;
     level.var_bde3d03 = undefined;
-    var_f9adbf05 = function_70171add();
+    survey_id = function_70171add();
     foreach (player in getplayers()) {
         player spawn::function_8cef1872();
         player val::reset(#"warzonestaging", "takedamage");
         if (sessionmodeisonlinegame()) {
             player stats::function_7a850245(#"demofileid", getdemofileid());
             if (level.rankedmatch) {
-                player stats::function_7a850245("surveyId", var_f9adbf05);
+                player stats::function_7a850245("surveyId", survey_id);
             }
         }
     }

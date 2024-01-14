@@ -25,7 +25,7 @@
     "model": "#hash_638ad0ee7af51140",
     "type": "itemspawnentry",
     "hintstring": "#hash_5f887938a94adb9",
-    "unlockableitemref": "#hash_3b544902c03f609f",
+    "unlockableitemref": "#wz_character_mercenary",
     "name": "cu08_item",
     "displayname": "#hash_5f887938a94adb9",
     "icon": "#hash_6d5fc9ec4fc046d2",

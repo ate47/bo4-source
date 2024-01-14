@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_uninterrupted_obit_feed_kills",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_uninterrupted_obit_feed_kills",
-    "var_8645ce54": "#hash_1019a96721546d54",
+    "stringref": "#hash_1019a96721546d54",
     "iconlarge": "#hash_937c094ab86b0de"
 }

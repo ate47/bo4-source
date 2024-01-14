@@ -5,6 +5,6 @@
     "name": "medal_golden_ammo_multikill",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_2dc9df5ff1f19c0c",
-    "var_8645ce54": "#hash_6fdbaa724f43d324",
+    "stringref": "#hash_6fdbaa724f43d324",
     "iconlarge": "#hash_10f0713f4471bd98"
 }

@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_while_capping_dom",
     "backinglarge": "#hash_616c67b488c6314c",
     "iconsmall": "#t7_hud_medal_kill_enemy_while_capping_dom",
-    "var_8645ce54": "#hash_74c273f18b5b72a7",
+    "stringref": "#hash_74c273f18b5b72a7",
     "iconlarge": "#hash_160222239f760f16"
 }

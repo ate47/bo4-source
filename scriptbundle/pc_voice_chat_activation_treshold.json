@@ -1,12 +1,12 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "0",
-            "var_6825bdb": "voice_pushToTalk",
+            "optionvalue": "0",
+            "optionname": "voice_pushToTalk",
             "operator": "=="
         }
     ],
-    "var_d260763": "#hash_79fda6795137590",
+    "descriptionimage": "#hash_79fda6795137590",
     "description": "#hash_496bc26497db49f8",
     "var_60fcfffa": "#menu/off",
     "var_10e01ad5": 1,

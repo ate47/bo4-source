@@ -32,7 +32,7 @@
     "model": "#p8_wz_cu_clothes_tshirt",
     "type": "itemspawnentry",
     "hintstring": "#hash_777414243131336f",
-    "unlockableitemref": "#hash_68a8a2d6d70fbc5d",
+    "unlockableitemref": "#wz_character_mason",
     "name": "cu19_item",
     "displayname": "#hash_777414243131336f",
     "icon": "#hash_6a9711e31201d8a",

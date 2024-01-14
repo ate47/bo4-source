@@ -1,5 +1,5 @@
 {
-    "var_d260763": "#hash_7ff90f0bea8ed361",
+    "descriptionimage": "#hash_7ff90f0bea8ed361",
     "description": "#hash_7ed5b3590b6a9a64",
     "var_60fcfffa": "#hash_68cca6c42c586237",
     "var_10e01ad5": 1,
@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_gamepad_reload_behavior",
     "displayname": "#hash_5d4618b0110c8110",
-    "var_4a4760c0": 0.01,
+    "rangestartvalue": 0.01,
     "var_926d1be9": 0.01,
     "var_66faec87": 4,
     "statname": "warzoneReloadOnPress",

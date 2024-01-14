@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_5c2bbe429dc587f4",
-    "var_95adb48e": "#hash_5cccc7533c64c660",
-    "var_f3d91b40": "#hash_51b07b0c2119b31b",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_5c2bbe429dc587f4",
+    "popupimage": "#hash_5cccc7533c64c660",
+    "nametext": "#hash_51b07b0c2119b31b",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "melee_club_bundle",
-    "var_ba6ab463": "#hash_f867f03a9396ecd",
+    "desctext": "#hash_f867f03a9396ecd",
     "previewimage": "#hash_4bec96718097647d",
-    "var_fc228068": "#hash_40f44cab6b0f79fc"
+    "reserveimage": "#hash_40f44cab6b0f79fc"
 }

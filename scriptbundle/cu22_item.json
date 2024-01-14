@@ -14,7 +14,7 @@
     "model": "#p8_wz_cu_bandana",
     "type": "itemspawnentry",
     "hintstring": "#hash_46107248e6ff17c7",
-    "unlockableitemref": "#hash_52668ac16b2d46a5",
+    "unlockableitemref": "#wz_character_woods",
     "name": "cu22_item",
     "displayname": "#hash_46107248e6ff17c7",
     "icon": "#hash_4c3e98d67e4af20a",

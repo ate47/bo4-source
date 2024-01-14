@@ -47,7 +47,7 @@
     "model": "#p8_wz_cu_hat_wool",
     "type": "itemspawnentry",
     "hintstring": "#hash_99fc2e66d019964",
-    "unlockableitemref": "#hash_78beb7e0db26fa7d",
+    "unlockableitemref": "#wz_character_reznov",
     "var_7adcadc1": 10,
     "name": "cu21_item",
     "displayname": "#hash_99fc2e66d019964",

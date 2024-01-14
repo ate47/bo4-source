@@ -1631,7 +1631,7 @@ function private function_6c9e78d5(var_c1e98979) {
     updateplacement();
     function_68bfd6d7();
     roundlength = getroundlength();
-    var_f9adbf05 = function_70171add();
+    survey_id = function_70171add();
     current_time = gettime();
     game_over = is_game_over();
     players = level.players;
@@ -1647,7 +1647,7 @@ function private function_6c9e78d5(var_c1e98979) {
             player stats::function_7a850245(#"demofileid", getdemofileid());
             player stats::function_7a850245(#"matchid", getmatchid());
             if (level.rankedmatch) {
-                player stats::function_7a850245("surveyId", var_f9adbf05);
+                player stats::function_7a850245("surveyId", survey_id);
             }
         }
         player stats::function_7a850245("hardcore", level.hardcoremode);

@@ -254,13 +254,13 @@ soundalias,hash_1f9b1d980061ea0e,0
 soundalias,hash_1ff8bec27dfc1b70,0
 soundalias,hash_200e28bcd26bab77,0
 soundalias,hash_200e2ebcd26bb5a9,0
-soundalias,hash_217d59153bcf0c5e,0
+soundalias,amb_thunder,0
 soundalias,hash_22d01da9a5078de7,0
 soundalias,hash_24341b2153efa720,0
 soundalias,hash_25a264b901d17919,0
 soundalias,hash_26bf012beaa38162,0
 soundalias,hash_27bbcfa04a0c92de,0
-soundalias,hash_29c72ae111177d1d,0
+soundalias,dst_paper,0
 soundalias,hash_2b4204e19f1446b0,0
 soundalias,hash_2ca6411fde5a8e5f,0
 soundalias,hash_2ca6571fde5ab3c1,0
@@ -282,7 +282,7 @@ soundalias,hash_344ec28fee2dea4c,0
 soundalias,hash_358280be0b200bd1,0
 soundalias,hash_38da9ad3ee18bb26,0
 soundalias,hash_3a4d2c00d9075b34,0
-soundalias,hash_3ab829d5a74787c1,0
+soundalias,amb_fan,0
 soundalias,hash_3b66638c6f40e4d3,0
 soundalias,hash_3b66818c6f4117cd,0
 soundalias,hash_3b6983b084cfef53,0
@@ -293,7 +293,7 @@ soundalias,hash_3d440a22f402438e,0
 soundalias,hash_3dafc6f07b5d5ab4,0
 soundalias,hash_3e8d3aaeefef07ac,0
 soundalias,hash_3e8d50aeefef2d0e,0
-soundalias,hash_415f3b4666fd9759,0
+soundalias,amb_generator,0
 soundalias,hash_42339ab27b12c98e,0
 soundalias,hash_42a32590daaa6493,0
 soundalias,hash_436a4f77c54e7912,0
@@ -314,7 +314,7 @@ soundalias,hash_4c4fd4c61d8d67f0,0
 soundalias,hash_4ca3d2aaa573f1c8,0
 soundalias,hash_4d22bab8017dd52f,0
 soundalias,hash_4d4bbcb801a0dda9,0
-soundalias,hash_4d721c5e9bf4aaf9,0
+soundalias,amb_hawk,0
 soundalias,hash_4ec5a3e02263fc0e,0
 soundalias,hash_4f8c480d8e8f07b6,0
 soundalias,hash_500e5d4e501e15de,0
@@ -322,11 +322,11 @@ soundalias,hash_501eff91f639c23e,0
 soundalias,hash_5241882a79fff7a3,0
 soundalias,hash_5290e69e5616b714,0
 soundalias,hash_53275ca0fc64314e,0
-soundalias,hash_537f76b3a76e3f9e,0
+soundalias,dst_server,0
 soundalias,hash_54538dea28a0400e,0
 soundalias,hash_547104dd82ba9c7c,0
 soundalias,hash_54a0dc115c0e15fa,0
-soundalias,hash_55f0be338a674cfc,0
+soundalias,dst_wood,0
 soundalias,hash_560ef9ef2bd2c69f,0
 soundalias,hash_57ecec3fe952fe7f,0
 soundalias,hash_57ed023fe95323e1,0

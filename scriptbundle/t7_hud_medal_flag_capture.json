@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_flag_capture",
     "backinglarge": "#hash_616c67b488c6314c",
     "iconsmall": "#t7_hud_medal_flag_capture",
-    "var_8645ce54": "#hash_198ea2937af15476",
+    "stringref": "#hash_198ea2937af15476",
     "iconlarge": "#hash_5c6c27b36562446c"
 }

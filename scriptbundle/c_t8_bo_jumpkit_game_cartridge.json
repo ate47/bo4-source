@@ -4,7 +4,7 @@
     "image": "loot04_ui_icon_blackmarket_item_shop_wingsuit_preview_game_cartridge",
     "name": "c_t8_bo_jumpkit_game_cartridge",
     "displayname": "#hash_db41d831b55c4a6",
-    "var_15d11806": "loot04_ui_icon_blackmarket_item_shop_wingsuit_game_cartridge",
+    "preview_image": "loot04_ui_icon_blackmarket_item_shop_wingsuit_game_cartridge",
     "var_4fa85a25": "dfxt_game_cartridge",
     "parachute": "c_t8_bo_parachute_game_cartridge"
 }

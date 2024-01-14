@@ -1,12 +1,12 @@
 {
-    "var_e9068708": 8,
-    "var_ea90b103": 7,
-    "var_635f0e43": 60,
-    "var_25982bbd": "#hash_1d1215479bb34447",
+    "globstate": 8,
+    "droptype": 7,
+    "plasmaprice": 60,
+    "descriptiontext": "#hash_1d1215479bb34447",
     "name": "zm_lab_rhodium_roundup",
     "popupname": "#hash_2547d2a6dd893b10",
     "var_619ae0f2": 1,
-    "var_a22b23b1": "#hash_2547d2a6dd893b10",
+    "descriptiontitle": "#hash_2547d2a6dd893b10",
     "var_40cee9c0": "#hash_24657ff4132c4a78",
     "var_e8a9006": "white"
 }

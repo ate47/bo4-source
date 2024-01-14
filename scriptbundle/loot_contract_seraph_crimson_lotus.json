@@ -4,12 +4,12 @@
             "var_826726a": "#hash_24453b4e3dec5078"
         }
     ],
-    "var_8a31a029": "#hash_5737a008dbb2041a",
+    "contracticon": "#hash_5737a008dbb2041a",
     "var_d0100eab": 1,
-    "var_5ed70194": "#hash_3b87d7eb92a261aa",
-    "var_6c44aa0a": "#hash_24453b4e3dec5078",
+    "relateditemname": "#hash_3b87d7eb92a261aa",
+    "contracttitle": "#hash_24453b4e3dec5078",
     "name": "loot_contract_seraph_crimson_lotus",
-    "var_2b265a7c": "#hash_8f8f9b22d24a874",
+    "contractdescription": "#hash_8f8f9b22d24a874",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_38ca0a1ddd036c28",
     "var_e08fc162": "#hash_43e3667277169979"

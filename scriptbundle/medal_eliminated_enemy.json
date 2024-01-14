@@ -5,6 +5,6 @@
     "name": "medal_eliminated_enemy",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_245f0c4222ce97af",
-    "var_8645ce54": "#hash_6b0c85a183cac06e",
+    "stringref": "#hash_6b0c85a183cac06e",
     "iconlarge": "#hash_5b677442dcff25bf"
 }

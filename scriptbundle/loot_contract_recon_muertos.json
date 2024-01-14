@@ -7,12 +7,12 @@
             "var_826726a": "#hash_6ce34ffbb3998db9"
         }
     ],
-    "var_8a31a029": "#hash_4e90e0ff50b671c9",
+    "contracticon": "#hash_4e90e0ff50b671c9",
     "var_d0100eab": 2,
-    "var_5ed70194": "#hash_6ce34ffbb3998db9",
-    "var_6c44aa0a": "#hash_5bc13ff3ae2edc33",
+    "relateditemname": "#hash_6ce34ffbb3998db9",
+    "contracttitle": "#hash_5bc13ff3ae2edc33",
     "name": "loot_contract_recon_muertos",
-    "var_2b265a7c": "#hash_25105a1e4c1d1e63",
+    "contractdescription": "#hash_25105a1e4c1d1e63",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_6eb65c5623257c76",
     "var_e08fc162": "#hash_1228188324cf56e"

@@ -1,12 +1,12 @@
 {
-    "var_e9068708": 1,
-    "var_ea90b103": 5,
-    "var_635f0e43": 15,
-    "var_25982bbd": "#hash_4edbd3eae0792c47",
+    "globstate": 1,
+    "droptype": 5,
+    "plasmaprice": 15,
+    "descriptiontext": "#hash_4edbd3eae0792c47",
     "name": "zm_lab_beryllium_bundle",
     "popupname": "#hash_4fec214b9d27310",
     "var_619ae0f2": 1,
-    "var_a22b23b1": "#hash_4fec214b9d27310",
+    "descriptiontitle": "#hash_4fec214b9d27310",
     "var_40cee9c0": "#hash_246581f4132c4dde",
     "var_e8a9006": "white"
 }

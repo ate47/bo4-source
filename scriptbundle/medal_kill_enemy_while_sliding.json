@@ -5,6 +5,6 @@
     "name": "medal_kill_enemy_while_sliding",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_18820905ea0ff385",
-    "var_8645ce54": "#hash_52c4ee4c526647c9",
+    "stringref": "#hash_52c4ee4c526647c9",
     "iconlarge": "#hash_52167fac7d4d2b09"
 }

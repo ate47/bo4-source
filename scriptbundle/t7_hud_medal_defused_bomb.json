@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_defused_bomb",
     "backinglarge": "#hash_616c67b488c6314c",
     "iconsmall": "#t7_hud_medal_defused_bomb",
-    "var_8645ce54": "#hash_31ba844d2183dd82",
+    "stringref": "#hash_31ba844d2183dd82",
     "iconlarge": "#hash_208dba75d161819c"
 }

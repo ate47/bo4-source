@@ -173,7 +173,7 @@ string,hash_272fae998263208b,0
 string,hash_2731cc5c1208e2e4,0
 string,hash_2791ecebb85142c4,0
 string,zombie/survived_round,0
-string,hash_292d7187f39e0a33,0
+string,script_plus,0
 string,hash_29881d32839ebaa1,0
 string,hash_29f409e041d55ab8,0
 string,hash_2a43ddece6c85f63,0
@@ -317,7 +317,7 @@ string,hash_58523ccdc9c69379,0
 string,hash_5883640bac1406cc,0
 string,hash_5897b2e20dc09cfc,0
 string,hash_58febf66d0aaf436,0
-string,hash_5981be102588ff2c,0
+string,menu_points,0
 string,hash_59a88b78e8451d3a,0
 string,zombie/powerup_minigun,0
 string,hash_59d734dda39935cf,0
@@ -450,7 +450,7 @@ eventstring,back,0
 eventstring,resume_end_game,0
 eventstring,bonus_points_player_grabbed,0
 eventstring,hash_1fc4832b89307895,0
-eventstring,hash_2ac9994f80829e56,0
+eventstring,faction_popup,0
 eventstring,changeclass_opfor,0
 eventstring,autocontrol,0
 eventstring,axis,0
@@ -464,7 +464,7 @@ eventstring,spectator,0
 eventstring,hash_487748811ea64f78,0
 eventstring,open_ingame_menu,0
 eventstring,zombie_special_notification,0
-eventstring,hash_506ced1f81b668a2,0
+eventstring,changeclass_wager,0
 eventstring,quick_fade,0
 eventstring,zm_inventory_opened,0
 eventstring,hash_57d001515ec39771,0

@@ -7,12 +7,12 @@
             "var_826726a": "#hash_feee6890a6759fe"
         }
     ],
-    "var_8a31a029": "#hash_61e2184d0656316",
+    "contracticon": "#hash_61e2184d0656316",
     "var_d0100eab": 2,
-    "var_5ed70194": "#hash_feee6890a6759fe",
-    "var_6c44aa0a": "#hash_726c3e54092e5e04",
+    "relateditemname": "#hash_feee6890a6759fe",
+    "contracttitle": "#hash_726c3e54092e5e04",
     "name": "loot_contract_crash_snakeskin",
-    "var_2b265a7c": "#hash_88f3d374c07d9de",
+    "contractdescription": "#hash_88f3d374c07d9de",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_67ed572b48f8ba7c",
     "var_e08fc162": "#hash_5a76a11108391b97"

@@ -4,39 +4,39 @@
             "var_82670522": "stats_war_machine_kill",
             "stattype": "playerstatslist",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_1c1e6486c6b38e4c"
+            "displaystatname": "#hash_1c1e6486c6b38e4c"
         },
         {
             "var_82670522": "stats_destructions",
             "stattype": "playerstatslist",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_6e9b6273deed6aee"
+            "displaystatname": "#hash_6e9b6273deed6aee"
         },
         {
             "stattype": "objectiveekia",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_5d1ab6f5e0227795"
+            "displaystatname": "#hash_5d1ab6f5e0227795"
         },
         {
             "var_82670522": "stats_shutdowns",
             "stattype": "playerstatslist",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_158193577a14c86e"
+            "displaystatname": "#hash_158193577a14c86e"
         },
         {
             "stattype": "damagedone",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_5418827f408e5ca2"
+            "displaystatname": "#hash_5418827f408e5ca2"
         },
         {
             "stattype": "objectivescore",
             "var_26568428": 1,
-            "var_21cc7325": "#hash_4d3552e327f94ecf"
+            "displaystatname": "#hash_4d3552e327f94ecf"
         }
     ],
     "var_447510ee": "prt_mp_battery",
-    "var_e123fa65": "#hash_401fc36948868c17",
-    "var_999a02c5": "#hash_6b941997b9b3a444",
+    "defaultimage": "#hash_401fc36948868c17",
+    "cardname": "#hash_6b941997b9b3a444",
     "name": "destroyer_control_hvo",
     "var_46a95923": "control"
 }

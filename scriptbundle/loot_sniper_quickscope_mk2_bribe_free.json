@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_46fd63c295eb72a6",
+    "popupimage": "#hash_46fd63c295eb72a6",
     "var_5162d01b": "#hash_46fd63c295eb72a6",
-    "var_f3d91b40": "#hash_21f0836c2a07e0d1",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_21f0836c2a07e0d1",
+    "categorytext": "#mpui/bm_bribe",
     "name": "loot_sniper_quickscope_mk2_bribe_free",
-    "var_ba6ab463": "#hash_8f49b26db188eb",
+    "desctext": "#hash_8f49b26db188eb",
     "var_c1acffb6": "#hash_21f0836c2a07e0d1"
 }

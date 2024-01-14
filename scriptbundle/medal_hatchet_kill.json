@@ -5,6 +5,6 @@
     "name": "medal_hatchet_kill",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_474871859774db02",
-    "var_8645ce54": "#hash_6587318c4418924d",
+    "stringref": "#hash_6587318c4418924d",
     "iconlarge": "#hash_3e69a4ac1faa26c2"
 }

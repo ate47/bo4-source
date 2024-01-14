@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_37fb0ac328d33746",
+    "popupimage": "#hash_37fb0ac328d33746",
     "var_5162d01b": "#hash_37fb0ac328d33746",
-    "var_f3d91b40": "#weapon/sniper_locus_t8",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#weapon/sniper_locus_t8",
+    "categorytext": "#mpui/bm_bribe",
     "name": "sniper_locus_t8_bribe_free",
-    "var_ba6ab463": "#hash_e28605293a7473b",
+    "desctext": "#hash_e28605293a7473b",
     "var_c1acffb6": "#weapon/sniper_locus_t8"
 }

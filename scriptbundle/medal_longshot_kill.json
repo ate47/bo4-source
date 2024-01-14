@@ -5,6 +5,6 @@
     "name": "medal_longshot_kill",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_7a45cbdcb5041c68",
-    "var_8645ce54": "#hash_5a4418389cc38bb8",
+    "stringref": "#hash_5a4418389cc38bb8",
     "iconlarge": "#hash_16ce927424edd9a4"
 }

@@ -4,12 +4,12 @@
             "var_826726a": "#hash_338ac2c6c906b7f2"
         }
     ],
-    "var_8a31a029": "#hash_240e71d0a2b0b9ca",
+    "contracticon": "#hash_240e71d0a2b0b9ca",
     "var_d0100eab": 1,
-    "var_5ed70194": "#hash_3b87d7eb92a261aa",
-    "var_6c44aa0a": "#hash_338ac2c6c906b7f2",
+    "relateditemname": "#hash_3b87d7eb92a261aa",
+    "contracttitle": "#hash_338ac2c6c906b7f2",
     "name": "loot_contract_seraph_splinter",
-    "var_2b265a7c": "#hash_40a2ff4afd63b73",
+    "contractdescription": "#hash_40a2ff4afd63b73",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_7bb3da148644c778",
     "var_e08fc162": "#hash_68fd7eb321aa416d"

@@ -5,6 +5,6 @@
     "name": "medal_killstreak_20",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_7071d7b9d43864ab",
-    "var_8645ce54": "#hash_37a56d01eb8c75ce",
+    "stringref": "#hash_37a56d01eb8c75ce",
     "iconlarge": "#hash_34ba9aa7213b0c8b"
 }

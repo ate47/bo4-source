@@ -4,12 +4,12 @@
             "var_826726a": "#hash_55ea2d0c95af597a"
         }
     ],
-    "var_8a31a029": "#hash_72f383625e61304f",
+    "contracticon": "#hash_72f383625e61304f",
     "var_d0100eab": 1,
-    "var_5ed70194": "#hash_57252f16d6cf4edb",
-    "var_6c44aa0a": "#hash_55ea2d0c95af597a",
+    "relateditemname": "#hash_57252f16d6cf4edb",
+    "contracttitle": "#hash_55ea2d0c95af597a",
     "name": "loot_contract_ajax_roman_warrior",
-    "var_2b265a7c": "#hash_546a942e348c5da2",
+    "contractdescription": "#hash_546a942e348c5da2",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_38bac0dcfaeeacd7",
     "var_e08fc162": "#hash_4b71cb37b34176"

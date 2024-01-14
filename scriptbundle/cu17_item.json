@@ -29,7 +29,7 @@
     "model": "#p8_wz_cu_blood_vials",
     "type": "itemspawnentry",
     "hintstring": "#hash_1f8c8912f5654bb8",
-    "unlockableitemref": "#hash_1ecfa173f4b5755b",
+    "unlockableitemref": "#wz_character_richtofen",
     "name": "cu17_item",
     "displayname": "#hash_1f8c8912f5654bb8",
     "icon": "#hash_7f803b1004ac45b3",

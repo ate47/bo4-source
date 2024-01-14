@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_grenade_throwback",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_kill_enemy_grenade_throwback",
-    "var_8645ce54": "#hash_53d0e72089a8f13",
+    "stringref": "#hash_53d0e72089a8f13",
     "iconlarge": "#hash_7711502d591ef5b5"
 }

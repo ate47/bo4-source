@@ -1,5 +1,5 @@
 {
-    "var_d260763": "#hash_45c5bc832f5db0e",
+    "descriptionimage": "#hash_45c5bc832f5db0e",
     "description": "#hash_31595ae9dc82ed99",
     "var_60fcfffa": "#menu/on",
     "var_10e01ad5": 1,
@@ -10,7 +10,7 @@
     "maxvalue": 1,
     "name": "pc_hud_bounds",
     "displayname": "#hash_4c765f03779d1a07",
-    "var_b56e8776": "StartMenu_Options_Graphics_SafeArea",
+    "openmenuname": "StartMenu_Options_Graphics_SafeArea",
     "var_66faec87": 10,
     "var_b7401319": "#menu/off"
 }

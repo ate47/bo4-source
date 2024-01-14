@@ -1,17 +1,17 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "1",
-            "var_6825bdb": "is_voice_recording",
+            "optionvalue": "1",
+            "optionname": "is_voice_recording",
             "operator": "=="
         },
         {
-            "var_1643d946": "1",
-            "var_6825bdb": "voice_suspend",
+            "optionvalue": "1",
+            "optionname": "voice_suspend",
             "operator": "=="
         }
     ],
-    "var_d260763": "#hash_79fda6795137590",
+    "descriptionimage": "#hash_79fda6795137590",
     "description": "#hash_297768fc64d5ab03",
     "var_60fcfffa": "#menu/off",
     "var_10e01ad5": 1,

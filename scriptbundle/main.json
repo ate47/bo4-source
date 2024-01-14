@@ -5,11 +5,11 @@
     "maxlocalclientsnetwork": 2,
     "mainmode": -1,
     "lobbytype": -1,
-    "var_1d4ea5bd": "titlescreen",
+    "menumusic": "titlescreen",
     "room": "room1",
     "name": "main",
     "networkmode": -1,
-    "var_80a68682": "main",
+    "errtarget": "main",
     "egamemodes": 5,
     "var_38c7a0d1": "showdirectormain",
     "var_f0c68dbb": 1

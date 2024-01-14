@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_556f8c0baed234a3",
+    "popupimage": "#hash_556f8c0baed234a3",
     "var_5162d01b": "#hash_556f8c0baed234a3",
-    "var_f3d91b40": "#hash_5528d0e4a71ad3e8",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_5528d0e4a71ad3e8",
+    "categorytext": "#mpui/bm_bribe",
     "name": "loot_dlc_mini_14_mk2_bribe_free",
-    "var_ba6ab463": "#hash_7ca8d607f6682030",
+    "desctext": "#hash_7ca8d607f6682030",
     "var_c1acffb6": "#hash_5528d0e4a71ad3e8"
 }

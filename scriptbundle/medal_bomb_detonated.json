@@ -5,6 +5,6 @@
     "name": "medal_bomb_detonated",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_4402cf2191dcd195",
-    "var_8645ce54": "#hash_2623f29090c7ebfe",
+    "stringref": "#hash_2623f29090c7ebfe",
     "iconlarge": "#hash_b12f125027b7d99"
 }

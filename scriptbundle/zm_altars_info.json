@@ -1,38 +1,38 @@
 {
     "1": [
         {
-            "var_dd6c1082": "#hash_463d063fa6a49b1c",
-            "var_5eaad3a7": "#zombie/danu"
+            "altarimage": "#hash_463d063fa6a49b1c",
+            "altarname": "#zombie/danu"
         },
         {
-            "var_dd6c1082": "#hash_60669f6dd6d8e6dd",
-            "var_5eaad3a7": "#zombie/ra"
+            "altarimage": "#hash_60669f6dd6d8e6dd",
+            "altarname": "#zombie/ra"
         },
         {
-            "var_dd6c1082": "#hash_56721a470e845c17",
-            "var_5eaad3a7": "#zombie/zeus"
+            "altarimage": "#hash_56721a470e845c17",
+            "altarname": "#zombie/zeus"
         },
         {
-            "var_dd6c1082": "#hash_6fc8c3b64054fa42",
-            "var_5eaad3a7": "#zombie/odin"
+            "altarimage": "#hash_6fc8c3b64054fa42",
+            "altarname": "#zombie/odin"
         }
     ],
     "0": [
         {
-            "var_dd6c1082": "#hash_1fecf0bd40f3bbd4",
-            "var_5eaad3a7": "#zombie/brew"
+            "altarimage": "#hash_1fecf0bd40f3bbd4",
+            "altarname": "#zombie/brew"
         },
         {
-            "var_dd6c1082": "#hash_2d0ed4eee5befb83",
-            "var_5eaad3a7": "#zombie/cola"
+            "altarimage": "#hash_2d0ed4eee5befb83",
+            "altarname": "#zombie/cola"
         },
         {
-            "var_dd6c1082": "#hash_62887b36279a359b",
-            "var_5eaad3a7": "#zombie/soda"
+            "altarimage": "#hash_62887b36279a359b",
+            "altarname": "#zombie/soda"
         },
         {
-            "var_dd6c1082": "#hash_7f7a4fe16cf926c5",
-            "var_5eaad3a7": "#zombie/tonic"
+            "altarimage": "#hash_7f7a4fe16cf926c5",
+            "altarname": "#zombie/tonic"
         }
     ],
     "var_922067c4": "scriptbundle",

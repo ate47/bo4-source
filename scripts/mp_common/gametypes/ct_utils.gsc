@@ -1636,8 +1636,8 @@ function function_c2a10fc() {
 // Checksum 0x6e34cbc1, Offset: 0x5e08
 // Size: 0x25c
 function function_5dec7b34(str_warning, var_3608d414) {
-    level endon(#"combattraining_logic_finished", #"hash_5cf057e0a1d4eb77");
-    self endoncallback(&function_4057f7fe, #"hash_5cf057e0a1d4eb77");
+    level endon(#"combattraining_logic_finished", #"ct_warning_end");
+    self endoncallback(&ct_warning_end, #"ct_warning_end");
     if (isdefined(level.var_820c5561)) {
         if (isdefined(var_3608d414)) {
             level thread ct_vo::function_831e0584(var_3608d414);
@@ -1668,7 +1668,7 @@ function function_5dec7b34(str_warning, var_3608d414) {
 // Checksum 0x1769ad0f, Offset: 0x6070
 // Size: 0x106
 function function_3915e4f9() {
-    self endoncallback(&function_4057f7fe, #"hash_5cf057e0a1d4eb77");
+    self endoncallback(&ct_warning_end, #"ct_warning_end");
     self endon(#"hash_76ffabe3ed35bd68");
     while (1) {
         self function_f05e5477(hash(self.var_ef34d22c[#"cycle1"]));
@@ -1684,7 +1684,7 @@ function function_3915e4f9() {
 // Params 1, eflags: 0x0
 // Checksum 0xd155b05d, Offset: 0x6180
 // Size: 0x7c
-function function_4057f7fe(_hash) {
+function ct_warning_end(_hash) {
     e_player = get_player();
     e_player function_f05e5477(hash(self.var_ef34d22c[#"fadeout"]));
     wait(1);
@@ -1979,7 +1979,7 @@ function function_6d7f4ec6(var_cfc2603c) {
 // Checksum 0x141e874d, Offset: 0x7148
 // Size: 0xd2
 function function_a3e6f3d() {
-    level endoncallback(&function_292141a, #"combattraining_logic_finished", #"hash_52fa8babe8d8d2c9");
+    level endoncallback(&function_292141a, #"combattraining_logic_finished", #"ct_timer_stop");
     level thread timelimitclock_intermission();
     while (!level.gameended) {
         var_f08fde43 = function_4c27be22("A");
@@ -3219,7 +3219,7 @@ function function_d3fd7ef7() {
             while (isalive(self) && self.health < n_health_threshold) {
                 waitframe(1);
             }
-            self notify(#"hash_5cf057e0a1d4eb77");
+            self notify(#"ct_warning_end");
         }
     }
 }

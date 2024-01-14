@@ -1,12 +1,12 @@
 {
-    "var_e9068708": 4,
-    "var_ea90b103": 3,
-    "var_635f0e43": 45,
-    "var_25982bbd": "#hash_75e88e81607d820e",
+    "globstate": 4,
+    "droptype": 3,
+    "plasmaprice": 45,
+    "descriptiontext": "#hash_75e88e81607d820e",
     "name": "zm_lab_argon_array",
     "popupname": "#hash_32302fcc0a9cb1be",
     "var_619ae0f2": 1,
-    "var_a22b23b1": "#hash_32302fcc0a9cb1be",
+    "descriptiontitle": "#hash_32302fcc0a9cb1be",
     "var_40cee9c0": "#hash_6f61c9e6bf7949d8",
     "var_e8a9006": "blue"
 }

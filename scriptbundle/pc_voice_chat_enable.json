@@ -1,12 +1,12 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "0",
-            "var_6825bdb": "is_voice_recording",
+            "optionvalue": "0",
+            "optionname": "is_voice_recording",
             "operator": "=="
         }
     ],
-    "var_d260763": "#hash_79fda6795137590",
+    "descriptionimage": "#hash_79fda6795137590",
     "description": "#hash_3cc104000ed441ae",
     "var_60fcfffa": "#menu/off",
     "var_10e01ad5": 1,

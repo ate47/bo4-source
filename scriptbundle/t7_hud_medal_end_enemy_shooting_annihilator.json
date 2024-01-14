@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_end_enemy_shooting_annihilator",
     "backinglarge": "#hash_735c5e3788111659",
     "iconsmall": "#t7_hud_medal_end_enemy_shooting_annihilator",
-    "var_8645ce54": "#hash_72bd2a46e831d177",
+    "stringref": "#hash_72bd2a46e831d177",
     "iconlarge": "#hash_6b35fbea1c574a61"
 }

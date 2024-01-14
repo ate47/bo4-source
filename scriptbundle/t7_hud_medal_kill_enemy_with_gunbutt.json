@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_with_gunbutt",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_kill_enemy_with_gunbutt",
-    "var_8645ce54": "#hash_40a1141097eb149f",
+    "stringref": "#hash_40a1141097eb149f",
     "iconlarge": "#hash_338f2dfbee23c579"
 }

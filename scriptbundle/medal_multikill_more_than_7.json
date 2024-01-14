@@ -5,6 +5,6 @@
     "name": "medal_multikill_more_than_7",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_db1d72479f2bfef",
-    "var_8645ce54": "#hash_469c901e2c179c96",
+    "stringref": "#hash_469c901e2c179c96",
     "iconlarge": "#hash_4eef8ecbb3ac35ff"
 }

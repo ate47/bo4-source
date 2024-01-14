@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemies_one_bullet",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_kill_enemies_one_bullet",
-    "var_8645ce54": "#hash_54f123524b9fb53a",
+    "stringref": "#hash_54f123524b9fb53a",
     "iconlarge": "#hash_10dafa6744b0bec4"
 }

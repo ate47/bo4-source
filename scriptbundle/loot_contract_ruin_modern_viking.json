@@ -4,12 +4,12 @@
             "var_826726a": "#hash_2644cc8d6e0f3c69"
         }
     ],
-    "var_8a31a029": "#hash_3df484a208e77e2b",
+    "contracticon": "#hash_3df484a208e77e2b",
     "var_d0100eab": 1,
-    "var_5ed70194": "#hash_318a13787fd10f6a",
-    "var_6c44aa0a": "#hash_2644cc8d6e0f3c69",
+    "relateditemname": "#hash_318a13787fd10f6a",
+    "contracttitle": "#hash_2644cc8d6e0f3c69",
     "name": "loot_contract_ruin_modern_viking",
-    "var_2b265a7c": "#hash_5f3abaf73890048b",
+    "contractdescription": "#hash_5f3abaf73890048b",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_7b6abf0a2fda66db",
     "var_e08fc162": "#hash_7e38c55c1dbd99da"

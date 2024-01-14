@@ -7,12 +7,12 @@
             "var_826726a": "#hash_5b4889e3a720c949"
         }
     ],
-    "var_8a31a029": "#hash_299b05b8fd65032",
+    "contracticon": "#hash_299b05b8fd65032",
     "var_d0100eab": 2,
-    "var_5ed70194": "#hash_5b4889e3a720c949",
-    "var_6c44aa0a": "#hash_605969a737686528",
+    "relateditemname": "#hash_5b4889e3a720c949",
+    "contracttitle": "#hash_605969a737686528",
     "name": "loot_contract_firebreak_snakeskin",
-    "var_2b265a7c": "#hash_88f3d374c07d9de",
+    "contractdescription": "#hash_88f3d374c07d9de",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_10c8afa4d0bfa620",
     "var_e08fc162": "#hash_338c5acca44862e1"

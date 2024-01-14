@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_6a2af1b76d0643b6",
-    "var_95adb48e": "#hash_2153da8b2bb17122",
-    "var_f3d91b40": "#hash_29755dff3363137e",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_6a2af1b76d0643b6",
+    "popupimage": "#hash_2153da8b2bb17122",
+    "nametext": "#hash_29755dff3363137e",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "tr_powersemi_bundle",
-    "var_ba6ab463": "#hash_7a25c68e19a680ce",
+    "desctext": "#hash_7a25c68e19a680ce",
     "previewimage": "#hash_37abdf0a6e70131b",
-    "var_fc228068": "#hash_49bf63610893f042"
+    "reserveimage": "#hash_49bf63610893f042"
 }

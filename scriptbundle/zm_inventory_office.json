@@ -1,16 +1,16 @@
 {
     "shieldpieces": [
         {
-            "var_37acb3da": "#hash_57735262a5266d93",
-            "clientfield": "#hash_108184e410722eea"
+            "pieceimage": "#hash_57735262a5266d93",
+            "clientfield": "#shield_3"
         },
         {
-            "var_37acb3da": "#hash_57735462a52670f9",
-            "clientfield": "#hash_108182e410722b84"
+            "pieceimage": "#hash_57735462a52670f9",
+            "clientfield": "#shield_1"
         },
         {
-            "var_37acb3da": "#hash_57735162a5266be0",
-            "clientfield": "#hash_108185e41072309d"
+            "pieceimage": "#hash_57735162a5266be0",
+            "clientfield": "#shield_2"
         }
     ],
     "quests": [
@@ -21,7 +21,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_4b1901f1dfc5158a"
+                                    "stageimage": "#hash_4b1901f1dfc5158a"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -35,7 +35,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_5ef0b8da29c42486"
+                                    "stageimage": "#hash_5ef0b8da29c42486"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -56,7 +56,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_4b1901f1dfc5158a"
+                                    "stageimage": "#hash_4b1901f1dfc5158a"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -70,7 +70,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_5ef0b8da29c42486"
+                                    "stageimage": "#hash_5ef0b8da29c42486"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -89,34 +89,34 @@
         {
             "numneeded": 2,
             "var_3e63e7e4": "#hash_5b0cf8d1c923df11",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 4,
             "var_3e63e7e4": "#hash_5b0cf5d1c923d9f8",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 6,
             "var_3e63e7e4": "#hash_5b0cf6d1c923dbab",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 8,
             "var_3e63e7e4": "#hash_5b0cfbd1c923e42a",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 10,
             "var_3e63e7e4": "#hash_5b0cfcd1c923e5dd",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         }
     ],
     "packapunchitems": [
         {
             "stages": [
                 {
-                    "var_2d787849": "#hash_73dc667901a5a4dd"
+                    "stageimage": "#hash_73dc667901a5a4dd"
                 }
             ],
             "var_1d91eeba": 1,
@@ -125,7 +125,7 @@
         {
             "stages": [
                 {
-                    "var_2d787849": "#hash_70ad7a9e5372134f"
+                    "stageimage": "#hash_70ad7a9e5372134f"
                 }
             ],
             "var_1d91eeba": 1,
@@ -134,7 +134,7 @@
         {
             "stages": [
                 {
-                    "var_2d787849": "#hash_17ed6d25067fba24"
+                    "stageimage": "#hash_17ed6d25067fba24"
                 }
             ],
             "var_1d91eeba": 1,

@@ -1,79 +1,79 @@
 {
     "intellist": [
         {
-            "var_3392f2f6": "#hash_4a608d3fbb6904f9",
+            "audiotitle": "#hash_4a608d3fbb6904f9",
             "var_8151643d": "#hash_6bf7b28420869eaf",
             "var_dbf06f92": "#hash_2d96670a1b64ff33",
             "audio": "evt_audio_log_1_vox"
         },
         {
-            "var_3392f2f6": "#hash_1d25924ca477662e",
+            "audiotitle": "#hash_1d25924ca477662e",
             "var_8151643d": "#hash_3a67fa0778b392f4",
             "var_dbf06f92": "#hash_2cdeb47c4b00e108",
             "audio": "evt_audio_log_2_vox"
         },
         {
-            "var_3392f2f6": "#hash_257c88f70eb4907f",
+            "audiotitle": "#hash_257c88f70eb4907f",
             "var_8151643d": "#hash_719bd3d782d9f111",
             "var_dbf06f92": "#hash_5ebe96a28ae3d025",
             "audio": "evt_audio_log_3_vox"
         },
         {
-            "var_3392f2f6": "#hash_52b0e6128444c4b4",
+            "audiotitle": "#hash_52b0e6128444c4b4",
             "var_8151643d": "#hash_6e43739e41dc8e56",
             "var_dbf06f92": "#hash_62c7bbe1cf228c22",
             "audio": "evt_audio_log_4_vox"
         },
         {
-            "var_3392f2f6": "#hash_323604e7b8b3c2ad",
+            "audiotitle": "#hash_323604e7b8b3c2ad",
             "var_8151643d": "#hash_15de082fcdb80173",
             "var_dbf06f92": "#hash_7c5aef3c3f69516f",
             "audio": "evt_audio_log_5_vox"
         },
         {
-            "var_3392f2f6": "#hash_3302fc33c18f9062",
+            "audiotitle": "#hash_3302fc33c18f9062",
             "var_8151643d": "#hash_11bf55a1fa6f0748",
             "var_dbf06f92": "#hash_26a42e6479db09b4",
             "audio": "evt_audio_log_6_vox"
         },
         {
-            "var_3392f2f6": "#hash_411b1a87f66d4d23",
+            "audiotitle": "#hash_411b1a87f66d4d23",
             "var_8151643d": "#hash_1f782f6d1c96ba65",
             "var_dbf06f92": "#hash_5dd80834840167d1",
             "audio": "evt_audio_log_7_vox"
         },
         {
-            "var_3392f2f6": "#hash_68fa3ff9a1b7f298",
+            "audiotitle": "#hash_68fa3ff9a1b7f298",
             "var_8151643d": "#hash_55603e2b876c693a",
             "var_dbf06f92": "#hash_592735c9fb198bce",
             "audio": "evt_audio_log_8_vox"
         },
         {
-            "var_3392f2f6": "#hash_24f6c0f728089371",
+            "audiotitle": "#hash_24f6c0f728089371",
             "var_8151643d": "#hash_42610051a06bba87",
             "var_dbf06f92": "#hash_803bb4a9a46c08b",
             "audio": "evt_audio_log_9_vox"
         },
         {
-            "var_3392f2f6": "#hash_6a121b6a02df0fd3",
+            "audiotitle": "#hash_6a121b6a02df0fd3",
             "var_8151643d": "#hash_26c2f5c2c6a32f6d",
             "var_dbf06f92": "#hash_73b491690ceb621",
             "audio": "evt_audio_log_10_vox"
         },
         {
-            "var_3392f2f6": "#hash_34c5c38792458392",
+            "audiotitle": "#hash_34c5c38792458392",
             "var_8151643d": "#hash_6cf89bf6690aa9d0",
             "var_dbf06f92": "#hash_28c8b5bbf9a3e644",
             "audio": "evt_audio_log_11_vox"
         },
         {
-            "var_3392f2f6": "#hash_64682ea6ae232b9d",
+            "audiotitle": "#hash_64682ea6ae232b9d",
             "var_8151643d": "#hash_758794f73babd51b",
             "var_dbf06f92": "#hash_7f80d8f9f6de977f",
             "audio": "evt_audio_log_12_vox"
         },
         {
-            "var_3392f2f6": "#hash_4e6308c47136e028",
+            "audiotitle": "#hash_4e6308c47136e028",
             "var_8151643d": "#hash_2141b7df98791d1e",
             "var_dbf06f92": "#hash_16507e939265eebe",
             "audio": "evt_audio_log_13_vox"
@@ -81,110 +81,110 @@
     ],
     "interstitiallist": [
         {
-            "var_500ff908": "#hash_8101ed77b2b62f3",
+            "stillpreview": "#hash_8101ed77b2b62f3",
             "var_de43e67": "#hash_54d3b6ebc3f0b45c",
             "movie": "ct_interstitial_savannah1",
-            "var_19d510dd": "#hash_15fd5a9ea9cce494",
+            "videotitle": "#hash_15fd5a9ea9cce494",
             "var_e04f5aeb": "#hash_2b6d57e239576d2a"
         },
         {
-            "var_500ff908": "#hash_50b63de65d2a8274",
+            "stillpreview": "#hash_50b63de65d2a8274",
             "var_de43e67": "#hash_10f77bea1805117",
             "movie": "ct_interstitial_bunker1",
-            "var_19d510dd": "#hash_15fd5d9ea9cce9ad",
+            "videotitle": "#hash_15fd5d9ea9cce9ad",
             "var_e04f5aeb": "#hash_3c1a1639240ea3e3"
         },
         {
-            "var_500ff908": "#hash_8101fd77b2b64a6",
+            "stillpreview": "#hash_8101fd77b2b64a6",
             "var_de43e67": "#hash_389919e6e1cf28ca",
             "movie": "ct_interstitial_savannah2",
-            "var_19d510dd": "#hash_15fd5c9ea9cce7fa",
+            "videotitle": "#hash_15fd5c9ea9cce7fa",
             "var_e04f5aeb": "#hash_12aaba8f4724268"
         },
         {
-            "var_500ff908": "#hash_50b640e65d2a878d",
+            "stillpreview": "#hash_50b640e65d2a878d",
             "var_de43e67": "#hash_603574a8d8a6206d",
             "movie": "ct_interstitial_bunker2",
-            "var_19d510dd": "#hash_15fd579ea9ccdf7b",
+            "videotitle": "#hash_15fd579ea9ccdf7b",
             "var_e04f5aeb": "#hash_5c3fdfecacbb0ba1"
         },
         {
-            "var_500ff908": "#hash_81020d77b2b6659",
+            "stillpreview": "#hash_81020d77b2b6659",
             "var_de43e67": "#hash_266b1adc7b0d9ad0",
             "movie": "ct_interstitial_savannah3",
-            "var_19d510dd": "#hash_15fd569ea9ccddc8",
+            "videotitle": "#hash_15fd569ea9ccddc8",
             "var_e04f5aeb": "#hash_2f0378d6e39f311e"
         },
         {
-            "var_500ff908": "#hash_50b63fe65d2a85da",
+            "stillpreview": "#hash_50b63fe65d2a85da",
             "var_de43e67": "#hash_2efa13dd4daec61b",
             "movie": "ct_interstitial_bunker3",
-            "var_19d510dd": "#hash_15fd599ea9cce2e1",
+            "videotitle": "#hash_15fd599ea9cce2e1",
             "var_e04f5aeb": "#hash_9496c11029171c7"
         },
         {
-            "var_500ff908": "#hash_81021d77b2b680c",
+            "stillpreview": "#hash_81021d77b2b680c",
             "var_de43e67": "#hash_5ab436c5aa7c0e1e",
             "movie": "ct_interstitial_savannah4",
-            "var_19d510dd": "#hash_15fd589ea9cce12e",
+            "videotitle": "#hash_15fd589ea9cce12e",
             "var_e04f5aeb": "#hash_73ccb4e2bd1c5cdc"
         },
         {
-            "var_500ff908": "#hash_50b63ae65d2a7d5b",
+            "stillpreview": "#hash_50b63ae65d2a7d5b",
             "var_de43e67": "#hash_304a8b4483eef461",
             "movie": "ct_interstitial_bunker4",
-            "var_19d510dd": "#hash_15fd539ea9ccd8af",
+            "videotitle": "#hash_15fd539ea9ccd8af",
             "var_e04f5aeb": "#hash_44e948bc1422c0d5"
         },
         {
-            "var_500ff908": "#hash_81022d77b2b69bf",
+            "stillpreview": "#hash_81022d77b2b69bf",
             "var_de43e67": "#hash_22f5cd6c9d5b7484",
             "movie": "ct_interstitial_savannah5",
-            "var_19d510dd": "#hash_15fd529ea9ccd6fc",
+            "videotitle": "#hash_15fd529ea9ccd6fc",
             "var_e04f5aeb": "#hash_142b7a54990d7142"
         }
     ],
     "onboardinglist": [
         {
-            "var_500ff908": "#hash_8043a73c4677d23",
+            "stillpreview": "#hash_8043a73c4677d23",
             "movie": "ct_skirmishcontrol_loadingmovie",
-            "var_19d510dd": "#hash_4be57ac3b61368b4"
+            "videotitle": "#hash_4be57ac3b61368b4"
         },
         {
-            "var_500ff908": "#hash_324fed310e967746",
+            "stillpreview": "#hash_324fed310e967746",
             "movie": "ct_skirmishdomination_loadingmovie",
-            "var_19d510dd": "#hash_29af1adf1bc9d98b"
+            "videotitle": "#hash_29af1adf1bc9d98b"
         },
         {
-            "var_500ff908": "#hash_669f92c48467b1e",
+            "stillpreview": "#hash_669f92c48467b1e",
             "movie": "ct_skirmishfreeforall_loadingmovie",
-            "var_19d510dd": "#hash_3cd00ac4f56ea207"
+            "videotitle": "#hash_3cd00ac4f56ea207"
         },
         {
-            "var_500ff908": "#hash_449cdf16ea73b957",
+            "stillpreview": "#hash_449cdf16ea73b957",
             "movie": "ct_skirmishhardpoint_loadingmovie",
-            "var_19d510dd": "#hash_70dc23f8a9014828"
+            "videotitle": "#hash_70dc23f8a9014828"
         },
         {
-            "var_500ff908": "#hash_483fed180b02c19",
+            "stillpreview": "#hash_483fed180b02c19",
             "movie": "ct_skirmishhkillconfirmed_loadingmovie",
-            "var_19d510dd": "#hash_524782db90d0fdc"
+            "videotitle": "#hash_524782db90d0fdc"
         },
         {
-            "var_500ff908": "#hash_25268e01fd0b4eb0",
+            "stillpreview": "#hash_25268e01fd0b4eb0",
             "movie": "ct_skirmishhsearchndestroy_loadingmovie",
-            "var_19d510dd": "#hash_56e4f3cdeca1754f"
+            "videotitle": "#hash_56e4f3cdeca1754f"
         },
         {
-            "var_500ff908": "#hash_cf616eb2e2b68ee",
+            "stillpreview": "#hash_cf616eb2e2b68ee",
             "movie": "ct_skirmishhteamdeathmatch_loadingmovie",
-            "var_19d510dd": "#hash_44ec1141f5cd41b9"
+            "videotitle": "#hash_44ec1141f5cd41b9"
         },
         {
-            "var_500ff908": "#hash_39c69d1ac94e69f1",
+            "stillpreview": "#hash_39c69d1ac94e69f1",
             "var_de43e67": "#hash_180fa7e6ca727f3d",
             "movie": "ct_powerinnumbers_trailer",
-            "var_19d510dd": "#hash_f20c8f91381efeb",
+            "videotitle": "#hash_f20c8f91381efeb",
             "var_80abd9a0": 1
         }
     ],
@@ -196,7 +196,7 @@
     "var_681a6482": "#hash_2d99f1ba6381bf92",
     "var_922067c4": "scriptbundle",
     "var_a6f33806": "#hash_39cafe8d4bc39c9c",
-    "var_93456f0b": "#hash_4e600291d76fc624",
+    "classifiedtitle": "#hash_4e600291d76fc624",
     "var_fc508fc2": "#hash_2a8ab86381ba9f07",
     "var_eaed9869": 1,
     "var_598f27d1": "#hash_39cafe8d4bc39c9c",

@@ -4,9 +4,9 @@
             "var_ab40486c": 1,
             "var_c6bd8560": 1,
             "var_1c54e7b8": "uin_active_camo_unwrap",
-            "var_d2eac588": "#hash_14151d499f4c3da0",
+            "permanentstatname": "#hash_14151d499f4c3da0",
             "var_ab41165": 1,
-            "var_879c8798": "#camo_active_dlc1_vice_wrapper",
+            "camooption": "#camo_active_dlc1_vice_wrapper",
             "var_d6eb46a8": 1,
             "var_e2dbd42d": 1,
             "var_8fc4c50d": "uin_active_camo_impulse",
@@ -15,7 +15,7 @@
             "var_a70a5df4": 1
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 0.8,
             "var_48394c0a": 0.8,
             "var_bf97d9e": 0.8,
@@ -24,7 +24,7 @@
             "var_c33fcb85": 1,
             "var_b214e79c": 0.8,
             "var_1a1f56b5": 0.8,
-            "var_879c8798": "#hash_63ecc9a88d2e34db",
+            "camooption": "#hash_63ecc9a88d2e34db",
             "var_7749dfd0": 0.8,
             "var_9828c877": "#hash_4e40eada8f6a81c9",
             "var_69896523": "#hash_4e3dc7da8f681079",
@@ -34,7 +34,7 @@
             "statname": "#kills"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -44,7 +44,7 @@
             "var_b214e79c": 1,
             "var_aaae2554": 1,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_63eccaa88d2e368e",
+            "camooption": "#hash_63eccaa88d2e368e",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 3,
             "var_cea7f3de": 1,
@@ -55,7 +55,7 @@
             "statname": "#kills"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -65,7 +65,7 @@
             "var_b214e79c": 1,
             "var_aaae2554": 2,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_63eccba88d2e3841",
+            "camooption": "#hash_63eccba88d2e3841",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 3,
             "var_cea7f3de": 2,
@@ -76,7 +76,7 @@
             "statname": "#kills"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -84,7 +84,7 @@
             "var_50046db7": "#menu/x_kills",
             "var_b214e79c": 1,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_63eccca88d2e39f4",
+            "camooption": "#hash_63eccca88d2e39f4",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 3,
             "var_8fc4c50d": "uin_active_camo_impulse",
@@ -97,6 +97,6 @@
     "vmtype": "both",
     "name": "activecamoinfo_t8_direct_action_kills_alt",
     "var_9ae5a2b8": 1,
-    "var_e253755a": "#hash_38083e9f7995cfe3",
+    "revealstring": "#hash_38083e9f7995cfe3",
     "istiered": 1
 }

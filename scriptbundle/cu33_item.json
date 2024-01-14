@@ -15,7 +15,7 @@
     "model": "#hash_418c075f73d35766",
     "type": "itemspawnentry",
     "hintstring": "#hash_5ff76c7784c93de4",
-    "unlockableitemref": "#hash_7e8f5d041a7f5941",
+    "unlockableitemref": "#wz_character_outrider",
     "name": "cu33_item",
     "displayname": "#hash_5ff76c7784c93de4",
     "icon": "#hash_1ab72676e090d843",

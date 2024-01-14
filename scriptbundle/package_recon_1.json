@@ -10,7 +10,7 @@
     "type": "bountyhunterpackage",
     "var_85d7cf08": 1,
     "name": "package_recon_1",
-    "var_6c83a2ba": "recon",
+    "packagetype": "recon",
     "purchasecost": 500,
     "startammo": 2,
     "var_673a16ad": 1,

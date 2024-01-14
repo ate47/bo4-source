@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_4c7a482162405d25",
-    "var_95adb48e": "#hash_38a12d7d20e1e637",
-    "var_f3d91b40": "#hash_50cdecea3f72dfb3",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_4c7a482162405d25",
+    "popupimage": "#hash_38a12d7d20e1e637",
+    "nametext": "#hash_50cdecea3f72dfb3",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "ar_accurate_bundle",
-    "var_ba6ab463": "#hash_4790345d20f5a7a5",
+    "desctext": "#hash_4790345d20f5a7a5",
     "previewimage": "#hash_34464f7b7dc299c6",
-    "var_fc228068": "#hash_12de93ee266b1981"
+    "reserveimage": "#hash_12de93ee266b1981"
 }

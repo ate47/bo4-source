@@ -17,7 +17,7 @@
             "value": "3"
         }
     ],
-    "var_d260763": "#hash_40905dbe4e17fe6e",
+    "descriptionimage": "#hash_40905dbe4e17fe6e",
     "description": "#hash_4d83397acb1206b7",
     "var_60fcfffa": "#menu/on",
     "var_10e01ad5": 1,
@@ -28,7 +28,7 @@
     "maxvalue": 1,
     "name": "pc_colorblind_mode",
     "displayname": "#hash_41d173878a6fd08d",
-    "var_b56e8776": "StartMenu_Options_Graphics_Colorblind",
+    "openmenuname": "StartMenu_Options_Graphics_Colorblind",
     "var_66faec87": 10,
     "statname": "colorblindMode",
     "var_b7401319": "#menu/off"

@@ -5,6 +5,6 @@
     "name": "medal_kill_enemy_that_is_capping_your_objective",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_5cf142d882dd77fe",
-    "var_8645ce54": "#hash_113c1b1ed98a050a",
+    "stringref": "#hash_113c1b1ed98a050a",
     "iconlarge": "#hash_71880ef594f6d40e"
 }

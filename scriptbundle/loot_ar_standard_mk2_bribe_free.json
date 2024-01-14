@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_3c4efe0dfd402aca",
+    "popupimage": "#hash_3c4efe0dfd402aca",
     "var_5162d01b": "#hash_3c4efe0dfd402aca",
-    "var_f3d91b40": "#hash_39ea42c9eed180f1",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_39ea42c9eed180f1",
+    "categorytext": "#mpui/bm_bribe",
     "name": "loot_ar_standard_mk2_bribe_free",
-    "var_ba6ab463": "#hash_181a732fd5fe084b",
+    "desctext": "#hash_181a732fd5fe084b",
     "var_c1acffb6": "#hash_39ea42c9eed180f1"
 }

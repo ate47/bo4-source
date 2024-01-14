@@ -99,7 +99,7 @@ function function_19adc0b7(outcome) {
     array::run_all(level.players, &hud_message::can_bg_draw, outcome);
     function_15e28b1a(outcome);
     globallogic::function_452e18ad();
-    array::run_all(level.players, &hud_message::function_6be746c2);
+    array::run_all(level.players, &hud_message::hide_outcome);
 }
 
 // Namespace display_transition/display_transition
@@ -112,7 +112,7 @@ function display_round_end(outcome) {
     function_12d1f62a(outcome);
     function_cf3d556b(outcome);
     globallogic::function_452e18ad();
-    array::run_all(level.players, &hud_message::function_6be746c2);
+    array::run_all(level.players, &hud_message::hide_outcome);
 }
 
 // Namespace display_transition/display_transition
@@ -412,7 +412,7 @@ function private function_e3855f6d(transition, outcome) {
 // Size: 0x5c
 function private function_a2d39e40(transition, outcome) {
     globallogic::function_452e18ad();
-    array::run_all(level.players, &hud_message::function_6be746c2);
+    array::run_all(level.players, &hud_message::hide_outcome);
     killcam::post_round_final_killcam();
 }
 
@@ -422,7 +422,7 @@ function private function_a2d39e40(transition, outcome) {
 // Size: 0x5c
 function private function_e3442abc(transition, outcome) {
     globallogic::function_452e18ad();
-    array::run_all(level.players, &hud_message::function_6be746c2);
+    array::run_all(level.players, &hud_message::hide_outcome);
     potm::post_round_potm();
 }
 
@@ -560,7 +560,7 @@ function function_f2ffece2(transition, outcome, var_61f85cf) {
 // Size: 0x4c
 function clear_transition() {
     player::function_2f80d95b(&function_752a920f);
-    array::run_all(level.players, &hud_message::function_6be746c2);
+    array::run_all(level.players, &hud_message::hide_outcome);
 }
 
 // Namespace display_transition/display_transition

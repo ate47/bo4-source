@@ -29,7 +29,7 @@
     "model": "#p8_wz_cu_necklace",
     "type": "itemspawnentry",
     "hintstring": "#hash_2e849d595fc7e02b",
-    "unlockableitemref": "#hash_1ae88c2dcdc992b",
+    "unlockableitemref": "#wz_character_menendez",
     "var_7adcadc1": 180,
     "name": "cu20_item",
     "displayname": "#hash_2e849d595fc7e02b",

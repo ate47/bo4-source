@@ -652,8 +652,8 @@ function function_34105b89(localclientnum, groupid, ison) {
     if (!isdefined(settings)) {
         return;
     }
-    var_fbd7b872 = settings.var_e08bc957;
-    if (isdefined(var_fbd7b872) && groupid > var_fbd7b872) {
+    num_slots = settings.var_e08bc957;
+    if (isdefined(num_slots) && groupid > num_slots) {
         return;
     }
     self endon(#"death");

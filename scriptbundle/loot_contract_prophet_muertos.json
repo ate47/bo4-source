@@ -7,12 +7,12 @@
             "var_826726a": "#hash_3e7ad7302d10e6af"
         }
     ],
-    "var_8a31a029": "#hash_33875e468dc9b38d",
+    "contracticon": "#hash_33875e468dc9b38d",
     "var_d0100eab": 2,
-    "var_5ed70194": "#hash_3e7ad7302d10e6af",
-    "var_6c44aa0a": "#hash_53a6abae52504092",
+    "relateditemname": "#hash_3e7ad7302d10e6af",
+    "contracttitle": "#hash_53a6abae52504092",
     "name": "loot_contract_prophet_muertos",
-    "var_2b265a7c": "#hash_25105a1e4c1d1e63",
+    "contractdescription": "#hash_25105a1e4c1d1e63",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_6612de60b3e0d272",
     "var_e08fc162": "#hash_1228188324cf56e"

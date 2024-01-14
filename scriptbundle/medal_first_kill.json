@@ -5,6 +5,6 @@
     "name": "medal_first_kill",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_5bcdfdd2eea2f7fc",
-    "var_8645ce54": "#hash_1d32ea9b430553ba",
+    "stringref": "#hash_1d32ea9b430553ba",
     "iconlarge": "#hash_126e5077cd6e44c8"
 }

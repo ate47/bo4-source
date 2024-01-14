@@ -4,6 +4,6 @@
     "image": "#hash_4500d3f5943378bf",
     "dailytarget": 75,
     "name": "closeandpersonal_task_holiday",
-    "var_4ef43740": "#hash_7d094b545b332880",
-    "var_88e4a04f": "#hash_23b9c649361c3542"
+    "taskname": "#hash_7d094b545b332880",
+    "descsimple": "#hash_23b9c649361c3542"
 }

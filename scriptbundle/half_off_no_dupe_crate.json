@@ -1,9 +1,9 @@
 {
-    "var_95adb48e": "#hash_379167a282a093c5",
-    "var_f3d91b40": "#hash_1717ff140f30014c",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "popupimage": "#hash_379167a282a093c5",
+    "nametext": "#hash_1717ff140f30014c",
+    "categorytext": "#mpui/bm_bribe",
     "name": "half_off_no_dupe_crate",
-    "var_6290dfe9": "#hash_7aea57ba30cd6491",
-    "var_ba6ab463": "#hash_25039894ff5be6b4",
+    "stackimage": "#hash_7aea57ba30cd6491",
+    "desctext": "#hash_25039894ff5be6b4",
     "previewimage": "#hash_7aea57ba30cd6491"
 }

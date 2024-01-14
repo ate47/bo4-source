@@ -425,7 +425,7 @@ soundalias,hash_ca467b11bcaf711,0
 soundalias,hash_cb198a299a56aa3,0
 soundalias,hash_cc693b3173e7565,0
 soundalias,hash_e095e483463882b,0
-soundalias,hash_ebc6bb0e31e5dcf,0
+soundalias,amb_sink,0
 soundalias,hash_fc452f2a7883a1f,0
 soundalias,hash_101aa41260505836,0
 soundalias,hash_108714097b3689a9,0
@@ -467,7 +467,7 @@ soundalias,hash_26bf012beaa38162,0
 soundalias,hash_2730ba20330dff4a,0
 soundalias,hash_2748aa2e6dc57ae0,0
 soundalias,amb_flag,0
-soundalias,hash_29c72ae111177d1d,0
+soundalias,dst_paper,0
 soundalias,hash_2a1ab8d0c34b5f47,0
 soundalias,hash_2ad2c850d2924b46,0
 soundalias,hash_2c45ec433bbc1fcc,0
@@ -535,11 +535,11 @@ soundalias,hash_4f8c480d8e8f07b6,0
 soundalias,hash_501eff91f639c23e,0
 soundalias,hash_5241882a79fff7a3,0
 soundalias,hash_5290e69e5616b714,0
-soundalias,hash_537f76b3a76e3f9e,0
+soundalias,dst_server,0
 soundalias,hash_54538dea28a0400e,0
 soundalias,hash_547104dd82ba9c7c,0
 soundalias,hash_55c5ee20773ca615,0
-soundalias,hash_55f0be338a674cfc,0
+soundalias,dst_wood,0
 soundalias,hash_56a06f69284e9d8f,0
 soundalias,hash_5756e1f22e05204d,0
 soundalias,hash_58218bc4f7624185,0
@@ -580,7 +580,7 @@ soundalias,hash_6a7bbff93ccc7ab7,0
 soundalias,hash_6abe483482efa584,0
 soundalias,hash_6c5be5a0764e1e3c,0
 soundalias,hash_6c6bc6f97ee1a548,0
-soundalias,hash_6c86593ab8d17c00,0
+soundalias,dst_vase,0
 soundalias,hash_6d60852ef9ecfe86,0
 soundalias,hash_6ecc7867eec1eb93,0
 soundalias,hash_702abbcdab92db30,0

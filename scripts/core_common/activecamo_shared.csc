@@ -184,8 +184,8 @@ function function_130e0542(localclientnum, weapon, camoindex) {
         if (isdefined(activecamo.info.stages)) {
             var_f8bf269c = 0;
             foreach (key, stage in activecamo.info.stages) {
-                if (isdefined(stage.var_d2eac588)) {
-                    camo_stat = stats::get_stat_global(localclientnum, stage.var_d2eac588);
+                if (isdefined(stage.permanentstatname)) {
+                    camo_stat = stats::get_stat_global(localclientnum, stage.permanentstatname);
                     jumpiffalse(isdefined(camo_stat) && camo_stat >= stage.var_e2dbd42d) LOC_00000158;
                     var_f8bf269c = 1;
                 } else if (var_f8bf269c || stage.var_19b6044e === camoindex) {
@@ -505,11 +505,11 @@ function function_3aa81e0e(activecamoinfo) {
                     }
                     stage = info.stages[key - var_d3daabe];
                     stage.rob = var_3594168e.rob;
-                    if (isdefined(var_3594168e.var_879c8798)) {
-                        stage.var_19b6044e = function_8b51d9d1(var_3594168e.var_879c8798);
+                    if (isdefined(var_3594168e.camooption)) {
+                        stage.var_19b6044e = function_8b51d9d1(var_3594168e.camooption);
                     }
                     stage.var_9fbd261d = var_3594168e.var_9fbd261d;
-                    stage.var_d2eac588 = var_3594168e.var_d2eac588;
+                    stage.permanentstatname = var_3594168e.permanentstatname;
                     stage.var_e2dbd42d = isdefined(var_3594168e.var_e2dbd42d) ? var_3594168e.var_e2dbd42d : 0;
                     if (isdefined(stage.var_9fbd261d)) {
                         stage.var_d04f3816 = var_3594168e.var_d04f3816;
@@ -646,7 +646,7 @@ function function_e40c785a(localclientnum) {
         if (isdefined(activecamoinfo.stages)) {
             init_stage = 0;
             foreach (key, var_3594168e in activecamoinfo.stages) {
-                if (isdefined(var_3594168e.var_d2eac588)) {
+                if (isdefined(var_3594168e.permanentstatname)) {
                     continue;
                 }
                 init_stage = key;
@@ -681,7 +681,7 @@ function function_6efb762c(localclientnum, camoweapon, weaponoptions) {
             if (isdefined(activecamoinfo.stages)) {
                 var_3594168e = activecamoinfo.stages[init_stage];
                 if (isdefined(var_3594168e)) {
-                    var_19b6044e = function_8b51d9d1(var_3594168e.var_879c8798);
+                    var_19b6044e = function_8b51d9d1(var_3594168e.camooption);
                     self setcamo(var_19b6044e);
                     self setactivecamostage(init_stage);
                 }

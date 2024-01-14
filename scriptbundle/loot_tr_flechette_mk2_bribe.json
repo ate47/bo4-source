@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_476bd56407662dbc",
+    "popupimage": "#hash_476bd56407662dbc",
     "var_5162d01b": "#hash_476bd56407662dbc",
-    "var_f3d91b40": "#hash_59a474974bec49b5",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_59a474974bec49b5",
+    "categorytext": "#mpui/bm_bribe",
     "name": "loot_tr_flechette_mk2_bribe",
-    "var_ba6ab463": "#hash_1cfacf5694b3ed9f",
+    "desctext": "#hash_1cfacf5694b3ed9f",
     "var_c1acffb6": "#hash_59a474974bec49b5"
 }

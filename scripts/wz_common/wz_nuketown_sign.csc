@@ -3,17 +3,17 @@
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
 
-#namespace namespace_15b5b8d8;
+#namespace wz_nuketown_sign;
 
-// Namespace namespace_15b5b8d8/namespace_15b5b8d8
+// Namespace wz_nuketown_sign/wz_nuketown_sign
 // Params 0, eflags: 0x2
 // Checksum 0xb283954f, Offset: 0xe8
 // Size: 0x34
 function autoexec __init__system__() {
-    system::register(#"hash_7b0e7e7796beb14c", undefined, &__main__, undefined);
+    system::register(#"wz_nuketown_sign", undefined, &__main__, undefined);
 }
 
-// Namespace namespace_15b5b8d8/namespace_15b5b8d8
+// Namespace wz_nuketown_sign/wz_nuketown_sign
 // Params 0, eflags: 0x1 linked
 // Checksum 0x3c679f8f, Offset: 0x128
 // Size: 0x3c
@@ -22,7 +22,7 @@ function __main__() {
     util::waitforclient(0);
 }
 
-// Namespace namespace_15b5b8d8/namespace_15b5b8d8
+// Namespace wz_nuketown_sign/wz_nuketown_sign
 // Params 1, eflags: 0x1 linked
 // Checksum 0x8a08a649, Offset: 0x170
 // Size: 0x24
@@ -30,7 +30,7 @@ function on_gameplay_started(localclientnum) {
     level thread nuked_population_sign_think(localclientnum);
 }
 
-// Namespace namespace_15b5b8d8/namespace_15b5b8d8
+// Namespace wz_nuketown_sign/wz_nuketown_sign
 // Params 1, eflags: 0x1 linked
 // Checksum 0xcc799a55, Offset: 0x1a0
 // Size: 0x498
@@ -100,7 +100,7 @@ function nuked_population_sign_think(localclientnum) {
     }
 }
 
-// Namespace namespace_15b5b8d8/namespace_15b5b8d8
+// Namespace wz_nuketown_sign/wz_nuketown_sign
 // Params 2, eflags: 0x1 linked
 // Checksum 0x3bf303d6, Offset: 0x640
 // Size: 0x6a
@@ -111,7 +111,7 @@ function set_dvar_float_if_unset(dvar, value) {
     return getdvarfloat(dvar, 0);
 }
 
-// Namespace namespace_15b5b8d8/namespace_15b5b8d8
+// Namespace wz_nuketown_sign/wz_nuketown_sign
 // Params 2, eflags: 0x0
 // Checksum 0xa1361610, Offset: 0x6b8
 // Size: 0x4e

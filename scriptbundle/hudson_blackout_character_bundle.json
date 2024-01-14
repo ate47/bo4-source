@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_c948c82f0635d61",
-    "var_95adb48e": "#hash_15a0a5b14987ec13",
-    "var_f3d91b40": "#hash_1ce9792483411e5d",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_c948c82f0635d61",
+    "popupimage": "#hash_15a0a5b14987ec13",
+    "nametext": "#hash_1ce9792483411e5d",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "hudson_blackout_character_bundle",
-    "var_ba6ab463": "#hash_7e12d747636ecb67",
+    "desctext": "#hash_7e12d747636ecb67",
     "previewimage": "#hash_313cae24f58df612",
-    "var_fc228068": "#hash_20fd362da5c2025d"
+    "reserveimage": "#hash_20fd362da5c2025d"
 }

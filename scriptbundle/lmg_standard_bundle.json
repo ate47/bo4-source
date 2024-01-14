@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_2c8cf00fd9f3ebc3",
-    "var_95adb48e": "#hash_222a7e46f9eefadc",
-    "var_f3d91b40": "#hash_39147998aead3bd2",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_2c8cf00fd9f3ebc3",
+    "popupimage": "#hash_222a7e46f9eefadc",
+    "nametext": "#hash_39147998aead3bd2",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "lmg_standard_bundle",
-    "var_ba6ab463": "#hash_523b5f07b353fb02",
+    "desctext": "#hash_523b5f07b353fb02",
     "previewimage": "#hash_6ef32b8f20039199",
-    "var_fc228068": "#hash_6c115d8432fe058b"
+    "reserveimage": "#hash_6c115d8432fe058b"
 }

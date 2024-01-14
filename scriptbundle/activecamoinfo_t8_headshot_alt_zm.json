@@ -5,9 +5,9 @@
             "var_e1b76dac": 1,
             "var_c6bd8560": 1,
             "var_1c54e7b8": "uin_active_camo_unwrap",
-            "var_d2eac588": "#hash_42069dbf612bfcf4",
+            "permanentstatname": "#hash_42069dbf612bfcf4",
             "var_ab41165": 1,
-            "var_879c8798": "#camo_active_dlc1_masks_wrapper",
+            "camooption": "#camo_active_dlc1_masks_wrapper",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 100,
             "var_8fc4c50d": "uin_active_camo_impulse",
@@ -15,7 +15,7 @@
             "var_81c7b685": 1
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -24,7 +24,7 @@
             "var_c33fcb85": 1,
             "var_b214e79c": 1,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_6969a2b35fcc0423",
+            "camooption": "#hash_6969a2b35fcc0423",
             "var_7749dfd0": 1,
             "var_9828c877": "#hash_4e40eada8f6a81c9",
             "var_69896523": "#hash_4e3dc7da8f681079",
@@ -34,7 +34,7 @@
             "statname": "#headshots"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -44,7 +44,7 @@
             "var_b214e79c": 1,
             "var_aaae2554": 1,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_6969a3b35fcc05d6",
+            "camooption": "#hash_6969a3b35fcc05d6",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 10,
             "var_cea7f3de": 1,
@@ -55,7 +55,7 @@
             "statname": "#headshots"
         },
         {
-            "rob": "#hash_77c5c560c9fd83ef",
+            "rob": "#rob_headshot",
             "var_e1b76dac": 1,
             "var_48394c0a": 1,
             "var_bf97d9e": 1,
@@ -65,7 +65,7 @@
             "var_b214e79c": 1,
             "var_aaae2554": 2,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_6969a4b35fcc0789",
+            "camooption": "#hash_6969a4b35fcc0789",
             "var_7749dfd0": 1,
             "var_e2dbd42d": 10,
             "var_cea7f3de": 2,
@@ -82,7 +82,7 @@
             "var_50046db7": "#hash_1ed87375e8a35e31",
             "var_b214e79c": 1,
             "var_1a1f56b5": 1,
-            "var_879c8798": "#hash_6969a5b35fcc093c",
+            "camooption": "#hash_6969a5b35fcc093c",
             "var_7749dfd0": 1,
             "statname": "#headshots"
         }
@@ -94,6 +94,6 @@
     "var_ad038bf4": "#hash_7f209924bc0a8d04",
     "vmtype": "both",
     "name": "activecamoinfo_t8_headshot_alt_zm",
-    "var_e253755a": "#hash_7d2030f74798208f",
+    "revealstring": "#hash_7d2030f74798208f",
     "istiered": 1
 }

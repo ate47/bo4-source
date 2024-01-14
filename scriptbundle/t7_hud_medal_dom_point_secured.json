@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_dom_point_secured",
     "backinglarge": "#hash_616c67b488c6314c",
     "iconsmall": "#t7_hud_medal_dom_point_secured",
-    "var_8645ce54": "#hash_7d025c8f3c0dc632",
+    "stringref": "#hash_7d025c8f3c0dc632",
     "iconlarge": "#hash_2b54d87537bf5e10"
 }

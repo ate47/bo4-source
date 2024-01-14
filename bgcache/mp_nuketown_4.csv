@@ -732,7 +732,7 @@ radiant_exploder,ending_sequence_lights,0
 radiant_exploder,hash_14a8ab4ec42b22d4,0
 radiant_exploder,fxexp_portal_idle,0
 radiant_exploder,hash_1d87067ead12abc0,0
-radiant_exploder,hash_2ede09974441eea5,0
+radiant_exploder,fxexp_portal,0
 radiant_exploder,hash_5d8aae9170ca20ac,0
 radiant_exploder,hash_6093ca0260a81e52,0
 radiant_exploder,hash_64b712447c3de6e2,0
@@ -828,9 +828,9 @@ soundalias,hash_2730ba20330dff4a,0
 soundalias,hash_2748aa2e6dc57ae0,0
 soundalias,hash_27678f6803a0555f,0
 soundalias,amb_flag,0
-soundalias,hash_27d1a3cea9529370,0
+soundalias,amb_projector,0
 soundalias,hash_284c499ffd0e10f6,0
-soundalias,hash_29c72ae111177d1d,0
+soundalias,dst_paper,0
 soundalias,hash_29f6b9fbbd34460c,0
 soundalias,hash_2a3cdaf5630d2ced,0
 soundalias,evt_spawn_alarm,0
@@ -889,7 +889,7 @@ soundalias,hash_3e8d50aeefef2d0e,0
 soundalias,hash_3f8d713abf4d10fe,0
 soundalias,hash_40b81d8c7bcfd768,0
 soundalias,hash_41204f583fec6679,0
-soundalias,hash_415f3b4666fd9759,0
+soundalias,amb_generator,0
 soundalias,hash_4218b15834df0b26,0
 soundalias,hash_42e723bcce22b31a,0
 soundalias,hash_436a4f77c54e7912,0
@@ -906,7 +906,7 @@ soundalias,hash_44cb64bff7aa569b,0
 soundalias,hash_456af38afaef9d77,0
 soundalias,hash_456af98afaefa7a9,0
 soundalias,hash_45f5a2256d45ccfe,0
-soundalias,hash_465296fdde32ea8b,0
+soundalias,amb_fireplace,0
 soundalias,hash_4747e2f1172b8ce0,0
 soundalias,hash_4747e5f1172b91f9,0
 soundalias,hash_47a7dd1007c11019,0
@@ -932,12 +932,12 @@ soundalias,hash_51dd2b961fd4f738,0
 soundalias,hash_5241882a79fff7a3,0
 soundalias,hash_5290e69e5616b714,0
 soundalias,hash_52e06cdf3fc18f4c,0
-soundalias,hash_537f76b3a76e3f9e,0
+soundalias,dst_server,0
 soundalias,hash_54538dea28a0400e,0
 soundalias,hash_547104dd82ba9c7c,0
 soundalias,hash_55b56a5c3d2d3488,0
 soundalias,hash_55c5ee20773ca615,0
-soundalias,hash_55f0be338a674cfc,0
+soundalias,dst_wood,0
 soundalias,hash_562ab5b24fb889c9,0
 soundalias,hash_56633dba71c68170,0
 soundalias,hash_56a06f69284e9d8f,0
@@ -1010,7 +1010,7 @@ soundalias,hash_77a39cb220d8ab15,0
 soundalias,hash_77ae18c6b0d66864,0
 soundalias,hash_77ae1ec6b0d67296,0
 soundalias,hash_7809ea482909306c,0
-soundalias,hash_78333a4de8a6ee6d,0
+soundalias,evt_portal,0
 soundalias,hash_783bde55c7eacce5,0
 soundalias,hash_78e4d82ffd2887e0,0
 soundalias,hash_79041053f1a7e71c,0

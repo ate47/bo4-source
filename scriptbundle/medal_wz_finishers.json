@@ -5,6 +5,6 @@
     "name": "medal_wz_finishers",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_6c7bc84e52d21c03",
-    "var_8645ce54": "#hash_5674cc5f89230c31",
+    "stringref": "#hash_5674cc5f89230c31",
     "iconlarge": "#hash_5d3614f45658d5a3"
 }

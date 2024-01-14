@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_flag_carrier",
     "backinglarge": "#hash_616c67b488c6314c",
     "iconsmall": "#t7_hud_medal_kill_flag_carrier",
-    "var_8645ce54": "#hash_3667d396475533b7",
+    "stringref": "#hash_3667d396475533b7",
     "iconlarge": "#hash_5c82bb5fc13791d1"
 }

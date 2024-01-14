@@ -3,6 +3,6 @@
     "var_922067c4": "scriptbundle",
     "image": "#hash_2ecc6b0f8644b84f",
     "name": "invalid_task",
-    "var_4ef43740": "#hash_526fcc5b87e9beb9",
-    "var_88e4a04f": "#hash_38fffddab31096c8"
+    "taskname": "#hash_526fcc5b87e9beb9",
+    "descsimple": "#hash_38fffddab31096c8"
 }

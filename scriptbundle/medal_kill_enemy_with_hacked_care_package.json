@@ -5,6 +5,6 @@
     "name": "medal_kill_enemy_with_hacked_care_package",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_5adabcecc38dc7fe",
-    "var_8645ce54": "#hash_3656f6c5d1342997",
+    "stringref": "#hash_3656f6c5d1342997",
     "iconlarge": "#hash_1d93a78baa18a40e"
 }

@@ -6,7 +6,7 @@ gesture,hash_10a3bc4879220f8a,294cd91b000
 gesture,hash_202583ee04b1cae2,294cd8f7f60
 gesture,hash_24de08d972c7b439,294cd8df348
 gesture,ges_grab,294cd91b208
-gesture,hash_2b7bf0994d95c434,294cd91cc70
+gesture,ges_spray,294cd91cc70
 gesture,hash_2bfc8a1e1322e056,294cd8f97c0
 gesture,hash_3c5a2eda5dad80ca,294cd91b410
 gesture,hash_419f11534af12a76,294cd8fc060
@@ -132,7 +132,7 @@ locationselector,compass_objpoint_helicopter,0
 locationselector,map_directional_selector,0
 menu,ingame_controls,0
 menu,chooseclass_ingame,0
-menu,hash_17ce8e3256be65df,0
+menu,positiondraft_wz,0
 menu,popup_leavegame,0
 menu,spectate,0
 menu,callout_items,0
@@ -157,7 +157,7 @@ string,hash_141c79e0a2e1383e,0
 string,hash_145440ac41347bd4,0
 string,hash_1458857df9447fb3,0
 string,hash_14cc93f11ba8334a,0
-string,hash_14cf4850963e11ec,0
+string,mp_destroyed_helicopter,0
 string,hash_18114ebf7e352c55,0
 string,hash_195539177c4346f7,0
 string,hash_19d325d8d1bfd3de,0
@@ -213,7 +213,7 @@ string,hash_77965c9740b1082d,0
 string,hash_77a390bf067ca1f1,0
 string,mp/round_draw,0
 string,mp_other_teams_forfeited,0
-eventstring,hash_3bec30b74f3bc88,0
+eventstring,skip_transition,0
 eventstring,selected,0
 eventstring,player_location,0
 eventstring,clientnum,0
@@ -234,7 +234,7 @@ eventstring,back,0
 eventstring,changecharacter,0
 eventstring,randomcharacter,0
 eventstring,show_outcome,0
-eventstring,hash_2b189ae140958772,0
+eventstring,hide_outcome,0
 eventstring,autocontrol,0
 eventstring,axis,0
 eventstring,play_deathcam,0
@@ -248,7 +248,7 @@ eventstring,hash_4a3306cfce6719bc,0
 eventstring,open_ingame_menu,0
 eventstring,hash_4e2cc9dce4bd2d03,0
 eventstring,round_transition,0
-eventstring,hash_5bb35561c9f39d6f,0
+eventstring,marker_location,0
 eventstring,mini_turret_kill,0
 eventstring,testplayerscorefortan,0
 eventstring,weapon_updated,0
@@ -260,7 +260,7 @@ eventstring,autoassign,0
 eventstring,opendraft,0
 objective,pickup_health,0
 objective,pickup_item,0
-objective,hash_268cdc9c4717599c,0
+objective,cp_gameobject_default,0
 objective,pickup_ammo,0
 fx,destruct/fx8_atk_chppr_exp_trail,294cef5f2b8
 fx,killstreaks/fx_emp_exp_death,294cef53c38

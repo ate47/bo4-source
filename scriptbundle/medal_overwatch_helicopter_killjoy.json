@@ -5,6 +5,6 @@
     "name": "medal_overwatch_helicopter_killjoy",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_1cf2304df7ae5d2e",
-    "var_8645ce54": "#hash_60d06b641dfcb9af",
+    "stringref": "#hash_60d06b641dfcb9af",
     "iconlarge": "#hash_163c6aabc92e9fbe"
 }

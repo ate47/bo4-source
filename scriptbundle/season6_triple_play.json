@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_48082a6c64b880ca",
-    "var_95adb48e": "#hash_5ca0556edc05406",
-    "var_f3d91b40": "#hash_1cba159f28b3f3b8",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_48082a6c64b880ca",
+    "popupimage": "#hash_5ca0556edc05406",
+    "nametext": "#hash_1cba159f28b3f3b8",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "season6_triple_play",
-    "var_ba6ab463": "#hash_4bbe0196ec220754",
+    "desctext": "#hash_4bbe0196ec220754",
     "previewimage": "#hash_ca043918f41b2ff",
-    "var_fc228068": "#hash_510d8cebc477c2c6"
+    "reserveimage": "#hash_510d8cebc477c2c6"
 }

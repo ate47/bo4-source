@@ -5,6 +5,6 @@
     "name": "medal_kill_enemy_who_has_high_score",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_63b484e14ac9173",
-    "var_8645ce54": "#hash_69ee745ef231a18a",
+    "stringref": "#hash_69ee745ef231a18a",
     "iconlarge": "#hash_4ced4e1296d69893"
 }

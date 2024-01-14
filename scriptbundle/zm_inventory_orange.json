@@ -6,7 +6,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_370d3d727d09cfc9"
+                            "stageimage": "#hash_370d3d727d09cfc9"
                         }
                     ],
                     "var_1d91eeba": 1,
@@ -16,7 +16,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_370d3d727d09cfc9"
+                            "stageimage": "#hash_370d3d727d09cfc9"
                         }
                     ],
                     "var_1d91eeba": 1,
@@ -31,7 +31,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_75ba6ae548c645ea"
+                            "stageimage": "#hash_75ba6ae548c645ea"
                         }
                     ],
                     "var_1d91eeba": 1,
@@ -41,11 +41,11 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_1ed7b4b891f47978"
+                            "stageimage": "#hash_1ed7b4b891f47978"
                         },
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_74ba26396cd76369"
+                            "stageimage": "#hash_74ba26396cd76369"
                         }
                     ],
                     "var_1d91eeba": 2,
@@ -55,11 +55,11 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_1ed7b4b891f47978"
+                            "stageimage": "#hash_1ed7b4b891f47978"
                         },
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_74ba26396cd76369"
+                            "stageimage": "#hash_74ba26396cd76369"
                         }
                     ],
                     "var_1d91eeba": 2,
@@ -74,7 +74,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_75ba6ae548c645ea"
+                            "stageimage": "#hash_75ba6ae548c645ea"
                         }
                     ],
                     "var_1d91eeba": 1,
@@ -86,16 +86,16 @@
     ],
     "shieldpieces": [
         {
-            "var_37acb3da": "#hash_57735462a52670f9",
-            "clientfield": "#hash_108182e410722b84"
+            "pieceimage": "#hash_57735462a52670f9",
+            "clientfield": "#shield_1"
         },
         {
-            "var_37acb3da": "#hash_57735162a5266be0",
-            "clientfield": "#hash_108185e41072309d"
+            "pieceimage": "#hash_57735162a5266be0",
+            "clientfield": "#shield_2"
         },
         {
-            "var_37acb3da": "#hash_57735262a5266d93",
-            "clientfield": "#hash_108184e410722eea"
+            "pieceimage": "#hash_57735262a5266d93",
+            "clientfield": "#shield_3"
         }
     ],
     "quests": [
@@ -106,7 +106,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_6846778bc95b7134"
+                                    "stageimage": "#hash_6846778bc95b7134"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -115,7 +115,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_5062dc56f4dcf3db"
+                                    "stageimage": "#hash_5062dc56f4dcf3db"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -124,7 +124,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_27d3a0acc4f71b2c"
+                                    "stageimage": "#hash_27d3a0acc4f71b2c"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -138,7 +138,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_3ee506ee6b5facd6"
+                                    "stageimage": "#hash_3ee506ee6b5facd6"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -160,10 +160,10 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_45b2dc5cc2813951"
+                                    "stageimage": "#hash_45b2dc5cc2813951"
                                 },
                                 {
-                                    "var_2d787849": "#hash_1b6848cb2fd015d8"
+                                    "stageimage": "#hash_1b6848cb2fd015d8"
                                 }
                             ],
                             "var_1d91eeba": 2,
@@ -172,10 +172,10 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_45b2dc5cc2813951"
+                                    "stageimage": "#hash_45b2dc5cc2813951"
                                 },
                                 {
-                                    "var_2d787849": "#hash_1b6848cb2fd015d8"
+                                    "stageimage": "#hash_1b6848cb2fd015d8"
                                 }
                             ],
                             "var_1d91eeba": 2,
@@ -187,7 +187,7 @@
             ],
             "var_516217cd": 1,
             "name": "flinger",
-            "var_a0ebe517": "#hash_5e57af7f0cfd29c2"
+            "var_a0ebe517": "#flinger_phase"
         },
         {
             "phases": [
@@ -196,7 +196,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_524fd3c09cd2486a"
+                                    "stageimage": "#hash_524fd3c09cd2486a"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -205,7 +205,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_2c2591029d6e9c0c"
+                                    "stageimage": "#hash_2c2591029d6e9c0c"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -214,7 +214,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_53db4d4435557493"
+                                    "stageimage": "#hash_53db4d4435557493"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -228,7 +228,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_1273ffc1da3b8cca"
+                                    "stageimage": "#hash_1273ffc1da3b8cca"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -247,77 +247,77 @@
         {
             "numneeded": 12,
             "var_3e63e7e4": "#hash_4d8ef7c3e1b8f835",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 40,
             "var_3e63e7e4": "#hash_1b0a1cd788770a2c",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 3,
             "var_3e63e7e4": "#hash_a6d2c344dea5c28",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 40,
             "var_3e63e7e4": "#hash_2afdbd8d1939e913",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 20,
             "var_3e63e7e4": "#hash_37471870d5389932",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 3,
             "var_3e63e7e4": "#hash_4dc646842910a82c",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 30,
             "var_3e63e7e4": "#hash_49f7e51b025fc080",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 12,
             "var_3e63e7e4": "#hash_2c3522a5820ac5f4",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 5,
             "var_3e63e7e4": "#hash_776f06f558a721bd",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 50,
             "var_3e63e7e4": "#hash_18b7a04e895ea48a",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 40,
             "var_3e63e7e4": "#hash_1eb8725f711ced96",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 4,
             "var_3e63e7e4": "#hash_13e0b20e0d4e3d1f",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 25,
             "var_3e63e7e4": "#hash_7c9bf9126fcb8e5e",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 15,
             "var_3e63e7e4": "#hash_6cbee00df13267d3",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         },
         {
             "numneeded": 3,
             "var_3e63e7e4": "#hash_73104bba6c6aebd1",
-            "var_c9e2e5f1": "#hash_df1ac892a896faf"
+            "challengeimage": "#hash_df1ac892a896faf"
         }
     ],
     "objprogitems": [
@@ -374,7 +374,7 @@
         {
             "stages": [
                 {
-                    "var_2d787849": "#hash_59f3b04e36880056"
+                    "stageimage": "#hash_59f3b04e36880056"
                 }
             ],
             "var_1d91eeba": 1,
@@ -383,13 +383,13 @@
         {
             "stages": [
                 {
-                    "var_2d787849": "#hash_7f2a2ac288c53195"
+                    "stageimage": "#hash_7f2a2ac288c53195"
                 },
                 {
-                    "var_2d787849": "#hash_572ca2a8d485ec18"
+                    "stageimage": "#hash_572ca2a8d485ec18"
                 },
                 {
-                    "var_2d787849": "#hash_60237c88b08baad1"
+                    "stageimage": "#hash_60237c88b08baad1"
                 }
             ],
             "var_1d91eeba": 3,
@@ -398,10 +398,10 @@
         {
             "stages": [
                 {
-                    "var_2d787849": "#hash_272f5a351f508a7e"
+                    "stageimage": "#hash_272f5a351f508a7e"
                 },
                 {
-                    "var_2d787849": "#hash_ab1f80d32070c33"
+                    "stageimage": "#hash_ab1f80d32070c33"
                 }
             ],
             "var_1d91eeba": 2,

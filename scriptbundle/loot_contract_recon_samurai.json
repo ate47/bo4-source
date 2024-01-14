@@ -4,12 +4,12 @@
             "var_826726a": "#hash_326eb2964a3a4152"
         }
     ],
-    "var_8a31a029": "#hash_3d530ab86d3ef60",
+    "contracticon": "#hash_3d530ab86d3ef60",
     "var_d0100eab": 1,
-    "var_5ed70194": "#hash_6ce34ffbb3998db9",
-    "var_6c44aa0a": "#hash_326eb2964a3a4152",
+    "relateditemname": "#hash_6ce34ffbb3998db9",
+    "contracttitle": "#hash_326eb2964a3a4152",
     "name": "loot_contract_recon_samurai",
-    "var_2b265a7c": "#hash_4574c3ce7d0e7da",
+    "contractdescription": "#hash_4574c3ce7d0e7da",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#hash_5828a13dacba6f5e",
     "var_e08fc162": "#hash_1a37bb83d6aa1860"

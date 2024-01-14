@@ -1,6 +1,6 @@
 {
     "name": "c_t8_bo_parachute_fire_and_fury",
-    "parachute": "weapon#hash_2005079270bcd650",
+    "parachute": "weapon#parachute_wz",
     "icon": "loot_ui_icon_jumppacks_parachute_fire_and_fury",
     "largeicon": "loot_ui_icon_jumppacks_parachute_fire_and_fury_large",
     "parachutelit": "wpn_t8_bo_parachute_world_fire_and_fury"

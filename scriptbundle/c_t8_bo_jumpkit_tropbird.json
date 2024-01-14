@@ -4,7 +4,7 @@
     "image": "loot_04_ui_icon_blackmarket_reserves_jumppack_tropical_bird",
     "name": "c_t8_bo_jumpkit_tropbird",
     "displayname": "#hash_451b4f963550c585",
-    "var_15d11806": "loot_04_ui_icon_blackmarket_reserves_jumppack_tropical_bird",
+    "preview_image": "loot_04_ui_icon_blackmarket_reserves_jumppack_tropical_bird",
     "var_4fa85a25": "dfxt_tropical_bird",
     "parachute": "c_t8_bo_parachute_tropbird"
 }

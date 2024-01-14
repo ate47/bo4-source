@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_end_enemy_shooting_pineapplegun",
     "backinglarge": "#hash_735c5e3788111659",
     "iconsmall": "#t7_hud_medal_end_enemy_shooting_pineapplegun",
-    "var_8645ce54": "#hash_47979b3daedb3db8",
+    "stringref": "#hash_47979b3daedb3db8",
     "iconlarge": "#hash_2c8eda9d89dd0e76"
 }

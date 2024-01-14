@@ -232,7 +232,7 @@ function function_926fcb2f(b_success) {
     setbombtimer("A", 0);
     setmatchflag("bomb_timer_a", 0);
     var_cd803a6b = gettime() - level.var_ebad4ea8;
-    level notify(#"hash_1e387ee13c1e81a7");
+    level notify(#"ct_ruin_end");
     if (b_success) {
         level flag::set("ct_player_success");
     } else {
@@ -303,7 +303,7 @@ function function_72e84e64() {
 // Size: 0x3c0
 function function_4b5c96a0() {
     self endon(#"death", #"target_destroyed");
-    level endon(#"hash_1e387ee13c1e81a7", #"hash_42057c28bd084d77");
+    level endon(#"ct_ruin_end", #"hash_42057c28bd084d77");
     self.waypoint gameobjects::set_visible_team(#"any");
     b_keyline = 0;
     if (level.var_9b517372 == 0) {

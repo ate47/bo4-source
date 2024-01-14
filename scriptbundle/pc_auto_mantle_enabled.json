@@ -1,12 +1,12 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "0",
-            "var_6825bdb": "mantle_press_jump",
+            "optionvalue": "0",
+            "optionname": "mantle_press_jump",
             "operator": "=="
         }
     ],
-    "var_d260763": "#hash_1fa2283fa1a27106",
+    "descriptionimage": "#hash_1fa2283fa1a27106",
     "description": "#hash_acb8224cb1e95d0",
     "var_60fcfffa": "#menu/off",
     "var_10e01ad5": 1,

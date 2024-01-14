@@ -9,7 +9,7 @@
     "type": "bountyhunterpackage",
     "var_85d7cf08": 1,
     "name": "package_armor_t1",
-    "var_6c83a2ba": "armor",
+    "packagetype": "armor",
     "armor": 50,
     "purchasecost": 500,
     "startammo": 2,

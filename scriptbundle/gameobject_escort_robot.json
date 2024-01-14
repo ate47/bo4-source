@@ -25,7 +25,7 @@
     "var_8bb2bbcb": 1,
     "triggerzoffset": -32,
     "var_239f1f05": 1,
-    "objective": "#hash_268cdc9c4717599c",
+    "objective": "#cp_gameobject_default",
     "str_tag": "tag_origin",
     "n_trigger_use_time": 2,
     "viewanim": "#hash_19feaef63ab0ef51"

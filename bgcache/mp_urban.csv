@@ -400,7 +400,7 @@ soundalias,hash_1358357952f89d8d,0
 soundalias,hash_1531b56fa76adfd8,0
 soundalias,hash_16f3edba4ecae0f4,0
 soundalias,hash_186f7af36a61f275,0
-soundalias,hash_1a32dfbfe1551c6c,0
+soundalias,amb_servers,0
 soundalias,hash_1a5d88f8e2660141,0
 soundalias,hash_1a6485b96677518d,0
 soundalias,hash_1af148e151d2c10e,0
@@ -409,7 +409,7 @@ soundalias,hash_1b8aa1541317cf92,0
 soundalias,hash_1c4c102504aad736,0
 soundalias,hash_1d645c6d2009b0c2,0
 soundalias,hash_1e40cef876810a8f,0
-soundalias,hash_1e592c27683f6e13,0
+soundalias,amb_turbine,0
 soundalias,vox_tvoi_tutor_ajax_final_event_2_dead,0
 soundalias,hash_1f93e224b61e7a10,0
 soundalias,hash_1f9b1d980061ea0e,0
@@ -428,7 +428,7 @@ soundalias,hash_26b4a629d1654ce1,0
 soundalias,hash_26bf012beaa38162,0
 soundalias,hash_29346a2648df0f4d,0
 soundalias,vox_tvoi_tutor_ajax_flash_bank_shot_stun,0
-soundalias,hash_29c72ae111177d1d,0
+soundalias,dst_paper,0
 soundalias,hash_2a1ab8d0c34b5f47,0
 soundalias,hash_2a5eff1c09c86fdd,0
 soundalias,hash_2a76820ed03f5673,0
@@ -513,11 +513,11 @@ soundalias,hash_4f8c480d8e8f07b6,0
 soundalias,hash_501eff91f639c23e,0
 soundalias,hash_5241882a79fff7a3,0
 soundalias,hash_5290e69e5616b714,0
-soundalias,hash_537f76b3a76e3f9e,0
+soundalias,dst_server,0
 soundalias,hash_54538dea28a0400e,0
 soundalias,hash_547104dd82ba9c7c,0
 soundalias,hash_55ba6e75b5b492cb,0
-soundalias,hash_55f0be338a674cfc,0
+soundalias,dst_wood,0
 soundalias,hash_563e6afd71dd6968,0
 soundalias,hash_57cbc734a157bd27,0
 soundalias,hash_58218bc4f7624185,0

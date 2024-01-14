@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_f7f3486a6cbdb2a",
+    "popupimage": "#hash_f7f3486a6cbdb2a",
     "var_5162d01b": "#hash_f7f3486a6cbdb2a",
-    "var_f3d91b40": "#hash_52308270b37d973b",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_52308270b37d973b",
+    "categorytext": "#mpui/bm_bribe",
     "name": "loot_smg_handling_mk2_bribe",
-    "var_ba6ab463": "#hash_78d939bd37b6802d",
+    "desctext": "#hash_78d939bd37b6802d",
     "var_c1acffb6": "#hash_52308270b37d973b"
 }

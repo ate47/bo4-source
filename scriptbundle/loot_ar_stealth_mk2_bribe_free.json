@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_34bef6c259f7ecf6",
+    "popupimage": "#hash_34bef6c259f7ecf6",
     "var_5162d01b": "#hash_34bef6c259f7ecf6",
-    "var_f3d91b40": "#hash_254ab7013d677953",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_254ab7013d677953",
+    "categorytext": "#mpui/bm_bribe",
     "name": "loot_ar_stealth_mk2_bribe_free",
-    "var_ba6ab463": "#hash_778a6a9113f9405",
+    "desctext": "#hash_778a6a9113f9405",
     "var_c1acffb6": "#hash_254ab7013d677953"
 }

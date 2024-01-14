@@ -4,6 +4,6 @@
     "name": "medal_molotov_kill",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#hash_60ff11b3f6431fba",
-    "var_8645ce54": "#hash_5d65f8d1a012532a",
+    "stringref": "#hash_5d65f8d1a012532a",
     "iconlarge": "#hash_6331808deb17fbb2"
 }

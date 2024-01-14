@@ -6,7 +6,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_1c0d6bb0f4df3632"
+                            "stageimage": "#hash_1c0d6bb0f4df3632"
                         }
                     ],
                     "var_1d91eeba": 1,
@@ -16,11 +16,11 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_ddb2c2c839efd70"
+                            "stageimage": "#hash_ddb2c2c839efd70"
                         },
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_611756199e43489c"
+                            "stageimage": "#hash_611756199e43489c"
                         }
                     ],
                     "var_1d91eeba": 2,
@@ -35,7 +35,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_1c0d6ab0f4df347f"
+                            "stageimage": "#hash_1c0d6ab0f4df347f"
                         }
                     ],
                     "var_1d91eeba": 1,
@@ -45,11 +45,11 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_2834403e8c3ad7ba"
+                            "stageimage": "#hash_2834403e8c3ad7ba"
                         },
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_611756199e43489c"
+                            "stageimage": "#hash_611756199e43489c"
                         }
                     ],
                     "var_1d91eeba": 2,
@@ -59,23 +59,23 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_74b40026657ada6"
+                            "stageimage": "#hash_74b40026657ada6"
                         },
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_74b3f026657abf3"
+                            "stageimage": "#hash_74b3f026657abf3"
                         },
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_74b3e026657aa40"
+                            "stageimage": "#hash_74b3e026657aa40"
                         },
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_35e255d23e4c7a42"
+                            "stageimage": "#hash_35e255d23e4c7a42"
                         },
                         {
                             "numneeded": 1,
-                            "var_2d787849": "#hash_611756199e43489c"
+                            "stageimage": "#hash_611756199e43489c"
                         }
                     ],
                     "var_1d91eeba": 5,
@@ -137,16 +137,16 @@
     ],
     "shieldpieces": [
         {
-            "var_37acb3da": "#hash_bf20c4b3a86ce4f",
-            "clientfield": "#hash_108182e410722b84"
+            "pieceimage": "#hash_bf20c4b3a86ce4f",
+            "clientfield": "#shield_1"
         },
         {
-            "var_37acb3da": "#hash_bf20d4b3a86d002",
-            "clientfield": "#hash_108184e410722eea"
+            "pieceimage": "#hash_bf20d4b3a86d002",
+            "clientfield": "#shield_3"
         },
         {
-            "var_37acb3da": "#hash_bf20e4b3a86d1b5",
-            "clientfield": "#hash_108185e41072309d"
+            "pieceimage": "#hash_bf20e4b3a86d1b5",
+            "clientfield": "#shield_2"
         }
     ],
     "quests": [
@@ -157,10 +157,10 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_402107deb1c43001"
+                                    "stageimage": "#hash_402107deb1c43001"
                                 },
                                 {
-                                    "var_2d787849": "#hash_2df9cb99442095c0"
+                                    "stageimage": "#hash_2df9cb99442095c0"
                                 }
                             ],
                             "var_1d91eeba": 2,
@@ -169,10 +169,10 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_402107deb1c43001"
+                                    "stageimage": "#hash_402107deb1c43001"
                                 },
                                 {
-                                    "var_2d787849": "#hash_2df9cb99442095c0"
+                                    "stageimage": "#hash_2df9cb99442095c0"
                                 }
                             ],
                             "var_1d91eeba": 2,
@@ -181,10 +181,10 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_402107deb1c43001"
+                                    "stageimage": "#hash_402107deb1c43001"
                                 },
                                 {
-                                    "var_2d787849": "#hash_2df9cb99442095c0"
+                                    "stageimage": "#hash_2df9cb99442095c0"
                                 }
                             ],
                             "var_1d91eeba": 2,
@@ -204,7 +204,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_5312df75db1e29b0"
+                                    "stageimage": "#hash_5312df75db1e29b0"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -213,7 +213,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_4fc60e1de97db607"
+                                    "stageimage": "#hash_4fc60e1de97db607"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -222,7 +222,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_6d65ab9978d0050a"
+                                    "stageimage": "#hash_6d65ab9978d0050a"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -236,7 +236,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_4ef6939ca6e195b7"
+                                    "stageimage": "#hash_4ef6939ca6e195b7"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -257,7 +257,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_18b24a1d1fe6d1d8"
+                                    "stageimage": "#hash_18b24a1d1fe6d1d8"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -266,7 +266,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_6fba75d0f0f2f3f3"
+                                    "stageimage": "#hash_6fba75d0f0f2f3f3"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -275,7 +275,7 @@
                         {
                             "stages": [
                                 {
-                                    "var_2d787849": "#hash_189190832979e91"
+                                    "stageimage": "#hash_189190832979e91"
                                 }
                             ],
                             "var_1d91eeba": 1,
@@ -298,7 +298,7 @@
         {
             "stages": [
                 {
-                    "var_2d787849": "#hash_463f9a495f91e933"
+                    "stageimage": "#hash_463f9a495f91e933"
                 }
             ],
             "var_1d91eeba": 1,
@@ -307,7 +307,7 @@
         {
             "stages": [
                 {
-                    "var_2d787849": "#hash_278b89d5eb019d7c"
+                    "stageimage": "#hash_278b89d5eb019d7c"
                 }
             ],
             "var_1d91eeba": 1,
@@ -316,14 +316,14 @@
         {
             "stages": [
                 {
-                    "var_2d787849": "#hash_6744628401cf6fba"
+                    "stageimage": "#hash_6744628401cf6fba"
                 }
             ],
             "var_1d91eeba": 1,
             "clientfield": "#pap_3"
         }
     ],
-    "var_fde97bcd": "#hash_3f90f155c7e4e6d2",
+    "objectivebackground": "#hash_3f90f155c7e4e6d2",
     "var_b79de608": 12,
     "var_922067c4": "scriptbundle",
     "var_aa76b7dd": 1,

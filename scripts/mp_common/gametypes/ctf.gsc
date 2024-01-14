@@ -590,8 +590,8 @@ function function_18d7960(flagteam, player) {
 function ondrop(player) {
     self gameobjects::set_flags(1);
     self gameobjects::set_owner_team(util::get_enemy_team(self.team));
-    var_1d711e07 = getplayers(self.team);
-    foreach (var_ba17692e in var_1d711e07) {
+    flag_allies = getplayers(self.team);
+    foreach (var_ba17692e in flag_allies) {
         objective_setvisibletoplayer(self.objectiveid, var_ba17692e);
     }
     team = self gameobjects::get_owner_team();
@@ -741,8 +741,8 @@ function onpickup(player) {
         self.var_fa01a5fa setvisibletoteam(otherteam);
         self.var_fa01a5fa setinvisibletoplayer(player);
         self.var_fa01a5fa linkto(player, "tag_stowed_back");
-        var_1d711e07 = getplayers(util::get_enemy_team(self.team));
-        foreach (var_ba17692e in var_1d711e07) {
+        flag_allies = getplayers(util::get_enemy_team(self.team));
+        foreach (var_ba17692e in flag_allies) {
             objective_setinvisibletoplayer(self.objectiveid, var_ba17692e);
         }
         globallogic_audio::play_2d_on_team("mpl_flagget_sting_friend", otherteam);
@@ -878,8 +878,8 @@ function oncapture(player) {
     flag gameobjects::return_home();
     flag gameobjects::set_owner_team(util::get_enemy_team(flag.team));
     flag.dontannouncereturn = undefined;
-    var_1d711e07 = getplayers(flag.team);
-    foreach (var_ba17692e in var_1d711e07) {
+    flag_allies = getplayers(flag.team);
+    foreach (var_ba17692e in flag_allies) {
         objective_setvisibletoplayer(flag.objectiveid, var_ba17692e);
     }
     otherteam = util::getotherteam(team);

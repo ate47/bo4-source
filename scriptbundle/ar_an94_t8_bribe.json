@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_48ae534cd67cee68",
+    "popupimage": "#hash_48ae534cd67cee68",
     "var_5162d01b": "#hash_48ae534cd67cee68",
-    "var_f3d91b40": "#weapon/ar_an94_t8",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#weapon/ar_an94_t8",
+    "categorytext": "#mpui/bm_bribe",
     "name": "ar_an94_t8_bribe",
-    "var_ba6ab463": "#hash_7c0c676d8cb81873",
+    "desctext": "#hash_7c0c676d8cb81873",
     "var_c1acffb6": "#weapon/ar_an94_t8"
 }

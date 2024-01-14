@@ -642,7 +642,7 @@ soundalias,hash_27b25d569e7a1005,0
 soundalias,hash_27b264569e7a1bea,0
 soundalias,hash_27b265569e7a1d9d,0
 soundalias,hash_296b935f87aa2359,0
-soundalias,hash_29c72ae111177d1d,0
+soundalias,dst_paper,0
 soundalias,hash_2a1ab8d0c34b5f47,0
 soundalias,hash_2a24ce3a41b0df92,0
 soundalias,hash_2af37487e21a6b69,0
@@ -680,7 +680,7 @@ soundalias,hash_338c13a4f145a64d,0
 soundalias,hash_33e5e9083374ad6c,0
 soundalias,hash_342bc6abf5c2e001,0
 soundalias,hash_344ec28fee2dea4c,0
-soundalias,hash_3459792463dfc4c4,0
+soundalias,amb_ac,0
 soundalias,hash_3475b72fd2075545,0
 soundalias,hash_354a10fe1f24ce2d,0
 soundalias,hash_35825c56d12e7e5a,0
@@ -760,7 +760,7 @@ soundalias,hash_5160cc87009d52ed,0
 soundalias,hash_51abdd1a9bf25a61,0
 soundalias,hash_5241882a79fff7a3,0
 soundalias,hash_5290e69e5616b714,0
-soundalias,hash_537f76b3a76e3f9e,0
+soundalias,dst_server,0
 soundalias,hash_53cc3dd3d1a40243,0
 soundalias,hash_541c921d466c4791,0
 soundalias,hash_542ec41578af3e43,0
@@ -770,7 +770,7 @@ soundalias,hash_547104dd82ba9c7c,0
 soundalias,hash_54ccaf2374905df9,0
 soundalias,hash_54f9bb5621f71d07,0
 soundalias,hash_55c5ee20773ca615,0
-soundalias,hash_55f0be338a674cfc,0
+soundalias,dst_wood,0
 soundalias,hash_56a06f69284e9d8f,0
 soundalias,hash_5756e1f22e05204d,0
 soundalias,hash_58218bc4f7624185,0

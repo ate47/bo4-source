@@ -1,8 +1,8 @@
 {
-    "var_bd6b8087": "zclassic",
+    "defaultgametype": "zclassic",
     "abbreviation": "zm",
     "name": "sessionmode_zm",
-    "var_3e36c924": "#hash_24ce227bd4bc0d62",
+    "selectdescription": "#hash_24ce227bd4bc0d62",
     "displayname": "#menu/zombies",
-    "var_d5f0dede": "zm_zodt8"
+    "defaultmap": "zm_zodt8"
 }

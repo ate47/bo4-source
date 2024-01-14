@@ -4,7 +4,7 @@
     "image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_preview_china_wind",
     "name": "c_t8_bo_jumpkit_chinese",
     "displayname": "#hash_3497309f932530e0",
-    "var_15d11806": "loot03_ui_icon_blackmarket_item_shop_wingsuit_china_wind",
+    "preview_image": "loot03_ui_icon_blackmarket_item_shop_wingsuit_china_wind",
     "var_4fa85a25": "dfxt_chinese",
     "parachute": "c_t8_bo_parachute_chinese"
 }

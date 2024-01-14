@@ -4,6 +4,6 @@
     "image": "#hash_a75058635c8146d",
     "dailytarget": 150,
     "name": "arcaneaggression_task",
-    "var_4ef43740": "#hash_2c359fa6ec8bd26e",
-    "var_88e4a04f": "#hash_2d0d19f4017e5609"
+    "taskname": "#hash_2c359fa6ec8bd26e",
+    "descsimple": "#hash_2d0d19f4017e5609"
 }

@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_when_injured",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_kill_enemy_when_injured",
-    "var_8645ce54": "#hash_743139e8b48fd7c1",
+    "stringref": "#hash_743139e8b48fd7c1",
     "iconlarge": "#hash_45156cd1e82a633b"
 }

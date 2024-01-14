@@ -29,7 +29,7 @@
     "model": "#p8_wz_cu_hat_tanker",
     "type": "itemspawnentry",
     "hintstring": "#hash_1943b05edbb6e818",
-    "unlockableitemref": "#hash_2971a6ab940789d4",
+    "unlockableitemref": "#wz_character_nikolai",
     "name": "cu16_item",
     "displayname": "#hash_1943b05edbb6e818",
     "icon": "#hash_423f39a67d2653fa",

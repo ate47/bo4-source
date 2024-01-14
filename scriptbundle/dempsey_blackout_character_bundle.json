@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_2d8ae38ca91f8031",
-    "var_95adb48e": "#hash_5ac31b25f7882663",
-    "var_f3d91b40": "#hash_31c0ad0f49c3e60d",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_2d8ae38ca91f8031",
+    "popupimage": "#hash_5ac31b25f7882663",
+    "nametext": "#hash_31c0ad0f49c3e60d",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "dempsey_blackout_character_bundle",
-    "var_ba6ab463": "#hash_3e04cea4bbfd5737",
+    "desctext": "#hash_3e04cea4bbfd5737",
     "previewimage": "#hash_66c0ad55aa76f9c2",
-    "var_fc228068": "#hash_183d05d18a224bed"
+    "reserveimage": "#hash_183d05d18a224bed"
 }

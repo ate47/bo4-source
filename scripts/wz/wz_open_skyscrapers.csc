@@ -4,7 +4,7 @@
 #using scripts\wz_common\wz_asylum.csc;
 #using scripts\wz_common\wz_array_broadcast.csc;
 #using script_58d14a82f7aa9d6d;
-#using script_20d98d310047c954;
+#using scripts\wz_common\wz_nuketown_sign.csc;
 #using scripts\wz_common\wz_buoy_stash.csc;
 #using script_4da75c87643c8b07;
 #using scripts\wz\wz_open_skyscrapers_ffotd.csc;

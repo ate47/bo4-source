@@ -4,6 +4,6 @@
     "name": "t7_hud_medal_kill_enemy_that_is_in_air",
     "backinglarge": "#hash_59cffd7b8f76506d",
     "iconsmall": "#t7_hud_medal_kill_enemy_that_is_in_air",
-    "var_8645ce54": "#hash_67306f5658d33f1c",
+    "stringref": "#hash_67306f5658d33f1c",
     "iconlarge": "#hash_15675f4c7e64b08e"
 }

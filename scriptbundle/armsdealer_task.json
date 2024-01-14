@@ -4,6 +4,6 @@
     "image": "#hash_4495f370e0be3e8c",
     "dailytarget": 20,
     "name": "armsdealer_task",
-    "var_4ef43740": "#hash_210cd018b43004a",
-    "var_88e4a04f": "#hash_183c525b7e99e7e5"
+    "taskname": "#hash_210cd018b43004a",
+    "descsimple": "#hash_183c525b7e99e7e5"
 }

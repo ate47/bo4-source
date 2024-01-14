@@ -1,12 +1,12 @@
 {
     "option_dependencies": [
         {
-            "var_1643d946": "0",
-            "var_6825bdb": "snd_mute_master_volume",
+            "optionvalue": "0",
+            "optionname": "snd_mute_master_volume",
             "operator": "=="
         }
     ],
-    "var_d260763": "#hash_79fda6795137590",
+    "descriptionimage": "#hash_79fda6795137590",
     "description": "#hash_2af2d1283d4b5da6",
     "var_60fcfffa": "#hash_14d7072b1be4a4c",
     "var_10e01ad5": 1,

@@ -5,6 +5,6 @@
     "name": "medal_retrieve_own_tags",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_f951e4367fb425e",
-    "var_8645ce54": "#hash_71604736202c89be",
+    "stringref": "#hash_71604736202c89be",
     "iconlarge": "#hash_1af99667eb7c84ae"
 }

@@ -1,10 +1,10 @@
 {
-    "var_af1e1219": "#hash_5516d6d24dd339e4",
-    "var_95adb48e": "#hash_6fd0d7cf8e1eb5c5",
-    "var_f3d91b40": "#hash_615c3077e0fe80b5",
-    "var_47909c6c": "#hash_30951b5b7749b8df",
+    "buttonimage": "#hash_5516d6d24dd339e4",
+    "popupimage": "#hash_6fd0d7cf8e1eb5c5",
+    "nametext": "#hash_615c3077e0fe80b5",
+    "categorytext": "#hash_30951b5b7749b8df",
     "name": "nomad_detective_outfit_bundle",
-    "var_ba6ab463": "#hash_4dad6063be85329f",
+    "desctext": "#hash_4dad6063be85329f",
     "previewimage": "#hash_105520d5f257c70",
-    "var_fc228068": "#hash_39fd6ca713a3d96c"
+    "reserveimage": "#hash_39fd6ca713a3d96c"
 }

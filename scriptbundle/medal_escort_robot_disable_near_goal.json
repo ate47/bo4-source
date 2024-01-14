@@ -5,6 +5,6 @@
     "name": "medal_escort_robot_disable_near_goal",
     "backinglarge": "#$whitetransparent",
     "iconsmall": "#hash_443f5b5ff77b35e7",
-    "var_8645ce54": "#hash_4e853eea33b50736",
+    "stringref": "#hash_4e853eea33b50736",
     "iconlarge": "#hash_1bcf183ef43823b7"
 }

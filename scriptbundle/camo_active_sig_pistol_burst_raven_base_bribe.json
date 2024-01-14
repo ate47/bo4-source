@@ -1,11 +1,11 @@
 {
     "var_c7bd8867": "#hash_44a39e95faef0a4c",
-    "var_95adb48e": "#hash_2337051c50e5b3c0",
+    "popupimage": "#hash_2337051c50e5b3c0",
     "var_5162d01b": "#hash_2337051c50e5b3c0",
-    "var_f3d91b40": "#hash_5be026b2781b8c9",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#hash_5be026b2781b8c9",
+    "categorytext": "#mpui/bm_bribe",
     "name": "camo_active_sig_pistol_burst_raven_base_bribe",
-    "var_ba6ab463": "#hash_3889b992eb937583",
+    "desctext": "#hash_3889b992eb937583",
     "var_e35e7c74": "#weapon/pistol_burst_t8",
     "var_c1acffb6": "#hash_5be026b2781b8c9"
 }

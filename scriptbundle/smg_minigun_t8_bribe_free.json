@@ -1,10 +1,10 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "var_95adb48e": "#hash_2dd76b6044e2adcd",
+    "popupimage": "#hash_2dd76b6044e2adcd",
     "var_5162d01b": "#hash_2dd76b6044e2adcd",
-    "var_f3d91b40": "#weapon/smg_minigun_t8",
-    "var_47909c6c": "#mpui/bm_bribe",
+    "nametext": "#weapon/smg_minigun_t8",
+    "categorytext": "#mpui/bm_bribe",
     "name": "smg_minigun_t8_bribe_free",
-    "var_ba6ab463": "#hash_4b9655a6c68b3118",
+    "desctext": "#hash_4b9655a6c68b3118",
     "var_c1acffb6": "#weapon/smg_minigun_t8"
 }

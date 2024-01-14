@@ -5,7 +5,7 @@
     "image": "loot_05_ui_icon_blackmarket_stream_jumppack_diner",
     "name": "c_t8_bo_jumpkit_diner",
     "displayname": "#hash_5e575e624443053f",
-    "var_15d11806": "loot_05_ui_icon_blackmarket_stream_jumppack_diner",
+    "preview_image": "loot_05_ui_icon_blackmarket_stream_jumppack_diner",
     "var_4fa85a25": "dfxt_hwy",
     "parachute": "c_t8_bo_parachute_diner"
 }
