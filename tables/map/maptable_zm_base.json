@@ -38,7 +38,7 @@
         {
             "uniqueID": 4,
             "name": "zm_quickplay",
-            "hashname": "#hash_12b132eb33b03b1e",
+            "hashname": "#zm_quickplay",
             "missionName": "zm_quickplay",
             "mapName": "#hash_1f6a84783744b749",
             "rootMapName": "#hash_1f6a84783744b749",

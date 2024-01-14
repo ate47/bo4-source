@@ -246,7 +246,7 @@
         {
             "uniqueID": 279,
             "name": "mp_quickplay",
-            "hashname": "#hash_29a9e4ba3c7930c6",
+            "hashname": "#mp_quickplay",
             "missionName": "mp_quickplay",
             "mapName": "#hash_1f6a84783744b749",
             "rootMapName": "#hash_1f6a84783744b749",

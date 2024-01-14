@@ -203,8 +203,8 @@
         },
         {
             "index": 33,
-            "name": "#hash_29a9e4ba3c7930c6",
-            "baseMapName": "#hash_29a9e4ba3c7930c6",
+            "name": "#mp_quickplay",
+            "baseMapName": "#mp_quickplay",
             "mapPlatformMask": 7
         },
         {
@@ -221,8 +221,8 @@
         },
         {
             "index": 36,
-            "name": "#hash_48f3b4df4155ad8a",
-            "baseMapName": "#hash_48f3b4df4155ad8a",
+            "name": "#wz_quickplay",
+            "baseMapName": "#wz_quickplay",
             "mapPlatformMask": 7
         },
         {
@@ -269,8 +269,8 @@
         },
         {
             "index": 44,
-            "name": "#hash_12b132eb33b03b1e",
-            "baseMapName": "#hash_12b132eb33b03b1e",
+            "name": "#zm_quickplay",
+            "baseMapName": "#zm_quickplay",
             "mapPlatformMask": 7
         },
         {
@@ -287,8 +287,8 @@
         },
         {
             "index": 47,
-            "name": "#hash_e87a26eb692a965",
-            "baseMapName": "#hash_e87a26eb692a965",
+            "name": "#zm_blue",
+            "baseMapName": "#zm_blue",
             "mapPlatformMask": 7
         },
         {
@@ -513,7 +513,7 @@
             "index": 35,
             "name": "#hash_65c3878c312e5616",
             "description": "#hash_723e134bac793baa",
-            "mode": "#hash_2b2c16666776fa6f"
+            "mode": "#dom_dm"
         },
         {
             "index": 36,
@@ -573,7 +573,7 @@
             "index": 45,
             "name": "#hash_b49cf17516efb31",
             "description": "#hash_1f6a84783744b749",
-            "mode": "#hash_5a231fa57ed9fd36"
+            "mode": "#quickplay_mp"
         },
         {
             "index": 46,
@@ -663,13 +663,13 @@
             "index": 60,
             "name": "#hash_1b7a6f5e4f3b8fc9",
             "description": "#hash_434fcdcdc9d78e67",
-            "mode": "#hash_686c5fc1e54a33d8"
+            "mode": "#warzone_spectre_rising_quads"
         },
         {
             "index": 61,
             "name": "#hash_5c25f053ddefa339",
             "description": "#hash_434fcdcdc9d78e67",
-            "mode": "#hash_43c3d775a9028bbd"
+            "mode": "#warzone_ambush_v2_quad"
         },
         {
             "index": 62,
@@ -681,7 +681,7 @@
             "index": 63,
             "name": "#hash_3acd3f42b1cd9dad",
             "description": "#hash_478cdde7f189a9ea",
-            "mode": "#hash_2d1466687a306489"
+            "mode": "#warzone_ambush_v2_solo"
         },
         {
             "index": 64,
@@ -693,25 +693,25 @@
             "index": 65,
             "name": "#hash_4149211ebd26d789",
             "description": "#hash_1f6a84783744b749",
-            "mode": "#hash_5a012da57ebd2e9a"
+            "mode": "#quickplay_wz"
         },
         {
             "index": 66,
             "name": "#hash_252ed9dbfaed3a5c",
             "description": "#hash_2a61833adb49a55c",
-            "mode": "#hash_5660bc5490863d28"
+            "mode": "#warzone_escape_duo_dbno"
         },
         {
             "index": 67,
             "name": "#hash_9239ef510a5b6d5",
             "description": "#hash_434fcdcdc9d78e67",
-            "mode": "#hash_d49a3b76a452310"
+            "mode": "#warzone_quad_fog"
         },
         {
             "index": 68,
             "name": "#hash_6e2f9ed0be6869b7",
             "description": "#hash_434fcdcdc9d78e67",
-            "mode": "#hash_72b480a2200dc91"
+            "mode": "#warzone_escape_quad_dbno_hzc"
         },
         {
             "index": 69,
@@ -729,13 +729,13 @@
             "index": 71,
             "name": "#hash_771a34e8c0288e8f",
             "description": "#hash_2a61833adb49a55c",
-            "mode": "#hash_2c57519c43eddfa"
+            "mode": "#warzone_ambush_v2_duo"
         },
         {
             "index": 72,
             "name": "#hash_422053306eab4ca2",
             "description": "#hash_49d016aef2b58ce0",
-            "mode": "#hash_573cbf0a40120d96"
+            "mode": "#warzone_dbno_duo"
         },
         {
             "index": 73,
@@ -783,7 +783,7 @@
             "index": 80,
             "name": "#hash_53ca52331c381cd3",
             "description": "#hash_1f6a84783744b749",
-            "mode": "#hash_59db3ca57e9c78da"
+            "mode": "#quickplay_zm"
         },
         {
             "index": 81,
@@ -885,7 +885,7 @@
             "index": 97,
             "name": "#hash_3ca62b44c8aef4d5",
             "description": "#hash_434fcdcdc9d78e67",
-            "mode": "#hash_6ac6242bee2377ae"
+            "mode": "#warzone_weapons_test"
         },
         {
             "index": 98,
@@ -903,19 +903,19 @@
             "index": 100,
             "name": "#hash_6cbfaca8c801be4c",
             "description": "#hash_434fcdcdc9d78e67",
-            "mode": "#hash_1f97729aaa48a9ad"
+            "mode": "#warzone_escape_cqf_quads"
         },
         {
             "index": 101,
             "name": "#hash_690e6b17b8b88f55",
             "description": "#hash_2a61833adb49a55c",
-            "mode": "#hash_53936d7bfc2f60f5"
+            "mode": "#warzone_escape_cqf_duo"
         },
         {
             "index": 102,
             "name": "#hash_85e8d969c3cacac",
             "description": "#hash_478cdde7f189a9ea",
-            "mode": "#hash_2c13fdfa2a0446cc"
+            "mode": "#warzone_escape_cqf_solo"
         },
         {
             "index": 103,
@@ -26086,7 +26086,7 @@
                     "rules": [],
                     "rotationList": [
                         {
-                            "map": "#hash_29a9e4ba3c7930c6",
+                            "map": "#mp_quickplay",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_b49cf17516efb31",
                             "weight": 1,
@@ -38134,7 +38134,7 @@
                     "rules": [],
                     "rotationList": [
                         {
-                            "map": "#hash_48f3b4df4155ad8a",
+                            "map": "#wz_quickplay",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_4149211ebd26d789",
                             "weight": 1,
@@ -39660,7 +39660,7 @@
                     "rules": [],
                     "rotationList": [
                         {
-                            "map": "#hash_48f3b4df4155ad8a",
+                            "map": "#wz_quickplay",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_4149211ebd26d789",
                             "weight": 1,
@@ -39702,7 +39702,7 @@
                     "rules": [],
                     "rotationList": [
                         {
-                            "map": "#hash_48f3b4df4155ad8a",
+                            "map": "#wz_quickplay",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_4149211ebd26d789",
                             "weight": 1,
@@ -39744,7 +39744,7 @@
                     "rules": [],
                     "rotationList": [
                         {
-                            "map": "#hash_48f3b4df4155ad8a",
+                            "map": "#wz_quickplay",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_4149211ebd26d789",
                             "weight": 1,
@@ -39786,7 +39786,7 @@
                     "rules": [],
                     "rotationList": [
                         {
-                            "map": "#hash_48f3b4df4155ad8a",
+                            "map": "#wz_quickplay",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_4149211ebd26d789",
                             "weight": 1,
@@ -39828,7 +39828,7 @@
                     "rules": [],
                     "rotationList": [
                         {
-                            "map": "#hash_48f3b4df4155ad8a",
+                            "map": "#wz_quickplay",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_4149211ebd26d789",
                             "weight": 1,
@@ -42685,7 +42685,7 @@
                     "rules": [],
                     "rotationList": [
                         {
-                            "map": "#hash_12b132eb33b03b1e",
+                            "map": "#zm_quickplay",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_53ca52331c381cd3",
                             "weight": 1,
@@ -52381,7 +52381,7 @@
                     ],
                     "rotationList": [
                         {
-                            "map": "#hash_e87a26eb692a965",
+                            "map": "#zm_blue",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_59737db3dbdcb288",
                             "weight": 1,
@@ -52488,7 +52488,7 @@
                     ],
                     "rotationList": [
                         {
-                            "map": "#hash_e87a26eb692a965",
+                            "map": "#zm_blue",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_59737db3dbdcb288",
                             "weight": 1,
@@ -52595,7 +52595,7 @@
                     ],
                     "rotationList": [
                         {
-                            "map": "#hash_e87a26eb692a965",
+                            "map": "#zm_blue",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_59737db3dbdcb288",
                             "weight": 1,
@@ -52702,7 +52702,7 @@
                     ],
                     "rotationList": [
                         {
-                            "map": "#hash_e87a26eb692a965",
+                            "map": "#zm_blue",
                             "mapPlatformMask": 7,
                             "gametype": "#hash_59737db3dbdcb288",
                             "weight": 1,
@@ -53115,7 +53115,7 @@
         },
         {
             "index": 13,
-            "name": "#hash_8d26307b5735c87",
+            "name": "#qa",
             "description": "#hash_3a78b428f8cdcd66",
             "lobbyMainMode": -1,
             "hidden": false,
@@ -57524,7 +57524,7 @@
         },
         {
             "index": 16,
-            "name": "#hash_3d00e0c44f405d5f",
+            "name": "#wz escape",
             "description": "#hash_6bb0623bf9033566",
             "lobbyMainMode": 3,
             "hidden": false,
@@ -59076,7 +59076,7 @@
         },
         {
             "index": 17,
-            "name": "#hash_c1dd057017ce0f4",
+            "name": "#beenox",
             "description": "#hash_6e4088a0fdb9f671",
             "lobbyMainMode": -1,
             "hidden": false,
@@ -60336,7 +60336,7 @@
         },
         {
             "index": 18,
-            "name": "#hash_594e0290fd315683",
+            "name": "#cert",
             "description": "#hash_17b94858fbc543b2",
             "lobbyMainMode": -1,
             "hidden": false,
@@ -60742,7 +60742,7 @@
         },
         {
             "index": 19,
-            "name": "#hash_5bc8176094a2cd2",
+            "name": "#dev 2",
             "description": "#hash_52e7304dacd3c5a3",
             "lobbyMainMode": -1,
             "hidden": false,
