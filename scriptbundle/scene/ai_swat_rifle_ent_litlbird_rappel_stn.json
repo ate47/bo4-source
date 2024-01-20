@@ -1,0 +1,83 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_base_01",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#spawner_mp_swat_buddy_team1_male",
+            "type": "actor",
+            "name": "actor 1",
+            "aligntarget": "tag_align"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_base_02",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#spawner_mp_swat_buddy_team1_male",
+            "type": "actor",
+            "name": "actor 2",
+            "aligntarget": "tag_align"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_base_03",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#spawner_mp_swat_buddy_team1_male",
+            "type": "actor",
+            "name": "actor 3",
+            "aligntarget": "tag_align"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_vehicle2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1",
+                    "aligntarget": "tag_align"
+                }
+            ],
+            "model": "#hash_3b01d9d0e5525c7e",
+            "type": "vehicle",
+            "name": "vehicle 1",
+            "aligntarget": "tag_align_drop_point"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "ai_swat_rifle_ent_litlbird_rappel_stn",
+    "dontsync": 1,
+    "team": "any"
+}

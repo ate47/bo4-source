@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_42b67c357eedaa78",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4cbf7864e2bc349c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_6afd23de8bfd39f1",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_orange_reel_to_reel_recorder_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,42 @@
+{
+    "weakpoints": [
+        {
+            "hitloc": "helmet",
+            "var_641ce20e": 1,
+            "type": "#armor",
+            "var_51e8b151": "j_head",
+            "activebydefault": 1,
+            "var_b7fbe51b": 15,
+            "health": 0.08
+        },
+        {
+            "hitloc": "head",
+            "var_8223b0cf": 2,
+            "type": "#weakpoint",
+            "var_51e8b151": "j_head",
+            "var_b7fbe51b": 15,
+            "health": 1
+        },
+        {
+            "var_8223b0cf": 2,
+            "type": "#weakpoint",
+            "var_51e8b151": "tag_back_ws",
+            "activebydefault": 1,
+            "var_b7fbe51b": 25,
+            "health": 1
+        },
+        {
+            "var_8223b0cf": 2,
+            "type": "#weakpoint",
+            "var_51e8b151": "tag_chest_ws",
+            "activebydefault": 1,
+            "var_b7fbe51b": 15,
+            "health": 1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "model": "#hash_1772efefad4f8b81",
+    "type": "characterweakpointsettings",
+    "name": "c_t8_zmb_gegenees_weakpoint_def",
+    "var_96a09826": 4
+}

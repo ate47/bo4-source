@@ -1,0 +1,65 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2aa522437292029f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5453e4c6ed4bd8cf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "var_9de1f44c": 1,
+            "model": "#hash_69700e065f59d19f",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "boneyjones"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_640cdaf1ff67a0fb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6a28afdad4a0e00b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "var_9de1f44c": 1,
+            "model": "#p8_zm_zod_hat_crew_01",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "boneyshat"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_zod_base_drvr_01",
+    "dontsync": 1,
+    "team": "any"
+}

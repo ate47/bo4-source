@@ -1,0 +1,65 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3d77b8326975301c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_3c7ad3f215cfc8d5",
+            "type": "vehicle",
+            "deletewhenfinished": 1,
+            "name": "vehicle 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_534ba6a0daa69b33",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_3c7ad3f215cfc8d5",
+            "type": "vehicle",
+            "deletewhenfinished": 1,
+            "name": "vehicle 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_395f881c27619c42",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_7774be8a9a5c21ad",
+            "type": "vehicle",
+            "deletewhenfinished": 1,
+            "name": "vehicle 3"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_seaside_tanks_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,161 @@
+{
+    "zombiesplitmdls": [
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_male_body1",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_male_body1_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_male_body2",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_male_body2_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_male_body3",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_male_body3_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_male_body3_skin2",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_male_body3_skin2_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_male_body1",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_male_body1_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_male_body2",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_male_body2_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_male_body3",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_male_body3_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_female_body1",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_female_body1_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_female_body1_skin2",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_female_body1_split_skin2"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_female_body1_skin3",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_female_body1_split_skin3"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_female_body1_skin4",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_female_body1_split_skin4"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_female_body1_skin5",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_female_body1_split_skin5"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_female_body1_skin6",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_female_body1_split_skin6"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_crew_sailor_body1",
+            "var_cdf1f53d": "c_t8_zmb_crew_sailor_body1_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_crew_sailor_body2",
+            "var_cdf1f53d": "c_t8_zmb_crew_sailor_body2_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_crew_officer_body1",
+            "var_cdf1f53d": "c_t8_zmb_crew_officer_body1_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_2ndclass_female_body1",
+            "var_cdf1f53d": "c_t8_zmb_2ndclass_female_body1_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_2ndclass_female_body2",
+            "var_cdf1f53d": "c_t8_zmb_2ndclass_female_body2_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_2ndclass_female_body3",
+            "var_cdf1f53d": "c_t8_zmb_2ndclass_female_body3_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_female_body1",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_female_body1_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_female_body2",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_female_body2_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_female_body3",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_female_body3_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_male_body3_skin3",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_male_body3_skin3_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_male_body4",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_male_body4_split"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_male_body4_skin2",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_male_body4_split_skin2"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_3rdclass_male_body4_skin3",
+            "var_cdf1f53d": "c_t8_zmb_3rdclass_male_body4_split_skin3"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_male_body1_skin2",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_male_body1_split_skin2"
+        },
+        {
+            "var_a3c9023c": "#c_t8_zmb_1stclass_male_body1_skin3",
+            "var_cdf1f53d": "c_t8_zmb_1stclass_male_body1_split_skin3"
+        }
+    ],
+    "var_9c0ebe1e": 5000,
+    "var_ead9d81d": 150,
+    "var_984d7701": 4000,
+    "var_58ac6ec4": 5000,
+    "var_f3af70e6": 128,
+    "var_10460f1e": 1,
+    "var_145b14e6": 200,
+    "var_1803b87d": 72,
+    "var_a20f8eb8": 1,
+    "var_fa6a417c": 28,
+    "var_922067c4": "scriptbundle",
+    "var_95922bb3": 17,
+    "var_1b213165": 3594,
+    "var_c7d67645": 5000,
+    "var_35692434": 125,
+    "var_f00dd43c": 1.5,
+    "var_803e192e": 3,
+    "var_33236cb0": 3,
+    "maxhealth": 100,
+    "var_10a535a6": 2000,
+    "var_fe586e50": 110,
+    "var_51ce117f": 2,
+    "var_fc420d71": 1,
+    "var_2a523c14": 72,
+    "var_ce7e1def": 0.25,
+    "name": "zm_zod_zombie_settings",
+    "var_65b97e5e": 2,
+    "minhealth": 100,
+    "var_628192b0": 1,
+    "var_250a1683": 100,
+    "var_bacb0199": 2,
+    "var_6e7acfb4": 1.5,
+    "var_97b22faa": 1,
+    "damagescale": 1,
+    "category": "#basic",
+    "var_c9e47b3f": 250,
+    "var_febbf56f": 96,
+    "var_57140ac3": 150,
+    "var_baa0ac60": 64,
+    "stunduration": 4,
+    "var_746e06db": 200,
+    "var_c30a9dc5": 160,
+    "var_450edb3b": 1,
+    "var_cbf14156": 312,
+    "var_ea39f524": 5000
+}

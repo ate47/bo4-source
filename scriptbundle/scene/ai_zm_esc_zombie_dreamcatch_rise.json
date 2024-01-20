@@ -1,0 +1,50 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63b4cd35d1395ee0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "impact"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3d37fb37e7aa965f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "rise",
+                    "blend": 0.2
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5cf0148153f802a7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shrink",
+                    "blend": 0.2
+                }
+            ],
+            "firstframe": 1,
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "delaymovementatend": 1,
+            "var_615b1f16": 1,
+            "name": "zombie_eaten"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "ai_zm_esc_zombie_dreamcatch_rise",
+    "dontsync": 1,
+    "team": "any"
+}

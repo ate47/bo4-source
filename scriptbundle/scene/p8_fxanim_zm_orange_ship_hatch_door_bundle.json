@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_181a87027c70bdc0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_74e2f141c97d872",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                }
+            ],
+            "model": "#hash_7a3f48aa9151ce51",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_orange_ship_hatch_door_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

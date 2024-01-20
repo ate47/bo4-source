@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_720a1cf7f2640493",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "show"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_578957e9a80048e6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "hide"
+                }
+            ],
+            "model": "#hash_12c440fab2430124",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_orange_pap_animator_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,60 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_zm_towers_chaos_pustule_idle_anim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init",
+                    "var_1c7fbd6b": "#hash_6c41b69caac32c4a"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_23cc2bd16dc43807",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "damage01",
+                    "var_1c7fbd6b": "#hash_7a7adcbe561969a2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_f1478ab63c00e64",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "damage02",
+                    "var_1c7fbd6b": "#hash_74b948c7d152f457"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5615e16d97b5775",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "damage03",
+                    "var_1c7fbd6b": "#hash_ba602a1891743d4"
+                }
+            ],
+            "model": "#hash_6c41b69caac32c4a",
+            "type": "prop",
+            "name": "blight_blister",
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_towers_chaos_pustule_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

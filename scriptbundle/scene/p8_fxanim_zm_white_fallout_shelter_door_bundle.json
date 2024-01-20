@@ -1,0 +1,45 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5cdb28613d1729f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6fe26db67e7ef975",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3fc2c91233420ed5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fall_open"
+                }
+            ],
+            "model": "#hash_5dc52bc73c6a9fac",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_white_fallout_shelter_door_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

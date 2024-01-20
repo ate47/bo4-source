@@ -1,0 +1,232 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "name": "init"
+                },
+                {
+                    "name": "start"
+                },
+                {
+                    "name": "idle"
+                },
+                {
+                    "name": "scan"
+                },
+                {
+                    "name": "shake"
+                },
+                {
+                    "name": "yawn"
+                },
+                {
+                    "name": "look right"
+                },
+                {
+                    "name": "look front"
+                },
+                {
+                    "name": "look left"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6f9a09c35e3a1500",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "eat right",
+                    "blend": 0.2
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6f9a1dc35e3a36fc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "eat front",
+                    "blend": 0.2
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6f9a27c35e3a47fa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "eat left",
+                    "blend": 0.2
+                },
+                {
+                    "name": "depart"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "var_f9a5853f": 1,
+            "var_615b1f16": 1,
+            "name": "zombie_eaten"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4ed745f21204f146",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4ed745f21204f146",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_99307441fccfade",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_72f71cd9c95caec0",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_99307441fccfade",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "scan",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_677796da85166d6d",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_99307441fccfade",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shake",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_457b328675e9949a",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_99307441fccfade",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "yawn",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_29c43011c4c7eb80",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "look right",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_29c44411c4c80d7c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "look front",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_29c44e11c4c81e7a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "look left",
+                    "blend": 0.5
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78ae24818001fe3d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "eat right",
+                    "blend": 0.2
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78ae3081800212a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "eat front",
+                    "blend": 0.2
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78ae2681800201a3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "eat left",
+                    "blend": 0.2
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6f83ff7ae6ae6657",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "depart",
+                    "blend": 0.2
+                }
+            ],
+            "firstframe": 1,
+            "model": "#c_t8_zmb_mob_wolf_head",
+            "type": "prop",
+            "name": "wolf_head"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "ai_zm_mob_zombie_dreamcatcher",
+    "dontsync": 1,
+    "team": "any"
+}

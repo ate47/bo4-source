@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7a9be334a3e6740c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "grow"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7539c00336b66933",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "regrow"
+                }
+            ],
+            "model": "#hash_a11ca1ce5ede5d5",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_gaia_sprout_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

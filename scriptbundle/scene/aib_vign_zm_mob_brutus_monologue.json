@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_401be090c3cc8296",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_785a815258b35ad1",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "brutus",
+            "removeweapon": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_brutus_monologue",
+    "dontsync": 1,
+    "aligntarget": "tag_align_escape_cell_block",
+    "team": "any"
+}

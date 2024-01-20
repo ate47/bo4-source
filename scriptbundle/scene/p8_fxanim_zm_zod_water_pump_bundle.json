@@ -1,0 +1,46 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_77f084260d41c12d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_a5994b0edf7a830",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "on"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c1c8aff6df2a5ce",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "end"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_zm_zod_water_pump",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_zod_water_pump_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

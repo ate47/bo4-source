@@ -1,0 +1,45 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_356cf61f1b947ac2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2f874b53cd9f9498",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_49f299ae7f935db4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "close"
+                }
+            ],
+            "model": "#hash_222e0b7a7f2267b9",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_zm_whi_apd_door_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

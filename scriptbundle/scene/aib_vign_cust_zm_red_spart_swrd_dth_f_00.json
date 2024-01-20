@@ -1,0 +1,33 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1f772cd409796112",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_2b99709bc1330cbd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "collapse"
+                }
+            ],
+            "model": "#hash_636351360ea43df7",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "actor 1",
+            "allowdeath": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_spart_swrd_dth_f_00",
+    "dontsync": 1,
+    "team": "any"
+}

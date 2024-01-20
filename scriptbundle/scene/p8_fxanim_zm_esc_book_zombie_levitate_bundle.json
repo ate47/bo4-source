@@ -1,0 +1,109 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6642309781e37eac",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6642309781e37eac",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5f1ab9bc01723a47",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_ad7c30a297f74d0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "in"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63e68939c8552b9a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "out"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_6f2522399ac0b6da",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "book"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5771dad788327738",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5771dad788327738",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "start"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4eaa47c83b91ba23",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_47b8c2589b3f575c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "in"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_64ae749344989afe",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "out"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_146127a08f9210e1",
+            "type": "prop",
+            "name": "pebble"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_book_zombie_levitate_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

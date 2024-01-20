@@ -1,0 +1,54 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7533027aa665dece",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "feather03_float"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7346c663ed37ee05",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "feather03_gust"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3aa2c0aa6570aa93",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "feather03_fall"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_83ac683a65dfda8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "feather03_slot03"
+                }
+            ],
+            "model": "#p8_fxanim_zm_red_ouranos_feather_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_ouranos_feather_03_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

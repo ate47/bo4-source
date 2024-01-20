@@ -1,0 +1,34 @@
+{
+    "itemlist": [
+        {
+            "minweight": 1,
+            "var_a6762160": "sniper_fastrechamber_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "sniper_powerbolt_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "sniper_quickscope_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        },
+        {
+            "minweight": 1,
+            "var_a6762160": "sniper_powersemi_t8_wallbuy_item",
+            "maxweight": 1,
+            "available": -1
+        }
+    ],
+    "var_922067c4": "scriptbundle",
+    "type": "itemspawnlist",
+    "var_345eba59": 4,
+    "var_9b009839": -1,
+    "name": "wz_escape_wallbuy_guns_sniper",
+    "var_fde72c94": 100
+}

@@ -1,0 +1,20 @@
+{
+    "var_4050486a": "#hash_2a941f3e7eaeef08",
+    "var_4dbc4aee": "#hash_4585580f3e752083",
+    "var_922067c4": "scriptbundle",
+    "result": "weapon#hash_42091433870f2e63",
+    "type": "craftblueprint",
+    "var_e414062": -12,
+    "var_99577dd3": "weapon#hash_7beea4d76271620d",
+    "var_670f9944": "weapon#hash_7d5344dc89a29252",
+    "var_2e0a273a": "weapon#hash_545160e7d44dc3a7",
+    "name": "zblueprint_acid_gat_build_kit",
+    "displayname": "Acid Gat Kit",
+    "var_db27a7f7": "p8_zm_esc_acid_gat_blue_print_01",
+    "var_391591d0": "#hash_525ed846dd9b3e0e",
+    "var_46309255": "one_time_craft",
+    "var_abd9b2d0": "#hash_525ed846dd9b3e0e",
+    "var_f4a82731": 3,
+    "var_c028dcfe": 1,
+    "var_318c150c": "section_wonder_weapon"
+}

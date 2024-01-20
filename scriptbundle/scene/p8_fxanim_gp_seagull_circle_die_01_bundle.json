@@ -1,0 +1,29 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4719de1749a555d8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_7defc77aa593e72e",
+            "type": "prop",
+            "var_a1c5c678": 1,
+            "name": "prop 1",
+            "var_873368a8": 1000
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_seagull_circle_die_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

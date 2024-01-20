@@ -1,0 +1,16 @@
+{
+    "amount": 5,
+    "var_922067c4": "scriptbundle",
+    "weapon": "weapon#eq_grapple_wz",
+    "type": "itemspawnentry",
+    "var_e6ac0592": -75,
+    "name": "grapple_wz_item",
+    "stackcount": 5,
+    "icon": "#hash_660dddffebb9984d",
+    "modelscale": 1,
+    "rarity": "None",
+    "handler": "#hash_2cbf15cbb314c93e",
+    "stackable": 1,
+    "var_50773731": 1.5,
+    "itemtype": "equipment"
+}

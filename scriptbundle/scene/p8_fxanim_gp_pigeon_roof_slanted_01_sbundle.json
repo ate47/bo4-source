@@ -1,0 +1,66 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7e2b68590d0095bf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_43581ab456bdada1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.1,
+                    "var_132c9791": 1,
+                    "var_b3dddfd3": 1,
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_39fcc7deb91a9d59",
+            "type": "prop",
+            "var_a1c5c678": 1,
+            "name": "prop 1",
+            "var_873368a8": 10,
+            "aligntargettag": "link_jnt",
+            "allowdeath": 1,
+            "aligntarget": "pigeon_walk_01",
+            "takedamage": 1
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_43e898ce83559711",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 1,
+                    "spacermax": 5,
+                    "name": "shot 1"
+                },
+                {
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_383804c236f4b608",
+            "type": "prop",
+            "name": "pigeon_walk_01"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_gp_pigeon_roof_slanted_01_sbundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,50 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_16dd17372ca12ad7",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_4a8630b8c2575133",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_134d59c3634bc627",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_41125de86303433c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#hash_65d6f58fcdc81493",
+            "type": "prop",
+            "name": "arm_grasp",
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_tplt_zm_arm_grasp_02",
+    "dontsync": 1,
+    "team": "any"
+}

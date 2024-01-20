@@ -1,0 +1,120 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3afbcf94a65e5e97",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27edf84d7fdb91",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num0"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27ecf84d7fd9de",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27ebf84d7fd82b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27eaf84d7fd678",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27f1f84d7fe25d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27f0f84d7fe0aa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27eff84d7fdef7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27eef84d7fdd44",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27e5f84d7fcdf9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c27e4f84d7fcc46",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "num9"
+                }
+            ],
+            "model": "#hash_62d98bb6be4fc64c",
+            "type": "prop",
+            "vmtype": "server",
+            "name": "code_mech",
+            "var_132e5621": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "server",
+    "name": "p8_fxanim_zm_office_code_mech_bundle",
+    "ignorestreamer": 1,
+    "team": "any"
+}

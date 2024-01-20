@@ -1,0 +1,42 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "p8_fxanim_zm_esc_recreationyard_rocks_a_in_sanim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle in loop"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "p8_fxanim_zm_esc_recreationyard_rocks_a_sanim",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "p8_fxanim_zm_esc_recreationyard_rocks_a_out_sanim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "main & idle loop out"
+                }
+            ],
+            "issiege": 1,
+            "firstframe": 1,
+            "model": "#hash_53227efab8f7584b",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_recreationyard_rocks_a_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

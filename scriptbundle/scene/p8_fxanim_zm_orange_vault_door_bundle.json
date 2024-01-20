@@ -1,0 +1,45 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_772b1a1ef2ca3d21",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2215e1ee950b1bdb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5c09bf6324783dea",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "open_fast"
+                }
+            ],
+            "model": "#hash_7ad2e1af45e81972",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_orange_vault_door_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

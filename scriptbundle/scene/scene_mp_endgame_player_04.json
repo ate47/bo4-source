@@ -1,0 +1,44 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_rifle_endgame_3rdplace_idle",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "ui_cam_endgame_mp_apartments",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sb_mp_endgame_player_05_play"
+                }
+            ],
+            "model": "#c_t7_mp_technomancer_mpc_fb1_skin1",
+            "type": "player",
+            "name": "topplayer1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "ui_cam_endgame_mp_apartments"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_mp_endgame_player_04",
+    "dontsync": 1,
+    "aligntarget": "tag_align",
+    "team": "any"
+}

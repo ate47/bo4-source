@@ -4529,7 +4529,7 @@ weapon,ray_gun_mk2z_wz,2a8891eb4e8
 weapon,dart_turret_wz,2a889075018
 weapon,spectre_grenade_wz,2a889113848
 weapon,hash_3c9c275a76da54d3,2a8890ff898
-weapon,hash_3d794b7e34cf01c9,2a889100de8
+weapon,eq_grapple_wz,2a889100de8
 weapon,hatchet_wz,2a88913f798
 weapon,hash_3f8cbb548898a466,2a88911cd78
 weapon,ww_crossbow_t8_wz,2a88911e2c8
@@ -12564,7 +12564,7 @@ objective,hash_34a0ac740c9d0bc2,0
 objective,hash_355b3d372247bed2,0
 objective,hardpoint,0
 objective,hash_3825c7c4edf14581,0
-objective,hash_38d49d6c96840472,0
+objective,allies_flag,0
 objective,teammate_waypoint,0
 objective,hash_3a64e972390f43aa,0
 objective,hash_3b89cb8a8a9bb8a3,0
@@ -12581,7 +12581,7 @@ objective,deployable_cover,0
 objective,spawngroup_a,0
 objective,spawngroup_b,0
 objective,spawngroup_c,0
-objective,hash_46ea7f29fe9ad753,0
+objective,control_2,0
 objective,control_1,0
 objective,control_0,0
 objective,pickup_ammo,0

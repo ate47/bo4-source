@@ -1,0 +1,19 @@
+{
+    "packageitems": [
+        {
+            "item": "#helicopter_comlink"
+        }
+    ],
+    "var_ef921c3c": 1,
+    "var_922067c4": "scriptbundle",
+    "type": "bountyhunterpackage",
+    "var_85d7cf08": 1,
+    "name": "package_chopper",
+    "packagetype": "scorestreak",
+    "purchasecost": 8000,
+    "startammo": 2,
+    "var_673a16ad": 1,
+    "var_741010b5": 1,
+    "var_782dbf79": 1,
+    "var_767b7337": 1
+}

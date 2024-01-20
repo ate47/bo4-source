@@ -1,0 +1,181 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_27d8ba3d015f055e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3db65b6bbf08243b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_no_power"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fdc8d43b4a0cc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_0"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fdd8d43b4a27f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fde8d43b4a432",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fdf8d43b4a5e5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fd88d43b49a00",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fd98d43b49bb3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fda8d43b49d66",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_6"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fdb8d43b49f19",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_7"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fe48d43b4ae64",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_8"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_76fe58d43b4b017",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_9"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_773628d43b7ba55",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_10"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_773618d43b7b8a2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_11"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_773608d43b7b6ef",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_12"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7735f8d43b7b53c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_13"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7735e8d43b7b389",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_14"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7735d8d43b7b1d6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "state_15"
+                }
+            ],
+            "model": "#hash_79e0a27badd506c9",
+            "type": "prop",
+            "name": "console"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "p8_fxanim_zm_off_console_standing_03_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

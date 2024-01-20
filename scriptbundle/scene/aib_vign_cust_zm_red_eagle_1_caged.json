@@ -1,0 +1,46 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_55aaa3298be9d9d6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5dede068477c57b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "cage_drop"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6bdc413ee767d7e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "ground_waiting"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_3836076c978b4c35",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_eagle_1_caged",
+    "dontsync": 1,
+    "team": "any"
+}

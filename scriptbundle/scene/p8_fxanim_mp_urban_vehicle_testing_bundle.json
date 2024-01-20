@@ -1,0 +1,39 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_121ac2cdbbf067cd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3399e1a3993f4502",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 20,
+                    "spacermax": 45,
+                    "name": "shot 2"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_mp_urban_vehicle_testing_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_urban_vehicle_testing_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

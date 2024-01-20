@@ -1,0 +1,41 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "p8_fxanim_zm_esc_wires_catwalk_loop_sanim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "loop"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "p8_fxanim_zm_esc_wires_catwalk_shocked_sanim",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "p8_fxanim_zm_esc_wires_catwalk_loop_sanim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shocked"
+                }
+            ],
+            "issiege": 1,
+            "model": "#hash_40fd73109a4d7504",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "polishing",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_wires_catwalk_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

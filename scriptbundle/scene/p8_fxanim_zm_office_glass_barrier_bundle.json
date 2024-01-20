@@ -1,0 +1,108 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4e08c69998202ceb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 1,
+                    "var_b3dddfd3": 1,
+                    "devstate": "initial",
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c7d73b59cc0b8db",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.85,
+                    "var_b3dddfd3": 1,
+                    "devstate": "initial",
+                    "name": "stage1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c7d74b59cc0ba8e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.7,
+                    "var_b3dddfd3": 1,
+                    "devstate": "initial",
+                    "name": "stage2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c7d75b59cc0bc41",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.55,
+                    "var_b3dddfd3": 1,
+                    "devstate": "initial",
+                    "name": "stage3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c7d76b59cc0bdf4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.4,
+                    "var_b3dddfd3": 1,
+                    "devstate": "initial",
+                    "name": "stage4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c7d77b59cc0bfa7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.25,
+                    "var_b3dddfd3": 1,
+                    "devstate": "initial",
+                    "name": "stage5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c7d78b59cc0c15a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.05,
+                    "var_b3dddfd3": 1,
+                    "devstate": "initial",
+                    "name": "stage6"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_19bf6ff7c5e07ce3",
+            "type": "prop",
+            "name": "glass",
+            "var_873368a8": 1000,
+            "var_2baad8fc": 1,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "both",
+    "name": "p8_fxanim_zm_office_glass_barrier_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

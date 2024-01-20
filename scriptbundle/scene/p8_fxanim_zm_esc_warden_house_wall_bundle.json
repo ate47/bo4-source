@@ -1,0 +1,48 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c84c5b2cbb85c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c84c5b2cbb85c49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "damaged"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_68520e36ed0e1605",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "destroyed"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_2f44c609384393de",
+            "type": "prop",
+            "name": "door",
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_warden_house_wall_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

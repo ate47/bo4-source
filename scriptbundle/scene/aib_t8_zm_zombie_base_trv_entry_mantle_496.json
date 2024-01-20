@@ -1,0 +1,38 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_t8_zm_zombie_base_trv_entry_mantle_496",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "default"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_410c56a7e7f82469",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "crawler"
+                }
+            ],
+            "model": "#spawner_zm_zombie",
+            "type": "actor",
+            "name": "actor 1",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_t8_zm_zombie_base_trv_entry_mantle_496",
+    "dontsync": 1,
+    "team": "any"
+}

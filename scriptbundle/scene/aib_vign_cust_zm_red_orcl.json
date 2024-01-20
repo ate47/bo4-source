@@ -1,0 +1,272 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_73438b226d467d80",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "unconscious"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1079f689aa7d5306",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "awaken"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_416b17251b2bd077",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_68a19101668427b4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "tribute"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_447372b3baec3873",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "talk"
+                }
+            ],
+            "model": "#hash_33c8c5f30857855d",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7673565c0d61482a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "unconscious"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3397217745b81d30",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "awaken"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b976e20965b637f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f66e71d79e9b8d6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "tribute"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3aa049500165d0e3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "talk"
+                }
+            ],
+            "model": "#hash_502af76e618170ea",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7673585c0d614b90",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "unconscious"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_33971f7745b819ca",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "awaken"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b978420965b88e1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f66e11d79e9aea4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "tribute"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3aa047500165cd7d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "talk"
+                }
+            ],
+            "model": "#hash_4fc4e36e612a9bbc",
+            "type": "prop",
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6486d9df23c95986",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "unconscious"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_353af49da4fe45c0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "awaken"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4bc4b495e2312a3d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3a704dd72b49d7a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "tribute"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_d0fa2b965c3b079",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "talk"
+                }
+            ],
+            "model": "#hash_54c587e9b539ede",
+            "type": "prop",
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6486f3df23c985b4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "unconscious"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_353b129da4fe78ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "awaken"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4bc4b695e2312da3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3a6e6dd72b46a80",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "tribute"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_d0fbcb965c3dca7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "talk"
+                }
+            ],
+            "model": "#hash_54c587e9b539ede",
+            "type": "prop",
+            "name": "prop 5"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_orcl",
+    "dontsync": 1,
+    "aligntarget": "tag_align_red_temple",
+    "team": "any"
+}

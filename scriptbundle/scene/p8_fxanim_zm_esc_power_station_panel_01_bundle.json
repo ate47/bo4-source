@@ -1,0 +1,41 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_20e41d3d900ce3d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "off"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5a1bb98275dc72b1",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_46544a8dde949659",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 0.05,
+                    "name": "on"
+                }
+            ],
+            "model": "#p8_fxanim_zm_esc_power_station_panel_01_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "polishing",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_power_station_panel_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

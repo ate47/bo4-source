@@ -1,0 +1,2597 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh010_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh020_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh030_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh040_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot040"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh050_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot050"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh060_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot060"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh070_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh100_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh110_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh120_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh130_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh150_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh160_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_office_outro_sh170_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot170"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_207cc5030f2cd892",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9cefa87f7c9ca0d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1b0f1def76219df4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_24c19e0e150ba3d7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_f28a1ce5f9cdeb6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6aeeb2d75848bb61",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5bc6bf95b0bc93d8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7132a7c9cb54a328",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7495825ed8564571",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_743edc2708ace306",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1745bf9c55380167",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3695c984770ef29d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_31ee5831a212c262",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_66f46dcf9a2d84f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_8e427e5d0ca4e20",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f99398e09a89e6c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_68f49d8290169457",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2d45bb153a03ae76",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_605a08a1089b11d9",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_55add1120184e428",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b7ffbb03a2b5a53",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2ae0265359950762",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_32da96dd0f308683",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_795e0a5a5bfb7698",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3ec12b35c5385309",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_652d11f7519795c7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2d4bfe9b042dde9c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_5addef1847ad0334",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_521178b53071d1f2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6dca067d4a906dad",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_a8edeb2d471783a",
+            "type": "prop",
+            "name": "prop 34"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_60c90f205f17f413",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_220f546f3f8df6a0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_519b31595a08fa3d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7a30608891fed3da",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_418c34fbf4d5af0f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_335e0dee09a4ab7c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_502d24acd2d9e089",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45f2794d756cef79",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_24cd73762ad41fec",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5c80e7f57ba3dd3f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c47c742f8774c4a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3035b5fdabed4250",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_597562f7b1d93083",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_10d98d95da3a399e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_aa97a4e4016f037",
+            "type": "prop",
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2c0ee5aa31f6ba3f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1f2bce559b37373c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_d2d65757edbe74d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_669b77da61153fa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_50fad7243a677e3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot050"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_71d183975eeb9e18",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_781f337df514cb49",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_a1b4a6f9aecde19",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_31822983a802cda8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5639596678d7c54b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_69c78e6e0e4dc8ca",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5dd431f1d64f0c8c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1b7bb613cb303d8f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_594549772e38be2e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_12a31abf80c00727",
+            "type": "prop",
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3909f276278f55d7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_649366ed3e978894",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3620c53cddd24499",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_d71998876f882ce",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7ce177e470b85270",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5669b2ec181d30c5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_73e3ffca8dc8fd2a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_bba17b4cd2a55c",
+            "type": "prop",
+            "name": "prop 26"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_35e577252f9747c5",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_27a597a06bea77ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1449aa623a3477c7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2c1b0db929bae3ac",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_373a7b4643603c6e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34b5b905bcc5a3b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_218d23b71862a000",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_65d119ba1f52849e",
+            "type": "prop",
+            "name": "prop 27"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5f405a47e883f31c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6646c354797b3f0b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_343833f86d8b9e66",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_782b46184ff15dad",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f093c261604821f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_61cfc3a7d14005ba",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_56f2c20faace98d1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_4cee49ff333c4150",
+            "type": "prop",
+            "name": "prop 28"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_779463792961367c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_43f05c63b790b957",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_299e3b1ff22bcce2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_56ab9e070d3d872d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_19f47bb474769a6b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_30b35e519cb36736",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_c2c47a5c95cd361",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_29cdcc5b3b3093ab",
+            "type": "prop",
+            "name": "prop 29"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2c6a173850a49049",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5f722400ba334299",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5e0b5712827e5022",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_22e5e680b75be47f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot120"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5eba3aaeea4af588",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot130"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_624bab319528d30e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_346414edbefbf15b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_69e1a49c73655274",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_34f876da4265604",
+            "type": "prop",
+            "name": "prop 9"
+        },
+        {
+            "shots": [
+                {
+                    "cleanupdelete": 1,
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_352a6b60ff123dfd",
+            "type": "prop",
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "cleanupdelete": 1,
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#p7_lab_chemistry_set_microscope",
+            "type": "prop",
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "cleanupdelete": 1,
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_430a2aa76ba687c0",
+            "type": "prop",
+            "name": "prop 7"
+        },
+        {
+            "shots": [
+                {
+                    "cleanupdelete": 1,
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_6395d65fd2e40ad3",
+            "type": "prop",
+            "name": "prop 8"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_449236f99326b655",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2ad9f16ff4ac29f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#p7_wes_door_cell_jail_rustic",
+            "type": "prop",
+            "name": "prop 10"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_43b6bfed8e16880f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_54f24b2ecd765521",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_5eaab964658ecdba",
+            "type": "prop",
+            "name": "prop 11"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_857838925c8990d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_65116b2f8cec65e7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_2889488a8753bc05",
+            "type": "prop",
+            "name": "prop 12"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_857808925c893f4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_65116c2f8cec679a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_2889488a8753bc05",
+            "type": "prop",
+            "name": "prop 13"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_8545b8925c61f3e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_651b5b2f8cf49f3c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_2889458a8753b6ec",
+            "type": "prop",
+            "name": "prop 14"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_8545a8925c61d8b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_651b5e2f8cf4a455",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_2889458a8753b6ec",
+            "type": "prop",
+            "name": "prop 15"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ec59bab405eaea",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_439a196123794d60",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 16"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ec58bab405e937",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_439a1c6123795279",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 17"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ec57bab405e784",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_439a1b61237950c6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 18"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ec56bab405e5d1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_439a1e61237955df",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 19"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ec55bab405e41e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_439a1d612379542c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 20"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ec54bab405e26b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_439a206123795945",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 21"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ec53bab405e0b8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_439a1f6123795792",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 22"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ec52bab405df05",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_439a226123795cab",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 23"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45ec51bab405dd52",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_439a216123795af8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 24"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45e8d4bab402d314",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4396b46123766bea",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_810ad18b360a7e3",
+            "type": "prop",
+            "name": "prop 25"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_187d6eaf9247ebf1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_48aa712ccdc2367f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_1b15f3b71a00a115",
+            "type": "prop",
+            "name": "prop 30"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_187d6baf9247e6d8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_1b15f3b71a00a115",
+            "type": "prop",
+            "name": "prop 31"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_187d6caf9247e88b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_1b15f3b71a00a115",
+            "type": "prop",
+            "name": "prop 32"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_187d71af9247f10a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050"
+                },
+                {
+                    "name": "shot060"
+                },
+                {
+                    "name": "shot070"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120"
+                },
+                {
+                    "name": "shot130"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "shot170"
+                }
+            ],
+            "model": "#hash_1b15f3b71a00a115",
+            "type": "prop",
+            "name": "prop 33"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "cin_zm_office_outro",
+    "dontsync": 1,
+    "disablesceneskipping": 1,
+    "var_241c5f3c": 1,
+    "var_a6da2039": "cin_zm_office_outro",
+    "aligntarget": "tag_align_hangar",
+    "team": "any"
+}

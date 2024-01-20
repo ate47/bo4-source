@@ -1,0 +1,80 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2eb224dd10501a58",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_1f67a213d3760fa9",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "ghost_1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2eb227dd10501f71",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_1f67a213d3760fa9",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "ghost_2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2eb226dd10501dbe",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#hash_1f67a213d3760fa9",
+            "type": "fakeactor",
+            "deletewhenfinished": 1,
+            "name": "ghost_3"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6d8bb8419de31b82",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "play"
+                }
+            ],
+            "model": "#spawner_zm_brutus_special",
+            "type": "actor",
+            "deletewhenfinished": 1,
+            "name": "brutus"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aibh_vign_zm_mob_brutus_ghost_pull",
+    "dontsync": 1,
+    "aligntarget": "tag_align_escape_west_grounds",
+    "team": "any"
+}

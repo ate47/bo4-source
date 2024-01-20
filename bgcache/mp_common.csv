@@ -8601,7 +8601,7 @@ objective,hash_34a0ac740c9d0bc2,0
 objective,hash_355b3d372247bed2,0
 objective,hardpoint,0
 objective,hash_3825c7c4edf14581,0
-objective,hash_38d49d6c96840472,0
+objective,allies_flag,0
 objective,hash_3a64e972390f43aa,0
 objective,hash_3b89cb8a8a9bb8a3,0
 objective,smart_cover_objective_open,0
@@ -8615,7 +8615,7 @@ objective,deployable_cover,0
 objective,spawngroup_a,0
 objective,spawngroup_b,0
 objective,spawngroup_c,0
-objective,hash_46ea7f29fe9ad753,0
+objective,control_2,0
 objective,control_1,0
 objective,control_0,0
 objective,pickup_ammo,0

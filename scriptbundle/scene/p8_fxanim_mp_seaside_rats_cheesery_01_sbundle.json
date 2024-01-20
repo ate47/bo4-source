@@ -1,0 +1,30 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4d50e9f69311f254",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "spacermin": 25,
+                    "spacermax": 35,
+                    "name": "shot 1"
+                }
+            ],
+            "model": "#p8_fxanim_gp_rat_01_mod",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "looping": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_seaside_rats_cheesery_01_sbundle",
+    "dontsync": 1,
+    "team": "any"
+}

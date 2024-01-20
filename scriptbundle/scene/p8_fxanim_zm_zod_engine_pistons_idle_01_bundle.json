@@ -1,0 +1,89 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_26135698a2d96ec8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_e64540eab4acebf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "stop",
+                    "blend": 1.5
+                }
+            ],
+            "model": "#p8_fxanim_zm_zod_engine_pistons_01_mod",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1b2244951d7d5bfd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_577d43c0dfe3cc98",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "stop",
+                    "blend": 1.5
+                }
+            ],
+            "model": "#p8_fxanim_zm_zod_engine_pistons_02_mod",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1ee42909c9cd0786",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_271b5d06dc96925d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "stop",
+                    "blend": 1.5
+                }
+            ],
+            "model": "#p8_fxanim_zm_zod_engine_pistons_03_mod",
+            "type": "prop",
+            "name": "prop 3"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_zod_engine_pistons_idle_01_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

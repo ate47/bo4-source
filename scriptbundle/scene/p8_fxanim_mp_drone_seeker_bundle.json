@@ -1,0 +1,36 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_mp_drone_seeker_fire_anim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fire"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#p8_fxanim_mp_drone_seeker_shock_anim",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shock"
+                }
+            ],
+            "model": "#hash_4487a2cf426f091",
+            "type": "prop",
+            "name": "vehicle 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_mp_drone_seeker_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

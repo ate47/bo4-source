@@ -1,0 +1,16 @@
+{
+    "var_99ec7d60": "zmb_pegasus_aoe_end",
+    "var_922067c4": "scriptbundle",
+    "type": "areaofeffect",
+    "earthquakescale": 0.5,
+    "effectradius": 350,
+    "vmtype": "client",
+    "name": "zm_aoe_strafe_storm",
+    "var_a8609f98": "damage_light",
+    "var_e41627fe": "zmb_pegasus_aoe_start",
+    "endrumble": "damage_heavy",
+    "var_1ee49376": "zmb_pegasus_aoe_lp",
+    "var_e4c85a5f": 1.5,
+    "loop_effect": "#hash_3284d7debb01c2e9",
+    "startrumble": "damage_heavy"
+}

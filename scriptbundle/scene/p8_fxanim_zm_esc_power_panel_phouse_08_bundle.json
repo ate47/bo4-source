@@ -1,0 +1,62 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53fb93d57d23e5e2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "off"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_127089fefe885254",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_6c293de7499c6a44",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "on"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63efc74a067368d8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "green"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2f3ac29559aa6e64",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_6c293de7499c6a44",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "reset"
+                }
+            ],
+            "model": "#hash_3643145d0d41d1df",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_power_panel_phouse_08_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

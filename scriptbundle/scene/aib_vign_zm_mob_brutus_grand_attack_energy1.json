@@ -1,0 +1,50 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2c80fcff940c2231",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_3eee1c4c31fa9402",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2be206b4a79dc04",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2be206b4a79dc04",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3"
+                }
+            ],
+            "model": "#hash_6d68fe0dc773635f",
+            "type": "prop",
+            "name": "prop 1",
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_zm_mob_brutus_grand_attack_energy1",
+    "dontsync": 1,
+    "team": "any"
+}

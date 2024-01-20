@@ -1,0 +1,43 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_66f156118f4bc46f",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_6b23db8f232f0eea",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#ai_t8_zm_red_spar_swrd_rebuild_01",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "rebuild"
+                }
+            ],
+            "model": "#spawner_zm_skeleton_spear",
+            "type": "actor",
+            "var_d318cc2c": 1,
+            "name": "actor 1",
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "aib_vign_cust_zm_red_spar_swrd_build_01",
+    "dontsync": 1,
+    "team": "any"
+}

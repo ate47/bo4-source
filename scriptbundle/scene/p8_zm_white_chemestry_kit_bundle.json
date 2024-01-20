@@ -1,0 +1,46 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_127d9bcf25e8cb4c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_325b181cba54a407",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "fill"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_601cfb84950623af",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "empty"
+                }
+            ],
+            "model": "#hash_67d9d817fd110f73",
+            "type": "prop",
+            "vmtype": "server",
+            "name": "fluid"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_zm_white_chemestry_kit_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

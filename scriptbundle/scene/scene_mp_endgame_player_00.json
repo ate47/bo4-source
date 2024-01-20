@@ -1,0 +1,38 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#pb_rifle_endgame_2ndplace_idle",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "cameraswitcher": "ui_cam_mp_endgame_common",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sb_mp_endgame_player_02_play"
+                }
+            ],
+            "disabled": 1,
+            "model": "#c_t7_mp_battery_mpc_fb1_skin1",
+            "type": "player",
+            "name": "topplayer1",
+            "aligntarget": "team_pose_cam",
+            "cameratweenout": 8,
+            "var_922b4fc5": 5,
+            "cameratween": 7
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "client",
+    "name": "scene_mp_endgame_player_00",
+    "dontsync": 1,
+    "aligntarget": "tag_align",
+    "team": "any"
+}

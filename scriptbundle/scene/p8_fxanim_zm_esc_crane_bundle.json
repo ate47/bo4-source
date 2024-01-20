@@ -1,0 +1,102 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_923a7a2394d952d",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_7c8b9c6664f8eae6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3fbc33140c093c0d",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_72f44185bdb806",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "name": "shot 3"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_fxanim_zm_esc_crane_mod",
+            "type": "prop",
+            "name": "crane"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_723de8fe18c0fc5e",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_5f8145b0a91d21ab",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_674b424a6a1acdf8",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_59851d9a10666d01",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bf732b76b5383ba",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_76d875acaac6408f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 3",
+                    "blend": 1
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_66161656c8ef4b2d",
+            "type": "prop",
+            "name": "skeleton_arm",
+            "var_873368a8": 10000,
+            "var_be60a82b": 65,
+            "var_922b4fc5": 625,
+            "var_3e692842": 525,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_crane_bundle",
+    "dontsync": 1,
+    "var_241c5f3c": 1,
+    "team": "any"
+}

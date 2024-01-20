@@ -1,0 +1,31 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_72370c01d3679310",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "one_shot"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#p8_zm_music_box_samantha_trap",
+            "type": "prop",
+            "deletewhenfinished": 1,
+            "name": "prop 1",
+            "var_3e692842": -7,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_zm_ora_music_box_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

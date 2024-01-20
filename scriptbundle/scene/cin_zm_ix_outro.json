@@ -1,0 +1,3926 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh010_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh020_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh030_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh040_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot040"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh050_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh060_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh070_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh080_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot080"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh100_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh110_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh120_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh135",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh138",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh140_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh145",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh145"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh150_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh160_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh165_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh165"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh168_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh170",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "cameraswitcher": "c_zm_ix_outro_sh180_cam",
+                            "var_71bac06": "cameraswitcher"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "sharedplayer",
+            "name": "sharedplayer 1"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_26b6ae45ea0a5f00",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1ebace6452ef7a79",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_740425b92da5ba4e",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2c2d230958a990fc",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4881f3219580b7fa",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3aae928cef1f1141",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_7466d6ac8ad656e6",
+            "type": "prop",
+            "name": "prop 2"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5a8244cf76c8bf91",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4675147d1585eed2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7560564e5089bf9f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2bc80a6e94a5c73e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7bd7342e05d8dabd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_41f37843fb6a5224",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_258f1c261d6ac7e6",
+            "type": "prop",
+            "name": "prop 3"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4ab2dbae7f96db99",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_107d9d6342182665",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot100"
+                },
+                {
+                    "cleanuphide": 1,
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_74253e94304e5f89",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_19656e27a62fb489",
+            "type": "prop",
+            "name": "prop 4"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_278c4d6ca27e3b73",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_174ac685485b46a6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5bc292a293eef49d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "sh165"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6a18ec3fcda0dce",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanupdelete": 1,
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#p8_mov_zm_gla_weapon_axe_01",
+            "type": "prop",
+            "name": "prop 5"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3d08e4380091f56",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_68afd73a6d5c8314",
+            "type": "prop",
+            "name": "prop 6"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_30720ce21730319",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_13a9eac9d432e71c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25f7f54e535c18cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_89706697c2d7916",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot040"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2e92c86164acdf8d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "cleanuphide": 1,
+                    "name": "shot080"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_3c954413cbb4e650",
+            "type": "prop",
+            "name": "prop 7"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_21e46b7259e32001",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_be3fafaed0ca15a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28de49288638cdf",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_70ebc7c4bc80af37",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_733665d69065782a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_69af21d8c404e514",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_7ce0eb9fb0174c3a",
+            "type": "prop",
+            "name": "prop 8"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_21e4687259e31ae8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_be3f9faed0c9fa7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_28de59288638e92",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_273bc77220a2852b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_20f3dbec21870e3c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot110"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_70ebc6c4bc80ad84",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_733664d690657677",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_69af24d8c404ea2d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_4a61b16b4110cba7",
+            "type": "prop",
+            "name": "prop 9"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_be3f8faed0c9df4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_273bc67220a28378",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot160"
+                },
+                {
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "prepareshow": 1,
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_7ce0eb9fb0174c3a",
+            "type": "prop",
+            "name": "prop 10"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_be3f7faed0c9c41",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5eeede4027d49d2a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_4a61b16b4110cba7",
+            "type": "prop",
+            "name": "prop 11"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_be3f6faed0c9a8e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5eeedf4027d49edd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_7ce0eb9fb0174c3a",
+            "type": "prop",
+            "name": "prop 12"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_be3f5faed0c98db",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_4a61b16b4110cba7",
+            "type": "prop",
+            "name": "prop 13"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_63e10f0b6e8d42a1",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_59fd3cdfe590ae34",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_23f82fa131485643",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_51b31678ad526149",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#p8_mov_zm_gla_chopping_block",
+            "type": "prop",
+            "name": "prop 14"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_51b31378ad525c30",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#p8_mov_zm_gla_chopping_block",
+            "type": "prop",
+            "name": "prop 15"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_51b31478ad525de3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#p8_mov_zm_gla_chopping_block",
+            "type": "prop",
+            "name": "prop 16"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_51b31978ad526662",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#p8_mov_zm_gla_chopping_block",
+            "type": "prop",
+            "name": "prop 17"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_23e5c5144623ffd8",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_14c348b1d895f7b1",
+            "type": "prop",
+            "name": "prop 18"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_13bbc067bb0a1344",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_2f666bb2f4cb8be9",
+            "type": "prop",
+            "name": "prop 19"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_62376ea3415ebc2d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_798c2bca983e168c",
+            "type": "prop",
+            "name": "prop 20"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_424db13493c38716",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_54d54f3258305ab1",
+            "type": "prop",
+            "name": "prop 21"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3d773557a343278",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_9e524cf923004fd",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_18d9a8af3891169a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7090e9164b4a454f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_2b458f17054945d9",
+            "type": "prop",
+            "name": "prop 22",
+            "var_be60a82b": -500
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_458c68acb08b9367",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_11d00220470db280",
+            "type": "prop",
+            "name": "prop 23"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_458c64acb08b8c9b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_50813a66e4b4e2b3",
+            "type": "prop",
+            "name": "prop 24"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_458c66acb08b9001",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_697b10947df3a153",
+            "type": "prop",
+            "name": "prop 25"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_458c67acb08b91b4",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_3be85cfd2fbfc6e1",
+            "type": "prop",
+            "name": "prop 26"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_458c65acb08b8e4e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_57c60091689d66d2",
+            "type": "prop",
+            "name": "prop 27"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_458c69acb08b951a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_5dd8abee2d470359",
+            "type": "prop",
+            "name": "prop 28"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5c38717d989627f3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#tag_origin_animate",
+            "type": "prop",
+            "name": "prop 29"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c8e5a6e63da54a2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_4726f545c425a53b",
+            "type": "prop",
+            "name": "prop 30"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_27bb081117b3cfa6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_4e079551c8abcdbe",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_557004438df4c0cb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot160"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3548f9f61cb116a0",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_7c82d454c56b3365",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_119fdcf3e238a978",
+            "type": "prop",
+            "name": "prop 31"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_25176de525bc561f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_384e6b2ebbdca35a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot080"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_31fca1e4ed4ab17b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_217b52d7470b010c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_78164ab1180e9f2f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_319996b5d054af06",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_53bbb6862fb87db3",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_654b8434b49db0b8",
+            "type": "prop",
+            "name": "prop 32"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_2775e798fc42cb39",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_46a927f3cdc1ff78",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_48c452bd93d12605",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#p8_mov_zm_gla_rope_restraint_01_scarlet",
+            "type": "prop",
+            "name": "prop 33"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3870c672c80f97b6",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6ed92c55f1ceb726",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "prepareshow": 1,
+                    "cleanuphide": 1,
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#hash_39ff78fcad4babef",
+            "type": "prop",
+            "name": "prop 34"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6c900f8adbbc286f",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#p8_mov_zm_gla_rope_restraint_01_diego",
+            "type": "prop",
+            "name": "prop 35"
+        },
+        {
+            "shots": [
+                {
+                    "name": "shot010",
+                    "var_b94164e": "xd_010"
+                },
+                {
+                    "name": "shot020"
+                },
+                {
+                    "name": "shot030"
+                },
+                {
+                    "name": "shot040"
+                },
+                {
+                    "name": "shot050",
+                    "var_39fd697b": "xd_010"
+                },
+                {
+                    "name": "shot060",
+                    "var_39fd697b": "xd_060",
+                    "var_b94164e": "xd_060"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_52de2448fbffeef7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "cleanuphide": 1,
+                    "name": "shot070",
+                    "var_b94164e": "xd_070"
+                },
+                {
+                    "name": "shot080"
+                },
+                {
+                    "name": "shot100"
+                },
+                {
+                    "name": "shot110"
+                },
+                {
+                    "name": "shot120",
+                    "var_39fd697b": "xd_070"
+                },
+                {
+                    "name": "sh135",
+                    "var_39fd697b": "xd_135",
+                    "var_b94164e": "xd_135"
+                },
+                {
+                    "name": "sh138",
+                    "var_39fd697b": "xd_138",
+                    "var_b94164e": "xd_138"
+                },
+                {
+                    "name": "shot140",
+                    "var_b94164e": "xd_140"
+                },
+                {
+                    "name": "sh145"
+                },
+                {
+                    "name": "shot150"
+                },
+                {
+                    "name": "shot160"
+                },
+                {
+                    "name": "sh165"
+                },
+                {
+                    "name": "sh168",
+                    "var_39fd697b": "xd_140"
+                },
+                {
+                    "name": "shot170",
+                    "var_39fd697b": "xd_170",
+                    "var_b94164e": "xd_170"
+                },
+                {
+                    "name": "shot180",
+                    "var_39fd697b": "xd_180",
+                    "var_b94164e": "xd_180"
+                }
+            ],
+            "model": "#p8_mov_zm_gla_rope_restraint_01_bruno",
+            "type": "prop",
+            "name": "prop 36"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "dontthrottle": 1,
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "cin_zm_ix_outro",
+    "dontsync": 1,
+    "disablesceneskipping": 1,
+    "var_241c5f3c": 1,
+    "var_a6da2039": "cin_zm_ix_outro",
+    "aligntarget": "tag_align_arena",
+    "team": "any"
+}

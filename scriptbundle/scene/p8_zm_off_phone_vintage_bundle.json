@@ -1,0 +1,48 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5331c3d8d8696302",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "devstate": "initial",
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1f63e2565ea41705",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "blinking"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_20b4c4193393834a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "devstate": "polishing",
+                    "name": "ring"
+                }
+            ],
+            "model": "#hash_30d20dc662432c07",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "both",
+    "name": "p8_zm_off_phone_vintage_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

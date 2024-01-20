@@ -1,0 +1,69 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_74b79962d0c11ccb",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_51d82d3df0ecc80a",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_b8d485aaa77f7b2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_7c8e42a9da6e7561",
+            "type": "prop",
+            "name": "prop 1"
+        },
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_57f48428a7ba0e70",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_44472d87b4976577",
+                            "var_71bac06": "anim"
+                        },
+                        {
+                            "anim": "#hash_3a05d4b794e18f45",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shot 2"
+                }
+            ],
+            "model": "#hash_3cbca29880a0bbb2",
+            "type": "prop",
+            "name": "prop 2"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_esc_catwalk_pole_electrical_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

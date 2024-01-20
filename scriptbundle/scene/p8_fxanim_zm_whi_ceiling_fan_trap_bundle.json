@@ -1,0 +1,54 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_43084738bd380533",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_61b3a69ecafeb97d",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "intro"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1f947e5fc3e340ab",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "loop"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_8a786cfac538612",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "outro"
+                }
+            ],
+            "model": "#hash_4b4fd6e7e4864e06",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_whi_ceiling_fan_trap_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

@@ -1,0 +1,17 @@
+{
+    "defenderarchetype": "none",
+    "attackerrightanim": "#hash_69904cddcee4cbfa",
+    "attackerarchetype": "none",
+    "var_922067c4": "scriptbundle",
+    "attackerfrontanim": "#hash_169be52eb57e4f7f",
+    "attackerbackanim": "#pb_rifle_stand_assassination_back_v1",
+    "victimfrontanim": "#hash_760ddbe5bd0492f2",
+    "type": "aiassassination",
+    "defendervariant": "regular",
+    "attackervariant": "regular",
+    "name": "aiassassination_human",
+    "attackerleftanim": "#hash_6b6db686ebf27259",
+    "victimbackanim": "#hash_355612fdfb2cd1f2",
+    "victimrightanim": "#hash_34d8edea236726b1",
+    "victimleftanim": "#hash_93e561b94ce1de4"
+}

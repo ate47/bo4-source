@@ -1,0 +1,28 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_460e536cb5a8756c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "heal"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_7241ab96eb856866",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_gaia_bush_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

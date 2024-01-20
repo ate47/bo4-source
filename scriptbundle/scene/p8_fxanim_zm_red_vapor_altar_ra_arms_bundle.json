@@ -1,0 +1,63 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_6cc0504bfc782617",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "init_idle"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3dcf468d237f7bf2",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "give_ankh"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_45b1939ca8698b10",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "aim_staff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_34828ccb9d15048a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "shoot_staff"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_5309c3630779d27c",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "lower_staff"
+                }
+            ],
+            "model": "#hash_7ff858e248e044d0",
+            "type": "prop",
+            "name": "prop 1"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_vapor_altar_ra_arms_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

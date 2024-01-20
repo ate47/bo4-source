@@ -1,0 +1,187 @@
+{
+    "announcementslist": [
+        {
+            "announcement": "CODCASTER/AN_UPLINK_LONG_SHOT",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 100
+        },
+        {
+            "announcement": "CODCASTER/AN_UPLINK_DUNK",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 100
+        },
+        {
+            "announcement": "CODCASTER/AN_UPLINK_BALL_RESET",
+            "parametertype": "#number",
+            "eventtype": "#minor",
+            "delay": 2,
+            "priority": 50
+        },
+        {
+            "announcement": "CODCASTER/AN_BOMB_PLANTED",
+            "parametertype": "#letter",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 100
+        },
+        {
+            "announcement": "CODCASTER/AN_DEFUSING",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 80
+        },
+        {
+            "announcement": "CODCASTER/AN_HARDPOINT_NEW",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 100
+        },
+        {
+            "announcement": "CODCASTER/AN_HARDPOINT_CAPTURING",
+            "parametertype": "#number",
+            "eventtype": "#minor",
+            "delay": 2,
+            "priority": 50
+        },
+        {
+            "announcement": "CODCASTER/AN_HARDPOINT_CONTEST",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 80
+        },
+        {
+            "announcement": "CODCASTER/AN_CTF_PICKUP",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 80
+        },
+        {
+            "announcement": "CODCASTER/AN_CTF_CAPTURED",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 100
+        },
+        {
+            "announcement": "CODCASTER/AN_CTF_KILLCARRIER",
+            "parametertype": "#number",
+            "eventtype": "#minor",
+            "delay": 2,
+            "priority": 50
+        },
+        {
+            "announcement": "CODCASTER/AN_CTF_RETURN",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 60
+        },
+        {
+            "announcement": "CODCASTER/AN_UPLINK_BALL_PICKUP",
+            "parametertype": "#number",
+            "eventtype": "#minor",
+            "delay": 2,
+            "priority": 50
+        },
+        {
+            "announcement": "CODCASTER/AN_KILLED_DEFUSER",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 70
+        },
+        {
+            "announcement": "CODCASTER/AN_BOMB_PLANTING",
+            "parametertype": "#letter",
+            "eventtype": "#minor",
+            "delay": 2,
+            "priority": -1
+        },
+        {
+            "announcement": "CODCASTER/AN_BOMB_PICKUP",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 90
+        },
+        {
+            "announcement": "CODCASTER/AN_LAST_MAN_STANDING",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 60
+        },
+        {
+            "announcement": "CODCASTER/AN_KILLSTREAK",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": -1
+        },
+        {
+            "announcement": "CODCASTER/AN_MULTIKILL",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": -1
+        },
+        {
+            "announcement": "CODCASTER/AN_DOM_CAPTURE_POINT",
+            "parametertype": "#letter",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 80
+        },
+        {
+            "announcement": "CODCASTER/AN_CALLED_A_SCORESTREAK",
+            "parametertype": "#killstreak",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": -1
+        },
+        {
+            "announcement": "CODCASTER/AN_FIRST_BLOOD",
+            "parametertype": "#number",
+            "eventtype": "#minor",
+            "delay": 2,
+            "priority": -1
+        },
+        {
+            "announcement": "CODCASTER/AN_CONTROL_PROGRESS",
+            "parametertype": "#letter",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 70
+        },
+        {
+            "announcement": "CODCASTER/AN_ALL_NORESPAWNS",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 40
+        },
+        {
+            "announcement": "CODCASTER/AN_ALL_POINTS_CAPTURE",
+            "parametertype": "#letter",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 100
+        },
+        {
+            "announcement": "CODCASTER/AN_CTF_FLAGDROP",
+            "parametertype": "#number",
+            "eventtype": "#major",
+            "delay": 2,
+            "priority": 40
+        }
+    ],
+    "name": "codcaster_announcements"
+}

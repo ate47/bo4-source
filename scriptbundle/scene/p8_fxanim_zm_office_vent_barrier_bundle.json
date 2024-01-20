@@ -1,0 +1,101 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_507f5bfd7777ec9a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 1,
+                    "var_b3dddfd3": 1,
+                    "name": "init"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f468229efe4e89a",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.85,
+                    "var_b3dddfd3": 1,
+                    "name": "shatter_slat1"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f468129efe4e6e7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.7,
+                    "var_b3dddfd3": 1,
+                    "name": "shatter_slat2"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f468029efe4e534",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.55,
+                    "var_b3dddfd3": 1,
+                    "name": "shatter_slat3"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f467f29efe4e381",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.4,
+                    "var_b3dddfd3": 1,
+                    "name": "shatter_slat4"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f467e29efe4e1ce",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.25,
+                    "var_b3dddfd3": 1,
+                    "name": "shatter_slat5"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3f467d29efe4e01b",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "damagethreshold": 0.05,
+                    "var_b3dddfd3": 1,
+                    "name": "shatter_slat6"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_1ed35f8de3ef425e",
+            "type": "prop",
+            "name": "vent",
+            "var_873368a8": 1000,
+            "var_2baad8fc": 1,
+            "allowdeath": 1,
+            "takedamage": 1
+        }
+    ],
+    "scenetype": "scene",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "vmtype": "both",
+    "name": "p8_fxanim_zm_office_vent_barrier_bundle",
+    "dontsync": 1,
+    "team": "any"
+}

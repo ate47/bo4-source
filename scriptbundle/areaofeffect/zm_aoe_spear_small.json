@@ -1,0 +1,14 @@
+{
+    "var_922067c4": "scriptbundle",
+    "type": "areaofeffect",
+    "earthquakescale": 0.4,
+    "effectradius": 350,
+    "vmtype": "client",
+    "end_effect": "#hash_595ec25b8b3b0e9b",
+    "name": "zm_aoe_spear_small",
+    "var_a8609f98": "damage_light",
+    "endrumble": "damage_heavy",
+    "var_e4c85a5f": 2,
+    "loop_effect": "#hash_154f7e9ec688102d",
+    "startrumble": "damage_heavy"
+}

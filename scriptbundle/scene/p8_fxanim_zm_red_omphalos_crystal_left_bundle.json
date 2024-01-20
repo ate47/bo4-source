@@ -1,0 +1,46 @@
+{
+    "objects": [
+        {
+            "shots": [
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_3b950381754fa214",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break01"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_55a06e514996cdf7",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "break02"
+                },
+                {
+                    "entry": [
+                        {
+                            "anim": "#hash_1a9e8667e6e7d24e",
+                            "var_71bac06": "anim"
+                        }
+                    ],
+                    "name": "destroy"
+                }
+            ],
+            "firstframe": 1,
+            "model": "#hash_27a85d036f5b8c85",
+            "type": "prop",
+            "name": "crystal_left"
+        }
+    ],
+    "scenetype": "fxanim",
+    "var_922067c4": "scriptbundle",
+    "devstate": "placeholder",
+    "type": "scene",
+    "name": "p8_fxanim_zm_red_omphalos_crystal_left_bundle",
+    "dontsync": 1,
+    "team": "any"
+}
