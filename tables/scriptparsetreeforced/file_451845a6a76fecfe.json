@@ -1,0 +1,16 @@
+{
+    "name": "#hash_451845a6a76fecfe",
+    "gscScripts": [
+        "#scripts/mp_common/ai/planner_mp_dom_squad.gsc",
+        "#script_60f1433e7c9a921c",
+        "#script_16b1c195c0b9a9c",
+        "#scripts/mp_common/ai/planner_mp_control_commander.gsc",
+        "#scripts/mp_common/ai/planner_mp_control_squad.gsc",
+        "#scripts/mp_common/ai/planner_mp_dom_commander.gsc",
+        "#scripts/mp_common/ai/planner_mp_koth_squad.gsc",
+        "#scripts/mp_common/ai/planner_mp_koth_commander.gsc",
+        "#scripts/mp_common/ai/planner_mp_sd_squad.gsc",
+        "#scripts/mp_common/ai/planner_mp_sd_commander.gsc"
+    ],
+    "cscScripts": []
+}

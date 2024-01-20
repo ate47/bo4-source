@@ -1,0 +1,13 @@
+{
+    "name": "#mp_seaside",
+    "gscScripts": [
+        "#scripts/core_common/ai/archetype_blight_father_interface.gsc",
+        "#scripts/core_common/ai/archetype_blight_father.gsc",
+        "#scripts/core_common/ai/archetype_zombie_interface.gsc",
+        "#scripts/core_common/ai/zombie.gsc"
+    ],
+    "cscScripts": [
+        "#scripts/core_common/ai/archetype_blight_father.csc",
+        "#scripts/core_common/ai/zombie.csc"
+    ]
+}

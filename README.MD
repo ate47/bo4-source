@@ -16,17 +16,18 @@ Most of the CSV are extracted without the header, you can have some known or gue
 ## Pools
 
 Pools dumped:
-| name              | id  |        path              |
-|-------------------|-----|--------------------------|
-| customizationtable| 30  | `/tables/customization/` |
-| rawfile           | 41  | `/`                      |
-| stringtable       | 43  | `/`                      |
-| ddl               | 46  | `/`                      |
-| scriptparsetree   | 48  | `/`                      |
-| scriptbundle      | 63  | `/scriptbundle/`         |
-| bgcache           | 85  | `/bgcache/`              |
-| maptable          | 89  | `/tables/map/`           |
-| maptable_list     | 90  | `/tables/map/list/`      |
-| gametypetable     | 113 | `/tables/gametype/`      |
-| playlists         | 119 | `/tables/playlists/`     |
-| rawstring         | 157 | `strings.csv`            |
+| name                  | id  |        path                      |
+|-----------------------|-----|----------------------------------|
+| customizationtable    | 30  | `/tables/customization/`         |
+| rawfile               | 41  | `/`                              |
+| stringtable           | 43  | `/`                              |
+| ddl                   | 46  | `/`                              |
+| scriptparsetree       | 48  | `/`                              |
+| scriptparsetreeforced | 50  | `/tables/scriptparsetreeforced/` |
+| scriptbundle          | 63  | `/scriptbundle/`                 |
+| bgcache               | 85  | `/bgcache/`                      |
+| maptable              | 89  | `/tables/map/`                   |
+| maptable_list         | 90  | `/tables/map/list/`              |
+| gametypetable         | 113 | `/tables/gametype/`              |
+| playlists             | 119 | `/tables/playlists/`             |
+| rawstring             | 157 | `strings.csv`                    |

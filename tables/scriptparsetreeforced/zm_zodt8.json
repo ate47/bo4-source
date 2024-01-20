@@ -1,0 +1,31 @@
+{
+    "name": "#zm_zodt8",
+    "gscScripts": [
+        "#scripts/core_common/ai/archetype_stoker.gsc",
+        "#scripts/core_common/ai/archetype_stoker_interface.gsc",
+        "#scripts/zm/zm_zodt8_ffotd.gsc",
+        "#scripts/zm/weapons/zm_weap_tricannon.gsc",
+        "#scripts/zm/ai/zm_ai_stoker.gsc",
+        "#scripts/zm/powerup/zm_powerup_free_perk.gsc",
+        "#scripts/zm/ai/zm_ai_catalyst.gsc",
+        "#scripts/core_common/ai/archetype_blight_father.gsc",
+        "#scripts/core_common/ai/archetype_catalyst.gsc",
+        "#scripts/core_common/ai/archetype_blight_father_interface.gsc",
+        "#scripts/core_common/ai/archetype_catalyst_interface.gsc",
+        "#scripts/core_common/ai/archetype_zombie_interface.gsc",
+        "#scripts/core_common/ai/zombie.gsc",
+        "#scripts/zm/ai/zm_ai_blight_father.gsc"
+    ],
+    "cscScripts": [
+        "#scripts/zm/zm_zodt8_ffotd.csc",
+        "#scripts/core_common/ai/archetype_stoker.csc",
+        "#scripts/zm/weapons/zm_weap_tricannon.csc",
+        "#scripts/zm/ai/zm_ai_stoker.csc",
+        "#scripts/zm/powerup/zm_powerup_free_perk.csc",
+        "#scripts/zm/ai/zm_ai_catalyst.csc",
+        "#scripts/core_common/ai/archetype_blight_father.csc",
+        "#scripts/core_common/ai/archetype_catalyst.csc",
+        "#scripts/core_common/ai/zombie.csc",
+        "#scripts/zm/ai/zm_ai_blight_father.csc"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "#mp_nuketown_4",
+    "gscScripts": [
+        "#scripts/core_common/ai/archetype_mannequin_interface.gsc",
+        "#scripts/core_common/ai/archetype_zombie_interface.gsc",
+        "#scripts/core_common/ai/zombie.gsc",
+        "#scripts/core_common/ai/archetype_mannequin.gsc"
+    ],
+    "cscScripts": [
+        "#scripts/core_common/ai/zombie.csc",
+        "#scripts/core_common/ai/archetype_mannequin.csc"
+    ]
+}

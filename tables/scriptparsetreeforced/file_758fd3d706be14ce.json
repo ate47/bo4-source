@@ -1,0 +1,34 @@
+{
+    "name": "#hash_758fd3d706be14ce",
+    "gscScripts": [
+        "#scripts/wz_common/wz_ai_avogadro.gsc",
+        "#scripts/core_common/ai/archetype_avogadro.gsc",
+        "#scripts/core_common/ai/archetype_zombie_interface.gsc",
+        "#scripts/core_common/ai/zombie.gsc",
+        "#scripts/wz_common/vehicles/recon_wz.gsc",
+        "#scripts/wz_common/wz_fishing.gsc",
+        "#scripts/wz_common/wz_ee_poster.gsc",
+        "#scripts/wz_common/wz_ai_brutus.gsc",
+        "#scripts/wz_common/wz_ai_zombie_dog.gsc",
+        "#script_280e30c1437557f5",
+        "#script_22593c890fa92d35",
+        "#scripts/wz_common/wz_loot_homunculus.gsc",
+        "#script_127cabc795c374b9",
+        "#scripts/wz_common/wz_escape_fixup.gsc",
+        "#scripts/wz_common/wz_nixie_tubes.gsc"
+    ],
+    "cscScripts": [
+        "#scripts/wz_common/wz_ai_avogadro.csc",
+        "#scripts/core_common/ai/archetype_avogadro.csc",
+        "#scripts/wz_common/vehicles/recon_wz.csc",
+        "#scripts/core_common/ai/zombie.csc",
+        "#scripts/wz_common/wz_ai_brutus.csc",
+        "#scripts/wz_common/wz_fishing.csc",
+        "#scripts/wz_common/wz_ai_zombie_dog.csc",
+        "#script_36d557c7aad49725",
+        "#scripts/wz_common/wz_loot_homunculus.csc",
+        "#scripts/wz_common/wz_escape_fixup.csc",
+        "#script_3b584c12e643589",
+        "#scripts/wz_common/wz_nixie_tubes.csc"
+    ]
+}

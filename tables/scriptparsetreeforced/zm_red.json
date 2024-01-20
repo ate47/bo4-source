@@ -1,0 +1,32 @@
+{
+    "name": "#zm_red",
+    "gscScripts": [
+        "#scripts/zm/zm_red_ffotd.gsc",
+        "#scripts/zm/ai/zm_ai_catalyst.gsc",
+        "#script_7b0eea022edb5ce2",
+        "#scripts/core_common/ai/archetype_blight_father.gsc",
+        "#scripts/core_common/ai/archetype_catalyst.gsc",
+        "#scripts/zm/ai/zm_ai_skeleton.gsc",
+        "#scripts/core_common/ai/archetype_zombie_interface.gsc",
+        "#scripts/core_common/ai/zombie.gsc",
+        "#scripts/zm/ai/zm_ai_gegenees.gsc",
+        "#script_3aa54d3cb36ea43f",
+        "#scripts/core_common/ai/archetype_blight_father_interface.gsc",
+        "#scripts/core_common/ai/archetype_catalyst_interface.gsc",
+        "#scripts/zm/ai/zm_ai_blight_father.gsc",
+        "#script_4d00889cf8c807d5",
+        "#scripts/core_common/ai/archetype_skeleton.gsc"
+    ],
+    "cscScripts": [
+        "#scripts/zm/zm_red_ffotd.csc",
+        "#script_57233e021a270c56",
+        "#scripts/zm/ai/zm_ai_skeleton.csc",
+        "#scripts/core_common/ai/zombie.csc",
+        "#scripts/zm/ai/zm_ai_catalyst.csc",
+        "#scripts/core_common/ai/archetype_blight_father.csc",
+        "#scripts/core_common/ai/archetype_catalyst.csc",
+        "#scripts/zm/ai/zm_ai_gegenees.csc",
+        "#scripts/core_common/ai/archetype_skeleton.csc",
+        "#scripts/zm/ai/zm_ai_blight_father.csc"
+    ]
+}
