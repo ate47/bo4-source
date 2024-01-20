@@ -301,8 +301,8 @@ function function_b6f15bda() {
 // Checksum 0xceec97fc, Offset: 0x1050
 // Size: 0x54
 function function_81832658() {
-    var_1f2328d0 = self function_4794d6a3();
-    if (!isdefined(var_1f2328d0.var_9e404264) || var_1f2328d0.var_9e404264) {
+    goalinfo = self function_4794d6a3();
+    if (!isdefined(goalinfo.var_9e404264) || goalinfo.var_9e404264) {
         return 1;
     }
     return 0;
@@ -314,7 +314,7 @@ function function_81832658() {
 // Size: 0x32e
 function function_11d6df2c() {
     var_56bd1bef = self function_14457965();
-    var_1f2328d0 = self function_4794d6a3();
+    goalinfo = self function_4794d6a3();
     if (isdefined(self.ai.var_b1248bd1) && self.ai.var_b1248bd1) {
         self.ai.var_b1248bd1 = 0;
         return 1;

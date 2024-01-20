@@ -119,12 +119,12 @@ function update(tacbundle) {
             self bot::record_text("<unknown string>", (1, 1, 1), "<unknown string>");
         #/
         if (isdefined(self.node)) {
-            var_8e2d9611 = self function_f29e63ea(self.node);
-            if (isdefined(var_8e2d9611)) {
+            offsetposition = self function_f29e63ea(self.node);
+            if (isdefined(offsetposition)) {
                 /#
                     self bot::record_text("<unknown string>", (0, 1, 1), "<unknown string>");
                 #/
-                self function_a57c34b7(var_8e2d9611);
+                self function_a57c34b7(offsetposition);
             }
         } else {
             self function_d4c687c9();
@@ -177,10 +177,10 @@ function handle_goal_changed() {
     level endon(#"game_ended");
     while (isdefined(self.bot)) {
         self waittill(#"goal_changed");
-        var_1f2328d0 = self function_4794d6a3();
+        goalinfo = self function_4794d6a3();
         if (self.goalforced) {
-            self usecovernode(var_1f2328d0.node);
-        } else if (!var_1f2328d0.isatgoal) {
+            self usecovernode(goalinfo.node);
+        } else if (!goalinfo.isatgoal) {
             self usecovernode(undefined);
         }
         if (!self isingoal(self.origin)) {
@@ -587,11 +587,11 @@ function function_567289f(params, tacbundle) {
 // Checksum 0x20f9c55, Offset: 0x1e20
 // Size: 0xaa
 function function_d2161ccd(params, tacbundle) {
-    var_1f2328d0 = self function_4794d6a3();
-    if (!isplayer(var_1f2328d0.goalentity)) {
+    goalinfo = self function_4794d6a3();
+    if (!isplayer(goalinfo.goalentity)) {
         return 0;
     }
-    if (distancesquared(self.origin, var_1f2328d0.goalentity.origin) < 2048 * 2048) {
+    if (distancesquared(self.origin, goalinfo.goalentity.origin) < 2048 * 2048) {
         return 0;
     }
     return function_d0cf287b(params, tacbundle);
@@ -613,11 +613,11 @@ function function_b94f5770(params, tacbundle) {
 // Checksum 0x3167ee8c, Offset: 0x1f30
 // Size: 0x1b8
 function function_7ed3ada6(params, tacbundle) {
-    var_4db4630 = isdefined(self.enemy) ? self.enemy.origin : self.likelyenemyposition;
-    nodes = findbestcovernodesatlocation(self.goalpos, self.goalradius, self.goalheight, self.team, var_4db4630);
+    facingpos = isdefined(self.enemy) ? self.enemy.origin : self.likelyenemyposition;
+    nodes = findbestcovernodesatlocation(self.goalpos, self.goalradius, self.goalheight, self.team, facingpos);
     /#
         if (self bot::should_record("<unknown string>")) {
-            recordsphere(var_4db4630, 8, (0, 1, 1), "<unknown string>", self);
+            recordsphere(facingpos, 8, (0, 1, 1), "<unknown string>", self);
             foreach (node in nodes) {
                 function_af72dbc5(node.origin, vectorscale((-1, -1, 0), 16), vectorscale((1, 1, 1), 16), node.angles[0], (0, 1, 1), "<unknown string>", self);
             }
@@ -720,8 +720,8 @@ function function_ad687b7f(region) {
     if (!isdefined(region)) {
         return 0;
     }
-    var_8cc7a4e = function_b507a336(region);
-    if (!isdefined(var_8cc7a4e)) {
+    regioninfo = function_b507a336(region);
+    if (!isdefined(regioninfo)) {
         return 0;
     }
     tacpoints = tacticalquery("stratcom_tacquery_region", region);
@@ -837,10 +837,10 @@ function function_d0cf287b(params, tacbundle) {
     }
     claimnode = undefined;
     if (ispathnode(position)) {
-        var_8e2d9611 = function_f29e63ea(position);
-        if (isdefined(var_8e2d9611)) {
+        offsetposition = function_f29e63ea(position);
+        if (isdefined(offsetposition)) {
             claimnode = position;
-            position = var_8e2d9611;
+            position = offsetposition;
         }
     }
     self set_position(position, claimnode);

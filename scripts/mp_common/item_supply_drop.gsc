@@ -151,15 +151,15 @@ function private debug_supply_drop() {
                 line(level.var_57e06aea[index - 1], level.var_57e06aea[index], (1, 0, 0));
             }
             if (isdefined(level.supplydropmax) && isdefined(level.supplydropmin)) {
-                var_d54803e = level.supplydropmin;
+                mintop = level.supplydropmin;
                 var_9c1af46d = (level.supplydropmin[0], level.supplydropmax[1], level.supplydropmax[2]);
                 var_c46271bf = (level.supplydropmax[0], level.supplydropmin[1], level.supplydropmin[2]);
                 var_99a8be82 = level.supplydropmax;
-                line(var_d54803e, var_9c1af46d, (1, 1, 1));
-                line(var_d54803e, var_c46271bf, (1, 1, 1));
+                line(mintop, var_9c1af46d, (1, 1, 1));
+                line(mintop, var_c46271bf, (1, 1, 1));
                 line(var_99a8be82, var_9c1af46d, (1, 1, 1));
                 line(var_99a8be82, var_c46271bf, (1, 1, 1));
-                sphere(var_d54803e, radius, (1, 1, 1));
+                sphere(mintop, radius, (1, 1, 1));
                 sphere(var_c46271bf, radius, (1, 1, 1));
                 sphere(var_9c1af46d, radius, (1, 1, 1));
                 sphere(var_99a8be82, radius, (1, 1, 1));
@@ -190,34 +190,34 @@ function private function_c7bd0aa8(point, startpoint) {
     var_1ccbeeaa = (point[0], point[1], 0);
     var_49e5fac9 = (startpoint[0], startpoint[1], 0);
     if (var_1ccbeeaa[0] < min[0]) {
-        var_dd00b78e = vectornormalize(var_1ccbeeaa - var_49e5fac9);
+        toend = vectornormalize(var_1ccbeeaa - var_49e5fac9);
         /#
-            assert(var_dd00b78e[0] != 0);
+            assert(toend[0] != 0);
         #/
-        t = (min[0] - var_49e5fac9[0]) / var_dd00b78e[0];
-        var_1ccbeeaa = var_49e5fac9 + var_dd00b78e * t;
+        t = (min[0] - var_49e5fac9[0]) / toend[0];
+        var_1ccbeeaa = var_49e5fac9 + toend * t;
     } else if (var_1ccbeeaa[0] > max[0]) {
-        var_dd00b78e = vectornormalize(var_1ccbeeaa - var_49e5fac9);
+        toend = vectornormalize(var_1ccbeeaa - var_49e5fac9);
         /#
-            assert(var_dd00b78e[0] != 0);
+            assert(toend[0] != 0);
         #/
-        t = (max[0] - var_49e5fac9[0]) / var_dd00b78e[0];
-        var_1ccbeeaa = var_49e5fac9 + var_dd00b78e * t;
+        t = (max[0] - var_49e5fac9[0]) / toend[0];
+        var_1ccbeeaa = var_49e5fac9 + toend * t;
     }
     if (var_1ccbeeaa[1] < min[1]) {
-        var_dd00b78e = vectornormalize(var_1ccbeeaa - var_49e5fac9);
+        toend = vectornormalize(var_1ccbeeaa - var_49e5fac9);
         /#
-            assert(var_dd00b78e[1] != 0);
+            assert(toend[1] != 0);
         #/
-        t = (min[1] - var_49e5fac9[1]) / var_dd00b78e[1];
-        var_1ccbeeaa = var_49e5fac9 + var_dd00b78e * t;
+        t = (min[1] - var_49e5fac9[1]) / toend[1];
+        var_1ccbeeaa = var_49e5fac9 + toend * t;
     } else if (var_1ccbeeaa[1] > max[1]) {
-        var_dd00b78e = vectornormalize(var_1ccbeeaa - var_49e5fac9);
+        toend = vectornormalize(var_1ccbeeaa - var_49e5fac9);
         /#
-            assert(var_dd00b78e[1] != 0);
+            assert(toend[1] != 0);
         #/
-        t = (max[1] - var_49e5fac9[1]) / var_dd00b78e[1];
-        var_1ccbeeaa = var_49e5fac9 + var_dd00b78e * t;
+        t = (max[1] - var_49e5fac9[1]) / toend[1];
+        var_1ccbeeaa = var_49e5fac9 + toend * t;
     }
     point = (var_1ccbeeaa[0], var_1ccbeeaa[1], point[2]);
     return point;
@@ -227,12 +227,12 @@ function private function_c7bd0aa8(point, startpoint) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0xbb966d5a, Offset: 0x1408
 // Size: 0x244
-function private function_13339b58(var_d4bce8be) {
+function private function_13339b58(istank) {
     self endon(#"death");
     open_anim = #"hash_4f2b2f1b4df13119";
     idle_anim = #"hash_39265b4ed372175a";
     var_e1c31bea = #"hash_32ad963f25f115d2";
-    if (isdefined(var_d4bce8be) && var_d4bce8be) {
+    if (isdefined(istank) && istank) {
         open_anim = #"hash_77322c90462ba8c";
         idle_anim = #"hash_780b50c0a9393f1d";
         var_e1c31bea = #"hash_ac2d4936b932903";
@@ -339,7 +339,7 @@ function private function_500a6615(itemspawnlist = #"supply_drop_stash_parent_dl
 // Size: 0x370
 function private function_e21ceb1b() {
     self endon(#"death", #"movedone");
-    var_9d85c40f = vectorscale((1, 1, 1), 10);
+    extendbounds = vectorscale((1, 1, 1), 10);
     previousorigin = self.origin;
     var_8bc27a4a = 0;
     while (1) {
@@ -347,7 +347,7 @@ function private function_e21ceb1b() {
         var_15d21979 = abs((previousorigin - self.origin)[2]);
         if (var_15d21979 > 4) {
             foreach (player in var_3769eb50) {
-                if (isalive(player) && player istouching(self, var_9d85c40f)) {
+                if (isalive(player) && player istouching(self, extendbounds)) {
                     if (isvehicle(self)) {
                         player dodamage(player.health + 1, player.origin, self, self, "none", "MOD_CRUSH");
                         player playsound("evt_supply_crush");
@@ -538,8 +538,8 @@ function private function_415bdb1d(einflictor, eattacker, idamage, idflags, smea
 // Size: 0x1ba
 function private function_9a275b1f(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
     newhealth = max(self.health - idamage, 0);
-    var_d4bce8be = isdefined(self.scriptvehicletype) && self.scriptvehicletype == "player_tank";
-    if (!var_d4bce8be && newhealth <= self.var_b9b5403c) {
+    istank = isdefined(self.scriptvehicletype) && self.scriptvehicletype == "player_tank";
+    if (!istank && newhealth <= self.var_b9b5403c) {
         if (isdefined(self.supplydropveh)) {
             supplydropveh = self.supplydropveh;
             supplydropveh thread function_500a6615();
@@ -818,9 +818,9 @@ function function_7d4a448f(var_47d17dcb = 0) {
     var_396cbf6e = deathcircle.radius;
     var_be734526 = deathcircle.radius - var_4f59c30d;
     if (var_be734526 > 0) {
-        var_e7993c63 = vectornormalize(deathcirclecenter - (deathcircle.origin[0], deathcircle.origin[1], var_94f13d8b));
-        var_8df04549 = deathcirclecenter - var_e7993c63 * var_4f59c30d;
-        exitpoint = deathcirclecenter + var_e7993c63 * var_4f59c30d;
+        dirtocenter = vectornormalize(deathcirclecenter - (deathcircle.origin[0], deathcircle.origin[1], var_94f13d8b));
+        var_8df04549 = deathcirclecenter - dirtocenter * var_4f59c30d;
+        exitpoint = deathcirclecenter + dirtocenter * var_4f59c30d;
     } else {
         degrees = randomint(360);
         var_8df04549 = (cos(degrees) * var_4f59c30d, sin(degrees) * var_4f59c30d, 0) + deathcirclecenter;

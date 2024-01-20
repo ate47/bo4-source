@@ -274,20 +274,20 @@ function function_580b77a2() {
     self attach("c_t8_zmb_titanic_stoker_rshoulder_cap1");
     self attach("c_t8_zmb_titanic_stoker_head_cap1");
     self attach("c_t8_zmb_titanic_stoker_shovel1", "tag_weapon_right");
-    self.var_1861eb5b = [];
-    self.var_1861eb5b[#"left_arm_upper"] = new class_264486ac();
-    self.var_1861eb5b[#"left_arm_upper"].shadervector = 4;
-    self.var_1861eb5b[#"left_arm_upper"].fxindex = 3;
-    self.var_1861eb5b[#"right_arm_upper"] = new class_264486ac();
-    self.var_1861eb5b[#"right_arm_upper"].shadervector = 1;
-    self.var_1861eb5b[#"right_arm_upper"].fxindex = 4;
-    self.var_1861eb5b[#"head"] = new class_264486ac();
-    self.var_1861eb5b[#"head"].shadervector = 3;
-    self.var_1861eb5b[#"head"].fxindex = 5;
-    self.var_1861eb5b[#"left_arm_lower"] = new class_264486ac();
-    self.var_1861eb5b[#"left_arm_lower"].var_6d7b8c32 = 1;
-    self.var_1861eb5b[#"left_arm_lower"].var_a222368f = "j_wrist_le";
-    self.var_1861eb5b[#"left_arm_lower"].fxindex = 6;
+    self.armorinfo = [];
+    self.armorinfo[#"left_arm_upper"] = new class_264486ac();
+    self.armorinfo[#"left_arm_upper"].shadervector = 4;
+    self.armorinfo[#"left_arm_upper"].fxindex = 3;
+    self.armorinfo[#"right_arm_upper"] = new class_264486ac();
+    self.armorinfo[#"right_arm_upper"].shadervector = 1;
+    self.armorinfo[#"right_arm_upper"].fxindex = 4;
+    self.armorinfo[#"head"] = new class_264486ac();
+    self.armorinfo[#"head"].shadervector = 3;
+    self.armorinfo[#"head"].fxindex = 5;
+    self.armorinfo[#"left_arm_lower"] = new class_264486ac();
+    self.armorinfo[#"left_arm_lower"].var_6d7b8c32 = 1;
+    self.armorinfo[#"left_arm_lower"].var_a222368f = "j_wrist_le";
+    self.armorinfo[#"left_arm_lower"].fxindex = 6;
     self.var_19f48bbe = [];
     self.var_19f48bbe[0] = "left_arm_upper";
     self.var_19f48bbe[1] = "right_arm_upper";
@@ -440,10 +440,10 @@ function function_a96d8bd7(einflictor, eattacker, idamage, idflags, smeansofdeat
             if (var_dd54fdb1.type == #"armor") {
                 if (isdefined(var_88e794fb) && var_88e794fb) {
                     if (isdefined(var_dd54fdb1.hitloc)) {
-                        var_1861eb5b = self.var_1861eb5b[var_dd54fdb1.hitloc];
+                        armorinfo = self.armorinfo[var_dd54fdb1.hitloc];
                     }
-                    if (isdefined(var_1861eb5b)) {
-                        self clientfield::set("stoker_fx_start_clientfield", var_1861eb5b.fxindex);
+                    if (isdefined(armorinfo)) {
+                        self clientfield::set("stoker_fx_start_clientfield", armorinfo.fxindex);
                     }
                     namespace_81245006::function_ef87b7e8(var_dd54fdb1, damagedone);
                     var_fe16adf4 = 1;
@@ -452,18 +452,18 @@ function function_a96d8bd7(einflictor, eattacker, idamage, idflags, smeansofdeat
                         if (var_dd54fdb1.var_641ce20e) {
                             namespace_81245006::function_6742b846(self, var_dd54fdb1);
                         }
-                        if (isdefined(var_1861eb5b.var_6d7b8c32) && var_1861eb5b.var_6d7b8c32) {
+                        if (isdefined(armorinfo.var_6d7b8c32) && armorinfo.var_6d7b8c32) {
                             self.var_81d3587d = 1;
                             self.var_86f9cdcd = 1;
                         }
-                        if (isdefined(var_1861eb5b.var_a222368f)) {
-                            physicsexplosionsphere(self gettagorigin(var_1861eb5b.var_a222368f), 600, 0, 80, 1, 1);
+                        if (isdefined(armorinfo.var_a222368f)) {
+                            physicsexplosionsphere(self gettagorigin(armorinfo.var_a222368f), 600, 0, 80, 1, 1);
                             self.var_ccb2e201 = 1;
                         }
                         self destructserverutils::handledamage(einflictor, eattacker, idamage, idflags, smeansofdeath, sweapon, vpoint, vdir, var_dd54fdb1.hitloc, psoffsettime, boneindex, modelindex);
                         if (var_dd54fdb1.hitloc === self.var_a056e24) {
-                            if (isdefined(var_1861eb5b.shadervector)) {
-                                self clientfield::set("crit_spot_reveal_clientfield", var_1861eb5b.shadervector);
+                            if (isdefined(armorinfo.shadervector)) {
+                                self clientfield::set("crit_spot_reveal_clientfield", armorinfo.shadervector);
                             }
                             var_add9b529 = namespace_81245006::function_3131f5dd(self, self.var_a056e24);
                             if (isdefined(var_add9b529)) {
@@ -513,13 +513,13 @@ function private function_1bf5272c(hitloc, point, location, var_934afb38, tag) {
 // Params 2, eflags: 0x4
 // Checksum 0x11d45a71, Offset: 0x2720
 // Size: 0x86
-function private function_c9116e0f(var_1861eb5b, damage) {
+function private function_c9116e0f(armorinfo, damage) {
     /#
-        function_752a64b8("<unknown string>" + damage + "<unknown string>" + var_1861eb5b.position);
+        function_752a64b8("<unknown string>" + damage + "<unknown string>" + armorinfo.position);
     #/
-    var_1861eb5b.health = var_1861eb5b.health - damage;
-    if (var_1861eb5b.health <= 0) {
-        var_1861eb5b.active = 0;
+    armorinfo.health = armorinfo.health - damage;
+    if (armorinfo.health <= 0) {
+        armorinfo.active = 0;
     }
 }
 

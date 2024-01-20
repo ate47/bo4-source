@@ -19,19 +19,19 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_c8ec488a9f07555",
+                    "name": "#moveleft",
                     "type": "string",
                     "offset": 20864,
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_710ca71a6660d12e",
+                    "name": "#moveright",
                     "type": "string",
                     "offset": 5696,
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_2a1a1d5621d40fb5",
+                    "name": "#gostand",
                     "type": "string",
                     "offset": 2880,
                     "bitSize": 192
@@ -73,7 +73,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_3f20574ae6d9092c",
+                    "name": "#breath_sprint",
                     "type": "string",
                     "offset": 17408,
                     "bitSize": 192
@@ -91,7 +91,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_1401909dc750e7b5",
+                    "name": "#hold_sprint",
                     "type": "string",
                     "offset": 19520,
                     "bitSize": 192
@@ -115,7 +115,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_7fd3f41c3f77b347",
+                    "name": "#speed_throw",
                     "type": "string",
                     "offset": 12032,
                     "bitSize": 192
@@ -163,7 +163,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_100fadd5fbea583",
+                    "name": "#weapoffhandspecial",
                     "type": "string",
                     "offset": 17984,
                     "bitSize": 192
@@ -175,7 +175,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_7e1358aa953914bf",
+                    "name": "#melee_zoom",
                     "type": "string",
                     "offset": 18752,
                     "bitSize": 192
@@ -451,7 +451,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_593b5bef078a6c6f",
+                    "name": "#talk",
                     "type": "string",
                     "offset": 768,
                     "bitSize": 192
@@ -471,7 +471,7 @@
                     "maxIntValue": 127
                 },
                 {
-                    "name": "#hash_740be41736d0a38f",
+                    "name": "#scoreszm",
                     "type": "string",
                     "offset": 18368,
                     "bitSize": 192
@@ -483,7 +483,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_45e5d09abad135f6",
+                    "name": "#inventoryzm",
                     "type": "string",
                     "offset": 18560,
                     "bitSize": 192
@@ -501,7 +501,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_74d204dbdf3231e2",
+                    "name": "#calloutwheel",
                     "type": "string",
                     "offset": 1536,
                     "bitSize": 192
@@ -561,7 +561,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_7401db1736c83fbf",
+                    "name": "#scoreswz",
                     "type": "string",
                     "offset": 18176,
                     "bitSize": 192
@@ -657,21 +657,21 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_2042ab53f67e07c0",
-                    "type": "struct#hash_d61f32e738b0498",
+                    "name": "#telemetry",
+                    "type": "struct#telemetry_header",
                     "offset": 4608,
                     "bitSize": 504
                 },
                 {
                     "name": "#client",
-                    "type": "struct#hash_7dcaabe0b3028e02",
+                    "type": "struct#client_header",
                     "offset": 14528,
                     "bitSize": 192
                 }
             ]
         },
         {
-            "name": "#hash_d61f32e738b0498",
+            "name": "#telemetry_header",
             "members": [
                 {
                     "name": "#hash_56a1b6d783aa7a25",
@@ -695,7 +695,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_572050e9a4cc493f",
+                    "name": "#changelist_number",
                     "type": "int",
                     "offset": 0,
                     "bitSize": 32,
@@ -711,7 +711,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_412cb161a9856017",
+                    "name": "#source_version",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -737,14 +737,14 @@
             "name": "#hash_54196e9e9860f0be",
             "values": [
                 "#pc",
-                "#hash_2138dd192571c4c9",
-                "#hash_3f9f7d197fde67aa",
+                "#neo",
+                "#xb1",
                 "#scorpio",
                 "#ps4"
             ]
         },
         {
-            "name": "#hash_7dcaabe0b3028e02",
+            "name": "#client_header",
             "members": [
                 {
                     "name": "#user_id",
@@ -761,7 +761,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_69f723a3393b550d",
+                    "name": "#uno_id",
                     "type": "uint64",
                     "offset": 64,
                     "bitSize": 64,

@@ -139,7 +139,7 @@ function function_55c50f15() {
         if (!isdefined(tripwire)) {
             continue;
         }
-        if (self.var_ea0b7690 != tripwire.var_ea0b7690) {
+        if (self.ownernum != tripwire.ownernum) {
             continue;
         }
         if (self == tripwire) {
@@ -147,26 +147,26 @@ function function_55c50f15() {
         }
         if (distancesquared(tripwire.origin, self.origin) >= 100 && distancesquared(tripwire.origin, self.origin) <= level.var_c72e8c51.var_831055cb * level.var_c72e8c51.var_831055cb) {
             pos = self gettagorigin("tag_fx");
-            var_ccfd8635 = tripwire gettagorigin("tag_fx");
-            if (isdefined(pos) && isdefined(var_ccfd8635)) {
-                trace = beamtrace(pos, var_ccfd8635, 0, self, 0, tripwire);
-                var_f2edf308 = beamtrace(var_ccfd8635, pos, 0, self, 0, tripwire);
+            otherpos = tripwire gettagorigin("tag_fx");
+            if (isdefined(pos) && isdefined(otherpos)) {
+                trace = beamtrace(pos, otherpos, 0, self, 0, tripwire);
+                var_f2edf308 = beamtrace(otherpos, pos, 0, self, 0, tripwire);
                 if (self function_a4b3da97(trace) && self function_a4b3da97(var_f2edf308)) {
                     if (isdefined(level.localplayers)) {
                         foreach (player in level.localplayers) {
                             if (isdefined(player)) {
                                 if (player util::isenemyteam(self.owner.team)) {
                                     if (isdefined(level.var_c72e8c51.var_10e5bb56) && level.var_c72e8c51.var_10e5bb56) {
-                                        var_6e75c10a = "beam8_plyr_equip_ied_enmy_wz";
+                                        beamname = "beam8_plyr_equip_ied_enmy_wz";
                                     } else {
-                                        var_6e75c10a = "beam8_plyr_equip_ied_enmy";
+                                        beamname = "beam8_plyr_equip_ied_enmy";
                                     }
                                 } else if (isdefined(level.var_c72e8c51.var_10e5bb56) && level.var_c72e8c51.var_10e5bb56) {
-                                    var_6e75c10a = "beam8_plyr_equip_ied_frnd_wz";
+                                    beamname = "beam8_plyr_equip_ied_frnd_wz";
                                 } else {
-                                    var_6e75c10a = "beam8_plyr_equip_ied_frnd";
+                                    beamname = "beam8_plyr_equip_ied_frnd";
                                 }
-                                beam_id = player beam::launch(tripwire, "tag_fx", self, "tag_fx", var_6e75c10a);
+                                beam_id = player beam::launch(tripwire, "tag_fx", self, "tag_fx", beamname);
                                 arrayinsert(level.tripwire.localclients[player.localclientnum].beams, beam_id, level.tripwire.localclients[player.localclientnum].beams.size);
                             }
                         }
@@ -367,7 +367,7 @@ function function_adb3eb2c(localclientnum) {
         if (!isdefined(tripwire)) {
             continue;
         }
-        if (self.var_ea0b7690 != tripwire.var_ea0b7690) {
+        if (self.ownernum != tripwire.ownernum) {
             continue;
         }
         var_1eb381e1 = function_8c308396(self, tripwire);
@@ -375,12 +375,12 @@ function function_adb3eb2c(localclientnum) {
         if (!isdefined(pos)) {
             pos = self.origin;
         }
-        var_ccfd8635 = tripwire gettagorigin("tag_fx");
-        if (!isdefined(var_ccfd8635)) {
-            var_ccfd8635 = tripwire.origin;
+        otherpos = tripwire gettagorigin("tag_fx");
+        if (!isdefined(otherpos)) {
+            otherpos = tripwire.origin;
         }
-        trace = beamtrace(pos, var_ccfd8635, 0, self, 0, tripwire);
-        var_f2edf308 = beamtrace(var_ccfd8635, pos, 0, self, 0, tripwire);
+        trace = beamtrace(pos, otherpos, 0, self, 0, tripwire);
+        var_f2edf308 = beamtrace(otherpos, pos, 0, self, 0, tripwire);
         if (function_26c580d9(localclientnum, tripwire, trace, var_f2edf308)) {
             self.var_c2f0f6da = 1;
             if (!isdefined(var_1eb381e1)) {

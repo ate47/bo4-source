@@ -50,7 +50,7 @@
     "displayname": "#hash_29713f600232aa09",
     "rangestartvalue": 0.01,
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 4,
     "statname": "input_viewSensitivityVertical",
     "var_d4e288e": 1,

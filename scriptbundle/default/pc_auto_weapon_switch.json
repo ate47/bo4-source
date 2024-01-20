@@ -9,7 +9,7 @@
     "name": "pc_auto_weapon_switch",
     "displayname": "#hash_1dee996edd57a4ab",
     "rangestartvalue": 60,
-    "var_926d1be9": 1,
+    "decimalplace": 1,
     "var_66faec87": 120,
     "statname": "out_of_ammo_auto_weapon_change",
     "var_82c732a7": 1,

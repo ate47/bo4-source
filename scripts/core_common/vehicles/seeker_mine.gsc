@@ -761,8 +761,8 @@ function function_9ba314a1(target) {
             return 1;
         }
         if (target hasperk(#"specialty_nottargetedbyraps") && !isdefined(level.var_91a1cd89)) {
-            var_87c0ec9c = distancesquared(target.origin, self.origin);
-            if (var_87c0ec9c <= 15625) {
+            distsqtotarget = distancesquared(target.origin, self.origin);
+            if (distsqtotarget <= 15625) {
                 return 0;
             }
             return 1;
@@ -793,8 +793,8 @@ function function_3e3b6ce1() {
     while (1) {
         if (isdefined(self.favoriteenemy)) {
             target = self.favoriteenemy;
-            var_87c0ec9c = distancesquared(target.origin, self.origin);
-            if (var_87c0ec9c <= 122500) {
+            distsqtotarget = distancesquared(target.origin, self.origin);
+            if (distsqtotarget <= 122500) {
                 var_cbf5ba86 = 1;
             }
             var_b9733045 = self targetting_delay::function_1c169b3a(target, 0);
@@ -842,8 +842,8 @@ function function_55be8453() {
         }
         if (isdefined(self.favoriteenemy)) {
             if (util::within_fov(self.origin, self.angles, self.favoriteenemy.origin, 0.939)) {
-                var_87c0ec9c = distancesquared(self.favoriteenemy.origin, self.origin);
-                if (var_87c0ec9c <= 122500) {
+                distsqtotarget = distancesquared(self.favoriteenemy.origin, self.origin);
+                if (distsqtotarget <= 122500) {
                     waitframe(1);
                     continue;
                 }
@@ -870,8 +870,8 @@ function function_55be8453() {
         }
         if (!foundenemy) {
             foreach (target in alltargets) {
-                var_87c0ec9c = distancesquared(target.origin, self.origin);
-                if (var_87c0ec9c <= 122500 && !function_9ba314a1(target)) {
+                distsqtotarget = distancesquared(target.origin, self.origin);
+                if (distsqtotarget <= 122500 && !function_9ba314a1(target)) {
                     function_45eb6b84(target);
                     foundenemy = 1;
                     break;

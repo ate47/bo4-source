@@ -8,7 +8,7 @@
     "var_43a952c1": 0.1,
     "name": "pc_battlechatter",
     "displayname": "#hash_51e3f9f7905c3003",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "snd_multiplayer_character_voice",
     "var_82c732a7": 1,

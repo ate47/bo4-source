@@ -338,7 +338,7 @@ function function_9b9525e9() {
     e_player ct_vo::function_831e0584(array("vox_tvoi_tutor_fire_end_0", "vox_tvoi_tutor_fire_end_1"));
     e_player = ct_utils::get_player();
     e_player thread function_6487b2c7();
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial

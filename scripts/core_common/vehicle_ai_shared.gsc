@@ -1990,13 +1990,13 @@ function function_1d436633(...) {
         self.ai.var_88b0fd29 = gettime();
     }
     var_12cb92c6 = 0;
-    var_1f2328d0 = self function_4794d6a3();
+    goalinfo = self function_4794d6a3();
     newpos = undefined;
-    forcedgoal = isdefined(var_1f2328d0.goalforced) && var_1f2328d0.goalforced;
-    isatgoal = isdefined(var_1f2328d0.isatgoal) && var_1f2328d0.isatgoal || self isapproachinggoal() && isdefined(self.overridegoalpos);
-    itsbeenawhile = isdefined(var_1f2328d0.isatgoal) && var_1f2328d0.isatgoal && gettime() > self.ai.var_88b0fd29;
+    forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
+    isatgoal = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal || self isapproachinggoal() && isdefined(self.overridegoalpos);
+    itsbeenawhile = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal && gettime() > self.ai.var_88b0fd29;
     var_48ea0381 = 0;
-    var_2a8c95a5 = forcedgoal && isdefined(self.overridegoalpos) && distancesquared(self.overridegoalpos, var_1f2328d0.goalpos) < self.radius * self.radius;
+    var_2a8c95a5 = forcedgoal && isdefined(self.overridegoalpos) && distancesquared(self.overridegoalpos, goalinfo.goalpos) < self.radius * self.radius;
     if (isdefined(self.enemy) && !self haspath()) {
         var_48ea0381 = !self seerecently(self.enemy, randomintrange(3, 5));
         if (issentient(self.enemy) || function_ffa5b184(self.enemy)) {
@@ -2007,12 +2007,12 @@ function function_1d436633(...) {
     var_12cb92c6 = var_12cb92c6 && !var_2a8c95a5;
     if (var_12cb92c6) {
         if (forcedgoal) {
-            newpos = getclosestpointonnavmesh(var_1f2328d0.goalpos, self.radius * 2, self.radius);
+            newpos = getclosestpointonnavmesh(goalinfo.goalpos, self.radius * 2, self.radius);
         } else {
             /#
                 assert(isdefined(self.settings.tacbundle) && self.settings.tacbundle != "<unknown string>", "<unknown string>");
             #/
-            goalarray = function_e057db25(self.settings.tacbundle, var_1f2328d0.goalpos, vararg);
+            goalarray = function_e057db25(self.settings.tacbundle, goalinfo.goalpos, vararg);
             var_817e8fd0 = [];
             if (isdefined(goalarray) && goalarray.size) {
                 foreach (goal in goalarray) {
@@ -2031,7 +2031,7 @@ function function_1d436633(...) {
             }
         }
         if (!isdefined(newpos)) {
-            newpos = getclosestpointonnavmesh(var_1f2328d0.goalpos, self.radius * 2, self.radius);
+            newpos = getclosestpointonnavmesh(goalinfo.goalpos, self.radius * 2, self.radius);
         }
         self.ai.var_88b0fd29 = gettime() + randomintrange(3500, 5000);
     }
@@ -2304,17 +2304,17 @@ function function_b1bd875a() {
         self.ai.var_88b0fd29 = gettime() + 1000;
         return;
     }
-    var_1f2328d0 = self function_4794d6a3();
+    goalinfo = self function_4794d6a3();
     /#
-        assert(isdefined(var_1f2328d0.goalpos));
+        assert(isdefined(goalinfo.goalpos));
     #/
     var_12cb92c6 = 0;
     newpos = undefined;
     point = undefined;
     enemy = self.enemy;
     currenttime = gettime();
-    forcedgoal = isdefined(var_1f2328d0.goalforced) && var_1f2328d0.goalforced;
-    isatgoal = isdefined(var_1f2328d0.isatgoal) && var_1f2328d0.isatgoal;
+    forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
+    isatgoal = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal;
     haspath = self haspath();
     isapproachinggoal = !isatgoal && haspath && self isapproachinggoal();
     itsbeenawhile = currenttime >= self.ai.var_88b0fd29;
@@ -2326,39 +2326,39 @@ function function_b1bd875a() {
             var_48ea0381 = !self attackedrecently(enemy, randomintrange(5, 7));
         }
     }
-    var_3e782e85 = forcedgoal || var_1f2328d0.goalradius < 2 * self.radius && var_1f2328d0.goalheight < 2 * self.radius;
+    var_3e782e85 = forcedgoal || goalinfo.goalradius < 2 * self.radius && goalinfo.goalheight < 2 * self.radius;
     var_f5ae7ee0 = isatgoal && !var_3e782e85 && (itsbeenawhile || var_48ea0381);
     var_633ff15a = !isatgoal && (!isapproachinggoal || var_ed3f071f);
     var_12cb92c6 = var_f5ae7ee0 || var_633ff15a;
     if (var_12cb92c6) {
         if (!isatgoal || !var_3e782e85) {
             if (var_3e782e85) {
-                newpos = self getclosestpointonnavvolume(var_1f2328d0.goalpos, self.radius * 2);
+                newpos = self getclosestpointonnavvolume(goalinfo.goalpos, self.radius * 2);
             } else if (!isatgoal) {
-                point = function_4ab1a63a(var_1f2328d0);
+                point = function_4ab1a63a(goalinfo);
             } else if (isdefined(enemy)) {
-                point = function_1e0d693b(var_1f2328d0, enemy);
+                point = function_1e0d693b(goalinfo, enemy);
             } else {
-                point = function_4646fb11(var_1f2328d0);
+                point = function_4646fb11(goalinfo);
             }
             if (isdefined(point)) {
                 newpos = point.origin;
             }
             if (!isdefined(newpos)) {
-                newpos = self getclosestpointonnavvolume(var_1f2328d0.goalpos, self.radius * 2);
+                newpos = self getclosestpointonnavvolume(goalinfo.goalpos, self.radius * 2);
             }
             if (!isdefined(newpos)) {
                 /#
-                    record3dtext("<unknown string>" + var_1f2328d0.goalpos + "<unknown string>" + var_1f2328d0.goalradius + "<unknown string>" + var_1f2328d0.goalheight, self.origin + vectorscale((0, 0, 1), 8), (1, 0, 0));
-                    recordline(self.origin, var_1f2328d0.goalpos, (1, 0, 0));
+                    record3dtext("<unknown string>" + goalinfo.goalpos + "<unknown string>" + goalinfo.goalradius + "<unknown string>" + goalinfo.goalheight, self.origin + vectorscale((0, 0, 1), 8), (1, 0, 0));
+                    recordline(self.origin, goalinfo.goalpos, (1, 0, 0));
                 #/
-                newpos = var_1f2328d0.goalpos;
+                newpos = goalinfo.goalpos;
             } else if (!self isingoal(newpos)) {
                 /#
-                    record3dtext("<unknown string>" + newpos + "<unknown string>" + var_1f2328d0.goalpos + "<unknown string>" + var_1f2328d0.goalradius + "<unknown string>" + var_1f2328d0.goalheight, self.origin + vectorscale((0, 0, 1), 8), (1, 0, 0));
+                    record3dtext("<unknown string>" + newpos + "<unknown string>" + goalinfo.goalpos + "<unknown string>" + goalinfo.goalradius + "<unknown string>" + goalinfo.goalheight, self.origin + vectorscale((0, 0, 1), 8), (1, 0, 0));
                     recordline(self.origin, newpos, (1, 0, 0));
                 #/
-                newpos = var_1f2328d0.goalpos;
+                newpos = goalinfo.goalpos;
             }
             if (distancesquared(self.origin, newpos) < self.radius * 2 * self.radius * 2) {
                 newpos = undefined;

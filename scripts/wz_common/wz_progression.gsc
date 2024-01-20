@@ -533,7 +533,7 @@ function function_f8072c71(player) {
     }
     self endon(#"hash_2d45f3f009f1b3b3", #"death");
     player endon(#"death", #"exit_vehicle", #"disconnect");
-    var_d98c5084 = self.origin;
+    prevposition = self.origin;
     distancetraveled = 0;
     var_b01d9212 = isairborne(self);
     var_7c6311c4 = self.vehicleclass === "boat";
@@ -541,8 +541,8 @@ function function_f8072c71(player) {
     while (isdefined(self) && isdefined(player)) {
         wait(1);
         if (isdefined(self) && isdefined(player)) {
-            distancetraveled = int(distancetraveled + distance2d(self.origin, var_d98c5084));
-            var_d98c5084 = self.origin;
+            distancetraveled = int(distancetraveled + distance2d(self.origin, prevposition));
+            prevposition = self.origin;
             if (distancetraveled > 1000) {
                 if (var_f03db647) {
                     player stats::function_dad108fa(#"distance_traveled_vehicle_land", distancetraveled);
@@ -610,13 +610,13 @@ function function_c9a18304(eventstruct) {
 // Size: 0x1b8
 function function_da21a17c() {
     self endon(#"hash_74973f333d2fabfa", #"death", #"disconnect");
-    var_d98c5084 = self.origin;
+    prevposition = self.origin;
     distancetraveled = 0;
     while (isdefined(self)) {
         wait(1);
         if (isdefined(self)) {
-            distancetraveled = int(distancetraveled + distance2d(self.origin, var_d98c5084));
-            var_d98c5084 = self.origin;
+            distancetraveled = int(distancetraveled + distance2d(self.origin, prevposition));
+            prevposition = self.origin;
             if (distancetraveled > 1000) {
                 self stats::function_dad108fa(#"distance_traveled_wingsuit", distancetraveled);
                 distancetraveled = 0;

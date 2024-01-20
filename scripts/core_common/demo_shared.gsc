@@ -67,8 +67,8 @@ function function_651a5f4(var_81538b15, einflictor) {
 // Params 5, eflags: 0x0
 // Checksum 0xd5cce6ea, Offset: 0x308
 // Size: 0x84
-function event_bookmark(var_65e76577, time, var_81538b15, scoreeventpriority, eventdata) {
-    bookmark = potm::function_5b1e9ed4(game.var_e9714926, var_65e76577, time, var_81538b15, undefined, scoreeventpriority, undefined, undefined, 0, eventdata);
+function event_bookmark(bookmarkname, time, var_81538b15, scoreeventpriority, eventdata) {
+    bookmark = potm::function_5b1e9ed4(game.var_e9714926, bookmarkname, time, var_81538b15, undefined, scoreeventpriority, undefined, undefined, 0, eventdata);
     add_bookmark(bookmark);
 }
 
@@ -76,8 +76,8 @@ function event_bookmark(var_65e76577, time, var_81538b15, scoreeventpriority, ev
 // Params 5, eflags: 0x1 linked
 // Checksum 0x16237347, Offset: 0x398
 // Size: 0x7c
-function bookmark(var_65e76577, time, var_81538b15, var_f28fb772, scoreeventpriority) {
-    bookmark = potm::function_5b1e9ed4(game.var_e9714926, var_65e76577, time, var_81538b15, var_f28fb772, scoreeventpriority);
+function bookmark(bookmarkname, time, var_81538b15, var_f28fb772, scoreeventpriority) {
+    bookmark = potm::function_5b1e9ed4(game.var_e9714926, bookmarkname, time, var_81538b15, var_f28fb772, scoreeventpriority);
     add_bookmark(bookmark);
 }
 
@@ -85,11 +85,11 @@ function bookmark(var_65e76577, time, var_81538b15, var_f28fb772, scoreeventprio
 // Params 3, eflags: 0x1 linked
 // Checksum 0x375a8b18, Offset: 0x420
 // Size: 0xcc
-function function_c6ae5fd6(var_65e76577, winningteamindex, losingteamindex) {
-    bookmark = potm::function_5b1e9ed4(game.var_e9714926, var_65e76577, gettime(), undefined, undefined, 0);
+function function_c6ae5fd6(bookmarkname, winningteamindex, losingteamindex) {
+    bookmark = potm::function_5b1e9ed4(game.var_e9714926, bookmarkname, gettime(), undefined, undefined, 0);
     if (!isdefined(bookmark)) {
         /#
-            println("<unknown string>" + var_65e76577 + "<unknown string>");
+            println("<unknown string>" + bookmarkname + "<unknown string>");
         #/
         return;
     }

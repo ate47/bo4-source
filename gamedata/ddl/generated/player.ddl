@@ -1,5 +1,5 @@
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 58,
     "metatable": "#hash_75db694c19b50ea1",
     "structs": [
@@ -15,7 +15,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 13112,
                     "bitSize": 1,
@@ -79,7 +79,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_356a13eca7364e20",
+                    "name": "#lobbydlcbits",
                     "type": "int",
                     "offset": 12968,
                     "bitSize": 32,
@@ -113,7 +113,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 10024,
                     "bitSize": 1376
@@ -219,7 +219,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 13032,
                     "bitSize": 32,
@@ -227,7 +227,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 9672,
                     "bitSize": 32,
@@ -235,7 +235,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -243,7 +243,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 9576,
                     "bitSize": 32,
@@ -272,7 +272,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13114,
                     "bitSize": 6,
@@ -308,7 +308,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -361,7 +361,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -373,7 +373,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -573,7 +573,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -581,7 +581,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -589,7 +589,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -597,7 +597,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -605,7 +605,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -662,7 +662,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 57,
     "metatable": "#hash_d28b488259f507d9",
     "structs": [
@@ -678,7 +678,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 13112,
                     "bitSize": 1,
@@ -742,7 +742,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_356a13eca7364e20",
+                    "name": "#lobbydlcbits",
                     "type": "int",
                     "offset": 12968,
                     "bitSize": 32,
@@ -776,7 +776,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 10024,
                     "bitSize": 1376
@@ -882,7 +882,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 13032,
                     "bitSize": 32,
@@ -890,7 +890,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 9672,
                     "bitSize": 32,
@@ -898,7 +898,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -906,7 +906,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 9576,
                     "bitSize": 32,
@@ -935,7 +935,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13114,
                     "bitSize": 6,
@@ -971,7 +971,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -1024,7 +1024,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -1036,7 +1036,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -1236,7 +1236,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -1244,7 +1244,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -1252,7 +1252,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -1260,7 +1260,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -1268,7 +1268,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -1325,7 +1325,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 56,
     "metatable": "#hash_95081bff4ad8c62",
     "structs": [
@@ -1341,7 +1341,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 12344,
                     "bitSize": 1,
@@ -1405,7 +1405,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_356a13eca7364e20",
+                    "name": "#lobbydlcbits",
                     "type": "int",
                     "offset": 12200,
                     "bitSize": 32,
@@ -1439,7 +1439,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 9256,
                     "bitSize": 1376
@@ -1545,7 +1545,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 12264,
                     "bitSize": 32,
@@ -1553,7 +1553,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 8904,
                     "bitSize": 32,
@@ -1561,7 +1561,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -1569,7 +1569,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 8808,
                     "bitSize": 32,
@@ -1598,7 +1598,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 12346,
                     "bitSize": 6,
@@ -1634,7 +1634,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -1687,7 +1687,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -1699,7 +1699,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -1899,7 +1899,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -1907,7 +1907,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -1915,7 +1915,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -1923,7 +1923,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -1931,7 +1931,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -1988,7 +1988,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 55,
     "metatable": "#hash_ba039ece937f107d",
     "structs": [
@@ -2004,7 +2004,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 12344,
                     "bitSize": 1,
@@ -2068,7 +2068,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_356a13eca7364e20",
+                    "name": "#lobbydlcbits",
                     "type": "int",
                     "offset": 12200,
                     "bitSize": 32,
@@ -2102,7 +2102,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 9256,
                     "bitSize": 1376
@@ -2208,7 +2208,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 12264,
                     "bitSize": 32,
@@ -2216,7 +2216,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 8904,
                     "bitSize": 32,
@@ -2224,7 +2224,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -2232,7 +2232,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 8808,
                     "bitSize": 32,
@@ -2261,7 +2261,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 12346,
                     "bitSize": 6,
@@ -2297,7 +2297,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -2350,7 +2350,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -2362,7 +2362,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -2562,7 +2562,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -2570,7 +2570,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -2578,7 +2578,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -2586,7 +2586,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -2594,7 +2594,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -2651,7 +2651,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 54,
     "metatable": "#hash_e2caa6a6a0fa6ff2",
     "structs": [
@@ -2667,7 +2667,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 12344,
                     "bitSize": 1,
@@ -2731,7 +2731,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_356a13eca7364e20",
+                    "name": "#lobbydlcbits",
                     "type": "int",
                     "offset": 12200,
                     "bitSize": 32,
@@ -2765,7 +2765,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 9256,
                     "bitSize": 1376
@@ -2871,7 +2871,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 12264,
                     "bitSize": 32,
@@ -2879,7 +2879,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 8904,
                     "bitSize": 32,
@@ -2887,7 +2887,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -2895,7 +2895,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 8808,
                     "bitSize": 32,
@@ -2924,7 +2924,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 12346,
                     "bitSize": 6,
@@ -2960,7 +2960,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -3013,7 +3013,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -3025,7 +3025,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -3225,7 +3225,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -3233,7 +3233,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -3241,7 +3241,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -3249,7 +3249,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -3257,7 +3257,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -3314,7 +3314,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 53,
     "metatable": "#hash_93519ea9347303cb",
     "structs": [
@@ -3330,7 +3330,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 12344,
                     "bitSize": 1,
@@ -3394,7 +3394,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_356a13eca7364e20",
+                    "name": "#lobbydlcbits",
                     "type": "int",
                     "offset": 12200,
                     "bitSize": 32,
@@ -3428,7 +3428,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 9256,
                     "bitSize": 1376
@@ -3534,7 +3534,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 12264,
                     "bitSize": 32,
@@ -3542,7 +3542,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 8904,
                     "bitSize": 32,
@@ -3550,7 +3550,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -3558,7 +3558,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 8808,
                     "bitSize": 32,
@@ -3587,7 +3587,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 12346,
                     "bitSize": 6,
@@ -3623,7 +3623,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -3676,7 +3676,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -3688,7 +3688,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -3888,7 +3888,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -3896,7 +3896,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -3904,7 +3904,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -3912,7 +3912,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -3920,7 +3920,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -3977,7 +3977,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 52,
     "metatable": "#hash_2802315c76767166",
     "structs": [
@@ -3993,7 +3993,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 12344,
                     "bitSize": 1,
@@ -4057,7 +4057,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_356a13eca7364e20",
+                    "name": "#lobbydlcbits",
                     "type": "int",
                     "offset": 12200,
                     "bitSize": 32,
@@ -4091,7 +4091,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 9256,
                     "bitSize": 1376
@@ -4197,7 +4197,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 12264,
                     "bitSize": 32,
@@ -4205,7 +4205,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 8904,
                     "bitSize": 32,
@@ -4213,7 +4213,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -4221,7 +4221,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 8808,
                     "bitSize": 32,
@@ -4250,7 +4250,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 12346,
                     "bitSize": 6,
@@ -4286,7 +4286,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -4339,7 +4339,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -4351,7 +4351,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -4551,7 +4551,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -4559,7 +4559,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -4567,7 +4567,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -4575,7 +4575,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -4583,7 +4583,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -4640,7 +4640,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 51,
     "metatable": "#hash_ee8678886be66d39",
     "structs": [
@@ -4656,7 +4656,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 10296,
                     "bitSize": 1,
@@ -4720,7 +4720,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_356a13eca7364e20",
+                    "name": "#lobbydlcbits",
                     "type": "int",
                     "offset": 10152,
                     "bitSize": 32,
@@ -4754,7 +4754,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 7208,
                     "bitSize": 1376
@@ -4860,7 +4860,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 10216,
                     "bitSize": 32,
@@ -4868,7 +4868,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 6856,
                     "bitSize": 32,
@@ -4876,7 +4876,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -4884,7 +4884,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 6760,
                     "bitSize": 32,
@@ -4913,7 +4913,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 10298,
                     "bitSize": 6,
@@ -4949,7 +4949,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -5002,7 +5002,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -5014,7 +5014,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -5214,7 +5214,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -5222,7 +5222,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -5230,7 +5230,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -5238,7 +5238,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -5246,7 +5246,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -5303,7 +5303,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 50,
     "metatable": "#hash_e378eda968c13f26",
     "structs": [
@@ -5319,7 +5319,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 10264,
                     "bitSize": 1,
@@ -5409,7 +5409,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 7208,
                     "bitSize": 1376
@@ -5515,7 +5515,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 10184,
                     "bitSize": 32,
@@ -5523,7 +5523,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 6856,
                     "bitSize": 32,
@@ -5531,7 +5531,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -5539,7 +5539,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 6760,
                     "bitSize": 32,
@@ -5568,7 +5568,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 10266,
                     "bitSize": 6,
@@ -5604,7 +5604,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -5657,7 +5657,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -5669,7 +5669,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -5869,7 +5869,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -5877,7 +5877,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -5885,7 +5885,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -5893,7 +5893,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -5901,7 +5901,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -5958,7 +5958,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 49,
     "metatable": "#hash_50ff4338de2b69fc",
     "structs": [
@@ -5974,7 +5974,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 10312,
                     "bitSize": 1,
@@ -6064,7 +6064,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 7256,
                     "bitSize": 1376
@@ -6170,7 +6170,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 10232,
                     "bitSize": 32,
@@ -6178,7 +6178,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 6904,
                     "bitSize": 32,
@@ -6186,7 +6186,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -6194,7 +6194,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 6808,
                     "bitSize": 32,
@@ -6223,7 +6223,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 10314,
                     "bitSize": 6,
@@ -6259,7 +6259,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -6312,7 +6312,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -6324,7 +6324,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -6532,7 +6532,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -6540,7 +6540,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -6548,7 +6548,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -6556,7 +6556,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -6564,7 +6564,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -6621,7 +6621,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 48,
     "metatable": "#hash_ed988782ae3e1de",
     "structs": [
@@ -6637,7 +6637,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 10456,
                     "bitSize": 1,
@@ -6727,7 +6727,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 7400,
                     "bitSize": 1376
@@ -6833,7 +6833,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 10376,
                     "bitSize": 32,
@@ -6841,7 +6841,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 7048,
                     "bitSize": 32,
@@ -6849,7 +6849,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -6857,7 +6857,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 6952,
                     "bitSize": 32,
@@ -6886,7 +6886,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 10458,
                     "bitSize": 6,
@@ -6922,7 +6922,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -6975,7 +6975,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -6987,7 +6987,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -7203,7 +7203,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -7211,7 +7211,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -7219,7 +7219,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -7227,7 +7227,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -7235,7 +7235,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -7292,7 +7292,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 47,
     "metatable": "#hash_19810636f2d79715",
     "structs": [
@@ -7308,7 +7308,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 10456,
                     "bitSize": 1,
@@ -7398,7 +7398,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 7400,
                     "bitSize": 1376
@@ -7504,7 +7504,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 10376,
                     "bitSize": 32,
@@ -7512,7 +7512,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 7048,
                     "bitSize": 32,
@@ -7520,7 +7520,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 536,
                     "bitSize": 32,
@@ -7528,7 +7528,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 6952,
                     "bitSize": 32,
@@ -7557,7 +7557,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 10458,
                     "bitSize": 6,
@@ -7593,7 +7593,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -7646,7 +7646,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -7658,7 +7658,7 @@
             "name": "#arenastats",
             "members": [
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 0,
                     "bitSize": 32,
@@ -7874,7 +7874,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -7882,7 +7882,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -7890,7 +7890,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -7898,7 +7898,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -7906,7 +7906,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -7963,7 +7963,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 46,
     "metatable": "#hash_d3e59d63953895e1",
     "structs": [
@@ -7979,7 +7979,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 10424,
                     "bitSize": 1,
@@ -8069,7 +8069,7 @@
                     "bitSize": 96
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 7368,
                     "bitSize": 1376
@@ -8175,7 +8175,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 10344,
                     "bitSize": 32,
@@ -8183,7 +8183,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 7016,
                     "bitSize": 32,
@@ -8191,7 +8191,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 504,
                     "bitSize": 32,
@@ -8199,7 +8199,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 6920,
                     "bitSize": 32,
@@ -8228,7 +8228,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 10426,
                     "bitSize": 6,
@@ -8264,7 +8264,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -8317,7 +8317,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -8538,7 +8538,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -8546,7 +8546,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -8554,7 +8554,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -8562,7 +8562,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -8570,7 +8570,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -8627,7 +8627,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 45,
     "metatable": "#hash_67e86e0b4050de1e",
     "structs": [
@@ -8643,7 +8643,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 10360,
                     "bitSize": 1,
@@ -8733,7 +8733,7 @@
                     "bitSize": 96
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 7368,
                     "bitSize": 1312
@@ -8839,7 +8839,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 10280,
                     "bitSize": 32,
@@ -8847,7 +8847,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5b4b35d5234b3305",
+                    "name": "#prestigewz",
                     "type": "uint",
                     "offset": 7016,
                     "bitSize": 32,
@@ -8855,7 +8855,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_351df486201b8e96",
+                    "name": "#paragonrankwz",
                     "type": "uint",
                     "offset": 504,
                     "bitSize": 32,
@@ -8863,7 +8863,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_594048fc67147c74",
+                    "name": "#paragoniconidwz",
                     "type": "uint",
                     "offset": 6920,
                     "bitSize": 32,
@@ -8892,7 +8892,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 10362,
                     "bitSize": 6,
@@ -8928,7 +8928,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -8981,7 +8981,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -9194,7 +9194,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -9202,7 +9202,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -9210,7 +9210,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -9218,7 +9218,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -9226,7 +9226,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -9283,7 +9283,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 44,
     "metatable": "#hash_6eda1d0ff04686d3",
     "structs": [
@@ -9299,7 +9299,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 10264,
                     "bitSize": 1,
@@ -9389,7 +9389,7 @@
                     "bitSize": 96
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 7272,
                     "bitSize": 1312
@@ -9495,7 +9495,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 10184,
                     "bitSize": 32,
@@ -9524,7 +9524,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 10266,
                     "bitSize": 6,
@@ -9560,7 +9560,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -9613,7 +9613,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -9826,7 +9826,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "short",
                     "offset": 0,
                     "bitSize": 16,
@@ -9834,7 +9834,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 16,
                     "bitSize": 16,
@@ -9842,7 +9842,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "short",
                     "offset": 80,
                     "bitSize": 16,
@@ -9850,7 +9850,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_3e8fcfdc5a704d0c",
+                    "name": "#bestfirstsubdivisionrankstreak",
                     "type": "short",
                     "offset": 48,
                     "bitSize": 16,
@@ -9858,7 +9858,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_447513e0012b37c8",
+                    "name": "#bestcurrenteventgamestreak",
                     "type": "short",
                     "offset": 32,
                     "bitSize": 16,
@@ -9915,7 +9915,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 43,
     "metatable": "#hash_fa3c01a684d9bd8",
     "structs": [
@@ -9931,7 +9931,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 10296,
                     "bitSize": 1,
@@ -10021,7 +10021,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 7304,
                     "bitSize": 1312
@@ -10127,7 +10127,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 10216,
                     "bitSize": 32,
@@ -10156,7 +10156,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 10298,
                     "bitSize": 6,
@@ -10192,7 +10192,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -10245,7 +10245,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -10458,7 +10458,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -10466,7 +10466,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -10474,7 +10474,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "uint",
                     "offset": 96,
                     "bitSize": 32,
@@ -10531,7 +10531,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 42,
     "metatable": "#hash_fb7a63d56de40823",
     "structs": [
@@ -10547,7 +10547,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8248,
                     "bitSize": 1,
@@ -10637,7 +10637,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5256,
                     "bitSize": 1312
@@ -10743,7 +10743,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 8168,
                     "bitSize": 32,
@@ -10772,7 +10772,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8250,
                     "bitSize": 6,
@@ -10808,7 +10808,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -10861,7 +10861,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -11074,7 +11074,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -11082,7 +11082,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -11090,7 +11090,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "uint",
                     "offset": 96,
                     "bitSize": 32,
@@ -11147,7 +11147,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 41,
     "metatable": "#hash_eb7b046abfd4e72c",
     "structs": [
@@ -11163,7 +11163,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8248,
                     "bitSize": 1,
@@ -11253,7 +11253,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5256,
                     "bitSize": 1312
@@ -11359,7 +11359,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 8168,
                     "bitSize": 32,
@@ -11388,7 +11388,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8250,
                     "bitSize": 6,
@@ -11424,7 +11424,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -11477,7 +11477,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -11690,7 +11690,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -11698,7 +11698,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -11706,7 +11706,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "uint",
                     "offset": 96,
                     "bitSize": 32,
@@ -11763,7 +11763,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 40,
     "metatable": "#hash_b5614178ecf29dd3",
     "structs": [
@@ -11779,7 +11779,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8200,
                     "bitSize": 1,
@@ -11869,7 +11869,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5208,
                     "bitSize": 1312
@@ -11975,7 +11975,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 8120,
                     "bitSize": 32,
@@ -12004,7 +12004,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8202,
                     "bitSize": 6,
@@ -12040,7 +12040,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -12176,7 +12176,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -12298,7 +12298,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -12306,7 +12306,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -12314,7 +12314,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "uint",
                     "offset": 96,
                     "bitSize": 32,
@@ -12371,7 +12371,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 39,
     "metatable": "#hash_753c3048ced0bdc5",
     "structs": [
@@ -12387,7 +12387,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8232,
                     "bitSize": 1,
@@ -12477,7 +12477,7 @@
                     "bitSize": 160
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -12583,7 +12583,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 8152,
                     "bitSize": 32,
@@ -12612,7 +12612,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8234,
                     "bitSize": 6,
@@ -12648,7 +12648,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -12784,7 +12784,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -12906,7 +12906,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -12914,7 +12914,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -12922,7 +12922,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "uint",
                     "offset": 96,
                     "bitSize": 32,
@@ -12987,7 +12987,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 38,
     "metatable": "#hash_fcf8933b7d1c3ae6",
     "structs": [
@@ -13003,7 +13003,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8232,
                     "bitSize": 1,
@@ -13093,7 +13093,7 @@
                     "bitSize": 160
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -13199,7 +13199,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 8152,
                     "bitSize": 32,
@@ -13228,7 +13228,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8234,
                     "bitSize": 6,
@@ -13264,7 +13264,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -13400,7 +13400,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -13522,7 +13522,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -13530,7 +13530,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -13538,7 +13538,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "uint",
                     "offset": 96,
                     "bitSize": 32,
@@ -13603,7 +13603,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 37,
     "metatable": "#hash_e70aeef9f40f2ffb",
     "structs": [
@@ -13619,7 +13619,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 7200,
                     "bitSize": 1,
@@ -13709,7 +13709,7 @@
                     "bitSize": 160
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 4208,
                     "bitSize": 1312
@@ -13815,7 +13815,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 7120,
                     "bitSize": 32,
@@ -13844,7 +13844,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 7202,
                     "bitSize": 6,
@@ -13880,7 +13880,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -14016,7 +14016,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -14130,7 +14130,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -14138,7 +14138,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -14146,7 +14146,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_638a40b429f32516",
+                    "name": "#firstsubdivisionranktotal",
                     "type": "uint",
                     "offset": 96,
                     "bitSize": 32,
@@ -14203,7 +14203,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 36,
     "metatable": "#hash_803ff572bb52bd15",
     "structs": [
@@ -14219,7 +14219,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 7224,
                     "bitSize": 1,
@@ -14309,7 +14309,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 4232,
                     "bitSize": 1312
@@ -14415,7 +14415,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 7144,
                     "bitSize": 32,
@@ -14444,7 +14444,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 7226,
                     "bitSize": 6,
@@ -14480,7 +14480,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -14616,7 +14616,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -14641,7 +14641,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -14672,7 +14672,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -14798,7 +14798,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 35,
     "metatable": "#hash_8a1a6c0747873ed",
     "structs": [
@@ -14814,7 +14814,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 7224,
                     "bitSize": 1,
@@ -14904,7 +14904,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 4232,
                     "bitSize": 1312
@@ -15010,7 +15010,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 7144,
                     "bitSize": 32,
@@ -15039,7 +15039,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 7226,
                     "bitSize": 6,
@@ -15075,7 +15075,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -15211,7 +15211,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -15236,7 +15236,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -15267,7 +15267,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -15393,7 +15393,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 34,
     "metatable": "#hash_ab37e8d433a72d11",
     "structs": [
@@ -15409,7 +15409,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8248,
                     "bitSize": 1,
@@ -15499,7 +15499,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5256,
                     "bitSize": 1312
@@ -15605,7 +15605,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 8168,
                     "bitSize": 32,
@@ -15634,7 +15634,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8250,
                     "bitSize": 6,
@@ -15670,7 +15670,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -15806,7 +15806,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -15831,7 +15831,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -15862,7 +15862,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -15996,7 +15996,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 33,
     "metatable": "#hash_a5526a36c529fdf6",
     "structs": [
@@ -16012,7 +16012,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8248,
                     "bitSize": 1,
@@ -16102,7 +16102,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5256,
                     "bitSize": 1312
@@ -16208,7 +16208,7 @@
                     "bitSize": 88
                 },
                 {
-                    "name": "#hash_85f7a12a1df289e",
+                    "name": "#rankwz",
                     "type": "uint",
                     "offset": 8168,
                     "bitSize": 32,
@@ -16237,7 +16237,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8250,
                     "bitSize": 6,
@@ -16273,7 +16273,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -16409,7 +16409,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -16434,7 +16434,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -16465,7 +16465,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -16599,7 +16599,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 32,
     "metatable": "#hash_4af662c4ff4cc658",
     "structs": [
@@ -16615,7 +16615,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8216,
                     "bitSize": 1,
@@ -16705,7 +16705,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5256,
                     "bitSize": 1312
@@ -16832,7 +16832,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8218,
                     "bitSize": 6,
@@ -16868,7 +16868,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -17004,7 +17004,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -17029,7 +17029,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -17060,7 +17060,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -17194,7 +17194,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 31,
     "metatable": "#hash_f709f5517331f1bf",
     "structs": [
@@ -17210,7 +17210,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8216,
                     "bitSize": 1,
@@ -17300,7 +17300,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5256,
                     "bitSize": 1312
@@ -17427,7 +17427,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8218,
                     "bitSize": 6,
@@ -17463,7 +17463,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -17599,7 +17599,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -17624,7 +17624,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -17655,7 +17655,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -17789,7 +17789,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 30,
     "metatable": "#hash_dd57540c81b1cc74",
     "structs": [
@@ -17805,7 +17805,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8216,
                     "bitSize": 1,
@@ -17895,7 +17895,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5256,
                     "bitSize": 1312
@@ -18022,7 +18022,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8218,
                     "bitSize": 6,
@@ -18058,7 +18058,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -18194,7 +18194,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -18219,7 +18219,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -18250,7 +18250,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -18384,7 +18384,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 29,
     "metatable": "#hash_d2647a1de3d38349",
     "structs": [
@@ -18400,7 +18400,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8216,
                     "bitSize": 1,
@@ -18490,7 +18490,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5256,
                     "bitSize": 1312
@@ -18617,7 +18617,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8218,
                     "bitSize": 6,
@@ -18653,7 +18653,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -18789,7 +18789,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -18814,7 +18814,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -18845,7 +18845,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -18979,7 +18979,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 28,
     "metatable": "#hash_5a58cb7ffce98393",
     "structs": [
@@ -18995,7 +18995,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 9240,
                     "bitSize": 1,
@@ -19085,7 +19085,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 6280,
                     "bitSize": 1312
@@ -19212,7 +19212,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9242,
                     "bitSize": 6,
@@ -19248,7 +19248,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -19342,7 +19342,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -19354,7 +19354,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -19385,7 +19385,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -19574,7 +19574,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 27,
     "metatable": "#hash_6b0941546b63ad8",
     "structs": [
@@ -19590,7 +19590,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 9224,
                     "bitSize": 1,
@@ -19680,7 +19680,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 6264,
                     "bitSize": 1312
@@ -19807,7 +19807,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9226,
                     "bitSize": 6,
@@ -19843,7 +19843,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -19937,7 +19937,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -19949,7 +19949,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -19980,7 +19980,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -20169,7 +20169,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 26,
     "metatable": "#hash_185414fdd9fe3733",
     "structs": [
@@ -20185,7 +20185,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_76c39b7418a3ebcc",
+                    "name": "#haseverbootedgame",
                     "type": "uint",
                     "offset": 8200,
                     "bitSize": 1,
@@ -20275,7 +20275,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -20402,7 +20402,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8202,
                     "bitSize": 6,
@@ -20438,7 +20438,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -20524,7 +20524,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -20536,7 +20536,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -20567,7 +20567,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -20767,7 +20767,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 25,
     "metatable": "#hash_ce3fee8f63cb1edd",
     "structs": [
@@ -20865,7 +20865,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -20992,7 +20992,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8201,
                     "bitSize": 7,
@@ -21028,7 +21028,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -21114,7 +21114,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -21126,7 +21126,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -21157,7 +21157,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -21357,7 +21357,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 24,
     "metatable": "#hash_394ad497903b889a",
     "structs": [
@@ -21455,7 +21455,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -21582,7 +21582,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8201,
                     "bitSize": 7,
@@ -21618,7 +21618,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -21704,7 +21704,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -21716,7 +21716,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -21747,7 +21747,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -21947,7 +21947,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 23,
     "metatable": "#hash_eb196cd0e95a9d87",
     "structs": [
@@ -22045,7 +22045,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -22172,7 +22172,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8201,
                     "bitSize": 7,
@@ -22208,7 +22208,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -22294,7 +22294,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -22306,7 +22306,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -22337,7 +22337,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -22537,7 +22537,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 22,
     "metatable": "#hash_451ba93bf3d90d39",
     "structs": [
@@ -22635,7 +22635,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -22762,7 +22762,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8201,
                     "bitSize": 7,
@@ -22798,7 +22798,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -22851,7 +22851,7 @@
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_852c6769ce7686d",
+                    "name": "#medalstatname",
                     "type": "float",
                     "offset": 192,
                     "bitSize": 64,
@@ -22896,7 +22896,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -22927,7 +22927,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -23127,7 +23127,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 21,
     "metatable": "#hash_d43c122255c3e077",
     "structs": [
@@ -23225,7 +23225,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -23352,7 +23352,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8137,
                     "bitSize": 7,
@@ -23388,7 +23388,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -23479,7 +23479,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -23510,7 +23510,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -23710,7 +23710,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 20,
     "metatable": "#hash_d96e0ee200411ad0",
     "structs": [
@@ -23808,7 +23808,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -23935,7 +23935,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 7993,
                     "bitSize": 7,
@@ -24004,7 +24004,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -24075,7 +24075,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -24106,7 +24106,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -24282,7 +24282,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 19,
     "metatable": "#hash_c520788bf90e82f3",
     "structs": [
@@ -24380,7 +24380,7 @@
                     "bitSize": 184
                 },
                 {
-                    "name": "#hash_246e4baf7e98ecf5",
+                    "name": "#showcaseweapons",
                     "type": "struct#variant[4]",
                     "offset": 5240,
                     "bitSize": 1312
@@ -24507,7 +24507,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 7993,
                     "bitSize": 7,
@@ -24576,7 +24576,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -24647,7 +24647,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -24678,7 +24678,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -24854,7 +24854,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 18,
     "metatable": "#hash_962029342e2d99c9",
     "structs": [
@@ -25073,7 +25073,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 7009,
                     "bitSize": 7,
@@ -25148,7 +25148,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -25219,7 +25219,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -25250,7 +25250,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -25426,7 +25426,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 17,
     "metatable": "#hash_b114162b148bac81",
     "structs": [
@@ -25645,7 +25645,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 6881,
                     "bitSize": 7,
@@ -25712,7 +25712,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -25783,7 +25783,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -25814,7 +25814,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -25990,7 +25990,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 16,
     "metatable": "#hash_de86884540031c3a",
     "structs": [
@@ -26209,7 +26209,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 6369,
                     "bitSize": 7,
@@ -26276,7 +26276,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -26347,7 +26347,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -26378,7 +26378,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -26554,7 +26554,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 15,
     "metatable": "#hash_1f9d2b9dc2765fab",
     "structs": [
@@ -26773,7 +26773,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 6369,
                     "bitSize": 7,
@@ -26840,7 +26840,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -26911,7 +26911,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -26942,7 +26942,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -27118,7 +27118,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 14,
     "metatable": "#hash_9a19851d8e0b484b",
     "structs": [
@@ -27337,7 +27337,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 6369,
                     "bitSize": 7,
@@ -27404,7 +27404,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -27475,7 +27475,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -27506,7 +27506,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -27682,7 +27682,7 @@
     ]
 },
 {
-    "name": "#hash_8b36eb7f255dcc8",
+    "name": "#gamedata/ddl/generated/player.ddl",
     "version": 13,
     "metatable": "#hash_ccdfb42223967cf1",
     "structs": [
@@ -27901,7 +27901,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13089,
                     "bitSize": 7,
@@ -27980,7 +27980,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6de7c9c8f6c316d6",
+                    "name": "#contentlength",
                     "type": "uint",
                     "offset": 416,
                     "bitSize": 32,
@@ -28040,7 +28040,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -28071,7 +28071,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -28125,7 +28125,7 @@
             "members": [
                 {
                     "name": "#items",
-                    "type": "struct#hash_160c0de2e27af8df[60]",
+                    "type": "struct#characteritem[60]",
                     "offset": 0,
                     "bitSize": 1920
                 }
@@ -28234,7 +28234,7 @@
             ]
         },
         {
-            "name": "#hash_160c0de2e27af8df",
+            "name": "#characteritem",
             "members": [
                 {
                     "name": "#colors",
@@ -28261,7 +28261,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 26,
                     "bitSize": 6,
@@ -28273,15 +28273,15 @@
             "name": "#hash_508eaeb5f638a293",
             "members": [
                 {
-                    "name": "#hash_7f4511917565841",
-                    "type": "struct#hash_7bb1ee62fd31f6cb[4]",
+                    "name": "#mix",
+                    "type": "struct#mix_s[4]",
                     "offset": 0,
                     "bitSize": 256
                 }
             ]
         },
         {
-            "name": "#hash_7bb1ee62fd31f6cb",
+            "name": "#mix_s",
             "members": [
                 {
                     "name": "#modelindex",

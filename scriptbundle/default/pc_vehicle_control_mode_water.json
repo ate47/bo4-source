@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_vehicle_control_mode_water",
     "displayname": "#hash_47dde0a3583c3bf5",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "vehicle_alternate_control_water",
     "var_82c732a7": 1,

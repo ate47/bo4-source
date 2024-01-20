@@ -431,7 +431,7 @@ function function_bb7eedf0(statname, value) {
 // Params 6, eflags: 0x1 linked
 // Checksum 0x6d2278fc, Offset: 0x1510
 // Size: 0x17a
-function function_eec52333(weapon, statname, value, classnum, pickedup, var_9ade9f55) {
+function function_eec52333(weapon, statname, value, classnum, pickedup, forceads) {
     if (sessionmodeiswarzonegame() && game.state == "pregame") {
         return;
     }
@@ -441,7 +441,7 @@ function function_eec52333(weapon, statname, value, classnum, pickedup, var_9ade
     if (isdefined(level.var_b10e134d)) {
         [[ level.var_b10e134d ]](self, weapon, statname, value);
     }
-    self addweaponstat(weapon, statname, value, classnum, pickedup, var_9ade9f55);
+    self addweaponstat(weapon, statname, value, classnum, pickedup, forceads);
     switch (statname) {
     case #"shots":
     case #"used":

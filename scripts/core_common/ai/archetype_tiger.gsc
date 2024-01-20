@@ -761,14 +761,14 @@ function function_a4f5b046(entity, mocompanim, mocompanimblendouttime, mocompani
         dirtoenemy = vectornormalize(entity.enemy.origin - entity.origin);
         entity forceteleport(entity.origin, vectortoangles(dirtoenemy));
     }
-    if (!isdefined(self.var_cd8354e0)) {
-        self.var_cd8354e0 = new class_c40841ac();
-        self.var_cd8354e0.var_9bfa8497 = entity.origin;
-        self.var_cd8354e0.var_98bc84b7 = getnotetracktimes(mocompanim, "start_procedural")[0];
-        self.var_cd8354e0.var_6392c3a2 = getnotetracktimes(mocompanim, "stop_procedural")[0];
+    if (!isdefined(self.meleeinfo)) {
+        self.meleeinfo = new class_c40841ac();
+        self.meleeinfo.var_9bfa8497 = entity.origin;
+        self.meleeinfo.var_98bc84b7 = getnotetracktimes(mocompanim, "start_procedural")[0];
+        self.meleeinfo.var_6392c3a2 = getnotetracktimes(mocompanim, "stop_procedural")[0];
         var_2401d30a = getnotetracktimes(mocompanim, "stop_procedural_distance_check")[0];
         var_e397f54c = getmovedelta(mocompanim, 0, isdefined(var_2401d30a) ? var_2401d30a : 1, entity);
-        self.var_cd8354e0.var_cb28f380 = entity localtoworldcoords(var_e397f54c);
+        self.meleeinfo.var_cb28f380 = entity localtoworldcoords(var_e397f54c);
         /#
             movedelta = getmovedelta(mocompanim, 0, 1, entity);
             animendpos = entity localtoworldcoords(movedelta);
@@ -785,15 +785,15 @@ function function_a4f5b046(entity, mocompanim, mocompanimblendouttime, mocompani
 // Size: 0xa3c
 function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
     /#
-        assert(isdefined(self.var_cd8354e0));
+        assert(isdefined(self.meleeinfo));
     #/
-    var_e72a224a = entity getanimtime(mocompanim);
-    if (var_e72a224a >= self.var_ce44ec9f && var_e72a224a <= self.minigun_killstreak_minigun_inbound) {
+    currentanimtime = entity getanimtime(mocompanim);
+    if (currentanimtime >= self.var_ce44ec9f && currentanimtime <= self.minigun_killstreak_minigun_inbound) {
         self.var_47c91780 = 1;
     } else {
         self.var_47c91780 = 0;
     }
-    if (isdefined(self.enemy) && !self.var_cd8354e0.adjustmentstarted && self.var_cd8354e0.var_425c4c8b && var_e72a224a >= self.var_cd8354e0.var_98bc84b7) {
+    if (isdefined(self.enemy) && !self.meleeinfo.adjustmentstarted && self.meleeinfo.var_425c4c8b && currentanimtime >= self.meleeinfo.var_98bc84b7) {
         predictedenemypos = entity.enemy.origin;
         if (isplayer(entity.enemy)) {
             velocity = entity.enemy getvelocity();
@@ -803,31 +803,31 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
         }
         var_83fd29ee = vectornormalize(predictedenemypos - entity.origin);
         var_1efb2395 = predictedenemypos - var_83fd29ee * entity getpathfindingradius();
-        self.var_cd8354e0.adjustedendpos = var_1efb2395;
-        var_776ddabf = distancesquared(self.var_cd8354e0.var_cb28f380, self.var_cd8354e0.adjustedendpos);
-        var_65cbfb52 = distancesquared(self.var_cd8354e0.var_9bfa8497, self.var_cd8354e0.adjustedendpos);
+        self.meleeinfo.adjustedendpos = var_1efb2395;
+        var_776ddabf = distancesquared(self.meleeinfo.var_cb28f380, self.meleeinfo.adjustedendpos);
+        var_65cbfb52 = distancesquared(self.meleeinfo.var_9bfa8497, self.meleeinfo.adjustedendpos);
         if (var_776ddabf <= 35 * 35) {
             /#
                 record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
             #/
-            self.var_cd8354e0.var_425c4c8b = 0;
+            self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 <= 200 * 200) {
             /#
                 record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
             #/
-            self.var_cd8354e0.var_425c4c8b = 0;
+            self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 >= 400 * 400) {
             /#
                 record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
             #/
-            self.var_cd8354e0.var_425c4c8b = 0;
+            self.meleeinfo.var_425c4c8b = 0;
         }
-        if (self.var_cd8354e0.var_425c4c8b) {
-            var_776ddabf = distancesquared(self.var_cd8354e0.var_cb28f380, self.var_cd8354e0.adjustedendpos);
+        if (self.meleeinfo.var_425c4c8b) {
+            var_776ddabf = distancesquared(self.meleeinfo.var_cb28f380, self.meleeinfo.adjustedendpos);
             var_beabc994 = anglestoforward(self.angles);
             var_1c3641f2 = (entity.enemy.origin[0], entity.enemy.origin[1], entity.origin[2]);
             dirtoenemy = vectornormalize(var_1c3641f2 - entity.origin);
-            zdiff = self.var_cd8354e0.var_cb28f380[2] - entity.enemy.origin[2];
+            zdiff = self.meleeinfo.var_cb28f380[2] - entity.enemy.origin[2];
             var_6738a702 = abs(zdiff) <= 30;
             withinfov = vectordot(var_beabc994, dirtoenemy) > cos(30);
             var_7948b2f3 = var_6738a702 && withinfov;
@@ -842,34 +842,34 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
                 }
             #/
             if (var_425c4c8b) {
-                var_90c3cdd2 = length(self.var_cd8354e0.adjustedendpos - self.var_cd8354e0.var_cb28f380);
+                var_90c3cdd2 = length(self.meleeinfo.adjustedendpos - self.meleeinfo.var_cb28f380);
                 timestep = function_60d95f53();
                 animlength = getanimlength(mocompanim) * 1000;
-                starttime = self.var_cd8354e0.var_98bc84b7 * animlength;
-                stoptime = self.var_cd8354e0.var_6392c3a2 * animlength;
+                starttime = self.meleeinfo.var_98bc84b7 * animlength;
+                stoptime = self.meleeinfo.var_6392c3a2 * animlength;
                 starttime = floor(starttime / timestep);
                 stoptime = floor(stoptime / timestep);
                 adjustduration = stoptime - starttime;
-                self.var_cd8354e0.var_10b8b6d1 = vectornormalize(self.var_cd8354e0.adjustedendpos - self.var_cd8354e0.var_cb28f380);
-                self.var_cd8354e0.var_8b9a15a6 = var_90c3cdd2 / adjustduration;
-                self.var_cd8354e0.var_425c4c8b = 1;
-                self.var_cd8354e0.adjustmentstarted = 1;
+                self.meleeinfo.var_10b8b6d1 = vectornormalize(self.meleeinfo.adjustedendpos - self.meleeinfo.var_cb28f380);
+                self.meleeinfo.var_8b9a15a6 = var_90c3cdd2 / adjustduration;
+                self.meleeinfo.var_425c4c8b = 1;
+                self.meleeinfo.adjustmentstarted = 1;
                 self allowpitchangle(0);
                 self clearpitchorient();
             } else {
-                self.var_cd8354e0.var_425c4c8b = 0;
+                self.meleeinfo.var_425c4c8b = 0;
             }
         }
     }
-    if (self.var_cd8354e0.adjustmentstarted && var_e72a224a <= self.var_cd8354e0.var_6392c3a2) {
+    if (self.meleeinfo.adjustmentstarted && currentanimtime <= self.meleeinfo.var_6392c3a2) {
         /#
-            assert(isdefined(self.var_cd8354e0.var_10b8b6d1) && isdefined(self.var_cd8354e0.var_8b9a15a6));
+            assert(isdefined(self.meleeinfo.var_10b8b6d1) && isdefined(self.meleeinfo.var_8b9a15a6));
         #/
         /#
-            recordsphere(self.var_cd8354e0.var_cb28f380, 3, (0, 1, 0), "<unknown string>");
-            recordsphere(self.var_cd8354e0.adjustedendpos, 3, (0, 0, 1), "<unknown string>");
+            recordsphere(self.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<unknown string>");
+            recordsphere(self.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<unknown string>");
         #/
-        adjustedorigin = entity.origin + entity.var_cd8354e0.var_10b8b6d1 * self.var_cd8354e0.var_8b9a15a6;
+        adjustedorigin = entity.origin + entity.meleeinfo.var_10b8b6d1 * self.meleeinfo.var_8b9a15a6;
     }
     if (isdefined(entity.favoriteenemy) && distancesquared(entity.favoriteenemy.origin, entity.origin) <= 64 * 64 && function_1b7345aa(entity, entity.favoriteenemy)) {
         entity animmode("angle deltas");
@@ -894,7 +894,7 @@ function function_7467b3c0(entity, mocompanim, mocompanimblendouttime, mocompani
     entity orientmode("face default");
     entity collidewithactors(1);
     entity.var_b736fc8b = 0;
-    entity.var_cd8354e0 = undefined;
+    entity.meleeinfo = undefined;
     entity allowpitchangle(1);
     entity setpitchorient();
 }

@@ -60,9 +60,9 @@ class czm_build_progress : cluielem {
     // Params 2, eflags: 0x1 linked
     // Checksum 0x915af0a2, Offset: 0x218
     // Size: 0x54
-    function setup_clientfields(uid, var_afaddf7a) {
+    function setup_clientfields(uid, progresscallback) {
         cluielem::setup_clientfields(uid);
-        cluielem::add_clientfield("progress", 1, 6, "float", var_afaddf7a);
+        cluielem::add_clientfield("progress", 1, 6, "float", progresscallback);
     }
 
 }
@@ -71,9 +71,9 @@ class czm_build_progress : cluielem {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x590cb2c7, Offset: 0xb0
 // Size: 0x4c
-function register(uid, var_afaddf7a) {
+function register(uid, progresscallback) {
     elem = new czm_build_progress();
-    [[ elem ]]->setup_clientfields(uid, var_afaddf7a);
+    [[ elem ]]->setup_clientfields(uid, progresscallback);
     return elem;
 }
 

@@ -877,11 +877,11 @@ function function_739ac4a0(params) {
     self endon(#"change_state", #"death");
     self setspeed(self.settings.defaultmovespeed);
     for (;;) {
-        var_1f2328d0 = self function_4794d6a3();
+        goalinfo = self function_4794d6a3();
         newpos = undefined;
-        isatgoal = isdefined(var_1f2328d0.isatgoal) && var_1f2328d0.isatgoal || isdefined(self.overridegoalpos) && self isapproachinggoal();
+        isatgoal = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal || isdefined(self.overridegoalpos) && self isapproachinggoal();
         if (!isatgoal) {
-            goalpos = var_1f2328d0.goalpos;
+            goalpos = goalinfo.goalpos;
         }
         if (isdefined(goalpos)) {
             self setgoal(goalpos, 1, 0);

@@ -123,7 +123,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 64,
                     "bitSize": 64,
@@ -154,7 +154,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3a2c893b724a10b0",
+                    "name": "#subdivisionrank",
                     "type": "uint",
                     "offset": 160,
                     "bitSize": 32,
@@ -162,7 +162,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -170,7 +170,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -208,7 +208,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_4b3ab6c931987e2c",
+                    "name": "#matchstartstreak",
                     "type": "int",
                     "offset": 192,
                     "bitSize": 32,
@@ -232,7 +232,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_21b4d1e5aa3c24b5",
+                    "name": "#matchstartlosses",
                     "type": "uint",
                     "offset": 96,
                     "bitSize": 32,
@@ -240,7 +240,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_db665f25bc15c02",
+                    "name": "#losseslatejoin",
                     "type": "uint",
                     "offset": 128,
                     "bitSize": 32,
@@ -256,7 +256,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_321ef22328085145",
+                    "name": "#matchcount",
                     "type": "uint",
                     "offset": 64,
                     "bitSize": 32,
@@ -392,7 +392,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 64,
                     "bitSize": 64,
@@ -423,7 +423,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3a2c893b724a10b0",
+                    "name": "#subdivisionrank",
                     "type": "uint",
                     "offset": 160,
                     "bitSize": 32,
@@ -431,7 +431,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -439,7 +439,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -477,7 +477,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_4b3ab6c931987e2c",
+                    "name": "#matchstartstreak",
                     "type": "int",
                     "offset": 128,
                     "bitSize": 32,
@@ -501,7 +501,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_21b4d1e5aa3c24b5",
+                    "name": "#matchstartlosses",
                     "type": "uint",
                     "offset": 64,
                     "bitSize": 32,
@@ -653,7 +653,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 64,
                     "bitSize": 64,
@@ -684,7 +684,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3a2c893b724a10b0",
+                    "name": "#subdivisionrank",
                     "type": "uint",
                     "offset": 160,
                     "bitSize": 32,
@@ -692,7 +692,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3be0648edda73ae2",
+                    "name": "#bestsubdivisionrank",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -700,7 +700,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_5dc602053653b486",
+                    "name": "#firstsubdivisionrankstreak",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -907,7 +907,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 32,
                     "bitSize": 64,

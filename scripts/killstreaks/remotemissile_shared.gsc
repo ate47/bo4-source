@@ -893,13 +893,13 @@ function checktarget(rocket) {
         weapon = getweapon(#"remote_missile");
         settings = getscriptbundle(weapon.customsettings);
         target_radius = isdefined(settings.target_radius) ? settings.target_radius : 600;
-        var_5667e212 = target_radius * target_radius;
+        cutoff_dist2 = target_radius * target_radius;
         fwd = anglestoforward(rocket.angles);
         dir = target.origin - rocket.origin;
         dot = vectordot(dir, fwd);
         proj = rocket.origin + vectorscale(fwd, dot);
         dist2 = distancesquared(target.origin, proj);
-        if (dist2 < var_5667e212) {
+        if (dist2 < cutoff_dist2) {
             if (!bullettracepassed(target.origin + vectorscale((0, 0, 1), 60), target.origin + vectorscale((0, 0, 1), 1000), 0, target)) {
                 target = undefined;
             }

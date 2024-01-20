@@ -1454,12 +1454,12 @@ function zombieisthinkdone(behaviortreeentity) {
 // Checksum 0x8a2643b, Offset: 0x5fb0
 // Size: 0x11c
 function zombieisatgoal(behaviortreeentity) {
-    var_1f2328d0 = behaviortreeentity function_4794d6a3();
-    isatscriptgoal = isdefined(var_1f2328d0.var_9e404264) && var_1f2328d0.var_9e404264;
+    goalinfo = behaviortreeentity function_4794d6a3();
+    isatscriptgoal = isdefined(goalinfo.var_9e404264) && goalinfo.var_9e404264;
     if (isdefined(level.var_21326085) && level.var_21326085) {
-        if (!isatscriptgoal && isdefined(var_1f2328d0.overridegoalpos)) {
-            if (abs(var_1f2328d0.overridegoalpos[2] - behaviortreeentity.origin[2]) < 12) {
-                dist = distance2dsquared(var_1f2328d0.overridegoalpos, behaviortreeentity.origin);
+        if (!isatscriptgoal && isdefined(goalinfo.overridegoalpos)) {
+            if (abs(goalinfo.overridegoalpos[2] - behaviortreeentity.origin[2]) < 12) {
+                dist = distance2dsquared(goalinfo.overridegoalpos, behaviortreeentity.origin);
                 if (dist < 144) {
                     return 1;
                 }
@@ -1474,8 +1474,8 @@ function zombieisatgoal(behaviortreeentity) {
 // Checksum 0xdcb1e405, Offset: 0x60d8
 // Size: 0x7e
 function zombieisatentrance(behaviortreeentity) {
-    var_1f2328d0 = behaviortreeentity function_4794d6a3();
-    isatscriptgoal = isdefined(var_1f2328d0.var_9e404264) && var_1f2328d0.var_9e404264;
+    goalinfo = behaviortreeentity function_4794d6a3();
+    isatscriptgoal = isdefined(goalinfo.var_9e404264) && goalinfo.var_9e404264;
     isatentrance = isdefined(behaviortreeentity.first_node) && isatscriptgoal;
     return isatentrance;
 }

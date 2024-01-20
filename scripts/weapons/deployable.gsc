@@ -522,9 +522,9 @@ function function_54d27855(client_pos, client_angles, var_36baa3f1, previs_weapo
         var_b6085963 = bullettrace(var_75e7a61, var_1a606e14, 0, ignore_entity);
         if (var_b6085963[#"fraction"] > 0) {
             var_f7e67f28 = previs_weapon.var_f7e67f28 * var_b6085963[#"fraction"] - var_f94d59f8;
-            var_14b67847 = client_pos + forward2d * var_f7e67f28 + (0, 0, previs_weapon.var_227c90e1);
-            var_c9851f67 = var_14b67847 - (0, 0, previs_weapon.var_227c90e1 - previs_weapon.var_849af6b4);
-            var_4bc118b9 = groundtrace(var_14b67847, var_c9851f67, 0, ignore_entity);
+            ground_trace_start = client_pos + forward2d * var_f7e67f28 + (0, 0, previs_weapon.var_227c90e1);
+            ground_trace_end = ground_trace_start - (0, 0, previs_weapon.var_227c90e1 - previs_weapon.var_849af6b4);
+            var_4bc118b9 = groundtrace(ground_trace_start, ground_trace_end, 0, ignore_entity);
             hitent = var_4bc118b9[#"entity"];
             if (var_4bc118b9[#"fraction"] > 0.01 && var_4bc118b9[#"fraction"] < 1 && var_4bc118b9[#"normal"][2] > 0.9) {
                 hit_location = var_4bc118b9[#"position"];

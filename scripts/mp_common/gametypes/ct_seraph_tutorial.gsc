@@ -285,7 +285,7 @@ function function_9b9525e9() {
     function_4bb467a();
     level.var_ad7c0539 = 11;
     function_c43189cd();
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace namespace_56b8c026/namespace_56b8c026

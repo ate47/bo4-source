@@ -669,10 +669,10 @@ function monitor_detectnearbyenemies(local_client_num) {
         if (enemydetectedbitfield) {
             enemylosttime = 0;
             if (previousenemydetectedbitfield != enemydetectedbitfield && enemynearbytime >= 0.05) {
-                var_277a1951 = enemydetectedbitfield;
+                bitfields = enemydetectedbitfield;
                 for (i = 0; i < 6; i++) {
-                    self thread function_c90f8547(var_c948d7f9[i], var_277a1951 & (1 << 4) - 1, bundle.var_a3d426e6);
-                    var_277a1951 = var_277a1951 >> 3;
+                    self thread function_c90f8547(var_c948d7f9[i], bitfields & (1 << 4) - 1, bundle.var_a3d426e6);
+                    bitfields = bitfields >> 3;
                 }
                 enemynearbytime = 0;
                 diff = enemydetectedbitfield ^ previousenemydetectedbitfield;

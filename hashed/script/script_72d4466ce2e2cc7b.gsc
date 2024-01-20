@@ -486,8 +486,8 @@ function function_f5866497(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 2, eflags: 0x1 linked
 // Checksum 0xf01a20b6, Offset: 0x2dc0
 // Size: 0x90
-function function_815076cb(var_fa8995f4, color) {
-    foreach (key in var_fa8995f4) {
+function function_815076cb(keylist, color) {
+    foreach (key in keylist) {
         function_b4c6383f(key, 1, color);
     }
 }
@@ -496,8 +496,8 @@ function function_815076cb(var_fa8995f4, color) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0x2b0db3a8, Offset: 0x2e58
 // Size: 0xa8
-function function_ed8d6d5e(var_fa8995f4, startcolor, endcolor, fadetime) {
-    foreach (key in var_fa8995f4) {
+function function_ed8d6d5e(keylist, startcolor, endcolor, fadetime) {
+    foreach (key in keylist) {
         function_b4c6383f(key, 2, startcolor, endcolor, fadetime);
     }
 }
@@ -506,8 +506,8 @@ function function_ed8d6d5e(var_fa8995f4, startcolor, endcolor, fadetime) {
 // Params 6, eflags: 0x1 linked
 // Checksum 0xd1d3d73f, Offset: 0x2f08
 // Size: 0xc0
-function function_119b3b6b(var_fa8995f4, color, var_276aa694, fadetime, var_109ec056, offset) {
-    foreach (key in var_fa8995f4) {
+function function_119b3b6b(keylist, color, var_276aa694, fadetime, var_109ec056, offset) {
+    foreach (key in keylist) {
         function_b4c6383f(key, 4, color, var_276aa694, fadetime, var_109ec056, offset);
     }
 }
@@ -516,8 +516,8 @@ function function_119b3b6b(var_fa8995f4, color, var_276aa694, fadetime, var_109e
 // Params 1, eflags: 0x0
 // Checksum 0xbef1d37b, Offset: 0x2fd0
 // Size: 0x80
-function function_6f501c4(var_fa8995f4) {
-    foreach (key in var_fa8995f4) {
+function function_6f501c4(keylist) {
+    foreach (key in keylist) {
         function_5e0ffde3(key);
     }
 }

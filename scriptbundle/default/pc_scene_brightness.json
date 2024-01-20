@@ -11,7 +11,7 @@
     "displayname": "#hash_64ade150ffb574d4",
     "rangestartvalue": -1,
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "r_sceneBrightness",
     "var_b7401319": "#menu/off"

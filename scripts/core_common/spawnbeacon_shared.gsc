@@ -576,12 +576,12 @@ function function_a9ff3efb(var_d3213f00) {
         var_c2ca0930 = getarraykeys(level.spawnbeaconsettings.userspawnbeacons[self.owner.clientid]);
         foreach (var_2f55edb in var_c2ca0930) {
             if (level.spawnbeaconsettings.userspawnbeacons[self.owner.clientid][var_2f55edb] == self) {
-                var_10432750 = var_2f55edb;
+                indextoremove = var_2f55edb;
             }
         }
     }
-    if (isdefined(var_10432750)) {
-        level.spawnbeaconsettings.userspawnbeacons[self.owner.clientid] = array::remove_index(level.spawnbeaconsettings.userspawnbeacons[self.owner.clientid], var_10432750, 0);
+    if (isdefined(indextoremove)) {
+        level.spawnbeaconsettings.userspawnbeacons[self.owner.clientid] = array::remove_index(level.spawnbeaconsettings.userspawnbeacons[self.owner.clientid], indextoremove, 0);
     }
     self stoploopsound();
     self notify(#"beacon_removed");
@@ -801,9 +801,9 @@ function function_438ca4e0() {
 // Checksum 0x6c8134b4, Offset: 0x3190
 // Size: 0x36
 function function_9c87725b() {
-    var_d5110c6d = game.spawnbeaconid;
+    currentid = game.spawnbeaconid;
     game.spawnbeaconid = game.spawnbeaconid + 1;
-    return var_d5110c6d;
+    return currentid;
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared

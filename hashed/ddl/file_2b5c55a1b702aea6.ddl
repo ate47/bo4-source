@@ -29,7 +29,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -99,13 +99,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -150,7 +150,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -159,7 +159,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -260,7 +260,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -330,13 +330,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -381,7 +381,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -390,7 +390,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -491,7 +491,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -561,13 +561,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -612,7 +612,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -621,7 +621,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -722,7 +722,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -792,13 +792,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -843,7 +843,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -852,7 +852,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -953,7 +953,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -1023,13 +1023,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -1074,7 +1074,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -1083,7 +1083,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -1184,7 +1184,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -1254,13 +1254,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -1305,7 +1305,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -1314,7 +1314,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -1415,7 +1415,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -1485,13 +1485,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -1536,7 +1536,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -1545,7 +1545,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -1646,7 +1646,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -1716,13 +1716,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -1767,7 +1767,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -1776,7 +1776,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -1877,7 +1877,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -1947,13 +1947,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -1998,7 +1998,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -2007,7 +2007,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -2108,7 +2108,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -2178,13 +2178,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -2229,7 +2229,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -2238,7 +2238,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -2339,7 +2339,7 @@
                     "bitSize": 9144
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 9177,
                     "bitSize": 7,
@@ -2409,13 +2409,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -2460,7 +2460,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -2469,7 +2469,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",
@@ -2570,7 +2570,7 @@
                     "bitSize": 8280
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 8313,
                     "bitSize": 7,
@@ -2640,13 +2640,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 208,
                     "bitSize": 112
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 112
                 },
@@ -2691,7 +2691,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 321,
                     "bitSize": 7,
@@ -2700,7 +2700,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",

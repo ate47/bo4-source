@@ -232,7 +232,7 @@ function function_9b9525e9() {
     level.var_e72728b8 = array(#"sig_buckler_dw", #"eq_swat_grenade");
     var_3608d414 = array(#"hash_7f0714797e19dd7f", #"hash_7f0713797e19dbcc");
     ct_vo::function_831e0584(var_3608d414, 1);
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace ct_ajax_tutorial/ct_ajax_tutorial

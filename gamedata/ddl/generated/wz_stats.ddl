@@ -56,7 +56,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -533,7 +533,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -630,7 +630,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -666,7 +666,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 997253,
                     "bitSize": 3,
@@ -764,7 +764,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -870,7 +870,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -906,7 +906,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -958,7 +958,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -1055,7 +1055,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -1293,7 +1293,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -1367,7 +1367,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -1406,7 +1406,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -1458,7 +1458,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -1571,7 +1571,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -1591,7 +1591,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -1615,7 +1615,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -1783,7 +1783,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -1814,7 +1814,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -1858,7 +1858,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -1867,7 +1867,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -1878,7 +1878,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -1904,7 +1904,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -1912,7 +1912,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -2058,7 +2058,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -2107,7 +2107,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -2135,7 +2135,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -2293,7 +2293,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -2770,7 +2770,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -2867,7 +2867,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -2903,7 +2903,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 997253,
                     "bitSize": 3,
@@ -3001,7 +3001,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -3107,7 +3107,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -3143,7 +3143,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -3195,7 +3195,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -3292,7 +3292,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -3530,7 +3530,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -3604,7 +3604,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -3643,7 +3643,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -3695,7 +3695,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -3808,7 +3808,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -3828,7 +3828,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -3852,7 +3852,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -4020,7 +4020,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -4051,7 +4051,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -4095,7 +4095,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -4104,7 +4104,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -4115,7 +4115,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -4141,7 +4141,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -4149,7 +4149,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -4295,7 +4295,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -4344,7 +4344,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -4372,7 +4372,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -4530,7 +4530,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -5007,7 +5007,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -5104,7 +5104,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -5140,7 +5140,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 996157,
                     "bitSize": 3,
@@ -5238,7 +5238,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -5344,7 +5344,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -5380,7 +5380,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -5432,7 +5432,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -5529,7 +5529,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -5767,7 +5767,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -5841,7 +5841,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -5880,7 +5880,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -5932,7 +5932,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -6045,7 +6045,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -6065,7 +6065,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -6089,7 +6089,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -6257,7 +6257,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -6288,7 +6288,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -6332,7 +6332,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -6341,7 +6341,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -6352,7 +6352,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -6378,7 +6378,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -6386,7 +6386,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -6532,7 +6532,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -6581,7 +6581,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -6609,7 +6609,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -6767,7 +6767,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -7244,7 +7244,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -7341,7 +7341,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -7377,7 +7377,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 996157,
                     "bitSize": 3,
@@ -7475,7 +7475,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -7581,7 +7581,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -7617,7 +7617,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -7669,7 +7669,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -7766,7 +7766,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -8004,7 +8004,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -8078,7 +8078,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -8117,7 +8117,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -8169,7 +8169,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -8282,7 +8282,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -8302,7 +8302,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -8326,7 +8326,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -8494,7 +8494,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -8525,7 +8525,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -8569,7 +8569,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -8578,7 +8578,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -8589,7 +8589,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -8615,7 +8615,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -8623,7 +8623,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -8769,7 +8769,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -8818,7 +8818,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -8846,7 +8846,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -9004,7 +9004,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -9481,7 +9481,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -9578,7 +9578,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -9614,7 +9614,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 995061,
                     "bitSize": 3,
@@ -9712,7 +9712,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -9818,7 +9818,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -9854,7 +9854,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -9906,7 +9906,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -10003,7 +10003,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -10241,7 +10241,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -10315,7 +10315,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -10354,7 +10354,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -10406,7 +10406,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -10519,7 +10519,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -10539,7 +10539,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -10563,7 +10563,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -10731,7 +10731,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -10762,7 +10762,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -10806,7 +10806,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -10815,7 +10815,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -10826,7 +10826,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -10852,7 +10852,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -10860,7 +10860,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -11006,7 +11006,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -11055,7 +11055,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -11083,7 +11083,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -11241,7 +11241,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -11718,7 +11718,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -11815,7 +11815,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -11851,7 +11851,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 992869,
                     "bitSize": 3,
@@ -11949,7 +11949,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -12055,7 +12055,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -12091,7 +12091,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -12143,7 +12143,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -12240,7 +12240,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -12478,7 +12478,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -12552,7 +12552,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -12591,7 +12591,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -12643,7 +12643,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -12756,7 +12756,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -12776,7 +12776,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -12800,7 +12800,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -12968,7 +12968,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -12999,7 +12999,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -13043,7 +13043,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -13052,7 +13052,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -13063,7 +13063,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -13089,7 +13089,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -13097,7 +13097,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -13243,7 +13243,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -13292,7 +13292,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -13320,7 +13320,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -13478,7 +13478,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -13955,7 +13955,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -14052,7 +14052,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -14088,7 +14088,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 992869,
                     "bitSize": 3,
@@ -14186,7 +14186,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -14292,7 +14292,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -14328,7 +14328,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -14380,7 +14380,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -14477,7 +14477,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -14715,7 +14715,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -14789,7 +14789,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -14828,7 +14828,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -14880,7 +14880,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -14993,7 +14993,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -15013,7 +15013,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -15037,7 +15037,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -15205,7 +15205,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -15236,7 +15236,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -15280,7 +15280,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -15289,7 +15289,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -15300,7 +15300,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -15326,7 +15326,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -15334,7 +15334,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -15480,7 +15480,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -15529,7 +15529,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -15557,7 +15557,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -15715,7 +15715,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -16192,7 +16192,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -16289,7 +16289,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -16325,7 +16325,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 990677,
                     "bitSize": 3,
@@ -16423,7 +16423,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -16529,7 +16529,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -16565,7 +16565,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -16617,7 +16617,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -16714,7 +16714,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -16952,7 +16952,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -17026,7 +17026,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -17065,7 +17065,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -17117,7 +17117,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -17230,7 +17230,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -17250,7 +17250,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -17274,7 +17274,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -17442,7 +17442,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -17473,7 +17473,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -17517,7 +17517,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -17526,7 +17526,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -17537,7 +17537,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -17563,7 +17563,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -17571,7 +17571,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -17717,7 +17717,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -17766,7 +17766,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -17794,7 +17794,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -17952,7 +17952,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -18429,7 +18429,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -18526,7 +18526,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -18562,7 +18562,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 990677,
                     "bitSize": 3,
@@ -18660,7 +18660,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -18766,7 +18766,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -18802,7 +18802,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -18854,7 +18854,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -18951,7 +18951,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -19189,7 +19189,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -19263,7 +19263,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -19302,7 +19302,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -19354,7 +19354,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -19467,7 +19467,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -19487,7 +19487,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -19511,7 +19511,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -19679,7 +19679,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -19710,7 +19710,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -19754,7 +19754,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -19763,7 +19763,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -19774,7 +19774,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -19800,7 +19800,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -19808,7 +19808,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -19954,7 +19954,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -20003,7 +20003,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -20031,7 +20031,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -20189,7 +20189,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -20666,7 +20666,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -20763,7 +20763,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -20799,7 +20799,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 989581,
                     "bitSize": 3,
@@ -20897,7 +20897,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -21003,7 +21003,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -21039,7 +21039,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -21091,7 +21091,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -21188,7 +21188,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -21426,7 +21426,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -21500,7 +21500,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -21539,7 +21539,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -21591,7 +21591,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -21704,7 +21704,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -21724,7 +21724,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -21748,7 +21748,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -21916,7 +21916,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -21947,7 +21947,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -21991,7 +21991,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -22000,7 +22000,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -22011,7 +22011,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -22037,7 +22037,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -22045,7 +22045,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -22191,7 +22191,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -22240,7 +22240,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -22268,7 +22268,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -22426,7 +22426,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -22903,7 +22903,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -23000,7 +23000,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -23036,7 +23036,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 988485,
                     "bitSize": 3,
@@ -23134,7 +23134,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -23240,7 +23240,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -23276,7 +23276,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -23328,7 +23328,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -23425,7 +23425,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -23663,7 +23663,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -23737,7 +23737,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -23776,7 +23776,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -23828,7 +23828,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -23941,7 +23941,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -23961,7 +23961,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -23985,7 +23985,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -24153,7 +24153,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -24184,7 +24184,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -24228,7 +24228,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -24237,7 +24237,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -24248,7 +24248,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -24274,7 +24274,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -24282,7 +24282,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -24428,7 +24428,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -24477,7 +24477,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -24505,7 +24505,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -24663,7 +24663,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -25140,7 +25140,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -25237,7 +25237,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -25273,7 +25273,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 988485,
                     "bitSize": 3,
@@ -25371,7 +25371,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -25477,7 +25477,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -25513,7 +25513,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -25565,7 +25565,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -25662,7 +25662,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -25900,7 +25900,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -25974,7 +25974,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -26013,7 +26013,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -26065,7 +26065,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -26178,7 +26178,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -26198,7 +26198,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -26222,7 +26222,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -26390,7 +26390,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -26421,7 +26421,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -26465,7 +26465,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -26474,7 +26474,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -26485,7 +26485,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -26511,7 +26511,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -26519,7 +26519,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -26665,7 +26665,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -26714,7 +26714,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -26742,7 +26742,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -26900,7 +26900,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -27377,7 +27377,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -27474,7 +27474,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -27510,7 +27510,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 988485,
                     "bitSize": 3,
@@ -27608,7 +27608,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -27714,7 +27714,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -27750,7 +27750,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -27802,7 +27802,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -27899,7 +27899,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -28137,7 +28137,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -28211,7 +28211,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -28250,7 +28250,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -28302,7 +28302,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -28415,7 +28415,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -28435,7 +28435,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -28459,7 +28459,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -28627,7 +28627,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -28658,7 +28658,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -28702,7 +28702,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -28711,7 +28711,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -28722,7 +28722,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -28748,7 +28748,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -28756,7 +28756,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -28902,7 +28902,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -28951,7 +28951,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -28979,7 +28979,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -29137,7 +29137,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -29614,7 +29614,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -29711,7 +29711,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -29747,7 +29747,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 987389,
                     "bitSize": 3,
@@ -29845,7 +29845,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -29951,7 +29951,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -29987,7 +29987,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -30039,7 +30039,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -30136,7 +30136,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -30374,7 +30374,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -30448,7 +30448,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -30487,7 +30487,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -30539,7 +30539,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -30652,7 +30652,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -30672,7 +30672,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -30696,7 +30696,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -30864,7 +30864,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -30895,7 +30895,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -30939,7 +30939,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -30948,7 +30948,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -30959,7 +30959,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -30985,7 +30985,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -30993,7 +30993,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -31139,7 +31139,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -31188,7 +31188,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -31216,7 +31216,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -31374,7 +31374,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -31851,7 +31851,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -31948,7 +31948,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -31984,7 +31984,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 986293,
                     "bitSize": 3,
@@ -32082,7 +32082,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -32188,7 +32188,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -32224,7 +32224,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -32276,7 +32276,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -32373,7 +32373,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -32611,7 +32611,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -32685,7 +32685,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -32724,7 +32724,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -32776,7 +32776,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -32889,7 +32889,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -32909,7 +32909,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -32933,7 +32933,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -33101,7 +33101,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -33132,7 +33132,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -33176,7 +33176,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -33185,7 +33185,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -33196,7 +33196,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -33222,7 +33222,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -33230,7 +33230,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -33376,7 +33376,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -33425,7 +33425,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -33453,7 +33453,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -33611,7 +33611,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -34088,7 +34088,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -34185,7 +34185,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -34221,7 +34221,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 984101,
                     "bitSize": 3,
@@ -34319,7 +34319,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -34425,7 +34425,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -34461,7 +34461,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -34513,7 +34513,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -34610,7 +34610,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -34848,7 +34848,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -34922,7 +34922,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -34961,7 +34961,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -35013,7 +35013,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -35126,7 +35126,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -35146,7 +35146,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -35170,7 +35170,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -35338,7 +35338,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -35369,7 +35369,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -35413,7 +35413,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -35422,7 +35422,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -35433,7 +35433,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -35459,7 +35459,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -35467,7 +35467,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -35613,7 +35613,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -35662,7 +35662,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -35690,7 +35690,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -35848,7 +35848,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -36325,7 +36325,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -36422,7 +36422,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -36458,7 +36458,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 983005,
                     "bitSize": 3,
@@ -36556,7 +36556,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -36662,7 +36662,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -36698,7 +36698,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -36750,7 +36750,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -36847,7 +36847,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -37085,7 +37085,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -37159,7 +37159,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -37198,7 +37198,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -37250,7 +37250,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -37363,7 +37363,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -37383,7 +37383,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -37407,7 +37407,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -37575,7 +37575,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -37606,7 +37606,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -37650,7 +37650,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -37659,7 +37659,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -37670,7 +37670,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -37696,7 +37696,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -37704,7 +37704,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -37850,7 +37850,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -37899,7 +37899,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -37927,7 +37927,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -38085,7 +38085,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -38562,7 +38562,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -38659,7 +38659,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -38695,7 +38695,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 981909,
                     "bitSize": 3,
@@ -38793,7 +38793,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -38899,7 +38899,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -38935,7 +38935,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -38987,7 +38987,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -39084,7 +39084,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -39322,7 +39322,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -39396,7 +39396,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -39435,7 +39435,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -39487,7 +39487,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -39600,7 +39600,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -39620,7 +39620,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -39644,7 +39644,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -39812,7 +39812,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -39843,7 +39843,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -39887,7 +39887,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -39896,7 +39896,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -39907,7 +39907,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -39933,7 +39933,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -39941,7 +39941,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -40087,7 +40087,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -40136,7 +40136,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -40164,7 +40164,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -40322,7 +40322,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -40799,7 +40799,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -40896,7 +40896,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -40932,7 +40932,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 980813,
                     "bitSize": 3,
@@ -41030,7 +41030,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -41136,7 +41136,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -41172,7 +41172,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -41224,7 +41224,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -41321,7 +41321,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -41559,7 +41559,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -41633,7 +41633,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -41672,7 +41672,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -41724,7 +41724,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -41837,7 +41837,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -41857,7 +41857,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -41881,7 +41881,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -42049,7 +42049,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -42080,7 +42080,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -42124,7 +42124,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -42133,7 +42133,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -42144,7 +42144,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -42170,7 +42170,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -42178,7 +42178,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -42324,7 +42324,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -42373,7 +42373,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -42401,7 +42401,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -42559,7 +42559,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -43036,7 +43036,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -43133,7 +43133,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -43169,7 +43169,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 978621,
                     "bitSize": 3,
@@ -43267,7 +43267,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -43373,7 +43373,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -43409,7 +43409,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -43461,7 +43461,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -43558,7 +43558,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -43796,7 +43796,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -43870,7 +43870,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -43909,7 +43909,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -43961,7 +43961,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -44074,7 +44074,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -44094,7 +44094,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -44118,7 +44118,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -44286,7 +44286,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -44317,7 +44317,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -44361,7 +44361,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -44370,7 +44370,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -44381,7 +44381,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -44407,7 +44407,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -44415,7 +44415,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -44561,7 +44561,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -44610,7 +44610,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -44638,7 +44638,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -44796,7 +44796,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -45273,7 +45273,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -45370,7 +45370,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -45406,7 +45406,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 972045,
                     "bitSize": 3,
@@ -45504,7 +45504,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -45610,7 +45610,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -45646,7 +45646,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -45698,7 +45698,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -45795,7 +45795,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -46033,7 +46033,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -46107,7 +46107,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -46146,7 +46146,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -46198,7 +46198,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -46311,7 +46311,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -46331,7 +46331,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -46355,7 +46355,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -46523,7 +46523,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -46554,7 +46554,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -46598,7 +46598,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -46607,7 +46607,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -46618,7 +46618,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -46644,7 +46644,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -46652,7 +46652,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -46798,7 +46798,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -46847,7 +46847,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -46875,7 +46875,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -47033,7 +47033,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -47510,7 +47510,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -47607,7 +47607,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -47643,7 +47643,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 972045,
                     "bitSize": 3,
@@ -47741,7 +47741,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -47847,7 +47847,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -47883,7 +47883,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -47935,7 +47935,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -48032,7 +48032,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -48270,7 +48270,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -48336,7 +48336,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -48383,7 +48383,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -48435,7 +48435,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -48548,7 +48548,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -48568,7 +48568,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -48592,7 +48592,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -48760,7 +48760,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -48791,7 +48791,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -48835,7 +48835,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -48844,7 +48844,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -48855,7 +48855,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -48881,7 +48881,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -48889,7 +48889,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -49035,7 +49035,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -49084,7 +49084,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -49112,7 +49112,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -49264,7 +49264,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -49741,7 +49741,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -49838,7 +49838,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -49874,7 +49874,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 851485,
                     "bitSize": 3,
@@ -49935,7 +49935,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -50070,7 +50070,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -50106,7 +50106,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -50158,7 +50158,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -50255,7 +50255,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -50464,7 +50464,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -50530,7 +50530,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -50569,7 +50569,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -50621,7 +50621,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -50742,7 +50742,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -50762,7 +50762,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -50786,7 +50786,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -50954,7 +50954,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -50985,7 +50985,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -51029,7 +51029,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -51038,7 +51038,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -51049,7 +51049,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -51075,7 +51075,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -51083,7 +51083,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -51229,7 +51229,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -51278,7 +51278,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -51306,7 +51306,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -51458,7 +51458,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -51935,7 +51935,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -52032,7 +52032,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -52068,7 +52068,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 847717,
                     "bitSize": 3,
@@ -52129,7 +52129,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -52264,7 +52264,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -52300,7 +52300,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -52352,7 +52352,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -52449,7 +52449,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -52658,7 +52658,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -52724,7 +52724,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -52763,7 +52763,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -52815,7 +52815,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -52936,7 +52936,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -52956,7 +52956,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -52980,7 +52980,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -53148,7 +53148,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -53179,7 +53179,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -53223,7 +53223,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -53232,7 +53232,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -53243,7 +53243,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -53269,7 +53269,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -53277,7 +53277,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -53423,7 +53423,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -53472,7 +53472,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -53500,7 +53500,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -53652,7 +53652,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -54129,7 +54129,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -54226,7 +54226,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -54262,7 +54262,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 843949,
                     "bitSize": 3,
@@ -54323,7 +54323,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -54458,7 +54458,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -54494,7 +54494,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -54546,7 +54546,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -54643,7 +54643,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -54852,7 +54852,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -54918,7 +54918,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -54957,7 +54957,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -55009,7 +55009,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -55130,7 +55130,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -55150,7 +55150,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -55174,7 +55174,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -55342,7 +55342,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -55373,7 +55373,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -55417,7 +55417,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -55426,7 +55426,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -55437,7 +55437,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -55463,7 +55463,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -55471,7 +55471,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -55617,7 +55617,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -55666,7 +55666,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -55694,7 +55694,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -55846,7 +55846,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -56323,7 +56323,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -56420,7 +56420,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -56456,7 +56456,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 840181,
                     "bitSize": 3,
@@ -56517,7 +56517,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -56652,7 +56652,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -56688,7 +56688,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -56740,7 +56740,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -56837,7 +56837,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -57046,7 +57046,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -57112,7 +57112,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -57151,7 +57151,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -57203,7 +57203,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -57324,7 +57324,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -57344,7 +57344,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -57368,7 +57368,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -57536,7 +57536,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -57567,7 +57567,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -57611,7 +57611,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -57620,7 +57620,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -57631,7 +57631,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -57657,7 +57657,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -57665,7 +57665,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -57811,7 +57811,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -57860,7 +57860,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -57888,7 +57888,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -58040,7 +58040,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -58517,7 +58517,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -58614,7 +58614,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -58650,7 +58650,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 836413,
                     "bitSize": 3,
@@ -58711,7 +58711,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -58846,7 +58846,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -58882,7 +58882,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -58934,7 +58934,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -59031,7 +59031,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -59240,7 +59240,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -59306,7 +59306,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -59345,7 +59345,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -59397,7 +59397,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -59518,7 +59518,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -59538,7 +59538,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -59562,7 +59562,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -59730,7 +59730,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -59761,7 +59761,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -59805,7 +59805,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -59814,7 +59814,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -59825,7 +59825,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -59851,7 +59851,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -59859,7 +59859,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -60005,7 +60005,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -60054,7 +60054,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -60082,7 +60082,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -60234,7 +60234,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -60711,7 +60711,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -60808,7 +60808,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -60836,7 +60836,7 @@
                     "maxIntValue": 7
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 836381,
                     "bitSize": 3,
@@ -60897,7 +60897,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -61032,7 +61032,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -61068,7 +61068,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -61120,7 +61120,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -61217,7 +61217,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -61426,7 +61426,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -61492,7 +61492,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -61531,7 +61531,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -61583,7 +61583,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -61704,7 +61704,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -61724,7 +61724,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -61748,7 +61748,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -61916,7 +61916,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -61947,7 +61947,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -61991,7 +61991,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -62000,7 +62000,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -62011,7 +62011,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -62037,7 +62037,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -62045,7 +62045,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -62191,7 +62191,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -62240,7 +62240,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -62268,7 +62268,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -62420,7 +62420,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -62897,7 +62897,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -62994,7 +62994,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -63022,7 +63022,7 @@
                     "maxIntValue": 7
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 836381,
                     "bitSize": 3,
@@ -63083,7 +63083,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -63218,7 +63218,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -63254,7 +63254,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -63306,7 +63306,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -63403,7 +63403,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -63612,7 +63612,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -63678,7 +63678,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -63717,7 +63717,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -63769,7 +63769,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -63890,7 +63890,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -63910,7 +63910,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -63934,7 +63934,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -64102,7 +64102,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -64133,7 +64133,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -64177,7 +64177,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -64186,7 +64186,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -64197,7 +64197,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -64223,7 +64223,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -64231,7 +64231,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -64377,7 +64377,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -64426,7 +64426,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -64454,7 +64454,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -64606,7 +64606,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -65083,7 +65083,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -65180,7 +65180,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -65208,7 +65208,7 @@
                     "maxIntValue": 7
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 836381,
                     "bitSize": 3,
@@ -65269,7 +65269,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -65404,7 +65404,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -65440,7 +65440,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -65492,7 +65492,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -65589,7 +65589,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -65798,7 +65798,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -65864,7 +65864,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -65903,7 +65903,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -65955,7 +65955,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -66076,7 +66076,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -66096,7 +66096,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -66120,7 +66120,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -66288,7 +66288,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -66319,7 +66319,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -66363,7 +66363,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -66372,7 +66372,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -66383,7 +66383,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -66409,7 +66409,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -66417,7 +66417,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -66563,7 +66563,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -66612,7 +66612,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -66640,7 +66640,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -66792,7 +66792,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -67269,7 +67269,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -67366,7 +67366,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -67394,7 +67394,7 @@
                     "maxIntValue": 7
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 832613,
                     "bitSize": 3,
@@ -67455,7 +67455,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -67590,7 +67590,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -67626,7 +67626,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -67678,7 +67678,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -67775,7 +67775,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -67984,7 +67984,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -68050,7 +68050,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -68089,7 +68089,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -68141,7 +68141,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -68262,7 +68262,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -68282,7 +68282,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -68306,7 +68306,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -68474,7 +68474,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -68505,7 +68505,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -68549,7 +68549,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -68558,7 +68558,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -68569,7 +68569,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -68595,7 +68595,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -68603,7 +68603,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -68749,7 +68749,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -68798,7 +68798,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -68826,7 +68826,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -68978,7 +68978,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -69455,7 +69455,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -69552,7 +69552,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -69580,7 +69580,7 @@
                     "maxIntValue": 7
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 821309,
                     "bitSize": 3,
@@ -69641,7 +69641,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -69776,7 +69776,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -69812,7 +69812,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -69864,7 +69864,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -69961,7 +69961,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -70170,7 +70170,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -70236,7 +70236,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -70275,7 +70275,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -70327,7 +70327,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -70448,7 +70448,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -70468,7 +70468,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -70492,7 +70492,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -70660,7 +70660,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -70691,7 +70691,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -70735,7 +70735,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -70744,7 +70744,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -70755,7 +70755,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -70781,7 +70781,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -70789,7 +70789,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -70935,7 +70935,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -70984,7 +70984,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -71012,7 +71012,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -71164,7 +71164,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -71641,7 +71641,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -71730,7 +71730,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -71758,7 +71758,7 @@
                     "maxIntValue": 7
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 821308,
                     "bitSize": 4,
@@ -71819,7 +71819,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -71954,7 +71954,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -71990,7 +71990,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -72042,7 +72042,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -72139,7 +72139,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -72348,7 +72348,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -72414,7 +72414,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -72453,7 +72453,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -72505,7 +72505,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -72626,7 +72626,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -72646,7 +72646,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -72670,7 +72670,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -72838,7 +72838,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -72869,7 +72869,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -72913,7 +72913,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -72922,7 +72922,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -72933,7 +72933,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -72959,7 +72959,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -72967,7 +72967,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -73113,7 +73113,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -73162,7 +73162,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -73190,7 +73190,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,
@@ -73342,7 +73342,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_2c168e887ce14298",
+                    "name": "#hashlen",
                     "type": "uint",
                     "offset": 3008,
                     "bitSize": 32,
@@ -73819,7 +73819,7 @@
                 },
                 {
                     "name": "#dlc",
-                    "type": "struct#hash_68741ec332f97ee1",
+                    "type": "struct#dlc_t",
                     "offset": 0,
                     "bitSize": 160
                 },
@@ -73908,7 +73908,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_cbb4caae620b320",
+                    "name": "#extrabytes",
                     "type": "byte[16]",
                     "offset": 3104,
                     "bitSize": 128,
@@ -73936,7 +73936,7 @@
                     "maxIntValue": 7
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 798700,
                     "bitSize": 4,
@@ -73997,7 +73997,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 49,
                     "bitSize": 7,
@@ -74132,7 +74132,7 @@
                     "bitSize": 8
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 217,
                     "bitSize": 7,
@@ -74168,7 +74168,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 305,
                     "bitSize": 7,
@@ -74220,7 +74220,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 73,
                     "bitSize": 7,
@@ -74317,7 +74317,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 427,
                     "bitSize": 5,
@@ -74526,7 +74526,7 @@
                     "bitSize": 1120
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1122,
                     "bitSize": 6,
@@ -74592,7 +74592,7 @@
                     "maxIntValue": 3
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 388,
                     "bitSize": 4,
@@ -74631,7 +74631,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 678,
                     "bitSize": 2,
@@ -74683,7 +74683,7 @@
                     "maxIntValue": 16
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 34,
                     "bitSize": 6,
@@ -74804,7 +74804,7 @@
                     "maxIntValue": 16777215
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 94,
                     "bitSize": 2,
@@ -74824,7 +74824,7 @@
                     "maxIntValue": 12
                 },
                 {
-                    "name": "#hash_4554e34a747022df",
+                    "name": "#layers",
                     "type": "struct#hash_2d74f509e9d33a86[12]",
                     "offset": 13928,
                     "bitSize": 12
@@ -74848,7 +74848,7 @@
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13940,
                     "bitSize": 4,
@@ -75016,7 +75016,7 @@
             "name": "#hash_18e73148b3ebc305",
             "members": [
                 {
-                    "name": "#hash_2c3572ec4b35134d",
+                    "name": "#leagueid",
                     "type": "byte",
                     "offset": 104,
                     "bitSize": 8,
@@ -75047,7 +75047,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_8d21fc27cb2a58b",
+                    "name": "#subdivisionid",
                     "type": "uint64",
                     "offset": 40,
                     "bitSize": 64,
@@ -75091,7 +75091,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 13,
                     "bitSize": 3,
@@ -75100,7 +75100,7 @@
             ]
         },
         {
-            "name": "#hash_68741ec332f97ee1",
+            "name": "#dlc_t",
             "members": [
                 {
                     "name": "#mappacks",
@@ -75111,7 +75111,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_7e353191747e874",
+                    "name": "#mtx",
                     "type": "uint[128]",
                     "offset": 32,
                     "bitSize": 128,
@@ -75137,7 +75137,7 @@
             "name": "#hash_759307445fb58dda",
             "members": [
                 {
-                    "name": "#hash_148d00a0bb16ef25",
+                    "name": "#pollid",
                     "type": "byte",
                     "offset": 0,
                     "bitSize": 8,
@@ -75145,7 +75145,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_62b06ec6b31c8f59",
+                    "name": "#optionid",
                     "type": "byte",
                     "offset": 8,
                     "bitSize": 8,
@@ -75291,7 +75291,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 177,
                     "bitSize": 7,
@@ -75340,7 +75340,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 3,
                     "bitSize": 5,
@@ -75368,7 +75368,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2,
                     "bitSize": 6,

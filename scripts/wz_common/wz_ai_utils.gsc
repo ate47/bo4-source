@@ -1134,8 +1134,8 @@ function function_7a87d2a7(damageduration) {
             if (!isdefined(ai) || !isalive(ai)) {
                 var_202d087b[var_202d087b.size] = ai;
             } else {
-                var_3a8a4c13 = gettime() - ai.var_1b5e8136;
-                if (var_3a8a4c13 > 1000) {
+                timesincestart = gettime() - ai.var_1b5e8136;
+                if (timesincestart > 1000) {
                     ai.var_85c3882d = undefined;
                 }
                 timesincelast = gettime() - ai.var_cd7665dd;

@@ -7,7 +7,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_c76b4b1ffde840e",
+                    "name": "#shoutcaster_team",
                     "type": "uint",
                     "offset": 552,
                     "bitSize": 8,
@@ -475,7 +475,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 611,
                     "bitSize": 5,
@@ -494,7 +494,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_c76b4b1ffde840e",
+                    "name": "#shoutcaster_team",
                     "type": "uint",
                     "offset": 552,
                     "bitSize": 8,
@@ -954,7 +954,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 610,
                     "bitSize": 6,
@@ -973,7 +973,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_c76b4b1ffde840e",
+                    "name": "#shoutcaster_team",
                     "type": "uint",
                     "offset": 552,
                     "bitSize": 8,
@@ -1425,7 +1425,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 609,
                     "bitSize": 7,
@@ -1444,7 +1444,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_c76b4b1ffde840e",
+                    "name": "#shoutcaster_team",
                     "type": "uint",
                     "offset": 552,
                     "bitSize": 8,
@@ -1900,7 +1900,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_c76b4b1ffde840e",
+                    "name": "#shoutcaster_team",
                     "type": "uint",
                     "offset": 552,
                     "bitSize": 8,
@@ -2336,7 +2336,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 607,
                     "bitSize": 1,
@@ -2355,7 +2355,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_c76b4b1ffde840e",
+                    "name": "#shoutcaster_team",
                     "type": "uint",
                     "offset": 552,
                     "bitSize": 8,
@@ -2811,7 +2811,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_c76b4b1ffde840e",
+                    "name": "#shoutcaster_team",
                     "type": "uint",
                     "offset": 552,
                     "bitSize": 8,
@@ -3155,7 +3155,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_c76b4b1ffde840e",
+                    "name": "#shoutcaster_team",
                     "type": "uint",
                     "offset": 552,
                     "bitSize": 8,
@@ -3479,7 +3479,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 607,
                     "bitSize": 1,
@@ -3498,7 +3498,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_c76b4b1ffde840e",
+                    "name": "#shoutcaster_team",
                     "type": "uint",
                     "offset": 552,
                     "bitSize": 8,
@@ -3822,7 +3822,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 607,
                     "bitSize": 1,

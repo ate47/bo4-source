@@ -10,7 +10,7 @@
     "name": "pc_mouse_filtering",
     "displayname": "#hash_661a1379f7f21257",
     "var_d6897f56": 1,
-    "var_926d1be9": 1,
+    "decimalplace": 1,
     "var_66faec87": 10,
     "statname": "m_mouseFilter",
     "minvalue": 1,

@@ -808,8 +808,8 @@ function private function_d9035e42(weapon) {
     itemindex = getbaseweaponitemindex(weapon);
     iteminfo = getunlockableiteminfofromindex(itemindex, 1);
     if (iteminfo.loadoutslotname === "primary") {
-        self.playerloadoutrestrictions.var_42aa9c3--;
-        if (self.playerloadoutrestrictions.var_42aa9c3 < 0) {
+        self.playerloadoutrestrictions.numprimaryweapons--;
+        if (self.playerloadoutrestrictions.numprimaryweapons < 0) {
             return 0;
         }
     } else if (iteminfo.loadoutslotname === "secondary") {
@@ -1656,7 +1656,7 @@ function private function_c57586b8() {
 function private function_8aa3ff4e() {
     wildcards = self function_6f2c0492(self.class_num);
     self.playerloadoutrestrictions = spawnstruct();
-    self.playerloadoutrestrictions.var_42aa9c3 = isdefined(level.playerloadoutrestrictions[0].var_42aa9c3) ? level.playerloadoutrestrictions[0].var_42aa9c3 : 0;
+    self.playerloadoutrestrictions.numprimaryweapons = isdefined(level.playerloadoutrestrictions[0].numprimaryweapons) ? level.playerloadoutrestrictions[0].numprimaryweapons : 0;
     self.playerloadoutrestrictions.var_355c3581 = isdefined(level.playerloadoutrestrictions[0].var_355c3581) ? level.playerloadoutrestrictions[0].var_355c3581 : 0;
     self.playerloadoutrestrictions.var_882b6b71 = isdefined(level.playerloadoutrestrictions[0].var_882b6b71) ? level.playerloadoutrestrictions[0].var_882b6b71 : 0;
     self.playerloadoutrestrictions.var_ab1984e9 = isdefined(level.playerloadoutrestrictions[0].var_ab1984e9) ? level.playerloadoutrestrictions[0].var_ab1984e9 : 0;
@@ -1669,7 +1669,7 @@ function private function_8aa3ff4e() {
         foreach (var_9bb0ceab in wildcards) {
             var_47dbd1c3 = level.playerloadoutrestrictions[var_9bb0ceab];
             if (isdefined(var_47dbd1c3)) {
-                self.playerloadoutrestrictions.var_42aa9c3 = self.playerloadoutrestrictions.var_42aa9c3 + (isdefined(var_47dbd1c3.var_42aa9c3) ? var_47dbd1c3.var_42aa9c3 : 0);
+                self.playerloadoutrestrictions.numprimaryweapons = self.playerloadoutrestrictions.numprimaryweapons + (isdefined(var_47dbd1c3.numprimaryweapons) ? var_47dbd1c3.numprimaryweapons : 0);
                 self.playerloadoutrestrictions.var_355c3581 = self.playerloadoutrestrictions.var_355c3581 + (isdefined(var_47dbd1c3.var_355c3581) ? var_47dbd1c3.var_355c3581 : 0);
                 self.playerloadoutrestrictions.var_882b6b71 = self.playerloadoutrestrictions.var_882b6b71 + (isdefined(var_47dbd1c3.var_882b6b71) ? var_47dbd1c3.var_882b6b71 : 0);
                 self.playerloadoutrestrictions.var_ab1984e9 = self.playerloadoutrestrictions.var_ab1984e9 + (isdefined(var_47dbd1c3.var_ab1984e9) ? var_47dbd1c3.var_ab1984e9 : 0);

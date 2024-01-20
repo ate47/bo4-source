@@ -167,7 +167,7 @@ function function_3aa81e0e(activecamoinfo) {
         }
         info = level.activecamoinfo[activecamoinfo.name];
         info.name = activecamoinfo.name;
-        info.var_e639aa37 = activecamoinfo.var_e639aa37;
+        info.isasync = activecamoinfo.isasync;
         info.istiered = activecamoinfo.istiered;
         info.var_e0b0d8cc = activecamoinfo.var_e0b0d8cc;
         info.var_ed6f91d5 = activecamoinfo.var_ed6f91d5;
@@ -377,7 +377,7 @@ function init_stages(activecamo, var_3a8a1e00, isdeath) {
                         }
                     }
                 }
-                if (isdefined(activecamo.info.var_e639aa37) && activecamo.info.var_e639aa37) {
+                if (isdefined(activecamo.info.isasync) && activecamo.info.isasync) {
                     self thread function_f0d83504(activecamo, stage, stagenum);
                 }
             }
@@ -1307,11 +1307,11 @@ function function_633fbf17(weapon, back) {
                     if (isdefined(activecamo.stages)) {
                         activecamo.weapon = weapon;
                         activecamo.baseweapon = function_c14cb514(activecamo.weapon);
-                        var_ee939e0c = isdefined(activecamo.var_dd54a13b[activecamo.baseweapon].stagenum) ? activecamo.var_dd54a13b[activecamo.baseweapon].stagenum : -1;
+                        currentstage = isdefined(activecamo.var_dd54a13b[activecamo.baseweapon].stagenum) ? activecamo.var_dd54a13b[activecamo.baseweapon].stagenum : -1;
                         if (back) {
-                            nextstage = (var_ee939e0c - 1 + activecamo.stages.size) % activecamo.stages.size;
+                            nextstage = (currentstage - 1 + activecamo.stages.size) % activecamo.stages.size;
                         } else {
-                            nextstage = (var_ee939e0c + 1) % activecamo.stages.size;
+                            nextstage = (currentstage + 1) % activecamo.stages.size;
                         }
                         self function_779a9561(nextstage);
                     }

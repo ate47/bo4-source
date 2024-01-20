@@ -1,139 +1,74 @@
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 14,
-    "metatable": "#hash_d304802dfebc34d7",
+    "metatable": "#hash_8b959e998172d421",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 18952
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 22568,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 18936
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 18936,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 503920,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 503920
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 12468
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12564,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12566,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 12468,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 16384
+                    "bitSize": 12288
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 16384,
-                    "bitSize": 2552
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 12288,
+                    "bitSize": 180
                 }
             ]
         },
@@ -143,8 +78,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 208,
-                    "bitSize": 8,
+                    "offset": 160,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -159,7 +94,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 88,
+                    "offset": 73,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -174,14 +109,6 @@
                 },
                 {
                     "name": "#alpha",
-                    "type": "uint",
-                    "offset": 56,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 8,
@@ -189,9 +116,17 @@
                     "maxIntValue": 255
                 },
                 {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 40,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 136,
+                    "offset": 107,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -199,7 +134,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 65,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -207,7 +142,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 99,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -215,233 +150,85 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 81,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#hash_4c4aff5f26267e55",
                     "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
+                    "offset": 167,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 16,
+                    "offset": 90,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 12,
                     "intSize": 12,
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 28,
+                    "bitSize": 12,
                     "intSize": 12,
                     "maxIntValue": 4095
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 64,
-                    "bitSize": 16,
+                    "offset": 56,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
+                    "offset": 124,
+                    "bitSize": 10,
                     "intSize": 10,
                     "maxIntValue": 1023
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
+                    "offset": 134,
+                    "bitSize": 10,
                     "intSize": 10,
                     "maxIntValue": 1023
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 144,
-                    "bitSize": 16,
+                    "offset": 115,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 192,
+                    "offset": 144,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
                 },
                 {
                     "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#outline",
-                    "type": "uint",
-                    "offset": 228,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_55d7cd7908753e46",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#gradienttype",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 2,
-                    "maxIntValue": 2
-                },
-                {
-                    "name": "#isgrouped",
-                    "type": "uint",
-                    "offset": 229,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#blend",
-                    "type": "uint",
-                    "offset": 226,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#groupedlook",
-                    "type": "uint",
-                    "offset": 227,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#mask",
-                    "type": "uint",
-                    "offset": 225,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 230,
-                    "bitSize": 2,
-                    "intSize": 2
-                }
-            ]
-        },
-        {
-            "name": "#hash_34254e6153a46174",
-            "members": [
-                {
-                    "name": "#icon",
-                    "type": "uint",
-                    "offset": 16,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#materialid",
-                    "type": "uint",
-                    "offset": 232,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 127
-                },
-                {
-                    "name": "#red",
-                    "type": "uint",
-                    "offset": 0,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue",
-                    "type": "uint",
-                    "offset": 8,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha",
-                    "type": "uint",
-                    "offset": 72,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
-                    "type": "uint",
-                    "offset": 64,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green1",
-                    "type": "uint",
-                    "offset": 160,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue1",
-                    "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha1",
                     "type": "uint",
                     "offset": 152,
                     "bitSize": 8,
@@ -449,113 +236,17 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#gradientfill",
-                    "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#hash_4c4aff5f26267e55",
-                    "type": "uint",
-                    "offset": 240,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#gradientangle",
-                    "type": "uint",
-                    "offset": 136,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#hash_c2fdd0da89578e3",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 12,
-                    "maxIntValue": 4095
-                },
-                {
-                    "name": "#hash_c2fdc0da8957730",
-                    "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
-                    "intSize": 12,
-                    "maxIntValue": 4095
-                },
-                {
-                    "name": "#angle",
-                    "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#scalex",
-                    "type": "uint",
-                    "offset": 184,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#scaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#materialangle",
-                    "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#materialscalex",
-                    "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#groupindex",
-                    "type": "uint",
-                    "offset": 128,
-                    "bitSize": 8,
-                    "intSize": 4,
-                    "maxIntValue": 11
-                },
-                {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 251,
+                    "offset": 178,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 248,
+                    "offset": 174,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -563,15 +254,31 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 120,
-                    "bitSize": 8,
+                    "offset": 88,
+                    "bitSize": 2,
                     "intSize": 2,
                     "maxIntValue": 2
                 },
                 {
+                    "name": "#isgrouped",
+                    "type": "uint",
+                    "offset": 179,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 250,
+                    "offset": 176,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#groupedlook",
+                    "type": "uint",
+                    "offset": 177,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -579,158 +286,307 @@
                 {
                     "name": "#mask",
                     "type": "uint",
-                    "offset": 249,
+                    "offset": 175,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                }
+            ]
+        },
+        {
+            "name": "#emblemlayer",
+            "members": [
+                {
+                    "name": "#icon",
+                    "type": "uint",
+                    "offset": 16,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#materialid",
+                    "type": "uint",
+                    "offset": 174,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 127
+                },
+                {
+                    "name": "#red",
+                    "type": "uint",
+                    "offset": 0,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green",
+                    "type": "uint",
+                    "offset": 83,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue",
+                    "type": "uint",
+                    "offset": 8,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha",
+                    "type": "uint",
+                    "offset": 58,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 50,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green1",
+                    "type": "uint",
+                    "offset": 121,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue1",
+                    "type": "uint",
+                    "offset": 75,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha1",
+                    "type": "uint",
+                    "offset": 113,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#gradientfill",
+                    "type": "uint",
+                    "offset": 91,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#hash_4c4aff5f26267e55",
+                    "type": "uint",
+                    "offset": 181,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#gradientangle",
+                    "type": "uint",
+                    "offset": 104,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#posx",
+                    "type": "uint",
+                    "offset": 26,
+                    "bitSize": 12,
+                    "intSize": 12,
+                    "maxIntValue": 4095
+                },
+                {
+                    "name": "#posy",
+                    "type": "uint",
+                    "offset": 38,
+                    "bitSize": 12,
+                    "intSize": 12,
+                    "maxIntValue": 4095
+                },
+                {
+                    "name": "#angle",
+                    "type": "uint",
+                    "offset": 66,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#scalex",
+                    "type": "uint",
+                    "offset": 138,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#scaley",
+                    "type": "uint",
+                    "offset": 148,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#materialangle",
+                    "type": "uint",
+                    "offset": 129,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#materialscalex",
+                    "type": "uint",
+                    "offset": 158,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#materialscaley",
+                    "type": "uint",
+                    "offset": 166,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#groupindex",
+                    "type": "uint",
+                    "offset": 100,
+                    "bitSize": 4,
+                    "intSize": 4,
+                    "maxIntValue": 11
+                },
+                {
+                    "name": "#outline",
+                    "type": "uint",
+                    "offset": 191,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 252,
-                    "bitSize": 4,
-                    "intSize": 4
+                    "name": "#flip",
+                    "type": "uint",
+                    "offset": 188,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#gradienttype",
+                    "type": "uint",
+                    "offset": 98,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 2
+                },
+                {
+                    "name": "#blend",
+                    "type": "uint",
+                    "offset": 190,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#mask",
+                    "type": "uint",
+                    "offset": 189,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
                 }
             ]
         }
     ]
 },
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 13,
-    "metatable": "#hash_aacfd8f302894f18",
+    "metatable": "#hash_9d8ffaac7b793d05",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 18952
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 22568,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 18936
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 18936,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 503920,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 503920
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 12468
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12564,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12566,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 12468,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 16384
+                    "bitSize": 12288
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 16384,
-                    "bitSize": 2552
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 12288,
+                    "bitSize": 180
                 }
             ]
         },
@@ -740,8 +596,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 208,
-                    "bitSize": 8,
+                    "offset": 160,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -756,7 +612,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 88,
+                    "offset": 73,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -771,14 +627,6 @@
                 },
                 {
                     "name": "#alpha",
-                    "type": "uint",
-                    "offset": 56,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 8,
@@ -786,9 +634,17 @@
                     "maxIntValue": 255
                 },
                 {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 40,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 136,
+                    "offset": 107,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -796,7 +652,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 65,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -804,7 +660,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 99,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -812,233 +668,85 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 81,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#hash_4c4aff5f26267e55",
                     "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
+                    "offset": 167,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 16,
+                    "offset": 90,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 12,
                     "intSize": 12,
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 28,
+                    "bitSize": 12,
                     "intSize": 12,
                     "maxIntValue": 4095
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 64,
-                    "bitSize": 16,
+                    "offset": 56,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
+                    "offset": 124,
+                    "bitSize": 10,
                     "intSize": 10,
                     "maxIntValue": 1023
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
+                    "offset": 134,
+                    "bitSize": 10,
                     "intSize": 10,
                     "maxIntValue": 1023
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 144,
-                    "bitSize": 16,
+                    "offset": 115,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 192,
+                    "offset": 144,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
                 },
                 {
                     "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#outline",
-                    "type": "uint",
-                    "offset": 228,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_55d7cd7908753e46",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#gradienttype",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 2,
-                    "maxIntValue": 2
-                },
-                {
-                    "name": "#isgrouped",
-                    "type": "uint",
-                    "offset": 229,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#blend",
-                    "type": "uint",
-                    "offset": 226,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#groupedlook",
-                    "type": "uint",
-                    "offset": 227,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#mask",
-                    "type": "uint",
-                    "offset": 225,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 230,
-                    "bitSize": 2,
-                    "intSize": 2
-                }
-            ]
-        },
-        {
-            "name": "#hash_34254e6153a46174",
-            "members": [
-                {
-                    "name": "#icon",
-                    "type": "uint",
-                    "offset": 16,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#materialid",
-                    "type": "uint",
-                    "offset": 232,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 127
-                },
-                {
-                    "name": "#red",
-                    "type": "uint",
-                    "offset": 0,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue",
-                    "type": "uint",
-                    "offset": 8,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha",
-                    "type": "uint",
-                    "offset": 72,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
-                    "type": "uint",
-                    "offset": 64,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green1",
-                    "type": "uint",
-                    "offset": 160,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue1",
-                    "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha1",
                     "type": "uint",
                     "offset": 152,
                     "bitSize": 8,
@@ -1046,113 +754,17 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#gradientfill",
-                    "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#hash_4c4aff5f26267e55",
-                    "type": "uint",
-                    "offset": 240,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#gradientangle",
-                    "type": "uint",
-                    "offset": 136,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#hash_c2fdd0da89578e3",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 12,
-                    "maxIntValue": 4095
-                },
-                {
-                    "name": "#hash_c2fdc0da8957730",
-                    "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
-                    "intSize": 12,
-                    "maxIntValue": 4095
-                },
-                {
-                    "name": "#angle",
-                    "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#scalex",
-                    "type": "uint",
-                    "offset": 184,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#scaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#materialangle",
-                    "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#materialscalex",
-                    "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#groupindex",
-                    "type": "uint",
-                    "offset": 128,
-                    "bitSize": 8,
-                    "intSize": 4,
-                    "maxIntValue": 11
-                },
-                {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 251,
+                    "offset": 178,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 248,
+                    "offset": 174,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -1160,15 +772,31 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 120,
-                    "bitSize": 8,
+                    "offset": 88,
+                    "bitSize": 2,
                     "intSize": 2,
                     "maxIntValue": 2
                 },
                 {
+                    "name": "#isgrouped",
+                    "type": "uint",
+                    "offset": 179,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 250,
+                    "offset": 176,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#groupedlook",
+                    "type": "uint",
+                    "offset": 177,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -1176,158 +804,307 @@
                 {
                     "name": "#mask",
                     "type": "uint",
-                    "offset": 249,
+                    "offset": 175,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                }
+            ]
+        },
+        {
+            "name": "#emblemlayer",
+            "members": [
+                {
+                    "name": "#icon",
+                    "type": "uint",
+                    "offset": 16,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#materialid",
+                    "type": "uint",
+                    "offset": 174,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 127
+                },
+                {
+                    "name": "#red",
+                    "type": "uint",
+                    "offset": 0,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green",
+                    "type": "uint",
+                    "offset": 83,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue",
+                    "type": "uint",
+                    "offset": 8,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha",
+                    "type": "uint",
+                    "offset": 58,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 50,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green1",
+                    "type": "uint",
+                    "offset": 121,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue1",
+                    "type": "uint",
+                    "offset": 75,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha1",
+                    "type": "uint",
+                    "offset": 113,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#gradientfill",
+                    "type": "uint",
+                    "offset": 91,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#hash_4c4aff5f26267e55",
+                    "type": "uint",
+                    "offset": 181,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#gradientangle",
+                    "type": "uint",
+                    "offset": 104,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#posx",
+                    "type": "uint",
+                    "offset": 26,
+                    "bitSize": 12,
+                    "intSize": 12,
+                    "maxIntValue": 4095
+                },
+                {
+                    "name": "#posy",
+                    "type": "uint",
+                    "offset": 38,
+                    "bitSize": 12,
+                    "intSize": 12,
+                    "maxIntValue": 4095
+                },
+                {
+                    "name": "#angle",
+                    "type": "uint",
+                    "offset": 66,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#scalex",
+                    "type": "uint",
+                    "offset": 138,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#scaley",
+                    "type": "uint",
+                    "offset": 148,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#materialangle",
+                    "type": "uint",
+                    "offset": 129,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#materialscalex",
+                    "type": "uint",
+                    "offset": 158,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#materialscaley",
+                    "type": "uint",
+                    "offset": 166,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#groupindex",
+                    "type": "uint",
+                    "offset": 100,
+                    "bitSize": 4,
+                    "intSize": 4,
+                    "maxIntValue": 11
+                },
+                {
+                    "name": "#outline",
+                    "type": "uint",
+                    "offset": 191,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 252,
-                    "bitSize": 4,
-                    "intSize": 4
+                    "name": "#flip",
+                    "type": "uint",
+                    "offset": 188,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#gradienttype",
+                    "type": "uint",
+                    "offset": 98,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 2
+                },
+                {
+                    "name": "#blend",
+                    "type": "uint",
+                    "offset": 190,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#mask",
+                    "type": "uint",
+                    "offset": 189,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
                 }
             ]
         }
     ]
 },
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 12,
-    "metatable": "#hash_b51444ac373433b2",
+    "metatable": "#hash_3b069c89eb09afcf",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 18952
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 22568,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 18936
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 18936,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 503920,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 503920
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 12468
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12564,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12566,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 12468,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 16384
+                    "bitSize": 12288
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 16384,
-                    "bitSize": 2552
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 12288,
+                    "bitSize": 180
                 }
             ]
         },
@@ -1337,8 +1114,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 208,
-                    "bitSize": 8,
+                    "offset": 160,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -1353,7 +1130,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 88,
+                    "offset": 73,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -1368,14 +1145,6 @@
                 },
                 {
                     "name": "#alpha",
-                    "type": "uint",
-                    "offset": 56,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 8,
@@ -1383,9 +1152,17 @@
                     "maxIntValue": 255
                 },
                 {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 40,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 136,
+                    "offset": 107,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -1393,7 +1170,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 65,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -1401,7 +1178,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 99,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -1409,233 +1186,85 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 81,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#hash_4c4aff5f26267e55",
                     "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
+                    "offset": 167,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 16,
+                    "offset": 90,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 12,
                     "intSize": 12,
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 28,
+                    "bitSize": 12,
                     "intSize": 12,
                     "maxIntValue": 4095
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 64,
-                    "bitSize": 16,
+                    "offset": 56,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
+                    "offset": 124,
+                    "bitSize": 10,
                     "intSize": 10,
                     "maxIntValue": 1023
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
+                    "offset": 134,
+                    "bitSize": 10,
                     "intSize": 10,
                     "maxIntValue": 1023
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 144,
-                    "bitSize": 16,
+                    "offset": 115,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 192,
+                    "offset": 144,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
                 },
                 {
                     "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#outline",
-                    "type": "uint",
-                    "offset": 228,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_55d7cd7908753e46",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#gradienttype",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 2,
-                    "maxIntValue": 2
-                },
-                {
-                    "name": "#isgrouped",
-                    "type": "uint",
-                    "offset": 229,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#blend",
-                    "type": "uint",
-                    "offset": 226,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#groupedlook",
-                    "type": "uint",
-                    "offset": 227,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#mask",
-                    "type": "uint",
-                    "offset": 225,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 230,
-                    "bitSize": 2,
-                    "intSize": 2
-                }
-            ]
-        },
-        {
-            "name": "#hash_34254e6153a46174",
-            "members": [
-                {
-                    "name": "#icon",
-                    "type": "uint",
-                    "offset": 16,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#materialid",
-                    "type": "uint",
-                    "offset": 232,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 127
-                },
-                {
-                    "name": "#red",
-                    "type": "uint",
-                    "offset": 0,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue",
-                    "type": "uint",
-                    "offset": 8,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha",
-                    "type": "uint",
-                    "offset": 72,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
-                    "type": "uint",
-                    "offset": 64,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green1",
-                    "type": "uint",
-                    "offset": 160,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue1",
-                    "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha1",
                     "type": "uint",
                     "offset": 152,
                     "bitSize": 8,
@@ -1643,113 +1272,17 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#gradientfill",
-                    "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#hash_4c4aff5f26267e55",
-                    "type": "uint",
-                    "offset": 240,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#gradientangle",
-                    "type": "uint",
-                    "offset": 136,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#hash_c2fdd0da89578e3",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 12,
-                    "maxIntValue": 4095
-                },
-                {
-                    "name": "#hash_c2fdc0da8957730",
-                    "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
-                    "intSize": 12,
-                    "maxIntValue": 4095
-                },
-                {
-                    "name": "#angle",
-                    "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#scalex",
-                    "type": "uint",
-                    "offset": 184,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#scaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#materialangle",
-                    "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#materialscalex",
-                    "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#groupindex",
-                    "type": "uint",
-                    "offset": 128,
-                    "bitSize": 8,
-                    "intSize": 4,
-                    "maxIntValue": 11
-                },
-                {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 251,
+                    "offset": 178,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 248,
+                    "offset": 174,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -1757,15 +1290,31 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 120,
-                    "bitSize": 8,
+                    "offset": 88,
+                    "bitSize": 2,
                     "intSize": 2,
                     "maxIntValue": 2
                 },
                 {
+                    "name": "#isgrouped",
+                    "type": "uint",
+                    "offset": 179,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 250,
+                    "offset": 176,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#groupedlook",
+                    "type": "uint",
+                    "offset": 177,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -1773,158 +1322,307 @@
                 {
                     "name": "#mask",
                     "type": "uint",
-                    "offset": 249,
+                    "offset": 175,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                }
+            ]
+        },
+        {
+            "name": "#emblemlayer",
+            "members": [
+                {
+                    "name": "#icon",
+                    "type": "uint",
+                    "offset": 16,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#materialid",
+                    "type": "uint",
+                    "offset": 174,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 127
+                },
+                {
+                    "name": "#red",
+                    "type": "uint",
+                    "offset": 0,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green",
+                    "type": "uint",
+                    "offset": 83,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue",
+                    "type": "uint",
+                    "offset": 8,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha",
+                    "type": "uint",
+                    "offset": 58,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 50,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green1",
+                    "type": "uint",
+                    "offset": 121,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue1",
+                    "type": "uint",
+                    "offset": 75,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha1",
+                    "type": "uint",
+                    "offset": 113,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#gradientfill",
+                    "type": "uint",
+                    "offset": 91,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#hash_4c4aff5f26267e55",
+                    "type": "uint",
+                    "offset": 181,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#gradientangle",
+                    "type": "uint",
+                    "offset": 104,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#posx",
+                    "type": "uint",
+                    "offset": 26,
+                    "bitSize": 12,
+                    "intSize": 12,
+                    "maxIntValue": 4095
+                },
+                {
+                    "name": "#posy",
+                    "type": "uint",
+                    "offset": 38,
+                    "bitSize": 12,
+                    "intSize": 12,
+                    "maxIntValue": 4095
+                },
+                {
+                    "name": "#angle",
+                    "type": "uint",
+                    "offset": 66,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#scalex",
+                    "type": "uint",
+                    "offset": 138,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#scaley",
+                    "type": "uint",
+                    "offset": 148,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#materialangle",
+                    "type": "uint",
+                    "offset": 129,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#materialscalex",
+                    "type": "uint",
+                    "offset": 158,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#materialscaley",
+                    "type": "uint",
+                    "offset": 166,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#groupindex",
+                    "type": "uint",
+                    "offset": 100,
+                    "bitSize": 4,
+                    "intSize": 4,
+                    "maxIntValue": 11
+                },
+                {
+                    "name": "#outline",
+                    "type": "uint",
+                    "offset": 191,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 252,
-                    "bitSize": 4,
-                    "intSize": 4
+                    "name": "#flip",
+                    "type": "uint",
+                    "offset": 188,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#gradienttype",
+                    "type": "uint",
+                    "offset": 98,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 2
+                },
+                {
+                    "name": "#blend",
+                    "type": "uint",
+                    "offset": 190,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#mask",
+                    "type": "uint",
+                    "offset": 189,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
                 }
             ]
         }
     ]
 },
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 11,
-    "metatable": "#hash_f10802564c441915",
+    "metatable": "#hash_c112676902dccd57",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 18952
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 22568,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 18936
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 18936,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 503920,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 503920
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 12468
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12564,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12566,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 12468,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 16384
+                    "bitSize": 12288
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 16384,
-                    "bitSize": 2552
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 12288,
+                    "bitSize": 180
                 }
             ]
         },
@@ -1934,8 +1632,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 208,
-                    "bitSize": 8,
+                    "offset": 160,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -1950,7 +1648,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 88,
+                    "offset": 73,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -1965,14 +1663,6 @@
                 },
                 {
                     "name": "#alpha",
-                    "type": "uint",
-                    "offset": 56,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 8,
@@ -1980,9 +1670,17 @@
                     "maxIntValue": 255
                 },
                 {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 40,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 136,
+                    "offset": 107,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -1990,7 +1688,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 65,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -1998,7 +1696,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 99,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -2006,233 +1704,85 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 81,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#hash_4c4aff5f26267e55",
                     "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
+                    "offset": 167,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 16,
+                    "offset": 90,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 12,
                     "intSize": 12,
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 28,
+                    "bitSize": 12,
                     "intSize": 12,
                     "maxIntValue": 4095
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 64,
-                    "bitSize": 16,
+                    "offset": 56,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
+                    "offset": 124,
+                    "bitSize": 10,
                     "intSize": 10,
                     "maxIntValue": 1023
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
+                    "offset": 134,
+                    "bitSize": 10,
                     "intSize": 10,
                     "maxIntValue": 1023
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 144,
-                    "bitSize": 16,
+                    "offset": 115,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 192,
+                    "offset": 144,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
                 },
                 {
                     "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#outline",
-                    "type": "uint",
-                    "offset": 228,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_55d7cd7908753e46",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#gradienttype",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 2,
-                    "maxIntValue": 2
-                },
-                {
-                    "name": "#isgrouped",
-                    "type": "uint",
-                    "offset": 229,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#blend",
-                    "type": "uint",
-                    "offset": 226,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#groupedlook",
-                    "type": "uint",
-                    "offset": 227,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#mask",
-                    "type": "uint",
-                    "offset": 225,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 230,
-                    "bitSize": 2,
-                    "intSize": 2
-                }
-            ]
-        },
-        {
-            "name": "#hash_34254e6153a46174",
-            "members": [
-                {
-                    "name": "#icon",
-                    "type": "uint",
-                    "offset": 16,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#materialid",
-                    "type": "uint",
-                    "offset": 232,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 127
-                },
-                {
-                    "name": "#red",
-                    "type": "uint",
-                    "offset": 0,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue",
-                    "type": "uint",
-                    "offset": 8,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha",
-                    "type": "uint",
-                    "offset": 72,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
-                    "type": "uint",
-                    "offset": 64,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green1",
-                    "type": "uint",
-                    "offset": 160,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue1",
-                    "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha1",
                     "type": "uint",
                     "offset": 152,
                     "bitSize": 8,
@@ -2240,113 +1790,17 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#gradientfill",
-                    "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#hash_4c4aff5f26267e55",
-                    "type": "uint",
-                    "offset": 240,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#gradientangle",
-                    "type": "uint",
-                    "offset": 136,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#hash_c2fdd0da89578e3",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 12,
-                    "maxIntValue": 4095
-                },
-                {
-                    "name": "#hash_c2fdc0da8957730",
-                    "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
-                    "intSize": 12,
-                    "maxIntValue": 4095
-                },
-                {
-                    "name": "#angle",
-                    "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#scalex",
-                    "type": "uint",
-                    "offset": 184,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#scaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#materialangle",
-                    "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#materialscalex",
-                    "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#groupindex",
-                    "type": "uint",
-                    "offset": 128,
-                    "bitSize": 8,
-                    "intSize": 4,
-                    "maxIntValue": 11
-                },
-                {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 251,
+                    "offset": 178,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 248,
+                    "offset": 174,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -2354,15 +1808,31 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 120,
-                    "bitSize": 8,
+                    "offset": 88,
+                    "bitSize": 2,
                     "intSize": 2,
                     "maxIntValue": 2
                 },
                 {
+                    "name": "#isgrouped",
+                    "type": "uint",
+                    "offset": 179,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 250,
+                    "offset": 176,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#groupedlook",
+                    "type": "uint",
+                    "offset": 177,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -2370,158 +1840,307 @@
                 {
                     "name": "#mask",
                     "type": "uint",
-                    "offset": 249,
+                    "offset": 175,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                }
+            ]
+        },
+        {
+            "name": "#emblemlayer",
+            "members": [
+                {
+                    "name": "#icon",
+                    "type": "uint",
+                    "offset": 16,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#materialid",
+                    "type": "uint",
+                    "offset": 174,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 127
+                },
+                {
+                    "name": "#red",
+                    "type": "uint",
+                    "offset": 0,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green",
+                    "type": "uint",
+                    "offset": 83,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue",
+                    "type": "uint",
+                    "offset": 8,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha",
+                    "type": "uint",
+                    "offset": 58,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 50,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green1",
+                    "type": "uint",
+                    "offset": 121,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue1",
+                    "type": "uint",
+                    "offset": 75,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha1",
+                    "type": "uint",
+                    "offset": 113,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#gradientfill",
+                    "type": "uint",
+                    "offset": 91,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#hash_4c4aff5f26267e55",
+                    "type": "uint",
+                    "offset": 181,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#gradientangle",
+                    "type": "uint",
+                    "offset": 104,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#posx",
+                    "type": "uint",
+                    "offset": 26,
+                    "bitSize": 12,
+                    "intSize": 12,
+                    "maxIntValue": 4095
+                },
+                {
+                    "name": "#posy",
+                    "type": "uint",
+                    "offset": 38,
+                    "bitSize": 12,
+                    "intSize": 12,
+                    "maxIntValue": 4095
+                },
+                {
+                    "name": "#angle",
+                    "type": "uint",
+                    "offset": 66,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#scalex",
+                    "type": "uint",
+                    "offset": 138,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#scaley",
+                    "type": "uint",
+                    "offset": 148,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#materialangle",
+                    "type": "uint",
+                    "offset": 129,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#materialscalex",
+                    "type": "uint",
+                    "offset": 158,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#materialscaley",
+                    "type": "uint",
+                    "offset": 166,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#groupindex",
+                    "type": "uint",
+                    "offset": 100,
+                    "bitSize": 4,
+                    "intSize": 4,
+                    "maxIntValue": 11
+                },
+                {
+                    "name": "#outline",
+                    "type": "uint",
+                    "offset": 191,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 252,
-                    "bitSize": 4,
-                    "intSize": 4
+                    "name": "#flip",
+                    "type": "uint",
+                    "offset": 188,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#gradienttype",
+                    "type": "uint",
+                    "offset": 98,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 2
+                },
+                {
+                    "name": "#blend",
+                    "type": "uint",
+                    "offset": 190,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#mask",
+                    "type": "uint",
+                    "offset": 189,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
                 }
             ]
         }
     ]
 },
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 10,
-    "metatable": "#hash_b02b641c6e19881b",
+    "metatable": "#hash_93023a9fdfb34c25",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 18952
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 22568,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 18936
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 18936,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 501320,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 501320
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 12403
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12499,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12501,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 12403,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 16384
+                    "bitSize": 12224
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 16384,
-                    "bitSize": 2552
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 12224,
+                    "bitSize": 179
                 }
             ]
         },
@@ -2531,8 +2150,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 208,
-                    "bitSize": 8,
+                    "offset": 160,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -2547,7 +2166,228 @@
                 {
                     "name": "#green",
                     "type": "uint",
+                    "offset": 71,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue",
+                    "type": "uint",
+                    "offset": 8,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha",
+                    "type": "uint",
+                    "offset": 46,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 38,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green1",
+                    "type": "uint",
+                    "offset": 105,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue1",
+                    "type": "uint",
+                    "offset": 63,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha1",
+                    "type": "uint",
+                    "offset": 97,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#gradientfill",
+                    "type": "uint",
+                    "offset": 79,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#hash_4c4aff5f26267e55",
+                    "type": "uint",
+                    "offset": 167,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#gradientangle",
+                    "type": "uint",
                     "offset": 88,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#posx",
+                    "type": "uint",
+                    "offset": 16,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#posy",
+                    "type": "uint",
+                    "offset": 27,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#angle",
+                    "type": "uint",
+                    "offset": 54,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#scalex",
+                    "type": "uint",
+                    "offset": 122,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#scaley",
+                    "type": "uint",
+                    "offset": 133,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#materialangle",
+                    "type": "uint",
+                    "offset": 113,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#materialscalex",
+                    "type": "uint",
+                    "offset": 144,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#materialscaley",
+                    "type": "uint",
+                    "offset": 152,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#outline",
+                    "type": "uint",
+                    "offset": 177,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#flip",
+                    "type": "uint",
+                    "offset": 174,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#gradienttype",
+                    "type": "uint",
+                    "offset": 86,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 2
+                },
+                {
+                    "name": "#isgrouped",
+                    "type": "uint",
+                    "offset": 178,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#blend",
+                    "type": "uint",
+                    "offset": 175,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#groupedlook",
+                    "type": "uint",
+                    "offset": 176,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                }
+            ]
+        },
+        {
+            "name": "#emblemlayer",
+            "members": [
+                {
+                    "name": "#icon",
+                    "type": "uint",
+                    "offset": 16,
+                    "bitSize": 10,
+                    "intSize": 10,
+                    "maxIntValue": 1023
+                },
+                {
+                    "name": "#materialid",
+                    "type": "uint",
+                    "offset": 174,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 127
+                },
+                {
+                    "name": "#red",
+                    "type": "uint",
+                    "offset": 0,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green",
+                    "type": "uint",
+                    "offset": 81,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -2579,7 +2419,7 @@
                 {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 136,
+                    "offset": 119,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -2587,7 +2427,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 73,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -2595,7 +2435,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 111,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -2603,40 +2443,40 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 89,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#hash_4c4aff5f26267e55",
                     "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
+                    "offset": 181,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 16,
+                    "offset": 102,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
-                    "offset": 16,
-                    "bitSize": 16,
+                    "offset": 26,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 37,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
@@ -2644,266 +2484,38 @@
                     "name": "#angle",
                     "type": "uint",
                     "offset": 64,
-                    "bitSize": 16,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
-                    "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#scaley",
-                    "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#materialangle",
-                    "type": "uint",
-                    "offset": 144,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#materialscalex",
-                    "type": "uint",
-                    "offset": 192,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#outline",
-                    "type": "uint",
-                    "offset": 227,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_55d7cd7908753e46",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#gradienttype",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 2,
-                    "maxIntValue": 2
-                },
-                {
-                    "name": "#isgrouped",
-                    "type": "uint",
-                    "offset": 228,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#blend",
-                    "type": "uint",
-                    "offset": 225,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#groupedlook",
-                    "type": "uint",
-                    "offset": 226,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 229,
-                    "bitSize": 3,
-                    "intSize": 3
-                }
-            ]
-        },
-        {
-            "name": "#hash_34254e6153a46174",
-            "members": [
-                {
-                    "name": "#icon",
-                    "type": "uint",
-                    "offset": 16,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                },
-                {
-                    "name": "#materialid",
-                    "type": "uint",
-                    "offset": 232,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 127
-                },
-                {
-                    "name": "#red",
-                    "type": "uint",
-                    "offset": 0,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue",
-                    "type": "uint",
-                    "offset": 8,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha",
-                    "type": "uint",
-                    "offset": 72,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
-                    "type": "uint",
-                    "offset": 64,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green1",
-                    "type": "uint",
-                    "offset": 160,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue1",
-                    "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha1",
-                    "type": "uint",
-                    "offset": 152,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#gradientfill",
-                    "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#hash_4c4aff5f26267e55",
-                    "type": "uint",
-                    "offset": 240,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#gradientangle",
                     "type": "uint",
                     "offset": 136,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#hash_c2fdd0da89578e3",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#hash_c2fdc0da8957730",
-                    "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#angle",
-                    "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#scalex",
-                    "type": "uint",
-                    "offset": 184,
-                    "bitSize": 16,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 200,
-                    "bitSize": 16,
+                    "offset": 147,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
+                    "offset": 127,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 216,
+                    "offset": 158,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -2911,7 +2523,7 @@
                 {
                     "name": "#materialscaley",
                     "type": "uint",
-                    "offset": 224,
+                    "offset": 166,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -2919,23 +2531,23 @@
                 {
                     "name": "#groupindex",
                     "type": "uint",
-                    "offset": 128,
-                    "bitSize": 8,
+                    "offset": 98,
+                    "bitSize": 4,
                     "intSize": 4,
                     "maxIntValue": 11
                 },
                 {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 250,
+                    "offset": 190,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 248,
+                    "offset": 188,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -2943,166 +2555,94 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 120,
-                    "bitSize": 8,
+                    "offset": 96,
+                    "bitSize": 2,
                     "intSize": 2,
                     "maxIntValue": 2
                 },
                 {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 249,
+                    "offset": 189,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 251,
-                    "bitSize": 5,
-                    "intSize": 5
                 }
             ]
         }
     ]
 },
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 9,
-    "metatable": "#hash_16c607b3cd67f60a",
+    "metatable": "#hash_cea4e3e53b698127",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 18952
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 22568,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 18936
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 18936,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 503880,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 503880
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 12467
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12563,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12565,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 12467,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 16384
+                    "bitSize": 12288
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 16384,
-                    "bitSize": 2552
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 12288,
+                    "bitSize": 179
                 }
             ]
         },
@@ -3112,8 +2652,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 208,
-                    "bitSize": 8,
+                    "offset": 160,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -3128,7 +2668,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 88,
+                    "offset": 71,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3144,7 +2684,7 @@
                 {
                     "name": "#alpha",
                     "type": "uint",
-                    "offset": 56,
+                    "offset": 46,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3152,7 +2692,7 @@
                 {
                     "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
-                    "offset": 48,
+                    "offset": 38,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3160,7 +2700,7 @@
                 {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 136,
+                    "offset": 105,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3168,7 +2708,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 63,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3176,7 +2716,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 97,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3184,225 +2724,85 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 79,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#hash_4c4aff5f26267e55",
                     "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
+                    "offset": 167,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 16,
+                    "offset": 88,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 27,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 64,
-                    "bitSize": 16,
+                    "offset": 54,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
+                    "offset": 122,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
+                    "offset": 133,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 144,
-                    "bitSize": 16,
+                    "offset": 113,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 192,
+                    "offset": 144,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
                 },
                 {
                     "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#outline",
-                    "type": "uint",
-                    "offset": 227,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_55d7cd7908753e46",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#gradienttype",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 2,
-                    "maxIntValue": 2
-                },
-                {
-                    "name": "#isgrouped",
-                    "type": "uint",
-                    "offset": 228,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#blend",
-                    "type": "uint",
-                    "offset": 225,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#groupedlook",
-                    "type": "uint",
-                    "offset": 226,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 229,
-                    "bitSize": 3,
-                    "intSize": 3
-                }
-            ]
-        },
-        {
-            "name": "#hash_34254e6153a46174",
-            "members": [
-                {
-                    "name": "#icon",
-                    "type": "uint",
-                    "offset": 16,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#materialid",
-                    "type": "uint",
-                    "offset": 232,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 127
-                },
-                {
-                    "name": "#red",
-                    "type": "uint",
-                    "offset": 0,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue",
-                    "type": "uint",
-                    "offset": 8,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha",
-                    "type": "uint",
-                    "offset": 72,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
-                    "type": "uint",
-                    "offset": 64,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green1",
-                    "type": "uint",
-                    "offset": 160,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue1",
-                    "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha1",
                     "type": "uint",
                     "offset": 152,
                     "bitSize": 8,
@@ -3410,113 +2810,17 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#gradientfill",
-                    "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#hash_4c4aff5f26267e55",
-                    "type": "uint",
-                    "offset": 240,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#gradientangle",
-                    "type": "uint",
-                    "offset": 136,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#hash_c2fdd0da89578e3",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#hash_c2fdc0da8957730",
-                    "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#angle",
-                    "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#scalex",
-                    "type": "uint",
-                    "offset": 184,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#scaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#materialangle",
-                    "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#materialscalex",
-                    "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#groupindex",
-                    "type": "uint",
-                    "offset": 128,
-                    "bitSize": 8,
-                    "intSize": 6,
-                    "maxIntValue": 32
-                },
-                {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 250,
+                    "offset": 177,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 248,
+                    "offset": 174,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -3524,166 +2828,323 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
+                    "offset": 86,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 2
+                },
+                {
+                    "name": "#isgrouped",
+                    "type": "uint",
+                    "offset": 178,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#blend",
+                    "type": "uint",
+                    "offset": 175,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#groupedlook",
+                    "type": "uint",
+                    "offset": 176,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                }
+            ]
+        },
+        {
+            "name": "#emblemlayer",
+            "members": [
+                {
+                    "name": "#icon",
+                    "type": "uint",
+                    "offset": 16,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#materialid",
+                    "type": "uint",
+                    "offset": 175,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 127
+                },
+                {
+                    "name": "#red",
+                    "type": "uint",
+                    "offset": 0,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green",
+                    "type": "uint",
+                    "offset": 80,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue",
+                    "type": "uint",
+                    "offset": 8,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha",
+                    "type": "uint",
+                    "offset": 55,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 47,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green1",
+                    "type": "uint",
                     "offset": 120,
                     "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue1",
+                    "type": "uint",
+                    "offset": 72,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha1",
+                    "type": "uint",
+                    "offset": 112,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#gradientfill",
+                    "type": "uint",
+                    "offset": 88,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#hash_4c4aff5f26267e55",
+                    "type": "uint",
+                    "offset": 182,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#gradientangle",
+                    "type": "uint",
+                    "offset": 103,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#posx",
+                    "type": "uint",
+                    "offset": 25,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#posy",
+                    "type": "uint",
+                    "offset": 36,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#angle",
+                    "type": "uint",
+                    "offset": 63,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#scalex",
+                    "type": "uint",
+                    "offset": 137,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#scaley",
+                    "type": "uint",
+                    "offset": 148,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#materialangle",
+                    "type": "uint",
+                    "offset": 128,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#materialscalex",
+                    "type": "uint",
+                    "offset": 159,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#materialscaley",
+                    "type": "uint",
+                    "offset": 167,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#groupindex",
+                    "type": "uint",
+                    "offset": 97,
+                    "bitSize": 6,
+                    "intSize": 6,
+                    "maxIntValue": 32
+                },
+                {
+                    "name": "#outline",
+                    "type": "uint",
+                    "offset": 191,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#flip",
+                    "type": "uint",
+                    "offset": 189,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#gradienttype",
+                    "type": "uint",
+                    "offset": 95,
+                    "bitSize": 2,
                     "intSize": 2,
                     "maxIntValue": 2
                 },
                 {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 249,
+                    "offset": 190,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 251,
-                    "bitSize": 5,
-                    "intSize": 5
                 }
             ]
         }
     ]
 },
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 8,
-    "metatable": "#hash_74d572cc23478690",
+    "metatable": "#hash_b6400c3f7ebfd219",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 18352
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 21968,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 18336
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 18336,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 485680,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 485680
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 12012
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12108,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12110,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 12012,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 15872
+                    "bitSize": 11840
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 15872,
-                    "bitSize": 2464
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 11840,
+                    "bitSize": 172
                 }
             ]
         },
@@ -3693,8 +3154,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 208,
-                    "bitSize": 8,
+                    "offset": 160,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -3709,7 +3170,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 88,
+                    "offset": 71,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3725,7 +3186,7 @@
                 {
                     "name": "#alpha",
                     "type": "uint",
-                    "offset": 56,
+                    "offset": 46,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3733,7 +3194,7 @@
                 {
                     "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
-                    "offset": 48,
+                    "offset": 38,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3741,7 +3202,7 @@
                 {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 136,
+                    "offset": 105,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3749,7 +3210,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 63,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3757,7 +3218,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 97,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -3765,217 +3226,77 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 79,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 16,
+                    "offset": 88,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 27,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 64,
-                    "bitSize": 16,
+                    "offset": 54,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
+                    "offset": 122,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
+                    "offset": 133,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 144,
-                    "bitSize": 16,
+                    "offset": 113,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 192,
+                    "offset": 144,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
                 },
                 {
                     "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#outline",
-                    "type": "uint",
-                    "offset": 219,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_55d7cd7908753e46",
-                    "type": "uint",
-                    "offset": 216,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#gradienttype",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 2,
-                    "maxIntValue": 2
-                },
-                {
-                    "name": "#isgrouped",
-                    "type": "uint",
-                    "offset": 220,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#blend",
-                    "type": "uint",
-                    "offset": 217,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#groupedlook",
-                    "type": "uint",
-                    "offset": 218,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 221,
-                    "bitSize": 3,
-                    "intSize": 3
-                }
-            ]
-        },
-        {
-            "name": "#hash_34254e6153a46174",
-            "members": [
-                {
-                    "name": "#icon",
-                    "type": "uint",
-                    "offset": 16,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#materialid",
-                    "type": "uint",
-                    "offset": 232,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 127
-                },
-                {
-                    "name": "#red",
-                    "type": "uint",
-                    "offset": 0,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue",
-                    "type": "uint",
-                    "offset": 8,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha",
-                    "type": "uint",
-                    "offset": 72,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#hash_4cf0321fbfe5f277",
-                    "type": "uint",
-                    "offset": 64,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green1",
-                    "type": "uint",
-                    "offset": 160,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue1",
-                    "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha1",
                     "type": "uint",
                     "offset": 152,
                     "bitSize": 8,
@@ -3983,105 +3304,17 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#gradientfill",
-                    "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 100
-                },
-                {
-                    "name": "#gradientangle",
-                    "type": "uint",
-                    "offset": 136,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#hash_c2fdd0da89578e3",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#hash_c2fdc0da8957730",
-                    "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#angle",
-                    "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#scalex",
-                    "type": "uint",
-                    "offset": 184,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#scaley",
-                    "type": "uint",
-                    "offset": 200,
-                    "bitSize": 16,
-                    "intSize": 11,
-                    "maxIntValue": 1024
-                },
-                {
-                    "name": "#materialangle",
-                    "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#materialscalex",
-                    "type": "uint",
-                    "offset": 216,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#materialscaley",
-                    "type": "uint",
-                    "offset": 224,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#groupindex",
-                    "type": "uint",
-                    "offset": 128,
-                    "bitSize": 8,
-                    "intSize": 6,
-                    "maxIntValue": 32
-                },
-                {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 242,
+                    "offset": 170,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 240,
+                    "offset": 167,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -4089,166 +3322,315 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
+                    "offset": 86,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 2
+                },
+                {
+                    "name": "#isgrouped",
+                    "type": "uint",
+                    "offset": 171,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#blend",
+                    "type": "uint",
+                    "offset": 168,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#groupedlook",
+                    "type": "uint",
+                    "offset": 169,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                }
+            ]
+        },
+        {
+            "name": "#emblemlayer",
+            "members": [
+                {
+                    "name": "#icon",
+                    "type": "uint",
+                    "offset": 16,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#materialid",
+                    "type": "uint",
+                    "offset": 175,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 127
+                },
+                {
+                    "name": "#red",
+                    "type": "uint",
+                    "offset": 0,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green",
+                    "type": "uint",
+                    "offset": 80,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue",
+                    "type": "uint",
+                    "offset": 8,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha",
+                    "type": "uint",
+                    "offset": 55,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#hash_4cf0321fbfe5f277",
+                    "type": "uint",
+                    "offset": 47,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#green1",
+                    "type": "uint",
                     "offset": 120,
                     "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#blue1",
+                    "type": "uint",
+                    "offset": 72,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#alpha1",
+                    "type": "uint",
+                    "offset": 112,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#gradientfill",
+                    "type": "uint",
+                    "offset": 88,
+                    "bitSize": 7,
+                    "intSize": 7,
+                    "maxIntValue": 100
+                },
+                {
+                    "name": "#gradientangle",
+                    "type": "uint",
+                    "offset": 103,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#posx",
+                    "type": "uint",
+                    "offset": 25,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#posy",
+                    "type": "uint",
+                    "offset": 36,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#angle",
+                    "type": "uint",
+                    "offset": 63,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#scalex",
+                    "type": "uint",
+                    "offset": 137,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#scaley",
+                    "type": "uint",
+                    "offset": 148,
+                    "bitSize": 11,
+                    "intSize": 11,
+                    "maxIntValue": 1024
+                },
+                {
+                    "name": "#materialangle",
+                    "type": "uint",
+                    "offset": 128,
+                    "bitSize": 9,
+                    "intSize": 9,
+                    "maxIntValue": 511
+                },
+                {
+                    "name": "#materialscalex",
+                    "type": "uint",
+                    "offset": 159,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#materialscaley",
+                    "type": "uint",
+                    "offset": 167,
+                    "bitSize": 8,
+                    "intSize": 8,
+                    "maxIntValue": 255
+                },
+                {
+                    "name": "#groupindex",
+                    "type": "uint",
+                    "offset": 97,
+                    "bitSize": 6,
+                    "intSize": 6,
+                    "maxIntValue": 32
+                },
+                {
+                    "name": "#outline",
+                    "type": "uint",
+                    "offset": 184,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#flip",
+                    "type": "uint",
+                    "offset": 182,
+                    "bitSize": 1,
+                    "intSize": 1,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#gradienttype",
+                    "type": "uint",
+                    "offset": 95,
+                    "bitSize": 2,
                     "intSize": 2,
                     "maxIntValue": 2
                 },
                 {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 241,
+                    "offset": 183,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 243,
-                    "bitSize": 5,
-                    "intSize": 5
                 }
             ]
         }
     ]
 },
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 7,
-    "metatable": "#hash_44fd30909a720bf2",
+    "metatable": "#hash_c7b0c61a0470d702",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 17752
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 21368,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 17736
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 17736,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 483080,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 483080
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 11947
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12043,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12045,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 11947,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 15360
+                    "bitSize": 11776
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 15360,
-                    "bitSize": 2376
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 11776,
+                    "bitSize": 171
                 }
             ]
         },
@@ -4258,8 +3640,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
+                    "offset": 158,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -4274,7 +3656,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 88,
+                    "offset": 71,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4290,7 +3672,7 @@
                 {
                     "name": "#alpha",
                     "type": "uint",
-                    "offset": 56,
+                    "offset": 46,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4298,7 +3680,7 @@
                 {
                     "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
-                    "offset": 48,
+                    "offset": 38,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4306,7 +3688,7 @@
                 {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 103,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4314,7 +3696,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 63,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4322,7 +3704,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 120,
+                    "offset": 95,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4330,71 +3712,71 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 79,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 104,
-                    "bitSize": 16,
+                    "offset": 86,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 27,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 64,
-                    "bitSize": 16,
+                    "offset": 54,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 152,
-                    "bitSize": 16,
+                    "offset": 120,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
+                    "offset": 131,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 136,
-                    "bitSize": 16,
+                    "offset": 111,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 184,
+                    "offset": 142,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4402,7 +3784,7 @@
                 {
                     "name": "#materialscaley",
                     "type": "uint",
-                    "offset": 192,
+                    "offset": 150,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4410,15 +3792,15 @@
                 {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 212,
+                    "offset": 169,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 208,
+                    "offset": 165,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -4426,7 +3808,7 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 210,
+                    "offset": 167,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -4434,7 +3816,7 @@
                 {
                     "name": "#isgrouped",
                     "type": "uint",
-                    "offset": 213,
+                    "offset": 170,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -4442,7 +3824,7 @@
                 {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 209,
+                    "offset": 166,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -4450,36 +3832,29 @@
                 {
                     "name": "#groupedlook",
                     "type": "uint",
-                    "offset": 211,
+                    "offset": 168,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 214,
-                    "bitSize": 2,
-                    "intSize": 2
                 }
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 224,
-                    "bitSize": 8,
+                    "offset": 173,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -4494,7 +3869,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 104,
+                    "offset": 80,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4510,7 +3885,7 @@
                 {
                     "name": "#alpha",
                     "type": "uint",
-                    "offset": 72,
+                    "offset": 55,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4518,7 +3893,7 @@
                 {
                     "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
-                    "offset": 64,
+                    "offset": 47,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4526,7 +3901,7 @@
                 {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 152,
+                    "offset": 118,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4534,7 +3909,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 96,
+                    "offset": 72,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4542,7 +3917,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 144,
+                    "offset": 110,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4550,71 +3925,71 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
+                    "offset": 88,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 128,
-                    "bitSize": 16,
+                    "offset": 101,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 25,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
+                    "offset": 36,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
+                    "offset": 63,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
+                    "offset": 135,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 192,
-                    "bitSize": 16,
+                    "offset": 146,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
+                    "offset": 126,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 208,
+                    "offset": 157,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4622,7 +3997,7 @@
                 {
                     "name": "#materialscaley",
                     "type": "uint",
-                    "offset": 216,
+                    "offset": 165,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4630,23 +4005,23 @@
                 {
                     "name": "#groupindex",
                     "type": "uint",
-                    "offset": 120,
-                    "bitSize": 8,
+                    "offset": 95,
+                    "bitSize": 6,
                     "intSize": 6,
                     "maxIntValue": 32
                 },
                 {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 235,
+                    "offset": 183,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 232,
+                    "offset": 180,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -4654,7 +4029,7 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 234,
+                    "offset": 182,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -4662,158 +4037,86 @@
                 {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 233,
+                    "offset": 181,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 236,
-                    "bitSize": 4,
-                    "intSize": 4
                 }
             ]
         }
     ]
 },
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 6,
-    "metatable": "#hash_e1006ea390d990b0",
+    "metatable": "#hash_7cfdb3298eacbe25",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 17752
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 21368,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 17736
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 17736,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 483080,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 483080
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 11947
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12043,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12045,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 11947,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 15360
+                    "bitSize": 11776
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 15360,
-                    "bitSize": 2376
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 11776,
+                    "bitSize": 171
                 }
             ]
         },
@@ -4823,8 +4126,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
+                    "offset": 158,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -4839,7 +4142,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 88,
+                    "offset": 71,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4855,7 +4158,7 @@
                 {
                     "name": "#alpha",
                     "type": "uint",
-                    "offset": 56,
+                    "offset": 46,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4863,7 +4166,7 @@
                 {
                     "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
-                    "offset": 48,
+                    "offset": 38,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4871,7 +4174,7 @@
                 {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 103,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4879,7 +4182,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 63,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4887,7 +4190,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 120,
+                    "offset": 95,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4895,71 +4198,71 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 79,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 104,
-                    "bitSize": 16,
+                    "offset": 86,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 27,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 64,
-                    "bitSize": 16,
+                    "offset": 54,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 152,
-                    "bitSize": 16,
+                    "offset": 120,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
+                    "offset": 131,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 136,
-                    "bitSize": 16,
+                    "offset": 111,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 184,
+                    "offset": 142,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4967,7 +4270,7 @@
                 {
                     "name": "#materialscaley",
                     "type": "uint",
-                    "offset": 192,
+                    "offset": 150,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -4975,15 +4278,15 @@
                 {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 212,
+                    "offset": 169,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 208,
+                    "offset": 165,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -4991,7 +4294,7 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 210,
+                    "offset": 167,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -4999,7 +4302,7 @@
                 {
                     "name": "#isgrouped",
                     "type": "uint",
-                    "offset": 213,
+                    "offset": 170,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5007,7 +4310,7 @@
                 {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 209,
+                    "offset": 166,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5015,36 +4318,29 @@
                 {
                     "name": "#groupedlook",
                     "type": "uint",
-                    "offset": 211,
+                    "offset": 168,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 214,
-                    "bitSize": 2,
-                    "intSize": 2
                 }
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 224,
-                    "bitSize": 8,
+                    "offset": 173,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -5059,7 +4355,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 104,
+                    "offset": 80,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5075,7 +4371,7 @@
                 {
                     "name": "#alpha",
                     "type": "uint",
-                    "offset": 72,
+                    "offset": 55,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5083,7 +4379,7 @@
                 {
                     "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
-                    "offset": 64,
+                    "offset": 47,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5091,7 +4387,7 @@
                 {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 152,
+                    "offset": 118,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5099,7 +4395,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 96,
+                    "offset": 72,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5107,7 +4403,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 144,
+                    "offset": 110,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5115,71 +4411,71 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
+                    "offset": 88,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 128,
-                    "bitSize": 16,
+                    "offset": 101,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 25,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
+                    "offset": 36,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
+                    "offset": 63,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
+                    "offset": 135,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 192,
-                    "bitSize": 16,
+                    "offset": 146,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
+                    "offset": 126,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 208,
+                    "offset": 157,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5187,7 +4483,7 @@
                 {
                     "name": "#materialscaley",
                     "type": "uint",
-                    "offset": 216,
+                    "offset": 165,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5195,23 +4491,23 @@
                 {
                     "name": "#groupindex",
                     "type": "uint",
-                    "offset": 120,
-                    "bitSize": 8,
+                    "offset": 95,
+                    "bitSize": 6,
                     "intSize": 6,
                     "maxIntValue": 32
                 },
                 {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 235,
+                    "offset": 183,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 232,
+                    "offset": 180,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5219,7 +4515,7 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 234,
+                    "offset": 182,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5227,158 +4523,86 @@
                 {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 233,
+                    "offset": 181,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 236,
-                    "bitSize": 4,
-                    "intSize": 4
                 }
             ]
         }
     ]
 },
 {
-    "name": "#hash_140d39bff1f7ebd1",
+    "name": "#gamedata/ddl/generated/decals.ddl",
     "version": 5,
-    "metatable": "#hash_248c7df9f7ea4d18",
+    "metatable": "#hash_577f0befee77f9a5",
     "structs": [
         {
             "name": "#root",
             "members": [
                 {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 3616,
-                    "bitSize": 17752
-                },
-                {
-                    "name": "#leaderboard",
-                    "type": "struct#leaderboard",
-                    "offset": 2936,
-                    "bitSize": 680
-                },
-                {
-                    "name": "#ownername",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#description",
-                    "type": "string",
-                    "offset": 2296,
-                    "bitSize": 640
-                },
-                {
-                    "name": "#message",
-                    "type": "string",
-                    "offset": 256,
-                    "bitSize": 2040
-                },
-                {
-                    "name": "#creationtimestamp",
-                    "type": "uint64",
-                    "offset": 21368,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layerinfo",
-                    "type": "struct#hash_62325f44a788da78",
-                    "offset": 0,
-                    "bitSize": 17736
-                },
-                {
-                    "name": "#background",
+                    "name": "#version",
                     "type": "uint",
-                    "offset": 17736,
-                    "bitSize": 16,
-                    "intSize": 10,
-                    "maxIntValue": 1023
-                }
-            ]
-        },
-        {
-            "name": "#leaderboard",
-            "members": [
-                {
-                    "name": "#leaderboarddef",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#sorttype",
-                    "type": "string",
-                    "offset": 544,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#timeframe",
-                    "type": "uint",
-                    "offset": 0,
+                    "offset": 483080,
                     "bitSize": 32,
                     "intSize": 32,
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#ishardcore",
-                    "type": "uint",
-                    "offset": 674,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#isarena",
-                    "type": "uint",
-                    "offset": 673,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#initialized",
-                    "type": "uint",
-                    "offset": 672,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 675,
-                    "bitSize": 5,
-                    "intSize": 5
+                    "name": "#hash_6036e407d49c517a",
+                    "type": "struct#decal[40]",
+                    "offset": 0,
+                    "bitSize": 483080
                 }
             ]
         },
         {
-            "name": "#hash_62325f44a788da78",
+            "name": "#decal",
+            "members": [
+                {
+                    "name": "#decal",
+                    "type": "struct#hash_6ac42a2c4c8f3b10",
+                    "offset": 0,
+                    "bitSize": 11947
+                },
+                {
+                    "name": "#isused",
+                    "type": "int",
+                    "offset": 12043,
+                    "bitSize": 2,
+                    "intSize": 2,
+                    "maxIntValue": 1
+                },
+                {
+                    "name": "#sortindex",
+                    "type": "int",
+                    "offset": 12045,
+                    "bitSize": 32,
+                    "intSize": 32,
+                    "maxIntValue": 2147483647
+                },
+                {
+                    "name": "#hash_2e62c0f5c511d22d",
+                    "type": "string",
+                    "offset": 11947,
+                    "bitSize": 96
+                }
+            ]
+        },
+        {
+            "name": "#hash_6ac42a2c4c8f3b10",
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
-                    "bitSize": 15360
+                    "bitSize": 11776
                 },
                 {
                     "name": "#groups",
-                    "type": "struct#hash_24f699c797bc9492[11]",
-                    "offset": 15360,
-                    "bitSize": 2376
+                    "type": "struct#hash_24f699c797bc9492[1]",
+                    "offset": 11776,
+                    "bitSize": 171
                 }
             ]
         },
@@ -5388,8 +4612,8 @@
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 200,
-                    "bitSize": 8,
+                    "offset": 158,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -5404,7 +4628,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 88,
+                    "offset": 71,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5420,7 +4644,7 @@
                 {
                     "name": "#alpha",
                     "type": "uint",
-                    "offset": 56,
+                    "offset": 46,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5428,7 +4652,7 @@
                 {
                     "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
-                    "offset": 48,
+                    "offset": 38,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5436,7 +4660,7 @@
                 {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 128,
+                    "offset": 103,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5444,7 +4668,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 80,
+                    "offset": 63,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5452,7 +4676,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 120,
+                    "offset": 95,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5460,71 +4684,71 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
+                    "offset": 79,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 104,
-                    "bitSize": 16,
+                    "offset": 86,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 27,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 64,
-                    "bitSize": 16,
+                    "offset": 54,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 152,
-                    "bitSize": 16,
+                    "offset": 120,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 168,
-                    "bitSize": 16,
+                    "offset": 131,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 136,
-                    "bitSize": 16,
+                    "offset": 111,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 184,
+                    "offset": 142,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5532,7 +4756,7 @@
                 {
                     "name": "#materialscaley",
                     "type": "uint",
-                    "offset": 192,
+                    "offset": 150,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5540,15 +4764,15 @@
                 {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 212,
+                    "offset": 169,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 208,
+                    "offset": 165,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5556,7 +4780,7 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 210,
+                    "offset": 167,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5564,7 +4788,7 @@
                 {
                     "name": "#isgrouped",
                     "type": "uint",
-                    "offset": 213,
+                    "offset": 170,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5572,7 +4796,7 @@
                 {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 209,
+                    "offset": 166,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5580,36 +4804,29 @@
                 {
                     "name": "#groupedlook",
                     "type": "uint",
-                    "offset": 211,
+                    "offset": 168,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 214,
-                    "bitSize": 2,
-                    "intSize": 2
                 }
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
                     "type": "uint",
                     "offset": 16,
-                    "bitSize": 16,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialid",
                     "type": "uint",
-                    "offset": 224,
-                    "bitSize": 8,
+                    "offset": 173,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 127
                 },
@@ -5624,7 +4841,7 @@
                 {
                     "name": "#green",
                     "type": "uint",
-                    "offset": 104,
+                    "offset": 80,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5640,7 +4857,7 @@
                 {
                     "name": "#alpha",
                     "type": "uint",
-                    "offset": 72,
+                    "offset": 55,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5648,7 +4865,7 @@
                 {
                     "name": "#hash_4cf0321fbfe5f277",
                     "type": "uint",
-                    "offset": 64,
+                    "offset": 47,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5656,7 +4873,7 @@
                 {
                     "name": "#green1",
                     "type": "uint",
-                    "offset": 152,
+                    "offset": 118,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5664,7 +4881,7 @@
                 {
                     "name": "#blue1",
                     "type": "uint",
-                    "offset": 96,
+                    "offset": 72,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5672,7 +4889,7 @@
                 {
                     "name": "#alpha1",
                     "type": "uint",
-                    "offset": 144,
+                    "offset": 110,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5680,71 +4897,71 @@
                 {
                     "name": "#gradientfill",
                     "type": "uint",
-                    "offset": 112,
-                    "bitSize": 8,
+                    "offset": 88,
+                    "bitSize": 7,
                     "intSize": 7,
                     "maxIntValue": 100
                 },
                 {
                     "name": "#gradientangle",
                     "type": "uint",
-                    "offset": 128,
-                    "bitSize": 16,
+                    "offset": 101,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
+                    "offset": 25,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
+                    "offset": 36,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#angle",
                     "type": "uint",
-                    "offset": 80,
-                    "bitSize": 16,
+                    "offset": 63,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#scalex",
                     "type": "uint",
-                    "offset": 176,
-                    "bitSize": 16,
+                    "offset": 135,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#scaley",
                     "type": "uint",
-                    "offset": 192,
-                    "bitSize": 16,
+                    "offset": 146,
+                    "bitSize": 11,
                     "intSize": 11,
                     "maxIntValue": 1024
                 },
                 {
                     "name": "#materialangle",
                     "type": "uint",
-                    "offset": 160,
-                    "bitSize": 16,
+                    "offset": 126,
+                    "bitSize": 9,
                     "intSize": 9,
                     "maxIntValue": 511
                 },
                 {
                     "name": "#materialscalex",
                     "type": "uint",
-                    "offset": 208,
+                    "offset": 157,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5752,7 +4969,7 @@
                 {
                     "name": "#materialscaley",
                     "type": "uint",
-                    "offset": 216,
+                    "offset": 165,
                     "bitSize": 8,
                     "intSize": 8,
                     "maxIntValue": 255
@@ -5760,23 +4977,23 @@
                 {
                     "name": "#groupindex",
                     "type": "uint",
-                    "offset": 120,
-                    "bitSize": 8,
+                    "offset": 95,
+                    "bitSize": 6,
                     "intSize": 6,
                     "maxIntValue": 32
                 },
                 {
                     "name": "#outline",
                     "type": "uint",
-                    "offset": 235,
+                    "offset": 183,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
-                    "offset": 232,
+                    "offset": 180,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5784,7 +5001,7 @@
                 {
                     "name": "#gradienttype",
                     "type": "uint",
-                    "offset": 234,
+                    "offset": 182,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
@@ -5792,17 +5009,10 @@
                 {
                     "name": "#blend",
                     "type": "uint",
-                    "offset": 233,
+                    "offset": 181,
                     "bitSize": 1,
                     "intSize": 1,
                     "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_46abccf6acdcd394",
-                    "type": "pad",
-                    "offset": 236,
-                    "bitSize": 4,
-                    "intSize": 4
                 }
             ]
         }

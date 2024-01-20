@@ -196,7 +196,7 @@ function function_9b9525e9() {
         }
     #/
     level.var_8fce01d = 0;
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace ct_prophet_tutorial/ct_prophet_tutorial

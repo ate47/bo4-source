@@ -169,7 +169,7 @@ function function_2043936c(trigger_struct) {
             forward = anglestoforward(player.angles);
             droppos = player get_item_spawn_point();
             dropitem = player item_drop::drop_item(point.var_a6762160.weapon, 1, point.var_a6762160.amount, point.id, droppos, player.angles);
-            player item_inventory::remove_inventory_item(item.var_bd027dd9);
+            player item_inventory::remove_inventory_item(item.networkid);
             var_129fa609 = player function_80635b6f();
             player.var_b60fee90 = 1;
             if (!isdefined(var_129fa609)) {

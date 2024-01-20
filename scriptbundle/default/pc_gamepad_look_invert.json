@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_gamepad_look_invert",
     "displayname": "#hash_1add9c435db2d667",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "input_invertpitch",
     "var_82c732a7": 1,

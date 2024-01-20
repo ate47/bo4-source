@@ -518,7 +518,7 @@ function menu_onmenuresponse() {
         waitresult = self waittill(#"menuresponse");
         menu = waitresult.menu;
         response = waitresult.response;
-        var_244a2498 = waitresult.intpayload;
+        intval = waitresult.intpayload;
         if (response == "back") {
             self closeingamemenu();
             if (level.console) {

@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_disable_minimize",
     "displayname": "#hash_13a87708b8cdf118",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "windows_key_disable",
     "var_82c732a7": 1,

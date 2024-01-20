@@ -71,14 +71,14 @@ function function_e35eee4d() {
     level endon(#"game_ended");
     while (1) {
         players = getplayers();
-        var_2282e309 = 0;
+        canbeseen = 0;
         foreach (player in players) {
             if (sighttracepassed(self geteye(), player geteye(), 0, undefined)) {
-                var_2282e309 = 1;
+                canbeseen = 1;
                 break;
             }
         }
-        if (!var_2282e309) {
+        if (!canbeseen) {
             self delete();
         }
         wait(0.5);

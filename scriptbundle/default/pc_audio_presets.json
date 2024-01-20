@@ -32,7 +32,7 @@
     "maxvalue": 1,
     "name": "pc_audio_presets",
     "displayname": "#hash_64358215620a8410",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "snd_menu_presets",
     "var_d4e288e": 1,

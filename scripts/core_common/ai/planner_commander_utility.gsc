@@ -244,8 +244,8 @@ function private function_65b16924(doppelbots, components) {
     if (doppelbots.size <= 0 || components.size <= 0) {
         return var_1a9886d3;
     }
-    for (var_16b9ef20 = 0; var_16b9ef20 < components.size; var_16b9ef20++) {
-        component = components[var_16b9ef20][#"__unsafe__"][#"component"];
+    for (componentindex = 0; componentindex < components.size; componentindex++) {
+        component = components[componentindex][#"__unsafe__"][#"component"];
         if (!isdefined(component)) {
             continue;
         }
@@ -270,7 +270,7 @@ function private function_65b16924(doppelbots, components) {
         }
         if (chained) {
             var_d6d184 = array();
-            var_d6d184[#"component"] = components[var_16b9ef20];
+            var_d6d184[#"component"] = components[componentindex];
             var_1a9886d3[var_1a9886d3.size] = var_d6d184;
         }
     }
@@ -452,8 +452,8 @@ function private function_77cd4593(planner, doppelbots, components) {
             break;
         }
     }
-    for (var_16b9ef20 = 0; var_16b9ef20 < components.size; var_16b9ef20++) {
-        component = components[var_16b9ef20][#"__unsafe__"][#"component"];
+    for (componentindex = 0; componentindex < components.size; componentindex++) {
+        component = components[componentindex][#"__unsafe__"][#"component"];
         if (!isdefined(component)) {
             continue;
         }
@@ -494,7 +494,7 @@ function private function_77cd4593(planner, doppelbots, components) {
         if (pathable) {
             path = array();
             path[#"distance"] = longestpath;
-            path[#"objective"] = components[var_16b9ef20];
+            path[#"objective"] = components[componentindex];
             pathablecomponents[pathablecomponents.size] = path;
         }
         if (getrealtime() - planner.planstarttime > planner.maxframetime) {
@@ -1476,8 +1476,8 @@ function private function_166d74b2(planner, constants) {
     idlebots = array();
     for (squadindex = 0; squadindex < possiblesquads.size; squadindex++) {
         squad = possiblesquads[squadindex];
-        for (var_353877ef = 0; var_353877ef < squad.size; var_353877ef++) {
-            idlebots[idlebots.size] = squad[var_353877ef];
+        for (memberindex = 0; memberindex < squad.size; memberindex++) {
+            idlebots[idlebots.size] = squad[memberindex];
         }
     }
     /#

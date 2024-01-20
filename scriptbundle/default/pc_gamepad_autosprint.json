@@ -8,7 +8,7 @@
     "var_43a952c1": 0.1,
     "name": "pc_gamepad_autosprint",
     "displayname": "#hash_75f66add7d7d3a46",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "auto_sprint_enabled",
     "var_82c732a7": 1,

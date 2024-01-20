@@ -32,11 +32,11 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0xb4a22b5d, Offset: 0x4e0
 // Size: 0xf4
 function ctf_reset_score(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    var_c2c45c73 = getuimodel(getuimodelforcontroller(localclientnum), "GameScore");
-    var_dbedf85e = getuimodel(var_c2c45c73, "playerScore");
-    var_b61c1787 = getuimodel(var_c2c45c73, "enemyScore");
-    setuimodelvalue(var_dbedf85e, 0);
-    setuimodelvalue(var_b61c1787, 0);
+    gamescoremodel = getuimodel(getuimodelforcontroller(localclientnum), "GameScore");
+    playerscoremodel = getuimodel(gamescoremodel, "playerScore");
+    enemyscoremodel = getuimodel(gamescoremodel, "enemyScore");
+    setuimodelvalue(playerscoremodel, 0);
+    setuimodelvalue(enemyscoremodel, 0);
 }
 
 // Namespace ctf/ctf

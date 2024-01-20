@@ -1540,9 +1540,9 @@ function private function_81c2c3d5(entity) {
         if (isdefined(entity.spawn_point) && isdefined(entity.spawn_point.wander_radius)) {
             circle(entity.spawn_point.origin, int(entity.spawn_point.wander_radius), (0, 1, 1), 1, 1, 1);
         }
-        var_1f2328d0 = entity function_4794d6a3();
-        if (isdefined(var_1f2328d0)) {
-            debugstar(var_1f2328d0.goalpos, 1, (0, 1, 0));
+        goalinfo = entity function_4794d6a3();
+        if (isdefined(goalinfo)) {
+            debugstar(goalinfo.goalpos, 1, (0, 1, 0));
         }
     #/
 }

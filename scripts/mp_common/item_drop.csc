@@ -77,11 +77,11 @@ function private function_67189b6b(localclientnum, newval) {
     stashitem = (newval & 4) != 0;
     newval = newval & -5;
     if (newval == 0) {
-        if (isdefined(self) && isdefined(self.var_bd027dd9) && isdefined(level.item_spawn_drops[self.var_bd027dd9])) {
-            arrayremoveindex(level.item_spawn_drops, self.var_bd027dd9, 1);
+        if (isdefined(self) && isdefined(self.networkid) && isdefined(level.item_spawn_drops[self.networkid])) {
+            arrayremoveindex(level.item_spawn_drops, self.networkid, 1);
         }
-        if (isdefined(self) && isdefined(self.var_bd027dd9) && isdefined(level.var_5b2a8d88[self.var_bd027dd9])) {
-            level.var_5b2a8d88[self.var_bd027dd9] = 0;
+        if (isdefined(self) && isdefined(self.networkid) && isdefined(level.var_5b2a8d88[self.networkid])) {
+            level.var_5b2a8d88[self.networkid] = 0;
         }
     } else if (newval == 1) {
         /#
@@ -90,7 +90,7 @@ function private function_67189b6b(localclientnum, newval) {
         if (self.id >= 1024) {
             return;
         }
-        self.var_bd027dd9 = item_world_util::function_1f0def85(self);
+        self.networkid = item_world_util::function_1f0def85(self);
         self.hidetime = 0;
         if (stashitem) {
             self.hidetime = -1;
@@ -99,29 +99,29 @@ function private function_67189b6b(localclientnum, newval) {
             self.var_a6762160 = function_b1702735(self.id).var_a6762160;
             self function_1fe1281(localclientnum, clientfield::get("dynamic_item_drop_count"));
             if (self.var_a6762160.name == #"sig_blade_wz_item" && isdefined(level.var_5b2a8d88)) {
-                level.var_5b2a8d88[self.var_bd027dd9] = 1;
+                level.var_5b2a8d88[self.networkid] = 1;
             }
         }
         arrayremovevalue(level.item_spawn_drops, undefined, 1);
-        level.item_spawn_drops[self.var_bd027dd9] = self;
+        level.item_spawn_drops[self.networkid] = self;
         item_world::function_b78a9820(localclientnum);
         player = function_5c10bd79(localclientnum);
         if (isplayer(player) && distance2dsquared(self.origin, player.origin) <= 1350 * 1350) {
             player.var_506495f9 = 1;
         }
         item_inventory::function_b1136fc8(localclientnum, self);
-        player item_world::show_item(localclientnum, self.var_bd027dd9, !stashitem);
+        player item_world::show_item(localclientnum, self.networkid, !stashitem);
     } else if (newval == 2) {
         self.hidetime = gettime();
-        self.var_bd027dd9 = item_world_util::function_1f0def85(self);
+        self.networkid = item_world_util::function_1f0def85(self);
         item_inventory::function_31868137(localclientnum, self);
         item_world::function_b78a9820(localclientnum);
         item_world::function_2990e5f(localclientnum, self);
-        if (isdefined(self.var_bd027dd9) && getdvarint(#"hash_99bb0233e482c77", 0)) {
-            level.item_spawn_drops[self.var_bd027dd9] = undefined;
+        if (isdefined(self.networkid) && getdvarint(#"hash_99bb0233e482c77", 0)) {
+            level.item_spawn_drops[self.networkid] = undefined;
         }
         player = function_5c10bd79(localclientnum);
-        player item_world::hide_item(localclientnum, self.var_bd027dd9);
+        player item_world::hide_item(localclientnum, self.networkid);
     }
 }
 

@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_tac_deploy_default_spawn",
     "displayname": "#hash_47d5c659eab3c003",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "tac_deploy_default_spawn",
     "var_82c732a7": 1,

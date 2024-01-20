@@ -2254,7 +2254,7 @@ function diable_fog_in_noclip() {
             }
             setdvar(#"scr_fog_disable", 1);
             setdvar(#"r_fog_disable", 1);
-            if (isdefined(level.var_dfdd741e)) {
+            if (isdefined(level.culldist)) {
                 setculldist(0);
             }
             while (any_player_in_noclip()) {
@@ -2262,8 +2262,8 @@ function diable_fog_in_noclip() {
             }
             setdvar(#"scr_fog_disable", 0);
             setdvar(#"r_fog_disable", 0);
-            if (isdefined(level.var_dfdd741e)) {
-                setculldist(level.var_dfdd741e);
+            if (isdefined(level.culldist)) {
+                setculldist(level.culldist);
             }
         }
     #/

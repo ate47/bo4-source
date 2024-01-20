@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_reactorcore_invert_camera_rotation",
     "displayname": "#hash_b3997eea30cf0b6",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "radiation_inversecam",
     "var_82c732a7": 1,

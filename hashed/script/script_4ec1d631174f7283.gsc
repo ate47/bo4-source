@@ -116,10 +116,10 @@ function private function_b7f08e2d() {
         enabled = getdvarint(#"hash_6ba94f3ad6709984", 0);
         if (enabled) {
             end = self getcentroid();
-            var_1f2328d0 = self function_4794d6a3();
-            if (isdefined(var_1f2328d0.goalpos)) {
+            goalinfo = self function_4794d6a3();
+            if (isdefined(goalinfo.goalpos)) {
                 /#
-                    sphere(var_1f2328d0.goalpos, 5, (0, 1, 0), 0.5, 0, 8, 1);
+                    sphere(goalinfo.goalpos, 5, (0, 1, 0), 0.5, 0, 8, 1);
                 #/
             }
         }

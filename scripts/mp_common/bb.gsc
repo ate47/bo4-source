@@ -74,7 +74,7 @@ function function_95a5b5c2(var_daec1817, label, team, origin, player) {
 // Params 14, eflags: 0x1 linked
 // Checksum 0xdba94d71, Offset: 0x650
 // Size: 0x24c
-function function_c3b9e07f(eattacker, attackerorigin, var_a48b1a67, attackerweapon, evictim, victimorigin, var_76d450bd, victimweapon, idamage, smeansofdeath, shitloc, death, isusingheropower, killstreak) {
+function function_c3b9e07f(eattacker, attackerorigin, attackerspecialist, attackerweapon, evictim, victimorigin, victimspecialist, victimweapon, idamage, smeansofdeath, shitloc, death, isusingheropower, killstreak) {
     if (!sessionmodeismultiplayergame()) {
         return;
     }
@@ -88,7 +88,7 @@ function function_c3b9e07f(eattacker, attackerorigin, var_a48b1a67, attackerweap
         mpattacks.attackery = attackerorigin[1];
         mpattacks.attackerz = attackerorigin[2];
     }
-    mpattacks.var_a48b1a67 = var_a48b1a67;
+    mpattacks.attackerspecialist = attackerspecialist;
     mpattacks.attackerweapon = attackerweapon;
     if (isdefined(evictim)) {
         mpattacks.victimspawnid = getplayerspawnid(evictim);
@@ -98,7 +98,7 @@ function function_c3b9e07f(eattacker, attackerorigin, var_a48b1a67, attackerweap
         mpattacks.victimy = victimorigin[1];
         mpattacks.victimz = victimorigin[2];
     }
-    mpattacks.var_76d450bd = var_76d450bd;
+    mpattacks.victimspecialist = victimspecialist;
     mpattacks.victimweapon = victimweapon;
     mpattacks.damage = idamage;
     mpattacks.damagetype = smeansofdeath;

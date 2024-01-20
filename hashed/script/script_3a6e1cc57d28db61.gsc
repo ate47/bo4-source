@@ -9,11 +9,11 @@
 // Params 2, eflags: 0x1 linked
 // Checksum 0xf7994eff, Offset: 0x80
 // Size: 0x8c
-function setup(var_582cb7bb, reset = 1) {
+function setup(seedvalue, reset = 1) {
     if (!namespace_65181344::is_enabled()) {
         return;
     }
-    function_1f4464c0(var_582cb7bb);
+    function_1f4464c0(seedvalue);
     if (reset) {
         level callback::callback(#"hash_11bd48298bde44a4", undefined);
     }

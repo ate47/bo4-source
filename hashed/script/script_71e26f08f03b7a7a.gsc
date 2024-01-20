@@ -51,8 +51,8 @@ function private function_2d47ee1e(var_6ed927a6, var_caba78c2, waittime, var_ef5
 // Params 3, eflags: 0x1 linked
 // Checksum 0xe1d3e740, Offset: 0x2b8
 // Size: 0x12c
-function function_f0297225(var_2ab9d3bd, var_f532cd9f, var_3afaa57b) {
-    if (!ishash(var_2ab9d3bd) || !isint(var_f532cd9f) || !isint(var_3afaa57b)) {
+function function_f0297225(var_2ab9d3bd, replacementcount, var_3afaa57b) {
+    if (!ishash(var_2ab9d3bd) || !isint(replacementcount) || !isint(var_3afaa57b)) {
         /#
             assert(0);
         #/
@@ -68,7 +68,7 @@ function function_f0297225(var_2ab9d3bd, var_f532cd9f, var_3afaa57b) {
         level.var_2ead97d1[var_3afaa57b] = [];
     }
     var_37d0690b = level.var_2ead97d1[var_3afaa57b].size;
-    level.var_2ead97d1[var_3afaa57b][var_37d0690b] = {#count:var_f532cd9f, #replacement:var_2ab9d3bd};
+    level.var_2ead97d1[var_3afaa57b][var_37d0690b] = {#count:replacementcount, #replacement:var_2ab9d3bd};
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3
@@ -124,16 +124,16 @@ function start(supplydrops = 1, minwaittime = 20, var_fe6b2eab = 20) {
         }
         for (var_a6872bd0 = 0; var_a6872bd0 < var_64f52ca3.size; var_a6872bd0++) {
             randindex = randomint(var_64f52ca3.size);
-            var_521b73a = var_64f52ca3[var_a6872bd0];
+            tempid = var_64f52ca3[var_a6872bd0];
             var_64f52ca3[var_a6872bd0] = var_64f52ca3[randindex];
-            var_64f52ca3[randindex] = var_521b73a;
+            var_64f52ca3[randindex] = tempid;
         }
         replacements = level.var_2ead97d1[var_3afaa57b];
         for (var_4d83f68a = 0; var_4d83f68a < replacements.size; var_4d83f68a++) {
             randindex = randomint(replacements.size);
-            var_521b73a = replacements[var_4d83f68a];
+            tempid = replacements[var_4d83f68a];
             replacements[var_4d83f68a] = replacements[randindex];
-            replacements[randindex] = var_521b73a;
+            replacements[randindex] = tempid;
         }
         var_b7d663a9 = 0;
         foreach (replacement in replacements) {

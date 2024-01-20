@@ -437,8 +437,8 @@ function function_35dc468d(str_field) {
 // Params 3, eflags: 0x0
 // Checksum 0x8354874b, Offset: 0x1a88
 // Size: 0x32
-function function_f9d5c4b0(x, str_field, var_b8003601) {
-    level.(str_field) = var_b8003601;
+function function_f9d5c4b0(x, str_field, var_value) {
+    level.(str_field) = var_value;
     return 1;
 }
 
@@ -496,7 +496,7 @@ function function_68a5d644(var_30e9e231) {
 // Params 1, eflags: 0x0
 // Checksum 0x201b95d4, Offset: 0x1b58
 // Size: 0x10
-function function_4e718879(v_value) {
+function vectorconstant(v_value) {
     return v_value;
 }
 
@@ -552,8 +552,8 @@ function function_f2357a4d(var_52d6c2bd) {
 // Params 1, eflags: 0x0
 // Checksum 0xa5b66cd3, Offset: 0x1c00
 // Size: 0x10
-function function_79f7d941(var_b8003601) {
-    return var_b8003601;
+function function_79f7d941(var_value) {
+    return var_value;
 }
 
 // Namespace namespace_22752a75/flowgraph_shared

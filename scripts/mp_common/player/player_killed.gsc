@@ -551,9 +551,9 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
     killerwasads = 0;
     killerinvictimfov = 0;
     victiminkillerfov = 0;
-    var_76d450bd = function_b14806c6(self player_role::get(), currentsessionmode());
+    victimspecialist = function_b14806c6(self player_role::get(), currentsessionmode());
     if (isplayer(attacker)) {
-        var_a48b1a67 = function_b14806c6(attacker player_role::get(), currentsessionmode());
+        attackerspecialist = function_b14806c6(attacker player_role::get(), currentsessionmode());
         attacker.lastkilltime = gettime();
         killer = attacker;
         killerloadoutindex = attacker.class_num;
@@ -566,12 +566,12 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         var_c144d535 = isdefined(self.currentweapon) ? self.currentweapon.name : "";
         if (killstreaks::is_killstreak_weapon(weapon)) {
             killstreak = killstreaks::get_killstreak_for_weapon_for_stats(weapon);
-            bb::function_c3b9e07f(attacker, lpattackorigin, var_a48b1a67, weapon.name, self, self.origin, var_76d450bd, var_c144d535, idamage, smeansofdeath, shitloc, 1, killerheropoweractive, killstreak);
+            bb::function_c3b9e07f(attacker, lpattackorigin, attackerspecialist, weapon.name, self, self.origin, victimspecialist, var_c144d535, idamage, smeansofdeath, shitloc, 1, killerheropoweractive, killstreak);
         } else {
-            bb::function_c3b9e07f(attacker, lpattackorigin, var_a48b1a67, weapon.name, self, self.origin, var_76d450bd, var_c144d535, idamage, smeansofdeath, shitloc, 1, killerheropoweractive, undefined);
+            bb::function_c3b9e07f(attacker, lpattackorigin, attackerspecialist, weapon.name, self, self.origin, victimspecialist, var_c144d535, idamage, smeansofdeath, shitloc, 1, killerheropoweractive, undefined);
         }
     } else {
-        bb::function_c3b9e07f(undefined, undefined, undefined, weapon.name, self, self.origin, var_76d450bd, undefined, idamage, smeansofdeath, shitloc, 1, 0, undefined);
+        bb::function_c3b9e07f(undefined, undefined, undefined, weapon.name, self, self.origin, victimspecialist, undefined, idamage, smeansofdeath, shitloc, 1, 0, undefined);
     }
     victimweapon = undefined;
     victimweaponpickedup = 0;
@@ -616,7 +616,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         }
     }
     var_989983f4 = spawnstruct();
-    var_989983f4.var_b4b63e47 = self.class_num;
+    var_989983f4.victimloadoutindex = self.class_num;
     var_989983f4.victimweaponpickedup = victimweaponpickedup;
     var_989983f4.victimwasads = victimwasads;
     var_989983f4.killerloadoutindex = killerloadoutindex;
@@ -938,9 +938,9 @@ function private function_caabcf70(victim, var_aedb48f4, laststandparams, var_a1
     function_ad11630f(victim, var_f53d817d.victimorigin, var_f53d817d.var_5fceefd4, var_f53d817d.victimweapon, var_f53d817d.attacker, var_f53d817d.attackerorigin, var_f53d817d.var_83634238, var_f53d817d.sweapon, var_f53d817d.matchtime, var_f53d817d.shitloc, var_f53d817d.smeansofdeath, var_ee2f4691.attacker, var_ee2f4691.attackerorigin, var_ee2f4691.var_83634238, var_ee2f4691.sweapon, var_ee2f4691.matchtime, var_ee2f4691.shitloc, var_ee2f4691.smeansofdeath);
     lifeindex = victim match_record::get_player_stat(#"hash_ec4aea1a8bbd82");
     if (isdefined(lifeindex) && isdefined(victim) && isplayer(victim)) {
-        var_6c7269e = victim match_record::get_player_index();
-        if (isdefined(var_6c7269e)) {
-            match_record::set_stat(#"lives", lifeindex, #"player_index", var_6c7269e);
+        victimindex = victim match_record::get_player_index();
+        if (isdefined(victimindex)) {
+            match_record::set_stat(#"lives", lifeindex, #"player_index", victimindex);
         }
         if (isdefined(var_f53d817d) && isdefined(var_f53d817d.attacker) && isplayer(var_f53d817d.attacker)) {
             attackerindex = var_f53d817d.attacker match_record::get_player_index();
@@ -1347,7 +1347,7 @@ function private function_48a1200f(einflictor, attacker, weapon, lpattackteam) {
             }
             damage_done = self.attackerdamage[player.clientid].damage;
             if (sessionmodeismultiplayergame() && isdefined(player.currentweapon)) {
-                function_92d1707f(#"hash_d1357992f4715f0", {#var_c47a74de:player.currentweapon.name, #var_fc39645f:function_b14806c6(player player_role::get(), currentsessionmode()), #var_a322a945:getplayerspawnid(player), #gametime:function_f8d53445()});
+                function_92d1707f(#"hash_d1357992f4715f0", {#assistweapon:player.currentweapon.name, #assistspecialist:function_b14806c6(player player_role::get(), currentsessionmode()), #assistspawnid:getplayerspawnid(player), #gametime:function_f8d53445()});
             }
             player thread globallogic_score::processassist(self, damage_done, self.attackerdamage[player.clientid].weapon, self.attackerdamage[player.clientid].time, self.attackerdamage[player.clientid].meansofdeath);
         }

@@ -215,7 +215,7 @@ function function_9b9525e9() {
     level.var_ad7c0539 = 4;
     function_c43189cd();
     ct_utils::function_9aca2fa0("ct_endgame");
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace ct_crash_tutorial/ct_crash_tutorial

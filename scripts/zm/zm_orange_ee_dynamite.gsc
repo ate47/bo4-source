@@ -49,8 +49,8 @@ function main() {
     zm_items::function_4d230236(level.var_d867b9f3[0], &function_168f686b);
     zm_items::function_4d230236(level.var_d867b9f3[1], &function_168f686b);
     zm_items::function_4d230236(level.var_d867b9f3[2], &function_168f686b);
-    zm_crafting::function_d1f16587(#"hash_2ca3c1e10bdf8cdb", &function_7056aa62);
-    zm_crafting::function_d1f16587(#"hash_1255a9a8cf55727d", &function_7056aa62);
+    zm_crafting::function_d1f16587(#"ztable_orange_open", &function_7056aa62);
+    zm_crafting::function_d1f16587(#"ztable_orange_dynamite_bomb", &function_7056aa62);
     function_e55e2a5e();
     level.var_518d6e34 = 0;
     level.var_37078af7 = 0;
@@ -481,14 +481,14 @@ function function_6ecfea46() {
     level.var_37078af7++;
     if (level.var_37078af7 < 4) {
         function_e55e2a5e();
-        if (isarray(level.var_4fe2f84d[#"hash_1255a9a8cf55727d"])) {
-            foreach (s_crafting in level.var_4fe2f84d[#"hash_1255a9a8cf55727d"]) {
+        if (isarray(level.var_4fe2f84d[#"ztable_orange_dynamite_bomb"])) {
+            foreach (s_crafting in level.var_4fe2f84d[#"ztable_orange_dynamite_bomb"]) {
                 if (isdefined(s_crafting.blueprint) && s_crafting.blueprint.name === "zblueprint_orange_dynamite_bomb" && !(isdefined(s_crafting.registered) && s_crafting.registered)) {
                     s_crafting zm_crafting::reset_table();
                 }
             }
         } else {
-            foreach (s_crafting in level.var_4fe2f84d[#"hash_2ca3c1e10bdf8cdb"]) {
+            foreach (s_crafting in level.var_4fe2f84d[#"ztable_orange_open"]) {
                 if (isdefined(s_crafting.blueprint) && s_crafting.blueprint.name === "zblueprint_orange_dynamite_bomb" && !(isdefined(s_crafting.registered) && s_crafting.registered)) {
                     s_crafting zm_crafting::reset_table();
                 }

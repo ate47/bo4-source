@@ -10,7 +10,7 @@
     "name": "pc_gamepad_lootpickup_mode",
     "displayname": "#hash_68cea3a4e313fe64",
     "rangestartvalue": 0.01,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 4,
     "statname": "warzoneInstantPickups",
     "var_82c732a7": 1,

@@ -99,15 +99,15 @@ function state_combat_update(params) {
             self.ai.var_88b0fd29 = gettime();
         }
         var_12cb92c6 = 0;
-        var_1f2328d0 = self function_4794d6a3();
-        forcedgoal = isdefined(var_1f2328d0.goalforced) && var_1f2328d0.goalforced;
-        isatgoal = isdefined(var_1f2328d0.isatgoal) && var_1f2328d0.isatgoal || self isapproachinggoal() && isdefined(self.overridegoalpos);
+        goalinfo = self function_4794d6a3();
+        forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
+        isatgoal = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal || self isapproachinggoal() && isdefined(self.overridegoalpos);
         if (isdefined(isatgoal) && isatgoal) {
             self asmrequestsubstate(#"hash_236f963ae1728eb3");
             self cancelaimove();
             self function_d4c687c9();
         } else {
-            self.current_pathto_pos = getclosestpointonnavmesh(var_1f2328d0.goalpos, self.radius * 2, self.radius);
+            self.current_pathto_pos = getclosestpointonnavmesh(goalinfo.goalpos, self.radius * 2, self.radius);
             should_slow_down_at_goal = 1;
             if (isdefined(self.current_pathto_pos) && self function_a57c34b7(self.current_pathto_pos, should_slow_down_at_goal, 1)) {
                 self asmrequestsubstate(#"locomotion@movement");

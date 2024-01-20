@@ -292,7 +292,7 @@ function function_9b9525e9() {
     function_76739a65();
     level.var_ad7c0539 = 9;
     function_eadc9c91();
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace ct_nomad_tutorial/ct_nomad_tutorial

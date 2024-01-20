@@ -25,7 +25,7 @@ function private init_target() {
         return 0;
     }
     structs = [];
-    var_3dc92b90 = 0;
+    totalms = 0;
     var_dc0e8c88 = struct::get(self.target, "targetname");
     struct = var_dc0e8c88;
     do {
@@ -33,14 +33,14 @@ function private init_target() {
             return 0;
         }
         structs[structs.size] = struct;
-        var_3dc92b90 = var_3dc92b90 + struct.script_int;
+        totalms = totalms + struct.script_int;
         struct = struct::get(struct.target, "targetname");
     } while(struct != var_dc0e8c88);
     /#
         assert(structs.size == 2);
     #/
     self.structs = structs;
-    self.var_3dc92b90 = var_3dc92b90;
+    self.totalms = totalms;
     return 1;
 }
 
@@ -62,7 +62,7 @@ function private function_5bab934a(struct, var_d1d733b4) {
 // Checksum 0xa521a7ad, Offset: 0x340
 // Size: 0x1e0
 function private follow_path() {
-    starttime = int(floor(getservertime(0) / self.var_3dc92b90) * self.var_3dc92b90 + self.var_3dc92b90);
+    starttime = int(floor(getservertime(0) / self.totalms) * self.totalms + self.totalms);
     while (getservertime(0) < starttime) {
         waitframe(1);
     }

@@ -92,7 +92,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_6c7256462c2e206d",
+                    "name": "#motion_state",
                     "type": "byte",
                     "offset": 352,
                     "bitSize": 8,
@@ -101,12 +101,12 @@
                 },
                 {
                     "name": "#match",
-                    "type": "struct#hash_8057a5478d9bca",
+                    "type": "struct#match_header",
                     "offset": 0,
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 481,
                     "bitSize": 7,
@@ -115,7 +115,7 @@
             ]
         },
         {
-            "name": "#hash_8057a5478d9bca",
+            "name": "#match_header",
             "members": [
                 {
                     "name": "#lobby_id",

@@ -144,16 +144,16 @@ function function_c78d9e67() {
 // Params 3, eflags: 0x0
 // Checksum 0x1f0db96a, Offset: 0xa78
 // Size: 0xdc
-function function_cd7ed6c5(var_a99ac828, startat, var_7d04e9ec) {
+function function_cd7ed6c5(var_a99ac828, startat, toplevel) {
     /#
-        if (!isdefined(var_7d04e9ec)) {
-            var_7d04e9ec = 0;
+        if (!isdefined(toplevel)) {
+            toplevel = 0;
         }
         while (isdefined(var_a99ac828[startat])) {
             if (isdefined(level.zdraw.commands[var_a99ac828[startat]])) {
                 startat = [[ level.zdraw.commands[var_a99ac828[startat]] ]](var_a99ac828, startat + 1);
             } else {
-                if (isdefined(var_7d04e9ec) && var_7d04e9ec) {
+                if (isdefined(toplevel) && toplevel) {
                     function_96c207f("<unknown string>" + var_a99ac828[startat]);
                 }
                 return startat;

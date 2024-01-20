@@ -9,7 +9,7 @@
     "maxvalue": -1,
     "name": "pc_invert_y_axis",
     "displayname": "#hash_2992e7cae8b9f7ec",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "m_pitchSign",
     "var_82c732a7": 1,

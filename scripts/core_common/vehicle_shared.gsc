@@ -1008,7 +1008,7 @@ function init(vehicle) {
     if (vehicle.vehicleclass === "artillery") {
         vehicle.disconnectpathonstop = undefined;
         self disconnect_paths(0);
-    } else if (vehicle.var_46439e18 && !sessionmodeiswarzonegame()) {
+    } else if (vehicle.isplayervehicle && !sessionmodeiswarzonegame()) {
         vehicle.disconnectpathonstop = 1;
         vehicle.disconnectpathdetail = 2;
     } else {
@@ -3654,9 +3654,9 @@ function function_8aab5d53(player, var_55716d54) {
             var_42775dfe = player function_dd63190a();
         } else {
             var_759ec838 = player getvehicleboosttime();
-            var_93237569 = player getvehicleboosttimeleft();
+            boosttimeleft = player getvehicleboosttimeleft();
             if (var_759ec838 > 0) {
-                var_42775dfe = var_93237569 / var_759ec838;
+                var_42775dfe = boosttimeleft / var_759ec838;
             }
         }
         player clientfield::set_player_uimodel("vehicle.bindingCooldown" + var_55716d54 + ".cooldown", var_42775dfe);

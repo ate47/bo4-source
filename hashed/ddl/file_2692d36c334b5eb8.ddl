@@ -13,7 +13,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_46be24c6e015b8b1",
+                    "name": "#challengeprogress",
                     "type": "uint[16]",
                     "offset": 8,
                     "bitSize": 128,
@@ -29,7 +29,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_142ab0a9241c35dd",
+                    "name": "#selectedspecialist",
                     "type": "uint",
                     "offset": 136,
                     "bitSize": 8,
@@ -53,7 +53,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 405,
                     "bitSize": 3,
@@ -65,8 +65,8 @@
             "name": "#hash_59cc7e9a5821e816",
             "members": [
                 {
-                    "name": "#hash_605696600d07138",
-                    "type": "enum#hash_605696600d07138",
+                    "name": "#trainingstate",
+                    "type": "enum#trainingstate",
                     "offset": 0,
                     "bitSize": 8
                 },
@@ -79,7 +79,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 11,
                     "bitSize": 5,
@@ -88,7 +88,7 @@
             ]
         },
         {
-            "name": "#hash_605696600d07138",
+            "name": "#trainingstate",
             "values": [
                 "#skirmish_started",
                 "#tutorial_completed",
@@ -114,7 +114,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_46be24c6e015b8b1",
+                    "name": "#challengeprogress",
                     "type": "uint[16]",
                     "offset": 8,
                     "bitSize": 128,
@@ -130,7 +130,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_142ab0a9241c35dd",
+                    "name": "#selectedspecialist",
                     "type": "uint",
                     "offset": 136,
                     "bitSize": 8,
@@ -146,7 +146,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 404,
                     "bitSize": 4,
@@ -158,8 +158,8 @@
             "name": "#hash_59cc7e9a5821e816",
             "members": [
                 {
-                    "name": "#hash_605696600d07138",
-                    "type": "enum#hash_605696600d07138",
+                    "name": "#trainingstate",
+                    "type": "enum#trainingstate",
                     "offset": 0,
                     "bitSize": 8
                 },
@@ -172,7 +172,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 11,
                     "bitSize": 5,
@@ -181,7 +181,7 @@
             ]
         },
         {
-            "name": "#hash_605696600d07138",
+            "name": "#trainingstate",
             "values": [
                 "#skirmish_started",
                 "#tutorial_completed",
@@ -207,7 +207,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_46be24c6e015b8b1",
+                    "name": "#challengeprogress",
                     "type": "uint[16]",
                     "offset": 0,
                     "bitSize": 128,
@@ -223,7 +223,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 387,
                     "bitSize": 5,
@@ -235,8 +235,8 @@
             "name": "#hash_59cc7e9a5821e816",
             "members": [
                 {
-                    "name": "#hash_605696600d07138",
-                    "type": "enum#hash_605696600d07138",
+                    "name": "#trainingstate",
+                    "type": "enum#trainingstate",
                     "offset": 0,
                     "bitSize": 8
                 },
@@ -249,7 +249,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 11,
                     "bitSize": 5,
@@ -258,7 +258,7 @@
             ]
         },
         {
-            "name": "#hash_605696600d07138",
+            "name": "#trainingstate",
             "values": [
                 "#skirmish_started",
                 "#tutorial_completed",

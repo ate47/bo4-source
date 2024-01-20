@@ -49,8 +49,8 @@ function function_e93291ff() {
         return;
     }
     destinations = arraysortclosest(destinations, (0, 0, 0));
-    for (var_bae3dcae = 0; var_bae3dcae < destinations.size; var_bae3dcae++) {
-        destinations[var_bae3dcae].var_343828ba = var_bae3dcae;
+    for (destindex = 0; destindex < destinations.size; destindex++) {
+        destinations[destindex].globalindex = destindex;
     }
     level.var_7767cea8 = [];
     /#
@@ -73,9 +73,9 @@ function function_e93291ff() {
         arrayremoveindex(destinations, var_137456fd);
     } else {
         while (destinations.size > 0 && level.var_7767cea8.size < 5) {
-            var_bae3dcae = randomint(destinations.size);
-            level.var_7767cea8[level.var_7767cea8.size] = destinations[var_bae3dcae];
-            arrayremoveindex(destinations, var_bae3dcae);
+            destindex = randomint(destinations.size);
+            level.var_7767cea8[level.var_7767cea8.size] = destinations[destindex];
+            arrayremoveindex(destinations, destindex);
         }
     }
     foreach (dest in level.var_7767cea8) {
@@ -122,11 +122,11 @@ function override_spawn(ispredictedspawn) {
     for (teamindex = 0; teammask > 1; teamindex++) {
         teammask = teammask >> 1;
     }
-    var_bae3dcae = teamindex % level.var_7767cea8.size;
-    dest = level.var_7767cea8[var_bae3dcae];
+    destindex = teamindex % level.var_7767cea8.size;
+    dest = level.var_7767cea8[destindex];
     var_c1a973a4 = int(teamindex / level.var_7767cea8.size);
     var_92438b9c = var_c1a973a4 * level.maxteamplayers % dest.spawns.size;
-    self.var_25fe2d03 = dest.var_343828ba;
+    self.var_25fe2d03 = dest.globalindex;
     spawn = undefined;
     spawntime = gettime();
     if (ispredictedspawn) {

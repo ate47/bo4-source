@@ -18,7 +18,7 @@
     "displayname": "#hash_5e04071165c5b777",
     "rangestartvalue": 0.1,
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 0.9,
     "statname": "snd_scale_when_speaking",
     "var_d4e288e": 0.5,

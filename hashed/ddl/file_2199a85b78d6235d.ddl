@@ -15,7 +15,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_b2d7cbac2e7c034",
+                    "name": "#config_version",
                     "type": "int",
                     "offset": 4120,
                     "bitSize": 32,
@@ -23,7 +23,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_6a2a470ac0b3f3cd",
+                    "name": "#hardware_checksum",
                     "type": "int",
                     "offset": 1720,
                     "bitSize": 32,
@@ -31,7 +31,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_6905ccd59b2212b5",
+                    "name": "#max_fps",
                     "type": "int",
                     "offset": 1496,
                     "bitSize": 32,
@@ -39,7 +39,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_7b98e4be08c3acb1",
+                    "name": "#max_fps_menu",
                     "type": "int",
                     "offset": 2264,
                     "bitSize": 32,
@@ -47,7 +47,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_1ce853bfbb34155f",
+                    "name": "#smooth_framerate",
                     "type": "uint",
                     "offset": 4365,
                     "bitSize": 1,
@@ -78,7 +78,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_5368d1655a7715de",
+                    "name": "#sound_occlusion",
                     "type": "uint",
                     "offset": 4351,
                     "bitSize": 1,
@@ -165,7 +165,7 @@
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_48d33b070465dfeb",
+                    "name": "#mouse_vertical_look",
                     "type": "uint",
                     "offset": 4346,
                     "bitSize": 1,
@@ -181,7 +181,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_e6d2a55251102b1",
+                    "name": "#worker_threads",
                     "type": "int",
                     "offset": 3736,
                     "bitSize": 32,
@@ -197,7 +197,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_4f38cc0b9dd9db8b",
+                    "name": "#automatic_process_priority",
                     "type": "uint",
                     "offset": 4350,
                     "bitSize": 1,
@@ -213,7 +213,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_2ae446d5862d0f7a",
+                    "name": "#last_driver_nvidia",
                     "type": "int",
                     "offset": 3864,
                     "bitSize": 32,
@@ -221,7 +221,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_4d3608d1a73ef3da",
+                    "name": "#last_recommended_driver_nvidia",
                     "type": "int",
                     "offset": 2136,
                     "bitSize": 32,
@@ -229,7 +229,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_6f11bdbc6d990431",
+                    "name": "#last_driver_amd",
                     "type": "int",
                     "offset": 2168,
                     "bitSize": 32,
@@ -237,14 +237,14 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_4b02ff75953e3be2",
+                    "name": "#video_memory",
                     "type": "fixedpoint",
                     "offset": 4184,
                     "bitSize": 32,
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_6b7865124d3970e6",
+                    "name": "#play_intro_movies",
                     "type": "uint",
                     "offset": 4349,
                     "bitSize": 1,
@@ -252,7 +252,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_44a5a73f3b04dab2",
+                    "name": "#fullscreen_mode",
                     "type": "int",
                     "offset": 4152,
                     "bitSize": 32,
@@ -260,7 +260,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_550b8b1b5399923c",
+                    "name": "#fullscreen_preferred_mode",
                     "type": "int",
                     "offset": 4248,
                     "bitSize": 32,
@@ -268,7 +268,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_2944e89a6425d21a",
+                    "name": "#window_x",
                     "type": "int",
                     "offset": 3768,
                     "bitSize": 32,
@@ -276,7 +276,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_2944e99a6425d3cd",
+                    "name": "#window_y",
                     "type": "int",
                     "offset": 3800,
                     "bitSize": 32,
@@ -284,7 +284,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_33cedc6bd0d5ebd2",
+                    "name": "#window_width",
                     "type": "int",
                     "offset": 4056,
                     "bitSize": 32,
@@ -292,7 +292,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_72ea7cfc485dce8d",
+                    "name": "#window_height",
                     "type": "int",
                     "offset": 1752,
                     "bitSize": 32,
@@ -300,7 +300,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_17ca44ba24b698b0",
+                    "name": "#window_maximized",
                     "type": "uint",
                     "offset": 4353,
                     "bitSize": 1,
@@ -308,13 +308,13 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_117aa62b6484faaf",
+                    "name": "#fullscreen_resolution",
                     "type": "string",
                     "offset": 1912,
                     "bitSize": 128
                 },
                 {
-                    "name": "#hash_160c6248cb4a4043",
+                    "name": "#refresh_rate",
                     "type": "fixedpoint",
                     "offset": 4312,
                     "bitSize": 32,
@@ -329,7 +329,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_162c929454ce3e6",
+                    "name": "#vsync",
                     "type": "uint",
                     "offset": 4347,
                     "bitSize": 1,
@@ -337,7 +337,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_21e757b84397086c",
+                    "name": "#vsync_menu",
                     "type": "uint",
                     "offset": 4366,
                     "bitSize": 1,
@@ -345,7 +345,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_1b20a55f2dee73c1",
+                    "name": "#resolution_percent",
                     "type": "int",
                     "offset": 2200,
                     "bitSize": 32,
@@ -353,7 +353,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_60638a9dff638fe7",
+                    "name": "#display_gamma",
                     "type": "int",
                     "offset": 3416,
                     "bitSize": 32,
@@ -361,7 +361,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_5063d6c1600aa39",
+                    "name": "#aspect_ratio",
                     "type": "int",
                     "offset": 4216,
                     "bitSize": 32,
@@ -369,7 +369,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_7b15f016046363ea",
+                    "name": "#mesh_quality",
                     "type": "int",
                     "offset": 3672,
                     "bitSize": 32,
@@ -377,7 +377,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_5d810c17192b9dc3",
+                    "name": "#texture_filter",
                     "type": "int",
                     "offset": 2104,
                     "bitSize": 32,
@@ -385,7 +385,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_38dde14cb5cf7bc2",
+                    "name": "#texture_quality",
                     "type": "int",
                     "offset": 864,
                     "bitSize": 32,
@@ -417,7 +417,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_260136a0dcfcf694",
+                    "name": "#disable_dynamic_light_shadows",
                     "type": "uint",
                     "offset": 4355,
                     "bitSize": 1,
@@ -425,7 +425,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_2d1d06c0ee91ba96",
+                    "name": "#disable_dynamic_sun_shadows",
                     "type": "uint",
                     "offset": 4368,
                     "bitSize": 1,
@@ -433,7 +433,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_40dfe3ad015eba09",
+                    "name": "#fx_shadows",
                     "type": "uint",
                     "offset": 4370,
                     "bitSize": 1,
@@ -457,7 +457,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_4cc8a07ef49a5be4",
+                    "name": "#shadow_filtering",
                     "type": "uint",
                     "offset": 4361,
                     "bitSize": 1,
@@ -465,7 +465,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_1a209b1921ded513",
+                    "name": "#oit",
                     "type": "uint",
                     "offset": 4344,
                     "bitSize": 1,
@@ -473,7 +473,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_3006ea9008b281a6",
+                    "name": "#oit_layers",
                     "type": "int",
                     "offset": 960,
                     "bitSize": 32,
@@ -481,7 +481,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_5a78895fa0dcc32",
+                    "name": "#ssao_technique",
                     "type": "int",
                     "offset": 704,
                     "bitSize": 32,
@@ -489,7 +489,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_1b512d9d235922ce",
+                    "name": "#aa_technique",
                     "type": "int",
                     "offset": 1688,
                     "bitSize": 32,
@@ -505,7 +505,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_79160056a9f999d7",
+                    "name": "#motion_blur_quality",
                     "type": "int",
                     "offset": 2232,
                     "bitSize": 32,
@@ -513,7 +513,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_6b3bfefdcafbf82b",
+                    "name": "#subsurface_scattering",
                     "type": "uint",
                     "offset": 4372,
                     "bitSize": 1,
@@ -521,7 +521,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_4c860de2b1c3d370",
+                    "name": "#backbuffer_count",
                     "type": "int",
                     "offset": 64,
                     "bitSize": 32,
@@ -529,7 +529,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_7f086bba8990033a",
+                    "name": "#hdr_display_mode",
                     "type": "int",
                     "offset": 1528,
                     "bitSize": 32,
@@ -537,7 +537,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_25d85195cfef123",
+                    "name": "#ssr",
                     "type": "uint",
                     "offset": 4345,
                     "bitSize": 1,
@@ -545,7 +545,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_2b41077905024d2d",
+                    "name": "#display_adapter",
                     "type": "int",
                     "offset": 4280,
                     "bitSize": 32,
@@ -553,7 +553,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_4964587a379175df",
+                    "name": "#shadow_viewmodel_self",
                     "type": "int",
                     "offset": 1656,
                     "bitSize": 32,
@@ -561,7 +561,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_56875a7fe4f1fb0b",
+                    "name": "#dedicated_player_shadow",
                     "type": "int",
                     "offset": 800,
                     "bitSize": 32,
@@ -569,7 +569,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_6813a06ce1e40a4e",
+                    "name": "#auto_cull_radius",
                     "type": "fixedpoint",
                     "offset": 928,
                     "bitSize": 32,
@@ -584,7 +584,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_5bfd57f911622860",
+                    "name": "#volumetric_light_quality",
                     "type": "int",
                     "offset": 2072,
                     "bitSize": 32,
@@ -592,56 +592,56 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_7aa1da920e7ab510",
+                    "name": "#volumetric_light_sample_mult",
                     "type": "fixedpoint",
                     "offset": 736,
                     "bitSize": 32,
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_5436d2c66a572c68",
+                    "name": "#voice_scale",
                     "type": "fixedpoint",
                     "offset": 640,
                     "bitSize": 32,
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_1578ede37f259505",
+                    "name": "#music_scale",
                     "type": "fixedpoint",
                     "offset": 1784,
                     "bitSize": 32,
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_1714ec6b0086d32d",
+                    "name": "#sfx_scale",
                     "type": "fixedpoint",
                     "offset": 1880,
                     "bitSize": 32,
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_5e2d27157acfd77b",
+                    "name": "#cinematic_scale",
                     "type": "fixedpoint",
                     "offset": 3928,
                     "bitSize": 32,
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_45acb83bbdc3e5de",
+                    "name": "#master_scale",
                     "type": "fixedpoint",
                     "offset": 4024,
                     "bitSize": 32,
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_1e663daa4f7bfa1c",
+                    "name": "#audio_scale_when_speaking",
                     "type": "fixedpoint",
                     "offset": 2040,
                     "bitSize": 32,
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_614f31109039d263",
+                    "name": "#enable_scale_when_speaking",
                     "type": "uint",
                     "offset": 4367,
                     "bitSize": 1,
@@ -649,7 +649,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_6fd7838518bbf517",
+                    "name": "#mute_master",
                     "type": "uint",
                     "offset": 4362,
                     "bitSize": 1,
@@ -657,7 +657,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_377699aa2c311c58",
+                    "name": "#mute_music",
                     "type": "uint",
                     "offset": 4356,
                     "bitSize": 1,
@@ -673,7 +673,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_5593262abb8910e7",
+                    "name": "#enable_voice",
                     "type": "uint",
                     "offset": 4364,
                     "bitSize": 1,
@@ -681,7 +681,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_185e59dae1153281",
+                    "name": "#voice_input_device",
                     "type": "string",
                     "offset": 2360,
                     "bitSize": 1024
@@ -709,7 +709,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_1e32e1cc8baf9b35",
+                    "name": "#voice_push_to_talk",
                     "type": "uint",
                     "offset": 4352,
                     "bitSize": 1,
@@ -725,7 +725,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_20daac49162280d2",
+                    "name": "#show_performance_graph",
                     "type": "int",
                     "offset": 32,
                     "bitSize": 32,
@@ -733,19 +733,19 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_2042ab53f67e07c0",
-                    "type": "struct#hash_d61f32e738b0498",
+                    "name": "#telemetry",
+                    "type": "struct#telemetry_header",
                     "offset": 992,
                     "bitSize": 504
                 },
                 {
                     "name": "#client",
-                    "type": "struct#hash_7dcaabe0b3028e02",
+                    "type": "struct#client_header",
                     "offset": 3448,
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 4373,
                     "bitSize": 3,
@@ -754,7 +754,7 @@
             ]
         },
         {
-            "name": "#hash_d61f32e738b0498",
+            "name": "#telemetry_header",
             "members": [
                 {
                     "name": "#hash_56a1b6d783aa7a25",
@@ -778,7 +778,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_572050e9a4cc493f",
+                    "name": "#changelist_number",
                     "type": "int",
                     "offset": 0,
                     "bitSize": 32,
@@ -794,7 +794,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_412cb161a9856017",
+                    "name": "#source_version",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -820,14 +820,14 @@
             "name": "#hash_54196e9e9860f0be",
             "values": [
                 "#pc",
-                "#hash_2138dd192571c4c9",
-                "#hash_3f9f7d197fde67aa",
+                "#neo",
+                "#xb1",
                 "#scorpio",
                 "#ps4"
             ]
         },
         {
-            "name": "#hash_7dcaabe0b3028e02",
+            "name": "#client_header",
             "members": [
                 {
                     "name": "#user_id",
@@ -844,7 +844,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_69f723a3393b550d",
+                    "name": "#uno_id",
                     "type": "uint64",
                     "offset": 64,
                     "bitSize": 64,

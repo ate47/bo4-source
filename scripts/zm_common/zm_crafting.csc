@@ -88,7 +88,7 @@ function function_b18074d0(name) {
             blueprint.loaded = 1;
             blueprint.name = name;
             blueprint.components = [];
-            switch (blueprint.var_f4a82731) {
+            switch (blueprint.componentcount) {
             case 8:
                 blueprint.components[7] = get_component(blueprint.var_f4d434cb);
             case 7:

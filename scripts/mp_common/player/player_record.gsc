@@ -159,9 +159,9 @@ function function_96d38b95(result) {
     if (isdefined(player.startingteam)) {
         startingteam = player.startingteam;
     }
-    var_48220f4f = 0;
+    endingteam = 0;
     if (isdefined(player.team)) {
-        var_48220f4f = player.team;
+        endingteam = player.team;
     }
     var_906bdcf3 = spawnstruct();
     var_906bdcf3.session_mode = currentsessionmode();
@@ -174,8 +174,8 @@ function function_96d38b95(result) {
     var_906bdcf3.player_ip = player getipaddress();
     var_906bdcf3.season_pass_owned = player hasseasonpass(0);
     var_906bdcf3.dlc_owned = player getdlcavailable();
-    var_906bdcf3.var_3e56d6b9 = startingteam;
-    var_906bdcf3.var_8476fd9b = var_48220f4f;
+    var_906bdcf3.starting_team = startingteam;
+    var_906bdcf3.ending_team = endingteam;
     var_811ed119 = spawnstruct();
     var_811ed119.match_kills = killcount;
     var_811ed119.match_deaths = player.deaths;
@@ -239,7 +239,7 @@ function function_96d38b95(result) {
     var_8607894c.var_3cc73d67 = player function_5d23af5b();
     var_8607894c.specialist_head = player function_44a7328f();
     var_8607894c.specialist_legs = player function_cde23658();
-    var_8607894c.var_ef44bb8b = player function_92ea4100();
+    var_8607894c.specialist_torso = player function_92ea4100();
     var_8607894c.specialist_showcase = showcaseweapon.weapon.name;
     function_92d1707f(#"hash_4c5946fa1191bc64", #"hash_71960e91f80c3365", var_906bdcf3, #"hash_4682ee0eb5071d2", var_811ed119, #"hash_209c80d657442a83", var_a14ea2be, #"hash_43cb38816354c3aa", var_b65d83f5, #"hash_11fcb8f188ed5050", var_6e81e3c3, #"hash_78a6c018d9f82184", var_8607894c);
 }

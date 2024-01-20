@@ -28,7 +28,7 @@
     "maxvalue": 1,
     "name": "pc_gamepad_stick_layout",
     "displayname": "#hash_76e1fd7bfa293ee9",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "gpad_sticksConfig",
     "var_d4e288e": 1,

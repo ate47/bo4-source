@@ -588,7 +588,7 @@ function private function_cdd9b388() {
                 origin = players[0].origin;
                 var_f4b807cb = item_world::function_2e3efdda(origin, undefined, 128, 2000);
                 foreach (item in var_f4b807cb) {
-                    print3d(item.origin + vectorscale((0, 0, 1), 10), "<unknown string>" + item.var_bd027dd9 + "<unknown string>" + item.var_a6762160.name, (1, 0.5, 0), 1, 0.4);
+                    print3d(item.origin + vectorscale((0, 0, 1), 10), "<unknown string>" + item.networkid + "<unknown string>" + item.var_a6762160.name, (1, 0.5, 0), 1, 0.4);
                 }
             }
             if (getdvarint(#"hash_326974dd9b8c3414", 0)) {

@@ -41,9 +41,9 @@ function function_61a426a5() {
         if (isdefined(points)) {
             for (index = 0; index < points.size; index++) {
                 randindex = function_d59c2d03(points.size);
-                var_521b73a = points[index];
+                tempid = points[index];
                 points[index] = points[randindex];
-                points[randindex] = var_521b73a;
+                points[randindex] = tempid;
             }
             randindex = function_d59c2d03(points.size);
             if (isdefined(debug_pos)) {

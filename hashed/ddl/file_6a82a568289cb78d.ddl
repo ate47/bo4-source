@@ -7,7 +7,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_1c5fe8e0f92f7b95",
+                    "name": "#pc_achievements",
                     "type": "uint[102]",
                     "offset": 0,
                     "bitSize": 102,
@@ -15,7 +15,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 102,
                     "bitSize": 2,
@@ -34,7 +34,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_1c5fe8e0f92f7b95",
+                    "name": "#pc_achievements",
                     "type": "uint[92]",
                     "offset": 0,
                     "bitSize": 92,
@@ -42,7 +42,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 92,
                     "bitSize": 4,
@@ -61,7 +61,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_1c5fe8e0f92f7b95",
+                    "name": "#pc_achievements",
                     "type": "uint[82]",
                     "offset": 0,
                     "bitSize": 82,
@@ -69,7 +69,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 82,
                     "bitSize": 6,
@@ -88,7 +88,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_1c5fe8e0f92f7b95",
+                    "name": "#pc_achievements",
                     "type": "uint[72]",
                     "offset": 0,
                     "bitSize": 72,
@@ -108,7 +108,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_1c5fe8e0f92f7b95",
+                    "name": "#pc_achievements",
                     "type": "uint[62]",
                     "offset": 0,
                     "bitSize": 62,
@@ -116,7 +116,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 62,
                     "bitSize": 2,
@@ -135,7 +135,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_1c5fe8e0f92f7b95",
+                    "name": "#pc_achievements",
                     "type": "uint[52]",
                     "offset": 0,
                     "bitSize": 52,
@@ -143,7 +143,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 52,
                     "bitSize": 4,
@@ -162,7 +162,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_1c5fe8e0f92f7b95",
+                    "name": "#pc_achievements",
                     "type": "uint[52]",
                     "offset": 0,
                     "bitSize": 52,
@@ -170,7 +170,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 52,
                     "bitSize": 4,

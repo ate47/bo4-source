@@ -75,13 +75,13 @@ function private function_ee3d20f5(entity, points) {
 function private _calculatepathtopoints(entity, points) {
     path = undefined;
     shortestpath = undefined;
-    var_551173dc = entity getpathfindingradius();
-    var_bb52d328 = getclosestpointonnavmesh(entity.origin, 200, var_551173dc);
+    entradius = entity getpathfindingradius();
+    var_bb52d328 = getclosestpointonnavmesh(entity.origin, 200, entradius);
     index = 0;
     while (index < points.size) {
         goalpoints = [];
         for (goalindex = index; goalindex - index < 16 && goalindex < points.size; goalindex++) {
-            if (ispointonnavmesh(points[goalindex].origin, var_551173dc)) {
+            if (ispointonnavmesh(points[goalindex].origin, entradius)) {
                 goalpoints[goalpoints.size] = points[goalindex].origin;
             }
         }
@@ -252,7 +252,7 @@ function private function_7c3d768e(var_1b2a0645, var_d695a79f, commander) {
             return var_d695a79f;
         }
         var_6e868cb7 = 0;
-        var_e348a3f4 = 27;
+        yspacing = 27;
         textcolor = (1, 1, 1);
         textalpha = 1;
         backgroundcolor = (0, 0, 0);
@@ -263,14 +263,14 @@ function private function_7c3d768e(var_1b2a0645, var_d695a79f, commander) {
         squadcount = commander.squads.size;
         debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + function_9e72a96(team) + "<unknown string>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
         var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-        var_d695a79f = var_d695a79f + var_e348a3f4;
+        var_d695a79f = var_d695a79f + yspacing;
         var_1b2a0645 = var_1b2a0645 + 25;
         debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + squadcount, !paused && squadcount > 0 || paused && squadcount == 0 ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
         var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-        var_d695a79f = var_d695a79f + var_e348a3f4;
+        var_d695a79f = var_d695a79f + yspacing;
         debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (paused ? "<unknown string>" : "<unknown string>"), paused ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
         var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-        var_d695a79f = var_d695a79f + var_e348a3f4;
+        var_d695a79f = var_d695a79f + yspacing;
     #/
     return var_d695a79f;
 }
@@ -282,7 +282,7 @@ function private function_7c3d768e(var_1b2a0645, var_d695a79f, commander) {
 function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commander) {
     /#
         var_6e868cb7 = 0;
-        var_e348a3f4 = 27;
+        yspacing = 27;
         textcolor = (1, 1, 1);
         textalpha = 1;
         backgroundcolor = (0, 0, 0);
@@ -294,66 +294,66 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
             yoffset = var_d695a79f;
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + member getentitynumber() + "<unknown string>" + member.name + "<unknown string>" + function_9e72a96(member.team) + "<unknown string>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + var_e348a3f4;
+            var_d695a79f = var_d695a79f + yspacing;
             var_1b2a0645 = var_1b2a0645 + var_96e1d277;
             var_78caba27 = function_65b80a10(commander, member);
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member isplayinganimscripted() ? "<unknown string>" : "<unknown string>"), member isplayinganimscripted() ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + var_e348a3f4;
+            var_d695a79f = var_d695a79f + yspacing;
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + var_78caba27, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + var_e348a3f4;
+            var_d695a79f = var_d695a79f + yspacing;
             var_52cace54 = function_741d9796(member, undefined, commander, var_78caba27);
             if (isdefined(var_52cace54)) {
                 var_1b2a0645 = var_1b2a0645 + var_96e1d277;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), var_52cace54, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + var_e348a3f4;
+                var_d695a79f = var_d695a79f + yspacing;
                 var_1b2a0645 = var_1b2a0645 - var_96e1d277;
             }
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.ignoreme ? "<unknown string>" : "<unknown string>"), member.ignoreme ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + var_e348a3f4;
+            var_d695a79f = var_d695a79f + yspacing;
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.ignoreall ? "<unknown string>" : "<unknown string>"), member.ignoreall ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + var_e348a3f4;
+            var_d695a79f = var_d695a79f + yspacing;
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.takedamage ? "<unknown string>" : "<unknown string>"), member.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + var_e348a3f4;
+            var_d695a79f = var_d695a79f + yspacing;
             var_cf1c1552 = var_d695a79f;
             if (member isinvehicle()) {
                 vehicle = member getvehicleoccupied();
-                var_538f88eb = vehicle getoccupantseat(member);
+                seatnum = vehicle getoccupantseat(member);
                 var_d695a79f = yoffset;
                 var_1b2a0645 = var_1b2a0645 + var_4fe31551;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + vehicle getentitynumber() + "<unknown string>" + vehicle.scriptvehicletype + "<unknown string>" + function_9e72a96(vehicle.team) + "<unknown string>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + var_e348a3f4;
+                var_d695a79f = var_d695a79f + yspacing;
                 var_1b2a0645 = var_1b2a0645 + var_96e1d277;
                 var_78caba27 = function_65b80a10(commander, member, vehicle);
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle isplayinganimscripted() ? "<unknown string>" : "<unknown string>"), vehicle isplayinganimscripted() ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + var_e348a3f4;
+                var_d695a79f = var_d695a79f + yspacing;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + var_78caba27, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + var_e348a3f4;
+                var_d695a79f = var_d695a79f + yspacing;
                 var_52cace54 = function_741d9796(member, vehicle, commander, var_78caba27);
                 if (isdefined(var_52cace54)) {
                     var_1b2a0645 = var_1b2a0645 + var_96e1d277;
                     debug2dtext((var_1b2a0645, var_d695a79f, 0), var_52cace54, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
                     var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                    var_d695a79f = var_d695a79f + var_e348a3f4;
+                    var_d695a79f = var_d695a79f + yspacing;
                     var_1b2a0645 = var_1b2a0645 - var_96e1d277;
                 }
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.ignoreme ? "<unknown string>" : "<unknown string>"), vehicle.ignoreme ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + var_e348a3f4;
+                var_d695a79f = var_d695a79f + yspacing;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.ignoreall ? "<unknown string>" : "<unknown string>"), vehicle.ignoreall ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + var_e348a3f4;
+                var_d695a79f = var_d695a79f + yspacing;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.takedamage ? "<unknown string>" : "<unknown string>"), vehicle.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + var_e348a3f4;
+                var_d695a79f = var_d695a79f + yspacing;
                 var_d695a79f = var_cf1c1552;
                 var_1b2a0645 = var_1b2a0645 - var_4fe31551;
                 var_1b2a0645 = var_1b2a0645 - var_96e1d277;
@@ -491,7 +491,7 @@ function private function_31badd5d(missioncomponent, index) {
             statustext = "<unknown string>";
             statuscolor = (1, 1, 1);
             tacpointtext = "<unknown string>";
-            var_31aedcbf = undefined;
+            errortext = undefined;
             component = missioncomponent.var_36f0c06d;
             if (isdefined(component) && missioncomponent flag::get("<unknown string>")) {
                 statustext = "<unknown string>";
@@ -519,17 +519,17 @@ function private function_31badd5d(missioncomponent, index) {
                     points = tacticalquery(#"stratcom_tacquery_trigger", var_41dd65b0);
                     tacpointtext = "<unknown string>" + points.size + "<unknown string>";
                     if (points.size == 0) {
-                        var_31aedcbf = "<unknown string>";
+                        errortext = "<unknown string>";
                     }
                 } else if (!isdefined(component.var_6bc907c4)) {
-                    var_31aedcbf = "<unknown string>";
+                    errortext = "<unknown string>";
                 }
             } else if (missioncomponent flag::get("<unknown string>")) {
                 statustext = "<unknown string>";
                 statuscolor = vectorscale((1, 1, 1), 0.1);
             }
-            textcolor = isdefined(var_31aedcbf) ? (1, 0, 0) : (1, 1, 1);
-            function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, statustext, origintext, var_4fea471b, var_fabc86d6, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_31aedcbf);
+            textcolor = isdefined(errortext) ? (1, 0, 0) : (1, 1, 1);
+            function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, statustext, origintext, var_4fea471b, var_fabc86d6, var_f3fe7e2c, var_2aac6b87, tacpointtext, errortext);
             recordsphere(origin, 20, statuscolor);
         #/
     #/
@@ -552,7 +552,7 @@ function private function_3ed19fa3(gameobject, position) {
             var_4fea471b = "<unknown string>" + function_9e72a96(gameobject.team) + "<unknown string>";
             var_8dbcaed7 = "<unknown string>" + (isdefined(gameobject.absolute_visible_and_interact_team) ? function_9e72a96(gameobject.absolute_visible_and_interact_team) : "<unknown string>") + "<unknown string>";
             tacpointtext = "<unknown string>";
-            var_31aedcbf = undefined;
+            errortext = undefined;
             var_7ddeb599 = "<unknown string>";
             var_bd3388e8 = "<unknown string>";
             var_d8e00365 = "<unknown string>";
@@ -595,15 +595,15 @@ function private function_3ed19fa3(gameobject, position) {
                 points = tacticalquery(#"stratcom_tacquery_trigger", gameobject.trigger);
                 tacpointtext = "<unknown string>" + points.size + "<unknown string>";
                 if (points.size == 0) {
-                    var_31aedcbf = "<unknown string>";
+                    errortext = "<unknown string>";
                 }
                 statuscolor = (0, 1, 1);
                 function_20610c3(gameobject.trigger, statuscolor, "<unknown string>");
                 recordline(origin, gameobject.trigger.origin, statuscolor, "<unknown string>");
                 record3dtext("<unknown string>", gameobject.trigger.origin + vectorscale((0, 0, 1), 5), statuscolor, "<unknown string>");
             }
-            textcolor = isdefined(var_31aedcbf) ? (1, 0, 0) : (1, 1, 1);
-            function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, var_5f5e2bd5, var_8de0589e, origintext, var_7358fe8e, var_4fea471b, var_8dbcaed7, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_d8e00365, var_31aedcbf);
+            textcolor = isdefined(errortext) ? (1, 0, 0) : (1, 1, 1);
+            function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, var_5f5e2bd5, var_8de0589e, origintext, var_7358fe8e, var_4fea471b, var_8dbcaed7, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_d8e00365, errortext);
             recordsphere(origin, 17, statuscolor, "<unknown string>");
         #/
     #/
@@ -625,7 +625,7 @@ function private function_adb62fbb(breadcrumb, index) {
             var_4fea471b = "<unknown string>" + breadcrumb.script_team + "<unknown string>";
             statuscolor = (1, 1, 1);
             tacpointtext = "<unknown string>";
-            var_31aedcbf = undefined;
+            errortext = undefined;
             if (isdefined(breadcrumb.trigger)) {
                 statuscolor = (1, 1, 0);
                 function_20610c3(breadcrumb.trigger, (1, 1, 0), "<unknown string>");
@@ -634,12 +634,12 @@ function private function_adb62fbb(breadcrumb, index) {
                 points = tacticalquery(#"stratcom_tacquery_trigger", breadcrumb.trigger);
                 tacpointtext = "<unknown string>" + points.size + "<unknown string>";
                 if (points.size == 0) {
-                    var_31aedcbf = "<unknown string>";
+                    errortext = "<unknown string>";
                 }
             }
             recordsphere(origin, 14, statuscolor);
-            textcolor = isdefined(var_31aedcbf) ? (1, 0, 0) : (1, 1, 1);
-            function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, origintext, var_4fea471b, tacpointtext, var_31aedcbf);
+            textcolor = isdefined(errortext) ? (1, 0, 0) : (1, 1, 1);
+            function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, origintext, var_4fea471b, tacpointtext, errortext);
         #/
     #/
 }
@@ -1372,8 +1372,8 @@ function isvalidbot(bot) {
 function function_4732f860(bot) {
     if (bot isinvehicle()) {
         vehicle = bot getvehicleoccupied();
-        var_538f88eb = vehicle getoccupantseat(bot);
-        return (var_538f88eb == 0 && !isdefined(vehicle.attachedpath));
+        seatnum = vehicle getoccupantseat(bot);
+        return (seatnum == 0 && !isdefined(vehicle.attachedpath));
     }
     return 0;
 }

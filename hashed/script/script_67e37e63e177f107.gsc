@@ -231,8 +231,8 @@ function function_ef0bfb9d() {
         zombiesarray = arraycombine(zombiesarray, getaiarchetypearray(#"catalyst"), 0, 0);
         alltargets = arraycombine(zombiesarray, alltargets, 0, 0);
         foreach (target in alltargets) {
-            var_87c0ec9c = distancesquared(target.origin, self function_d3a9800e());
-            if (var_87c0ec9c <= self.settings.damage_radius * self.settings.damage_radius) {
+            distsqtotarget = distancesquared(target.origin, self function_d3a9800e());
+            if (distsqtotarget <= self.settings.damage_radius * self.settings.damage_radius) {
                 if (isdefined(target.archetype)) {
                     target zombie_utility::setup_zombie_knockdown(self);
                     target.knockdown_type = "knockdown_shoved";
@@ -273,8 +273,8 @@ function function_55be8453() {
     wait(0.5);
     if (isdefined(self.favoriteenemy)) {
         if (util::within_fov(self.origin, self.angles, self.favoriteenemy.origin, 0.939)) {
-            var_87c0ec9c = distancesquared(self.favoriteenemy.origin, self function_d3a9800e());
-            if (var_87c0ec9c <= 10000) {
+            distsqtotarget = distancesquared(self.favoriteenemy.origin, self function_d3a9800e());
+            if (distsqtotarget <= 10000) {
                 return;
             }
         }
@@ -292,8 +292,8 @@ function function_55be8453() {
         }
     }
     foreach (target in alltargets) {
-        var_87c0ec9c = distancesquared(target.origin, self function_d3a9800e());
-        if (var_87c0ec9c <= 10000) {
+        distsqtotarget = distancesquared(target.origin, self function_d3a9800e());
+        if (distsqtotarget <= 10000) {
             self.favoriteenemy = target;
             return;
         }

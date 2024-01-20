@@ -7,7 +7,7 @@
             "name": "#root",
             "members": [
                 {
-                    "name": "#hash_3d34cbdf0b9ea338",
+                    "name": "#issorted",
                     "type": "uint",
                     "offset": 4808,
                     "bitSize": 1,
@@ -24,12 +24,12 @@
                 },
                 {
                     "name": "#hash_224419b9dcb9832d",
-                    "type": "struct#hash_2ea61ab62affb247[50]",
+                    "type": "struct#recentplayer[50]",
                     "offset": 8,
                     "bitSize": 4800
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 4809,
                     "bitSize": 7,
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "name": "#hash_2ea61ab62affb247",
+            "name": "#recentplayer",
             "members": [
                 {
                     "name": "#time",

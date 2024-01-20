@@ -8,7 +8,7 @@
     "var_43a952c1": 0.1,
     "name": "pc_damagebased_hitmarkers",
     "displayname": "#hash_440344988dc4b045",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "hitmarkers_damage_type",
     "var_82c732a7": 1,

@@ -29,7 +29,7 @@
     "var_43a952c1": 0.1,
     "name": "pc_mantle_press_jump",
     "displayname": "#hash_74e8dbf27cbbb09c",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "mantle_press_jump",
     "minvalue": 1,

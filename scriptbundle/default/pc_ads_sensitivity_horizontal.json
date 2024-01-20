@@ -11,7 +11,7 @@
     "displayname": "#hash_1fa29341e373b48c",
     "rangestartvalue": 0.1,
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "m_mouseADSYawMultiplier",
     "var_d4e288e": 1,

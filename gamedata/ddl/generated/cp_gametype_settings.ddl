@@ -34,7 +34,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -1474,7 +1474,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2120,
                     "bitSize": 8,
@@ -1626,7 +1626,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2200,
                     "bitSize": 8,
@@ -1642,7 +1642,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2446,
                     "bitSize": 1,
@@ -1794,7 +1794,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -2482,7 +2482,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2455,
                     "bitSize": 1,
@@ -2528,7 +2528,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -3968,7 +3968,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2112,
                     "bitSize": 8,
@@ -4120,7 +4120,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2192,
                     "bitSize": 8,
@@ -4136,7 +4136,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2439,
                     "bitSize": 1,
@@ -4288,7 +4288,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -5015,7 +5015,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -6447,7 +6447,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2112,
                     "bitSize": 8,
@@ -6599,7 +6599,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2192,
                     "bitSize": 8,
@@ -6615,7 +6615,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2438,
                     "bitSize": 1,
@@ -6767,7 +6767,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -7455,7 +7455,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2447,
                     "bitSize": 1,
@@ -7501,7 +7501,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -8933,7 +8933,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2112,
                     "bitSize": 8,
@@ -9085,7 +9085,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2192,
                     "bitSize": 8,
@@ -9101,7 +9101,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2438,
                     "bitSize": 1,
@@ -9253,7 +9253,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -9933,7 +9933,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2446,
                     "bitSize": 2,
@@ -9979,7 +9979,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -11379,7 +11379,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2080,
                     "bitSize": 8,
@@ -11531,7 +11531,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2160,
                     "bitSize": 8,
@@ -11547,7 +11547,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2406,
                     "bitSize": 1,
@@ -11699,7 +11699,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -12379,7 +12379,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2414,
                     "bitSize": 2,
@@ -12425,7 +12425,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -13809,7 +13809,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2064,
                     "bitSize": 8,
@@ -13961,7 +13961,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2144,
                     "bitSize": 8,
@@ -13977,7 +13977,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2390,
                     "bitSize": 1,
@@ -14129,7 +14129,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -14809,7 +14809,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2398,
                     "bitSize": 2,
@@ -14855,7 +14855,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -16239,7 +16239,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2064,
                     "bitSize": 8,
@@ -16391,7 +16391,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2144,
                     "bitSize": 8,
@@ -16407,7 +16407,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2389,
                     "bitSize": 1,
@@ -16551,7 +16551,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -17231,7 +17231,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2397,
                     "bitSize": 3,
@@ -17277,7 +17277,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -18645,7 +18645,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2056,
                     "bitSize": 8,
@@ -18797,7 +18797,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2136,
                     "bitSize": 8,
@@ -18813,7 +18813,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2380,
                     "bitSize": 1,
@@ -18957,7 +18957,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -19637,7 +19637,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2388,
                     "bitSize": 4,
@@ -19683,7 +19683,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -21051,7 +21051,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2056,
                     "bitSize": 8,
@@ -21203,7 +21203,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2136,
                     "bitSize": 8,
@@ -21219,7 +21219,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2379,
                     "bitSize": 1,
@@ -21363,7 +21363,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -22035,7 +22035,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2387,
                     "bitSize": 5,
@@ -22081,7 +22081,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -23433,7 +23433,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2056,
                     "bitSize": 8,
@@ -23585,7 +23585,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2136,
                     "bitSize": 8,
@@ -23601,7 +23601,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2377,
                     "bitSize": 1,
@@ -23745,7 +23745,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -24417,7 +24417,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2385,
                     "bitSize": 7,
@@ -24463,7 +24463,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -25815,7 +25815,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2040,
                     "bitSize": 8,
@@ -25967,7 +25967,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2120,
                     "bitSize": 8,
@@ -25983,7 +25983,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2361,
                     "bitSize": 1,
@@ -26127,7 +26127,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -26783,7 +26783,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2369,
                     "bitSize": 7,
@@ -26829,7 +26829,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 352,
                     "bitSize": 8,
@@ -28173,7 +28173,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2040,
                     "bitSize": 8,
@@ -28325,7 +28325,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2120,
                     "bitSize": 8,
@@ -28341,7 +28341,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2360,
                     "bitSize": 1,
@@ -28485,7 +28485,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 264,
                     "bitSize": 32,
@@ -29180,7 +29180,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 336,
                     "bitSize": 8,
@@ -30524,7 +30524,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2000,
                     "bitSize": 8,
@@ -30676,7 +30676,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2080,
                     "bitSize": 8,
@@ -30692,7 +30692,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2320,
                     "bitSize": 1,
@@ -30836,7 +30836,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 256,
                     "bitSize": 32,
@@ -31499,7 +31499,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 336,
                     "bitSize": 8,
@@ -32843,7 +32843,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 2000,
                     "bitSize": 8,
@@ -32995,7 +32995,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2080,
                     "bitSize": 8,
@@ -33011,7 +33011,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2319,
                     "bitSize": 1,
@@ -33155,7 +33155,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 256,
                     "bitSize": 32,
@@ -33771,7 +33771,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2327,
                     "bitSize": 1,
@@ -33817,7 +33817,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 328,
                     "bitSize": 8,
@@ -35161,7 +35161,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1992,
                     "bitSize": 8,
@@ -35313,7 +35313,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2072,
                     "bitSize": 8,
@@ -35329,7 +35329,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2310,
                     "bitSize": 1,
@@ -35473,7 +35473,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 256,
                     "bitSize": 32,
@@ -36073,7 +36073,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2318,
                     "bitSize": 2,
@@ -36119,7 +36119,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 320,
                     "bitSize": 8,
@@ -37463,7 +37463,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1984,
                     "bitSize": 8,
@@ -37615,7 +37615,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2064,
                     "bitSize": 8,
@@ -37631,7 +37631,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2302,
                     "bitSize": 1,
@@ -37775,7 +37775,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 248,
                     "bitSize": 32,
@@ -38367,7 +38367,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2310,
                     "bitSize": 2,
@@ -38413,7 +38413,7 @@
                     "maxIntValue": 64
                 },
                 {
-                    "name": "#hash_683325766dc1302b",
+                    "name": "#maxbots",
                     "type": "uint",
                     "offset": 320,
                     "bitSize": 8,
@@ -39757,7 +39757,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1984,
                     "bitSize": 8,
@@ -39909,7 +39909,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2064,
                     "bitSize": 8,
@@ -39925,7 +39925,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2302,
                     "bitSize": 1,
@@ -40069,7 +40069,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 248,
                     "bitSize": 32,
@@ -40661,7 +40661,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2310,
                     "bitSize": 2,
@@ -42043,7 +42043,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1976,
                     "bitSize": 8,
@@ -42195,7 +42195,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2056,
                     "bitSize": 8,
@@ -42211,7 +42211,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2294,
                     "bitSize": 1,
@@ -42355,7 +42355,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 248,
                     "bitSize": 32,
@@ -42947,7 +42947,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2302,
                     "bitSize": 2,
@@ -44329,7 +44329,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1976,
                     "bitSize": 8,
@@ -44481,7 +44481,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2056,
                     "bitSize": 8,
@@ -44497,7 +44497,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2293,
                     "bitSize": 1,
@@ -44641,7 +44641,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 248,
                     "bitSize": 32,
@@ -45225,7 +45225,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2301,
                     "bitSize": 3,
@@ -46607,7 +46607,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1976,
                     "bitSize": 8,
@@ -46759,7 +46759,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2056,
                     "bitSize": 8,
@@ -46775,7 +46775,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2291,
                     "bitSize": 1,
@@ -46919,7 +46919,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 248,
                     "bitSize": 32,
@@ -47487,7 +47487,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2299,
                     "bitSize": 5,
@@ -48869,7 +48869,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1976,
                     "bitSize": 8,
@@ -49021,7 +49021,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2056,
                     "bitSize": 8,
@@ -49037,7 +49037,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2290,
                     "bitSize": 1,
@@ -49173,7 +49173,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 248,
                     "bitSize": 32,
@@ -49741,7 +49741,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2298,
                     "bitSize": 6,
@@ -51099,7 +51099,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1952,
                     "bitSize": 8,
@@ -51251,7 +51251,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2016,
                     "bitSize": 8,
@@ -51267,7 +51267,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2250,
                     "bitSize": 1,
@@ -51403,7 +51403,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 240,
                     "bitSize": 32,
@@ -51971,7 +51971,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2258,
                     "bitSize": 6,
@@ -53321,7 +53321,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1952,
                     "bitSize": 8,
@@ -53473,7 +53473,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2016,
                     "bitSize": 8,
@@ -53489,7 +53489,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2250,
                     "bitSize": 1,
@@ -53625,7 +53625,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 240,
                     "bitSize": 32,
@@ -54193,7 +54193,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2257,
                     "bitSize": 7,
@@ -55543,7 +55543,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1944,
                     "bitSize": 8,
@@ -55695,7 +55695,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2008,
                     "bitSize": 8,
@@ -55711,7 +55711,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2241,
                     "bitSize": 1,
@@ -55847,7 +55847,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 232,
                     "bitSize": 32,
@@ -57734,7 +57734,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1944,
                     "bitSize": 8,
@@ -57886,7 +57886,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2008,
                     "bitSize": 8,
@@ -57902,7 +57902,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2240,
                     "bitSize": 1,
@@ -58038,7 +58038,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 232,
                     "bitSize": 32,
@@ -58590,7 +58590,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2247,
                     "bitSize": 1,
@@ -59924,7 +59924,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1944,
                     "bitSize": 8,
@@ -60076,7 +60076,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2008,
                     "bitSize": 8,
@@ -60092,7 +60092,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2239,
                     "bitSize": 1,
@@ -60228,7 +60228,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 232,
                     "bitSize": 32,
@@ -60780,7 +60780,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2246,
                     "bitSize": 2,
@@ -62114,7 +62114,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1944,
                     "bitSize": 8,
@@ -62266,7 +62266,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2008,
                     "bitSize": 8,
@@ -62282,7 +62282,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2231,
                     "bitSize": 1,
@@ -62418,7 +62418,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 232,
                     "bitSize": 32,
@@ -62962,7 +62962,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2238,
                     "bitSize": 2,
@@ -64280,7 +64280,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1944,
                     "bitSize": 8,
@@ -64432,7 +64432,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 2008,
                     "bitSize": 8,
@@ -64448,7 +64448,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2215,
                     "bitSize": 1,
@@ -64584,7 +64584,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 232,
                     "bitSize": 32,
@@ -65128,7 +65128,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2222,
                     "bitSize": 2,
@@ -66446,7 +66446,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_74d33870b2c6d4fe",
+                    "name": "#weapontimer",
                     "type": "uint",
                     "offset": 1784,
                     "bitSize": 8,
@@ -66598,7 +66598,7 @@
                     "maxIntValue": 10
                 },
                 {
-                    "name": "#hash_747f37f7d9d5d14",
+                    "name": "#deposittime",
                     "type": "uint",
                     "offset": 1848,
                     "bitSize": 8,
@@ -66614,7 +66614,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_113db62f81b95364",
+                    "name": "#deathzones",
                     "type": "uint",
                     "offset": 2055,
                     "bitSize": 1,
@@ -66750,7 +66750,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_15cc7b1909da6893",
+                    "name": "#forwardspawnhealth",
                     "type": "int",
                     "offset": 232,
                     "bitSize": 32,
@@ -67294,7 +67294,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 2062,
                     "bitSize": 2,

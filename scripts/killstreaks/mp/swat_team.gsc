@@ -738,9 +738,9 @@ function function_416a0a80(owner) {
 // Checksum 0x99ea5da3, Offset: 0x3648
 // Size: 0x92
 function function_3863cd9(swat) {
-    var_1f2328d0 = swat function_4794d6a3();
-    if (isdefined(var_1f2328d0.node)) {
-        var_7a0aa83f = var_1f2328d0.node.origin + vectorscale(anglestoforward(var_1f2328d0.node.angles), 400);
+    goalinfo = swat function_4794d6a3();
+    if (isdefined(goalinfo.node)) {
+        var_7a0aa83f = goalinfo.node.origin + vectorscale(anglestoforward(goalinfo.node.angles), 400);
         return var_7a0aa83f;
     }
     return undefined;
@@ -2610,14 +2610,14 @@ function function_ac0e6696() {
     level endon(#"game_ended");
     while (1) {
         players = getplayers();
-        var_2282e309 = 0;
+        canbeseen = 0;
         foreach (player in players) {
             if (sighttracepassed(self geteye(), player geteye(), 0, undefined)) {
-                var_2282e309 = 1;
+                canbeseen = 1;
                 break;
             }
         }
-        if (!var_2282e309) {
+        if (!canbeseen) {
             function_a00c5973("swat_member", self);
             util::wait_network_frame();
             self delete();

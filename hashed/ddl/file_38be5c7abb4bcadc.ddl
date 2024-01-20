@@ -38,7 +38,7 @@
                 },
                 {
                     "name": "#player",
-                    "type": "struct#hash_74a00c3ceb60a0c8[32]",
+                    "type": "struct#playerdata[32]",
                     "offset": 440,
                     "bitSize": 28160
                 }
@@ -66,7 +66,7 @@
             ]
         },
         {
-            "name": "#hash_74a00c3ceb60a0c8",
+            "name": "#playerdata",
             "members": [
                 {
                     "name": "#name",

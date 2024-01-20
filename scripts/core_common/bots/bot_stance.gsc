@@ -524,9 +524,9 @@ function function_1989cfaf(tacbundle, params, node) {
         #/
         return 0;
     }
-    var_8f6b238f = isdefined(tacbundle.var_f58a14bd) ? tacbundle.var_f58a14bd : 0;
+    mindot = isdefined(tacbundle.var_f58a14bd) ? tacbundle.var_f58a14bd : 0;
     dir = vectornormalize(node.origin - self.origin);
-    if (vectordot(dir, anglestoforward(node.angles)) <= var_8f6b238f) {
+    if (vectordot(dir, anglestoforward(node.angles)) <= mindot) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/

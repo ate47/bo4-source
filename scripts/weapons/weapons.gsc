@@ -1184,7 +1184,7 @@ function function_2698203b(params) {
         self.gotpullbacknotify = 0;
         return;
     }
-    if (!weapon.var_c3c869ba) {
+    if (!weapon.isthrowback) {
         return;
     }
     if (isdefined(grenade)) {
@@ -1489,16 +1489,16 @@ function function_8f148257(weapon) {
     if (!isdefined(player.var_9c4683a0)) {
         return;
     }
-    var_56fe74d4 = undefined;
+    foundindex = undefined;
     for (index = 0; index < player.var_9c4683a0.size; index++) {
         if (player.var_9c4683a0[index] == weapon) {
-            var_56fe74d4 = index;
+            foundindex = index;
         }
     }
-    if (!isdefined(var_56fe74d4)) {
+    if (!isdefined(foundindex)) {
         return;
     }
-    player.var_9c4683a0 = array::remove_index(player.var_9c4683a0, var_56fe74d4);
+    player.var_9c4683a0 = array::remove_index(player.var_9c4683a0, foundindex);
     force_stowed_weapon_update();
 }
 

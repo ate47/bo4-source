@@ -245,9 +245,9 @@ function ramprobsetting(localclientnum, from, to, ramptime, key) {
 // Params 8, eflags: 0x1 linked
 // Checksum 0xea4e65d7, Offset: 0x1038
 // Size: 0xac
-function function_1126eb8c(currenttime, elapsedtime, localclientnum, duration, var_2347e08e, var_991d3376, key, rob) {
+function function_1126eb8c(currenttime, elapsedtime, localclientnum, duration, stagefrom, stageto, key, rob) {
     percent = elapsedtime / duration;
-    amount = var_991d3376 * percent + var_2347e08e * (1 - percent);
+    amount = stageto * percent + stagefrom * (1 - percent);
     self function_78233d29(rob, "", key, amount);
 }
 
@@ -426,22 +426,22 @@ function private splatter_postfx(localclientnum, player, damage, var_cd141ca2, d
 // Params 6, eflags: 0x1 linked
 // Checksum 0xbb9d0368, Offset: 0x1df0
 // Size: 0xac
-function rampvalue(localclientnum, var_2347e08e, var_991d3376, ramptime, var_cd141ca2, key) {
+function rampvalue(localclientnum, stagefrom, stageto, ramptime, var_cd141ca2, key) {
     level notify(localclientnum + "rampValue" + var_cd141ca2 + key);
     level endon(localclientnum + "rampValue" + var_cd141ca2 + key);
-    util::lerp_generic(localclientnum, ramptime, &function_441ef0ca, var_2347e08e, var_991d3376, var_cd141ca2, key);
+    util::lerp_generic(localclientnum, ramptime, &function_441ef0ca, stagefrom, stageto, var_cd141ca2, key);
 }
 
 // Namespace blood/blood
 // Params 8, eflags: 0x1 linked
 // Checksum 0x6d9481c2, Offset: 0x1ea8
 // Size: 0x134
-function function_441ef0ca(currenttime, elapsedtime, localclientnum, duration, var_2347e08e, var_991d3376, var_cd141ca2, key) {
+function function_441ef0ca(currenttime, elapsedtime, localclientnum, duration, stagefrom, stageto, var_cd141ca2, key) {
     percent = 1;
     if (duration > 0) {
         percent = elapsedtime / duration;
     }
-    amount = var_991d3376 * percent + var_2347e08e * (1 - percent);
+    amount = stageto * percent + stagefrom * (1 - percent);
     splatter = getsplatter(localclientnum);
     if (amount > 0 && isdefined(splatter.splatters[var_cd141ca2][key]) && splatter.splatters[var_cd141ca2][key] == 0) {
         level notify(#"splatters_active");
@@ -700,21 +700,21 @@ function private function_9a8dc0ec(localclientnum, playerhealth, forceupdate) {
 // Params 6, eflags: 0x1 linked
 // Checksum 0x9fea6990, Offset: 0x3168
 // Size: 0xc4
-function function_c0cdd1f2(localclientnum, var_2347e08e, var_991d3376, ramptime, key, postfx) {
+function function_c0cdd1f2(localclientnum, stagefrom, stageto, ramptime, key, postfx) {
     self endon(#"death");
     self endon(#"hash_6d50f64fe99aed76");
     self notify("rampPostFx" + key + postfx);
     self endon("rampPostFx" + key + postfx);
-    util::lerp_generic(localclientnum, ramptime, &function_b0298a0, var_2347e08e, var_991d3376, key, postfx);
+    util::lerp_generic(localclientnum, ramptime, &function_b0298a0, stagefrom, stageto, key, postfx);
 }
 
 // Namespace blood/blood
 // Params 8, eflags: 0x1 linked
 // Checksum 0x3b52704e, Offset: 0x3238
 // Size: 0xbc
-function function_b0298a0(currenttime, elapsedtime, localclientnum, duration, var_2347e08e, var_991d3376, key, postfx) {
+function function_b0298a0(currenttime, elapsedtime, localclientnum, duration, stagefrom, stageto, key, postfx) {
     percent = elapsedtime / duration;
-    amount = var_991d3376 * percent + var_2347e08e * (1 - percent);
+    amount = stageto * percent + stagefrom * (1 - percent);
     if (isdefined(self.blood_enabled) && self.blood_enabled) {
         self function_116b95e5(postfx, key, amount);
     }

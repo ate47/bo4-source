@@ -183,10 +183,10 @@ function function_93440c52() {
                     }
                 }
             }
-            var_6271c461 = getdvarint(#"hash_21d7ba8da36d4023", 0);
-            if (var_6271c461 != var_6631295a) {
-                var_6631295a = var_6271c461;
-                function_ad983215(!var_6271c461);
+            isremoved = getdvarint(#"hash_21d7ba8da36d4023", 0);
+            if (isremoved != var_6631295a) {
+                var_6631295a = isremoved;
+                function_ad983215(!isremoved);
             }
             var_90cd8304 = getdvarint(#"hash_34a3e2c00f7cd27f", 0);
             if (var_90cd8304 != var_e68b7091) {
@@ -287,7 +287,7 @@ function function_ad983215(enabled) {
         setdvar(#"con_minicon", enabled);
         setdvar(#"cg_drawfps", enabled);
         setdvar(#"cg_drawtime", enabled);
-        setdvar(#"hash_59587b459995b6eb", enabled);
+        setdvar(#"cg_drawviewpos", enabled);
         setdvar(#"hash_173fd7265ae0b7b1", enabled);
         setdvar(#"hash_2d3acd259cd6aca6", enabled);
     #/
@@ -774,8 +774,8 @@ function function_8639a7b0(file, propinfo) {
 // Size: 0x10c
 function function_62b9b9ac(file, propsizetext) {
     /#
-        foreach (var_8889f985 in level.proplist) {
-            foreach (propinfo in var_8889f985) {
+        foreach (sizetype in level.proplist) {
+            foreach (propinfo in sizetype) {
                 if (propinfo.propsizetext == propsizetext) {
                     function_2dc5c497(file, propinfo);
                 }
@@ -790,8 +790,8 @@ function function_62b9b9ac(file, propsizetext) {
 // Size: 0x10c
 function plaza_dom_point_neutral_b_secured(file, propsizetext) {
     /#
-        foreach (var_8889f985 in level.proplist) {
-            foreach (propinfo in var_8889f985) {
+        foreach (sizetype in level.proplist) {
+            foreach (propinfo in sizetype) {
                 if (propinfo.propsizetext == propsizetext) {
                     function_8639a7b0(file, propinfo);
                 }

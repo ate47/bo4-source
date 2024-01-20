@@ -418,12 +418,12 @@ function private function_cdd9b388() {
                 var_654d4508 = var_ea8ae4bc * var_ea8ae4bc;
                 var_84dd2a8b = 2048;
                 foreach (point in points) {
-                    var_57791385 = distancesquared(origin, point.origin);
-                    if (var_57791385 > var_654d4508) {
+                    disttopointsq = distancesquared(origin, point.origin);
+                    if (disttopointsq > var_654d4508) {
                         continue;
                     }
                     radius = 64;
-                    if (var_57791385 < var_84dd2a8b * var_84dd2a8b) {
+                    if (disttopointsq < var_84dd2a8b * var_84dd2a8b) {
                         radius = max(distance(origin, point.origin) / var_84dd2a8b * radius, 1);
                     }
                     color = (1, 0, 1);

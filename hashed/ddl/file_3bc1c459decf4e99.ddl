@@ -82,7 +82,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_68ec2d014bd7f6d7",
+                    "name": "#vram",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -104,7 +104,7 @@
                     "bitSize": 1024
                 },
                 {
-                    "name": "#hash_8f38b1c4044b176",
+                    "name": "#dxver",
                     "type": "uint",
                     "offset": 1072,
                     "bitSize": 16,
@@ -157,7 +157,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_504323ccd6b5d53a",
+                    "name": "#display_width",
                     "type": "uint",
                     "offset": 18848,
                     "bitSize": 16,
@@ -173,7 +173,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_33d1919ad3b19a60",
+                    "name": "#scene_width",
                     "type": "uint",
                     "offset": 1056,
                     "bitSize": 16,
@@ -197,20 +197,20 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_160c6248cb4a4043",
+                    "name": "#refresh_rate",
                     "type": "fixedpoint",
                     "offset": 22360,
                     "bitSize": 32,
                     "intSize": 32
                 },
                 {
-                    "name": "#hash_49cf8b7c5f1d1de4",
+                    "name": "#os_version",
                     "type": "string",
                     "offset": 10752,
                     "bitSize": 4096
                 },
                 {
-                    "name": "#hash_77c0c1ea1d46acce",
+                    "name": "#winver",
                     "type": "string",
                     "offset": 19240,
                     "bitSize": 1024
@@ -414,14 +414,14 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_2042ab53f67e07c0",
-                    "type": "struct#hash_d61f32e738b0498",
+                    "name": "#telemetry",
+                    "type": "struct#telemetry_header",
                     "offset": 14912,
                     "bitSize": 504
                 },
                 {
                     "name": "#client",
-                    "type": "struct#hash_7dcaabe0b3028e02",
+                    "type": "struct#client_header",
                     "offset": 18864,
                     "bitSize": 192
                 },
@@ -432,7 +432,7 @@
                     "bitSize": 8960
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 22409,
                     "bitSize": 7,
@@ -441,7 +441,7 @@
             ]
         },
         {
-            "name": "#hash_d61f32e738b0498",
+            "name": "#telemetry_header",
             "members": [
                 {
                     "name": "#hash_56a1b6d783aa7a25",
@@ -465,7 +465,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_572050e9a4cc493f",
+                    "name": "#changelist_number",
                     "type": "int",
                     "offset": 0,
                     "bitSize": 32,
@@ -481,7 +481,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_412cb161a9856017",
+                    "name": "#source_version",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -507,14 +507,14 @@
             "name": "#hash_54196e9e9860f0be",
             "values": [
                 "#pc",
-                "#hash_2138dd192571c4c9",
-                "#hash_3f9f7d197fde67aa",
+                "#neo",
+                "#xb1",
                 "#scorpio",
                 "#ps4"
             ]
         },
         {
-            "name": "#hash_7dcaabe0b3028e02",
+            "name": "#client_header",
             "members": [
                 {
                     "name": "#user_id",
@@ -531,7 +531,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_69f723a3393b550d",
+                    "name": "#uno_id",
                     "type": "uint64",
                     "offset": 64,
                     "bitSize": 64,
@@ -551,7 +551,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_ccd234b5b3edbc9",
+                    "name": "#device_id",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 32,
@@ -559,7 +559,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_68ec2d014bd7f6d7",
+                    "name": "#vram",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,

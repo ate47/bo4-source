@@ -9,7 +9,7 @@
     "name": "zblueprint_mansion_silver_molten",
     "displayname": "Silver Molten",
     "var_46309255": "spawn_as_ingredient",
-    "var_f4a82731": 3,
+    "componentcount": 3,
     "var_d8967a0c": 1,
     "var_318c150c": "section_quests"
 }

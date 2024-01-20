@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_master_volume_mute",
     "displayname": "#hash_345c1e76aca9104f",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "snd_mute_master_volume",
     "var_82c732a7": 1,

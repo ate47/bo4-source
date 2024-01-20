@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_category_mouse",
     "displayname": "#hash_6ca114a49cbc126f",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 100,
     "var_d4e288e": 15,
     "var_b7401319": "#menu/off"

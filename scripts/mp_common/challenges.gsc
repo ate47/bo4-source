@@ -573,8 +573,8 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
                     }
                     break;
                 case #"gear_awareness":
-                    var_1550b3b2 = function_fd82b127() * 0.5;
-                    if (var_6af452fc.var_85997af0 < var_1550b3b2 * var_1550b3b2) {
+                    minimaprange = function_fd82b127() * 0.5;
+                    if (var_6af452fc.var_85997af0 < minimaprange * minimaprange) {
                         self stats::function_dad108fa(#"ekia_minimap_awareness", 1);
                         if (isdefined(var_5afc3871[#"talent_tracker"]) && var_6af452fc.var_53611a9c === 1) {
                             self stats::function_dad108fa(#"ekia_minimap_awareness_tracker", 1);

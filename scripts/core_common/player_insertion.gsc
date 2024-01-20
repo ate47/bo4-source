@@ -196,10 +196,10 @@ function private function_9ddb4115(var_1d83d08d) {
     if (isdefined(level.deathcircles) && level.deathcircles.size > 0) {
         initcircle = level.deathcircles[0];
         newstart = var_1d83d08d.start;
-        var_dd00b78e = vectornormalize(var_1d83d08d.end - var_1d83d08d.start);
+        toend = vectornormalize(var_1d83d08d.end - var_1d83d08d.start);
         var_164fe5c9 = distance2dsquared(newstart, initcircle.origin);
         while (var_164fe5c9 > initcircle.radius * initcircle.radius) {
-            newstart = newstart + var_dd00b78e * 1000;
+            newstart = newstart + toend * 1000;
             var_c820832 = distance2dsquared(newstart, initcircle.origin);
             if (var_c820832 > var_164fe5c9) {
                 break;
@@ -208,7 +208,7 @@ function private function_9ddb4115(var_1d83d08d) {
         }
         var_1d83d08d.start = newstart;
         var_1b8e09d2 = var_1d83d08d.end;
-        var_6d773f9e = var_dd00b78e * -1;
+        var_6d773f9e = toend * -1;
         var_164fe5c9 = distance2dsquared(var_1b8e09d2, initcircle.origin);
         while (var_164fe5c9 > initcircle.radius * initcircle.radius) {
             var_1b8e09d2 = var_1b8e09d2 + var_6d773f9e * 1000;
@@ -295,8 +295,8 @@ function function_1db63266() {
     /#
         assert(isplayer(self));
     #/
-    var_5ed0195b = function_20cba65e(self);
-    insertion = level.insertions[var_5ed0195b];
+    insertionindex = function_20cba65e(self);
+    insertion = level.insertions[insertionindex];
     if (isdefined(insertion) && isdefined(insertion.infilteament)) {
         function_9368af66(insertion, self);
     }
@@ -1457,15 +1457,15 @@ function private function_e59d879f(insertion, s_formation, var_cf46aa72) {
         }
         for (i = 0; i < s_formation.var_c85ebc15; i++) {
             spawner::global_spawn_throttle(1);
-            var_61b1034d = startpoint + rotatepoint(s_formation.var_86cb4eb8[i], var_872f085f);
+            rotatedstart = startpoint + rotatepoint(s_formation.var_86cb4eb8[i], var_872f085f);
             var_4875d958 = vehiclespawners[s_formation.var_f5cff63[i]];
             vehicle = var_4875d958 spawnfromspawner("insertion_secondary");
             if (isdefined(vehicle)) {
                 vehicle notsolid();
                 vehicle.takedamage = 0;
-                vehicle.origin = var_61b1034d;
+                vehicle.origin = rotatedstart;
                 vehicle.angles = var_872f085f;
-                vehicle.startorigin = var_61b1034d;
+                vehicle.startorigin = rotatedstart;
                 if (!isdefined(insertion.var_dfaba736)) {
                     insertion.var_dfaba736 = [];
                 } else if (!isarray(insertion.var_dfaba736)) {
@@ -1496,10 +1496,10 @@ function private function_e59d879f(insertion, s_formation, var_cf46aa72) {
             if (!isdefined(insertion.var_dfaba736[i])) {
                 continue;
             }
-            var_45a4b34b = endpoint + rotatepoint(s_formation.var_86cb4eb8[i], var_872f085f);
-            insertion.var_dfaba736[i].endorigin = var_45a4b34b;
+            rotatedend = endpoint + rotatepoint(s_formation.var_86cb4eb8[i], var_872f085f);
+            insertion.var_dfaba736[i].endorigin = rotatedend;
             insertion.var_dfaba736[i] setneargoalnotifydist(512);
-            insertion.var_dfaba736[i] thread function_ea6a4f96(insertion.var_dfaba736[i].startorigin, var_45a4b34b, var_872f085f, s_formation.hoverparams[i], s_formation.var_86255b48[i]);
+            insertion.var_dfaba736[i] thread function_ea6a4f96(insertion.var_dfaba736[i].startorigin, rotatedend, var_872f085f, s_formation.hoverparams[i], s_formation.var_86255b48[i]);
         }
     } else {
         insertion.var_ef5094f9 = insertion.leadplane;
@@ -1615,7 +1615,7 @@ function function_d9dfa25() {
 function function_45b56b0a(insertion, startpoint, endpoint, var_872f085f, vehiclespawners) {
     offset = (500, -50, 600);
     goaloffset = vectorscale((0, 0, -1), 400);
-    var_61b1034d = startpoint + rotatepoint(offset, var_872f085f);
+    rotatedstart = startpoint + rotatepoint(offset, var_872f085f);
     var_31e5487a = vehiclespawners[#"heli_infil_spawner"];
     insertion.var_933bdcf2 = var_31e5487a spawnfromspawner("insertion_presentation");
     if (!isdefined(insertion.var_933bdcf2)) {
@@ -1624,17 +1624,17 @@ function function_45b56b0a(insertion, startpoint, endpoint, var_872f085f, vehicl
         #/
         return;
     }
-    insertion.var_933bdcf2.origin = var_61b1034d;
+    insertion.var_933bdcf2.origin = rotatedstart;
     insertion.var_933bdcf2.angles = var_872f085f;
-    insertion.var_933bdcf2.startorigin = var_61b1034d;
-    var_45a4b34b = endpoint + rotatepoint(goaloffset, var_872f085f);
-    insertion.var_933bdcf2.endorigin = var_45a4b34b;
+    insertion.var_933bdcf2.startorigin = rotatedstart;
+    rotatedend = endpoint + rotatepoint(goaloffset, var_872f085f);
+    insertion.var_933bdcf2.endorigin = rotatedend;
     wait(0.5);
     insertion.var_933bdcf2 setrotorspeed(1);
     insertion.var_933bdcf2 setspeedimmediate(175);
     insertion.var_933bdcf2 setneargoalnotifydist(512);
-    insertion.var_933bdcf2 vehlookat(var_45a4b34b);
-    insertion.var_933bdcf2 function_a57c34b7(var_45a4b34b, 0, 0);
+    insertion.var_933bdcf2 vehlookat(rotatedend);
+    insertion.var_933bdcf2 function_a57c34b7(rotatedend, 0, 0);
     insertion.var_933bdcf2.takedamage = 0;
 }
 
@@ -1649,12 +1649,12 @@ function function_f87ddcf0(insertion, startpoint, endpoint, var_872f085f, vehicl
     insertion.var_27d17f06 = [];
     for (i = 0; i < 2; i++) {
         waitframe(1);
-        var_61b1034d = startpoint + rotatepoint(offset[i], var_872f085f);
+        rotatedstart = startpoint + rotatepoint(offset[i], var_872f085f);
         var_31e5487a = vehiclespawners[var_5b967418[i]];
         vehicle = var_31e5487a spawnfromspawner("insertion_presentation");
-        vehicle.origin = var_61b1034d;
+        vehicle.origin = rotatedstart;
         vehicle.angles = var_872f085f;
-        vehicle.startorigin = var_61b1034d;
+        vehicle.startorigin = rotatedstart;
         if (!isdefined(insertion.var_27d17f06)) {
             insertion.var_27d17f06 = [];
         } else if (!isarray(insertion.var_27d17f06)) {
@@ -1664,13 +1664,13 @@ function function_f87ddcf0(insertion, startpoint, endpoint, var_872f085f, vehicl
         waitframe(1);
     }
     for (i = 0; i < 2; i++) {
-        var_45a4b34b = endpoint + rotatepoint(goaloffset[i], var_872f085f);
-        insertion.var_27d17f06[i].endorigin = var_45a4b34b;
+        rotatedend = endpoint + rotatepoint(goaloffset[i], var_872f085f);
+        insertion.var_27d17f06[i].endorigin = rotatedend;
         insertion.var_27d17f06[i] setrotorspeed(1);
         insertion.var_27d17f06[i] setspeedimmediate(2);
         insertion.var_27d17f06[i] setneargoalnotifydist(512);
         insertion.var_27d17f06[i].takedamage = 0;
-        insertion.var_27d17f06[i] thread function_700e474f(insertion.var_27d17f06[i].startorigin, var_45a4b34b, var_872f085f, goaloffset[i][1], i);
+        insertion.var_27d17f06[i] thread function_700e474f(insertion.var_27d17f06[i].startorigin, rotatedend, var_872f085f, goaloffset[i][1], i);
     }
 }
 

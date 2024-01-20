@@ -42,14 +42,14 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_2042ab53f67e07c0",
-                    "type": "struct#hash_d61f32e738b0498",
+                    "name": "#telemetry",
+                    "type": "struct#telemetry_header",
                     "offset": 512,
                     "bitSize": 504
                 },
                 {
                     "name": "#client",
-                    "type": "struct#hash_7dcaabe0b3028e02",
+                    "type": "struct#client_header",
                     "offset": 1088,
                     "bitSize": 192
                 }
@@ -78,12 +78,12 @@
                 "#hash_571643deca2047be",
                 "#key_right",
                 "#hash_64542839fe491d2e",
-                "#hash_64afc4344d61888b",
+                "#key_start",
                 "#hash_6b2290ec67e5dd5b"
             ]
         },
         {
-            "name": "#hash_d61f32e738b0498",
+            "name": "#telemetry_header",
             "members": [
                 {
                     "name": "#hash_56a1b6d783aa7a25",
@@ -107,7 +107,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_572050e9a4cc493f",
+                    "name": "#changelist_number",
                     "type": "int",
                     "offset": 0,
                     "bitSize": 32,
@@ -123,7 +123,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_412cb161a9856017",
+                    "name": "#source_version",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -149,14 +149,14 @@
             "name": "#hash_54196e9e9860f0be",
             "values": [
                 "#pc",
-                "#hash_2138dd192571c4c9",
-                "#hash_3f9f7d197fde67aa",
+                "#neo",
+                "#xb1",
                 "#scorpio",
                 "#ps4"
             ]
         },
         {
-            "name": "#hash_7dcaabe0b3028e02",
+            "name": "#client_header",
             "members": [
                 {
                     "name": "#user_id",
@@ -173,7 +173,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_69f723a3393b550d",
+                    "name": "#uno_id",
                     "type": "uint64",
                     "offset": 64,
                     "bitSize": 64,

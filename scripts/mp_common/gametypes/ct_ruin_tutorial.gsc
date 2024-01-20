@@ -223,7 +223,7 @@ function function_9b9525e9() {
     earn_the_hellstorm_objective();
     level.var_ad7c0539 = 11;
     function_bbdd4fa9();
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace ct_ruin_tutorial/ct_ruin_tutorial

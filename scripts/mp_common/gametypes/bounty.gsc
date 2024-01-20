@@ -1044,8 +1044,8 @@ function private function_2ad9733b() {
     }
     level.var_1f3975e4 = 1;
     function_7cb5420e();
-    var_7f950d85 = {};
-    function_f878f4bf(function_7f8c4043(), var_7f950d85);
+    tempcontext = {};
+    function_f878f4bf(function_7f8c4043(), tempcontext);
 }
 
 // Namespace bounty/bounty
@@ -1082,11 +1082,11 @@ function private function_f878f4bf(var_fa5724d5, context) {
     level.var_ad7774db thread function_acf3ff19();
     waitresult = undefined;
     waitresult = level.var_ad7774db waittill(#"hash_5677d0c5246418e5");
-    var_2d0ad1ef = 0;
-    while (waitresult._notify == "timeout" && level.var_ad7774db.curprogress > var_2d0ad1ef) {
+    prevprogress = 0;
+    while (waitresult._notify == "timeout" && level.var_ad7774db.curprogress > prevprogress) {
         waitresult = undefined;
         waitresult = level.var_ad7774db waittilltimeout(0.25, #"hash_5677d0c5246418e5");
-        var_2d0ad1ef = level.var_ad7774db.curprogress;
+        prevprogress = level.var_ad7774db.curprogress;
     }
     if (!isdefined(level.var_ad7774db)) {
         return;

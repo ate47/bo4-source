@@ -362,12 +362,12 @@ function function_f1ec5df(player, direction, var_ef0ae03b) {
         player.var_2bb1c157 = gettime();
     }
     if (var_c99b5df.size > 0) {
-        foreach (var_8cc7a4e in var_c99b5df) {
+        foreach (regioninfo in var_c99b5df) {
             foreach (zone in level.zones) {
                 if (var_ef0ae03b && !zm_zonemgr::zone_is_enabled(zone.name)) {
                     continue;
                 }
-                if (isinarray(zone.nodes, var_8cc7a4e.regionnode)) {
+                if (isinarray(zone.nodes, regioninfo.regionnode)) {
                     if (!isdefined(var_9521d651)) {
                         var_9521d651 = [];
                     } else if (!isarray(var_9521d651)) {
@@ -515,9 +515,9 @@ function function_766c006e(debug_info) {
             return (debug_info.name + "<unknown string>");
         }
         time_left = max(self.var_d18573c9 - gettime(), 0);
-        var_7c831c6e = debug_info.name + "<unknown string>" + (time_left < 0 ? "<unknown string>" : "<unknown string>");
-        var_7c831c6e = var_7c831c6e + time_left;
-        return var_7c831c6e;
+        returnstring = debug_info.name + "<unknown string>" + (time_left < 0 ? "<unknown string>" : "<unknown string>");
+        returnstring = returnstring + time_left;
+        return returnstring;
     #/
 }
 
@@ -668,14 +668,14 @@ function function_497aad8f() {
                 }
                 var_c99b5df = function_34c58d6(player.origin, playerdirection, 1000, 1);
                 if (var_c99b5df.size > 0) {
-                    foreach (var_8cc7a4e in var_c99b5df) {
+                    foreach (regioninfo in var_c99b5df) {
                         foreach (zone in level.zones) {
-                            if (isinarray(zone.nodes, var_8cc7a4e.regionnode)) {
-                                print3d(var_8cc7a4e.regionnode.origin + vectorscale((0, 0, 1), 12), var_8cc7a4e.regionnode.targetname, (0, 1, 0), 1, 1, 1);
+                            if (isinarray(zone.nodes, regioninfo.regionnode)) {
+                                print3d(regioninfo.regionnode.origin + vectorscale((0, 0, 1), 12), regioninfo.regionnode.targetname, (0, 1, 0), 1, 1, 1);
                                 break;
                             }
                         }
-                        sphere(var_8cc7a4e.contactpoint, 5, (0, 1, 0), 1, 0, 12, 1);
+                        sphere(regioninfo.contactpoint, 5, (0, 1, 0), 1, 0, 12, 1);
                     }
                 }
             }

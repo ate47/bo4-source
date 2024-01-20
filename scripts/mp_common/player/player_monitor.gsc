@@ -80,10 +80,10 @@ function private function_43e771ee(reason) {
         timeused = function_f8d53445() - self.var_3dc66299.starttime;
         if (self.var_3dc66299.shots > 0 || timeused >= 2000) {
             longesthitdist = 0;
-            var_e0ba2ec1 = self match_record::get_player_stat(#"hash_ec4aea1a8bbd82");
-            if (isdefined(var_e0ba2ec1)) {
-                longesthitdist = self match_record::get_stat(#"lives", var_e0ba2ec1, "longest_hit_distance");
-                self match_record::set_stat(#"lives", var_e0ba2ec1, "longest_hit_distance", 0);
+            currentlifeindex = self match_record::get_player_stat(#"hash_ec4aea1a8bbd82");
+            if (isdefined(currentlifeindex)) {
+                longesthitdist = self match_record::get_stat(#"lives", currentlifeindex, "longest_hit_distance");
+                self match_record::set_stat(#"lives", currentlifeindex, "longest_hit_distance", 0);
             }
             died = 0;
             if (reason == #"death" || self.var_3dc66299.deathsduringuse > 0) {

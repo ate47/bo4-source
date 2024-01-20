@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_slowgrenade_toggle",
     "displayname": "#hash_2108a7ffc17bae1",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "slowgrenade_toggle",
     "var_82c732a7": 1,

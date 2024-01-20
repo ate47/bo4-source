@@ -1078,10 +1078,10 @@ function function_b42ce622(var_4b3a6521) {
 // Params 3, eflags: 0x0
 // Checksum 0xa3a7e2e4, Offset: 0x3fe8
 // Size: 0x86
-function function_7b72086e(var_737e23a7, var_61cb4be0, n_period) {
+function function_7b72086e(hash_state, var_61cb4be0, n_period) {
     self endon(#"hash_3cc1d9808679e79e");
     while (1) {
-        level.ct_progressbar_status ct_progressbar_status::set_state(self, var_737e23a7);
+        level.ct_progressbar_status ct_progressbar_status::set_state(self, hash_state);
         wait(n_period);
         level.ct_progressbar_status ct_progressbar_status::set_state(self, var_61cb4be0);
         wait(n_period);
@@ -2462,7 +2462,7 @@ function function_d25bd3c9(v_target, var_368c41b6, var_7f71c337) {
 // Params 0, eflags: 0x0
 // Checksum 0x3b7e4984, Offset: 0x8af8
 // Size: 0x13c
-function function_9f8be64a() {
+function onboarding_complete() {
     e_player = get_player();
     e_player thread function_61c3d59c(function_8b1a219a() ? #"hash_2599a874a6af5e44" : #"hash_1f9e1f03abf80100", undefined);
     e_player thread function_84181d75(1, e_player.origin);

@@ -141,7 +141,7 @@ class cluielemimage : cluielem {
     // Params b, eflags: 0x0
     // Checksum 0x8114e94b, Offset: 0x478
     // Size: 0x204
-    function setup_clientfields(uid, xcallback, ycallback, widthcallback, heightcallback, fadeovertimecallback, alphacallback, redcallback, greencallback, bluecallback, var_e6b6b84b) {
+    function setup_clientfields(uid, xcallback, ycallback, widthcallback, heightcallback, fadeovertimecallback, alphacallback, redcallback, greencallback, bluecallback, materialcallback) {
         cluielem::setup_clientfields(uid);
         cluielem::add_clientfield("x", 1, 7, "int", xcallback);
         cluielem::add_clientfield("y", 1, 6, "int", ycallback);
@@ -161,9 +161,9 @@ class cluielemimage : cluielem {
 // Params 11, eflags: 0x0
 // Checksum 0xc7386b61, Offset: 0xf8
 // Size: 0xb8
-function register(uid, xcallback, ycallback, widthcallback, heightcallback, fadeovertimecallback, alphacallback, redcallback, greencallback, bluecallback, var_e6b6b84b) {
+function register(uid, xcallback, ycallback, widthcallback, heightcallback, fadeovertimecallback, alphacallback, redcallback, greencallback, bluecallback, materialcallback) {
     elem = new cluielemimage();
-    [[ elem ]]->setup_clientfields(uid, xcallback, ycallback, widthcallback, heightcallback, fadeovertimecallback, alphacallback, redcallback, greencallback, bluecallback, var_e6b6b84b);
+    [[ elem ]]->setup_clientfields(uid, xcallback, ycallback, widthcallback, heightcallback, fadeovertimecallback, alphacallback, redcallback, greencallback, bluecallback, materialcallback);
     return elem;
 }
 

@@ -224,8 +224,8 @@ function function_f8e46115(node, oldgoalradius) {
     }
     isatgoal = 0;
     while (!isatgoal) {
-        var_1f2328d0 = self function_4794d6a3();
-        isatgoal = isdefined(var_1f2328d0.isatgoal) && var_1f2328d0.isatgoal || self isapproachinggoal() && isdefined(self.overridegoalpos);
+        goalinfo = self function_4794d6a3();
+        isatgoal = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal || self isapproachinggoal() && isdefined(self.overridegoalpos);
         wait(1);
     }
     if (isdefined(node.target)) {
@@ -262,15 +262,15 @@ function function_b25a6169() {
     self notify("7c5dbe7edcfd4795");
     self endon("7c5dbe7edcfd4795");
     goalradius = self.goalradius;
-    var_1a93f447 = 5;
+    misscount = 5;
     while (1) {
         if (isdefined(self.enemy)) {
             self.goalradius = 1024;
             if (!self cansee(self.enemy)) {
-                var_1a93f447--;
-                if (var_1a93f447 < 1) {
+                misscount--;
+                if (misscount < 1) {
                     self clearenemy();
-                    var_1a93f447 = 5;
+                    misscount = 5;
                 }
             } else {
                 self setgoal(self.enemy.origin);

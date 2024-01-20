@@ -369,15 +369,15 @@ function flush_leader_dialog_key_on_player(dialogkey) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x377ce410, Offset: 0x1b08
 // Size: 0x6c
-function play_taacom_dialog(dialogkey, killstreaktype, killstreakid, var_46bd7973, var_8a6b001a, weapon, priority) {
-    self killstreak_dialog_on_player(dialogkey, killstreaktype, killstreakid, undefined, var_46bd7973, var_8a6b001a, weapon, priority);
+function play_taacom_dialog(dialogkey, killstreaktype, killstreakid, soundevent, var_8a6b001a, weapon, priority) {
+    self killstreak_dialog_on_player(dialogkey, killstreaktype, killstreakid, undefined, soundevent, var_8a6b001a, weapon, priority);
 }
 
 // Namespace globallogic_audio/globallogic_audio
 // Params 8, eflags: 0x1 linked
 // Checksum 0x351fde93, Offset: 0x1b80
 // Size: 0x1d4
-function killstreak_dialog_on_player(dialogkey, killstreaktype, killstreakid, pilotindex, var_46bd7973, var_8a6b001a, weapon, priority) {
+function killstreak_dialog_on_player(dialogkey, killstreaktype, killstreakid, pilotindex, soundevent, var_8a6b001a, weapon, priority) {
     if (!isdefined(self)) {
         return;
     }
@@ -398,7 +398,7 @@ function killstreak_dialog_on_player(dialogkey, killstreaktype, killstreakid, pi
     newdialog.killstreaktype = killstreaktype;
     newdialog.pilotindex = pilotindex;
     newdialog.killstreakid = killstreakid;
-    newdialog.var_46bd7973 = var_46bd7973;
+    newdialog.soundevent = soundevent;
     newdialog.var_8a6b001a = var_8a6b001a;
     newdialog.weapon = weapon;
     if (priority === 1) {
@@ -475,9 +475,9 @@ function play_next_killstreak_dialog() {
         return;
     }
     waittime = 0;
-    if (isdefined(nextdialog.var_46bd7973) && isdefined(nextdialog.var_8a6b001a) && isalive(nextdialog.var_8a6b001a)) {
+    if (isdefined(nextdialog.soundevent) && isdefined(nextdialog.var_8a6b001a) && isalive(nextdialog.var_8a6b001a)) {
         waittime = waittime + battlechatter::mpdialog_value("taacomHackAndReplyDialogBuffer", 0);
-        self thread function_30f16f29(nextdialog.var_46bd7973, nextdialog.var_8a6b001a, nextdialog.weapon);
+        self thread function_30f16f29(nextdialog.soundevent, nextdialog.var_8a6b001a, nextdialog.weapon);
     } else {
         self playlocalsound(dialogalias);
         waittime = waittime + battlechatter::mpdialog_value("killstreakDialogBuffer", 0);
@@ -501,9 +501,9 @@ function wait_next_killstreak_dialog(waittime) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x8ddc32b7, Offset: 0x21d8
 // Size: 0x64
-function function_30f16f29(var_46bd7973, var_8a6b001a, weapon) {
+function function_30f16f29(soundevent, var_8a6b001a, weapon) {
     if (isdefined(var_8a6b001a) && isalive(var_8a6b001a)) {
-        var_8a6b001a function_18aba49d(var_46bd7973, weapon, self);
+        var_8a6b001a function_18aba49d(soundevent, weapon, self);
     }
 }
 

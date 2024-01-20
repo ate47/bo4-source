@@ -3292,9 +3292,9 @@ function play_destroyed_dialog_on_owner(killstreaktype, killstreakid) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0xa6933b7, Offset: 0xc1c0
 // Size: 0x78
-function play_taacom_dialog(dialogkey, killstreaktype, killstreakid, var_46bd7973, var_8a6b001a, weapon, priority) {
+function play_taacom_dialog(dialogkey, killstreaktype, killstreakid, soundevent, var_8a6b001a, weapon, priority) {
     if (isdefined(level.play_taacom_dialog)) {
-        self [[ level.play_taacom_dialog ]](dialogkey, killstreaktype, killstreakid, var_46bd7973, var_8a6b001a, weapon, priority);
+        self [[ level.play_taacom_dialog ]](dialogkey, killstreaktype, killstreakid, soundevent, var_8a6b001a, weapon, priority);
     }
 }
 

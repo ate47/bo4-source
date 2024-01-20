@@ -147,9 +147,9 @@ function private function_a702eb04(params, goal) {
             if (!isdefined(var_6369695a) || var_6369695a.path.size == 0) {
                 bot setgoal(goal);
             } else {
-                var_1f2328d0 = bot function_4794d6a3();
+                goalinfo = bot function_4794d6a3();
                 tpoint = getclosesttacpoint(bot.origin);
-                if (!isdefined(tpoint) && isdefined(var_1f2328d0.regionid) && !var_1f2328d0.isatgoal) {
+                if (!isdefined(tpoint) && isdefined(goalinfo.regionid) && !goalinfo.isatgoal) {
                     continue;
                 }
                 var_65733efe = -1;
@@ -199,8 +199,8 @@ function private function_3f15f776(params) {
     for (i = 0; i < params.bots.size; i++) {
         bot = params.bots[i];
         if (strategiccommandutility::isvalidbot(bot)) {
-            var_1f2328d0 = bot function_4794d6a3();
-            if (isdefined(var_1f2328d0.regionid) && !var_1f2328d0.isatgoal) {
+            goalinfo = bot function_4794d6a3();
+            if (isdefined(goalinfo.regionid) && !goalinfo.isatgoal) {
                 continue;
             }
             region = params.regions[randomint(params.regions.size)];
@@ -823,8 +823,8 @@ function private function_94e18e0d(planner, params) {
         if (!isdefined(params.sdbomb.trigger) || !params.sdbomb.trigger istriggerenabled()) {
             return 2;
         }
-        var_1f2328d0 = params.bots[0] function_4794d6a3();
-        if (isdefined(var_1f2328d0) && var_1f2328d0.isatgoal) {
+        goalinfo = params.bots[0] function_4794d6a3();
+        if (isdefined(goalinfo) && goalinfo.isatgoal) {
             params.sdbomb.trigger useby(params.bots[0]);
         }
         return 3;

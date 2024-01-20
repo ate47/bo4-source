@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_mounting_ladders",
     "displayname": "#hash_80a56805d51b9d9",
-    "var_926d1be9": 1,
+    "decimalplace": 1,
     "var_66faec87": 500,
     "statname": "auto_mount_ladder_enabled",
     "var_82c732a7": 1,

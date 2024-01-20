@@ -186,8 +186,8 @@ function function_e70fa91c(var_cf456610, var_2ab9d3bd, var_6647c284 = -1) {
     if (!isdefined(level.var_93c59949[var_cf456610])) {
         level.var_93c59949[var_cf456610] = [];
     }
-    var_f532cd9f = level.var_93c59949[var_cf456610].size;
-    level.var_93c59949[var_cf456610][var_f532cd9f] = {#count:var_6647c284, #replacement:var_2ab9d3bd};
+    replacementcount = level.var_93c59949[var_cf456610].size;
+    level.var_93c59949[var_cf456610][replacementcount] = {#count:var_6647c284, #replacement:var_2ab9d3bd};
 }
 
 // Namespace item_world_fixup/item_world_fixup
@@ -207,8 +207,8 @@ function function_2749fcc3(var_89b7987e, var_cf456610, var_2ab9d3bd, var_6647c28
     if (!isdefined(level.var_93c59949[var_cf456610])) {
         level.var_93c59949[var_cf456610] = [];
     }
-    var_f532cd9f = level.var_93c59949[var_cf456610].size;
-    level.var_93c59949[var_cf456610][var_f532cd9f] = {#var_52a66db0:var_89b7987e, #count:var_6647c284, #replacement:var_2ab9d3bd};
+    replacementcount = level.var_93c59949[var_cf456610].size;
+    level.var_93c59949[var_cf456610][replacementcount] = {#var_52a66db0:var_89b7987e, #count:var_6647c284, #replacement:var_2ab9d3bd};
 }
 
 // Namespace item_world_fixup/item_world_fixup

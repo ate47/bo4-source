@@ -10,7 +10,7 @@
 function private function_c92543a0(attachmentitem, attachmentname) {
     attachment = spawnstruct();
     attachment.id = attachmentitem.id;
-    attachment.var_bd027dd9 = attachmentitem.var_bd027dd9;
+    attachment.networkid = attachmentitem.networkid;
     attachment.var_a6762160 = attachmentitem.var_a6762160;
     attachment.var_4c342187 = attachmentname;
     return attachment;
@@ -30,12 +30,12 @@ function function_9e9c82a6(item, attachmentitem, var_41a74919 = 1, allowdupe = 0
     if (!isdefined(item) || !isdefined(item.var_a6762160) || item.var_a6762160.itemtype != #"weapon") {
         return 0;
     }
-    if (!isdefined(attachmentitem) || !isdefined(attachmentitem.var_a6762160) || !isdefined(attachmentitem.var_bd027dd9) || attachmentitem.var_a6762160.itemtype != #"attachment") {
+    if (!isdefined(attachmentitem) || !isdefined(attachmentitem.var_a6762160) || !isdefined(attachmentitem.networkid) || attachmentitem.var_a6762160.itemtype != #"attachment") {
         return 0;
     }
     if (isdefined(item.attachments)) {
         foreach (attachment in item.attachments) {
-            if (isdefined(attachment) && attachment.var_bd027dd9 == attachmentitem.var_bd027dd9) {
+            if (isdefined(attachment) && attachment.networkid == attachmentitem.networkid) {
                 return 0;
             }
         }
@@ -463,7 +463,7 @@ function function_31a0b1ef(item, attachmentitem, var_41a74919 = 1) {
     var_2496b555 = 0;
     for (index = 0; index < item.attachments.size; index++) {
         attachment = item.attachments[index];
-        if (isdefined(attachment) && attachment.var_bd027dd9 === attachmentitem.var_bd027dd9) {
+        if (isdefined(attachment) && attachment.networkid === attachmentitem.networkid) {
             var_2496b555 = 1;
             arrayremoveindex(item.attachments, index, 0);
             break;

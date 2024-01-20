@@ -8,7 +8,7 @@
     "var_43a952c1": 0.1,
     "name": "pc_display_vram",
     "displayname": "#hash_5ccc02f6b5d8dce1",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "com_show_vram",
     "var_82c732a7": 1,

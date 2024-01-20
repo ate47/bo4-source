@@ -13,20 +13,20 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_2042ab53f67e07c0",
-                    "type": "struct#hash_d61f32e738b0498",
+                    "name": "#telemetry",
+                    "type": "struct#telemetry_header",
                     "offset": 2112,
                     "bitSize": 504
                 },
                 {
                     "name": "#client",
-                    "type": "struct#hash_7dcaabe0b3028e02",
+                    "type": "struct#client_header",
                     "offset": 3592,
                     "bitSize": 192
                 },
                 {
                     "name": "#match",
-                    "type": "struct#hash_8057a5478d9bca",
+                    "type": "struct#match_header",
                     "offset": 0,
                     "bitSize": 192
                 },
@@ -45,7 +45,7 @@
             ]
         },
         {
-            "name": "#hash_d61f32e738b0498",
+            "name": "#telemetry_header",
             "members": [
                 {
                     "name": "#hash_56a1b6d783aa7a25",
@@ -69,7 +69,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_572050e9a4cc493f",
+                    "name": "#changelist_number",
                     "type": "int",
                     "offset": 0,
                     "bitSize": 32,
@@ -85,7 +85,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_412cb161a9856017",
+                    "name": "#source_version",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -111,14 +111,14 @@
             "name": "#hash_54196e9e9860f0be",
             "values": [
                 "#pc",
-                "#hash_2138dd192571c4c9",
-                "#hash_3f9f7d197fde67aa",
+                "#neo",
+                "#xb1",
                 "#scorpio",
                 "#ps4"
             ]
         },
         {
-            "name": "#hash_7dcaabe0b3028e02",
+            "name": "#client_header",
             "members": [
                 {
                     "name": "#user_id",
@@ -135,7 +135,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_69f723a3393b550d",
+                    "name": "#uno_id",
                     "type": "uint64",
                     "offset": 64,
                     "bitSize": 64,
@@ -144,7 +144,7 @@
             ]
         },
         {
-            "name": "#hash_8057a5478d9bca",
+            "name": "#match_header",
             "members": [
                 {
                     "name": "#lobby_id",
@@ -201,7 +201,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_5b001ccb4b4a6bd0",
+                    "name": "#playlist_version",
                     "type": "int",
                     "offset": 576,
                     "bitSize": 32,
@@ -209,7 +209,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_38469d68580feff1",
+                    "name": "#playlist_id",
                     "type": "int",
                     "offset": 480,
                     "bitSize": 32,
@@ -298,7 +298,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 970,
                     "bitSize": 6,

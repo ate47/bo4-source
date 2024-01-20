@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_swatgrenade_toggle",
     "displayname": "#hash_54d5fa241b502a8b",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "swatgrenade_toggle",
     "var_82c732a7": 1,

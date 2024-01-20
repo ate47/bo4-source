@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_show_team_chat",
     "displayname": "#hash_16f574a0d890babe",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "show_team_chat",
     "var_82c732a7": 1,

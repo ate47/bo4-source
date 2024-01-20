@@ -26,7 +26,7 @@ function __init__() {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xd695a62e, Offset: 0xe8
 // Size: 0x1c
-function function_d2294476(var_2ab9d3bd, var_f532cd9f, var_3afaa57b) {
+function function_d2294476(var_2ab9d3bd, replacementcount, var_3afaa57b) {
     
 }
 

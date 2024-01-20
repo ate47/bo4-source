@@ -1408,17 +1408,17 @@ function actor_killed_override(einflictor, attacker, idamage, smeansofdeath, wea
         perks = [];
         killstreaks = [];
         rounds = level.round_number;
-        var_65e76577 = #"";
+        bookmarkname = #"";
         if (isdefined(self.archetype) && (self.archetype == #"tiger" || self.archetype == #"brutus" || self.archetype == #"zombie_dog" || self.archetype == #"catalyst" || self.archetype == #"stoker" || self.archetype == #"blight_father")) {
-            var_65e76577 = #"hash_1553fcea4f6a00e";
+            bookmarkname = #"hash_1553fcea4f6a00e";
         } else {
-            var_65e76577 = #"hash_37300d83d8e6f1fc";
+            bookmarkname = #"hash_37300d83d8e6f1fc";
         }
-        if (var_65e76577 == #"hash_1553fcea4f6a00e") {
-            demo::bookmark(var_65e76577, gettime(), player);
+        if (bookmarkname == #"hash_1553fcea4f6a00e") {
+            demo::bookmark(bookmarkname, gettime(), player);
         }
-        potm::bookmark(var_65e76577, gettime(), player);
-        level thread potm::function_5523a49a(var_65e76577, player getentitynumber(), player getxuid(), self, killcam_entity_info, weapon, smeansofdeath, deathtime, deathtimeoffset, psoffsettime, perks, killstreaks, player);
+        potm::bookmark(bookmarkname, gettime(), player);
+        level thread potm::function_5523a49a(bookmarkname, player getentitynumber(), player getxuid(), self, killcam_entity_info, weapon, smeansofdeath, deathtime, deathtimeoffset, psoffsettime, perks, killstreaks, player);
     }
     if (isai(attacker) && isdefined(attacker.script_owner)) {
         if (attacker.script_owner.team != self.team) {

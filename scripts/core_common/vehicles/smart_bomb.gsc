@@ -792,7 +792,7 @@ function function_12857be3() {
 // Size: 0x34
 function isdrivableplayervehicle() {
     str_vehicletype = self.vehicletype;
-    if (isdefined(str_vehicletype) && self.var_46439e18) {
+    if (isdefined(str_vehicletype) && self.isplayervehicle) {
         return 1;
     }
     return 0;

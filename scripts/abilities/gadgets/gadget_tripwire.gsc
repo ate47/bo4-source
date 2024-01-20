@@ -560,14 +560,14 @@ function function_9e546fb3(attacker, weapon, target, var_2f6adbe3, tripper) {
         }
         if (isdefined(var_2f6adbe3)) {
             explosiondist = isdefined(level.var_c72e8c51.var_e44a7667) ? level.var_c72e8c51.var_e44a7667 : 0;
-            var_15d2965b = isdefined(level.var_c72e8c51.var_b1f240d7) ? level.var_c72e8c51.var_b1f240d7 : 0;
-            var_36684ed2 = isdefined(level.var_c72e8c51.var_d484364c) ? level.var_c72e8c51.var_d484364c : 0;
+            nearradius = isdefined(level.var_c72e8c51.var_b1f240d7) ? level.var_c72e8c51.var_b1f240d7 : 0;
+            farradius = isdefined(level.var_c72e8c51.var_d484364c) ? level.var_c72e8c51.var_d484364c : 0;
             maxdamage = isdefined(level.var_c72e8c51.var_89d80d88) ? level.var_c72e8c51.var_89d80d88 : 0;
             mindamage = isdefined(level.var_c72e8c51.var_cd9b7eaf) ? level.var_c72e8c51.var_cd9b7eaf : 0;
         } else {
             explosiondist = isdefined(level.var_c72e8c51.var_13e9ceba) ? level.var_c72e8c51.var_13e9ceba : 0;
-            var_15d2965b = isdefined(level.var_c72e8c51.var_d0a598a5) ? level.var_c72e8c51.var_d0a598a5 : 0;
-            var_36684ed2 = isdefined(level.var_c72e8c51.var_fcb3348e) ? level.var_c72e8c51.var_fcb3348e : 0;
+            nearradius = isdefined(level.var_c72e8c51.var_d0a598a5) ? level.var_c72e8c51.var_d0a598a5 : 0;
+            farradius = isdefined(level.var_c72e8c51.var_fcb3348e) ? level.var_c72e8c51.var_fcb3348e : 0;
             maxdamage = isdefined(level.var_c72e8c51.var_aebac5e5) ? level.var_c72e8c51.var_aebac5e5 : 0;
             mindamage = isdefined(level.var_c72e8c51.var_69bf01c2) ? level.var_c72e8c51.var_69bf01c2 : 0;
         }
@@ -577,10 +577,10 @@ function function_9e546fb3(attacker, weapon, target, var_2f6adbe3, tripper) {
             explosionsound = #"exp_tripwire";
             explosiondir = self.origin - var_2f6adbe3.origin;
             explosiondir = vectornormalize(explosiondir);
-            var_dcd20d50 = perpendicularvector(explosiondir);
+            perpvec = perpendicularvector(explosiondir);
             owner = isdefined(var_2f6adbe3.owner) && isentity(var_2f6adbe3.owner) ? var_2f6adbe3.owner : undefined;
-            var_2f6adbe3 cylinderdamage(explosiondir * explosiondist, var_2f6adbe3.origin, var_15d2965b, var_36684ed2, maxdamage, mindamage, owner, "MOD_EXPLOSIVE", self.weapon);
-            playfx(#"hash_69455dfeef0311c2", var_2f6adbe3.origin, explosiondir, var_dcd20d50);
+            var_2f6adbe3 cylinderdamage(explosiondir * explosiondist, var_2f6adbe3.origin, nearradius, farradius, maxdamage, mindamage, owner, "MOD_EXPLOSIVE", self.weapon);
+            playfx(#"hash_69455dfeef0311c2", var_2f6adbe3.origin, explosiondir, perpvec);
             playsoundatposition(explosionsound, self.origin);
             playsoundatposition(explosionsound, var_2f6adbe3.origin);
             var_2f6adbe3 ghost();
@@ -596,8 +596,8 @@ function function_9e546fb3(attacker, weapon, target, var_2f6adbe3, tripper) {
                     explosiondir = (1, 0, 0);
                 }
             }
-            var_dcd20d50 = perpendicularvector(explosiondir);
-            playfx(#"hash_69455dfeef0311c2", self.origin, explosiondir, var_dcd20d50);
+            perpvec = perpendicularvector(explosiondir);
+            playfx(#"hash_69455dfeef0311c2", self.origin, explosiondir, perpvec);
             self playsound(explosionsound);
             if (!isdefined(self.hitnormal)) {
                 self.hitnormal = (0, 0, 1);
@@ -611,7 +611,7 @@ function function_9e546fb3(attacker, weapon, target, var_2f6adbe3, tripper) {
             } else if (!isdefined(var_2f6adbe3)) {
                 self radiusdamage(self.origin + self.hitnormal * 5, explosiondist / 2, maxdamage, mindamage, self.owner, "MOD_EXPLOSIVE", self.weapon);
             } else {
-                self cylinderdamage(explosiondir * explosiondist, self.origin, var_15d2965b, var_36684ed2, maxdamage, mindamage, self.owner, "MOD_EXPLOSIVE", self.weapon);
+                self cylinderdamage(explosiondir * explosiondist, self.origin, nearradius, farradius, maxdamage, mindamage, self.owner, "MOD_EXPLOSIVE", self.weapon);
             }
         }
     }

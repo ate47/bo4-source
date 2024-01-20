@@ -81,9 +81,9 @@ function private function_1a50ce7b(watcher) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xa44d64d, Offset: 0x608
 // Size: 0x2a
-function function_48c30195(entity, var_ec9c756e) {
+function function_48c30195(entity, shouldignore) {
     if (isdefined(entity)) {
-        entity.ignoreemp = var_ec9c756e;
+        entity.ignoreemp = shouldignore;
     }
 }
 

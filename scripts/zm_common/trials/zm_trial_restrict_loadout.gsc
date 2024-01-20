@@ -543,10 +543,10 @@ function function_bb33631e(var_b5d0ea49) {
 // Size: 0x6c
 function private disable_offhand_weapons() {
     self endon(#"disconnect");
-    var_915fee20 = self offhandweaponsenabled();
+    was_enabled = self offhandweaponsenabled();
     self disableoffhandweapons();
     wait(1);
-    if (var_915fee20) {
+    if (was_enabled) {
         self enableoffhandweapons();
     }
 }

@@ -8,7 +8,7 @@
     "var_43a952c1": 0.1,
     "name": "pc_cursor_immediate_lock_inventory",
     "displayname": "#hash_424d6de4c815d483",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "cursor_immediate_lock_inventory",
     "var_82c732a7": 1,

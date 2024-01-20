@@ -219,7 +219,7 @@ function deathcam(victim) {
     s = victim.var_e59bd911;
     self killcam(s.spectatorclient, s.targetentityindex, s.killcam_entity_info, s.weapon, s.meansofdeath, s.deathtime, s.deathtimeoffset, s.offsettime, 0, undefined, s.perks, s.killstreaks, s.attacker, 0);
     var_9a73aefe = self.currentspectatingclient;
-    self function_223716c();
+    self stopfollowing();
     if (var_9a73aefe >= 0) {
         var_e1f8d08d = getentbynum(var_9a73aefe);
         if (isdefined(var_e1f8d08d)) {

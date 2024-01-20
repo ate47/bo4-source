@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_sensordart_toggle",
     "displayname": "#hash_2c0017e73c84e61f",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "sensordart_toggle",
     "var_82c732a7": 1,

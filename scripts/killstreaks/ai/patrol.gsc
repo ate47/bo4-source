@@ -219,8 +219,8 @@ function private is_debugging(dvar) {
 // Checksum 0x1b48ad56, Offset: 0xc30
 // Size: 0x54
 function function_38d931e7() {
-    var_1f2328d0 = self function_4794d6a3();
-    if (!isdefined(var_1f2328d0.var_9e404264) || var_1f2328d0.var_9e404264) {
+    goalinfo = self function_4794d6a3();
+    if (!isdefined(goalinfo.var_9e404264) || goalinfo.var_9e404264) {
         return 1;
     }
     return 0;
@@ -234,11 +234,11 @@ function function_6b33bfb8(radius) {
     if (self function_38d931e7()) {
         return 1;
     }
-    var_1f2328d0 = self function_4794d6a3();
-    if (isdefined(var_1f2328d0.overridegoalpos)) {
+    goalinfo = self function_4794d6a3();
+    if (isdefined(goalinfo.overridegoalpos)) {
         var_fca0ef39 = radius;
         var_1ba37935 = var_fca0ef39 * var_fca0ef39;
-        if (distancesquared(var_1f2328d0.overridegoalpos, self.origin) <= var_1ba37935) {
+        if (distancesquared(goalinfo.overridegoalpos, self.origin) <= var_1ba37935) {
             return 1;
         }
     }
@@ -259,10 +259,10 @@ function update_patrol() {
     /#
         assert(isdefined(self.ai.patrol.var_9033671b));
     #/
-    var_1f2328d0 = self function_4794d6a3();
+    goalinfo = self function_4794d6a3();
     if (self.ai.patrol.state == 2) {
         self.goalradius = 150;
-        if (!isdefined(var_1f2328d0.overridegoalpos)) {
+        if (!isdefined(goalinfo.overridegoalpos)) {
             newpos = getclosestpointonnavmesh(self.ai.patrol.var_9033671b, self.goalradius, self.ai.patrol.var_861daf20);
             if (isdefined(newpos)) {
                 self.ai.patrol.var_81f76ce3 = gettime() + randomintrange(3000, 4500);
@@ -285,7 +285,7 @@ function update_patrol() {
                 var_43c8852a = 1;
             }
         }
-        if (!isdefined(var_1f2328d0.overridegoalpos) || var_43c8852a) {
+        if (!isdefined(goalinfo.overridegoalpos) || var_43c8852a) {
             var_1d1d42ba = 1;
         } else if (var_1fc6a9ae) {
             if (gettime() >= self.ai.patrol.var_81f76ce3) {

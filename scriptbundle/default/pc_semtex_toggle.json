@@ -10,7 +10,7 @@
     "maxvalue": 1,
     "name": "pc_semtex_toggle",
     "displayname": "#hash_12627b0128c3281c",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "semtex_toggle",
     "var_82c732a7": 1,

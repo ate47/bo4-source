@@ -897,14 +897,14 @@ function private function_4e6d9621(smartcover, origins, radii) {
         for (index = 0; index < origins.size; index++) {
             distance = distancesquared(origins[index], var_592587c3);
             radius = isarray(radii) ? radii[index] : radii;
-            var_d3892c92 = radius + getdvarfloat(#"hash_4d17057924212aa9", 1);
+            combinedradius = radius + getdvarfloat(#"hash_4d17057924212aa9", 1);
             if (getdvarint(#"hash_686a676b28ae0af4", 0) == 1) {
                 /#
                     sphere(origins[index], radius, (0, 0, 1), 0.5, 0, 10, 500);
                     sphere(var_592587c3, getdvarfloat(#"hash_4d17057924212aa9", 1), (1, 0, 0), 0.5, 0, 10, 500);
                 #/
             }
-            radiussqr = var_d3892c92 * var_d3892c92;
+            radiussqr = combinedradius * combinedradius;
             if (distance < radiussqr) {
                 return 1;
             }
@@ -1181,8 +1181,8 @@ function microwaveturretaffectsentity(entity) {
         return 0;
     }
     if (isai(entity)) {
-        var_caf90a7c = entity.maxs[2] - entity.mins[2] + entity.origin[2];
-        if (var_caf90a7c < turret.origin[2]) {
+        entityheight = entity.maxs[2] - entity.mins[2] + entity.origin[2];
+        if (entityheight < turret.origin[2]) {
             return 0;
         }
     }

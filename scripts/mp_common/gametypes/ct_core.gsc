@@ -301,9 +301,9 @@ function function_1e84c767() {
             waitresult = player waittill(#"menuresponse");
             menu = waitresult.menu;
             response = waitresult.response;
-            var_244a2498 = waitresult.intpayload;
+            intval = waitresult.intpayload;
             if (response == "isIntroTutorialMovie") {
-                var_60786cb4 = var_244a2498 == 1;
+                var_60786cb4 = intval == 1;
                 break;
             }
         }

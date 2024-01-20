@@ -11,7 +11,7 @@
     "displayname": "#hash_5d9c675a383bf3fc",
     "rangestartvalue": 0.1,
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 4,
     "statname": "input_viewSensitivityADSScalarHighZoom",
     "var_d4e288e": 1,

@@ -78,9 +78,9 @@ function smartcover_placed(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self setanimrestart(level.smartcoversettings.bundle.deployanim, 1, 0, 1);
     } else if (bwastimejump) {
-        var_e72a224a = self getanimtime(level.smartcoversettings.bundle.deployanim);
+        currentanimtime = self getanimtime(level.smartcoversettings.bundle.deployanim);
         var_f56117a2 = 1 - newval;
-        if (var_f56117a2 < var_e72a224a) {
+        if (var_f56117a2 < currentanimtime) {
             self setanimtime(level.smartcoversettings.bundle.deployanim, var_f56117a2);
         }
     }
@@ -264,8 +264,8 @@ function function_dbaf4647(localclientnum) {
     smartcover = self;
     for (rowindex = 0; rowindex < level.smartcoversettings.bundle.rowcount; rowindex++) {
         for (colindex = 1; colindex <= level.smartcoversettings.bundle.var_b118698f; colindex++) {
-            var_c4027b0a = function_d66a0190(rowindex, colindex);
-            smartcover showpart(localclientnum, var_c4027b0a);
+            celllabel = function_d66a0190(rowindex, colindex);
+            smartcover showpart(localclientnum, celllabel);
         }
     }
 }
@@ -276,25 +276,25 @@ function function_dbaf4647(localclientnum) {
 // Size: 0x478
 function function_5a8becdc(localclientnum, player, buildinfo, var_4b1c8937) {
     smartcover = self;
-    var_59cc3b18 = level.smartcoversettings.bundle.maxheight / level.smartcoversettings.bundle.rowcount;
+    cellheight = level.smartcoversettings.bundle.maxheight / level.smartcoversettings.bundle.rowcount;
     cellwidth = level.smartcoversettings.bundle.maxwidth / level.smartcoversettings.bundle.var_b118698f;
     var_b963136f = int(buildinfo.width / cellwidth);
     var_227adab7 = buildinfo.width - cellwidth * var_b963136f;
     if (var_227adab7 > 0 && var_227adab7 / 2 < level.smartcoversettings.bundle.var_3dfbdbeb && var_b963136f + 2 <= level.smartcoversettings.bundle.var_b118698f) {
         var_b963136f = var_b963136f + 2;
     }
-    var_9de92bd5 = int(buildinfo.height / var_59cc3b18);
-    var_2582dbd = buildinfo.height - var_59cc3b18 * var_9de92bd5;
+    var_9de92bd5 = int(buildinfo.height / cellheight);
+    var_2582dbd = buildinfo.height - cellheight * var_9de92bd5;
     if (var_2582dbd > 0 && var_2582dbd < level.smartcoversettings.bundle.var_3dfbdbeb && var_2582dbd < level.smartcoversettings.bundle.rowcount) {
         var_9de92bd5++;
     }
-    var_5e91d5a8 = [];
+    cellstoremove = [];
     var_e465f403 = level.smartcoversettings.bundle.rowcount - var_9de92bd5;
     for (rowindex = 0; rowindex < var_e465f403; rowindex++) {
         rownum = level.smartcoversettings.bundle.rowcount - rowindex - 1;
         for (colindex = 1; colindex < level.smartcoversettings.bundle.var_b118698f; colindex++) {
-            var_c4027b0a = function_d66a0190(rownum, colindex);
-            smartcover hidepart(localclientnum, var_c4027b0a);
+            celllabel = function_d66a0190(rownum, colindex);
+            smartcover hidepart(localclientnum, celllabel);
         }
     }
     var_f636c423 = level.smartcoversettings.bundle.var_b118698f - var_b963136f;

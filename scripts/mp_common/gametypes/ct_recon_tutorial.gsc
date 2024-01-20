@@ -218,7 +218,7 @@ function function_9b9525e9() {
     level.var_ad7c0539 = 9;
     function_79d4c106();
     level.var_2e552187 = undefined;
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace ct_recon_tutorial/ct_recon_tutorial

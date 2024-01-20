@@ -31,7 +31,7 @@
     "var_43a952c1": 0.1,
     "name": "pc_subtitles",
     "displayname": "#hash_5edefd3349994820",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "cg_subtitles",
     "var_82c732a7": 1,

@@ -144,7 +144,7 @@ function private function_4c6bcfe2(var_b42f0937 = 0) {
 // Checksum 0x3b888a98, Offset: 0xfd8
 // Size: 0x5c
 function private vehicle_spawned() {
-    self.var_32371376 = level.var_80d8731e;
+    self.trackingindex = level.var_80d8731e;
     level.var_80d8731e++;
     self.emped = 0;
     self.vehkilloccupantsondeath = 1;
@@ -576,7 +576,7 @@ function function_3054737a(vehicle) {
     if (game.state == "pregame" || !isplayer(self) || self isremotecontrolling() || isdefined(vehicle.session)) {
         return;
     }
-    vehicle.session = {#passenger_kills:0, #var_3893d13e:0, #var_45bf3627:0, #var_ffb0c509:0, #vehicle_kills:0, #var_ecd1fe60:0, #var_33f48e5a:0, #var_770fd50d:0, #var_5ba0df6e:0, #var_309ad81f:0, #var_efe98761:1, #first_player:int(self getxuid(1)), #end_health:vehicle.health, #start_health:vehicle.health, #end_time:0, #start_time:gettime(), #var_c87538d9:vehicle.var_32371376, #var_4ba3155:vehicle.origin[1], #var_16f7d5d0:vehicle.origin[0], #var_1ff15d37:vehicle.origin[1], #var_2dbaf8ca:vehicle.origin[0], #vehicle:vehicle.vehicletype};
+    vehicle.session = {#passenger_kills:0, #var_3893d13e:0, #var_45bf3627:0, #var_ffb0c509:0, #vehicle_kills:0, #var_ecd1fe60:0, #var_33f48e5a:0, #var_770fd50d:0, #var_5ba0df6e:0, #var_309ad81f:0, #var_efe98761:1, #first_player:int(self getxuid(1)), #end_health:vehicle.health, #start_health:vehicle.health, #end_time:0, #start_time:gettime(), #var_c87538d9:vehicle.trackingindex, #var_4ba3155:vehicle.origin[1], #var_16f7d5d0:vehicle.origin[0], #var_1ff15d37:vehicle.origin[1], #var_2dbaf8ca:vehicle.origin[0], #vehicle:vehicle.vehicletype};
 }
 
 // Namespace wz_vehicle/vehicle
@@ -604,7 +604,7 @@ function function_2d00376(vehicle) {
 function on_vehicle_damage(params) {
     vehicle = self;
     if (isdefined(vehicle.session)) {
-        if (isdefined(params.eattacker) && isdefined(params.eattacker.var_46439e18) && params.eattacker.var_46439e18) {
+        if (isdefined(params.eattacker) && isdefined(params.eattacker.isplayervehicle) && params.eattacker.isplayervehicle) {
             var_364c1a03 = params.eattacker;
             if (var_364c1a03 == vehicle) {
                 vehicle.session.var_309ad81f = vehicle.session.var_309ad81f + params.idamage;
@@ -1154,8 +1154,8 @@ function function_5bce3f3a(vehicle, seat_index, var_ddd294e3) {
     self endon(#"death", #"disconnect", #"exit_vehicle", #"change_seat");
     vehicle endon(#"death");
     while (1) {
-        var_e93c6f3a = vehicle getturretheatvalue(seat_index);
-        var_62e4ee3 = var_e93c6f3a / 100;
+        heatvalue = vehicle getturretheatvalue(seat_index);
+        var_62e4ee3 = heatvalue / 100;
         if (var_62e4ee3 < 0) {
             var_62e4ee3 = 0;
         } else if (var_62e4ee3 > 1) {
@@ -2916,7 +2916,7 @@ function private function_479389f3() {
     var_d643c4fc = 0;
     var_e10b67f7 = [];
     var_b0e8278f = (0, 0, 0);
-    var_683999d6 = (0, 0, 0);
+    avgnormal = (0, 0, 0);
     var_4c962569 = 0;
     foreach (tag, trace in var_df47b913) {
         if (isdefined(trace[#"entity"])) {
@@ -2924,7 +2924,7 @@ function private function_479389f3() {
         } else if (trace[#"fraction"] < 1) {
             var_b0e8278f = var_b0e8278f + var_33a206d0[tag];
             var_4c962569 = var_4c962569 + trace[#"position"][2] - var_33a206d0[tag][2];
-            var_683999d6 = var_683999d6 + trace[#"normal"];
+            avgnormal = avgnormal + trace[#"normal"];
             var_e10b67f7[tag] = trace;
         }
     }
@@ -2935,15 +2935,15 @@ function private function_479389f3() {
         } else if (trace[#"fraction"] < 1) {
             var_b0e8278f = var_b0e8278f + var_8fc02d3b[tag];
             var_4c962569 = var_4c962569 + trace[#"position"][2] - var_8fc02d3b[tag][2];
-            var_683999d6 = var_683999d6 + trace[#"normal"];
+            avgnormal = avgnormal + trace[#"normal"];
             var_d3532cfe[tag] = trace;
         }
     }
     if (var_e10b67f7.size > 0 || var_d3532cfe.size > 0) {
-        var_683999d6 = var_683999d6 / (var_d3532cfe.size + var_e10b67f7.size);
-        self.var_eb4e4182 = var_683999d6;
+        avgnormal = avgnormal / (var_d3532cfe.size + var_e10b67f7.size);
+        self.var_eb4e4182 = avgnormal;
     }
-    if (var_683999d6[2] < 0.94) {
+    if (avgnormal[2] < 0.94) {
         return 0;
     }
     if (var_e10b67f7.size == 0 || var_d3532cfe.size == 0 || var_d3532cfe.size + var_e10b67f7.size < 3) {
@@ -2959,7 +2959,7 @@ function private function_479389f3() {
     var_b0e8278f = var_b0e8278f / (var_d3532cfe.size + var_e10b67f7.size);
     self.helilandingorigin = var_b0e8278f;
     self.var_6fac6f50 = var_4c962569;
-    self.var_67136cb0 = var_683999d6;
+    self.var_67136cb0 = avgnormal;
     return 1;
 }
 
@@ -3000,14 +3000,14 @@ function private function_4885ce1(params) {
         if (speed > var_1fdf316c) {
             applydamage = mapfloat(var_1fdf316c, var_a7796a79, mindamage, maxdamage, speed);
             normal = params.normal;
-            var_264f4ce2 = self.origin - 100 * normal;
+            sourceposition = self.origin - 100 * normal;
             if (isdefined(params.entity) && isvehicle(params.entity)) {
                 riders = params.entity getvehoccupants();
                 if (isdefined(riders) && isdefined(riders[0])) {
                     attacker = riders[0];
                 }
             }
-            self dodamage(applydamage, var_264f4ce2, attacker);
+            self dodamage(applydamage, sourceposition, attacker);
         }
     }
     state = self vehicle_ai::get_current_state();
@@ -3050,8 +3050,8 @@ function function_9dd58750() {
         return;
     }
     if (self.var_eb4e4182[2] < 0.99) {
-        var_352be391 = self getvelocity()[2];
-        slidemove = (self.var_eb4e4182[0] * 300, self.var_eb4e4182[1] * 300, var_352be391);
+        verticalspeed = self getvelocity()[2];
+        slidemove = (self.var_eb4e4182[0] * 300, self.var_eb4e4182[1] * 300, verticalspeed);
     } else {
         slidemove = (1, 0, 0) * 300;
     }
@@ -3088,9 +3088,9 @@ function function_41a269b3() {
     if (isdefined(occupants) && occupants.size) {
         for (i = 0; i < occupants.size; i++) {
             if (isdefined(occupants[i])) {
-                var_5ccabf3e = self getoccupantseat(occupants[i]);
-                if (isdefined(var_5ccabf3e)) {
-                    self usevehicle(occupants[i], var_5ccabf3e);
+                seatidx = self getoccupantseat(occupants[i]);
+                if (isdefined(seatidx)) {
+                    self usevehicle(occupants[i], seatidx);
                 }
             }
         }

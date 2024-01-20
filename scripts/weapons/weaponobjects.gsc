@@ -2272,7 +2272,7 @@ function function_42e13419(pweapons, weapon) {
 // Size: 0x98
 function function_3eca329f(pweapons, weapon) {
     foreach (pweapon in pweapons) {
-        if (pweapon.var_fc3be15e == weapon.var_fc3be15e) {
+        if (pweapon.clipindex == weapon.clipindex) {
             return pweapon;
         }
     }

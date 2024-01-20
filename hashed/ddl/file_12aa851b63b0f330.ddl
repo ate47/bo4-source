@@ -31,7 +31,7 @@
                     "maxIntValue": 200
                 },
                 {
-                    "name": "#hash_368023d90f637c55",
+                    "name": "#playerslist",
                     "type": "struct#player[200]",
                     "offset": 8,
                     "bitSize": 12800
@@ -51,7 +51,7 @@
                     "bitSize": 12800
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 25618,
                     "bitSize": 6,
@@ -90,7 +90,7 @@
                     "maxIntValue": 200
                 },
                 {
-                    "name": "#hash_368023d90f637c55",
+                    "name": "#playerslist",
                     "type": "struct#player[200]",
                     "offset": 8,
                     "bitSize": 12800

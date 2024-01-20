@@ -105,7 +105,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 12288
                 },
@@ -118,7 +118,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -225,7 +225,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 26,
                     "bitSize": 12,
@@ -233,7 +233,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 38,
                     "bitSize": 12,
@@ -305,7 +305,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 188,
                     "bitSize": 1,
@@ -438,7 +438,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 12,
@@ -446,7 +446,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 28,
                     "bitSize": 12,
@@ -510,7 +510,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 174,
                     "bitSize": 1,
@@ -668,7 +668,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 12288
                 },
@@ -681,7 +681,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -788,7 +788,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 26,
                     "bitSize": 12,
@@ -796,7 +796,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 38,
                     "bitSize": 12,
@@ -868,7 +868,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 188,
                     "bitSize": 1,
@@ -1001,7 +1001,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 12,
@@ -1009,7 +1009,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 28,
                     "bitSize": 12,
@@ -1073,7 +1073,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 174,
                     "bitSize": 1,
@@ -1231,7 +1231,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 12288
                 },
@@ -1244,7 +1244,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -1351,7 +1351,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 26,
                     "bitSize": 12,
@@ -1359,7 +1359,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 38,
                     "bitSize": 12,
@@ -1431,7 +1431,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 188,
                     "bitSize": 1,
@@ -1564,7 +1564,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 12,
@@ -1572,7 +1572,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 28,
                     "bitSize": 12,
@@ -1636,7 +1636,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 174,
                     "bitSize": 1,
@@ -1794,7 +1794,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 12288
                 },
@@ -1807,7 +1807,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -1914,7 +1914,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 26,
                     "bitSize": 12,
@@ -1922,7 +1922,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 38,
                     "bitSize": 12,
@@ -1994,7 +1994,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 188,
                     "bitSize": 1,
@@ -2127,7 +2127,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 12,
@@ -2135,7 +2135,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 28,
                     "bitSize": 12,
@@ -2199,7 +2199,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 174,
                     "bitSize": 1,
@@ -2357,7 +2357,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 12224
                 },
@@ -2370,7 +2370,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -2477,7 +2477,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 26,
                     "bitSize": 11,
@@ -2485,7 +2485,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 37,
                     "bitSize": 11,
@@ -2557,7 +2557,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 188,
                     "bitSize": 1,
@@ -2682,7 +2682,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 11,
@@ -2690,7 +2690,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 27,
                     "bitSize": 11,
@@ -2754,7 +2754,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 174,
                     "bitSize": 1,
@@ -2904,7 +2904,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 12288
                 },
@@ -2917,7 +2917,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -3024,7 +3024,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 25,
                     "bitSize": 11,
@@ -3032,7 +3032,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 36,
                     "bitSize": 11,
@@ -3104,7 +3104,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 189,
                     "bitSize": 1,
@@ -3229,7 +3229,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 11,
@@ -3237,7 +3237,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 27,
                     "bitSize": 11,
@@ -3301,7 +3301,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 174,
                     "bitSize": 1,
@@ -3451,7 +3451,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 11840
                 },
@@ -3464,7 +3464,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -3563,7 +3563,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 25,
                     "bitSize": 11,
@@ -3571,7 +3571,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 36,
                     "bitSize": 11,
@@ -3643,7 +3643,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 182,
                     "bitSize": 1,
@@ -3760,7 +3760,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 11,
@@ -3768,7 +3768,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 27,
                     "bitSize": 11,
@@ -3832,7 +3832,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 167,
                     "bitSize": 1,
@@ -3982,7 +3982,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 11776
                 },
@@ -3995,7 +3995,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -4094,7 +4094,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 25,
                     "bitSize": 11,
@@ -4102,7 +4102,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 36,
                     "bitSize": 11,
@@ -4174,7 +4174,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 180,
                     "bitSize": 1,
@@ -4291,7 +4291,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 11,
@@ -4299,7 +4299,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 27,
                     "bitSize": 11,
@@ -4363,7 +4363,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 165,
                     "bitSize": 1,
@@ -4506,7 +4506,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 11776
                 },
@@ -4519,7 +4519,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -4618,7 +4618,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 25,
                     "bitSize": 11,
@@ -4626,7 +4626,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 36,
                     "bitSize": 11,
@@ -4698,7 +4698,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 180,
                     "bitSize": 1,
@@ -4815,7 +4815,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 11,
@@ -4823,7 +4823,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 27,
                     "bitSize": 11,
@@ -4887,7 +4887,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 165,
                     "bitSize": 1,
@@ -5030,7 +5030,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 11776
                 },
@@ -5043,7 +5043,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -5142,7 +5142,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 25,
                     "bitSize": 11,
@@ -5150,7 +5150,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 36,
                     "bitSize": 11,
@@ -5222,7 +5222,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 180,
                     "bitSize": 1,
@@ -5339,7 +5339,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 11,
@@ -5347,7 +5347,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 27,
                     "bitSize": 11,
@@ -5411,7 +5411,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 165,
                     "bitSize": 1,

@@ -406,8 +406,8 @@ function private function_961fe569(einflictor, eattacker, idamage, idflags, smea
         if (weapon_utils::isbulletdamage(smeansofdeath)) {
             angles = self getplayerangles();
             forward = anglestoforward((0, angles[1], 0));
-            var_5511f898 = vectornormalize(eattacker.origin - self.origin);
-            if (vectordot(forward, var_5511f898) < 0.7) {
+            dirtoattacker = vectornormalize(eattacker.origin - self.origin);
+            if (vectordot(forward, dirtoattacker) < 0.7) {
                 if (!isdefined(self.var_ea1458aa.var_64ffda50)) {
                     self.var_ea1458aa.var_64ffda50 = [];
                 }
@@ -462,7 +462,7 @@ function private player_damage_log(einflictor, eattacker, idamage, idflags, smea
         lpselfguid = self getguid();
         lpattackerteam = "";
         lpattackerorigin = (0, 0, 0);
-        var_76d450bd = function_b14806c6(self player_role::get(), currentsessionmode());
+        victimspecialist = function_b14806c6(self player_role::get(), currentsessionmode());
         if (isplayer(eattacker)) {
             lpattacknum = eattacker getentitynumber();
             var_c8fa9c41 = eattacker getxuid();
@@ -471,14 +471,14 @@ function private player_damage_log(einflictor, eattacker, idamage, idflags, smea
             lpattackerteam = eattacker.team;
             lpattackerorigin = eattacker.origin;
             isusingheropower = 0;
-            var_a48b1a67 = function_b14806c6(eattacker player_role::get(), currentsessionmode());
+            attackerspecialist = function_b14806c6(eattacker player_role::get(), currentsessionmode());
             if (eattacker ability_player::is_using_any_gadget()) {
                 isusingheropower = 1;
             }
             if (isdefined(self.currentweapon)) {
                 name = self.currentweapon.name;
             }
-            bb::function_c3b9e07f(eattacker, lpattackerorigin, var_a48b1a67, weapon.name, self, self.origin, var_76d450bd, name, idamage, smeansofdeath, shitloc, 0, isusingheropower, undefined);
+            bb::function_c3b9e07f(eattacker, lpattackerorigin, attackerspecialist, weapon.name, self, self.origin, victimspecialist, name, idamage, smeansofdeath, shitloc, 0, isusingheropower, undefined);
         } else {
             lpattacknum = -1;
             var_c8fa9c41 = 0;

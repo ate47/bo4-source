@@ -8,7 +8,7 @@
     "var_43a952c1": 1,
     "name": "pc_monitor_distance_sensitivity_scaling",
     "displayname": "#hash_5e9b75a6a0a6a885",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 100,
     "statname": "m_mouseADSUseMonitorDistance",
     "var_82c732a7": 1,

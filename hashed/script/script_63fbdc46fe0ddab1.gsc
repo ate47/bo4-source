@@ -139,13 +139,13 @@ class czm_red_challenges_hud : cluielem {
     // Params 8, eflags: 0x1 linked
     // Checksum 0x9efdb812, Offset: 0x420
     // Size: 0x19c
-    function setup_clientfields(uid, var_be2ad4d, var_a7896263, var_4866daed, var_afaddf7a, var_5d7491df, var_26df3d64, var_90359ec7) {
+    function setup_clientfields(uid, var_be2ad4d, var_a7896263, var_4866daed, progresscallback, var_5d7491df, var_26df3d64, var_90359ec7) {
         cluielem::setup_clientfields(uid);
         cluielem::add_clientfield("_state", 1, 2, "int");
         cluielem::function_dcb34c80("string", "challengeText", 13000);
         cluielem::function_dcb34c80("string", "bottomText", 13000);
         cluielem::add_clientfield("bInLocation", 13000, 1, "int", var_4866daed);
-        cluielem::add_clientfield("progress", 13000, 1, "counter", var_afaddf7a);
+        cluielem::add_clientfield("progress", 13000, 1, "counter", progresscallback);
         cluielem::add_clientfield("tributeAvailable", 13000, 3, "int", var_5d7491df);
         cluielem::add_clientfield("rewardHidden", 15000, 1, "int", var_26df3d64);
         cluielem::add_clientfield("challengeFailing", 15000, 1, "int", var_90359ec7);
@@ -157,9 +157,9 @@ class czm_red_challenges_hud : cluielem {
 // Params 8, eflags: 0x1 linked
 // Checksum 0x2b9f7578, Offset: 0x128
 // Size: 0x94
-function register(uid, var_be2ad4d, var_a7896263, var_4866daed, var_afaddf7a, var_5d7491df, var_26df3d64, var_90359ec7) {
+function register(uid, var_be2ad4d, var_a7896263, var_4866daed, progresscallback, var_5d7491df, var_26df3d64, var_90359ec7) {
     elem = new czm_red_challenges_hud();
-    [[ elem ]]->setup_clientfields(uid, var_be2ad4d, var_a7896263, var_4866daed, var_afaddf7a, var_5d7491df, var_26df3d64, var_90359ec7);
+    [[ elem ]]->setup_clientfields(uid, var_be2ad4d, var_a7896263, var_4866daed, progresscallback, var_5d7491df, var_26df3d64, var_90359ec7);
     return elem;
 }
 

@@ -79,7 +79,7 @@ class czm_tut_hint_text : cluielem {
     // Params 2, eflags: 0x0
     // Checksum 0x47fa5e35, Offset: 0x258
     // Size: 0x7c
-    function setup_clientfields(uid, var_f5852d69) {
+    function setup_clientfields(uid, textcallback) {
         cluielem::setup_clientfields(uid);
         cluielem::add_clientfield("_state", 1, 1, "int");
         cluielem::function_dcb34c80("string", "text", 1);
@@ -91,9 +91,9 @@ class czm_tut_hint_text : cluielem {
 // Params 2, eflags: 0x0
 // Checksum 0x273f94fa, Offset: 0xc0
 // Size: 0x4c
-function register(uid, var_f5852d69) {
+function register(uid, textcallback) {
     elem = new czm_tut_hint_text();
-    [[ elem ]]->setup_clientfields(uid, var_f5852d69);
+    [[ elem ]]->setup_clientfields(uid, textcallback);
     return elem;
 }
 

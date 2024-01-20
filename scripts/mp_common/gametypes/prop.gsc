@@ -843,15 +843,15 @@ function function_71a55567() {
     self endon(#"disconnect", #"death");
     waitframe(1);
     if (isdefined(self)) {
-        var_9ba0a68f = int(level.phsettings.propchangecount);
+        changecount = int(level.phsettings.propchangecount);
         abilitycount = undefined;
         var_3a346a8 = undefined;
         if (isdefined(self.spawnedonce) && isdefined(self.changesleft)) {
-            var_9ba0a68f = self.changesleft;
+            changecount = self.changesleft;
             abilitycount = self.abilityleft;
             var_3a346a8 = self.clonesleft;
         }
-        self prop_controls::propsetchangesleft(var_9ba0a68f);
+        self prop_controls::propsetchangesleft(changecount);
         self prop_controls::setnewabilitycount(self.currentability, abilitycount);
         self prop_controls::setnewabilitycount("CLONE", var_3a346a8);
         self clientfield::set_to_player("realtime_multiplay", 1);
@@ -1487,8 +1487,8 @@ function tablelookupbyrow(var_a01224f2, rowindex, columnindex) {
 function populateproplist() {
     mapname = getmapname();
     var_a01224f2 = "gamedata/tables/mp/" + mapname + "_ph.csv";
-    var_c6e6d665 = tablelookuprowcount(var_a01224f2);
-    for (rowindex = 0; rowindex < var_c6e6d665; rowindex++) {
+    numrows = tablelookuprowcount(var_a01224f2);
+    for (rowindex = 0; rowindex < numrows; rowindex++) {
         modelname = tablelookupbyrow(var_a01224f2, rowindex, 0);
         propsizetext = tablelookupbyrow(var_a01224f2, rowindex, 1);
         propscale = float(tablelookupbyrow(var_a01224f2, rowindex, 2));
@@ -1524,7 +1524,7 @@ function populateproplist() {
         }
         addproptolist(modelname, propsize, offset, rotation, propsizetext, propscale, propheight, proprange);
     }
-    if (var_c6e6d665 == 0) {
+    if (numrows == 0) {
         addproptolist("tag_origin", 150, (0, 0, 0), (0, 0, 0), "medium", 1, getthirdpersonheightoffsetforsize(150), getthirdpersonrangeforsize(150));
     }
     level.proplist = organizeproplist(level.proplist);

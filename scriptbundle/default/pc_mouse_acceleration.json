@@ -10,7 +10,7 @@
     "name": "pc_mouse_acceleration",
     "displayname": "#hash_6843a3d03d6952bb",
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "m_mouseAcceleration",
     "minvalue": 1,

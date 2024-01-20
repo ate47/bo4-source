@@ -10,7 +10,7 @@
     "maxvalue": 1,
     "name": "pc_voice_chat_output_device",
     "displayname": "#hash_493004863dd7e723",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "voice_outputDevice",
     "var_d4e288e": 1,

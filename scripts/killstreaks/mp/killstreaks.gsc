@@ -194,8 +194,8 @@ function private function_f6370f75(dialogkey, killstreaktype, killstreakid, pilo
 // Params 7, eflags: 0x5 linked
 // Checksum 0x19daf618, Offset: 0xb60
 // Size: 0x6c
-function private function_3d6e0cd9(dialogkey, killstreaktype, killstreakid, var_46bd7973, var_8a6b001a, weapon, priority) {
-    self globallogic_audio::play_taacom_dialog(dialogkey, killstreaktype, killstreakid, var_46bd7973, var_8a6b001a, weapon, priority);
+function private function_3d6e0cd9(dialogkey, killstreaktype, killstreakid, soundevent, var_8a6b001a, weapon, priority) {
+    self globallogic_audio::play_taacom_dialog(dialogkey, killstreaktype, killstreakid, soundevent, var_8a6b001a, weapon, priority);
 }
 
 // Namespace killstreaks/killstreaks

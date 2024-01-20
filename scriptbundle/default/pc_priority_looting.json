@@ -9,7 +9,7 @@
     "name": "pc_priority_looting",
     "displayname": "#hash_568d76cb19208973",
     "rangestartvalue": 60,
-    "var_926d1be9": 1,
+    "decimalplace": 1,
     "var_66faec87": 120,
     "statname": "warzonePriorityPickups",
     "var_82c732a7": 1,

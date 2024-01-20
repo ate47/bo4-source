@@ -367,10 +367,10 @@ function on_end_game() {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xd9dfb244, Offset: 0x1600
 // Size: 0x8c
-function function_d2294476(var_2ab9d3bd, var_f532cd9f, var_3afaa57b) {
+function function_d2294476(var_2ab9d3bd, replacementcount, var_3afaa57b) {
     if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
-        var_f532cd9f = 1;
+        replacementcount = 1;
     }
-    namespace_3d2704b3::function_f0297225(var_2ab9d3bd, var_f532cd9f, var_3afaa57b);
+    namespace_3d2704b3::function_f0297225(var_2ab9d3bd, replacementcount, var_3afaa57b);
 }
 

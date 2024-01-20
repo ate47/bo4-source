@@ -1155,8 +1155,8 @@ function private function_23f14b08(entity, asmstatename) {
             entity zombie_utility::set_zombie_run_cycle("super_sprint");
         }
     }
-    var_1f2328d0 = entity function_4794d6a3();
-    isatgoal = isdefined(var_1f2328d0.isatgoal) && var_1f2328d0.isatgoal;
+    goalinfo = entity function_4794d6a3();
+    isatgoal = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal;
     if (isatgoal || isdefined(entity.var_8c6c9045)) {
         result = 4;
     }

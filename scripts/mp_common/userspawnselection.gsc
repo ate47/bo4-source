@@ -618,8 +618,8 @@ function waitandenablespawngroups() {
 // Params 1, eflags: 0x0
 // Checksum 0x92c3a32, Offset: 0x1f88
 // Size: 0x2c
-function function_4f78b01d(var_22eb977c) {
-    level clientfield::set_world_uimodel("hideautospawnoption", var_22eb977c);
+function function_4f78b01d(shoulddisable) {
+    level clientfield::set_world_uimodel("hideautospawnoption", shoulddisable);
 }
 
 // Namespace userspawnselection/userspawnselection

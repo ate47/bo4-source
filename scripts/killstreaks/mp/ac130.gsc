@@ -730,7 +730,7 @@ function mainturretdestroyed(ac130, eattacker, weapon) {
 // Params 6, eflags: 0x1 linked
 // Checksum 0xb8190b18, Offset: 0x3348
 // Size: 0x84
-function vtoldestructiblecallback(brokennotify, eattacker, weapon, var_b1f9d94f, dir, mod) {
+function vtoldestructiblecallback(brokennotify, eattacker, weapon, pieceindex, dir, mod) {
     ac130 = self;
     ac130 endon(#"delete", #"ac130_shutdown");
     mainturretdestroyed(ac130, eattacker, weapon);

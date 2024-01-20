@@ -43,7 +43,7 @@
     "name": "pc_monitor_distance_sensitivity_coefficient",
     "displayname": "#hash_3abe0ef5ed72cd26",
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 5,
     "statname": "m_mouseADSSensitivityCoef",
     "var_d4e288e": 1.33,

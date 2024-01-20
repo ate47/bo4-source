@@ -801,11 +801,11 @@ function function_thread(ent, on_enter_payload, on_exit_payload) {
     if (!isdefined(self)) {
         return;
     }
-    var_f911c758 = self getentitynumber();
-    if (ent ent_already_in(var_f911c758)) {
+    myentnum = self getentitynumber();
+    if (ent ent_already_in(myentnum)) {
         return;
     }
-    add_to_ent(ent, var_f911c758);
+    add_to_ent(ent, myentnum);
     if (isdefined(on_enter_payload)) {
         [[ on_enter_payload ]](ent);
     }
@@ -816,7 +816,7 @@ function function_thread(ent, on_enter_payload, on_exit_payload) {
         if (isdefined(on_exit_payload)) {
             [[ on_exit_payload ]](ent);
         }
-        remove_from_ent(ent, var_f911c758);
+        remove_from_ent(ent, myentnum);
     }
 }
 

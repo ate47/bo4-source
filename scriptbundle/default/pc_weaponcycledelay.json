@@ -10,7 +10,7 @@
     "name": "pc_weaponcycledelay",
     "displayname": "#hash_7354a077efef3711",
     "var_d6897f56": 1,
-    "var_926d1be9": 1,
+    "decimalplace": 1,
     "var_66faec87": 500,
     "statname": "weapon_cycle_delay",
     "var_d4e288e": 100,

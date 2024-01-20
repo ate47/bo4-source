@@ -323,7 +323,7 @@ function function_b139ecfb(localclientnum) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0x72dd7a0c, Offset: 0x49f8
 // Size: 0x14c
-function function_1cf2437c(localclientnum, draftcharacter, var_c0286f82, var_121d6e9a) {
+function function_1cf2437c(localclientnum, draftcharacter, oldcharacterindex, var_121d6e9a) {
     if (!isdefined([[ draftcharacter ]]->function_82e05d64().player)) {
         return;
     }
@@ -565,8 +565,8 @@ function update_team(localclientnum, var_4123f2c1) {
             positionmodel = getuimodel(positiondraftclientsmodel, luaindex);
             clientnum = getuimodelvalue(getuimodel(positionmodel, "clientNum"));
             [[ draftcharacter ]]->function_82e05d64().islocalclient = getuimodelvalue(getuimodel(positionmodel, "isLocalClient"));
-            [[ draftcharacter ]]->function_82e05d64().var_90ba8f6f = createuimodel(positionmodel, "entNum");
-            setuimodelvalue([[ draftcharacter ]]->function_82e05d64().var_90ba8f6f, [[ draftcharacter ]]->function_47cb6b19());
+            [[ draftcharacter ]]->function_82e05d64().entnummodel = createuimodel(positionmodel, "entNum");
+            setuimodelvalue([[ draftcharacter ]]->function_82e05d64().entnummodel, [[ draftcharacter ]]->function_47cb6b19());
             if (clientnum >= 0) {
                 player = getentbynum(localclientnum, clientnum);
                 if (isdefined(player) && player function_e4f35989()) {
@@ -630,8 +630,8 @@ function update_team(localclientnum, var_4123f2c1) {
 // Checksum 0x8e148077, Offset: 0x7f30
 // Size: 0x64
 function function_9e9e1117(localclientnum, draftcharacter) {
-    if (isdefined([[ draftcharacter ]]->function_82e05d64().var_90ba8f6f)) {
-        setuimodelvalue([[ draftcharacter ]]->function_82e05d64().var_90ba8f6f, [[ draftcharacter ]]->function_47cb6b19());
+    if (isdefined([[ draftcharacter ]]->function_82e05d64().entnummodel)) {
+        setuimodelvalue([[ draftcharacter ]]->function_82e05d64().entnummodel, [[ draftcharacter ]]->function_47cb6b19());
     }
 }
 

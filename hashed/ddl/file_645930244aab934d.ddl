@@ -23,7 +23,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 33,
                     "bitSize": 7,

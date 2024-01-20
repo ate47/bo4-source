@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_category_telemetry",
     "displayname": "#hash_2173256ac315baf5",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "var_d4e288e": 1,
     "var_b7401319": "#hash_4f445f7612232efc"

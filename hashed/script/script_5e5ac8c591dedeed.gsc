@@ -9,12 +9,12 @@
 // Params 3, eflags: 0x1 linked
 // Checksum 0xaca18e52, Offset: 0x80
 // Size: 0xa4
-function setup(localclientnum, var_582cb7bb, reset = 1) {
+function setup(localclientnum, seedvalue, reset = 1) {
     if (!namespace_65181344::is_enabled()) {
         return;
     }
     level.var_8c615e33 = [];
-    function_1f4464c0(var_582cb7bb);
+    function_1f4464c0(seedvalue);
     if (reset) {
         level callback::callback(#"hash_11bd48298bde44a4", undefined);
     }

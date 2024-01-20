@@ -1113,16 +1113,16 @@ function private devgui_shuffle(count) {
 // Size: 0x2a2
 function private simulate(var_1baf9723) {
     /#
-        var_4fbe4dc7 = 1000;
+        sim_count = 1000;
         var_9a165bb5 = 100;
         /#
             assert(var_1baf9723);
         #/
         var_f3ca456b = [];
-        for (i = 0; i < var_4fbe4dc7; i++) {
+        for (i = 0; i < sim_count; i++) {
             devgui_shuffle();
             for (c = 0; c < level.deathcircles.size; c++) {
-                circle = {#index:c, #radius:level.deathcircles[c].radius, #var_6e78c55a:level.deathcircles[c].origin[1], #var_ef0c4683:level.deathcircles[c].origin[0]};
+                circle = {#index:c, #radius:level.deathcircles[c].radius, #origin_y:level.deathcircles[c].origin[1], #origin_x:level.deathcircles[c].origin[0]};
                 if (!isdefined(var_f3ca456b)) {
                     var_f3ca456b = [];
                 } else if (!isarray(var_f3ca456b)) {

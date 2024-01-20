@@ -438,14 +438,14 @@ function deleteobjective(objectiveid) {
 // Checksum 0x3fd2323c, Offset: 0x1a48
 // Size: 0xce
 function function_890b2784() {
-    var_10432750 = undefined;
+    indextoremove = undefined;
     for (index = 0; index < level.var_934fb97.var_27fce4c0[self.clientid].size; index++) {
         if (level.var_934fb97.var_27fce4c0[self.clientid][index] == self) {
-            var_10432750 = index;
+            indextoremove = index;
         }
     }
-    if (isdefined(var_10432750)) {
-        level.var_934fb97.var_27fce4c0[self.clientid] = array::remove_index(level.var_934fb97.var_27fce4c0[self.clientid], var_10432750, 0);
+    if (isdefined(indextoremove)) {
+        level.var_934fb97.var_27fce4c0[self.clientid] = array::remove_index(level.var_934fb97.var_27fce4c0[self.clientid], indextoremove, 0);
     }
 }
 
@@ -665,9 +665,9 @@ function function_438ca4e0() {
 // Checksum 0x534f1f4a, Offset: 0x29a0
 // Size: 0x36
 function function_fec0924() {
-    var_d5110c6d = game.var_6ccfdacd;
+    currentid = game.var_6ccfdacd;
     game.var_6ccfdacd = game.var_6ccfdacd + 1;
-    return var_d5110c6d;
+    return currentid;
 }
 
 // Namespace supplypod/supplypod
@@ -982,8 +982,8 @@ function function_5bc9564e(weapon) {
         var_2f9ea2b9 = weapons::getbaseweapon(weapon);
         baseweaponindex = getbaseweaponitemindex(var_2f9ea2b9);
         if (isdefined(player.pod_ammo[baseweaponindex]) && player.pod_ammo[baseweaponindex]) {
-            var_831b3584 = player getweaponammostock(weapon);
-            if (var_831b3584 == 0) {
+            curammo = player getweaponammostock(weapon);
+            if (curammo == 0) {
                 player setweaponammostock(weapon, int(player.pod_ammo[baseweaponindex]));
                 player.pod_ammo[baseweaponindex] = undefined;
                 player thread function_452147b1(weapon, baseweaponindex);
@@ -1016,9 +1016,9 @@ function function_bcf0dd99() {
     player = self;
     primary_weapons = player getweaponslistprimaries();
     foreach (weapon in primary_weapons) {
-        var_831b3584 = player getweaponammostock(weapon);
+        curammo = player getweaponammostock(weapon);
         bonusammo = (isdefined(level.var_934fb97.bundle.var_8e002961) ? level.var_934fb97.bundle.var_8e002961 : 0) * weapon.clipsize;
-        player setweaponammostock(weapon, int(var_831b3584 + bonusammo));
+        player setweaponammostock(weapon, int(curammo + bonusammo));
     }
     player clientfield::set_player_uimodel("hudItems.goldenBullet", 1);
 }

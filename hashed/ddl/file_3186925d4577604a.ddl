@@ -29,7 +29,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_38469d68580feff1",
+                    "name": "#playlist_id",
                     "type": "int",
                     "offset": 1393368,
                     "bitSize": 32,
@@ -123,7 +123,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_6c42098de08fb031",
+                    "name": "#server_frame_msec",
                     "type": "int",
                     "offset": 1161824,
                     "bitSize": 32,
@@ -246,7 +246,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_5b9fd612f268576d",
+                    "name": "#test_name",
                     "type": "float",
                     "offset": 1645024,
                     "bitSize": 64,
@@ -301,7 +301,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_5b001ccb4b4a6bd0",
+                    "name": "#playlist_version",
                     "type": "int",
                     "offset": 1645136,
                     "bitSize": 32,
@@ -309,7 +309,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_7b55ebd46c7e4937",
+                    "name": "#playlist_name",
                     "type": "float",
                     "offset": 1162400,
                     "bitSize": 64,
@@ -374,8 +374,8 @@
                     "bitSize": 3264
                 },
                 {
-                    "name": "#hash_2042ab53f67e07c0",
-                    "type": "struct#hash_d61f32e738b0498",
+                    "name": "#telemetry",
+                    "type": "struct#telemetry_header",
                     "offset": 1161896,
                     "bitSize": 504
                 },
@@ -399,7 +399,7 @@
                 },
                 {
                     "name": "#hash_2fdd4442347356b9",
-                    "type": "struct#hash_4f5e5e60185966e5[384]",
+                    "type": "struct#gameevent[384]",
                     "offset": 2780112,
                     "bitSize": 64512
                 },
@@ -444,7 +444,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_35f96691d51fabd8",
+                    "name": "#breadcrumbs_total",
                     "type": "uint",
                     "offset": 1645104,
                     "bitSize": 32,
@@ -487,7 +487,7 @@
             "name": "#hash_7f7a5814a86a5885",
             "members": [
                 {
-                    "name": "#hash_195a0a4dd7471228",
+                    "name": "#event_type",
                     "type": "byte",
                     "offset": 136,
                     "bitSize": 8,
@@ -533,12 +533,12 @@
             "members": [
                 {
                     "name": "#client",
-                    "type": "struct#hash_7dcaabe0b3028e02",
+                    "type": "struct#client_header",
                     "offset": 42936,
                     "bitSize": 192
                 },
                 {
-                    "name": "#hash_4ab54418f478f3e2",
+                    "name": "#dml",
                     "type": "struct#hash_6580ccf5f8a0ef6",
                     "offset": 32,
                     "bitSize": 1752
@@ -595,7 +595,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_8b74207b55c5cbc",
+                    "name": "#ip",
                     "type": "uint",
                     "offset": 0,
                     "bitSize": 32,
@@ -603,7 +603,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_952b1c5e84b9fbf",
+                    "name": "#connection_id",
                     "type": "uint64",
                     "offset": 43792,
                     "bitSize": 64,
@@ -626,7 +626,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_6f7d8fb0f2469a08",
+                    "name": "#start_xp",
                     "type": "uint",
                     "offset": 34752,
                     "bitSize": 32,
@@ -634,7 +634,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_3f320f8a0110709f",
+                    "name": "#end_xp",
                     "type": "uint",
                     "offset": 43144,
                     "bitSize": 32,
@@ -718,7 +718,7 @@
                     "maxIntValue": 100
                 },
                 {
-                    "name": "#hash_a8f4466eaa66f41",
+                    "name": "#dwid",
                     "type": "uint64",
                     "offset": 1784,
                     "bitSize": 64,
@@ -1112,7 +1112,7 @@
                     "bitSize": 6832
                 },
                 {
-                    "name": "#hash_422f6572409eee39",
+                    "name": "#weapon_stats",
                     "type": "struct#hash_6425595b349c2207[12]",
                     "offset": 3016,
                     "bitSize": 2304
@@ -1634,7 +1634,7 @@
                     "maxIntValue": 65535
                 },
                 {
-                    "name": "#hash_5cf9bef9214fe728",
+                    "name": "#lootxpearned",
                     "type": "uint",
                     "offset": 5608,
                     "bitSize": 32,
@@ -1642,7 +1642,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_e4126d2221805b9",
+                    "name": "#loottimeplayed",
                     "type": "int",
                     "offset": 2792,
                     "bitSize": 32,
@@ -1727,7 +1727,7 @@
             "name": "#hash_70fd30917359da6c",
             "members": [
                 {
-                    "name": "#hash_195a0a4dd7471228",
+                    "name": "#event_type",
                     "type": "byte",
                     "offset": 24,
                     "bitSize": 8,
@@ -1751,7 +1751,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_272ba1124d8087f3",
+                    "name": "#kills_total",
                     "type": "short",
                     "offset": 8,
                     "bitSize": 16,
@@ -2437,7 +2437,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 129,
                     "bitSize": 7,
@@ -2446,7 +2446,7 @@
             ]
         },
         {
-            "name": "#hash_d61f32e738b0498",
+            "name": "#telemetry_header",
             "members": [
                 {
                     "name": "#hash_56a1b6d783aa7a25",
@@ -2470,7 +2470,7 @@
                     "bitSize": 256
                 },
                 {
-                    "name": "#hash_572050e9a4cc493f",
+                    "name": "#changelist_number",
                     "type": "int",
                     "offset": 0,
                     "bitSize": 32,
@@ -2486,7 +2486,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_412cb161a9856017",
+                    "name": "#source_version",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -2712,7 +2712,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 1940,
                     "bitSize": 4,
@@ -2721,10 +2721,10 @@
             ]
         },
         {
-            "name": "#hash_4f5e5e60185966e5",
+            "name": "#gameevent",
             "members": [
                 {
-                    "name": "#hash_195a0a4dd7471228",
+                    "name": "#event_type",
                     "type": "uint[26]",
                     "offset": 136,
                     "bitSize": 26,
@@ -2756,7 +2756,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 162,
                     "bitSize": 6,
@@ -2895,7 +2895,7 @@
                     "maxIntValue": 15
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 225,
                     "bitSize": 7,
@@ -2983,7 +2983,7 @@
             ]
         },
         {
-            "name": "#hash_7dcaabe0b3028e02",
+            "name": "#client_header",
             "members": [
                 {
                     "name": "#user_id",
@@ -3000,7 +3000,7 @@
                     "intSize": 64
                 },
                 {
-                    "name": "#hash_69f723a3393b550d",
+                    "name": "#uno_id",
                     "type": "uint64",
                     "offset": 64,
                     "bitSize": 64,
@@ -3020,7 +3020,7 @@
                     "maxIntValue": 4294967295
                 },
                 {
-                    "name": "#hash_79dab5910f08a8a2",
+                    "name": "#city",
                     "type": "string",
                     "offset": 32,
                     "bitSize": 1024
@@ -3069,8 +3069,8 @@
             "name": "#hash_54196e9e9860f0be",
             "values": [
                 "#pc",
-                "#hash_2138dd192571c4c9",
-                "#hash_3f9f7d197fde67aa",
+                "#neo",
+                "#xb1",
                 "#scorpio",
                 "#ps4"
             ]
@@ -3142,7 +3142,7 @@
             "name": "#hash_6425595b349c2207",
             "members": [
                 {
-                    "name": "#hash_340c4482dcdfa72b",
+                    "name": "#slot_used",
                     "type": "uint",
                     "offset": 184,
                     "bitSize": 1,
@@ -3238,7 +3238,7 @@
                     "maxIntValue": 2147483647
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 185,
                     "bitSize": 7,
@@ -3266,7 +3266,7 @@
                     "maxIntValue": 255
                 },
                 {
-                    "name": "#hash_2bc489a4bc916e4a",
+                    "name": "#performancevalue",
                     "type": "fixedpoint",
                     "offset": 72,
                     "bitSize": 32,
@@ -3311,13 +3311,13 @@
             "members": [
                 {
                     "name": "#primary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 232,
                     "bitSize": 136
                 },
                 {
                     "name": "#secondary",
-                    "type": "struct#hash_7455834bd1e6542c",
+                    "type": "struct#mploadoutweapon",
                     "offset": 96,
                     "bitSize": 136
                 },
@@ -3362,7 +3362,7 @@
                     "maxIntValue": 31
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 369,
                     "bitSize": 7,
@@ -3371,7 +3371,7 @@
             ]
         },
         {
-            "name": "#hash_7455834bd1e6542c",
+            "name": "#mploadoutweapon",
             "members": [
                 {
                     "name": "#itemindex",

@@ -719,19 +719,19 @@ function function_3875c0fc(var_67b8306d) {
         mod = 1;
     }
     dot = vectordot(var_c13d4c82, var_bcd5e04);
-    var_535a15b1 = dot * pitch;
-    var_d1ee48d6 = (1 - abs(dot)) * pitch * mod;
-    self.angles = (var_535a15b1, self.angles[1], var_d1ee48d6);
+    newpitch = dot * pitch;
+    newroll = (1 - abs(dot)) * pitch * mod;
+    self.angles = (newpitch, self.angles[1], newroll);
 }
 
 // Namespace prop_controls/_prop_controls
 // Params 1, eflags: 0x0
 // Checksum 0xa5608ec1, Offset: 0x26f0
 // Size: 0xc0
-function function_c0665212(var_ec9c756e) {
+function function_c0665212(shouldignore) {
     foreach (player in level.players) {
         if (isdefined(player.prop)) {
-            if (var_ec9c756e) {
+            if (shouldignore) {
                 player.prop notsolid();
             } else {
                 player.prop solid();
@@ -744,12 +744,12 @@ function function_c0665212(var_ec9c756e) {
 // Params 1, eflags: 0x0
 // Checksum 0xf185ba9f, Offset: 0x27b8
 // Size: 0x124
-function function_5b73beef(var_ec9c756e) {
+function function_5b73beef(shouldignore) {
     foreach (player in level.players) {
         if (isdefined(player.propclones)) {
             foreach (clone in player.propclones) {
                 if (isdefined(clone)) {
-                    if (var_ec9c756e) {
+                    if (shouldignore) {
                         clone notsolid();
                     } else {
                         clone solid();
@@ -770,7 +770,7 @@ function get_ground_normal(var_67b8306d, debug) {
     } else {
         ignore = var_67b8306d;
     }
-    var_3503303 = array(self.origin);
+    tracepoints = array(self.origin);
     if (getdvarint(#"hash_32aee631b4444f90", 1)) {
         i = -1;
         while (i <= 1) {
@@ -778,20 +778,20 @@ function get_ground_normal(var_67b8306d, debug) {
             while (j <= 1) {
                 corner = ignore getpointinbounds(i, j, 0);
                 corner = (corner[0], corner[1], self.origin[2]);
-                var_3503303[var_3503303.size] = corner;
+                tracepoints[tracepoints.size] = corner;
                 j = j + 2;
             }
             i = i + 2;
         }
     }
     function_c0665212(1);
-    var_683999d6 = (0, 0, 0);
+    avgnormal = (0, 0, 0);
     var_10ccb3f8 = 0;
-    foreach (point in var_3503303) {
+    foreach (point in tracepoints) {
         trace = bullettrace(point + vectorscale((0, 0, 1), 4), point + vectorscale((0, 0, -1), 16), 0, ignore);
         tracehit = trace[#"fraction"] > 0 && trace[#"fraction"] < 1;
         if (tracehit) {
-            var_683999d6 = var_683999d6 + trace[#"normal"];
+            avgnormal = avgnormal + trace[#"normal"];
             var_10ccb3f8++;
         }
         /#
@@ -806,13 +806,13 @@ function get_ground_normal(var_67b8306d, debug) {
     }
     function_c0665212(0);
     if (var_10ccb3f8 > 0) {
-        var_683999d6 = var_683999d6 / var_10ccb3f8;
+        avgnormal = avgnormal / var_10ccb3f8;
         /#
             if (debug) {
-                line(self.origin, self.origin + var_683999d6 * 20, (1, 1, 1));
+                line(self.origin, self.origin + avgnormal * 20, (1, 1, 1));
             }
         #/
-        return var_683999d6;
+        return avgnormal;
     } else {
         /#
             if (debug) {
@@ -865,7 +865,7 @@ function unlockprop() {
     self unlink();
     self resetdoublejumprechargetime();
     offset = self.propanchor.origin - self.origin;
-    var_8e178266 = self.propanchor.angles - self.angles;
+    offsetangles = self.propanchor.angles - self.angles;
     if (self.var_98d22839) {
         self.propent unlink();
         self.propent.angles = (self.angles[0], self.propent.angles[1], self.angles[2]);
@@ -875,7 +875,7 @@ function unlockprop() {
     waitframe(1);
     if (isdefined(self)) {
         if (isdefined(self.propanchor)) {
-            self.propanchor.angles = self.angles + var_8e178266;
+            self.propanchor.angles = self.angles + offsetangles;
             self.propanchor.origin = self.origin + offset;
             self.propanchor linkto(self);
         }
@@ -924,8 +924,8 @@ function function_74566016() {
     if (!isdefined(self.var_4901798a.var_8efb654e)) {
         self.var_4901798a.var_8efb654e = 1;
     }
-    var_df67e195 = self.var_4901798a.var_8efb654e + 0.75;
-    self.var_4901798a.fontscale = var_df67e195;
+    newscale = self.var_4901798a.var_8efb654e + 0.75;
+    self.var_4901798a.fontscale = newscale;
     wait(0.1);
     if (isdefined(self.var_4901798a)) {
         self.var_4901798a.fontscale = self.var_4901798a.var_8efb654e;
@@ -1483,10 +1483,10 @@ function function_58699cee(index) {
 // Params 1, eflags: 0x0
 // Checksum 0x5559b76d, Offset: 0x5228
 // Size: 0x170
-function function_e896a36a(var_319af7f5) {
+function function_e896a36a(issolid) {
     foreach (player in level.players) {
         if (isdefined(player.prop)) {
-            if (var_319af7f5) {
+            if (issolid) {
                 if (isdefined(player.prop.var_7ccb9924)) {
                     player.prop setcontents(player.prop.var_7ccb9924);
                 }
@@ -1507,12 +1507,12 @@ function function_e896a36a(var_319af7f5) {
 // Params 1, eflags: 0x0
 // Checksum 0x536bba3f, Offset: 0x53a0
 // Size: 0x1ac
-function function_45534e6c(var_319af7f5) {
+function function_45534e6c(issolid) {
     foreach (player in level.players) {
         if (isdefined(player.propclones)) {
             foreach (clone in player.propclones) {
                 if (isdefined(clone)) {
-                    if (var_319af7f5) {
+                    if (issolid) {
                         if (isdefined(clone.var_fc18a70a)) {
                             clone setcontents(clone.var_fc18a70a);
                         }
@@ -1535,12 +1535,12 @@ function function_45534e6c(var_319af7f5) {
 // Params 1, eflags: 0x0
 // Checksum 0xb15af817, Offset: 0x5558
 // Size: 0x128
-function function_d08dcbaf(var_319af7f5) {
+function function_d08dcbaf(issolid) {
     foreach (player in level.players) {
         if (!player util::isprop() || !isalive(player)) {
             continue;
         }
-        if (var_319af7f5) {
+        if (issolid) {
             player setcontents(level.phsettings.var_b5f21379);
             player solid();
         } else {
@@ -1554,12 +1554,12 @@ function function_d08dcbaf(var_319af7f5) {
 // Params 1, eflags: 0x0
 // Checksum 0x4e1b14b3, Offset: 0x5688
 // Size: 0x128
-function function_44a27dd6(var_319af7f5) {
+function function_44a27dd6(issolid) {
     foreach (player in level.players) {
         if (!player prop::function_84793f03() || !isalive(player)) {
             continue;
         }
-        if (var_319af7f5) {
+        if (issolid) {
             player setcontents(level.phsettings.var_b5f21379);
             player solid();
         } else {

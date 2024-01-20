@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_mouse_ads_sensitivity_on_fully_scoped",
     "displayname": "#hash_5e82571d33f9e95c",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "ads_sensitivity_fully_scoped",
     "var_82c732a7": 1,

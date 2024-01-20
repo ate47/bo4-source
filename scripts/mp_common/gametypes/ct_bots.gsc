@@ -140,7 +140,7 @@ function function_fa0d912f(var_7b4ae7d1) {
 // Size: 0xe2
 function function_2a8fc6b2() {
     entities = bot::get_bots();
-    var_afb7b6b7 = 0;
+    currentactivecount = 0;
     foreach (entity in entities) {
         if (!isdefined(entity.bot)) {
             continue;
@@ -151,9 +151,9 @@ function function_2a8fc6b2() {
         if (entity.sessionstate == "dead") {
             continue;
         }
-        var_afb7b6b7++;
+        currentactivecount++;
     }
-    return var_afb7b6b7;
+    return currentactivecount;
 }
 
 // Namespace ct_bots/ct_bots

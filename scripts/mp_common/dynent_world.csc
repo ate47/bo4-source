@@ -44,7 +44,7 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
             }
         }
         teleport = eventstruct.teleport;
-        var_718063b0 = eventstruct.var_f29ec684;
+        var_718063b0 = eventstruct.rootorigin;
         var_c286a1ae = eventstruct.var_f2f9b257;
         if (!(isdefined(bundle.var_f710132b) && bundle.var_f710132b)) {
             pos = (isdefined(newstate.pos_x) ? newstate.pos_x : 0, isdefined(newstate.pos_y) ? newstate.pos_y : 0, isdefined(newstate.pos_z) ? newstate.pos_z : 0);

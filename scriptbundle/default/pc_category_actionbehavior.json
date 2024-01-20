@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_category_actionbehavior",
     "displayname": "#hash_72b6da0ba22ed8f8",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 100,
     "var_d4e288e": 15,
     "var_b7401319": "#menu/off"

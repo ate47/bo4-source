@@ -284,7 +284,7 @@ function function_9b9525e9() {
     level thread ct_utils::function_26283961();
     level.givecustomloadout = &ct_core::function_1dd43d36;
     globallogic_score::_setplayermomentum(e_player, 0);
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial

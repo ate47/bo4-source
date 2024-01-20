@@ -1348,7 +1348,7 @@ function function_6aee5a4e(character) {
     if (isdefined(level.var_6963abdb)) {
         var_2d0192e5 = [[ character ]]->function_82e05d64();
         if (isdefined(var_2d0192e5) && isdefined(var_2d0192e5.xuid)) {
-            xuid = function_baf6cb99(var_2d0192e5.xuid);
+            xuid = xuidtostring(var_2d0192e5.xuid);
             return level.var_6963abdb[xuid];
         }
         if (isdefined(character._xuid)) {
@@ -1366,7 +1366,7 @@ function function_bee62aa1(character) {
     if (isdefined(level.var_6963abdb)) {
         var_2d0192e5 = [[ character ]]->function_82e05d64();
         if (isdefined(var_2d0192e5) && isdefined(var_2d0192e5.xuid)) {
-            xuid = function_baf6cb99(var_2d0192e5.xuid);
+            xuid = xuidtostring(var_2d0192e5.xuid);
             level.var_6963abdb[xuid] = 0;
         }
         if (isdefined(character._xuid)) {

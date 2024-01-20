@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_spawnbeacon_toggle",
     "displayname": "#hash_21b81965a72c49bb",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "spawnbeacon_toggle",
     "var_82c732a7": 1,

@@ -138,7 +138,7 @@ function function_e91e867d() {
 // Checksum 0xe9541b2a, Offset: 0xd80
 // Size: 0x34
 function function_8d20a4c4() {
-    zm_crafting::function_d1f16587(#"hash_2ca3c1e10bdf8cdb", &function_a913e7bc);
+    zm_crafting::function_d1f16587(#"ztable_orange_open", &function_a913e7bc);
 }
 
 // Namespace namespace_6036de69/namespace_6036de69
@@ -151,7 +151,7 @@ function function_a913e7bc(e_player) {
     } else if (isdefined(self.blueprint)) {
         t_crafting = self;
     }
-    if (t_crafting.blueprint.name == #"hash_3332ae392da799ae") {
+    if (t_crafting.blueprint.name == #"zblueprint_orange_heat_pack") {
         var_7c0185ab = t_crafting.var_4f749ffe;
         var_7c0185ab show();
         var_7c0185ab zm_unitrigger::create(&function_96dcf25a, 64);

@@ -1,7 +1,7 @@
 {
     "lobbymode": 1,
     "id": 1400,
-    "var_24e84cf8": 1,
+    "settingscount": 1,
     "backtarget": "director_lan",
     "maxlocalclientsnetwork": 2,
     "mainmode": 3,

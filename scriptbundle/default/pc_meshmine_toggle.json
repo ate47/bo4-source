@@ -9,7 +9,7 @@
     "maxvalue": 1,
     "name": "pc_meshmine_toggle",
     "displayname": "#hash_79aa7ce7a3c5839a",
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 2,
     "statname": "tripwire_alternate",
     "var_82c732a7": 1,

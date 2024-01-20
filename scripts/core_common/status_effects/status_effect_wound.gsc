@@ -66,8 +66,8 @@ function function_a54d41f7(starttime) {
     while (self.endtime > gettime()) {
         waitframe(1);
         if (self.endtime != var_1420e67b) {
-            var_3a8a4c13 = gettime() - starttime;
-            self.owner function_eb1cd20(starttime, self.duration + var_3a8a4c13, self.namehash);
+            timesincestart = gettime() - starttime;
+            self.owner function_eb1cd20(starttime, self.duration + timesincestart, self.namehash);
             var_1420e67b = self.endtime;
         }
     }

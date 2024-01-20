@@ -11,7 +11,7 @@
     "displayname": "#hash_3fb4a1191cbaf67a",
     "rangestartvalue": 0.01,
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 100,
     "statname": "m_mouseSensitivity",
     "var_d4e288e": 15,

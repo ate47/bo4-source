@@ -440,7 +440,7 @@ function function_e1553d5f(location, killstreak_id) {
     context.dist_from_boundary = 50;
     context.max_dist_from_location = 4;
     context.perform_physics_trace = 1;
-    context.var_ea9c2360 = location;
+    context.selectedlocation = location;
     context.islocationgood = &is_location_good;
     context.objective = #"airdrop_aitank";
     context.killstreakref = killstreak;
@@ -1326,13 +1326,13 @@ function function_dd91d091(params) {
             self.ai.var_88b0fd29 = gettime();
         }
         var_12cb92c6 = 0;
-        var_1f2328d0 = self function_4794d6a3();
+        goalinfo = self function_4794d6a3();
         newpos = undefined;
-        forcedgoal = isdefined(var_1f2328d0.goalforced) && var_1f2328d0.goalforced;
-        isatgoal = isdefined(var_1f2328d0.isatgoal) && var_1f2328d0.isatgoal || self isapproachinggoal() && isdefined(self.overridegoalpos);
-        itsbeenawhile = isdefined(var_1f2328d0.isatgoal) && var_1f2328d0.isatgoal && gettime() > self.ai.var_88b0fd29;
+        forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
+        isatgoal = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal || self isapproachinggoal() && isdefined(self.overridegoalpos);
+        itsbeenawhile = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal && gettime() > self.ai.var_88b0fd29;
         var_48ea0381 = 0;
-        var_2a8c95a5 = forcedgoal && isdefined(self.overridegoalpos) && distancesquared(self.overridegoalpos, var_1f2328d0.goalpos) < self.radius * self.radius;
+        var_2a8c95a5 = forcedgoal && isdefined(self.overridegoalpos) && distancesquared(self.overridegoalpos, goalinfo.goalpos) < self.radius * self.radius;
         if (isdefined(self.enemy) && !self haspath()) {
             var_48ea0381 = !self seerecently(self.enemy, randomintrange(3, 5));
             if (issentient(self.enemy) || function_ffa5b184(self.enemy)) {
@@ -1343,15 +1343,15 @@ function function_dd91d091(params) {
         var_12cb92c6 = var_12cb92c6 && !var_2a8c95a5;
         if (var_12cb92c6) {
             if (forcedgoal) {
-                newpos = getclosestpointonnavmesh(var_1f2328d0.goalpos, 500, self getpathfindingradius(), self.var_6e9e073d);
+                newpos = getclosestpointonnavmesh(goalinfo.goalpos, 500, self getpathfindingradius(), self.var_6e9e073d);
             } else {
                 goalarray = [];
                 if (isdefined(self.enemy)) {
-                    goalarray = tacticalquery("ai_tank_combat", var_1f2328d0.goalpos, self, self.enemy);
+                    goalarray = tacticalquery("ai_tank_combat", goalinfo.goalpos, self, self.enemy);
                     goalarray = damage_armor_activati_(self, goalarray);
                 } else {
                     var_8f3583cf = ai::t_cylinder(self.origin, 200, 100);
-                    goalarray = tacticalquery("ai_tank_wander", var_1f2328d0.goalpos, self, var_8f3583cf);
+                    goalarray = tacticalquery("ai_tank_wander", goalinfo.goalpos, self, var_8f3583cf);
                     goalarray = damage_armor_activati_(self, goalarray);
                 }
                 var_817e8fd0 = [];
@@ -1372,7 +1372,7 @@ function function_dd91d091(params) {
                 }
             }
             if (!isdefined(goalpos)) {
-                goalpos = getclosestpointonnavmesh(var_1f2328d0.goalpos, 500, self getpathfindingradius(), self.var_6e9e073d);
+                goalpos = getclosestpointonnavmesh(goalinfo.goalpos, 500, self getpathfindingradius(), self.var_6e9e073d);
             }
             self.ai.var_88b0fd29 = gettime() + randomintrange(3500, 5000);
         }

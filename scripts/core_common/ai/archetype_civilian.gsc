@@ -210,8 +210,8 @@ function private rioterchoosepositionservice(entity) {
     if (function_ebea502e(entity)) {
         return 0;
     }
-    var_1f2328d0 = entity function_4794d6a3();
-    forcedgoal = isdefined(var_1f2328d0.goalforced) && var_1f2328d0.goalforced;
+    goalinfo = entity function_4794d6a3();
+    forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
     isatscriptgoal = entity isatgoal() || entity isapproachinggoal();
     itsbeenawhile = gettime() > entity.nextfindbestcovertime;
     isinbadplace = entity isinanybadplace();
@@ -223,9 +223,9 @@ function private rioterchoosepositionservice(entity) {
     }
     if (forcedgoal) {
         /#
-            assert(isdefined(var_1f2328d0.goalpos));
+            assert(isdefined(goalinfo.goalpos));
         #/
-        entity function_a57c34b7(var_1f2328d0.goalpos);
+        entity function_a57c34b7(goalinfo.goalpos);
         aiutility::setnextfindbestcovertime(entity, undefined);
         return 1;
     }
@@ -302,8 +302,8 @@ function private civilianwanderservice(entity) {
     if (function_ebea502e(entity)) {
         return 0;
     }
-    var_1f2328d0 = entity function_4794d6a3();
-    forcedgoal = isdefined(var_1f2328d0.goalforced) && var_1f2328d0.goalforced;
+    goalinfo = entity function_4794d6a3();
+    forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
     isatscriptgoal = entity isatgoal() || entity isapproachinggoal();
     itsbeenawhile = gettime() > entity.nextfindbestcovertime;
     var_1ebff8de = itsbeenawhile || !isatscriptgoal;
@@ -312,9 +312,9 @@ function private civilianwanderservice(entity) {
     }
     if (forcedgoal) {
         /#
-            assert(isdefined(var_1f2328d0.goalpos));
+            assert(isdefined(goalinfo.goalpos));
         #/
-        entity function_a57c34b7(var_1f2328d0.goalpos);
+        entity function_a57c34b7(goalinfo.goalpos);
         aiutility::setnextfindbestcovertime(entity, undefined);
         return 1;
     }
@@ -361,9 +361,9 @@ function private civilianfollowservice(entity) {
     if (function_ebea502e(entity)) {
         return 0;
     }
-    var_1f2328d0 = entity function_4794d6a3();
+    goalinfo = entity function_4794d6a3();
     distsq = isdefined(entity.overridegoalpos) ? distancesquared(entity.overridegoalpos, followent.origin) : -1;
-    forcedgoal = isdefined(var_1f2328d0.goalforced) && var_1f2328d0.goalforced;
+    forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
     isatscriptgoal = entity isatgoal() || entity isapproachinggoal();
     itsbeenawhile = gettime() > entity.nextfindbestcovertime;
     var_1ebff8de = itsbeenawhile || !isatscriptgoal || distsq < 0 || distsq > followradiussq;

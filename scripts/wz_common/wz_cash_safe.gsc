@@ -215,9 +215,9 @@ function private function_7c5a1e82(activator, stateindex, var_9bdcfcd8) {
     var_22aec194 = activator function_2cef7d98();
     if (isdefined(var_22aec194)) {
         scoreamount = var_22aec194.var_a6762160.amount;
-        var_3e67196f = var_22aec194.count;
-        activator item_inventory::use_inventory_item(var_22aec194.var_bd027dd9, 1);
-        if (var_22aec194.count < var_3e67196f) {
+        initialcount = var_22aec194.count;
+        activator item_inventory::use_inventory_item(var_22aec194.networkid, 1);
+        if (var_22aec194.count < initialcount) {
             [[ level._setteamscore ]](activator.team, [[ level._getteamscore ]](activator.team) + scoreamount);
             playsoundatposition(#"hash_2b58f77dbea4ade1", self.origin);
             globallogic_score::function_889ed975(activator, scoreamount, 0, 0);

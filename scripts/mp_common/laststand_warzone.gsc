@@ -1553,13 +1553,13 @@ function function_ecdd4b27(attacker) {
         return;
     }
     self.var_45b88627 = gettime();
-    var_b53a7363 = 0;
+    attackerxuid = 0;
     friendlyfire = 0;
     if (isdefined(attacker) && isplayer(attacker)) {
-        var_b53a7363 = attacker getxuid(1);
+        attackerxuid = attacker getxuid(1);
         friendlyfire = self util::function_4ded36e3(attacker);
     }
-    self.var_d75a6ff5 = {#var_35b89428:0, #var_d733f8d7:0, #var_d10f3b9a:0, #bleed_out:0, #death:0, #damage:0, #end_time:0, #start_time:function_f8d53445(), #victim_pos_z:self.origin[2], #victim_pos_y:self.origin[1], #victim_pos_x:self.origin[0], #friendly_fire:friendlyfire, #var_19ead858:int(var_b53a7363), #player_xuid:int(self getxuid(1))};
+    self.var_d75a6ff5 = {#var_35b89428:0, #var_d733f8d7:0, #var_d10f3b9a:0, #bleed_out:0, #death:0, #damage:0, #end_time:0, #start_time:function_f8d53445(), #victim_pos_z:self.origin[2], #victim_pos_y:self.origin[1], #victim_pos_x:self.origin[0], #friendly_fire:friendlyfire, #attacker_xuid:int(attackerxuid), #player_xuid:int(self getxuid(1))};
 }
 
 // Namespace laststand_warzone/laststand_warzone

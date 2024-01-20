@@ -11,7 +11,7 @@
     "name": "zblueprint_zod_tricannon_upgrade",
     "displayname": "Distillation Kit",
     "var_46309255": "persistent_buy",
-    "var_f4a82731": 3,
+    "componentcount": 3,
     "var_c028dcfe": 1,
     "var_318c150c": "section_quests"
 }

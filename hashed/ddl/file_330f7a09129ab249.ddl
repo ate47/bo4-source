@@ -30,7 +30,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 16384
                 },
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -150,7 +150,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -158,7 +158,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -230,7 +230,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 248,
                     "bitSize": 1,
@@ -262,7 +262,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 252,
                     "bitSize": 4,
@@ -370,7 +370,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -378,7 +378,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -442,7 +442,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 224,
                     "bitSize": 1,
@@ -490,7 +490,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 230,
                     "bitSize": 2,
@@ -532,7 +532,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 16384
                 },
@@ -545,7 +545,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -652,7 +652,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -660,7 +660,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -732,7 +732,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 248,
                     "bitSize": 1,
@@ -764,7 +764,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 252,
                     "bitSize": 4,
@@ -872,7 +872,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -880,7 +880,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -944,7 +944,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 224,
                     "bitSize": 1,
@@ -992,7 +992,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 230,
                     "bitSize": 2,
@@ -1034,7 +1034,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 16384
                 },
@@ -1047,7 +1047,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -1154,7 +1154,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -1162,7 +1162,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -1234,7 +1234,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 248,
                     "bitSize": 1,
@@ -1266,7 +1266,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 252,
                     "bitSize": 4,
@@ -1374,7 +1374,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -1382,7 +1382,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -1446,7 +1446,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 224,
                     "bitSize": 1,
@@ -1494,7 +1494,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 230,
                     "bitSize": 2,
@@ -1536,7 +1536,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 16384
                 },
@@ -1549,7 +1549,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -1656,7 +1656,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -1664,7 +1664,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -1736,7 +1736,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 248,
                     "bitSize": 1,
@@ -1768,7 +1768,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 252,
                     "bitSize": 4,
@@ -1876,7 +1876,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -1884,7 +1884,7 @@
                     "maxIntValue": 4095
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -1948,7 +1948,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 224,
                     "bitSize": 1,
@@ -1996,7 +1996,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 230,
                     "bitSize": 2,
@@ -2038,7 +2038,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 16384
                 },
@@ -2051,7 +2051,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -2158,7 +2158,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -2166,7 +2166,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -2238,7 +2238,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 248,
                     "bitSize": 1,
@@ -2262,7 +2262,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 251,
                     "bitSize": 5,
@@ -2370,7 +2370,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -2378,7 +2378,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -2442,7 +2442,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 224,
                     "bitSize": 1,
@@ -2482,7 +2482,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 229,
                     "bitSize": 3,
@@ -2524,7 +2524,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 16384
                 },
@@ -2537,7 +2537,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -2644,7 +2644,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -2652,7 +2652,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -2724,7 +2724,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 248,
                     "bitSize": 1,
@@ -2748,7 +2748,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 251,
                     "bitSize": 5,
@@ -2856,7 +2856,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -2864,7 +2864,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -2928,7 +2928,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 224,
                     "bitSize": 1,
@@ -2968,7 +2968,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 229,
                     "bitSize": 3,
@@ -3010,7 +3010,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 15872
                 },
@@ -3023,7 +3023,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -3122,7 +3122,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -3130,7 +3130,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -3202,7 +3202,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 240,
                     "bitSize": 1,
@@ -3226,7 +3226,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 243,
                     "bitSize": 5,
@@ -3326,7 +3326,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -3334,7 +3334,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -3398,7 +3398,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 216,
                     "bitSize": 1,
@@ -3438,7 +3438,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 221,
                     "bitSize": 3,
@@ -3480,7 +3480,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 15360
                 },
@@ -3493,7 +3493,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -3592,7 +3592,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -3600,7 +3600,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -3672,7 +3672,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 232,
                     "bitSize": 1,
@@ -3696,7 +3696,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 236,
                     "bitSize": 4,
@@ -3796,7 +3796,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -3804,7 +3804,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -3868,7 +3868,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 208,
                     "bitSize": 1,
@@ -3908,7 +3908,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 214,
                     "bitSize": 2,
@@ -3950,7 +3950,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 15360
                 },
@@ -3963,7 +3963,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -4062,7 +4062,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -4070,7 +4070,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -4142,7 +4142,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 232,
                     "bitSize": 1,
@@ -4166,7 +4166,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 236,
                     "bitSize": 4,
@@ -4266,7 +4266,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -4274,7 +4274,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -4338,7 +4338,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 208,
                     "bitSize": 1,
@@ -4378,7 +4378,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 214,
                     "bitSize": 2,
@@ -4420,7 +4420,7 @@
             "members": [
                 {
                     "name": "#layer",
-                    "type": "struct#hash_34254e6153a46174[64]",
+                    "type": "struct#emblemlayer[64]",
                     "offset": 0,
                     "bitSize": 15360
                 },
@@ -4433,7 +4433,7 @@
             ]
         },
         {
-            "name": "#hash_34254e6153a46174",
+            "name": "#emblemlayer",
             "members": [
                 {
                     "name": "#icon",
@@ -4532,7 +4532,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -4540,7 +4540,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 48,
                     "bitSize": 16,
@@ -4612,7 +4612,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 232,
                     "bitSize": 1,
@@ -4636,7 +4636,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 236,
                     "bitSize": 4,
@@ -4736,7 +4736,7 @@
                     "maxIntValue": 511
                 },
                 {
-                    "name": "#hash_c2fdd0da89578e3",
+                    "name": "#posx",
                     "type": "uint",
                     "offset": 16,
                     "bitSize": 16,
@@ -4744,7 +4744,7 @@
                     "maxIntValue": 1024
                 },
                 {
-                    "name": "#hash_c2fdc0da8957730",
+                    "name": "#posy",
                     "type": "uint",
                     "offset": 32,
                     "bitSize": 16,
@@ -4808,7 +4808,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_55d7cd7908753e46",
+                    "name": "#flip",
                     "type": "uint",
                     "offset": 208,
                     "bitSize": 1,
@@ -4848,7 +4848,7 @@
                     "maxIntValue": 1
                 },
                 {
-                    "name": "#hash_46abccf6acdcd394",
+                    "name": "#__pad",
                     "type": "pad",
                     "offset": 214,
                     "bitSize": 2,

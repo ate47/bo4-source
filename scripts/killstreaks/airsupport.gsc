@@ -494,11 +494,11 @@ function gethelipath(start, goal) {
 // Size: 0xa4
 function function_a43d04ef(goalorigin) {
     self endon(#"death", #"hash_41aaa8d75d168e0a");
-    var_9fbf3012 = 40000;
+    distthresholdsq = 40000;
     wait(20);
     while (1) {
         distsq = distancesquared(self.origin, goalorigin);
-        if (distsq <= var_9fbf3012) {
+        if (distsq <= distthresholdsq) {
             self notify(#"fallback_goal");
             break;
         }
@@ -512,13 +512,13 @@ function function_a43d04ef(goalorigin) {
 // Size: 0xbc
 function function_fabf8bc5(goalorigin) {
     self endon(#"death", #"hash_41aaa8d75d168e0a");
-    var_9fbf3012 = 10000;
+    distthresholdsq = 10000;
     if (isdefined(self.var_f766e12d)) {
-        var_9fbf3012 = self.var_f766e12d * self.var_f766e12d;
+        distthresholdsq = self.var_f766e12d * self.var_f766e12d;
     }
     while (1) {
         distsq = distancesquared(self.origin, goalorigin);
-        if (distsq <= var_9fbf3012) {
+        if (distsq <= distthresholdsq) {
             self notify(#"fallback_goal");
             break;
         }
@@ -1400,9 +1400,9 @@ function function_deb91ef4() {
                     return;
                 }
             }
-            var_65072254 = function_cc3ada06(objid);
-            if (isdefined(var_65072254)) {
-                self notify(#"confirm_location", {#yaw:0, #position:var_65072254});
+            objpos = function_cc3ada06(objid);
+            if (isdefined(objpos)) {
+                self notify(#"confirm_location", {#yaw:0, #position:objpos});
                 return;
             }
         }

@@ -356,8 +356,8 @@ function private _setgoalpoint(bot, point, likelyenemyposition) {
     if (isdefined(bot) && isalive(bot) && isvec(point) && bot bot::function_343d7ef4()) {
         if (bot isinvehicle()) {
             vehicle = bot getvehicleoccupied();
-            var_538f88eb = vehicle getoccupantseat(bot);
-            if (var_538f88eb == 0) {
+            seatnum = vehicle getoccupantseat(bot);
+            if (seatnum == 0) {
                 vehicle setgoal(point);
             }
         } else {
@@ -1184,8 +1184,8 @@ function private function_942e45dc(planner, params) {
         if (!isalive(bot) || !strategiccommandutility::isvalidbot(bot) || !isdefined(bot.var_aeb3e046) || !bot.var_aeb3e046.size > 0 || bot bot_chain::function_58b429fb()) {
             continue;
         }
-        var_1f2328d0 = bot function_4794d6a3();
-        if (var_1f2328d0.goalforced) {
+        goalinfo = bot function_4794d6a3();
+        if (goalinfo.goalforced) {
             continue;
         }
         crumb = bot.var_aeb3e046[0];

@@ -34,8 +34,8 @@ function autoexec __init__() {
 function function_2eb2c17c(origin, item) {
     traceoffset = vectorscale((0, 0, 1), 4);
     var_5d97fed1 = item.hidetime === -1;
-    var_8e2d9611 = item.origin + traceoffset;
-    var_b0fbfe59 = bullettrace(origin, var_8e2d9611, 0, self, 0);
+    offsetposition = item.origin + traceoffset;
+    var_b0fbfe59 = bullettrace(origin, offsetposition, 0, self, 0);
     if (var_b0fbfe59[#"fraction"] < 1 && var_b0fbfe59[#"entity"] !== item) {
         if (var_5d97fed1) {
             var_acdfe076 = isdefined(var_b0fbfe59[#"dynent"]) && distance2dsquared(var_b0fbfe59[#"dynent"].origin, item.origin) <= 12 * 12;
@@ -44,7 +44,7 @@ function function_2eb2c17c(origin, item) {
                 return 0;
             }
         } else {
-            var_5408bd2a = physicstraceex(origin, var_8e2d9611, (0, 0, 0), (0, 0, 0), self, 1);
+            var_5408bd2a = physicstraceex(origin, offsetposition, (0, 0, 0), (0, 0, 0), self, 1);
             if (var_5408bd2a[#"fraction"] >= 1) {
                 return 1;
             }
@@ -181,18 +181,18 @@ function function_45efe0ab(var_a6762160) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x3f3e077e, Offset: 0xcd8
 // Size: 0x148
-function function_808be9a3(player, var_bd027dd9) {
+function function_808be9a3(player, networkid) {
     /#
         assert(player isplayer());
     #/
     /#
-        assert(var_bd027dd9 >= level.var_b52c46a6 && var_bd027dd9 <= level.var_c1fb34bd);
+        assert(networkid >= level.var_b52c46a6 && networkid <= level.var_c1fb34bd);
     #/
     entnum = player getentitynumber();
     /#
         assert(entnum < 115);
     #/
-    slotid = var_bd027dd9 - level.var_b52c46a6 - entnum * (16 + 1 + 6 + 1 + 6 + 1);
+    slotid = networkid - level.var_b52c46a6 - entnum * (16 + 1 + 6 + 1 + 6 + 1);
     /#
         assert(slotid >= 0 && slotid < 16 + 1 + 6 + 1 + 6 + 1);
     #/
@@ -203,9 +203,9 @@ function function_808be9a3(player, var_bd027dd9) {
 // Params 1, eflags: 0x0
 // Checksum 0xdb4d289a, Offset: 0xe28
 // Size: 0x36
-function function_c094ccd3(var_bd027dd9) {
-    if (function_da09de95(var_bd027dd9)) {
-        return (var_bd027dd9 - level.var_afaaa0ee);
+function function_c094ccd3(networkid) {
+    if (function_da09de95(networkid)) {
+        return (networkid - level.var_afaaa0ee);
     }
 }
 
@@ -230,11 +230,11 @@ function function_1f0def85(item) {
         return item.id;
     }
     entnum = item getentitynumber();
-    var_bd027dd9 = entnum + level.var_afaaa0ee;
+    networkid = entnum + level.var_afaaa0ee;
     /#
-        assert(var_bd027dd9 >= level.var_afaaa0ee && var_bd027dd9 <= level.var_7d942c18);
+        assert(networkid >= level.var_afaaa0ee && networkid <= level.var_7d942c18);
     #/
-    return var_bd027dd9;
+    return networkid;
 }
 
 // Namespace item_world_util/item_world_util
@@ -259,11 +259,11 @@ function function_970b8d86(player, slotid, var_259f58f3 = undefined) {
         assert(entnum < 115);
     #/
     var_f5e3c230 = entnum * (16 + 1 + 6 + 1 + 6 + 1) + slotid;
-    var_bd027dd9 = var_f5e3c230 + level.var_b52c46a6;
+    networkid = var_f5e3c230 + level.var_b52c46a6;
     /#
-        assert(var_bd027dd9 >= level.var_b52c46a6 && var_bd027dd9 <= level.var_c1fb34bd);
+        assert(networkid >= level.var_b52c46a6 && networkid <= level.var_c1fb34bd);
     #/
-    return var_bd027dd9;
+    return networkid;
 }
 
 // Namespace item_world_util/item_world_util
@@ -430,7 +430,7 @@ function function_4cbb6617(inventory, itemtype, var_da328e7b, var_bcc2655a) {
 // Checksum 0x6223ea0d, Offset: 0x1998
 // Size: 0x36
 function function_f73bc33(item) {
-    return isdefined(item.var_bd027dd9) ? item.var_bd027dd9 : item.id;
+    return isdefined(item.networkid) ? item.networkid : item.id;
 }
 
 // Namespace item_world_util/item_world_util
@@ -446,10 +446,10 @@ function get_itemtype(var_a6762160) {
 // Checksum 0x6c981848, Offset: 0x1a30
 // Size: 0xf6
 function function_31f5aa51(item) {
-    if (!isdefined(item) || !isdefined(item.targetname) && !isdefined(item.var_67169c0b)) {
+    if (!isdefined(item) || !isdefined(item.targetname) && !isdefined(item.targetnamehash)) {
         return;
     }
-    targetname = isdefined(item.targetname) ? item.targetname : item.var_67169c0b;
+    targetname = isdefined(item.targetname) ? item.targetname : item.targetnamehash;
     stashes = level.var_93d08989[targetname];
     if (!isdefined(stashes) || stashes.size <= 0) {
         return;

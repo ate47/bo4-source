@@ -13,7 +13,7 @@
                     "bitSize": 1024
                 },
                 {
-                    "name": "#hash_6b49e58e2f66ade",
+                    "name": "#messagexuid",
                     "type": "uint64",
                     "offset": 2048,
                     "bitSize": 64,

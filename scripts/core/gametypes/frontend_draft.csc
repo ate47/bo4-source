@@ -102,12 +102,12 @@ function function_f701ad2a() {
 // Size: 0x124
 function function_8be87802(localclientnum, character) {
     var_2d0192e5 = [[ character ]]->function_82e05d64();
-    if (!(isdefined(var_2d0192e5) && isdefined(var_2d0192e5.var_90ba8f6f))) {
+    if (!(isdefined(var_2d0192e5) && isdefined(var_2d0192e5.entnummodel))) {
         return;
     }
     var_c2ab6c5b = function_f701ad2a();
     if (var_2d0192e5.var_3f0e790b === var_c2ab6c5b) {
-        setuimodelvalue(var_2d0192e5.var_90ba8f6f, [[ character ]]->function_47cb6b19());
+        setuimodelvalue(var_2d0192e5.entnummodel, [[ character ]]->function_47cb6b19());
     }
     if (isdefined(var_2d0192e5.var_3f0e790b) && isdefined(var_c2ab6c5b) && var_2d0192e5.var_3f0e790b != var_c2ab6c5b) {
         character_customization::function_bee62aa1(character);
@@ -125,12 +125,12 @@ function function_e1f85a64(var_87c045d1, index, var_3f0e790b) {
     if (!isdefined(var_c4caf9dd)) {
         return;
     }
-    [[ var_87c045d1 ]]->function_82e05d64().var_90ba8f6f = createuimodel(var_c4caf9dd, "entNum");
+    [[ var_87c045d1 ]]->function_82e05d64().entnummodel = createuimodel(var_c4caf9dd, "entNum");
     [[ var_87c045d1 ]]->function_82e05d64().var_3f0e790b = var_3f0e790b;
     [[ var_87c045d1 ]]->function_184a4d2e(&function_8be87802);
-    entnum = getuimodelvalue([[ var_87c045d1 ]]->function_82e05d64().var_90ba8f6f);
+    entnum = getuimodelvalue([[ var_87c045d1 ]]->function_82e05d64().entnummodel);
     if (!isdefined(entnum)) {
-        setuimodelvalue([[ var_87c045d1 ]]->function_82e05d64().var_90ba8f6f, [[ var_87c045d1 ]]->function_47cb6b19());
+        setuimodelvalue([[ var_87c045d1 ]]->function_82e05d64().entnummodel, [[ var_87c045d1 ]]->function_47cb6b19());
     }
     [[ var_87c045d1 ]]->function_82e05d64().visible_model = getuimodel(var_c4caf9dd, "visible");
     setuimodelvalue([[ var_87c045d1 ]]->function_82e05d64().visible_model, [[ var_87c045d1 ]]->function_ea4ac9f8() && [[ var_87c045d1 ]]->is_visible());
@@ -527,7 +527,7 @@ function function_393e6d42() {
             foreach (var_d0b01271 in level.draftcharacters) {
                 var_2d0192e5 = [[ var_d0b01271 ]]->function_82e05d64();
                 if (isdefined(var_2d0192e5) && isdefined(var_2d0192e5.xuid)) {
-                    xuid = function_baf6cb99(var_2d0192e5.xuid);
+                    xuid = xuidtostring(var_2d0192e5.xuid);
                     if (xuid === waitresult.xuid) {
                         if (waitresult.gesture_index == -1) {
                             var_d0b01271 notify(#"cancel_gesture");

@@ -741,10 +741,10 @@ function drop_inventory(player) {
     deathstash.targetname = targetname;
     deathstash.var_bad13452 = 0;
     deathstash.var_a76e4941 = 1;
-    var_beee4134 = deathstash function_a938fba7(player, player.origin, player.angles, undefined, 1);
+    inphysics = deathstash function_a938fba7(player, player.origin, player.angles, undefined, 1);
     level.var_8ac64bf3[level.var_8ac64bf3.size] = deathstash;
     deathstashitems = 0;
-    if (!var_beee4134) {
+    if (!inphysics) {
         deathstash.stationary = 1;
     }
     foreach (inventoryitem in player.inventory.items) {
@@ -825,7 +825,7 @@ function drop_inventory(player) {
     waitframe(1);
     function_44a6883c(drop_item_id, drop_items, drop_count, drop_amount, 1, 1);
     if (deathstashitems <= 0 && drop_item_id.size <= 0) {
-        if (var_beee4134) {
+        if (inphysics) {
             deathstash waittill(#"stationary");
         }
         deathstash.stationary = 1;
@@ -943,7 +943,7 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
     dropitem.angles = angles;
     dropitem.attachments = attachments;
     dropitem.var_627c698b = weapon;
-    dropitem.var_67169c0b = targetname;
+    dropitem.targetnamehash = targetname;
     dropitem.deathstash = deathstash;
     dropitem.id = function_4ba8fde(item.var_a6762160.name).id;
     dropitem.weaponoptions = weaponoptions;
@@ -952,10 +952,10 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
     /#
         assert(dropitem.id < 1024);
     #/
-    dropitem.var_bd027dd9 = item_world_util::function_1f0def85(dropitem);
+    dropitem.networkid = item_world_util::function_1f0def85(dropitem);
     dropitem.var_a6762160 = item.var_a6762160;
     if (item.var_a6762160.name == #"sig_blade_wz_item" && isdefined(level.var_5b2a8d88)) {
-        level.var_5b2a8d88[dropitem.var_bd027dd9] = 1;
+        level.var_5b2a8d88[dropitem.networkid] = 1;
     }
     if (stashitem) {
         dropitem clientfield::set("dynamic_item_drop", 5);
@@ -1009,10 +1009,10 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
         }
     }
     arrayremovevalue(level.item_spawn_drops, undefined, 1);
-    if (isdefined(level.item_spawn_drops[dropitem.var_bd027dd9])) {
-        level.item_spawn_drops[dropitem.var_bd027dd9] delete();
+    if (isdefined(level.item_spawn_drops[dropitem.networkid])) {
+        level.item_spawn_drops[dropitem.networkid] delete();
     }
-    level.item_spawn_drops[dropitem.var_bd027dd9] = dropitem;
+    level.item_spawn_drops[dropitem.networkid] = dropitem;
     level.var_18dc9d17[level.var_18dc9d17.size] = dropitem;
     return dropitem;
 }
@@ -1057,9 +1057,9 @@ function function_4da960f6(origin, radius, time) {
 // Checksum 0xb3f625b0, Offset: 0x4d48
 // Size: 0x8c
 function function_ba4c90d9(item) {
-    if (isdefined(item) && isdefined(item.var_bd027dd9) && isdefined(level.item_spawn_drops[item.var_bd027dd9])) {
+    if (isdefined(item) && isdefined(item.networkid) && isdefined(level.item_spawn_drops[item.networkid])) {
         item clientfield::set("dynamic_item_drop", 0);
-        arrayremoveindex(level.item_spawn_drops, item.var_bd027dd9, 1);
+        arrayremoveindex(level.item_spawn_drops, item.networkid, 1);
     }
 }
 
@@ -1073,8 +1073,8 @@ function debug_sphere(origin, radius, color) {
             return;
         }
         sec = getdvarint(#"hash_6c3e4a7cf7546b8f", 10);
-        var_f04d2832 = int(1 / float(function_60d95f53()) / 1000);
-        sphere(origin, radius, color, 1, 0, 10, var_f04d2832 * sec);
+        framespersec = int(1 / float(function_60d95f53()) / 1000);
+        sphere(origin, radius, color, 1, 0, 10, framespersec * sec);
         recordsphere(origin, radius, color, "<unknown string>");
     #/
 }
@@ -1089,8 +1089,8 @@ function debug_line(start, end, color) {
             return;
         }
         sec = getdvarint(#"hash_6c3e4a7cf7546b8f", 10);
-        var_f04d2832 = int(1 / float(function_60d95f53()) / 1000);
-        line(start, end, color, 1, 0, var_f04d2832 * sec);
+        framespersec = int(1 / float(function_60d95f53()) / 1000);
+        line(start, end, color, 1, 0, framespersec * sec);
         recordline(start, end, color, "<unknown string>");
     #/
 }

@@ -17,7 +17,7 @@
     "name": "pc_music_volume",
     "displayname": "#hash_1a83fb214f7d2081",
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "snd_menu_music",
     "var_d4e288e": 1,

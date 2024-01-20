@@ -351,7 +351,7 @@ function function_dc380897() {
     self.vessel show();
     self.vessel playsound("zmb_vessel_drop");
     self.vessel clientfield::set("" + #"hash_1b72c208f2964e24", level.var_ed1e7d4d);
-    self.vessel.var_b5dea2fc = self.vessel.origin;
+    self.vessel.return_loc = self.vessel.origin;
     self.vessel playsound(#"hash_8655fa14e357e9a");
     self.vessel playloopsound(#"hash_3c00e3a927df9b2e");
     var_deb6871b = struct::get(self.vessel.target, "targetname");
@@ -396,7 +396,7 @@ function function_dc380897() {
         wait(1);
         level notify(#"hash_39b6629ce957cce9");
         self.vessel clientfield::set("" + #"hash_1b72c208f2964e24", level.var_ed1e7d4d);
-        self.vessel moveto(self.vessel.var_b5dea2fc, 0.5);
+        self.vessel moveto(self.vessel.return_loc, 0.5);
         self.vessel playsound(#"hash_1ae6116ea0aa080f");
         self.vessel stoploopsound();
         wait(0.5);

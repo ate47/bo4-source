@@ -78,7 +78,7 @@ class crevive_hud : cluielem {
     // Params 4, eflags: 0x0
     // Checksum 0x218c541, Offset: 0x2a8
     // Size: 0xb4
-    function setup_clientfields(uid, var_f5852d69, var_c05c67e2, var_415094af) {
+    function setup_clientfields(uid, textcallback, var_c05c67e2, var_415094af) {
         cluielem::setup_clientfields(uid);
         cluielem::function_dcb34c80("string", "text", 1);
         cluielem::add_clientfield("clientNum", 1, 6, "int", var_c05c67e2);
@@ -91,9 +91,9 @@ class crevive_hud : cluielem {
 // Params 4, eflags: 0x0
 // Checksum 0xf79b02de, Offset: 0xc8
 // Size: 0x64
-function register(uid, var_f5852d69, var_c05c67e2, var_415094af) {
+function register(uid, textcallback, var_c05c67e2, var_415094af) {
     elem = new crevive_hud();
-    [[ elem ]]->setup_clientfields(uid, var_f5852d69, var_c05c67e2, var_415094af);
+    [[ elem ]]->setup_clientfields(uid, textcallback, var_c05c67e2, var_415094af);
     return elem;
 }
 

@@ -292,7 +292,7 @@ function function_9b9525e9() {
     level thread ct_utils::function_49e0c5bc(1);
     e_player ct_utils::function_c2a10fc();
     e_player ct_vo::function_831e0584(array("vox_tvoi_tutor_torq_end_0", "vox_tvoi_tutor_torq_end_1"));
-    ct_utils::function_9f8be64a();
+    ct_utils::onboarding_complete();
 }
 
 // Namespace ct_torque_tutorial/ct_torque_tutorial

@@ -97,10 +97,10 @@ class czm_towers_challenges_hud : cluielem {
     // Params 4, eflags: 0x0
     // Checksum 0x23e26286, Offset: 0x2f0
     // Size: 0xdc
-    function setup_clientfields(uid, var_afaddf7a, var_c00108aa, var_db844c2) {
+    function setup_clientfields(uid, progresscallback, var_c00108aa, var_db844c2) {
         cluielem::setup_clientfields(uid);
         cluielem::add_clientfield("_state", 1, 1, "int");
-        cluielem::add_clientfield("progress", 1, 7, "int", var_afaddf7a);
+        cluielem::add_clientfield("progress", 1, 7, "int", progresscallback);
         cluielem::function_dcb34c80("string", "challenge_text", 1);
         cluielem::add_clientfield("required_goal", 1, 7, "int", var_db844c2);
     }
@@ -111,9 +111,9 @@ class czm_towers_challenges_hud : cluielem {
 // Params 4, eflags: 0x0
 // Checksum 0xf934108c, Offset: 0xe0
 // Size: 0x64
-function register(uid, var_afaddf7a, var_c00108aa, var_db844c2) {
+function register(uid, progresscallback, var_c00108aa, var_db844c2) {
     elem = new czm_towers_challenges_hud();
-    [[ elem ]]->setup_clientfields(uid, var_afaddf7a, var_c00108aa, var_db844c2);
+    [[ elem ]]->setup_clientfields(uid, progresscallback, var_c00108aa, var_db844c2);
     return elem;
 }
 

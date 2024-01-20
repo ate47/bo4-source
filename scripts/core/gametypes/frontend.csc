@@ -416,7 +416,7 @@ function update_inspection_character(localclientnum, xuid, menu_name) {
         [[ var_d0b01271 ]]->function_27945cb8(1);
         params = {#anim_name:[[ var_d0b01271 ]]->function_8144231c()};
         [[ var_d0b01271 ]]->update(params);
-        for (var_ed7308ad = 0; !isdefined(var_23904c1d) && var_ed7308ad < 15; var_ed7308ad++) {
+        for (iterations = 0; !isdefined(var_23904c1d) && iterations < 15; iterations++) {
             wait(1);
             var_23904c1d = getcharactercustomizationforxuid(localclientnum, xuid);
         }
@@ -1169,7 +1169,7 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
         var_351da865 = getent(localclientnum, "<unknown string>", "<unknown string>");
         fx_start = struct::get(#"fx_trail_start");
         fx_end = struct::get(#"fx_trail_end");
-        foreach (type, var_3aec81f4 in types) {
+        foreach (type, type_name in types) {
             switch (type) {
             case 1:
                 level thread scene::play(#"scene_frontend_fxtrail_render");
@@ -1675,8 +1675,8 @@ function function_b0442428(var_ce754e62, var_3f0e790b) {
     if (isdefined(var_ce754e62) && isdefined(var_ce754e62[var_3f0e790b])) {
         foreach (object in var_ce754e62[var_3f0e790b]) {
             var_2d0192e5 = [[ object.character ]]->function_82e05d64();
-            if (isdefined(var_2d0192e5) && isdefined(var_2d0192e5.var_90ba8f6f)) {
-                setuimodelvalue(var_2d0192e5.var_90ba8f6f, [[ object.character ]]->function_47cb6b19());
+            if (isdefined(var_2d0192e5) && isdefined(var_2d0192e5.entnummodel)) {
+                setuimodelvalue(var_2d0192e5.entnummodel, [[ object.character ]]->function_47cb6b19());
             }
         }
     }
@@ -1690,8 +1690,8 @@ function function_f5eca51d(var_ce754e62, var_3f0e790b) {
     if (isdefined(var_ce754e62) && isdefined(var_ce754e62[var_3f0e790b])) {
         foreach (object in var_ce754e62[var_3f0e790b]) {
             var_2d0192e5 = [[ object.character ]]->function_82e05d64();
-            if (isdefined(var_2d0192e5) && isdefined(var_2d0192e5.var_90ba8f6f)) {
-                setuimodelvalue(var_2d0192e5.var_90ba8f6f, -1);
+            if (isdefined(var_2d0192e5) && isdefined(var_2d0192e5.entnummodel)) {
+                setuimodelvalue(var_2d0192e5.entnummodel, -1);
             }
         }
     }
@@ -1723,17 +1723,17 @@ function function_f00765ad(localclientnum, xuid, var_87c045d1, index, var_3f0e79
     level endon(#"lobby_change");
     session_mode = 1;
     force_update = 0;
-    var_ed7308ad = 0;
+    iterations = 0;
     var_a65df30 = [[ var_87c045d1 ]]->function_e599283f();
     current_index = [[ var_87c045d1 ]]->function_9004475c();
     [[ var_87c045d1 ]]->show_model();
     [[ var_87c045d1 ]]->set_xuid(xuid);
     [[ var_87c045d1 ]]->set_character_mode(session_mode);
     var_23904c1d = getcharactercustomizationforxuid(localclientnum, xuid);
-    while (!isdefined(var_23904c1d) && var_ed7308ad < 15) {
+    while (!isdefined(var_23904c1d) && iterations < 15) {
         wait(1);
         var_23904c1d = getcharactercustomizationforxuid(localclientnum, xuid);
-        var_ed7308ad++;
+        iterations++;
     }
     if (isdefined(var_23904c1d) && var_23904c1d.charactermode == currentsessionmode() && function_b9f8bbd9(var_23904c1d.charactertype, var_23904c1d.charactermode)) {
         var_4865db3b = var_23904c1d.charactertype;

@@ -1856,8 +1856,8 @@ function function_e8c496dd(var_d479261a) {
     var_314051a1 = getscriptbundle(#"t8_callings_settings");
     if (isdefined(var_314051a1.dailyschedule) && isdefined(var_314051a1.dailyschedule[var_d479261a])) {
         task = var_314051a1.dailyschedule[var_d479261a];
-        var_e199fb8a = getscriptbundle(task.task);
-        if (isdefined(var_e199fb8a.callingtask)) {
+        taskinfo = getscriptbundle(task.task);
+        if (isdefined(taskinfo.callingtask)) {
             var_341c004b = undefined;
             for (i = 0; i < var_314051a1.tasklist.size; i++) {
                 if (var_314051a1.tasklist[i].task == task.task) {
@@ -1866,7 +1866,7 @@ function function_e8c496dd(var_d479261a) {
                 }
             }
             if (isdefined(var_341c004b)) {
-                level.s_daily_calling_task = {#var_de86e878:var_341c004b, #n_xp:task.xp, #var_ad971622:var_e199fb8a.callingtask, #var_e226ec4f:var_e199fb8a.dailytarget};
+                level.s_daily_calling_task = {#var_de86e878:var_341c004b, #n_xp:task.xp, #var_ad971622:taskinfo.callingtask, #var_e226ec4f:taskinfo.dailytarget};
             }
         }
     }

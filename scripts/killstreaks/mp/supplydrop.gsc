@@ -709,9 +709,9 @@ function function_200081db(owner, context, location) {
     }
     bundle = struct::get_script_bundle("killstreak", "killstreak_supply_drop");
     killstreak = killstreaks::get_killstreak_for_weapon(bundle.ksweapon);
-    context.var_ea9c2360 = location;
+    context.selectedlocation = location;
     context.killstreak_id = killstreak_id;
-    self thread helidelivercrate(context.var_ea9c2360, bundle.ksweapon, self, team, killstreak_id, killstreak_id, context);
+    self thread helidelivercrate(context.selectedlocation, bundle.ksweapon, self, team, killstreak_id, killstreak_id, context);
     self addweaponstat(bundle.ksweapon, #"used", 1);
 }
 
@@ -784,7 +784,7 @@ function supplydropwatcher(package_contents_id, trigger_event, supplydropweapon,
                 if (isdefined(context.validlocationsound)) {
                     player playsoundtoplayer(context.validlocationsound, player);
                 }
-                self thread helidelivercrate(context.var_ea9c2360, weapon, self, team, killstreak_id, package_contents_id, context);
+                self thread helidelivercrate(context.selectedlocation, weapon, self, team, killstreak_id, package_contents_id, context);
             } else {
                 self thread dosupplydrop(weapon_instance, weapon, self, killstreak_id, package_contents_id);
                 weapon_instance thread do_supply_drop_detonation(weapon, self);

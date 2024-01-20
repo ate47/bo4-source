@@ -1,5 +1,5 @@
 {
-    "name": "#hash_37f691b323eae620",
+    "name": "#gamedata/ddl/generated/message.ddl",
     "version": 1,
     "metatable": "#hash_c570ec8c012e64f8",
     "structs": [

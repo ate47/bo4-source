@@ -17,7 +17,7 @@
     "name": "pc_master_volume",
     "displayname": "#hash_52c400dad31609c0",
     "var_d6897f56": 1,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "snd_menu_master",
     "var_d4e288e": 1,

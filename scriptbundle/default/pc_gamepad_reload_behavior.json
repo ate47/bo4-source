@@ -10,7 +10,7 @@
     "name": "pc_gamepad_reload_behavior",
     "displayname": "#hash_5d4618b0110c8110",
     "rangestartvalue": 0.01,
-    "var_926d1be9": 0.01,
+    "decimalplace": 0.01,
     "var_66faec87": 4,
     "statname": "warzoneReloadOnPress",
     "var_82c732a7": 1,
