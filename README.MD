@@ -21,7 +21,7 @@ Pools dumped:
 | customizationtable| 30  | `/tables/customization/` |
 | rawfile           | 41  | `/`                      |
 | stringtable       | 43  | `/`                      |
-| ddl\*             | 46  | `/`                      |
+| ddl               | 46  | `/`                      |
 | scriptparsetree   | 48  | `/`                      |
 | scriptbundle      | 63  | `/scriptbundle/`         |
 | bgcache           | 85  | `/bgcache/`              |
@@ -30,5 +30,3 @@ Pools dumped:
 | gametypetable     | 113 | `/tables/gametype/`      |
 | playlists         | 119 | `/tables/playlists/`     |
 | rawstring         | 157 | `strings.csv`            |
-
-\* I didn't find any name for the DDLs yet, look at the hashed/ddl directory.
