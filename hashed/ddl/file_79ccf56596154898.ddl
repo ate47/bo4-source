@@ -1,153 +1,31 @@
-{
-    "name": "#hash_79ccf56596154898",
-    "version": 2,
-    "metatable": "#hash_89d815d28d87d17a",
-    "structs": [
-        {
-            "name": "#root",
-            "members": [
-                {
-                    "name": "#emblem",
-                    "type": "struct#emblem",
-                    "offset": 0,
-                    "bitSize": 4624
-                }
-            ]
-        },
-        {
-            "name": "#emblem",
-            "members": [
-                {
-                    "name": "#layer",
-                    "type": "struct#emblemlayer[32]",
-                    "offset": 0,
-                    "bitSize": 4608
-                },
-                {
-                    "name": "#background",
-                    "type": "uint",
-                    "offset": 4608,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                }
-            ]
-        },
-        {
-            "name": "#emblemlayer",
-            "members": [
-                {
-                    "name": "#icon",
-                    "type": "uint",
-                    "offset": 16,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#color",
-                    "type": "uint",
-                    "offset": 88,
-                    "bitSize": 8,
-                    "intSize": 7,
-                    "maxIntValue": 127
-                },
-                {
-                    "name": "#red",
-                    "type": "uint",
-                    "offset": 0,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#green",
-                    "type": "uint",
-                    "offset": 96,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#blue",
-                    "type": "uint",
-                    "offset": 8,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#alpha",
-                    "type": "uint",
-                    "offset": 64,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 255
-                },
-                {
-                    "name": "#posx",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#posy",
-                    "type": "uint",
-                    "offset": 48,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#angle",
-                    "type": "uint",
-                    "offset": 72,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#scalex",
-                    "type": "uint",
-                    "offset": 104,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#scaley",
-                    "type": "uint",
-                    "offset": 120,
-                    "bitSize": 16,
-                    "intSize": 9,
-                    "maxIntValue": 511
-                },
-                {
-                    "name": "#outline",
-                    "type": "uint",
-                    "offset": 137,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#flip",
-                    "type": "uint",
-                    "offset": 136,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#__pad",
-                    "type": "pad",
-                    "offset": 138,
-                    "bitSize": 6,
-                    "intSize": 6
-                }
-            ]
-        }
-    ]
-}
+begin "hash_79ccf56596154898";
+version 2;
+metatable "hash_89d815d28d87d17a";
+
+struct root {
+    emblem emblem;
+};
+
+struct emblem {
+    emblemlayer layer[32];
+    uint9 background;
+};
+
+struct emblemlayer {
+    uint8 red;
+    uint8 blue;
+    uint9 icon;
+    uint9 posx;
+    uint9 posy;
+    uint8 alpha;
+    uint9 angle;
+    uint7 color;
+    uint8 green;
+    uint9 scalex;
+    uint9 scaley;
+    bit flip;
+    bit outline;
+    padbit __pad[6];
+};
+
+

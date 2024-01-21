@@ -1,1040 +1,153 @@
-{
-    "name": "#hash_6f386212fa31310a",
-    "version": 14,
-    "metatable": "#hash_a41f60f37193184a",
-    "structs": [
-        {
-            "name": "#root",
-            "members": [
-                {
-                    "name": "#hash_2fe48e82bcbfe70a",
-                    "type": "int",
-                    "offset": 4024,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#pos_x",
-                    "type": "int",
-                    "offset": 2336,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#pos_y",
-                    "type": "int",
-                    "offset": 2368,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#pos_z",
-                    "type": "int",
-                    "offset": 2400,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#heading",
-                    "type": "int",
-                    "offset": 3480,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#pitch",
-                    "type": "int",
-                    "offset": 2304,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#num_players",
-                    "type": "int",
-                    "offset": 3544,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_40138199e1f36fb3",
-                    "type": "int",
-                    "offset": 3608,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#frame_us",
-                    "type": "int",
-                    "offset": 4760,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#prims",
-                    "type": "int",
-                    "offset": 2432,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#tris",
-                    "type": "int",
-                    "offset": 2048,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#prepass_prims",
-                    "type": "int",
-                    "offset": 4888,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#prepass_tris",
-                    "type": "int",
-                    "offset": 5816,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#sun_us",
-                    "type": "int",
-                    "offset": 5752,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#spot_us",
-                    "type": "int",
-                    "offset": 4440,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#lit_us",
-                    "type": "int",
-                    "offset": 5464,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#emissive_us",
-                    "type": "int",
-                    "offset": 5304,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_39386dbff2e0a33e",
-                    "type": "int",
-                    "offset": 2720,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#r_draw_lit",
-                    "type": "int",
-                    "offset": 4728,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_58213d392b486455",
-                    "type": "int",
-                    "offset": 5656,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#r_add",
-                    "type": "int",
-                    "offset": 2464,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#r_add_spot",
-                    "type": "int",
-                    "offset": 4344,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#r_sceneents",
-                    "type": "int",
-                    "offset": 3832,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#r_draw_depth",
-                    "type": "int",
-                    "offset": 5400,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#fx_draw",
-                    "type": "int",
-                    "offset": 5976,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#fx_tris",
-                    "type": "int",
-                    "offset": 6008,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#fx_prims",
-                    "type": "int",
-                    "offset": 5848,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#sun_prims",
-                    "type": "int",
-                    "offset": 4088,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#sun_tris",
-                    "type": "int",
-                    "offset": 4664,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#spot_prims",
-                    "type": "int",
-                    "offset": 3576,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#spot_tris",
-                    "type": "int",
-                    "offset": 5688,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_3eb9b2bad5a4824e",
-                    "type": "int",
-                    "offset": 2592,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_7b7cd1e6d2f4ffbb",
-                    "type": "int",
-                    "offset": 6296,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gbuffer_prims",
-                    "type": "int",
-                    "offset": 4568,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gbuffer_tris",
-                    "type": "int",
-                    "offset": 5880,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gbuffer_decal_prims",
-                    "type": "int",
-                    "offset": 6200,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gbuffer_decal_tris",
-                    "type": "int",
-                    "offset": 4312,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#oit_prims",
-                    "type": "int",
-                    "offset": 4376,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#oit_tris",
-                    "type": "int",
-                    "offset": 4408,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gpu_us",
-                    "type": "int",
-                    "offset": 5240,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#omni_us",
-                    "type": "int",
-                    "offset": 5176,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#prepass_us",
-                    "type": "int",
-                    "offset": 5208,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_1b4c57d449e4521f",
-                    "type": "int",
-                    "offset": 2848,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_4f1a9574545864a7",
-                    "type": "int",
-                    "offset": 2688,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gbuffer_us",
-                    "type": "int",
-                    "offset": 3640,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gbuffer_decal_us",
-                    "type": "int",
-                    "offset": 2880,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_6c98e0d8c2869ef1",
-                    "type": "int",
-                    "offset": 4792,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_53ce5582cb1ef0d9",
-                    "type": "int",
-                    "offset": 5560,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_71f07d4c116bd6b8",
-                    "type": "int",
-                    "offset": 2784,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_3ce5cfa8c7fb3c2b",
-                    "type": "int",
-                    "offset": 3672,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_4c6268a110003ace",
-                    "type": "int",
-                    "offset": 2752,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_6d4ff87574778d15",
-                    "type": "int",
-                    "offset": 2656,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_1ce4da326bbab5e8",
-                    "type": "int",
-                    "offset": 4536,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#deferred_us",
-                    "type": "int",
-                    "offset": 6232,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#sss_blur_us",
-                    "type": "int",
-                    "offset": 5624,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#oit_draw_us",
-                    "type": "int",
-                    "offset": 6168,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_28d2a05d88a0d700",
-                    "type": "int",
-                    "offset": 5432,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#oit_apply_us",
-                    "type": "int",
-                    "offset": 3864,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#postfx_us",
-                    "type": "int",
-                    "offset": 4056,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_2b26423944fd8c18",
-                    "type": "int",
-                    "offset": 3736,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_3d77cd928bcbf989",
-                    "type": "int",
-                    "offset": 2624,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_68ffafe7e480d3ae",
-                    "type": "int",
-                    "offset": 4632,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_633a5d0864db2db",
-                    "type": "int",
-                    "offset": 5720,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_128197788f1faf30",
-                    "type": "int",
-                    "offset": 5592,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#umbra_time",
-                    "type": "int",
-                    "offset": 5496,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#lights_vis",
-                    "type": "int",
-                    "offset": 6264,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#spot_vis",
-                    "type": "int",
-                    "offset": 4600,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_17123c8692c7160f",
-                    "type": "int",
-                    "offset": 5336,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#omni_vis",
-                    "type": "int",
-                    "offset": 3704,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_2225500989344102",
-                    "type": "int",
-                    "offset": 4504,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_3877ff2ec0c3726a",
-                    "type": "int",
-                    "offset": 3448,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_6f0f73b0e722f7f0",
-                    "type": "int",
-                    "offset": 5784,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_543c86390c71d4e5",
-                    "type": "int",
-                    "offset": 4696,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_6a9405795c69d6cb",
-                    "type": "int",
-                    "offset": 5944,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_18f81647069f3ecc",
-                    "type": "int",
-                    "offset": 5912,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_316878e795d258e6",
-                    "type": "int",
-                    "offset": 4248,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#light_cull_us",
-                    "type": "int",
-                    "offset": 6072,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_6ace4575d3599cbf",
-                    "type": "int",
-                    "offset": 3800,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#volume_us",
-                    "type": "int",
-                    "offset": 4280,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_5010b6ad6d989cb0",
-                    "type": "int",
-                    "offset": 5368,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#umbra_work",
-                    "type": "int",
-                    "offset": 5528,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_343d1f95fb411155",
-                    "type": "int",
-                    "offset": 2816,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_37c8818eff41553d",
-                    "type": "int",
-                    "offset": 3896,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_4350a21ab86316a0",
-                    "type": "int",
-                    "offset": 4920,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_6fd93d17cdb0ae1d",
-                    "type": "int",
-                    "offset": 5272,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_140eebac2db85c70",
-                    "type": "int",
-                    "offset": 2080,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_3a5c956b32dddbc2",
-                    "type": "int",
-                    "offset": 6328,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_6c151dd059c63f48",
-                    "type": "int",
-                    "offset": 5144,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#compute_sprites",
-                    "type": "int",
-                    "offset": 6136,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_58797c0cf11d0fe0",
-                    "type": "int",
-                    "offset": 4824,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_643bdb1bb050ea50",
-                    "type": "int",
-                    "offset": 4184,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_3ab6d1745e2b7e90",
-                    "type": "int",
-                    "offset": 2912,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_3dde17604d35e8f6",
-                    "type": "int",
-                    "offset": 4216,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_63a28cae4ed60f27",
-                    "type": "int",
-                    "offset": 6360,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_4d1666c58d7cded2",
-                    "type": "int",
-                    "offset": 3960,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_44c564263d01daef",
-                    "type": "int",
-                    "offset": 2560,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gbuffer_ent_prims",
-                    "type": "int",
-                    "offset": 4856,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gbuffer_ent_tris",
-                    "type": "int",
-                    "offset": 4472,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gbuffer_ent_us",
-                    "type": "int",
-                    "offset": 3928,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#note",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 2048
-                },
-                {
-                    "name": "#hash_6f63d386e78df2d9",
-                    "type": "uint",
-                    "offset": 6392,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#sonar_us",
-                    "type": "int",
-                    "offset": 3768,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#res_x",
-                    "type": "int",
-                    "offset": 2496,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#res_y",
-                    "type": "int",
-                    "offset": 2528,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_46fac4fb33c48479",
-                    "type": "int",
-                    "offset": 4120,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_7aba43e3e27f0c31",
-                    "type": "int",
-                    "offset": 4152,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_7ed0f0a69ff8404d",
-                    "type": "int",
-                    "offset": 6040,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_411d2563b3718ec7",
-                    "type": "int",
-                    "offset": 6104,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_48015bf58d08e2f8",
-                    "type": "int",
-                    "offset": 3512,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#hash_3e4ef5c97a00536",
-                    "type": "int",
-                    "offset": 3992,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#telemetry",
-                    "type": "struct#telemetry_header",
-                    "offset": 2944,
-                    "bitSize": 504
-                },
-                {
-                    "name": "#client",
-                    "type": "struct#client_header",
-                    "offset": 4952,
-                    "bitSize": 192
-                },
-                {
-                    "name": "#match",
-                    "type": "struct#match_header",
-                    "offset": 2112,
-                    "bitSize": 192
-                },
-                {
-                    "name": "#__pad",
-                    "type": "pad",
-                    "offset": 6393,
-                    "bitSize": 7,
-                    "intSize": 7
-                }
-            ]
-        },
-        {
-            "name": "#telemetry_header",
-            "members": [
-                {
-                    "name": "#hash_56a1b6d783aa7a25",
-                    "type": "uint",
-                    "offset": 408,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#action_type",
-                    "type": "float",
-                    "offset": 48,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#build_version",
-                    "type": "string",
-                    "offset": 120,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#changelist_number",
-                    "type": "int",
-                    "offset": 0,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#title_id",
-                    "type": "uint",
-                    "offset": 376,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#source_version",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 16,
-                    "maxIntValue": 65535
-                },
-                {
-                    "name": "#platform",
-                    "type": "enum#hash_54196e9e9860f0be",
-                    "offset": 112,
-                    "bitSize": 8
-                },
-                {
-                    "name": "#hash_f2ad74d8edb8204",
-                    "type": "uint64",
-                    "offset": 440,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#hash_54196e9e9860f0be",
-            "values": [
-                "#pc",
-                "#neo",
-                "#xb1",
-                "#scorpio",
-                "#ps4"
-            ]
-        },
-        {
-            "name": "#client_header",
-            "members": [
-                {
-                    "name": "#user_id",
-                    "type": "uint64",
-                    "offset": 128,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_4016bed15f9183f7",
-                    "type": "uint64",
-                    "offset": 0,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#uno_id",
-                    "type": "uint64",
-                    "offset": 64,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#match_header",
-            "members": [
-                {
-                    "name": "#lobby_id",
-                    "type": "uint64",
-                    "offset": 128,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#match_id",
-                    "type": "uint64",
-                    "offset": 0,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_c05315ddb26eb93",
-                    "type": "uint64",
-                    "offset": 64,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        }
-    ]
-}
+begin "hash_6f386212fa31310a";
+version 14;
+metatable "hash_a41f60f37193184a";
+
+struct root {
+    string note;
+    int32 tris;
+    int32 hash_140eebac2db85c70;
+    match_header match;
+    int32 pitch;
+    int32 pos_x;
+    int32 pos_y;
+    int32 pos_z;
+    int32 prims;
+    int32 r_add;
+    int32 res_x;
+    int32 res_y;
+    int32 hash_44c564263d01daef;
+    int32 hash_3eb9b2bad5a4824e;
+    int32 hash_3d77cd928bcbf989;
+    int32 hash_6d4ff87574778d15;
+    int32 hash_4f1a9574545864a7;
+    int32 hash_39386dbff2e0a33e;
+    int32 hash_4c6268a110003ace;
+    int32 hash_71f07d4c116bd6b8;
+    int32 hash_343d1f95fb411155;
+    int32 hash_1b4c57d449e4521f;
+    int32 gbuffer_decal_us;
+    int32 hash_3ab6d1745e2b7e90;
+    telemetry_header telemetry;
+    int32 hash_3877ff2ec0c3726a;
+    int32 heading;
+    int32 hash_48015bf58d08e2f8;
+    int32 num_players;
+    int32 spot_prims;
+    int32 hash_40138199e1f36fb3;
+    int32 gbuffer_us;
+    int32 hash_3ce5cfa8c7fb3c2b;
+    int32 omni_vis;
+    int32 hash_2b26423944fd8c18;
+    int32 sonar_us;
+    int32 hash_6ace4575d3599cbf;
+    int32 r_sceneents;
+    int32 oit_apply_us;
+    int32 hash_37c8818eff41553d;
+    int32 gbuffer_ent_us;
+    int32 hash_4d1666c58d7cded2;
+    int32 hash_3e4ef5c97a00536;
+    int32 hash_2fe48e82bcbfe70a;
+    int32 postfx_us;
+    int32 sun_prims;
+    int32 hash_46fac4fb33c48479;
+    int32 hash_7aba43e3e27f0c31;
+    int32 hash_643bdb1bb050ea50;
+    int32 hash_3dde17604d35e8f6;
+    int32 hash_316878e795d258e6;
+    int32 volume_us;
+    int32 gbuffer_decal_tris;
+    int32 r_add_spot;
+    int32 oit_prims;
+    int32 oit_tris;
+    int32 spot_us;
+    int32 gbuffer_ent_tris;
+    int32 hash_2225500989344102;
+    int32 hash_1ce4da326bbab5e8;
+    int32 gbuffer_prims;
+    int32 spot_vis;
+    int32 hash_68ffafe7e480d3ae;
+    int32 sun_tris;
+    int32 hash_543c86390c71d4e5;
+    int32 r_draw_lit;
+    int32 frame_us;
+    int32 hash_6c98e0d8c2869ef1;
+    int32 hash_58797c0cf11d0fe0;
+    int32 gbuffer_ent_prims;
+    int32 prepass_prims;
+    int32 hash_4350a21ab86316a0;
+    client_header client;
+    int32 hash_6c151dd059c63f48;
+    int32 omni_us;
+    int32 prepass_us;
+    int32 gpu_us;
+    int32 hash_6fd93d17cdb0ae1d;
+    int32 emissive_us;
+    int32 hash_17123c8692c7160f;
+    int32 hash_5010b6ad6d989cb0;
+    int32 r_draw_depth;
+    int32 hash_28d2a05d88a0d700;
+    int32 lit_us;
+    int32 umbra_time;
+    int32 umbra_work;
+    int32 hash_53ce5582cb1ef0d9;
+    int32 hash_128197788f1faf30;
+    int32 sss_blur_us;
+    int32 hash_58213d392b486455;
+    int32 spot_tris;
+    int32 hash_633a5d0864db2db;
+    int32 sun_us;
+    int32 hash_6f0f73b0e722f7f0;
+    int32 prepass_tris;
+    int32 fx_prims;
+    int32 gbuffer_tris;
+    int32 hash_18f81647069f3ecc;
+    int32 hash_6a9405795c69d6cb;
+    int32 fx_draw;
+    int32 fx_tris;
+    int32 hash_7ed0f0a69ff8404d;
+    int32 light_cull_us;
+    int32 hash_411d2563b3718ec7;
+    int32 compute_sprites;
+    int32 oit_draw_us;
+    int32 gbuffer_decal_prims;
+    int32 deferred_us;
+    int32 lights_vis;
+    int32 hash_7b7cd1e6d2f4ffbb;
+    int32 hash_3a5c956b32dddbc2;
+    int32 hash_63a28cae4ed60f27;
+    bit hash_6f63d386e78df2d9;
+    padbit __pad[7];
+};
+
+struct match_header {
+    uint64 match_id;
+    uint64 hash_c05315ddb26eb93;
+    uint64 lobby_id;
+};
+
+struct telemetry_header {
+    int32 changelist_number;
+    uint16 source_version;
+    double action_type;
+    hash_54196e9e9860f0be platform;
+    string build_version;
+    uint32 title_id;
+    uint32 hash_56a1b6d783aa7a25;
+    uint64 hash_f2ad74d8edb8204;
+};
+
+enum hash_54196e9e9860f0be {
+    "pc" = 0x0,
+    "neo" = 0x1,
+    "xb1" = 0x2,
+    "scorpio" = 0x3,
+    "ps4" = 0x4
+};
+
+struct client_header {
+    uint64 hash_4016bed15f9183f7;
+    uint64 uno_id;
+    uint64 user_id;
+};
+
+

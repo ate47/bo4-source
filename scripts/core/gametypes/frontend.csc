@@ -2371,22 +2371,22 @@ function private function_70733b8c(session_mode, character_index) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x933b4c87, Offset: 0xc4c8
 // Size: 0x534
-function function_a71254a9(localclientnum, play, var_211dbb67, var_1c5551d6 = 0, scene_shot = undefined, var_ddc01a5 = 0, var_7318f7f0 = undefined) {
+function function_a71254a9(localclientnum, play, player_data, var_1c5551d6 = 0, scene_shot = undefined, var_ddc01a5 = 0, var_7318f7f0 = undefined) {
     self notify("6b72393916eafd89");
     self endon("6b72393916eafd89");
     /#
         /#
-            assert(!play || isdefined(var_211dbb67));
+            assert(!play || isdefined(player_data));
         #/
     #/
-    if (play && (!isdefined(level.var_8013e6bd) || character_customization::function_aa5382ed(level.var_4e236556, var_211dbb67))) {
+    if (play && (!isdefined(level.var_8013e6bd) || character_customization::function_aa5382ed(level.var_4e236556, player_data))) {
         while (!isdefined(level.var_7208b551)) {
             wait(0.1);
         }
         if (isdefined(var_7318f7f0)) {
             var_53511779 = var_7318f7f0;
-        } else if (isdefined(var_211dbb67)) {
-            var_6d8e8e31 = function_3dc16db1(var_211dbb67.charactermode, var_211dbb67.charactertype);
+        } else if (isdefined(player_data)) {
+            var_6d8e8e31 = function_3dc16db1(player_data.charactermode, player_data.charactertype);
             if (isdefined(var_6d8e8e31)) {
                 var_53511779 = level.var_e362b5d9[var_6d8e8e31].scene;
             }
@@ -2405,14 +2405,14 @@ function function_a71254a9(localclientnum, play, var_211dbb67, var_1c5551d6 = 0,
                     scene_shot = undefined;
                 }
             }
-            [[ level.frozen_moment_character ]]->function_15a8906a(var_211dbb67);
+            [[ level.frozen_moment_character ]]->function_15a8906a(player_data);
             params = {#scene_shot:scene_shot, #var_8d3b5f69:1, #var_d8cb38a9:1, #var_c76f3e47:1, #scene:var_53511779};
             [[ level.frozen_moment_character ]]->update(params);
             character_index = [[ level.frozen_moment_character ]]->function_9004475c();
             character_mode = [[ level.frozen_moment_character ]]->get_character_mode();
             var_6d8e8e31 = isdefined(function_3dc16db1(character_mode, character_index)) ? function_3dc16db1(character_mode, character_index) : 0;
             level.var_8013e6bd = var_53511779;
-            level.var_4e236556 = var_211dbb67;
+            level.var_4e236556 = player_data;
             function_cdbcba12(localclientnum, isdefined(level.var_e362b5d9[var_6d8e8e31].fields.var_5c403974) ? level.var_e362b5d9[var_6d8e8e31].fields.var_5c403974 : 0, 1);
             if (!var_ddc01a5) {
                 function_66b6e720(level.var_8013e6bd);

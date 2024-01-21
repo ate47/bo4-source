@@ -1,489 +1,81 @@
-{
-    "name": "#hash_2bb273eea68aa4b4",
-    "version": 8,
-    "metatable": "#hash_c2fe987cf0be14c",
-    "structs": [
-        {
-            "name": "#root",
-            "members": [
-                {
-                    "name": "#hitmarkers_enable",
-                    "type": "uint",
-                    "offset": 776,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hitmarkers_damage_type",
-                    "type": "uint",
-                    "offset": 760,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#healthbar_show_ally",
-                    "type": "uint",
-                    "offset": 752,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#healthbar_show_enemy",
-                    "type": "uint",
-                    "offset": 759,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#trophysystem_toggle",
-                    "type": "uint",
-                    "offset": 755,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#molotov_toggle",
-                    "type": "uint",
-                    "offset": 780,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#fraggrenade_toggle",
-                    "type": "uint",
-                    "offset": 786,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#slowgrenade_toggle",
-                    "type": "uint",
-                    "offset": 788,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#combataxe_toggle",
-                    "type": "uint",
-                    "offset": 772,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#swatgrenade_toggle",
-                    "type": "uint",
-                    "offset": 790,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#altads_toggle",
-                    "type": "uint",
-                    "offset": 779,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#semtex_toggle",
-                    "type": "uint",
-                    "offset": 787,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#supplypod_toggle",
-                    "type": "uint",
-                    "offset": 764,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#radiation_toggle",
-                    "type": "uint",
-                    "offset": 769,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#radiation_inversecam",
-                    "type": "uint",
-                    "offset": 756,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#tripwire_alternate",
-                    "type": "uint",
-                    "offset": 754,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_47195f6ac6b6fe6f",
-                    "type": "uint",
-                    "offset": 789,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#sensordart_toggle",
-                    "type": "uint",
-                    "offset": 765,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#grapple_autohold",
-                    "type": "uint",
-                    "offset": 777,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#spawnbeacon_toggle",
-                    "type": "uint",
-                    "offset": 768,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#smartcover_toggle",
-                    "type": "uint",
-                    "offset": 763,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#concertina_toggle",
-                    "type": "uint",
-                    "offset": 778,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#m_mousesensitivity",
-                    "type": "fixedpoint",
-                    "offset": 0,
-                    "bitSize": 32,
-                    "intSize": 32
-                },
-                {
-                    "name": "#cg_fov_default",
-                    "type": "int",
-                    "offset": 536,
-                    "bitSize": 8,
-                    "intSize": 8,
-                    "maxIntValue": 127
-                },
-                {
-                    "name": "#out_of_ammo_auto_weapon_change",
-                    "type": "uint",
-                    "offset": 785,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#weapon_cycle_delay",
-                    "type": "short",
-                    "offset": 736,
-                    "bitSize": 16,
-                    "intSize": 16,
-                    "maxIntValue": 65535
-                },
-                {
-                    "name": "#vehicle_alternate_control",
-                    "type": "uint",
-                    "offset": 781,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#vehicle_alternate_control_water",
-                    "type": "uint",
-                    "offset": 766,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#cursor_immediate_lock_map",
-                    "type": "uint",
-                    "offset": 767,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#cursor_immediate_lock_inventory",
-                    "type": "uint",
-                    "offset": 757,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#show_real_names",
-                    "type": "uint",
-                    "offset": 792,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#chat_profanity_filter",
-                    "type": "uint",
-                    "offset": 761,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#smokescreen_toggle",
-                    "type": "uint",
-                    "offset": 770,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_13f420e6664a4f4b",
-                    "type": "uint",
-                    "offset": 791,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#zm_cartoonmode",
-                    "type": "uint",
-                    "offset": 793,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#display_crosshair",
-                    "type": "uint",
-                    "offset": 753,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#ui_play_intro_movies",
-                    "type": "uint",
-                    "offset": 758,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#show_global_chat",
-                    "type": "uint",
-                    "offset": 762,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#show_team_chat",
-                    "type": "uint",
-                    "offset": 771,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#weapon_cycle_disable_wrap",
-                    "type": "uint",
-                    "offset": 783,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#windows_key_disable",
-                    "type": "uint",
-                    "offset": 775,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#seeker_mine_toggle",
-                    "type": "uint",
-                    "offset": 774,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#cymbal_monkey_toggle",
-                    "type": "uint",
-                    "offset": 773,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#claymore_toggle",
-                    "type": "uint",
-                    "offset": 782,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#health_regen_toggle",
-                    "type": "uint",
-                    "offset": 784,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#telemetry",
-                    "type": "struct#telemetry_header",
-                    "offset": 32,
-                    "bitSize": 504
-                },
-                {
-                    "name": "#client",
-                    "type": "struct#client_header",
-                    "offset": 544,
-                    "bitSize": 192
-                },
-                {
-                    "name": "#__pad",
-                    "type": "pad",
-                    "offset": 794,
-                    "bitSize": 6,
-                    "intSize": 6
-                }
-            ]
-        },
-        {
-            "name": "#telemetry_header",
-            "members": [
-                {
-                    "name": "#hash_56a1b6d783aa7a25",
-                    "type": "uint",
-                    "offset": 408,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#action_type",
-                    "type": "float",
-                    "offset": 48,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#build_version",
-                    "type": "string",
-                    "offset": 120,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#changelist_number",
-                    "type": "int",
-                    "offset": 0,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#title_id",
-                    "type": "uint",
-                    "offset": 376,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#source_version",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 16,
-                    "maxIntValue": 65535
-                },
-                {
-                    "name": "#platform",
-                    "type": "enum#hash_54196e9e9860f0be",
-                    "offset": 112,
-                    "bitSize": 8
-                },
-                {
-                    "name": "#hash_f2ad74d8edb8204",
-                    "type": "uint64",
-                    "offset": 440,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#hash_54196e9e9860f0be",
-            "values": [
-                "#pc",
-                "#neo",
-                "#xb1",
-                "#scorpio",
-                "#ps4"
-            ]
-        },
-        {
-            "name": "#client_header",
-            "members": [
-                {
-                    "name": "#user_id",
-                    "type": "uint64",
-                    "offset": 128,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_4016bed15f9183f7",
-                    "type": "uint64",
-                    "offset": 0,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#uno_id",
-                    "type": "uint64",
-                    "offset": 64,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        }
-    ]
-}
+begin "hash_2bb273eea68aa4b4";
+version 8;
+metatable "hash_c2fe987cf0be14c";
+
+struct root {
+    fixedpoint m_mousesensitivity;
+    telemetry_header telemetry;
+    int8 cg_fov_default;
+    client_header client;
+    short weapon_cycle_delay;
+    bit healthbar_show_ally;
+    bit display_crosshair;
+    bit tripwire_alternate;
+    bit trophysystem_toggle;
+    bit radiation_inversecam;
+    bit cursor_immediate_lock_inventory;
+    bit ui_play_intro_movies;
+    bit healthbar_show_enemy;
+    bit hitmarkers_damage_type;
+    bit chat_profanity_filter;
+    bit show_global_chat;
+    bit smartcover_toggle;
+    bit supplypod_toggle;
+    bit sensordart_toggle;
+    bit vehicle_alternate_control_water;
+    bit cursor_immediate_lock_map;
+    bit spawnbeacon_toggle;
+    bit radiation_toggle;
+    bit smokescreen_toggle;
+    bit show_team_chat;
+    bit combataxe_toggle;
+    bit cymbal_monkey_toggle;
+    bit seeker_mine_toggle;
+    bit windows_key_disable;
+    bit hitmarkers_enable;
+    bit grapple_autohold;
+    bit concertina_toggle;
+    bit altads_toggle;
+    bit molotov_toggle;
+    bit vehicle_alternate_control;
+    bit claymore_toggle;
+    bit weapon_cycle_disable_wrap;
+    bit health_regen_toggle;
+    bit out_of_ammo_auto_weapon_change;
+    bit fraggrenade_toggle;
+    bit semtex_toggle;
+    bit slowgrenade_toggle;
+    bit hash_47195f6ac6b6fe6f;
+    bit swatgrenade_toggle;
+    bit hash_13f420e6664a4f4b;
+    bit show_real_names;
+    bit zm_cartoonmode;
+    padbit __pad[6];
+};
+
+struct telemetry_header {
+    int32 changelist_number;
+    uint16 source_version;
+    double action_type;
+    hash_54196e9e9860f0be platform;
+    string build_version;
+    uint32 title_id;
+    uint32 hash_56a1b6d783aa7a25;
+    uint64 hash_f2ad74d8edb8204;
+};
+
+enum hash_54196e9e9860f0be {
+    "pc" = 0x0,
+    "neo" = 0x1,
+    "xb1" = 0x2,
+    "scorpio" = 0x3,
+    "ps4" = 0x4
+};
+
+struct client_header {
+    uint64 hash_4016bed15f9183f7;
+    uint64 uno_id;
+    uint64 user_id;
+};
+
+

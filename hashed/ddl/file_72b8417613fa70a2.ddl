@@ -1,213 +1,55 @@
-{
-    "name": "#hash_72b8417613fa70a2",
-    "version": 1,
-    "metatable": "#hash_a632a545122a0861",
-    "structs": [
-        {
-            "name": "#root",
-            "members": [
-                {
-                    "name": "#telemetry",
-                    "type": "struct#telemetry_header",
-                    "offset": 320,
-                    "bitSize": 504
-                },
-                {
-                    "name": "#client",
-                    "type": "struct#client_header",
-                    "offset": 13624,
-                    "bitSize": 192
-                },
-                {
-                    "name": "#match",
-                    "type": "struct#match_header",
-                    "offset": 128,
-                    "bitSize": 192
-                },
-                {
-                    "name": "#info",
-                    "type": "struct#hash_50c145a54b47885b",
-                    "offset": 0,
-                    "bitSize": 128
-                },
-                {
-                    "name": "#circles",
-                    "type": "struct#hash_30f7ad403990942a[100]",
-                    "offset": 824,
-                    "bitSize": 12800
-                }
-            ]
-        },
-        {
-            "name": "#telemetry_header",
-            "members": [
-                {
-                    "name": "#hash_56a1b6d783aa7a25",
-                    "type": "uint",
-                    "offset": 408,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#action_type",
-                    "type": "float",
-                    "offset": 48,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#build_version",
-                    "type": "string",
-                    "offset": 120,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#changelist_number",
-                    "type": "int",
-                    "offset": 0,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#title_id",
-                    "type": "uint",
-                    "offset": 376,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#source_version",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 16,
-                    "maxIntValue": 65535
-                },
-                {
-                    "name": "#platform",
-                    "type": "enum#hash_54196e9e9860f0be",
-                    "offset": 112,
-                    "bitSize": 8
-                },
-                {
-                    "name": "#hash_f2ad74d8edb8204",
-                    "type": "uint64",
-                    "offset": 440,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#hash_54196e9e9860f0be",
-            "values": [
-                "#pc",
-                "#neo",
-                "#xb1",
-                "#scorpio",
-                "#ps4"
-            ]
-        },
-        {
-            "name": "#client_header",
-            "members": [
-                {
-                    "name": "#user_id",
-                    "type": "uint64",
-                    "offset": 128,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_4016bed15f9183f7",
-                    "type": "uint64",
-                    "offset": 0,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#uno_id",
-                    "type": "uint64",
-                    "offset": 64,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#match_header",
-            "members": [
-                {
-                    "name": "#lobby_id",
-                    "type": "uint64",
-                    "offset": 128,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#match_id",
-                    "type": "uint64",
-                    "offset": 0,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_c05315ddb26eb93",
-                    "type": "uint64",
-                    "offset": 64,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#hash_50c145a54b47885b",
-            "members": [
-                {
-                    "name": "#hash_7b5a4ea140ea26ea",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 128
-                }
-            ]
-        },
-        {
-            "name": "#hash_30f7ad403990942a",
-            "members": [
-                {
-                    "name": "#origin_x",
-                    "type": "fixedpoint",
-                    "offset": 32,
-                    "bitSize": 32,
-                    "intSize": 32
-                },
-                {
-                    "name": "#origin_y",
-                    "type": "fixedpoint",
-                    "offset": 64,
-                    "bitSize": 32,
-                    "intSize": 32
-                },
-                {
-                    "name": "#radius",
-                    "type": "uint",
-                    "offset": 96,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#index",
-                    "type": "int",
-                    "offset": 0,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                }
-            ]
-        }
-    ]
-}
+begin "hash_72b8417613fa70a2";
+version 1;
+metatable "hash_a632a545122a0861";
+
+struct root {
+    hash_50c145a54b47885b info;
+    match_header match;
+    telemetry_header telemetry;
+    hash_30f7ad403990942a circles[100];
+    client_header client;
+};
+
+struct hash_50c145a54b47885b {
+    string hash_7b5a4ea140ea26ea;
+};
+
+struct match_header {
+    uint64 match_id;
+    uint64 hash_c05315ddb26eb93;
+    uint64 lobby_id;
+};
+
+struct telemetry_header {
+    int32 changelist_number;
+    uint16 source_version;
+    double action_type;
+    hash_54196e9e9860f0be platform;
+    string build_version;
+    uint32 title_id;
+    uint32 hash_56a1b6d783aa7a25;
+    uint64 hash_f2ad74d8edb8204;
+};
+
+enum hash_54196e9e9860f0be {
+    "pc" = 0x0,
+    "neo" = 0x1,
+    "xb1" = 0x2,
+    "scorpio" = 0x3,
+    "ps4" = 0x4
+};
+
+struct hash_30f7ad403990942a {
+    int32 index;
+    fixedpoint origin_x;
+    fixedpoint origin_y;
+    uint32 radius;
+};
+
+struct client_header {
+    uint64 hash_4016bed15f9183f7;
+    uint64 uno_id;
+    uint64 user_id;
+};
+
+

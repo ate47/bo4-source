@@ -1,369 +1,92 @@
-{
-    "name": "#hash_1dfc2b684b0f1749",
-    "version": 24,
-    "metatable": "#hash_f0716b756b554c5c",
-    "structs": [
-        {
-            "name": "#root",
-            "members": [
-                {
-                    "name": "#uno_id",
-                    "type": "uint64",
-                    "offset": 3232,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#session_mode",
-                    "type": "enum#hash_61d8fb71b3cca1df",
-                    "offset": 3296,
-                    "bitSize": 8
-                },
-                {
-                    "name": "#game_type",
-                    "type": "float",
-                    "offset": 1176,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#map",
-                    "type": "string",
-                    "offset": 0,
-                    "bitSize": 384
-                },
-                {
-                    "name": "#playlist_id",
-                    "type": "int",
-                    "offset": 1256,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#playlist_name",
-                    "type": "float",
-                    "offset": 1080,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#lobby_type",
-                    "type": "int",
-                    "offset": 1144,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#nat_type",
-                    "type": "enum#hash_405641015bd81f7d",
-                    "offset": 1248,
-                    "bitSize": 8
-                },
-                {
-                    "name": "#is_splitscreen",
-                    "type": "uint",
-                    "offset": 3306,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_7212de4bfb6f8ba",
-                    "type": "uint",
-                    "offset": 3305,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_27f986f9f86c15ef",
-                    "type": "uint",
-                    "offset": 3304,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#new_user",
-                    "type": "uint",
-                    "offset": 3307,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_2040bac0263bbe0c",
-                    "type": "uint",
-                    "offset": 3309,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_6e58cdc751af2093",
-                    "type": "uint",
-                    "offset": 3308,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#hash_a5ceb4ab2cb3bba",
-                    "type": "uint",
-                    "offset": 3310,
-                    "bitSize": 1,
-                    "intSize": 1,
-                    "maxIntValue": 1
-                },
-                {
-                    "name": "#install_type",
-                    "type": "enum#hash_6cf1cc22ebab862c",
-                    "offset": 1240,
-                    "bitSize": 8
-                },
-                {
-                    "name": "#telemetry",
-                    "type": "struct#telemetry_header",
-                    "offset": 576,
-                    "bitSize": 504
-                },
-                {
-                    "name": "#client",
-                    "type": "struct#client_header",
-                    "offset": 1288,
-                    "bitSize": 192
-                },
-                {
-                    "name": "#match",
-                    "type": "struct#match_header",
-                    "offset": 384,
-                    "bitSize": 192
-                },
-                {
-                    "name": "#region",
-                    "type": "struct#hash_6580ccf5f8a0ef6",
-                    "offset": 1480,
-                    "bitSize": 1752
-                },
-                {
-                    "name": "#__pad",
-                    "type": "pad",
-                    "offset": 3311,
-                    "bitSize": 1,
-                    "intSize": 1
-                }
-            ]
-        },
-        {
-            "name": "#hash_61d8fb71b3cca1df",
-            "values": [
-                "#mode_invalid",
-                "#mode_campaign",
-                "#mode_multiplayer",
-                "#mode_warzone",
-                "#mode_zombies"
-            ]
-        },
-        {
-            "name": "#match_header",
-            "members": [
-                {
-                    "name": "#lobby_id",
-                    "type": "uint64",
-                    "offset": 128,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#match_id",
-                    "type": "uint64",
-                    "offset": 0,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_c05315ddb26eb93",
-                    "type": "uint64",
-                    "offset": 64,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#hash_405641015bd81f7d",
-            "values": [
-                "#xonline_nat_unknown",
-                "#xonline_nat_open",
-                "#xonline_nat_strict",
-                "#xonline_nat_moderate"
-            ]
-        },
-        {
-            "name": "#client_header",
-            "members": [
-                {
-                    "name": "#user_id",
-                    "type": "uint64",
-                    "offset": 128,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_4016bed15f9183f7",
-                    "type": "uint64",
-                    "offset": 0,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#uno_id",
-                    "type": "uint64",
-                    "offset": 64,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#hash_6cf1cc22ebab862c",
-            "values": [
-                "#hash_18695b82948876e3",
-                "#hash_31a0fc57a92be3ec",
-                "#hash_50894d28d26042e8"
-            ]
-        },
-        {
-            "name": "#telemetry_header",
-            "members": [
-                {
-                    "name": "#hash_56a1b6d783aa7a25",
-                    "type": "uint",
-                    "offset": 408,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#action_type",
-                    "type": "float",
-                    "offset": 48,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#build_version",
-                    "type": "string",
-                    "offset": 120,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#changelist_number",
-                    "type": "int",
-                    "offset": 0,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#title_id",
-                    "type": "uint",
-                    "offset": 376,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#source_version",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 16,
-                    "maxIntValue": 65535
-                },
-                {
-                    "name": "#platform",
-                    "type": "enum#hash_54196e9e9860f0be",
-                    "offset": 112,
-                    "bitSize": 8
-                },
-                {
-                    "name": "#hash_f2ad74d8edb8204",
-                    "type": "uint64",
-                    "offset": 440,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#hash_6580ccf5f8a0ef6",
-            "members": [
-                {
-                    "name": "#hash_67599f190572ca79",
-                    "type": "uint",
-                    "offset": 0,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#city",
-                    "type": "string",
-                    "offset": 32,
-                    "bitSize": 1024
-                },
-                {
-                    "name": "#country",
-                    "type": "string",
-                    "offset": 1088,
-                    "bitSize": 16
-                },
-                {
-                    "name": "#language",
-                    "type": "string",
-                    "offset": 1168,
-                    "bitSize": 40
-                },
-                {
-                    "name": "#timezone",
-                    "type": "string",
-                    "offset": 1104,
-                    "bitSize": 64
-                },
-                {
-                    "name": "#region",
-                    "type": "string",
-                    "offset": 1240,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#latitude",
-                    "type": "fixedpoint",
-                    "offset": 1208,
-                    "bitSize": 32,
-                    "intSize": 32
-                },
-                {
-                    "name": "#longitude",
-                    "type": "fixedpoint",
-                    "offset": 1056,
-                    "bitSize": 32,
-                    "intSize": 32
-                }
-            ]
-        },
-        {
-            "name": "#hash_54196e9e9860f0be",
-            "values": [
-                "#pc",
-                "#neo",
-                "#xb1",
-                "#scorpio",
-                "#ps4"
-            ]
-        }
-    ]
-}
+begin "hash_1dfc2b684b0f1749";
+version 24;
+metatable "hash_f0716b756b554c5c";
+
+struct root {
+    string map;
+    match_header match;
+    telemetry_header telemetry;
+    double playlist_name;
+    int32 lobby_type;
+    double game_type;
+    hash_6cf1cc22ebab862c install_type;
+    hash_405641015bd81f7d nat_type;
+    int32 playlist_id;
+    client_header client;
+    hash_6580ccf5f8a0ef6 region;
+    uint64 uno_id;
+    hash_61d8fb71b3cca1df session_mode;
+    bit hash_27f986f9f86c15ef;
+    bit hash_7212de4bfb6f8ba;
+    bit is_splitscreen;
+    bit new_user;
+    bit hash_6e58cdc751af2093;
+    bit hash_2040bac0263bbe0c;
+    bit hash_a5ceb4ab2cb3bba;
+    padbit __pad[1];
+};
+
+enum hash_61d8fb71b3cca1df {
+    "mode_invalid" = 0x0,
+    "mode_campaign" = 0x1,
+    "mode_multiplayer" = 0x2,
+    "mode_warzone" = 0x3,
+    "mode_zombies" = 0x4
+};
+
+enum hash_405641015bd81f7d {
+    "xonline_nat_unknown" = 0x0,
+    "xonline_nat_open" = 0x1,
+    "xonline_nat_strict" = 0x2,
+    "xonline_nat_moderate" = 0x3
+};
+
+struct match_header {
+    uint64 match_id;
+    uint64 hash_c05315ddb26eb93;
+    uint64 lobby_id;
+};
+
+struct telemetry_header {
+    int32 changelist_number;
+    uint16 source_version;
+    double action_type;
+    hash_54196e9e9860f0be platform;
+    string build_version;
+    uint32 title_id;
+    uint32 hash_56a1b6d783aa7a25;
+    uint64 hash_f2ad74d8edb8204;
+};
+
+struct client_header {
+    uint64 hash_4016bed15f9183f7;
+    uint64 uno_id;
+    uint64 user_id;
+};
+
+enum hash_6cf1cc22ebab862c {
+    "hash_18695b82948876e3" = 0x0,
+    "hash_31a0fc57a92be3ec" = 0x1,
+    "hash_50894d28d26042e8" = 0x2
+};
+
+struct hash_6580ccf5f8a0ef6 {
+    uint32 hash_67599f190572ca79;
+    string city;
+    fixedpoint longitude;
+    string country;
+    string timezone;
+    string language;
+    fixedpoint latitude;
+    string region;
+};
+
+enum hash_54196e9e9860f0be {
+    "pc" = 0x0,
+    "neo" = 0x1,
+    "xb1" = 0x2,
+    "scorpio" = 0x3,
+    "ps4" = 0x4
+};
+
+

@@ -1,529 +1,99 @@
-{
-    "name": "#hash_3983a4c093d7f821",
-    "version": 10,
-    "metatable": "#hash_179fc4abbdf9b7ea",
-    "structs": [
-        {
-            "name": "#root",
-            "members": [
-                {
-                    "name": "#telemetry",
-                    "type": "struct#telemetry_header",
-                    "offset": 192,
-                    "bitSize": 504
-                },
-                {
-                    "name": "#client",
-                    "type": "struct#client_header",
-                    "offset": 10264,
-                    "bitSize": 192
-                },
-                {
-                    "name": "#match",
-                    "type": "struct#match_header",
-                    "offset": 0,
-                    "bitSize": 192
-                },
-                {
-                    "name": "#mploadouts",
-                    "type": "struct#hash_3b1f2a75446de239",
-                    "offset": 696,
-                    "bitSize": 9568
-                }
-            ]
-        },
-        {
-            "name": "#telemetry_header",
-            "members": [
-                {
-                    "name": "#hash_56a1b6d783aa7a25",
-                    "type": "uint",
-                    "offset": 408,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#action_type",
-                    "type": "float",
-                    "offset": 48,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#build_version",
-                    "type": "string",
-                    "offset": 120,
-                    "bitSize": 256
-                },
-                {
-                    "name": "#changelist_number",
-                    "type": "int",
-                    "offset": 0,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#title_id",
-                    "type": "uint",
-                    "offset": 376,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 4294967295
-                },
-                {
-                    "name": "#source_version",
-                    "type": "uint",
-                    "offset": 32,
-                    "bitSize": 16,
-                    "intSize": 16,
-                    "maxIntValue": 65535
-                },
-                {
-                    "name": "#platform",
-                    "type": "enum#hash_54196e9e9860f0be",
-                    "offset": 112,
-                    "bitSize": 8
-                },
-                {
-                    "name": "#hash_f2ad74d8edb8204",
-                    "type": "uint64",
-                    "offset": 440,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#hash_54196e9e9860f0be",
-            "values": [
-                "#pc",
-                "#neo",
-                "#xb1",
-                "#scorpio",
-                "#ps4"
-            ]
-        },
-        {
-            "name": "#client_header",
-            "members": [
-                {
-                    "name": "#user_id",
-                    "type": "uint64",
-                    "offset": 128,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_4016bed15f9183f7",
-                    "type": "uint64",
-                    "offset": 0,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#uno_id",
-                    "type": "uint64",
-                    "offset": 64,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#match_header",
-            "members": [
-                {
-                    "name": "#lobby_id",
-                    "type": "uint64",
-                    "offset": 128,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#match_id",
-                    "type": "uint64",
-                    "offset": 0,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_c05315ddb26eb93",
-                    "type": "uint64",
-                    "offset": 64,
-                    "bitSize": 64,
-                    "intSize": 64
-                }
-            ]
-        },
-        {
-            "name": "#hash_3b1f2a75446de239",
-            "members": [
-                {
-                    "name": "#spawnid",
-                    "type": "int",
-                    "offset": 1248,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#primaryname",
-                    "type": "string",
-                    "offset": 7840,
-                    "bitSize": 1024
-                },
-                {
-                    "name": "#primary",
-                    "type": "float",
-                    "offset": 8992,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#primaryattachment1",
-                    "type": "float",
-                    "offset": 9120,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#primaryattachment2",
-                    "type": "float",
-                    "offset": 9184,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#primaryattachment3",
-                    "type": "float",
-                    "offset": 9248,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#primaryattachment4",
-                    "type": "float",
-                    "offset": 9312,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#primaryattachment5",
-                    "type": "float",
-                    "offset": 9376,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#primaryattachment6",
-                    "type": "float",
-                    "offset": 9440,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#primaryattachment7",
-                    "type": "float",
-                    "offset": 9504,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#primarycamo",
-                    "type": "string",
-                    "offset": 7328,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#primaryreticle",
-                    "type": "float",
-                    "offset": 1184,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#secondaryname",
-                    "type": "string",
-                    "offset": 6816,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#secondary",
-                    "type": "float",
-                    "offset": 8864,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#secondaryattachment1",
-                    "type": "float",
-                    "offset": 864,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#secondaryattachment2",
-                    "type": "float",
-                    "offset": 928,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#secondaryattachment3",
-                    "type": "float",
-                    "offset": 992,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#secondaryattachment4",
-                    "type": "float",
-                    "offset": 1056,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#secondaryattachment5",
-                    "type": "float",
-                    "offset": 1120,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#secondarycamo",
-                    "type": "string",
-                    "offset": 6304,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#secondaryreticle",
-                    "type": "float",
-                    "offset": 9056,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#specialty1",
-                    "type": "string",
-                    "offset": 3232,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#specialty2",
-                    "type": "string",
-                    "offset": 3744,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#specialty3",
-                    "type": "string",
-                    "offset": 4256,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#specialty4",
-                    "type": "string",
-                    "offset": 4768,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#specialty5",
-                    "type": "string",
-                    "offset": 5280,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#specialty6",
-                    "type": "string",
-                    "offset": 5792,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#talisman1",
-                    "type": "string",
-                    "offset": 1472,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#primarygrenade",
-                    "type": "string",
-                    "offset": 96,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#primarygrenadecount",
-                    "type": "int",
-                    "offset": 0,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#specialgrenade",
-                    "type": "string",
-                    "offset": 2688,
-                    "bitSize": 512
-                },
-                {
-                    "name": "#specialgrenadecount",
-                    "type": "int",
-                    "offset": 3200,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#killstreak1",
-                    "type": "float",
-                    "offset": 608,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#killstreak2",
-                    "type": "float",
-                    "offset": 672,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#killstreak3",
-                    "type": "float",
-                    "offset": 736,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#killstreak4",
-                    "type": "float",
-                    "offset": 800,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_7af4c73d11d6e762",
-                    "type": "float",
-                    "offset": 8928,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_e88f8f1dc4ab5c1",
-                    "type": "float",
-                    "offset": 2048,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#talent1",
-                    "type": "float",
-                    "offset": 2112,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#talent2",
-                    "type": "float",
-                    "offset": 2176,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#talent3",
-                    "type": "float",
-                    "offset": 2240,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#talent4",
-                    "type": "float",
-                    "offset": 2304,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#talent5",
-                    "type": "float",
-                    "offset": 2368,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#talent6",
-                    "type": "float",
-                    "offset": 2432,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_e88f9f1dc4ab774",
-                    "type": "float",
-                    "offset": 2496,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_e88f0f1dc4aa829",
-                    "type": "float",
-                    "offset": 2560,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_e88eff1dc4aa676",
-                    "type": "float",
-                    "offset": 2624,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#tacticalgear",
-                    "type": "float",
-                    "offset": 32,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#wildcard0",
-                    "type": "float",
-                    "offset": 1280,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#wildcard1",
-                    "type": "float",
-                    "offset": 1344,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#hash_58c97dd32ef2d7a7",
-                    "type": "float",
-                    "offset": 1408,
-                    "bitSize": 64,
-                    "intSize": 64
-                },
-                {
-                    "name": "#specialistindex",
-                    "type": "int",
-                    "offset": 2016,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                },
-                {
-                    "name": "#gametime",
-                    "type": "int",
-                    "offset": 1984,
-                    "bitSize": 32,
-                    "intSize": 32,
-                    "maxIntValue": 2147483647
-                }
-            ]
-        }
-    ]
-}
+begin "hash_3983a4c093d7f821";
+version 10;
+metatable "hash_179fc4abbdf9b7ea";
+
+struct root {
+    match_header match;
+    telemetry_header telemetry;
+    hash_3b1f2a75446de239 mploadouts;
+    client_header client;
+};
+
+struct match_header {
+    uint64 match_id;
+    uint64 hash_c05315ddb26eb93;
+    uint64 lobby_id;
+};
+
+struct telemetry_header {
+    int32 changelist_number;
+    uint16 source_version;
+    double action_type;
+    hash_54196e9e9860f0be platform;
+    string build_version;
+    uint32 title_id;
+    uint32 hash_56a1b6d783aa7a25;
+    uint64 hash_f2ad74d8edb8204;
+};
+
+enum hash_54196e9e9860f0be {
+    "pc" = 0x0,
+    "neo" = 0x1,
+    "xb1" = 0x2,
+    "scorpio" = 0x3,
+    "ps4" = 0x4
+};
+
+struct hash_3b1f2a75446de239 {
+    int32 primarygrenadecount;
+    double tacticalgear;
+    string primarygrenade;
+    double killstreak1;
+    double killstreak2;
+    double killstreak3;
+    double killstreak4;
+    double secondaryattachment1;
+    double secondaryattachment2;
+    double secondaryattachment3;
+    double secondaryattachment4;
+    double secondaryattachment5;
+    double primaryreticle;
+    int32 spawnid;
+    double wildcard0;
+    double wildcard1;
+    double hash_58c97dd32ef2d7a7;
+    string talisman1;
+    int32 gametime;
+    int32 specialistindex;
+    double hash_e88f8f1dc4ab5c1;
+    double talent1;
+    double talent2;
+    double talent3;
+    double talent4;
+    double talent5;
+    double talent6;
+    double hash_e88f9f1dc4ab774;
+    double hash_e88f0f1dc4aa829;
+    double hash_e88eff1dc4aa676;
+    string specialgrenade;
+    int32 specialgrenadecount;
+    string specialty1;
+    string specialty2;
+    string specialty3;
+    string specialty4;
+    string specialty5;
+    string specialty6;
+    string secondarycamo;
+    string secondaryname;
+    string primarycamo;
+    string primaryname;
+    double secondary;
+    double hash_7af4c73d11d6e762;
+    double primary;
+    double secondaryreticle;
+    double primaryattachment1;
+    double primaryattachment2;
+    double primaryattachment3;
+    double primaryattachment4;
+    double primaryattachment5;
+    double primaryattachment6;
+    double primaryattachment7;
+};
+
+struct client_header {
+    uint64 hash_4016bed15f9183f7;
+    uint64 uno_id;
+    uint64 user_id;
+};
+
+

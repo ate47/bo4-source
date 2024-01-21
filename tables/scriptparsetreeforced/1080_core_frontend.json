@@ -1,0 +1,18 @@
+{
+    "name": "#1080_core_frontend",
+    "gscScripts": [
+        "#scripts/core_common/audio_shared.gsc",
+        "#scripts/core_common/music_shared.gsc",
+        "#scripts/core_common/contracts_shared.gsc",
+        "#scripts/core_common/dialog_shared.gsc",
+        "#scripts/weapons/sticky_grenade.gsc"
+    ],
+    "cscScripts": [
+        "#scripts/core/gametypes/frontend_blackmarket.csc",
+        "#scripts/core_common/audio_shared.csc",
+        "#scripts/core/gametypes/frontend_zm_laboratory.csc",
+        "#scripts/core_common/dialog_shared.csc",
+        "#scripts/core_common/music_shared.csc",
+        "#scripts/weapons/sticky_grenade.csc"
+    ]
+}
