@@ -568,7 +568,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 25;
 metatable "hash_eaf89319657d4afc";
@@ -1138,7 +1138,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 24;
 metatable "hash_bfb76e2022a45bd8";
@@ -1708,7 +1708,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 23;
 metatable "hash_1285a90391c20542";
@@ -2277,7 +2277,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 22;
 metatable "hash_4ed09af99b06d662";
@@ -2843,7 +2843,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 21;
 metatable "hash_562d71913403e448";
@@ -3407,7 +3407,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 20;
 metatable "hash_c8ebe707690b52c0";
@@ -3971,7 +3971,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 19;
 metatable "hash_20fdc9da96f3c1a7";
@@ -4534,7 +4534,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 18;
 metatable "hash_42c232fa3b7bcf71";
@@ -5096,7 +5096,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 17;
 metatable "hash_a85b761e3d00a828";
@@ -5657,7 +5657,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 16;
 metatable "hash_6bf188b1309ab7e6";
@@ -6214,7 +6214,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 15;
 metatable "hash_9123d35ec05e88c7";
@@ -6764,7 +6764,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 14;
 metatable "hash_9a52bf05ddb92493";
@@ -7312,7 +7312,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 13;
 metatable "hash_6fb7fd538639a842";
@@ -7859,7 +7859,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 12;
 metatable "hash_9cf0b46123870681";
@@ -8405,7 +8405,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 11;
 metatable "hash_47e7af882956ff7c";
@@ -8949,7 +8949,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 10;
 metatable "hash_3ad84995a72e13f5";
@@ -9489,7 +9489,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 9;
 metatable "hash_662e231a8295f974";
@@ -10028,7 +10028,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 8;
 metatable "hash_e4bc2c4146e18a97";
@@ -10566,7 +10566,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 7;
 metatable "hash_50636fde4fdec8e2";
@@ -11101,7 +11101,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 6;
 metatable "hash_1466ef1cd9c4143";
@@ -11634,7 +11634,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 5;
 metatable "hash_c9a0803d28432293";
@@ -12165,7 +12165,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 4;
 metatable "hash_a3a28d08f70b40f0";
@@ -12695,7 +12695,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 3;
 metatable "hash_a06323bdd69e7872";
@@ -13221,7 +13221,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 2;
 metatable "hash_ef858a838b062b84";
@@ -13746,7 +13746,7 @@ struct gametypesettings {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_23e03d96e7cf1901";
 version 1;
 metatable "hash_4c36e024adef5eb1";

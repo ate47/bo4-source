@@ -84,7 +84,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 15;
 metatable "hash_4086cd6582efedfb";
@@ -171,7 +171,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 14;
 metatable "hash_afe242bb655de866";
@@ -258,7 +258,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 13;
 metatable "hash_3898a7cf33972e58";
@@ -345,7 +345,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 12;
 metatable "hash_ef08f0d288f7ee5e";
@@ -430,7 +430,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 11;
 metatable "hash_15079ce9c769008";
@@ -515,7 +515,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 10;
 metatable "hash_ed86f5c63900f2c6";
@@ -598,7 +598,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 9;
 metatable "hash_12431e239488820b";
@@ -681,7 +681,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 8;
 metatable "hash_d4c982565bce7104";
@@ -764,7 +764,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 7;
 metatable "hash_41eb717f9ee2d85";
@@ -846,7 +846,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 6;
 metatable "hash_6df10217a7c711af";
@@ -927,7 +927,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/emblem.ddl";
 version 5;
 metatable "hash_1ac554586d56de72";

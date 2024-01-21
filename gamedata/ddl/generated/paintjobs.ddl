@@ -91,7 +91,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/paintjobs.ddl";
 version 13;
 metatable "hash_422a17e8a7c07ce6";
@@ -185,7 +185,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/paintjobs.ddl";
 version 12;
 metatable "hash_cf24c63833df31da";
@@ -279,7 +279,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/paintjobs.ddl";
 version 11;
 metatable "hash_ae0ad25cff514168";
@@ -373,7 +373,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/paintjobs.ddl";
 version 10;
 metatable "hash_169e842c8ef25e4";
@@ -465,7 +465,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/paintjobs.ddl";
 version 9;
 metatable "hash_e37516a7ecc86d3d";
@@ -557,7 +557,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/paintjobs.ddl";
 version 8;
 metatable "hash_b5a1a4eba4f8bf8";
@@ -647,7 +647,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/paintjobs.ddl";
 version 7;
 metatable "hash_f2c7212d9fc1bedf";
@@ -737,7 +737,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/paintjobs.ddl";
 version 6;
 metatable "hash_f21fb7d405c4af89";
@@ -826,7 +826,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/paintjobs.ddl";
 version 5;
 metatable "hash_e240e82dd72427a6";

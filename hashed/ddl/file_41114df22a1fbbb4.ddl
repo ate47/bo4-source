@@ -56,7 +56,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_41114df22a1fbbb4";
 version 71;
 metatable "hash_9eaca1b8e5ab8511";
@@ -115,7 +115,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_41114df22a1fbbb4";
 version 70;
 metatable "hash_f2762ec595049be5";
@@ -174,7 +174,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_41114df22a1fbbb4";
 version 69;
 metatable "hash_603b178861d61d91";
@@ -233,7 +233,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_41114df22a1fbbb4";
 version 68;
 metatable "hash_40d7bd75e1ddd843";
@@ -292,7 +292,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_41114df22a1fbbb4";
 version 67;
 metatable "hash_cb960fbc0a9de8f8";
@@ -351,7 +351,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_41114df22a1fbbb4";
 version 66;
 metatable "hash_be621d05cadc0064";
@@ -410,7 +410,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_41114df22a1fbbb4";
 version 65;
 metatable "hash_3f90ce7bf3d1cce7";

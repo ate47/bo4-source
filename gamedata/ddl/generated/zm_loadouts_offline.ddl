@@ -86,7 +86,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 76;
 metatable "hash_8d8d55e271b67450";
@@ -175,7 +175,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 75;
 metatable "hash_52fb6418c6a9f75b";
@@ -264,7 +264,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 74;
 metatable "hash_e10c739ed8812536";
@@ -353,7 +353,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 73;
 metatable "hash_70ee67ee10b693b2";
@@ -442,7 +442,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 72;
 metatable "hash_244335a842bf68e9";
@@ -531,7 +531,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 71;
 metatable "hash_3204dda4898cf7de";
@@ -620,7 +620,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 70;
 metatable "hash_ed3f964b441cc354";
@@ -709,7 +709,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 69;
 metatable "hash_c105deea1666a28";
@@ -796,7 +796,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 68;
 metatable "hash_50e6cbeab2959daa";
@@ -883,7 +883,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 67;
 metatable "hash_b962af15ce00d127";
@@ -970,7 +970,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 66;
 metatable "hash_8915f4970e515867";
@@ -1058,7 +1058,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 65;
 metatable "hash_f2406e9879e9d53c";
@@ -1147,7 +1147,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 64;
 metatable "hash_96d29b98438e5b90";
@@ -1234,7 +1234,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 63;
 metatable "hash_c1d2f986ba36ba83";
@@ -1321,7 +1321,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 62;
 metatable "hash_73c2811923492065";
@@ -1408,7 +1408,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 61;
 metatable "hash_aa9a0ccbd8188599";
@@ -1495,7 +1495,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 60;
 metatable "hash_867c3cc9283cf561";
@@ -1581,7 +1581,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 59;
 metatable "hash_4c5ff243d5f705c2";
@@ -1667,7 +1667,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 58;
 metatable "hash_532e0e642d090b60";
@@ -1753,7 +1753,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 57;
 metatable "hash_995efd43c551cf6c";
@@ -1837,7 +1837,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 56;
 metatable "hash_2b0bd72668cc361a";
@@ -1921,7 +1921,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 55;
 metatable "hash_aa6eea904f56c988";
@@ -2005,7 +2005,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 54;
 metatable "hash_d09e3b3e6109a18d";
@@ -2089,7 +2089,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 53;
 metatable "hash_699d7f8ea849e356";
@@ -2172,7 +2172,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 52;
 metatable "hash_f255925a0247f45e";
@@ -2255,7 +2255,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 51;
 metatable "hash_f3f1e63df9fa9810";
@@ -2338,7 +2338,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 50;
 metatable "hash_82d756912fa336f8";
@@ -2421,7 +2421,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 49;
 metatable "hash_a274319b40bb1564";
@@ -2503,7 +2503,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 48;
 metatable "hash_aabc662075357309";
@@ -2585,7 +2585,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 47;
 metatable "hash_fd2c5a0a638faa6c";
@@ -2667,7 +2667,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 46;
 metatable "hash_b33755cd6276afa6";
@@ -2749,7 +2749,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 45;
 metatable "hash_f7dba794f73c1f8d";
@@ -2830,7 +2830,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 44;
 metatable "hash_e007fa72ae1dd6cc";
@@ -2911,7 +2911,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 43;
 metatable "hash_ef7ae34f3e72eee6";
@@ -2995,7 +2995,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 42;
 metatable "hash_c740288955a06c35";
@@ -3079,7 +3079,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 41;
 metatable "hash_1e6d57f104869165";
@@ -3163,7 +3163,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 40;
 metatable "hash_c251466f1118afdf";
@@ -3247,7 +3247,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 39;
 metatable "hash_cd89b40c0f136a2";
@@ -3331,7 +3331,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 38;
 metatable "hash_6e68cab41955f5f5";
@@ -3429,7 +3429,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 37;
 metatable "hash_4e12681ab01a819b";
@@ -3526,7 +3526,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 36;
 metatable "hash_72a67e5bf24b587d";
@@ -3623,7 +3623,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 35;
 metatable "hash_ccbc18ad130fcff";
@@ -3720,7 +3720,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 34;
 metatable "hash_d57d6a47c9ec2314";
@@ -3817,7 +3817,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 33;
 metatable "hash_cbd9e0d3595b3b53";
@@ -3925,7 +3925,7 @@ struct mix_s {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_loadouts_offline.ddl";
 version 32;
 metatable "hash_10cc4875c23724fa";

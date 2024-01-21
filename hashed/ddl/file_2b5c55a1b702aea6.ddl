@@ -42,7 +42,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 70;
 metatable "hash_87bc07e0c5c97a0c";
@@ -87,7 +87,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 69;
 metatable "hash_36cdaf7118dd4678";
@@ -132,7 +132,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 68;
 metatable "hash_a355280caedb1b89";
@@ -177,7 +177,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 67;
 metatable "hash_c63aab17b24621fc";
@@ -222,7 +222,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 66;
 metatable "hash_2241d767716e9365";
@@ -267,7 +267,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 65;
 metatable "hash_3473b08a1b82eea9";
@@ -312,7 +312,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 64;
 metatable "hash_ed31ed57014af14f";
@@ -357,7 +357,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 63;
 metatable "hash_a242bc51babfaac3";
@@ -402,7 +402,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 62;
 metatable "hash_6eada01f17d4542a";
@@ -447,7 +447,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 61;
 metatable "hash_9417f32ac4d34800";
@@ -492,7 +492,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2b5c55a1b702aea6";
 version 60;
 metatable "hash_fbbfc78cfecc1ca1";

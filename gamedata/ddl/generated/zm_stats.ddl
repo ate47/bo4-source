@@ -74,7 +74,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 113;
 metatable "hash_e89f4f6ad598b57e";
@@ -151,7 +151,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 112;
 metatable "hash_cd89812045d124b7";
@@ -228,7 +228,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 111;
 metatable "hash_b50bd046812effd2";
@@ -305,7 +305,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 110;
 metatable "hash_dff5535ad64df3ab";
@@ -382,7 +382,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 109;
 metatable "hash_a4a86d9fda4716ce";
@@ -459,7 +459,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 108;
 metatable "hash_8dfa562fd3ebb795";
@@ -536,7 +536,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 107;
 metatable "hash_c1f63f94366061bd";
@@ -613,7 +613,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 106;
 metatable "hash_7925ef7e242acd8e";
@@ -690,7 +690,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 105;
 metatable "hash_2d7016d1cd85d261";
@@ -767,7 +767,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 104;
 metatable "hash_ade571441aab5608";
@@ -844,7 +844,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 103;
 metatable "hash_1b234f328015e148";
@@ -921,7 +921,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 102;
 metatable "hash_4ebfbbd67ca68b6";
@@ -998,7 +998,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 101;
 metatable "hash_dbb5c5e157938191";
@@ -1075,7 +1075,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 100;
 metatable "hash_2f4d821101270483";
@@ -1151,7 +1151,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 99;
 metatable "hash_acc867ed9bcb504b";
@@ -1228,7 +1228,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 98;
 metatable "hash_57231e5a73f8628d";
@@ -1305,7 +1305,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 97;
 metatable "hash_61b17398cc5d0281";
@@ -1382,7 +1382,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 96;
 metatable "hash_f6c4f8643484f0f6";
@@ -1459,7 +1459,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 95;
 metatable "hash_9a7094da27f4fcf7";
@@ -1536,7 +1536,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 94;
 metatable "hash_81d802d8b0a76d3d";
@@ -1611,7 +1611,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 93;
 metatable "hash_6a192c0e3687bd12";
@@ -1686,7 +1686,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 92;
 metatable "hash_67582c8cd988f2d8";
@@ -1761,7 +1761,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 91;
 metatable "hash_62ca085192fa25df";
@@ -1836,7 +1836,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 90;
 metatable "hash_b73d4086bb8175e1";
@@ -1911,7 +1911,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 89;
 metatable "hash_b93304d31e05bf32";
@@ -1986,7 +1986,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 88;
 metatable "hash_14e360df8d4f2ed5";
@@ -2061,7 +2061,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 87;
 metatable "hash_3492ebaad37f27e9";
@@ -2136,7 +2136,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 86;
 metatable "hash_4ad4137ed8f340fe";
@@ -2211,7 +2211,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 85;
 metatable "hash_907d72b7f4ab5c84";
@@ -2286,7 +2286,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 84;
 metatable "hash_2a4af2352fc2b40c";
@@ -2360,7 +2360,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 83;
 metatable "hash_b86277f2f6d67595";
@@ -2433,7 +2433,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 82;
 metatable "hash_3dd5e7ccbb092b4d";
@@ -2506,7 +2506,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 81;
 metatable "hash_b607cbf4cb1e87ec";
@@ -2580,7 +2580,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 80;
 metatable "hash_12a467a0a55197fa";
@@ -2654,7 +2654,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 79;
 metatable "hash_1b61a1a9e2f4fc42";
@@ -2728,7 +2728,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 78;
 metatable "hash_3d411cd7a4733e27";
@@ -2802,7 +2802,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 77;
 metatable "hash_a6a3c68901d257a2";
@@ -2876,7 +2876,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 76;
 metatable "hash_42023a44917920ce";
@@ -2949,7 +2949,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 75;
 metatable "hash_90f30ca7477a5c6e";
@@ -3077,7 +3077,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 74;
 metatable "hash_68f356f32e356b18";
@@ -3205,7 +3205,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 73;
 metatable "hash_ac4a3f49506e07cc";
@@ -3333,7 +3333,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 72;
 metatable "hash_a84940931dba6b6e";
@@ -3461,7 +3461,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 71;
 metatable "hash_6aaa64c9e7cc8a6";
@@ -3589,7 +3589,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 70;
 metatable "hash_eeb071934e0f7b79";
@@ -3717,7 +3717,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 69;
 metatable "hash_e5bf97f6ed1e6fa0";
@@ -3844,7 +3844,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 68;
 metatable "hash_4a270e1240299a8a";
@@ -3972,7 +3972,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 67;
 metatable "hash_8bed16bd246f0354";
@@ -4100,7 +4100,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 66;
 metatable "hash_f348f256524760a3";
@@ -4228,7 +4228,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 65;
 metatable "hash_26d6b63f778d113d";
@@ -4356,7 +4356,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 64;
 metatable "hash_8d98dacd28c03ea0";
@@ -4484,7 +4484,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 63;
 metatable "hash_4b0cc21c594cc88e";
@@ -4612,7 +4612,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 62;
 metatable "hash_59d0febede1f3ead";
@@ -4739,7 +4739,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 61;
 metatable "hash_8a46de614db0299a";
@@ -4867,7 +4867,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 60;
 metatable "hash_1131ec72da5d3e08";
@@ -4995,7 +4995,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 59;
 metatable "hash_c51c85c350d12e0";
@@ -5123,7 +5123,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 58;
 metatable "hash_b7fd04c261b9f2dc";
@@ -5251,7 +5251,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 57;
 metatable "hash_8e483f1796c18c14";
@@ -5379,7 +5379,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 56;
 metatable "hash_518123a6bd3c27aa";
@@ -5507,7 +5507,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 55;
 metatable "hash_f5524d7c3aeb0c0a";
@@ -5634,7 +5634,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 54;
 metatable "hash_456294863e2193b6";
@@ -5762,7 +5762,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 53;
 metatable "hash_11b287355c2e1998";
@@ -5890,7 +5890,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 52;
 metatable "hash_83bc46a1ea17d79a";
@@ -6018,7 +6018,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 51;
 metatable "hash_e35fe4ee715afa81";
@@ -6145,7 +6145,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 50;
 metatable "hash_b951d89ead4711c5";
@@ -6272,7 +6272,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 49;
 metatable "hash_e3ec24efe070549f";
@@ -6399,7 +6399,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 48;
 metatable "hash_51c4b6ab5d823d9c";
@@ -6771,7 +6771,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 47;
 metatable "hash_c018d55e954e59cd";
@@ -7143,7 +7143,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 46;
 metatable "hash_7ef1d4e442c89013";
@@ -7515,7 +7515,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 45;
 metatable "hash_e52a94d890336da5";
@@ -7877,7 +7877,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 44;
 metatable "hash_f6179b30552a3719";
@@ -8234,7 +8234,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 43;
 metatable "hash_63fe5737d382be64";
@@ -8586,7 +8586,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 42;
 metatable "hash_5f263bd1a07d4c4a";
@@ -8938,7 +8938,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 41;
 metatable "hash_4b3711eff0c19ce2";
@@ -9290,7 +9290,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 40;
 metatable "hash_a26ae1dbe19848ca";
@@ -9642,7 +9642,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 39;
 metatable "hash_a101f0938c3e18cc";
@@ -9994,7 +9994,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 38;
 metatable "hash_45bad6e135ffda8a";
@@ -10346,7 +10346,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 37;
 metatable "hash_8483a9d7d816e3ba";
@@ -10698,7 +10698,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 36;
 metatable "hash_c35798bebd3125bf";
@@ -11045,7 +11045,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 35;
 metatable "hash_fc7aa472e29f2b7b";
@@ -11391,7 +11391,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 34;
 metatable "hash_d9745e30b650db4c";
@@ -11737,7 +11737,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 33;
 metatable "hash_57ad0fe3c0aa1ade";
@@ -12082,7 +12082,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 32;
 metatable "hash_5ed2fc9606da70de";
@@ -12427,7 +12427,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 31;
 metatable "hash_12292555a2378361";
@@ -12772,7 +12772,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 30;
 metatable "hash_7234bc29aaa5b120";
@@ -13117,7 +13117,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 29;
 metatable "hash_8099fe82405b31a7";
@@ -13455,7 +13455,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 28;
 metatable "hash_e7ad55b9c2b5b36c";
@@ -13792,7 +13792,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 27;
 metatable "hash_4c5a39bc210b8a04";
@@ -14128,7 +14128,7 @@ struct hash_6fee10de3992f771 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/zm_stats.ddl";
 version 26;
 metatable "hash_c7bff5ca7855312";

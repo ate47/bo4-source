@@ -43,7 +43,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 71;
 metatable "hash_698d190699424d5a";
@@ -89,7 +89,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 70;
 metatable "hash_1005a39af20152f9";
@@ -135,7 +135,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 69;
 metatable "hash_5311aa44214ce24d";
@@ -181,7 +181,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 68;
 metatable "hash_3f9b3c4a7f7fc811";
@@ -227,7 +227,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 67;
 metatable "hash_b1916084ba6dd515";
@@ -273,7 +273,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 66;
 metatable "hash_ae95397e3da23872";
@@ -319,7 +319,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 65;
 metatable "hash_f8197f84c43e2558";
@@ -365,7 +365,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 64;
 metatable "hash_5bb67dfcac494f61";
@@ -447,7 +447,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 63;
 metatable "hash_4092b782a5136fac";
@@ -530,7 +530,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 62;
 metatable "hash_72c02e05049ce790";
@@ -613,7 +613,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 61;
 metatable "hash_f5f52ec9440b8bcf";
@@ -694,7 +694,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 60;
 metatable "hash_4e18534bac853001";
@@ -775,7 +775,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/mp_loadouts_arena_custom.ddl";
 version 59;
 metatable "hash_654155fa929e87d4";

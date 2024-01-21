@@ -329,7 +329,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 85;
 metatable "hash_44685e859f2bc011";
@@ -661,7 +661,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 84;
 metatable "hash_66b5d9201d368c73";
@@ -993,7 +993,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 83;
 metatable "hash_d8f6415df83d3455";
@@ -1325,7 +1325,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 82;
 metatable "hash_9fbb40bc25b4c1ea";
@@ -1657,7 +1657,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 81;
 metatable "hash_2928867b80ebc67f";
@@ -1989,7 +1989,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 80;
 metatable "hash_9adb702680c5d07d";
@@ -2321,7 +2321,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 79;
 metatable "hash_1fa181ba66f01cf7";
@@ -2653,7 +2653,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 78;
 metatable "hash_6e561f356e97d017";
@@ -2985,7 +2985,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 77;
 metatable "hash_9282c3b3e0d3be51";
@@ -3317,7 +3317,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 76;
 metatable "hash_d09dead7588cd65a";
@@ -3649,7 +3649,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 75;
 metatable "hash_12ab733fc596ab12";
@@ -3981,7 +3981,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 74;
 metatable "hash_a181789e1109b04d";
@@ -4313,7 +4313,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 73;
 metatable "hash_a7d755cc08d0934c";
@@ -4645,7 +4645,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 72;
 metatable "hash_b7e9e423a4aa1645";
@@ -4975,7 +4975,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 71;
 metatable "hash_c2267b316cbd9080";
@@ -5305,7 +5305,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 70;
 metatable "hash_648c60be73053a4f";
@@ -5635,7 +5635,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 69;
 metatable "hash_294468270f980c3d";
@@ -5965,7 +5965,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 68;
 metatable "hash_ff726b50a79804b9";
@@ -6293,7 +6293,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 67;
 metatable "hash_5f226746adfea4f4";
@@ -6621,7 +6621,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 66;
 metatable "hash_3c2075847af22558";
@@ -6949,7 +6949,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 65;
 metatable "hash_a05e0e9e668d3da9";
@@ -7277,7 +7277,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 64;
 metatable "hash_89ca69a77e21f957";
@@ -7605,7 +7605,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 63;
 metatable "hash_b4ec5d2e9195f692";
@@ -7933,7 +7933,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 62;
 metatable "hash_ebd9043681669c87";
@@ -8261,7 +8261,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 61;
 metatable "hash_ba09b717dfa6ffba";
@@ -8587,7 +8587,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 60;
 metatable "hash_cbd518d2d42c8be7";
@@ -8913,7 +8913,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 59;
 metatable "hash_6617631aaab5ddaf";
@@ -9239,7 +9239,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 58;
 metatable "hash_2ddc6791eecadb15";
@@ -9565,7 +9565,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 57;
 metatable "hash_a6a9aa0d3171c3e0";
@@ -9891,7 +9891,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 56;
 metatable "hash_aa2c4133b6017aaa";
@@ -10217,7 +10217,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 55;
 metatable "hash_30a36c91c1db27b4";
@@ -10543,7 +10543,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 54;
 metatable "hash_8a1ca98d73f76a48";
@@ -10869,7 +10869,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 53;
 metatable "hash_a3a7822441a4aa45";
@@ -11195,7 +11195,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 52;
 metatable "hash_adebf905935cfa4b";
@@ -11520,7 +11520,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 51;
 metatable "hash_226d82a010dd5da2";
@@ -11845,7 +11845,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 50;
 metatable "hash_bc666655bdc4c84b";
@@ -12170,7 +12170,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 49;
 metatable "hash_1f4f736cdb2bfc5";
@@ -12495,7 +12495,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 48;
 metatable "hash_88fcbeb512b8ce08";
@@ -12827,7 +12827,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 47;
 metatable "hash_904638a34b71b30c";
@@ -13158,7 +13158,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 46;
 metatable "hash_7294c08db40850ca";
@@ -13489,7 +13489,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 45;
 metatable "hash_35dd2ce07a9d0788";
@@ -13819,7 +13819,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 44;
 metatable "hash_f3bf4d2994d78ce5";
@@ -14149,7 +14149,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 43;
 metatable "hash_49e0f90c14993577";
@@ -14479,7 +14479,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 42;
 metatable "hash_1c585e55adaeb7e9";
@@ -14810,7 +14810,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/gametype_settings.ddl";
 version 41;
 metatable "hash_a34fa9a67d7efb78";

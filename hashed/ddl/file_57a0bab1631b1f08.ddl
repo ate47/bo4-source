@@ -92,7 +92,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_57a0bab1631b1f08";
 version 13;
 metatable "hash_ac9f920fb725c39c";
@@ -187,7 +187,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_57a0bab1631b1f08";
 version 12;
 metatable "hash_d060beb532221620";
@@ -282,7 +282,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_57a0bab1631b1f08";
 version 11;
 metatable "hash_cdde1ab232560e04";
@@ -377,7 +377,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_57a0bab1631b1f08";
 version 10;
 metatable "hash_22ef5b890febcabd";
@@ -470,7 +470,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_57a0bab1631b1f08";
 version 9;
 metatable "hash_95e6bc3291e4709b";
@@ -563,7 +563,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_57a0bab1631b1f08";
 version 8;
 metatable "hash_c204620a1304413e";
@@ -654,7 +654,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_57a0bab1631b1f08";
 version 7;
 metatable "hash_87e40a0c12080b05";
@@ -745,7 +745,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_57a0bab1631b1f08";
 version 6;
 metatable "hash_b26f5143be2d8c5a";
@@ -835,7 +835,7 @@ struct hash_24f699c797bc9492 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_57a0bab1631b1f08";
 version 5;
 metatable "hash_1d5c3658d6304a84";

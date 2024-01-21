@@ -17,7 +17,7 @@ struct player {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_12aa851b63b0f330";
 version 1;
 metatable "hash_f2ed4030b20e7b2b";

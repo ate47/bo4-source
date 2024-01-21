@@ -471,7 +471,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 173;
 metatable "hash_51157b499a9c0e47";
@@ -945,7 +945,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 172;
 metatable "hash_983ef397f5feab3a";
@@ -1418,7 +1418,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 171;
 metatable "hash_2a540da28b9faf37";
@@ -1890,7 +1890,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 170;
 metatable "hash_d33e1a77271c564a";
@@ -2361,7 +2361,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 169;
 metatable "hash_4a46d10263c44b2f";
@@ -2832,7 +2832,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 168;
 metatable "hash_9bd3740ad60cbaac";
@@ -3302,7 +3302,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 167;
 metatable "hash_4281d9ccf75fd77a";
@@ -3771,7 +3771,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 166;
 metatable "hash_68f64fba36b1e5d7";
@@ -4239,7 +4239,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 165;
 metatable "hash_fe1e6df01fed3eb2";
@@ -4707,7 +4707,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 164;
 metatable "hash_1d942fc0277ca93a";
@@ -5175,7 +5175,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 163;
 metatable "hash_9b7862351de36033";
@@ -5643,7 +5643,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 162;
 metatable "hash_796a6eddfb3e8390";
@@ -6111,7 +6111,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 161;
 metatable "hash_971cd983febd7b8d";
@@ -6579,7 +6579,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 160;
 metatable "hash_44141e8cf2665a15";
@@ -7047,7 +7047,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 159;
 metatable "hash_526f9c1c97d241de";
@@ -7515,7 +7515,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 158;
 metatable "hash_dbb89cdb96abddd2";
@@ -7983,7 +7983,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 157;
 metatable "hash_54199d58352fdbc";
@@ -8451,7 +8451,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 156;
 metatable "hash_3486edcbbf827069";
@@ -8919,7 +8919,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 155;
 metatable "hash_8023de7c43d7cfe7";
@@ -9387,7 +9387,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 154;
 metatable "hash_3e44b5f16bf10061";
@@ -9855,7 +9855,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 153;
 metatable "hash_95dc6277b638ad0";
@@ -10323,7 +10323,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 152;
 metatable "hash_413b84c6a60ef95c";
@@ -10788,7 +10788,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 151;
 metatable "hash_71584dc4fbc03a43";
@@ -11253,7 +11253,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 150;
 metatable "hash_7aeba16f2b8989f2";
@@ -11718,7 +11718,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 149;
 metatable "hash_f24de4658c1650e7";
@@ -12183,7 +12183,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 148;
 metatable "hash_d26b1e3b832334fd";
@@ -12648,7 +12648,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 147;
 metatable "hash_b6c3e946f278e3ae";
@@ -13113,7 +13113,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 146;
 metatable "hash_422cd318b19563a3";
@@ -13578,7 +13578,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 145;
 metatable "hash_b748f33720888003";
@@ -14043,7 +14043,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 144;
 metatable "hash_5ee7317644d871c6";
@@ -14508,7 +14508,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 143;
 metatable "hash_8dee8ac34aeedc91";
@@ -14973,7 +14973,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 142;
 metatable "hash_26706cd2ee7134be";
@@ -15438,7 +15438,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 141;
 metatable "hash_453af0dc80d91d57";
@@ -15903,7 +15903,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 140;
 metatable "hash_4342ea378dd62dc8";
@@ -16368,7 +16368,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 139;
 metatable "hash_f2b3a93174f80213";
@@ -16826,7 +16826,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 138;
 metatable "hash_86ae610ad3757f3f";
@@ -17284,7 +17284,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 137;
 metatable "hash_f55dc3400ec4eda8";
@@ -17731,7 +17731,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 136;
 metatable "hash_279b1def34674e61";
@@ -18169,7 +18169,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 135;
 metatable "hash_9d47ecd9ba5f8db";
@@ -18606,7 +18606,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 134;
 metatable "hash_fa422e82bd407050";
@@ -19043,7 +19043,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 133;
 metatable "hash_122db5a165c42a55";
@@ -19480,7 +19480,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 132;
 metatable "hash_1f3749ec1deff66c";
@@ -19914,7 +19914,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 131;
 metatable "hash_b26e726468bca88";
@@ -20348,7 +20348,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 130;
 metatable "hash_f7c57c2d9600503b";
@@ -20782,7 +20782,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 129;
 metatable "hash_d0d76c7c29a8ed3a";
@@ -21216,7 +21216,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 128;
 metatable "hash_5a64b685930d235";
@@ -21650,7 +21650,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 127;
 metatable "hash_7884974de8ecfd03";
@@ -22083,7 +22083,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 126;
 metatable "hash_6ebc4ac35a1d0bbc";
@@ -22516,7 +22516,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 125;
 metatable "hash_5661d3a7446837ca";
@@ -22949,7 +22949,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 124;
 metatable "hash_60543aebda4b8494";
@@ -23382,7 +23382,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 123;
 metatable "hash_113c58693a0f0679";
@@ -23814,7 +23814,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 122;
 metatable "hash_76aa57464778809a";
@@ -24246,7 +24246,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 121;
 metatable "hash_f8a2d5b8c422bd4b";
@@ -24678,7 +24678,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 120;
 metatable "hash_c12f1d062bc5f86";
@@ -25110,7 +25110,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 119;
 metatable "hash_315d5b50bd7f40e6";
@@ -25542,7 +25542,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 118;
 metatable "hash_1f16a6d8e120f3c4";
@@ -25974,7 +25974,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 117;
 metatable "hash_b4cb7bc64dcca8b";
@@ -26406,7 +26406,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 116;
 metatable "hash_5de9e9211c4793a5";
@@ -26838,7 +26838,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 115;
 metatable "hash_d186af2730ab81ef";
@@ -27270,7 +27270,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 114;
 metatable "hash_ef061a8a91d9a12c";
@@ -27702,7 +27702,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 113;
 metatable "hash_1159ac7b9ab7eef4";
@@ -28132,7 +28132,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 112;
 metatable "hash_3f43350d46d741b2";
@@ -28562,7 +28562,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 111;
 metatable "hash_3e717a70c795313a";
@@ -28992,7 +28992,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 110;
 metatable "hash_50c0bcf2b40c28fc";
@@ -29422,7 +29422,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 109;
 metatable "hash_4dabc41b26577c33";
@@ -29852,7 +29852,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 108;
 metatable "hash_4065653e15484aa5";
@@ -30281,7 +30281,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 107;
 metatable "hash_16e24696aac768dd";
@@ -30710,7 +30710,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 106;
 metatable "hash_58360f4a435a88d1";
@@ -31139,7 +31139,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 105;
 metatable "hash_b7b3d21fd22f5b90";
@@ -31568,7 +31568,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 104;
 metatable "hash_9fd27c3c470fc261";
@@ -31994,7 +31994,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 103;
 metatable "hash_ff95ca84a3e19a8";
@@ -32420,7 +32420,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 102;
 metatable "hash_6be5eb2594300a19";
@@ -32844,7 +32844,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 101;
 metatable "hash_4398bbc24a20769c";
@@ -33268,7 +33268,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 100;
 metatable "hash_ea76db1c62899768";
@@ -33692,7 +33692,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 99;
 metatable "hash_a9e944cb19269a94";
@@ -34115,7 +34115,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 98;
 metatable "hash_8c46d7c815011433";
@@ -34537,7 +34537,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 97;
 metatable "hash_8f2bbfe806eff737";
@@ -34959,7 +34959,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 96;
 metatable "hash_99b83ae6a951101b";
@@ -35381,7 +35381,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 95;
 metatable "hash_f251a3613875af0a";
@@ -35791,7 +35791,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 94;
 metatable "hash_f23216b9def48aa5";
@@ -36201,7 +36201,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 93;
 metatable "hash_652c8d3a3ea33477";
@@ -36611,7 +36611,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 92;
 metatable "hash_365b815c31331ab9";
@@ -37021,7 +37021,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 91;
 metatable "hash_214c2d0977ed4b2e";
@@ -37431,7 +37431,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 90;
 metatable "hash_a179f728d626fd2b";
@@ -37834,7 +37834,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 89;
 metatable "hash_6ebdcde53e058c51";
@@ -38237,7 +38237,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 88;
 metatable "hash_aa8c53acc898e6d2";
@@ -38634,7 +38634,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 87;
 metatable "hash_2549b0240dd864fb";
@@ -39030,7 +39030,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 86;
 metatable "hash_c24362394b5984a7";
@@ -39420,7 +39420,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 85;
 metatable "hash_bc028a7b766b61d9";
@@ -39809,7 +39809,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 84;
 metatable "hash_789ad7eb67e099d";
@@ -40198,7 +40198,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 83;
 metatable "hash_8995f8f8cd45495d";
@@ -40587,7 +40587,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 82;
 metatable "hash_aa4edd38fe5277e6";
@@ -40975,7 +40975,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 81;
 metatable "hash_f9c2be485a3755d2";
@@ -41363,7 +41363,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 80;
 metatable "hash_82d4168852f7d78c";
@@ -41751,7 +41751,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 79;
 metatable "hash_7ae9fe368bc2d997";
@@ -42120,7 +42120,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 78;
 metatable "hash_c58a745348e10f9c";
@@ -42489,7 +42489,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 77;
 metatable "hash_974d1983e6326082";
@@ -42858,7 +42858,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 76;
 metatable "hash_6e170474b71e6cce";
@@ -43227,7 +43227,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 75;
 metatable "hash_cd949a5643ae9c51";
@@ -43596,7 +43596,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 74;
 metatable "hash_5a4ff462f45bef23";
@@ -43965,7 +43965,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 73;
 metatable "hash_d3d5595ba46287fc";
@@ -44333,7 +44333,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 72;
 metatable "hash_84e4721449a79516";
@@ -44701,7 +44701,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 71;
 metatable "hash_f1b7f19e9936d99";
@@ -45069,7 +45069,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 70;
 metatable "hash_91b831642ed33016";
@@ -45436,7 +45436,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 69;
 metatable "hash_c58365b3f594208a";
@@ -45803,7 +45803,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 68;
 metatable "hash_578a6ccfa064081e";
@@ -46170,7 +46170,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 67;
 metatable "hash_4c0d7ac99ba31dbe";
@@ -46536,7 +46536,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 66;
 metatable "hash_2b0011a2adb20473";
@@ -46898,7 +46898,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 65;
 metatable "hash_44834324d896a43a";
@@ -47257,7 +47257,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 64;
 metatable "hash_8527a985dd041c60";
@@ -47616,7 +47616,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 63;
 metatable "hash_bcc61f50266a73c1";
@@ -47975,7 +47975,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 62;
 metatable "hash_5fb3c04bed326626";
@@ -48334,7 +48334,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 61;
 metatable "hash_3d05cff2f6558a86";
@@ -48692,7 +48692,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 60;
 metatable "hash_acf631fca1833071";
@@ -49049,7 +49049,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 59;
 metatable "hash_3f4f9e32ad9a6ce0";
@@ -49404,7 +49404,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 58;
 metatable "hash_acaa9ae2d33c02b0";
@@ -49758,7 +49758,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 57;
 metatable "hash_579425241ef9dca0";
@@ -50110,7 +50110,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 56;
 metatable "hash_47cb6283391ac7dc";
@@ -50461,7 +50461,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 55;
 metatable "hash_e9bcb48a6e80cef5";
@@ -50799,7 +50799,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 54;
 metatable "hash_de7e5c374a22a2dc";
@@ -51134,7 +51134,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 53;
 metatable "hash_a67a3d8b6e53d96a";
@@ -51468,7 +51468,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 52;
 metatable "hash_4e7605bb0ec13663";
@@ -51803,7 +51803,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 51;
 metatable "hash_956c7000cb56db23";
@@ -52136,7 +52136,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 50;
 metatable "hash_e626d0ed24001222";
@@ -52467,7 +52467,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 49;
 metatable "hash_afcc761d81b93153";
@@ -52791,7 +52791,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 48;
 metatable "hash_3da3c6c36a21c518";
@@ -53117,7 +53117,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 47;
 metatable "hash_da5444689a64c56e";
@@ -53441,7 +53441,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 46;
 metatable "hash_94f1bcd6e243601c";
@@ -53765,7 +53765,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 45;
 metatable "hash_1295513b7d573e6b";
@@ -54078,7 +54078,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 44;
 metatable "hash_45a43d598d47bb26";
@@ -54391,7 +54391,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 43;
 metatable "hash_3245ff14d4a06ade";
@@ -54704,7 +54704,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 42;
 metatable "hash_1fbb9e4a4a073dc6";
@@ -55016,7 +55016,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 41;
 metatable "hash_bd1191c530cbb382";
@@ -55326,7 +55326,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 40;
 metatable "hash_292cda28993d906";
@@ -55635,7 +55635,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 39;
 metatable "hash_a1b3110bdc17886f";
@@ -55942,7 +55942,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 38;
 metatable "hash_8b10e10ca60069ca";
@@ -56246,7 +56246,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 37;
 metatable "hash_b20cd033dce90e22";
@@ -56548,7 +56548,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 36;
 metatable "hash_67e60d590376884b";
@@ -56850,7 +56850,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 35;
 metatable "hash_47e7fc58f7e79a";
@@ -57152,7 +57152,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 34;
 metatable "hash_9d5201ad726e59fc";
@@ -57452,7 +57452,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 33;
 metatable "hash_100d14a91a7f8865";
@@ -57752,7 +57752,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 32;
 metatable "hash_28816134be039a16";
@@ -58048,7 +58048,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 31;
 metatable "hash_e457907065765eac";
@@ -58306,7 +58306,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 30;
 metatable "hash_4c8a71e709f68c88";
@@ -58562,7 +58562,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 29;
 metatable "hash_6a23965978a5f917";
@@ -58818,7 +58818,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 28;
 metatable "hash_cd6076d852af624a";
@@ -59074,7 +59074,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 27;
 metatable "hash_8da1a6cf86e04b55";
@@ -59330,7 +59330,7 @@ struct hash_1b2a05426d7c883b {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 26;
 metatable "hash_abb8b95ce2343617";
@@ -59516,7 +59516,7 @@ struct aarteammate {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 25;
 metatable "hash_4c29f38ec310f01d";
@@ -59702,7 +59702,7 @@ struct aarteammate {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 24;
 metatable "hash_a9b22461ce9f712";
@@ -59870,7 +59870,7 @@ struct prevscores {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 23;
 metatable "hash_1756cfb19012bac0";
@@ -60033,7 +60033,7 @@ struct prevscores {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 22;
 metatable "hash_7173ab09d545df91";
@@ -60195,7 +60195,7 @@ struct prevscores {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 21;
 metatable "hash_9b1d0a2572943c4c";
@@ -60351,7 +60351,7 @@ struct prevscores {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 20;
 metatable "hash_1b9b2e655980573c";
@@ -60511,7 +60511,7 @@ struct prevscores {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 19;
 metatable "hash_d877aa57079329e0";
@@ -60671,7 +60671,7 @@ struct prevscores {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 18;
 metatable "hash_8e8622e0e74c3c29";
@@ -60827,7 +60827,7 @@ struct prevscores {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 17;
 metatable "hash_65b3560cb407b1d1";
@@ -60971,7 +60971,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 16;
 metatable "hash_9dd724c03d780390";
@@ -61115,7 +61115,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 15;
 metatable "hash_a50fda282859ef8";
@@ -61259,7 +61259,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 14;
 metatable "hash_7a8d08f2a153f1b";
@@ -61387,7 +61387,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 13;
 metatable "hash_dc4f8e607e7232e1";
@@ -61515,7 +61515,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 12;
 metatable "hash_8acd4c1c025d67f6";
@@ -61655,7 +61655,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 11;
 metatable "hash_4da91968bfbb9c39";
@@ -61793,7 +61793,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 10;
 metatable "hash_ab7aa53f649d1033";
@@ -61931,7 +61931,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 9;
 metatable "hash_80d6c88fccfc8fce";
@@ -62063,7 +62063,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 8;
 metatable "hash_7f14f4bb12035239";
@@ -62195,7 +62195,7 @@ struct hash_25a11738b4152d0e {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 7;
 metatable "hash_a3d1fa888ee7e11a";
@@ -62242,7 +62242,7 @@ struct hash_25508de9fa29a5d5 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 6;
 metatable "hash_2bc6562770354b41";
@@ -62289,7 +62289,7 @@ struct hash_25508de9fa29a5d5 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 5;
 metatable "hash_87762d219d2fc068";
@@ -62336,7 +62336,7 @@ struct hash_25508de9fa29a5d5 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 4;
 metatable "hash_fd97cdff58516779";
@@ -62383,7 +62383,7 @@ struct hash_25508de9fa29a5d5 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 3;
 metatable "hash_21765e76d745577d";
@@ -62430,7 +62430,7 @@ struct hash_25508de9fa29a5d5 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/wz_progression.ddl";
 version 2;
 metatable "hash_13bd996f07edfd45";

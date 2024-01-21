@@ -80,7 +80,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/decals.ddl";
 version 13;
 metatable "hash_9d8ffaac7b793d05";
@@ -163,7 +163,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/decals.ddl";
 version 12;
 metatable "hash_3b069c89eb09afcf";
@@ -246,7 +246,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/decals.ddl";
 version 11;
 metatable "hash_c112676902dccd57";
@@ -329,7 +329,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/decals.ddl";
 version 10;
 metatable "hash_93023a9fdfb34c25";
@@ -410,7 +410,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/decals.ddl";
 version 9;
 metatable "hash_cea4e3e53b698127";
@@ -491,7 +491,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/decals.ddl";
 version 8;
 metatable "hash_b6400c3f7ebfd219";
@@ -570,7 +570,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/decals.ddl";
 version 7;
 metatable "hash_c7b0c61a0470d702";
@@ -649,7 +649,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/decals.ddl";
 version 6;
 metatable "hash_7cfdb3298eacbe25";
@@ -728,7 +728,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/decals.ddl";
 version 5;
 metatable "hash_577f0befee77f9a5";

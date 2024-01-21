@@ -297,7 +297,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 110;
 metatable "hash_4501004673d1ec44";
@@ -597,7 +597,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 109;
 metatable "hash_6358e16923c90a85";
@@ -897,7 +897,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 108;
 metatable "hash_f3bf8209412f911e";
@@ -1197,7 +1197,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 107;
 metatable "hash_c54842624542c23e";
@@ -1497,7 +1497,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 106;
 metatable "hash_56a24ba69317be26";
@@ -1797,7 +1797,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 105;
 metatable "hash_a62a6986fd134ac3";
@@ -2097,7 +2097,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 104;
 metatable "hash_c9d7ef4ef1e34c12";
@@ -2383,7 +2383,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 103;
 metatable "hash_759b3c47df046e82";
@@ -2669,7 +2669,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 102;
 metatable "hash_5a68e38cd0025058";
@@ -2955,7 +2955,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 101;
 metatable "hash_5f74190493ef16ce";
@@ -3241,7 +3241,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 100;
 metatable "hash_b3049a974e728c09";
@@ -3527,7 +3527,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 99;
 metatable "hash_bfa600cd9b1c53e6";
@@ -3813,7 +3813,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 98;
 metatable "hash_31250287d4ef5faf";
@@ -4095,7 +4095,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 97;
 metatable "hash_7de0ab18088d43cc";
@@ -4373,7 +4373,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 96;
 metatable "hash_dc54e5eaaad2628f";
@@ -4651,7 +4651,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 95;
 metatable "hash_11107a255b450e36";
@@ -4919,7 +4919,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 94;
 metatable "hash_78f3071318349e02";
@@ -5187,7 +5187,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 93;
 metatable "hash_3766743d36053c46";
@@ -5455,7 +5455,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 92;
 metatable "hash_ab5652d5f5c54554";
@@ -5713,7 +5713,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 91;
 metatable "hash_ea1702315ab41360";
@@ -5969,7 +5969,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 90;
 metatable "hash_a9560b252d7c6361";
@@ -6225,7 +6225,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 89;
 metatable "hash_bcbf7f63169c2a9e";
@@ -6479,7 +6479,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 88;
 metatable "hash_f8456fc52500d542";
@@ -6733,7 +6733,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 87;
 metatable "hash_f4fbb5500f05b711";
@@ -6986,7 +6986,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 86;
 metatable "hash_3cdf8023821eb7a1";
@@ -7237,7 +7237,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 85;
 metatable "hash_7e423cd4a3ccd827";
@@ -7488,7 +7488,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 84;
 metatable "hash_61982b24ab16b700";
@@ -7738,7 +7738,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 83;
 metatable "hash_d5045f7d234a8d8e";
@@ -7988,7 +7988,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 82;
 metatable "hash_520489be071a3f83";
@@ -8237,7 +8237,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 81;
 metatable "hash_2ee6107fc56ff6e8";
@@ -8484,7 +8484,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 80;
 metatable "hash_2cda320ee12089e4";
@@ -8730,7 +8730,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 79;
 metatable "hash_3aa347c7c8c709aa";
@@ -8975,7 +8975,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 78;
 metatable "hash_b40ff7c36128da3e";
@@ -9219,7 +9219,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 77;
 metatable "hash_e13d0dad147eebfd";
@@ -9463,7 +9463,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 76;
 metatable "hash_77d42257e608f65f";
@@ -9705,7 +9705,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 75;
 metatable "hash_4e7bc38aa14f069c";
@@ -9947,7 +9947,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 74;
 metatable "hash_11c28a328a5292d9";
@@ -10186,7 +10186,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 73;
 metatable "hash_26a1583bf3e4bec4";
@@ -10424,7 +10424,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 72;
 metatable "hash_66423db596e705be";
@@ -10662,7 +10662,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 71;
 metatable "hash_6ea3a6b529ef3616";
@@ -10899,7 +10899,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 70;
 metatable "hash_daa6c8bdfad68be2";
@@ -11136,7 +11136,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 63;
 metatable "hash_d1c97bea97a26423";
@@ -11372,7 +11372,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 62;
 metatable "hash_1c4d1b3bf608084b";
@@ -11607,7 +11607,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 61;
 metatable "hash_7af9bd0a2f772e6";
@@ -11841,7 +11841,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 60;
 metatable "hash_cca4344684b6672b";
@@ -12073,7 +12073,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 59;
 metatable "hash_b1e949f849fd36c0";
@@ -12305,7 +12305,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 58;
 metatable "hash_aa339478b8866de6";
@@ -12536,7 +12536,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 57;
 metatable "hash_f8ce6411f06d0e46";
@@ -12766,7 +12766,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 56;
 metatable "hash_941b376ad39fc540";
@@ -12995,7 +12995,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 55;
 metatable "hash_83532c970242261b";
@@ -13224,7 +13224,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 54;
 metatable "hash_4695ce5b6aaa1a43";
@@ -13451,7 +13451,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 53;
 metatable "hash_6e6bd2d6722739d0";
@@ -13678,7 +13678,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 52;
 metatable "hash_4ec2e71aea62ef63";
@@ -13905,7 +13905,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 51;
 metatable "hash_2951f915e5698e46";
@@ -14131,7 +14131,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 50;
 metatable "hash_c31438f45376ee48";
@@ -14356,7 +14356,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 49;
 metatable "hash_579e7458eca4570d";
@@ -14580,7 +14580,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 48;
 metatable "hash_39d2e64c642074c7";
@@ -14804,7 +14804,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 47;
 metatable "hash_3b5985df9625153e";
@@ -15027,7 +15027,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 46;
 metatable "hash_11d61289eb145aed";
@@ -15249,7 +15249,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 45;
 metatable "hash_2820d06d599306bd";
@@ -15470,7 +15470,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 44;
 metatable "hash_3e0f49a14b199968";
@@ -15691,7 +15691,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 43;
 metatable "hash_c44ee92192c79f";
@@ -15911,7 +15911,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 42;
 metatable "hash_81d39e6bc34531b1";
@@ -16131,7 +16131,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 41;
 metatable "hash_e70b6c7d3ddbde5b";
@@ -16349,7 +16349,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 40;
 metatable "hash_27af6358d57c01ff";
@@ -16565,7 +16565,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 39;
 metatable "hash_9bceb55433a5537";
@@ -16780,7 +16780,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 38;
 metatable "hash_13f70f7721f4eacc";
@@ -16993,7 +16993,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 37;
 metatable "hash_e114980be57e862c";
@@ -17201,7 +17201,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 36;
 metatable "hash_7376dc63934edd10";
@@ -17407,7 +17407,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 35;
 metatable "hash_9dab92a1c912444f";
@@ -17613,7 +17613,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 34;
 metatable "hash_613595636f7e3fd5";
@@ -17819,7 +17819,7 @@ struct selectedcharacter {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 33;
 metatable "hash_c56eee1b94660a36";
@@ -18020,7 +18020,7 @@ struct root {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 32;
 metatable "hash_7618d667845a6c8d";
@@ -18219,7 +18219,7 @@ struct root {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 31;
 metatable "hash_7cd5d84fa4a0ca6e";
@@ -18418,7 +18418,7 @@ struct root {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 30;
 metatable "hash_d7ae957909bf0ff9";
@@ -18615,7 +18615,7 @@ struct root {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 29;
 metatable "hash_9c3f7fdd8d2dd291";
@@ -18811,7 +18811,7 @@ struct root {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 28;
 metatable "hash_92ecb3ddd9176cd2";
@@ -19005,7 +19005,7 @@ struct root {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 27;
 metatable "hash_f515930486cd0802";
@@ -19198,7 +19198,7 @@ struct root {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 26;
 metatable "hash_a105001518f47154";
@@ -19390,7 +19390,7 @@ struct root {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/profile_common.ddl";
 version 25;
 metatable "hash_a124bf9fc78a1f26";

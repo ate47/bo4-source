@@ -27,7 +27,7 @@ enum trainingstate {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2692d36c334b5eb8";
 version 2;
 metatable "hash_1044f9ae2dc599b6";
@@ -56,7 +56,7 @@ enum trainingstate {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_2692d36c334b5eb8";
 version 1;
 metatable "hash_c3f720767fd2ae89";

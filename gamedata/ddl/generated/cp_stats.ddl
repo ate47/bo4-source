@@ -358,7 +358,7 @@ struct hash_2f60329a207db2b8 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_stats.ddl";
 version 18;
 metatable "hash_afe1d1921c4dede1";
@@ -719,7 +719,7 @@ struct hash_2f60329a207db2b8 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_stats.ddl";
 version 17;
 metatable "hash_298315c475e28de2";
@@ -1080,7 +1080,7 @@ struct hash_2f60329a207db2b8 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_stats.ddl";
 version 16;
 metatable "hash_15439fd61ac36bd8";

@@ -53,7 +53,7 @@ struct hash_7b048091b1488cec {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_6c6e7bcb4dd3b68d";
 version 3;
 metatable "hash_805abbe2db900e67";
@@ -108,7 +108,7 @@ struct hash_7b048091b1488cec {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_6c6e7bcb4dd3b68d";
 version 2;
 metatable "hash_7fad767f5bd5fce0";
@@ -161,7 +161,7 @@ struct hash_7b048091b1488cec {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "hash_6c6e7bcb4dd3b68d";
 version 1;
 metatable "hash_b960856603728695";

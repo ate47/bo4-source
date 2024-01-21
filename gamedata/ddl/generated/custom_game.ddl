@@ -1471,7 +1471,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 155;
 metatable "hash_d16389011daa9794";
@@ -2945,7 +2945,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 154;
 metatable "hash_3307c427ab56b4dc";
@@ -4419,7 +4419,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 153;
 metatable "hash_e0b5e829829a3a87";
@@ -5893,7 +5893,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 152;
 metatable "hash_dc6aa6072e521438";
@@ -7353,7 +7353,7 @@ struct hash_58395f63c066c3fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 151;
 metatable "hash_5411c3e0f78f257";
@@ -8807,7 +8807,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 150;
 metatable "hash_33e8735cbb998edd";
@@ -10261,7 +10261,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 149;
 metatable "hash_31888080865d68ea";
@@ -11715,7 +11715,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 148;
 metatable "hash_8283006d23c08263";
@@ -13168,7 +13168,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 147;
 metatable "hash_b034f43942a13d58";
@@ -14610,7 +14610,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 146;
 metatable "hash_fe46d57e026ca06e";
@@ -16046,7 +16046,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 145;
 metatable "hash_a475c61a57f67e78";
@@ -17482,7 +17482,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 144;
 metatable "hash_3ef1062423db7a1";
@@ -18918,7 +18918,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 143;
 metatable "hash_df7a60bf259a3aba";
@@ -20353,7 +20353,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 142;
 metatable "hash_d0bc7eb12b2bc80c";
@@ -21788,7 +21788,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 141;
 metatable "hash_83e36a2192b66426";
@@ -23224,7 +23224,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 140;
 metatable "hash_5708c8df04b7a162";
@@ -24660,7 +24660,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 139;
 metatable "hash_145ba277bfb25a0a";
@@ -26082,7 +26082,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 138;
 metatable "hash_f8e6de52b2ad1ab2";
@@ -27503,7 +27503,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 137;
 metatable "hash_25d6fd7c1fac09c0";
@@ -28919,7 +28919,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 136;
 metatable "hash_c070a8694c8fa3bc";
@@ -30335,7 +30335,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 135;
 metatable "hash_c829362273e88834";
@@ -31751,7 +31751,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 134;
 metatable "hash_6949a4b7ed37aa46";
@@ -33132,7 +33132,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 133;
 metatable "hash_7cb2d276394a0b7";
@@ -34508,7 +34508,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 132;
 metatable "hash_bd21b3d5db713845";
@@ -35877,7 +35877,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 131;
 metatable "hash_e00df2b9d39d40ac";
@@ -37240,7 +37240,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 130;
 metatable "hash_85aa8fab5100f100";
@@ -38603,7 +38603,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 129;
 metatable "hash_9fca8cdc0c7e3f27";
@@ -39966,7 +39966,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 128;
 metatable "hash_1d5c61ab7f1857fc";
@@ -41329,7 +41329,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 127;
 metatable "hash_ebe95fa5f5a6278f";
@@ -42698,7 +42698,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 126;
 metatable "hash_f326a687e6cd7306";
@@ -44067,7 +44067,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 125;
 metatable "hash_325ebd5e3b623ab7";
@@ -45436,7 +45436,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 124;
 metatable "hash_aaa49964367f6ea9";
@@ -46805,7 +46805,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 123;
 metatable "hash_43194c98fddaa11d";
@@ -48173,7 +48173,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 122;
 metatable "hash_112c3b52a9542c45";
@@ -49539,7 +49539,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 121;
 metatable "hash_e998473915a4525d";
@@ -50898,7 +50898,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 120;
 metatable "hash_bee43c797919f86f";
@@ -52257,7 +52257,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 119;
 metatable "hash_bb64a052338d4baf";
@@ -53611,7 +53611,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 118;
 metatable "hash_23311db4f1e9ce8f";
@@ -54961,7 +54961,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 117;
 metatable "hash_65936145d0a7d7fd";
@@ -56605,7 +56605,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 116;
 metatable "hash_191e336415cce97c";
@@ -58249,7 +58249,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 115;
 metatable "hash_b7e8eeeeb08fdffc";
@@ -59891,7 +59891,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 114;
 metatable "hash_aca591081b14159e";
@@ -61532,7 +61532,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 113;
 metatable "hash_4be77983ddae1ee7";
@@ -63172,7 +63172,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 112;
 metatable "hash_d65e343eeedf5211";
@@ -64813,7 +64813,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 111;
 metatable "hash_b7fe72010ee1ae5b";
@@ -66454,7 +66454,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 110;
 metatable "hash_76995752d4039cd";
@@ -68094,7 +68094,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 109;
 metatable "hash_835ce231a52e2307";
@@ -69732,7 +69732,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 108;
 metatable "hash_77346486f5e3e496";
@@ -71370,7 +71370,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 107;
 metatable "hash_71cfbbdf97652591";
@@ -73007,7 +73007,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 106;
 metatable "hash_7078ee0cbb3aa395";
@@ -74642,7 +74642,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 105;
 metatable "hash_da1b88d082f6eb2d";
@@ -76274,7 +76274,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 104;
 metatable "hash_277b8eb2462ccf09";
@@ -77901,7 +77901,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 103;
 metatable "hash_7b625f08a1c67f3";
@@ -79506,7 +79506,7 @@ struct hash_58395f63c066c3fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 102;
 metatable "hash_f4ba3ead7c92f558";
@@ -81106,7 +81106,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 101;
 metatable "hash_fbfbd4c02408a666";
@@ -82701,7 +82701,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 100;
 metatable "hash_69e909b2402bd0fa";
@@ -84296,7 +84296,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 99;
 metatable "hash_e0fa64f7af8caced";
@@ -85891,7 +85891,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 98;
 metatable "hash_2ed203c74da07751";
@@ -87486,7 +87486,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 97;
 metatable "hash_ab0321b178fc00f7";
@@ -89081,7 +89081,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 96;
 metatable "hash_a6d0163221fb64e9";
@@ -90676,7 +90676,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 95;
 metatable "hash_c5a468583cee85b4";
@@ -92271,7 +92271,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 94;
 metatable "hash_de40adc7b5b7cf49";
@@ -93865,7 +93865,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 93;
 metatable "hash_db1263c7a614b30e";
@@ -95445,7 +95445,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 92;
 metatable "hash_c6373f32105870a3";
@@ -97020,7 +97020,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 91;
 metatable "hash_e34faf53eae3a345";
@@ -98593,7 +98593,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 90;
 metatable "hash_9deebd43d349764";
@@ -100146,7 +100146,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 89;
 metatable "hash_a428a69d78fdd090";
@@ -101698,7 +101698,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 88;
 metatable "hash_144a3f05bb6778a";
@@ -103248,7 +103248,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 87;
 metatable "hash_7a383e1fe7bac067";
@@ -104796,7 +104796,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 86;
 metatable "hash_47b344573b32bb3a";
@@ -106344,7 +106344,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 85;
 metatable "hash_2d587f5e81a72259";
@@ -107894,7 +107894,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 84;
 metatable "hash_14438726c6cd4d8e";
@@ -109442,7 +109442,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 83;
 metatable "hash_2a69a32c7ac24609";
@@ -110984,7 +110984,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 82;
 metatable "hash_ff213fa384003ad3";
@@ -112524,7 +112524,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 81;
 metatable "hash_50e02be0668e701";
@@ -114060,7 +114060,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 80;
 metatable "hash_57df40fbd67648c0";
@@ -115591,7 +115591,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 79;
 metatable "hash_ec807a82629d9c99";
@@ -117122,7 +117122,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 78;
 metatable "hash_c5b5c8d6781da83";
@@ -118443,7 +118443,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 77;
 metatable "hash_1126c6d8ea83c87b";
@@ -119764,7 +119764,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 76;
 metatable "hash_b12603200fe7979c";
@@ -121084,7 +121084,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 75;
 metatable "hash_4a4f6dcbd1679b69";
@@ -121784,7 +121784,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 74;
 metatable "hash_8c54b4186e2e6305";
@@ -122483,7 +122483,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 73;
 metatable "hash_1a4e977d396fc43c";
@@ -123180,7 +123180,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 72;
 metatable "hash_b19399a9996dad46";
@@ -123877,7 +123877,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 71;
 metatable "hash_fa48adfa82e7fc49";
@@ -124574,7 +124574,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 70;
 metatable "hash_37273e5041581567";
@@ -125269,7 +125269,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 69;
 metatable "hash_a660dcbac02457d7";
@@ -125964,7 +125964,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 68;
 metatable "hash_97abc8b9ef1fb527";
@@ -126657,7 +126657,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 67;
 metatable "hash_dd54acdd9cd01bfb";
@@ -127350,7 +127350,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 66;
 metatable "hash_f36ebca9d06e277c";
@@ -128043,7 +128043,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 65;
 metatable "hash_60bdb7eccf3d974f";
@@ -128738,7 +128738,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 64;
 metatable "hash_70bb5511b5e49af7";
@@ -129433,7 +129433,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 63;
 metatable "hash_e8db37eec02c1c07";
@@ -130127,7 +130127,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 62;
 metatable "hash_5bee503cd726018";
@@ -130821,7 +130821,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 61;
 metatable "hash_74b7915cdb23ca44";
@@ -131514,7 +131514,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 60;
 metatable "hash_4bc1b874b7edda89";
@@ -132207,7 +132207,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 59;
 metatable "hash_c9184ebf65f98259";
@@ -132900,7 +132900,7 @@ struct mploadoutweapon {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 58;
 metatable "hash_ac8d573e574351e9";
@@ -133233,7 +133233,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 57;
 metatable "hash_1c877fe5d1b8b8e3";
@@ -133566,7 +133566,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 56;
 metatable "hash_a382bedcb7d1829e";
@@ -133899,7 +133899,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 55;
 metatable "hash_fc239c5f586435dc";
@@ -134232,7 +134232,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 54;
 metatable "hash_69ae36d2c56c8a8e";
@@ -134565,7 +134565,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 53;
 metatable "hash_43ef7982b178fe79";
@@ -134898,7 +134898,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 52;
 metatable "hash_27683adc82228914";
@@ -135230,7 +135230,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 51;
 metatable "hash_d19b431389552fc8";
@@ -135562,7 +135562,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 50;
 metatable "hash_bfab56e9390e9c00";
@@ -135894,7 +135894,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 49;
 metatable "hash_54ed732caa6e08ce";
@@ -136226,7 +136226,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 48;
 metatable "hash_a511ae9a0cd6fe06";
@@ -136565,7 +136565,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 47;
 metatable "hash_98b84417f122d0d1";
@@ -136903,7 +136903,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 46;
 metatable "hash_d6f00426b7142d64";
@@ -137241,7 +137241,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 45;
 metatable "hash_5e5bbb299f897792";
@@ -137578,7 +137578,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 44;
 metatable "hash_7d3583b5883aefe7";
@@ -137915,7 +137915,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 43;
 metatable "hash_da1f51ea9cbe4232";
@@ -138252,7 +138252,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 42;
 metatable "hash_8f8dc8662386d7c8";
@@ -138590,7 +138590,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_game.ddl";
 version 41;
 metatable "hash_2552850f03f4772e";

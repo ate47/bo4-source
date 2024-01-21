@@ -94,7 +94,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/groups.ddl";
 version 13;
 metatable "hash_aacfd8f302894f18";
@@ -191,7 +191,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/groups.ddl";
 version 12;
 metatable "hash_b51444ac373433b2";
@@ -288,7 +288,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/groups.ddl";
 version 11;
 metatable "hash_f10802564c441915";
@@ -385,7 +385,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/groups.ddl";
 version 10;
 metatable "hash_b02b641c6e19881b";
@@ -480,7 +480,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/groups.ddl";
 version 9;
 metatable "hash_16c607b3cd67f60a";
@@ -575,7 +575,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/groups.ddl";
 version 8;
 metatable "hash_74d572cc23478690";
@@ -668,7 +668,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/groups.ddl";
 version 7;
 metatable "hash_44fd30909a720bf2";
@@ -761,7 +761,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/groups.ddl";
 version 6;
 metatable "hash_e1006ea390d990b0";
@@ -854,7 +854,7 @@ struct emblemlayer {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/groups.ddl";
 version 5;
 metatable "hash_248c7df9f7ea4d18";

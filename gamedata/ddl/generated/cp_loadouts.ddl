@@ -75,7 +75,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 65;
 metatable "hash_8550f98efa676dd0";
@@ -153,7 +153,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 64;
 metatable "hash_6da40b6a2f1aab35";
@@ -231,7 +231,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 63;
 metatable "hash_1e3dc61a4842f371";
@@ -309,7 +309,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 62;
 metatable "hash_88deefa7e36323dc";
@@ -387,7 +387,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 61;
 metatable "hash_b9ff184b81cb3462";
@@ -465,7 +465,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 60;
 metatable "hash_23d4ed929031881a";
@@ -543,7 +543,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 59;
 metatable "hash_e618593c97d2eee";
@@ -621,7 +621,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 58;
 metatable "hash_261f5b85e882ca1";
@@ -699,7 +699,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 57;
 metatable "hash_2448eb68f9e1038";
@@ -778,7 +778,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 56;
 metatable "hash_4661236214fdf257";
@@ -858,7 +858,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 55;
 metatable "hash_af0fe3a622201a45";
@@ -938,7 +938,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 54;
 metatable "hash_83fa5ed87f53e0e8";
@@ -1018,7 +1018,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 53;
 metatable "hash_f1a03ba52c7c15fa";
@@ -1098,7 +1098,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 52;
 metatable "hash_43f38751263e40de";
@@ -1178,7 +1178,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 51;
 metatable "hash_7c170d35dbaed6fe";
@@ -1257,7 +1257,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 50;
 metatable "hash_d1268c3617327c73";
@@ -1336,7 +1336,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 49;
 metatable "hash_2caf5464ac15d750";
@@ -1413,7 +1413,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 48;
 metatable "hash_821059804bc7438";
@@ -1490,7 +1490,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 47;
 metatable "hash_e14713b7b6acb126";
@@ -1568,7 +1568,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 46;
 metatable "hash_53e04852b01962ec";
@@ -1646,7 +1646,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 45;
 metatable "hash_af5bfa85276c9f5d";
@@ -1724,7 +1724,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 44;
 metatable "hash_41830f3c37bb4bcb";
@@ -1802,7 +1802,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 43;
 metatable "hash_2440dec4cd204333";
@@ -1878,7 +1878,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 42;
 metatable "hash_7f7556b5dc3432c4";
@@ -1954,7 +1954,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 41;
 metatable "hash_ee087cf109369bc3";
@@ -2030,7 +2030,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 40;
 metatable "hash_e44ccbf6b9555e1e";
@@ -2106,7 +2106,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 39;
 metatable "hash_74077767d8fdf1a0";
@@ -2182,7 +2182,7 @@ struct hash_705fa6d3f50ff148 {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 38;
 metatable "hash_9ed442352dff6883";
@@ -2261,7 +2261,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 37;
 metatable "hash_a822e8b6ae58b872";
@@ -2340,7 +2340,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 36;
 metatable "hash_36868703ce420264";
@@ -2419,7 +2419,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 35;
 metatable "hash_ddf226f49994a057";
@@ -2498,7 +2498,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 34;
 metatable "hash_77b077138dcd3fd1";
@@ -2577,7 +2577,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 33;
 metatable "hash_a4b0f961735d25fb";
@@ -2670,7 +2670,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 32;
 metatable "hash_e83e8efd4d0c4e9";
@@ -2762,7 +2762,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 31;
 metatable "hash_28df94b7eed394f7";
@@ -2854,7 +2854,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 30;
 metatable "hash_2b5ec6f7873cb72f";
@@ -2946,7 +2946,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 29;
 metatable "hash_ab3f9b8d0e224592";
@@ -3038,7 +3038,7 @@ struct hash_487a06a811f1cadc {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 28;
 metatable "hash_b4271f647edc73c0";
@@ -3141,7 +3141,7 @@ struct mix_s {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/cp_loadouts.ddl";
 version 27;
 metatable "hash_9e03260791a46c6f";

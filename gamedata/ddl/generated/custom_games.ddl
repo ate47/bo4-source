@@ -341,7 +341,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 85;
 metatable "hash_ea10e4a43069f264";
@@ -685,7 +685,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 84;
 metatable "hash_35e41bd338827750";
@@ -1029,7 +1029,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 83;
 metatable "hash_6f45182684d596d8";
@@ -1373,7 +1373,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 82;
 metatable "hash_5a75718f221d61db";
@@ -1717,7 +1717,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 81;
 metatable "hash_8f7e1b3446631111";
@@ -2061,7 +2061,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 80;
 metatable "hash_be8b1bd095a094c6";
@@ -2405,7 +2405,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 79;
 metatable "hash_d2c4ce12c4a67a66";
@@ -2749,7 +2749,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 78;
 metatable "hash_33579f146c833fc5";
@@ -3093,7 +3093,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 77;
 metatable "hash_c8187c4daf522316";
@@ -3437,7 +3437,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 76;
 metatable "hash_92e8805ee53b36db";
@@ -3781,7 +3781,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 75;
 metatable "hash_721dd9eac58eeb66";
@@ -4125,7 +4125,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 74;
 metatable "hash_f9e35020cf6cfa04";
@@ -4469,7 +4469,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 73;
 metatable "hash_526b5fe5725d4ab";
@@ -4813,7 +4813,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 72;
 metatable "hash_1412a7628b750ee4";
@@ -5155,7 +5155,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 71;
 metatable "hash_3e7176864f6907fd";
@@ -5497,7 +5497,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 70;
 metatable "hash_4e20fb90962c5791";
@@ -5839,7 +5839,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 69;
 metatable "hash_feaac979e71cd81a";
@@ -6181,7 +6181,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 68;
 metatable "hash_a6b76513baeef6a8";
@@ -6521,7 +6521,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 67;
 metatable "hash_52282fd2ea83e256";
@@ -6861,7 +6861,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 66;
 metatable "hash_a2bdc6feddd49f65";
@@ -7201,7 +7201,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 65;
 metatable "hash_7a475e9a1926bbd3";
@@ -7541,7 +7541,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 64;
 metatable "hash_bbae796a6fd62368";
@@ -7881,7 +7881,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 63;
 metatable "hash_95d73fcbd60e4513";
@@ -8221,7 +8221,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 62;
 metatable "hash_a300a0837905ff3c";
@@ -8561,7 +8561,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 61;
 metatable "hash_85a60a1e27126105";
@@ -8899,7 +8899,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 60;
 metatable "hash_e2911d82458587ac";
@@ -9237,7 +9237,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 59;
 metatable "hash_ecf8c25b282501d3";
@@ -9575,7 +9575,7 @@ struct hash_20631b664715b1fa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 58;
 metatable "hash_aa1bc55f6b404648";
@@ -9913,7 +9913,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 57;
 metatable "hash_bd0578de013b373a";
@@ -10251,7 +10251,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 56;
 metatable "hash_425dae3068dc87f6";
@@ -10589,7 +10589,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 55;
 metatable "hash_5b82a067e649aac7";
@@ -10927,7 +10927,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 54;
 metatable "hash_b005bcf331523d76";
@@ -11265,7 +11265,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 53;
 metatable "hash_e57b67cc3bcd0d07";
@@ -11603,7 +11603,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 52;
 metatable "hash_ff08da16fd47546f";
@@ -11940,7 +11940,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 51;
 metatable "hash_9cfa4aed9c161634";
@@ -12277,7 +12277,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 50;
 metatable "hash_e1132106a562328a";
@@ -12614,7 +12614,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 49;
 metatable "hash_fed16a93fa458a79";
@@ -12951,7 +12951,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 48;
 metatable "hash_482829e386f2d0e3";
@@ -13295,7 +13295,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 47;
 metatable "hash_b36a79b4ef100d29";
@@ -13638,7 +13638,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 46;
 metatable "hash_6199ebbe8b18f32a";
@@ -13981,7 +13981,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 45;
 metatable "hash_df78b5eb7fda9138";
@@ -14323,7 +14323,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 44;
 metatable "hash_b2ce47cb83c18304";
@@ -14665,7 +14665,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 43;
 metatable "hash_5cf9d9471d449b23";
@@ -15007,7 +15007,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 42;
 metatable "hash_9b0d82bbd48d3325";
@@ -15350,7 +15350,7 @@ struct hash_2c79abcce61676aa {
 };
 
 
-,
+/////////////////////////////////////////////////
 begin "gamedata/ddl/generated/custom_games.ddl";
 version 41;
 metatable "hash_809976ab92ffb4d7";
