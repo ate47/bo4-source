@@ -8,7 +8,7 @@ struct root {
     telemetry_header telemetry;
     hash_5e61b013683f3eba hash_326402d544e6c4a7;
     client_header client;
-    string hash_7bf9daccc9b256dd;
+    char hash_7bf9daccc9b256dd[32];
 };
 
 struct match_header {
@@ -26,9 +26,9 @@ struct hash_3754ae573cf9924d {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
@@ -56,7 +56,7 @@ struct hash_5e61b013683f3eba {
     int32 playlist_version;
     int32 ffotd_version;
     uint64 hash_5adcb2e00ec9eab1;
-    string hash_5e523aef49ce7554;
+    char hash_5e523aef49ce7554[32];
     int8 hash_22bebb24c7131b96;
     bit hash_329a52ffc78a973;
     bit is_dedi;

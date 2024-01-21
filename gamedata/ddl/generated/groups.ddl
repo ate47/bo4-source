@@ -3,9 +3,9 @@ version 14;
 metatable "hash_d304802dfebc34d7";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -13,8 +13,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;
@@ -100,9 +100,9 @@ version 13;
 metatable "hash_aacfd8f302894f18";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -110,8 +110,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;
@@ -197,9 +197,9 @@ version 12;
 metatable "hash_b51444ac373433b2";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -207,8 +207,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;
@@ -294,9 +294,9 @@ version 11;
 metatable "hash_f10802564c441915";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -304,8 +304,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;
@@ -391,9 +391,9 @@ version 10;
 metatable "hash_b02b641c6e19881b";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -401,8 +401,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;
@@ -486,9 +486,9 @@ version 9;
 metatable "hash_16c607b3cd67f60a";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -496,8 +496,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;
@@ -581,9 +581,9 @@ version 8;
 metatable "hash_74d572cc23478690";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -591,8 +591,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;
@@ -674,9 +674,9 @@ version 7;
 metatable "hash_44fd30909a720bf2";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -684,8 +684,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;
@@ -767,9 +767,9 @@ version 6;
 metatable "hash_e1006ea390d990b0";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -777,8 +777,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;
@@ -860,9 +860,9 @@ version 5;
 metatable "hash_248c7df9f7ea4d18";
 
 struct root {
-    string ownername;
-    string message;
-    string description;
+    char ownername[32];
+    char message[255];
+    char description[80];
     leaderboard leaderboard;
     emblem emblem;
     uint64 creationtimestamp;
@@ -870,8 +870,8 @@ struct root {
 
 struct leaderboard {
     uint32 timeframe;
-    string leaderboarddef;
-    string sorttype;
+    char leaderboarddef[64];
+    char sorttype[16];
     bit initialized;
     bit isarena;
     bit ishardcore;

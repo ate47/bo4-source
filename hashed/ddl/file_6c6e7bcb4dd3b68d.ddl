@@ -7,14 +7,14 @@ struct root {
     short arenachallengeseasons[12];
     arenastats arenaperseasonstats;
     arenastats arenastats[9];
-    string hash_7d19b83705dea420;
+    char hash_7d19b83705dea420[32];
 };
 
 struct arenastats {
-    fixedpoint skill;
+    float skill;
     hash_23802d45f95d62c2 hash_4986c748eb81d3c5;
     hash_3bdd45425562efbc rankedplaystats;
-    fixedpoint variance;
+    float variance;
     short season;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
@@ -63,14 +63,14 @@ struct root {
     short arenachallengeseasons[12];
     arenastats arenaperseasonstats;
     arenastats arenastats[9];
-    string hash_7d19b83705dea420;
+    char hash_7d19b83705dea420[32];
 };
 
 struct arenastats {
-    fixedpoint skill;
+    float skill;
     hash_23802d45f95d62c2 hash_4986c748eb81d3c5;
     hash_3bdd45425562efbc rankedplaystats;
-    fixedpoint variance;
+    float variance;
     short season;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
@@ -118,14 +118,14 @@ struct root {
     short arenachallengeseasons[12];
     arenastats arenaperseasonstats;
     arenastats arenastats[9];
-    string hash_7d19b83705dea420;
+    char hash_7d19b83705dea420[32];
 };
 
 struct arenastats {
-    fixedpoint skill;
+    float skill;
     hash_23802d45f95d62c2 hash_4986c748eb81d3c5;
     hash_3bdd45425562efbc rankedplaystats;
-    fixedpoint variance;
+    float variance;
     short season;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
@@ -170,14 +170,14 @@ struct root {
     arenastats arenabest;
     arenastats arenaperseasonstats;
     arenastats arenastats[9];
-    string hash_7d19b83705dea420;
+    char hash_7d19b83705dea420[32];
 };
 
 struct arenastats {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;

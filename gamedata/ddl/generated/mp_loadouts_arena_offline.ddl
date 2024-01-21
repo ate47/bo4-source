@@ -16,7 +16,7 @@ struct root {
 struct hash_7dc6a8bfa8184f33 {
     byte loadoutversion;
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -65,7 +65,7 @@ struct root {
 struct hash_7dc6a8bfa8184f33 {
     byte loadoutversion;
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -114,7 +114,7 @@ struct root {
 struct hash_7dc6a8bfa8184f33 {
     byte loadoutversion;
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -163,7 +163,7 @@ struct root {
 struct hash_7dc6a8bfa8184f33 {
     byte loadoutversion;
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -212,7 +212,7 @@ struct root {
 struct hash_7dc6a8bfa8184f33 {
     byte loadoutversion;
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -261,7 +261,7 @@ struct root {
 struct hash_7dc6a8bfa8184f33 {
     byte loadoutversion;
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -310,7 +310,7 @@ struct root {
 struct hash_7dc6a8bfa8184f33 {
     byte loadoutversion;
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -359,7 +359,7 @@ struct root {
 struct hash_7dc6a8bfa8184f33 {
     byte loadoutversion;
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -412,7 +412,7 @@ struct hash_7d7ba6a7d36476a0 {
     character characters[16];
     uint11 hash_20d6751cb2f9ca09[9];
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -497,7 +497,7 @@ struct hash_7d7ba6a7d36476a0 {
     character characters[16];
     uint11 hash_20d6751cb2f9ca09[9];
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -582,7 +582,7 @@ struct hash_7d7ba6a7d36476a0 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -668,7 +668,7 @@ struct hash_7d7ba6a7d36476a0 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -752,7 +752,7 @@ struct hash_7d7ba6a7d36476a0 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -836,7 +836,7 @@ struct hash_7d7ba6a7d36476a0 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     mploadout customclass[18];
-    string customclassname[18];
+    char customclassname[18][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;

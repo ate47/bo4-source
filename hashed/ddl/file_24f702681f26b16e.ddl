@@ -3,7 +3,7 @@ version 125;
 metatable "hash_d529e975af4df1df";
 
 struct root {
-    string map;
+    char map[32];
     int32 loadoutversion;
     uint32 hash_375e93395e4f1f12;
     deathcircle death_circle[15];
@@ -17,14 +17,14 @@ struct root {
     byte hash_5be2776e72fe7105;
     int32 item_spawn_seed;
     telemetry_header telemetry;
-    double playlist_name;
-    string hash_4e397fa6657da523;
+    hash playlist_name;
+    char hash_4e397fa6657da523[32];
     int32 hash_2678ed840a344d55;
     int32 hash_6ed65ba529599bb5;
     byte hash_115ec7b8fbf85bae;
-    double game_type;
+    hash game_type;
     byte hash_481ee9109f272237;
-    string hash_4270d43d00e554ea;
+    char hash_4270d43d00e554ea[32];
     uint64 hash_7baa6dadf52e04cd;
     uint32 hash_7baa59adf52de2d1;
     int32 compass_map_upper_left[3];
@@ -44,7 +44,7 @@ struct root {
     byte hash_2e9e7ae5d3016cb;
     hash_5117bce61a2e0fe3 header;
     aizone ai_zones[10];
-    double test_name;
+    hash test_name;
     short hash_8b84fa66f763a30;
     uint32 breadcrumbs_total;
     int32 playlist_version;
@@ -71,9 +71,9 @@ struct root {
 };
 
 struct deathcircle {
-    fixedpoint wait_sec;
-    fixedpoint scale_sec;
-    fixedpoint damage_interval;
+    float wait_sec;
+    float scale_sec;
+    float damage_interval;
     int32 damage;
     int32 origin[3];
     int32 radius;
@@ -82,16 +82,16 @@ struct deathcircle {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
 };
 
 struct life {
-    fixedpoint longest_hit_distance;
+    float longest_hit_distance;
     byte player_index;
     uint32 score;
     uint32 hash_6e5b19c572681334;
@@ -113,17 +113,17 @@ struct life {
     uint32 hash_374b79ec47e1e6e9;
     uint8 victimdecisecondssincelastwallrun;
     uint32 hash_7c5a630513a7bfd5;
-    fixedpoint hash_202011f4c98c00b1;
+    float hash_202011f4c98c00b1;
     uint10 hash_6677b86a4c2c0d54;
-    double character_decal_lootid;
+    hash character_decal_lootid;
     uint10 hash_3976a49a3ab81759;
     byte hash_5281edda9cfbd66a;
     uint8 killerdecisecondssincelastboostjump;
-    double hash_20d6751cb2f9ca09[9];
-    double hash_4f557c87c0538129;
-    double character_outfit_lootid;
+    hash hash_20d6751cb2f9ca09[9];
+    hash hash_4f557c87c0538129;
+    hash character_outfit_lootid;
     byte hash_56e7eb0d1597ec79;
-    double hash_63862160f8335af2;
+    hash hash_63862160f8335af2;
     uint10 hash_9071b1ce927d040;
     uint8 victimdecisecondssincelastswim;
     uint10 victimdelta;
@@ -134,20 +134,20 @@ struct life {
     int32 hash_9677cf4f08d8697[3];
     uint8 killerdecisecondssincelastwallrun;
     short hash_1783a3513be4bd7c;
-    double specialist;
+    hash specialist;
     int16 hash_648ba56f725b9077[3];
     uint32 hash_3faf0f7b322f3cfc;
     uint8 vicitmdecisecondssincelastkneeslide;
-    fixedpoint dotofdeath;
-    string character_gender;
+    float dotofdeath;
+    char character_gender[8];
     uint8 killerdecisecondssincelastswim;
     uint8 victimnumberofkneeslides;
     byte assists;
     uint32 hash_cc61feedcebaa4d;
     uint5 character_outfit;
-    double hash_4b4bd85ab964d386;
+    hash hash_4b4bd85ab964d386;
     int32 spawn_pos[3];
-    double character_warpaint_lootid;
+    hash character_warpaint_lootid;
     uint5 character_warpaint_outfit;
     uint8 victimnumberofboostjumps;
     uint32 hash_1167938b851224e;
@@ -172,9 +172,9 @@ struct hash_5efdb8ef8b6af1cb {
 };
 
 struct hash_c464eb471b1c18a {
-    double hash_62e7261a9dd66829;
+    hash hash_62e7261a9dd66829;
     byte playerindex;
-    string challengestring;
+    char challengestring[64];
     uint8 itemindex;
     uint8 statsmilestonescsvnum;
     uint8 challengetier;
@@ -189,8 +189,8 @@ struct hash_7f7a5814a86a5885 {
 };
 
 struct hash_298025d6535ffa40 {
-    double zone_name;
-    double item_name;
+    hash zone_name;
+    hash item_name;
     uint5 item_count;
 };
 
@@ -209,9 +209,9 @@ struct hash_5117bce61a2e0fe3 {
     uint64 gamelobbyid;
     byte hostmigrationcount;
     uint32 hash_178ca468b39c2feb;
-    string localtimestring;
+    char localtimestring[64];
     uint64 matchhashlow;
-    string consoleid64;
+    char consoleid64[32];
     uint64 demofileid;
     uint64 matchhashhigh;
     uint32 hash_374014802bf0424a;
@@ -226,7 +226,7 @@ struct hash_5117bce61a2e0fe3 {
 };
 
 struct aizone {
-    double name;
+    hash name;
     uint4 death_circle;
     uint3 zone_hellhounds;
     uint3 hash_46c66659061c4df6;
@@ -256,26 +256,26 @@ struct player {
     hash_6580ccf5f8a0ef6 dml;
     uint64 dwid;
     byte team;
-    fixedpoint averagespeedduringmatch;
+    float averagespeedduringmatch;
     short kills;
     uint32 score;
     uint64 ucdid;
     uint16 hash_28e223b2b55169af[16];
     int32 end_losses;
     short killsdenied;
-    fixedpoint totalkilldistances;
+    float totalkilldistances;
     int32 end_misses;
     uint32 match_xp;
     byte hitlocations[19];
-    fixedpoint numkilldistanceentries;
+    float numkilldistanceentries;
     uint16 challenges;
-    fixedpoint skill_variance_start;
+    float skill_variance_start;
     int32 loottimeplayed;
     uint16 challengescompletedcount;
     int32 end_prestige;
-    fixedpoint boostingscore;
+    float boostingscore;
     uint32 hash_3e428c87cd41cb83;
-    fixedpoint skill_rating_start;
+    float skill_rating_start;
     byte hash_709c4368e326c4f6;
     byte position;
     int32 start_prestige;
@@ -284,10 +284,10 @@ struct player {
     uint32 hash_3498c2a577aa328e;
     uint32 hash_102667903f187a72;
     uint32 connectivitybits;
-    string hash_ce47f1f62861550;
+    char hash_ce47f1f62861550[24];
     uint32 lootxpearned;
     int32 controllerparticipationendgameresult;
-    fixedpoint percentageoftimemoving;
+    float percentageoftimemoving;
     uint32 pointstowin;
     byte party_id;
     int32 controllerparticipationconsecutivefailuremax;
@@ -295,7 +295,7 @@ struct player {
     byte hash_73577b207cfb7411;
     int32 hash_1657e02fb5073e4a[3];
     uint8 playerquitteamscore;
-    fixedpoint totaldistancetravelled;
+    float totaldistancetravelled;
     byte hash_3a88befccd51691b[307];
     uint64 hash_35e13b49beac01b0;
     uint32 start_xp;
@@ -306,10 +306,10 @@ struct player {
     short highestkillstreak;
     int32 controllerparticipation;
     short cryptokeysbeforematch;
-    fixedpoint timeplayedalive;
+    float timeplayedalive;
     short num_lives;
-    fixedpoint timeplayedmoving;
-    fixedpoint numspeedswhenmovingentries;
+    float timeplayedmoving;
+    float numspeedswhenmovingentries;
     int32 code_client_num;
     int32 end_hits;
     byte hash_6f155c5c7cca606d;
@@ -322,11 +322,11 @@ struct player {
     int32 end_score;
     short hash_ec4aea1a8bbd82;
     short hash_2044e5ddbbd19a8e[3];
-    fixedpoint hash_14813a3c1b267555;
+    float hash_14813a3c1b267555;
     uint32 hash_3e8d4387ea9e7f42;
     byte hash_51db55fc1339e092;
     uint8 playerquitroundnumber;
-    string consoleid64;
+    char consoleid64[32];
     short hash_49ea128912ee851d;
     byte suicides;
     int32 end_total_time_played_s;
@@ -337,12 +337,12 @@ struct player {
     int32 start_hits;
     byte hash_2b2e4e83da414b1e;
     int32 start_wins;
-    double hash_30b4939982419090;
+    hash hash_30b4939982419090;
     int32 start_kills;
     int32 start_score;
     uint32 hash_154d42f200303577;
     uint9 lootxpbeforematch;
-    fixedpoint skill_rating;
+    float skill_rating;
     byte jointype;
     client_header client;
     short deaths;
@@ -365,7 +365,7 @@ struct player {
     uint32 hash_4325caae17068c55;
     byte assists;
     int32 playerxpmultiplier;
-    fixedpoint averagekilldistance;
+    float averagekilldistance;
     uint32 connectedbits;
     uint32 utc_disconnect_time_s;
     byte numdogskills;
@@ -380,10 +380,10 @@ struct player {
     uint32 score_xp;
     int32 start_total_time_played_s;
     int32 hash_136288c07ffd7b0c;
-    fixedpoint totalspeedswhenmoving;
+    float totalspeedswhenmoving;
     int32 start_deaths;
     uint16 hash_4bb657eb94ad1948[156];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 controllerparticipationinactivitywarnings;
     byte criticalhitlocations[19];
     uint32 damage_dealt;
@@ -417,13 +417,13 @@ enum hash_54196e9e9860f0be {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct client_header {

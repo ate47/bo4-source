@@ -28,7 +28,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     int32 lobbydlcbits;
@@ -42,7 +42,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -66,7 +66,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int12 weaponindex;
@@ -79,15 +79,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -149,7 +149,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     int32 lobbydlcbits;
@@ -163,7 +163,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -187,7 +187,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int12 weaponindex;
@@ -200,15 +200,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -270,7 +270,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     int32 lobbydlcbits;
@@ -284,7 +284,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -308,7 +308,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int12 weaponindex;
@@ -321,15 +321,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -391,7 +391,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     int32 lobbydlcbits;
@@ -405,7 +405,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -429,7 +429,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -442,15 +442,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -512,7 +512,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     int32 lobbydlcbits;
@@ -526,7 +526,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -550,7 +550,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -563,15 +563,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -633,7 +633,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     int32 lobbydlcbits;
@@ -647,7 +647,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -671,7 +671,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -684,15 +684,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -754,7 +754,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     int32 lobbydlcbits;
@@ -768,7 +768,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -792,7 +792,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -805,15 +805,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -875,7 +875,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     int32 lobbydlcbits;
@@ -889,7 +889,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -913,7 +913,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -926,15 +926,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -996,7 +996,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -1009,7 +1009,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -1033,7 +1033,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1046,15 +1046,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -1116,7 +1116,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -1129,7 +1129,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -1154,7 +1154,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1167,15 +1167,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -1237,7 +1237,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -1250,7 +1250,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -1276,7 +1276,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1289,15 +1289,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -1359,7 +1359,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -1372,7 +1372,7 @@ struct root {
 };
 
 struct arenastats {
-    fixedpoint performancevalue;
+    float performancevalue;
     hash_6ed89f7cef839c06 leagueplaystats;
 };
 
@@ -1398,7 +1398,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1411,15 +1411,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -1481,7 +1481,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -1519,7 +1519,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1532,15 +1532,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -1602,7 +1602,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -1639,7 +1639,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1652,15 +1652,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -1719,7 +1719,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -1756,7 +1756,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1769,15 +1769,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -1836,7 +1836,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -1873,7 +1873,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1886,15 +1886,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -1951,7 +1951,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -1988,7 +1988,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2001,15 +2001,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -2066,7 +2066,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -2103,7 +2103,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2116,15 +2116,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -2181,7 +2181,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -2214,9 +2214,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -2225,7 +2225,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2238,7 +2238,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -2295,7 +2295,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -2328,9 +2328,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -2339,7 +2339,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2352,7 +2352,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -2410,7 +2410,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -2443,9 +2443,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -2454,7 +2454,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2467,7 +2467,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -2525,7 +2525,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -2557,9 +2557,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -2568,7 +2568,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2581,7 +2581,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -2638,7 +2638,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -2675,9 +2675,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -2686,7 +2686,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2703,7 +2703,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -2748,7 +2748,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -2785,9 +2785,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -2796,7 +2796,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2813,7 +2813,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -2858,7 +2858,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -2896,9 +2896,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -2907,7 +2907,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2924,7 +2924,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -2969,7 +2969,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3007,9 +3007,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -3018,7 +3018,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -3035,7 +3035,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -3080,7 +3080,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3117,9 +3117,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -3128,7 +3128,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -3145,7 +3145,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -3190,7 +3190,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3227,9 +3227,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -3238,7 +3238,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -3255,7 +3255,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -3300,7 +3300,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3337,9 +3337,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -3348,7 +3348,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -3365,7 +3365,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -3410,7 +3410,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3447,9 +3447,9 @@ struct character {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -3458,7 +3458,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -3475,7 +3475,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -3520,7 +3520,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3549,9 +3549,9 @@ struct hash_18e73148b3ebc305 {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -3568,7 +3568,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -3581,7 +3581,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -3630,7 +3630,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3659,9 +3659,9 @@ struct hash_18e73148b3ebc305 {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -3678,7 +3678,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -3691,7 +3691,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -3740,7 +3740,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3756,7 +3756,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -3778,9 +3778,9 @@ struct hash_18e73148b3ebc305 {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -3796,7 +3796,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -3853,7 +3853,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3868,7 +3868,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -3890,9 +3890,9 @@ struct hash_18e73148b3ebc305 {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -3908,7 +3908,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -3965,7 +3965,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -3980,7 +3980,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -4002,9 +4002,9 @@ struct hash_18e73148b3ebc305 {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -4020,7 +4020,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -4077,7 +4077,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -4092,7 +4092,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -4114,9 +4114,9 @@ struct hash_18e73148b3ebc305 {
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -4132,7 +4132,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -4189,7 +4189,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -4227,7 +4227,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -4240,15 +4240,15 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
-    double medalstatname;
+    hash medalstatname;
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -4301,7 +4301,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -4339,7 +4339,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -4352,14 +4352,14 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     hash_70febf3d5022ab6c hash_593fb22639f32bb8[4];
     uint64 screenshotfileid;
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -4412,7 +4412,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -4443,7 +4443,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -4459,7 +4459,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -4474,7 +4474,7 @@ struct hash_380775ab8e293fe7 {
 struct combatrecordinfo {
     uint64 screenshotfileid;
     uint10 backgroundids[3];
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -4519,7 +4519,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -4550,7 +4550,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -4566,7 +4566,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -4581,7 +4581,7 @@ struct hash_380775ab8e293fe7 {
 struct combatrecordinfo {
     uint64 screenshotfileid;
     uint10 backgroundids[3];
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -4625,7 +4625,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -4656,7 +4656,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -4675,7 +4675,7 @@ struct hash_380775ab8e293fe7 {
 struct combatrecordinfo {
     uint64 screenshotfileid;
     uint10 backgroundids[3];
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -4684,7 +4684,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -4732,7 +4732,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -4763,7 +4763,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -4781,7 +4781,7 @@ struct hash_380775ab8e293fe7 {
 struct combatrecordinfo {
     uint64 screenshotfileid;
     uint10 backgroundids[3];
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -4790,7 +4790,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -4838,7 +4838,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -4869,7 +4869,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -4887,7 +4887,7 @@ struct hash_380775ab8e293fe7 {
 struct combatrecordinfo {
     uint64 screenshotfileid;
     uint10 backgroundids[3];
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -4896,7 +4896,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -4944,7 +4944,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -4975,7 +4975,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -4993,7 +4993,7 @@ struct hash_380775ab8e293fe7 {
 struct combatrecordinfo {
     uint64 screenshotfileid;
     uint10 backgroundids[3];
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -5002,7 +5002,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -5050,7 +5050,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -5081,7 +5081,7 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
@@ -5099,7 +5099,7 @@ struct hash_380775ab8e293fe7 {
 struct combatrecordinfo {
     uint64 screenshotfileid;
     uint10 backgroundids[3];
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -5108,7 +5108,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -5156,7 +5156,7 @@ struct root {
     uint32 hash_4f30e85d7fca3379;
     hash_f82e02aa99b1c0a hash_2c0489f12ffde990;
     combatrecordinfo combatrecordinfo;
-    string primarygroupname;
+    char primarygroupname[64];
     uint32 prestige;
     uint64 primarygroupid;
     uint32 rankcp;
@@ -5199,14 +5199,14 @@ struct hash_f82e02aa99b1c0a {
     uint64 objectid;
     uint32 checksum;
     uint32 filetype;
-    string filename;
+    char filename[32];
     uint32 contentlength;
 };
 
 struct combatrecordinfo {
     uint64 screenshotfileid;
     uint10 backgroundids[3];
-    string screenshotfilename;
+    char screenshotfilename[16];
     int32 screenshotfilesize;
 };
 
@@ -5220,7 +5220,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -5241,7 +5241,7 @@ struct hash_508eaeb5f638a293 {
 
 struct mix_s {
     uint32 modelindex;
-    fixedpoint weight;
+    float weight;
 };
 
 

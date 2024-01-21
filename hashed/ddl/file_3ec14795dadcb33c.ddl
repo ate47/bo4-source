@@ -22,33 +22,33 @@ struct match_header {
 };
 
 struct hash_3821d9754f594c79 {
-    double specialist_showcase;
-    double hash_47b601fcc6a5c1f6;
-    double specialist_head;
-    double specialist_legs;
-    double specialist_torso;
+    hash specialist_showcase;
+    hash hash_47b601fcc6a5c1f6;
+    hash specialist_head;
+    hash specialist_legs;
+    hash specialist_torso;
 };
 
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
 };
 
 struct hash_5824d549adab1dc4 {
-    double starting_team;
+    hash starting_team;
     int32 esports_flag;
-    string hash_236307b2e3de4586;
-    string player_xuid;
-    double game_type;
-    string player_ip;
-    string game_map;
-    double ending_team;
+    char hash_236307b2e3de4586[32];
+    char player_xuid[32];
+    hash game_type;
+    char player_ip[128];
+    char game_map[32];
+    hash ending_team;
     hash_61d8fb71b3cca1df session_mode;
     int32 dlc_owned;
     bit private_match;
@@ -73,12 +73,12 @@ struct hash_3a5bf7d0d7976271 {
 
 struct hash_42e8915aaacaff63 {
     int32 total_deaths;
-    string best_kills;
-    string best_score;
+    char best_kills[32];
+    char best_score[32];
     int32 total_xp;
     int32 total_wins;
     int32 total_kills;
-    string best_kd;
+    char best_kd[32];
 };
 
 struct hash_3506e586ba0277fb {
@@ -107,7 +107,7 @@ struct hash_2a75a26c051b3f31 {
     int32 match_deaths;
     int32 match_carries;
     int32 match_plants;
-    double match_result;
+    hash match_result;
     int32 match_streak;
     int32 match_throws;
     int32 match_duration;
@@ -126,16 +126,16 @@ struct hash_2a75a26c051b3f31 {
 };
 
 struct hash_13d3693b7f1216f8 {
-    string loadout_scorestreaks;
-    string loadout_perks;
-    string loadout_primary_attachments;
-    string player_gender;
-    double specialist_used;
-    double loadout_primary_weapon;
-    double loadout_tactical;
-    double loadout_lethal;
-    string loadout_secondary_attachments;
-    double loadout_secondary_weapon;
+    char loadout_scorestreaks[64];
+    char loadout_perks[1024];
+    char loadout_primary_attachments[32];
+    char player_gender[32];
+    hash specialist_used;
+    hash loadout_primary_weapon;
+    hash loadout_tactical;
+    hash loadout_lethal;
+    char loadout_secondary_attachments[32];
+    hash loadout_secondary_weapon;
 };
 
 enum hash_54196e9e9860f0be {

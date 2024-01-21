@@ -50,10 +50,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -67,18 +67,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -110,8 +110,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -215,7 +215,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -307,7 +307,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -318,7 +318,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -349,7 +349,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -449,10 +449,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -466,18 +466,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -509,8 +509,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -614,7 +614,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -706,7 +706,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -717,7 +717,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -748,7 +748,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -848,10 +848,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -865,18 +865,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -908,8 +908,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -1013,7 +1013,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1105,7 +1105,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -1116,7 +1116,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -1147,7 +1147,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -1247,10 +1247,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -1264,18 +1264,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -1307,8 +1307,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -1412,7 +1412,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1504,7 +1504,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -1515,7 +1515,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -1546,7 +1546,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -1646,10 +1646,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -1663,18 +1663,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -1706,8 +1706,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -1811,7 +1811,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1903,7 +1903,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -1914,7 +1914,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -1945,7 +1945,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -2045,10 +2045,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -2062,18 +2062,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -2105,8 +2105,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -2210,7 +2210,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2302,7 +2302,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -2313,7 +2313,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -2344,7 +2344,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -2444,10 +2444,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -2461,18 +2461,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -2504,8 +2504,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -2609,7 +2609,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2701,7 +2701,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -2712,7 +2712,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -2743,7 +2743,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -2843,10 +2843,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -2860,18 +2860,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -2903,8 +2903,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -3008,7 +3008,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3100,7 +3100,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -3111,7 +3111,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -3142,7 +3142,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -3242,10 +3242,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -3259,18 +3259,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -3302,8 +3302,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -3407,7 +3407,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3499,7 +3499,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -3510,7 +3510,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -3541,7 +3541,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -3641,10 +3641,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -3658,18 +3658,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -3701,8 +3701,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -3806,7 +3806,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3898,7 +3898,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -3909,7 +3909,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -3940,7 +3940,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -4040,10 +4040,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -4057,18 +4057,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -4100,8 +4100,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -4205,7 +4205,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4297,7 +4297,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -4308,7 +4308,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -4339,7 +4339,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -4439,10 +4439,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -4456,18 +4456,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -4499,8 +4499,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -4604,7 +4604,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4696,7 +4696,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -4707,7 +4707,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -4738,7 +4738,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -4838,10 +4838,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -4855,18 +4855,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -4898,8 +4898,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -5003,7 +5003,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5095,7 +5095,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -5106,7 +5106,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -5137,7 +5137,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -5237,10 +5237,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -5254,18 +5254,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -5297,8 +5297,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -5402,7 +5402,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5494,7 +5494,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -5505,7 +5505,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -5536,7 +5536,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -5636,10 +5636,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -5653,18 +5653,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -5696,8 +5696,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -5801,7 +5801,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5893,7 +5893,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -5904,7 +5904,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -5935,7 +5935,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6035,10 +6035,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -6052,18 +6052,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -6095,8 +6095,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -6200,7 +6200,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6292,7 +6292,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -6303,7 +6303,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -6334,7 +6334,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6434,10 +6434,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -6451,18 +6451,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -6494,8 +6494,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -6599,7 +6599,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6691,7 +6691,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -6702,7 +6702,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -6733,7 +6733,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6833,10 +6833,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -6850,18 +6850,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -6893,8 +6893,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -6998,7 +6998,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7090,7 +7090,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -7101,7 +7101,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7132,7 +7132,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7232,10 +7232,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -7249,18 +7249,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -7292,8 +7292,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -7397,7 +7397,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7489,7 +7489,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -7500,7 +7500,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7531,7 +7531,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7631,10 +7631,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -7648,18 +7648,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -7691,8 +7691,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -7796,7 +7796,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7888,7 +7888,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -7899,7 +7899,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7930,7 +7930,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -8030,10 +8030,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -8047,18 +8047,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -8090,8 +8090,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -8195,7 +8195,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -8287,7 +8287,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -8298,7 +8298,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -8329,7 +8329,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -8429,10 +8429,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -8446,18 +8446,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -8485,8 +8485,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -8594,7 +8594,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -8686,7 +8686,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -8697,7 +8697,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -8728,7 +8728,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -8828,10 +8828,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[52];
+    float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -8844,18 +8844,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[52];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[52];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -8883,8 +8883,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -8986,7 +8986,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -9077,7 +9077,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -9088,7 +9088,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -9119,7 +9119,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -9219,10 +9219,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[51];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[51];
+    float hash_2363e7e74077b1c0[51];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -9235,18 +9235,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[51];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[51];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -9274,8 +9274,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -9377,7 +9377,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -9468,7 +9468,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -9479,7 +9479,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -9510,7 +9510,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -9610,10 +9610,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[50];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[50];
+    float hash_2363e7e74077b1c0[50];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -9626,18 +9626,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[50];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[50];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -9665,8 +9665,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -9768,7 +9768,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -9859,7 +9859,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -9870,7 +9870,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -9901,7 +9901,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -10001,10 +10001,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[49];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[49];
+    float hash_2363e7e74077b1c0[49];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -10017,18 +10017,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[49];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[49];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -10056,8 +10056,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -10159,7 +10159,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -10250,7 +10250,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -10261,7 +10261,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -10292,7 +10292,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -10392,10 +10392,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[48];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[48];
+    float hash_2363e7e74077b1c0[48];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -10408,18 +10408,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[48];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[48];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -10447,8 +10447,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -10550,7 +10550,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -10641,7 +10641,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -10652,7 +10652,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -10683,7 +10683,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -10782,10 +10782,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[48];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[48];
+    float hash_2363e7e74077b1c0[48];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -10798,18 +10798,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[48];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[48];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -10837,8 +10837,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -10940,7 +10940,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11031,7 +11031,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -11042,7 +11042,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -11073,7 +11073,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -11172,10 +11172,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[48];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[48];
+    float hash_2363e7e74077b1c0[48];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -11188,18 +11188,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[48];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[48];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -11227,8 +11227,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -11330,7 +11330,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11421,7 +11421,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -11432,7 +11432,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -11463,7 +11463,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -11562,10 +11562,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[48];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[48];
+    float hash_2363e7e74077b1c0[48];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -11578,18 +11578,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[48];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[48];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -11617,8 +11617,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -11720,7 +11720,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11811,7 +11811,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -11822,7 +11822,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -11853,7 +11853,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -11952,10 +11952,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[47];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[47];
+    float hash_2363e7e74077b1c0[47];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -11968,18 +11968,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[47];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[47];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -12007,8 +12007,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -12110,7 +12110,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12201,7 +12201,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -12212,7 +12212,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -12243,7 +12243,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -12342,10 +12342,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[44];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[44];
+    float hash_2363e7e74077b1c0[44];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -12358,18 +12358,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[44];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[44];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -12397,8 +12397,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -12500,7 +12500,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12591,7 +12591,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -12602,7 +12602,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -12633,7 +12633,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -12732,10 +12732,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[44];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[44];
+    float hash_2363e7e74077b1c0[44];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -12748,18 +12748,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[44];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[44];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -12786,8 +12786,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -12889,7 +12889,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12980,7 +12980,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -12991,7 +12991,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -13022,7 +13022,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -13121,10 +13121,10 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     hash_491be2fc5d00eea5 hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -13137,18 +13137,18 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
     hash_491be2fc5d00eea5 contracts[10];
-    fixedpoint skill_variance;
+    float skill_variance;
     int32 mp_loot_xp_due;
-    fixedpoint hash_3a7324ad328f0e2e[38];
-    hash hash_6a927decba86a3c3;
+    float hash_3a7324ad328f0e2e[38];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit hash_3984c62cdaf83d6f;
     bit hash_53ee6ecac1b7764d;
     bit extrabools[16];
@@ -13175,8 +13175,8 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
-    fixedpoint variance;
+    float skill;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -13278,7 +13278,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -13369,7 +13369,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -13380,7 +13380,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -13411,7 +13411,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;

@@ -5,8 +5,8 @@ metatable "hash_f53c1a0276d9ceb5";
 struct root {
     match_header match;
     telemetry_header telemetry;
-    string recipient;
-    string message;
+    char recipient[128];
+    char message[1024];
     client_header client;
     bit daily;
     padbit __pad[7];
@@ -21,9 +21,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

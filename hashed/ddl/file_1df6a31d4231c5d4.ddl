@@ -5,9 +5,9 @@ metatable "hash_4493816e8de6e29";
 struct root {
     uint2 shoutcaster_ds_minimap;
     uint5 shoutcaster_fe_team1_icon;
-    string shoutcaster_fe_team1_name;
+    char shoutcaster_fe_team1_name[32];
     uint5 shoutcaster_fe_team2_icon;
-    string shoutcaster_fe_team2_name;
+    char shoutcaster_fe_team2_name[32];
     uint5 shoutcaster_fe_team1_color;
     uint5 shoutcaster_fe_team2_color;
     uint7 shoutcaster_team;
@@ -74,9 +74,9 @@ metatable "hash_47c0991c8de445ee";
 struct root {
     uint2 shoutcaster_ds_minimap;
     uint5 shoutcaster_fe_team1_icon;
-    string shoutcaster_fe_team1_name;
+    char shoutcaster_fe_team1_name[32];
     uint5 shoutcaster_fe_team2_icon;
-    string shoutcaster_fe_team2_name;
+    char shoutcaster_fe_team2_name[32];
     uint5 shoutcaster_fe_team1_color;
     uint5 shoutcaster_fe_team2_color;
     uint7 shoutcaster_team;
@@ -142,9 +142,9 @@ metatable "hash_f5a0077f185ced51";
 struct root {
     uint2 shoutcaster_ds_minimap;
     uint5 shoutcaster_fe_team1_icon;
-    string shoutcaster_fe_team1_name;
+    char shoutcaster_fe_team1_name[32];
     uint5 shoutcaster_fe_team2_icon;
-    string shoutcaster_fe_team2_name;
+    char shoutcaster_fe_team2_name[32];
     uint5 shoutcaster_fe_team1_color;
     uint5 shoutcaster_fe_team2_color;
     uint7 shoutcaster_team;
@@ -209,9 +209,9 @@ metatable "hash_570a39a80d226631";
 struct root {
     uint2 shoutcaster_ds_minimap;
     uint5 shoutcaster_fe_team1_icon;
-    string shoutcaster_fe_team1_name;
+    char shoutcaster_fe_team1_name[32];
     uint5 shoutcaster_fe_team2_icon;
-    string shoutcaster_fe_team2_name;
+    char shoutcaster_fe_team2_name[32];
     uint5 shoutcaster_fe_team1_color;
     uint5 shoutcaster_fe_team2_color;
     uint7 shoutcaster_team;
@@ -274,9 +274,9 @@ metatable "hash_f2a42f4fce2d5f44";
 struct root {
     uint2 shoutcaster_ds_minimap;
     uint5 shoutcaster_fe_team1_icon;
-    string shoutcaster_fe_team1_name;
+    char shoutcaster_fe_team1_name[32];
     uint5 shoutcaster_fe_team2_icon;
-    string shoutcaster_fe_team2_name;
+    char shoutcaster_fe_team2_name[32];
     uint5 shoutcaster_fe_team1_color;
     uint5 shoutcaster_fe_team2_color;
     uint7 shoutcaster_team;
@@ -339,9 +339,9 @@ metatable "hash_3972496c654cb09";
 struct root {
     uint2 shoutcaster_ds_minimap;
     uint5 shoutcaster_fe_team1_icon;
-    string shoutcaster_fe_team1_name;
+    char shoutcaster_fe_team1_name[32];
     uint5 shoutcaster_fe_team2_icon;
-    string shoutcaster_fe_team2_name;
+    char shoutcaster_fe_team2_name[32];
     uint5 shoutcaster_fe_team1_color;
     uint5 shoutcaster_fe_team2_color;
     uint7 shoutcaster_team;
@@ -403,9 +403,9 @@ metatable "hash_3310777068606362";
 
 struct root {
     uint5 shoutcaster_fe_team1_icon;
-    string shoutcaster_fe_team1_name;
+    char shoutcaster_fe_team1_name[32];
     uint5 shoutcaster_fe_team2_icon;
-    string shoutcaster_fe_team2_name;
+    char shoutcaster_fe_team2_name[32];
     uint5 shoutcaster_fe_team1_color;
     uint5 shoutcaster_fe_team2_color;
     uint2 shoutcaster_perks;
@@ -454,9 +454,9 @@ metatable "hash_9be0b7b59d5b41eb";
 
 struct root {
     uint5 shoutcaster_fe_team1_icon;
-    string shoutcaster_fe_team1_name;
+    char shoutcaster_fe_team1_name[32];
     uint5 shoutcaster_fe_team2_icon;
-    string shoutcaster_fe_team2_name;
+    char shoutcaster_fe_team2_name[32];
     uint5 shoutcaster_fe_team1_color;
     uint5 shoutcaster_fe_team2_color;
     uint2 shoutcaster_perks;
@@ -505,9 +505,9 @@ metatable "hash_f61c18997d4021ef";
 
 struct root {
     uint5 shoutcaster_fe_team1_icon;
-    string shoutcaster_fe_team1_name;
+    char shoutcaster_fe_team1_name[32];
     uint5 shoutcaster_fe_team2_icon;
-    string shoutcaster_fe_team2_name;
+    char shoutcaster_fe_team2_name[32];
     uint5 shoutcaster_fe_team1_color;
     uint5 shoutcaster_fe_team2_color;
     uint2 shoutcaster_perks;

@@ -22,7 +22,7 @@ struct hash_5587d4b6f80e3750 {
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
     uint9 hash_44ed9a1ad38be40[3];
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     character characters[85];
     uint11 hash_20d6751cb2f9ca09[9];
     uint7 hash_6a8bd5071bcb463c;
@@ -90,7 +90,7 @@ struct hash_5587d4b6f80e3750 {
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
     uint9 hash_44ed9a1ad38be40[3];
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     character characters[85];
     uint11 hash_20d6751cb2f9ca09[9];
     uint7 hash_6a8bd5071bcb463c;
@@ -158,7 +158,7 @@ struct hash_5587d4b6f80e3750 {
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
     uint9 hash_44ed9a1ad38be40[3];
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     character characters[85];
     uint11 hash_20d6751cb2f9ca09[9];
     uint7 hash_6a8bd5071bcb463c;
@@ -226,7 +226,7 @@ struct hash_5587d4b6f80e3750 {
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
     uint9 hash_44ed9a1ad38be40[3];
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     character characters[85];
     uint11 hash_20d6751cb2f9ca09[9];
     uint7 hash_6a8bd5071bcb463c;
@@ -294,7 +294,7 @@ struct hash_5587d4b6f80e3750 {
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
     uint9 hash_44ed9a1ad38be40[3];
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     character characters[85];
     uint11 hash_20d6751cb2f9ca09[9];
     uint7 hash_6a8bd5071bcb463c;
@@ -362,7 +362,7 @@ struct hash_5587d4b6f80e3750 {
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
     uint9 hash_44ed9a1ad38be40[3];
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     character characters[85];
     uint11 hash_20d6751cb2f9ca09[9];
     uint7 hash_6a8bd5071bcb463c;
@@ -1672,7 +1672,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1731,7 +1731,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1798,7 +1798,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1861,7 +1861,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1923,7 +1923,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -1985,7 +1985,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int11 weaponindex;
@@ -2047,7 +2047,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2109,7 +2109,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2171,7 +2171,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2233,7 +2233,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2296,7 +2296,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2359,7 +2359,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2423,7 +2423,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2479,7 +2479,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2504,7 +2504,7 @@ struct characteritem {
 
 struct mix_s {
     uint32 modelindex;
-    fixedpoint weight;
+    float weight;
 };
 
 
@@ -2528,7 +2528,7 @@ struct hash_7d7ba6a7d36476a0 {
     character characters[16];
     uint2 firstselectedloadouttype;
     mploadout customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     uint10 killstreak1;
     uint10 killstreak2;
     uint10 killstreak3;
@@ -2579,7 +2579,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2608,7 +2608,7 @@ struct hash_508eaeb5f638a293 {
 
 struct mix_s {
     uint32 modelindex;
-    fixedpoint weight;
+    float weight;
 };
 
 

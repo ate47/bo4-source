@@ -4,13 +4,13 @@ metatable "hash_294579ec8a2006cb";
 
 struct root {
     match_header match;
-    fixedpoint hash_48d96e8ff8f5a8b9;
-    fixedpoint hash_48d96d8ff8f5a706;
-    fixedpoint hash_12bb12128e2101be;
-    fixedpoint hash_12bb13128e210371;
+    float hash_48d96e8ff8f5a8b9;
+    float hash_48d96d8ff8f5a706;
+    float hash_12bb12128e2101be;
+    float hash_12bb13128e210371;
     telemetry_header telemetry;
-    fixedpoint hash_68d85091e3e98622;
-    fixedpoint hash_68d85191e3e987d5;
+    float hash_68d85091e3e98622;
+    float hash_68d85191e3e987d5;
     client_header client;
 };
 
@@ -23,9 +23,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

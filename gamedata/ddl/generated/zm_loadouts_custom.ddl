@@ -30,7 +30,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -53,7 +53,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
     uint8 hash_10b7b244c876d78a[5];
 };
@@ -116,7 +116,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -139,7 +139,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
     uint8 hash_10b7b244c876d78a[5];
 };
@@ -202,7 +202,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -225,7 +225,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
     uint8 hash_10b7b244c876d78a[5];
 };
@@ -288,7 +288,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -311,7 +311,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
     uint8 hash_10b7b244c876d78a[5];
 };
@@ -374,7 +374,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -397,7 +397,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
     uint8 hash_10b7b244c876d78a[5];
 };
@@ -460,7 +460,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -483,7 +483,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
     uint8 hash_10b7b244c876d78a[5];
 };
@@ -546,7 +546,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -569,7 +569,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
     uint8 hash_10b7b244c876d78a[5];
 };
@@ -632,7 +632,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -655,7 +655,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
     uint8 hash_10b7b244c876d78a[5];
 };
@@ -718,7 +718,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -741,7 +741,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -802,7 +802,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -825,7 +825,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -886,7 +886,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -909,7 +909,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -970,7 +970,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -994,7 +994,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1055,7 +1055,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1080,7 +1080,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1139,7 +1139,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1164,7 +1164,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1223,7 +1223,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1248,7 +1248,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1307,7 +1307,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1332,7 +1332,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1391,7 +1391,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1416,7 +1416,7 @@ struct character {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1475,7 +1475,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1504,7 +1504,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1558,7 +1558,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1587,7 +1587,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1641,7 +1641,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1670,7 +1670,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1724,7 +1724,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1751,7 +1751,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1805,7 +1805,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_f48e22ced35e56d[1024];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
@@ -1832,7 +1832,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1886,7 +1886,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1913,7 +1913,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -1967,7 +1967,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1994,7 +1994,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -2048,7 +2048,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2075,7 +2075,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -2128,7 +2128,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2155,7 +2155,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -2208,7 +2208,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2235,7 +2235,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 
@@ -2288,7 +2288,7 @@ struct hash_18b04f5b045db908 {
     hash_5fe8e8cb2b27ba05 bubblegumpack[10];
     uint8 hash_78e9cef0ed273bd;
     zmloadout customclass[10];
-    string customclassname[10];
+    char customclassname[10][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2315,7 +2315,7 @@ struct hash_768aeb6b928320d {
 };
 
 struct hash_5fe8e8cb2b27ba05 {
-    string packname;
+    char packname[17];
     uint10 bubblegumbuff[5];
 };
 

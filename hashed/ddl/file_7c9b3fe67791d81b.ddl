@@ -3,9 +3,9 @@ version 10;
 metatable "hash_f5e87665ff18fe0b";
 
 struct root {
-    string pool;
+    char pool[48];
     match_header match;
-    string stack;
+    char stack[48];
     telemetry_header telemetry;
     client_header client;
     uint64 hash_a5776361938ddf5;
@@ -20,9 +20,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

@@ -11,9 +11,9 @@ struct root {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
@@ -35,16 +35,16 @@ struct client_header {
 
 struct hash_14a1982625e12d94 {
     uint32 count;
-    double event;
+    hash event;
     uint32 hash_68b893b417cabcd1;
-    double channel;
-    fixedpoint hash_2ca14d840c70e2ed;
+    hash channel;
+    float hash_2ca14d840c70e2ed;
     uint32 hash_533194284a1f0466;
-    double endpoint;
-    fixedpoint hash_3f2c69f19f5de63;
+    hash endpoint;
+    float hash_3f2c69f19f5de63;
     uint32 hash_395e5afdcea60aec;
-    fixedpoint hash_472094a294ebb9e2;
-    double serializer;
+    float hash_472094a294ebb9e2;
+    hash serializer;
 };
 
 

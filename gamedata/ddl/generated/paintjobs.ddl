@@ -11,7 +11,7 @@ struct weaponpaintjob {
     uint64 xuid;
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     int12 weaponindex;
     int32 sortindex;
@@ -105,7 +105,7 @@ struct weaponpaintjob {
     uint64 xuid;
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     int12 weaponindex;
     int32 sortindex;
@@ -199,7 +199,7 @@ struct weaponpaintjob {
     uint64 xuid;
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     byte weaponindex;
     int32 sortindex;
@@ -293,7 +293,7 @@ struct weaponpaintjob {
     uint64 xuid;
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     byte weaponindex;
     int32 sortindex;
@@ -387,7 +387,7 @@ struct weaponpaintjob {
     uint64 xuid;
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     byte weaponindex;
     int32 sortindex;
@@ -479,7 +479,7 @@ struct weaponpaintjob {
     uint64 xuid;
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     byte weaponindex;
     int32 sortindex;
@@ -571,7 +571,7 @@ struct weaponpaintjob {
     uint64 xuid;
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     byte weaponindex;
     int32 sortindex;
@@ -661,7 +661,7 @@ struct weaponpaintjob {
     uint64 xuid;
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     byte weaponindex;
     int32 sortindex;
@@ -750,7 +750,7 @@ struct root {
 struct weaponpaintjob {
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     byte weaponindex;
     int32 sortindex;
@@ -839,7 +839,7 @@ struct root {
 struct weaponpaintjob {
     paintshop paintjob;
     uint32 createtime;
-    string paintjobname;
+    char paintjobname[16];
     int2 readonly;
     byte weaponindex;
     int32 sortindex;

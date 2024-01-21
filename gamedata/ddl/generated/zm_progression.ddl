@@ -9,7 +9,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -29,8 +29,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -39,8 +39,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -126,7 +126,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -716,7 +716,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -726,7 +726,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -746,7 +746,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -883,7 +883,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -903,8 +903,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -913,8 +913,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -1000,7 +1000,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1590,7 +1590,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -1600,7 +1600,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -1620,7 +1620,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -1757,7 +1757,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -1777,8 +1777,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -1787,8 +1787,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -1874,7 +1874,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2463,7 +2463,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -2473,7 +2473,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -2493,7 +2493,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -2630,7 +2630,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -2650,8 +2650,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -2660,8 +2660,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -2747,7 +2747,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3334,7 +3334,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -3344,7 +3344,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -3364,7 +3364,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -3501,7 +3501,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -3521,8 +3521,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -3531,8 +3531,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -3618,7 +3618,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4201,7 +4201,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -4211,7 +4211,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -4231,7 +4231,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -4368,7 +4368,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -4388,8 +4388,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -4398,8 +4398,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -4485,7 +4485,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5062,7 +5062,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -5072,7 +5072,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -5092,7 +5092,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -5229,7 +5229,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -5249,8 +5249,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -5259,8 +5259,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -5346,7 +5346,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5923,7 +5923,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -5933,7 +5933,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -5953,7 +5953,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6090,7 +6090,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -6110,8 +6110,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -6120,8 +6120,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -6207,7 +6207,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6782,7 +6782,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -6792,7 +6792,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -6812,7 +6812,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6949,7 +6949,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -6969,8 +6969,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -6979,8 +6979,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -7066,7 +7066,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7635,7 +7635,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -7645,7 +7645,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7665,7 +7665,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7802,7 +7802,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -7822,8 +7822,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -7832,8 +7832,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -7919,7 +7919,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -8487,7 +8487,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -8497,7 +8497,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -8517,7 +8517,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -8654,7 +8654,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -8674,8 +8674,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -8684,8 +8684,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -8771,7 +8771,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -9339,7 +9339,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -9349,7 +9349,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -9369,7 +9369,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -9506,7 +9506,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -9526,8 +9526,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -9536,8 +9536,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -9623,7 +9623,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -10191,7 +10191,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -10201,7 +10201,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -10221,7 +10221,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -10358,7 +10358,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -10378,8 +10378,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -10388,8 +10388,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -10475,7 +10475,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11043,7 +11043,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -11053,7 +11053,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -11073,7 +11073,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -11210,7 +11210,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -11230,8 +11230,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -11240,8 +11240,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -11327,7 +11327,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11894,7 +11894,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -11904,7 +11904,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -11924,7 +11924,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -12061,7 +12061,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[102];
     uint8 hash_1c539a1b16b48b16;
@@ -12081,8 +12081,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -12091,8 +12091,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -12178,7 +12178,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12741,7 +12741,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -12751,7 +12751,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -12771,7 +12771,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -12908,7 +12908,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[102];
     uint8 hash_1c539a1b16b48b16;
@@ -12928,8 +12928,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -12938,8 +12938,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -13025,7 +13025,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -13584,7 +13584,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -13594,7 +13594,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -13614,7 +13614,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -13751,7 +13751,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[102];
     uint8 hash_1c539a1b16b48b16;
@@ -13771,8 +13771,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -13781,8 +13781,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -13868,7 +13868,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -14427,7 +14427,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -14437,7 +14437,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -14457,7 +14457,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -14594,7 +14594,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[102];
     uint8 hash_1c539a1b16b48b16;
@@ -14614,8 +14614,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -14624,8 +14624,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -14711,7 +14711,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -15267,7 +15267,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -15277,7 +15277,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -15297,7 +15297,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -15434,7 +15434,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[100];
     uint8 hash_1c539a1b16b48b16;
@@ -15454,8 +15454,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[10];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[10];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[10];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -15464,8 +15464,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[10];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[10];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -15551,7 +15551,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -16107,7 +16107,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -16117,7 +16117,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -16137,7 +16137,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -16274,7 +16274,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -16294,8 +16294,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -16304,8 +16304,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -16391,7 +16391,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -16945,7 +16945,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -16955,7 +16955,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -16975,7 +16975,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -17112,7 +17112,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -17132,8 +17132,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -17142,8 +17142,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -17229,7 +17229,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -17781,7 +17781,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -17791,7 +17791,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -17811,7 +17811,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -17948,7 +17948,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -17968,8 +17968,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -17978,8 +17978,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -18065,7 +18065,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -18617,7 +18617,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -18627,7 +18627,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -18647,7 +18647,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -18784,7 +18784,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -18804,8 +18804,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -18814,8 +18814,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -18901,7 +18901,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -19453,7 +19453,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -19463,7 +19463,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -19483,7 +19483,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -19620,7 +19620,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -19640,8 +19640,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -19650,8 +19650,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -19737,7 +19737,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -20289,7 +20289,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -20299,7 +20299,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -20319,7 +20319,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -20456,7 +20456,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -20476,8 +20476,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -20486,8 +20486,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -20573,7 +20573,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -21125,7 +21125,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -21135,7 +21135,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -21155,7 +21155,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -21292,7 +21292,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -21312,8 +21312,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -21322,8 +21322,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -21409,7 +21409,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -21961,7 +21961,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -21971,7 +21971,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -21991,7 +21991,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -22128,7 +22128,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -22148,8 +22148,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -22158,8 +22158,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -22245,7 +22245,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -22797,7 +22797,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -22807,7 +22807,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -22827,7 +22827,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -22964,7 +22964,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[105];
     uint8 hash_1c539a1b16b48b16;
@@ -22984,8 +22984,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -22994,8 +22994,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -23081,7 +23081,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -23633,7 +23633,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -23643,7 +23643,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -23663,7 +23663,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -23800,7 +23800,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[115];
     uint8 hash_1c539a1b16b48b16;
@@ -23820,8 +23820,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -23830,8 +23830,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -23917,7 +23917,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -24469,7 +24469,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -24479,7 +24479,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -24499,7 +24499,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -24636,7 +24636,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[115];
     uint8 hash_1c539a1b16b48b16;
@@ -24656,8 +24656,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -24666,8 +24666,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -24753,7 +24753,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -25303,7 +25303,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -25313,7 +25313,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -25333,7 +25333,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -25470,7 +25470,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -25490,8 +25490,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -25500,8 +25500,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -25587,7 +25587,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -26137,7 +26137,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -26147,7 +26147,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -26167,7 +26167,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -26304,7 +26304,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -26324,8 +26324,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -26334,8 +26334,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -26421,7 +26421,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -26971,7 +26971,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -26981,7 +26981,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -27001,7 +27001,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -27138,7 +27138,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -27158,8 +27158,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -27168,8 +27168,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -27255,7 +27255,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -27805,7 +27805,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -27815,7 +27815,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -27835,7 +27835,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -27972,7 +27972,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -27992,8 +27992,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -28002,8 +28002,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -28089,7 +28089,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -28639,7 +28639,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -28649,7 +28649,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -28669,7 +28669,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -28806,7 +28806,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -28826,8 +28826,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -28836,8 +28836,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -28923,7 +28923,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -29469,7 +29469,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -29479,7 +29479,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -29499,7 +29499,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -29636,7 +29636,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -29656,8 +29656,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -29666,8 +29666,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -29753,7 +29753,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -30299,7 +30299,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -30309,7 +30309,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -30329,7 +30329,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -30466,7 +30466,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -30486,8 +30486,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -30496,8 +30496,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -30583,7 +30583,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -31129,7 +31129,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -31139,7 +31139,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -31159,7 +31159,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -31296,7 +31296,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -31316,8 +31316,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -31326,8 +31326,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -31413,7 +31413,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -31959,7 +31959,7 @@ struct aarstats {
     int32 highest_multiplier;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -31969,7 +31969,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -31989,7 +31989,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -32126,7 +32126,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -32146,8 +32146,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -32156,8 +32156,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -32243,7 +32243,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -32788,7 +32788,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -32798,7 +32798,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -32818,7 +32818,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -32955,7 +32955,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -32975,8 +32975,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -32985,8 +32985,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -33072,7 +33072,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -33617,7 +33617,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -33627,7 +33627,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -33647,7 +33647,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -33784,7 +33784,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -33804,8 +33804,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -33814,8 +33814,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -33901,7 +33901,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -34446,7 +34446,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -34456,7 +34456,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -34476,7 +34476,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -34613,7 +34613,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -34633,8 +34633,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -34643,8 +34643,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -34730,7 +34730,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -35272,7 +35272,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -35282,7 +35282,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -35302,7 +35302,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -35439,7 +35439,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -35459,8 +35459,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -35469,8 +35469,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -35556,7 +35556,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -36093,7 +36093,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -36103,7 +36103,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -36123,7 +36123,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -36260,7 +36260,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -36280,8 +36280,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -36290,8 +36290,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -36377,7 +36377,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -36906,7 +36906,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -36916,7 +36916,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -36936,7 +36936,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -37073,7 +37073,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[138];
     uint8 hash_1c539a1b16b48b16;
@@ -37093,8 +37093,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -37103,8 +37103,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -37190,7 +37190,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -37719,7 +37719,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -37729,7 +37729,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -37749,7 +37749,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -37886,7 +37886,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -37906,8 +37906,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -37916,8 +37916,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -38003,7 +38003,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -38532,7 +38532,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -38542,7 +38542,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -38562,7 +38562,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -38699,7 +38699,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -38719,8 +38719,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -38729,8 +38729,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -38816,7 +38816,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -39341,7 +39341,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -39351,7 +39351,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -39371,7 +39371,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -39508,7 +39508,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -39528,8 +39528,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -39538,8 +39538,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -39625,7 +39625,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -40150,7 +40150,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -40160,7 +40160,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -40180,7 +40180,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -40317,7 +40317,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -40337,8 +40337,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -40347,8 +40347,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -40434,7 +40434,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -40963,7 +40963,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -40973,7 +40973,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -40993,7 +40993,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -41130,7 +41130,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -41150,8 +41150,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -41160,8 +41160,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -41247,7 +41247,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -41776,7 +41776,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -41786,7 +41786,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -41806,7 +41806,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -41943,7 +41943,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -41963,8 +41963,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -41973,8 +41973,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -42060,7 +42060,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -42589,7 +42589,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -42599,7 +42599,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -42619,7 +42619,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -42756,7 +42756,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -42776,8 +42776,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -42786,8 +42786,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -42873,7 +42873,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -43402,7 +43402,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -43412,7 +43412,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -43432,7 +43432,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -43569,7 +43569,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -43589,8 +43589,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -43599,8 +43599,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -43686,7 +43686,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -44215,7 +44215,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -44225,7 +44225,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -44245,7 +44245,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -44382,7 +44382,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -44402,8 +44402,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -44412,8 +44412,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -44499,7 +44499,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -45028,7 +45028,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -45038,7 +45038,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -45058,7 +45058,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -45195,7 +45195,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -45215,8 +45215,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -45225,8 +45225,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -45312,7 +45312,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -45841,7 +45841,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -45851,7 +45851,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -45871,7 +45871,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -46008,7 +46008,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -46028,8 +46028,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -46038,8 +46038,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -46125,7 +46125,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -46654,7 +46654,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -46664,7 +46664,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -46684,7 +46684,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -46821,7 +46821,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -46841,8 +46841,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -46851,8 +46851,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -46938,7 +46938,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -47467,7 +47467,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -47477,7 +47477,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -47497,7 +47497,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -47634,7 +47634,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -47654,8 +47654,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -47664,8 +47664,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -47751,7 +47751,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -48280,7 +48280,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -48290,7 +48290,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -48310,7 +48310,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -48447,7 +48447,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -48467,8 +48467,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -48477,8 +48477,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -48564,7 +48564,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -49091,7 +49091,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -49101,7 +49101,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -49121,7 +49121,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -49258,7 +49258,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[135];
     uint8 hash_1c539a1b16b48b16;
@@ -49278,8 +49278,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -49288,8 +49288,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -49375,7 +49375,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -49902,7 +49902,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -49912,7 +49912,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -49932,7 +49932,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -50069,7 +50069,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[135];
     uint8 hash_1c539a1b16b48b16;
@@ -50089,8 +50089,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -50099,8 +50099,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -50186,7 +50186,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -50713,7 +50713,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -50723,7 +50723,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -50743,7 +50743,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -50880,7 +50880,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[135];
     uint8 hash_1c539a1b16b48b16;
@@ -50900,8 +50900,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -50910,8 +50910,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -50997,7 +50997,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -51524,7 +51524,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -51534,7 +51534,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -51554,7 +51554,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -51691,7 +51691,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[135];
     uint8 hash_1c539a1b16b48b16;
@@ -51711,8 +51711,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -51721,8 +51721,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -51808,7 +51808,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -52331,7 +52331,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -52341,7 +52341,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -52361,7 +52361,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -52498,7 +52498,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[129];
     uint8 hash_1c539a1b16b48b16;
@@ -52518,8 +52518,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -52528,8 +52528,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -52615,7 +52615,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -53132,7 +53132,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -53142,7 +53142,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -53162,7 +53162,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -53299,7 +53299,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[129];
     uint8 hash_1c539a1b16b48b16;
@@ -53319,8 +53319,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -53329,8 +53329,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -53416,7 +53416,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -53933,7 +53933,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -53943,7 +53943,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -53963,7 +53963,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -54100,7 +54100,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[125];
     uint8 hash_1c539a1b16b48b16;
@@ -54120,8 +54120,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -54130,8 +54130,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -54217,7 +54217,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -54734,7 +54734,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -54744,7 +54744,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -54764,7 +54764,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -54901,7 +54901,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[125];
     uint8 hash_1c539a1b16b48b16;
@@ -54921,8 +54921,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -54931,8 +54931,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -55018,7 +55018,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -55535,7 +55535,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -55545,7 +55545,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -55565,7 +55565,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -55703,7 +55703,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[125];
     uint8 hash_1c539a1b16b48b16;
@@ -55723,8 +55723,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -55733,8 +55733,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -55829,7 +55829,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -56350,7 +56350,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -56360,7 +56360,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -56374,7 +56374,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -56507,7 +56507,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[122];
     uint8 hash_1c539a1b16b48b16;
@@ -56527,8 +56527,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -56537,8 +56537,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -56633,7 +56633,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -57154,7 +57154,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -57164,7 +57164,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -57178,7 +57178,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -57311,7 +57311,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[122];
     uint8 hash_1c539a1b16b48b16;
@@ -57331,8 +57331,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -57341,8 +57341,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -57436,7 +57436,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -57939,7 +57939,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -57949,7 +57949,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -57963,7 +57963,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -58096,7 +58096,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[122];
     uint8 hash_1c539a1b16b48b16;
@@ -58116,8 +58116,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -58126,8 +58126,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -58221,7 +58221,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -58724,7 +58724,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -58734,7 +58734,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -58748,7 +58748,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -58881,7 +58881,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -58901,8 +58901,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -58911,8 +58911,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -59006,7 +59006,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -59509,7 +59509,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -59519,7 +59519,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -59533,7 +59533,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -59666,7 +59666,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -59686,8 +59686,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -59696,8 +59696,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -59791,7 +59791,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -60294,7 +60294,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -60304,7 +60304,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -60318,7 +60318,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -60451,7 +60451,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -60471,8 +60471,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -60481,8 +60481,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -60576,7 +60576,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -61066,7 +61066,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -61076,7 +61076,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -61090,7 +61090,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -61218,7 +61218,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -61238,8 +61238,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -61248,8 +61248,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -61343,7 +61343,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -61826,7 +61826,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -61836,7 +61836,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -61850,7 +61850,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -61978,7 +61978,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -61998,8 +61998,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -62008,8 +62008,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -62103,7 +62103,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -62586,7 +62586,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -62596,7 +62596,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -62610,7 +62610,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -62738,7 +62738,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[111];
     uint8 hash_1c539a1b16b48b16;
@@ -62758,8 +62758,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -62768,8 +62768,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -62863,7 +62863,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -63346,7 +63346,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -63356,7 +63356,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -63370,7 +63370,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -63498,7 +63498,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -63518,8 +63518,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -63528,8 +63528,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -63623,7 +63623,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -64106,7 +64106,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -64116,7 +64116,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -64130,7 +64130,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -64258,7 +64258,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -64278,8 +64278,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -64288,8 +64288,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -64383,7 +64383,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -64866,7 +64866,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -64876,7 +64876,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -64890,7 +64890,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -65018,7 +65018,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -65038,8 +65038,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -65048,8 +65048,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -65143,7 +65143,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -65626,7 +65626,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -65636,7 +65636,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -65650,7 +65650,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -65778,7 +65778,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -65798,8 +65798,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -65808,8 +65808,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -65903,7 +65903,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -66386,7 +66386,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -66396,7 +66396,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -66410,7 +66410,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -66538,7 +66538,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -66558,8 +66558,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -66568,8 +66568,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -66663,7 +66663,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -67146,7 +67146,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -67156,7 +67156,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -67170,7 +67170,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -67298,7 +67298,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -67318,8 +67318,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -67328,8 +67328,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -67423,7 +67423,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -67906,7 +67906,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -67916,7 +67916,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -67930,7 +67930,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -68051,7 +68051,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -68071,8 +68071,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -68081,8 +68081,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -68176,7 +68176,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -68659,7 +68659,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -68669,7 +68669,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -68683,7 +68683,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -68804,7 +68804,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -68824,8 +68824,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -68834,8 +68834,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -68929,7 +68929,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -69412,7 +69412,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -69422,7 +69422,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -69436,7 +69436,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -69557,7 +69557,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -69577,8 +69577,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -69587,8 +69587,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit playingonwifi;
@@ -69682,7 +69682,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -70165,7 +70165,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -70175,7 +70175,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -70189,7 +70189,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -70310,7 +70310,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -70330,8 +70330,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -70340,8 +70340,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -70434,7 +70434,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -70917,7 +70917,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -70927,7 +70927,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -70941,7 +70941,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -71062,7 +71062,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -71082,8 +71082,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -71091,8 +71091,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -71185,7 +71185,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -71662,7 +71662,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -71672,7 +71672,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -71700,7 +71700,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -71807,7 +71807,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -71827,8 +71827,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -71836,8 +71836,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -71930,7 +71930,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -72404,7 +72404,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -72414,7 +72414,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -72442,7 +72442,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -72549,7 +72549,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -72569,8 +72569,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -72578,8 +72578,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -72672,7 +72672,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -73145,7 +73145,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -73155,7 +73155,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -73183,7 +73183,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -73290,7 +73290,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint32 hash_658c026fb3d608db[20];
@@ -73309,8 +73309,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -73318,8 +73318,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -73412,7 +73412,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -73885,7 +73885,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -73895,7 +73895,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -73923,7 +73923,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -74030,7 +74030,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint32 hash_658c026fb3d608db[20];
@@ -74048,8 +74048,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -74057,8 +74057,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -74141,7 +74141,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -74614,7 +74614,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -74624,7 +74624,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -74663,7 +74663,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -74759,7 +74759,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint32 hash_658c026fb3d608db[20];
@@ -74777,8 +74777,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -74786,8 +74786,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -74870,7 +74870,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -75343,7 +75343,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -75353,7 +75353,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -75392,7 +75392,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -75488,7 +75488,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -75506,8 +75506,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -75515,8 +75515,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -75599,7 +75599,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -76072,7 +76072,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -76082,7 +76082,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -76121,7 +76121,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -76217,7 +76217,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -76235,8 +76235,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -76244,8 +76244,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -76328,7 +76328,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -76799,7 +76799,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -76809,7 +76809,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -76848,7 +76848,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -76937,7 +76937,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -76955,8 +76955,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -76964,8 +76964,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -77048,7 +77048,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -77519,7 +77519,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -77529,7 +77529,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -77568,7 +77568,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -77657,7 +77657,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -77675,8 +77675,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -77684,8 +77684,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -77764,7 +77764,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -78235,7 +78235,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -78245,7 +78245,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -78284,7 +78284,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -78373,7 +78373,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -78391,8 +78391,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -78400,8 +78400,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -78480,7 +78480,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -78951,7 +78951,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -78961,7 +78961,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -79000,7 +79000,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -79089,7 +79089,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -79107,8 +79107,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -79116,8 +79116,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -79191,7 +79191,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -79662,7 +79662,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -79672,7 +79672,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -79711,7 +79711,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -79800,7 +79800,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -79817,8 +79817,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -79826,8 +79826,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -79901,7 +79901,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -80372,7 +80372,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -80382,7 +80382,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -80421,7 +80421,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -80510,7 +80510,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -80527,8 +80527,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -80536,8 +80536,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -80611,7 +80611,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -81062,7 +81062,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -81072,7 +81072,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -81111,7 +81111,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -81200,7 +81200,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -81217,8 +81217,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -81226,8 +81226,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -81301,7 +81301,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -81751,7 +81751,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -81761,7 +81761,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -81800,7 +81800,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -81889,7 +81889,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -81906,8 +81906,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -81915,8 +81915,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -81990,7 +81990,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -82438,7 +82438,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -82448,7 +82448,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -82487,7 +82487,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -82576,7 +82576,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -82592,8 +82592,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -82601,8 +82601,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -82676,7 +82676,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -83118,7 +83118,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -83128,7 +83128,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -83167,7 +83167,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -83256,7 +83256,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -83272,8 +83272,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -83281,8 +83281,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -83356,7 +83356,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -83798,7 +83798,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -83808,7 +83808,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -83847,7 +83847,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -83936,7 +83936,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -83952,8 +83952,8 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
@@ -83961,8 +83961,8 @@ struct root {
     uint64 gamebookmarks[16];
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -84036,7 +84036,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -84477,7 +84477,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -84487,7 +84487,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -84526,7 +84526,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -84615,7 +84615,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -84630,16 +84630,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit completedfirsttimeflow;
@@ -84713,7 +84713,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -85154,7 +85154,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -85164,7 +85164,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -85203,7 +85203,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -85292,7 +85292,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -85307,16 +85307,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -85389,7 +85389,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -85830,7 +85830,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -85840,7 +85840,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -85879,7 +85879,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -85968,7 +85968,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -85983,16 +85983,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -86065,7 +86065,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -86506,7 +86506,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -86516,7 +86516,7 @@ struct aarstats {
     short nemesiskilledby;
     uint32 hash_34660bd50a2e0f29;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -86544,7 +86544,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -86638,7 +86638,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -86653,16 +86653,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -86735,7 +86735,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -87176,7 +87176,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -87185,7 +87185,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -87213,7 +87213,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -87307,7 +87307,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -87322,16 +87322,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -87404,7 +87404,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -87824,7 +87824,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -87833,7 +87833,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -87861,7 +87861,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -87955,7 +87955,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -87970,16 +87970,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -88052,7 +88052,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -88472,7 +88472,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -88481,7 +88481,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -88509,7 +88509,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -88603,7 +88603,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -88618,16 +88618,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -88700,7 +88700,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -89119,7 +89119,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -89128,7 +89128,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -89156,7 +89156,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -89250,7 +89250,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -89265,16 +89265,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -89347,7 +89347,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -89766,7 +89766,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -89775,7 +89775,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -89803,7 +89803,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -89897,7 +89897,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -89912,16 +89912,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -89994,7 +89994,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -90412,7 +90412,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -90420,7 +90420,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -90448,7 +90448,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -90542,7 +90542,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -90557,16 +90557,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -90639,7 +90639,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -91057,7 +91057,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -91065,7 +91065,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -91093,7 +91093,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -91187,7 +91187,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -91202,16 +91202,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -91284,7 +91284,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -91702,7 +91702,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -91710,7 +91710,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -91738,7 +91738,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -91832,7 +91832,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -91847,16 +91847,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -91929,7 +91929,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -92346,7 +92346,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -92354,7 +92354,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -92382,7 +92382,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -92476,7 +92476,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -92491,16 +92491,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -92573,7 +92573,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -92989,7 +92989,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -92997,7 +92997,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -93025,7 +93025,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -93119,7 +93119,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -93134,16 +93134,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -93216,7 +93216,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -93631,7 +93631,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -93639,7 +93639,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -93667,7 +93667,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -93769,16 +93769,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -93851,7 +93851,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -94266,7 +94266,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -94274,7 +94274,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -94302,7 +94302,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -94404,16 +94404,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -94485,7 +94485,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -94900,7 +94900,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -94908,7 +94908,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -94936,7 +94936,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -95038,16 +95038,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -95119,7 +95119,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -95534,7 +95534,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -95542,7 +95542,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -95570,7 +95570,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -95672,16 +95672,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -95753,7 +95753,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -96143,7 +96143,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -96151,7 +96151,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -96179,7 +96179,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -96281,16 +96281,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -96361,7 +96361,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -96751,7 +96751,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -96759,7 +96759,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -96787,7 +96787,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -96889,16 +96889,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -96969,7 +96969,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -97359,7 +97359,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -97367,7 +97367,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -97395,7 +97395,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -97497,16 +97497,16 @@ struct root {
     talismanstats talisman_stats[32];
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -97576,7 +97576,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -97966,7 +97966,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -97974,7 +97974,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -98002,7 +98002,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -98102,16 +98102,16 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -98128,7 +98128,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -98563,7 +98563,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -98571,7 +98571,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -98585,7 +98585,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -98698,16 +98698,16 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -98791,7 +98791,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -99189,7 +99189,7 @@ struct aarstats {
     int32 difficulty;
     int32 highest_multiplier;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     int32 highest_round_reached;
     short nemesiskills;
@@ -99197,7 +99197,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -99234,7 +99234,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -99324,16 +99324,16 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     gametypestats playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[2];
     byte vialsowed;
     hash_506d08f6b39538d1 playercalling;
     globalstats playerstatslist;
     buildable buildables[12];
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     aarstats afteractionreportstats;
     bit musicunlocks[32];
     bit hash_40bf08bd152c479[3];
@@ -99417,7 +99417,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -99821,7 +99821,7 @@ struct aarstats {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -99858,7 +99858,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;

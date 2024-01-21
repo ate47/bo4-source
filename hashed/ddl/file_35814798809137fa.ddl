@@ -4,13 +4,13 @@ metatable "hash_25a84c54fa367c30";
 
 struct root {
     match_header match;
-    fixedpoint x_pos;
-    fixedpoint y_pos;
-    fixedpoint z_pos;
+    float x_pos;
+    float y_pos;
+    float z_pos;
     int32 total_spawns;
     telemetry_header telemetry;
     int32 hash_2cc900b0bc4d19a2;
-    string hash_546cb9d1bff52769;
+    char hash_546cb9d1bff52769[32];
     int32 hash_35111fd969edd4ce;
     int32 hash_6851555810dc97df;
     int32 gametime;
@@ -29,9 +29,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

@@ -6,9 +6,9 @@ struct root {
     match_header match;
     telemetry_header telemetry;
     client_header client;
-    fixedpoint averagekilldistance;
-    fixedpoint averagespeedduringmatch;
-    fixedpoint percentageoftimemoving;
+    float averagekilldistance;
+    float averagespeedduringmatch;
+    float percentageoftimemoving;
 };
 
 struct match_header {
@@ -20,9 +20,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

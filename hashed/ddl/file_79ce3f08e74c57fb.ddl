@@ -18,9 +18,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
@@ -35,10 +35,10 @@ enum hash_54196e9e9860f0be {
 };
 
 struct hash_5e01372db9c7570b {
-    double type;
-    fixedpoint pos_x;
-    fixedpoint pos_y;
-    fixedpoint pos_z;
+    hash type;
+    float pos_x;
+    float pos_y;
+    float pos_z;
     bit used;
     padbit __pad[7];
 };

@@ -15,7 +15,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -93,7 +93,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -171,7 +171,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -249,7 +249,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -327,7 +327,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -405,7 +405,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -483,7 +483,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -561,7 +561,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -639,7 +639,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -717,7 +717,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -796,7 +796,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -876,7 +876,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -956,7 +956,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1036,7 +1036,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1116,7 +1116,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1196,7 +1196,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1275,7 +1275,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1354,7 +1354,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1431,7 +1431,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1508,7 +1508,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1586,7 +1586,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1664,7 +1664,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1742,7 +1742,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1820,7 +1820,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1896,7 +1896,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -1972,7 +1972,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2048,7 +2048,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2124,7 +2124,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2200,7 +2200,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2279,7 +2279,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2358,7 +2358,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[4];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2437,7 +2437,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2516,7 +2516,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2595,7 +2595,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2633,7 +2633,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2688,7 +2688,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2725,7 +2725,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2780,7 +2780,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2817,7 +2817,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2872,7 +2872,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -2909,7 +2909,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -2964,7 +2964,7 @@ struct hash_31d8d99be94a78b7 {
     uint32 firstselectedcharacterindex;
     character characters[16];
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -3001,7 +3001,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -3057,7 +3057,7 @@ struct hash_31d8d99be94a78b7 {
     character characters[16];
     uint2 firstselectedloadouttype;
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -3116,7 +3116,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -3137,7 +3137,7 @@ struct characteritem {
 
 struct mix_s {
     uint32 modelindex;
-    fixedpoint weight;
+    float weight;
 };
 
 
@@ -3160,7 +3160,7 @@ struct hash_31d8d99be94a78b7 {
     character characters[16];
     uint2 firstselectedloadouttype;
     hash_1489c97943984433 customclass[16];
-    string customclassname[16];
+    char customclassname[16][16];
     bit hash_6daffc8ba44646eb;
     bit hash_4a7be35adcdd0183;
     bit hash_490318f2d43cdc68;
@@ -3219,7 +3219,7 @@ struct variant {
     int8 paintjobslot;
     int11 variantindex;
     int8 attachment[8];
-    string variantname;
+    char variantname[16];
     int2 readonly;
     int11 reticleindex;
     int9 weaponindex;
@@ -3240,7 +3240,7 @@ struct characteritem {
 
 struct mix_s {
     uint32 modelindex;
-    fixedpoint weight;
+    float weight;
 };
 
 

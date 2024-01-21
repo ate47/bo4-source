@@ -3,7 +3,7 @@ version 9;
 metatable "hash_ffc0d3a697b35fd7";
 
 struct root {
-    string mode;
+    char mode[24];
     int32 play;
     int32 quit;
     match_header match;
@@ -15,7 +15,7 @@ struct root {
     telemetry_header telemetry;
     int32 hash_501d5f909f2be786;
     int32 hash_7f5b1682501e1b04;
-    string playername;
+    char playername[48];
     int32 timeoutw;
     client_header client;
     int32 timeout;
@@ -32,9 +32,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

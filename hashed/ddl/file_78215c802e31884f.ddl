@@ -14,9 +14,9 @@ struct root {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
@@ -33,7 +33,7 @@ enum hash_54196e9e9860f0be {
 struct hash_6b847dfe653f9716 {
     uint32 hash_49e2a983d2171292;
     uint32 hash_5327ec0dac3839c4;
-    string hostname;
+    char hostname[32];
 };
 
 struct hash_2f7ae21344d86dba {

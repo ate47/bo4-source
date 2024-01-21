@@ -3,9 +3,9 @@ version 5;
 metatable "hash_466f3dffc01cfda";
 
 struct root {
-    string hash_e37a9bd0a563f60;
+    char hash_e37a9bd0a563f60[128];
     telemetry_header telemetry;
-    string hash_1d210b6104a343a1;
+    char hash_1d210b6104a343a1[4096];
     client_header client;
     bit hash_134729ff9a8823cc;
     padbit __pad[7];
@@ -14,9 +14,9 @@ struct root {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

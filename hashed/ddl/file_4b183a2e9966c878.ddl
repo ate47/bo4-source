@@ -7,13 +7,13 @@ struct root {
     telemetry_header telemetry;
     int32 hash_2dc6184a8ee2b80b;
     int32 hash_1e6cbdb3e41597ac;
-    string join_state;
+    char join_state[24];
     int32 hash_607616ff980b70cb;
     hash_405641015bd81f7d nat_type;
     client_header client;
     uint64 host_xuid;
     hash_444b6eb55bc9535 join_type;
-    string hash_5aad3c28269ed622;
+    char hash_5aad3c28269ed622[8];
     int32 hash_1a1a1855f4dcf27c;
     bit hash_5a10df4d02164354;
     padbit __pad[7];
@@ -31,9 +31,9 @@ enum hash_444b6eb55bc9535 {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

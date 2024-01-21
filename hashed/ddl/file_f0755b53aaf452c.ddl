@@ -3,25 +3,25 @@ version 12;
 metatable "hash_88571f7a2e27aa7d";
 
 struct root {
-    string eventname;
+    char eventname[64];
     int32 kills;
     match_header match;
     byte roundnumber;
-    string zone_name;
+    char zone_name[64];
     telemetry_header telemetry;
     int32 currentscore;
     int32 spawnid;
     int32 gametime;
     client_header client;
     int32 health;
-    fixedpoint originx;
-    fixedpoint originy;
-    fixedpoint originz;
-    double currentweapon;
+    float originx;
+    float originy;
+    float originz;
+    hash currentweapon;
     int32 totalscore;
-    string sessionstate;
+    char sessionstate[32];
     int32 beastlives;
-    string username;
+    char username[48];
     bit beastmodeon;
     padbit __pad[7];
 };
@@ -35,9 +35,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

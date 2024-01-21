@@ -24,9 +24,9 @@ struct hash_6a65101a136eab93 {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
@@ -50,11 +50,11 @@ struct hash_4110ed2df03bbae {
     uint32 hash_70259f4fbb3f7a05;
     uint16 hash_52521ecd1275d391;
     uint32 hash_5424ed280cfa4b36;
-    fixedpoint hash_3155d04edc797a1a;
+    float hash_3155d04edc797a1a;
     uint32 data_size;
     uint32 bandwidth_up;
     uint32 hash_7663f2e4bf3b7a23;
-    fixedpoint latency;
+    float latency;
     bit hash_10843082d188230c;
     padbit __pad[7];
 };
@@ -71,7 +71,7 @@ struct hash_c5a2a1d52b4736a {
 };
 
 struct hash_fb47795e5d8f8d {
-    fixedpoint hash_e60a2bc44d9370a;
+    float hash_e60a2bc44d9370a;
 };
 
 enum hash_54196e9e9860f0be {

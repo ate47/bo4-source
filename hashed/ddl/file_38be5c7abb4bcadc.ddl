@@ -16,13 +16,13 @@ struct hash_37625087a54761f4 {
 };
 
 struct playerdata {
-    string name;
+    char name[40];
     uint16 kills;
     uint32 score;
     uint16 killsdenied;
     uint16 returns;
     uint10 cur_kill_streak;
-    string hash_763e00a108f8960a;
+    char hash_763e00a108f8960a[40];
     uint16 defends;
     uint16 defuses;
     uint10 cur_total_kill_streak;

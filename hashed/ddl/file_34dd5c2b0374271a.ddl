@@ -4,8 +4,8 @@ metatable "hash_2bc13871780ae5b6";
 
 struct root {
     int32 diff;
-    string team;
-    string event;
+    char team[32];
+    char event[32];
     match_header match;
     int32 score;
     telemetry_header telemetry;
@@ -22,9 +22,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

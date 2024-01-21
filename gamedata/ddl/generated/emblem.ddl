@@ -5,7 +5,7 @@ metatable "hash_893afe727f288726";
 struct root {
     uint64 xuid;
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -92,7 +92,7 @@ metatable "hash_4086cd6582efedfb";
 struct root {
     uint64 xuid;
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -179,7 +179,7 @@ metatable "hash_afe242bb655de866";
 struct root {
     uint64 xuid;
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -266,7 +266,7 @@ metatable "hash_3898a7cf33972e58";
 struct root {
     uint64 xuid;
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -353,7 +353,7 @@ metatable "hash_ef08f0d288f7ee5e";
 struct root {
     uint64 xuid;
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -438,7 +438,7 @@ metatable "hash_15079ce9c769008";
 struct root {
     uint64 xuid;
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -523,7 +523,7 @@ metatable "hash_ed86f5c63900f2c6";
 struct root {
     uint64 xuid;
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -606,7 +606,7 @@ metatable "hash_12431e239488820b";
 struct root {
     uint64 xuid;
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -689,7 +689,7 @@ metatable "hash_d4c982565bce7104";
 struct root {
     uint64 xuid;
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -771,7 +771,7 @@ metatable "hash_41eb717f9ee2d85";
 
 struct root {
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -853,7 +853,7 @@ metatable "hash_6df10217a7c711af";
 
 struct root {
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;
@@ -934,7 +934,7 @@ metatable "hash_1ac554586d56de72";
 
 struct root {
     uint32 version;
-    string emblemname;
+    char emblemname[16];
     uint32 createtime;
     hash_4e00feaf81ba241c emblem;
     int2 isused;

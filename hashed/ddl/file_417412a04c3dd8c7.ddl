@@ -3,11 +3,11 @@ version 1;
 metatable "hash_297748d7f603e967";
 
 struct root {
-    string name;
+    char name[64];
     uint32 createtime;
     uint64 origfileid;
-    string description;
-    string authorname;
+    char description[64];
+    char authorname[32];
     uint64 authorxuid;
     uint32 length;
     bit ismodifiedname;

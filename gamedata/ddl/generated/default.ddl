@@ -8,7 +8,7 @@ struct root {
 
 struct foo_t {
     byte varbyte;
-    string varstring;
+    char varstring[10];
 };
 
 

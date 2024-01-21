@@ -3,27 +3,27 @@ version 14;
 metatable "hash_f2dab06b1f830d44";
 
 struct root {
-    double team;
+    hash team;
     match_header match;
-    fixedpoint grenadeawareness;
+    float grenadeawareness;
     telemetry_header telemetry;
-    string alertlevel;
-    fixedpoint accuracy;
+    char alertlevel[32];
+    float accuracy;
     int32 gametime;
-    double archetype;
-    fixedpoint engagemaxfalloffdist;
-    string airank;
-    string aitype;
+    hash archetype;
+    float engagemaxfalloffdist;
+    char airank[64];
+    char aitype[64];
     client_header client;
-    fixedpoint engagemaxdist;
+    float engagemaxdist;
     int32 health;
-    fixedpoint originx;
-    fixedpoint originy;
-    fixedpoint originz;
+    float originx;
+    float originy;
+    float originz;
     int32 hash_16f7e8c8e28206d7;
-    fixedpoint engagemindist;
-    double weapon;
-    fixedpoint engageminfalloffdist;
+    float engagemindist;
+    hash weapon;
+    float engageminfalloffdist;
     int32 canflank;
 };
 
@@ -36,9 +36,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

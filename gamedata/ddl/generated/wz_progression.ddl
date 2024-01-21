@@ -17,15 +17,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -320,7 +320,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -333,14 +333,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -416,7 +416,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -437,7 +437,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -491,15 +491,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -794,7 +794,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -807,14 +807,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -890,7 +890,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -911,7 +911,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -965,15 +965,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -1267,7 +1267,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1280,14 +1280,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -1363,7 +1363,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -1384,7 +1384,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -1438,15 +1438,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -1739,7 +1739,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1752,14 +1752,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -1835,7 +1835,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -1856,7 +1856,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -1910,15 +1910,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -2210,7 +2210,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2223,14 +2223,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -2306,7 +2306,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -2327,7 +2327,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -2381,15 +2381,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -2681,7 +2681,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2694,14 +2694,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -2777,7 +2777,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -2798,7 +2798,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -2852,15 +2852,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -3151,7 +3151,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3164,14 +3164,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -3247,7 +3247,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -3268,7 +3268,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -3322,15 +3322,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -3620,7 +3620,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3633,14 +3633,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -3716,7 +3716,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -3737,7 +3737,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -3791,15 +3791,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -4088,7 +4088,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4101,14 +4101,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -4184,7 +4184,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -4205,7 +4205,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -4259,15 +4259,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -4556,7 +4556,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4569,14 +4569,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -4652,7 +4652,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -4673,7 +4673,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -4727,15 +4727,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -5024,7 +5024,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5037,14 +5037,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -5120,7 +5120,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -5141,7 +5141,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -5195,15 +5195,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -5492,7 +5492,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5505,14 +5505,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -5588,7 +5588,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -5609,7 +5609,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -5663,15 +5663,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -5960,7 +5960,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5973,14 +5973,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -6056,7 +6056,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6077,7 +6077,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -6131,15 +6131,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -6428,7 +6428,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6441,14 +6441,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -6524,7 +6524,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6545,7 +6545,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -6599,15 +6599,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -6896,7 +6896,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6909,14 +6909,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -6992,7 +6992,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7013,7 +7013,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -7067,15 +7067,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -7364,7 +7364,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7377,14 +7377,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -7460,7 +7460,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7481,7 +7481,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -7535,15 +7535,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -7832,7 +7832,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7845,14 +7845,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -7928,7 +7928,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7949,7 +7949,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -8003,15 +8003,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -8300,7 +8300,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -8313,14 +8313,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -8396,7 +8396,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -8417,7 +8417,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -8471,15 +8471,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[37];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[37];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[37];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[37];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[37];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -8768,7 +8768,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -8781,14 +8781,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -8864,7 +8864,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -8885,7 +8885,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -8939,15 +8939,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[37];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[37];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[37];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[37];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[37];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -9236,7 +9236,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -9249,14 +9249,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -9332,7 +9332,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -9353,7 +9353,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -9407,15 +9407,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[36];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[36];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[36];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[36];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[36];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -9704,7 +9704,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -9717,14 +9717,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -9800,7 +9800,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -9821,7 +9821,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -9875,15 +9875,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[36];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[36];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[36];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[36];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[36];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -10172,7 +10172,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -10185,14 +10185,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -10268,7 +10268,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -10289,7 +10289,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -10343,15 +10343,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[36];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[36];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[36];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[36];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[36];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -10637,7 +10637,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -10650,14 +10650,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -10733,7 +10733,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -10754,7 +10754,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -10808,15 +10808,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[35];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[35];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[35];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[35];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[35];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -11102,7 +11102,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11115,14 +11115,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -11198,7 +11198,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -11219,7 +11219,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -11273,15 +11273,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[35];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[35];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[35];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[35];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[35];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -11567,7 +11567,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11580,14 +11580,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -11663,7 +11663,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -11684,7 +11684,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -11738,15 +11738,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[34];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[34];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[34];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[34];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[34];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -12032,7 +12032,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12045,14 +12045,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -12128,7 +12128,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -12149,7 +12149,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -12203,15 +12203,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[34];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[34];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[34];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[34];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[34];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -12497,7 +12497,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12510,14 +12510,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -12593,7 +12593,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -12614,7 +12614,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -12668,15 +12668,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[34];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[34];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[34];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[34];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[34];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -12962,7 +12962,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12975,14 +12975,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -13058,7 +13058,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -13079,7 +13079,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -13133,15 +13133,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[34];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[34];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[34];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[34];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[34];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -13427,7 +13427,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -13440,14 +13440,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -13523,7 +13523,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -13544,7 +13544,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -13598,15 +13598,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[34];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[34];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[34];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[34];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[34];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -13892,7 +13892,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -13905,14 +13905,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -13988,7 +13988,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -14009,7 +14009,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -14063,15 +14063,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[34];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[34];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[34];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[34];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[34];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -14357,7 +14357,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -14370,14 +14370,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -14453,7 +14453,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -14474,7 +14474,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -14528,15 +14528,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[34];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[34];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[34];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[34];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[34];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -14822,7 +14822,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -14835,14 +14835,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -14918,7 +14918,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -14939,7 +14939,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -14993,15 +14993,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[34];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[34];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[34];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[34];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[34];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -15287,7 +15287,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -15300,14 +15300,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -15383,7 +15383,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -15404,7 +15404,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -15458,15 +15458,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[34];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[34];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[34];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[34];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[34];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -15752,7 +15752,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -15765,14 +15765,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -15848,7 +15848,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -15869,7 +15869,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -15923,15 +15923,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[32];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[32];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[32];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[32];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[32];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -16217,7 +16217,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -16230,14 +16230,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -16313,7 +16313,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -16334,7 +16334,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -16388,15 +16388,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[32];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[32];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[32];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[32];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[32];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -16675,7 +16675,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -16688,14 +16688,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -16771,7 +16771,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -16792,7 +16792,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -16846,15 +16846,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[31];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[31];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[31];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[31];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[31];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -17133,7 +17133,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -17146,14 +17146,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -17229,7 +17229,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -17250,7 +17250,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -17304,15 +17304,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[31];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[31];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[31];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[31];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[31];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -17584,7 +17584,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -17597,14 +17597,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -17676,7 +17676,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -17697,7 +17697,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -17751,15 +17751,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[31];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[31];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[31];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[31];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[31];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -18022,7 +18022,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -18035,14 +18035,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -18114,7 +18114,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -18135,7 +18135,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -18189,15 +18189,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[31];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[31];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[31];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[31];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[31];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -18459,7 +18459,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -18472,14 +18472,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -18551,7 +18551,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -18572,7 +18572,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -18626,15 +18626,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[31];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[31];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[31];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[31];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[31];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -18896,7 +18896,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -18909,14 +18909,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -18988,7 +18988,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -19009,7 +19009,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -19063,15 +19063,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[31];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[31];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[31];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[31];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[31];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -19333,7 +19333,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -19346,14 +19346,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -19425,7 +19425,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -19446,7 +19446,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -19500,15 +19500,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[31];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[31];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[31];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[31];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[31];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -19767,7 +19767,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -19780,14 +19780,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -19859,7 +19859,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -19880,7 +19880,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -19934,15 +19934,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[31];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[31];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[31];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[31];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[31];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -20201,7 +20201,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -20214,14 +20214,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -20293,7 +20293,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -20314,7 +20314,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -20368,15 +20368,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[31];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[31];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[31];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[31];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[31];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -20635,7 +20635,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -20648,14 +20648,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -20727,7 +20727,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -20748,7 +20748,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -20802,15 +20802,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[30];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[30];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[30];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[30];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[30];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -21069,7 +21069,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -21082,14 +21082,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -21161,7 +21161,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -21182,7 +21182,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -21236,15 +21236,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[30];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[30];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[30];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[30];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[30];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -21503,7 +21503,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -21516,14 +21516,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -21595,7 +21595,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -21616,7 +21616,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -21670,15 +21670,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[30];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[30];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[30];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[30];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[30];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -21936,7 +21936,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -21949,14 +21949,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -22028,7 +22028,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -22049,7 +22049,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -22103,15 +22103,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[30];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[30];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[30];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[30];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[30];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -22369,7 +22369,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -22382,14 +22382,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -22461,7 +22461,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -22482,7 +22482,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -22536,15 +22536,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[30];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[30];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[30];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[30];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[30];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -22802,7 +22802,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -22815,14 +22815,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -22894,7 +22894,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -22915,7 +22915,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -22969,15 +22969,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[30];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[30];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[30];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[30];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[30];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -23235,7 +23235,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -23248,14 +23248,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -23327,7 +23327,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -23348,7 +23348,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -23402,15 +23402,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[30];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[30];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[30];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[30];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[30];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -23667,7 +23667,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -23680,14 +23680,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -23759,7 +23759,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -23780,7 +23780,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -23834,15 +23834,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[29];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[29];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[29];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[29];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[29];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -24099,7 +24099,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -24112,14 +24112,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -24191,7 +24191,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -24212,7 +24212,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -24266,15 +24266,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[29];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[29];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[29];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[29];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[29];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -24531,7 +24531,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -24544,14 +24544,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -24623,7 +24623,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -24644,7 +24644,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -24698,15 +24698,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[23];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[23];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[23];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[23];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[23];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -24963,7 +24963,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -24976,14 +24976,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -25055,7 +25055,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -25076,7 +25076,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -25130,15 +25130,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[23];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[23];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[23];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[23];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[23];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -25395,7 +25395,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -25408,14 +25408,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -25487,7 +25487,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -25508,7 +25508,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -25562,15 +25562,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[23];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[23];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[23];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[23];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[23];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -25827,7 +25827,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -25840,14 +25840,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -25919,7 +25919,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -25940,7 +25940,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -25994,15 +25994,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[20];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[20];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[20];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[20];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[20];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -26259,7 +26259,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -26272,14 +26272,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -26351,7 +26351,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -26372,7 +26372,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -26426,15 +26426,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[19];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[19];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[19];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[19];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[19];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -26691,7 +26691,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -26704,14 +26704,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -26783,7 +26783,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -26804,7 +26804,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -26858,15 +26858,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[19];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[19];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[19];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[19];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[19];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -27123,7 +27123,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -27136,14 +27136,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -27215,7 +27215,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -27236,7 +27236,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -27290,15 +27290,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[19];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[19];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[19];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[19];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[19];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -27555,7 +27555,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -27568,14 +27568,14 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     byte teammatecount;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -27647,7 +27647,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -27668,7 +27668,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     uint64 xuid;
     byte downs;
@@ -27722,15 +27722,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[19];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[19];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[19];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[19];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[19];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -27987,7 +27987,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -28000,13 +28000,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -28078,7 +28078,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -28099,7 +28099,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -28152,15 +28152,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[19];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[19];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[19];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[19];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[19];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -28417,7 +28417,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -28430,13 +28430,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -28508,7 +28508,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -28529,7 +28529,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -28582,15 +28582,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[17];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[17];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[17];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[17];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[17];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -28847,7 +28847,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -28860,13 +28860,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -28938,7 +28938,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -28959,7 +28959,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -29012,15 +29012,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[16];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[16];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[16];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[16];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[16];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -29277,7 +29277,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -29290,13 +29290,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -29368,7 +29368,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -29389,7 +29389,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -29442,15 +29442,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[15];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[15];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[15];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[15];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[15];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -29707,7 +29707,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -29720,13 +29720,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -29798,7 +29798,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -29819,7 +29819,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -29872,15 +29872,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[15];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[15];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[15];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[15];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[15];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -30136,7 +30136,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -30149,13 +30149,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -30227,7 +30227,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -30248,7 +30248,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -30301,15 +30301,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[15];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[15];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[15];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[15];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[15];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -30565,7 +30565,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -30578,13 +30578,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -30656,7 +30656,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -30677,7 +30677,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -30730,15 +30730,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[6];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[6];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[6];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[6];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[6];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -30994,7 +30994,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -31007,13 +31007,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -31085,7 +31085,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -31106,7 +31106,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -31159,15 +31159,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[6];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[6];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[6];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[6];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[6];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -31423,7 +31423,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -31436,13 +31436,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -31514,7 +31514,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -31535,7 +31535,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -31588,15 +31588,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[6];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[6];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[6];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[6];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[6];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -31849,7 +31849,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -31862,13 +31862,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -31940,7 +31940,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -31961,7 +31961,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -32014,15 +32014,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[6];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[6];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[6];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[6];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[6];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -32275,7 +32275,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -32288,13 +32288,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -32366,7 +32366,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -32387,7 +32387,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -32440,15 +32440,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[6];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[6];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[6];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[6];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[6];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -32699,7 +32699,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -32712,13 +32712,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -32790,7 +32790,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -32811,7 +32811,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -32864,15 +32864,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[6];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[6];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[6];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[6];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[6];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -33123,7 +33123,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -33136,13 +33136,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -33214,7 +33214,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -33235,7 +33235,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -33288,15 +33288,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -33547,7 +33547,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -33560,13 +33560,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -33638,7 +33638,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -33659,7 +33659,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -33712,15 +33712,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -33971,7 +33971,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -33984,13 +33984,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -34062,7 +34062,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -34083,7 +34083,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -34135,15 +34135,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -34394,7 +34394,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -34407,13 +34407,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -34485,7 +34485,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -34506,7 +34506,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -34557,15 +34557,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -34816,7 +34816,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -34829,13 +34829,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -34907,7 +34907,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -34928,7 +34928,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -34979,15 +34979,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -35238,7 +35238,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -35251,13 +35251,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -35329,7 +35329,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -35350,7 +35350,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -35401,15 +35401,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -35655,7 +35655,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -35668,13 +35668,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -35739,7 +35739,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -35760,7 +35760,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -35811,15 +35811,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -36065,7 +36065,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -36078,13 +36078,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -36149,7 +36149,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -36170,7 +36170,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -36221,15 +36221,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -36475,7 +36475,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -36488,13 +36488,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -36559,7 +36559,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -36580,7 +36580,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -36631,15 +36631,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -36885,7 +36885,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -36898,13 +36898,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -36969,7 +36969,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -36990,7 +36990,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -37041,15 +37041,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -37295,7 +37295,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -37308,13 +37308,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -37379,7 +37379,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -37400,7 +37400,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -37451,15 +37451,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -37698,7 +37698,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -37711,13 +37711,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -37782,7 +37782,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -37803,7 +37803,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -37854,15 +37854,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -38101,7 +38101,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -38114,13 +38114,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -38185,7 +38185,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -38206,7 +38206,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -38257,15 +38257,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -38504,7 +38504,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -38517,13 +38517,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -38582,7 +38582,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -38603,7 +38603,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -38654,15 +38654,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -38900,7 +38900,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -38913,13 +38913,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -38978,7 +38978,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -38999,7 +38999,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -39050,15 +39050,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -39290,7 +39290,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -39303,13 +39303,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -39368,7 +39368,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -39389,7 +39389,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -39440,15 +39440,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -39680,7 +39680,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -39693,13 +39693,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -39758,7 +39758,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -39779,7 +39779,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -39829,15 +39829,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -40069,7 +40069,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -40082,13 +40082,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -40147,7 +40147,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -40168,7 +40168,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -40218,15 +40218,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -40458,7 +40458,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -40471,13 +40471,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -40536,7 +40536,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -40557,7 +40557,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -40607,15 +40607,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -40846,7 +40846,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -40859,13 +40859,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -40924,7 +40924,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -40945,7 +40945,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -40995,15 +40995,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -41234,7 +41234,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -41247,13 +41247,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -41312,7 +41312,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -41333,7 +41333,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -41383,15 +41383,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -41622,7 +41622,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -41635,13 +41635,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -41700,7 +41700,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -41721,7 +41721,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -41771,15 +41771,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -41794,7 +41794,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -42011,13 +42011,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -42076,7 +42076,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -42090,7 +42090,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -42140,15 +42140,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -42163,7 +42163,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -42380,13 +42380,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -42445,7 +42445,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -42459,7 +42459,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -42509,15 +42509,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -42532,7 +42532,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -42749,13 +42749,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -42814,7 +42814,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -42828,7 +42828,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -42878,15 +42878,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -42901,7 +42901,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -43118,13 +43118,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -43183,7 +43183,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -43197,7 +43197,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -43247,15 +43247,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -43270,7 +43270,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -43487,13 +43487,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -43552,7 +43552,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -43566,7 +43566,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -43616,15 +43616,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -43639,7 +43639,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -43856,13 +43856,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -43921,7 +43921,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -43935,7 +43935,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -43985,15 +43985,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -44007,7 +44007,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -44224,13 +44224,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -44289,7 +44289,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -44303,7 +44303,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -44353,15 +44353,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -44375,7 +44375,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -44592,13 +44592,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -44657,7 +44657,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -44671,7 +44671,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -44721,15 +44721,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -44743,7 +44743,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -44960,13 +44960,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -45025,7 +45025,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -45039,7 +45039,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -45089,15 +45089,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -45111,7 +45111,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -45327,13 +45327,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -45392,7 +45392,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -45406,7 +45406,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -45456,15 +45456,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -45478,7 +45478,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -45694,13 +45694,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -45759,7 +45759,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -45773,7 +45773,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -45823,15 +45823,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -45845,7 +45845,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -46061,13 +46061,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -46126,7 +46126,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -46140,7 +46140,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -46190,15 +46190,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -46211,7 +46211,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -46427,13 +46427,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -46492,7 +46492,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -46506,7 +46506,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -46556,15 +46556,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -46577,7 +46577,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -46789,13 +46789,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -46854,7 +46854,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -46868,7 +46868,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -46918,15 +46918,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -46939,7 +46939,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -47148,13 +47148,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -47213,7 +47213,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -47227,7 +47227,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -47277,15 +47277,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -47298,7 +47298,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -47507,13 +47507,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -47572,7 +47572,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -47586,7 +47586,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -47636,15 +47636,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -47657,7 +47657,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -47866,13 +47866,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -47931,7 +47931,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -47945,7 +47945,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -47995,15 +47995,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -48016,7 +48016,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -48225,13 +48225,13 @@ struct aarstats {
     byte placement_player;
     byte clientnum;
     uint64 demofileid;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -48290,7 +48290,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -48304,7 +48304,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -48354,15 +48354,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -48375,7 +48375,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -48583,13 +48583,13 @@ struct aarstats {
     int32 longestdistancekill;
     byte placement_player;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -48648,7 +48648,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -48662,7 +48662,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -48712,15 +48712,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint64 gamebookmarks[16];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -48733,7 +48733,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -48940,13 +48940,13 @@ struct aarstats {
     int32 longestdistancekill;
     byte placement_player;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -49005,7 +49005,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -49019,7 +49019,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -49068,14 +49068,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -49088,7 +49088,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -49295,13 +49295,13 @@ struct aarstats {
     int32 longestdistancekill;
     byte placement_player;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -49360,7 +49360,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -49374,7 +49374,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -49423,14 +49423,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -49443,7 +49443,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -49650,13 +49650,13 @@ struct aarstats {
     int32 longestdistancekill;
     byte placement_player;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
     byte placement_team;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -49715,7 +49715,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -49729,7 +49729,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -49777,14 +49777,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     bit hash_1c05484619bf1aa7;
@@ -49797,7 +49797,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -50003,12 +50003,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -50067,7 +50067,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -50081,7 +50081,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -50129,14 +50129,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -50148,7 +50148,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -50354,12 +50354,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -50418,7 +50418,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -50432,7 +50432,7 @@ struct hash_480e04d0aa95be89 {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -50480,14 +50480,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -50690,7 +50690,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -50700,12 +50700,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -50749,7 +50749,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -50770,7 +50770,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte rank;
     byte downs;
     byte kills;
@@ -50818,14 +50818,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -51028,7 +51028,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -51038,12 +51038,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -51087,7 +51087,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -51108,7 +51108,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte downs;
     byte kills;
     byte downs_eliminated;
@@ -51153,14 +51153,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -51362,7 +51362,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -51372,12 +51372,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -51421,7 +51421,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -51442,7 +51442,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte downs;
     byte kills;
     byte downs_eliminated;
@@ -51487,14 +51487,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -51697,7 +51697,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -51707,12 +51707,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -51756,7 +51756,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -51777,7 +51777,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte downs;
     byte kills;
     byte downs_eliminated;
@@ -51822,14 +51822,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -52030,7 +52030,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -52040,12 +52040,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -52089,7 +52089,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -52110,7 +52110,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte downs;
     byte kills;
     byte downs_eliminated;
@@ -52155,14 +52155,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -52361,7 +52361,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -52371,12 +52371,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -52420,7 +52420,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -52441,7 +52441,7 @@ struct hash_25a11738b4152d0e {
 };
 
 struct aarteammate {
-    string name;
+    char name[32];
     byte downs;
     byte kills;
     byte downs_eliminated;
@@ -52486,14 +52486,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     wzstats playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     wzstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -52690,7 +52690,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -52700,12 +52700,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -52749,7 +52749,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -52810,14 +52810,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -52829,7 +52829,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -53027,12 +53027,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -53082,7 +53082,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -53136,14 +53136,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -53155,7 +53155,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -53351,12 +53351,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -53406,7 +53406,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -53460,14 +53460,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -53479,7 +53479,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -53675,12 +53675,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -53730,7 +53730,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -53784,14 +53784,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[37];
@@ -53803,7 +53803,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -53988,12 +53988,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -54043,7 +54043,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -54097,14 +54097,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -54116,7 +54116,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -54301,12 +54301,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -54356,7 +54356,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -54410,14 +54410,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -54429,7 +54429,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -54614,12 +54614,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -54669,7 +54669,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -54723,14 +54723,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -54742,7 +54742,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -54926,12 +54926,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -54981,7 +54981,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -55035,14 +55035,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -55054,7 +55054,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -55236,12 +55236,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -55291,7 +55291,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -55345,14 +55345,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -55364,7 +55364,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -55545,12 +55545,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -55600,7 +55600,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -55654,14 +55654,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -55673,7 +55673,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -55852,12 +55852,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -55907,7 +55907,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -55961,14 +55961,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -55980,7 +55980,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -56156,12 +56156,12 @@ struct aarstats {
     short characterindex;
     int32 longestdistancekill;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -56211,7 +56211,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -56265,14 +56265,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -56284,7 +56284,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -56459,12 +56459,12 @@ struct aarstats {
     short nemesisrankicon;
     short characterindex;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -56513,7 +56513,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -56567,14 +56567,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -56586,7 +56586,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -56761,12 +56761,12 @@ struct aarstats {
     short nemesisrankicon;
     short characterindex;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -56815,7 +56815,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -56869,14 +56869,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -56888,7 +56888,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -57063,12 +57063,12 @@ struct aarstats {
     short nemesisrankicon;
     short characterindex;
     byte clientnum;
-    string gametype;
+    char gametype[32];
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -57117,7 +57117,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -57171,14 +57171,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -57190,7 +57190,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -57368,7 +57368,7 @@ struct aarstats {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -57417,7 +57417,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -57471,14 +57471,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -57490,7 +57490,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -57668,7 +57668,7 @@ struct aarstats {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -57717,7 +57717,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -57771,14 +57771,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -57790,7 +57790,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -57964,7 +57964,7 @@ struct aarstats {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -58013,7 +58013,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -58067,14 +58067,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -58086,7 +58086,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -58222,7 +58222,7 @@ struct aarstats {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -58271,7 +58271,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -58325,14 +58325,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[3];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[3];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[3];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[3];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[3];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -58344,7 +58344,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -58478,7 +58478,7 @@ struct aarstats {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -58527,7 +58527,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -58580,15 +58580,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     itemstats itemgroupstats[15];
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -58600,7 +58600,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -58734,7 +58734,7 @@ struct aarstats {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -58783,7 +58783,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -58836,15 +58836,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     itemstats itemgroupstats[14];
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -58856,7 +58856,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -58990,7 +58990,7 @@ struct aarstats {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -59039,7 +59039,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -59092,15 +59092,15 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     itemstats itemgroupstats[14];
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     hash_16df3a6474be0b92 probation[1];
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     byte unlocks[32];
     characterinfo characters[36];
@@ -59112,7 +59112,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -59246,7 +59246,7 @@ struct aarstats {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     aarteammate teammates[4];
@@ -59295,7 +59295,7 @@ struct matchhistorystats {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -59347,14 +59347,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     itemstats itemgroupstats[14];
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     characterinfo characters[36];
     bit completedfirsttimeflow;
@@ -59365,7 +59365,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -59533,14 +59533,14 @@ struct root {
     uint32 hash_10ddf783cbee6688;
     hash_4920262663a0d935 playerstatsbygametype[4];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     itemstats itemgroupstats[13];
-    fixedpoint hash_2363e7e74077b1c0[4];
+    float hash_2363e7e74077b1c0[4];
     uint32 uploadbandwidth;
     uint3 onboardingstate;
     globalstats playerstatslist;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[4];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[4];
     aarstats afteractionreportstats;
     characterinfo characters[36];
     bit completedfirsttimeflow;
@@ -59551,7 +59551,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -59729,7 +59729,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -59896,7 +59896,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -60059,7 +60059,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -60219,7 +60219,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -60376,7 +60376,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -60536,7 +60536,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -60696,7 +60696,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -60852,7 +60852,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -60996,7 +60996,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -61140,7 +61140,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -61284,7 +61284,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -61412,7 +61412,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -61540,7 +61540,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -61680,7 +61680,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -61818,7 +61818,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -61955,7 +61955,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -62087,7 +62087,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };

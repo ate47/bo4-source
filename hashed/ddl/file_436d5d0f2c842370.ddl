@@ -21,7 +21,7 @@ struct hash_5587d4b6f80e3750 {
 
 struct hash_21b8990ea47fcb57 {
     charactercontext charactercontext;
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     hash_364a833fe14792ac characters;
     uint11 hash_20d6751cb2f9ca09[9];
 };
@@ -68,7 +68,7 @@ struct hash_5587d4b6f80e3750 {
 
 struct hash_21b8990ea47fcb57 {
     charactercontext charactercontext;
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     hash_364a833fe14792ac characters;
     uint11 hash_20d6751cb2f9ca09[9];
 };
@@ -115,7 +115,7 @@ struct hash_5587d4b6f80e3750 {
 
 struct hash_21b8990ea47fcb57 {
     charactercontext charactercontext;
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     hash_364a833fe14792ac characters;
     uint11 hash_20d6751cb2f9ca09[9];
 };
@@ -162,7 +162,7 @@ struct hash_5587d4b6f80e3750 {
 
 struct hash_21b8990ea47fcb57 {
     charactercontext charactercontext;
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     hash_364a833fe14792ac characters;
     uint11 hash_20d6751cb2f9ca09[9];
 };
@@ -209,7 +209,7 @@ struct hash_5587d4b6f80e3750 {
 
 struct hash_21b8990ea47fcb57 {
     charactercontext charactercontext;
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     hash_364a833fe14792ac characters;
     uint11 hash_20d6751cb2f9ca09[9];
 };
@@ -256,7 +256,7 @@ struct hash_5587d4b6f80e3750 {
 
 struct hash_21b8990ea47fcb57 {
     charactercontext charactercontext;
-    double hash_3151222286bd41d4[3];
+    hash hash_3151222286bd41d4[3];
     hash_364a833fe14792ac characters;
     uint11 hash_20d6751cb2f9ca09[9];
 };

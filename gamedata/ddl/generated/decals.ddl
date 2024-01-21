@@ -9,7 +9,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };
@@ -92,7 +92,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };
@@ -175,7 +175,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };
@@ -258,7 +258,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };
@@ -341,7 +341,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };
@@ -422,7 +422,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };
@@ -503,7 +503,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };
@@ -582,7 +582,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };
@@ -661,7 +661,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };
@@ -740,7 +740,7 @@ struct root {
 
 struct decal {
     hash_6ac42a2c4c8f3b10 decal;
-    string hash_2e62c0f5c511d22d;
+    char hash_2e62c0f5c511d22d[12];
     int2 isused;
     int32 sortindex;
 };

@@ -4,7 +4,7 @@ metatable "hash_14f01c93e50e6112";
 
 struct root {
     hash_6580ccf5f8a0ef6 dml;
-    string hash_3ddb4b48b795bd91;
+    char hash_3ddb4b48b795bd91[40];
     hash_21869aff174e9b46 loot_contracts[3];
     byte bo_pass_tier_boost;
     hash_54196e9e9860f0be platform;
@@ -18,20 +18,20 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint32 xp;
     uint32 contractid;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -56,7 +56,7 @@ metatable "hash_357511b13d992253";
 
 struct root {
     hash_6580ccf5f8a0ef6 dml;
-    string hash_3ddb4b48b795bd91;
+    char hash_3ddb4b48b795bd91[40];
     hash_21869aff174e9b46 loot_contracts[3];
     byte bo_pass_tier_boost;
     hash_54196e9e9860f0be platform;
@@ -70,20 +70,20 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint32 xp;
     uint32 contractid;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -108,7 +108,7 @@ metatable "hash_543c58d5d63f4fb6";
 
 struct root {
     hash_6580ccf5f8a0ef6 dml;
-    string hash_3ddb4b48b795bd91;
+    char hash_3ddb4b48b795bd91[40];
     hash_21869aff174e9b46 loot_contracts[3];
     byte bo_pass_tier_boost;
     hash_54196e9e9860f0be platform;
@@ -121,20 +121,20 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint32 xp;
     uint32 contractid;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -159,7 +159,7 @@ metatable "hash_4e17738a65943c95";
 
 struct root {
     hash_6580ccf5f8a0ef6 dml;
-    string hash_3ddb4b48b795bd91;
+    char hash_3ddb4b48b795bd91[40];
     hash_21869aff174e9b46 loot_contracts[3];
     byte bo_pass_tier_boost;
     hash_54196e9e9860f0be platform;
@@ -173,20 +173,20 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint32 xp;
     uint32 contractid;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -224,20 +224,20 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint32 xp;
     uint32 contractid;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -275,20 +275,20 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint32 xp;
     uint32 contractid;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -326,20 +326,20 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint32 xp;
     uint32 contractid;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -377,19 +377,19 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint32 contractid;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -427,19 +427,19 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint32 contractid;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -477,18 +477,18 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -524,18 +524,18 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -571,18 +571,18 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -618,18 +618,18 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -665,18 +665,18 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -712,19 +712,19 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
-    double hash_6bcde715574b1e8;
+    hash hash_6bcde715574b1e8;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -760,19 +760,19 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
-    double hash_6bcde715574b1e8;
+    hash hash_6bcde715574b1e8;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -808,19 +808,19 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
-    double hash_6bcde715574b1e8;
+    hash hash_6bcde715574b1e8;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -854,19 +854,19 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
-    double hash_6bcde715574b1e8;
+    hash hash_6bcde715574b1e8;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -900,19 +900,19 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
-    double hash_6bcde715574b1e8;
+    hash hash_6bcde715574b1e8;
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -946,18 +946,18 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 struct hash_21869aff174e9b46 {
     uint3 contractgamemode;
-    double contracthash;
+    hash contracthash;
     uint64 progress;
     uint64 target;
 };
@@ -990,13 +990,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1027,13 +1027,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1064,13 +1064,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1101,13 +1101,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1138,13 +1138,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1175,13 +1175,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1212,13 +1212,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1249,13 +1249,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1286,13 +1286,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1322,13 +1322,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {
@@ -1353,13 +1353,13 @@ struct root {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {

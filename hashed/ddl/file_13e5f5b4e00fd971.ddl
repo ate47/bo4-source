@@ -3,13 +3,13 @@ version 1;
 metatable "hash_204912ac53b5afe3";
 
 struct root {
-    string cg_drawfps;
+    char cg_drawfps[16];
     uint32 cg_chatheight;
     uint32 r_texfilterquality;
-    fixedpoint m_pitch;
+    float m_pitch;
     int32 hash_1932202b4f52dbf3;
     int32 hash_f87421fe851174a;
-    string hash_1fdfb434e84cee5;
+    char hash_1fdfb434e84cee5[64];
     uint32 hash_b416c1c6fc35d1;
     uint32 com_maxfps;
     uint32 hash_b4e700934aceed;
@@ -20,7 +20,7 @@ struct root {
     uint32 cg_fov_default;
     uint32 ai_corpsecount;
     uint32 r_fullscreen;
-    string r_mode;
+    char r_mode[16];
     uint32 hash_2970eab08fd91538;
     uint32 r_monitor;
     uint32 hash_52285dfeeddba347;

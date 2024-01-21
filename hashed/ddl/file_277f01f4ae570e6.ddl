@@ -18,7 +18,7 @@ struct hash_4aabf3d6d297186e {
     uint32 hash_2a6fcae39ad43a1;
     uint16 hash_310fe31f4220a4bd;
     uint32 hash_7090a8e65737cfe;
-    fixedpoint send_timeout;
+    float send_timeout;
     uint32 hash_4ed5f043bba32d74;
     uint16 hash_23798c701bcdea4;
     uint32 hash_1f423da65e71efd6;
@@ -38,9 +38,9 @@ struct hash_4aabf3d6d297186e {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

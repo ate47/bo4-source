@@ -42,7 +42,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -119,7 +119,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -196,7 +196,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -273,7 +273,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -350,7 +350,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -427,7 +427,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -504,7 +504,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -581,7 +581,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -658,7 +658,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -735,7 +735,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -812,7 +812,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -889,7 +889,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -966,7 +966,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1043,7 +1043,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1119,7 +1119,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1196,7 +1196,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1273,7 +1273,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1350,7 +1350,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1427,7 +1427,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1504,7 +1504,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1581,7 +1581,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1656,7 +1656,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1731,7 +1731,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1806,7 +1806,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1881,7 +1881,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1956,7 +1956,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2031,7 +2031,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2106,7 +2106,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2181,7 +2181,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2256,7 +2256,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2330,7 +2330,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2403,7 +2403,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2476,7 +2476,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2550,7 +2550,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2624,7 +2624,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2698,7 +2698,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2772,7 +2772,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2846,7 +2846,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2919,7 +2919,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3003,7 +3003,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3131,7 +3131,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3259,7 +3259,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3387,7 +3387,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3515,7 +3515,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3643,7 +3643,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3770,7 +3770,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3898,7 +3898,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4026,7 +4026,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4154,7 +4154,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4282,7 +4282,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4410,7 +4410,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4555,7 +4555,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4682,7 +4682,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4810,7 +4810,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4938,7 +4938,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5066,7 +5066,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5194,7 +5194,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5322,7 +5322,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5433,7 +5433,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5560,7 +5560,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5688,7 +5688,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5816,7 +5816,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5944,7 +5944,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6071,7 +6071,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6189,7 +6189,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6316,7 +6316,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6415,7 +6415,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -6433,8 +6433,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -6447,8 +6447,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[358];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -6523,7 +6523,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6618,7 +6618,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -6642,7 +6642,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -6679,7 +6679,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6787,7 +6787,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -6805,8 +6805,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -6819,8 +6819,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[338];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -6895,7 +6895,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6990,7 +6990,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -7014,7 +7014,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7051,7 +7051,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7159,7 +7159,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -7177,8 +7177,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -7191,8 +7191,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[337];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -7267,7 +7267,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7362,7 +7362,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -7386,7 +7386,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7423,7 +7423,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7531,7 +7531,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -7549,8 +7549,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -7562,8 +7562,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[337];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -7638,7 +7638,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7724,7 +7724,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -7748,7 +7748,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7785,7 +7785,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7893,7 +7893,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -7911,8 +7911,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -7924,8 +7924,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[337];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -7995,7 +7995,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -8081,7 +8081,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -8105,7 +8105,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -8142,7 +8142,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -8250,7 +8250,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -8268,8 +8268,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -8281,8 +8281,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[337];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -8347,7 +8347,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -8433,7 +8433,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -8457,7 +8457,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -8494,7 +8494,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -8602,7 +8602,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -8620,8 +8620,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -8633,8 +8633,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[336];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -8699,7 +8699,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -8785,7 +8785,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -8809,7 +8809,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -8846,7 +8846,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -8954,7 +8954,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -8972,8 +8972,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -8985,8 +8985,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[336];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -9051,7 +9051,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -9137,7 +9137,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -9161,7 +9161,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -9198,7 +9198,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -9306,7 +9306,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -9324,8 +9324,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -9337,8 +9337,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[320];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -9403,7 +9403,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -9489,7 +9489,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -9513,7 +9513,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -9550,7 +9550,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -9658,7 +9658,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -9676,8 +9676,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -9689,8 +9689,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[319];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -9755,7 +9755,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -9841,7 +9841,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -9865,7 +9865,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -9902,7 +9902,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -10010,7 +10010,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -10028,8 +10028,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -10041,8 +10041,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[320];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -10107,7 +10107,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -10193,7 +10193,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -10217,7 +10217,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -10254,7 +10254,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -10362,7 +10362,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[56];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -10380,8 +10380,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -10393,8 +10393,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[287];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -10459,7 +10459,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -10545,7 +10545,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -10569,7 +10569,7 @@ struct hash_6d83fd06705c52be {
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
     int32 headshots;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -10606,7 +10606,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -10714,7 +10714,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[56];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -10732,8 +10732,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -10745,8 +10745,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[287];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -10811,7 +10811,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -10897,7 +10897,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -10916,7 +10916,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -10953,7 +10953,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -11061,7 +11061,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[56];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -11079,8 +11079,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -11092,8 +11092,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[287];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -11158,7 +11158,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11244,7 +11244,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -11262,7 +11262,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -11299,7 +11299,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -11407,7 +11407,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[56];
-    double hash_3da32e638bd332a5[8];
+    hash hash_3da32e638bd332a5[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -11425,8 +11425,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -11438,8 +11438,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[283];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -11504,7 +11504,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11590,7 +11590,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -11608,7 +11608,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -11645,7 +11645,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -11770,8 +11770,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -11783,8 +11783,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[283];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -11849,7 +11849,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -11935,7 +11935,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -11953,7 +11953,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -11990,7 +11990,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -12115,8 +12115,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[9];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[9];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[9];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -12128,8 +12128,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[283];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[9];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[9];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -12194,7 +12194,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12280,7 +12280,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -12298,7 +12298,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -12335,7 +12335,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -12460,8 +12460,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -12473,8 +12473,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[283];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -12539,7 +12539,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12625,7 +12625,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -12643,7 +12643,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -12680,7 +12680,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -12805,8 +12805,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -12818,8 +12818,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[259];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -12884,7 +12884,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -12970,7 +12970,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -12988,7 +12988,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     int32 fastest_time_to_complete_round_30;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -13025,7 +13025,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -13150,8 +13150,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -13163,8 +13163,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[259];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -13229,7 +13229,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -13315,7 +13315,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -13326,7 +13326,7 @@ struct hash_6d83fd06705c52be {
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -13363,7 +13363,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -13488,8 +13488,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -13501,8 +13501,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[259];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -13567,7 +13567,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -13653,7 +13653,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -13663,7 +13663,7 @@ struct hash_6d83fd06705c52be {
     int32 surveyid;
     short nemesiskills;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -13700,7 +13700,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -13825,8 +13825,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -13838,8 +13838,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[259];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -13904,7 +13904,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -13990,7 +13990,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -13999,7 +13999,7 @@ struct hash_6d83fd06705c52be {
     short nemesisrankicon;
     short nemesiskills;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -14036,7 +14036,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -14161,8 +14161,8 @@ struct root {
     uint64 hash_188ecc3aca50f93d;
     hash_2e1d3d3bb036d22c playerstatsbygametype[5];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
-    fixedpoint hash_2363e7e74077b1c0[5];
+    float skill_rating;
+    float hash_2363e7e74077b1c0[5];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -14174,8 +14174,8 @@ struct root {
     hash_6b3db80d498eb06 playerstatslist[259];
     hash_d00a3c4fcc583a9 buildables[12];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[5];
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[5];
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     uint64 playerxuid;
@@ -14240,7 +14240,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -14326,7 +14326,7 @@ struct hash_d00a3c4fcc583a9 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
     byte selectedfeature;
     hash_118b324c3f145926 features[14];
 };
@@ -14335,7 +14335,7 @@ struct hash_6d83fd06705c52be {
     short nemesisrankicon;
     short nemesiskills;
     short nemesiskilledby;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -14372,7 +14372,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;

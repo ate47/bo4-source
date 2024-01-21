@@ -3,12 +3,12 @@ version 11;
 metatable "hash_dee3cfcb6f441d66";
 
 struct root {
-    string dump;
+    char dump[2048];
     match_header match;
     telemetry_header telemetry;
-    string transition;
-    string table_name;
-    string aitype;
+    char transition[256];
+    char table_name[48];
+    char aitype[64];
     client_header client;
     int32 entity;
 };
@@ -22,9 +22,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

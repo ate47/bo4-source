@@ -9,13 +9,13 @@ struct root {
     int32 maxcount;
     telemetry_header telemetry;
     int32 evaluation;
-    string description;
+    char description[64];
     client_header client;
-    fixedpoint timeout;
+    float timeout;
     int32 hash_7ba2635f63e1aa23;
-    fixedpoint length;
+    float length;
     int32 falloff;
-    fixedpoint radius;
+    float radius;
 };
 
 struct match_header {
@@ -27,9 +27,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

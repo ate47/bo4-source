@@ -3,18 +3,18 @@ version 13;
 metatable "hash_f9a9b579543779ca";
 
 struct root {
-    string name;
+    char name[48];
     match_header match;
     int32 score;
-    fixedpoint skill;
+    float skill;
     int32 time_played;
     telemetry_header telemetry;
-    fixedpoint hash_bcaf6f75977e7fd;
+    float hash_bcaf6f75977e7fd;
     short clientnum;
-    fixedpoint hash_643bb973cf7657ad;
+    float hash_643bb973cf7657ad;
     client_header client;
-    fixedpoint variance;
-    fixedpoint hash_7f882efce9a0e3db;
+    float variance;
+    float hash_7f882efce9a0e3db;
 };
 
 struct match_header {
@@ -26,9 +26,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

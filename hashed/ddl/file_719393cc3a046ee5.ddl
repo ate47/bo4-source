@@ -4,14 +4,14 @@ metatable "hash_2477c2f963ab2406";
 
 struct root {
     match_header match;
-    string menus;
+    char menus[2048];
     int32 animations;
     int8 local_players;
     uint32 hash_4f2369bc188f798c;
     telemetry_header telemetry;
     int32 hash_1a282687441a6dc6;
     int32 hash_715a0ce203ebb96c;
-    string gametype;
+    char gametype[8];
     int32 hash_7f4072cde37a7be8;
     client_header client;
     uint32 requested_size;
@@ -30,9 +30,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

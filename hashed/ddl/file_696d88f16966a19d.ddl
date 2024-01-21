@@ -3,21 +3,21 @@ version 11;
 metatable "hash_e4b86c41b3db0844";
 
 struct root {
-    double melee_weapon;
+    hash melee_weapon;
     match_header match;
     telemetry_header telemetry;
-    fixedpoint accuracy;
+    float accuracy;
     int32 gametime;
-    double archetype;
-    string airank;
-    string aitype;
+    hash archetype;
+    char airank[64];
+    char aitype[64];
     client_header client;
     int32 health;
-    fixedpoint originx;
-    fixedpoint originy;
-    fixedpoint originz;
+    float originx;
+    float originy;
+    float originz;
     int32 hash_16f7e8c8e28206d7;
-    double weapon;
+    hash weapon;
     byte roundnum;
 };
 
@@ -30,9 +30,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

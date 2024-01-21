@@ -3,8 +3,8 @@ version 1;
 metatable "hash_586cadfcfb89b85a";
 
 struct root {
-    string message;
-    string description;
+    char message[128];
+    char description[128];
     uint64 messagexuid;
 };
 

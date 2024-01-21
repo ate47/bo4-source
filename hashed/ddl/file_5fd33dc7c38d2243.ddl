@@ -3,18 +3,18 @@ version 4;
 metatable "hash_9797769106386acb";
 
 struct root {
-    string sku;
+    char sku[32];
     int8 slot;
     uint32 hash_15c56d778df1bb04;
     uint32 casecount;
     telemetry_header telemetry;
     int32 timeremaining;
-    double itemname;
+    hash itemname;
     int32 rotationtime;
     int8 hash_2082f5f2f5fb1340;
     byte stacktotal;
     byte stackposition;
-    string action;
+    char action[16];
     client_header client;
     uint32 cpcost;
     int8 season;
@@ -24,9 +24,9 @@ struct root {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

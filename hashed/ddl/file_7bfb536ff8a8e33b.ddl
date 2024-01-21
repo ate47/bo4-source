@@ -6,9 +6,9 @@ struct root {
     uint64 match_id;
     uint32 version;
     telemetry_header telemetry;
-    string survey_order;
+    char survey_order[32];
     hash_6e584a2182d558dd answer_id;
-    string survey_id;
+    char survey_id[48];
     client_header client;
     bit hash_1ad6ca05018e4411;
     padbit __pad[7];
@@ -24,9 +24,9 @@ enum hash_6e584a2182d558dd {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

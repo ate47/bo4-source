@@ -4,20 +4,20 @@ metatable "hash_84ab01c5bced8c5a";
 
 struct root {
     telemetry_header telemetry;
-    string interaction_type;
-    string language;
+    char interaction_type[16];
+    char language[24];
     client_header client;
     uint64 hash_13a1a70556201a2d;
-    string hash_43c83260dd96c90c;
+    char hash_43c83260dd96c90c[32];
     byte hash_31a5d51248a1d2c;
 };
 
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

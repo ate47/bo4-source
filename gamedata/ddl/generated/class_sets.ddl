@@ -15,9 +15,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -68,9 +68,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -121,9 +121,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -174,9 +174,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -227,9 +227,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -280,9 +280,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -333,9 +333,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -386,9 +386,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -439,9 +439,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -492,9 +492,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -545,9 +545,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -598,9 +598,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -651,9 +651,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -702,9 +702,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -753,9 +753,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -804,9 +804,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -855,9 +855,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -906,9 +906,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -957,9 +957,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1006,9 +1006,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1055,9 +1055,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1104,9 +1104,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1153,9 +1153,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1202,9 +1202,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1251,9 +1251,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1300,9 +1300,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1347,9 +1347,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1394,9 +1394,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1441,9 +1441,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1488,9 +1488,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1535,9 +1535,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1582,9 +1582,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1629,9 +1629,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1676,9 +1676,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1723,9 +1723,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1770,9 +1770,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1817,9 +1817,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1864,9 +1864,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1911,9 +1911,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -1958,9 +1958,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -2005,9 +2005,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {
@@ -2052,9 +2052,9 @@ struct root {
 };
 
 struct hash_5814f20693f11787 {
-    string classsetname;
+    char classsetname[16];
     hash_27580df06d232ed1 customclass[5];
-    string customclassname[10];
+    char customclassname[10][16];
 };
 
 struct hash_27580df06d232ed1 {

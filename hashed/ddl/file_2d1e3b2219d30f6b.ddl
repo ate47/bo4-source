@@ -3,11 +3,11 @@ version 10;
 metatable "hash_fda9bcd69ef71db7";
 
 struct root {
-    string label;
+    char label[16];
     match_header match;
     byte round;
     telemetry_header telemetry;
-    fixedpoint hash_3aa6594a2fe3f262;
+    float hash_3aa6594a2fe3f262;
     uint32 hash_6634e2218515500f;
     client_header client;
     bit gametime;
@@ -24,9 +24,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

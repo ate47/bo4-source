@@ -3,12 +3,12 @@ version 24;
 metatable "hash_f0716b756b554c5c";
 
 struct root {
-    string map;
+    char map[48];
     match_header match;
     telemetry_header telemetry;
-    double playlist_name;
+    hash playlist_name;
     int32 lobby_type;
-    double game_type;
+    hash game_type;
     hash_6cf1cc22ebab862c install_type;
     hash_405641015bd81f7d nat_type;
     int32 playlist_id;
@@ -50,9 +50,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
@@ -72,13 +72,13 @@ enum hash_6cf1cc22ebab862c {
 
 struct hash_6580ccf5f8a0ef6 {
     uint32 hash_67599f190572ca79;
-    string city;
-    fixedpoint longitude;
-    string country;
-    string timezone;
-    string language;
-    fixedpoint latitude;
-    string region;
+    char city[128];
+    float longitude;
+    char country[2];
+    char timezone[8];
+    char language[5];
+    float latitude;
+    char region[64];
 };
 
 enum hash_54196e9e9860f0be {

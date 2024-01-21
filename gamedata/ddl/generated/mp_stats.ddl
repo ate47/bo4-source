@@ -12,7 +12,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -38,7 +38,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[59];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_23d454a06e666aa7;
@@ -86,7 +86,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -155,7 +155,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -181,7 +181,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[59];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[135];
@@ -228,7 +228,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -297,7 +297,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -323,7 +323,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[59];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[135];
@@ -370,7 +370,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -438,7 +438,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -463,7 +463,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[59];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[135];
@@ -510,7 +510,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -568,7 +568,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -592,7 +592,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[59];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[135];
@@ -634,7 +634,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -692,7 +692,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -716,7 +716,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[57];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[133];
@@ -758,7 +758,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -816,7 +816,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -840,7 +840,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[56];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[132];
@@ -882,7 +882,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -940,7 +940,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -964,7 +964,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[56];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[132];
@@ -1004,7 +1004,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1062,7 +1062,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -1086,7 +1086,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[54];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[130];
@@ -1126,7 +1126,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1184,7 +1184,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -1208,7 +1208,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[53];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[129];
@@ -1248,7 +1248,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1306,7 +1306,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -1330,7 +1330,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[53];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[129];
@@ -1370,7 +1370,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1428,7 +1428,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -1452,7 +1452,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[51];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[127];
@@ -1492,7 +1492,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1550,7 +1550,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -1574,7 +1574,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[51];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[126];
@@ -1614,7 +1614,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1672,7 +1672,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -1696,7 +1696,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[46];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[121];
@@ -1736,7 +1736,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1794,7 +1794,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -1818,7 +1818,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[46];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[120];
@@ -1858,7 +1858,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -1916,7 +1916,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -1940,7 +1940,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[46];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[120];
@@ -1980,7 +1980,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2036,7 +2036,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -2060,7 +2060,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[45];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[119];
@@ -2100,7 +2100,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2156,7 +2156,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -2180,7 +2180,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[44];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[36];
     bit hash_24b9a9540a303875[118];
@@ -2220,7 +2220,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2276,7 +2276,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -2300,7 +2300,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[44];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[35];
     bit hash_24b9a9540a303875[118];
@@ -2340,7 +2340,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2396,7 +2396,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -2420,7 +2420,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[44];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[35];
     bit hash_24b9a9540a303875[118];
@@ -2460,7 +2460,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2516,7 +2516,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -2540,7 +2540,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[44];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[35];
     bit hash_24b9a9540a303875[118];
@@ -2580,7 +2580,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2636,7 +2636,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -2660,7 +2660,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[43];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[35];
     bit hash_24b9a9540a303875[118];
@@ -2700,7 +2700,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2756,7 +2756,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -2780,7 +2780,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[43];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[35];
     bit hash_24b9a9540a303875[117];
@@ -2820,7 +2820,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2876,7 +2876,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -2900,7 +2900,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[42];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[35];
     bit hash_24b9a9540a303875[116];
@@ -2939,7 +2939,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -2995,7 +2995,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -3019,7 +3019,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[42];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[116];
@@ -3059,7 +3059,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3115,7 +3115,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -3139,7 +3139,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[42];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[116];
@@ -3179,7 +3179,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3235,7 +3235,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -3259,7 +3259,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[42];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[116];
@@ -3299,7 +3299,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3355,7 +3355,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -3379,7 +3379,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[42];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[116];
@@ -3418,7 +3418,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3474,7 +3474,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -3498,7 +3498,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[42];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[116];
@@ -3537,7 +3537,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3593,7 +3593,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -3617,7 +3617,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[42];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[115];
@@ -3656,7 +3656,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3712,7 +3712,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -3736,7 +3736,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[40];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[112];
@@ -3775,7 +3775,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3831,7 +3831,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -3855,7 +3855,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[40];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[112];
@@ -3890,7 +3890,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -3946,7 +3946,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -3970,7 +3970,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[40];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     uint32 hash_730dca25bc735a45;
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[111];
@@ -4005,7 +4005,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4061,7 +4061,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -4085,7 +4085,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[40];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
     hash_309fddece60ad202 hash_39ddfb62a0697ab6[10];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[111];
     bit hash_3dc4e6e4baa0b494;
@@ -4119,7 +4119,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4175,7 +4175,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -4198,7 +4198,7 @@ struct root {
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[40];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[111];
     bit hash_3dc4e6e4baa0b494;
@@ -4232,7 +4232,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4282,7 +4282,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -4305,7 +4305,7 @@ struct root {
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[39];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[110];
     bit hash_3dc4e6e4baa0b494;
@@ -4338,7 +4338,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4388,7 +4388,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -4411,7 +4411,7 @@ struct root {
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[39];
     hash_ce4b1dd0ab5e032 hash_3c432dbe9ebe70e9[128];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[110];
     bit hash_3dc4e6e4baa0b494;
@@ -4444,7 +4444,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4494,7 +4494,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -4515,7 +4515,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[39];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[110];
     bit hash_3dc4e6e4baa0b494;
@@ -4548,7 +4548,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4593,7 +4593,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -4614,7 +4614,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[37];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[108];
     bit hash_3dc4e6e4baa0b494;
@@ -4647,7 +4647,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4692,7 +4692,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -4713,7 +4713,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[37];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[107];
     bit hash_3dc4e6e4baa0b494;
@@ -4746,7 +4746,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4791,7 +4791,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -4812,7 +4812,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[104];
     bit hash_3dc4e6e4baa0b494;
@@ -4845,7 +4845,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4890,7 +4890,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -4911,7 +4911,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[104];
     bit hash_3dc4e6e4baa0b494;
@@ -4942,7 +4942,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -4987,7 +4987,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -5008,7 +5008,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[104];
     bit hash_3dc4e6e4baa0b494;
@@ -5039,7 +5039,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5084,7 +5084,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -5105,7 +5105,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[103];
     bit hash_3dc4e6e4baa0b494;
@@ -5136,7 +5136,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5181,7 +5181,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -5202,7 +5202,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[103];
     bit hash_3dc4e6e4baa0b494;
@@ -5232,7 +5232,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5276,7 +5276,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -5297,7 +5297,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[103];
     bit hash_3dc4e6e4baa0b494;
@@ -5322,7 +5322,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5366,7 +5366,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -5387,7 +5387,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[103];
     bit hash_3dc4e6e4baa0b494;
@@ -5410,7 +5410,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5454,7 +5454,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -5475,7 +5475,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[30];
     bit hash_24b9a9540a303875[103];
     bit extrabools[16];
@@ -5498,7 +5498,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5542,7 +5542,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -5563,7 +5563,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[29];
     bit hash_24b9a9540a303875[103];
     bit extrabools[16];
@@ -5586,7 +5586,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5630,7 +5630,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_2cad871e3d814528;
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
@@ -5651,7 +5651,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[28];
     bit hash_24b9a9540a303875[103];
     bit extrabools[16];
@@ -5674,7 +5674,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5718,7 +5718,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -5738,7 +5738,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[28];
     bit hash_24b9a9540a303875[103];
     bit extrabools[16];
@@ -5761,7 +5761,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5805,7 +5805,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -5825,7 +5825,7 @@ struct root {
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
     hash_1898703fb0109487 hash_6326a574b8674519[34];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[28];
     bit hash_24b9a9540a303875[103];
     bit extrabools[16];
@@ -5848,7 +5848,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5892,7 +5892,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -5912,7 +5912,7 @@ struct root {
     int32 motdviewtime;
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit hash_6a6ee0a867b10f80[28];
     bit extrabools[16];
     bit hash_589bf647eb598158;
@@ -5935,7 +5935,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -5971,7 +5971,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
     uint32 hash_260a6267b14b8126[3];
-    string clantag;
+    char clantag[5];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -5991,7 +5991,7 @@ struct root {
     int32 motdviewtime;
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit extrabools[16];
     bit hash_589bf647eb598158;
     bit blackmarketshowbreadcrumb;
@@ -6012,7 +6012,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6047,7 +6047,7 @@ struct root {
     uint5 selectedcustomclass;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
-    string clantag;
+    char clantag[5];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -6067,7 +6067,7 @@ struct root {
     int32 motdviewtime;
     hash_6d7a1373d79780a5 hash_a1929c01226c9c7;
     uint64 gamebookmarks[16];
-    string hash_6073ea7c9a394456;
+    char hash_6073ea7c9a394456[6];
     bit extrabools[16];
     bit hash_589bf647eb598158;
     bit blackmarketshowbreadcrumb;
@@ -6088,7 +6088,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6160,9 +6160,9 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[44];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[44];
+    float hash_2363e7e74077b1c0[44];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -6173,16 +6173,16 @@ struct root {
     uint3 onboardingstate;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[44];
-    hash hash_6a927decba86a3c3;
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[44];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit extrabools[16];
     bit hash_589bf647eb598158;
     bit blackmarketshowbreadcrumb;
@@ -6208,9 +6208,9 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
+    float skill;
     hash_d42e412b1c8b06b hash_c66430efac57d2e;
-    fixedpoint variance;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -6297,7 +6297,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6372,7 +6372,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
 };
 
 struct hash_6d83fd06705c52be {
@@ -6382,7 +6382,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -6434,7 +6434,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6523,9 +6523,9 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[44];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[44];
+    float hash_2363e7e74077b1c0[44];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -6535,16 +6535,16 @@ struct root {
     uint3 onboardingstate;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[44];
-    hash hash_6a927decba86a3c3;
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[44];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit extrabools[16];
     bit hash_589bf647eb598158;
     bit blackmarketshowbreadcrumb;
@@ -6570,9 +6570,9 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
+    float skill;
     hash_d42e412b1c8b06b hash_c66430efac57d2e;
-    fixedpoint variance;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -6664,7 +6664,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -6730,7 +6730,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
 };
 
 struct hash_6d83fd06705c52be {
@@ -6740,7 +6740,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -6792,7 +6792,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -6880,9 +6880,9 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[44];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[44];
+    float hash_2363e7e74077b1c0[44];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -6892,16 +6892,16 @@ struct root {
     uint3 onboardingstate;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[44];
-    hash hash_6a927decba86a3c3;
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[44];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit extrabools[16];
     bit hash_589bf647eb598158;
     bit blackmarketshowbreadcrumb;
@@ -6938,9 +6938,9 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
+    float skill;
     hash_d42e412b1c8b06b hash_c66430efac57d2e;
-    fixedpoint variance;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -7010,7 +7010,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7076,7 +7076,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
 };
 
 struct hash_6d83fd06705c52be {
@@ -7086,7 +7086,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7148,7 +7148,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7232,9 +7232,9 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[44];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[44];
+    float hash_2363e7e74077b1c0[44];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -7244,16 +7244,16 @@ struct root {
     uint3 onboardingstate;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[44];
-    hash hash_6a927decba86a3c3;
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[44];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit extrabools[16];
     bit hash_589bf647eb598158;
     bit blackmarketshowbreadcrumb;
@@ -7290,9 +7290,9 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
+    float skill;
     hash_d42e412b1c8b06b hash_c66430efac57d2e;
-    fixedpoint variance;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -7362,7 +7362,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7428,7 +7428,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
 };
 
 struct hash_6d83fd06705c52be {
@@ -7438,7 +7438,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7500,7 +7500,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;
@@ -7584,9 +7584,9 @@ struct root {
     int32 hash_54c694770b846433;
     hash_2e1d3d3bb036d22c playerstatsbygametype[38];
     byte demonwareflags[32];
-    fixedpoint skill_rating;
+    float skill_rating;
     int32 unlocktokencount_attachment;
-    fixedpoint hash_2363e7e74077b1c0[38];
+    float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
     hash_4f6f299a12577aa4 prestigetokens[20];
     hash_4bb25d7ad41fb449 probation[2];
@@ -7596,16 +7596,16 @@ struct root {
     uint3 onboardingstate;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    fixedpoint skill_variance;
-    fixedpoint hash_3a7324ad328f0e2e[38];
-    hash hash_6a927decba86a3c3;
+    float skill_variance;
+    float hash_3a7324ad328f0e2e[38];
+    fixedpoint hash_6a927decba86a3c3;
     hash_6d83fd06705c52be afteractionreportstats;
     byte unlocks[32];
     hash_790a163d0959fa18 emblemstats;
     hash_48cae9b9fcff7a5e itemstats[256];
     hash_d847c3e97c74b7d arenastats[9];
-    string hash_6073ea7c9a394456;
-    string hash_7d19b83705dea420;
+    char hash_6073ea7c9a394456[6];
+    char hash_7d19b83705dea420[32];
     bit extrabools[16];
     bit hash_589bf647eb598158;
     bit blackmarketshowbreadcrumb;
@@ -7642,9 +7642,9 @@ struct dlc_t {
 struct hash_d847c3e97c74b7d {
     uint32 ties;
     uint32 wins;
-    fixedpoint skill;
+    float skill;
     hash_d42e412b1c8b06b hash_c66430efac57d2e;
-    fixedpoint variance;
+    float variance;
     uint32 matchstartpoints;
     uint32 losses;
     uint32 points;
@@ -7714,7 +7714,7 @@ struct hash_4976dab983b23e8c {
     uint32 timestamp;
     uint32 nattype;
     uint64 macaddress;
-    string consoleid64;
+    char consoleid64[32];
     hash_25a11738b4152d0e ipexternal;
     uint32 usecount;
 };
@@ -7780,7 +7780,7 @@ struct hash_6b3db80d498eb06 {
 };
 
 struct hash_402baff65ae9b838 {
-    string clanname;
+    char clanname[5];
 };
 
 struct hash_6d83fd06705c52be {
@@ -7790,7 +7790,7 @@ struct hash_6d83fd06705c52be {
     short nemesiskills;
     short nemesiskilledby;
     byte nemesisheroindex;
-    string nemesisname;
+    char nemesisname[32];
     short nemesisrank;
     uint64 nemesisxuid;
     bit valid;
@@ -7852,7 +7852,7 @@ struct hash_5fafb39a86bc6dc7 {
     uint32 startingtime;
     uint32 endingtime;
     uint5 scoreboardposition;
-    fixedpoint teamscoreratio;
+    float teamscoreratio;
     uint5 gametype;
     short deaths;
     uint3 quittype;

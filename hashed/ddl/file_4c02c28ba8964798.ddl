@@ -4,9 +4,9 @@ metatable "hash_d81547e29b077c15";
 
 struct root {
     uint32 slots_used;
-    string weapon_title;
+    char weapon_title[48];
     telemetry_header telemetry;
-    string operation;
+    char operation[16];
     uint32 assets_used;
     uint32 duration;
     client_header client;
@@ -17,9 +17,9 @@ struct root {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

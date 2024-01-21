@@ -7,19 +7,19 @@ struct root {
     uint32 player_count;
     hash_4bc2231ce039ad50 frame;
     match_header match;
-    fixedpoint hash_5cf4c0068a2adb7e;
+    float hash_5cf4c0068a2adb7e;
     telemetry_header telemetry;
     hash_3ea575a2be6523f8 stream_weapons;
     hash_4bc2231ce039ad50 hash_26305944fdfcc648;
     hash_3ea575a2be6523f8 hash_607533ecc8220817;
     hash_3ea575a2be6523f8 hash_5a1df273e5117ae4;
-    fixedpoint hash_320012f3ddbd42e1;
-    fixedpoint hash_694ebf1c86e2b370;
-    fixedpoint hash_26a1c4d27438e76;
+    float hash_320012f3ddbd42e1;
+    float hash_694ebf1c86e2b370;
+    float hash_26a1c4d27438e76;
     int32 hash_41c61675e9a0b2d1;
-    fixedpoint hash_b8a5310b16895f8;
+    float hash_b8a5310b16895f8;
     int32 hash_7efd3977838c2844;
-    fixedpoint hash_786854d23639d4ff;
+    float hash_786854d23639d4ff;
     hash_3ea575a2be6523f8 stream_terrain;
     hash_5e4dc4e07696d328 camera;
     client_header client;
@@ -54,9 +54,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
@@ -71,9 +71,9 @@ enum hash_54196e9e9860f0be {
 };
 
 struct hash_3ea575a2be6523f8 {
-    fixedpoint mesh;
-    fixedpoint image;
-    fixedpoint generic;
+    float mesh;
+    float image;
+    float generic;
 };
 
 struct hash_5e4dc4e07696d328 {

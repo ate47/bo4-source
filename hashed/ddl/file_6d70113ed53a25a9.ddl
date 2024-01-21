@@ -4,22 +4,22 @@ metatable "hash_59e070c81225284d";
 
 struct root {
     uint16 hits;
-    fixedpoint longest_hit_distance;
+    float longest_hit_distance;
     uint16 kills;
     match_header match;
     uint16 shots;
     telemetry_header telemetry;
     uint32 time_used_s;
-    double reticle;
+    hash reticle;
     client_header client;
-    double weapon;
-    double attachment1;
-    double attachment2;
-    double attachment3;
-    double attachment4;
-    double attachment5;
-    double attachment6;
-    double attachment7;
+    hash weapon;
+    hash attachment1;
+    hash attachment2;
+    hash attachment3;
+    hash attachment4;
+    hash attachment5;
+    hash attachment6;
+    hash attachment7;
     uint16 headshots;
     bit died;
     padbit __pad[7];
@@ -34,9 +34,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

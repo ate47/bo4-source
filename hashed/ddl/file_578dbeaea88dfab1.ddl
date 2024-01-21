@@ -11,14 +11,14 @@ struct root {
     int32 hash_3c83aaf4b52386c5;
     client_header client;
     int32 protocol;
-    string status;
-    string hash_70259f4fbb3f7a05;
+    char status[32];
+    char hash_70259f4fbb3f7a05[64];
     uint64 host_xuid;
     int32 hash_3155d04edc797a1a;
-    string hash_1531894bfd7141d0;
+    char hash_1531894bfd7141d0[48];
     int32 largest_party;
     int32 latency;
-    string hash_df1f57dcd0a3e0a;
+    char hash_df1f57dcd0a3e0a[48];
     bit is_mp;
     bit is_migrating;
     bit hash_460665ebc12305d7;
@@ -32,9 +32,9 @@ struct root {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;

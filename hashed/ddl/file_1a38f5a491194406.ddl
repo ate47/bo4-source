@@ -5,10 +5,10 @@ metatable "hash_930b830a775663cb";
 struct root {
     match_header match;
     telemetry_header telemetry;
-    string enemyweapon;
+    char enemyweapon[64];
     int32 enemyentitynum;
     int32 hash_666d0cfcf9ae78ae;
-    string playername;
+    char playername[48];
     int32 gametime;
     int32 hash_34c89c99b7d0a3b3;
     client_header client;
@@ -16,8 +16,8 @@ struct root {
     int32 originy;
     int32 originz;
     int32 spawnpointidshift;
-    string hash_30cbade5af68bdb0;
-    string reason;
+    char hash_30cbade5af68bdb0[48];
+    char reason[64];
     int32 elapsedtime;
     int32 hash_5baa54667bbc1690;
     int32 hash_5baa55667bbc1843;
@@ -34,9 +34,9 @@ struct match_header {
 struct telemetry_header {
     int32 changelist_number;
     uint16 source_version;
-    double action_type;
+    hash action_type;
     hash_54196e9e9860f0be platform;
-    string build_version;
+    char build_version[32];
     uint32 title_id;
     uint32 hash_56a1b6d783aa7a25;
     uint64 hash_f2ad74d8edb8204;
