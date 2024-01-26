@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#ai_tank_marker",
+    "displayName": "#weapon/tank_robot",
+    "displayNameShort": "#",
+    "description": "#hash_162e585f9af134d7",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_5d0ab84d304a4fe7",
+    "previewImageLarge": "#hash_5d0ab84d304a4fe7",
+    "globalItemIndex": 136,
+    "itemIndex": 136,
+    "scoreToUnlock": 1100,
+    "lowestScoreToUnlockAllowed": 900,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

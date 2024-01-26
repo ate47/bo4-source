@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_near_death_experience",
+    "nameHash": "#zm_bgb_near_death_experience",
+    "displayName": "#hash_7456b0b1f9024095",
+    "displayNameShort": "#",
+    "description": "#hash_5169db4e6363203f",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_466b7a86362bfc01",
+    "globalItemIndex": 443,
+    "itemIndex": 43,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

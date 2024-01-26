@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#helicopter_comlink",
+    "displayName": "#hash_76bc8a74d60388e4",
+    "displayNameShort": "#",
+    "description": "#hash_76472f6a9887b64c",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_464005346bd6e13a",
+    "previewImageLarge": "#hash_464005346bd6e13a",
+    "globalItemIndex": 134,
+    "itemIndex": 134,
+    "scoreToUnlock": 1300,
+    "lowestScoreToUnlockAllowed": 1000,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

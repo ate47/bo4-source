@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "nameHash": "#hero_flamethrower_t8_lv2",
+    "displayName": "#hash_502847627f54fa12",
+    "displayNameShort": "#",
+    "description": "#hash_41a3381ca47a8123",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_79f0e7b8e7de7b08",
+    "zmPreviewImage": "#hash_29e59031785297b4",
+    "zmPreviewImageLarge": "#hash_29e59031785297b4",
+    "globalItemIndex": 283,
+    "itemIndex": 283,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

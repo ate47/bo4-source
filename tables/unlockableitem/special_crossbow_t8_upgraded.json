@@ -1,0 +1,29 @@
+{
+    "name": "",
+    "nameHash": "#special_crossbow_t8_upgraded",
+    "displayName": "#weapon/special_crossbow_t8",
+    "displayNameShort": "#weapon/special_crossbow_t8",
+    "description": "#hash_5061feb7eb006041",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_19d9ac5ea119cf5c",
+    "previewImageLarge": "#hash_25722a457538bc50",
+    "zmPreviewImage": "#hash_100dddfed3d2a5c0",
+    "zmPreviewImageLarge": "#hash_100dddfed3d2a5c0",
+    "globalItemIndex": 353,
+    "itemIndex": 353,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_special",
+    "attachments": [
+        "pistolscope",
+        "stalker",
+        "extclip",
+        "custom3",
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

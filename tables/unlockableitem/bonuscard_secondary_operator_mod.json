@@ -1,0 +1,19 @@
+{
+    "name": "bonuscard_secondary_operator_mod",
+    "nameHash": "#bonuscard_secondary_operator_mod",
+    "displayName": "#hash_4bc5011baca84867",
+    "displayNameShort": "#hash_55665cb19108a84a",
+    "description": "#hash_751f88bfc0ce1839",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_4e94d78a2cceb0e7",
+    "previewImageLarge": "#hash_1654e5592ff086b7",
+    "globalItemIndex": 674,
+    "itemIndex": 10,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bonuscard",
+    "attachments": []
+}

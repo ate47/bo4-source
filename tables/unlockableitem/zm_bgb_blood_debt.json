@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_blood_debt",
+    "nameHash": "#zm_bgb_blood_debt",
+    "displayName": "#hash_46ac31f6b82c495f",
+    "displayNameShort": "#",
+    "description": "#hash_42771d3add69c6f1",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_68563a2c3b8a5963",
+    "globalItemIndex": 466,
+    "itemIndex": 66,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

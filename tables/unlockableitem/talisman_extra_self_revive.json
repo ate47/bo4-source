@@ -1,0 +1,18 @@
+{
+    "name": "talisman_extra_self_revive",
+    "nameHash": "#talisman_extra_self_revive",
+    "displayName": "#hash_1b0244b43f98ccac",
+    "displayNameShort": "#",
+    "description": "#hash_4d53862486442354",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7121888c15a81ffd",
+    "globalItemIndex": 569,
+    "itemIndex": 35,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "talent_doublejump",
+    "nameHash": "#talent_doublejump",
+    "displayName": "#hash_95987772878ad99",
+    "displayNameShort": "#",
+    "description": "#hash_2354d169320d2633",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "globalItemIndex": 639,
+    "itemIndex": 39,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

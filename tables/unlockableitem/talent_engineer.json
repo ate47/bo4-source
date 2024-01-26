@@ -1,0 +1,19 @@
+{
+    "name": "talent_engineer",
+    "nameHash": "#talent_engineer",
+    "displayName": "#hash_4fc9d1b81170d9f1",
+    "displayNameShort": "#hash_3c1bbccf0b9fe67c",
+    "description": "#hash_79316b3eab77734b",
+    "wzDescription": "#hash_37a4179232bd9d71",
+    "zmDescription": "#",
+    "previewImage": "#hash_6e2b253dd7d6c6fa",
+    "previewImageLarge": "#hash_17063bbaf38b9c5a",
+    "globalItemIndex": 602,
+    "itemIndex": 2,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

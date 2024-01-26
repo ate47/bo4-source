@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#sig_bow_quickshot",
+    "displayName": "#weapon/sig_bow_quickshot",
+    "displayNameShort": "#",
+    "description": "#hash_380a44f5bb88e0bc",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_47d334e727d7f801",
+    "previewImageLarge": "#hash_47d334e727d7f801",
+    "wzPreviewImage": "#hash_73d79b30b71163d0",
+    "wzPreviewImageLarge": "#hash_2a1e85b4fc51b10c",
+    "globalItemIndex": 111,
+    "itemIndex": 111,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": -1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

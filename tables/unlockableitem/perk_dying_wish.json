@@ -1,0 +1,19 @@
+{
+    "name": "perk_dying_wish",
+    "nameHash": "#perk_dying_wish",
+    "displayName": "#hash_36dba2ee95df9e0e",
+    "displayNameShort": "#",
+    "description": "#hash_1f49261898e7d2be",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_599a569a739ae4d4",
+    "previewImageLarge": "#hash_2f597e354d253520",
+    "globalItemIndex": 514,
+    "itemIndex": 14,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

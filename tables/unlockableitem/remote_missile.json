@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#remote_missile",
+    "displayName": "#killstreak/remote_missile",
+    "displayNameShort": "#",
+    "description": "#hash_16de01e304a18c2f",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_4883826ef2edae50",
+    "previewImageLarge": "#hash_4883826ef2edae50",
+    "globalItemIndex": 131,
+    "itemIndex": 131,
+    "scoreToUnlock": 950,
+    "lowestScoreToUnlockAllowed": 750,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

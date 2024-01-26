@@ -1,0 +1,19 @@
+{
+    "name": "perk_quick_revive",
+    "nameHash": "#perk_quick_revive",
+    "displayName": "#hash_169008493b50846e",
+    "displayNameShort": "#",
+    "description": "#hash_327ce365dab7725e",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6f504a66d7a44174",
+    "previewImageLarge": "#hash_cc02ce27e645800",
+    "globalItemIndex": 506,
+    "itemIndex": 6,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

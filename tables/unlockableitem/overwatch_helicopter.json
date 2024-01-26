@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#overwatch_helicopter",
+    "displayName": "#hash_1bb384e573eac47e",
+    "displayNameShort": "#",
+    "description": "#hash_9105d9ddc69f3ce",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_bd80c976e136f0",
+    "previewImageLarge": "#hash_bd80c976e136f0",
+    "globalItemIndex": 142,
+    "itemIndex": 142,
+    "scoreToUnlock": 1050,
+    "lowestScoreToUnlockAllowed": 850,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

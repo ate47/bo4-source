@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#basketball",
+    "displayName": "#weapon/basketball",
+    "displayNameShort": "#",
+    "description": "#hash_63af85b59aab95a2",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_17d967d141ce1094",
+    "previewImageLarge": "#hash_4c68645bb4f1bc5",
+    "globalItemIndex": 138,
+    "itemIndex": 138,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "bonuscard_primary_gunfighter",
+    "nameHash": "#bonuscard_primary_gunfighter",
+    "displayName": "#hash_57af758f90ab69df",
+    "displayNameShort": "#hash_6f078f99a8bf33d2",
+    "description": "#hash_29be543478455055",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_42479bac4d218345",
+    "previewImageLarge": "#hash_538ff06a7161f1c9",
+    "globalItemIndex": 667,
+    "itemIndex": 3,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bonuscard",
+    "attachments": []
+}

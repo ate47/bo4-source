@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#uav",
+    "displayName": "#killstreak/uav",
+    "displayNameShort": "#",
+    "description": "#hash_4a2168e5ee919024",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7ce031f25b6528e4",
+    "previewImageLarge": "#hash_7ce031f25b6528e4",
+    "globalItemIndex": 126,
+    "itemIndex": 126,
+    "scoreToUnlock": 550,
+    "lowestScoreToUnlockAllowed": 450,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

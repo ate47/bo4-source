@@ -1,0 +1,19 @@
+{
+    "name": "talent_skulker",
+    "nameHash": "#talent_skulker",
+    "displayName": "#talent/skulker",
+    "displayNameShort": "#hash_5254a09f0aa1c0ba",
+    "description": "#hash_f46538d582b53c9",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3ed98bc6084778a6",
+    "previewImageLarge": "#hash_1e2fcfb0595d8556",
+    "globalItemIndex": 638,
+    "itemIndex": 38,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

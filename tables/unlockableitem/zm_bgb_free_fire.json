@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_free_fire",
+    "nameHash": "#zm_bgb_free_fire",
+    "displayName": "#hash_29e35361a2973666",
+    "displayNameShort": "#",
+    "description": "#hash_18aa39aa5e51b396",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_493f4a751f69d72",
+    "globalItemIndex": 468,
+    "itemIndex": 68,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

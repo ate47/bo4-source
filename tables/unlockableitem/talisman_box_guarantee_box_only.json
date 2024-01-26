@@ -1,0 +1,18 @@
+{
+    "name": "talisman_box_guarantee_box_only",
+    "nameHash": "#talisman_box_guarantee_box_only",
+    "displayName": "#hash_90f72899b9de598",
+    "displayNameShort": "#",
+    "description": "#hash_54880520474bd580",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6b65708c65d3ea2f",
+    "globalItemIndex": 558,
+    "itemIndex": 24,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#dart",
+    "displayName": "#killstreak/dart",
+    "displayNameShort": "#killstreak/dart",
+    "description": "#hash_6e2e947dd4be6283",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_859e14e64e4df81",
+    "previewImageLarge": "#hash_859e14e64e4df81",
+    "globalItemIndex": 129,
+    "itemIndex": 129,
+    "scoreToUnlock": 450,
+    "lowestScoreToUnlockAllowed": 350,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

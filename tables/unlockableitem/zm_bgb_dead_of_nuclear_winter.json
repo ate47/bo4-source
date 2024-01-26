@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_dead_of_nuclear_winter",
+    "nameHash": "#zm_bgb_dead_of_nuclear_winter",
+    "displayName": "#hash_7cae2996182f3bd2",
+    "displayNameShort": "#",
+    "description": "#hash_3a9564d55499fb02",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_68abb2b97e637906",
+    "globalItemIndex": 428,
+    "itemIndex": 28,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

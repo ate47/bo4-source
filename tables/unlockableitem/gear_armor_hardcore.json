@@ -1,0 +1,19 @@
+{
+    "name": "gear_armor_hardcore",
+    "nameHash": "#gear_armor_hardcore",
+    "displayName": "#hash_44e5647b85e53b4b",
+    "displayNameShort": "#hash_645f0dfc30297066",
+    "description": "#hash_5c1492d17e865f5d",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6dd17c2a2395a6c3",
+    "previewImageLarge": "#hash_6dd17c2a2395a6c3",
+    "globalItemIndex": 637,
+    "itemIndex": 37,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

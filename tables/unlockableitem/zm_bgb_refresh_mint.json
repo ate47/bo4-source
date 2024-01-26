@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_refresh_mint",
+    "nameHash": "#zm_bgb_refresh_mint",
+    "displayName": "#hash_12c3db816b16cd02",
+    "displayNameShort": "#",
+    "description": "#hash_309166f54a125f92",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_1db49b0db8899947",
+    "globalItemIndex": 478,
+    "itemIndex": 78,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

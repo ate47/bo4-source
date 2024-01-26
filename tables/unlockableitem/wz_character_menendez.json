@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_menendez",
+    "displayName": "#hash_5a1bf52f33c62b5d",
+    "displayNameShort": "#hash_5a1bf52f33c62b5d",
+    "description": "#",
+    "wzDescription": "#hash_6526b26aeddff3c5",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#hash_2e7958e741d2c35f",
+    "globalItemIndex": 737,
+    "itemIndex": 737,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

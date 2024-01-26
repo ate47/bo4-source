@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#ray_gun_mk2y",
+    "displayName": "#hash_4513b30b90ae4f4e",
+    "displayNameShort": "#",
+    "description": "#hash_b5a9e121eb22e9",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_fec5cc62dcfd019",
+    "previewImageLarge": "#hash_6a226ff337cef235",
+    "wzPreviewImage": "#hash_fec5cc62dcfd019",
+    "wzPreviewImageLarge": "#hash_6a226ff337cef235",
+    "globalItemIndex": 318,
+    "itemIndex": 318,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_special",
+    "attachments": []
+}

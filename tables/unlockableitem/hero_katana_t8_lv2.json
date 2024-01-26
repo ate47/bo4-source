@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "nameHash": "#hero_katana_t8_lv2",
+    "displayName": "#hash_1f597d7c6454cb26",
+    "displayNameShort": "#",
+    "description": "#hash_2a583aa0ef0d3b8f",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_44d939b98d0a3631",
+    "zmPreviewImage": "#hash_51acd261749214b8",
+    "zmPreviewImageLarge": "#hash_51acd261749214b8",
+    "globalItemIndex": 289,
+    "itemIndex": 289,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

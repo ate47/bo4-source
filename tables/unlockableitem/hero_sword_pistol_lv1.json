@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "nameHash": "#hero_sword_pistol_lv1",
+    "displayName": "#hash_5180997d24e0b10b",
+    "displayNameShort": "#",
+    "description": "#hash_6890c14a66cba61d",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3b54ab582b013232",
+    "zmPreviewImage": "#hash_17b793e901c3009a",
+    "zmPreviewImageLarge": "#hash_17b793e901c3009a",
+    "globalItemIndex": 349,
+    "itemIndex": 349,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

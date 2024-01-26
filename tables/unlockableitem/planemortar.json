@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#planemortar",
+    "displayName": "#killstreak/planemortar",
+    "displayNameShort": "#",
+    "description": "#hash_1ffc0b81ee9d1775",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7afdaf4efa398142",
+    "previewImageLarge": "#hash_7afdaf4efa398142",
+    "globalItemIndex": 130,
+    "itemIndex": 130,
+    "scoreToUnlock": 850,
+    "lowestScoreToUnlockAllowed": 600,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

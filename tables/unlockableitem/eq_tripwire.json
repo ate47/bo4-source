@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_tripwire",
+    "displayName": "#hash_50d8b3b5944ed86c",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_6f39a510077f8214",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3fcb9d6697dc3324",
+    "previewImageLarge": "#hash_3fcb9d6697dc3324",
+    "globalItemIndex": 85,
+    "itemIndex": 85,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "gear_scorestreakcharge",
+    "nameHash": "#gear_scorestreakcharge",
+    "displayName": "#hash_29cc5d9a2c2d1f68",
+    "displayNameShort": "#hash_5687317c164e18e5",
+    "description": "#hash_5d1c4bd6cc3e52b0",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2f8a657ac092db8e",
+    "previewImageLarge": "#hash_2f8a657ac092db8e",
+    "globalItemIndex": 625,
+    "itemIndex": 25,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

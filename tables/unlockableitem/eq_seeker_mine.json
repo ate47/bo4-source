@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_seeker_mine",
+    "displayName": "#hash_796ecbec9ffbdcd",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_39f8f9db57506df7",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3044d4b5c87b9285",
+    "previewImageLarge": "#hash_3044d4b5c87b9285",
+    "globalItemIndex": 90,
+    "itemIndex": 90,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

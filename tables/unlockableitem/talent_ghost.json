@@ -1,0 +1,19 @@
+{
+    "name": "talent_ghost",
+    "nameHash": "#talent_ghost",
+    "displayName": "#talent/ghost",
+    "displayNameShort": "#hash_7a00a4ad7237cd66",
+    "description": "#hash_35dc0bcef58e0e5d",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_4a857a3c1231afce",
+    "previewImageLarge": "#hash_737035fbc8ec539e",
+    "globalItemIndex": 607,
+    "itemIndex": 7,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

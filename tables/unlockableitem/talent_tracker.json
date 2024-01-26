@@ -1,0 +1,19 @@
+{
+    "name": "talent_tracker",
+    "nameHash": "#talent_tracker",
+    "displayName": "#talent/tracker",
+    "displayNameShort": "#hash_78aad7e5a5d5530d",
+    "description": "#hash_6ea6e05ce83100e8",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_51e1afe2ebc17859",
+    "previewImageLarge": "#hash_c2ba3ab4994b6fd",
+    "globalItemIndex": 614,
+    "itemIndex": 14,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

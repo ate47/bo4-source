@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#eq_molotov",
+    "displayName": "#hash_25d8a87c9c374680",
+    "displayNameShort": "#hash_31667047e95003ad",
+    "description": "#hash_7b4505dcd3cc2208",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_122564848006b9d8",
+    "previewImageLarge": "#hash_122564848006b9d8",
+    "wzPreviewImage": "#hash_b8d33f7bc854044",
+    "wzPreviewImageLarge": "#hash_b8d33f7bc854044",
+    "globalItemIndex": 67,
+    "itemIndex": 67,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

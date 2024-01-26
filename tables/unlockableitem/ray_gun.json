@@ -1,0 +1,23 @@
+{
+    "name": "",
+    "nameHash": "#ray_gun",
+    "displayName": "#weapon/ray_gun",
+    "displayNameShort": "#",
+    "description": "#hash_b5a9e121eb22e9",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2121f311168583b1",
+    "previewImageLarge": "#hash_2121f311168583b1",
+    "wzPreviewImage": "#hash_2121f311168583b1",
+    "wzPreviewImageLarge": "#hash_3e2163e9a227202c",
+    "zmPreviewImage": "#hash_100dddfed3d2a5c0",
+    "zmPreviewImageLarge": "#hash_100dddfed3d2a5c0",
+    "globalItemIndex": 316,
+    "itemIndex": 316,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_special",
+    "attachments": []
+}

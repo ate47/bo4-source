@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#melee_stopsign_t8",
+    "displayName": "#weapon/melee_stopsign_t8",
+    "displayNameShort": "#",
+    "description": "#hash_4bfcdbab1aeeec3d",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2580b767a82cac",
+    "previewImageLarge": "#hash_744d086763344a40",
+    "wzPreviewImage": "#hash_2580b767a82cac",
+    "wzPreviewImageLarge": "#hash_744d086763344a40",
+    "globalItemIndex": 94,
+    "itemIndex": 94,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

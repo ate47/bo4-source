@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_woods",
+    "displayName": "#hash_34ae5f9e39fc4a1f",
+    "displayNameShort": "#hash_34ae5f9e39fc4a1f",
+    "description": "#",
+    "wzDescription": "#hash_2405e17f8771fd9",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#hash_4fb45cc9827adb69",
+    "globalItemIndex": 739,
+    "itemIndex": 739,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

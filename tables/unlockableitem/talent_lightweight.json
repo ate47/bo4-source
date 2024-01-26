@@ -1,0 +1,19 @@
+{
+    "name": "talent_lightweight",
+    "nameHash": "#talent_lightweight",
+    "displayName": "#hash_709407837d8903b0",
+    "displayNameShort": "#hash_78cd7cbabb5c00dd",
+    "description": "#hash_2a510b3f13492d18",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_362b1df70e8c2e6d",
+    "previewImageLarge": "#hash_264f2290dd0903b1",
+    "globalItemIndex": 609,
+    "itemIndex": 9,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

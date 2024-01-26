@@ -1,0 +1,18 @@
+{
+    "name": "talisman_shield_price",
+    "nameHash": "#talisman_shield_price",
+    "displayName": "#hash_7105371497f779f2",
+    "displayNameShort": "#",
+    "description": "#hash_212b3dcb070d0362",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_51107610f3d260f5",
+    "globalItemIndex": 544,
+    "itemIndex": 10,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_outrider",
+    "displayName": "#hash_4947abbb91b5fbfe",
+    "displayNameShort": "#hash_4947abbb91b5fbfe",
+    "description": "#",
+    "wzDescription": "#hash_5d7167ce757d1ede",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#hash_1473a15de39c235a",
+    "globalItemIndex": 713,
+    "itemIndex": 713,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "nameHash": "#willy_pete",
+    "displayName": "#weapon/willy_pete",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_4a02c4a2c8939666",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_722ed03e9124af29",
+    "globalItemIndex": 18,
+    "itemIndex": 18,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

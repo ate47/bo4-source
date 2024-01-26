@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_zero",
+    "displayName": "#hash_4e06263ae2b9a394",
+    "displayNameShort": "#hash_4e06263ae2b9a394",
+    "description": "#",
+    "wzDescription": "#hash_62a37757ac4ca938",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#ui_icon_specialist_portrait_draft_zero",
+    "globalItemIndex": 748,
+    "itemIndex": 748,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

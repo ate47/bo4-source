@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_phantom_reload",
+    "nameHash": "#zm_bgb_phantom_reload",
+    "displayName": "#hash_461ee9332d190598",
+    "displayNameShort": "#",
+    "description": "#hash_e95628f65293580",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_1965919af3ad13c4",
+    "globalItemIndex": 472,
+    "itemIndex": 72,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

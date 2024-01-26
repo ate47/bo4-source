@@ -1,0 +1,18 @@
+{
+    "name": "talisman_shield_durability_rare",
+    "nameHash": "#talisman_shield_durability_rare",
+    "displayName": "#hash_667b3e453c795143",
+    "displayNameShort": "#",
+    "description": "#hash_34da3371ca36d1d5",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_1113cfe71936a60",
+    "globalItemIndex": 566,
+    "itemIndex": 32,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

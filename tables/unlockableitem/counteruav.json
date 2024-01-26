@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#counteruav",
+    "displayName": "#killstreak/cuav",
+    "displayNameShort": "#",
+    "description": "#hash_3e1e3e485b028f15",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2da2ab47a01ff23b",
+    "previewImageLarge": "#hash_2da2ab47a01ff23b",
+    "globalItemIndex": 128,
+    "itemIndex": 128,
+    "scoreToUnlock": 650,
+    "lowestScoreToUnlockAllowed": 550,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

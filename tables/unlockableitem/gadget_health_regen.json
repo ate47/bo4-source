@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "nameHash": "#gadget_health_regen",
+    "displayName": "#hash_5b5fd29ea88516ff",
+    "displayNameShort": "#hash_52c6013bbd408b2",
+    "description": "#hash_57806580bbb100d1",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_65ac291685ecfc25",
+    "globalItemIndex": 4,
+    "itemIndex": 4,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

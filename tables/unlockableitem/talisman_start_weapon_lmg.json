@@ -1,0 +1,18 @@
+{
+    "name": "talisman_start_weapon_lmg",
+    "nameHash": "#talisman_start_weapon_lmg",
+    "displayName": "#hash_3d90086e05c552d9",
+    "displayNameShort": "#",
+    "description": "#hash_4efbeb48aa786873",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3b7fbbf6690a503c",
+    "globalItemIndex": 556,
+    "itemIndex": 22,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

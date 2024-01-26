@@ -1,0 +1,18 @@
+{
+    "name": "talisman_extra_semtex",
+    "nameHash": "#talisman_extra_semtex",
+    "displayName": "#hash_49ee2e87da12c3b6",
+    "displayNameShort": "#",
+    "description": "#hash_7dd1cc81694a41c6",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_50ad2d57d25e6c31",
+    "globalItemIndex": 565,
+    "itemIndex": 31,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

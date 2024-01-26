@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#melee_club_t8",
+    "displayName": "#weapon/melee_club_t8",
+    "displayNameShort": "#",
+    "description": "#hash_634245daf5ef8d9c",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_795c5cac816dde1b",
+    "previewImageLarge": "#hash_795c5cac816dde1b",
+    "wzPreviewImage": "#hash_795c5cac816dde1b",
+    "wzPreviewImageLarge": "#hash_5b2b0e438f0c11e3",
+    "globalItemIndex": 221,
+    "itemIndex": 221,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "talisman_weapon_reducepapcost",
+    "nameHash": "#talisman_weapon_reducepapcost",
+    "displayName": "#hash_7c6b63d31d51249c",
+    "displayNameShort": "#",
+    "description": "#hash_46db1fda95e53de4",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_1e2f8c36362c91ad",
+    "globalItemIndex": 537,
+    "itemIndex": 3,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

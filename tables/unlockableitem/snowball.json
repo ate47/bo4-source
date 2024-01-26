@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#snowball",
+    "displayName": "#weapon/snowball",
+    "displayNameShort": "#",
+    "description": "#hash_2bee8f004b66a660",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7b9b3962ec2c33d2",
+    "previewImageLarge": "#hash_4e35c0898fee6f7a",
+    "globalItemIndex": 145,
+    "itemIndex": 145,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

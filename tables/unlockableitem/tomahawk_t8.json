@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#tomahawk_t8",
+    "displayName": "#hash_d34a0aa9273f87f",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#weapon/tomahawk_t8",
+    "wzDescription": "#hash_3b6760485cae33f7",
+    "zmDescription": "#",
+    "previewImage": "#hash_6853de2937cd9079",
+    "previewImageLarge": "#hash_6853de2937cd9079",
+    "globalItemIndex": 73,
+    "itemIndex": 73,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

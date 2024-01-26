@@ -1,0 +1,29 @@
+{
+    "name": "",
+    "nameHash": "#special_ballisticknife_t8_dw_upgraded",
+    "displayName": "#hash_73f926dd393ef4df",
+    "displayNameShort": "#",
+    "description": "#hash_10ebd950ef251971",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_1399f2cc97964c09",
+    "previewImageLarge": "#hash_7e3690ce030bb05",
+    "zmPreviewImage": "#hash_18dbeaef5b86e",
+    "zmPreviewImageLarge": "#hash_18dbeaef5b86e",
+    "globalItemIndex": 123,
+    "itemIndex": 123,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": -1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_special",
+    "attachments": [
+        "extclip",
+        "fastreload",
+        "custom3",
+        "dw",
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

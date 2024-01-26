@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_spectre",
+    "displayName": "#hash_8b67b8f9d9a7f0e",
+    "displayNameShort": "#hash_8b67b8f9d9a7f0e",
+    "description": "#",
+    "wzDescription": "#hash_a9c62116b674997",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#hash_45353bfe7a8848f2",
+    "globalItemIndex": 716,
+    "itemIndex": 716,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

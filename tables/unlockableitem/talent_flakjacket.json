@@ -1,0 +1,19 @@
+{
+    "name": "talent_flakjacket",
+    "nameHash": "#talent_flakjacket",
+    "displayName": "#hash_597f91b480721b31",
+    "displayNameShort": "#hash_7215a2002c61a8bc",
+    "description": "#hash_2d4f13a4981f078b",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_129fcb303fce666b",
+    "previewImageLarge": "#hash_2f63c097071fb4b",
+    "globalItemIndex": 603,
+    "itemIndex": 3,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

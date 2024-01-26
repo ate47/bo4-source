@@ -1,0 +1,19 @@
+{
+    "name": "perk_wolf_protector",
+    "nameHash": "#perk_wolf_protector",
+    "displayName": "#hash_22ed135e562aeade",
+    "displayNameShort": "#",
+    "description": "#hash_1667923ddd77adee",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_461c341510c09ee0",
+    "previewImageLarge": "#hash_7542eefb8976e05c",
+    "globalItemIndex": 520,
+    "itemIndex": 20,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

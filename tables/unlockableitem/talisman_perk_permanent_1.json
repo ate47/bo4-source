@@ -1,0 +1,18 @@
+{
+    "name": "talisman_perk_permanent_1",
+    "nameHash": "#talisman_perk_permanent_1",
+    "displayName": "#hash_5b2bf4c413fae508",
+    "displayNameShort": "#",
+    "description": "#hash_77dd809b30e33710",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3bc5434259291992",
+    "globalItemIndex": 550,
+    "itemIndex": 16,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

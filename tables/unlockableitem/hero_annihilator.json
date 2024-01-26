@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#hero_annihilator",
+    "displayName": "#weapon/hero_annihilator",
+    "displayNameShort": "#",
+    "description": "#hash_6421656710e87b96",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_171fc61944e416aa",
+    "previewImageLarge": "#hash_2d5d971b8f5567d",
+    "wzPreviewImage": "#hash_525f5d5ffa5436eb",
+    "wzPreviewImageLarge": "#hash_4d12cc593eb10293",
+    "globalItemIndex": 108,
+    "itemIndex": 108,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

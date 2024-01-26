@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#homunculus",
+    "displayName": "#weapon/homunculus",
+    "displayNameShort": "#",
+    "description": "#hash_44d6863447b03eff",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_51b2837ae4b7bafe",
+    "previewImageLarge": "#hash_51b2837ae4b7bafe",
+    "globalItemIndex": 74,
+    "itemIndex": 74,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_special",
+    "attachments": []
+}

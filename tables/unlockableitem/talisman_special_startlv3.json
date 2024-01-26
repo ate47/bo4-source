@@ -1,0 +1,18 @@
+{
+    "name": "talisman_special_startlv3",
+    "nameHash": "#talisman_special_startlv3",
+    "displayName": "#hash_443fde47bdc6bbf2",
+    "displayNameShort": "#",
+    "description": "#hash_3dac669d5878962",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_feff55be0dfa137",
+    "globalItemIndex": 536,
+    "itemIndex": 2,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

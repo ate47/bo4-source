@@ -1,0 +1,19 @@
+{
+    "name": "bonuscard_perk_3_gluttony",
+    "nameHash": "#bonuscard_perk_3_gluttony",
+    "displayName": "#hash_2081893c73be0044",
+    "displayNameShort": "#hash_54e43f7fea648709",
+    "description": "#hash_78614a69bb8b4d6c",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_1637f3e47fbf597e",
+    "previewImageLarge": "#hash_65cef9a0612b098e",
+    "globalItemIndex": 680,
+    "itemIndex": 16,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bonuscard",
+    "attachments": []
+}

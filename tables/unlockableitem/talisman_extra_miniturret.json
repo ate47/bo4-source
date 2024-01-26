@@ -1,0 +1,18 @@
+{
+    "name": "talisman_extra_miniturret",
+    "nameHash": "#talisman_extra_miniturret",
+    "displayName": "#hash_59742ced7a23a9ef",
+    "displayNameShort": "#",
+    "description": "#hash_67e76968c3813aa1",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_54d5803d7899f528",
+    "globalItemIndex": 563,
+    "itemIndex": 29,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

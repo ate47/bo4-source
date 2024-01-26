@@ -1,0 +1,19 @@
+{
+    "name": "perk_mystery",
+    "nameHash": "#perk_mystery",
+    "displayName": "#menu/mystery",
+    "displayNameShort": "#",
+    "description": "#hash_27dc83941674c874",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2b6e000d5faa7cf5",
+    "previewImageLarge": "#hash_6da10ba333783ae3",
+    "globalItemIndex": 512,
+    "itemIndex": 12,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_scarlett",
+    "displayName": "#zombie/scarlett",
+    "displayNameShort": "#zombie/scarlett",
+    "description": "#",
+    "wzDescription": "#hash_1204269480d99a2",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#hash_551b136080630067",
+    "globalItemIndex": 722,
+    "itemIndex": 722,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

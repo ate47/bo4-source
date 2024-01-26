@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "nameHash": "#hero_hammer_lv2",
+    "displayName": "#hash_3a86b61ee68ba470",
+    "displayNameShort": "#",
+    "description": "#hash_29f3a134e9194cd8",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_72cb1c382243487",
+    "zmPreviewImage": "#hash_2cd73b8aef179dcf",
+    "zmPreviewImageLarge": "#hash_2cd73b8aef179dcf",
+    "globalItemIndex": 344,
+    "itemIndex": 344,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_anti_entrapment",
+    "nameHash": "#zm_bgb_anti_entrapment",
+    "displayName": "#hash_42528052420d7dd0",
+    "displayNameShort": "#",
+    "description": "#hash_456e02d43cca16f8",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3f3dd5a9e1ba2ac",
+    "globalItemIndex": 476,
+    "itemIndex": 76,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum",
+    "attachments": []
+}

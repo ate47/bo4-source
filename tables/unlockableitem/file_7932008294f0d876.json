@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#hash_7932008294f0d876",
+    "displayName": "#weapon/bare_hands",
+    "displayNameShort": "#",
+    "description": "#hash_7284bf5784f8bb01",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_311fcd3894e8d854",
+    "previewImageLarge": "#hash_311fcd3894e8d854",
+    "globalItemIndex": 209,
+    "itemIndex": 209,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "miscweapon",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "nameHash": "#eq_localheal",
+    "displayName": "#hash_2ec8042138d1e89c",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_1f81f9e305d909e4",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7675ef2f1de24af8",
+    "globalItemIndex": 104,
+    "itemIndex": 104,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

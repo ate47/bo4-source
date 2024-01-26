@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "nameHash": "#eq_acid_bomb",
+    "displayName": "#weapon/acid_bomb",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_7320e812329d654",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_167839b33dd38f8c",
+    "zmPreviewImage": "#hash_7d3eb25dfc6924cd",
+    "zmPreviewImageLarge": "#hash_7d3eb25dfc6924cd",
+    "globalItemIndex": 261,
+    "itemIndex": 261,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

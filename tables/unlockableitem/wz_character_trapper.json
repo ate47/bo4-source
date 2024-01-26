@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_trapper",
+    "displayName": "#hash_725b1719bd56b4ec",
+    "displayNameShort": "#hash_725b1719bd56b4ec",
+    "description": "#",
+    "wzDescription": "#hash_344d7560d19b42aa",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#hash_9cf3e8117c889bf",
+    "globalItemIndex": 719,
+    "itemIndex": 719,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

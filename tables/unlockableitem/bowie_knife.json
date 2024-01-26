@@ -1,0 +1,24 @@
+{
+    "name": "",
+    "nameHash": "#bowie_knife",
+    "displayName": "#weapon/bowie",
+    "displayNameShort": "#",
+    "description": "#hash_3cb83c0a13afc0d0",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_e7df3ceeecae50c",
+    "zmPreviewImage": "#hash_41a3ab02326989c0",
+    "zmPreviewImageLarge": "#hash_41a3ab02326989c0",
+    "globalItemIndex": 260,
+    "itemIndex": 260,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

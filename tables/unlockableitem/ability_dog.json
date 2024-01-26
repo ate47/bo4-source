@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "nameHash": "#ability_dog",
+    "displayName": "#hash_267ca0799b7eacf9",
+    "displayNameShort": "#",
+    "description": "#hash_9b27a43fb7aa733",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_1ec85236b997c587",
+    "globalItemIndex": 105,
+    "itemIndex": 105,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

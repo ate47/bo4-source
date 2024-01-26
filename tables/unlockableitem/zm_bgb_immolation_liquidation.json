@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_immolation_liquidation",
+    "nameHash": "#zm_bgb_immolation_liquidation",
+    "displayName": "#hash_3709f37f7b91c02a",
+    "displayNameShort": "#",
+    "description": "#hash_75d565726f42221a",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_b93741cbbdf356e",
+    "globalItemIndex": 438,
+    "itemIndex": 38,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

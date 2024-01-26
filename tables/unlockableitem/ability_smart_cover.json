@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#ability_smart_cover",
+    "displayName": "#hash_3cf5343acd975b86",
+    "displayNameShort": "#",
+    "description": "#hash_f3cff30ab7ddb76",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_4df25a115b8c3300",
+    "previewImageLarge": "#hash_4df25a115b8c3300",
+    "globalItemIndex": 102,
+    "itemIndex": 102,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

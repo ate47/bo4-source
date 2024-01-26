@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "nameHash": "#claymore",
+    "displayName": "#weapon/claymore",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_79cc05e66d1fdd2a",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_70e6e106804a00a4",
+    "zmPreviewImage": "#hash_5f488e9fc84ebb46",
+    "zmPreviewImageLarge": "#hash_5f488e9fc84ebb46",
+    "globalItemIndex": 91,
+    "itemIndex": 91,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

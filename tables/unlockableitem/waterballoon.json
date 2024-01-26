@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#waterballoon",
+    "displayName": "#hash_45e61d7aa4721759",
+    "displayNameShort": "#",
+    "description": "#hash_1ef25920b42565f3",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_10f8730ac971f31b",
+    "previewImageLarge": "#hash_442bf7a4f4ad56e3",
+    "wzPreviewImage": "#hash_10f8730ac971f31b",
+    "wzPreviewImageLarge": "#hash_442bf7a4f4ad56e3",
+    "globalItemIndex": 36,
+    "itemIndex": 36,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "nameHash": "#shock_rifle",
+    "displayName": "#weapon/shockrifle",
+    "displayNameShort": "#",
+    "description": "#hash_16673fb09790241e",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_4e02c60ccbee1ce9",
+    "globalItemIndex": 110,
+    "itemIndex": 110,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

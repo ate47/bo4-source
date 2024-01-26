@@ -1,0 +1,19 @@
+{
+    "name": "perk_stronghold",
+    "nameHash": "#perk_stronghold",
+    "displayName": "#hash_3a80534c837a63b5",
+    "displayNameShort": "#",
+    "description": "#hash_1ca3c3f7ed6bfb9f",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_4bf2e1df7c7dce8b",
+    "previewImageLarge": "#hash_228b658decc4a795",
+    "globalItemIndex": 517,
+    "itemIndex": 17,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

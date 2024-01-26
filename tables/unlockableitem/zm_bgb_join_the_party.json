@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_join_the_party",
+    "nameHash": "#zm_bgb_join_the_party",
+    "displayName": "#hash_767aa22d5f22861c",
+    "displayNameShort": "#",
+    "description": "#hash_555da73b52bcf264",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7328aacf025af878",
+    "globalItemIndex": 469,
+    "itemIndex": 69,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

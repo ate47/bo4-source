@@ -1,0 +1,27 @@
+{
+    "name": "",
+    "nameHash": "#smg_mp40_t8",
+    "displayName": "#weapon/smg_mp40",
+    "displayNameShort": "#",
+    "description": "#hash_2a50f11aa5fd323",
+    "wzDescription": "#",
+    "zmDescription": "#hash_30afa6bfd121a25e",
+    "previewImage": "#hash_ee46d8c5e2fb36c",
+    "previewImageLarge": "#hash_ee46d8c5e2fb36c",
+    "wzPreviewImage": "#hash_ee46d8c5e2fb36c",
+    "wzPreviewImageLarge": "#hash_72b4cb0dbd22163d",
+    "zmPreviewImage": "#hash_3a0b971a9d644161",
+    "zmPreviewImageLarge": "#hash_3a0b971a9d644161",
+    "globalItemIndex": 257,
+    "itemIndex": 257,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_smg",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

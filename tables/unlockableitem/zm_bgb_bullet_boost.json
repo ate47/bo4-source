@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_bullet_boost",
+    "nameHash": "#zm_bgb_bullet_boost",
+    "displayName": "#hash_15ee05631693665f",
+    "displayNameShort": "#",
+    "description": "#hash_74a1fc35044bfdf1",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7eae76298157945b",
+    "globalItemIndex": 423,
+    "itemIndex": 23,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

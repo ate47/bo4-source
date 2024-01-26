@@ -1,0 +1,19 @@
+{
+    "name": "talent_medic",
+    "nameHash": "#talent_medic",
+    "displayName": "#hash_38423b164611b226",
+    "displayNameShort": "#hash_3a7efc3a8bf83b7b",
+    "description": "#hash_308b08568b507856",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_58beba884bed0e5b",
+    "previewImageLarge": "#hash_f61ca98e268ecfb",
+    "globalItemIndex": 613,
+    "itemIndex": 13,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

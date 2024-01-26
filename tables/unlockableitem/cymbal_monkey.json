@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#cymbal_monkey",
+    "displayName": "#zombie/cymbal_monkey",
+    "displayNameShort": "#",
+    "description": "#hash_235c7fa5f5e676c2",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_f9d60bd1e11a5ef",
+    "previewImageLarge": "#hash_f9d60bd1e11a5ef",
+    "globalItemIndex": 139,
+    "itemIndex": 139,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_special",
+    "attachments": []
+}

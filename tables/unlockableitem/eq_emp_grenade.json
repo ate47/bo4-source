@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_emp_grenade",
+    "displayName": "#weapon/eq_emp_grenade",
+    "displayNameShort": "#weapon/eq_emp_grenade",
+    "description": "#hash_753f82d294f4bb40",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_5cc1294548b76186",
+    "previewImageLarge": "#hash_5cc1294548b76186",
+    "globalItemIndex": 70,
+    "itemIndex": 70,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

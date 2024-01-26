@@ -1,0 +1,18 @@
+{
+    "name": "talisman_special_xp_rate",
+    "nameHash": "#talisman_special_xp_rate",
+    "displayName": "#hash_580b3678e04d146d",
+    "displayNameShort": "#",
+    "description": "#hash_63dabf3867ff79d7",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_411225e007ebc1fb",
+    "globalItemIndex": 542,
+    "itemIndex": 8,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

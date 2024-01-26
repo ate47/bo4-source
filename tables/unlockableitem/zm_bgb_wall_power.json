@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_wall_power",
+    "nameHash": "#zm_bgb_wall_power",
+    "displayName": "#hash_6b3ba55737cdb271",
+    "displayNameShort": "#",
+    "description": "#hash_1e3590a42842ccb",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3d96c94632f7441d",
+    "globalItemIndex": 462,
+    "itemIndex": 62,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

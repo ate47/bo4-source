@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_perk_up",
+    "nameHash": "#zm_bgb_perk_up",
+    "displayName": "#hash_22bba90041af58a",
+    "displayNameShort": "#",
+    "description": "#hash_2f4aba709ce3803a",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2e0f3d35860e5485",
+    "globalItemIndex": 479,
+    "itemIndex": 79,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

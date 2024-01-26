@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "nameHash": "#sig_buckler_dw",
+    "displayName": "#weapon/sig_buckler_dw",
+    "displayNameShort": "#",
+    "description": "#hash_740be7769a940cee",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_407deaaed7c3c782",
+    "globalItemIndex": 101,
+    "itemIndex": 101,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": -1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

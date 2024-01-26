@@ -1,0 +1,19 @@
+{
+    "name": "perk_tortoise",
+    "nameHash": "#perk_tortoise",
+    "displayName": "#hash_d798c5b3eeca0a2",
+    "displayNameShort": "#",
+    "description": "#hash_3169d63ac02eeb72",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_582476ec78eda59e",
+    "previewImageLarge": "#hash_318e44f82567ddbe",
+    "globalItemIndex": 516,
+    "itemIndex": 16,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

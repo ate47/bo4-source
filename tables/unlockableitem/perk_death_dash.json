@@ -1,0 +1,19 @@
+{
+    "name": "perk_death_dash",
+    "nameHash": "#perk_death_dash",
+    "displayName": "#hash_3e9f769311a4318",
+    "displayNameShort": "#",
+    "description": "#hash_595aad84ef9afe00",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_5a0a973b4096ee84",
+    "previewImageLarge": "#hash_16850c96d9ea9f10",
+    "globalItemIndex": 521,
+    "itemIndex": 21,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

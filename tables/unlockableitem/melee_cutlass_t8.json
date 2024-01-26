@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#melee_cutlass_t8",
+    "displayName": "#weapon/melee_cutlass_t8",
+    "displayNameShort": "#",
+    "description": "#hash_550cf74ca31821ef",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_39b023696ff08014",
+    "previewImageLarge": "#hash_39b023696ff08014",
+    "wzPreviewImage": "#hash_39b023696ff08014",
+    "wzPreviewImageLarge": "#hash_769cc873d8bf0e78",
+    "globalItemIndex": 222,
+    "itemIndex": 222,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

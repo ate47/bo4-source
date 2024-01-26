@@ -1,0 +1,19 @@
+{
+    "name": "talent_scavenger",
+    "nameHash": "#talent_scavenger",
+    "displayName": "#talent/scavenger",
+    "displayNameShort": "#hash_266e7b8f0a507101",
+    "description": "#hash_17b1b832f57fff54",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_5d24de626a2b19a9",
+    "previewImageLarge": "#hash_296d845fd4b88d",
+    "globalItemIndex": 611,
+    "itemIndex": 11,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

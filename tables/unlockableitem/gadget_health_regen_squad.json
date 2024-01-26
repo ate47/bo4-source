@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#gadget_health_regen_squad",
+    "displayName": "#hash_234ad6d27c671a42",
+    "displayNameShort": "#hash_234ad6d27c671a42",
+    "description": "#hash_1a7890e1dbc5dd2",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7675ef2f1de24af8",
+    "previewImageLarge": "#hash_7675ef2f1de24af8",
+    "globalItemIndex": 179,
+    "itemIndex": 179,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

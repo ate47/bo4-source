@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#straferun",
+    "displayName": "#killstreak/straferun",
+    "displayNameShort": "#",
+    "description": "#hash_37549da24bd1c2f4",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_34b6ce68027666b4",
+    "previewImageLarge": "#hash_34b6ce68027666b4",
+    "globalItemIndex": 140,
+    "itemIndex": 140,
+    "scoreToUnlock": 1200,
+    "lowestScoreToUnlockAllowed": 950,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

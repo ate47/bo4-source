@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_slow_grenade",
+    "displayName": "#hash_7cf054cda28390c7",
+    "displayNameShort": "#hash_19106ef2d21842ea",
+    "description": "#hash_7469050a10edf859",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_65bd648b075a357a",
+    "previewImageLarge": "#hash_65bd648b075a357a",
+    "globalItemIndex": 66,
+    "itemIndex": 66,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

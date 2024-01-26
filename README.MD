@@ -19,6 +19,8 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | maptable              | 89  | `/tables/map/`                   |
 | maptable_list         | 90  | `/tables/map/list/`              |
 | gametypetable         | 113 | `/tables/gametype/`              |
+| unlockableitem        | 116 | `/tables/unlockableitem/`        |
+| unlockableitemtable   | 117 | `/tables/unlockableitem/table/`  |
 | playlists             | 119 | `/tables/playlists/`             |
 | rawstring             | 157 | `strings.csv`                    |
 

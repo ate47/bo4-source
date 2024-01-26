@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_firebreak",
+    "displayName": "#hash_5b4889e3a720c949",
+    "displayNameShort": "#hash_5b4889e3a720c949",
+    "description": "#",
+    "wzDescription": "#hash_503dcc29a3312eef",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#ui_icon_specialist_portrait_draft_firebreak",
+    "globalItemIndex": 711,
+    "itemIndex": 711,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

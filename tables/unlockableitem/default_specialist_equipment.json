@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#default_specialist_equipment",
+    "displayName": "#hash_3759164343b5c489",
+    "displayNameShort": "#hash_6fa8a795f6a62b84",
+    "description": "#hash_861c68710d66043",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_72dc081e8ba8b991",
+    "previewImageLarge": "#hash_161b87766d69b04a",
+    "globalItemIndex": 5,
+    "itemIndex": 5,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 0,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

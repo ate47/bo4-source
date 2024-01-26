@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#melee_actionfigure_t8",
+    "displayName": "#weapon/melee_actionfigure_t8",
+    "displayNameShort": "#",
+    "description": "#hash_2698d8195fee84f6",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_da4e8129e008f5a",
+    "previewImageLarge": "#hash_53c06df5d21dc752",
+    "wzPreviewImage": "#hash_da4e8129e008f5a",
+    "wzPreviewImageLarge": "#hash_53c06df5d21dc752",
+    "globalItemIndex": 92,
+    "itemIndex": 92,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

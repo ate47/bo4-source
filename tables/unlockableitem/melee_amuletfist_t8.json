@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#melee_amuletfist_t8",
+    "displayName": "#weapon/melee_amuletfist_t8",
+    "displayNameShort": "#",
+    "description": "#hash_76de22b8b24b6424",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6c547f582a28f507",
+    "previewImageLarge": "#hash_6c547f582a28f507",
+    "wzPreviewImage": "#hash_6c547f582a28f507",
+    "wzPreviewImageLarge": "#hash_1d9ea54382928c77",
+    "globalItemIndex": 93,
+    "itemIndex": 93,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

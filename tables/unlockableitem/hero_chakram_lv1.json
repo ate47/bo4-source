@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "nameHash": "#hero_chakram_lv1",
+    "displayName": "#hash_6c5613a0af6ab07b",
+    "displayNameShort": "#",
+    "description": "#hash_6df41484dc37f36d",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_70629ea53bb15b6b",
+    "zmPreviewImage": "#hash_412c480aa4b52811",
+    "zmPreviewImageLarge": "#hash_412c480aa4b52811",
+    "globalItemIndex": 340,
+    "itemIndex": 340,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

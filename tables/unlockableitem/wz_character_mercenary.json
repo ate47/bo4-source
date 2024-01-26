@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_mercenary",
+    "displayName": "#hash_318a13787fd10f6a",
+    "displayNameShort": "#hash_318a13787fd10f6a",
+    "description": "#",
+    "wzDescription": "#hash_3dcec21882ed160f",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#ui_icon_specialist_portrait_draft_ruin",
+    "globalItemIndex": 712,
+    "itemIndex": 712,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_grapple",
+    "displayName": "#hash_2d272d013fc30895",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_2c7e88684ac0783f",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_660dddffebb9984d",
+    "previewImageLarge": "#hash_660dddffebb9984d",
+    "globalItemIndex": 87,
+    "itemIndex": 87,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

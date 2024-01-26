@@ -1,0 +1,20 @@
+{
+    "name": "#hash_ac3cc400000000",
+,
+        {
+            "name": "<invalid:200000000>",
+            "nameHash": "#hash_ac3cc400000000",
+            "displayName": "#hash_11",
+            "displayNameShort": "#",
+            "description": "#",
+            "wzDescription": "#hash_15",
+            "zmDescription": "#hash_1",
+            "globalItemIndex": 0,
+            "itemIndex": 0,
+            "scoreToUnlock": -1418235061,
+            "lowestScoreToUnlockAllowed": 2033281854,
+            "allocation": 933500818,
+            "attributeItems": true,
+            "itemGroupIndex": "locationselector",
+            "attachments": []
+        }

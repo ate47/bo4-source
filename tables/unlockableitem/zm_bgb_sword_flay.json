@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_sword_flay",
+    "nameHash": "#zm_bgb_sword_flay",
+    "displayName": "#hash_331453719cd52301",
+    "displayNameShort": "#",
+    "description": "#hash_4ef70c838b452dfb",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_33b97731a5a6f715",
+    "globalItemIndex": 418,
+    "itemIndex": 18,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "talisman_extra_molotov",
+    "nameHash": "#talisman_extra_molotov",
+    "displayName": "#hash_15ee60ff2c5f5508",
+    "displayNameShort": "#",
+    "description": "#hash_22cdc53dc61a8710",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_71fdeabb56a505b9",
+    "globalItemIndex": 561,
+    "itemIndex": 27,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

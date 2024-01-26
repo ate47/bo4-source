@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "nameHash": "#gadget_vision_pulse",
+    "displayName": "#hash_604bdaeea37546c9",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_4e035e3d858f5f83",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_57247a0c9dc90c9b",
+    "globalItemIndex": 106,
+    "itemIndex": 106,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

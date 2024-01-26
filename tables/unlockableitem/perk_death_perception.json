@@ -1,0 +1,19 @@
+{
+    "name": "perk_death_perception",
+    "nameHash": "#perk_death_perception",
+    "displayName": "#hash_5295fc6d9fc6fd87",
+    "displayNameShort": "#",
+    "description": "#hash_6cb9db9b7168e819",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6ebe4b3b977a0647",
+    "previewImageLarge": "#hash_7f30474d1fce24f1",
+    "globalItemIndex": 515,
+    "itemIndex": 15,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

@@ -1,0 +1,23 @@
+{
+    "name": "",
+    "nameHash": "#melee_demohammer_t8",
+    "displayName": "#weapon/melee_demohammer_t8",
+    "displayNameShort": "#",
+    "description": "#hash_7b56826ef42529f5",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7648c58666df31f4",
+    "previewImageLarge": "#hash_2ce961ed13721f58",
+    "globalItemIndex": 206,
+    "itemIndex": 206,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#sig_blade",
+    "displayName": "#weapon/sig_blade",
+    "displayNameShort": "#weapon/sig_blade",
+    "description": "#hash_62cb1047e69b0d4e",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3a459f1325fa19e7",
+    "previewImageLarge": "#hash_3a459f1325fa19e7",
+    "wzPreviewImage": "#hash_57048601ba6e2892",
+    "wzPreviewImageLarge": "#hash_7b5257500186e23a",
+    "globalItemIndex": 113,
+    "itemIndex": 113,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

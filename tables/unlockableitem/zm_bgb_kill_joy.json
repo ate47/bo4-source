@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_kill_joy",
+    "nameHash": "#zm_bgb_kill_joy",
+    "displayName": "#hash_69f68eeb41972752",
+    "displayNameShort": "#",
+    "description": "#hash_53e87ff88bcd0d82",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2aaa81aee118a246",
+    "globalItemIndex": 439,
+    "itemIndex": 39,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

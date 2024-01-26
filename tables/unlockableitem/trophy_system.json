@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#trophy_system",
+    "displayName": "#weapon/trophy_system",
+    "displayNameShort": "#hash_65c25d15377fc8ad",
+    "description": "#hash_77cb07958068c908",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7576e184c81d2b67",
+    "previewImageLarge": "#hash_7576e184c81d2b67",
+    "globalItemIndex": 69,
+    "itemIndex": 69,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

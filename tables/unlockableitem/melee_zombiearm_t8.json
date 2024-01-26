@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#melee_zombiearm_t8",
+    "displayName": "#weapon/melee_zombiearm_t8",
+    "displayNameShort": "#",
+    "description": "#hash_6e5e92f05297a27a",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2888e98b1862c1b6",
+    "previewImageLarge": "#hash_3a0687ac19025ef6",
+    "wzPreviewImage": "#hash_2888e98b1862c1b6",
+    "wzPreviewImageLarge": "#hash_3a0687ac19025ef6",
+    "globalItemIndex": 95,
+    "itemIndex": 95,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

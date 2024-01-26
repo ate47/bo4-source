@@ -1,0 +1,18 @@
+{
+    "name": "<invalid:6c5f746e656c6174>",
+    "nameHash": "#hash_1c0b7341753cac21",
+    "displayName": "#talent/looter",
+    "displayNameShort": "#",
+    "description": "#hash_53a01b90475170eb",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "globalItemIndex": 633,
+    "itemIndex": 33,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

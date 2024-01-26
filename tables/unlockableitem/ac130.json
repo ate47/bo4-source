@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#ac130",
+    "displayName": "#killstreak/ac130",
+    "displayNameShort": "#",
+    "description": "#hash_6522b1551884c380",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3f1d0885a2d991c3",
+    "previewImageLarge": "#hash_3f1d0885a2d991c3",
+    "globalItemIndex": 141,
+    "itemIndex": 141,
+    "scoreToUnlock": 1600,
+    "lowestScoreToUnlockAllowed": 1350,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

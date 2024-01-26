@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#melee_coinbag_t8",
+    "displayName": "#weapon/melee_coinbag_t8",
+    "displayNameShort": "#",
+    "description": "#hash_5743af5837b0f5ff",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_13831944cc412020",
+    "previewImageLarge": "#hash_13831944cc412020",
+    "wzPreviewImage": "#hash_13831944cc412020",
+    "wzPreviewImageLarge": "#hash_60ee076831c1d6bc",
+    "globalItemIndex": 207,
+    "itemIndex": 207,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

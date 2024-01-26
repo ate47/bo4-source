@@ -1,0 +1,19 @@
+{
+    "name": "perk_bandolier",
+    "nameHash": "#perk_bandolier",
+    "displayName": "#hash_535a5ff211e43829",
+    "displayNameShort": "#",
+    "description": "#hash_3e654fa19c523423",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3efd17adfe6d6c58",
+    "previewImageLarge": "#hash_60d55416198d4344",
+    "globalItemIndex": 511,
+    "itemIndex": 11,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

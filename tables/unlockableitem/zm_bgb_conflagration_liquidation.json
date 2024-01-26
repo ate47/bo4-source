@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_conflagration_liquidation",
+    "nameHash": "#zm_bgb_conflagration_liquidation",
+    "displayName": "#hash_6f9b37384da693c9",
+    "displayNameShort": "#",
+    "description": "#hash_21dc90283822683",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6b1813bee96903fa",
+    "globalItemIndex": 477,
+    "itemIndex": 77,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

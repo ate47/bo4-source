@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#hero_pineapplegun",
+    "displayName": "#weapon/hero_pineapplegun",
+    "displayNameShort": "#",
+    "description": "#hash_408cb9ce16e92f59",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_61f59f717e070b29",
+    "previewImageLarge": "#hash_61f59f717e070b29",
+    "wzPreviewImage": "#hash_18dc3783e4bab519",
+    "wzPreviewImageLarge": "#hash_46f887eb24920735",
+    "globalItemIndex": 100,
+    "itemIndex": 100,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

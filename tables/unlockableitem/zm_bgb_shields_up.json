@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_shields_up",
+    "nameHash": "#zm_bgb_shields_up",
+    "displayName": "#hash_65ac41c57b82a941",
+    "displayNameShort": "#",
+    "description": "#hash_46349053fa96373b",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_647d29f5834a29ed",
+    "globalItemIndex": 473,
+    "itemIndex": 73,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

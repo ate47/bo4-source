@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#smg_thompson_t8_upgraded",
+    "displayName": "#hash_742e1c06865e8dc8",
+    "displayNameShort": "#",
+    "description": "#hash_16732063920e5e21",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_10f8e59611185278",
+    "previewImageLarge": "#hash_791db6a5b7b77ad",
+    "zmPreviewImage": "#hash_3c6c05313f3eb5f2",
+    "zmPreviewImageLarge": "#hash_3c6c05313f3eb5f2",
+    "globalItemIndex": 392,
+    "itemIndex": 392,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": -1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_smg",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

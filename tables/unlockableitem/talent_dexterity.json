@@ -1,0 +1,19 @@
+{
+    "name": "talent_dexterity",
+    "nameHash": "#talent_dexterity",
+    "displayName": "#hash_4afb2c23fb000d24",
+    "displayNameShort": "#hash_79ce0dc1c93985a9",
+    "description": "#hash_6992fde2b9d36f8c",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_57b71d7efcc7b311",
+    "previewImageLarge": "#hash_56fc56474d559e15",
+    "globalItemIndex": 610,
+    "itemIndex": 10,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

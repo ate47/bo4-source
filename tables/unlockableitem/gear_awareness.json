@@ -1,0 +1,19 @@
+{
+    "name": "gear_awareness",
+    "nameHash": "#gear_awareness",
+    "displayName": "#hash_7822ddc954cf3a29",
+    "displayNameShort": "#hash_6a39367c6dec07e4",
+    "description": "#hash_2677d6156a07fa23",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_1c5739f0a11ab73",
+    "previewImageLarge": "#hash_1c5739f0a11ab73",
+    "globalItemIndex": 624,
+    "itemIndex": 24,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

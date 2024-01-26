@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_undead_man_walking",
+    "nameHash": "#zm_bgb_undead_man_walking",
+    "displayName": "#hash_3e2dfd932b779af5",
+    "displayNameShort": "#",
+    "description": "#hash_206d9110b9f246df",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7a5cee79f8687b01",
+    "globalItemIndex": 460,
+    "itemIndex": 60,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

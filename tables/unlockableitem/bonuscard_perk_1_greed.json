@@ -1,0 +1,19 @@
+{
+    "name": "bonuscard_perk_1_greed",
+    "nameHash": "#bonuscard_perk_1_greed",
+    "displayName": "#hash_4cc8e260c8a0094d",
+    "displayNameShort": "#hash_518ebb45a92e2420",
+    "description": "#hash_4c90c643fb10a077",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7bfd477b4c071081",
+    "previewImageLarge": "#hash_2c83f699bcadef05",
+    "globalItemIndex": 675,
+    "itemIndex": 11,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bonuscard",
+    "attachments": []
+}

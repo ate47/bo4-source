@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#lmg_double_t8_upgraded",
+    "displayName": "#weapon/lmg_double_t8",
+    "displayNameShort": "#",
+    "description": "#hash_5063116c1875ee19",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6ba7cf667702aebc",
+    "previewImageLarge": "#hash_6ba7cf667702aebc",
+    "zmPreviewImage": "#hash_659ef49051dbcdb",
+    "zmPreviewImageLarge": "#hash_659ef49051dbcdb",
+    "globalItemIndex": 362,
+    "itemIndex": 362,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": -1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_lmg",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

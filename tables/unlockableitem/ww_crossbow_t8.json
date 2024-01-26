@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#ww_crossbow_t8",
+    "displayName": "#hash_21a781af97d8bc6d",
+    "displayNameShort": "#",
+    "description": "#hash_22d3e2820e9171d7",
+    "wzDescription": "#hash_6b454c4591b3595d",
+    "zmDescription": "#",
+    "previewImage": "#hash_38208b311390cffb",
+    "previewImageLarge": "#hash_38208b311390cffb",
+    "wzPreviewImage": "#hash_38208b311390cffb",
+    "wzPreviewImageLarge": "#hash_77c563e684d9b2c3",
+    "globalItemIndex": 61,
+    "itemIndex": 61,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": -1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_assault",
+    "attachments": []
+}

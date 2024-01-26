@@ -1,0 +1,19 @@
+{
+    "name": "perk_widows_wine",
+    "nameHash": "#perk_widows_wine",
+    "displayName": "#hash_28b117d16a96acb4",
+    "displayNameShort": "#",
+    "description": "#hash_64aba1b308de5ebc",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7d7d5efc5dae7441",
+    "previewImageLarge": "#hash_46704ec0e8adf9ff",
+    "globalItemIndex": 509,
+    "itemIndex": 9,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

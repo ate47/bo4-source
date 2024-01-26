@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_hawk",
+    "displayName": "#weapon/hawk",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_693cbd6544eb9cf9",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_471bb27d2373ed2d",
+    "previewImageLarge": "#hash_471bb27d2373ed2d",
+    "globalItemIndex": 71,
+    "itemIndex": 71,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

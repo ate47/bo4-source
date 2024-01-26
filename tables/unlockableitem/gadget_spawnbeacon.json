@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#gadget_spawnbeacon",
+    "displayName": "#hash_1633ce92cad338fd",
+    "displayNameShort": "#",
+    "description": "#hash_6dfcb7fcac988147",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_a7c25afa58937a7",
+    "previewImageLarge": "#hash_a7c25afa58937a7",
+    "globalItemIndex": 88,
+    "itemIndex": 88,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_shopping_free",
+    "nameHash": "#zm_bgb_shopping_free",
+    "displayName": "#hash_1a335acd2d91f3aa",
+    "displayNameShort": "#",
+    "description": "#hash_27357e67bf290c9a",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_10285e0f15c068a1",
+    "globalItemIndex": 455,
+    "itemIndex": 55,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "talisman_perk_reducecost_3",
+    "nameHash": "#talisman_perk_reducecost_3",
+    "displayName": "#hash_6651591a93bbdaf3",
+    "displayNameShort": "#",
+    "description": "#hash_254b123b81f213e5",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_70f1e8bc9454d8eb",
+    "globalItemIndex": 540,
+    "itemIndex": 6,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

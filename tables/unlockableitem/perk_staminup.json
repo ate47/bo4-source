@@ -1,0 +1,19 @@
+{
+    "name": "perk_staminup",
+    "nameHash": "#perk_staminup",
+    "displayName": "#hash_3725b1a6773d4dc0",
+    "displayNameShort": "#",
+    "description": "#hash_390cd9268976e48",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_12936482d7a91b71",
+    "previewImageLarge": "#hash_569186415bf062f",
+    "globalItemIndex": 508,
+    "itemIndex": 8,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

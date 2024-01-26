@@ -1,0 +1,23 @@
+{
+    "name": "",
+    "nameHash": "#melee_slaybell_t8",
+    "displayName": "#weapon/melee_slaybell_t8",
+    "displayNameShort": "#",
+    "description": "#hash_2f0e45755827f680",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6e552f1d09a5b62b",
+    "previewImageLarge": "#hash_61aafcc84f0c78d3",
+    "globalItemIndex": 213,
+    "itemIndex": 213,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

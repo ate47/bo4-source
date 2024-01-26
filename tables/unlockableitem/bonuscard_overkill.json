@@ -1,0 +1,19 @@
+{
+    "name": "bonuscard_overkill",
+    "nameHash": "#bonuscard_overkill",
+    "displayName": "#hash_4f7b0e3fde1c03c9",
+    "displayNameShort": "#hash_4367e8b0f18f3ac4",
+    "description": "#hash_472a5ead914c7683",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_303d24abddf78b23",
+    "previewImageLarge": "#hash_20c92676b3e21e83",
+    "globalItemIndex": 665,
+    "itemIndex": 1,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bonuscard",
+    "attachments": []
+}

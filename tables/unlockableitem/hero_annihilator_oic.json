@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#hero_annihilator_oic",
+    "displayName": "#weapon/hero_annihilator",
+    "displayNameShort": "#",
+    "description": "#hash_6421656710e87b96",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#hash_2d5d971b8f5567d",
+    "globalItemIndex": 112,
+    "itemIndex": 112,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_pistol",
+    "attachments": []
+}

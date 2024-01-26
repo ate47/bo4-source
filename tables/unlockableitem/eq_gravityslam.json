@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "nameHash": "#eq_gravityslam",
+    "displayName": "#hash_7b7c34efa5954735",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_639c0c8ef484f61f",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_dca2af8ccdfa6cc",
+    "globalItemIndex": 107,
+    "itemIndex": 107,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

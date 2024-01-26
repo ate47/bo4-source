@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_concertina_wire",
+    "displayName": "#hash_746b33d0a9b035d2",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_38e27e9a26fea902",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_43cc731fc2352ada",
+    "previewImageLarge": "#hash_43cc731fc2352ada",
+    "globalItemIndex": 82,
+    "itemIndex": 82,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

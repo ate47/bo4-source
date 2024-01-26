@@ -1,0 +1,19 @@
+{
+    "name": "talent_deadsilence",
+    "nameHash": "#talent_deadsilence",
+    "displayName": "#hash_5c57908310294e36",
+    "displayNameShort": "#hash_47e09994e9e5c1cb",
+    "description": "#hash_2495a0a1e6dad146",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_d1ceac7fa8ecbc8",
+    "previewImageLarge": "#hash_6d46ef6846f77b44",
+    "globalItemIndex": 606,
+    "itemIndex": 6,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

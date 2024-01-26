@@ -1,0 +1,29 @@
+{
+    "name": "",
+    "nameHash": "#hash_2086970a9bbfc9cd",
+    "displayName": "#hash_4d32bb97914d4404",
+    "displayNameShort": "#weapon/launcher_standard_t8",
+    "description": "#hash_1507d5dc9016ea10",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_785810078928713b",
+    "previewImageLarge": "#hash_54cc28dcbbe81277",
+    "wzPreviewImage": "#hash_785810078928713b",
+    "wzPreviewImageLarge": "#hash_54cc28dcbbe81277",
+    "globalItemIndex": 75,
+    "itemIndex": 75,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_launcher",
+    "attachments": [
+        "fastlockon",
+        "supply",
+        "fastreload",
+        "damage",
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

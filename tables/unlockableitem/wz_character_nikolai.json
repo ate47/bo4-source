@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_nikolai",
+    "displayName": "#zombie/nikolai",
+    "displayNameShort": "#zombie/nikolai",
+    "description": "#",
+    "wzDescription": "#hash_58b710d31643246a",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#ui_icon_hero_portrait_draft_nikolai",
+    "globalItemIndex": 725,
+    "itemIndex": 725,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

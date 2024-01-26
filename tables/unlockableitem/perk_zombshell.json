@@ -1,0 +1,19 @@
+{
+    "name": "perk_zombshell",
+    "nameHash": "#perk_zombshell",
+    "displayName": "#hash_6b559ef33e6c2803",
+    "displayNameShort": "#",
+    "description": "#hash_17e4dced1caf2e95",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_f8b532c1b6c3c06",
+    "previewImageLarge": "#hash_7bef89478dcc3a76",
+    "globalItemIndex": 519,
+    "itemIndex": 19,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

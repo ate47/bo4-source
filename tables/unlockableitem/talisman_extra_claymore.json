@@ -1,0 +1,18 @@
+{
+    "name": "talisman_extra_claymore",
+    "nameHash": "#talisman_extra_claymore",
+    "displayName": "#hash_bbc003c42ceba82",
+    "displayNameShort": "#",
+    "description": "#hash_317fd042a90a3812",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_281cc6bb3100e019",
+    "globalItemIndex": 564,
+    "itemIndex": 30,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talisman",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "",
+    "nameHash": "#gadget_icepick",
+    "displayName": "#hash_48c19a59d96859f3",
+    "displayNameShort": "#",
+    "description": "#hash_6e2e10cb113d30e5",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_759c007ba0041096",
+    "globalItemIndex": 33,
+    "itemIndex": 33,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

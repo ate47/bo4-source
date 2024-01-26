@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#drone_squadron",
+    "displayName": "#hash_49b814200018a236",
+    "displayNameShort": "#",
+    "description": "#hash_52bd308ab5304d46",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_73bd7945d10530e1",
+    "previewImageLarge": "#hash_73bd7945d10530e1",
+    "globalItemIndex": 133,
+    "itemIndex": 133,
+    "scoreToUnlock": 1000,
+    "lowestScoreToUnlockAllowed": 800,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

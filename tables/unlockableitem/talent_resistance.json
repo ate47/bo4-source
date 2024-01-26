@@ -1,0 +1,19 @@
+{
+    "name": "talent_resistance",
+    "nameHash": "#talent_resistance",
+    "displayName": "#talent/resistance",
+    "displayNameShort": "#hash_3aa2f2fa58e932ac",
+    "description": "#hash_60c54ae9b6c8135b",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6a0eece38bc5377e",
+    "previewImageLarge": "#hash_135ac9c2962d778e",
+    "globalItemIndex": 601,
+    "itemIndex": 1,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

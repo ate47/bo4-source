@@ -1,0 +1,24 @@
+{
+    "name": "",
+    "nameHash": "#spknifeork",
+    "displayName": "#hash_19b0b2bf6f91eb63",
+    "displayNameShort": "#",
+    "description": "#hash_115fe6748f3da2f4",
+    "wzDescription": "#hash_61aec2b57bf3f835",
+    "zmDescription": "#",
+    "previewImage": "#hash_7d2aaf8a96641231",
+    "previewImageLarge": "#hash_7d2aaf8a96641231",
+    "wzPreviewImage": "#hash_7d2aaf8a96641231",
+    "wzPreviewImageLarge": "#hash_3704e4089c52087d",
+    "globalItemIndex": 27,
+    "itemIndex": 27,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter"
+    ]
+}

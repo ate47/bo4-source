@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#eq_frag_grenade",
+    "displayName": "#weapon/fraggrenade",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_79ce3cb26a47d9c8",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_5f9b20a00ceec880",
+    "previewImageLarge": "#hash_5f9b20a00ceec880",
+    "zmPreviewImage": "#hash_6c8e14b5115454a",
+    "zmPreviewImageLarge": "#hash_6c8e14b5115454a",
+    "globalItemIndex": 17,
+    "itemIndex": 17,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

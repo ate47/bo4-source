@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_shroud",
+    "displayName": "#hash_19155c3d6d58925e",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_3558cfcebfa746e",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7e7c5e65b727230a",
+    "previewImageLarge": "#hash_7e7c5e65b727230a",
+    "globalItemIndex": 40,
+    "itemIndex": 40,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": -1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

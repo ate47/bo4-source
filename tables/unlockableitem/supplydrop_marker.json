@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#supplydrop_marker",
+    "displayName": "#hash_5a5353f936938cbf",
+    "displayNameShort": "#",
+    "description": "#hash_36a3fb38f36a6b91",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_626f571740e3b012",
+    "previewImageLarge": "#hash_626f571740e3b012",
+    "globalItemIndex": 127,
+    "itemIndex": 127,
+    "scoreToUnlock": 600,
+    "lowestScoreToUnlockAllowed": 500,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

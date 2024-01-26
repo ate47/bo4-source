@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_whos_keeping_score",
+    "nameHash": "#zm_bgb_whos_keeping_score",
+    "displayName": "#hash_56d1772514dc69ff",
+    "displayNameShort": "#",
+    "description": "#hash_29e15ed266d419d1",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_772608ac6c5ccf33",
+    "globalItemIndex": 463,
+    "itemIndex": 63,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

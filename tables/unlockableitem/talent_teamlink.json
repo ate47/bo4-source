@@ -1,0 +1,19 @@
+{
+    "name": "talent_teamlink",
+    "nameHash": "#talent_teamlink",
+    "displayName": "#hash_d109c3657d859be",
+    "displayNameShort": "#hash_353d88c0781caa3",
+    "description": "#hash_25dc0608ca1f7a0e",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3c4eeed45e4d9876",
+    "previewImageLarge": "#hash_296847cf8c2da4e6",
+    "globalItemIndex": 608,
+    "itemIndex": 8,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

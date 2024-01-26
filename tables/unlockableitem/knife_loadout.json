@@ -1,0 +1,23 @@
+{
+    "name": "",
+    "nameHash": "#knife_loadout",
+    "displayName": "#weapon/knife_loadout",
+    "displayNameShort": "#",
+    "description": "#hash_115fe6748f3da2f4",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_70f6573f9b382dd",
+    "previewImageLarge": "#hash_70f6573f9b382dd",
+    "globalItemIndex": 3,
+    "itemIndex": 3,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

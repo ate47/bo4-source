@@ -1,0 +1,19 @@
+{
+    "name": "bonuscard_underkill",
+    "nameHash": "#bonuscard_underkill",
+    "displayName": "#hash_479658c4dee6485b",
+    "displayNameShort": "#hash_4293cd300f102c76",
+    "description": "#hash_4818d621dbde690d",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_511f01d2a9bb9f5",
+    "previewImageLarge": "#hash_5099e6bf251546b9",
+    "globalItemIndex": 666,
+    "itemIndex": 2,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bonuscard",
+    "attachments": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#ultimate_turret",
+    "displayName": "#hash_7a37b2fcb855abe4",
+    "displayNameShort": "#",
+    "description": "#hash_69a3d01cedc93f4c",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_4c44b827e37bace0",
+    "previewImageLarge": "#hash_4c44b827e37bace0",
+    "globalItemIndex": 132,
+    "itemIndex": 132,
+    "scoreToUnlock": 900,
+    "lowestScoreToUnlockAllowed": 700,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

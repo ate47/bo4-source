@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#hero_flamethrower",
+    "displayName": "#weapon/hero_flamethrower",
+    "displayNameShort": "#",
+    "description": "#hash_4c0ba3845b4211ff",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_111d0f598e99b07f",
+    "previewImageLarge": "#hash_165568237c28910e",
+    "wzPreviewImage": "#hash_49ef0e07d42cd14a",
+    "wzPreviewImageLarge": "#hash_7993a4a94a0c2e1e",
+    "globalItemIndex": 103,
+    "itemIndex": 103,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

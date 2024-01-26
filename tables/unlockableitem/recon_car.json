@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#recon_car",
+    "displayName": "#hash_63ef4a1fc82803dc",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_4403407337dfd30a",
+    "wzDescription": "#hash_67c263ce5bc83093",
+    "zmDescription": "#",
+    "previewImage": "#hash_2d2b1cb53f3b5552",
+    "previewImageLarge": "#hash_2d2b1cb53f3b5552",
+    "globalItemIndex": 125,
+    "itemIndex": 125,
+    "scoreToUnlock": 500,
+    "lowestScoreToUnlockAllowed": 400,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "killstreak",
+    "attachments": []
+}

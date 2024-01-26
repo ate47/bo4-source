@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "nameHash": "#mini_turret",
+    "displayName": "#hash_4c262ac058202d38",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_d0dd7dd21ddce60",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_7df5b13137ce518a",
+    "zmPreviewImage": "#hash_1d819cf04bea521f",
+    "zmPreviewImageLarge": "#hash_1d819cf04bea521f",
+    "globalItemIndex": 31,
+    "itemIndex": 31,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

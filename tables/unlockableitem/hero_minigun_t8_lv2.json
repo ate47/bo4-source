@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "nameHash": "#hero_minigun_t8_lv2",
+    "displayName": "#hash_16bf14e9e0117b71",
+    "displayNameShort": "#",
+    "description": "#hash_7ff420a9769f2c76",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_769973b4fdeead70",
+    "zmPreviewImage": "#hash_6b1b2a63f86a09c3",
+    "zmPreviewImageLarge": "#hash_6b1b2a63f86a09c3",
+    "globalItemIndex": 292,
+    "itemIndex": 292,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

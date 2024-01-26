@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_decoy_grenade",
+    "displayName": "#hash_46bd2e256bd93747",
+    "displayNameShort": "#hash_46bd2e256bd93747",
+    "description": "#hash_65b63015457e5bd9",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_5f9b20a00ceec880",
+    "previewImageLarge": "#hash_5f9b20a00ceec880",
+    "globalItemIndex": 72,
+    "itemIndex": 72,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

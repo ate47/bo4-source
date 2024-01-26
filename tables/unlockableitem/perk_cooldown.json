@@ -1,0 +1,19 @@
+{
+    "name": "perk_cooldown",
+    "nameHash": "#perk_cooldown",
+    "displayName": "#hash_7f472a1c8dbfaa3a",
+    "displayNameShort": "#",
+    "description": "#hash_38c5caa7f400dc0a",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_4abab08545580f9",
+    "previewImageLarge": "#hash_1c081e66d9c42067",
+    "globalItemIndex": 510,
+    "itemIndex": 10,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

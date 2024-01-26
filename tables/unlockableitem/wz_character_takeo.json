@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#wz_character_takeo",
+    "displayName": "#zombie/takeo",
+    "displayNameShort": "#zombie/takeo",
+    "description": "#",
+    "wzDescription": "#hash_1f3de3e08b3ad876",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "previewImageLarge": "#ui_icon_hero_portrait_draft_takeo",
+    "globalItemIndex": 727,
+    "itemIndex": 727,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "hero",
+    "attachments": []
+}

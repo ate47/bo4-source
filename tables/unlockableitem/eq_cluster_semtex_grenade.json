@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_cluster_semtex_grenade",
+    "displayName": "#hash_bd772f171a2c608",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_b36de995af93a10",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_63fef5f0d3146a2c",
+    "previewImageLarge": "#hash_63fef5f0d3146a2c",
+    "globalItemIndex": 80,
+    "itemIndex": 80,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "gear_armor_tier_two",
+    "nameHash": "#gear_armor_tier_two",
+    "displayName": "#hash_7a868a207e797e5e",
+    "displayNameShort": "#hash_7a868a207e797e5e",
+    "description": "#hash_346549016db86e",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_6dd17c2a2395a6c3",
+    "previewImageLarge": "#hash_6dd17c2a2395a6c3",
+    "globalItemIndex": 620,
+    "itemIndex": 20,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

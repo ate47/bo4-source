@@ -1,0 +1,24 @@
+{
+    "name": "",
+    "nameHash": "#spork_alcatraz",
+    "displayName": "#hash_608942d662beb5ae",
+    "displayNameShort": "#",
+    "description": "#hash_115fe6748f3da2f4",
+    "wzDescription": "#hash_7820e9155d6e93b8",
+    "zmDescription": "#",
+    "previewImage": "#hash_489c055bada71c2",
+    "previewImageLarge": "#hash_489c055bada71c2",
+    "wzPreviewImage": "#hash_489c055bada71c2",
+    "wzPreviewImageLarge": "#hash_182e570f1288660a",
+    "globalItemIndex": 29,
+    "itemIndex": 29,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": [
+        "clantag",
+        "killcounter"
+    ]
+}

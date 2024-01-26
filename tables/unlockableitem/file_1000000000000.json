@@ -1,0 +1,21 @@
+{
+    "name": "#hash_1000000000000",
+,
+        {
+            "name": "<invalid:0>",
+            "nameHash": "#hash_1000000000000",
+            "displayName": "#hash_17ffffffff",
+            "displayNameShort": "#",
+            "description": "#",
+            "wzDescription": "#",
+            "zmDescription": "#",
+            "previewImage": "#hash_781a480e",
+            "wzPreviewImageLarge": "#hash_3f0000003f000000",
+            "globalItemIndex": 3449248646,
+            "itemIndex": 1022702650,
+            "scoreToUnlock": 0,
+            "lowestScoreToUnlockAllowed": 0,
+            "allocation": 0,
+            "attributeItems": false,
+            "itemGroupIndex": "weapon_smg",
+            "attachments": [

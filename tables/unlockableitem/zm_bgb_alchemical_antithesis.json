@@ -1,0 +1,18 @@
+{
+    "name": "zm_bgb_alchemical_antithesis",
+    "nameHash": "#zm_bgb_alchemical_antithesis",
+    "displayName": "#hash_4627a22fe4c99cf7",
+    "displayNameShort": "#",
+    "description": "#hash_4c14718922df6c29",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_e3b631a36cc7d5b",
+    "globalItemIndex": 401,
+    "itemIndex": 1,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "bubblegum_consumable",
+    "attachments": []
+}

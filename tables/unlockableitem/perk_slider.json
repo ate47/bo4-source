@@ -1,0 +1,19 @@
+{
+    "name": "perk_slider",
+    "nameHash": "#perk_slider",
+    "displayName": "#menu/slider",
+    "displayNameShort": "#",
+    "description": "#hash_eb4f17ebaa29c56",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_899d8fb8c10d0e3",
+    "previewImageLarge": "#hash_5c66be6e86f0285d",
+    "globalItemIndex": 513,
+    "itemIndex": 13,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

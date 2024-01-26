@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#pistol_topbreak_t8",
+    "displayName": "#weapon/pistol_topbreak_t8",
+    "displayNameShort": "#",
+    "description": "#hash_36f247fa2095f383",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_670ac8caa93d9654",
+    "previewImageLarge": "#hash_3de5323436a5e489",
+    "zmPreviewImage": "#hash_7aaaacd7f5bba0c7",
+    "zmPreviewImageLarge": "#hash_7aaaacd7f5bba0c7",
+    "globalItemIndex": 357,
+    "itemIndex": 357,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_pistol",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

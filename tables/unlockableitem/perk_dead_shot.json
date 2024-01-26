@@ -1,0 +1,19 @@
+{
+    "name": "perk_dead_shot",
+    "nameHash": "#perk_dead_shot",
+    "displayName": "#hash_e41007e22725640",
+    "displayNameShort": "#",
+    "description": "#hash_3c8a650fbfbc7330",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_efc8b5bb181db74",
+    "previewImageLarge": "#hash_30988df7da363600",
+    "globalItemIndex": 502,
+    "itemIndex": 2,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

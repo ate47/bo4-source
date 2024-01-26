@@ -1,0 +1,18 @@
+{
+    "name": "talent_consumer",
+    "nameHash": "#talent_consumer",
+    "displayName": "#hash_326e0dd2bb234380",
+    "displayNameShort": "#",
+    "description": "#hash_51bc265492d0f908",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "globalItemIndex": 635,
+    "itemIndex": 35,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

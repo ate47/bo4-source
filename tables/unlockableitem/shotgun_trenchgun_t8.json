@@ -1,0 +1,25 @@
+{
+    "name": "",
+    "nameHash": "#shotgun_trenchgun_t8",
+    "displayName": "#weapon/shotgun_trenchgun_t8",
+    "displayNameShort": "#",
+    "description": "#hash_64788383e6a241b8",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_20c3eefbd80aeffa",
+    "previewImageLarge": "#hash_66d816ecd67694f3",
+    "zmPreviewImage": "#hash_68919da50189b818",
+    "zmPreviewImageLarge": "#hash_68919da50189b818",
+    "globalItemIndex": 354,
+    "itemIndex": 354,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": true,
+    "itemGroupIndex": "weapon_cqb",
+    "attachments": [
+        "clantag",
+        "killcounter",
+        "custom2"
+    ]
+}

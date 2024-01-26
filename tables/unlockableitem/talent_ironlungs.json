@@ -1,0 +1,18 @@
+{
+    "name": "talent_ironlungs",
+    "nameHash": "#talent_ironlungs",
+    "displayName": "#hash_18f7059c6934b650",
+    "displayNameShort": "#",
+    "description": "#hash_57c743688dd9f078",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "globalItemIndex": 629,
+    "itemIndex": 29,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

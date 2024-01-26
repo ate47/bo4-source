@@ -1,0 +1,19 @@
+{
+    "name": "gear_armor_one",
+    "nameHash": "#gear_armor_one",
+    "displayName": "#hash_7a8689207e797cab",
+    "displayNameShort": "#hash_7a8689207e797cab",
+    "description": "#hash_8061c7527ba4cfd",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_146a0acc1c43f290",
+    "previewImageLarge": "#hash_146a0acc1c43f290",
+    "globalItemIndex": 636,
+    "itemIndex": 36,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

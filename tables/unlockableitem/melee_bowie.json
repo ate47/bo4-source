@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#melee_bowie",
+    "displayName": "#weapon/bowie",
+    "displayNameShort": "#weapon/bowie",
+    "description": "#hash_5891462ffe312cc5",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_3cad61c6ff46ee39",
+    "previewImageLarge": "#hash_4cee76fa82ab3255",
+    "wzPreviewImage": "#hash_3cad61c6ff46ee39",
+    "wzPreviewImageLarge": "#hash_4cee76fa82ab3255",
+    "globalItemIndex": 143,
+    "itemIndex": 143,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_knife",
+    "attachments": []
+}

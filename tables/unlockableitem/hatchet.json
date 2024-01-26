@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#hatchet",
+    "displayName": "#weapon/hatchet",
+    "displayNameShort": "#hash_555c6ebacbae8764",
+    "description": "#hash_28178b2dafb0bca3",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2817ab88f80ee5ae",
+    "previewImageLarge": "#hash_2817ab88f80ee5ae",
+    "globalItemIndex": 68,
+    "itemIndex": 68,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "talent_drifter",
+    "nameHash": "#talent_drifter",
+    "displayName": "#hash_7822ddc954cf3a29",
+    "displayNameShort": "#",
+    "description": "#hash_2677d6156a07fa23",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#blacktransparent",
+    "globalItemIndex": 617,
+    "itemIndex": 17,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

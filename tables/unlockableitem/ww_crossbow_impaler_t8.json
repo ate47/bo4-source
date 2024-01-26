@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "nameHash": "#ww_crossbow_impaler_t8",
+    "displayName": "#hash_3f07f486b081b54f",
+    "displayNameShort": "#",
+    "description": "#hash_750499bb4cc7af75",
+    "wzDescription": "#hash_b011b485a1789c3",
+    "zmDescription": "#",
+    "previewImage": "#hash_51176b2ff9f4113e",
+    "previewImageLarge": "#hash_1a13cbf8c2718bae",
+    "wzPreviewImage": "#hash_51176b2ff9f4113e",
+    "wzPreviewImageLarge": "#hash_1a13cbf8c2718bae",
+    "globalItemIndex": 320,
+    "itemIndex": 320,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": -1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_assault",
+    "attachments": []
+}

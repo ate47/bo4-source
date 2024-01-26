@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "nameHash": "#eq_swat_grenade",
+    "displayName": "#hash_6c7cf85b494507e4",
+    "displayNameShort": "#hash_3046dd369d8a186d",
+    "description": "#hash_77f20e26e1731932",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_5caea2a06ec2634e",
+    "previewImageLarge": "#hash_5caea2a06ec2634e",
+    "globalItemIndex": 81,
+    "itemIndex": 81,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "weapon_grenade",
+    "attachments": []
+}

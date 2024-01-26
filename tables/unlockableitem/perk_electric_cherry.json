@@ -1,0 +1,19 @@
+{
+    "name": "perk_electric_cherry",
+    "nameHash": "#perk_electric_cherry",
+    "displayName": "#hash_1dcdfad553a77064",
+    "displayNameShort": "#",
+    "description": "#hash_61d7e15efd453ccc",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_51c0c6a3d2642c5",
+    "previewImageLarge": "#hash_44cd8b334fd335f3",
+    "globalItemIndex": 504,
+    "itemIndex": 4,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}

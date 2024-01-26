@@ -1,0 +1,19 @@
+{
+    "name": "talent_coldblooded",
+    "nameHash": "#talent_coldblooded",
+    "displayName": "#hash_324374a30bd5fd14",
+    "displayNameShort": "#hash_22344ec259278319",
+    "description": "#hash_4325cdfa811a2ddc",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_2110ab72190cd862",
+    "previewImageLarge": "#hash_1885c2cadaf415e2",
+    "globalItemIndex": 604,
+    "itemIndex": 4,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "talent",
+    "attachments": []
+}

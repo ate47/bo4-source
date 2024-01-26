@@ -1,0 +1,19 @@
+{
+    "name": "perk_ethereal_razor",
+    "nameHash": "#perk_ethereal_razor",
+    "displayName": "#hash_151810b86925aa3e",
+    "displayNameShort": "#",
+    "description": "#hash_69a2bba9d5da9b8e",
+    "wzDescription": "#",
+    "zmDescription": "#",
+    "previewImage": "#hash_1f0f4804c5eb5860",
+    "previewImageLarge": "#hash_462aba4d538dc8dc",
+    "globalItemIndex": 518,
+    "itemIndex": 18,
+    "scoreToUnlock": 0,
+    "lowestScoreToUnlockAllowed": 0,
+    "allocation": 1,
+    "attributeItems": false,
+    "itemGroupIndex": "specialty",
+    "attachments": []
+}
