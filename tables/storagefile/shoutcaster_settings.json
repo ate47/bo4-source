@@ -1,0 +1,5 @@
+{
+    "name": "#shoutcaster_settings",
+    "nameStr": "shoutcaster_settings",
+    "ddl": "#gamedata/ddl/generated/profile_shoutcaster.ddl"
+}

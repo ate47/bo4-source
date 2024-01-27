@@ -1,0 +1,5 @@
+{
+    "name": "#wz_progression_online",
+    "nameStr": "wz_progression_online",
+    "ddl": "#gamedata/ddl/generated/wz_progression.ddl"
+}

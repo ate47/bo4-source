@@ -1,0 +1,5 @@
+{
+    "name": "#craft_emblems",
+    "nameStr": "craft_emblems",
+    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+}

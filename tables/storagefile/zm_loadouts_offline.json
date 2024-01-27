@@ -1,0 +1,5 @@
+{
+    "name": "#zm_loadouts_offline",
+    "nameStr": "zm_loadouts_offline",
+    "ddl": "#gamedata/ddl/generated/zm_loadouts_offline.ddl"
+}

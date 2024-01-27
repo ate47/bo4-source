@@ -1,0 +1,5 @@
+{
+    "name": "#craft_paintjobs",
+    "nameStr": "craft_paintjobs",
+    "ddl": "#gamedata/ddl/generated/paintjobs.ddl"
+}

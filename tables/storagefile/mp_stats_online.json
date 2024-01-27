@@ -1,0 +1,5 @@
+{
+    "name": "#mp_stats_online",
+    "nameStr": "mp_stats_online",
+    "ddl": "#gamedata/ddl/generated/mp_stats.ddl"
+}

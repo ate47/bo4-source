@@ -1,0 +1,5 @@
+{
+    "name": "#mp_loadouts_arena",
+    "nameStr": "mp_loadouts_arena",
+    "ddl": "#gamedata/ddl/generated/mp_loadouts_arena.ddl"
+}

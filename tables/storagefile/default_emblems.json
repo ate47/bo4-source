@@ -1,0 +1,5 @@
+{
+    "name": "#default_emblems",
+    "nameStr": "default_emblems",
+    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+}

@@ -1,0 +1,5 @@
+{
+    "name": "#craft_paintshopdata",
+    "nameStr": "craft_paintshopdata",
+    "ddl": "#gamedata/ddl/generated/class_paintshop.ddl"
+}

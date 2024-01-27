@@ -1,0 +1,5 @@
+{
+    "name": "#mp_loadouts_arena_offline",
+    "nameStr": "mp_loadouts_arena_offline",
+    "ddl": "#gamedata/ddl/generated/mp_loadouts_arena_offline.ddl"
+}

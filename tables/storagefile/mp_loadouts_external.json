@@ -1,0 +1,5 @@
+{
+    "name": "#mp_loadouts_external",
+    "nameStr": "mp_loadouts_external",
+    "ddl": "#gamedata/ddl/generated/mp_loadouts_external.ddl"
+}

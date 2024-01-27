@@ -1,0 +1,5 @@
+{
+    "name": "#clan_emblem",
+    "nameStr": "clan_emblem",
+    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+}

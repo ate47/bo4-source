@@ -1,0 +1,5 @@
+{
+    "name": "#pc_achievements",
+    "nameStr": "pc_achievements",
+    "ddl": "#gamedata/ddl/generated/pc_achievements.ddl"
+}

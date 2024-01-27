@@ -1,0 +1,5 @@
+{
+    "name": "#craft_groups",
+    "nameStr": "craft_groups",
+    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+}

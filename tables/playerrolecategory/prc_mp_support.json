@@ -1,0 +1,10 @@
+{
+    "name": "#prc_mp_support",
+    "displayName": "#hash_65307410511dd3aa",
+    "description": "#hash_2d04000a7a329c9a",
+    "sortOrder": 2,
+    "fields": {
+        "var_af8f68ab": "#hash_5e12b6089d2d047a",
+        "enabled": 1
+    }
+}

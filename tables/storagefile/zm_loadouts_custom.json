@@ -1,0 +1,5 @@
+{
+    "name": "#zm_loadouts_custom",
+    "nameStr": "zm_loadouts_custom",
+    "ddl": "#gamedata/ddl/generated/zm_loadouts_custom.ddl"
+}

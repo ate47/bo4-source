@@ -1,0 +1,5 @@
+{
+    "name": "#leaderboards_player_list",
+    "nameStr": "leaderboards_player_list",
+    "ddl": "#gamedata/ddl/generated/leaderboards_player_list.ddl"
+}

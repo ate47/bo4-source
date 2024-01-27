@@ -1,0 +1,5 @@
+{
+    "name": "#mp_combat_training",
+    "nameStr": "mp_combat_training",
+    "ddl": "#gamedata/ddl/generated/mp_combat_training.ddl"
+}

@@ -1,0 +1,5 @@
+{
+    "name": "#mp_progression_online",
+    "nameStr": "mp_progression_online",
+    "ddl": "#gamedata/ddl/generated/mp_progression.ddl"
+}

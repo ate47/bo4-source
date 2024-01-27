@@ -1,0 +1,5 @@
+{
+    "name": "#wz_stats_online",
+    "nameStr": "wz_stats_online",
+    "ddl": "#gamedata/ddl/generated/wz_stats.ddl"
+}

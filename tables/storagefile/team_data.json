@@ -1,0 +1,5 @@
+{
+    "name": "#team_data",
+    "nameStr": "team_data",
+    "ddl": "#gamedata/ddl/generated/team_data.ddl"
+}

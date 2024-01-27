@@ -1,0 +1,5 @@
+{
+    "name": "#user_settings",
+    "nameStr": "user_settings",
+    "ddl": "#gamedata/ddl/generated/profile_common.ddl"
+}

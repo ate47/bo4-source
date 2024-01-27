@@ -1,0 +1,5 @@
+{
+    "name": "#mp_loadouts_online",
+    "nameStr": "mp_loadouts_online",
+    "ddl": "#gamedata/ddl/generated/mp_loadouts.ddl"
+}

@@ -1,0 +1,5 @@
+{
+    "name": "#clan_data",
+    "nameStr": "clan_data",
+    "ddl": "#gamedata/ddl/generated/clan_data.ddl"
+}

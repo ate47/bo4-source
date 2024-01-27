@@ -1,0 +1,5 @@
+{
+    "name": "#recent_players",
+    "nameStr": "recent_players",
+    "ddl": "#gamedata/ddl/generated/recent_players.ddl"
+}

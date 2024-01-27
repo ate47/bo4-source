@@ -1,0 +1,5 @@
+{
+    "name": "#mp_loadouts_custom",
+    "nameStr": "mp_loadouts_custom",
+    "ddl": "#gamedata/ddl/generated/mp_loadouts_custom.ddl"
+}

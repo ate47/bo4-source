@@ -1,0 +1,9 @@
+{
+    "name": "#mp_prc_table",
+    "entries": [
+        "#prc_none",
+        "#prc_mp_objective",
+        "#prc_mp_slayer",
+        "#prc_mp_support"
+    ]
+}

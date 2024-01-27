@@ -1,0 +1,5 @@
+{
+    "name": "#loot_emblems",
+    "nameStr": "loot_emblems",
+    "ddl": "#gamedata/ddl/generated/emblem.ddl"
+}

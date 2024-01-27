@@ -1,0 +1,5 @@
+{
+    "name": "#external_data",
+    "nameStr": "external_data",
+    "ddl": "#gamedata/ddl/generated/external_data.ddl"
+}

@@ -1,0 +1,5 @@
+{
+    "name": "#wz_loadouts_online",
+    "nameStr": "wz_loadouts_online",
+    "ddl": "#gamedata/ddl/generated/wz_loadouts.ddl"
+}
