@@ -205,7 +205,7 @@
                     "aligntarget": "tag_align_red_boss"
                 }
             ],
-            "model": "#hash_2fbc31b782c52b97",
+            "model": "#c_t8_zmb_dlc2_perseus_fb1",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "boss_1"
@@ -271,7 +271,7 @@
                     "aligntarget": "tag_align_red_boss"
                 }
             ],
-            "model": "#hash_1cd365685eb76aec",
+            "model": "#c_t8_zmb_dlc2_perseus_shield1",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "p_shield"
@@ -337,7 +337,7 @@
                     "aligntarget": "tag_align_red_boss"
                 }
             ],
-            "model": "#hash_39b17285015a6944",
+            "model": "#c_t8_zmb_dlc2_perseus_sword1",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "p_sword"

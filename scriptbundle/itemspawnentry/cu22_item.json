@@ -17,7 +17,7 @@
     "unlockableitemref": "#wz_character_woods",
     "name": "cu22_item",
     "displayname": "#hash_46107248e6ff17c7",
-    "icon": "#hash_4c3e98d67e4af20a",
+    "icon": "#ui_icon_inventory_bandana",
     "modelscale": 1.25,
     "rarity": "None",
     "handler": "#hash_5c844f5c1207159c",

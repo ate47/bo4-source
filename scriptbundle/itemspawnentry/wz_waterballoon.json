@@ -5,7 +5,7 @@
     "model": "#hash_2a16aa22e8874d06",
     "weapon": "weapon#waterballoon_wz",
     "type": "itemspawnentry",
-    "var_77d2cbb5": "#hash_1af210e93d3b0dc8",
+    "var_77d2cbb5": "#wpn_t8_wz_water_balloon_world",
     "name": "wz_waterballoon",
     "displayname": "#hash_45e61d7aa4721759",
     "var_36781d9f": "fly_drop_waterball",

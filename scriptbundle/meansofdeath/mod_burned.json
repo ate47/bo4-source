@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_burned",
     "displayname": "#hash_4a5036425c59b91",
-    "icon": "#hash_6635db327465f002",
-    "iconlarge": "#hash_5b476cee3dd90493"
+    "icon": "#ui_icon_meansofdeath_burned",
+    "iconlarge": "#ui_icon_meansofdeath_burned_xl"
 }

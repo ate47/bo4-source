@@ -18,7 +18,7 @@
     "rarity": "Common",
     "var_38f854e5": 1,
     "handler": "#hash_50375e5de228e9fc",
-    "pickupicon": "#hash_ff0bf0098fa7a6b",
+    "pickupicon": "#ui_icon_weapon_hud_sig_blade",
     "var_50773731": 20,
     "itemtype": "weapon",
     "pickupsound": "fly_pickup_blade"

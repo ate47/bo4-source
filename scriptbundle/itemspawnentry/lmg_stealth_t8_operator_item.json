@@ -41,7 +41,7 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,
-    "pickupicon": "#hash_2a3f361b06306697",
+    "pickupicon": "#ui_icon_weapon_hud_lmg_stealth",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

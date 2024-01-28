@@ -2296,7 +2296,7 @@ function private function_c11e25eb() {
     var_7ed2d43 = undefined;
     var_7ed2d43 = self waittill(#"hash_2877e7dda4d090c8");
     e_generator = getent("b64_si_gen", "script_noteworthy");
-    e_generator setmodel(#"hash_12ffdb460266366");
+    e_generator setmodel(#"p8_fxanim_zm_esc_generator_lrg_on_mod");
     e_generator thread scene::play(e_generator.bundle, "ON", e_generator);
     playsoundatposition(#"hash_5a77a78c82aebb7", e_generator.origin);
     exploder::exploder("lgtexp_building64_power_on");

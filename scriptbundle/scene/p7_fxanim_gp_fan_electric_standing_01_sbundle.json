@@ -5,14 +5,14 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_675c7c131754de10",
+                            "anim": "#p7_fxanim_gp_fan_electric_standing_01_oscillate_anim",
                             "var_71bac06": "anim"
                         }
                     ],
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_3a4458c790846532",
+            "model": "#p7_fxanim_gp_fan_electric_standing_01_mod",
             "type": "prop",
             "name": "prop 1"
         }

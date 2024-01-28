@@ -5,7 +5,7 @@
     "type": "itemspawnentry",
     "name": "concussion_wz_item",
     "stackcount": 1,
-    "icon": "#hash_d00d8a76c23a166",
+    "icon": "#ui_icon_inventory_concussion_grenade",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",

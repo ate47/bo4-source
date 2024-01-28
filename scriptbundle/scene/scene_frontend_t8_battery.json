@@ -125,7 +125,7 @@
                     "name": "play5"
                 }
             ],
-            "model": "#hash_f298754b73b7362",
+            "model": "#wpn_t8_hero_war_machine_world",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 4"

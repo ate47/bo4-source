@@ -39,10 +39,10 @@ function function_a45824f(localclientnum, oldval, newval, bnewent, binitialsnap,
     if (newval == 1) {
         forcestreamxmodel(#"wpn_t8_pistol_standard_world");
     } else if (newval == 2) {
-        forcestreamxmodel(#"hash_31af613fbbe465cf");
+        forcestreamxmodel(#"wpn_t8_wpn_lmg_hades_world");
     } else {
         stopforcestreamingxmodel(#"wpn_t8_pistol_standard_world");
-        stopforcestreamingxmodel(#"hash_31af613fbbe465cf");
+        stopforcestreamingxmodel(#"wpn_t8_wpn_lmg_hades_world");
     }
 }
 

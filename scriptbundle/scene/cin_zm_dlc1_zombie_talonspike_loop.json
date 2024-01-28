@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "#hash_f1426d4e5dacd07",
+            "mainanim": "#ai_zm_dlc1_zombie_talonspike_loop",
             "model": "#hash_9a82e835c65908e",
             "type": "actor",
             "vmtype": "server",

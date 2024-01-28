@@ -15,7 +15,7 @@
     "name": "perk_item_engineer",
     "displayname": "#hash_4baf5d49abad672",
     "stackcount": 1,
-    "icon": "#hash_20620076157ef8c2",
+    "icon": "#ui_icon_inventory_engineer",
     "casttime": 2,
     "modelscale": 1,
     "rarity": "None",

@@ -20,12 +20,12 @@
                     ],
                     "var_64c0ee5a": "#hash_45f3ba9d498d523c",
                     "name": "main & idle loop out",
-                    "var_1c7fbd6b": "#hash_1dd963459dc5b310"
+                    "var_1c7fbd6b": "#p8_fxanim_zm_esc_lighthouse_explosion_smod"
                 }
             ],
             "issiege": 1,
             "firstframe": 1,
-            "model": "#hash_109eb70b68cb9857",
+            "model": "#p8_fxanim_zm_esc_lighthouse_explosion_pristine_smod",
             "type": "prop",
             "name": "prop 1"
         }

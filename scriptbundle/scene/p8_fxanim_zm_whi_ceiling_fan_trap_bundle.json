@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_43084738bd380533",
+                            "anim": "#p8_fxanim_zm_whi_ceiling_fan_trap_idle_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -23,7 +23,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1f947e5fc3e340ab",
+                            "anim": "#p8_fxanim_zm_whi_ceiling_fan_trap_loop_anim",
                             "var_71bac06": "anim"
                         }
                     ],

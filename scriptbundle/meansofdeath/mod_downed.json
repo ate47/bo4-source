@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_downed",
     "displayname": "#hash_1c9e9c00440d97c4",
-    "icon": "#hash_263c9be7c412a1d3",
-    "iconlarge": "#hash_727447b0693f96e8"
+    "icon": "#ui_icon_meansofdeath_downed",
+    "iconlarge": "#ui_icon_meansofdeath_downed_xl"
 }

@@ -34,8 +34,8 @@
     "var_65b3a12": 6,
     "var_340eac1f": 1,
     "name": "ar_damage_t8_gold_item",
-    "var_9507cf45": "#hash_3f511219b22dd736",
-    "icon": "#hash_1d61013779852975",
+    "var_9507cf45": "#ui_icon_weapon_hud_ar_damage_tactical_wz",
+    "icon": "#ui_icon_weapon_ar_damage_tactical_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Epic",
@@ -43,7 +43,7 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,
-    "pickupicon": "#hash_63ca88fff6a10b26",
+    "pickupicon": "#ui_icon_weapon_hud_ar_damage",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

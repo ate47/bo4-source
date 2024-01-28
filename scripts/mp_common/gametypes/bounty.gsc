@@ -1028,7 +1028,7 @@ function private function_7cb5420e(delay) {
         wait(delay);
     }
     var_fa5724d5 = function_7f8c4043();
-    level.var_8fcae189 = ir_strobe::function_284b1d4c(var_fa5724d5, #"hash_21fec62aabbef78c");
+    level.var_8fcae189 = ir_strobe::function_284b1d4c(var_fa5724d5, #"wpn_t8_eqp_grenade_smoke_world");
     level.var_b167ae9a = gameobjects::get_next_obj_id();
     objective_add(level.var_b167ae9a, "active", level.var_8fcae189, #"hash_7e7657e9c8f441eb");
     function_da7940a3(level.var_b167ae9a, 1);
@@ -1056,7 +1056,7 @@ function private function_f878f4bf(var_fa5724d5, context) {
     /#
         assert(isdefined(var_fa5724d5));
     #/
-    level.var_8fcae189 = ir_strobe::function_284b1d4c(var_fa5724d5, #"hash_21fec62aabbef78c");
+    level.var_8fcae189 = ir_strobe::function_284b1d4c(var_fa5724d5, #"wpn_t8_eqp_grenade_smoke_world");
     var_8ff770b8 = randomfloatrange(level.var_aad1f6f2, level.var_8ce231e3);
     wait(var_8ff770b8);
     destination = getstartorigin(var_fa5724d5, (0, 0, 0), #"ai_swat_rifle_ent_litlbird_rappel_stn_vehicle2");

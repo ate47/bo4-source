@@ -12,9 +12,9 @@
         }
     ],
     "var_77c7a074": 400,
-    "var_22107604": "#hash_3347825c80238638",
-    "var_9476dad3": "#hash_66b2b8b1ee91c43",
-    "var_a244f66f": "#hash_403d5163c018eeb8",
+    "var_22107604": "#veh_t8_drone_wasp_piece_body_mp",
+    "var_9476dad3": "#veh_t8_drone_wasp_piece_wing_rocket_right_mp",
+    "var_a244f66f": "#veh_t8_drone_wasp_piece_wing_rocket_left_mp",
     "var_efc15586": 10,
     "var_e1d36c37": 300,
     "turret_fire_burst_max": 1,

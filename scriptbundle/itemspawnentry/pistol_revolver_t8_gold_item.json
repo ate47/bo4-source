@@ -34,7 +34,7 @@
     "var_340eac1f": 1,
     "name": "pistol_revolver_t8_gold_item",
     "var_9507cf45": "#hash_1797467a61c88758",
-    "icon": "#hash_67fe50a2b5e4aeb7",
+    "icon": "#ui_icon_weapon_pistol_revolver_tactical_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Epic",
@@ -42,7 +42,7 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,
-    "pickupicon": "#hash_697ba269bb88078",
+    "pickupicon": "#ui_icon_weapon_hud_pistol_revolver",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

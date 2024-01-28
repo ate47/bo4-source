@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_25f5485149d27c76",
+                            "anim": "#p8_fxanim_zm_mansion_prima_machine_idle_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -23,7 +23,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_7c217e19fb2cbdc",
+                            "anim": "#p8_fxanim_zm_mansion_prima_machine_start_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -49,7 +49,7 @@
                 }
             ],
             "firstframe": 1,
-            "model": "#hash_1da70d4c75c9976c",
+            "model": "#p8_fxanim_zm_mansion_prima_machine_mod",
             "type": "prop",
             "name": "prop 1"
         },

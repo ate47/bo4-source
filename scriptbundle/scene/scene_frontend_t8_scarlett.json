@@ -140,7 +140,7 @@
                     "name": "play"
                 }
             ],
-            "model": "#hash_350311504362cb9b",
+            "model": "#wpn_t8_zm_pistol_webly_prop_animate",
             "type": "prop",
             "name": "prop 1"
         },
@@ -156,7 +156,7 @@
                     "name": "play"
                 }
             ],
-            "model": "#hash_350311504362cb9b",
+            "model": "#wpn_t8_zm_pistol_webly_prop_animate",
             "type": "prop",
             "name": "prop 2"
         }

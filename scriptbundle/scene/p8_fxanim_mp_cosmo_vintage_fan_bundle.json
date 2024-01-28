@@ -5,14 +5,14 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_283d2107ff2748b4",
+                            "anim": "#p7_fxanim_gp_fan_electric_vintage_wall_01_anim",
                             "var_71bac06": "anim"
                         }
                     ],
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_6c330af84be67a07",
+            "model": "#p7_fxanim_gp_fan_electric_vintage_wall_01_mod",
             "type": "prop",
             "name": "prop 1"
         }

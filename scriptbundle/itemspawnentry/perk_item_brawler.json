@@ -15,7 +15,7 @@
     "name": "perk_item_brawler",
     "displayname": "#hash_9ed2158d57e594",
     "stackcount": 1,
-    "icon": "#hash_3e2187739e0a7582",
+    "icon": "#ui_icon_inventory_brawler",
     "casttime": 2,
     "modelscale": 1,
     "rarity": "None",

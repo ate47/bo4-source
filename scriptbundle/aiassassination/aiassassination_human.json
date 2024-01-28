@@ -1,17 +1,17 @@
 {
     "defenderarchetype": "none",
-    "attackerrightanim": "#hash_69904cddcee4cbfa",
+    "attackerrightanim": "#pb_knife_stand_assassination_right",
     "attackerarchetype": "none",
     "var_922067c4": "scriptbundle",
-    "attackerfrontanim": "#hash_169be52eb57e4f7f",
+    "attackerfrontanim": "#pb_knife_stand_a_melee_counter_fail",
     "attackerbackanim": "#pb_rifle_stand_assassination_back_v1",
-    "victimfrontanim": "#hash_760ddbe5bd0492f2",
+    "victimfrontanim": "#ai_base_rifle_stn_assassination_counter_front",
     "type": "aiassassination",
     "defendervariant": "regular",
     "attackervariant": "regular",
     "name": "aiassassination_human",
-    "attackerleftanim": "#hash_6b6db686ebf27259",
-    "victimbackanim": "#hash_355612fdfb2cd1f2",
-    "victimrightanim": "#hash_34d8edea236726b1",
-    "victimleftanim": "#hash_93e561b94ce1de4"
+    "attackerleftanim": "#pb_knife_stand_assassination_left",
+    "victimbackanim": "#ai_base_rifle_stn_assassination_death_back_v1",
+    "victimrightanim": "#ai_base_rifle_stn_assassination_death_right",
+    "victimleftanim": "#ai_base_rifle_stn_assassination_death_left"
 }

@@ -32,7 +32,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_6f9a09c35e3a1500",
+                            "anim": "#ai_zombie_dreamcatcher_wallconsume_align_r",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -43,7 +43,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_6f9a1dc35e3a36fc",
+                            "anim": "#ai_zombie_dreamcatcher_wallconsume_align_f",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -54,7 +54,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_6f9a27c35e3a47fa",
+                            "anim": "#ai_zombie_dreamcatcher_wallconsume_align_l",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -78,7 +78,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_4ed745f21204f146",
+                            "anim": "#o_zombie_dreamcatcher_intro",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -87,7 +87,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_4ed745f21204f146",
+                            "anim": "#o_zombie_dreamcatcher_intro",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -96,7 +96,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_99307441fccfade",
+                            "anim": "#o_zombie_dreamcatcher_idle",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -106,11 +106,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_72f71cd9c95caec0",
+                            "anim": "#o_zombie_dreamcatcher_idle_twitch_scan",
                             "var_71bac06": "anim"
                         },
                         {
-                            "anim": "#hash_99307441fccfade",
+                            "anim": "#o_zombie_dreamcatcher_idle",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -120,11 +120,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_677796da85166d6d",
+                            "anim": "#o_zombie_dreamcatcher_idle_twitch_shake",
                             "var_71bac06": "anim"
                         },
                         {
-                            "anim": "#hash_99307441fccfade",
+                            "anim": "#o_zombie_dreamcatcher_idle",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -134,11 +134,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_457b328675e9949a",
+                            "anim": "#o_zombie_dreamcatcher_idle_twitch_yawn",
                             "var_71bac06": "anim"
                         },
                         {
-                            "anim": "#hash_99307441fccfade",
+                            "anim": "#o_zombie_dreamcatcher_idle",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -148,7 +148,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_29c43011c4c7eb80",
+                            "anim": "#o_zombie_dreamcatcher_wallconsume_pre_eat_r",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -158,7 +158,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_29c44411c4c80d7c",
+                            "anim": "#o_zombie_dreamcatcher_wallconsume_pre_eat_f",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -168,7 +168,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_29c44e11c4c81e7a",
+                            "anim": "#o_zombie_dreamcatcher_wallconsume_pre_eat_l",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -178,7 +178,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_78ae24818001fe3d",
+                            "anim": "#o_zombie_dreamcatcher_wallconsume_align_r",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -188,7 +188,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_78ae3081800212a1",
+                            "anim": "#o_zombie_dreamcatcher_wallconsume_align_f",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -198,7 +198,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_78ae2681800201a3",
+                            "anim": "#o_zombie_dreamcatcher_wallconsume_align_l",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -208,7 +208,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_6f83ff7ae6ae6657",
+                            "anim": "#o_zombie_dreamcatcher_outtro",
                             "var_71bac06": "anim"
                         }
                     ],

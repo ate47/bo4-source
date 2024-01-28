@@ -135,7 +135,7 @@
                     "name": "play2"
                 }
             ],
-            "model": "#hash_140999eea60754c2",
+            "model": "#wpn_t8_sig_grapple_gun_prop_animate",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 1"

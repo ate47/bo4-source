@@ -1387,7 +1387,7 @@
                     "name": "sh340"
                 }
             ],
-            "model": "#hash_350311504362cb9b",
+            "model": "#wpn_t8_zm_pistol_webly_prop_animate",
             "type": "prop",
             "name": "prop 5"
         },
@@ -1725,7 +1725,7 @@
                     "name": "sh340"
                 }
             ],
-            "model": "#hash_62a5d5a12e2b8a55",
+            "model": "#wpn_t8_zm_ar_lever_action_prop_animate",
             "type": "prop",
             "name": "prop 7"
         },
@@ -2185,7 +2185,7 @@
                     "name": "sh340"
                 }
             ],
-            "model": "#hash_67aba7ad7a0a1d26",
+            "model": "#p8_mov_zm_gla_weapon_sword_01",
             "type": "prop",
             "name": "prop 10"
         },
@@ -3586,7 +3586,7 @@
                     "name": "sh340"
                 }
             ],
-            "model": "#hash_396fc4ba2a9d0181",
+            "model": "#p8_zm_man_door_room_library_lt_pocket",
             "type": "prop",
             "name": "prop 23"
         },
@@ -3706,7 +3706,7 @@
                     "name": "sh340"
                 }
             ],
-            "model": "#hash_7dbd9cec34052ff",
+            "model": "#p8_zm_man_door_room_library_rt_pocket",
             "type": "prop",
             "name": "prop 24"
         },

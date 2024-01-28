@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_falling",
     "displayname": "#hash_27657f0b2dbad9e0",
-    "icon": "#hash_7544c37da58f9599",
-    "iconlarge": "#hash_772628194a007f16"
+    "icon": "#ui_icon_meansofdeath_falling",
+    "iconlarge": "#ui_icon_meansofdeath_falling_xl"
 }

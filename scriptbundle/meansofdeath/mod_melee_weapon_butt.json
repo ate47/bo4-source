@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_melee_weapon_butt",
     "displayname": "#hash_6aa46dc01ddaa598",
-    "icon": "#hash_518bb4784048f5b1",
-    "iconlarge": "#hash_2600afc8f582fdce"
+    "icon": "#ui_icon_meansofdeath_melee_weapon_butt",
+    "iconlarge": "#ui_icon_meansofdeath_melee_weapon_butt_xl"
 }

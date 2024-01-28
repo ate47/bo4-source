@@ -32,11 +32,11 @@
     "unlockableitemref": "#hash_40d3a04ab73da3fa",
     "name": "cu15_item",
     "displayname": "#hash_3a1ebd341ba4f3f8",
-    "icon": "#hash_48c645bfb862ec64",
+    "icon": "#ui_icon_inventory_perk_juggernog",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#zombie/dempsey",
-    "pickupicon": "#hash_48c645bfb862ec64",
+    "pickupicon": "#ui_icon_inventory_perk_juggernog",
     "itemtype": "quest"
 }

@@ -6,7 +6,7 @@
     "type": "itemspawnentry",
     "name": "smoke_grenade_wz_item_spring_holiday",
     "stackcount": 2,
-    "icon": "#hash_27f891b5cc3751dd",
+    "icon": "#ui_icon_inventory_smoke_grenade",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",

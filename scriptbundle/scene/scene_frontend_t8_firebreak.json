@@ -152,7 +152,7 @@
                     "name": "play7"
                 }
             ],
-            "model": "#hash_82e5720ae767f5a",
+            "model": "#wpn_t8_sig_radiation_device_prop",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 1"

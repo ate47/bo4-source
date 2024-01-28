@@ -11,7 +11,7 @@
     "attachslotstock": 1,
     "var_65b3a12": 6,
     "name": "lmg_stealth_t8_item",
-    "icon": "#hash_63156ac3c5638d52",
+    "icon": "#ui_icon_weapon_lmg_stealth_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Common",
@@ -19,7 +19,7 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,
-    "pickupicon": "#hash_2a3f361b06306697",
+    "pickupicon": "#ui_icon_weapon_hud_lmg_stealth",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

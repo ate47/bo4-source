@@ -5,7 +5,7 @@
     "type": "itemspawnentry",
     "name": "emp_grenade_wz_item",
     "stackcount": 1,
-    "icon": "#hash_5cc1294548b76186",
+    "icon": "#ui_icon_equipment_emp_grenade",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",

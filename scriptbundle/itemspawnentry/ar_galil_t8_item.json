@@ -11,7 +11,7 @@
     "attachslotstock": 1,
     "var_65b3a12": 6,
     "name": "ar_galil_t8_item",
-    "icon": "#hash_1041ef6195cd904a",
+    "icon": "#ui_icon_weapon_ar_galil",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Common",
@@ -19,7 +19,7 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,
-    "pickupicon": "#hash_79577163a2a64ce0",
+    "pickupicon": "#ui_icon_weapon_hud_ar_galil",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

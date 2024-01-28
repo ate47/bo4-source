@@ -13,7 +13,7 @@
     "var_48907470": 1.5,
     "var_65b3a12": 6,
     "name": "sniper_fastrechamber_t8_wallbuy_item",
-    "icon": "#hash_5cd8c984b1aa8849",
+    "icon": "#ui_icon_weapon_sniper_fastrechamber_wz_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Common",

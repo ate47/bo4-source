@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1b64a448e3b76f70",
+                            "anim": "#p8_fxanim_zm_man_pap_quest_statue_garden_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -14,7 +14,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_5825bf5bc4eab5e9",
+                            "anim": "#p8_fxanim_zm_man_pap_quest_statue_garden_idle_anim",
                             "var_71bac06": "anim"
                         }
                     ],

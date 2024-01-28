@@ -5,14 +5,14 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_6c79224cd432a33a",
+                            "anim": "#p7_fxanim_gp_wire_sparking_med_thick_s1_anim",
                             "var_71bac06": "anim"
                         }
                     ],
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_5ce423f362b5b0e",
+            "model": "#p7_fxanim_gp_wire_sparking_med_thick_mod",
             "type": "prop",
             "name": "prop 1"
         }

@@ -9,7 +9,7 @@
     "var_6731866b": 60,
     "name": "ammo_type_50cal_item",
     "displayname": "#hash_2f3db08411548b58",
-    "icon": "#hash_5f685172992263d3",
+    "icon": "#ui_icon_inventory_p8_wz_ammo_pickup_50",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_9ed0c30684ca35a",

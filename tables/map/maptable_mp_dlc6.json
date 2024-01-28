@@ -9,7 +9,7 @@
             "missionName": "mp_maldives",
             "mapName": "#mpui/maldives",
             "rootMapName": "#",
-            "mapDescription": "#hash_152830b8e61fe46",
+            "mapDescription": "#mpui/desc_maldives",
             "loadingmovie": "mp_maldives_loadingmovie",
             "size": 1
         },
@@ -20,7 +20,7 @@
             "missionName": "mp_cosmodrome",
             "mapName": "#mpui/cosmodrome",
             "rootMapName": "#",
-            "mapDescription": "#hash_239683306b2ae447",
+            "mapDescription": "#mpui/desc_cosmodrome",
             "loadingmovie": "mp_cosmodrome_loadingmovie",
             "size": 1
         }

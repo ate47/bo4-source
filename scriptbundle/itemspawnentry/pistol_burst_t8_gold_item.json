@@ -28,7 +28,7 @@
     "var_65b3a12": 6,
     "var_340eac1f": 1,
     "name": "pistol_burst_t8_gold_item",
-    "icon": "#hash_162f9dbe53561dc5",
+    "icon": "#ui_icon_weapon_pistol_burst",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Epic",

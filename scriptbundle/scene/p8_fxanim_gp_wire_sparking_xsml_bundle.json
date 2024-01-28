@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_94ca6baf0c6f975",
+                            "anim": "#p7_fxanim_gp_wire_sparking_xsml_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -14,7 +14,7 @@
                     "name": "play"
                 }
             ],
-            "model": "#hash_51e88f736bb819d4",
+            "model": "#p7_fxanim_gp_wire_sparking_xsml_mod",
             "type": "prop",
             "name": "wire_sparking_xmsl_mod"
         }

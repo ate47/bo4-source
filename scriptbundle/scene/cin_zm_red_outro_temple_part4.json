@@ -1704,7 +1704,7 @@
                     "name": "sh580"
                 }
             ],
-            "model": "#hash_775819b196f249b3",
+            "model": "#p8_mov_zm_red_torch_hand_01",
             "type": "prop",
             "name": "prop 13"
         },
@@ -2841,7 +2841,7 @@
                     "name": "sh580"
                 }
             ],
-            "model": "#hash_cddbf8437b140b4",
+            "model": "#p8_zm_red_oracle_chair",
             "type": "prop",
             "name": "prop 22"
         },

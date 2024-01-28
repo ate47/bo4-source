@@ -6,11 +6,11 @@
     "var_e6ac0592": 90,
     "name": "hatchet_wz_item",
     "stackcount": 1,
-    "icon": "#hash_4faed1551f1f43e2",
+    "icon": "#ui_icon_inventory_hatchet",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
-    "pickupicon": "#hash_4faed1551f1f43e2",
+    "pickupicon": "#ui_icon_inventory_hatchet",
     "var_50773731": 0.75,
     "itemtype": "equipment"
 }

@@ -18,12 +18,12 @@
     "unlockableitemref": "#wz_character_spectre",
     "name": "cu34_item",
     "displayname": "#hash_7dbf9926c8866a51",
-    "icon": "#hash_209ca57898486b5e",
+    "icon": "#ui_icon_inventory_respirator",
     "modelscale": 1,
     "rarity": "None",
     "var_a51bc1f7": "#hash_61c7b2c6472fafc6",
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#hash_8b67b8f9d9a7f0e",
-    "pickupicon": "#hash_209ca57898486b5e",
+    "pickupicon": "#ui_icon_inventory_respirator",
     "itemtype": "quest"
 }

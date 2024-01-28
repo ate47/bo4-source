@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_5c485bf4d4e28cb",
+                            "anim": "#p8_fxanim_zm_esc_power_panel_bldg64_04_off_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -18,7 +18,7 @@
                             "var_71bac06": "anim"
                         },
                         {
-                            "anim": "#hash_263a8e9d84ce2b1f",
+                            "anim": "#p8_fxanim_zm_esc_power_panel_bldg64_04_on_anim",
                             "var_71bac06": "anim"
                         }
                     ],

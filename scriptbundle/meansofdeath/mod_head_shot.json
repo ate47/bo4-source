@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_head_shot",
     "displayname": "#hash_874506d3bfcc38c",
-    "icon": "#hash_7408ecfc3ddc1a4",
-    "iconlarge": "#hash_76d9823fd26fb435"
+    "icon": "#ui_icon_meansofdeath_headshot",
+    "iconlarge": "#ui_icon_meansofdeath_headshot_xl"
 }

@@ -128,7 +128,7 @@ function function_2b03f05f() {
         if (s_result.weapon === getweapon(#"hash_3de0926b89369160") || s_result.weapon === getweapon(#"hash_127bb24f68b5df27")) {
             a_grenades = getentarray("grenade", "classname");
             foreach (e_grenade in a_grenades) {
-                if (isdefined(e_grenade.model) && e_grenade.model == #"hash_10dbd9a627d91abe") {
+                if (isdefined(e_grenade.model) && e_grenade.model == #"wpn_t8_zm_blundergat_acid_projectile") {
                     if (e_grenade islinkedto(self)) {
                         e_grenade thread function_971df325(self);
                     }
@@ -184,7 +184,7 @@ function function_efefda46(willbekilled, einflictor, eattacker, idamage, flags, 
             a_grenades = getentarray("grenade", "classname");
             self.var_c541eedd = 1;
             foreach (e_grenade in a_grenades) {
-                if (isdefined(e_grenade) && isdefined(e_grenade.model) && e_grenade.model == #"hash_10dbd9a627d91abe") {
+                if (isdefined(e_grenade) && isdefined(e_grenade.model) && e_grenade.model == #"wpn_t8_zm_blundergat_acid_projectile") {
                     if (e_grenade islinkedto(self)) {
                         while (isdefined(e_grenade)) {
                             if (!isdefined(e_grenade.n_fuse_time)) {
@@ -362,7 +362,7 @@ function function_49cfb951(n_fuse_timer = randomfloatrange(1, 1.5), is_not_upgra
     s_result = self waittill(#"death");
     a_grenades = getentarray("grenade", "classname");
     foreach (e_grenade in a_grenades) {
-        if (isdefined(e_grenade.model) && !(isdefined(e_grenade.var_66570d1b) && e_grenade.var_66570d1b) && e_grenade.model == #"hash_10dbd9a627d91abe") {
+        if (isdefined(e_grenade.model) && !(isdefined(e_grenade.var_66570d1b) && e_grenade.var_66570d1b) && e_grenade.model == #"wpn_t8_zm_blundergat_acid_projectile") {
             e_grenade clientfield::set("blundergat_dart_blink", 1);
             e_grenade.var_66570d1b = 1;
             e_grenade.n_fuse_time = n_fuse_timer;

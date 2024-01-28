@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_unknown",
     "displayname": "#hash_7cceb74accb55241",
-    "icon": "#hash_12337283d1d8a6e8",
-    "iconlarge": "#hash_75bde65b6b164f81"
+    "icon": "#ui_icon_meansofdeath_unknown",
+    "iconlarge": "#ui_icon_meansofdeath_unknown_xl"
 }

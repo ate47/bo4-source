@@ -1,8 +1,8 @@
 {
     "objects": [
         {
-            "mainanim": "#hash_5bf9d2a3a8123308",
-            "model": "#hash_43455cc80ca73754",
+            "mainanim": "#ai_cmpn_time_out_death",
+            "model": "#c_zom_zod_robot_protector_fb",
             "type": "actor",
             "vmtype": "server",
             "name": "companion_spawner",

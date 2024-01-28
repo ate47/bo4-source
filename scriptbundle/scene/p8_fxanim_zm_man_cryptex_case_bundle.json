@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_58819f3b8687e369",
+                            "anim": "#p8_fxanim_zm_man_cryptex_case_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -13,7 +13,7 @@
                 }
             ],
             "firstframe": 1,
-            "model": "#hash_3915159f1a1545f8",
+            "model": "#p8_fxanim_zm_man_cryptex_case_mod",
             "type": "prop",
             "name": "prop 1"
         }

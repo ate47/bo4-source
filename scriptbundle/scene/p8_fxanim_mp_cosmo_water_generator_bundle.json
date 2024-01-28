@@ -5,14 +5,14 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_2819f057447f9cd3",
+                            "anim": "#p8_fxanim_mp_cosmo_water_generator_anim",
                             "var_71bac06": "anim"
                         }
                     ],
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_2df912560d10cdee",
+            "model": "#p8_fxanim_mp_cosmo_water_generator_mod",
             "type": "prop",
             "name": "prop 1"
         }

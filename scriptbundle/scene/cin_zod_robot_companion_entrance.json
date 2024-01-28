@@ -1,8 +1,8 @@
 {
     "objects": [
         {
-            "mainanim": "#hash_433a023b1e1ed1",
-            "model": "#hash_43455cc80ca73754",
+            "mainanim": "#ai_robot_cmpn_spawn_drop",
+            "model": "#c_zom_zod_robot_protector_fb",
             "type": "actor",
             "vmtype": "server",
             "name": "companion_spawner",

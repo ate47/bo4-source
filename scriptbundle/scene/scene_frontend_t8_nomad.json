@@ -169,7 +169,7 @@
                     "name": "play4"
                 }
             ],
-            "model": "#hash_f67fbaef53fc5a8",
+            "model": "#wpn_t8_smg_mp9_prop_animate",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 2"

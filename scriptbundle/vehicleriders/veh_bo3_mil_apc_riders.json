@@ -1,32 +1,32 @@
 {
     "objects": [
         {
-            "exitgroundanim": "#hash_7ee300e61046bc42",
+            "exitgroundanim": "#bo3_ai_crew_cougar_driver_exit",
             "aligntag": "tag_driver",
-            "rideanim": "#hash_477a418155485b1c",
+            "rideanim": "#bo3_ai_crew_cougar_driver_idle",
             "position": "driver"
         },
         {
-            "exitgroundanim": "#hash_761827c3c462c512",
+            "exitgroundanim": "#bo3_ai_crew_cougar_passenger_exit",
             "aligntag": "tag_passenger",
-            "rideanim": "#hash_2980285e6c64c4ec",
+            "rideanim": "#bo3_ai_crew_cougar_passenger_idle",
             "position": "passenger1"
         },
         {
-            "exitgroundanim": "#hash_320f96ce99610b87",
+            "exitgroundanim": "#bo3_ai_crew_cougar_guy0_exit",
             "aligntag": "tag_passenger",
-            "rideanim": "#hash_30adae337d3f5f75",
+            "rideanim": "#bo3_ai_crew_cougar_guy0_idle",
             "position": "crew1"
         },
         {
-            "exitgroundanim": "#hash_6c9e26c399ed9c66",
+            "exitgroundanim": "#bo3_ai_crew_cougar_guy1_exit",
             "aligntag": "tag_passenger",
-            "rideanim": "#hash_4f392fa07d3b1648",
+            "rideanim": "#bo3_ai_crew_cougar_guy1_idle",
             "position": "crew2"
         }
     ],
     "var_922067c4": "scriptbundle",
-    "model": "#hash_4237e5a7091bed74",
+    "model": "#veh_t7_mil_apc",
     "type": "vehicleriders",
     "vmtype": "both",
     "dropspeed": 250,

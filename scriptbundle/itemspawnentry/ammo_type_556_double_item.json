@@ -9,7 +9,7 @@
     "var_6731866b": 90,
     "name": "ammo_type_556_double_item",
     "displayname": "#hash_5704bb4aa4b8696b",
-    "icon": "#hash_40b058ba35782a6e",
+    "icon": "#ui_icon_inventory_p8_wz_ammo_pickup_556",
     "modelscale": 0.6,
     "rarity": "None",
     "handler": "#hash_9ed0c30684ca35a",

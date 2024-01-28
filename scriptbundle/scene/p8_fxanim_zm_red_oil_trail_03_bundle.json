@@ -5,14 +5,14 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_1c77dc044bd04f5b",
+                            "anim": "#p8_fxanim_zm_red_oil_trail_03_anim",
                             "var_71bac06": "anim"
                         }
                     ],
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_47c9c1895a5406b6",
+            "model": "#p8_fxanim_zm_red_oil_trail_03_mod",
             "type": "prop",
             "name": "prop 1"
         }

@@ -12,7 +12,7 @@
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_2fbc31b782c52b97",
+            "model": "#c_t8_zmb_dlc2_perseus_fb1",
             "type": "prop",
             "name": "boss_1",
             "var_2baad8fc": 1,
@@ -30,7 +30,7 @@
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_1cd365685eb76aec",
+            "model": "#c_t8_zmb_dlc2_perseus_shield1",
             "type": "prop",
             "name": "p_shield"
         },
@@ -46,7 +46,7 @@
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_39b17285015a6944",
+            "model": "#c_t8_zmb_dlc2_perseus_sword1",
             "type": "prop",
             "name": "p_sword"
         }

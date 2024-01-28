@@ -6,7 +6,7 @@
     "type": "itemspawnentry",
     "name": "cymbal_monkey_wz_item",
     "stackcount": 5,
-    "icon": "#hash_f9d60bd1e11a5ef",
+    "icon": "#ui_icon_inventory_cymbal_monkey",
     "modelscale": 0.7,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",

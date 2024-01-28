@@ -9,7 +9,7 @@
             "missionName": "mp_austria",
             "mapName": "#mpui/austria",
             "rootMapName": "#",
-            "mapDescription": "#hash_5c02d923cacf6be6",
+            "mapDescription": "#mpui/desc_austria",
             "loadingmovie": "mp_austria_loadingmovie",
             "size": 1
         },
@@ -20,7 +20,7 @@
             "missionName": "mp_zombie_museum",
             "mapName": "#hash_503c83486d6c1ae6",
             "rootMapName": "#",
-            "mapDescription": "#hash_4f7576fa9ec86596",
+            "mapDescription": "#mpui/desc_zombie_museum",
             "loadingmovie": "mp_zombie_museum_loadingmovie",
             "size": 1
         },
@@ -31,7 +31,7 @@
             "missionName": "mp_cairo",
             "mapName": "#mpui/cairo",
             "rootMapName": "#",
-            "mapDescription": "#hash_1b1ec3ceb321163d",
+            "mapDescription": "#mpui/desc_cairo",
             "loadingmovie": "mp_cairo_loadingmovie",
             "size": 1
         }

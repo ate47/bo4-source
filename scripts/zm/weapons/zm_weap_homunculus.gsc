@@ -138,7 +138,7 @@ function function_dcaa7a4a(e_grenade, var_bbab4f84, var_c4a5788c, var_2f916462) 
     if (e_grenade.weapon == getweapon(#"homunculus_leprechaun")) {
         var_9ddf478 = #"hash_5e7f95fc402bc5f8";
     } else {
-        var_9ddf478 = #"hash_75389eead5e19eb7";
+        var_9ddf478 = #"c_t8_zmb_homunculus_fb1";
     }
     e_grenade ghost();
     e_grenade.angles = self.angles;

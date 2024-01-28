@@ -6,11 +6,11 @@
     "type": "itemspawnentry",
     "name": "homunculus_wz_item",
     "stackcount": 5,
-    "icon": "#hash_51b2837ae4b7bafe",
+    "icon": "#ui_icon_inventory_homunculus",
     "modelscale": 0.7,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
-    "pickupicon": "#hash_51b2837ae4b7bafe",
+    "pickupicon": "#ui_icon_inventory_homunculus",
     "stackable": 1,
     "var_50773731": 6,
     "itemtype": "equipment"

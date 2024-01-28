@@ -5753,7 +5753,7 @@
                     "name": "sh385"
                 }
             ],
-            "model": "#hash_169580ab72a3d62a",
+            "model": "#wpn_t8_zm_melee_katana_lvl1_world",
             "type": "prop",
             "var_f9a5853f": 1,
             "name": "prop 5"
@@ -5958,7 +5958,7 @@
                     "name": "sh385"
                 }
             ],
-            "model": "#hash_e9e97ef175c27a1",
+            "model": "#wpn_t8_shotgun_pump_prop_animate",
             "type": "prop",
             "var_f9a5853f": 1,
             "name": "prop 6"
@@ -11428,7 +11428,7 @@
                     "name": "sh385"
                 }
             ],
-            "model": "#hash_7a3ec087bfaf53c3",
+            "model": "#p8_zm_esc_blood_vials_dmg_top",
             "type": "prop",
             "var_f9a5853f": 1,
             "name": "prop 31"
@@ -11597,7 +11597,7 @@
                     "name": "sh385"
                 }
             ],
-            "model": "#hash_7a3ec087bfaf53c3",
+            "model": "#p8_zm_esc_blood_vials_dmg_top",
             "type": "prop",
             "var_f9a5853f": 1,
             "name": "prop 32"
@@ -11766,7 +11766,7 @@
                     "name": "sh385"
                 }
             ],
-            "model": "#hash_5ed1fd8767ca7f89",
+            "model": "#p8_zm_esc_blood_vials_dmg_btm",
             "type": "prop",
             "var_f9a5853f": 1,
             "name": "prop 33"
@@ -11935,7 +11935,7 @@
                     "name": "sh385"
                 }
             ],
-            "model": "#hash_5ed1fd8767ca7f89",
+            "model": "#p8_zm_esc_blood_vials_dmg_btm",
             "type": "prop",
             "var_f9a5853f": 1,
             "name": "prop 36"

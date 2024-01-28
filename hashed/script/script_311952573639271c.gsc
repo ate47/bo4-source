@@ -2631,7 +2631,7 @@ function function_281b6803(zbarrier_magicbox) {
     case #"hero_sword_pistol_lv2":
     case #"hero_sword_pistol_lv3":
     case #"hero_sword_pistol_lv1":
-        if (self.model === #"wpn_t8_zm_melee_dw_hand_cannon_lvl1_world" || self.model === #"hash_d22c09c0aec2fc6" || self.model === #"wpn_t8_zm_melee_dw_hand_cannon_lvl3_world") {
+        if (self.model === #"wpn_t8_zm_melee_dw_hand_cannon_lvl1_world" || self.model === #"wpn_t8_zm_melee_dw_hand_cannon_lvl2_world" || self.model === #"wpn_t8_zm_melee_dw_hand_cannon_lvl3_world") {
             self.origin = self.origin + vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 10;
             self.origin = self.origin + vectornormalize(anglestoup(zbarrier_magicbox.angles)) * 4;
         } else {

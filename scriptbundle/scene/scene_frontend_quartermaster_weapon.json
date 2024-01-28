@@ -30,7 +30,7 @@
                 }
             ],
             "disabled": 1,
-            "model": "#hash_4a7568851a0264b8",
+            "model": "#wpn_t8_ar_accurate_prop_animate",
             "type": "prop",
             "vmtype": "client",
             "name": "quartermaster_weapon",

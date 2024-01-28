@@ -18,9 +18,9 @@
             "name": "mp_geothermal",
             "hashname": "#mp_geothermal",
             "missionName": "mp_geothermal",
-            "mapName": "#hash_596a88b63b286cd7",
+            "mapName": "#mpui/geothermal",
             "rootMapName": "#",
-            "mapDescription": "#hash_395d896ea5e8f187",
+            "mapDescription": "#mpui/desc_geothermal",
             "loadingmovie": "mp_geothermal_loadingmovie",
             "size": 1
         },
@@ -29,9 +29,9 @@
             "name": "mp_russianbase",
             "hashname": "#mp_russianbase",
             "missionName": "mp_russianbase",
-            "mapName": "#hash_79ada5df28de70d1",
+            "mapName": "#mpui/russianbase",
             "rootMapName": "#",
-            "mapDescription": "#hash_1909ea40355265c1",
+            "mapDescription": "#mpui/desc_russianbase",
             "loadingmovie": "mp_russianbase_loadingmovie",
             "size": 1
         }

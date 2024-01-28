@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_crush",
     "displayname": "#hash_407564ab1150d1dc",
-    "icon": "#hash_6b35b2ef0ad94dc0",
-    "iconlarge": "#hash_350fcabb61166219"
+    "icon": "#ui_icon_meansofdeath_crushed",
+    "iconlarge": "#ui_icon_meansofdeath_crushed_xl"
 }

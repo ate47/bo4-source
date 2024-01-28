@@ -33,7 +33,7 @@
     "var_7adcadc1": 180,
     "name": "cu20_item",
     "displayname": "#hash_2e849d595fc7e02b",
-    "icon": "#hash_4873e7ccc8f6a233",
+    "icon": "#ui_icon_inventory_necklace",
     "modelscale": 2,
     "rarity": "None",
     "handler": "#hash_5c844f5c1207159c",

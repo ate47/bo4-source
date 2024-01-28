@@ -89,27 +89,27 @@
         {
             "numneeded": 2,
             "var_3e63e7e4": "#hash_5b0cf8d1c923df11",
-            "challengeimage": "#hash_df1ac892a896faf"
+            "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 4,
             "var_3e63e7e4": "#hash_5b0cf5d1c923d9f8",
-            "challengeimage": "#hash_df1ac892a896faf"
+            "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 6,
             "var_3e63e7e4": "#hash_5b0cf6d1c923dbab",
-            "challengeimage": "#hash_df1ac892a896faf"
+            "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 8,
             "var_3e63e7e4": "#hash_5b0cfbd1c923e42a",
-            "challengeimage": "#hash_df1ac892a896faf"
+            "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 10,
             "var_3e63e7e4": "#hash_5b0cfcd1c923e5dd",
-            "challengeimage": "#hash_df1ac892a896faf"
+            "challengeimage": "#t7_icons_challenges_mp_darkops"
         }
     ],
     "packapunchitems": [

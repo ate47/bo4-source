@@ -7,11 +7,11 @@
     "name": "wraithfire_wz_item",
     "displayname": "#hash_2c62a9364c4c32aa",
     "stackcount": 1,
-    "icon": "#hash_1ceaf0b0360b72b9",
+    "icon": "#ui_icon_inventory_wraith_fire",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
-    "pickupicon": "#hash_1ceaf0b0360b72b9",
+    "pickupicon": "#ui_icon_inventory_wraith_fire",
     "var_50773731": 2.25,
     "itemtype": "equipment"
 }

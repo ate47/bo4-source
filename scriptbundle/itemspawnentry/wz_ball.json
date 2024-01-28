@@ -8,11 +8,11 @@
     "name": "wz_ball",
     "displayname": "#weapon/basketball",
     "var_36781d9f": "wpn_bball_bounce_default",
-    "icon": "#hash_17d967d141ce1094",
+    "icon": "#ui_icon_inventory_p7_fir_ball_sports_basketball",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_50375e5de228e9fc",
-    "pickupicon": "#hash_17d967d141ce1094",
+    "pickupicon": "#ui_icon_inventory_p7_fir_ball_sports_basketball",
     "var_50773731": 5,
     "itemtype": "weapon",
     "pickupsound": "wpn_bball_pickup"

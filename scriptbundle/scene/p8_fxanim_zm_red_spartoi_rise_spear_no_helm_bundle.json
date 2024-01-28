@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_5baa69c76acf3472",
+                            "anim": "#p8_fxanim_zm_red_spartoi_rise_spear_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -13,7 +13,7 @@
                 }
             ],
             "firstframe": 1,
-            "model": "#hash_7cd4ca65e46a4eae",
+            "model": "#p8_fxanim_zm_red_spartoi_rise_spear_no_helm_mod",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 1"

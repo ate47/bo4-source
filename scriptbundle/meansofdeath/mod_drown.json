@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_drown",
     "displayname": "#hash_eeae2d9c47dfe8d",
-    "icon": "#hash_75350f2e2180f2c9",
-    "iconlarge": "#hash_23469e338e5d1ca6"
+    "icon": "#ui_icon_meansofdeath_drowned",
+    "iconlarge": "#ui_icon_meansofdeath_drowned_xl"
 }

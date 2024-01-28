@@ -9,7 +9,7 @@
             "missionName": "mp_urban",
             "mapName": "#mpui/urban",
             "rootMapName": "#",
-            "mapDescription": "#hash_f87c9f1d0b7d805",
+            "mapDescription": "#mpui/desc_urban",
             "loadingmovie": "mp_urban_loadingmovie",
             "size": 1
         },
@@ -20,7 +20,7 @@
             "missionName": "mp_offshore",
             "mapName": "#mpui/offshore",
             "rootMapName": "#",
-            "mapDescription": "#hash_1d73b6ecc18e4c39",
+            "mapDescription": "#mpui/desc_offshore",
             "loadingmovie": "mp_offshore_loadingmovie",
             "size": 1
         },
@@ -31,7 +31,7 @@
             "missionName": "mp_firingrange2",
             "mapName": "#mpui/firingrange2",
             "rootMapName": "#",
-            "mapDescription": "#hash_682eee5cc31b6039",
+            "mapDescription": "#mpui/desc_firingrange2",
             "loadingmovie": "mp_firingrange2_loadingmovie",
             "size": 1
         },
@@ -42,7 +42,7 @@
             "missionName": "mp_frenetic",
             "mapName": "#mpui/frenetic",
             "rootMapName": "#",
-            "mapDescription": "#hash_7abbaf23aa0fbe9d",
+            "mapDescription": "#mpui/desc_frenetic",
             "loadingmovie": "mp_frenetic_loadingmovie",
             "size": 1
         },
@@ -53,7 +53,7 @@
             "missionName": "mp_gridlock",
             "mapName": "#mpui/gridlock",
             "rootMapName": "#",
-            "mapDescription": "#hash_3846f7e59ac8571c",
+            "mapDescription": "#mpui/desc_gridlock",
             "loadingmovie": "mp_gridlock_loadingmovie",
             "size": 1
         },
@@ -64,7 +64,7 @@
             "missionName": "mp_hacienda",
             "mapName": "#mpui/hacienda",
             "rootMapName": "#",
-            "mapDescription": "#hash_6eaedc443101c5a0",
+            "mapDescription": "#mpui/desc_hacienda",
             "loadingmovie": "mp_hacienda_loadingmovie",
             "size": 1
         },
@@ -73,9 +73,9 @@
             "name": "mp_icebreaker",
             "hashname": "#mp_icebreaker",
             "missionName": "mp_icebreaker",
-            "mapName": "#hash_463b2971c43088d2",
+            "mapName": "#mpui/icebreaker",
             "rootMapName": "#",
-            "mapDescription": "#hash_2e55e7489fbc10c2",
+            "mapDescription": "#mpui/desc_icebreaker",
             "loadingmovie": "mp_icebreaker_loadingmovie",
             "size": 1
         },
@@ -86,7 +86,7 @@
             "missionName": "mp_jungle2",
             "mapName": "#mpui/jungle2",
             "rootMapName": "#",
-            "mapDescription": "#hash_29f5ff0a6d8751e8",
+            "mapDescription": "#mpui/desc_jungle2",
             "loadingmovie": "mp_jungle2_loadingmovie",
             "size": 1
         },
@@ -97,7 +97,7 @@
             "missionName": "mp_militia",
             "mapName": "#mpui/militia",
             "rootMapName": "#",
-            "mapDescription": "#hash_7e7a6eb31c61baec",
+            "mapDescription": "#mpui/desc_militia",
             "loadingmovie": "mp_militia_loadingmovie",
             "size": 1
         },
@@ -108,7 +108,7 @@
             "missionName": "mp_morocco",
             "mapName": "#mpui/morocco",
             "rootMapName": "#",
-            "mapDescription": "#hash_5308420bb3cebc8f",
+            "mapDescription": "#mpui/desc_morocco",
             "loadingmovie": "mp_morocco_loadingmovie",
             "size": 1
         },
@@ -119,7 +119,7 @@
             "missionName": "mp_silo",
             "mapName": "#mpui/silo",
             "rootMapName": "#",
-            "mapDescription": "#hash_226e5c37bf1ae6a",
+            "mapDescription": "#mpui/desc_silo",
             "loadingmovie": "mp_silo_loadingmovie",
             "size": 1
         },
@@ -130,7 +130,7 @@
             "missionName": "mp_seaside",
             "mapName": "#mpui/seaside",
             "rootMapName": "#",
-            "mapDescription": "#hash_19a56a5eb2c35db5",
+            "mapDescription": "#mpui/desc_seaside",
             "loadingmovie": "mp_seaside_loadingmovie",
             "size": 1
         },
@@ -141,7 +141,7 @@
             "missionName": "mp_slums2",
             "mapName": "#mpui/slums2",
             "rootMapName": "#",
-            "mapDescription": "#hash_570f2cc698849d4f",
+            "mapDescription": "#mpui/desc_slums2",
             "loadingmovie": "mp_slums2_loadingmovie",
             "size": 1
         },
@@ -152,7 +152,7 @@
             "missionName": "mp_mountain2",
             "mapName": "#mpui/mountain2",
             "rootMapName": "#",
-            "mapDescription": "#hash_1330946a7435c87e",
+            "mapDescription": "#mpui/desc_mountain2",
             "loadingmovie": "mp_mountain2_loadingmovie",
             "size": 1
         },
@@ -163,7 +163,7 @@
             "missionName": "mp_nuketown_4",
             "mapName": "#hash_26d9318e1b5b0929",
             "rootMapName": "#",
-            "mapDescription": "#hash_5f6fc18ea358b839",
+            "mapDescription": "#mpui/desc_nuketown_4",
             "loadingmovie": "mp_nuketown_4_loadingmovie",
             "size": 1
         },
@@ -174,7 +174,7 @@
             "missionName": "mp_firingrange2_alt",
             "mapName": "#hash_59b6aa82c41372a1",
             "rootMapName": "#mpui/firingrange2",
-            "mapDescription": "#hash_682eee5cc31b6039",
+            "mapDescription": "#mpui/desc_firingrange2",
             "loadingmovie": "mp_firingrange2_alt_loadingmovie",
             "size": 1
         },
@@ -183,9 +183,9 @@
             "name": "mp_seaside_alt",
             "hashname": "#mp_seaside_alt",
             "missionName": "mp_seaside_alt",
-            "mapName": "#hash_37f1df39d61340f5",
+            "mapName": "#mpui/seaside_alt",
             "rootMapName": "#",
-            "mapDescription": "#hash_19a56a5eb2c35db5",
+            "mapDescription": "#mpui/desc_seaside",
             "loadingmovie": "mp_seaside_alt_loadingmovie",
             "size": 1
         },
@@ -196,7 +196,7 @@
             "missionName": "mp_offshore_alt",
             "mapName": "#hash_5b2ef6261cd02cc1",
             "rootMapName": "#mpui/offshore",
-            "mapDescription": "#hash_1d73b6ecc18e4c39",
+            "mapDescription": "#mpui/desc_offshore",
             "loadingmovie": "mp_offshore_alt_loadingmovie",
             "size": 1
         },
@@ -217,7 +217,7 @@
             "missionName": "mp_grind",
             "mapName": "#mpui/grind",
             "rootMapName": "#",
-            "mapDescription": "#hash_71145a89daaac90f",
+            "mapDescription": "#mpui/desc_grind",
             "loadingmovie": "mp_grind_loadingmovie",
             "size": 1
         },
@@ -226,9 +226,9 @@
             "name": "mp_hacienda_alt",
             "hashname": "#mp_hacienda_alt",
             "missionName": "mp_hacienda_alt",
-            "mapName": "#hash_25e1a08d09936334",
+            "mapName": "#mpui/hacienda_alt",
             "rootMapName": "#",
-            "mapDescription": "#hash_6eaedc443101c5a0",
+            "mapDescription": "#mpui/desc_hacienda",
             "loadingmovie": "mp_hacienda_alt_loadingmovie",
             "size": 1
         },
@@ -237,9 +237,9 @@
             "name": "mp_jungle2_alt",
             "hashname": "#mp_jungle2_alt",
             "missionName": "mp_jungle2_alt",
-            "mapName": "#hash_258192c7b86f77c",
+            "mapName": "#mpui/jungle2_alt",
             "rootMapName": "#",
-            "mapDescription": "#hash_29f5ff0a6d8751e8",
+            "mapDescription": "#mpui/desc_jungle2",
             "loadingmovie": "mp_jungle2_alt_loadingmovie",
             "size": 1
         },

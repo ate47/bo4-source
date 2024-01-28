@@ -1,7 +1,7 @@
 {
     "var_c7bd8867": "#hash_2703f9fb7e481f6d",
-    "popupimage": "#hash_6416d287556e818f",
-    "var_5162d01b": "#hash_6416d287556e818f",
+    "popupimage": "#ui_icon_weapon_shotgun_prec_render",
+    "var_5162d01b": "#ui_icon_weapon_shotgun_prec_render",
     "nametext": "#weapon/shotgun_precision_t8",
     "categorytext": "#mpui/bm_bribe",
     "name": "shotgun_precision_t8_bribe_free",

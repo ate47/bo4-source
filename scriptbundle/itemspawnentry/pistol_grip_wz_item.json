@@ -13,11 +13,11 @@
     "var_65b3a12": 1,
     "name": "pistol_grip_wz_item",
     "displayname": "#hash_11ed4198ea5c24eb",
-    "icon": "#hash_4348110f15bef28",
+    "icon": "#ui_icon_attachment_pistol_grip",
     "modelscale": 1.5,
     "rarity": "Common",
     "equipsound": "uin_wz_attach_grip",
     "handler": "#hash_788c59214ead02af",
-    "pickupicon": "#hash_4348110f15bef28",
+    "pickupicon": "#ui_icon_attachment_pistol_grip",
     "itemtype": "attachment"
 }

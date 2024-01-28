@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_trigger_hurt",
     "displayname": "#hash_2b01f6e0ab206ffd",
-    "icon": "#hash_7ebe671cdcd12c02",
-    "iconlarge": "#hash_45495bcf87021893"
+    "icon": "#ui_icon_meansofdeath_suicide",
+    "iconlarge": "#ui_icon_meansofdeath_suicide_xl"
 }

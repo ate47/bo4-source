@@ -15,7 +15,7 @@
     "name": "perk_item_doublejump",
     "displayname": "#hash_2149088a4b93efa2",
     "stackcount": 1,
-    "icon": "#hash_1fc87c6895b8b085",
+    "icon": "#ui_icon_inventory_lightweight",
     "casttime": 2,
     "modelscale": 1,
     "rarity": "None",

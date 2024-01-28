@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_impact",
     "displayname": "#hash_394a326a7d3d139f",
-    "icon": "#hash_4f110c5a7ca23860",
-    "iconlarge": "#hash_563c905bf22f11f9"
+    "icon": "#ui_icon_meansofdeath_impact",
+    "iconlarge": "#ui_icon_meansofdeath_impact_xl"
 }

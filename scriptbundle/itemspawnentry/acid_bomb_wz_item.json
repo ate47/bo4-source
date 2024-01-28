@@ -7,11 +7,11 @@
     "name": "acid_bomb_wz_item",
     "displayname": "#weapon/acid_bomb",
     "stackcount": 1,
-    "icon": "#hash_2296c829d618d76b",
+    "icon": "#ui_icon_inventory_acid_bomb",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
-    "pickupicon": "#hash_2296c829d618d76b",
+    "pickupicon": "#ui_icon_inventory_acid_bomb",
     "var_50773731": 1.75,
     "itemtype": "equipment"
 }

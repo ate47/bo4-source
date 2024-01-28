@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_63b4cd35d1395ee0",
+                            "anim": "#ai_zombie_dreamcatch_impact",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -14,7 +14,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_3d37fb37e7aa965f",
+                            "anim": "#ai_zombie_dreamcatch_rise",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -24,7 +24,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_5cf0148153f802a7",
+                            "anim": "#ai_zombie_dreamcatch_shrink_a",
                             "var_71bac06": "anim"
                         }
                     ],

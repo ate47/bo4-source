@@ -1346,7 +1346,7 @@ function function_deed1dbf(localclientnum) {
 // Checksum 0x6facfb70, Offset: 0x7ba0
 // Size: 0x74
 function function_becded4f(localclientnum) {
-    level.var_44011752 = util::spawn_model(localclientnum, #"hash_4a7568851a0264b8", (0, 0, 0), (0, 0, 0));
+    level.var_44011752 = util::spawn_model(localclientnum, #"wpn_t8_ar_accurate_prop_animate", (0, 0, 0), (0, 0, 0));
     level.var_44011752.targetname = "customized_inspection_weapon";
     level.var_44011752 hide();
 }
@@ -1356,7 +1356,7 @@ function function_becded4f(localclientnum) {
 // Checksum 0xffc7b745, Offset: 0x7c20
 // Size: 0x92
 function function_a588eb2e(localclientnum) {
-    var_e6977977 = util::spawn_model(localclientnum, #"hash_4a7568851a0264b8", (0, 0, 0), (0, 0, 0));
+    var_e6977977 = util::spawn_model(localclientnum, #"wpn_t8_ar_accurate_prop_animate", (0, 0, 0), (0, 0, 0));
     var_e6977977.targetname = "quartermaster_weapon";
     var_e6977977 hide();
     var_e6977977 sethighdetail(1, 1);

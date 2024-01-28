@@ -15,7 +15,7 @@
     "name": "perk_item_awareness",
     "displayname": "#hash_5e6231434add15a2",
     "stackcount": 1,
-    "icon": "#hash_7d8b1d4d5a0b5ca8",
+    "icon": "#ui_icon_inventory_awareness",
     "casttime": 2,
     "modelscale": 1,
     "rarity": "None",

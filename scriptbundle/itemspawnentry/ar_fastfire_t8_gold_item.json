@@ -28,8 +28,8 @@
     "var_65b3a12": 6,
     "var_340eac1f": 1,
     "name": "ar_fastfire_t8_gold_item",
-    "var_9507cf45": "#hash_4d7650506595d4c9",
-    "icon": "#hash_4bec85ce92b022d2",
+    "var_9507cf45": "#ui_icon_weapon_hud_ar_fastfire_tactical_wz",
+    "icon": "#ui_icon_weapon_ar_fastfire_tactical_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Epic",
@@ -37,7 +37,7 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,
-    "pickupicon": "#hash_74a4eb0c166c8015",
+    "pickupicon": "#ui_icon_weapon_hud_ar_fastfire",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

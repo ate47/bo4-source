@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_26b62948c69ab56",
+                            "anim": "#p8_fxanim_zm_man_chandelier_fall_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -13,7 +13,7 @@
                 }
             ],
             "firstframe": 1,
-            "model": "#hash_5ddf33fd2aa3485d",
+            "model": "#p8_fxanim_zm_man_chandelier_fall_mod",
             "type": "prop",
             "name": "prop 1"
         }

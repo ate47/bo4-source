@@ -31,7 +31,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | playlists               | 119 | `/tables/playlists/`                |
 | storagefile             | 128 | `/tables/storagefile/`              |
 | storagefilelist         | 129 | `/tables/storagefile/list/`         |
-| <unused>                | 151 | EMPTY                               |
+| \<unused\>              | 151 | EMPTY                               |
 | rawstring               | 157 | `/strings.csv`                      |
 
 ## Names

@@ -54,7 +54,7 @@
     "rarity": "None",
     "handler": "#hash_50375e5de228e9fc",
     "rewardname": "#hash_3b87d7eb92a261aa",
-    "pickupicon": "#hash_8a42cf71a875e83",
+    "pickupicon": "#ui_icon_weapon_hud_sparrow",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

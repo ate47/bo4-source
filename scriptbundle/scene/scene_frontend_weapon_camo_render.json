@@ -22,7 +22,7 @@
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_1327c325457e448",
+            "model": "#wpn_t8_sniper_koshka_world",
             "type": "prop",
             "name": "render_weapon_model"
         }

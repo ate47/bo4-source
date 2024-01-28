@@ -8,11 +8,11 @@
     "type": "itemspawnentry",
     "var_e6ac0592": 90,
     "name": "flamethrower_wz_item",
-    "icon": "#hash_165568237c28910e",
+    "icon": "#ui_icon_weapon_flamethrower_render",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_50375e5de228e9fc",
-    "pickupicon": "#hash_49ef0e07d42cd14a",
+    "pickupicon": "#ui_icon_weapon_hud_hero_purifier",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

@@ -27,7 +27,7 @@
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_4f9f52f1da2b26b0",
+            "model": "#wpn_t8_sig_battle_shield_buckler_world",
             "type": "prop",
             "name": "prop 1"
         },
@@ -43,7 +43,7 @@
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_39dae6cac5711a8c",
+            "model": "#wpn_t8_sig_battle_shield_gun_world",
             "type": "prop",
             "name": "prop 2"
         }

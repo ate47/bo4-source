@@ -8,7 +8,7 @@
     "hintstring": "#hash_7793b727a6a89304",
     "name": "ammo_type_45_item",
     "displayname": "#hash_7793b727a6a89304",
-    "icon": "#hash_526f93d21a3c7f3b",
+    "icon": "#ui_icon_inventory_p8_wz_ammo_pickup_45acp",
     "modelscale": 1.1,
     "rarity": "None",
     "handler": "#hash_9ed0c30684ca35a",

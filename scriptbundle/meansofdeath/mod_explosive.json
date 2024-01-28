@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_explosive",
     "displayname": "#hash_44e3d47c862ff18c",
-    "icon": "#hash_670329f857b9360",
-    "iconlarge": "#hash_58eb00cda0a8daf9"
+    "icon": "#ui_icon_meansofdeath_explosive_death",
+    "iconlarge": "#ui_icon_meansofdeath_explosive_death_xl"
 }

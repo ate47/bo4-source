@@ -15,7 +15,7 @@
     "name": "perk_item_deadsilence",
     "displayname": "#hash_4c9bf18ebd4aa256",
     "stackcount": 1,
-    "icon": "#hash_618aa698508bc260",
+    "icon": "#ui_icon_inventory_deadsilence",
     "casttime": 2,
     "modelscale": 1,
     "rarity": "None",

@@ -15,7 +15,7 @@
     "name": "perk_item_drifter",
     "displayname": "#hash_189d868d756bb77d",
     "stackcount": 1,
-    "icon": "#hash_207797a48ab2e1fe",
+    "icon": "#ui_icon_inventory_skulker",
     "casttime": 2,
     "modelscale": 1,
     "rarity": "None",

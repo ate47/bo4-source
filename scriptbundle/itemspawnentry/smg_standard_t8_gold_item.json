@@ -29,15 +29,15 @@
     "var_65b3a12": 6,
     "var_340eac1f": 1,
     "name": "smg_standard_t8_gold_item",
-    "var_9507cf45": "#hash_1cbab835ee934f1a",
-    "icon": "#hash_5bfaee06057f6d49",
+    "var_9507cf45": "#ui_icon_weapon_hud_smg_standard_tactical_wz",
+    "icon": "#ui_icon_weapon_smg_standard_tactical_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Epic",
     "attachslotbarrel": 1,
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
-    "pickupicon": "#hash_33c0b695ecf6c36a",
+    "pickupicon": "#ui_icon_weapon_hud_smg_standard",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

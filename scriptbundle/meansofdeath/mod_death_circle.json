@@ -4,6 +4,6 @@
     "type": "meansofdeath",
     "name": "mod_death_circle",
     "displayname": "#hash_1525cc239faaec26",
-    "icon": "#hash_1438912572c4d409",
-    "iconlarge": "#hash_1feaf4cfe66222e6"
+    "icon": "#ui_icon_meansofdeath_death_circle",
+    "iconlarge": "#ui_icon_meansofdeath_death_circle_xl"
 }

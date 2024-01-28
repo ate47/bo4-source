@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_53bd04c2e77aee07",
+                            "anim": "#p8_fxanim_zm_esc_power_panel_phouse_01_off_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -18,7 +18,7 @@
                             "var_71bac06": "anim"
                         },
                         {
-                            "anim": "#hash_14a930b75e602ccb",
+                            "anim": "#p8_fxanim_zm_esc_power_panel_phouse_01_on_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -40,14 +40,14 @@
                             "var_71bac06": "anim"
                         },
                         {
-                            "anim": "#hash_14a930b75e602ccb",
+                            "anim": "#p8_fxanim_zm_esc_power_panel_phouse_01_on_anim",
                             "var_71bac06": "anim"
                         }
                     ],
                     "name": "reset"
                 }
             ],
-            "model": "#hash_5809e8884135ab34",
+            "model": "#p8_fxanim_zm_esc_power_panel_phouse_01_mod",
             "type": "prop",
             "name": "prop 1"
         }

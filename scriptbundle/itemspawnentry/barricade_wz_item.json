@@ -8,11 +8,11 @@
     "name": "barricade_wz_item",
     "displayname": "#hash_3cf5343acd975b86",
     "stackcount": 1,
-    "icon": "#hash_4df25a115b8c3300",
+    "icon": "#ui_icon_gadget_smart_cover_mp",
     "modelscale": 0.5,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
-    "pickupicon": "#hash_4df25a115b8c3300",
+    "pickupicon": "#ui_icon_gadget_smart_cover_mp",
     "var_50773731": 3.5,
     "itemtype": "equipment"
 }

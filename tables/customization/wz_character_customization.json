@@ -21,7 +21,7 @@
                 "description": "#menu/none",
                 "sortOrder": 1,
                 "fields": {
-                    "var_af8f68ab": "#hash_5b706bea48ad14ed"
+                    "var_af8f68ab": "#uie_t7_icon_error_overlays"
                 }
             },
             "body": {
@@ -264,8 +264,8 @@
                     "mpdialog": "firebreak",
                     "var_6a6d76a8": "koth",
                     "var_a19fcbe8": "koth",
-                    "var_54f4a8a8": "#hash_31ec1da17cfc974b",
-                    "var_837988ce": "#hash_4f3691ed2b0cf850",
+                    "var_54f4a8a8": "#ui_icon_ct_preview_ct_tutofirebreak_loadingmovie",
+                    "var_837988ce": "#ui_icon_ct_preview_ct_skirmishoutro_firebreak",
                     "var_a38fcede": "#hash_23255bd54ecfbbc",
                     "var_49a55967": 1,
                     "var_148d6d91": 1,
@@ -648,8 +648,8 @@
                     "mpdialog": "ruin",
                     "var_6a6d76a8": "koth",
                     "var_a19fcbe8": "koth",
-                    "var_54f4a8a8": "#hash_3e4b189799958542",
-                    "var_837988ce": "#hash_bb24dcd31b0e213",
+                    "var_54f4a8a8": "#ui_icon_ct_preview_ct_tutoruin_loadingmovie",
+                    "var_837988ce": "#ui_icon_ct_preview_ct_skirmishoutro_ruin",
                     "var_a38fcede": "#hash_4cd5da78f5efe87f",
                     "var_49a55967": 1,
                     "var_148d6d91": 1,

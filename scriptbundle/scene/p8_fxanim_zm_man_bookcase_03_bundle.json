@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_223f43d66be3eb0",
+                            "anim": "#p8_fxanim_zm_man_bookcase_03_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -13,7 +13,7 @@
                 }
             ],
             "firstframe": 1,
-            "model": "#hash_7e80e0c7ba307143",
+            "model": "#p8_fxanim_zm_man_bookcase_03_mod",
             "type": "prop",
             "name": "prop 1"
         }

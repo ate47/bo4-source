@@ -9,7 +9,7 @@
     "var_6731866b": 90,
     "name": "ammo_type_12ga_double_item",
     "displayname": "#hash_36b0f4217f0831b8",
-    "icon": "#hash_6b77016c324c0644",
+    "icon": "#ui_icon_inventory_p8_wz_ammo_pickup_shotgun",
     "modelscale": 0.6,
     "rarity": "None",
     "handler": "#hash_9ed0c30684ca35a",

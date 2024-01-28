@@ -6,11 +6,11 @@
     "var_e6ac0592": 90,
     "name": "tomahawk_t8_wz_item_pandemic",
     "stackcount": 2,
-    "icon": "#hash_6853de2937cd9079",
+    "icon": "#ui_icon_inventory_tomahawk",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
-    "pickupicon": "#hash_6853de2937cd9079",
+    "pickupicon": "#ui_icon_inventory_tomahawk",
     "stackable": 1,
     "var_50773731": 0.75,
     "itemtype": "equipment"

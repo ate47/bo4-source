@@ -7,7 +7,7 @@
     "name": "cluster_semtex_wz_item",
     "displayname": "#hash_6a6dc00bc727bf4",
     "stackcount": 1,
-    "icon": "#hash_63fef5f0d3146a2c",
+    "icon": "#ui_icon_equipment_eq_cluster_semtex_grenade",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",

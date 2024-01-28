@@ -22,9 +22,9 @@ function event_handler[gametype_init] main(eventstruct) {
     clientfield::register("worlduimodel", "CTFLevelInfo.flagStateAxis", 17000, 2, "int", undefined, 0, 0);
     clientfield::register("worlduimodel", "ctf_reset_score", 17000, 1, "int", &ctf_reset_score, 0, 0);
     forcestreamxmodel(#"p8_mp_flag_pole_1_blackops", 8, -1);
-    forcestreamxmodel(#"hash_5569a00a8fe22d03", 8, -1);
+    forcestreamxmodel(#"p8_mp_flag_pole_1_blackops_alt", 8, -1);
     forcestreamxmodel(#"p8_mp_flag_pole_1_mercs", 8, -1);
-    forcestreamxmodel(#"hash_62818f90d175c02c", 8, -1);
+    forcestreamxmodel(#"p8_mp_flag_pole_1_mercs_alt", 8, -1);
 }
 
 // Namespace ctf/ctf

@@ -8,7 +8,7 @@
     "attachslotstock": 1,
     "var_65b3a12": 6,
     "name": "ar_an94_t8_item",
-    "icon": "#hash_48ae534cd67cee68",
+    "icon": "#ui_icon_weapon_ar_an94_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Common",
@@ -16,7 +16,7 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,
-    "pickupicon": "#hash_5992913ace5fcff9",
+    "pickupicon": "#ui_icon_weapon_hud_ar_an94",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

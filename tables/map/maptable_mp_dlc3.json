@@ -9,7 +9,7 @@
             "missionName": "mp_casino",
             "mapName": "#mpui/casino",
             "rootMapName": "#",
-            "mapDescription": "#hash_5fa5e1ee9f71b10c",
+            "mapDescription": "#mpui/desc_casino",
             "loadingmovie": "mp_casino_loadingmovie",
             "size": 1
         },
@@ -20,7 +20,7 @@
             "missionName": "mp_station",
             "mapName": "#mpui/station",
             "rootMapName": "#",
-            "mapDescription": "#hash_478099f9ef8ec7fd",
+            "mapDescription": "#mpui/desc_station",
             "loadingmovie": "mp_station_loadingmovie",
             "size": 1
         }

@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_207257ce0a6f330f",
+                            "anim": "#p8_fxanim_zm_man_power_seq_02_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -13,7 +13,7 @@
                 }
             ],
             "firstframe": 1,
-            "model": "#hash_494ae3ed21fb5fca",
+            "model": "#p8_fxanim_zm_man_power_seq_02_mod",
             "type": "prop",
             "name": "prop 1"
         }

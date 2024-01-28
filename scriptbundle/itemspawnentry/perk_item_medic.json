@@ -15,7 +15,7 @@
     "name": "perk_item_medic",
     "displayname": "#hash_2b9883e118f9fa0b",
     "stackcount": 1,
-    "icon": "#hash_74bb55186f0869c3",
+    "icon": "#ui_icon_inventory_medic",
     "casttime": 2,
     "modelscale": 1,
     "rarity": "None",

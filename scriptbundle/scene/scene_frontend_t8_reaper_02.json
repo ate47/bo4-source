@@ -153,7 +153,7 @@
                     "name": "play5"
                 }
             ],
-            "model": "#hash_375f20f89e279ffd",
+            "model": "#wpn_t8_sig_minigun_prop",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "gun"

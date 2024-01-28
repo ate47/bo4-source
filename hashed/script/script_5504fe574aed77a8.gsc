@@ -82,10 +82,10 @@ function init_fx() {
 // Size: 0x21c
 function function_f99ce12b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
-        addzombieboxweapon(getweapon(#"hero_sword_pistol_lv1"), #"hash_53aafac8d0c5d780", 1);
-        addzombieboxweapon(getweapon(#"hero_chakram_lv1"), #"hash_53aafac8d0c5d780", 1);
-        addzombieboxweapon(getweapon(#"hero_scepter_lv1"), #"hash_1a138d630a16b4eb", 0);
-        addzombieboxweapon(getweapon(#"hero_hammer_lv1"), #"hash_588f3c233863abef", 0);
+        addzombieboxweapon(getweapon(#"hero_sword_pistol_lv1"), #"wpn_t8_zm_melee_dw_hand_cannon_lvl1_prop_animate", 1);
+        addzombieboxweapon(getweapon(#"hero_chakram_lv1"), #"wpn_t8_zm_melee_dw_hand_cannon_lvl1_prop_animate", 1);
+        addzombieboxweapon(getweapon(#"hero_scepter_lv1"), #"wpn_t8_zm_melee_staff_ra_lvl1_prop_animate", 0);
+        addzombieboxweapon(getweapon(#"hero_hammer_lv1"), #"wpn_t8_zm_melee_hammer_lvl1_prop_animate", 0);
     } else {
         removezombieboxweapon(getweapon(#"hero_sword_pistol_lv1"));
         removezombieboxweapon(getweapon(#"hero_chakram_lv1"));

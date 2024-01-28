@@ -9,7 +9,7 @@
     "var_6731866b": 60,
     "name": "ammo_type_rocket_item",
     "displayname": "#hash_3ccf9bf5cc21aeb3",
-    "icon": "#hash_69861de068dbd4bf",
+    "icon": "#ui_icon_inventory_p8_wz_ammo_pickup_rockets",
     "modelscale": 0.6,
     "rarity": "None",
     "handler": "#hash_9ed0c30684ca35a",

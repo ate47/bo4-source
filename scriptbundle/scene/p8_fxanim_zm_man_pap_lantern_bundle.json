@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_54110bc4f444239f",
+                            "anim": "#p8_fxanim_zm_man_pap_lantern_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -14,7 +14,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_2c8a1bf1b43a93f8",
+                            "anim": "#p8_fxanim_zm_man_pap_lantern_idle_anim",
                             "var_71bac06": "anim"
                         }
                     ],

@@ -125,7 +125,7 @@
                     "name": "play6"
                 }
             ],
-            "model": "#hash_4c11738f6a26dfde",
+            "model": "#wpn_t8_sig_battle_shield_buckler_world_d1",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 1"
@@ -169,7 +169,7 @@
                     "name": "play6"
                 }
             ],
-            "model": "#hash_1bf1ae854431a109",
+            "model": "#wpn_t8_sig_battle_shield_gun_prop",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop2"

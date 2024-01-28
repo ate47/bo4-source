@@ -26,14 +26,14 @@
     "var_65b3a12": 6,
     "var_340eac1f": 1,
     "name": "shotgun_semiauto_t8_gold_item",
-    "icon": "#hash_65fd9d934328654e",
+    "icon": "#ui_icon_weapon_shotgun_semiauto_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Epic",
     "attachslotbarrel": 1,
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
-    "pickupicon": "#hash_74786a6099201467",
+    "pickupicon": "#ui_icon_weapon_hud_shotgun_semiauto",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_56ce29cce5de07d0",
+                            "anim": "#p8_fxanim_zm_man_wm_01_idle_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -14,7 +14,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_5857a3a3b8135217",
+                            "anim": "#p8_fxanim_zm_man_wm_01_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -22,7 +22,7 @@
                 }
             ],
             "firstframe": 1,
-            "model": "#hash_6ce72a4c128968d2",
+            "model": "#p8_fxanim_zm_man_wm_01_mod",
             "type": "prop",
             "name": "prop 1"
         }

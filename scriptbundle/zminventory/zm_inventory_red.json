@@ -163,15 +163,15 @@
     ],
     "shieldpieces": [
         {
-            "pieceimage": "#hash_392454387b878862",
+            "pieceimage": "#ui_icon_inventory_zm_red_shield_part_cover",
             "clientfield": "#hash_5ec82cf18a254c3c"
         },
         {
-            "pieceimage": "#hash_44eaf9e4a513dfa0",
+            "pieceimage": "#ui_icon_inventory_zm_red_shield_part_spear",
             "clientfield": "#hash_5ec82ff18a255155"
         },
         {
-            "pieceimage": "#hash_5fd5b70777b6eecb",
+            "pieceimage": "#ui_icon_inventory_zm_red_shield_part_strap",
             "clientfield": "#hash_5ec82ef18a254fa2"
         }
     ],
@@ -261,7 +261,7 @@
             "description": "#hash_7122a5a7b75ae658"
         }
     ],
-    "objectivebackground": "#hash_48e8c8a1322af446",
+    "objectivebackground": "#ui_icon_inventory_zm_red_artifact_sentinel",
     "var_922067c4": "scriptbundle",
     "var_aa76b7dd": 8,
     "var_3e38620e": 1,

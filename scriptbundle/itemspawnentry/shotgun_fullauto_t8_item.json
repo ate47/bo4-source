@@ -11,7 +11,7 @@
     "attachslotstock": 1,
     "var_65b3a12": 6,
     "name": "shotgun_fullauto_t8_item",
-    "icon": "#hash_6a70f9e85000c737",
+    "icon": "#ui_icon_weapon_shotgun_fullauto_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Common",
@@ -19,7 +19,7 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,
-    "pickupicon": "#hash_6d7ecab793eb447c",
+    "pickupicon": "#ui_icon_weapon_hud_shotgun_fullauto",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

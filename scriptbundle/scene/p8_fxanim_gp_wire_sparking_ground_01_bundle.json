@@ -5,14 +5,14 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_50e9574f6618e1b2",
+                            "anim": "#p7_fxanim_gp_wire_sparking_ground_01_anim",
                             "var_71bac06": "anim"
                         }
                     ],
                     "name": "play"
                 }
             ],
-            "model": "#hash_2faf18420675e429",
+            "model": "#p7_fxanim_gp_wire_sparking_ground_01_mod",
             "type": "prop",
             "name": "wire_sparking_ground_01"
         }

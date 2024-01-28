@@ -462,7 +462,7 @@ function function_edcadf04() {
         head_model = "p8_zm_white_mannequin_female_01_head_dyn";
         if (self.male_head) {
             head_model = "p8_zm_white_mannequin_male_01_head_dyn";
-            if (self.model == #"hash_6b4ae942a9a5301b") {
+            if (self.model == #"c_t8_zmb_dlc3_mannequin_male_damage_head_2") {
                 head_model = "c_t8_zmb_dlc3_mannequin_male_damage_head_2_dyn";
             }
         }

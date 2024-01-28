@@ -152,7 +152,7 @@
                     "name": "play5"
                 }
             ],
-            "model": "#hash_7f9e8b7b90cd41d6",
+            "model": "#wpn_t8_sig_tempest_prop",
             "type": "prop",
             "deletewhenfinished": 1,
             "name": "prop 1"

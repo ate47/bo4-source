@@ -5,14 +5,14 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_5cf06bc8bddd1b6c",
+                            "anim": "#p8_fxanim_zm_red_shrine_hemera_anim",
                             "var_71bac06": "anim"
                         }
                     ],
                     "name": "shot 1"
                 }
             ],
-            "model": "#hash_63a20ee0537f0c1f",
+            "model": "#p8_fxanim_zm_red_shrine_hemera_mod",
             "type": "prop",
             "name": "prop 1"
         }

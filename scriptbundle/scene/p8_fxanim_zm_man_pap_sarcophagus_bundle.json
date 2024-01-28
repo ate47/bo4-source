@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_3c44648206cb6622",
+                            "anim": "#p8_fxanim_zm_man_pap_sarcophagus_open_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -14,7 +14,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_76519339fc2be268",
+                            "anim": "#p8_fxanim_zm_man_pap_sarcophagus_idle_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -23,7 +23,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "#hash_379770796f7f7bce",
+                            "anim": "#p8_fxanim_zm_man_pap_sarcophagus_close_anim",
                             "var_71bac06": "anim"
                         }
                     ],
@@ -31,7 +31,7 @@
                 }
             ],
             "firstframe": 1,
-            "model": "#hash_32c675ef1b298e0a",
+            "model": "#p8_fxanim_zm_man_pap_sarcophagus_mod",
             "type": "prop",
             "name": "prop 1"
         }

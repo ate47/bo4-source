@@ -10,7 +10,7 @@
     "var_7adcadc1": -90,
     "name": "backpack_item",
     "displayname": "#hash_2b2096d421c8cd24",
-    "icon": "#hash_3fc6dc76d7fcc7a8",
+    "icon": "#ui_icon_inventory_p8_backpack_military",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_6247ea34d3b1ddb6",

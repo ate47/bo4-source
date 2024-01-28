@@ -10,7 +10,7 @@
     "attachslotstock": 1,
     "var_65b3a12": 6,
     "name": "sniper_powerbolt_t8_item",
-    "icon": "#hash_3bda5358b7c2fb00",
+    "icon": "#ui_icon_weapon_sniper_powerbolt_wz_render",
     "attachslotmagazine": 1,
     "modelscale": 1,
     "rarity": "Common",
@@ -18,7 +18,7 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,
-    "pickupicon": "#hash_4fab529d04078ebd",
+    "pickupicon": "#ui_icon_weapon_hud_sniper_powerbolt_wz",
     "var_50773731": 1,
     "itemtype": "weapon"
 }

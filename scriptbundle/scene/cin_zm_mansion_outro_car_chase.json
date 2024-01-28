@@ -1151,7 +1151,7 @@
                     "name": "sh580"
                 }
             ],
-            "model": "#hash_350311504362cb9b",
+            "model": "#wpn_t8_zm_pistol_webly_prop_animate",
             "type": "prop",
             "name": "prop 8"
         },
@@ -1231,7 +1231,7 @@
                     "name": "sh580"
                 }
             ],
-            "model": "#hash_6bc31d9ff3d15d40",
+            "model": "#wpn_t8_zm_smg_primary_prop_animate",
             "type": "prop",
             "name": "prop 9"
         },
@@ -1297,7 +1297,7 @@
                     "name": "sh580"
                 }
             ],
-            "model": "#hash_7a33e9af2a69a687",
+            "model": "#p8_zm_man_foliage_tree_pine_tall_hero",
             "type": "prop",
             "name": "prop 10"
         },

@@ -15,7 +15,7 @@
     "name": "perk_item_reinforced",
     "displayname": "#hash_1f373462224d3160",
     "stackcount": 1,
-    "icon": "#hash_397cabddb9595bbc",
+    "icon": "#ui_icon_inventory_reinforced",
     "casttime": 2,
     "modelscale": 1,
     "rarity": "None",
