@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_automated_turret_killjoy",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_6b4d1231c098ff40",
+    "iconsmall": "#ui_icon_medal_scrapped",
     "stringref": "#hash_2b464a8f2e8be7d",
-    "iconlarge": "#hash_341bf37ab40165bc"
+    "iconlarge": "#ui_icon_medal_scrapped_large"
 }

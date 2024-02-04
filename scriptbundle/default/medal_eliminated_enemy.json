@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_eliminated_enemy",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_245f0c4222ce97af",
+    "iconsmall": "#ui_icon_medal_elimination",
     "stringref": "#hash_6b0c85a183cac06e",
-    "iconlarge": "#hash_5b677442dcff25bf"
+    "iconlarge": "#ui_icon_medal_elimination_large"
 }

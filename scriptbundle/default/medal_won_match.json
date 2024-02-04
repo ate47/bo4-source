@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_won_match",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_2caf60f475a98f31",
+    "iconsmall": "#ui_icon_medal_victor",
     "stringref": "#hash_617c8b21eba1766d",
-    "iconlarge": "#hash_82bcd08e989cf5"
+    "iconlarge": "#ui_icon_medal_victor_large"
 }

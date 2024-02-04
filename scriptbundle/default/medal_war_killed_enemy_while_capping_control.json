@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_war_killed_enemy_while_capping_control",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_31bb056b6573d78e",
+    "iconsmall": "#ui_icon_medal_aggression",
     "stringref": "#hash_2b2b9443cbec63af",
-    "iconlarge": "#hash_6185e45cf20da95e"
+    "iconlarge": "#ui_icon_medal_aggression_large"
 }

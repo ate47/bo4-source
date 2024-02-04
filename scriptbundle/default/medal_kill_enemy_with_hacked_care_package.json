@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_with_hacked_care_package",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_5adabcecc38dc7fe",
+    "iconsmall": "#ui_icon_medal_bait_taken",
     "stringref": "#hash_3656f6c5d1342997",
-    "iconlarge": "#hash_1d93a78baa18a40e"
+    "iconlarge": "#ui_icon_medal_bait_taken_large"
 }

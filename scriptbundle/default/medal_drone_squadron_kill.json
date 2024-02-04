@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_drone_squadron_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_453b982ddde25968",
+    "iconsmall": "#ui_icon_medal_covering_fire",
     "stringref": "#hash_49f4e1856c1ea2c0",
-    "iconlarge": "#hash_6808f7d28e976ea4"
+    "iconlarge": "#ui_icon_medal_covering_fire_large"
 }

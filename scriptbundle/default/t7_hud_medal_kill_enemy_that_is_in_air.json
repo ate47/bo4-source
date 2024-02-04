@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_619a2403e761ca79",
+    "backingsmall": "#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_kill_enemy_that_is_in_air",
-    "backinglarge": "#hash_59cffd7b8f76506d",
+    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#t7_hud_medal_kill_enemy_that_is_in_air",
     "stringref": "#hash_67306f5658d33f1c",
-    "iconlarge": "#hash_15675f4c7e64b08e"
+    "iconlarge": "#t7_hud_medal_kill_enemy_that_is_in_air_lrg"
 }

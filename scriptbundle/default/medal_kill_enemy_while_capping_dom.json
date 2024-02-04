@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_while_capping_dom",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_b5cdf3d984d9ef9",
+    "iconsmall": "#ui_icon_medal_assault",
     "stringref": "#hash_74c273f18b5b72a7",
-    "iconlarge": "#hash_bbfd7f8b068865d"
+    "iconlarge": "#ui_icon_medal_assault_large"
 }

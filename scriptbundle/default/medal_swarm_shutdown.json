@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_swarm_shutdown",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_43c7a1a59ede8c37",
+    "iconsmall": "#ui_icon_medal_destroy_swarm",
     "stringref": "#hash_66ca89e7954eea76",
-    "iconlarge": "#hash_5576b549e2e8dc47"
+    "iconlarge": "#ui_icon_medal_destroy_swarm_large"
 }

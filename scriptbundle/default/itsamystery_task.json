@@ -1,7 +1,7 @@
 {
     "callingtask": "#boxbuys",
     "var_922067c4": "scriptbundle",
-    "image": "#hash_59b69eadfe735ce2",
+    "image": "#ui_icon_zm_calling_tasks_boxbuys",
     "dailytarget": 10,
     "name": "itsamystery_task",
     "taskname": "#hash_31c5d6e2319fd7e2",

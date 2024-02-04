@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_comeback_from_deathstreak",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_35dfd5e6149997ad",
+    "iconsmall": "#ui_icon_medal_comeback",
     "stringref": "#hash_35293042f677ef9c",
-    "iconlarge": "#hash_32874b8ffaf6e7f1"
+    "iconlarge": "#ui_icon_medal_comeback_large"
 }

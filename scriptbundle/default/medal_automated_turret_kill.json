@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_automated_turret_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_189579fca5ea675c",
+    "iconsmall": "#ui_icon_medal_crackdown",
     "stringref": "#hash_151f86906c597c45",
-    "iconlarge": "#hash_39370465cc26f168"
+    "iconlarge": "#ui_icon_medal_crackdown_large"
 }

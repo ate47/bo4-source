@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_clean_multi_deny_tacos",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_2f86b56328c998e6",
+    "iconsmall": "#ui_icon_medal_allgone",
     "stringref": "#hash_5e6ac7d0baf1bd3e",
-    "iconlarge": "#hash_640a46c9a69fd996"
+    "iconlarge": "#ui_icon_medal_allgone_large"
 }

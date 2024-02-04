@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_619a2403e761ca79",
+    "backingsmall": "#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "medal_end_enemy_using_battle_shield",
-    "backinglarge": "#hash_59cffd7b8f76506d",
-    "iconsmall": "#hash_36985e7cba7fad99",
+    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
+    "iconsmall": "#t7_hud_medal_kill_enemy_who_has_powerarmor",
     "stringref": "#hash_6a789a331b06a107",
-    "iconlarge": "#hash_3925b3994684cbcd"
+    "iconlarge": "#t7_hud_medal_kill_enemy_who_has_powerarmor_lrg"
 }

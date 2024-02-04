@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_2bac769662d3625",
+    "backingsmall": "#t7_hud_medal_backing_match_completion",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_won_match",
-    "backinglarge": "#hash_752aec347ecb7cc1",
+    "backinglarge": "#t7_hud_medal_backing_match_completion_lrg",
     "iconsmall": "#t7_hud_medal_won_match",
     "stringref": "#hash_617c8b21eba1766d",
-    "iconlarge": "#hash_3752a71a8fcb910b"
+    "iconlarge": "#t7_hud_medal_won_match_lrg"
 }

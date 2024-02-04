@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_cuav_killjoy",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_70410d29fdce7211",
+    "iconsmall": "#ui_icon_medal_fuzz_buster",
     "stringref": "#hash_37c1730591f1753",
-    "iconlarge": "#hash_2ced7a528e902515"
+    "iconlarge": "#ui_icon_medal_fuzz_buster_large"
 }

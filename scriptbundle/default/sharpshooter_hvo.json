@@ -1,43 +1,43 @@
 {
     "imagearray": [
         {
-            "image": "#hash_3f25b109bb310699",
+            "image": "#ui_icon_hvo_sharpshooter_ajax",
             "specialist": "#hash_641d42086962443d"
         },
         {
-            "image": "#hash_2fb760a4fe39c22c",
+            "image": "#ui_icon_hvo_sharpshooter_battery",
             "specialist": "#hash_25d901b2845affb5"
         },
         {
-            "image": "#hash_39faf38fd195624a",
+            "image": "#ui_icon_hvo_sharpshooter_crash",
             "specialist": "#hash_271546989f2b39c0"
         },
         {
-            "image": "#hash_2a90b058e9f17fa6",
+            "image": "#ui_icon_hvo_sharpshooter_firebreak",
             "specialist": "#hash_17c8471ad085983b"
         },
         {
-            "image": "#hash_47f8db9d2b9c9246",
+            "image": "#ui_icon_hvo_sharpshooter_nomad",
             "specialist": "#hash_bac19a8a93f750a"
         },
         {
-            "image": "#hash_7196cafd6022b887",
+            "image": "#ui_icon_hvo_sharpshooter_prophet",
             "specialist": "#hash_74a7b1f09eb77129"
         },
         {
-            "image": "#hash_3681905eb3a27152",
+            "image": "#ui_icon_hvo_sharpshooter_recon",
             "specialist": "#hash_265a8bfe9e6a3a8f"
         },
         {
-            "image": "#hash_365eb97b7dc988e1",
+            "image": "#ui_icon_hvo_sharpshooter_ruin",
             "specialist": "#hash_215efce6af8d9a10"
         },
         {
-            "image": "#hash_205fb22ad9a60ff6",
+            "image": "#ui_icon_hvo_sharpshooter_seraph",
             "specialist": "#hash_35abb557417d97bc"
         },
         {
-            "image": "#hash_4b7777771bf61055",
+            "image": "#ui_icon_hvo_sharpshooter_torque",
             "specialist": "#hash_34c5e1c04823489d"
         }
     ],
@@ -78,7 +78,7 @@
             "displaystatname": "#hash_158193577a14c86e"
         }
     ],
-    "defaultimage": "#hash_401fc36948868c17",
+    "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_7833035cc421c727",
     "name": "sharpshooter_hvo",
     "var_46a95923": "none"

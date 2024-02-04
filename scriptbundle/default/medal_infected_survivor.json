@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_infected_survivor",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_3f0c0b6157696752",
+    "iconsmall": "#ui_icon_medal_contagious",
     "stringref": "#hash_3353d164ae859348",
-    "iconlarge": "#hash_7e73a424ee443f92"
+    "iconlarge": "#ui_icon_medal_contagious_large"
 }

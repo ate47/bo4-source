@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_concertina_wire_multikill_x2_summary",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_4cf876cb4e8155ca",
+    "iconsmall": "#ui_icon_medal_caught",
     "stringref": "#hash_6b1470d79554f6a8",
-    "iconlarge": "#hash_76617e52a6b53a2a"
+    "iconlarge": "#ui_icon_medal_caught_large"
 }

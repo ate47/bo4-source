@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_tank_robot_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_6f2bc6482e6d9dcb",
+    "iconsmall": "#ui_icon_medal_mantis_kill",
     "stringref": "#hash_d745e530f9ad21f",
-    "iconlarge": "#hash_5525b51d9c18a3eb"
+    "iconlarge": "#ui_icon_medal_mantis_kill_large"
 }

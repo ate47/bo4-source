@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_flag_carrier",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_3892cde0a9eaebf5",
+    "iconsmall": "#ui_icon_medal_takedown",
     "stringref": "#hash_3667d396475533b7",
-    "iconlarge": "#hash_4eb76a95d06368b9"
+    "iconlarge": "#ui_icon_medal_takedown_large"
 }

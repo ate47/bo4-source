@@ -1,47 +1,47 @@
 {
     "imagearray": [
         {
-            "image": "#hash_196286caf8b62e90",
+            "image": "#ui_icon_hvo_killer_ajax",
             "specialist": "#hash_641d42086962443d"
         },
         {
-            "image": "#hash_6423ddcb98b39cab",
+            "image": "#ui_icon_hvo_killer_battery",
             "specialist": "#hash_25d901b2845affb5"
         },
         {
-            "image": "#hash_3f64a520d11175a5",
+            "image": "#ui_icon_hvo_killer_crash",
             "specialist": "#hash_271546989f2b39c0"
         },
         {
-            "image": "#hash_6c6cd052b39f79bd",
+            "image": "#ui_icon_hvo_killer_firebreak",
             "specialist": "#hash_17c8471ad085983b"
         },
         {
-            "image": "#hash_5079edfe6b31a301",
+            "image": "#ui_icon_hvo_killer_nomad",
             "specialist": "#hash_bac19a8a93f750a"
         },
         {
-            "image": "#hash_50ca174d68d07f0",
+            "image": "#ui_icon_hvo_killer_prophet",
             "specialist": "#hash_74a7b1f09eb77129"
         },
         {
-            "image": "#hash_3359b947c4bed43d",
+            "image": "#ui_icon_hvo_killer_recon",
             "specialist": "#hash_265a8bfe9e6a3a8f"
         },
         {
-            "image": "#hash_79240d2f8bd2ef34",
+            "image": "#ui_icon_hvo_killer_ruin",
             "specialist": "#hash_215efce6af8d9a10"
         },
         {
-            "image": "#hash_2e6191a78901fe13",
+            "image": "#ui_icon_hvo_killer_seraph",
             "specialist": "#hash_35abb557417d97bc"
         },
         {
-            "image": "#hash_594dd1125bfc6a8",
+            "image": "#ui_icon_hvo_killer_torque",
             "specialist": "#hash_34c5e1c04823489d"
         },
         {
-            "image": "#hash_427d448718db4436",
+            "image": "#ui_icon_hvo_killer_spectra",
             "specialist": "#hash_4c0746fa548d2220"
         }
     ],
@@ -79,7 +79,7 @@
             "displaystatname": "#hash_7d5bfb6a433e4d37"
         }
     ],
-    "defaultimage": "#hash_401fc36948868c17",
+    "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_40e099c6835cdcc4",
     "name": "killer_hvo",
     "var_46a95923": "none"

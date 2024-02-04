@@ -1,39 +1,39 @@
 {
     "imagearray": [
         {
-            "image": "#hash_5241c5055092a599",
+            "image": "#ui_icon_hvo_mvp_battery",
             "specialist": "#hash_25d901b2845affb5"
         },
         {
-            "image": "#hash_2062b448a9e028e",
+            "image": "#ui_icon_hvo_mvp_ajax",
             "specialist": "#hash_641d42086962443d"
         },
         {
-            "image": "#hash_263596461d0221c7",
+            "image": "#ui_icon_hvo_mvp_crash",
             "specialist": "#hash_271546989f2b39c0"
         },
         {
-            "image": "#hash_ba8cb3b77a6328f",
+            "image": "#ui_icon_hvo_mvp_firebreak",
             "specialist": "#hash_17c8471ad085983b"
         },
         {
-            "image": "#hash_5788565ebbfb1867",
+            "image": "#ui_icon_hvo_mvp_nomad",
             "specialist": "#hash_bac19a8a93f750a"
         },
         {
-            "image": "#hash_5951e9014b34ffa6",
+            "image": "#ui_icon_hvo_mvp_prophet",
             "specialist": "#hash_74a7b1f09eb77129"
         },
         {
-            "image": "#hash_6c6c51f320d55ab3",
+            "image": "#ui_icon_hvo_mvp_recon",
             "specialist": "#hash_265a8bfe9e6a3a8f"
         },
         {
-            "image": "#hash_424d1796e283364d",
+            "image": "#ui_icon_hvo_mvp_seraph",
             "specialist": "#hash_35abb557417d97bc"
         },
         {
-            "image": "#hash_3b6b204bbdd0c1ca",
+            "image": "#ui_icon_hvo_mvp_torque",
             "specialist": "#hash_34c5e1c04823489d"
         }
     ],
@@ -71,7 +71,7 @@
             "displaystatname": "#hash_6abbd7a88ee593ed"
         }
     ],
-    "defaultimage": "#hash_401fc36948868c17",
+    "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_70404868e22c0030",
     "name": "mvp_sd_hvo",
     "var_46a95923": "sd"

@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_while_sliding",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_18820905ea0ff385",
+    "iconsmall": "#ui_icon_medal_low_blow",
     "stringref": "#hash_52c4ee4c526647c9",
-    "iconlarge": "#hash_52167fac7d4d2b09"
+    "iconlarge": "#ui_icon_medal_low_blow_large"
 }

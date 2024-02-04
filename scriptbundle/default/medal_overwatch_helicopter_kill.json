@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_overwatch_helicopter_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_77b25264c0828047",
+    "iconsmall": "#ui_icon_medal_overwatch",
     "stringref": "#hash_2751696dc90020a3",
-    "iconlarge": "#hash_5030858d22bb5457"
+    "iconlarge": "#ui_icon_medal_overwatch_large"
 }

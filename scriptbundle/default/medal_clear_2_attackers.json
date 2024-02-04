@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_clear_2_attackers",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_5e7d1d22f0a24e0f",
+    "iconsmall": "#ui_icon_medal_wipeout",
     "stringref": "#hash_2be369ae80487cac",
-    "iconlarge": "#hash_773cb4081a4af35f"
+    "iconlarge": "#ui_icon_medal_wipeout_large"
 }

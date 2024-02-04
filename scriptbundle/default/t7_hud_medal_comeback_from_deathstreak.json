@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_619a2403e761ca79",
+    "backingsmall": "#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_comeback_from_deathstreak",
-    "backinglarge": "#hash_59cffd7b8f76506d",
+    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#t7_hud_medal_comeback_from_deathstreak",
     "stringref": "#hash_35293042f677ef9c",
-    "iconlarge": "#hash_700323a7513dd3ca"
+    "iconlarge": "#t7_hud_medal_comeback_from_deathstreak_lrg"
 }

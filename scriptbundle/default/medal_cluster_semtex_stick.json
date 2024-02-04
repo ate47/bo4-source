@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_cluster_semtex_stick",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_548963db5b8be41a",
+    "iconsmall": "#ui_icon_medal_stuck",
     "stringref": "#hash_6d215bf0234debcb",
-    "iconlarge": "#hash_35f6408f7b6b93ba"
+    "iconlarge": "#ui_icon_medal_stuck_large"
 }

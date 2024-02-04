@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_72651b15424021d0",
+    "backingsmall": "#t7_hud_medal_backing_gamemode",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_kill_confirmed_multi",
-    "backinglarge": "#hash_616c67b488c6314c",
+    "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
     "iconsmall": "#t7_hud_medal_kill_confirmed_multi",
     "stringref": "#hash_424c37933e7c0d2d",
-    "iconlarge": "#hash_52612e60bec9ed8b"
+    "iconlarge": "#t7_hud_medal_kill_confirmed_multi_lrg"
 }

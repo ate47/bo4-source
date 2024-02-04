@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_with_gunbutt",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_69025b8c8e2fe56e",
+    "iconsmall": "#ui_icon_medal_nose_breaker",
     "stringref": "#hash_40a1141097eb149f",
-    "iconlarge": "#hash_f8af8b4d1a244fe"
+    "iconlarge": "#ui_icon_medal_nose_breaker_large"
 }

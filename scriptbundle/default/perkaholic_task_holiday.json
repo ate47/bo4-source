@@ -1,7 +1,7 @@
 {
     "callingtask": "#perks_used",
     "var_922067c4": "scriptbundle",
-    "image": "#hash_2ef6fe5f817781e6",
+    "image": "#ui_icon_zm_calling_tasks_perksused",
     "dailytarget": 15,
     "name": "perkaholic_task_holiday",
     "taskname": "#hash_364f446240a6108d",

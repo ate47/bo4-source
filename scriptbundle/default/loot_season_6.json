@@ -1,9 +1,9 @@
 {
     "contracticon": "#hash_7a4416ddf242e29a",
     "var_2e7ca5b9": "core_frontend_rng_reserve",
-    "var_94988c2": "#hash_1c4ba5e5ada416ff",
-    "var_cb6692ec": "#hash_7cac4fe599507d0c",
-    "var_c36cc884": "#hash_1746a15b792871",
+    "var_94988c2": "#ui_icon_blackmarket_store_tile_focus_05",
+    "var_cb6692ec": "#ui_icon_blackmarket_lockskull_256",
+    "var_c36cc884": "#img_t8_menu_mp_loadscreen_arsenal",
     "var_b042b989": "#hash_1370744c760fd71c",
     "contracttitle": "#hash_7ed95636c9e8ff7f",
     "var_832d7586": "#hash_1bf064cf96fd9a4c",
@@ -12,7 +12,7 @@
     "var_7ec13217": "#hash_1f1e4314badb48e3",
     "bannerimage": "#hash_47251ce9bf56cab2",
     "var_f15e270f": "#white",
-    "var_998f25eb": "#hash_6bb373e081ce7830",
-    "squareimage": "#hash_6bb376e081ce7d49",
-    "var_a1901465": "#hash_1c4ba6e5ada418b2"
+    "var_998f25eb": "#ui_icon_blackmarket_store_tile_default_05",
+    "squareimage": "#ui_icon_blackmarket_store_tile_default_06",
+    "var_a1901465": "#ui_icon_blackmarket_store_tile_focus_06"
 }

@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_uav_killjoy",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_33e7ca3dea89afba",
+    "iconsmall": "#ui_icon_medal_fly_swatter",
     "stringref": "#hash_491aa2a5e5a80e9a",
-    "iconlarge": "#hash_522163295551b81a"
+    "iconlarge": "#ui_icon_medal_fly_swatter_large"
 }

@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_completed_match",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_6505d1098e211366",
+    "iconsmall": "#ui_icon_medal_strength_and_honor",
     "stringref": "#hash_87a8659a829da3c",
-    "iconlarge": "#hash_6e2171fab2592016"
+    "iconlarge": "#ui_icon_medal_strength_and_honor_large"
 }

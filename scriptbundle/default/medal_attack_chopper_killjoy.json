@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_attack_chopper_killjoy",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_2a9a2845055b7e50",
+    "iconsmall": "#ui_icon_medal_destroy_chopper",
     "stringref": "#hash_8a8dbf01d39c884",
-    "iconlarge": "#hash_50f8252f68b8134c"
+    "iconlarge": "#ui_icon_medal_destroy_chopper_large"
 }

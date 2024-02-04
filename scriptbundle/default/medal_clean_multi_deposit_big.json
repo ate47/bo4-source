@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_clean_multi_deposit_big",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_8d281486ad5e44c",
+    "iconsmall": "#ui_icon_medal_jackpot",
     "stringref": "#hash_93f0e2c070d25a8",
-    "iconlarge": "#hash_4ec0daead280acd8"
+    "iconlarge": "#ui_icon_medal_jackpot_large"
 }

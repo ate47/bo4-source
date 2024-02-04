@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_war_captured_zone",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_6503c9182afeb459",
+    "iconsmall": "#ui_icon_medal_lockdown",
     "stringref": "#hash_77a66516e263cf63",
-    "iconlarge": "#hash_225460a1369f12fd"
+    "iconlarge": "#ui_icon_medal_lockdown_large"
 }

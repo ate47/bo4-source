@@ -1,7 +1,7 @@
 {
     "callingtask": "#wallbuys",
     "var_922067c4": "scriptbundle",
-    "image": "#hash_1feb0fcb9e8700b3",
+    "image": "#ui_icon_zm_calling_tasks_wallbuys",
     "dailytarget": 20,
     "name": "wallbuyer_task",
     "taskname": "#hash_522aef9322f48e25",

@@ -1,7 +1,7 @@
 {
     "callingtask": "#revives",
     "var_922067c4": "scriptbundle",
-    "image": "#hash_720d2849e0af03bc",
+    "image": "#ui_icon_zm_calling_tasks_revives",
     "dailytarget": 10,
     "name": "revenant_task",
     "taskname": "#hash_462df7675dc24d45",

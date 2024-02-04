@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_1010c0ee21b1881d",
+    "backingsmall": "#t7_hud_medal_backing_specialist_killjoy",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_end_enemy_gravity_spike_attack",
-    "backinglarge": "#hash_735c5e3788111659",
+    "backinglarge": "#t7_hud_medal_backing_specialist_killjoy_lrg",
     "iconsmall": "#t7_hud_medal_end_enemy_gravity_spike_attack",
     "stringref": "#hash_7420255af0388d5a",
-    "iconlarge": "#hash_62ae28eb43930d0"
+    "iconlarge": "#t7_hud_medal_end_enemy_gravity_spike_attack_lrg"
 }

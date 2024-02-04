@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_killstreak_5",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_5e3626b24b7a1465",
+    "iconsmall": "#ui_icon_medal_bloodthirsty",
     "stringref": "#hash_510b3f87f301774b",
-    "iconlarge": "#hash_1ca91c29ee7ba0a9"
+    "iconlarge": "#ui_icon_medal_bloodthirsty_large"
 }

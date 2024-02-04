@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_swat_grenade_multikill_x2_summary",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_7be9ad6d51b5dd65",
+    "iconsmall": "#ui_icon_medal_lightsout",
     "stringref": "#hash_38e52794596fe800",
-    "iconlarge": "#hash_66de3bfdc84161a9"
+    "iconlarge": "#ui_icon_medal_lightsout_large"
 }

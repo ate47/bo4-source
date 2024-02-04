@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_rcxd_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_1a0db227d1309ac9",
+    "iconsmall": "#ui_icon_medal_kaboom",
     "stringref": "#hash_33d2d7c6acc9f23f",
-    "iconlarge": "#hash_acc17e194c257ed"
+    "iconlarge": "#ui_icon_medal_kaboom_large"
 }

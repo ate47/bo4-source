@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_hellstorm_missile_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_430921a1a54f0e79",
+    "iconsmall": "#ui_icon_medal_raining_death",
     "stringref": "#hash_11982b3936ad0ec5",
-    "iconlarge": "#hash_3b845be2297759dd"
+    "iconlarge": "#ui_icon_medal_raining_death_large"
 }

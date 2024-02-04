@@ -1,8 +1,8 @@
 {
-    "backingsmall": "#hash_1010c0ee21b1881d",
+    "backingsmall": "#t7_hud_medal_backing_specialist_killjoy",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_hazmat",
-    "backinglarge": "#hash_735c5e3788111659",
+    "backinglarge": "#t7_hud_medal_backing_specialist_killjoy_lrg",
     "iconsmall": "#hash_7a8561beee7f4ece",
     "stringref": "#hash_7b9854877ab767b5",
     "iconlarge": "#hash_7a8561beee7f4ece"

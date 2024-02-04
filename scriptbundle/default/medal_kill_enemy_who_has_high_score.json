@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_who_has_high_score",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_63b484e14ac9173",
+    "iconsmall": "#ui_icon_medal_kingslayer",
     "stringref": "#hash_69ee745ef231a18a",
-    "iconlarge": "#hash_4ced4e1296d69893"
+    "iconlarge": "#ui_icon_medal_kingslayer_large"
 }

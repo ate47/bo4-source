@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_rcxd_killjoy",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_6c525e5eeea170a0",
+    "iconsmall": "#ui_icon_medal_road_rage",
     "stringref": "#hash_46f96928c6c8839b",
-    "iconlarge": "#hash_3d327be42c731bdc"
+    "iconlarge": "#ui_icon_medal_road_rage_large"
 }

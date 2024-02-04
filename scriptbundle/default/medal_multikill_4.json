@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_multikill_4",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_7aafb8ee411b9d71",
+    "iconsmall": "#ui_icon_medal_quadkill",
     "stringref": "#hash_1a098593ba2c5ce9",
-    "iconlarge": "#hash_11f3e473dac70535"
+    "iconlarge": "#ui_icon_medal_quadkill_large"
 }

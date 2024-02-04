@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_survive_30_seconds",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_58aecfd6c26af9a0",
+    "iconsmall": "#ui_icon_medal_survivalist",
     "stringref": "#hash_cdffc24370cbaf",
-    "iconlarge": "#hash_7b4b23ef2d489cdc"
+    "iconlarge": "#ui_icon_medal_survivalist_large"
 }

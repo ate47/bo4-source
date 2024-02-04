@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_bounty_hunter_melee_downed_enemy",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_31bb056b6573d78e",
+    "iconsmall": "#ui_icon_medal_aggression",
     "stringref": "#hash_71cb511ab36ba14c",
-    "iconlarge": "#hash_6185e45cf20da95e"
+    "iconlarge": "#ui_icon_medal_aggression_large"
 }

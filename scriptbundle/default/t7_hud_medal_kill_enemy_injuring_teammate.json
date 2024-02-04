@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_619a2403e761ca79",
+    "backingsmall": "#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_kill_enemy_injuring_teammate",
-    "backinglarge": "#hash_59cffd7b8f76506d",
+    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#t7_hud_medal_kill_enemy_injuring_teammate",
     "stringref": "#hash_5544574dbc352ad8",
-    "iconlarge": "#hash_7ccc91e02f4e1a8e"
+    "iconlarge": "#t7_hud_medal_kill_enemy_injuring_teammate_lrg"
 }

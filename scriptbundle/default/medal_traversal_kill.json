@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_traversal_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_18820905ea0ff385",
+    "iconsmall": "#ui_icon_medal_low_blow",
     "stringref": "#hash_13aa42d1978b663a",
-    "iconlarge": "#hash_52167fac7d4d2b09"
+    "iconlarge": "#ui_icon_medal_low_blow_large"
 }

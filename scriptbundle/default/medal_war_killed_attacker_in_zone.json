@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_war_killed_attacker_in_zone",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_5cf142d882dd77fe",
+    "iconsmall": "#ui_icon_medal_bounced",
     "stringref": "#hash_36a5452d90dd0e0a",
-    "iconlarge": "#hash_71880ef594f6d40e"
+    "iconlarge": "#ui_icon_medal_bounced_large"
 }

@@ -1,7 +1,7 @@
 {
     "callingtask": "#explosions",
     "var_922067c4": "scriptbundle",
-    "image": "#hash_435a793c00f8664d",
+    "image": "#ui_icon_zm_calling_tasks_explosion",
     "dailytarget": 100,
     "name": "boom_task",
     "taskname": "#hash_2ce2f2315e90d031",

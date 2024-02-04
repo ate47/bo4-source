@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_concussion_grenade_multikill_x2_summary",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_3bfede8420eabfb0",
+    "iconsmall": "#ui_icon_medal_finished",
     "stringref": "#hash_3782b311b465cbba",
-    "iconlarge": "#hash_5115e491078da6c"
+    "iconlarge": "#ui_icon_medal_finished_large"
 }

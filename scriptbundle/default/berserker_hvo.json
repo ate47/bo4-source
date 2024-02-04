@@ -1,7 +1,7 @@
 {
     "imagearray": [
         {
-            "image": "#hash_5241c5055092a599"
+            "image": "#ui_icon_hvo_mvp_battery"
         }
     ],
     "statsarray": [
@@ -38,7 +38,7 @@
             "displaystatname": "#hash_158193577a14c86e"
         }
     ],
-    "defaultimage": "#hash_401fc36948868c17",
+    "defaultimage": "#ui_icon_hvo_base",
     "cardname": "#hash_183216222ded2594",
     "name": "berserker_hvo",
     "var_46a95923": "none"

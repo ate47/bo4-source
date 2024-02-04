@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_bounce_hatchet_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_2a23fd0abfc3d5b5",
+    "iconsmall": "#ui_icon_medal_bank_shot",
     "stringref": "#hash_464d5921c59d1456",
-    "iconlarge": "#hash_7f1333d3863ec779"
+    "iconlarge": "#ui_icon_medal_bank_shot_large"
 }

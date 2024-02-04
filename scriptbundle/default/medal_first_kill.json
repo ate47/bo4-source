@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_first_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_5bcdfdd2eea2f7fc",
+    "iconsmall": "#ui_icon_medal_firstkill",
     "stringref": "#hash_1d32ea9b430553ba",
-    "iconlarge": "#hash_126e5077cd6e44c8"
+    "iconlarge": "#ui_icon_medal_firstkill_large"
 }

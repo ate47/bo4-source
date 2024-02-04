@@ -1,7 +1,7 @@
 {
     "callingtask": "#kills_equipment",
     "var_922067c4": "scriptbundle",
-    "image": "#hash_a75058635c8146d",
+    "image": "#ui_icon_zm_calling_tasks_specialweapon",
     "dailytarget": 100,
     "name": "specialslaughter_task",
     "taskname": "#hash_4831910c1554ab14",

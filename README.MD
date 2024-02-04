@@ -9,6 +9,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | name                    | id  |        path                         |
 |-------------------------|-----|-------------------------------------|
 | localize                | 17  | EMPTY                               |
+| weapon                  | 20  | `/tables/weapon/`                   |
 | customizationtable      | 30  | `/tables/customization/`            |
 | rawfile                 | 41  | `/`                                 |
 | stringtable             | 43  | `/`                                 |

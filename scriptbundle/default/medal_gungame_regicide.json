@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_gungame_regicide",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_52437fd4c1ebe699",
+    "iconsmall": "#ui_icon_medal_gungame_regicide",
     "stringref": "#hash_272bc65953e06aaa",
-    "iconlarge": "#hash_f8ceab6956c553d"
+    "iconlarge": "#ui_icon_medal_gungame_regicide_large"
 }

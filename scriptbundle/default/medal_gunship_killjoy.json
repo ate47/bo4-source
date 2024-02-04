@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_gunship_killjoy",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_1410cbe9ae6a8eb7",
+    "iconsmall": "#ui_icon_medal_destroy_gunship",
     "stringref": "#hash_5e5f8a4e6890e672",
-    "iconlarge": "#hash_4a3b80967d846ac7"
+    "iconlarge": "#ui_icon_medal_destroy_gunship_large"
 }

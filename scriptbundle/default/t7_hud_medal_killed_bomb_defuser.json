@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_72651b15424021d0",
+    "backingsmall": "#t7_hud_medal_backing_gamemode",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_killed_bomb_defuser",
-    "backinglarge": "#hash_616c67b488c6314c",
+    "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
     "iconsmall": "#t7_hud_medal_killed_bomb_defuser",
     "stringref": "#hash_6a3f57c5a428861a",
-    "iconlarge": "#hash_4278cf6f88d09374"
+    "iconlarge": "#t7_hud_medal_killed_bomb_defuser_lrg"
 }

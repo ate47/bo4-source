@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_warthog_killjoy",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_3087ffc6b36c23cf",
+    "iconsmall": "#ui_icon_medal_destroy_warthog",
     "stringref": "#hash_40ca0c32f4fa9182",
-    "iconlarge": "#hash_21d2452a94d0721f"
+    "iconlarge": "#ui_icon_medal_destroy_warthog_large"
 }

@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_after_death",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_649b653e064c682e",
+    "iconsmall": "#ui_icon_medal_afterlife",
     "stringref": "#hash_359f779a3e5e50aa",
-    "iconlarge": "#hash_68b1864a1e112be"
+    "iconlarge": "#ui_icon_medal_afterlife_large"
 }

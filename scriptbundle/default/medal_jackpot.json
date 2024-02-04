@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_jackpot",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_6a4853b2a12ae20e",
+    "iconsmall": "#ui_icon_mp_jackpot",
     "stringref": "#hash_9005f35f2ca0211",
-    "iconlarge": "#hash_6a4853b2a12ae20e"
+    "iconlarge": "#ui_icon_mp_jackpot"
 }

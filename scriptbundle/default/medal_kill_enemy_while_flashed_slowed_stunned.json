@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_while_flashed_slowed_stunned",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_76ccb63610dfa9d",
+    "iconsmall": "#ui_icon_medal_blindfire",
     "stringref": "#hash_ceece76ced211ad",
-    "iconlarge": "#hash_1af2876f546d7aa1"
+    "iconlarge": "#ui_icon_medal_blindfire_large"
 }

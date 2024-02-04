@@ -3,10 +3,10 @@
     "nametext": "#hash_7d7687106254cfde",
     "categorytext": "#mpui/bm_bribe",
     "name": "bribe_menu_asset",
-    "stackimage": "#hash_48912bc9bfeb65e5",
+    "stackimage": "#ui_icon_blackmarket_reserves_weapon_bribe",
     "desctext": "#hash_14b6dedc2c899de5",
     "var_e35e7c74": "#weapon/ar_modular_t8",
     "var_76dc8b88": "#hash_2bb02b5c9a2df4cf",
-    "previewimage": "#hash_48912bc9bfeb65e5",
+    "previewimage": "#ui_icon_blackmarket_reserves_weapon_bribe",
     "var_c1acffb6": "#hash_2b27d20d2cfc1069"
 }

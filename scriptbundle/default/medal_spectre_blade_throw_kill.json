@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_spectre_blade_throw_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_40eb1f6815bf9b05",
+    "iconsmall": "#ui_icon_medal_bullseye",
     "stringref": "#hash_3865241ae4494b46",
-    "iconlarge": "#hash_5865dec042767689"
+    "iconlarge": "#ui_icon_medal_bullseye_large"
 }

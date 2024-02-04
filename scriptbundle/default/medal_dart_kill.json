@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_dart_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_1a8ea82e6c8491da",
+    "iconsmall": "#ui_icon_medal_jetfighter",
     "stringref": "#hash_1303ff4a09392a0d",
-    "iconlarge": "#hash_656a25c1ba04697a"
+    "iconlarge": "#ui_icon_medal_jetfighter_large"
 }

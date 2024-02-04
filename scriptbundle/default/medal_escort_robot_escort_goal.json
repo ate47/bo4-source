@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_escort_robot_escort_goal",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_56522151700b3f72",
+    "iconsmall": "#ui_icon_medal_delivered",
     "stringref": "#hash_3a5593cfafc966b7",
-    "iconlarge": "#hash_26b10f3c4471c972"
+    "iconlarge": "#ui_icon_medal_delivered_large"
 }

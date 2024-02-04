@@ -1,7 +1,7 @@
 {
     "callingtask": "#weapons_packed",
     "var_922067c4": "scriptbundle",
-    "image": "#hash_2f4a5e6a604831be",
+    "image": "#ui_icon_zm_calling_tasks_wpnspacked",
     "dailytarget": 5,
     "name": "packmule_task",
     "taskname": "#hash_4e141bff36e4287c",

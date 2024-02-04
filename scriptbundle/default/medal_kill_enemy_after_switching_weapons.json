@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_after_switching_weapons",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_2773770bf0073935",
+    "iconsmall": "#ui_icon_medal_hot_swap",
     "stringref": "#hash_1757a9e5e0d0a56a",
-    "iconlarge": "#hash_5ff68af98fb4eef9"
+    "iconlarge": "#ui_icon_medal_hot_swap_large"
 }

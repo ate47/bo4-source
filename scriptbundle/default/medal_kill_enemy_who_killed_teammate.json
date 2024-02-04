@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_who_killed_teammate",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_7581530dfa4b0d40",
+    "iconsmall": "#ui_icon_medal_avenger",
     "stringref": "#hash_12aa23dad71fcef0",
-    "iconlarge": "#hash_5ae39cb8717a83bc"
+    "iconlarge": "#ui_icon_medal_avenger_large"
 }

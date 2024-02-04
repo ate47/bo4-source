@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_619a2403e761ca79",
+    "backingsmall": "#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_stop_enemy_killstreak",
-    "backinglarge": "#hash_59cffd7b8f76506d",
+    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#t7_hud_medal_stop_enemy_killstreak",
     "stringref": "#hash_38eae8b924fea5d",
-    "iconlarge": "#hash_70a183e29f5ba3a3"
+    "iconlarge": "#t7_hud_medal_stop_enemy_killstreak_lrg"
 }

@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_swat_team_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_76694e46c453e600",
+    "iconsmall": "#ui_icon_medal_strike_team",
     "stringref": "#hash_344572f2f68178cf",
-    "iconlarge": "#hash_1749b97f0b54df7c"
+    "iconlarge": "#ui_icon_medal_strike_team_large"
 }

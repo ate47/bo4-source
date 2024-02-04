@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_bomb_detonated",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_4402cf2191dcd195",
+    "iconsmall": "#ui_icon_medal_bomber",
     "stringref": "#hash_2623f29090c7ebfe",
-    "iconlarge": "#hash_b12f125027b7d99"
+    "iconlarge": "#ui_icon_medal_bomber_large"
 }

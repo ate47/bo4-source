@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_72651b15424021d0",
+    "backingsmall": "#t7_hud_medal_backing_gamemode",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_koth_secure",
-    "backinglarge": "#hash_616c67b488c6314c",
+    "backinglarge": "#t7_hud_medal_backing_gamemode_lrg",
     "iconsmall": "#t7_hud_medal_koth_secure",
     "stringref": "#hash_4c2f2e09e5e76829",
-    "iconlarge": "#hash_1828e486f7af61fb"
+    "iconlarge": "#t7_hud_medal_koth_secure_lrg"
 }

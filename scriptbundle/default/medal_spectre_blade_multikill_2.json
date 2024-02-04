@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_spectre_blade_multikill_2",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_468c19bc278e5e64",
+    "iconsmall": "#ui_icon_medal_whirlwind",
     "stringref": "#hash_4bac34c02176b4cd",
     "iconlarge": "#hash_5b9ecfca39afa410"
 }

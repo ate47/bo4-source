@@ -1,8 +1,8 @@
 {
-    "backingsmall": "#hash_619a2403e761ca79",
+    "backingsmall": "#t7_hud_medal_backing_badassery",
     "widget": "BadasseryMedal",
     "name": "medal_killed_dog",
-    "backinglarge": "#hash_59cffd7b8f76506d",
+    "backinglarge": "#t7_hud_medal_backing_badassery_lrg",
     "iconsmall": "#hash_ae5818ba2ac71d5",
     "stringref": "#hash_597c8b08cfbefe45",
     "iconlarge": "#hash_ae5818ba2ac71d5"

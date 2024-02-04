@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_warthog_kill",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_4301946fe9c3c113",
+    "iconsmall": "#ui_icon_medal_cropduster",
     "stringref": "#hash_479667c41c171e54",
-    "iconlarge": "#hash_67c6b1c3025bae73"
+    "iconlarge": "#ui_icon_medal_cropduster_large"
 }

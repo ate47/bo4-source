@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_uninterrupted_obit_feed_kills",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_658f7917d1d3cddd",
+    "iconsmall": "#ui_icon_medal_quadfeed",
     "stringref": "#hash_1019a96721546d54",
-    "iconlarge": "#hash_3e02a245483354e1"
+    "iconlarge": "#ui_icon_medal_quadfeed_large"
 }

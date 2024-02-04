@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_killed_enemy_while_carrying_flag",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_b8d285a687a1e4d",
+    "iconsmall": "#ui_icon_medal_denied",
     "stringref": "#hash_3c7dadd64b7f725e",
     "iconlarge": "#hash_27a971d64fd423d1"
 }

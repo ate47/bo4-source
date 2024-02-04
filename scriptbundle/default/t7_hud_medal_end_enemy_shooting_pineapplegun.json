@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_1010c0ee21b1881d",
+    "backingsmall": "#t7_hud_medal_backing_specialist_killjoy",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_end_enemy_shooting_pineapplegun",
-    "backinglarge": "#hash_735c5e3788111659",
+    "backinglarge": "#t7_hud_medal_backing_specialist_killjoy_lrg",
     "iconsmall": "#t7_hud_medal_end_enemy_shooting_pineapplegun",
     "stringref": "#hash_47979b3daedb3db8",
-    "iconlarge": "#hash_2c8eda9d89dd0e76"
+    "iconlarge": "#t7_hud_medal_end_enemy_shooting_pineapplegun_lrg"
 }

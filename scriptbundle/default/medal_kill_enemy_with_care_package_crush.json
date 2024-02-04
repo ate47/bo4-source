@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_kill_enemy_with_care_package_crush",
     "backinglarge": "#$whitetransparent",
-    "iconsmall": "#hash_5a47158d159d7501",
+    "iconsmall": "#ui_icon_medal_pancake",
     "stringref": "#hash_2348fedacbc6021e",
-    "iconlarge": "#hash_38553d190d654f85"
+    "iconlarge": "#ui_icon_medal_pancake_large"
 }

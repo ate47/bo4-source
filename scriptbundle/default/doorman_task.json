@@ -1,7 +1,7 @@
 {
     "callingtask": "#doorbuys",
     "var_922067c4": "scriptbundle",
-    "image": "#hash_82da26fe80fb3f",
+    "image": "#ui_icon_zm_calling_tasks_doorbuys",
     "dailytarget": 20,
     "name": "doorman_task",
     "taskname": "#hash_2c1431ac4324834",

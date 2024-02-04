@@ -1,9 +1,9 @@
 {
-    "backingsmall": "#hash_2bac769662d3625",
+    "backingsmall": "#t7_hud_medal_backing_match_completion",
     "widget": "BadasseryMedal",
     "name": "t7_hud_medal_completed_match",
-    "backinglarge": "#hash_752aec347ecb7cc1",
+    "backinglarge": "#t7_hud_medal_backing_match_completion_lrg",
     "iconsmall": "#t7_hud_medal_completed_match",
     "stringref": "#hash_87a8659a829da3c",
-    "iconlarge": "#hash_8e54fcd0656a29e"
+    "iconlarge": "#t7_hud_medal_completed_match_lrg"
 }
