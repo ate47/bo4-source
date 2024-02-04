@@ -6,7 +6,7 @@ Dump of some parts of BO4 using [Atian Call of Duty Tools](https://github.com/at
 
 ## Want to earn $50?
 
-I'M NOT JOKING, I WILL GIVE **\$50** TO ANYONE ABLE TO GIVE ME ONE THE UNHASHED VALUE OF ONE OF THESE GROUP: (Or **\$100** IF YOU FIND ONE FROM BOTH GROUP)
+I'M NOT JOKING, I WILL GIVE **\$50** TO ANYONE ABLE TO GIVE ME AN UNHASHED VALUE OF ONE OF THESE GROUPS: (Or **\$100** IF YOU FIND ONE FROM BOTH GROUPS)
 
 ```
 Alistair's Folly - hash_138efe2bb30be63c
