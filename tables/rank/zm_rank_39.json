@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_39",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_669a4605a7db5247",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10961bb1860a0d9",
+    "iconNameLarge": "#hash_6b48b2a3f2d7bb7d",
+    "level": 39,
+    "minXp": 655600,
+    "maxXp": 691400,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#zm_bgb_newtonian_negation"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_47",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_a621b79aa9abfdd",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f86bbb18523ea4",
+    "iconNameLarge": "#hash_3d6dbe29df034350",
+    "level": 47,
+    "minXp": 975800,
+    "maxXp": 1021600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#launcher_standard_t8"
+        }
+    ]
+}

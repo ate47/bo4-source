@@ -1,0 +1,17 @@
+{
+    "name": "#hash_3f45cd7111b7111a",
+    "shortNameRef": "#hash_16e4de5af15a7647",
+    "fullNameRef": "#hash_628e15c735a4a36d",
+    "ingameNameRef": "#hash_293c5db1367379b7",
+    "iconName": "#hash_75c803a2fc2f8a3f",
+    "iconNameLarge": "#hash_69f69e53facfa4cf",
+    "level": 19,
+    "minXp": 172800,
+    "maxXp": 189600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#lmg_spray_t8"
+        }
+    ]
+}

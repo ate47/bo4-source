@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_01",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_5322dbff20cf2726",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10661bb185e6b02",
+    "iconNameLarge": "#hash_7612387b090b36c2",
+    "level": 1,
+    "minXp": 0,
+    "maxXp": 2500,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#pistol_topbreak_t8"
+        }
+    ]
+}

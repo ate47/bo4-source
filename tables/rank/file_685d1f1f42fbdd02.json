@@ -1,0 +1,17 @@
+{
+    "name": "#hash_685d1f1f42fbdd02",
+    "shortNameRef": "#hash_16e4de5af15a7647",
+    "fullNameRef": "#hash_1c125f8026c198ba",
+    "ingameNameRef": "#hash_293c5db1367379b7",
+    "iconName": "#hash_75d27ba2fc38aaac",
+    "iconNameLarge": "#hash_474100ac1710bef8",
+    "level": 21,
+    "minXp": 207200,
+    "maxXp": 225600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#planemortar"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "#hash_25b8a1b3b484199",
+    "shortNameRef": "#hash_6f5641149d5ff8e2",
+    "fullNameRef": "#hash_68d2e69e450d9563",
+    "ingameNameRef": "#hash_2d61ebef574c0ccb",
+    "iconName": "#hash_75c80ca2fc2f998a",
+    "iconNameLarge": "#hash_256045549c281bea",
+    "level": 12,
+    "minXp": 77600,
+    "maxXp": 88800,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_flakjacket"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#supplydrop_marker"
+        }
+    ]
+}

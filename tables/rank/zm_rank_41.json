@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_41",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_33776f9c39ad1b1c",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f869bb18523b3e",
+    "iconNameLarge": "#hash_5af96d951bb7c44e",
+    "level": 41,
+    "minXp": 728400,
+    "maxXp": 766600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#shotgun_semiauto_t8"
+        }
+    ]
+}

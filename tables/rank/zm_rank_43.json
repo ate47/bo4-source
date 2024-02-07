@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_43",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_3b2a5d0d4332eb33",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f867bb185237d8",
+    "iconNameLarge": "#hash_3f550b4b27309914",
+    "level": 43,
+    "minXp": 806000,
+    "maxXp": 846600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_custom_class_6"
+        }
+    ]
+}

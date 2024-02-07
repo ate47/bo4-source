@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_07",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_747e549b9f9010c2",
+    "ingameNameRef": "#",
+    "iconName": "#hash_1065bbb185e60d0",
+    "iconNameLarge": "#hash_ea8bb959a0b81cc",
+    "level": 7,
+    "minXp": 24100,
+    "maxXp": 30500,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#zm_bgb_point_drops"
+        }
+    ]
+}

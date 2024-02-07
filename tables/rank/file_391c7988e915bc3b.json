@@ -1,0 +1,37 @@
+{
+    "name": "#hash_391c7988e915bc3b",
+    "shortNameRef": "#hash_5636e1148f63f35b",
+    "fullNameRef": "#hash_1bc2585f5c5f1431",
+    "ingameNameRef": "#hash_16a8dcec4333224c",
+    "iconName": "#hash_75cb8fa2fc32adfa",
+    "iconNameLarge": "#ui_icon_rank_mp_level01_large",
+    "level": 1,
+    "minXp": 0,
+    "maxXp": 4000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_default_class_1"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_default_class_2"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_default_class_3"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#uav"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#remote_missile"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#artillery_barrage"
+        }
+    ]
+}

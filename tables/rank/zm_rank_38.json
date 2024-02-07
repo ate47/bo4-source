@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_38",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_96455dd31d897f",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10960bb18609f26",
+    "iconNameLarge": "#hash_3b1aba06213e17d6",
+    "level": 38,
+    "minXp": 621000,
+    "maxXp": 655600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#perk_additional_primary_weapon"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "#hash_268c609d62d79847",
+    "shortNameRef": "#hash_5790f73527b8ca2",
+    "fullNameRef": "#hash_9430467bad344a3",
+    "ingameNameRef": "#hash_fe1494274c41b8b",
+    "iconName": "#hash_75ba73a2fc240b33",
+    "iconNameLarge": "#hash_ec89c9417438e53",
+    "level": 51,
+    "minXp": 1191200,
+    "maxXp": 1242000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#drone_squadron"
+        }
+    ]
+}

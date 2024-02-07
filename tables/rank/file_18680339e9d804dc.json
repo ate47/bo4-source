@@ -1,0 +1,17 @@
+{
+    "name": "#hash_18680339e9d804dc",
+    "shortNameRef": "#hash_61f6fa0707abf5a5",
+    "fullNameRef": "#hash_57b49d64dafa837",
+    "ingameNameRef": "#hash_3d360394844663a2",
+    "iconName": "#hash_75c80da2fc2f9b3d",
+    "iconNameLarge": "#hash_65acd1e753c89d01",
+    "level": 13,
+    "minXp": 88800,
+    "maxXp": 100800,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#smg_accurate_t8"
+        }
+    ]
+}

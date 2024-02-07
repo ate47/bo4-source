@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_13",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_1f95c174acd689b6",
+    "ingameNameRef": "#",
+    "iconName": "#hash_102dfbb185b5845",
+    "iconNameLarge": "#hash_7c76fe86f1005ec9",
+    "level": 13,
+    "minXp": 74500,
+    "maxXp": 85700,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ar_fastfire_t8"
+        }
+    ]
+}

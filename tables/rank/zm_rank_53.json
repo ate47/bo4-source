@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_53",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_22bfafa78718bc72",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f567bb18500201",
+    "iconNameLarge": "#hash_278800d7d34b485",
+    "level": 53,
+    "minXp": 1271600,
+    "maxXp": 1326000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ar_stealth_t8"
+        }
+    ]
+}

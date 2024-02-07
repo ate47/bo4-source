@@ -1,0 +1,17 @@
+{
+    "name": "#hash_23b90a9c314f547e",
+    "shortNameRef": "#hash_60a71e4011bfb8e3",
+    "fullNameRef": "#hash_6fab4777af78a9de",
+    "ingameNameRef": "#hash_3913205f2a58ea94",
+    "iconName": "#hash_75d278a2fc38a593",
+    "iconNameLarge": "#hash_c0a39fe239d8ef3",
+    "level": 24,
+    "minXp": 264800,
+    "maxXp": 285600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_resistance"
+        }
+    ]
+}

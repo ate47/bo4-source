@@ -1,0 +1,21 @@
+{
+    "name": "#hash_25adb73403fd21ef",
+    "shortNameRef": "#hash_193a928446b1e28c",
+    "fullNameRef": "#hash_7c493b04ce84cdf0",
+    "ingameNameRef": "#hash_2019e3ee7104d6a9",
+    "iconName": "#hash_75bdf5a2fc271df0",
+    "iconNameLarge": "#hash_2b335e6b5b26fcac",
+    "level": 43,
+    "minXp": 828000,
+    "maxXp": 869200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#sniper_quickscope_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#pistol_revolver_t8"
+        }
+    ]
+}

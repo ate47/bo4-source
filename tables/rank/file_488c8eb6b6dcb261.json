@@ -1,0 +1,25 @@
+{
+    "name": "#hash_488c8eb6b6dcb261",
+    "shortNameRef": "#hash_72b65a54dc1b2511",
+    "fullNameRef": "#hash_4aff9648156dec10",
+    "ingameNameRef": "#hash_5ecdda7c6a46fe0e",
+    "iconName": "#hash_75cb8aa2fc32a57b",
+    "iconNameLarge": "#hash_d7d7441f5ecf1db",
+    "level": 6,
+    "minXp": 26000,
+    "maxXp": 33000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_custom_class_4"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#tr_powersemi_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#gear_armor"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "#hash_5fa03e9fe0c414ff",
+    "shortNameRef": "#hash_7bbcc914ed69aed2",
+    "fullNameRef": "#hash_4fc177994e136833",
+    "ingameNameRef": "#hash_1a95967fac321dbb",
+    "iconName": "#hash_75bdf6a2fc271fa3",
+    "iconNameLarge": "#hash_2bbf801a85d52f03",
+    "level": 42,
+    "minXp": 788000,
+    "maxXp": 828000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#frag_grenade"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_dexterity"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_16",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_490752af69f1e01a",
+    "ingameNameRef": "#",
+    "iconName": "#hash_102dabb185b4fc6",
+    "iconNameLarge": "#hash_49d3fc883c1d21b6",
+    "level": 16,
+    "minXp": 110500,
+    "maxXp": 124100,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#tr_leveraction_t8"
+        }
+    ]
+}

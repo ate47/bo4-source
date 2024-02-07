@@ -1,0 +1,105 @@
+{
+    "name": "#hash_2e7cd0fd70fd1f3",
+    "shortNameRef": "#hash_72b65a54dc1b2511",
+    "fullNameRef": "#hash_4aff9748156dedc3",
+    "ingameNameRef": "#hash_5ecdda7c6a46fe0e",
+    "iconName": "#hash_75cb8ba2fc32a72e",
+    "iconNameLarge": "#hash_163baf23c5df19be",
+    "level": 5,
+    "minXp": 19600,
+    "maxXp": 26000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_cac"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_custom_class_1"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_custom_class_2"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_custom_class_3"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ar_accurate_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#pistol_standard_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#smg_standard_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#lmg_standard_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#launcher_standard_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#gear_equipmentcharge"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#gear_medicalinjectiongun"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#gear_scorestreakcharge"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#default_specialist_equipment"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_engineer"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_scavenger"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_teamlink"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_skulker"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_lightweight"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_ghost"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_primary_gunfighter"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_secondary_gunfighter"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_primary_operator_mod"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_secondary_operator_mod"
+        }
+    ]
+}

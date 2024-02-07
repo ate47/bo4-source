@@ -1,0 +1,17 @@
+{
+    "name": "#hash_714bed9efc78075",
+    "shortNameRef": "#hash_7bc6d314ed721455",
+    "fullNameRef": "#hash_7c493fec470a479c",
+    "ingameNameRef": "#hash_3986707cb56dd192",
+    "iconName": "#hash_75cef5a2fc359123",
+    "iconNameLarge": "#hash_bf7ded20e557483",
+    "level": 33,
+    "minXp": 482000,
+    "maxXp": 511200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#dart"
+        }
+    ]
+}

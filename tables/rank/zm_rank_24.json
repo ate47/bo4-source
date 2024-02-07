@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_24",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_30015936c4b156d4",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10ceabb1863bf7b",
+    "iconNameLarge": "#hash_53e992b9b0f7bbdb",
+    "level": 24,
+    "minXp": 243800,
+    "maxXp": 264500,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#pistol_standard_t8"
+        }
+    ]
+}

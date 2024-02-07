@@ -1,0 +1,17 @@
+{
+    "name": "#wz_rank_81",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_11e01d65fbe7f99b",
+    "ingameNameRef": "#",
+    "iconName": "#hash_1d36bec34f64430f",
+    "iconNameLarge": "#ui_icon_rank_wz_master_large",
+    "level": 81,
+    "minXp": 442000,
+    "maxXp": 442000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#hash_45ab658116b45cd3"
+        }
+    ]
+}

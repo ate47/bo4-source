@@ -1,0 +1,21 @@
+{
+    "name": "#hash_604e18c20d7a4aa0",
+    "shortNameRef": "#rank/com",
+    "fullNameRef": "#hash_5444d0d0e06651d7",
+    "ingameNameRef": "#hash_5444d0d0e06651d7",
+    "iconName": "#hash_75ba77a2fc2411ff",
+    "iconNameLarge": "#hash_3ae499c876fb2d8f",
+    "level": 55,
+    "minXp": 1401600,
+    "maxXp": 1457200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#tr_longburst_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#knife_loadout"
+        }
+    ]
+}

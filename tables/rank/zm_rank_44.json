@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_44",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_3be71e892f8552b3",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f86ebb185243bd",
+    "iconNameLarge": "#hash_4be091a786532181",
+    "level": 44,
+    "minXp": 846600,
+    "maxXp": 888400,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#smg_handling_t8"
+        }
+    ]
+}

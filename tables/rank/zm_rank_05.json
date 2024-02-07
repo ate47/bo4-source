@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_05",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_27be7d22dcb92638",
+    "ingameNameRef": "#",
+    "iconName": "#hash_1065dbb185e6436",
+    "iconNameLarge": "#hash_40d66f13482114a6",
+    "level": 5,
+    "minXp": 13400,
+    "maxXp": 18400,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ar_accurate_t8"
+        }
+    ]
+}

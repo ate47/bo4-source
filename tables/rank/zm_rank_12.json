@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_12",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_1f95c274acd68b69",
+    "ingameNameRef": "#",
+    "iconName": "#hash_102debb185b5692",
+    "iconNameLarge": "#hash_2894f7274230bfd2",
+    "level": 12,
+    "minXp": 64100,
+    "maxXp": 74500,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#smg_drum_pistol_t8"
+        }
+    ]
+}

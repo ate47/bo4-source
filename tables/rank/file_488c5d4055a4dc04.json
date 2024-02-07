@@ -1,0 +1,21 @@
+{
+    "name": "#hash_488c5d4055a4dc04",
+    "shortNameRef": "#hash_7bc6d314ed721455",
+    "fullNameRef": "#hash_23499cb7918633c7",
+    "ingameNameRef": "#hash_3986707cb56dd192",
+    "iconName": "#hash_75cef7a2fc359489",
+    "iconNameLarge": "#hash_5ce968d825cd46ad",
+    "level": 31,
+    "minXp": 427200,
+    "maxXp": 454000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#sniper_powersemi_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#shotgun_semiauto_t8"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_03",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_5f6b924ad203f4db",
+    "ingameNameRef": "#",
+    "iconName": "#hash_1065fbb185e679c",
+    "iconNameLarge": "#hash_4f3130a37306efa8",
+    "level": 3,
+    "minXp": 5500,
+    "maxXp": 9100,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#zm_bgb_aftertaste"
+        }
+    ]
+}

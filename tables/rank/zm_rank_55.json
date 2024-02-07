@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_55",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_5c829b7487a4b2d7",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f569bb18500567",
+    "iconNameLarge": "#hash_7040395eb3975737",
+    "level": 55,
+    "minXp": 1382000,
+    "maxXp": 1439600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#lmg_double_t8"
+        }
+    ]
+}

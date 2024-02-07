@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_17",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_490753af69f1e1cd",
+    "ingameNameRef": "#",
+    "iconName": "#hash_102dbbb185b5179",
+    "iconNameLarge": "#hash_7417391a560444dd",
+    "level": 17,
+    "minXp": 124100,
+    "maxXp": 138500,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#sniper_powersemi_t8"
+        }
+    ]
+}

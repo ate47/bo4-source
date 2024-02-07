@@ -1,0 +1,21 @@
+{
+    "name": "#hash_58dbbe46147f6315",
+    "shortNameRef": "#hash_61f6fa0707abf5a5",
+    "fullNameRef": "#hash_267b26017a7ecc",
+    "ingameNameRef": "#hash_3d360394844663a2",
+    "iconName": "#hash_75c807a2fc2f910b",
+    "iconNameLarge": "#hash_8b7ec49bdf38f2b",
+    "level": 15,
+    "minXp": 113600,
+    "maxXp": 127200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_coldblooded"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#overwatch_helicopter"
+        }
+    ]
+}

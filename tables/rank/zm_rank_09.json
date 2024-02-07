@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_09",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_2bab57021ccc983",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10669bb185e789a",
+    "iconNameLarge": "#hash_1fea5223b1a9a43a",
+    "level": 9,
+    "minXp": 37700,
+    "maxXp": 45700,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#lmg_standard_t8"
+        }
+    ]
+}

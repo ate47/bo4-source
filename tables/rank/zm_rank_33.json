@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_33",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_2e4fd5349586683f",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10967bb1860ab0b",
+    "iconNameLarge": "#hash_4f240ac178fe592b",
+    "level": 33,
+    "minXp": 464000,
+    "maxXp": 493400,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#sniper_powerbolt_t8"
+        }
+    ]
+}

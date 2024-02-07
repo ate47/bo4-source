@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_23",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_4047bc9c14761bee",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10cefbb1863c7fa",
+    "iconNameLarge": "#hash_4883b23652b6d55a",
+    "level": 23,
+    "minXp": 224000,
+    "maxXp": 243800,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#zm_bgb_arsenal_accelerator"
+        }
+    ]
+}

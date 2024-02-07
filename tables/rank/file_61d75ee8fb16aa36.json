@@ -1,0 +1,17 @@
+{
+    "name": "#hash_61d75ee8fb16aa36",
+    "shortNameRef": "#hash_615d4d733d9df2f2",
+    "fullNameRef": "#hash_5283df5ec2cff912",
+    "ingameNameRef": "#hash_2e28e28b8ff8015b",
+    "iconName": "#hash_75cef9a2fc3597ef",
+    "iconNameLarge": "#hash_3b38c89bbf9e4dff",
+    "level": 37,
+    "minXp": 606000,
+    "maxXp": 640000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ar_stealth_t8"
+        }
+    ]
+}

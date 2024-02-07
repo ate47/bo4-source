@@ -1,0 +1,21 @@
+{
+    "name": "#hash_7358610a60eeeaef",
+    "shortNameRef": "#hash_45e0cd14ce5ed260",
+    "fullNameRef": "#hash_25007f98c7a5f002",
+    "ingameNameRef": "#hash_4933e9b3def887d",
+    "iconName": "#hash_75cefba2fc359b55",
+    "iconNameLarge": "#hash_1d07ff8af9c2a759",
+    "level": 35,
+    "minXp": 541600,
+    "maxXp": 573200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#hatchet"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_secondary_gunfighter_3"
+        }
+    ]
+}

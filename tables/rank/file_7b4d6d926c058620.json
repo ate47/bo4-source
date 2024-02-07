@@ -1,0 +1,17 @@
+{
+    "name": "#hash_7b4d6d926c058620",
+    "shortNameRef": "#hash_6f5641149d5ff8e2",
+    "fullNameRef": "#hash_5328450d4f9b65a2",
+    "ingameNameRef": "#hash_2d61ebef574c0ccb",
+    "iconName": "#hash_75c80aa2fc2f9624",
+    "iconNameLarge": "#hash_5739fe69ac78bed0",
+    "level": 10,
+    "minXp": 57600,
+    "maxXp": 67200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ar_damage_t8"
+        }
+    ]
+}

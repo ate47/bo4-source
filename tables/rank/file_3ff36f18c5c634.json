@@ -1,0 +1,17 @@
+{
+    "name": "#hash_3ff36f18c5c634",
+    "shortNameRef": "#rank/lt",
+    "fullNameRef": "#hash_2a83f1c64fc8d3ca",
+    "ingameNameRef": "#hash_82899f993357fd5",
+    "iconName": "#hash_75d283a2fc38b844",
+    "iconNameLarge": "#hash_49909fa352b98430",
+    "level": 29,
+    "minXp": 376800,
+    "maxXp": 401600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#trophy_system"
+        }
+    ]
+}

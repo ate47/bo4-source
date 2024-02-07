@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_14",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_1f95c474acd68ecf",
+    "ingameNameRef": "#",
+    "iconName": "#hash_102d8bb185b4c60",
+    "iconNameLarge": "#hash_15a2be31f50f459c",
+    "level": 14,
+    "minXp": 85700,
+    "maxXp": 97700,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#perk_tortoise"
+        }
+    ]
+}

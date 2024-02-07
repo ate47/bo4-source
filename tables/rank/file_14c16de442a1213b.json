@@ -1,0 +1,17 @@
+{
+    "name": "#hash_14c16de442a1213b",
+    "shortNameRef": "#hash_7bbcc914ed69aed2",
+    "fullNameRef": "#hash_4fc176994e136680",
+    "ingameNameRef": "#hash_1a95967fac321dbb",
+    "iconName": "#hash_75bdf7a2fc272156",
+    "iconNameLarge": "#hash_122ef87210597306",
+    "level": 41,
+    "minXp": 749200,
+    "maxXp": 788000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ai_tank_marker"
+        }
+    ]
+}

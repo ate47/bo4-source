@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_51",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_5ec34c74521ce4f5",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f565bb184ffe9b",
+    "iconNameLarge": "#hash_219cd3ea9f6b9a3b",
+    "level": 51,
+    "minXp": 1167400,
+    "maxXp": 1218800,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#sniper_quickscope_t8"
+        }
+    ]
+}

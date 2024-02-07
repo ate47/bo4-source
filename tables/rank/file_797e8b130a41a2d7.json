@@ -1,0 +1,17 @@
+{
+    "name": "#hash_797e8b130a41a2d7",
+    "shortNameRef": "#hash_5790f73527b8ca2",
+    "fullNameRef": "#hash_9430367bad342f0",
+    "ingameNameRef": "#hash_fe1494274c41b8b",
+    "iconName": "#hash_75ba72a2fc240980",
+    "iconNameLarge": "#hash_4e7b50015fa1c6fc",
+    "level": 50,
+    "minXp": 1141600,
+    "maxXp": 1191200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_underkill"
+        }
+    ]
+}

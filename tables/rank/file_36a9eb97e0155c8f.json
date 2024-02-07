@@ -1,0 +1,17 @@
+{
+    "name": "#hash_36a9eb97e0155c8f",
+    "shortNameRef": "#hash_615d4d733d9df2f2",
+    "fullNameRef": "#hash_60daf0507645313",
+    "ingameNameRef": "#hash_2e28e28b8ff8015b",
+    "iconName": "#hash_75ceffa2fc35a221",
+    "iconNameLarge": "#hash_5c0ce0524c6bde65",
+    "level": 39,
+    "minXp": 675200,
+    "maxXp": 711600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#swat_team"
+        }
+    ]
+}

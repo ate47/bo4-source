@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_36",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_96435dd31d8619",
+    "ingameNameRef": "#",
+    "iconName": "#hash_1096abb1860b024",
+    "iconNameLarge": "#hash_1da61ce1678388d0",
+    "level": 36,
+    "minXp": 555200,
+    "maxXp": 587600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#pistol_burst_t8"
+        }
+    ]
+}

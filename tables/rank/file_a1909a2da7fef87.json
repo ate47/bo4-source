@@ -1,0 +1,17 @@
+{
+    "name": "#hash_a1909a2da7fef87",
+    "shortNameRef": "#rank/lt",
+    "fullNameRef": "#hash_2a83f2c64fc8d57d",
+    "ingameNameRef": "#hash_82899f993357fd5",
+    "iconName": "#hash_75cef6a2fc3592d6",
+    "iconNameLarge": "#hash_7267572998d9b886",
+    "level": 30,
+    "minXp": 401600,
+    "maxXp": 427200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#talent_gungho"
+        }
+    ]
+}

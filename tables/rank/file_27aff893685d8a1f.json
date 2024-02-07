@@ -1,0 +1,17 @@
+{
+    "name": "#hash_27aff893685d8a1f",
+    "shortNameRef": "#hash_6f5641149d5ff8e2",
+    "fullNameRef": "#hash_68d2e59e450d93b0",
+    "ingameNameRef": "#hash_2d61ebef574c0ccb",
+    "iconName": "#hash_75c80ba2fc2f97d7",
+    "iconNameLarge": "#hash_337f1e69a5b30a27",
+    "level": 11,
+    "minXp": 67200,
+    "maxXp": 77600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_perk_1_greed"
+        }
+    ]
+}

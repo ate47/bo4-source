@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_02",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_1362e684bfff66fc",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10660bb185e694f",
+    "iconNameLarge": "#hash_67f1c7135e02eb9f",
+    "level": 2,
+    "minXp": 2500,
+    "maxXp": 5500,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#perk_stronghold"
+        }
+    ]
+}

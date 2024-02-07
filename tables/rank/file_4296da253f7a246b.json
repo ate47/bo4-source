@@ -1,0 +1,17 @@
+{
+    "name": "#hash_4296da253f7a246b",
+    "shortNameRef": "#hash_18f4f0fb136da8ee",
+    "fullNameRef": "#hash_5e4ccd68480d0cae",
+    "ingameNameRef": "#hash_293c5db1367379b7",
+    "iconName": "#hash_75c808a2fc2f92be",
+    "iconNameLarge": "#hash_74c5add4e92d3fce",
+    "level": 16,
+    "minXp": 127200,
+    "maxXp": 141600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#sniper_fastrechamber_t8"
+        }
+    ]
+}

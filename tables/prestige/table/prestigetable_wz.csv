@@ -1,0 +1,12 @@
+iconId,name,displayName,unlockLevel,winsRequired,titleOfOrigin,iconName,iconNameLarge
+0,#prestige1_wz,#hash_6607ad040a1ddc32,1,0,4,#hash_1ded44589ba68f9a,#hash_449a4e85580c33a
+1,#prestige2_wz,#hash_6607ac040a1dda7f,2,0,4,#hash_1ded43589ba68de7,#hash_34d7eadadfeebbb7
+2,#prestige3_wz,#hash_6607ab040a1dd8cc,3,0,4,#hash_1ded42589ba68c34,#hash_6051f37b309323a0
+3,#prestige4_wz,#hash_6607aa040a1dd719,4,0,4,#hash_1ded41589ba68a81,#hash_47103189a98c1905
+4,#prestige5_wz,#hash_6607a9040a1dd566,5,0,4,#hash_1ded40589ba688ce,#hash_587a5a8c0cc6a49e
+5,#prestige6_wz,#hash_6607a8040a1dd3b3,6,0,4,#hash_1ded3f589ba6871b,#hash_66348566cbc2febb
+6,#prestige7_wz,#hash_6607a7040a1dd200,7,0,4,#hash_1ded3e589ba68568,#hash_787e085f54d3aa4
+7,#prestige8_wz,#hash_6607b6040a1deb7d,8,0,4,#hash_1ded3d589ba683b5,#hash_7eb994b69c4b8579
+8,#prestige9_wz,#hash_6607b5040a1de9ca,9,0,4,#hash_1ded3c589ba68202,#hash_5a718b3face255c2
+9,#prestige10_wz,#hash_7ce6ffdd30bcd766,10,0,4,#hash_1de9bf589ba377c4,#hash_1423b228291b27b0
+10,#prestigemaster_wz,#hash_b62a7039a8984cd,11,0,4,#hash_5d49b667c0f0d813,#hash_166cc01c722fcd73

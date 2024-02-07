@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_50",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_3f7498bce4f418eb",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f564bb184ffce8",
+    "iconNameLarge": "#hash_42f02f09c8f5d624",
+    "level": 50,
+    "minXp": 1117400,
+    "maxXp": 1167400,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#shotgun_pump_t8"
+        }
+    ]
+}

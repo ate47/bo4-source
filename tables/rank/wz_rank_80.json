@@ -1,0 +1,17 @@
+{
+    "name": "#wz_rank_80",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_1a3a998eb2bfd676",
+    "ingameNameRef": "#",
+    "iconName": "#hash_485b6a52aa80d6c1",
+    "iconNameLarge": "#ui_icon_rank_wz_level80_large",
+    "level": 80,
+    "minXp": 414500,
+    "maxXp": 442000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#hash_4e7d988ca7086770"
+        }
+    ]
+}

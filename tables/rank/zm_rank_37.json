@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_37",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_96425dd31d8466",
+    "ingameNameRef": "#",
+    "iconName": "#hash_1096bbb1860b1d7",
+    "iconNameLarge": "#hash_79eb3ce160bdd427",
+    "level": 37,
+    "minXp": 587600,
+    "maxXp": 621000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#tr_midburst_t8"
+        }
+    ]
+}

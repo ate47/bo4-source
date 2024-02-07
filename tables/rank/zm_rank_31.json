@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_31",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_225cb91f4fcac176",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10969bb1860ae71",
+    "iconNameLarge": "#hash_6aed9b51354dce35",
+    "level": 31,
+    "minXp": 408200,
+    "maxXp": 435600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#zm_bgb_pop_shocks"
+        }
+    ]
+}

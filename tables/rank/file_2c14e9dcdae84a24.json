@@ -1,0 +1,17 @@
+{
+    "name": "#hash_2c14e9dcdae84a24",
+    "shortNameRef": "#hash_5d4e17f8ce7586a",
+    "fullNameRef": "#hash_17df3dc03553754a",
+    "ingameNameRef": "#hash_61e82db875597df3",
+    "iconName": "#hash_75bdfaa2fc27266f",
+    "iconNameLarge": "#hash_5b0069e4371e087f",
+    "level": 46,
+    "minXp": 955200,
+    "maxXp": 1000000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#lmg_heavy_t8"
+        }
+    ]
+}

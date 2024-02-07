@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_11",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_6b6746cda81f1841",
+    "ingameNameRef": "#",
+    "iconName": "#hash_102ddbb185b54df",
+    "iconNameLarge": "#hash_716429cb230551af",
+    "level": 11,
+    "minXp": 54500,
+    "maxXp": 64100,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#zm_bgb_anti_entrapment"
+        }
+    ]
+}

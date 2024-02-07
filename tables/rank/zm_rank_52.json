@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_52",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_22bfb0a78718be25",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f566bb1850004e",
+    "iconNameLarge": "#hash_13e2a90fe06f401e",
+    "level": 52,
+    "minXp": 1218800,
+    "maxXp": 1271600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#tr_powersemi_t8"
+        }
+    ]
+}

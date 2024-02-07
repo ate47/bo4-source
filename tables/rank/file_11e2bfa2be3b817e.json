@@ -1,0 +1,17 @@
+{
+    "name": "#hash_11e2bfa2be3b817e",
+    "shortNameRef": "#hash_60a71e4011bfb8e3",
+    "fullNameRef": "#hash_6fab4877af78ab91",
+    "ingameNameRef": "#hash_3913205f2a58ea94",
+    "iconName": "#hash_75d27da2fc38ae12",
+    "iconNameLarge": "#hash_426137670fa63b52",
+    "level": 23,
+    "minXp": 244800,
+    "maxXp": 264800,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_primary_gunfighter_2"
+        }
+    ]
+}

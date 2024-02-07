@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_35",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_4678697d9141fb31",
+    "ingameNameRef": "#",
+    "iconName": "#hash_1096dbb1860b53d",
+    "iconNameLarge": "#hash_2c18f05f0ed36701",
+    "level": 35,
+    "minXp": 523800,
+    "maxXp": 555200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#zm_bgb_stock_option"
+        }
+    ]
+}

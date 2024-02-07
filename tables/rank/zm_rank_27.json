@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_27",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_22f76a2f0d05e31f",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10cebbb1863c12e",
+    "iconNameLarge": "#hash_5ca7cd9b80e9e3be",
+    "level": 27,
+    "minXp": 308600,
+    "maxXp": 332000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_custom_class_5"
+        }
+    ]
+}

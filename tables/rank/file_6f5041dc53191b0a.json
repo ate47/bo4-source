@@ -1,0 +1,17 @@
+{
+    "name": "#hash_6f5041dc53191b0a",
+    "shortNameRef": "#hash_45e0cd14ce5ed260",
+    "fullNameRef": "#hash_105cb3cf81577ac4",
+    "ingameNameRef": "#hash_4933e9b3def887d",
+    "iconName": "#hash_75cefaa2fc3599a2",
+    "iconNameLarge": "#hash_17110f86185ac022",
+    "level": 34,
+    "minXp": 511200,
+    "maxXp": 541600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#tr_midburst_t8"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "#hash_3d20e447e00ec4c3",
+    "shortNameRef": "#hash_5636e1148f63f35b",
+    "fullNameRef": "#hash_a502d09f58f0119",
+    "ingameNameRef": "#hash_16a8dcec4333224c",
+    "iconName": "#hash_75cb8ea2fc32ac47",
+    "iconNameLarge": "#hash_7dd7f3281afd2057",
+    "level": 2,
+    "minXp": 4000,
+    "maxXp": 8600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_default_class_4"
+        }
+    ]
+}

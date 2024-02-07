@@ -1,0 +1,12 @@
+iconId,name,displayName,unlockLevel,winsRequired,titleOfOrigin,iconName,iconNameLarge
+0,#prestige1_zm,#hash_6607ad040a1ddc32,1,0,4,#ui_icon_zm_prestige_01,#ui_icon_zm_prestige_01_large
+1,#prestige2_zm,#hash_6607ac040a1dda7f,2,0,4,#ui_icon_zm_prestige_02,#ui_icon_zm_prestige_02_large
+2,#prestige3_zm,#hash_6607ab040a1dd8cc,3,0,4,#ui_icon_zm_prestige_03,#ui_icon_zm_prestige_03_large
+3,#prestige4_zm,#hash_6607aa040a1dd719,4,0,4,#ui_icon_zm_prestige_04,#ui_icon_zm_prestige_04_large
+4,#prestige5_zm,#hash_6607a9040a1dd566,5,0,4,#ui_icon_zm_prestige_05,#ui_icon_zm_prestige_05_large
+5,#prestige6_zm,#hash_6607a8040a1dd3b3,6,0,4,#ui_icon_zm_prestige_06,#ui_icon_zm_prestige_06_large
+6,#prestige7_zm,#hash_6607a7040a1dd200,7,0,4,#ui_icon_zm_prestige_07,#ui_icon_zm_prestige_07_large
+7,#prestige8_zm,#hash_6607b6040a1deb7d,8,0,4,#ui_icon_zm_prestige_08,#ui_icon_zm_prestige_08_large
+8,#prestige9_zm,#hash_6607b5040a1de9ca,9,0,4,#ui_icon_zm_prestige_09,#ui_icon_zm_prestige_09_large
+9,#prestige10_zm,#hash_7ce6ffdd30bcd766,10,0,4,#ui_icon_zm_prestige_10,#ui_icon_zm_prestige_10_large
+10,#prestigemaster_zm,#hash_b62a7039a8984cd,10,0,4,#ui_icon_zm_prestige_master,#ui_icon_zm_prestige_master_large

@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_30",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_704c98f321010211",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10968bb1860acbe",
+    "iconNameLarge": "#hash_3b31cc4ca43809ce",
+    "level": 30,
+    "minXp": 381800,
+    "maxXp": 408200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#perk_widows_wine"
+        }
+    ]
+}

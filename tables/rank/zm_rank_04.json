@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_04",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_27be7e22dcb927eb",
+    "ingameNameRef": "#",
+    "iconName": "#hash_1065ebb185e65e9",
+    "iconNameLarge": "#hash_185b4dd3e63345cd",
+    "level": 4,
+    "minXp": 9100,
+    "maxXp": 13400,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#tr_longburst_t8"
+        }
+    ]
+}

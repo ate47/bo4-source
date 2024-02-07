@@ -1,0 +1,17 @@
+{
+    "name": "#hash_781236240e673595",
+    "shortNameRef": "#hash_1c728b14ff641f82",
+    "fullNameRef": "#hash_6ba9f826a71cd02",
+    "ingameNameRef": "#hash_e437529900e016b",
+    "iconName": "#hash_75ba74a2fc240ce6",
+    "iconNameLarge": "#hash_42369702df7bad96",
+    "level": 52,
+    "minXp": 1242000,
+    "maxXp": 1294000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#smg_handling_t8"
+        }
+    ]
+}

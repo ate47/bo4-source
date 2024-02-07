@@ -1,0 +1,17 @@
+{
+    "name": "#hash_75d63ba64cddbdcc",
+    "shortNameRef": "#hash_16e4de5af15a7647",
+    "fullNameRef": "#hash_1c12608026c19a6d",
+    "ingameNameRef": "#hash_293c5db1367379b7",
+    "iconName": "#hash_75d27ca2fc38ac5f",
+    "iconNameLarge": "#hash_b306a0af07acd2f",
+    "level": 20,
+    "minXp": 189600,
+    "maxXp": 207200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_overkill"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_21",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_4fdfdc1a6c6824bc",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10cedbb1863c494",
+    "iconNameLarge": "#hash_19391a450eaafd40",
+    "level": 21,
+    "minXp": 187100,
+    "maxXp": 205100,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ar_modular_t8"
+        }
+    ]
+}

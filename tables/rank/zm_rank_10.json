@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_10",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_2baba7021ccd202",
+    "ingameNameRef": "#",
+    "iconName": "#hash_102dcbb185b532c",
+    "iconNameLarge": "#hash_2d74c06c499b4378",
+    "level": 10,
+    "minXp": 45700,
+    "maxXp": 54500,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#eq_acid_bomb"
+        }
+    ]
+}

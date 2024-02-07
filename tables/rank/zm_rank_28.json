@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_28",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_704c9af321010577",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10ce6bb1863b8af",
+    "iconNameLarge": "#hash_2a555a13f3b97ebf",
+    "level": 28,
+    "minXp": 332000,
+    "maxXp": 356400,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#lmg_spray_t8"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_26",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_30015736c4b1536e",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10cecbb1863c2e1",
+    "iconNameLarge": "#hash_b4a3ed7a6c22b25",
+    "level": 26,
+    "minXp": 286100,
+    "maxXp": 308600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#perk_bandolier"
+        }
+    ]
+}

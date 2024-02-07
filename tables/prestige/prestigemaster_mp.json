@@ -1,0 +1,9 @@
+{
+    "name": "#prestigemaster_mp",
+    "displayName": "#hash_b62a7039a8984cd",
+    "iconName": "#ui_icon_mp_masterprestige",
+    "iconNameLarge": "#ui_icon_mp_masterprestige_large",
+    "unlockLevel": 11,
+    "winsRequired": 0,
+    "titleOfOrigin": 4
+}

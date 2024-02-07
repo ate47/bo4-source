@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_45",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_3be71d892f855100",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f86dbb1852420a",
+    "iconNameLarge": "#hash_b940514ceb2a06a",
+    "level": 45,
+    "minXp": 888400,
+    "maxXp": 931400,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#smg_accurate_t8"
+        }
+    ]
+}

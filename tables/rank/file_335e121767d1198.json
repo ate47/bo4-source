@@ -1,0 +1,17 @@
+{
+    "name": "#hash_335e121767d1198",
+    "shortNameRef": "#hash_193a928446b1e28c",
+    "fullNameRef": "#hash_353d0c2aeba9a259",
+    "ingameNameRef": "#hash_2019e3ee7104d6a9",
+    "iconName": "#hash_75bdfba2fc272822",
+    "iconNameLarge": "#hash_36d8b0ce8fda7aa2",
+    "level": 45,
+    "minXp": 911600,
+    "maxXp": 955200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#straferun"
+        }
+    ]
+}

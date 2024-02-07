@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_22",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_4fdfdb1a6c682309",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10cf0bb1863c9ad",
+    "iconNameLarge": "#hash_4e638b8f47a809f1",
+    "level": 22,
+    "minXp": 205100,
+    "maxXp": 224000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#claymore"
+        }
+    ]
+}

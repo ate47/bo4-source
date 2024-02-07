@@ -1,0 +1,17 @@
+{
+    "name": "#hash_1590a8a10215290b",
+    "shortNameRef": "#hash_615d4d733d9df2f2",
+    "fullNameRef": "#hash_60dae0507645160",
+    "ingameNameRef": "#hash_2e28e28b8ff8015b",
+    "iconName": "#hash_75cefea2fc35a06e",
+    "iconNameLarge": "#hash_4762094fca8ae7fe",
+    "level": 38,
+    "minXp": 640000,
+    "maxXp": 675200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#bonuscard_perk_1_gluttony"
+        }
+    ]
+}

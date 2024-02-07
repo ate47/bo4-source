@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_20",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_4fdfdd1a6c68266f",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10ceebb1863c647",
+    "iconNameLarge": "#hash_4444119fd607ea57",
+    "level": 20,
+    "minXp": 170000,
+    "maxXp": 187100,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#shotgun_trenchgun_t8"
+        }
+    ]
+}

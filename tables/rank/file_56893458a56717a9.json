@@ -1,0 +1,25 @@
+{
+    "name": "#hash_56893458a56717a9",
+    "shortNameRef": "#hash_7bc6cb14ed7206bd",
+    "fullNameRef": "#hash_6f90f3f8d56508cf",
+    "ingameNameRef": "#hash_2997f0dcd4e65d3a",
+    "iconName": "#hash_75cb89a2fc32a3c8",
+    "iconNameLarge": "#hash_7a171ba6b5829344",
+    "level": 7,
+    "minXp": 33000,
+    "maxXp": 40600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#feature_custom_class_5"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#sniper_powerbolt_t8"
+        },
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#gear_awareness"
+        }
+    ]
+}

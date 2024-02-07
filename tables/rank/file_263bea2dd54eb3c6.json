@@ -1,0 +1,17 @@
+{
+    "name": "#hash_263bea2dd54eb3c6",
+    "shortNameRef": "#hash_1c728b14ff641f82",
+    "fullNameRef": "#hash_60ea3b9adf5faa43",
+    "ingameNameRef": "#hash_e437529900e016b",
+    "iconName": "#hash_75ba76a2fc24104c",
+    "iconNameLarge": "#hash_7b6749cb0ef078d8",
+    "level": 54,
+    "minXp": 1347200,
+    "maxXp": 1401600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ac130"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_46",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_3be724892f855ce5",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f86cbb18524057",
+    "iconNameLarge": "#hash_19b2de29d83d8ea7",
+    "level": 46,
+    "minXp": 931400,
+    "maxXp": 975800,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#mini_turret"
+        }
+    ]
+}

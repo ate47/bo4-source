@@ -1,0 +1,17 @@
+{
+    "name": "#hash_38391df1a0f1a69e",
+    "shortNameRef": "#hash_7bbcc914ed69aed2",
+    "fullNameRef": "#hash_574b554fccfabfb2",
+    "ingameNameRef": "#hash_1a95967fac321dbb",
+    "iconName": "#hash_75bdf8a2fc272309",
+    "iconNameLarge": "#hash_7cb10a209d4d012d",
+    "level": 40,
+    "minXp": 711600,
+    "maxXp": 749200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#smg_capacity_t8"
+        }
+    ]
+}

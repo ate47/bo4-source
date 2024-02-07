@@ -1,0 +1,17 @@
+{
+    "name": "#hash_42fc1cce3f89ffd3",
+    "shortNameRef": "#hash_2ce5e4332e64b2cc",
+    "fullNameRef": "#hash_15be5e89bea09930",
+    "ingameNameRef": "#hash_4fd4555922a491e9",
+    "iconName": "#hash_75d277a2fc38a3e0",
+    "iconNameLarge": "#hash_2f6efe71c284c11c",
+    "level": 25,
+    "minXp": 285600,
+    "maxXp": 307200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ar_modular_t8"
+        }
+    ]
+}

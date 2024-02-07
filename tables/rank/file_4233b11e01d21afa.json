@@ -1,0 +1,17 @@
+{
+    "name": "#hash_4233b11e01d21afa",
+    "shortNameRef": "#hash_7bc6cb14ed7206bd",
+    "fullNameRef": "#hash_78578bd29aae4434",
+    "ingameNameRef": "#hash_2997f0dcd4e65d3a",
+    "iconName": "#hash_75cb87a2fc32a062",
+    "iconNameLarge": "#hash_583f7a15ef0d9de2",
+    "level": 9,
+    "minXp": 48800,
+    "maxXp": 57600,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#recon_car"
+        }
+    ]
+}

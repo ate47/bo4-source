@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_40",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_3377709c39ad1ccf",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f86abb18523cf1",
+    "iconNameLarge": "#hash_ab53c99accd88b5",
+    "level": 40,
+    "minXp": 691400,
+    "maxXp": 728400,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#lmg_heavy_t8"
+        }
+    ]
+}

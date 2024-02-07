@@ -1,0 +1,17 @@
+{
+    "name": "#hash_575deaf59bcd549c",
+    "shortNameRef": "#hash_2ce5e4332e64b2cc",
+    "fullNameRef": "#hash_1313a70eeae40019",
+    "ingameNameRef": "#hash_4fd4555922a491e9",
+    "iconName": "#hash_75d279a2fc38a746",
+    "iconNameLarge": "#hash_63a03cc809929d36",
+    "level": 27,
+    "minXp": 329600,
+    "maxXp": 352800,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#ultimate_turret"
+        }
+    ]
+}

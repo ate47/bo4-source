@@ -1,0 +1,17 @@
+{
+    "name": "#hash_4cdb4c520414e9ee",
+    "shortNameRef": "#hash_1c728b14ff641f82",
+    "fullNameRef": "#hash_60ea3a9adf5fa890",
+    "ingameNameRef": "#hash_e437529900e016b",
+    "iconName": "#hash_75ba75a2fc240e99",
+    "iconNameLarge": "#hash_8c9c28ea2dd3d3d",
+    "level": 53,
+    "minXp": 1294000,
+    "maxXp": 1347200,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#eq_slow_grenade"
+        }
+    ]
+}

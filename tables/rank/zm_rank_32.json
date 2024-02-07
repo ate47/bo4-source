@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_32",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_2e4fd4349586668c",
+    "ingameNameRef": "#",
+    "iconName": "#hash_10966bb1860a958",
+    "iconNameLarge": "#hash_1f8d6a02afb0de94",
+    "level": 32,
+    "minXp": 435600,
+    "maxXp": 464000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#smg_fastfire_t8"
+        }
+    ]
+}

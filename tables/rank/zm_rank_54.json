@@ -1,0 +1,17 @@
+{
+    "name": "#zm_rank_54",
+    "shortNameRef": "#",
+    "fullNameRef": "#hash_22bfaaa78718b3f3",
+    "ingameNameRef": "#",
+    "iconName": "#hash_f568bb185003b4",
+    "iconNameLarge": "#hash_1bba41ff043bbf20",
+    "level": 54,
+    "minXp": 1326000,
+    "maxXp": 1382000,
+    "rewards": [
+        {
+            "prestigeTarget": "#",
+            "rewardName": "#sniper_fastrechamber_t8"
+        }
+    ]
+}
