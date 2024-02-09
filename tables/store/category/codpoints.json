@@ -1,0 +1,16 @@
+{
+    "name": "codpoints",
+    "nameHash": "#codpoints",
+    "displayName": "#hash_293582834683fcc5",
+    "imageName": "#7027376462748829854",
+    "visibility": true,
+    "products": [
+        "#cp200",
+        "#cp500",
+        "#cp1100",
+        "#cp2400",
+        "#cp5000",
+        "#cp9500",
+        "#cp13000"
+    ]
+}

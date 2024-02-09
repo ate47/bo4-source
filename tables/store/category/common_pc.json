@@ -1,0 +1,18 @@
+{
+    "name": "common_pc",
+    "nameHash": "#common_pc",
+    "displayName": "#hash_483f54a8cff752c",
+    "imageName": "#2892770070891009574",
+    "visibility": true,
+    "products": [
+        "#blackopspass",
+        "#zombiesdlc0",
+        "#hash_2a93e67ff169d892",
+        "#hash_1865682e72fb66a1",
+        "#hash_1e47635046147813",
+        "#hash_583953d8f4c2afaa",
+        "#hash_75215423145b951e",
+        "#hash_15d37488611d364",
+        "#hash_6dea0086f1a1a211"
+    ]
+}

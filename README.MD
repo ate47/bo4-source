@@ -49,6 +49,10 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | playlists               | 119 | `/tables/playlists/`                |
 | storagefile             | 128 | `/tables/storagefile/`              |
 | storagefilelist         | 129 | `/tables/storagefile/list/`         |
+| charmixer               | 130 | EMPTY                               |
+| storeproduct            | 131 | `/store/product/`                   |
+| storecategory           | 132 | `/store/category/`                  |
+| storecategorylist       | 133 | `/store/category/list/`             |
 | rank                    | 134 | `/tables/rank/`                     |
 | ranktable               | 135 | `/tables/rank/table/`               |
 | prestige                | 136 | `/tables/prestige/`                 |
