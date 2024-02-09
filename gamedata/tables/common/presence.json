@@ -1,0 +1,33 @@
+[
+    {
+        "durango_presence_id": 0,
+        "id": 0,
+        "name": "lobby",
+        "ref": "PRESENCE/LOBBY"
+    },
+    {
+        "durango_presence_id": 1,
+        "id": 1,
+        "name": "theater",
+        "ref": "PRESENCE/LOBBYTHEATER"
+    },
+    {
+        "durango_presence_id": 2,
+        "id": 2,
+        "name": "menus",
+        "ref": "PRESENCE/NOTINGAME"
+    },
+    {
+        "durango_presence_id": 3,
+        "id": 3,
+        "name": "party",
+        "ref": "PRESENCE/PARTY"
+    },
+    {
+        "durango_presence_id": 4,
+        "id": 4,
+        "name": "private_match",
+        "params": "game_type,map_name",
+        "ref": "PRESENCE/PLAYINGMP"
+    }
+]

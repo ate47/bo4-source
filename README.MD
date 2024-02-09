@@ -30,6 +30,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | customizationtable      | 30  | `/tables/customization/`            |
 | rawfile                 | 41  | `/`                                 |
 | stringtable             | 43  | `/`                                 |
+| structuredtable         | 44  | `/`                                 |
 | ddl                     | 46  | `/`                                 |
 | scriptparsetree         | 48  | `/`                                 |
 | scriptparsetreedbg      | 49  | EMPTY                               |

@@ -1,0 +1,2662 @@
+[
+    {
+        "name": "halloween_event_stream_ON",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream loot_contract_halloween",
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "halloween_event_stream_OFF",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream """,
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "winter_event_stream_ON",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream loot_contract_winter",
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "winter_event_stream_OFF",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream """,
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "fourth_of_july_event_stream_ON",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream loot_contract_fourth_of_july_event_stream",
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "fourth_of_july_event_stream_OFF",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream """,
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "labor_day_event_stream_ON",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream loot_contract_labor_day_event_stream",
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "labor_day_event_stream_OFF",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream """,
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "zm_halloween_event_2018_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_event_calling 1",
+        "timer_name": "zm_halloween_2018_timer"
+    },
+    {
+        "name": "zm_halloween_event_2018_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_event_calling 0",
+        "timer_name": "zm_halloween_2018_timer"
+    },
+    {
+        "name": "zm_winter_event_2018_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_event_calling 2",
+        "timer_name": "zm_halloween_2018_timer"
+    },
+    {
+        "name": "zm_winter_event_2018_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_event_calling 0",
+        "timer_name": "zm_halloween_2018_timer"
+    },
+    {
+        "name": "season_2_stream_ON",
+        "ruleCount": 6,
+        "rule_0": "set loot_season_stream loot_season_2",
+        "rule_1": "set loot_next_season_stream loot_season_3",
+        "rule_2": "set loot_season_number 2",
+        "rule_3": "set mtx_seasonal_exploder _winter",
+        "rule_4": "set cg_allowzero 1",
+        "rule_5": "set cg_allowreaper 1",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_2_stream_OFF",
+        "ruleCount": 4,
+        "rule_0": "set loot_season_stream """,
+        "rule_1": "set loot_next_season_stream """,
+        "rule_2": "set loot_season_number 0",
+        "rule_3": "set mtx_seasonal_exploder """,
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_3_stream_ON",
+        "ruleCount": 12,
+        "rule_0": "set loot_season_stream loot_season_3",
+        "rule_1": "set loot_next_season_stream loot_season_4",
+        "rule_10": "set loot_characterdefaultunlock_zero 1",
+        "rule_11": "set loot_tierboost_item_id 500300",
+        "rule_2": "set loot_season_number 3",
+        "rule_3": "set cg_allowoutrider 1",
+        "rule_4": "set cg_allowcosmicsilverback 1",
+        "rule_5": "set cg_allowbrutus 1",
+        "rule_6": "set cg_allowhudsonhawaiian 1",
+        "rule_7": "set cg_allowmisty 1",
+        "rule_8": "set cg_allowzombiefemale 1",
+        "rule_9": "set cg_allowzombiemale 1",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_3_stream_OFF",
+        "ruleCount": 12,
+        "rule_0": "set loot_season_stream """,
+        "rule_1": "set loot_next_season_stream """,
+        "rule_10": "set loot_characterdefaultunlock_zero 1",
+        "rule_11": "set loot_tierboost_item_id 0",
+        "rule_2": "set loot_season_number 0",
+        "rule_3": "set cg_allowoutrider 1",
+        "rule_4": "set cg_allowcosmicsilverback 1",
+        "rule_5": "set cg_allowbrutus 1",
+        "rule_6": "set cg_allowhudsonhawaiian 1",
+        "rule_7": "set cg_allowmisty 1",
+        "rule_8": "set cg_allowzombiefemale 1",
+        "rule_9": "set cg_allowzombiemale 1",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_4_stream_ON",
+        "ruleCount": 9,
+        "rule_0": "set loot_season_stream loot_season_4",
+        "rule_1": "set loot_next_season_stream loot_season_5",
+        "rule_2": "set loot_season_number 4",
+        "rule_3": "set loot_characterdefaultunlock_outrider 1",
+        "rule_4": "set cg_allowsarahhall 1",
+        "rule_5": "set cg_allowblackjack 1",
+        "rule_6": "set cg_allowoldmanwoods 1",
+        "rule_7": "set cg_allowspectre 1",
+        "rule_8": "set loot_tierboost_item_id 500301",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_4_stream_OFF",
+        "ruleCount": 9,
+        "rule_0": "set loot_season_stream """,
+        "rule_1": "set loot_next_season_stream """,
+        "rule_2": "set loot_season_number 0",
+        "rule_3": "set loot_characterdefaultunlock_outrider 1",
+        "rule_4": "set cg_allowsarahhall 1",
+        "rule_5": "set cg_allowblackjack 1",
+        "rule_6": "set cg_allowoldmanwoods 1",
+        "rule_7": "set cg_allowspectre 1",
+        "rule_8": "set loot_tierboost_item_id 0",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_5_stream_ON",
+        "ruleCount": 8,
+        "rule_0": "set loot_season_stream loot_season_5",
+        "rule_1": "set loot_next_season_stream loot_season_6",
+        "rule_2": "set loot_season_number 5",
+        "rule_3": "set loot_characterdefaultunlock_spectre 1",
+        "rule_4": "set cg_allowsergei 1",
+        "rule_5": "set cg_allowmenendezleisure 1",
+        "rule_6": "set cg_allowdavidmason 1",
+        "rule_7": "set loot_tierboost_item_id 500301",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_5_stream_OFF",
+        "ruleCount": 8,
+        "rule_0": "set loot_season_stream """,
+        "rule_1": "set loot_next_season_stream """,
+        "rule_2": "set loot_season_number 0",
+        "rule_3": "set loot_characterdefaultunlock_spectre 1",
+        "rule_4": "set cg_allowsergei 0",
+        "rule_5": "set cg_allowmenendezleisure 0",
+        "rule_6": "set cg_allowdavidmason 0",
+        "rule_7": "set loot_tierboost_item_id 0",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_6_stream_ON",
+        "ruleCount": 9,
+        "rule_0": "set loot_season_stream loot_season_6",
+        "rule_1": "set loot_next_season_stream loot_season_7",
+        "rule_2": "set loot_season_number 6",
+        "rule_3": "set loot_characterdefaultunlock_spectre 1",
+        "rule_4": "set cg_allowrussman 1",
+        "rule_5": "set cg_allowmattshadows 1",
+        "rule_6": "set cg_allowtrejo 1",
+        "rule_7": "set cg_allowreaperbo4 1",
+        "rule_8": "set loot_tierboost_item_id 500301",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_6_stream_OFF",
+        "ruleCount": 9,
+        "rule_0": "set loot_season_stream """,
+        "rule_1": "set loot_next_season_stream """,
+        "rule_2": "set loot_season_number 0",
+        "rule_3": "set loot_characterdefaultunlock_spectre 1",
+        "rule_4": "set cg_allowrussman 0",
+        "rule_5": "set cg_allowmattshadows 0",
+        "rule_6": "set cg_allowtrejo 0",
+        "rule_7": "set cg_allowreaperbo4 0",
+        "rule_8": "set loot_tierboost_item_id 0",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_7_stream_ON",
+        "ruleCount": 6,
+        "rule_0": "set loot_season_stream loot_season_7",
+        "rule_1": "set loot_next_season_stream loot_season_8",
+        "rule_2": "set loot_season_number 7",
+        "rule_3": "set loot_characterdefaultunlock_reaper 1",
+        "rule_4": "set cg_allowtedd 1",
+        "rule_5": "set loot_tierboost_item_id 500301",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_7_stream_OFF",
+        "ruleCount": 6,
+        "rule_0": "set loot_season_stream """,
+        "rule_1": "set loot_next_season_stream """,
+        "rule_2": "set loot_season_number 0",
+        "rule_3": "set loot_characterdefaultunlock_reaper 0",
+        "rule_4": "set cg_allowtedd 0",
+        "rule_5": "set loot_tierboost_item_id 0",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_8_stream_ON",
+        "ruleCount": 7,
+        "rule_0": "set loot_season_stream loot_season_8",
+        "rule_1": "set loot_next_season_stream loot_season_9",
+        "rule_2": "set loot_season_number 8",
+        "rule_3": "set cg_allowweaver 1",
+        "rule_4": "set cg_allowmarlton 1",
+        "rule_5": "set cg_allowstuhlinger 1",
+        "rule_6": "set loot_tierboost_item_id 500301",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_8_stream_OFF",
+        "ruleCount": 7,
+        "rule_0": "set loot_season_stream """,
+        "rule_1": "set loot_next_season_stream """,
+        "rule_2": "set loot_season_number 0",
+        "rule_3": "set cg_allowweaver 0",
+        "rule_4": "set cg_allowmarlton 0",
+        "rule_5": "set cg_allowstuhlinger 0",
+        "rule_6": "set loot_tierboost_item_id 0",
+        "timer_name": "loot_season_stream_timer"
+    },
+    {
+        "name": "season_9_ON",
+        "ruleCount": 1,
+        "rule_0": "set cg_allowyuri 1"
+    },
+    {
+        "name": "season_9_OFF",
+        "ruleCount": 1,
+        "rule_0": "set cg_allowyuri 0"
+    },
+    {
+        "name": "global_2xp_mp_server_ON",
+        "ruleCount": 2,
+        "rule_0": "set mpxpgroups everyone",
+        "rule_1": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "global_2xp_mp_server_OFF",
+        "ruleCount": 2,
+        "rule_0": "set mpxpgroups """,
+        "rule_1": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "global_2xp_mp_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "global_2xp_mp_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "global_2xp_zm_server_ON",
+        "ruleCount": 2,
+        "rule_0": "set zmxpgroups everyone",
+        "rule_1": "addserveractiveevent live_event_xp_zm",
+        "timer_name": "autoevent_2xp_zm_timer_sv"
+    },
+    {
+        "name": "global_2xp_zm_server_OFF",
+        "ruleCount": 2,
+        "rule_0": "set zmxpgroups """,
+        "rule_1": "clearserveractiveevent live_event_xp_zm",
+        "timer_name": "autoevent_2xp_zm_timer_sv"
+    },
+    {
+        "name": "global_2xp_zm_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_zm",
+        "timer_name": "autoevent_2xp_zm_timer"
+    },
+    {
+        "name": "global_2xp_zm_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_zm",
+        "timer_name": "autoevent_2xp_zm_timer"
+    },
+    {
+        "name": "global_2x_merits_wz_server_ON",
+        "ruleCount": 2,
+        "rule_0": "set wzxpgroups everyone",
+        "rule_1": "addserveractiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_wz_timer_sv"
+    },
+    {
+        "name": "global_2x_merits_wz_server_OFF",
+        "ruleCount": 2,
+        "rule_0": "set wzxpgroups """,
+        "rule_1": "clearserveractiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_wz_timer_sv"
+    },
+    {
+        "name": "global_2x_merits_wz_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_wz_timer"
+    },
+    {
+        "name": "global_2x_merits_wz_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_wz_timer"
+    },
+    {
+        "name": "global_2wxp_mp_server_ON",
+        "ruleCount": 2,
+        "rule_0": "set mpgunxpgroups everyone",
+        "rule_1": "addserveractiveevent live_event_gunxp_mp",
+        "timer_name": "autoevent_2wxp_mp_timer_sv"
+    },
+    {
+        "name": "global_2wxp_mp_server_OFF",
+        "ruleCount": 2,
+        "rule_0": "set mpgunxpgroups """,
+        "rule_1": "clearserveractiveevent live_event_gunxp_mp",
+        "timer_name": "autoevent_2wxp_mp_timer_sv"
+    },
+    {
+        "name": "global_2wxp_mp_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_gunxp_mp",
+        "timer_name": "autoevent_2wxp_mp_timer"
+    },
+    {
+        "name": "global_2wxp_mp_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_gunxp_mp",
+        "timer_name": "autoevent_2wxp_mp_timer"
+    },
+    {
+        "name": "global_2wxp_zm_server_ON",
+        "ruleCount": 2,
+        "rule_0": "set zmgunxpgroups everyone",
+        "rule_1": "addserveractiveevent live_event_gunxp_zm",
+        "timer_name": "autoevent_2wxp_zm_timer_sv"
+    },
+    {
+        "name": "global_2wxp_zm_server_OFF",
+        "ruleCount": 2,
+        "rule_0": "set zmgunxpgroups """,
+        "rule_1": "clearserveractiveevent live_event_gunxp_zm",
+        "timer_name": "autoevent_2wxp_zm_timer_sv"
+    },
+    {
+        "name": "global_2wxp_zm_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_gunxp_zm",
+        "timer_name": "autoevent_2wxp_zm_timer"
+    },
+    {
+        "name": "global_2wxp_zm_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_gunxp_zm",
+        "timer_name": "autoevent_2wxp_zm_timer"
+    },
+    {
+        "name": "global_2xp_and_wxp_all_server_ON",
+        "ruleCount": 6,
+        "rule_0": "set mpgunxpgroups everyone",
+        "rule_1": "set zmgunxpgroups everyone",
+        "rule_2": "set mpxpgroups everyone",
+        "rule_3": "set wzxpgroups everyone",
+        "rule_4": "set zmxpgroups everyone",
+        "rule_5": "set g_serveractiveevents live_event_gunxp_mp,live_event_gunxp_zm,live_event_xp_mp,live_event_xp_zm,live_event_xp_wz",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "global_2xp_and_wxp_all_server_OFF",
+        "ruleCount": 6,
+        "rule_0": "set mpgunxpgroups """,
+        "rule_1": "set zmgunxpgroups """,
+        "rule_2": "set mpxpgroups """,
+        "rule_3": "set wzxpgroups """,
+        "rule_4": "set zmxpgroups """,
+        "rule_5": "set g_serveractiveevents """,
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "global_2xp_and_wxp_all_client_ON",
+        "ruleCount": 1,
+        "rule_0": "set g_clientactiveevents live_event_gunxp_mp,live_event_gunxp_zm,live_event_xp_mp,live_event_xp_zm,live_event_xp_wz",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "global_2xp_and_wxp_all_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "set g_clientactiveevents """,
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "zm_lab_150_np_discount_ON",
+        "ruleCount": 2,
+        "rule_0": "set laboratory_banner_offer zm_lab_150np_discount",
+        "rule_1": "set laboratory_special_offer_1 zm_lab_150np_discount",
+        "timer_name": "autoevent_laboratory_special_offer_1_timer"
+    },
+    {
+        "name": "zm_lab_150_np_discount_OFF",
+        "ruleCount": 2,
+        "rule_0": "set laboratory_banner_offer """,
+        "rule_1": "set laboratory_special_offer_1 """,
+        "timer_name": "autoevent_laboratory_special_offer_1_timer"
+    },
+    {
+        "name": "zm_lab_tungsten_tripler_slot_2_ON",
+        "ruleCount": 2,
+        "rule_0": "set laboratory_banner_offer zm_lab_tungsten_tripler",
+        "rule_1": "set laboratory_special_offer_2 zm_lab_tungsten_tripler",
+        "timer_name": "autoevent_laboratory_special_offer_2_timer"
+    },
+    {
+        "name": "zm_lab_tungsten_tripler_slot_2_OFF",
+        "ruleCount": 2,
+        "rule_0": "set laboratory_banner_offer """,
+        "rule_1": "set laboratory_special_offer_2 """,
+        "timer_name": "autoevent_laboratory_special_offer_2_timer"
+    },
+    {
+        "name": "zm_lab_titanium_treble_slot_1_ON",
+        "ruleCount": 2,
+        "rule_0": "set laboratory_banner_offer zm_lab_titanium_treble",
+        "rule_1": "set laboratory_special_offer_1 zm_lab_titanium_treble",
+        "timer_name": "autoevent_laboratory_special_offer_1_timer"
+    },
+    {
+        "name": "zm_lab_titanium_treble_slot_1_OFF",
+        "ruleCount": 2,
+        "rule_0": "set laboratory_banner_offer """,
+        "rule_1": "set laboratory_special_offer_1 """,
+        "timer_name": "autoevent_laboratory_special_offer_1_timer"
+    },
+    {
+        "name": "half_off_tiers_ON",
+        "ruleCount": 7,
+        "rule_0": "set loot_tier_half_off 1",
+        "rule_1": "set ui_specialdealactive 1",
+        "rule_2": "set ui_specialdealtitle menu/blackmarket_offer_halfoff_tiers",
+        "rule_3": "set ui_specialdealdesc menu/blackmarket_offer_halfoff_tiers_desc",
+        "rule_4": "set ui_specialdealimage ui_icon_blackmarket_tier_medium",
+        "rule_5": "set ui_specialdealaction 0",
+        "rule_6": "set ui_specialdealshowtimer 1",
+        "timer_name": "loot_special_deal_timer"
+    },
+    {
+        "name": "half_off_tiers_OFF",
+        "ruleCount": 7,
+        "rule_0": "set loot_tier_half_off 0",
+        "rule_1": "set ui_specialdealactive 0",
+        "rule_2": "set ui_specialdealtitle menu/blackmarket_offer_halfoff_tiers",
+        "rule_3": "set ui_specialdealdesc menu/blackmarket_offer_halfoff_tiers_desc",
+        "rule_4": "set ui_specialdealimage ui_icon_blackmarket_tier_medium",
+        "rule_5": "set ui_specialdealaction 0",
+        "rule_6": "set ui_specialdealshowtimer 1",
+        "timer_name": "loot_special_deal_timer"
+    },
+    {
+        "name": "global_2xtier_mp_server_ON",
+        "ruleCount": 2,
+        "rule_0": "set mplootxpgroups everyone",
+        "rule_1": "addserveractiveevent live_event_lootxp_mp",
+        "timer_name": "autoevent_2xloot_mp_timer_sv"
+    },
+    {
+        "name": "global_2xtier_mp_server_OFF",
+        "ruleCount": 2,
+        "rule_0": "set mplootxpgroups """,
+        "rule_1": "clearserveractiveevent live_event_lootxp_mp",
+        "timer_name": "autoevent_2xloot_mp_timer_sv"
+    },
+    {
+        "name": "global_2xtier_mp_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_lootxp_mp",
+        "timer_name": "autoevent_2xloot_mp_timer"
+    },
+    {
+        "name": "global_2xtier_mp_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_lootxp_mp",
+        "timer_name": "autoevent_2xloot_mp_timer"
+    },
+    {
+        "name": "global_2xtier_wz_server_ON",
+        "ruleCount": 2,
+        "rule_0": "set wzlootxpgroups everyone",
+        "rule_1": "addserveractiveevent live_event_lootxp_wz",
+        "timer_name": "autoevent_2xloot_wz_timer_sv"
+    },
+    {
+        "name": "global_2xtier_wz_server_OFF",
+        "ruleCount": 2,
+        "rule_0": "set wzlootxpgroups """,
+        "rule_1": "clearserveractiveevent live_event_lootxp_wz",
+        "timer_name": "autoevent_2xloot_wz_timer_sv"
+    },
+    {
+        "name": "global_2xtier_wz_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_lootxp_wz",
+        "timer_name": "autoevent_2xloot_wz_timer"
+    },
+    {
+        "name": "global_2xtier_wz_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_lootxp_wz",
+        "timer_name": "autoevent_2xloot_wz_timer"
+    },
+    {
+        "name": "triple_play_december_2018_ON",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount3_active 1",
+        "rule_1": "set loot_tier_discount3_bundle "triple_play_dec2018"",
+        "rule_2": "set loot_tier_discount3_price 2000",
+        "rule_3": "set loot_tier_discount3_skuid "457677833"",
+        "timer_name": "autoevent_discount3_timer"
+    },
+    {
+        "name": "triple_play_december_2018_OFF",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount3_active 0",
+        "rule_1": "set loot_tier_discount3_bundle """,
+        "rule_2": "set loot_tier_discount3_price 0",
+        "rule_3": "set loot_tier_discount3_skuid "0"",
+        "timer_name": "autoevent_discount3_timer"
+    },
+    {
+        "name": "single_tier_purchase_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_tier_single_active 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "single_tier_purchase_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_tier_single_active """,
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "global_2xnp_zm_server_ON",
+        "ruleCount": 2,
+        "rule_0": "set zmlootxpgroups everyone",
+        "rule_1": "addserveractiveevent live_event_lootnp_zm",
+        "timer_name": "autoevent_2xnp_zm_timer_sv"
+    },
+    {
+        "name": "global_2xnp_zm_server_OFF",
+        "ruleCount": 2,
+        "rule_0": "set zmlootxpgroups """,
+        "rule_1": "clearserveractiveevent live_event_lootnp_zm",
+        "timer_name": "autoevent_2xnp_zm_timer_sv"
+    },
+    {
+        "name": "global_2xnp_zm_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_lootnp_zm",
+        "timer_name": "autoevent_2xnp_zm_timer"
+    },
+    {
+        "name": "global_2xnp_zm_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_lootnp_zm",
+        "timer_name": "autoevent_2xnp_zm_timer"
+    },
+    {
+        "name": "camos_in_wz_ON",
+        "ruleCount": 1,
+        "rule_0": "set enablewzweaponpersonalization 1",
+        "timer_name": "autoevent_wzpersonlization_timer"
+    },
+    {
+        "name": "camos_in_wz_OFF",
+        "ruleCount": 1,
+        "rule_0": "set enablewzweaponpersonalization 0",
+        "timer_name": "autoevent_wzpersonlization_timer"
+    },
+    {
+        "name": "trial_period_ON",
+        "ruleCount": 2,
+        "rule_0": "set trialstarttimestamp 1547748000",
+        "rule_1": "set trialendtimestamp 1548352800",
+        "timer_name": "autoevent_trialperiod_timer"
+    },
+    {
+        "name": "trial_period_OFF",
+        "ruleCount": 2,
+        "rule_0": "set trialstarttimestamp 0",
+        "rule_1": "set trialendtimestamp 0",
+        "timer_name": "autoevent_trialperiod_timer"
+    },
+    {
+        "name": "season_2_bonus_stream_ON",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream loot_contract_season_2_bonus_stream",
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "season_2_bonus_stream_OFF",
+        "ruleCount": 1,
+        "rule_0": "loot_event_stream """,
+        "timer_name": "loot_event_stream_timer"
+    },
+    {
+        "name": "zm_lab_experiment_jan_2019_ON",
+        "ruleCount": 1,
+        "rule_0": "set laboratory_exp_enabled 1",
+        "timer_name": "autoevent_laboratory_experiment_timer"
+    },
+    {
+        "name": "zm_lab_experiment_jan_2019_OFF",
+        "ruleCount": 1,
+        "rule_0": "set laboratory_exp_enabled 0",
+        "timer_name": "autoevent_laboratory_experiment_timer"
+    },
+    {
+        "name": "season_3_starter_pack_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount3_active 1",
+        "rule_1": "set loot_tier_discount3_bundle "starter_pack_season_3"",
+        "rule_2": "set loot_tier_discount3_price 1000",
+        "rule_3": "set loot_tier_discount3_skuid "429807522"",
+        "rule_4": "set loot_tier_discount3_reserve_tab 1"
+    },
+    {
+        "name": "season_3_starter_pack_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount3_active 0",
+        "rule_1": "set loot_tier_discount3_bundle """,
+        "rule_2": "set loot_tier_discount3_price 0",
+        "rule_3": "set loot_tier_discount3_skuid "0"",
+        "rule_4": "set loot_tier_discount3_reserve_tab 0"
+    },
+    {
+        "name": "season_4_starter_pack_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount3_active 1",
+        "rule_1": "set loot_tier_discount3_bundle "starter_pack_season_4"",
+        "rule_2": "set loot_tier_discount3_price 1000",
+        "rule_3": "set loot_tier_discount3_skuid "446653218"",
+        "rule_4": "set loot_tier_discount3_reserve_tab 1"
+    },
+    {
+        "name": "season_4_starter_pack_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount3_active 0",
+        "rule_1": "set loot_tier_discount3_bundle """,
+        "rule_2": "set loot_tier_discount3_price 0",
+        "rule_3": "set loot_tier_discount3_skuid "0"",
+        "rule_4": "set loot_tier_discount3_reserve_tab 0"
+    },
+    {
+        "name": "summer_break_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount1_active 1",
+        "rule_1": "set loot_tier_discount1_bundle "daysofsummer_vacation_bundle"",
+        "rule_2": "set loot_tier_discount1_price 1100",
+        "rule_3": "set loot_tier_discount1_skuid "494729009"",
+        "rule_4": "set loot_tier_discount1_reserve_tab 1"
+    },
+    {
+        "name": "summer_break_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount1_active 0",
+        "rule_1": "set loot_tier_discount1_bundle """,
+        "rule_2": "set loot_tier_discount1_price 0",
+        "rule_3": "set loot_tier_discount1_skuid "0"",
+        "rule_4": "set loot_tier_discount1_reserve_tab 0"
+    },
+    {
+        "name": "season_6_starter_pack_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount1_active 1",
+        "rule_1": "set loot_tier_discount1_bundle "starter_pack_season5"",
+        "rule_2": "set loot_tier_discount1_price 1500",
+        "rule_3": "set loot_tier_discount1_skuid "458491365"",
+        "rule_4": "set loot_tier_discount1_reserve_tab 1"
+    },
+    {
+        "name": "season_6_starter_pack_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount1_active 0",
+        "rule_1": "set loot_tier_discount1_bundle """,
+        "rule_2": "set loot_tier_discount1_price 0",
+        "rule_3": "set loot_tier_discount1_skuid "0"",
+        "rule_4": "set loot_tier_discount1_reserve_tab 0"
+    },
+    {
+        "name": "triple_play_february_2019_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "triple_play_feb2019"",
+        "rule_2": "set loot_tier_discount2_price 2000",
+        "rule_3": "set loot_tier_discount2_skuid "462510219"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_february_2019_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_march_2019_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "triple_play_mar2019"",
+        "rule_2": "set loot_tier_discount2_price 2000",
+        "rule_3": "set loot_tier_discount2_skuid "444111390"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_march_2019_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_days_of_summer_1_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "daysofsummer_triple_play_01"",
+        "rule_2": "set loot_tier_discount2_price 2400",
+        "rule_3": "set loot_tier_discount2_skuid "438377495"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_days_of_summer_1_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_days_of_summer_2_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "daysofsummer_triple_play_02"",
+        "rule_2": "set loot_tier_discount2_price 2400",
+        "rule_3": "set loot_tier_discount2_skuid "418609320"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_days_of_summer_2_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_season_5_1_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "season5_triple_play_01"",
+        "rule_2": "set loot_tier_discount2_price 2400",
+        "rule_3": "set loot_tier_discount2_skuid "417350968"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_season_5_1_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_season_5_2_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "season5_triple_play_02"",
+        "rule_2": "set loot_tier_discount2_price 2400",
+        "rule_3": "set loot_tier_discount2_skuid "495912785"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_season_5_2_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_season_5_3_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "season5_triple_play_03"",
+        "rule_2": "set loot_tier_discount2_price 2400",
+        "rule_3": "set loot_tier_discount2_skuid "405557234"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "triple_play_season_5_3_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "shamrock_shock_and_awe_2019_ON",
+        "ruleCount": 6,
+        "rule_0": "set loot_tier_discount1_active 1",
+        "rule_1": "set loot_tier_discount1_bundle "shamrock_shock_and_awe_2019"",
+        "rule_2": "set loot_tier_discount1_price 2000",
+        "rule_3": "set loot_tier_discount1_skuid "476534756"",
+        "rule_4": "set showpromoeventpopup 1",
+        "rule_5": "set loot_tier_discount1_reserve_tab 1",
+        "timer_name": "autoevent_discount1_timer"
+    },
+    {
+        "name": "shamrock_shock_and_awe_2019_OFF",
+        "ruleCount": 6,
+        "rule_0": "set loot_tier_discount1_active 0",
+        "rule_1": "set loot_tier_discount1_bundle """,
+        "rule_2": "set loot_tier_discount1_price 0",
+        "rule_3": "set loot_tier_discount1_skuid "0"",
+        "rule_4": "set showpromoeventpopup 0",
+        "rule_5": "set loot_tier_discount1_reserve_tab 0",
+        "timer_name": "autoevent_discount1_timer"
+    },
+    {
+        "name": "shamrock_free_bundle_2019_ON",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount_free_active 1",
+        "rule_1": "set loot_tier_discount_free_bundle "shamrock_free_bundle_2019"",
+        "rule_2": "set loot_tier_discount_free_skuid "427063162"",
+        "rule_3": "set loot_tier_discount_free_open_crate 0"
+    },
+    {
+        "name": "shamrock_free_bundle_2019_OFF",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount_free_active 0",
+        "rule_1": "set loot_tier_discount_free_bundle """,
+        "rule_2": "set loot_tier_discount_free_skuid "0"",
+        "rule_3": "set loot_tier_discount_free_open_crate 0"
+    },
+    {
+        "name": "starter_pack_season_6_ON",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount_free_active 1",
+        "rule_1": "set loot_tier_discount_free_bundle "starter_pack_season_6"",
+        "rule_2": "set loot_tier_discount_free_skuid "432397161"",
+        "rule_3": "set loot_tier_discount_free_open_crate 0"
+    },
+    {
+        "name": "starter_pack_season_6_OFF",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount_free_active 0",
+        "rule_1": "set loot_tier_discount_free_bundle """,
+        "rule_2": "set loot_tier_discount_free_skuid "0"",
+        "rule_3": "set loot_tier_discount_free_open_crate 0"
+    },
+    {
+        "name": "season6_triple_play_ON",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount_free_active 1",
+        "rule_1": "set loot_tier_discount_free_bundle "season6_triple_play"",
+        "rule_2": "set loot_tier_discount_free_skuid "412827721"",
+        "rule_3": "set loot_tier_discount_free_open_crate 0"
+    },
+    {
+        "name": "season6_triple_play_OFF",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount_free_active 0",
+        "rule_1": "set loot_tier_discount_free_bundle """,
+        "rule_2": "set loot_tier_discount_free_skuid "0"",
+        "rule_3": "set loot_tier_discount_free_open_crate 0"
+    },
+    {
+        "name": "wlh_event_results_processing_ON",
+        "ruleCount": 1,
+        "rule_0": "set ui_wlhlobbyresultsdelaymessage 1"
+    },
+    {
+        "name": "wlh_event_results_processing_OFF",
+        "ruleCount": 1,
+        "rule_0": "set ui_wlhlobbyresultsdelaymessage 0"
+    },
+    {
+        "name": "5_and_1_standard_reserves_bundle_ON",
+        "ruleCount": 1,
+        "rule_0": "set crate_bundle_5_and_1 1"
+    },
+    {
+        "name": "5_and_1_standard_reserves_bundle_OFF",
+        "ruleCount": 1,
+        "rule_0": "set crate_bundle_5_and_1 0"
+    },
+    {
+        "name": "10_and_2_standard_reserves_bundle_ON",
+        "ruleCount": 1,
+        "rule_0": "set crate_bundle_10_and_2 1"
+    },
+    {
+        "name": "10_and_2_standard_reserves_bundle_OFF",
+        "ruleCount": 1,
+        "rule_0": "set crate_bundle_10_and_2 0"
+    },
+    {
+        "name": "10_and_10_standard_reserves_bundle_ON",
+        "ruleCount": 1,
+        "rule_0": "set crate_bundle_10_and_10 1"
+    },
+    {
+        "name": "10_and_10_standard_reserves_bundle_OFF",
+        "ruleCount": 1,
+        "rule_0": "set crate_bundle_10_and_10 0"
+    },
+    {
+        "name": "10_and_0_standard_reserves_bundle_ON",
+        "ruleCount": 1,
+        "rule_0": "set crate_conveniencebundle_10 1"
+    },
+    {
+        "name": "10_and_0_standard_reserves_bundle_OFF",
+        "ruleCount": 1,
+        "rule_0": "set crate_conveniencebundle_10 0"
+    },
+    {
+        "name": "icr7_bundle_april_2019_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "ar_accurate_bundle"",
+        "rule_2": "set loot_tier_discount2_price 2000",
+        "rule_3": "set loot_tier_discount2_skuid "452201066"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "icr7_bundle_april_2019_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "titan_bundle_april_2019_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "lmg_standard_bundle"",
+        "rule_2": "set loot_tier_discount2_price 2400",
+        "rule_3": "set loot_tier_discount2_skuid "485302195"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "titan_bundle_april_2019_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "gks_bundle_april_2019_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "smg_accurate_bundle"",
+        "rule_2": "set loot_tier_discount2_price 2400",
+        "rule_3": "set loot_tier_discount2_skuid "408953759"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "gks_bundle_april_2019_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "nikolai_bundle_june_2019_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "nikolai_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1100",
+        "rule_3": "set loot_tier_discount2_skuid "404335144"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "nikolai_bundle_june_2019_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "auger_dmr_bundle_june_2019_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "tr_powersemi_bundle"",
+        "rule_2": "set loot_tier_discount2_price 2000",
+        "rule_3": "set loot_tier_discount2_skuid "407783813"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "auger_dmr_bundle_june_2019_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "mar_2019_free_weapon_bribe_ON",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount_free_active 1",
+        "rule_1": "set loot_tier_discount_free_bundle "mar_2019_free_weapon_crate"",
+        "rule_2": "set loot_tier_discount_free_skuid "500501"",
+        "rule_3": "set loot_tier_discount_free_open_crate 11"
+    },
+    {
+        "name": "mar_2019_free_weapon_bribe_OFF",
+        "ruleCount": 4,
+        "rule_0": "set loot_tier_discount_free_active 0",
+        "rule_1": "set loot_tier_discount_free_bundle """,
+        "rule_2": "set loot_tier_discount_free_skuid "0"",
+        "rule_3": "set loot_tier_discount_free_open_crate 0"
+    },
+    {
+        "name": "mar_2019_quad_play_homewrecker_ON",
+        "ruleCount": 6,
+        "rule_0": "set loot_tier_discount1_active 1",
+        "rule_1": "set loot_tier_discount1_bundle "quad_play_homewrecker"",
+        "rule_2": "set loot_tier_discount1_price 2400",
+        "rule_3": "set loot_tier_discount1_skuid "500502"",
+        "rule_4": "set loot_tier_discount1_reserve_tab 1",
+        "rule_5": "set loot_tier_discount1_open_crate 12",
+        "timer_name": "autoevent_discount1_timer"
+    },
+    {
+        "name": "mar_2019_quad_play_homewrecker_OFF",
+        "ruleCount": 6,
+        "rule_0": "set loot_tier_discount1_active 0",
+        "rule_1": "set loot_tier_discount1_bundle """,
+        "rule_2": "set loot_tier_discount1_price 0",
+        "rule_3": "set loot_tier_discount1_skuid "0"",
+        "rule_4": "set loot_tier_discount1_reserve_tab 0",
+        "rule_5": "set loot_tier_discount1_open_crate 0",
+        "timer_name": "autoevent_discount1_timer"
+    },
+    {
+        "name": "mid_season_3_loot_drop_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_new_drop_versions ",5""
+    },
+    {
+        "name": "mid_season_3_loot_drop_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_new_drop_versions """
+    },
+    {
+        "name": "tier_discount_20_for_1000_slot_1_ON",
+        "ruleCount": 7,
+        "rule_0": "set loot_tier_discount1_active 1",
+        "rule_1": "set loot_tier_discount1_tiers 20",
+        "rule_2": "set loot_tier_discount1_price 1000",
+        "rule_3": "set loot_tier_discount1_discount 50",
+        "rule_4": "set loot_tier_discount1_skuid "500106"",
+        "rule_5": "set loot_tier_discount1_image "ui_icon_blackmarket_x20tiers_large"",
+        "rule_6": "set loot_tier_discount1_button "ui_icon_blackmarket_promos_20x_tiers_button_small"",
+        "timer_name": "autoevent_discount1_timer"
+    },
+    {
+        "name": "tier_discount_20_for_1000_slot_1_OFF",
+        "ruleCount": 2,
+        "rule_0": "set loot_tier_discount1_active 0",
+        "rule_1": "set loot_tier_discount1_skuid "0"",
+        "timer_name": "autoevent_discount1_timer"
+    },
+    {
+        "name": "tier_discount_20_for_1000_slot_2_ON",
+        "ruleCount": 7,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_tiers 20",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_discount 50",
+        "rule_4": "set loot_tier_discount2_skuid "500106"",
+        "rule_5": "set loot_tier_discount2_image "ui_icon_blackmarket_x20tiers_large"",
+        "rule_6": "set loot_tier_discount2_button "ui_icon_blackmarket_promos_20x_tiers_button_small"",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "tier_discount_20_for_1000_slot_2_OFF",
+        "ruleCount": 2,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_skuid "0"",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "battery_queens_guard_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "battery_queensguard_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "444720348"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "battery_queens_guard_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "firebreak_dragon_slayer_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "firebreak_dragonslayer_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 2000",
+        "rule_3": "set loot_tier_discount2_skuid "429072795"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "firebreak_dragon_slayer_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "hudson_character_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "hudson_blackout_character_bundle"",
+        "rule_2": "set loot_tier_discount2_price 2000",
+        "rule_3": "set loot_tier_discount2_skuid "417122986"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "hudson_character_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "prophet_desert_eagle_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "prophet_deserteagle_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "483080440"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "prophet_desert_eagle_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "dempsey_character_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "dempsey_blackout_character_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "460117353"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "dempsey_character_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "brutus_character_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "warden_character_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1200",
+        "rule_3": "set loot_tier_discount2_skuid "473511760"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "brutus_character_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "nomad_detective_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "nomad_cop_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1200",
+        "rule_3": "set loot_tier_discount2_skuid "405176346"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "nomad_detective_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "retro_vegas_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "retro_vegas_reactive_camo_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1200",
+        "rule_3": "set loot_tier_discount2_skuid "432005206"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "retro_vegas_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "torque_assassin_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "torque_assassin_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "487174576"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "torque_assassin_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "battery_assassin_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "battery_assassin_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "426946860"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "battery_assassin_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "ajax_assassin_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "ajax_assassin_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "457236613"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "ajax_assassin_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "melee_club_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "melee_club_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1300",
+        "rule_3": "set loot_tier_discount2_skuid "480455494"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "melee_club_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "melee_coinbag_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "melee_coinbag_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1500",
+        "rule_3": "set loot_tier_discount2_skuid "475773388"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "melee_coinbag_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "rising_tide_melee_bundle_offer_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "rising_tide_melee_bundle_offer"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "431446038"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "rising_tide_melee_bundle_offer_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "seraph_heist_outfit_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "seraph_heist_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "488439272"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "seraph_heist_outfit_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "zero_persian_outfit_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "zero_persian_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "415621141"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "zero_persian_outfit_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "recon_samurai_outfit_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "recon_samurai_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "496131163"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "recon_samurai_outfit_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "recon_wetworks_outfit_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "recon_wetworks_outfit_bundle"",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_skuid "405330274"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "recon_wetworks_outfit_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "smg_handling_greatlion_mastercraft_bundle_ON",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_bundle "smg_handling_greatlion_mastercraft_bundle"",
+        "rule_2": "set loot_tier_discount2_price 2000",
+        "rule_3": "set loot_tier_discount2_skuid "484798148"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 1",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "smg_handling_greatlion_mastercraft_bundle_OFF",
+        "ruleCount": 5,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_bundle """,
+        "rule_2": "set loot_tier_discount2_price 0",
+        "rule_3": "set loot_tier_discount2_skuid "0"",
+        "rule_4": "set loot_tier_discount2_reserve_tab 0",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "zm_daily_calling_1_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 1",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_1_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_2_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 2",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_2_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_3_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 3",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_3_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_4_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 4",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_4_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_5_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 5",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_5_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_6_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 6",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_6_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_7_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 7",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_7_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_8_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 8",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_8_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_9_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 9",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_9_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_10_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 10",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_10_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_11_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 11",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_11_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_12_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 12",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_12_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_13_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 13",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_13_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_14_ON",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 14",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "zm_daily_calling_14_OFF",
+        "ruleCount": 1,
+        "rule_0": "set zm_active_daily_calling 0",
+        "timer_name": "zm_daily_callings_timer"
+    },
+    {
+        "name": "tier_discount_1_ON",
+        "ruleCount": 6,
+        "rule_0": "set loot_tier_discount1_active 1",
+        "rule_1": "set loot_tier_discount1_tiers 5",
+        "rule_2": "set loot_tier_discount1_price 300",
+        "rule_3": "set loot_tier_discount1_discount 40",
+        "rule_4": "set loot_tier_discount1_skuid "500105"",
+        "rule_5": "set loot_tier_discount1_image "ui_icon_blackmarket_tier_medium"",
+        "timer_name": "autoevent_discount1_timer"
+    },
+    {
+        "name": "tier_discount_1_OFF",
+        "ruleCount": 2,
+        "rule_0": "set loot_tier_discount1_active 0",
+        "rule_1": "set loot_tier_discount1_skuid "0"",
+        "timer_name": "autoevent_discount1_timer"
+    },
+    {
+        "name": "tier_discount_2_ON",
+        "ruleCount": 6,
+        "rule_0": "set loot_tier_discount2_active 1",
+        "rule_1": "set loot_tier_discount2_tiers 20",
+        "rule_2": "set loot_tier_discount2_price 1000",
+        "rule_3": "set loot_tier_discount2_discount 50",
+        "rule_4": "set loot_tier_discount2_skuid "500106"",
+        "rule_5": "set loot_tier_discount2_image "ui_icon_blackmarket_tier_medium"",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "tier_discount_2_OFF",
+        "ruleCount": 2,
+        "rule_0": "set loot_tier_discount2_active 0",
+        "rule_1": "set loot_tier_discount2_skuid "0"",
+        "timer_name": "autoevent_discount2_timer"
+    },
+    {
+        "name": "tier_discount_3_ON",
+        "ruleCount": 6,
+        "rule_0": "set loot_tier_discount3_active 1",
+        "rule_1": "set loot_tier_discount3_tiers 50",
+        "rule_2": "set loot_tier_discount3_price 2000",
+        "rule_3": "set loot_tier_discount3_discount 60",
+        "rule_4": "set loot_tier_discount3_skuid "500107"",
+        "rule_5": "set loot_tier_discount3_image "ui_icon_blackmarket_tier_medium"",
+        "timer_name": "autoevent_discount3_timer"
+    },
+    {
+        "name": "tier_discount_3_OFF",
+        "ruleCount": 2,
+        "rule_0": "set loot_tier_discount3_active 0",
+        "rule_1": "set loot_tier_discount3_skuid "0"",
+        "timer_name": "autoevent_discount3_timer"
+    },
+    {
+        "name": "half_off_item_store_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_enable_discounts 1",
+        "timer_name": "autoevent_storediscount_timer"
+    },
+    {
+        "name": "half_off_item_store_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_enable_discounts 0",
+        "timer_name": "autoevent_storediscount_timer"
+    },
+    {
+        "name": "wz_mp_specialists_unlocked_ON",
+        "ruleCount": 1,
+        "rule_0": "set wz_mp_character_unlocks_outfits 1",
+        "timer_name": "autoevent_wzmpcharunlocks_timer"
+    },
+    {
+        "name": "wz_mp_specialists_unlocked_OFF",
+        "ruleCount": 1,
+        "rule_0": "set wz_mp_character_unlocks_outfits 0",
+        "timer_name": "autoevent_wzmpcharunlocks_timer"
+    },
+    {
+        "name": "playlist_boost_2xp_mp_wz_zm_server_ON",
+        "ruleCount": 7,
+        "rule_0": "set playlist_xpboostentryids 87,164,216",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "rule_3": "set zmxpgroups playlist_xp_boost",
+        "rule_4": "addserveractiveevent live_event_xp_zm",
+        "rule_5": "set wzxpgroups playlist_xp_boost",
+        "rule_6": "addserveractiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_boost_2xp_mp_wz_zm_server_OFF",
+        "ruleCount": 7,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "rule_3": "set zmxpgroups """,
+        "rule_4": "clearserveractiveevent live_event_xp_zm",
+        "rule_5": "set wzxpgroups """,
+        "rule_6": "clearserveractiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_boost_2xp_mp_wz_zm_client_ON",
+        "ruleCount": 3,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "rule_1": "addclientactiveevent live_event_xp_zm",
+        "rule_2": "addclientactiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_boost_2xp_mp_wz_zm_client_OFF",
+        "ruleCount": 3,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "rule_1": "clearclientactiveevent live_event_xp_zm",
+        "rule_2": "clearclientactiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_long_term_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 69,81,88,57,91,95,99,71,78,61,83,76,100,86,66",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_long_term_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_long_term_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_long_term_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_nuketown_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 60",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_nuketown_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_nuketown_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_nuketown_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_bjgg_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 69",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_bjgg_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_bjgg_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_bjgg_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_stockpile_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 81",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_stockpile_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_stockpile_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_stockpile_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_prophunt_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 88",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_prophunt_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_prophunt_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_prophunt_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_chaosdom_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 57",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_chaosdom_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_chaosdom_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_chaosdom_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_ctf_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 91",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_ctf_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_ctf_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_ctf_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_sns_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 95",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_sns_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_sns_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_sns_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_infectedfs_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 99",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_infectedfs_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_infectedfs_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_infectedfs_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_hoh_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 71",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_hoh_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_hoh_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_hoh_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_oitc_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 78",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_oitc_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_oitc_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_oitc_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_endchaosmosh_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 61",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_endchaosmosh_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_endchaosmosh_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_endchaosmosh_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_hcbbmosh_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 83",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_hcbbmosh_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_hcbbmosh_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_hcbbmosh_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_armsrace_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 76",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_armsrace_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_armsrace_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_armsrace_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_partymosh_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 100",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_partymosh_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_partymosh_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_partymosh_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_dmdom_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 86",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_dmdom_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_dmdom_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_dmdom_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_server_hcnuketown_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 66",
+        "rule_1": "set mpxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_server_hcnuketown_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set mpxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "playlist_2xp_mp_client_hcnuketown_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_2xp_mp_client_hcnuketown_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "playlist_boost_2xp_zm_server_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 216",
+        "rule_1": "set zmxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_zm",
+        "timer_name": "autoevent_2xp_zm_timer_sv"
+    },
+    {
+        "name": "playlist_boost_2xp_zm_server_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set zmxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_zm",
+        "timer_name": "autoevent_2xp_zm_timer_sv"
+    },
+    {
+        "name": "playlist_boost_2xp_zm_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_zm",
+        "timer_name": "autoevent_2xp_zm_timer"
+    },
+    {
+        "name": "playlist_boost_2xp_zm_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_zm",
+        "timer_name": "autoevent_2xp_zm_timer"
+    },
+    {
+        "name": "playlist_boost_2xp_wz_server_ON",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids 158",
+        "rule_1": "set wzxpgroups playlist_xp_boost",
+        "rule_2": "addserveractiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_wz_timer_sv"
+    },
+    {
+        "name": "playlist_boost_2xp_wz_server_OFF",
+        "ruleCount": 3,
+        "rule_0": "set playlist_xpboostentryids """,
+        "rule_1": "set wzxpgroups """,
+        "rule_2": "clearserveractiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_wz_timer_sv"
+    },
+    {
+        "name": "playlist_boost_2xp_wz_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_wz_timer"
+    },
+    {
+        "name": "playlist_boost_2xp_wz_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_wz",
+        "timer_name": "autoevent_2xp_wz_timer"
+    },
+    {
+        "name": "party_of_2_2xp_mp_server_ON",
+        "ruleCount": 2,
+        "rule_0": "set mpxpgroups party2",
+        "rule_1": "addserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "party_of_2_2xp_mp_server_OFF",
+        "ruleCount": 2,
+        "rule_0": "set mpxpgroups """,
+        "rule_1": "clearserveractiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer_sv"
+    },
+    {
+        "name": "party_of_2_2xp_mp_client_ON",
+        "ruleCount": 1,
+        "rule_0": "addclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "party_of_2_2xp_mp_client_OFF",
+        "ruleCount": 1,
+        "rule_0": "clearclientactiveevent live_event_xp_mp",
+        "timer_name": "autoevent_2xp_mp_timer"
+    },
+    {
+        "name": "early_season_4_loot_drop_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_new_drop_versions ",7""
+    },
+    {
+        "name": "early_season_4_loot_drop_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_new_drop_versions """
+    },
+    {
+        "name": "community_event_june_2019_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_special_contract_bundle "community_galil_achievement"",
+        "timer_name": "autoevent_special_contract_timer"
+    },
+    {
+        "name": "community_event_june_2019_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_special_contract_bundle """,
+        "timer_name": "autoevent_special_contract_timer"
+    },
+    {
+        "name": "featured_playlist_rotation_test_mp1_ON",
+        "ruleCount": 2,
+        "rule_0": "set playlist_featured_tile_mp "entry_mp_core_dom"",
+        "rule_1": "set playlist_featured_category_mp "entry_mp_core_dom;entry_mp_core_ffa;entry_mp_core_tdm""
+    },
+    {
+        "name": "featured_playlist_rotation_test_mp1_OFF",
+        "ruleCount": 2,
+        "rule_0": "set playlist_featured_tile_mp """,
+        "rule_1": "set playlist_featured_category_mp """
+    },
+    {
+        "name": "featured_playlist_rotation_test_mp2_ON",
+        "ruleCount": 2,
+        "rule_0": "set playlist_featured_tile_mp "entry_mp_featured_grind_247"",
+        "rule_1": "set playlist_featured_category_mp "entry_mp_featured_barebones_objective_moshpit;entry_mp_featured_capture_the_flag;entry_mp_featured_barebones_bolt_action_moshpit;entry_mp_featured_barebones_deathmatch_moshpit;entry_mp_featured_prophunt""
+    },
+    {
+        "name": "featured_playlist_rotation_test_mp2_OFF",
+        "ruleCount": 2,
+        "rule_0": "set playlist_featured_tile_mp """,
+        "rule_1": "set playlist_featured_category_mp """
+    },
+    {
+        "name": "featured_playlist_rotation_test_wz1_ON",
+        "ruleCount": 2,
+        "rule_0": "set playlist_featured_tile_mp "entry_wz_core_prod_ground_war"",
+        "rule_1": "set playlist_featured_category_mp "entry_wz_core_prod_quads;entry_wz_core_prod_duos;entry_wz_core_prod_solo""
+    },
+    {
+        "name": "featured_playlist_rotation_test_wz1_OFF",
+        "ruleCount": 2,
+        "rule_0": "set playlist_featured_tile_mp """,
+        "rule_1": "set playlist_featured_category_mp """
+    },
+    {
+        "name": "featured_playlist_rotation_test_wz2_ON",
+        "ruleCount": 2,
+        "rule_0": "set playlist_featured_tile_mp "entry_wz_core_prod_ground_war"",
+        "rule_1": "set playlist_featured_category_mp "entry_wz_core_prod_quads;entry_wz_core_prod_duos;entry_wz_core_prod_solo;entry_wz_escape_dbno_quad""
+    },
+    {
+        "name": "featured_playlist_rotation_test_wz2_OFF",
+        "ruleCount": 2,
+        "rule_0": "set playlist_featured_tile_mp """,
+        "rule_1": "set playlist_featured_category_mp """
+    },
+    {
+        "name": "cpt_price_mw_pre_order_ON",
+        "ruleCount": 1,
+        "rule_0": "set cg_allowcaptainprice 1"
+    },
+    {
+        "name": "cpt_price_mw_pre_order_OFF",
+        "ruleCount": 1,
+        "rule_0": "set cg_allowcaptainprice 0"
+    },
+    {
+        "name": "10_no_dupe_crate_bundle_ON",
+        "ruleCount": 1,
+        "rule_0": "set crate_nodupebundle_10 1"
+    },
+    {
+        "name": "10_no_dupe_crate_bundle_OFF",
+        "ruleCount": 1,
+        "rule_0": "set crate_nodupebundle_10 0"
+    },
+    {
+        "name": "half_off_crate_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_crates_half_off 1",
+        "timer_name": "autoevent_half_off_crate_timer"
+    },
+    {
+        "name": "half_off_crate_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_crates_half_off 0",
+        "timer_name": "autoevent_half_off_crate_timer"
+    },
+    {
+        "name": "100_reserve_crate_bundle_ON",
+        "ruleCount": 1,
+        "rule_0": "set crate_nodupebundle_100 1"
+    },
+    {
+        "name": "100_reserve_crate_bundle_OFF",
+        "ruleCount": 1,
+        "rule_0": "set crate_nodupebundle_100 0"
+    },
+    {
+        "name": "digital_refresh_v3_ON",
+        "ruleCount": 1,
+        "rule_0": "set ui_spectrerewardswap 1"
+    },
+    {
+        "name": "digital_refresh_v3_OFF",
+        "ruleCount": 1,
+        "rule_0": "set ui_spectrerewardswap 0"
+    },
+    {
+        "name": "sunset_features_ON",
+        "ruleCount": 3,
+        "rule_0": "set loot_sunsetblackjackshopactive 1",
+        "rule_1": "set loot_purchase_no_dupe 1",
+        "rule_2": "set loot_hide_reserves_preview_video 0"
+    },
+    {
+        "name": "sunset_features_OFF",
+        "ruleCount": 3,
+        "rule_0": "set loot_sunsetblackjackshopactive 0",
+        "rule_1": "set loot_purchase_no_dupe 0",
+        "rule_2": "set loot_hide_reserves_preview_video 1"
+    },
+    {
+        "name": "reserves_drop_12_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_new_drop_versions 12"
+    },
+    {
+        "name": "reserves_drop_12_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_new_drop_versions """
+    },
+    {
+        "name": "bribe_offer_launch_ON",
+        "ruleCount": 4,
+        "rule_0": "set loot_bribe_menu_active 1",
+        "rule_1": "set loot_bribe_menu_window_size 2419200",
+        "rule_2": "set loot_bribe_menu_start 1573578000",
+        "rule_3": "set loot_weaponbribemultipurchaseactive 0"
+    },
+    {
+        "name": "bribe_offer_launch_OFF",
+        "ruleCount": 4,
+        "rule_0": "set loot_bribe_menu_active 0",
+        "rule_1": "set loot_bribe_menu_window_size 0",
+        "rule_2": "set loot_bribe_menu_start 1573578000",
+        "rule_3": "set loot_weaponbribemultipurchaseactive 0"
+    },
+    {
+        "name": "bribe_offer_holidays_2019_ON",
+        "ruleCount": 4,
+        "rule_0": "set loot_bribe_menu_active 1",
+        "rule_1": "set loot_bribe_menu_window_size 0",
+        "rule_2": "set loot_bribe_menu_start 1575997200",
+        "rule_3": "set loot_weaponbribemultipurchaseactive 1"
+    },
+    {
+        "name": "bribe_offer_holidays_2019_OFF",
+        "ruleCount": 4,
+        "rule_0": "set loot_bribe_menu_active 0",
+        "rule_1": "set loot_bribe_menu_window_size 0",
+        "rule_2": "set loot_bribe_menu_start 1575997200",
+        "rule_3": "set loot_weaponbribemultipurchaseactive 0"
+    },
+    {
+        "name": "bribe_offer_2020_ON",
+        "ruleCount": 4,
+        "rule_0": "set loot_bribe_menu_active 1",
+        "rule_1": "set loot_bribe_menu_window_size 2419200",
+        "rule_2": "set loot_bribe_menu_start 1578420000",
+        "rule_3": "set loot_weaponbribemultipurchaseactive 0"
+    },
+    {
+        "name": "bribe_offer_2020_OFF",
+        "ruleCount": 4,
+        "rule_0": "set loot_bribe_menu_active 0",
+        "rule_1": "set loot_bribe_menu_window_size 2419200",
+        "rule_2": "set loot_bribe_menu_start 1578420000",
+        "rule_3": "set loot_weaponbribemultipurchaseactive 0"
+    },
+    {
+        "name": "5_and_5_no_dupe_crate_bundle_ON",
+        "ruleCount": 1,
+        "rule_0": "set crate_nodupebundle_5_and_5 1"
+    },
+    {
+        "name": "5_and_5_no_dupe_crate_bundle_OFF",
+        "ruleCount": 1,
+        "rule_0": "set crate_nodupebundle_5_and_5 0"
+    },
+    {
+        "name": "10_and_20_no_dupe_crate_bundle_ON",
+        "ruleCount": 1,
+        "rule_0": "set crate_nodupebundle_10_and_20 1"
+    },
+    {
+        "name": "10_and_20_no_dupe_crate_bundle_OFF",
+        "ruleCount": 1,
+        "rule_0": "set crate_nodupebundle_10_and_20 0"
+    },
+    {
+        "name": "half_off_nd_crate_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_half_off_no_dupe_crate 1"
+    },
+    {
+        "name": "half_off_nd_crate_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_half_off_no_dupe_crate 0"
+    },
+    {
+        "name": "privacy_settings_menu_ON",
+        "ruleCount": 1,
+        "rule_0": "set live_useregulation 1"
+    },
+    {
+        "name": "privacy_settings_menu_OFF",
+        "ruleCount": 1,
+        "rule_0": "set live_useregulation 0"
+    },
+    {
+        "name": "reserve_completion_meter_ON",
+        "ruleCount": 1,
+        "rule_0": "set ui_enablereservesmeter 1"
+    },
+    {
+        "name": "reserve_completion_meter_OFF",
+        "ruleCount": 1,
+        "rule_0": "set ui_enablereservesmeter 0"
+    },
+    {
+        "name": "half_off_pick_weapon_bribes_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_halfoffpickweaponbribeactive 1",
+        "timer_name": "bribe_menu_half_off_timer"
+    },
+    {
+        "name": "half_off_pick_weapon_bribes_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_halfoffpickweaponbribeactive 0",
+        "timer_name": "bribe_menu_half_off_timer"
+    },
+    {
+        "name": "free_pick_weapon_bribe_may_2020_ON",
+        "ruleCount": 1,
+        "rule_0": "set loot_freepickweaponbribeactive 1"
+    },
+    {
+        "name": "free_pick_weapon_bribe_may_2020_OFF",
+        "ruleCount": 1,
+        "rule_0": "set loot_freepickweaponbribeactive 0"
+    }
+]
