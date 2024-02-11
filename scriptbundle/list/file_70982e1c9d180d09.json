@@ -1,0 +1,14 @@
+{
+    "name": "#hash_70982e1c9d180d09",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#prematch_period",
+        "#preround_period",
+        "#force_radar",
+        "#round_start_explosive_delay",
+        "#allow_killcam",
+        "#round_start_killstreak_delay",
+        "#kill_event_score_multiplier",
+        "#fow_reveal_enabled"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "#hash_548ae780261a4dc3",
+    "assetType": "gamesettingoptioncategory",
+    "assets": [
+        "#gsoc_zm_standardweapons",
+        "#gsoc_zm_specialweapons",
+        "#gsoc_zm_wonderweapons",
+        "#gsoc_zm_equipment",
+        "#gsoc_zm_shield"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "#gsol_zm_shield",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#zm_shield",
+        "#zm_shielddurability",
+        "#zm_craftingkeyline"
+    ]
+}

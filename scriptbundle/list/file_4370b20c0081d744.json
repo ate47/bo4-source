@@ -1,0 +1,10 @@
+{
+    "name": "#hash_4370b20c0081d744",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#scope_is_sniper_fastrechamber_restriction",
+        "#scope_is_sniper_powerbolt_restriction",
+        "#scope_is_sniper_powersemi_restriction",
+        "#scope_is_sniper_quickscope_restriction"
+    ]
+}

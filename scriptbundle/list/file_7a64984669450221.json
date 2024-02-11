@@ -1,0 +1,21 @@
+{
+    "name": "#hash_7a64984669450221",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#attachment_steadyaim_ar_accurate_restriction",
+        "#attachment_steadyaim_ar_fastfire_restriction",
+        "#attachment_steadyaim_ar_modular_restriction",
+        "#attachment_steadyaim_lmg_spray_restriction",
+        "#attachment_steadyaim_pistol_burst_restriction",
+        "#attachment_steadyaim_pistol_standard_restriction",
+        "#attachment_steadyaim_shotgun_semiauto_restriction",
+        "#attachment_steadyaim_smg_capacity_restriction",
+        "#attachment_steadyaim_smg_fastburst_restriction",
+        "#attachment_steadyaim_smg_fastfire_restriction",
+        "#attachment_steadyaim_smg_standard_restriction",
+        "#attachment_steadyaim_sniper_powersemi_restriction",
+        "#attachment_steadyaim_sniper_quickscope_restriction",
+        "#attachment_steadyaim_tr_midburst_restriction",
+        "#attachment_steadyaim_tr_powersemi_restriction"
+    ]
+}

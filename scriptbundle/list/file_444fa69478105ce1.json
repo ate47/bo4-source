@@ -1,0 +1,10 @@
+{
+    "name": "#hash_444fa69478105ce1",
+    "assetType": "playersettingoption",
+    "assets": [
+        "#codcaster_ds_xray_1p_allies",
+        "#codcaster_ds_xray_1p_enemies",
+        "#codcaster_ds_xray_air_allies",
+        "#codcaster_ds_xray_air_enemies"
+    ]
+}

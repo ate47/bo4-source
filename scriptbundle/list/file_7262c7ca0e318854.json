@@ -1,0 +1,11 @@
+{
+    "name": "#hash_7262c7ca0e318854",
+    "assetType": "lobbymenu",
+    "assets": [
+        "#director_lan_mp",
+        "#director_online_mp_public",
+        "#director_online_mp_custom",
+        "#director_online_mp_theater",
+        "#director_online_mp_pregame"
+    ]
+}

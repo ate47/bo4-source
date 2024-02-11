@@ -1,0 +1,13 @@
+{
+    "name": "#hash_2652994b4b63e58a",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#attachment_mixclip_ar_modular_restriction",
+        "#attachment_mixclip_lmg_spray_restriction",
+        "#attachment_mixclip_pistol_fullauto_restriction",
+        "#attachment_mixclip_smg_fastburst_restriction",
+        "#attachment_mixclip_smg_standard_restriction",
+        "#attachment_mixclip_sniper_fastrechamber_restriction",
+        "#attachment_mixclip_tr_longburst_restriction"
+    ]
+}

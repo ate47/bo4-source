@@ -1,0 +1,12 @@
+{
+    "name": "#gsol_zm_health",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#zm_healthstarting",
+        "#zm_healthregendelay",
+        "#zm_healthregenrate",
+        "#zm_healthonkill",
+        "#zm_healthdrain",
+        "#zm_friendly_fire_type"
+    ]
+}

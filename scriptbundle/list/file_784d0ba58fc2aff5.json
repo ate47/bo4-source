@@ -1,0 +1,18 @@
+{
+    "name": "#hash_784d0ba58fc2aff5",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#scope_mms_ar_accurate_restriction",
+        "#scope_mms_ar_damage_restriction",
+        "#scope_mms_ar_standard_restriction",
+        "#scope_mms_lmg_spray_restriction",
+        "#scope_mms_lmg_standard_restriction",
+        "#scope_mms_smg_capacity_restriction",
+        "#scope_mms_smg_handling_restriction",
+        "#scope_mms_sniper_fastrechamber_restriction",
+        "#scope_mms_sniper_powerbolt_restriction",
+        "#scope_mms_sniper_powersemi_restriction",
+        "#scope_mms_tr_longburst_restriction",
+        "#scope_mms_tr_powersemi_restriction"
+    ]
+}

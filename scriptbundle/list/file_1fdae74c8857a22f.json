@@ -1,0 +1,19 @@
+{
+    "name": "#hash_1fdae74c8857a22f",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#scope_ir_ar_accurate_restriction",
+        "#scope_ir_ar_standard_restriction",
+        "#scope_ir_ar_stealth_restriction",
+        "#scope_ir_lmg_heavy_restriction",
+        "#scope_ir_lmg_standard_restriction",
+        "#scope_ir_smg_accurate_restriction",
+        "#scope_ir_smg_standard_restriction",
+        "#scope_ir_sniper_powerbolt_restriction",
+        "#scope_ir_sniper_powersemi_restriction",
+        "#scope_ir_sniper_quickscope_restriction",
+        "#scope_ir_tr_longburst_restriction",
+        "#scope_ir_tr_midburst_restriction",
+        "#scope_ir_tr_powersemi_restriction"
+    ]
+}

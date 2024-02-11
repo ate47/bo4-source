@@ -1,0 +1,10 @@
+{
+    "name": "#hash_7ca7d90a41c4a251",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#attachment_extclip2_lmg_standard_restriction",
+        "#attachment_extclip2_pistol_burst_restriction",
+        "#attachment_extclip2_shotgun_semiauto_restriction",
+        "#attachment_extclip2_sniper_powersemi_restriction"
+    ]
+}

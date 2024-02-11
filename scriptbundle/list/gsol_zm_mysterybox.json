@@ -1,0 +1,10 @@
+{
+    "name": "#gsol_zm_mysterybox",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#zm_mysteryboxstate",
+        "#zm_mysteryboxlimitmove",
+        "#zm_mysteryboxlimit",
+        "#zm_mysteryboxlimitrnd"
+    ]
+}

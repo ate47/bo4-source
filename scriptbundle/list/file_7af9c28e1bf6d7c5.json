@@ -1,0 +1,12 @@
+{
+    "name": "#hash_7af9c28e1bf6d7c5",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#ability_enabled",
+        "#ability_cooldown",
+        "#ability_on_respawn",
+        "#equipment_enabled",
+        "#equipment_cooldown",
+        "#equipment_on_respawn"
+    ]
+}

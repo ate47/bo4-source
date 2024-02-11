@@ -1,0 +1,11 @@
+{
+    "name": "#hash_5261d4c1cc84baa",
+    "assetType": "playersettingoption",
+    "assets": [
+        "#codcaster_ds_third_person",
+        "#codcaster_ds_minimap",
+        "#codcaster_ds_killfeed",
+        "#codcaster_ds_waypoint_markers",
+        "#codcaster_ds_toolbar"
+    ]
+}

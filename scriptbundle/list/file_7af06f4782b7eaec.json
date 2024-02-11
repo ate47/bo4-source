@@ -1,0 +1,14 @@
+{
+    "name": "#hash_7af06f4782b7eaec",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#pistol_standard_restriction",
+        "#pistol_burst_restriction",
+        "#pistol_revolver_restriction",
+        "#shotgun_pump_restriction",
+        "#shotgun_semiauto_restriction",
+        "#launcher_standard_restriction",
+        "#knife_loadout_restriction",
+        "#melee_secretsanta_restriction"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "#hash_3a66ee44116637c0",
+    "assetType": "playersettingoption",
+    "assets": [
+        "#pc_category_audio",
+        "#pc_master_volume_mute",
+        "#pc_expander_audio",
+        "#pc_audio_presets",
+        "#pc_battlechatter",
+        "#pc_subtitles",
+        "#pc_empty_separator",
+        "#pc_category_voicechat",
+        "#pc_voice_chat_enable",
+        "#pc_voice_chat_channel",
+        "#pc_expander_pushtotalk",
+        "#pc_voice_chat_input_volume",
+        "#pc_voice_chat_input_device",
+        "#pc_voice_chat_output_volume",
+        "#pc_voice_chat_output_device",
+        "#pc_sound_scale_when_speaking_enable",
+        "#pc_sound_scale_when_speaking_range",
+        "#pc_mute_voice_chat",
+        "#pc_empty_separator"
+    ]
+}

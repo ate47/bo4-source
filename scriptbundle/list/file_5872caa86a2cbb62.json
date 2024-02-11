@@ -1,0 +1,29 @@
+{
+    "name": "#hash_5872caa86a2cbb62",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#scope_reflex_ar_accurate_restriction",
+        "#scope_reflex_ar_damage_restriction",
+        "#scope_reflex_ar_fastfire_restriction",
+        "#scope_reflex_ar_modular_restriction",
+        "#scope_reflex_ar_standard_restriction",
+        "#scope_reflex_ar_stealth_restriction",
+        "#scope_reflex_lmg_heavy_restriction",
+        "#scope_reflex_lmg_spray_restriction",
+        "#scope_reflex_lmg_standard_restriction",
+        "#scope_reflex_pistol_burst_restriction",
+        "#scope_reflex_pistol_fullauto_restriction",
+        "#scope_reflex_pistol_standard_restriction",
+        "#scope_reflex_shotgun_semiauto_restriction",
+        "#scope_reflex_smg_accurate_restriction",
+        "#scope_reflex_smg_capacity_restriction",
+        "#scope_reflex_smg_fastburst_restriction",
+        "#scope_reflex_smg_fastfire_restriction",
+        "#scope_reflex_smg_handling_restriction",
+        "#scope_reflex_smg_standard_restriction",
+        "#scope_reflex_sniper_fastrechamber_restriction",
+        "#scope_reflex_tr_longburst_restriction",
+        "#scope_reflex_tr_midburst_restriction",
+        "#scope_reflex_tr_powersemi_restriction"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "#hash_3f4f713ef679c9bc",
+    "assetType": "lobbymenu",
+    "assets": [
+        "#director_online_mp_arena_pregame",
+        "#director_online_mp_arena_matchmaking",
+        "#director_online_mp_arena_custom",
+        "#director_lan_mp_arena"
+    ]
+}

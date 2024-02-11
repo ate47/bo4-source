@@ -1,0 +1,18 @@
+{
+    "name": "#gsol_zm_powerups",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#zm_powerups",
+        "#zm_powerupfrequency",
+        "#zm_powerupsislimited",
+        "#zm_poweruplimit",
+        "#zm_powerups2x",
+        "#zm_powerupscarpenter",
+        "#zm_powerupschaos",
+        "#zm_powerupsfiresale",
+        "#zm_powerupsinsta",
+        "#zm_powerupsmaxammo",
+        "#zm_powerupsnuke",
+        "#zm_powerupsspecweap"
+    ]
+}

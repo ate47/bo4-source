@@ -1,0 +1,15 @@
+{
+    "name": "#hash_4389adf5bae5d049",
+    "assetType": "gpadbuttonlayout",
+    "assets": [
+        "#button_layout_default",
+        "#button_layout_experimental",
+        "#button_layout_lefty",
+        "#button_layout_nomad",
+        "#button_layout_charlie",
+        "#button_layout_gunslinger",
+        "#button_layout_bumper_jumper",
+        "#button_layout_bumper_tactical",
+        "#button_layout_stick_move"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "#gsol_zm_wonderweapons",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#zm_wonderweap"
+    ]
+}

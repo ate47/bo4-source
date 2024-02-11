@@ -37,6 +37,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | scriptparsetreeforced   | 50  | `/tables/scriptparsetreeforced/`    |
 | typeinfo                | 62  | EMPTY                               |
 | scriptbundle            | 63  | `/scriptbundle/`                    |
+| scriptbundlelist        | 64  | `/scriptbundle/list/`               |
 | ttf (names)             | 76  | `/tables/ttf.csv`                   |
 | bgcache                 | 85  | `/bgcache/`                         |
 | maptable                | 89  | `/tables/map/`                      |

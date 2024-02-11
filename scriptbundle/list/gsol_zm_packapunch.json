@@ -1,0 +1,8 @@
+{
+    "name": "#gsol_zm_packapunch",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#zm_pack",
+        "#zm_superpack"
+    ]
+}

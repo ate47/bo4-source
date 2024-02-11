@@ -1,0 +1,9 @@
+{
+    "name": "#hash_7863a4b07cdc6a22",
+    "assetType": "gpadbuttonlayout",
+    "assets": [
+        "#demo_button_layout_default",
+        "#demo_button_layout_digital",
+        "#demo_button_layout_badbot"
+    ]
+}

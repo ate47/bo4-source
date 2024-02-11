@@ -1,0 +1,12 @@
+{
+    "name": "#gsol_zm_basiczombies",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#zm_crawlerstate",
+        "#zm_zombiespread",
+        "#zm_zombiespeedmin",
+        "#zm_zombiespeedmax",
+        "#zm_zombiedamagemult",
+        "#zm_zombiehealthmult"
+    ]
+}

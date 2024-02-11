@@ -1,0 +1,8 @@
+{
+    "name": "#hash_251bb4f2ede86f4c",
+    "assetType": "lobbymenu",
+    "assets": [
+        "#main",
+        "#director_lan_select"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "#hash_76fb5372632dfe7",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#ar_accurate_restriction",
+        "#ar_damage_restriction",
+        "#ar_fastfire_restriction",
+        "#ar_modular_restriction",
+        "#ar_standard_restriction",
+        "#ar_stealth_restriction"
+    ]
+}

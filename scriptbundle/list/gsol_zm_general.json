@@ -1,0 +1,15 @@
+{
+    "name": "#gsol_zm_general",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#zm_startround",
+        "#zm_roundcap",
+        "#zm_timecap",
+        "#zm_showtimer",
+        "#zm_killcap",
+        "#zm_specialrounds",
+        "#zm_trapsenabled",
+        "#zm_allowstartingweapon",
+        "#zm_headshots"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "#gsol_zm_laststand",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#zm_laststandduration",
+        "#zm_laststandcount",
+        "#zm_selfrevivecount",
+        "#zm_retainweapons",
+        "#zm_perkdecay"
+    ]
+}

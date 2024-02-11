@@ -1,0 +1,14 @@
+{
+    "name": "#hash_30157c260765cc9b",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#mp_player_max_health",
+        "#specialist_healing_enabled",
+        "#heal_speed",
+        "#mp_friendly_fire_type",
+        "#mp_teamkill_punish_count",
+        "#mp_only_headshots",
+        "#allow_hit_markers",
+        "#mp_competitive_settings"
+    ]
+}

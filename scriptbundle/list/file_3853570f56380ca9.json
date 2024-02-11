@@ -1,0 +1,21 @@
+{
+    "name": "#hash_3853570f56380ca9",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#attachment_damage_ar_damage_restriction",
+        "#attachment_damage_ar_standard_restriction",
+        "#attachment_damage_ar_stealth_restriction",
+        "#attachment_damage_launcher_standard_restriction",
+        "#attachment_damage_lmg_heavy_restriction",
+        "#attachment_damage_pistol_fullauto_restriction",
+        "#attachment_damage_pistol_revolver_restriction",
+        "#attachment_damage_smg_fastburst_restriction",
+        "#attachment_damage_smg_standard_restriction",
+        "#attachment_damage_sniper_fastrechamber_restriction",
+        "#attachment_damage_sniper_powerbolt_restriction",
+        "#attachment_damage_sniper_powersemi_restriction",
+        "#attachment_damage_sniper_quickscope_restriction",
+        "#attachment_damage_tr_longburst_restriction",
+        "#attachment_damage_tr_powersemi_restriction"
+    ]
+}

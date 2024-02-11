@@ -1,0 +1,11 @@
+{
+    "name": "#hash_361dd84fb29836e3",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#wc_overkill_restriction",
+        "#wc_primarygunfighter1_restriction",
+        "#wc_primarygunfighter2_restriction",
+        "#wc_primarygunfighter3_restriction",
+        "#wc_primaryoperatormod_restriction"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "#hash_3df45cfa77e25457",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#perk_ghost_restriction",
+        "#perk_teamlink_restriction",
+        "#perk_deadsilence_restriction",
+        "#perk_tracker_restriction"
+    ]
+}

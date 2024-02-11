@@ -1,0 +1,12 @@
+{
+    "name": "#hash_34b3efe87a75373",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#smg_accurate_restriction",
+        "#smg_capacity_restriction",
+        "#smg_fastburst_restriction",
+        "#smg_fastfire_restriction",
+        "#smg_handling_restriction",
+        "#smg_standard_restriction"
+    ]
+}

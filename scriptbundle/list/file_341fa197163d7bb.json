@@ -1,0 +1,11 @@
+{
+    "name": "#hash_341fa197163d7bb",
+    "assetType": "gamesettingoption",
+    "assets": [
+        "#gear_equipmentcharge_restriction",
+        "#gear_medicalgun_restriction",
+        "#gear_comsecdevice_restriction",
+        "#gear_bodyarmor_restriction",
+        "#gear_acousticsensor_restriction"
+    ]
+}
