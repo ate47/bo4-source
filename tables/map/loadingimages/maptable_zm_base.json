@@ -1,0 +1,14 @@
+{
+    "name": "#maptable_zm_base",
+    "mapCount": 4,
+    "images": [
+        "#hash_35b6232b91451836",
+        "#blacktransparent",
+        "#hash_6897cf1b16c24d1a",
+        "#blacktransparent",
+        "#hash_3b6813d4efa82af2",
+        "#blacktransparent",
+        "#blacktransparent",
+        "#blacktransparent"
+    ]
+}

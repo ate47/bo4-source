@@ -1,0 +1,28 @@
+{
+    "name": "#maptable_mp_base",
+    "mapCount": 23,
+    "images": [
+        "#hash_a59e32ad58547bf",
+        "#hash_1cc272f25fdffc3",
+        "#hash_6e91547d6515380b",
+        "#hash_db683c69202109f",
+        "#hash_71a1c75eb6fdd39a",
+        "#hash_457c758fd3cb4bf2",
+        "#hash_5534f4378790a598",
+        "#hash_158ca07c9fa29f8e",
+        "#hash_ead78efa7b020f2",
+        "#hash_38748f136de3c4fd",
+        "#hash_43c510d583cf9d04",
+        "#hash_1f57e25807261343",
+        "#hash_65a17ba135134d55",
+        "#hash_1e6aedba8d4d8484",
+        "#hash_4b0549dcecb4868b",
+        "#hash_2ffeb9335acedcdf",
+        "#hash_5ca12e4b3acd1f17",
+        "#hash_69576f13b481397",
+        "#hash_744bb34864751351",
+        "#hash_2f90d4e92dafcc5a",
+        "#hash_407fcdb5bd3ede3e",
+        "#blacktransparent"
+    ]
+}

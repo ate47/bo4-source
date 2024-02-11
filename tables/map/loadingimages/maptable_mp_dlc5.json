@@ -1,0 +1,12 @@
+{
+    "name": "#maptable_mp_dlc5",
+    "mapCount": 3,
+    "images": [
+        "#hash_729c8cf0dc6b3b20",
+        "#blacktransparent",
+        "#hash_409bb4750fdab284",
+        "#blacktransparent",
+        "#hash_605b7938cc7d972b",
+        "#blacktransparent"
+    ]
+}

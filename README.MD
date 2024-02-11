@@ -41,7 +41,9 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | ttf (names)             | 76  | `/tables/ttf.csv`                   |
 | bgcache                 | 85  | `/bgcache/`                         |
 | maptable                | 89  | `/tables/map/`                      |
-| maptable_list           | 90  | `/tables/map/list/`                 |
+| maptablelist            | 90  | `/tables/map/list/`                 |
+| maptableloadingimages   | 91  | `/tables/map/loadingimages/`        |
+| maptablepreviewimages   | 92  | `/tables/map/previewimages/`        |
 | luadebug                | 104 | EMPTY                               |
 | playerrolecategory      | 109 | `/tables/playerrolecategory/`       |
 | playerrolecategorytable | 110 | `/tables/playerrolecategory/table/` |

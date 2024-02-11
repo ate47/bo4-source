@@ -1,0 +1,16 @@
+{
+    "name": "#maptable_wz_base",
+    "mapCount": 5,
+    "images": [
+        "#blacktransparent",
+        "#blacktransparent",
+        "#blacktransparent",
+        "#blacktransparent",
+        "#blacktransparent",
+        "#blacktransparent",
+        "#blacktransparent",
+        "#blacktransparent",
+        "#blacktransparent",
+        "#blacktransparent"
+    ]
+}

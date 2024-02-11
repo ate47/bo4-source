@@ -1,0 +1,11 @@
+{
+    "name": "#maptable_wz_base",
+    "mapCount": 5,
+    "images": [
+        "#hash_209f3e6b07f34c14",
+        "#hash_5255d4cc4ef37e60",
+        "#hash_678422e23999448d",
+        "#hash_400193d860b201fd",
+        "#blacktransparent"
+    ]
+}
