@@ -209,8 +209,8 @@ function tutorial_reset() {
         self.var_c507ebff = 1;
     }
     self.health = self.maxhealth;
-    var_32bd680d = self getweaponslistprimaries();
-    foreach (w_primary in var_32bd680d) {
+    a_w_primary = self getweaponslistprimaries();
+    foreach (w_primary in a_w_primary) {
         self setweaponammoclip(w_primary, w_primary.clipsize);
         self givemaxammo(w_primary);
     }
@@ -311,8 +311,8 @@ function function_57bf8455() {
     self endon(#"death");
     while (1) {
         var_f7dae996 = 0;
-        var_32bd680d = self getweaponslistprimaries();
-        foreach (w_primary in var_32bd680d) {
+        a_w_primary = self getweaponslistprimaries();
+        foreach (w_primary in a_w_primary) {
             if (self getweaponammostock(w_primary) > 0 || self getweaponammoclip(w_primary) > 0) {
                 var_f7dae996 = 1;
             }
@@ -461,7 +461,7 @@ function function_cf5f5964(spawnerstr, ignore = 0, bot = undefined, b_play_fx = 
             level endon(#"transformation_interrupted");
             eventstruct = undefined;
             eventstruct = level waittill(#"transformation_complete");
-            zombie = eventstruct.var_944250d2[0];
+            zombie = eventstruct.new_ai[0];
         }
         if (isdefined(bot)) {
             /#
@@ -666,8 +666,8 @@ function function_e30183a6() {
 // Checksum 0x53408ff2, Offset: 0x3da0
 // Size: 0x35c
 function function_513e90cf() {
-    var_2151fb35 = getentarray("state_rooms_to_lower_stairs_door", "targetname");
-    foreach (mdl_door in var_2151fb35) {
+    a_mdl_doors = getentarray("state_rooms_to_lower_stairs_door", "targetname");
+    foreach (mdl_door in a_mdl_doors) {
         if (mdl_door.model === #"hash_9a7063a36ee590f") {
             mdl_door setmodel(#"p8_kit_zod_din_05_door_42_left_stained_wood_02");
         } else if (mdl_door.model === #"hash_41f5587fd2de45fc") {
@@ -1067,10 +1067,10 @@ function function_bfd3a7b1() {
     zm_characters::set_character(array(#"hash_3e63362aea484e09", #"hash_5a906d7137467771"));
     self function_204dd117("tutorial_advanced_start");
     self.is_drinking = 0;
-    var_177ce8c = struct::get_array("pap_quest_interact", "targetname");
-    var_177ce8c[0].unitrigger_stub thread zodt8_pap_quest::function_5c299a0f(self);
-    var_177ce8c[1].unitrigger_stub thread zodt8_pap_quest::function_5c299a0f(self);
-    var_177ce8c[2].unitrigger_stub thread zodt8_pap_quest::function_5c299a0f(self);
+    a_pap = struct::get_array("pap_quest_interact", "targetname");
+    a_pap[0].unitrigger_stub thread zodt8_pap_quest::function_5c299a0f(self);
+    a_pap[1].unitrigger_stub thread zodt8_pap_quest::function_5c299a0f(self);
+    a_pap[2].unitrigger_stub thread zodt8_pap_quest::function_5c299a0f(self);
     self takeallweapons();
     self function_3fe47ed7("smg_handling_t8");
     self function_3fe47ed7("ar_stealth_t8");
@@ -1654,15 +1654,15 @@ function pap() {
     function_68da8e33(#"hash_223704d87588d3a1", 0.5);
     level thread function_68da8e33(#"hash_7d57e8643f403794", 1);
     wait(1);
-    var_177ce8c = getentarray("zm_pack_a_punch", "targetname");
-    var_177ce8c[3] clientfield::set("tutorial_keyline_fx", 1);
+    a_pap = getentarray("zm_pack_a_punch", "targetname");
+    a_pap[3] clientfield::set("tutorial_keyline_fx", 1);
     s_objective = struct::get("objective_pos_pap", "targetname");
     s_objective function_384bed55();
     self.is_drinking = 0;
     function_6e9fe428(&function_818a3a72);
     self thread function_3901e82e();
     self waittill(#"pap_taken");
-    var_177ce8c[3] clientfield::set("tutorial_keyline_fx", 2);
+    a_pap[3] clientfield::set("tutorial_keyline_fx", 2);
     s_objective function_384bed55(0);
     function_a09d93d9();
     util::delay(2, undefined, &zodt8_pap_quest::function_306b4f35);
@@ -1970,8 +1970,8 @@ function function_a8935bf4() {
 // Size: 0xc6
 function function_9152aa67(str_model_name) {
     var_4f926e93 = undefined;
-    var_344a6a1a = getentarray("script_model", "classname");
-    foreach (var_300fad71 in var_344a6a1a) {
+    a_models = getentarray("script_model", "classname");
+    foreach (var_300fad71 in a_models) {
         if (var_300fad71.model == str_model_name) {
             var_4f926e93 = var_300fad71;
             return var_4f926e93;
@@ -1984,8 +1984,8 @@ function function_9152aa67(str_model_name) {
 // Checksum 0x71dd8dd8, Offset: 0x9a58
 // Size: 0x138
 function function_1cc39f51(var_d76c2d40, str_model, var_811aae17 = 1) {
-    var_344a6a1a = getentarray(var_d76c2d40, "targetname");
-    foreach (e_model in var_344a6a1a) {
+    a_models = getentarray(var_d76c2d40, "targetname");
+    foreach (e_model in a_models) {
         if (isdefined(e_model.model) && e_model.model == str_model) {
             if (isdefined(var_811aae17) && var_811aae17) {
                 e_model clientfield::set("tutorial_keyline_fx", 1);
@@ -2017,9 +2017,9 @@ function function_68da8e33(str_alias, n_delay) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x4de587b2, Offset: 0x9c68
 // Size: 0x98
-function function_cc60408f(var_29090c21, str_endon) {
+function function_cc60408f(a_str_alias, str_endon) {
     self endon(str_endon);
-    foreach (str_alias in var_29090c21) {
+    foreach (str_alias in a_str_alias) {
         function_68da8e33(str_alias);
         wait(0.3);
     }

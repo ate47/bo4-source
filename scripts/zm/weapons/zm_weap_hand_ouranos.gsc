@@ -48,11 +48,11 @@ function __init__() {
     clientfield::register("actor", "" + #"hash_28af05433c1d1a2e", 16000, 1, "counter");
     serverfield::register("ouranos_feather_hit", 16000, getminbitcountfornum(3), "int", &ouranos_feather_hit);
     level.w_hand_ouranos = getweapon(#"ww_hand_o");
-    level.w_hand_ouranos_charged = getweapon(#"hash_730ad7426b976c7c");
+    level.w_hand_ouranos_charged = getweapon(#"ww_hand_o_charged");
     level.w_hand_ouranos_uncharged = getweapon(#"ww_hand_o_uncharged");
     level.w_hand_ouranos_upgraded = getweapon(#"ww_hand_o_upgraded");
     zm_weapons::include_zombie_weapon(#"ww_hand_o", 0);
-    zm_weapons::include_zombie_weapon(#"hash_730ad7426b976c7c", 0);
+    zm_weapons::include_zombie_weapon(#"ww_hand_o_charged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_o_uncharged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_o_upgraded", 0);
     callback::on_connect(&on_player_connect);
@@ -162,7 +162,7 @@ function function_54922a21() {
         while ((self.chargeshotlevel != 2 || !self attackbuttonpressed()) && (self.currentweapon === level.w_hand_ouranos || self.currentweapon === level.w_hand_ouranos_upgraded)) {
             waitframe(1);
         }
-        self thread function_b27148c8(self.currentweapon);
+        self thread player_charged_shot(self.currentweapon);
         self waittill(#"weapon_fired", #"stop_beaming");
         while (self.chargeshotlevel >= 2) {
             waitframe(1);
@@ -569,7 +569,7 @@ function function_180bae11() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x2dde16a6, Offset: 0x2740
 // Size: 0x2d6
-function function_b27148c8(weapon) {
+function player_charged_shot(weapon) {
     self endon(#"death", #"weapon_change");
     self thread function_c7732ae7(weapon);
     self thread function_1e39fbc5(weapon);

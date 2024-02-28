@@ -279,7 +279,7 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
                 }
                 if (weaponname == #"cymbal_monkey") {
                     waitframe(1);
-                    dropitem = dropitem.var_bdd70f6a;
+                    dropitem = dropitem.mdl_monkey;
                 }
                 if (weaponname == #"trophy_system") {
                     if (isdefined(item)) {
@@ -1794,7 +1794,7 @@ function equip_attachment(item, var_610add8d, var_d6f68de7, var_a3a17c55 = 1, sw
     if (namespace_a0d533d1::function_9e9c82a6(var_4e2a1ed8, item, 0)) {
         function_b3342af3(item, undefined, var_4e2a1ed8);
         offset = namespace_a0d533d1::function_837f4a57(item.var_a6762160);
-        var_ac396b2f = function_d7dbfe3c(var_4e2a1ed8);
+        var_ac396b2f = get_weapon_slot(var_4e2a1ed8);
         if (!isdefined(var_ac396b2f)) {
             return;
         }
@@ -2529,7 +2529,7 @@ function get_weapon_count() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe5fdd24a, Offset: 0xa6c0
 // Size: 0xde
-function function_d7dbfe3c(item) {
+function get_weapon_slot(item) {
     if (item.networkid === 32767) {
         return;
     }

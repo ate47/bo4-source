@@ -36,6 +36,6 @@ function __init__() {
 // Checksum 0x5a98d09e, Offset: 0x1a8
 // Size: 0x1a
 function activate_talisman() {
-    self.var_8313fee5 = #"smg_accurate_t8";
+    self.talisman_weapon_start = #"smg_accurate_t8";
 }
 

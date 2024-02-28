@@ -75,14 +75,14 @@ function function_904b119() {
 function function_a425bf07() {
     s_doll = struct::get(#"creepy_friend");
     s_trigger_loc = struct::get(s_doll.target);
-    var_39dbb29f = util::spawn_model(#"hash_249386b68e19b345", s_doll.origin, s_doll.angles);
+    mdl_doll = util::spawn_model(#"hash_249386b68e19b345", s_doll.origin, s_doll.angles);
     s_unitrigger = s_trigger_loc zm_unitrigger::create(undefined, 32);
     s_trigger_loc waittill(#"trigger_activated");
-    var_39dbb29f thread function_e7fd1a33();
+    mdl_doll thread function_e7fd1a33();
     var_2c8f1222 = array(#"hash_49744335f38f8111", #"hash_1fceaa1fb6e9fcac", #"hash_49744235f38f7f5e", #"hash_49744135f38f7dab", #"hash_1fceab1fb6e9fe5f", #"hash_1fceac1fb6ea0012", #"hash_1fcead1fb6ea01c5", #"hash_49744035f38f7bf8", #"hash_1fcea61fb6e9f5e0", #"hash_1fcea71fb6e9f793", #"hash_49744735f38f87dd", #"hash_49744635f38f862a", #"hash_49744535f38f8477", #"hash_1fcea81fb6e9f946", #"hash_1fcea91fb6e9faf9", #"hash_49744435f38f82c4", #"hash_49743b35f38f7379", #"hash_1fceb21fb6ea0a44", #"hash_49743a35f38f71c6", #"hash_1fceb31fb6ea0bf7");
     while (1) {
         for (i = 0; i < var_2c8f1222.size; i++) {
-            b_played = var_39dbb29f zm_vo::vo_say(var_2c8f1222[i]);
+            b_played = mdl_doll zm_vo::vo_say(var_2c8f1222[i]);
             if (!(isdefined(b_played) && b_played)) {
                 i--;
             }
@@ -188,8 +188,8 @@ function function_c3a5f1fe(a_ents) {
             }
         }
     }
-    var_617131bd = getent("pages_of_words", "targetname");
-    var_617131bd setmodel(#"hash_6a0ad79cfc79892d");
+    mdl_book = getent("pages_of_words", "targetname");
+    mdl_book setmodel(#"hash_6a0ad79cfc79892d");
     e_raven delete();
 }
 
@@ -422,97 +422,97 @@ function function_ad05f6f3() {
 // Size: 0xa94
 function function_558936ed() {
     s_flag = struct::get(#"spin_cycle");
-    var_87e0cf0b = spawn("trigger_damage", s_flag.origin - vectorscale((0, 0, 1), 10), 0, 12, 10);
-    var_c75fe44b = util::spawn_model(#"hash_2ce772d39f43cc44" + "a", s_flag.origin, s_flag.angles);
-    var_c75fe44b setscale(0.18);
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "c");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "d");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "e");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "f");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "g");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "i");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "i");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "j");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "d");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "k");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "l");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "e");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "i");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "j");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "d");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "m");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "f");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "d");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "a");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "c");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "e");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "d");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "k");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "n");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "e");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "m");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "d");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "o");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "e");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "g");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "n");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "i");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "p");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "q");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "a");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "c");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "e");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "d");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "c");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "e");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "p");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "j");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "d");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "r");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "s");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "n");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "q");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "b");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "m");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "d");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "n");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "i");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "i");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "t");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "f");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "e");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "q");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "k");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "h");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b, "j");
-    var_c75fe44b function_7c9ab1ea(var_87e0cf0b);
+    t_flag = spawn("trigger_damage", s_flag.origin - vectorscale((0, 0, 1), 10), 0, 12, 10);
+    mdl_flag = util::spawn_model(#"hash_2ce772d39f43cc44" + "a", s_flag.origin, s_flag.angles);
+    mdl_flag setscale(0.18);
+    mdl_flag function_7c9ab1ea(t_flag, "b");
+    mdl_flag function_7c9ab1ea(t_flag, "c");
+    mdl_flag function_7c9ab1ea(t_flag, "d");
+    mdl_flag function_7c9ab1ea(t_flag, "e");
+    mdl_flag function_7c9ab1ea(t_flag, "f");
+    mdl_flag function_7c9ab1ea(t_flag, "g");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "i");
+    mdl_flag function_7c9ab1ea(t_flag, "i");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "j");
+    mdl_flag function_7c9ab1ea(t_flag, "d");
+    mdl_flag function_7c9ab1ea(t_flag, "k");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "l");
+    mdl_flag function_7c9ab1ea(t_flag, "b");
+    mdl_flag function_7c9ab1ea(t_flag, "e");
+    mdl_flag function_7c9ab1ea(t_flag, "i");
+    mdl_flag function_7c9ab1ea(t_flag, "j");
+    mdl_flag function_7c9ab1ea(t_flag, "d");
+    mdl_flag function_7c9ab1ea(t_flag, "b");
+    mdl_flag function_7c9ab1ea(t_flag, "m");
+    mdl_flag function_7c9ab1ea(t_flag, "f");
+    mdl_flag function_7c9ab1ea(t_flag, "d");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "a");
+    mdl_flag function_7c9ab1ea(t_flag, "b");
+    mdl_flag function_7c9ab1ea(t_flag, "c");
+    mdl_flag function_7c9ab1ea(t_flag, "e");
+    mdl_flag function_7c9ab1ea(t_flag, "d");
+    mdl_flag function_7c9ab1ea(t_flag, "k");
+    mdl_flag function_7c9ab1ea(t_flag, "n");
+    mdl_flag function_7c9ab1ea(t_flag, "e");
+    mdl_flag function_7c9ab1ea(t_flag, "m");
+    mdl_flag function_7c9ab1ea(t_flag, "d");
+    mdl_flag function_7c9ab1ea(t_flag, "o");
+    mdl_flag function_7c9ab1ea(t_flag, "b");
+    mdl_flag function_7c9ab1ea(t_flag, "e");
+    mdl_flag function_7c9ab1ea(t_flag, "g");
+    mdl_flag function_7c9ab1ea(t_flag, "n");
+    mdl_flag function_7c9ab1ea(t_flag, "b");
+    mdl_flag function_7c9ab1ea(t_flag, "i");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "p");
+    mdl_flag function_7c9ab1ea(t_flag, "q");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "a");
+    mdl_flag function_7c9ab1ea(t_flag, "b");
+    mdl_flag function_7c9ab1ea(t_flag, "c");
+    mdl_flag function_7c9ab1ea(t_flag, "e");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "d");
+    mdl_flag function_7c9ab1ea(t_flag, "c");
+    mdl_flag function_7c9ab1ea(t_flag, "e");
+    mdl_flag function_7c9ab1ea(t_flag, "p");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "j");
+    mdl_flag function_7c9ab1ea(t_flag, "d");
+    mdl_flag function_7c9ab1ea(t_flag, "b");
+    mdl_flag function_7c9ab1ea(t_flag, "r");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "s");
+    mdl_flag function_7c9ab1ea(t_flag, "n");
+    mdl_flag function_7c9ab1ea(t_flag, "q");
+    mdl_flag function_7c9ab1ea(t_flag, "b");
+    mdl_flag function_7c9ab1ea(t_flag, "m");
+    mdl_flag function_7c9ab1ea(t_flag, "d");
+    mdl_flag function_7c9ab1ea(t_flag, "n");
+    mdl_flag function_7c9ab1ea(t_flag, "i");
+    mdl_flag function_7c9ab1ea(t_flag, "i");
+    mdl_flag function_7c9ab1ea(t_flag, "t");
+    mdl_flag function_7c9ab1ea(t_flag, "f");
+    mdl_flag function_7c9ab1ea(t_flag, "e");
+    mdl_flag function_7c9ab1ea(t_flag, "q");
+    mdl_flag function_7c9ab1ea(t_flag, "k");
+    mdl_flag function_7c9ab1ea(t_flag, "h");
+    mdl_flag function_7c9ab1ea(t_flag, "j");
+    mdl_flag function_7c9ab1ea(t_flag);
 }
 
 // Namespace namespace_57873b62/namespace_8125d942
 // Params 2, eflags: 0x1 linked
 // Checksum 0xe36c2e04, Offset: 0x30a8
 // Size: 0x1d2
-function function_7c9ab1ea(var_87e0cf0b, var_f96aafd8) {
+function function_7c9ab1ea(t_flag, var_f96aafd8) {
     while (1) {
         s_result = undefined;
-        s_result = var_87e0cf0b waittill(#"trigger");
+        s_result = t_flag waittill(#"trigger");
         if (isdefined(s_result.activator) && isplayer(s_result.activator)) {
             self rotateroll(360, 0.25);
             self waittill(#"rotatedone");

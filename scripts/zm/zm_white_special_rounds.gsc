@@ -276,7 +276,7 @@ function function_5daa45ac() {
     level.var_7af8330f = getentarray("goo_vol", "targetname");
     var_d4a0b9f4 = [];
     var_8b762855 = struct::get_array("malaria", "targetname");
-    level.var_35f057f6 = 0;
+    level.sawner_ti_beac = 0;
     level.var_bcaf8591 = 0;
     level.var_48ff1185 = 0;
     level.var_c3ee1c6e = 0;
@@ -568,8 +568,8 @@ function function_778aec95() {
             playsoundatposition(#"hash_49d9da44ea86bf03", self.origin);
             /#
                 var_847964c = floor(self.var_a1edb69e / 10 * 100);
-                var_ca13796a = level function_b822e13(self.script_string);
-                iprintlnbold(var_ca13796a + "<unknown string>" + var_847964c + "<unknown string>");
+                str_house = level function_b822e13(self.script_string);
+                iprintlnbold(str_house + "<unknown string>" + var_847964c + "<unknown string>");
             #/
             wait(1);
             if (self.var_a1edb69e >= 10) {
@@ -578,7 +578,7 @@ function function_778aec95() {
                 }
                 self function_27a8604b(level.var_d4a0b9f4[var_f1c779a7][#"group"]);
                 /#
-                    iprintlnbold(var_ca13796a + "<unknown string>");
+                    iprintlnbold(str_house + "<unknown string>");
                 #/
                 b_using = 0;
                 break;

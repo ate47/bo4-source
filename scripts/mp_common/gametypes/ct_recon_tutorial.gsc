@@ -234,8 +234,8 @@ function function_86c058b() {
     ct_vo::function_3ca1b77d();
     level thread ct_vo::function_831e0584(array(#"hash_63c5e3c0cbf4683b"));
     e_player = getplayers()[0];
-    var_3608d414 = array(#"hash_94c2603d3b522a7");
-    e_player thread ct_utils::function_61c3d59c(#"hash_75a61367f89fc81a", var_3608d414);
+    a_str_vo = array(#"hash_94c2603d3b522a7");
+    e_player thread ct_utils::function_61c3d59c(#"hash_75a61367f89fc81a", a_str_vo);
     s_loc = struct::get("s_recon_vision_pulse_obj", "targetname");
     waypoint = ct_utils::create_waypoint(#"hash_1f1deaa6bff12db8", s_loc.origin, s_loc.angles, #"any", undefined, 40, undefined);
     level.var_e72728b8 = array(#"eq_sensor", #"gadget_vision_pulse");
@@ -312,8 +312,8 @@ function function_5598747a() {
     level notify(#"start_execution_exit_collision");
     level notify(#"start_enter_church_collision");
     level thread function_a71a97eb(undefined, 0.1, undefined, "s_bot_approach_church_loc");
-    var_3608d414 = array("vox_tvoi_tutor_reco_sensor_dart_0", "vox_tvoi_tutor_reco_sensor_dart_1");
-    ct_vo::function_831e0584(var_3608d414, 1);
+    a_str_vo = array("vox_tvoi_tutor_reco_sensor_dart_0", "vox_tvoi_tutor_reco_sensor_dart_1");
+    ct_vo::function_831e0584(a_str_vo, 1);
     level thread ct_vo::function_831e0584(array(#"hash_a8bcd8c98df0294"), 1);
     wait(1.5);
     level.var_e72728b8 = array(#"gadget_vision_pulse");
@@ -455,8 +455,8 @@ function function_8d107060() {
 function function_6728bf85() {
     level endon(#"combattraining_logic_finished");
     ct_utils::function_e9ab1003(undefined);
-    var_3608d414 = array(#"hash_2ab198f91d1884fd");
-    level thread ct_vo::function_831e0584(var_3608d414);
+    a_str_vo = array(#"hash_2ab198f91d1884fd");
+    level thread ct_vo::function_831e0584(a_str_vo);
     level notify(#"stop_enemy_dart_enter_collision");
     level notify(#"start_enemy_dart_collision");
     level notify(#"start_enemy_dart_exit_collision");
@@ -815,8 +815,8 @@ function function_39f9d433() {
     ct_utils::function_e44c5b8e(#"overwatch_helicopter", 25);
     e_player thread ct_utils::function_68848e5("overwatch_helicopter");
     level.var_28cfc859 = 50;
-    var_3608d414 = array(#"hash_5b00936def7e0205", #"hash_5b00926def7e0052", #"hash_5b00916def7dfe9f");
-    level thread ct_vo::function_831e0584(var_3608d414, 1);
+    a_str_vo = array(#"hash_5b00936def7e0205", #"hash_5b00926def7e0052", #"hash_5b00916def7dfe9f");
+    level thread ct_vo::function_831e0584(a_str_vo, 1);
     level.var_6cd64bc3 = 0;
     level thread function_94c8f1d8(6);
     e_player waittill(#"vision_pulse_off");

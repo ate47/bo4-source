@@ -123,25 +123,25 @@ function function_46a56fe2(localclientnum, oldval, newval, bnewent, binitialsnap
     if (!isdefined(level.var_667af8b4)) {
         return;
     }
-    var_10d4f67d = level.var_667af8b4[newval];
-    if (!isdefined(var_10d4f67d)) {
+    mdl_pegasus  = level.var_667af8b4[newval];
+    if (!isdefined(mdl_pegasus )) {
         return;
     }
     if (!newval) {
         return;
     }
-    var_10d4f67d endon(#"death");
-    v_left = var_10d4f67d gettagorigin("j_feather_le_10");
-    v_right = var_10d4f67d gettagorigin("j_feather_ri_10");
+    mdl_pegasus  endon(#"death");
+    v_left = mdl_pegasus  gettagorigin("j_feather_le_10");
+    v_right = mdl_pegasus  gettagorigin("j_feather_ri_10");
     if (distancesquared(v_left, self.origin) < distancesquared(v_right, self.origin)) {
         str_tag = "j_feather_le_10";
     } else {
         str_tag = "j_feather_ri_10";
     }
-    level beam::launch(var_10d4f67d, str_tag, self, "j_spine4", "beam8_zm_red_peg_lightning_strike", 1);
+    level beam::launch(mdl_pegasus , str_tag, self, "j_spine4", "beam8_zm_red_peg_lightning_strike", 1);
     self playsound(localclientnum, #"hash_61c057ffadb7a5af");
     wait(0.3);
-    level beam::kill(var_10d4f67d, str_tag, self, "j_spine4", "beam8_zm_red_peg_lightning_strike");
+    level beam::kill(mdl_pegasus , str_tag, self, "j_spine4", "beam8_zm_red_peg_lightning_strike");
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm

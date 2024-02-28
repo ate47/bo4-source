@@ -851,12 +851,12 @@ function function_800ff39e() {
     wait(2);
     e_player = waitresult.activator;
     s_reward = struct::get("s_mee_2_reward", "targetname");
-    var_4d0b3b87 = spawn("script_model", s_reward.origin);
-    var_4d0b3b87 setmodel("p8_zm_gla_heart_zombie");
-    var_4d0b3b87 movez(5, 1);
-    var_4d0b3b87 thread powerup_wobble_fx();
-    var_4d0b3b87 playsound("zmb_shed_powerup_burst");
-    s_reward.var_4d0b3b87 = var_4d0b3b87;
+    mdl_reward = spawn("script_model", s_reward.origin);
+    mdl_reward setmodel("p8_zm_gla_heart_zombie");
+    mdl_reward movez(5, 1);
+    mdl_reward thread powerup_wobble_fx();
+    mdl_reward playsound("zmb_shed_powerup_burst");
+    s_reward.mdl_reward = mdl_reward;
     s_reward zm_unitrigger::create(&function_ce3168e6);
     s_reward thread function_50aeeeff();
 }
@@ -962,7 +962,7 @@ function function_50aeeeff() {
     foreach (player in a_e_players) {
         player zm_laststand::function_3a00302e();
     }
-    self.var_4d0b3b87 delete();
+    self.mdl_reward delete();
     zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
 }
 

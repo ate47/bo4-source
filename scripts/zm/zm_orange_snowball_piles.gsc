@@ -75,19 +75,19 @@ function private function_608b90b4() {
 function function_79ef6b93() {
     var_d49d10b0 = self zm_loadout::get_player_lethal_grenade();
     self playsound("fly_pickup_snowball");
-    if (isdefined(self.var_3b55baa1) && (var_d49d10b0 == level.w_snowball || var_d49d10b0 == level.var_f8934665 || var_d49d10b0 == level.var_bf70d56c || var_d49d10b0 == level.var_d879215)) {
+    if (isdefined(self.var_3b55baa1) && (var_d49d10b0 == level.w_snowball || var_d49d10b0 == level.w_snowball_upgraded || var_d49d10b0 == level.w_snowball_yellow || var_d49d10b0 == level.w_snowball_yellow_upgraded)) {
         if (level flag::get(#"hash_5e095d53ae9513f5")) {
-            if (var_d49d10b0 == level.w_snowball || var_d49d10b0 == level.var_f8934665) {
+            if (var_d49d10b0 == level.w_snowball || var_d49d10b0 == level.w_snowball_upgraded) {
                 if (level flag::get(#"extra_snowballs")) {
-                    self zm_weapons::weapon_give(level.var_d879215, 1, 0);
+                    self zm_weapons::weapon_give(level.w_snowball_yellow_upgraded, 1, 0);
                 } else {
-                    self zm_weapons::weapon_give(level.var_bf70d56c, 1, 0);
+                    self zm_weapons::weapon_give(level.w_snowball_yellow, 1, 0);
                 }
-            } else if (level flag::get(#"extra_snowballs") && var_d49d10b0 == level.var_bf70d56c) {
-                self zm_weapons::weapon_give(level.var_d879215, 1, 0);
+            } else if (level flag::get(#"extra_snowballs") && var_d49d10b0 == level.w_snowball_yellow) {
+                self zm_weapons::weapon_give(level.w_snowball_yellow_upgraded, 1, 0);
             }
         } else if (level flag::get(#"extra_snowballs") && var_d49d10b0 == level.w_snowball) {
-            self zm_weapons::weapon_give(level.var_f8934665, 1, 0);
+            self zm_weapons::weapon_give(level.w_snowball_upgraded, 1, 0);
         }
         n_slot = self gadgetgetslot(var_d49d10b0);
         self gadgetpowerreset(n_slot, 0);
@@ -98,12 +98,12 @@ function function_79ef6b93() {
         self.var_e01bb56 = self gadgetpowerget(n_slot);
         if (level flag::get(#"hash_5e095d53ae9513f5")) {
             if (level flag::get(#"extra_snowballs")) {
-                self zm_weapons::weapon_give(level.var_d879215, 1, 0);
+                self zm_weapons::weapon_give(level.w_snowball_yellow_upgraded, 1, 0);
             } else {
-                self zm_weapons::weapon_give(level.var_bf70d56c, 1, 0);
+                self zm_weapons::weapon_give(level.w_snowball_yellow, 1, 0);
             }
         } else if (level flag::get(#"extra_snowballs")) {
-            self zm_weapons::weapon_give(level.var_f8934665, 1, 0);
+            self zm_weapons::weapon_give(level.w_snowball_upgraded, 1, 0);
         } else {
             self zm_weapons::weapon_give(level.w_snowball, 1, 0);
         }
@@ -176,7 +176,7 @@ function function_76e94d52() {
 // Size: 0x88
 function function_75a76099() {
     var_d49d10b0 = self zm_loadout::get_player_lethal_grenade();
-    if (isdefined(var_d49d10b0) && (var_d49d10b0 == level.w_snowball || var_d49d10b0 == level.var_f8934665 || var_d49d10b0 == level.var_bf70d56c || var_d49d10b0 == level.var_d879215)) {
+    if (isdefined(var_d49d10b0) && (var_d49d10b0 == level.w_snowball || var_d49d10b0 == level.w_snowball_upgraded || var_d49d10b0 == level.w_snowball_yellow || var_d49d10b0 == level.w_snowball_yellow_upgraded)) {
         return 1;
     }
     return 0;

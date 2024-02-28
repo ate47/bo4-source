@@ -65,9 +65,9 @@ function _goodlighting_hangar_a() {
         self sethintstring(#"hash_7b303154f29d09c6");
     }
     self waittill(#"trigger");
-    var_f67ecd64 = getent("masterkey_lock_3", "targetname");
-    if (isdefined(var_f67ecd64)) {
-        var_f67ecd64 delete();
+    mdl_lock = getent("masterkey_lock_3", "targetname");
+    if (isdefined(mdl_lock)) {
+        mdl_lock delete();
     }
     playsoundatposition(#"hash_b0382b7432f8232", self.origin);
     mdl_door_left = getent("nixie_door_left", "targetname");

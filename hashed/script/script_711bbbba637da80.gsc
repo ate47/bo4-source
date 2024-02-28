@@ -677,23 +677,23 @@ function function_ab71f1f5(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x1b6
 function function_2380f2d5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 0) {
-        if (isdefined(self.var_2ef4fed9)) {
-            self.var_2ef4fed9 delete();
+        if (isdefined(self.mdl_paper)) {
+            self.mdl_paper delete();
         }
-    } else if (isdefined(self.var_2ef4fed9)) {
+    } else if (isdefined(self.mdl_paper)) {
         self.var_d2f68d5d = newval;
     } else {
-        self.var_2ef4fed9 = util::spawn_model(localclientnum, #"hash_11298e91093a52ac", self.origin, self.angles);
-        self.var_2ef4fed9.var_d2f68d5d = newval;
-        self.var_2ef4fed9.show_function = &function_9fcac487;
-        self.var_2ef4fed9.hide_function = &function_ffd0f7c6;
-        self.var_2ef4fed9 function_ffd0f7c6(localclientnum);
+        self.mdl_paper = util::spawn_model(localclientnum, #"hash_11298e91093a52ac", self.origin, self.angles);
+        self.mdl_paper.var_d2f68d5d = newval;
+        self.mdl_paper.show_function = &function_9fcac487;
+        self.mdl_paper.hide_function = &function_ffd0f7c6;
+        self.mdl_paper function_ffd0f7c6(localclientnum);
         if (!isdefined(level.var_22a393d4)) {
             level.var_22a393d4 = [];
         } else if (!isarray(level.var_22a393d4)) {
             level.var_22a393d4 = array(level.var_22a393d4);
         }
-        level.var_22a393d4[level.var_22a393d4.size] = self.var_2ef4fed9;
+        level.var_22a393d4[level.var_22a393d4.size] = self.mdl_paper;
     }
 }
 
@@ -704,10 +704,10 @@ function function_2380f2d5(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_5a22e018(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self endon(#"death");
     if (newval > 0) {
-        while (!isdefined(self.var_2ef4fed9)) {
+        while (!isdefined(self.mdl_paper)) {
             waitframe(1);
         }
-        self.var_2ef4fed9.var_bd47f18 = newval;
+        self.mdl_paper.var_bd47f18 = newval;
     }
 }
 
@@ -718,10 +718,10 @@ function function_5a22e018(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_8db3d8a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self endon(#"death");
     if (newval > 0) {
-        while (!isdefined(self.var_2ef4fed9)) {
+        while (!isdefined(self.mdl_paper)) {
             waitframe(1);
         }
-        self.var_2ef4fed9.var_f99adaa5 = newval;
+        self.mdl_paper.var_f99adaa5 = newval;
     }
 }
 

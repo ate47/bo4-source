@@ -431,7 +431,7 @@ function function_dd7587e4(bundle, maxhealth, attacker, weapon, type, damage, fl
                 LOC_00000284:
                 }
             LOC_00000284:
-            } else if (type == "MOD_IMPACT" && isdefined(level.var_1b72f911) && function_6bacfedc(weapon, level.var_1b72f911)) {
+            } else if (type == "MOD_IMPACT" && isdefined(level.shockrifleweapon) && function_6bacfedc(weapon, level.shockrifleweapon)) {
                 var_108f064f = isdefined(bundle.var_4be7d629) ? bundle.var_4be7d629 : 0;
                 if (var_108f064f == 0) {
                     goto LOC_0000032e;

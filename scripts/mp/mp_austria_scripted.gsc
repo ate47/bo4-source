@@ -159,20 +159,20 @@ function function_d63cfc37(a_ents) {
 // Size: 0x154
 function function_7ea86b26(a_ents) {
     level endon(#"game_ended");
-    var_92fbef49 = a_ents[#"prop 1"];
+    finger = a_ents[#"prop 1"];
     var_ce56e2f0 = self.var_ce56e2f0;
     clip = self.clip;
-    if (!isdefined(var_92fbef49)) {
+    if (!isdefined(finger)) {
         return;
     }
-    var_92fbef49 endon(#"death");
+    finger endon(#"death");
     wait(0.1);
     var_ce56e2f0 triggerenable(1);
-    var_92fbef49 waittill(#"stop_damage");
+    finger waittill(#"stop_damage");
     var_ce56e2f0 triggerenable(0);
     clip solid();
     clip disconnectpaths();
-    var_92fbef49 waittill(#"connect_paths");
+    finger waittill(#"connect_paths");
     clip connectpaths();
     clip notsolid();
 }
@@ -181,10 +181,10 @@ function function_7ea86b26(a_ents) {
 // Params 1, eflags: 0x0
 // Checksum 0x266d6832, Offset: 0x1050
 // Size: 0x56
-function function_1220cf5(var_92fbef49) {
-    var_92fbef49 endon(#"stop_damage", #"death");
+function function_1220cf5(finger) {
+    finger endon(#"stop_damage", #"death");
     while (1) {
-        destroy_equipment(var_92fbef49);
+        destroy_equipment(finger);
         waitframe(1);
     }
 }
@@ -193,8 +193,8 @@ function function_1220cf5(var_92fbef49) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x32379f48, Offset: 0x10b0
 // Size: 0x236
-function destroy_equipment(var_92fbef49) {
-    var_ce56e2f0 = var_92fbef49.var_ce56e2f0;
+function destroy_equipment(finger) {
+    var_ce56e2f0 = finger.var_ce56e2f0;
     equipment = getentitiesinradius(var_ce56e2f0.origin, 256);
     foreach (device in equipment) {
         if (isdefined(device) && device istouching(var_ce56e2f0)) {

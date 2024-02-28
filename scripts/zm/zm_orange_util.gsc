@@ -459,12 +459,12 @@ function function_8a7521db(str) {
 // Size: 0x12a
 function function_fe8ee9f0(var_b36eb2ad, var_7f70dbec = 1) {
     if (isdefined(var_7f70dbec) && var_7f70dbec) {
-        if (isdefined(var_b36eb2ad) && (var_b36eb2ad == level.w_snowball || var_b36eb2ad == level.var_f8934665 || var_b36eb2ad == level.var_bf70d56c || var_b36eb2ad == level.var_d879215 || var_b36eb2ad == level.w_tundragun || var_b36eb2ad == level.w_tundragun_upgraded)) {
+        if (isdefined(var_b36eb2ad) && (var_b36eb2ad == level.w_snowball || var_b36eb2ad == level.w_snowball_upgraded || var_b36eb2ad == level.w_snowball_yellow || var_b36eb2ad == level.w_snowball_yellow_upgraded || var_b36eb2ad == level.w_tundragun || var_b36eb2ad == level.w_tundragun_upgraded)) {
             return 1;
         }
         return 0;
     } else {
-        if (isdefined(var_b36eb2ad) && (var_b36eb2ad == level.w_snowball || var_b36eb2ad == level.var_f8934665 || var_b36eb2ad == level.var_bf70d56c || var_b36eb2ad == level.var_d879215)) {
+        if (isdefined(var_b36eb2ad) && (var_b36eb2ad == level.w_snowball || var_b36eb2ad == level.w_snowball_upgraded || var_b36eb2ad == level.w_snowball_yellow || var_b36eb2ad == level.w_snowball_yellow_upgraded)) {
             return 1;
         }
         return 0;

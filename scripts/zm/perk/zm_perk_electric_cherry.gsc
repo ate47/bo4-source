@@ -163,7 +163,7 @@ function electric_cherry_laststand() {
                 }
                 wait(0.1);
                 if (isalive(self) && isalive(a_zombies[i])) {
-                    a_zombies[i] dodamage(1000, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.var_78032351);
+                    a_zombies[i] dodamage(1000, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.weapondefault);
                 }
             }
         }
@@ -315,7 +315,7 @@ function electric_cherry_reload_attack() {
                     }
                     wait(0.1);
                     if (isdefined(a_zombies[i]) && isalive(a_zombies[i])) {
-                        a_zombies[i] dodamage(perk_dmg, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.var_78032351);
+                        a_zombies[i] dodamage(perk_dmg, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.weapondefault);
                     }
                 }
             }

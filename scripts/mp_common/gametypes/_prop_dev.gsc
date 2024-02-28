@@ -732,28 +732,28 @@ function function_7a3672a6(propinfo) {
 // Size: 0x264
 function function_2dc5c497(file, propinfo) {
     /#
-        var_74b91a95 = "<unknown string>" + propinfo.modelname + "<unknown string>" + propinfo.propsizetext + "<unknown string>" + propinfo.propscale;
+        propstr = "<unknown string>" + propinfo.modelname + "<unknown string>" + propinfo.propsizetext + "<unknown string>" + propinfo.propscale;
         if (function_cbef3d63(propinfo.xyzoffset)) {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + propinfo.xyzoffset[0] + "<unknown string>" + propinfo.xyzoffset[1] + "<unknown string>" + propinfo.xyzoffset[2];
+            propstr = propstr + "<unknown string>" + propinfo.xyzoffset[0] + "<unknown string>" + propinfo.xyzoffset[1] + "<unknown string>" + propinfo.xyzoffset[2];
         } else {
-            var_74b91a95 = var_74b91a95 + "<unknown string>";
+            propstr = propstr + "<unknown string>";
         }
         if (function_cbef3d63(propinfo.anglesoffset)) {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + propinfo.anglesoffset[0] + "<unknown string>" + propinfo.anglesoffset[1] + "<unknown string>" + propinfo.anglesoffset[2];
+            propstr = propstr + "<unknown string>" + propinfo.anglesoffset[0] + "<unknown string>" + propinfo.anglesoffset[1] + "<unknown string>" + propinfo.anglesoffset[2];
         } else {
-            var_74b91a95 = var_74b91a95 + "<unknown string>";
+            propstr = propstr + "<unknown string>";
         }
         if (function_a840713e(propinfo)) {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + propinfo.propheight;
+            propstr = propstr + "<unknown string>" + propinfo.propheight;
         } else {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + prop::getthirdpersonheightoffsetforsize(propinfo.propsize);
+            propstr = propstr + "<unknown string>" + prop::getthirdpersonheightoffsetforsize(propinfo.propsize);
         }
         if (function_7a3672a6(propinfo)) {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + propinfo.proprange;
+            propstr = propstr + "<unknown string>" + propinfo.proprange;
         } else {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + prop::getthirdpersonrangeforsize(propinfo.propsize);
+            propstr = propstr + "<unknown string>" + prop::getthirdpersonrangeforsize(propinfo.propsize);
         }
-        fprintln(file, var_74b91a95);
+        fprintln(file, propstr);
     #/
 }
 
@@ -763,8 +763,8 @@ function function_2dc5c497(file, propinfo) {
 // Size: 0x5c
 function function_8639a7b0(file, propinfo) {
     /#
-        var_74b91a95 = "<unknown string>" + propinfo.modelname + "<unknown string>";
-        fprintln(file, var_74b91a95);
+        propstr = "<unknown string>" + propinfo.modelname + "<unknown string>";
+        fprintln(file, propstr);
     #/
 }
 

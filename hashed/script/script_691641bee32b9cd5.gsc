@@ -377,7 +377,7 @@ function private function_ad40f5b3() {
 // Params 3, eflags: 0x5 linked
 // Checksum 0xbf532dc8, Offset: 0x1aa8
 // Size: 0x34
-function private function_710cbc75(e_player, var_1ad9db60, var_56dbca79) {
+function private function_710cbc75(e_player, var_1ad9db60, b_branch) {
     start_internal(self);
 }
 
@@ -1323,7 +1323,7 @@ function private function_5b3b889f(var_ac1d69cd) {
 function private function_bf55c711(n_wave, var_bced2a83) {
     s_bundle = struct::get_script_bundle("wave_manager", self.scriptbundlename);
     n_ai_count = 0;
-    foreach (n_index, var_65782f79 in s_bundle.waves) {
+    foreach (n_index, s_wave in s_bundle.waves) {
         if (isdefined(n_wave)) {
             if (n_index < n_wave - 1) {
                 continue;
@@ -1332,11 +1332,11 @@ function private function_bf55c711(n_wave, var_bced2a83) {
             }
         }
         var_b4d30f09 = 0;
-        foreach (var_a2b4b991 in var_65782f79.spawns) {
+        foreach (var_a2b4b991 in s_wave.spawns) {
             var_b4d30f09 = var_b4d30f09 + (isdefined(var_a2b4b991.totalcount) ? var_a2b4b991.totalcount : 1);
         }
-        if (!var_bced2a83 && isdefined(var_65782f79.transitioncount)) {
-            var_b4d30f09 = var_b4d30f09 - var_65782f79.transitioncount;
+        if (!var_bced2a83 && isdefined(s_wave.transitioncount)) {
+            var_b4d30f09 = var_b4d30f09 - s_wave.transitioncount;
         }
         n_ai_count = n_ai_count + var_b4d30f09;
     }
@@ -1461,11 +1461,11 @@ function function_1c556906(kvp, var_b3a058ca) {
         /#
             assert(isdefined(var_b3a058ca));
         #/
-        var_ea2315c9 = getspawnerteamarray(var_dcd6c23.m_str_team);
+        a_sp_new = getspawnerteamarray(var_dcd6c23.m_str_team);
         var_91504a05 = 0;
-        if (isdefined(var_ea2315c9) && isarray(var_ea2315c9) && var_ea2315c9.size) {
-            foreach (var_301a68ab in var_ea2315c9) {
-                if (var_301a68ab.targetname === var_b3a058ca) {
+        if (isdefined(a_sp_new) && isarray(a_sp_new) && a_sp_new.size) {
+            foreach (sp_new in a_sp_new) {
+                if (sp_new.targetname === var_b3a058ca) {
                     var_91504a05 = 1;
                     break;
                 }

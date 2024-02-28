@@ -92,8 +92,8 @@ function function_65337201(n_set, n_value, n_id) {
 // Checksum 0xa3059387, Offset: 0x990
 // Size: 0x8c
 function function_c010f073(n_set, n_digit, n_value) {
-    var_1be59246 = "code_set" + n_set + "_digit" + n_digit;
-    s_scene = struct::get(var_1be59246, "script_noteworthy");
+    str_struct_ = "code_set" + n_set + "_digit" + n_digit;
+    s_scene = struct::get(str_struct_, "script_noteworthy");
     s_scene scene::play("num" + n_value);
 }
 

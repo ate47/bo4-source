@@ -100,7 +100,7 @@ function private setup_lighthouse() {
             }
         }
     }
-    if (level.var_ab11c23d.var_58df9892 == 3 || level.var_ab11c23d.var_58df9892 == 8) {
+    if (level.var_ab11c23d.structs_objecti == 3 || level.var_ab11c23d.structs_objecti == 8) {
         level.var_ab11c23d notify(#"hash_1aa56851d9d4ec0d");
         if (isdefined(level.var_ab11c23d.vh_target)) {
             level.var_ab11c23d.vh_target.b_moving = 0;
@@ -234,7 +234,7 @@ function private function_33f0ddd3(s_event) {
         if (self.b_in_water === 1) {
             var_f2b6fe6e = 1;
         } else if (!var_f2b6fe6e && !zm_loadout::function_2ff6913(s_event.weapon)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            self lockweapon(s_event.weapon, 1, 1);
         }
     }
 }

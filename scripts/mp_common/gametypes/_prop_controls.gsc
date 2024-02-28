@@ -383,7 +383,7 @@ function function_22f362d7() {
     if (self.lock) {
         self unlockprop();
     } else {
-        self function_fb28c6d5();
+        self lockprop();
     }
 }
 
@@ -891,7 +891,7 @@ function unlockprop() {
 // Params 0, eflags: 0x0
 // Checksum 0x54cd4e, Offset: 0x3070
 // Size: 0x144
-function function_fb28c6d5() {
+function lockprop() {
     if (!canlock()) {
         return;
     }
@@ -1248,7 +1248,7 @@ function cloneprop() {
     var_6e55957c.fakehealth = 50;
     var_6e55957c.health = 99999;
     var_6e55957c.maxhealth = 99999;
-    var_6e55957c.var_76fd297e = self;
+    var_6e55957c.playerowner = self;
     var_6e55957c thread prop::function_aa8db165(&damageclonewatch);
     var_6e55957c setplayercollision(0);
     var_6e55957c makesentient();
@@ -1296,8 +1296,8 @@ function damageclonewatch(damage, attacker, direction_vec, point, meansofdeath, 
 function function_d1a1cc8d() {
     if (isdefined(self.lastattacker)) {
         scoreevents::processscoreevent("clone_destroyed", self.lastattacker);
-        if (isdefined(self.var_76fd297e)) {
-            scoreevents::processscoreevent("clone_was_destroyed", self.var_76fd297e);
+        if (isdefined(self.playerowner)) {
+            scoreevents::processscoreevent("clone_was_destroyed", self.playerowner);
         }
     }
     if (!isdefined(self.isdying)) {

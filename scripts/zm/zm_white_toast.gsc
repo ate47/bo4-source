@@ -672,7 +672,7 @@ function function_641f4ec(var_ae5725a9, lockdown_trigger_func, unlock_cost, clie
     self.client_fx = client_fx;
     if (client_fx === "discharge_perk") {
         self zm_perks::function_a30c73b9("off");
-        self.var_3468124.var_73bd396b clientfield::set(client_fx, 1);
+        self.var_3468124.mdl_altar clientfield::set(client_fx, 1);
     } else if (client_fx === "discharge_pap") {
         self.pap_machine clientfield::set(client_fx, 1);
     } else {
@@ -701,7 +701,7 @@ function function_cf62f3c7() {
     if (isdefined(self.client_fx)) {
         if (self.client_fx === "discharge_perk") {
             self zm_perks::function_a30c73b9("off");
-            self.var_3468124.var_73bd396b clientfield::set(self.client_fx, 0);
+            self.var_3468124.mdl_altar clientfield::set(self.client_fx, 0);
         } else if (self.client_fx === "discharge_pap") {
             self.pap_machine clientfield::set(self.client_fx, 0);
         } else {

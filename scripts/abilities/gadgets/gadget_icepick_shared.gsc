@@ -29,8 +29,8 @@ function init_shared() {
 // Checksum 0xccc8148, Offset: 0x580
 // Size: 0x66
 function private function_2aec10d2() {
-    if (!isdefined(level.var_2790ddf8)) {
-        level.var_2790ddf8 = spawnstruct();
+    if (!isdefined(level.icepicksettings)) {
+        level.icepicksettings = spawnstruct();
     }
     if (!isdefined(level.var_ff6f539f)) {
         level.var_ff6f539f = [];

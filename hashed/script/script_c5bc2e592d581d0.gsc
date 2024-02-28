@@ -475,9 +475,9 @@ function private function_73f656f5(planner, params) {
     foreach (bot in params.bots) {
         if (strategiccommandutility::isvalidbot(bot)) {
             chest = params.chest[#"__unsafe__"][#"chest"];
-            var_9b3def7 = getclosestpointonnavmesh(params.chest[#"origin"], 200, bot getpathfindingradius());
+            chestpos = getclosestpointonnavmesh(params.chest[#"origin"], 200, bot getpathfindingradius());
             bot bot::set_interact(chest);
-            bot setgoal(var_9b3def7);
+            bot setgoal(chestpos);
             bot.goalradius = 512;
         }
     }

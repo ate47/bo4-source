@@ -117,8 +117,8 @@ function private __main__() {
         if (isdefined(turretweapon) && !isinarray(level.var_7fc48a1a, turretweapon)) {
             level.var_7fc48a1a[level.var_7fc48a1a.size] = turretweapon;
         }
-        if (isdefined(level.smartcoversettings) && !isinarray(level.var_7fc48a1a, level.smartcoversettings.var_8d86ade8)) {
-            level.var_7fc48a1a[level.var_7fc48a1a.size] = level.smartcoversettings.var_8d86ade8;
+        if (isdefined(level.smartcoversettings) && !isinarray(level.var_7fc48a1a, level.smartcoversettings.smartcoverweapon)) {
+            level.var_7fc48a1a[level.var_7fc48a1a.size] = level.smartcoversettings.smartcoverweapon;
         }
     }
 }

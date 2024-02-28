@@ -144,7 +144,7 @@ function function_39f69700(local_client_num, oldval, newval, bnewent, binitialsn
         if (!isplayer) {
             continue;
         }
-        var_959dd66c = getuimodelvalue(getuimodel(itemuimodel, "hackableId"));
+        idval = getuimodelvalue(getuimodel(itemuimodel, "hackableId"));
         if (newval == -1) {
             setuimodelvalue(getuimodel(itemuimodel, "hackStatus"), 0);
             continue;
@@ -152,9 +152,9 @@ function function_39f69700(local_client_num, oldval, newval, bnewent, binitialsn
             setuimodelvalue(getuimodel(itemuimodel, "hackStatus"), 2);
             continue;
         }
-        if (var_959dd66c < newval) {
+        if (idval < newval) {
             setuimodelvalue(getuimodel(itemuimodel, "hackStatus"), 2);
-        } else if (var_959dd66c == newval) {
+        } else if (idval == newval) {
             setuimodelvalue(getuimodel(itemuimodel, "hackStatus"), 1);
         } else {
             setuimodelvalue(getuimodel(itemuimodel, "hackStatus"), 0);
@@ -442,8 +442,8 @@ function private function_34aba8d8(local_client_num, targetid, newval) {
     totalcount = getuimodelvalue(getuimodel(parentmodel, "hackablesCount"));
     for (index = 0; index < totalcount; index++) {
         itemuimodel = getuimodel(parentmodel, "item" + index);
-        var_959dd66c = getuimodelvalue(getuimodel(itemuimodel, "hackableId"));
-        if (var_959dd66c != targetid) {
+        idval = getuimodelvalue(getuimodel(itemuimodel, "hackableId"));
+        if (idval != targetid) {
             continue;
         }
         if (newval == 1) {

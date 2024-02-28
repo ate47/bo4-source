@@ -169,9 +169,9 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
     var_e76400c0 = undefined;
     wallnormal = undefined;
     var_693f108f = undefined;
-    var_aecaaa11 = getweapon(#"molotov_fire");
-    var_5632b17 = getweapon("molotov_fire_wall");
-    var_7bf146f2 = getweapon("molotov_steam");
+    molotovfireweapon = getweapon(#"molotov_fire");
+    molotovfirewallweapon = getweapon("molotov_fire_wall");
+    molotovsteamweapon = getweapon("molotov_steam");
     if (normal[2] < -0.5) {
         var_36c22d1d = position + vectorscale(normal, 2);
         var_8ae62b02 = var_36c22d1d - vectorscale((0, 0, 1), 240);
@@ -235,10 +235,10 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
                 water_depth = get_water_depth(newpos);
                 if (function_a66ba8cc(water_depth) || is_under_water(newpos)) {
                     newpos = newpos - (0, 0, water_depth);
-                    level thread function_42b9fdbe(var_7bf146f2, newpos, (0, 0, 1), int(customsettings.var_b79d64a9), team);
+                    level thread function_42b9fdbe(molotovsteamweapon, newpos, (0, 0, 1), int(customsettings.var_b79d64a9), team);
                     break;
                 }
-                level thread function_42b9fdbe(var_5632b17, newpos, wall_normal, int(customsettings.var_b79d64a9), team);
+                level thread function_42b9fdbe(molotovfirewallweapon, newpos, wall_normal, int(customsettings.var_b79d64a9), team);
                 z = z - randomintrange(20, 30);
             }
             var_bc9ec158 = 0.6 * var_69d15ad0[#"fraction"];
@@ -262,7 +262,7 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
         traceposition = trace[#"position"];
         if (trace[#"fraction"] < 0.9) {
             var_252a0dc7 = trace[#"normal"];
-            spawntimedfx(var_5632b17, traceposition, var_252a0dc7, int(customsettings.var_b79d64a9), team);
+            spawntimedfx(molotovfirewallweapon, traceposition, var_252a0dc7, int(customsettings.var_b79d64a9), team);
         }
     }
     var_1f254a06 = normal;
@@ -407,10 +407,10 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
             }
         }
     }
-    var_aecaaa11 = getweapon(#"molotov_fire");
-    var_3cbce009 = getweapon("molotov_fire_tall");
-    var_4a1b9411 = getweapon("molotov_fire_small");
-    var_7bf146f2 = getweapon("molotov_steam");
+    molotovfireweapon = getweapon(#"molotov_fire");
+    molotovfiretallweapon = getweapon("molotov_fire_tall");
+    molotovfiresmallweapon = getweapon("molotov_fire_small");
+    molotovsteamweapon = getweapon("molotov_steam");
     var_6b23e1c9 = impactpos + normal * 1.5;
     forward = (1, 0, 0);
     if (abs(vectordot(forward, normal)) > 0.999) {
@@ -419,7 +419,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
     if (!is_under_water(var_6b23e1c9)) {
         playfx(level._effect[#"hash_31b6cc906e6d0ae0"], var_6b23e1c9, forward, normal, 0, team);
         if (!isdefined(var_e76400c0)) {
-            spawntimedfx(var_aecaaa11, var_6b23e1c9, normal, int(customsettings.var_b79d64a9), team);
+            spawntimedfx(molotovfireweapon, var_6b23e1c9, normal, int(customsettings.var_b79d64a9), team);
         }
     }
     if (level.gameended) {
@@ -436,8 +436,8 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
     var_4b424bc1 = level.var_a88ac760[var_bf264593];
     var_4b424bc1.var_46ee5246 = int(gettime() + customsettings.var_b79d64a9 * 1000);
     var_4b424bc1.origin = startpos;
-    thread damageeffectarea(owner, startpos, killcament, normal, var_aecaaa11, customsettings, multiplier, var_e76400c0, wallnormal, var_693f108f, var_4b424bc1.var_46ee5246);
-    thread function_9464e4ad(owner, startpos, killcament, normal, var_aecaaa11, customsettings, multiplier, var_e76400c0, wallnormal, var_693f108f, var_4b424bc1.var_46ee5246);
+    thread damageeffectarea(owner, startpos, killcament, normal, molotovfireweapon, customsettings, multiplier, var_e76400c0, wallnormal, var_693f108f, var_4b424bc1.var_46ee5246);
+    thread function_9464e4ad(owner, startpos, killcament, normal, molotovfireweapon, customsettings, multiplier, var_e76400c0, wallnormal, var_693f108f, var_4b424bc1.var_46ee5246);
     var_b1dd2ca0 = getarraykeys(locations[#"loc"]);
     foreach (lockey in var_b1dd2ca0) {
         if (!isdefined(lockey)) {
@@ -447,11 +447,11 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
             continue;
         }
         if (isdefined(locations[#"smallfire"][lockey])) {
-            fireweapon = var_4a1b9411;
+            fireweapon = molotovfiresmallweapon;
         } else if (isdefined(locations[#"steam"][lockey])) {
-            fireweapon = var_7bf146f2;
+            fireweapon = molotovsteamweapon;
         } else {
-            fireweapon = isdefined(locations[#"tallfire"][lockey]) ? var_3cbce009 : var_aecaaa11;
+            fireweapon = isdefined(locations[#"tallfire"][lockey]) ? molotovfiretallweapon : molotovfireweapon;
         }
         level thread function_42b9fdbe(fireweapon, locations[#"loc"][lockey], locations[#"normal"][lockey], int(customsettings.var_b79d64a9), team);
     }

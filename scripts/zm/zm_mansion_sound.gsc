@@ -319,19 +319,19 @@ function function_eb112701() {
     level endon(#"end_game");
     s_result = undefined;
     s_result = level waittill(#"bedroom_charged", #"library_charged", #"cellar_charged");
-    var_65c9997c = undefined;
+    mdl_stone = undefined;
     switch (s_result._notify) {
     case #"bedroom_charged":
-        var_65c9997c = getent("gazing_stone_main_hall", "targetname");
+        mdl_stone = getent("gazing_stone_main_hall", "targetname");
         break;
     case #"library_charged":
-        var_65c9997c = getent("gazing_stone_library", "targetname");
+        mdl_stone = getent("gazing_stone_library", "targetname");
         break;
     case #"cellar_charged":
-        var_65c9997c = getent("gazing_stone_cellar", "targetname");
+        mdl_stone = getent("gazing_stone_cellar", "targetname");
         break;
     }
-    e_closest_player = arraygetclosest(var_65c9997c.origin, getplayers());
+    e_closest_player = arraygetclosest(mdl_stone.origin, getplayers());
     if (isalive(e_closest_player)) {
         e_closest_player zm_audio::create_and_play_dialog(#"seer_stone", #"active", undefined, 1);
     }

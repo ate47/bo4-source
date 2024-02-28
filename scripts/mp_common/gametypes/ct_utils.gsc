@@ -1508,7 +1508,7 @@ function function_80540e80(var_64ef1697 = "BUTTON_A", var_2ee3d6f5 = 0.5) {
     }
     do {
         waitframe(1);
-        var_32452cfa = self function_244edbb9(var_64ef1697);
+        var_32452cfa = self is_button_pressed(var_64ef1697);
     } while(!var_32452cfa);
     function_13c4b855(0);
     self function_27420756(var_6976202f);
@@ -1520,7 +1520,7 @@ function function_80540e80(var_64ef1697 = "BUTTON_A", var_2ee3d6f5 = 0.5) {
 // Params 1, eflags: 0x0
 // Checksum 0xccb85d91, Offset: 0x57c8
 // Size: 0xf6
-function function_244edbb9(var_64ef1697 = "BUTTON_A") {
+function is_button_pressed(var_64ef1697 = "BUTTON_A") {
     switch (var_64ef1697) {
     case #"button_a":
         b_check = self primarybuttonpressedlocal();
@@ -1568,12 +1568,12 @@ function function_13c4b855(b_pause = 1) {
 // Params 4, eflags: 0x0
 // Checksum 0xcac89fef, Offset: 0x5a70
 // Size: 0x234
-function function_61c3d59c(str_text, var_3608d414, var_5b811c5d, var_23301438 = 0) {
+function function_61c3d59c(str_text, a_str_vo, var_5b811c5d, var_23301438 = 0) {
     level endon(#"combattraining_logic_finished");
     if (isdefined(level.var_820c5561)) {
         b_dynobj = isdefined(var_5b811c5d);
-        if (isdefined(var_3608d414)) {
-            level thread ct_vo::function_831e0584(var_3608d414);
+        if (isdefined(a_str_vo)) {
+            level thread ct_vo::function_831e0584(a_str_vo);
         }
         if (level.ct_shared_ingame_objective ct_shared_ingame_objective::is_open(self)) {
             self function_1bb93418();
@@ -1635,12 +1635,12 @@ function function_c2a10fc() {
 // Params 2, eflags: 0x0
 // Checksum 0x6e34cbc1, Offset: 0x5e08
 // Size: 0x25c
-function function_5dec7b34(str_warning, var_3608d414) {
+function function_5dec7b34(str_warning, a_str_vo) {
     level endon(#"combattraining_logic_finished", #"ct_warning_end");
     self endoncallback(&ct_warning_end, #"ct_warning_end");
     if (isdefined(level.var_820c5561)) {
-        if (isdefined(var_3608d414)) {
-            level thread ct_vo::function_831e0584(var_3608d414);
+        if (isdefined(a_str_vo)) {
+            level thread ct_vo::function_831e0584(a_str_vo);
         }
         if (level.ct_shared_warning ct_shared_warning::is_open(self)) {
             self function_f272fff4();
@@ -2537,9 +2537,9 @@ function function_88c18aba(_hash) {
 // Params 6, eflags: 0x0
 // Checksum 0x7305bb7b, Offset: 0x8ec0
 // Size: 0x84
-function function_93c86846(var_3608d414, var_8a30c2bf, var_aa62f5bf, arena_defend_wasp_vignette_path_teleport_, var_cf0cbd73, var_9c8d914) {
-    if (isdefined(var_3608d414)) {
-        level thread ct_vo::function_831e0584(var_3608d414, 1);
+function function_93c86846(a_str_vo, var_8a30c2bf, var_aa62f5bf, arena_defend_wasp_vignette_path_teleport_, var_cf0cbd73, var_9c8d914) {
+    if (isdefined(a_str_vo)) {
+        level thread ct_vo::function_831e0584(a_str_vo, 1);
     }
     function_e0d36a2c(undefined, var_8a30c2bf, var_aa62f5bf, arena_defend_wasp_vignette_path_teleport_, var_cf0cbd73, var_9c8d914);
 }
@@ -3159,7 +3159,7 @@ function highlight_ring(b_on = 1, v_origin, v_normal) {
 // Params 4, eflags: 0x0
 // Checksum 0x88e4e65a, Offset: 0xb2f0
 // Size: 0x170
-function function_eeb4cff6(var_9d4f2d1, var_f11dba7e, var_260aad25, var_3608d414) {
+function function_eeb4cff6(var_9d4f2d1, var_f11dba7e, var_260aad25, a_str_vo) {
     if (isdefined(var_9d4f2d1)) {
         s_dest = struct::get(var_9d4f2d1, "targetname");
         while (1) {
@@ -3174,8 +3174,8 @@ function function_eeb4cff6(var_9d4f2d1, var_f11dba7e, var_260aad25, var_3608d414
     level.var_7b46025 = struct::get_array(var_260aad25, "targetname");
     level.var_47cd3e56 = 0;
     level thread ct_bots::activate_bots(level.var_7b46025.size, #"axis");
-    if (isdefined(var_3608d414)) {
-        level thread ct_vo::function_831e0584(var_3608d414, 0);
+    if (isdefined(a_str_vo)) {
+        level thread ct_vo::function_831e0584(a_str_vo, 0);
     }
     wait(0.1);
     level notify(#"hash_5692c8f5563845e8");
@@ -3257,8 +3257,8 @@ function function_e96cc63f(n_count = 3, spawnpts, var_810b40e6 = 1, var_4837ee77
     }
     if (isarray(spawnpts)) {
         a_s_targets = [];
-        var_cf985323 = spawnpts;
-        foreach (str_spawns in var_cf985323) {
+        a_str_spawns = spawnpts;
+        foreach (str_spawns in a_str_spawns) {
             var_e47f1087 = struct::get_array(str_spawns, "targetname");
             a_s_targets = arraycombine(a_s_targets, var_e47f1087, 0, 0);
         }

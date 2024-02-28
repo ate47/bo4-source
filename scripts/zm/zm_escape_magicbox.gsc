@@ -51,23 +51,23 @@ function custom_joker_movement() {
         self.weapon_model delete();
         self.weapon_model = undefined;
     }
-    var_f67ecd64 = util::spawn_model(level.chest_joker_model, v_origin, self.angles + vectorscale((0, 1, 0), 180));
-    var_f67ecd64.targetname = "box_lock";
-    var_f67ecd64 setcandamage(1);
+    mdl_lock = util::spawn_model(level.chest_joker_model, v_origin, self.angles + vectorscale((0, 1, 0), 180));
+    mdl_lock.targetname = "box_lock";
+    mdl_lock setcandamage(1);
     level.var_c7626f2a[#"box_lock"] = &pebble::function_bdd1bac8;
     level notify(#"hash_219aba01ff2d6de4");
-    playsoundatposition(#"hash_7c7d8771a48e8871", var_f67ecd64.origin);
+    playsoundatposition(#"hash_7c7d8771a48e8871", mdl_lock.origin);
     wait(0.5);
     level notify(#"weapon_fly_away_start");
     wait(1);
-    var_f67ecd64 rotateyaw(3000, 4, 4);
+    mdl_lock rotateyaw(3000, 4, 4);
     wait(3);
-    var_f67ecd64 movez(20, 0.5, 0.5);
-    var_f67ecd64 waittill(#"movedone");
-    var_f67ecd64 movez(-100, 0.5, 0.5);
-    var_f67ecd64 waittill(#"movedone");
+    mdl_lock movez(20, 0.5, 0.5);
+    mdl_lock waittill(#"movedone");
+    mdl_lock movez(-100, 0.5, 0.5);
+    mdl_lock waittill(#"movedone");
     level notify(#"hash_3698278a3a5d8beb");
-    var_f67ecd64 delete();
+    mdl_lock delete();
     self notify(#"box_moving");
     level notify(#"weapon_fly_away_end");
 }

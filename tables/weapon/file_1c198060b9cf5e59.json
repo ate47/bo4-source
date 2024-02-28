@@ -1,7 +1,7 @@
 {
     "name": "#hash_1c198060b9cf5e59",
     "baseWeapon": "#defaultweapon",
-    "displayname": "#hash_4b93044991e4b77",
+    "displayname": "#weapon/defaultweapon",
     "sessionMode": "all",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

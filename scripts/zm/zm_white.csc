@@ -111,7 +111,7 @@ function event_handler[level_init] main(eventstruct) {
 // Checksum 0x18251ee8, Offset: 0xe30
 // Size: 0x16a
 function function_b8da6f44() {
-    level.var_4016a739 = vectorscale((0, 1, 0), 90);
+    level.player_bladeblade = vectorscale((0, 1, 0), 90);
     level._effect[#"hash_2bba72fdcc5508b5"] = #"hash_1e8cb303d3103833";
     level._effect[#"chest_light_closed"] = #"hash_602f075818a2fb2e";
     level._effect[#"hash_19f4dd97cbb87594"] = #"hash_2f7533f7f5b59f7c";

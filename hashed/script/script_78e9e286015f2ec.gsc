@@ -797,12 +797,12 @@ function function_5b1c42a6() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x40fd2e0, Offset: 0x3cb0
 // Size: 0x1aa
-function function_52838f02(var_601fee0 = "both", b_show = 1) {
+function function_52838f02(str_display = "both", b_show = 1) {
     func_visibility = &show;
     if (!b_show) {
         func_visibility = &hide;
     }
-    switch (var_601fee0) {
+    switch (str_display) {
     case #"both":
         for (i = 0; i < 4; i++) {
             level.var_1e220e78[i] [[ func_visibility ]]();

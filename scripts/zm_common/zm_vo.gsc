@@ -755,9 +755,9 @@ function private function_597484c3(n_delay, var_56f97c91, var_d7714e4e) {
 // Params 5, eflags: 0x0
 // Checksum 0x5fc05ceb, Offset: 0x2c20
 // Size: 0x158
-function function_cf1e151c(var_3608d414, var_604e94aa = [], b_wait_if_busy = 0, n_priority = 0, var_34e7887 = 0) {
+function function_cf1e151c(a_str_vo, var_604e94aa = [], b_wait_if_busy = 0, n_priority = 0, var_34e7887 = 0) {
     b_played = 0;
-    foreach (i, str_vo in var_3608d414) {
+    foreach (i, str_vo in a_str_vo) {
         var_fa74ccf1 = isdefined(var_604e94aa[i]) ? var_604e94aa[i] : 0.5;
         b_said = vo_say(str_vo, var_fa74ccf1, b_wait_if_busy, n_priority, var_34e7887);
         if (isdefined(b_said) && b_said) {
@@ -778,9 +778,9 @@ function function_7e4562d7(var_3505e2ee, var_604e94aa = [], b_wait_if_busy = 0, 
     var_cd5bda0c = [];
     if (isstring(var_3505e2ee) || ishash(var_3505e2ee)) {
         for (p = 1; p <= 16; p++) {
-            var_6b452a2f = var_3505e2ee + "_" + "plr_" + p;
+            str_test = var_3505e2ee + "_" + "plr_" + p;
             for (i = 0; i < 20; i++) {
-                str_alias = var_6b452a2f + "_" + i;
+                str_alias = str_test + "_" + i;
                 if (soundexists(str_alias)) {
                     var_cd5bda0c[i] = array(p, str_alias);
                 }

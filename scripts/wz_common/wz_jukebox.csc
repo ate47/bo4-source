@@ -36,7 +36,7 @@ function __init__() {
 function function_2bf3c36e() {
     dynents = getdynentarray("dynent_jukebox");
     foreach (jukebox in dynents) {
-        jukebox.var_91058d39 = [];
+        jukebox.songs = [];
     }
     if (!level.var_8b13d130) {
         waitframe(1);
@@ -94,16 +94,16 @@ function jukebox_on() {
         self.var_14da73bd = undefined;
         waitframe(1);
     }
-    if (isdefined(self.var_91058d39) && self.var_91058d39.size > 0) {
-        var_49ef982c = randomint(self.var_91058d39.size);
-        song = self.var_91058d39[var_49ef982c];
-        arrayremoveindex(self.var_91058d39, var_49ef982c);
+    if (isdefined(self.songs) && self.songs.size > 0) {
+        random_num = randomint(self.songs.size);
+        song = self.songs[random_num];
+        arrayremoveindex(self.songs, random_num);
     } else {
-        var_91058d39 = array(#"hash_38b88ac8a1bb9bca", #"hash_38b88bc8a1bb9d7d", #"hash_38b888c8a1bb9864", #"hash_38b889c8a1bb9a17", #"hash_38b886c8a1bb94fe", #"hash_38b887c8a1bb96b1");
-        self.var_91058d39 = array::randomize(var_91058d39);
-        var_49ef982c = randomint(self.var_91058d39.size);
-        song = self.var_91058d39[var_49ef982c];
-        arrayremoveindex(self.var_91058d39, var_49ef982c);
+        songs = array(#"hash_38b88ac8a1bb9bca", #"hash_38b88bc8a1bb9d7d", #"hash_38b888c8a1bb9864", #"hash_38b889c8a1bb9a17", #"hash_38b886c8a1bb94fe", #"hash_38b887c8a1bb96b1");
+        self.songs = array::randomize(songs);
+        random_num = randomint(self.songs.size);
+        song = self.songs[random_num];
+        arrayremoveindex(self.songs, random_num);
     }
     self.var_14da73bd = playsound(0, song, var_96748cfb);
 }

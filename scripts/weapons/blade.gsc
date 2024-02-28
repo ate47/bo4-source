@@ -19,8 +19,8 @@ function autoexec __init__system__() {
 // Checksum 0x6f89ce92, Offset: 0x110
 // Size: 0x84
 function __init__() {
-    level.var_8e2aec59 = getweapon(#"sig_blade");
-    level.var_38bd298c = getweapon(#"sig_blade_projectile");
+    level.weaponsigblade = getweapon(#"sig_blade");
+    level.weaponsigbladeprojectile = getweapon(#"sig_blade_projectile");
     ability_player::register_gadget_activation_callbacks(11, &function_a1aa3b85, &function_b0105ee8);
 }
 
@@ -29,10 +29,10 @@ function __init__() {
 // Checksum 0x51baad2d, Offset: 0x1a0
 // Size: 0x8c
 function function_efa90c79(weapon) {
-    if (weapon === level.var_8e2aec59) {
+    if (weapon === level.weaponsigblade) {
         self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 6);
         return 1;
-    } else if (weapon === level.var_38bd298c) {
+    } else if (weapon === level.weaponsigbladeprojectile) {
         self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 7);
         return 1;
     }
@@ -44,7 +44,7 @@ function function_efa90c79(weapon) {
 // Checksum 0x652859ae, Offset: 0x238
 // Size: 0x42
 function function_d6805ff5(weapon) {
-    if (weapon === level.var_8e2aec59) {
+    if (weapon === level.weaponsigblade) {
         self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 0);
         return 1;
     }
@@ -55,7 +55,7 @@ function function_d6805ff5(weapon) {
 // Checksum 0x4b6a120d, Offset: 0x288
 // Size: 0x1b6
 function function_a1aa3b85(var_3245778e, weapon) {
-    if (weapon !== level.var_8e2aec59 && weapon !== level.var_38bd298c) {
+    if (weapon !== level.weaponsigblade && weapon !== level.weaponsigbladeprojectile) {
         return;
     }
     self.var_f5455815 = 1;

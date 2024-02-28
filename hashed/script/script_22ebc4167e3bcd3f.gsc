@@ -277,8 +277,8 @@ function function_6ff33a91(var_217fca51) {
     var_217fca51 thread scene::play("Shot 3");
     n_anim_length = getanimlength(#"hash_2bf732b76b5383ba");
     wait(n_anim_length);
-    var_6b6eb535 = var_217fca51.scene_ents[#"skeleton_arm"];
-    var_6b6eb535 hide();
+    mdl_spoon = var_217fca51.scene_ents[#"skeleton_arm"];
+    mdl_spoon hide();
     function_ac52c6f1();
 }
 
@@ -549,13 +549,13 @@ function function_48e7a1d7(e_grenade, n_grenade_charge_power) {
     }
     if (isdefined(level.var_5c14fe03.var_3d3748c4) && level.var_5c14fe03.var_3d3748c4 && level.var_5c14fe03.var_d86e9c27 == self) {
         level.var_5c14fe03 ghost();
-        var_6e6ec518 = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
-        var_6e6ec518.n_grenade_charge_power = n_grenade_charge_power;
+        mdl_tomahawk = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
+        mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
         var_9c0bf2db = util::spawn_model(level.var_5c14fe03.model, e_grenade.origin);
         var_9c0bf2db.str_powerup = level.var_5c14fe03.str_powerup;
-        var_9c0bf2db linkto(var_6e6ec518);
-        self thread zm_weap_tomahawk::tomahawk_return_player(var_6e6ec518, undefined, 800);
-        self thread function_be995f48(var_6e6ec518, var_9c0bf2db);
+        var_9c0bf2db linkto(mdl_tomahawk);
+        self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
+        self thread function_be995f48(mdl_tomahawk, var_9c0bf2db);
         return 1;
     } else {
         return 0;
@@ -566,9 +566,9 @@ function function_48e7a1d7(e_grenade, n_grenade_charge_power) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x6c5ae905, Offset: 0x28c8
 // Size: 0xc4
-function function_be995f48(var_6e6ec518, var_9c0bf2db) {
+function function_be995f48(mdl_tomahawk, var_9c0bf2db) {
     self endon(#"disconnect");
-    while (isdefined(var_6e6ec518)) {
+    while (isdefined(mdl_tomahawk)) {
         waitframe(1);
     }
     str_powerup = var_9c0bf2db.str_powerup;

@@ -215,13 +215,13 @@ function private function_4493c71b(weapon, n_lvl = 1) {
 // Params 2, eflags: 0x5 linked
 // Checksum 0x6bfdc1e6, Offset: 0x1390
 // Size: 0xca
-function private function_eae0296b(var_65b6e624, b_postfx = 0) {
+function private function_eae0296b(str_level, b_postfx = 0) {
     if (b_postfx) {
         self clientfield::increment_to_player("" + #"hash_2964d1cb7c4bd175");
     }
     self.var_a0a1475c = 1;
     self notify(#"hash_11d4cfae418fcfe1");
-    switch (var_65b6e624) {
+    switch (str_level) {
     case #"hero_scepter_lv3":
         self.var_5762241e = 35;
         break;

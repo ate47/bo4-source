@@ -441,7 +441,7 @@ function private function_f7c7a416(entity) {
                         break;
                     }
                 }
-                hit_enemy dodamage(n_base_damage, entity.origin, var_743a2772, entity, undefined, "MOD_MELEE", 0, level.var_78032351);
+                hit_enemy dodamage(n_base_damage, entity.origin, var_743a2772, entity, undefined, "MOD_MELEE", 0, level.weapondefault);
                 if (!isalive(hit_enemy)) {
                     if (randomfloat(1) <= 0.8) {
                         hit_enemy zombie_utility::gib_random_part();

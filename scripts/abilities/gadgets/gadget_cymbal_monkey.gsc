@@ -115,20 +115,20 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
         e_grenade = eventstruct.projectile;
         e_grenade ghost();
         e_grenade.angles = self.angles;
-        var_bdd70f6a = util::spawn_model(e_grenade.model, e_grenade.origin, e_grenade.angles);
-        e_grenade.var_bdd70f6a = var_bdd70f6a;
-        e_grenade.var_bdd70f6a linkto(e_grenade);
-        e_grenade.var_bdd70f6a.var_38af96b9 = e_grenade;
-        e_grenade.var_bdd70f6a.team = e_grenade.team;
-        e_grenade.var_bdd70f6a clientfield::set("enemyequip", 1);
+        mdl_monkey = util::spawn_model(e_grenade.model, e_grenade.origin, e_grenade.angles);
+        e_grenade.mdl_monkey = mdl_monkey;
+        e_grenade.mdl_monkey linkto(e_grenade);
+        e_grenade.mdl_monkey.var_38af96b9 = e_grenade;
+        e_grenade.mdl_monkey.team = e_grenade.team;
+        e_grenade.mdl_monkey clientfield::set("enemyequip", 1);
         e_grenade waittill(#"stationary", #"death");
-        if (!isdefined(e_grenade) && isdefined(var_bdd70f6a)) {
-            var_bdd70f6a delete();
+        if (!isdefined(e_grenade) && isdefined(mdl_monkey)) {
+            mdl_monkey delete();
         }
-        if (isdefined(self) && isdefined(e_grenade) && isdefined(e_grenade.var_bdd70f6a)) {
-            e_grenade.var_bdd70f6a.var_acdc8d71 = getclosestpointonnavmesh(e_grenade.var_bdd70f6a.origin, 360, 15.1875);
-            array::add(level.var_7d95e1ed, e_grenade.var_bdd70f6a);
-            self callback::callback(#"hash_3c09ead7e9d8a968", e_grenade.var_bdd70f6a);
+        if (isdefined(self) && isdefined(e_grenade) && isdefined(e_grenade.mdl_monkey)) {
+            e_grenade.mdl_monkey.var_acdc8d71 = getclosestpointonnavmesh(e_grenade.mdl_monkey.origin, 360, 15.1875);
+            array::add(level.var_7d95e1ed, e_grenade.mdl_monkey);
+            self callback::callback(#"hash_3c09ead7e9d8a968", e_grenade.mdl_monkey);
         }
     }
 }

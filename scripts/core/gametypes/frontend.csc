@@ -167,8 +167,8 @@ function function_89c6128e(mode) {
     for (index = 0; index < getplayerroletemplatecount(mode); index++) {
         fields = getcharacterfields(index, mode);
         if (isdefined(fields) && isdefined(fields.var_4c65efc8)) {
-            var_200be221 = struct::get_script_bundle("scene", fields.var_4c65efc8);
-            if (isdefined(var_200be221)) {
+            scene_def = struct::get_script_bundle("scene", fields.var_4c65efc8);
+            if (isdefined(scene_def)) {
                 var_3c6fd4f7 = function_b14806c6(index, mode);
                 /#
                     var_3c6fd4f7 = function_9e72a96(var_3c6fd4f7);
@@ -1773,9 +1773,9 @@ function function_f00765ad(localclientnum, xuid, var_87c045d1, index, var_3f0e79
         var_7f40501d = undefined;
         var_44cf5e5b = getcharacterfields(var_4865db3b, session_mode);
         if (isdefined(var_44cf5e5b)) {
-            var_da03826 = function_b7d4bfd9(var_44cf5e5b, var_3f0e790b);
-            if (isdefined(var_da03826)) {
-                var_7f40501d = var_da03826[index % var_da03826.size].scene;
+            default_scenes = function_b7d4bfd9(var_44cf5e5b, var_3f0e790b);
+            if (isdefined(default_scenes)) {
+                var_7f40501d = default_scenes[index % default_scenes.size].scene;
             }
         }
         if (isdefined(var_7f40501d)) {

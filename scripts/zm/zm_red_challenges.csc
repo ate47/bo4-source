@@ -180,10 +180,10 @@ function function_75ac8f21(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xc0
 function function_3298ba0(n_index) {
     if (isdefined(level.var_7987392b) && isarray(level.var_7987392b)) {
-        foreach (var_99f92cf4 in level.var_7987392b) {
-            if (isdefined(var_99f92cf4)) {
-                if (var_99f92cf4.var_f147da98 == n_index) {
-                    return var_99f92cf4;
+        foreach (mdl_bowl in level.var_7987392b) {
+            if (isdefined(mdl_bowl)) {
+                if (mdl_bowl.var_f147da98 == n_index) {
+                    return mdl_bowl;
                 }
             }
         }
@@ -200,9 +200,9 @@ function function_250bbf4e(localclientnum, oldval, newval, bnewent, binitialsnap
         return;
     }
     if (newval) {
-        var_99f92cf4 = self function_3298ba0(newval);
-        if (isdefined(var_99f92cf4)) {
-            var_99f92cf4 playrenderoverridebundle(#"rob_sonar_set_friendly");
+        mdl_bowl = self function_3298ba0(newval);
+        if (isdefined(mdl_bowl)) {
+            mdl_bowl playrenderoverridebundle(#"rob_sonar_set_friendly");
         }
     }
 }
@@ -213,9 +213,9 @@ function function_250bbf4e(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xf8
 function cleanup_challenges(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (isdefined(level.var_7987392b) && isarray(level.var_7987392b)) {
-        foreach (var_99f92cf4 in level.var_7987392b) {
-            if (isdefined(var_99f92cf4)) {
-                var_99f92cf4 stoprenderoverridebundle(#"rob_sonar_set_friendly");
+        foreach (mdl_bowl in level.var_7987392b) {
+            if (isdefined(mdl_bowl)) {
+                mdl_bowl stoprenderoverridebundle(#"rob_sonar_set_friendly");
             }
         }
     }
@@ -240,11 +240,11 @@ function function_c63a4f32(localclientnum, oldval, newval, bnewent, binitialsnap
             return;
         }
         n_index = self.var_c68d7a3e;
-        var_99f92cf4 = self function_3298ba0(newval);
-        if (!isdefined(var_99f92cf4)) {
+        mdl_bowl = self function_3298ba0(newval);
+        if (!isdefined(mdl_bowl)) {
             return;
         }
-        e_fx = spawn(localclientnum, var_99f92cf4.origin, "script_model");
+        e_fx = spawn(localclientnum, mdl_bowl.origin, "script_model");
         e_fx setmodel(#"tag_origin");
         e_fx playsound(localclientnum, "zmb_sq_souls_release");
         e_fx.sfx_id = e_fx playloopsound(#"zmb_sq_souls_lp");

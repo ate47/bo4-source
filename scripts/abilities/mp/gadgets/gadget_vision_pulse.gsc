@@ -36,7 +36,7 @@ function __init__() {
 function function_aad9199e(pulsedenemy) {
     pulsedenemy notify(#"hash_7dc65ec6fe251daf");
     pulsedenemy endon(#"hash_7dc65ec6fe251daf", #"death", #"disconnect");
-    wait(float(level.var_2e3031be.var_9d776ba6) / 1000);
+    wait(float(level.weaponvisionpulse.var_9d776ba6) / 1000);
     if (isdefined(pulsedenemy)) {
         pulsedenemy.ispulsed = 0;
         pulsedenemy.var_5379bee8 = undefined;
@@ -62,7 +62,7 @@ function function_c0520f6f(victim, waittime) {
     self endon(#"disconnect", #"death", #"emp_vp_jammed");
     wait(float(waittime) / 1000);
     if (isalive(victim)) {
-        scoreevents::processscoreevent(#"hash_5fa940b319171088", self, victim, level.var_2e3031be);
+        scoreevents::processscoreevent(#"hash_5fa940b319171088", self, victim, level.weaponvisionpulse);
     }
 }
 
@@ -72,8 +72,8 @@ function function_c0520f6f(victim, waittime) {
 // Size: 0x210
 function function_19041061() {
     self endon(#"disconnect", #"death", #"emp_vp_jammed");
-    waittime = level.var_2e3031be.gadget_pulse_duration / 3;
-    radius = level.var_2e3031be.gadget_pulse_max_range;
+    waittime = level.weaponvisionpulse.gadget_pulse_duration / 3;
+    radius = level.weaponvisionpulse.gadget_pulse_max_range;
     for (i = 0; i < 3; i++) {
         enemyteam = getplayers("all", self.origin, radius);
         if (isarray(enemyteam)) {
@@ -83,10 +83,10 @@ function function_19041061() {
                 }
                 if (isalive(enemy)) {
                     var_bf11ed35 = distance2d(self.origin, enemy.origin);
-                    if (var_bf11ed35 > level.var_2e3031be.gadget_pulse_max_range) {
+                    if (var_bf11ed35 > level.weaponvisionpulse.gadget_pulse_max_range) {
                         continue;
                     }
-                    timetotarget = var_bf11ed35 / level.var_2e3031be.var_f9eec1ec;
+                    timetotarget = var_bf11ed35 / level.weaponvisionpulse.var_f9eec1ec;
                     self thread function_c0520f6f(enemy, timetotarget);
                 }
             }

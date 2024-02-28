@@ -1088,13 +1088,13 @@ class csceneplayer : csceneobject {
     // Checksum 0x213a5f25, Offset: 0x1c50
     // Size: 0xd2
     function function_c7246a4a(player, var_d4c489c0) {
-        var_29f79831 = player loadout::function_18a77b37(var_d4c489c0);
+        w_slot = player loadout::function_18a77b37(var_d4c489c0);
         var_e4b15461 = player getcurrentweapon();
-        if (var_29f79831 != var_e4b15461) {
+        if (w_slot != var_e4b15461) {
             player val::set(#"hash_42d78b644f22da0b", "take_weapons", 1);
-            player giveweapon(var_29f79831);
-            player switchtoweaponimmediate(var_29f79831);
-            player.var_777951c = var_29f79831;
+            player giveweapon(w_slot);
+            player switchtoweaponimmediate(w_slot);
+            player.var_777951c = w_slot;
         }
     }
 

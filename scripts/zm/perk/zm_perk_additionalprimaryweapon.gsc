@@ -133,7 +133,7 @@ function take_additional_primary_weapon_perk(b_pause, str_perk, str_result, n_sl
                 return;
             }
             if (isdefined(self.var_dd1b11fe) && self.var_dd1b11fe && zm_perk_mod_additionalprimaryweapon::function_23c3c9db(self.var_2a62e678)) {
-                self.var_11b895b8 = {#var_80c3ca2:self.aat[self.var_2a62e678], #var_2d5dec87:self zm_weapons::get_player_weapondata(self.var_2a62e678)};
+                self.var_11b895b8 = {#str_aat:self.aat[self.var_2a62e678], #var_2d5dec87:self zm_weapons::get_player_weapondata(self.var_2a62e678)};
                 self.var_dd1b11fe = undefined;
             }
             if (self.var_2a62e678 == self getcurrentweapon() && var_3ba4bf7d.size > 1) {
@@ -200,7 +200,7 @@ function function_1a9f3a91() {
 function function_61446ba9() {
     if (isdefined(self.var_11b895b8)) {
         var_2d5dec87 = self.var_11b895b8.var_2d5dec87;
-        var_80c3ca2 = self.var_11b895b8.var_80c3ca2;
+        str_aat = self.var_11b895b8.str_aat;
         self.var_11b895b8 = undefined;
         weapon = zm_weapons::weapondata_give(var_2d5dec87);
     }

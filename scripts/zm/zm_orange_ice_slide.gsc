@@ -24,10 +24,10 @@ function function_a8fc3bf1(s_info) {
     e_player = s_info.activator;
     if (isalive(e_player) && !(isdefined(e_player.var_e0348559) && e_player.var_e0348559)) {
         e_player endon(#"death");
-        var_e098d474 = util::spawn_model(#"tag_origin", e_player gettagorigin("tag_origin"), e_player gettagangles("tag_origin"));
-        if (isdefined(var_e098d474)) {
-            var_e098d474 linkto(e_player, "tag_origin");
-            var_e098d474 playloopsound("evt_ice_slide");
+        mdl_sound = util::spawn_model(#"tag_origin", e_player gettagorigin("tag_origin"), e_player gettagangles("tag_origin"));
+        if (isdefined(mdl_sound)) {
+            mdl_sound linkto(e_player, "tag_origin");
+            mdl_sound playloopsound("evt_ice_slide");
         }
         if (self.var_80360a02 === 0 && e_player zm_audio::can_speak()) {
             self.var_80360a02 = 1;
@@ -60,8 +60,8 @@ function function_a8fc3bf1(s_info) {
                 }
             }
         }
-        if (isdefined(var_e098d474)) {
-            var_e098d474 delete();
+        if (isdefined(mdl_sound)) {
+            mdl_sound delete();
         }
     }
 }

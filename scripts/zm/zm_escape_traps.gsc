@@ -84,7 +84,7 @@ function init_fan_trap_trigs() {
                 if (a_e_trap[i].script_string == "fan_trap_rumble") {
                     var_7c68fa38.t_rumble = a_e_trap[i];
                 } else if (a_e_trap[i].script_string == "fxanim_fan") {
-                    var_7c68fa38.var_6dead4d5 = a_e_trap[i];
+                    var_7c68fa38.mdl_fan = a_e_trap[i];
                 } else if (a_e_trap[i].script_string == "trap_control_panel") {
                     if (!isdefined(var_7c68fa38.var_cd6ebde4)) {
                         var_7c68fa38.var_cd6ebde4 = [];
@@ -147,12 +147,12 @@ function activate_zm_fan_trap() {
     level.trapped_track[#"fan"] = 1;
     self.in_use = 1;
     self thread zm_traps::trap_damage();
-    self.var_6dead4d5 thread scene::init(#"p8_fxanim_zm_esc_trap_fan_play", self.var_6dead4d5);
+    self.mdl_fan thread scene::init(#"p8_fxanim_zm_esc_trap_fan_play", self.mdl_fan);
     self thread fan_trap_timeout();
     self thread fan_trap_rumble_think();
     self waittill(#"trap_finished");
     self.in_use = undefined;
-    self.var_6dead4d5 thread scene::play(#"p8_fxanim_zm_esc_trap_fan_play", self.var_6dead4d5);
+    self.mdl_fan thread scene::play(#"p8_fxanim_zm_esc_trap_fan_play", self.mdl_fan);
     a_players = getplayers();
     foreach (e_player in a_players) {
         if (isdefined(e_player.fan_trap_rumble) && e_player.fan_trap_rumble) {
@@ -1086,16 +1086,16 @@ function zapper_light_green() {
 // Size: 0x188
 function trap_move_switch() {
     self zapper_light_red();
-    foreach (var_fe043be4 in self.var_e7bb2f7b) {
-        var_fe043be4 rotatepitch(-180, 0.5);
-        var_fe043be4 playsound(#"amb_sparks_l_b");
+    foreach (mdl_handle in self.var_e7bb2f7b) {
+        mdl_handle rotatepitch(-180, 0.5);
+        mdl_handle playsound(#"amb_sparks_l_b");
     }
     wait(0.5);
     self notify(#"switch_activated");
     self waittill(#"available");
     self zapper_light_green();
-    foreach (var_fe043be4 in self.var_e7bb2f7b) {
-        var_fe043be4 rotatepitch(180, 0.5);
+    foreach (mdl_handle in self.var_e7bb2f7b) {
+        mdl_handle rotatepitch(180, 0.5);
     }
 }
 

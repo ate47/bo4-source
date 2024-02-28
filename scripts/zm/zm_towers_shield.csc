@@ -61,7 +61,7 @@ function __init__() {
 // Checksum 0xe4f20d02, Offset: 0x9a0
 // Size: 0x16a
 function function_618e1db4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (self.weapon == getweapon(#"hash_2f351450f2e936dc")) {
+    if (self.weapon == getweapon(#"zhield_zword_turret_upgraded")) {
         var_27aa6343 = level._effect[#"hash_7f665a0db122bf39"];
         var_a1f103c8 = level._effect[#"hash_7f6c660db1273f4b"];
     } else {
@@ -93,7 +93,7 @@ function function_311767a6(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x1c4
 function function_467afa20(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     var_515e20e6 = 0;
-    if (self.weapon == getweapon(#"hash_2f351450f2e936dc")) {
+    if (self.weapon == getweapon(#"zhield_zword_turret_upgraded")) {
         var_515e20e6 = 1;
     }
     if (newval) {

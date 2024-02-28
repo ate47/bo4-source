@@ -292,15 +292,15 @@ function function_77072f95(localclientnum, str_step, a_s_points) {
         var_e64db026 = s_end.origin;
         v_start_angles = vectortoangles(v_start_origin - var_e64db026);
         v_end_angles = vectortoangles(var_e64db026 - v_start_origin);
-        var_360148 = util::spawn_model(localclientnum, #"tag_origin", v_start_origin, v_start_angles);
+        mdl_start = util::spawn_model(localclientnum, #"tag_origin", v_start_origin, v_start_angles);
         var_b5d35012 = util::spawn_model(localclientnum, #"tag_origin", var_e64db026, v_end_angles);
-        level beam::launch(var_360148, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_mirror_light", 1);
+        level beam::launch(mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_mirror_light", 1);
         if (!isdefined(level.var_b20dd024[str_step])) {
             level.var_b20dd024[str_step] = [];
         } else if (!isarray(level.var_b20dd024[str_step])) {
             level.var_b20dd024[str_step] = array(level.var_b20dd024[str_step]);
         }
-        level.var_b20dd024[str_step][level.var_b20dd024[str_step].size] = array(var_360148, var_b5d35012);
+        level.var_b20dd024[str_step][level.var_b20dd024[str_step].size] = array(mdl_start, var_b5d35012);
     }
 }
 
@@ -314,15 +314,15 @@ function function_c6f495b3(localclientnum, str_step, a_s_points) {
     s_start = a_s_points[a_s_points.size - 2];
     s_end = a_s_points[a_s_points.size - 1];
     var_95bce808 = var_9c2546ae[var_9c2546ae.size - 1];
-    var_360148 = var_95bce808[0];
+    mdl_start = var_95bce808[0];
     var_b5d35012 = var_95bce808[1];
     v_start_origin = s_start.origin;
     var_e64db026 = s_end.origin;
-    var_360148.origin = v_start_origin;
+    mdl_start.origin = v_start_origin;
     var_b5d35012.origin = var_e64db026;
     v_start_angles = vectortoangles(v_start_origin - var_e64db026);
     v_end_angles = vectortoangles(var_e64db026 - v_start_origin);
-    var_360148.angles = v_start_angles;
+    mdl_start.angles = v_start_angles;
     var_b5d35012.angles = v_end_angles;
 }
 
@@ -337,10 +337,10 @@ function function_ed4ed5e(localclientnum, str_step) {
     a_beams = level.var_b20dd024[str_step];
     if (isdefined(a_beams)) {
         foreach (var_95bce808 in a_beams) {
-            var_360148 = var_95bce808[0];
+            mdl_start = var_95bce808[0];
             var_b5d35012 = var_95bce808[1];
-            level beam::kill(var_360148, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_mirror_light");
-            var_360148 delete();
+            level beam::kill(mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_mirror_light");
+            mdl_start delete();
             var_b5d35012 delete();
         }
         level.var_b20dd024[str_step] = undefined;
@@ -655,15 +655,15 @@ function function_73a5ca1a(localclientnum, oldval, newval, bnewent, binitialsnap
         level.var_656f903a = util::spawn_model(localclientnum, #"tag_origin");
         level.var_656f903a.arsenalteleportoutstart = level.var_656f903a playloopsound(#"hash_289b15dba7547241");
     }
-    var_360148 = level.var_94068374;
+    mdl_start = level.var_94068374;
     var_b5d35012 = level.var_656f903a;
     switch (newval) {
     case 0:
         level.var_534f1bad = undefined;
-        level beam::kill(var_360148, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray");
-        if (isdefined(var_360148.arsenalteleportoutstart)) {
-            var_360148 playsound(localclientnum, #"hash_7aeea3d29c1624a");
-            var_360148 stoploopsound(var_360148.arsenalteleportoutstart);
+        level beam::kill(mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray");
+        if (isdefined(mdl_start.arsenalteleportoutstart)) {
+            mdl_start playsound(localclientnum, #"hash_7aeea3d29c1624a");
+            mdl_start stoploopsound(mdl_start.arsenalteleportoutstart);
         }
         if (isdefined(var_b5d35012.arsenalteleportoutstart)) {
             var_b5d35012 stoploopsound(var_b5d35012.arsenalteleportoutstart);
@@ -672,7 +672,7 @@ function function_73a5ca1a(localclientnum, oldval, newval, bnewent, binitialsnap
             var_b5d35012 stoploopsound(var_b5d35012.var_85c90678);
             var_b5d35012.var_85c90678 = undefined;
         }
-        var_360148 delete();
+        mdl_start delete();
         var_b5d35012 delete();
     case 1:
         if (isdefined(var_b5d35012.var_85c90678)) {
@@ -699,13 +699,13 @@ function function_73a5ca1a(localclientnum, oldval, newval, bnewent, binitialsnap
     var_e64db026 = s_end.origin;
     v_start_angles = vectortoangles(v_start_origin - var_e64db026);
     v_end_angles = vectortoangles(var_e64db026 - v_start_origin);
-    var_360148.origin = v_start_origin;
-    var_360148.angles = v_start_angles;
+    mdl_start.origin = v_start_origin;
+    mdl_start.angles = v_start_angles;
     var_b5d35012.origin = var_e64db026;
     var_b5d35012.angles = v_end_angles;
     if (!(isdefined(level.var_534f1bad) && level.var_534f1bad)) {
         level.var_534f1bad = 1;
-        level beam::launch(var_360148, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray", 1);
+        level beam::launch(mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray", 1);
     }
 }
 
@@ -772,22 +772,22 @@ function function_6fd9deaa(localclientnum, oldval, newval, bnewent, binitialsnap
         v_start_origin = s_start.origin;
         var_e64db026 = s_end.origin;
         v_start_angles = vectortoangles(var_e64db026 - v_start_origin);
-        var_360148 = util::spawn_model(localclientnum, #"tag_origin", v_start_origin, v_start_angles);
+        mdl_start = util::spawn_model(localclientnum, #"tag_origin", v_start_origin, v_start_angles);
         var_b5d35012 = util::spawn_model(localclientnum, #"tag_origin", var_e64db026);
-        var_360148 playsound(localclientnum, #"hash_3765e25049981166");
-        var_360148.sfx_id = var_360148 playloopsound(#"hash_170aa1970243fc4a");
-        e_player.var_636aecd9 = var_360148;
+        mdl_start playsound(localclientnum, #"hash_3765e25049981166");
+        mdl_start.sfx_id = mdl_start playloopsound(#"hash_170aa1970243fc4a");
+        e_player.var_636aecd9 = mdl_start;
         e_player.var_2667ae26 = var_b5d35012;
-        level beam::launch(var_360148, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray_bath", 1);
+        level beam::launch(mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray_bath", 1);
     } else {
-        var_360148 = e_player.var_636aecd9;
+        mdl_start = e_player.var_636aecd9;
         var_b5d35012 = e_player.var_2667ae26;
-        if (!isdefined(var_360148) || !isdefined(var_b5d35012)) {
+        if (!isdefined(mdl_start) || !isdefined(var_b5d35012)) {
             return;
         }
-        var_360148 playsound(localclientnum, #"hash_3126b098b980b5a3");
-        level beam::kill(var_360148, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray_bath");
-        var_360148 delete();
+        mdl_start playsound(localclientnum, #"hash_3126b098b980b5a3");
+        level beam::kill(mdl_start, "tag_origin", var_b5d35012, "tag_origin", "beam8_zm_red_ra_ray_bath");
+        mdl_start delete();
         var_b5d35012 delete();
     }
 }

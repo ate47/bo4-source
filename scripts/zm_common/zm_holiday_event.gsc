@@ -41,16 +41,16 @@ function __init__() {
 // Size: 0x1ac
 function __main__() {
     if (getdvarint(#"zm_holiday_event", 0) && zm_utility::is_classic() && !(isdefined(level.var_aa2d5655) && level.var_aa2d5655) && zm_maptable::get_story() == 2) {
-        level.var_3b96ad73 = getweapon(#"homunculus_leprechaun");
+        level.w_homunculus_leprechaun = getweapon(#"homunculus_leprechaun");
         if (!isdefined(level.var_fe96a4c4)) {
             level.var_fe96a4c4 = [];
         } else if (!isarray(level.var_fe96a4c4)) {
             level.var_fe96a4c4 = array(level.var_fe96a4c4);
         }
-        if (!isinarray(level.var_fe96a4c4, level.var_3b96ad73)) {
-            level.var_fe96a4c4[level.var_fe96a4c4.size] = level.var_3b96ad73;
+        if (!isinarray(level.var_fe96a4c4, level.w_homunculus_leprechaun)) {
+            level.var_fe96a4c4[level.var_fe96a4c4.size] = level.w_homunculus_leprechaun;
         }
-        zm_weapons::register_zombie_weapon_callback(level.var_3b96ad73, &zm_weap_homunculus::function_91b8863c);
+        zm_weapons::register_zombie_weapon_callback(level.w_homunculus_leprechaun, &zm_weap_homunculus::function_91b8863c);
         level thread function_e95f47c2();
         /#
             level thread devgui();
@@ -233,17 +233,17 @@ function function_1443aaa(b_success = 0) {
 // Checksum 0xb0d11d83, Offset: 0xdf0
 // Size: 0x144
 function function_ded808d5() {
-    var_e71cdd2c = util::spawn_model("tag_origin", self.origin + vectorscale((0, 0, 1), 60));
-    var_e71cdd2c clientfield::set("" + #"hash_d260ef4191c5b3d", 1);
+    mdl_soul = util::spawn_model("tag_origin", self.origin + vectorscale((0, 0, 1), 60));
+    mdl_soul clientfield::set("" + #"hash_d260ef4191c5b3d", 1);
     n_move_dist = 10;
     for (i = 0; i < 6; i++) {
-        var_e71cdd2c movez(n_move_dist, 0.1);
-        var_e71cdd2c waittill(#"movedone");
+        mdl_soul movez(n_move_dist, 0.1);
+        mdl_soul waittill(#"movedone");
         n_move_dist = n_move_dist * -1;
     }
-    var_e71cdd2c movez(9999, 4);
-    var_e71cdd2c waittill(#"movedone");
-    var_e71cdd2c delete();
+    mdl_soul movez(9999, 4);
+    mdl_soul waittill(#"movedone");
+    mdl_soul delete();
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
@@ -273,7 +273,7 @@ function function_4634a866() {
 // Size: 0xe8
 function function_efe5c28() {
     self.var_c21099c0 = 1;
-    self.var_16fc6934 = level.var_3b96ad73;
+    self.var_16fc6934 = level.w_homunculus_leprechaun;
     self.var_61c96978 = &function_55f8e11e;
     self.var_ccd959e1 = 1;
     foreach (e_player in getplayers()) {

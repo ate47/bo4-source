@@ -221,9 +221,9 @@ function function_430edc4e(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         if (isdefined(level._effect[#"air_blast"])) {
             self.var_8eef2f82 = util::playfxontag(localclientnum, level._effect[#"air_blast"], self, "tag_origin");
-            var_6e967983 = util::spawn_model(localclientnum, "tag_origin", self.origin + vectorscale((0, 0, 1), 20), self.angles);
-            var_6e967983 scene::play(#"p8_fxanim_zm_esc_blast_afterlife_seagull_ghost_bundle", "shot_1");
-            var_6e967983 delete();
+            mdl_ghost = util::spawn_model(localclientnum, "tag_origin", self.origin + vectorscale((0, 0, 1), 20), self.angles);
+            mdl_ghost scene::play(#"p8_fxanim_zm_esc_blast_afterlife_seagull_ghost_bundle", "shot_1");
+            mdl_ghost delete();
         }
         if (isdefined(level._effect[#"hash_1839aae8f96148af"])) {
             self.var_99f0142a = util::playfxontag(localclientnum, level._effect[#"hash_1839aae8f96148af"], self, "tag_origin");

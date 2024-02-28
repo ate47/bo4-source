@@ -8512,7 +8512,7 @@ string,mp/rampage,0
 string,hash_47278adf5790e47,0
 string,hash_47b85b5f86fbeff,0
 string,hash_47e1955bea1fc19,0
-string,hash_4b93044991e4b77,0
+string,weapon/defaultweapon,0
 string,hash_4d31b9e2bfe7386,0
 string,hash_4d5216db6f1d60b,0
 string,mpui/extclip2,0
@@ -8761,7 +8761,7 @@ string,hash_259b82059469705e,0
 string,hash_25b761f80b963d2d,0
 string,hash_25b78edb3b3a3c8b,0
 string,hash_25d3f454e864bb4a,0
-string,hash_25d8a87c9c374680,0
+string,weapon/molotov,0
 string,hash_25edfec743a2fb28,0
 string,hash_25fc6c872fa95f5e,0
 string,hash_260e1581cb8a7a2c,0
@@ -8808,7 +8808,7 @@ string,hash_2c33190105c2ca8b,0
 string,hash_2c3e9e30064c8db6,0
 string,hash_2c454eb3fec22798,0
 string,hash_2c4658872516da90,0
-string,hash_2c62a9364c4c32aa,0
+string,weapon/wraith_fire,0
 string,hash_2cab672fd372f942,0
 string,hash_2d003d6a1240093c,0
 string,hash_2d1e334718300420,0

@@ -407,12 +407,12 @@ function private addammo(slot, package) {
     if (isdefined(package.refillammo) && package.refillammo > 0) {
         self.pers[#"dynamic_loadout"].weapons[slot].ammo = package.refillammo;
     } else {
-        var_5eb7db94 = self.pers[#"dynamic_loadout"].weapons[slot];
-        weapon = getweapon(var_5eb7db94.name, var_5eb7db94.attachments);
+        weapdata = self.pers[#"dynamic_loadout"].weapons[slot];
+        weapon = getweapon(weapdata.name, weapdata.attachments);
         if (!isdefined(weapon.clipsize) || weapon.clipsize <= 0) {
-            var_5eb7db94.ammo = 1;
+            weapdata.ammo = 1;
         } else {
-            var_5eb7db94.ammo = weapon.maxammo / weapon.clipsize + 1;
+            weapdata.ammo = weapon.maxammo / weapon.clipsize + 1;
         }
     }
 }

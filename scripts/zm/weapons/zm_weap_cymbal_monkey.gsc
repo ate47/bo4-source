@@ -131,12 +131,12 @@ function player_handle_cymbal_monkey() {
 function watch_for_dud(actor) {
     self endon(#"death");
     self waittill(#"grenade_dud");
-    self.var_bdd70f6a.dud = 1;
+    self.mdl_monkey.dud = 1;
     self playsound(#"zmb_vox_monkey_scream");
     self.monk_scream_vox = 1;
     wait(3);
-    if (isdefined(self.var_bdd70f6a)) {
-        self.var_bdd70f6a delete();
+    if (isdefined(self.mdl_monkey)) {
+        self.mdl_monkey delete();
     }
     if (isdefined(actor)) {
         actor delete();
@@ -175,8 +175,8 @@ function watch_for_emp(actor) {
     wait(1);
     self detonate();
     wait(1);
-    if (isdefined(self.var_bdd70f6a)) {
-        self.var_bdd70f6a delete();
+    if (isdefined(self.mdl_monkey)) {
+        self.mdl_monkey delete();
     }
     if (isdefined(actor)) {
         actor delete();
@@ -326,15 +326,15 @@ function player_throw_cymbal_monkey(e_grenade, num_attractors, max_attract_dist,
         }
         e_grenade ghost();
         e_grenade.angles = self.angles;
-        e_grenade.var_bdd70f6a = util::spawn_model(e_grenade.model, e_grenade.origin, e_grenade.angles);
-        e_grenade.var_bdd70f6a linkto(e_grenade);
-        e_grenade.var_bdd70f6a thread monkey_cleanup(e_grenade);
-        e_grenade.var_bdd70f6a playsound(#"hash_68402c92c838b7f7");
+        e_grenade.mdl_monkey = util::spawn_model(e_grenade.model, e_grenade.origin, e_grenade.angles);
+        e_grenade.mdl_monkey linkto(e_grenade);
+        e_grenade.mdl_monkey thread monkey_cleanup(e_grenade);
+        e_grenade.mdl_monkey playsound(#"hash_68402c92c838b7f7");
         clone = undefined;
         if (isdefined(level.cymbal_monkey_dual_view) && level.cymbal_monkey_dual_view) {
-            e_grenade.var_bdd70f6a setvisibletoallexceptteam(level.zombie_team);
+            e_grenade.mdl_monkey setvisibletoallexceptteam(level.zombie_team);
             clone = zm_clone::spawn_player_clone(self, vectorscale((0, 0, -1), 999), level.cymbal_monkey_clone_weapon, undefined);
-            e_grenade.var_bdd70f6a.simulacrum = clone;
+            e_grenade.mdl_monkey.simulacrum = clone;
             clone zm_clone::clone_animate("idle");
             clone thread clone_player_angles(self);
             clone notsolid();
@@ -346,7 +346,7 @@ function player_throw_cymbal_monkey(e_grenade, num_attractors, max_attract_dist,
         info.sound_attractors = [];
         e_grenade waittill(#"stationary");
         if (isdefined(level.grenade_planted)) {
-            self thread [[ level.grenade_planted ]](e_grenade, e_grenade.var_bdd70f6a);
+            self thread [[ level.grenade_planted ]](e_grenade, e_grenade.mdl_monkey);
         }
         if (isdefined(e_grenade)) {
             if (isdefined(clone)) {
@@ -358,7 +358,7 @@ function player_throw_cymbal_monkey(e_grenade, num_attractors, max_attract_dist,
                 clone setvisibletoteam(level.zombie_team);
             }
             e_grenade resetmissiledetonationtime();
-            playfxontag(level._effect[#"monkey_glow"], e_grenade.var_bdd70f6a, "tag_weapon");
+            playfxontag(level._effect[#"monkey_glow"], e_grenade.mdl_monkey, "tag_weapon");
             valid_poi = e_grenade is_on_navmesh(self);
             if (valid_poi && isdefined(e_grenade.var_45eaa114) && e_grenade.var_45eaa114) {
                 wait(0.1);
@@ -425,10 +425,10 @@ function function_2f2478f2() {
 // Checksum 0x45de44dd, Offset: 0x18b8
 // Size: 0x2d4
 function grenade_stolen_by_sam(e_grenade, e_actor) {
-    if (!isdefined(e_grenade.var_bdd70f6a)) {
+    if (!isdefined(e_grenade.mdl_monkey)) {
         return;
     }
-    direction = e_grenade.var_bdd70f6a.origin;
+    direction = e_grenade.mdl_monkey.origin;
     direction = (direction[1], direction[0], 0);
     if (direction[1] < 0 || direction[0] > 0 && direction[1] > 0) {
         direction = (direction[0], direction[1] * -1, 0);
@@ -441,12 +441,12 @@ function grenade_stolen_by_sam(e_grenade, e_actor) {
             players[i] playlocalsound(level.zmb_laugh_alias);
         }
     }
-    playfxontag(level._effect[#"grenade_samantha_steal"], e_grenade.var_bdd70f6a, "tag_origin");
-    e_grenade.var_bdd70f6a unlink();
-    e_grenade.var_bdd70f6a movez(60, 1, 0.25, 0.25);
-    e_grenade.var_bdd70f6a vibrate(direction, 1.5, 2.5, 1);
-    e_grenade.var_bdd70f6a waittill(#"movedone");
-    e_grenade.var_bdd70f6a delete();
+    playfxontag(level._effect[#"grenade_samantha_steal"], e_grenade.mdl_monkey, "tag_origin");
+    e_grenade.mdl_monkey unlink();
+    e_grenade.mdl_monkey movez(60, 1, 0.25, 0.25);
+    e_grenade.mdl_monkey vibrate(direction, 1.5, 2.5, 1);
+    e_grenade.mdl_monkey waittill(#"movedone");
+    e_grenade.mdl_monkey delete();
     if (isdefined(e_actor)) {
         e_actor delete();
     }
@@ -525,13 +525,13 @@ function do_monkey_sound(info) {
 // Checksum 0xa65f7a3e, Offset: 0x1e98
 // Size: 0x6c
 function function_875fd1df() {
-    var_bdd70f6a = self.var_bdd70f6a;
-    var_bdd70f6a thread scene::play(#"cin_t8_monkeybomb_dance", var_bdd70f6a);
+    mdl_monkey = self.mdl_monkey;
+    mdl_monkey thread scene::play(#"cin_t8_monkeybomb_dance", mdl_monkey);
     while (isdefined(self)) {
         waitframe(1);
     }
-    if (isdefined(var_bdd70f6a)) {
-        var_bdd70f6a thread scene::stop();
+    if (isdefined(mdl_monkey)) {
+        mdl_monkey thread scene::stop();
     }
 }
 
@@ -657,9 +657,9 @@ function is_on_navmesh(e_player) {
     }
     if (isdefined(v_valid_point)) {
         self.origin = v_valid_point;
-        if (isdefined(self.var_bdd70f6a)) {
-            self.var_bdd70f6a.origin = self.origin;
-            self.var_bdd70f6a clientfield::set("" + #"hash_60a7e5b79e8064a5", 1);
+        if (isdefined(self.mdl_monkey)) {
+            self.mdl_monkey.origin = self.origin;
+            self.mdl_monkey clientfield::set("" + #"hash_60a7e5b79e8064a5", 1);
         }
         self.var_45eaa114 = 1;
         return 1;

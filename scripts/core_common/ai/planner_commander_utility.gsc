@@ -1162,9 +1162,9 @@ function private function_a75b29d8(planner, constants) {
         return 0;
     }
     var_90b56683 = strategiccommandutility::function_f4921cb3(constants[#"focus"]);
-    var_3c288f1b = strategy.("doppelbotsfocus");
+    targetfocus = strategy.("doppelbotsfocus");
     foreach (focus in var_90b56683) {
-        if (var_3c288f1b == focus) {
+        if (targetfocus == focus) {
             return 1;
         }
     }

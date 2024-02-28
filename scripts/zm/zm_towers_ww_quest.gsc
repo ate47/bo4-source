@@ -615,25 +615,25 @@ function function_a616131a(b_skipped) {
     }
     zm_towers_util::function_afd37143(#"hash_28dbb5b91d8a954e");
     var_8fa68ef = struct::get(var_1a472b57.target);
-    var_69450ec5 = util::spawn_model(#"p8_zm_gla_jar_gold_01", var_1a472b57.origin, var_1a472b57.angles);
-    if (!isdefined(var_69450ec5)) {
+    mdl_jar = util::spawn_model(#"p8_zm_gla_jar_gold_01", var_1a472b57.origin, var_1a472b57.angles);
+    if (!isdefined(mdl_jar)) {
         /#
             assert(0, "<unknown string>");
         #/
         return;
     }
-    var_69450ec5 notsolid();
-    var_69450ec5 clientfield::set("" + #"hash_2c6f04d08665dbda", 1);
-    n_time = var_69450ec5 zm_utility::fake_physicslaunch(var_8fa68ef.origin, 1000);
+    mdl_jar notsolid();
+    mdl_jar clientfield::set("" + #"hash_2c6f04d08665dbda", 1);
+    n_time = mdl_jar zm_utility::fake_physicslaunch(var_8fa68ef.origin, 1000);
     wait(n_time);
-    var_69450ec5.origin = var_8fa68ef.origin;
-    var_69450ec5.angles = var_8fa68ef.angles;
-    var_69450ec5 clientfield::set("" + #"hash_2a332df32456c86f", 1);
-    var_69450ec5 clientfield::set("" + #"hash_2c6f04d08665dbda", 0);
+    mdl_jar.origin = var_8fa68ef.origin;
+    mdl_jar.angles = var_8fa68ef.angles;
+    mdl_jar clientfield::set("" + #"hash_2a332df32456c86f", 1);
+    mdl_jar clientfield::set("" + #"hash_2c6f04d08665dbda", 0);
     s_loc = struct::get(var_8fa68ef.target);
-    s_loc.var_6d6bbd67 = var_69450ec5;
+    s_loc.var_6d6bbd67 = mdl_jar;
     e_player = s_loc zm_unitrigger::function_fac87205(&function_5f2a9b69);
-    var_69450ec5 delete();
+    mdl_jar delete();
     level.var_b2b15659 = 1;
     e_player thread zm_vo::function_a2bd5a0c(#"hash_2b2a7c0ea867948e", 0, 0, 9999, 1);
     level.var_b2b15659 = 0;
@@ -656,8 +656,8 @@ function function_5f2a9b69(e_player) {
     if (!isdefined(self) || !isdefined(self.stub) || !isdefined(self.stub.related_parent) || !isdefined(self.stub.related_parent.var_6d6bbd67)) {
         return 0;
     }
-    var_69450ec5 = self.stub.related_parent.var_6d6bbd67;
-    var_5168e40f = e_player zm_utility::is_player_looking_at(var_69450ec5.origin, 0.9, 0);
+    mdl_jar = self.stub.related_parent.var_6d6bbd67;
+    var_5168e40f = e_player zm_utility::is_player_looking_at(mdl_jar.origin, 0.9, 0);
     return var_5168e40f;
 }
 
@@ -729,10 +729,10 @@ function function_4877f171(b_skipped, var_19e802fa) {
     s_jar = struct::get("s_ww_quest_jar_under_tree");
     v_origin = s_jar.origin;
     v_angles = s_jar.angles;
-    var_69450ec5 = util::spawn_model(#"p8_zm_gla_jar_gold_01", v_origin, v_angles);
-    var_f3747cdd = util::spawn_model(#"p8_zm_gla_jar_gold_01_full", v_origin - vectorscale((0, 0, 1), 2048), v_angles);
-    level.var_6d6bbd67 = var_69450ec5;
-    level.var_1028e128 = var_f3747cdd;
+    mdl_jar = util::spawn_model(#"p8_zm_gla_jar_gold_01", v_origin, v_angles);
+    mdl_jar_filled = util::spawn_model(#"p8_zm_gla_jar_gold_01_full", v_origin - vectorscale((0, 0, 1), 2048), v_angles);
+    level.var_6d6bbd67 = mdl_jar;
+    level.var_1028e128 = mdl_jar_filled;
     level zm_ui_inventory::function_7df6bb60(#"hash_d3e328bb2670edf", 0);
 }
 
@@ -806,12 +806,12 @@ function function_868dcb6d(b_skipped, var_19e802fa) {
 // Checksum 0xbbc68994, Offset: 0x37c8
 // Size: 0x398
 function function_869d271a(b_skipped) {
-    var_6c9a8875 = array("tower_a_chest", "tower_b_chest", "tower_c_chest", "tower_d_chest", "tower_a_lower_chest", "tower_b_lower_chest", "tower_c_lower_chest", "tower_d_lower_chest", "danu_zeus_tunnel_chest", "ra_odin_tunnel_chest");
+    a_str_chests = array("tower_a_chest", "tower_b_chest", "tower_c_chest", "tower_d_chest", "tower_a_lower_chest", "tower_b_lower_chest", "tower_c_lower_chest", "tower_d_lower_chest", "danu_zeus_tunnel_chest", "ra_odin_tunnel_chest");
     level.var_13fc0c88 = [];
     level.var_b7ef852e = [];
-    foreach (var_79ed50b4 in var_6c9a8875) {
-        e_chest = getent(var_79ed50b4, "targetname");
-        s_chest = struct::get(var_79ed50b4, "script_noteworthy");
+    foreach (str_chest in a_str_chests) {
+        e_chest = getent(str_chest, "targetname");
+        s_chest = struct::get(str_chest, "script_noteworthy");
         if (!isdefined(level.var_13fc0c88)) {
             level.var_13fc0c88 = [];
         } else if (!isarray(level.var_13fc0c88)) {

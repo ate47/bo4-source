@@ -302,7 +302,7 @@ function function_5439aa67() {
     self endon(#"death", #"revived");
     while (isdefined(self)) {
         if (self function_cf8de58d()) {
-            self dodamage(10000, self.origin, undefined, undefined, undefined, "MOD_UNKNOWN", 0, level.var_1b72f911);
+            self dodamage(10000, self.origin, undefined, undefined, undefined, "MOD_UNKNOWN", 0, level.shockrifleweapon);
             return;
         }
         waitframe(1);

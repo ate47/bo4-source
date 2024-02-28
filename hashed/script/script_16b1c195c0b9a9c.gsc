@@ -111,9 +111,9 @@ function private function_3ecc52d9(var_d3547bb1, lanenum) {
     }
     tpoint = getclosesttacpoint(self.origin);
     if (!isdefined(tpoint)) {
-        var_9f855ac9 = getclosestpointonnavmesh(self.origin, 600);
-        if (isdefined(var_9f855ac9)) {
-            tpoint = getclosesttacpoint(var_9f855ac9);
+        navpos = getclosestpointonnavmesh(self.origin, 600);
+        if (isdefined(navpos)) {
+            tpoint = getclosesttacpoint(navpos);
         }
     }
     if (isdefined(tpoint)) {

@@ -1,7 +1,7 @@
 {
     "name": "#hash_6cc3b5ee3f207460",
     "baseWeapon": "#hash_2b28c65b29371ab0",
-    "displayname": "#hash_594ac1358a794207",
+    "displayname": "#weapon/baseweapon",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

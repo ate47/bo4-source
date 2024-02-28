@@ -538,7 +538,7 @@ function add_zombie_powerup(powerup_name, model_name, hint, func_should_drop_wit
     struct.only_affects_grabber = only_affects_grabber;
     struct.any_team = any_team;
     struct.zombie_grabbable = zombie_grabbable;
-    struct.hash_id = function_129f6487(powerup_name);
+    struct.hash_id = stathash(powerup_name);
     struct.player_specific = player_specific;
     struct.can_pick_up_in_last_stand = 1;
     if (isdefined(fx)) {

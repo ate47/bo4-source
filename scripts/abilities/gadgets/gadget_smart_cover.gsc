@@ -37,7 +37,7 @@ function init_shared() {
     }
     level.smartcoversettings.var_ac3f76c7 = "smart_cover_objective_full";
     level.smartcoversettings.var_546a220c = "smart_cover_objective_open";
-    level.smartcoversettings.var_8d86ade8 = getweapon("ability_smart_cover");
+    level.smartcoversettings.smartcoverweapon = getweapon("ability_smart_cover");
     level.smartcoversettings.var_4115bb3a = getweapon(#"hash_34575452eba07c65");
     level.smartcoversettings.var_d6a27a84 = [];
     setupdvars();
@@ -45,12 +45,12 @@ function init_shared() {
     weaponobjects::function_e6400478(#"ability_smart_cover", &function_21e722f6, 1);
     callback::on_spawned(&on_player_spawned);
     level.smartcoversettings.var_f115c746 = [];
-    deployable::register_deployable(level.smartcoversettings.var_8d86ade8, &function_b7f5b1cc, &function_a47ce1c2, undefined, undefined, 1);
+    deployable::register_deployable(level.smartcoversettings.smartcoverweapon, &function_b7f5b1cc, &function_a47ce1c2, undefined, undefined, 1);
     level.smartcoversettings.var_357db326 = 10000;
     level.smartcoversettings.var_ff1a491d = level.smartcoversettings.bundle.var_76d79155 * level.smartcoversettings.bundle.var_76d79155;
     if (!sessionmodeiswarzonegame()) {
-        globallogic_score::register_kill_callback(level.smartcoversettings.var_8d86ade8, &function_92112113);
-        globallogic_score::function_86f90713(level.smartcoversettings.var_8d86ade8, &function_92112113);
+        globallogic_score::register_kill_callback(level.smartcoversettings.smartcoverweapon, &function_92112113);
+        globallogic_score::function_86f90713(level.smartcoversettings.smartcoverweapon, &function_92112113);
     }
     clientfield::register("clientuimodel", "hudItems.smartCoverState", 1, 1, "int");
     clientfield::register("scriptmover", "smartcover_placed", 1, 5, "float");
@@ -71,10 +71,10 @@ function init_shared() {
 // Size: 0x80
 function function_1c601b99() {
     if (isdefined(level.var_1b900c1d)) {
-        [[ level.var_1b900c1d ]](level.smartcoversettings.var_8d86ade8, &function_bff5c062);
+        [[ level.var_1b900c1d ]](level.smartcoversettings.smartcoverweapon, &function_bff5c062);
     }
     if (isdefined(level.var_a5dacbea)) {
-        [[ level.var_a5dacbea ]](level.smartcoversettings.var_8d86ade8, &function_127fb8f3);
+        [[ level.var_a5dacbea ]](level.smartcoversettings.smartcoverweapon, &function_127fb8f3);
     }
 }
 
@@ -140,13 +140,13 @@ function function_bff5c062(smartcover, attackingplayer) {
 // Checksum 0x1d5114c0, Offset: 0xd20
 // Size: 0x1e0
 function on_end_game() {
-    if (!isdefined(level.smartcoversettings) || !isdefined(level.smartcoversettings.var_8d86ade8)) {
+    if (!isdefined(level.smartcoversettings) || !isdefined(level.smartcoversettings.smartcoverweapon)) {
         return;
     }
     foreach (player in level.players) {
-        var_9d063af9 = player gadgetgetslot(level.smartcoversettings.var_8d86ade8);
-        player gadgetdeactivate(var_9d063af9, level.smartcoversettings.var_8d86ade8);
-        player function_48e08b4(var_9d063af9, level.smartcoversettings.var_8d86ade8);
+        var_9d063af9 = player gadgetgetslot(level.smartcoversettings.smartcoverweapon);
+        player gadgetdeactivate(var_9d063af9, level.smartcoversettings.smartcoverweapon);
+        player function_48e08b4(var_9d063af9, level.smartcoversettings.smartcoverweapon);
     }
     if (!isdefined(level.smartcoversettings.var_f115c746)) {
         return;
@@ -274,14 +274,14 @@ function function_7ecb04ff(player) {
             waitframe(1);
             continue;
         }
-        if (!player hasweapon(level.smartcoversettings.var_8d86ade8)) {
+        if (!player hasweapon(level.smartcoversettings.smartcoverweapon)) {
             return;
         }
-        var_9d063af9 = player gadgetgetslot(level.smartcoversettings.var_8d86ade8);
+        var_9d063af9 = player gadgetgetslot(level.smartcoversettings.smartcoverweapon);
         if (!isdefined(var_9d063af9) || var_9d063af9 == -1) {
             continue;
         }
-        ammocount = player getammocount(level.smartcoversettings.var_8d86ade8);
+        ammocount = player getammocount(level.smartcoversettings.smartcoverweapon);
         gadgetpower = player gadgetpowerget(var_9d063af9);
         if (gadgetpower >= 100 || ammocount > 0) {
             player clientfield::set_player_uimodel("huditems.abilityHoldToActivate", 0);
@@ -320,7 +320,7 @@ function on_player_spawned() {
         self.smartcover.var_19e1ea69 = [];
         self.smartcover.var_d5258d02 = [];
     }
-    if (!self hasweapon(level.smartcoversettings.var_8d86ade8) && self.smartcover.var_58e8b64d.size > 0) {
+    if (!self hasweapon(level.smartcoversettings.smartcoverweapon) && self.smartcover.var_58e8b64d.size > 0) {
         self function_b11be5dc();
     }
     self clientfield::set_player_uimodel("huditems.abilityDelayProgress", 0);
@@ -344,7 +344,7 @@ function function_b7f5b1cc(origin, angles, player) {
 // Checksum 0xd41617d1, Offset: 0x1b58
 // Size: 0x1f0
 function function_a47ce1c2(player) {
-    var_b43e8dc2 = player function_287dcf4b(level.smartcoversettings.bundle.var_63aab046, level.smartcoversettings.bundle.maxwidth, 1, 1, level.smartcoversettings.var_8d86ade8);
+    var_b43e8dc2 = player function_287dcf4b(level.smartcoversettings.bundle.var_63aab046, level.smartcoversettings.bundle.maxwidth, 1, 1, level.smartcoversettings.smartcoverweapon);
     player.smartcover.lastvalid = var_b43e8dc2;
     var_9e596670 = 0;
     if (isdefined(var_b43e8dc2) && isdefined(var_b43e8dc2.origin)) {
@@ -419,7 +419,7 @@ function function_3b96637(watcher, owner) {
     self.canthack = 1;
     self hide();
     if (!isdefined(player.smartcover.lastvalid) || !player.smartcover.lastvalid.isvalid) {
-        player deployable::function_416f03e6(level.smartcoversettings.var_8d86ade8);
+        player deployable::function_416f03e6(level.smartcoversettings.smartcoverweapon);
         return;
     }
     profilestart();
@@ -445,8 +445,8 @@ function function_3b96637(watcher, owner) {
     }
     var_bf2bf1a.var_40bfd9cf = var_bf2bf1a influencers::create_entity_enemy_influencer("turret_close", owner.team);
     var_bf2bf1a util::make_sentient();
-    if (isdefined(level.smartcoversettings.var_8d86ade8.var_414fa79e)) {
-        player playrumbleonentity(level.smartcoversettings.var_8d86ade8.var_414fa79e);
+    if (isdefined(level.smartcoversettings.smartcoverweapon.var_414fa79e)) {
+        player playrumbleonentity(level.smartcoversettings.smartcoverweapon.var_414fa79e);
     }
     thread function_7ecb04ff(player);
     var_bf2bf1a thread function_670cd4a3();
@@ -678,13 +678,13 @@ function function_d2368084(einflictor, eattacker, idamage, idflags, smeansofdeat
 function function_20be77a3(smartcover) {
     smartcover.var_eda9690f = [];
     forwardangles = anglestoforward(smartcover.angles);
-    var_2358ae9 = anglestoright(smartcover.angles);
+    rightangles = anglestoright(smartcover.angles);
     var_526ec5aa = smartcover.origin + (0, 0, 1) * getdvarfloat(#"hash_4d17057924212aa9", 1);
     smartcover.var_eda9690f[smartcover.var_eda9690f.size] = var_526ec5aa + forwardangles * getdvarfloat(#"hash_477cc29b988c0b75", 1);
     smartcover.var_eda9690f[smartcover.var_eda9690f.size] = smartcover.var_eda9690f[0] + (0, 0, 1) * getdvarfloat(#"hash_41cfd0e34c53ef02", 1);
     backpoint = var_526ec5aa + forwardangles * getdvarfloat(#"hash_7f893c50ae5356c8", 1);
-    smartcover.var_eda9690f[smartcover.var_eda9690f.size] = backpoint + var_2358ae9 * getdvarfloat(#"hash_70ce44b2b0b4005", 1);
-    smartcover.var_eda9690f[smartcover.var_eda9690f.size] = backpoint - var_2358ae9 * getdvarfloat(#"hash_70ce44b2b0b4005", 1);
+    smartcover.var_eda9690f[smartcover.var_eda9690f.size] = backpoint + rightangles * getdvarfloat(#"hash_70ce44b2b0b4005", 1);
+    smartcover.var_eda9690f[smartcover.var_eda9690f.size] = backpoint - rightangles * getdvarfloat(#"hash_70ce44b2b0b4005", 1);
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -716,7 +716,7 @@ function createsmartcover(watcher, var_5ebbec19, origin, angles, var_796be15d) {
     }
     var_89b6fd44 setteam(player getteam());
     var_89b6fd44.var_86a21346 = &function_d2368084;
-    var_89b6fd44.weapon = level.smartcoversettings.var_8d86ade8;
+    var_89b6fd44.weapon = level.smartcoversettings.smartcoverweapon;
     var_89b6fd44 setweapon(var_89b6fd44.weapon);
     array::add(player.smartcover.var_58e8b64d, var_89b6fd44);
     var_c892a9a = var_796be15d ? level.smartcoversettings.var_546a220c : level.smartcoversettings.var_ac3f76c7;
@@ -726,7 +726,7 @@ function createsmartcover(watcher, var_5ebbec19, origin, angles, var_796be15d) {
         function_da7940a3(var_89b6fd44.objectiveid, 1);
         objective_setteam(var_89b6fd44.objectiveid, player.team);
     }
-    var_9d063af9 = player gadgetgetslot(level.smartcoversettings.var_8d86ade8);
+    var_9d063af9 = player gadgetgetslot(level.smartcoversettings.smartcoverweapon);
     if (!sessionmodeiswarzonegame()) {
         self gadgetpowerset(var_9d063af9, 0);
     }
@@ -738,7 +738,7 @@ function createsmartcover(watcher, var_5ebbec19, origin, angles, var_796be15d) {
     var_89b6fd44 thread ondamage();
     var_89b6fd44 thread function_37f1dcd1();
     thread function_18dd6b22(var_89b6fd44);
-    player deployable::function_6ec9ee30(var_89b6fd44, level.smartcoversettings.var_8d86ade8);
+    player deployable::function_6ec9ee30(var_89b6fd44, level.smartcoversettings.smartcoverweapon);
     var_89b6fd44.victimsoundmod = "vehicle";
     if (isdefined(level.smartcoversettings.bundle.var_f4e0e7d7) && level.smartcoversettings.bundle.var_f4e0e7d7) {
         var_89b6fd44 thread startmicrowave();
@@ -873,7 +873,7 @@ function function_92112113(attacker, victim, weapon, attackerweapon, meansofdeat
         if (smartcover.owner == attacker) {
             return 1;
         } else {
-            scoreevents::processscoreevent(#"deployable_cover_assist", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
+            scoreevents::processscoreevent(#"deployable_cover_assist", var_71eedb0b, victim, level.smartcoversettings.smartcoverweapon);
         }
     }
     return 0;
@@ -1120,7 +1120,7 @@ function microwaveentity(entity) {
             wait(randomfloatrange(0.1, 0.3));
             entity.microwavedamageinitialdelay = undefined;
         }
-        entity thread status_effect::status_effect_apply(var_2b29cf8c, level.smartcoversettings.var_8d86ade8, self, 0);
+        entity thread status_effect::status_effect_apply(var_2b29cf8c, level.smartcoversettings.smartcoverweapon, self, 0);
         entity.microwaveeffect++;
         entity.lastmicrowavedby = turret.owner;
         time = gettime();
@@ -1130,7 +1130,7 @@ function microwaveentity(entity) {
                 if (entity.microwaveeffect % 2 == 1) {
                     entity viewkick(int(25 * viewkickscalar), turret.origin);
                     entity.microwaveshellshockandviewkicktime = time;
-                    entity thread status_effect::status_effect_apply(var_756fda07, level.smartcoversettings.var_8d86ade8, self, 0);
+                    entity thread status_effect::status_effect_apply(var_756fda07, level.smartcoversettings.smartcoverweapon, self, 0);
                     var_83cd8106 = level.smartcoversettings.bundle.var_5223868e;
                     if (isdefined(var_83cd8106)) {
                         entity playrumbleonentity(var_83cd8106);
@@ -1143,7 +1143,7 @@ function microwaveentity(entity) {
             }
             turret.playersdamaged[entity.clientid] = 1;
             if (!(isdefined(level.smartcoversettings.bundle.var_74dcfa31) ? level.smartcoversettings.bundle.var_74dcfa31 : 0) && entity.microwaveeffect % 3 == 2) {
-                scoreevents::processscoreevent(#"hpm_suppress", turret.owner, entity, level.smartcoversettings.var_8d86ade8, turret.playersdamaged.size);
+                scoreevents::processscoreevent(#"hpm_suppress", turret.owner, entity, level.smartcoversettings.smartcoverweapon, turret.playersdamaged.size);
             }
         }
         wait(0.5);

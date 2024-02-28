@@ -1012,22 +1012,22 @@ function function_e313ef46(str_notify) {
 // Checksum 0x17b240a7, Offset: 0x4498
 // Size: 0x344
 function function_9537d6cb(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
-    e_attacker.var_9a1f1865 = spawn("script_model", v_origin);
-    var_9a1f1865 = e_attacker.var_9a1f1865;
-    if (!isdefined(var_9a1f1865) || !isdefined(e_attacker)) {
+    e_attacker.e_tornado = spawn("script_model", v_origin);
+    e_tornado = e_attacker.e_tornado;
+    if (!isdefined(e_tornado) || !isdefined(e_attacker)) {
         level.var_2ec91d6e[var_a257f75d] = -1;
         return;
     }
-    var_9a1f1865 clientfield::set("" + #"hash_12b19992ccb300e7", 1);
-    var_9a1f1865.targetname = "spin_cycle_entity";
-    var_9a1f1865.var_9f00aa3b = [];
-    var_9a1f1865.var_9f00aa3b[0] = 0;
-    var_9a1f1865.var_9f00aa3b[1] = 0;
-    var_9a1f1865.var_9f00aa3b[2] = 0;
-    var_9a1f1865.var_9f00aa3b[3] = 0;
+    e_tornado clientfield::set("" + #"hash_12b19992ccb300e7", 1);
+    e_tornado.targetname = "spin_cycle_entity";
+    e_tornado.var_9f00aa3b = [];
+    e_tornado.var_9f00aa3b[0] = 0;
+    e_tornado.var_9f00aa3b[1] = 0;
+    e_tornado.var_9f00aa3b[2] = 0;
+    e_tornado.var_9f00aa3b[3] = 0;
     e_attacker.e_trigger = spawn("trigger_radius", v_origin, 512 | 1, 96, 96);
     e_trigger = e_attacker.e_trigger;
-    e_trigger thread function_b3d8a8c4(v_origin, e_attacker, var_9a1f1865);
+    e_trigger thread function_b3d8a8c4(v_origin, e_attacker, e_tornado);
     /#
         if (getdvarint(#"hash_e2e03328b366e75", 0)) {
             e_trigger thread function_45b0dfc6(v_origin, "<unknown string>", "<unknown string>");
@@ -1041,8 +1041,8 @@ function function_9537d6cb(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
     }
     e_trigger notify(#"end_spin_cycle");
     e_trigger delete();
-    var_9a1f1865 notify(#"end_spin_cycle");
-    var_9a1f1865 clientfield::set("" + #"hash_12b19992ccb300e7", 0);
+    e_tornado notify(#"end_spin_cycle");
+    e_tornado clientfield::set("" + #"hash_12b19992ccb300e7", 0);
     if (level.var_2ec91d6e[var_a257f75d] == 1) {
         if (isdefined(e_attacker)) {
             if (!e_attacker flag::get("flag_player_clear_charged_shot")) {
@@ -1053,19 +1053,19 @@ function function_9537d6cb(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
         }
     }
     wait(2);
-    var_9a1f1865 delete();
+    e_tornado delete();
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
 // Params 3, eflags: 0x1 linked
 // Checksum 0x90d5d86e, Offset: 0x47e8
 // Size: 0xc0
-function function_b3d8a8c4(v_origin, e_attacker, var_9a1f1865) {
-    var_9a1f1865 endon(#"end_spin_cycle");
-    self thread function_f8679f8d(1, &function_e5e6e403, e_attacker, var_9a1f1865);
+function function_b3d8a8c4(v_origin, e_attacker, e_tornado) {
+    e_tornado endon(#"end_spin_cycle");
+    self thread function_f8679f8d(1, &function_e5e6e403, e_attacker, e_tornado);
     while (1) {
         self waittill(#"touch");
-        self function_f8679f8d(1, &function_e5e6e403, e_attacker, var_9a1f1865);
+        self function_f8679f8d(1, &function_e5e6e403, e_attacker, e_tornado);
         wait(0.5);
     }
 }
@@ -1079,8 +1079,8 @@ function function_e5e6e403(...) {
         return;
     }
     e_attacker = vararg[0][0];
-    var_9a1f1865 = vararg[0][1];
-    var_9a1f1865 endon(#"death");
+    e_tornado = vararg[0][1];
+    e_tornado endon(#"death");
     self endon(#"death");
     if (!zm_transform::function_5db4f2f5(self)) {
         return;
@@ -1100,7 +1100,7 @@ function function_e5e6e403(...) {
         case #"zombie":
         case #"nosferatu":
             self thread function_ba22c7e1();
-            self thread function_6476c708(e_attacker, var_9a1f1865);
+            self thread function_6476c708(e_attacker, e_tornado);
             self thread function_a7fcc7db();
             self val::set(#"ww_ignoreme", "ignoreme", 1);
             self val::set(#"ww_ignorall", "ignoreall", 1);
@@ -1108,8 +1108,8 @@ function function_e5e6e403(...) {
             wait(2);
             self.var_4a4430c5 = undefined;
             for (i = 0; i < 4; i++) {
-                if (!var_9a1f1865.var_9f00aa3b[i]) {
-                    var_9a1f1865.var_9f00aa3b[i] = 1;
+                if (!e_tornado.var_9f00aa3b[i]) {
+                    e_tornado.var_9f00aa3b[i] = 1;
                     self.var_4a4430c5 = i;
                     break;
                 }
@@ -1117,7 +1117,7 @@ function function_e5e6e403(...) {
             if (isdefined(self.var_4a4430c5)) {
                 self util::delay(randomfloatrange(0.5, 1.5), "death", &function_c5eccfa2);
                 wait(randomfloatrange(3, 5));
-                var_9a1f1865.var_9f00aa3b[self.var_4a4430c5] = 0;
+                e_tornado.var_9f00aa3b[self.var_4a4430c5] = 0;
             }
             wait(0.5);
             self thread function_3ebc5d0c(e_attacker);
@@ -1176,10 +1176,10 @@ function function_c5eccfa2() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x284d2be2, Offset: 0x4e98
 // Size: 0x94
-function function_6476c708(e_attacker, var_9a1f1865) {
+function function_6476c708(e_attacker, e_tornado) {
     self endon(#"death");
     s_waitresult = undefined;
-    s_waitresult = var_9a1f1865 waittill(#"end_spin_cycle", #"death");
+    s_waitresult = e_tornado waittill(#"end_spin_cycle", #"death");
     if (s_waitresult._notify === "end_spin_cycle") {
         wait(0.5);
     }

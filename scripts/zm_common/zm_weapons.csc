@@ -32,7 +32,7 @@ function __init__() {
     callback::on_localclient_connect(&on_player_connect);
     level.weaponnone = getweapon(#"none");
     level.weaponnull = getweapon(#"weapon_null");
-    level.var_78032351 = getweapon(#"defaultweapon");
+    level.weapondefault = getweapon(#"defaultweapon");
     level.weaponbasemelee = getweapon(#"knife");
     if (!isdefined(level.zombie_weapons_upgraded)) {
         level.zombie_weapons_upgraded = [];

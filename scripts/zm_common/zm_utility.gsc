@@ -144,12 +144,12 @@ function is_grief() {
 // Params 6, eflags: 0x1 linked
 // Checksum 0xa99d7c79, Offset: 0xa40
 // Size: 0xfa
-function function_d6046228(var_67441581, var_756ee4e5, var_bcb9de3e, var_299ea954, var_787a5e25, var_1e31f083) {
+function function_d6046228(var_67441581, var_756ee4e5, var_bcb9de3e, var_299ea954, str_trials, var_1e31f083) {
     if (is_trials()) {
         if (function_8b1a219a() && isdefined(var_1e31f083)) {
             return var_1e31f083;
-        } else if (isdefined(var_787a5e25)) {
-            return var_787a5e25;
+        } else if (isdefined(str_trials)) {
+            return str_trials;
         }
     } else if (is_standard()) {
         if (function_8b1a219a() && isdefined(var_299ea954)) {
@@ -4229,8 +4229,8 @@ function function_372a1e12() {
 // Size: 0xc0
 function function_d7db256e(var_eaf129a0, var_6cc77d4e, var_888cf948 = 1, var_b96be97f = undefined) {
     if (isdefined(var_6cc77d4e)) {
-        var_1b808f25 = struct::get(var_eaf129a0);
-        n_obj_id = function_f5a222a8(var_6cc77d4e, var_1b808f25.origin, var_b96be97f);
+        s_objective_loc = struct::get(var_eaf129a0);
+        n_obj_id = function_f5a222a8(var_6cc77d4e, s_objective_loc.origin, var_b96be97f);
     }
     if (var_888cf948) {
         level thread function_75fd65f9(var_eaf129a0, 1);
@@ -4349,22 +4349,22 @@ function function_75fd65f9(str_targetname, b_enable = 1) {
 // Checksum 0x850bfd20, Offset: 0xdc38
 // Size: 0x178
 function function_ebb2f490() {
-    var_400c259d = self getweaponslistprimaries();
+    a_w_list = self getweaponslistprimaries();
     var_dc69b88b = [];
-    foreach (var_5d22227d in var_400c259d) {
+    foreach (w_list_weapon in a_w_list) {
         if (!isdefined(var_dc69b88b)) {
             var_dc69b88b = [];
         } else if (!isarray(var_dc69b88b)) {
             var_dc69b88b = array(var_dc69b88b);
         }
-        var_dc69b88b[var_dc69b88b.size] = zm_weapons::function_93cd8e76(var_5d22227d);
-        if (var_5d22227d.splitweapon != level.weaponnone) {
+        var_dc69b88b[var_dc69b88b.size] = zm_weapons::function_93cd8e76(w_list_weapon);
+        if (w_list_weapon.splitweapon != level.weaponnone) {
             if (!isdefined(var_dc69b88b)) {
                 var_dc69b88b = [];
             } else if (!isarray(var_dc69b88b)) {
                 var_dc69b88b = array(var_dc69b88b);
             }
-            var_dc69b88b[var_dc69b88b.size] = zm_weapons::function_93cd8e76(var_5d22227d.splitweapon);
+            var_dc69b88b[var_dc69b88b.size] = zm_weapons::function_93cd8e76(w_list_weapon.splitweapon);
         }
     }
     return var_dc69b88b;

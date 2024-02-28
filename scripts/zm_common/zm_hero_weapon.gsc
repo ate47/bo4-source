@@ -417,7 +417,7 @@ function function_1297aefe(weapon) {
     i = 0;
     var_8e233987 = [];
     do {
-        weapon_name = self stats::get_stat(#"hash_3da32e638bd332a5", i);
+        weapon_name = self stats::get_stat(#"heroweaponsmaxed", i);
         if (isdefined(weapon_name) && weapon_name) {
             if (!isdefined(var_8e233987)) {
                 var_8e233987 = [];
@@ -440,7 +440,7 @@ function function_1297aefe(weapon) {
                 var_8e233987 = array(var_8e233987);
             }
             var_8e233987[var_8e233987.size] = weapon.name;
-            stats::set_stat(#"hash_3da32e638bd332a5", i, weapon.name);
+            stats::set_stat(#"heroweaponsmaxed", i, weapon.name);
         }
     }
     var_a3cdb465 = array::exclude(var_328c1d6e, var_8e233987);

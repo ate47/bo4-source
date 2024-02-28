@@ -85,9 +85,9 @@ function private function_9e0e99e1() {
                         self unlockweapon(weapon.dualwieldweapon);
                     }
                 } else {
-                    self function_28602a03(weapon);
+                    self lockweapon(weapon);
                     if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
-                        self function_28602a03(weapon.dualwieldweapon, 1, 1);
+                        self lockweapon(weapon.dualwieldweapon, 1, 1);
                     }
                 }
             }
@@ -114,9 +114,9 @@ function private function_33f0ddd3(s_event) {
                         self unlockweapon(weapon.dualwieldweapon);
                     }
                 } else {
-                    self function_28602a03(weapon);
+                    self lockweapon(weapon);
                     if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
-                        self function_28602a03(weapon.dualwieldweapon, 1, 1);
+                        self lockweapon(weapon.dualwieldweapon, 1, 1);
                     }
                 }
             }

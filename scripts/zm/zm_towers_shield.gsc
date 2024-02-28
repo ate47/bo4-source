@@ -52,19 +52,19 @@ function __init__() {
     clientfield::register("scriptmover", "" + #"hash_333e3741e6552db3", 1, 1, "int");
     level._effect[#"hash_3ecc995bb97331ac"] = #"hash_266633b36a852fd5";
     level.var_c9d375dc = spawnstruct();
-    level.var_c9d375dc.firestorm_weapon = getweapon(#"hash_237b6756a81881cb");
+    level.var_c9d375dc.firestorm_weapon = getweapon(#"zhield_zword_turret");
     level.var_c9d375dc.melee_weapon = getweapon(#"zhield_zword_dw");
-    level.var_c9d375dc.var_e9ffbbed = getweapon(#"hash_2f351450f2e936dc");
-    level.var_c9d375dc.var_2039b8da = getweapon(#"zhield_zword_dw_upgraded");
-    level.var_70f7eb75 = level.var_c9d375dc.var_2039b8da;
+    level.var_c9d375dc.firestorm_weapon_upgraded = getweapon(#"zhield_zword_turret_upgraded");
+    level.var_c9d375dc.melee_weapon_upgraded = getweapon(#"zhield_zword_dw_upgraded");
+    level.var_70f7eb75 = level.var_c9d375dc.melee_weapon_upgraded;
     callback::on_connect(&player_init);
     level.riotshield_melee = &function_fbe77fa4;
     callback::add_weapon_fired(level.var_c9d375dc.firestorm_weapon, &function_618e1db4);
-    callback::add_weapon_fired(level.var_c9d375dc.var_e9ffbbed, &function_618e1db4);
+    callback::add_weapon_fired(level.var_c9d375dc.firestorm_weapon_upgraded, &function_618e1db4);
     callback::on_ai_killed(&function_f3137e13);
     zm::register_zombie_damage_override_callback(&function_2a9a30bb);
     zm::register_zombie_damage_override_callback(&function_3c6df289);
-    namespace_9ff9f642::register_burn(#"hash_237b6756a81881cb", 100, 5);
+    namespace_9ff9f642::register_burn(#"zhield_zword_turret", 100, 5);
     if (zm_custom::function_901b751c(#"hash_3c5363541b97ca3e")) {
         level thread function_646d73c3();
         level.var_f7d93c4e = &function_22d79d55;
@@ -78,18 +78,18 @@ function __init__() {
 // Size: 0xee
 function function_65a59ce0(w_current, var_5738ae72 = 0) {
     if (var_5738ae72) {
-        if (w_current == level.var_c9d375dc.var_2039b8da) {
+        if (w_current == level.var_c9d375dc.melee_weapon_upgraded) {
             return 1;
         }
-        if (w_current == level.var_c9d375dc.var_e9ffbbed) {
+        if (w_current == level.var_c9d375dc.firestorm_weapon_upgraded) {
             return 1;
         }
         return 0;
     }
-    if (w_current == level.var_c9d375dc.melee_weapon || w_current == level.var_c9d375dc.var_2039b8da) {
+    if (w_current == level.var_c9d375dc.melee_weapon || w_current == level.var_c9d375dc.melee_weapon_upgraded) {
         return 1;
     }
-    if (w_current == level.var_c9d375dc.firestorm_weapon || w_current == level.var_c9d375dc.var_e9ffbbed) {
+    if (w_current == level.var_c9d375dc.firestorm_weapon || w_current == level.var_c9d375dc.firestorm_weapon_upgraded) {
         return 1;
     }
     return 0;
@@ -101,12 +101,12 @@ function function_65a59ce0(w_current, var_5738ae72 = 0) {
 // Size: 0x8e
 function function_ed81d8f5(w_current, var_5738ae72 = 0) {
     if (var_5738ae72) {
-        if (w_current == level.var_c9d375dc.var_2039b8da) {
+        if (w_current == level.var_c9d375dc.melee_weapon_upgraded) {
             return 1;
         }
         return 0;
     }
-    if (w_current == level.var_c9d375dc.melee_weapon || w_current == level.var_c9d375dc.var_2039b8da) {
+    if (w_current == level.var_c9d375dc.melee_weapon || w_current == level.var_c9d375dc.melee_weapon_upgraded) {
         return 1;
     }
     return 0;
@@ -118,12 +118,12 @@ function function_ed81d8f5(w_current, var_5738ae72 = 0) {
 // Size: 0x8e
 function function_a57b8fca(w_current, var_5738ae72 = 0) {
     if (var_5738ae72) {
-        if (w_current == level.var_c9d375dc.var_e9ffbbed) {
+        if (w_current == level.var_c9d375dc.firestorm_weapon_upgraded) {
             return 1;
         }
         return 0;
     }
-    if (w_current == level.var_c9d375dc.firestorm_weapon || w_current == level.var_c9d375dc.var_e9ffbbed) {
+    if (w_current == level.var_c9d375dc.firestorm_weapon || w_current == level.var_c9d375dc.firestorm_weapon_upgraded) {
         return 1;
     }
     return 0;
@@ -148,14 +148,14 @@ function player_init() {
 // Checksum 0x27635b5f, Offset: 0xb90
 // Size: 0x2c0
 function function_28f576a9(player) {
-    var_710873d9 = getweapon(#"zhield_zword_dw_upgraded");
-    if (!player hasweapon(var_710873d9) && isdefined(player.var_5ba94c1e) && player.var_5ba94c1e) {
+    w_shield_upgraded = getweapon(#"zhield_zword_dw_upgraded");
+    if (!player hasweapon(w_shield_upgraded) && isdefined(player.var_5ba94c1e) && player.var_5ba94c1e) {
         self.hint_string = zm_utility::function_d6046228(#"hash_33e05a25f080d845", #"hash_c69465e0b5ec27b");
         self.cost = self zm_crafting::function_ceac3bf9(player);
-    } else if (!player hasweapon(var_710873d9) && player flag::get(#"hash_4246a36eeaccdedb") && player flag::get(#"hash_1e11ea0627c40424") && player flag::get(#"hash_15ea02b45ed633fa")) {
+    } else if (!player hasweapon(w_shield_upgraded) && player flag::get(#"hash_4246a36eeaccdedb") && player flag::get(#"hash_1e11ea0627c40424") && player flag::get(#"hash_15ea02b45ed633fa")) {
         self.hint_string = zm_utility::function_d6046228(#"hash_4c3385a49cb47a2c", #"hash_7f0c14b967f871a0");
         self.cost = undefined;
-    } else if (player hasweapon(var_710873d9)) {
+    } else if (player hasweapon(w_shield_upgraded)) {
         if (isdefined(self.blueprint.var_54a97edd.isriotshield) && self.blueprint.var_54a97edd.isriotshield && isdefined(player.player_shield_reset_health) && isdefined(player.var_d3345483) && player.var_d3345483) {
             self.cost = self zm_crafting::function_ceac3bf9(player, 1);
             self.hint_string = zm_utility::function_d6046228(#"hash_4b00caebf5058f14", #"hash_5db3ede8aef13738");
@@ -177,7 +177,7 @@ function function_22d79d55(player) {
         return 1;
     }
     w_shield = getweapon(#"zhield_zword_dw");
-    var_710873d9 = getweapon(#"zhield_zword_dw_upgraded");
+    w_shield_upgraded = getweapon(#"zhield_zword_dw_upgraded");
     if (player != self.parent_player) {
         return 0;
     }
@@ -187,23 +187,23 @@ function function_22d79d55(player) {
     }
     if (player hasweapon(w_shield)) {
         player zm_weapons::weapon_take(w_shield);
-        player zm_weapons::weapon_give(var_710873d9);
-        player.weaponriotshield = var_710873d9;
+        player zm_weapons::weapon_give(w_shield_upgraded);
+        player.weaponriotshield = w_shield_upgraded;
         player.var_5ba94c1e = 1;
-        var_e9e88745 = getent(self.target, "targetname");
-        var_e9e88745 setinvisibletoplayer(player);
+        mdl_shield = getent(self.target, "targetname");
+        mdl_shield setinvisibletoplayer(player);
         if (!isdefined(self.var_824b5a74)) {
             self.var_824b5a74 = [];
         }
         n_ent_num = player getentitynumber();
         if (!isdefined(self.var_824b5a74[n_ent_num])) {
-            self.var_824b5a74[n_ent_num] = util::spawn_model(#"hash_4223616c6451bb89", var_e9e88745.origin, var_e9e88745.angles);
+            self.var_824b5a74[n_ent_num] = util::spawn_model(#"hash_4223616c6451bb89", mdl_shield.origin, mdl_shield.angles);
         }
         self.var_824b5a74[n_ent_num] setinvisibletoall();
         self.var_824b5a74[n_ent_num] setvisibletoplayer(player);
         return 0;
     }
-    if (player zm_crafting::function_2d53738e(var_710873d9)) {
+    if (player zm_crafting::function_2d53738e(w_shield_upgraded)) {
         if (isdefined(self.stub.blueprint.var_54a97edd.isriotshield) && self.stub.blueprint.var_54a97edd.isriotshield && isdefined(player.player_shield_reset_health) && isdefined(player.var_d3345483) && player.var_d3345483) {
             var_d97673ff = 1;
         } else {
@@ -223,7 +223,7 @@ function function_22d79d55(player) {
                 return 0;
             }
         }
-        player [[ player.player_shield_reset_health ]](var_710873d9, 1);
+        player [[ player.player_shield_reset_health ]](w_shield_upgraded, 1);
     } else {
         var_f66d1847 = self.stub zm_crafting::function_ceac3bf9(player);
         if (isdefined(var_f66d1847) && var_f66d1847 > 0) {
@@ -240,7 +240,7 @@ function function_22d79d55(player) {
         if (isdefined(player.hasriotshield) && player.hasriotshield && isdefined(player.weaponriotshield)) {
             player zm_weapons::weapon_take(player.weaponriotshield);
         }
-        player thread zm_weapons::weapon_give(var_710873d9);
+        player thread zm_weapons::weapon_give(w_shield_upgraded);
     }
     return 0;
 }
@@ -405,7 +405,7 @@ function function_2a9a30bb(death, inflictor, attacker, damage, flags, mod, weapo
     }
     n_damage = damage;
     var_bb6709b6 = zm_equipment::function_379f6b5d(100);
-    self namespace_9ff9f642::burn(#"hash_237b6756a81881cb", attacker, weapon, var_bb6709b6);
+    self namespace_9ff9f642::burn(#"zhield_zword_turret", attacker, weapon, var_bb6709b6);
     switch (self.var_6f84b820) {
     case #"popcorn":
     case #"basic":

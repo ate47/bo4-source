@@ -2775,8 +2775,8 @@ function function_9116bb0e(localclientnum, closed = 0) {
                     setuimodelvalue(createuimodel(itemmodel, "description"), isdefined(description) ? description : #"");
                 }
                 pickupicon = isdefined(itemdef.var_a6762160.pickupicon) ? itemdef.var_a6762160.pickupicon : itemdef.var_a6762160.icon;
-                var_9507cf45 = isdefined(itemdef.var_a6762160.var_9507cf45) ? itemdef.var_a6762160.var_9507cf45 : pickupicon;
-                setuimodelvalue(createuimodel(itemmodel, "icon"), isdefined(var_9507cf45) ? var_9507cf45 : #"blacktransparent");
+                stashicon = isdefined(itemdef.var_a6762160.stashicon) ? itemdef.var_a6762160.stashicon : pickupicon;
+                setuimodelvalue(createuimodel(itemmodel, "icon"), isdefined(stashicon) ? stashicon : #"blacktransparent");
                 setuimodelvalue(createuimodel(itemmodel, "rarity"), itemdef.var_a6762160.rarity);
                 setuimodelvalue(createuimodel(itemmodel, "name"), item_world::get_item_name(itemdef.var_a6762160));
                 setuimodelvalue(createuimodel(itemmodel, "claimsInventorySlot"), is_inventory_item(localclientnum, itemdef.var_a6762160) && !function_a4a6f064(localclientnum, itemdef.var_a6762160));

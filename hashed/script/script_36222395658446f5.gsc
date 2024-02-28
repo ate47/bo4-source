@@ -304,12 +304,12 @@ function private function_831aa56d(e_player, var_69970c6) {
     level.var_4024aaf6.var_e88acf63 = level.var_4024aaf6 gettagorigin("tag_spork");
     level.var_4024aaf6.var_a9a3211a = level.var_4024aaf6 gettagangles("tag_spork");
     if (var_69970c6 == #"spork_alcatraz") {
-        level.var_4024aaf6.var_87d57162 = util::spawn_model("wpn_t8_zm_spork_world", level.var_4024aaf6.var_e88acf63, level.var_4024aaf6.var_a9a3211a);
-        level.var_4024aaf6.var_87d57162 linkto(level.var_4024aaf6);
+        level.var_4024aaf6.mdl_spork = util::spawn_model("wpn_t8_zm_spork_world", level.var_4024aaf6.var_e88acf63, level.var_4024aaf6.var_a9a3211a);
+        level.var_4024aaf6.mdl_spork linkto(level.var_4024aaf6);
         e_player takeweapon(getweapon(#"spork_alcatraz"));
     } else {
-        level.var_4024aaf6.var_c109c2a3 = util::spawn_model("wpn_t8_zm_goldenknife_world", level.var_4024aaf6.var_e88acf63, level.var_4024aaf6.var_a9a3211a);
-        level.var_4024aaf6.var_c109c2a3 linkto(level.var_4024aaf6);
+        level.var_4024aaf6.mdl_golden_knife = util::spawn_model("wpn_t8_zm_goldenknife_world", level.var_4024aaf6.var_e88acf63, level.var_4024aaf6.var_a9a3211a);
+        level.var_4024aaf6.mdl_golden_knife linkto(level.var_4024aaf6);
         e_player takeweapon(getweapon(#"golden_knife"));
     }
     w_current = e_player.currentweapon;
@@ -374,11 +374,11 @@ function function_905f55bb(str_notify) {
         level.var_4024aaf6 rotateto(level.var_4024aaf6.var_156222bf, 0.1);
         level.var_4024aaf6.var_156222bf = undefined;
     }
-    if (isdefined(level.var_4024aaf6.var_87d57162)) {
-        level.var_4024aaf6.var_87d57162 delete();
+    if (isdefined(level.var_4024aaf6.mdl_spork)) {
+        level.var_4024aaf6.mdl_spork delete();
     }
-    if (isdefined(level.var_4024aaf6.var_c109c2a3)) {
-        level.var_4024aaf6.var_c109c2a3 delete();
+    if (isdefined(level.var_4024aaf6.mdl_golden_knife)) {
+        level.var_4024aaf6.mdl_golden_knife delete();
     }
     if (isdefined(level.var_4024aaf6.var_55484b66)) {
         level.var_4024aaf6.var_55484b66 delete();
@@ -449,14 +449,14 @@ function function_a93fd607(e_grenade, n_grenade_charge_power) {
     }
     if (distancesquared(e_grenade.origin, level.var_ca0f81c1.origin) < 62500 && !self flag::get(#"hash_465b23ced2029d95")) {
         level flag::set(#"hash_6ee51d9a7d37aecc");
-        var_6e6ec518 = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
-        var_6e6ec518.n_grenade_charge_power = n_grenade_charge_power;
+        mdl_tomahawk = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
+        mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
         var_bba04f72 = util::spawn_model(level.var_ca0f81c1.model, e_grenade.origin, level.var_ca0f81c1.angles);
         var_bba04f72 setscale(1.2);
-        var_bba04f72 linkto(var_6e6ec518);
+        var_bba04f72 linkto(mdl_tomahawk);
         level.var_ca0f81c1 delete();
-        self thread zm_weap_tomahawk::tomahawk_return_player(var_6e6ec518, undefined, 800);
-        self thread function_986bf0d5(var_6e6ec518, var_bba04f72);
+        self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
+        self thread function_986bf0d5(mdl_tomahawk, var_bba04f72);
         return 1;
     }
     return 0;
@@ -466,10 +466,10 @@ function function_a93fd607(e_grenade, n_grenade_charge_power) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x255550de, Offset: 0x27f8
 // Size: 0x74
-function function_986bf0d5(var_6e6ec518, var_e5d078) {
+function function_986bf0d5(mdl_tomahawk, mdl_rock) {
     self endon(#"disconnect");
-    var_6e6ec518 waittill(#"death");
-    var_e5d078 delete();
+    mdl_tomahawk waittill(#"death");
+    mdl_rock delete();
     self flag::set(#"hash_465b23ced2029d95");
 }
 
@@ -484,13 +484,13 @@ function function_1d02544f(e_grenade, n_grenade_charge_power) {
     }
     if (distancesquared(e_grenade.origin, s_rock.origin) < 10000 && !self flag::get(#"hash_3aa12cac41d4ba98")) {
         self clientfield::set_to_player("" + #"hash_11ff39a3100ac894", 0);
-        var_6e6ec518 = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
-        var_6e6ec518.n_grenade_charge_power = n_grenade_charge_power;
+        mdl_tomahawk = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
+        mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
         var_bba04f72 = util::spawn_model(s_rock.model, e_grenade.origin, s_rock.angles);
         var_bba04f72 setscale(2.75);
-        var_bba04f72 linkto(var_6e6ec518);
-        self thread zm_weap_tomahawk::tomahawk_return_player(var_6e6ec518, undefined, 800);
-        self thread function_f02db707(var_6e6ec518, var_bba04f72);
+        var_bba04f72 linkto(mdl_tomahawk);
+        self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
+        self thread function_f02db707(mdl_tomahawk, var_bba04f72);
         return 1;
     }
     return 0;
@@ -500,10 +500,10 @@ function function_1d02544f(e_grenade, n_grenade_charge_power) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xd8419153, Offset: 0x2a60
 // Size: 0x74
-function function_f02db707(var_6e6ec518, var_e5d078) {
+function function_f02db707(mdl_tomahawk, mdl_rock) {
     self endon(#"disconnect");
-    var_6e6ec518 waittill(#"death");
-    var_e5d078 delete();
+    mdl_tomahawk waittill(#"death");
+    mdl_rock delete();
     self flag::set(#"hash_3aa12cac41d4ba98");
 }
 
@@ -518,12 +518,12 @@ function function_b74fca4c(e_grenade, n_grenade_charge_power) {
     }
     if (distancesquared(e_grenade.origin, s_rock.origin) < 10000 && !self flag::get(#"hash_12826eeb0abe1308")) {
         self clientfield::set_to_player("" + #"hash_37c33178198d54e4", 0);
-        var_6e6ec518 = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
-        var_6e6ec518.n_grenade_charge_power = n_grenade_charge_power;
+        mdl_tomahawk = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
+        mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
         var_bba04f72 = util::spawn_model(s_rock.model, e_grenade.origin, s_rock.angles);
-        var_bba04f72 linkto(var_6e6ec518);
-        self thread zm_weap_tomahawk::tomahawk_return_player(var_6e6ec518, undefined, 800);
-        self thread function_7694f3cb(var_6e6ec518, var_bba04f72);
+        var_bba04f72 linkto(mdl_tomahawk);
+        self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
+        self thread function_7694f3cb(mdl_tomahawk, var_bba04f72);
         return 1;
     }
     return 0;
@@ -533,10 +533,10 @@ function function_b74fca4c(e_grenade, n_grenade_charge_power) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x40c8815a, Offset: 0x2ca8
 // Size: 0x74
-function function_7694f3cb(var_6e6ec518, var_e5d078) {
+function function_7694f3cb(mdl_tomahawk, mdl_rock) {
     self endon(#"disconnect");
-    var_6e6ec518 waittill(#"death");
-    var_e5d078 delete();
+    mdl_tomahawk waittill(#"death");
+    mdl_rock delete();
     self flag::set(#"hash_12826eeb0abe1308");
 }
 
@@ -964,8 +964,8 @@ function function_195d2fb() {
     self thread function_588dcdff();
     self flag::wait_till(#"hash_7bcf95ea12236f0d");
     self thread zm_audio::create_and_play_dialog(#"success_resp", #"generic");
-    var_326289fb = getent("mdl_d_w_i_k_t", "script_noteworthy");
-    var_326289fb setinvisibletoplayer(self);
+    mdl_totem = getent("mdl_d_w_i_k_t", "script_noteworthy");
+    mdl_totem setinvisibletoplayer(self);
     self clientfield::set_to_player("" + #"totem_fall", 1);
     self.var_c5641545 = undefined;
     if (level flag::get(#"hash_43114a11c9ca5302")) {
@@ -1148,8 +1148,8 @@ function function_efd25c9() {
         level flag::set(#"spoon_quest_completed");
         level flag::set(#"hash_29dc018e9551ecf");
         var_217fca51 = struct::get("<unknown string>");
-        var_6b6eb535 = var_217fca51.scene_ents[#"skeleton_arm"];
-        var_6b6eb535 hide();
+        mdl_spoon = var_217fca51.scene_ents[#"skeleton_arm"];
+        mdl_spoon hide();
         foreach (player in level.players) {
             if (!player hasweapon(getweapon(#"spork_alcatraz"))) {
                 while (!isdefined(player.var_1c4683c4)) {

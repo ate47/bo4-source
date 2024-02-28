@@ -117,59 +117,59 @@ function function_ab7f70b9(e_player) {
     case #"conference_level1":
         var_dd0ed16d = getent("file_hallway_zone", "targetname");
         if (e_player istouching(var_dd0ed16d)) {
-            var_601fee0 = #"hash_38aec412b15daa7f";
+            str_display = #"hash_38aec412b15daa7f";
         } else {
-            var_601fee0 = #"hash_2960dd7ca313a1d0";
+            str_display = #"hash_2960dd7ca313a1d0";
         }
         break;
     case #"hallway_level1":
-        var_601fee0 = #"hash_23e7b86056327ad8";
+        str_display = #"hash_23e7b86056327ad8";
         break;
     case #"file_room_level1":
-        var_601fee0 = #"hash_43e992b83f837d3e";
+        str_display = #"hash_43e992b83f837d3e";
         break;
     case #"offices_level1":
-        var_601fee0 = #"hash_179368775ecfafa9";
+        str_display = #"hash_179368775ecfafa9";
         break;
     case #"war_room_zone_south":
     case #"war_room_zone_north":
     case #"war_room_zone_elevator":
-        var_601fee0 = #"hash_25854f4ac1fdadf5";
+        str_display = #"hash_25854f4ac1fdadf5";
         break;
     case #"war_room_server_room":
-        var_601fee0 = #"hash_7d3cd67fea75827c";
+        str_display = #"hash_7d3cd67fea75827c";
         break;
     case #"war_room_zone_top":
-        var_601fee0 = #"hash_572f6dd3e58ede79";
+        str_display = #"hash_572f6dd3e58ede79";
         break;
     case #"conference_level2":
-        var_601fee0 = #"hash_2960e07ca313a6e9";
+        str_display = #"hash_2960e07ca313a6e9";
         break;
     case #"labs_elevator":
     case #"labs_hallway1":
-        var_601fee0 = #"hash_48fce08911acd38a";
+        str_display = #"hash_48fce08911acd38a";
         break;
     case #"labs_hallway2":
-        var_601fee0 = #"hash_48fcdf8911acd1d7";
+        str_display = #"hash_48fcdf8911acd1d7";
         break;
     case #"labs_zone1":
-        var_601fee0 = #"hash_6e0edea58f326450";
+        str_display = #"hash_6e0edea58f326450";
         break;
     case #"labs_zone2":
-        var_601fee0 = #"hash_6e0ee1a58f326969";
+        str_display = #"hash_6e0ee1a58f326969";
         break;
     case #"labs_zone3":
-        var_601fee0 = #"hash_6e0ee0a58f3267b6";
+        str_display = #"hash_6e0ee0a58f3267b6";
         break;
     case #"cage_upper":
     case #"cage":
-        var_601fee0 = #"hash_62b9f4974de13b76";
+        str_display = #"hash_62b9f4974de13b76";
         break;
     default:
-        var_601fee0 = undefined;
+        str_display = undefined;
         break;
     }
-    return var_601fee0;
+    return str_display;
 }
 
 // Namespace zm_office_zones/zm_office_zones

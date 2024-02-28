@@ -367,12 +367,12 @@ function function_adc74a0d(e_grenade, n_grenade_charge_power) {
     distsq = distancesquared(e_grenade.origin, s_spork.origin);
     if (distsq < 200 * 200 && !self flag::get(#"hash_79ab766693ef2532") && level flag::get(#"hash_29dc018e9551ecf")) {
         self clientfield::set_to_player("" + #"hash_2058d8d474a6b3e1", 0);
-        var_6e6ec518 = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
-        var_6e6ec518.n_grenade_charge_power = n_grenade_charge_power;
+        mdl_tomahawk = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
+        mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
         var_7b566fb = util::spawn_model("wpn_t8_zm_spork_world", e_grenade.origin, s_spork.angles);
-        var_7b566fb linkto(var_6e6ec518);
-        self thread zm_weap_tomahawk::tomahawk_return_player(var_6e6ec518, undefined, 800);
-        self thread function_55a05382(var_6e6ec518, var_7b566fb);
+        var_7b566fb linkto(mdl_tomahawk);
+        self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
+        self thread function_55a05382(mdl_tomahawk, var_7b566fb);
         return 1;
     }
     return 0;
@@ -382,10 +382,10 @@ function function_adc74a0d(e_grenade, n_grenade_charge_power) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x7bf08d4b, Offset: 0x1a10
 // Size: 0xcc
-function function_55a05382(var_6e6ec518, var_87d57162) {
+function function_55a05382(mdl_tomahawk, mdl_spork) {
     self endon(#"disconnect");
-    var_6e6ec518 waittill(#"death");
-    var_87d57162 delete();
+    mdl_tomahawk waittill(#"death");
+    mdl_spork delete();
     w_current = self.currentweapon;
     self zm_melee_weapon::award_melee_weapon(#"spork_alcatraz");
     self flag::set(#"hash_79ab766693ef2532");

@@ -11,8 +11,8 @@
 // Size: 0xbc
 function event_handler[level_init] main(eventstruct) {
     var_c1ffc425 = getdynentarray("blastdoor_button");
-    foreach (var_58300a67 in var_c1ffc425) {
-        var_58300a67.onuse = &function_ed401dbd;
+    foreach (blast_door_button in var_c1ffc425) {
+        blast_door_button.onuse = &function_ed401dbd;
     }
     level thread function_a2279366();
 }
@@ -24,48 +24,48 @@ function event_handler[level_init] main(eventstruct) {
 function function_a2279366() {
     level.var_3f2c54f = (isdefined(getgametypesetting(#"hash_3778ec3bd924f17c")) ? getgametypesetting(#"hash_3778ec3bd924f17c") : 0) && (isdefined(getgametypesetting(#"hash_50aa80a9bcb3b127")) ? getgametypesetting(#"hash_50aa80a9bcb3b127") : 0);
     if (!level.var_3f2c54f) {
-        var_1e68904b = getdynentarray("blastdoor_button");
-        foreach (button in var_1e68904b) {
+        blastdoorbuttons = getdynentarray("blastdoor_button");
+        foreach (button in blastdoorbuttons) {
             function_e2a06860(button, 1);
         }
         item_world::function_1b11e73c();
-        var_2f215aac = function_91b29d2a("blast_doors_special_weapon");
-        foreach (specialitem in var_2f215aac) {
+        specialitems = function_91b29d2a("blast_doors_special_weapon");
+        foreach (specialitem in specialitems) {
             item_world::consume_item(specialitem);
         }
         item_world::function_4de3ca98();
-        var_1e68904b = getdynentarray("blastdoor_button");
-        foreach (button in var_1e68904b) {
+        blastdoorbuttons = getdynentarray("blastdoor_button");
+        foreach (button in blastdoorbuttons) {
             function_e2a06860(button, 1);
         }
-        var_c22eda7c = getdynentarray("blast_doors_supply_stash");
-        foreach (supplystash in var_c22eda7c) {
+        supplystashes = getdynentarray("blast_doors_supply_stash");
+        foreach (supplystash in supplystashes) {
             if (function_8a8a409b(supplystash)) {
                 item_world::function_160294c7(supplystash);
             }
         }
-        var_2f215aac = function_91b29d2a("blast_doors_special_weapon");
-        foreach (specialitem in var_2f215aac) {
+        specialitems = function_91b29d2a("blast_doors_special_weapon");
+        foreach (specialitem in specialitems) {
             item_world::consume_item(specialitem);
         }
     } else {
         item_world::function_1b11e73c();
-        var_2f215aac = function_91b29d2a("blast_doors_special_weapon");
-        foreach (specialitem in var_2f215aac) {
+        specialitems = function_91b29d2a("blast_doors_special_weapon");
+        foreach (specialitem in specialitems) {
             item_world::consume_item(specialitem);
         }
         item_world::function_4de3ca98();
         var_cb10151b = 0;
-        var_c22eda7c = getdynentarray("blast_doors_supply_stash");
-        foreach (supplystash in var_c22eda7c) {
+        supplystashes = getdynentarray("blast_doors_supply_stash");
+        foreach (supplystash in supplystashes) {
             if (function_8a8a409b(supplystash)) {
                 var_cb10151b = 1;
                 break;
             }
         }
         if (var_cb10151b) {
-            var_2f215aac = function_91b29d2a("blast_doors_special_weapon");
-            foreach (specialitem in var_2f215aac) {
+            specialitems = function_91b29d2a("blast_doors_special_weapon");
+            foreach (specialitem in specialitems) {
                 item_world::consume_item(specialitem);
             }
         }
@@ -122,10 +122,10 @@ function function_ed401dbd(activator, laststate, state) {
             }
         }
         var_c1ffc425 = getdynentarray("blastdoor_button");
-        foreach (var_58300a67 in var_c1ffc425) {
-            var_73141fdc = function_ffdbe8c2(var_58300a67);
+        foreach (blast_door_button in var_c1ffc425) {
+            var_73141fdc = function_ffdbe8c2(blast_door_button);
             if (var_73141fdc != state) {
-                function_e2a06860(var_58300a67, state);
+                function_e2a06860(blast_door_button, state);
             }
         }
         activator stats::function_d40764f3(#"fracking_blast_doors_opened", 1);

@@ -1,7 +1,7 @@
 {
     "name": "#hash_24a8d8f98c2fe861",
     "baseWeapon": "#hash_4d42dad394142333",
-    "displayname": "#hash_25d8a87c9c374680",
+    "displayname": "#weapon/molotov",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

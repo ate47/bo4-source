@@ -268,11 +268,11 @@ function function_ef8c8edc(s_info) {
     }
     self.exploded = 1;
     exploder::exploder("fxexp_center_event");
-    var_1649679e = struct::get("center_explosion_pos");
-    var_6c276b26 = util::spawn_model(#"tag_origin", var_1649679e.origin, var_1649679e.angles);
-    if (isdefined(var_6c276b26)) {
-        var_6c276b26 clientfield::increment("center_explosion_rope_pulse");
-        var_6c276b26 util::delay(3, undefined, &util::auto_delete, 16);
+    s_pulse = struct::get("center_explosion_pos");
+    mdl_pulse = util::spawn_model(#"tag_origin", s_pulse.origin, s_pulse.angles);
+    if (isdefined(mdl_pulse)) {
+        mdl_pulse clientfield::increment("center_explosion_rope_pulse");
+        mdl_pulse util::delay(3, undefined, &util::auto_delete, 16);
     }
 }
 

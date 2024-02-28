@@ -105,7 +105,7 @@ function result() {
         if (zm_utility::is_magic_bullet_shield_enabled(var_7694ea6b[i])) {
             continue;
         }
-        var_7694ea6b[i] dodamage(var_7694ea6b[i].health + 666, var_7694ea6b[i].origin, self, undefined, undefined, "MOD_BURNED", 0, level.var_78032351);
+        var_7694ea6b[i] dodamage(var_7694ea6b[i].health + 666, var_7694ea6b[i].origin, self, undefined, undefined, "MOD_BURNED", 0, level.weapondefault);
         if (isdefined(self)) {
             self zm_stats::increment_challenge_stat(#"gum_gobbler_burned_out");
         }

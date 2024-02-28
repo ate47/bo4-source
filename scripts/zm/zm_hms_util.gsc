@@ -338,8 +338,8 @@ function function_b649cf93() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x21944e5, Offset: 0x11b0
 // Size: 0x20a
-function function_b2e1326(var_58df9892, var_1dc9c1bf = 1) {
-    switch (var_58df9892) {
+function function_b2e1326(structs_objecti, var_1dc9c1bf = 1) {
+    switch (structs_objecti) {
     case 0:
         self sethintstring(#"zombie/trap_locked");
         break;

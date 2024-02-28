@@ -509,8 +509,8 @@ function function_6127ea37(localclientnum, var_116287e0) {
     } else {
         str_name = #"hash_7834e8ed496978a7";
     }
-    var_9d6e5ca0 = level._effect[str_name];
-    return var_9d6e5ca0;
+    str_file = level._effect[str_name];
+    return str_file;
 }
 
 // Namespace zm_laboratory/frontend_zm_laboratory
@@ -1693,12 +1693,12 @@ function function_24222bb4(localclientnum, a_ents) {
         var_ed6f73d2 = function_6127ea37(localclientnum, 1);
         var_df3fd74f = function_6127ea37(localclientnum, 2);
         var_ed7a73c4 = function_6127ea37(localclientnum, 3);
-        util::playfxontag(localclientnum, var_ed6f73d2, a_ents[#"bottle1"].var_aa3e8c5d, isdefined(a_ents[#"bottle1"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"bottle1"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
-        util::playfxontag(localclientnum, var_df3fd74f, a_ents[#"bottle2"].var_aa3e8c5d, isdefined(a_ents[#"bottle2"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"bottle2"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
-        util::playfxontag(localclientnum, var_ed7a73c4, a_ents[#"bottle3"].var_aa3e8c5d, isdefined(a_ents[#"bottle3"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"bottle3"].var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
-        a_ents[#"bottle1"].var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 1);
-        a_ents[#"bottle2"].var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 2);
-        a_ents[#"bottle3"].var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 3);
+        util::playfxontag(localclientnum, var_ed6f73d2, a_ents[#"bottle1"].mdl_bottle, isdefined(a_ents[#"bottle1"].mdl_bottle gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"bottle1"].mdl_bottle gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
+        util::playfxontag(localclientnum, var_df3fd74f, a_ents[#"bottle2"].mdl_bottle, isdefined(a_ents[#"bottle2"].mdl_bottle gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"bottle2"].mdl_bottle gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
+        util::playfxontag(localclientnum, var_ed7a73c4, a_ents[#"bottle3"].mdl_bottle, isdefined(a_ents[#"bottle3"].mdl_bottle gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? a_ents[#"bottle3"].mdl_bottle gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin");
+        a_ents[#"bottle1"].mdl_bottle thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 1);
+        a_ents[#"bottle2"].mdl_bottle thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 2);
+        a_ents[#"bottle3"].mdl_bottle thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, 3);
     } else if (self.scriptbundlename === #"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle") {
         level scene::stop(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle");
         function_8cd01001(localclientnum, a_ents[#"bottle_fluid_01"], a_ents[#"bottle_fluid_02"], a_ents[#"bottle_fluid_03"]);
@@ -1726,27 +1726,27 @@ function function_de0d6843(localclientnum, a_ents) {
 // Size: 0x60c
 function function_4df2b792(localclientnum, var_56448842, var_cf59fa73, var_bb17d1ef) {
     function_6198ffc(5, 0);
-    var_56448842.var_aa3e8c5d = util::spawn_model(localclientnum, "tag_origin", var_56448842 gettagorigin("bottle_01_link_jnt"), var_56448842 gettagangles("bottle_01_link_jnt"));
+    var_56448842.mdl_bottle = util::spawn_model(localclientnum, "tag_origin", var_56448842 gettagorigin("bottle_01_link_jnt"), var_56448842 gettagangles("bottle_01_link_jnt"));
     var_56448842.mdl_tube = util::spawn_model(localclientnum, level.var_49f26c00.var_13123ed2, var_56448842 gettagorigin("bottle_01_link_jnt"), var_56448842 gettagangles("bottle_01_link_jnt"));
     var_56448842.var_7b57e2cc = util::spawn_model(localclientnum, #"hash_cbaf587ef8564b8", var_56448842 gettagorigin("bottlecap_01_link_jnt"), var_56448842 gettagangles("bottlecap_01_link_jnt"));
-    var_cf59fa73.var_aa3e8c5d = util::spawn_model(localclientnum, "tag_origin", var_cf59fa73 gettagorigin("bottle_02_link_jnt"), var_cf59fa73 gettagangles("bottle_02_link_jnt"));
+    var_cf59fa73.mdl_bottle = util::spawn_model(localclientnum, "tag_origin", var_cf59fa73 gettagorigin("bottle_02_link_jnt"), var_cf59fa73 gettagangles("bottle_02_link_jnt"));
     var_cf59fa73.mdl_tube = util::spawn_model(localclientnum, level.var_49f26c00.var_13123ed2, var_cf59fa73 gettagorigin("bottle_02_link_jnt"), var_cf59fa73 gettagangles("bottle_02_link_jnt"));
     var_cf59fa73.var_7b57e2cc = util::spawn_model(localclientnum, #"hash_cbaf587ef8564b8", var_cf59fa73 gettagorigin("bottlecap_02_link_jnt"), var_cf59fa73 gettagangles("bottlecap_02_link_jnt"));
-    var_bb17d1ef.var_aa3e8c5d = util::spawn_model(localclientnum, "tag_origin", var_bb17d1ef gettagorigin("bottle_03_link_jnt"), var_bb17d1ef gettagangles("bottle_03_link_jnt"));
+    var_bb17d1ef.mdl_bottle = util::spawn_model(localclientnum, "tag_origin", var_bb17d1ef gettagorigin("bottle_03_link_jnt"), var_bb17d1ef gettagangles("bottle_03_link_jnt"));
     var_bb17d1ef.mdl_tube = util::spawn_model(localclientnum, level.var_49f26c00.var_13123ed2, var_bb17d1ef gettagorigin("bottle_03_link_jnt"), var_bb17d1ef gettagangles("bottle_03_link_jnt"));
     var_bb17d1ef.var_7b57e2cc = util::spawn_model(localclientnum, #"hash_cbaf587ef8564b8", var_bb17d1ef gettagorigin("bottlecap_03_link_jnt"), var_bb17d1ef gettagangles("bottlecap_03_link_jnt"));
-    var_56448842.var_aa3e8c5d linkto(var_56448842, "bottle_01_link_jnt");
-    var_cf59fa73.var_aa3e8c5d linkto(var_cf59fa73, "bottle_02_link_jnt");
-    var_bb17d1ef.var_aa3e8c5d linkto(var_bb17d1ef, "bottle_03_link_jnt");
+    var_56448842.mdl_bottle linkto(var_56448842, "bottle_01_link_jnt");
+    var_cf59fa73.mdl_bottle linkto(var_cf59fa73, "bottle_02_link_jnt");
+    var_bb17d1ef.mdl_bottle linkto(var_bb17d1ef, "bottle_03_link_jnt");
     var_56448842.mdl_tube linkto(var_56448842, "bottle_01_link_jnt");
     var_cf59fa73.mdl_tube linkto(var_cf59fa73, "bottle_02_link_jnt");
     var_bb17d1ef.mdl_tube linkto(var_bb17d1ef, "bottle_03_link_jnt");
     var_56448842.var_7b57e2cc linkto(var_56448842, "bottlecap_01_link_jnt");
     var_cf59fa73.var_7b57e2cc linkto(var_cf59fa73, "bottlecap_02_link_jnt");
     var_bb17d1ef.var_7b57e2cc linkto(var_bb17d1ef, "bottlecap_03_link_jnt");
-    var_56448842.var_aa3e8c5d setmodel(level.var_49f26c00.var_6138b381);
-    var_cf59fa73.var_aa3e8c5d setmodel(level.var_49f26c00.var_887781fe);
-    var_bb17d1ef.var_aa3e8c5d setmodel(level.var_49f26c00.var_84c77a9e);
+    var_56448842.mdl_bottle setmodel(level.var_49f26c00.var_6138b381);
+    var_cf59fa73.mdl_bottle setmodel(level.var_49f26c00.var_887781fe);
+    var_bb17d1ef.mdl_bottle setmodel(level.var_49f26c00.var_84c77a9e);
     var_56448842.mdl_tube setmodel(level.var_49f26c00.var_13123ed2);
     var_cf59fa73.mdl_tube setmodel(level.var_49f26c00.var_13123ed2);
     var_bb17d1ef.mdl_tube setmodel(level.var_49f26c00.var_13123ed2);
@@ -1759,7 +1759,7 @@ function function_4df2b792(localclientnum, var_56448842, var_cf59fa73, var_bb17d
 function fill_bottle(localclientnum, var_1a44a9d9, var_6d1c3912, var_7046a27c, var_6cf17519) {
     self endon(#"death");
     level endon(array(#"laboratory_closed", #"hash_1d604ddf352ddcca"));
-    var_92ecfb94 = isdefined(self.var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? self.var_aa3e8c5d gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin";
+    var_92ecfb94 = isdefined(self.mdl_bottle gettagorigin("wpn_t8_zm_elixir_bottle_world")) ? self.mdl_bottle gettagorigin("wpn_t8_zm_elixir_bottle_world") : "tag_origin";
     var_55ae9403 = function_6127ea37(localclientnum, var_6cf17519);
     self.mdl_tube setmodel(level.var_49f26c00.var_13123ed2);
     level waittill(var_1a44a9d9);
@@ -1770,15 +1770,15 @@ function fill_bottle(localclientnum, var_1a44a9d9, var_6d1c3912, var_7046a27c, v
     function_6198ffc(5, 1);
     self.mdl_tube setmodel(level.var_49f26c00.var_13123ed2);
     self.mdl_tube thread function_b05ea28d(undefined, 1, 0.75, var_1467a3fb);
-    var_d5db956e = util::playfxontag(localclientnum, var_55ae9403, self.var_aa3e8c5d, var_92ecfb94);
+    var_d5db956e = util::playfxontag(localclientnum, var_55ae9403, self.mdl_bottle, var_92ecfb94);
     if (isstring(var_7046a27c) || ishash(var_7046a27c)) {
         level waittill(var_7046a27c);
     } else if (isdefined(var_7046a27c)) {
         wait(var_7046a27c);
     }
-    util::playfxontag(localclientnum, level._effect[#"hash_3a65d1b462add54a"], self.var_aa3e8c5d, var_92ecfb94);
+    util::playfxontag(localclientnum, level._effect[#"hash_3a65d1b462add54a"], self.mdl_bottle, var_92ecfb94);
     wait(0.5);
-    self.var_aa3e8c5d thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, var_6cf17519);
+    self.mdl_bottle thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, var_6cf17519);
     level thread function_6605d119(localclientnum, var_d5db956e);
 }
 
@@ -1816,14 +1816,14 @@ function function_5e0db3e7(param1, param2) {
 // Size: 0x2ac
 function function_7c1ef1e1(localclientnum, a_ents) {
     self notify(#"hash_200ae59dc85ae6f");
-    if (isdefined(a_ents[#"bottle1"].var_aa3e8c5d)) {
-        a_ents[#"bottle1"].var_aa3e8c5d delete();
+    if (isdefined(a_ents[#"bottle1"].mdl_bottle)) {
+        a_ents[#"bottle1"].mdl_bottle delete();
     }
-    if (isdefined(a_ents[#"bottle2"].var_aa3e8c5d)) {
-        a_ents[#"bottle2"].var_aa3e8c5d delete();
+    if (isdefined(a_ents[#"bottle2"].mdl_bottle)) {
+        a_ents[#"bottle2"].mdl_bottle delete();
     }
-    if (isdefined(a_ents[#"bottle3"].var_aa3e8c5d)) {
-        a_ents[#"bottle3"].var_aa3e8c5d delete();
+    if (isdefined(a_ents[#"bottle3"].mdl_bottle)) {
+        a_ents[#"bottle3"].mdl_bottle delete();
     }
     if (isdefined(a_ents[#"bottle1"].mdl_tube)) {
         a_ents[#"bottle1"].mdl_tube delete();

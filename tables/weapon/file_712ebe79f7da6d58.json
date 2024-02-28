@@ -1,7 +1,7 @@
 {
     "name": "#hash_712ebe79f7da6d58",
     "baseWeapon": "#eq_wraith_fire",
-    "displayname": "#hash_2c62a9364c4c32aa",
+    "displayname": "#weapon/wraith_fire",
     "sessionMode": "warzone",
     "itemIndex": 262,
     "dualWieldWeaponIndex": 0,

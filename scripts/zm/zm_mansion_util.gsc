@@ -442,7 +442,7 @@ function function_e7d4e4f0() {
     }
     self endoncallback(&function_3cfa50, #"hash_50b4cc0a4e4185b7");
     self util::delay_notify(120, #"hash_50b4cc0a4e4185b7");
-    self.var_817342a7 = util::spawn_model("c_t8_zmb_dlc1_werewolf_chaos_drop", self.origin, self.angles);
+    self.mdl_pickup = util::spawn_model("c_t8_zmb_dlc1_werewolf_chaos_drop", self.origin, self.angles);
     if (!isdefined(level.var_98cb7c84)) {
         level.var_98cb7c84 = [];
     } else if (!isarray(level.var_98cb7c84)) {
@@ -450,14 +450,14 @@ function function_e7d4e4f0() {
     }
     level.var_98cb7c84[level.var_98cb7c84.size] = self;
     util::wait_network_frame();
-    self.var_817342a7 clientfield::set("" + #"hash_487e544e29aa8e45", 1);
-    playsoundatposition(#"zmb_sq_souls_release", self.var_817342a7.origin);
+    self.mdl_pickup clientfield::set("" + #"hash_487e544e29aa8e45", 1);
+    playsoundatposition(#"zmb_sq_souls_release", self.mdl_pickup.origin);
     self.origin = self.origin + vectorscale((0, 0, 1), 8);
     e_holder = self zm_unitrigger::function_fac87205(&function_f3d694d6, (64, 64, 100));
     if (!level flag::get("flag_player_grabbed_werewolf_material")) {
         e_holder thread zm_vo::function_a2bd5a0c(#"hash_161206ddd7dcc321", 1);
         level zm_ui_inventory::function_7df6bb60(#"ww_p1_2", 1);
-        self.var_817342a7 delete();
+        self.mdl_pickup delete();
         self struct::delete();
         level.var_98cb7c84 = undefined;
         level flag::set("flag_player_grabbed_werewolf_material");
@@ -469,8 +469,8 @@ function function_e7d4e4f0() {
 // Checksum 0xd3839a3a, Offset: 0x1de8
 // Size: 0x94
 function function_3cfa50(s_notify) {
-    if (isdefined(self.var_817342a7)) {
-        self.var_817342a7 delete();
+    if (isdefined(self.mdl_pickup)) {
+        self.mdl_pickup delete();
     }
     if (isdefined(self.s_unitrigger)) {
         zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
@@ -618,10 +618,10 @@ function function_7b248ec9() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x6d018786, Offset: 0x2438
 // Size: 0x298
-function function_f1c106b(var_da816ebe, b_solid) {
-    a_blockers = getentarray(var_da816ebe, "script_blocker");
+function function_f1c106b(str_blocker, b_solid) {
+    a_blockers = getentarray(str_blocker, "script_blocker");
     if (b_solid) {
-        switch (var_da816ebe) {
+        switch (str_blocker) {
         case #"loc4":
             str_spawner = "greenhouse_lab_respawns";
             break;

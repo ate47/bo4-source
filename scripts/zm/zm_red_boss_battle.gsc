@@ -110,23 +110,23 @@ function init() {
     level.s_boss_battle.var_415fc88 = 33;
     level.s_boss_battle.n_stage = 0;
     level.s_boss_battle.var_dc656db3 = 0;
-    level.s_boss_battle.var_3edd432d = getent("chaos_bolt_thrower", "targetname");
-    level.s_boss_battle.var_3edd432d hide();
+    level.s_boss_battle.mdl_perseus = getent("chaos_bolt_thrower", "targetname");
+    level.s_boss_battle.mdl_perseus hide();
     level.s_boss_battle.var_c67e8352 = getent("chaos_bolt_thrower_shield", "targetname");
     level.s_boss_battle.var_c67e8352 hide();
     level.s_boss_battle.var_5e9e4c15 = getent("chaos_bolt_thrower_sword", "targetname");
     level.s_boss_battle.var_5e9e4c15 hide();
-    level.s_boss_battle.var_3edd432d val::set("zm_red_boss_fight", "takedamage", 1);
-    level.s_boss_battle.var_3edd432d val::set("zm_red_boss_fight", "allowdeath", 1);
-    level.s_boss_battle.var_3edd432d.health = 99999;
-    level.s_boss_battle.var_3edd432d.b_override_explosive_damage_cap = 1;
-    level.s_boss_battle.var_d82d0e73 = array(level.s_boss_battle.var_3edd432d, level.s_boss_battle.var_c67e8352, level.s_boss_battle.var_5e9e4c15);
+    level.s_boss_battle.mdl_perseus val::set("zm_red_boss_fight", "takedamage", 1);
+    level.s_boss_battle.mdl_perseus val::set("zm_red_boss_fight", "allowdeath", 1);
+    level.s_boss_battle.mdl_perseus.health = 99999;
+    level.s_boss_battle.mdl_perseus.b_override_explosive_damage_cap = 1;
+    level.s_boss_battle.var_d82d0e73 = array(level.s_boss_battle.mdl_perseus, level.s_boss_battle.var_c67e8352, level.s_boss_battle.var_5e9e4c15);
     level.s_boss_battle.var_b7fe5d46 = 20000;
     level.s_boss_battle.var_36f0e240 = 0;
     level.s_boss_battle.var_4652a428 = 6;
     level.s_boss_battle.var_ad3f929f = 0;
     level.s_boss_battle.var_1e4f5dab = 15000;
-    level.s_boss_battle.var_3edd432d.var_c164e6c7 = 3;
+    level.s_boss_battle.mdl_perseus.var_c164e6c7 = 3;
     level.s_boss_battle.var_5dc26e42 = 0;
     level.s_boss_battle.var_7fc7f236 = 15000;
     level.s_boss_battle.var_5db6ed5f = getweapon("perseus_bolt_projectile");
@@ -218,7 +218,7 @@ function function_3a2efd4e(b_cheated = 0, var_7982b1c8 = 1, var_8ef91a04 = 1) {
     foreach (player in getplayers()) {
         player enableweaponfire();
     }
-    level.s_boss_battle.var_3edd432d show();
+    level.s_boss_battle.mdl_perseus show();
     level.s_boss_battle.var_c67e8352 show();
     level.s_boss_battle.var_5e9e4c15 show();
     if (!(isdefined(level.var_27a02034) && level.var_27a02034)) {
@@ -250,9 +250,9 @@ function function_3a2efd4e(b_cheated = 0, var_7982b1c8 = 1, var_8ef91a04 = 1) {
     level.var_6f6cc58 = &function_123b6625;
     level.var_4e4950d1 = &function_20c2dd32;
     zm_red::function_eeb6a1e7();
-    var_7faf3e8b = array::random(util::get_active_players(#"allies"));
-    if (isdefined(var_7faf3e8b)) {
-        var_7faf3e8b thread zm_vo::function_a2bd5a0c(#"hash_607c594be89dec0e", 2);
+    e_vo_player = array::random(util::get_active_players(#"allies"));
+    if (isdefined(e_vo_player)) {
+        e_vo_player thread zm_vo::function_a2bd5a0c(#"hash_607c594be89dec0e", 2);
     }
     level thread function_f6306dea();
     music::setmusicstate("boss_battle_stage_1");
@@ -272,10 +272,10 @@ function function_dfaf17c8() {
     level.s_boss_battle.var_4652a428 = 6;
     level.s_boss_battle.var_ad3f929f = 0;
     level.s_boss_battle.var_1e4f5dab = 15000;
-    level.s_boss_battle.var_3edd432d.var_c164e6c7 = 3;
+    level.s_boss_battle.mdl_perseus.var_c164e6c7 = 3;
     level.s_boss_battle.var_5dc26e42 = 0;
     level.s_boss_battle.var_7fc7f236 = 15000;
-    level.s_boss_battle.var_3edd432d.origin = level.s_boss_battle.s_pinnacle.origin;
+    level.s_boss_battle.mdl_perseus.origin = level.s_boss_battle.s_pinnacle.origin;
     level.s_boss_battle.var_2624492f = [];
     level.s_boss_battle.var_2624492f[2] = "fountain_miniboss_ent";
     level.s_boss_battle.var_2624492f[3] = "column_miniboss_ent";
@@ -322,7 +322,7 @@ function function_9099e4d8() {
         if (isdefined(self.var_cad44cf2)) {
             self giveweapon(self.var_cad44cf2);
         } else {
-            self takeweapon(level.var_49d60273);
+            self takeweapon(level.w_thunderstorm);
             self.var_424c161e = 0;
         }
     }
@@ -440,17 +440,17 @@ function function_756474bf() {
             iprintlnbold("<unknown string>");
         }
     #/
-    level.s_boss_battle.var_3edd432d function_c7a3202c("zone_boss_plateau_2");
-    level.s_boss_battle.var_3edd432d scene::play(#"aib_vign_cust_zm_red_boss1_stg2_to_stg3_01", level.s_boss_battle.var_d82d0e73);
+    level.s_boss_battle.mdl_perseus function_c7a3202c("zone_boss_plateau_2");
+    level.s_boss_battle.mdl_perseus scene::play(#"aib_vign_cust_zm_red_boss1_stg2_to_stg3_01", level.s_boss_battle.var_d82d0e73);
     function_4d844f2();
     level thread function_170c8b16();
     function_79611ef0(2);
-    var_7faf3e8b = array::random(util::get_active_players(#"allies"));
-    if (isdefined(var_7faf3e8b)) {
-        var_7faf3e8b thread zm_vo::function_a2bd5a0c(#"hash_67e6464e20e49efb", 1);
+    e_vo_player = array::random(util::get_active_players(#"allies"));
+    if (isdefined(e_vo_player)) {
+        e_vo_player thread zm_vo::function_a2bd5a0c(#"hash_67e6464e20e49efb", 1);
     }
     function_54c795f6();
-    level.s_boss_battle.var_3edd432d function_c7a3202c("zone_boss_plateau_2");
+    level.s_boss_battle.mdl_perseus function_c7a3202c("zone_boss_plateau_2");
     function_4d844f2();
     level thread function_14833fc2();
     function_e4f860ab();
@@ -475,8 +475,8 @@ function function_e4f860ab() {
 // Checksum 0x1fae4239, Offset: 0x3080
 // Size: 0x54
 function function_8b1f9518() {
-    if (isdefined(level.s_boss_battle.var_3edd432d)) {
-        level.s_boss_battle.var_3edd432d zm_vo::vo_say(#"hash_177261226759d391", 0, 1, 9999);
+    if (isdefined(level.s_boss_battle.mdl_perseus)) {
+        level.s_boss_battle.mdl_perseus zm_vo::vo_say(#"hash_177261226759d391", 0, 1, 9999);
     }
 }
 
@@ -485,11 +485,11 @@ function function_8b1f9518() {
 // Checksum 0xf9c89855, Offset: 0x30e0
 // Size: 0xac
 function function_170c8b16() {
-    level.s_boss_battle.var_3edd432d zm_vo::vo_say(#"hash_43413288a913e03", 0, 1, 9999);
+    level.s_boss_battle.mdl_perseus zm_vo::vo_say(#"hash_43413288a913e03", 0, 1, 9999);
     wait(1);
-    var_7faf3e8b = array::random(util::get_active_players(#"allies"));
-    if (isdefined(var_7faf3e8b)) {
-        var_7faf3e8b thread zm_vo::function_a2bd5a0c(#"hash_6589e76f2431dda0", 1);
+    e_vo_player = array::random(util::get_active_players(#"allies"));
+    if (isdefined(e_vo_player)) {
+        e_vo_player thread zm_vo::function_a2bd5a0c(#"hash_6589e76f2431dda0", 1);
     }
 }
 
@@ -531,7 +531,7 @@ function function_b3df51ad(a_ents) {
 // Checksum 0x6cdc6d74, Offset: 0x33d8
 // Size: 0x47a
 function chaos_bolt_thrower(e_target) {
-    e_perseus = level.s_boss_battle.var_3edd432d;
+    e_perseus = level.s_boss_battle.mdl_perseus;
     v_target_pos = e_target.origin;
     if (level.s_boss_battle.n_stage != 4) {
         level waittill(#"artillery_out");
@@ -936,7 +936,7 @@ function function_26acf7ee() {
 // Checksum 0xb68d7a1, Offset: 0x4ae0
 // Size: 0x44
 function function_4cd6f3d3(eventstruct) {
-    if (eventstruct.eattacker === level.s_boss_battle.var_3edd432d) {
+    if (eventstruct.eattacker === level.s_boss_battle.mdl_perseus) {
         zm_hero_weapon::function_3fe4a02e(self, 125);
     }
 }
@@ -1035,7 +1035,7 @@ function function_263a0b8() {
 // Size: 0x3d0
 function function_f6306dea() {
     level endon(#"perseus_defeated", #"hash_3496e98116b2be19", #"hash_7646638df88a3656");
-    e_perseus = level.s_boss_battle.var_3edd432d;
+    e_perseus = level.s_boss_battle.mdl_perseus;
     if (!(isdefined(level.var_42ea19b1) && level.var_42ea19b1)) {
         scene::add_scene_func(#"aib_vign_cust_zm_red_boss1_stg1_chaos_atk_01", &function_aa23278d);
         level.var_42ea19b1 = 1;
@@ -1235,23 +1235,23 @@ function private function_ca661e4b(var_956f2977, _town_pap_quest_complete) {
     switch (var_956f2977) {
     case 0:
         if (!_town_pap_quest_complete) {
-            level.s_boss_battle.var_3edd432d zm_vo::vo_say(#"hash_504e6e3f0da7a9df", 0, 1, 9999);
+            level.s_boss_battle.mdl_perseus zm_vo::vo_say(#"hash_504e6e3f0da7a9df", 0, 1, 9999);
             a_e_players = array::get_all_closest(self.origin, util::get_active_players(#"allies"));
             foreach (e_player in a_e_players) {
                 if (zm_utility::is_player_valid(e_player)) {
-                    var_7faf3e8b = e_player;
+                    e_vo_player = e_player;
                     break;
                 }
             }
-            if (isdefined(var_7faf3e8b)) {
-                var_7faf3e8b zm_vo::function_a2bd5a0c(#"hash_2c9021dcd1e62316", 1);
+            if (isdefined(e_vo_player)) {
+                e_vo_player zm_vo::function_a2bd5a0c(#"hash_2c9021dcd1e62316", 1);
             }
         } else {
             function_84fac8d5(0, 2, self.origin);
         }
         break;
     case 1:
-        function_84fac8d5(1, 2, level.s_boss_battle.var_3edd432d.origin);
+        function_84fac8d5(1, 2, level.s_boss_battle.mdl_perseus.origin);
         break;
     }
 }
@@ -1268,14 +1268,14 @@ function function_21ef9bb7(a_ents) {
             e_boss = self.scene_ents[#"pegasus"];
             var_653b9351 = 1;
             /#
-                var_b9c3f277 = "<unknown string>";
+                str_boss = "<unknown string>";
             #/
             e_boss thread function_8e7ffff8();
         } else if (isinarray(a_keys, #"boss_1")) {
             e_boss = self.scene_ents[#"boss_1"];
             var_653b9351 = 0;
             /#
-                var_b9c3f277 = "<unknown string>";
+                str_boss = "<unknown string>";
             #/
         }
     }
@@ -1316,7 +1316,7 @@ function function_21ef9bb7(a_ents) {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (var_653b9351 || !var_653b9351 && !(isdefined(e_boss.var_c3505998) && e_boss.var_c3505998)) {
-                    iprintlnbold(var_b9c3f277 + "<unknown string>" + s_waitresult.amount + "<unknown string>");
+                    iprintlnbold(str_boss + "<unknown string>" + s_waitresult.amount + "<unknown string>");
                 }
             }
         #/
@@ -1332,7 +1332,7 @@ function function_d9802986() {
     self endon("1e89b8ab1ad1c3c6");
     level endon(#"perseus_defeated", #"hash_7646638df88a3656");
     s_pinnacle = struct::get("s_pinnacle_center");
-    e_perseus = level.s_boss_battle.var_3edd432d;
+    e_perseus = level.s_boss_battle.mdl_perseus;
     b_target_found = 0;
     e_target = undefined;
     while (!b_target_found) {
@@ -1509,7 +1509,7 @@ function private function_325b6d95(v_origin) {
             }
             n_radius_squared = n_radius * n_radius;
             if (distancesquared(e_player.origin, v_origin) < n_radius_squared) {
-                e_player status_effect::status_effect_apply(level.s_boss_battle.var_b42f3b39, w_fire, level.s_boss_battle.var_3edd432d, 0);
+                e_player status_effect::status_effect_apply(level.s_boss_battle.var_b42f3b39, w_fire, level.s_boss_battle.mdl_perseus, 0);
                 e_player dodamage(10, v_origin);
             }
         }
@@ -1527,7 +1527,7 @@ function function_290d42b8(b_skipped = 0) {
     if (b_skipped) {
         level notify(#"boss_stage_1_done");
     }
-    level.s_boss_battle.var_3edd432d.var_c164e6c7 = 3;
+    level.s_boss_battle.mdl_perseus.var_c164e6c7 = 3;
     level.s_boss_battle.n_stage = 3;
     /#
         iprintlnbold("<unknown string>" + level.s_boss_battle.n_stage + "<unknown string>");
@@ -1626,7 +1626,7 @@ function function_4a58a0(e_perseus) {
 // Size: 0x1ae
 function function_2a866d1a(a_ents) {
     level endon(#"end_game");
-    e_perseus = level.s_boss_battle.var_3edd432d;
+    e_perseus = level.s_boss_battle.mdl_perseus;
     var_5287d229 = anglestoforward(e_perseus.angles);
     for (i = 0; i <= 10; i++) {
         n_yaw = 36 * i + 22;
@@ -1674,9 +1674,9 @@ function function_caa7eeb() {
     playfx(level._effect[#"perseus_death"], level.var_92830991.origin - vectorscale((0, 0, 1), 16));
     array::run_all(level.s_boss_battle.var_d82d0e73, &ghost);
     array::run_all(level.s_boss_battle.var_d82d0e73, &notsolid);
-    var_7faf3e8b = array::random(util::get_active_players(#"allies"));
-    if (isdefined(var_7faf3e8b)) {
-        var_7faf3e8b zm_vo::function_a2bd5a0c(#"hash_2b8d0adc9ec3b069");
+    e_vo_player = array::random(util::get_active_players(#"allies"));
+    if (isdefined(e_vo_player)) {
+        e_vo_player zm_vo::function_a2bd5a0c(#"hash_2b8d0adc9ec3b069");
     }
     var_791705a1 = level.var_92830991 zm_unitrigger::function_fac87205(&function_662093d4, 64);
     level.var_92830991 delete();
@@ -1701,7 +1701,7 @@ function function_662093d4(player) {
 function function_e069d23c(a_ents) {
     level endon(#"hash_3032e59c42d961c5", #"hash_6b4f82e61af7cb08", #"hash_7646638df88a3656");
     level waittill(#"hash_511761d3a360abd5");
-    e_perseus = level.s_boss_battle.var_3edd432d;
+    e_perseus = level.s_boss_battle.mdl_perseus;
     v_loc = e_perseus gettagorigin("tag_weapon_right");
     var_c23ba302 = spawn("trigger_radius", v_loc, 0, 192, 32);
     foreach (e_player in level.players) {
@@ -1831,7 +1831,7 @@ function private function_4d844f2() {
 // Size: 0x408
 function function_79611ef0(n_island) {
     level endon(#"hash_7646638df88a3656");
-    e_perseus = level.s_boss_battle.var_3edd432d;
+    e_perseus = level.s_boss_battle.mdl_perseus;
     switch (n_island) {
     case 1:
         var_46285 = level.s_boss_battle.var_76f4f0e9;
@@ -2123,7 +2123,7 @@ function function_85593a2(v_point) {
 // Size: 0x224
 function function_bc717eee(v_destination) {
     e_sword = level.s_boss_battle.var_5e9e4c15;
-    e_perseus = level.s_boss_battle.var_3edd432d;
+    e_perseus = level.s_boss_battle.mdl_perseus;
     v_forward = anglestoforward(e_perseus.angles);
     level waittill(#"hash_2720cc1fa8b1f8e2");
     var_2ff979fa = spawn("script_model", v_destination);
@@ -2278,7 +2278,7 @@ function function_1722dae1() {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"aoe_damage");
         if (s_waitresult.var_159100b7 == "zm_aoe_chaos_bolt" || s_waitresult.var_159100b7 == "zm_aoe_chaos_bolt_2") {
-            self status_effect::status_effect_apply(level.s_boss_battle.var_b42f3b39, undefined, level.s_boss_battle.var_3edd432d, 0, 3000);
+            self status_effect::status_effect_apply(level.s_boss_battle.var_b42f3b39, undefined, level.s_boss_battle.mdl_perseus, 0, 3000);
             zm_hero_weapon::function_3fe4a02e(self, 50);
         } else if (s_waitresult.var_159100b7 == "zm_aoe_strafe_storm") {
             self status_effect::status_effect_apply(level.s_boss_battle.var_86d9f46c);

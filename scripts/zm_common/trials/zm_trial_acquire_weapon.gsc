@@ -38,9 +38,9 @@ function private on_begin(weapon_name, var_eaa7f0ba, var_957937ee, var_9c56c5a9,
         self.var_eaa7f0ba = zm_trial::function_5769f26a(var_eaa7f0ba);
     }
     if (weapon_name == #"hero_lv3_weapon") {
-        var_789e79cc = array(#"hero_chakram_lv3", #"hero_hammer_lv3", #"hero_scepter_lv3", #"hero_sword_pistol_lv3");
+        hero_lv3_weapons = array(#"hero_chakram_lv3", #"hero_hammer_lv3", #"hero_scepter_lv3", #"hero_sword_pistol_lv3");
         level.var_ab9d0ec6 = [];
-        foreach (var_ae209633 in var_789e79cc) {
+        foreach (var_ae209633 in hero_lv3_weapons) {
             if (!isdefined(level.var_ab9d0ec6)) {
                 level.var_ab9d0ec6 = [];
             } else if (!isarray(level.var_ab9d0ec6)) {

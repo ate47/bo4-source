@@ -197,7 +197,7 @@ function function_b4a975f1(attacker, victim, weapon, attackerweapon, meansofdeat
     smoketrigger = victim function_367ce00e();
     if (isdefined(smoketrigger)) {
         if (attacker === smoketrigger.owner) {
-            if (isdefined(attackerweapon) && attackerweapon !== level.var_8e2aec59) {
+            if (isdefined(attackerweapon) && attackerweapon !== level.weaponsigblade) {
                 if (isdefined(level.playgadgetsuccess) && !isdefined(smoketrigger.var_25db02aa)) {
                     smoketrigger.kills = (isdefined(smoketrigger.kills) ? smoketrigger.kills : 0) + 1;
                     if (isdefined(level.var_ac6052e9)) {

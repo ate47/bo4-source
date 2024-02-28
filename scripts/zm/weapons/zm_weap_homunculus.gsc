@@ -110,7 +110,7 @@ function function_91b8863c() {
 // Checksum 0x1590a37, Offset: 0x650
 // Size: 0xd2
 function function_7b1ec82e(s_result) {
-    if (s_result.weapon == level.w_homunculus || s_result.weapon == level.w_homunculus_upgraded || isdefined(level.var_3b96ad73) && s_result.weapon == level.var_3b96ad73) {
+    if (s_result.weapon == level.w_homunculus || s_result.weapon == level.w_homunculus_upgraded || isdefined(level.w_homunculus_leprechaun) && s_result.weapon == level.w_homunculus_leprechaun) {
         s_result.projectile.use_grenade_special_long_bookmark = 1;
         s_result.projectile.grenade_multiattack_bookmark_count = 1;
         s_result.projectile.weapon = s_result.weapon;

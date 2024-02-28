@@ -223,7 +223,7 @@ function function_71461330() {
 // Checksum 0xea8942ed, Offset: 0xe08
 // Size: 0x16c
 function function_4204dba2() {
-    e_machine = self.var_3468124.var_73bd396b;
+    e_machine = self.var_3468124.mdl_altar;
     var_2379bb0e = spawn("script_model", e_machine.origin);
     var_2379bb0e.angles = e_machine.angles;
     var_2379bb0e setmodel(e_machine.model);

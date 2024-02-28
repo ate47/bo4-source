@@ -168,12 +168,12 @@ function function_393b459a(e_activator) {
 // Size: 0x338
 function function_f5a4a3eb() {
     a_s_buttons = struct::get_array("hidden_door_button");
-    var_2151fb35 = getentarray("hidden_door", "targetname");
+    a_mdl_doors = getentarray("hidden_door", "targetname");
     var_ebd977d = getentarray("hidden_room", "script_interact_group");
-    array::thread_all(var_2151fb35, &function_670cd4a3);
+    array::thread_all(a_mdl_doors, &function_670cd4a3);
     foreach (s_button in a_s_buttons) {
         s_button.mdl_gameobject.a_s_buttons = a_s_buttons;
-        s_button.mdl_gameobject.var_2151fb35 = var_2151fb35;
+        s_button.mdl_gameobject.a_mdl_doors = a_mdl_doors;
         s_button.mdl_gameobject.var_ebd977d = var_ebd977d;
         if (getgametypesetting(#"allowmapscripting")) {
             level thread function_9940fbb9(s_button.mdl_gameobject.var_ebd977d);
@@ -183,7 +183,7 @@ function function_f5a4a3eb() {
             s_button.mdl_gameobject gameobjects::destroy_object(1, 0);
         }
     }
-    foreach (mdl_door in var_2151fb35) {
+    foreach (mdl_door in a_mdl_doors) {
         s_open = struct::get(mdl_door.target);
         mdl_door.v_forward = s_open.angles;
         mdl_door.v_close = mdl_door.origin;
@@ -203,8 +203,8 @@ function function_f5a4a3eb() {
 function function_886f3928(e_activator) {
     array::thread_all(self.a_s_buttons, &gameobjects::disable_object);
     level thread function_9940fbb9(self.var_ebd977d, "busy");
-    array::thread_all(self.var_2151fb35, &function_dd0b407b);
-    array::wait_till(self.var_2151fb35, "hidden_door_moved");
+    array::thread_all(self.a_mdl_doors, &function_dd0b407b);
+    array::wait_till(self.a_mdl_doors, "hidden_door_moved");
     wait(getdvarfloat(#"hash_5b883b04d5499fd6", 5));
     level thread function_9940fbb9(self.var_ebd977d);
     array::thread_all(self.a_s_buttons, &gameobjects::enable_object);
@@ -281,8 +281,8 @@ function function_e0954c11() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x593201d3, Offset: 0x18b8
 // Size: 0x170
-function function_9940fbb9(var_344a6a1a, var_2a7cd391 = "use") {
-    foreach (var_6d1ba563 in var_344a6a1a) {
+function function_9940fbb9(a_models, var_2a7cd391 = "use") {
+    foreach (var_6d1ba563 in a_models) {
         if (var_6d1ba563.var_83f44c == var_2a7cd391) {
             if (var_6d1ba563 ishidden()) {
                 var_6d1ba563 show();
@@ -290,7 +290,7 @@ function function_9940fbb9(var_344a6a1a, var_2a7cd391 = "use") {
         }
     }
     waitframe(3);
-    foreach (var_716b4ead in var_344a6a1a) {
+    foreach (var_716b4ead in a_models) {
         if (var_716b4ead.var_83f44c != var_2a7cd391) {
             if (!var_716b4ead ishidden()) {
                 var_716b4ead hide();

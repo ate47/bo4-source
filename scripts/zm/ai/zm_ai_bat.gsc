@@ -321,7 +321,7 @@ function private function_1b029905() {
         waitresult = undefined;
         waitresult = level waittill(#"transformation_complete");
         if (waitresult.id === #"hash_791d597ac0457860" && isdefined(waitresult.data)) {
-            newai = waitresult.var_944250d2[0];
+            newai = waitresult.new_ai[0];
             newai.maxhealth = newai.maxhealth * waitresult.data.healthmultiplier;
             newai.health = newai.maxhealth;
         }

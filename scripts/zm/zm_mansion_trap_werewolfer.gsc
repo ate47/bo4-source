@@ -83,10 +83,10 @@ function function_670dda89() {
     level flag::set(#"hash_6f483dda6f8ab19d");
     level thread function_408fcb87();
     level exploder::exploder("fxexp_ele_trap_activate");
-    if (!isdefined(self.var_fe043be4)) {
-        self.var_fe043be4 = getent("mdl_ww_trap_lever", "targetname");
+    if (!isdefined(self.mdl_handle)) {
+        self.mdl_handle = getent("mdl_ww_trap_lever", "targetname");
     }
-    self.var_fe043be4 rotatepitch(90, 0.5);
+    self.mdl_handle rotatepitch(90, 0.5);
     level.var_4cca20a9 clientfield::set("" + #"hash_17df66ef5f71c0de", 2);
     fx_points = struct::get_array(self.target, "targetname");
     for (i = 0; i < fx_points.size; i++) {
@@ -125,7 +125,7 @@ function function_38b44aab() {
     level notify(#"traps_cooldown", {#var_be3f58a:self.script_string});
     n_cooldown = zm_traps::function_da13db45(self._trap_cooldown_time, self.activated_by_player);
     wait(n_cooldown);
-    self.var_fe043be4 rotatepitch(-90, 0.5);
+    self.mdl_handle rotatepitch(-90, 0.5);
     wait(0.5);
     level.var_4cca20a9 clientfield::set("" + #"hash_17df66ef5f71c0de", 1);
     level notify(#"traps_available", {#var_be3f58a:self.script_string});

@@ -208,7 +208,7 @@ function function_7446a885() {
     level.var_cbcb0078 = 0;
     str_name = "s_attack_objective_" + level.var_347db8b6 + 1;
     var_d8e47fe3 = struct::get(str_name, "targetname");
-    var_8caf8b5a = ct_utils::create_waypoint(#"hash_14f53e0433721169", var_d8e47fe3.origin, var_d8e47fe3.angles, #"any", undefined, 0, undefined);
+    attack_waypoint = ct_utils::create_waypoint(#"hash_14f53e0433721169", var_d8e47fe3.origin, var_d8e47fe3.angles, #"any", undefined, 0, undefined);
     level.var_a8a15809 = var_d8e47fe3.origin;
     if (isdefined(level.var_571c3787) && level.var_571c3787) {
         level.var_cbcb0078 = 1;
@@ -240,7 +240,7 @@ function function_7446a885() {
         }
         waitframe(1);
     }
-    var_8caf8b5a gameobjects::set_visible_team("none");
+    attack_waypoint gameobjects::set_visible_team("none");
     level.var_cbcb0078 = 1;
     level flag::clear("attack_event_active");
 }

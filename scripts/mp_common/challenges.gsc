@@ -1540,7 +1540,7 @@ function challengekills(data) {
                 }
             }
         }
-        if (isdefined(level.var_2e3031be) && isdefined(victimvisionpulseactivatetime) && victimvisionpulseactivatetime + level.var_2e3031be.gadget_pulse_duration / 3 + 500 > time) {
+        if (isdefined(level.weaponvisionpulse) && isdefined(victimvisionpulseactivatetime) && victimvisionpulseactivatetime + level.weaponvisionpulse.gadget_pulse_duration / 3 + 500 > time) {
             attacker stats::function_dad108fa(#"shutdown_visionpulse_immediately", 1);
         }
         if (var_1fa3e8cc === 1 && !var_8556c722 && var_911b9b40 !== 1) {

@@ -39,7 +39,7 @@
 // Size: 0x32c
 function event_handler[gametype_init] main(eventstruct) {
     ct_core::function_46e95cc7();
-    level.var_12b138a6 = getweapon(#"ct_hack_tool");
+    level.wpn_hack = getweapon(#"ct_hack_tool");
     level.hardpoint_bar = luielembar_ct::register("hardpoint_bar");
     callback::on_ai_killed(&function_41ce2473);
     ct_utils::function_6046a5e3(#"ar_damage_t8", array("fmj", "fmj2", "extbarrel"));
@@ -856,13 +856,13 @@ function vip_checkpoint_action() {
     self ct_bots::function_26d45f32();
     while (self flag::get("vip_checkpoint_action")) {
         /#
-            var_7b1c5bd7 = self getweaponslist();
+            a_wpns = self getweaponslist();
         #/
         wpn_current = self getcurrentweapon();
-        if (wpn_current != level.var_12b138a6) {
-            if (!level.ai_vip hasweapon(level.var_12b138a6)) {
-                level.ai_vip giveweapon(level.var_12b138a6);
-                level.ai_vip switchtoweapon(level.var_12b138a6, 1);
+        if (wpn_current != level.wpn_hack) {
+            if (!level.ai_vip hasweapon(level.wpn_hack)) {
+                level.ai_vip giveweapon(level.wpn_hack);
+                level.ai_vip switchtoweapon(level.wpn_hack, 1);
             }
             level.ai_vip takeweapon(wpn_current);
         }
@@ -881,7 +881,7 @@ function vip_checkpoint_action() {
 // Size: 0x3c
 function function_7af8c620() {
     self ct_bots::function_26d45f32();
-    self giveweapon(level.var_12b138a6);
+    self giveweapon(level.wpn_hack);
 }
 
 // Namespace ct_torque/ct_torque
@@ -995,9 +995,9 @@ function function_beca73db() {
 // Size: 0x9c
 function function_bbd158ad() {
     player = self;
-    var_9d063af9 = player gadgetgetslot(level.smartcoversettings.var_8d86ade8);
-    player gadgetdeactivate(var_9d063af9, level.smartcoversettings.var_8d86ade8);
-    player function_48e08b4(var_9d063af9, level.smartcoversettings.var_8d86ade8);
+    var_9d063af9 = player gadgetgetslot(level.smartcoversettings.smartcoverweapon);
+    player gadgetdeactivate(var_9d063af9, level.smartcoversettings.smartcoverweapon);
+    player function_48e08b4(var_9d063af9, level.smartcoversettings.smartcoverweapon);
 }
 
 // Namespace ct_torque/ct_torque
@@ -1117,9 +1117,9 @@ function function_8d5cfdef() {
         var_a3e53b82 = undefined;
         var_20e43fcf = [];
         if (isdefined(e_player.smartcover) && isdefined(e_player.smartcover.var_58e8b64d) && e_player.smartcover.var_58e8b64d.size > 0) {
-            foreach (var_786bfd80 in e_player.smartcover.var_58e8b64d) {
-                if (isdefined(var_786bfd80) && var_786bfd80.health > 0) {
-                    foreach (var_553008b4 in var_786bfd80.var_55c5726a) {
+            foreach (coverobj in e_player.smartcover.var_58e8b64d) {
+                if (isdefined(coverobj) && coverobj.health > 0) {
+                    foreach (var_553008b4 in coverobj.var_55c5726a) {
                         if (isdefined(var_553008b4)) {
                             var_337e484e = self canpath(self.origin, var_553008b4.origin);
                             if (var_337e484e) {
@@ -1133,9 +1133,9 @@ function function_8d5cfdef() {
             }
         }
         if (isdefined(e_player.concertinawire) && isdefined(e_player.concertinawire.var_a3aac76c) && e_player.concertinawire.var_a3aac76c.size > 0) {
-            foreach (var_786bfd80 in e_player.concertinawire.var_a3aac76c) {
-                if (isdefined(var_786bfd80) && var_786bfd80.health > 0) {
-                    foreach (var_553008b4 in var_786bfd80.var_55c5726a) {
+            foreach (coverobj in e_player.concertinawire.var_a3aac76c) {
+                if (isdefined(coverobj) && coverobj.health > 0) {
+                    foreach (var_553008b4 in coverobj.var_55c5726a) {
                         if (isdefined(var_553008b4)) {
                             var_337e484e = self canpath(self.origin, var_553008b4.origin);
                             if (var_337e484e) {
@@ -1173,9 +1173,9 @@ function function_8d5cfdef() {
 // Checksum 0x1c463749, Offset: 0x53e8
 // Size: 0x128
 function function_dc8ed534(var_47fd81d) {
-    foreach (var_786bfd80 in var_47fd81d) {
-        if (isdefined(var_786bfd80) && var_786bfd80.health > 0) {
-            foreach (var_553008b4 in var_786bfd80.var_55c5726a) {
+    foreach (coverobj in var_47fd81d) {
+        if (isdefined(coverobj) && coverobj.health > 0) {
+            foreach (var_553008b4 in coverobj.var_55c5726a) {
                 if (isdefined(var_553008b4) && self canpath(self.origin, var_553008b4.origin)) {
                     return var_553008b4;
                 }

@@ -238,7 +238,7 @@ function private function_23d1cec2() {
 // Checksum 0x5f9c0e2a, Offset: 0xee0
 // Size: 0xca
 function function_9e38a14a(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
-    if (weapon == level.var_1b72f911) {
+    if (weapon == level.shockrifleweapon) {
         idamage = self.health;
     }
     if (weapon === getweapon(#"ability_smart_cover")) {

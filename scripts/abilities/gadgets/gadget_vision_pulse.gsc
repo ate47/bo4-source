@@ -15,7 +15,7 @@
 // Checksum 0x364a4479, Offset: 0x1b8
 // Size: 0x22e
 function init_shared() {
-    level.var_2e3031be = getweapon(#"gadget_vision_pulse");
+    level.weaponvisionpulse = getweapon(#"gadget_vision_pulse");
     ability_player::register_gadget_activation_callbacks(4, &gadget_vision_pulse_on, &gadget_vision_pulse_off);
     ability_player::register_gadget_flicker_callbacks(4, &gadget_vision_pulse_on_flicker);
     ability_player::register_gadget_is_inuse_callbacks(4, &gadget_vision_pulse_is_inuse);
@@ -28,8 +28,8 @@ function init_shared() {
         level.vsmgr_prio_visionset_visionpulse = 61;
     }
     visionset_mgr::register_info("visionset", "vision_pulse", 1, level.vsmgr_prio_visionset_visionpulse, 12, 1, &visionset_mgr::ramp_in_out_thread_per_player_death_shutdown, 0);
-    globallogic_score::register_kill_callback(level.var_2e3031be, &is_pulsed);
-    globallogic_score::function_86f90713(level.var_2e3031be, &is_pulsed);
+    globallogic_score::register_kill_callback(level.weaponvisionpulse, &is_pulsed);
+    globallogic_score::function_86f90713(level.weaponvisionpulse, &is_pulsed);
     level.shutdown_vision_pulse = &shutdown_vision_pulse;
 }
 
@@ -100,7 +100,7 @@ function gadget_vision_pulse_on_spawn() {
 // Checksum 0x7e85e4e, Offset: 0x5c0
 // Size: 0x4c
 function gadget_vision_pulse_ramp_hold_func() {
-    self waittilltimeout(float(level.var_2e3031be.var_4d88a1ff) / 1000 - 0.35, #"ramp_out_visionset");
+    self waittilltimeout(float(level.weaponvisionpulse.var_4d88a1ff) / 1000 - 0.35, #"ramp_out_visionset");
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
@@ -267,7 +267,7 @@ function function_19bef771(weapon) {
     self endon(#"death", #"shutdown_vision_pulse", #"hash_7e581b90612825f4");
     wait(float(weapon.var_4d88a1ff) / 1000);
     self disableoffhandweapons();
-    self switchtooffhand(level.var_2e3031be);
+    self switchtooffhand(level.weaponvisionpulse);
     waitframe(1);
     self ability_player::function_f2250880(weapon, 0);
     played = 0;

@@ -35,14 +35,14 @@ function on_gameplay_started(localclientnum) {
 // Size: 0x250
 function function_5a9c338e(localclientnum) {
     level endon(#"hash_d5c5c322d0ccf8");
-    var_377722d[0] = (33, -1286, 292);
-    var_377722d[1] = (477, -919, 297);
-    var_377722d[2] = (-434, -961, 309);
+    a_v_pa[0] = (33, -1286, 292);
+    a_v_pa[1] = (477, -919, 297);
+    a_v_pa[2] = (-434, -961, 309);
     a_str_lines = array(#"hash_27b25c569e7a0e52", #"hash_27b25d569e7a1005", #"hash_27b25a569e7a0aec", #"hash_27b25b569e7a0c9f", #"hash_27b258569e7a0786", #"hash_27b259569e7a0939", #"hash_27b256569e7a0420", #"hash_27b257569e7a05d3", #"hash_27b264569e7a1bea", #"hash_27b265569e7a1d9d", #"hash_6e24cf2f49698a0f");
     wait(8);
     foreach (line in a_str_lines) {
-        foreach (var_cca85da in var_377722d) {
-            playsound(localclientnum, line, var_cca85da);
+        foreach (v_pa in a_v_pa) {
+            playsound(localclientnum, line, v_pa);
         }
         wait(randomfloatrange(35, 45));
     }

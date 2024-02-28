@@ -72,7 +72,7 @@ function event_handler[gametype_init] main(eventstruct) {
     level.onspawnplayer = &onspawnplayer;
     level.var_cdb8ae2c = &function_a8da260c;
     player::function_cf3aa03d(&onplayerkilled);
-    level.var_b7d7d172 = getweapon(#"clean_drop");
+    level.cleandropweapon = getweapon(#"clean_drop");
     level.var_c5e28dc5 = getgametypesetting(#"hash_5cc4c3042b7d4935");
     stockpileorders = isdefined(level.var_c5e28dc5) && level.var_c5e28dc5 ? undefined : "stockpileOrders";
     globallogic_audio::set_leader_gametype_dialog("startStockpile", "hcStartStockpile", stockpileorders, stockpileorders, "bbStartStockpile", "hcbbStartStockpile");
@@ -332,7 +332,7 @@ function function_903c4eff(victim, attacker, pos, yawangle) {
     }
     dropangles = (-70, yawangle, 0);
     force = anglestoforward(dropangles) * randomfloatrange(getdvarfloat(#"dropmin", 220), getdvarfloat(#"dropmax", 300));
-    self.var_2581d0d = victim magicmissile(level.var_b7d7d172, pos, force);
+    self.var_2581d0d = victim magicmissile(level.cleandropweapon, pos, force);
     self.var_2581d0d hide();
     self.var_2581d0d notsolid();
     self thread function_8cb72ba4();

@@ -423,10 +423,10 @@ function scoreeventplayerkill(data, time) {
             for (i = 0; i < victimvisionpulsearray.size; i++) {
                 player = victimvisionpulsearray[i];
                 if (player == attacker) {
-                    if (victimvisionpulseactivatetime + 300 > time - level.var_2e3031be.gadget_pulse_duration) {
+                    if (victimvisionpulseactivatetime + 300 > time - level.weaponvisionpulse.gadget_pulse_duration) {
                         distancetopulse = distance(victimvisionpulseoriginarray[i], victimvisionpulseorigin);
-                        ratio = distancetopulse / level.var_2e3031be.gadget_pulse_max_range;
-                        timing = ratio * level.var_2e3031be.gadget_pulse_duration;
+                        ratio = distancetopulse / level.weaponvisionpulse.gadget_pulse_max_range;
+                        timing = ratio * level.weaponvisionpulse.gadget_pulse_duration;
                         if (victimvisionpulseactivatetime + 300 > time - timing) {
                             break;
                         }
@@ -442,20 +442,20 @@ function scoreeventplayerkill(data, time) {
                 attacker notify(#"hero_shutdown_gadget", {#victim:victim, #gadget:victimheroability});
             }
         }
-        if (victimlastvisionpulsedtime != 0 && victimlastvisionpulsedtime > time - level.var_2e3031be.var_9d776ba6) {
+        if (victimlastvisionpulsedtime != 0 && victimlastvisionpulsedtime > time - level.weaponvisionpulse.var_9d776ba6) {
             if (isdefined(victimlastvisionpulsedby) && attacker != victimlastvisionpulsedby && attacker util::isenemyplayer(victimlastvisionpulsedby) == 0) {
                 if (function_9aef690a(weapon)) {
-                    processscoreevent(#"hash_bad79b50f40ce0b", victimlastvisionpulsedby, victim, level.var_2e3031be);
+                    processscoreevent(#"hash_bad79b50f40ce0b", victimlastvisionpulsedby, victim, level.weaponvisionpulse);
                 } else {
-                    processscoreevent(#"vision_pulse_assist", victimlastvisionpulsedby, victim, level.var_2e3031be);
+                    processscoreevent(#"vision_pulse_assist", victimlastvisionpulsedby, victim, level.weaponvisionpulse);
                 }
                 processscoreevent(#"hash_6d41ba237c04cb10", attacker, victim, weapon);
             } else {
-                attacker hero_ability_kill_event(level.var_2e3031be, get_equipped_hero_ability(victimheroabilityname));
+                attacker hero_ability_kill_event(level.weaponvisionpulse, get_equipped_hero_ability(victimheroabilityname));
                 attacker specialistmedalachievement();
                 attacker thread specialiststatabilityusage(4, 0);
                 if (attackerisroulette && !victimisthieforroulette && victimheroabilityname === "gadget_vision_pulse") {
-                    processscoreevent(#"kill_enemy_with_their_hero_ability", attacker, victim, level.var_2e3031be);
+                    processscoreevent(#"kill_enemy_with_their_hero_ability", attacker, victim, level.weaponvisionpulse);
                 }
             }
             if (isdefined(level.playgadgetsuccess) && isdefined(victimlastvisionpulsedby)) {
@@ -464,7 +464,7 @@ function scoreeventplayerkill(data, time) {
                     var_9194a036 = [[ level.var_ac6052e9 ]]("visionPulseSuccessLineCount", 0);
                 }
                 if (victimlastvisionpulsedby.visionpulsekill == (isdefined(var_9194a036) ? var_9194a036 : 3)) {
-                    victimlastvisionpulsedby thread [[ level.playgadgetsuccess ]](level.var_2e3031be, undefined, undefined, undefined);
+                    victimlastvisionpulsedby thread [[ level.playgadgetsuccess ]](level.weaponvisionpulse, undefined, undefined, undefined);
                 }
             }
         }
@@ -1683,9 +1683,9 @@ function function_43ee1b3d(attacker, victim, attackerweapon) {
     }
     if (isdefined(var_71eedb0b) && isdefined(var_a3aba5a9) && var_a3aba5a9) {
         if (smartcover.owner == attacker) {
-            processscoreevent(#"deployable_cover_kill", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
+            processscoreevent(#"deployable_cover_kill", var_71eedb0b, victim, level.smartcoversettings.smartcoverweapon);
         } else {
-            processscoreevent(#"deployable_cover_assist", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
+            processscoreevent(#"deployable_cover_assist", var_71eedb0b, victim, level.smartcoversettings.smartcoverweapon);
         }
     }
 }

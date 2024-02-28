@@ -54,7 +54,7 @@ function function_9bf8e274() {
     self function_21ea8f2b(1);
     foreach (var_5a1e3e5b in level.hero_weapon) {
         foreach (w_hero in var_5a1e3e5b) {
-            self function_28602a03(w_hero, 1, 1);
+            self lockweapon(w_hero, 1, 1);
         }
     }
 }
@@ -592,16 +592,16 @@ function function_79518194(eventstruct) {
 function function_dc9ab223(b_locked = 1, var_1d9fd2ff = 0) {
     if (b_locked) {
         foreach (weapon in zm_loadout::function_5a5a742a("lethal_grenade")) {
-            self function_28602a03(weapon, 1, 1);
+            self lockweapon(weapon, 1, 1);
             self function_88805385(1);
         }
         if (var_1d9fd2ff) {
             foreach (weapon in zm_loadout::function_5a5a742a("tactical_grenade")) {
                 if (isdefined(weapon.ismeleeweapon) && weapon.ismeleeweapon) {
-                    self function_28602a03(weapon, 0, 1);
+                    self lockweapon(weapon, 0, 1);
                 }
                 if (weapon.dualwieldweapon != level.weaponnone && isdefined(weapon.dualwieldweapon.ismeleeweapon) && weapon.dualwieldweapon.ismeleeweapon) {
-                    self function_28602a03(weapon.dualwieldweapon, 0, 1);
+                    self lockweapon(weapon.dualwieldweapon, 0, 1);
                 }
             }
         }
@@ -633,7 +633,7 @@ function function_8677ce00(b_locked = 1) {
     if (b_locked) {
         foreach (weapon in a_weapons) {
             if (!self function_635f9c02(weapon)) {
-                self function_28602a03(weapon, 0, 1);
+                self lockweapon(weapon, 0, 1);
             }
         }
     } else {
@@ -708,9 +708,9 @@ function function_bf710271(var_ef2d79a9 = 1, var_88ebd569 = 1, var_fdb73f9e = 1,
             continue;
         }
         self function_b142d49f(weapon, var_ef2d79a9);
-        self function_28602a03(weapon, var_af33418e, var_3bd29f5e);
+        self lockweapon(weapon, var_af33418e, var_3bd29f5e);
         if (weapon.dualwieldweapon != level.weaponnone) {
-            self function_28602a03(weapon.dualwieldweapon, var_af33418e, var_3bd29f5e);
+            self lockweapon(weapon.dualwieldweapon, var_af33418e, var_3bd29f5e);
         }
     }
     if (var_88ebd569) {

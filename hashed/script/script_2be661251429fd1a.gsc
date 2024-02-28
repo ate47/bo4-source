@@ -53,8 +53,8 @@ function __main__() {
 // Size: 0x274
 function register_actions() {
     bot_action::register_action(#"activate_health_gadget", &bot_action::weapon_rank, &function_bcb5ef11, &bot_action::activate_health_gadget);
-    bot_action::register_action(#"throw_molotov", &bot_action::weapon_rank, &function_1275c409, &bot_action::function_90c011d5);
-    bot_action::register_action(#"throw_grenade", &bot_action::weapon_rank, &function_32e8b358, &bot_action::function_90c011d5);
+    bot_action::register_action(#"throw_molotov", &bot_action::weapon_rank, &function_1275c409, &bot_action::throw_offhand);
+    bot_action::register_action(#"throw_grenade", &bot_action::weapon_rank, &function_32e8b358, &bot_action::throw_offhand);
     bot_action::register_action(#"throw_mine", &bot_action::weapon_rank, &function_369cb1a5, &bot_action::function_94f96101);
     bot_action::register_action(#"hash_63c5000998c406e2", &bot_action::weapon_rank, &bot_action::function_39317d6e, &bot_action::test_gadget);
     bot_action::register_action(#"hash_7f17997c50415cb7", &bot_action::weapon_rank, &bot_action::function_30636b1c, &bot_action::test_gadget);

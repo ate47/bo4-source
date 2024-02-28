@@ -310,8 +310,8 @@ function function_6cfeee53() {
     var_f4ae3365 = e_player gamepadusedlast() ? #"hash_35f37327f50369b4" : #"hash_625da864ae1f050";
     e_player thread ct_utils::function_61c3d59c(var_f4ae3365, undefined);
     level thread ct_vo::function_14b08e49(array(#"hash_17674b4f74a1fbc7"), "stop_nag");
-    var_2c6c5bdf = getweapon(#"hero_annihilator");
-    while (e_player getcurrentweapon() !== var_2c6c5bdf) {
+    wpn_annihilator = getweapon(#"hero_annihilator");
+    while (e_player getcurrentweapon() !== wpn_annihilator) {
         waitframe(1);
     }
     level notify(#"stop_nag");
@@ -411,14 +411,14 @@ function function_9f3fe320() {
         if (!var_f8323e03) {
             ct_vo::function_831e0584(array(#"hash_611d337533c13e59"), 1);
         }
-        var_2c6c5bdf = getweapon(#"hero_annihilator");
+        wpn_annihilator = getweapon(#"hero_annihilator");
         e_player = ct_utils::get_player();
-        if (e_player getcurrentweapon() !== var_2c6c5bdf) {
+        if (e_player getcurrentweapon() !== wpn_annihilator) {
             var_8131dc5a = e_player gamepadusedlast() ? #"hash_35f37327f50369b4" : #"hash_625da864ae1f050";
             e_player thread ct_utils::function_61c3d59c(var_8131dc5a, undefined);
             level thread ct_vo::function_14b08e49(array(#"hash_17674b4f74a1fbc7"), "stop_nag");
-            var_2c6c5bdf = getweapon(#"hero_annihilator");
-            while (e_player getcurrentweapon() !== var_2c6c5bdf) {
+            wpn_annihilator = getweapon(#"hero_annihilator");
+            while (e_player getcurrentweapon() !== wpn_annihilator) {
                 waitframe(1);
             }
             ct_utils::function_c2a10fc();
@@ -562,9 +562,9 @@ function function_f36aa3f0() {
     level notify(#"stop_event1_enter_collision");
     level notify(#"start_5_targets_collision");
     level notify(#"start_5_targets_exit_collision");
-    var_3608d414 = array(#"hash_5b98ba49240b816d");
+    a_str_vo = array(#"hash_5b98ba49240b816d");
     e_player = ct_utils::get_player();
-    e_player thread ct_utils::function_61c3d59c(#"hash_7ae3c7f801226d64", var_3608d414);
+    e_player thread ct_utils::function_61c3d59c(#"hash_7ae3c7f801226d64", a_str_vo);
     wait(0.1);
     ct_vo::function_3ca1b77d();
     ct_utils::function_c2a10fc();
@@ -1574,7 +1574,7 @@ function gunship_event() {
     var_257a5d2d = e_player gamepadusedlast() ? #"hash_4d62965b3d78662" : #"hash_3e1c84f20dbc93c2";
     e_player thread ct_utils::function_61c3d59c(var_257a5d2d, undefined);
     var_5e939643 = 0;
-    var_aed142c = 0;
+    b_fire = 0;
     n_start_time = gettime() / 1000;
     while (1) {
         e_player = ct_utils::get_player();
@@ -1585,9 +1585,9 @@ function gunship_event() {
             var_5e939643++;
         }
         if (e_player attackbuttonpressed()) {
-            var_aed142c = 1;
+            b_fire = 1;
         }
-        if (var_5e939643 >= 3 && var_aed142c) {
+        if (var_5e939643 >= 3 && b_fire) {
             break;
         }
         n_time = gettime() / 1000;
@@ -2057,10 +2057,10 @@ function function_7e060369() {
         e_beacon = waitresult.beacon.spawnbeacon;
         if (isdefined(e_beacon) && !isbot(waitresult.owner)) {
             var_e9af190e = 1;
-            var_7f370a86 = getentarray("defend_hardpoint_collision", "targetname");
+            a_coll = getentarray("defend_hardpoint_collision", "targetname");
             var_a182836 = getentarray("defend_hp_collision_exit_door", "targetname");
-            var_7f370a86 = arraycombine(var_7f370a86, var_a182836, 0, 0);
-            foreach (e_coll in var_7f370a86) {
+            a_coll = arraycombine(a_coll, var_a182836, 0, 0);
+            foreach (e_coll in a_coll) {
                 if (e_beacon istouching(e_coll)) {
                     e_beacon thread spawn_beacon::function_a9ff3efb(0);
                     level.var_2b87f134 = undefined;

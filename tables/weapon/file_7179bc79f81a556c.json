@@ -1,7 +1,7 @@
 {
     "name": "#hash_7179bc79f81a556c",
     "baseWeapon": "#eq_wraith_fire",
-    "displayname": "#hash_2c62a9364c4c32aa",
+    "displayname": "#weapon/wraith_fire",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

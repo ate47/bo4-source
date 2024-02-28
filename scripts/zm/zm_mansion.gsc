@@ -901,36 +901,36 @@ function function_df9d5ef() {
     foreach (s_altar in struct::get_array("perk_vapor_altar")) {
         switch (s_altar.prefabname) {
         case #"graveyard":
-            if (s_altar.var_73bd396b.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
+            if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
                 exploder::exploder("exp_lgt_cemeter_alter_zeus");
-            } else if (s_altar.var_73bd396b.model === #"p8_fxanim_zm_vapor_altar_odin_mod") {
+            } else if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_odin_mod") {
                 exploder::exploder("exp_lgt_cemeter_alter_odin");
             } else {
                 exploder::exploder("exp_lgt_cemeter_alter_ra");
             }
             break;
         case #"gardens":
-            if (s_altar.var_73bd396b.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
+            if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
                 exploder::exploder("exp_lgt_garden_alter_zeus");
-            } else if (s_altar.var_73bd396b.model === #"p8_fxanim_zm_vapor_altar_odin_mod") {
+            } else if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_odin_mod") {
                 exploder::exploder("exp_lgt_garden_alter_odin");
             } else {
                 exploder::exploder("exp_lgt_garden_alter_ra");
             }
             break;
         case #"cellar":
-            if (s_altar.var_73bd396b.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
+            if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
                 exploder::exploder("exp_lgt_cellar_alter_zeus");
-            } else if (s_altar.var_73bd396b.model === #"p8_fxanim_zm_vapor_altar_odin_mod") {
+            } else if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_odin_mod") {
                 exploder::exploder("exp_lgt_cellar_alter_odin");
             } else {
                 exploder::exploder("exp_lgt_cellar_alter_ra");
             }
             break;
         case #"forest_entrance":
-            if (s_altar.var_73bd396b.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
+            if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
                 exploder::exploder("exp_lgt_forest_alter_zeus");
-            } else if (s_altar.var_73bd396b.model === #"p8_fxanim_zm_vapor_altar_odin_mod") {
+            } else if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_odin_mod") {
                 exploder::exploder("exp_lgt_forest_alter_odin");
             } else {
                 exploder::exploder("exp_lgt_forest_alter_ra");
@@ -1875,12 +1875,12 @@ function function_3f147b12(cmd) {
             zm_ai_nosferatu::function_74f25f8a(1, undefined, 1);
             break;
         case #"reset_rings":
-            level.var_dd0ec1fe rotateto(level.var_dd0ec1fe.v_start, 1);
-            level.var_dd0ec1fe waittill(#"rotatedone");
-            level.var_7ff4f03a.angles rotateto(level.var_7ff4f03a.v_start, 1);
-            level.var_7ff4f03a waittill(#"rotatedone");
-            level.var_6ce9da5c.angles rotateto(level.var_6ce9da5c.v_start, 1);
-            level.var_6ce9da5c waittill(#"rotatedone");
+            level.mdl_ring_outer rotateto(level.mdl_ring_outer.v_start, 1);
+            level.mdl_ring_outer waittill(#"rotatedone");
+            level.mdl_ring_middle.angles rotateto(level.mdl_ring_middle.v_start, 1);
+            level.mdl_ring_middle waittill(#"rotatedone");
+            level.mdl_ring_inner.angles rotateto(level.mdl_ring_inner.v_start, 1);
+            level.mdl_ring_inner waittill(#"rotatedone");
             break;
         case #"hash_314962c418b83370":
             level flag::set("<unknown string>");

@@ -188,11 +188,11 @@ function function_a46f4413() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xc803cfbd, Offset: 0xc28
 // Size: 0x88
-function function_8dc740fa(var_c75beecc) {
+function function_8dc740fa(str_blueprint) {
     while (1) {
         waitresult = undefined;
         waitresult = level waittill(#"blueprint_completed");
-        if (waitresult.blueprint.name === var_c75beecc) {
+        if (waitresult.blueprint.name === str_blueprint) {
             level.var_f5ad5bac++;
             level notify(#"crafting_table_completed");
             break;

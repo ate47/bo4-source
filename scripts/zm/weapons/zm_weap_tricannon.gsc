@@ -441,18 +441,18 @@ function function_aa1a2228(params) {
 // Size: 0x298
 function function_689d923b(weapon) {
     w_tricannon = getweapon(#"ww_tricannon_t8");
-    var_fd8edc1d = getweapon(#"ww_tricannon_t8" + "_upgraded");
-    var_1255446b = getweapon(#"ww_tricannon_earth_t8");
-    var_2e5cd323 = getweapon(#"ww_tricannon_earth_t8" + "_upgraded");
-    var_36fc4957 = getweapon(#"ww_tricannon_air_t8");
-    var_5c582d9a = getweapon(#"ww_tricannon_air_t8" + "_upgraded");
-    var_2e998842 = getweapon(#"ww_tricannon_fire_t8");
-    var_e95ae897 = getweapon(#"ww_tricannon_fire_t8" + "_upgraded");
-    var_e62dfd5a = getweapon(#"ww_tricannon_water_t8");
-    var_25c5df74 = getweapon(#"ww_tricannon_water_t8" + "_upgraded");
-    var_62b4bdef = array(w_tricannon, var_fd8edc1d, var_1255446b, var_2e5cd323, var_36fc4957, var_5c582d9a, var_2e998842, var_e95ae897, var_e62dfd5a, var_25c5df74);
-    if (isinarray(var_62b4bdef, weapon)) {
-        foreach (w_tricannon in var_62b4bdef) {
+    w_tricannon_upg = getweapon(#"ww_tricannon_t8" + "_upgraded");
+    w_tricannon_earth = getweapon(#"ww_tricannon_earth_t8");
+    w_tricannon_earth_upg = getweapon(#"ww_tricannon_earth_t8" + "_upgraded");
+    w_tricannon_air = getweapon(#"ww_tricannon_air_t8");
+    w_tricannon_air_upg = getweapon(#"ww_tricannon_air_t8" + "_upgraded");
+    w_tricannon_fire = getweapon(#"ww_tricannon_fire_t8");
+    w_tricannon_fire_upg = getweapon(#"ww_tricannon_fire_t8" + "_upgraded");
+    w_tricannon_water = getweapon(#"ww_tricannon_water_t8");
+    w_tricannon_water_upg = getweapon(#"ww_tricannon_water_t8" + "_upgraded");
+    a_w_tricannon = array(w_tricannon, w_tricannon_upg, w_tricannon_earth, w_tricannon_earth_upg, w_tricannon_air, w_tricannon_air_upg, w_tricannon_fire, w_tricannon_fire_upg, w_tricannon_water, w_tricannon_water_upg);
+    if (isinarray(a_w_tricannon, weapon)) {
+        foreach (w_tricannon in a_w_tricannon) {
             if (self hasweapon(w_tricannon, 1)) {
                 return w_tricannon;
             }
@@ -466,36 +466,36 @@ function function_689d923b(weapon) {
 // Size: 0x8e8
 function function_73a498c8(oldweapondata, newweapondata) {
     w_tricannon = getweapon(#"ww_tricannon_t8");
-    var_fd8edc1d = getweapon(#"ww_tricannon_t8" + "_upgraded");
-    var_1255446b = getweapon(#"ww_tricannon_earth_t8");
-    var_2e5cd323 = getweapon(#"ww_tricannon_earth_t8" + "_upgraded");
-    var_36fc4957 = getweapon(#"ww_tricannon_air_t8");
-    var_5c582d9a = getweapon(#"ww_tricannon_air_t8" + "_upgraded");
-    var_2e998842 = getweapon(#"ww_tricannon_fire_t8");
-    var_e95ae897 = getweapon(#"ww_tricannon_fire_t8" + "_upgraded");
-    var_e62dfd5a = getweapon(#"ww_tricannon_water_t8");
-    var_25c5df74 = getweapon(#"ww_tricannon_water_t8" + "_upgraded");
-    var_62b4bdef = array(w_tricannon, var_fd8edc1d, var_1255446b, var_2e5cd323, var_36fc4957, var_5c582d9a, var_2e998842, var_e95ae897, var_e62dfd5a, var_25c5df74);
-    if (isinarray(var_62b4bdef, oldweapondata[#"weapon"]) && isinarray(var_62b4bdef, newweapondata[#"weapon"])) {
+    w_tricannon_upg = getweapon(#"ww_tricannon_t8" + "_upgraded");
+    w_tricannon_earth = getweapon(#"ww_tricannon_earth_t8");
+    w_tricannon_earth_upg = getweapon(#"ww_tricannon_earth_t8" + "_upgraded");
+    w_tricannon_air = getweapon(#"ww_tricannon_air_t8");
+    w_tricannon_air_upg = getweapon(#"ww_tricannon_air_t8" + "_upgraded");
+    w_tricannon_fire = getweapon(#"ww_tricannon_fire_t8");
+    w_tricannon_fire_upg = getweapon(#"ww_tricannon_fire_t8" + "_upgraded");
+    w_tricannon_water = getweapon(#"ww_tricannon_water_t8");
+    w_tricannon_water_upg = getweapon(#"ww_tricannon_water_t8" + "_upgraded");
+    a_w_tricannon = array(w_tricannon, w_tricannon_upg, w_tricannon_earth, w_tricannon_earth_upg, w_tricannon_air, w_tricannon_air_upg, w_tricannon_fire, w_tricannon_fire_upg, w_tricannon_water, w_tricannon_water_upg);
+    if (isinarray(a_w_tricannon, oldweapondata[#"weapon"]) && isinarray(a_w_tricannon, newweapondata[#"weapon"])) {
         weapondata = [];
-        if (oldweapondata[#"weapon"] === var_25c5df74 || newweapondata[#"weapon"] === var_25c5df74) {
-            weapondata[#"weapon"] = var_2e5cd323;
-        } else if (oldweapondata[#"weapon"] === var_5c582d9a || newweapondata[#"weapon"] === var_5c582d9a) {
-            weapondata[#"weapon"] = var_2e5cd323;
-        } else if (oldweapondata[#"weapon"] === var_e95ae897 || newweapondata[#"weapon"] === var_e95ae897) {
-            weapondata[#"weapon"] = var_e95ae897;
-        } else if (oldweapondata[#"weapon"] === var_2e5cd323 || newweapondata[#"weapon"] === var_2e5cd323) {
-            weapondata[#"weapon"] = var_2e5cd323;
-        } else if (oldweapondata[#"weapon"] === var_fd8edc1d || newweapondata[#"weapon"] === var_fd8edc1d) {
-            weapondata[#"weapon"] = var_fd8edc1d;
-        } else if (oldweapondata[#"weapon"] === var_e62dfd5a || newweapondata[#"weapon"] === var_e62dfd5a) {
-            weapondata[#"weapon"] = var_2e998842;
-        } else if (oldweapondata[#"weapon"] === var_36fc4957 || newweapondata[#"weapon"] === var_36fc4957) {
-            weapondata[#"weapon"] = var_1255446b;
-        } else if (oldweapondata[#"weapon"] === var_2e998842 || newweapondata[#"weapon"] === var_2e998842) {
-            weapondata[#"weapon"] = var_2e998842;
-        } else if (oldweapondata[#"weapon"] === var_1255446b || newweapondata[#"weapon"] === var_1255446b) {
-            weapondata[#"weapon"] = var_1255446b;
+        if (oldweapondata[#"weapon"] === w_tricannon_water_upg || newweapondata[#"weapon"] === w_tricannon_water_upg) {
+            weapondata[#"weapon"] = w_tricannon_earth_upg;
+        } else if (oldweapondata[#"weapon"] === w_tricannon_air_upg || newweapondata[#"weapon"] === w_tricannon_air_upg) {
+            weapondata[#"weapon"] = w_tricannon_earth_upg;
+        } else if (oldweapondata[#"weapon"] === w_tricannon_fire_upg || newweapondata[#"weapon"] === w_tricannon_fire_upg) {
+            weapondata[#"weapon"] = w_tricannon_fire_upg;
+        } else if (oldweapondata[#"weapon"] === w_tricannon_earth_upg || newweapondata[#"weapon"] === w_tricannon_earth_upg) {
+            weapondata[#"weapon"] = w_tricannon_earth_upg;
+        } else if (oldweapondata[#"weapon"] === w_tricannon_upg || newweapondata[#"weapon"] === w_tricannon_upg) {
+            weapondata[#"weapon"] = w_tricannon_upg;
+        } else if (oldweapondata[#"weapon"] === w_tricannon_water || newweapondata[#"weapon"] === w_tricannon_water) {
+            weapondata[#"weapon"] = w_tricannon_fire;
+        } else if (oldweapondata[#"weapon"] === w_tricannon_air || newweapondata[#"weapon"] === w_tricannon_air) {
+            weapondata[#"weapon"] = w_tricannon_earth;
+        } else if (oldweapondata[#"weapon"] === w_tricannon_fire || newweapondata[#"weapon"] === w_tricannon_fire) {
+            weapondata[#"weapon"] = w_tricannon_fire;
+        } else if (oldweapondata[#"weapon"] === w_tricannon_earth || newweapondata[#"weapon"] === w_tricannon_earth) {
+            weapondata[#"weapon"] = w_tricannon_earth;
         } else {
             weapondata[#"weapon"] = w_tricannon;
         }

@@ -123,7 +123,7 @@ function turn_z(player) {
             player zm_stats::increment_challenge_stat(#"zombie_hunter_brain_decay");
             self.var_443d78cc = player;
         }
-        self thread zm_aat_brain_decay::function_8e97a3a4(player, level.var_78032351);
+        self thread zm_aat_brain_decay::function_8e97a3a4(player, level.weapondefault);
         self thread zm_aat_brain_decay::zombie_kill_tracker(player);
     }
 }

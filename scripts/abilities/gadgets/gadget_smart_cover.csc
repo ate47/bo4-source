@@ -127,7 +127,7 @@ function function_1c2930c7(localclientnum) {
         if (!isdefined(player)) {
             break;
         }
-        var_b43e8dc2 = player function_287dcf4b(level.smartcoversettings.bundle.var_63aab046, level.smartcoversettings.bundle.maxwidth, 1, 1, level.smartcoversettings.var_8d86ade8);
+        var_b43e8dc2 = player function_287dcf4b(level.smartcoversettings.bundle.var_63aab046, level.smartcoversettings.bundle.maxwidth, 1, 1, level.smartcoversettings.smartcoverweapon);
         if (!isdefined(var_b43e8dc2) && !var_ccfe777) {
             var_ccfe777 = 1;
             player function_112e3e89(localclientnum);

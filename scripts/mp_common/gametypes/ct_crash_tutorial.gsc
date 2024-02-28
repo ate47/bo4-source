@@ -298,9 +298,9 @@ function function_6dd7691f() {
     ct_vo::function_3ca1b77d();
     level ct_vo::function_831e0584(array(#"hash_2f703d36d8623dbd", #"hash_2f703a36d86238a4"), 1);
     s_loc = struct::get("s_assault_pack_target");
-    var_fc45f3fa = util::spawn_model("wpn_t8_eqp_supply_pod_prop", s_loc.origin, s_loc.angles);
+    mdl_pod = util::spawn_model("wpn_t8_eqp_supply_pod_prop", s_loc.origin, s_loc.angles);
     wait(0.1);
-    var_fc45f3fa clientfield::set("objective_glow", 1);
+    mdl_pod clientfield::set("objective_glow", 1);
     player thread ct_utils::function_61c3d59c(#"hash_4949854f8fd74d4c", undefined);
     level.var_e72728b8 = array(#"eq_localheal");
     level thread ct_vo::function_14b08e49(array(#"hash_563a706b0b3c4e8c"), "stop_resupply_nag");
@@ -318,7 +318,7 @@ function function_6dd7691f() {
     }
     level flag::set("supply_dropped");
     level.var_e72728b8 = array(#"eq_localheal", #"gadget_supplypod");
-    var_fc45f3fa delete();
+    mdl_pod delete();
     ct_utils::function_c2a10fc();
     level notify(#"stop_resupply_nag");
     ct_vo::function_3ca1b77d();
@@ -1036,7 +1036,7 @@ function function_85903699() {
     level flag::wait_till("goto_second_battle");
     s_goto = struct::get("s_assault_pack_goto_" + self.n_index);
     self.s_pod = struct::get(s_goto.target);
-    self.var_701e2c4f = struct::get(self.s_pod.target);
+    self.s_cover = struct::get(self.s_pod.target);
     self.var_df772c06 = struct::get("face_second_battle");
     self.s_lookat = self.var_df772c06;
     wait(self.n_wait);
@@ -1066,7 +1066,7 @@ function function_68ac03e(s_loc) {
     self bot_stance::stand();
     self.n_index = s_loc.script_int;
     s_goto = struct::get("s_cover_entry_" + self.n_index);
-    var_701e2c4f = struct::get(s_goto.target);
+    s_cover = struct::get(s_goto.target);
     if (isdefined(self.n_wait)) {
         wait(self.n_wait);
     }
@@ -1084,7 +1084,7 @@ function function_68ac03e(s_loc) {
     level flag::wait_till("flash_bang_done");
     wait(randomfloatrange(0.8, 1.5));
     self bot_stance::stand();
-    self thread ct_utils::function_5b59f3b7(var_701e2c4f.origin, var_701e2c4f.angles, 16);
+    self thread ct_utils::function_5b59f3b7(s_cover.origin, s_cover.angles, 16);
     self waittill(#"goal");
     wait(0.3);
     self function_89cd182c(var_df772c06);
@@ -1122,13 +1122,13 @@ function function_d43893a9(s_loc) {
 // Size: 0xfc
 function function_bd8a36e(var_df772c06) {
     self endon(#"death");
-    self thread ct_utils::function_5b59f3b7(self.var_701e2c4f.origin, self.var_701e2c4f.angles, 16);
-    while (distance(self.origin, self.var_701e2c4f.origin) > 16) {
+    self thread ct_utils::function_5b59f3b7(self.s_cover.origin, self.s_cover.angles, 16);
+    while (distance(self.origin, self.s_cover.origin) > 16) {
         waitframe(1);
     }
     self function_89cd182c(var_df772c06);
     wait(2);
-    if (self.var_701e2c4f.script_noteworthy === "crouch") {
+    if (self.s_cover.script_noteworthy === "crouch") {
         self bot_stance::crouch();
     }
     self function_89cd182c(var_df772c06);
@@ -1171,9 +1171,9 @@ function function_b03052f5() {
     wait(1.5);
     self bot_action::reset();
     wait(2);
-    self thread ct_utils::function_5b59f3b7(self.var_701e2c4f.origin, self.var_701e2c4f.angles, 16);
+    self thread ct_utils::function_5b59f3b7(self.s_cover.origin, self.s_cover.angles, 16);
     self waittill(#"goal");
-    if (self.var_701e2c4f.script_noteworthy === "crouch") {
+    if (self.s_cover.script_noteworthy === "crouch") {
         self bot_stance::crouch();
     } else {
         self bot_stance::stand();
@@ -1490,9 +1490,9 @@ function function_779e90b6() {
             if (isdefined(var_239124a9.data[i])) {
                 var_d90eb55d[i] = var_239124a9.data[i].origin;
             } else {
-                var_3955def4 = getnearestpathpoint(level.pod.origin, 64);
-                if (isdefined(var_3955def4)) {
-                    var_d90eb55d[i] = var_3955def4;
+                v_pt = getnearestpathpoint(level.pod.origin, 64);
+                if (isdefined(v_pt)) {
+                    var_d90eb55d[i] = v_pt;
                 } else {
                     s_loc = struct::get("s_assault_pack_target");
                     var_d90eb55d[i] = s_loc.origin;

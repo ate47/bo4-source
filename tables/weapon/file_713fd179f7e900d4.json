@@ -1,7 +1,7 @@
 {
     "name": "#hash_713fd179f7e900d4",
     "baseWeapon": "#eq_wraith_fire",
-    "displayname": "#hash_2c62a9364c4c32aa",
+    "displayname": "#weapon/wraith_fire",
     "sessionMode": "zombies",
     "itemIndex": 262,
     "dualWieldWeaponIndex": 0,

@@ -93,12 +93,12 @@ function private refill_ammo() {
 // Size: 0x118
 function private lock_shield() {
     foreach (weapon in zm_loadout::function_5a5a742a("tactical_grenade")) {
-        self function_28602a03(weapon, 1, 1);
+        self lockweapon(weapon, 1, 1);
         if (weapon.dualwieldweapon != level.weaponnone) {
-            self function_28602a03(weapon.dualwieldweapon, 1, 1);
+            self lockweapon(weapon.dualwieldweapon, 1, 1);
         }
         if (weapon.altweapon != level.weaponnone) {
-            self function_28602a03(weapon.altweapon, 1, 1);
+            self lockweapon(weapon.altweapon, 1, 1);
         }
     }
 }
@@ -113,12 +113,12 @@ function private function_33f0ddd3(s_event) {
             return;
         }
         if (zm_loadout::is_lethal_grenade(s_event.weapon) || zm_loadout::is_tactical_grenade(s_event.weapon, 1)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            self lockweapon(s_event.weapon, 1, 1);
             if (s_event.weapon.dualwieldweapon != level.weaponnone) {
-                self function_28602a03(s_event.weapon.dualwieldweapon, 1, 1);
+                self lockweapon(s_event.weapon.dualwieldweapon, 1, 1);
             }
             if (s_event.weapon.altweapon != level.weaponnone) {
-                self function_28602a03(s_event.weapon.altweapon, 1, 1);
+                self lockweapon(s_event.weapon.altweapon, 1, 1);
             }
         } else {
             waitframe(1);

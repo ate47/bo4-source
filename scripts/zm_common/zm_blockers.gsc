@@ -1324,14 +1324,14 @@ function function_23cbcd8() {
             #/
         }
     }
-    var_9e7c3935 = util::spawn_model("tag_origin", self.origin, self.angles, 0, 1);
-    var_9e7c3935.targetname = self.targetname;
-    var_9e7c3935.objectid = self.objectid;
-    var_9e7c3935.script_string = self.script_string;
-    var_9e7c3935.script_vector = self.script_vector;
-    var_9e7c3935 thread function_bf35870e();
+    mdl_symbol = util::spawn_model("tag_origin", self.origin, self.angles, 0, 1);
+    mdl_symbol.targetname = self.targetname;
+    mdl_symbol.objectid = self.objectid;
+    mdl_symbol.script_string = self.script_string;
+    mdl_symbol.script_vector = self.script_vector;
+    mdl_symbol thread function_bf35870e();
     self struct::delete();
-    return var_9e7c3935;
+    return mdl_symbol;
 }
 
 // Namespace zm_blockers/zm_blockers

@@ -132,8 +132,8 @@ function zombie_breakout_func(localclientnum, oldval, newval, bnewent, binitials
 // Size: 0x1ac
 function pegasus_beam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self endon(#"death");
-    var_10d4f67d = level.var_1c8295a8;
-    if (!isdefined(var_10d4f67d)) {
+    mdl_pegasus  = level.var_1c8295a8;
+    if (!isdefined(mdl_pegasus )) {
         return;
     }
     str_tag = self zm_utility::function_467efa7b();
@@ -141,7 +141,7 @@ function pegasus_beam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
         return;
     }
     if (newval == 1) {
-        if (isdefined(var_10d4f67d gettagorigin("j_feather_le_10"))) {
+        if (isdefined(mdl_pegasus  gettagorigin("j_feather_le_10"))) {
             var_30d0dc85 = "j_feather_le_10";
         } else {
             var_30d0dc85 = "tag_origin";
@@ -149,11 +149,11 @@ function pegasus_beam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
     } else if (newval == 2) {
         var_30d0dc85 = "j_feather_ri_10";
     }
-    level beam::launch(var_10d4f67d, var_30d0dc85, self, str_tag, "beam8_zm_red_peg_lightning_strike", 1);
+    level beam::launch(mdl_pegasus , var_30d0dc85, self, str_tag, "beam8_zm_red_peg_lightning_strike", 1);
     self playsound(localclientnum, #"hash_61c057ffadb7a5af");
     level thread chaos_explosion(localclientnum);
     wait(0.3);
-    level beam::kill(var_10d4f67d, var_30d0dc85, self, str_tag, "beam8_zm_red_peg_lightning_strike");
+    level beam::kill(mdl_pegasus , var_30d0dc85, self, str_tag, "beam8_zm_red_peg_lightning_strike");
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest

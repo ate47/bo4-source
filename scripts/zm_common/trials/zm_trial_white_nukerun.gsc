@@ -184,9 +184,9 @@ function private on_end(round_reset) {
 function private function_33f0ddd3(s_event) {
     if (s_event.event === "give_weapon") {
         if (!zm_loadout::function_2ff6913(s_event.weapon)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            self lockweapon(s_event.weapon, 1, 1);
             if (s_event.weapon.dualwieldweapon != level.weaponnone) {
-                self function_28602a03(s_event.weapon.dualwieldweapon, 1, 1);
+                self lockweapon(s_event.weapon.dualwieldweapon, 1, 1);
             }
         }
     }

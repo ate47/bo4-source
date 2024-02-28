@@ -155,8 +155,8 @@ function function_b4b9937(localclientnum, newval, str_state) {
                 v_tag_origin = var_e0f13b51 gettagorigin("tag_origin");
                 v_tag_angles = var_e0f13b51 gettagangles("tag_origin");
             }
-            if (isdefined(level.var_4016a739)) {
-                v_tag_angles = v_tag_angles + level.var_4016a739;
+            if (isdefined(level.player_bladeblade)) {
+                v_tag_angles = v_tag_angles + level.player_bladeblade;
             }
             var_5b1d3ef = util::spawn_model(localclientnum, #"tag_origin", v_tag_origin, v_tag_angles);
             self.var_7e616d59[localclientnum] = var_5b1d3ef;
@@ -164,8 +164,8 @@ function function_b4b9937(localclientnum, newval, str_state) {
         }
         if (isdefined(self) && !isdefined(self.var_93e0dfa9[localclientnum])) {
             v_tag_angles = self.angles;
-            if (isdefined(level.var_4016a739)) {
-                v_tag_angles = v_tag_angles + level.var_4016a739;
+            if (isdefined(level.player_bladeblade)) {
+                v_tag_angles = v_tag_angles + level.player_bladeblade;
             }
             fx_obj = util::spawn_model(localclientnum, #"tag_origin", self.origin, v_tag_angles);
             self.var_93e0dfa9[localclientnum] = fx_obj;

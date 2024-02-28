@@ -483,9 +483,9 @@ function function_bad6907c() {
         }
     }
     foreach (weapon in self getweaponslist(1)) {
-        self function_28602a03(weapon, 1, 0);
+        self lockweapon(weapon, 1, 0);
         if (weapon.dualwieldweapon != level.weaponnone) {
-            self function_28602a03(weapon.dualwieldweapon, 1, 0);
+            self lockweapon(weapon.dualwieldweapon, 1, 0);
         }
     }
     self.e_tag = util::spawn_model("tag_origin", self.origin, self.angles);

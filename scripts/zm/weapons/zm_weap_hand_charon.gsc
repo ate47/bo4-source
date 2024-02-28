@@ -48,11 +48,11 @@ function __init__() {
     clientfield::register("actor", "" + #"hash_3681b677c0d46042", 16000, 1, "counter");
     clientfield::register("actor", "" + #"hash_25691c415a4aea4c", 16000, 1, "int");
     level.w_hand_charon = getweapon(#"ww_hand_c");
-    level.w_hand_charon_charged = getweapon(#"hash_57674b2a4d9eea50");
+    level.w_hand_charon_charged = getweapon(#"ww_hand_c_charged");
     level.w_hand_charon_uncharged = getweapon(#"ww_hand_c_uncharged");
     level.w_hand_charon_upgraded = getweapon(#"ww_hand_c_upgraded");
     zm_weapons::include_zombie_weapon(#"ww_hand_c", 0);
-    zm_weapons::include_zombie_weapon(#"hash_57674b2a4d9eea50", 0);
+    zm_weapons::include_zombie_weapon(#"ww_hand_c_charged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_c_uncharged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_c_upgraded", 0);
     namespace_9ff9f642::register_slowdown(#"hash_583272dc38f3f8a8", 0.7, 3);

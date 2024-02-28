@@ -1925,16 +1925,16 @@ function function_11001794() {
     var_e18247ac = level.var_b42f4f4b.origin + self.var_f7d17867;
     v_spawn_angles = level.var_b42f4f4b.angles + self.var_14172483;
     if (isdefined(self.var_f2e7f46a) && self.var_f2e7f46a) {
-        self.var_4d0b3b87 = zm_utility::spawn_buildkit_weapon_model(self.e_player, getweapon(self.str_reward), undefined, var_e18247ac, v_spawn_angles);
-        self.var_4d0b3b87.str_weapon_name = self.str_reward;
-        self.var_4d0b3b87 movez(5, 1);
+        self.mdl_reward = zm_utility::spawn_buildkit_weapon_model(self.e_player, getweapon(self.str_reward), undefined, var_e18247ac, v_spawn_angles);
+        self.mdl_reward.str_weapon_name = self.str_reward;
+        self.mdl_reward movez(5, 1);
     } else {
-        self.var_4d0b3b87 = util::spawn_model(self.var_3ff570f3, var_e18247ac, v_spawn_angles);
-        self.var_4d0b3b87 movez(5, 1);
-        self.var_4d0b3b87.var_c9837131 = 1;
-        self.var_4d0b3b87 thread function_f5f83516();
-        self.var_4d0b3b87 playsound(#"zmb_spawn_powerup");
-        self.var_4d0b3b87 playloopsound(#"zmb_spawn_powerup_loop");
+        self.mdl_reward = util::spawn_model(self.var_3ff570f3, var_e18247ac, v_spawn_angles);
+        self.mdl_reward movez(5, 1);
+        self.mdl_reward.var_c9837131 = 1;
+        self.mdl_reward thread function_f5f83516();
+        self.mdl_reward playsound(#"zmb_spawn_powerup");
+        self.mdl_reward playloopsound(#"zmb_spawn_powerup_loop");
     }
     level.var_b42f4f4b.var_54cb6134 = 1;
 }
@@ -2027,18 +2027,18 @@ function function_b49b8fc6() {
     self.e_player endon(#"disconnect", #"hash_5d2057864469af2a", #"hash_4ac0558a94ba3fd7");
     self endon(#"hash_5d2057864469af2a", #"hash_4ac0558a94ba3fd7");
     self.var_561f7ea3 = 0;
-    var_4d0b3b87 = self.var_d6578e1f.var_4d0b3b87;
+    mdl_reward = self.var_d6578e1f.mdl_reward;
     while (1) {
-        if (isdefined(self.s_unitrigger.trigger) && isdefined(self.var_54596501) && self.var_54596501 && isdefined(var_4d0b3b87)) {
+        if (isdefined(self.s_unitrigger.trigger) && isdefined(self.var_54596501) && self.var_54596501 && isdefined(mdl_reward)) {
             self.var_561f7ea3 = 0;
-            if (self.e_player util::is_looking_at(var_4d0b3b87)) {
+            if (self.e_player util::is_looking_at(mdl_reward)) {
                 self.var_561f7ea3 = 1;
             }
             if (self.e_player meleebuttonpressed() && self.var_561f7ea3 && self.e_player istouching(self.s_unitrigger.trigger)) {
                 self.var_54596501 = 0;
-                if (isdefined(var_4d0b3b87)) {
-                    var_4d0b3b87 delete();
-                    self.var_d6578e1f.var_4d0b3b87 = undefined;
+                if (isdefined(mdl_reward)) {
+                    mdl_reward delete();
+                    self.var_d6578e1f.mdl_reward = undefined;
                 }
                 self function_fd8a137e();
                 self notify(#"hash_4ac0558a94ba3fd7");
@@ -2055,7 +2055,7 @@ function function_b49b8fc6() {
 function function_816f228f(e_who) {
     level endon(#"end_game");
     self.var_54cb6134 = 0;
-    var_4d0b3b87 = self.var_d6578e1f.var_4d0b3b87;
+    mdl_reward = self.var_d6578e1f.mdl_reward;
     str_reward = self.var_d6578e1f.str_reward;
     switch (str_reward) {
     case #"self_revives":
@@ -2103,10 +2103,10 @@ function function_816f228f(e_who) {
     }
     self function_fd8a137e();
     e_who playsound(#"zmb_powerup_grabbed");
-    if (isdefined(var_4d0b3b87)) {
-        var_4d0b3b87 stoploopsound();
-        var_4d0b3b87 delete();
-        self.var_d6578e1f.var_4d0b3b87 = undefined;
+    if (isdefined(mdl_reward)) {
+        mdl_reward stoploopsound();
+        mdl_reward delete();
+        self.var_d6578e1f.mdl_reward = undefined;
     }
     if (isdefined(self.var_59bf6fe2) && self.var_59bf6fe2) {
         level zm_audio::sndannouncerplayvox(str_reward);
@@ -2120,12 +2120,12 @@ function function_816f228f(e_who) {
 function function_f0c3ac7c() {
     var_d49d10b0 = self zm_loadout::get_player_lethal_grenade();
     if (isdefined(var_d49d10b0) && var_d49d10b0 == level.w_snowball) {
-        self zm_weapons::weapon_give(level.var_f8934665, 1, 0);
+        self zm_weapons::weapon_give(level.w_snowball_upgraded, 1, 0);
         n_slot = self gadgetgetslot(var_d49d10b0);
         self gadgetpowerreset(n_slot, 0);
         self thread zm_orange_snowball_piles::function_76e94d52();
-    } else if (isdefined(var_d49d10b0) && var_d49d10b0 == level.var_bf70d56c) {
-        self zm_weapons::weapon_give(level.var_d879215, 1, 0);
+    } else if (isdefined(var_d49d10b0) && var_d49d10b0 == level.w_snowball_yellow) {
+        self zm_weapons::weapon_give(level.w_snowball_yellow_upgraded, 1, 0);
         n_slot = self gadgetgetslot(var_d49d10b0);
         self gadgetpowerreset(n_slot, 0);
         self thread zm_orange_snowball_piles::function_76e94d52();
@@ -2136,16 +2136,16 @@ function function_f0c3ac7c() {
 // Params 1, eflags: 0x0
 // Checksum 0xd69a45ce, Offset: 0x82e0
 // Size: 0xec
-function swap_weapon(var_498a708) {
+function swap_weapon(w_reward) {
     var_6822257f = self getweaponslist();
     foreach (w_gun in var_6822257f) {
-        if (w_gun.rootweapon === var_498a708) {
+        if (w_gun.rootweapon === w_reward) {
             self zm_weapons::function_7c5dd4bd(w_gun);
             return;
         }
     }
-    if (!self hasweapon(var_498a708, 1)) {
-        self function_e2a25377(var_498a708);
+    if (!self hasweapon(w_reward, 1)) {
+        self function_e2a25377(w_reward);
     }
 }
 
@@ -2153,11 +2153,11 @@ function swap_weapon(var_498a708) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x18ca9da6, Offset: 0x83d8
 // Size: 0x84
-function function_e2a25377(var_498a708) {
-    if (self hasweapon(zm_weapons::get_base_weapon(var_498a708), 1)) {
-        self takeweapon(zm_weapons::get_base_weapon(var_498a708), 1);
+function function_e2a25377(w_reward) {
+    if (self hasweapon(zm_weapons::get_base_weapon(w_reward), 1)) {
+        self takeweapon(zm_weapons::get_base_weapon(w_reward), 1);
     }
-    self zm_weapons::weapon_give(var_498a708, 1);
+    self zm_weapons::weapon_give(w_reward, 1);
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges

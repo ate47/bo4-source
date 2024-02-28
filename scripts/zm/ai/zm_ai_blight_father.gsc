@@ -3007,8 +3007,8 @@ function private function_2315440d() {
     /#
         assert(spawners.size > 0);
     #/
-    var_944250d2 = spawners[0] spawnfromspawner(0, 1);
-    var_944250d2 zm_transform::function_bbaec2fd();
+    new_ai = spawners[0] spawnfromspawner(0, 1);
+    new_ai zm_transform::function_bbaec2fd();
     return 1;
 }
 

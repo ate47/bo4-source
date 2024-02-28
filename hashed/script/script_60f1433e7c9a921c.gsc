@@ -119,8 +119,8 @@ function private function_c0e398c4(bots, var_26b45a5e, bbkey, claimed = undefine
         if (isdefined(claimed) && var_26b45a5e[i][#"claimed"] != claimed) {
             continue;
         }
-        var_9f855ac9 = getclosestpointonnavmesh(var_deb9ffcf.origin, 200);
-        if (isdefined(var_9f855ac9)) {
+        navpos = getclosestpointonnavmesh(var_deb9ffcf.origin, 200);
+        if (isdefined(navpos)) {
             pathable = 1;
             distance = 0;
             for (botindex = 0; botindex < bots.size; botindex++) {
@@ -132,7 +132,7 @@ function private function_c0e398c4(bots, var_26b45a5e, bbkey, claimed = undefine
                 if (!isdefined(position)) {
                     pathable = 0;
                 } else {
-                    queryresult = positionquery_source_navigation(var_9f855ac9, 0, 120, 60, 16, bot, 16);
+                    queryresult = positionquery_source_navigation(navpos, 0, 120, 60, 16, bot, 16);
                     if (queryresult.data.size > 0) {
                         path = _calculatepositionquerypath(queryresult, position, bot);
                         if (!isdefined(path)) {

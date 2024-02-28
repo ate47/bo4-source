@@ -487,10 +487,10 @@ function private function_74c96a90(e_activator) {
 function tomahawk_pickup() {
     level flag::wait_till(#"soul_catchers_charged");
     var_fd22f9df = struct::get("tom_pil");
-    var_6e6ec518 = var_fd22f9df.scene_ents[#"prop 2"];
-    var_6e6ec518 waittill(#"hash_72879554ff8d0b60");
+    mdl_tomahawk = var_fd22f9df.scene_ents[#"prop 2"];
+    mdl_tomahawk waittill(#"hash_72879554ff8d0b60");
     wait(0.5);
-    var_6e6ec518 playloopsound(#"amb_tomahawk_swirl");
+    mdl_tomahawk playloopsound(#"amb_tomahawk_swirl");
     s_pos_trigger = struct::get("t_tom_pos", "targetname");
     if (isdefined(s_pos_trigger)) {
         trigger = spawn("trigger_radius_use", s_pos_trigger.origin, 0, 275, 100);
@@ -547,8 +547,8 @@ function function_f0ef3897(e_player) {
     e_player notify(#"obtained_tomahawk");
     e_player endon(#"obtained_tomahawk", #"disconnect");
     var_fd22f9df = struct::get("tom_pil");
-    var_6e6ec518 = var_fd22f9df.scene_ents[#"prop 2"];
-    var_6e6ec518 setinvisibletoplayer(e_player);
+    mdl_tomahawk = var_fd22f9df.scene_ents[#"prop 2"];
+    mdl_tomahawk setinvisibletoplayer(e_player);
     self setinvisibletoplayer(e_player);
     e_player zm_utility::disable_player_move_states(1);
     e_player.var_67e1d531 = e_player._gadgets_player[1];
@@ -615,13 +615,13 @@ function function_6300f001() {
     self endon(#"disconnect");
     var_6668e57a = getent("rt_pickup_trigger", "script_noteworthy");
     var_fd22f9df = struct::get("tom_pil");
-    var_6e6ec518 = var_fd22f9df.scene_ents[#"prop 2"];
+    mdl_tomahawk = var_fd22f9df.scene_ents[#"prop 2"];
     while (isplayer(self)) {
         if (isdefined(var_6668e57a)) {
             if (level flag::get(#"soul_catchers_charged") && !self hasweapon(getweapon(#"tomahawk_t8")) && !self hasweapon(getweapon(#"tomahawk_t8_upgraded"))) {
                 if (!self flag::exists(#"hash_120fbb364796cd32") && !self flag::exists(#"hash_11ab20934759ebc3") || !self flag::get(#"hash_120fbb364796cd32") || self flag::get(#"hash_11ab20934759ebc3")) {
                     var_6668e57a setvisibletoplayer(self);
-                    var_6e6ec518 setvisibletoplayer(self);
+                    mdl_tomahawk setvisibletoplayer(self);
                     if (self flag::exists(#"hash_11ab20934759ebc3") && self flag::get(#"hash_11ab20934759ebc3")) {
                         self clientfield::set_to_player("" + #"hash_51657261e835ac7c", 1);
                     } else {
@@ -629,14 +629,14 @@ function function_6300f001() {
                     }
                 } else {
                     var_6668e57a setinvisibletoplayer(self);
-                    var_6e6ec518 setinvisibletoplayer(self);
+                    mdl_tomahawk setinvisibletoplayer(self);
                     self clientfield::set_to_player("" + #"tomahawk_pickup_fx", 0);
                     self clientfield::set_to_player("" + #"hash_51657261e835ac7c", 0);
                     waitframe(1);
                 }
             } else {
                 var_6668e57a setinvisibletoplayer(self);
-                var_6e6ec518 setinvisibletoplayer(self);
+                mdl_tomahawk setinvisibletoplayer(self);
                 self clientfield::set_to_player("" + #"tomahawk_pickup_fx", 0);
                 self clientfield::set_to_player("" + #"hash_51657261e835ac7c", 0);
                 waitframe(1);

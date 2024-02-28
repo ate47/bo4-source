@@ -42,20 +42,20 @@ function function_9fc8cc9c(localclientnum) {
         wait(1);
     } while(!isdefined(getent(localclientnum, "altar_icon_0", "targetname")));
     for (i = 0; i < 4; i++) {
-        var_dcf4ea85 = getent(localclientnum, "altar_icon_" + i, "targetname");
-        if (isdefined(var_dcf4ea85)) {
+        mdl_icon = getent(localclientnum, "altar_icon_" + i, "targetname");
+        if (isdefined(mdl_icon)) {
             switch (i) {
             case 0:
-                var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_staminup");
+                mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_staminup");
                 continue;
             case 1:
-                var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_bandolierbandit");
+                mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_bandolierbandit");
                 continue;
             case 2:
-                var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_timeslip");
+                mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_timeslip");
                 continue;
             case 3:
-                var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_deadshot");
+                mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_deadshot");
                 continue;
             }
         }
@@ -70,14 +70,14 @@ function tutorial_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
     if (newval == 1) {
         self playrenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
         if (self.model == "p8_fxanim_zm_vapor_altar_zeus_mod") {
-            var_e5c7e01a = getent(0, "zeus_bird_head", "targetname");
-            var_e5c7e01a playrenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
+            mdl_bird = getent(0, "zeus_bird_head", "targetname");
+            mdl_bird playrenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
         }
     } else if (newval == 2) {
         self stoprenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
         if (self.model == "p8_fxanim_zm_vapor_altar_zeus_mod") {
-            var_e5c7e01a = getent(0, "zeus_bird_head", "targetname");
-            var_e5c7e01a stoprenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
+            mdl_bird = getent(0, "zeus_bird_head", "targetname");
+            mdl_bird stoprenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
         }
     }
 }

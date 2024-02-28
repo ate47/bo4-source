@@ -121,12 +121,12 @@ function function_b42c46e3(localclientnum, oldval, newval, bnewent, binitialsnap
         self.var_17825742 = util::spawn_model(localclientnum, var_dd9f87c6.model, var_dd9f87c6.origin, var_dd9f87c6.angles);
         self.var_17825742.var_e88acf63 = self.var_17825742 gettagorigin("tag_spork");
         self.var_17825742.var_a9a3211a = self.var_17825742 gettagangles("tag_spork");
-        self.var_87d57162 = util::spawn_model(localclientnum, "wpn_t8_zm_spork_world", self.var_17825742.var_e88acf63, self.var_17825742.var_a9a3211a);
+        self.mdl_spork = util::spawn_model(localclientnum, "wpn_t8_zm_spork_world", self.var_17825742.var_e88acf63, self.var_17825742.var_a9a3211a);
         var_fcec724a = struct::get("s_sp_fx_glint_loc");
         self.var_4e35f286 = playfx(localclientnum, level._effect[#"spk_glint"], var_fcec724a.origin);
     } else {
-        if (isdefined(self.var_87d57162)) {
-            self.var_87d57162 delete();
+        if (isdefined(self.mdl_spork)) {
+            self.mdl_spork delete();
         }
         if (isdefined(self.var_4e35f286)) {
             stopfx(localclientnum, self.var_4e35f286);

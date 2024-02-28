@@ -443,14 +443,14 @@ function function_482c54d5(watcher, owner) {
         v_pos = groundtrace(self.origin + vectorscale((0, 0, 1), 32) + vectorscale((0, 0, 1), 8), self.origin + vectorscale((0, 0, 1), 32) + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
         if (isdefined(v_pos)) {
             self ghost();
-            var_f846fec1 = util::spawn_model(self.model, v_pos, s_result.target.angles);
+            mdl_magma = util::spawn_model(self.model, v_pos, s_result.target.angles);
         } else {
-            var_f846fec1 = util::spawn_model(self.model, s_result.target.origin, s_result.target.angles);
+            mdl_magma = util::spawn_model(self.model, s_result.target.origin, s_result.target.angles);
         }
     } else {
-        var_f846fec1 = util::spawn_model(self.model, self.origin, self.angles);
+        mdl_magma = util::spawn_model(self.model, self.origin, self.angles);
     }
-    var_f846fec1.owner = owner;
+    mdl_magma.owner = owner;
     a_ai_zombies = array::remove_undefined(a_ai_zombies, 0);
     foreach (ai_zombie in a_ai_zombies) {
         if (ai_zombie.var_4bfa8f6c === self) {
@@ -459,44 +459,44 @@ function function_482c54d5(watcher, owner) {
             } else {
                 str_tag = ai_zombie get_closest_tag(self.origin);
             }
-            var_f846fec1 clientfield::set("magma_gat_blob_fx", 2);
-            var_f846fec1 linkto(ai_zombie, str_tag);
+            mdl_magma clientfield::set("magma_gat_blob_fx", 2);
+            mdl_magma linkto(ai_zombie, str_tag);
             ai_zombie.var_becfae27 = 1;
-            ai_zombie thread function_5f305489(var_f846fec1);
+            ai_zombie thread function_5f305489(mdl_magma);
             self delete();
             return;
         }
     }
-    var_f846fec1 clientfield::set("magma_gat_blob_fx", 1);
-    self thread function_bf2a4486(var_f846fec1, owner, watcher.weapon);
+    mdl_magma clientfield::set("magma_gat_blob_fx", 1);
+    self thread function_bf2a4486(mdl_magma, owner, watcher.weapon);
 }
 
 // Namespace zm_weap_blundergat/zm_weap_blundergat
 // Params 3, eflags: 0x5 linked
 // Checksum 0x28bff15, Offset: 0x2438
 // Size: 0x224
-function private function_bf2a4486(var_f846fec1, owner, weapon) {
+function private function_bf2a4486(mdl_magma, owner, weapon) {
     self delete();
     if (!isdefined(level.var_56f299e3)) {
         level.var_56f299e3 = [];
     } else if (!isarray(level.var_56f299e3)) {
         level.var_56f299e3 = array(level.var_56f299e3);
     }
-    if (!isinarray(level.var_56f299e3, var_f846fec1)) {
-        level.var_56f299e3[level.var_56f299e3.size] = var_f846fec1;
+    if (!isinarray(level.var_56f299e3, mdl_magma)) {
+        level.var_56f299e3[level.var_56f299e3.size] = mdl_magma;
     }
     if (level.var_56f299e3.size > 2) {
         level.var_56f299e3[0] notify(#"hash_39da21c99d3cf743");
     }
-    var_f846fec1.trigger = spawn("trigger_radius_new", var_f846fec1.origin, (512 | 1) + 2, 64, 32);
-    if (abs(var_f846fec1.angles[2]) > 160) {
-        var_f846fec1.trigger.origin = var_f846fec1.origin + anglestoup(var_f846fec1.angles) * 32;
+    mdl_magma.trigger = spawn("trigger_radius_new", mdl_magma.origin, (512 | 1) + 2, 64, 32);
+    if (abs(mdl_magma.angles[2]) > 160) {
+        mdl_magma.trigger.origin = mdl_magma.origin + anglestoup(mdl_magma.angles) * 32;
     }
-    var_f846fec1 thread function_c74dfed4(weapon);
-    var_f846fec1 thread function_7b25328b(owner);
-    var_f846fec1 waittilltimeout(5, #"hash_39da21c99d3cf743");
-    if (isdefined(var_f846fec1)) {
-        var_f846fec1 function_19b9fb04();
+    mdl_magma thread function_c74dfed4(weapon);
+    mdl_magma thread function_7b25328b(owner);
+    mdl_magma waittilltimeout(5, #"hash_39da21c99d3cf743");
+    if (isdefined(mdl_magma)) {
+        mdl_magma function_19b9fb04();
     }
 }
 
@@ -557,15 +557,15 @@ function private function_aa1b44dc(e_grenade) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x5afe8689, Offset: 0x2a68
 // Size: 0x10c
-function private function_5f305489(var_f846fec1) {
-    var_f846fec1 endon(#"death");
+function private function_5f305489(mdl_magma) {
+    mdl_magma endon(#"death");
     if (self.var_6f84b820 == #"basic" || self.var_6f84b820 == #"enhanced" || self.var_6f84b820 == #"popcorn") {
         self waittill(#"death");
     } else if (self.var_6f84b820 == #"miniboss" || self.var_6f84b820 == #"boss") {
         self waittilltimeout(5, #"death");
         self notify(#"hash_556bad125b55e1a9");
     }
-    var_f846fec1 function_19b9fb04();
+    mdl_magma function_19b9fb04();
 }
 
 // Namespace zm_weap_blundergat/zm_weap_blundergat
@@ -651,9 +651,9 @@ function function_89bde454(weapon) {
     w_blundergat_acid_upg = getweapon(#"ww_blundergat_acid_t8_upgraded");
     w_blundergat_fire = getweapon(#"ww_blundergat_fire_t8");
     w_blundergat_fire_upg = getweapon(#"ww_blundergat_fire_t8_upgraded");
-    var_e30eba14 = array(var_e97d8c2c, w_blundergat, w_blundergat_upg, w_blundergat_acid, w_blundergat_acid_upg, w_blundergat_fire, w_blundergat_fire_upg);
-    if (isinarray(var_e30eba14, weapon)) {
-        foreach (w_blundergat in var_e30eba14) {
+    a_w_blundergat = array(var_e97d8c2c, w_blundergat, w_blundergat_upg, w_blundergat_acid, w_blundergat_acid_upg, w_blundergat_fire, w_blundergat_fire_upg);
+    if (isinarray(a_w_blundergat, weapon)) {
+        foreach (w_blundergat in a_w_blundergat) {
             if (self hasweapon(w_blundergat, 1)) {
                 return w_blundergat;
             }

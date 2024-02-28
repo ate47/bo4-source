@@ -277,8 +277,8 @@ function function_c87db3f7(var_f79ff5ec) {
         level.s_cage_portal zm_unitrigger::create("", 32, &zm_office_teleporters::portal_think, 0, 0);
         zm_office_teleporters::function_60abbae4(1);
         n_obj_id = gameobjects::get_next_obj_id();
-        var_1b808f25 = struct::get("cage_portal");
-        objective_add(n_obj_id, "active", var_1b808f25.origin, #"hash_649649ac2d1051cb");
+        s_objective_loc = struct::get("cage_portal");
+        objective_add(n_obj_id, "active", s_objective_loc.origin, #"hash_649649ac2d1051cb");
         function_da7940a3(n_obj_id, 1);
         foreach (player in getplayers()) {
             player thread function_eede094a(n_obj_id);
@@ -400,11 +400,11 @@ function function_cc31fe55(var_3e4bb460) {
     var_52cb42f5 = getent(var_3e4bb460 + "_buy", "script_noteworthy");
     var_2ffe3076 = getent(var_3e4bb460 + "_touch_volume", "targetname");
     e_elevator = getent(var_3e4bb460, "targetname");
-    var_1b808f25 = struct::get("s_" + var_3e4bb460);
+    s_objective_loc = struct::get("s_" + var_3e4bb460);
     n_obj_id = gameobjects::get_next_obj_id();
     level flag::wait_till("elevators_initialized");
     wait(0.1);
-    objective_add(n_obj_id, "active", var_1b808f25.origin, #"hash_2b0ffc46eaa608c5");
+    objective_add(n_obj_id, "active", s_objective_loc.origin, #"hash_2b0ffc46eaa608c5");
     function_da7940a3(n_obj_id, 1);
     var_52cb42f5 triggerenable(0);
     foreach (player in level.players) {
@@ -626,8 +626,8 @@ function function_f436d901() {
 // Size: 0x90
 function function_ac496011() {
     n_obj_id = gameobjects::get_next_obj_id();
-    var_1b808f25 = struct::get("s_obj_war_room_map_portal");
-    objective_add(n_obj_id, "active", var_1b808f25.origin, #"hash_179c67d4ccb9f19f");
+    s_objective_loc = struct::get("s_obj_war_room_map_portal");
+    objective_add(n_obj_id, "active", s_objective_loc.origin, #"hash_179c67d4ccb9f19f");
     function_da7940a3(n_obj_id, 1);
     return n_obj_id;
 }

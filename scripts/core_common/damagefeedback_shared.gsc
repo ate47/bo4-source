@@ -252,7 +252,7 @@ function function_34fbafdc(weapon, mod) {
     if (isdefined(weapon) && isdefined(weapon.var_965cc0b3) && weapon.var_965cc0b3) {
         return 1;
     }
-    if (isdefined(weapon) && weapon === level.var_1b72f911 && mod === "MOD_DOT") {
+    if (isdefined(weapon) && weapon === level.shockrifleweapon && mod === "MOD_DOT") {
         return 1;
     }
     return 0;

@@ -189,9 +189,9 @@ function function_3a6ce932() {
 // Size: 0x136
 function function_135e7d64(e_player) {
     s_parent = self.stub.related_parent;
-    var_d4c288fb = getent(s_parent.target, "targetname");
-    b_have = level flag::get(var_d4c288fb.model + "_picked_up");
-    b_placed = level flag::get(var_d4c288fb.model + "_placed");
+    mdl_stub = getent(s_parent.target, "targetname");
+    b_have = level flag::get(mdl_stub.model + "_picked_up");
+    b_placed = level flag::get(mdl_stub.model + "_placed");
     var_5168e40f = e_player zm_utility::is_player_looking_at(s_parent.origin, 0.96, 0);
     return isdefined(b_have) && b_have && isdefined(var_5168e40f) && var_5168e40f && isdefined(b_placed) && !b_placed;
 }
@@ -481,9 +481,9 @@ function function_2ea36422() {
 // Checksum 0x8a299c6d, Offset: 0x2060
 // Size: 0x258
 function function_5d0d1807() {
-    var_9788a49a = getentarray("elevated_flames", "targetname");
+    a_mdl_fire = getentarray("elevated_flames", "targetname");
     level thread scene::init("special_rounds_scene_alt", "targetname");
-    foreach (model in var_9788a49a) {
+    foreach (model in a_mdl_fire) {
         model clientfield::set("" + #"hash_5afda864f8b64f5c", 1);
     }
     level waittill(#"hash_7b9245ff51f3d4f7");
@@ -492,7 +492,7 @@ function function_5d0d1807() {
         playfx(level._effect[#"hash_3ecc995bb97331ac"], s_scene.origin);
         s_scene scene::stop(1);
     }
-    foreach (model in var_9788a49a) {
+    foreach (model in a_mdl_fire) {
         model clientfield::set("" + #"hash_5afda864f8b64f5c", 0);
     }
 }

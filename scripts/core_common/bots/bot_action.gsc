@@ -2333,7 +2333,7 @@ function function_5aa9dd1b(actionparams) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf907344, Offset: 0x8ec0
 // Size: 0x296
-function function_90c011d5(actionparams) {
+function throw_offhand(actionparams) {
     weapon = actionparams.weapon;
     self function_ccdcc5d9(weapon);
     slot = self gadgetgetslot(weapon);

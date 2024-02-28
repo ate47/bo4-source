@@ -35,7 +35,7 @@ function get_player() {
 // Params 3, eflags: 0x0
 // Checksum 0x26a7a7d4, Offset: 0x138
 // Size: 0x9c
-function function_41e59aeb(var_3608d414, var_3a78a180 = 1, var_35f78012 = 0) {
+function function_41e59aeb(a_str_vo, var_3a78a180 = 1, var_35f78012 = 0) {
     level endon(#"combattraining_logic_finished");
     while (1) {
         if (!function_5d127774()) {
@@ -43,17 +43,17 @@ function function_41e59aeb(var_3608d414, var_3a78a180 = 1, var_35f78012 = 0) {
         }
         waitframe(1);
     }
-    function_831e0584(var_3608d414, var_3a78a180, var_35f78012);
+    function_831e0584(a_str_vo, var_3a78a180, var_35f78012);
 }
 
 // Namespace ct_vo/ct_vo
 // Params 3, eflags: 0x0
 // Checksum 0x68a8e1d5, Offset: 0x1e0
 // Size: 0xac
-function function_831e0584(var_3608d414, var_3a78a180 = 1, var_35f78012 = 0) {
+function function_831e0584(a_str_vo, var_3a78a180 = 1, var_35f78012 = 0) {
     level endon(#"combattraining_logic_finished");
     if (!(isdefined(level.var_77e9434e) && level.var_77e9434e)) {
-        self thread function_3820390e(var_3608d414, var_3a78a180, var_35f78012);
+        self thread function_3820390e(a_str_vo, var_3a78a180, var_35f78012);
         waitframe(1);
         function_3ca1b77d(1);
     }
@@ -63,7 +63,7 @@ function function_831e0584(var_3608d414, var_3a78a180 = 1, var_35f78012 = 0) {
 // Params 3, eflags: 0x0
 // Checksum 0xb659ed55, Offset: 0x298
 // Size: 0x30c
-function function_3820390e(var_3608d414, var_3a78a180 = 1, var_35f78012 = 0) {
+function function_3820390e(a_str_vo, var_3a78a180 = 1, var_35f78012 = 0) {
     level endon(#"combattraining_logic_finished");
     level notify(#"hash_269c201d6122a737");
     waitframe(1);
@@ -75,7 +75,7 @@ function function_3820390e(var_3608d414, var_3a78a180 = 1, var_35f78012 = 0) {
         return;
     }
     level.var_a188abf = gettime() / 1000;
-    if (!isdefined(var_3608d414)) {
+    if (!isdefined(a_str_vo)) {
         return;
     }
     if (isdefined(level.var_3f407ec2) && level.var_3f407ec2) {
@@ -98,9 +98,9 @@ function function_3820390e(var_3608d414, var_3a78a180 = 1, var_35f78012 = 0) {
     if (isdefined(e_player.var_ec53b83b) && e_player.var_ec53b83b) {
         e_player.var_ec53b83b = 0;
     }
-    e_player.var_a10aaced = var_3608d414.size;
+    e_player.var_a10aaced = a_str_vo.size;
     e_player.var_9e2e6113 = 0;
-    foreach (str_vo in var_3608d414) {
+    foreach (str_vo in a_str_vo) {
         e_player.var_8701e993 = str_vo;
         e_player function_62b6f78a(e_player.var_8701e993, 1);
         e_player.var_a10aaced--;
@@ -352,14 +352,14 @@ function vo_on_damage(str_vo, var_f4b1cabb = 1, n_rest = 10, var_515667fb = #"ax
 // Params 1, eflags: 0x0
 // Checksum 0x676ad34b, Offset: 0x1188
 // Size: 0xac
-function function_28126982(var_3608d414) {
+function function_28126982(a_str_vo) {
     level endon(#"combattraining_logic_finished", #"hash_658f0911fdecfaf8");
     self endon(#"hash_658f0911fdecfaf8");
     e_player = get_player();
     self waittill(#"death");
     e_player function_3ca1b77d();
     waitframe(1);
-    e_player function_831e0584(var_3608d414);
+    e_player function_831e0584(a_str_vo);
 }
 
 // Namespace ct_vo/ct_vo
@@ -412,11 +412,11 @@ function function_dae6df54(_hash) {
 // Params 2, eflags: 0x0
 // Checksum 0x948b95de, Offset: 0x1500
 // Size: 0xf4
-function function_8d5bc717(var_772144ec, vo) {
+function function_8d5bc717(str_trig, vo) {
     level endoncallback(&function_fe927bbd, #"combattraining_logic_finished", #"hash_2d2294060e47449f");
     e_player = get_player();
     e_player endoncallback(&function_fe927bbd, #"death", #"hash_2d2294060e47449f");
-    trigger::wait_till(var_772144ec);
+    trigger::wait_till(str_trig);
     if (isstring(vo)) {
         vo = array(vo);
     }
@@ -444,7 +444,7 @@ function stop_nag(var_f031f5a) {
 // Params 2, eflags: 0x0
 // Checksum 0xfefbd3ad, Offset: 0x1658
 // Size: 0x1d2
-function function_14b08e49(var_3608d414, var_f031f5a) {
+function function_14b08e49(a_str_vo, var_f031f5a) {
     level endon(#"combattraining_logic_finished");
     if (isdefined(var_f031f5a)) {
         level endon(var_f031f5a);
@@ -475,7 +475,7 @@ function function_14b08e49(var_3608d414, var_f031f5a) {
                 level thread stop_nag(var_f031f5a);
                 var_f031f5a = undefined;
             }
-            function_831e0584(var_3608d414, 1, 1);
+            function_831e0584(a_str_vo, 1, 1);
             level.var_de17b8a3 = 0;
             level.var_6ee32682 = gettime() / 1000;
         }
@@ -530,7 +530,7 @@ function function_5172b052(str_vo, str_endon_notify) {
 // Params 5, eflags: 0x0
 // Checksum 0x68292378, Offset: 0x1998
 // Size: 0x13a
-function function_accb34a7(v_target_pos, var_9a9916cf, var_3608d414, str_endon, var_b181ba65) {
+function function_accb34a7(v_target_pos, var_9a9916cf, a_str_vo, str_endon, var_b181ba65) {
     level endon(#"combattraining_logic_finished", str_endon);
     while (1) {
         e_player = getplayers()[0];
@@ -542,7 +542,7 @@ function function_accb34a7(v_target_pos, var_9a9916cf, var_3608d414, str_endon, 
                     e_player = getplayers()[0];
                     e_player thread ct_utils::function_61c3d59c(var_b181ba65, undefined);
                 }
-                function_41e59aeb(var_3608d414);
+                function_41e59aeb(a_str_vo);
                 break;
             }
         }
@@ -554,12 +554,12 @@ function function_accb34a7(v_target_pos, var_9a9916cf, var_3608d414, str_endon, 
 // Params 2, eflags: 0x0
 // Checksum 0x4c7d7b6d, Offset: 0x1ae0
 // Size: 0x68
-function function_5df1a850(e_entity, var_3608d414) {
+function function_5df1a850(e_entity, a_str_vo) {
     if (!isdefined(level.var_77e9434e)) {
         level.var_77e9434e = 0;
     }
     level.var_77e9434e++;
-    e_entity function_b0c62cf3(var_3608d414);
+    e_entity function_b0c62cf3(a_str_vo);
     level.var_77e9434e--;
 }
 
@@ -567,9 +567,9 @@ function function_5df1a850(e_entity, var_3608d414) {
 // Params 1, eflags: 0x0
 // Checksum 0x80318da9, Offset: 0x1b50
 // Size: 0xb6
-function function_b0c62cf3(var_3608d414) {
+function function_b0c62cf3(a_str_vo) {
     self endon(#"death");
-    foreach (str_vo in var_3608d414) {
+    foreach (str_vo in a_str_vo) {
         self playsoundwithnotify(str_vo, "sound_done");
         self waittill(#"sound_done");
     }

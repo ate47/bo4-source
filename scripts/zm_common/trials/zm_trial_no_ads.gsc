@@ -44,7 +44,7 @@ function private on_begin() {
         player zm_trial_util::function_9bf8e274();
         foreach (w_equip in level.zombie_weapons) {
             if (zm_loadout::is_lethal_grenade(w_equip.weapon) || zm_loadout::is_melee_weapon(w_equip.weapon)) {
-                player function_28602a03(w_equip.weapon, 1, 1);
+                player lockweapon(w_equip.weapon, 1, 1);
             }
         }
         player zm_trial_util::function_dc9ab223(1, 1);
@@ -129,9 +129,9 @@ function private function_16824dc3() {
 // Size: 0xb4
 function private function_33f0ddd3(s_event) {
     if (s_event.event === "give_weapon") {
-        self function_28602a03(s_event.weapon, 0, 1);
+        self lockweapon(s_event.weapon, 0, 1);
         if (zm_loadout::is_melee_weapon(s_event.weapon) || zm_loadout::is_lethal_grenade(s_event.weapon)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            self lockweapon(s_event.weapon, 1, 1);
         }
     }
 }

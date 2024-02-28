@@ -739,8 +739,8 @@ function private bgb_activation_monitor() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xeeb79a51, Offset: 0x2e88
 // Size: 0x18c
-function function_e98aa964(var_3e37f503 = 0, var_8593b089 = self.bgb) {
-    var_ceb582a8 = isdefined(level.bgb[var_8593b089].validation_func) && !self [[ level.bgb[var_8593b089].validation_func ]]();
+function function_e98aa964(var_3e37f503 = 0, str_check = self.bgb) {
+    var_ceb582a8 = isdefined(level.bgb[str_check].validation_func) && !self [[ level.bgb[str_check].validation_func ]]();
     var_e6b14ccc = isdefined(level.var_67713b46) && !self [[ level.var_67713b46 ]]();
     if (!var_3e37f503 && isdefined(self.is_drinking) && self.is_drinking || isdefined(self.bgb_activation_in_progress) && self.bgb_activation_in_progress && !(isdefined(self.var_ec8a9710) && self.var_ec8a9710) || self laststand::player_is_in_laststand() || var_ceb582a8 || var_e6b14ccc || isdefined(self.var_16735873) && self.var_16735873 || isdefined(self.var_30cbff55) && self.var_30cbff55) {
         self clientfield::increment_uimodel("zmhud.bgb_invalid_use");

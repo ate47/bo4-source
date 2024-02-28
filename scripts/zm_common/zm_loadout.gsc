@@ -278,11 +278,11 @@ function function_8f85096(slot) {
     if (!isdefined(self.slot_weapons[slot])) {
         self.slot_weapons[slot] = level.weaponnone;
     }
-    var_4d5892ca = level.weaponnone;
+    w_ret = level.weaponnone;
     if (isdefined(self.slot_weapons) && isdefined(self.slot_weapons[slot])) {
-        var_4d5892ca = self.slot_weapons[slot];
+        w_ret = self.slot_weapons[slot];
     }
-    return var_4d5892ca;
+    return w_ret;
 }
 
 // Namespace zm_loadout/zm_loadout
@@ -672,7 +672,7 @@ function give_start_weapon(b_switch_weapon) {
     s_weapon = getunlockableiteminfofromindex(var_9aeb4447, 1);
     if (isdefined(s_weapon) && isdefined(s_weapon.namehash) && zm_custom::function_bce642a1(s_weapon) && zm_custom::function_901b751c(#"zmstartingweaponenabled")) {
         self zm_weapons::weapon_give(getweapon(s_weapon.namehash), 1, b_switch_weapon);
-        if (zm_custom::function_901b751c(#"zmstartingweaponenabled") && isdefined(self.var_8313fee5)) {
+        if (zm_custom::function_901b751c(#"zmstartingweaponenabled") && isdefined(self.talisman_weapon_start)) {
             self thread function_d9153457(b_switch_weapon);
         }
     } else {
@@ -717,7 +717,7 @@ function function_439b009a(slot) {
 // Size: 0xc4
 function function_d9153457(b_switch_weapon = 1) {
     self endon(#"death");
-    var_19673a84 = getweapon(self.var_8313fee5);
+    var_19673a84 = getweapon(self.talisman_weapon_start);
     if (var_19673a84 !== level.weaponnone) {
         self zm_weapons::weapon_give(var_19673a84, 1, 0);
         if (b_switch_weapon) {

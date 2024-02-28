@@ -924,13 +924,13 @@ function function_34d706ae(watcher, var_db52b808, origin, angles, var_796be15d, 
     watcher.objectarray[watcher.objectarray.size] = var_bf8e4260;
     var_bf8e4260.var_2ee191cc = [];
     var_bf8e4260.var_2dd485d4 = [];
-    var_2358ae9 = anglestoright(angles);
-    var_8a455f75 = origin - width * 0.5 * var_2358ae9;
+    rightangles = anglestoright(angles);
+    var_8a455f75 = origin - width * 0.5 * rightangles;
     var_2d71f8ca = int(width / 32);
     for (index = 0; index < var_2d71f8ca; index++) {
         var_a4879492 = deployable::function_d60e5a06(var_8a455f75, 32);
         array::add(var_bf8e4260.var_2ee191cc, var_a4879492);
-        var_8a455f75 = var_8a455f75 + var_2358ae9 * 64;
+        var_8a455f75 = var_8a455f75 + rightangles * 64;
     }
     var_bf8e4260.var_86a21346 = &function_82c4beb0;
     var_bf8e4260.angles = angles;

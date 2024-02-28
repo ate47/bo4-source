@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 // Checksum 0xbb1ebc1b, Offset: 0x350
 // Size: 0x93a
 function __init__() {
-    level.var_4e845c84 = getweapon(#"hash_185abc5c82e9d849");
+    level.var_4e845c84 = getweapon(#"zhield_spectral_turret");
     level.var_22a393d4 = [];
     clientfield::register("allplayers", "" + #"hash_184a34e85c29399f", 1, 1, "int", &function_b7608e70, 0, 0);
     clientfield::register("toplayer", "" + #"afterlife_window", 1, 1, "int", &afterlife_window, 0, 0);
@@ -675,7 +675,7 @@ function function_6b58c030(localclientnum, oldval, newval, bnewent, binitialsnap
         self.var_3e85852d = [];
     }
     w_current = self.weapon;
-    if (w_current !== getweapon(#"hash_185abc5c82e9d849") && w_current !== getweapon(#"hash_158041aab1e14f3a")) {
+    if (w_current !== getweapon(#"zhield_spectral_turret") && w_current !== getweapon(#"zhield_spectral_turret_upgraded")) {
         return;
     }
     if (isdefined(self.var_3e85852d[localclientnum])) {
@@ -710,7 +710,7 @@ function function_98890cd8(w_current, var_94c10bbd = 0) {
             return 1;
         }
     }
-    if (w_current == getweapon(#"hash_185abc5c82e9d849") || w_current == getweapon(#"hash_158041aab1e14f3a")) {
+    if (w_current == getweapon(#"zhield_spectral_turret") || w_current == getweapon(#"zhield_spectral_turret_upgraded")) {
         return 1;
     }
     return 0;

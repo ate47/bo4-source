@@ -506,7 +506,7 @@ function setup_models() {
         s_info.var_7b63dcba = (0, 0, 0);
         v_dir = anglestoforward(s_info.angles);
         v_pos = s_info.var_1a34d8e + v_dir * 85;
-        s_info.var_8f683ef8 = groundtrace(v_pos, v_pos + vectorscale((0, 0, -1), 400), 0, s_info.var_99f92cf4)[#"position"];
+        s_info.var_8f683ef8 = groundtrace(v_pos, v_pos + vectorscale((0, 0, -1), 400), 0, s_info.mdl_bowl)[#"position"];
     }
     waitframe(1);
     var_e668d197 = 1;

@@ -423,51 +423,51 @@ function function_86a8adbe() {
     while (1) {
         s_result = undefined;
         s_result = level waittill(#"hash_e39eca74fa250b4");
-        foreach (var_f8c33269 in level.var_f0e198fa) {
+        foreach (mdl_map in level.var_f0e198fa) {
             if (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) {
-                var_f8c33269 showpart("j_bridge");
-                var_f8c33269 showpart("j_cargo");
-                var_f8c33269 showpart("j_dining_hall");
-                var_f8c33269 showpart("j_engine_room");
-                var_f8c33269 showpart("j_grand_stair_lower");
-                var_f8c33269 showpart("j_grand_stair_upper");
-                var_f8c33269 showpart("j_lounge");
-                var_f8c33269 showpart("j_promenade");
+                mdl_map showpart("j_bridge");
+                mdl_map showpart("j_cargo");
+                mdl_map showpart("j_dining_hall");
+                mdl_map showpart("j_engine_room");
+                mdl_map showpart("j_grand_stair_lower");
+                mdl_map showpart("j_grand_stair_upper");
+                mdl_map showpart("j_lounge");
+                mdl_map showpart("j_promenade");
             } else {
-                var_f8c33269 hidepart("j_bridge");
-                var_f8c33269 hidepart("j_cargo");
-                var_f8c33269 hidepart("j_dining_hall");
-                var_f8c33269 hidepart("j_engine_room");
-                var_f8c33269 hidepart("j_grand_stair_lower");
-                var_f8c33269 hidepart("j_grand_stair_upper");
-                var_f8c33269 hidepart("j_lounge");
-                var_f8c33269 hidepart("j_promenade");
+                mdl_map hidepart("j_bridge");
+                mdl_map hidepart("j_cargo");
+                mdl_map hidepart("j_dining_hall");
+                mdl_map hidepart("j_engine_room");
+                mdl_map hidepart("j_grand_stair_lower");
+                mdl_map hidepart("j_grand_stair_upper");
+                mdl_map hidepart("j_lounge");
+                mdl_map hidepart("j_promenade");
                 foreach (s_magic_box in level.chests) {
                     if (!(isdefined(s_magic_box.hidden) && s_magic_box.hidden) && isdefined(s_magic_box.script_noteworthy)) {
                         switch (s_magic_box.script_noteworthy) {
                         case #"promenade_chest":
-                            var_f8c33269 showpart("j_promenade");
+                            mdl_map showpart("j_promenade");
                             break;
                         case #"cargo_chest":
-                            var_f8c33269 showpart("j_cargo");
+                            mdl_map showpart("j_cargo");
                             break;
                         case #"hash_1cb95429bf87e1dd":
-                            var_f8c33269 showpart("j_engine_room");
+                            mdl_map showpart("j_engine_room");
                             break;
                         case #"grand_stair_lower_chest":
-                            var_f8c33269 showpart("j_grand_stair_lower");
+                            mdl_map showpart("j_grand_stair_lower");
                             break;
                         case #"lounge_chest":
-                            var_f8c33269 showpart("j_lounge");
+                            mdl_map showpart("j_lounge");
                             break;
                         case #"hash_23cfa652ecaa206e":
-                            var_f8c33269 showpart("j_grand_stair_upper");
+                            mdl_map showpart("j_grand_stair_upper");
                             break;
                         case #"bridge_chest":
-                            var_f8c33269 showpart("j_bridge");
+                            mdl_map showpart("j_bridge");
                             break;
                         case #"hash_51c31615840ad554":
-                            var_f8c33269 showpart("j_dining_hall");
+                            mdl_map showpart("j_dining_hall");
                             break;
                         }
                     }
@@ -503,7 +503,7 @@ function function_5716ed83(e_player) {
 // Checksum 0x1afb7574, Offset: 0x38d0
 // Size: 0xbc
 function function_d4fea86c(zbarrier_magicbox) {
-    if (zbarrier_magicbox.weapon === level.var_1cf75f1d) {
+    if (zbarrier_magicbox.weapon === level.w_tricannon_base) {
         v_offset = vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 16;
         self.origin = self.origin + v_offset;
     }
@@ -1275,22 +1275,22 @@ function function_32d2bdc8() {
     var_dd90adf6 = array("zone_poop_deck", "zone_poop_deck_lower", "zone_fore_deck", "zone_mid_deck", "zone_sun_deck_stbd", "zone_sun_deck_port", "zone_aft_deck", "zone_aft_deck_lower", "zone_forecastle_upper", "zone_forecastle_lower");
     var_a1310885 = array("zone_state_rooms_front", "zone_state_rooms_rear", "millionaire_suite_zone", "zone_grand_stairs_a_deck", "zone_grand_stairs_b_deck", "zone_grand_stairs_c_deck", "zone_grand_stairs_d_deck", "zone_grand_stairs_bottom", "zone_lounge", "zone_lounge_aft_deck", "zone_promenade_deck", "zone_dining_hall_fore", "zone_dining_hall_aft");
     if (isinarray(var_1c65f0a, self.zone_name)) {
-        var_344a6a1a = array(#"hash_636abbe1a523130e", #"hash_5c0ea5a6a5ed7e85", #"hash_b78331fbec32771", #"hash_b78321fbec325be", #"hash_7acfc598beff0154", #"hash_7fc6151633627760", #"hash_7fc6161633627913", #"hash_2037bec607c2dd03", #"hash_75df996f8f4f5df", #"hash_527359033a0fec16", #"hash_75dfa96f8f4f792", #"hash_7887f7fa61198709", #"hash_75dfb96f8f4f945", #"hash_7befa3e8cd85887a", #"hash_2d534835676d4bf0", #"hash_2d534b35676d5109", #"hash_2d534a35676d4f56", #"hash_4e3ccf7051cc76f8", #"hash_4e3cd07051cc78ab", #"hash_2d534d35676d546f", #"hash_17bfc1b5e3c3e731", #"hash_17bfc0b5e3c3e57e", #"hash_2400eb2938a774e4", #"hash_57e57fa51c3077eb", #"hash_2400eb2938a774e4");
+        a_models = array(#"hash_636abbe1a523130e", #"hash_5c0ea5a6a5ed7e85", #"hash_b78331fbec32771", #"hash_b78321fbec325be", #"hash_7acfc598beff0154", #"hash_7fc6151633627760", #"hash_7fc6161633627913", #"hash_2037bec607c2dd03", #"hash_75df996f8f4f5df", #"hash_527359033a0fec16", #"hash_75dfa96f8f4f792", #"hash_7887f7fa61198709", #"hash_75dfb96f8f4f945", #"hash_7befa3e8cd85887a", #"hash_2d534835676d4bf0", #"hash_2d534b35676d5109", #"hash_2d534a35676d4f56", #"hash_4e3ccf7051cc76f8", #"hash_4e3cd07051cc78ab", #"hash_2d534d35676d546f", #"hash_17bfc1b5e3c3e731", #"hash_17bfc0b5e3c3e57e", #"hash_2400eb2938a774e4", #"hash_57e57fa51c3077eb", #"hash_2400eb2938a774e4");
     } else if (isinarray(var_c9c43b66, self.zone_name)) {
-        var_344a6a1a = array(#"hash_70f7ce06d71221d1", #"hash_490bb2c56163df6", #"hash_57e57fa51c3077eb", #"hash_2400eb2938a774e4", #"hash_2d534835676d4bf0", #"hash_2d534b35676d5109", #"hash_2d534a35676d4f56", #"hash_2400eb2938a774e4", #"hash_2d534d35676d546f", #"hash_17bfc1b5e3c3e731", #"hash_17bfc0b5e3c3e57e");
+        a_models = array(#"hash_70f7ce06d71221d1", #"hash_490bb2c56163df6", #"hash_57e57fa51c3077eb", #"hash_2400eb2938a774e4", #"hash_2d534835676d4bf0", #"hash_2d534b35676d5109", #"hash_2d534a35676d4f56", #"hash_2400eb2938a774e4", #"hash_2d534d35676d546f", #"hash_17bfc1b5e3c3e731", #"hash_17bfc0b5e3c3e57e");
     } else if (isinarray(var_dd90adf6, self.zone_name)) {
         if (randomint(100) < 33) {
-            var_344a6a1a = array(#"hash_70f7ce06d71221d1", #"hash_490bb2c56163df6", #"hash_57e57fa51c3077eb", #"hash_2400eb2938a774e4", #"hash_57e580a51c30799e", #"hash_57e580a51c30799e", #"hash_7ba2b528997fa55", #"hash_7ba2b528997fa55");
+            a_models = array(#"hash_70f7ce06d71221d1", #"hash_490bb2c56163df6", #"hash_57e57fa51c3077eb", #"hash_2400eb2938a774e4", #"hash_57e580a51c30799e", #"hash_57e580a51c30799e", #"hash_7ba2b528997fa55", #"hash_7ba2b528997fa55");
         }
     } else if (isinarray(var_a1310885, self.zone_name)) {
-        var_344a6a1a = array(#"hash_490bb2c56163df6", #"hash_182b1a4c65e73801", #"hash_182b174c65e732e8", #"hash_182b184c65e7349b", #"hash_2f441451d3b56959", #"hash_cecf5a5c3d66868", #"hash_70f7ce06d71221d1", #"hash_7d45b54d5e3cd677", #"hash_182b174c65e732e8", #"hash_182b184c65e7349b", #"hash_7d45b44d5e3cd4c4", #"hash_cecf5a5c3d66868", #"hash_14c00dedfd2de36a", #"hash_5e3cb12fa50e229c", #"hash_5e3cb22fa50e244f", #"hash_5e3caf2fa50e1f36", #"hash_5e3cb02fa50e20e9", #"hash_5e3cad2fa50e1bd0", #"hash_5e43ac8e88cc1d41", #"hash_1bc5c2590cdbe137", #"hash_1bc5c1590cdbdf84", #"hash_1bc5c0590cdbddd1", #"hash_1bc5bf590cdbdc1e", #"hash_1bc5be590cdbda6b", #"hash_636abbe1a523130e", #"hash_5c0ea5a6a5ed7e85");
+        a_models = array(#"hash_490bb2c56163df6", #"hash_182b1a4c65e73801", #"hash_182b174c65e732e8", #"hash_182b184c65e7349b", #"hash_2f441451d3b56959", #"hash_cecf5a5c3d66868", #"hash_70f7ce06d71221d1", #"hash_7d45b54d5e3cd677", #"hash_182b174c65e732e8", #"hash_182b184c65e7349b", #"hash_7d45b44d5e3cd4c4", #"hash_cecf5a5c3d66868", #"hash_14c00dedfd2de36a", #"hash_5e3cb12fa50e229c", #"hash_5e3cb22fa50e244f", #"hash_5e3caf2fa50e1f36", #"hash_5e3cb02fa50e20e9", #"hash_5e3cad2fa50e1bd0", #"hash_5e43ac8e88cc1d41", #"hash_1bc5c2590cdbe137", #"hash_1bc5c1590cdbdf84", #"hash_1bc5c0590cdbddd1", #"hash_1bc5bf590cdbdc1e", #"hash_1bc5be590cdbda6b", #"hash_636abbe1a523130e", #"hash_5c0ea5a6a5ed7e85");
     } else if (self.zone_name == "zone_bridge") {
-        var_344a6a1a = array(#"hash_70f7ce06d71221d1", #"hash_490bb2c56163df6", #"hash_57e57fa51c3077eb", #"hash_2400eb2938a774e4", #"hash_2400eb2938a774e4", #"hash_57e580a51c30799e", #"hash_7ba2b528997fa55", #"hash_7ba2b528997fa55");
+        a_models = array(#"hash_70f7ce06d71221d1", #"hash_490bb2c56163df6", #"hash_57e57fa51c3077eb", #"hash_2400eb2938a774e4", #"hash_2400eb2938a774e4", #"hash_57e580a51c30799e", #"hash_7ba2b528997fa55", #"hash_7ba2b528997fa55");
     } else if (self.zone_name == "zone_galley") {
-        var_344a6a1a = array(#"hash_490bb2c56163df6", #"hash_636abbe1a523130e", #"hash_5c0ea5a6a5ed7e85", #"hash_2d534835676d4bf0", #"hash_2d534b35676d5109", #"hash_182b174c65e732e8");
+        a_models = array(#"hash_490bb2c56163df6", #"hash_636abbe1a523130e", #"hash_5c0ea5a6a5ed7e85", #"hash_2d534835676d4bf0", #"hash_2d534b35676d5109", #"hash_182b174c65e732e8");
     }
-    if (isdefined(var_344a6a1a)) {
-        self setmodel(var_344a6a1a[randomint(var_344a6a1a.size)]);
+    if (isdefined(a_models)) {
+        self setmodel(a_models[randomint(a_models.size)]);
     }
 }
 
@@ -1734,13 +1734,13 @@ function function_51581a6c() {
     level flag::wait_till("power_on");
     self thread function_f1a16811();
     while (1) {
-        var_e53fa74 = trigger::wait_till("trigger_water_drippies", "targetname", self);
+        t_result = trigger::wait_till("trigger_water_drippies", "targetname", self);
         if (self isplayerunderwater()) {
             wait(0.5);
             continue;
         }
         self clientfield::set_to_player("water_drippies", 1);
-        while (!self isplayerunderwater() && self istouching(var_e53fa74)) {
+        while (!self isplayerunderwater() && self istouching(t_result)) {
             wait(0.5);
         }
         if (!level flag::get(#"hash_7060183fc29995b4") && self zm_zonemgr::is_player_in_zone("zone_cargo")) {
@@ -1758,13 +1758,13 @@ function function_f1a16811() {
     self endon(#"death");
     level endon(#"hash_25d8c88ff3f91ee5");
     while (1) {
-        var_e53fa74 = trigger::wait_till("trigger_water_drippies_fore", "targetname", self);
+        t_result = trigger::wait_till("trigger_water_drippies_fore", "targetname", self);
         if (!(isdefined(level.water_drained_fore) && level.water_drained_fore) || level flag::get(#"hash_7060183fc29995b4") || self isplayerunderwater()) {
             wait(0.5);
             continue;
         }
         self clientfield::set_to_player("water_drippies", 1);
-        while (!level flag::get(#"hash_7060183fc29995b4") && !self isplayerunderwater() && self istouching(var_e53fa74)) {
+        while (!level flag::get(#"hash_7060183fc29995b4") && !self isplayerunderwater() && self istouching(t_result)) {
             wait(0.25);
         }
         self clientfield::set_to_player("water_drippies", 0);
@@ -1865,89 +1865,89 @@ function function_ab7f70b9(e_player) {
     switch (str_zone) {
     case #"zone_forecastle_upper":
     case #"zone_forecastle_lower":
-        var_601fee0 = #"hash_4800ed4f22425bbb";
+        str_display = #"hash_4800ed4f22425bbb";
         break;
     case #"zone_state_rooms_front":
     case #"zone_state_rooms_rear":
-        var_601fee0 = #"hash_69ebb1abe1e2d695";
+        str_display = #"hash_69ebb1abe1e2d695";
         break;
     case #"millionaire_suite_zone":
-        var_601fee0 = #"hash_302fc7a8b597825c";
+        str_display = #"hash_302fc7a8b597825c";
         break;
     case #"zone_bridge":
-        var_601fee0 = #"hash_6e14395e9fafcfb8";
+        str_display = #"hash_6e14395e9fafcfb8";
         break;
     case #"zone_grand_stairs_c_deck":
     case #"zone_grand_stairs_d_deck":
     case #"zone_grand_stairs_bottom":
-        var_601fee0 = #"hash_40db3f8450c1cdd1";
+        str_display = #"hash_40db3f8450c1cdd1";
         break;
     case #"zone_grand_stairs_a_deck":
     case #"zone_grand_stairs_b_deck":
-        var_601fee0 = #"hash_23a9baa5b7fb1b8";
+        str_display = #"hash_23a9baa5b7fb1b8";
         break;
     case #"zone_lounge":
-        var_601fee0 = #"hash_21aaa58eff63ee6f";
+        str_display = #"hash_21aaa58eff63ee6f";
         break;
     case #"zone_dining_hall_aft":
     case #"zone_dining_hall_fore":
-        var_601fee0 = #"hash_3325f6b80c910400";
+        str_display = #"hash_3325f6b80c910400";
         break;
     case #"zone_galley":
-        var_601fee0 = #"hash_1b6d24a149bb4863";
+        str_display = #"hash_1b6d24a149bb4863";
         break;
     case #"zone_promenade_deck":
-        var_601fee0 = #"hash_4254e25038a56598";
+        str_display = #"hash_4254e25038a56598";
         break;
     case #"zone_lounge_aft_deck":
-        var_601fee0 = #"hash_577acc33401ccf26";
+        str_display = #"hash_577acc33401ccf26";
         break;
     case #"zone_aft_deck_lower":
     case #"zone_aft_deck":
-        var_601fee0 = #"hash_64c435d9bd0cdd9e";
+        str_display = #"hash_64c435d9bd0cdd9e";
         break;
     case #"zone_sun_deck_stbd":
-        var_601fee0 = #"hash_38887942b83c8cbb";
+        str_display = #"hash_38887942b83c8cbb";
         break;
     case #"zone_fore_deck":
-        var_601fee0 = #"hash_5c9be164190cf031";
+        str_display = #"hash_5c9be164190cf031";
         break;
     case #"zone_sun_deck_port":
     case #"zone_mid_deck":
-        var_601fee0 = #"hash_7361752642f5d7cf";
+        str_display = #"hash_7361752642f5d7cf";
         break;
     case #"zone_poop_deck":
     case #"zone_poop_deck_lower":
-        var_601fee0 = #"hash_788531c390c09f9";
+        str_display = #"hash_788531c390c09f9";
         break;
     case #"zone_berths":
     case #"zone_berths_subdeck":
-        var_601fee0 = #"hash_1f322078edfcfba3";
+        str_display = #"hash_1f322078edfcfba3";
         break;
     case #"zone_provisions":
-        var_601fee0 = #"hash_4e21f45a939d9031";
+        str_display = #"hash_4e21f45a939d9031";
         break;
     case #"zone_upper_engine_room":
     case #"zone_engine":
-        var_601fee0 = #"hash_118b4d5763e21783";
+        str_display = #"hash_118b4d5763e21783";
         break;
     case #"zone_boiler_room":
-        var_601fee0 = #"hash_21f25d50ac7b1ae0";
+        str_display = #"hash_21f25d50ac7b1ae0";
         break;
     case #"zone_turbine_room":
-        var_601fee0 = #"hash_5479cc9d545c2adc";
+        str_display = #"hash_5479cc9d545c2adc";
         break;
     case #"zone_cargo":
-        var_601fee0 = #"hash_35000bfda3024a1f";
+        str_display = #"hash_35000bfda3024a1f";
         break;
     case #"zone_mail_room":
-        var_601fee0 = #"hash_79da5cb2d068ceb6";
+        str_display = #"hash_79da5cb2d068ceb6";
         break;
     default:
-        var_601fee0 = undefined;
+        str_display = undefined;
         break;
     }
-    return var_601fee0;
+    return str_display;
 }
 
 // Namespace zm_zodt8/zm_zodt8

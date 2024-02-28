@@ -6415,7 +6415,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -6787,7 +6787,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -7159,7 +7159,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -7531,7 +7531,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -7893,7 +7893,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -8250,7 +8250,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -8602,7 +8602,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -8954,7 +8954,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -9306,7 +9306,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -9658,7 +9658,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -10010,7 +10010,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[74];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -10362,7 +10362,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[56];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -10714,7 +10714,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[56];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -11061,7 +11061,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[56];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;
@@ -11407,7 +11407,7 @@ struct root {
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
     hash_67b00e3091cde2fd attachments[56];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     int32 hash_5199b511aa25f017;
     int32 hash_516aa111a9fe5d59;
     int32 hash_51b19c11aa3a577d;

@@ -93,7 +93,7 @@ function private init() {
             game.var_8581b2bd = 0;
         } else {
             game.var_4afb166c = &function_3ca7924f;
-            game.var_2e431430 = &function_d46f78f8;
+            game.var_2e431430 = &e_target_1;
             game.var_94f3e5d2 = &function_66bbf824;
             game.var_321b0d80 = undefined;
             game.var_8581b2bd = 0;
@@ -1233,7 +1233,7 @@ function private function_2da4a527() {
             }
         }
     }
-    return function_d46f78f8();
+    return e_target_1();
 }
 
 // Namespace potm/potm_shared
@@ -1261,7 +1261,7 @@ function private function_fff1ad7e(var_740b4e7b) {
 // Size: 0xea
 function private function_b83114d9() {
     if (!isplayer(self)) {
-        return function_d46f78f8();
+        return e_target_1();
     }
     xuid = self getxuid();
     foreach (var_e705c59f in game.var_b2ee45db) {
@@ -1269,7 +1269,7 @@ function private function_b83114d9() {
             return var_e705c59f.weight;
         }
     }
-    return function_d46f78f8();
+    return e_target_1();
 }
 
 // Namespace potm/potm_shared
@@ -1298,7 +1298,7 @@ function private function_f2d75983(var_900768bc) {
             return var_900768bc.var_54a85e75;
         }
     }
-    return function_d46f78f8();
+    return e_target_1();
 }
 
 // Namespace potm/potm_shared
@@ -1313,7 +1313,7 @@ function function_3ca7924f(var_900768bc) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xea4237f7, Offset: 0x4ef8
 // Size: 0x12
-function function_d46f78f8(var_900768bc) {
+function e_target_1(var_900768bc) {
     return 1;
 }
 
@@ -1330,7 +1330,7 @@ function function_e6c9822f(var_900768bc) {
 // Checksum 0x40e053a5, Offset: 0x4f48
 // Size: 0xd0
 function function_20422a1a(var_900768bc, var_81538b15) {
-    multiplier = function_d46f78f8();
+    multiplier = e_target_1();
     if (game.roundsplayed > 0) {
         var_a8f06888 = function_f2d75983(var_900768bc);
         multiplier = multiplier * var_a8f06888;
@@ -1355,7 +1355,7 @@ function function_5570c594(var_900768bc) {
 // Checksum 0xc885d8ad, Offset: 0x5048
 // Size: 0x2a
 function function_34576c1(var_900768bc, var_81538b15) {
-    return function_d46f78f8(var_900768bc);
+    return e_target_1(var_900768bc);
 }
 
 // Namespace potm/potm_shared

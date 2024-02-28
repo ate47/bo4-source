@@ -50,15 +50,15 @@ function shrink_globe(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     v_up = vectorscale((1, 0, 0), 360);
     v_forward = vectorscale((0, 0, 1), 360);
     if (newval == 1) {
-        self.var_3a6b24a6 = playfx(localclientnum, "zm_weapons/fx8_www_shrink_globe", self.origin, v_forward, v_up);
+        self.fx_globe = playfx(localclientnum, "zm_weapons/fx8_www_shrink_globe", self.origin, v_forward, v_up);
         if (!isdefined(self.var_66db8b1a)) {
             self playsound(localclientnum, #"hash_fe927ec8b31e2d");
             self.var_66db8b1a = self playloopsound(#"hash_57b1409fb6e001f3");
         }
     } else {
-        if (isdefined(self.var_3a6b24a6)) {
-            stopfx(localclientnum, self.var_3a6b24a6);
-            self.var_3a6b24a6 = undefined;
+        if (isdefined(self.fx_globe)) {
+            stopfx(localclientnum, self.fx_globe);
+            self.fx_globe = undefined;
         }
         playfx(localclientnum, "zm_weapons/fx8_www_shrink_globe_death", self.origin, v_forward, v_up);
         if (isdefined(self.var_66db8b1a)) {
@@ -199,7 +199,7 @@ function function_ac54fdec(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         v_up = vectorscale((1, 0, 0), 360);
         v_forward = vectorscale((0, 0, 1), 360);
-        self.var_177e6833 = playfx(localclientnum, "zm_weapons/fx8_www_spin_tornado", self.origin, v_forward, v_up);
+        self.fx_tornado = playfx(localclientnum, "zm_weapons/fx8_www_spin_tornado", self.origin, v_forward, v_up);
         if (!isdefined(self.sound_origin)) {
             self.sound_origin = self.origin + vectorscale((0, 0, 1), 50);
             playsound(localclientnum, #"hash_2d629f848398a470", self.sound_origin);
@@ -210,9 +210,9 @@ function function_ac54fdec(localclientnum, oldval, newval, bnewent, binitialsnap
             playsound(localclientnum, #"hash_49211352d3711451", self.sound_origin);
             audio::stoploopat(#"hash_5a6410f04ce4b3a0", self.sound_origin);
         }
-        if (isdefined(self.var_177e6833)) {
-            stopfx(localclientnum, self.var_177e6833);
-            self.var_177e6833 = undefined;
+        if (isdefined(self.fx_tornado)) {
+            stopfx(localclientnum, self.fx_tornado);
+            self.fx_tornado = undefined;
         }
     }
 }

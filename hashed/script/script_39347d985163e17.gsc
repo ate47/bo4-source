@@ -74,7 +74,7 @@ function private on_end(round_reset) {
 function private function_68af83a9(s_event) {
     w_root = zm_weapons::function_93cd8e76(s_event.weapon);
     if (!zm_loadout::function_2ff6913(w_root) && isarray(level.var_388587c6) && !isinarray(level.var_388587c6, w_root.name)) {
-        self function_28602a03(s_event.weapon);
+        self lockweapon(s_event.weapon);
     } else {
         self unlockweapon(s_event.weapon);
     }

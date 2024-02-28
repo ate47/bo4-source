@@ -579,14 +579,14 @@ function function_c492c4d6(str_index, var_ed1db1a7, a_str_zones, var_cc0c35ca, v
 // Size: 0x194
 function function_1e856719() {
     /#
-        var_f95f5bc7 = getarraykeys(level.a_s_defend_areas);
+        a_str_defend_areas = getarraykeys(level.a_s_defend_areas);
         foreach (str_index, s_defend_area in level.a_s_defend_areas) {
             /#
                 assert(isarray(s_defend_area.var_cc0c35ca), "<unknown string>" + function_9e72a96(str_index) + "<unknown string>");
             #/
             foreach (var_f79ff5ec in s_defend_area.var_cc0c35ca) {
                 /#
-                    assert(isinarray(var_f95f5bc7, var_f79ff5ec), "<unknown string>" + function_9e72a96(var_f79ff5ec) + "<unknown string>");
+                    assert(isinarray(a_str_defend_areas, var_f79ff5ec), "<unknown string>" + function_9e72a96(var_f79ff5ec) + "<unknown string>");
                 #/
             }
         }
@@ -625,19 +625,19 @@ function function_40ef77ab(var_573c22c3, b_random = 1) {
     function_fef4b36a(var_573c22c3);
     var_3a1a007d = array::exclude(var_9cd8223f, level.var_e98284b5);
     if (b_random) {
-        var_94bc902 = array::random(var_3a1a007d);
+        str_defend = array::random(var_3a1a007d);
     } else {
         if (!isdefined(level.a_s_defend_areas[var_573c22c3].var_39c67257)) {
             level.a_s_defend_areas[var_573c22c3].var_39c67257 = 0;
         }
-        var_94bc902 = level.a_s_defend_areas[var_573c22c3].var_cc0c35ca[level.a_s_defend_areas[var_573c22c3].var_39c67257];
+        str_defend = level.a_s_defend_areas[var_573c22c3].var_cc0c35ca[level.a_s_defend_areas[var_573c22c3].var_39c67257];
         level.a_s_defend_areas[var_573c22c3].var_39c67257++;
         if (level.a_s_defend_areas[var_573c22c3].var_39c67257 >= level.a_s_defend_areas[var_573c22c3].var_cc0c35ca.size) {
             level.a_s_defend_areas[var_573c22c3].var_39c67257 = 0;
         }
     }
-    if (isdefined(var_94bc902)) {
-        return var_94bc902;
+    if (isdefined(str_defend)) {
+        return str_defend;
     }
     return array::random(var_9cd8223f);
 }

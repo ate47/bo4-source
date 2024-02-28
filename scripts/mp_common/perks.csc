@@ -619,8 +619,8 @@ function monitor_detectnearbyenemies(local_client_num) {
                 }
             }
             if (isdefined(sixthsenseent.var_629d0f94)) {
-                var_fd081905 = getarraykeys(sixthsenseent.var_629d0f94);
-                foreach (action in var_fd081905) {
+                actionkeys = getarraykeys(sixthsenseent.var_629d0f94);
+                foreach (action in actionkeys) {
                     var_aaf15d9a = sixthsenseent.var_629d0f94[action];
                     if (!isdefined(var_aaf15d9a)) {
                         continue;

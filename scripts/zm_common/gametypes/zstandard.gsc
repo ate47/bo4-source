@@ -162,9 +162,9 @@ function function_6c2b3729() {
         waittillframeend();
         level flag::wait_till("<unknown string>");
         if (isdefined(level.a_s_defend_areas)) {
-            var_f95f5bc7 = getarraykeys(level.a_s_defend_areas);
-            foreach (var_355646ad in var_f95f5bc7) {
-                str_name = function_9e72a96(var_355646ad);
+            a_str_defend_areas = getarraykeys(level.a_s_defend_areas);
+            foreach (str_defend_area in a_str_defend_areas) {
+                str_name = function_9e72a96(str_defend_area);
                 util::add_debug_command("<unknown string>" + str_name + "<unknown string>" + "<unknown string>" + str_name + "<unknown string>" + "<unknown string>");
                 util::add_debug_command("<unknown string>" + str_name + "<unknown string>" + "<unknown string>" + str_name + "<unknown string>" + "<unknown string>");
             }
@@ -200,11 +200,11 @@ function function_2f63dc81(cmd) {
             break;
         default:
             if (isdefined(level.a_s_defend_areas)) {
-                var_f95f5bc7 = getarraykeys(level.a_s_defend_areas);
+                a_str_defend_areas = getarraykeys(level.a_s_defend_areas);
                 var_5e62c213 = strtok(cmd, "<unknown string>");
                 str_name = var_5e62c213[0];
                 var_19d45c79 = var_5e62c213[1];
-                if (isinarray(var_f95f5bc7, hash(str_name))) {
+                if (isinarray(a_str_defend_areas, hash(str_name))) {
                     if (var_19d45c79 === "<unknown string>") {
                         iprintlnbold("<unknown string>" + str_name + "<unknown string>");
                         if (isdefined(level.var_35da2d77) && isdefined(level.var_9149f3ac)) {
@@ -2221,7 +2221,7 @@ function function_f26f8251(str_archetype, n_player_count) {
                 s_waitresult = undefined;
                 s_waitresult = level waittill(#"transformation_complete");
                 if (s_waitresult.id === str_archetype) {
-                    ai = s_waitresult.var_944250d2[0];
+                    ai = s_waitresult.new_ai[0];
                 }
             }
             waitframe(1);

@@ -285,7 +285,7 @@ function private function_734195be() {
     while (1) {
         s_notify = undefined;
         s_notify = level waittill(#"transformation_complete");
-        if (isdefined(s_notify.var_944250d2) && isarray(s_notify.var_944250d2) && isinarray(s_notify.var_944250d2, self)) {
+        if (isdefined(s_notify.new_ai) && isarray(s_notify.new_ai) && isinarray(s_notify.new_ai, self)) {
             self.var_69a981e6 = 0;
             self.zombie_think_done = 1;
             self.completed_emerging_into_playable_area = 1;

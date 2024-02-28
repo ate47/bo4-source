@@ -265,18 +265,18 @@ function private tomahawk_thrown(e_grenade) {
         }
     }
     if (a_powerups.size) {
-        var_6e6ec518 = tomahawk_spawn(e_grenade.origin, n_grenade_charge_power);
-        var_6e6ec518.n_grenade_charge_power = n_grenade_charge_power;
-        var_6e6ec518.low_level_instant_kill_charge = e_grenade.low_level_instant_kill_charge;
+        mdl_tomahawk = tomahawk_spawn(e_grenade.origin, n_grenade_charge_power);
+        mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
+        mdl_tomahawk.low_level_instant_kill_charge = e_grenade.low_level_instant_kill_charge;
         if (isdefined(e_grenade)) {
             e_grenade delete();
         }
         foreach (powerup in a_powerups) {
-            powerup.origin = var_6e6ec518.origin;
-            powerup linkto(var_6e6ec518);
-            var_6e6ec518.a_has_powerup = a_powerups;
+            powerup.origin = mdl_tomahawk.origin;
+            powerup linkto(mdl_tomahawk);
+            mdl_tomahawk.a_has_powerup = a_powerups;
         }
-        self thread tomahawk_return_player(var_6e6ec518, 0);
+        self thread tomahawk_return_player(mdl_tomahawk, 0);
         return;
     }
     if (!isdefined(e_grenade)) {
@@ -303,13 +303,13 @@ function private tomahawk_thrown(e_grenade) {
                     if (var_643ef1e3 >= 5) {
                         self notify(#"hash_3669499a148a6d6e", {#weapon:e_grenade.weapon});
                     }
-                    var_6e6ec518 = tomahawk_spawn(e_grenade.origin, n_grenade_charge_power);
-                    var_6e6ec518.n_grenade_charge_power = n_grenade_charge_power;
-                    var_6e6ec518.low_level_instant_kill_charge = e_grenade.low_level_instant_kill_charge;
+                    mdl_tomahawk = tomahawk_spawn(e_grenade.origin, n_grenade_charge_power);
+                    mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
+                    mdl_tomahawk.low_level_instant_kill_charge = e_grenade.low_level_instant_kill_charge;
                     if (isdefined(e_grenade)) {
                         e_grenade delete();
                     }
-                    self thread tomahawk_return_player(var_6e6ec518, var_65f2e452);
+                    self thread tomahawk_return_player(mdl_tomahawk, var_65f2e452);
                     return;
                 }
             }
@@ -338,20 +338,20 @@ function private check_for_time_out(e_grenade) {
 // Size: 0x64c
 function private tomahawk_ricochet_attack(var_65f2e452, e_grenade, var_bc201c9e, e_ignore) {
     self endon(#"disconnect");
-    var_6e6ec518 = tomahawk_spawn(e_grenade.origin, var_bc201c9e);
-    var_6e6ec518.n_grenade_charge_power = var_bc201c9e;
-    var_6e6ec518.low_level_instant_kill_charge = e_grenade.low_level_instant_kill_charge;
-    var_6e6ec518 endon(#"death");
+    mdl_tomahawk = tomahawk_spawn(e_grenade.origin, var_bc201c9e);
+    mdl_tomahawk.n_grenade_charge_power = var_bc201c9e;
+    mdl_tomahawk.low_level_instant_kill_charge = e_grenade.low_level_instant_kill_charge;
+    mdl_tomahawk endon(#"death");
     if (isdefined(e_grenade)) {
         e_grenade delete();
     }
     if (var_65f2e452 >= 5) {
-        self thread tomahawk_return_player(var_6e6ec518, var_65f2e452);
+        self thread tomahawk_return_player(mdl_tomahawk, var_65f2e452);
         return;
     }
     a_ai_zombies = util::get_array_of_closest(self.origin, getaiteamarray(level.zombie_team), undefined, undefined, 900);
     if (!a_ai_zombies.size) {
-        self thread tomahawk_return_player(var_6e6ec518, var_65f2e452);
+        self thread tomahawk_return_player(mdl_tomahawk, var_65f2e452);
         return;
     }
     var_f500f73e = [];
@@ -404,13 +404,13 @@ function private tomahawk_ricochet_attack(var_65f2e452, e_grenade, var_bc201c9e,
     }
     if (var_f500f73e.size) {
         var_f500f73e = arraysortclosest(var_f500f73e, self.origin);
-        var_65f2e452 = self function_e865484a(var_6e6ec518, var_f500f73e, var_65f2e452);
+        var_65f2e452 = self function_e865484a(mdl_tomahawk, var_f500f73e, var_65f2e452);
     }
     if (var_65f2e452 >= 5) {
-        self thread tomahawk_return_player(var_6e6ec518, var_65f2e452);
+        self thread tomahawk_return_player(mdl_tomahawk, var_65f2e452);
         return;
     } else {
-        self thread function_d81951f5(var_6e6ec518, var_65f2e452);
+        self thread function_d81951f5(mdl_tomahawk, var_65f2e452);
     }
 }
 
@@ -418,7 +418,7 @@ function private tomahawk_ricochet_attack(var_65f2e452, e_grenade, var_bc201c9e,
 // Params 2, eflags: 0x5 linked
 // Checksum 0xf4de7e7a, Offset: 0x1cd0
 // Size: 0x284
-function private function_d81951f5(var_6e6ec518, var_65f2e452) {
+function private function_d81951f5(mdl_tomahawk, var_65f2e452) {
     var_f500f73e = [];
     a_ai_zombies = util::get_array_of_closest(self.origin, getaiteamarray(level.zombie_team), undefined, undefined, 900);
     foreach (ai_zombie in a_ai_zombies) {
@@ -436,22 +436,22 @@ function private function_d81951f5(var_6e6ec518, var_65f2e452) {
     if (var_f500f73e.size) {
         var_f500f73e = arraysortclosest(var_f500f73e, self.origin);
         var_f500f73e = array::reverse(var_f500f73e);
-        var_65f2e452 = self function_e865484a(var_6e6ec518, var_f500f73e, var_65f2e452);
+        var_65f2e452 = self function_e865484a(mdl_tomahawk, var_f500f73e, var_65f2e452);
     }
-    self thread tomahawk_return_player(var_6e6ec518, var_65f2e452);
+    self thread tomahawk_return_player(mdl_tomahawk, var_65f2e452);
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
 // Params 3, eflags: 0x5 linked
 // Checksum 0x3109d833, Offset: 0x1f60
 // Size: 0x21c
-function private function_e865484a(var_6e6ec518, a_ai_zombie, var_65f2e452) {
+function private function_e865484a(mdl_tomahawk, a_ai_zombie, var_65f2e452) {
     self endon(#"disconnect");
     while (1) {
         ai_zombie = undefined;
         for (i = 0; i < a_ai_zombie.size; i++) {
             if (isalive(a_ai_zombie[i]) && !(isdefined(a_ai_zombie[i].hit_by_tomahawk) && a_ai_zombie[i].hit_by_tomahawk)) {
-                if (isdefined(bullettracepassed(var_6e6ec518.origin, a_ai_zombie[i] geteye(), 0, var_6e6ec518)) && bullettracepassed(var_6e6ec518.origin, a_ai_zombie[i] geteye(), 0, var_6e6ec518)) {
+                if (isdefined(bullettracepassed(mdl_tomahawk.origin, a_ai_zombie[i] geteye(), 0, mdl_tomahawk)) && bullettracepassed(mdl_tomahawk.origin, a_ai_zombie[i] geteye(), 0, mdl_tomahawk)) {
                     ai_zombie = a_ai_zombie[i];
                     break;
                 }
@@ -460,10 +460,10 @@ function private function_e865484a(var_6e6ec518, a_ai_zombie, var_65f2e452) {
         if (!isdefined(ai_zombie)) {
             return var_65f2e452;
         }
-        n_dist = distance(var_6e6ec518.origin, ai_zombie gettagorigin("j_head"));
+        n_dist = distance(mdl_tomahawk.origin, ai_zombie gettagorigin("j_head"));
         var_bfed4a7 = n_dist / 1600;
         var_bfed4a7 = var_bfed4a7 < 0.05 ? var_bfed4a7 : 0.05;
-        self thread function_c7ddedb2(var_6e6ec518, ai_zombie, var_bfed4a7);
+        self thread function_c7ddedb2(mdl_tomahawk, ai_zombie, var_bfed4a7);
         wait(var_bfed4a7);
         var_65f2e452++;
         if (var_65f2e452 >= 5) {
@@ -477,11 +477,11 @@ function private function_e865484a(var_6e6ec518, a_ai_zombie, var_65f2e452) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x5bead4f1, Offset: 0x2188
 // Size: 0x24c
-function private function_c7ddedb2(var_6e6ec518, ai_zombie, var_bfed4a7 = 0.25) {
+function private function_c7ddedb2(mdl_tomahawk, ai_zombie, var_bfed4a7 = 0.25) {
     self endon(#"disconnect");
     if (isalive(ai_zombie) && !(isdefined(ai_zombie.hit_by_tomahawk) && ai_zombie.hit_by_tomahawk)) {
         v_target = ai_zombie gettagorigin("J_Head");
-        var_6e6ec518 moveto(v_target, var_bfed4a7);
+        mdl_tomahawk moveto(v_target, var_bfed4a7);
         wait(var_bfed4a7);
         if (isalive(ai_zombie)) {
             ai_zombie.hit_by_tomahawk = 1;
@@ -491,8 +491,8 @@ function private function_c7ddedb2(var_6e6ec518, ai_zombie, var_bfed4a7 = 0.25) 
                 ai_zombie clientfield::set("tomahawk_impact_fx", 1);
             }
             ai_zombie clientfield::set("play_tomahawk_hit_sound", 1);
-            n_tomahawk_damage = calculate_tomahawk_damage(ai_zombie, var_6e6ec518.n_grenade_charge_power, var_6e6ec518);
-            ai_zombie dodamage(n_tomahawk_damage, var_6e6ec518.origin, self, var_6e6ec518, "none", "MOD_GRENADE", 0, getweapon(self.var_4f8fb07f));
+            n_tomahawk_damage = calculate_tomahawk_damage(ai_zombie, mdl_tomahawk.n_grenade_charge_power, mdl_tomahawk);
+            ai_zombie dodamage(n_tomahawk_damage, mdl_tomahawk.origin, self, mdl_tomahawk, "none", "MOD_GRENADE", 0, getweapon(self.var_4f8fb07f));
             if (ai_zombie.health < 0) {
                 ai_zombie zm_trial_restrict_loadout::function_bb33631e(#"spoon");
             }
@@ -505,21 +505,21 @@ function private function_c7ddedb2(var_6e6ec518, ai_zombie, var_bfed4a7 = 0.25) 
 // Params 3, eflags: 0x1 linked
 // Checksum 0x16c08ab4, Offset: 0x23e0
 // Size: 0x42e
-function tomahawk_return_player(var_6e6ec518, var_65f2e452, n_move_speed = 1600) {
+function tomahawk_return_player(mdl_tomahawk, var_65f2e452, n_move_speed = 1600) {
     self endon(#"disconnect");
-    if (isdefined(var_6e6ec518)) {
-        n_dist = distance(var_6e6ec518.origin, self geteye());
+    if (isdefined(mdl_tomahawk)) {
+        n_dist = distance(mdl_tomahawk.origin, self geteye());
         var_e65ebf4 = n_dist / n_move_speed;
         var_e65ebf4 = var_e65ebf4 < 0.05 ? var_e65ebf4 : 0.05;
         n_total_time = undefined;
-        n_dist_sq = distance2dsquared(var_6e6ec518.origin, self geteye());
+        n_dist_sq = distance2dsquared(mdl_tomahawk.origin, self geteye());
         if (!isdefined(var_65f2e452)) {
             var_65f2e452 = 5;
         }
         while (n_dist_sq > 1600) {
-            var_6e6ec518 moveto(self geteye(), var_e65ebf4);
+            mdl_tomahawk moveto(self geteye(), var_e65ebf4);
             if (var_65f2e452 < 5) {
-                self function_723cb8bd(var_6e6ec518);
+                self function_723cb8bd(mdl_tomahawk);
                 var_65f2e452++;
                 wait(0.1);
             } else {
@@ -530,18 +530,18 @@ function tomahawk_return_player(var_6e6ec518, var_65f2e452, n_move_speed = 1600)
                 wait(0.1);
                 n_current_time = gettime();
                 n_total_time = (n_current_time - n_start_time) / 1000;
-                var_e65ebf4 = self function_e2c00ed6(var_6e6ec518, n_move_speed, n_total_time);
+                var_e65ebf4 = self function_e2c00ed6(mdl_tomahawk, n_move_speed, n_total_time);
             }
-            n_dist_sq = distance2dsquared(var_6e6ec518.origin, self geteye());
+            n_dist_sq = distance2dsquared(mdl_tomahawk.origin, self geteye());
         }
-        if (isdefined(var_6e6ec518.a_has_powerup)) {
-            foreach (powerup in var_6e6ec518.a_has_powerup) {
+        if (isdefined(mdl_tomahawk.a_has_powerup)) {
+            foreach (powerup in mdl_tomahawk.a_has_powerup) {
                 if (isdefined(powerup)) {
                     powerup.origin = self.origin;
                 }
             }
         }
-        var_6e6ec518 delete();
+        mdl_tomahawk delete();
     }
     self thread tomahawk_rumble(1);
     self playsound("wpn_tomahawk_return");
@@ -561,7 +561,7 @@ function tomahawk_return_player(var_6e6ec518, var_65f2e452, n_move_speed = 1600)
 // Params 3, eflags: 0x5 linked
 // Checksum 0x38c3e8c1, Offset: 0x2818
 // Size: 0x11c
-function private function_e2c00ed6(var_6e6ec518, n_move_speed, n_total_time) {
+function private function_e2c00ed6(mdl_tomahawk, n_move_speed, n_total_time) {
     if (n_total_time < 0.05) {
         var_e89ec7fd = 0.05 - n_total_time;
         var_e89ec7fd = var_e89ec7fd < 0.05 ? var_e89ec7fd : 0.05;
@@ -570,7 +570,7 @@ function private function_e2c00ed6(var_6e6ec518, n_move_speed, n_total_time) {
     }
     var_a6693654 = n_total_time * 0.25;
     var_5100df85 = n_move_speed + n_move_speed * var_a6693654;
-    n_dist = distance(var_6e6ec518.origin, self geteye());
+    n_dist = distance(mdl_tomahawk.origin, self geteye());
     var_e65ebf4 = n_dist / var_5100df85;
     var_e65ebf4 = var_e65ebf4 < var_e89ec7fd ? var_e65ebf4 : var_e89ec7fd;
     return var_e65ebf4;
@@ -580,15 +580,15 @@ function private function_e2c00ed6(var_6e6ec518, n_move_speed, n_total_time) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0xc4e0ec39, Offset: 0x2940
 // Size: 0x10c
-function private function_723cb8bd(var_6e6ec518) {
+function private function_723cb8bd(mdl_tomahawk) {
     self endon(#"disconnect");
-    var_6e6ec518 endon(#"death");
+    mdl_tomahawk endon(#"death");
     a_ai_zombies = getaiteamarray(level.zombie_team);
     if (a_ai_zombies.size) {
-        ai_zombie = arraygetclosest(var_6e6ec518.origin, a_ai_zombies);
-        if (isalive(ai_zombie) && distance2dsquared(var_6e6ec518.origin, ai_zombie.origin) <= 10000) {
+        ai_zombie = arraygetclosest(mdl_tomahawk.origin, a_ai_zombies);
+        if (isalive(ai_zombie) && distance2dsquared(mdl_tomahawk.origin, ai_zombie.origin) <= 10000) {
             if (!(isdefined(ai_zombie.hit_by_tomahawk) && ai_zombie.hit_by_tomahawk)) {
-                self function_c7ddedb2(var_6e6ec518, ai_zombie);
+                self function_c7ddedb2(mdl_tomahawk, ai_zombie);
             }
         }
     }
@@ -599,20 +599,20 @@ function private function_723cb8bd(var_6e6ec518) {
 // Checksum 0x21374de3, Offset: 0x2a58
 // Size: 0x166
 function tomahawk_spawn(grenade_origin, charged) {
-    var_6e6ec518 = util::spawn_model("wpn_t8_zm_tomahawk_world", grenade_origin);
-    var_6e6ec518 thread tomahawk_spin();
+    mdl_tomahawk = util::spawn_model("wpn_t8_zm_tomahawk_world", grenade_origin);
+    mdl_tomahawk thread tomahawk_spin();
     if (self.var_4f8fb07f == #"tomahawk_t8_upgraded" || isdefined(self.var_67ea42af) && self.var_67ea42af) {
-        var_6e6ec518 clientfield::set("tomahawk_trail_fx", 2);
+        mdl_tomahawk clientfield::set("tomahawk_trail_fx", 2);
     } else {
-        var_6e6ec518 clientfield::set("tomahawk_trail_fx", 1);
+        mdl_tomahawk clientfield::set("tomahawk_trail_fx", 1);
     }
     if (isdefined(charged) && charged > 1 && isdefined(self.var_67ea42af)) {
-        var_6e6ec518 clientfield::set("tomahawk_trail_fx", 4);
+        mdl_tomahawk clientfield::set("tomahawk_trail_fx", 4);
     } else if (isdefined(charged) && charged > 1) {
-        var_6e6ec518 clientfield::set("tomahawk_trail_fx", 3);
+        mdl_tomahawk clientfield::set("tomahawk_trail_fx", 3);
     }
-    var_6e6ec518.low_level_instant_kill_charge = 1;
-    return var_6e6ec518;
+    mdl_tomahawk.low_level_instant_kill_charge = 1;
+    return mdl_tomahawk;
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk
