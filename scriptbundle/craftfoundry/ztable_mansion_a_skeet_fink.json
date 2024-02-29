@@ -2,7 +2,7 @@
     "var_922067c4": "scriptbundle",
     "type": "craftfoundry",
     "var_2a2adea3": 1,
-    "var_110b7b70": "zblueprint_mansion_a_skeet_fink",
+    "blueprint01": "zblueprint_mansion_a_skeet_fink",
     "name": "ztable_mansion_a_skeet_fink",
     "displayname": "A Skeet Fink"
 }

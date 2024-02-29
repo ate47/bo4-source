@@ -51,7 +51,7 @@ function event_handler[level_init] main(eventstruct) {
     level._uses_taser_knuckles = 1;
     level._power_on = 0;
     level.var_d0ab70a2 = #"hash_2ed6ad41883dc026";
-    level.player_bladeblade = vectorscale((0, 1, 0), 90);
+    level.var_4016a739 = vectorscale((0, 1, 0), 90);
     load::main();
     level thread zm_office_sound::main();
     level thread setup_personality_character_exerts();

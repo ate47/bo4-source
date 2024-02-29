@@ -2,7 +2,7 @@
     "var_922067c4": "scriptbundle",
     "type": "craftfoundry",
     "var_2a2adea3": 1,
-    "var_110b7b70": "zblueprint_zod_tricannon_upgrade",
+    "blueprint01": "zblueprint_zod_tricannon_upgrade",
     "name": "ztable_tricannon_upgrade",
     "displayname": "Distillation Kit"
 }

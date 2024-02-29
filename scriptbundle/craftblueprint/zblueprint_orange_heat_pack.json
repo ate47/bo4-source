@@ -9,7 +9,7 @@
     "var_2e0a273a": "weapon#hash_3bbf0a91290c783e",
     "name": "zblueprint_orange_heat_pack",
     "displayname": "orange_heat_pack",
-    "var_db27a7f7": "p8_zm_ora_blueprint_heatingpack",
+    "mdlblueprint": "p8_zm_ora_blueprint_heatingpack",
     "var_391591d0": "#hash_6fdaad97d9d28c43",
     "var_46309255": "one_time_craft",
     "var_abd9b2d0": "#zm_orange/grab_heat_pack_free",

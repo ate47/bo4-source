@@ -23,9 +23,9 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0xf56ce78d, Offset: 0x248
 // Size: 0xa4
 function on_localclient_connect(localclientnum) {
-    var_e73f171e = getuimodelforcontroller(localclientnum);
-    setuimodelvalue(createuimodel(var_e73f171e, "Escort.robotIsEnemy"), 0);
-    setuimodelvalue(createuimodel(var_e73f171e, "Escort.robotRebooting"), 0);
+    conmodel = getuimodelforcontroller(localclientnum);
+    setuimodelvalue(createuimodel(conmodel, "Escort.robotIsEnemy"), 0);
+    setuimodelvalue(createuimodel(conmodel, "Escort.robotRebooting"), 0);
     level wait_team_changed(localclientnum);
 }
 

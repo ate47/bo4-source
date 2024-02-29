@@ -2,7 +2,7 @@
     "var_922067c4": "scriptbundle",
     "type": "craftfoundry",
     "var_2a2adea3": 1,
-    "var_110b7b70": "zblueprint_office_trap_battery",
+    "blueprint01": "zblueprint_office_trap_battery",
     "name": "ztable_office_trap_battery",
     "displayname": "office_trap_battery"
 }

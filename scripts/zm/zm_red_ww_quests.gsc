@@ -2570,15 +2570,15 @@ function function_419874c2(e_player) {
 // Size: 0x24c
 function function_29022c99() {
     level.var_d162b086 = struct::get("s_ww_ouranos_arrow_cliff");
-    level.var_d162b086.var_c96a48c3 = getent("mdl_ww_ouranos_arrow_cliff", "targetname");
+    level.var_d162b086.mdl_arrow = getent("mdl_ww_ouranos_arrow_cliff", "targetname");
     level.var_d162b086.var_80d10658 = getent("ouranos_arrow_cliff_clip", "targetname");
     level.var_d162b086.var_688d8a36 = 1;
     level.var_90ac03cc = struct::get("s_ww_ouranos_arrow_serpent");
-    level.var_90ac03cc.var_c96a48c3 = getent("mdl_ww_ouranos_arrow_serpent", "targetname");
+    level.var_90ac03cc.mdl_arrow = getent("mdl_ww_ouranos_arrow_serpent", "targetname");
     level.var_90ac03cc.var_80d10658 = getent("ouranos_arrow_serpent_clip", "targetname");
     level.var_90ac03cc.var_688d8a36 = 1;
     level.var_46c8296a = struct::get("s_ww_ouranos_arrow_center");
-    level.var_46c8296a.var_c96a48c3 = getent("mdl_ww_ouranos_arrow_center", "targetname");
+    level.var_46c8296a.mdl_arrow = getent("mdl_ww_ouranos_arrow_center", "targetname");
     level.var_46c8296a.var_80d10658 = getent("ouranos_arrow_center_clip", "targetname");
     level.var_46c8296a.var_688d8a36 = 1;
     self.var_267d1e6 = 0;
@@ -2671,7 +2671,7 @@ function function_759247cd(str_loc) {
     }
     if (isdefined(s_fletching.var_688d8a36) && s_fletching.var_688d8a36) {
         level.var_3804f7bd = undefined;
-        s_fletching.var_c96a48c3 thread scene::play(str_scene, "impact", s_fletching.var_c96a48c3);
+        s_fletching.mdl_arrow thread scene::play(str_scene, "impact", s_fletching.mdl_arrow);
         s_fletching thread spawn_feather(self);
         if (isdefined(self) && !(isdefined(self.var_1b73e21e) && self.var_1b73e21e)) {
             self thread function_fb68b3bb();
@@ -2742,7 +2742,7 @@ function function_6d466962(var_8290a028, s_original, mdl_feather, e_player = und
             var_adcf0d98 = "tag_feather_03";
             break;
         }
-        s_original.var_c96a48c3 thread scene::play(var_511277e5, "break", s_original.var_c96a48c3);
+        s_original.mdl_arrow thread scene::play(var_511277e5, "break", s_original.mdl_arrow);
         s_original.var_688d8a36 = 0;
         var_8290a028 scene::play(var_e3ed6c41, var_8806d469, mdl_feather);
         mdl_shrine_feathers = getent("mdl_shrine_feathers_complete", "targetname");
@@ -2867,9 +2867,9 @@ function function_dd1c5ae6() {
         zm_unitrigger::unitrigger_force_per_player_triggers(s_unitrigger, 1);
         mdl_tree = getent(var_52666e80.script_noteworthy, "targetname");
         mdl_tree thread function_bbee7f7b();
-        var_26450f62 = getentarray(mdl_tree.target, "targetname");
+        a_mdl_chaos = getentarray(mdl_tree.target, "targetname");
         var_52666e80.var_c2f1923d = 0;
-        foreach (mdl_chaos in var_26450f62) {
+        foreach (mdl_chaos in a_mdl_chaos) {
             mdl_chaos thread function_68080923(var_52666e80, mdl_tree);
         }
         var_cb2f80a0 = getent(var_52666e80.target, "targetname");
@@ -4774,10 +4774,10 @@ function function_681ce100() {
         var_1d89b97b = struct::get_array("pap_waiting_for_user", "break");
         foreach (var_52666e80 in var_1d89b97b) {
             mdl_tree = getent(var_52666e80.script_noteworthy, "break");
-            var_26450f62 = getentarray(mdl_tree.target, "break");
+            a_mdl_chaos = getentarray(mdl_tree.target, "break");
             a_players[0] setorigin(var_52666e80.origin);
             a_players[0] setplayerangles(var_52666e80.angles);
-            foreach (mdl_chaos in var_26450f62) {
+            foreach (mdl_chaos in a_mdl_chaos) {
                 switch (mdl_chaos.model) {
                 case #"hash_17ff8b184015c0d0":
                     v_tag_pos = mdl_chaos gettagorigin("<unknown string>");
@@ -4989,9 +4989,9 @@ function function_318c3039() {
 // Size: 0x15c
 function function_37deb555() {
     /#
-        var_a7e222e0 = array(getent("<unknown string>", "break"), getent("<unknown string>", "break"), getent("<unknown string>", "break"));
-        var_c96a48c3 = arraygetclosest(level.players[0].origin, var_a7e222e0);
-        switch (var_c96a48c3.targetname) {
+        a_mdl_arrows = array(getent("<unknown string>", "break"), getent("<unknown string>", "break"), getent("<unknown string>", "break"));
+        mdl_arrow = arraygetclosest(level.players[0].origin, a_mdl_arrows);
+        switch (mdl_arrow.targetname) {
         case #"mdl_ww_ouranos_arrow_serpent":
             var_511277e5 = "<unknown string>";
             break;
@@ -5002,7 +5002,7 @@ function function_37deb555() {
             var_511277e5 = "<unknown string>";
             break;
         }
-        var_c96a48c3 thread scene::play(var_511277e5, "<unknown string>", var_c96a48c3);
+        mdl_arrow thread scene::play(var_511277e5, "<unknown string>", mdl_arrow);
     #/
 }
 

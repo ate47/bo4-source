@@ -315,13 +315,13 @@ function function_1baa684c(str_flag) {
 // Size: 0x39a
 function function_ad646ef8(n_state) {
     e_lighthouse = level.var_ab11c23d;
-    if (e_lighthouse.structs_objecti !== n_state) {
+    if (e_lighthouse.var_58df9892 !== n_state) {
         e_lighthouse notify(#"hash_1aa56851d9d4ec0d");
-        e_lighthouse.structs_objecti = n_state;
+        e_lighthouse.var_58df9892 = n_state;
         /#
-            iprintln("<unknown string>" + level.var_4b3d7dc1[e_lighthouse.structs_objecti]);
+            iprintln("<unknown string>" + level.var_4b3d7dc1[e_lighthouse.var_58df9892]);
         #/
-        switch (e_lighthouse.structs_objecti) {
+        switch (e_lighthouse.var_58df9892) {
         case 0:
             array::thread_all(level.var_f92c8836, &function_76adab5e);
             break;
@@ -374,7 +374,7 @@ function function_ad646ef8(n_state) {
 function function_74b930af(n_time, n_state) {
     self endon(#"death", #"hash_6e9ab520bd7ba3c");
     wait(n_time);
-    while (n_state == 1 && (self.structs_objecti == 5 || self.structs_objecti == 6)) {
+    while (n_state == 1 && (self.var_58df9892 == 5 || self.var_58df9892 == 6)) {
         wait(0.1);
     }
     level thread function_ad646ef8(n_state);
@@ -661,7 +661,7 @@ function function_85d3d607(e_player) {
     } else if (isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
         self zm_hms_util::function_b2e1326(0);
     } else {
-        switch (level.var_ab11c23d.structs_objecti) {
+        switch (level.var_ab11c23d.var_58df9892) {
         case 0:
             self zm_hms_util::function_b2e1326(0);
             break;
@@ -700,7 +700,7 @@ function function_72d528e6() {
         if (isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
             continue;
         }
-        if (zm_utility::is_player_valid(e_who) && level.var_ab11c23d.structs_objecti === 2) {
+        if (zm_utility::is_player_valid(e_who) && level.var_ab11c23d.var_58df9892 === 2) {
             if (level flag::get(#"half_price_traps")) {
                 if (self.mdl_switch zm_traps::trap_purchase(e_who, int(500))) {
                     e_who function_2ad3b642(self);
@@ -729,7 +729,7 @@ function function_f7e6bf61(b_on) {
 // Checksum 0x46aa6871, Offset: 0x2aa0
 // Size: 0xca
 function function_76adab5e() {
-    switch (level.var_ab11c23d.structs_objecti) {
+    switch (level.var_ab11c23d.var_58df9892) {
     case 0:
         self.mdl_light setmodel("p8_zm_off_trap_switch_light");
         break;
@@ -755,7 +755,7 @@ function function_1e43f3c7() {
 // Checksum 0xbb049fe7, Offset: 0x2ba8
 // Size: 0x1c
 function is_trap_active() {
-    return level.var_ab11c23d.structs_objecti > 2;
+    return level.var_ab11c23d.var_58df9892 > 2;
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse

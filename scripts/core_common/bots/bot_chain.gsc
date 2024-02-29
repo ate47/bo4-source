@@ -342,26 +342,26 @@ function private function_e7b80b1e(var_72284260) {
         }
     }
     var_7bc3c842 = [];
-    ent_pa_p = [];
+    var_653c94ca = [];
     flagarray = [];
     foreach (struct in var_d8bb5bb6) {
         if (!isdefined(struct.script_flag_activate) || level flag::get(struct.script_flag_activate)) {
             array::add(var_7bc3c842, struct);
         }
         if (isdefined(struct.script_flag_activate) && !level flag::get(struct.script_flag_activate)) {
-            array::add(ent_pa_p, struct);
+            array::add(var_653c94ca, struct);
             array::add(flagarray, struct.script_flag_activate);
         }
     }
     if (var_7bc3c842.size) {
         return array::random(var_7bc3c842);
     }
-    if (ent_pa_p.size) {
+    if (var_653c94ca.size) {
         /#
             assert(flagarray.size);
         #/
         level flag::wait_till_any(flagarray);
-        foreach (struct in ent_pa_p) {
+        foreach (struct in var_653c94ca) {
             /#
                 assert(isdefined(struct.script_flag_activate));
             #/

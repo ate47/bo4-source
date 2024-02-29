@@ -642,17 +642,17 @@ function is_trigger_once() {
 function wait_till_any(...) {
     ent = spawnstruct();
     if (isarray(vararg[0])) {
-        var_6a8e65fd = vararg[0];
+        a_str_targetnames = vararg[0];
     } else {
-        var_6a8e65fd = vararg;
+        a_str_targetnames = vararg;
     }
     /#
-        assert(var_6a8e65fd.size, "<unknown string>");
+        assert(a_str_targetnames.size, "<unknown string>");
     #/
     a_triggers = [];
-    a_triggers = arraycombine(a_triggers, getentarray(var_6a8e65fd[0], "targetname"), 1, 0);
-    for (i = 1; i < var_6a8e65fd.size; i++) {
-        a_triggers = arraycombine(a_triggers, getentarray(var_6a8e65fd[i], "targetname"), 1, 0);
+    a_triggers = arraycombine(a_triggers, getentarray(a_str_targetnames[0], "targetname"), 1, 0);
+    for (i = 1; i < a_str_targetnames.size; i++) {
+        a_triggers = arraycombine(a_triggers, getentarray(a_str_targetnames[i], "targetname"), 1, 0);
     }
     for (i = 0; i < a_triggers.size; i++) {
         ent thread _ent_waits_for_trigger(a_triggers[i]);

@@ -1338,7 +1338,7 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
     }
     var_ecc54f32 = (0, self.angles[1], 0);
     axe = util::spawn_model("tag_origin", var_23f0c5b3, var_ecc54f32);
-    level notify(#"hash_27a9b4863f38ef7c", {#var_90db0e3c:axe});
+    level notify(#"hash_27a9b4863f38ef7c", {#mdl_axe:axe});
     self.axe_model = axe;
     axe clientfield::set("gladiator_axe_effect", 1);
     /#
@@ -1430,7 +1430,7 @@ function private function_88d65504(axe, var_7900b267, move_pos) {
     trace = physicstrace(axe.origin, move_pos, (-16, -16, -12), (16, 16, 12), self);
     if (trace[#"fraction"] < 1) {
         hit_ent = trace[#"entity"];
-        level notify(#"hash_435816ec8f13c19b", {#hit_ent:hit_ent, #var_90db0e3c:axe, #ai_gladiator:self, #var_f1445bd6:trace});
+        level notify(#"hash_435816ec8f13c19b", {#hit_ent:hit_ent, #mdl_axe:axe, #ai_gladiator:self, #var_f1445bd6:trace});
         if (isdefined(hit_ent)) {
             if (isplayer(hit_ent)) {
                 if (isdefined(hit_ent.hasriotshield) && hit_ent.hasriotshield) {

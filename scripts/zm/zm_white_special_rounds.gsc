@@ -276,7 +276,7 @@ function function_5daa45ac() {
     level.var_7af8330f = getentarray("goo_vol", "targetname");
     var_d4a0b9f4 = [];
     var_8b762855 = struct::get_array("malaria", "targetname");
-    level.sawner_ti_beac = 0;
+    level.var_35f057f6 = 0;
     level.var_bcaf8591 = 0;
     level.var_48ff1185 = 0;
     level.var_c3ee1c6e = 0;

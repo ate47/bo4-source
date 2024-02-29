@@ -1664,9 +1664,9 @@ function function_1cf646fa() {
 function function_b3ee6bc1(s_loc) {
     self endon(#"death");
     self val::reset(#"ai_forcegoal", "ignoreall");
-    var_edbc66b6 = struct::get(s_loc.target, "targetname");
-    var_edbc66b6 = isdefined(var_edbc66b6) ? var_edbc66b6 : s_loc;
-    self thread ct_utils::function_5b59f3b7(var_edbc66b6.origin, var_edbc66b6.angles, 64);
+    s_target_loc = struct::get(s_loc.target, "targetname");
+    s_target_loc = isdefined(s_target_loc) ? s_target_loc : s_loc;
+    self thread ct_utils::function_5b59f3b7(s_target_loc.origin, s_target_loc.angles, 64);
 }
 
 // Namespace ct_ruin_tutorial/ct_ruin_tutorial

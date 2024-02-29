@@ -179,11 +179,11 @@ function function_1646f141(var_e8ba54a2 = 0) {
 // Checksum 0xbdaca8b9, Offset: 0x1428
 // Size: 0xac
 function function_dc212e9f() {
-    var_4947b277 = getent("catwalk_wires", "targetname");
+    mdl_wire = getent("catwalk_wires", "targetname");
     bundle = #"p8_fxanim_zm_esc_wires_catwalk_bundle";
-    var_4947b277 thread scene::play(bundle, "LOOP", var_4947b277);
+    mdl_wire thread scene::play(bundle, "LOOP", mdl_wire);
     level flag::wait_till(#"catwalk_door_open");
-    var_4947b277 thread scene::play(bundle, "SHOCKED", var_4947b277);
+    mdl_wire thread scene::play(bundle, "SHOCKED", mdl_wire);
 }
 
 // Namespace namespace_f2502da8/namespace_f2502da8

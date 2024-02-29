@@ -1297,7 +1297,7 @@ function get_player_dropped_powerup_origin() {
 // Size: 0xbc
 function function_c6cd71d5(str_powerup, v_origin = self get_player_dropped_powerup_origin(), var_22a4c702) {
     e_powerup = zm_powerups::specific_powerup_drop(str_powerup, v_origin, undefined, 0.1, undefined, undefined, 1, 1, 1, 1);
-    e_powerup.var_2b5ec373 = self;
+    e_powerup.e_player_owner = self;
     if (isplayer(self)) {
         self zm_stats::increment_challenge_stat(#"hash_3ebae93ea866519c");
     }

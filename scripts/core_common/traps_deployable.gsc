@@ -61,7 +61,7 @@ class class_7b5e0861 {
             self.var_c59ba447 = self.m_health - int(self.m_health / 3);
         }
         self.m_empdamage = bundle.empdamage;
-        self.var_f81e0192 = bundle.var_980063fb;
+        self.var_f81e0192 = bundle.str_place;
         self.var_b4662b52 = bundle.var_6e2ae4a5;
         self.m_placeimmediately = bundle.placeimmediately;
         self.var_31e7e66a = bundle.var_d6011052;

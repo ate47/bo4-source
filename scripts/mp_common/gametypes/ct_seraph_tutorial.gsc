@@ -1259,8 +1259,8 @@ function function_4bb467a() {
     level.var_cc18b401 = 1;
     level.var_7ecb2c8e = 1;
     level.var_357913db = getentarray("vol_bad_beacon_loc", "targetname");
-    var_cb301a2b = getentarray("vol_bad_beacon_courtyard_loc", "targetname");
-    level.var_357913db = arraycombine(level.var_357913db, var_cb301a2b, 0, 0);
+    a_volumes = getentarray("vol_bad_beacon_courtyard_loc", "targetname");
+    level.var_357913db = arraycombine(level.var_357913db, a_volumes, 0, 0);
     e_player = ct_utils::get_player();
     e_player thread ct_utils::function_61c3d59c(#"hash_6ff0262902a8a0e3", undefined);
     e_player thread ct_bots::function_fd2d220e(0);
@@ -2227,8 +2227,8 @@ function function_fa3dd4f0() {
 // Size: 0xe0
 function function_e94f91dd() {
     v_pos = (-352, -2746, 173);
-    var_afd0b2bd = getentarray();
-    foreach (ent in var_afd0b2bd) {
+    a_entities = getentarray();
+    foreach (ent in a_entities) {
         n_dist = distance(v_pos, ent.origin);
         if (n_dist < 300) {
             ent delete();

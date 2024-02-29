@@ -1549,13 +1549,13 @@ function function_942b5513(actionparams) {
             var_8f5e3947[var_8f5e3947.size] = enemy;
         }
     }
-    var_4e2b3e3a = [];
+    targetlocations = [];
     for (i = 0; i < var_8f5e3947.size; i++) {
-        var_4e2b3e3a[i] = var_8f5e3947[i].origin;
+        targetlocations[i] = var_8f5e3947[i].origin;
     }
-    if (var_4e2b3e3a.size > 0) {
+    if (targetlocations.size > 0) {
         while (shots_fired < 3) {
-            location = array::random(var_4e2b3e3a) + (randomfloatrange(0, 200), randomfloatrange(0, 200), 0);
+            location = array::random(targetlocations) + (randomfloatrange(0, 200), randomfloatrange(0, 200), 0);
             self notify(#"confirm_location", {#yaw:0, #position:location});
             shots_fired++;
             if (shots_fired == 3) {

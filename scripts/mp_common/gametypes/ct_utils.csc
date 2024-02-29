@@ -159,9 +159,9 @@ function area_arrows(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
         level.var_6158c164 = [];
         level.var_c39096f2 = struct::get_array(var_b29c151c, "targetname");
         if (level.var_c39096f2.size > 0) {
-            foreach (var_b76d09c9 in level.var_c39096f2) {
-                forward = anglestoforward(var_b76d09c9.angles);
-                fxhandle = playfx(localclientnum, level.var_57b466e9, var_b76d09c9.origin, forward);
+            foreach (s_arrow in level.var_c39096f2) {
+                forward = anglestoforward(s_arrow.angles);
+                fxhandle = playfx(localclientnum, level.var_57b466e9, s_arrow.origin, forward);
                 level.var_6158c164[level.var_6158c164.size] = fxhandle;
             }
         }

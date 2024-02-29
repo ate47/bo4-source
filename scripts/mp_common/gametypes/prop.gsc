@@ -3220,8 +3220,8 @@ function function_5099a828() {
         }
     #/
     thread function_f6f7aa90(label);
-    level.var_1103f74e.var_4e2b3e3a = function_a62b65f8();
-    level.var_1103f74e.var_4e2b3e3a = array::randomize(level.var_1103f74e.var_4e2b3e3a);
+    level.var_1103f74e.targetlocations = function_a62b65f8();
+    level.var_1103f74e.targetlocations = array::randomize(level.var_1103f74e.targetlocations);
     level.var_1103f74e.nextindex = 0;
     if (!level.var_1103f74e.var_1455c6df) {
         thread function_9340d662();
@@ -3241,17 +3241,17 @@ function function_5099a828() {
 // Size: 0x134
 function function_a62b65f8() {
     var_55d0a272 = 90000;
-    var_4e2b3e3a = [];
+    targetlocations = [];
     alllocations = spawning::get_spawnpoint_array("mp_tdm_spawn");
     hunters = getlivingplayersonteam(game.attackers);
     hunter = hunters[0];
     foreach (location in alllocations) {
         distsq = distancesquared(location.origin, hunter.origin);
         if (distsq > var_55d0a272) {
-            var_4e2b3e3a[var_4e2b3e3a.size] = location;
+            targetlocations[targetlocations.size] = location;
         }
     }
-    return var_4e2b3e3a;
+    return targetlocations;
 }
 
 // Namespace prop/prop
@@ -3270,7 +3270,7 @@ function function_9340d662() {
     var_57466b3 = 40;
     var_b61ad6e2 = 4;
     model = function_7b05fd28();
-    numtargets = min(level.var_1103f74e.var_4e2b3e3a.size, var_57466b3);
+    numtargets = min(level.var_1103f74e.targetlocations.size, var_57466b3);
     level.var_1103f74e.targets = [];
     num = 0;
     for (i = 0; i < numtargets; i++) {
@@ -3382,10 +3382,10 @@ function function_fbe5e14d(location) {
 // Checksum 0xbf2aa2f3, Offset: 0xd150
 // Size: 0x264
 function function_e63a6b8b() {
-    if (level.var_1103f74e.nextindex >= level.var_1103f74e.var_4e2b3e3a.size) {
+    if (level.var_1103f74e.nextindex >= level.var_1103f74e.targetlocations.size) {
         level.var_1103f74e.nextindex = 0;
     }
-    location = level.var_1103f74e.var_4e2b3e3a[level.var_1103f74e.nextindex];
+    location = level.var_1103f74e.targetlocations[level.var_1103f74e.nextindex];
     if (!isdefined(location.var_59abaf85)) {
         dir = level.mapcenter - location.origin;
         dist = distance(level.mapcenter, location.origin);
@@ -3727,10 +3727,10 @@ function _updateclonepathing() {
 // Checksum 0x2490f31e, Offset: 0xe610
 // Size: 0x8e
 function function_e9d33a1c() {
-    if (level.var_1103f74e.nextindex >= level.var_1103f74e.var_4e2b3e3a.size) {
+    if (level.var_1103f74e.nextindex >= level.var_1103f74e.targetlocations.size) {
         level.var_1103f74e.nextindex = 0;
     }
-    location = level.var_1103f74e.var_4e2b3e3a[level.var_1103f74e.nextindex];
+    location = level.var_1103f74e.targetlocations[level.var_1103f74e.nextindex];
     level.var_1103f74e.nextindex++;
     return location.origin;
 }

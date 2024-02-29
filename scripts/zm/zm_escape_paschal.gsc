@@ -4528,7 +4528,7 @@ function function_30febada() {
         var_18f25434 = randomintrange(1, 5);
     }
     var_31ad8eb4 = struct::get("sbrutus_attack_" + var_18f25434);
-    var_14ed46ec = util::spawn_model(#"p8_fxp_cylinder_shield", var_31ad8eb4.origin + vectorscale((0, 0, -1), 61), var_31ad8eb4.angles);
+    mdl_cylinder = util::spawn_model(#"p8_fxp_cylinder_shield", var_31ad8eb4.origin + vectorscale((0, 0, -1), 61), var_31ad8eb4.angles);
     level.var_7fe331bf = 0;
     level.var_f493ed9d = 0;
     level.var_e22ef7ff = 0;
@@ -4546,7 +4546,7 @@ function function_30febada() {
     level waittilltimeout(11.6, #"boss_loses");
     level.var_dcff743c = 0;
     level.var_e7184999 = 1;
-    var_14ed46ec delete();
+    mdl_cylinder delete();
     if (level.var_7fe331bf) {
         scene::add_scene_func(#"aib_vign_zm_mob_brutus_grand_attack_fail", &function_9c59bce1, "play");
         var_3ded86ce scene::play(#"aib_vign_zm_mob_brutus_grand_attack_fail", var_3ded86ce);

@@ -721,18 +721,18 @@ function function_31d8c58() {
     self notsolid();
     self clientfield::set("" + #"hash_25691c415a4aea4c", 1);
     var_f9d1df1d = vectornormalize(anglestoforward(self.angles));
-    var_cdeb4ee4 = util::spawn_model("tag_origin", self.origin, self.angles);
-    var_cdeb4ee4.var_58b95 = util::spawn_model("tag_origin", anglestoright(self.angles) * 8 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, -1, 0), 90));
-    var_cdeb4ee4.var_31436e10 = util::spawn_model("tag_origin", anglestoright(self.angles) * -6 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, 1, 0), 90));
-    if (isdefined(var_cdeb4ee4)) {
-        var_cdeb4ee4 thread scene::play(#"aib_vign_cust_zm_red_zmb_ww_drggd_dwn_00", self);
-        var_cdeb4ee4 thread function_8a38ce84();
+    mdl_tag = util::spawn_model("tag_origin", self.origin, self.angles);
+    mdl_tag.var_58b95 = util::spawn_model("tag_origin", anglestoright(self.angles) * 8 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, -1, 0), 90));
+    mdl_tag.var_31436e10 = util::spawn_model("tag_origin", anglestoright(self.angles) * -6 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, 1, 0), 90));
+    if (isdefined(mdl_tag)) {
+        mdl_tag thread scene::play(#"aib_vign_cust_zm_red_zmb_ww_drggd_dwn_00", self);
+        mdl_tag thread function_8a38ce84();
     }
-    if (isdefined(var_cdeb4ee4.var_58b95)) {
-        var_cdeb4ee4.var_58b95 thread scene::play(#"hash_1cfca52bdf13d5bf" + randomint(3));
+    if (isdefined(mdl_tag.var_58b95)) {
+        mdl_tag.var_58b95 thread scene::play(#"hash_1cfca52bdf13d5bf" + randomint(3));
     }
-    if (isdefined(var_cdeb4ee4.var_31436e10)) {
-        var_cdeb4ee4.var_31436e10 thread scene::play(#"hash_1cfca52bdf13d5bf" + randomint(3));
+    if (isdefined(mdl_tag.var_31436e10)) {
+        mdl_tag.var_31436e10 thread scene::play(#"hash_1cfca52bdf13d5bf" + randomint(3));
     }
     level.n_dragged--;
     if (level.n_dragged < 0) {
@@ -745,9 +745,9 @@ function function_31d8c58() {
         self.diedinscriptedanim = 1;
         self ghost();
         if (self.archetype === #"skeleton") {
-            self dodamage(self.health + 999, var_cdeb4ee4.origin, self.e_attacker, self.e_attacker, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
+            self dodamage(self.health + 999, mdl_tag.origin, self.e_attacker, self.e_attacker, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
         } else {
-            self dodamage(self.health + 100, var_cdeb4ee4.origin, self.e_attacker, self.e_attacker, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
+            self dodamage(self.health + 100, mdl_tag.origin, self.e_attacker, self.e_attacker, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
         }
         wait(0.5);
         if (isalive(self)) {

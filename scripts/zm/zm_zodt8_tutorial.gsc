@@ -470,7 +470,7 @@ function function_cf5f5964(spawnerstr, ignore = 0, bot = undefined, b_play_fx = 
             bot setentitytarget(zombie);
         }
     }
-    level notify(#"hash_1de610a8af6a216f", {#var_e0d94658:zombie});
+    level notify(#"hash_1de610a8af6a216f", {#new_zombie:zombie});
     if (s_spawn_pos.targetname == "tutorial_zm_spawner_points_3" || s_spawn_pos.targetname == "tutorial_zm_spawner_points_4") {
         a_s_spot = struct::get_array("zone_state_rooms_rear_spawns", "targetname");
         arraysortclosest(a_s_spot, zombie.origin);
@@ -703,20 +703,20 @@ function function_513e90cf() {
 // Checksum 0x389a790d, Offset: 0x4108
 // Size: 0x182
 function function_5bc503b1() {
-    var_d8b36102 = getent("tutorial_door", "targetname");
-    var_4f76999f = getent("tutorial_door_clip", "targetname");
-    var_d8b36102 linkto(var_4f76999f);
-    var_d8b36102 setcandamage(1);
-    var_d8b36102.health = 10000;
+    m_door = getent("tutorial_door", "targetname");
+    m_clip = getent("tutorial_door_clip", "targetname");
+    m_door linkto(m_clip);
+    m_door setcandamage(1);
+    m_door.health = 10000;
     do {
         s_notify = undefined;
-        s_notify = var_d8b36102 waittill(#"damage");
-        var_d8b36102.health = 10000;
+        s_notify = m_door waittill(#"damage");
+        m_door.health = 10000;
     } while(s_notify.mod != "MOD_MELEE");
     self playrumbleonentity("damage_light");
     earthquake(0.2, 0.4, self.origin, 500);
-    var_d8b36102 playsound(#"hash_6a5e0d24e28a2c01");
-    var_4f76999f rotateyaw(97, 1, 0, 0.5);
+    m_door playsound(#"hash_6a5e0d24e28a2c01");
+    m_clip rotateyaw(97, 1, 0, 0.5);
     level.var_70fed833 = 1;
 }
 
@@ -1502,8 +1502,8 @@ function power() {
     level thread function_68da8e33(#"hash_2e0db4c834d8111c", 1);
     function_6e9fe428(&function_85d01969);
     self.reset_score = self.score;
-    var_6106f676 = function_9152aa67("p8_fxanim_zm_zod_sentinel_chaos_wheel_mod");
-    var_6106f676 clientfield::set("tutorial_keyline_fx", 1);
+    e_power = function_9152aa67("p8_fxanim_zm_zod_sentinel_chaos_wheel_mod");
+    e_power clientfield::set("tutorial_keyline_fx", 1);
     s_objective = struct::get("objective_pos_power", "targetname");
     s_objective function_384bed55();
     function_fac53b63(array("tutorial_zm_spawner_power_1", "tutorial_zm_spawner_power_2", "tutorial_zm_spawner_power_3", "tutorial_zm_spawner_power_4", "tutorial_zm_spawner_power_5"));
@@ -1517,7 +1517,7 @@ function power() {
     music::setmusicstate("tutorial_intermediate_sentinel");
     self.is_drinking = 1;
     s_objective function_384bed55(0);
-    var_6106f676 clientfield::set("tutorial_keyline_fx", 2);
+    e_power clientfield::set("tutorial_keyline_fx", 2);
     wait(2);
     level thread function_68da8e33(#"hash_11c00751543070b6");
     wait(12);

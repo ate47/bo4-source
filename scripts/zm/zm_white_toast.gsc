@@ -839,9 +839,9 @@ function spawn_boss() {
     level.e_avogadro.isspeaking = 0;
     level.e_avogadro.var_5b6ebfd0 = 0;
     level.e_avogadro playloopsound(#"hash_43d41833f5950a8d");
-    var_ecec4136 = array("vol_soul_beds", "vol_soul_diner", "vol_soul_lounge", "vol_soul_storage");
+    a_str_vol = array("vol_soul_beds", "vol_soul_diner", "vol_soul_lounge", "vol_soul_storage");
     var_54037511 = [];
-    foreach (str in var_ecec4136) {
+    foreach (str in a_str_vol) {
         if (!isdefined(var_54037511)) {
             var_54037511 = [];
         } else if (!isarray(var_54037511)) {

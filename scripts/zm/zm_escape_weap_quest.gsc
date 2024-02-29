@@ -555,14 +555,14 @@ function function_f0ef3897(e_player) {
     e_player zm_weapons::weapon_take(e_player._gadgets_player[1]);
     if (e_player flag::exists(#"hash_11ab20934759ebc3") && e_player flag::get(#"hash_11ab20934759ebc3")) {
         e_player zm_weapons::weapon_give(getweapon(#"tomahawk_t8_upgraded"));
-        var_f8807d03 = #"hash_77bbe7cec9945ff5";
+        str_tutorial = #"hash_77bbe7cec9945ff5";
         if (!(isdefined(e_player.var_e9c9a450) && e_player.var_e9c9a450)) {
             e_player thread zm_audio::create_and_play_dialog(#"ax_upgrade", #"pickup", undefined, 1);
             e_player.var_e9c9a450 = 1;
         }
     } else {
         e_player zm_weapons::weapon_give(getweapon(#"tomahawk_t8"));
-        var_f8807d03 = #"hash_a89ec051050c008";
+        str_tutorial = #"hash_a89ec051050c008";
         if (!(isdefined(e_player.var_d2351fa5) && e_player.var_d2351fa5)) {
             e_player thread zm_audio::create_and_play_dialog(#"ax", #"pickup", undefined, 1);
             e_player.var_d2351fa5 = 1;
@@ -572,7 +572,7 @@ function function_f0ef3897(e_player) {
     if (isdefined(e_player.var_16735873) && e_player.var_16735873) {
         e_player waittill(#"fasttravel_over");
     }
-    e_player thread zm_equipment::show_hint_text(var_f8807d03);
+    e_player thread zm_equipment::show_hint_text(str_tutorial);
     if (self.script_noteworthy == "rt_pickup_trigger") {
         e_player.retriever_trigger = self;
     }

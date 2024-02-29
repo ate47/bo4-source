@@ -112,8 +112,8 @@ function function_91aa103(localclientnum, oldval, newval, bnewent, binitialsnap,
             util::lock_model(#"p8_zm_red_gauntlet_handle");
         }
         if (self.model === #"p8_fxanim_zm_red_ww_vase_mod") {
-            var_c860e2f = (self.origin[0], self.origin[1], self.origin[2] + 18);
-            self.var_a7be4b54 = playfx(localclientnum, level._effect[#"hash_19da57144416b720"], var_c860e2f);
+            v_location = (self.origin[0], self.origin[1], self.origin[2] + 18);
+            self.var_a7be4b54 = playfx(localclientnum, level._effect[#"hash_19da57144416b720"], v_location);
         } else {
             self.var_a7be4b54 = util::playfxontag(localclientnum, level._effect[#"hash_19da57144416b720"], self, "tag_origin");
         }

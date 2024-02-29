@@ -1263,34 +1263,34 @@ function function_141a55a4(localclientnum, oldval, newval, bnewent, binitialsnap
     a_s_glyphs = struct::get_array(#"hash_61ba778e4f6ae3e");
     if (newval) {
         foreach (s_glyph in a_s_glyphs) {
-            if (!isdefined(s_glyph.var_3cd87194)) {
-                var_3cd87194 = [];
+            if (!isdefined(s_glyph.a_mdl_glyphs)) {
+                a_mdl_glyphs = [];
                 for (i = 0; i < 2; i++) {
-                    var_6eb21a54 = util::spawn_model(localclientnum, #"p8_zm_power_door_symbol_01", s_glyph.origin);
+                    mdl_glyph = util::spawn_model(localclientnum, #"p8_zm_power_door_symbol_01", s_glyph.origin);
                     if (i == 0) {
-                        var_6eb21a54.angles = s_glyph.angles;
+                        mdl_glyph.angles = s_glyph.angles;
                     } else {
-                        var_6eb21a54.angles = s_glyph.angles + vectorscale((0, 1, 0), 180);
+                        mdl_glyph.angles = s_glyph.angles + vectorscale((0, 1, 0), 180);
                     }
-                    var_6eb21a54 zm_blockers::power_door_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump);
-                    if (!isdefined(var_3cd87194)) {
-                        var_3cd87194 = [];
-                    } else if (!isarray(var_3cd87194)) {
-                        var_3cd87194 = array(var_3cd87194);
+                    mdl_glyph zm_blockers::power_door_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump);
+                    if (!isdefined(a_mdl_glyphs)) {
+                        a_mdl_glyphs = [];
+                    } else if (!isarray(a_mdl_glyphs)) {
+                        a_mdl_glyphs = array(a_mdl_glyphs);
                     }
-                    var_3cd87194[var_3cd87194.size] = var_6eb21a54;
+                    a_mdl_glyphs[a_mdl_glyphs.size] = mdl_glyph;
                 }
-                s_glyph.var_3cd87194 = var_3cd87194;
+                s_glyph.a_mdl_glyphs = a_mdl_glyphs;
             }
         }
     } else {
         foreach (s_glyph in a_s_glyphs) {
-            if (isdefined(s_glyph.var_3cd87194)) {
-                foreach (var_6eb21a54 in s_glyph.var_3cd87194) {
-                    var_6eb21a54 zm_blockers::power_door_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump);
-                    var_6eb21a54 delete();
+            if (isdefined(s_glyph.a_mdl_glyphs)) {
+                foreach (mdl_glyph in s_glyph.a_mdl_glyphs) {
+                    mdl_glyph zm_blockers::power_door_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump);
+                    mdl_glyph delete();
                 }
-                s_glyph.var_3cd87194 = undefined;
+                s_glyph.a_mdl_glyphs = undefined;
             }
         }
     }

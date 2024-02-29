@@ -2,9 +2,9 @@
     "var_922067c4": "scriptbundle",
     "type": "craftfoundry",
     "var_2a2adea3": 3,
-    "var_110b7b70": "zblueprint_office_key",
-    "var_339dfcd": "zblueprint_office_audio_reels",
-    "var_a980ac5c": "zblueprint_office_punch_cards",
+    "blueprint01": "zblueprint_office_key",
+    "blueprint02": "zblueprint_office_audio_reels",
+    "blueprint03": "zblueprint_office_punch_cards",
     "name": "ztable_office_items",
     "displayname": "office_items"
 }

@@ -2761,9 +2761,9 @@ function defend_ra_cleanup(b_skipped, var_19e802fa) {
     if (isdefined(s_ww)) {
         s_ww struct::delete();
     }
-    var_bc18bce = getent("t_light_fuel_ignite_close", "targetname");
+    t_close = getent("t_light_fuel_ignite_close", "targetname");
     t_far = getent("t_light_fuel_ignite_far", "targetname");
-    var_bc18bce delete();
+    t_close delete();
     t_far delete();
     a_s_scenes = struct::get_array(#"hash_eef2e238d701a8e");
     foreach (s_scene in a_s_scenes) {
@@ -2802,11 +2802,11 @@ function function_ecbc541d() {
     var_8d5cca6b[2] = util::spawn_model(#"p8_zm_red_rune_ra_03", s_runes.origin, s_runes.angles);
     s_runes struct::delete();
     s_light.var_8d5cca6b = var_8d5cca6b;
-    var_bc18bce = getent("t_light_fuel_ignite_close", "targetname");
+    t_close = getent("t_light_fuel_ignite_close", "targetname");
     t_far = getent("t_light_fuel_ignite_far", "targetname");
-    var_bc18bce thread function_6af7dacb();
+    t_close thread function_6af7dacb();
     t_far thread function_6af7dacb();
-    var_bc18bce triggerenable(0);
+    t_close triggerenable(0);
     t_far triggerenable(0);
     callback::on_connect(&function_d45f304f);
     array::thread_all(getplayers(), &function_d45f304f);
@@ -2889,10 +2889,10 @@ function function_cd5fc887(var_26eac22c) {
 function function_3288a0d2() {
     level endon(#"end_game", #"defend_ra" + "_ended_early", #"hash_2f511b37fc55c45a");
     level thread function_e5352d71();
-    var_bc18bce = getent("t_light_fuel_ignite_close", "targetname");
+    t_close = getent("t_light_fuel_ignite_close", "targetname");
     t_far = getent("t_light_fuel_ignite_far", "targetname");
     while (1) {
-        var_bc18bce triggerenable(1);
+        t_close triggerenable(1);
         t_far triggerenable(1);
         level clientfield::set("" + #"hash_43972920fa314daa", 1);
         level thread function_6511349e();
@@ -3243,9 +3243,9 @@ function function_d45f304f() {
     }
     self.var_59378b6a = 1;
     self.var_6e4f26e5 = 0;
-    var_bc18bce = getent("t_light_fuel_ignite_close", "targetname");
+    t_close = getent("t_light_fuel_ignite_close", "targetname");
     t_far = getent("t_light_fuel_ignite_far", "targetname");
-    self thread function_c2d50fdc(var_bc18bce);
+    self thread function_c2d50fdc(t_close);
     self thread function_c2d50fdc(t_far);
     while (1) {
         self waittill(#"hash_465838105ca1e0c2");
@@ -3308,9 +3308,9 @@ function function_9f390ef0(var_3561625b = 1) {
         s_light.var_24a1abd7 delete();
     }
     level clientfield::set("" + #"hash_43972920fa314daa", 0);
-    var_bc18bce = getent("t_light_fuel_ignite_close", "targetname");
+    t_close = getent("t_light_fuel_ignite_close", "targetname");
     t_far = getent("t_light_fuel_ignite_far", "targetname");
-    var_bc18bce triggerenable(0);
+    t_close triggerenable(0);
     t_far triggerenable(0);
     callback::remove_on_connect(&function_d45f304f);
     if (isdefined(s_light.var_1b52cf99)) {

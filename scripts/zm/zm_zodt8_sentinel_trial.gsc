@@ -236,8 +236,8 @@ function function_b2901ae4() {
 function function_c1a4b575() {
     var_5aa39ae9 = struct::get_array(#"planet_glyph", "script_noteworthy");
     foreach (s_loc in var_5aa39ae9) {
-        s_loc.var_6eb21a54 = util::spawn_model(s_loc.model, s_loc.origin, s_loc.angles);
-        s_loc.var_6eb21a54 setscale(0.666);
+        s_loc.mdl_glyph = util::spawn_model(s_loc.model, s_loc.origin, s_loc.angles);
+        s_loc.mdl_glyph setscale(0.666);
     }
 }
 
@@ -2147,10 +2147,10 @@ function function_4f658ef7() {
     self endon(#"death");
     s_glyph = self.stub.related_parent;
     while (!level flag::get(#"hash_63a102a7ae564e99")) {
-        s_glyph.var_6eb21a54 show();
+        s_glyph.mdl_glyph show();
         self waittill(#"trigger");
-        s_glyph.var_6eb21a54 clientfield::increment("" + #"hash_68e2384b254175da", 1);
-        s_glyph.var_6eb21a54 util::delay(0.5, #"hash_158580acc65694d5", &hide_self);
+        s_glyph.mdl_glyph clientfield::increment("" + #"hash_68e2384b254175da", 1);
+        s_glyph.mdl_glyph util::delay(0.5, #"hash_158580acc65694d5", &hide_self);
         var_7ec8be9 = getent(s_glyph.targetname, "str_object_name");
         if (!isdefined(var_7ec8be9)) {
             var_7ec8be9 = util::spawn_model("tag_origin");
@@ -2182,8 +2182,8 @@ function function_4f658ef7() {
         level thread planet_behavior(var_7ec8be9);
         level waittill(#"hash_158580acc65694d5", #"hash_63a102a7ae564e99");
     }
-    if (isdefined(s_glyph) && isdefined(s_glyph.var_6eb21a54)) {
-        s_glyph.var_6eb21a54 delete();
+    if (isdefined(s_glyph) && isdefined(s_glyph.mdl_glyph)) {
+        s_glyph.mdl_glyph delete();
     }
     zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
 }

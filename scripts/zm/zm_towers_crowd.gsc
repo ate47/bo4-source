@@ -592,7 +592,7 @@ function crowd_throw_item(var_2bd26cff) {
         waitframe(1);
     }
     var_4d611aa2 = array::random(var_4f0ef489);
-    var_edbc66b6 = array::random(struct::get_array(var_4d611aa2.target));
+    s_target_loc = array::random(struct::get_array(var_4d611aa2.target));
     foreach (s_loc in var_15230439) {
         if (isdefined(s_loc.var_d18b181c)) {
             s_loc.var_d18b181c delete();
@@ -631,25 +631,25 @@ function crowd_throw_item(var_2bd26cff) {
         var_354ec191 = array::random(array(#"p8_fxanim_zm_towers_crowd_jar_01_mod", #"p8_fxanim_zm_towers_crowd_jar_02_mod", #"p8_fxanim_zm_towers_crowd_jar_03_mod"));
         e_item = util::spawn_model(var_354ec191, var_4d611aa2.origin, var_4d611aa2.angles);
         e_item fx::play(#"hash_4c4f96aa02c32a2a", e_item.origin, e_item.angles, "crowd_item_fly_fx_stop", 1);
-        n_time = e_item zm_utility::fake_physicslaunch(var_edbc66b6.origin, 600);
+        n_time = e_item zm_utility::fake_physicslaunch(s_target_loc.origin, 600);
         wait(n_time);
-        fx::play(#"hash_7bd75ae600e0a590", var_edbc66b6.origin, var_edbc66b6.angles + vectorscale((1, 0, 0), 270));
+        fx::play(#"hash_7bd75ae600e0a590", s_target_loc.origin, s_target_loc.angles + vectorscale((1, 0, 0), 270));
         e_item notify(#"crowd_item_fly_fx_stop");
-        e_item.origin = var_edbc66b6.origin;
+        e_item.origin = s_target_loc.origin;
         switch (var_354ec191) {
         case #"p8_fxanim_zm_towers_crowd_jar_01_mod":
-            var_edbc66b6 thread scene::play("p8_fxanim_zm_towers_crowd_jar_01_bundle", e_item);
+            s_target_loc thread scene::play("p8_fxanim_zm_towers_crowd_jar_01_bundle", e_item);
             break;
         case #"p8_fxanim_zm_towers_crowd_jar_02_mod":
-            var_edbc66b6 thread scene::play("p8_fxanim_zm_towers_crowd_jar_02_bundle", e_item);
+            s_target_loc thread scene::play("p8_fxanim_zm_towers_crowd_jar_02_bundle", e_item);
             break;
         case #"p8_fxanim_zm_towers_crowd_jar_03_mod":
-            var_edbc66b6 thread scene::play("p8_fxanim_zm_towers_crowd_jar_03_bundle", e_item);
+            s_target_loc thread scene::play("p8_fxanim_zm_towers_crowd_jar_03_bundle", e_item);
             break;
         }
-        earthquake(0.3, 0.5, var_edbc66b6.origin, 256);
+        earthquake(0.3, 0.5, s_target_loc.origin, 256);
         if (isalive(self)) {
-            e_powerup = zm_powerups::specific_powerup_drop(str_powerup, var_edbc66b6.origin);
+            e_powerup = zm_powerups::specific_powerup_drop(str_powerup, s_target_loc.origin);
             if (isdefined(e_powerup)) {
                 if (str_powerup === "dung") {
                     e_powerup moveto(groundtrace(e_powerup.origin + vectorscale((0, 0, 1), 8), e_powerup.origin + vectorscale((0, 0, -1), 100000), 0, e_powerup)[#"position"] + (0, 0, 0), 0.25);

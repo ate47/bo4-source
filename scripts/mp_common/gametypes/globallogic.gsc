@@ -701,17 +701,17 @@ function function_4b670b29() {
         }
     }
     if (platoons::function_382a49e0() && !infection::function_74650d7()) {
-        params.s_a bow = [];
+        params.var_f300b200 = [];
         foreach (team in params.teams_forfeited) {
             platoon = getteamplatoon(team);
             if (platoon != #"none" && platoon != #"invalid") {
-                if (!isdefined(params.s_a bow)) {
-                    params.s_a bow = [];
-                } else if (!isarray(params.s_a bow)) {
-                    params.s_a bow = array(params.s_a bow);
+                if (!isdefined(params.var_f300b200)) {
+                    params.var_f300b200 = [];
+                } else if (!isarray(params.var_f300b200)) {
+                    params.var_f300b200 = array(params.var_f300b200);
                 }
-                if (!isinarray(params.s_a bow, platoon)) {
-                    params.s_a bow[params.s_a bow.size] = platoon;
+                if (!isinarray(params.var_f300b200, platoon)) {
+                    params.var_f300b200[params.var_f300b200.size] = platoon;
                 }
             }
         }
@@ -727,7 +727,7 @@ function function_4b670b29() {
                 params.var_b2ee6c67[params.var_b2ee6c67.size] = platoon;
             }
         }
-        if (params.var_b2ee6c67.size == 1 && params.s_a bow.size > 0) {
+        if (params.var_b2ee6c67.size == 1 && params.var_f300b200.size > 0) {
             thread [[ level.onforfeit ]](params);
             return 1;
         }

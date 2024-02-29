@@ -8,7 +8,7 @@
     "var_2e0a273a": "weapon#hash_26c77a650c8ea1a2",
     "name": "zblueprint_white_ww_modkit",
     "displayname": "white_ww_modkit",
-    "var_db27a7f7": "p8_zm_whi_blueprint_02",
+    "mdlblueprint": "p8_zm_whi_blueprint_02",
     "var_46309255": "one_time_craft",
     "componentcount": 3,
     "var_318c150c": "section_wonder_weapon"

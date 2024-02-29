@@ -473,8 +473,8 @@ function function_b2938ba0() {
     while (1) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_27a9b4863f38ef7c");
-        var_90db0e3c = s_waitresult.var_90db0e3c;
-        var_90db0e3c thread function_12bc0c40(self);
+        mdl_axe = s_waitresult.mdl_axe;
+        mdl_axe thread function_12bc0c40(self);
     }
 }
 
@@ -1468,15 +1468,15 @@ function function_f0fd4ea3() {
         level thread zm_audio::sndannouncerplayvox(#"hash_412f0a99d31887f");
     }
     wait(3);
-    foreach (i, var_6eb21a54 in level.var_5e067d81) {
+    foreach (i, mdl_glyph in level.var_5e067d81) {
         /#
             function_df18663(level.var_d1a9acf9[i]);
         #/
-        var_6eb21a54 show();
-        var_6eb21a54 playsound(#"hash_3a68c26240abda9b");
+        mdl_glyph show();
+        mdl_glyph playsound(#"hash_3a68c26240abda9b");
         wait(1.75);
-        var_6eb21a54 hide();
-        var_6eb21a54 playsound(#"hash_63661f92ceba62ea");
+        mdl_glyph hide();
+        mdl_glyph playsound(#"hash_63661f92ceba62ea");
     }
     level clientfield::set("" + #"hash_440f23773f551a48", 0);
     level.var_765eb0c3 = 0;
@@ -1541,15 +1541,15 @@ function function_fac3622f() {
     level clientfield::set("" + #"hash_440f23773f551a48", 1);
     playsoundatposition(#"hash_6f4dbc9a189140b9", (0, 0, 0));
     wait(3);
-    foreach (i, var_6eb21a54 in level.var_f099a2a5) {
+    foreach (i, mdl_glyph in level.var_f099a2a5) {
         /#
             function_df18663(level.var_41437b5[i]);
         #/
-        var_6eb21a54 show();
-        var_6eb21a54 playsound(#"hash_3a68c26240abda9b");
+        mdl_glyph show();
+        mdl_glyph playsound(#"hash_3a68c26240abda9b");
         wait(1.75);
-        var_6eb21a54 hide();
-        var_6eb21a54 playsound(#"hash_63661f92ceba62ea");
+        mdl_glyph hide();
+        mdl_glyph playsound(#"hash_63661f92ceba62ea");
     }
     level clientfield::set("" + #"hash_440f23773f551a48", 0);
     level.var_765eb0c3 = 0;

@@ -1096,13 +1096,13 @@ function function_68ac03e(s_loc) {
 // Size: 0x234
 function function_d43893a9(s_loc) {
     self endon(#"death");
-    var_af1c173d = struct::get("s_ready_scorestreak_" + self.n_index, "script_noteworthy");
-    s_lookat = struct::get(var_af1c173d.target);
+    s_ready = struct::get("s_ready_scorestreak_" + self.n_index, "script_noteworthy");
+    s_lookat = struct::get(s_ready.target);
     s_goto = struct::get("s_cover_scorestreak_" + self.n_index, "script_noteworthy");
     if (!level flag::get("squad_dead")) {
         level flag::wait_till("go_scorestreak");
         wait(randomfloatrange(0.3, 0.8));
-        self thread ct_utils::function_5b59f3b7(var_af1c173d.origin, var_af1c173d.angles, 32);
+        self thread ct_utils::function_5b59f3b7(s_ready.origin, s_ready.angles, 32);
         self waittill(#"goal");
         wait(0.5);
         self function_89cd182c(s_lookat);

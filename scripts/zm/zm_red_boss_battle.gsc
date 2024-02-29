@@ -2466,7 +2466,7 @@ function function_99f0123d() {
         while (1) {
             foreach (n_index, e_player in util::get_active_players(#"allies")) {
                 n_y_pos = 480 + 18.7 * n_index;
-                var_533a2398 = function_9e72a96(e_player.var_b708af7b);
+                str_hero_weapon = function_9e72a96(e_player.var_b708af7b);
                 if (!isdefined(level.s_boss_battle.var_5015427)) {
                     n_total_damage = 0;
                 } else {
@@ -2475,11 +2475,11 @@ function function_99f0123d() {
                 if (!isdefined(n_total_damage)) {
                     n_total_damage = 0;
                 }
-                if (!isdefined(var_533a2398)) {
-                    var_533a2398 = "<unknown string>";
+                if (!isdefined(str_hero_weapon)) {
+                    str_hero_weapon = "<unknown string>";
                 }
                 debug2dtext((120, n_y_pos, 0), "<unknown string>" + n_index + "<unknown string>", (1, 1, 0), 1, (0, 0, 0), 0.4, 1, 2);
-                debug2dtext((120 + 100, n_y_pos, 0), var_533a2398, (1, 1, 1), 1, (0, 0, 0), 0.4, 1, 2);
+                debug2dtext((120 + 100, n_y_pos, 0), str_hero_weapon, (1, 1, 1), 1, (0, 0, 0), 0.4, 1, 2);
                 debug2dtext((120 + 240, n_y_pos, 0), n_total_damage, (1, 0, 0), 1, (0, 0, 0), 0.4, 1, 2);
             }
             waitframe(2);

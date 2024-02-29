@@ -862,15 +862,15 @@ function function_dab3dcc3() {
     while (isdefined(var_c6b58daa.e_owner)) {
         var_c6b58daa = array::random(var_64de1b5a);
     }
-    var_6eb21a54 = util::spawn_model(#"p8_zm_esc_dream_catcher_blue", var_c6b58daa.origin, var_c6b58daa.angles);
-    var_c6b58daa.var_6eb21a54 = var_6eb21a54;
+    mdl_glyph = util::spawn_model(#"p8_zm_esc_dream_catcher_blue", var_c6b58daa.origin, var_c6b58daa.angles);
+    var_c6b58daa.mdl_glyph = mdl_glyph;
     var_c6b58daa.e_owner = self;
     var_c6b58daa.b_visible = 0;
     self.var_c6b58daa = var_c6b58daa;
-    var_6eb21a54 setinvisibletoall();
+    mdl_glyph setinvisibletoall();
     if (self.currentweapon == level.var_4e845c84 || self.currentweapon == level.var_58e17ce3) {
         var_c6b58daa.b_visible = 1;
-        var_6eb21a54 setvisibletoplayer(self);
+        mdl_glyph setvisibletoplayer(self);
     }
     self thread function_4d6642e9(var_c6b58daa);
 }
@@ -884,15 +884,15 @@ function function_4d6642e9(var_c6b58daa) {
     while (1) {
         s_result = undefined;
         s_result = self waittill(#"weapon_change");
-        if (isdefined(var_c6b58daa.var_6eb21a54)) {
+        if (isdefined(var_c6b58daa.mdl_glyph)) {
             if (s_result.weapon == level.var_4e845c84 || s_result.weapon == level.var_58e17ce3) {
                 var_c6b58daa.b_visible = 1;
-                var_c6b58daa.var_6eb21a54 setvisibletoplayer(self);
+                var_c6b58daa.mdl_glyph setvisibletoplayer(self);
             } else if (var_c6b58daa.b_visible) {
                 wait(0.9);
-                if (isdefined(var_c6b58daa.var_6eb21a54)) {
+                if (isdefined(var_c6b58daa.mdl_glyph)) {
                     var_c6b58daa.b_visible = 0;
-                    var_c6b58daa.var_6eb21a54 setinvisibletoplayer(self);
+                    var_c6b58daa.mdl_glyph setinvisibletoplayer(self);
                 }
             }
         }
@@ -906,8 +906,8 @@ function function_4d6642e9(var_c6b58daa) {
 function function_1650b924(str_notify) {
     if (str_notify == "disconnect") {
         if (isdefined(self.var_c6b58daa)) {
-            if (isdefined(self.var_c6b58daa.var_6eb21a54)) {
-                self.var_c6b58daa.var_6eb21a54 delete();
+            if (isdefined(self.var_c6b58daa.mdl_glyph)) {
+                self.var_c6b58daa.mdl_glyph delete();
             }
             self.var_c6b58daa.e_owner = undefined;
         }
@@ -930,10 +930,10 @@ function function_1f75f759(e_grenade, n_grenade_charge_power) {
         if (!isdefined(var_3e80eb94.e_owner) || var_3e80eb94.e_owner != self) {
             continue;
         }
-        if (distancesquared(e_grenade.origin, var_3e80eb94.var_6eb21a54.origin) < 10000) {
+        if (distancesquared(e_grenade.origin, var_3e80eb94.mdl_glyph.origin) < 10000) {
             var_3e80eb94 thread function_27ae51c4(self);
-            var_3e80eb94.var_6eb21a54 delete();
-            var_3e80eb94.var_6eb21a54 = undefined;
+            var_3e80eb94.mdl_glyph delete();
+            var_3e80eb94.mdl_glyph = undefined;
             var_3e80eb94.e_owner = undefined;
             self.var_c6b58daa = undefined;
             self notify(#"tomahawk_returned");

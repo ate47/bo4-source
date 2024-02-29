@@ -167,17 +167,17 @@ function init_boss() {
     do {
         s_loc.var_5d259c63 = [];
         var_d88b3814 = 0;
-        var_e2404067 = struct::get(str_targetname + "_targ_" + var_d88b3814, "targetname");
+        s_loc_target = struct::get(str_targetname + "_targ_" + var_d88b3814, "targetname");
         do {
             if (!isdefined(s_loc.var_5d259c63)) {
                 s_loc.var_5d259c63 = [];
             } else if (!isarray(s_loc.var_5d259c63)) {
                 s_loc.var_5d259c63 = array(s_loc.var_5d259c63);
             }
-            s_loc.var_5d259c63[s_loc.var_5d259c63.size] = var_e2404067;
+            s_loc.var_5d259c63[s_loc.var_5d259c63.size] = s_loc_target;
             var_d88b3814++;
-            var_e2404067 = struct::get(str_targetname + "_targ_" + var_d88b3814, "targetname");
-        } while(isdefined(var_e2404067));
+            s_loc_target = struct::get(str_targetname + "_targ_" + var_d88b3814, "targetname");
+        } while(isdefined(s_loc_target));
         if (!isdefined(level.s_boss.var_f4aac79b)) {
             level.s_boss.var_f4aac79b = [];
         } else if (!isarray(level.s_boss.var_f4aac79b)) {
@@ -878,13 +878,13 @@ function function_f433c7f5(n_stage) {
         n_dist_sq = distance2dsquared(e_target.origin, var_c43c78f9.origin);
         for (n_index = 0; n_index < var_aa39009c.var_6f05a409.size; n_index++) {
             s_start_loc = level.s_boss.var_f4aac79b[var_aa39009c.var_6f05a409[n_index]];
-            foreach (var_edbc66b6 in s_start_loc.var_5d259c63) {
-                var_b8613ef4 = distance2dsquared(e_target.origin, var_edbc66b6.origin);
+            foreach (s_target_loc in s_start_loc.var_5d259c63) {
+                var_b8613ef4 = distance2dsquared(e_target.origin, s_target_loc.origin);
                 if (var_b8613ef4 < n_dist_sq) {
                     var_efc198c = var_aa39009c.var_6f05a409[n_index] + 1;
                     n_dist_sq = var_b8613ef4;
                     var_f26f9e5a = s_start_loc;
-                    var_c43c78f9 = var_edbc66b6;
+                    var_c43c78f9 = s_target_loc;
                 }
             }
         }
@@ -915,12 +915,12 @@ function function_f433c7f5(n_stage) {
             e_target = e_target function_a676dbd7();
             e_target clientfield::set("pstfx_zm_man_targeted_cf", 0);
         }
-        foreach (var_edbc66b6 in var_f26f9e5a.var_5d259c63) {
+        foreach (s_target_loc in var_f26f9e5a.var_5d259c63) {
             e_target = e_target function_a676dbd7();
-            var_b8613ef4 = distance2dsquared(e_target.origin, var_edbc66b6.origin);
+            var_b8613ef4 = distance2dsquared(e_target.origin, s_target_loc.origin);
             if (var_b8613ef4 < n_dist_sq) {
                 n_dist_sq = var_b8613ef4;
-                var_c43c78f9 = var_edbc66b6;
+                var_c43c78f9 = s_target_loc;
             }
         }
         var_2839690f = strtok(var_c43c78f9.targetname, "_");

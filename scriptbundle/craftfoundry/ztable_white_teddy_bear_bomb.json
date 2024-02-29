@@ -2,7 +2,7 @@
     "var_922067c4": "scriptbundle",
     "type": "craftfoundry",
     "var_2a2adea3": 1,
-    "var_110b7b70": "zblueprint_white_bear_bomb",
+    "blueprint01": "zblueprint_white_bear_bomb",
     "name": "ztable_white_teddy_bear_bomb",
     "displayname": "Bear Bomb Table"
 }

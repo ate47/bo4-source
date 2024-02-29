@@ -235,7 +235,7 @@ function activateuav() {
         level.spawneduavs = array(level.spawneduavs);
     }
     level.spawneduavs[level.spawneduavs.size] = uav;
-    uav setmodel(level.killstreakbundle[#"uav"].var_c6eab8b5);
+    uav setmodel(level.killstreakbundle[#"uav"].ksmodel);
     uav.weapon = getweapon("uav");
     uav setweapon(uav.weapon);
     uav.targetname = "uav";

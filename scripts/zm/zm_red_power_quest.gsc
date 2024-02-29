@@ -125,12 +125,12 @@ function function_bda82828() {
         var_b6b01674 thread function_aab4eb23();
         level.var_9400690b[level.var_9400690b.size] = var_b6b01674;
     }
-    level.var_26450f62 = [];
+    level.a_mdl_chaos = [];
     a_s_chaos = struct::get_array(#"hash_2cb6fcd3ae46aec0");
     foreach (s_audience in a_s_chaos) {
         var_b6b01674 = s_audience function_ba40fcf4();
         var_b6b01674 thread function_aab4eb23();
-        level.var_26450f62[level.var_26450f62.size] = var_b6b01674;
+        level.a_mdl_chaos[level.a_mdl_chaos.size] = var_b6b01674;
     }
     callback::on_ai_killed(&function_75c83fbf);
     level flag::wait_till("begin_spawning");
@@ -241,9 +241,9 @@ function function_77dd379a() {
         mdl_clip = getent(mdl_skel.target, "targetname");
         mdl_clip ghost();
     }
-    var_3cd87194 = getentarray("mdl_power_blocker_glyph", "targetname");
-    foreach (var_6eb21a54 in var_3cd87194) {
-        var_6eb21a54 hide();
+    a_mdl_glyphs = getentarray("mdl_power_blocker_glyph", "targetname");
+    foreach (mdl_glyph in a_mdl_glyphs) {
+        mdl_glyph hide();
     }
     var_3e910f73 = getent("mdl_power_bullet", "targetname");
     var_3e910f73.origin = var_3e910f73.origin + (0, 0, 2048);
@@ -258,11 +258,11 @@ function function_77dd379a() {
         var_b6b01674 = s_audience function_e9f93d33();
         level.var_9400690b[level.var_9400690b.size] = var_b6b01674;
     }
-    level.var_26450f62 = [];
+    level.a_mdl_chaos = [];
     a_s_chaos = struct::get_array(#"hash_2cb6fcd3ae46aec0");
     foreach (s_audience in a_s_chaos) {
         var_b6b01674 = s_audience function_ba40fcf4();
-        level.var_26450f62[level.var_26450f62.size] = var_b6b01674;
+        level.a_mdl_chaos[level.a_mdl_chaos.size] = var_b6b01674;
     }
     level waittill(#"hash_20632257a91d251a");
     wait(25);
@@ -930,7 +930,7 @@ function function_a5b8e88f(var_ddab7294 = 0) {
     level flag::wait_till(#"pegasus_rescue");
     wait(0.5);
     level function_9ead836c();
-    foreach (mdl_zombie in level.var_26450f62) {
+    foreach (mdl_zombie in level.a_mdl_chaos) {
         if (isdefined(mdl_zombie)) {
             mdl_zombie delete();
         }
@@ -1192,7 +1192,7 @@ function pegasus_victim() {
 function function_56c68db() {
     level endon(#"pegasus_rescue");
     level flag::wait_till(#"pegasus_entry");
-    a_mdl_zombies = array::randomize(level.var_26450f62);
+    a_mdl_zombies = array::randomize(level.a_mdl_chaos);
     foreach (mdl_zombie in a_mdl_zombies) {
         if (isdefined(mdl_zombie)) {
             while (getaiteamarray("axis").size >= 32) {
@@ -1729,7 +1729,7 @@ function devgui_complete() {
                 var_3e9d57b3 delete();
             }
         }
-        foreach (mdl_zombie in level.var_26450f62) {
+        foreach (mdl_zombie in level.a_mdl_chaos) {
             if (isdefined(mdl_zombie)) {
                 mdl_zombie delete();
             }

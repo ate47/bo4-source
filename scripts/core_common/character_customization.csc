@@ -604,11 +604,11 @@ class class_7da27482 {
         }
         if (isdefined(params.var_d8cb38a9) && params.var_d8cb38a9 && isdefined(params.scene)) {
             self.var_9bea772f = params.scene;
-            abdefault_ab = 1;
+            var_a942d0c7 = 1;
             while (!forcestreambundle(params.scene)) {
-                if (abdefault_ab) {
+                if (var_a942d0c7) {
                     self.var_228f64da hide();
-                    abdefault_ab = 0;
+                    var_a942d0c7 = 0;
                 }
                 waitframe(1);
             }

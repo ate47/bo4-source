@@ -98,7 +98,7 @@ function function_95600a05(actionparams) {
 // Params 1, eflags: 0x0
 // Checksum 0x424b512f, Offset: 0x5e0
 // Size: 0x106
-function function_9393f3df(actionparams) {
+function throw_chakram(actionparams) {
     weapon = actionparams.weapon;
     dualwieldweapon = weapon.dualwieldweapon;
     while (!self bot_action::function_cf788c22() && self bot::weapon_loaded(dualwieldweapon)) {

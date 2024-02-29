@@ -606,13 +606,13 @@ function function_8e22d234() {
     level notify(#"hash_27b4c904ffa4ce27");
     level endon(#"hash_27b4c904ffa4ce27");
     a_players = getplayers();
-    var_51029ccb = [];
+    a_scores = [];
     foreach (player in a_players) {
-        var_51029ccb[var_51029ccb.size] = player.score;
+        a_scores[a_scores.size] = player.score;
     }
-    var_51029ccb = array::sort_by_value(var_51029ccb);
+    a_scores = array::sort_by_value(a_scores);
     player = getplayers()[0];
-    if (player.score != var_51029ccb[0]) {
+    if (player.score != a_scores[0]) {
         return;
     }
     if (player function_15e5c1da(#"hash_1ebacadf6dc3dbdf") < level.var_9356f44c) {

@@ -749,12 +749,12 @@ function spawnplayer() {
         if (isdefined(specialist)) {
             self function_6c3348ac(specialist);
         }
-        var_be574bd8 = self function_b568258e();
+        var_be574bd8 = self getcharacterlootid();
         outfitindex = self getcharacteroutfit();
         gender = self getplayergendertype();
-        warpaintoutfitindex = self function_3d1a97c6();
-        var_8fa79650 = self function_564cfaeb();
-        decallootid = self function_e1c06cd0();
+        warpaintoutfitindex = self getcharacterwarpaintoutfit();
+        var_8fa79650 = self getcharacterwarpaintlootid();
+        decallootid = self getcharacterdecallootid();
         var_b3d9cfaa = self function_11d0e790();
         var_f8e6b703 = self match_record::get_player_stat(#"hash_ec4aea1a8bbd82");
         if (isdefined(var_f8e6b703)) {

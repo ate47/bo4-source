@@ -10,7 +10,7 @@
     "var_2e0a273a": "weapon#hash_49c2407c47316d6a",
     "name": "zblueprint_office_teleporter_modifier",
     "displayname": "Teleporter Modifier",
-    "var_db27a7f7": "p8_zm_off_blueprint_02",
+    "mdlblueprint": "p8_zm_off_blueprint_02",
     "var_391591d0": "#hash_7a4375969e311723",
     "var_46309255": "one_time_craft",
     "var_abd9b2d0": "#hash_7a4375969e311723",

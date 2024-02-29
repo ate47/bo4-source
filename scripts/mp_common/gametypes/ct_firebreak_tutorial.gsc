@@ -2047,10 +2047,10 @@ function function_53e140e6() {
 // Params 2, eflags: 0x0
 // Checksum 0xac944644, Offset: 0x99f8
 // Size: 0x84
-function function_5a0f5bcb(var_88a0dda2, var_6bf7e923) {
+function function_5a0f5bcb(str_tut, var_6bf7e923) {
     /#
         level flag::set("colbounds_tut_fin1_fight5_start_off");
-        level.var_e3146bce = var_88a0dda2;
+        level.var_e3146bce = str_tut;
         self function_d74a7e31();
         waitframe(1);
         self [[ var_6bf7e923 ]]();

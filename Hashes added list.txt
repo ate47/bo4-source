@@ -1,5 +1,3 @@
-/*
-
 // Vars
 
 
@@ -110,6 +108,13 @@ var_d4c288fb,mdl_stub
 var_fe043be4,mdl_handle
 var_628c4a3a,mdl_radio
 var_7a930e3d,mdl_chain
+var_cdeb4ee4,mdl_tag
+var_6eb21a54,mdl_glyph
+var_ba0e0085,mdl_valve
+var_4947b277,mdl_wire
+var_14ed46ec,mdl_cylinder
+var_90db0e3c,mdl_axe
+var_c96a48c3,mdl_arrow
 
 
 // a_mdl
@@ -126,6 +131,10 @@ var_2b41c6e3,a_mdl_mirrors
 var_eb5ed779,a_mdl_statues
 var_92227047,a_mdl_holes
 var_899f5cb,a_mdl_pegasus
+var_eb8e056b,a_mdl_valves
+var_26450f62,a_mdl_chaos
+var_3cd87194,a_mdl_glyphs
+var_a7e222e0,a_mdl_arrows
 
 
 // str_
@@ -163,6 +172,11 @@ var_c75beecc,str_blueprint
 var_cb939ad4,str_rock
 var_ab02aaca,str_drop
 var_136e2645,str_totem
+var_533a2398,str_hero_weapon
+var_88a0dda2,str_tut
+var_f8807d03,str_tutorial
+var_980063fb,str_place
+var_30d0dc85,str_feather
 
 
 // a_str
@@ -190,6 +204,8 @@ var_5cf420b9,a_str_towers
 var_a0b1fee,a_str_objective
 var_cf985323,a_str_spawns
 var_b97b1d5c,a_str_locations
+var_6a8e65fd,a_str_targetnames
+var_ecec4136,a_str_vol
 
 
 // w_
@@ -247,7 +263,10 @@ var_843446c5,s_greenhouse
 var_d0d43f5a,s_weaponprimary
 var_ca9d9582,s_area_def
 var_44cff72,s_ww_lock
-var_f300b200,s_a bow
+var_edbc66b6,s_target_loc
+var_e2404067,s_loc_target
+var_af1c173d,s_ready
+var_b76d09c9,s_arrow
 
 
 // ""+weapon
@@ -320,6 +339,8 @@ var_7faf3e8b,e_vo_player
 var_d8630ddb,e_seeker_mine
 var_8f063b6d,e_statue
 var_9a1f1865,e_tornado
+var_2b5ec373,e_player_owner
+var_6106f676,e_power
 
 
 // t_
@@ -328,12 +349,18 @@ var_e53fa74,t_result
 var_a2d4cf99,t_new
 var_25c3b71c,t_detect
 var_87e0cf0b,t_flag
+var_bc18bce,t_close
 
 // n_
 
 var_b9c65b69,n_obj
 var_c08a71ea,n_expl
 var_b522b1bc,n_statue
+
+// m_
+
+var_d8b36102,m_door
+var_4f76999f,m_clip
 
 
 // v_
@@ -342,6 +369,7 @@ var_8b97dd8f,v_obj
 var_fdc48fc2,v_lookat
 var_cca85da,v_pa
 var_3955def4,v_pt
+var_c860e2f,v_location
 
 
 // a_+""
@@ -356,7 +384,9 @@ var_344a6a1a,a_models
 var_7f370a86,a_coll
 var_50b185d1,a_n_solutions
 var_8dc80509,a_players_copy
-
+var_cb301a2b,a_volumes
+var_afd0b2bd,a_entities
+var_51029ccb,a_scores
 
 // sp_
 
@@ -380,9 +410,20 @@ var_177e6833,fx_tornado
 var_3a6b24a6,fx_globe
 
 
+// new
+
+var_944250d2,new_ai
+var_e0d94658,new_zombie
+
+
+// ""+model
+
+var_e73f171e,conmodel
+var_c6eab8b5,ksmodel
+
+
 // Others
 
-var_653c94ca,ent_pa_p
 var_9b3def7,chestpos
 var_92fbef49,finger
 var_49ef982c,random_num
@@ -392,18 +433,14 @@ var_c22eda7c,supplystashes
 var_9507cf45,stashicon
 var_47943768,golden_spork
 var_2790ddf8,icepicksettings
-var_a942d0c7,abdefault_ab
 var_da03826,default_scenes
 var_200be221,scene_def
 var_786bfd80,coverobj
-var_35f057f6,sawner_ti_beac
-var_4016a739,player_bladeblade
 var_74b91a95,propstr
 var_fd081905,actionkeys
 var_76fd297e,playerowner
 var_3c288f1b,targetfocus
 var_5eb7db94,weapdata
-var_58df9892,structs_objecti
 var_2358ae9,rightangles
 var_91058d39,songs
 var_9f855ac9,navpos
@@ -412,12 +449,25 @@ var_1e68904b,blastdoorbuttons
 var_a334a5eb,killedcallback
 var_8caf8b5a,attack_waypoint
 var_959dd66c,idval
-var_944250d2,new_ai
 var_129f6487,stathash
-
+var_110b7b70,blueprint01
+var_339dfcd,blueprint02
+var_a980ac5c,blueprint03
+var_93b280c0,blueprint04
+var_5dee9539,blueprint05
+var_b84049db,blueprint06
+var_5e039567,blueprint07
+var_b81b4995,blueprint08
+var_4e2b3e3a,targetlocations
+var_db27a7f7,mdlblueprint
 
 
 // Functions
+
+function_b568258e,getcharacterlootid
+function_3d1a97c6,getcharacterwarpaintoutfit
+function_e1c06cd0,getcharacterdecallootid
+function_564cfaeb,getcharacterwarpaintlootid
 
 function_d7dbfe3c,get_weapon_slot
 function_28602a03,lockweapon
@@ -459,6 +509,7 @@ function_aa79a199,init_step_3
 function_86e35a69,init_step_4
 function_e35c1359,init_step_5
 
+function_9393f3df,throw_chakram // MIGHT not be a hash collision??
 
 // Strings
 
@@ -515,9 +566,15 @@ var_142bab9f,ember_wember
 var_7ec33855,strujordans_narcos_narcos
 var_a1252254,mass
 
-// Functions
+// Fixed ones by ATE
+var_f300b200,s_a bow
+var_35f057f6,sawner_ti_beac
+var_a942d0c7,abdefault_ab
+var_4016a739,player_bladeblade
+var_58df9892,structs_objecti
+var_653c94ca,ent_pa_p
 
-function_9393f3df,throw_chakram // MIGHT not be a hash collision??
+// Functions
 
 function_b094be90,ai_maa
 function_67710e66,str_elixirs_el
