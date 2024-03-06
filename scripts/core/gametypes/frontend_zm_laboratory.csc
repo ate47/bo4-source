@@ -85,7 +85,7 @@ function function_250232f4(localclientnum) {
     scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_bottle_fluids_bundle", &function_24222bb4, "skip_to_idle");
     /#
         level.var_49f26c00.var_557a03e6 = array(#"p8_zm_elixir_aftertaste_ui", #"p8_zm_elixir_alchemical_antithesis_ui", #"p8_zm_elixir_always_done_swiftly_ui", #"p8_zm_elixir_anti_entrapment_ui", #"p8_zm_elixir_anywhere_but_here_ui", #"p8_zm_elixir_arsenal_accelerator_ui", #"p8_zm_elixir_blood_debt_ui", #"hash_1a7c490a566d667", #"p8_zm_elixir_burned_out_ui", #"p8_zm_elixir_cache_back_ui", #"hash_58b3b4e50c5ad8b5", #"p8_zm_elixir_ctrl_z_ui", #"hash_5e08e862c962617a", #"p8_zm_elixir_dead_of_nuclear_winter_ui", #"p8_zm_elixir_equip_mint_ui", #"p8_zm_elixir_extra_credit_ui", #"p8_zm_elixir_free_fire_ui", #"p8_zm_elixir_head_scan_ui", #"p8_zm_elixir_immolation_liquidation_ui", #"p8_zm_elixir_in_plain_sight_ui", #"p8_zm_elixir_join_the_party_ui", #"p8_zm_elixir_kill_joy_ui", #"p8_zm_elixir_licensed_contractor_ui", #"p8_zm_elixir_newtonian_negation_ui", #"p8_zm_elixir_now_you_see_me_ui", #"p8_zm_elixir_nowhere_but_there_ui", #"hash_65291a8ef0716ac6", #"p8_zm_elixir_point_drops_ui", #"p8_zm_elixir_pop_shocks_ui", #"p8_zm_elixir_power_keg_ui", #"hash_7b8c2e9a197a1cbb", #"p8_zm_elixir_shields_up_ui", #"p8_zm_elixir_stock_option_ui", #"p8_zm_elixir_sword_flay_ui", #"p8_zm_elixir_temporal_gift_ui", #"p8_zm_elixir_undead_man_walking_ui", #"p8_zm_elixir_wall_power_ui", #"p8_zm_elixir_wall_to_wall_savings_ui", #"p8_zm_elixir_whos_keeping_score_ui");
-        level.var_49f26c00.var_610634ec = array(#"p8_zm_talisman_box_guarantee_box_only", #"p8_zm_talisman_box_guarantee_lmg", #"hash_199da03ac6e12953", #"p8_zm_talisman_coagulant", #"p8_zm_talisman_extra_claymore", #"p8_zm_talisman_extra_frag", #"p8_zm_talisman_extra_mini_turret", #"p8_zm_talisman_extra_molotov", #"p8_zm_talisman_extra_semtex", #"p8_zm_talisman_hero_weapon_lvl3", #"p8_zm_talisman_impatient", #"p8_zm_talisman_pap_cost", #"p8_zm_talisman_perk_mod_single", #"hash_27dae06ec588c817", #"hash_27dae16ec588c9ca", #"hash_27dae26ec588cb7d", #"hash_27dadb6ec588bf98", #"p8_zm_talisman_perk_vapor_permanent_1", #"p8_zm_talisman_perk_vapor_permanent_2", #"p8_zm_talisman_perk_vapor_permanent_3", #"p8_zm_talisman_perk_vapor_permanent_4", #"hash_22e20f33489f2582", #"hash_22e20e33489f23cf", #"hash_22e20d33489f221c", #"hash_22e20c33489f2069", #"p8_zm_talisman_shield_durability_legendary", #"p8_zm_talisman_shield_durability_rare", #"p8_zm_talisman_shield_price", #"p8_zm_talisman_spec_weapon_duration", #"p8_zm_talisman_spec_weapon_lvl2", #"hash_14e3ae5974c15925", #"p8_zm_talisman_start_weapon_ar", #"p8_zm_talisman_start_weapon_lmg", #"p8_zm_talisman_start_weapon_monkey", #"p8_zm_talisman_start_weapon_smg");
+        level.var_49f26c00.a_str_talismans = array(#"p8_zm_talisman_box_guarantee_box_only", #"p8_zm_talisman_box_guarantee_lmg", #"hash_199da03ac6e12953", #"p8_zm_talisman_coagulant", #"p8_zm_talisman_extra_claymore", #"p8_zm_talisman_extra_frag", #"p8_zm_talisman_extra_mini_turret", #"p8_zm_talisman_extra_molotov", #"p8_zm_talisman_extra_semtex", #"p8_zm_talisman_hero_weapon_lvl3", #"p8_zm_talisman_impatient", #"p8_zm_talisman_pap_cost", #"p8_zm_talisman_perk_mod_single", #"hash_27dae06ec588c817", #"hash_27dae16ec588c9ca", #"hash_27dae26ec588cb7d", #"hash_27dadb6ec588bf98", #"p8_zm_talisman_perk_vapor_permanent_1", #"p8_zm_talisman_perk_vapor_permanent_2", #"p8_zm_talisman_perk_vapor_permanent_3", #"p8_zm_talisman_perk_vapor_permanent_4", #"hash_22e20f33489f2582", #"hash_22e20e33489f23cf", #"hash_22e20d33489f221c", #"hash_22e20c33489f2069", #"p8_zm_talisman_shield_durability_legendary", #"p8_zm_talisman_shield_durability_rare", #"p8_zm_talisman_shield_price", #"p8_zm_talisman_spec_weapon_duration", #"p8_zm_talisman_spec_weapon_lvl2", #"hash_14e3ae5974c15925", #"p8_zm_talisman_start_weapon_ar", #"p8_zm_talisman_start_weapon_lmg", #"p8_zm_talisman_start_weapon_monkey", #"p8_zm_talisman_start_weapon_smg");
     #/
     scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", &function_f8d486f8, "init");
     scene::add_scene_func(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", &function_d4f9b895, "press_tease");
@@ -154,7 +154,7 @@ function private function_1a17b820(localclientnum) {
             var_8de02736 = getdvarint(#"hash_56728884d2904809", 0);
             waitframe(1);
             if (var_509eb1e5 != var_596aaddb || var_74d08f2b != var_89f688b8) {
-                level notify(#"hash_6d47a1e190b93eaf", {#var_ff27a24:1, #var_aba5d0f5:var_509eb1e5, #var_800db6bf:var_74d08f2b});
+                level notify(#"hash_6d47a1e190b93eaf", {#b_debug:1, #var_aba5d0f5:var_509eb1e5, #var_800db6bf:var_74d08f2b});
                 var_596aaddb = var_509eb1e5;
                 var_89f688b8 = var_74d08f2b;
             }
@@ -238,11 +238,11 @@ function function_66051772() {
                 var_28da8e7b = isdefined(level.var_49f26c00.var_6138b381) ? level.var_49f26c00.var_6138b381 : "<unknown string>";
                 var_37982bf6 = isdefined(level.var_49f26c00.var_887781fe) ? level.var_49f26c00.var_887781fe : "<unknown string>";
                 var_544c750 = isdefined(level.var_49f26c00.var_84c77a9e) ? level.var_49f26c00.var_84c77a9e : "<unknown string>";
-                var_240061ef = isdefined(level.var_49f26c00.var_f6e518bb) ? level.var_49f26c00.var_f6e518bb : "<unknown string>";
+                str_talisman = isdefined(level.var_49f26c00.var_f6e518bb) ? level.var_49f26c00.var_f6e518bb : "<unknown string>";
                 debug2dtext((35, 150, 0), "<unknown string>" + function_9e72a96(var_28da8e7b), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
                 debug2dtext((35, 170, 0), "<unknown string>" + function_9e72a96(var_37982bf6), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
                 debug2dtext((35, 190, 0), "<unknown string>" + function_9e72a96(var_544c750), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
-                debug2dtext((35, 210, 0), "<unknown string>" + function_9e72a96(var_240061ef), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 210, 0), "<unknown string>" + function_9e72a96(str_talisman), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             }
             waitframe(1);
         }
@@ -342,7 +342,7 @@ function function_d940763b(localclientnum) {
             break;
         case #"hash_6d47a1e190b93eaf":
             if (!(isdefined(level.var_ee871019) && level.var_ee871019)) {
-                level thread function_7ee5e3a2(localclientnum, waitresult.var_800db6bf, waitresult.var_aba5d0f5, waitresult.var_ff27a24);
+                level thread function_7ee5e3a2(localclientnum, waitresult.var_800db6bf, waitresult.var_aba5d0f5, waitresult.b_debug);
             }
             break;
         case #"hash_7c3e120025ea0122":
@@ -910,7 +910,7 @@ function function_a1547af3(localclientnum, var_4379f16, var_34c8df6b, var_d5a65f
 // Params 4, eflags: 0x1 linked
 // Checksum 0x78173ba6, Offset: 0x55a0
 // Size: 0x57c
-function function_7ee5e3a2(localclientnum, var_367ac609, var_509eb1e5, var_ff27a24 = 0) {
+function function_7ee5e3a2(localclientnum, var_367ac609, var_509eb1e5, b_debug = 0) {
     self notify("6f8c1467ad43f7b7");
     self endon("6f8c1467ad43f7b7");
     level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
@@ -1189,7 +1189,7 @@ function function_9c935526(localclientnum) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xccdfa64b, Offset: 0x6b88
 // Size: 0xd54
-function function_365bef4(localclientnum, var_ff27a24 = 0) {
+function function_365bef4(localclientnum, b_debug = 0) {
     level endon(array(#"laboratory_closed", #"hash_1d604ddf352ddcca"));
     function_9c935526();
     level flag::clear(#"hash_4bbc47f6a0a31743");
@@ -1219,7 +1219,7 @@ function function_365bef4(localclientnum, var_ff27a24 = 0) {
     level waittill(#"centrifuge_fluid_drained");
     function_a8188266(0, 2);
     var_fc9cafb5 = gettime();
-    if (!level flag::get(#"hash_511b4468376ea105") && !var_ff27a24) {
+    if (!level flag::get(#"hash_511b4468376ea105") && !b_debug) {
         waitresult = undefined;
         waitresult = level waittilltimeout(10, #"hash_511b4468376ea105");
         if (waitresult._notify == #"timeout") {
@@ -1228,11 +1228,11 @@ function function_365bef4(localclientnum, var_ff27a24 = 0) {
         }
     } else {
         /#
-            if (var_ff27a24) {
+            if (b_debug) {
                 level.var_49f26c00.var_6138b381 = array::random(array::exclude(level.var_49f26c00.var_557a03e6, level.var_49f26c00.var_6138b381));
                 level.var_49f26c00.var_887781fe = array::random(array::exclude(level.var_49f26c00.var_557a03e6, array(level.var_49f26c00.var_6138b381)));
                 level.var_49f26c00.var_84c77a9e = array::random(array::exclude(level.var_49f26c00.var_557a03e6, array(level.var_49f26c00.var_6138b381, level.var_49f26c00.var_887781fe)));
-                level.var_49f26c00.var_f6e518bb = array::random(level.var_49f26c00.var_610634ec);
+                level.var_49f26c00.var_f6e518bb = array::random(level.var_49f26c00.a_str_talismans);
                 if (math::cointoss()) {
                     level.var_49f26c00.var_f6e518bb = undefined;
                 }
@@ -1265,7 +1265,7 @@ function function_365bef4(localclientnum, var_ff27a24 = 0) {
     level flag::wait_till_all(array(#"hash_71fc63117cc5bf06" + 1, #"hash_71fc63117cc5bf06" + 2, #"hash_71fc63117cc5bf06" + 3, #"hash_c5112e5b6ad4e15"));
     function_a8f6e36c(localclientnum, 3);
     function_a8f6e36c(localclientnum, 4);
-    if (var_ff27a24) {
+    if (b_debug) {
         wait(3);
     } else {
         waitresult = undefined;
@@ -1274,7 +1274,7 @@ function function_365bef4(localclientnum, var_ff27a24 = 0) {
     if (isdefined(level.var_49f26c00.var_42c70173)) {
         level scene::stop(level.var_49f26c00.var_42c70173, 1);
     }
-    if (!var_ff27a24 && isdefined(waitresult.param1) && waitresult.param1 == #"1") {
+    if (!b_debug && isdefined(waitresult.param1) && waitresult.param1 == #"1") {
         function_a8f6e36c(localclientnum, 5);
         level thread function_254a0f6d(localclientnum);
         return;

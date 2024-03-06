@@ -590,7 +590,7 @@ function function_c1ddd9e7() {
 // Size: 0x7c
 function function_ab099b85(_hash) {
     e_player = ct_utils::get_player();
-    var_6976202f = hash("square_button_paused" + "_off");
+    str_state_off = hash("square_button_paused" + "_off");
     str_color = "red_paused";
     setpauseworld(0);
 }
@@ -981,7 +981,7 @@ function function_235b259b() {
     var_31879d4d[#"s_tut_fin1_wave1_enemy_a"] = "s_tut_fin1_respawn_a";
     var_31879d4d[#"s_tut_fin1_wave1_enemy_b"] = "s_tut_fin1_respawn_b";
     var_31879d4d[#"s_tut_fin1_wave2_enemy"] = "s_tut_fin1_respawn_wave_2";
-    var_fd96aacc = var_31879d4d[str_spawns];
+    str_respawn = var_31879d4d[str_spawns];
     level.var_3f7591c4 = 0;
     level.var_72c3ea74 = struct::get_array(str_spawns, "targetname");
     level.var_da5432a2 = 0;
@@ -999,14 +999,14 @@ function function_235b259b() {
     self thread ct_vo::function_831e0584(array("vox_tvoi_tutor_prop_wine_enemy_locate"));
     self thread ct_utils::function_61c3d59c(undefined, undefined, "dynobj_KillEnemies");
     self thread ct_utils::function_80bf685b(level.var_c271b8e0);
-    ct_utils::function_e9ab1003(var_fd96aacc);
+    ct_utils::function_e9ab1003(str_respawn);
     self ct_utils::function_d00e0eeb();
     ct_utils::function_9aca2fa0("ct_action");
     self thread ct_utils::function_c2a10fc();
     self ct_vo::function_831e0584(array("vox_tvoi_tutor_prop_wine_comp_0"));
     level.var_3f7591c4 = 0;
     str_spawns = "s_tut_fin1_wave2_enemy";
-    var_fd96aacc = var_31879d4d[str_spawns];
+    str_respawn = var_31879d4d[str_spawns];
     level.var_72c3ea74 = struct::get_array(str_spawns, "targetname");
     level.var_da5432a2 = 0;
     level thread ct_bots::activate_bots(level.var_72c3ea74.size, #"axis");
@@ -1019,7 +1019,7 @@ function function_235b259b() {
     waitframe(1);
     self thread ct_utils::function_61c3d59c(undefined, undefined, "dynobj_KillEnemies");
     self thread ct_utils::function_80bf685b(level.var_c271b8e0);
-    ct_utils::function_e9ab1003(var_fd96aacc);
+    ct_utils::function_e9ab1003(str_respawn);
     self ct_utils::function_d00e0eeb();
     ct_utils::function_9aca2fa0("ct_action");
     self thread ct_utils::function_c2a10fc();
@@ -1118,12 +1118,12 @@ function function_4938210c(s_loc) {
     self takeallweapons();
     waitframe(1);
     if (!isdefined(s_loc.var_b4efaca)) {
-        var_6906fd0d = array(#"ar_accurate_t8", #"smg_standard_t8", #"shotgun_pump_t8");
-        var_f40fdd35 = array::random(var_6906fd0d);
+        a_str_guns = array(#"ar_accurate_t8", #"smg_standard_t8", #"shotgun_pump_t8");
+        str_gun = array::random(a_str_guns);
     } else {
-        var_f40fdd35 = s_loc.var_b4efaca;
+        str_gun = s_loc.var_b4efaca;
     }
-    wpn = getweapon(var_f40fdd35);
+    wpn = getweapon(str_gun);
     self giveweapon(wpn);
     while (!self hasweapon(wpn)) {
         waitframe(1);
@@ -1249,12 +1249,12 @@ function function_d6addc3b(s_loc) {
     self.bot.var_b2b8f0b6 = 150;
     self.bot.var_e8c941d6 = 300;
     if (!isdefined(s_loc.var_b4efaca)) {
-        var_6906fd0d = array(#"ar_accurate_t8", #"smg_standard_t8", #"shotgun_pump_t8");
-        var_f40fdd35 = array::random(var_6906fd0d);
+        a_str_guns = array(#"ar_accurate_t8", #"smg_standard_t8", #"shotgun_pump_t8");
+        str_gun = array::random(a_str_guns);
     } else {
-        var_f40fdd35 = s_loc.var_b4efaca;
+        str_gun = s_loc.var_b4efaca;
     }
-    self thread ct_utils::give_weapon(var_f40fdd35, 1);
+    self thread ct_utils::give_weapon(str_gun, 1);
     if (!isdefined(s_loc.target)) {
         self thread ct_utils::function_4caeacf6();
     } else {

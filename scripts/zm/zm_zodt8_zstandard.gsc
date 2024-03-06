@@ -187,10 +187,10 @@ function defend_areas() {
         }
     #/
     zm_utility::function_fdb0368(3);
-    var_f79ff5ec = array::random(array(#"lounge", #"dining_hall"));
-    s_defend_area = zm_utility::function_a877cd10(var_f79ff5ec);
-    var_2f1c9c80 = var_f79ff5ec;
-    if (var_f79ff5ec == #"dining_hall") {
+    str_next_defend = array::random(array(#"lounge", #"dining_hall"));
+    s_defend_area = zm_utility::function_a877cd10(str_next_defend);
+    str_first_defend = str_next_defend;
+    if (str_next_defend == #"dining_hall") {
         level zm_utility::open_door("forecastle_state_rooms_door", undefined, undefined, 1);
         zm_utility::function_fdb0368(5);
         level zm_utility::open_door("state_rooms_to_lower_stairs_door", undefined, undefined, 1);
@@ -203,7 +203,7 @@ function defend_areas() {
         zm_utility::function_fdb0368(7);
         level zm_utility::open_door("grand_stairs_suites_door", undefined, undefined, 1);
     }
-    util::delay(4, undefined, &zm_utility::function_11101458, var_f79ff5ec);
+    util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
     wait(15);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
     zm_round_spawning::function_306ce518(#"stoker", &function_cb0be2c5);
@@ -212,15 +212,15 @@ function defend_areas() {
     level flag::wait_till("started_defend_area");
     level util::delay(var_cec10eb3 / 4, "end_game", &zm_round_spawning::function_376e51ef, #"stoker");
     level waittill(#"hash_7a04a7fb98fa4e4d");
-    zm_utility::function_fef4b36a(var_f79ff5ec);
-    if (var_f79ff5ec == #"dining_hall") {
+    zm_utility::function_fef4b36a(str_next_defend);
+    if (str_next_defend == #"dining_hall") {
         level zm_utility::open_door(array("dining_to_promenade_door", "promenade_aft_door"), undefined, 15, 1);
     } else {
         level zm_utility::open_door(array("suites_promenade_door", "library_boat_deck_door"), undefined, 15, 1);
     }
     function_52498131("started_defend_area");
-    var_f79ff5ec = #"poop_deck";
-    s_defend_area = zm_utility::function_a877cd10(var_f79ff5ec);
+    str_next_defend = #"poop_deck";
+    s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     util::delay(4, undefined, &zm_utility::function_11101458, #"poop_deck");
     zm_zonemgr::zone_wait_till_enabled("zone_poop_deck");
     level waittill(#"end_of_round");
@@ -231,7 +231,7 @@ function defend_areas() {
     level waittill(#"hash_7a04a7fb98fa4e4d");
     level.var_531d5f99 = 1;
     zm_utility::enable_power_switch(1, 1);
-    if (var_2f1c9c80 == #"dining_hall") {
+    if (str_first_defend == #"dining_hall") {
         var_420e4589 = array("suites_promenade_door", "library_boat_deck_door", "state_rooms_bridge_door", "bridge_to_upper_stairs_door", "grand_stairs_suites_door");
     } else {
         var_420e4589 = array("dining_to_promenade_door", "promenade_aft_door", "forecastle_state_rooms_door", "state_rooms_to_lower_stairs_door", "grand_stair_lower_to_dining");
@@ -255,7 +255,7 @@ function function_84139b27() {
     zm_utility::function_c492c4d6(#"bridge", #"hash_69b6ed066e710bd1", array(#"zone_bridge"), array(#"forecastle", #"cargo_hold", #"boat_deck", #"lounge"), #"hash_a3060fdfbbfdadb", #"hash_705b2c8817bf3775");
     a_str_keys = getarraykeys(level.a_s_defend_areas);
     foreach (s_defend_area in level.a_s_defend_areas) {
-        foreach (str_index in s_defend_area.var_cc0c35ca) {
+        foreach (str_index in s_defend_area.a_str_next_defend) {
             str_index = hash(str_index);
             /#
                 assert(isinarray(a_str_keys, str_index), str_index + "<unknown string>");
@@ -270,23 +270,23 @@ function function_84139b27() {
 // Size: 0x1ba
 function function_466fb0ff() {
     level endon(#"end_game");
-    var_f79ff5ec = zm_utility::function_40ef77ab(#"poop_deck");
-    var_679cd7a8 = zm_utility::function_a877cd10(var_f79ff5ec);
+    str_next_defend = zm_utility::function_40ef77ab(#"poop_deck");
+    var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
     var_55a36349 = 1;
     while (1) {
-        zm_utility::function_11101458(var_f79ff5ec);
-        if (var_f79ff5ec == #"engine_room") {
+        zm_utility::function_11101458(str_next_defend);
+        if (str_next_defend == #"engine_room") {
             level thread zm_utility::open_door(array("engine_room_door", "engine_room_dropdown"), undefined, 10);
-        } else if (var_f79ff5ec == #"cargo_hold") {
+        } else if (str_next_defend == #"cargo_hold") {
             level thread zm_utility::open_door("cargo_hold_door", undefined, 10);
         }
         wait(45);
         zm_zonemgr::function_8caa21df(var_679cd7a8.a_str_zones);
         zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7);
         var_55a36349 = 0;
-        var_a6238ac3 = var_f79ff5ec;
-        var_f79ff5ec = zm_utility::function_40ef77ab(var_f79ff5ec);
-        var_679cd7a8 = zm_utility::function_a877cd10(var_f79ff5ec);
+        str_previous_defend = str_next_defend;
+        str_next_defend = zm_utility::function_40ef77ab(str_next_defend);
+        var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
     }
 }
 
@@ -319,16 +319,16 @@ function function_aba6e63f() {
 function function_1dcc39ae() {
     /#
         wait(5);
-        var_f79ff5ec = zm_utility::function_40ef77ab("<unknown string>");
-        var_679cd7a8 = zm_utility::function_a877cd10(var_f79ff5ec);
+        str_next_defend = zm_utility::function_40ef77ab("<unknown string>");
+        var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
         while (1) {
-            zm_utility::function_11101458(var_f79ff5ec);
+            zm_utility::function_11101458(str_next_defend);
             wait(5);
             zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7, undefined, undefined, 3);
-            var_a6238ac3 = var_f79ff5ec;
-            var_f79ff5ec = zm_utility::function_40ef77ab(var_f79ff5ec);
-            var_679cd7a8 = zm_utility::function_a877cd10(var_f79ff5ec);
+            str_previous_defend = str_next_defend;
+            str_next_defend = zm_utility::function_40ef77ab(str_next_defend);
+            var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         }
     #/
 }

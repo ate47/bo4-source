@@ -223,14 +223,14 @@ function defend_areas() {
     } else {
         zm_utility::open_door(array("eastern_plaza_to_upper_road", "amphitheater_backstage"), undefined, undefined, 1);
     }
-    var_f79ff5ec = #"amphitheater";
+    str_next_defend = #"amphitheater";
     wait(5);
-    zm_utility::function_11101458(var_f79ff5ec);
+    zm_utility::function_11101458(str_next_defend);
     wait(10);
-    s_defend_area = zm_utility::function_a877cd10(var_f79ff5ec);
+    s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     level notify(#"hash_20632257a91d251a");
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 35, undefined, s_defend_area.var_9fc5eea1);
-    zm_utility::function_fef4b36a(var_f79ff5ec);
+    zm_utility::function_fef4b36a(str_next_defend);
     level util::delay(15, undefined, &zm_round_spawning::function_376e51ef, #"skeleton");
     if (var_5150f93a == #"east") {
         zm_utility::open_door(array("apollo_temple_to_western_plaza", "western_plaza_to_monument_of_craterus"), undefined, undefined, 1);
@@ -238,50 +238,50 @@ function defend_areas() {
         zm_utility::open_door(array("apollo_temple_to_eastern_plaza", "eastern_plaza_to_upper_road"), undefined, undefined, 1);
     }
     wait(10);
-    var_33efe293 = array::random(array(#"bathhouse", #"offering"));
-    if (var_33efe293 == #"bathhouse") {
+    str_second_defend = array::random(array(#"bathhouse", #"offering"));
+    if (str_second_defend == #"bathhouse") {
         level thread zm_utility::open_door(array("western_plaza_to_bathhouse_upper", "intersection_of_treasuries_to_bathhouse_inner"));
     } else {
         level thread zm_utility::open_door(array("eastern_plaza_to_temple_terrace", "stoa_of_the_athenians_to_intersection_of_treasuries"));
     }
     wait(5);
-    zm_utility::function_11101458(var_33efe293);
+    zm_utility::function_11101458(str_second_defend);
     wait(15);
-    s_defend_area = zm_utility::function_a877cd10(var_33efe293);
+    s_defend_area = zm_utility::function_a877cd10(str_second_defend);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45, undefined, s_defend_area.var_9fc5eea1);
-    zm_utility::function_fef4b36a(var_33efe293);
+    zm_utility::function_fef4b36a(str_second_defend);
     level util::delay(5, undefined, &zm_round_spawning::function_376e51ef, #"catalyst");
-    var_f79ff5ec = array::random(array(#"forge", #"serpent"));
+    str_next_defend = array::random(array(#"forge", #"serpent"));
     level thread zm_utility::open_door(array("stoa_of_the_athenians_to_spartan_monument", "spartan_monument_to_intersection_of_treasuries", "stoa_of_the_athenians_to_intersection_of_treasuries"));
     level notify(#"hash_36ec7e3beabe7a4");
-    if (var_f79ff5ec == #"forge") {
+    if (str_next_defend == #"forge") {
         level thread zm_utility::open_door(array("river_acheron_to_cliff_tombs"));
     } else {
         level thread zm_utility::open_door(array("river_acheron_to_serpents_pass"));
     }
     wait(5);
-    zm_utility::function_11101458(var_f79ff5ec);
+    zm_utility::function_11101458(str_next_defend);
     wait(15);
-    s_defend_area = zm_utility::function_a877cd10(var_f79ff5ec);
+    s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     level thread zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, undefined, undefined, s_defend_area.var_9fc5eea1);
     level flag::wait_till("started_defend_area");
     level waittill(#"hash_7a04a7fb98fa4e4d");
-    zm_utility::function_fef4b36a(var_f79ff5ec);
+    zm_utility::function_fef4b36a(str_next_defend);
     wait(8);
     level thread function_a97f7327();
     level thread zm_utility::open_door(array("cliff_tombs_to_drakaina_arena", "serpents_pass_to_drakaina_arena", "western_plaza_to_bathhouse_upper", "intersection_of_treasuries_to_bathhouse_inner", "western_plaza_to_bathhouse_upper", "intersection_of_treasuries_to_bathhouse_inner", "river_acheron_to_cliff_tombs", "river_acheron_to_serpents_pass", "apollo_temple_to_western_plaza", "western_plaza_to_monument_of_craterus", "apollo_temple_to_eastern_plaza", "eastern_plaza_to_temple_terrace", "apollo_temple_to_western_plaza", "apollo_temple_to_eastern_plaza"));
     wait(20);
-    if (var_33efe293 == #"bathhouse") {
-        var_f79ff5ec = #"offering";
+    if (str_second_defend == #"bathhouse") {
+        str_next_defend = #"offering";
     } else {
-        var_f79ff5ec = #"bathhouse";
+        str_next_defend = #"bathhouse";
     }
-    zm_utility::function_11101458(var_f79ff5ec);
+    zm_utility::function_11101458(str_next_defend);
     wait(15);
     level util::delay(45, undefined, &zm_round_spawning::function_376e51ef, #"gegenees");
-    s_defend_area = zm_utility::function_a877cd10(var_f79ff5ec);
+    s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, undefined, undefined, s_defend_area.var_9fc5eea1);
-    zm_utility::function_fef4b36a(var_f79ff5ec);
+    zm_utility::function_fef4b36a(str_next_defend);
     level util::delay(65, undefined, &zm_round_spawning::function_376e51ef, #"blight_father");
     level thread util::delay(260, "end_game", &function_cf680b18);
     function_39364bed();
@@ -338,14 +338,14 @@ function function_cf680b18() {
 // Checksum 0xef45a5f5, Offset: 0x1da8
 // Size: 0x128
 function function_39364bed() {
-    var_f79ff5ec = array::random(array(#"center", #"temple", #"spartan"));
+    str_next_defend = array::random(array(#"center", #"temple", #"spartan"));
     while (1) {
-        zm_utility::function_11101458(var_f79ff5ec);
+        zm_utility::function_11101458(str_next_defend);
         wait(45);
-        s_defend_area = zm_utility::function_a877cd10(var_f79ff5ec);
+        s_defend_area = zm_utility::function_a877cd10(str_next_defend);
         zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
         zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, undefined, undefined, s_defend_area.var_9fc5eea1);
-        var_f79ff5ec = zm_utility::function_40ef77ab(var_f79ff5ec);
+        str_next_defend = zm_utility::function_40ef77ab(str_next_defend);
         waitframe(1);
     }
 }

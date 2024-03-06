@@ -6199,16 +6199,16 @@ function cleanse_setup(b_skipped) {
         if (isdefined(s_spawn.var_8448183f) && s_spawn.var_8448183f && isdefined(s_spawn.script_noteworthy)) {
             switch (s_spawn.script_noteworthy) {
             default:
-                var_ed0e316b = #"hash_18cccc85670ce70e";
+                str_move = #"hash_18cccc85670ce70e";
                 break;
             case #"gegenees_location":
-                var_ed0e316b = #"hash_6c2f8e1ec515638";
+                str_move = #"hash_6c2f8e1ec515638";
                 break;
             case #"blight_father_location":
-                var_ed0e316b = #"hash_37ed662e10c50b79";
+                str_move = #"hash_37ed662e10c50b79";
                 break;
             }
-            s_move = struct::get(var_ed0e316b);
+            s_move = struct::get(str_move);
             s_spawn.origin = s_move.origin;
             s_spawn.angles = s_move.angles;
             s_move struct::delete();

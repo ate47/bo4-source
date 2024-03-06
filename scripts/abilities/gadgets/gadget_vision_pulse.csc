@@ -134,7 +134,7 @@ function function_5f4276b8() {
         return;
     }
     while (1) {
-        if (self function_e2f34c3()) {
+        if (self isplayerprone()) {
             self clearanim(#"pt_recon_t8_stand_vision_pulse_goggles_down_loop", 0);
             self setanimknob(#"pt_recon_t8_prone_vision_pulse_goggles_down_loop", 1, 0, 1);
         } else {

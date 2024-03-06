@@ -372,11 +372,11 @@ function function_ff4557dc(s_talisman) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x8230d6b0, Offset: 0x19b8
 // Size: 0x15b6
-function function_3ac936c6(var_ce5ed2e9) {
-    if (!isdefined(var_ce5ed2e9) || var_ce5ed2e9 == "" || !function_901b751c(#"zmelixirsenabled")) {
+function function_3ac936c6(str_elixir) {
+    if (!isdefined(str_elixir) || str_elixir == "" || !function_901b751c(#"zmelixirsenabled")) {
         return 0;
     }
-    n_index = getitemindexfromref(var_ce5ed2e9);
+    n_index = getitemindexfromref(str_elixir);
     s_fields = function_b143666d(n_index, 2);
     if (isdefined(s_fields) && isdefined(s_fields.bgbrarity)) {
         n_rarity = s_fields.bgbrarity;
@@ -384,7 +384,7 @@ function function_3ac936c6(var_ce5ed2e9) {
     if (!isdefined(n_rarity)) {
         n_rarity = 0;
     }
-    switch (var_ce5ed2e9) {
+    switch (str_elixir) {
     case #"zm_bgb_always_done_swiftly":
         if (!function_901b751c(#"zmelixiralwaysdoneswiftly")) {
             return 0;
@@ -1148,8 +1148,8 @@ function private function_74b79f63() {
         }
     }
     if (!function_901b751c(#"zmshieldisenabled")) {
-        foreach (var_b772a844 in array("zblueprint_shield", "zblueprint_shield_dual_wield", "zblueprint_zhield_zword", "zblueprint_shield_spectral_shield")) {
-            zm_crafting::function_ca244624(hash(var_b772a844));
+        foreach (str_bp in array("zblueprint_shield", "zblueprint_shield_dual_wield", "zblueprint_zhield_zword", "zblueprint_shield_spectral_shield")) {
+            zm_crafting::function_ca244624(hash(str_bp));
         }
     }
     if (!function_901b751c(#"zmbarricadestate")) {

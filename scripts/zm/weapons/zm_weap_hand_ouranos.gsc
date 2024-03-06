@@ -311,7 +311,7 @@ function function_1fc2378f(e_projectile, ai_zombie, n_damage) {
         v_end = var_2ed6f142 + v_forward * 200;
         n_dist_sq = distance2dsquared(self.origin, v_end);
         if (isdefined(ai_zombie) && distance2dsquared(e_projectile.origin, ai_zombie.origin) <= n_dist_sq) {
-            ai_zombie.var_aed05e5b = 1;
+            ai_zombie.is_close = 1;
             n_dist = distance(e_projectile.origin, ai_zombie.origin);
             n_time = n_dist / 1500;
             if (n_time <= 0.1) {
@@ -506,7 +506,7 @@ function function_dced5aef(e_target, weapon = level.weaponnone, n_damage, v_to_t
         if (e_target.health <= 0) {
             e_target.ignoremelee = 1;
             e_target.marked_for_death = 1;
-            if (isdefined(e_target.var_aed05e5b) && e_target.var_aed05e5b) {
+            if (isdefined(e_target.is_close) && e_target.is_close) {
                 v_fling = anglestoforward(self.angles) * 250 + vectorscale((0, 0, 1), 100);
             } else {
                 v_fling = v_to_target * 250;

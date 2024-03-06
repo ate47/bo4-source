@@ -1090,9 +1090,9 @@ function function_3c089853(e_player) {
         /#
             iprintln("<unknown string>" + current_zone.name);
         #/
-        var_445d5a80 = function_bc827f0d(current_zone, self);
+        str_next_location = function_bc827f0d(current_zone, self);
         foreach (var_d72f7274 in var_8ad4ec11) {
-            if (var_d72f7274.script_string == var_445d5a80) {
+            if (var_d72f7274.script_string == str_next_location) {
                 var_8ba7b26b = var_d72f7274;
                 break;
             }
@@ -1151,15 +1151,15 @@ function function_bc827f0d(current_zone, e_dog) {
         }
     }
     while (1) {
-        var_445d5a80 = array::random(var_63751700);
+        str_next_location = array::random(var_63751700);
         if (!isdefined(e_dog.var_dc6158cc)) {
             break;
-        } else if (e_dog.var_dc6158cc.script_string == var_445d5a80) {
+        } else if (e_dog.var_dc6158cc.script_string == str_next_location) {
             continue;
         }
         break;
     }
-    return var_445d5a80;
+    return str_next_location;
 }
 
 // Namespace pebble/zm_escape_pebble

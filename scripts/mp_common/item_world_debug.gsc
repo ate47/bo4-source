@@ -383,25 +383,25 @@ function function_78931318(str_button) {
     /#
         switch (str_button) {
         case #"down":
-            var_a1798265 = "<unknown string>";
+            str_btn = "<unknown string>";
             var_7a00db94 = "<unknown string>";
             break;
         case #"left":
-            var_a1798265 = "<unknown string>";
+            str_btn = "<unknown string>";
             var_7a00db94 = "<unknown string>";
             break;
         case #"right":
-            var_a1798265 = "<unknown string>";
+            str_btn = "<unknown string>";
             var_7a00db94 = "<unknown string>";
             break;
         case #"up":
-            var_a1798265 = "<unknown string>";
+            str_btn = "<unknown string>";
             var_7a00db94 = "<unknown string>";
             break;
         }
-        if (isdefined(var_a1798265)) {
-            if (self buttonpressed(var_a1798265) || self buttonpressed(var_7a00db94)) {
-                while (self buttonpressed(var_a1798265) || self buttonpressed(var_7a00db94)) {
+        if (isdefined(str_btn)) {
+            if (self buttonpressed(str_btn) || self buttonpressed(var_7a00db94)) {
+                while (self buttonpressed(str_btn) || self buttonpressed(var_7a00db94)) {
                     waitframe(1);
                 }
                 return 1;

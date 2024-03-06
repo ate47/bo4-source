@@ -817,16 +817,16 @@ function function_cd9f1d74(n_reward) {
         function_a7983bee();
     case 1:
         var_b7a9df7c = #"p8_zm_elixir_ctrl_z_ui";
-        var_ce5ed2e9 = #"zm_bgb_ctrl_z";
+        str_elixir = #"zm_bgb_ctrl_z";
     case 2:
         var_b7a9df7c = #"p8_zm_elixir_in_plain_sight_ui";
-        var_ce5ed2e9 = #"zm_bgb_in_plain_sight";
+        str_elixir = #"zm_bgb_in_plain_sight";
     case 3:
         var_b7a9df7c = #"hash_65291a8ef0716ac6";
-        var_ce5ed2e9 = #"zm_bgb_phantom_reload";
+        str_elixir = #"zm_bgb_phantom_reload";
     case 4:
         var_b7a9df7c = #"p8_zm_elixir_sword_flay_ui";
-        var_ce5ed2e9 = #"zm_bgb_sword_flay";
+        str_elixir = #"zm_bgb_sword_flay";
         jumpiffalse(isdefined(var_b7a9df7c)) LOC_000001f2;
         mdl_elixir = util::spawn_model(var_b7a9df7c, s_shelf.origin, s_shelf.angles);
         var_7b57e2cc = util::spawn_model(#"p8_zm_elixir_bottle_plain_sight_lid", s_shelf.origin + vectorscale((0, 0, 1), 6.75), s_shelf.angles);
@@ -835,7 +835,7 @@ function function_cd9f1d74(n_reward) {
             mdl_elixir thread function_67c3a7dd();
             var_47323b73.mdl_elixir = mdl_elixir;
             var_47323b73.var_7b57e2cc = var_7b57e2cc;
-            var_47323b73.var_ce5ed2e9 = var_ce5ed2e9;
+            var_47323b73.str_elixir = str_elixir;
         }
     case 5:
     LOC_000001f2:
@@ -868,7 +868,7 @@ function function_67c3a7dd() {
         }
         self delete();
         var_163c35fc.var_7b57e2cc delete();
-        str_bgb = var_163c35fc.var_ce5ed2e9;
+        str_bgb = var_163c35fc.str_elixir;
         player thread function_7f4f9503(str_bgb);
         zm_unitrigger::unregister_unitrigger(var_163c35fc);
         return;
@@ -928,7 +928,7 @@ function function_2b75135a(player) {
 // Checksum 0xb7ab4c98, Offset: 0x4030
 // Size: 0x1d6
 function function_cc012e8d(player) {
-    switch (self.stub.var_ce5ed2e9) {
+    switch (self.stub.str_elixir) {
     case #"zm_bgb_ctrl_z":
         str_prompt = zm_utility::function_d6046228(#"hash_620d7c84d23fd049", #"hash_6daedc8fd5a061d7");
         self sethintstringforplayer(player, str_prompt);

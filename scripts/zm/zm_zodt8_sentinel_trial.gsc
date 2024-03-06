@@ -2151,27 +2151,27 @@ function function_4f658ef7() {
         self waittill(#"trigger");
         s_glyph.mdl_glyph clientfield::increment("" + #"hash_68e2384b254175da", 1);
         s_glyph.mdl_glyph util::delay(0.5, #"hash_158580acc65694d5", &hide_self);
-        var_7ec8be9 = getent(s_glyph.targetname, "str_object_name");
-        if (!isdefined(var_7ec8be9)) {
-            var_7ec8be9 = util::spawn_model("tag_origin");
+        mdl_planet = getent(s_glyph.targetname, "str_object_name");
+        if (!isdefined(mdl_planet)) {
+            mdl_planet = util::spawn_model("tag_origin");
         }
-        var_7ec8be9.str_object_name = s_glyph.targetname;
+        mdl_planet.str_object_name = s_glyph.targetname;
         playsoundatposition(#"hash_73b0c0f78e9868c6" + s_glyph.targetname + "_cele_0", s_glyph.origin);
         if (!isdefined(level.var_21807a83)) {
             level.var_21807a83 = [];
         } else if (!isarray(level.var_21807a83)) {
             level.var_21807a83 = array(level.var_21807a83);
         }
-        if (!isinarray(level.var_21807a83, var_7ec8be9)) {
-            level.var_21807a83[level.var_21807a83.size] = var_7ec8be9;
+        if (!isinarray(level.var_21807a83, mdl_planet)) {
+            level.var_21807a83[level.var_21807a83.size] = mdl_planet;
         }
         if (!isdefined(level.a_planets)) {
             level.a_planets = [];
         } else if (!isarray(level.a_planets)) {
             level.a_planets = array(level.a_planets);
         }
-        if (!isinarray(level.a_planets, var_7ec8be9)) {
-            level.a_planets[level.a_planets.size] = var_7ec8be9;
+        if (!isinarray(level.a_planets, mdl_planet)) {
+            level.a_planets[level.a_planets.size] = mdl_planet;
         }
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
@@ -2179,7 +2179,7 @@ function function_4f658ef7() {
                 println(s_glyph.targetname + "<unknown string>");
             }
         #/
-        level thread planet_behavior(var_7ec8be9);
+        level thread planet_behavior(mdl_planet);
         level waittill(#"hash_158580acc65694d5", #"hash_63a102a7ae564e99");
     }
     if (isdefined(s_glyph) && isdefined(s_glyph.mdl_glyph)) {
@@ -2204,8 +2204,8 @@ function function_8b9aec1a() {
     if (level.a_planets.size < 9) {
         return;
     }
-    foreach (var_7ec8be9 in level.a_planets) {
-        if (var_7ec8be9.var_ddb0a5b4 !== 1) {
+    foreach (mdl_planet in level.a_planets) {
+        if (mdl_planet.var_ddb0a5b4 !== 1) {
             return;
         }
     }
@@ -2622,8 +2622,8 @@ function function_51054f59() {
         foreach (player in util::get_active_players()) {
             player thread function_53a78cbd();
         }
-        foreach (var_7ec8be9 in level.a_planets) {
-            level thread planet_behavior(var_7ec8be9);
+        foreach (mdl_planet in level.a_planets) {
+            level thread planet_behavior(mdl_planet);
         }
         var_27805204 thread function_384c480f();
         level flag::wait_till_clear(#"orrery_activated");
@@ -2659,57 +2659,57 @@ function function_384c480f() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa8e34f02, Offset: 0xc950
 // Size: 0x556
-function planet_behavior(var_7ec8be9) {
-    if (var_7ec8be9.var_ddb0a5b4 === 1) {
+function planet_behavior(mdl_planet) {
+    if (mdl_planet.var_ddb0a5b4 === 1) {
         return;
     }
-    str_planet_name = var_7ec8be9.str_object_name;
+    str_planet_name = mdl_planet.str_object_name;
     if (str_planet_name !== #"moon") {
-        var_7ec8be9 setmodel(#"p8_zm_zod_planets_" + str_planet_name + "_large");
-        var_7ec8be9 setscale(1.25);
+        mdl_planet setmodel(#"p8_zm_zod_planets_" + str_planet_name + "_large");
+        mdl_planet setscale(1.25);
         switch (str_planet_name) {
         case #"uranus":
-            var_7ec8be9 setscale(2);
-            var_7ec8be9 clientfield::set("" + #"planet_fx", 8);
+            mdl_planet setscale(2);
+            mdl_planet clientfield::set("" + #"planet_fx", 8);
             break;
         case #"saturn":
-            var_7ec8be9 setscale(3);
-            var_7ec8be9 clientfield::set("" + #"planet_fx", 7);
+            mdl_planet setscale(3);
+            mdl_planet clientfield::set("" + #"planet_fx", 7);
             break;
         case #"jupiter":
-            var_7ec8be9 setscale(2.5);
-            var_7ec8be9 clientfield::set("" + #"planet_fx", 6);
+            mdl_planet setscale(2.5);
+            mdl_planet clientfield::set("" + #"planet_fx", 6);
             break;
         case #"sun":
-            var_7ec8be9 clientfield::set("" + #"planet_fx", 1);
+            mdl_planet clientfield::set("" + #"planet_fx", 1);
             break;
         case #"mars":
-            var_7ec8be9 clientfield::set("" + #"planet_fx", 5);
+            mdl_planet clientfield::set("" + #"planet_fx", 5);
             break;
         case #"mercury":
-            var_7ec8be9 clientfield::set("" + #"planet_fx", 2);
+            mdl_planet clientfield::set("" + #"planet_fx", 2);
             break;
         case #"venus":
-            var_7ec8be9 clientfield::set("" + #"planet_fx", 3);
+            mdl_planet clientfield::set("" + #"planet_fx", 3);
             break;
         case #"neptune":
-            var_7ec8be9 clientfield::set("" + #"planet_fx", 9);
+            mdl_planet clientfield::set("" + #"planet_fx", 9);
             break;
         }
     }
-    var_7ec8be9 notsolid();
-    var_7ec8be9 hide();
-    var_7ec8be9.var_ddb0a5b4 = 1;
+    mdl_planet notsolid();
+    mdl_planet hide();
+    mdl_planet.var_ddb0a5b4 = 1;
     function_8b9aec1a();
-    level thread planet_visibility(var_7ec8be9);
-    level thread planet_cleanup(var_7ec8be9);
+    level thread planet_visibility(mdl_planet);
+    level thread planet_cleanup(mdl_planet);
     if (str_planet_name !== #"moon") {
         var_5314bd63 = getent("veh_fasttravel_cam", "targetname");
         nd_path = array::random(getvehiclenodearray(str_planet_name + "_turkey", "targetname"));
         var_44c99f3b = spawner::simple_spawn_single(var_5314bd63);
-        var_7ec8be9.var_44c99f3b = var_44c99f3b;
-        var_7ec8be9.origin = var_44c99f3b.origin;
-        var_7ec8be9 linkto(var_44c99f3b);
+        mdl_planet.var_44c99f3b = var_44c99f3b;
+        mdl_planet.origin = var_44c99f3b.origin;
+        mdl_planet linkto(var_44c99f3b);
         while (!level flag::get(#"hash_77f76266b597a1f7")) {
             if (isdefined(var_44c99f3b)) {
                 var_44c99f3b vehicle::get_on_and_go_path(nd_path);
@@ -2727,16 +2727,16 @@ function planet_behavior(var_7ec8be9) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x2e37f2b4, Offset: 0xceb0
 // Size: 0xfc
-function planet_cleanup(var_7ec8be9) {
-    level waittill(#"hash_77f76266b597a1f7", var_7ec8be9.str_object_name + "_pickup");
-    if (isdefined(var_7ec8be9)) {
-        var_7ec8be9.var_ddb0a5b4 = 0;
-        var_7ec8be9 clientfield::set("" + #"essence_fx", 0);
-        var_7ec8be9 setmodel("tag_origin");
-        if (isdefined(var_7ec8be9.var_44c99f3b)) {
-            var_7ec8be9 unlink();
-            var_7ec8be9.var_44c99f3b notify(#"stop path");
-            var_7ec8be9.var_44c99f3b delete();
+function planet_cleanup(mdl_planet) {
+    level waittill(#"hash_77f76266b597a1f7", mdl_planet.str_object_name + "_pickup");
+    if (isdefined(mdl_planet)) {
+        mdl_planet.var_ddb0a5b4 = 0;
+        mdl_planet clientfield::set("" + #"essence_fx", 0);
+        mdl_planet setmodel("tag_origin");
+        if (isdefined(mdl_planet.var_44c99f3b)) {
+            mdl_planet unlink();
+            mdl_planet.var_44c99f3b notify(#"stop path");
+            mdl_planet.var_44c99f3b delete();
         }
     }
 }
@@ -2745,11 +2745,11 @@ function planet_cleanup(var_7ec8be9) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x88f31d8a, Offset: 0xcfb8
 // Size: 0x74
-function planet_visibility(var_7ec8be9) {
-    var_7ec8be9 clientfield::set("" + #"land_fx", 0);
-    var_7ec8be9 hide();
+function planet_visibility(mdl_planet) {
+    mdl_planet clientfield::set("" + #"land_fx", 0);
+    mdl_planet hide();
     wait(0.5);
-    var_7ec8be9 show();
+    mdl_planet show();
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -2783,15 +2783,15 @@ function function_53a78cbd() {
         }
         v_forward = self getweaponforwarddir();
         v_start = self getweaponmuzzlepoint();
-        foreach (var_7ec8be9 in level.a_planets) {
-            if (!isdefined(var_7ec8be9.str_object_name) || v_forward[2] < 0.3 && var_7ec8be9.str_object_name != #"neptune" || v_forward[2] > 0.1 && var_7ec8be9.str_object_name == #"neptune") {
+        foreach (mdl_planet in level.a_planets) {
+            if (!isdefined(mdl_planet.str_object_name) || v_forward[2] < 0.3 && mdl_planet.str_object_name != #"neptune" || v_forward[2] > 0.1 && mdl_planet.str_object_name == #"neptune") {
                 continue;
             }
-            if (var_7ec8be9.var_ddb0a5b4 !== 1) {
+            if (mdl_planet.var_ddb0a5b4 !== 1) {
                 continue;
             }
             v_end = v_start + v_forward * 200000;
-            b_hit = self function_370a9e5(var_7ec8be9, v_start, v_end, v_forward);
+            b_hit = self function_370a9e5(mdl_planet, v_start, v_end, v_forward);
             if (b_hit) {
                 v_trace_end = v_start + v_forward * 10000;
                 a_trace = bullettrace(v_start, v_trace_end, 1, self);
@@ -2800,11 +2800,11 @@ function function_53a78cbd() {
                 }
                 self util::show_hit_marker(1);
                 self thread zm_audio::create_and_play_dialog(#"m_quest", #"hash_45e36c01ad8ad25c", 0, 1);
-                if (isdefined(var_7ec8be9.var_44c99f3b)) {
-                    var_7ec8be9 unlink();
-                    var_7ec8be9.var_44c99f3b delete();
+                if (isdefined(mdl_planet.var_44c99f3b)) {
+                    mdl_planet unlink();
+                    mdl_planet.var_44c99f3b delete();
                 }
-                level thread function_acc65da4(var_7ec8be9);
+                level thread function_acc65da4(mdl_planet);
                 break;
             }
         }
@@ -2816,18 +2816,18 @@ function function_53a78cbd() {
 // Params 4, eflags: 0x1 linked
 // Checksum 0xbee968c4, Offset: 0xd4e8
 // Size: 0x252
-function function_370a9e5(var_7ec8be9, v_start, v_end, v_forward) {
-    if (var_7ec8be9.str_object_name === #"moon") {
+function function_370a9e5(mdl_planet, v_start, v_end, v_forward) {
+    if (mdl_planet.str_object_name === #"moon") {
         v_angles = self getplayerangles();
         if (abs(abs(v_angles[0]) - abs(-26.6)) + abs(abs(v_angles[1]) - abs(-29.35)) <= 2.2 && abs(abs(v_angles[2]) - abs(0)) <= 1) {
-            var_7ec8be9.origin = v_start + v_forward * 100000;
+            mdl_planet.origin = v_start + v_forward * 100000;
             return 1;
         }
         return 0;
     } else {
-        v_target = var_7ec8be9.origin;
+        v_target = mdl_planet.origin;
     }
-    if (var_7ec8be9.str_object_name === #"neptune") {
+    if (mdl_planet.str_object_name === #"neptune") {
         n_min_dist = 10000;
     } else {
         n_min_dist = 1048576;
@@ -2844,36 +2844,36 @@ function function_370a9e5(var_7ec8be9, v_start, v_end, v_forward) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe8a0918b, Offset: 0xd748
 // Size: 0x640
-function function_acc65da4(var_7ec8be9) {
+function function_acc65da4(mdl_planet) {
     n_move_time = 9;
     n_accel = 5;
-    str_planet_name = var_7ec8be9.str_object_name;
-    arrayremovevalue(level.a_planets, var_7ec8be9, 0);
-    var_7ec8be9 setmodel(#"tag_origin");
+    str_planet_name = mdl_planet.str_object_name;
+    arrayremovevalue(level.a_planets, mdl_planet, 0);
+    mdl_planet setmodel(#"tag_origin");
     if (str_planet_name != #"neptune") {
         if (str_planet_name == #"moon") {
             util::wait_network_frame();
         }
-        var_7ec8be9 clientfield::set("" + #"essence_fx", 1);
+        mdl_planet clientfield::set("" + #"essence_fx", 1);
     }
-    var_7ec8be9 playsound(#"hash_2380c4a79ebb093c");
-    var_7ec8be9 playloopsound(#"hash_5a4997dc84f6d680");
+    mdl_planet playsound(#"hash_2380c4a79ebb093c");
+    mdl_planet playloopsound(#"hash_5a4997dc84f6d680");
     if (level flag::exists(str_planet_name + "_done")) {
         level flag::set(str_planet_name + "_done");
         if (str_planet_name == #"neptune") {
-            var_7ec8be9 clientfield::set("" + #"essence_fx", 1);
-            function_fd93c584(var_7ec8be9);
+            mdl_planet clientfield::set("" + #"essence_fx", 1);
+            function_fd93c584(mdl_planet);
             n_move_time = 3;
             n_accel = 1;
         }
         s_landing = struct::get(str_planet_name + "_coyote");
-        var_7ec8be9 moveto(s_landing.origin + vectorscale((0, 0, 1), 20), n_move_time, n_accel, 0.5);
-        var_7ec8be9 waittill(#"movedone");
-        var_7ec8be9 clientfield::set("" + #"land_fx", 1);
-        var_7ec8be9 rotate((15, 50, 0));
-        var_7ec8be9 playsound(#"hash_6e67e59759b21e8e");
+        mdl_planet moveto(s_landing.origin + vectorscale((0, 0, 1), 20), n_move_time, n_accel, 0.5);
+        mdl_planet waittill(#"movedone");
+        mdl_planet clientfield::set("" + #"land_fx", 1);
+        mdl_planet rotate((15, 50, 0));
+        mdl_planet playsound(#"hash_6e67e59759b21e8e");
         if (!level flag::get(#"hash_77f76266b597a1f7")) {
-            var_7ec8be9 playloopsound(#"hash_733ab9b8fda8f02b");
+            mdl_planet playloopsound(#"hash_733ab9b8fda8f02b");
             level thread function_647da52c(str_planet_name);
             if (str_planet_name == #"sun") {
                 s_landing function_6099877a(undefined, #"hash_77f76266b597a1f7");
@@ -2884,21 +2884,21 @@ function function_acc65da4(var_7ec8be9) {
             level.var_e830f656 = undefined;
             if (level flag::exists(str_planet_name + "_pickup")) {
                 level flag::set(str_planet_name + "_pickup");
-                var_7ec8be9 stoploopsound();
-                var_7ec8be9 playsound(#"hash_134115584a37eb8a");
+                mdl_planet stoploopsound();
+                mdl_planet playsound(#"hash_134115584a37eb8a");
             } else {
                 level flag::set(#"hash_77f76266b597a1f7");
                 zm_unitrigger::unregister_unitrigger(s_landing.s_unitrigger);
             }
         }
     } else {
-        var_7ec8be9 clientfield::set("" + #"land_fx", 1);
-        s_landing = array::get_all_closest(var_7ec8be9.origin, struct::get_array(#"hash_599cbbc041a9734e"), undefined, 1)[0];
-        var_7ec8be9 moveto(s_landing.origin, n_move_time);
-        var_7ec8be9 waittill(#"movedone");
-        var_7ec8be9 stoploopsound();
-        var_7ec8be9 playsound(#"hash_7007602a9c1e2b84");
-        var_7ec8be9 clientfield::set("" + #"land_fx", 0);
+        mdl_planet clientfield::set("" + #"land_fx", 1);
+        s_landing = array::get_all_closest(mdl_planet.origin, struct::get_array(#"hash_599cbbc041a9734e"), undefined, 1)[0];
+        mdl_planet moveto(s_landing.origin, n_move_time);
+        mdl_planet waittill(#"movedone");
+        mdl_planet stoploopsound();
+        mdl_planet playsound(#"hash_7007602a9c1e2b84");
+        mdl_planet clientfield::set("" + #"land_fx", 0);
         level flag::set(#"hash_77f76266b597a1f7");
         /#
             iprintlnbold("<unknown string>");
@@ -2961,10 +2961,10 @@ function function_647da52c(str_planet_name) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xb70b9e42, Offset: 0xdfd8
 // Size: 0x8c
-function function_fd93c584(var_7ec8be9) {
+function function_fd93c584(mdl_planet) {
     s_rising = struct::get(#"hash_38c9156b019d766b");
-    var_7ec8be9 moveto(s_rising.origin, 5, 1, 3);
-    var_7ec8be9 waittill(#"movedone");
+    mdl_planet moveto(s_rising.origin, 5, 1, 3);
+    mdl_planet waittill(#"movedone");
     wait(0.15);
 }
 
@@ -3815,13 +3815,13 @@ function function_6fef3bc3(nd_path) {
             break;
         }
         if (isdefined(str_model)) {
-            var_7ec8be9 = util::spawn_model(str_model, self.origin, nd_path.angles);
-            var_7ec8be9 setscale(nd_path.n_scale);
+            mdl_planet = util::spawn_model(str_model, self.origin, nd_path.angles);
+            mdl_planet setscale(nd_path.n_scale);
         }
     }
     level waittill(#"hash_332a98e65f5dce4");
-    if (isdefined(var_7ec8be9)) {
-        var_7ec8be9 delete();
+    if (isdefined(mdl_planet)) {
+        mdl_planet delete();
     }
     self delete();
 }

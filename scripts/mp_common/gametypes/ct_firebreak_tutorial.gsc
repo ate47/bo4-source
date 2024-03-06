@@ -1863,10 +1863,10 @@ function function_344aee09(_hash) {
                 setslowmotion(1, 0.1, 0.5);
                 e_player ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_5168ae1a4907adb6" : #"hash_6d618a9f705ba66");
                 setslowmotion(0.1, 1, 0.25);
-                var_fd96aacc = "s_tut_purifier_3_respawn";
+                str_respawn = "s_tut_purifier_3_respawn";
                 n_wait = 0.1;
             }
-            e_player thread ct_utils::function_79957328(undefined, var_fd96aacc);
+            e_player thread ct_utils::function_79957328(undefined, str_respawn);
             level waittill(#"hash_603de7ab282bcda9");
             e_player thread ct_utils::function_49e0c5bc(1);
             e_player ct_vo::function_3ca1b77d(1);

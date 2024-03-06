@@ -128,24 +128,24 @@ function function_cd2f24b2(zone_name) {
 // Checksum 0xf97eaa3c, Offset: 0x768
 // Size: 0x164
 function function_2fe0c64e(v_pos) {
-    var_5f3b05e8 = zm_zonemgr::get_zone_from_position(v_pos);
-    if (!isdefined(var_5f3b05e8)) {
+    str_target_zone = zm_zonemgr::get_zone_from_position(v_pos);
+    if (!isdefined(str_target_zone)) {
         foreach (zone in level.zones) {
             if (zone.is_enabled) {
                 foreach (volume in zone.volumes) {
                     if (istouching(v_pos, volume)) {
-                        var_5f3b05e8 = zone.name;
+                        str_target_zone = zone.name;
                         break;
                     }
                 }
-                if (isdefined(var_5f3b05e8)) {
+                if (isdefined(str_target_zone)) {
                     break;
                 }
             }
         }
     }
-    if (isdefined(var_5f3b05e8)) {
-        return function_cd2f24b2(var_5f3b05e8);
+    if (isdefined(str_target_zone)) {
+        return function_cd2f24b2(str_target_zone);
     }
 }
 

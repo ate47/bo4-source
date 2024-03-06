@@ -976,14 +976,14 @@ function private debug_loop() {
         while (1) {
             if (getdvarint(#"deathcircle_debug", 0)) {
                 var_36b41a8 = getdvarint(#"hash_411ea20c685d88c1", 1);
-                var_9f6ad7bb = getdvarint(#"hash_31a5138991bbbf63", -1);
+                debugindex = getdvarint(#"hash_31a5138991bbbf63", -1);
                 var_a15ea324 = getdvarint(#"hash_118a6d37e5aa4589", 0);
                 maxindex = level.deathcircles.size - 1;
-                if (var_9f6ad7bb >= 0) {
-                    circle = level.deathcircles[var_9f6ad7bb];
+                if (debugindex >= 0) {
+                    circle = level.deathcircles[debugindex];
                     if (isdefined(circle)) {
-                        color = circle_color(var_9f6ad7bb, maxindex);
-                        draw_circle(circle, var_9f6ad7bb, var_36b41a8, color, var_a15ea324);
+                        color = circle_color(debugindex, maxindex);
+                        draw_circle(circle, debugindex, var_36b41a8, color, var_a15ea324);
                     }
                 } else {
                     minimaporigins = getentarray("<unknown string>", "<unknown string>");

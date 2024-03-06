@@ -827,7 +827,7 @@ class csceneplayer : csceneobject {
                 var_7a496fd5 = isdefined(var_ec50a0d3.var_3ee70278) ? var_ec50a0d3.var_3ee70278 : var_4a92a676 / 2;
                 var_7a496fd5 = math::clamp(var_7a496fd5, 0, var_4a92a676);
                 var_33d5f97d = var_4a92a676;
-                var_1d3b9f6c = 0;
+                b_pressed_button = 0;
                 foreach (o_obj in self._o_scene._a_objects) {
                     thread [[ o_obj ]]->_play_anim(o_obj._str_current_anim, 1, 0.2, undefined, 0);
                 }
@@ -837,7 +837,7 @@ class csceneplayer : csceneobject {
                     var_33d5f97d = var_33d5f97d - float(function_60d95f53()) / 1000;
                     b_result = check_input(player, var_ec50a0d3, var_966ea21d);
                     if (b_result) {
-                        var_1d3b9f6c = 1;
+                        b_pressed_button = 1;
                         player notify(#"hash_feb654ece8faa3d");
                         while (var_7a496fd5 > 0) {
                             waitframe(1);
@@ -849,14 +849,14 @@ class csceneplayer : csceneobject {
                     }
                     waitframe(1);
                 }
-                if (!var_1d3b9f6c) {
+                if (!b_pressed_button) {
                     thread function_31a89cb0(player, 0);
                     thread function_d0cf938(player, 1);
                     while (var_33d5f97d > 0) {
                         var_33d5f97d = var_33d5f97d - float(function_60d95f53()) / 1000;
                         b_result = check_input(player, var_ec50a0d3, var_966ea21d);
                         if (b_result) {
-                            var_1d3b9f6c = 1;
+                            b_pressed_button = 1;
                             player notify(#"hash_feb654ece8faa3d");
                             while (var_33d5f97d > 0) {
                                 waitframe(1);
@@ -869,7 +869,7 @@ class csceneplayer : csceneobject {
                         waitframe(1);
                     }
                 }
-                if (!var_1d3b9f6c) {
+                if (!b_pressed_button) {
                     thread function_9a7dd9f2(player);
                     return;
                 }

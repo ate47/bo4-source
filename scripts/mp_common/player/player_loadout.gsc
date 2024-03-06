@@ -617,7 +617,7 @@ function give_perks() {
 // Checksum 0xf765c220, Offset: 0x2bf8
 // Size: 0x18c
 function function_f436358b(weaponclass) {
-    self.class_num = function_6972fdbb(weaponclass);
+    self.class_num = get_class_num(weaponclass);
     if (issubstr(weaponclass, "CLASS_CUSTOM")) {
         pixbeginevent(#"custom class");
         self.class_num_for_global_weapons = self.class_num;
@@ -641,7 +641,7 @@ function function_f436358b(weaponclass) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x64f197ab, Offset: 0x2d90
 // Size: 0x1e0
-function function_6972fdbb(weaponclass) {
+function get_class_num(weaponclass) {
     /#
         assert(isdefined(weaponclass));
     #/
@@ -1453,7 +1453,7 @@ function function_53b62db1(newclass) {
 // Checksum 0x9c60ab97, Offset: 0x5fc0
 // Size: 0x1b4
 function function_d7c205b9(newclass, var_eead10f0 = #"unspecified") {
-    loadoutindex = isdefined(newclass) ? function_6972fdbb(newclass) : undefined;
+    loadoutindex = isdefined(newclass) ? get_class_num(newclass) : undefined;
     self.pers[#"loadoutindex"] = loadoutindex;
     var_45843e9a = var_eead10f0 == #"give_loadout";
     var_7f8c24df = 0;

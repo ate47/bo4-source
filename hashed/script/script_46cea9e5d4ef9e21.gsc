@@ -100,13 +100,13 @@ function _goodlighting_hangar_a() {
 // Size: 0x12c
 function function_89f2ec87() {
     while (1) {
-        var_32823664 = getentarray("mdl_nixie_tubes", "script_string");
-        foreach (mdl_tube in var_32823664) {
+        a_mdl_tubes = getentarray("mdl_nixie_tubes", "script_string");
+        foreach (mdl_tube in a_mdl_tubes) {
             mdl_tube thread function_e5c8fd1d();
         }
         level waittill(#"hash_dfac532bccdb293");
         function_97f8efcd();
-        level thread function_ca5612ce(var_32823664);
+        level thread function_ca5612ce(a_mdl_tubes);
         level flag::wait_till_clear(#"hash_7ebd1255a2e91e3e");
         function_172e72fa();
         level notify(#"hash_59db65b924f851e4");
@@ -150,13 +150,13 @@ function function_97f8efcd() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x9ef6a012, Offset: 0xd98
 // Size: 0x148
-function function_ca5612ce(var_32823664) {
+function function_ca5612ce(a_mdl_tubes) {
     level endon(#"hash_59db65b924f851e4", #"hash_795bde5570f8b67c");
     level flag::set(#"hash_7ebd1255a2e91e3e");
     wait(25);
     level flag::wait_till_clear(#"hash_795bde5570f8b67c");
     level flag::clear(#"hash_7ebd1255a2e91e3e");
-    var_3c04def5 = array::random(var_32823664);
+    var_3c04def5 = array::random(a_mdl_tubes);
     e_closest_player = arraygetclosest(var_3c04def5.origin, level.players);
     if (isalive(e_closest_player)) {
         e_closest_player thread zm_audio::create_and_play_dialog(#"negative_resp", #"generic");

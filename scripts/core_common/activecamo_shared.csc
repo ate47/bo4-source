@@ -90,7 +90,7 @@ function function_c887f58e() {
     if (!weaponhasattachment(weapon, "uber")) {
         return;
     }
-    var_472c15e8 = self function_e2f34c3();
+    var_472c15e8 = self isplayerprone();
     self function_d309e55a("tag_foregrip_bipod_attach_driver_animate", var_472c15e8);
     waitframe(1);
     while (1) {
@@ -102,11 +102,11 @@ function function_c887f58e() {
             return;
         }
         if (!var_472c15e8) {
-            if (self function_e2f34c3()) {
+            if (self isplayerprone()) {
                 var_472c15e8 = 1;
                 self function_d309e55a("tag_foregrip_bipod_attach_driver_animate", 1);
             }
-        } else if (!self function_e2f34c3()) {
+        } else if (!self isplayerprone()) {
             var_472c15e8 = 0;
             self function_d309e55a("tag_foregrip_bipod_attach_driver_animate", 0);
         }

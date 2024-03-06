@@ -2002,28 +2002,28 @@ function function_344aee09(_hash) {
                 e_player thread ct_vo::function_831e0584(array("vox_tvoi_tutor_torq_smrt_cvr_destroy"));
                 var_16b5c6bb = e_player gamepadusedlast() ? #"hash_4194c81053f07918" : #"hash_7b43013359063e4";
                 ct_utils::function_a61ebb46(var_16b5c6bb);
-                var_fd96aacc = "s_torque_tut_6_respawn";
+                str_respawn = "s_torque_tut_6_respawn";
             } else if (_hash == #"tut_6_razorwire_dead") {
                 e_player ct_vo::function_c72e58c1(#"failed");
                 e_player thread ct_vo::function_831e0584(array("vox_tvoi_tutor_torq_razor_wire_destroy"));
                 var_edd14440 = e_player gamepadusedlast() ? #"hash_16e6d107836c380a" : #"hash_618673f250fa320a";
                 ct_utils::function_a61ebb46(var_edd14440);
-                var_fd96aacc = "s_torque_tut_6_respawn";
+                str_respawn = "s_torque_tut_6_respawn";
             } else if (_hash == #"hash_34a524e09eb9209f") {
                 e_player ct_vo::function_c72e58c1(#"failed");
                 e_player thread ct_vo::function_831e0584(array("vox_tvoi_tutor_torq_enemy_stuck_nag"));
                 var_a139eb64 = e_player gamepadusedlast() ? #"hash_4762a2aaf0787460" : #"hash_1736a34805e7e1cc";
                 ct_utils::function_a61ebb46(var_a139eb64);
-                var_a2176ec6 = [];
-                var_a2176ec6[1] = "s_torque_tut_1_respawn";
-                var_a2176ec6[2] = "s_torque_tut_2_respawn";
-                var_a2176ec6[3] = "s_torque_tut_3_respawn";
-                var_a2176ec6[4] = "s_torque_tut_4_respawn";
-                var_a2176ec6[5] = "s_torque_tut_5_respawn";
-                var_a2176ec6[6] = "s_torque_tut_6_respawn";
-                var_fd96aacc = var_a2176ec6[level.var_8ca3c62];
+                a_str_respawn = [];
+                a_str_respawn[1] = "s_torque_tut_1_respawn";
+                a_str_respawn[2] = "s_torque_tut_2_respawn";
+                a_str_respawn[3] = "s_torque_tut_3_respawn";
+                a_str_respawn[4] = "s_torque_tut_4_respawn";
+                a_str_respawn[5] = "s_torque_tut_5_respawn";
+                a_str_respawn[6] = "s_torque_tut_6_respawn";
+                str_respawn = a_str_respawn[level.var_8ca3c62];
             }
-            e_player thread ct_utils::function_79957328(undefined, var_fd96aacc);
+            e_player thread ct_utils::function_79957328(undefined, str_respawn);
             level waittill(#"hash_603de7ab282bcda9");
             e_player thread ct_utils::function_49e0c5bc(1);
             e_player ct_vo::function_3ca1b77d(1);

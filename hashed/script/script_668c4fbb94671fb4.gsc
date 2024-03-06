@@ -1266,11 +1266,11 @@ function function_ae8a20de() {
             continue;
         }
         str_zone = zm_zonemgr::get_zone_from_position(self.origin);
-        var_3c0dcfe8 = function_9e55b467(str_zone);
-        function_eee2ccd4(var_3c0dcfe8);
-        function_eee2ccd4(var_3c0dcfe8);
-        if (var_3c0dcfe8 === "zone_start") {
-            function_eee2ccd4(var_3c0dcfe8);
+        str_next_zone = function_9e55b467(str_zone);
+        function_eee2ccd4(str_next_zone);
+        function_eee2ccd4(str_next_zone);
+        if (str_next_zone === "zone_start") {
+            function_eee2ccd4(str_next_zone);
         } else if (str_zone === "zone_start") {
             function_eee2ccd4("zone_library");
         }
@@ -1318,8 +1318,8 @@ function private function_1eab6e39() {
                 }
             }
             if (!level function_7edf3657(var_3cd5bf76)) {
-                var_3c0dcfe8 = function_9e55b467(str_zone);
-                level thread function_eee2ccd4(var_3c0dcfe8);
+                str_next_zone = function_9e55b467(str_zone);
+                level thread function_eee2ccd4(str_next_zone);
             }
         }
         wait(randomfloatrange(3, 5));
@@ -1391,43 +1391,43 @@ function private function_7edf3657(var_3cd5bf76) {
 // Checksum 0x12badd87, Offset: 0x6aa8
 // Size: 0x186
 function private function_9e55b467(str_zone) {
-    var_3c0dcfe8 = "zone_cafeteria";
+    str_next_zone = "zone_cafeteria";
     if (!isdefined(str_zone)) {
-        return var_3c0dcfe8;
+        return str_next_zone;
     }
     switch (str_zone) {
     case #"zone_cafeteria_end":
-        var_3c0dcfe8 = "zone_cellblock_east";
+        str_next_zone = "zone_cellblock_east";
         break;
     case #"zone_cafeteria":
-        var_3c0dcfe8 = "zone_cellblock_entrance";
+        str_next_zone = "zone_cellblock_entrance";
         break;
     case #"zone_cellblock_east":
-        var_3c0dcfe8 = "zone_start";
+        str_next_zone = "zone_start";
         break;
     case #"zone_cellblock_entrance":
-        var_3c0dcfe8 = "zone_library";
+        str_next_zone = "zone_library";
         break;
     case #"zone_start":
-        var_3c0dcfe8 = "zone_cellblock_west";
+        str_next_zone = "zone_cellblock_west";
         break;
     case #"zone_library":
-        var_3c0dcfe8 = "zone_broadway_floor_2";
+        str_next_zone = "zone_broadway_floor_2";
         break;
     case #"zone_cellblock_west":
-        var_3c0dcfe8 = "zone_cellblock_west_barber";
+        str_next_zone = "zone_cellblock_west_barber";
         break;
     case #"zone_broadway_floor_2":
-        var_3c0dcfe8 = "zone_cellblock_west_warden";
+        str_next_zone = "zone_cellblock_west_warden";
         break;
     case #"zone_cellblock_west_barber":
-        var_3c0dcfe8 = "zone_sally_port";
+        str_next_zone = "zone_sally_port";
         break;
     case #"zone_cellblock_west_warden":
-        var_3c0dcfe8 = "zone_sally_port";
+        str_next_zone = "zone_sally_port";
         break;
     }
-    return var_3c0dcfe8;
+    return str_next_zone;
 }
 
 // Namespace namespace_a9aa9d72/namespace_a9aa9d72

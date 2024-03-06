@@ -373,8 +373,8 @@ function function_c1cc29be(e_activator, dynent) {
                 }
             }
         } else {
-            var_32823664 = getentarray(localclientnum, "mdl_nixie_tubes", "script_string");
-            foreach (var_790990d7 in var_32823664) {
+            a_mdl_tubes = getentarray(localclientnum, "mdl_nixie_tubes", "script_string");
+            foreach (var_790990d7 in a_mdl_tubes) {
                 var_790990d7 thread function_b4231440(localclientnum);
             }
             playsound(localclientnum, #"hash_6c0f63cd38c393e7", dynent.origin);
@@ -414,9 +414,9 @@ function music_ee() {
     self endon("43e9d9fe0bc4c9a6");
     players = getlocalplayers();
     foreach (player in players) {
-        var_32823664 = getentarray(player.localclientnum, "mdl_nixie_tubes", "script_string");
-        if (var_32823664.size > 0) {
-            var_32823664[0] playsound(player.localclientnum, #"hash_5ecaf6acf6be0b1f", var_32823664[0].origin);
+        a_mdl_tubes = getentarray(player.localclientnum, "mdl_nixie_tubes", "script_string");
+        if (a_mdl_tubes.size > 0) {
+            a_mdl_tubes[0] playsound(player.localclientnum, #"hash_5ecaf6acf6be0b1f", a_mdl_tubes[0].origin);
         }
     }
 }
@@ -449,12 +449,12 @@ function function_1451e44e() {
     self endon("61ff44b5486a5e5a");
     players = getlocalplayers();
     foreach (player in players) {
-        var_32823664 = getentarray(player.localclientnum, "mdl_nixie_tubes", "script_string");
-        if (var_32823664.size >= 1) {
+        a_mdl_tubes = getentarray(player.localclientnum, "mdl_nixie_tubes", "script_string");
+        if (a_mdl_tubes.size >= 1) {
             if (isdefined(player.var_1ad66d1)) {
                 stopfx(player.localclientnum, player.var_1ad66d1);
             }
-            player.var_1ad66d1 = function_239993de(player.localclientnum, "smoke/fx8_column_md_green", var_32823664[1], "tag_origin");
+            player.var_1ad66d1 = function_239993de(player.localclientnum, "smoke/fx8_column_md_green", a_mdl_tubes[1], "tag_origin");
             player thread function_e0df40bf(player.localclientnum);
         }
     }

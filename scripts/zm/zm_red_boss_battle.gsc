@@ -591,17 +591,17 @@ function chaos_bolt_thrower(e_target) {
 function private function_9e8c41f4(e_target) {
     level endon(#"perseus_defeated", #"hash_7646638df88a3656");
     e_target endon(#"death");
-    var_5f3b05e8 = e_target function_732c74f7(3);
-    if (!isdefined(var_5f3b05e8)) {
+    str_target_zone = e_target function_732c74f7(3);
+    if (!isdefined(str_target_zone)) {
         return 0;
     }
     b_finished = 0;
     while (!b_finished) {
-        self function_c7a3202c(var_5f3b05e8);
+        self function_c7a3202c(str_target_zone);
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 var_701a257e = "<unknown string>";
-                switch (var_5f3b05e8) {
+                switch (str_target_zone) {
                 case #"zone_boss_plateau_1":
                     var_701a257e = "<unknown string>";
                     break;
@@ -619,10 +619,10 @@ function private function_9e8c41f4(e_target) {
         if (!isdefined(var_59d19c72)) {
             return 0;
         }
-        if (var_59d19c72 == var_5f3b05e8) {
+        if (var_59d19c72 == str_target_zone) {
             b_finished = 1;
         } else {
-            var_5f3b05e8 = var_59d19c72;
+            str_target_zone = var_59d19c72;
         }
         waitframe(1);
     }
@@ -1382,9 +1382,9 @@ function function_d9802986() {
 // Checksum 0x99ac7635, Offset: 0x67b8
 // Size: 0xde
 function private function_732c74f7(n_max_time) {
-    var_5f3b05e8 = self zm_zonemgr::get_player_zone();
+    str_target_zone = self zm_zonemgr::get_player_zone();
     n_time = 0;
-    while (!isdefined(var_5f3b05e8)) {
+    while (!isdefined(str_target_zone)) {
         wait(0.3);
         n_time = n_time + 0.3;
         if (isdefined(n_max_time)) {
@@ -1397,9 +1397,9 @@ function private function_732c74f7(n_max_time) {
                 return;
             }
         }
-        var_5f3b05e8 = self zm_zonemgr::get_player_zone();
+        str_target_zone = self zm_zonemgr::get_player_zone();
     }
-    return var_5f3b05e8;
+    return str_target_zone;
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -2007,8 +2007,8 @@ function function_a695c70b(s_loc) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x5ddcd09e, Offset: 0x9290
 // Size: 0x1f6
-function private function_c7a3202c(var_5f3b05e8) {
-    var_d1ac344a = function_3c2238ed(var_5f3b05e8);
+function private function_c7a3202c(str_target_zone) {
+    var_d1ac344a = function_3c2238ed(str_target_zone);
     if (!var_d1ac344a) {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {

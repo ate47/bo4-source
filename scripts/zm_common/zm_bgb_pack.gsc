@@ -541,8 +541,8 @@ function function_6f7d5230(n_index) {
 // Size: 0x5dc
 function slot_cooldown(n_index) {
     self endon(#"disconnect");
-    var_ce5ed2e9 = self.bgb_pack[n_index];
-    self waittill("bgb_update_take_" + var_ce5ed2e9);
+    str_elixir = self.bgb_pack[n_index];
+    self waittill("bgb_update_take_" + str_elixir);
     if (!self bgb::get_bgb_available(self.bgb_pack[n_index])) {
         if (!isdefined(self.var_82971641) || self.var_82971641.size == 0 || !isdefined(self.var_2b74c8fe) || self.var_2b74c8fe.size == 0) {
             self function_b2308cd(n_index, 3);
@@ -558,7 +558,7 @@ function slot_cooldown(n_index) {
     if (zm_utility::is_standard()) {
         n_cooldown = 180;
     } else {
-        n_rarity = level.bgb[var_ce5ed2e9].rarity;
+        n_rarity = level.bgb[str_elixir].rarity;
         switch (n_rarity) {
         case 2:
             n_cooldown = 30;
@@ -603,8 +603,8 @@ function slot_cooldown(n_index) {
     if (self hasperk(#"specialty_mod_cooldown")) {
         n_cooldown = n_cooldown * 0.9;
     }
-    if (isdefined(level.bgb[var_ce5ed2e9].var_81f8ab0f)) {
-        n_cooldown = level.bgb[var_ce5ed2e9].var_81f8ab0f;
+    if (isdefined(level.bgb[str_elixir].var_81f8ab0f)) {
+        n_cooldown = level.bgb[str_elixir].var_81f8ab0f;
     }
     /#
         if (isdefined(level.var_7c3d4959) && level.var_7c3d4959) {

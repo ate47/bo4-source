@@ -805,8 +805,8 @@ function function_c3b8207f() {
 // Checksum 0xa2daa385, Offset: 0x4910
 // Size: 0x264
 function wallbuy() {
-    var_bd118df0 = getent("shader_wallbuy", "targetname");
-    var_bd118df0 clientfield::set("tutorial_keyline_fx", 1);
+    mdl_wallbuy = getent("shader_wallbuy", "targetname");
+    mdl_wallbuy clientfield::set("tutorial_keyline_fx", 1);
     s_objective = struct::get("objective_pos_wall_buy", "targetname");
     s_objective function_384bed55();
     self thread function_68da8e33(#"hash_7bb3349ac11750e5", 0.5);
@@ -814,7 +814,7 @@ function wallbuy() {
     function_d1dabace(0);
     level waittill(#"weapon_bought");
     s_objective function_384bed55(0);
-    var_bd118df0 delete();
+    mdl_wallbuy delete();
     self notify(#"wallbuy_completed");
     function_d1dabace();
     function_269d9f82("blocker_post_wall_buy");

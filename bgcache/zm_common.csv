@@ -2233,7 +2233,7 @@ model,attach_t8_loot_ar_standard_ext_fast_mag_view,294cb6a15e8
 model,attach_t8_loot_sniper_locus_upper_01_world,294cb6a1738
 model,c_t8_zmb_mob_hero_richtofen_viewarms1_cst,294cb6a1888
 model,attach_t8_tac_rifle_mid_burst_suppressor_view,294cb6a19d8
-model,hash_59edb521753d046d,294cb9375c8
+model,wpn_t7_mingun_view,294cb9375c8
 model,hash_5a12bb8800447297,294cb6a2068
 model,attach_t8_loot_tac_rifle_damageburst_stock_view,294cb6a21b8
 model,p7_zm_vending_marathon,294cb8df578
@@ -9060,7 +9060,7 @@ string,hash_4f0d8ebb363015e0,0
 string,hash_4f1329370bb72579,0
 string,hash_4f19b46ba3c91f3d,0
 string,hash_4f23c6ecb321fa19,0
-string,hash_4f332aa1a25f8d35,0
+string,weapon/minigun,0
 string,hash_4f6592650a2a5f47,0
 string,hash_4f7ba54fd8d544e0,0
 string,mp/ended_game,0

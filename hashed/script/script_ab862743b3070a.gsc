@@ -760,8 +760,8 @@ function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
     } else if (isdefined(level.dog_spawn_func)) {
         s_spawn_loc = [[ level.dog_spawn_func ]]();
     } else if (level.zm_loc_types[#"dog_location"].size > 0) {
-        var_5f3b05e8 = e_target zm_zonemgr::get_player_zone();
-        if (!isdefined(var_5f3b05e8)) {
+        str_target_zone = e_target zm_zonemgr::get_player_zone();
+        if (!isdefined(str_target_zone)) {
             return undefined;
         }
         var_24f5d9f8 = [];
@@ -770,10 +770,10 @@ function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
         } else if (!isarray(var_24f5d9f8)) {
             var_24f5d9f8 = array(var_24f5d9f8);
         }
-        if (!isinarray(var_24f5d9f8, var_5f3b05e8)) {
-            var_24f5d9f8[var_24f5d9f8.size] = var_5f3b05e8;
+        if (!isinarray(var_24f5d9f8, str_target_zone)) {
+            var_24f5d9f8[var_24f5d9f8.size] = str_target_zone;
         }
-        var_4cb112e = level.zones[var_5f3b05e8];
+        var_4cb112e = level.zones[str_target_zone];
         adj_zone_names = getarraykeys(var_4cb112e.adjacent_zones);
         foreach (str_zone in adj_zone_names) {
             if (var_4cb112e.adjacent_zones[str_zone].is_connected) {

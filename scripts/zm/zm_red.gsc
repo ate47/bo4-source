@@ -1126,10 +1126,10 @@ function play_outro() {
 function function_eeb6a1e7() {
     s_wallbuy = struct::get("tr_leveraction_t8", "zombie_weapon_upgrade");
     var_8651c21a = struct::get(s_wallbuy.target);
-    var_bd118df0 = getent(var_8651c21a.target, "targetname");
-    var_bd118df0 hide();
+    mdl_wallbuy = getent(var_8651c21a.target, "targetname");
+    mdl_wallbuy hide();
     level clientfield::set(s_wallbuy.trigger_stub.clientfieldname, 0);
-    var_bd118df0 clientfield::set("wallbuy_ambient_fx", 0);
+    mdl_wallbuy clientfield::set("wallbuy_ambient_fx", 0);
 }
 
 // Namespace zm_red/zm_red

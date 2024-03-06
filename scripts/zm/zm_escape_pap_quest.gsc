@@ -249,16 +249,16 @@ function private function_25adf2e0(str_zone, var_410775ce) {
 // Checksum 0x41eb4d63, Offset: 0x12e8
 // Size: 0x160
 function pap_debris(b_show, str_area) {
-    var_6f9dea08 = getentarray("debris_pap_" + str_area, "targetname");
+    a_mdl_debris = getentarray("debris_pap_" + str_area, "targetname");
     if (b_show) {
-        foreach (var_e87b7ad1 in var_6f9dea08) {
-            var_e87b7ad1 solid();
-            var_e87b7ad1 show();
+        foreach (mdl_debris in a_mdl_debris) {
+            mdl_debris solid();
+            mdl_debris show();
         }
     } else {
-        foreach (var_e87b7ad1 in var_6f9dea08) {
-            var_e87b7ad1 notsolid();
-            var_e87b7ad1 hide();
+        foreach (mdl_debris in a_mdl_debris) {
+            mdl_debris notsolid();
+            mdl_debris hide();
         }
     }
 }

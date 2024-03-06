@@ -201,9 +201,9 @@ function function_2f63dc81(cmd) {
         default:
             if (isdefined(level.a_s_defend_areas)) {
                 a_str_defend_areas = getarraykeys(level.a_s_defend_areas);
-                var_5e62c213 = strtok(cmd, "<unknown string>");
-                str_name = var_5e62c213[0];
-                var_19d45c79 = var_5e62c213[1];
+                a_str_name = strtok(cmd, "<unknown string>");
+                str_name = a_str_name[0];
+                var_19d45c79 = a_str_name[1];
                 if (isinarray(a_str_defend_areas, hash(str_name))) {
                     if (var_19d45c79 === "<unknown string>") {
                         iprintlnbold("<unknown string>" + str_name + "<unknown string>");
